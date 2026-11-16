@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Selenium, proyecto paraguas de automatización de navegadores e infraestructura de la especificación W3C WebDriver, de SeleniumHQ. Licencia Apache-2.0. Es el veterano del sector (repo desde 2013, ~35k estrellas, 4.52).
+
+## ¿Qué hace?
+
+Controla todos los navegadores principales con WebDriver para pruebas y automatización, y escala con Selenium Grid.
+
+## ¿Cómo lo hace?
+
+Tiene bindings para Java, Python, C#, Ruby y JavaScript, y Selenium Manager gestiona los drivers automáticamente. El repo se construye con Bazel.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [mitmproxy](mitmproxy.md) | Inspección de tráfico en pruebas. (combinación por arquitectura) | Configura el proxy en el navegador. |
+| [n8n](n8n.md) | Orquestar scripts de automatización. (combinación por arquitectura) | Lanza los scripts desde workflows. |
+| [Claude Code](claude-code.md) | Generar y mantener pruebas. (combinación por arquitectura) | Pide al agente las pruebas WebDriver. |
+
+**Notas:** Alternativas (elige una): playwright, puppeteer.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada selenium-4.52.0 (2026-10-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SeleniumHQ/selenium/blob/trunk/README.md) · [2](https://www.selenium.dev/documentation/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelos ni API de IA; infraestructura o servicios de pruebas Cloud se costean aparte |
 | Equipo | Preparación según la ruta elegida. Lenguaje y bindings elegidos; navegador compatible; app de prueba |
-
-El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto
-
-## Qué puedes hacer con él
-
-Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar pruebas funcionales; Comparar comportamiento entre navegadores.
-
-## Cómo funciona
 
 El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto
 

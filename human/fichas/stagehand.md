@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Stagehand, SDK para agentes de navegador de Browserbase. Licencia MIT. Es maduro y activo (~26k estrellas, v3.x).
+
+## ¿Qué hace?
+
+Combina código y lenguaje natural con primitivas `act`, `extract`, `observe` y agentes, para automatizar navegadores de forma robusta frente a cambios del DOM.
+
+## ¿Cómo lo hace?
+
+Disponible para TypeScript (npm) y Python (`pip install stagehand`), más la CLI `browse`. Requiere la clave de un proveedor de modelos (por ejemplo, OpenAI). Funciona en local o en la nube de Browserbase, que también ofrece un servidor MCP alojado.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Cliente del MCP alojado de Browserbase. | Conecta el MCP. |
+| [Lightpanda](lightpanda.md) | Navegador headless ligero vía CDP. (combinación por arquitectura) | Conecta por CDP si es compatible. |
+| [firecrawl](firecrawl.md) | Extracción masiva complementaria. (combinación por arquitectura) | Usa Firecrawl para el rastreo y Stagehand para las interacciones. |
+
+**Notas:** Alternativas (elige una): browser-use, skyvern. La nube de Browserbase es de pago.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada stagehand-server-v3/v3.7.7 (2026-10-23) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/browserbase/stagehand/blob/main/README.md) · [2](https://docs.stagehand.dev/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El MCP remoto documentado necesita cuenta y clave Browserbase; usar Claude Code o Codex para programar no aporta créditos de navegación |
 | Coste | El coste depende del proveedor o la ruta. Modelo y Browserbase pueden cobrar por uso; SDK, navegador local y MCP hospedado son rutas distintas |
 | Equipo | Preparación según la ruta elegida. Node o Python; modelo y navegador según ruta; clave Browserbase para MCP hospedado; sitio de prueba |
-
-El MCP remoto documentado necesita cuenta y clave Browserbase; usar Claude Code o Codex para programar no aporta créditos de navegación
-
-## Qué puedes hacer con él
-
-SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar extracción estructurada; Automatizar un formulario de prueba.
-
-## Cómo funciona
 
 El MCP remoto documentado necesita cuenta y clave Browserbase; usar Claude Code o Codex para programar no aporta créditos de navegación
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node o Python; modelo y navegador según ruta; clave Browserbase para MCP hospedado; sitio de prueba
 - **Etiquetas:** `browser` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Mastra](mastra.md) | 29.5k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
 ## Alternativas (elige una)
 

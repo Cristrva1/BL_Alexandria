@@ -32,7 +32,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una página propia y consulta el árbol de accesibilidad antes de actuar
 **Qué comprobar:** Puedes identificar referencias de elementos y cambios tras una acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`
+**Combina con:** `claude-code`, `lightpanda`, `chrome-devtools-mcp`
 **Alternativas (elige una):** `playwright-cli`
 
 ## `awesome-chrome-devtools`
@@ -63,6 +63,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Escoge una herramienta de CDP y revisa su repositorio y función antes de instalar
 **Qué comprobar:** Puedes distinguir protocolo, cliente y extensión
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `puppeteer`, `chrome-devtools-mcp`, `lightpanda`
 
 ## `browser-harness`
 role=runtime · exec=local · setup=easy · mcp=True · prov=— · tags=browser,coding-agent,python
@@ -92,7 +93,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un perfil de prueba y solicita solo leer el título de una página
 **Qué comprobar:** Puedes identificar qué navegador y sesión expone al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`
+**Combina con:** `browser-use`, `claude-code`, `codex`
 **Alternativas (elige una):** `playwright-mcp`, `chrome-devtools-mcp`
 
 ## `browser-use`
@@ -123,7 +124,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un navegador de prueba y solicita leer una página sin enviar formularios ni usar cuentas personales
 **Qué comprobar:** Puedes revisar pestaña, contexto y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `gpt-researcher`
+**Combina con:** `browser-harness`, `claude-code`, `ollama`
 **Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`
 
 ## `camofox-browser`
@@ -156,6 +157,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca el servidor y consulta una página propia con snapshot antes de conectar cuentas
 **Qué comprobar:** Puedes distinguir REST server, MCP adapter y sesión del browser
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openclaw`, `yt-dlp`, `hermes-agent`
 
 ## `lightpanda`
 role=runtime · exec=local · setup=easy · mcp=True · prov=— · tags=browser,scraping
@@ -185,7 +187,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta una consulta simple sin LLM y compara el DOM con la página esperada
 **Qué comprobar:** Puedes identificar la sesión y el resultado antes de probar autonomía
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `puppeteer`, `playwright`
+**Combina con:** `puppeteer`, `playwright`, `stagehand`
 
 ## `playwright`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,browser,typescript
@@ -216,7 +218,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Escribe un test que abra una página local y compruebe un título
 **Qué comprobar:** Puedes distinguir fallo de aserción y fallo de arranque del navegador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `browser-use`, `crawlee`
+**Combina con:** `playwright-mcp`, `playwright-cli`, `lightpanda`, `crawlee`
 **Alternativas (elige una):** `puppeteer`, `selenium`
 
 ## `playwright-cli`
@@ -248,7 +250,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala sus skills y abre una página de prueba para obtener snapshot antes de pulsar un control
 **Qué comprobar:** Puedes usar referencias del snapshot y comprobar el resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `browser-use`
+**Combina con:** `playwright`, `claude-code`, `playwright-mcp`
 **Alternativas (elige una):** `agent-browser`
 
 ## `puppeteer`
@@ -279,7 +281,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una página de prueba y consulta su título o captura antes de añadir interacciones
 **Qué comprobar:** Puedes comprobar navegador y salida obtenida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `lightpanda`
+**Combina con:** `lightpanda`, `chrome-devtools-mcp`, `awesome-chrome-devtools`
 **Alternativas (elige una):** `playwright`, `selenium`
 
 ## `selenium`
@@ -310,6 +312,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una página de prueba y verifica un elemento mediante WebDriver
 **Qué comprobar:** Puedes comprobar que la sesión controla el navegador correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mitmproxy`, `n8n`, `claude-code`
 **Alternativas (elige una):** `playwright`, `puppeteer`
 
 ## `skyvern`
@@ -340,7 +343,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Define una tarea de lectura de página y revisa acciones y extracción antes de permitir envíos
 **Qué comprobar:** Puedes contrastar los pasos con la web
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `playwright`, `ollama`, `n8n`
 **Alternativas (elige una):** `browser-use`, `stagehand`, `computer-use-preview`
 
 ## `stagehand`
@@ -371,5 +374,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae dos campos de una página propia y contrasta la estructura con el contenido visible
 **Qué comprobar:** Puedes comprobar datos y acciones del navegador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mastra`, `playwright`
+**Combina con:** `claude-code`, `lightpanda`, `firecrawl`
 **Alternativas (elige una):** `browser-use`, `skyvern`

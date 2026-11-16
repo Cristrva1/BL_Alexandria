@@ -152537,7 +152537,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar una arquitectura; Preparar un plan de trabajo visual",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "codex"
+        "claude-code",
+        "opencode",
+        "mermaid"
       ],
       "alt": [],
       "stack": "Agente con archivos y ejecución; idea o repositorio de prueba",
@@ -152652,6 +152654,45 @@
       "stars": 96456,
       "license": "Apache-2.0",
       "homepage": "https://archify.si",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente soportado.",
+          "orden_instalacion": "Instala la skill."
+        },
+        {
+          "id": "opencode",
+          "motivo": "Agente soportado.",
+          "orden_instalacion": "Instala la skill."
+        },
+        {
+          "id": "mermaid",
+          "motivo": "Diagramas textuales para documentación estática. (combinación por arquitectura)",
+          "orden_instalacion": "Usa Mermaid en docs y Archify para explorar."
+        }
+      ],
+      "que_es": "Archify, skill que convierte ideas, preguntas o planes en visuales HTML interactivos, de @tt-a1i. Licencia Apache-2.0 (las concesiones MIT históricas siguen vigentes; servicios de terceros y planes de pago no son del proyecto). Creado en abril de 2026, tiene ~97k estrellas (v3.2.0), una cifra inusual.",
+      "que_hace": "Describes lo que quieres entender o planificar (arquitecturas, mapas de aprendizaje, itinerarios) y el agente genera un HTML interactivo que se puede explorar, personalizar y compartir.",
+      "como_lo_hace": "Funciona con Cursor, Claude Code, Codex CLI y OpenCode; en Claude.ai se sube `archify.zip` como skill (depende del acceso a Node.js en el sandbox).",
+      "descripcion_notas": "Sin alternativas declaradas. Tiene un grupo funcional con diagram-design.",
+      "descripcion_fuentes": [
+        "https://github.com/tt-a1i/archify/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "tt-a1i/archify",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "JavaScript",
+        "latest_release": "v3.2.0 (2026-10-19)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas.",
       "body": "Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas.",
       "install": {
@@ -152662,8 +152703,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "codex",
-          "label": "codex"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "opencode",
+          "label": "opencode"
+        },
+        {
+          "id": "mermaid",
+          "label": "mermaid"
         }
       ],
       "areas": [
@@ -152696,7 +152745,11 @@
       "desc": "Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar un proceso comercial; Explicar una arquitectura con SVG",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "playwright",
+        "claude-code",
+        "slidev"
+      ],
       "alt": [],
       "stack": "Agente compatible; proceso descrito; marca opcional; navegador",
       "repo_url": "https://github.com/cathrynlavery/diagram-design",
@@ -152811,6 +152864,44 @@
       "stars": 67188,
       "license": "MIT",
       "homepage": "https://diagramdesign.dev",
+      "combina_con": [
+        {
+          "id": "playwright",
+          "motivo": "Rasterizado a PNG.",
+          "orden_instalacion": "Instala Playwright y Chromium."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente anfitrión. (combinación por arquitectura)",
+          "orden_instalacion": "Instala la skill."
+        },
+        {
+          "id": "slidev",
+          "motivo": "Incrustar diagramas en presentaciones. (combinación por arquitectura)",
+          "orden_instalacion": "Exporta SVG/PNG e insértalos."
+        }
+      ],
+      "que_es": "diagram-design, skill que dibuja diagramas como un único archivo HTML + SVG autocontenido con tu marca, de @cathrynlavery. Licencia MIT. Creado en abril de 2026, tiene ~67k estrellas y sin releases.",
+      "que_hace": "Ofrece 50 tipos de diagrama con estética cuidada (sin sombras, a diferencia del «Mermaid genérico») y exportación a PNG.",
+      "como_lo_hace": "Se instala con `npx skills add cathrynlavery/diagram-design`. La exportación a PNG usa Playwright (`pip install playwright && playwright install chromium`).",
+      "descripcion_notas": "Sin alternativas declaradas. Tiene un grupo funcional con archify.",
+      "descripcion_fuentes": [
+        "https://github.com/cathrynlavery/diagram-design/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "cathrynlavery/diagram-design",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "HTML",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
       "body": "Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
       "install": {
@@ -152819,7 +152910,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "playwright",
+          "label": "playwright"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "slidev",
+          "label": "slidev"
+        }
+      ],
       "areas": [
         "documentos",
         "configurar-claude-code",
@@ -154139,7 +154243,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Verificar una interfaz; Preparar capturas y consultas de una página",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "codex"
+        "claude-code",
+        "lightpanda",
+        "chrome-devtools-mcp"
       ],
       "alt": [
         "playwright-cli"
@@ -154253,6 +154359,45 @@
       "stars": 51227,
       "license": "Apache-2.0",
       "homepage": "https://agent-browser.dev",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente con shell. (combinación por arquitectura)",
+          "orden_instalacion": "Instala la CLI y la skill."
+        },
+        {
+          "id": "lightpanda",
+          "motivo": "Navegador headless ligero vía CDP. (combinación por arquitectura)",
+          "orden_instalacion": "Evalúa la compatibilidad CDP."
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "motivo": "Depuración profunda complementaria. (combinación por arquitectura)",
+          "orden_instalacion": "Úsalo para rendimiento y red."
+        }
+      ],
+      "que_es": "agent-browser, CLI nativa en Rust para que agentes controlen un navegador comando a comando, de Vercel Labs. Licencia Apache-2.0. Creado en enero de 2026, tiene ~52k estrellas (v0.43.0).",
+      "que_hace": "`snapshot` devuelve la página como árbol de accesibilidad compacto con referencias (@e1) y el agente actúa sobre ellas: clic, escribir y navegar.",
+      "como_lo_hace": "Se instala con `npm install -g agent-browser` o `brew install agent-browser`, y después `agent-browser install` (descarga Chrome for Testing). Un daemon controla el navegador por CDP.",
+      "descripcion_notas": "Alternativas (elige una): playwright-cli.",
+      "descripcion_fuentes": [
+        "https://github.com/vercel-labs/agent-browser/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "vercel-labs/agent-browser",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "Rust",
+        "latest_release": "v0.43.0 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.",
       "body": "CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.",
       "install": {
@@ -154268,8 +154413,16 @@
       ],
       "combine_refs": [
         {
-          "id": "codex",
-          "label": "codex"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "lightpanda",
+          "label": "lightpanda"
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "label": "chrome-devtools-mcp"
         }
       ],
       "areas": [
@@ -154304,7 +154457,11 @@
       "desc": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una herramienta de depuración; Explorar clientes de DevTools Protocol",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "puppeteer",
+        "chrome-devtools-mcp",
+        "lightpanda"
+      ],
       "alt": [],
       "stack": "Navegador; necesidad de depuración o automatización",
       "repo_url": "https://github.com/ChromeDevTools/awesome-chrome-devtools",
@@ -154413,6 +154570,43 @@
       "stars": 7214,
       "license": "CC0-1.0",
       "homepage": "https://github.com/ChromeDevTools/awesome-chrome-devtools#readme",
+      "combina_con": [
+        {
+          "id": "puppeteer",
+          "motivo": "Driver CDP listado.",
+          "orden_instalacion": "Consulta y elige."
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "motivo": "MCP para agentes del mismo ecosistema. (combinación por arquitectura)",
+          "orden_instalacion": "Instálalo si usas agentes."
+        },
+        {
+          "id": "lightpanda",
+          "motivo": "Navegador con servidor CDP. (combinación por arquitectura)",
+          "orden_instalacion": "Evalúalo como backend."
+        }
+      ],
+      "que_es": "Awesome Chrome DevTools, lista curada de herramientas y recursos del ecosistema Chrome DevTools y del protocolo CDP, mantenida en la organización ChromeDevTools. Licencia CC0-1.0. Existe desde 2016 (~7k estrellas).",
+      "que_hace": "Recopila drivers del protocolo (Puppeteer, Playwright, chrome-remote-interface), visores de trazas, frontends y guías de depuración, incluido Node.js.",
+      "como_lo_hace": "Es solo Markdown, no se instala.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/ChromeDevTools/awesome-chrome-devtools/blob/master/readme.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "ChromeDevTools/awesome-chrome-devtools",
+        "archived": false,
+        "pushed_at": "2026-10-06",
+        "license": "CC0-1.0",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.",
       "body": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.",
       "install": {
@@ -154421,7 +154615,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "puppeteer",
+          "label": "puppeteer"
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "label": "chrome-devtools-mcp"
+        },
+        {
+          "id": "lightpanda",
+          "label": "lightpanda"
+        }
+      ],
       "areas": [
         "agentes"
       ],
@@ -154449,6 +154656,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "browser-use",
         "claude-code",
         "codex"
       ],
@@ -154564,6 +154772,45 @@
       "stars": 19083,
       "license": "MIT",
       "homepage": "https://browser-harness.com",
+      "combina_con": [
+        {
+          "id": "browser-use",
+          "motivo": "Producto que ahora lo integra.",
+          "orden_instalacion": "Usa la CLI browser-use."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente documentado.",
+          "orden_instalacion": "Registra la skill."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente documentado.",
+          "orden_instalacion": "Registra la skill."
+        }
+      ],
+      "que_es": "Browser Harness, harness con el que Claude Code, Codex o Cursor usan tu Chrome real con tu sesión iniciada, de browser-use. Licencia MIT. Creado en abril de 2026 (~19k estrellas, v0.1.13); ahora es el motor de Browser Use y se recomienda usar la CLI `browser-use`.",
+      "que_hace": "Abre páginas, hace clic, escribe, lee y descarga en tu navegador real mediante el protocolo de depuración remota.",
+      "como_lo_hace": "Se instala con `uv tool install browser-use` y `browser-use skill install`, y luego activando la depuración remota en `chrome://inspect`. Al usar tu sesión real, el agente actúa con tus credenciales.",
+      "descripcion_notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp. Riesgo: acceso del agente a sesiones autenticadas.",
+      "descripcion_fuentes": [
+        "https://github.com/browser-use/browser-harness/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "browser-use/browser-harness",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v0.1.13 (2026-09-04)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.",
       "body": "Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.",
       "install": {
@@ -154582,6 +154829,10 @@
         }
       ],
       "combine_refs": [
+        {
+          "id": "browser-use",
+          "label": "browser-use"
+        },
         {
           "id": "claude-code",
           "label": "claude-code"
@@ -154624,8 +154875,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "playwright",
-        "gpt-researcher"
+        "browser-harness",
+        "claude-code",
+        "ollama"
       ],
       "alt": [
         "computer-use-preview",
@@ -154745,6 +154997,46 @@
       "stars": 121039,
       "license": "MIT",
       "homepage": "https://browser-use.com",
+      "combina_con": [
+        {
+          "id": "browser-harness",
+          "motivo": "Motor interno.",
+          "orden_instalacion": "Viene incluido."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Uso vía skill o MCP.",
+          "orden_instalacion": "Registra la skill o el MCP."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Modelos locales vía integraciones de modelos. (combinación por arquitectura)",
+          "orden_instalacion": "Configura un modelo local compatible."
+        }
+      ],
+      "que_es": "Browser Use, agente de navegador open source de browser-use. La librería Python es MIT; la inferencia y los navegadores alojados son de pago. Es muy popular (~121k estrellas, v1.0.6).",
+      "que_hace": "Le das una tarea y el modelo la ejecuta en un navegador real escribiendo Python en un REPL persistente con los helpers de browser-harness. Incluye CLI, login y servidor MCP.",
+      "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta modelos propios, Anthropic, Google o cualquier modelo de Pydantic AI. Tiene telemetría anónima configurable.",
+      "descripcion_notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp.",
+      "descripcion_fuentes": [
+        "https://github.com/browser-use/browser-use/blob/main/README.md",
+        "https://docs.browser-use.com/"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "browser-use/browser-use",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "1.0.6 (2026-11-16)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.",
       "body": "Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.",
       "install": {
@@ -154772,12 +155064,16 @@
       ],
       "combine_refs": [
         {
-          "id": "playwright",
-          "label": "playwright"
+          "id": "browser-harness",
+          "label": "browser-harness"
         },
         {
-          "id": "gpt-researcher",
-          "label": "gpt-researcher"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "ollama",
+          "label": "ollama"
         }
       ],
       "areas": [
@@ -154817,7 +155113,11 @@
       "desc": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar automatización de una web propia; Evaluar una herramienta de navegación para agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openclaw",
+        "yt-dlp",
+        "hermes-agent"
+      ],
       "alt": [],
       "stack": "Node o Docker; browser descargado; servidor REST; adapter MCP opcional; sitio de prueba",
       "repo_url": "https://github.com/jo-inc/camofox-browser",
@@ -154931,6 +155231,45 @@
       "stars": 12286,
       "license": "MIT",
       "homepage": "https://github.com/jo-inc/camofox-browser#readme",
+      "combina_con": [
+        {
+          "id": "openclaw",
+          "motivo": "Plugin oficial.",
+          "orden_instalacion": "Instala el plugin."
+        },
+        {
+          "id": "yt-dlp",
+          "motivo": "Transcripciones de YouTube.",
+          "orden_instalacion": "Instala yt-dlp."
+        },
+        {
+          "id": "hermes-agent",
+          "motivo": "Cliente MCP. (combinación por arquitectura)",
+          "orden_instalacion": "Conecta su MCP."
+        }
+      ],
+      "que_es": "camofox-browser, servidor de navegador antidetección para agentes de IA basado en Camoufox (fork de Firefox con suplantación de huella a nivel de C++), del equipo de jo (askjo.ai). Licencia MIT. Tiene ~12k estrellas (v1.19.0).",
+      "que_hace": "Expone acciones de navegador por HTTP y como herramientas MCP u OpenClaw, y según su README evita la detección de bots de Google, Cloudflare y otros. Extrae transcripciones de YouTube con yt-dlp.",
+      "como_lo_hace": "Se instala con `npm install && npm start` (descarga Camoufox) o como plugin de OpenClaw (`openclaw plugins install @askjo/camofox-browser`).",
+      "descripcion_notas": "Sin alternativas declaradas. Riesgo: eludir la detección de bots puede violar los términos de los sitios y es un vector de abuso.",
+      "descripcion_fuentes": [
+        "https://github.com/jo-inc/camofox-browser/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "jo-inc/camofox-browser",
+        "archived": false,
+        "pushed_at": "2026-11-10",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "v1.19.0 (2026-11-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.",
       "body": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.",
       "install": {
@@ -154939,7 +155278,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "openclaw",
+          "label": "openclaw"
+        },
+        {
+          "id": "yt-dlp",
+          "label": "yt-dlp"
+        },
+        {
+          "id": "hermes-agent",
+          "label": "hermes-agent"
+        }
+      ],
       "areas": [
         "agentes",
         "configurar-claude-code",
@@ -154973,7 +155325,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "puppeteer",
-        "playwright"
+        "playwright",
+        "stagehand"
       ],
       "alt": [],
       "stack": "Binario compatible o Docker; agente o proveedor opcional; sitio de prueba",
@@ -155087,6 +155440,45 @@
       "stars": 42045,
       "license": "AGPL-3.0",
       "homepage": "https://lightpanda.io",
+      "combina_con": [
+        {
+          "id": "puppeteer",
+          "motivo": "Cliente CDP documentado.",
+          "orden_instalacion": "Arranca el servidor CDP y conecta Puppeteer."
+        },
+        {
+          "id": "playwright",
+          "motivo": "Cliente CDP.",
+          "orden_instalacion": "Usa connectOverCDP."
+        },
+        {
+          "id": "stagehand",
+          "motivo": "SDK de agentes sobre un navegador ligero. (combinación por arquitectura)",
+          "orden_instalacion": "Conecta por CDP si es compatible."
+        }
+      ],
+      "que_es": "Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).",
+      "que_hace": "Ejecuta JavaScript con bajo consumo de memoria y alta velocidad, y expone un servidor CDP compatible con clientes como Puppeteer y Playwright.",
+      "como_lo_hace": "Se instala con `brew install lightpanda-io/browser/lightpanda`, binario o `docker run -p 127.0.0.1:9222:9222 lightpanda/browser`. Envía telemetría por defecto (se desactiva con `LIGHTPANDA_DISABLE_TELEMETRY=true`).",
+      "descripcion_notas": "Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto.",
+      "descripcion_fuentes": [
+        "https://github.com/lightpanda-io/browser/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "lightpanda-io/browser",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "AGPL-3.0",
+        "primary_language": "Zig",
+        "latest_release": "1.0.4 (2026-11-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.",
       "body": "Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.",
       "install": {
@@ -155103,6 +155495,10 @@
         {
           "id": "playwright",
           "label": "playwright"
+        },
+        {
+          "id": "stagehand",
+          "label": "stagehand"
         }
       ],
       "areas": [
@@ -155138,7 +155534,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un formulario; Crear regresiones de una web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "browser-use",
+        "playwright-mcp",
+        "playwright-cli",
+        "lightpanda",
         "crawlee"
       ],
       "alt": [
@@ -155256,6 +155654,51 @@
       "stars": 100188,
       "license": "Apache-2.0",
       "homepage": "https://playwright.dev",
+      "combina_con": [
+        {
+          "id": "playwright-mcp",
+          "motivo": "Servidor MCP oficial.",
+          "orden_instalacion": "Añade el MCP al agente."
+        },
+        {
+          "id": "playwright-cli",
+          "motivo": "CLI con skills para agentes.",
+          "orden_instalacion": "Instala la CLI global."
+        },
+        {
+          "id": "lightpanda",
+          "motivo": "Navegador headless alternativo vía CDP.",
+          "orden_instalacion": "Conecta Playwright al CDP de Lightpanda."
+        },
+        {
+          "id": "crawlee",
+          "motivo": "Crawlee usa Playwright como uno de sus motores de navegador.",
+          "orden_instalacion": "Instala crawlee junto con playwright."
+        }
+      ],
+      "que_es": "Playwright, framework de automatización y pruebas web de Microsoft. Licencia Apache-2.0. Es maduro y estándar en la industria (~100k estrellas, v1.65.1).",
+      "que_hace": "Controla Chromium, Firefox y WebKit con una sola API para pruebas end-to-end (Playwright Test), scripts de automatización y como herramienta para agentes (CLI y MCP).",
+      "como_lo_hace": "Se instala con `npm init playwright@latest` (pruebas), `npm i playwright` (librería) o `npm i -g @playwright/cli@latest` (agentes). También tiene bindings para Python, .NET y Java.",
+      "descripcion_notas": "Alternativas (elige una): puppeteer, selenium.",
+      "descripcion_fuentes": [
+        "https://github.com/microsoft/playwright/blob/main/README.md",
+        "https://playwright.dev/"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "microsoft/playwright",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.65.1 (2026-11-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje.",
       "body": "Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje.",
       "install": {
@@ -155275,8 +155718,16 @@
       ],
       "combine_refs": [
         {
-          "id": "browser-use",
-          "label": "browser-use"
+          "id": "playwright-mcp",
+          "label": "playwright-mcp"
+        },
+        {
+          "id": "playwright-cli",
+          "label": "playwright-cli"
+        },
+        {
+          "id": "lightpanda",
+          "label": "lightpanda"
         },
         {
           "id": "crawlee",
@@ -155318,7 +155769,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "playwright",
-        "browser-use"
+        "claude-code",
+        "playwright-mcp"
       ],
       "alt": [
         "agent-browser"
@@ -155434,6 +155886,45 @@
       "stars": 15203,
       "license": "Apache-2.0",
       "homepage": "https://playwright.dev",
+      "combina_con": [
+        {
+          "id": "playwright",
+          "motivo": "Motor subyacente.",
+          "orden_instalacion": "Viene incluido."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente documentado.",
+          "orden_instalacion": "Instala las skills."
+        },
+        {
+          "id": "playwright-mcp",
+          "motivo": "Variante MCP para agentes sin shell.",
+          "orden_instalacion": "Elige CLI o MCP según el agente."
+        }
+      ],
+      "que_es": "Playwright CLI, CLI de Playwright con skills para agentes de código, de Microsoft. Licencia Apache-2.0. Tiene ~15k estrellas (v0.1.x).",
+      "que_hace": "Expone la automatización del navegador como comandos (más eficientes en tokens que MCP, según el README): navegar, hacer snapshots, clic, trazas, etc.",
+      "como_lo_hace": "Requiere Node.js 20+ y se instala con `npm install -g @playwright/cli@latest`. Funciona con Claude Code, GitHub Copilot y otros agentes, y puede conectarse a un navegador abierto con la extensión Playwright MCP Bridge.",
+      "descripcion_notas": "Alternativas (elige una): agent-browser.",
+      "descripcion_fuentes": [
+        "https://github.com/microsoft/playwright-cli/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "microsoft/playwright-cli",
+        "archived": false,
+        "pushed_at": "2026-11-11",
+        "license": "Apache-2.0",
+        "primary_language": "TypeScript",
+        "latest_release": "v0.1.24 (2026-11-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto.",
       "body": "Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto.",
       "install": {
@@ -155453,8 +155944,12 @@
           "label": "playwright"
         },
         {
-          "id": "browser-use",
-          "label": "browser-use"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "playwright-mcp",
+          "label": "playwright-mcp"
         }
       ],
       "areas": [
@@ -155490,7 +155985,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar una captura; Extraer datos de una página propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "lightpanda"
+        "lightpanda",
+        "chrome-devtools-mcp",
+        "awesome-chrome-devtools"
       ],
       "alt": [
         "playwright",
@@ -155605,6 +156102,46 @@
       "stars": 95840,
       "license": "Apache-2.0",
       "homepage": "https://pptr.dev",
+      "combina_con": [
+        {
+          "id": "lightpanda",
+          "motivo": "Navegador headless ligero, documentado con Puppeteer.",
+          "orden_instalacion": "Conecta con `browserWSEndpoint` al CDP de Lightpanda."
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "motivo": "MCP para agentes basado en DevTools.",
+          "orden_instalacion": "Úsalo para depurar desde el agente."
+        },
+        {
+          "id": "awesome-chrome-devtools",
+          "motivo": "Ecosistema CDP.",
+          "orden_instalacion": "Consulta herramientas relacionadas."
+        }
+      ],
+      "que_es": "Puppeteer, librería JavaScript para controlar Chrome o Firefox mediante el protocolo DevTools o WebDriver BiDi, mantenida por el equipo de Chrome. Licencia Apache-2.0. Es madura (~96k estrellas).",
+      "que_hace": "Automatiza navegación, capturas de pantalla, PDF, scraping, pruebas y rendimiento, en modo headless por defecto.",
+      "como_lo_hace": "Se instala con `npm i puppeteer` (descarga un Chrome compatible) o `npm i puppeteer-core` (sin navegador).",
+      "descripcion_notas": "Alternativas (elige una): playwright, selenium.",
+      "descripcion_fuentes": [
+        "https://github.com/puppeteer/puppeteer/blob/main/README.md",
+        "https://pptr.dev/"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "puppeteer/puppeteer",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "TypeScript",
+        "latest_release": "browsers-v3.2.7 (2026-11-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Librería de Google para controlar Chrome y Firefox desde Node.js.",
       "body": "Librería de Google para controlar Chrome y Firefox desde Node.js.",
       "install": {
@@ -155626,6 +156163,14 @@
         {
           "id": "lightpanda",
           "label": "lightpanda"
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "label": "chrome-devtools-mcp"
+        },
+        {
+          "id": "awesome-chrome-devtools",
+          "label": "awesome-chrome-devtools"
         }
       ],
       "areas": [
@@ -155662,7 +156207,11 @@
       "desc": "Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar pruebas funcionales; Comparar comportamiento entre navegadores",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "mitmproxy",
+        "n8n",
+        "claude-code"
+      ],
       "alt": [
         "playwright",
         "puppeteer"
@@ -155772,6 +156321,46 @@
       "stars": 34589,
       "license": "Apache-2.0",
       "homepage": "https://selenium.dev",
+      "combina_con": [
+        {
+          "id": "mitmproxy",
+          "motivo": "Inspección de tráfico en pruebas. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el proxy en el navegador."
+        },
+        {
+          "id": "n8n",
+          "motivo": "Orquestar scripts de automatización. (combinación por arquitectura)",
+          "orden_instalacion": "Lanza los scripts desde workflows."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Generar y mantener pruebas. (combinación por arquitectura)",
+          "orden_instalacion": "Pide al agente las pruebas WebDriver."
+        }
+      ],
+      "que_es": "Selenium, proyecto paraguas de automatización de navegadores e infraestructura de la especificación W3C WebDriver, de SeleniumHQ. Licencia Apache-2.0. Es el veterano del sector (repo desde 2013, ~35k estrellas, 4.52).",
+      "que_hace": "Controla todos los navegadores principales con WebDriver para pruebas y automatización, y escala con Selenium Grid.",
+      "como_lo_hace": "Tiene bindings para Java, Python, C#, Ruby y JavaScript, y Selenium Manager gestiona los drivers automáticamente. El repo se construye con Bazel.",
+      "descripcion_notas": "Alternativas (elige una): playwright, puppeteer.",
+      "descripcion_fuentes": [
+        "https://github.com/SeleniumHQ/selenium/blob/trunk/README.md",
+        "https://www.selenium.dev/documentation/"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "SeleniumHQ/selenium",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "Java",
+        "latest_release": "selenium-4.52.0 (2026-10-29)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.",
       "body": "Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.",
       "install": {
@@ -155789,7 +156378,20 @@
           "label": "puppeteer"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "mitmproxy",
+          "label": "mitmproxy"
+        },
+        {
+          "id": "n8n",
+          "label": "n8n"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "frontend",
         "agentes"
@@ -155822,6 +156424,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar un flujo propio; Evaluar extracción basada en visión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "playwright",
+        "ollama",
         "n8n"
       ],
       "alt": [
@@ -155939,6 +156543,46 @@
       "stars": 23420,
       "license": "AGPL-3.0",
       "homepage": "https://www.skyvern.com",
+      "combina_con": [
+        {
+          "id": "playwright",
+          "motivo": "SDK compatible.",
+          "orden_instalacion": "Usa el SDK de Skyvern sobre Playwright."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Modelos locales. (combinación por arquitectura)",
+          "orden_instalacion": "Configura un proveedor compatible."
+        },
+        {
+          "id": "n8n",
+          "motivo": "Disparar workflows. (combinación por arquitectura)",
+          "orden_instalacion": "Llama a la API de Skyvern."
+        }
+      ],
+      "que_es": "Skyvern, automatización de flujos web con LLMs y visión por computador, de Skyvern-AI. Licencia AGPL-3.0, con versión cloud gestionada. Tiene ~23k estrellas (v1.0.58).",
+      "que_hace": "Navega sitios nunca vistos sin XPath frágiles: rellena formularios y completa flujos. Ofrece un SDK compatible con Playwright que añade IA y un constructor de workflows.",
+      "como_lo_hace": "Requiere Python 3.11–3.13 y `pip install \"skyvern[server]\"` (servidor local; la interfaz va aparte o con Docker). Recoge estadísticas de uso por defecto (opt-out).",
+      "descripcion_notas": "Alternativas (elige una): browser-use, stagehand, computer-use-preview. Telemetría activa por defecto.",
+      "descripcion_fuentes": [
+        "https://github.com/Skyvern-AI/skyvern/blob/main/README.md",
+        "https://docs.skyvern.com/"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "Skyvern-AI/skyvern",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "v1.0.58 (2026-11-15)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles.",
       "body": "Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles.",
       "install": {
@@ -155961,6 +156605,14 @@
         }
       ],
       "combine_refs": [
+        {
+          "id": "playwright",
+          "label": "playwright"
+        },
+        {
+          "id": "ollama",
+          "label": "ollama"
+        },
         {
           "id": "n8n",
           "label": "n8n"
@@ -155996,8 +156648,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar extracción estructurada; Automatizar un formulario de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mastra",
-        "playwright"
+        "claude-code",
+        "lightpanda",
+        "firecrawl"
       ],
       "alt": [
         "browser-use",
@@ -156114,6 +156767,46 @@
       "stars": 26052,
       "license": "MIT",
       "homepage": "https://stagehand.dev",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Cliente del MCP alojado de Browserbase.",
+          "orden_instalacion": "Conecta el MCP."
+        },
+        {
+          "id": "lightpanda",
+          "motivo": "Navegador headless ligero vía CDP. (combinación por arquitectura)",
+          "orden_instalacion": "Conecta por CDP si es compatible."
+        },
+        {
+          "id": "firecrawl",
+          "motivo": "Extracción masiva complementaria. (combinación por arquitectura)",
+          "orden_instalacion": "Usa Firecrawl para el rastreo y Stagehand para las interacciones."
+        }
+      ],
+      "que_es": "Stagehand, SDK para agentes de navegador de Browserbase. Licencia MIT. Es maduro y activo (~26k estrellas, v3.x).",
+      "que_hace": "Combina código y lenguaje natural con primitivas `act`, `extract`, `observe` y agentes, para automatizar navegadores de forma robusta frente a cambios del DOM.",
+      "como_lo_hace": "Disponible para TypeScript (npm) y Python (`pip install stagehand`), más la CLI `browse`. Requiere la clave de un proveedor de modelos (por ejemplo, OpenAI). Funciona en local o en la nube de Browserbase, que también ofrece un servidor MCP alojado.",
+      "descripcion_notas": "Alternativas (elige una): browser-use, skyvern. La nube de Browserbase es de pago.",
+      "descripcion_fuentes": [
+        "https://github.com/browserbase/stagehand/blob/main/README.md",
+        "https://docs.stagehand.dev/"
+      ],
+      "descripcion_revision": {
+        "batch": "44-diagramas-y-automatizacion-de-navegadores",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "browserbase/stagehand",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "stagehand-server-v3/v3.7.7 (2026-10-23)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural.",
       "body": "SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural.",
       "install": {
@@ -156133,12 +156826,16 @@
       ],
       "combine_refs": [
         {
-          "id": "mastra",
-          "label": "mastra"
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
-          "id": "playwright",
-          "label": "playwright"
+          "id": "lightpanda",
+          "label": "lightpanda"
+        },
+        {
+          "id": "firecrawl",
+          "label": "firecrawl"
         }
       ],
       "areas": [

@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja el flujo de una app pequeña y revisa que cada componente exista en la fuente
 **Qué comprobar:** Puedes contrastar nodos, enlaces y responsabilidades
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`
+**Combina con:** `claude-code`, `opencode`, `mermaid`
 
 ## `diagram-design`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=diagramas,skill,html
@@ -61,6 +61,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera un diagrama de cinco pasos y revisa orden, etiquetas y legibilidad a tamaño móvil
 **Qué comprobar:** Puedes explicar cada relación y abrir el HTML
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `playwright`, `claude-code`, `slidev`
 
 ## `marp`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=slides,typescript

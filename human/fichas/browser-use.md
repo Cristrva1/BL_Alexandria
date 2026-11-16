@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Browser Use, agente de navegador open source de browser-use. La librería Python es MIT; la inferencia y los navegadores alojados son de pago. Es muy popular (~121k estrellas, v1.0.6).
+
+## ¿Qué hace?
+
+Le das una tarea y el modelo la ejecuta en un navegador real escribiendo Python en un REPL persistente con los helpers de browser-harness. Incluye CLI, login y servidor MCP.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta modelos propios, Anthropic, Google o cualquier modelo de Pydantic AI. Tiene telemetría anónima configurable.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Browser Harness](browser-harness.md) | Motor interno. | Viene incluido. |
+| [Claude Code](claude-code.md) | Uso vía skill o MCP. | Registra la skill o el MCP. |
+| [Ollama](ollama.md) | Modelos locales vía integraciones de modelos. (combinación por arquitectura) | Configura un modelo local compatible. |
+
+**Notas:** Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.0.6 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/browser-use/browser-use/blob/main/README.md) · [2](https://docs.browser-use.com/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta |
 | Coste | El coste depende del proveedor o la ruta. La biblioteca MIT permite navegador y modelo locales; los defaults del ejemplo usan gateway y browser Cloud facturados |
 | Equipo | Preparación según la ruta elegida. Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba |
-
-La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
-
-## Qué puedes hacer con él
-
-Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.
-
-## Por qué destaca
-
-Usos propuestos: Extraer información de una web propia; Probar navegación con un agente.
-
-## Cómo funciona
 
 La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
 
@@ -87,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba
 - **Etiquetas:** `automation` `browser` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
-| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 
 ## Alternativas (elige una)
 

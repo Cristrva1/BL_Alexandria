@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+camofox-browser, servidor de navegador antidetección para agentes de IA basado en Camoufox (fork de Firefox con suplantación de huella a nivel de C++), del equipo de jo (askjo.ai). Licencia MIT. Tiene ~12k estrellas (v1.19.0).
+
+## ¿Qué hace?
+
+Expone acciones de navegador por HTTP y como herramientas MCP u OpenClaw, y según su README evita la detección de bots de Google, Cloudflare y otros. Extrae transcripciones de YouTube con yt-dlp.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install && npm start` (descarga Camoufox) o como plugin de OpenClaw (`openclaw plugins install @askjo/camofox-browser`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenClaw](openclaw.md) | Plugin oficial. | Instala el plugin. |
+| [yt-dlp](yt-dlp.md) | Transcripciones de YouTube. | Instala yt-dlp. |
+| [hermes-agent](hermes-agent.md) | Cliente MCP. (combinación por arquitectura) | Conecta su MCP. |
+
+**Notas:** Sin alternativas declaradas. Riesgo: eludir la detección de bots puede violar los términos de los sitios y es un vector de abuso.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v1.19.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jo-inc/camofox-browser/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP stdio documenta Claude Code, Codex y Antigravity y necesita el servidor REST activo; stealth no garantiza acceso ni compatibilidad universal con las políticas de un sitio |
 | Coste | Sin pago a un modelo en la ruta básica. El browser y adaptador no requieren API de modelo; hosting, proxy y agente tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Node o Docker; browser descargado; servidor REST; adapter MCP opcional; sitio de prueba |
-
-El MCP stdio documenta Claude Code, Codex y Antigravity y necesita el servidor REST activo; stealth no garantiza acceso ni compatibilidad universal con las políticas de un sitio
-
-## Qué puedes hacer con él
-
-Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.
-
-## Por qué destaca
-
-Usos propuestos: Probar automatización de una web propia; Evaluar una herramienta de navegación para agentes.
-
-## Cómo funciona
 
 El MCP stdio documenta Claude Code, Codex y Antigravity y necesita el servidor REST activo; stealth no garantiza acceso ni compatibilidad universal con las políticas de un sitio
 

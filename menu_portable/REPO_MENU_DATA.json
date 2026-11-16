@@ -85962,7 +85962,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar una arquitectura; Preparar un plan de trabajo visual",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "codex"
+        "claude-code",
+        "opencode",
+        "mermaid"
       ],
       "alt": [],
       "agent_tools": [
@@ -86084,7 +86086,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar un proceso comercial; Explicar una arquitectura con SVG",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "playwright",
+        "claude-code",
+        "slidev"
+      ],
       "alt": []
     },
     {
@@ -86919,7 +86925,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Verificar una interfaz; Preparar capturas y consultas de una página",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "codex"
+        "claude-code",
+        "lightpanda",
+        "chrome-devtools-mcp"
       ],
       "alt": [
         "playwright-cli"
@@ -87033,7 +87041,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una herramienta de depuración; Explorar clientes de DevTools Protocol",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "puppeteer",
+        "chrome-devtools-mcp",
+        "lightpanda"
+      ],
       "alt": []
     },
     {
@@ -87148,6 +87160,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "browser-use",
         "claude-code",
         "codex"
       ],
@@ -87272,8 +87285,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "playwright",
-        "gpt-researcher"
+        "browser-harness",
+        "claude-code",
+        "ollama"
       ],
       "alt": [
         "computer-use-preview",
@@ -87402,7 +87416,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar automatización de una web propia; Evaluar una herramienta de navegación para agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openclaw",
+        "yt-dlp",
+        "hermes-agent"
+      ],
       "alt": []
     },
     {
@@ -87520,7 +87538,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "puppeteer",
-        "playwright"
+        "playwright",
+        "stagehand"
       ],
       "alt": []
     },
@@ -87637,7 +87656,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un formulario; Crear regresiones de una web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "browser-use",
+        "playwright-mcp",
+        "playwright-cli",
+        "lightpanda",
         "crawlee"
       ],
       "alt": [
@@ -87760,7 +87781,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "playwright",
-        "browser-use"
+        "claude-code",
+        "playwright-mcp"
       ],
       "alt": [
         "agent-browser"
@@ -87879,7 +87901,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar una captura; Extraer datos de una página propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "lightpanda"
+        "lightpanda",
+        "chrome-devtools-mcp",
+        "awesome-chrome-devtools"
       ],
       "alt": [
         "playwright",
@@ -87994,7 +88018,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar pruebas funcionales; Comparar comportamiento entre navegadores",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "mitmproxy",
+        "n8n",
+        "claude-code"
+      ],
       "alt": [
         "playwright",
         "puppeteer"
@@ -88117,6 +88145,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar un flujo propio; Evaluar extracción basada en visión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "playwright",
+        "ollama",
         "n8n"
       ],
       "alt": [
@@ -88243,8 +88273,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar extracción estructurada; Automatizar un formulario de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mastra",
-        "playwright"
+        "claude-code",
+        "lightpanda",
+        "firecrawl"
       ],
       "alt": [
         "browser-use",

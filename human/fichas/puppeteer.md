@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Puppeteer, librería JavaScript para controlar Chrome o Firefox mediante el protocolo DevTools o WebDriver BiDi, mantenida por el equipo de Chrome. Licencia Apache-2.0. Es madura (~96k estrellas).
+
+## ¿Qué hace?
+
+Automatiza navegación, capturas de pantalla, PDF, scraping, pruebas y rendimiento, en modo headless por defecto.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i puppeteer` (descarga un Chrome compatible) o `npm i puppeteer-core` (sin navegador).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Lightpanda](lightpanda.md) | Navegador headless ligero, documentado con Puppeteer. | Conecta con `browserWSEndpoint` al CDP de Lightpanda. |
+| [Chrome DevTools MCP](chrome-devtools-mcp.md) | MCP para agentes basado en DevTools. | Úsalo para depurar desde el agente. |
+| [awesome-chrome-devtools](awesome-chrome-devtools.md) | Ecosistema CDP. | Consulta herramientas relacionadas. |
+
+**Notas:** Alternativas (elige una): playwright, selenium.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada browsers-v3.2.7 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/puppeteer/puppeteer/blob/main/README.md) · [2](https://pptr.dev/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Puppeteer descarga Chrome y puppeteer-core no; el MCP recomendado es chrome-devtools-mcp, un proyecto compañero que se configura aparte |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no exige API de IA; servicios remotos y modelo del agente tienen sus costes |
 | Equipo | Preparación según la ruta elegida. Node; Chrome compatible o navegador propio con puppeteer-core; página de prueba |
-
-Puppeteer descarga Chrome y puppeteer-core no; el MCP recomendado es chrome-devtools-mcp, un proyecto compañero que se configura aparte
-
-## Qué puedes hacer con él
-
-Librería de Google para controlar Chrome y Firefox desde Node.js.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar una captura; Extraer datos de una página propia.
-
-## Cómo funciona
 
 Puppeteer descarga Chrome y puppeteer-core no; el MCP recomendado es chrome-devtools-mcp, un proyecto compañero que se configura aparte
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; Chrome compatible o navegador propio con puppeteer-core; página de prueba
 - **Etiquetas:** `browser` `scraping` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Lightpanda](lightpanda.md) | 42k | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. |
 
 ## Alternativas (elige una)
 
