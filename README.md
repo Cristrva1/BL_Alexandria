@@ -84,3 +84,27 @@ uv run repo-intelligence add wazuh --sugerir-combos                             
 Con `--ligero` las combinaciones son opcionales; sin él hacen falta de 3 a 6 y la reciprocidad se completa sola. Detalles en [mantenimiento editorial](human/mantenimiento.md#incorporar-un-repo).
 
 No es necesario descargar los proyectos catalogados para consultar la biblioteca.
+
+## Calidad: métricas y puntuación
+
+`repo-intelligence score` reúne métricas públicas de cada repo y calcula una puntuación de 0 a 100 con la rúbrica de `config/calidad.yaml`:
+
+| Eje | Peso | Señales |
+|---|---:|---|
+| Adopción | 25 | estrellas por año, descargas mensuales (PyPI, npm, Docker Hub), estrellas |
+| Mantenimiento | 25 | commits en 90 días, releases en 365 días, mediana de primera respuesta en issues, issues cerradas, bus factor |
+| Licencia | 15 | OSI permisiva 15, copyleft 12, open-core 10, source-available (BSL, ELv2…) 5, propietaria 1 |
+| Madurez | 10 | edad, versión ≥ 1 o publicación continua, sitio de documentación |
+| Respaldo | 10 | fundación 10, organización 8, persona 5 |
+| Encaje con el stack | 10 | Python/TypeScript/Go, Docker, ejecución local, modelos locales/Ollama |
+| Seguridad | 5 | OpenSSF Scorecard (sin dato: neutral) |
+
+Las métricas numéricas se comparan por percentiles frente a la categoría y frente al grupo de similares, de modo que el último de un grupo pequeño no queda en cero y un valor extremo no distorsiona la escala. En repos derivados que fusionan su upstream (por ejemplo `koboldcpp`) solo cuentan los commits del propietario y los contribuidores propios.
+
+```powershell
+uv run repo-intelligence score              # usa la caché de data/metricas/cache si tiene menos de 25 días
+uv run repo-intelligence score --refrescar  # vuelve a pedirlo todo
+uv run repo-intelligence score --sin-red --mostrar ollama   # solo recalcula y muestra un desglose
+```
+
+Una acción mensual recalcula las métricas y abre un pull request; nunca empuja a `main`. El archivo está en `infra/github-actions/metricas-mensuales.yml`: para activarla, cópialo a `.github/workflows/` (publicar workflows exige el permiso `workflow` de GitHub). Para que pueda abrir el PR hay que activar además en GitHub **Settings → Actions → General → Workflow permissions → «Allow GitHub Actions to create and approve pull requests»**.
