@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **704 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **724 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -27,10 +27,10 @@ Las **704 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 44 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
-| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 26 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
+| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 43 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 10 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 13 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
-| 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 28 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
+| 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 31 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
 | 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 17 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
 | 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 16 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
@@ -771,7 +771,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install "smolagents[toolkit]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Calcular indicadores de un CSV; Transformar datos consultados en un resumen — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [E2B](human/fichas/e2b.md) · [Transformers](human/fichas/transformers.md) · [litellm](human/fichas/litellm.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [E2B](human/fichas/e2b.md) · [Transformers](human/fichas/transformers.md) · [litellm](human/fichas/litellm.md) · [langfuse](human/fichas/langfuse.md) · [Hugging Face Agents Course](human/fichas/agents-course.md)<br>
 **Más:** [ficha completa](human/fichas/smolagents.md) · [GitHub](https://github.com/huggingface/smolagents)
 
 #### 🐍 Haystack
@@ -1096,7 +1096,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `go install github.com/projectdiscovery/katana/cmd/katana@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md) · [theHarvester](human/fichas/theharvester.md)<br>
+**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md) · [theHarvester](human/fichas/theharvester.md) · [Nuclei](human/fichas/nuclei.md) · [subfinder](human/fichas/subfinder.md)<br>
 **Más:** [ficha completa](human/fichas/katana.md) · [GitHub](https://github.com/projectdiscovery/katana)
 
 #### 🕷️ Jina Reader
@@ -2002,7 +2002,7 @@ claude plugin install floorplan@floorplan` (comprobar los pasos completos en la 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/pre-commit/pre-commit/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: obligar a pasar formato, lint y escaneo de secretos antes de cada commit; aplicar las mismas comprobaciones en local y en CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [Ruff](human/fichas/ruff.md) · [Gitleaks](human/fichas/gitleaks.md) · [TruffleHog](human/fichas/trufflehog.md) · [Biome](human/fichas/biome.md) · [Semgrep](human/fichas/semgrep.md)<br>
+**Combina con:** [Ruff](human/fichas/ruff.md) · [Gitleaks](human/fichas/gitleaks.md) · [TruffleHog](human/fichas/trufflehog.md) · [Biome](human/fichas/biome.md) · [Semgrep](human/fichas/semgrep.md) · [Trivy](human/fichas/trivy.md)<br>
 **Más:** [ficha completa](human/fichas/pre-commit.md) · [GitHub](https://github.com/pre-commit/pre-commit)
 
 #### ⚙️ SonarQube Community Build
@@ -4419,6 +4419,20 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 | [radare2](human/fichas/radare2.md) | Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [rizin](human/fichas/rizin.md) | Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — k6, Locust**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [k6](human/fichas/k6.md) | Tu objetivo encaja con estos ejemplos: Medir un endpoint en desarrollo; Definir un umbral reproducible de rendimiento | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Locust](human/fichas/locust.md) | Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones | necesitas una instalación sin cuentas ni dependencias adicionales |
+
+**⚖️ ¿Cuál elegir? — hashcat, John the Ripper (jumbo)**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [hashcat](human/fichas/hashcat.md) | Tu objetivo encaja con estos ejemplos: auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados; recuperar la contraseña de un archivo propio olvidado | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [John the Ripper (jumbo)](human/fichas/john.md) | Tu objetivo encaja con estos ejemplos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — strix, shannon**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4549,6 +4563,33 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Combina con:** [frida](human/fichas/frida.md) · [playwright](human/fichas/playwright.md) · [k6](human/fichas/k6.md) · [Apktool](human/fichas/apktool.md) · [Selenium](human/fichas/selenium.md) · [shannon](human/fichas/shannon.md)<br>
 **Más:** [ficha completa](human/fichas/mitmproxy.md) · [GitHub](https://github.com/mitmproxy/mitmproxy)
 
+#### 📚 Metasploit Framework
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 39.6k<br>
+**Qué es:** Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/rapid7/metasploit-framework/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: validar en un laboratorio si una vulnerabilidad conocida es explotable; practicar post-explotación y escalada en máquinas vulnerables de entrenamiento — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Nmap](human/fichas/nmap.md) · [hashcat](human/fichas/hashcat.md) · [John the Ripper (jumbo)](human/fichas/john.md) · [BloodHound Community Edition](human/fichas/bloodhound.md)<br>
+**Más:** [ficha completa](human/fichas/metasploit.md) · [GitHub](https://github.com/rapid7/metasploit-framework)
+
+#### 🖥️ sqlmap
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 39k<br>
+**Qué es:** Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/sqlmapproject/sqlmap/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: comprobar si un formulario de tu aplicación es vulnerable a inyección SQL; reproducir un hallazgo de inyección en una auditoría autorizada — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [ffuf](human/fichas/ffuf.md)<br>
+**Más:** [ficha completa](human/fichas/sqlmap.md) · [GitHub](https://github.com/sqlmapproject/sqlmap)
+
+#### 🖥️ Nuclei
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 33k<br>
+**Qué es:** Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar tus propios servicios expuestos frente a CVE recientes; añadir pruebas de regresión de seguridad a un pipeline de CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [subfinder](human/fichas/subfinder.md) · [Katana](human/fichas/katana.md) · [Nmap](human/fichas/nmap.md) · [ffuf](human/fichas/ffuf.md) · [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md)<br>
+**Más:** [ficha completa](human/fichas/nuclei.md) · [GitHub](https://github.com/projectdiscovery/nuclei)
+
 #### 🖥️ k6
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 32.3k<br>
 **Qué es:** Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.<br>
@@ -4557,6 +4598,87 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Elige si:** Tu objetivo encaja con estos ejemplos: Medir un endpoint en desarrollo; Definir un umbral reproducible de rendimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Grafana](human/fichas/grafana.md) · [mitmproxy](human/fichas/mitmproxy.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/k6.md) · [GitHub](https://github.com/grafana/k6)
+
+#### 🖥️ Locust
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 28.3k<br>
+**Qué es:** Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/locustio/locust/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [playwright](human/fichas/playwright.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/locust.md) · [GitHub](https://github.com/locustio/locust)
+
+#### 🖥️ hashcat
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 27.4k<br>
+**Qué es:** Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/hashcat/hashcat/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados; recuperar la contraseña de un archivo propio olvidado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [BloodHound Community Edition](human/fichas/bloodhound.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/hashcat.md) · [GitHub](https://github.com/hashcat/hashcat)
+
+#### 🖥️ ffuf
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 17.1k<br>
+**Qué es:** Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install ffuf` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [subfinder](human/fichas/subfinder.md) · [mitmproxy](human/fichas/mitmproxy.md) · [Nuclei](human/fichas/nuclei.md) · [sqlmap](human/fichas/sqlmap.md)<br>
+**Más:** [ficha completa](human/fichas/ffuf.md) · [GitHub](https://github.com/ffuf/ffuf)
+
+#### 🖥️ ZAP (Zed Attack Proxy)
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 16.2k<br>
+**Qué es:** Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/zaproxy/zaproxy/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo; integrar un escaneo DAST en el pipeline de CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [sqlmap](human/fichas/sqlmap.md) · [playwright](human/fichas/playwright.md) · [Nuclei](human/fichas/nuclei.md)<br>
+**Más:** [ficha completa](human/fichas/zaproxy.md) · [GitHub](https://github.com/zaproxy/zaproxy)
+
+#### 🖥️ subfinder
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.8k<br>
+**Qué es:** Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar los subdominios públicos de tu propia organización; preparar el alcance de un programa de bug bounty — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nuclei](human/fichas/nuclei.md) · [Katana](human/fichas/katana.md) · [ffuf](human/fichas/ffuf.md)<br>
+**Más:** [ficha completa](human/fichas/subfinder.md) · [GitHub](https://github.com/projectdiscovery/subfinder)
+
+#### 🖥️ Nmap
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14k<br>
+**Qué es:** El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/nmap/nmap/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [Nuclei](human/fichas/nuclei.md) · [Wireshark](human/fichas/wireshark.md)<br>
+**Más:** [ficha completa](human/fichas/nmap.md) · [GitHub](https://github.com/nmap/nmap)
+
+#### 🖥️ John the Ripper (jumbo)
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.9k<br>
+**Qué es:** Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/openwall/john/blob/bleeding-jumbo/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [Wireshark](human/fichas/wireshark.md) · [BloodHound Community Edition](human/fichas/bloodhound.md)<br>
+**Más:** [ficha completa](human/fichas/john.md) · [GitHub](https://github.com/openwall/john)
+
+#### 🖥️ Wireshark
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 10.2k<br>
+**Qué es:** Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/wireshark/wireshark/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: depurar por qué una aplicación no se conecta a un servidor; aprender cómo funcionan protocolos como DNS, TLS o HTTP observando el tráfico — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [Nmap](human/fichas/nmap.md) · [John the Ripper (jumbo)](human/fichas/john.md)<br>
+**Más:** [ficha completa](human/fichas/wireshark.md) · [GitHub](https://github.com/wireshark/wireshark)
+
+#### ⚙️ BloodHound Community Edition
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 3.6k<br>
+**Qué es:** Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/SpecterOps/BloodHound/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: identificar rutas de escalada hacia administrador de dominio en tu propio AD; priorizar qué permisos excesivos corregir primero — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [hashcat](human/fichas/hashcat.md) · [John the Ripper (jumbo)](human/fichas/john.md) · [Metasploit Framework](human/fichas/metasploit.md)<br>
+**Más:** [ficha completa](human/fichas/bloodhound.md) · [GitHub](https://github.com/SpecterOps/BloodHound)
 
 ### Análisis y pruebas con agentes
 
@@ -4599,6 +4721,15 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [ghidra](human/fichas/ghidra.md) · [rea](human/fichas/rea.md)<br>
 **Más:** [ficha completa](human/fichas/craft-anything.md) · [GitHub](https://github.com/storytold/craft-anything)
 
+#### 🖥️ garak
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 10k<br>
+**Qué es:** Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `python -m pip install -U garak` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar un chatbot propio frente a inyección de prompts y jailbreaks antes de publicarlo; comparar la robustez de varios modelos locales con las mismas sondas — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [promptfoo](human/fichas/promptfoo.md)<br>
+**Más:** [ficha completa](human/fichas/garak.md) · [GitHub](https://github.com/NVIDIA/garak)
+
 ### Protección y verificación de software
 
 #### 🛡️ Semgrep ⭐
@@ -4609,6 +4740,42 @@ craft-anything-cli doctor                            # checks the install, codin
 **Elige si:** Tu objetivo encaja con estos ejemplos: Detectar patrones inseguros repetidos; Aplicar reglas de calidad en CI — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [security-audit-skill](human/fichas/security-audit-skill.md) · [strix](human/fichas/strix.md) · [Defending Code Reference Harness](human/fichas/defending-code-reference-harness.md) · [raddebugger](human/fichas/raddebugger.md) · [shannon](human/fichas/shannon.md)<br>
 **Más:** [ficha completa](human/fichas/semgrep.md) · [GitHub](https://github.com/semgrep/semgrep)
+
+#### 🖥️ Trivy
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 39.4k<br>
+**Qué es:** Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install trivy` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: escanear una imagen Docker antes de desplegarla; generar un SBOM y revisar dependencias vulnerables de un proyecto en CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Semgrep](human/fichas/semgrep.md) · [pre-commit](human/fichas/pre-commit.md) · [coolify](human/fichas/coolify.md) · [Wazuh](human/fichas/wazuh.md) · [Lynis](human/fichas/lynis.md)<br>
+**Más:** [ficha completa](human/fichas/trivy.md) · [GitHub](https://github.com/aquasecurity/trivy)
+
+#### ⚙️ Wazuh
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 17.8k<br>
+**Qué es:** Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/wazuh/wazuh/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: vigilar los servidores de tu laboratorio o pyme con alertas centralizadas; auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [CrowdSec](human/fichas/crowdsec.md) · [Lynis](human/fichas/lynis.md) · [Trivy](human/fichas/trivy.md)<br>
+**Más:** [ficha completa](human/fichas/wazuh.md) · [GitHub](https://github.com/wazuh/wazuh)
+
+#### 🖥️ Lynis
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 16.7k<br>
+**Qué es:** Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/CISOfy/lynis/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA) — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Wazuh](human/fichas/wazuh.md) · [Trivy](human/fichas/trivy.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/lynis.md) · [GitHub](https://github.com/CISOfy/lynis)
+
+#### ⚙️ CrowdSec
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 15.6k<br>
+**Qué es:** IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/crowdsecurity/crowdsec/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [Wazuh](human/fichas/wazuh.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/crowdsec.md) · [GitHub](https://github.com/crowdsecurity/crowdsec)
 
 #### 🖥️ bla
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.7k<br>
@@ -5139,6 +5306,15 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Combina con:** [crewAI](human/fichas/crewai.md) · [LangGraph](human/fichas/langgraph.md) · [Agno](human/fichas/agno.md)<br>
 **Más:** [ficha completa](human/fichas/500-ai-agents-projects.md) · [GitHub](https://github.com/ashishpatel26/500-AI-Agents-Projects)
 
+#### 📂 Hugging Face Agents Course
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 35k<br>
+**Qué es:** Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/huggingface/agents-course/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [smolagents](human/fichas/smolagents.md) · [LangGraph](human/fichas/langgraph.md) · [LlamaIndex](human/fichas/llama-index.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Más:** [ficha completa](human/fichas/agents-course.md) · [GitHub](https://github.com/huggingface/agents-course)
+
 #### 🎓 12-Factor Agents
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 27.2k<br>
 **Qué es:** Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.<br>
@@ -5203,7 +5379,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/mlabonne/llm-course/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Unsloth](human/fichas/unsloth.md) · [TRL](human/fichas/trl.md) · [PyTorch](human/fichas/pytorch.md) · [awesome-machine-learning](human/fichas/awesome-machine-learning.md)<br>
+**Combina con:** [Unsloth](human/fichas/unsloth.md) · [TRL](human/fichas/trl.md) · [PyTorch](human/fichas/pytorch.md) · [awesome-machine-learning](human/fichas/awesome-machine-learning.md) · [ML for Beginners](human/fichas/ml-for-beginners.md)<br>
 **Más:** [ficha completa](human/fichas/llm-course.md) · [GitHub](https://github.com/mlabonne/llm-course)
 
 #### 📘 LLMs from Scratch
@@ -5212,8 +5388,17 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `git clone --depth 1 https://github.com/rasbt/LLMs-from-scratch.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender cómo funciona un Transformer; Estudiar ajuste de instrucciones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [PyTorch](human/fichas/pytorch.md) · [nanochat](human/fichas/nanochat.md) · [Transformers](human/fichas/transformers.md) · [llm.c](human/fichas/llm-c.md)<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [nanochat](human/fichas/nanochat.md) · [Transformers](human/fichas/transformers.md) · [llm.c](human/fichas/llm-c.md) · [labml.ai Annotated Paper Implementations](human/fichas/annotated-dl-papers.md)<br>
 **Más:** [ficha completa](human/fichas/llms-from-scratch.md) · [GitHub](https://github.com/rasbt/LLMs-from-scratch)
+
+#### 📂 ML for Beginners
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 92.2k<br>
+**Qué es:** Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/microsoft/ML-For-Beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [JupyterLab](human/fichas/jupyterlab.md) · [marimo](human/fichas/marimo.md) · [LLM Course](human/fichas/llm-course.md)<br>
+**Más:** [ficha completa](human/fichas/ml-for-beginners.md) · [GitHub](https://github.com/microsoft/ML-For-Beginners)
 
 #### 🧑‍💻 awesome-machine-learning
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 74.8k<br>
@@ -5223,6 +5408,15 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Elige si:** Tu objetivo encaja con estos ejemplos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [PyTorch](human/fichas/pytorch.md) · [Transformers](human/fichas/transformers.md) · [LLM Course](human/fichas/llm-course.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-machine-learning.md) · [GitHub](https://github.com/josephmisiti/awesome-machine-learning)
+
+#### 📂 labml.ai Annotated Paper Implementations
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 67.8k<br>
+**Qué es:** Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install labml-nn` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [Claude Code](human/fichas/claude-code.md) · [LLMs from Scratch](human/fichas/llms-from-scratch.md)<br>
+**Más:** [ficha completa](human/fichas/annotated-dl-papers.md) · [GitHub](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
 
 #### 💬 nanochat
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 60.6k<br>

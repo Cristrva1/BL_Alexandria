@@ -200,6 +200,10 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [SiYuan](fichas/siyuan.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [Logseq](fichas/logseq.md) |
 | [Trilium Notes](fichas/trilium.md) | [Joplin](fichas/joplin.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
 | [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
+| [hashcat](fichas/hashcat.md) | [John the Ripper (jumbo)](fichas/john.md) |
+| [John the Ripper (jumbo)](fichas/john.md) | [hashcat](fichas/hashcat.md) |
+| [k6](fichas/k6.md) | [Locust](fichas/locust.md) |
+| [Locust](fichas/locust.md) | [k6](fichas/k6.md) |
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
 | [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md), [SonarQube Community Build](fichas/sonarqube.md) |

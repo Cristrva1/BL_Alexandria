@@ -52,7 +52,7 @@ Revisa código, investiga software y prepara pruebas con un alcance definido. El
 
 Agentes y skills que guían revisiones de seguridad.
 
-`craft-anything`, `cybersecurity-skills`, `defending-code-reference-harness`, `rea`, `security-audit-skill`, `semgrep`, `shannon`, `skillspector`, `strix`
+`craft-anything`, `cybersecurity-skills`, `defending-code-reference-harness`, `garak`, `rea`, `security-audit-skill`, `semgrep`, `shannon`, `skillspector`, `strix`
 
 ### Ingeniería inversa y binarios
 
@@ -70,7 +70,7 @@ Comprender procesos y examinar cómo se comporta el software.
 
 Revisar tráfico, rendimiento y mecanismos de protección.
 
-`bla`, `k6`, `mitmproxy`, `semgrep`
+`bla`, `bloodhound`, `crowdsec`, `ffuf`, `hashcat`, `john`, `k6`, `locust`, `lynis`, `metasploit`, `mitmproxy`, `nmap`, `nuclei`, `semgrep`, `sqlmap`, `subfinder`, `trivy`, `wazuh`, `wireshark`, `zaproxy`
 
 ### Credenciales y privacidad
 
@@ -504,7 +504,7 @@ Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el 
 
 Material para empezar a construir y entender aplicaciones de IA.
 
-`12-factor-agents`, `500-ai-agents-projects`, `agents-towards-production`, `ai-agents-for-beginners`, `ai-engineering-hub`, `awesome-harness-engineering`, `awesome-llm-apps`, `claude-cookbooks`, `claude-quickstarts`, `context-engineering`, `generative-ai-for-beginners`, `loop-engineering`, `openai-cookbook`
+`12-factor-agents`, `500-ai-agents-projects`, `agents-course`, `agents-towards-production`, `ai-agents-for-beginners`, `ai-engineering-hub`, `awesome-harness-engineering`, `awesome-llm-apps`, `claude-cookbooks`, `claude-quickstarts`, `context-engineering`, `generative-ai-for-beginners`, `loop-engineering`, `openai-cookbook`
 
 ### Prompts y contexto
 
@@ -516,7 +516,7 @@ Escribir mejores encargos y comprender instrucciones de agentes.
 
 Ejemplos de machine learning y entrenamiento desde cero.
 
-`awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `nanochat`, `train-llm-from-scratch`
+`annotated-dl-papers`, `awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `ml-for-beginners`, `nanochat`, `train-llm-from-scratch`
 
 ### Métodos, plugins y catálogos de skills
 

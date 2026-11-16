@@ -92,7 +92,7 @@
     {
       "num": 16,
       "title": "Analizar software y comprobar su seguridad",
-      "count": 26
+      "count": 43
     },
     {
       "num": 17,
@@ -107,7 +107,7 @@
     {
       "num": 19,
       "title": "Aprender IA y escribir mejores prompts",
-      "count": 28
+      "count": 31
     },
     {
       "num": 20,
@@ -1728,6 +1728,7 @@
             "craft-anything",
             "cybersecurity-skills",
             "defending-code-reference-harness",
+            "garak",
             "rea",
             "security-audit-skill",
             "semgrep",
@@ -1735,7 +1736,7 @@
             "skillspector",
             "strix"
           ],
-          "count": 9
+          "count": 10
         },
         {
           "id": "seguridad-inversa",
@@ -1808,11 +1809,27 @@
           "reference_repos": [],
           "repo_ids": [
             "bla",
+            "bloodhound",
+            "crowdsec",
+            "ffuf",
+            "hashcat",
+            "john",
             "k6",
+            "locust",
+            "lynis",
+            "metasploit",
             "mitmproxy",
-            "semgrep"
+            "nmap",
+            "nuclei",
+            "semgrep",
+            "sqlmap",
+            "subfinder",
+            "trivy",
+            "wazuh",
+            "wireshark",
+            "zaproxy"
           ],
-          "count": 4
+          "count": 20
         },
         {
           "id": "seguridad-privacidad",
@@ -1870,18 +1887,29 @@
         "awesome-reverse-engineering",
         "bitwarden-clients",
         "bla",
+        "bloodhound",
         "craft-anything",
+        "crowdsec",
         "cybersecurity-skills",
         "defending-code-reference-harness",
         "dnspy",
+        "ffuf",
         "frida",
+        "garak",
         "ghidra",
         "ghidramcp",
+        "hashcat",
         "ilspy",
         "imhex",
         "jadx",
+        "john",
         "k6",
+        "locust",
+        "lynis",
+        "metasploit",
         "mitmproxy",
+        "nmap",
+        "nuclei",
         "pi-hole",
         "radare2",
         "raddebugger",
@@ -1891,11 +1919,17 @@
         "semgrep",
         "shannon",
         "skillspector",
+        "sqlmap",
         "strix",
+        "subfinder",
+        "trivy",
         "vaultwarden",
-        "x64dbg"
+        "wazuh",
+        "wireshark",
+        "x64dbg",
+        "zaproxy"
       ],
-      "count": 31
+      "count": 48
     },
     {
       "id": "audiovisual",
@@ -4529,6 +4563,7 @@
           "repo_ids": [
             "12-factor-agents",
             "500-ai-agents-projects",
+            "agents-course",
             "agents-towards-production",
             "ai-agents-for-beginners",
             "ai-engineering-hub",
@@ -4541,7 +4576,7 @@
             "loop-engineering",
             "openai-cookbook"
           ],
-          "count": 13
+          "count": 14
         },
         {
           "id": "aprender-prompts",
@@ -4586,15 +4621,17 @@
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
+            "annotated-dl-papers",
             "awesome-machine-learning",
             "how-to-train-your-gpt",
             "llm-course",
             "llm.c",
             "llms-from-scratch",
+            "ml-for-beginners",
             "nanochat",
             "train-llm-from-scratch"
           ],
-          "count": 7
+          "count": 9
         },
         {
           "id": "aprender-metodos",
@@ -4702,11 +4739,13 @@
         "agency-agents",
         "agent-skills",
         "agent-toolkit",
+        "agents-course",
         "agents-towards-production",
         "ai-agents-for-beginners",
         "ai-engineering-hub",
         "anatomy",
         "andrej-karpathy-skills",
+        "annotated-dl-papers",
         "anthropic-skills",
         "antigravity-awesome-skills",
         "arcads-claude-code",
@@ -4763,6 +4802,7 @@
         "loop-engineering",
         "marketingskills",
         "minimalist-entrepreneur-skills",
+        "ml-for-beginners",
         "modern-web-guidance",
         "motion-design-skill",
         "nanochat",
@@ -4791,7 +4831,7 @@
         "ui-ux-pro-max-skill",
         "wshobson-agents"
       ],
-      "count": 94
+      "count": 97
     },
     {
       "id": "configurar-claude-code",
@@ -21266,7 +21306,8 @@
         "e2b",
         "transformers",
         "litellm",
-        "langfuse"
+        "langfuse",
+        "agents-course"
       ],
       "alt": [
         "pydantic-ai",
@@ -23170,7 +23211,9 @@
         "mitmproxy",
         "duckdb",
         "claude-code",
-        "theharvester"
+        "theharvester",
+        "nuclei",
+        "subfinder"
       ],
       "alt": []
     },
@@ -32676,7 +32719,8 @@
         "gitleaks",
         "trufflehog",
         "biome",
-        "semgrep"
+        "semgrep",
+        "trivy"
       ],
       "alt": []
     },
@@ -59356,6 +59400,120 @@
       "alt": []
     },
     {
+      "id": "bloodhound",
+      "name": "BloodHound Community Edition",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "go",
+        "security",
+        "graph"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/SpecterOps/BloodHound/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "88b5b5c9319268ad2e90421125e98893b0feb6fd"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/SpecterOps/BloodHound/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía rápida de BloodHound CE con Docker Compose en un laboratorio y carga los datos de ejemplo o de un dominio de pruebas.",
+        "success": "El grafo muestra rutas de ataque entre usuarios, grupos y equipos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "identificar rutas de escalada hacia administrador de dominio en tu propio AD",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "priorizar qué permisos excesivos corregir primero",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/SpecterOps/BloodHound/blob/main/README.md",
+        "source_blob_sha": "88b5b5c9319268ad2e90421125e98893b0feb6fd",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).",
+      "desc": "Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).",
+      "stack": "Go, go.mod, package.json, pyproject.toml",
+      "repo": "https://github.com/SpecterOps/BloodHound",
+      "install": "Seguir la instalación original: https://github.com/SpecterOps/BloodHound/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: identificar rutas de escalada hacia administrador de dominio en tu propio AD; priorizar qué permisos excesivos corregir primero",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "hashcat",
+        "john",
+        "metasploit"
+      ],
+      "alt": []
+    },
+    {
       "id": "craft-anything",
       "name": "craft-anything",
       "cat": 16,
@@ -59474,6 +59632,120 @@
         "claude-code",
         "ghidra",
         "rea"
+      ],
+      "alt": []
+    },
+    {
+      "id": "crowdsec",
+      "name": "CrowdSec",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "go",
+        "server",
+        "self-hosted"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/crowdsecurity/crowdsec/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5a4bb31438a2f1c9d313db17550b6bd382d1dafd"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala CrowdSec en un servidor propio, añade la colección de SSH y un bouncer de cortafuegos, y consulta `cscli metrics`.",
+        "success": "CrowdSec muestra los registros analizados y las decisiones de bloqueo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+        "source_blob_sha": "5a4bb31438a2f1c9d313db17550b6bd382d1dafd",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
+      "desc": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/crowdsecurity/crowdsec",
+      "install": "Seguir la instalación original: https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "grafana",
+        "wazuh",
+        "coolify"
       ],
       "alt": []
     },
@@ -59836,6 +60108,121 @@
       "alt": []
     },
     {
+      "id": "ffuf",
+      "name": "ffuf",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "go",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/ffuf/ffuf/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3151a056a06c5870a9aa573827f5cdf3eb2c7756"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "brew install ffuf",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/ffuf/ffuf/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `brew install ffuf` o `go install` y lanza un descubrimiento de directorios contra un servidor de laboratorio.",
+        "success": "ffuf lista las rutas que responden con códigos de interés.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "descubrir rutas o archivos olvidados en tu aplicación web",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar parámetros GET y POST en una auditoría autorizada",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/ffuf/ffuf/blob/master/README.md",
+        "source_blob_sha": "3151a056a06c5870a9aa573827f5cdf3eb2c7756",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.",
+      "desc": "Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/ffuf/ffuf",
+      "install": "brew install ffuf",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "subfinder",
+        "mitmproxy",
+        "nuclei",
+        "sqlmap"
+      ],
+      "alt": []
+    },
+    {
       "id": "frida",
       "name": "frida",
       "cat": 16,
@@ -59947,6 +60334,122 @@
         "radare2",
         "mitmproxy",
         "jadx"
+      ],
+      "alt": []
+    },
+    {
+      "id": "garak",
+      "name": "garak",
+      "cat": 16,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "llm",
+        "python",
+        "evaluation"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+        "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/NVIDIA/garak/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "29d7e4f4c740f1252c64b1b15045abfc7bd71051"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "python -m pip install -U garak",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/NVIDIA/garak/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `python -m pip install -U garak` y ejecuta una sonda sencilla contra un modelo pequeño de Hugging Face o local.",
+        "success": "Obtienes un informe con el porcentaje de fallos por sonda y un registro JSONL.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "auditar un chatbot propio frente a inyección de prompts y jailbreaks antes de publicarlo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "comparar la robustez de varios modelos locales con las mismas sondas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/NVIDIA/garak/blob/main/README.md",
+        "source_blob_sha": "29d7e4f4c740f1252c64b1b15045abfc7bd71051",
+        "previous_category": [
+          16,
+          "agentes"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.",
+      "desc": "Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.",
+      "stack": "Python, pyproject.toml, requirements.txt",
+      "repo": "https://github.com/NVIDIA/garak",
+      "install": "python -m pip install -U garak",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: auditar un chatbot propio frente a inyección de prompts y jailbreaks antes de publicarlo; comparar la robustez de varios modelos locales con las mismas sondas",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "ollama",
+        "litellm",
+        "promptfoo"
       ],
       "alt": []
     },
@@ -60066,6 +60569,122 @@
       ],
       "alt": [
         "radare2"
+      ]
+    },
+    {
+      "id": "hashcat",
+      "name": "hashcat",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "c",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/hashcat/hashcat/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4697d6ce30d990fa8d1c4bc915da5bd3e7f40b81"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/hashcat/hashcat/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga la release oficial y ejecuta el benchmark (`hashcat -b`) en tu equipo.",
+        "success": "Obtienes la velocidad de cálculo por tipo de hash en tu GPU o CPU.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "recuperar la contraseña de un archivo propio olvidado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/hashcat/hashcat/blob/master/README.md",
+        "source_blob_sha": "4697d6ce30d990fa8d1c4bc915da5bd3e7f40b81",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
+      "desc": "Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
+      "stack": "C",
+      "repo": "https://github.com/hashcat/hashcat",
+      "install": "Seguir la instalación original: https://github.com/hashcat/hashcat/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados; recuperar la contraseña de un archivo propio olvidado",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "metasploit",
+        "bloodhound",
+        "claude-code"
+      ],
+      "alt": [
+        "john"
       ]
     },
     {
@@ -60414,6 +61033,122 @@
       "alt": []
     },
     {
+      "id": "john",
+      "name": "John the Ripper (jumbo)",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "c",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/openwall/john/blob/bleeding-jumbo/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d14b3c0bc01351d3dfd6a883d460d9e12dfb739c"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/openwall/john/blob/bleeding-jumbo/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Compila John desde `src/` según doc/INSTALL o usa los paquetes de john-packages y ejecuta `john --test`.",
+        "success": "John muestra la velocidad de los formatos soportados en tu equipo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "auditar contraseñas débiles a partir de hashes autorizados",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "extraer el hash de un archivo cifrado propio para recuperarlo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/openwall/john/blob/bleeding-jumbo/README.md",
+        "source_blob_sha": "d14b3c0bc01351d3dfd6a883d460d9e12dfb739c",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
+      "desc": "Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
+      "stack": "C",
+      "repo": "https://github.com/openwall/john",
+      "install": "Seguir la instalación original: https://github.com/openwall/john/blob/bleeding-jumbo/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "metasploit",
+        "wireshark",
+        "bloodhound"
+      ],
+      "alt": [
+        "hashcat"
+      ]
+    },
+    {
       "id": "k6",
       "name": "k6",
       "cat": 16,
@@ -60525,6 +61260,351 @@
         "grafana",
         "mitmproxy",
         "claude-code"
+      ],
+      "alt": [
+        "locust"
+      ]
+    },
+    {
+      "id": "locust",
+      "name": "Locust",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "python",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/locustio/locust/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9bde2ba9d37e1642f4ea6928e55eafe4c8d2f50c"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/locustio/locust/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Locust con pip, escribe un `locustfile.py` con una tarea contra tu servicio local y abre la interfaz web.",
+        "success": "Ves en tiempo real peticiones por segundo, tiempos de respuesta y errores.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "medir cuántos usuarios concurrentes aguanta tu API",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "reproducir un flujo de usuario realista con login y varias peticiones",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/locustio/locust/blob/master/README.md",
+        "source_blob_sha": "9bde2ba9d37e1642f4ea6928e55eafe4c8d2f50c",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
+      "desc": "Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
+      "stack": "Python, Dockerfile, package.json, pyproject.toml",
+      "repo": "https://github.com/locustio/locust",
+      "install": "Seguir la instalación original: https://github.com/locustio/locust/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "grafana",
+        "playwright",
+        "claude-code"
+      ],
+      "alt": [
+        "k6"
+      ]
+    },
+    {
+      "id": "lynis",
+      "name": "Lynis",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "shell",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/CISOfy/lynis/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "95936beec55fcbd8d06f776b9419459a9d36a78d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/CISOfy/lynis/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repositorio y ejecuta `./lynis audit system` en una máquina propia.",
+        "success": "Obtienes advertencias, sugerencias y un índice de endurecimiento.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "revisar el endurecimiento de un servidor Linux recién instalado",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA)",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/CISOfy/lynis/blob/master/README.md",
+        "source_blob_sha": "95936beec55fcbd8d06f776b9419459a9d36a78d",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.",
+      "desc": "Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.",
+      "stack": "Shell",
+      "repo": "https://github.com/CISOfy/lynis",
+      "install": "Seguir la instalación original: https://github.com/CISOfy/lynis/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA)",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "wazuh",
+        "trivy",
+        "claude-code"
+      ],
+      "alt": []
+    },
+    {
+      "id": "metasploit",
+      "name": "Metasploit Framework",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "ruby",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/rapid7/metasploit-framework/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d8eacb7cb613ce5ad7178fa3c5c5d40f406acb9b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/rapid7/metasploit-framework/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Metasploit con los instaladores oficiales en una VM de laboratorio y arranca `msfconsole` para buscar un módulo auxiliar de escaneo.",
+        "success": "La consola muestra los módulos disponibles y sus opciones.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "validar en un laboratorio si una vulnerabilidad conocida es explotable",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "practicar post-explotación y escalada en máquinas vulnerables de entrenamiento",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/rapid7/metasploit-framework/blob/master/README.md",
+        "source_blob_sha": "d8eacb7cb613ce5ad7178fa3c5c5d40f406acb9b",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.",
+      "desc": "Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.",
+      "stack": "Ruby, Dockerfile, Gemfile, docker-compose.yml",
+      "repo": "https://github.com/rapid7/metasploit-framework",
+      "install": "Seguir la instalación original: https://github.com/rapid7/metasploit-framework/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: validar en un laboratorio si una vulnerabilidad conocida es explotable; practicar post-explotación y escalada en máquinas vulnerables de entrenamiento",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "nmap",
+        "hashcat",
+        "john",
+        "bloodhound"
       ],
       "alt": []
     },
@@ -60643,6 +61723,236 @@
         "apktool",
         "selenium",
         "shannon"
+      ],
+      "alt": []
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "c",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/nmap/nmap/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "58c58fe4af0767049ce31b3b78affc0052c5eba9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/nmap/nmap/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`.",
+        "success": "Obtienes la lista de puertos abiertos y los servicios detectados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "inventariar los equipos y puertos abiertos de tu red doméstica",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "comprobar qué servicios expone un servidor propio",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/nmap/nmap/blob/master/README.md",
+        "source_blob_sha": "58c58fe4af0767049ce31b3b78affc0052c5eba9",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.",
+      "desc": "El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.",
+      "stack": "C",
+      "repo": "https://github.com/nmap/nmap",
+      "install": "Seguir la instalación original: https://github.com/nmap/nmap/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "metasploit",
+        "nuclei",
+        "wireshark"
+      ],
+      "alt": []
+    },
+    {
+      "id": "nuclei",
+      "name": "Nuclei",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "go",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/projectdiscovery/nuclei/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "772f61ee87ac3396175d677d777dae50b5155982"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/projectdiscovery/nuclei/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest` y escanea un objetivo de laboratorio propio con las plantillas por defecto.",
+        "success": "Nuclei lista los hallazgos con su severidad y la plantilla que los detectó.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "revisar tus propios servicios expuestos frente a CVE recientes",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "añadir pruebas de regresión de seguridad a un pipeline de CI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/projectdiscovery/nuclei/blob/dev/README.md",
+        "source_blob_sha": "772f61ee87ac3396175d677d777dae50b5155982",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.",
+      "desc": "Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.",
+      "stack": "Go, Dockerfile, go.mod",
+      "repo": "https://github.com/projectdiscovery/nuclei",
+      "install": "go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: revisar tus propios servicios expuestos frente a CVE recientes; añadir pruebas de regresión de seguridad a un pipeline de CI",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "subfinder",
+        "katana",
+        "nmap",
+        "ffuf",
+        "zaproxy"
       ],
       "alt": []
     },
@@ -61607,6 +62917,120 @@
       "alt": []
     },
     {
+      "id": "sqlmap",
+      "name": "sqlmap",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "python",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/sqlmapproject/sqlmap/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f5edd06c53b30dfb717cb6a8b88f7b804c08922e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/sqlmapproject/sqlmap/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repositorio y ejecuta `python sqlmap.py -h` para ver las opciones; después pruébalo contra una aplicación vulnerable de laboratorio.",
+        "success": "sqlmap identifica el parámetro inyectable y el motor de base de datos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "comprobar si un formulario de tu aplicación es vulnerable a inyección SQL",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "reproducir un hallazgo de inyección en una auditoría autorizada",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/sqlmapproject/sqlmap/blob/master/README.md",
+        "source_blob_sha": "f5edd06c53b30dfb717cb6a8b88f7b804c08922e",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.",
+      "desc": "Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.",
+      "stack": "Python",
+      "repo": "https://github.com/sqlmapproject/sqlmap",
+      "install": "Seguir la instalación original: https://github.com/sqlmapproject/sqlmap/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: comprobar si un formulario de tu aplicación es vulnerable a inyección SQL; reproducir un hallazgo de inyección en una auditoría autorizada",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "mitmproxy",
+        "zaproxy",
+        "ffuf"
+      ],
+      "alt": []
+    },
+    {
       "id": "strix",
       "name": "strix",
       "cat": 16,
@@ -61733,6 +63157,465 @@
       ]
     },
     {
+      "id": "subfinder",
+      "name": "subfinder",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "go",
+        "security",
+        "osint"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/projectdiscovery/subfinder/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2731bedf85fe0d0c6468f5d0d24eac25955a8c66"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/projectdiscovery/subfinder/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` y enumera un dominio propio.",
+        "success": "Obtienes la lista de subdominios encontrados en fuentes pasivas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "inventariar los subdominios públicos de tu propia organización",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preparar el alcance de un programa de bug bounty",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/projectdiscovery/subfinder/blob/dev/README.md",
+        "source_blob_sha": "2731bedf85fe0d0c6468f5d0d24eac25955a8c66",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.",
+      "desc": "Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.",
+      "stack": "Go, Dockerfile, go.mod",
+      "repo": "https://github.com/projectdiscovery/subfinder",
+      "install": "go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: inventariar los subdominios públicos de tu propia organización; preparar el alcance de un programa de bug bounty",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "nuclei",
+        "katana",
+        "ffuf"
+      ],
+      "alt": []
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "go",
+        "cli",
+        "devops"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/aquasecurity/trivy/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9ba2df0ea662b376ec36db33ed6a0120ae197b13"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "brew install trivy",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/aquasecurity/trivy/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `brew install trivy` (o la imagen Docker) y ejecuta `trivy fs .` en un proyecto propio.",
+        "success": "Obtienes una tabla de vulnerabilidades por paquete con severidad y versión corregida.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "escanear una imagen Docker antes de desplegarla",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar un SBOM y revisar dependencias vulnerables de un proyecto en CI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/aquasecurity/trivy/blob/main/README.md",
+        "source_blob_sha": "9ba2df0ea662b376ec36db33ed6a0120ae197b13",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
+      "desc": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
+      "stack": "Go, Dockerfile, go.mod",
+      "repo": "https://github.com/aquasecurity/trivy",
+      "install": "brew install trivy",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: escanear una imagen Docker antes de desplegarla; generar un SBOM y revisar dependencias vulnerables de un proyecto en CI",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "claude-code",
+        "semgrep",
+        "pre-commit",
+        "coolify",
+        "wazuh",
+        "lynis"
+      ],
+      "alt": []
+    },
+    {
+      "id": "wazuh",
+      "name": "Wazuh",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "server",
+        "self-hosted",
+        "cpp"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/wazuh/wazuh/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "c99b4e496ad763bd72254ff0320e3e06a6353efb"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/wazuh/wazuh/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega Wazuh en una VM con el asistente o Docker siguiendo su guía rápida e instala un agente en otro equipo.",
+        "success": "El panel muestra el agente conectado y sus primeras alertas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "vigilar los servidores de tu laboratorio o pyme con alertas centralizadas",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/wazuh/wazuh/blob/main/README.md",
+        "source_blob_sha": "c99b4e496ad763bd72254ff0320e3e06a6353efb",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.",
+      "desc": "Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.",
+      "stack": "C++",
+      "repo": "https://github.com/wazuh/wazuh",
+      "install": "Seguir la instalación original: https://github.com/wazuh/wazuh/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: vigilar los servidores de tu laboratorio o pyme con alertas centralizadas; auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "crowdsec",
+        "lynis",
+        "trivy"
+      ],
+      "alt": []
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "c",
+        "network",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/wireshark/wireshark/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "8f1d96edc95b767b4ee3182a12f6aa52aab26d90"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/wireshark/wireshark/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Wireshark desde wireshark.org, captura en tu propia interfaz y aplica el filtro `dns`.",
+        "success": "Ves las consultas y respuestas DNS de tu equipo decodificadas campo a campo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "depurar por qué una aplicación no se conecta a un servidor",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "aprender cómo funcionan protocolos como DNS, TLS o HTTP observando el tráfico",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/wireshark/wireshark/blob/master/README.md",
+        "source_blob_sha": "8f1d96edc95b767b4ee3182a12f6aa52aab26d90",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.",
+      "desc": "Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.",
+      "stack": "C, CMakeLists.txt",
+      "repo": "https://github.com/wireshark/wireshark",
+      "install": "Seguir la instalación original: https://github.com/wireshark/wireshark/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: depurar por qué una aplicación no se conecta a un servidor; aprender cómo funcionan protocolos como DNS, TLS o HTTP observando el tráfico",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "mitmproxy",
+        "nmap",
+        "john"
+      ],
+      "alt": []
+    },
+    {
       "id": "x64dbg",
       "name": "x64dbg",
       "cat": 16,
@@ -61845,6 +63728,120 @@
         "imhex",
         "dnspy",
         "raddebugger"
+      ],
+      "alt": []
+    },
+    {
+      "id": "zaproxy",
+      "name": "ZAP (Zed Attack Proxy)",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "pruebas",
+        "java",
+        "security",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/zaproxy/zaproxy/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e5efcf16bf926466a0dbb8e29f146884df227f05"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/zaproxy/zaproxy/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga ZAP desde zaproxy.org y ejecuta el escaneo automatizado contra una aplicación de laboratorio propia.",
+        "success": "ZAP muestra alertas clasificadas por riesgo con evidencias y soluciones.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "integrar un escaneo DAST en el pipeline de CI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/zaproxy/zaproxy/blob/main/README.md",
+        "source_blob_sha": "e5efcf16bf926466a0dbb8e29f146884df227f05",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
+      "desc": "Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
+      "stack": "Java",
+      "repo": "https://github.com/zaproxy/zaproxy",
+      "install": "Seguir la instalación original: https://github.com/zaproxy/zaproxy/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo; integrar un escaneo DAST en el pipeline de CI",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "sqlmap",
+        "playwright",
+        "nuclei"
       ],
       "alt": []
     },
@@ -64820,6 +66817,118 @@
       "alt": []
     },
     {
+      "id": "agents-course",
+      "name": "Hugging Face Agents Course",
+      "cat": 19,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "learning",
+        "agents",
+        "python"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/huggingface/agents-course/blob/main/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "540d14ac71b29b3ea5569371e21690fa0c4bb077"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/huggingface/agents-course/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo.",
+        "success": "Construyes un agente sencillo que usa una herramienta.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "aprender a construir agentes con distintos frameworks de forma guiada",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "obtener un certificado tras un proyecto evaluado automáticamente",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/huggingface/agents-course/blob/main/README.md",
+        "source_blob_sha": "540d14ac71b29b3ea5569371e21690fa0c4bb077",
+        "previous_category": [
+          19,
+          "guias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.",
+      "desc": "Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.",
+      "stack": "MDX",
+      "repo": "https://github.com/huggingface/agents-course",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "smolagents",
+        "langgraph",
+        "llama-index",
+        "langfuse"
+      ],
+      "alt": []
+    },
+    {
       "id": "agents-towards-production",
       "name": "Agents Towards Production",
       "cat": 19,
@@ -65183,6 +67292,117 @@
         "llama-index",
         "firecrawl",
         "ollama"
+      ],
+      "alt": []
+    },
+    {
+      "id": "annotated-dl-papers",
+      "name": "labml.ai Annotated Paper Implementations",
+      "cat": 19,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "learning",
+        "python",
+        "pytorch"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/readme.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "706d38e26fa3a2c180e69324127b0c4b9774aee5"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "pip install labml-nn",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/readme.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre en nn.labml.ai la implementación de atención multi-cabeza y lee el código con sus notas.",
+        "success": "Ves el código de PyTorch con la explicación de cada paso al lado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entender un mecanismo como la atención o RoPE leyendo código comentado",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "reutilizar una implementación de referencia como punto de partida para experimentos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/readme.md",
+        "source_blob_sha": "706d38e26fa3a2c180e69324127b0c4b9774aee5",
+        "previous_category": [
+          19,
+          "aprender"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.",
+      "desc": "Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.",
+      "stack": "Python, requirements.txt, setup.py",
+      "repo": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+      "install": "pip install labml-nn",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "pytorch",
+        "claude-code",
+        "llms-from-scratch"
       ],
       "alt": []
     },
@@ -66614,7 +68834,8 @@
         "unsloth",
         "trl",
         "pytorch",
-        "awesome-machine-learning"
+        "awesome-machine-learning",
+        "ml-for-beginners"
       ],
       "alt": [
         "llms-from-scratch",
@@ -66853,7 +69074,8 @@
         "pytorch",
         "nanochat",
         "transformers",
-        "llm.c"
+        "llm.c",
+        "annotated-dl-papers"
       ],
       "alt": [
         "llm-course"
@@ -66976,6 +69198,117 @@
         "codex",
         "opencode",
         "awesome-harness-engineering"
+      ],
+      "alt": []
+    },
+    {
+      "id": "ml-for-beginners",
+      "name": "ML for Beginners",
+      "cat": 19,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "learning",
+        "notebooks",
+        "python"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "b4669359167ec6995991a01cbfa981119e885cea"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter.",
+        "success": "El cuaderno se ejecuta y muestra el primer modelo de regresión.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "aprender regresión, clasificación y clustering desde cero",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preparar un temario de ML clásico para una clase",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md",
+        "source_blob_sha": "b4669359167ec6995991a01cbfa981119e885cea",
+        "previous_category": [
+          19,
+          "aprender"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.",
+      "desc": "Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.",
+      "stack": "Jupyter Notebook, package.json",
+      "repo": "https://github.com/microsoft/ML-For-Beginners",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "jupyterlab",
+        "marimo",
+        "llm-course"
       ],
       "alt": []
     },

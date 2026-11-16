@@ -1049,7 +1049,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Calcula el total y promedio de cinco importes ficticios y revisa el código generado
 **Qué comprobar:** Los resultados coinciden con los números de entrada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `e2b`, `transformers`, `litellm`, `langfuse`
+**Combina con:** `e2b`, `transformers`, `litellm`, `langfuse`, `agents-course`
 **Alternativas (elige una):** `pydantic-ai`, `openai-agents-python`
 
 ## `vercel-ai`

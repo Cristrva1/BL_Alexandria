@@ -33,9 +33,9 @@ Se usa en Langfuse Cloud o se autoaloja con Docker Compose, Kubernetes o Terrafo
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (29). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (30). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ag2](ag2.md) · [Agent Development Kit (ADK)](adk-python.md) · [agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [AgentScope](agentscope.md) · [AI SDK (Vercel)](vercel-ai.md) · [claude-agent-sdk-python](claude-agent-sdk-python.md) · [crewAI](crewai.md) · [Deep Agents](deepagents.md) · [DeepEval](deepeval.md) · [dexter](dexter.md) · [dify](dify.md) · [DSPy](dspy.md) · [Grafana](grafana.md) · [Haystack](haystack.md) · [langflow](langflow.md) · [LangGraph.js](langgraphjs.md) · [LangGraph](langgraph.md) · [LibreChat](librechat.md) · [LightRAG](lightrag.md) · [loguru](loguru.md) · [Mastra](mastra.md) · [Microsoft Agent Framework](agent-framework.md) · [OpenAI Agents SDK](openai-agents-python.md) · [promptfoo](promptfoo.md) · [Pydantic AI](pydantic-ai.md) · [QuantHarness](quantharness.md) · [RAGFlow](ragflow.md) · [smolagents](smolagents.md) · [Trigger.dev](trigger-dev.md)
+[ag2](ag2.md) · [Agent Development Kit (ADK)](adk-python.md) · [agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [AgentScope](agentscope.md) · [AI SDK (Vercel)](vercel-ai.md) · [claude-agent-sdk-python](claude-agent-sdk-python.md) · [crewAI](crewai.md) · [Deep Agents](deepagents.md) · [DeepEval](deepeval.md) · [dexter](dexter.md) · [dify](dify.md) · [DSPy](dspy.md) · [Grafana](grafana.md) · [Haystack](haystack.md) · [Hugging Face Agents Course](agents-course.md) · [langflow](langflow.md) · [LangGraph.js](langgraphjs.md) · [LangGraph](langgraph.md) · [LibreChat](librechat.md) · [LightRAG](lightrag.md) · [loguru](loguru.md) · [Mastra](mastra.md) · [Microsoft Agent Framework](agent-framework.md) · [OpenAI Agents SDK](openai-agents-python.md) · [promptfoo](promptfoo.md) · [Pydantic AI](pydantic-ai.md) · [QuantHarness](quantharness.md) · [RAGFlow](ragflow.md) · [smolagents](smolagents.md) · [Trigger.dev](trigger-dev.md)
 
 **Notas:** Alternativas (elige una): phoenix, opik, mlflow. Las funciones `ee` tienen otra licencia.
 

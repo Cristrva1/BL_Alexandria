@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 706 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 726 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -723,7 +723,7 @@
      "title": "Skills de análisis y seguridad"
     }
    ],
-   "count": 26,
+   "count": 43,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -793,7 +793,7 @@
      "title": "Aprender LLMs desde cero"
     }
    ],
-   "count": 28
+   "count": 31
   },
   {
    "num": 20,
@@ -21408,7 +21408,9 @@
    "lib": false,
    "pick": false,
    "one": "Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.",
-   "alt": [],
+   "alt": [
+    "locust"
+   ],
    "stars": 32298,
    "github_id": 54400687,
    "gh": "grafana/k6",
@@ -28868,6 +28870,736 @@
    "routes": [
     "no_api"
    ]
+  },
+  {
+   "id": "garak",
+   "name": "garak",
+   "cat": 16,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "llm",
+    "python",
+    "evaluation"
+   ],
+   "stars": 10043,
+   "gh": "NVIDIA/garak",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.",
+   "alt": [],
+   "doc": "human/fichas/garak.md",
+   "github_id": 639097338,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "trivy",
+   "name": "Trivy",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "devops"
+   ],
+   "stars": 39390,
+   "gh": "aquasecurity/trivy",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
+   "alt": [],
+   "doc": "human/fichas/trivy.md",
+   "github_id": 180687624,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "metasploit",
+   "name": "Metasploit Framework",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "ruby",
+    "security",
+    "cli"
+   ],
+   "stars": 39584,
+   "gh": "rapid7/metasploit-framework",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.",
+   "alt": [],
+   "doc": "human/fichas/metasploit.md",
+   "github_id": 2293158,
+   "lang": "Ruby",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sqlmap",
+   "name": "sqlmap",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "python",
+    "security",
+    "cli"
+   ],
+   "stars": 38961,
+   "gh": "sqlmapproject/sqlmap",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.",
+   "alt": [],
+   "doc": "human/fichas/sqlmap.md",
+   "github_id": 4793392,
+   "lang": "Python",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nuclei",
+   "name": "Nuclei",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "cli"
+   ],
+   "stars": 32965,
+   "gh": "projectdiscovery/nuclei",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.",
+   "alt": [],
+   "doc": "human/fichas/nuclei.md",
+   "github_id": 252813491,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nmap",
+   "name": "Nmap",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "stars": 14000,
+   "gh": "nmap/nmap",
+   "lib": false,
+   "pick": false,
+   "one": "El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.",
+   "alt": [],
+   "doc": "human/fichas/nmap.md",
+   "github_id": 3671479,
+   "lang": "C",
+   "license": "NPSL (no OSI)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ml-for-beginners",
+   "name": "ML for Beginners",
+   "cat": 19,
+   "sub": "aprender",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "learning",
+    "notebooks",
+    "python"
+   ],
+   "stars": 92213,
+   "gh": "microsoft/ML-For-Beginners",
+   "lib": false,
+   "pick": false,
+   "one": "Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.",
+   "alt": [],
+   "doc": "human/fichas/ml-for-beginners.md",
+   "github_id": 343965132,
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "agents-course",
+   "name": "Hugging Face Agents Course",
+   "cat": 19,
+   "sub": "guias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "learning",
+    "agents",
+    "python"
+   ],
+   "stars": 35017,
+   "gh": "huggingface/agents-course",
+   "lib": false,
+   "pick": false,
+   "one": "Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.",
+   "alt": [],
+   "doc": "human/fichas/agents-course.md",
+   "github_id": 917868934,
+   "lang": "MDX",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "wazuh",
+   "name": "Wazuh",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "server",
+    "self-hosted",
+    "cpp"
+   ],
+   "stars": 17760,
+   "gh": "wazuh/wazuh",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.",
+   "alt": [],
+   "doc": "human/fichas/wazuh.md",
+   "github_id": 40556106,
+   "lang": "C++",
+   "license": "GPL-2.0 + AGPL-3.0 (partes)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "lynis",
+   "name": "Lynis",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "shell",
+    "cli"
+   ],
+   "stars": 16695,
+   "gh": "CISOfy/lynis",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.",
+   "alt": [],
+   "doc": "human/fichas/lynis.md",
+   "github_id": 15078635,
+   "lang": "Shell",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "crowdsec",
+   "name": "CrowdSec",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "go",
+    "server",
+    "self-hosted"
+   ],
+   "stars": 15643,
+   "gh": "crowdsecurity/crowdsec",
+   "lib": false,
+   "pick": false,
+   "one": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
+   "alt": [],
+   "doc": "human/fichas/crowdsec.md",
+   "github_id": 264154402,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "locust",
+   "name": "Locust",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "python",
+    "app"
+   ],
+   "stars": 28288,
+   "gh": "locustio/locust",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
+   "alt": [
+    "k6"
+   ],
+   "doc": "human/fichas/locust.md",
+   "github_id": 1377867,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "hashcat",
+   "name": "hashcat",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "stars": 27357,
+   "gh": "hashcat/hashcat",
+   "lib": false,
+   "pick": false,
+   "one": "Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
+   "alt": [
+    "john"
+   ],
+   "doc": "human/fichas/hashcat.md",
+   "github_id": 47409672,
+   "lang": "C",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ffuf",
+   "name": "ffuf",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "cli"
+   ],
+   "stars": 17065,
+   "gh": "ffuf/ffuf",
+   "lib": false,
+   "pick": false,
+   "one": "Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.",
+   "alt": [],
+   "doc": "human/fichas/ffuf.md",
+   "github_id": 156681830,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zaproxy",
+   "name": "ZAP (Zed Attack Proxy)",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "java",
+    "security",
+    "app"
+   ],
+   "stars": 16198,
+   "gh": "zaproxy/zaproxy",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
+   "alt": [],
+   "doc": "human/fichas/zaproxy.md",
+   "github_id": 36817565,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "subfinder",
+   "name": "subfinder",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "osint"
+   ],
+   "stars": 14812,
+   "gh": "projectdiscovery/subfinder",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.",
+   "alt": [],
+   "doc": "human/fichas/subfinder.md",
+   "github_id": 127519518,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "john",
+   "name": "John the Ripper (jumbo)",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "stars": 13935,
+   "gh": "openwall/john",
+   "lib": false,
+   "pick": false,
+   "one": "Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
+   "alt": [
+    "hashcat"
+   ],
+   "doc": "human/fichas/john.md",
+   "github_id": 2997204,
+   "lang": "C",
+   "license": "GPL-2.0 (con partes bajo otras licencias)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "wireshark",
+   "name": "Wireshark",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "network",
+    "app"
+   ],
+   "stars": 10226,
+   "gh": "wireshark/wireshark",
+   "lib": false,
+   "pick": false,
+   "one": "Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.",
+   "alt": [],
+   "doc": "human/fichas/wireshark.md",
+   "github_id": 21329550,
+   "lang": "C",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "bloodhound",
+   "name": "BloodHound Community Edition",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "graph"
+   ],
+   "stars": 3570,
+   "gh": "SpecterOps/BloodHound",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).",
+   "alt": [],
+   "doc": "human/fichas/bloodhound.md",
+   "github_id": 674367771,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "annotated-dl-papers",
+   "name": "labml.ai Annotated Paper Implementations",
+   "cat": 19,
+   "sub": "aprender",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "learning",
+    "python",
+    "pytorch"
+   ],
+   "stars": 67752,
+   "gh": "labmlai/annotated_deep_learning_paper_implementations",
+   "lib": false,
+   "pick": false,
+   "one": "Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.",
+   "alt": [],
+   "doc": "human/fichas/annotated-dl-papers.md",
+   "github_id": 290091948,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   }
  ],
  "discovery": {
@@ -29034,6 +29766,7 @@
     "categories": [
      3,
      4,
+     16,
      21
     ],
     "keywords": [
@@ -29584,6 +30317,7 @@
     "categories": [
      13,
      15,
+     16,
      18,
      22
     ],

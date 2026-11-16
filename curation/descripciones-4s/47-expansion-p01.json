@@ -716,6 +716,18 @@
      "motivo": "Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado.",
      "reciproca_de": "theharvester"
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Combinación recíproca: Nuclei lo enlaza como «katana rastrea URLs y endpoints que Nuclei escanea a continuación».",
+     "orden_instalacion": "Orden indicado desde Nuclei: Rastrea con katana; después pasa las URLs a nuclei.",
+     "reciproca_de": "nuclei"
+    },
+    {
+     "id": "subfinder",
+     "motivo": "Combinación recíproca: subfinder lo enlaza como «katana rastrea los subdominios descubiertos para mapear endpoints».",
+     "orden_instalacion": "Orden indicado desde subfinder: Enumera con subfinder; después pasa los hosts a katana.",
+     "reciproca_de": "subfinder"
     }
    ],
    "notas": "Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.",

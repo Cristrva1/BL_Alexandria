@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 706 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 726 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **706 repos** de IA y
+proyecto concreto. Tienes un menú curado de **726 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -670,7 +670,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `vaultwarden` [P|loc|H|?] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust
 - `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable  — tags: automation,typescript,iot,self-hosted
 
-### 16. Analizar software y comprobar su seguridad (26)
+### 16. Analizar software y comprobar su seguridad (43)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 
 - `angr` [L|loc|M|?] — Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de — tags: reversing,library,python
@@ -678,17 +678,28 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `awesome-ai-reverse-engineering` [D|loc|E|?] — Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. — tags: referencias,reference
 - `awesome-reverse-engineering` [D|loc|E|?] — Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. — tags: referencias,reference,python
 - `bla` [A|loc|M|+] — Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por  — tags: defensa,app,typescript
+- `bloodhound` [P|loc|M|?] — Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de — tags: pruebas,go,security,graph
 - `craft-anything` [A|hyb|M|+] — Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con age — tags: agentes,app,rust — prov: local
+- `crowdsec` [P|loc|M|?] — IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Wind — tags: security,go,server,self-hosted
 - `cybersecurity-skills` [S|hyb|E|+] — Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Co — tags: cybersecurity,seguridad,skills,claude-code,codex,comunidad
 - `defending-code-reference-harness` [S|cld|M|+] — Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilid — tags: security,skills,coding-agent — prov: anthropic
 - `dnspy` [A|loc|E|?] — Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. — tags: depuracion,app,c
+- `ffuf` [A|loc|E|+] — Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo  — tags: pruebas,go,security,cli
 - `frida` [A|loc|M|?] — Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su e — tags: reversing,app,meson
+- `garak` [A|hyb|M|+] — Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucina — tags: security,llm,python,evaluation
 - `ghidra` [A|loc|M|?] — Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. — tags: reversing,app,java — alt: radare2
+- `hashcat` [A|loc|M|?] — Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos — tags: pruebas,c,security,cli — alt: john
 - `ilspy` [A|loc|E|?] — Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles. — tags: reversing,app,c
 - `imhex` [A|loc|E|?] — Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante  — tags: reversing,app,c
 - `jadx` [A|loc|M|?] — Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android. — tags: reversing,app,java
-- `k6` [A|loc|M|?] — Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de t — tags: pruebas,app,go
+- `john` [A|loc|M|?] — Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifr — tags: pruebas,c,security,cli — alt: hashcat
+- `k6` [A|loc|M|?] — Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de t — tags: pruebas,app,go — alt: locust
+- `locust` [A|loc|E|?] — Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, co — tags: pruebas,python,app — alt: k6
+- `lynis` [A|loc|E|?] — Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere — tags: security,shell,cli
+- `metasploit` [L|loc|M|?] — Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-expl — tags: pruebas,ruby,security,cli
 - `mitmproxy` [A|loc|M|?] — Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizada — tags: pruebas,app,python
+- `nmap` [A|loc|E|?] — El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE par — tags: pruebas,c,security,cli
+- `nuclei` [A|loc|E|+] — Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, D — tags: pruebas,go,security,cli
 - `radare2` [A|loc|M|?] — Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. — tags: reversing,app,c — alt: rizin,ghidra
 - `raddebugger` [A|loc|E|?] — Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas. — tags: depuracion,app,c
 - `rea` [S|loc|M|+] — Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de c — tags: agentes,skill,typescript
@@ -697,8 +708,14 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `semgrep` [A|loc|E|+] — Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. — tags: security,code — alt: ast-grep,sonarqube
 - `shannon` [A|hyb|M|+] — Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autor — tags: agentes,agent,typescript — prov: local — alt: strix
 - `skillspector` [A|cld|E|+] — Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. — tags: skills,coding-agent,python
+- `sqlmap` [A|loc|E|?] — Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el — tags: pruebas,python,security,cli
 - `strix` [A|hyb|M|?] — Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de Ch — tags: agentes,agent,python — prov: local — alt: shannon
+- `subfinder` [A|loc|E|+] — Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para e — tags: pruebas,go,security,osint
+- `trivy` [A|loc|E|+] — Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, r — tags: security,go,cli,devops
+- `wazuh` [P|loc|H|?] — Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad d — tags: security,server,self-hosted,cpp
+- `wireshark` [A|loc|E|?] — Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TSh — tags: pruebas,c,network,app
 - `x64dbg` [A|loc|E|?] — Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. — tags: depuracion,app,c
+- `zaproxy` [A|loc|M|?] — Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy intercepto — tags: pruebas,java,security,app
 
 ### 17. WhatsApp, mensajería y chatbots (10)
 Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
@@ -731,14 +748,16 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 - `sellbird` [A|loc|M|+] — Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. — tags: marketing,agent,python
 - `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker
 
-### 19. Aprender IA y escribir mejores prompts (28)
+### 19. Aprender IA y escribir mejores prompts (31)
 Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 
 - `12-factor-agents` [D|hyb|E|?] — Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12  — tags: agents,learning,prompts,typescript
 - `500-ai-agents-projects` [D|hyb|E|?] — Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas. — tags: guias,ai-agents,genai,python
+- `agents-course` [D|loc|E|?] — Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaI — tags: learning,agents,python
 - `agents-towards-production` [D|cld|M|+] — Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad,  — tags: agents,learning,notebooks,python — prov: openai,local
 - `ai-agents-for-beginners` [D|cld|M|?] — Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, tra — tags: agents,learning,notebooks,python — prov: openai,local
 - `ai-engineering-hub` [D|hyb|E|?] — Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificia — tags: guias,agents,ai,llms,machine-learning,mcp,rag,jupyter notebook
+- `annotated-dl-papers` [D|loc|E|+] — Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: — tags: learning,python,pytorch
 - `awesome-harness-engineering` [D|loc|E|?] — Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA — tags: guias,reference,python
 - `awesome-llm-apps` [D|hyb|M|?] — Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y sk — tags: agents,rag,learning,python — prov: openai,anthropic,google,local — alt: openai-cookbook,claude-cookbooks
 - `awesome-machine-learning` [D|hyb|E|?] — Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. — tags: aprender,python
@@ -754,6 +773,7 @@ Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 - `llm.c` [L|loc|H|?] — Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados,  — tags: learning
 - `llms-from-scratch` [D|loc|M|+] — Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. — tags: learning,training,python — alt: llm-course
 - `loop-engineering` [S|loc|E|+] — Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. — tags: coding-agent,skills,typescript
+- `ml-for-beginners` [D|loc|E|?] — Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Py — tags: learning,notebooks,python
 - `nanochat` [L|loc|M|+] — Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde e — tags: learning,python
 - `openai-cookbook` [D|cld|E|?] — Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. — tags: learning,notebooks,python — alt: claude-cookbooks,awesome-llm-apps
 - `prompt-eng-tutorial` [D|cld|E|?] — Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. — tags: learning,prompts,notebooks — prov: anthropic — alt: prompt-engineering-guide

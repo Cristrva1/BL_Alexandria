@@ -33,9 +33,9 @@ Se instala con `npm init playwright@latest` (pruebas), `npm i playwright` (libre
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (18). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ai-website-cloner-template](ai-website-cloner-template.md) · [crawlee-python](crawlee-python.md) · [diagram-design](diagram-design.md) · [Gemini Computer Use (preview)](computer-use-preview.md) · [GEO-SEO Claude](geo-seo-claude.md) · [llm-scraper](llm-scraper.md) · [mitmproxy](mitmproxy.md) · [OpenManus](openmanus.md) · [Scrapegraph-ai](scrapegraph-ai.md) · [scrapy](scrapy.md) · [screenshot-to-code](screenshot-to-code.md) · [Skyvern](skyvern.md) · [Slidev](slidev.md) · [Storybook](storybook.md) · [Trigger.dev](trigger-dev.md) · [UI SDK (Vercel)](ui-sdk.md)
+[ai-website-cloner-template](ai-website-cloner-template.md) · [crawlee-python](crawlee-python.md) · [diagram-design](diagram-design.md) · [Gemini Computer Use (preview)](computer-use-preview.md) · [GEO-SEO Claude](geo-seo-claude.md) · [llm-scraper](llm-scraper.md) · [Locust](locust.md) · [mitmproxy](mitmproxy.md) · [OpenManus](openmanus.md) · [Scrapegraph-ai](scrapegraph-ai.md) · [scrapy](scrapy.md) · [screenshot-to-code](screenshot-to-code.md) · [Skyvern](skyvern.md) · [Slidev](slidev.md) · [Storybook](storybook.md) · [Trigger.dev](trigger-dev.md) · [UI SDK (Vercel)](ui-sdk.md) · [ZAP (Zed Attack Proxy)](zaproxy.md)
 
 **Notas:** Alternativas (elige una): puppeteer, selenium.
 

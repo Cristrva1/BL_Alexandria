@@ -756,12 +756,194 @@
         "license": "AGPL-3.0",
         "pushed_at": "2026-11-15"
       }
+    ],
+    "p05": [
+      {
+        "id": "garak",
+        "full_name": "NVIDIA/garak",
+        "github_id": 639097338,
+        "readme_blob_sha": "29d7e4f4c740f1252c64b1b15045abfc7bd71051",
+        "stars": 10043,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-06"
+      },
+      {
+        "id": "trivy",
+        "full_name": "aquasecurity/trivy",
+        "github_id": 180687624,
+        "readme_blob_sha": "9ba2df0ea662b376ec36db33ed6a0120ae197b13",
+        "stars": 39390,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "metasploit",
+        "full_name": "rapid7/metasploit-framework",
+        "github_id": 2293158,
+        "readme_blob_sha": "d8eacb7cb613ce5ad7178fa3c5c5d40f406acb9b",
+        "stars": 39584,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "sqlmap",
+        "full_name": "sqlmapproject/sqlmap",
+        "github_id": 4793392,
+        "readme_blob_sha": "f5edd06c53b30dfb717cb6a8b88f7b804c08922e",
+        "stars": 38961,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "nuclei",
+        "full_name": "projectdiscovery/nuclei",
+        "github_id": 252813491,
+        "readme_blob_sha": "772f61ee87ac3396175d677d777dae50b5155982",
+        "stars": 32965,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "nmap",
+        "full_name": "nmap/nmap",
+        "github_id": 3671479,
+        "readme_blob_sha": "58c58fe4af0767049ce31b3b78affc0052c5eba9",
+        "stars": 14000,
+        "license": "NPSL (no OSI)",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "ml-for-beginners",
+        "full_name": "microsoft/ML-For-Beginners",
+        "github_id": 343965132,
+        "readme_blob_sha": "b4669359167ec6995991a01cbfa981119e885cea",
+        "stars": 92213,
+        "license": "MIT",
+        "pushed_at": "2026-11-07"
+      },
+      {
+        "id": "agents-course",
+        "full_name": "huggingface/agents-course",
+        "github_id": 917868934,
+        "readme_blob_sha": "540d14ac71b29b3ea5569371e21690fa0c4bb077",
+        "stars": 35017,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-10"
+      },
+      {
+        "id": "wazuh",
+        "full_name": "wazuh/wazuh",
+        "github_id": 40556106,
+        "readme_blob_sha": "c99b4e496ad763bd72254ff0320e3e06a6353efb",
+        "stars": 17760,
+        "license": "GPL-2.0 + AGPL-3.0 (partes)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "lynis",
+        "full_name": "CISOfy/lynis",
+        "github_id": 15078635,
+        "readme_blob_sha": "95936beec55fcbd8d06f776b9419459a9d36a78d",
+        "stars": 16695,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-09-16"
+      },
+      {
+        "id": "crowdsec",
+        "full_name": "crowdsecurity/crowdsec",
+        "github_id": 264154402,
+        "readme_blob_sha": "5a4bb31438a2f1c9d313db17550b6bd382d1dafd",
+        "stars": 15643,
+        "license": "MIT",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "locust",
+        "full_name": "locustio/locust",
+        "github_id": 1377867,
+        "readme_blob_sha": "9bde2ba9d37e1642f4ea6928e55eafe4c8d2f50c",
+        "stars": 28288,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "hashcat",
+        "full_name": "hashcat/hashcat",
+        "github_id": 47409672,
+        "readme_blob_sha": "4697d6ce30d990fa8d1c4bc915da5bd3e7f40b81",
+        "stars": 27357,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "ffuf",
+        "full_name": "ffuf/ffuf",
+        "github_id": 156681830,
+        "readme_blob_sha": "3151a056a06c5870a9aa573827f5cdf3eb2c7756",
+        "stars": 17065,
+        "license": "MIT",
+        "pushed_at": "2026-09-26"
+      },
+      {
+        "id": "zaproxy",
+        "full_name": "zaproxy/zaproxy",
+        "github_id": 36817565,
+        "readme_blob_sha": "e5efcf16bf926466a0dbb8e29f146884df227f05",
+        "stars": 16198,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "subfinder",
+        "full_name": "projectdiscovery/subfinder",
+        "github_id": 127519518,
+        "readme_blob_sha": "2731bedf85fe0d0c6468f5d0d24eac25955a8c66",
+        "stars": 14812,
+        "license": "MIT",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "john",
+        "full_name": "openwall/john",
+        "github_id": 2997204,
+        "readme_blob_sha": "d14b3c0bc01351d3dfd6a883d460d9e12dfb739c",
+        "stars": 13935,
+        "license": "GPL-2.0 (con partes bajo otras licencias)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "wireshark",
+        "full_name": "wireshark/wireshark",
+        "github_id": 21329550,
+        "readme_blob_sha": "8f1d96edc95b767b4ee3182a12f6aa52aab26d90",
+        "stars": 10226,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "bloodhound",
+        "full_name": "SpecterOps/BloodHound",
+        "github_id": 674367771,
+        "readme_blob_sha": "88b5b5c9319268ad2e90421125e98893b0feb6fd",
+        "stars": 3570,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "annotated-dl-papers",
+        "full_name": "labmlai/annotated_deep_learning_paper_implementations",
+        "github_id": 290091948,
+        "readme_blob_sha": "706d38e26fa3a2c180e69324127b0c4b9774aee5",
+        "stars": 67752,
+        "license": "MIT",
+        "pushed_at": "2026-11-02"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 83,
-  "total_repositories": 706
+  "added_count": 103,
+  "total_repositories": 726
 }
