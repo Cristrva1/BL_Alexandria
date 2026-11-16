@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**640 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**661 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -12,10 +12,10 @@
 2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 30
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 34
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 28
-5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 23
-6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 23
-7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 11
-8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 26
+5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 25
+6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 28
+7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 20
+8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 31
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 29
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 21
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 8
@@ -250,9 +250,11 @@ _SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dat
 | [GitHub MCP Server](human/fichas/github-mcp-server.md) | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
 | [Blender MCP](human/fichas/blender-mcp.md) | Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [Serena](human/fichas/serena.md) | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
+| [MCP Toolbox for Databases](human/fichas/mcp-toolbox.md) | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [Figma Context MCP](human/fichas/figma-context-mcp.md) | Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
 | [unity-mcp](human/fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [GhidraMCP](human/fichas/ghidramcp.md) | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
+| [MCP servers for AWS](human/fichas/aws-mcp.md) | Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [annas-mcp](human/fichas/annas-mcp.md) | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [mcp-neo4j](human/fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [Neo4j MCP (oficial)](human/fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
@@ -292,10 +294,13 @@ _Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene cont
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [RAGFlow](human/fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | Depende de la ruta elegida | ⚙️ plataforma | 🔴 pesado |
+| [Meilisearch](human/fichas/meilisearch.md) | Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla. | API de IA opcional | ⚙️ plataforma | 🟢 fácil |
 | [LightRAG](human/fichas/lightrag.md) | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 | [PageIndex](human/fichas/pageindex.md) | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
 | [graphrag](human/fichas/graphrag.md) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 | [onyx](human/fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
+| [kotaemon](human/fichas/kotaemon.md) | Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG. | API de IA opcional | 🖥️ app | 🟡 medio |
+| [txtai](human/fichas/txtai.md) | Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [agentic-rag-for-dummies](human/fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 
 ### Bases vectoriales y búsqueda semántica
@@ -308,6 +313,8 @@ _Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene cont
 | [Chroma](human/fichas/chroma.md) | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
 | [pgvector](human/fichas/pgvector.md) | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [turbovec](human/fichas/turbovec.md) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Weaviate](human/fichas/weaviate.md) | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [LanceDB](human/fichas/lancedb.md) | Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 
 ## 🧑‍💻 7. Entender código y comprobar su calidad
 
@@ -330,6 +337,12 @@ _Índices de código, análisis, calidad, benchmarks y herramientas de desarroll
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [ast-grep](human/fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Ruff](human/fichas/ruff.md) | Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Gitleaks](human/fichas/gitleaks.md) | Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [TruffleHog](human/fichas/trufflehog.md) | Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Biome](human/fichas/biome.md) | Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por CLI y LSP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [pre-commit](human/fichas/pre-commit.md) | Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [SonarQube Community Build](human/fichas/sonarqube.md) | Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [SWE-bench](human/fichas/swe-bench.md) | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | API de IA opcional | 📚 librería/SDK | 🔴 pesado |
 
 ### CLIs y SDKs de desarrollo
@@ -337,6 +350,9 @@ _Índices de código, análisis, calidad, benchmarks y herramientas de desarroll
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [GitHub CLI](human/fichas/cli.md) | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [fzf](human/fichas/fzf.md) | Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [lazygit](human/fichas/lazygit.md) | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [ripgrep](human/fichas/ripgrep.md) | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [openai-python](human/fichas/openai-python.md) | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. | API de IA necesaria | 📚 librería/SDK | 🟢 fácil |
 
 ## 🏠 8. Chats, modelos locales y espacios privados
@@ -354,9 +370,12 @@ _Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiz
 | [airllm](human/fichas/airllm.md) | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [llmfit](human/fichas/llmfit.md) | Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [llamafile](human/fichas/llamafile.md) | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
+| [MLC LLM](human/fichas/mlc-llm.md) | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [FreeToken](human/fichas/freetoken.md) | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [transformers.js](human/fichas/transformers-js.md) | Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [KoboldCpp](human/fichas/koboldcpp.md) | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
 | [magnitude](human/fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
+| [MLX LM](human/fichas/mlx-lm.md) | Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
 
 ### Interfaces de chat auto-hospedadas
 
@@ -364,11 +383,13 @@ _Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiz
 |---|---|---|---|---|
 | ⭐ [Open WebUI](human/fichas/open-webui.md) | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | ⭐ [Jan](human/fichas/jan.md) | Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [NextChat](human/fichas/nextchat.md) | Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP. | API de IA necesaria | 🖥️ app | 🟢 fácil |
 | [LobeHub](human/fichas/lobehub.md) | Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. | Depende de la ruta elegida | 🖥️ app | 🟢 fácil |
 | [Cherry Studio](human/fichas/cherry-studio.md) | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [Text Generation WebUI](human/fichas/textgen.md) | App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [LibreChat](human/fichas/librechat.md) | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. | API de IA opcional | 🖥️ app | 🟡 medio |
 | [chatbox](human/fichas/chatbox.md) | Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [SillyTavern](human/fichas/sillytavern.md) | Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones. | API de IA opcional | 🖥️ app | 🟡 medio |
 
 ### Workspaces privados y segundos cerebros
 

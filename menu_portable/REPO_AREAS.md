@@ -284,7 +284,7 @@ Abrir páginas e interactuar con interfaces reales.
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-typescript-sdk`, `mcp-use`, `neo4j-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `unity-mcp`
+`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `aws-mcp`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-toolbox`, `mcp-typescript-sdk`, `mcp-use`, `neo4j-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `unity-mcp`
 
 ## IA local, modelos y entrenamiento
 
@@ -294,13 +294,13 @@ Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para
 
 Interfaces de conversación y espacios de trabajo con tus fuentes.
 
-`anything-llm`, `chatbox`, `cherry-studio`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `private-gpt`, `surfsense`, `textgen`
+`anything-llm`, `chatbox`, `cherry-studio`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `nextchat`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `private-gpt`, `sillytavern`, `surfsense`, `textgen`
 
 ### Motores para modelos locales
 
 Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
-`airllm`, `exo`, `freetoken`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `ollama`, `transformers.js`
+`airllm`, `exo`, `freetoken`, `koboldcpp`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `mlc-llm`, `mlx-lm`, `ollama`, `transformers.js`
 
 ### Modelos abiertos y pesos
 
@@ -352,7 +352,7 @@ Explicar sistemas e ideas mediante diagramas.
 
 Recuperar fuentes con RAG y búsqueda semántica.
 
-`agentic-rag-for-dummies`, `chroma`, `faiss`, `graphrag`, `lightrag`, `milvus`, `onyx`, `pageindex`, `pgvector`, `qdrant`, `ragflow`, `turbovec`
+`agentic-rag-for-dummies`, `chroma`, `faiss`, `graphrag`, `kotaemon`, `lancedb`, `lightrag`, `meilisearch`, `milvus`, `onyx`, `pageindex`, `pgvector`, `qdrant`, `ragflow`, `turbovec`, `txtai`, `weaviate`
 
 ### Memoria y contexto para agentes
 
@@ -454,7 +454,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Índices y análisis para orientarte dentro de repositorios.
 
-`ast-grep`, `cli`, `codebase-memory-mcp`, `codegraph`, `floorplan`, `gitnexus`, `graphify`, `openai-python`, `repomix`, `swe-bench`, `tree-sitter`
+`ast-grep`, `biome`, `cli`, `codebase-memory-mcp`, `codegraph`, `floorplan`, `fzf`, `gitleaks`, `gitnexus`, `graphify`, `lazygit`, `openai-python`, `pre-commit`, `repomix`, `ripgrep`, `ruff`, `sonarqube`, `swe-bench`, `tree-sitter`, `trufflehog`
 
 ### Backend, alojamiento y despliegue
 

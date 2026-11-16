@@ -163,6 +163,12 @@
      "motivo": "Combinación recíproca: Scrapegraph-ai lo enlaza como «Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Scrapegraph-ai: Exporta los resultados como documentos para GraphRAG.",
      "reciproca_de": "scrapegraph-ai"
+    },
+    {
+     "id": "kotaemon",
+     "motivo": "Combinación recíproca: kotaemon lo enlaza como «kotaemon soporta GraphRAG de Microsoft y nano-GraphRAG para preguntas sobre relaciones entre documentos».",
+     "orden_instalacion": "Orden indicado desde kotaemon: Instala graphrag o nano-graphrag según el README; después elige ese índice.",
+     "reciproca_de": "kotaemon"
     }
    ],
    "notas": "Alternativas (elige una): graphiti, cognee, lightrag. Por su estado de mantenimiento, evalúa lightrag para proyectos nuevos.",

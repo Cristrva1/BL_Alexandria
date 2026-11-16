@@ -74,39 +74,46 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Playwright MCP](fichas/playwright-mcp.md) | [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md), [browser-use](fichas/browser-use.md), [Browser Harness](fichas/browser-harness.md) |
 | [Serena](fichas/serena.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [graphify](fichas/graphify.md) |
 | [agentmemory](fichas/agentmemory.md) | [Engram](fichas/engram.md), [supermemory](fichas/supermemory.md), [claude-mem](fichas/claude-mem.md) |
-| [Chroma](fichas/chroma.md) | [Qdrant](fichas/qdrant.md), [pgvector](fichas/pgvector.md), [Milvus](fichas/milvus.md), [Faiss](fichas/faiss.md) |
+| [Chroma](fichas/chroma.md) | [Qdrant](fichas/qdrant.md), [pgvector](fichas/pgvector.md), [Milvus](fichas/milvus.md), [Faiss](fichas/faiss.md), [LanceDB](fichas/lancedb.md) |
 | [claude-mem](fichas/claude-mem.md) | [Engram](fichas/engram.md), [agentmemory](fichas/agentmemory.md) |
 | [cognee](fichas/cognee.md) | [Graphiti](fichas/graphiti.md), [mem0](fichas/mem0.md), [graphrag](fichas/graphrag.md), [Letta](fichas/letta.md) |
 | [Engram](fichas/engram.md) | [claude-mem](fichas/claude-mem.md), [agentmemory](fichas/agentmemory.md) |
 | [Faiss](fichas/faiss.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md) |
 | [Graphiti](fichas/graphiti.md) | [cognee](fichas/cognee.md), [graphrag](fichas/graphrag.md) |
 | [graphrag](fichas/graphrag.md) | [Graphiti](fichas/graphiti.md), [cognee](fichas/cognee.md), [LightRAG](fichas/lightrag.md) |
+| [LanceDB](fichas/lancedb.md) | [Chroma](fichas/chroma.md) |
 | [Letta](fichas/letta.md) | [mem0](fichas/mem0.md), [cognee](fichas/cognee.md) |
 | [LightRAG](fichas/lightrag.md) | [graphrag](fichas/graphrag.md), [RAGFlow](fichas/ragflow.md), [PageIndex](fichas/pageindex.md) |
 | [mem0](fichas/mem0.md) | [Letta](fichas/letta.md), [cognee](fichas/cognee.md), [supermemory](fichas/supermemory.md) |
-| [Milvus](fichas/milvus.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md) |
+| [Milvus](fichas/milvus.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md), [Weaviate](fichas/weaviate.md) |
 | [onyx](fichas/onyx.md) | [AnythingLLM](fichas/anything-llm.md) |
 | [PageIndex](fichas/pageindex.md) | [LightRAG](fichas/lightrag.md) |
 | [pgvector](fichas/pgvector.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md), [Milvus](fichas/milvus.md) |
-| [Qdrant](fichas/qdrant.md) | [Milvus](fichas/milvus.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md), [Faiss](fichas/faiss.md) |
+| [Qdrant](fichas/qdrant.md) | [Milvus](fichas/milvus.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md), [Faiss](fichas/faiss.md), [Weaviate](fichas/weaviate.md) |
 | [RAGFlow](fichas/ragflow.md) | [dify](fichas/dify.md), [LightRAG](fichas/lightrag.md) |
 | [supermemory](fichas/supermemory.md) | [mem0](fichas/mem0.md), [agentmemory](fichas/agentmemory.md) |
+| [Weaviate](fichas/weaviate.md) | [Qdrant](fichas/qdrant.md), [Milvus](fichas/milvus.md) |
 | [ast-grep](fichas/ast-grep.md) | [Semgrep](fichas/semgrep.md) |
 | [codebase-memory-mcp](fichas/codebase-memory-mcp.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [Serena](fichas/serena.md), [graphify](fichas/graphify.md) |
 | [codegraph](fichas/codegraph.md) | [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [GitNexus](fichas/gitnexus.md), [graphify](fichas/graphify.md) |
+| [Gitleaks](fichas/gitleaks.md) | [TruffleHog](fichas/trufflehog.md) |
 | [GitNexus](fichas/gitnexus.md) | [Repomix](fichas/repomix.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [codegraph](fichas/codegraph.md), [graphify](fichas/graphify.md) |
 | [graphify](fichas/graphify.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [Serena](fichas/serena.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md) |
 | [Repomix](fichas/repomix.md) | [GitNexus](fichas/gitnexus.md) |
+| [SonarQube Community Build](fichas/sonarqube.md) | [Semgrep](fichas/semgrep.md) |
+| [TruffleHog](fichas/trufflehog.md) | [Gitleaks](fichas/gitleaks.md) |
 | [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md), [onyx](fichas/onyx.md) |
-| [chatbox](fichas/chatbox.md) | [Jan](fichas/jan.md) |
+| [chatbox](fichas/chatbox.md) | [Jan](fichas/jan.md), [NextChat](fichas/nextchat.md), [LobeHub](fichas/lobehub.md) |
 | [Cherry Studio](fichas/cherry-studio.md) | [Jan](fichas/jan.md), [LobeHub](fichas/lobehub.md) |
 | [Jan](fichas/jan.md) | [Cherry Studio](fichas/cherry-studio.md), [Text Generation WebUI](fichas/textgen.md), [chatbox](fichas/chatbox.md) |
 | [Khoj](fichas/khoj.md) | [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
+| [KoboldCpp](fichas/koboldcpp.md) | [llamafile](fichas/llamafile.md) |
 | [LibreChat](fichas/librechat.md) | [Open WebUI](fichas/open-webui.md), [LobeHub](fichas/lobehub.md) |
 | [llama.cpp](fichas/llama-cpp.md) | [Ollama](fichas/ollama.md), [llamafile](fichas/llamafile.md), [LocalAI](fichas/localai.md) |
-| [llamafile](fichas/llamafile.md) | [Ollama](fichas/ollama.md), [llama.cpp](fichas/llama-cpp.md) |
-| [LobeHub](fichas/lobehub.md) | [Open WebUI](fichas/open-webui.md), [LibreChat](fichas/librechat.md), [Cherry Studio](fichas/cherry-studio.md) |
+| [llamafile](fichas/llamafile.md) | [Ollama](fichas/ollama.md), [llama.cpp](fichas/llama-cpp.md), [KoboldCpp](fichas/koboldcpp.md) |
+| [LobeHub](fichas/lobehub.md) | [Open WebUI](fichas/open-webui.md), [LibreChat](fichas/librechat.md), [Cherry Studio](fichas/cherry-studio.md), [NextChat](fichas/nextchat.md), [chatbox](fichas/chatbox.md) |
 | [LocalAI](fichas/localai.md) | [Ollama](fichas/ollama.md), [llama.cpp](fichas/llama-cpp.md) |
+| [NextChat](fichas/nextchat.md) | [LobeHub](fichas/lobehub.md), [chatbox](fichas/chatbox.md) |
 | [Ollama](fichas/ollama.md) | [llama.cpp](fichas/llama-cpp.md), [LocalAI](fichas/localai.md), [llamafile](fichas/llamafile.md) |
 | [Open WebUI](fichas/open-webui.md) | [LibreChat](fichas/librechat.md), [LobeHub](fichas/lobehub.md), [AnythingLLM](fichas/anything-llm.md), [Text Generation WebUI](fichas/textgen.md) |
 | [open-notebook](fichas/open-notebook.md) | [DeepTutor](fichas/deeptutor.md), [SurfSense](fichas/surfsense.md) |
@@ -170,7 +177,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
-| [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md) |
+| [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md), [SonarQube Community Build](fichas/sonarqube.md) |
 | [shannon](fichas/shannon.md) | [strix](fichas/strix.md) |
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |

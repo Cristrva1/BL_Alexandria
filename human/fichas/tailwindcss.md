@@ -33,9 +33,9 @@ Se instala como plugin de Vite (`npm install tailwindcss @tailwindcss/vite`), me
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (17). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Chart.js](chart-js.md) · [design.md](design-md.md) · [Figma Context MCP](figma-context-mcp.md) · [flexoki](flexoki.md) · [konva](konva.md) · [Lucide](lucide.md) · [Onlook](onlook.md) · [penpot](penpot.md) · [plasmic](plasmic.md) · [Radix Primitives](radix-primitives.md) · [React Bits](react-bits.md) · [Recharts](recharts.md) · [screenshot-to-code](screenshot-to-code.md) · [TanStack Query](tanstack-query.md) · [UI SDK (Vercel)](ui-sdk.md) · [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md)
+[Biome](biome.md) · [Chart.js](chart-js.md) · [design.md](design-md.md) · [Figma Context MCP](figma-context-mcp.md) · [flexoki](flexoki.md) · [konva](konva.md) · [Lucide](lucide.md) · [Onlook](onlook.md) · [penpot](penpot.md) · [plasmic](plasmic.md) · [Radix Primitives](radix-primitives.md) · [React Bits](react-bits.md) · [Recharts](recharts.md) · [screenshot-to-code](screenshot-to-code.md) · [TanStack Query](tanstack-query.md) · [UI SDK (Vercel)](ui-sdk.md) · [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md)
 
 **Notas:** Sin alternativas declaradas.
 

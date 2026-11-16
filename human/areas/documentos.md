@@ -4,7 +4,7 @@
 
 Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
 
-51 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
+56 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
 
 ## Opciones para empezar
 
@@ -82,7 +82,7 @@ Explicar sistemas e ideas mediante diagramas.
 
 Recuperar fuentes con RAG y búsqueda semántica.
 
-[Explorar 12 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -90,7 +90,10 @@ Recuperar fuentes con RAG y búsqueda semántica.
 | [Chroma](../fichas/chroma.md) | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. | Sin clave propia de API de IA en la ruta básica |
 | [Faiss](../fichas/faiss.md) | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. | Sin clave propia de API de IA en la ruta básica |
 | [graphrag](../fichas/graphrag.md) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | Depende de la ruta elegida |
+| [kotaemon](../fichas/kotaemon.md) | Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG. | API de IA opcional |
+| [LanceDB](../fichas/lancedb.md) | Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener. | Sin clave propia de API de IA en la ruta básica |
 | [LightRAG](../fichas/lightrag.md) | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. | Depende de la ruta elegida |
+| [Meilisearch](../fichas/meilisearch.md) | Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla. | API de IA opcional |
 | [Milvus](../fichas/milvus.md) | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. | Sin clave propia de API de IA en la ruta básica |
 | [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Depende de la ruta elegida |
 | [PageIndex](../fichas/pageindex.md) | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. | Depende de la ruta elegida |
@@ -98,6 +101,8 @@ Recuperar fuentes con RAG y búsqueda semántica.
 | [Qdrant](../fichas/qdrant.md) | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | Sin clave propia de API de IA en la ruta básica |
 | [RAGFlow](../fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | Depende de la ruta elegida |
 | [turbovec](../fichas/turbovec.md) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | Sin clave propia de API de IA en la ruta básica |
+| [txtai](../fichas/txtai.md) | Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia. | API de IA opcional |
+| [Weaviate](../fichas/weaviate.md) | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada. | API de IA opcional |
 
 ### Memoria y contexto para agentes
 

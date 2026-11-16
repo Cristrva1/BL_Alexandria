@@ -4,7 +4,7 @@
 
 Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
 
-47 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
+52 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Interfaces de conversación y espacios de trabajo con tus fuentes.
 
-[Explorar 16 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-chats)
+[Explorar 18 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-chats)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -30,12 +30,14 @@ Interfaces de conversación y espacios de trabajo con tus fuentes.
 | [Khoj](../fichas/khoj.md) | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. | Depende de la ruta elegida |
 | [LibreChat](../fichas/librechat.md) | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. | API de IA opcional |
 | [LobeHub](../fichas/lobehub.md) | Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. | Depende de la ruta elegida |
+| [NextChat](../fichas/nextchat.md) | Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP. | API de IA necesaria |
 | [notebooklm-mcp-cli](../fichas/notebooklm-mcp-cli.md) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | Sin clave propia de API de IA en la ruta básica |
 | [notebooklm-py](../fichas/notebooklm-py.md) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | Sin clave propia de API de IA en la ruta básica |
 | [odysseus](../fichas/odysseus.md) | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. | Depende de la ruta elegida |
 | [Open WebUI](../fichas/open-webui.md) | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. | API de IA opcional |
 | [open-notebook](../fichas/open-notebook.md) | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. | Depende de la ruta elegida |
 | [PrivateGPT](../fichas/private-gpt.md) | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. | Depende de la ruta elegida |
+| [SillyTavern](../fichas/sillytavern.md) | Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones. | API de IA opcional |
 | [SurfSense](../fichas/surfsense.md) | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. | Depende de la ruta elegida |
 | [Text Generation WebUI](../fichas/textgen.md) | App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. | Sin clave propia de API de IA en la ruta básica |
 
@@ -43,18 +45,21 @@ Interfaces de conversación y espacios de trabajo con tus fuentes.
 
 Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
-[Explorar 10 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-motores)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-motores)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [airllm](../fichas/airllm.md) | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. | Sin clave propia de API de IA en la ruta básica |
 | [exo](../fichas/exo.md) | Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina. | Sin clave propia de API de IA en la ruta básica |
 | [FreeToken](../fichas/freetoken.md) | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. | Sin clave propia de API de IA en la ruta básica |
+| [KoboldCpp](../fichas/koboldcpp.md) | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama. | Sin clave propia de API de IA en la ruta básica |
 | [llama.cpp](../fichas/llama-cpp.md) | Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. | Sin clave propia de API de IA en la ruta básica |
 | [llamafile](../fichas/llamafile.md) | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. | Sin clave propia de API de IA en la ruta básica |
 | [llmfit](../fichas/llmfit.md) | Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. | Sin clave propia de API de IA en la ruta básica |
 | [LocalAI](../fichas/localai.md) | Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. | Sin clave propia de API de IA en la ruta básica |
 | [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
+| [MLC LLM](../fichas/mlc-llm.md) | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. | Sin clave propia de API de IA en la ruta básica |
+| [MLX LM](../fichas/mlx-lm.md) | Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP. | Sin clave propia de API de IA en la ruta básica |
 | [Ollama](../fichas/ollama.md) | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. | API de IA opcional |
 | [transformers.js](../fichas/transformers-js.md) | Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. | Sin clave propia de API de IA en la ruta básica |
 

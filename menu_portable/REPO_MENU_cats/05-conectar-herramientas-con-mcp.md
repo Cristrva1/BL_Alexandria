@@ -93,6 +93,36 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `awesome-mcp-clients`, `servers`, `mcp-use`
 
+## `aws-mcp`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=mcp,python,cloud,aws
+
+**Qué es:** Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/awslabs/mcp
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/awslabs/mcp/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: consultar la documentación actualizada de AWS desde tu agente de código; revisar y generar plantillas de CloudFormation o CDK con validación de seguridad
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Configura el servidor de documentación de AWS con uvx en tu cliente MCP y pregunta por un servicio concreto.
+**Qué comprobar:** El agente devuelve fragmentos de la documentación oficial con su enlace.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `mcp-inspector`
+
 ## `blender-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,design,python
 
@@ -457,6 +487,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-inspector`, `pydantic-ai`, `claude-code`, `mcp-for-beginners`
 **Alternativas (elige una):** `fastmcp`
+
+## `mcp-toolbox`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=mcp,go,data,database
+
+**Qué es:** Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/googleapis/mcp-toolbox
+
+**Instalación** [+]:
+
+```
+brew install mcp-toolbox
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: consultar y explorar el esquema de una base PostgreSQL desde tu agente de código; dar a un agente en producción consultas parametrizadas en lugar de SQL libre
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Prepara un tools.yaml contra una base de prueba, arranca el servidor y regístralo en tu cliente MCP.
+**Qué comprobar:** El cliente lista las herramientas y una consulta de solo lectura devuelve filas de la base de prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gemini-cli`, `codex`, `langchain`, `llama-index`
 
 ## `mcp-typescript-sdk`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,typescript

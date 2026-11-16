@@ -33,9 +33,9 @@ Python. Se instala como `llama-index` (núcleo más una selección de integracio
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ai-engineering-hub](ai-engineering-hub.md) · [DeepEval](deepeval.md) · [Faiss](faiss.md) · [Jina Reader](jina-reader.md) · [laya](laya.md) · [Milvus](milvus.md) · [Phoenix](phoenix.md) · [turbovec](turbovec.md)
+[ai-engineering-hub](ai-engineering-hub.md) · [DeepEval](deepeval.md) · [Faiss](faiss.md) · [Jina Reader](jina-reader.md) · [LanceDB](lancedb.md) · [laya](laya.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [Milvus](milvus.md) · [Phoenix](phoenix.md) · [turbovec](turbovec.md) · [Weaviate](weaviate.md)
 
 **Notas:** Alternativas (elige una): haystack, langchain. Ten en cuenta el cambio de foco de la empresa al planificar proyectos largos.
 

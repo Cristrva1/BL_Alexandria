@@ -33,9 +33,9 @@ Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (25). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (26). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[AppFlowy](appflowy.md) · [audiobookshelf](audiobookshelf.md) · [Baserow](baserow.md) · [binance-trader](binance-trader.md) · [fluxer](fluxer.md) · [free-for-dev](free-for-dev.md) · [FreshRSS](freshrss.md) · [Grist](grist-core.md) · [huginn](huginn.md) · [karakeep](karakeep.md) · [Miniflux](miniflux.md) · [NocoDB](nocodb.md) · [open-seo](open-seo.md) · [open-sol-bot](open-sol-bot.md) · [opencode-manager](opencode-manager.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [postiz-app](postiz-app.md) · [RSSHub](rsshub.md) · [server](nextcloud-server.md) · [syncthing](syncthing.md) · [Teable](teable.md) · [vaultwarden](vaultwarden.md) · [wallabag](wallabag.md) · [whatsapp-agentkit](whatsapp-agentkit.md)
+[AppFlowy](appflowy.md) · [audiobookshelf](audiobookshelf.md) · [Baserow](baserow.md) · [binance-trader](binance-trader.md) · [fluxer](fluxer.md) · [free-for-dev](free-for-dev.md) · [FreshRSS](freshrss.md) · [Grist](grist-core.md) · [huginn](huginn.md) · [karakeep](karakeep.md) · [Miniflux](miniflux.md) · [NocoDB](nocodb.md) · [open-seo](open-seo.md) · [open-sol-bot](open-sol-bot.md) · [opencode-manager](opencode-manager.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [postiz-app](postiz-app.md) · [RSSHub](rsshub.md) · [server](nextcloud-server.md) · [SonarQube Community Build](sonarqube.md) · [syncthing](syncthing.md) · [Teable](teable.md) · [vaultwarden](vaultwarden.md) · [wallabag](wallabag.md) · [whatsapp-agentkit](whatsapp-agentkit.md)
 
 **Notas:** Alternativa (elige una): casaos.
 

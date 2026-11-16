@@ -4,7 +4,7 @@
 
 Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
 
-114 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
+116 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
 
 ## Opciones para empezar
 
@@ -162,7 +162,7 @@ Abrir páginas e interactuar con interfaces reales.
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-[Explorar 24 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
+[Explorar 26 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -180,6 +180,8 @@ Servidores, clientes y SDKs para dar herramientas a un agente.
 | [MCP for Beginners](../fichas/mcp-for-beginners.md) | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. | Sin clave propia de API de IA en la ruta básica |
 | [MCP Inspector](../fichas/mcp-inspector.md) | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | Sin clave propia de API de IA en la ruta básica |
 | [MCP Python SDK](../fichas/mcp-python-sdk.md) | SDK oficial de Python para crear servidores y clientes del Model Context Protocol. | Sin clave propia de API de IA en la ruta básica |
+| [MCP servers for AWS](../fichas/aws-mcp.md) | Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios. | Sin clave propia de API de IA en la ruta básica |
+| [MCP Toolbox for Databases](../fichas/mcp-toolbox.md) | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes. | Sin clave propia de API de IA en la ruta básica |
 | [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md) | SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. | Sin clave propia de API de IA en la ruta básica |
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Sin clave propia de API de IA en la ruta básica |
 | [mcp-use](../fichas/mcp-use.md) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | API de IA opcional |

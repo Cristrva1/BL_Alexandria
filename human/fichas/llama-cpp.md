@@ -33,9 +33,9 @@ Implementación en C/C++ sin dependencias, con cuantización entera de 1,5 a 8 b
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[local-deep-research](local-deep-research.md) · [Marker](marker.md) · [OpenCursor](opencursor.md) · [PrivateGPT](private-gpt.md) · [Unsloth](unsloth.md) · [whisper.cpp](whisper-cpp.md)
+[local-deep-research](local-deep-research.md) · [Marker](marker.md) · [OpenCursor](opencursor.md) · [PrivateGPT](private-gpt.md) · [txtai](txtai.md) · [Unsloth](unsloth.md) · [whisper.cpp](whisper-cpp.md)
 
 **Notas:** Alternativas (elige una como motor principal): ollama, llamafile, localai.
 

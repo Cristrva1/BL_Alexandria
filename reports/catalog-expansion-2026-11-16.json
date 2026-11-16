@@ -174,12 +174,203 @@
         "license": "MIT",
         "pushed_at": "2026-11-13"
       }
+    ],
+    "p02": [
+      {
+        "id": "mcp-toolbox",
+        "full_name": "googleapis/mcp-toolbox",
+        "github_id": 812044182,
+        "readme_blob_sha": "c79e406067d56b2f053a885521f783e156036e3e",
+        "stars": 16886,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "aws-mcp",
+        "full_name": "awslabs/mcp",
+        "github_id": 952238700,
+        "readme_blob_sha": "7904c572c48b92c04afebae84236880a95bdf650",
+        "stars": 9928,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "weaviate",
+        "full_name": "weaviate/weaviate",
+        "github_id": 55072677,
+        "readme_blob_sha": "54c95c2da8efa292da457debacc13b696fbdabfb",
+        "stars": 16952,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "meilisearch",
+        "full_name": "meilisearch/meilisearch",
+        "github_id": 130688011,
+        "readme_blob_sha": "5b0ae26df708a2435720a28c4d7f235494d6a8fc",
+        "stars": 59868,
+        "license": "MIT",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "kotaemon",
+        "full_name": "Cinnamon/kotaemon",
+        "github_id": 777111718,
+        "readme_blob_sha": "e73f7baea4b6f1e2533d6d9989128661b27b96c7",
+        "stars": 25911,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-07-14"
+      },
+      {
+        "id": "txtai",
+        "full_name": "neuml/txtai",
+        "github_id": 286301447,
+        "readme_blob_sha": "e962fbbade971c38c11242e83e9584cdbbd99f91",
+        "stars": 13407,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "lancedb",
+        "full_name": "lancedb/lancedb",
+        "github_id": 607441698,
+        "readme_blob_sha": "d330801b0410775bef53950f4e485e32d9221c0f",
+        "stars": 11908,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "ruff",
+        "full_name": "astral-sh/ruff",
+        "github_id": 523043277,
+        "readme_blob_sha": "8122286741a846930e917e0bcc320a2e99c64235",
+        "stars": 51272,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "gitleaks",
+        "full_name": "gitleaks/gitleaks",
+        "github_id": 119190187,
+        "readme_blob_sha": "6bdd5d960fd9f81a5221819509c4e9f5cb7d251e",
+        "stars": 31070,
+        "license": "MIT",
+        "pushed_at": "2026-10-28"
+      },
+      {
+        "id": "trufflehog",
+        "full_name": "trufflesecurity/trufflehog",
+        "github_id": 77726177,
+        "readme_blob_sha": "b368d2d8708a226d6ebdd4cb08ee5d4b3f86370c",
+        "stars": 29386,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "biome",
+        "full_name": "biomejs/biome",
+        "github_id": 671654508,
+        "readme_blob_sha": "234aa55742c2ba6e72bd513956c7d205b4feb550",
+        "stars": 26109,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "pre-commit",
+        "full_name": "pre-commit/pre-commit",
+        "github_id": 17689377,
+        "readme_blob_sha": "0c81a7890350d0209206fb797641b3a891a190c0",
+        "stars": 15696,
+        "license": "MIT",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "sonarqube",
+        "full_name": "SonarSource/sonarqube",
+        "github_id": 1222504,
+        "readme_blob_sha": "d9c61bae514536b3d4f8117158371a7440737c66",
+        "stars": 11182,
+        "license": "LGPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "fzf",
+        "full_name": "junegunn/fzf",
+        "github_id": 13807606,
+        "readme_blob_sha": "55005aa38acef7b1ca655eb5ac3765a88fdfafba",
+        "stars": 84214,
+        "license": "MIT",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "lazygit",
+        "full_name": "jesseduffield/lazygit",
+        "github_id": 134017286,
+        "readme_blob_sha": "ef7ac0c4a81806c8389c5995d8d61e945bfd2bd3",
+        "stars": 83918,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "ripgrep",
+        "full_name": "BurntSushi/ripgrep",
+        "github_id": 53631945,
+        "readme_blob_sha": "54a7158a564faae22988da41efb1ef279e06fe5e",
+        "stars": 69974,
+        "license": "Unlicense",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "sillytavern",
+        "full_name": "SillyTavern/SillyTavern",
+        "github_id": 599524116,
+        "readme_blob_sha": "c8b2c842109a140d701b65e277741e6ff177d5a1",
+        "stars": 35663,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "nextchat",
+        "full_name": "ChatGPTNextWeb/NextChat",
+        "github_id": 612344730,
+        "readme_blob_sha": "edfd20a628b01f232f11326d8eb14de72b74edfb",
+        "stars": 88968,
+        "license": "MIT",
+        "pushed_at": "2026-10-20"
+      },
+      {
+        "id": "mlc-llm",
+        "full_name": "mlc-ai/mlc-llm",
+        "github_id": 634081686,
+        "readme_blob_sha": "d5ba2838c5e66a409a70d0d6842b2957380abd0c",
+        "stars": 23416,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "koboldcpp",
+        "full_name": "LostRuins/koboldcpp",
+        "github_id": 614637892,
+        "readme_blob_sha": "7a2d13b76d31e6ef11741f02863c6fca4948b579",
+        "stars": 12324,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mlx-lm",
+        "full_name": "ml-explore/mlx-lm",
+        "github_id": 946767878,
+        "readme_blob_sha": "ab749b340175ea0fdc4c5b9f27253a8e291aa98d",
+        "stars": 7667,
+        "license": "MIT",
+        "pushed_at": "2026-11-06"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 19,
-  "total_repositories": 642
+  "added_count": 40,
+  "total_repositories": 663
 }

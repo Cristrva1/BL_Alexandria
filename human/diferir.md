@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**79 repos.**
+**80 repos.**
 
 ## ⏳ Diferir
 
@@ -22,6 +22,7 @@ _Pesado: solo si llega a finalista._
 | [SWE-bench](fichas/swe-bench.md) | 🧑‍💻 Entender código y comprobar su calidad | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. |
 | [odysseus](fichas/odysseus.md) | 🏠 Chats, modelos locales y espacios privados | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 | [airllm](fichas/airllm.md) | 🏠 Chats, modelos locales y espacios privados | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. |
+| [MLC LLM](fichas/mlc-llm.md) | 🏠 Chats, modelos locales y espacios privados | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. |
 | [FreeToken](fichas/freetoken.md) | 🏠 Chats, modelos locales y espacios privados | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. |
 | [magnitude](fichas/magnitude.md) | 🏠 Chats, modelos locales y espacios privados | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. |
 | [penpot](fichas/penpot.md) | 🎨 Diseñar y construir interfaces web | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |

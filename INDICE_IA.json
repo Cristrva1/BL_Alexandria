@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 642 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 663 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -400,7 +400,7 @@
    "title": "Conectar herramientas con MCP",
    "desc": "SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.",
    "file": "human/categorias/05-mcp-conectividad.md",
-   "count": 23,
+   "count": 25,
    "subs": [
     {
      "key": "sdk",
@@ -423,7 +423,7 @@
    "title": "Memoria, RAG y búsqueda de conocimiento",
    "desc": "Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda.",
    "file": "human/categorias/06-memoria-rag-llm-ops.md",
-   "count": 23,
+   "count": 28,
    "subs": [
     {
      "key": "memoria",
@@ -446,7 +446,7 @@
    "title": "Entender código y comprobar su calidad",
    "desc": "Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-   "count": 11,
+   "count": 20,
    "subs": [
     {
      "key": "codigo",
@@ -469,7 +469,7 @@
    "title": "Chats, modelos locales y espacios privados",
    "desc": "Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.",
    "file": "human/categorias/08-ia-local-modelos-chats-workspaces.md",
-   "count": 26,
+   "count": 31,
    "subs": [
     {
      "key": "motores",
@@ -9059,7 +9059,8 @@
     "milvus",
     "chroma",
     "pgvector",
-    "faiss"
+    "faiss",
+    "weaviate"
    ],
    "doc": "human/fichas/qdrant.md",
    "github_id": 268163609,
@@ -9097,7 +9098,8 @@
    "alt": [
     "qdrant",
     "chroma",
-    "pgvector"
+    "pgvector",
+    "weaviate"
    ],
    "doc": "human/fichas/milvus.md",
    "github_id": 208728772,
@@ -9171,7 +9173,8 @@
     "qdrant",
     "pgvector",
     "milvus",
-    "faiss"
+    "faiss",
+    "lancedb"
    ],
    "doc": "human/fichas/chroma.md",
    "github_id": 546206616,
@@ -10011,7 +10014,8 @@
    "pick": true,
    "one": "Análisis estático ligero para muchos lenguajes con reglas que se parecen al código.",
    "alt": [
-    "ast-grep"
+    "ast-grep",
+    "sonarqube"
    ],
    "doc": "human/fichas/semgrep.md",
    "github_id": 227803815,
@@ -11070,7 +11074,8 @@
    "one": "Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo.",
    "alt": [
     "ollama",
-    "llama-cpp"
+    "llama-cpp",
+    "koboldcpp"
    ],
    "doc": "human/fichas/llamafile.md",
    "github_id": 689773665,
@@ -11201,7 +11206,9 @@
    "alt": [
     "open-webui",
     "librechat",
-    "cherry-studio"
+    "cherry-studio",
+    "nextchat",
+    "chatbox"
    ],
    "doc": "human/fichas/lobehub.md",
    "github_id": 643445235,
@@ -18373,7 +18380,9 @@
    "pick": false,
    "one": "Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común.",
    "alt": [
-    "jan"
+    "jan",
+    "nextchat",
+    "lobehub"
    ],
    "doc": "human/fichas/chatbox.md",
    "starred_by": "Cristrva1",
@@ -26446,6 +26455,793 @@
    "source_archived": false,
    "routes": [
     "no_api"
+   ]
+  },
+  {
+   "id": "mcp-toolbox",
+   "name": "MCP Toolbox for Databases",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "mcp",
+    "go",
+    "data",
+    "database"
+   ],
+   "stars": 16886,
+   "gh": "googleapis/mcp-toolbox",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes.",
+   "alt": [],
+   "doc": "human/fichas/mcp-toolbox.md",
+   "github_id": 812044182,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
+  },
+  {
+   "id": "aws-mcp",
+   "name": "MCP servers for AWS",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "mcp",
+    "python",
+    "cloud",
+    "aws"
+   ],
+   "stars": 9928,
+   "gh": "awslabs/mcp",
+   "lib": false,
+   "pick": false,
+   "one": "Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios.",
+   "alt": [],
+   "doc": "human/fichas/aws-mcp.md",
+   "github_id": 952238700,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
+  },
+  {
+   "id": "weaviate",
+   "name": "Weaviate",
+   "cat": 6,
+   "sub": "vectores",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vector-db",
+    "rag",
+    "go",
+    "docker"
+   ],
+   "stars": 16952,
+   "gh": "weaviate/weaviate",
+   "lib": false,
+   "pick": false,
+   "one": "Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada.",
+   "alt": [
+    "qdrant",
+    "milvus"
+   ],
+   "doc": "human/fichas/weaviate.md",
+   "github_id": 55072677,
+   "lang": "Go",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "meilisearch",
+   "name": "Meilisearch",
+   "cat": 6,
+   "sub": "rag",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "rag",
+    "search",
+    "rust",
+    "docker"
+   ],
+   "stars": 59868,
+   "gh": "meilisearch/meilisearch",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.",
+   "alt": [],
+   "doc": "human/fichas/meilisearch.md",
+   "github_id": 130688011,
+   "lang": "Rust",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "kotaemon",
+   "name": "kotaemon",
+   "cat": 6,
+   "sub": "rag",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "rag",
+    "python",
+    "docs",
+    "local"
+   ],
+   "stars": 25911,
+   "gh": "Cinnamon/kotaemon",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG.",
+   "alt": [],
+   "doc": "human/fichas/kotaemon.md",
+   "github_id": 777111718,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "txtai",
+   "name": "txtai",
+   "cat": 6,
+   "sub": "rag",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "rag",
+    "python",
+    "library",
+    "mcp"
+   ],
+   "stars": 13407,
+   "gh": "neuml/txtai",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia.",
+   "alt": [],
+   "doc": "human/fichas/txtai.md",
+   "github_id": 286301447,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "lancedb",
+   "name": "LanceDB",
+   "cat": 6,
+   "sub": "vectores",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vector-db",
+    "rag",
+    "rust",
+    "library"
+   ],
+   "stars": 11908,
+   "gh": "lancedb/lancedb",
+   "lib": false,
+   "pick": false,
+   "one": "Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener.",
+   "alt": [
+    "chroma"
+   ],
+   "doc": "human/fichas/lancedb.md",
+   "github_id": 607441698,
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ruff",
+   "name": "Ruff",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "code",
+    "python",
+    "rust",
+    "cli"
+   ],
+   "stars": 51272,
+   "gh": "astral-sh/ruff",
+   "lib": false,
+   "pick": false,
+   "one": "Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas.",
+   "alt": [],
+   "doc": "human/fichas/ruff.md",
+   "github_id": 523043277,
+   "lang": "Rust",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "gitleaks",
+   "name": "Gitleaks",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "code"
+   ],
+   "stars": 31070,
+   "gh": "gitleaks/gitleaks",
+   "lib": false,
+   "pick": false,
+   "one": "Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI.",
+   "alt": [
+    "trufflehog"
+   ],
+   "doc": "human/fichas/gitleaks.md",
+   "github_id": 119190187,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "trufflehog",
+   "name": "TruffleHog",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "code"
+   ],
+   "stars": 29386,
+   "gh": "trufflesecurity/trufflehog",
+   "lib": false,
+   "pick": false,
+   "one": "Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos.",
+   "alt": [
+    "gitleaks"
+   ],
+   "doc": "human/fichas/trufflehog.md",
+   "github_id": 77726177,
+   "lang": "Go",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "biome",
+   "name": "Biome",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "code",
+    "javascript",
+    "typescript",
+    "rust"
+   ],
+   "stars": 26109,
+   "gh": "biomejs/biome",
+   "lib": false,
+   "pick": false,
+   "one": "Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por CLI y LSP.",
+   "alt": [],
+   "doc": "human/fichas/biome.md",
+   "github_id": 671654508,
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pre-commit",
+   "name": "pre-commit",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "code",
+    "python",
+    "cli",
+    "git"
+   ],
+   "stars": 15696,
+   "gh": "pre-commit/pre-commit",
+   "lib": false,
+   "pick": false,
+   "one": "Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML.",
+   "alt": [],
+   "doc": "human/fichas/pre-commit.md",
+   "github_id": 17689377,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sonarqube",
+   "name": "SonarQube Community Build",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "code",
+    "java",
+    "security",
+    "docker"
+   ],
+   "stars": 11182,
+   "gh": "SonarSource/sonarqube",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes.",
+   "alt": [
+    "semgrep"
+   ],
+   "doc": "human/fichas/sonarqube.md",
+   "github_id": 1222504,
+   "lang": "Java",
+   "license": "LGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "fzf",
+   "name": "fzf",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cli",
+    "go",
+    "terminal"
+   ],
+   "stars": 84214,
+   "gh": "junegunn/fzf",
+   "lib": false,
+   "pick": false,
+   "one": "Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva.",
+   "alt": [],
+   "doc": "human/fichas/fzf.md",
+   "github_id": 13807606,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "lazygit",
+   "name": "lazygit",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cli",
+    "go",
+    "git",
+    "terminal"
+   ],
+   "stars": 83918,
+   "gh": "jesseduffield/lazygit",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos.",
+   "alt": [],
+   "doc": "human/fichas/lazygit.md",
+   "github_id": 134017286,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ripgrep",
+   "name": "ripgrep",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cli",
+    "rust",
+    "code",
+    "search"
+   ],
+   "stars": 69974,
+   "gh": "BurntSushi/ripgrep",
+   "lib": false,
+   "pick": false,
+   "one": "Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios.",
+   "alt": [],
+   "doc": "human/fichas/ripgrep.md",
+   "github_id": 53631945,
+   "lang": "Rust",
+   "license": "Unlicense",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sillytavern",
+   "name": "SillyTavern",
+   "cat": 8,
+   "sub": "chats",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chatbot",
+    "javascript",
+    "local",
+    "app"
+   ],
+   "stars": 35663,
+   "gh": "SillyTavern/SillyTavern",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones.",
+   "alt": [],
+   "doc": "human/fichas/sillytavern.md",
+   "github_id": 599524116,
+   "lang": "JavaScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "nextchat",
+   "name": "NextChat",
+   "cat": 8,
+   "sub": "chats",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "chatbot",
+    "typescript",
+    "app",
+    "mcp"
+   ],
+   "stars": 88968,
+   "gh": "ChatGPTNextWeb/NextChat",
+   "lib": false,
+   "pick": false,
+   "one": "Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP.",
+   "alt": [
+    "lobehub",
+    "chatbox"
+   ],
+   "doc": "human/fichas/nextchat.md",
+   "github_id": 612344730,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "mlc-llm",
+   "name": "MLC LLM",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "inference",
+    "python",
+    "local",
+    "model"
+   ],
+   "stars": 23416,
+   "gh": "mlc-ai/mlc-llm",
+   "lib": false,
+   "pick": false,
+   "one": "Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI.",
+   "alt": [],
+   "doc": "human/fichas/mlc-llm.md",
+   "github_id": 634081686,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "koboldcpp",
+   "name": "KoboldCpp",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "inference",
+    "cpp",
+    "local",
+    "app"
+   ],
+   "stars": 12324,
+   "gh": "LostRuins/koboldcpp",
+   "lib": false,
+   "pick": false,
+   "one": "Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama.",
+   "alt": [
+    "llamafile"
+   ],
+   "doc": "human/fichas/koboldcpp.md",
+   "github_id": 614637892,
+   "lang": "C++",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "mlx-lm",
+   "name": "MLX LM",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "inference",
+    "python",
+    "local",
+    "training"
+   ],
+   "stars": 7667,
+   "gh": "ml-explore/mlx-lm",
+   "lib": false,
+   "pick": false,
+   "one": "Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP.",
+   "alt": [],
+   "doc": "human/fichas/mlx-lm.md",
+   "github_id": 946767878,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
    ]
   }
  ],

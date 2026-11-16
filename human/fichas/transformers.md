@@ -33,9 +33,9 @@ Requiere Python 3.11+ y PyTorch 2.6+. Se instala con `pip install "transformers[
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[airllm](airllm.md) · [awesome-machine-learning](awesome-machine-learning.md) · [bionemo-recipes](bionemo-recipes.md) · [diffusers](diffusers.md) · [Faiss](faiss.md) · [Gradio](gradio.md) · [LLaMA-Factory](llama-factory.md) · [LLMs from Scratch](llms-from-scratch.md) · [MLflow](mlflow.md) · [smolagents](smolagents.md) · [tensorflow](tensorflow.md) · [TensorRT-LLM](tensorrt-llm.md) · [Unlimited-OCR](unlimited-ocr.md) · [VibeVoice](vibevoice.md)
+[airllm](airllm.md) · [awesome-machine-learning](awesome-machine-learning.md) · [bionemo-recipes](bionemo-recipes.md) · [diffusers](diffusers.md) · [Faiss](faiss.md) · [Gradio](gradio.md) · [LLaMA-Factory](llama-factory.md) · [LLMs from Scratch](llms-from-scratch.md) · [MLC LLM](mlc-llm.md) · [MLflow](mlflow.md) · [smolagents](smolagents.md) · [tensorflow](tensorflow.md) · [TensorRT-LLM](tensorrt-llm.md) · [txtai](txtai.md) · [Unlimited-OCR](unlimited-ocr.md) · [VibeVoice](vibevoice.md)
 
 **Notas:** Sin alternativas declaradas.
 

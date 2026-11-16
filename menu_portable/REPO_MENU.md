@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 642 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 663 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **642 repos** de IA y
+proyecto concreto. Tienes un menú curado de **663 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -341,12 +341,13 @@ Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 - `wallabag` [P|loc|M|?] — Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y exte — tags: research,read-later,php,docker
 - `yt-dlp` [A|loc|E|?] — Descargador de audio y video por línea de comandos compatible con miles de sitios. — tags: video,audio,scraping,python
 
-### 5. Conectar herramientas con MCP (23)
+### 5. Conectar herramientas con MCP (25)
 Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 
 - `annas-mcp` [R|hyb|M|?] — Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. — tags: servidores,annas-archive,cli,mcp-server,go
 - `awesome-mcp-clients` [D|loc|E|?] — Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes. — tags: mcp
 - `awesome-mcp-servers` [D|hyb|E|?] — Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos  — tags: automation,mcp
+- `aws-mcp` [R|loc|M|?] — Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, E — tags: mcp,python,cloud,aws
 - `blender-mcp` [R|loc|E|+] — Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. — tags: mcp,design,python — prov: mcp
 - `chrome-devtools-mcp` [R|loc|E|?] — Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. — tags: mcp,browser,typescript — prov: mcp — alt: playwright-mcp,browser-harness
 - `context7` [R|cld|E|+] — Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. — tags: mcp,docs,typescript — prov: mcp
@@ -359,6 +360,7 @@ Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 - `mcp-inspector` [A|loc|E|+] — Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. — tags: mcp,evaluation,typescript
 - `mcp-neo4j` [R|hyb|M|?] — Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. — tags: mcp,python — alt: neo4j-mcp
 - `mcp-python-sdk` [L|loc|E|+] — SDK oficial de Python para crear servidores y clientes del Model Context Protocol. — tags: mcp,python — prov: mcp — alt: fastmcp
+- `mcp-toolbox` [R|loc|M|+] — Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consulta — tags: mcp,go,data,database
 - `mcp-typescript-sdk` [L|loc|E|+] — SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. — tags: mcp,typescript — prov: mcp — alt: mcp-use
 - `mcp-use` [L|hyb|M|+] — Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de — tags: automation,mcp,typescript — alt: mcp-typescript-sdk
 - `neo4j-mcp` [R|loc|M|+] — Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de l — tags: mcp,graph,neo4j,cypher,go — alt: mcp-neo4j
@@ -368,12 +370,12 @@ Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 - `servers` [D|hyb|M|?] — Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enl — tags: mcp,typescript
 - `unity-mcp` [R|loc|M|?] — Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Un — tags: servidores,mcp,c
 
-### 6. Memoria, RAG y búsqueda de conocimiento (23)
+### 6. Memoria, RAG y búsqueda de conocimiento (28)
 Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 
 - `agentic-rag-for-dummies` [L|hyb|M|+] — Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. — tags: rag,template,jupyter-notebook — prov: local
 - `agentmemory` [L|hyb|E|+] — Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida  — tags: agents,memory,typescript — alt: engram,supermemory,claude-mem
-- `chroma` [R|loc|E|+] — Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. — tags: vector-db,rag,rust — alt: qdrant,pgvector,milvus,faiss
+- `chroma` [R|loc|E|+] — Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. — tags: vector-db,rag,rust — alt: qdrant,pgvector,milvus,faiss,lancedb
 - `claude-mem` [S|loc|E|+] — Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. — tags: memory,coding-agent,mcp,typescript — prov: anthropic,mcp — alt: engram,agentmemory
 - `cognee` [L|hyb|E|+] — Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. — tags: memory,rag,python — prov: openai,local — alt: graphiti,mem0,graphrag,letta
 - `dsh-noema` [L|loc|M|?] — Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. — tags: memoria,plugin,typescript
@@ -381,54 +383,72 @@ Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 - `faiss` [L|loc|M|?] — Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. — tags: vector-db,python,cpp — alt: qdrant,chroma
 - `graphiti` [L|hyb|M|+] — Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. — tags: memory,rag,python — prov: openai,anthropic — alt: cognee,graphrag
 - `graphrag` [L|hyb|M|?] — Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lu — tags: rag,python — alt: graphiti,cognee,lightrag
+- `kotaemon` [A|hyb|M|?] — Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de G — tags: rag,python,docs,local
+- `lancedb` [L|loc|E|?] — Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL  — tags: vector-db,rag,rust,library — alt: chroma
 - `letta` [P|hyb|M|+] — Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente ree — tags: memory,agents,typescript — prov: openai,anthropic,local — alt: mem0,cognee
 - `lightrag` [L|hyb|M|+] — RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. — tags: rag,python — prov: openai,local — alt: graphrag,ragflow,pageindex
+- `meilisearch` [P|hyb|E|?] — Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a errat — tags: rag,search,rust,docker
 - `mem0` [L|hyb|E|+] — Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y — tags: memory,python — alt: letta,cognee,supermemory
 - `mempalace` [L|loc|E|+] — Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin envia — tags: memory,python
-- `milvus` [R|loc|H|?] — Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. — tags: vector-db,rag,go,docker — alt: qdrant,chroma,pgvector
+- `milvus` [R|loc|H|?] — Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. — tags: vector-db,rag,go,docker — alt: qdrant,chroma,pgvector,weaviate
 - `onyx` [A|hyb|M|?] — Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. — tags: rag,agent,python — prov: local — alt: anything-llm
 - `openviking` [P|hyb|H|+] — Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. — tags: memoria,server,python — prov: local
 - `pageindex` [L|cld|E|+] — Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. — tags: rag,docs,python — prov: openai — alt: lightrag
 - `pgvector` [L|loc|E|?] — Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. — tags: vector-db,postgres,rag — alt: qdrant,chroma,milvus
-- `qdrant` [R|loc|E|+] — Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. — tags: vector-db,rag,rust,docker — alt: milvus,chroma,pgvector,faiss
+- `qdrant` [R|loc|E|+] — Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. — tags: vector-db,rag,rust,docker — alt: milvus,chroma,pgvector,faiss,weaviate
 - `ragflow` [P|loc|H|?] — Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. — tags: rag,docs,agents,docker — prov: openai,local — alt: dify,lightrag
 - `supermemory` [P|hyb|E|+] — Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. — tags: memory,rag,typescript — alt: mem0,agentmemory
 - `turbovec` [L|loc|E|+] — Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación  — tags: automation,vector-db,rust
+- `txtai` [L|hyb|E|+] — Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base d — tags: rag,python,library,mcp
+- `weaviate` [P|hyb|M|?] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y  — tags: vector-db,rag,go,docker — alt: qdrant,milvus
 
-### 7. Entender código y comprobar su calidad (11)
+### 7. Entender código y comprobar su calidad (20)
 Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 
 - `ast-grep` [A|loc|E|+] — CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. — tags: code,security,rust — alt: semgrep
+- `biome` [A|loc|E|+] — Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por — tags: code,javascript,typescript,rust
 - `cli` [A|cld|E|?] — CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. — tags: code,go
 - `codebase-memory-mcp` [R|loc|E|?] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para  — tags: code,mcp,memory — prov: mcp — alt: codegraph,gitnexus,serena,graphify
 - `codegraph` [R|loc|E|+] — CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada arc — tags: code,typescript — alt: codebase-memory-mcp,serena,gitnexus,graphify
 - `floorplan` [S|loc|M|+] — Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un pr — tags: codigo,skill,javascript
+- `fzf` [A|loc|E|+] — Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cu — tags: cli,go,terminal
+- `gitleaks` [A|loc|E|+] — Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como h — tags: security,go,cli,code — alt: trufflehog
 - `gitnexus` [A|hyb|E|+] — Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar  — tags: code,typescript — alt: repomix,codebase-memory-mcp,serena,codegraph,graphify
 - `graphify` [R|hyb|M|+] — CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AS — tags: code,python — alt: codegraph,gitnexus,serena,codebase-memory-mcp
+- `lazygit` [A|loc|E|+] — Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestió — tags: cli,go,git,terminal
 - `openai-python` [L|cld|E|+] — SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. — tags: code,python
+- `pre-commit` [A|loc|E|?] — Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y  — tags: code,python,cli,git
 - `repomix` [A|loc|E|+] — Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. — tags: code,coding-agent,typescript — alt: gitnexus
+- `ripgrep` [A|loc|E|+] — Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocult — tags: cli,rust,code,search
+- `ruff` [A|loc|E|+] — Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, co — tags: code,python,rust,cli
+- `sonarqube` [P|loc|M|?] — Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidad — tags: code,java,security,docker — alt: semgrep
 - `swe-bench` [L|loc|H|+] — Benchmark para evaluar si los modelos resuelven issues reales de GitHub. — tags: evaluation,coding-agent,python
 - `tree-sitter` [L|loc|M|?] — Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. — tags: code,rust
+- `trufflehog` [A|loc|E|+] — Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y — tags: security,go,cli,code — alt: gitleaks
 
-### 8. Chats, modelos locales y espacios privados (26)
+### 8. Chats, modelos locales y espacios privados (31)
 Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 
 - `airllm` [R|loc|H|+] — Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus compon — tags: motores,engine,jupyter-notebook — prov: local
 - `anything-llm` [A|loc|E|?] — App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. — tags: rag,agents,local,javascript — prov: openai,anthropic,local — alt: open-webui,khoj,private-gpt,onyx
-- `chatbox` [A|hyb|E|?] — Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz comú — tags: chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek — alt: jan
+- `chatbox` [A|hyb|E|?] — Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz comú — tags: chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek — alt: jan,nextchat,lobehub
 - `cherry-studio` [A|hyb|E|?] — App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: jan,lobehub
 - `exo` [R|loc|M|+] — Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina. — tags: inference,local,python — prov: local
 - `freetoken` [R|loc|H|+] — Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del pr — tags: motores,engine,python — prov: local
 - `hermes-desktop` [A|loc|E|?] — App de escritorio que envuelve al agente Hermes en una interfaz nativa. — tags: agents,ui,typescript
 - `jan` [A|loc|E|?] — Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma i — tags: chatbot,local,rust — prov: local,openai — alt: cherry-studio,textgen,chatbox
 - `khoj` [A|hyb|M|?] — Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. — tags: research,rag,agents,python — prov: openai,anthropic,local — alt: anything-llm,surfsense
+- `koboldcpp` [R|loc|E|?] — Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs c — tags: inference,cpp,local,app — alt: llamafile
 - `librechat` [A|hyb|M|?] — Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. — tags: chatbot,agents,typescript,docker — prov: openai,anthropic,google,local — alt: open-webui,lobehub
 - `llama-cpp` [R|loc|M|?] — Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. — tags: inference,local,cpp — prov: local — alt: ollama,llamafile,localai
-- `llamafile` [R|loc|E|?] — Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. — tags: inference,local,cpp — prov: local — alt: ollama,llama-cpp
+- `llamafile` [R|loc|E|?] — Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. — tags: inference,local,cpp — prov: local — alt: ollama,llama-cpp,koboldcpp
 - `llmfit` [A|hyb|E|+] — Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. — tags: inference,local,rust
-- `lobehub` [A|hyb|E|+] — Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: open-webui,librechat,cherry-studio
+- `lobehub` [A|hyb|E|+] — Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: open-webui,librechat,cherry-studio,nextchat,chatbox
 - `localai` [R|loc|M|+] — Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. — tags: inference,local,go,docker — prov: local — alt: ollama,llama-cpp
 - `magnitude` [R|loc|H|+] — Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. — tags: motores,engine,rust — prov: local
+- `mlc-llm` [R|loc|H|?] — Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y na — tags: inference,python,local,model
+- `mlx-lm` [R|loc|E|+] — Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantizac — tags: inference,python,local,training
+- `nextchat` [A|hyb|E|?] — Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y  — tags: chatbot,typescript,app,mcp — alt: lobehub,chatbox
 - `notebooklm-mcp-cli` [R|cld|E|+] — CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde termi — tags: mcp,notebooks,python
 - `notebooklm-py` [L|cld|E|?] — API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuen — tags: notebooks,research,python
 - `odysseus` [P|loc|H|+] — Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por age — tags: agents,local,python,docker
@@ -436,6 +456,7 @@ Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 - `open-notebook` [A|loc|M|?] — Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y ge — tags: notebooks,research,typescript,docker — alt: deeptutor,surfsense
 - `open-webui` [A|loc|E|+] — Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. — tags: chatbot,local,rag,docker — prov: openai,local — alt: librechat,lobehub,anything-llm,textgen
 - `private-gpt` [P|loc|M|?] — Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. — tags: rag,local,python — prov: local,openai — alt: anything-llm
+- `sillytavern` [A|hyb|M|?] — Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y  — tags: chatbot,javascript,local,app
 - `surfsense` [A|hyb|M|?] — Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. — tags: research,rag,notebooks,python — prov: openai,local — alt: open-notebook,khoj
 - `textgen` [A|loc|M|?] — App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. — tags: chatbot,local,inference,python — prov: local — alt: jan,open-webui
 - `transformers.js` [L|loc|M|+] — Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. — tags: motores,browser,javascript,transformers,webml
@@ -630,7 +651,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `rea` [S|loc|M|+] — Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de c — tags: agentes,skill,typescript
 - `rizin` [A|loc|M|?] — Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones  — tags: reversing,app,c — alt: radare2
 - `security-audit-skill` [S|hyb|M|+] — Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estru — tags: metodologia,javascript
-- `semgrep` [A|loc|E|+] — Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. — tags: security,code — alt: ast-grep
+- `semgrep` [A|loc|E|+] — Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. — tags: security,code — alt: ast-grep,sonarqube
 - `shannon` [A|hyb|M|+] — Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autor — tags: agentes,agent,typescript — prov: local — alt: strix
 - `skillspector` [A|cld|E|+] — Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. — tags: skills,coding-agent,python
 - `strix` [A|hyb|M|?] — Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de Ch — tags: agentes,agent,python — prov: local — alt: shannon

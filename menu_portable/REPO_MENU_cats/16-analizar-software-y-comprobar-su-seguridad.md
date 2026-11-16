@@ -672,7 +672,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El hallazgo señala la línea y puedes comprobarlo manualmente
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `security-audit-skill`, `strix`, `defending-code-reference-harness`, `raddebugger`, `shannon`
-**Alternativas (elige una):** `ast-grep`
+**Alternativas (elige una):** `ast-grep`, `sonarqube`
 
 ## `shannon`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agentes,agent,typescript

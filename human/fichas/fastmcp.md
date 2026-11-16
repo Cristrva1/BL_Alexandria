@@ -32,9 +32,9 @@ Se instala con `uv pip install fastmcp` o `pip install fastmcp` y se ejecuta con
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Agent Development Kit (ADK)](adk-python.md) · [AgentScope](agentscope.md) · [claude-agent-sdk-python](claude-agent-sdk-python.md) · [crewAI](crewai.md) · [MCP for Beginners](mcp-for-beginners.md) · [OpenAI Agents SDK](openai-agents-python.md)
+[Agent Development Kit (ADK)](adk-python.md) · [AgentScope](agentscope.md) · [claude-agent-sdk-python](claude-agent-sdk-python.md) · [crewAI](crewai.md) · [MCP for Beginners](mcp-for-beginners.md) · [NextChat](nextchat.md) · [OpenAI Agents SDK](openai-agents-python.md)
 
 **Notas:** Alternativas (elige una): mcp-python-sdk.
 

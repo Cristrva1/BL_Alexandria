@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **640 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **661 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -16,10 +16,10 @@ Las **640 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
 | 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 34 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
 | 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 28 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
-| 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 23 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
-| 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 23 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
-| 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 11 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
-| 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 26 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
+| 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 25 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
+| 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 28 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
+| 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 20 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
+| 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 31 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
 | 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 29 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
 | 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 21 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
 | 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 8 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
@@ -1446,6 +1446,15 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Context7](human/fichas/context7.md) · [SuperClaude_Framework](human/fichas/superclaude-framework.md)<br>
 **Más:** [ficha completa](human/fichas/serena.md) · [GitHub](https://github.com/oraios/serena)
 
+#### 🧩 MCP Toolbox for Databases
+**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 16.9k<br>
+**Qué es:** Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
+**Comando documentado:** `brew install mcp-toolbox` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: consultar y explorar el esquema de una base PostgreSQL desde tu agente de código; dar a un agente en producción consultas parametrizadas en lugar de SQL libre — **Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [Codex CLI](human/fichas/codex.md) · [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md)<br>
+**Más:** [ficha completa](human/fichas/mcp-toolbox.md) · [GitHub](https://github.com/googleapis/mcp-toolbox)
+
 #### 🔌 Figma Context MCP
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 16.2k<br>
 **Qué es:** Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.<br>
@@ -1472,6 +1481,15 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ghidra](human/fichas/ghidra.md) · [Claude Code](human/fichas/claude-code.md) · [angr](human/fichas/angr.md) · [awesome-ai-reverse-engineering](human/fichas/awesome-ai-reverse-engineering.md)<br>
 **Más:** [ficha completa](human/fichas/ghidramcp.md) · [GitHub](https://github.com/LaurieWired/GhidraMCP)
+
+#### 🧩 MCP servers for AWS
+**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 9.9k<br>
+**Qué es:** Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
+**Arranque:** [Instrucciones originales](https://github.com/awslabs/mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: consultar la documentación actualizada de AWS desde tu agente de código; revisar y generar plantillas de CloudFormation o CDK con validación de seguridad — **Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [MCP Inspector](human/fichas/mcp-inspector.md)<br>
+**Más:** [ficha completa](human/fichas/aws-mcp.md) · [GitHub](https://github.com/awslabs/mcp)
 
 #### 🔌 annas-mcp
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 1.1k<br>
@@ -1565,7 +1583,7 @@ Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene conte
 | [graphrag](human/fichas/graphrag.md) | Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [cognee](human/fichas/cognee.md) | Tu objetivo encaja con estos ejemplos: Construir memoria de documentos; Recuperar contexto desde Claude Code o Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Qdrant, Milvus, Faiss, Chroma, pgvector**
+**⚖️ ¿Cuál elegir? — Qdrant, Milvus, Faiss, Chroma, pgvector, Weaviate, LanceDB**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -1574,6 +1592,8 @@ Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene conte
 | [Faiss](human/fichas/faiss.md) | Tu objetivo encaja con estos ejemplos: Comparar embeddings de imágenes; Experimentar con índices y compresión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Chroma](human/fichas/chroma.md) | Tu objetivo encaja con estos ejemplos: Prototipar búsqueda semántica local; Filtrar fragmentos por metadatos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [pgvector](human/fichas/pgvector.md) | Tu objetivo encaja con estos ejemplos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Weaviate](human/fichas/weaviate.md) | Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [LanceDB](human/fichas/lancedb.md) | Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
 ### Memoria persistente para agentes
 
@@ -1688,6 +1708,15 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [activepieces](human/fichas/activepieces.md) · [langfuse](human/fichas/langfuse.md) · [PaddleOCR](human/fichas/paddleocr.md)<br>
 **Más:** [ficha completa](human/fichas/ragflow.md) · [GitHub](https://github.com/infiniflow/ragflow)
 
+#### ⚙️ Meilisearch
+**Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 59.9k<br>
+**Qué es:** Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/meilisearch/meilisearch/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda instantánea con facetas a una web o aplicación; combinar búsqueda por palabras y semántica como capa de recuperación para RAG — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [langchain](human/fichas/langchain.md) · [firecrawl](human/fichas/firecrawl.md)<br>
+**Más:** [ficha completa](human/fichas/meilisearch.md) · [GitHub](https://github.com/meilisearch/meilisearch)
+
 #### 📎 LightRAG
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 40.7k<br>
 **Qué es:** RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong.<br>
@@ -1713,7 +1742,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://microsoft.github.io/graphrag/get_started/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [mcp-neo4j](human/fichas/mcp-neo4j.md) · [Docling](human/fichas/docling.md) · [graphify](human/fichas/graphify.md) · [Scrapegraph-ai](human/fichas/scrapegraph-ai.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [mcp-neo4j](human/fichas/mcp-neo4j.md) · [Docling](human/fichas/docling.md) · [graphify](human/fichas/graphify.md) · [Scrapegraph-ai](human/fichas/scrapegraph-ai.md) · [kotaemon](human/fichas/kotaemon.md)<br>
 **Más:** [ficha completa](human/fichas/graphrag.md) · [GitHub](https://github.com/microsoft/graphrag)
 
 #### 🖥️ onyx
@@ -1724,6 +1753,24 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [SearXNG](human/fichas/searxng.md) · [firecrawl](human/fichas/firecrawl.md)<br>
 **Más:** [ficha completa](human/fichas/onyx.md) · [GitHub](https://github.com/onyx-dot-app/onyx)
+
+#### 🖥️ kotaemon
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 25.9k<br>
+**Qué es:** Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/Cinnamon/kotaemon/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [LightRAG](human/fichas/lightrag.md) · [graphrag](human/fichas/graphrag.md) · [Docling](human/fichas/docling.md)<br>
+**Más:** [ficha completa](human/fichas/kotaemon.md) · [GitHub](https://github.com/Cinnamon/kotaemon)
+
+#### 📚 txtai
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 13.4k<br>
+**Qué es:** Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install txtai` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: indexar documentos y hacer búsqueda semántica con SQL en local; montar un RAG o un grafo de conocimiento sin desplegar varios servicios — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [litellm](human/fichas/litellm.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/txtai.md) · [GitHub](https://github.com/neuml/txtai)
 
 #### 📚 agentic-rag-for-dummies
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 4.4k<br>
@@ -1790,6 +1837,24 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Combina con:** [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [Haystack](human/fichas/haystack.md)<br>
 **Más:** [ficha completa](human/fichas/turbovec.md) · [GitHub](https://github.com/RyanCodrai/turbovec)
 
+#### ⚙️ Weaviate
+**Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 17k<br>
+**Qué es:** Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/weaviate/weaviate/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/weaviate.md) · [GitHub](https://github.com/weaviate/weaviate)
+
+#### 📚 LanceDB
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 11.9k<br>
+**Qué es:** Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/lancedb/lancedb/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md)<br>
+**Más:** [ficha completa](human/fichas/lancedb.md) · [GitHub](https://github.com/lancedb/lancedb)
+
 ---
 
 ## 🧑‍💻 7. Entender código y comprobar su calidad
@@ -1805,6 +1870,13 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 | [codegraph](human/fichas/codegraph.md) | Tu objetivo encaja con estos ejemplos: Preparar una refactorización; Encontrar rutas de ejecución de un proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [codebase-memory-mcp](human/fichas/codebase-memory-mcp.md) | Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [GitNexus](human/fichas/gitnexus.md) | Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — Gitleaks, TruffleHog**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Gitleaks](human/fichas/gitleaks.md) | Tu objetivo encaja con estos ejemplos: revisar el historial de un repositorio antes de hacerlo público; bloquear commits que contengan claves con un hook pre-commit | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [TruffleHog](human/fichas/trufflehog.md) | Tu objetivo encaja con estos ejemplos: auditar los repositorios de una organización en busca de claves activas; revisar buckets o logs exportados antes de compartirlos | necesitas una instalación sin cuentas ni dependencias adicionales |
 
 ### Entender y empaquetar código para agentes
 
@@ -1888,6 +1960,60 @@ claude plugin install floorplan@floorplan` (comprobar los pasos completos en la 
 **Combina con:** [tree-sitter](human/fichas/tree-sitter.md) · [Claude Code](human/fichas/claude-code.md) · [Aider](human/fichas/aider.md)<br>
 **Más:** [ficha completa](human/fichas/ast-grep.md) · [GitHub](https://github.com/ast-grep/ast-grep)
 
+#### 🖥️ Ruff
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 51.3k<br>
+**Qué es:** Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install ruff` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Flake8, isort y Black por una sola herramienta en un proyecto; revisar y corregir el código que genera un agente antes de cada commit — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [pre-commit](human/fichas/pre-commit.md) · [SonarQube Community Build](human/fichas/sonarqube.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/ruff.md) · [GitHub](https://github.com/astral-sh/ruff)
+
+#### 🖥️ Gitleaks
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 31.1k<br>
+**Qué es:** Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install gitleaks` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar el historial de un repositorio antes de hacerlo público; bloquear commits que contengan claves con un hook pre-commit — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [pre-commit](human/fichas/pre-commit.md) · [Semgrep](human/fichas/semgrep.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/gitleaks.md) · [GitHub](https://github.com/gitleaks/gitleaks)
+
+#### 🖥️ TruffleHog
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 29.4k<br>
+**Qué es:** Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install trufflehog` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar los repositorios de una organización en busca de claves activas; revisar buckets o logs exportados antes de compartirlos — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [pre-commit](human/fichas/pre-commit.md) · [Semgrep](human/fichas/semgrep.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/trufflehog.md) · [GitHub](https://github.com/trufflesecurity/trufflehog)
+
+#### 🖥️ Biome
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 26.1k<br>
+**Qué es:** Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por CLI y LSP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `npm install --save-dev --save-exact @biomejs/biome` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir ESLint y Prettier en un proyecto web por una sola herramienta; formatear y revisar el código que genera un agente antes de abrir un PR — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [pre-commit](human/fichas/pre-commit.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/biome.md) · [GitHub](https://github.com/biomejs/biome)
+
+#### 🖥️ pre-commit
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 15.7k<br>
+**Qué es:** Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/pre-commit/pre-commit/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: obligar a pasar formato, lint y escaneo de secretos antes de cada commit; aplicar las mismas comprobaciones en local y en CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Ruff](human/fichas/ruff.md) · [Gitleaks](human/fichas/gitleaks.md) · [TruffleHog](human/fichas/trufflehog.md) · [Biome](human/fichas/biome.md) · [Semgrep](human/fichas/semgrep.md)<br>
+**Más:** [ficha completa](human/fichas/pre-commit.md) · [GitHub](https://github.com/pre-commit/pre-commit)
+
+#### ⚙️ SonarQube Community Build
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 11.2k<br>
+**Qué es:** Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/SonarSource/sonarqube/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: vigilar la calidad y seguridad de un repositorio en cada PR; revisar el código generado por IA con reglas consistentes antes de fusionarlo — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Ruff](human/fichas/ruff.md) · [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/sonarqube.md) · [GitHub](https://github.com/SonarSource/sonarqube)
+
 #### 🛡️ SWE-bench
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 6.2k<br>
 **Qué es:** Benchmark para evaluar si los modelos resuelven issues reales de GitHub.<br>
@@ -1910,6 +2036,33 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md) · [activepieces](human/fichas/activepieces.md) · [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md) · [Awesome GitHub Copilot](human/fichas/awesome-copilot.md)<br>
 **Más:** [ficha completa](human/fichas/cli.md) · [GitHub](https://github.com/cli/cli)
 
+#### 🖥️ fzf
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 84.2k<br>
+**Qué es:** Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install fzf` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: buscar archivos y comandos del historial al instante en la terminal; construir menús interactivos en scripts de shell — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [ripgrep](human/fichas/ripgrep.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Más:** [ficha completa](human/fichas/fzf.md) · [GitHub](https://github.com/junegunn/fzf)
+
+#### 🖥️ lazygit
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 83.9k<br>
+**Qué es:** Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install lazygit` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos; hacer rebases interactivos y deshacer operaciones sin recordar comandos — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Aider](human/fichas/aider.md)<br>
+**Más:** [ficha completa](human/fichas/lazygit.md) · [GitHub](https://github.com/jesseduffield/lazygit)
+
+#### 🖥️ ripgrep
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 70k<br>
+**Qué es:** Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install ripgrep` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: localizar todas las apariciones de una función en un repositorio grande; buscar texto en miles de archivos de logs o notas en segundos — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [fzf](human/fichas/fzf.md) · [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md)<br>
+**Más:** [ficha completa](human/fichas/ripgrep.md) · [GitHub](https://github.com/BurntSushi/ripgrep)
+
 #### 🐍 openai-python
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 32.2k<br>
 **Qué es:** SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API.<br>
@@ -1926,7 +2079,7 @@ pip install openai` (comprobar los pasos completos en la ficha).<br>
 
 Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.
 
-**⚖️ ¿Cuál elegir? — Ollama, llama.cpp, LocalAI, llamafile**
+**⚖️ ¿Cuál elegir? — Ollama, llama.cpp, LocalAI, llamafile, KoboldCpp**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -1934,8 +2087,9 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 | [llama.cpp](human/fichas/llama-cpp.md) | Tu objetivo encaja con estos ejemplos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LocalAI](human/fichas/localai.md) | Tu objetivo encaja con estos ejemplos: Ofrecer una API local a una aplicación; Probar texto o voz con distintos backends | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [llamafile](human/fichas/llamafile.md) | Tu objetivo encaja con estos ejemplos: Distribuir una demo local de un LLM; Probar inferencia sin montar un servidor complejo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [KoboldCpp](human/fichas/koboldcpp.md) | Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama | no quieres preparar modelos, dependencias y hardware propios |
 
-**⚖️ ¿Cuál elegir? — Open WebUI, AnythingLLM, Jan, SurfSense, LobeHub, PrivateGPT, Cherry Studio**
+**⚖️ ¿Cuál elegir? — Open WebUI, AnythingLLM, Jan, SurfSense, NextChat, LobeHub, PrivateGPT**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -1943,9 +2097,9 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 | [AnythingLLM](human/fichas/anything-llm.md) | Tu objetivo encaja con estos ejemplos: Consultar documentación propia; Separar bases de conocimiento por proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Jan](human/fichas/jan.md) | Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [SurfSense](human/fichas/surfsense.md) | Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [NextChat](human/fichas/nextchat.md) | Tu objetivo encaja con estos ejemplos: desplegar un chat privado con tu propia clave para un equipo pequeño; usar un modelo autoalojado compatible con OpenAI desde una interfaz web ligera | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [LobeHub](human/fichas/lobehub.md) | Tu objetivo encaja con estos ejemplos: Organizar agentes para tareas de equipo; Conectar un agente de código a un espacio de trabajo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [PrivateGPT](human/fichas/private-gpt.md) | Tu objetivo encaja con estos ejemplos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [Cherry Studio](human/fichas/cherry-studio.md) | Tu objetivo encaja con estos ejemplos: Comparar respuestas de varios modelos; Organizar una base documental de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Motores para correr modelos en local
 
@@ -1973,7 +2127,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `docker run -ti --name local-ai -p 8080:8080 localai/localai:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ofrecer una API local a una aplicación; Probar texto o voz con distintos backends — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [AnythingLLM](human/fichas/anything-llm.md) · [Open WebUI](human/fichas/open-webui.md) · [LibreChat](human/fichas/librechat.md) · [chatbox](human/fichas/chatbox.md)<br>
+**Combina con:** [AnythingLLM](human/fichas/anything-llm.md) · [Open WebUI](human/fichas/open-webui.md) · [LibreChat](human/fichas/librechat.md) · [chatbox](human/fichas/chatbox.md) · [NextChat](human/fichas/nextchat.md)<br>
 **Más:** [ficha completa](human/fichas/localai.md) · [GitHub](https://github.com/mudler/LocalAI)
 
 #### 🦙 exo
@@ -1982,7 +2136,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `brew install --cask exo` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir memoria entre equipos compatibles; Experimentar con inferencia distribuida local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Open WebUI](human/fichas/open-webui.md) · [LibreChat](human/fichas/librechat.md) · [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [Open WebUI](human/fichas/open-webui.md) · [LibreChat](human/fichas/librechat.md) · [litellm](human/fichas/litellm.md) · [MLX LM](human/fichas/mlx-lm.md)<br>
 **Más:** [ficha completa](human/fichas/exo.md) · [GitHub](https://github.com/exo-explore/exo)
 
 #### 🧩 airllm
@@ -2012,6 +2166,15 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Combina con:** [Open WebUI](human/fichas/open-webui.md) · [AnythingLLM](human/fichas/anything-llm.md) · [LibreChat](human/fichas/librechat.md)<br>
 **Más:** [ficha completa](human/fichas/llamafile.md) · [GitHub](https://github.com/mozilla-ai/llamafile)
 
+#### 🧩 MLC LLM
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 23.4k<br>
+**Qué es:** Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/mlc-ai/mlc-llm/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: ejecutar un LLM en un móvil o en el navegador sin servidor; servir un modelo en GPU AMD, Intel o Apple con una API compatible con OpenAI — **Evita si:** no quieres preparar modelos, dependencias y hardware propios<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [Open WebUI](human/fichas/open-webui.md) · [litellm](human/fichas/litellm.md)<br>
+**Más:** [ficha completa](human/fichas/mlc-llm.md) · [GitHub](https://github.com/mlc-ai/mlc-llm)
+
 #### 🧩 FreeToken
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 17.2k<br>
 **Qué es:** Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.<br>
@@ -2030,6 +2193,15 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Combina con:** [Qdrant](human/fichas/qdrant.md) · [supabase](human/fichas/supabase.md) · [whisper](human/fichas/whisper.md)<br>
 **Más:** [ficha completa](human/fichas/transformers-js.md) · [GitHub](https://github.com/huggingface/transformers.js)
 
+#### 🧩 KoboldCpp
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 12.3k<br>
+**Qué es:** Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/LostRuins/koboldcpp/blob/concedo/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama — **Evita si:** no quieres preparar modelos, dependencias y hardware propios<br>
+**Combina con:** [SillyTavern](human/fichas/sillytavern.md) · [Open WebUI](human/fichas/open-webui.md) · [Kokoro](human/fichas/kokoro.md)<br>
+**Más:** [ficha completa](human/fichas/koboldcpp.md) · [GitHub](https://github.com/LostRuins/koboldcpp)
+
 #### 🧩 magnitude
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 7.8k<br>
 **Qué es:** Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.<br>
@@ -2038,6 +2210,15 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Elige si:** Tu objetivo encaja con estos ejemplos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [hermes-agent](human/fichas/hermes-agent.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/magnitude.md) · [GitHub](https://github.com/magnitudedev/magnitude)
+
+#### 🧩 MLX LM
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 7.7k<br>
+**Qué es:** Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install mlx-lm` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: ejecutar un LLM local optimizado en un Mac con chip Apple; afinar un modelo con LoRA en un Mac sin GPU NVIDIA — **Evita si:** no quieres preparar modelos, dependencias y hardware propios<br>
+**Combina con:** [exo](human/fichas/exo.md) · [Open WebUI](human/fichas/open-webui.md) · [litellm](human/fichas/litellm.md)<br>
+**Más:** [ficha completa](human/fichas/mlx-lm.md) · [GitHub](https://github.com/ml-explore/mlx-lm)
 
 ### Interfaces de chat auto-hospedadas
 
@@ -2058,6 +2239,15 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [llmfit](human/fichas/llmfit.md) · [Ollama](human/fichas/ollama.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/jan.md) · [GitHub](https://github.com/janhq/jan)
+
+#### 🖥️ NextChat
+**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 89k<br>
+**Qué es:** Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP.<br>
+**Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
+**Arranque:** [Instrucciones originales](https://github.com/ChatGPTNextWeb/NextChat/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: desplegar un chat privado con tu propia clave para un equipo pequeño; usar un modelo autoalojado compatible con OpenAI desde una interfaz web ligera — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [LocalAI](human/fichas/localai.md) · [litellm](human/fichas/litellm.md) · [FastMCP](human/fichas/fastmcp.md)<br>
+**Más:** [ficha completa](human/fichas/nextchat.md) · [GitHub](https://github.com/ChatGPTNextWeb/NextChat)
 
 #### 💬 LobeHub
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 85.5k<br>
@@ -2085,7 +2275,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/oobabooga/textgen/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LibreChat](human/fichas/librechat.md) · [llmfit](human/fichas/llmfit.md) · [Unsloth](human/fichas/unsloth.md)<br>
+**Combina con:** [LibreChat](human/fichas/librechat.md) · [llmfit](human/fichas/llmfit.md) · [Unsloth](human/fichas/unsloth.md) · [SillyTavern](human/fichas/sillytavern.md)<br>
 **Más:** [ficha completa](human/fichas/textgen.md) · [GitHub](https://github.com/oobabooga/textgen)
 
 #### 💬 LibreChat
@@ -2105,6 +2295,15 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con varios proveedores; Probar un modelo local desde escritorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [LocalAI](human/fichas/localai.md)<br>
 **Más:** [ficha completa](human/fichas/chatbox.md) · [GitHub](https://github.com/chatboxai/chatbox)
+
+#### 🖥️ SillyTavern
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 35.7k<br>
+**Qué es:** Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/SillyTavern/SillyTavern/blob/release/.github/readme.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: escribir historias o partidas de rol con personajes y memoria persistente; probar el mismo prompt contra varios modelos locales y remotos — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [KoboldCpp](human/fichas/koboldcpp.md) · [Ollama](human/fichas/ollama.md) · [ComfyUI](human/fichas/comfyui.md) · [Kokoro](human/fichas/kokoro.md) · [Text Generation WebUI](human/fichas/textgen.md)<br>
+**Más:** [ficha completa](human/fichas/sillytavern.md) · [GitHub](https://github.com/SillyTavern/SillyTavern)
 
 ### Workspaces privados y segundos cerebros
 

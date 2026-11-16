@@ -32,9 +32,9 @@ Se ejecuta con `npx @google/gemini-cli` o se instala con `npm install -g @google
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (17). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Agent Skills (Addy Osmani)](agent-skills.md) · [agentmemory](agentmemory.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [Browser Harness](browser-harness.md) · [Chrome DevTools MCP](chrome-devtools-mcp.md) · [ECC](ecc.md) · [Engram](engram.md) · [gemini-skills](gemini-skills.md) · [i-have-adhd](i-have-adhd.md) · [logo-design-skill](logo-design-skill.md) · [notebooklm-mcp-cli](notebooklm-mcp-cli.md) · [rtk](rtk.md) · [skills](google-skills.md) · [Spec Kit](spec-kit.md) · [superpowers](superpowers.md) · [The Agency (agency-agents)](agency-agents.md)
+[Agent Skills (Addy Osmani)](agent-skills.md) · [agentmemory](agentmemory.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [Browser Harness](browser-harness.md) · [Chrome DevTools MCP](chrome-devtools-mcp.md) · [ECC](ecc.md) · [Engram](engram.md) · [gemini-skills](gemini-skills.md) · [i-have-adhd](i-have-adhd.md) · [logo-design-skill](logo-design-skill.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [notebooklm-mcp-cli](notebooklm-mcp-cli.md) · [rtk](rtk.md) · [skills](google-skills.md) · [Spec Kit](spec-kit.md) · [superpowers](superpowers.md) · [The Agency (agency-agents)](agency-agents.md)
 
 **Notas:** Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).
 

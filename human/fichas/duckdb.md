@@ -34,9 +34,9 @@ Hay CLI independiente y clientes para Python, R, Java, Node, Rust, Go, WebAssemb
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (20). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (21). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Apache Airflow](airflow.md) · [awesome-bigdata](awesome-bigdata.md) · [Chart.js](chart-js.md) · [Colly](colly.md) · [Dagster](dagster.md) · [dash](dash.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [Grist](grist-core.md) · [hudi](hudi.md) · [JupyterLab](jupyterlab.md) · [Katana](katana.md) · [Kestra](kestra.md) · [metabase](metabase.md) · [Prefect](prefect.md) · [Redash](redash.md) · [streamlit](streamlit.md) · [uPlot](uplot.md) · [Windmill](windmill.md) · [WrenAI](wrenai.md)
+[Apache Airflow](airflow.md) · [awesome-bigdata](awesome-bigdata.md) · [Chart.js](chart-js.md) · [Colly](colly.md) · [Dagster](dagster.md) · [dash](dash.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [Grist](grist-core.md) · [hudi](hudi.md) · [JupyterLab](jupyterlab.md) · [Katana](katana.md) · [Kestra](kestra.md) · [LanceDB](lancedb.md) · [metabase](metabase.md) · [Prefect](prefect.md) · [Redash](redash.md) · [streamlit](streamlit.md) · [uPlot](uplot.md) · [Windmill](windmill.md) · [WrenAI](wrenai.md)
 
 **Notas:** Alternativas (elige una): polars.
 

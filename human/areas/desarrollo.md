@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-63 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+72 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -44,21 +44,30 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Índices y análisis para orientarte dentro de repositorios.
 
-[Explorar 11 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-comprender)
+[Explorar 20 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-comprender)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [ast-grep](../fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Sin clave propia de API de IA en la ruta básica |
+| [Biome](../fichas/biome.md) | Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por CLI y LSP. | Sin clave propia de API de IA en la ruta básica |
 | [codebase-memory-mcp](../fichas/codebase-memory-mcp.md) | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. | API de IA opcional |
 | [codegraph](../fichas/codegraph.md) | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. | API de IA opcional |
 | [floorplan](../fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Sin clave propia de API de IA en la ruta básica |
+| [fzf](../fichas/fzf.md) | Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva. | Sin clave propia de API de IA en la ruta básica |
 | [GitHub CLI](../fichas/cli.md) | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. | Sin clave propia de API de IA en la ruta básica |
+| [Gitleaks](../fichas/gitleaks.md) | Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. | Sin clave propia de API de IA en la ruta básica |
 | [GitNexus](../fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica |
 | [graphify](../fichas/graphify.md) | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. | API de IA opcional |
+| [lazygit](../fichas/lazygit.md) | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos. | Sin clave propia de API de IA en la ruta básica |
 | [openai-python](../fichas/openai-python.md) | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. | API de IA necesaria |
+| [pre-commit](../fichas/pre-commit.md) | Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML. | Sin clave propia de API de IA en la ruta básica |
 | [Repomix](../fichas/repomix.md) | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. | Sin clave propia de API de IA en la ruta básica |
+| [ripgrep](../fichas/ripgrep.md) | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios. | Sin clave propia de API de IA en la ruta básica |
+| [Ruff](../fichas/ruff.md) | Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas. | Sin clave propia de API de IA en la ruta básica |
+| [SonarQube Community Build](../fichas/sonarqube.md) | Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes. | Sin clave propia de API de IA en la ruta básica |
 | [SWE-bench](../fichas/swe-bench.md) | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | API de IA opcional |
 | [tree-sitter](../fichas/tree-sitter.md) | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. | Sin clave propia de API de IA en la ruta básica |
+| [TruffleHog](../fichas/trufflehog.md) | Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. | Sin clave propia de API de IA en la ruta básica |
 
 ### Backend, alojamiento y despliegue
 
