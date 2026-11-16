@@ -252,40 +252,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "fugu": {
-   "que_es": "Sakana Fugu, sistema multiagente comercial de Sakana AI que se consume como un único modelo. El repo solo contiene ejemplos e instaladores, sin licencia; el servicio es de pago o con registro en console.sakana.ai. Tiene ~1k estrellas.",
-   "que_hace": "Orquesta dinámicamente un conjunto de modelos frontera para resolver tareas complejas de varios pasos, expuesto como un único endpoint de modelo. Las cifras de rendimiento provienen del informe técnico de Sakana.",
-   "como_lo_hace": "Se integra con Codex o Claude Code mediante `curl -fsSL https://sakana.ai/fugu/install | bash`, que crea los comandos `codex-fugu` y `claude-fugu` (Ubuntu y macOS; en Windows hay configuración manual). Con Claude Code hay diferencias de compatibilidad, mayormente cosméticas.",
-   "combina_con": [
-    {
-     "id": "codex",
-     "motivo": "Integración nativa (`codex-fugu`).",
-     "orden_instalacion": "Instala Codex y luego el script de Fugu."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Integración nativa (`claude-fugu`).",
-     "orden_instalacion": "Instala Claude Code y luego el script de Fugu."
-    },
-    {
-     "id": "t3code",
-     "motivo": "Controlar desde web o móvil el Codex que usa Fugu. (combinación por arquitectura)",
-     "orden_instalacion": "Usa T3 Code sobre Codex."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: el repo es un cliente de un servicio propietario (solo anotado).",
-   "fuentes": [
-    "https://github.com/SakanaAI/fugu/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "SakanaAI/fugu",
-    "archived": false,
-    "pushed_at": "2026-10-28",
-    "primary_language": "Shell",
-    "latest_release": "user-demo-v1 (2026-06-26)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "composio": {
    "que_es": "Composio, monorepo de SDKs que da a los agentes más de 1000 toolkits preautenticados, de ComposioHQ. Licencia MIT para los SDKs; la plataforma es un servicio con API key. Tiene ~31k estrellas.",
    "que_hace": "Gestiona sesiones por usuario, autenticación, triggers y un sandbox para que los agentes actúen en apps externas. Cada sesión expone además un endpoint MCP alojado.",

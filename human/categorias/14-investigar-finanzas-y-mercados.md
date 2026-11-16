@@ -4,7 +4,7 @@
 
 Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.
 
-22 repos · 4 secciones
+19 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -21,7 +21,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Agentes de investigación financiera](#agentes-de-investigación-financiera) — 7 repos
 - [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 5 repos
 - [Bots y conexiones a exchanges](#bots-y-conexiones-a-exchanges) — 6 repos
-- [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 4 repos
+- [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 1 repos
 
 ## Agentes de investigación financiera
 
@@ -61,9 +61,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest | API de IA opcional |
-| [PixelFund-AI](../fichas/pixelfund-ai.md) | Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión | API de IA opcional |
-| [pixel-hedge-fund](../fichas/pixel-hedge-fund.md) | Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados. | Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación | Sin clave propia de API de IA en la ruta básica |
-| [company-pixel-office](../fichas/company-pixel-office.md) | Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo. | Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo | Sin clave propia de API de IA en la ruta básica |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 

@@ -26,7 +26,7 @@ Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community 
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Automatizar informes con la Stats API. (combinación por arquitectura) | Consulta la API desde el nodo HTTP Request. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos (sustituye a la antigua combinación con n8n). | Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces. |
 | [Grafana](grafana.md) | Paneles propios sobre la API o la base ClickHouse de CE. (combinación por arquitectura) | Conecta Grafana a ClickHouse en una instancia CE. |
 | [supabase](supabase.md) | Analítica sin cookies para apps alojadas sobre Supabase. (combinación por arquitectura) | Añade el script de Plausible al frontend. |
 
@@ -34,7 +34,7 @@ Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community 
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.2.1 (2026-05-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plausible/analytics/blob/master/README.md) · [2](https://plausible.io/docs/stats-api)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plausible/analytics/blob/master/README.md) · [2](https://plausible.io/docs/stats-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/plausible)</sub>
 
 ## Acceso, coste y equipo
 

@@ -26,7 +26,7 @@ Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker seg
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Nodo e integración oficial de Firecrawl en n8n. | Crea la credencial de Firecrawl en n8n y usa el nodo en tus flujos. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos (sustituye a la antigua combinación con n8n). | firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces. |
 | [Claude Code](claude-code.md) | Dar al agente scraping y búsqueda con el servidor MCP oficial firecrawl-mcp. | Añade `firecrawl-mcp` a la configuración MCP con tu clave. |
 | [gpt-researcher](gpt-researcher.md) | Usar Firecrawl como scraper de GPT Researcher, documentado en su guía de scraping. | Define el scraper Firecrawl y su clave en la configuración de GPT Researcher. |
 
@@ -34,7 +34,7 @@ Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker seg
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.11.0 (2026-06-19) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/firecrawl/firecrawl/blob/main/README.md) · [2](https://docs.firecrawl.dev/mcp-server) · [3](https://n8n.io/integrations/firecrawl/) · [4](https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/firecrawl/firecrawl/blob/main/README.md) · [2](https://docs.firecrawl.dev/mcp-server) · [3](https://n8n.io/integrations/firecrawl/) · [4](https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping) · [5](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/firecrawl)</sub>
 
 ## Acceso, coste y equipo
 

@@ -4,7 +4,7 @@
 
 Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes.
 
-19 repos · 3 secciones
+17 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,16 +18,14 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Rostros y retratos animados](#rostros-y-retratos-animados) — 5 repos
+- [Rostros y retratos animados](#rostros-y-retratos-animados) — 4 repos
 - [Visión por computador](#visión-por-computador) — 13 repos
-- [Sensores y percepción espacial](#sensores-y-percepción-espacial) — 1 repos
 
 ## Rostros y retratos animados
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [Deep-Live-Cam](../fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video | Sin clave propia de API de IA en la ruta básica |
-| [face_recognition](../fichas/face-recognition.md) | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. | Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio | Sin clave propia de API de IA en la ruta básica |
 | [FaceFusion](../fichas/facefusion.md) | Plataforma para intercambio y mejora de rostros en imágenes y video. | Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen | Sin clave propia de API de IA en la ruta básica |
 | [InsightFace](../fichas/insightface.md) | Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. | Tu objetivo encaja con estos ejemplos: Estudiar alineación facial; Evaluar detección en un dataset de prueba | Sin clave propia de API de IA en la ruta básica |
 | [LivePortrait](../fichas/liveportrait.md) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | Tu objetivo encaja con estos ejemplos: Crear una animación consentida de un retrato; Estudiar retargeting facial | Sin clave propia de API de IA en la ruta básica |
@@ -49,12 +47,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [EasyMocap](../fichas/easymocap.md) | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. | Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento | Sin clave propia de API de IA en la ruta básica |
 | [4D-Humans](../fichas/4d-humans.md) | Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video. | Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción humana 3D; Explorar seguimiento en un clip corto | Sin clave propia de API de IA en la ruta básica |
 | [WHAM](../fichas/wham.md) | Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video. | Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento | Sin clave propia de API de IA en la ruta básica |
-
-## Sensores y percepción espacial
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [RuView](../fichas/ruview.md) | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. | Tu objetivo encaja con estos ejemplos: Estudiar sensado WiFi en laboratorio; Explorar una visualización espacial simulada | API de IA opcional |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 

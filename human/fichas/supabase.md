@@ -27,14 +27,14 @@ Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo lo
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [pgvector](pgvector.md) | Extensión de vectores para embeddings. | Activa la extensión en la base de datos. |
-| [n8n](n8n.md) | Nodo de Supabase en flujos de automatización. (combinación por arquitectura) | Configura las credenciales en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos (sustituye a la antigua combinación con n8n). | supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces. |
 | [coolify](coolify.md) | Autoalojar Supabase. (combinación por arquitectura) | Despliega desde Coolify. |
 
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.26.08 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/supabase/supabase/blob/master/README.md) · [2](https://supabase.com/docs/guides/hosting/overview)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/supabase/supabase/blob/master/README.md) · [2](https://supabase.com/docs/guides/hosting/overview) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/supabase)</sub>
 
 ## Acceso, coste y equipo
 

@@ -267,9 +267,9 @@
      "orden_instalacion": "Configura el proxy en el navegador."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Orquestar scripts de automatización. (combinación por arquitectura)",
-     "orden_instalacion": "Lanza los scripts desde workflows."
+     "orden_instalacion": "Lanza los scripts desde flujos de Activepieces."
     },
     {
      "id": "claude-code",
@@ -308,15 +308,16 @@
      "orden_instalacion": "Configura un proveedor compatible."
     },
     {
-     "id": "n8n",
-     "motivo": "Disparar workflows. (combinación por arquitectura)",
-     "orden_instalacion": "Llama a la API de Skyvern."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces."
     }
    ],
    "notas": "Alternativas (elige una): browser-use, stagehand, computer-use-preview. Telemetría activa por defecto.",
    "fuentes": [
     "https://github.com/Skyvern-AI/skyvern/blob/main/README.md",
-    "https://docs.skyvern.com/"
+    "https://docs.skyvern.com/",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/skyvern"
    ],
    "github": {
     "name_with_owner": "Skyvern-AI/skyvern",
@@ -463,41 +464,6 @@
     "archived": false,
     "pushed_at": "2026-10-06",
     "license": "CC0-1.0",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "camofox-browser": {
-   "que_es": "camofox-browser, servidor de navegador antidetección para agentes de IA basado en Camoufox (fork de Firefox con suplantación de huella a nivel de C++), del equipo de jo (askjo.ai). Licencia MIT. Tiene ~12k estrellas (v1.19.0).",
-   "que_hace": "Expone acciones de navegador por HTTP y como herramientas MCP u OpenClaw, y según su README evita la detección de bots de Google, Cloudflare y otros. Extrae transcripciones de YouTube con yt-dlp.",
-   "como_lo_hace": "Se instala con `npm install && npm start` (descarga Camoufox) o como plugin de OpenClaw (`openclaw plugins install @askjo/camofox-browser`).",
-   "combina_con": [
-    {
-     "id": "openclaw",
-     "motivo": "Plugin oficial.",
-     "orden_instalacion": "Instala el plugin."
-    },
-    {
-     "id": "yt-dlp",
-     "motivo": "Transcripciones de YouTube.",
-     "orden_instalacion": "Instala yt-dlp."
-    },
-    {
-     "id": "hermes-agent",
-     "motivo": "Cliente MCP. (combinación por arquitectura)",
-     "orden_instalacion": "Conecta su MCP."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Riesgo: eludir la detección de bots puede violar los términos de los sitios y es un vector de abuso.",
-   "fuentes": [
-    "https://github.com/jo-inc/camofox-browser/blob/master/README.md"
-   ],
-   "github": {
-    "name_with_owner": "jo-inc/camofox-browser",
-    "archived": false,
-    "pushed_at": "2026-11-10",
-    "license": "MIT",
-    "primary_language": "JavaScript",
-    "latest_release": "v1.19.0 (2026-11-10)",
     "checked_at": "2026-11-15"
    }
   }

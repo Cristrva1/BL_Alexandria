@@ -263,9 +263,9 @@
      "orden_instalacion": "Usa Planck para la física 2D."
     },
     {
-     "id": "dsh-game-studio",
-     "motivo": "Física 2D en juegos generados. (combinación por arquitectura)",
-     "orden_instalacion": "Añádelo al juego exportado."
+     "id": "three.js",
+     "motivo": "Simular física 2D y dibujar el resultado en una escena three.js (por ejemplo, con cámara ortográfica). (combinación por arquitectura)",
+     "orden_instalacion": "Actualiza las posiciones de las mallas desde el paso de simulación de Planck."
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -407,7 +407,7 @@
      "orden_instalacion": "Aplica sobre los fotogramas."
     }
    ],
-   "notas": "Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación); se quita face-recognition de las combinaciones (sin integración documentada).",
+   "notas": "Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación).",
    "fuentes": [
     "https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md"
    ],
@@ -418,41 +418,6 @@
     "license": "AGPL-3.0",
     "primary_language": "Python",
     "latest_release": "2.8 (2026-10-22)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "face-recognition": {
-   "que_es": "face_recognition, librería Python de reconocimiento facial sobre dlib, de @ageitgey. Licencia MIT. Tiene ~57k estrellas, pero su última release es v1.2.2 (abril de 2018) y el README aún menciona Python 2.7/3.3: está prácticamente sin mantenimiento.",
-   "que_hace": "Detecta rostros, localiza rasgos faciales y compara caras con una API de alto nivel y una CLI (`face_recognition`, `face_detection`). Trae ejemplos con webcam vía OpenCV.",
-   "como_lo_hace": "Se instala con `pip install face_recognition`, lo que requiere compilar dlib (con CMake y un compilador). En Windows no está soportado oficialmente.",
-   "combina_con": [
-    {
-     "id": "opencv",
-     "motivo": "Captura de vídeo y dibujo en los ejemplos.",
-     "orden_instalacion": "Instala `opencv-python`."
-    },
-    {
-     "id": "supervision",
-     "motivo": "Anotar y rastrear detecciones. (combinación por arquitectura)",
-     "orden_instalacion": "Convierte las cajas a Detections."
-    },
-    {
-     "id": "mediapipe",
-     "motivo": "Detección facial moderna y más ligera. (combinación por arquitectura)",
-     "orden_instalacion": "Compara antes de adoptar."
-    }
-   ],
-   "notas": "Alternativas (elige una): insightface. Se quita deep-live-cam de las combinaciones. Considera insightface o mediapipe para proyectos nuevos.",
-   "fuentes": [
-    "https://github.com/ageitgey/face_recognition/blob/master/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ageitgey/face_recognition",
-    "archived": false,
-    "pushed_at": "2026-06-25",
-    "license": "MIT",
-    "primary_language": "Python",
-    "latest_release": "v1.2.2 (2018-04-02)",
     "checked_at": "2026-11-15"
    }
   },

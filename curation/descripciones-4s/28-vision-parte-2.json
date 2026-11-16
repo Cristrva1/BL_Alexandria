@@ -24,7 +24,7 @@
      "orden_instalacion": "Viene como dependencia en la ruta por defecto."
     }
    ],
-   "notas": "Alternativas (elige una): face-recognition. Los pesos no permiten uso comercial.",
+   "notas": "Sin alternativas declaradas. Los pesos no permiten uso comercial.",
    "fuentes": [
     "https://github.com/deepinsight/insightface/blob/master/README.md"
    ],
@@ -243,41 +243,6 @@
     "license": "Apache-2.0",
     "primary_language": "TypeScript",
     "latest_release": "1.23.2 (2026-09-29)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "ruview": {
-   "que_es": "RuView (antes wifi-densepose), proyecto de @ruvnet (autor de ruflo) de detección espacial con señales WiFi. Licencia MIT. Tiene ~104k estrellas, una cifra inusual para el área.",
-   "que_hace": "Promete reconocer actividad, presencia, respiración y pose (17 keypoints) a partir de la información de estado del canal WiFi (CSI), y combinar radar, UWB y señales celulares. El propio README admite que la precisión del modelo de mundo RF sigue siendo sintética hasta validarse con datos reales.",
-   "como_lo_hace": "Se instala con `pip install ruview` (alias `wifi-densepose`) o con Docker. Para datos reales necesita nodos ESP32 con firmware CSI, y trae demos web con three.js.",
-   "combina_con": [
-    {
-     "id": "home-assistant",
-     "motivo": "Exponer eventos de presencia en domótica. (combinación por arquitectura)",
-     "orden_instalacion": "Envía los eventos vía API o MQTT."
-    },
-    {
-     "id": "three.js",
-     "motivo": "Visualización de la escena (demos incluidas).",
-     "orden_instalacion": "Abre la galería three.js del proyecto."
-    },
-    {
-     "id": "mediapipe",
-     "motivo": "Comparar con pose basada en cámara para validar. (combinación por arquitectura)",
-     "orden_instalacion": "Usa MediaPipe como referencia."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Afirmaciones técnicas sin validación independiente: pregunta de pertenencia al catálogo (solo anotada).",
-   "fuentes": [
-    "https://github.com/ruvnet/RuView/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ruvnet/RuView",
-    "archived": false,
-    "pushed_at": "2026-11-16",
-    "license": "MIT",
-    "primary_language": "Rust",
-    "latest_release": "ruview-harness-v0.9.2 (2026-10-12)",
     "checked_at": "2026-11-15"
    }
   },

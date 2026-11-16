@@ -407,7 +407,7 @@
      "orden_instalacion": "No hace falta instalarlo aparte."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar conversiones u OCR masivo llamando a su API REST (combinación por arquitectura).",
      "orden_instalacion": "Protege la API con clave antes de exponerla."
     },
@@ -554,7 +554,7 @@
    "como_lo_hace": "Aplicación Ruby on Rails que se despliega con `docker run -p 3000:3000` o Docker Compose; usa SQLite por defecto o PostgreSQL/MySQL, y guarda archivos en disco, AWS S3, Google Storage o Azure.",
    "combina_con": [
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Disparar flujos al completar una firma o crear envíos desde otros sistemas con su API y webhooks (combinación por arquitectura).",
      "orden_instalacion": "Crea la clave de API y el webhook en DocuSeal antes del flujo."
     },
@@ -632,11 +632,6 @@
      "id": "tesseract",
      "motivo": "Motor usado por OCRmyPDF; los idiomas se añaden como paquetes de Tesseract.",
      "orden_instalacion": "Define `PAPERLESS_OCR_LANGUAGES` antes del primer arranque."
-    },
-    {
-     "id": "n8n",
-     "motivo": "Subir documentos o reaccionar a nuevos archivos mediante su API REST (combinación por arquitectura).",
-     "orden_instalacion": "Crea un token de API en Paperless antes del flujo."
     },
     {
      "id": "erpnext",

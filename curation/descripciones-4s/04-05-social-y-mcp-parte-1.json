@@ -90,9 +90,9 @@
      "orden_instalacion": "Activa el MCP en tu instancia y regístralo en el cliente."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura)",
-     "orden_instalacion": "Configura una notificación webhook hacia un flujo de n8n."
+     "orden_instalacion": "Configura una notificación webhook hacia un flujo de Activepieces."
     }
    ],
    "notas": "Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas.",
@@ -385,7 +385,7 @@
      "orden_instalacion": "Añade el servidor remoto con tu clave en la configuración MCP de Cline."
     }
    ],
-   "notas": "Alternativas (elige una): deepwiki-open. Las consultas salen hacia el servicio de Upstash.",
+   "notas": "Sin alternativas declaradas. Las consultas salen hacia el servicio de Upstash.",
    "fuentes": [
     "https://github.com/upstash/context7/blob/master/README.md",
     "https://context7.com/docs/resources/all-clients"

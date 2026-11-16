@@ -19,15 +19,16 @@
      "orden_instalacion": "Usa `gh` en terminal y el servidor MCP en clientes sin shell."
     },
     {
-     "id": "n8n",
-     "motivo": "Automatizar GitHub con el nodo nativo de n8n, complementario a scripts con `gh`. (combinación por arquitectura)",
-     "orden_instalacion": "Usa `gh` para tareas manuales y n8n para flujos programados."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces."
     }
    ],
    "notas": "Sin alternativas declaradas. Limita los scopes del token que uses con agentes.",
    "fuentes": [
     "",
-    "https://cli.github.com/manual/"
+    "https://cli.github.com/manual/",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/github"
    ],
    "github": {
     "name_with_owner": "cli/cli",
@@ -77,42 +78,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "dsh-qa": {
-   "que_es": "DSH QA, plugin orquestador de QA de terceros para DeepSeek Harness (DSH, el framework de plugins de deepseek-ai), de @ZSeven-W. Licencia MIT. Es muy pequeño y temprano (~12 estrellas; 0.1.0-rc.2 en npm desde septiembre de 2026).",
-   "que_hace": "Un agente explora la aplicación como un usuario real con hallazgos respaldados por evidencia, y el recorrido explorado se exporta como escenario de Replay determinista para cada release. Usa drivers para navegador, escritorio macOS, iOS y Android, y genera informes JSON/Markdown/JSONL con datos sensibles redactados. Hereda las salvaguardas de los drivers: rechaza campos seguros y acciones de confirmación externa.",
-   "como_lo_hace": "Se instala con npm (`@zseven-w/dsh-qa` y los drivers necesarios) y requiere Node.js 24.11+. Se carga como plugin del host DSH (`@deepseek-ai/dsh`) o como servidor MCP stdio independiente. El README documenta limitaciones y huecos conocidos.",
-   "combina_con": [
-    {
-     "id": "playwright",
-     "motivo": "Automatización de navegador para comparar o complementar los escenarios de Replay. (combinación por arquitectura)",
-     "orden_instalacion": "Usa DSH QA para explorar y Playwright para la suite estable."
-    },
-    {
-     "id": "browser-use",
-     "motivo": "Exploración agéntica de webs como alternativa o complemento. (combinación por arquitectura)",
-     "orden_instalacion": "Compara hallazgos de ambos sobre la misma app."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Cargar el servidor MCP stdio desde un cliente MCP. (combinación por arquitectura)",
-     "orden_instalacion": "Configura `src/server.mjs` como servidor MCP."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: proyecto con muy poca adopción y en prerelease.",
-   "fuentes": [
-    "https://github.com/ZSeven-W/dsh-qa/blob/main/README.md",
-    "https://registry.npmjs.org/@zseven-w/dsh-qa",
-    "https://github.com/deepseek-ai/deepseek-harness"
-   ],
-   "github": {
-    "name_with_owner": "ZSeven-W/dsh-qa",
-    "archived": false,
-    "pushed_at": "2026-09-24",
-    "license": "MIT",
-    "primary_language": "JavaScript",
-    "checked_at": "2026-11-15"
-   }
-  },
   "umami": {
    "que_es": "Umami, plataforma open source de analítica web y de producto centrada en la privacidad, de Umami Software. Licencia MIT. Es madura (~40k estrellas, v3.5.0).",
    "que_hace": "Mide adquisición, comportamiento, conversión y retención sin cookies, con eventos personalizados, embudos y paneles compartibles. Se puede autoalojar o usar en Umami Cloud. Ofrece una API para consultar y enviar datos.",
@@ -129,16 +94,17 @@
      "orden_instalacion": "Añade la fuente PostgreSQL en Grafana."
     },
     {
-     "id": "n8n",
-     "motivo": "Automatizar informes con la API de Umami. (combinación por arquitectura)",
-     "orden_instalacion": "Llama a la API desde el nodo HTTP Request."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `umami` para usar Umami en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "Umami en marcha con sus credenciales; después añade la pieza `umami` en un flujo de Activepieces."
     }
    ],
    "notas": "Alternativas (elige una): plausible, matomo.",
    "fuentes": [
     "https://github.com/umami-software/umami/blob/master/README.md",
     "https://umami.is/docs",
-    "https://umami.is/docs/api"
+    "https://umami.is/docs/api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/umami"
    ],
    "github": {
     "name_with_owner": "umami-software/umami",
@@ -161,9 +127,9 @@
      "orden_instalacion": "Ejecuta el asistente y autoriza tu proyecto."
     },
     {
-     "id": "n8n",
-     "motivo": "Nodo nativo de PostHog en n8n.",
-     "orden_instalacion": "Configura las credenciales de PostHog en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "posthog en marcha con sus credenciales; después añade la pieza `posthog` en un flujo de Activepieces."
     },
     {
      "id": "metabase",
@@ -175,7 +141,8 @@
    "fuentes": [
     "https://github.com/PostHog/posthog/blob/master/README.md",
     "https://posthog.com/docs/model-context-protocol",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.posthog/"
+    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.posthog/",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/posthog"
    ],
    "github": {
     "name_with_owner": "PostHog/posthog",
@@ -193,9 +160,9 @@
    "como_lo_hace": "Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community Edition con Docker (Elixir/Phoenix con PostgreSQL y ClickHouse). Se integra añadiendo el script al sitio.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Automatizar informes con la Stats API. (combinación por arquitectura)",
-     "orden_instalacion": "Consulta la API desde el nodo HTTP Request."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces."
     },
     {
      "id": "grafana",
@@ -211,7 +178,8 @@
    "notas": "Alternativas (elige una): umami, matomo.",
    "fuentes": [
     "https://github.com/plausible/analytics/blob/master/README.md",
-    "https://plausible.io/docs/stats-api"
+    "https://plausible.io/docs/stats-api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/plausible"
    ],
    "github": {
     "name_with_owner": "plausible/analytics",
@@ -239,15 +207,16 @@
      "orden_instalacion": "Configura la fuente de datos en Grafana."
     },
     {
-     "id": "n8n",
-     "motivo": "Automatizar exportaciones con la Reporting API. (combinación por arquitectura)",
-     "orden_instalacion": "Usa el nodo HTTP Request con un token de Matomo."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces."
     }
    ],
    "notas": "Alternativas (elige una): umami, plausible.",
    "fuentes": [
     "https://github.com/matomo-org/matomo/blob/6.x-dev/README.md",
-    "https://developer.matomo.org/api-reference/reporting-api"
+    "https://developer.matomo.org/api-reference/reporting-api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/matomo"
    ],
    "github": {
     "name_with_owner": "matomo-org/matomo",
@@ -321,7 +290,7 @@
      "orden_instalacion": "Apunta Superset a la misma base."
     }
    ],
-   "notas": "Alternativas (elige una): pandas-ai. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago.",
+   "notas": "Sin alternativas declaradas. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago.",
    "fuentes": [
     "https://github.com/Canner/WrenAI/blob/main/README.md",
     "https://docs.getwren.ai"
@@ -425,9 +394,9 @@
      "orden_instalacion": "Conecta con un usuario de solo lectura."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Disparar flujos a partir de alertas de Redash. (combinación por arquitectura)",
-     "orden_instalacion": "Configura un webhook de alerta hacia n8n."
+     "orden_instalacion": "Configura un webhook de alerta hacia Activepieces."
     }
    ],
    "notas": "Alternativas (elige una): metabase, superset.",
@@ -442,42 +411,6 @@
     "license": "BSD-2-Clause",
     "primary_language": "TypeScript",
     "latest_release": "v26.9.0 (2026-09-24)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "pandas-ai": {
-   "que_es": "PandasAI, librería de Python para conversar con tus datos en lenguaje natural, de Sinaptik AI. Es MIT salvo `pandasai/ee` (GitHub muestra NOASSERTION). Tiene ~24k estrellas (v3.0.0), pero su último cambio es de octubre de 2025.",
-   "que_hace": "Permite hacer preguntas sobre DataFrames, CSV, Parquet y bases SQL y obtener respuestas, tablas o gráficos. Genera y ejecuta código para responder, y admite varios DataFrames a la vez. Puede ejecutar el código en un sandbox Docker.",
-   "como_lo_hace": "Se instala con `pip install pandasai pandasai-litellm` y requiere Python 3.8–3.11. Usa LiteLLM para conectar con distintos proveedores. Como ejecuta código generado por LLM, conviene usar el sandbox (`pandasai-docker`).",
-   "combina_con": [
-    {
-     "id": "litellm",
-     "motivo": "Conexión con modelos mediante el paquete `pandasai-litellm`.",
-     "orden_instalacion": "Instala ambos paquetes y configura el modelo."
-    },
-    {
-     "id": "duckdb",
-     "motivo": "Consultar archivos analíticos grandes. (combinación por arquitectura)",
-     "orden_instalacion": "Carga los datos con DuckDB y pásalos a PandasAI."
-    },
-    {
-     "id": "streamlit",
-     "motivo": "Interfaz web sencilla para preguntar a los datos. (combinación por arquitectura)",
-     "orden_instalacion": "Envuelve las llamadas a PandasAI en una app Streamlit."
-    }
-   ],
-   "notas": "Alternativas (elige una): wrenai. Sin cambios en más de un año; requiere Python ≤3.11.",
-   "fuentes": [
-    "https://github.com/sinaptik-ai/pandas-ai/blob/main/README.md",
-    "https://docs.pandas-ai.com/"
-   ],
-   "github": {
-    "name_with_owner": "sinaptik-ai/pandas-ai",
-    "archived": false,
-    "pushed_at": "2025-10-28",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "Python",
-    "latest_release": "v3.0.0 (2025-10-07)",
     "checked_at": "2026-11-15"
    }
   },

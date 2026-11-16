@@ -124,36 +124,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`
 **Alternativas (elige una):** `remotion`, `moviepy`
 
-## `hypit`
-role=skill · exec=local · setup=medium · mcp=False · prov=local · tags=generativo,skill,typescript
-
-**Qué es:** Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables.
-**Stack:** Agente compatible; modelo o proveedor configurado; video propio de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. La skill no añade cuota por asiento según el autor; los servicios de modelos sí cobran; admite APIs o modelos locales según tarea
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Dentro del agente: skills o instrucciones
-- Antigravity: Dentro del agente: skills o instrucciones
-- Modelos locales: Modelos locales documentados. Las promesas de viralidad no son resultados medidos para tu contenido; revisa permisos de imágenes, voces y clips utilizados
-- Coste: El coste depende del proveedor o la ruta. La skill no añade cuota por asiento según el autor; los servicios de modelos sí cobran; admite APIs o modelos locales según tarea
-- Equipo: Preparación según la ruta elegida. Agente compatible; modelo o proveedor configurado; video propio de prueba
-**Repo:** https://github.com/hypit-ai/hypit
-
-**Instalación** [+]:
-
-```
-npx skills add hypit-ai/hypit -g
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear versiones de un video propio; Coordinar subtítulos y B-roll de un tutorial
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Parte de un clip propio, cambia un rótulo y una toma y revisa el workflow antes de renderizar
-**Qué comprobar:** Puedes identificar los recursos y reproducir una variante del flujo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ffmpeg`, `comfyui`
-
 ## `lemo-opuscar`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
 

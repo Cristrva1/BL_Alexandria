@@ -28,7 +28,7 @@ Se instala con un script en Debian, Ubuntu, Raspberry Pi OS y similares, y requi
 |---|---|---|
 | [server](nextcloud-server.md) | Nube de archivos como app. (combinación por arquitectura) | Instala Nextcloud desde la tienda o como contenedor. |
 | [AdGuardHome](adguardhome.md) | DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura) | Instálalo como app. |
-| [n8n](n8n.md) | Automatizaciones en el servidor doméstico. (combinación por arquitectura) | Instálalo como contenedor. |
+| [activepieces](activepieces.md) | Automatizaciones en el servidor doméstico. (combinación por arquitectura) | Instálalo como contenedor. |
 
 **Notas:** Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.
 

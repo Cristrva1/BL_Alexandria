@@ -28,7 +28,6 @@ Aplicación Django con Celery y Redis/Valkey; el OCR se hace con OCRmyPDF (depen
 |---|---|---|
 | [OCRmyPDF](ocrmypdf.md) | Motor de OCR integrado. | Incluido; ajusta idiomas en la configuración. |
 | [Tesseract](tesseract.md) | Motor usado por OCRmyPDF; los idiomas se añaden como paquetes de Tesseract. | Define `PAPERLESS_OCR_LANGUAGES` antes del primer arranque. |
-| [n8n](n8n.md) | Subir documentos o reaccionar a nuevos archivos mediante su API REST (combinación por arquitectura). | Crea un token de API en Paperless antes del flujo. |
 | [ERPNext](erpnext.md) | Archivar facturas y justificantes que se registran en el ERP (combinación por arquitectura). | Define cuál es el sistema maestro de cada documento. |
 
 **Notas:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki.

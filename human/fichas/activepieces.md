@@ -30,7 +30,7 @@ Cada integración es una «pieza»: un paquete npm escrito en TypeScript con tip
 | [Claude Code](claude-code.md) | Las piezas se exponen como servidores MCP, así que un agente de código puede usar las integraciones de Activepieces como herramientas. | Activepieces en marcha; luego registra el servidor MCP de las piezas en el cliente. |
 | [litellm](litellm.md) | Centraliza las llamadas de IA de los flujos en un gateway compatible con OpenAI con presupuestos y registro de gasto (combinación por arquitectura). | LiteLLM primero; usa su URL y una clave virtual en las piezas que acepten un endpoint compatible con OpenAI. |
 
-**Notas:** Alternativa (elige una): n8n. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.
+**Notas:** Sin alternativas declaradas. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 0.93.0 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -98,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker Compose con PostgreSQL y Redis, o una cuenta alojada
 - **Etiquetas:** `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

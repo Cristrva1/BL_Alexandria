@@ -4,11 +4,11 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-47 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+44 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
-[n8n](../fichas/n8n.md), [chatwoot](../fichas/chatwoot.md), [twenty-main](../fichas/twenty-main.md)
+[activepieces](../fichas/activepieces.md), [chatwoot](../fichas/chatwoot.md), [twenty-main](../fichas/twenty-main.md)
 
 Son opciones para comparar. No es necesario instalar todas.
 
@@ -18,14 +18,13 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [activepieces](../fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
-| [n8n](../fichas/n8n.md) | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. | API de IA opcional |
 | [Node-RED](../fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica |
 | [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 | [Trigger.dev](../fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional |
@@ -35,14 +34,11 @@ Elegir el motor que coordina tareas entre aplicaciones.
 
 Recursos específicos para construir y mantener flujos de n8n.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-n8n)
+[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-n8n)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Awesome n8n Templates](../fichas/awesome-n8n-templates.md) | Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. | Depende de la ruta elegida |
-| [n8n](../fichas/n8n.md) | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. | API de IA opcional |
-| [n8n-mcp](../fichas/n8n-mcp.md) | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. | Sin clave propia de API de IA en la ruta básica |
-| [n8n-skills](../fichas/n8n-skills.md) | Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas. | Sin clave propia de API de IA en la ruta básica |
 | [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 
 ### WhatsApp y pasarelas de mensajería

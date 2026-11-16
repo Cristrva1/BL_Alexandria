@@ -4,7 +4,7 @@
 
 Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.
 
-13 repos · 3 secciones
+11 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -17,8 +17,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Entender y empaquetar código para agentes](#entender-y-empaquetar-código-para-agentes) — 8 repos
-- [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 3 repos
+- [Entender y empaquetar código para agentes](#entender-y-empaquetar-código-para-agentes) — 7 repos
+- [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 2 repos
 - [CLIs y SDKs de desarrollo](#clis-y-sdks-de-desarrollo) — 2 repos
 
 ## Entender y empaquetar código para agentes
@@ -31,7 +31,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [codebase-memory-mcp](../fichas/codebase-memory-mcp.md) | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. | Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio | API de IA opcional |
 | [GitNexus](../fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización | Sin clave propia de API de IA en la ruta básica |
 | [tree-sitter](../fichas/tree-sitter.md) | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. | Tu objetivo encaja con estos ejemplos: Construir un analizador de código; Extraer símbolos para una herramienta de edición | Sin clave propia de API de IA en la ruta básica |
-| [DeepWiki Open](../fichas/deepwiki-open.md) | Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki. | Tu objetivo encaja con estos ejemplos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto | Depende de la ruta elegida |
 | [floorplan](../fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Tu objetivo encaja con estos ejemplos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz | Sin clave propia de API de IA en la ruta básica |
 
 ## Calidad, seguridad y benchmarks de código
@@ -40,7 +39,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [ast-grep](../fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Tu objetivo encaja con estos ejemplos: Migrar llamadas de una API; Aplicar reglas de lint personalizadas | Sin clave propia de API de IA en la ruta básica |
 | [SWE-bench](../fichas/swe-bench.md) | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | Tu objetivo encaja con estos ejemplos: Comparar soluciones a issues reproducibles; Estudiar evaluación de agentes de programación | API de IA opcional |
-| [dsh-qa](../fichas/dsh-qa.md) | Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles. | Tu objetivo encaja con estos ejemplos: Repetir una prueba de registro en desarrollo; Guardar evidencia de un fallo de interfaz | Sin clave propia de API de IA en la ruta básica |
 
 ## CLIs y SDKs de desarrollo
 

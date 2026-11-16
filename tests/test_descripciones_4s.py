@@ -53,10 +53,10 @@ def test_ficha_renders_four_sections(tmp_path):
     for name in ("INDICE_IA.json", "INDICE_IA.detalle.json", "README.md", "AGENTS.md"):
         shutil.copy(ROOT / name, tmp_path / name)
     render_all(tmp_path)
-    text = (tmp_path / "human" / "fichas" / "n8n.md").read_text(encoding="utf8")
+    text = (tmp_path / "human" / "fichas" / "ollama.md").read_text(encoding="utf8")
     for heading in ("## ¿Qué es?", "## ¿Qué hace?", "## ¿Cómo lo hace?", "## ¿Con qué otros repos se combina?"):
         assert heading in text
-    assert "[n8n-mcp](n8n-mcp.md)" in text
+    assert "(open-webui.md)" in text
     assert "## Cómo funciona" not in text  # el texto genérico se sustituye
     pending = [r for r in load_catalog(ROOT).repos if not r.get("combina_con") and not r.get("alias_of") and r.get("doc")]
     if pending:  # sin datos curados, la ficha conserva el formato anterior
@@ -66,7 +66,7 @@ def test_ficha_renders_four_sections(tmp_path):
 
 def test_web_catalog_exposes_four_sections():
     data = build_catalog(ROOT)
-    n8n = next(repo for repo in data["repos"] if repo["id"] == "n8n")
+    n8n = next(repo for repo in data["repos"] if repo["id"] == "ollama")
     assert n8n["que_es"] and n8n["como_lo_hace"]
     assert {"id", "motivo"} <= set(n8n["combina_con"][0])
 

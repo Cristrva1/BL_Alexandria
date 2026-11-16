@@ -4,7 +4,7 @@
 
 Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.
 
-22 repos · 6 secciones
+21 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Analítica web y de producto](#analítica-web-y-de-producto) — 4 repos
-- [BI, dashboards y chat con datos](#bi-dashboards-y-chat-con-datos) — 6 repos
+- [BI, dashboards y chat con datos](#bi-dashboards-y-chat-con-datos) — 5 repos
 - [Librerías de gráficos](#librerías-de-gráficos) — 5 repos
 - [Recursos y casos de uso](#recursos-y-casos-de-uso) — 2 repos
 - [Inteligencia de fuentes abiertas y mapas](#inteligencia-de-fuentes-abiertas-y-mapas) — 3 repos
@@ -44,7 +44,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Grafana](../fichas/grafana.md) | Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. | Tu objetivo encaja con estos ejemplos: Observar consumo de un servicio; Compartir métricas de una operación | Sin clave propia de API de IA en la ruta básica |
 | [metabase](../fichas/metabase.md) | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. | Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo | Sin clave propia de API de IA en la ruta básica |
 | [Redash](../fichas/redash.md) | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. | Tu objetivo encaja con estos ejemplos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL | Sin clave propia de API de IA en la ruta básica |
-| [PandasAI](../fichas/pandas-ai.md) | Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM. | Tu objetivo encaja con estos ejemplos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta | Depende de la ruta elegida |
 
 ## Librerías de gráficos
 

@@ -27,14 +27,15 @@ Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [supabase](supabase.md) | Autoalojar Supabase como servicio. (combinación por arquitectura) | Despliega Supabase desde Coolify. |
-| [n8n](n8n.md) | Autoalojar n8n. (combinación por arquitectura) | Despliega n8n desde Coolify. |
+| [activepieces](activepieces.md) | Coolify trae plantillas de servicio oficiales para desplegar Activepieces (y también Windmill) con un clic. | Coolify primero; luego despliega la plantilla `activepieces`. |
+| [Windmill](windmill.md) | Plantilla de servicio oficial de Coolify para Windmill. | Coolify primero; luego despliega la plantilla `windmill`. |
 | [FreeDomain](freedomain.md) | Dominio gratuito para las apps. (combinación por arquitectura) | Apunta el DNS al servidor. |
 
 **Notas:** Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.7.5 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/coollabsio/coolify/blob/main/README.md) · [2](https://coolify.io/docs/installation)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/coollabsio/coolify/blob/main/README.md) · [2](https://coolify.io/docs/installation) · [3](https://github.com/coollabsio/coolify/tree/main/templates/compose)</sub>
 
 ## Acceso, coste y equipo
 

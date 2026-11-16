@@ -32,7 +32,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El historial del flujo muestra la entrada y la salida de la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `nocodb`, `claude-code`, `litellm`
-**Alternativas (elige una):** `n8n`
 
 ## `appsmith`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ui,automation,typescript,docker
@@ -62,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade una tabla a una página y asóciala a una consulta de datos ficticios
 **Qué comprobar:** La tabla se actualiza al ejecutar la consulta y muestra los registros esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `supabase`, `n8n`, `metabase`
+**Combina con:** `supabase`, `activepieces`, `metabase`
 **Alternativas (elige una):** `tooljet`, `budibase`, `nocodb`
 
 ## `awesome-n8n-templates`
@@ -93,7 +92,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Importa una plantilla JSON en un flujo desactivado y revisa sus nodos
 **Qué comprobar:** El lienzo muestra los pasos y puedes identificar qué credenciales faltan
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-mcp`, `n8n-skills`, `self-hosted-ai-starter-kit`
+**Combina con:** `self-hosted-ai-starter-kit`
 
 ## `budibase`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,docker
@@ -123,7 +122,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una aplicación con un formulario y una tabla de registros
 **Qué comprobar:** Un envío del formulario aparece en la tabla de la aplicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `supabase`, `n8n`, `ollama`
+**Combina con:** `supabase`, `activepieces`, `ollama`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
 
 ## `huginn`
@@ -155,7 +154,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Aparece un evento con el título y enlace de una publicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `coolify`, `changedetection`
-**Alternativas (elige una):** `n8n`, `node-red`
+**Alternativas (elige una):** `node-red`
 
 ## `kestra`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=automation,data,java,docker
@@ -195,126 +194,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `superset`, `claude-code`, `ollama`
 **Alternativas (elige una):** `windmill`, `trigger-dev`
 
-## `n8n`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,docker
-
-**Qué es:** Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos.
-**Stack:** Docker activo;  una carpeta para datos de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. Autoalojar consume equipo o servidor; n8n Cloud y las APIs conectadas tienen tarifas separadas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Ollama está documentado por n8n; el agente que diseña el flujo no paga automáticamente sus llamadas de IA
-- Coste: El coste depende del proveedor o la ruta. Autoalojar consume equipo o servidor; n8n Cloud y las APIs conectadas tienen tarifas separadas
-- Equipo: Preparación según la ruta elegida. Docker activo;  una carpeta para datos de prueba
-**Repo:** https://github.com/n8n-io/n8n
-
-**Instalación** [+]:
-
-```
-docker volume create n8n_data
-docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Un formulario de contacto genera un registro para seguimiento comercial; Un flujo resume documentos con Ollama en lugar de una API remota
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Crea un flujo manual que devuelva un texto y ejecútalo en el editor
-**Qué comprobar:** La ejecución termina y su salida contiene el texto que escribiste
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n-mcp`, `n8n-skills`, `evolution-api`, `ollama`, `qdrant`
-**Alternativas (elige una):** `activepieces`, `huginn`, `windmill`, `node-red`
-
-## `n8n-io`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,docker
-
-**Qué es:** No aporta nada distinto a la ficha principal.
-**Stack:** Node.js, TypeScript
-**Acceso y costes:**
-- API de IA: API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local.
-- Coste: Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste.
-- Equipo: Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar.
-**Repo:** https://github.com/n8n-io/n8n
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/n8n-io/n8n
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** — **Evita si:** ya usas la ficha n8n (es el mismo proyecto)
-**Evita si:** ya usas la ficha n8n (es el mismo proyecto)
-**Combina con:** `n8n`
-
-## `n8n-mcp`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,mcp,typescript
-
-**Qué es:** Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows.
-**Stack:** Cliente MCP;  n8n y sus credenciales solo para operar una instancia
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
-- Coste: El coste depende del proveedor o la ruta. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura
-- Equipo: Preparación según la ruta elegida. Cliente MCP;  n8n y sus credenciales solo para operar una instancia
-**Repo:** https://github.com/czlonkowski/n8n-mcp
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/czlonkowski/n8n-mcp/blob/main/docs/SELF_HOSTING.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Investigar por qué falló una ejecución de un flujo propio; Preparar y validar un flujo de prueba con ayuda del agente
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Pide al cliente buscar un nodo de n8n y consultar su esquema antes de editar un flujo
-**Qué comprobar:** La respuesta contiene las propiedades del nodo y una validación comprensible
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-skills`, `claude-code`, `mcp-inspector`
-
-## `n8n-skills`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,automation
-
-**Qué es:** Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas.
-**Stack:** Claude Code o cliente compatible;  n8n-mcp configurado para las herramientas
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Las instrucciones consumen el agente anfitrión; n8n, conectores y modelos usados por el flujo tienen costes propios
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Dentro del agente: skills o instrucciones
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. El README documenta hooks para Claude Code y Codex; la portabilidad a otros hosts no prueba su instalación en Antigravity
-- Coste: Consumo del agente que ya utilizas. Las instrucciones consumen el agente anfitrión; n8n, conectores y modelos usados por el flujo tienen costes propios
-- Equipo: Preparación según la ruta elegida. Claude Code o cliente compatible;  n8n-mcp configurado para las herramientas
-**Repo:** https://github.com/czlonkowski/n8n-skills
-
-**Instalación** [+]:
-
-```
-# Install directly as a Claude Code plugin
-/plugin install czlonkowski/n8n-skills
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Corregir una expresión que no encuentra un campo de entrada; Elegir nodos y validar un flujo antes de activarlo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Pide revisar una expresión de un flujo pequeño sin desplegarlo
-**Qué comprobar:** El agente identifica la skill pertinente y propone una corrección justificable
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n-mcp`, `n8n`, `claude-code`, `awesome-n8n-templates`
-
 ## `nocodb`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=data,automation,docker
 
@@ -347,7 +226,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una tabla con nombre y estado e introduce dos registros de prueba
 **Qué comprobar:** Puedes editar los registros y filtrarlos por su estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `activepieces`, `metabase`
+**Combina con:** `activepieces`, `metabase`, `coolify`
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `node-red`
@@ -379,7 +258,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El panel Debug muestra el mensaje que inyectaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `home-assistant`, `ollama`, `grafana`
-**Alternativas (elige una):** `n8n`, `huginn`
+**Alternativas (elige una):** `huginn`
 
 ## `self-hosted-ai-starter-kit`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,local,rag,docker
@@ -412,7 +291,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre n8n y ejecuta el flujo local incluido con una pregunta sencilla
 **Qué comprobar:** El flujo devuelve una respuesta usando el servicio Ollama del stack
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n-mcp`, `open-webui`, `docling`, `awesome-n8n-templates`
+**Combina con:** `open-webui`, `docling`, `awesome-n8n-templates`
 
 ## `tooljet`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=ui,automation,docker
@@ -442,7 +321,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una página con una tabla y enlázala a un pequeño conjunto de datos
 **Qué comprobar:** La tabla muestra los datos y puedes revisar la consulta que los obtiene
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `n8n`
+**Combina con:** `claude-code`, `codex`, `activepieces`
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `trigger-dev`
@@ -509,4 +388,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La ejecución guarda el resultado del script y sus logs
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `claude-code`, `polars`
-**Alternativas (elige una):** `n8n`, `kestra`, `trigger-dev`
+**Alternativas (elige una):** `kestra`, `trigger-dev`

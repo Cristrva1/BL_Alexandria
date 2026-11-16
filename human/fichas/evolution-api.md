@@ -26,7 +26,6 @@ Servidor Node.js 20+ en TypeScript con Express y Prisma sobre PostgreSQL o MySQL
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Pone la lógica del bot en un flujo visual: recibe el webhook del mensaje, consulta un modelo o un CRM y responde por la API de Evolution. | Independientes; configura el webhook de la instancia hacia n8n después de levantar ambos. |
 | [chatwoot](chatwoot.md) | Integración nativa: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot para que las atiendan personas. | Chatwoot primero; después configura la integración Chatwoot en la instancia de Evolution con la URL y las credenciales de tu cuenta. |
 | [Typebot](typebot.md) | Integración nativa con gestión de disparadores para flujos conversacionales visuales sin programar. | Typebot primero; luego vincula el bot a la instancia. |
 | [dify](dify.md) | Integración nativa para responder con agentes o RAG construidos en Dify. | Dify primero, con su app publicada; luego conéctala a la instancia. |

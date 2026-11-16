@@ -618,7 +618,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inserta tres vectores pequeños con etiquetas y consulta el más parecido con un filtro
 **Qué comprobar:** La búsqueda devuelve el registro esperado y respeta el filtro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`, `n8n`, `llama-index`, `langchain`, `crawl4ai`
+**Combina con:** `docling`, `activepieces`, `llama-index`, `langchain`, `crawl4ai`
 **Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`
 
 ## `ragflow`
@@ -649,7 +649,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un PDF propio corto y pregunta por un dato identificable con cita
 **Qué comprobar:** La respuesta permite abrir el fragmento y comprobar su procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `n8n`, `langfuse`
+**Combina con:** `ollama`, `activepieces`, `langfuse`
 **Alternativas (elige una):** `dify`, `lightrag`
 
 ## `supermemory`

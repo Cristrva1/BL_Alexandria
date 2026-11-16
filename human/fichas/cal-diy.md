@@ -26,7 +26,7 @@ Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | n8n tiene un disparador de Cal.com para reaccionar a reservas, cancelaciones o reprogramaciones; con cal.diy hay que apuntarlo a tu instancia [DATO NO VERIFICADO: compatibilidad con instancia propia]. | cal.diy accesible para n8n y clave de API; después el disparador. |
+| [activepieces](activepieces.md) | Reaccionar a reservas, cancelaciones o reprogramaciones recibiendo los webhooks de cal.diy en un disparador Webhook de Activepieces. (combinación por arquitectura) | Configura el webhook en tu instancia de cal.diy apuntando a la URL del flujo. |
 | [twenty-main](twenty-main.md) | Registrar cada reserva como actividad u oportunidad en el CRM (combinación por arquitectura, con webhooks y un flujo intermedio). | Configura el webhook de cal.diy hacia el flujo que escribe en Twenty. |
 | [Botpress](botpress.md) | Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO]. | Instancia accesible por internet y token de API antes de configurar la integración. |
 

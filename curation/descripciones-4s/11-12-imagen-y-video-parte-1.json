@@ -191,41 +191,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "open-generative-ai": {
-   "que_es": "Open Generative AI, estudio de imagen y vídeo con IA de @Anil-matcha, impulsado por MuAPI. Licencia MIT. Es popular (~35k estrellas, v2.0.0) y el README promociona la marca blanca de pago de MuAPI.",
-   "que_hace": "Reúne 14 «estudios» (imagen, vídeo, audio, lip sync, clipping, agentes, MCP y CLI) con acceso a más de 600 modelos a través de la API de pago de MuAPI y se anuncia como «sin filtros de contenido». También ofrece inferencia local con sd.cpp (SD 1.5, SDXL, Z-Image) y con una instalación propia de Wan2GP, local o remota por MCP.",
-   "como_lo_hace": "Se usa en el navegador o como app de escritorio (el instalador de Windows no está firmado, lo que provoca avisos de SmartScreen). Los modelos en la nube requieren clave de MuAPI con coste por uso.",
-   "combina_con": [
-    {
-     "id": "wan2gp",
-     "motivo": "Integración documentada con Wan2GP local o remoto por MCP.",
-     "orden_instalacion": "Instala Wan2GP y configura su carpeta o su URL MCP."
-    },
-    {
-     "id": "remotion",
-     "motivo": "Componer en código los clips generados. (combinación por arquitectura)",
-     "orden_instalacion": "Exporta los clips y móntalos con Remotion."
-    },
-    {
-     "id": "ffmpeg",
-     "motivo": "Convertir y unir los resultados. (combinación por arquitectura)",
-     "orden_instalacion": "Procesa las salidas con FFmpeg."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: funciona sobre todo como escaparate de una API de pago; «sin filtros de contenido» plantea riesgos de uso indebido.",
-   "fuentes": [
-    "https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "Anil-matcha/Open-Generative-AI",
-    "archived": false,
-    "pushed_at": "2026-11-15",
-    "license": "MIT",
-    "primary_language": "JavaScript",
-    "latest_release": "v2.0.0 (2026-05-23)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "ffmpeg": {
    "que_es": "FFmpeg, conjunto de librerías y herramientas para procesar contenido multimedia. Licencia mayoritariamente LGPL con componentes opcionales GPL (GitHub muestra NOASSERTION). Es infraestructura fundamental (~67k estrellas en el espejo de GitHub).",
    "que_hace": "Convierte, corta, filtra, codifica, decodifica y transmite audio, vídeo y subtítulos. Lo forman libavcodec, libavformat, libavfilter, libavdevice, libswresample, libswscale y libavutil, y las herramientas `ffmpeg`, `ffplay` y `ffprobe`. Casi todas las herramientas de vídeo y audio con IA dependen de él.",
@@ -442,41 +407,6 @@
     "license": "MIT",
     "primary_language": "Python",
     "latest_release": "v5.2.11 (2026-11-14)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "palmier-pro": {
-   "que_es": "Palmier Pro, editor de vídeo para macOS con IA y MCP, de Palmier. El código hasta la v0.7.6 (rama `last-gpl-source`) se publicó con GPLv3; las versiones posteriores son binarios propietarios sin código publicado. Tiene ~15k estrellas (v0.12.1).",
-   "que_hace": "Combina un editor de línea de tiempo con generación por IA integrada y un agente en la app. Mientras está abierto expone un servidor MCP en `http://127.0.0.1:19789/mcp` para que Claude, Codex o Cursor creen y editen en la línea de tiempo.",
-   "como_lo_hace": "Requiere macOS 26 (Tahoe) en Apple Silicon. Se conecta con `claude mcp add --transport http palmier-pro …` o `codex mcp add palmier-pro --url …`. El repositorio solo aloja releases binarias y el código GPL histórico.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Conexión MCP documentada.",
-     "orden_instalacion": "Abre la app y añade el servidor MCP HTTP."
-    },
-    {
-     "id": "codex",
-     "motivo": "Conexión MCP documentada.",
-     "orden_instalacion": "Ejecuta `codex mcp add palmier-pro --url …`."
-    },
-    {
-     "id": "ffmpeg",
-     "motivo": "Preparar medios antes de importarlos. (combinación por arquitectura)",
-     "orden_instalacion": "Convierte los formatos no soportados con FFmpeg."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: el producto actual es propietario.",
-   "fuentes": [
-    "https://github.com/palmier-io/palmier-pro/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "palmier-io/palmier-pro",
-    "archived": false,
-    "pushed_at": "2026-11-02",
-    "license": "GPL-3.0",
-    "primary_language": "Swift",
-    "latest_release": "v0.12.1 (2026-11-02)",
     "checked_at": "2026-11-15"
    }
   },

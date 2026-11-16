@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta el ejemplo de conexión y observa cambios de estado sin programar envíos
 **Qué comprobar:** Puedes reconocer conexión, desconexión y datos de sesión persistidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `evolution-api`, `n8n`, `litellm`
+**Combina con:** `evolution-api`, `activepieces`, `litellm`
 **Alternativas (elige una):** `whatsapp-web-js`, `waha`
 
 ## `botpress`
@@ -62,7 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una integración con bp init y revisa su definición antes de desplegarla
 **Qué comprobar:** Puedes identificar eventos, acciones y configuración de la integración
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `odoo`, `cal.diy`
+**Combina con:** `activepieces`, `odoo`, `cal.diy`
 
 ## `evolution-api`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,whatsapp,typescript,docker
@@ -92,7 +92,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura una instancia de ensayo y consulta su estado antes de habilitar webhooks o respuestas
 **Qué comprobar:** Puedes identificar motor, instancia y permisos de acceso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `chatwoot`, `typebot`, `dify`
+**Combina con:** `chatwoot`, `typebot`, `dify`
 **Alternativas (elige una):** `whatsapp-web-js`, `waha`
 
 ## `fluxer`
@@ -123,7 +123,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una comunidad de ensayo y comprueba permisos de un canal y una llamada de prueba
 **Qué comprobar:** Puedes distinguir miembros, canales y permisos configurados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `ollama`, `coolify`
+**Combina con:** `activepieces`, `ollama`, `coolify`
 
 ## `openwa`
 role=platform · exec=local · setup=easy · mcp=True · prov=— · tags=whatsapp,chatbot,typescript
@@ -161,7 +161,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el dashboard y consulta el estado de una sesión de prueba antes de automatizar mensajes
 **Qué comprobar:** Puedes ver sesión, API y permisos del usuario configurado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `chatwoot`, `typebot`, `n8n`, `claude-code`
+**Combina con:** `chatwoot`, `typebot`, `claude-code`
 
 ## `typebot`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=chatbot,automation,typescript
@@ -191,7 +191,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un flujo de dos preguntas con respuestas fijas y comprueba la rama elegida
 **Qué comprobar:** El resultado guarda respuestas y recorre el camino esperado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `evolution-api`, `chatwoot`, `n8n`, `openwa`
+**Combina con:** `evolution-api`, `chatwoot`, `openwa`
 
 ## `waha`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,automation,docker
@@ -221,7 +221,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el panel del contenedor de ensayo y comprueba estado de sesión y autenticación
 **Qué comprobar:** Puedes reconocer qué motor y sesión están configurados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `chatwoot`, `typebot`
+**Combina con:** `activepieces`, `chatwoot`, `typebot`
 **Alternativas (elige una):** `evolution-api`, `whatsapp-web-js`, `baileys`
 
 ## `whatsapp-agentkit`
@@ -284,7 +284,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicia el ejemplo y comprueba estado de autenticación antes de habilitar respuestas automáticas
 **Qué comprobar:** Puedes distinguir sesión vinculada y eventos recibidos en el entorno de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `ollama`, `chatwoot`
+**Combina con:** `activepieces`, `ollama`, `chatwoot`
 **Alternativas (elige una):** `baileys`, `waha`, `evolution-api`
 
 ## `whatsmeow`
@@ -315,4 +315,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue el ejemplo de conexión y comprueba los eventos y la sesión guardada
 **Qué comprobar:** Puedes reconocer el estado del cliente multidispositivo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `ollama`, `chatwoot`
+**Combina con:** `activepieces`, `ollama`, `chatwoot`

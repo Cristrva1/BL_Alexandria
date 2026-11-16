@@ -31,7 +31,7 @@ Cada agente crea y consume eventos que se propagan por un grafo dirigido; la ló
 | [coolify](coolify.md) | El README indica que los archivos Compose de Huginn funcionan en plataformas autoalojadas que despliegan desde Compose, como Coolify. | Coolify instalado en el servidor; después crea el servicio desde el Compose de Huginn y define la base de datos y el worker siempre activo. |
 | [changedetection.io](changedetection.md) | Changedetection vigila cambios visuales o de texto en páginas complejas y puede notificar por webhook a Huginn, que encadena acciones posteriores (combinación por arquitectura). | Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos. |
 
-**Notas:** Alternativas (elige una): n8n, node-red.
+**Notas:** Alternativas (elige una): node-red.
 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v2026.11.09 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -111,7 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | [Node-RED](node-red.md) | 23.8k | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. |
 
 ## Enlaces

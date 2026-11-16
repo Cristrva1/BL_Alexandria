@@ -26,7 +26,6 @@ Se clona el repositorio, se copia `.env.example` a `.env` (cambiando secretos y 
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n-mcp](n8n-mcp.md) | Permite que un agente de código cree, valide y depure flujos dentro del n8n del kit mediante su API pública. | Levanta el kit, activa la Public API de n8n y crea una API key; después conecta n8n-mcp. |
 | [Open WebUI](open-webui.md) | Añade una interfaz de chat que reutiliza el Ollama del kit para conversar con los mismos modelos (combinación por arquitectura). | Kit primero; inicia Open WebUI con `OLLAMA_BASE_URL` apuntando al Ollama del kit y en un puerto distinto de 5678. |
 | [Docling](docling.md) | Convierte PDF y documentos de oficina en Markdown limpio antes de vectorizarlos en el Qdrant del kit (combinación por arquitectura). | Instala Docling o docling-serve aparte y llámalo desde n8n por HTTP o desde un script. |
 | [Awesome n8n Templates](awesome-n8n-templates.md) | Colección de flujos importables para aprender patrones sobre el n8n del kit. | Después de levantar el kit; importa, revisa credenciales y prueba cada plantilla antes de activarla. |

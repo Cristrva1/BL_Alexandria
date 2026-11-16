@@ -4,7 +4,7 @@
 
 Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Para leer páginas estáticas consulta extracción web; para operar una interfaz empieza por estas herramientas.
 
-12 repos · 4 secciones
+11 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Automatización y pruebas por código](#automatización-y-pruebas-por-código) — 3 repos
 - [Herramientas de navegación para agentes](#herramientas-de-navegación-para-agentes) — 6 repos
-- [Navegadores y servidores de ejecución](#navegadores-y-servidores-de-ejecución) — 2 repos
+- [Navegadores y servidores de ejecución](#navegadores-y-servidores-de-ejecución) — 1 repos
 - [Directorios y recursos de navegador](#directorios-y-recursos-de-navegador) — 1 repos
 
 ## Automatización y pruebas por código
@@ -45,7 +45,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [Lightpanda](../fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | Tu objetivo encaja con estos ejemplos: Preparar navegación headless; Explorar un agente con modelo local | API de IA opcional |
-| [camofox-browser](../fichas/camofox-browser.md) | Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. | Tu objetivo encaja con estos ejemplos: Probar automatización de una web propia; Evaluar una herramienta de navegación para agentes | Sin clave propia de API de IA en la ruta básica |
 
 ## Directorios y recursos de navegador
 

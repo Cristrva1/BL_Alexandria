@@ -27,7 +27,7 @@ Tiene bindings para Java, Python, C#, Ruby y JavaScript, y Selenium Manager gest
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [mitmproxy](mitmproxy.md) | Inspección de tráfico en pruebas. (combinación por arquitectura) | Configura el proxy en el navegador. |
-| [n8n](n8n.md) | Orquestar scripts de automatización. (combinación por arquitectura) | Lanza los scripts desde workflows. |
+| [activepieces](activepieces.md) | Orquestar scripts de automatización. (combinación por arquitectura) | Lanza los scripts desde flujos de Activepieces. |
 | [Claude Code](claude-code.md) | Generar y mantener pruebas. (combinación por arquitectura) | Pide al agente las pruebas WebDriver. |
 
 **Notas:** Alternativas (elige una): playwright, puppeteer.

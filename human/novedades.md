@@ -23,7 +23,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [universal-android-debloater-next-generation](fichas/universal-android-debloater-next-generation.md) | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [unity-mcp](fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [UI SDK (Vercel)](fichas/ui-sdk.md) | Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [treg](fichas/treg.md) | Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores. | Depende de la ruta elegida |
 | 2026-11-14 | [transformers.js](fichas/transformers-js.md) | Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [train-llm-from-scratch](fichas/train-llm-from-scratch.md) | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [TradingAgents](fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Depende de la ruta elegida |
@@ -47,7 +46,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [security-audit-skill](fichas/security-audit-skill.md) | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [scientific-agent-skills](fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | API de IA opcional |
 | 2026-11-14 | [scenejs](fichas/scenejs.md) | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [RuView](fichas/ruview.md) | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. | API de IA opcional |
 | 2026-11-14 | [rubberband](fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [rtk](fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | API de IA opcional |
 | 2026-11-14 | [rnnoise](fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Sin clave propia de API de IA en la ruta básica |
@@ -66,14 +64,11 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [plugins](fichas/plugins.md) | Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [planck.js](fichas/planck-js.md) | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [pixelfx](fichas/pixelfx.md) | Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | API de IA opcional |
-| 2026-11-14 | [PixelFund-AI](fichas/pixelfund-ai.md) | Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | API de IA opcional |
-| 2026-11-14 | [pixel-hedge-fund](fichas/pixel-hedge-fund.md) | Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [pencil](fichas/pencil.md) | Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [pdf-craft](fichas/pdf-craft.md) | Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. | Depende de la ruta elegida |
 | 2026-11-14 | [Papermorph](fichas/papermorph.md) | Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales. | API de IA opcional |
 | 2026-11-14 | [paperless-ngx](fichas/paperless-ngx.md) | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [paperclip](fichas/paperclip.md) | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. | API de IA opcional |
-| 2026-11-14 | [palmier-pro](fichas/palmier-pro.md) | Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. | API de IA opcional |
 | 2026-11-14 | [ozz-animation](fichas/ozz-animation.md) | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [osiris](fichas/osiris.md) | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. | API de IA opcional |
 | 2026-11-14 | [optimizerDuck](fichas/optimizerduck.md) | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | Sin clave propia de API de IA en la ruta básica |
@@ -86,7 +81,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [OpenDots](fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | API de IA necesaria |
 | 2026-11-14 | [OpenCursor](fichas/opencursor.md) | Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. | API de IA opcional |
 | 2026-11-14 | [opencode-manager](fichas/opencode-manager.md) | Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. | Depende de la ruta elegida |
-| 2026-11-14 | [openclaude](fichas/openclaude.md) | Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. | API de IA opcional |
 | 2026-11-14 | [open-sol-bot](fichas/open-sol-bot.md) | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [open-seo](fichas/open-seo.md) | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [onyx](fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Depende de la ruta elegida |
@@ -104,7 +98,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [no-ai-slop](fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [server](fichas/nextcloud-server.md) | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [nautilus_trader](fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [Music-Megathread](fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [motionmaxxing](fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
 | 2026-11-14 | [motion-design-skill](fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [modern-web-guidance](fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Sin clave propia de API de IA en la ruta básica |
@@ -141,7 +134,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [ImHex](fichas/imhex.md) | Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [ILSpy](fichas/ilspy.md) | Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [i-have-adhd](fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [hypit](fichas/hypit.md) | Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables. | API de IA opcional |
 | 2026-11-14 | [hummingbot](fichas/hummingbot.md) | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias configurables. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [hudi](fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [huashu-motion](fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Sin clave propia de API de IA en la ruta básica |
@@ -159,7 +151,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [ghidra](fichas/ghidra.md) | Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [genjutsu](fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [gemini-skills](fichas/gemini-skills.md) | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [fugu](fichas/fugu.md) | Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API. | API de IA necesaria |
 | 2026-11-14 | [Front-End-Checklist](fichas/front-end-checklist.md) | Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. | API de IA opcional |
 | 2026-11-14 | [frida](fichas/frida.md) | Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su ejecución. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [freqtrade](fichas/freqtrade.md) | Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simulación. | API de IA opcional |
@@ -176,11 +167,7 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [edge-tts](fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [EasyMocap](fichas/easymocap.md) | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [earshot](fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional |
-| 2026-11-14 | [dsh-qa](fichas/dsh-qa.md) | Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [dsh-noema](fichas/dsh-noema.md) | Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [dsh-ios](fichas/dsh-ios.md) | Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [dsh-game-studio](fichas/dsh-game-studio.md) | Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente. | API de IA opcional |
-| 2026-11-14 | [dsh-android](fichas/dsh-android.md) | Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [dream-loop](fichas/dream-loop.md) | Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales. | API de IA opcional |
 | 2026-11-14 | [dograh](fichas/dograh.md) | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | Depende de la ruta elegida |
 | 2026-11-14 | [docuseal](fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica |
@@ -195,10 +182,8 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [craft-anything](fichas/craft-anything.md) | Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes. | Depende de la ruta elegida |
 | 2026-11-14 | [coolify](fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [Concat](fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [company-pixel-office](fichas/company-pixel-office.md) | Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [crm](fichas/compai-crm.md) | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. | API de IA opcional |
 | 2026-11-14 | [codex-plugin-cc](fichas/codex-plugin-cc.md) | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. | API de IA opcional |
-| 2026-11-14 | [codex-chatgpt-web](fichas/codex-chatgpt-web.md) | Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [cloud-mail](fichas/cloud-mail.md) | Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [cleanyourtv](fichas/cleanyourtv.md) | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [claude-token-efficient](fichas/claude-token-efficient.md) | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. | Sin clave propia de API de IA en la ruta básica |
@@ -216,7 +201,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [chatbox](fichas/chatbox.md) | Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. | API de IA opcional |
 | 2026-11-14 | [ccxt](fichas/ccxt.md) | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [CasaOS](fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [camofox-browser](fichas/camofox-browser.md) | Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [cal.diy](fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [brag](fichas/brag.md) | Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | API de IA opcional |
 | 2026-11-14 | [book-to-skill](fichas/book-to-skill.md) | Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | Sin clave propia de API de IA en la ruta básica |
@@ -329,7 +313,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [PEFT](fichas/peft.md) | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [PDFMathTranslate](fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida |
 | 2026-11-10 | [Pandoc](fichas/pandoc.md) | Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y decenas de formatos. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-10 | [PandasAI](fichas/pandas-ai.md) | Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM. | Depende de la ruta elegida |
 | 2026-11-10 | [PageIndex](fichas/pageindex.md) | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. | Depende de la ruta elegida |
 | 2026-11-10 | [PaddleOCR](fichas/paddleocr.md) | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Opik](fichas/opik.md) | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. | API de IA opcional |
@@ -410,7 +393,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [DuckDB](fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [DSPy](fichas/dspy.md) | Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano. | Depende de la ruta elegida |
 | 2026-11-10 | [Docling](fichas/docling.md) | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | API de IA opcional |
-| 2026-11-10 | [DeepWiki Open](fichas/deepwiki-open.md) | Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki. | Depende de la ruta elegida |
 | 2026-11-10 | [DeepEval](fichas/deepeval.md) | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | API de IA opcional |
 | 2026-11-10 | [daisyUI](fichas/daisyui.md) | La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [D3.js](fichas/d3.md) | Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML. | Sin clave propia de API de IA en la ruta básica |
@@ -551,7 +533,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [OpenCut](fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [openai-python](fichas/openai-python.md) | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. | API de IA necesaria |
 | 2026-06-23 | [open-notebook](fichas/open-notebook.md) | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. | Depende de la ruta elegida |
-| 2026-06-23 | [Open-Generative-AI](fichas/open-generative-ai.md) | Estudio de imagen y video con servicios remotos MuAPI y rutas locales de escritorio mediante sd.cpp o Wan2GP. | API de IA opcional |
 | 2026-06-23 | [open-design](fichas/open-design.md) | Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. | API de IA opcional |
 | 2026-06-23 | [VoiceStudio](fichas/omnivoice-studio.md) | App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [odysseus](fichas/odysseus.md) | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. | Depende de la ruta elegida |
@@ -559,9 +540,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [notebooklm-py](fichas/notebooklm-py.md) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [notebooklm-mcp-cli](fichas/notebooklm-mcp-cli.md) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [nanochat](fichas/nanochat.md) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | Sin clave propia de API de IA en la ruta básica |
-| 2026-06-23 | [n8n-skills](fichas/n8n-skills.md) | Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas. | Sin clave propia de API de IA en la ruta básica |
-| 2026-06-23 | [n8n-mcp](fichas/n8n-mcp.md) | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. | Sin clave propia de API de IA en la ruta básica |
-| 2026-06-23 | [n8n](fichas/n8n.md) | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. | API de IA opcional |
 | 2026-06-23 | [multica](fichas/multica.md) | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. | API de IA opcional |
 | 2026-06-23 | [MoviePy](fichas/moviepy.md) | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [motion](fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional |
@@ -606,7 +584,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [fluxer](fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [firecrawl](fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | API de IA opcional |
 | 2026-06-23 | [faster-whisper](fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Sin clave propia de API de IA en la ruta básica |
-| 2026-06-23 | [face_recognition](fichas/face-recognition.md) | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [evolution-api](fichas/evolution-api.md) | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. | API de IA opcional |
 | 2026-06-23 | [echarts](fichas/echarts.md) | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [ECC](fichas/ecc.md) | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. | Sin clave propia de API de IA en la ruta básica |

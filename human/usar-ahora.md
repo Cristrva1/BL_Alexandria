@@ -4,7 +4,7 @@
 
 Piezas que la política del hub (`config/repo_policy.yaml`) marca para instalar de entrada: herramientas globales, dependencias de proyecto y servicios Docker.
 
-**14 repos.**
+**13 repos.**
 
 ## 🌍 Global
 
@@ -31,7 +31,6 @@ _Levántalo con docker cuando el proyecto lo necesite._
 
 | Repo | Categoría | Qué hace |
 |---|---|---|
-| [n8n](fichas/n8n.md) | 🤖 Automatizar procesos y crear herramientas internas | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | [metabase](fichas/metabase.md) | 📊 Dashboards, analítica y mapas | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 | [posthog](fichas/posthog.md) | 📊 Dashboards, analítica y mapas | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. |
 | [evolution-api](fichas/evolution-api.md) | 🤖 WhatsApp, mensajería y chatbots | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |

@@ -167,7 +167,7 @@
      "orden_instalacion": "Controla timelines por frame."
     }
    ],
-   "notas": "Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial. Se quita open-generative-ai de las combinaciones (sin integración documentada).",
+   "notas": "Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial.",
    "fuentes": [
     "https://github.com/remotion-dev/remotion/blob/main/README.md",
     "https://remotion.dev/license"

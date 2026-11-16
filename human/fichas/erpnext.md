@@ -26,7 +26,7 @@ Se basa en Frappe Framework, un framework web completo en Python y JavaScript co
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | n8n tiene un nodo ERPNext para crear y consultar documentos (clientes, pedidos, facturas) desde flujos. | ERPNext primero con un usuario y claves de API; después la credencial en n8n. |
+| [activepieces](activepieces.md) | Crear y consultar documentos de ERPNext (clientes, pedidos, facturas) desde flujos con la pieza HTTP contra su API REST. (combinación por arquitectura) | ERPNext primero con un usuario y claves de API; después el flujo en Activepieces. |
 | [metabase](metabase.md) | Análisis y dashboards conectando a la base de datos de ERPNext con un usuario de solo lectura (combinación por arquitectura). | Crea un usuario de lectura en la base de datos y conecta Metabase a ella o a una réplica. |
 | [paperless-ngx](paperless-ngx.md) | Archivar y hacer OCR de facturas y documentos escaneados que luego se registran en el ERP (combinación por arquitectura). | Independientes; define qué sistema es el maestro de cada documento para no duplicar. |
 

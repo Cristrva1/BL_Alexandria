@@ -28,13 +28,13 @@ Es un binario en Go para macOS, Windows y Linux, instalable con Homebrew, winget
 |---|---|---|
 | [Claude Code](claude-code.md) | Dar al agente acceso a PR, issues y CI desde la terminal. (combinación por arquitectura) | Autentica `gh` y permite su uso al agente. |
 | [GitHub MCP Server](github-mcp-server.md) | Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura) | Usa `gh` en terminal y el servidor MCP en clientes sin shell. |
-| [n8n](n8n.md) | Automatizar GitHub con el nodo nativo de n8n, complementario a scripts con `gh`. (combinación por arquitectura) | Usa `gh` para tareas manuales y n8n para flujos programados. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos (sustituye a la antigua combinación con n8n). | GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces. |
 
 **Notas:** Sin alternativas declaradas. Limita los scopes del token que uses con agentes.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.104.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1]() · [2](https://cli.github.com/manual/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1]() · [2](https://cli.github.com/manual/) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/github)</sub>
 
 ## Acceso, coste y equipo
 

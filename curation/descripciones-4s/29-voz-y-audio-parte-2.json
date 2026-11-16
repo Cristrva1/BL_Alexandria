@@ -286,38 +286,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "music-megathread": {
-   "que_es": "Music Megathread, directorio de reproductores, herramientas, descargadores, sitios de streaming y bots de Telegram de música, de @MoonWalker440. GitHub no detecta licencia. Tiene ~3k estrellas y no cambia desde junio de 2025.",
-   "que_hace": "Lista recursos gratuitos para escuchar, descubrir y descargar música, incluidos descargadores de servicios de pago que pueden infringir derechos de autor o términos de servicio.",
-   "como_lo_hace": "Es un README; no requiere instalación.",
-   "combina_con": [
-    {
-     "id": "whisper",
-     "motivo": "Transcribir letras de audio propio. (combinación por arquitectura)",
-     "orden_instalacion": "Combina según el caso."
-    },
-    {
-     "id": "rubberband",
-     "motivo": "Editar tempo y tono de audio propio. (combinación por arquitectura)",
-     "orden_instalacion": "Combina según el caso."
-    },
-    {
-     "id": "awesome-bigdata",
-     "motivo": "Otra lista curada del catálogo. (combinación por arquitectura)",
-     "orden_instalacion": "Consulta según el área."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Contiene enlaces a herramientas de descarga de dudosa legalidad: pregunta de pertenencia al catálogo (solo anotada).",
-   "fuentes": [
-    "https://github.com/MoonWalker440/Music-Megathread/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "MoonWalker440/Music-Megathread",
-    "archived": false,
-    "pushed_at": "2025-06-24",
-    "checked_at": "2026-11-15"
-   }
-  },
   "rubberband": {
    "que_es": "Rubber Band Library, biblioteca y utilidad para estirar el tiempo y cambiar el tono de audio, de Chris Cannam (Breakfast Quay). Licencia GPL-2.0+, con licencia comercial disponible. Es madura, de nicho (~800 estrellas) y no cambia desde marzo de 2025.",
    "que_hace": "Cambia la duración sin alterar el tono, o el tono sin alterar la duración, con alta calidad, en tiempo real u offline. Se usa en numerosas aplicaciones de audio.",

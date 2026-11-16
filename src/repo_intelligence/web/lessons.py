@@ -515,7 +515,6 @@ RECIPE_LESSONS: dict[str, dict] = {
             "listmonk": "Listas y newsletters autoalojadas. Si solo envías correos, puede bastar esta pieza.",
             "posthog": "Qué hacen las personas en el producto: eventos, embudos, uso real.",
             "metabase": "Tableros sobre la base, legibles para quien no escribe SQL. Otra pregunta, no la misma que PostHog.",
-            "open-generative-ai": "Taller para generar imagen y video. Es el estudio creativo de la receta, no el correo.",
         },
     },
     "web-app-moderna-con-ia": {

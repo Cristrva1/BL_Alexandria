@@ -38,41 +38,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "codex-chatgpt-web": {
-   "que_es": "Integración no oficial de terceros que permite usar en Codex los modelos de ChatGPT Web de tu cuenta, incluido Pro, de @miuuyy. Licencia MIT. Tiene ~16k estrellas.",
-   "que_hace": "Envía los mensajes a través de tu sesión iniciada en ChatGPT Web, con los límites de esa cuenta, desde el selector de modelos nativo de Codex. En modo «Full harness», ChatGPT accede a los archivos, la terminal y las herramientas de la tarea mediante MCP.",
-   "como_lo_hace": "Se distribuye como lanzador descargable con navegador integrado; el modo MCP requiere un túnel y una clave. El propio README advierte que es automatización de navegador no oficial (no la API de OpenAI), que los cambios de la interfaz pueden romperla, que el perfil del navegador es un artefacto sensible y que el listener de loopback es accesible para otros procesos del mismo usuario.",
-   "combina_con": [
-    {
-     "id": "codex",
-     "motivo": "Cliente que integra.",
-     "orden_instalacion": "Instala Codex y luego el lanzador."
-    },
-    {
-     "id": "t3code",
-     "motivo": "Controlar Codex desde web o móvil. (combinación por arquitectura)",
-     "orden_instalacion": "Usa T3 Code sobre Codex."
-    },
-    {
-     "id": "context7",
-     "motivo": "Documentación vía MCP en modo harness. (combinación por arquitectura)",
-     "orden_instalacion": "Añade el MCP a Codex."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Riesgo de términos de servicio y de seguridad (automatiza una sesión de consumidor). Pregunta de pertenencia al catálogo (solo anotada). No se descargaron sus binarios.",
-   "fuentes": [
-    "https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "miuuyy/codex-chatgpt-web",
-    "archived": false,
-    "pushed_at": "2026-11-12",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "latest_release": "v6.1.18 (2026-11-08)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "nodeterm": {
    "que_es": "nodeterm, gestor de terminales y sesiones de agentes sobre un lienzo infinito, de @eneskirca. Licencia Business Source License 1.1 (no es open source; GitHub muestra NOASSERTION). Tiene ~2.5k estrellas y busca patrocinadores fundadores.",
    "que_hace": "Coloca terminales reales como nodos arrastrables en un lienzo con zoom, y cada proyecto funciona además como tablero tipo Trello de sesiones de Claude Code en vivo. Está pensado para personas con TDAH o flujos de trabajo dispersos.",
@@ -222,9 +187,14 @@
      "orden_instalacion": "Despliega Supabase desde Coolify."
     },
     {
-     "id": "n8n",
-     "motivo": "Autoalojar n8n. (combinación por arquitectura)",
-     "orden_instalacion": "Despliega n8n desde Coolify."
+     "id": "activepieces",
+     "motivo": "Coolify trae plantillas de servicio oficiales para desplegar Activepieces (y también Windmill) con un clic.",
+     "orden_instalacion": "Coolify primero; luego despliega la plantilla `activepieces`."
+    },
+    {
+     "id": "windmill",
+     "motivo": "Plantilla de servicio oficial de Coolify para Windmill.",
+     "orden_instalacion": "Coolify primero; luego despliega la plantilla `windmill`."
     },
     {
      "id": "freedomain",
@@ -235,7 +205,8 @@
    "notas": "Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).",
    "fuentes": [
     "https://github.com/coollabsio/coolify/blob/main/README.md",
-    "https://coolify.io/docs/installation"
+    "https://coolify.io/docs/installation",
+    "https://github.com/coollabsio/coolify/tree/main/templates/compose"
    ],
    "github": {
     "name_with_owner": "coollabsio/coolify",
@@ -299,7 +270,7 @@
      "orden_instalacion": "Instálalo como app."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizaciones en el servidor doméstico. (combinación por arquitectura)",
      "orden_instalacion": "Instálalo como contenedor."
     }
@@ -364,9 +335,9 @@
      "orden_instalacion": "Activa la extensión en la base de datos."
     },
     {
-     "id": "n8n",
-     "motivo": "Nodo de Supabase en flujos de automatización. (combinación por arquitectura)",
-     "orden_instalacion": "Configura las credenciales en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces."
     },
     {
      "id": "coolify",
@@ -377,7 +348,8 @@
    "notas": "Sin alternativas declaradas.",
    "fuentes": [
     "https://github.com/supabase/supabase/blob/master/README.md",
-    "https://supabase.com/docs/guides/hosting/overview"
+    "https://supabase.com/docs/guides/hosting/overview",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/supabase"
    ],
    "github": {
     "name_with_owner": "supabase/supabase",

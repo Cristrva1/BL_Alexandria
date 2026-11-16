@@ -4,7 +4,7 @@
 
 Investiga mercados, compara estrategias y conecta herramientas financieras. Las demos y el backtesting se distinguen de la operación real.
 
-24 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/trading).
+21 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/trading).
 
 ## Opciones para empezar
 
@@ -65,13 +65,10 @@ Código y SDKs para conectar plataformas y automatizar operaciones.
 
 Referencias y demostraciones para entender los sistemas de inversión.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=trading&topic=trading-aprender)
+[Explorar 1 repos](../../docs/index.html#/explorar?area=trading&topic=trading-aprender)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [company-pixel-office](../fichas/company-pixel-office.md) | Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo. | Sin clave propia de API de IA en la ruta básica |
 | [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | API de IA opcional |
-| [pixel-hedge-fund](../fichas/pixel-hedge-fund.md) | Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados. | Sin clave propia de API de IA en la ruta básica |
-| [PixelFund-AI](../fichas/pixelfund-ai.md) | Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | API de IA opcional |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

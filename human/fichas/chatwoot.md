@@ -27,14 +27,14 @@ El backend está en Ruby y el frontend en Vue, según los lenguajes del reposito
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [evolution-api](evolution-api.md) | Aporta el canal de WhatsApp mediante la integración nativa que Evolution tiene con Chatwoot. | Chatwoot primero; después configura la integración desde la instancia de Evolution. |
-| [n8n](n8n.md) | Automatiza acciones (crear contactos, etiquetar, notificar) llamando a la API de Chatwoot desde nodos HTTP (combinación por arquitectura). | Independientes; crea un token de acceso en Chatwoot y úsalo en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos (sustituye a la antigua combinación con n8n). | chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces. |
 | [firecrawl](firecrawl.md) | Captain puede usar una clave de Firecrawl (opcional) para rastrear mejor los sitios web de su base de conocimiento; sin ella usa un rastreador simple. | Solo con Captain activo (plan de pago): añade la clave en el Super Admin. |
 
 **Notas:** Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. Se resuelve el antiguo [DATO NO VERIFICADO] sobre Captain: no está en la Community Edition.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.19.1 (2026-10-24) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatwoot/chatwoot/blob/develop/README.md) · [2](https://www.chatwoot.com/docs/self-hosted/deployment/docker) · [3](https://api.github.com/repos/chatwoot/chatwoot/languages) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md) · [5](https://www.chatwoot.com/pricing/self-hosted-plans) · [6](https://developers.chatwoot.com/self-hosted/faq)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatwoot/chatwoot/blob/develop/README.md) · [2](https://www.chatwoot.com/docs/self-hosted/deployment/docker) · [3](https://api.github.com/repos/chatwoot/chatwoot/languages) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md) · [5](https://www.chatwoot.com/pricing/self-hosted-plans) · [6](https://developers.chatwoot.com/self-hosted/faq) · [7](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/chatwoot)</sub>
 
 ## Acceso, coste y equipo
 

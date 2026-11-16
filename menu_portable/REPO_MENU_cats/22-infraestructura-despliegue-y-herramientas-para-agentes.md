@@ -93,7 +93,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta compatibilidad y prueba el panel en un equipo de laboratorio antes de instalar apps
 **Qué comprobar:** Puedes identificar almacenamiento y una app de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nextcloud-server`, `adguardhome`, `n8n`
+**Combina con:** `nextcloud-server`, `adguardhome`, `activepieces`
 
 ## `claude-task-master`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=infra,agent,javascript
@@ -124,36 +124,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes rastrear cada tarea a un requisito
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
-
-## `codex-chatgpt-web`
-role=app · exec=cloud · setup=medium · mcp=True · prov=— · tags=infra,chatgpt,chatgpt-pro,codex,free-ai,mcp,openai,playwright
-
-**Qué es:** Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex.
-**Stack:** Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio
-- Claude Code: Integración no documentada
-- Codex: Integración documentada por el proyecto
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
-- Coste: Consumo del agente que ya utilizas. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio
-- Equipo: Preparación según la ruta elegida. Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza
-**Repo:** https://github.com/miuuyy/codex-chatgpt-web
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee el modelo de seguridad y usa una tarea sin datos sensibles antes de activar full harness
-**Qué comprobar:** Puedes identificar sesión web, modelo elegido y permisos expuestos
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`, `t3code`, `context7`
 
 ## `composio`
 role=platform · exec=cloud · setup=easy · mcp=True · prov=openai,anthropic,mcp · tags=agents,mcp,automation,typescript
@@ -249,7 +219,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Despliega una página estática de prueba y revisa logs antes de añadir bases de datos reales
 **Qué comprobar:** Puedes abrir el sitio y reconocer su servicio y registros
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `supabase`, `n8n`, `freedomain`
+**Combina con:** `supabase`, `activepieces`, `windmill`, `freedomain`
 
 ## `e2b`
 role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=agents,security,python
@@ -527,4 +497,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea datos ficticios en un proyecto de desarrollo y consulta su estructura con permisos de solo lectura
 **Qué comprobar:** Puedes comprobar tablas y acceso sin tocar datos de producción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pgvector`, `n8n`, `coolify`
+**Combina con:** `pgvector`, `activepieces`, `coolify`

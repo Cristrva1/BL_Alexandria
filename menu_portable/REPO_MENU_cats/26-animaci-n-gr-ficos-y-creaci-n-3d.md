@@ -335,7 +335,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una demo de un cuerpo que cae y modifica gravedad o rebote
 **Qué comprobar:** Puedes observar colisión y estado del cuerpo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pixelfx`, `threejs-game-skills`, `dsh-game-studio`
+**Combina con:** `pixelfx`, `threejs-game-skills`, `three.js`
 
 ## `react-three-fiber`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,typescript

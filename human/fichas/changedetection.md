@@ -28,7 +28,7 @@ Se instala con Docker o Docker Compose (`docker compose up -d`). Los pasos de na
 |---|---|---|
 | [Ollama](ollama.md) | Resúmenes y filtros de cambios con un modelo local, soportado según el README. | Levanta Ollama y configúralo como proveedor de LLM. |
 | [Claude Code](claude-code.md) | Consultar y gestionar vigilancias desde un asistente con el servidor MCP de changedetection.io. | Activa el MCP en tu instancia y regístralo en el cliente. |
-| [n8n](n8n.md) | Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura) | Configura una notificación webhook hacia un flujo de n8n. |
+| [activepieces](activepieces.md) | Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura) | Configura una notificación webhook hacia un flujo de Activepieces. |
 
 **Notas:** Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas.
 

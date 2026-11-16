@@ -189,36 +189,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `flux2`, `real-esrgan`
 **Alternativas (elige una):** `invokeai`
 
-## `open-generative-ai`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=image,video,javascript
-
-**Qué es:** Reúne herramientas de generación de imagen y video. Los modelos alojados consumen servicios externos; la app de escritorio permite configurar motores locales independientes. Las rutas difieren en hardware, instalación, licencia de pesos y costes.
-**Stack:** App de escritorio para modelos locales; sd.cpp o Wan2GP; GPU según modelo; clave MuAPI para servicios remotos
-**Acceso y costes:**
-- API de IA: API de IA opcional. Las rutas MuAPI consumen servicios; escritorio añade sd.cpp y Wan2GP propios; que la interfaz sea abierta no vuelve gratuitos todos sus modelos
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Los modelos locales son función de escritorio; Wan2GP se instala aparte y exige GPU compatible, a diferencia del motor de imagen sd.cpp
-- Coste: El coste depende del proveedor o la ruta. Las rutas MuAPI consumen servicios; escritorio añade sd.cpp y Wan2GP propios; que la interfaz sea abierta no vuelve gratuitos todos sus modelos
-- Equipo: Preparación según la ruta elegida. App de escritorio para modelos locales; sd.cpp o Wan2GP; GPU según modelo; clave MuAPI para servicios remotos
-**Repo:** https://github.com/Anil-matcha/Open-Generative-AI
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar imagen local desde una interfaz; Comparar una ruta local con un servicio de video remoto
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** En escritorio configura un modelo local pequeño y genera una imagen con el selector Local
-**Qué comprobar:** Puedes identificar el motor local y comprobar que no se usó el proveedor remoto
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `wan2gp`, `remotion`, `ffmpeg`
-
 ## `real-esrgan`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
 

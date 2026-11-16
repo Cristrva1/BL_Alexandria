@@ -1482,9 +1482,7 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [
-        "dsh-android"
-      ],
+      "repo_ids": [],
       "aliases": [],
       "commands": []
     },
@@ -1521,9 +1519,7 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [
-        "dsh-ios"
-      ],
+      "repo_ids": [],
       "aliases": [],
       "commands": []
     },
@@ -2241,11 +2237,7 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [
-        "n8n",
-        "n8n-mcp",
-        "n8n-skills"
-      ],
+      "repo_ids": [],
       "aliases": [],
       "commands": []
     },

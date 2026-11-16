@@ -28,7 +28,7 @@ Se despliega con Docker o Podman Compose y se configura con una wallet y un RPC 
 |---|---|---|
 | [AutoHedge](autohedge.md) | Comparar con agentes autónomos que también operan en Solana. (combinación por arquitectura) | Evalúa ambos solo en entornos de prueba. |
 | [Grafana](grafana.md) | Monitorizar operaciones y saldos. (combinación por arquitectura) | Exporta métricas a una base y crea paneles. |
-| [n8n](n8n.md) | Avisos de operaciones. (combinación por arquitectura) | Envía eventos a n8n por webhook. |
+| [activepieces](activepieces.md) | Avisos de operaciones. (combinación por arquitectura) | Envía eventos a Activepieces por webhook. |
 
 **Notas:** Sin alternativas declaradas. No apto para producción, según su autor. Riesgo muy alto con claves privadas. Riesgo financiero: no es asesoramiento de inversión.
 

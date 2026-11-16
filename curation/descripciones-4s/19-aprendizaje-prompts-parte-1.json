@@ -57,11 +57,6 @@
      "id": "open-webui",
      "motivo": "Usar el servidor REST de Fabric en modo de compatibilidad con Ollama como backend de una interfaz de chat. (combinación por arquitectura) (no hay guía conjunta)",
      "orden_instalacion": "Arranca `fabric --serve` con el modo Ollama y apunta el cliente a esa URL."
-    },
-    {
-     "id": "n8n",
-     "motivo": "Llamar a patterns desde automatizaciones a través de la API REST. (combinación por arquitectura)",
-     "orden_instalacion": "Arranca el servidor REST y usa nodos HTTP de n8n."
     }
    ],
    "notas": "Alternativas (elige una): prompts-chat. Ojo: el uso de OAuth de suscripción vía backend privado puede contravenir los términos del proveedor [DATO NO VERIFICADO].",

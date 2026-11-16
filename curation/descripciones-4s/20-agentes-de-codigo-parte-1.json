@@ -451,41 +451,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "openclaude": {
-   "que_es": "OpenClaude, CLI de agente de programación multi-proveedor publicada por Twigpine. Según su propio NOTICE, deriva del código propietario de Claude Code de Anthropic y solo las modificaciones se ofrecen con MIT «donde sea legalmente posible» (GitHub muestra NOASSERTION). Tiene ~34k estrellas (v0.36.0) y fue creado en abril de 2026.",
-   "que_hace": "Mantiene un flujo de trabajo de terminal (herramientas, agentes, MCP, comandos slash) con proveedores compatibles con OpenAI, Gemini, GitHub Models, Codex OAuth, Ollama y otros. Usa Exa como búsqueda web por defecto en modelos que no son de Anthropic.",
-   "como_lo_hace": "Se instala con `npm install -g @twigpine/openclaude@latest` (Node.js ≥24.22.1). El paquete anterior ya no se actualiza. Declara no estar afiliado a Anthropic.",
-   "combina_con": [
-    {
-     "id": "ollama",
-     "motivo": "Proveedor local soportado.",
-     "orden_instalacion": "Configura Ollama como backend."
-    },
-    {
-     "id": "litellm",
-     "motivo": "Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura)",
-     "orden_instalacion": "Apunta el proveedor OpenAI al proxy."
-    },
-    {
-     "id": "context7",
-     "motivo": "Documentación de librerías vía MCP. (combinación por arquitectura)",
-     "orden_instalacion": "Añade el MCP de Context7."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Riesgo legal y de propiedad intelectual: deriva de código propietario de Anthropic. Pregunta de pertenencia al catálogo (solo anotada).",
-   "fuentes": [
-    "https://github.com/Twigpine/openclaude/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "Twigpine/openclaude",
-    "archived": false,
-    "pushed_at": "2026-11-16",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "TypeScript",
-    "latest_release": "v0.36.0 (2026-11-13)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "opencursor": {
    "que_es": "OpenCursor, extensión open source de VS Code con agente de programación, de @PawanOsman. Licencia MIT. Tiene ~6k estrellas (0.2.1).",
    "que_hace": "Lleva al editor conversación, exploración de código, edición de archivos, comandos de terminal y revisión de cambios. Admite cuentas, claves de API propias o modelos locales con Ollama o llama.cpp (gestiona modelos GGUF), con índice de embeddings en el dispositivo para búsqueda semántica. Soporta MCP y hooks.",

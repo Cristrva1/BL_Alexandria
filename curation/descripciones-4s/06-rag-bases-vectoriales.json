@@ -14,9 +14,9 @@
      "orden_instalacion": "Ollama accesible desde los contenedores (no uses localhost); después añade el proveedor en RAGFlow."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar la carga de documentos o consultar bases de conocimiento a través de su API HTTP (combinación por arquitectura).",
-     "orden_instalacion": "Crea una clave de API en RAGFlow y úsala desde nodos HTTP."
+     "orden_instalacion": "Crea una clave de API en RAGFlow y úsala desde la pieza HTTP de Activepieces."
     },
     {
      "id": "langfuse",

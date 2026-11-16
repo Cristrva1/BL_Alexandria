@@ -27,7 +27,7 @@ Es un binario único en Go con interfaz web (TypeScript). Se instala con el scri
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Home Assistant](home-assistant.md) | Ver estadísticas y activar o desactivar filtros desde Home Assistant con la integración oficial de AdGuard Home. | Instala AdGuard Home y añade la integración con su URL y credenciales. |
-| [n8n](n8n.md) | Automatizar tareas (pausar el filtrado, añadir reglas) llamando a la API HTTP de AdGuard Home. (combinación por arquitectura) | Crea un usuario de AdGuard Home y usa el nodo HTTP Request de n8n contra su API. |
+| [activepieces](activepieces.md) | Automatizar tareas (pausar el filtrado, añadir reglas) llamando a la API HTTP de AdGuard Home. (combinación por arquitectura) | Crea un usuario de AdGuard Home y usa la pieza HTTP de Activepieces contra su API. |
 | [vaultwarden](vaultwarden.md) | Dar un nombre local (p. ej. `vault.casa`) a los servicios autoalojados con las reescrituras DNS de AdGuard Home. (combinación por arquitectura) | Configura la reescritura DNS hacia el proxy inverso que publica Vaultwarden con HTTPS. |
 
 **Notas:** Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador.

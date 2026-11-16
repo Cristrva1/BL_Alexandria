@@ -248,7 +248,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade seguimiento a una página propia y verifica una visita y un objetivo ficticio
 **Qué comprobar:** El informe identifica las acciones de la visita de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `metabase`, `grafana`, `n8n`
+**Combina con:** `metabase`, `grafana`, `activepieces`
 **Alternativas (elige una):** `umami`, `plausible`
 
 ## `metabase`
@@ -346,38 +346,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pythia`, `hermes-agent`, `claude-code`
 
-## `pandas-ai`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,local · tags=analytics,data,python
-
-**Qué es:** Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM.
-**Stack:** Python >=3.8 y <=3.11 según README; datos ficticios; LLM configurado
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El ejemplo usa OpenAI mediante LiteLLM y consume API; proveedor y sandbox tienen condiciones propias; no se confirma aquí una ruta local completa
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Puede generar y ejecutar código de análisis; prueba datos ficticios y revisa resultados antes de usar información real
-- Coste: El coste depende del proveedor o la ruta. El ejemplo usa OpenAI mediante LiteLLM y consume API; proveedor y sandbox tienen condiciones propias; no se confirma aquí una ruta local completa
-- Equipo: Preparación según la ruta elegida. Python >=3.8 y <=3.11 según README; datos ficticios; LLM configurado
-**Repo:** https://github.com/sinaptik-ai/pandas-ai
-
-**Instalación** [+]:
-
-```
-pip install pandasai
-pip install pandasai-litellm
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Pregunta el promedio por región de un CSV pequeño y calcula el resultado también de forma directa
-**Qué comprobar:** La respuesta y el código generado coinciden con los datos
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `duckdb`, `streamlit`
-**Alternativas (elige una):** `wrenai`
-
 ## `plausible`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=analytics,docker
 
@@ -406,7 +374,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Mide una visita y un objetivo de prueba sin añadir datos personales al evento
 **Qué comprobar:** El panel muestra el sitio, la visita y el objetivo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `grafana`, `supabase`
+**Combina con:** `activepieces`, `grafana`, `supabase`
 **Alternativas (elige una):** `umami`, `matomo`
 
 ## `posthog`
@@ -437,7 +405,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra un evento ficticio y construye un embudo de dos pasos en un proyecto de prueba
 **Qué comprobar:** Puedes ver cada evento y cómo se calcula el embudo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `n8n`, `metabase`
+**Combina con:** `claude-code`, `activepieces`, `metabase`
 
 ## `pythia`
 role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=osint,typescript
@@ -531,7 +499,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta una consulta sobre una tabla ficticia y conviértela en una gráfica
 **Qué comprobar:** Puedes revisar consulta, filas y visualización del mismo resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `supabase`, `n8n`
+**Combina con:** `duckdb`, `supabase`, `activepieces`
 **Alternativas (elige una):** `metabase`, `superset`
 
 ## `superset`
@@ -595,7 +563,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade el script a una página propia de prueba y genera un evento ficticio
 **Qué comprobar:** El panel recibe la visita y el evento del sitio correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `metabase`, `grafana`, `n8n`
+**Combina con:** `metabase`, `grafana`, `activepieces`
 **Alternativas (elige una):** `plausible`, `matomo`
 
 ## `uplot`
@@ -689,4 +657,3 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar definición, SQL y resultado sobre la muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `duckdb`, `langchain`, `superset`
-**Alternativas (elige una):** `pandas-ai`

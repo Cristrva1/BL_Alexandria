@@ -14,11 +14,6 @@
      "orden_instalacion": "Instala Coolify y añade el servicio Nextcloud desde su catálogo."
     },
     {
-     "id": "n8n",
-     "motivo": "Automatizar archivos y carpetas de Nextcloud (subir, mover, compartir) con el nodo oficial de Nextcloud de n8n.",
-     "orden_instalacion": "Instala Nextcloud, crea una contraseña de aplicación y configura la credencial en n8n."
-    },
-    {
      "id": "home-assistant",
      "motivo": "Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud.",
      "orden_instalacion": "Activa la integración en Home Assistant con un usuario administrador de Nextcloud."
@@ -60,9 +55,9 @@
      "orden_instalacion": "Instala AdGuard Home y añade la integración con su URL y credenciales."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar tareas (pausar el filtrado, añadir reglas) llamando a la API HTTP de AdGuard Home. (combinación por arquitectura)",
-     "orden_instalacion": "Crea un usuario de AdGuard Home y usa el nodo HTTP Request de n8n contra su API."
+     "orden_instalacion": "Crea un usuario de AdGuard Home y usa la pieza HTTP de Activepieces contra su API."
     },
     {
      "id": "vaultwarden",
@@ -104,9 +99,9 @@
      "orden_instalacion": "Comparte en Syncthing la carpeta que usa la biblioteca de Audiobookshelf."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura)",
-     "orden_instalacion": "Crea un token de API en Audiobookshelf y úsalo en un nodo HTTP Request de n8n."
+     "orden_instalacion": "Crea un token de API en Audiobookshelf y úsalo en la pieza HTTP de Activepieces."
     }
    ],
    "notas": "Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.",
@@ -137,9 +132,9 @@
      "orden_instalacion": "Despliega Vaultwarden con HTTPS y, en el cliente, cambia la URL del servidor a la tuya."
     },
     {
-     "id": "n8n",
-     "motivo": "Gestionar colecciones, grupos y miembros de una organización Bitwarden con el nodo oficial de n8n (usa la API de organizaciones, no da acceso a los elementos del vault).",
-     "orden_instalacion": "Crea la clave de API de la organización y configura la credencial en n8n."
+     "id": "activepieces",
+     "motivo": "Gestionar colecciones, grupos y miembros de una organización Bitwarden llamando a su API pública de organizaciones con la pieza HTTP (no da acceso a los elementos del vault). (combinación por arquitectura)",
+     "orden_instalacion": "Crea la clave de API de la organización y guárdala como secreto en Activepieces."
     },
     {
      "id": "claude-code",
@@ -210,11 +205,6 @@
      "id": "ollama",
      "motivo": "Agente de conversación local para Assist con la integración oficial de Ollama.",
      "orden_instalacion": "Instala Ollama en la red local, descarga un modelo con soporte de herramientas y añade la integración."
-    },
-    {
-     "id": "n8n",
-     "motivo": "Leer estados y llamar servicios de Home Assistant desde flujos con el nodo oficial de n8n.",
-     "orden_instalacion": "Crea un token de larga duración en Home Assistant y configura la credencial en n8n."
     },
     {
      "id": "adguardhome",
@@ -345,9 +335,9 @@
      "orden_instalacion": "Convierte con MarkItDown e importa los `.md` en Anytype."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar altas de objetos mediante la API local de Anytype. (combinación por arquitectura) (la API escucha en el equipo del usuario)",
-     "orden_instalacion": "Expón la API solo en local y llama desde n8n en la misma máquina."
+     "orden_instalacion": "Expón la API solo en local y llama desde Activepieces en la misma máquina."
     }
    ],
    "notas": "Alternativas (elige una): appflowy. La licencia restringe usos comerciales concretos; léela antes de redistribuir.",

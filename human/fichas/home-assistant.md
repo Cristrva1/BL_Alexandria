@@ -27,7 +27,6 @@ Está escrito en Python (asyncio). La instalación recomendada es Home Assistant
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Ollama](ollama.md) | Agente de conversación local para Assist con la integración oficial de Ollama. | Instala Ollama en la red local, descarga un modelo con soporte de herramientas y añade la integración. |
-| [n8n](n8n.md) | Leer estados y llamar servicios de Home Assistant desde flujos con el nodo oficial de n8n. | Crea un token de larga duración en Home Assistant y configura la credencial en n8n. |
 | [AdGuardHome](adguardhome.md) | Controlar el filtrado DNS de la red desde paneles y automatizaciones con la integración oficial de AdGuard Home. | Instala AdGuard Home y añade su integración. |
 | [syncthing](syncthing.md) | Supervisar carpetas y dispositivos de Syncthing con la integración oficial. | Crea una clave de API en Syncthing y añade la integración. |
 

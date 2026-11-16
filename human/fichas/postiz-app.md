@@ -26,13 +26,13 @@ Monorepo en TypeScript con Next.js (React), NestJS, Temporal para flujos y Prism
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Nodo personalizado oficial de n8n para publicar desde flujos (por ejemplo, al aprobar un contenido). | Postiz primero con clave de API pública; después instala el nodo en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos (sustituye a la antigua combinación con n8n). | postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces. |
 | [Claude Code](claude-code.md) | Servidor MCP de Postiz para que un agente programe y gestione publicaciones. | Postiz con canales conectados; luego registra el MCP en el agente. |
 | [coolify](coolify.md) | Ruta de despliegue citada en el README. | Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque. |
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.26.0 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gitroomhq/postiz-app/blob/main/README.md) · [2](https://docs.postiz.com/public-api)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gitroomhq/postiz-app/blob/main/README.md) · [2](https://docs.postiz.com/public-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/postiz)</sub>
 
 ## Acceso, coste y equipo
 

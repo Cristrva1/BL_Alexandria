@@ -26,7 +26,7 @@ Es una aplicación PHP que se instala con Composer siguiendo la documentación d
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | n8n tiene un nodo Mautic para crear o actualizar contactos y añadirlos a segmentos o campañas. | Mautic primero con la API activada y credenciales; después la credencial en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos (sustituye a la antigua combinación con n8n). | mautic en marcha con sus credenciales; después añade la pieza `mautic` en un flujo de Activepieces. |
 | [Marketing Skills](marketingskills.md) | Skills de marketing para que un agente redacte secuencias, segmentos y copys que luego se cargan en Mautic (combinación por arquitectura). | Independientes; revisa los textos generados antes de activarlos. |
 | [posthog](posthog.md) | PostHog mide el comportamiento en producto y Mautic actúa con campañas sobre esos segmentos (combinación por arquitectura). | Define un identificador común de contacto antes de sincronizar datos entre ambos. |
 
@@ -34,7 +34,7 @@ Es una aplicación PHP que se instala con Composer siguiendo la documentación d
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 7.2.2 (2026-10-26) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mautic/mautic/blob/7.x/README.md) · [2](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mautic/mautic/blob/7.x/README.md) · [2](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/mautic)</sub>
 
 ## Acceso, coste y equipo
 

@@ -420,36 +420,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `pipecat`, `moviepy`
 **Alternativas (elige una):** `kokoro`
 
-## `music-megathread`
-role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=musica
-
-**Qué es:** Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música.
-**Stack:** Navegador; necesidad concreta
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La lista es libre; servicios y recursos externos pueden requerir suscripción o tener condiciones propias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Es un directorio de enlaces y no un paquete instalable ni una autorización de uso de todo contenido enlazado
-- Coste: Sin pago a un modelo en la ruta básica. La lista es libre; servicios y recursos externos pueden requerir suscripción o tener condiciones propias
-- Equipo: Preparación según la ruta elegida. Navegador; necesidad concreta
-**Repo:** https://github.com/MoonWalker440/Music-Megathread
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar un reproductor; Explorar herramientas de audio
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Elige un reproductor local y comprueba su fuente, licencia y compatibilidad antes de descargar
-**Qué comprobar:** Puedes distinguir una app de un enlace a un servicio
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisper`, `rubberband`, `awesome-bigdata`
-
 ## `nemo`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=stt,tts,audio,python
 

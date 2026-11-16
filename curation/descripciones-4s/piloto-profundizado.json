@@ -3,107 +3,11 @@
  "checked_at": "2026-11-15",
  "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
  "repos": {
-  "n8n": {
-   "que_es": "n8n, plataforma de automatización de flujos de trabajo y agentes de IA, de n8n GmbH. Es «fair-code», no open source OSI: Sustainable Use License más la n8n Enterprise License para funciones de pago (por eso GitHub muestra NOASSERTION). Es muy madura y popular (~211k estrellas, serie 2.x). Se puede autoalojar o usar en n8n Cloud.",
-   "que_hace": "Conecta más de 1500 integraciones (APIs, bases de datos y apps SaaS) en flujos que se disparan por eventos, horarios o webhooks. Sus nodos de IA crean agentes de varios pasos con herramientas, aprobaciones humanas y modelos de OpenAI, Anthropic, Google o modelos abiertos. Ofrece más de 9000 plantillas. La licencia permite el uso interno y comercial propio, pero restringe revenderlo como servicio.",
-   "como_lo_hace": "Es una aplicación TypeScript/Node.js con un editor visual de nodos en el navegador (puerto 5678): cada nodo recibe datos JSON, los transforma y los pasa al siguiente. Cuando lo visual no alcanza, admite nodos de código en JavaScript o Python y paquetes npm. Se instala normalmente con Docker y un volumen persistente (`docker volume create n8n_data`) o con el script de instalación (requiere Docker). Sus nodos de IA forman la familia `n8n-nodes-langchain`.",
-   "combina_con": [
-    {
-     "id": "n8n-mcp",
-     "motivo": "Permite que Claude Code, Cursor u otro cliente MCP lea ejecuciones fallidas, valide, pruebe y edite flujos de n8n mediante su API pública.",
-     "orden_instalacion": "Primero n8n en marcha con la Public API activada y una API key; después n8n-mcp. Prueba en una copia: n8n-mcp reescribe el flujo completo y pisa cambios hechos a la vez en la interfaz."
-    },
-    {
-     "id": "n8n-skills",
-     "motivo": "Skills de Claude Code que enseñan sintaxis de expresiones, patrones de flujo y uso correcto de las herramientas de n8n-mcp.",
-     "orden_instalacion": "Tercera pieza: se aprovecha cuando n8n-mcp ya está conectado."
-    },
-    {
-     "id": "evolution-api",
-     "motivo": "Añade el canal de WhatsApp: Evolution API envía eventos a un webhook de n8n y n8n responde llamando a su API REST; Evolution lista n8n entre sus integraciones de chatbot.",
-     "orden_instalacion": "Servicios independientes. Levanta ambos y apunta el webhook de la instancia de Evolution a una URL de webhook de n8n."
-    },
-    {
-     "id": "ollama",
-     "motivo": "Los nodos de IA de n8n pueden usar modelos locales servidos por Ollama (credencial documentada por n8n), sin pagar una API remota.",
-     "orden_instalacion": "Ollama primero. Si n8n corre en Docker, `localhost` apunta al contenedor: usa la dirección del host para llegar al puerto 11434."
-    },
-    {
-     "id": "qdrant",
-     "motivo": "n8n incluye el nodo Qdrant Vector Store para guardar y consultar embeddings dentro de un flujo (RAG).",
-     "orden_instalacion": "Qdrant primero (puerto 6333) y luego la credencial en n8n. Qdrant arranca sin autenticación: no lo expongas a internet."
-    }
-   ],
-   "notas": "Alternativas (elige una): activepieces, huginn, windmill, node-red. n8n-io es un alias de este mismo repositorio en el catálogo. Revisa la Sustainable Use License si vas a ofrecer n8n a terceros.",
-   "fuentes": [
-    "https://github.com/n8n-io/n8n/blob/master/README.md",
-    "https://docs.n8n.io/integrations/builtin/credentials/ollama/",
-    "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreqdrant/",
-    "https://github.com/evolution-foundation/evolution-api/blob/main/README.md",
-    "https://github.com/czlonkowski/n8n-mcp/blob/main/README.md",
-    "https://docs.n8n.io/sustainable-use-license/"
-   ],
-   "github": {
-    "name_with_owner": "n8n-io/n8n",
-    "archived": false,
-    "pushed_at": "2026-11-16",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "TypeScript",
-    "latest_release": "n8n@2.47.7 (2026-11-13)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "n8n-mcp": {
-   "que_es": "n8n-mcp, servidor MCP de código abierto de @czlonkowski que permite a asistentes como Claude, ChatGPT, Cursor o Codex operar una instancia de n8n. Licencia MIT. Es muy activo (~23k estrellas, v2.102.0) y es independiente del servidor MCP que trae n8n.",
-   "que_hace": "Lee ejecuciones fallidas y señala el nodo que falló, edita flujos de forma parcial, los valida y autocorrige, los prueba por webhook, formulario o chat y gestiona credenciales, tablas de datos y una auditoría de seguridad. Sin conexión a n8n también sirve como referencia de 3501 nodos y 2352 plantillas.",
-   "como_lo_hace": "Corre como proceso aparte (npx, Docker, Railway o el servicio alojado del autor, con 100 llamadas diarias gratis) y habla con n8n por su Public API usando `N8N_API_URL` y `N8N_API_KEY`; trae una base de datos empaquetada de nodos y plantillas para documentar y validar. Antes de cambiar un flujo guarda hasta 10 versiones para revertir, y con `N8N_MCP_ACCESS_TOKEN` delega en el MCP integrado de n8n lo que la API pública no cubre.",
-   "combina_con": [
-    {
-     "id": "n8n",
-     "motivo": "Es la instancia que opera; sin ella solo funcionan las herramientas de documentación y validación.",
-     "orden_instalacion": "n8n primero, con la Public API habilitada y una API key. No edites el mismo flujo en la interfaz mientras trabaja el asistente."
-    },
-    {
-     "id": "n8n-skills",
-     "motivo": "Del mismo autor: enseña al agente a usar las herramientas de n8n-mcp sin bucles de errores de validación.",
-     "orden_instalacion": "Después de conectar n8n-mcp a tu cliente."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Cliente MCP con guía de configuración propia en el repositorio (docs/CLAUDE_CODE_SETUP.md).",
-     "orden_instalacion": "Instala Claude Code y luego registra n8n-mcp siguiendo esa guía."
-    },
-    {
-     "id": "mcp-inspector",
-     "motivo": "Herramienta oficial para listar y probar las herramientas de un servidor MCP antes de dárselas a un agente (combinación por arquitectura).",
-     "orden_instalacion": "Opcional, solo para depurar la conexión."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. La documentación de n8n usa el nombre «n8n MCP» para su propio servidor integrado; no es este proyecto. El servicio alojado lo opera el autor (nivel gratuito de 100 llamadas al día): tus credenciales de n8n pasan por un tercero.",
-   "fuentes": [
-    "https://github.com/czlonkowski/n8n-mcp/blob/main/README.md",
-    "https://github.com/czlonkowski/n8n-skills/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "czlonkowski/n8n-mcp",
-    "archived": false,
-    "pushed_at": "2026-11-11",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "latest_release": "v2.102.0 (2026-11-09)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "evolution-api": {
    "que_es": "Evolution API, API REST para WhatsApp y mensajería multicanal, mantenida por Evolution Foundation. Licencia Apache-2.0 con condiciones adicionales: conservar el logo y el copyright en los componentes frontend y avisar del uso, incluso en sistemas cerrados. No es una licencia OSI estándar, por eso GitHub muestra NOASSERTION. Es madura (~10k estrellas, v2.3.7) y nació de CodeChat.",
    "que_hace": "Crea varias instancias de WhatsApp, envía y recibe mensajes y medios desde tus aplicaciones y reenvía eventos a chatbots, CRM o colas. Admite dos conexiones: Baileys, basada en WhatsApp Web, gratuita pero con limitaciones frente a la oficial, y la WhatsApp Cloud API de Meta, que exige cumplir sus políticas y puede cobrar por mensaje.",
    "como_lo_hace": "Servidor Node.js 20+ en TypeScript con Express y Prisma sobre PostgreSQL o MySQL, con Redis recomendado como caché. Autentica con un `apikey` en la cabecera y tokens por instancia, publica eventos por webhooks, WebSocket, RabbitMQ, Kafka, SQS, NATS o Pusher y guarda medios en disco o en S3/MinIO. Integra de forma nativa Typebot, Chatwoot, Dify, OpenAI (transcripción de audio), Flowise y n8n.",
    "combina_con": [
-    {
-     "id": "n8n",
-     "motivo": "Pone la lógica del bot en un flujo visual: recibe el webhook del mensaje, consulta un modelo o un CRM y responde por la API de Evolution.",
-     "orden_instalacion": "Independientes; configura el webhook de la instancia hacia n8n después de levantar ambos."
-    },
     {
      "id": "chatwoot",
      "motivo": "Integración nativa: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot para que las atiendan personas.",
@@ -145,9 +49,9 @@
      "orden_instalacion": "Chatwoot primero; después configura la integración desde la instancia de Evolution."
     },
     {
-     "id": "n8n",
-     "motivo": "Automatiza acciones (crear contactos, etiquetar, notificar) llamando a la API de Chatwoot desde nodos HTTP (combinación por arquitectura).",
-     "orden_instalacion": "Independientes; crea un token de acceso en Chatwoot y úsalo en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces."
     },
     {
      "id": "firecrawl",
@@ -162,7 +66,8 @@
     "https://api.github.com/repos/chatwoot/chatwoot/languages",
     "https://github.com/evolution-foundation/evolution-api/blob/main/README.md",
     "https://www.chatwoot.com/pricing/self-hosted-plans",
-    "https://developers.chatwoot.com/self-hosted/faq"
+    "https://developers.chatwoot.com/self-hosted/faq",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/chatwoot"
    ],
    "github": {
     "name_with_owner": "chatwoot/chatwoot",
@@ -183,11 +88,6 @@
      "id": "open-webui",
      "motivo": "Interfaz de chat tipo ChatGPT que se conecta a Ollama con `OLLAMA_BASE_URL`.",
      "orden_instalacion": "Ollama primero, o usa la imagen `:ollama` de Open WebUI que ya lo incluye; no instales los dos por separado si usas esa imagen."
-    },
-    {
-     "id": "n8n",
-     "motivo": "Los nodos de IA de n8n usan Ollama como proveedor local mediante una credencial documentada.",
-     "orden_instalacion": "Ollama primero; desde un n8n en Docker apunta a la dirección del host, no a `localhost`."
     },
     {
      "id": "litellm",
@@ -318,11 +218,6 @@
      "orden_instalacion": "Independientes; necesitas además un modelo de embeddings."
     },
     {
-     "id": "n8n",
-     "motivo": "Un flujo de n8n puede llamar al servidor Docker de Crawl4AI con un nodo HTTP para rastrear páginas de forma programada (combinación por arquitectura).",
-     "orden_instalacion": "Levanta el servidor Docker de Crawl4AI y luego crea el flujo."
-    },
-    {
      "id": "litellm",
      "motivo": "La extracción con LLM usa LiteLLM para hablar con cualquier proveedor.",
      "orden_instalacion": "Viene como dependencia; configura el proveedor con su prefijo."
@@ -398,9 +293,9 @@
      "orden_instalacion": "Independientes; Qdrant debe estar en marcha al indexar."
     },
     {
-     "id": "n8n",
-     "motivo": "Nodo Qdrant Vector Store para RAG dentro de flujos visuales.",
-     "orden_instalacion": "Qdrant primero; después la credencial en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "Qdrant en marcha con sus credenciales; después añade la pieza `qdrant` en un flujo de Activepieces."
     },
     {
      "id": "llama-index",
@@ -424,7 +319,8 @@
     "https://qdrant.tech/documentation/data-management/docling/",
     "https://qdrant.tech/documentation/frameworks/n8n/",
     "https://qdrant.tech/documentation/frameworks/llama-index/",
-    "https://qdrant.tech/documentation/frameworks/langchain/"
+    "https://qdrant.tech/documentation/frameworks/langchain/",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/qdrant"
    ],
    "github": {
     "name_with_owner": "qdrant/qdrant",

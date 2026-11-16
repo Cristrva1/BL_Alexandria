@@ -9,9 +9,9 @@
    "como_lo_hace": "Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker según la guía; la versión autoalojada no incluye todo: por ejemplo, el servicio «Alexandria» de proveedores de datos solo funciona en Firecrawl Cloud, y motores como Fire-engine se configuran aparte. Para agentes, `npx -y firecrawl-cli@latest init` instala CLI y skills, y el MCP se ejecuta con `npx -y firecrawl-mcp`.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Nodo e integración oficial de Firecrawl en n8n.",
-     "orden_instalacion": "Crea la credencial de Firecrawl en n8n y usa el nodo en tus flujos."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces."
     },
     {
      "id": "claude-code",
@@ -29,7 +29,8 @@
     "https://github.com/firecrawl/firecrawl/blob/main/README.md",
     "https://docs.firecrawl.dev/mcp-server",
     "https://n8n.io/integrations/firecrawl/",
-    "https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping"
+    "https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/firecrawl"
    ],
    "github": {
     "name_with_owner": "firecrawl/firecrawl",
@@ -192,9 +193,9 @@
    "como_lo_hace": "Se usa directamente por HTTP o se autoaloja con la imagen `ghcr.io/jina-ai/reader:oss` (Docker, modo sin estado). Algunos artefactos no redistribuibles en `licensed/` son necesarios para compilar o ejecutar, según el README.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Usar Jina AI desde flujos con la integración de n8n.",
-     "orden_instalacion": "Configura la credencial de Jina AI en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `jina-ai` para usar Jina Reader en flujos (sustituye a la antigua combinación con n8n).",
+     "orden_instalacion": "Jina Reader en marcha con sus credenciales; después añade la pieza `jina-ai` en un flujo de Activepieces."
     },
     {
      "id": "open-webui",
@@ -211,7 +212,8 @@
    "fuentes": [
     "https://github.com/jina-ai/reader/blob/main/README.md",
     "https://n8n.io/integrations/jina-ai/",
-    "https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina"
+    "https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/jina-ai"
    ],
    "github": {
     "name_with_owner": "jina-ai/reader",
@@ -269,9 +271,9 @@
      "orden_instalacion": "Despliega Maxun y configura su servidor MCP en el agente."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Encadenar los datos extraídos con otros servicios. (combinación por arquitectura)",
-     "orden_instalacion": "Llama a la API de Maxun desde un nodo HTTP Request."
+     "orden_instalacion": "Llama a la API de Maxun desde la pieza HTTP de Activepieces."
     },
     {
      "id": "changedetection",

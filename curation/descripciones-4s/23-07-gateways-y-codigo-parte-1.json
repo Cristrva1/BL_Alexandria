@@ -367,40 +367,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "deepwiki-open": {
-   "que_es": "DeepWiki-Open, implementación abierta de DeepWiki que genera wikis con IA de repos de GitHub, GitLab o Bitbucket, de AsyncFuncAI. Licencia MIT. Es popular (~18k estrellas, sin releases); el README anuncia una versión 2.0, «Grok Wiki», como descarga aparte.",
-   "que_hace": "Analiza la estructura del código, genera documentación, diagramas y un mapa del código para visitas guiadas, y lo organiza como wiki navegable. Admite proveedores Google, OpenAI, OpenRouter, Azure, Bedrock, DashScope y Ollama.",
-   "como_lo_hace": "Tiene backend en Python (FastAPI y adalflow) y frontend Next.js. Se despliega con Docker Compose (incluida una variante con LiteLLM y otra con Ollama local) o con Helm en Kubernetes, configurando claves de proveedor. Los repos privados requieren un token de acceso.",
-   "combina_con": [
-    {
-     "id": "ollama",
-     "motivo": "Configuración y Dockerfile para Ollama local.",
-     "orden_instalacion": "Arranca Ollama y usa la configuración local."
-    },
-    {
-     "id": "litellm",
-     "motivo": "Variante oficial de Docker Compose con LiteLLM.",
-     "orden_instalacion": "Usa `docker-compose-litellm.yml` con tu `litellm-config.yml`."
-    },
-    {
-     "id": "mermaid",
-     "motivo": "Revisar o editar los diagramas generados. (combinación por arquitectura)",
-     "orden_instalacion": "Exporta los diagramas y edítalos con Mermaid."
-    }
-   ],
-   "notas": "Alternativas (elige una): context7. El README actual es muy escueto y remite a Grok Wiki; la relación entre ambos no está clara.",
-   "fuentes": [
-    "https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "AsyncFuncAI/deepwiki-open",
-    "archived": false,
-    "pushed_at": "2026-11-15",
-    "license": "MIT",
-    "primary_language": "Python",
-    "checked_at": "2026-11-15"
-   }
-  },
   "ast-grep": {
    "que_es": "ast-grep (sg), CLI en Rust para búsqueda estructural, lint y reescritura de código, de @HerringtonDarkholme. Licencia MIT. Es activa (~17k estrellas, 0.51.2).",
    "que_hace": "Busca código con patrones escritos como código normal, usando `$VAR` como comodín para nodos del AST. Permite crear reglas de lint en YAML y aplicar reescrituras masivas. Soporta muchos lenguajes y tiene un playground online.",

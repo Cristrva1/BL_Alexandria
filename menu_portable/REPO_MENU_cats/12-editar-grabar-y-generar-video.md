@@ -311,36 +311,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `blender`, `ffmpeg`, `comfyui`
 
-## `palmier-pro`
-role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,ai-video,claude,macos,mcp,seedance2,swift,video-editor
-
-**Qué es:** Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales.
-**Stack:** Apple Silicon; macOS 26; binario y licencia de su versión; cliente opcional
-**Acceso y costes:**
-- API de IA: API de IA opcional. Las versiones posteriores a 0.7.6 son binarias propietarias; agente y modelos tienen costes propios según ruta
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: Modelo local no documentado. El código GPL histórico no concede automáticamente la licencia de los binarios actuales; MCP local HTTP está documentado para Claude y Codex
-- Coste: El coste depende del proveedor o la ruta. Las versiones posteriores a 0.7.6 son binarias propietarias; agente y modelos tienen costes propios según ruta
-- Equipo: Preparación según la ruta elegida. Apple Silicon; macOS 26; binario y licencia de su versión; cliente opcional
-**Repo:** https://github.com/palmier-io/palmier-pro
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/palmier-io/palmier-pro/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar cortes con un agente; Revisar una secuencia desde herramientas externas
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre una copia de un proyecto y consulta su timeline mediante MCP antes de editar
-**Qué comprobar:** El agente identifica pistas y clips del proyecto correcto
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `ffmpeg`
-
 ## `short-video-factory`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux
 

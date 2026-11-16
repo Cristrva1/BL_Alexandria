@@ -127,38 +127,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `browser-harness`, `claude-code`, `ollama`
 **Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`
 
-## `camofox-browser`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=navegador,ai-agent,anti-bot,antidetect-browser,automation,bot-detection,browser-automation,cloudflare-bypass
-
-**Qué es:** Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.
-**Stack:** Node o Docker; browser descargado; servidor REST; adapter MCP opcional; sitio de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El browser y adaptador no requieren API de modelo; hosting, proxy y agente tienen costes separados
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. El MCP stdio documenta Claude Code, Codex y Antigravity y necesita el servidor REST activo; stealth no garantiza acceso ni compatibilidad universal con las políticas de un sitio
-- Coste: Sin pago a un modelo en la ruta básica. El browser y adaptador no requieren API de modelo; hosting, proxy y agente tienen costes separados
-- Equipo: Preparación según la ruta elegida. Node o Docker; browser descargado; servidor REST; adapter MCP opcional; sitio de prueba
-**Repo:** https://github.com/jo-inc/camofox-browser
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/jo-inc/camofox-browser && cd camofox-browser
-npm install && npm start
-# -> http://localhost:9377
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar automatización de una web propia; Evaluar una herramienta de navegación para agentes
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Arranca el servidor y consulta una página propia con snapshot antes de conectar cuentas
-**Qué comprobar:** Puedes distinguir REST server, MCP adapter y sesión del browser
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openclaw`, `yt-dlp`, `hermes-agent`
-
 ## `lightpanda`
 role=runtime · exec=local · setup=easy · mcp=True · prov=— · tags=browser,scraping
 
@@ -312,7 +280,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una página de prueba y verifica un elemento mediante WebDriver
 **Qué comprobar:** Puedes comprobar que la sesión controla el navegador correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mitmproxy`, `n8n`, `claude-code`
+**Combina con:** `mitmproxy`, `activepieces`, `claude-code`
 **Alternativas (elige una):** `playwright`, `puppeteer`
 
 ## `skyvern`
@@ -343,7 +311,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Define una tarea de lectura de página y revisa acciones y extracción antes de permitir envíos
 **Qué comprobar:** Puedes contrastar los pasos con la web
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `ollama`, `n8n`
+**Combina con:** `playwright`, `ollama`, `activepieces`
 **Alternativas (elige una):** `browser-use`, `stagehand`, `computer-use-preview`
 
 ## `stagehand`

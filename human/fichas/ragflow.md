@@ -27,7 +27,7 @@ Se despliega con Docker Compose (Docker ≥ 24.0.0, Compose ≥ v2.26.1) y una c
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Ollama](ollama.md) | La guía oficial explica cómo usar modelos locales de Ollama como LLM y embeddings. | Ollama accesible desde los contenedores (no uses localhost); después añade el proveedor en RAGFlow. |
-| [n8n](n8n.md) | Automatizar la carga de documentos o consultar bases de conocimiento a través de su API HTTP (combinación por arquitectura). | Crea una clave de API en RAGFlow y úsala desde nodos HTTP. |
+| [activepieces](activepieces.md) | Automatizar la carga de documentos o consultar bases de conocimiento a través de su API HTTP (combinación por arquitectura). | Crea una clave de API en RAGFlow y úsala desde la pieza HTTP de Activepieces. |
 | [langfuse](langfuse.md) | Observar las llamadas a LLM de los flujos (combinación por arquitectura; [DATO NO VERIFICADO: integración nativa]). | Langfuse en marcha con claves de proyecto antes de configurarlo. |
 
 **Notas:** Alternativas (elige una): dify, lightrag. El puerto 80 puede chocar con otros servicios web del mismo servidor.

@@ -221,8 +221,8 @@
    "como_lo_hace": "Es un README; no requiere instalación. Comprueba la vigencia de cada API, porque muchas cambian de condiciones o desaparecen.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Conectar APIs de la lista en flujos con el nodo HTTP Request. (combinación por arquitectura)",
+     "id": "activepieces",
+     "motivo": "Conectar APIs de la lista en flujos con la pieza HTTP. (combinación por arquitectura)",
      "orden_instalacion": "Elige la API, revisa su autenticación y crea el flujo."
     },
     {
@@ -231,9 +231,9 @@
      "orden_instalacion": "Usa primero la API pública y recurre a Firecrawl solo si no existe."
     },
     {
-     "id": "treg",
-     "motivo": "Catálogo de herramientas de pago por llamada como alternativa a APIs gratuitas. (combinación por arquitectura)",
-     "orden_instalacion": "Compara coste y condiciones antes de elegir."
+     "id": "claude-code",
+     "motivo": "Un agente de código puede elegir una API de la lista y escribir el cliente para consumirla. (combinación por arquitectura)",
+     "orden_instalacion": "Comprueba vigencia y condiciones de la API antes de integrarla."
     }
    ],
    "notas": "Sin alternativas declaradas. Parte del contenido destacado es publicidad del patrocinador.",
@@ -454,41 +454,6 @@
     "license": "Apache-2.0",
     "primary_language": "Java",
     "latest_release": "2.0 (2026-10-10)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "treg": {
-   "que_es": "Treg, un registro de herramientas para agentes que se presenta como «OpenRouter para herramientas», de Superdesign. Licencia Apache 2.0 con términos adicionales que prohíben ofrecerlo como servicio de registro competidor (no es una licencia OSI estándar; GitHub muestra NOASSERTION). Es reciente (creado en julio de 2026, ~8k estrellas).",
-   "que_hace": "Con una URL y un token, el agente busca y llama miles de endpoints de muchos proveedores (SEO, redes sociales, enriquecimiento de personas y empresas, anuncios, scraping, generación de imagen y vídeo) pagando por llamada, sin registrarse en cada proveedor. Los equipos también registran sus propias claves, conexiones OAuth, CLIs y skills, y las credenciales nunca salen del servidor. Hay llamadas anónimas gratuitas y $1 de crédito inicial.",
-   "como_lo_hace": "Se instala el CLI con `curl -fsSL https://treg.to/install.sh | sh` o como plugin de Claude Code (`/plugin install treg@treg`); también se puede autoalojar el registro. Las llamadas de pago usan el saldo prepago del equipo.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Plugin oficial de Claude Code.",
-     "orden_instalacion": "Instala el plugin y configura el token."
-    },
-    {
-     "id": "public-apis",
-     "motivo": "Comprobar si existe una API gratuita antes de pagar por llamada. (combinación por arquitectura)",
-     "orden_instalacion": "Busca en public-apis y usa Treg solo para lo que no sea gratuito."
-    },
-    {
-     "id": "skillspector",
-     "motivo": "Revisar las skills que el equipo registra. (combinación por arquitectura)",
-     "orden_instalacion": "Escanea cada `SKILL.md` antes de registrarla."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Revisa el script de instalación antes de ejecutarlo. Las herramientas de enriquecimiento de personas implican datos personales.",
-   "fuentes": [
-    "https://github.com/superdesigndev/treg/blob/main/README.md",
-    "https://treg.to"
-   ],
-   "github": {
-    "name_with_owner": "superdesigndev/treg",
-    "archived": false,
-    "pushed_at": "2026-11-16",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "Python",
     "checked_at": "2026-11-15"
    }
   }

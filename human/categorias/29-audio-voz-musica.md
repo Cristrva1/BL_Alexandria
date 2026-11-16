@@ -4,7 +4,7 @@
 
 Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta.
 
-25 repos · 5 secciones
+24 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -22,7 +22,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 5 repos
 - [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 11 repos
 - [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 3 repos
-- [Música y audio generativo](#música-y-audio-generativo) — 3 repos
+- [Música y audio generativo](#música-y-audio-generativo) — 2 repos
 - [Procesamiento y limpieza de audio](#procesamiento-y-limpieza-de-audio) — 3 repos
 
 ## Transcripción (voz a texto)
@@ -65,7 +65,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Tu objetivo encaja con estos ejemplos: Explorar generación de música; Estudiar sonidos a partir de texto | Sin clave propia de API de IA en la ruta básica |
 | [ACE-Step-1.5](../fichas/ace-step-1-5.md) | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | Tu objetivo encaja con estos ejemplos: Explorar una base musical de prueba; Comparar variantes de generación local | Sin clave propia de API de IA en la ruta básica |
-| [Music-Megathread](../fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | Tu objetivo encaja con estos ejemplos: Encontrar un reproductor; Explorar herramientas de audio | Sin clave propia de API de IA en la ruta básica |
 
 ## Procesamiento y limpieza de audio
 

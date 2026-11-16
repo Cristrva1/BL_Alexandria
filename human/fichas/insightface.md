@@ -30,7 +30,7 @@ Se usa mediante el paquete Python `insightface` (que descarga los modelos autom�
 | [Deep-Live-Cam](deep-live-cam.md) | Usa su modelo inswapper. | Viene como dependencia. |
 | [LivePortrait](liveportrait.md) | Detección y recorte facial. (combinación por arquitectura) | Viene como dependencia en la ruta por defecto. |
 
-**Notas:** Alternativas (elige una): face-recognition. Los pesos no permiten uso comercial.
+**Notas:** Sin alternativas declaradas. Los pesos no permiten uso comercial.
 
 Estado en GitHub: activo · último push 2026-10-19 · última versión publicada model-zoo (2026-09-03) (consultado el 2026-11-15).
 
@@ -101,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; runtime ONNX; modelos con licencia adecuada; datos autorizados
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [face_recognition](face-recognition.md) | 56.9k | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. |
 
 ## Enlaces
 

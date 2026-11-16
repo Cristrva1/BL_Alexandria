@@ -4,7 +4,7 @@
 
 Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.
 
-24 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
+22 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
 
 ## Opciones para empezar
 
@@ -40,25 +40,14 @@ Modelos y herramientas de visión por computador.
 
 Herramientas especializadas en caras y retratos.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=vision&topic=vision-rostros)
+[Explorar 4 repos](../../docs/index.html#/explorar?area=vision&topic=vision-rostros)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Deep-Live-Cam](../fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica |
-| [face_recognition](../fichas/face-recognition.md) | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. | Sin clave propia de API de IA en la ruta básica |
 | [FaceFusion](../fichas/facefusion.md) | Plataforma para intercambio y mejora de rostros en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
 | [InsightFace](../fichas/insightface.md) | Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. | Sin clave propia de API de IA en la ruta básica |
 | [LivePortrait](../fichas/liveportrait.md) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | Sin clave propia de API de IA en la ruta básica |
-
-### Sensores y percepción espacial
-
-Observar y analizar información del entorno.
-
-[Explorar 1 repos](../../docs/index.html#/explorar?area=vision&topic=vision-espacial)
-
-| Repositorio | Para qué sirve | API de IA |
-|---|---|---|
-| [RuView](../fichas/ruview.md) | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. | API de IA opcional |
 
 ### Mapas, OSINT y fotogrametría
 

@@ -121,7 +121,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Vigila un texto en una página propia y modifícalo una vez para revisar la diferencia
 **Qué comprobar:** El historial identifica el cambio concreto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `claude-code`, `n8n`
+**Combina con:** `ollama`, `claude-code`, `activepieces`
 
 ## `crawl4ai`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=scraping,python
@@ -152,7 +152,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte una página de prueba a Markdown y después extrae dos campos sin LLM
 **Qué comprobar:** Puedes comparar texto y campos con la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `qdrant`, `n8n`, `litellm`
+**Combina con:** `ollama`, `qdrant`, `litellm`
 **Alternativas (elige una):** `jina-reader`
 
 ## `crawlee`
@@ -273,7 +273,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae título y contenido de una página pública de prueba y revisa el Markdown
 **Qué comprobar:** Se conserva el contenido principal con la URL de origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `claude-code`, `gpt-researcher`
+**Combina con:** `activepieces`, `claude-code`, `gpt-researcher`
 **Alternativas (elige una):** `jina-reader`
 
 ## `instaloader`
@@ -335,7 +335,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Antepon r.jina.ai a una URL pública y compara el texto devuelto con la página
 **Qué comprobar:** Obtienes contenido legible con su dirección de origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `open-webui`, `llama-index`
+**Combina con:** `activepieces`, `open-webui`, `llama-index`
 **Alternativas (elige una):** `firecrawl`, `crawl4ai`
 
 ## `last30days-skill`
@@ -429,7 +429,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Graba un robot que recoge nombres y precios de una página de prueba
 **Qué comprobar:** El robot devuelve filas que puedes repetir y comparar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `n8n`, `changedetection`
+**Combina con:** `claude-code`, `activepieces`, `changedetection`
 **Alternativas (elige una):** `scrapegraph-ai`, `llm-scraper`
 
 ## `scrapegraph-ai`

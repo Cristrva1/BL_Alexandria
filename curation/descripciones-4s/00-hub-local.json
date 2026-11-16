@@ -5,7 +5,7 @@
  "repos": {
   "guia": {
    "que_es": "Guía (histórica), entrada interna del hub BL_Alexandria, no un proyecto externo. Corresponde a la guía editorial original de la biblioteca; su texto escrito a mano se incorporó a las fichas, y hoy `Guia.md` se genera automáticamente desde el índice. No tiene repositorio en GitHub ni licencia propia.",
-   "que_hace": "`Guia.md` reúne las 635 fichas en un solo documento agrupado por categoría y subcategoría, con leyenda de etiquetas y mapa de categorías, para leer de corrido o buscar con Ctrl+F. Sirve como historial editorial y referencia de redacción, no como herramienta para otros proyectos.",
+   "que_hace": "`Guia.md` reúne todas las fichas en un solo documento agrupado por categoría y subcategoría, con leyenda de etiquetas y mapa de categorías, para leer de corrido o buscar con Ctrl+F. Sirve como historial editorial y referencia de redacción, no como herramienta para otros proyectos.",
    "como_lo_hace": "Lo regenera `uv run repo-intelligence guide build` a partir de `INDICE_IA.json` e `INDICE_IA.detalle.json`. No se edita a mano. AGENTS.md pide a los agentes no leer `Guia.md` entero (es para humanos) y consultar el índice. No se instala: forma parte de este repositorio.",
    "combina_con": [
     {

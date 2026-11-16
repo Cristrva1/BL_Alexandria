@@ -62,7 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una plantilla de prueba con campos de texto y firma y completa una vista de ensayo
 **Qué comprobar:** Puedes revisar el documento resultante y la ubicación de los campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `twenty-main`, `stirling-pdf`
+**Combina con:** `activepieces`, `twenty-main`, `stirling-pdf`
 
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
@@ -306,7 +306,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta
 **Qué comprobar:** Puedes abrir el original y localizarlo con su texto OCR
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`, `tesseract`, `n8n`, `erpnext`
+**Combina con:** `ocrmypdf`, `tesseract`, `erpnext`
 
 ## `pdf-craft`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=ocr,library,python
@@ -489,7 +489,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Une dos PDFs de prueba y verifica orden, páginas y metadatos del resultado
 **Qué comprobar:** El archivo final se abre y contiene las páginas esperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`, `n8n`, `paperless-ngx`
+**Combina con:** `ocrmypdf`, `activepieces`, `paperless-ngx`
 **Alternativas (elige una):** `pdfcraft`
 
 ## `tesseract`

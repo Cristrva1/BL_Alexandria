@@ -184,7 +184,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El agente identifica la biblioteca y la versión consultada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `opencode`, `cline`
-**Alternativas (elige una):** `deepwiki-open`
 
 ## `fastmcp`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
@@ -579,7 +578,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una API y verifica autenticación, HTTPS, límites y licencia en su sitio oficial
 **Qué comprobar:** Sabes qué datos devuelve y si podrás usarlos en tu proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `firecrawl`, `treg`
+**Combina con:** `activepieces`, `firecrawl`, `claude-code`
 
 ## `serena`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,coding-agent,code,python
@@ -641,37 +640,6 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Entiendes qué herramientas expone y qué datos puede modificar
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-inspector`, `mcp-use`, `awesome-mcp-servers`
-
-## `treg`
-role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,python
-
-**Qué es:** Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
-**Stack:** Cliente MCP; cuenta o token para funciones que lo requieran
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
-- Coste: El coste depende del proveedor o la ruta. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta
-- Equipo: Preparación según la ruta elegida. Cliente MCP; cuenta o token para funciones que lo requieran
-**Repo:** https://github.com/superdesigndev/treg
-
-**Instalación** [+]:
-
-```
-/plugin marketplace add superdesigndev/treg
-/plugin install treg@treg
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Busca una herramienta del catálogo y consulta precio y esquema antes de ejecutarla
-**Qué comprobar:** Sabes qué parámetros requiere y qué saldo o credencial utilizaría
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `public-apis`, `skillspector`
 
 ## `unity-mcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,c

@@ -4,7 +4,7 @@
 
 Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local.
 
-19 repos · 5 secciones
+15 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -17,11 +17,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Agentes de terminal](#agentes-de-terminal) — 9 repos
+- [Agentes de terminal](#agentes-de-terminal) — 8 repos
 - [Editores y extensiones de código](#editores-y-extensiones-de-código) — 3 repos
 - [Agentes para issues y tareas de ingeniería](#agentes-para-issues-y-tareas-de-ingeniería) — 2 repos
 - [Interfaces para gestionar sesiones](#interfaces-para-gestionar-sesiones) — 2 repos
-- [Desarrollo móvil y de juegos](#desarrollo-móvil-y-de-juegos) — 3 repos
 
 ## Agentes de terminal
 
@@ -34,7 +33,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Open Interpreter](../fichas/open-interpreter.md) | Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. | Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex | Depende de la ruta elegida |
 | [goose](../fichas/goose.md) | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. | Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP | API de IA opcional |
 | [Aider](../fichas/aider.md) | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. | Tu objetivo encaja con estos ejemplos: Corregir una función pequeña; Programar en pareja desde terminal | API de IA opcional |
-| [openclaude](../fichas/openclaude.md) | Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. | Tu objetivo encaja con estos ejemplos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth | API de IA opcional |
 | [MiMo-Code](../fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto | API de IA opcional |
 
 ## Editores y extensiones de código
@@ -58,14 +56,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [T3 Code](../fichas/t3code.md) | Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. | Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex | API de IA opcional |
 | [opencode-manager](../fichas/opencode-manager.md) | Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. | Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil | Depende de la ruta elegida |
-
-## Desarrollo móvil y de juegos
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [dsh-game-studio](../fichas/dsh-game-studio.md) | Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente. | Tu objetivo encaja con estos ejemplos: Crear un minijuego educativo; Prototipar mecánicas con plantillas 2D | API de IA opcional |
-| [dsh-ios](../fichas/dsh-ios.md) | Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles. | Tu objetivo encaja con estos ejemplos: Inspeccionar una interfaz iOS propia; Revisar logs de una app de prueba | Sin clave propia de API de IA en la ruta básica |
-| [dsh-android](../fichas/dsh-android.md) | Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente. | Tu objetivo encaja con estos ejemplos: Inspeccionar una app Android de prueba; Recoger logcat de una app propia | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

@@ -93,36 +93,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `freqtrade`, `vectorbt`, `claude-code`
 
-## `company-pixel-office`
-role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,javascript
-
-**Qué es:** Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo.
-**Stack:** Navegador; servidor estático si ejecutas la fuente
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La demo estática no requiere modelo; assets y datos externos mantienen sus licencias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Es una representación de una mesa de trabajo; ver personajes activos no prueba operaciones ni agentes financieros funcionando
-- Coste: Sin pago a un modelo en la ruta básica. La demo estática no requiere modelo; assets y datos externos mantienen sus licencias
-- Equipo: Preparación según la ruta elegida. Navegador; servidor estático si ejecutas la fuente
-**Repo:** https://github.com/ATK-zk/company-pixel-office
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/ATK-zk/company-pixel-office/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre la demo visual y relaciona cada personaje con el estado que muestra
-**Qué comprobar:** Puedes distinguir representación de interfaz y actividad realmente documentada
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `py-sdk`, `tradingagents`, `claude-code`
-
 ## `daily-stock-analysis`
 role=app · exec=cloud · setup=medium · mcp=False · prov=openai,google · tags=analytics,agents,python
 
@@ -155,7 +125,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza un símbolo de ejemplo sin activar envíos y contrasta fechas y datos del informe
 **Qué comprobar:** Puedes separar precios observados, fuentes y texto generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `n8n`, `litellm`
+**Combina con:** `ollama`, `activepieces`, `litellm`
 
 ## `dexter`
 role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,typescript
@@ -437,71 +407,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina configuración y rutas de órdenes antes de conectar una wallet o habilitar seguimiento
 **Qué comprobar:** Puedes identificar las acciones que consultarían datos y las que moverían fondos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `autohedge`, `grafana`, `n8n`
-
-## `pixel-hedge-fund`
-role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,svelte
-
-**Qué es:** Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados.
-**Stack:** Node; SvelteKit; datos de prueba; conexión a fuentes si corresponde
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita modelo para la interfaz; fuentes e infraestructura pueden tener costes
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La producción no usa el fallback SAMPLE de desarrollo; los errores o datos ausentes deben permanecer visibles
-- Coste: Sin pago a un modelo en la ruta básica. No necesita modelo para la interfaz; fuentes e infraestructura pueden tener costes
-- Equipo: Preparación según la ruta elegida. Node; SvelteKit; datos de prueba; conexión a fuentes si corresponde
-**Repo:** https://github.com/jaypolanco96/pixel-hedge-fund
-
-**Instalación** [+]:
-
-```
-cd pixel-hedge-fund   # repo root
-npm install
-npm run dev -- --port 5173
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre la interfaz de desarrollo y comprueba si muestra SAMPLE o datos de un exchange
-**Qué comprobar:** Puedes reconocer el origen y la ausencia de datos sin confundirla con un precio cero
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ccxt`, `tradingagents`, `claude-code`
-
-## `pixelfund-ai`
-role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,typescript
-
-**Qué es:** Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales.
-**Stack:** Node >=20; npm >=10; Docker o PostgreSQL y Redis; claves opcionales según función
-**Acceso y costes:**
-- API de IA: API de IA opcional. La interfaz no obliga a modelo; análisis necesita proveedor AI y datos Finnhub para ciertas funciones; consumo y cupos son externos
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento
-- Coste: El coste depende del proveedor o la ruta. La interfaz no obliga a modelo; análisis necesita proveedor AI y datos Finnhub para ciertas funciones; consumo y cupos son externos
-- Equipo: Preparación según la ruta elegida. Node >=20; npm >=10; Docker o PostgreSQL y Redis; claves opcionales según función
-**Repo:** https://github.com/kyjwang/PixelFund-AI
-
-**Instalación** [+]:
-
-```
-cp .env.example .env
-npm install
-npm run dev:all
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre System Console tras iniciar la app y revisa disponibilidad de base, Redis, datos y AI
-**Qué comprobar:** Puedes ver qué componentes están listos y cuáles impiden análisis u operaciones virtuales
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tradingagents`, `dexter`, `ollama`
+**Combina con:** `autohedge`, `grafana`, `activepieces`
 
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
@@ -531,7 +437,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Enumera datos públicos de un mercado y revisa su esquema sin autenticar una wallet
 **Qué comprobar:** Puedes contrastar identificadores y datos con la fuente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ccxt`, `company-pixel-office`, `n8n`
+**Combina con:** `ccxt`, `nautilus-trader`, `activepieces`
 
 ## `qlib`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=finanzas,algorithmic-trading,auto-quant,deep-learning,finance,fintech,investment,machine-learning

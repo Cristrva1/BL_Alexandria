@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**77 repos.**
+**76 repos.**
 
 ## ⏳ Diferir
 
@@ -75,7 +75,6 @@ _Pesado: solo si llega a finalista._
 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. |
 | [hudi](fichas/hudi.md) | 🧑‍💻 Procesar datos y trabajar con notebooks | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 | [warp](fichas/warp.md) | 🎨 Animación, gráficos y creación 3D | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. |
-| [RuView](fichas/ruview.md) | 🖼️ Visión artificial, rostros y percepción | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | 🖼️ Visión artificial, rostros y percepción | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 | [openpose](fichas/openpose.md) | 🖼️ Visión artificial, rostros y percepción | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. |
 | [LivePortrait](fichas/liveportrait.md) | 🖼️ Visión artificial, rostros y percepción | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). |

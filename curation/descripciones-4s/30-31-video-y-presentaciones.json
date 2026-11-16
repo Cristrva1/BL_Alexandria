@@ -3,41 +3,6 @@
  "checked_at": "2026-11-15",
  "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
  "repos": {
-  "hypit": {
-   "que_es": "Hypit, herramienta para «clonar» vídeos virales con agentes de IA, de hypit-ai. Licencia «Hypit Open Source License»: Apache-2.0 con condiciones que prohíben, sin autorización, ofrecerlo como servicio multi-tenant, la redistribución comercial y quitar el logo o el copyright de la CLI y de los resultados. Creado en julio de 2026, tiene ~30k estrellas (v0.3.2).",
-   "que_hace": "A partir de un vídeo de referencia, una plantilla o una descripción, el agente genera variantes de vídeo con modelos de generación (por ejemplo, Seedance). Los vídeos producidos pertenecen al usuario.",
-   "como_lo_hace": "Requiere Node.js 22.15+ y un agente de código. Los modelos se usan vía HypiHub (servicio alojado recomendado), una API propia o modelos locales, cada uno con sus propios costes.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Agente que lo ejecuta. (combinación por arquitectura)",
-     "orden_instalacion": "Instala Hypit y pide el vídeo."
-    },
-    {
-     "id": "ffmpeg",
-     "motivo": "Procesado de medios. (combinación por arquitectura)",
-     "orden_instalacion": "Instala FFmpeg."
-    },
-    {
-     "id": "comfyui",
-     "motivo": "Generación local en lugar de servicios alojados. (combinación por arquitectura)",
-     "orden_instalacion": "Configura un backend local si se admite."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Licencia no OSI (Apache con condiciones). Clonar vídeos virales plantea dudas de derechos de autor sobre el material de referencia.",
-   "fuentes": [
-    "https://github.com/hypit-ai/hypit/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "hypit-ai/hypit",
-    "archived": false,
-    "pushed_at": "2026-11-14",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "TypeScript",
-    "latest_release": "v0.3.2 (2026-11-11)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "brag": {
    "que_es": "/brag, skill que convierte el proyecto que has construido en un vídeo de lanzamiento corto y compartible, con música, movimiento y textos para redes, de latent-spaces. Licencia MIT. Creado en junio de 2026, tiene ~22k estrellas (v0.6.0). Tiene versión web alojada (letsbrag.app).",
    "que_hace": "Analiza tu proyecto o sitio y produce un vídeo promocional con un comando, usando HyperFrames.",

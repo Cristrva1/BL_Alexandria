@@ -30,7 +30,7 @@ Se inicia con `npx create-video@latest` (Node.js). Tiene APIs de Node para rende
 | [Remotion Superpowers](remotion-superpowers.md) | Orquestación de voz, música y material. | Instala el plugin en el agente. |
 | [GSAP](gsap.md) | Animaciones avanzadas dentro de composiciones. (combinación por arquitectura) | Controla timelines por frame. |
 
-**Notas:** Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial. Se quita open-generative-ai de las combinaciones (sin integración documentada).
+**Notas:** Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.543 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 

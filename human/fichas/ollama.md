@@ -27,7 +27,6 @@ Está escrito en Go y declara llama.cpp como backend. Expone una API REST local 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Open WebUI](open-webui.md) | Interfaz de chat tipo ChatGPT que se conecta a Ollama con `OLLAMA_BASE_URL`. | Ollama primero, o usa la imagen `:ollama` de Open WebUI que ya lo incluye; no instales los dos por separado si usas esa imagen. |
-| [n8n](n8n.md) | Los nodos de IA de n8n usan Ollama como proveedor local mediante una credencial documentada. | Ollama primero; desde un n8n en Docker apunta a la dirección del host, no a `localhost`. |
 | [litellm](litellm.md) | LiteLLM trae los proveedores `ollama` y `ollama_chat` y pone los modelos locales detrás de la misma API compatible con OpenAI que los de la nube. | Ollama primero y luego declara sus modelos en la configuración de LiteLLM. |
 | [crawl4ai](crawl4ai.md) | La extracción con LLM de Crawl4AI acepta modelos de Ollama (ejemplo `ollama/llama3.3`), así que puedes estructurar páginas sin API de pago. | Ollama con el modelo descargado antes de lanzar la extracción. |
 | [Claude Code](claude-code.md) | `ollama launch claude` configura Claude Code para usar un modelo de Ollama. | Ollama primero con el modelo descargado; luego `ollama launch claude`. |

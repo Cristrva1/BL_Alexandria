@@ -33,12 +33,11 @@ flowchart LR
 | 2 | [codegraph](../fichas/codegraph.md) | Grafo de código pre-indexado que se sincroniza con los cambios | 77.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 3 | [GitNexus](../fichas/gitnexus.md) | Explora dependencias y flujos sin servidor | 48.5k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 4 | [graphify](../fichas/graphify.md) | Grafo de conocimiento con código, docs y esquemas | 148k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 5 | [DeepWiki Open](../fichas/deepwiki-open.md) | Genera una wiki navegable del repositorio | 18.4k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
-| 6 | [Claude Code](../fichas/claude-code.md) | Agente que consulta los índices y edita el código | 156k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 5 | [Claude Code](../fichas/claude-code.md) | Agente que consulta los índices y edita el código | 156k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta
 
-CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. DeepWiki Open produce documentación para humanos. Claude Code (o Codex) usa todo eso como contexto barato.
+CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. Claude Code (o Codex) usa todo eso como contexto barato.
 
 ## 🚫 Cuándo NO usar esta receta
 
@@ -49,7 +48,6 @@ Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con 
 - En lugar de [Repomix](../fichas/repomix.md): [GitNexus](../fichas/gitnexus.md)
 - En lugar de [codegraph](../fichas/codegraph.md): [codebase-memory-mcp](../fichas/codebase-memory-mcp.md), [Serena](../fichas/serena.md)
 - En lugar de [GitNexus](../fichas/gitnexus.md): [Repomix](../fichas/repomix.md), [codebase-memory-mcp](../fichas/codebase-memory-mcp.md), [Serena](../fichas/serena.md)
-- En lugar de [DeepWiki Open](../fichas/deepwiki-open.md): [Context7](../fichas/context7.md)
 - En lugar de [Claude Code](../fichas/claude-code.md): [Codex CLI](../fichas/codex.md), [Gemini CLI](../fichas/gemini-cli.md), [OpenCode](../fichas/opencode.md)
 
 ---

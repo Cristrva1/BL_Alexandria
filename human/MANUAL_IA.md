@@ -1648,8 +1648,6 @@ Conecta DeepSeek Harness con emuladores o Android por USB mediante ADB.
 
 - Que se registren herramientas no demuestra que ADB o el dispositivo estén listos.
 
-Fichas del catálogo: [dsh-android](fichas/dsh-android.md)
-
 ### Fuentes
 
 - [Documentación oficial del proyecto o servicio](https://github.com/ZSeven-W/dsh-android) · 2026-11-15
@@ -1688,8 +1686,6 @@ Permite trabajar con simulador de iOS y rutas documentadas para iPhone conectado
 ### Límites
 
 - No se presenta como una instalación desde Windows ni como control libre de cualquier iPhone.
-
-Fichas del catálogo: [dsh-ios](fichas/dsh-ios.md)
 
 ### Fuentes
 
@@ -2443,8 +2439,6 @@ Conecta eventos y aplicaciones con flujos visuales; puede incorporar IA como una
 ### Límites
 
 - Un flujo que envía mensajes o crea registros puede duplicarlos si se repite sin control.
-
-Fichas del catálogo: [n8n](fichas/n8n.md) · [n8n-mcp](fichas/n8n-mcp.md) · [n8n-skills](fichas/n8n-skills.md)
 
 ### Fuentes
 

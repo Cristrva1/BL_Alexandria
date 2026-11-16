@@ -27,7 +27,7 @@ Es TypeScript con Angular para la web y la extensión, y Electron para el escrit
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [vaultwarden](vaultwarden.md) | Usar los clientes oficiales con un servidor autoalojado ligero; Vaultwarden se declara compatible con los clientes oficiales. | Despliega Vaultwarden con HTTPS y, en el cliente, cambia la URL del servidor a la tuya. |
-| [n8n](n8n.md) | Gestionar colecciones, grupos y miembros de una organización Bitwarden con el nodo oficial de n8n (usa la API de organizaciones, no da acceso a los elementos del vault). | Crea la clave de API de la organización y configura la credencial en n8n. |
+| [activepieces](activepieces.md) | Gestionar colecciones, grupos y miembros de una organización Bitwarden llamando a su API pública de organizaciones con la pieza HTTP (no da acceso a los elementos del vault). (combinación por arquitectura) | Crea la clave de API de la organización y guárdala como secreto en Activepieces. |
 | [Claude Code](claude-code.md) | Inyectar secretos en scripts con la CLI `bw` en lugar de escribirlos en archivos. (combinación por arquitectura) (no des al agente la sesión desbloqueada del vault completo) | Instala `@bitwarden/cli` y usa una cuenta o colección limitada para la automatización. |
 
 **Notas:** Sin alternativas declaradas. Revisa la licencia antes de reutilizar código de `bitwarden_license/`.

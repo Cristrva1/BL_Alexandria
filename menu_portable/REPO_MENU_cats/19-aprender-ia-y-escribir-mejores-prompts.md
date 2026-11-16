@@ -424,7 +424,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un proveedor y aplica un patrón de resumen a una nota breve que ya conozcas
 **Qué comprobar:** Obtienes un resumen que puedes contrastar con la nota original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `yt-dlp`, `open-webui`, `n8n`
+**Combina con:** `ollama`, `yt-dlp`, `open-webui`
 **Alternativas (elige una):** `prompts-chat`
 
 ## `generative-ai-for-beginners`

@@ -6,17 +6,15 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 
 | Repo | Alternativas declaradas |
 |---|---|
-| [activepieces](fichas/activepieces.md) | [n8n](fichas/n8n.md) |
 | [Appsmith](fichas/appsmith.md) | [ToolJet](fichas/tooljet.md), [Budibase](fichas/budibase.md), [NocoDB](fichas/nocodb.md) |
 | [Budibase](fichas/budibase.md) | [Appsmith](fichas/appsmith.md), [ToolJet](fichas/tooljet.md), [NocoDB](fichas/nocodb.md) |
-| [huginn](fichas/huginn.md) | [n8n](fichas/n8n.md), [Node-RED](fichas/node-red.md) |
+| [huginn](fichas/huginn.md) | [Node-RED](fichas/node-red.md) |
 | [Kestra](fichas/kestra.md) | [Windmill](fichas/windmill.md), [Trigger.dev](fichas/trigger-dev.md) |
-| [n8n](fichas/n8n.md) | [activepieces](fichas/activepieces.md), [huginn](fichas/huginn.md), [Windmill](fichas/windmill.md), [Node-RED](fichas/node-red.md) |
 | [NocoDB](fichas/nocodb.md) | [Appsmith](fichas/appsmith.md), [Budibase](fichas/budibase.md) |
-| [Node-RED](fichas/node-red.md) | [n8n](fichas/n8n.md), [huginn](fichas/huginn.md) |
+| [Node-RED](fichas/node-red.md) | [huginn](fichas/huginn.md) |
 | [ToolJet](fichas/tooljet.md) | [Appsmith](fichas/appsmith.md), [Budibase](fichas/budibase.md) |
 | [Trigger.dev](fichas/trigger-dev.md) | [Windmill](fichas/windmill.md), [Kestra](fichas/kestra.md) |
-| [Windmill](fichas/windmill.md) | [n8n](fichas/n8n.md), [Kestra](fichas/kestra.md), [Trigger.dev](fichas/trigger-dev.md) |
+| [Windmill](fichas/windmill.md) | [Kestra](fichas/kestra.md), [Trigger.dev](fichas/trigger-dev.md) |
 | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) | [superpowers](fichas/superpowers.md) |
 | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md), [wshobson/agents](fichas/wshobson-agents.md) |
 | [Awesome Agent Skills](fichas/awesome-agent-skills.md) | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md) |
@@ -59,7 +57,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Scrapegraph-ai](fichas/scrapegraph-ai.md) | [Maxun](fichas/maxun.md) |
 | [Vane](fichas/vane.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md) | [Playwright MCP](fichas/playwright-mcp.md), [Browser Harness](fichas/browser-harness.md) |
-| [Context7](fichas/context7.md) | [DeepWiki Open](fichas/deepwiki-open.md) |
 | [FastMCP](fichas/fastmcp.md) | [MCP Python SDK](fichas/mcp-python-sdk.md) |
 | [MCP Python SDK](fichas/mcp-python-sdk.md) | [FastMCP](fichas/fastmcp.md) |
 | [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md) | [mcp-use](fichas/mcp-use.md) |
@@ -87,7 +84,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [ast-grep](fichas/ast-grep.md) | [Semgrep](fichas/semgrep.md) |
 | [codebase-memory-mcp](fichas/codebase-memory-mcp.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md) |
 | [codegraph](fichas/codegraph.md) | [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md) |
-| [DeepWiki Open](fichas/deepwiki-open.md) | [Context7](fichas/context7.md) |
 | [GitNexus](fichas/gitnexus.md) | [Repomix](fichas/repomix.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md) |
 | [Repomix](fichas/repomix.md) | [GitNexus](fichas/gitnexus.md) |
 | [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md), [onyx](fichas/onyx.md) |
@@ -127,12 +123,10 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [echarts](fichas/echarts.md) | [D3.js](fichas/d3.md), [Chart.js](fichas/chart-js.md), [Recharts](fichas/recharts.md) |
 | [Matomo](fichas/matomo.md) | [Umami](fichas/umami.md), [Plausible Analytics](fichas/plausible.md) |
 | [metabase](fichas/metabase.md) | [Apache Superset](fichas/superset.md), [Redash](fichas/redash.md) |
-| [PandasAI](fichas/pandas-ai.md) | [WrenAI](fichas/wrenai.md) |
 | [Plausible Analytics](fichas/plausible.md) | [Umami](fichas/umami.md), [Matomo](fichas/matomo.md) |
 | [Recharts](fichas/recharts.md) | [Chart.js](fichas/chart-js.md), [echarts](fichas/echarts.md) |
 | [Redash](fichas/redash.md) | [metabase](fichas/metabase.md), [Apache Superset](fichas/superset.md) |
 | [Umami](fichas/umami.md) | [Plausible Analytics](fichas/plausible.md), [Matomo](fichas/matomo.md) |
-| [WrenAI](fichas/wrenai.md) | [PandasAI](fichas/pandas-ai.md) |
 | [ComfyUI](fichas/comfyui.md) | [WanGP](fichas/wan2gp.md) |
 | [InvokeAI](fichas/invokeai.md) | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) |
 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | [InvokeAI](fichas/invokeai.md) |
@@ -230,9 +224,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [threejs-skills](fichas/threejs-skills.md) | [3dviz-pro-max](fichas/3dviz-pro-max.md) |
 | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md) | [taste-skill](fichas/taste-skill.md), [impeccable](fichas/impeccable.md), [hallmark](fichas/hallmark.md) |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | [FaceFusion](fichas/facefusion.md) |
-| [face_recognition](fichas/face-recognition.md) | [InsightFace](fichas/insightface.md) |
 | [FaceFusion](fichas/facefusion.md) | [Deep-Live-Cam](fichas/deep-live-cam.md) |
-| [InsightFace](fichas/insightface.md) | [face_recognition](fichas/face-recognition.md) |
 | [CosyVoice](fichas/cosyvoice.md) | [Fish Speech](fichas/fish-speech.md), [IndexTTS](fichas/index-tts.md) |
 | [edge-tts](fichas/edge-tts.md) | [Kokoro](fichas/kokoro.md) |
 | [faster-whisper](fichas/faster-whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |

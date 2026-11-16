@@ -167,9 +167,9 @@
      "orden_instalacion": "vLLM en un equipo con GPU; registra su URL como proveedor compatible."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar la ingesta de fuentes o la generación de podcasts con su API REST (combinación por arquitectura).",
-     "orden_instalacion": "Protege la API (puerto 5055) antes de exponerla a n8n."
+     "orden_instalacion": "Protege la API (puerto 5055) antes de exponerla a Activepieces."
     }
    ],
    "notas": "Alternativas (elige una): deeptutor, surfsense. En redes compartidas pon una contraseña o un proxy delante. Se retiraron las combinaciones antiguas con odysseus (se solapa como espacio de trabajo) y markitdown (no documentada).",

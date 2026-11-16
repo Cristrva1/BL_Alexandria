@@ -62,7 +62,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Autentica tu cuenta y consulta el estado de una pull request de un repositorio de prueba
 **Qué comprobar:** Ves el estado que coincide con la interfaz de GitHub
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `github-mcp-server`, `n8n`
+**Combina con:** `claude-code`, `github-mcp-server`, `activepieces`
 
 ## `codebase-memory-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=code,mcp,memory
@@ -125,68 +125,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `headroom`
 **Alternativas (elige una):** `codebase-memory-mcp`, `serena`
-
-## `deepwiki-open`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,google,local · tags=code,docs,python
-
-**Qué es:** Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki.
-**Stack:** Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
-- Coste: El coste depende del proveedor o la ruta. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes
-- Equipo: Preparación según la ruta elegida. Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos
-**Repo:** https://github.com/AsyncFuncAI/deepwiki-open
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Genera una wiki de un repositorio pequeño y contrasta una página con sus archivos
-**Qué comprobar:** La explicación enlaza partes del código que puedes abrir
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `litellm`, `mermaid`
-**Alternativas (elige una):** `context7`
-
-## `dsh-qa`
-role=library · exec=local · setup=medium · mcp=True · prov=— · tags=calidad,plugin,javascript
-
-**Qué es:** Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles.
-**Stack:** DeepSeek Harness; Node >=24.11; driver de navegador; app de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La exploración usa el agente DSH; replay y drivers consumen recursos; los drivers de escritorio o dispositivos tienen requisitos adicionales
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Documenta servidor MCP stdio independiente; requiere configurar drivers y permisos y no hereda todos los hooks o superficies de DSH en otros clientes
-- Coste: Consumo del agente que ya utilizas. La exploración usa el agente DSH; replay y drivers consumen recursos; los drivers de escritorio o dispositivos tienen requisitos adicionales
-- Equipo: Preparación según la ruta elegida. DeepSeek Harness; Node >=24.11; driver de navegador; app de prueba
-**Repo:** https://github.com/ZSeven-W/dsh-qa
-
-**Instalación** [+]:
-
-```
-npm install @zseven-w/dsh-qa           # the orchestrator
-npm install @zseven-w/dsh-browser      # browser sessions
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Repetir una prueba de registro en desarrollo; Guardar evidencia de un fallo de interfaz
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Explora un formulario local, guarda evidencia y exporta un recorrido para repetirlo
-**Qué comprobar:** El replay comprueba acciones y estados del recorrido observado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `browser-use`, `claude-code`
 
 ## `floorplan`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=codigo,skill,javascript

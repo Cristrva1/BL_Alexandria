@@ -616,7 +616,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Descarga un modelo pequeño y formula una pregunta antes de conectarlo a un agente
 **Qué comprobar:** Puedes identificar el modelo ejecutado y ver la respuesta en tu equipo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-webui`, `n8n`, `litellm`, `crawl4ai`, `claude-code`
+**Combina con:** `open-webui`, `litellm`, `crawl4ai`, `claude-code`
 **Alternativas (elige una):** `llama-cpp`, `localai`, `llamafile`
 
 ## `open-notebook`
@@ -647,7 +647,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un notebook con dos fuentes y pregunta por un dato con referencia
 **Qué comprobar:** Puedes identificar la fuente y corregir un resumen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `vllm`, `n8n`
+**Combina con:** `ollama`, `vllm`, `activepieces`
 **Alternativas (elige una):** `deeptutor`, `surfsense`
 
 ## `open-webui`

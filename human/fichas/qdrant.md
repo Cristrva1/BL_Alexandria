@@ -27,7 +27,7 @@ Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST de
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Docling](docling.md) | Prepara documentos en Markdown/JSON limpio antes de generar los embeddings que se guardan en Qdrant. | Independientes; Qdrant debe estar en marcha al indexar. |
-| [n8n](n8n.md) | Nodo Qdrant Vector Store para RAG dentro de flujos visuales. | Qdrant primero; después la credencial en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos (sustituye a la antigua combinación con n8n). | Qdrant en marcha con sus credenciales; después añade la pieza `qdrant` en un flujo de Activepieces. |
 | [LlamaIndex](llama-index.md) | Integración documentada como almacén vectorial de LlamaIndex. | Qdrant en marcha y cliente `qdrant-client` en el entorno Python. |
 | [langchain](langchain.md) | Integración documentada como vector store de LangChain. | Igual que con LlamaIndex; elige un solo framework para no duplicar la lógica de RAG. |
 | [crawl4ai](crawl4ai.md) | Ingesta de páginas web en Markdown fragmentado para indexar. (combinación por arquitectura) | Rastrea, genera embeddings e inserta en Qdrant. |
@@ -36,7 +36,7 @@ Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST de
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.20.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/qdrant/qdrant/blob/master/README.md) · [2](https://qdrant.tech/documentation/data-management/docling/) · [3](https://qdrant.tech/documentation/frameworks/n8n/) · [4](https://qdrant.tech/documentation/frameworks/llama-index/) · [5](https://qdrant.tech/documentation/frameworks/langchain/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/qdrant/qdrant/blob/master/README.md) · [2](https://qdrant.tech/documentation/data-management/docling/) · [3](https://qdrant.tech/documentation/frameworks/n8n/) · [4](https://qdrant.tech/documentation/frameworks/llama-index/) · [5](https://qdrant.tech/documentation/frameworks/langchain/) · [6](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/qdrant)</sub>
 
 ## Acceso, coste y equipo
 

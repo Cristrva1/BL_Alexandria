@@ -26,9 +26,6 @@ Cada plantilla es un archivo JSON de flujo de n8n que se importa con «Workflows
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Es la plataforma donde se importan y ejecutan las plantillas. | n8n en marcha primero; después importa las plantillas una a una. |
-| [n8n-mcp](n8n-mcp.md) | Sus herramientas `validate_workflow` y `n8n_autofix_workflow` detectan nodos desconocidos, versiones obsoletas o conexiones rotas en plantillas importadas. | Después de importar; valida antes de activar cualquier flujo. |
-| [n8n-skills](n8n-skills.md) | Enseña al agente patrones y sintaxis de expresiones de n8n para adaptar las plantillas a tu caso. | Requiere n8n-mcp configurado. |
 | [Self-hosted AI Starter Kit](self-hosted-ai-starter-kit.md) | Entorno local listo (n8n, Ollama, Qdrant) para probar las plantillas de IA sin pagar APIs, cambiando el nodo del modelo por Ollama (combinación por arquitectura). | Levanta el kit y después importa las plantillas. |
 
 **Notas:** Las plantillas son de terceros: revisa qué datos envían y a qué servicios antes de conectar credenciales reales.
@@ -59,7 +56,6 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- n8n
 -  credenciales y dependencias de la plantilla elegida
 
 1. Importa una plantilla JSON en un flujo desactivado y revisa sus nodos.

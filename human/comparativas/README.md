@@ -2,11 +2,10 @@
 
 # ⚖️ Comparativas
 
-60 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+58 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
-- [activepieces vs n8n](activepieces-vs-n8n.md)
 - [Appsmith vs NocoDB](appsmith-vs-nocodb.md)
 
 ## 🧠 Skills, plugins y métodos para agentes
@@ -60,7 +59,6 @@
 
 - [Chart.js vs Recharts](chart-js-vs-recharts.md)
 - [metabase vs Apache Superset](metabase-vs-superset.md)
-- [PandasAI vs WrenAI](pandas-ai-vs-wrenai.md)
 - [Plausible Analytics vs Umami](plausible-vs-umami.md)
 
 ## 🎬 Editar, grabar y generar video

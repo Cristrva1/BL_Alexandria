@@ -97,37 +97,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openpose`, `mediapipe`, `blender`
 
-## `face-recognition`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
-
-**Qué es:** Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud.
-**Stack:** Python; dlib y CMake según sistema; fotos propias autorizadas
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
-- Coste: Sin pago a un modelo en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo
-- Equipo: Preparación según la ruta elegida. Python; dlib y CMake según sistema; fotos propias autorizadas
-**Repo:** https://github.com/ageitgey/face_recognition
-
-**Instalación** [+]:
-
-```
-pip3 install face_recognition
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Localiza rostros en una imagen de prueba y revisa las cajas antes de comparar identidades
-**Qué comprobar:** Puedes comprobar qué región detectó el modelo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `opencv`, `supervision`, `mediapipe`
-**Alternativas (elige una):** `insightface`
-
 ## `facefusion`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,video,vision,python
 
@@ -188,7 +157,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar modelo, backend y caras detectadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `facefusion`, `deep-live-cam`, `liveportrait`
-**Alternativas (elige una):** `face-recognition`
 
 ## `kornia`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=vision,library,python
@@ -405,38 +373,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar fallos de pose
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `opencv`, `easymocap`, `comfyui`
-
-## `ruview`
-role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=sensores,claude,claude-code,esp32,firmware,home-assistant,home-automation,iot
-
-**Qué es:** Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento.
-**Stack:** Node para CLI; datos simulados para empezar; hardware CSI compatible para medir; calibración
-**Acceso y costes:**
-- API de IA: API de IA opcional. La demo básica no exige API LLM; sensores, cómputo y agentes opcionales tienen costes propios
-- Claude Code: Integración documentada por el proyecto
-- Codex: Integración documentada por el proyecto
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: Modelos locales documentados. Documenta MCP y agentes Claude/Codex; el propio README distingue modelos preliminares, stubs y benchmarks separados; no es un dispositivo médico ni garantiza pose con cualquier router
-- Coste: El coste depende del proveedor o la ruta. La demo básica no exige API LLM; sensores, cómputo y agentes opcionales tienen costes propios
-- Equipo: Preparación según la ruta elegida. Node para CLI; datos simulados para empezar; hardware CSI compatible para medir; calibración
-**Repo:** https://github.com/ruvnet/RuView
-
-**Instalación** [+]:
-
-```
-# Check the local setup and get source-cited guidance
-npx @ruvnet/ruview@0.9.1 doctor
-npx @ruvnet/ruview@0.9.1 guidance --topic sensing --query "model loading"
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar sensado WiFi en laboratorio; Explorar una visualización espacial simulada
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Ejecuta doctor y examina una demo simulada antes de conectar sensores reales
-**Qué comprobar:** Puedes distinguir datos sintéticos, presencia medida y resultados experimentales
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `home-assistant`, `three.js`, `mediapipe`
 
 ## `sam3`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,video,python

@@ -6,13 +6,13 @@ Estas rutas se pueden combinar con un objetivo o categoría. Revisa la ficha: ca
 
 | Ruta | Repos | Abrir |
 |---|---:|---|
-| Sin clave de API de IA | 537 | [Explorar](../docs/index.html#/explorar?route=no_api) |
-| Con Claude Code | 250 | [Explorar](../docs/index.html#/explorar?route=claude) |
-| Con Codex | 219 | [Explorar](../docs/index.html#/explorar?route=codex) |
-| Con Antigravity | 165 | [Explorar](../docs/index.html#/explorar?route=antigravity) |
-| Con modelos locales | 218 | [Explorar](../docs/index.html#/explorar?route=local_model) |
-| Con API de IA | 268 | [Explorar](../docs/index.html#/explorar?route=api) |
-| Leer y aprender | 38 | [Explorar](../docs/index.html#/explorar?route=reference) |
+| Sin clave de API de IA | 518 | [Explorar](../docs/index.html#/explorar?route=no_api) |
+| Con Claude Code | 241 | [Explorar](../docs/index.html#/explorar?route=claude) |
+| Con Codex | 207 | [Explorar](../docs/index.html#/explorar?route=codex) |
+| Con Antigravity | 158 | [Explorar](../docs/index.html#/explorar?route=antigravity) |
+| Con modelos locales | 212 | [Explorar](../docs/index.html#/explorar?route=local_model) |
+| Con API de IA | 256 | [Explorar](../docs/index.html#/explorar?route=api) |
+| Leer y aprender | 37 | [Explorar](../docs/index.html#/explorar?route=reference) |
 | Requisitos por confirmar | 3 | [Explorar](../docs/index.html#/explorar?route=review) |
 
 ## Requisitos por confirmar

@@ -29,7 +29,6 @@ Se despliega con Docker Compose (v2.35.0+) desde `docker/` tras copiar `.env.exa
 | [langfuse](langfuse.md) | Trazas y evaluación de las apps de Dify (integración oficial documentada por Dify). | Despliega Langfuse y configura sus claves en la sección de monitorización de la app. |
 | [Ollama](ollama.md) | Modelos locales para despliegues autoalojados, citados en la documentación del nodo LLM. | Instala Ollama y descarga los modelos; añade después el proveedor en Dify. |
 | [Claude Code](claude-code.md) | Consumir apps de Dify publicadas como servidor MCP desde un agente de programación (la documentación de Dify cita Claude Desktop y Cursor). (combinación por arquitectura para Claude Code) | Publica la app como MCP en Dify y registra la URL en el cliente. |
-| [n8n](n8n.md) | Orquestar procesos de negocio que llaman a las apps de Dify por su API de Backend-as-a-Service. (combinación por arquitectura) | Dify primero; luego llámalo desde nodos HTTP de n8n. |
 
 **Notas:** Alternativas (elige una): sim, ragflow. Combinación anterior con langflow eliminada: son plataformas solapadas sin integración documentada. Licencia con condiciones adicionales sobre Apache 2.0.
 
@@ -113,6 +112,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 - 🐙 GitHub: [langgenius/dify](https://github.com/langgenius/dify)
 - 🌐 Web: <https://dify.ai>
+- 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
 
 ## Fuentes y alcance de revisión
 

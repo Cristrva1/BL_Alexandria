@@ -130,36 +130,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `firecrawl`, `searxng`
 
-## `fugu`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,shell
-
-**Qué es:** Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.
-**Stack:** Acceso Sakana API; Claude Code o Codex si eliges sus launchers; carpeta de prueba
-**Acceso y costes:**
-- API de IA: API de IA necesaria. Se consume mediante Sakana API y sus condiciones; usar los launchers no incluye créditos del plan Claude Code o Codex
-- Claude Code: Integración documentada por el proyecto
-- Codex: Integración documentada por el proyecto
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Los launchers son adaptaciones de proveedor; el autor documenta diferencias con Claude Code y un procedimiento manual específico para Windows
-- Coste: Consumo de APIs o servicios. Se consume mediante Sakana API y sus condiciones; usar los launchers no incluye créditos del plan Claude Code o Codex
-- Equipo: Preparación según la ruta elegida. Acceso Sakana API; Claude Code o Codex si eliges sus launchers; carpeta de prueba
-**Repo:** https://github.com/SakanaAI/fugu
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/SakanaAI/fugu/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un sistema multiagente como proveedor; Comparar un flujo de código con Fugu
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Sigue la configuración manual para tu sistema y consulta un archivo breve antes de permitir cambios
-**Qué comprobar:** Puedes identificar Fugu como proveedor y revisar la respuesta
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`, `claude-code`, `t3code`
-
 ## `gpt-researcher`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,research,python,docker
 

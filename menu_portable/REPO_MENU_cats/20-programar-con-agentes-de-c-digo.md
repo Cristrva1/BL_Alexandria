@@ -129,99 +129,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `agent-skills`, `spec-kit`, `context7`, `t3code`
 **Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
 
-## `dsh-android`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
-
-**Qué es:** Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.
-**Stack:** DeepSeek Harness con web; Android SDK y adb; emulador o dispositivo propio
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El plugin usa el modelo del anfitrión; Android SDK y equipo son requisitos separados y no incluye créditos
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. La integración es con DSH; DSH Crew es otro proyecto y no convierte este plugin en integración directa de Claude Code o Codex
-- Coste: Consumo del agente que ya utilizas. El plugin usa el modelo del anfitrión; Android SDK y equipo son requisitos separados y no incluye créditos
-- Equipo: Preparación según la ruta elegida. DeepSeek Harness con web; Android SDK y adb; emulador o dispositivo propio
-**Repo:** https://github.com/ZSeven-W/dsh-android
-
-**Instalación** [+]:
-
-```
-dsh plugin --profile web add @zseven-w/dsh-android@latest
-dsh web
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una app Android de prueba; Recoger logcat de una app propia
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lista dispositivos con android_devices y consulta el estado antes de pedir acciones
-**Qué comprobar:** Puedes identificar el emulador o dispositivo y su autorización
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dsh-ios`, `dsh-game-studio`, `jadx`
-
-## `dsh-game-studio`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
-
-**Qué es:** Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.
-**Stack:** DSH con web; plantilla de juego; proveedor de arte solo si lo activas
-**Acceso y costes:**
-- API de IA: API de IA opcional. El agente usa su proveedor; el arte opcional admite API OpenAI o CLI Codex con su plan y una confirmación de coste
-- Claude Code: Integración no documentada
-- Codex: Integración documentada por el proyecto
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. La integración Codex corresponde a generar imágenes y no a instalar todo el plugin como skill de Codex; exportar no equivale a publicar
-- Coste: El coste depende del proveedor o la ruta. El agente usa su proveedor; el arte opcional admite API OpenAI o CLI Codex con su plan y una confirmación de coste
-- Equipo: Preparación según la ruta elegida. DSH con web; plantilla de juego; proveedor de arte solo si lo activas
-**Repo:** https://github.com/ZSeven-W/dsh-game-studio
-
-**Instalación** [+]:
-
-```
-dsh plugin --profile web add @zseven-w/dsh-game-studio@latest
-dsh web
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un minijuego educativo; Prototipar mecánicas con plantillas 2D
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Genera un juego pequeño con recursos de plantilla y pruébalo antes de solicitar arte o publicar
-**Qué comprobar:** Puedes jugar la demo e inspeccionar su HTML exportado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `threejs-game-skills`, `threejs-skills`, `planck-js`
-
-## `dsh-ios`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
-
-**Qué es:** Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.
-**Stack:** macOS; Xcode completo; runtime iOS Simulator; DSH con web
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El plugin usa el modelo del anfitrión; dispositivos, firma y servicios Apple tienen condiciones separadas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Fuera de macOS las herramientas devuelven error explicativo; inspirarse en un plugin de Codex no significa ser compatible directamente con él
-- Coste: Consumo del agente que ya utilizas. El plugin usa el modelo del anfitrión; dispositivos, firma y servicios Apple tienen condiciones separadas
-- Equipo: Preparación según la ruta elegida. macOS; Xcode completo; runtime iOS Simulator; DSH con web
-**Repo:** https://github.com/ZSeven-W/dsh-ios
-
-**Instalación** [+]:
-
-```
-dsh plugin --profile web add @zseven-w/dsh-ios@latest
-dsh web
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una interfaz iOS propia; Revisar logs de una app de prueba
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lista simuladores con ios_sim_devices y comprueba el runtime antes de iniciar una app de ejemplo
-**Qué comprobar:** Puedes identificar simulador y herramientas disponibles
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dsh-android`, `dsh-game-studio`, `genjutsu`
-
 ## `gemini-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
 
@@ -376,36 +283,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `deepagents`, `langgraph`, `e2b`
 **Alternativas (elige una):** `openhands`
-
-## `openclaude`
-role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,ai,ai-agent,ai-tools,cli,typescript
-
-**Qué es:** Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP.
-**Stack:** Node >=24.22.1; proveedor o Ollama; carpeta de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida
-- Claude Code: Integración no documentada
-- Codex: Integración documentada por el proyecto
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
-- Coste: El coste depende del proveedor o la ruta. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida
-- Equipo: Preparación según la ruta elegida. Node >=24.22.1; proveedor o Ollama; carpeta de prueba
-**Repo:** https://github.com/Twigpine/openclaude
-
-**Instalación** [+]:
-
-```
-npm install -g @twigpine/openclaude@latest
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Instala el paquete actual y configura un modelo antes de solicitar una explicación sin edición
-**Qué comprobar:** Puedes revisar proveedor, contexto y permisos
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `litellm`, `context7`
 
 ## `opencode`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript

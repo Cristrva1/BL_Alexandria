@@ -28,7 +28,6 @@ Son dos aplicaciones Next.js en TypeScript: el «builder», donde se diseñan lo
 |---|---|---|
 | [evolution-api](evolution-api.md) | Integración nativa del lado de Evolution, con gestión de disparadores, para llevar el bot a WhatsApp. | Typebot con el bot publicado primero; luego vincúlalo a la instancia de Evolution. |
 | [chatwoot](chatwoot.md) | Bloque de integración nativo que pasa la conversación a una persona en Chatwoot. | Chatwoot primero; configura el bloque con el ID de cuenta y el token. |
-| [n8n](n8n.md) | El bloque Webhook/HTTP llama a un flujo de n8n para consultar CRM, bases de datos o un modelo y devolver datos al chat. | Crea primero el webhook en n8n y luego apúntalo desde el bloque. |
 | [OpenWA](openwa.md) | Plugin oficial de OpenWA para responder mensajes de WhatsApp con un bot de Typebot. | Typebot publicado y después el plugin en OpenWA. |
 
 **Notas:** Revisa la FSL antes de ofrecer Typebot como servicio a terceros.
