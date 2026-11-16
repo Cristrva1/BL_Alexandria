@@ -127,6 +127,12 @@
      "id": "pydantic-ai",
      "motivo": "Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI.",
      "orden_instalacion": "Instala el extra correspondiente de pydantic-ai para el proveedor elegido."
+    },
+    {
+     "id": "sandbox",
+     "motivo": "Combinación recíproca: sandbox lo enlaza como «Navegador del sandbox para automatización. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde sandbox: Conecta browser-use al navegador expuesto.",
+     "reciproca_de": "sandbox"
     }
    ],
    "notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.",
@@ -240,6 +246,18 @@
      "id": "stagehand",
      "motivo": "SDK de agentes sobre un navegador ligero. (combinación por arquitectura)",
      "orden_instalacion": "Conecta por CDP si es compatible."
+    },
+    {
+     "id": "agent-browser",
+     "motivo": "Combinación recíproca: agent-browser lo enlaza como «Navegador headless ligero vía CDP. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde agent-browser: Evalúa la compatibilidad CDP.",
+     "reciproca_de": "agent-browser"
+    },
+    {
+     "id": "awesome-chrome-devtools",
+     "motivo": "Combinación recíproca: awesome-chrome-devtools lo enlaza como «Navegador con servidor CDP. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-chrome-devtools: Evalúalo como backend.",
+     "reciproca_de": "awesome-chrome-devtools"
     }
    ],
    "notas": "Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto.",

@@ -30,6 +30,12 @@ Se configura con `npx ctx7 setup` (Node.js 22.13+), que autentica por OAuth, gen
 | [OpenCode](opencode.md) | Configuración automática con `--opencode`. | Ejecuta `npx ctx7 setup --opencode`. |
 | [Cline](cline.md) | Instalación manual como servidor MCP, según la lista de clientes de Context7. | Añade el servidor remoto con tu clave en la configuración MCP de Cline. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Antigravity CLI](antigravity-cli.md) · [Codex CLI](codex.md) · [Gemini CLI](gemini-cli.md) · [hello-halo](hello-halo.md) · [MiMo-Code](mimo-code.md) · [Open Interpreter](open-interpreter.md) · [OpenCursor](opencursor.md) · [Serena](serena.md) · [SuperClaude_Framework](superclaude-framework.md)
+
 **Notas:** Sin alternativas declaradas. Las consultas salen hacia el servicio de Upstash.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada @upstash/context7-tools-ai-sdk@1.0.4 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).

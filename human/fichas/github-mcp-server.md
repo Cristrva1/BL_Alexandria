@@ -29,6 +29,15 @@ Se usa en remoto (alojado por GitHub, con OAuth o token) en hosts compatibles, o
 | [Claude Code](claude-code.md) | Guía oficial de instalación para Claude. | Sigue `docs/installation-guides/install-claude.md`. |
 | [Codex CLI](codex.md) | Guía oficial de instalación para Codex. | Sigue `docs/installation-guides/install-codex.md`. |
 | [strix](strix.md) | Strix usa el servidor MCP de GitHub como ejemplo de configuración. | Añádelo a `~/.strix/mcp-servers.json`. |
+| [agentes-chat](agentes-chat.md) | Combinación recíproca: agentes-chat lo enlaza como «Conector MCP por URL. (combinación por arquitectura)». | Orden indicado desde agentes-chat: Añade el servidor desde el panel de la organización. |
+| [Awesome GitHub Copilot](awesome-copilot.md) | Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Servidor MCP que pueden usar los agentes de Copilot de la colección (combinación por arquitectura)». | Orden indicado desde Awesome GitHub Copilot: Configura el MCP en Copilot antes de usar agentes que lo requieran. |
+| [GitHub CLI](cli.md) | Combinación recíproca: GitHub CLI lo enlaza como «Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura)». | Orden indicado desde GitHub CLI: Usa `gh` en terminal y el servidor MCP en clientes sin shell. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[goose](goose.md)
 
 **Notas:** Sin alternativas declaradas. Usa el modo de solo lectura cuando no necesites escribir.
 

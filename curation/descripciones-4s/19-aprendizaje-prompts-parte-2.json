@@ -22,6 +22,12 @@
      "id": "transformers",
      "motivo": "Pasar de la implementación didáctica a la biblioteca estándar para cargar y ajustar modelos reales. (combinación por arquitectura)",
      "orden_instalacion": "Úsalo después de entender cada pieza con el libro."
+    },
+    {
+     "id": "llm.c",
+     "motivo": "Combinación recíproca: llm.c lo enlaza como «Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde llm.c: Estudia primero la versión en PyTorch.",
+     "reciproca_de": "llm.c"
     }
    ],
    "notas": "Alternativas (elige una): llm-course.",
@@ -56,6 +62,24 @@
      "id": "llm.c",
      "motivo": "Versión en C/CUDA del mismo autor para entender el entrenamiento sin PyTorch. (combinación por arquitectura)",
      "orden_instalacion": "Opcional, para profundizar en rendimiento de bajo nivel."
+    },
+    {
+     "id": "autoresearch",
+     "motivo": "Combinación recíproca: autoresearch lo enlaza como «Base de entrenamiento sobre la que experimenta».",
+     "orden_instalacion": "Orden indicado desde autoresearch: Viene integrado en forma simplificada.",
+     "reciproca_de": "autoresearch"
+    },
+    {
+     "id": "how-to-train-your-gpt",
+     "motivo": "Combinación recíproca: how-to-train-your-gpt lo enlaza como «Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde how-to-train-your-gpt: Termina el libro antes de alquilar GPU para nanochat.",
+     "reciproca_de": "how-to-train-your-gpt"
+    },
+    {
+     "id": "train-llm-from-scratch",
+     "motivo": "Combinación recíproca: train-llm-from-scratch lo enlaza como «Pipeline completo optimizado para comparar rendimiento y resultados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde train-llm-from-scratch: Opcional, como siguiente paso.",
+     "reciproca_de": "train-llm-from-scratch"
     }
    ],
    "notas": "Sin alternativas declaradas. Coste real: alquilar 8×H100 durante horas.",
@@ -116,14 +140,14 @@
      "orden_instalacion": "Termina el libro antes de alquilar GPU para nanochat."
     },
     {
-     "id": "llms-from-scratch",
-     "motivo": "Referencia más rigurosa y revisada editorialmente sobre el mismo tema. (combinación por arquitectura)",
-     "orden_instalacion": "Úsalo para contrastar explicaciones."
-    },
-    {
      "id": "pytorch",
      "motivo": "Biblioteca usada en todo el libro.",
      "orden_instalacion": "Instálala en la versión CPU o GPU según el capítulo de configuración."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Ejecutar paso a paso el código Python y PyTorch de cada capítulo en un notebook reactivo (combinación por arquitectura).",
+     "orden_instalacion": "Instala primero las dependencias del libro (`torch`, `tiktoken`, `datasets`…) en el mismo entorno y después marimo."
     }
    ],
    "notas": "Sin alternativas declaradas. Material escrito con ayuda de IA según su autor: verifica las afirmaciones técnicas.",
@@ -264,6 +288,12 @@
      "id": "prompt-engineering-guide",
      "motivo": "Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)",
      "orden_instalacion": "Úsalo como marco conceptual."
+    },
+    {
+     "id": "chatgpt-dan",
+     "motivo": "Combinación recíproca: ChatGPT_DAN lo enlaza como «Recursos sobre protección de instrucciones de sistema frente a extracción. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ChatGPT_DAN: Consulta su guía de seguridad para endurecer tus prompts.",
+     "reciproca_de": "chatgpt-dan"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -332,6 +362,12 @@
      "id": "claude-code",
      "motivo": "Comparar los prompts recopilados con las instrucciones de agentes que usas (CLAUDE.md, skills). (combinación por arquitectura)",
      "orden_instalacion": "Úsalo como referencia al redactar tus propias reglas."
+    },
+    {
+     "id": "chatgpt-dan",
+     "motivo": "Combinación recíproca: ChatGPT_DAN lo enlaza como «Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ChatGPT_DAN: Úsalos juntos solo con fines de estudio y defensa.",
+     "reciproca_de": "chatgpt-dan"
     }
    ],
    "notas": "Sin alternativas declaradas. Contenido de procedencia no verificada.",

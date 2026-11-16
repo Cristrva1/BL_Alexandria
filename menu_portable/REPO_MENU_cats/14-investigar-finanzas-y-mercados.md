@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina la configuración y localiza las llamadas de lectura y de creación de órdenes sin activar el bot
 **Qué comprobar:** Puedes identificar qué credenciales y acciones afectarán una cuenta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ccxt`, `freqtrade`, `vectorbt`
+**Combina con:** `ccxt`, `vectorbt`, `coolify`
 
 ## `ccxt`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=bots,library,python
@@ -347,7 +347,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Reproduce un notebook introductorio con datos gratuitos y separa entrenamiento y prueba temporal
 **Qué comprobar:** Puedes explicar los supuestos y reproducir una métrica fuera de muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qlib`, `vectorbt`, `marimo`
+**Combina con:** `qlib`, `vectorbt`, `marimo`, `finrl`
 
 ## `nautilus-trader`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=cuant,framework,rust
@@ -377,7 +377,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un ejemplo de backtest de la misma versión v2 y revisa su secuencia de eventos
 **Qué comprobar:** Puedes reproducir órdenes y fills simulados con configuración fija
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `polars`, `marimo`, `ccxt`
+**Combina con:** `polars`, `marimo`, `ccxt`, `py-sdk`
 
 ## `open-sol-bot`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,blockchain,solana,telegram-bot,trader,transaction,python
@@ -407,7 +407,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina configuración y rutas de órdenes antes de conectar una wallet o habilitar seguimiento
 **Qué comprobar:** Puedes identificar las acciones que consultarían datos y las que moverían fondos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `autohedge`, `grafana`, `activepieces`
+**Combina con:** `grafana`, `activepieces`, `coolify`
 
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
@@ -467,7 +467,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una baseline pequeña sobre un periodo de prueba separado y revisa predicciones y evaluación
 **Qué comprobar:** Puedes reproducir resultados sin mezclar datos futuros
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mlflow`, `finrl`, `marimo`
+**Combina con:** `mlflow`, `finrl`, `marimo`, `finceptterminal`, `machine-learning-for-trading`
 
 ## `quantharness`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,agentic-ai,large-language-models,html
@@ -497,7 +497,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente
 **Qué comprobar:** Puedes separar datos del periodo, análisis visual y decisión generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `langchain`, `tradingagents`
+**Combina con:** `langgraph`, `langchain`, `langfuse`
 
 ## `tradingagents`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,agent,finance,llm,multiagent,trading,python

@@ -30,6 +30,14 @@ Incluye SDK de TypeScript (`@composio/core`, o la variante reducida `@composio/s
 | [LangGraph](langgraph.md) | Adaptador LangChain/LangGraph. | Instala el adaptador del proveedor. |
 | [Mastra](mastra.md) | Adaptador de proveedor. | Instala el adaptador de Mastra. |
 | [Claude Code](claude-code.md) | Cliente del endpoint MCP de la sesión. | Pasa `mcp: true` y añade la URL. |
+| [Awesome Claude Skills](awesome-claude-skills.md) | Combinación recíproca: Awesome Claude Skills lo enlaza como «El plugin `connect-apps` usa Composio para la autenticación y las integraciones». | Orden indicado desde Awesome Claude Skills: Crea una clave de Composio antes de ejecutar el setup. |
+| [OpenBot](openbot.md) | Combinación recíproca: OpenBot lo enlaza como «Composio actúa como intermediario de cientos de apps detrás de una sola cuenta en el catálogo MCP gobernado». | Orden indicado desde OpenBot: Prepara `setup:composio` y concede solo las apps necesarias. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenDots](opendots.md)
 
 **Notas:** Sin alternativas declaradas. Dependencia de un servicio comercial para las credenciales de terceros.
 

@@ -30,6 +30,7 @@ Extensión en C para Postgres 13+ que se compila e instala o se obtiene por Dock
 | [AnythingLLM](anything-llm.md) | PGVector es una base vectorial soportada. | Postgres con la extensión activa antes de configurar AnythingLLM. |
 | [LibreChat](librechat.md) | El Docker Compose de LibreChat usa una imagen pgvector para su RAG API. | Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo. |
 | [LightRAG](lightrag.md) | PostgreSQL es el backend recomendado para producción en LightRAG. | Activa la extensión antes de arrancar LightRAG con el backend de Postgres. |
+| [langchain4j](langchain4j.md) | Combinación recíproca: langchain4j lo enlaza como «Embeddings en PostgreSQL mediante el módulo oficial de pgvector». | Orden indicado desde langchain4j: Habilita la extensión en Postgres y añade `langchain4j-pgvector`. |
 
 **Notas:** Alternativas (elige una): qdrant, chroma, milvus.
 

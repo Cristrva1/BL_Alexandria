@@ -30,6 +30,7 @@ Se arranca un servidor con `uvx mlflow server` o `pip install mlflow`, y se inst
 | [Transformers](transformers.md) | Flavor nativo para registrar y servir modelos de Transformers. | Registra el pipeline con `mlflow.transformers`. |
 | [DeepEval](deepeval.md) | Métricas de DeepEval disponibles como scorers de terceros en MLflow. | Instala deepeval y úsalo desde la evaluación de MLflow. |
 | [Ragas](ragas.md) | Métricas de Ragas disponibles como scorers de terceros. | Instala ragas y úsalo desde la evaluación de MLflow. |
+| [qlib](qlib.md) | Combinación recíproca: qlib lo enlaza como «El recorder de Qlib se basa en MLflow». | Orden indicado desde qlib: Configura el URI de MLflow para los experimentos. |
 
 **Notas:** Alternativas (elige una): langfuse.
 

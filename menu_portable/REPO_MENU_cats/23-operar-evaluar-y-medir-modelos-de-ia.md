@@ -65,7 +65,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade un proveedor, inicia el servidor local y aplica un perfil a una sesión de prueba
 **Qué comprobar:** Puedes identificar endpoint, modelo y ruta efectiva
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `claude-code-hooks-mastery`
 **Alternativas (elige una):** `omniroute`, `backdoor`, `litellm`
 
 ## `claude-code-usage-monitor`
@@ -100,7 +100,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el monitor y compara una cifra con su etiqueta de procedencia y fecha
 **Qué comprobar:** Puedes distinguir consumo observado, estado oficial y previsión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `rtk`, `headroom`
+**Combina con:** `claude-code`, `rtk`, `headroom`, `claude-token-efficient`
 
 ## `deepeval`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai · tags=evaluation,python
@@ -191,7 +191,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Comprime una salida JSON pequeña y compara el resultado con el original antes de envolver un agente
 **Qué comprobar:** Puedes identificar qué se conservó y recuperar el original cuando corresponda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `litellm`, `context-engineering`, `codegraph`
+**Combina con:** `claude-code`, `litellm`, `context-engineering`, `codegraph`, `claude-code-usage-monitor`, `mimo-code`
 **Alternativas (elige una):** `rtk`
 
 ## `langfuse`
@@ -319,7 +319,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicia el servidor de prueba y registra una ejecución pequeña con parámetros y resultado
 **Qué comprobar:** Puedes abrir la ejecución y comparar sus datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`
+**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`, `qlib`
 **Alternativas (elige una):** `langfuse`
 
 ## `omniroute`
@@ -508,7 +508,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un comando RTK y compara su salida con la versión sin comprimir antes de activar hooks
 **Qué comprobar:** Puedes comprobar datos omitidos y contadores de ahorro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `gemini-cli`
+**Combina con:** `claude-code`, `codex`, `gemini-cli`, `claude-code-usage-monitor`, `mimo-code`
 **Alternativas (elige una):** `headroom`
 
 ## `sglang`
@@ -539,7 +539,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el quickstart y comprueba una petición breve al modelo servido
 **Qué comprobar:** Puedes identificar modelo, proceso y respuesta del endpoint
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `open-webui`, `unsloth`
+**Combina con:** `litellm`, `open-webui`, `unsloth`, `deepseek-v3`, `kimi-k2-7-code`, `llama-factory`
 **Alternativas (elige una):** `vllm`
 
 ## `tensorrt-llm`
@@ -570,7 +570,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar
 **Qué comprobar:** Puedes relacionar motor, modelo y configuración de memoria
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `open-webui`, `transformers`
+**Combina con:** `litellm`, `open-webui`, `transformers`, `deepseek-v3`
 
 ## `vllm`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python

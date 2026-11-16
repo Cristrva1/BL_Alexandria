@@ -29,6 +29,8 @@ Se instala con `pip install tensorflow` (o `tensorflow-cpu`) y tiene imágenes D
 | [Transformers](transformers.md) | Algunos modelos tienen variante TF (el soporte se ha ido reduciendo). (combinación por arquitectura) | Comprueba el soporte del modelo. |
 | [mediapipe](mediapipe.md) | Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura) | Usa modelos TF Lite en MediaPipe. |
 | [marimo](marimo.md) | Experimentación en notebooks reactivos. (combinación por arquitectura) | Instala marimo en el mismo entorno. |
+| [JupyterLab](jupyterlab.md) | Combinación recíproca: JupyterLab lo enlaza como «Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura)». | Orden indicado desde JupyterLab: Instala TensorFlow en el entorno del kernel. |
+| [tfjs-models](tfjs-models.md) | Combinación recíproca: tfjs-models lo enlaza como «Entrenar en Python y convertir a TF.js. (combinación por arquitectura)». | Orden indicado desde tfjs-models: Convierte con tensorflowjs_converter. |
 
 **Notas:** Alternativa (elige una): pytorch.
 

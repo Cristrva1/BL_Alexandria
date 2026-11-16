@@ -30,6 +30,12 @@ Se instala con `npm install gsap` o desde CDN y no tiene dependencias.
 | [motion](motion.md) | Combinar en apps React (Motion para la UI, GSAP para la narrativa con scroll). (combinación por arquitectura) | Evita animar el mismo elemento con ambas. |
 | [remotion](remotion.md) | Animaciones en vídeo programático. (combinación por arquitectura) | Controla timelines de GSAP por frame. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[brag](brag.md) · [genjutsu](genjutsu.md) · [gsap-skills](gsap-skills.md) · [huashu-motion](huashu-motion.md) · [HyperFrames](hyperframes.md) · [motion-design-skill](motion-design-skill.md) · [motionmaxxing](motionmaxxing.md) · [openfilm](openfilm.md) · [reveal.js](reveal-js.md) · [zdog](zdog.md)
+
 **Notas:** Alternativas (elige una): animejs. La licencia prohíbe usarla en herramientas visuales de animación sin código que compitan con Webflow.
 
 Estado en GitHub: activo · último push 2026-11-04 (consultado el 2026-11-15).

@@ -29,6 +29,7 @@ Notebooks Jupyter en PyTorch, sin bibliotecas externas de LLM. El código de los
 | [PyTorch](pytorch.md) | Única dependencia de fondo del código del libro. | Instala PyTorch (CPU basta para los capítulos principales) antes de abrir los notebooks. |
 | [nanochat](nanochat.md) | Siguiente paso para ver un pipeline completo de entrenamiento a escala real (8×H100). (combinación por arquitectura) | Termina el libro antes de intentar un speedrun de nanochat. |
 | [Transformers](transformers.md) | Pasar de la implementación didáctica a la biblioteca estándar para cargar y ajustar modelos reales. (combinación por arquitectura) | Úsalo después de entender cada pieza con el libro. |
+| [llm.c](llm-c.md) | Combinación recíproca: llm.c lo enlaza como «Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura)». | Orden indicado desde llm.c: Estudia primero la versión en PyTorch. |
 
 **Notas:** Alternativas (elige una): llm-course.
 

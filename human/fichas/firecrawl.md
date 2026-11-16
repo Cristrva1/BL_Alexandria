@@ -30,6 +30,12 @@ Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker seg
 | [Claude Code](claude-code.md) | Dar al agente scraping y búsqueda con el servidor MCP oficial firecrawl-mcp. | Añade `firecrawl-mcp` a la configuración MCP con tu clave. |
 | [gpt-researcher](gpt-researcher.md) | Usar Firecrawl como scraper de GPT Researcher, documentado en su guía de scraping. | Define el scraper Firecrawl y su clave en la configuración de GPT Researcher. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-engineering-hub](ai-engineering-hub.md) · [Awesome LLM Apps](awesome-llm-apps.md) · [awesome-web-scraping](awesome-web-scraping.md) · [chatwoot](chatwoot.md) · [deer-flow](deer-flow.md) · [onyx](onyx.md) · [OpenBot](openbot.md) · [PDF Inspector](pdf-inspector.md) · [public-apis](public-apis.md) · [social-media-agent](social-media-agent.md) · [Stagehand](stagehand.md)
+
 **Notas:** Alternativas (elige una): jina-reader. Se quita la combinación con crawl4ai por solaparse como crawler. Coincidencia de nombre: el producto «Alexandria» de Firecrawl no tiene relación con esta biblioteca. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.11.0 (2026-06-19) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).

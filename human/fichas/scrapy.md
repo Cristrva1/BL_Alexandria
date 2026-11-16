@@ -29,6 +29,7 @@ Requiere Python 3.11+ y se instala con `pip install scrapy`; se crea un proyecto
 | [playwright](playwright.md) | Renderizar páginas con JavaScript desde spiders con el plugin oficial scrapy-playwright. | Instala `scrapy-playwright` y los navegadores de Playwright, y activa su handler de descargas. |
 | [Scrapling](scrapling.md) | Parser adaptativo para selectores frágiles. (combinación por arquitectura) | Usa Scrapling en los callbacks de tus spiders. |
 | [defuddle](defuddle.md) | Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura) | Procesa el HTML guardado con Defuddle. |
+| [awesome-web-scraping](awesome-web-scraping.md) | Combinación recíproca: awesome-web-scraping lo enlaza como «Framework de referencia en la sección de Python. (combinación por arquitectura)». | Orden indicado desde awesome-web-scraping: Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico. |
 
 **Notas:** Sin alternativas declaradas. Se quita la combinación con crawlee-python por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

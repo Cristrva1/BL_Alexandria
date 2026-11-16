@@ -21,6 +21,8 @@ Outputs:
 """
 from __future__ import annotations
 
+from repo_intelligence.analysis.combina_policy import combo_map, used_by
+
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -398,6 +400,15 @@ def has_four_sections(repo: dict[str, Any]) -> bool:
     return all((repo.get(field) or "").strip() for field in ("que_es", "que_hace", "como_lo_hace")) and bool(repo.get("combina_con"))
 
 
+def _used_by(cat: Catalog) -> dict[str, list[str]]:
+    """Enlaces entrantes no correspondidos, calculados una vez por catálogo."""
+    cached = getattr(cat, "_used_by_cache", None)
+    if cached is None:
+        cached = used_by(combo_map(cat.repos))
+        setattr(cat, "_used_by_cache", cached)
+    return cached
+
+
 def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
     """Render ¿Qué es? / ¿Qué hace? / ¿Cómo lo hace? / ¿Con qué se combina? when curated."""
     if not has_four_sections(repo):
@@ -412,6 +423,10 @@ def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
         rows.append(f"| {repo_link(cat, combo['id'], base)} | {md_cell(combo.get('motivo') or '—')} | {md_cell(combo.get('orden_instalacion') or '—')} |")
     if rows:
         lines += ["## ¿Con qué otros repos se combina?", "", "| Repo | Para qué juntarlos | Orden de instalación y cuidados |", "|---|---|---|", *rows, ""]
+    users = [rid for rid in _used_by(cat).get(repo["id"], []) if cat.get(rid)]
+    if users:
+        links = sorted((repo_link(cat, rid, base) for rid in users), key=str.lower)
+        lines += ["## Usado por", "", f"Repos que lo citan en sus combinaciones sin que figuren arriba ({len(users)}). La lista se genera automáticamente; el motivo está en la ficha de cada uno.", "", " · ".join(links), ""]
     if repo.get("descripcion_notas"):
         lines += [f"**Notas:** {repo['descripcion_notas'].strip()}", ""]
     origen = repo.get("descripcion_origen") or {}

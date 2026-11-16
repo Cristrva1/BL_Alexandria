@@ -22,6 +22,18 @@
      "id": "activepieces",
      "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos.",
      "orden_instalacion": "GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces."
+    },
+    {
+     "id": "antigravity-awesome-skills",
+     "motivo": "Combinación recíproca: Agentic Awesome Skills (AAS) lo enlaza como «Instalación de skills individuales con `gh skill`».",
+     "orden_instalacion": "Orden indicado desde Agentic Awesome Skills (AAS): GitHub CLI con soporte de `gh skill` instalado.",
+     "reciproca_de": "antigravity-awesome-skills"
+    },
+    {
+     "id": "awesome-copilot",
+     "motivo": "Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Trabajar con repos, PR e incidencias desde la terminal junto a Copilot (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome GitHub Copilot: Independientes.",
+     "reciproca_de": "awesome-copilot"
     }
    ],
    "notas": "Sin alternativas declaradas. Limita los scopes del token que uses con agentes.",
@@ -59,6 +71,18 @@
      "id": "langchain",
      "motivo": "`langchain-openai` se construye sobre este SDK.",
      "orden_instalacion": "Instala `langchain-openai` y configura la clave."
+    },
+    {
+     "id": "openai-agents-python",
+     "motivo": "Combinación recíproca: OpenAI Agents SDK lo enlaza como «Cliente oficial de OpenAI que usa el SDK».",
+     "orden_instalacion": "Orden indicado desde OpenAI Agents SDK: Se instala como dependencia.",
+     "reciproca_de": "openai-agents-python"
+    },
+    {
+     "id": "openai-cookbook",
+     "motivo": "Combinación recíproca: OpenAI Cookbook lo enlaza como «SDK oficial usado por casi todos los notebooks».",
+     "orden_instalacion": "Orden indicado desde OpenAI Cookbook: Instala `openai` en el entorno antes de ejecutar los ejemplos.",
+     "reciproca_de": "openai-cookbook"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -135,6 +159,24 @@
      "id": "metabase",
      "motivo": "BI sobre datos exportados del warehouse de PostHog. (combinación por arquitectura)",
      "orden_instalacion": "Exporta o sincroniza los datos y conéctalos a Metabase."
+    },
+    {
+     "id": "claude-seo",
+     "motivo": "Combinación recíproca: claude-seo lo enlaza como «Extensión `seo-posthog` para cruzar datos de analítica».",
+     "orden_instalacion": "Orden indicado desde claude-seo: Configura credenciales de PostHog de solo lectura.",
+     "reciproca_de": "claude-seo"
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Combinación recíproca: Marketing Skills lo enlaza como «Leer métricas de producto para las skills de analítica y conversión (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marketing Skills: Usa credenciales de solo lectura siguiendo su guía de conexión.",
+     "reciproca_de": "marketingskills"
+    },
+    {
+     "id": "mautic",
+     "motivo": "Combinación recíproca: mautic lo enlaza como «PostHog mide el comportamiento en producto y Mautic actúa con campañas sobre esos segmentos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde mautic: Define un identificador común de contacto antes de sincronizar datos entre ambos.",
+     "reciproca_de": "mautic"
     }
    ],
    "notas": "Sin alternativas declaradas. El autoalojamiento «hobby» no es para producción.",
@@ -246,6 +288,18 @@
      "id": "echarts",
      "motivo": "Superset usa ECharts en muchas visualizaciones. (combinación por arquitectura)",
      "orden_instalacion": "No requiere instalación aparte."
+    },
+    {
+     "id": "hudi",
+     "motivo": "Combinación recíproca: hudi lo enlaza como «BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde hudi: Conecta Superset al motor de consulta.",
+     "reciproca_de": "hudi"
+    },
+    {
+     "id": "kestra",
+     "motivo": "Combinación recíproca: Kestra lo enlaza como «Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kestra: Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén.",
+     "reciproca_de": "kestra"
     }
    ],
    "notas": "Alternativas (elige una): metabase, redash.",
@@ -432,6 +486,12 @@
      "id": "tailwindcss",
      "motivo": "Estilar los gráficos con las variables de tema de Tailwind. (combinación por arquitectura)",
      "orden_instalacion": "Pasa colores del tema a los componentes."
+    },
+    {
+     "id": "mui",
+     "motivo": "Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI.",
+     "reciproca_de": "mui"
     }
    ],
    "notas": "Alternativas (elige una): chart-js, echarts.",

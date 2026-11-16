@@ -29,6 +29,15 @@ Es un binario único en Go con interfaz web (TypeScript). Se instala con el scri
 | [Home Assistant](home-assistant.md) | Ver estadísticas y activar o desactivar filtros desde Home Assistant con la integración oficial de AdGuard Home. | Instala AdGuard Home y añade la integración con su URL y credenciales. |
 | [activepieces](activepieces.md) | Automatizar tareas (pausar el filtrado, añadir reglas) llamando a la API HTTP de AdGuard Home. (combinación por arquitectura) | Crea un usuario de AdGuard Home y usa la pieza HTTP de Activepieces contra su API. |
 | [vaultwarden](vaultwarden.md) | Dar un nombre local (p. ej. `vault.casa`) a los servicios autoalojados con las reescrituras DNS de AdGuard Home. (combinación por arquitectura) | Configura la reescritura DNS hacia el proxy inverso que publica Vaultwarden con HTTPS. |
+| [CasaOS](casaos.md) | Combinación recíproca: CasaOS lo enlaza como «DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura)». | Orden indicado desde CasaOS: Instálalo como app. |
+| [cleanyourtv](cleanyourtv.md) | Combinación recíproca: cleanyourtv lo enlaza como «Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)». | Orden indicado desde cleanyourtv: Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor. |
+| [optimizerDuck](optimizerduck.md) | Combinación recíproca: optimizerDuck lo enlaza como «Bloqueo de telemetría a nivel de red que complementa los ajustes locales. (combinación por arquitectura)». | Orden indicado desde optimizerDuck: Configura AdGuard Home como DNS y luego aplica los ajustes de privacidad en Windows. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[universal-android-debloater-next-generation](universal-android-debloater-next-generation.md)
 
 **Notas:** Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador.
 

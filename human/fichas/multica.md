@@ -29,6 +29,7 @@ Se autoaloja con Docker Compose o Helm usando imágenes de GHCR, y usa las CLIs 
 | [Claude Code](claude-code.md) | Runtime de agente soportado. | Instala Claude Code en el runtime. |
 | [Codex CLI](codex.md) | Runtime de agente soportado. | Instala Codex en el runtime. |
 | [OpenCode](opencode.md) | Runtime de agente soportado. | Instala OpenCode en el runtime. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | Combinación recíproca: andrej-karpathy-skills lo enlaza como «Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura)». | Orden indicado desde andrej-karpathy-skills: Independientes. |
 
 **Notas:** Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.
 

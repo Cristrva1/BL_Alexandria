@@ -30,6 +30,12 @@ Cada integración es una «pieza»: un paquete npm escrito en TypeScript con tip
 | [Claude Code](claude-code.md) | Las piezas se exponen como servidores MCP, así que un agente de código puede usar las integraciones de Activepieces como herramientas. | Activepieces en marcha; luego registra el servidor MCP de las piezas en el cliente. |
 | [litellm](litellm.md) | Centraliza las llamadas de IA de los flujos en un gateway compatible con OpenAI con presupuestos y registro de gasto (combinación por arquitectura). | LiteLLM primero; usa su URL y una clave virtual en las piezas que acepten un endpoint compatible con OpenAI. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (47). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AdGuardHome](adguardhome.md) · [Anytype Desktop](anytype-ts.md) · [Appsmith](appsmith.md) · [audiobookshelf](audiobookshelf.md) · [Baileys](baileys.md) · [Bitwarden Clients](bitwarden-clients.md) · [Botpress](botpress.md) · [Budibase](budibase.md) · [cal.diy](cal-diy.md) · [CasaOS](casaos.md) · [changedetection.io](changedetection.md) · [chatwoot](chatwoot.md) · [cloud-mail](cloud-mail.md) · [coolify](coolify.md) · [crm](compai-crm.md) · [daily_stock_analysis](daily-stock-analysis.md) · [docuseal](docuseal.md) · [ERPNext](erpnext.md) · [firecrawl](firecrawl.md) · [fluxer](fluxer.md) · [GitHub CLI](cli.md) · [Jina Reader](jina-reader.md) · [listmonk](listmonk.md) · [Matomo](matomo.md) · [mautic](mautic.md) · [Maxun](maxun.md) · [Odoo](odoo.md) · [open-notebook](open-notebook.md) · [open-sol-bot](open-sol-bot.md) · [Plausible Analytics](plausible.md) · [posthog](posthog.md) · [postiz-app](postiz-app.md) · [public-apis](public-apis.md) · [py-sdk](py-sdk.md) · [Qdrant](qdrant.md) · [RAGFlow](ragflow.md) · [Redash](redash.md) · [Selenium](selenium.md) · [Skyvern](skyvern.md) · [Stirling-PDF](stirling-pdf.md) · [supabase](supabase.md) · [ToolJet](tooljet.md) · [twenty-main](twenty-main.md) · [Umami](umami.md) · [WAHA](waha.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
+
 **Notas:** Sin alternativas declaradas. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 0.93.0 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

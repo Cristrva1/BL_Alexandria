@@ -56,6 +56,12 @@
      "id": "blender",
      "motivo": "Visualizar y animar las mallas. (combinación por arquitectura)",
      "orden_instalacion": "Importa el resultado."
+    },
+    {
+     "id": "mmpose",
+     "motivo": "Combinación recíproca: mmpose lo enlaza como «Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde mmpose: Exporta los keypoints.",
+     "reciproca_de": "mmpose"
     }
    ],
    "notas": "Sin alternativas declaradas. Revisa la licencia PRL antes de redistribuir.",
@@ -91,6 +97,24 @@
      "id": "pipecat",
      "motivo": "STT local en agentes de voz. (combinación por arquitectura)",
      "orden_instalacion": "Expón el servidor de whisper.cpp al pipeline."
+    },
+    {
+     "id": "dograh",
+     "motivo": "Combinación recíproca: dograh lo enlaza como «STT autoalojado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde dograh: Configura un STT propio.",
+     "reciproca_de": "dograh"
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Combinación recíproca: Kokoro lo enlaza como «STT local para un ciclo voz a voz. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kokoro: Combina en el mismo pipeline.",
+     "reciproca_de": "kokoro"
+    },
+    {
+     "id": "livekit-agents",
+     "motivo": "Combinación recíproca: LiveKit Agents lo enlaza como «STT local. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde LiveKit Agents: Expón el servidor y úsalo como STT.",
+     "reciproca_de": "livekit-agents"
     }
    ],
    "notas": "Alternativas (elige una): faster-whisper, whisper.",
@@ -161,6 +185,24 @@
      "id": "moviepy",
      "motivo": "Generar subtítulos sobre vídeo. (combinación por arquitectura)",
      "orden_instalacion": "Convierte los segmentos a SRT."
+    },
+    {
+     "id": "ai-youtube-shorts-generator",
+     "motivo": "Combinación recíproca: AI-Youtube-Shorts-Generator lo enlaza como «Transcripción local en el modo offline».",
+     "orden_instalacion": "Orden indicado desde AI-Youtube-Shorts-Generator: Instala `requirements-local.txt`.",
+     "reciproca_de": "ai-youtube-shorts-generator"
+    },
+    {
+     "id": "moneyprinterturbo",
+     "motivo": "Combinación recíproca: MoneyPrinterTurbo lo enlaza como «Subtítulos locales con faster-whisper, citado en el README».",
+     "orden_instalacion": "Orden indicado desde MoneyPrinterTurbo: Activa faster-whisper en la configuración.",
+     "reciproca_de": "moneyprinterturbo"
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Combinación recíproca: OBS Studio lo enlaza como «Subtitular las grabaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OBS Studio: Transcribe el audio exportado.",
+     "reciproca_de": "obs-studio"
     }
    ],
    "notas": "Alternativas (elige una): whisper-cpp.",
@@ -340,6 +382,12 @@
      "id": "whisperx",
      "motivo": "Transcribir el dataset. (combinación por arquitectura)",
      "orden_instalacion": "Genera transcripciones alineadas."
+    },
+    {
+     "id": "videolingo",
+     "motivo": "Combinación recíproca: VideoLingo lo enlaza como «Doblaje con voz clonada».",
+     "orden_instalacion": "Orden indicado desde VideoLingo: Arranca GPT-SoVITS y selecciónalo como TTS.",
+     "reciproca_de": "videolingo"
     }
    ],
    "notas": "Alternativas (elige una): fish-speech. Riesgo de suplantación de voz: usa voces con consentimiento.",

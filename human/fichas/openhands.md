@@ -30,6 +30,7 @@ Se instala con `npm install -g @openhands/agent-canvas` o con Docker. Por defect
 | [Codex CLI](codex.md) | Agente soportado en Agent Canvas. | Configura Codex como agente. |
 | [sandbox](sandbox.md) | Aislar la ejecución de los agentes. (combinación por arquitectura) | Ejecuta los agentes en un backend aislado. |
 | [ECC](ecc.md) | Configuración de agentes reutilizable. (combinación por arquitectura) | Aplica la configuración a los agentes que lances. |
+| [SWE-bench](swe-bench.md) | Combinación recíproca: SWE-bench lo enlaza como «Evaluar agentes de programación sobre SWE-bench. (combinación por arquitectura)». | Orden indicado desde SWE-bench: Genera predicciones con el agente y evalúalas con el arnés. |
 
 **Notas:** Alternativas (elige una): open-swe.
 

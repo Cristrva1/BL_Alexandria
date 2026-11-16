@@ -29,6 +29,7 @@ Se descarga un snapshot, se descomprime y se ejecuta `x32\x32dbg.exe` o `x64\x64
 | [ghidra](ghidra.md) | Analizar estáticamente en Ghidra las funciones que luego depuras. (combinación por arquitectura) | Localiza direcciones en Ghidra y pon breakpoints en x64dbg. |
 | [ImHex](imhex.md) | Estudiar volcados de memoria o archivos con patrones. (combinación por arquitectura) | Vuelca la región desde x64dbg y ábrela en ImHex. |
 | [dnSpy](dnspy.md) | Cubrir la parte .NET de un proceso mixto. (combinación por arquitectura) | Usa dnSpyEx para el código gestionado y x64dbg para el nativo. |
+| [raddebugger](raddebugger.md) | Combinación recíproca: raddebugger lo enlaza como «Depurar binarios ajenos sin símbolos, que no son el foco de RAD Debugger. (combinación por arquitectura)». | Orden indicado desde raddebugger: Usa RAD Debugger para tu código con símbolos y x64dbg para binarios cerrados. |
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar. Analiza malware solo en una máquina virtual aislada.
 

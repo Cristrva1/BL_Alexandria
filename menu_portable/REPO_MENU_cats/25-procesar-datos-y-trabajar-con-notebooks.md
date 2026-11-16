@@ -214,7 +214,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una interfaz para una función simple de texto y pruébala localmente antes de compartir un enlace
 **Qué comprobar:** Puedes ver la relación entre entrada, función y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `llama-factory`, `ollama`
+**Combina con:** `transformers`, `llama-factory`, `ollama`, `rembg`
 **Alternativas (elige una):** `streamlit`
 
 ## `hudi`
@@ -276,7 +276,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un notebook, carga un CSV ficticio y dibuja un gráfico simple
 **Qué comprobar:** El notebook guarda código, tabla y gráfico al reabrirlo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `tensorflow`, `duckdb`, `polars`
+**Combina con:** `pytorch`, `tensorflow`, `duckdb`, `polars`, `apache-iceberg`, `delta-lake`
 **Alternativas (elige una):** `marimo`
 
 ## `marimo`
@@ -369,5 +369,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una app con un control y una tabla de ejemplo y comprueba que la interacción actualiza la vista
 **Qué comprobar:** Puedes identificar script, estado y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dash`, `polars`, `duckdb`
+**Combina con:** `dash`, `polars`, `duckdb`, `awesome-llm-apps`
 **Alternativas (elige una):** `gradio`

@@ -30,6 +30,14 @@ Es una app Electron que usa FFmpeg, para Windows, macOS y Linux. Las descargas o
 | [yt-dlp](yt-dlp.md) | Recortar vídeos descargados. (combinación por arquitectura) | Descarga con yt-dlp y abre el archivo en LosslessCut. |
 | [whisperX](whisperx.md) | Subtitular los fragmentos recortados. (combinación por arquitectura) | Exporta el audio y transcríbelo. |
 | [MoviePy](moviepy.md) | Automatizar en Python lo que se hace a mano en la app. (combinación por arquitectura) | Usa MoviePy para lotes repetitivos. |
+| [OBS Studio](obs-studio.md) | Combinación recíproca: OBS Studio lo enlaza como «Recortar grabaciones sin recodificar. (combinación por arquitectura)». | Orden indicado desde OBS Studio: Graba con OBS y recorta con LosslessCut. |
+| [OpenCut](opencut.md) | Combinación recíproca: OpenCut lo enlaza como «Recortes sin recodificar antes de editar. (combinación por arquitectura)». | Orden indicado desde OpenCut: Corta el material bruto con LosslessCut y edita en OpenCut. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[WanGP](wan2gp.md)
 
 **Notas:** Sin alternativas declaradas. Descarga solo desde las fuentes oficiales.
 

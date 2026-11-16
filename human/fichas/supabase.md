@@ -30,6 +30,12 @@ Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo lo
 | [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos. | supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces. |
 | [coolify](coolify.md) | Autoalojar Supabase. (combinación por arquitectura) | Despliega desde Coolify. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Appsmith](appsmith.md) · [Budibase](budibase.md) · [Chart.js](chart-js.md) · [free-for-dev](free-for-dev.md) · [Grafana](grafana.md) · [Onlook](onlook.md) · [plasmic](plasmic.md) · [Plausible Analytics](plausible.md) · [Redash](redash.md) · [social-media-agent](social-media-agent.md) · [swr](swr.md) · [TanStack Query](tanstack-query.md) · [tldraw](tldraw.md) · [transformers.js](transformers-js.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.26.08 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

@@ -29,6 +29,7 @@ Es una aplicación PHP con frontend en JavaScript/Vue; necesita servidor web, PH
 | [coolify](coolify.md) | Desplegar Nextcloud como servicio de un clic en un servidor propio (Coolify documenta el servicio Nextcloud). | Instala Coolify y añade el servicio Nextcloud desde su catálogo. |
 | [Home Assistant](home-assistant.md) | Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud. | Activa la integración en Home Assistant con un usuario administrador de Nextcloud. |
 | [Ollama](ollama.md) | Dar a Nextcloud Assistant un modelo local mediante un backend compatible con la API de OpenAI. (combinación por arquitectura) (la app integration_openai admite endpoints compatibles; la compatibilidad concreta con Ollama es [DATO NO VERIFICADO] en este lote) | Levanta Ollama, instala la app de integración y apunta su URL al endpoint compatible. |
+| [CasaOS](casaos.md) | Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)». | Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor. |
 
 **Notas:** Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.
 

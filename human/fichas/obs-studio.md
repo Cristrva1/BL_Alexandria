@@ -29,6 +29,9 @@ Se instala con los instaladores oficiales o paquetes de la distribución. Está 
 | [LosslessCut](lossless-cut.md) | Recortar grabaciones sin recodificar. (combinación por arquitectura) | Graba con OBS y recorta con LosslessCut. |
 | [OpenCut](opencut.md) | Editar las grabaciones. (combinación por arquitectura) | Importa las grabaciones en el editor. |
 | [faster-whisper](faster-whisper.md) | Subtitular las grabaciones. (combinación por arquitectura) | Transcribe el audio exportado. |
+| [rnnoise](rnnoise.md) | Combinación recíproca: rnnoise lo enlaza como «Supresión de ruido en streaming». | Orden indicado desde rnnoise: Usa el filtro de supresión de ruido RNNoise de OBS. |
+| [Deep-Live-Cam](deep-live-cam.md) | Combinación recíproca: Deep-Live-Cam lo enlaza como «Emitir la cámara virtual. (combinación por arquitectura)». | Orden indicado desde Deep-Live-Cam: Captura la salida en OBS. |
+| [RVC WebUI](rvc.md) | Combinación recíproca: RVC WebUI lo enlaza como «Cambiador de voz en tiempo real para streaming. (combinación por arquitectura)». | Orden indicado desde RVC WebUI: Enruta el audio a OBS. |
 
 **Notas:** Sin alternativas declaradas.
 

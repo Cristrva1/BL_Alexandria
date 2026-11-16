@@ -62,7 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una plantilla de prueba con campos de texto y firma y completa una vista de ensayo
 **Qué comprobar:** Puedes revisar el documento resultante y la ubicación de los campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `twenty-main`, `stirling-pdf`
+**Combina con:** `activepieces`, `twenty-main`, `stirling-pdf`, `pdfcraft`
 
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
@@ -184,7 +184,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade OCR a una copia escaneada y busca una palabra que conoces
 **Qué comprobar:** Puedes seleccionar y buscar texto manteniendo la imagen de la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tesseract`, `paperless-ngx`, `stirling-pdf`
+**Combina con:** `tesseract`, `paperless-ngx`, `stirling-pdf`, `pdf-inspector`, `pdfding`
 
 ## `olmocr`
 role=app · exec=local · setup=heavy · mcp=False · prov=local · tags=ocr,pdf,python
@@ -276,7 +276,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Convierte un Markdown con títulos y tabla a DOCX y revisa el resultado
 **Qué comprobar:** Puedes abrir el documento y comprobar estructura y contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `reveal.js`, `markitdown`, `marker`
+**Combina con:** `reveal.js`, `markitdown`, `marker`, `ppt-master`, `marp`, `pdf-craft`
 
 ## `paperless-ngx`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=gestion,server,python
@@ -489,7 +489,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Une dos PDFs de prueba y verifica orden, páginas y metadatos del resultado
 **Qué comprobar:** El archivo final se abre y contiene las páginas esperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`, `activepieces`, `paperless-ngx`
+**Combina con:** `ocrmypdf`, `activepieces`, `paperless-ngx`, `docuseal`
 **Alternativas (elige una):** `pdfcraft`
 
 ## `tesseract`

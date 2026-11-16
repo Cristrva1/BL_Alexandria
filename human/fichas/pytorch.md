@@ -30,6 +30,12 @@ Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o C
 | [diffusers](diffusers.md) | Modelos de difusión sobre PyTorch. | Instala Diffusers. |
 | [vLLM](vllm.md) | Inferencia en producción construida sobre PyTorch. | Instala vLLM con la versión de PyTorch compatible. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (19). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[4D-Humans](4d-humans.md) · [awesome-machine-learning](awesome-machine-learning.md) · [bionemo-recipes](bionemo-recipes.md) · [cosmos](cosmos.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [JupyterLab](jupyterlab.md) · [kornia](kornia.md) · [LLM Course](llm-course.md) · [llm.c](llm-c.md) · [LLMs from Scratch](llms-from-scratch.md) · [mmpose](mmpose.md) · [nanochat](nanochat.md) · [NeMo Speech](nemo.md) · [pyannote.audio](pyannote-audio.md) · [TimesFM](timesfm.md) · [train-llm-from-scratch](train-llm-from-scratch.md) · [warp](warp.md) · [WHAM](wham.md) · [whisper](whisper.md)
+
 **Notas:** Alternativa (elige una): tensorflow.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

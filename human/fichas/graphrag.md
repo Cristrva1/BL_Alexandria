@@ -29,6 +29,8 @@ Paquete Python con CLI (`graphrag init`, indexado y consulta) que llama a los mo
 | [litellm](litellm.md) | GraphRAG usa LiteLLM como gestor de modelos según su documentación de configuración. | Define el proveedor y modelo en `settings.yaml`; si usas el proxy de LiteLLM, apunta allí la URL base. |
 | [mcp-neo4j](mcp-neo4j.md) | Cargar en Neo4j las tablas de entidades y relaciones generadas y explorarlas con un agente (combinación por arquitectura). | Indexa primero; importa los Parquet resultantes a Neo4j y conecta el MCP con un usuario de solo lectura. |
 | [Docling](docling.md) | Convertir PDF y otros formatos a texto antes del indexado, que espera texto, CSV o JSON (combinación por arquitectura). | Convierte primero y deja los archivos en la carpeta de entrada. |
+| [graphify](graphify.md) | Combinación recíproca: graphify lo enlaza como «Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura)». | Orden indicado desde graphify: Usa Graphify para el código y GraphRAG para la documentación. |
+| [Scrapegraph-ai](scrapegraph-ai.md) | Combinación recíproca: Scrapegraph-ai lo enlaza como «Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)». | Orden indicado desde Scrapegraph-ai: Exporta los resultados como documentos para GraphRAG. |
 
 **Notas:** Alternativas (elige una): graphiti, cognee, lightrag. Por su estado de mantenimiento, evalúa lightrag para proyectos nuevos.
 

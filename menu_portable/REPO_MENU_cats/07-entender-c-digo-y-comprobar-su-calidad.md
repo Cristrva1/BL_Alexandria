@@ -62,7 +62,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Autentica tu cuenta y consulta el estado de una pull request de un repositorio de prueba
 **Qué comprobar:** Ves el estado que coincide con la interfaz de GitHub
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `github-mcp-server`, `activepieces`
+**Combina con:** `claude-code`, `github-mcp-server`, `activepieces`, `antigravity-awesome-skills`, `awesome-copilot`
 
 ## `codebase-memory-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=code,mcp,memory
@@ -123,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa una carpeta y consulta quién llama a una función conocida
 **Qué comprobar:** Los resultados identifican definiciones y relaciones comprobables
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `headroom`
+**Combina con:** `claude-code`, `codex`, `headroom`, `floorplan`
 **Alternativas (elige una):** `codebase-memory-mcp`, `serena`, `gitnexus`, `graphify`
 
 ## `floorplan`
@@ -189,7 +189,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función
 **Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`, `codex`
+**Combina con:** `claude-code`, `opencode`, `codex`, `tools`
 **Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`, `codegraph`, `graphify`
 
 ## `graphify`
@@ -253,7 +253,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Envía una petición breve de ejemplo y revisa respuesta y uso informado
 **Qué comprobar:** Obtienes la salida del endpoint y puedes localizar el consumo del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `vllm`, `langchain`
+**Combina con:** `litellm`, `vllm`, `langchain`, `openai-agents-python`, `openai-cookbook`
 
 ## `repomix`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=code,coding-agent,typescript
@@ -283,7 +283,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empaqueta una carpeta pequeña y abre el resultado antes de entregarlo a una IA
 **Qué comprobar:** Puedes comprobar archivos incluidos, tamaño y exclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `tree-sitter`, `markitdown`
+**Combina con:** `claude-code`, `tree-sitter`, `markitdown`, `tools`, `codebase-memory-mcp`
 **Alternativas (elige una):** `gitnexus`
 
 ## `swe-bench`

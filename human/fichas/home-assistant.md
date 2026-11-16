@@ -29,6 +29,8 @@ Está escrito en Python (asyncio). La instalación recomendada es Home Assistant
 | [Ollama](ollama.md) | Agente de conversación local para Assist con la integración oficial de Ollama. | Instala Ollama en la red local, descarga un modelo con soporte de herramientas y añade la integración. |
 | [AdGuardHome](adguardhome.md) | Controlar el filtrado DNS de la red desde paneles y automatizaciones con la integración oficial de AdGuard Home. | Instala AdGuard Home y añade su integración. |
 | [syncthing](syncthing.md) | Supervisar carpetas y dispositivos de Syncthing con la integración oficial. | Crea una clave de API en Syncthing y añade la integración. |
+| [server](nextcloud-server.md) | Combinación recíproca: server lo enlaza como «Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud». | Orden indicado desde server: Activa la integración en Home Assistant con un usuario administrador de Nextcloud. |
+| [Node-RED](node-red.md) | Combinación recíproca: Node-RED lo enlaza como «El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar». | Orden indicado desde Node-RED: Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED. |
 
 **Notas:** Sin alternativas declaradas. Exponer entidades por MCP da control físico de la casa a un modelo: limita qué entidades se exponen.
 

@@ -32,6 +32,12 @@ Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con
 | [NeMo Speech](nemo.md) | Servicios NVIDIA integrados. | Configura el servicio NVIDIA. |
 | [ElevenLabs (SDK de Python)](elevenlabs-python.md) | Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK. | Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[CosyVoice](cosyvoice.md) · [faster-whisper](faster-whisper.md) · [Fish Speech](fish-speech.md) · [IndexTTS](index-tts.md) · [LuxTTS](luxtts.md) · [VibeVoice](vibevoice.md) · [VoxCPM](voxcpm.md)
+
 **Notas:** Alternativas (elige una): livekit-agents, dograh.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.16.0 (2026-11-12) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).

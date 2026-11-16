@@ -29,6 +29,7 @@ Se instala con conda y `pip install -r requirements.txt` (los ejemplos usan espe
 | [Pipecat](pipecat.md) | TTS en agentes de voz. (combinación por arquitectura) | Expón el servidor FastAPI o gRPC. |
 | [vLLM](vllm.md) | Inferencia acelerada documentada. | Instala la versión de vLLM indicada. |
 | [FFmpeg](ffmpeg.md) | Postproceso de audio. (combinación por arquitectura) | Convierte la salida. |
+| [Wan2.2](wan2-2.md) | Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video». | Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`. |
 
 **Notas:** Alternativas (elige una): fish-speech, index-tts.
 

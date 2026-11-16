@@ -30,6 +30,12 @@ Aplicación Django con Celery y Redis/Valkey; el OCR se hace con OCRmyPDF (depen
 | [Tesseract](tesseract.md) | Motor usado por OCRmyPDF; los idiomas se añaden como paquetes de Tesseract. | Define `PAPERLESS_OCR_LANGUAGES` antes del primer arranque. |
 | [ERPNext](erpnext.md) | Archivar facturas y justificantes que se registran en el ERP (combinación por arquitectura). | Define cuál es el sistema maestro de cada documento. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [Stirling-PDF](stirling-pdf.md) · [syncthing](syncthing.md)
+
 **Notas:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.4.2 (2026-11-03) · licencia declarada GPL-3.0 (consultado el 2026-11-15).

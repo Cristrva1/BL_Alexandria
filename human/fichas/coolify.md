@@ -31,6 +31,12 @@ Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en
 | [Windmill](windmill.md) | Plantilla de servicio oficial de Coolify para Windmill. | Coolify primero; luego despliega la plantilla `windmill`. |
 | [FreeDomain](freedomain.md) | Dominio gratuito para las apps. (combinación por arquitectura) | Apunta el DNS al servidor. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (18). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AppFlowy](appflowy.md) · [audiobookshelf](audiobookshelf.md) · [binance-trader](binance-trader.md) · [fluxer](fluxer.md) · [free-for-dev](free-for-dev.md) · [huginn](huginn.md) · [karakeep](karakeep.md) · [NocoDB](nocodb.md) · [open-seo](open-seo.md) · [open-sol-bot](open-sol-bot.md) · [opencode-manager](opencode-manager.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [postiz-app](postiz-app.md) · [server](nextcloud-server.md) · [syncthing](syncthing.md) · [vaultwarden](vaultwarden.md) · [whatsapp-agentkit](whatsapp-agentkit.md)
+
 **Notas:** Alternativa (elige una): casaos.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.7.5 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

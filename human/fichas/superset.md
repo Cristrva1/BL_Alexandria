@@ -29,6 +29,8 @@ Se prueba con Docker Compose y se despliega en producción con Kubernetes (Helm)
 | [DuckDB](duckdb.md) | DuckDB y MotherDuck son bases soportadas en la documentación. | Instala el driver de DuckDB y añade la conexión. |
 | [WrenAI](wrenai.md) | Capa semántica y text-to-SQL para agentes junto a paneles de Superset. (combinación por arquitectura) | Modela en WrenAI y visualiza en Superset. |
 | [echarts](echarts.md) | Superset usa ECharts en muchas visualizaciones. (combinación por arquitectura) | No requiere instalación aparte. |
+| [hudi](hudi.md) | Combinación recíproca: hudi lo enlaza como «BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura)». | Orden indicado desde hudi: Conecta Superset al motor de consulta. |
+| [Kestra](kestra.md) | Combinación recíproca: Kestra lo enlaza como «Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura)». | Orden indicado desde Kestra: Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén. |
 
 **Notas:** Alternativas (elige una): metabase, redash.
 

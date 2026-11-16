@@ -218,7 +218,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Marca dos puntos de un video propio y exporta el segmento sin recodificar
 **Qué comprobar:** Compruebas duración, comienzo, final y pistas del clip
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `yt-dlp`, `whisperx`, `moviepy`
+**Combina con:** `ffmpeg`, `yt-dlp`, `whisperx`, `moviepy`, `obs-studio`, `opencut`
 
 ## `moneyprinterturbo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
@@ -280,7 +280,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una escena con pantalla y micrófono y graba veinte segundos
 **Qué comprobar:** El archivo tiene imagen, audio y niveles aceptables
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `lossless-cut`, `opencut`, `faster-whisper`
+**Combina con:** `lossless-cut`, `opencut`, `faster-whisper`, `rnnoise`, `deep-live-cam`, `rvc`
 
 ## `opencut`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=video,ui,typescript,rust
@@ -438,7 +438,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige primero el modelo TI2V-5B y la ruta de memoria documentada y genera un clip breve
 **Qué comprobar:** Puedes identificar pesos, tamaño, duración y recursos de la ejecución
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`, `cosyvoice`, `real-esrgan`
+**Combina con:** `comfyui`, `diffusers`, `cosyvoice`, `real-esrgan`, `wan2gp`
 **Alternativas (elige una):** `hunyuanvideo`, `hunyuanvideo-1-5`
 
 ## `wan2gp`
@@ -469,5 +469,5 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige un modelo pequeño admitido y genera un clip corto antes de activar Deepy o Showrunner
 **Qué comprobar:** Puedes comprobar memoria, duración y motor de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`, `hunyuanvideo-1-5`
+**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`, `hunyuanvideo-1-5`, `hunyuanvideo`
 **Alternativas (elige una):** `comfyui`

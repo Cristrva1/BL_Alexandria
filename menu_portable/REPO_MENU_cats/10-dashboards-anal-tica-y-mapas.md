@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Muestra un gráfico con tres categorías y cambia un valor
 **Qué comprobar:** El gráfico se actualiza y conserva etiquetas y leyenda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-dataviz`, `tailwindcss`, `duckdb`
+**Combina con:** `tailwindcss`, `duckdb`, `supabase`
 **Alternativas (elige una):** `echarts`, `recharts`
 
 ## `d3`
@@ -153,7 +153,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una serie de ventas y añade una segunda para comparar
 **Qué comprobar:** La leyenda distingue ambas series y el tooltip muestra valores correctos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `metabase`, `superset`, `heroui`
+**Combina con:** `metabase`, `superset`, `heroui`, `ant-design`, `awesome-dataviz`, `dash`
 **Alternativas (elige una):** `d3`, `chart-js`, `recharts`
 
 ## `gods-eye-view`
@@ -407,7 +407,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra un evento ficticio y construye un embudo de dos pasos en un proyecto de prueba
 **Qué comprobar:** Puedes ver cada evento y cómo se calcula el embudo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `activepieces`, `metabase`
+**Combina con:** `claude-code`, `activepieces`, `metabase`, `claude-seo`, `marketingskills`, `mautic`
 
 ## `pythia`
 role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=osint,typescript
@@ -439,7 +439,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Consulta un resumen del estado observado y separa los eventos de los escenarios generados
 **Qué comprobar:** Cada evento tiene origen y los escenarios se identifican como hipótesis
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `osiris`, `mirofish`, `ollama`, `claude-code`
+**Combina con:** `osiris`, `mirofish`, `ollama`, `claude-code`, `gods-eye-view`
 
 ## `recharts`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,react,typescript
@@ -470,7 +470,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja una línea con cinco valores y comprueba etiquetas y tooltip
 **Qué comprobar:** Los puntos corresponden a los datos y el gráfico cabe en móvil
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `d3`, `tailwindcss`
+**Combina con:** `ui`, `d3`, `tailwindcss`, `mui`
 **Alternativas (elige una):** `chart-js`, `echarts`
 
 ## `redash`
@@ -532,7 +532,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta una tabla de ventas ficticias y crea un gráfico por mes
 **Qué comprobar:** El gráfico coincide con una suma SQL verificable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `wrenai`, `echarts`
+**Combina con:** `duckdb`, `wrenai`, `echarts`, `hudi`, `kestra`
 **Alternativas (elige una):** `metabase`, `redash`
 
 ## `umami`

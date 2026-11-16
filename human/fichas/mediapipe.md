@@ -29,6 +29,8 @@ Se instala con `pip install mediapipe` o con los SDK de Android, iOS y web. La d
 | [OpenCV](opencv.md) | Captura de vídeo en escritorio. | Lee frames con OpenCV y pásalos a Tasks. |
 | [tfjs-models](tfjs-models.md) | Modelos de pose en navegador con backend MediaPipe. | Elige el runtime `mediapipe` en pose-detection. |
 | [three.js](three-js.md) | Avatares controlados por landmarks. (combinación por arquitectura) | Mapea landmarks a un esqueleto 3D. |
+| [EasyMocap](easymocap.md) | Combinación recíproca: EasyMocap lo enlaza como «Detector de keypoints soportado». | Orden indicado desde EasyMocap: Usa el detector MediaPipe. |
+| [tensorflow](tensorflow.md) | Combinación recíproca: tensorflow lo enlaza como «Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)». | Orden indicado desde tensorflow: Usa modelos TF Lite en MediaPipe. |
 
 **Notas:** Sin alternativas declaradas.
 

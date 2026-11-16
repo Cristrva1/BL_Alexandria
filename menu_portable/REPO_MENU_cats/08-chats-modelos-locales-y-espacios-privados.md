@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un workspace con un PDF corto y consulta un dato presente en él
 **Qué comprobar:** Puedes abrir el fragmento que apoya la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `qdrant`, `litellm`, `localai`
+**Combina con:** `ollama`, `qdrant`, `litellm`, `localai`, `chroma`, `milvus`
 **Alternativas (elige una):** `open-webui`, `khoj`, `private-gpt`, `onyx`
 
 ## `chatbox`
@@ -306,7 +306,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un proveedor y prueba un agente sin herramientas antes de añadir archivos
 **Qué comprobar:** Puedes identificar el modelo y revisar la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `ollama`, `langfuse`
+**Combina con:** `litellm`, `ollama`, `langfuse`, `llama-cpp`, `pgvector`, `exo`
 **Alternativas (elige una):** `open-webui`, `lobehub`
 
 ## `llama-cpp`
@@ -399,7 +399,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta el inspector y compara RAM y VRAM detectadas con tu equipo
 **Qué comprobar:** Las recomendaciones explican qué modelos y cuantizaciones podrían caber
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `llama-cpp`, `vllm`
+**Combina con:** `ollama`, `llama-cpp`, `vllm`, `airllm`, `jan`, `textgen`
 
 ## `lobehub`
 role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript
@@ -462,7 +462,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca el servidor, instala un modelo pequeño y prueba una petición de texto
 **Qué comprobar:** El endpoint responde con el modelo elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `anything-llm`, `open-webui`, `librechat`
+**Combina con:** `anything-llm`, `open-webui`, `librechat`, `chatbox`
 **Alternativas (elige una):** `ollama`, `llama-cpp`
 
 ## `magnitude`
@@ -647,7 +647,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un notebook con dos fuentes y pregunta por un dato con referencia
 **Qué comprobar:** Puedes identificar la fuente y corregir un resumen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `vllm`, `activepieces`
+**Combina con:** `ollama`, `vllm`, `activepieces`, `scientific-agent-skills`, `olmocr`, `vibevoice`
 **Alternativas (elige una):** `deeptutor`, `surfsense`
 
 ## `open-webui`

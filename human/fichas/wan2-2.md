@@ -30,6 +30,7 @@ Se instala con `pip install -r requirements.txt` y se descargan los pesos de Hug
 | [diffusers](diffusers.md) | T2V, I2V, TI2V y Animate integrados en diffusers. | Usa los checkpoints `-Diffusers` de Hugging Face. |
 | [CosyVoice](cosyvoice.md) | Síntesis de voz para Speech-to-Video. | Instala `requirements_s2v.txt`. |
 | [Real-ESRGAN](real-esrgan.md) | Ampliar los vídeos generados. (combinación por arquitectura) | Pasa los fotogramas por Real-ESRGAN. |
+| [WanGP](wan2gp.md) | Combinación recíproca: WanGP lo enlaza como «Ejecuta los modelos Wan 2.2 con menos VRAM». | Orden indicado desde WanGP: Descarga el modelo desde la interfaz. |
 
 **Notas:** Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.
 

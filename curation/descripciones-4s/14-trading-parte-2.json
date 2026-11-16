@@ -83,14 +83,14 @@
      "orden_instalacion": "Reescribe las llamadas con CCXT."
     },
     {
-     "id": "freqtrade",
-     "motivo": "Alternativa madura con backtesting y dry-run. (combinación por arquitectura)",
-     "orden_instalacion": "Prueba la estrategia en Freqtrade en dry-run."
-    },
-    {
      "id": "vectorbt",
      "motivo": "Evaluar la estrategia con datos históricos. (combinación por arquitectura)",
      "orden_instalacion": "Backtestea antes de usar dinero real."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar su imagen Docker en un servidor propio gestionado con Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; las claves de API de Binance como secretos y con permisos mínimos (sin retirada de fondos)."
     }
    ],
    "notas": "Sin alternativas declaradas. Proyecto experimental. Riesgo financiero: no es asesoramiento de inversión.",
@@ -194,6 +194,12 @@
      "id": "marimo",
      "motivo": "Notebooks reactivos para los ejercicios. (combinación por arquitectura)",
      "orden_instalacion": "Convierte notebooks a marimo si lo prefieres."
+    },
+    {
+     "id": "finrl",
+     "motivo": "Combinación recíproca: FinRL lo enlaza como «Base teórica y práctica complementaria. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde FinRL: Estudia los capítulos de RL del libro.",
+     "reciproca_de": "finrl"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -216,11 +222,6 @@
    "como_lo_hace": "Se despliega con Docker o Podman Compose y se configura con una wallet y un RPC de Solana.",
    "combina_con": [
     {
-     "id": "autohedge",
-     "motivo": "Comparar con agentes autónomos que también operan en Solana. (combinación por arquitectura)",
-     "orden_instalacion": "Evalúa ambos solo en entornos de prueba."
-    },
-    {
      "id": "grafana",
      "motivo": "Monitorizar operaciones y saldos. (combinación por arquitectura)",
      "orden_instalacion": "Exporta métricas a una base y crea paneles."
@@ -229,6 +230,11 @@
      "id": "activepieces",
      "motivo": "Avisos de operaciones. (combinación por arquitectura)",
      "orden_instalacion": "Envía eventos a Activepieces por webhook."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar su Docker Compose en un servidor propio gestionado con Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el recurso desde el compose del bot con la wallet y el RPC como secretos. El autor lo presenta como práctica, no apta para producción."
     }
    ],
    "notas": "Sin alternativas declaradas. No apto para producción, según su autor. Riesgo muy alto con claves privadas. Riesgo financiero: no es asesoramiento de inversión.",
@@ -261,9 +267,9 @@
      "orden_instalacion": "Viene en las dependencias."
     },
     {
-     "id": "tradingagents",
-     "motivo": "Comparar con otro framework multiagente de trading. (combinación por arquitectura)",
-     "orden_instalacion": "Evalúa ambos con los mismos activos."
+     "id": "langfuse",
+     "motivo": "Trazar las llamadas de sus agentes de LangChain y LangGraph con la integración de Langfuse para LangChain (combinación por arquitectura).",
+     "orden_instalacion": "Langfuse en marcha y sus claves en el entorno; después añade el callback de Langfuse a la ejecución de los agentes."
     }
    ],
    "notas": "Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión.",

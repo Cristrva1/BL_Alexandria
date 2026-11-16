@@ -22,6 +22,12 @@
      "id": "ollama",
      "motivo": "Dar a Nextcloud Assistant un modelo local mediante un backend compatible con la API de OpenAI. (combinación por arquitectura) (la app integration_openai admite endpoints compatibles; la compatibilidad concreta con Ollama es [DATO NO VERIFICADO] en este lote)",
      "orden_instalacion": "Levanta Ollama, instala la app de integración y apunta su URL al endpoint compatible."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor.",
+     "reciproca_de": "casaos"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.",
@@ -62,6 +68,24 @@
      "id": "vaultwarden",
      "motivo": "Dar un nombre local (p. ej. `vault.casa`) a los servicios autoalojados con las reescrituras DNS de AdGuard Home. (combinación por arquitectura)",
      "orden_instalacion": "Configura la reescritura DNS hacia el proxy inverso que publica Vaultwarden con HTTPS."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Combinación recíproca: CasaOS lo enlaza como «DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CasaOS: Instálalo como app.",
+     "reciproca_de": "casaos"
+    },
+    {
+     "id": "cleanyourtv",
+     "motivo": "Combinación recíproca: cleanyourtv lo enlaza como «Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cleanyourtv: Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor.",
+     "reciproca_de": "cleanyourtv"
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Combinación recíproca: optimizerDuck lo enlaza como «Bloqueo de telemetría a nivel de red que complementa los ajustes locales. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde optimizerDuck: Configura AdGuard Home como DNS y luego aplica los ajustes de privacidad en Windows.",
+     "reciproca_de": "optimizerduck"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador.",
@@ -213,6 +237,18 @@
      "id": "syncthing",
      "motivo": "Supervisar carpetas y dispositivos de Syncthing con la integración oficial.",
      "orden_instalacion": "Crea una clave de API en Syncthing y añade la integración."
+    },
+    {
+     "id": "nextcloud-server",
+     "motivo": "Combinación recíproca: server lo enlaza como «Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud».",
+     "orden_instalacion": "Orden indicado desde server: Activa la integración en Home Assistant con un usuario administrador de Nextcloud.",
+     "reciproca_de": "nextcloud-server"
+    },
+    {
+     "id": "node-red",
+     "motivo": "Combinación recíproca: Node-RED lo enlaza como «El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar».",
+     "orden_instalacion": "Orden indicado desde Node-RED: Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED.",
+     "reciproca_de": "node-red"
     }
    ],
    "notas": "Sin alternativas declaradas. Exponer entidades por MCP da control físico de la casa a un modelo: limita qué entidades se exponen.",
@@ -295,6 +331,12 @@
      "id": "claude-code",
      "motivo": "Consultar y organizar marcadores desde un agente con las skills y la CLI documentadas de Karakeep.",
      "orden_instalacion": "Instala la CLI, crea una clave de API e instala la skill en el agente."
+    },
+    {
+     "id": "archivebox",
+     "motivo": "Combinación recíproca: ArchiveBox lo enlaza como «Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ArchiveBox: Exporta los enlaces de Karakeep e impórtalos en ArchiveBox.",
+     "reciproca_de": "archivebox"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre.",
@@ -410,6 +452,18 @@
      "id": "adguardhome",
      "motivo": "Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)",
      "orden_instalacion": "Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor."
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Combinación recíproca: optimizerDuck lo enlaza como «Misma filosofía para el televisor Android. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde optimizerDuck: Úsalos por separado, cada uno en su plataforma.",
+     "reciproca_de": "optimizerduck"
+    },
+    {
+     "id": "universal-android-debloater-next-generation",
+     "motivo": "Combinación recíproca: universal-android-debloater-next-generation lo enlaza como «Misma técnica (ADB, `pm`) para televisores Android. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde universal-android-debloater-next-generation: Úsalos por separado con el mismo ADB instalado.",
+     "reciproca_de": "universal-android-debloater-next-generation"
     }
    ],
    "notas": "Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (MIT). Da acceso ADB al agente solo mientras dure la tarea.",

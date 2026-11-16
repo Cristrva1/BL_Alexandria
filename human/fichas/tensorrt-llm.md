@@ -29,6 +29,7 @@ Se instala con pip o con contenedores NGC y solo funciona en GPU NVIDIA con CUDA
 | [litellm](litellm.md) | Enrutar a `trtllm-serve` como endpoint compatible con OpenAI. (combinación por arquitectura) | Lanza trtllm-serve y regístralo en LiteLLM. |
 | [Open WebUI](open-webui.md) | Chat sobre modelos servidos con TensorRT LLM. (combinación por arquitectura) | Configura Open WebUI contra el endpoint de trtllm-serve. |
 | [Transformers](transformers.md) | Partir de checkpoints de Hugging Face para optimizarlos. (combinación por arquitectura) | Descarga el modelo con Transformers/Hub y cárgalo en la LLM API. |
+| [DeepSeek-V3](deepseek-v3.md) | Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado para GPU NVIDIA». | Orden indicado desde DeepSeek-V3: Construye el motor con TensorRT-LLM. |
 
 **Notas:** Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.
 

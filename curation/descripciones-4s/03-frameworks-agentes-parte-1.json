@@ -107,6 +107,24 @@
      "id": "fastmcp",
      "motivo": "Exponer herramientas propias como servidor MCP que CrewAI puede consumir (combinación por arquitectura; CrewAI documenta soporte MCP).",
      "orden_instalacion": "Servidor MCP primero; conéctalo a los agentes."
+    },
+    {
+     "id": "500-ai-agents-projects",
+     "motivo": "Combinación recíproca: 500-AI-Agents-Projects lo enlaza como «Framework más citado en la colección».",
+     "orden_instalacion": "Orden indicado desde 500-AI-Agents-Projects: Instálalo en el entorno del agente que lo use.",
+     "reciproca_de": "500-ai-agents-projects"
+    },
+    {
+     "id": "ai-engineering-hub",
+     "motivo": "Combinación recíproca: ai-engineering-hub lo enlaza como «Framework de agentes usado en varios proyectos».",
+     "orden_instalacion": "Orden indicado desde ai-engineering-hub: Instálalo en el entorno del proyecto que lo use.",
+     "reciproca_de": "ai-engineering-hub"
+    },
+    {
+     "id": "copilotkit",
+     "motivo": "Combinación recíproca: CopilotKit lo enlaza como «Equipos de agentes CrewAI con integración documentada».",
+     "orden_instalacion": "Orden indicado desde CopilotKit: Despliega el crew y conéctalo al runtime.",
+     "reciproca_de": "copilotkit"
     }
    ],
    "notas": "Alternativas (elige una): langgraph, agno, metagpt. Se quitó langchain: CrewAI no lo requiere.",
@@ -188,6 +206,12 @@
      "id": "mem0",
      "motivo": "Memoria externa con integración documentada por Mem0.",
      "orden_instalacion": "Opcional: Agno ya trae memoria propia sobre PostgreSQL."
+    },
+    {
+     "id": "500-ai-agents-projects",
+     "motivo": "Combinación recíproca: 500-AI-Agents-Projects lo enlaza como «Framework usado en muchos de los agentes listados».",
+     "orden_instalacion": "Orden indicado desde 500-AI-Agents-Projects: Instálalo según el requirements del ejemplo.",
+     "reciproca_de": "500-ai-agents-projects"
     }
    ],
    "notas": "Alternativas (elige una): crewai, langgraph. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
@@ -225,6 +249,18 @@
      "id": "ragas",
      "motivo": "Métricas de RAG como objetivo para los optimizadores (combinación por arquitectura).",
      "orden_instalacion": "Define la métrica antes de compilar."
+    },
+    {
+     "id": "hermes-agent-self-evolution",
+     "motivo": "Combinación recíproca: hermes-agent-self-evolution lo enlaza como «Motor de optimización (DSPy + GEPA) sobre el que está construida».",
+     "orden_instalacion": "Orden indicado desde hermes-agent-self-evolution: Se instala como dependencia; consulta la documentación de GEPA en DSPy para entender los parámetros.",
+     "reciproca_de": "hermes-agent-self-evolution"
+    },
+    {
+     "id": "opik",
+     "motivo": "Combinación recíproca: Opik lo enlaza como «Integración documentada con DSPy».",
+     "orden_instalacion": "Orden indicado desde Opik: Activa el callback de Opik en DSPy.",
+     "reciproca_de": "opik"
     }
    ],
    "notas": "Alternativa (elige una): promptfoo. Si actualizas desde versiones con LiteLLM, revisa la guía de migración.",
@@ -263,6 +299,24 @@
      "id": "langfuse",
      "motivo": "Trazas de código abierto mediante la integración de Langfuse con LangChain/LangGraph (combinación por arquitectura).",
      "orden_instalacion": "Configura el callback antes de producción."
+    },
+    {
+     "id": "awesome-langgraph",
+     "motivo": "Combinación recíproca: awesome-LangGraph lo enlaza como «Sección propia en la lista».",
+     "orden_instalacion": "Orden indicado desde awesome-LangGraph: No aplica.",
+     "reciproca_de": "awesome-langgraph"
+    },
+    {
+     "id": "nemoclaw",
+     "motivo": "Combinación recíproca: NemoClaw lo enlaza como «Deep Agents Code soportado».",
+     "orden_instalacion": "Orden indicado desde NemoClaw: Elige Deep Agents Code.",
+     "reciproca_de": "nemoclaw"
+    },
+    {
+     "id": "open-swe",
+     "motivo": "Combinación recíproca: Open SWE lo enlaza como «Framework sobre el que está construido».",
+     "orden_instalacion": "Orden indicado desde Open SWE: Viene incluido.",
+     "reciproca_de": "open-swe"
     }
    ],
    "notas": "Alternativa (elige una): openai-agents-python. Si da shell al agente, úsalo dentro de un sandbox.",
@@ -304,6 +358,18 @@
      "id": "fastmcp",
      "motivo": "Construir servidores MCP propios que el SDK consume como herramientas (combinación por arquitectura; el SDK documenta MCP).",
      "orden_instalacion": "Servidor MCP primero."
+    },
+    {
+     "id": "awesome-llm-apps",
+     "motivo": "Combinación recíproca: Awesome LLM Apps lo enlaza como «Framework usado por varias plantillas de agentes (citado en el README)».",
+     "orden_instalacion": "Orden indicado desde Awesome LLM Apps: Instálalo dentro del entorno de la plantilla que lo use.",
+     "reciproca_de": "awesome-llm-apps"
+    },
+    {
+     "id": "composio",
+     "motivo": "Combinación recíproca: Composio lo enlaza como «Adaptador oficial (`composio-openai-agents`)».",
+     "orden_instalacion": "Orden indicado desde Composio: Instala el SDK y el adaptador.",
+     "reciproca_de": "composio"
     }
    ],
    "notas": "Alternativas (elige una): pydantic-ai, langgraph, smolagents, deepagents, adk-python. Las trazas están activadas por defecto y van al panel de OpenAI; se desactivan con `OPENAI_AGENTS_DISABLE_TRACING=1`.",
@@ -390,6 +456,12 @@
      "id": "langfuse",
      "motivo": "Trazas con la integración oficial de Langfuse.",
      "orden_instalacion": "Añade el componente tracer de Langfuse."
+    },
+    {
+     "id": "turbovec",
+     "motivo": "Combinación recíproca: turbovec lo enlaza como «Integración oficial (`turbovec[haystack]`)».",
+     "orden_instalacion": "Orden indicado desde turbovec: Igual que arriba.",
+     "reciproca_de": "turbovec"
     }
    ],
    "notas": "Alternativas (elige una): llama-index, langchain. Desactiva la telemetría si tu política lo exige.",
@@ -434,6 +506,18 @@
      "id": "google-skills",
      "motivo": "Skills oficiales de Google Cloud para que un agente de código despliegue en Cloud Run o Agent Runtime (combinación por arquitectura).",
      "orden_instalacion": "Independientes."
+    },
+    {
+     "id": "awesome-llm-apps",
+     "motivo": "Combinación recíproca: Awesome LLM Apps lo enlaza como «Framework de Google usado en otras plantillas (citado en el README)».",
+     "orden_instalacion": "Orden indicado desde Awesome LLM Apps: Instálalo en el entorno de la plantilla correspondiente.",
+     "reciproca_de": "awesome-llm-apps"
+    },
+    {
+     "id": "gemini-skills",
+     "motivo": "Combinación recíproca: gemini-skills lo enlaza como «Construir agentes sobre la API de Gemini con el ADK (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde gemini-skills: Independientes.",
+     "reciproca_de": "gemini-skills"
     }
    ],
    "notas": "Alternativas (elige una): langgraph, openai-agents-python. Se quitó gemini-cli: no es una integración.",
@@ -472,6 +556,24 @@
      "id": "ollama",
      "motivo": "Proveedor de modelos locales soportado.",
      "orden_instalacion": "Ollama con el modelo descargado primero."
+    },
+    {
+     "id": "browser-use",
+     "motivo": "Combinación recíproca: browser-use lo enlaza como «Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI».",
+     "orden_instalacion": "Orden indicado desde browser-use: Instala el extra correspondiente de pydantic-ai para el proveedor elegido.",
+     "reciproca_de": "browser-use"
+    },
+    {
+     "id": "loguru",
+     "motivo": "Combinación recíproca: loguru lo enlaza como «Logging sencillo en agentes Python. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde loguru: Configura Loguru al iniciar el agente.",
+     "reciproca_de": "loguru"
+    },
+    {
+     "id": "mcp-python-sdk",
+     "motivo": "Combinación recíproca: MCP Python SDK lo enlaza como «Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MCP Python SDK: Conecta el servidor como toolset MCP.",
+     "reciproca_de": "mcp-python-sdk"
     }
    ],
    "notas": "Alternativas (elige una): openai-agents-python, smolagents, langgraph.",
@@ -581,6 +683,18 @@
      "id": "ollama",
      "motivo": "Modelos locales a través del enrutamiento de proveedores (combinación por arquitectura) [DATO NO VERIFICADO: proveedor exacto].",
      "orden_instalacion": "Ollama primero."
+    },
+    {
+     "id": "composio",
+     "motivo": "Combinación recíproca: Composio lo enlaza como «Adaptador de proveedor».",
+     "orden_instalacion": "Orden indicado desde Composio: Instala el adaptador de Mastra.",
+     "reciproca_de": "composio"
+    },
+    {
+     "id": "openbot",
+     "motivo": "Combinación recíproca: OpenBot lo enlaza como «Incluye un agente de ejemplo de Mastra (`agent-mastra`) conectable por AG-UI».",
+     "orden_instalacion": "Orden indicado desde OpenBot: Arranca OpenBot y conecta el agente Mastra.",
+     "reciproca_de": "openbot"
     }
    ],
    "notas": "Alternativas (elige una): langgraphjs, vercel-ai. Las funciones de `ee/` requieren licencia comercial para producción.",

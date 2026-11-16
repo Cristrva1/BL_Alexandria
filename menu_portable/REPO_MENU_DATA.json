@@ -11376,7 +11376,8 @@
         "crawl4ai",
         "markitdown",
         "repomix",
-        "gitnexus"
+        "gitnexus",
+        "guia"
       ],
       "alt": []
     },
@@ -12582,7 +12583,8 @@
       "combines_with": [
         "duckdb",
         "claude-code",
-        "polars"
+        "polars",
+        "coolify"
       ],
       "alt": [
         "kestra",
@@ -12703,7 +12705,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "gemini-cli"
+        "gemini-cli",
+        "plugins"
       ],
       "alt": [
         "superpowers"
@@ -12825,7 +12828,7 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "codex-plugin-cc"
+        "skillspector"
       ],
       "alt": []
     },
@@ -12941,7 +12944,9 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "multica"
+        "multica",
+        "claude-token-efficient",
+        "ponytail"
       ],
       "alt": []
     },
@@ -13062,7 +13067,10 @@
       "combines_with": [
         "claude-code",
         "skillspector",
-        "claude-agent-sdk-python"
+        "claude-agent-sdk-python",
+        "hello-halo",
+        "scientific-agent-skills",
+        "financial-services"
       ],
       "alt": []
     },
@@ -13183,7 +13191,8 @@
         "codex",
         "claude-code",
         "cli",
-        "skillspector"
+        "skillspector",
+        "antigravity-cli"
       ],
       "alt": [
         "awesome-agent-skills",
@@ -13418,7 +13427,8 @@
         "claude-code",
         "codex",
         "gemini-cli",
-        "skillspector"
+        "skillspector",
+        "awesome-agents"
       ],
       "alt": [
         "antigravity-awesome-skills",
@@ -14011,7 +14021,7 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "skills"
+        "skillspector"
       ],
       "alt": [
         "spec-kit"
@@ -14369,7 +14379,8 @@
       "combines_with": [
         "claude-code",
         "superpowers",
-        "skills"
+        "skills",
+        "awesome-claude-code"
       ],
       "alt": [
         "wshobson-agents"
@@ -14487,7 +14498,7 @@
       "combines_with": [
         "claude-code",
         "andrej-karpathy-skills",
-        "ponytail"
+        "claude-code-usage-monitor"
       ],
       "alt": [],
       "agent_tools": [
@@ -14733,7 +14744,9 @@
         "claude-code",
         "codex",
         "opencode",
-        "gemini-cli"
+        "gemini-cli",
+        "claude-code-hooks-mastery",
+        "hermes-agent"
       ],
       "alt": [
         "superclaude-framework",
@@ -15700,7 +15713,8 @@
       "combines_with": [
         "claude-code",
         "claude-plugins-official",
-        "codex"
+        "codex",
+        "plugins"
       ],
       "alt": []
     },
@@ -15819,7 +15833,9 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "gemini-cli"
+        "gemini-cli",
+        "awesome-copilot",
+        "elephant-goldfish-model"
       ],
       "alt": [
         "bmad-method",
@@ -16065,7 +16081,8 @@
         "claude-plugins-official",
         "codex",
         "gemini-cli",
-        "hermes-agent"
+        "hermes-agent",
+        "claude-code"
       ],
       "alt": [
         "agent-skills",
@@ -16190,7 +16207,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "plugins"
       ],
       "alt": [
         "claude-plugins-official",
@@ -16315,7 +16333,9 @@
         "litellm",
         "fastmcp",
         "langfuse",
-        "google-skills"
+        "google-skills",
+        "awesome-llm-apps",
+        "gemini-skills"
       ],
       "alt": [
         "langgraph",
@@ -16560,7 +16580,8 @@
         "langfuse",
         "copilotkit",
         "ag2",
-        "ollama"
+        "ollama",
+        "ai-agents-for-beginners"
       ],
       "alt": []
     },
@@ -16688,7 +16709,8 @@
       "combines_with": [
         "claude-agent-sdk-python",
         "qdrant",
-        "mem0"
+        "mem0",
+        "500-ai-agents-projects"
       ],
       "alt": [
         "crewai",
@@ -17053,7 +17075,9 @@
         "claude-code",
         "fastmcp",
         "langfuse",
-        "e2b"
+        "e2b",
+        "agno",
+        "pageindex"
       ],
       "alt": []
     },
@@ -17173,7 +17197,10 @@
       "combines_with": [
         "mem0",
         "langfuse",
-        "fastmcp"
+        "fastmcp",
+        "500-ai-agents-projects",
+        "ai-engineering-hub",
+        "copilotkit"
       ],
       "alt": [
         "langgraph",
@@ -17297,7 +17324,10 @@
       "combines_with": [
         "langgraph",
         "langchain",
-        "langfuse"
+        "langfuse",
+        "awesome-langgraph",
+        "nemoclaw",
+        "open-swe"
       ],
       "alt": [
         "openai-agents-python"
@@ -17418,7 +17448,9 @@
       "combines_with": [
         "langfuse",
         "ollama",
-        "claude-code"
+        "claude-code",
+        "evolution-api",
+        "paddleocr"
       ],
       "alt": [
         "sim",
@@ -17544,7 +17576,9 @@
       "combines_with": [
         "mlflow",
         "langfuse",
-        "ragas"
+        "ragas",
+        "hermes-agent-self-evolution",
+        "opik"
       ],
       "alt": [
         "promptfoo"
@@ -17673,7 +17707,8 @@
         "qdrant",
         "docling",
         "ollama",
-        "langfuse"
+        "langfuse",
+        "turbovec"
       ],
       "alt": [
         "llama-index",
@@ -18536,7 +18571,9 @@
         "langchain",
         "langfuse",
         "copilotkit",
-        "langgraph"
+        "langgraph",
+        "agent-protocol",
+        "social-media-agent"
       ],
       "alt": [
         "mastra",
@@ -18902,7 +18939,9 @@
       "combines_with": [
         "copilotkit",
         "langfuse",
-        "ollama"
+        "ollama",
+        "composio",
+        "openbot"
       ],
       "alt": [
         "langgraphjs",
@@ -19145,7 +19184,8 @@
       "combines_with": [
         "graphiti",
         "litellm",
-        "ollama"
+        "ollama",
+        "pythia"
       ],
       "alt": []
     },
@@ -19263,7 +19303,9 @@
         "litellm",
         "openai-python",
         "langfuse",
-        "fastmcp"
+        "fastmcp",
+        "awesome-llm-apps",
+        "composio"
       ],
       "alt": [
         "pydantic-ai",
@@ -19510,7 +19552,10 @@
       "combines_with": [
         "langfuse",
         "fastmcp",
-        "ollama"
+        "ollama",
+        "browser-use",
+        "loguru",
+        "mcp-python-sdk"
       ],
       "alt": [
         "openai-agents-python",
@@ -20133,7 +20178,8 @@
       "combines_with": [
         "yt-dlp",
         "changedetection",
-        "karakeep"
+        "karakeep",
+        "instaloader"
       ],
       "alt": []
     },
@@ -20378,7 +20424,10 @@
       "combines_with": [
         "ollama",
         "claude-code",
-        "activepieces"
+        "activepieces",
+        "archivebox",
+        "cloud-mail",
+        "huginn"
       ],
       "alt": []
     },
@@ -20500,7 +20549,8 @@
       "combines_with": [
         "ollama",
         "qdrant",
-        "litellm"
+        "litellm",
+        "tools"
       ],
       "alt": [
         "jina-reader"
@@ -20617,7 +20667,8 @@
       "combines_with": [
         "playwright",
         "defuddle",
-        "llm-scraper"
+        "llm-scraper",
+        "awesome-web-scraping"
       ],
       "alt": []
     },
@@ -20849,7 +20900,10 @@
       "combines_with": [
         "obsidian-clipper",
         "obsidian-skills",
-        "crawlee"
+        "crawlee",
+        "claude-obsidian",
+        "scrapling",
+        "scrapy"
       ],
       "alt": []
     },
@@ -21448,7 +21502,8 @@
       "combines_with": [
         "playwright",
         "vercel-ai",
-        "ollama"
+        "ollama",
+        "crawlee"
       ],
       "alt": [
         "maxun"
@@ -21697,7 +21752,8 @@
       "combines_with": [
         "ollama",
         "playwright",
-        "graphrag"
+        "graphrag",
+        "crawlee-python"
       ],
       "alt": [
         "maxun"
@@ -21935,7 +21991,8 @@
       "combines_with": [
         "playwright",
         "scrapling",
-        "defuddle"
+        "defuddle",
+        "awesome-web-scraping"
       ],
       "alt": []
     },
@@ -22759,7 +22816,9 @@
       "combines_with": [
         "claude-code",
         "blender",
-        "unity-mcp"
+        "unity-mcp",
+        "blender-skills",
+        "dream-loop"
       ],
       "alt": []
     },
@@ -22880,7 +22939,10 @@
       "combines_with": [
         "claude-code",
         "gemini-cli",
-        "mcp-inspector"
+        "mcp-inspector",
+        "puppeteer",
+        "agent-browser",
+        "awesome-chrome-devtools"
       ],
       "alt": [
         "playwright-mcp",
@@ -23244,7 +23306,8 @@
       "combines_with": [
         "claude-code",
         "ui",
-        "tailwindcss"
+        "tailwindcss",
+        "design-dna"
       ],
       "alt": []
     },
@@ -23363,7 +23426,8 @@
       "combines_with": [
         "ghidra",
         "claude-code",
-        "angr"
+        "angr",
+        "awesome-ai-reverse-engineering"
       ],
       "alt": []
     },
@@ -23483,7 +23547,10 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "strix"
+        "strix",
+        "agentes-chat",
+        "awesome-copilot",
+        "cli"
       ],
       "alt": []
     },
@@ -23595,8 +23662,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "gemini-cli",
-        "servers",
-        "mcp-use"
+        "mcp-use",
+        "mcp-inspector"
       ],
       "alt": []
     },
@@ -23710,7 +23777,9 @@
       "combines_with": [
         "mcp-python-sdk",
         "fastmcp",
-        "mcp-inspector"
+        "mcp-inspector",
+        "ai-agents-for-beginners",
+        "generative-ai-for-beginners"
       ],
       "alt": []
     },
@@ -23943,7 +24012,7 @@
       "combines_with": [
         "claude-code",
         "graphrag",
-        "awesome-mcp-servers"
+        "graphiti"
       ],
       "alt": [
         "neo4j-mcp"
@@ -24062,7 +24131,8 @@
       "combines_with": [
         "mcp-inspector",
         "pydantic-ai",
-        "claude-code"
+        "claude-code",
+        "mcp-for-beginners"
       ],
       "alt": [
         "fastmcp"
@@ -24301,7 +24371,8 @@
       "combines_with": [
         "claude-code",
         "awesome-mcp-servers",
-        "mcp"
+        "mcp",
+        "servers"
       ],
       "alt": [
         "mcp-typescript-sdk"
@@ -24785,7 +24856,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "context7"
+        "context7",
+        "superclaude-framework"
       ],
       "alt": [
         "codegraph",
@@ -24904,7 +24976,8 @@
       "combines_with": [
         "mcp-inspector",
         "mcp-use",
-        "awesome-mcp-servers"
+        "awesome-mcp-servers",
+        "opendots"
       ],
       "alt": []
     },
@@ -25024,7 +25097,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "blender"
+        "blender",
+        "blender-mcp"
       ],
       "alt": []
     },
@@ -25522,7 +25596,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "openclaw"
       ],
       "alt": [
         "engram",
@@ -25652,7 +25727,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "openclaw"
+        "openclaw",
+        "neo4j-mcp"
       ],
       "alt": [
         "graphiti",
@@ -25895,7 +25971,8 @@
         "claude-code",
         "opencode",
         "gemini-cli",
-        "deepseek-harness"
+        "deepseek-harness",
+        "antigravity-cli"
       ],
       "alt": [
         "claude-mem",
@@ -26141,7 +26218,9 @@
       "combines_with": [
         "claude-code",
         "langgraph",
-        "mcp-neo4j"
+        "mcp-neo4j",
+        "mirofish",
+        "neo4j-mcp"
       ],
       "alt": [
         "cognee",
@@ -26260,7 +26339,9 @@
       "combines_with": [
         "litellm",
         "mcp-neo4j",
-        "docling"
+        "docling",
+        "graphify",
+        "scrapegraph-ai"
       ],
       "alt": [
         "graphiti",
@@ -26514,7 +26595,8 @@
         "ollama",
         "docling",
         "langfuse",
-        "ragas"
+        "ragas",
+        "deeptutor"
       ],
       "alt": [
         "graphrag",
@@ -26643,7 +26725,9 @@
         "langgraph",
         "crewai",
         "qdrant",
-        "hermes-desktop"
+        "hermes-desktop",
+        "agents-towards-production",
+        "agno"
       ],
       "alt": [
         "letta",
@@ -26885,7 +26969,8 @@
       "combines_with": [
         "anything-llm",
         "lightrag",
-        "llama-index"
+        "llama-index",
+        "langchain4j"
       ],
       "alt": [
         "qdrant",
@@ -27375,7 +27460,8 @@
         "supabase",
         "anything-llm",
         "librechat",
-        "lightrag"
+        "lightrag",
+        "langchain4j"
       ],
       "alt": [
         "qdrant",
@@ -27623,7 +27709,8 @@
       "combines_with": [
         "ollama",
         "activepieces",
-        "langfuse"
+        "langfuse",
+        "paddleocr"
       ],
       "alt": [
         "dify",
@@ -28096,7 +28183,9 @@
       "combines_with": [
         "claude-code",
         "github-mcp-server",
-        "activepieces"
+        "activepieces",
+        "antigravity-awesome-skills",
+        "awesome-copilot"
       ],
       "alt": []
     },
@@ -28344,7 +28433,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "headroom"
+        "headroom",
+        "floorplan"
       ],
       "alt": [
         "codebase-memory-mcp",
@@ -28584,7 +28674,8 @@
       "combines_with": [
         "claude-code",
         "opencode",
-        "codex"
+        "codex",
+        "tools"
       ],
       "alt": [
         "repomix",
@@ -28833,7 +28924,9 @@
       "combines_with": [
         "litellm",
         "vllm",
-        "langchain"
+        "langchain",
+        "openai-agents-python",
+        "openai-cookbook"
       ],
       "alt": []
     },
@@ -28952,7 +29045,9 @@
       "combines_with": [
         "claude-code",
         "tree-sitter",
-        "markitdown"
+        "markitdown",
+        "tools",
+        "codebase-memory-mcp"
       ],
       "alt": [
         "gitnexus"
@@ -29430,7 +29525,9 @@
         "ollama",
         "qdrant",
         "litellm",
-        "localai"
+        "localai",
+        "chroma",
+        "milvus"
       ],
       "alt": [
         "open-webui",
@@ -30416,7 +30513,10 @@
       "combines_with": [
         "litellm",
         "ollama",
-        "langfuse"
+        "langfuse",
+        "llama-cpp",
+        "pgvector",
+        "exo"
       ],
       "alt": [
         "open-webui",
@@ -30780,7 +30880,10 @@
       "combines_with": [
         "ollama",
         "llama-cpp",
-        "vllm"
+        "vllm",
+        "airllm",
+        "jan",
+        "textgen"
       ],
       "alt": []
     },
@@ -31030,7 +31133,8 @@
       "combines_with": [
         "anything-llm",
         "open-webui",
-        "librechat"
+        "librechat",
+        "chatbox"
       ],
       "alt": [
         "ollama",
@@ -31760,7 +31864,10 @@
       "combines_with": [
         "ollama",
         "vllm",
-        "activepieces"
+        "activepieces",
+        "scientific-agent-skills",
+        "olmocr",
+        "vibevoice"
       ],
       "alt": [
         "deeptutor",
@@ -33213,7 +33320,8 @@
       "combines_with": [
         "tailwindcss",
         "daisyui",
-        "excalidraw"
+        "excalidraw",
+        "normalize.css"
       ],
       "alt": []
     },
@@ -33331,7 +33439,8 @@
       "combines_with": [
         "tailwindcss",
         "claude-code",
-        "swr"
+        "swr",
+        "echarts"
       ],
       "alt": [
         "mui"
@@ -33682,7 +33791,10 @@
       "combines_with": [
         "ui",
         "tailwindcss",
-        "daisyui"
+        "daisyui",
+        "konva",
+        "normalize.css",
+        "radix-primitives"
       ],
       "alt": []
     },
@@ -33796,7 +33908,8 @@
         "ui",
         "tailwindcss",
         "motion",
-        "claude-code"
+        "claude-code",
+        "animejs"
       ],
       "alt": [
         "react-bits"
@@ -34756,7 +34869,8 @@
       "combines_with": [
         "ui",
         "tailwindcss",
-        "lucide"
+        "lucide",
+        "normalize.css"
       ],
       "alt": []
     },
@@ -35240,7 +35354,10 @@
       "combines_with": [
         "ui",
         "heroui",
-        "supabase"
+        "supabase",
+        "ant-design",
+        "mui",
+        "uplot"
       ],
       "alt": [
         "tanstack-query"
@@ -35846,8 +35963,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "radix-primitives",
-        "tailwindcss"
+        "tailwindcss",
+        "playwright"
       ],
       "alt": []
     },
@@ -36074,9 +36191,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-dataviz",
         "tailwindcss",
-        "duckdb"
+        "duckdb",
+        "supabase"
       ],
       "alt": [
         "echarts",
@@ -36430,7 +36547,10 @@
       "combines_with": [
         "metabase",
         "superset",
-        "heroui"
+        "heroui",
+        "ant-design",
+        "awesome-dataviz",
+        "dash"
       ],
       "alt": [
         "d3",
@@ -37385,7 +37505,10 @@
       "combines_with": [
         "claude-code",
         "activepieces",
-        "metabase"
+        "metabase",
+        "claude-seo",
+        "marketingskills",
+        "mautic"
       ],
       "alt": []
     },
@@ -37507,7 +37630,8 @@
         "osiris",
         "mirofish",
         "ollama",
-        "claude-code"
+        "claude-code",
+        "gods-eye-view"
       ],
       "alt": []
     },
@@ -37624,7 +37748,8 @@
       "combines_with": [
         "ui",
         "d3",
-        "tailwindcss"
+        "tailwindcss",
+        "mui"
       ],
       "alt": [
         "chart-js",
@@ -37862,7 +37987,9 @@
       "combines_with": [
         "duckdb",
         "wrenai",
-        "echarts"
+        "echarts",
+        "hudi",
+        "kestra"
       ],
       "alt": [
         "metabase",
@@ -38460,7 +38587,8 @@
       "combines_with": [
         "real-esrgan",
         "comfyui",
-        "rembg"
+        "rembg",
+        "deep-live-cam"
       ],
       "alt": []
     },
@@ -38816,7 +38944,9 @@
       "combines_with": [
         "comfyui",
         "diffusers",
-        "real-esrgan"
+        "real-esrgan",
+        "invokeai",
+        "krita-ai-diffusion"
       ],
       "alt": []
     },
@@ -39293,7 +39423,8 @@
       "combines_with": [
         "comfyui",
         "real-esrgan",
-        "gradio"
+        "gradio",
+        "codeformer"
       ],
       "alt": []
     },
@@ -40139,7 +40270,9 @@
         "ffmpeg",
         "yt-dlp",
         "whisperx",
-        "moviepy"
+        "moviepy",
+        "obs-studio",
+        "opencut"
       ],
       "alt": []
     },
@@ -40387,7 +40520,10 @@
       "combines_with": [
         "lossless-cut",
         "opencut",
-        "faster-whisper"
+        "faster-whisper",
+        "rnnoise",
+        "deep-live-cam",
+        "rvc"
       ],
       "alt": []
     },
@@ -40986,7 +41122,8 @@
         "comfyui",
         "diffusers",
         "cosyvoice",
-        "real-esrgan"
+        "real-esrgan",
+        "wan2gp"
       ],
       "alt": [
         "hunyuanvideo",
@@ -41116,7 +41253,8 @@
         "wan2-2",
         "moviepy",
         "lossless-cut",
-        "hunyuanvideo-1-5"
+        "hunyuanvideo-1-5",
+        "hunyuanvideo"
       ],
       "alt": [
         "comfyui"
@@ -41364,7 +41502,8 @@
       "combines_with": [
         "activepieces",
         "twenty-main",
-        "stirling-pdf"
+        "stirling-pdf",
+        "pdfcraft"
       ],
       "alt": []
     },
@@ -41850,7 +41989,9 @@
       "combines_with": [
         "tesseract",
         "paperless-ngx",
-        "stirling-pdf"
+        "stirling-pdf",
+        "pdf-inspector",
+        "pdfding"
       ],
       "alt": []
     },
@@ -42210,7 +42351,10 @@
       "combines_with": [
         "reveal.js",
         "markitdown",
-        "marker"
+        "marker",
+        "ppt-master",
+        "marp",
+        "pdf-craft"
       ],
       "alt": []
     },
@@ -43041,7 +43185,8 @@
       "combines_with": [
         "ocrmypdf",
         "activepieces",
-        "paperless-ngx"
+        "paperless-ngx",
+        "docuseal"
       ],
       "alt": [
         "pdfcraft"
@@ -43642,8 +43787,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ccxt",
-        "freqtrade",
-        "vectorbt"
+        "vectorbt",
+        "coolify"
       ],
       "alt": []
     },
@@ -44723,7 +44868,8 @@
       "combines_with": [
         "qlib",
         "vectorbt",
-        "marimo"
+        "marimo",
+        "finrl"
       ],
       "alt": []
     },
@@ -44839,7 +44985,8 @@
       "combines_with": [
         "polars",
         "marimo",
-        "ccxt"
+        "ccxt",
+        "py-sdk"
       ],
       "alt": []
     },
@@ -44957,9 +45104,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "autohedge",
         "grafana",
-        "activepieces"
+        "activepieces",
+        "coolify"
       ],
       "alt": []
     },
@@ -45199,7 +45346,9 @@
       "combines_with": [
         "mlflow",
         "finrl",
-        "marimo"
+        "marimo",
+        "finceptterminal",
+        "machine-learning-for-trading"
       ],
       "alt": []
     },
@@ -45318,7 +45467,7 @@
       "combines_with": [
         "langgraph",
         "langchain",
-        "tradingagents"
+        "langfuse"
       ],
       "alt": []
     },
@@ -45911,7 +46060,10 @@
       "combines_with": [
         "home-assistant",
         "activepieces",
-        "vaultwarden"
+        "vaultwarden",
+        "casaos",
+        "cleanyourtv",
+        "optimizerduck"
       ],
       "alt": []
     },
@@ -46743,7 +46895,9 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "adguardhome"
+        "adguardhome",
+        "optimizerduck",
+        "universal-android-debloater-next-generation"
       ],
       "alt": []
     },
@@ -46861,7 +47015,9 @@
       "combines_with": [
         "ollama",
         "adguardhome",
-        "syncthing"
+        "syncthing",
+        "nextcloud-server",
+        "node-red"
       ],
       "alt": []
     },
@@ -46976,7 +47132,7 @@
       "combines_with": [
         "obsidian-skills",
         "claude-code",
-        "excalidraw"
+        "obsidian-help"
       ],
       "alt": []
     },
@@ -47094,7 +47250,8 @@
       "combines_with": [
         "ollama",
         "coolify",
-        "claude-code"
+        "claude-code",
+        "archivebox"
       ],
       "alt": []
     },
@@ -47208,7 +47365,8 @@
       "combines_with": [
         "obsidian-minimal",
         "obsidian-clipper",
-        "obsidian-skills"
+        "obsidian-skills",
+        "40-questions"
       ],
       "alt": []
     },
@@ -47328,7 +47486,8 @@
       "combines_with": [
         "coolify",
         "home-assistant",
-        "ollama"
+        "ollama",
+        "casaos"
       ],
       "alt": []
     },
@@ -47447,7 +47606,9 @@
       "combines_with": [
         "defuddle",
         "claude-obsidian",
-        "kepano-obsidian"
+        "kepano-obsidian",
+        "obsidian-help",
+        "obsidian-minimal"
       ],
       "alt": []
     },
@@ -47562,7 +47723,8 @@
       "combines_with": [
         "obsidian-importer",
         "obsidian-clipper",
-        "obsidian-skills"
+        "obsidian-skills",
+        "jsoncanvas"
       ],
       "alt": []
     },
@@ -47792,7 +47954,8 @@
       "combines_with": [
         "obsidian-releases",
         "kepano-obsidian",
-        "obsidian-clipper"
+        "obsidian-clipper",
+        "40-questions"
       ],
       "alt": []
     },
@@ -48145,7 +48308,9 @@
         "claude-code",
         "codex",
         "yt-dlp",
-        "obsidian-skills"
+        "obsidian-skills",
+        "40-questions",
+        "notebooklm-py"
       ],
       "alt": [
         "claude-obsidian"
@@ -48971,7 +49136,9 @@
       "combines_with": [
         "ghidra",
         "frida",
-        "claude-code"
+        "claude-code",
+        "ghidramcp",
+        "rizin"
       ],
       "alt": []
     },
@@ -50489,7 +50656,9 @@
       "combines_with": [
         "frida",
         "apktool",
-        "ghidra"
+        "ghidra",
+        "rea",
+        "awesome-ai-reverse-engineering"
       ],
       "alt": []
     },
@@ -50719,7 +50888,10 @@
       "combines_with": [
         "frida",
         "playwright",
-        "k6"
+        "k6",
+        "apktool",
+        "selenium",
+        "shannon"
       ],
       "alt": []
     },
@@ -51073,7 +51245,9 @@
         "claude-code",
         "ghidra",
         "jadx",
-        "codex"
+        "codex",
+        "awesome-ai-reverse-engineering",
+        "awesome-reverse-engineering"
       ],
       "alt": []
     },
@@ -51424,7 +51598,10 @@
       "combines_with": [
         "claude-code",
         "security-audit-skill",
-        "strix"
+        "strix",
+        "defending-code-reference-harness",
+        "raddebugger",
+        "shannon"
       ],
       "alt": [
         "ast-grep"
@@ -51796,7 +51973,8 @@
       "combines_with": [
         "ollama",
         "github-mcp-server",
-        "semgrep"
+        "semgrep",
+        "defending-code-reference-harness"
       ],
       "alt": [
         "shannon"
@@ -51913,7 +52091,8 @@
       "combines_with": [
         "ghidra",
         "imhex",
-        "dnspy"
+        "dnspy",
+        "raddebugger"
       ],
       "alt": []
     },
@@ -52267,7 +52446,9 @@
       "combines_with": [
         "chatwoot",
         "typebot",
-        "dify"
+        "dify",
+        "baileys",
+        "twenty-main"
       ],
       "alt": [
         "whatsapp-web-js",
@@ -52621,7 +52802,8 @@
       "combines_with": [
         "evolution-api",
         "chatwoot",
-        "openwa"
+        "openwa",
+        "waha"
       ],
       "alt": []
     },
@@ -53218,7 +53400,8 @@
       "combines_with": [
         "activepieces",
         "twenty-main",
-        "botpress"
+        "botpress",
+        "compai-crm"
       ],
       "alt": []
     },
@@ -54277,7 +54460,10 @@
       "combines_with": [
         "claude-code",
         "coolify",
-        "geo-seo-claude"
+        "geo-seo-claude",
+        "claude-seo",
+        "cloud-mail",
+        "marketingskills"
       ],
       "alt": []
     },
@@ -54397,7 +54583,10 @@
       "combines_with": [
         "activepieces",
         "claude-code",
-        "coolify"
+        "coolify",
+        "humanizer",
+        "instagram-agent-skill",
+        "linkedin-agent-skill"
       ],
       "alt": []
     },
@@ -54638,7 +54827,8 @@
         "claude-code",
         "activepieces",
         "evolution-api",
-        "cal.diy"
+        "cal.diy",
+        "docuseal"
       ],
       "alt": []
     },
@@ -54754,7 +54944,8 @@
       "combines_with": [
         "context-engineering",
         "langgraph",
-        "vercel-ai"
+        "vercel-ai",
+        "awesome-harness-engineering"
       ],
       "alt": []
     },
@@ -55833,7 +56024,8 @@
       "combines_with": [
         "system-prompts-and-models-of-ai-tools",
         "promptfoo",
-        "prompt-engineering-guide"
+        "prompt-engineering-guide",
+        "chatgpt-dan"
       ],
       "alt": []
     },
@@ -56551,8 +56743,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "nanochat",
-        "llms-from-scratch",
-        "pytorch"
+        "pytorch",
+        "marimo"
       ],
       "alt": []
     },
@@ -56669,7 +56861,8 @@
       "combines_with": [
         "unsloth",
         "trl",
-        "pytorch"
+        "pytorch",
+        "awesome-machine-learning"
       ],
       "alt": [
         "llms-from-scratch",
@@ -56907,7 +57100,8 @@
       "combines_with": [
         "pytorch",
         "nanochat",
-        "transformers"
+        "transformers",
+        "llm.c"
       ],
       "alt": [
         "llm-course"
@@ -57028,7 +57222,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "awesome-harness-engineering"
       ],
       "alt": []
     },
@@ -57146,7 +57341,10 @@
       "combines_with": [
         "pytorch",
         "llms-from-scratch",
-        "llm.c"
+        "llm.c",
+        "autoresearch",
+        "how-to-train-your-gpt",
+        "train-llm-from-scratch"
       ],
       "alt": []
     },
@@ -57262,7 +57460,8 @@
       "combines_with": [
         "openai-python",
         "openai-agents-python",
-        "promptfoo"
+        "promptfoo",
+        "generative-ai-for-beginners"
       ],
       "alt": [
         "claude-cookbooks",
@@ -57500,7 +57699,8 @@
       "combines_with": [
         "prompt-master",
         "context-engineering",
-        "promptfoo"
+        "promptfoo",
+        "chatgpt-system-prompt"
       ],
       "alt": [
         "prompt-eng-tutorial"
@@ -57856,7 +58056,8 @@
       "combines_with": [
         "chatgpt-system-prompt",
         "promptfoo",
-        "claude-code"
+        "claude-code",
+        "chatgpt-dan"
       ],
       "alt": []
     },
@@ -58102,7 +58303,10 @@
       "combines_with": [
         "litellm",
         "ollama",
-        "tree-sitter"
+        "tree-sitter",
+        "ast-grep",
+        "openidea",
+        "swe-bench"
       ],
       "alt": [
         "opencode",
@@ -58484,7 +58688,9 @@
       "combines_with": [
         "ollama",
         "context7",
-        "playwright-mcp"
+        "playwright-mcp",
+        "omniroute",
+        "awesome-mcp-clients"
       ],
       "alt": [
         "aider"
@@ -59866,7 +60072,8 @@
         "claude-code",
         "codex",
         "sandbox",
-        "ecc"
+        "ecc",
+        "swe-bench"
       ],
       "alt": [
         "open-swe"
@@ -60592,7 +60799,8 @@
       "combines_with": [
         "langgraph",
         "firecrawl",
-        "searxng"
+        "searxng",
+        "sandbox"
       ],
       "alt": []
     },
@@ -60715,7 +60923,8 @@
       "combines_with": [
         "claude-code",
         "firecrawl",
-        "ollama"
+        "ollama",
+        "searxng"
       ],
       "alt": [
         "storm",
@@ -61328,7 +61537,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "andrej-karpathy-skills"
       ],
       "alt": [
         "paperclip"
@@ -62545,7 +62755,8 @@
       "combines_with": [
         "nextcloud-server",
         "adguardhome",
-        "activepieces"
+        "activepieces",
+        "masterdnsvpn"
       ],
       "alt": [
         "coolify"
@@ -62793,7 +63004,9 @@
         "openai-agents-python",
         "langgraph",
         "mastra",
-        "claude-code"
+        "claude-code",
+        "awesome-claude-skills",
+        "openbot"
       ],
       "alt": []
     },
@@ -63269,7 +63482,8 @@
       "combines_with": [
         "freedomain",
         "supabase",
-        "coolify"
+        "coolify",
+        "masterdnsvpn"
       ],
       "alt": []
     },
@@ -63876,7 +64090,8 @@
       "combines_with": [
         "openhands",
         "browser-use",
-        "deer-flow"
+        "deer-flow",
+        "computer-use-preview"
       ],
       "alt": [
         "nemoclaw",
@@ -64366,7 +64581,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "claude-code-hooks-mastery"
       ],
       "alt": [
         "omniroute",
@@ -64486,7 +64702,8 @@
       "combines_with": [
         "claude-code",
         "rtk",
-        "headroom"
+        "headroom",
+        "claude-token-efficient"
       ],
       "alt": []
     },
@@ -64851,7 +65068,9 @@
         "claude-code",
         "litellm",
         "context-engineering",
-        "codegraph"
+        "codegraph",
+        "claude-code-usage-monitor",
+        "mimo-code"
       ],
       "alt": [
         "rtk"
@@ -65345,7 +65564,8 @@
         "dspy",
         "transformers",
         "deepeval",
-        "ragas"
+        "ragas",
+        "qlib"
       ],
       "alt": [
         "langfuse"
@@ -66106,7 +66326,9 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "gemini-cli"
+        "gemini-cli",
+        "claude-code-usage-monitor",
+        "mimo-code"
       ],
       "alt": [
         "headroom"
@@ -66227,7 +66449,10 @@
       "combines_with": [
         "litellm",
         "open-webui",
-        "unsloth"
+        "unsloth",
+        "deepseek-v3",
+        "kimi-k2-7-code",
+        "llama-factory"
       ],
       "alt": [
         "vllm"
@@ -66350,7 +66575,8 @@
       "combines_with": [
         "litellm",
         "open-webui",
-        "transformers"
+        "transformers",
+        "deepseek-v3"
       ],
       "alt": []
     },
@@ -66709,7 +66935,8 @@
       "combines_with": [
         "diffusers",
         "pytorch",
-        "nemotron"
+        "nemotron",
+        "warp"
       ],
       "alt": []
     },
@@ -67191,7 +67418,8 @@
         "peft",
         "transformers",
         "vllm",
-        "sglang"
+        "sglang",
+        "gradio"
       ],
       "alt": [
         "unsloth"
@@ -67315,7 +67543,8 @@
         "vllm",
         "nemoclaw",
         "claude-code",
-        "nemo"
+        "nemo",
+        "cosmos"
       ],
       "alt": []
     },
@@ -67433,7 +67662,10 @@
       "combines_with": [
         "transformers",
         "trl",
-        "diffusers"
+        "diffusers",
+        "llama-factory",
+        "airllm",
+        "bionemo-recipes"
       ],
       "alt": []
     },
@@ -67674,7 +67906,9 @@
       "combines_with": [
         "transformers",
         "mediapipe",
-        "marimo"
+        "marimo",
+        "jupyterlab",
+        "tfjs-models"
       ],
       "alt": [
         "pytorch"
@@ -68035,7 +68269,9 @@
         "transformers",
         "peft",
         "unsloth",
-        "vllm"
+        "vllm",
+        "llm-course",
+        "train-llm-from-scratch"
       ],
       "alt": []
     },
@@ -68159,7 +68395,9 @@
         "trl",
         "ollama",
         "llama-cpp",
-        "claude-code"
+        "claude-code",
+        "llm-course",
+        "sglang"
       ],
       "alt": [
         "llama-factory"
@@ -68973,7 +69211,8 @@
       "combines_with": [
         "transformers",
         "llama-factory",
-        "ollama"
+        "ollama",
+        "rembg"
       ],
       "alt": [
         "streamlit"
@@ -69212,7 +69451,9 @@
         "pytorch",
         "tensorflow",
         "duckdb",
-        "polars"
+        "polars",
+        "apache-iceberg",
+        "delta-lake"
       ],
       "alt": [
         "marimo"
@@ -69579,7 +69820,8 @@
       "combines_with": [
         "dash",
         "polars",
-        "duckdb"
+        "duckdb",
+        "awesome-llm-apps"
       ],
       "alt": [
         "gradio"
@@ -69695,7 +69937,8 @@
       "combines_with": [
         "three.js",
         "magicui",
-        "motion-design-skill"
+        "motion-design-skill",
+        "zdog"
       ],
       "alt": [
         "gsap",
@@ -70041,7 +70284,8 @@
       "combines_with": [
         "meshoptimizer",
         "blender",
-        "ozz-animation"
+        "ozz-animation",
+        "awesome-cad"
       ],
       "alt": []
     },
@@ -70274,7 +70518,9 @@
       "combines_with": [
         "three.js",
         "filament",
-        "blender"
+        "blender",
+        "ozz-animation",
+        "regl"
       ],
       "alt": []
     },
@@ -70395,7 +70641,10 @@
       "combines_with": [
         "magicui",
         "react-three-fiber",
-        "claude-code"
+        "claude-code",
+        "gsap",
+        "motion-design-skill",
+        "skills-emil"
       ],
       "alt": [
         "animejs"
@@ -70744,7 +70993,8 @@
       "combines_with": [
         "claude-code",
         "threejs-game-skills",
-        "planck-js"
+        "planck-js",
+        "pencil"
       ],
       "alt": []
     },
@@ -70975,7 +71225,9 @@
       "combines_with": [
         "three.js",
         "react-three-rapier",
-        "motion"
+        "motion",
+        "threejs-skills",
+        "webgl-noise"
       ],
       "alt": []
     },
@@ -71789,7 +72041,8 @@
       "combines_with": [
         "animejs",
         "gsap",
-        "three.js"
+        "three.js",
+        "scenejs"
       ],
       "alt": []
     },
@@ -71907,7 +72160,9 @@
       "combines_with": [
         "three.js",
         "claude-code",
-        "codex"
+        "codex",
+        "blender",
+        "globalbuildingatlas"
       ],
       "alt": [
         "threejs-skills"
@@ -72872,7 +73127,10 @@
       "combines_with": [
         "tailwindcss",
         "impeccable",
-        "claude-code"
+        "claude-code",
+        "design-dna",
+        "open-design",
+        "stitch-sdk"
       ],
       "alt": []
     },
@@ -74567,7 +74825,9 @@
         "claude-code",
         "posthog",
         "mautic",
-        "open-seo"
+        "open-seo",
+        "humanizer",
+        "linkedin-agent-skill"
       ],
       "alt": []
     },
@@ -74925,7 +75185,10 @@
       "combines_with": [
         "claude-code",
         "gsap",
-        "motion"
+        "motion",
+        "animejs",
+        "gsap-skills",
+        "scenejs"
       ],
       "alt": []
     },
@@ -75411,7 +75674,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "postiz-app"
+        "postiz-app",
+        "instagram-agent-skill"
       ],
       "alt": [
         "last30days-skill"
@@ -75538,7 +75802,8 @@
         "codex",
         "claude-code",
         "gemini-cli",
-        "stitch-sdk"
+        "stitch-sdk",
+        "taste-skill"
       ],
       "alt": []
     },
@@ -75903,7 +76168,10 @@
       "combines_with": [
         "three.js",
         "codex",
-        "claude-code"
+        "claude-code",
+        "pixelfx",
+        "planck-js",
+        "react-three-rapier"
       ],
       "alt": []
     },
@@ -76510,7 +76778,8 @@
       "combines_with": [
         "openpose",
         "mediapipe",
-        "blender"
+        "blender",
+        "mmpose"
       ],
       "alt": []
     },
@@ -77229,7 +77498,9 @@
       "combines_with": [
         "opencv",
         "tfjs-models",
-        "three.js"
+        "three.js",
+        "easymocap",
+        "tensorflow"
       ],
       "alt": []
     },
@@ -77463,7 +77734,10 @@
       "combines_with": [
         "ultralytics",
         "supervision",
-        "mediapipe"
+        "mediapipe",
+        "mmpose",
+        "openpose",
+        "kornia"
       ],
       "alt": []
     },
@@ -77815,7 +78089,8 @@
       "combines_with": [
         "ultralytics",
         "opencv",
-        "sam3"
+        "sam3",
+        "label-studio"
       ],
       "alt": []
     },
@@ -78053,7 +78328,9 @@
       "combines_with": [
         "supervision",
         "label-studio",
-        "opencv"
+        "opencv",
+        "kornia",
+        "sam3"
       ],
       "alt": []
     },
@@ -78414,7 +78691,8 @@
       "combines_with": [
         "ffmpeg",
         "moviepy",
-        "remotion"
+        "remotion",
+        "rubberband"
       ],
       "alt": []
     },
@@ -78535,7 +78813,8 @@
       "combines_with": [
         "pipecat",
         "vllm",
-        "ffmpeg"
+        "ffmpeg",
+        "wan2-2"
       ],
       "alt": [
         "fish-speech",
@@ -78904,7 +79183,8 @@
       "combines_with": [
         "moviepy",
         "whisper",
-        "ffmpeg"
+        "ffmpeg",
+        "short-video-factory"
       ],
       "alt": [
         "kokoro"
@@ -79142,7 +79422,10 @@
       "combines_with": [
         "whisperx",
         "pipecat",
-        "moviepy"
+        "moviepy",
+        "ai-youtube-shorts-generator",
+        "moneyprinterturbo",
+        "obs-studio"
       ],
       "alt": [
         "whisper-cpp"
@@ -79389,7 +79672,8 @@
       "combines_with": [
         "rvc",
         "ffmpeg",
-        "whisperx"
+        "whisperx",
+        "videolingo"
       ],
       "alt": [
         "fish-speech"
@@ -81225,7 +81509,10 @@
       "combines_with": [
         "ffmpeg",
         "llama-cpp",
-        "pipecat"
+        "pipecat",
+        "dograh",
+        "kokoro",
+        "livekit-agents"
       ],
       "alt": [
         "faster-whisper",
@@ -81833,7 +82120,9 @@
         "claude-code",
         "gsap",
         "kokoro",
-        "whisperx"
+        "whisperx",
+        "arcads-claude-code",
+        "brag"
       ],
       "alt": [
         "remotion",
@@ -82438,8 +82727,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "gsap",
-        "hyperframes",
-        "claude-code"
+        "claude-code",
+        "ffmpeg"
       ],
       "alt": []
     },
@@ -82682,7 +82971,8 @@
       "combines_with": [
         "claude-code",
         "gsap",
-        "three.js"
+        "three.js",
+        "mediabunny"
       ],
       "alt": []
     },
@@ -83306,7 +83596,8 @@
       "combines_with": [
         "remotion",
         "skills-remotion",
-        "claude-code"
+        "claude-code",
+        "elevenlabs-python"
       ],
       "alt": [
         "openmontage",
@@ -83790,7 +84081,8 @@
       "combines_with": [
         "ffmpeg",
         "claude-code",
-        "hermes-agent"
+        "hermes-agent",
+        "elevenlabs-python"
       ],
       "alt": [
         "remotion-superpowers"
@@ -84394,7 +84686,9 @@
       "combines_with": [
         "slidev",
         "claude-code",
-        "diagram-design"
+        "archify",
+        "marp",
+        "reveal.js"
       ],
       "alt": [
         "excalidraw"
@@ -84761,7 +85055,8 @@
       "combines_with": [
         "mermaid",
         "gsap",
-        "claude-code"
+        "claude-code",
+        "pandoc"
       ],
       "alt": [
         "slidev",
@@ -84880,7 +85175,8 @@
       "combines_with": [
         "mermaid",
         "claude-code",
-        "playwright"
+        "playwright",
+        "diagram-design"
       ],
       "alt": [
         "marp",
@@ -85362,7 +85658,8 @@
       "combines_with": [
         "claude-code",
         "ollama",
-        "pydantic-ai"
+        "pydantic-ai",
+        "sandbox"
       ],
       "alt": [
         "computer-use-preview",
@@ -85488,7 +85785,9 @@
       "combines_with": [
         "puppeteer",
         "playwright",
-        "stagehand"
+        "stagehand",
+        "agent-browser",
+        "awesome-chrome-devtools"
       ],
       "alt": []
     },

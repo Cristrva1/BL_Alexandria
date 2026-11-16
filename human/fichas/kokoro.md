@@ -30,6 +30,12 @@ Se instala con `pip install kokoro>=0.9.4 soundfile`. Usa misaki (G2P) y espeak-
 | [whisper.cpp](whisper-cpp.md) | STT local para un ciclo voz a voz. (combinación por arquitectura) | Combina en el mismo pipeline. |
 | [MoviePy](moviepy.md) | Narración de vídeos. (combinación por arquitectura) | Monta el audio generado. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dograh](dograh.md) · [huashu-motion](huashu-motion.md) · [HyperFrames](hyperframes.md) · [LiveKit Agents](livekit-agents.md) · [Manim (ManimGL)](manim.md) · [manim](manim-community.md) · [MoneyPrinterTurbo](moneyprinterturbo.md) · [OpenMontage](openmontage.md) · [Papermorph](papermorph.md) · [srt-whiteboard-animation](srt-whiteboard-animation.md) · [VoiceStudio](omnivoice-studio.md)
+
 **Notas:** Alternativas (elige una): luxtts, edge-tts. Inactivo desde 2025.
 
 Estado en GitHub: activo · último push 2025-08-06 · licencia declarada Apache-2.0 (consultado el 2026-11-15).

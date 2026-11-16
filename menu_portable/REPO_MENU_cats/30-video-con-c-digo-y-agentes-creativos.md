@@ -121,7 +121,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un proyecto con un título de pocos segundos, previsualiza y renderiza un MP4
 **Qué comprobar:** Puedes comprobar duración, primer y último frame y archivo exportado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`
+**Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`, `arcads-claude-code`, `brag`
 **Alternativas (elige una):** `remotion`, `moviepy`
 
 ## `lemo-opuscar`
@@ -280,7 +280,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa providers.sh y crea una escena tipográfica breve antes de añadir voces o imágenes
 **Qué comprobar:** Puedes comparar composición y tiempos de dos versiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gsap`, `hyperframes`, `claude-code`
+**Combina con:** `gsap`, `claude-code`, `ffmpeg`
 
 ## `moviepy`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,automation,python
@@ -341,7 +341,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre un ejemplo y modifica un título en Studio antes de exportar un clip corto
 **Qué comprobar:** Puedes inspeccionar el proyecto editable y el MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `gsap`, `three.js`
+**Combina con:** `claude-code`, `gsap`, `three.js`, `mediabunny`
 
 ## `openmontage`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=video,coding-agent,skills
@@ -496,7 +496,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta setup y prepara un guion corto con estimación de servicios antes de generar
 **Qué comprobar:** Puedes identificar claves, proveedores y resultado de cada etapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `skills-remotion`, `claude-code`
+**Combina con:** `remotion`, `skills-remotion`, `claude-code`, `elevenlabs-python`
 **Alternativas (elige una):** `openmontage`, `video-use`
 
 ## `skills-remotion`
@@ -617,7 +617,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un clip corto y revisa transcripción y plan de cortes antes de exportar
 **Qué comprobar:** Puedes contrastar el montaje con el material original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `claude-code`, `hermes-agent`
+**Combina con:** `ffmpeg`, `claude-code`, `hermes-agent`, `elevenlabs-python`
 **Alternativas (elige una):** `remotion-superpowers`
 
 ## `videofy-minimal`

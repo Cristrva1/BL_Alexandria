@@ -90,6 +90,18 @@
      "id": "opencv",
      "motivo": "Captura y procesado de vídeo. (combinación por arquitectura)",
      "orden_instalacion": "Lee fotogramas con OpenCV."
+    },
+    {
+     "id": "kornia",
+     "motivo": "Combinación recíproca: kornia lo enlaza como «Aumentos de datos en GPU para entrenar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde kornia: Aplica aumentos antes del entrenamiento.",
+     "reciproca_de": "kornia"
+    },
+    {
+     "id": "sam3",
+     "motivo": "Combinación recíproca: SAM 3 lo enlaza como «Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SAM 3: Usa las cajas como prompts.",
+     "reciproca_de": "sam3"
     }
    ],
    "notas": "Sin alternativas declaradas. La AGPL obliga a publicar el código de servicios que lo usen, salvo con licencia Enterprise.",
@@ -160,6 +172,24 @@
      "id": "mediapipe",
      "motivo": "Captura con OpenCV y análisis con MediaPipe. (combinación por arquitectura)",
      "orden_instalacion": "Convierte BGR a RGB antes."
+    },
+    {
+     "id": "mmpose",
+     "motivo": "Combinación recíproca: mmpose lo enlaza como «Captura y visualización».",
+     "orden_instalacion": "Orden indicado desde mmpose: Instala OpenCV.",
+     "reciproca_de": "mmpose"
+    },
+    {
+     "id": "openpose",
+     "motivo": "Combinación recíproca: openpose lo enlaza como «Captura y visualización».",
+     "orden_instalacion": "Orden indicado desde openpose: Instala OpenCV.",
+     "reciproca_de": "openpose"
+    },
+    {
+     "id": "kornia",
+     "motivo": "Combinación recíproca: kornia lo enlaza como «Preprocesado clásico fuera del grafo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde kornia: Combina según necesidad.",
+     "reciproca_de": "kornia"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -195,6 +225,12 @@
      "id": "sam3",
      "motivo": "Visualizar máscaras de segmentación. (combinación por arquitectura)",
      "orden_instalacion": "Convierte las máscaras."
+    },
+    {
+     "id": "label-studio",
+     "motivo": "Combinación recíproca: Label Studio lo enlaza como «Revisar y convertir anotaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Label Studio: Carga el dataset exportado.",
+     "reciproca_de": "label-studio"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -300,6 +336,18 @@
      "id": "three.js",
      "motivo": "Avatares controlados por landmarks. (combinación por arquitectura)",
      "orden_instalacion": "Mapea landmarks a un esqueleto 3D."
+    },
+    {
+     "id": "easymocap",
+     "motivo": "Combinación recíproca: EasyMocap lo enlaza como «Detector de keypoints soportado».",
+     "orden_instalacion": "Orden indicado desde EasyMocap: Usa el detector MediaPipe.",
+     "reciproca_de": "easymocap"
+    },
+    {
+     "id": "tensorflow",
+     "motivo": "Combinación recíproca: tensorflow lo enlaza como «Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde tensorflow: Usa modelos TF Lite en MediaPipe.",
+     "reciproca_de": "tensorflow"
     }
    ],
    "notas": "Sin alternativas declaradas.",

@@ -30,6 +30,12 @@ Se instala con `pip install basicsr facexlib gfpgan` y `requirements.txt`, o se 
 | [ComfyUI](comfyui.md) | Cargar modelos ESRGAN como upscalers en flujos de ComfyUI. (combinación por arquitectura) | Copia los pesos en la carpeta de upscale models. |
 | [rembg](rembg.md) | Quitar el fondo después de ampliar. (combinación por arquitectura) | Amplía con Real-ESRGAN y recorta con rembg. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[FaceFusion](facefusion.md) · [FLUX.2](flux2.md) · [InvokeAI](invokeai.md) · [Krita AI Diffusion](krita-ai-diffusion.md) · [Wan2.2](wan2-2.md)
+
 **Notas:** Sin alternativas declaradas. Sin mantenimiento activo desde 2024.
 
 Estado en GitHub: activo · último push 2024-08-06 · última versión publicada v0.3.0 (2022-09-20) · licencia declarada BSD-3-Clause (consultado el 2026-11-15).

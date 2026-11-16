@@ -30,6 +30,8 @@ Se instala con `pip install jupyterlab`, conda o mamba (conda-forge) y se abre c
 | [tensorflow](tensorflow.md) | Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura) | Instala TensorFlow en el entorno del kernel. |
 | [DuckDB](duckdb.md) | Consultas SQL sobre CSV y Parquet dentro del notebook. (combinación por arquitectura) | Añade el paquete `duckdb` al kernel. |
 | [Polars](polars.md) | DataFrames rápidos para análisis interactivo. (combinación por arquitectura) | Añade `polars` al kernel. |
+| [Apache Iceberg](apache-iceberg.md) | Combinación recíproca: Apache Iceberg lo enlaza como «Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)». | Orden indicado desde Apache Iceberg: Instala JupyterLab en el mismo entorno que PyIceberg. |
+| [Delta Lake](delta-lake.md) | Combinación recíproca: Delta Lake lo enlaza como «Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)». | Orden indicado desde Delta Lake: Instala JupyterLab en el entorno con PySpark o deltalake. |
 
 **Notas:** Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.
 

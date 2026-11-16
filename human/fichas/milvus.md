@@ -29,6 +29,7 @@ Arquitectura distribuida nativa de Kubernetes que separa cómputo y almacenamien
 | [AnythingLLM](anything-llm.md) | Base vectorial soportada por AnythingLLM. | Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos. |
 | [LightRAG](lightrag.md) | Backend de almacenamiento vectorial soportado. | Milvus primero; fija el modelo de embeddings antes de indexar. |
 | [LlamaIndex](llama-index.md) | Integración documentada en la web de Milvus. | Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor. |
+| [langchain4j](langchain4j.md) | Combinación recíproca: langchain4j lo enlaza como «Almacén vectorial alternativo para volúmenes grandes (módulo oficial)». | Orden indicado desde langchain4j: Elige uno de los almacenes vectoriales; despliega Milvus y añade su módulo. |
 
 **Notas:** Alternativas (elige una): qdrant, chroma, pgvector.
 

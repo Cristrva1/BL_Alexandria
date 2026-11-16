@@ -29,6 +29,7 @@ Se instala con `pip install streamlit` y se ejecuta con `streamlit run app.py`. 
 | [dash](dash.md) | Gráficos Plotly en paralelo para casos más complejos. (combinación por arquitectura) | Elige según la complejidad. |
 | [Polars](polars.md) | DataFrames rápidos dentro de la app. (combinación por arquitectura) | Procesa con Polars y muestra con `st.dataframe`. |
 | [DuckDB](duckdb.md) | Consultas SQL locales en la app. (combinación por arquitectura) | Consulta con DuckDB y muestra el resultado. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | Combinación recíproca: Awesome LLM Apps lo enlaza como «Interfaz de muchas de las apps de ejemplo». | Orden indicado desde Awesome LLM Apps: Se instala con los requirements de cada plantilla. |
 
 **Notas:** Alternativas (elige una): gradio.
 

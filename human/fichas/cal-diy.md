@@ -29,6 +29,7 @@ Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior
 | [activepieces](activepieces.md) | Reaccionar a reservas, cancelaciones o reprogramaciones recibiendo los webhooks de cal.diy en un disparador Webhook de Activepieces. (combinación por arquitectura) | Configura el webhook en tu instancia de cal.diy apuntando a la URL del flujo. |
 | [twenty-main](twenty-main.md) | Registrar cada reserva como actividad u oportunidad en el CRM (combinación por arquitectura, con webhooks y un flujo intermedio). | Configura el webhook de cal.diy hacia el flujo que escribe en Twenty. |
 | [Botpress](botpress.md) | Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO]. | Instancia accesible por internet y token de API antes de configurar la integración. |
+| [crm](compai-crm.md) | Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)». | Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado. |
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v6.2.0 (2026-03-01) · licencia declarada MIT (consultado el 2026-11-15).
 

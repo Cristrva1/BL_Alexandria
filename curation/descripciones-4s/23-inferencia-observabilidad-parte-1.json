@@ -60,6 +60,24 @@
      "id": "unsloth",
      "motivo": "Servir con SGLang modelos afinados con Unsloth. (combinación por arquitectura)",
      "orden_instalacion": "Afina y exporta con Unsloth y sirve los pesos con SGLang."
+    },
+    {
+     "id": "deepseek-v3",
+     "motivo": "Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado en BF16 y FP8».",
+     "orden_instalacion": "Orden indicado desde DeepSeek-V3: Sirve el modelo con SGLang.",
+     "reciproca_de": "deepseek-v3"
+    },
+    {
+     "id": "kimi-k2-7-code",
+     "motivo": "Combinación recíproca: Kimi K2.7 Code lo enlaza como «Despliegue documentado».",
+     "orden_instalacion": "Orden indicado desde Kimi K2.7 Code: Sirve el modelo con SGLang.",
+     "reciproca_de": "kimi-k2-7-code"
+    },
+    {
+     "id": "llama-factory",
+     "motivo": "Combinación recíproca: LLaMA-Factory lo enlaza como «Worker de inferencia alternativo».",
+     "orden_instalacion": "Orden indicado desde LLaMA-Factory: Configura el backend SGLang.",
+     "reciproca_de": "llama-factory"
     }
    ],
    "notas": "Alternativas (elige una): vllm.",
@@ -96,6 +114,12 @@
      "id": "transformers",
      "motivo": "Partir de checkpoints de Hugging Face para optimizarlos. (combinación por arquitectura)",
      "orden_instalacion": "Descarga el modelo con Transformers/Hub y cárgalo en la LLM API."
+    },
+    {
+     "id": "deepseek-v3",
+     "motivo": "Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado para GPU NVIDIA».",
+     "orden_instalacion": "Orden indicado desde DeepSeek-V3: Construye el motor con TensorRT-LLM.",
+     "reciproca_de": "deepseek-v3"
     }
    ],
    "notas": "Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.",
@@ -220,6 +244,12 @@
      "id": "ragas",
      "motivo": "Métricas de Ragas disponibles como scorers de terceros.",
      "orden_instalacion": "Instala ragas y úsalo desde la evaluación de MLflow."
+    },
+    {
+     "id": "qlib",
+     "motivo": "Combinación recíproca: qlib lo enlaza como «El recorder de Qlib se basa en MLflow».",
+     "orden_instalacion": "Orden indicado desde qlib: Configura el URI de MLflow para los experimentos.",
+     "reciproca_de": "qlib"
     }
    ],
    "notas": "Alternativas (elige una): langfuse.",
@@ -511,6 +541,18 @@
      "id": "codegraph",
      "motivo": "Reducir lecturas de código con un índice semántico. (combinación por arquitectura)",
      "orden_instalacion": "Usa codegraph para localizar y Headroom para comprimir."
+    },
+    {
+     "id": "claude-code-usage-monitor",
+     "motivo": "Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el ahorro de compresión de contexto. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo con y sin `headroom wrap claude`.",
+     "reciproca_de": "claude-code-usage-monitor"
+    },
+    {
+     "id": "mimo-code",
+     "motivo": "Combinación recíproca: MiMo-Code lo enlaza como «Comprimir el contexto en sesiones largas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MiMo-Code: Envuelve el agente con Headroom si es compatible.",
+     "reciproca_de": "mimo-code"
     }
    ],
    "notas": "Alternativas (elige una): rtk. El número de estrellas crece de forma inusual para un proyecto tan joven; los ahorros son mediciones del propio proyecto.",
@@ -547,6 +589,18 @@
      "id": "gemini-cli",
      "motivo": "Hook nativo con `rtk init -g --gemini`.",
      "orden_instalacion": "Registra el hook para Gemini CLI."
+    },
+    {
+     "id": "claude-code-usage-monitor",
+     "motivo": "Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el efecto de reducir salidas de terminal. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo antes y después de activar rtk.",
+     "reciproca_de": "claude-code-usage-monitor"
+    },
+    {
+     "id": "mimo-code",
+     "motivo": "Combinación recíproca: MiMo-Code lo enlaza como «Reducir la salida de comandos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MiMo-Code: Configura los hooks de rtk si son compatibles.",
+     "reciproca_de": "mimo-code"
     }
    ],
    "notas": "Alternativas (elige una): headroom. Si quieres solo código Apache-2.0, instala `rtk-oss`.",

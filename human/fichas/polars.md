@@ -32,6 +32,12 @@ Se instala con `pip install polars` (hay feature flags para extras) o se compila
 | [Apache Iceberg](apache-iceberg.md) | Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg). | Instala PyIceberg junto a Polars. |
 | [Delta Lake](delta-lake.md) | Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake. | Instala el paquete `deltalake` junto a Polars. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[JupyterLab](jupyterlab.md) · [nautilus_trader](nautilus-trader.md) · [Windmill](windmill.md)
+
 **Notas:** Alternativas (elige una): duckdb.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada py-2.1.0 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).

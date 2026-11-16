@@ -30,6 +30,7 @@ Se instala desde el repo con pip (extras para métricas, DeepSpeed, etc.) o se u
 | [Transformers](transformers.md) | Modelos base. | Viene como dependencia. |
 | [vLLM](vllm.md) | Worker de inferencia integrado. | Configura `infer_backend: vllm`. |
 | [SGLang](sglang.md) | Worker de inferencia alternativo. | Configura el backend SGLang. |
+| [Gradio](gradio.md) | Combinación recíproca: Gradio lo enlaza como «Su LlamaBoard está construido con Gradio». | Orden indicado desde Gradio: Usa la UI de LlamaFactory. |
 
 **Notas:** Alternativas (elige una): unsloth.
 

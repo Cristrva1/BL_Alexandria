@@ -95,7 +95,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Empieza por los datos de una demo y revisa correspondencia de cámaras y reconstrucción
 **Qué comprobar:** Puedes reconocer qué observaciones sustentan la pose
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openpose`, `mediapipe`, `blender`
+**Combina con:** `openpose`, `mediapipe`, `blender`, `mmpose`
 
 ## `facefusion`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,video,vision,python
@@ -282,7 +282,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige una tarea como landmarks de manos y revisa sus puntos en una muestra
 **Qué comprobar:** Puedes distinguir tarea, modelo y SDK
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `opencv`, `tfjs-models`, `three.js`
+**Combina con:** `opencv`, `tfjs-models`, `three.js`, `easymocap`, `tensorflow`
 
 ## `mmpose`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
@@ -342,7 +342,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga una imagen, cambia su tamaño y guarda una copia para comparar dimensiones
 **Qué comprobar:** Puedes comprobar entrada, transformación y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ultralytics`, `supervision`, `mediapipe`
+**Combina con:** `ultralytics`, `supervision`, `mediapipe`, `mmpose`, `openpose`, `kornia`
 
 ## `openpose`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,c
@@ -434,7 +434,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja cajas de detección de muestra y verifica coordenadas y etiquetas
 **Qué comprobar:** Puedes comprobar el resultado anotado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ultralytics`, `opencv`, `sam3`
+**Combina con:** `ultralytics`, `opencv`, `sam3`, `label-studio`
 
 ## `tfjs-models`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,library,typescript
@@ -494,7 +494,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Detecta objetos en una imagen y revisa dos cajas y sus etiquetas
 **Qué comprobar:** Puedes contrastar la detección con el contenido real
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `supervision`, `label-studio`, `opencv`
+**Combina con:** `supervision`, `label-studio`, `opencv`, `kornia`, `sam3`
 
 ## `wham`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python

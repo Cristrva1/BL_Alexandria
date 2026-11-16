@@ -31,6 +31,12 @@ Implementación en C/C++ sin dependencias, con cuantización entera de 1,5 a 8 b
 | [LibreChat](librechat.md) | LibreChat admite endpoints personalizados compatibles con OpenAI, como el de llama.cpp. | Servidor de llama.cpp accesible desde el contenedor de LibreChat; luego decláralo en `librechat.yaml`. |
 | [litellm](litellm.md) | Poner el servidor de llama.cpp detrás de un proxy único con claves, límites y registro de gasto (combinación por arquitectura). | llama.cpp primero; añade su endpoint como modelo OpenAI-compatible en la configuración de LiteLLM. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[local-deep-research](local-deep-research.md) · [Marker](marker.md) · [OpenCursor](opencursor.md) · [PrivateGPT](private-gpt.md) · [Unsloth](unsloth.md) · [whisper.cpp](whisper-cpp.md)
+
 **Notas:** Alternativas (elige una como motor principal): ollama, llamafile, localai.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).

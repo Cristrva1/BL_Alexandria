@@ -92,6 +92,24 @@
      "id": "marker",
      "motivo": "Marker convierte PDF complejos a Markdown que luego Pandoc publica (combinación por arquitectura).",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "ppt-master",
+     "motivo": "Combinación recíproca: ppt-master lo enlaza como «Conversión de documentos».",
+     "orden_instalacion": "Orden indicado desde ppt-master: Instala Pandoc si se necesita.",
+     "reciproca_de": "ppt-master"
+    },
+    {
+     "id": "marp",
+     "motivo": "Combinación recíproca: Marp lo enlaza como «Conversión de documentos a Markdown. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marp: Preprocesa el contenido.",
+     "reciproca_de": "marp"
+    },
+    {
+     "id": "pdf-craft",
+     "motivo": "Combinación recíproca: pdf-craft lo enlaza como «Convertir el Markdown resultante a DOCX o LaTeX (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde pdf-craft: Encadénalos en un script.",
+     "reciproca_de": "pdf-craft"
     }
    ],
    "fuentes": [
@@ -275,6 +293,18 @@
      "id": "stirling-pdf",
      "motivo": "La imagen de Stirling PDF incluye OCRmyPDF para su herramienta de OCR.",
      "orden_instalacion": "Incluido en la imagen Docker."
+    },
+    {
+     "id": "pdf-inspector",
+     "motivo": "Combinación recíproca: PDF Inspector lo enlaza como «Enviar a OCRmyPDF los PDF clasificados como escaneados (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PDF Inspector: Clasifica primero; aplica OCR solo donde haga falta.",
+     "reciproca_de": "pdf-inspector"
+    },
+    {
+     "id": "pdfding",
+     "motivo": "Combinación recíproca: PdfDing lo enlaza como «Aplicar OCR a escaneados antes de subirlos para poder buscar y resaltar texto (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PdfDing: Procesa los archivos antes de importarlos.",
+     "reciproca_de": "pdfding"
     }
    ],
    "notas": "Se retiró docling por no estar documentado.",
@@ -415,6 +445,12 @@
      "id": "paperless-ngx",
      "motivo": "Preparar o limpiar PDF antes de archivarlos (combinación por arquitectura).",
      "orden_instalacion": "Independientes; cambia el puerto 8080 si choca con otro servicio."
+    },
+    {
+     "id": "docuseal",
+     "motivo": "Combinación recíproca: docuseal lo enlaza como «Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde docuseal: Independientes; cambia puertos si coinciden.",
+     "reciproca_de": "docuseal"
     }
    ],
    "notas": "Alternativa (elige una): pdfcraft.",
@@ -567,6 +603,12 @@
      "id": "stirling-pdf",
      "motivo": "Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura).",
      "orden_instalacion": "Independientes; cambia puertos si coinciden."
+    },
+    {
+     "id": "pdfcraft",
+     "motivo": "Combinación recíproca: pdfcraft lo enlaza como «Preparar el PDF (unir, comprimir) antes de enviarlo a firmar (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde pdfcraft: Independientes.",
+     "reciproca_de": "pdfcraft"
     }
    ],
    "notas": "Para producción usa PostgreSQL en lugar de SQLite y configura SMTP con SPF/DKIM.",

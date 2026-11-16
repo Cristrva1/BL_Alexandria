@@ -29,6 +29,7 @@ Requiere Python 3.9 y PyTorch 2.1.0 (versiones antiguas) y se instala con `pip i
 | [FFmpeg](ffmpeg.md) | Recomendado por el README para E/S de audio. | Instala FFmpeg. |
 | [MoviePy](moviepy.md) | Añadir la música generada a vídeos. (combinación por arquitectura) | Monta el audio. |
 | [remotion](remotion.md) | Banda sonora para vídeo programático. (combinación por arquitectura) | Usa el audio generado. |
+| [rubberband](rubberband.md) | Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)». | Orden indicado desde rubberband: Procesa la salida. |
 
 **Notas:** Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.
 

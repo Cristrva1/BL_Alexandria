@@ -126,6 +126,12 @@
      "id": "three.js",
      "motivo": "Escenas 3D.",
      "orden_instalacion": "Úsalo en el HTML."
+    },
+    {
+     "id": "mediabunny",
+     "motivo": "Combinación recíproca: mediabunny lo enlaza como «Exportación de vídeo desde HTML. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde mediabunny: Evalúalo para codificar en el navegador.",
+     "reciproca_de": "mediabunny"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -153,14 +159,14 @@
      "orden_instalacion": "Viene incluida; revisa su licencia."
     },
     {
-     "id": "hyperframes",
-     "motivo": "Mismo enfoque HTML→vídeo y misma licencia. (combinación por arquitectura)",
-     "orden_instalacion": "Úsalo para pulir composiciones."
-    },
-    {
      "id": "claude-code",
      "motivo": "Anfitrión documentado.",
      "orden_instalacion": "Instala la skill."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "FFmpeg es un requisito declarado en el README para renderizar y comparar los vídeos.",
+     "orden_instalacion": "Instala FFmpeg (junto a Node 22+, Python 3 y Chrome) antes de la skill."
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -265,6 +271,12 @@
      "id": "playwright",
      "motivo": "Exportación a PDF o PNG.",
      "orden_instalacion": "Instala playwright-chromium cuando lo pida."
+    },
+    {
+     "id": "diagram-design",
+     "motivo": "Combinación recíproca: diagram-design lo enlaza como «Incrustar diagramas en presentaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde diagram-design: Exporta SVG/PNG e insértalos.",
+     "reciproca_de": "diagram-design"
     }
    ],
    "notas": "Alternativas (elige una): marp, reveal.js.",
@@ -336,6 +348,12 @@
      "id": "claude-code",
      "motivo": "Generar HTML de presentaciones. (combinación por arquitectura)",
      "orden_instalacion": "Pide al agente el index.html."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Combinación recíproca: Pandoc lo enlaza como «Pandoc genera presentaciones reveal.js desde Markdown».",
+     "orden_instalacion": "Orden indicado desde Pandoc: Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local.",
+     "reciproca_de": "pandoc"
     }
    ],
    "notas": "Alternativas (elige una): slidev, marp.",
@@ -440,9 +458,22 @@
      "orden_instalacion": "Pide diagramas en sintaxis Mermaid."
     },
     {
-     "id": "diagram-design",
-     "motivo": "Otra vía de diagramas para agentes. (combinación por arquitectura)",
-     "orden_instalacion": "Elige según el estilo."
+     "id": "archify",
+     "motivo": "Combinación recíproca: archify lo enlaza como «Diagramas textuales para documentación estática. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde archify: Usa Mermaid en docs y Archify para explorar.",
+     "reciproca_de": "archify"
+    },
+    {
+     "id": "marp",
+     "motivo": "Combinación recíproca: Marp lo enlaza como «Diagramas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marp: Renderiza a imagen e incrústala.",
+     "reciproca_de": "marp"
+    },
+    {
+     "id": "reveal.js",
+     "motivo": "Combinación recíproca: reveal.js lo enlaza como «Diagramas en las diapositivas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde reveal.js: Añade un plugin de Mermaid.",
+     "reciproca_de": "reveal.js"
     }
    ],
    "notas": "Alternativas (elige una): excalidraw.",

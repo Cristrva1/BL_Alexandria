@@ -29,6 +29,9 @@ Lee el documento a una representación interna y lo escribe al formato de destin
 | [reveal.js](reveal-js.md) | Pandoc genera presentaciones reveal.js desde Markdown. | Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local. |
 | [markitdown](markitdown.md) | MarkItDown extrae a Markdown y Pandoc lo convierte al formato final (combinación por arquitectura). | Encadénalos en un script. |
 | [Marker](marker.md) | Marker convierte PDF complejos a Markdown que luego Pandoc publica (combinación por arquitectura). | Igual que arriba. |
+| [ppt-master](ppt-master.md) | Combinación recíproca: ppt-master lo enlaza como «Conversión de documentos». | Orden indicado desde ppt-master: Instala Pandoc si se necesita. |
+| [Marp](marp.md) | Combinación recíproca: Marp lo enlaza como «Conversión de documentos a Markdown. (combinación por arquitectura)». | Orden indicado desde Marp: Preprocesa el contenido. |
+| [pdf-craft](pdf-craft.md) | Combinación recíproca: pdf-craft lo enlaza como «Convertir el Markdown resultante a DOCX o LaTeX (combinación por arquitectura)». | Orden indicado desde pdf-craft: Encadénalos en un script. |
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 3.14 (2026-11-12) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
 

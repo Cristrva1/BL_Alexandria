@@ -30,6 +30,12 @@ Se ejecuta con `npx @google/gemini-cli` o se instala con `npm install -g @google
 | [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Configura el MCP de Context7 en `settings.json`. |
 | [Google MCP](mcp.md) | Servidores MCP oficiales de Google Cloud. (combinación por arquitectura) | Añade los endpoints MCP a la configuración. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Agent Skills (Addy Osmani)](agent-skills.md) · [agentmemory](agentmemory.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [Browser Harness](browser-harness.md) · [Chrome DevTools MCP](chrome-devtools-mcp.md) · [ECC](ecc.md) · [Engram](engram.md) · [gemini-skills](gemini-skills.md) · [i-have-adhd](i-have-adhd.md) · [logo-design-skill](logo-design-skill.md) · [notebooklm-mcp-cli](notebooklm-mcp-cli.md) · [rtk](rtk.md) · [skills](google-skills.md) · [Spec Kit](spec-kit.md) · [superpowers](superpowers.md) · [The Agency (agency-agents)](agency-agents.md)
+
 **Notas:** Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.68.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

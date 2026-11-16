@@ -31,6 +31,12 @@ Paquete Python (`uv add langchain`) con paquetes de integración por proveedor y
 | [Qdrant](qdrant.md) | Almacén vectorial con integración oficial (`langchain-qdrant`). | Qdrant en marcha primero; luego el paquete de integración. |
 | [Ollama](ollama.md) | Modelos locales con el proveedor oficial (`langchain-ollama`). | Ollama con el modelo descargado antes de configurar el proveedor. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (17). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[awesome-LangGraph](awesome-langgraph.md) · [Chroma](chroma.md) · [Deep Agents](deepagents.md) · [DeepEval](deepeval.md) · [Docling](docling.md) · [Faiss](faiss.md) · [langflow](langflow.md) · [LangGraph.js](langgraphjs.md) · [NeMo Guardrails](guardrails.md) · [openai-python](openai-python.md) · [OpenUI](openui.md) · [QuantHarness](quantharness.md) · [Ragas](ragas.md) · [turbovec](turbovec.md) · [Unstructured](unstructured.md) · [vLLM](vllm.md) · [WrenAI](wrenai.md)
+
 **Notas:** Alternativas (elige una): llama-index, haystack. Se quitaron langflow y litellm: no son necesarias y el README no las documenta.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada langchain-core==1.8.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).

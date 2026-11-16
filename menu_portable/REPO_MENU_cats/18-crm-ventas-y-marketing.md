@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un evento personal de prueba y abre su página de reserva
 **Qué comprobar:** Puedes elegir una franja disponible y revisar la reserva creada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `twenty-main`, `botpress`
+**Combina con:** `activepieces`, `twenty-main`, `botpress`, `compai-crm`
 
 ## `chatwoot`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,crm,ruby,docker
@@ -318,7 +318,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una métrica de un dominio propio y revisa origen, fecha y coste de la solicitud
 **Qué comprobar:** Puedes identificar qué datos devuelve DataForSEO y qué interpreta el agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `coolify`, `geo-seo-claude`
+**Combina con:** `claude-code`, `coolify`, `geo-seo-claude`, `claude-seo`, `cloud-mail`, `marketingskills`
 
 ## `postiz-app`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=marketing,server,typescript
@@ -348,7 +348,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara una publicación ficticia en borrador y revisa preview, canal y horario sin programarla
 **Qué comprobar:** Puedes comprobar contenido y cuenta de destino antes de publicar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `claude-code`, `coolify`
+**Combina con:** `activepieces`, `claude-code`, `coolify`, `humanizer`, `instagram-agent-skill`, `linkedin-agent-skill`
 
 ## `sellbird`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=marketing,agent,python
@@ -409,4 +409,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un objeto y dos registros ficticios y revisa sus relaciones antes de añadir automatización
 **Qué comprobar:** Puedes consultar registros y reconocer la estructura de campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `activepieces`, `evolution-api`, `cal.diy`
+**Combina con:** `claude-code`, `activepieces`, `evolution-api`, `cal.diy`, `docuseal`

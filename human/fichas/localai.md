@@ -29,6 +29,7 @@ Servidor en Go que descarga cada backend como imagen separada solo cuando un mod
 | [AnythingLLM](anything-llm.md) | AnythingLLM lista LocalAI como proveedor de LLM y de embeddings. | LocalAI con el modelo cargado primero; después configura su URL en AnythingLLM. |
 | [Open WebUI](open-webui.md) | Interfaz de chat sobre la API compatible con OpenAI de LocalAI (combinación por arquitectura). | Cambia el puerto de uno de los dos: ambos usan 8080 por defecto. |
 | [LibreChat](librechat.md) | LocalAI como endpoint personalizado compatible con OpenAI en LibreChat (combinación por arquitectura). | LocalAI accesible desde la red de Docker de LibreChat; declara el endpoint en `librechat.yaml`. |
+| [chatbox](chatbox.md) | Combinación recíproca: chatbox lo enlaza como «Servidor local compatible con OpenAI como alternativa a Ollama (combinación por arquitectura)». | Orden indicado desde chatbox: Usa LocalAI u Ollama, no ambos. |
 
 **Notas:** Alternativas (elige una como motor principal): ollama, llama-cpp.
 

@@ -29,6 +29,9 @@ Se instala en Python con `pip install opencv-python` (o `-contrib`, o `-headless
 | [Ultralytics YOLO](ultralytics.md) | Fuente de fotogramas para YOLO. | Lee vídeo con OpenCV y pasa los frames. |
 | [supervision](supervision.md) | Dibujo y anotación sobre imágenes OpenCV. | Usa los anotadores sobre arrays NumPy. |
 | [mediapipe](mediapipe.md) | Captura con OpenCV y análisis con MediaPipe. (combinación por arquitectura) | Convierte BGR a RGB antes. |
+| [mmpose](mmpose.md) | Combinación recíproca: mmpose lo enlaza como «Captura y visualización». | Orden indicado desde mmpose: Instala OpenCV. |
+| [openpose](openpose.md) | Combinación recíproca: openpose lo enlaza como «Captura y visualización». | Orden indicado desde openpose: Instala OpenCV. |
+| [kornia](kornia.md) | Combinación recíproca: kornia lo enlaza como «Preprocesado clásico fuera del grafo. (combinación por arquitectura)». | Orden indicado desde kornia: Combina según necesidad. |
 
 **Notas:** Sin alternativas declaradas.
 

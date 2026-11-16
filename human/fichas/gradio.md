@@ -29,6 +29,7 @@ Requiere Python 3.10+ y se instala con `pip install --upgrade gradio`. Se despli
 | [Transformers](transformers.md) | Demos de modelos de Hugging Face. | Carga el pipeline y envuélvelo en una Interface. |
 | [LLaMA-Factory](llama-factory.md) | Su LlamaBoard está construido con Gradio. | Usa la UI de LlamaFactory. |
 | [Ollama](ollama.md) | Interfaz de chat sobre un modelo local. (combinación por arquitectura) | Llama a la API de Ollama desde ChatInterface. |
+| [rembg](rembg.md) | Combinación recíproca: rembg lo enlaza como «Interfaz web rápida para uso interno. (combinación por arquitectura)». | Orden indicado desde rembg: Envuelve `remove()` en una app Gradio. |
 
 **Notas:** Alternativas (elige una): streamlit.
 

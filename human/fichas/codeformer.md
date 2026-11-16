@@ -29,6 +29,7 @@ Se clona el repo, se instalan dependencias de PyTorch y BasicSR y se ejecuta `in
 | [Real-ESRGAN](real-esrgan.md) | Integración nativa para mejorar fondo y caras. | Añade `--bg_upsampler realesrgan` en la inferencia. |
 | [ComfyUI](comfyui.md) | Restaurar caras dentro de flujos de ComfyUI con nodos de la comunidad. (combinación por arquitectura) | Instala un nodo de restauración facial compatible. |
 | [rembg](rembg.md) | Recortar el retrato restaurado. (combinación por arquitectura) | Restaura con CodeFormer y quita el fondo con rembg. |
+| [Deep-Live-Cam](deep-live-cam.md) | Combinación recíproca: Deep-Live-Cam lo enlaza como «Restaurar rostros en vídeo procesado offline. (combinación por arquitectura)». | Orden indicado desde Deep-Live-Cam: Aplica sobre los fotogramas. |
 
 **Notas:** Sin alternativas declaradas. Licencia no comercial.
 

@@ -124,7 +124,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Escribe un flujo con una decisión y comprueba que sus flechas representan el proceso real
 **Qué comprobar:** Puedes relacionar cada nodo con un paso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `slidev`, `claude-code`, `diagram-design`
+**Combina con:** `slidev`, `claude-code`, `archify`, `marp`, `reveal.js`
 **Alternativas (elige una):** `excalidraw`
 
 ## `ppt-master`
@@ -222,7 +222,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea dos slides y una nota del orador y prueba navegación y presentación
 **Qué comprobar:** Puedes abrir la presentación y ver las notas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mermaid`, `gsap`, `claude-code`
+**Combina con:** `mermaid`, `gsap`, `claude-code`, `pandoc`
 **Alternativas (elige una):** `slidev`, `marp`
 
 ## `slidev`
@@ -253,5 +253,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea tres diapositivas Markdown y modifica una antes de exportar
 **Qué comprobar:** Puedes comprobar contenido, notas y navegación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mermaid`, `claude-code`, `playwright`
+**Combina con:** `mermaid`, `claude-code`, `playwright`, `diagram-design`
 **Alternativas (elige una):** `marp`, `reveal.js`

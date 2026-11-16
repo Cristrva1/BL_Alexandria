@@ -31,7 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Consulta el horario de una tienda ficticia mediante una herramienta del agente
 **Qué comprobar:** El agente devuelve el dato de la herramienta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `fastmcp`, `langfuse`, `google-skills`
+**Combina con:** `litellm`, `fastmcp`, `langfuse`, `google-skills`, `awesome-llm-apps`, `gemini-skills`
 **Alternativas (elige una):** `langgraph`, `openai-agents-python`
 
 ## `ag2`
@@ -94,7 +94,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un agente y después un workflow con dos pasos y un punto de control
 **Qué comprobar:** Puedes seguir las transiciones y recuperar el estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `copilotkit`, `ag2`, `ollama`
+**Combina con:** `langfuse`, `copilotkit`, `ag2`, `ollama`, `ai-agents-for-beginners`
 
 ## `agno`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,memory,python
@@ -124,7 +124,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta el MCP de documentación y pide que explique el montaje de la plataforma local
 **Qué comprobar:** El agente consulta la guía y enumera servicios y credenciales necesarios
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-agent-sdk-python`, `qdrant`, `mem0`
+**Combina con:** `claude-agent-sdk-python`, `qdrant`, `mem0`, `500-ai-agents-projects`
 **Alternativas (elige una):** `crewai`, `langgraph`
 
 ## `autogpt`
@@ -227,7 +227,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un agente con permiso de lectura y pídele localizar un fallo en un archivo ficticio
 **Qué comprobar:** Puedes ver herramientas llamadas y contrastar el fallo antes de permitir ediciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `fastmcp`, `langfuse`, `e2b`
+**Combina con:** `claude-code`, `fastmcp`, `langfuse`, `e2b`, `agno`, `pageindex`
 
 ## `crewai`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,python
@@ -257,7 +257,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una crew que investiga y luego redacta una comparación de dos productos
 **Qué comprobar:** Puedes revisar la salida y las fuentes de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mem0`, `langfuse`, `fastmcp`
+**Combina con:** `mem0`, `langfuse`, `fastmcp`, `500-ai-agents-projects`, `ai-engineering-hub`, `copilotkit`
 **Alternativas (elige una):** `langgraph`, `agno`, `metagpt`
 
 ## `deepagents`
@@ -288,7 +288,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide un plan y un informe sobre tres archivos de ejemplo
 **Qué comprobar:** Puedes revisar el plan, las lecturas y el informe guardado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `langchain`, `langfuse`
+**Combina con:** `langgraph`, `langchain`, `langfuse`, `awesome-langgraph`, `nemoclaw`, `open-swe`
 **Alternativas (elige una):** `openai-agents-python`
 
 ## `dify`
@@ -319,7 +319,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings
 **Qué comprobar:** La respuesta recupera un fragmento comprobable del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `ollama`, `claude-code`
+**Combina con:** `langfuse`, `ollama`, `claude-code`, `evolution-api`, `paddleocr`
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`
@@ -350,7 +350,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Clasifica tema y urgencia de cinco mensajes ficticios antes de optimizar
 **Qué comprobar:** Obtienes campos estructurados y una medida de aciertos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mlflow`, `langfuse`, `ragas`
+**Combina con:** `mlflow`, `langfuse`, `ragas`, `hermes-agent-self-evolution`, `opik`
 **Alternativas (elige una):** `promptfoo`
 
 ## `haystack`
@@ -381,7 +381,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Recupera un párrafo de un manual antes de generar la respuesta
 **Qué comprobar:** Puedes inspeccionar el párrafo y contrastar la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qdrant`, `docling`, `ollama`, `langfuse`
+**Combina con:** `qdrant`, `docling`, `ollama`, `langfuse`, `turbovec`
 **Alternativas (elige una):** `llama-index`, `langchain`
 
 ## `hermes-agent-self-evolution`
@@ -605,7 +605,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Monta un grafo que clasifica una solicitud y espera revisión antes de continuar
 **Qué comprobar:** Se conserva el estado y se ve el siguiente paso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `langfuse`, `copilotkit`, `langgraph`
+**Combina con:** `langchain`, `langfuse`, `copilotkit`, `langgraph`, `agent-protocol`, `social-media-agent`
 **Alternativas (elige una):** `mastra`, `vercel-ai`
 
 ## `llama-index`
@@ -705,7 +705,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un proyecto y añade una herramienta que devuelva el precio de un producto ficticio
 **Qué comprobar:** Puedes probar el agente y ver la herramienta usada en sus trazas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `copilotkit`, `langfuse`, `ollama`
+**Combina con:** `copilotkit`, `langfuse`, `ollama`, `composio`, `openbot`
 **Alternativas (elige una):** `langgraphjs`, `vercel-ai`
 
 ## `metagpt`
@@ -773,7 +773,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un escenario ficticio y realiza una simulación corta con menos de 40 rondas
 **Qué comprobar:** Puedes inspeccionar los agentes simulados y el informe del escenario
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `graphiti`, `litellm`, `ollama`
+**Combina con:** `graphiti`, `litellm`, `ollama`, `pythia`
 
 ## `openai-agents-python`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=openai · tags=agents,python
@@ -804,7 +804,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Deriva una consulta a un especialista de facturación ficticio
 **Qué comprobar:** La traza muestra el traspaso y su respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `openai-python`, `langfuse`, `fastmcp`
+**Combina con:** `litellm`, `openai-python`, `langfuse`, `fastmcp`, `awesome-llm-apps`, `composio`
 **Alternativas (elige una):** `pydantic-ai`, `langgraph`, `smolagents`, `deepagents`, `adk-python`
 
 ## `openevolve`
@@ -867,7 +867,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae nombre, importe y moneda de una factura ficticia
 **Qué comprobar:** El resultado respeta los tipos o informa del fallo de validación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `fastmcp`, `ollama`
+**Combina con:** `langfuse`, `fastmcp`, `ollama`, `browser-use`, `loguru`, `mcp-python-sdk`
 **Alternativas (elige una):** `openai-agents-python`, `smolagents`, `langgraph`
 
 ## `sim`

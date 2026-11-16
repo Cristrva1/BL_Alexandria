@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from repo_intelligence.analysis.combina_policy import combo_map, used_by
+
 import re
 from pathlib import Path
 from repo_intelligence.core.taxonomy import attach_areas, build_areas
@@ -252,6 +254,12 @@ def build_catalog(project_root: Path) -> dict:
             combo["id"] = _resolve(str(combo["id"]), index) or combo["id"]
         repos.append(repo)
     repos.sort(key=lambda repo: (repo["cat"], (repo["name"] or "").lower(), repo["id"]))
+    inbound_free = used_by(combo_map(repos))
+    names = {repo["id"]: (repo["name"] or repo["id"]).lower() for repo in repos}
+    for repo in repos:
+        users = [rid for rid in inbound_free.get(repo["id"], []) if rid in names]
+        if users:
+            repo["used_by"] = sorted(users, key=lambda rid: names[rid])
 
     areas = build_areas(compact, repos)
     attach_areas(repos, areas)

@@ -30,6 +30,14 @@ Python 3.10+ (`pip install openai-agents`), con extras opcionales para voz (`[vo
 | [openai-python](openai-python.md) | Cliente oficial de OpenAI que usa el SDK. | Se instala como dependencia. |
 | [langfuse](langfuse.md) | Trazas de código abierto como alternativa al panel de OpenAI (integración oficial). | Instrumenta con el procesador de trazas de Langfuse. |
 | [FastMCP](fastmcp.md) | Construir servidores MCP propios que el SDK consume como herramientas (combinación por arquitectura; el SDK documenta MCP). | Servidor MCP primero. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | Combinación recíproca: Awesome LLM Apps lo enlaza como «Framework usado por varias plantillas de agentes (citado en el README)». | Orden indicado desde Awesome LLM Apps: Instálalo dentro del entorno de la plantilla que lo use. |
+| [Composio](composio.md) | Combinación recíproca: Composio lo enlaza como «Adaptador oficial (`composio-openai-agents`)». | Orden indicado desde Composio: Instala el SDK y el adaptador. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenAI Cookbook](openai-cookbook.md) · [PageIndex](pageindex.md)
 
 **Notas:** Alternativas (elige una): pydantic-ai, langgraph, smolagents, deepagents, adk-python. Las trazas están activadas por defecto y van al panel de OpenAI; se desactivan con `OPENAI_AGENTS_DISABLE_TRACING=1`.
 

@@ -29,6 +29,8 @@ Es un binario en Go para macOS, Windows y Linux, instalable con Homebrew, winget
 | [Claude Code](claude-code.md) | Dar al agente acceso a PR, issues y CI desde la terminal. (combinación por arquitectura) | Autentica `gh` y permite su uso al agente. |
 | [GitHub MCP Server](github-mcp-server.md) | Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura) | Usa `gh` en terminal y el servidor MCP en clientes sin shell. |
 | [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos. | GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces. |
+| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | Combinación recíproca: Agentic Awesome Skills (AAS) lo enlaza como «Instalación de skills individuales con `gh skill`». | Orden indicado desde Agentic Awesome Skills (AAS): GitHub CLI con soporte de `gh skill` instalado. |
+| [Awesome GitHub Copilot](awesome-copilot.md) | Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Trabajar con repos, PR e incidencias desde la terminal junto a Copilot (combinación por arquitectura)». | Orden indicado desde Awesome GitHub Copilot: Independientes. |
 
 **Notas:** Sin alternativas declaradas. Limita los scopes del token que uses con agentes.
 

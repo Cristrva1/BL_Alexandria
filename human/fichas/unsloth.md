@@ -30,6 +30,14 @@ Hay apps nativas para Windows, macOS y Linux; la librería se instala con `uv pi
 | [Ollama](ollama.md) | Servir el GGUF exportado. | Exporta a GGUF e impórtalo en Ollama. |
 | [llama.cpp](llama-cpp.md) | Inferencia del GGUF exportado. | Carga el GGUF con llama.cpp. |
 | [Claude Code](claude-code.md) | Agente sobre un modelo local vía `unsloth start claude`. | Instala Claude Code y lanza con un modelo local. |
+| [LLM Course](llm-course.md) | Combinación recíproca: LLM Course lo enlaza como «Fine-tuning eficiente usado en el notebook 'Fine-tune Llama 3.1 with Unsloth'». | Orden indicado desde LLM Course: Abre el notebook en Colab con GPU; instala Unsloth según indique. |
+| [SGLang](sglang.md) | Combinación recíproca: SGLang lo enlaza como «Servir con SGLang modelos afinados con Unsloth. (combinación por arquitectura)». | Orden indicado desde SGLang: Afina y exporta con Unsloth y sirve los pesos con SGLang. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Text Generation WebUI](textgen.md)
 
 **Notas:** Alternativas (elige una): llama-factory. La AGPL de Studio importa si redistribuyes la UI.
 

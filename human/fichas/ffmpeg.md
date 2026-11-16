@@ -30,6 +30,12 @@ Se instala con paquetes del sistema o binarios precompilados, o se compila con `
 | [yt-dlp](yt-dlp.md) | yt-dlp usa FFmpeg para unir y convertir formatos. | Instala FFmpeg en el PATH. |
 | [MoviePy](moviepy.md) | MoviePy usa FFmpeg para leer y escribir vídeo. | Se instala con imageio-ffmpeg o usa el del sistema. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (36). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ACE-Step-1.5](ace-step-1-5.md) · [AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) · [Arcads AI Video Skill Pack](arcads-claude-code.md) · [AudioCraft](audiocraft.md) · [Concat](concat.md) · [CosyVoice](cosyvoice.md) · [DaVinci Resolve MCP](davinci-resolve-mcp.md) · [earshot](earshot.md) · [edge-tts](edge-tts.md) · [FaceFusion](facefusion.md) · [Fish Speech](fish-speech.md) · [GPT-SoVITS](gpt-sovits.md) · [IndexTTS](index-tts.md) · [lemo-opuscar](lemo-opuscar.md) · [LosslessCut](lossless-cut.md) · [Manim (ManimGL)](manim.md) · [manim](manim-community.md) · [mediabunny](mediabunny.md) · [motionmaxxing](motionmaxxing.md) · [OpenMontage](openmontage.md) · [OpenRV](openrv.md) · [pencil](pencil.md) · [pyannote.audio](pyannote-audio.md) · [rea-video](rea-video.md) · [rnnoise](rnnoise.md) · [rubberband](rubberband.md) · [RVC WebUI](rvc.md) · [short-video-factory](short-video-factory.md) · [taste-skill](taste-skill.md) · [Trigger.dev](trigger-dev.md) · [video-use](video-use.md) · [videofy_minimal](videofy-minimal.md) · [VideoLingo](videolingo.md) · [VoiceStudio](omnivoice-studio.md) · [VoxCPM](voxcpm.md) · [whisper.cpp](whisper-cpp.md)
+
 **Notas:** Sin alternativas declaradas. Al distribuir binarios, revisa si incluyen componentes GPL o códecs con patentes.
 
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

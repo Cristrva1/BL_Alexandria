@@ -28,7 +28,9 @@ Se usa con `npm install mermaid` o desde CDN en el navegador; existe mermaid-cli
 |---|---|---|
 | [Slidev](slidev.md) | Diagramas en presentaciones. | Usa bloques mermaid en Slidev. |
 | [Claude Code](claude-code.md) | Los agentes generan diagramas en Mermaid. (combinación por arquitectura) | Pide diagramas en sintaxis Mermaid. |
-| [diagram-design](diagram-design.md) | Otra vía de diagramas para agentes. (combinación por arquitectura) | Elige según el estilo. |
+| [archify](archify.md) | Combinación recíproca: archify lo enlaza como «Diagramas textuales para documentación estática. (combinación por arquitectura)». | Orden indicado desde archify: Usa Mermaid en docs y Archify para explorar. |
+| [Marp](marp.md) | Combinación recíproca: Marp lo enlaza como «Diagramas. (combinación por arquitectura)». | Orden indicado desde Marp: Renderiza a imagen e incrústala. |
+| [reveal.js](reveal-js.md) | Combinación recíproca: reveal.js lo enlaza como «Diagramas en las diapositivas. (combinación por arquitectura)». | Orden indicado desde reveal.js: Añade un plugin de Mermaid. |
 
 **Notas:** Alternativas (elige una): excalidraw.
 

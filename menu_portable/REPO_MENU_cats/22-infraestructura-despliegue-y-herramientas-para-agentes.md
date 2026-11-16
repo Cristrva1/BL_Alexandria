@@ -93,7 +93,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta compatibilidad y prueba el panel en un equipo de laboratorio antes de instalar apps
 **Qué comprobar:** Puedes identificar almacenamiento y una app de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nextcloud-server`, `adguardhome`, `activepieces`
+**Combina con:** `nextcloud-server`, `adguardhome`, `activepieces`, `masterdnsvpn`
 **Alternativas (elige una):** `coolify`
 
 ## `claude-task-master`
@@ -155,7 +155,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Busca una herramienta de consulta y revisa sus permisos antes de enlazar una cuenta
 **Qué comprobar:** Puedes identificar acción, aplicación y alcance de autorización
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openai-agents-python`, `langgraph`, `mastra`, `claude-code`
+**Combina con:** `openai-agents-python`, `langgraph`, `mastra`, `claude-code`, `awesome-claude-skills`, `openbot`
 
 ## `computer-use-preview`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=google · tags=browser,agents,python
@@ -283,7 +283,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servicio de alojamiento y comprueba sus límites y condiciones en la web del proveedor antes de crear una cuenta
 **Qué comprobar:** Puedes distinguir plan gratuito, cuotas y extras de pago
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `freedomain`, `supabase`, `coolify`
+**Combina con:** `freedomain`, `supabase`, `coolify`, `masterdnsvpn`
 
 ## `freedomain`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
@@ -439,7 +439,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca el contenedor limitado a loopback y consulta el contexto o una captura antes de ejecutar comandos
 **Qué comprobar:** Puedes acceder al entorno autenticado y reconocer navegador, terminal y archivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openhands`, `browser-use`, `deer-flow`
+**Combina con:** `openhands`, `browser-use`, `deer-flow`, `computer-use-preview`
 **Alternativas (elige una):** `nemoclaw`, `e2b`
 
 ## `shepherd`

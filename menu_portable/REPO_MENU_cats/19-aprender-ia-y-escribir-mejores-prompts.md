@@ -31,7 +31,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Aplica el principio de controlar el flujo a un agente imaginario de soporte y señala dónde pedir intervención humana
 **Qué comprobar:** Obtienes un diagrama con pasos deterministas y decisiones del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `context-engineering`, `langgraph`, `vercel-ai`
+**Combina con:** `context-engineering`, `langgraph`, `vercel-ai`, `awesome-harness-engineering`
 
 ## `500-ai-agents-projects`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=guias,ai-agents,genai,python
@@ -303,7 +303,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato
 **Qué comprobar:** Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo`, `prompt-engineering-guide`
+**Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo`, `prompt-engineering-guide`, `chatgpt-dan`
 
 ## `claude-cookbooks`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=learning,notebooks,rag,python
@@ -490,7 +490,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el notebook de tokenización y procesa una frase antes de pasar a entrenamiento
 **Qué comprobar:** Puedes inspeccionar tokens y reconstrucción del texto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanochat`, `llms-from-scratch`, `pytorch`
+**Combina con:** `nanochat`, `pytorch`, `marimo`
 
 ## `llm-course`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,training,notebooks
@@ -520,7 +520,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos
 **Qué comprobar:** Puedes ubicar la diferencia entre entrenar, cuantizar y servir un modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `unsloth`, `trl`, `pytorch`
+**Combina con:** `unsloth`, `trl`, `pytorch`, `awesome-machine-learning`
 **Alternativas (elige una):** `llms-from-scratch`, `generative-ai-for-beginners`
 
 ## `llm.c`
@@ -581,7 +581,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el capítulo de tokenización con una frase corta antes de entrenar una red
 **Qué comprobar:** Puedes ver la conversión de texto a tokens y explicarla
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `nanochat`, `transformers`
+**Combina con:** `pytorch`, `nanochat`, `transformers`, `llm.c`
 **Alternativas (elige una):** `llm-course`
 
 ## `loop-engineering`
@@ -613,7 +613,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera la plantilla de daily-triage en una carpeta de prueba y ejecuta doctor antes de activar acciones
 **Qué comprobar:** Puedes revisar la configuración y los avisos del diagnóstico
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `awesome-harness-engineering`
 
 ## `nanochat`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
@@ -643,7 +643,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara la ruta CPU para estudiar el código y lee speedrun antes de contratar un nodo GPU
 **Qué comprobar:** Distingues la instalación de dependencias del entrenamiento completo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `llms-from-scratch`, `llm.c`
+**Combina con:** `pytorch`, `llms-from-scratch`, `llm.c`, `autoresearch`, `how-to-train-your-gpt`, `train-llm-from-scratch`
 
 ## `openai-cookbook`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python
@@ -673,7 +673,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una receta de salida estructurada y revisa su esquema antes de ejecutar una entrada breve
 **Qué comprobar:** Puedes identificar la petición, respuesta esperada y consumo de la receta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openai-python`, `openai-agents-python`, `promptfoo`
+**Combina con:** `openai-python`, `openai-agents-python`, `promptfoo`, `generative-ai-for-beginners`
 **Alternativas (elige una):** `claude-cookbooks`, `awesome-llm-apps`
 
 ## `prompt-eng-tutorial`
@@ -735,7 +735,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia
 **Qué comprobar:** Puedes explicar qué información añadiste y por qué
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`
+**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`, `chatgpt-system-prompt`
 **Alternativas (elige una):** `prompt-eng-tutorial`
 
 ## `prompt-master`
@@ -828,7 +828,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara dos estructuras atribuidas a asistentes y anota sus diferencias sin introducirlas como configuración oficial
 **Qué comprobar:** Puedes distinguir patrones de diseño de afirmaciones no verificadas de procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `chatgpt-system-prompt`, `promptfoo`, `claude-code`
+**Combina con:** `chatgpt-system-prompt`, `promptfoo`, `claude-code`, `chatgpt-dan`
 
 ## `train-llm-from-scratch`
 role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=aprender,gemini,large-language-models,llm,openai,training,transformers,python

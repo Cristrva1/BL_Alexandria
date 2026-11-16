@@ -32,6 +32,12 @@ Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST de
 | [langchain](langchain.md) | Integración documentada como vector store de LangChain. | Igual que con LlamaIndex; elige un solo framework para no duplicar la lógica de RAG. |
 | [crawl4ai](crawl4ai.md) | Ingesta de páginas web en Markdown fragmentado para indexar. (combinación por arquitectura) | Rastrea, genera embeddings e inserta en Qdrant. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agno](agno.md) · [AnythingLLM](anything-llm.md) · [crawlee-python](crawlee-python.md) · [Haystack](haystack.md) · [langchain4j](langchain4j.md) · [mem0](mem0.md) · [STORM](storm.md) · [transformers.js](transformers-js.md) · [Unstructured](unstructured.md)
+
 **Notas:** Alternativas (elige una): milvus, chroma, pgvector, faiss. Configura autenticación (API key) antes de exponer el puerto 6333.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.20.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

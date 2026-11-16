@@ -123,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una decisión ficticia en una sesión y consulta si se recupera en una nueva
 **Qué comprobar:** Puedes distinguir captura, resumen y recuperación y ver qué proveedor los produjo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `openclaw`
 **Alternativas (elige una):** `engram`, `agentmemory`
 
 ## `cognee`
@@ -154,7 +154,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda un hecho ficticio con remember y recupéralo con recall sin configurar una clave LLM
 **Qué comprobar:** Se devuelve el texto de origen y no una respuesta inventada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `openclaw`
+**Combina con:** `claude-code`, `codex`, `openclaw`, `neo4j-mcp`
 **Alternativas (elige una):** `graphiti`, `mem0`, `graphrag`, `letta`
 
 ## `dsh-noema`
@@ -215,7 +215,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda una decisión con su razón y recupérala por palabras clave
 **Qué comprobar:** El registro aparece con contenido y contexto que puedes inspeccionar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`, `gemini-cli`, `deepseek-harness`
+**Combina con:** `claude-code`, `opencode`, `gemini-cli`, `deepseek-harness`, `antigravity-cli`
 **Alternativas (elige una):** `claude-mem`, `agentmemory`
 
 ## `faiss`
@@ -277,7 +277,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade dos hechos con fechas distintas y consulta cuál era válido en cada momento
 **Qué comprobar:** El grafo conserva relaciones temporales y sus fuentes
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `langgraph`, `mcp-neo4j`
+**Combina con:** `claude-code`, `langgraph`, `mcp-neo4j`, `mirofish`, `neo4j-mcp`
 **Alternativas (elige una):** `cognee`, `graphrag`
 
 ## `graphrag`
@@ -308,7 +308,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa unos textos ficticios y pregunta por un tema que conecte varios de ellos
 **Qué comprobar:** Puedes revisar entidades, comunidades y fuentes de la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `mcp-neo4j`, `docling`
+**Combina con:** `litellm`, `mcp-neo4j`, `docling`, `graphify`, `scrapegraph-ai`
 **Alternativas (elige una):** `graphiti`, `cognee`, `lightrag`
 
 ## `letta`
@@ -371,7 +371,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un documento ficticio y compara una consulta sobre una entidad con otra sobre sus relaciones
 **Qué comprobar:** Puedes inspeccionar los resultados y las relaciones recuperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pgvector`, `ollama`, `docling`, `langfuse`, `ragas`
+**Combina con:** `pgvector`, `ollama`, `docling`, `langfuse`, `ragas`, `deeptutor`
 **Alternativas (elige una):** `graphrag`, `ragflow`, `pageindex`
 
 ## `mem0`
@@ -402,7 +402,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda dos preferencias de un usuario ficticio y consulta una de ellas por su identificador
 **Qué comprobar:** La búsqueda devuelve la preferencia del usuario correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `crewai`, `qdrant`, `hermes-desktop`
+**Combina con:** `langgraph`, `crewai`, `qdrant`, `hermes-desktop`, `agents-towards-production`, `agno`
 **Alternativas (elige una):** `letta`, `cognee`, `supermemory`
 
 ## `mempalace`
@@ -464,7 +464,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una colección, inserta tres vectores y busca uno cercano
 **Qué comprobar:** Puedes contrastar el vecino y los metadatos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `anything-llm`, `lightrag`, `llama-index`
+**Combina con:** `anything-llm`, `lightrag`, `llama-index`, `langchain4j`
 **Alternativas (elige una):** `qdrant`, `chroma`, `pgvector`
 
 ## `onyx`
@@ -587,7 +587,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Habilita la extensión en una base de prueba y compara tres vectores junto a sus filas
 **Qué comprobar:** La consulta devuelve la fila más cercana usando la distancia elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `supabase`, `anything-llm`, `librechat`, `lightrag`
+**Combina con:** `supabase`, `anything-llm`, `librechat`, `lightrag`, `langchain4j`
 **Alternativas (elige una):** `qdrant`, `chroma`, `milvus`
 
 ## `qdrant`
@@ -649,7 +649,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un PDF propio corto y pregunta por un dato identificable con cita
 **Qué comprobar:** La respuesta permite abrir el fragmento y comprobar su procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `activepieces`, `langfuse`
+**Combina con:** `ollama`, `activepieces`, `langfuse`, `paddleocr`
 **Alternativas (elige una):** `dify`, `lightrag`
 
 ## `supermemory`

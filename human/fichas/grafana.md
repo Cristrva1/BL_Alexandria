@@ -30,6 +30,12 @@ Se instala con paquetes, Docker o Helm, o se usa en Grafana Cloud. Está escrito
 | [supabase](supabase.md) | Fuente PostgreSQL nativa para paneles sobre Supabase. | Añade la conexión Postgres de Supabase como fuente. |
 | [Umami](umami.md) | Panel sobre la base PostgreSQL de Umami. (combinación por arquitectura) | Añade la base de Umami como fuente. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[freqtrade](freqtrade.md) · [hummingbot](hummingbot.md) · [k6](k6.md) · [Matomo](matomo.md) · [Node-RED](node-red.md) · [open-sol-bot](open-sol-bot.md) · [Plausible Analytics](plausible.md) · [uPlot](uplot.md)
+
 **Notas:** Sin alternativas declaradas. AGPL: ofrecerlo modificado como servicio obliga a publicar cambios.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v13.3.1 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).

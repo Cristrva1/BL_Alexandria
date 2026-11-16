@@ -29,6 +29,7 @@ Es una hoja de ruta en Markdown con enlaces a artículos y notebooks de Google C
 | [Unsloth](unsloth.md) | Fine-tuning eficiente usado en el notebook 'Fine-tune Llama 3.1 with Unsloth'. | Abre el notebook en Colab con GPU; instala Unsloth según indique. |
 | [TRL](trl.md) | Fine-tuning supervisado con QLoRA usado en el notebook de Mistral-7b. | Se instala dentro del notebook. |
 | [PyTorch](pytorch.md) | Base técnica de la parte 'LLM Scientist'. (combinación por arquitectura) | Instálalo con soporte CUDA si vas a entrenar en local. |
+| [awesome-machine-learning](awesome-machine-learning.md) | Combinación recíproca: awesome-machine-learning lo enlaza como «Ruta de estudio guiada para quien llega a la lista buscando aprender LLMs. (combinación por arquitectura)». | Orden indicado desde awesome-machine-learning: Combina la exploración de la lista con un curso estructurado. |
 
 **Notas:** Alternativas (elige una): llms-from-scratch, generative-ai-for-beginners. Combinación anterior con llama-factory eliminada: el curso no lo usa (y es alternativa de unsloth).
 

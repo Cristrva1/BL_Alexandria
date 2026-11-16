@@ -324,5 +324,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un script que reciba un nombre y devuelva un saludo
 **Qué comprobar:** La ejecución guarda el resultado del script y sus logs
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `claude-code`, `polars`
+**Combina con:** `duckdb`, `claude-code`, `polars`, `coolify`
 **Alternativas (elige una):** `kestra`, `trigger-dev`

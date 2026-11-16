@@ -67,7 +67,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Genera una muestra corta y compara su relación con el prompt sin publicar el resultado
 **Qué comprobar:** Puedes identificar modelo, duración y artefactos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `moviepy`, `remotion`
+**Combina con:** `ffmpeg`, `moviepy`, `remotion`, `rubberband`
 
 ## `cosyvoice`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -100,7 +100,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Descarga una variante compatible y prueba una frase del idioma elegido
 **Qué comprobar:** Puedes comprobar voz, texto y archivo generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pipecat`, `vllm`, `ffmpeg`
+**Combina con:** `pipecat`, `vllm`, `ffmpeg`, `wan2-2`
 **Alternativas (elige una):** `fish-speech`, `index-tts`
 
 ## `dograh`
@@ -193,7 +193,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera un audio y subtítulos de una frase y escucha pronunciación y pausas
 **Qué comprobar:** Puedes localizar MP3 y SRT y comprobar su contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `moviepy`, `whisper`, `ffmpeg`
+**Combina con:** `moviepy`, `whisper`, `ffmpeg`, `short-video-factory`
 **Alternativas (elige una):** `kokoro`
 
 ## `elevenlabs-python`
@@ -254,7 +254,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe un clip corto con una configuración adecuada al equipo y compara salida y tiempo
 **Qué comprobar:** Puedes revisar modelo, cuantización y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `pipecat`, `moviepy`
+**Combina con:** `whisperx`, `pipecat`, `moviepy`, `ai-youtube-shorts-generator`, `moneyprinterturbo`, `obs-studio`
 **Alternativas (elige una):** `whisper-cpp`
 
 ## `fish-speech`
@@ -320,7 +320,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sintetiza una frase corta con una voz autorizada y compara inteligibilidad antes de entrenar
 **Qué comprobar:** Puedes revisar referencia, modelo y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `rvc`, `ffmpeg`, `whisperx`
+**Combina con:** `rvc`, `ffmpeg`, `whisperx`, `videolingo`
 **Alternativas (elige una):** `fish-speech`
 
 ## `index-tts`
@@ -788,7 +788,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe una grabación propia corta y compara nombres y números con el audio
 **Qué comprobar:** Puedes identificar modelo y errores de transcripción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `llama-cpp`, `pipecat`
+**Combina con:** `ffmpeg`, `llama-cpp`, `pipecat`, `dograh`, `kokoro`, `livekit-agents`
 **Alternativas (elige una):** `faster-whisper`, `whisper`
 
 ## `whisperx`

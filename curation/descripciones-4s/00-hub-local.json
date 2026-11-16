@@ -44,6 +44,12 @@
      "id": "gitnexus",
      "motivo": "Envoltorio `gitnexus_runner.py`.",
      "orden_instalacion": "Instala la CLI gitnexus."
+    },
+    {
+     "id": "guia",
+     "motivo": "Combinación recíproca: Guía (histórica) lo enlaza como «Utilidades internas del hub que alimentan y verifican el índice del que se genera la guía».",
+     "orden_instalacion": "Orden indicado desde Guía (histórica): Ambas vienen con el repositorio; no requieren instalación.",
+     "reciproca_de": "guia"
     }
    ],
    "notas": "Entrada local (categoría 0), excluida del recuento de cobertura. La ficha describía una carpeta `tools/` que ya no existe; se documentan las ubicaciones reales.",

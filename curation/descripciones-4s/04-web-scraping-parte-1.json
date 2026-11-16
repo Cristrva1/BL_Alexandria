@@ -97,6 +97,12 @@
      "id": "defuddle",
      "motivo": "Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura)",
      "orden_instalacion": "Procesa el HTML guardado con Defuddle."
+    },
+    {
+     "id": "awesome-web-scraping",
+     "motivo": "Combinación recíproca: awesome-web-scraping lo enlaza como «Framework de referencia en la sección de Python. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-web-scraping: Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico.",
+     "reciproca_de": "awesome-web-scraping"
     }
    ],
    "notas": "Sin alternativas declaradas. Se quita la combinación con crawlee-python por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
@@ -134,6 +140,12 @@
      "id": "llm-scraper",
      "motivo": "Extraer datos estructurados con un LLM de las páginas que abre Crawlee. (combinación por arquitectura)",
      "orden_instalacion": "Pasa la página de Playwright a LLM Scraper con un esquema Zod."
+    },
+    {
+     "id": "awesome-web-scraping",
+     "motivo": "Combinación recíproca: awesome-web-scraping lo enlaza como «Opción moderna para JavaScript/TypeScript. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-web-scraping: Compárala con las demás de la sección de JavaScript.",
+     "reciproca_de": "awesome-web-scraping"
     }
    ],
    "notas": "Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
@@ -242,6 +254,12 @@
      "id": "graphrag",
      "motivo": "Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)",
      "orden_instalacion": "Exporta los resultados como documentos para GraphRAG."
+    },
+    {
+     "id": "crawlee-python",
+     "motivo": "Combinación recíproca: crawlee-python lo enlaza como «Extraer datos con LLM a partir de las páginas recogidas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde crawlee-python: Recoge con Crawlee y pasa el HTML a ScrapeGraphAI.",
+     "reciproca_de": "crawlee-python"
     }
    ],
    "notas": "Alternativas (elige una): maxun. Se quita la combinación con crawl4ai por solaparse. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
@@ -315,6 +333,12 @@
      "id": "ollama",
      "motivo": "Modelos locales mediante `ollama-ai-provider-v2`, documentado en el README.",
      "orden_instalacion": "Levanta Ollama e instala el proveedor."
+    },
+    {
+     "id": "crawlee",
+     "motivo": "Combinación recíproca: crawlee lo enlaza como «Extraer datos estructurados con un LLM de las páginas que abre Crawlee. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde crawlee: Pasa la página de Playwright a LLM Scraper con un esquema Zod.",
+     "reciproca_de": "crawlee"
     }
    ],
    "notas": "Alternativas (elige una): maxun. Se quita la combinación con firecrawl por no estar documentada. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
@@ -350,6 +374,24 @@
      "id": "crawlee",
      "motivo": "Limpiar el contenido de cada página de un crawler Node.js. (combinación por arquitectura)",
      "orden_instalacion": "Pasa el HTML de cada página a Defuddle."
+    },
+    {
+     "id": "claude-obsidian",
+     "motivo": "Combinación recíproca: claude-obsidian lo enlaza como «Extraer el contenido limpio de páginas web antes de ingerirlas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-obsidian: Usa Defuddle (o su skill) para preparar la fuente y déjala en `inbox/`.",
+     "reciproca_de": "claude-obsidian"
+    },
+    {
+     "id": "scrapling",
+     "motivo": "Combinación recíproca: Scrapling lo enlaza como «Quedarte solo con el contenido principal de los artículos descargados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Scrapling: Pasa el HTML obtenido por Defuddle para limpiarlo.",
+     "reciproca_de": "scrapling"
+    },
+    {
+     "id": "scrapy",
+     "motivo": "Combinación recíproca: scrapy lo enlaza como «Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde scrapy: Procesa el HTML guardado con Defuddle.",
+     "reciproca_de": "scrapy"
     }
    ],
    "notas": "Sin alternativas declaradas. En desarrollo: la salida puede cambiar entre versiones.",
@@ -491,6 +533,12 @@
      "id": "karakeep",
      "motivo": "Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura)",
      "orden_instalacion": "Exporta los enlaces de Karakeep e impórtalos en ArchiveBox."
+    },
+    {
+     "id": "instaloader",
+     "motivo": "Combinación recíproca: instaloader lo enlaza como «Archivar también las publicaciones en formatos de archivo web. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde instaloader: Pasa las URLs de las publicaciones a ArchiveBox.",
+     "reciproca_de": "instaloader"
     }
    ],
    "notas": "Sin alternativas declaradas. Desactiva el envío a archive.org si archivas páginas privadas.",

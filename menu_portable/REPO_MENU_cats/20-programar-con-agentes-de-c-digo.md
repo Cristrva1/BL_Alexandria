@@ -32,7 +32,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una copia de un proyecto y pide una explicación antes de aceptar cambios y commits
 **Qué comprobar:** Puedes revisar archivos incluidos y cualquier diff propuesto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `ollama`, `tree-sitter`
+**Combina con:** `litellm`, `ollama`, `tree-sitter`, `ast-grep`, `openidea`, `swe-bench`
 **Alternativas (elige una):** `opencode`, `cline`
 
 ## `antigravity-cli`
@@ -125,7 +125,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa Plan mode para pedir un diagnóstico de un archivo antes de pasar a Act
 **Qué comprobar:** Puedes revisar el plan y los permisos solicitados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `context7`, `playwright-mcp`
+**Combina con:** `ollama`, `context7`, `playwright-mcp`, `omniroute`, `awesome-mcp-clients`
 **Alternativas (elige una):** `aider`
 
 ## `codex`
@@ -467,7 +467,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca Agent Canvas y crea una sesión que solo examine un proyecto de ejemplo
 **Qué comprobar:** Puedes reconocer agente, backend y permisos de la sesión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `sandbox`, `ecc`
+**Combina con:** `claude-code`, `codex`, `sandbox`, `ecc`, `swe-bench`
 **Alternativas (elige una):** `open-swe`
 
 ## `openidea`

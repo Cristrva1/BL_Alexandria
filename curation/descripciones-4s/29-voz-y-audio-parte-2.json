@@ -57,6 +57,12 @@
      "id": "ffmpeg",
      "motivo": "Postproceso de audio. (combinación por arquitectura)",
      "orden_instalacion": "Convierte la salida."
+    },
+    {
+     "id": "wan2-2",
+     "motivo": "Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video».",
+     "orden_instalacion": "Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`.",
+     "reciproca_de": "wan2-2"
     }
    ],
    "notas": "Alternativas (elige una): fish-speech, index-tts.",
@@ -211,6 +217,12 @@
      "id": "remotion",
      "motivo": "Banda sonora para vídeo programático. (combinación por arquitectura)",
      "orden_instalacion": "Usa el audio generado."
+    },
+    {
+     "id": "rubberband",
+     "motivo": "Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde rubberband: Procesa la salida.",
+     "reciproca_de": "rubberband"
     }
    ],
    "notas": "Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.",
@@ -280,6 +292,12 @@
      "id": "ffmpeg",
      "motivo": "Convertir el audio. (combinación por arquitectura)",
      "orden_instalacion": "Convierte el formato."
+    },
+    {
+     "id": "short-video-factory",
+     "motivo": "Combinación recíproca: short-video-factory lo enlaza como «Síntesis de voz con Edge TTS».",
+     "orden_instalacion": "Orden indicado desde short-video-factory: Viene integrada en la app.",
+     "reciproca_de": "short-video-factory"
     }
    ],
    "notas": "Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad.",

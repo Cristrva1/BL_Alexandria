@@ -30,6 +30,12 @@ Se instala con `pip install -U vectorbt` (extras `[full]` y `[rust]`). Usa NumPy
 | [freqtrade](freqtrade.md) | Llevar la idea validada a un bot. (combinación por arquitectura) | Reimplementa la estrategia en Freqtrade. |
 | [marimo](marimo.md) | Exploración interactiva de resultados. (combinación por arquitectura) | Ejecuta los análisis en notebooks marimo. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AutoHedge](autohedge.md) · [binance-trader](binance-trader.md) · [FinRL](finrl.md) · [lumibot](lumibot.md) · [machine-learning-for-trading](machine-learning-for-trading.md) · [Vibe-Trading](vibe-trading.md)
+
 **Notas:** Sin alternativas declaradas. Commons Clause: no es open source según la OSI.
 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v1.2.1 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

@@ -29,6 +29,7 @@ Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hook
 | [Claude Code](claude-code.md) | Hooks y MCP configurados por `analyze` y `setup`. | Ejecuta `npx gitnexus analyze` y luego `setup`. |
 | [OpenCode](opencode.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c opencode`. |
 | [Codex CLI](codex.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c codex`. |
+| [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `gitnexus_runner.py`». | Orden indicado desde tools: Instala la CLI gitnexus. |
 
 **Notas:** Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.
 

@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un programa propio sencillo y explora sus funciones y estados simbólicos
 **Qué comprobar:** Puedes relacionar una ruta analizada con la lógica del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ghidra`, `frida`, `claude-code`
+**Combina con:** `ghidra`, `frida`, `claude-code`, `ghidramcp`, `rizin`
 
 ## `apktool`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,java
@@ -428,7 +428,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una app Android de prueba y navega por una clase y sus recursos
 **Qué comprobar:** Puedes identificar métodos y líneas que no se reconstruyen correctamente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `frida`, `apktool`, `ghidra`
+**Combina con:** `frida`, `apktool`, `ghidra`, `rea`, `awesome-ai-reverse-engineering`
 
 ## `k6`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,app,go
@@ -488,7 +488,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Inspecciona una petición de tu app de laboratorio y revisa cabeceras y respuesta
 **Qué comprobar:** Puedes reconocer origen, destino y contenido capturado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `frida`, `playwright`, `k6`
+**Combina con:** `frida`, `playwright`, `k6`, `apktool`, `selenium`, `shannon`
 
 ## `radare2`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -579,7 +579,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza estáticamente un pequeño proyecto JavaScript propio y revisa el informe y sus rutas de archivos
 **Qué comprobar:** Puedes contrastar cada elemento con el código del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ghidra`, `jadx`, `codex`
+**Combina con:** `claude-code`, `ghidra`, `jadx`, `codex`, `awesome-ai-reverse-engineering`, `awesome-reverse-engineering`
 
 ## `rizin`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -671,7 +671,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una regla sencilla sobre un archivo ficticio con un patrón conocido
 **Qué comprobar:** El hallazgo señala la línea y puedes comprobarlo manualmente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `security-audit-skill`, `strix`
+**Combina con:** `claude-code`, `security-audit-skill`, `strix`, `defending-code-reference-harness`, `raddebugger`, `shannon`
 **Alternativas (elige una):** `ast-grep`
 
 ## `shannon`
@@ -772,7 +772,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Delimita una app propia desechable y revisa proveedor y modo antes de una evaluación pequeña
 **Qué comprobar:** Los hallazgos quedan asociados al alcance y evidencias que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `github-mcp-server`, `semgrep`
+**Combina con:** `ollama`, `github-mcp-server`, `semgrep`, `defending-code-reference-harness`
 **Alternativas (elige una):** `shannon`
 
 ## `x64dbg`
@@ -803,4 +803,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Depura un programa sencillo y detén la ejecución en una función conocida
 **Qué comprobar:** Puedes ver instrucciones, pila y valores del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ghidra`, `imhex`, `dnspy`
+**Combina con:** `ghidra`, `imhex`, `dnspy`, `raddebugger`

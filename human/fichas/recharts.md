@@ -29,6 +29,7 @@ Se instala con `npm install recharts react-is` y se usa dentro de componentes Re
 | [ui](ui.md) | Los componentes Chart de shadcn/ui se construyen con Recharts. | Añade el componente chart de shadcn/ui. |
 | [D3.js](d3.md) | Recharts usa módulos de D3 internamente. | No requiere instalación aparte. |
 | [tailwindcss](tailwindcss.md) | Estilar los gráficos con las variables de tema de Tailwind. (combinación por arquitectura) | Pasa colores del tema a los componentes. |
+| [Material UI](mui.md) | Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)». | Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI. |
 
 **Notas:** Alternativas (elige una): chart-js, echarts.
 

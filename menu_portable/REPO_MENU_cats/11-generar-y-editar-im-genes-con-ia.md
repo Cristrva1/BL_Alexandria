@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Restaura una copia y compara dos ajustes de fidelidad con la foto original
 **Qué comprobar:** Puedes observar el equilibrio entre parecido, limpieza y artefactos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `real-esrgan`, `comfyui`, `rembg`
+**Combina con:** `real-esrgan`, `comfyui`, `rembg`, `deep-live-cam`
 
 ## `comfyui`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
@@ -125,7 +125,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una imagen pequeña con FLUX.2 [klein] 4B desde la CLI interactiva
 **Qué comprobar:** Obtienes la imagen y sabes qué variante y qué licencia usaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`, `real-esrgan`
+**Combina con:** `comfyui`, `diffusers`, `real-esrgan`, `invokeai`, `krita-ai-diffusion`
 
 ## `invokeai`
 role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
@@ -257,4 +257,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Quita el fondo de una imagen simple y guarda un PNG con transparencia
 **Qué comprobar:** Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `real-esrgan`, `gradio`
+**Combina con:** `comfyui`, `real-esrgan`, `gradio`, `codeformer`

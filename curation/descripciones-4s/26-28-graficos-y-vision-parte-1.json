@@ -57,6 +57,12 @@
      "id": "ozz-animation",
      "motivo": "Animación esquelética en runtime. (combinación por arquitectura)",
      "orden_instalacion": "Integra ozz en el motor."
+    },
+    {
+     "id": "awesome-cad",
+     "motivo": "Combinación recíproca: awesome-cad lo enlaza como «Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-cad: Exporta a glTF y visualiza con Filament.",
+     "reciproca_de": "awesome-cad"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -127,6 +133,12 @@
      "id": "three.js",
      "motivo": "Pasar a 3D real cuando haga falta. (combinación por arquitectura)",
      "orden_instalacion": "Migra la escena a three.js."
+    },
+    {
+     "id": "scenejs",
+     "motivo": "Combinación recíproca: scenejs lo enlaza como «Animar ilustraciones pseudo-3D. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde scenejs: Anima propiedades de Zdog desde la escena.",
+     "reciproca_de": "scenejs"
     }
    ],
    "notas": "Sin alternativas declaradas. Inactivo.",
@@ -195,6 +207,12 @@
      "id": "planck-js",
      "motivo": "Física 2D para el juego que usa los efectos. (combinación por arquitectura)",
      "orden_instalacion": "Combina en el mismo juego."
+    },
+    {
+     "id": "pencil",
+     "motivo": "Combinación recíproca: pencil lo enlaza como «Efectos de pixel art de referencia. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde pencil: Usa los sprite sheets como guía.",
+     "reciproca_de": "pencil"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -370,6 +388,18 @@
      "id": "blender",
      "motivo": "Optimizar exportaciones glTF. (combinación por arquitectura)",
      "orden_instalacion": "Pasa el glTF exportado por gltfpack."
+    },
+    {
+     "id": "ozz-animation",
+     "motivo": "Combinación recíproca: ozz-animation lo enlaza como «Optimizar las mallas de los personajes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ozz-animation: Procesa las mallas antes.",
+     "reciproca_de": "ozz-animation"
+    },
+    {
+     "id": "regl",
+     "motivo": "Combinación recíproca: regl lo enlaza como «Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde regl: Optimiza la malla antes de subirla a buffers.",
+     "reciproca_de": "regl"
     }
    ],
    "notas": "Sin alternativas declaradas.",

@@ -31,6 +31,12 @@ Se instala con `npm install three` o se importa desde CDN como módulo ES. Tiene
 | [threejs-skills](threejs-skills.md) | Skills para que un agente programe escenas. | Añade las skills al agente. |
 | [meshoptimizer](meshoptimizer.md) | Optimizar geometría glTF. | Comprime los modelos antes de cargarlos. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (19). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[3dviz-pro-max](3dviz-pro-max.md) · [Anime.js](animejs.md) · [awesome-cad](awesome-cad.md) · [blender](blender.md) · [claude-animated-shorts](claude-animated-shorts.md) · [genjutsu](genjutsu.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [lemo-opuscar](lemo-opuscar.md) · [mediapipe](mediapipe.md) · [ODM](odm.md) · [openfilm](openfilm.md) · [planck.js](planck-js.md) · [react-three-rapier](react-three-rapier.md) · [regl](regl.md) · [tfjs-models](tfjs-models.md) · [threejs-game-skills](threejs-game-skills.md) · [webgl-noise](webgl-noise.md) · [WebODM](webodm.md) · [zdog](zdog.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada r187 (2026-10-30) · licencia declarada MIT (consultado el 2026-11-15).

@@ -30,6 +30,12 @@ Se ejecuta con `npx @modelcontextprotocol/inspector` (web), `--cli` o `--tui`. L
 | [MCP TypeScript SDK](mcp-typescript-sdk.md) | Herramienta oficial para probar servidores del SDK TypeScript. | Ejecuta el Inspector contra tu servidor. |
 | [MCP Python SDK](mcp-python-sdk.md) | `mcp dev` del SDK de Python lanza el Inspector. | Instala `mcp[cli]` y ejecuta `mcp dev`. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Chrome DevTools MCP](chrome-devtools-mcp.md) · [Google MCP](mcp.md) · [MCP for Beginners](mcp-for-beginners.md) · [Playwright MCP](playwright-mcp.md) · [servers](servers.md)
+
 **Notas:** Sin alternativas declaradas. Trata los secretos que guarda como credenciales.
 
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 2.15.0 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

@@ -29,6 +29,7 @@ Requiere Node.js 22.13+; se crea un proyecto con `npx crawlee create my-crawler`
 | [playwright](playwright.md) | Crawler de navegador basado en Playwright, soportado de forma nativa. | Instala `crawlee` y `playwright` y usa `PlaywrightCrawler`. |
 | [defuddle](defuddle.md) | Limpiar el contenido principal de cada página en el mismo proyecto Node.js. (combinación por arquitectura) | Pasa el HTML de cada página a Defuddle. |
 | [llm-scraper](llm-scraper.md) | Extraer datos estructurados con un LLM de las páginas que abre Crawlee. (combinación por arquitectura) | Pasa la página de Playwright a LLM Scraper con un esquema Zod. |
+| [awesome-web-scraping](awesome-web-scraping.md) | Combinación recíproca: awesome-web-scraping lo enlaza como «Opción moderna para JavaScript/TypeScript. (combinación por arquitectura)». | Orden indicado desde awesome-web-scraping: Compárala con las demás de la sección de JavaScript. |
 
 **Notas:** Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

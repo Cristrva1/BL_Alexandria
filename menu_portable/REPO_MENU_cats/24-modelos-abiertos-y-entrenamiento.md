@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una demo o ejecuta una receta pequeña y compara el video con su condicionamiento
 **Qué comprobar:** Puedes reconocer entrada, modelo y salida generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`, `pytorch`, `nemotron`
+**Combina con:** `diffusers`, `pytorch`, `nemotron`, `warp`
 
 ## `deepseek-v3`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=llm,inference,python
@@ -184,7 +184,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre la interfaz y revisa un dataset pequeño antes de lanzar un ajuste LoRA
 **Qué comprobar:** Puedes identificar modelo base, datos y parámetros de entrenamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `peft`, `transformers`, `vllm`, `sglang`
+**Combina con:** `peft`, `transformers`, `vllm`, `sglang`, `gradio`
 **Alternativas (elige una):** `unsloth`
 
 ## `nemotron`
@@ -215,7 +215,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una receta y usa su guía para identificar datos, checkpoint y recursos antes de ejecutarla
 **Qué comprobar:** Puedes diferenciar entrenamiento, adaptación e inferencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vllm`, `nemoclaw`, `claude-code`, `nemo`
+**Combina con:** `vllm`, `nemoclaw`, `claude-code`, `nemo`, `cosmos`
 
 ## `peft`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -245,7 +245,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Estudia el ejemplo LoRA y comprueba qué parámetros serán entrenables
 **Qué comprobar:** Puedes distinguir modelo base de adaptador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `trl`, `diffusers`
+**Combina con:** `transformers`, `trl`, `diffusers`, `llama-factory`, `airllm`, `bionemo-recipes`
 
 ## `pytorch`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -306,7 +306,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una operación pequeña con tensores y comprueba el dispositivo antes de entrenar
 **Qué comprobar:** Puedes verificar versión y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `mediapipe`, `marimo`
+**Combina con:** `transformers`, `mediapipe`, `marimo`, `jupyterlab`, `tfjs-models`
 **Alternativas (elige una):** `pytorch`
 
 ## `timesfm`
@@ -399,7 +399,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige el ejemplo SFT y revisa formato de datos antes de probar métodos de recompensa
 **Qué comprobar:** Puedes relacionar datos, método y checkpoint
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `peft`, `unsloth`, `vllm`
+**Combina con:** `transformers`, `peft`, `unsloth`, `vllm`, `llm-course`, `train-llm-from-scratch`
 
 ## `unsloth`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,local,python
@@ -429,5 +429,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un modelo pequeño compatible y prueba una pregunta conocida antes de iniciar fine-tuning
 **Qué comprobar:** Puedes identificar modelo, formato y memoria utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `trl`, `ollama`, `llama-cpp`, `claude-code`
+**Combina con:** `trl`, `ollama`, `llama-cpp`, `claude-code`, `llm-course`, `sglang`
 **Alternativas (elige una):** `llama-factory`

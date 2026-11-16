@@ -29,6 +29,7 @@ Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta m
 | [Claude Code](claude-code.md) | Uso vía skill o MCP. | Registra la skill o el MCP. |
 | [Ollama](ollama.md) | Modelos locales vía integraciones de modelos. (combinación por arquitectura) | Configura un modelo local compatible. |
 | [Pydantic AI](pydantic-ai.md) | Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI. | Instala el extra correspondiente de pydantic-ai para el proveedor elegido. |
+| [sandbox](sandbox.md) | Combinación recíproca: sandbox lo enlaza como «Navegador del sandbox para automatización. (combinación por arquitectura)». | Orden indicado desde sandbox: Conecta browser-use al navegador expuesto. |
 
 **Notas:** Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.
 

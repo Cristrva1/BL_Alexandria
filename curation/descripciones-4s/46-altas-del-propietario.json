@@ -359,6 +359,18 @@
      "id": "polars",
      "motivo": "DataFrames rápidos para análisis interactivo. (combinación por arquitectura)",
      "orden_instalacion": "Añade `polars` al kernel."
+    },
+    {
+     "id": "apache-iceberg",
+     "motivo": "Combinación recíproca: Apache Iceberg lo enlaza como «Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Apache Iceberg: Instala JupyterLab en el mismo entorno que PyIceberg.",
+     "reciproca_de": "apache-iceberg"
+    },
+    {
+     "id": "delta-lake",
+     "motivo": "Combinación recíproca: Delta Lake lo enlaza como «Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Delta Lake: Instala JupyterLab en el entorno con PySpark o deltalake.",
+     "reciproca_de": "delta-lake"
     }
    ],
    "notas": "Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.",

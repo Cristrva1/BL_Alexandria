@@ -32,6 +32,12 @@ Hay CLI independiente y clientes para Python, R, Java, Node, Rust, Go, WebAssemb
 | [Apache Iceberg](apache-iceberg.md) | DuckDB lee tablas Apache Iceberg con su extensión oficial `iceberg`. | Carga la extensión y consulta una tabla de prueba. |
 | [Delta Lake](delta-lake.md) | DuckDB lee tablas Delta Lake con su extensión oficial `delta`. | Carga la extensión `delta` y apunta al directorio de la tabla. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[awesome-bigdata](awesome-bigdata.md) · [Chart.js](chart-js.md) · [dash](dash.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [hudi](hudi.md) · [JupyterLab](jupyterlab.md) · [Kestra](kestra.md) · [metabase](metabase.md) · [Redash](redash.md) · [streamlit](streamlit.md) · [uPlot](uplot.md) · [Windmill](windmill.md) · [WrenAI](wrenai.md)
+
 **Notas:** Alternativas (elige una): polars.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.0.0 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).

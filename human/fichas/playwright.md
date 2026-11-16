@@ -31,6 +31,12 @@ Se instala con `npm init playwright@latest` (pruebas), `npm i playwright` (libre
 | [Lightpanda](lightpanda.md) | Navegador headless alternativo vía CDP. | Conecta Playwright al CDP de Lightpanda. |
 | [crawlee](crawlee.md) | Crawlee usa Playwright como uno de sus motores de navegador. | Instala crawlee junto con playwright. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-website-cloner-template](ai-website-cloner-template.md) · [crawlee-python](crawlee-python.md) · [diagram-design](diagram-design.md) · [Gemini Computer Use (preview)](computer-use-preview.md) · [GEO-SEO Claude](geo-seo-claude.md) · [llm-scraper](llm-scraper.md) · [mitmproxy](mitmproxy.md) · [Scrapegraph-ai](scrapegraph-ai.md) · [scrapy](scrapy.md) · [screenshot-to-code](screenshot-to-code.md) · [Skyvern](skyvern.md) · [Slidev](slidev.md) · [Trigger.dev](trigger-dev.md) · [UI SDK (Vercel)](ui-sdk.md)
+
 **Notas:** Alternativas (elige una): puppeteer, selenium.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.65.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
