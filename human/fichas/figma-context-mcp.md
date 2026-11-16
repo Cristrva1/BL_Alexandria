@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Framelink MCP for Figma, servidor que da a los agentes de programación acceso a los datos de Figma, de @GLips. Licencia MIT. Es popular (~16k estrellas, v0.13.2).
+
+## ¿Qué hace?
+
+Lee archivos, frames y componentes de Figma mediante su API y simplifica la respuesta para quedarse con la información de diseño y estilo relevante. Así el agente puede implementar diseños en cualquier framework con menos contexto. Está pensado sobre todo para Cursor, aunque funciona con otros clientes MCP.
+
+## ¿Cómo lo hace?
+
+Se añade al cliente con `npx -y figma-developer-mcp --figma-api-key=TU_CLAVE --stdio`. Requiere un token personal de Figma con acceso a los archivos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Implementar diseños de Figma desde el agente. | Registra el servidor con tu token de Figma. |
+| [ui](ui.md) | Traducir el diseño a componentes de shadcn/ui. (combinación por arquitectura) | Pide al agente que use componentes de ui al implementar el frame. |
+| [tailwindcss](tailwindcss.md) | Mapear estilos de Figma a utilidades de Tailwind. (combinación por arquitectura) | Configura los tokens de diseño en Tailwind antes de implementar. |
+
+**Notas:** Sin alternativas declaradas. El token de Figma da acceso a tus archivos: guárdalo como secreto.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.13.2 (2026-06-18) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/GLips/Figma-Context-MCP/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La configuración Windows utiliza un lanzador distinto; el token Figma no es una clave de IA |
 | Coste | El coste depende del proveedor o la ruta. No exige modelo propio; Figma, límites de API y el agente tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Node.js; token Figma; archivo de diseño accesible; cliente MCP |
-
-La configuración Windows utiliza un lanzador distinto; el token Figma no es una clave de IA
-
-## Qué puedes hacer con él
-
-Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.
-
-## Por qué destaca
-
-Usos propuestos: Implementar una tarjeta a partir de un diseño; Consultar tipografía y espaciado de una pantalla.
-
-## Cómo funciona
 
 La configuración Windows utiliza un lanzador distinto; el token Figma no es una clave de IA
 
@@ -86,14 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; token Figma; archivo de diseño accesible; cliente MCP
 - **Etiquetas:** `mcp` `design` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Enlaces
 

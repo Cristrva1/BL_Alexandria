@@ -23453,7 +23453,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown"
+        "claude-code",
+        "markitdown",
+        "docling"
       ],
       "alt": []
     },
@@ -23564,7 +23566,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-mcp-servers"
+        "awesome-mcp-servers",
+        "claude-code",
+        "cline"
       ],
       "alt": []
     },
@@ -23676,8 +23680,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp-use",
-        "servers"
+        "awesome-mcp-clients",
+        "servers",
+        "mcp-use"
       ],
       "alt": []
     },
@@ -23799,7 +23804,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar una escena 3D; Automatizar ajustes de objetos y materiales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-code"
+        "claude-code",
+        "blender",
+        "unity-mcp"
       ],
       "alt": []
     },
@@ -24403,7 +24410,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ghidra"
+        "ghidra",
+        "claude-code",
+        "angr"
       ],
       "alt": []
     },
@@ -24634,8 +24643,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp-use",
-        "servers"
+        "gemini-cli",
+        "servers",
+        "mcp-use"
       ],
       "alt": []
     },
@@ -24747,6 +24757,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "mcp-python-sdk",
         "fastmcp",
         "mcp-inspector"
       ],
@@ -24979,6 +24990,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
         "graphrag",
         "awesome-mcp-servers"
       ],
@@ -25577,7 +25589,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "firecrawl"
+        "firecrawl",
+        "treg"
       ],
       "alt": []
     },
@@ -25698,7 +25711,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "codex"
+        "codex",
+        "context7"
       ],
       "alt": [
         "codegraph",
@@ -25813,6 +25827,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "mcp-inspector",
         "mcp-use",
         "awesome-mcp-servers"
       ],
@@ -25930,7 +25945,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "public-apis",
+        "skillspector"
+      ],
       "alt": []
     },
     {
@@ -26047,6 +26066,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "codex",
         "blender"
       ],
       "alt": []

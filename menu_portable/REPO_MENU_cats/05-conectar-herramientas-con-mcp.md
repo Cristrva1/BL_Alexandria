@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Busca un documento que puedas utilizar legalmente y revisa los metadatos antes de descargar
 **Qué comprobar:** La búsqueda muestra título y origen sin necesitar clave de descarga
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`
+**Combina con:** `claude-code`, `markitdown`, `docling`
 
 ## `awesome-mcp-clients`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp
@@ -61,7 +61,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara dos clientes por transportes MCP, autenticación y modelos admitidos
 **Qué comprobar:** Puedes elegir un cliente cuyo sistema y conexiones encajen con tu caso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-mcp-servers`
+**Combina con:** `awesome-mcp-servers`, `claude-code`, `cline`
 
 ## `awesome-mcp-servers`
 role=directory · exec=hybrid · setup=easy · mcp=True · prov=— · tags=automation,mcp
@@ -91,7 +91,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Filtra por función y sistema operativo y contrasta el README de dos servidores
 **Qué comprobar:** Tienes dos candidatos con transporte, permisos y credenciales identificados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-use`, `servers`
+**Combina con:** `awesome-mcp-clients`, `servers`, `mcp-use`
 
 ## `blender-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,design,python
@@ -122,7 +122,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un cubo y cambia su material en una escena vacía
 **Qué comprobar:** Puedes ver el objeto y el material en Blender
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`
+**Combina con:** `claude-code`, `blender`, `unity-mcp`
 
 ## `chrome-devtools-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript
@@ -275,7 +275,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un programa de prueba y pide enumerar funciones sin modificar el análisis
 **Qué comprobar:** Obtienes nombres y ubicaciones verificables en Ghidra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ghidra`
+**Combina con:** `ghidra`, `claude-code`, `angr`
 
 ## `github-mcp-server`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,code,go
@@ -335,7 +335,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servidor oficial Google y consulta su autenticación antes de desplegar
 **Qué comprobar:** Distingues servicio gestionado, ejemplo y despliegue en Cloud Run
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-use`, `servers`
+**Combina con:** `gemini-cli`, `servers`, `mcp-use`
 
 ## `mcp-for-beginners`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp,learning
@@ -365,7 +365,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la introducción y completa un ejercicio de herramienta con entrada y salida pequeñas
 **Qué comprobar:** Puedes explicar el papel del host, cliente y servidor
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `fastmcp`, `mcp-inspector`
+**Combina con:** `mcp-python-sdk`, `fastmcp`, `mcp-inspector`
 
 ## `mcp-inspector`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=mcp,evaluation,typescript
@@ -425,7 +425,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta el esquema de un grafo ficticio y revisa una consulta Cypher de lectura
 **Qué comprobar:** Obtienes etiquetas y relaciones que coinciden con la base de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `graphrag`, `awesome-mcp-servers`
+**Combina con:** `claude-code`, `graphrag`, `awesome-mcp-servers`
 
 ## `mcp-python-sdk`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
@@ -579,7 +579,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una API y verifica autenticación, HTTPS, límites y licencia en su sitio oficial
 **Qué comprobar:** Sabes qué datos devuelve y si podrás usarlos en tu proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `firecrawl`
+**Combina con:** `n8n`, `firecrawl`, `treg`
 
 ## `serena`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,coding-agent,code,python
@@ -609,7 +609,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide localizar una función por símbolo y enumera sus referencias antes de editar
 **Qué comprobar:** El agente identifica la definición y usos reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`
+**Combina con:** `claude-code`, `codex`, `context7`
 **Alternativas (elige una):** `codegraph`, `gitnexus`
 
 ## `servers`
@@ -640,7 +640,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios
 **Qué comprobar:** Entiendes qué herramientas expone y qué datos puede modificar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-use`, `awesome-mcp-servers`
+**Combina con:** `mcp-inspector`, `mcp-use`, `awesome-mcp-servers`
 
 ## `treg`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,python
@@ -671,6 +671,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Busca una herramienta del catálogo y consulta precio y esquema antes de ejecutarla
 **Qué comprobar:** Sabes qué parámetros requiere y qué saldo o credencial utilizaría
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `public-apis`, `skillspector`
 
 ## `unity-mcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,c
@@ -700,4 +701,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** En un proyecto vacío pide crear un cubo en el origen con un Rigidbody
 **Qué comprobar:** El cubo aparece y puedes inspeccionar el componente en Unity
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `blender`
+**Combina con:** `claude-code`, `codex`, `blender`

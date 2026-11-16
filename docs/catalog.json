@@ -42385,7 +42385,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown"
+        "claude-code",
+        "markitdown",
+        "docling"
       ],
       "alt": [],
       "stack": "Binario oficial para tu sistema; cliente MCP; clave solo para descargas",
@@ -42498,6 +42500,44 @@
       "stars": 1123,
       "license": "",
       "homepage": "https://annas-archive.gl",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Buscar documentos desde un cliente MCP. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el binario como servidor MCP."
+        },
+        {
+          "id": "markitdown",
+          "motivo": "Convertir los PDF o EPUB descargados a Markdown para el agente. (combinación por arquitectura)",
+          "orden_instalacion": "Descarga y convierte con MarkItDown."
+        },
+        {
+          "id": "docling",
+          "motivo": "Extraer estructura de PDF académicos descargados. (combinación por arquitectura)",
+          "orden_instalacion": "Procesa los PDF con Docling."
+        }
+      ],
+      "que_es": "Servidor MCP y CLI para buscar y descargar libros y artículos de Anna's Archive, de @iosifache. El repo no tiene licencia en GitHub. Es pequeño (~1k estrellas, v0.1) y su último cambio es de junio de 2026.",
+      "que_hace": "Busca documentos sin configuración y los descarga si aportas una clave de donante de Anna's Archive (`ANNAS_SECRET_KEY`). Permite elegir el espejo cuando el dominio principal no funciona. Se usa desde un cliente MCP o la terminal.",
+      "como_lo_hace": "Se descarga el binario de Releases y se configura en el cliente MCP (p. ej. Claude Desktop) o se ejecuta como CLI. El README afirma que se orienta a documentos con licencias permisivas, pero Anna's Archive es una biblioteca en la sombra con contenido protegido por derechos de autor.",
+      "descripcion_notas": "Sin alternativas declaradas. Riesgo legal: descargar obras protegidas puede infringir derechos de autor según tu país. Sin licencia declarada.",
+      "descripcion_fuentes": [
+        "https://github.com/iosifache/annas-mcp/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "iosifache/annas-mcp",
+        "archived": false,
+        "pushed_at": "2026-06-26",
+        "primary_language": "Go",
+        "latest_release": "v0.1 (2026-06-26)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.",
       "body": "Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.",
       "install": {
@@ -42508,8 +42548,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
           "id": "markitdown",
           "label": "markitdown"
+        },
+        {
+          "id": "docling",
+          "label": "docling"
         }
       ],
       "areas": [
@@ -42543,7 +42591,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-mcp-servers"
+        "awesome-mcp-servers",
+        "claude-code",
+        "cline"
       ],
       "alt": [],
       "stack": "Navegador; preferencias de sistema y modelo",
@@ -42654,6 +42704,44 @@
       "stars": 6638,
       "license": "MIT",
       "homepage": "https://glama.ai/mcp/clients",
+      "combina_con": [
+        {
+          "id": "awesome-mcp-servers",
+          "motivo": "Lista hermana de servidores del mismo autor.",
+          "orden_instalacion": "Elige el cliente y busca después los servidores."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Cliente MCP de referencia en el catálogo. (combinación por arquitectura)",
+          "orden_instalacion": "Compáralo con los clientes listados."
+        },
+        {
+          "id": "cline",
+          "motivo": "Cliente MCP dentro del editor. (combinación por arquitectura)",
+          "orden_instalacion": "Compáralo con los clientes listados."
+        }
+      ],
+      "que_es": "Lista curada de clientes MCP de @punkpeye. Licencia MIT. Es pequeña (~7k estrellas) y poco activa (último cambio en junio de 2026); el propio README remite a glama.ai/mcp/clients para la lista más actual.",
+      "que_hace": "Recoge aplicaciones de escritorio, editores, agentes y herramientas de línea de comandos que actúan como clientes MCP, con sus plataformas y funciones. Incluye enlaces a la comunidad de MCP.",
+      "como_lo_hace": "Es un README; no requiere instalación.",
+      "descripcion_notas": "Sin alternativas declaradas. Posiblemente desactualizada frente a Glama.",
+      "descripcion_fuentes": [
+        "https://github.com/punkpeye/awesome-mcp-clients/blob/main/README.md",
+        "https://glama.ai/mcp/clients"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "punkpeye/awesome-mcp-clients",
+        "archived": false,
+        "pushed_at": "2026-06-07",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.",
       "body": "Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.",
       "install": {
@@ -42666,6 +42754,14 @@
         {
           "id": "awesome-mcp-servers",
           "label": "awesome-mcp-servers"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "cline",
+          "label": "cline"
         }
       ],
       "areas": [
@@ -42694,8 +42790,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp-use",
-        "servers"
+        "awesome-mcp-clients",
+        "servers",
+        "mcp-use"
       ],
       "alt": [],
       "stack": "Navegador; cliente y tarea elegidos",
@@ -42806,6 +42903,44 @@
       "stars": 97709,
       "license": "MIT",
       "homepage": "https://glama.ai/mcp/servers",
+      "combina_con": [
+        {
+          "id": "awesome-mcp-clients",
+          "motivo": "Lista hermana de clientes MCP del mismo autor.",
+          "orden_instalacion": "Elige primero el cliente y luego los servidores."
+        },
+        {
+          "id": "servers",
+          "motivo": "Servidores de referencia oficiales para comparar. (combinación por arquitectura)",
+          "orden_instalacion": "Empieza por las referencias si buscas ejemplos fiables."
+        },
+        {
+          "id": "mcp-use",
+          "motivo": "Construir el servidor que no encuentres en la lista. (combinación por arquitectura)",
+          "orden_instalacion": "Busca primero y construye solo si no existe."
+        }
+      ],
+      "que_es": "Lista curada de servidores MCP de @punkpeye (vinculada a Glama). Licencia MIT. Es muy popular (~98k estrellas) y su README empieza con un anuncio.",
+      "que_hace": "Clasifica servidores MCP que instalas y ejecutas tú, por categoría (navegadores, bases de datos, desarrollo, finanzas, etc.), con indicadores de lenguaje y ámbito. Remite a listas aparte para servidores remotos y para clientes.",
+      "como_lo_hace": "Es un README; no requiere instalación. La calidad y seguridad de cada servidor varían mucho: revisa el código y los permisos antes de instalarlo.",
+      "descripcion_notas": "Sin alternativas declaradas. Lista sin auditoría de seguridad.",
+      "descripcion_fuentes": [
+        "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+        "https://glama.ai/mcp/servers"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "punkpeye/awesome-mcp-servers",
+        "archived": false,
+        "pushed_at": "2026-11-06",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.",
       "body": "Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.",
       "install": {
@@ -42816,12 +42951,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "mcp-use",
-          "label": "mcp-use"
+          "id": "awesome-mcp-clients",
+          "label": "awesome-mcp-clients"
         },
         {
           "id": "servers",
           "label": "servers"
+        },
+        {
+          "id": "mcp-use",
+          "label": "mcp-use"
         }
       ],
       "areas": [
@@ -42853,7 +42992,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar una escena 3D; Automatizar ajustes de objetos y materiales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-code"
+        "claude-code",
+        "blender",
+        "unity-mcp"
       ],
       "alt": [],
       "stack": "Blender >=3; uv; cliente MCP; escena de prueba",
@@ -42970,6 +43111,45 @@
       "stars": 34451,
       "license": "MIT",
       "homepage": "https://www.mcp-for-blender.com/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Controlar Blender desde un cliente MCP como Claude Code.",
+          "orden_instalacion": "Ejecuta el setup y elige tu cliente."
+        },
+        {
+          "id": "blender",
+          "motivo": "Complemento que se instala dentro de Blender.",
+          "orden_instalacion": "Instala Blender y activa el complemento."
+        },
+        {
+          "id": "unity-mcp",
+          "motivo": "Llevar a Unity los modelos creados en Blender, ambos controlados por agentes. (combinación por arquitectura)",
+          "orden_instalacion": "Exporta desde Blender e importa en Unity con MCP for Unity."
+        }
+      ],
+      "que_es": "MCP for Blender (antes blender-mcp), integración de terceros que conecta Blender con cualquier LLM, creada por @ahujasid. Licencia MIT. Es muy popular (~35k estrellas) y no está hecha por la Blender Foundation; el paquete PyPI pasó a llamarse `mcp-for-blender`.",
+      "que_hace": "Permite que un asistente cree y modifique escenas, objetos, materiales e iluminación, inspeccione la escena y ejecute código Python de Blender directamente. Integra recursos de Poly Haven, Sketchfab y Poly Pizza, y modelos 3D generados con Meshy, Tripo, Hyper3D Rodin o Hunyuan3D. Incluye controles de telemetría (`disable_telemetry`).",
+      "como_lo_hace": "Un comando instala el complemento de Blender y configura las apps de IA; también hay instalación manual con `uv` (`uvx mcp-for-blender`; `uvx blender-mcp` sigue funcionando). Requiere Blender y Python con uv. La ejecución de código arbitrario en Blender exige guardar el trabajo antes de usarlo.",
+      "descripcion_notas": "Sin alternativas declaradas. Revisa los ajustes de telemetría y el uso de servicios 3D de terceros.",
+      "descripcion_fuentes": [
+        "https://github.com/ahujasid/mcp-for-blender/blob/main/README.md",
+        "https://pypi.org/project/mcp-for-blender/"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "ahujasid/mcp-for-blender",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP.",
       "body": "Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP.",
       "install": {
@@ -42982,6 +43162,14 @@
         {
           "id": "claude-code",
           "label": "claude-code"
+        },
+        {
+          "id": "blender",
+          "label": "blender"
+        },
+        {
+          "id": "unity-mcp",
+          "label": "unity-mcp"
         }
       ],
       "areas": [
@@ -43792,6 +43980,45 @@
       "stars": 16209,
       "license": "MIT",
       "homepage": "https://www.framelink.ai/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Implementar diseños de Figma desde el agente.",
+          "orden_instalacion": "Registra el servidor con tu token de Figma."
+        },
+        {
+          "id": "ui",
+          "motivo": "Traducir el diseño a componentes de shadcn/ui. (combinación por arquitectura)",
+          "orden_instalacion": "Pide al agente que use componentes de ui al implementar el frame."
+        },
+        {
+          "id": "tailwindcss",
+          "motivo": "Mapear estilos de Figma a utilidades de Tailwind. (combinación por arquitectura)",
+          "orden_instalacion": "Configura los tokens de diseño en Tailwind antes de implementar."
+        }
+      ],
+      "que_es": "Framelink MCP for Figma, servidor que da a los agentes de programación acceso a los datos de Figma, de @GLips. Licencia MIT. Es popular (~16k estrellas, v0.13.2).",
+      "que_hace": "Lee archivos, frames y componentes de Figma mediante su API y simplifica la respuesta para quedarse con la información de diseño y estilo relevante. Así el agente puede implementar diseños en cualquier framework con menos contexto. Está pensado sobre todo para Cursor, aunque funciona con otros clientes MCP.",
+      "como_lo_hace": "Se añade al cliente con `npx -y figma-developer-mcp --figma-api-key=TU_CLAVE --stdio`. Requiere un token personal de Figma con acceso a los archivos.",
+      "descripcion_notas": "Sin alternativas declaradas. El token de Figma da acceso a tus archivos: guárdalo como secreto.",
+      "descripcion_fuentes": [
+        "https://github.com/GLips/Figma-Context-MCP/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "GLips/Figma-Context-MCP",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v0.13.2 (2026-06-18)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.",
       "body": "Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.",
       "install": {
@@ -43847,7 +44074,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ghidra"
+        "ghidra",
+        "claude-code",
+        "angr"
       ],
       "alt": [],
       "stack": "Ghidra y su plugin; uv; binario propio de prueba",
@@ -43961,6 +44190,46 @@
       "stars": 11933,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "ghidra",
+          "motivo": "Requisito: es un plugin de Ghidra.",
+          "orden_instalacion": "Instala Ghidra y luego la extensión de la release correspondiente."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Cliente MCP para dirigir el análisis.",
+          "orden_instalacion": "Registra el puente MCP en el agente."
+        },
+        {
+          "id": "angr",
+          "motivo": "Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura)",
+          "orden_instalacion": "Usa angr en scripts aparte sobre el mismo binario."
+        }
+      ],
+      "que_es": "GhidraMCP, servidor MCP y plugin que permite a los LLM hacer ingeniería inversa autónoma con Ghidra, de @LaurieWired. Licencia Apache-2.0. Es popular (~12k estrellas, versión 2.0).",
+      "que_hace": "Expone funciones del núcleo de Ghidra a clientes MCP: decompilar, listar funciones, clases e importaciones, renombrar métodos y datos, y navegar el binario. Así el asistente puede analizar un programa y anotar el proyecto.",
+      "como_lo_hace": "Se descarga la release (plugin de Ghidra + cliente MCP en Python), se instala el ZIP en Ghidra desde `File → Install Extensions` y se activa el plugin; el puente se ejecuta con uv o `pip install`. Hay que usar la release que corresponde a tu versión de Ghidra.",
+      "descripcion_notas": "Sin alternativas declaradas. Analiza solo software que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/LaurieWired/GhidraMCP/blob/main/README.md",
+        "https://github.com/LaurieWired/GhidraMCP/releases"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "LaurieWired/GhidraMCP",
+        "archived": false,
+        "pushed_at": "2026-10-10",
+        "license": "Apache-2.0",
+        "primary_language": "Java",
+        "latest_release": "2.0 (2026-10-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.",
       "body": "Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.",
       "install": {
@@ -43973,6 +44242,14 @@
         {
           "id": "ghidra",
           "label": "ghidra"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "angr",
+          "label": "angr"
         }
       ],
       "areas": [
@@ -44221,8 +44498,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp-use",
-        "servers"
+        "gemini-cli",
+        "servers",
+        "mcp-use"
       ],
       "alt": [],
       "stack": "Navegador; servicio Google objetivo",
@@ -44332,6 +44610,44 @@
       "stars": 4709,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "gemini-cli",
+          "motivo": "Usar los servidores de Google desde el agente de Google. (combinación por arquitectura)",
+          "orden_instalacion": "Añade el endpoint del servidor a la configuración MCP de Gemini CLI."
+        },
+        {
+          "id": "servers",
+          "motivo": "Comparar con los servidores de referencia del protocolo. (combinación por arquitectura)",
+          "orden_instalacion": "Usa las referencias para aprender y los de Google para tus datos en GCP."
+        },
+        {
+          "id": "mcp-use",
+          "motivo": "Construir y desplegar un servidor propio siguiendo las guías de Cloud Run. (combinación por arquitectura)",
+          "orden_instalacion": "Construye con mcp-use y despliega según la guía."
+        }
+      ],
+      "que_es": "Repositorio de Google con la lista de sus servidores MCP oficiales, guías para desplegar servidores en Google Cloud y ejemplos. Licencia Apache-2.0. Es pequeño (~5k estrellas) y su último cambio es de agosto de 2026.",
+      "que_hace": "Enumera servidores remotos gestionados por Google (AlloyDB, BigQuery, Bigtable, Cloud Resource Manager y otros) y servidores de código abierto para sus productos. Explica cómo desplegar servidores propios en Cloud Run y cómo empezar con ejemplos.",
+      "como_lo_hace": "Es documentación con enlaces; los servidores remotos se habilitan por endpoint en Google Cloud y requieren un proyecto con facturación y permisos IAM.",
+      "descripcion_notas": "Sin alternativas declaradas. Cuidado con los permisos IAM que concedes a agentes.",
+      "descripcion_fuentes": [
+        "https://github.com/google/mcp/blob/main/README.md",
+        "https://docs.cloud.google.com/mcp/overview"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google/mcp",
+        "archived": false,
+        "pushed_at": "2026-08-17",
+        "license": "Apache-2.0",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Directorio de servidores MCP oficiales de Google, ejemplos y orientación para desplegarlos en Google Cloud.",
       "body": "Reúne servidores MCP de servicios Google y ejemplos de despliegue. Sirve para elegir una conexión y revisar sus credenciales y costes. No es el repositorio de la especificación general de MCP.",
       "install": {
@@ -44342,12 +44658,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "mcp-use",
-          "label": "mcp-use"
+          "id": "gemini-cli",
+          "label": "gemini-cli"
         },
         {
           "id": "servers",
           "label": "servers"
+        },
+        {
+          "id": "mcp-use",
+          "label": "mcp-use"
         }
       ],
       "areas": [
@@ -44376,6 +44696,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "mcp-python-sdk",
         "fastmcp",
         "mcp-inspector"
       ],
@@ -44488,6 +44809,44 @@
       "stars": 17651,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "mcp-python-sdk",
+          "motivo": "SDK oficial usado en los ejemplos de Python.",
+          "orden_instalacion": "Instala `mcp[cli]` para seguir las lecciones de Python."
+        },
+        {
+          "id": "fastmcp",
+          "motivo": "Framework popular para practicar servidores Python tras el curso. (combinación por arquitectura)",
+          "orden_instalacion": "Rehaz un ejercicio con FastMCP para comparar."
+        },
+        {
+          "id": "mcp-inspector",
+          "motivo": "Probar los servidores de los ejercicios. (combinación por arquitectura)",
+          "orden_instalacion": "Lanza el Inspector contra cada servidor que construyas."
+        }
+      ],
+      "que_es": "Curso de Microsoft para aprender Model Context Protocol con ejemplos prácticos en C#, Java, JavaScript, Rust, Python y TypeScript. Licencia MIT. Es popular (~18k estrellas, sin releases) y tiene más de 50 traducciones automáticas.",
+      "que_hace": "Recorre desde los conceptos básicos de MCP hasta la construcción de servidores y clientes, seguridad, despliegue y casos reales, con lecciones y código por lenguaje. Mantiene las traducciones con Co-op Translator.",
+      "como_lo_hace": "Se clona el repo (el README recomienda un clon parcial sin traducciones porque pesan mucho) y se siguen las lecciones. Cada ejemplo usa el SDK oficial del lenguaje correspondiente.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/microsoft/mcp-for-beginners/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "microsoft/mcp-for-beginners",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "Jupyter Notebook",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python.",
       "body": "Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python.",
       "install": {
@@ -44497,6 +44856,10 @@
       },
       "alt_refs": [],
       "combine_refs": [
+        {
+          "id": "mcp-python-sdk",
+          "label": "mcp-python-sdk"
+        },
         {
           "id": "fastmcp",
           "label": "fastmcp"
@@ -45154,6 +45517,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
         "graphrag",
         "awesome-mcp-servers"
       ],
@@ -45269,6 +45633,46 @@
       "stars": 989,
       "license": "MIT",
       "homepage": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Consultar y modelar grafos Neo4j desde un cliente MCP. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el servidor Cypher con un usuario de solo lectura primero."
+        },
+        {
+          "id": "graphrag",
+          "motivo": "Explorar en Neo4j grafos de conocimiento generados con GraphRAG. (combinación por arquitectura)",
+          "orden_instalacion": "Carga el grafo en Neo4j y consúltalo con el servidor Cypher."
+        },
+        {
+          "id": "awesome-mcp-servers",
+          "motivo": "Comparar con otros servidores de bases de datos. (combinación por arquitectura)",
+          "orden_instalacion": "Revisa la sección de bases de datos de la lista."
+        }
+      ],
+      "que_es": "Servidores MCP de Neo4j Labs, mantenidos por el equipo Field GenAI de Neo4j. Licencia MIT. Son experimentales (~1k estrellas, mcp-neo4j-cypher-v0.6.0) y el README remite al servidor MCP oficial de producto (neo4j/mcp).",
+      "que_hace": "Incluye cuatro servidores: `mcp-neo4j-cypher` (lenguaje natural a consultas Cypher sobre un esquema), `mcp-neo4j-memory` (memoria como grafo de conocimiento), `mcp-neo4j-cloud-aura-api` (gestión de instancias Aura) y `mcp-neo4j-data-modeling` (modelado de datos interactivo). Funcionan con Claude Desktop, VS Code, Cursor, Windsurf, Gemini CLI y otros clientes.",
+      "como_lo_hace": "Cada servidor se instala por separado (normalmente con `uvx`) y se configura con la URL y las credenciales de Neo4j. Como proyecto de Labs, se actualiza a menudo y sin garantías de soporte.",
+      "descripcion_notas": "Sin alternativas declaradas. Para producción, valora el servidor oficial neo4j/mcp (no catalogado). El servidor Cypher puede escribir: limita permisos.",
+      "descripcion_fuentes": [
+        "https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md",
+        "https://github.com/neo4j/mcp"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "neo4j-contrib/mcp-neo4j",
+        "archived": false,
+        "pushed_at": "2026-09-09",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "mcp-neo4j-cypher-v0.6.0 (2026-04-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP.",
       "body": "Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto.",
       "install": {
@@ -45278,6 +45682,10 @@
       },
       "alt_refs": [],
       "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
         {
           "id": "graphrag",
           "label": "graphrag"
@@ -45763,7 +46171,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "firecrawl"
+        "firecrawl",
+        "treg"
       ],
       "alt": [],
       "stack": "Navegador; necesidad concreta de datos",
@@ -45874,6 +46283,44 @@
       "stars": 499048,
       "license": "MIT",
       "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "Conectar APIs de la lista en flujos con el nodo HTTP Request. (combinación por arquitectura)",
+          "orden_instalacion": "Elige la API, revisa su autenticación y crea el flujo."
+        },
+        {
+          "id": "firecrawl",
+          "motivo": "Cubrir con scraping los datos que no ofrece ninguna API. (combinación por arquitectura)",
+          "orden_instalacion": "Usa primero la API pública y recurre a Firecrawl solo si no existe."
+        },
+        {
+          "id": "treg",
+          "motivo": "Catálogo de herramientas de pago por llamada como alternativa a APIs gratuitas. (combinación por arquitectura)",
+          "orden_instalacion": "Compara coste y condiciones antes de elegir."
+        }
+      ],
+      "que_es": "Lista colectiva de APIs gratuitas para software y desarrollo web. Licencia MIT. Es uno de los repos más populares de GitHub (~499k estrellas) y está patrocinado por APILayer, cuyo anuncio encabeza el README.",
+      "que_hace": "Organiza miles de APIs públicas por categoría con indicación de autenticación, HTTPS y CORS. Ahora incluye también una sección de servidores MCP con sus transportes y enlaces a directorios. Sirve para encontrar fuentes de datos para prototipos y automatizaciones.",
+      "como_lo_hace": "Es un README; no requiere instalación. Comprueba la vigencia de cada API, porque muchas cambian de condiciones o desaparecen.",
+      "descripcion_notas": "Sin alternativas declaradas. Parte del contenido destacado es publicidad del patrocinador.",
+      "descripcion_fuentes": [
+        "https://github.com/public-apis/public-apis/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "public-apis/public-apis",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.",
       "body": "Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.",
       "install": {
@@ -45890,6 +46337,10 @@
         {
           "id": "firecrawl",
           "label": "firecrawl"
+        },
+        {
+          "id": "treg",
+          "label": "treg"
         }
       ],
       "areas": [
@@ -45923,7 +46374,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "codex"
+        "codex",
+        "context7"
       ],
       "alt": [
         "codegraph",
@@ -46040,6 +46492,46 @@
       "stars": 31381,
       "license": "NOASSERTION",
       "homepage": "https://oraios.github.io/serena",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Cliente MCP compatible, con instrucciones en la documentación.",
+          "orden_instalacion": "Instala Serena con uv y añádelo con su comando de arranque."
+        },
+        {
+          "id": "codex",
+          "motivo": "Cliente MCP compatible.",
+          "orden_instalacion": "Configura el comando de arranque de Serena en Codex."
+        },
+        {
+          "id": "context7",
+          "motivo": "Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura)",
+          "orden_instalacion": "Instala ambos servidores en el mismo agente."
+        }
+      ],
+      "que_es": "Serena, un kit de herramientas de código semántico para agentes («el IDE de tu agente»), de Oraios AI. La aplicación es GPL-3.0-or-later y el componente SolidLSP es MIT (GitHub muestra NOASSERTION). Es muy activa (~31k estrellas, v2.1.0).",
+      "que_hace": "Da al agente recuperación, edición, refactorización y depuración a nivel de símbolo, apoyándose en la estructura del código en lugar de leer archivos enteros. Usa servidores de lenguaje (LSP) de forma gratuita o, como alternativa, un plugin de JetBrains de pago. Se integra con cualquier cliente mediante MCP.",
+      "como_lo_hace": "Se instala con uv y se conecta al cliente con un comando de arranque o en modo HTTP. El README pide no instalarlo desde marketplaces de MCP o plugins, porque traen comandos desactualizados. Algunos lenguajes requieren instalar su servidor de lenguaje.",
+      "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus.",
+      "descripcion_fuentes": [
+        "https://github.com/oraios/serena/blob/main/README.md",
+        "https://oraios.github.io/serena/"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "oraios/serena",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "latest_release": "v2.1.0 (2026-10-19)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.",
       "body": "Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.",
       "install": {
@@ -46065,6 +46557,10 @@
         {
           "id": "codex",
           "label": "codex"
+        },
+        {
+          "id": "context7",
+          "label": "context7"
         }
       ],
       "areas": [
@@ -46099,6 +46595,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "mcp-inspector",
         "mcp-use",
         "awesome-mcp-servers"
       ],
@@ -46211,6 +46708,46 @@
       "stars": 91999,
       "license": "NOASSERTION",
       "homepage": "https://modelcontextprotocol.io",
+      "combina_con": [
+        {
+          "id": "mcp-inspector",
+          "motivo": "Probar los servidores de referencia, sobre todo Everything, que existe para ejercitar clientes. (combinación por arquitectura)",
+          "orden_instalacion": "Lanza el Inspector contra el servidor elegido."
+        },
+        {
+          "id": "mcp-use",
+          "motivo": "Tomar los servidores como ejemplo al construir uno propio. (combinación por arquitectura)",
+          "orden_instalacion": "Estudia el servidor parecido y construye el tuyo con mcp-use."
+        },
+        {
+          "id": "awesome-mcp-servers",
+          "motivo": "Encontrar servidores de la comunidad más allá de las referencias. (combinación por arquitectura)",
+          "orden_instalacion": "Consulta también el MCP Registry oficial."
+        }
+      ],
+      "que_es": "Repositorio oficial de servidores de referencia del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es muy popular (~92k estrellas, v2.4.0).",
+      "que_hace": "Contiene implementaciones de referencia que muestran funciones de MCP y el uso de los SDK: Everything (servidor de pruebas), Fetch, Filesystem, Git, Memory (grafo de conocimiento), Sequential Thinking y Time. Los servidores antiguos se movieron a servers-archived y la lista de servidores de terceros ahora vive en el MCP Registry. El README advierte que son ejemplos educativos, no soluciones listas para producción.",
+      "como_lo_hace": "Cada servidor se ejecuta con `npx` (TypeScript) o `uvx` (Python) desde la configuración del cliente MCP, o con Docker. Están escritos con los SDK oficiales. Revisa los permisos (por ejemplo, las rutas permitidas de Filesystem) antes de usarlos.",
+      "descripcion_notas": "Sin alternativas declaradas. No son para producción, según el propio README.",
+      "descripcion_fuentes": [
+        "https://github.com/modelcontextprotocol/servers/blob/main/README.md",
+        "https://registry.modelcontextprotocol.io/"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "modelcontextprotocol/servers",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "TypeScript",
+        "latest_release": "v2.4.0 (2026-11-11)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.",
       "body": "Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.",
       "install": {
@@ -46220,6 +46757,10 @@
       },
       "alt_refs": [],
       "combine_refs": [
+        {
+          "id": "mcp-inspector",
+          "label": "mcp-inspector"
+        },
         {
           "id": "mcp-use",
           "label": "mcp-use"
@@ -46255,7 +46796,11 @@
       "desc": "Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "public-apis",
+        "skillspector"
+      ],
       "alt": [],
       "stack": "Cliente MCP; cuenta o token para funciones que lo requieran",
       "repo_url": "https://github.com/superdesigndev/treg",
@@ -46368,6 +46913,45 @@
       "stars": 8030,
       "license": "NOASSERTION",
       "homepage": "https://treg.to",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plugin oficial de Claude Code.",
+          "orden_instalacion": "Instala el plugin y configura el token."
+        },
+        {
+          "id": "public-apis",
+          "motivo": "Comprobar si existe una API gratuita antes de pagar por llamada. (combinación por arquitectura)",
+          "orden_instalacion": "Busca en public-apis y usa Treg solo para lo que no sea gratuito."
+        },
+        {
+          "id": "skillspector",
+          "motivo": "Revisar las skills que el equipo registra. (combinación por arquitectura)",
+          "orden_instalacion": "Escanea cada `SKILL.md` antes de registrarla."
+        }
+      ],
+      "que_es": "Treg, un registro de herramientas para agentes que se presenta como «OpenRouter para herramientas», de Superdesign. Licencia Apache 2.0 con términos adicionales que prohíben ofrecerlo como servicio de registro competidor (no es una licencia OSI estándar; GitHub muestra NOASSERTION). Es reciente (creado en julio de 2026, ~8k estrellas).",
+      "que_hace": "Con una URL y un token, el agente busca y llama miles de endpoints de muchos proveedores (SEO, redes sociales, enriquecimiento de personas y empresas, anuncios, scraping, generación de imagen y vídeo) pagando por llamada, sin registrarse en cada proveedor. Los equipos también registran sus propias claves, conexiones OAuth, CLIs y skills, y las credenciales nunca salen del servidor. Hay llamadas anónimas gratuitas y $1 de crédito inicial.",
+      "como_lo_hace": "Se instala el CLI con `curl -fsSL https://treg.to/install.sh | sh` o como plugin de Claude Code (`/plugin install treg@treg`); también se puede autoalojar el registro. Las llamadas de pago usan el saldo prepago del equipo.",
+      "descripcion_notas": "Sin alternativas declaradas. Revisa el script de instalación antes de ejecutarlo. Las herramientas de enriquecimiento de personas implican datos personales.",
+      "descripcion_fuentes": [
+        "https://github.com/superdesigndev/treg/blob/main/README.md",
+        "https://treg.to"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "superdesigndev/treg",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.",
       "body": "Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.",
       "install": {
@@ -46376,7 +46960,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "public-apis",
+          "label": "public-apis"
+        },
+        {
+          "id": "skillspector",
+          "label": "skillspector"
+        }
+      ],
       "areas": [
         "agentes",
         "configurar-claude-code",
@@ -46410,6 +47007,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "codex",
         "blender"
       ],
       "alt": [],
@@ -46526,6 +47125,46 @@
       "stars": 15975,
       "license": "MIT",
       "homepage": "https://coplaydev.github.io/unity-mcp/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Cliente MCP soportado según el README.",
+          "orden_instalacion": "Instala el paquete en Unity y configura Claude Code desde su ventana."
+        },
+        {
+          "id": "codex",
+          "motivo": "Cliente MCP soportado según el README.",
+          "orden_instalacion": "Configura Codex desde la ventana de MCP for Unity."
+        },
+        {
+          "id": "blender",
+          "motivo": "Crear modelos en Blender y llevarlos a Unity. (combinación por arquitectura)",
+          "orden_instalacion": "Exporta FBX/GLB desde Blender e impórtalos en Unity."
+        }
+      ],
+      "que_es": "MCP for Unity, puente entre asistentes de IA y el editor de Unity, de Coplay (patrocinado y mantenido por Aura). Licencia MIT. Es activo (~16k estrellas, v10.3.0).",
+      "que_hace": "Permite que Claude, Codex, VS Code, modelos locales y otros clientes creen y modifiquen escenas, GameObjects, scripts, assets y configuraciones del editor de Unity. Expone herramientas de gestión de escena, scripts y consola para iterar con el agente.",
+      "como_lo_hace": "Se instala en Unity desde el Package Manager con la URL de git y requiere Python 3.10+ con uv. Funciona con Unity 2021.3 LTS hasta 6.x y con cualquier cliente MCP; el paquete configura los clientes habituales.",
+      "descripcion_notas": "Sin alternativas declaradas. Usa control de versiones: el agente puede modificar escenas y scripts.",
+      "descripcion_fuentes": [
+        "https://github.com/CoplayDev/unity-mcp/blob/beta/README.md",
+        "https://coplaydev.github.io/unity-mcp/"
+      ],
+      "descripcion_revision": {
+        "batch": "24-mcp-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "CoplayDev/unity-mcp",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "C#",
+        "latest_release": "v10.3.0 (2026-10-04)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.",
       "body": "Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.",
       "install": {
@@ -46535,6 +47174,14 @@
       },
       "alt_refs": [],
       "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
         {
           "id": "blender",
           "label": "blender"

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Repositorio de Google con la lista de sus servidores MCP oficiales, guías para desplegar servidores en Google Cloud y ejemplos. Licencia Apache-2.0. Es pequeño (~5k estrellas) y su último cambio es de agosto de 2026.
+
+## ¿Qué hace?
+
+Enumera servidores remotos gestionados por Google (AlloyDB, BigQuery, Bigtable, Cloud Resource Manager y otros) y servidores de código abierto para sus productos. Explica cómo desplegar servidores propios en Cloud Run y cómo empezar con ejemplos.
+
+## ¿Cómo lo hace?
+
+Es documentación con enlaces; los servidores remotos se habilitan por endpoint en Google Cloud y requieren un proyecto con facturación y permisos IAM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Gemini CLI](gemini-cli.md) | Usar los servidores de Google desde el agente de Google. (combinación por arquitectura) | Añade el endpoint del servidor a la configuración MCP de Gemini CLI. |
+| [servers](servers.md) | Comparar con los servidores de referencia del protocolo. (combinación por arquitectura) | Usa las referencias para aprender y los de Google para tus datos en GCP. |
+| [mcp-use](mcp-use.md) | Construir y desplegar un servidor propio siguiendo las guías de Cloud Run. (combinación por arquitectura) | Construye con mcp-use y despliega según la guía. |
+
+**Notas:** Sin alternativas declaradas. Cuidado con los permisos IAM que concedes a agentes.
+
+Estado en GitHub: activo · último push 2026-08-17 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google/mcp/blob/main/README.md) · [2](https://docs.cloud.google.com/mcp/overview)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol |
 | Coste | Sin pago a un modelo en la ruta básica. Leer es gratuito; servidores, APIs Google y recursos de nube pueden generar gasto |
 | Equipo | Preparación según la ruta elegida. Navegador; servicio Google objetivo |
-
-Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol
-
-## Qué puedes hacer con él
-
-Reúne servidores MCP de servicios Google y ejemplos de despliegue. Sirve para elegir una conexión y revisar sus credenciales y costes. No es el repositorio de la especificación general de MCP.
-
-## Por qué destaca
-
-Usos propuestos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run.
-
-## Cómo funciona
 
 Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; servicio Google objetivo
 - **Etiquetas:** `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [mcp-use](mcp-use.md) | 11k | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
-| [servers](servers.md) | 92k | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. |
 
 ## Enlaces
 

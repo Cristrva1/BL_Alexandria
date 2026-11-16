@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Serena, un kit de herramientas de código semántico para agentes («el IDE de tu agente»), de Oraios AI. La aplicación es GPL-3.0-or-later y el componente SolidLSP es MIT (GitHub muestra NOASSERTION). Es muy activa (~31k estrellas, v2.1.0).
+
+## ¿Qué hace?
+
+Da al agente recuperación, edición, refactorización y depuración a nivel de símbolo, apoyándose en la estructura del código en lugar de leer archivos enteros. Usa servidores de lenguaje (LSP) de forma gratuita o, como alternativa, un plugin de JetBrains de pago. Se integra con cualquier cliente mediante MCP.
+
+## ¿Cómo lo hace?
+
+Se instala con uv y se conecta al cliente con un comando de arranque o en modo HTTP. El README pide no instalarlo desde marketplaces de MCP o plugins, porque traen comandos desactualizados. Algunos lenguajes requieren instalar su servidor de lenguaje.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Cliente MCP compatible, con instrucciones en la documentación. | Instala Serena con uv y añádelo con su comando de arranque. |
+| [Codex CLI](codex.md) | Cliente MCP compatible. | Configura el comando de arranque de Serena en Codex. |
+| [Context7](context7.md) | Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura) | Instala ambos servidores en el mismo agente. |
+
+**Notas:** Alternativas (elige una): codegraph, gitnexus.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.1.0 (2026-10-19) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/oraios/serena/blob/main/README.md) · [2](https://oraios.github.io/serena/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado |
 | Coste | El coste depende del proveedor o la ruta. El backend LSP usa recursos locales; el plugin JetBrains tiene pago separado; el modelo del agente conserva sus límites |
 | Equipo | Preparación según la ruta elegida. uv; servidor de lenguaje del proyecto; repositorio de prueba |
-
-El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado
-
-## Qué puedes hacer con él
-
-Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.
-
-## Por qué destaca
-
-Usos propuestos: Navegar una base de código grande; Refactorizar un símbolo con contexto semántico.
-
-## Cómo funciona
 
 El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv; servidor de lenguaje del proyecto; repositorio de prueba
 - **Etiquetas:** `mcp` `coding-agent` `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

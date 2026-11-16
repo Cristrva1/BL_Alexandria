@@ -1264,7 +1264,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/modelcontextprotocol/servers/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [mcp-use](human/fichas/mcp-use.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
+**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md) · [mcp-use](human/fichas/mcp-use.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
 **Más:** [ficha completa](human/fichas/servers.md) · [GitHub](https://github.com/modelcontextprotocol/servers)
 
 #### 🔌 Chrome DevTools MCP
@@ -1292,7 +1292,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Comando documentado:** `winget install --id=astral-sh.uv -e
 uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una escena 3D; Automatizar ajustes de objetos y materiales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [blender](human/fichas/blender.md) · [unity-mcp](human/fichas/unity-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/blender-mcp.md) · [GitHub](https://github.com/ahujasid/mcp-for-blender)
 
 #### 🔌 Serena
@@ -1301,7 +1301,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv tool install -p 3.13 serena-agent` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Navegar una base de código grande; Refactorizar un símbolo con contexto semántico — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/serena.md) · [GitHub](https://github.com/oraios/serena)
 
 #### 🔌 Figma Context MCP
@@ -1319,7 +1319,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/CoplayDev/unity-mcp/blob/beta/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [blender](human/fichas/blender.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [blender](human/fichas/blender.md)<br>
 **Más:** [ficha completa](human/fichas/unity-mcp.md) · [GitHub](https://github.com/CoplayDev/unity-mcp)
 
 #### 🧩 GhidraMCP
@@ -1328,7 +1328,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `claude mcp add ghidra -- uvx --from git+https://github.com/LaurieWired/GhidraMCP ghidra-mcp --ghidra-server http://127.0.0.1:8080/` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ghidra](human/fichas/ghidra.md)<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [Claude Code](human/fichas/claude-code.md) · [angr](human/fichas/angr.md)<br>
 **Más:** [ficha completa](human/fichas/ghidramcp.md) · [GitHub](https://github.com/LaurieWired/GhidraMCP)
 
 #### 🧩 treg
@@ -1338,6 +1338,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `/plugin marketplace add superdesigndev/treg
 /plugin install treg@treg` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [public-apis](human/fichas/public-apis.md) · [SkillSpector](human/fichas/skillspector.md)<br>
 **Más:** [ficha completa](human/fichas/treg.md) · [GitHub](https://github.com/superdesigndev/treg)
 
 #### 🔌 annas-mcp
@@ -1346,7 +1347,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/iosifache/annas-mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [markitdown](human/fichas/markitdown.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [markitdown](human/fichas/markitdown.md) · [Docling](human/fichas/docling.md)<br>
 **Más:** [ficha completa](human/fichas/annas-mcp.md) · [GitHub](https://github.com/iosifache/annas-mcp)
 
 #### 🕸️ mcp-neo4j
@@ -1355,7 +1356,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [graphrag](human/fichas/graphrag.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [graphrag](human/fichas/graphrag.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-neo4j.md) · [GitHub](https://github.com/neo4j-contrib/mcp-neo4j)
 
 ### Directorios, clientes y aprendizaje
@@ -1366,7 +1367,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/microsoft/mcp-for-beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FastMCP](human/fichas/fastmcp.md) · [MCP Inspector](human/fichas/mcp-inspector.md)<br>
+**Combina con:** [MCP Python SDK](human/fichas/mcp-python-sdk.md) · [FastMCP](human/fichas/fastmcp.md) · [MCP Inspector](human/fichas/mcp-inspector.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-for-beginners.md) · [GitHub](https://github.com/microsoft/mcp-for-beginners)
 
 #### 🌍 public-apis
@@ -1375,7 +1376,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/public-apis/public-apis/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar datos de clima para una demo; Comparar APIs públicas de geocodificación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [firecrawl](human/fichas/firecrawl.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [firecrawl](human/fichas/firecrawl.md) · [treg](human/fichas/treg.md)<br>
 **Más:** [ficha completa](human/fichas/public-apis.md) · [GitHub](https://github.com/public-apis/public-apis)
 
 #### 🗂️ awesome-mcp-servers
@@ -1384,7 +1385,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [mcp-use](human/fichas/mcp-use.md) · [servers](human/fichas/servers.md)<br>
+**Combina con:** [Awesome MCP Clients](human/fichas/awesome-mcp-clients.md) · [servers](human/fichas/servers.md) · [mcp-use](human/fichas/mcp-use.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-mcp-servers.md) · [GitHub](https://github.com/punkpeye/awesome-mcp-servers)
 
 #### 📚 Awesome MCP Clients
@@ -1393,7 +1394,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/punkpeye/awesome-mcp-clients/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
+**Combina con:** [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md) · [Claude Code](human/fichas/claude-code.md) · [Cline](human/fichas/cline.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-mcp-clients.md) · [GitHub](https://github.com/punkpeye/awesome-mcp-clients)
 
 #### 🧩 Google MCP
@@ -1402,7 +1403,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/google/mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [mcp-use](human/fichas/mcp-use.md) · [servers](human/fichas/servers.md)<br>
+**Combina con:** [Gemini CLI](human/fichas/gemini-cli.md) · [servers](human/fichas/servers.md) · [mcp-use](human/fichas/mcp-use.md)<br>
 **Más:** [ficha completa](human/fichas/mcp.md) · [GitHub](https://github.com/google/mcp)
 
 ---

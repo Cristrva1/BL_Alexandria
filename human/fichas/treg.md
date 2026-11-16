@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Treg, un registro de herramientas para agentes que se presenta como «OpenRouter para herramientas», de Superdesign. Licencia Apache 2.0 con términos adicionales que prohíben ofrecerlo como servicio de registro competidor (no es una licencia OSI estándar; GitHub muestra NOASSERTION). Es reciente (creado en julio de 2026, ~8k estrellas).
+
+## ¿Qué hace?
+
+Con una URL y un token, el agente busca y llama miles de endpoints de muchos proveedores (SEO, redes sociales, enriquecimiento de personas y empresas, anuncios, scraping, generación de imagen y vídeo) pagando por llamada, sin registrarse en cada proveedor. Los equipos también registran sus propias claves, conexiones OAuth, CLIs y skills, y las credenciales nunca salen del servidor. Hay llamadas anónimas gratuitas y $1 de crédito inicial.
+
+## ¿Cómo lo hace?
+
+Se instala el CLI con `curl -fsSL https://treg.to/install.sh | sh` o como plugin de Claude Code (`/plugin install treg@treg`); también se puede autoalojar el registro. Las llamadas de pago usan el saldo prepago del equipo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial de Claude Code. | Instala el plugin y configura el token. |
+| [public-apis](public-apis.md) | Comprobar si existe una API gratuita antes de pagar por llamada. (combinación por arquitectura) | Busca en public-apis y usa Treg solo para lo que no sea gratuito. |
+| [SkillSpector](skillspector.md) | Revisar las skills que el equipo registra. (combinación por arquitectura) | Escanea cada `SKILL.md` antes de registrarla. |
+
+**Notas:** Sin alternativas declaradas. Revisa el script de instalación antes de ejecutarlo. Las herramientas de enriquecimiento de personas implican datos personales.
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/superdesigndev/treg/blob/main/README.md) · [2](https://treg.to)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo |
 | Coste | El coste depende del proveedor o la ruta. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta |
 | Equipo | Preparación según la ruta elegida. Cliente MCP; cuenta o token para funciones que lo requieran |
-
-La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
-
-## Qué puedes hacer con él
-
-Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat.
-
-## Cómo funciona
 
 La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
 

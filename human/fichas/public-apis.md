@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista colectiva de APIs gratuitas para software y desarrollo web. Licencia MIT. Es uno de los repos más populares de GitHub (~499k estrellas) y está patrocinado por APILayer, cuyo anuncio encabeza el README.
+
+## ¿Qué hace?
+
+Organiza miles de APIs públicas por categoría con indicación de autenticación, HTTPS y CORS. Ahora incluye también una sección de servidores MCP con sus transportes y enlaces a directorios. Sirve para encontrar fuentes de datos para prototipos y automatizaciones.
+
+## ¿Cómo lo hace?
+
+Es un README; no requiere instalación. Comprueba la vigencia de cada API, porque muchas cambian de condiciones o desaparecen.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Conectar APIs de la lista en flujos con el nodo HTTP Request. (combinación por arquitectura) | Elige la API, revisa su autenticación y crea el flujo. |
+| [firecrawl](firecrawl.md) | Cubrir con scraping los datos que no ofrece ninguna API. (combinación por arquitectura) | Usa primero la API pública y recurre a Firecrawl solo si no existe. |
+| [treg](treg.md) | Catálogo de herramientas de pago por llamada como alternativa a APIs gratuitas. (combinación por arquitectura) | Compara coste y condiciones antes de elegir. |
+
+**Notas:** Sin alternativas declaradas. Parte del contenido destacado es publicidad del patrocinador.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/public-apis/public-apis/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El nombre CodeX de un compilador enlazado no es OpenAI Codex; no hereda compatibilidad con agentes |
 | Coste | Sin pago a un modelo en la ruta básica. Consultar el directorio es gratuito; algunas APIs solo tienen un cupo gratuito o requieren una cuenta comercial |
 | Equipo | Preparación según la ruta elegida. Navegador; necesidad concreta de datos |
-
-El nombre CodeX de un compilador enlazado no es OpenAI Codex; no hereda compatibilidad con agentes
-
-## Qué puedes hacer con él
-
-Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar datos de clima para una demo; Comparar APIs públicas de geocodificación.
-
-## Cómo funciona
 
 El nombre CodeX de un compilador enlazado no es OpenAI Codex; no hereda compatibilidad con agentes
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; necesidad concreta de datos
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
 ## Enlaces
 

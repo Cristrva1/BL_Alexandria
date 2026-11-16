@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Servidor MCP y CLI para buscar y descargar libros y artículos de Anna's Archive, de @iosifache. El repo no tiene licencia en GitHub. Es pequeño (~1k estrellas, v0.1) y su último cambio es de junio de 2026.
+
+## ¿Qué hace?
+
+Busca documentos sin configuración y los descarga si aportas una clave de donante de Anna's Archive (`ANNAS_SECRET_KEY`). Permite elegir el espejo cuando el dominio principal no funciona. Se usa desde un cliente MCP o la terminal.
+
+## ¿Cómo lo hace?
+
+Se descarga el binario de Releases y se configura en el cliente MCP (p. ej. Claude Desktop) o se ejecuta como CLI. El README afirma que se orienta a documentos con licencias permisivas, pero Anna's Archive es una biblioteca en la sombra con contenido protegido por derechos de autor.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Buscar documentos desde un cliente MCP. (combinación por arquitectura) | Configura el binario como servidor MCP. |
+| [markitdown](markitdown.md) | Convertir los PDF o EPUB descargados a Markdown para el agente. (combinación por arquitectura) | Descarga y convierte con MarkItDown. |
+| [Docling](docling.md) | Extraer estructura de PDF académicos descargados. (combinación por arquitectura) | Procesa los PDF con Docling. |
+
+**Notas:** Sin alternativas declaradas. Riesgo legal: descargar obras protegidas puede infringir derechos de autor según tu país. Sin licencia declarada.
+
+Estado en GitHub: activo · último push 2026-06-26 · última versión publicada v0.1 (2026-06-26) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/iosifache/annas-mcp/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos |
 | Coste | El coste depende del proveedor o la ruta. Buscar no necesita variables; descargar por su API requiere la donación y clave descritas por el autor |
 | Equipo | Preparación según la ruta elegida. Binario oficial para tu sistema; cliente MCP; clave solo para descargas |
-
-Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos
-
-## Qué puedes hacer con él
-
-Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.
-
-## Por qué destaca
-
-Usos propuestos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP.
-
-## Cómo funciona
 
 Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario oficial para tu sistema; cliente MCP; clave solo para descargas
 - **Etiquetas:** `servidores` `annas-archive` `cli` `mcp-server` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Enlaces
 
