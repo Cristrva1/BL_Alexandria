@@ -40581,7 +40581,9 @@
    "alternatives": [
     "ant-design",
     "ui",
-    "heroui"
+    "heroui",
+    "chakra-ui",
+    "mantine"
    ],
    "repo": "https://github.com/mui/material-ui",
    "homepage": "https://mui.com/material-ui/",
@@ -46451,7 +46453,8 @@
     "wrenai",
     "echarts",
     "hudi",
-    "kestra"
+    "kestra",
+    "deck.gl"
    ],
    "alternatives": [
     "metabase",
@@ -46578,6 +46581,12 @@
      "motivo": "Combinación recíproca: Kestra lo enlaza como «Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Kestra: Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén.",
      "reciproca_de": "kestra"
+    },
+    {
+     "id": "deck.gl",
+     "motivo": "Combinación recíproca: deck.gl lo enlaza como «Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales».",
+     "orden_instalacion": "Orden indicado desde deck.gl: Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl.",
+     "reciproca_de": "deck.gl"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): metabase, redash.",
@@ -47256,7 +47265,8 @@
     "ui",
     "d3",
     "tailwindcss",
-    "mui"
+    "mui",
+    "mantine"
    ],
    "alternatives": [
     "chart-js",
@@ -47378,6 +47388,12 @@
      "motivo": "Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI.",
      "reciproca_de": "mui"
+    },
+    {
+     "id": "mantine",
+     "motivo": "Combinación recíproca: Mantine lo enlaza como «Mantine Charts está construido sobre Recharts».",
+     "orden_instalacion": "Orden indicado desde Mantine: Instala @mantine/charts y recharts; después usa los componentes de gráficos.",
+     "reciproca_de": "mantine"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): chart-js, echarts.",
@@ -49833,7 +49849,9 @@
     "real-esrgan",
     "comfyui",
     "rembg",
-    "deep-live-cam"
+    "deep-live-cam",
+    "upscayl",
+    "chainner"
    ],
    "alternatives": [],
    "repo": "https://github.com/sczhou/CodeFormer",
@@ -49953,6 +49971,18 @@
      "motivo": "Combinación recíproca: Deep-Live-Cam lo enlaza como «Restaurar rostros en vídeo procesado offline. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Deep-Live-Cam: Aplica sobre los fotogramas.",
      "reciproca_de": "deep-live-cam"
+    },
+    {
+     "id": "upscayl",
+     "motivo": "Combinación recíproca: Upscayl lo enlaza como «Para retratos, CodeFormer restaura rostros antes o después de ampliar la imagen con Upscayl (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Upscayl: Restaura con CodeFormer; después amplía con Upscayl y compara.",
+     "reciproca_de": "upscayl"
+    },
+    {
+     "id": "chainner",
+     "motivo": "Combinación recíproca: chaiNNer lo enlaza como «Los modelos de restauración facial que soporta chaiNNer (vía spandrel) se encadenan con el escalado; CodeFormer sirve para comparar resultados en retratos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde chaiNNer: Restaura con CodeFormer o un modelo facial compatible; después escala en chaiNNer.",
+     "reciproca_de": "chainner"
     }
    ],
    "descripcion_notas": "Sin alternativas declaradas. Licencia no comercial.",
@@ -54380,7 +54410,10 @@
     "obs-studio",
     "whisperx"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "shotcut",
+    "kdenlive"
+   ],
    "repo": "https://github.com/OpenCut-app/OpenCut",
    "homepage": "https://opencut.app",
    "license": "MIT",
@@ -58004,7 +58037,8 @@
    "combines_with": [
     "vllm",
     "llama-cpp",
-    "pandoc"
+    "pandoc",
+    "surya"
    ],
    "alternatives": [
     "docling",
@@ -58122,6 +58156,12 @@
      "id": "pandoc",
      "motivo": "Publicar el Markdown resultante en DOCX, EPUB o LaTeX (combinación por arquitectura).",
      "orden_instalacion": "Encadénalos en un script."
+    },
+    {
+     "id": "surya",
+     "motivo": "Combinación recíproca: Surya lo enlaza como «marker, del mismo equipo, usa los modelos de Surya para convertir PDF a Markdown».",
+     "orden_instalacion": "Orden indicado desde Surya: Instala marker; usará Surya para OCR y layout.",
+     "reciproca_de": "surya"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): docling, mineru, pdf-craft. Se retiró llama-index por no estar documentado en el README actual.",
@@ -58328,7 +58368,9 @@
     "qdrant"
    ],
    "alternatives": [
-    "docling"
+    "docling",
+    "xberg",
+    "tika"
    ],
    "repo": "https://github.com/Unstructured-IO/unstructured",
    "homepage": "https://www.unstructured.io/",
@@ -58816,7 +58858,9 @@
    "combines_with": [
     "ocrmypdf",
     "paperless-ngx",
-    "unstructured"
+    "unstructured",
+    "xberg",
+    "tika"
    ],
    "alternatives": [
     "paddleocr"
@@ -58930,6 +58974,18 @@
      "id": "unstructured",
      "motivo": "Dependencia de unstructured para OCR de imágenes y PDF.",
      "orden_instalacion": "Instálalo antes de procesar escaneados."
+    },
+    {
+     "id": "xberg",
+     "motivo": "Combinación recíproca: Xberg (antes Kreuzberg) lo enlaza como «Tesseract es uno de los motores de OCR que Xberg usa bajo demanda para documentos escaneados».",
+     "orden_instalacion": "Orden indicado desde Xberg (antes Kreuzberg): Instala Tesseract y sus idiomas; después activa el backend en la configuración.",
+     "reciproca_de": "xberg"
+    },
+    {
+     "id": "tika",
+     "motivo": "Combinación recíproca: Apache Tika lo enlaza como «Tika usa Tesseract como motor de OCR para imágenes y PDF escaneados».",
+     "orden_instalacion": "Orden indicado desde Apache Tika: Instala Tesseract y sus idiomas en el sistema o la imagen; después activa el parser de OCR.",
+     "reciproca_de": "tika"
     }
    ],
    "descripcion_notas": "Alternativa (elige una): paddleocr. Para diseños complejos o escritura a mano rinde peor que los modelos VLM.",
@@ -97438,7 +97494,9 @@
    "combines_with": [
     "blender",
     "three.js",
-    "marimo"
+    "marimo",
+    "leaflet",
+    "qgis"
    ],
    "alternatives": [],
    "repo": "https://github.com/WebODM/WebODM",
@@ -97558,6 +97616,18 @@
      "id": "marimo",
      "motivo": "Analizar ortomosaicos y DEM exportados. (combinación por arquitectura)",
      "orden_instalacion": "Abre los GeoTIFF en un notebook."
+    },
+    {
+     "id": "leaflet",
+     "motivo": "Combinación recíproca: Leaflet lo enlaza como «WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Leaflet: Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet.",
+     "reciproca_de": "leaflet"
+    },
+    {
+     "id": "qgis",
+     "motivo": "Combinación recíproca: QGIS lo enlaza como «Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde QGIS: Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS.",
+     "reciproca_de": "qgis"
     }
    ],
    "descripcion_notas": "Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM.",
@@ -104054,7 +104124,8 @@
    "combines_with": [
     "yt-dlp",
     "ffmpeg",
-    "real-esrgan"
+    "real-esrgan",
+    "upscayl"
    ],
    "alternatives": [],
    "repo": "https://github.com/mikf/gallery-dl",
@@ -104171,6 +104242,12 @@
      "id": "real-esrgan",
      "motivo": "Las imágenes descargadas pueden escalarse en lote con Real-ESRGAN antes de usarlas (combinación por arquitectura).",
      "orden_instalacion": "Descarga primero con gallery-dl; después procesa la carpeta con Real-ESRGAN."
+    },
+    {
+     "id": "upscayl",
+     "motivo": "Combinación recíproca: Upscayl lo enlaza como «Las colecciones descargadas con gallery-dl se pueden ampliar en lote con Upscayl (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Upscayl: Descarga primero con gallery-dl; después procesa la carpeta en Upscayl.",
+     "reciproca_de": "upscayl"
     }
    ],
    "descripcion_notas": "Repositorio canónico de desarrollo: Codeberg (mikf/gallery-dl); GitHub se mantiene como espejo con actividad.",
@@ -104859,7 +104936,8 @@
    "combines_with": [
     "mitmproxy",
     "duckdb",
-    "claude-code"
+    "claude-code",
+    "theharvester"
    ],
    "alternatives": [],
    "repo": "https://github.com/projectdiscovery/katana",
@@ -104976,6 +105054,12 @@
      "id": "claude-code",
      "motivo": "Un agente puede lanzar Katana sobre un objetivo autorizado y resumir los endpoints descubiertos (combinación por arquitectura).",
      "orden_instalacion": "Instala Katana y define el alcance permitido; después pide al agente el análisis."
+    },
+    {
+     "id": "theharvester",
+     "motivo": "Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado.",
+     "reciproca_de": "theharvester"
     }
    ],
    "descripcion_notas": "Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.",
@@ -108552,6 +108636,3550 @@
     "primary_language": "Python",
     "checked_at": "2026-11-16",
     "latest_release": "v0.32.2 (2026-10-16)"
+   }
+  },
+  "storybook": {
+   "name": "Storybook",
+   "cat": 9,
+   "sub": "componentes",
+   "desc": "Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.",
+   "how": "Herramienta de desarrollo en TypeScript que arranca un servidor local con tus «stories» y añade documentación, pruebas visuales e interacciones mediante addons.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/storybookjs/storybook/blob/next/README.md",
+   "cases": [
+    "documentar el sistema de diseño de un producto con ejemplos interactivos",
+    "probar estados límite de componentes sin montar toda la aplicación"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "playwright",
+    "tailwindcss",
+    "mantine",
+    "chakra-ui"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/storybookjs/storybook",
+   "homepage": "https://storybook.js.org",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/storybook.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/storybookjs/storybook/blob/next/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "cbcab61d0d47bf48f89215a05a2a0d304f2d2250"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/storybookjs/storybook/blob/next/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "cbcab61d0d47bf48f89215a05a2a0d304f2d2250",
+    "root_tree_sha": "6ab7b83dd2357b4265756ad7400902fbe65fa611",
+    "readme_url": "https://github.com/storybookjs/storybook/blob/next/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "documentar el sistema de diseño de un producto con ejemplos interactivos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "probar estados límite de componentes sin montar toda la aplicación",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Ejecuta el comando de inicialización de Storybook en un proyecto web de prueba y abre el servidor local.",
+    "success": "Aparecen las stories de ejemplo y puedes cambiar sus props desde el panel de controles.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/storybookjs/storybook/blob/next/README.md",
+    "source_blob_sha": "cbcab61d0d47bf48f89215a05a2a0d304f2d2250",
+    "previous_category": [
+     9,
+     "componentes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta de código abierto (MIT) mantenida por Chromatic y la comunidad Storybook. Estándar de la industria para desarrollo de componentes, muy maduro y con un ecosistema amplio de addons.",
+   "que_hace": "Permite desarrollar componentes y páginas de UI aislados del resto de la aplicación, documentarlos automáticamente, probar interacciones, accesibilidad y regresiones visuales, y compartir un catálogo vivo del sistema de diseño. Soporta React, Vue, Angular, Svelte, Web Components, React Native y otros.",
+   "como_lo_hace": "Se añade a un proyecto con su CLI de inicialización (`npm create storybook@latest`), que detecta el framework y configura el builder (Vite o Webpack). Las stories se escriben en archivos CSF; las pruebas se integran con Vitest y el modo navegador basado en Playwright.",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Las pruebas de componentes de Storybook se ejecutan en navegador real mediante Vitest en modo navegador con Playwright.",
+     "orden_instalacion": "Instala el addon de pruebas de Storybook; después instala los navegadores de Playwright."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Storybook publica una receta oficial para integrar Tailwind CSS en las stories.",
+     "orden_instalacion": "Proyecto con Tailwind configurado; después sigue la receta de Storybook para cargar los estilos."
+    },
+    {
+     "id": "mantine",
+     "motivo": "Mantine documenta una guía para usar sus componentes y temas dentro de Storybook.",
+     "orden_instalacion": "Instala Mantine; después sigue su guía de Storybook para el proveedor de tema."
+    },
+    {
+     "id": "chakra-ui",
+     "motivo": "Las stories de componentes Chakra se envuelven en su proveedor de tema mediante un decorador de Storybook (combinación por arquitectura).",
+     "orden_instalacion": "Instala Chakra UI; después añade el decorador con su Provider en preview."
+    }
+   ],
+   "descripcion_notas": "Añade peso de dependencias al proyecto; mantenlo como dependencia de desarrollo.",
+   "descripcion_fuentes": [
+    "https://github.com/storybookjs/storybook/blob/next/README.md",
+    "https://storybook.js.org/recipes/tailwindcss",
+    "https://mantine.dev/guides/storybook/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "storybookjs/storybook",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v10.6.7 (2026-11-10)"
+   }
+  },
+  "leaflet": {
+   "name": "Leaflet",
+   "cat": 10,
+   "sub": "geoespacial",
+   "desc": "Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.",
+   "how": "Biblioteca JavaScript sin dependencias que pinta teselas raster y capas vectoriales en el DOM, con API sencilla y extensible por plugins.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Leaflet/Leaflet/blob/main/README.md",
+   "cases": [
+    "añadir un mapa con marcadores y popups a una web",
+    "publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap"
+   ],
+   "stack": "JavaScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "webodm",
+    "qgis",
+    "claude-code"
+   ],
+   "alternatives": [
+    "maplibre"
+   ],
+   "repo": "https://github.com/Leaflet/Leaflet",
+   "homepage": "https://leafletjs.com",
+   "license": "BSD-2-Clause",
+   "lang": "JavaScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/leaflet.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/Leaflet/Leaflet/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "0cbf2fc130b3c1470dd3aaa3f2f82d15615f4304"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "0cbf2fc130b3c1470dd3aaa3f2f82d15615f4304",
+    "root_tree_sha": "a10e840777aff5dc51ebc9a948ca8adfab5bf82b",
+    "readme_url": "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "añadir un mapa con marcadores y popups a una web",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Crea una página HTML con Leaflet desde CDN, un mapa de OpenStreetMap y un marcador.",
+    "success": "El mapa se desplaza y amplía y el marcador muestra su popup al hacer clic.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+    "source_blob_sha": "0cbf2fc130b3c1470dd3aaa3f2f82d15615f4304",
+    "previous_category": [
+     10,
+     "geoespacial"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de código abierto (BSD-2-Clause) creada en 2010 por Volodymyr Agafonkin y mantenida por la comunidad Leaflet. La biblioteca de mapas web interactivos más extendida; muy madura.",
+   "que_hace": "Construye mapas interactivos con teselas, marcadores, popups, polígonos, GeoJSON, controles y eventos, y funciona en escritorio y móvil. Su catálogo de plugins cubre clústeres, mapas de calor, dibujo, rutas y muchas otras funciones.",
+   "como_lo_hace": "Pesa unos 40 kB de JS y 2,4 kB de CSS comprimidos; se carga desde CDN o npm. No incluye datos de mapa: usa servidores de teselas como OpenStreetMap, cuyas condiciones de uso hay que respetar.",
+   "combina_con": [
+    {
+     "id": "webodm",
+     "motivo": "WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura).",
+     "orden_instalacion": "Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet."
+    },
+    {
+     "id": "qgis",
+     "motivo": "QGIS prepara y estiliza datos que se exportan como GeoJSON o teselas para mostrarlos con Leaflet (combinación por arquitectura).",
+     "orden_instalacion": "Prepara las capas en QGIS; después exporta y cárgalas en Leaflet."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede generar el HTML y JavaScript de un mapa Leaflet a partir de un GeoJSON (combinación por arquitectura).",
+     "orden_instalacion": "Ten el GeoJSON listo; después pide al agente la página y revísala en el navegador."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): maplibre (mapas vectoriales con WebGL).",
+   "descripcion_fuentes": [
+    "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+    "https://leafletjs.com/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Leaflet/Leaflet",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "BSD-2-Clause",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.9.4 (2023-05-18)"
+   }
+  },
+  "sherlock": {
+   "name": "Sherlock",
+   "cat": 10,
+   "sub": "osint",
+   "desc": "CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.",
+   "how": "Programa Python que comprueba la existencia del usuario en cada sitio según reglas de respuesta definidas en un archivo de datos.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/sherlock-project/sherlock/blob/master/docs/README.md",
+   "cases": [
+    "comprobar dónde está registrado un nombre de usuario propio o de tu marca",
+    "iniciar una investigación OSINT autorizada a partir de un alias"
+   ],
+   "stack": "Python, Dockerfile, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: comprobar dónde está registrado un nombre de usuario propio o de tu marca; iniciar una investigación OSINT autorizada a partir de un alias",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Uso OSINT sobre personas: respeta las leyes de protección de datos aplicables (p. ej. RGPD o LFPDPPP) y los términos de cada sitio.",
+   "combines_with": [
+    "theharvester",
+    "claude-code",
+    "duckdb"
+   ],
+   "alternatives": [
+    "maigret"
+   ],
+   "repo": "https://github.com/sherlock-project/sherlock",
+   "homepage": "https://sherlockproject.xyz",
+   "license": "MIT",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/sherlock.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/sherlock-project/sherlock/blob/master/docs/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "pipx install sherlock-project",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/sherlock-project/sherlock/blob/master/docs/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+    "root_tree_sha": "c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+    "readme_url": "https://github.com/sherlock-project/sherlock/blob/master/docs/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: comprobar dónde está registrado un nombre de usuario propio o de tu marca; iniciar una investigación OSINT autorizada a partir de un alias.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "comprobar dónde está registrado un nombre de usuario propio o de tu marca",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "iniciar una investigación OSINT autorizada a partir de un alias",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pipx install sherlock-project` y busca un nombre de usuario propio.",
+    "success": "La salida lista las URL de los perfiles encontrados y guarda un archivo de resultados.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/sherlock-project/sherlock/blob/master/docs/README.md",
+    "source_blob_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+    "previous_category": [
+     10,
+     "osint"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta OSINT de código abierto (MIT) mantenida por el Sherlock Project y su comunidad. Muy popular; el README advierte de que los paquetes de terceros para ParrotOS y Ubuntu 24.04 parecen estar rotos.",
+   "que_hace": "Busca cuentas por nombre de usuario en más de 400 redes sociales y sitios, informa de las URL encontradas y exporta resultados en texto, CSV o XLSX, con opciones de proxy, Tor y tiempo de espera.",
+   "como_lo_hace": "Escrito en Python; se instala con pipx, pip, uv o Docker (`docker run -it --rm sherlock/sherlock`). La lista de sitios y sus reglas de detección vive en un archivo JSON mantenido por la comunidad, por lo que los falsos positivos y negativos cambian con el tiempo.",
+   "combina_con": [
+    {
+     "id": "theharvester",
+     "motivo": "theHarvester recoge correos, nombres y dominios de una organización y Sherlock busca los alias encontrados en redes sociales (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester sobre el dominio autorizado; después pasa los alias a Sherlock."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede ejecutar Sherlock y resumir o verificar los perfiles encontrados (combinación por arquitectura).",
+     "orden_instalacion": "Instala Sherlock; después pide al agente la búsqueda y la revisión manual de resultados."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Los resultados en CSV de varias búsquedas se pueden cruzar con DuckDB (combinación por arquitectura).",
+     "orden_instalacion": "Exporta a CSV con Sherlock; después consulta los archivos con DuckDB."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): maigret.",
+   "descripcion_fuentes": [
+    "https://github.com/sherlock-project/sherlock/blob/master/docs/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "sherlock-project/sherlock",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.16.2 (2026-09-08)"
+   }
+  },
+  "maigret": {
+   "name": "Maigret",
+   "cat": 10,
+   "sub": "osint",
+   "desc": "Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.",
+   "how": "Programa Python asíncrono que consulta miles de sitios, analiza las páginas de perfil y genera informes HTML, PDF, XMind o JSON.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/soxoj/maigret/blob/main/README.md",
+   "cases": [
+    "auditar la huella pública de un alias propio",
+    "investigaciones OSINT autorizadas que requieren un informe consolidado"
+   ],
+   "stack": "Python, Dockerfile, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: auditar la huella pública de un alias propio; investigaciones OSINT autorizadas que requieren un informe consolidado",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Uso OSINT sobre personas: respeta las leyes de protección de datos aplicables (p. ej. RGPD o LFPDPPP) y los términos de cada sitio.",
+   "combines_with": [
+    "theharvester",
+    "claude-code",
+    "duckdb"
+   ],
+   "alternatives": [
+    "sherlock"
+   ],
+   "repo": "https://github.com/soxoj/maigret",
+   "homepage": "https://maigret.app/gh",
+   "license": "MIT",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/maigret.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/soxoj/maigret/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "6f4a4cf717fdbd2bb84b6cfcb6612aba5fede71b"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "pip install maigret",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/soxoj/maigret/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "6f4a4cf717fdbd2bb84b6cfcb6612aba5fede71b",
+    "root_tree_sha": "244bc2924c45b649faeba86cd63cff06522384be",
+    "readme_url": "https://github.com/soxoj/maigret/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: auditar la huella pública de un alias propio; investigaciones OSINT autorizadas que requieren un informe consolidado.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "auditar la huella pública de un alias propio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "investigaciones OSINT autorizadas que requieren un informe consolidado",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install maigret` (Python 3.10+) y busca un alias propio con salida HTML.",
+    "success": "Se genera un informe HTML con los perfiles encontrados y los datos extraídos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/soxoj/maigret/blob/main/README.md",
+    "source_blob_sha": "6f4a4cf717fdbd2bb84b6cfcb6612aba5fede71b",
+    "previous_category": [
+     10,
+     "osint"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta OSINT de código abierto (MIT) creada por soxoj, derivada de Sherlock y ampliada. Activa; el autor advierte de que las comprobaciones de sitios se rompen con el tiempo y requieren mantenimiento.",
+   "que_hace": "Busca cuentas en miles de sitios solo con el nombre de usuario, sin claves de API, extrae información disponible en las páginas (nombres, enlaces, otros alias) y busca recursivamente los nuevos identificadores. Genera informes HTML, PDF, XMind y JSON; ofrece interfaz web en Docker.",
+   "como_lo_hace": "Requiere Python 3.10+; se instala con `pip install maigret` (el extra `maigret[pdf]` añade PDF) o con Docker, incluida una imagen web. Puede usar FlareSolverr para sitios protegidos y ejecutarse en cuadernos o shells en la nube.",
+   "combina_con": [
+    {
+     "id": "theharvester",
+     "motivo": "theHarvester aporta correos y nombres de un dominio autorizado que después se investigan como alias con Maigret (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester; después pasa los identificadores a Maigret."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede leer el informe JSON de Maigret y resumir hallazgos y coincidencias dudosas (combinación por arquitectura).",
+     "orden_instalacion": "Genera el informe JSON; después pide al agente el resumen con verificación manual."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Los informes JSON o CSV de varias búsquedas se pueden consolidar y consultar con DuckDB (combinación por arquitectura).",
+     "orden_instalacion": "Exporta los informes; después consúltalos con DuckDB."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): sherlock. El README incluye patrocinios de proxies y servicios de pago no necesarios para la herramienta.",
+   "descripcion_fuentes": [
+    "https://github.com/soxoj/maigret/blob/main/README.md",
+    "https://maigret.readthedocs.io/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "soxoj/maigret",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.6.6 (2026-09-18)"
+   }
+  },
+  "upscayl": {
+   "name": "Upscayl",
+   "cat": 11,
+   "sub": "edicion",
+   "desc": "Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows.",
+   "how": "App Electron que usa el backend upscayl-ncnn con modelos Real-ESRGAN y aceleración Vulkan; procesa imágenes sueltas o carpetas.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/upscayl/upscayl/blob/main/README.md",
+   "cases": [
+    "ampliar fotos antiguas o de baja resolución para imprimirlas",
+    "escalar en lote una carpeta de imágenes para una web"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "real-esrgan",
+    "gallery-dl",
+    "codeformer"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/upscayl/upscayl",
+   "homepage": "https://upscayl.org",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/upscayl.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/upscayl/upscayl/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "f102b2d39a5b0aeb9199e1a2823db07dd694fa16"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/upscayl/upscayl/releases",
+    "source": "https://github.com/upscayl/upscayl/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "f102b2d39a5b0aeb9199e1a2823db07dd694fa16",
+    "root_tree_sha": "a00d55fee90e0f9435d5eaa86e76700df8199af8",
+    "readme_url": "https://github.com/upscayl/upscayl/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web.",
+   "models": "Modelos de superresolución Real-ESRGAN incluidos y modelos personalizados compatibles",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "ampliar fotos antiguas o de baja resolución para imprimirlas",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "escalar en lote una carpeta de imágenes para una web",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala la release para tu sistema, abre una imagen pequeña y amplíala x4 con el modelo por defecto.",
+    "success": "La imagen ampliada se guarda en la carpeta elegida con más detalle que el original.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/upscayl/upscayl/blob/main/README.md",
+    "source_blob_sha": "f102b2d39a5b0aeb9199e1a2823db07dd694fa16",
+    "previous_category": [
+     11,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de código abierto (AGPL-3.0) del proyecto Upscayl. Muy popular y con versiones frecuentes (v2.15 según el README).",
+   "que_hace": "Amplía y mejora imágenes de baja resolución con modelos de IA, en modo individual o por lotes, con varios modelos incluidos y soporte de modelos personalizados.",
+   "como_lo_hace": "App Electron/TypeScript con backend upscayl-ncnn (Real-ESRGAN y Vulkan). Se instala con las releases, Flathub, Snap, AppImage o `brew install --cask upscayl`. Requiere una GPU compatible con Vulkan: muchas gráficas integradas y CPU no funcionan.",
+   "combina_con": [
+    {
+     "id": "real-esrgan",
+     "motivo": "Upscayl usa modelos y la arquitectura de Real-ESRGAN a través de su backend NCNN Vulkan.",
+     "orden_instalacion": "Nada que instalar aparte: los modelos vienen con Upscayl; Real-ESRGAN sirve para scripts o modelos propios."
+    },
+    {
+     "id": "gallery-dl",
+     "motivo": "Las colecciones descargadas con gallery-dl se pueden ampliar en lote con Upscayl (combinación por arquitectura).",
+     "orden_instalacion": "Descarga primero con gallery-dl; después procesa la carpeta en Upscayl."
+    },
+    {
+     "id": "codeformer",
+     "motivo": "Para retratos, CodeFormer restaura rostros antes o después de ampliar la imagen con Upscayl (combinación por arquitectura).",
+     "orden_instalacion": "Restaura con CodeFormer; después amplía con Upscayl y compara."
+    }
+   ],
+   "descripcion_notas": "La IA inventa detalles plausibles: no uses el resultado como evidencia documental.",
+   "descripcion_fuentes": [
+    "https://github.com/upscayl/upscayl/blob/main/README.md",
+    "https://upscayl.org"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "upscayl/upscayl",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.15.0 (2024-12-25)"
+   }
+  },
+  "handbrake": {
+   "name": "HandBrake",
+   "cat": 12,
+   "sub": "edicion",
+   "desc": "Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo.",
+   "how": "Aplicación en C que usa bibliotecas como FFmpeg (libav) y x264/x265 para convertir vídeos con presets y filtros.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/HandBrake/HandBrake/blob/master/README.markdown",
+   "cases": [
+    "convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs",
+    "reducir el tamaño de una videoteca manteniendo la calidad"
+   ],
+   "stack": "C",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ffmpeg",
+    "obs-studio",
+    "lossless-cut"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/HandBrake/HandBrake",
+   "homepage": "https://handbrake.fr",
+   "license": "GPL-2.0",
+   "lang": "C",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/handbrake.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/HandBrake/HandBrake/blob/master/README.markdown"
+    ],
+    "mode": "software",
+    "source_blob_sha": "880f735211000624ee8f35959d6fcf34b4378f85"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://handbrake.fr",
+    "source": "https://github.com/HandBrake/HandBrake/blob/master/README.markdown",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "880f735211000624ee8f35959d6fcf34b4378f85",
+    "root_tree_sha": "340f98da51ca335ba896c6064b8eaa4aa2d75312",
+    "readme_url": "https://github.com/HandBrake/HandBrake/blob/master/README.markdown",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "reducir el tamaño de una videoteca manteniendo la calidad",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala HandBrake, abre un vídeo corto y conviértelo con un preset de 1080p.",
+    "success": "Obtienes un MP4 reproducible en el móvil con menor tamaño que el original.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/HandBrake/HandBrake/blob/master/README.markdown",
+    "source_blob_sha": "880f735211000624ee8f35959d6fcf34b4378f85",
+    "previous_category": [
+     12,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Transcodificador de vídeo de código abierto (GPL-2.0 en la mayoría de archivos) mantenido por el HandBrake Team desde 2003. Muy maduro.",
+   "que_hace": "Convierte vídeos de casi cualquier formato (cámaras, móviles, grabaciones de pantalla, DVD y Blu-ray sin protección) a formatos modernos para móviles, TV, consolas o navegador, con presets, recorte, escalado, filtros, subtítulos, capítulos y colas por lotes.",
+   "como_lo_hace": "Escrito en C con interfaces nativas para cada sistema y HandBrakeCLI; usa bibliotecas como FFmpeg (libav), x264, x265 y SVT-AV1. Se descarga desde handbrake.fr o se compila desde el código según su documentación.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "HandBrake se apoya en las bibliotecas de FFmpeg (libav) para decodificar y en códecs comunes; FFmpeg queda para operaciones que HandBrake no expone.",
+     "orden_instalacion": "Usa HandBrake para conversiones con presets; recurre a FFmpeg para tareas por script."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Las grabaciones de OBS Studio en MKV se convierten con HandBrake a MP4 de menor tamaño para publicarlas (combinación por arquitectura).",
+     "orden_instalacion": "Graba con OBS; después transcodifica con un preset de HandBrake."
+    },
+    {
+     "id": "lossless-cut",
+     "motivo": "LosslessCut recorta sin recodificar y HandBrake recodifica solo el resultado final (combinación por arquitectura).",
+     "orden_instalacion": "Recorta primero con LosslessCut; después convierte con HandBrake."
+    }
+   ],
+   "descripcion_notas": "No elimina protecciones anticopia; respeta los derechos del material que conviertes.",
+   "descripcion_fuentes": [
+    "https://github.com/HandBrake/HandBrake/blob/master/README.markdown",
+    "https://handbrake.fr/docs",
+    "https://github.com/HandBrake/HandBrake/blob/master/LICENSE"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "HandBrake/HandBrake",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.11.2 (2026-06-07)"
+   }
+  },
+  "ltx-2": {
+   "name": "LTX-2",
+   "cat": 12,
+   "sub": "generativo",
+   "desc": "Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado.",
+   "how": "Paquetes Python con pipelines de texto o imagen a vídeo, modo destilado rápido y ruta de mayor calidad, y entrenador LoRA; los pesos se descargan de Hugging Face.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Lightricks/LTX-2/blob/main/README.md",
+   "cases": [
+    "generar clips cortos con audio a partir de texto o una imagen en una GPU propia",
+    "entrenar un LoRA de estilo o personaje para el modelo"
+   ],
+   "stack": "Python, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: generar clips cortos con audio a partir de texto o una imagen en una GPU propia; entrenar un LoRA de estilo o personaje para el modelo",
+   "avoid_if": "no tienes el hardware o no aceptas la licencia de los pesos",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. El código es Apache-2.0, pero los pesos usan las licencias LTX-2 Community (no OSI) y el codificador Gemma 3 la licencia de Google.",
+   "combines_with": [
+    "comfyui",
+    "ffmpeg",
+    "pytorch"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/Lightricks/LTX-2",
+   "homepage": "https://ltx.io",
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/ltx-2.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+    "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+    "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/Lightricks/LTX-2/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "de9c6d5b76e133a3973985b0ca41b473b441a597"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+    ],
+    "steps": [
+     "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+     "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+     "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "de9c6d5b76e133a3973985b0ca41b473b441a597",
+    "root_tree_sha": "f0f2f8607189c78a72420b2b63cb1975b5eca179",
+    "readme_url": "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: generar clips cortos con audio a partir de texto o una imagen en una GPU propia; entrenar un LoRA de estilo o personaje para el modelo.",
+   "models": "Pesos LTX-2.5 y LTX-2.3 de Hugging Face (licencias LTX-2 Community) y codificador de texto Gemma 3",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "generar clips cortos con audio a partir de texto o una imagen en una GPU propia",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "entrenar un LoRA de estilo o personaje para el modelo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Clona el repositorio, instala las dependencias, descarga los pesos de LTX-2.5 y ejecuta la DistilledPipeline con un prompt corto.",
+    "success": "Se genera un clip de vídeo con audio en la carpeta de salida sin agotar la VRAM.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+    "source_blob_sha": "de9c6d5b76e133a3973985b0ca41b473b441a597",
+    "previous_category": [
+     12,
+     "generativo"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Paquete oficial de inferencia y entrenador LoRA de Lightricks para el modelo audio-vídeo LTX-2, que alberga también LTX-2.5. El código es Apache-2.0 y los modelos tienen licencias propias. El README de LTX-Video (retirado del catálogo) lo indica como sucesor.",
+   "que_hace": "Genera vídeo con audio sincronizado a partir de texto o imagen con un único modelo DiT, con modos de rendimiento (pipeline destilado rápido y ruta DFR de calidad de producción), IC-LoRA para control y entrenamiento de LoRA propios. Incluye integración con ComfyUI.",
+   "como_lo_hace": "Se clona el repositorio y se instalan sus paquetes Python (el extra `natten`, más rápido, solo en Linux con CUDA). Los pesos y VAE se descargan de Hugging Face; para poca memoria documenta cuantización fp8 y descarga a CPU o disco. Necesita una GPU NVIDIA con mucha VRAM para resultados razonables.",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "El README documenta la integración con ComfyUI para usar LTX-2 en flujos de nodos.",
+     "orden_instalacion": "Instala ComfyUI y los nodos de LTX; después descarga los pesos indicados."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Los clips generados se concatenan, recodifican o mezclan con FFmpeg para su publicación (combinación por arquitectura).",
+     "orden_instalacion": "Genera los clips; después procésalos con FFmpeg."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Los pipelines de LTX-2 se ejecutan sobre PyTorch con CUDA.",
+     "orden_instalacion": "Instala PyTorch con la versión de CUDA de tu GPU; después las dependencias de LTX-2."
+    }
+   ],
+   "descripcion_notas": "Revisa las licencias de los pesos antes de uso comercial.",
+   "descripcion_fuentes": [
+    "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+    "https://huggingface.co/Lightricks/LTX-2.5"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Lightricks/LTX-2",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.6.2 (2026-11-12)"
+   }
+  },
+  "surya": {
+   "name": "Surya",
+   "cat": 13,
+   "sub": "ocr",
+   "desc": "OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas.",
+   "how": "Cliente Python ligero que lanza o usa un servidor de inferencia (vLLM en GPU, llama.cpp en CPU/Apple o mlx_vlm) con el modelo de Surya.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/datalab-to/surya/blob/master/README.md",
+   "cases": [
+    "digitalizar documentos escaneados en varios idiomas conservando el orden de lectura",
+    "extraer tablas de PDF como HTML con celdas combinadas"
+   ],
+   "stack": "Python, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: digitalizar documentos escaneados en varios idiomas conservando el orden de lectura; extraer tablas de PDF como HTML con celdas combinadas",
+   "avoid_if": "no tienes el hardware o no aceptas la licencia de los pesos",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Código Apache-2.0; los pesos usan una licencia AI Pubs Open Rail-M modificada (gratis para investigación, uso personal y startups con menos de 5 M$), con licencia comercial aparte.",
+   "combines_with": [
+    "vllm",
+    "llama-cpp",
+    "marker"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/datalab-to/surya",
+   "homepage": "https://www.datalab.to",
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/surya.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+    "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+    "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/datalab-to/surya/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "3fa746aac8f22d258086d77f27f5a2c5e948cff6"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+    ],
+    "steps": [
+     "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+     "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+     "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+    ],
+    "command": "pip install surya-ocr",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/datalab-to/surya/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "3fa746aac8f22d258086d77f27f5a2c5e948cff6",
+    "root_tree_sha": "253888005c21865f0ded5d50872727f2a3b307f1",
+    "readme_url": "https://github.com/datalab-to/surya/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: digitalizar documentos escaneados en varios idiomas conservando el orden de lectura; extraer tablas de PDF como HTML con celdas combinadas.",
+   "models": "Modelo Surya (VLM de 689M) servido localmente con vLLM, llama.cpp o mlx_vlm",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "digitalizar documentos escaneados en varios idiomas conservando el orden de lectura",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "extraer tablas de PDF como HTML con celdas combinadas",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install surya-ocr` y procesa una página de prueba con OCR y layout.",
+    "success": "Obtienes el texto en orden de lectura y las regiones de layout detectadas.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/datalab-to/surya/blob/master/README.md",
+    "source_blob_sha": "3fa746aac8f22d258086d77f27f5a2c5e948cff6",
+    "previous_category": [
+     13,
+     "ocr"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Modelo y biblioteca de OCR de Datalab (autores de marker). El código es Apache-2.0 y los pesos usan una licencia Open Rail-M modificada con límites comerciales. Activo; la versión actual es un VLM único.",
+   "que_hace": "Hace OCR, análisis de layout (tablas, imágenes, encabezados, ecuaciones, formularios), orden de lectura y reconocimiento de tablas como HTML con colspan y rowspan, en más de 90 idiomas. El README cita puntuaciones altas en OmniParseBench y olmOCR-bench entre modelos abiertos de menos de 1B.",
+   "como_lo_hace": "`pip install surya-ocr` instala un cliente sin dependencias pesadas que arranca automáticamente el servidor de inferencia: vLLM en Docker o Podman para GPU NVIDIA, llama.cpp para CPU o Apple Silicon y, de forma experimental, mlx_vlm.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Surya usa vLLM en contenedor como servidor de inferencia por defecto en GPU NVIDIA.",
+     "orden_instalacion": "Docker o Podman con NVIDIA Container Toolkit; Surya lanza vLLM en el primer uso."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "En CPU o Apple Silicon Surya usa llama-server de llama.cpp como backend.",
+     "orden_instalacion": "Instala llama.cpp (p. ej. con Homebrew); después ejecuta Surya."
+    },
+    {
+     "id": "marker",
+     "motivo": "marker, del mismo equipo, usa los modelos de Surya para convertir PDF a Markdown.",
+     "orden_instalacion": "Instala marker; usará Surya para OCR y layout."
+    }
+   ],
+   "descripcion_notas": "Para usos comerciales por encima de los umbrales de la licencia de pesos, contacta con Datalab.",
+   "descripcion_fuentes": [
+    "https://github.com/datalab-to/surya/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "datalab-to/surya",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.24.0 (2026-11-13)"
+   }
+  },
+  "chakra-ui": {
+   "name": "Chakra UI",
+   "cat": 9,
+   "sub": "componentes",
+   "desc": "Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.",
+   "how": "Biblioteca React con componentes accesibles (basados en Ark UI), sistema de estilos con tokens y temas, y modo oscuro.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+   "cases": [
+    "construir el panel de un SaaS con componentes accesibles y tema propio",
+    "crear un sistema de diseño con tokens y recetas de estilo"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "storybook",
+    "lucide",
+    "claude-code"
+   ],
+   "alternatives": [
+    "mantine",
+    "mui"
+   ],
+   "repo": "https://github.com/chakra-ui/chakra-ui",
+   "homepage": "https://chakra-ui.com",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/chakra-ui.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/chakra-ui/chakra-ui/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "693a61a6a94bab0eea0e7e1a5adae42e1e85b896"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "693a61a6a94bab0eea0e7e1a5adae42e1e85b896",
+    "root_tree_sha": "4d3fda5dfd956188786a641ba47ec49dbe7dce93",
+    "readme_url": "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "construir el panel de un SaaS con componentes accesibles y tema propio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "crear un sistema de diseño con tokens y recetas de estilo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala `@chakra-ui/react` y `@emotion/react` en un proyecto React y renderiza un botón con el proveedor.",
+    "success": "El componente se muestra con el tema por defecto y cambia a modo oscuro.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+    "source_blob_sha": "693a61a6a94bab0eea0e7e1a5adae42e1e85b896",
+    "previous_category": [
+     9,
+     "componentes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de componentes de código abierto (MIT) mantenida por Segun Adebayo y la comunidad Chakra UI. Madura; la versión 3 es la actual y mantiene documentación de v2, v1 y v0.",
+   "que_hace": "Proporciona componentes React accesibles y componibles, un sistema de estilos con tokens, recetas y temas, modo oscuro y compatibilidad con React Server Components de Next.js. Ofrece documentación para IA, incluido un servidor MCP.",
+   "como_lo_hace": "Se instala con `npm i @chakra-ui/react @emotion/react` y se envuelve la app en su proveedor. La v3 se basa en Ark UI y Zag.js para la lógica accesible.",
+   "combina_con": [
+    {
+     "id": "storybook",
+     "motivo": "Los componentes Chakra se documentan en Storybook envolviendo las stories con su proveedor (combinación por arquitectura).",
+     "orden_instalacion": "Instala Storybook; después añade un decorador con el Provider de Chakra."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Los iconos de Lucide se usan dentro de los componentes de Chakra como componentes React (combinación por arquitectura).",
+     "orden_instalacion": "Instala lucide-react; después pásalos como iconos a los componentes."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Chakra UI publica un servidor MCP con la documentación y ejemplos de sus componentes para asistentes de código.",
+     "orden_instalacion": "Configura el servidor MCP de Chakra en Claude Code; después pide componentes basados en la versión que usas."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): mantine, mui.",
+   "descripcion_fuentes": [
+    "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+    "https://chakra-ui.com/docs/get-started/ai/mcp-server"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "chakra-ui/chakra-ui",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "@chakra-ui/panda-preset@3.38.0 (2026-11-03)"
+   }
+  },
+  "mantine": {
+   "name": "Mantine",
+   "cat": 9,
+   "sub": "componentes",
+   "desc": "Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones.",
+   "how": "Conjunto de paquetes React en TypeScript (@mantine/core, hooks, form, charts, dates…) con estilos CSS nativos y temas.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/mantinedev/mantine/blob/master/README.md",
+   "cases": [
+    "montar un panel de administración con formularios, tablas y gráficos",
+    "prototipar una app React con componentes accesibles y modo oscuro"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "storybook",
+    "recharts",
+    "claude-code"
+   ],
+   "alternatives": [
+    "chakra-ui",
+    "mui"
+   ],
+   "repo": "https://github.com/mantinedev/mantine",
+   "homepage": "https://mantine.dev",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/mantine.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/mantinedev/mantine/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "d2eb802b62933bfb934ce29bf59fb7d5d4f69165"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/mantinedev/mantine/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "d2eb802b62933bfb934ce29bf59fb7d5d4f69165",
+    "root_tree_sha": "b786c430ad370e6c9f7bce224008e996b2634bc3",
+    "readme_url": "https://github.com/mantinedev/mantine/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "montar un panel de administración con formularios, tablas y gráficos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "prototipar una app React con componentes accesibles y modo oscuro",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala @mantine/core y @mantine/hooks, envuelve la app en MantineProvider y renderiza un formulario.",
+    "success": "El formulario se muestra con estilos de Mantine y valida los campos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/mantinedev/mantine/blob/master/README.md",
+    "source_blob_sha": "d2eb802b62933bfb934ce29bf59fb7d5d4f69165",
+    "previous_category": [
+     9,
+     "componentes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de componentes de código abierto (MIT) creada por Vitaly Rtishchev y financiada por patrocinadores en Open Collective. Madura y muy activa.",
+   "que_hace": "Ofrece más de 100 componentes y 50 hooks, gestión de formularios, gráficos (Mantine Charts, sobre Recharts), selectores de fecha, notificaciones, editor de texto enriquecido, spotlight y modales, con temas y modo oscuro.",
+   "como_lo_hace": "Paquetes npm en TypeScript con estilos basados en CSS modules y variables CSS; plantillas para Next.js y Vite. Publica guías de integración (Storybook, entre otras) y documentación en formato llms.txt.",
+   "combina_con": [
+    {
+     "id": "storybook",
+     "motivo": "Mantine documenta una guía oficial para usar sus componentes en Storybook.",
+     "orden_instalacion": "Instala Storybook; después sigue la guía de Mantine para el tema."
+    },
+    {
+     "id": "recharts",
+     "motivo": "Mantine Charts está construido sobre Recharts.",
+     "orden_instalacion": "Instala @mantine/charts y recharts; después usa los componentes de gráficos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Mantine publica su documentación en formato llms.txt, útil como contexto para agentes de código (combinación por arquitectura).",
+     "orden_instalacion": "Añade la URL de llms.txt al contexto del agente; después pide los componentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): chakra-ui, mui.",
+   "descripcion_fuentes": [
+    "https://github.com/mantinedev/mantine/blob/master/README.md",
+    "https://mantine.dev/guides/storybook/",
+    "https://mantine.dev/llms.txt"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mantinedev/mantine",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "9.8.1 (2026-11-15)"
+   }
+  },
+  "evidence": {
+   "name": "Evidence",
+   "cat": 10,
+   "sub": "bi",
+   "desc": "BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio.",
+   "how": "Herramienta que convierte archivos Markdown con consultas SQL y componentes de gráficos en un sitio de informes, con motor DuckDB para unificar fuentes.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/evidence-dev/evidence/blob/main/README.md",
+   "cases": [
+    "publicar informes de negocio versionados en git",
+    "generar dashboards con SQL que un agente de código puede editar"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "duckdb",
+    "claude-code",
+    "supabase"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/evidence-dev/evidence",
+   "homepage": "https://evidence.dev",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/evidence.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/evidence-dev/evidence/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "22ef3a6534a4eb11382c718946cc7fc24cb42621"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/evidence-dev/evidence/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "22ef3a6534a4eb11382c718946cc7fc24cb42621",
+    "root_tree_sha": "006fc03440e785e55ea2471080cc311bdce4a5f2",
+    "readme_url": "https://github.com/evidence-dev/evidence/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "publicar informes de negocio versionados en git",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "generar dashboards con SQL que un agente de código puede editar",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Evidence con el script del README, crea un proyecto de ejemplo y abre el servidor local.",
+    "success": "Ves un informe con gráficos generados a partir de las consultas SQL del Markdown.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/evidence-dev/evidence/blob/main/README.md",
+    "source_blob_sha": "22ef3a6534a4eb11382c718946cc7fc24cb42621",
+    "previous_category": [
+     10,
+     "bi"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta de BI de código abierto (MIT) de Evidence (evidence.dev), con plataforma de publicación comercial (Evidence Studio). Activa.",
+   "que_hace": "Alternativa basada en código a las herramientas de BI de arrastrar y soltar: los informes se escriben con SQL y Markdown, con gráficos, tablas, filtros y páginas parametrizadas. Se desarrolla con su agente o en local con Claude Code, Cursor u otros, y se autoaloja o publica en Evidence Studio.",
+   "como_lo_hace": "Se instala con `curl -fsSL https://evidence.studio/install.sh | sh` en macOS/Linux (instalador para Windows aparte). Conecta con bases como PostgreSQL, Snowflake, BigQuery o archivos, y usa DuckDB para combinar los resultados.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Evidence usa DuckDB como motor para combinar y consultar las fuentes de datos de los informes.",
+     "orden_instalacion": "Nada que instalar aparte; añade archivos o bases como fuentes del proyecto."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README indica que los informes pueden desarrollarse en local con Claude Code, al ser archivos SQL y Markdown.",
+     "orden_instalacion": "Crea el proyecto de Evidence; después pide al agente páginas y consultas nuevas."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Una base PostgreSQL de Supabase puede ser fuente de datos de Evidence mediante su conector PostgreSQL (combinación por arquitectura).",
+     "orden_instalacion": "Crea un usuario de solo lectura en Supabase; después configura la fuente en Evidence."
+    }
+   ],
+   "descripcion_notas": "Alternativas cercanas en el catálogo: metabase, superset.",
+   "descripcion_fuentes": [
+    "https://github.com/evidence-dev/evidence/blob/main/README.md",
+    "https://docs.evidence.studio"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "evidence-dev/evidence",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "@evidence-dev/evidence@40.1.8 (2026-02-06)"
+   }
+  },
+  "qgis": {
+   "name": "QGIS",
+   "cat": 10,
+   "sub": "geoespacial",
+   "desc": "Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server.",
+   "how": "Aplicación de escritorio en C++/Qt con cientos de formatos vía GDAL/OGR, herramientas de análisis, consola y plugins en Python, y servidor de mapas.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/qgis/QGIS/blob/master/README.md",
+   "cases": [
+    "preparar y analizar capas geográficas para un estudio o mapa impreso",
+    "publicar servicios de mapas WMS/WFS con QGIS Server"
+   ],
+   "stack": "C++, CMakeLists.txt, requirements.txt",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "leaflet",
+    "maplibre",
+    "webodm",
+    "duckdb"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/qgis/QGIS",
+   "homepage": "https://qgis.org",
+   "license": "GPL-2.0",
+   "lang": "C++",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/qgis.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/qgis/QGIS/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "6b31e11f091b69bf1b8ae72a6dceaae48333cb27"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://qgis.org",
+    "source": "https://github.com/qgis/QGIS/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "6b31e11f091b69bf1b8ae72a6dceaae48333cb27",
+    "root_tree_sha": "a840a11aca8eaff581f1ef8120564f27a7fc8245",
+    "readme_url": "https://github.com/qgis/QGIS/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "preparar y analizar capas geográficas para un estudio o mapa impreso",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "publicar servicios de mapas WMS/WFS con QGIS Server",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala QGIS, carga una capa GeoJSON y un mapa base, y exporta un mapa en PDF.",
+    "success": "El PDF contiene el mapa con la capa estilizada, leyenda y escala.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/qgis/QGIS/blob/master/README.md",
+    "source_blob_sha": "6b31e11f091b69bf1b8ae72a6dceaae48333cb27",
+    "previous_category": [
+     10,
+     "geoespacial"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "SIG de escritorio de código abierto (GPL-2.0 o posterior) desarrollado por la comunidad QGIS y miembro de OSGeo. Muy maduro, con versiones LTR y regulares.",
+   "que_hace": "Gestiona datos espaciales vectoriales, ráster, nubes de puntos y mallas; crea cartografía de calidad, ejecuta análisis geoespacial con su caja de herramientas de procesamiento y se amplía con plugins y scripts en Python. QGIS Server publica mapas como servicios OGC.",
+   "como_lo_hace": "Escrito en C++ con Qt; usa GDAL/OGR, PROJ y GEOS. Se instala desde qgis.org para Windows, macOS y Linux, o con imágenes Docker; la API PyQGIS permite automatizar tareas.",
+   "combina_con": [
+    {
+     "id": "leaflet",
+     "motivo": "Las capas preparadas en QGIS se exportan como GeoJSON o teselas para mapas web con Leaflet (combinación por arquitectura).",
+     "orden_instalacion": "Prepara y exporta en QGIS; después cárgalas en Leaflet."
+    },
+    {
+     "id": "maplibre",
+     "motivo": "QGIS puede generar teselas vectoriales que MapLibre muestra en la web (combinación por arquitectura).",
+     "orden_instalacion": "Genera las teselas desde QGIS; después configura la fuente en MapLibre."
+    },
+    {
+     "id": "webodm",
+     "motivo": "Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura).",
+     "orden_instalacion": "Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "DuckDB con su extensión espacial prepara GeoParquet o tablas espaciales que QGIS abre directamente (combinación por arquitectura).",
+     "orden_instalacion": "Exporta desde DuckDB a GeoParquet o GeoPackage; después cárgalo en QGIS."
+    }
+   ],
+   "descripcion_notas": "Curva de aprendizaje alta para análisis avanzado; la documentación oficial y los tutoriales de la comunidad son amplios.",
+   "descripcion_fuentes": [
+    "https://github.com/qgis/QGIS/blob/master/README.md",
+    "https://qgis.org"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "qgis/QGIS",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "final-3_44_15 (2026-09-25)"
+   }
+  },
+  "deck.gl": {
+   "name": "deck.gl",
+   "cat": 10,
+   "sub": "geoespacial",
+   "desc": "Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D.",
+   "how": "Biblioteca JavaScript que mapea arrays de datos a capas visuales (iconos, polígonos, hexágonos, arcos) renderizadas en GPU; pydeck la expone a Python.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/visgl/deck.gl/blob/master/README.md",
+   "cases": [
+    "visualizar millones de puntos geográficos con interacción fluida",
+    "crear mapas 3D de densidad o rutas en una web o cuaderno"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "maplibre",
+    "kepler.gl",
+    "superset",
+    "jupyterlab"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/visgl/deck.gl",
+   "homepage": "https://deck.gl",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/deck.gl.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/visgl/deck.gl/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "aa8b0cba915c1d3130a6f50a2ff0dbf45956f0cc"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "npm install deck.gl",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/visgl/deck.gl/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "aa8b0cba915c1d3130a6f50a2ff0dbf45956f0cc",
+    "root_tree_sha": "dbfac3d4bc98eb811f93d3e808eb891b87343936",
+    "readme_url": "https://github.com/visgl/deck.gl/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "visualizar millones de puntos geográficos con interacción fluida",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "crear mapas 3D de densidad o rutas en una web o cuaderno",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo.",
+    "success": "El mapa muestra los puntos y permite seleccionar uno con el ratón.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/visgl/deck.gl/blob/master/README.md",
+    "source_blob_sha": "aa8b0cba915c1d3130a6f50a2ff0dbf45956f0cc",
+    "previous_category": [
+     10,
+     "geoespacial"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Framework de visualización de código abierto (MIT) del grupo vis.gl de la OpenJS Foundation, creado originalmente en Uber. Maduro y activo.",
+   "que_hace": "Renderiza de forma eficiente grandes conjuntos de datos mediante capas componibles, con selección, resaltado y filtrado interactivo, proyecciones cartográficas e integración con proveedores de mapas base. Incluye un catálogo amplio de capas probadas y se extiende con capas propias.",
+   "como_lo_hace": "Escrito en TypeScript sobre luma.gl (WebGL2/WebGPU); se usa por script, npm, con React o desde Python con pydeck en Jupyter. Se integra con MapLibre, Mapbox y Google Maps como mapa base.",
+   "combina_con": [
+    {
+     "id": "maplibre",
+     "motivo": "deck.gl se integra con MapLibre GL JS como mapa base, intercalando sus capas con las del estilo.",
+     "orden_instalacion": "Crea el mapa MapLibre; después añade las capas de deck.gl como overlay."
+    },
+    {
+     "id": "kepler.gl",
+     "motivo": "kepler.gl está construido sobre deck.gl y MapLibre.",
+     "orden_instalacion": "Usa kepler.gl para exploración sin código y deck.gl para visualizaciones a medida."
+    },
+    {
+     "id": "superset",
+     "motivo": "Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales.",
+     "orden_instalacion": "Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "pydeck, el binding de Python de deck.gl, muestra mapas interactivos en cuadernos Jupyter.",
+     "orden_instalacion": "Instala pydeck en el entorno de JupyterLab; después renderiza las capas en una celda."
+    }
+   ],
+   "descripcion_notas": "Para mapas base comerciales revisa las condiciones y claves del proveedor.",
+   "descripcion_fuentes": [
+    "https://github.com/visgl/deck.gl/blob/master/README.md",
+    "https://deck.gl/docs",
+    "https://superset.apache.org/docs/configuration/map-tiles/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "visgl/deck.gl",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v9.3.12 (2026-10-30)"
+   }
+  },
+  "maplibre": {
+   "name": "MapLibre GL JS",
+   "cat": 10,
+   "sub": "geoespacial",
+   "desc": "Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.",
+   "how": "Biblioteca TypeScript que dibuja teselas vectoriales con WebGL2 a partir de un estilo JSON, con rotación, inclinación y 3D.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/maplibre/maplibre-gl-js/blob/main/README.md",
+   "cases": [
+    "publicar mapas vectoriales con estilo propio sin depender de un proveedor",
+    "crear mapas 3D con edificios y terreno en una web"
+   ],
+   "stack": "TypeScript, docker-compose.yml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "deck.gl",
+    "kepler.gl",
+    "qgis"
+   ],
+   "alternatives": [
+    "leaflet"
+   ],
+   "repo": "https://github.com/maplibre/maplibre-gl-js",
+   "homepage": "https://maplibre.org/maplibre-gl-js/docs/",
+   "license": "BSD-3-Clause",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/maplibre.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/maplibre/maplibre-gl-js/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "003feca1715ba46dcfd1ee452934b45410409bd6"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/maplibre/maplibre-gl-js/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "003feca1715ba46dcfd1ee452934b45410409bd6",
+    "root_tree_sha": "97130236259364eaa712b7194b47840a2a18ffb3",
+    "readme_url": "https://github.com/maplibre/maplibre-gl-js/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "publicar mapas vectoriales con estilo propio sin depender de un proveedor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "crear mapas 3D con edificios y terreno en una web",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Crea una página con MapLibre desde unpkg y el estilo de demostración de MapLibre.",
+    "success": "El mapa vectorial se carga, rota e inclina con el ratón.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/maplibre/maplibre-gl-js/blob/main/README.md",
+    "source_blob_sha": "003feca1715ba46dcfd1ee452934b45410409bd6",
+    "previous_category": [
+     10,
+     "geoespacial"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de código abierto (BSD-3-Clause) de la organización MapLibre, creada como fork de mapbox-gl-js cuando este pasó a una licencia no libre en diciembre de 2020. Madura y con amplio respaldo.",
+   "que_hace": "Publica mapas interactivos en webs y webviews con teselas vectoriales renderizadas en GPU, estilos personalizables, etiquetas, terreno 3D, rotación e inclinación, y una API de capas, fuentes y eventos.",
+   "como_lo_hace": "Escrito en TypeScript con WebGL2; se carga desde npm (`maplibre-gl`) o CDN. Necesita una fuente de teselas y un estilo (propios o de un proveedor compatible); el proyecto prohíbe retroportar código de Mapbox posterior al cambio de licencia.",
+   "combina_con": [
+    {
+     "id": "deck.gl",
+     "motivo": "deck.gl se integra con MapLibre como mapa base para añadir capas de datos en GPU.",
+     "orden_instalacion": "Crea el mapa MapLibre; después añade el overlay de deck.gl."
+    },
+    {
+     "id": "kepler.gl",
+     "motivo": "kepler.gl usa MapLibre GL como motor de mapa base.",
+     "orden_instalacion": "Instala kepler.gl junto a maplibre-gl según su guía."
+    },
+    {
+     "id": "qgis",
+     "motivo": "QGIS genera teselas vectoriales y datos que MapLibre publica en la web (combinación por arquitectura).",
+     "orden_instalacion": "Prepara y exporta desde QGIS; después configura las fuentes en MapLibre."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): leaflet.",
+   "descripcion_fuentes": [
+    "https://github.com/maplibre/maplibre-gl-js/blob/main/README.md",
+    "https://maplibre.org/maplibre-gl-js/docs/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "maplibre/maplibre-gl-js",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.18.0 (2026-11-11)"
+   }
+  },
+  "kepler.gl": {
+   "name": "kepler.gl",
+   "cat": 10,
+   "sub": "geoespacial",
+   "desc": "Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.",
+   "how": "Aplicación React/Redux construida sobre deck.gl y MapLibre que carga CSV, GeoJSON o Arrow y crea capas, filtros y animaciones temporales.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/keplergl/kepler.gl/blob/master/README.md",
+   "cases": [
+    "explorar millones de viajes o eventos geolocalizados en el navegador",
+    "incrustar un explorador de mapas en una aplicación React o en un cuaderno"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "deck.gl",
+    "maplibre",
+    "jupyterlab",
+    "claude-code"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/keplergl/kepler.gl",
+   "homepage": "http://kepler.gl",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/kepler.gl.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/keplergl/kepler.gl/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "a952281179fbcc9f0f8e5198504b1311225ffa44"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "a952281179fbcc9f0f8e5198504b1311225ffa44",
+    "root_tree_sha": "19321a80882c73b46dc2296e117d9734b0b4cd18",
+    "readme_url": "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "explorar millones de viajes o eventos geolocalizados en el navegador",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "incrustar un explorador de mapas en una aplicación React o en un cuaderno",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud.",
+    "success": "El mapa crea capas automáticamente y permite filtrar por tiempo.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+    "source_blob_sha": "a952281179fbcc9f0f8e5198504b1311225ffa44",
+    "previous_category": [
+     10,
+     "geoespacial"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de análisis geoespacial de código abierto (MIT), creada en Uber y hoy proyecto de la OpenJS Foundation dentro del ecosistema vis.gl. Activa.",
+   "que_hace": "Permite explorar visualmente grandes conjuntos de datos de geolocalización: capas de puntos, arcos, hexágonos, rutas y polígonos, filtros, animación temporal y exportación de mapas. Se usa como app web, componente React incrustable y widget de Jupyter, y documenta integración con asistentes de IA y MCP.",
+   "como_lo_hace": "Escrito en TypeScript con React y Redux sobre deck.gl y MapLibre GL; se instala con `npm install --save @kepler.gl/components maplibre-gl` o se usa la demo pública, que procesa los datos en el navegador.",
+   "combina_con": [
+    {
+     "id": "deck.gl",
+     "motivo": "kepler.gl se construye sobre deck.gl para el renderizado de sus capas.",
+     "orden_instalacion": "Usa kepler.gl para explorar y deck.gl para llevar la visualización a una app propia."
+    },
+    {
+     "id": "maplibre",
+     "motivo": "kepler.gl usa MapLibre GL como mapa base.",
+     "orden_instalacion": "Instala maplibre-gl junto a los componentes de kepler.gl."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "kepler.gl ofrece un widget de Jupyter documentado para explorar DataFrames en cuadernos.",
+     "orden_instalacion": "Instala el widget de kepler.gl en el entorno de JupyterLab; después pásale los datos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README dedica una sección a asistentes de IA y MCP para que los agentes creen y manipulen mapas de kepler.gl.",
+     "orden_instalacion": "Sigue la sección de MCP del README; después registra el servidor en Claude Code."
+    }
+   ],
+   "descripcion_notas": "La demo procesa los datos en el navegador; revisa memoria con conjuntos muy grandes.",
+   "descripcion_fuentes": [
+    "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+    "https://docs.kepler.gl/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "keplergl/kepler.gl",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.3.0-alpha.21 (2026-11-13)"
+   }
+  },
+  "theharvester": {
+   "name": "theHarvester",
+   "cat": 10,
+   "sub": "osint",
+   "desc": "Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas.",
+   "how": "CLI y API REST en Python que consulta fuentes pasivas (buscadores, logs de transparencia de certificados, DNS, repositorios, inteligencia de amenazas) y consolida resultados.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/laramies/theHarvester/blob/master/README.md",
+   "cases": [
+    "inventariar la superficie expuesta de tu propio dominio",
+    "fase inicial de reconocimiento en una auditoría de seguridad autorizada"
+   ],
+   "stack": "Python, Dockerfile, docker-compose.yml, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Úsalo solo sobre dominios propios o con permiso explícito; incluso las fuentes pasivas reciben el objetivo consultado.",
+   "combines_with": [
+    "sherlock",
+    "maigret",
+    "katana",
+    "recon-ng"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/laramies/theHarvester",
+   "homepage": "http://www.edge-security.com/",
+   "license": "GPL-2.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/theharvester.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/laramies/theHarvester/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "cb3a8ddae1634fefaaed1c5f45328cff3bd32df0"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/laramies/theHarvester/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "cb3a8ddae1634fefaaed1c5f45328cff3bd32df0",
+    "root_tree_sha": "b9b00561a66b4a2c829c606403a4765f3fff1ae9",
+    "readme_url": "https://github.com/laramies/theHarvester/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "inventariar la superficie expuesta de tu propio dominio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "fase inicial de reconocimiento en una auditoría de seguridad autorizada",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio.",
+    "success": "La terminal informa del resultado de cada fuente y lista subdominios encontrados.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/laramies/theHarvester/blob/master/README.md",
+    "source_blob_sha": "cb3a8ddae1634fefaaed1c5f45328cff3bd32df0",
+    "previous_category": [
+     10,
+     "osint"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta OSINT de código abierto (solo GPL-2.0) creada por Christian Martorella (laramies) y mantenida por la comunidad desde hace años. Activa; requiere Python 3.14 y uv.",
+   "que_hace": "Recoge inteligencia de fuentes abiertas sobre un dominio u organización: correos, nombres, subdominios, IP y URL, a partir de buscadores, logs de certificados, conjuntos DNS, repositorios de código y plataformas de inteligencia de amenazas. Pensada para la fase temprana de reconocimiento de una evaluación autorizada.",
+   "como_lo_hace": "Escrito en Python; se ejecuta con `uv sync` y `uv run theHarvester -d <dominio> -b <fuentes>`. Muchas fuentes necesitan claves de API; incluye API REST y Docker Compose.",
+   "combina_con": [
+    {
+     "id": "sherlock",
+     "motivo": "Los alias encontrados por theHarvester se pueden buscar en redes sociales con Sherlock (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester sobre el dominio autorizado; después pasa los alias a Sherlock."
+    },
+    {
+     "id": "maigret",
+     "motivo": "Los nombres y alias recogidos alimentan dossiers por usuario con Maigret (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester; después investiga los identificadores con Maigret."
+    },
+    {
+     "id": "katana",
+     "motivo": "Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura).",
+     "orden_instalacion": "Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado."
+    },
+    {
+     "id": "recon-ng",
+     "motivo": "Combinación recíproca: Recon-ng lo enlaza como «theHarvester aporta correos y subdominios que se pueden importar como semillas en un espacio de trabajo de Recon-ng (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Recon-ng: Ejecuta theHarvester; después importa los resultados en Recon-ng.",
+     "reciproca_de": "recon-ng"
+    }
+   ],
+   "descripcion_notas": "Alternativa cercana: recon-ng (framework modular de reconocimiento).",
+   "descripcion_fuentes": [
+    "https://github.com/laramies/theHarvester/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "laramies/theHarvester",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "4.11.1 (2026-06-03)"
+   }
+  },
+  "recon-ng": {
+   "name": "Recon-ng",
+   "cat": 10,
+   "sub": "osint",
+   "desc": "Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit.",
+   "how": "Consola interactiva en Python con un mercado de módulos que consultan fuentes abiertas y guardan resultados en una base SQLite por espacio de trabajo.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/lanmaster53/recon-ng/blob/master/README.md",
+   "cases": [
+    "organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles",
+    "automatizar consultas a varias fuentes con módulos y claves de API"
+   ],
+   "stack": "Python, Dockerfile, docker-compose.yml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Úsalo solo sobre objetivos propios o con autorización; muchos módulos requieren claves de API de terceros.",
+   "combines_with": [
+    "theharvester",
+    "duckdb",
+    "claude-code"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/lanmaster53/recon-ng",
+   "homepage": null,
+   "license": "GPL-3.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/recon-ng.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/lanmaster53/recon-ng/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "c1134b41d4c82cde38ea5def314b1a88321fec9d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/lanmaster53/recon-ng/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "c1134b41d4c82cde38ea5def314b1a88321fec9d",
+    "root_tree_sha": "32b08fe7b6993ca1f2d8f76ba8f5d23c7f34a11d",
+    "readme_url": "https://github.com/lanmaster53/recon-ng/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "automatizar consultas a varias fuentes con módulos y claves de API",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala las dependencias del README, crea un espacio de trabajo e instala un módulo pasivo del marketplace.",
+    "success": "El módulo se ejecuta y sus resultados aparecen en la tabla correspondiente del espacio de trabajo.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/lanmaster53/recon-ng/blob/master/README.md",
+    "source_blob_sha": "c1134b41d4c82cde38ea5def314b1a88321fec9d",
+    "previous_category": [
+     10,
+     "osint"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Framework de reconocimiento de código abierto (GPL-3.0) creado por Tim Tomes (lanmaster53). Maduro, con ritmo de cambios bajo (último push en octubre de 2026).",
+   "que_hace": "Ofrece un entorno para hacer reconocimiento basado en fuentes abiertas de forma rápida y ordenada: módulos de descubrimiento, reconocimiento, informes e importación, espacios de trabajo con base de datos, claves de API centralizadas e informes.",
+   "como_lo_hace": "Escrito en Python; se instala clonando el repositorio y sus requisitos. Los módulos se instalan desde un marketplace aparte; la interfaz recuerda a Metasploit y tiene también una interfaz web para informes.",
+   "combina_con": [
+    {
+     "id": "theharvester",
+     "motivo": "theHarvester aporta correos y subdominios que se pueden importar como semillas en un espacio de trabajo de Recon-ng (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester; después importa los resultados en Recon-ng."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "La base SQLite de cada espacio de trabajo se puede consultar con DuckDB para cruzar resultados (combinación por arquitectura).",
+     "orden_instalacion": "Localiza la base del espacio de trabajo; después ábrela en DuckDB en solo lectura."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede escribir módulos nuevos en Python siguiendo la guía de desarrollo del framework (combinación por arquitectura).",
+     "orden_instalacion": "Lee la guía de desarrollo; después pide al agente el módulo y pruébalo en un espacio de trabajo aislado."
+    }
+   ],
+   "descripcion_notas": "Ritmo de mantenimiento bajo: comprueba que los módulos que necesitas siguen funcionando.",
+   "descripcion_fuentes": [
+    "https://github.com/lanmaster53/recon-ng/blob/master/README.md",
+    "https://github.com/lanmaster53/recon-ng/wiki"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "lanmaster53/recon-ng",
+    "archived": false,
+    "pushed_at": "2026-10-05",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "chainner": {
+   "name": "chaiNNer",
+   "cat": 11,
+   "sub": "edicion",
+   "desc": "Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux.",
+   "how": "App de escritorio (TypeScript/React y backend Python) que conecta nodos de modelos (PyTorch, ONNX, NCNN, TensorRT) y operaciones de imagen.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md",
+   "cases": [
+    "escalar y restaurar lotes de imágenes con varios modelos en cadena",
+    "crear flujos repetibles de conversión y retoque de imágenes"
+   ],
+   "stack": "Python, package.json, pyproject.toml, requirements.txt",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "real-esrgan",
+    "pytorch",
+    "codeformer"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/chaiNNer-org/chaiNNer",
+   "homepage": "https://chaiNNer.app",
+   "license": "GPL-3.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/chainner.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "0207ea1fa6ad9019f22a2765f8c01ef23c258a62"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/chaiNNer-org/chaiNNer/releases",
+    "source": "https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "0207ea1fa6ad9019f22a2765f8c01ef23c258a62",
+    "root_tree_sha": "f223edb6abaef9ba0343e025270c92bca7a5ffdf",
+    "readme_url": "https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes.",
+   "models": "Modelos de superresolución y restauración compatibles (ESRGAN, GFPGAN y otros) en PyTorch, ONNX, NCNN o TensorRT",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "escalar y restaurar lotes de imágenes con varios modelos en cadena",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "crear flujos repetibles de conversión y retoque de imágenes",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala la release, deja que descargue su Python integrado e instala PyTorch o NCNN desde el gestor de dependencias; después escala una imagen con un modelo.",
+    "success": "El flujo de nodos procesa la imagen y guarda el resultado sin errores.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md",
+    "source_blob_sha": "0207ea1fa6ad9019f22a2765f8c01ef23c258a62",
+    "previous_category": [
+     11,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de código abierto (GPL-3.0) de la organización chaiNNer, nacida como herramienta de escalado con IA. Activa y multiplataforma.",
+   "que_hace": "Permite construir flujos de procesamiento de imágenes conectando nodos: escalado y restauración con modelos de IA, ajustes de color, conversión de formatos, iteración sobre carpetas y procesamiento por lotes, con control total del pipeline.",
+   "como_lo_hace": "Se instala con las releases; descarga un Python integrado y las dependencias (PyTorch, ONNX, NCNN, TensorRT) desde su gestor. Soporta GPU NVIDIA (CUDA y TensorRT), AMD (ROCm en Linux o NCNN) e Intel (NCNN). Carga modelos mediante la biblioteca spandrel.",
+   "combina_con": [
+    {
+     "id": "real-esrgan",
+     "motivo": "chaiNNer carga modelos de superresolución de la familia ESRGAN/Real-ESRGAN en sus nodos.",
+     "orden_instalacion": "Descarga el modelo compatible; después usa el nodo de carga de modelo y el de escalado."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "La ruta principal de inferencia de chaiNNer en GPU NVIDIA es PyTorch con CUDA.",
+     "orden_instalacion": "Instala PyTorch desde el gestor de dependencias de chaiNNer."
+    },
+    {
+     "id": "codeformer",
+     "motivo": "Los modelos de restauración facial que soporta chaiNNer (vía spandrel) se encadenan con el escalado; CodeFormer sirve para comparar resultados en retratos (combinación por arquitectura).",
+     "orden_instalacion": "Restaura con CodeFormer o un modelo facial compatible; después escala en chaiNNer."
+    }
+   ],
+   "descripcion_notas": "Algunos usuarios de NCNN con GPU no NVIDIA obtienen salidas negras por falta de memoria, según el README.",
+   "descripcion_fuentes": [
+    "https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md",
+    "https://github.com/chaiNNer-org/spandrel"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "chaiNNer-org/chaiNNer",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.26.1 (2026-10-27)"
+   }
+  },
+  "shotcut": {
+   "name": "Shotcut",
+   "cat": 12,
+   "sub": "edicion",
+   "desc": "Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.",
+   "how": "Aplicación C++/Qt sobre el framework multimedia MLT y las bibliotecas de FFmpeg; incluye reconocimiento de voz con modelos Whisper para subtítulos.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/mltframework/shotcut/blob/master/README.md",
+   "cases": [
+    "editar vídeos de YouTube o cursos con cortes, transiciones y títulos",
+    "generar subtítulos automáticos a partir del audio de un vídeo"
+   ],
+   "stack": "C++, CMakeLists.txt",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ffmpeg",
+    "whisper-cpp",
+    "obs-studio"
+   ],
+   "alternatives": [
+    "kdenlive",
+    "opencut"
+   ],
+   "repo": "https://github.com/mltframework/shotcut",
+   "homepage": "https://www.shotcut.org",
+   "license": "GPL-3.0",
+   "lang": "C++",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/shotcut.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/mltframework/shotcut/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "6b878f53252d686ea72b3bb5969af8bc44c19b8e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://www.shotcut.org",
+    "source": "https://github.com/mltframework/shotcut/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "6b878f53252d686ea72b3bb5969af8bc44c19b8e",
+    "root_tree_sha": "a95318e778bb1552118c0e7087012b24cae7bddc",
+    "readme_url": "https://github.com/mltframework/shotcut/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "editar vídeos de YouTube o cursos con cortes, transiciones y títulos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "generar subtítulos automáticos a partir del audio de un vídeo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Shotcut desde shotcut.org, importa dos clips, córtalos en la línea de tiempo y exporta un MP4.",
+    "success": "El MP4 exportado reproduce los dos clips con el corte aplicado.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/mltframework/shotcut/blob/master/README.md",
+    "source_blob_sha": "6b878f53252d686ea72b3bb5969af8bc44c19b8e",
+    "previous_category": [
+     12,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Editor de vídeo de código abierto (GPL-3.0) cuyo autor principal es Dan Dennedy, también mantenedor de MLT. Maduro, con versiones regulares para Windows, macOS y Linux.",
+   "que_hace": "Ofrece edición en línea de tiempo con múltiples pistas, filtros de vídeo y audio, transiciones, fotogramas clave, corrección de color, soporte nativo de muchos formatos sin importación, captura y exportación con presets, y generación de subtítulos por reconocimiento de voz.",
+   "como_lo_hace": "Escrito en C++ con Qt y QML sobre MLT, con FFmpeg, frei0r y otras bibliotecas como dependencias. Se descarga como binario desde shotcut.org; la función de voz a texto descarga modelos Whisper.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Shotcut depende de las bibliotecas de FFmpeg (a través de MLT) para leer y codificar formatos.",
+     "orden_instalacion": "Viene incluido en los binarios; usa FFmpeg aparte solo para tareas por script."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "Shotcut incluye una extensión de modelos Whisper para su función de voz a texto y subtítulos.",
+     "orden_instalacion": "Descarga el modelo desde Shotcut; después genera subtítulos desde el menú correspondiente."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Las grabaciones de OBS Studio se editan en Shotcut antes de publicarlas (combinación por arquitectura).",
+     "orden_instalacion": "Graba con OBS; después importa los archivos en Shotcut."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): kdenlive, opencut.",
+   "descripcion_fuentes": [
+    "https://github.com/mltframework/shotcut/blob/master/README.md",
+    "https://github.com/mltframework/shotcut/blob/master/src/qml/extensions/whispermodel.qml",
+    "https://www.shotcut.org/features/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mltframework/shotcut",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v26.9.27 (2026-09-28)"
+   }
+  },
+  "kdenlive": {
+   "name": "Kdenlive",
+   "cat": 12,
+   "sub": "edicion",
+   "desc": "Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.",
+   "how": "Aplicación C++/Qt con KDE Frameworks y MLT; su función de voz a texto usa Whisper o VOSK para generar subtítulos.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/KDE/kdenlive/blob/master/README.md",
+   "cases": [
+    "montar vídeos con varias pistas, efectos y corrección de color",
+    "subtitular automáticamente entrevistas o tutoriales"
+   ],
+   "stack": "C++, CMakeLists.txt",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ffmpeg",
+    "whisper",
+    "obs-studio"
+   ],
+   "alternatives": [
+    "shotcut",
+    "opencut"
+   ],
+   "repo": "https://github.com/KDE/kdenlive",
+   "homepage": "https://invent.kde.org/multimedia/kdenlive",
+   "license": "GPL-3.0",
+   "lang": "C++",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/kdenlive.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/KDE/kdenlive/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "aafacd56d79aeb85ff57fe1cfbbfd8e6a585db6d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://invent.kde.org/multimedia/kdenlive",
+    "source": "https://github.com/KDE/kdenlive/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "aafacd56d79aeb85ff57fe1cfbbfd8e6a585db6d",
+    "root_tree_sha": "00141d89668d2519d48cc12b0b001ae34b72cf42",
+    "readme_url": "https://github.com/KDE/kdenlive/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "montar vídeos con varias pistas, efectos y corrección de color",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "subtitular automáticamente entrevistas o tutoriales",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Kdenlive desde kdenlive.org, crea un proyecto, añade clips a la línea de tiempo y renderiza un MP4.",
+    "success": "El render termina y el archivo reproduce el montaje.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/KDE/kdenlive/blob/master/README.md",
+    "source_blob_sha": "aafacd56d79aeb85ff57fe1cfbbfd8e6a585db6d",
+    "previous_category": [
+     12,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Editor de vídeo de código abierto (GPL-3.0 según GitHub) desarrollado por la comunidad KDE. El repositorio de GitHub es un espejo: el desarrollo canónico vive en invent.kde.org (multimedia/kdenlive). Maduro, con versiones trimestrales.",
+   "que_hace": "Edición no lineal con múltiples pistas, efectos y transiciones, keyframes, titulación, corrección de color, clips proxy para equipos modestos, edición de audio y generación de subtítulos con reconocimiento de voz.",
+   "como_lo_hace": "Escrito en C++ con Qt, KDE Frameworks y MLT (que usa FFmpeg). Se instala desde kdenlive.org (Windows, macOS, AppImage, Flatpak) o repositorios de distribución; la voz a texto requiere instalar Whisper o VOSK desde la configuración.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Kdenlive usa FFmpeg a través de MLT para decodificar y renderizar.",
+     "orden_instalacion": "Viene con los paquetes oficiales; comprueba la versión en la configuración si fallan códecs."
+    },
+    {
+     "id": "whisper",
+     "motivo": "La función de voz a texto de Kdenlive puede usar Whisper para generar subtítulos.",
+     "orden_instalacion": "Instala Whisper desde la configuración de voz a texto; después genera los subtítulos."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Las grabaciones de OBS Studio se montan en Kdenlive (combinación por arquitectura).",
+     "orden_instalacion": "Graba con OBS; después importa los clips en Kdenlive."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): shotcut, opencut. Reporta incidencias y contribuye en invent.kde.org, no en el espejo de GitHub.",
+   "descripcion_fuentes": [
+    "https://github.com/KDE/kdenlive/blob/master/README.md",
+    "https://docs.kdenlive.org/en/effects_and_filters/speech_to_text.html",
+    "https://invent.kde.org/multimedia/kdenlive"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "KDE/kdenlive",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16"
+   },
+   "descripcion_origen": {
+    "host": "KDE Invent (GitLab)",
+    "name_with_owner": "multimedia/kdenlive",
+    "url": "https://invent.kde.org/multimedia/kdenlive",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "latest_release": "v26.08.3 (2026-11-03)",
+    "license": "GPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "xberg": {
+   "name": "Xberg (antes Kreuzberg)",
+   "cat": 13,
+   "sub": "conversion",
+   "desc": "Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP.",
+   "how": "Núcleo Rust con bindings para 15 lenguajes, CLI, API REST y servidor MCP; detecta el formato, extrae y aplica OCR o transcripción cuando hace falta.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/xberg-io/xberg/blob/main/README.md",
+   "cases": [
+    "preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG",
+    "extraer texto y tablas de escaneos con OCR en lote sin GPU"
+   ],
+   "stack": "Rust, Cargo.toml, composer.json, package.json, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG; extraer texto y tablas de escaneos con OCR en lote sin GPU",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "claude-code",
+    "tesseract",
+    "qdrant"
+   ],
+   "alternatives": [
+    "tika",
+    "unstructured"
+   ],
+   "repo": "https://github.com/xberg-io/xberg",
+   "homepage": "https://docs.xberg.io",
+   "license": "MIT",
+   "lang": "Rust",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/xberg.md",
+   "access": {
+    "api": "optional",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/xberg-io/xberg/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "1a96d41c9746e03feeb5c372b01d8bc25ed13035"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "pip install xberg",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/xberg-io/xberg/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "1a96d41c9746e03feeb5c372b01d8bc25ed13035",
+    "root_tree_sha": "824121d6b28ee3a5a3518c1a53e56ce10f60bd26",
+    "readme_url": "https://github.com/xberg-io/xberg/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG; extraer texto y tablas de escaneos con OCR en lote sin GPU.",
+   "models": "OCR con Tesseract, PaddleOCR o VLM; transcripción con Whisper ONNX; embeddings locales ONNX o de proveedores",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "extraer texto y tablas de escaneos con OCR en lote sin GPU",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install xberg` y extrae el texto de un PDF y un DOCX de prueba.",
+    "success": "Obtienes Markdown limpio con tablas y metadatos de ambos archivos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/xberg-io/xberg/blob/main/README.md",
+    "source_blob_sha": "1a96d41c9746e03feeb5c372b01d8bc25ed13035",
+    "previous_category": [
+     13,
+     "conversion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Motor de inteligencia documental de código abierto (MIT) de xberg-io. Es la nueva iteración de Kreuzberg, reconstruida y renombrada en una línea v1; la API de GitHub redirige el repositorio original a este nombre. Muy activo.",
+   "que_hace": "Extrae texto limpio, tablas, metadatos y datos estructurados de 107 formatos (PDF, Office, imágenes, HTML, correo, e-books, publicaciones científicas, código fuente), recorre archivos comprimidos anidados con límites de seguridad, descarga y rastrea URL, transcribe audio y vídeo, aplica OCR bajo demanda y genera embeddings.",
+   "como_lo_hace": "Núcleo en Rust; se instala con `pip install xberg`, npm, Homebrew, Docker o Helm, y funciona en CPU sin GPU. Ofrece biblioteca, CLI de 14 comandos, API REST (`xberg serve`), servidor MCP y skills de agente (`npx skills add xberg-io/xberg`).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Xberg publica skills de agente (`npx skills add xberg-io/xberg`) y un servidor MCP para extraer documentos desde agentes de código.",
+     "orden_instalacion": "Instala Xberg; después añade la skill o registra su servidor MCP en Claude Code."
+    },
+    {
+     "id": "tesseract",
+     "motivo": "Tesseract es uno de los motores de OCR que Xberg usa bajo demanda para documentos escaneados.",
+     "orden_instalacion": "Instala Tesseract y sus idiomas; después activa el backend en la configuración."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Los fragmentos y embeddings que genera Xberg se pueden indexar en Qdrant para búsqueda semántica (combinación por arquitectura).",
+     "orden_instalacion": "Extrae y vectoriza con Xberg; después sube los puntos a una colección de Qdrant."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): tika, unstructured. Proyectos que usaban Kreuzberg deben revisar la migración a la línea v1 de Xberg; la rama Kreuzberg v4 LTS sigue en kreuzberg-dev.",
+   "descripcion_fuentes": [
+    "https://github.com/xberg-io/xberg/blob/main/README.md",
+    "https://docs.xberg.io"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "xberg-io/xberg",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.4.0 (2026-11-13)"
+   }
+  },
+  "tika": {
+   "name": "Apache Tika",
+   "cat": 13,
+   "sub": "conversion",
+   "desc": "Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG.",
+   "how": "Biblioteca y servidor Java (tika-server) con parsers para PDF, Office, imágenes y más; aísla el análisis en procesos y usa Tesseract o VLM para OCR.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/apache/tika/blob/main/README.md",
+   "cases": [
+    "extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación",
+    "alimentar un sistema RAG con Markdown generado desde documentos Office y PDF"
+   ],
+   "stack": "Java, pom.xml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación; alimentar un sistema RAG con Markdown generado desde documentos Office y PDF",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "tesseract",
+    "paperless-ngx",
+    "claude-code"
+   ],
+   "alternatives": [
+    "xberg",
+    "unstructured"
+   ],
+   "repo": "https://github.com/apache/tika",
+   "homepage": "https://tika.apache.org/",
+   "license": "Apache-2.0",
+   "lang": "Java",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/tika.md",
+   "access": {
+    "api": "optional",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/apache/tika/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "f910de770cc4c5f120eb25aca5bc106bf4b8a027"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/apache/tika/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "f910de770cc4c5f120eb25aca5bc106bf4b8a027",
+    "root_tree_sha": "eedcbd14a72f536f8bc1ef3d669037540a2cc196",
+    "readme_url": "https://github.com/apache/tika/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación; alimentar un sistema RAG con Markdown generado desde documentos Office y PDF.",
+   "models": "Parsers opcionales con modelos de visión y lenguaje (Claude, Gemini, OpenAI) para documentos que el OCR no lee",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "alimentar un sistema RAG con Markdown generado desde documentos Office y PDF",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Arranca tika-server con su imagen Docker o JAR y envía un PDF de prueba al endpoint de extracción.",
+    "success": "El servidor devuelve el texto en Markdown y los metadatos del documento.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/apache/tika/blob/main/README.md",
+    "source_blob_sha": "f910de770cc4c5f120eb25aca5bc106bf4b8a027",
+    "previous_category": [
+     13,
+     "conversion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Proyecto de la Apache Software Foundation (Apache-2.0), referencia histórica en extracción de contenido. Muy maduro; la serie 4.x se orienta a pipelines de agentes.",
+   "que_hace": "Detecta el tipo y extrae texto y metadatos de más de mil formatos (PPT, XLS, PDF, imágenes, correos, archivos comprimidos). La versión 4 emite Markdown por defecto, analiza en procesos aislados ante fallos y añade parsers con modelos de visión para documentos difíciles.",
+   "como_lo_hace": "Escrito en Java; se usa como biblioteca Maven, aplicación o tika-server por REST (también en Docker). El OCR clásico usa Tesseract instalado en el sistema; los parsers VLM necesitan credenciales del proveedor.",
+   "combina_con": [
+    {
+     "id": "tesseract",
+     "motivo": "Tika usa Tesseract como motor de OCR para imágenes y PDF escaneados.",
+     "orden_instalacion": "Instala Tesseract y sus idiomas en el sistema o la imagen; después activa el parser de OCR."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Paperless-ngx usa Apache Tika (con Gotenberg) para procesar documentos de Office y correos.",
+     "orden_instalacion": "Despliega tika-server junto a Paperless-ngx y habilita su integración en la configuración."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README de Tika incluye una sección para usarlo desde agentes de IA, con salida Markdown estructurada.",
+     "orden_instalacion": "Arranca tika-server; después indica al agente cómo llamar al endpoint de extracción."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): xberg, unstructured. Tika incluye subcomponentes con licencias propias (ver LICENSE).",
+   "descripcion_fuentes": [
+    "https://github.com/apache/tika/blob/main/README.md",
+    "https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/configuration.md"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p03",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "apache/tika",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16"
    }
   }
  },

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 663 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 685 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -496,7 +496,7 @@
    "title": "Diseñar y construir interfaces web",
    "desc": "Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.",
    "file": "human/categorias/09-dise-o-ui-frontend.md",
-   "count": 29,
+   "count": 32,
    "subs": [
     {
      "key": "componentes",
@@ -523,7 +523,7 @@
    "title": "Dashboards, analítica y mapas",
    "desc": "Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.",
    "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-   "count": 21,
+   "count": 31,
    "subs": [
     {
      "key": "producto",
@@ -558,7 +558,7 @@
    "title": "Generar y editar imágenes con IA",
    "desc": "Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-   "count": 8,
+   "count": 10,
    "subs": [
     {
      "key": "interfaces",
@@ -581,7 +581,7 @@
    "title": "Editar, grabar y generar video",
    "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 15,
+   "count": 19,
    "subs": [
     {
      "key": "edicion",
@@ -600,7 +600,7 @@
    "title": "PDF, OCR y procesamiento de documentos",
    "desc": "Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.",
    "file": "human/categorias/13-documentos-presentaciones.md",
-   "count": 19,
+   "count": 22,
    "subs": [
     {
      "key": "conversion",
@@ -11817,7 +11817,9 @@
    "alt": [
     "ant-design",
     "ui",
-    "heroui"
+    "heroui",
+    "chakra-ui",
+    "mantine"
    ],
    "doc": "human/fichas/mui.md",
    "github_id": 23083156,
@@ -15005,7 +15007,10 @@
    "lib": false,
    "pick": false,
    "one": "Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.",
-   "alt": [],
+   "alt": [
+    "shotcut",
+    "kdenlive"
+   ],
    "doc": "human/fichas/opencut.md",
    "github_id": 1006414368,
    "starred_by": "Cristrva1",
@@ -15941,7 +15946,9 @@
    "pick": false,
    "one": "ETL open source que transforma documentos complejos en datos estructurados para LLM.",
    "alt": [
-    "docling"
+    "docling",
+    "xberg",
+    "tika"
    ],
    "doc": "human/fichas/unstructured.md",
    "github_id": 541798154,
@@ -27243,6 +27250,827 @@
     "no_api",
     "local_model"
    ]
+  },
+  {
+   "id": "storybook",
+   "name": "Storybook",
+   "cat": 9,
+   "sub": "componentes",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ui",
+    "typescript",
+    "javascript",
+    "docs"
+   ],
+   "stars": 91581,
+   "gh": "storybookjs/storybook",
+   "lib": false,
+   "pick": false,
+   "one": "Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.",
+   "alt": [],
+   "doc": "human/fichas/storybook.md",
+   "github_id": 54173593,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "leaflet",
+   "name": "Leaflet",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "javascript",
+    "library",
+    "maps"
+   ],
+   "stars": 45933,
+   "gh": "Leaflet/Leaflet",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.",
+   "alt": [
+    "maplibre"
+   ],
+   "doc": "human/fichas/leaflet.md",
+   "github_id": 931135,
+   "lang": "JavaScript",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sherlock",
+   "name": "Sherlock",
+   "cat": 10,
+   "sub": "osint",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "osint",
+    "python",
+    "cli",
+    "security"
+   ],
+   "stars": 112706,
+   "gh": "sherlock-project/sherlock",
+   "lib": false,
+   "pick": false,
+   "one": "CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.",
+   "alt": [
+    "maigret"
+   ],
+   "doc": "human/fichas/sherlock.md",
+   "github_id": 162998479,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "maigret",
+   "name": "Maigret",
+   "cat": 10,
+   "sub": "osint",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "osint",
+    "python",
+    "cli",
+    "security"
+   ],
+   "stars": 40774,
+   "gh": "soxoj/maigret",
+   "lib": false,
+   "pick": false,
+   "one": "Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.",
+   "alt": [
+    "sherlock"
+   ],
+   "doc": "human/fichas/maigret.md",
+   "github_id": 275386910,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "upscayl",
+   "name": "Upscayl",
+   "cat": 11,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "image",
+    "typescript",
+    "app",
+    "local"
+   ],
+   "stars": 52711,
+   "gh": "upscayl/upscayl",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows.",
+   "alt": [],
+   "doc": "human/fichas/upscayl.md",
+   "github_id": 519577891,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "handbrake",
+   "name": "HandBrake",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "video",
+    "c",
+    "app"
+   ],
+   "stars": 25017,
+   "gh": "HandBrake/HandBrake",
+   "lib": false,
+   "pick": false,
+   "one": "Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo.",
+   "alt": [],
+   "doc": "human/fichas/handbrake.md",
+   "github_id": 41215835,
+   "lang": "C",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ltx-2",
+   "name": "LTX-2",
+   "cat": 12,
+   "sub": "generativo",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "video",
+    "python",
+    "model",
+    "local"
+   ],
+   "stars": 10259,
+   "gh": "Lightricks/LTX-2",
+   "lib": false,
+   "pick": false,
+   "one": "Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado.",
+   "alt": [],
+   "doc": "human/fichas/ltx-2.md",
+   "github_id": 1127234517,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "surya",
+   "name": "Surya",
+   "cat": 13,
+   "sub": "ocr",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ocr",
+    "python",
+    "pdf",
+    "model"
+   ],
+   "stars": 21593,
+   "gh": "datalab-to/surya",
+   "lib": false,
+   "pick": false,
+   "one": "OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas.",
+   "alt": [],
+   "doc": "human/fichas/surya.md",
+   "github_id": 741297064,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "chakra-ui",
+   "name": "Chakra UI",
+   "cat": 9,
+   "sub": "componentes",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ui",
+    "typescript",
+    "react",
+    "library"
+   ],
+   "stars": 40727,
+   "gh": "chakra-ui/chakra-ui",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.",
+   "alt": [
+    "mantine",
+    "mui"
+   ],
+   "doc": "human/fichas/chakra-ui.md",
+   "github_id": 202890778,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mantine",
+   "name": "Mantine",
+   "cat": 9,
+   "sub": "componentes",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ui",
+    "typescript",
+    "react",
+    "library"
+   ],
+   "stars": 31948,
+   "gh": "mantinedev/mantine",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones.",
+   "alt": [
+    "chakra-ui",
+    "mui"
+   ],
+   "doc": "human/fichas/mantine.md",
+   "github_id": 327628682,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "evidence",
+   "name": "Evidence",
+   "cat": 10,
+   "sub": "bi",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "analytics",
+    "typescript",
+    "app"
+   ],
+   "stars": 7119,
+   "gh": "evidence-dev/evidence",
+   "lib": false,
+   "pick": false,
+   "one": "BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio.",
+   "alt": [],
+   "doc": "human/fichas/evidence.md",
+   "github_id": 371239231,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "qgis",
+   "name": "QGIS",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "cpp",
+    "app",
+    "maps"
+   ],
+   "stars": 14842,
+   "gh": "qgis/QGIS",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server.",
+   "alt": [],
+   "doc": "human/fichas/qgis.md",
+   "github_id": 1690480,
+   "lang": "C++",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "deck.gl",
+   "name": "deck.gl",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "typescript",
+    "library",
+    "maps"
+   ],
+   "stars": 14760,
+   "gh": "visgl/deck.gl",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D.",
+   "alt": [],
+   "doc": "human/fichas/deck.gl.md",
+   "github_id": 48030204,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "maplibre",
+   "name": "MapLibre GL JS",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "typescript",
+    "library",
+    "maps"
+   ],
+   "stars": 12101,
+   "gh": "maplibre/maplibre-gl-js",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.",
+   "alt": [
+    "leaflet"
+   ],
+   "doc": "human/fichas/maplibre.md",
+   "github_id": 319779344,
+   "lang": "TypeScript",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kepler.gl",
+   "name": "kepler.gl",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "typescript",
+    "app",
+    "maps"
+   ],
+   "stars": 12096,
+   "gh": "keplergl/kepler.gl",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.",
+   "alt": [],
+   "doc": "human/fichas/kepler.gl.md",
+   "github_id": 123345344,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "theharvester",
+   "name": "theHarvester",
+   "cat": 10,
+   "sub": "osint",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "osint",
+    "python",
+    "security",
+    "cli"
+   ],
+   "stars": 18328,
+   "gh": "laramies/theHarvester",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas.",
+   "alt": [],
+   "doc": "human/fichas/theharvester.md",
+   "github_id": 1212922,
+   "lang": "Python",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "recon-ng",
+   "name": "Recon-ng",
+   "cat": 10,
+   "sub": "osint",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "osint",
+    "python",
+    "security",
+    "cli"
+   ],
+   "stars": 6050,
+   "gh": "lanmaster53/recon-ng",
+   "lib": false,
+   "pick": false,
+   "one": "Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit.",
+   "alt": [],
+   "doc": "human/fichas/recon-ng.md",
+   "github_id": 178254323,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "chainner",
+   "name": "chaiNNer",
+   "cat": 11,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "image",
+    "python",
+    "app",
+    "local"
+   ],
+   "stars": 6172,
+   "gh": "chaiNNer-org/chaiNNer",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux.",
+   "alt": [],
+   "doc": "human/fichas/chainner.md",
+   "github_id": 404144554,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "shotcut",
+   "name": "Shotcut",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "video",
+    "cpp",
+    "app",
+    "edicion"
+   ],
+   "stars": 15698,
+   "gh": "mltframework/shotcut",
+   "lib": false,
+   "pick": false,
+   "one": "Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.",
+   "alt": [
+    "kdenlive",
+    "opencut"
+   ],
+   "doc": "human/fichas/shotcut.md",
+   "github_id": 4118776,
+   "lang": "C++",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kdenlive",
+   "name": "Kdenlive",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "video",
+    "cpp",
+    "app",
+    "edicion"
+   ],
+   "stars": 6122,
+   "gh": "KDE/kdenlive",
+   "lib": false,
+   "pick": false,
+   "one": "Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.",
+   "alt": [
+    "shotcut",
+    "opencut"
+   ],
+   "doc": "human/fichas/kdenlive.md",
+   "github_id": 42723268,
+   "lang": "C++",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "xberg",
+   "name": "Xberg (antes Kreuzberg)",
+   "cat": 13,
+   "sub": "conversion",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "docs",
+    "rust",
+    "pdf",
+    "mcp"
+   ],
+   "stars": 9590,
+   "gh": "xberg-io/xberg",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP.",
+   "alt": [
+    "tika",
+    "unstructured"
+   ],
+   "doc": "human/fichas/xberg.md",
+   "github_id": 925434317,
+   "lang": "Rust",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "tika",
+   "name": "Apache Tika",
+   "cat": 13,
+   "sub": "conversion",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "docs",
+    "java",
+    "pdf",
+    "server"
+   ],
+   "stars": 4150,
+   "gh": "apache/tika",
+   "lib": false,
+   "pick": false,
+   "one": "Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG.",
+   "alt": [
+    "xberg",
+    "unstructured"
+   ],
+   "doc": "human/fichas/tika.md",
+   "github_id": 206427,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
   }
  ],
  "discovery": {
@@ -27991,6 +28819,7 @@
      "strix"
     ],
     "categories": [
+     10,
      16
     ],
     "keywords": [

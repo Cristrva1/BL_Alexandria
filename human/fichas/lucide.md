@@ -33,6 +33,12 @@ Se instala con el paquete del framework (por ejemplo, `lucide-react`) e importa 
 | [normalize.css](normalize-css.md) | Combinación recíproca: normalize.css lo enlaza como «Iconos SVG en proyectos de CSS propio. (combinación por arquitectura)». | Orden indicado desde normalize.css: Instala el paquete de Lucide adecuado. |
 | [Radix Primitives](radix-primitives.md) | Combinación recíproca: Radix Primitives lo enlaza como «Iconos para triggers y menús. (combinación por arquitectura)». | Orden indicado desde Radix Primitives: Instala lucide-react. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Chakra UI](chakra-ui.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.73.0 (2026-11-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

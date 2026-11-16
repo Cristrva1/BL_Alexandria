@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **661 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **683 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -20,11 +20,11 @@ Las **661 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 28 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 20 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 31 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
-| 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 29 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
-| 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 21 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
-| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 8 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
-| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 15 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
-| 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 19 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
+| 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 32 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
+| 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 31 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
+| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 10 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
+| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 19 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
+| 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 19 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 27 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
 | 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 26 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
@@ -1096,7 +1096,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `go install github.com/projectdiscovery/katana/cmd/katana@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md) · [theHarvester](human/fichas/theharvester.md)<br>
 **Más:** [ficha completa](human/fichas/katana.md) · [GitHub](https://github.com/projectdiscovery/katana)
 
 #### 🕷️ Jina Reader
@@ -1287,7 +1287,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `brew install gallery-dl` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: archivar una colección propia de imágenes con metadatos y nombres ordenados; descargar un conjunto de imágenes públicas para un dataset con permiso de uso — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
+**Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Real-ESRGAN](human/fichas/real-esrgan.md) · [Upscayl](human/fichas/upscayl.md)<br>
 **Más:** [ficha completa](human/fichas/gallery-dl.md) · [GitHub](https://github.com/mikf/gallery-dl)
 
 #### 📸 instaloader
@@ -2399,7 +2399,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 
 Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.
 
-**⚖️ ¿Cuál elegir? — ui, daisyUI, Ant Design, Material UI, heroui**
+**⚖️ ¿Cuál elegir? — ui, daisyUI, Ant Design, Material UI, Chakra UI, Mantine, heroui**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -2407,6 +2407,8 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 | [daisyUI](human/fichas/daisyui.md) | Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Ant Design](human/fichas/ant-design.md) | Tu objetivo encaja con estos ejemplos: Crear un panel administrativo; Montar formularios de gestión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Material UI](human/fichas/mui.md) | Tu objetivo encaja con estos ejemplos: Crear un dashboard Material Design; Construir una pantalla de ajustes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Chakra UI](human/fichas/chakra-ui.md) | Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [Mantine](human/fichas/mantine.md) | Tu objetivo encaja con estos ejemplos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro | buscas una aplicación lista y no quieres preparar un proyecto de código |
 | [heroui](human/fichas/heroui.md) | Tu objetivo encaja con estos ejemplos: Construir formularios accesibles; Crear una interfaz con temas compartidos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — React Bits, magicui**
@@ -2480,6 +2482,15 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Combina con:** [Recharts](human/fichas/recharts.md) · [swr](human/fichas/swr.md) · [AI SDK (Vercel)](human/fichas/vercel-ai.md)<br>
 **Más:** [ficha completa](human/fichas/mui.md) · [GitHub](https://github.com/mui/material-ui)
 
+#### 🖥️ Storybook
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 91.6k<br>
+**Qué es:** Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/storybookjs/storybook/blob/next/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Mantine](human/fichas/mantine.md) · [Chakra UI](human/fichas/chakra-ui.md)<br>
+**Más:** [ficha completa](human/fichas/storybook.md) · [GitHub](https://github.com/storybookjs/storybook)
+
 #### 🧱 React Bits
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 52k<br>
 **Qué es:** La mayor colección open source de componentes React animados e interactivos para webs llamativas.<br>
@@ -2498,6 +2509,15 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Combina con:** [supabase](human/fichas/supabase.md) · [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
 **Más:** [ficha completa](human/fichas/tanstack-query.md) · [GitHub](https://github.com/TanStack/query)
 
+#### 📚 Chakra UI
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 40.7k<br>
+**Qué es:** Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/chakra-ui/chakra-ui/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Storybook](human/fichas/storybook.md) · [Lucide](human/fichas/lucide.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/chakra-ui.md) · [GitHub](https://github.com/chakra-ui/chakra-ui)
+
 #### 🔄 swr
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 32.5k<br>
 **Qué es:** Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.<br>
@@ -2506,6 +2526,15 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Elige si:** Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ui](human/fichas/ui.md) · [heroui](human/fichas/heroui.md) · [supabase](human/fichas/supabase.md) · [Ant Design](human/fichas/ant-design.md) · [Material UI](human/fichas/mui.md) · [uPlot](human/fichas/uplot.md)<br>
 **Más:** [ficha completa](human/fichas/swr.md) · [GitHub](https://github.com/vercel/swr)
+
+#### 📚 Mantine
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 31.9k<br>
+**Qué es:** Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/mantinedev/mantine/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Storybook](human/fichas/storybook.md) · [Recharts](human/fichas/recharts.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/mantine.md) · [GitHub](https://github.com/mantinedev/mantine)
 
 #### 🦸 heroui
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 31.2k<br>
@@ -2757,12 +2786,26 @@ Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consu
 | [Chart.js](human/fichas/chart-js.md) | Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [echarts](human/fichas/echarts.md) | Tu objetivo encaja con estos ejemplos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — Sherlock, Maigret**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Sherlock](human/fichas/sherlock.md) | Tu objetivo encaja con estos ejemplos: comprobar dónde está registrado un nombre de usuario propio o de tu marca; iniciar una investigación OSINT autorizada a partir de un alias | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Maigret](human/fichas/maigret.md) | Tu objetivo encaja con estos ejemplos: auditar la huella pública de un alias propio; investigaciones OSINT autorizadas que requieren un informe consolidado | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — gods-eye-view, osiris**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [gods-eye-view](human/fichas/gods-eye-view.md) | Tu objetivo encaja con estos ejemplos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [osiris](human/fichas/osiris.md) | Tu objetivo encaja con estos ejemplos: Explorar noticias por ubicación; Comparar eventos públicos en un globo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — Leaflet, MapLibre GL JS**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Leaflet](human/fichas/leaflet.md) | Tu objetivo encaja con estos ejemplos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [MapLibre GL JS](human/fichas/maplibre.md) | Tu objetivo encaja con estos ejemplos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
 ### Analítica web y de producto
 
@@ -2812,7 +2855,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://superset.apache.org/docs/quickstart/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar métricas de una base SQL; Compartir un dashboard interno — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [DuckDB](human/fichas/duckdb.md) · [WrenAI](human/fichas/wrenai.md) · [echarts](human/fichas/echarts.md) · [hudi](human/fichas/hudi.md) · [Kestra](human/fichas/kestra.md)<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [WrenAI](human/fichas/wrenai.md) · [echarts](human/fichas/echarts.md) · [hudi](human/fichas/hudi.md) · [Kestra](human/fichas/kestra.md) · [deck.gl](human/fichas/deck-gl.md)<br>
 **Más:** [ficha completa](human/fichas/superset.md) · [GitHub](https://github.com/apache/superset)
 
 #### 📊 WrenAI ⭐
@@ -2853,6 +2896,15 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md)<br>
 **Más:** [ficha completa](human/fichas/redash.md) · [GitHub](https://github.com/getredash/redash)
 
+#### 🖥️ Evidence
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 7.1k<br>
+**Qué es:** BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/evidence-dev/evidence/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md) · [supabase](human/fichas/supabase.md)<br>
+**Más:** [ficha completa](human/fichas/evidence.md) · [GitHub](https://github.com/evidence-dev/evidence)
+
 ### Librerías de gráficos
 
 #### 📉 Recharts ⭐
@@ -2862,7 +2914,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `# latest stable
 npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Visualizar una serie de ventas; Comparar categorías en un dashboard React — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui](human/fichas/ui.md) · [D3.js](human/fichas/d3.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Material UI](human/fichas/mui.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [D3.js](human/fichas/d3.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Material UI](human/fichas/mui.md) · [Mantine](human/fichas/mantine.md)<br>
 **Más:** [ficha completa](human/fichas/recharts.md) · [GitHub](https://github.com/recharts/recharts)
 
 #### 📉 D3.js
@@ -2923,6 +2975,15 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 
 ### Inteligencia de fuentes abiertas y mapas
 
+#### 🖥️ Sherlock
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 113k<br>
+**Qué es:** CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pipx install sherlock-project` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: comprobar dónde está registrado un nombre de usuario propio o de tu marca; iniciar una investigación OSINT autorizada a partir de un alias — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [theHarvester](human/fichas/theharvester.md) · [Claude Code](human/fichas/claude-code.md) · [DuckDB](human/fichas/duckdb.md)<br>
+**Más:** [ficha completa](human/fichas/sherlock.md) · [GitHub](https://github.com/sherlock-project/sherlock)
+
 #### 🖥️ gods-eye-view
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 64.9k<br>
 **Qué es:** Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.<br>
@@ -2936,6 +2997,24 @@ npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Pythia](human/fichas/pythia.md)<br>
 **Más:** [ficha completa](human/fichas/gods-eye-view.md) · [GitHub](https://github.com/bilawalsidhu/gods-eye-view)
 
+#### 🖥️ Maigret
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 40.8k<br>
+**Qué es:** Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install maigret` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar la huella pública de un alias propio; investigaciones OSINT autorizadas que requieren un informe consolidado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [theHarvester](human/fichas/theharvester.md) · [Claude Code](human/fichas/claude-code.md) · [DuckDB](human/fichas/duckdb.md)<br>
+**Más:** [ficha completa](human/fichas/maigret.md) · [GitHub](https://github.com/soxoj/maigret)
+
+#### 🖥️ theHarvester
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 18.3k<br>
+**Qué es:** Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/laramies/theHarvester/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Sherlock](human/fichas/sherlock.md) · [Maigret](human/fichas/maigret.md) · [Katana](human/fichas/katana.md) · [Recon-ng](human/fichas/recon-ng.md)<br>
+**Más:** [ficha completa](human/fichas/theharvester.md) · [GitHub](https://github.com/laramies/theHarvester)
+
 #### 📊 osiris
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 11.7k<br>
 **Qué es:** Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.<br>
@@ -2947,6 +3026,15 @@ npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar noticias por ubicación; Comparar eventos públicos en un globo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Pythia](human/fichas/pythia.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/osiris.md) · [GitHub](https://github.com/simplifaisoul/osiris)
+
+#### 🖥️ Recon-ng
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6k<br>
+**Qué es:** Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/lanmaster53/recon-ng/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [theHarvester](human/fichas/theharvester.md) · [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/recon-ng.md) · [GitHub](https://github.com/lanmaster53/recon-ng)
 
 #### 📊 Pythia
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 1.2k<br>
@@ -2960,6 +3048,51 @@ cp .env.example .env          # sensible defaults — no keys needed
 **Más:** [ficha completa](human/fichas/pythia.md) · [GitHub](https://github.com/jangles-byte/Pythia)
 
 ### Fotogrametría y mapas desde imágenes
+
+#### 📚 Leaflet
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 45.9k<br>
+**Qué es:** Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Leaflet/Leaflet/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [WebODM](human/fichas/webodm.md) · [QGIS](human/fichas/qgis.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/leaflet.md) · [GitHub](https://github.com/Leaflet/Leaflet)
+
+#### 🖥️ QGIS
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.8k<br>
+**Qué es:** Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/qgis/QGIS/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Leaflet](human/fichas/leaflet.md) · [MapLibre GL JS](human/fichas/maplibre.md) · [WebODM](human/fichas/webodm.md) · [DuckDB](human/fichas/duckdb.md)<br>
+**Más:** [ficha completa](human/fichas/qgis.md) · [GitHub](https://github.com/qgis/QGIS)
+
+#### 📚 deck.gl
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 14.8k<br>
+**Qué es:** Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `npm install deck.gl` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [MapLibre GL JS](human/fichas/maplibre.md) · [kepler.gl](human/fichas/kepler-gl.md) · [Apache Superset](human/fichas/superset.md) · [JupyterLab](human/fichas/jupyterlab.md)<br>
+**Más:** [ficha completa](human/fichas/deck-gl.md) · [GitHub](https://github.com/visgl/deck.gl)
+
+#### 📚 MapLibre GL JS
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 12.1k<br>
+**Qué es:** Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/maplibre/maplibre-gl-js/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [deck.gl](human/fichas/deck-gl.md) · [kepler.gl](human/fichas/kepler-gl.md) · [QGIS](human/fichas/qgis.md)<br>
+**Más:** [ficha completa](human/fichas/maplibre.md) · [GitHub](https://github.com/maplibre/maplibre-gl-js)
+
+#### 🖥️ kepler.gl
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 12.1k<br>
+**Qué es:** Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/keplergl/kepler.gl/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [deck.gl](human/fichas/deck-gl.md) · [MapLibre GL JS](human/fichas/maplibre.md) · [JupyterLab](human/fichas/jupyterlab.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/kepler-gl.md) · [GitHub](https://github.com/keplergl/kepler.gl)
 
 #### 🖥️ ODM
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.6k<br>
@@ -2977,7 +3110,7 @@ docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --p
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.webodm.org/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [marimo](human/fichas/marimo.md)<br>
+**Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [marimo](human/fichas/marimo.md) · [Leaflet](human/fichas/leaflet.md) · [QGIS](human/fichas/qgis.md)<br>
 **Más:** [ficha completa](human/fichas/webodm.md) · [GitHub](https://github.com/WebODM/WebODM)
 
 ---
@@ -3056,6 +3189,15 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Combina con:** [ComfyUI](human/fichas/comfyui.md) · [Real-ESRGAN](human/fichas/real-esrgan.md) · [Gradio](human/fichas/gradio.md) · [CodeFormer](human/fichas/codeformer.md)<br>
 **Más:** [ficha completa](human/fichas/rembg.md) · [GitHub](https://github.com/danielgatis/rembg)
 
+#### 🖥️ Upscayl
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 52.7k<br>
+**Qué es:** Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/upscayl/upscayl/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [gallery-dl](human/fichas/gallery-dl.md) · [CodeFormer](human/fichas/codeformer.md)<br>
+**Más:** [ficha completa](human/fichas/upscayl.md) · [GitHub](https://github.com/upscayl/upscayl)
+
 #### 🔍 Real-ESRGAN
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 37.5k<br>
 **Qué es:** Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos.<br>
@@ -3081,14 +3223,31 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/sczhou/CodeFormer/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [ComfyUI](human/fichas/comfyui.md) · [rembg](human/fichas/rembg.md) · [Deep-Live-Cam](human/fichas/deep-live-cam.md)<br>
+**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [ComfyUI](human/fichas/comfyui.md) · [rembg](human/fichas/rembg.md) · [Deep-Live-Cam](human/fichas/deep-live-cam.md) · [Upscayl](human/fichas/upscayl.md) · [chaiNNer](human/fichas/chainner.md)<br>
 **Más:** [ficha completa](human/fichas/codeformer.md) · [GitHub](https://github.com/sczhou/CodeFormer)
+
+#### 🖥️ chaiNNer
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.2k<br>
+**Qué es:** Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [PyTorch](human/fichas/pytorch.md) · [CodeFormer](human/fichas/codeformer.md)<br>
+**Más:** [ficha completa](human/fichas/chainner.md) · [GitHub](https://github.com/chaiNNer-org/chaiNNer)
 
 ---
 
 ## 🎬 12. Editar, grabar y generar video
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
+
+**⚖️ ¿Cuál elegir? — OpenCut, Shotcut, Kdenlive**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [OpenCut](human/fichas/opencut.md) | Tu objetivo encaja con estos ejemplos: Evaluar una alternativa de edición abierta; Estudiar la arquitectura de un editor con plugins | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Shotcut](human/fichas/shotcut.md) | Tu objetivo encaja con estos ejemplos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Kdenlive](human/fichas/kdenlive.md) | Tu objetivo encaja con estos ejemplos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales | necesitas una instalación sin cuentas ni dependencias adicionales |
 
 **⚖️ ¿Cuál elegir? — MoneyPrinterTurbo, short-video-factory**
 
@@ -3143,6 +3302,15 @@ Editores, grabadores, utilidades de medios y modelos de video generativo. La edi
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [yt-dlp](human/fichas/yt-dlp.md) · [whisperX](human/fichas/whisperx.md) · [MoviePy](human/fichas/moviepy.md) · [OBS Studio](human/fichas/obs-studio.md) · [OpenCut](human/fichas/opencut.md)<br>
 **Más:** [ficha completa](human/fichas/lossless-cut.md) · [GitHub](https://github.com/mifi/lossless-cut)
 
+#### 🖥️ HandBrake
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 25k<br>
+**Qué es:** Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/HandBrake/HandBrake/blob/master/README.markdown); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [OBS Studio](human/fichas/obs-studio.md) · [LosslessCut](human/fichas/lossless-cut.md)<br>
+**Más:** [ficha completa](human/fichas/handbrake.md) · [GitHub](https://github.com/HandBrake/HandBrake)
+
 #### ✂️ VideoLingo
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 19.3k<br>
 **Qué es:** Combina reconocimiento de voz, alineación, traducción, segmentación y doblaje. La ruta revisada utiliza Qwen3-ASR y ForcedAligner localmente por defecto; traducción y TTS tienen requisitos y costes distintos según proveedor.<br>
@@ -3161,6 +3329,24 @@ uv run start.py` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [FFmpeg](human/fichas/ffmpeg.md) · [yt-dlp](human/fichas/yt-dlp.md)<br>
 **Más:** [ficha completa](human/fichas/concat.md) · [GitHub](https://github.com/jub0t/Concat)
+
+#### 🖥️ Shotcut
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 15.7k<br>
+**Qué es:** Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/mltframework/shotcut/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [OBS Studio](human/fichas/obs-studio.md)<br>
+**Más:** [ficha completa](human/fichas/shotcut.md) · [GitHub](https://github.com/mltframework/shotcut)
+
+#### 🖥️ Kdenlive
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 6.1k<br>
+**Qué es:** Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/KDE/kdenlive/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [whisper](human/fichas/whisper.md) · [OBS Studio](human/fichas/obs-studio.md)<br>
+**Más:** [ficha completa](human/fichas/kdenlive.md) · [GitHub](https://github.com/KDE/kdenlive)
 
 #### ✂️ DaVinci Resolve MCP
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 4.1k<br>
@@ -3223,6 +3409,15 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Wan2.2](human/fichas/wan2-2.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md) · [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md) · [HunyuanVideo](human/fichas/hunyuanvideo.md)<br>
 **Más:** [ficha completa](human/fichas/wan2gp.md) · [GitHub](https://github.com/deepbeepmeep/WanGP)
+
+#### 🧩 LTX-2
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 10.3k<br>
+**Qué es:** Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Lightricks/LTX-2/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar clips cortos con audio a partir de texto o una imagen en una GPU propia; entrenar un LoRA de estilo o personaje para el modelo — **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos<br>
+**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [FFmpeg](human/fichas/ffmpeg.md) · [PyTorch](human/fichas/pytorch.md)<br>
+**Más:** [ficha completa](human/fichas/ltx-2.md) · [GitHub](https://github.com/Lightricks/LTX-2)
 
 #### 🎬 short-video-factory
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.1k<br>
@@ -3325,7 +3520,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install marker-pdf` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [vLLM](human/fichas/vllm.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Pandoc](human/fichas/pandoc.md)<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Pandoc](human/fichas/pandoc.md) · [Surya](human/fichas/surya.md)<br>
 **Más:** [ficha completa](human/fichas/marker.md) · [GitHub](https://github.com/datalab-to/marker)
 
 #### 🔄 PDF Inspector
@@ -3345,6 +3540,24 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Tesseract](human/fichas/tesseract.md) · [langchain](human/fichas/langchain.md) · [Qdrant](human/fichas/qdrant.md)<br>
 **Más:** [ficha completa](human/fichas/unstructured.md) · [GitHub](https://github.com/Unstructured-IO/unstructured)
+
+#### 📚 Xberg (antes Kreuzberg)
+**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 9.6k<br>
+**Qué es:** Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install xberg` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG; extraer texto y tablas de escaneos con OCR en lote sin GPU — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Tesseract](human/fichas/tesseract.md) · [Qdrant](human/fichas/qdrant.md)<br>
+**Más:** [ficha completa](human/fichas/xberg.md) · [GitHub](https://github.com/xberg-io/xberg)
+
+#### ⚙️ Apache Tika
+**Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.2k<br>
+**Qué es:** Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/apache/tika/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación; alimentar un sistema RAG con Markdown generado desde documentos Office y PDF — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Tesseract](human/fichas/tesseract.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/tika.md) · [GitHub](https://github.com/apache/tika)
 
 ### OCR
 
@@ -3372,7 +3585,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://tesseract-ocr.github.io/tessdoc/Installation.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Unstructured](human/fichas/unstructured.md)<br>
+**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Unstructured](human/fichas/unstructured.md) · [Xberg (antes Kreuzberg)](human/fichas/xberg.md) · [Apache Tika](human/fichas/tika.md)<br>
 **Más:** [ficha completa](human/fichas/tesseract.md) · [GitHub](https://github.com/tesseract-ocr/tesseract)
 
 #### 🔠 Unlimited-OCR
@@ -3384,6 +3597,15 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [SGLang](human/fichas/sglang.md) · [vLLM](human/fichas/vllm.md) · [Transformers](human/fichas/transformers.md)<br>
 **Más:** [ficha completa](human/fichas/unlimited-ocr.md) · [GitHub](https://github.com/baidu/Unlimited-OCR)
+
+#### 🧩 Surya
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 21.6k<br>
+**Qué es:** OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install surya-ocr` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: digitalizar documentos escaneados en varios idiomas conservando el orden de lectura; extraer tablas de PDF como HTML con celdas combinadas — **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Marker](human/fichas/marker.md)<br>
+**Más:** [ficha completa](human/fichas/surya.md) · [GitHub](https://github.com/datalab-to/surya)
 
 #### 🔠 olmOCR
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 19.8k<br>

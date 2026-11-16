@@ -32,9 +32,9 @@ Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o C
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (19). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (21). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[4D-Humans](4d-humans.md) · [awesome-machine-learning](awesome-machine-learning.md) · [bionemo-recipes](bionemo-recipes.md) · [cosmos](cosmos.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [JupyterLab](jupyterlab.md) · [kornia](kornia.md) · [LLM Course](llm-course.md) · [llm.c](llm-c.md) · [LLMs from Scratch](llms-from-scratch.md) · [mmpose](mmpose.md) · [nanochat](nanochat.md) · [NeMo Speech](nemo.md) · [pyannote.audio](pyannote-audio.md) · [TimesFM](timesfm.md) · [train-llm-from-scratch](train-llm-from-scratch.md) · [warp](warp.md) · [WHAM](wham.md) · [whisper](whisper.md)
+[4D-Humans](4d-humans.md) · [awesome-machine-learning](awesome-machine-learning.md) · [bionemo-recipes](bionemo-recipes.md) · [chaiNNer](chainner.md) · [cosmos](cosmos.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [JupyterLab](jupyterlab.md) · [kornia](kornia.md) · [LLM Course](llm-course.md) · [llm.c](llm-c.md) · [LLMs from Scratch](llms-from-scratch.md) · [LTX-2](ltx-2.md) · [mmpose](mmpose.md) · [nanochat](nanochat.md) · [NeMo Speech](nemo.md) · [pyannote.audio](pyannote-audio.md) · [TimesFM](timesfm.md) · [train-llm-from-scratch](train-llm-from-scratch.md) · [warp](warp.md) · [WHAM](wham.md) · [whisper](whisper.md)
 
 **Notas:** Alternativa (elige una): tensorflow.
 

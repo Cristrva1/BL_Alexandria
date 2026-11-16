@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**661 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**683 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -16,11 +16,11 @@
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 28
 7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 20
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 31
-9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 29
-10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 21
-11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 8
-12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 15
-13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 19
+9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 32
+10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 31
+11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 10
+12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 19
+13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 19
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 27
 16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 26
@@ -421,9 +421,12 @@ _Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la b
 | ⭐ [ui](human/fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Ant Design](human/fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Material UI](human/fichas/mui.md) | Librería de componentes React completa que implementa Material Design de Google. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Storybook](human/fichas/storybook.md) | Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [React Bits](human/fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [TanStack Query](human/fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Chakra UI](human/fichas/chakra-ui.md) | Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [swr](human/fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Mantine](human/fichas/mantine.md) | Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [heroui](human/fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Lucide](human/fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [magicui](human/fichas/magicui.md) | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
@@ -485,6 +488,7 @@ _Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, cons
 | [Grafana](human/fichas/grafana.md) | Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [metabase](human/fichas/metabase.md) | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Redash](human/fichas/redash.md) | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Evidence](human/fichas/evidence.md) | BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Librerías de gráficos
 
@@ -507,14 +511,23 @@ _Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, cons
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Sherlock](human/fichas/sherlock.md) | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [gods-eye-view](human/fichas/gods-eye-view.md) | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. | API de IA opcional | 🖥️ app | 🟡 medio |
+| [Maigret](human/fichas/maigret.md) | Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [theHarvester](human/fichas/theharvester.md) | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [osiris](human/fichas/osiris.md) | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. | API de IA opcional | 🖥️ app | 🟡 medio |
+| [Recon-ng](human/fichas/recon-ng.md) | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Pythia](human/fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
 ### Fotogrametría y mapas desde imágenes
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Leaflet](human/fichas/leaflet.md) | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [QGIS](human/fichas/qgis.md) | Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [deck.gl](human/fichas/deck-gl.md) | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [MapLibre GL JS](human/fichas/maplibre.md) | Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [kepler.gl](human/fichas/kepler-gl.md) | Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [ODM](human/fichas/odm.md) | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [WebODM](human/fichas/webodm.md) | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
@@ -542,8 +555,10 @@ _Interfaces y modelos de generación, recorte, restauración y ampliación. Dist
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [rembg](human/fichas/rembg.md) | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
+| [Upscayl](human/fichas/upscayl.md) | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Real-ESRGAN](human/fichas/real-esrgan.md) | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [CodeFormer](human/fichas/codeformer.md) | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [chaiNNer](human/fichas/chainner.md) | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ## 🎬 12. Editar, grabar y generar video
 
@@ -557,8 +572,11 @@ _Editores, grabadores, utilidades de medios y modelos de video generativo. La ed
 | [OpenCut](human/fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [OBS Studio](human/fichas/obs-studio.md) | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [LosslessCut](human/fichas/lossless-cut.md) | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [HandBrake](human/fichas/handbrake.md) | Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [VideoLingo](human/fichas/videolingo.md) | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [Concat](human/fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Shotcut](human/fichas/shotcut.md) | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Kdenlive](human/fichas/kdenlive.md) | Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [DaVinci Resolve MCP](human/fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [OpenRV](human/fichas/openrv.md) | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
@@ -570,6 +588,7 @@ _Editores, grabadores, utilidades de medios y modelos de video generativo. La ed
 | ⭐ [Wan2.2](human/fichas/wan2-2.md) | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [HunyuanVideo](human/fichas/hunyuanvideo.md) | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [WanGP](human/fichas/wan2gp.md) | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | API de IA opcional | 🖥️ app | 🔴 pesado |
+| [LTX-2](human/fichas/ltx-2.md) | Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [short-video-factory](human/fichas/short-video-factory.md) | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [AI-Youtube-Shorts-Generator](human/fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | API de IA necesaria | 🖥️ app | 🟡 medio |
 | [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md) | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
@@ -589,6 +608,8 @@ _Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el format
 | [Marker](human/fichas/marker.md) | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [PDF Inspector](human/fichas/pdf-inspector.md) | Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Unstructured](human/fichas/unstructured.md) | ETL open source que transforma documentos complejos en datos estructurados para LLM. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
+| [Xberg (antes Kreuzberg)](human/fichas/xberg.md) | Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
+| [Apache Tika](human/fichas/tika.md) | Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 
 ### OCR
 
@@ -598,6 +619,7 @@ _Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el format
 | ⭐ [OCRmyPDF](human/fichas/ocrmypdf.md) | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Tesseract](human/fichas/tesseract.md) | Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Unlimited-OCR](human/fichas/unlimited-ocr.md) | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [Surya](human/fichas/surya.md) | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [olmOCR](human/fichas/olmocr.md) | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. | API de IA opcional | 🖥️ app | 🔴 pesado |
 | [pdf-craft](human/fichas/pdf-craft.md) | Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 

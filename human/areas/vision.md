@@ -4,7 +4,7 @@
 
 Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.
 
-22 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
+31 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
 
 ## Opciones para empezar
 
@@ -53,14 +53,23 @@ Herramientas especializadas en caras y retratos.
 
 Crear y explorar mapas con imágenes o fuentes abiertas.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=vision&topic=vision-mapas)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=vision&topic=vision-mapas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [deck.gl](../fichas/deck-gl.md) | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D. | Sin clave propia de API de IA en la ruta básica |
 | [gods-eye-view](../fichas/gods-eye-view.md) | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. | API de IA opcional |
+| [kepler.gl](../fichas/kepler-gl.md) | Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter. | Sin clave propia de API de IA en la ruta básica |
+| [Leaflet](../fichas/leaflet.md) | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. | Sin clave propia de API de IA en la ruta básica |
+| [Maigret](../fichas/maigret.md) | Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles. | Sin clave propia de API de IA en la ruta básica |
+| [MapLibre GL JS](../fichas/maplibre.md) | Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia. | Sin clave propia de API de IA en la ruta básica |
 | [ODM](../fichas/odm.md) | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. | Sin clave propia de API de IA en la ruta básica |
 | [osiris](../fichas/osiris.md) | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. | API de IA opcional |
 | [Pythia](../fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Sin clave propia de API de IA en la ruta básica |
+| [QGIS](../fichas/qgis.md) | Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server. | Sin clave propia de API de IA en la ruta básica |
+| [Recon-ng](../fichas/recon-ng.md) | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit. | Sin clave propia de API de IA en la ruta básica |
+| [Sherlock](../fichas/sherlock.md) | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas. | Sin clave propia de API de IA en la ruta básica |
+| [theHarvester](../fichas/theharvester.md) | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas. | Sin clave propia de API de IA en la ruta básica |
 | [WebODM](../fichas/webodm.md) | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

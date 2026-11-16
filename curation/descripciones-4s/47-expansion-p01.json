@@ -513,6 +513,12 @@
      "id": "real-esrgan",
      "motivo": "Las imágenes descargadas pueden escalarse en lote con Real-ESRGAN antes de usarlas (combinación por arquitectura).",
      "orden_instalacion": "Descarga primero con gallery-dl; después procesa la carpeta con Real-ESRGAN."
+    },
+    {
+     "id": "upscayl",
+     "motivo": "Combinación recíproca: Upscayl lo enlaza como «Las colecciones descargadas con gallery-dl se pueden ampliar en lote con Upscayl (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Upscayl: Descarga primero con gallery-dl; después procesa la carpeta en Upscayl.",
+     "reciproca_de": "upscayl"
     }
    ],
    "notas": "Repositorio canónico de desarrollo: Codeberg (mikf/gallery-dl); GitHub se mantiene como espejo con actividad.",
@@ -704,6 +710,12 @@
      "id": "claude-code",
      "motivo": "Un agente puede lanzar Katana sobre un objetivo autorizado y resumir los endpoints descubiertos (combinación por arquitectura).",
      "orden_instalacion": "Instala Katana y define el alcance permitido; después pide al agente el análisis."
+    },
+    {
+     "id": "theharvester",
+     "motivo": "Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado.",
+     "reciproca_de": "theharvester"
     }
    ],
    "notas": "Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.",

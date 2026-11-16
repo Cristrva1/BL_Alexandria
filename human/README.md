@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-661 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+683 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -23,18 +23,18 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
-| [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 59 |
+| [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 62 |
 | [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Credenciales y privacidad, Aprender ciberseguridad | 30 |
-| [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 89 |
+| [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 95 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 21 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 49 |
 | [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 116 |
 | [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 52 |
-| [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 56 |
-| [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 28 |
+| [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 59 |
+| [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 29 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 31 |
 | [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 72 |
-| [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 22 |
+| [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 31 |
 | [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 94 |
 | [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 242 |
 | [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 207 |
@@ -52,11 +52,11 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](categorias/06-memoria-rag-llm-ops.md) | 28 | [claude-mem](fichas/claude-mem.md), [RAGFlow](fichas/ragflow.md), [Qdrant](fichas/qdrant.md) |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 20 | [Repomix](fichas/repomix.md), [ast-grep](fichas/ast-grep.md), [GitHub CLI](fichas/cli.md) |
 | 8 | [🏠 Chats, modelos locales y espacios privados](categorias/08-ia-local-modelos-chats-workspaces.md) | 31 | [Ollama](fichas/ollama.md), [Open WebUI](fichas/open-webui.md), [Jan](fichas/jan.md), [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
-| 9 | [🎨 Diseñar y construir interfaces web](categorias/09-dise-o-ui-frontend.md) | 29 | [ui](fichas/ui.md), [daisyUI](fichas/daisyui.md), [Excalidraw](fichas/excalidraw.md), [CopilotKit](fichas/copilotkit.md) |
-| 10 | [📊 Dashboards, analítica y mapas](categorias/10-anal-tica-visualizaci-n.md) | 21 | [Umami](fichas/umami.md), [Apache Superset](fichas/superset.md), [WrenAI](fichas/wrenai.md), [Recharts](fichas/recharts.md) |
-| 11 | [🖼️ Generar y editar imágenes con IA](categorias/11-generaci-n-de-imagen-visi-n.md) | 8 | [ComfyUI](fichas/comfyui.md), [FLUX.2](fichas/flux2.md), [rembg](fichas/rembg.md) |
-| 12 | [🎬 Editar, grabar y generar video](categorias/12-audio-voz-video.md) | 15 | [FFmpeg](fichas/ffmpeg.md), [MoneyPrinterTurbo](fichas/moneyprinterturbo.md), [Wan2.2](fichas/wan2-2.md) |
-| 13 | [📄 PDF, OCR y procesamiento de documentos](categorias/13-documentos-presentaciones.md) | 19 | [Docling](fichas/docling.md), [PaddleOCR](fichas/paddleocr.md), [OCRmyPDF](fichas/ocrmypdf.md), [Stirling-PDF](fichas/stirling-pdf.md) |
+| 9 | [🎨 Diseñar y construir interfaces web](categorias/09-dise-o-ui-frontend.md) | 32 | [ui](fichas/ui.md), [daisyUI](fichas/daisyui.md), [Excalidraw](fichas/excalidraw.md), [CopilotKit](fichas/copilotkit.md) |
+| 10 | [📊 Dashboards, analítica y mapas](categorias/10-anal-tica-visualizaci-n.md) | 31 | [Umami](fichas/umami.md), [Apache Superset](fichas/superset.md), [WrenAI](fichas/wrenai.md), [Recharts](fichas/recharts.md) |
+| 11 | [🖼️ Generar y editar imágenes con IA](categorias/11-generaci-n-de-imagen-visi-n.md) | 10 | [ComfyUI](fichas/comfyui.md), [FLUX.2](fichas/flux2.md), [rembg](fichas/rembg.md) |
+| 12 | [🎬 Editar, grabar y generar video](categorias/12-audio-voz-video.md) | 19 | [FFmpeg](fichas/ffmpeg.md), [MoneyPrinterTurbo](fichas/moneyprinterturbo.md), [Wan2.2](fichas/wan2-2.md) |
+| 13 | [📄 PDF, OCR y procesamiento de documentos](categorias/13-documentos-presentaciones.md) | 22 | [Docling](fichas/docling.md), [PaddleOCR](fichas/paddleocr.md), [OCRmyPDF](fichas/ocrmypdf.md), [Stirling-PDF](fichas/stirling-pdf.md) |
 | 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 19 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md), [machine-learning-for-trading](fichas/machine-learning-for-trading.md) |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](categorias/15-notas-archivos-y-servicios-personales.md) | 27 | [Anytype Desktop](fichas/anytype-ts.md) |
 | 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 26 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |

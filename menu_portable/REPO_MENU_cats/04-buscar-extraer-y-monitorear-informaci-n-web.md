@@ -365,7 +365,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala gallery-dl (pip, Homebrew o binario) y descarga una galería pública pequeña a una carpeta de prueba.
 **Qué comprobar:** Las imágenes quedan en disco con la estructura de carpetas y nombres configurada.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `yt-dlp`, `ffmpeg`, `real-esrgan`
+**Combina con:** `yt-dlp`, `ffmpeg`, `real-esrgan`, `upscayl`
 
 ## `instaloader`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,scraping,python
@@ -457,7 +457,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta la imagen Docker oficial contra el sitio de ejemplo books.toscrape.com que usa el README.
 **Qué comprobar:** Katana lista las URLs descubiertas sin errores.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mitmproxy`, `duckdb`, `claude-code`
+**Combina con:** `mitmproxy`, `duckdb`, `claude-code`, `theharvester`
 
 ## `last30days-skill`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=research,skills,python

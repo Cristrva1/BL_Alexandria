@@ -122,12 +122,14 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Text Generation WebUI](fichas/textgen.md) | [Jan](fichas/jan.md), [Open WebUI](fichas/open-webui.md) |
 | [Ant Design](fichas/ant-design.md) | [Material UI](fichas/mui.md), [ui](fichas/ui.md) |
 | [assistant-ui](fichas/assistant-ui.md) | [CopilotKit](fichas/copilotkit.md) |
+| [Chakra UI](fichas/chakra-ui.md) | [Mantine](fichas/mantine.md), [Material UI](fichas/mui.md) |
 | [CopilotKit](fichas/copilotkit.md) | [assistant-ui](fichas/assistant-ui.md) |
 | [daisyUI](fichas/daisyui.md) | [ui](fichas/ui.md) |
 | [Excalidraw](fichas/excalidraw.md) | [tldraw](fichas/tldraw.md), [Mermaid](fichas/mermaid.md) |
 | [heroui](fichas/heroui.md) | [Material UI](fichas/mui.md) |
 | [magicui](fichas/magicui.md) | [React Bits](fichas/react-bits.md) |
-| [Material UI](fichas/mui.md) | [Ant Design](fichas/ant-design.md), [ui](fichas/ui.md), [heroui](fichas/heroui.md) |
+| [Mantine](fichas/mantine.md) | [Chakra UI](fichas/chakra-ui.md), [Material UI](fichas/mui.md) |
+| [Material UI](fichas/mui.md) | [Ant Design](fichas/ant-design.md), [ui](fichas/ui.md), [heroui](fichas/heroui.md), [Chakra UI](fichas/chakra-ui.md), [Mantine](fichas/mantine.md) |
 | [Onlook](fichas/onlook.md) | [open-design](fichas/open-design.md) |
 | [open-design](fichas/open-design.md) | [Onlook](fichas/onlook.md) |
 | [React Bits](fichas/react-bits.md) | [magicui](fichas/magicui.md) |
@@ -142,23 +144,31 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [D3.js](fichas/d3.md) | [echarts](fichas/echarts.md) |
 | [echarts](fichas/echarts.md) | [D3.js](fichas/d3.md), [Chart.js](fichas/chart-js.md), [Recharts](fichas/recharts.md) |
 | [gods-eye-view](fichas/gods-eye-view.md) | [osiris](fichas/osiris.md) |
+| [Leaflet](fichas/leaflet.md) | [MapLibre GL JS](fichas/maplibre.md) |
+| [Maigret](fichas/maigret.md) | [Sherlock](fichas/sherlock.md) |
+| [MapLibre GL JS](fichas/maplibre.md) | [Leaflet](fichas/leaflet.md) |
 | [Matomo](fichas/matomo.md) | [Umami](fichas/umami.md), [Plausible Analytics](fichas/plausible.md) |
 | [metabase](fichas/metabase.md) | [Apache Superset](fichas/superset.md), [Redash](fichas/redash.md) |
 | [osiris](fichas/osiris.md) | [gods-eye-view](fichas/gods-eye-view.md) |
 | [Plausible Analytics](fichas/plausible.md) | [Umami](fichas/umami.md), [Matomo](fichas/matomo.md) |
 | [Recharts](fichas/recharts.md) | [Chart.js](fichas/chart-js.md), [echarts](fichas/echarts.md) |
 | [Redash](fichas/redash.md) | [metabase](fichas/metabase.md), [Apache Superset](fichas/superset.md) |
+| [Sherlock](fichas/sherlock.md) | [Maigret](fichas/maigret.md) |
 | [Umami](fichas/umami.md) | [Plausible Analytics](fichas/plausible.md), [Matomo](fichas/matomo.md) |
 | [ComfyUI](fichas/comfyui.md) | [WanGP](fichas/wan2gp.md) |
 | [InvokeAI](fichas/invokeai.md) | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) |
 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | [InvokeAI](fichas/invokeai.md) |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md), [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) |
 | [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) | [HunyuanVideo](fichas/hunyuanvideo.md), [Wan2.2](fichas/wan2-2.md) |
+| [Kdenlive](fichas/kdenlive.md) | [Shotcut](fichas/shotcut.md), [OpenCut](fichas/opencut.md) |
 | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md), [short-video-factory](fichas/short-video-factory.md) |
+| [OpenCut](fichas/opencut.md) | [Shotcut](fichas/shotcut.md), [Kdenlive](fichas/kdenlive.md) |
 | [short-video-factory](fichas/short-video-factory.md) | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
+| [Shotcut](fichas/shotcut.md) | [Kdenlive](fichas/kdenlive.md), [OpenCut](fichas/opencut.md) |
 | [VideoLingo](fichas/videolingo.md) | [VoiceStudio](fichas/omnivoice-studio.md) |
 | [Wan2.2](fichas/wan2-2.md) | [HunyuanVideo](fichas/hunyuanvideo.md), [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) |
 | [WanGP](fichas/wan2gp.md) | [ComfyUI](fichas/comfyui.md) |
+| [Apache Tika](fichas/tika.md) | [Xberg (antes Kreuzberg)](fichas/xberg.md), [Unstructured](fichas/unstructured.md) |
 | [Docling](fichas/docling.md) | [Marker](fichas/marker.md), [MinerU](fichas/mineru.md), [Unstructured](fichas/unstructured.md), [olmOCR](fichas/olmocr.md) |
 | [Marker](fichas/marker.md) | [Docling](fichas/docling.md), [MinerU](fichas/mineru.md), [pdf-craft](fichas/pdf-craft.md) |
 | [MinerU](fichas/mineru.md) | [Docling](fichas/docling.md), [Marker](fichas/marker.md) |
@@ -169,7 +179,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Stirling-PDF](fichas/stirling-pdf.md) | [pdfcraft](fichas/pdfcraft.md) |
 | [Tesseract](fichas/tesseract.md) | [PaddleOCR](fichas/paddleocr.md) |
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | [olmOCR](fichas/olmocr.md), [PaddleOCR](fichas/paddleocr.md) |
-| [Unstructured](fichas/unstructured.md) | [Docling](fichas/docling.md) |
+| [Unstructured](fichas/unstructured.md) | [Docling](fichas/docling.md), [Xberg (antes Kreuzberg)](fichas/xberg.md), [Apache Tika](fichas/tika.md) |
+| [Xberg (antes Kreuzberg)](fichas/xberg.md) | [Apache Tika](fichas/tika.md), [Unstructured](fichas/unstructured.md) |
 | [Anytype Desktop](fichas/anytype-ts.md) | [AppFlowy](fichas/appflowy.md) |
 | [AppFlowy](fichas/appflowy.md) | [Anytype Desktop](fichas/anytype-ts.md) |
 | [claude-obsidian](fichas/claude-obsidian.md) | [obsidian-second-brain](fichas/obsidian-second-brain.md) |

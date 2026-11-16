@@ -29,6 +29,7 @@ Escrito en Go; requiere una versión reciente de Go para `go install` (con CGO) 
 | [mitmproxy](mitmproxy.md) | Katana admite proxy en modo headless: enviar su tráfico a mitmproxy permite inspeccionar y registrar las peticiones del rastreo (combinación por arquitectura). | Arranca mitmproxy en un puerto local; después pasa la opción de proxy a Katana. |
 | [DuckDB](duckdb.md) | La salida JSON de Katana se puede consultar con DuckDB para filtrar y agrupar endpoints (combinación por arquitectura). | Ejecuta Katana con salida JSON; después consulta el archivo con DuckDB. |
 | [Claude Code](claude-code.md) | Un agente puede lanzar Katana sobre un objetivo autorizado y resumir los endpoints descubiertos (combinación por arquitectura). | Instala Katana y define el alcance permitido; después pide al agente el análisis. |
+| [theHarvester](theharvester.md) | Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)». | Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado. |
 
 **Notas:** Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.
 

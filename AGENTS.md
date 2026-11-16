@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**661 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
+**683 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -83,11 +83,11 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 6 | 🧬 Memoria, RAG y búsqueda de conocimiento | 28 | Memoria persistente para agentes, RAG y motores de conocimiento, Bases vectoriales y búsqueda semántica | `human/categorias/06-memoria-rag-llm-ops.md` |
 | 7 | 🧑‍💻 Entender código y comprobar su calidad | 20 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, CLIs y SDKs de desarrollo | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
 | 8 | 🏠 Chats, modelos locales y espacios privados | 31 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
-| 9 | 🎨 Diseñar y construir interfaces web | 29 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
-| 10 | 📊 Dashboards, analítica y mapas | 21 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
-| 11 | 🖼️ Generar y editar imágenes con IA | 8 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | 🎬 Editar, grabar y generar video | 15 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
-| 13 | 📄 PDF, OCR y procesamiento de documentos | 19 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
+| 9 | 🎨 Diseñar y construir interfaces web | 32 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
+| 10 | 📊 Dashboards, analítica y mapas | 31 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
+| 11 | 🖼️ Generar y editar imágenes con IA | 10 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
+| 12 | 🎬 Editar, grabar y generar video | 19 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
+| 13 | 📄 PDF, OCR y procesamiento de documentos | 22 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 19 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
 | 15 | 🗂️ Organizar notas, archivos y servicios personales | 27 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
 | 16 | 🔍 Analizar software y comprobar su seguridad | 26 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad | `human/categorias/16-analisis-de-software-y-seguridad.md` |

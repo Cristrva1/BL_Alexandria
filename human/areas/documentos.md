@@ -4,7 +4,7 @@
 
 Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
 
-56 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
+59 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
 
 ## Opciones para empezar
 
@@ -18,10 +18,11 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Leer, convertir, firmar y organizar archivos.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Apache Tika](../fichas/tika.md) | Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG. | API de IA opcional |
 | [Docling](../fichas/docling.md) | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | API de IA opcional |
 | [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica |
 | [Marker](../fichas/marker.md) | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. | API de IA opcional |
@@ -35,12 +36,13 @@ Leer, convertir, firmar y organizar archivos.
 | [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida |
 | [Stirling-PDF](../fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | Sin clave propia de API de IA en la ruta básica |
 | [Unstructured](../fichas/unstructured.md) | ETL open source que transforma documentos complejos en datos estructurados para LLM. | API de IA opcional |
+| [Xberg (antes Kreuzberg)](../fichas/xberg.md) | Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP. | API de IA opcional |
 
 ### OCR y documentos escaneados
 
 Extraer texto de imágenes, libros y páginas escaneadas.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-ocr)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-ocr)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -48,6 +50,7 @@ Extraer texto de imágenes, libros y páginas escaneadas.
 | [olmOCR](../fichas/olmocr.md) | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. | API de IA opcional |
 | [PaddleOCR](../fichas/paddleocr.md) | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. | Sin clave propia de API de IA en la ruta básica |
 | [pdf-craft](../fichas/pdf-craft.md) | Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. | Depende de la ruta elegida |
+| [Surya](../fichas/surya.md) | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas. | Sin clave propia de API de IA en la ruta básica |
 | [Tesseract](../fichas/tesseract.md) | Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. | Sin clave propia de API de IA en la ruta básica |
 | [Unlimited-OCR](../fichas/unlimited-ocr.md) | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | Sin clave propia de API de IA en la ruta básica |
 

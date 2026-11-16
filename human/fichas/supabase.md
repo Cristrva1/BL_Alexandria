@@ -32,9 +32,9 @@ Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo lo
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (15). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Appsmith](appsmith.md) · [Budibase](budibase.md) · [Chart.js](chart-js.md) · [free-for-dev](free-for-dev.md) · [Grafana](grafana.md) · [Onlook](onlook.md) · [plasmic](plasmic.md) · [Plausible Analytics](plausible.md) · [Redash](redash.md) · [social-media-agent](social-media-agent.md) · [swr](swr.md) · [TanStack Query](tanstack-query.md) · [Teable](teable.md) · [tldraw](tldraw.md) · [transformers.js](transformers-js.md)
+[Appsmith](appsmith.md) · [Budibase](budibase.md) · [Chart.js](chart-js.md) · [Evidence](evidence.md) · [free-for-dev](free-for-dev.md) · [Grafana](grafana.md) · [Onlook](onlook.md) · [plasmic](plasmic.md) · [Plausible Analytics](plausible.md) · [Redash](redash.md) · [social-media-agent](social-media-agent.md) · [swr](swr.md) · [TanStack Query](tanstack-query.md) · [Teable](teable.md) · [tldraw](tldraw.md) · [transformers.js](transformers-js.md)
 
 **Notas:** Sin alternativas declaradas.
 

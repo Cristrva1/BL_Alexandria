@@ -365,12 +365,212 @@
         "license": "MIT",
         "pushed_at": "2026-11-06"
       }
+    ],
+    "p03": [
+      {
+        "id": "storybook",
+        "full_name": "storybookjs/storybook",
+        "github_id": 54173593,
+        "readme_blob_sha": "cbcab61d0d47bf48f89215a05a2a0d304f2d2250",
+        "stars": 91581,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "leaflet",
+        "full_name": "Leaflet/Leaflet",
+        "github_id": 931135,
+        "readme_blob_sha": "0cbf2fc130b3c1470dd3aaa3f2f82d15615f4304",
+        "stars": 45933,
+        "license": "BSD-2-Clause",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "sherlock",
+        "full_name": "sherlock-project/sherlock",
+        "github_id": 162998479,
+        "readme_blob_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+        "stars": 112706,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "maigret",
+        "full_name": "soxoj/maigret",
+        "github_id": 275386910,
+        "readme_blob_sha": "6f4a4cf717fdbd2bb84b6cfcb6612aba5fede71b",
+        "stars": 40774,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "upscayl",
+        "full_name": "upscayl/upscayl",
+        "github_id": 519577891,
+        "readme_blob_sha": "f102b2d39a5b0aeb9199e1a2823db07dd694fa16",
+        "stars": 52711,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "handbrake",
+        "full_name": "HandBrake/HandBrake",
+        "github_id": 41215835,
+        "readme_blob_sha": "880f735211000624ee8f35959d6fcf34b4378f85",
+        "stars": 25017,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "ltx-2",
+        "full_name": "Lightricks/LTX-2",
+        "github_id": 1127234517,
+        "readme_blob_sha": "de9c6d5b76e133a3973985b0ca41b473b441a597",
+        "stars": 10259,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "surya",
+        "full_name": "datalab-to/surya",
+        "github_id": 741297064,
+        "readme_blob_sha": "3fa746aac8f22d258086d77f27f5a2c5e948cff6",
+        "stars": 21593,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "chakra-ui",
+        "full_name": "chakra-ui/chakra-ui",
+        "github_id": 202890778,
+        "readme_blob_sha": "693a61a6a94bab0eea0e7e1a5adae42e1e85b896",
+        "stars": 40727,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mantine",
+        "full_name": "mantinedev/mantine",
+        "github_id": 327628682,
+        "readme_blob_sha": "d2eb802b62933bfb934ce29bf59fb7d5d4f69165",
+        "stars": 31948,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "evidence",
+        "full_name": "evidence-dev/evidence",
+        "github_id": 371239231,
+        "readme_blob_sha": "22ef3a6534a4eb11382c718946cc7fc24cb42621",
+        "stars": 7119,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "qgis",
+        "full_name": "qgis/QGIS",
+        "github_id": 1690480,
+        "readme_blob_sha": "6b31e11f091b69bf1b8ae72a6dceaae48333cb27",
+        "stars": 14842,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "deck.gl",
+        "full_name": "visgl/deck.gl",
+        "github_id": 48030204,
+        "readme_blob_sha": "aa8b0cba915c1d3130a6f50a2ff0dbf45956f0cc",
+        "stars": 14760,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "maplibre",
+        "full_name": "maplibre/maplibre-gl-js",
+        "github_id": 319779344,
+        "readme_blob_sha": "003feca1715ba46dcfd1ee452934b45410409bd6",
+        "stars": 12101,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kepler.gl",
+        "full_name": "keplergl/kepler.gl",
+        "github_id": 123345344,
+        "readme_blob_sha": "a952281179fbcc9f0f8e5198504b1311225ffa44",
+        "stars": 12096,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "theharvester",
+        "full_name": "laramies/theHarvester",
+        "github_id": 1212922,
+        "readme_blob_sha": "cb3a8ddae1634fefaaed1c5f45328cff3bd32df0",
+        "stars": 18328,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "recon-ng",
+        "full_name": "lanmaster53/recon-ng",
+        "github_id": 178254323,
+        "readme_blob_sha": "c1134b41d4c82cde38ea5def314b1a88321fec9d",
+        "stars": 6050,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-10-05"
+      },
+      {
+        "id": "chainner",
+        "full_name": "chaiNNer-org/chaiNNer",
+        "github_id": 404144554,
+        "readme_blob_sha": "0207ea1fa6ad9019f22a2765f8c01ef23c258a62",
+        "stars": 6172,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "shotcut",
+        "full_name": "mltframework/shotcut",
+        "github_id": 4118776,
+        "readme_blob_sha": "6b878f53252d686ea72b3bb5969af8bc44c19b8e",
+        "stars": 15698,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kdenlive",
+        "full_name": "KDE/kdenlive",
+        "github_id": 42723268,
+        "readme_blob_sha": "aafacd56d79aeb85ff57fe1cfbbfd8e6a585db6d",
+        "stars": 6122,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "xberg",
+        "full_name": "xberg-io/xberg",
+        "github_id": 925434317,
+        "readme_blob_sha": "1a96d41c9746e03feeb5c372b01d8bc25ed13035",
+        "stars": 9590,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "tika",
+        "full_name": "apache/tika",
+        "github_id": 206427,
+        "readme_blob_sha": "f910de770cc4c5f120eb25aca5bc106bf4b8a027",
+        "stars": 4150,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 40,
-  "total_repositories": 663
+  "added_count": 62,
+  "total_repositories": 685
 }

@@ -95,6 +95,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `langgraph`, `ui`
 **Alternativas (elige una):** `copilotkit`
 
+## `chakra-ui`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,react,library
+
+**Qué es:** Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/chakra-ui/chakra-ui
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/chakra-ui/chakra-ui/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala `@chakra-ui/react` y `@emotion/react` en un proyecto React y renderiza un botón con el proveedor.
+**Qué comprobar:** El componente se muestra con el tema por defecto y cambia a modo oscuro.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `storybook`, `lucide`, `claude-code`
+**Alternativas (elige una):** `mantine`, `mui`
+
 ## `copilotkit`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic · tags=ui,agents,react,typescript
 
@@ -371,6 +402,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `tailwindcss`, `motion`, `claude-code`, `animejs`
 **Alternativas (elige una):** `react-bits`
 
+## `mantine`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,react,library
+
+**Qué es:** Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mantinedev/mantine
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/mantinedev/mantine/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala @mantine/core y @mantine/hooks, envuelve la app en MantineProvider y renderiza un formulario.
+**Qué comprobar:** El formulario se muestra con estilos de Mantine y valida los campos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `storybook`, `recharts`, `claude-code`
+**Alternativas (elige una):** `chakra-ui`, `mui`
+
 ## `mui`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
 
@@ -400,7 +462,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Los campos muestran validación y se recorren con teclado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `recharts`, `swr`, `vercel-ai`
-**Alternativas (elige una):** `ant-design`, `ui`, `heroui`
+**Alternativas (elige una):** `ant-design`, `ui`, `heroui`, `chakra-ui`, `mantine`
 
 ## `normalize.css`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design
@@ -711,6 +773,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `stitch-skills`, `design.md`
 **Alternativas (elige una):** `screenshot-to-code`
+
+## `storybook`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,javascript,docs
+
+**Qué es:** Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/storybookjs/storybook
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/storybookjs/storybook/blob/next/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta el comando de inicialización de Storybook en un proyecto web de prueba y abre el servidor local.
+**Qué comprobar:** Aparecen las stories de ejemplo y puedes cambiar sus props desde el panel de controles.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `playwright`, `tailwindcss`, `mantine`, `chakra-ui`
 
 ## `swr`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript

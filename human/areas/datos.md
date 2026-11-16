@@ -4,7 +4,7 @@
 
 Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicación o negocio.
 
-28 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
+29 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
 
 ## Opciones para empezar
 
@@ -49,11 +49,12 @@ Explorar datos y compartir una interfaz de análisis.
 
 Consultar indicadores y explorar información de negocio.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=datos&topic=datos-bi)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=datos&topic=datos-bi)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Apache Superset](../fichas/superset.md) | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. | Sin clave propia de API de IA en la ruta básica |
+| [Evidence](../fichas/evidence.md) | BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio. | Sin clave propia de API de IA en la ruta básica |
 | [Grafana](../fichas/grafana.md) | Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. | Sin clave propia de API de IA en la ruta básica |
 | [metabase](../fichas/metabase.md) | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. | Sin clave propia de API de IA en la ruta básica |
 | [Redash](../fichas/redash.md) | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. | Sin clave propia de API de IA en la ruta básica |

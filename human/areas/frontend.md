@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-59 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+62 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Opciones para empezar
 
@@ -33,21 +33,24 @@ Diseñar y construir pantallas desde una interfaz visual.
 
 Piezas de interfaz y CSS para construir una web.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
+[Explorar 18 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Ant Design](../fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Sin clave propia de API de IA en la ruta básica |
+| [Chakra UI](../fichas/chakra-ui.md) | Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC. | Sin clave propia de API de IA en la ruta básica |
 | [daisyUI](../fichas/daisyui.md) | La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. | Sin clave propia de API de IA en la ruta básica |
 | [flexoki](../fichas/flexoki.md) | Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual. | Sin clave propia de API de IA en la ruta básica |
 | [heroui](../fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica |
 | [konva](../fichas/konva.md) | Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos. | Sin clave propia de API de IA en la ruta básica |
 | [Lucide](../fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Sin clave propia de API de IA en la ruta básica |
 | [magicui](../fichas/magicui.md) | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. | Sin clave propia de API de IA en la ruta básica |
+| [Mantine](../fichas/mantine.md) | Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones. | Sin clave propia de API de IA en la ruta básica |
 | [Material UI](../fichas/mui.md) | Librería de componentes React completa que implementa Material Design de Google. | Sin clave propia de API de IA en la ruta básica |
 | [normalize.css](../fichas/normalize-css.md) | Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. | Sin clave propia de API de IA en la ruta básica |
 | [Radix Primitives](../fichas/radix-primitives.md) | Componentes React sin estilos y accesibles para construir sistemas de diseño propios. | Sin clave propia de API de IA en la ruta básica |
 | [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica |
+| [Storybook](../fichas/storybook.md) | Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros. | Sin clave propia de API de IA en la ruta básica |
 | [swr](../fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica |
 | [tailwindcss](../fichas/tailwindcss.md) | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. | Sin clave propia de API de IA en la ruta básica |
 | [TanStack Query](../fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica |

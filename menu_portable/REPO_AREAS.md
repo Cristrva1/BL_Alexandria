@@ -18,7 +18,7 @@ Diseñar y construir pantallas desde una interfaz visual.
 
 Piezas de interfaz y CSS para construir una web.
 
-`ant-design`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `swr`, `tailwindcss`, `tanstack-query`, `ui`
+`ant-design`, `chakra-ui`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mantine`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `storybook`, `swr`, `tailwindcss`, `tanstack-query`, `ui`
 
 ### Interfaces y páginas con IA
 
@@ -92,13 +92,13 @@ Encuentra las piezas para producir imágenes, audio y video: desde una voz o un 
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-`concat`, `davinci-resolve-mcp`, `ffmpeg`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `rea-video`, `video-use`, `videolingo`
+`concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `rea-video`, `shotcut`, `video-use`, `videolingo`
 
 ### Video: generación con IA
 
 Crear clips y organizar flujos de video generativo.
 
-`ai-youtube-shorts-generator`, `hunyuanvideo`, `hunyuanvideo-1-5`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
+`ai-youtube-shorts-generator`, `hunyuanvideo`, `hunyuanvideo-1-5`, `ltx-2`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
 
 ### Video: código y motion graphics
 
@@ -134,7 +134,7 @@ Construir conversaciones por audio con procesamiento y respuesta en directo.
 
 Generar imágenes, ampliar, recortar o restaurar fotografías.
 
-`codeformer`, `comfyui`, `creative-architect`, `diffusers`, `flux2`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `real-esrgan`, `rembg`
+`chainner`, `codeformer`, `comfyui`, `creative-architect`, `diffusers`, `flux2`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `real-esrgan`, `rembg`, `upscayl`
 
 ### Avatares, rostros y personajes
 
@@ -328,13 +328,13 @@ Lee y transforma archivos, crea explicaciones visuales y construye búsquedas so
 
 Leer, convertir, firmar y organizar archivos.
 
-`docling`, `docuseal`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `unstructured`
+`docling`, `docuseal`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `tika`, `unstructured`, `xberg`
 
 ### OCR y documentos escaneados
 
 Extraer texto de imágenes, libros y páginas escaneadas.
 
-`ocrmypdf`, `olmocr`, `paddleocr`, `pdf-craft`, `tesseract`, `unlimited-ocr`
+`ocrmypdf`, `olmocr`, `paddleocr`, `pdf-craft`, `surya`, `tesseract`, `unlimited-ocr`
 
 ### Presentaciones y diapositivas
 
@@ -380,7 +380,7 @@ Explorar datos y compartir una interfaz de análisis.
 
 Consultar indicadores y explorar información de negocio.
 
-`grafana`, `metabase`, `redash`, `superset`, `wrenai`
+`evidence`, `grafana`, `metabase`, `redash`, `superset`, `wrenai`
 
 ### Gráficos y visualización
 
@@ -494,7 +494,7 @@ Herramientas especializadas en caras y retratos.
 
 Crear y explorar mapas con imágenes o fuentes abiertas.
 
-`gods-eye-view`, `odm`, `osiris`, `pythia`, `webodm`
+`deck.gl`, `gods-eye-view`, `kepler.gl`, `leaflet`, `maigret`, `maplibre`, `odm`, `osiris`, `pythia`, `qgis`, `recon-ng`, `sherlock`, `theharvester`, `webodm`
 
 ## Aprender IA, prompts y skills
 

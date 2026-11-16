@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 663 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 685 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **663 repos** de IA y
+proyecto concreto. Tienes un menú curado de **685 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -461,12 +461,13 @@ Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 - `textgen` [A|loc|M|?] — App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. — tags: chatbot,local,inference,python — prov: local — alt: jan,open-webui
 - `transformers.js` [L|loc|M|+] — Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. — tags: motores,browser,javascript,transformers,webml
 
-### 9. Diseñar y construir interfaces web (29)
+### 9. Diseñar y construir interfaces web (32)
 Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 
 - `ai-website-cloner-template` [L|loc|M|?] — Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interf — tags: ia-ui,template,typescript
 - `ant-design` [L|loc|E|+] — Lenguaje de diseño empresarial y librería de componentes React de Ant Group. — tags: ui,react,typescript — alt: mui,ui
 - `assistant-ui` [L|loc|E|+] — Librería React y TypeScript para interfaces de chat con IA de calidad producción. — tags: ui,chatbot,react,typescript — alt: copilotkit
+- `chakra-ui` [L|loc|E|?] — Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con  — tags: ui,typescript,react,library — alt: mantine,mui
 - `copilotkit` [L|hyb|E|+] — Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. — tags: ui,agents,react,typescript — prov: openai,anthropic — alt: assistant-ui
 - `daisyui` [L|loc|E|?] — La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. — tags: ui,design,javascript — alt: ui
 - `excalidraw` [A|loc|E|?] — Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. — tags: design,docs,typescript — alt: tldraw,mermaid
@@ -476,7 +477,8 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `konva` [L|loc|M|+] — Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivo — tags: componentes,library,typescript
 - `lucide` [L|loc|E|?] — Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. — tags: ui,design,typescript
 - `magicui` [L|loc|E|?] — Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces mod — tags: ui — alt: react-bits
-- `mui` [L|loc|E|?] — Librería de componentes React completa que implementa Material Design de Google. — tags: ui,react,javascript — alt: ant-design,ui,heroui
+- `mantine` [L|loc|E|?] — Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y no — tags: ui,typescript,react,library — alt: chakra-ui,mui
+- `mui` [L|loc|E|?] — Librería de componentes React completa que implementa Material Design de Google. — tags: ui,react,javascript — alt: ant-design,ui,heroui,chakra-ui,mantine
 - `normalize.css` [L|loc|E|+] — Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. — tags: ui,design
 - `onlook` [A|loc|E|?] — Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. — tags: design,ui,coding-agent,typescript — prov: anthropic — alt: open-design
 - `open-design` [A|hyb|M|+] — Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. — tags: agents,design,typescript — alt: onlook
@@ -487,6 +489,7 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `react-bits` [L|loc|E|+] — La mayor colección open source de componentes React animados e interactivos para webs llamativas. — tags: ui,react,javascript — alt: magicui
 - `screenshot-to-code` [A|cld|E|?] — Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. — tags: ui,vision,code,python — prov: openai,anthropic,google — alt: stitch-sdk
 - `stitch-sdk` [L|cld|E|+] — SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. — tags: ui,design,typescript — prov: google — alt: screenshot-to-code
+- `storybook` [A|loc|E|?] — Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React,  — tags: ui,typescript,javascript,docs
 - `swr` [L|loc|E|?] — Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los reva — tags: ui,typescript — alt: tanstack-query
 - `tailwindcss` [L|loc|E|?] — Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directame — tags: ui,design,typescript
 - `tanstack-query` [L|loc|E|?] — Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, An — tags: frontend,data-fetching,cache,typescript — alt: swr
@@ -494,16 +497,22 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `ui` [L|loc|E|?] — Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de in — tags: ui,typescript — alt: mui,ant-design,daisyui
 - `ui-sdk` [L|loc|M|+] — Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción def — tags: ia-ui,library,typescript
 
-### 10. Dashboards, analítica y mapas (21)
+### 10. Dashboards, analítica y mapas (31)
 Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 
 - `awesome-dataviz` [D|cld|E|?] — Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad — tags: automation,dataviz,javascript
 - `chart-js` [L|loc|E|?] — Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. — tags: dataviz,javascript — alt: echarts,recharts
 - `d3` [L|loc|M|?] — Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML. — tags: dataviz,javascript — alt: echarts
 - `data-analyst-roadmap` [D|loc|E|?] — Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. — tags: recursos,blogs,businessintelligence,courses,data,dataanalysis,dataanalyst,excel
+- `deck.gl` [L|loc|E|+] — Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y — tags: dataviz,typescript,library,maps
 - `echarts` [L|loc|M|?] — Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gr — tags: dataviz,typescript — alt: d3,chart-js,recharts
+- `evidence` [A|loc|E|?] — BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados — tags: dataviz,analytics,typescript,app
 - `gods-eye-view` [A|loc|M|+] — Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el na — tags: osint,app,javascript — alt: osiris
 - `grafana` [P|loc|E|?] — Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. — tags: observability,dataviz,typescript,docker
+- `kepler.gl` [A|loc|E|?] — Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente  — tags: dataviz,typescript,app,maps
+- `leaflet` [L|loc|E|?] — Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y  — tags: dataviz,javascript,library,maps — alt: maplibre
+- `maigret` [A|loc|E|+] — Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayend — tags: osint,python,cli,security — alt: sherlock
+- `maplibre` [L|loc|E|?] — Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de  — tags: dataviz,typescript,library,maps — alt: leaflet
 - `matomo` [P|loc|M|?] — Alternativa open source a Google Analytics con control total de los datos. — tags: analytics,php — alt: umami,plausible
 - `metabase` [P|hyb|M|?] — Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos  — tags: analytics,dataviz,docker — alt: superset,redash
 - `odm` [A|loc|M|+] — Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. — tags: geoespacial,app,python
@@ -511,17 +520,22 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 - `plausible` [P|hyb|M|?] — Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. — tags: analytics,docker — alt: umami,matomo
 - `posthog` [P|hyb|H|+] — Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session re — tags: analytics,python,docker
 - `pythia` [P|loc|H|+] — Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. — tags: osint,typescript
+- `qgis` [A|loc|E|?] — Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, — tags: dataviz,cpp,app,maps
 - `recharts` [L|loc|E|+] — Librería de gráficos para React construida con D3, declarativa y componible. — tags: dataviz,react,typescript — alt: chart-js,echarts
+- `recon-ng` [A|loc|M|?] — Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Me — tags: osint,python,security,cli
 - `redash` [P|loc|M|?] — Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. — tags: analytics,dataviz,typescript — alt: metabase,superset
+- `sherlock` [A|loc|E|+] — CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociada — tags: osint,python,cli,security — alt: maigret
 - `superset` [P|loc|M|?] — Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. — tags: analytics,dataviz,python,docker — alt: metabase,redash
+- `theharvester` [A|loc|E|?] — Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadore — tags: osint,python,security,cli
 - `umami` [P|loc|E|+] — Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. — tags: analytics,typescript,docker — alt: plausible,matomo
 - `uplot` [L|loc|E|?] — Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a renderizar datos con Canvas y  — tags: dataviz,javascript
 - `webodm` [P|loc|H|?] — Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. — tags: geoespacial,server,python
 - `wrenai` [P|hyb|M|+] — BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. — tags: analytics,data,agents,python — prov: openai,local
 
-### 11. Generar y editar imágenes con IA (8)
+### 11. Generar y editar imágenes con IA (10)
 Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 
+- `chainner` [A|loc|M|?] — Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversi — tags: image,python,app,local
 - `codeformer` [L|loc|M|?] — Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. — tags: image,vision,python
 - `comfyui` [R|loc|H|+] — Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. — tags: image,python — alt: wan2gp
 - `diffusers` [L|loc|H|+] — Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. — tags: image,python
@@ -530,27 +544,32 @@ Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 - `krita-ai-diffusion` [A|loc|M|?] — Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. — tags: image,design,python — prov: local — alt: invokeai
 - `real-esrgan` [R|loc|M|+] — Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible gene — tags: image,python
 - `rembg` [L|loc|E|+] — Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. — tags: image,python
+- `upscayl` [A|loc|E|?] — Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux — tags: image,typescript,app,local
 
-### 12. Editar, grabar y generar video (15)
+### 12. Editar, grabar y generar video (19)
 Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 
 - `ai-youtube-shorts-generator` [A|hyb|M|+] — Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de mome — tags: generativo,2short-ai-alternative,ai-clip-generator,ai-clipping,auto-clip,auto-crop,highlight-detection,klap-alternative
 - `concat` [A|loc|M|?] — Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. — tags: edicion,app,rust
 - `davinci-resolve-mcp` [R|loc|M|+] — Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render — tags: video,mcp,agents,python — prov: mcp
 - `ffmpeg` [A|loc|E|?] — Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier forma — tags: video,audio,automation,cpp
+- `handbrake` [A|loc|E|?] — Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo — tags: video,c,app
 - `hunyuanvideo` [R|loc|H|?] — Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de infere — tags: video,inference,local,python — prov: local — alt: wan2-2,hunyuanvideo-1-5
 - `hunyuanvideo-1-5` [R|hyb|H|?] — Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de  — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,wan2-2
+- `kdenlive` [A|loc|E|?] — Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por — tags: video,cpp,app,edicion — alt: shotcut,opencut
 - `lossless-cut` [A|loc|E|?] — App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. — tags: video,audio,ui,typescript
+- `ltx-2` [R|loc|H|?] — Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera víde — tags: video,python,model,local
 - `moneyprinterturbo` [A|hyb|M|+] — App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música e — tags: video,automation,tts,python — prov: openai,anthropic,google,local — alt: openmontage,videofy-minimal,short-video-factory
 - `obs-studio` [A|loc|E|?] — App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio e — tags: video,audio,ui,cpp
-- `opencut` [A|hyb|M|?] — Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescr — tags: video,ui,typescript,rust
+- `opencut` [A|hyb|M|?] — Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescr — tags: video,ui,typescript,rust — alt: shotcut,kdenlive
 - `openrv` [A|loc|E|?] — Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. — tags: edicion,app,c
 - `short-video-factory` [A|hyb|M|?] — Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. — tags: generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux — alt: moneyprinterturbo
+- `shotcut` [A|loc|E|?] — Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de fo — tags: video,cpp,app,edicion — alt: kdenlive,opencut
 - `videolingo` [A|hyb|M|+] — App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores config — tags: video,stt,tts,python — prov: openai — alt: omnivoice-studio
 - `wan2-2` [R|loc|H|+] — Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y li — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,hunyuanvideo-1-5
 - `wan2gp` [A|loc|H|?] — App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modes — tags: video,image,tts,local,python — prov: local,mcp — alt: comfyui
 
-### 13. PDF, OCR y procesamiento de documentos (19)
+### 13. PDF, OCR y procesamiento de documentos (22)
 Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 
 - `docling` [L|loc|E|+] — Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. — tags: docs,pdf,ocr,python — alt: marker,mineru,unstructured,olmocr
@@ -569,9 +588,12 @@ Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 - `pdfding` [A|loc|E|?] — Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lec — tags: pdf,docker
 - `pdfmathtranslate` [A|hyb|E|+] — Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. — tags: pdf,docs,python — prov: openai,google,local
 - `stirling-pdf` [A|loc|E|+] — Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. — tags: pdf,docker — alt: pdfcraft
+- `surya` [R|loc|M|+] — OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de  — tags: ocr,python,pdf,model
 - `tesseract` [A|loc|E|?] — Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idio — tags: ocr,cpp — alt: paddleocr
+- `tika` [P|hyb|M|?] — Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown  — tags: docs,java,pdf,server — alt: xberg,unstructured
 - `unlimited-ocr` [L|loc|H|+] — Modelo de Baidu para parsear documentos largos de una sola pasada con visión. — tags: ocr,docs,python — alt: olmocr,paddleocr
-- `unstructured` [L|hyb|M|?] — ETL open source que transforma documentos complejos en datos estructurados para LLM. — tags: docs,data,python — alt: docling
+- `unstructured` [L|hyb|M|?] — ETL open source que transforma documentos complejos en datos estructurados para LLM. — tags: docs,data,python — alt: docling,xberg,tika
+- `xberg` [L|hyb|E|+] — Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcri — tags: docs,rust,pdf,mcp — alt: tika,unstructured
 
 ### 14. Investigar finanzas y mercados (19)
 Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
