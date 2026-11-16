@@ -116,6 +116,10 @@ Un repo solo es candidato a retiro si cumple tres condiciones: puntuación menor
 
 Una acción mensual recalcula las métricas y abre un pull request; nunca empuja a `main`. El archivo está en `infra/github-actions/metricas-mensuales.yml`: para activarla, cópialo a `.github/workflows/` (publicar workflows exige el permiso `workflow` de GitHub). Para que pueda abrir el PR hay que activar además en GitHub **Settings → Actions → General → Workflow permissions → «Allow GitHub Actions to create and approve pull requests»**.
 
+## Publicación en GitHub Pages
+
+La única web pública de esta biblioteca es [Alexandría](https://cristrva1.github.io/BL_Alexandria/). GitHub Pages publica la carpeta `docs/` de la rama `main` en el entorno `github-pages`. Las ramas de trabajo y las ejecuciones anteriores del despliegue forman parte del historial del proyecto; no son sitios adicionales.
+
 ## Contributors
 
 - [Cristrva1](https://github.com/Cristrva1): dirección y mantenimiento de la biblioteca.
