@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección (MIT) de @patchy631 con tutoriales y más de 93 proyectos de ingeniería de IA: 22 de nivel principiante, 48 intermedios y 23 avanzados. Es activa (último push en noviembre de 2026) y está asociada a una newsletter.
+
+## ¿Qué hace?
+
+Ofrece proyectos prácticos sobre LLMs, RAG, agentes, MCP (el tema más presente) y aplicaciones multimodales, a menudo con modelos como DeepSeek y herramientas como CrewAI, LlamaIndex o Firecrawl. Sirve como material de aprendizaje por proyectos. El README los califica de 'production-ready' [DATO NO VERIFICADO].
+
+## ¿Cómo lo hace?
+
+Cada proyecto vive en su carpeta con instrucciones y dependencias propias, en su mayoría Python. Requiere las claves de API de los servicios que use cada ejemplo, aunque algunos usan modelos locales con Ollama. Hay que revisar versiones, porque muchos ejemplos fijan bibliotecas que evolucionan rápido.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [crewAI](crewai.md) | Framework de agentes usado en varios proyectos. | Instálalo en el entorno del proyecto que lo use. |
+| [LlamaIndex](llama-index.md) | RAG en varios proyectos del hub. | Instálalo según el proyecto. |
+| [firecrawl](firecrawl.md) | Extracción web usada en proyectos de investigación. | Configura su clave antes de ejecutar esos ejemplos. |
+| [Ollama](ollama.md) | Modelos locales en algunos proyectos. | Instala Ollama y descarga el modelo indicado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-01 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/patchy631/ai-engineering-hub/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Las comparaciones con Claude Code son contenido educativo y no una integración instalada del catálogo |
 | Coste | El coste depende del proveedor o la ruta. Tutoriales públicos; APIs, nube y GPU pueden generar costes según el ejemplo |
 | Equipo | Preparación según la ruta elegida. Python; README específico del tutorial; modelo local o proveedor |
-
-Las comparaciones con Claude Code son contenido educativo y no una integración instalada del catálogo
-
-## Qué puedes hacer con él
-
-Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial.
-
-## Por qué destaca
-
-Usos propuestos: Aprender RAG con Ollama; Comparar técnicas de ajuste fino.
-
-## Cómo funciona
 
 Las comparaciones con Claude Code son contenido educativo y no una integración instalada del catálogo
 

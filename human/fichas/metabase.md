@@ -10,6 +10,38 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Metabase, herramienta open source de BI y paneles. La edición open source es AGPL y el repo incluye también código de las ediciones comerciales (GitHub muestra NOASSERTION). Es muy madura (~50k estrellas, v0.65.4).
+
+## ¿Qué hace?
+
+Permite que cualquiera haga preguntas a los datos con un editor visual o SQL, cree paneles y alertas y los comparta o incruste. Se conecta a las bases de datos más comunes y tiene modelos y métricas reutilizables. Metabase Cloud añade soporte, copias y auditoría.
+
+## ¿Cómo lo hace?
+
+Se ejecuta como JAR (Java) o con Docker y necesita una base de aplicación (PostgreSQL recomendado en producción). Hay drivers de la comunidad, como el de DuckDB mantenido por MotherDuck.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Driver de DuckDB mantenido por MotherDuck. | Añade el driver a la carpeta de plugins y crea la conexión. |
+| [posthog](posthog.md) | BI sobre datos exportados de PostHog. (combinación por arquitectura) | Sincroniza los datos a una base que lea Metabase. |
+| [echarts](echarts.md) | Visualizaciones basadas en ECharts. (combinación por arquitectura) | No requiere instalación aparte. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Appsmith](appsmith.md) · [Baserow](baserow.md) · [ClickHouse](clickhouse.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [ERPNext](erpnext.md) · [Matomo](matomo.md) · [NocoDB](nocodb.md) · [Odoo](odoo.md) · [Teable](teable.md) · [Umami](umami.md)
+
+**Notas:** Alternativas (elige una): superset, redash.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.65.4 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/metabase/metabase/blob/master/README.md) · [2](https://github.com/motherduckdb/metabase_duckdb_driver) · [3](https://www.metabase.com/docs/latest/databases/connections/postgresql)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta |
 | Coste | El coste depende del proveedor o la ruta. La edición abierta usa AGPL; ediciones comerciales y Cloud tienen precios; el BI básico no exige LLM |
 | Equipo | Preparación según la ruta elegida. Ruta Docker o Java según guía; base de prueba; usuario de lectura |
-
-El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta
-
-## Qué puedes hacer con él
-
-Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.
-
-## Por qué destaca
-
-Usos propuestos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo.
-
-## Cómo funciona
 
 El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta
 
@@ -85,13 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Ruta Docker o Java según guía; base de prueba; usuario de lectura
 - **Etiquetas:** `analytics` `dataviz` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [posthog](posthog.md) | 40.8k | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. |
-| [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
 
 ## Alternativas (elige una)
 

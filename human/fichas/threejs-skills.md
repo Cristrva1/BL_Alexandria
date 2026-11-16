@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Archivos de skill (MIT) de CloudAI-X que dan a Claude Code conocimiento actual y verificado de three.js. Sin releases; último cambio en octubre de 2026.
+
+## ¿Qué hace?
+
+Corrige que los modelos mezclen versiones antiguas de three.js. Apunta a three.js r186, React Three Fiber 9.8 con drei 10.7 y gltf-transform 4.5, y cubre los cambios recientes (por ejemplo, RGBELoader pasó a HDRLoader y Clock a Timer). Tiene skills para fundamentos, geometría, materiales, iluminación, texturas, animación y más.
+
+## ¿Cómo lo hace?
+
+Skills en Markdown instalables con `npx skills add cloudai-x/threejs-skills` o copiándolas a `~/.claude/skills/` o `.claude/skills/`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Biblioteca objetivo (r186). | Instala `three@0.186` para que el código coincida con las skills. |
+| [react-three-fiber](react-three-fiber.md) | Versión cubierta (9.8, con drei 10.7). | Fija las versiones indicadas. |
+| [Claude Code](claude-code.md) | Agente objetivo. | Copia las skills a nivel global o de proyecto. |
+
+**Notas:** Alternativa (elige una): 3dviz-pro-max.
+
+Estado en GitHub: activo · último push 2026-10-19 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CloudAI-X/threejs-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La guía e instalación manual se centran en Claude Code; usar Skills CLI no demuestra que todas las convenciones se apliquen sin cambios en otros hosts |
 | Coste | Consumo del agente que ya utilizas. Usa el plan del agente; el runtime Three.js no necesita API de IA |
 | Equipo | Preparación según la ruta elegida. Claude Code o host compatible a evaluar; proyecto Three.js; versión definida |
-
-La guía e instalación manual se centran en Claude Code; usar Skills CLI no demuestra que todas las convenciones se apliquen sin cambios en otros hosts
-
-## Qué puedes hacer con él
-
-Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una escena web; Revisar migraciones de Three.js.
-
-## Cómo funciona
 
 La guía e instalación manual se centran en Claude Code; usar Skills CLI no demuestra que todas las convenciones se apliquen sin cambios en otros hosts
 

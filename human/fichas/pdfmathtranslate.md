@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Herramienta de código abierto (AGPL-3.0) para traducir PDF científicos conservando el diseño, también conocida como pdf2zh. Muy activa (v1.9.11) y con servicio público gratuito en línea.
+
+## ¿Qué hace?
+
+Traduce PDF manteniendo fórmulas, gráficos, índice y anotaciones, y genera un PDF traducido y otro bilingüe. Admite varios idiomas y servicios de traducción (entre ellos Google, DeepL, OpenAI y MiniMax). En 2026 añadió un modo `--ultrafast` para PDF de texto, OCR experimental y un núcleo de traducción v2.0 en modo `--mode precise`.
+
+## ¿Cómo lo hace?
+
+Aplicación Python que se instala con `uv tool install --python 3.12 pdf2zh` y se usa por CLI (`pdf2zh documento.pdf`), interfaz interactiva en el puerto 7860 (`pdf2zh -i`) o Docker (`byaidu/pdf2zh`). El modo rápido usa pdf-inspector y se salta el análisis de diseño ONNX y el OCR.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PDF Inspector](pdf-inspector.md) | Usado por el modo `--ultrafast` para las posiciones del texto. | Se instala como dependencia. |
+| [Ollama](ollama.md) | Traducir con un modelo local para no enviar el documento fuera (combinación por arquitectura; [DATO NO VERIFICADO: soporte en la versión actual]). | Ollama con un modelo multilingüe antes de configurar el servicio. |
+| [litellm](litellm.md) | Enrutar el servicio compatible con OpenAI a varios proveedores (combinación por arquitectura). | LiteLLM primero; apunta la URL base de OpenAI a él. |
+
+**Notas:** El servicio público en línea procesa tus documentos en servidores ajenos.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.9.11 (2025-07-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta |
 | Coste | El coste depende del proveedor o la ruta. El coste depende del traductor; puede usar servicios remotos o modelo Ollama; el procesamiento y modelos locales requieren recursos |
 | Equipo | Preparación según la ruta elegida. Python 3.11–3.12; proveedor de traducción u Ollama; PDF de prueba |
-
-MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta
-
-## Qué puedes hacer con él
-
-Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe.
-
-## Por qué destaca
-
-Usos propuestos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia.
-
-## Cómo funciona
 
 MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.11–3.12; proveedor de traducción u Ollama; PDF de prueba
 - **Etiquetas:** `pdf` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Enlaces
 

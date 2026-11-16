@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+OmniRoute, pasarela local de IA gratuita creada por @diegosouzapw. Licencia MIT. Tiene un recuento de estrellas inusualmente alto (~88k) y publica versiones casi a diario (v3.8.53).
+
+## ¿Qué hace?
+
+Expone un único endpoint compatible con OpenAI (`http://localhost:20128/v1`) que enruta hacia cientos de proveedores con fallback automático, circuit breakers y control de cuotas. Cataloga niveles gratuitos de terceros y estima tokens disponibles, pero exige tus propias cuentas y credenciales. Tiene modos de enrutado (p. ej. solo suscripción o «thrifty»), analítica de costes, MCP/A2A y modo remoto.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install -g omniroute`, con Docker (`diegosouzapw/omniroute`) o desde el código, y se conectan proveedores desde el panel web. Funciones avanzadas como el descifrado MITM transparente (TPROXY) instalan una CA local: úsalas con cuidado. Los proveedores marcados `tos: avoid` quedan fuera del enrutado automático por defecto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | El README muestra Claude Code apuntando al endpoint local. | Arranca OmniRoute y configura la URL base del agente. |
+| [Cline](cline.md) | Cliente citado en el flujo de peticiones del README. | Configura Cline con el endpoint OpenAI de OmniRoute. |
+| [Ollama](ollama.md) | Ollama es un proveedor de primera clase en OmniRoute. | Conecta tu instancia de Ollama como proveedor local. |
+
+**Notas:** Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.8.53 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor |
 | Coste | El coste depende del proveedor o la ruta. Las cuotas gratuitas agregadas son estimaciones de servicios externos y no créditos concedidos por OmniRoute; modelos locales tienen requisitos propios |
 | Equipo | Preparación según la ruta elegida. Node o distribución compatible; cuentas de proveedores o backend local; agente opcional |
-
-Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor
-
-## Qué puedes hacer con él
-
-Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.
-
-## Por qué destaca
-
-Usos propuestos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo.
-
-## Cómo funciona
 
 Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor
 
@@ -86,6 +100,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node o distribución compatible; cuentas de proveedores o backend local; agente opcional
 - **Etiquetas:** `serving` `server` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [claude-code-router](claude-code-router.md) | 38.1k | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
+| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
+| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces
 

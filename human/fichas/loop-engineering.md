@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca de patrones (MIT) de Cobus Greyling para operar agentes de programación alrededor de un repositorio mediante 'bucles' en lugar de prompts sueltos. Es activa (v1.6.0) y reciente.
+
+## ¿Qué hace?
+
+Ofrece patrones y plantillas: triaje diario de issues, CI y dependencias, vigilancia de PRs, refactorizaciones y otros. Cada patrón descubre trabajo, lo delega en agentes, verifica resultados con una puntuación y persiste el estado (`STATE.md`). La primera semana funciona en modo 'solo informe' para limitar riesgos. Incluye un selector de patrones y un starter mínimo como GitHub Action.
+
+## ¿Cómo lo hace?
+
+CLI npm (`npx @cobusgreyling/loop init . --pattern daily-triage --tool claude`) con comandos `doctor` y `cost` para estimar gasto. El agente por defecto es Claude Code, y también admite Grok, Codex y opencode. Requiere tener instalado y autenticado el agente elegido. Los bucles automatizados pueden generar costes recurrentes, así que conviene revisar `cost` antes de activarlos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente por defecto de los bucles (`--tool claude`). | Instala y autentica Claude Code antes de `loop init`. |
+| [Codex CLI](codex.md) | Agente alternativo soportado (`--tool codex`). | Instala Codex CLI y elige `--tool codex` al iniciar. |
+| [OpenCode](opencode.md) | Agente open source soportado (`--tool opencode`). | Instala opencode y elige `--tool opencode`. |
+| [awesome-harness-engineering](awesome-harness-engineering.md) | Combinación recíproca: awesome-harness-engineering lo enlaza como «Patrones prácticos de bucles de agentes alrededor de un repositorio. (combinación por arquitectura)». | Orden indicado desde awesome-harness-engineering: Úsalo para aplicar los conceptos de verificación y estado. |
+
+**Notas:** Sin alternativas declaradas. claude-code, codex y opencode son alternativas entre sí: elige uno por bucle. Combinación anterior con superpowers eliminada: sin integración documentada.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.0 (2026-07-20) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cobusgreyling/loop-engineering/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. La primera semana se plantea solo con informes; Claude y Codex están documentados y Antigravity no figura como adaptador |
 | Coste | Consumo del agente que ya utilizas. Las plantillas usan el modelo o plan del agente; las estimaciones de coste no son facturas ni tarifas garantizadas |
 | Equipo | Preparación según la ruta elegida. Node; proyecto de prueba; Claude Code o Codex configurado |
-
-La primera semana se plantea solo con informes; Claude y Codex están documentados y Antigravity no figura como adaptador
-
-## Qué puedes hacer con él
-
-Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar un ciclo de revisión de issues; Estimar el coste de un bucle antes de automatizarlo.
-
-## Cómo funciona
 
 La primera semana se plantea solo con informes; Claude y Codex están documentados y Antigravity no figura como adaptador
 
@@ -94,14 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; proyecto de prueba; Claude Code o Codex configurado
 - **Etiquetas:** `coding-agent` `skills` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
 ## Enlaces
 

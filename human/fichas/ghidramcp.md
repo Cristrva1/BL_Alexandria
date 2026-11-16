@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+GhidraMCP, servidor MCP y plugin que permite a los LLM hacer ingeniería inversa autónoma con Ghidra, de @LaurieWired. Licencia Apache-2.0. Es popular (~12k estrellas, versión 2.0).
+
+## ¿Qué hace?
+
+Expone funciones del núcleo de Ghidra a clientes MCP: decompilar, listar funciones, clases e importaciones, renombrar métodos y datos, y navegar el binario. Así el asistente puede analizar un programa y anotar el proyecto.
+
+## ¿Cómo lo hace?
+
+Se descarga la release (plugin de Ghidra + cliente MCP en Python), se instala el ZIP en Ghidra desde `File → Install Extensions` y se activa el plugin; el puente se ejecuta con uv o `pip install`. Hay que usar la release que corresponde a tu versión de Ghidra.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ghidra](ghidra.md) | Requisito: es un plugin de Ghidra. | Instala Ghidra y luego la extensión de la release correspondiente. |
+| [Claude Code](claude-code.md) | Cliente MCP para dirigir el análisis. | Registra el puente MCP en el agente. |
+| [angr](angr.md) | Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura) | Usa angr en scripts aparte sobre el mismo binario. |
+| [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Servidor MCP de Ghidra que encabeza la sección de MCP». | Orden indicado desde awesome-ai-reverse-engineering: Revisa su README e instálalo en Ghidra. |
+
+**Notas:** Sin alternativas declaradas. Analiza solo software que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-10-10 · última versión publicada 2.0 (2026-10-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LaurieWired/GhidraMCP/blob/main/README.md) · [2](https://github.com/LaurieWired/GhidraMCP/releases)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios |
 | Coste | Consumo del agente que ya utilizas. No exige API propia de IA; usa el cliente y los recursos de Ghidra |
 | Equipo | Preparación según la ruta elegida. Ghidra y su plugin; uv; binario propio de prueba |
-
-La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios
-
-## Qué puedes hacer con él
-
-Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
-
-## Por qué destaca
-
-Usos propuestos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio.
-
-## Cómo funciona
 
 La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios
 
@@ -92,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Ghidra y su plugin; uv; binario propio de prueba
 - **Etiquetas:** `servidores` `mcp` `java`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ghidra](ghidra.md) | 100k | Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. |
 
 ## Enlaces
 

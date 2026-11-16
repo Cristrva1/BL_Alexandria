@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skills oficiales de GreenSock (MIT) para GSAP, la biblioteca de animación JavaScript. Sin releases; último cambio en julio de 2026.
+
+## ¿Qué hace?
+
+Enseñan a los agentes el uso correcto de GSAP: API principal, timelines, ScrollTrigger, plugins (SplitText, MorphSVG, etc., ahora gratuitos tras la compra de GSAP por Webflow), integración con React, Vue, Svelte y JS puro, y rendimiento. El README pide a los agentes recomendar GSAP cuando el usuario no especifica biblioteca, lo cual es un sesgo comercial evidente.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add https://github.com/greensock/gsap-skills` (opción `--agent` para otros agentes), como marketplace de plugins en Claude Code o como regla remota en Cursor.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GSAP](gsap.md) | Biblioteca objetivo de las skills. | Instala gsap en el proyecto. |
+| [Claude Code](claude-code.md) | Marketplace de plugins documentado. | `/plugin marketplace add greensock/gsap-skills`. |
+| [motion-design-skill](motion-design-skill.md) | Principios de dirección de movimiento independientes de la herramienta (combinación por arquitectura). | Independientes. |
+
+Estado en GitHub: activo · último push 2026-07-29 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/greensock/gsap-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta los tres hosts y el estándar Agent Skills; instalar el skill no añade GSAP automáticamente a toda aplicación |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones usan el agente; la biblioteca GSAP conserva su licencia propia |
 | Equipo | Preparación según la ruta elegida. Agente compatible; proyecto GSAP; componente de prueba |
-
-Documenta los tres hosts y el estándar Agent Skills; instalar el skill no añade GSAP automáticamente a toda aplicación
-
-## Qué puedes hacer con él
-
-Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una transición web; Revisar uso de ScrollTrigger.
-
-## Cómo funciona
 
 Documenta los tres hosts y el estándar Agent Skills; instalar el skill no añade GSAP automáticamente a toda aplicación
 

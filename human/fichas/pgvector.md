@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Extensión de código abierto de PostgreSQL para búsqueda de similitud vectorial, de Andrew Kane. Se distribuye con una licencia de estilo PostgreSQL (GitHub la marca como no estándar); madura y activa (v0.8.7), sin releases en GitHub.
+
+## ¿Qué hace?
+
+Guarda vectores junto al resto de tus datos y ofrece búsqueda exacta y aproximada, vectores de precisión simple, media, binarios y dispersos, y distancias L2, producto interno, coseno, L1, Hamming y Jaccard. Mantiene ACID, recuperación a un punto en el tiempo y JOIN de Postgres, y permite escalar con cuantización.
+
+## ¿Cómo lo hace?
+
+Extensión en C para Postgres 13+ que se compila e instala o se obtiene por Docker, Homebrew, PGXN, APT, Yum, conda-forge y otros (viene preinstalada en Postgres.app). Se activa con `CREATE EXTENSION vector;` en cada base y ofrece índices HNSW (mejor relación velocidad/recuperación, construcción más lenta) e IVFFlat. Funciona con cualquier lenguaje con cliente Postgres.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [supabase](supabase.md) | Supabase incluye pgvector como extensión documentada. | Actívala desde el panel o con SQL en el proyecto de Supabase. |
+| [AnythingLLM](anything-llm.md) | PGVector es una base vectorial soportada. | Postgres con la extensión activa antes de configurar AnythingLLM. |
+| [LibreChat](librechat.md) | El Docker Compose de LibreChat usa una imagen pgvector para su RAG API. | Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo. |
+| [LightRAG](lightrag.md) | PostgreSQL es el backend recomendado para producción en LightRAG. | Activa la extensión antes de arrancar LightRAG con el backend de Postgres. |
+| [langchain4j](langchain4j.md) | Combinación recíproca: langchain4j lo enlaza como «Embeddings en PostgreSQL mediante el módulo oficial de pgvector». | Orden indicado desde langchain4j: Habilita la extensión en Postgres y añade `langchain4j-pgvector`. |
+
+**Notas:** Alternativas (elige una): qdrant, chroma, milvus.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pgvector/pgvector/blob/master/README.md) · [2](https://supabase.com/docs/guides/database/extensions/pgvector)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una extensión de PostgreSQL; las instrucciones Windows con nmake requieren el entorno de compilación correspondiente |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; PostgreSQL, hosting y generación de embeddings son recursos separados |
 | Equipo | Preparación según la ruta elegida. PostgreSQL; permisos de extensión; paquete o compilación adecuados al sistema |
-
-Es una extensión de PostgreSQL; las instrucciones Windows con nmake requieren el entorno de compilación correspondiente
-
-## Qué puedes hacer con él
-
-Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales.
-
-## Por qué destaca
-
-Usos propuestos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio.
-
-## Cómo funciona
 
 Es una extensión de PostgreSQL; las instrucciones Windows con nmake requieren el entorno de compilación correspondiente
 
@@ -86,19 +102,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `vector-db` `postgres` `rag`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 | [Chroma](chroma.md) | 29.7k | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. |
+| [Milvus](milvus.md) | 46.7k | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
 
 ## Enlaces
 

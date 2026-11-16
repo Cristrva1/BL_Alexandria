@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Kit de OCR y motor de IA documental de Baidu sobre PaddlePaddle, Apache 2.0. Muy usado (más de 6.000 repositorios dependientes según su insignia) y activo (v3.7.0, último push en septiembre de 2026).
+
+## ¿Qué hace?
+
+Convierte PDF e imágenes en JSON o Markdown listos para LLM: el VLM PaddleOCR-VL-1.6 (0,9B) para análisis de documentos, PP-StructureV3 para conversión con estructura más fina, y PP-OCRv6 para reconocimiento de texto en escenas en muchos idiomas. Según el README lo usan proyectos como Dify y RAGFlow.
+
+## ¿Cómo lo hace?
+
+Biblioteca Python sobre el framework PaddlePaddle, con modelos publicados en Hugging Face y ModelScope. La canalización HPD-Parsing admite servicio compatible con OpenAI e inferencia local con un runtime personalizado de vLLM [DATO NO VERIFICADO: requisitos de hardware por modelo].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PDF Inspector](pdf-inspector.md) | pdf-inspector usa PP-OCRv6 Small para el OCR selectivo de páginas escaneadas. | Usa pdf-inspector para decidir qué páginas pasan por OCR. |
+| [RAGFlow](ragflow.md) | El README cita RAGFlow entre los proyectos que lo integran. | Revisa en RAGFlow qué versión de PaddleOCR usa antes de mezclar instalaciones. |
+| [dify](dify.md) | El README cita Dify entre los proyectos que lo integran. | Úsalo como servicio externo de OCR o herramienta dentro de los flujos. |
+| [vLLM](vllm.md) | HPD-Parsing usa un runtime personalizado de vLLM para inferencia local. | Sigue la guía de HPD-Parsing; no mezcles con otra versión de vLLM en el mismo entorno. |
+
+**Notas:** Alternativas (elige una): tesseract, olmocr, unlimited-ocr. Se retiró docling por no estar documentado.
+
+Estado en GitHub: activo · último push 2026-09-16 · última versión publicada v3.7.0 (2026-06-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PaddlePaddle/PaddleOCR/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Elige OCR clásico, estructura o VLM según la tarea; no todos los pipelines tienen la misma instalación y memoria |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta local no exige API; GPU, modelos y servicios opcionales tienen requisitos y condiciones propios |
 | Equipo | Preparación según la ruta elegida. Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba |
-
-Elige OCR clásico, estructura o VLM según la tarea; no todos los pipelines tienen la misma instalación y memoria
-
-## Qué puedes hacer con él
-
-Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA.
-
-## Por qué destaca
-
-Usos propuestos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada.
-
-## Cómo funciona
 
 Elige OCR clásico, estructura o VLM según la tarea; no todos los pipelines tienen la misma instalación y memoria
 
@@ -86,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba
 - **Etiquetas:** `ocr` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 

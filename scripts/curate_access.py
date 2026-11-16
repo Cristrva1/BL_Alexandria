@@ -313,7 +313,7 @@ def profile(repo: dict, detail: dict, source: dict, text: str) -> dict:
                       api_note="La ruta documentada usa un servicio en línea mediante sesión o acceso propio; no implica ejecución local del modelo.")
     if rid in {"annas-mcp", "context7", "figma-context-mcp", "github-mcp-server", "blender-mcp"}:
         access["cost"] = "choice"
-    if rid in {"muse-spark", "codex-chatgpt-web"}:
+    if rid in {"codex-chatgpt-web"}:
         access.update(api="unconfirmed", cost="unconfirmed", local_model="unconfirmed", review="pending",
                       api_note="No se da por verificada la autenticación o el coste real de esta integración de terceros.",
                       subscription_note="Consultar la procedencia, el método de sesión y la documentación actual antes de introducir credenciales.")
@@ -370,7 +370,8 @@ def main() -> None:
     audit={r['id']:r for r in json.loads((root/'data/reports/access-source-audit.json').read_text(encoding='utf8'))}
     counts=Counter()
     for repo in compact['repos']:
-        if not repo.get('gh') or repo.get('alias_of'):continue
+        # Repos cuya forja canónica no es GitHub (p. ej. pdfding en Codeberg) conservan su perfil revisado a mano.
+        if not repo.get('gh') or repo.get('alias_of') or repo.get('repository_host','github')!='github':continue
         rid=repo['id'];d=detail['repos'][rid];source=audit[rid]
         if source.get('error'):raise RuntimeError(f"Source unavailable: {rid}")
         text=(root/'data/extracted'/rid/'readme.md').read_text(encoding='utf8')

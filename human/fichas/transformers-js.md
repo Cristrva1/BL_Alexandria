@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Biblioteca JavaScript oficial de Hugging Face para ejecutar modelos Transformers directamente en el navegador, sin servidor. Apache 2.0, madura y activa (v4.3.2); funcionalmente equivalente a la biblioteca `transformers` de Python.
+
+## ¿Qué hace?
+
+Ejecuta modelos preentrenados para NLP (clasificación, entidades, preguntas y respuestas, resumen, traducción, generación de texto), visión (clasificación, detección, segmentación, profundidad), audio (reconocimiento de voz, clasificación, texto a voz) y tareas multimodales (embeddings, clasificación zero-shot). Usa la misma API `pipeline` que la versión de Python.
+
+## ¿Cómo lo hace?
+
+Ejecuta los modelos con ONNX Runtime: por defecto en CPU vía WebAssembly y en GPU con WebGPU (`device: 'webgpu'`). Los modelos de PyTorch, TensorFlow o JAX se convierten a ONNX con Optimum. Se instala con `npm i @huggingface/transformers` o se importa desde CDN como módulo ES.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Qdrant](qdrant.md) | Generar embeddings en el cliente o en Node.js y guardarlos en una base vectorial (combinación por arquitectura). | Elige el modelo de embeddings primero; la dimensión de la colección de Qdrant debe coincidir. |
+| [supabase](supabase.md) | Generar embeddings y guardarlos en Postgres con pgvector en Supabase (combinación por arquitectura). | Activa pgvector en Supabase y crea la tabla con la dimensión del modelo. |
+| [whisper](whisper.md) | Ejecutar modelos Whisper convertidos a ONNX para transcribir en el navegador (combinación por arquitectura). | Usa las variantes ONNX publicadas en Hugging Face; las grandes requieren WebGPU. |
+
+**Notas:** Se retiró la combinación antigua con swr por no tener relación con la inferencia.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 4.3.2 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/transformers.js/blob/main/README.md) · [2](https://huggingface.co/docs/transformers.js)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No todos los Transformers se ejecutan sin conversión; confirma compatibilidad y backend WebGPU o WASM del modelo elegido |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere API remota después de disponer de modelos y assets; cada modelo conserva su licencia; distribución y hardware pueden costar |
 | Equipo | Preparación según la ruta elegida. Node o navegador compatible; modelo ONNX admitido; RAM y descarga inicial |
-
-No todos los Transformers se ejecutan sin conversión; confirma compatibilidad y backend WebGPU o WASM del modelo elegido
-
-## Qué puedes hacer con él
-
-Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript.
-
-## Por qué destaca
-
-Usos propuestos: Clasificar texto en el navegador; Procesar audio o imágenes sin servidor de modelos externo.
-
-## Cómo funciona
 
 No todos los Transformers se ejecutan sin conversión; confirma compatibilidad y backend WebGPU o WASM del modelo elegido
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node o navegador compatible; modelo ONNX admitido; RAM y descarga inicial
 - **Etiquetas:** `motores` `browser` `javascript` `transformers` `webml`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [swr](swr.md) | 32.5k | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. |
 
 ## Enlaces
 

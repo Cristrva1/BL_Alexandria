@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+whisper.cpp, implementación en C/C++ sin dependencias del modelo de reconocimiento de voz Whisper de OpenAI, de ggml-org. Licencia MIT. Es muy madura (~55k estrellas, v1.9.5).
+
+## ¿Qué hace?
+
+Transcribe y traduce audio en local con alto rendimiento en CPU y GPU, incluido streaming en tiempo real. Ofrece servidor HTTP, ejemplos y bindings para muchos lenguajes.
+
+## ¿Cómo lo hace?
+
+Se compila con CMake o make y se descargan modelos ggml (por ejemplo `make -j large-v3-turbo`). Soporta Apple Silicon (Metal, Core ML), CUDA, Vulkan y otros backends; el audio debe estar en WAV de 16 kHz.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Convertir audio a WAV de 16 kHz. | Convierte el audio con FFmpeg antes. |
+| [llama.cpp](llama-cpp.md) | Mismo ecosistema ggml: voz a texto y luego LLM local. (combinación por arquitectura) | Encadena la transcripción con llama.cpp. |
+| [Pipecat](pipecat.md) | STT local en agentes de voz. (combinación por arquitectura) | Expón el servidor de whisper.cpp al pipeline. |
+| [dograh](dograh.md) | Combinación recíproca: dograh lo enlaza como «STT autoalojado. (combinación por arquitectura)». | Orden indicado desde dograh: Configura un STT propio. |
+| [Kokoro](kokoro.md) | Combinación recíproca: Kokoro lo enlaza como «STT local para un ciclo voz a voz. (combinación por arquitectura)». | Orden indicado desde Kokoro: Combina en el mismo pipeline. |
+| [LiveKit Agents](livekit-agents.md) | Combinación recíproca: LiveKit Agents lo enlaza como «STT local. (combinación por arquitectura)». | Orden indicado desde LiveKit Agents: Expón el servidor y úsalo como STT. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Audacity](audacity.md) · [rnnoise](rnnoise.md) · [Shotcut](shotcut.md)
+
+**Notas:** Alternativas (elige una): faster-whisper, whisper.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.9.5 (2026-10-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ggml-org/whisper.cpp/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Clonar es solo el comienzo: sigue compilación, descarga del modelo y formato de audio; no necesitas instalar todas las aceleraciones del README |
 | Coste | Sin pago a un modelo en la ruta básica. Modelo local sin API de pago; hardware y energía independientes |
 | Equipo | Preparación según la ruta elegida. Compilador y CMake según sistema; modelo Whisper; audio corto compatible |
-
-Clonar es solo el comienzo: sigue compilación, descarga del modelo y formato de audio; no necesitas instalar todas las aceleraciones del README
-
-## Qué puedes hacer con él
-
-Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles.
-
-## Por qué destaca
-
-Usos propuestos: Transcribir una nota offline; Preparar texto base para subtítulos.
-
-## Cómo funciona
 
 Clonar es solo el comienzo: sigue compilación, descarga del modelo y formato de audio; no necesitas instalar todas las aceleraciones del README
 
@@ -93,12 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Compilador y CMake según sistema; modelo Whisper; audio corto compatible
 - **Etiquetas:** `stt` `audio` `local` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Alternativas (elige una)
 

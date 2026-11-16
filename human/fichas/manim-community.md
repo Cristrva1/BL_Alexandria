@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Manim Community Edition (ManimCE), fork comunitario de 3b1b/manim para animaciones matemáticas explicativas. Doble licencia MIT (3blue1brown LLC y Manim Community Developers). Es madura y activa (~43k estrellas, v0.22.1).
+
+## ¿Qué hace?
+
+Ofrece la API de Manim con documentación amplia, estabilidad, pruebas y una comunidad activa, orientada a usuarios generales.
+
+## ¿Cómo lo hace?
+
+Requiere instalar dependencias previas según el sistema (y LaTeX para fórmulas) y se instala con `pip install manim` o uv. La guía por sistema operativo está en docs.manim.community.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Renderizar vídeo. | Instala FFmpeg. |
+| [Kokoro](kokoro.md) | Narración. (combinación por arquitectura) | Genera el audio y móntalo. |
+| [srt-whiteboard-animation](srt-whiteboard-animation.md) | Otro estilo explicativo, de pizarra. (combinación por arquitectura) | Elige según el formato. |
+
+**Notas:** Alternativas (elige una): manim.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.22.1 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ManimCommunity/manim/blob/main/README.md) · [2](https://docs.manim.community/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Manim Community usa from manim y su propio CLI; es una línea distinta de ManimGL y sus tutoriales no son intercambiables sin adaptar |
 | Coste | Sin pago a un modelo en la ruta básica. Código MIT sin API de IA; render y recursos independientes |
 | Equipo | Preparación según la ruta elegida. Python; dependencias de la versión; LaTeX según escena; equipo |
-
-Manim Community usa from manim y su propio CLI; es una línea distinta de ManimGL y sus tutoriales no son intercambiables sin adaptar
-
-## Qué puedes hacer con él
-
-Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una explicación matemática; Crear una animación de geometría.
-
-## Cómo funciona
 
 Manim Community usa from manim y su propio CLI; es una línea distinta de ManimGL y sus tutoriales no son intercambiables sin adaptar
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dependencias de la versión; LaTeX según escena; equipo
 - **Etiquetas:** `programatico` `animations` `hacktoberfest` `manim` `math` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Alternativas (elige una)
 

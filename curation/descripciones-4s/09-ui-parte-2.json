@@ -1,0 +1,529 @@
+{
+ "batch": "17-ui-diseno-ia",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "excalidraw": {
+   "que_es": "Pizarra virtual open source (MIT) con estilo dibujado a mano, colaborativa y con cifrado de extremo a extremo. Es muy madura y popular (~136k estrellas, v0.18.1). Tiene una versión comercial, Excalidraw+, con funciones para equipos.",
+   "que_hace": "Ofrece un lienzo infinito para diagramas, wireframes y bocetos con rectángulos, elipses, rombos, flechas con enlace y etiquetas, dibujo libre y borrador. Incluye modo oscuro, imágenes, bibliotecas de formas, i18n, deshacer y rehacer, y zoom. Exporta a PNG, SVG, portapapeles y a un formato abierto `.excalidraw` (JSON). La app web añade colaboración en tiempo real y cifrado E2E.",
+   "como_lo_hace": "Se usa en excalidraw.com o se embebe en apps React con `npm install react react-dom @excalidraw/excalidraw`. El componente es personalizable y tiene API. Hay integraciones comunitarias, como una extensión de VS Code. El formato JSON abierto permite que herramientas o agentes generen diagramas programáticamente.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Generar o editar diagramas `.excalidraw` (JSON abierto) desde un agente. (combinación por arquitectura)",
+     "orden_instalacion": "Pide al agente que escriba el JSON y ábrelo en Excalidraw."
+    },
+    {
+     "id": "penpot",
+     "motivo": "Pasar de bocetos rápidos a diseño de alta fidelidad. (combinación por arquitectura)",
+     "orden_instalacion": "Boceta en Excalidraw y diseña la versión final en Penpot."
+    },
+    {
+     "id": "flexoki",
+     "motivo": "Paleta coherente para diagramas de documentación. (combinación por arquitectura)",
+     "orden_instalacion": "Define los colores personalizados en la paleta del lienzo."
+    },
+    {
+     "id": "kroki",
+     "motivo": "Combinación recíproca: Kroki lo enlaza como «Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`».",
+     "orden_instalacion": "Orden indicado desde Kroki: Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`.",
+     "reciproca_de": "kroki"
+    }
+   ],
+   "notas": "Alternativas (elige una): tldraw, mermaid.",
+   "fuentes": [
+    "https://github.com/excalidraw/excalidraw/blob/master/README.md",
+    "https://docs.excalidraw.com"
+   ],
+   "github": {
+    "name_with_owner": "excalidraw/excalidraw",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.18.1 (2026-04-21)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "open-design": {
+   "que_es": "Espacio de trabajo de diseño colaborativo con agentes de IA (Apache-2.0) de nexu-io. Es muy activo (open-design-v0.27.1) y ha crecido muy deprisa (~108k estrellas). Tiene una oferta comercial (OpenDesign Cloud y el plan 'Go' de créditos) que el README promociona en primer plano.",
+   "que_hace": "A partir de un brief, un agente de programación u OpenDesign Cloud crea prototipos web, de escritorio o móviles que siguen tu sistema de diseño (`DESIGN.md`), y los comparte con el equipo. También genera presentaciones (15 plantillas y 36 temas, exportables a HTML, PDF y PPTX) y gráficos animados con HyperFrames exportables a MP4. Puede refactorizar componentes reales de un repositorio hacia una especificación de marca. Se extiende con plugins, skills, plantillas y sistemas de diseño versionables.",
+   "como_lo_hace": "Hay apps de escritorio para macOS y Windows; en Linux se ejecuta desde el código fuente. Se conecta a agentes de programación por skills, CLI y MCP (`od mcp install claude|codex|opencode|hermes|...`) o con adaptadores nativos, y trae un proxy BYOK para Anthropic, OpenAI, Azure, Google y Ollama. Funciona en local o en tu propio despliegue; el README menciona analítica de producto, que conviene revisar en la configuración.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente de diseño soportado vía MCP (`od mcp install claude`).",
+     "orden_instalacion": "Instala OpenDesign y luego registra el MCP en Claude Code."
+    },
+    {
+     "id": "design.md",
+     "motivo": "Formato `DESIGN.md` para describir el sistema de diseño que el agente sigue. (combinación por arquitectura) (OpenDesign usa archivos DESIGN.md; la compatibilidad exacta con la especificación de Google no está verificada)",
+     "orden_instalacion": "Redacta el DESIGN.md antes de generar prototipos."
+    },
+    {
+     "id": "hyperframes",
+     "motivo": "Motor de gráficos animados integrado para exportar vídeo MP4 (citado en el README).",
+     "orden_instalacion": "Se usa desde la sección Video & HyperFrames."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante el proxy BYOK.",
+     "orden_instalacion": "Arranca Ollama y configúralo como proveedor en el proxy."
+    }
+   ],
+   "notas": "Alternativas (elige una): onlook. Combinaciones anteriores con tailwindcss y heroui eliminadas: sin integración documentada.",
+   "fuentes": [
+    "https://github.com/nexu-io/open-design/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "nexu-io/open-design",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "open-design-v0.27.1 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "penpot": {
+   "que_es": "Plataforma open source de diseño y prototipado colaborativo (MPL-2.0) para equipos de producto, pensada para autoalojarse. Es madura y activa (2.19.1). Tiene un plan de pago, Penpot Enterprise, para organizaciones.",
+   "que_hace": "Ofrece diseño, prototipado y colaboración en tiempo real, con el diseño expresado como código para facilitar la traducción a producto. Incluye tokens de diseño nativos como fuente única entre diseño y desarrollo, layouts con CSS Grid y Flex que se comportan como código real, API abierta, sistema de plugins y un servidor MCP para flujos bidireccionales entre diseño y código con agentes.",
+   "como_lo_hace": "Se usa en la nube (penpot.app) o autoalojado con Docker, Kubernetes, Elestio u otras opciones documentadas. Funciona en el navegador. Los plugins amplían la plataforma y el servidor MCP la conecta con asistentes de IA.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Leer y modificar diseños desde un agente con el servidor MCP de Penpot.",
+     "orden_instalacion": "Ten Penpot (cloud o autoalojado) y configura el servidor MCP según su guía."
+    },
+    {
+     "id": "excalidraw",
+     "motivo": "Bocetos rápidos previos al diseño de alta fidelidad. (combinación por arquitectura)",
+     "orden_instalacion": "Boceta en Excalidraw y pasa a Penpot."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Trasladar tokens y estilos del diseño a utilidades de Tailwind al implementar. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los tokens y defínelos en `@theme`."
+    }
+   ],
+   "notas": "Sin alternativas declaradas en el catálogo (Figma no es open source). Combinación anterior con plasmic eliminada: sin integración documentada.",
+   "fuentes": [
+    "https://github.com/penpot/penpot/blob/develop/README.md",
+    "https://penpot.app/penpot-mcp-server",
+    "https://penpot.app/self-host"
+   ],
+   "github": {
+    "name_with_owner": "penpot/penpot",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MPL-2.0",
+    "primary_language": "Clojure",
+    "latest_release": "2.19.1 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "tldraw": {
+   "que_es": "SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open source OSI. Los starter kits sí son MIT. Es muy activo (v5.6.0).",
+   "que_hace": "Ofrece un motor de lienzo completo con dibujo sensible a la presión, formas, texto enriquecido, flechas, ajuste, imágenes y vídeo, y exportación. Permite crear formas, herramientas, enlaces y UI propios, y controlar el lienzo con su Editor API. Incluye multijugador autoalojable (`@tldraw/sync`). Los starter kits cubren multijugador, agentes de IA que leen y modifican el lienzo, constructores de workflows, chat con lienzo, pipelines de imágenes y shaders.",
+   "como_lo_hace": "Se instala con `npm i tldraw` o arranca un proyecto con `npx create-tldraw@latest`. El kit multijugador usa Cloudflare Durable Objects, el mismo stack que tldraw.com. Al ser un lienzo DOM, permite embeber webs, YouTube o Figma.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "Construir agentes que lean y modifiquen el lienzo, como en el starter kit 'Agent'. (combinación por arquitectura) (el kit no fija proveedor en el README)",
+     "orden_instalacion": "Parte del starter kit y conecta el modelo con la biblioteca de IA elegida."
+    },
+    {
+     "id": "ui",
+     "motivo": "Interfaz alrededor del lienzo (paneles, diálogos) en una app React. (combinación por arquitectura)",
+     "orden_instalacion": "Construye la UI con shadcn/ui y deja el lienzo a tldraw."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Persistencia y autenticación de documentos si no usas el stack de sync en Cloudflare. (combinación por arquitectura)",
+     "orden_instalacion": "Guarda los snapshots del documento en tu backend."
+    }
+   ],
+   "notas": "Alternativas (elige una): excalidraw. Licencia: requiere clave para producción.",
+   "fuentes": [
+    "https://github.com/tldraw/tldraw/blob/main/README.md",
+    "https://tldraw.dev/docs/sync"
+   ],
+   "github": {
+    "name_with_owner": "tldraw/tldraw",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v5.6.0 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "onlook": {
+   "que_es": "Editor visual open source (Apache-2.0) para diseñar sobre apps Next.js + Tailwind con IA. Es el proyecto que dio origen a Onlook; la empresa construye ahora un producto alojado distinto, en acceso anticipado con lista de espera. El repositorio sigue activo (v0.2.32), pero su futuro frente al producto alojado es incierto.",
+   "que_hace": "Permite editar sitios y prototipos directamente en el DOM del navegador con una interfaz tipo Figma, escribir cambios con IA y sincronizarlos en tiempo real con el código. Se presenta como alternativa open source a Bolt.new, Lovable, v0, Replit Agent o Figma Make. Su hoja de ruta incluye funciones pendientes, como usar MCPs en proyectos.",
+   "como_lo_hace": "Stack: Next.js, Tailwind CSS, Supabase (autenticación, base de datos y almacenamiento), CodeSandbox SDK (sandbox de desarrollo), Bun y Docker. Requiere claves de proveedores de IA y de los servicios citados para el autoalojamiento.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "Stack de estilos que el editor modifica.",
+     "orden_instalacion": "Los proyectos editados deben usar Tailwind."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Autenticación, base de datos y almacenamiento del editor (stack del README).",
+     "orden_instalacion": "Crea el proyecto Supabase antes de autoalojar Onlook."
+    },
+    {
+     "id": "ui",
+     "motivo": "Componentes base para las apps que diseñas. (combinación por arquitectura)",
+     "orden_instalacion": "Inicializa shadcn/ui en el proyecto antes de editarlo visualmente."
+    }
+   ],
+   "notas": "Alternativas (elige una): open-design.",
+   "fuentes": [
+    "https://github.com/onlook-dev/onlook/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "onlook-dev/onlook",
+    "archived": false,
+    "pushed_at": "2026-10-21",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.2.32 (2025-07-17)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "plasmic": {
+   "que_es": "Constructor visual open source de Plasmic para apps y sitios conectado a tu propio código. La licencia es mixta: MIT fuera de `platform/` y AGPL dentro de `platform/` (el editor y servidor). Es activo (último push en noviembre de 2026) y tiene servicio cloud de pago.",
+   "que_hace": "Permite arrastrar y soltar tus propios componentes React, diseñar páginas y apps internas, y publicarlas sin depender de desarrolladores para cada cambio. Importa diseños de Figma traduciéndolos a DOM y CSS. Sirve para webs de marketing, tiendas headless y herramientas internas, con integraciones de CMS y comercio.",
+   "como_lo_hace": "Se integra en el código con paquetes como `@plasmicapp/loader-nextjs` (carga en runtime) o generando código. El editor visual se usa en la nube de Plasmic o autoalojando la plataforma, que tiene licencia AGPL.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilos de los componentes propios registrados en el editor. (combinación por arquitectura)",
+     "orden_instalacion": "Registra componentes estilados con Tailwind en Plasmic."
+    },
+    {
+     "id": "ui",
+     "motivo": "Registrar componentes shadcn/ui como bloques arrastrables. (combinación por arquitectura)",
+     "orden_instalacion": "Instala shadcn/ui en el proyecto y registra los componentes con el loader."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Backend de datos para apps internas construidas visualmente. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta la fuente de datos desde el código del host."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Licencia AGPL en `platform/`: revisa obligaciones si la modificas y la ofreces como servicio.",
+   "fuentes": [
+    "https://github.com/plasmicapp/plasmic/blob/master/README.md",
+    "https://www.plasmic.app/learn/quickstart/"
+   ],
+   "github": {
+    "name_with_owner": "plasmicapp/plasmic",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "copilotkit": {
+   "que_es": "Stack open source (MIT) para poner agentes de IA frente a usuarios reales en React, de CopilotKit, el equipo creador del protocolo AG-UI. Es muy activo (v1.88.0). Tiene un producto de pago, CopilotKit Intelligence, que añade memoria entre sesiones y aprendizaje continuo.",
+   "que_hace": "Conecta un agente ya construido en cualquier framework con una interfaz de chat, UI generativa, estado compartido entre agente y app, y human-in-the-loop. Soporta AG-UI 1.0, A2UI y MCP Apps. Tiene integraciones documentadas con LangGraph, Mastra, CrewAI, Google ADK, AG2, Agno, LlamaIndex, Strands y Microsoft Agent Framework, entre otros.",
+   "como_lo_hace": "Paquetes npm (`@copilotkit/react-core`, `@copilotkit/runtime`), un asistente de onboarding que puede ejecutar un agente de programación (`npx copilotkit@latest onboard start`) y plantillas (`npx copilotkit@latest create`). El runtime se despliega en tu backend y la UI va en React.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Backend de agente con integración oficial documentada.",
+     "orden_instalacion": "Despliega el grafo y conecta CopilotKit a su endpoint."
+    },
+    {
+     "id": "mastra",
+     "motivo": "Agentes TypeScript con integración oficial documentada.",
+     "orden_instalacion": "Configura Mastra y registra el agente en el runtime de CopilotKit."
+    },
+    {
+     "id": "agent-framework",
+     "motivo": "Agentes de Microsoft Agent Framework con integración documentada.",
+     "orden_instalacion": "Expón el agente y conéctalo vía AG-UI."
+    },
+    {
+     "id": "crewai",
+     "motivo": "Equipos de agentes CrewAI con integración documentada.",
+     "orden_instalacion": "Despliega el crew y conéctalo al runtime."
+    },
+    {
+     "id": "openbot",
+     "motivo": "OpenBot, la plataforma de compañeros de IA de CopilotKit, está construida sobre CopilotKit y AG-UI.",
+     "orden_instalacion": "Parte de OpenBot si quieres un espacio de trabajo completo en vez de componentes sueltos."
+    }
+   ],
+   "notas": "Alternativas (elige una): assistant-ui.",
+   "fuentes": [
+    "https://github.com/CopilotKit/CopilotKit/blob/main/README.md",
+    "https://docs.copilotkit.ai/agentic-protocols/ag-ui",
+    "https://docs.copilotkit.ai/mastra",
+    "https://docs.copilotkit.ai/langgraph",
+    "https://docs.copilotkit.ai/microsoft-agent-framework",
+    "https://docs.copilotkit.ai/crewai-crews"
+   ],
+   "github": {
+    "name_with_owner": "CopilotKit/CopilotKit",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.88.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "screenshot-to-code": {
+   "que_es": "Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).",
+   "que_hace": "Genera código funcional en HTML + Tailwind, HTML + CSS, React + Tailwind, Vue + Tailwind, Bootstrap o Ionic + Tailwind a partir de una imagen o un vídeo de una web en uso. Opcionalmente renderiza su resultado en un navegador sin interfaz para compararlo visualmente y corregirlo. Usa modelos de Gemini, OpenAI y Anthropic, más un modelo de imagen en Replicate para generar recursos.",
+   "como_lo_hace": "Frontend React/Vite y backend FastAPI, ejecutables en local o con Docker. Requiere al menos una clave de OpenAI, Anthropic o Gemini; el README recomienda Gemini y Replicate para mejor calidad. Cada conversión consume llamadas de pago a los modelos.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "Stack de salida por defecto (variantes con Tailwind).",
+     "orden_instalacion": "El código generado asume Tailwind; configúralo en el proyecto destino."
+    },
+    {
+     "id": "ui",
+     "motivo": "Refactorizar el HTML generado hacia componentes reutilizables. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el prototipo y migra sus piezas a componentes shadcn/ui."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Pruebas visuales y funcionales del código generado. (combinación por arquitectura)",
+     "orden_instalacion": "Añade pruebas tras integrar el código."
+    }
+   ],
+   "notas": "Alternativas (elige una): stitch-sdk. Respeta derechos de autor al convertir diseños ajenos.",
+   "fuentes": [
+    "https://github.com/abi/screenshot-to-code/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "abi/screenshot-to-code",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openui": {
+   "que_es": "Framework de UI generativa (MIT) de Thesys, construido en torno a OpenUI Lang, un lenguaje compacto y pensado para streaming. Es activo (@openuidev/server@0.4.3) y reciente. El README avisa de que no existe ninguna criptomoneda oficial con su nombre.",
+   "que_hace": "Permite que el modelo responda con interfaces en lugar de solo texto: defines componentes, se generan los prompts y el modelo emite OpenUI Lang, que se renderiza progresivamente. Tiene runtimes oficiales para React, Vue, Svelte y Angular, componentes de chat, integración con agentes de LangChain/LangGraph y observabilidad, opcionalmente en la nube de Thesys.",
+   "como_lo_hace": "Paquetes npm (`@openuidev/react-lang`, `@openuidev/react-ui`, `@openuidev/lang-core`, `@openuidev/langchain`…) y una CLI para crear un proyecto (`npx @openuidev/cli@latest create`). Funciona con cualquier proveedor de modelos a través del servidor.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Agentes LangGraph que emiten UI con el paquete `@openuidev/langchain`.",
+     "orden_instalacion": "Instala `@openuidev/langchain @langchain/langgraph` y conecta el agente."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración oficial para agentes y servidores LangChain.",
+     "orden_instalacion": "Usa el mismo paquete de integración."
+    },
+    {
+     "id": "copilotkit",
+     "motivo": "Combinación anterior del catálogo: frontend de agentes. (combinación por arquitectura) (OpenUI y AG-UI/A2UI son enfoques distintos de UI generativa)",
+     "orden_instalacion": "Evalúa si necesitas ambos; normalmente se elige uno."
+    }
+   ],
+   "notas": "Sin alternativas declaradas; enfoques comparables: json-render, copilotkit (A2UI).",
+   "fuentes": [
+    "https://github.com/thesysdev/openui/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "thesysdev/openui",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "@openuidev/server@0.4.3 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "assistant-ui": {
+   "que_es": "Biblioteca open source TypeScript/React (MIT) para construir experiencias de chat con IA de calidad de producción. Es activa (assistant-ui@0.0.135, aún 0.x). Tiene un servicio opcional de pago, Assistant Cloud, para persistencia de hilos, telemetría y archivos.",
+   "que_hace": "Ofrece primitivas componibles (`Thread`, `Message`, `Composer`, `ThreadList`, `ActionBar`…) para construir cualquier interfaz de chat con streaming, adjuntos, edición, ramas, renderizado de herramientas y accesibilidad. Incluye runtimes para Vercel AI SDK, LangGraph, LangChain, data streams y backends propios. Mastra figura entre sus integraciones destacadas.",
+   "como_lo_hace": "Una CLI genera un proyecto Next.js o añade componentes con estilo a uno existente (`npx assistant-ui@latest create` o `init`). También se puede instalar directamente con `npm install @assistant-ui/react @assistant-ui/ai-sdk ai`. `useChatRuntime` conecta con el AI SDK por defecto.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "Runtime por defecto (`@assistant-ui/ai-sdk`, `useChatRuntime`).",
+     "orden_instalacion": "Instala `ai` y el proveedor; después el runtime de assistant-ui."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Runtime oficial `@assistant-ui/react-langgraph`.",
+     "orden_instalacion": "Despliega el grafo y usa `useLangGraphRuntime`."
+    },
+    {
+     "id": "ui",
+     "motivo": "Los componentes con estilo que añade la CLI siguen el patrón de shadcn/ui. (combinación por arquitectura)",
+     "orden_instalacion": "Inicializa shadcn/ui o deja que la CLI configure el proyecto."
+    }
+   ],
+   "notas": "Alternativas (elige una): copilotkit.",
+   "fuentes": [
+    "https://github.com/assistant-ui/assistant-ui/blob/main/README.md",
+    "https://www.assistant-ui.com/docs/runtimes/ai-sdk",
+    "https://www.assistant-ui.com/docs/runtimes/langgraph"
+   ],
+   "github": {
+    "name_with_owner": "assistant-ui/assistant-ui",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "assistant-ui@0.0.135 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "stitch-sdk": {
+   "que_es": "SDK oficial de Google Labs (Apache-2.0) para Google Stitch, el servicio de diseño de interfaces con IA. Permite generar pantallas de UI desde texto y extraer su HTML y capturas de forma programática. Está en una fase muy temprana (v0.1.1).",
+   "que_hace": "Crea proyectos y genera o edita pantallas desde prompts. Devuelve URLs de descarga del HTML y de la captura de cada pantalla, y lista y referencia proyectos existentes. Expone las herramientas de Stitch como cliente MCP para agentes y como herramientas listas para el Vercel AI SDK (`stitchTools()`).",
+   "como_lo_hace": "Paquete npm `@google/stitch-sdk` que requiere `STITCH_API_KEY`. Para usarlo con el AI SDK hay que instalar también `ai`. `StitchToolClient` permite configurar la clave y la URL base. Depende del servicio de Google Stitch, con sus condiciones y límites.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "Integración documentada: `stitchTools()` añade las herramientas de Stitch a un agente del AI SDK.",
+     "orden_instalacion": "Instala `@google/stitch-sdk ai` y pasa las herramientas al modelo."
+    },
+    {
+     "id": "stitch-skills",
+     "motivo": "Skills oficiales de Google Labs para trabajar con Stitch desde agentes de programación.",
+     "orden_instalacion": "Usa el SDK para scripts y las skills para agentes interactivos."
+    },
+    {
+     "id": "design.md",
+     "motivo": "Especificación de sistema de diseño de Google Labs para guiar la generación. (combinación por arquitectura)",
+     "orden_instalacion": "Redacta el DESIGN.md e inclúyelo en los prompts."
+    }
+   ],
+   "notas": "Alternativas (elige una): screenshot-to-code.",
+   "fuentes": [
+    "https://github.com/google-labs-code/stitch-sdk/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "google-labs-code/stitch-sdk",
+    "archived": false,
+    "pushed_at": "2026-11-05",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.1.1 (2026-04-27)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ai-website-cloner-template": {
+   "que_es": "Plantilla (MIT) de @JCodesMore para que un agente de programación estudie una web de referencia y la recree como app Next.js. Es activa (v0.6.1) y popular (~39k estrellas). El README incluye un patrocinio de un servicio de proxies residenciales.",
+   "que_hace": "Da al agente instrucciones, skills y estructura para inspeccionar una URL con un navegador (layout, responsive, medios, animaciones; tiene guía específica para Framer) y reconstruirla con shadcn/ui y Tailwind CSS v4. Casos previstos: migrar un sitio propio desde WordPress, Webflow o Squarespace, recuperar código perdido o aprender. El README prohíbe phishing, suplantación, apropiarse de diseños ajenos o violar términos de servicio.",
+   "como_lo_hace": "Se clona como proyecto independiente y se abre en el agente con acceso a navegador. Funciona mejor con Claude Code según el README, y también con Codex, Cursor y OpenCode. El resultado es una app Next.js con primitivas Base UI y shadcn/ui. Hay que verificar derechos sobre el sitio de origen antes de usarlo.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente recomendado por el README para ejecutar la plantilla.",
+     "orden_instalacion": "Instala Claude Code con acceso a navegador y abre la plantilla."
+    },
+    {
+     "id": "ui",
+     "motivo": "Stack de componentes de la app generada (shadcn/ui con Base UI).",
+     "orden_instalacion": "Viene configurado en la plantilla."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Navegador automatizado para que el agente inspeccione la web de referencia. (combinación por arquitectura) (el README pide 'browser access' sin fijar herramienta)",
+     "orden_instalacion": "Configura un MCP de navegador en el agente."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Úsala solo con sitios propios o con permiso.",
+   "fuentes": [
+    "https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "JCodesMore/ai-website-cloner-template",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.6.1 (2026-10-05)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "json-render": {
+   "que_es": "Framework de UI generativa (Apache-2.0) de Vercel Labs: la IA genera interfaces desde prompts, restringidas a un catálogo de componentes definido por ti. Es muy activo (v0.23.1, aún 0.x).",
+   "que_hace": "Defines un catálogo de componentes y acciones con esquemas; el modelo genera un JSON (o YAML) que cumple ese esquema y se renderiza de forma progresiva mientras llega. Sus puntos fuertes son las barreras de seguridad (solo componentes del catálogo) y la previsibilidad. Desde el mismo catálogo renderiza en React, Vue, Svelte, Solid y React Native, y también vídeos con Remotion, PDFs y emails. Incluye 36 componentes shadcn/ui listos, devtools e integración con MCP Apps para Claude, ChatGPT, Cursor y VS Code.",
+   "como_lo_hace": "Paquetes npm por destino (`@json-render/core` más `@json-render/react`, `/shadcn`, `/react-native`, `/remotion`, `/react-pdf`, `/react-email`, `/mcp`, `/yaml`…). Funciona con cualquier modelo que produzca salida estructurada; el formato YAML incluye una transformación para el AI SDK.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "36 componentes shadcn/ui preconstruidos (`@json-render/shadcn`).",
+     "orden_instalacion": "Instala `@json-render/shadcn` junto al núcleo."
+    },
+    {
+     "id": "remotion",
+     "motivo": "Renderizar vídeos desde la misma especificación (`@json-render/remotion`).",
+     "orden_instalacion": "Instala Remotion y el paquete de json-render correspondiente."
+    },
+    {
+     "id": "vercel-ai",
+     "motivo": "Generar y transmitir la especificación con el AI SDK (transformación documentada en el paquete YAML).",
+     "orden_instalacion": "Usa el AI SDK para la llamada al modelo y json-render para renderizar."
+    }
+   ],
+   "notas": "Sin alternativas declaradas; enfoques comparables: openui, copilotkit (A2UI).",
+   "fuentes": [
+    "https://github.com/vercel-labs/json-render/blob/main/README.md",
+    "https://json-render.dev"
+   ],
+   "github": {
+    "name_with_owner": "vercel-labs/json-render",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.23.1 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ui-sdk": {
+   "que_es": "Biblioteca de comportamientos de interfaz (Apache-2.0) de Vercel Labs, pensada para que agentes de IA construyan componentes. Está en **beta** y no tiene releases.",
+   "que_hace": "Ofrece en `@ui-sdk/core` los comportamientos que necesitan los componentes (navegación por teclado, foco, selección, cierre, popups, arrastrar y soltar) con su ARIA, para componer primitivas propias. Tiene adaptadores para React, Vue, Svelte, Solid y Web Components. La idea es que el desarrollador no escriba estas primitivas, sino que lo haga el agente con la skill oficial.",
+   "como_lo_hace": "Se instala el núcleo y el adaptador del framework (`npm install @ui-sdk/react @ui-sdk/core`) y se da al agente la skill (`npx skills add vercel-labs/ui --skill ui-sdk`). Al ser beta, su API puede cambiar.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente que usa la skill de UI SDK para crear primitivas. (combinación por arquitectura) (la skill se instala con el CLI `skills`, compatible con varios agentes)",
+     "orden_instalacion": "Instala la skill en el proyecto y pide al agente los componentes."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilar las primitivas sin estilos. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Tailwind en el proyecto."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Comprobar con pruebas de navegador la navegación por teclado, el foco y los popups de las primitivas que genere el agente (combinación por arquitectura).",
+     "orden_instalacion": "Primero los componentes con UI SDK; después las pruebas de Playwright sobre la página que los usa."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Beta.",
+   "fuentes": [
+    "https://github.com/vercel-labs/ui/blob/main/README.md",
+    "https://ui-sdk.dev/docs"
+   ],
+   "github": {
+    "name_with_owner": "vercel-labs/ui",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

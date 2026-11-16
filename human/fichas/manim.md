@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+ManimGL, motor de animación programática para vídeos matemáticos explicativos, creado por el autor de 3Blue1Brown (@3b1b). Licencia MIT. Tiene ~97k estrellas (v1.7.2); es la versión personal del autor, distinta de la edición comunitaria.
+
+## ¿Qué hace?
+
+Anima con precisión fórmulas, gráficos y geometría desde Python, con previsualización interactiva en OpenGL.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10+ y se instala con `pip install manimgl` (ojo con el nombre del paquete), además de FFmpeg y LaTeX.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Renderizar el vídeo. | Instala FFmpeg. |
+| [Kokoro](kokoro.md) | Narración de la explicación. (combinación por arquitectura) | Genera el audio y móntalo. |
+| [MoviePy](moviepy.md) | Montaje posterior. (combinación por arquitectura) | Une escenas y audio. |
+
+**Notas:** Alternativas (elige una): manim-community. Para documentación y estabilidad, la comunidad recomienda ManimCE.
+
+Estado en GitHub: activo · último push 2026-09-09 · última versión publicada v1.7.2 (2024-12-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/3b1b/manim/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community |
 | Coste | Sin pago a un modelo en la ruta básica. Código MIT sin API de IA; cómputo y recursos externos aparte |
 | Equipo | Preparación según la ruta elegida. Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña |
-
-Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community
-
-## Qué puedes hacer con él
-
-Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL.
-
-## Por qué destaca
-
-Usos propuestos: Explicar una transformación matemática; Preparar una animación geométrica.
-
-## Cómo funciona
 
 Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community
 
@@ -98,14 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña
 - **Etiquetas:** `video` `dataviz` `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Alternativas (elige una)
 

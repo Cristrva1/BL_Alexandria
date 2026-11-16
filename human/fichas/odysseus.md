@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Espacio de trabajo de IA autoalojado de código abierto (AGPL-3.0) de odysseus-dev que reúne chat, agentes, investigación, documentos, correo, notas, calendario y flujos con modelos locales. Proyecto activo sin releases formales: la rama `dev` recibe los cambios primero y `main` es la más curada.
+
+## ¿Qué hace?
+
+Ofrece chat y agentes con modelos locales o por API, herramientas, MCP, archivos, shell, skills y memoria; un «Cookbook» que recomienda, descarga y sirve modelos según tu hardware; investigación web profunda con lectura de fuentes e informes; comparación ciega de modelos; editor de documentos con edición por IA; bandeja IMAP/SMTP con triaje, resúmenes y borradores; y notas, tareas y calendario con sincronización CalDAV y tareas programadas de agentes.
+
+## ¿Cómo lo hace?
+
+Aplicación Python (servidor uvicorn) con interfaz web en el puerto 7011 vía Docker Compose, que también arranca ChromaDB y SearXNG; usa la imagen multiarquitectura `ghcr.io/odysseus-dev/odysseus` (en producción recomienda fijar una etiqueta inmutable). La instalación nativa requiere Python 3.11+ y tmux para el Cookbook. En Docker sobre Mac no hay acceso a la GPU Metal, así que el Cookbook sirve modelos solo con CPU; puede usar endpoints existentes de Ollama, vLLM u otros compatibles con OpenAI.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | La guía de instalación documenta el uso de un Ollama existente como endpoint de modelos. | Ollama primero (en Mac, fuera de Docker para usar Metal); después configura su URL en Odysseus. |
+| [vLLM](vllm.md) | Endpoint compatible con OpenAI documentado para servir modelos con GPU. | vLLM en un servidor con GPU; registra su URL en Odysseus y no expongas su puerto públicamente. |
+| [Playwright MCP](playwright-mcp.md) | Dar a los agentes un navegador mediante MCP (combinación por arquitectura). | Después de activar la autenticación; restringe qué agentes pueden usarlo. |
+
+**Notas:** Mantén `AUTH_ENABLED=true` y `LOCALHOST_BYPASS=false` en cualquier despliegue en red. ChromaDB y SearXNG ya vienen en su Compose. Se retiraron las combinaciones antiguas con open-notebook, ecc y mem0 por falta de relación documentada.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/odysseus-dev/odysseus/blob/dev/README.md) · [2](https://github.com/odysseus-dev/odysseus/blob/dev/website/setup.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Local/API describe el modelo elegido; conservar la app en tu servidor no impide enviar datos a un proveedor remoto |
 | Coste | El coste depende del proveedor o la ruta. Admite modelos locales o API; correo, búsqueda y otros servicios mantienen sus credenciales y costes |
 | Equipo | Preparación según la ruta elegida. Docker; configuración .env; proveedor o modelos locales |
-
-Local/API describe el modelo elegido; conservar la app en tu servidor no impide enviar datos a un proveedor remoto
-
-## Qué puedes hacer con él
-
-Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado.
-
-## Por qué destaca
-
-Usos propuestos: Organizar notas y tareas con IA; Comparar respuestas de modelos desde un workspace.
-
-## Cómo funciona
 
 Local/API describe el modelo elegido; conservar la app en tu servidor no impide enviar datos a un proveedor remoto
 
@@ -96,14 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; configuración .env; proveedor o modelos locales
 - **Etiquetas:** `agents` `local` `python` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [open-notebook](open-notebook.md) | 42k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
-| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
-| [mem0](mem0.md) | 69k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
 
 ## Enlaces
 
