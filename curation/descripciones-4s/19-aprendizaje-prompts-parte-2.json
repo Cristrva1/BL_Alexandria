@@ -22,6 +22,18 @@
      "id": "transformers",
      "motivo": "Pasar de la implementación didáctica a la biblioteca estándar para cargar y ajustar modelos reales. (combinación por arquitectura)",
      "orden_instalacion": "Úsalo después de entender cada pieza con el libro."
+    },
+    {
+     "id": "llm.c",
+     "motivo": "Combinación recíproca: llm.c lo enlaza como «Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde llm.c: Estudia primero la versión en PyTorch.",
+     "reciproca_de": "llm.c"
+    },
+    {
+     "id": "annotated-dl-papers",
+     "motivo": "Combinación recíproca: labml.ai Annotated Paper Implementations lo enlaza como «LLMs from Scratch construye un modelo de lenguaje completo y estas notas profundizan en piezas concretas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde labml.ai Annotated Paper Implementations: Sigue el libro; consulta la implementación anotada de cada componente.",
+     "reciproca_de": "annotated-dl-papers"
     }
    ],
    "notas": "Alternativas (elige una): llm-course.",
@@ -56,6 +68,24 @@
      "id": "llm.c",
      "motivo": "Versión en C/CUDA del mismo autor para entender el entrenamiento sin PyTorch. (combinación por arquitectura)",
      "orden_instalacion": "Opcional, para profundizar en rendimiento de bajo nivel."
+    },
+    {
+     "id": "autoresearch",
+     "motivo": "Combinación recíproca: autoresearch lo enlaza como «Base de entrenamiento sobre la que experimenta».",
+     "orden_instalacion": "Orden indicado desde autoresearch: Viene integrado en forma simplificada.",
+     "reciproca_de": "autoresearch"
+    },
+    {
+     "id": "how-to-train-your-gpt",
+     "motivo": "Combinación recíproca: how-to-train-your-gpt lo enlaza como «Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde how-to-train-your-gpt: Termina el libro antes de alquilar GPU para nanochat.",
+     "reciproca_de": "how-to-train-your-gpt"
+    },
+    {
+     "id": "train-llm-from-scratch",
+     "motivo": "Combinación recíproca: train-llm-from-scratch lo enlaza como «Pipeline completo optimizado para comparar rendimiento y resultados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde train-llm-from-scratch: Opcional, como siguiente paso.",
+     "reciproca_de": "train-llm-from-scratch"
     }
    ],
    "notas": "Sin alternativas declaradas. Coste real: alquilar 8×H100 durante horas.",
@@ -116,14 +146,14 @@
      "orden_instalacion": "Termina el libro antes de alquilar GPU para nanochat."
     },
     {
-     "id": "llms-from-scratch",
-     "motivo": "Referencia más rigurosa y revisada editorialmente sobre el mismo tema. (combinación por arquitectura)",
-     "orden_instalacion": "Úsalo para contrastar explicaciones."
-    },
-    {
      "id": "pytorch",
      "motivo": "Biblioteca usada en todo el libro.",
      "orden_instalacion": "Instálala en la versión CPU o GPU según el capítulo de configuración."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Ejecutar paso a paso el código Python y PyTorch de cada capítulo en un notebook reactivo (combinación por arquitectura).",
+     "orden_instalacion": "Instala primero las dependencias del libro (`torch`, `tiktoken`, `datasets`…) en el mismo entorno y después marimo."
     }
    ],
    "notas": "Sin alternativas declaradas. Material escrito con ayuda de IA según su autor: verifica las afirmaciones técnicas.",
@@ -264,6 +294,12 @@
      "id": "prompt-engineering-guide",
      "motivo": "Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)",
      "orden_instalacion": "Úsalo como marco conceptual."
+    },
+    {
+     "id": "chatgpt-dan",
+     "motivo": "Combinación recíproca: ChatGPT_DAN lo enlaza como «Recursos sobre protección de instrucciones de sistema frente a extracción. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ChatGPT_DAN: Consulta su guía de seguridad para endurecer tus prompts.",
+     "reciproca_de": "chatgpt-dan"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -332,6 +368,12 @@
      "id": "claude-code",
      "motivo": "Comparar los prompts recopilados con las instrucciones de agentes que usas (CLAUDE.md, skills). (combinación por arquitectura)",
      "orden_instalacion": "Úsalo como referencia al redactar tus propias reglas."
+    },
+    {
+     "id": "chatgpt-dan",
+     "motivo": "Combinación recíproca: ChatGPT_DAN lo enlaza como «Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ChatGPT_DAN: Úsalos juntos solo con fines de estudio y defensa.",
+     "reciproca_de": "chatgpt-dan"
     }
    ],
    "notas": "Sin alternativas declaradas. Contenido de procedencia no verificada.",
@@ -377,41 +419,6 @@
     "pushed_at": "2026-11-12",
     "license": "no estándar (NOASSERTION)",
     "primary_language": "Python",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "python-machine-learning-book": {
-   "que_es": "Código de la **primera edición** (2015) del libro 'Python Machine Learning' de Sebastian Raschka (MIT). El propio README avisa desde 2017 de que existen ediciones posteriores en otros repositorios. Es material histórico: usa Theano, una biblioteca discontinuada.",
-   "que_hace": "Contiene notebooks de los capítulos del libro: clasificación con perceptrones y Adaline, scikit-learn, preprocesamiento, reducción de dimensionalidad, evaluación de modelos, ensembles, análisis de sentimiento, regresión, clustering y redes neuronales con Theano.",
-   "como_lo_hace": "Notebooks Jupyter con NumPy, scikit-learn y Theano. Parte del código no funcionará con versiones actuales de las bibliotecas, sobre todo los capítulos de Theano. Para aprender hoy es preferible la edición más reciente del libro.",
-   "combina_con": [
-    {
-     "id": "llms-from-scratch",
-     "motivo": "Libro moderno del mismo autor para continuar hacia LLMs. (combinación por arquitectura)",
-     "orden_instalacion": "Usa este repositorio solo como referencia histórica y continúa con el libro actual."
-    },
-    {
-     "id": "pytorch",
-     "motivo": "Sustituto actual de Theano para los capítulos de redes neuronales. (combinación por arquitectura)",
-     "orden_instalacion": "Reescribe los ejemplos de Theano en PyTorch si quieres ejecutarlos."
-    },
-    {
-     "id": "awesome-machine-learning",
-     "motivo": "Directorio para encontrar bibliotecas actuales equivalentes. (combinación por arquitectura)",
-     "orden_instalacion": "Consulta la sección de Python."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Obsoleto: primera edición con Theano.",
-   "fuentes": [
-    "https://github.com/rasbt/python-machine-learning-book/blob/master/README.md"
-   ],
-   "github": {
-    "name_with_owner": "rasbt/python-machine-learning-book",
-    "archived": false,
-    "pushed_at": "2026-07-18",
-    "license": "MIT",
-    "primary_language": "Jupyter Notebook",
-    "latest_release": "v1.3 (2016-09-30)",
     "checked_at": "2026-11-15"
    }
   },
@@ -480,38 +487,6 @@
     "pushed_at": "2026-11-15",
     "license": "no estándar (NOASSERTION)",
     "primary_language": "Python",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "mvanhorn": {
-   "que_es": "Repositorio de perfil de GitHub (README personal) de Matt Van Horn, cofundador de June y de la empresa que se convirtió en Lyft, según su propio perfil. **No es un proyecto de software**: no tiene código, licencia ni releases.",
-   "que_hace": "Presenta los proyectos del autor (last30days-skill, Printing Press para generar CLIs de APIs, Printing Press Library y otros) y una lista de repositorios a los que ha contribuido, como ECC, LangChain, awesome-llm-apps, Deer Flow, Strix o Voicebox. Sirve como punto de partida para descubrir sus herramientas.",
-   "como_lo_hace": "README Markdown de perfil. No se instala nada; cada proyecto enlazado tiene su propio repositorio e instrucciones.",
-   "combina_con": [
-    {
-     "id": "last30days-skill",
-     "motivo": "Proyecto principal del autor presente en el catálogo (enlazado en el perfil).",
-     "orden_instalacion": "Instálalo desde su propio repositorio."
-    },
-    {
-     "id": "ecc",
-     "motivo": "Proyecto al que el autor ha contribuido (enlazado en el perfil). (combinación por arquitectura)",
-     "orden_instalacion": "Consulta su ficha para instalarlo."
-    },
-    {
-     "id": "deer-flow",
-     "motivo": "Otro proyecto con contribuciones del autor (enlazado en el perfil). (combinación por arquitectura)",
-     "orden_instalacion": "Consulta su ficha para instalarlo."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Hallazgo: es un perfil personal, no un repositorio de herramienta. Conviene revisar si debe seguir en el catálogo o reclasificarse como referencia.",
-   "fuentes": [
-    "https://github.com/mvanhorn/mvanhorn/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "mvanhorn/mvanhorn",
-    "archived": false,
-    "pushed_at": "2026-11-09",
     "checked_at": "2026-11-15"
    }
   }

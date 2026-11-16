@@ -10,6 +10,40 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Polars, motor de consultas y DataFrames escrito en Rust con API de Python (y Rust, Node, R), de pola-rs. Licencia MIT. Es muy madura (~40k estrellas, py-2.1.0).
+
+## ¿Qué hace?
+
+Procesa datos tabulares con ejecución lazy y optimizador de consultas, multihilo, vectorizado y en streaming para datos mayores que la memoria. Opcionalmente acelera consultas en GPU NVIDIA y lee los formatos más comunes.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install polars` (hay feature flags para extras) o se compila con Rust y maturin.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [marimo](marimo.md) | Visualización interactiva de DataFrames en notebooks. | Instala marimo y muestra el DataFrame. |
+| [TimesFM](timesfm.md) | Preparar series para pronóstico. (combinación por arquitectura) | Limpia los datos con Polars. |
+| [streamlit](streamlit.md) | Apps de datos sobre DataFrames de Polars. (combinación por arquitectura) | Muestra el DataFrame en Streamlit. |
+| [Apache Iceberg](apache-iceberg.md) | Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg). | Instala PyIceberg junto a Polars. |
+| [Delta Lake](delta-lake.md) | Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake. | Instala el paquete `deltalake` junto a Polars. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Apache Airflow](airflow.md) · [Apache Arrow](arrow.md) · [Colly](colly.md) · [Dagster](dagster.md) · [Ibis](ibis.md) · [JupyterLab](jupyterlab.md) · [LanceDB](lancedb.md) · [nautilus_trader](nautilus-trader.md) · [Prefect](prefect.md) · [PyGWalker](pygwalker.md) · [Windmill](windmill.md)
+
+**Notas:** Alternativas (elige una): duckdb.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada py-2.1.0 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pola-rs/polars/blob/main/README.md) · [2](https://docs.pola.rs/user-guide/installation/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +57,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; cómputo y alojamiento propios |
 | Equipo | Preparación según la ruta elegida. Python; CSV pequeño; memoria para los datos |
-
-Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración
-
-## Qué puedes hacer con él
-
-Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.
-
-## Por qué destaca
-
-Usos propuestos: Transformar tablas; Preparar datos antes de un dashboard.
-
-## Cómo funciona
 
 Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración
 
@@ -93,17 +115,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `data` `python` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [marimo](marimo.md) | 23.6k | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| [pandas](pandas.md) | 50.5k | Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
 
 ## Enlaces
 

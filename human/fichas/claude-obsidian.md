@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plugin de Claude Code que convierte un vault de Obsidian en una wiki de conocimiento que crece con cada fuente, creado por @AgriciDaniel. Licencia MIT. Es activo y popular (~17k estrellas, v3.0.1) y sigue el patrón «LLM Wiki» de Andrej Karpathy, citado en el README.
+
+## ¿Qué hace?
+
+Pones artículos, papers, transcripciones o notas en `inbox/`; el agente los lee, escribe resúmenes enlazados y mantiene la wiki, conservando los originales para que cada resumen apunte a su fuente. Incluye 15 skills y 3 agentes. Puede adoptar un vault existente sin mover tus notas. Si editas una nota en Obsidian mientras el agente planifica, la escritura se detiene con un conflicto en lugar de sobrescribirla.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin de Claude Code (`claude plugin marketplace add AgriciDaniel/claude-obsidian` y `claude plugin install claude-obsidian@agricidaniel-claude-obsidian`) o clonando el repo. Requiere Claude Code, Python 3.11+ y Obsidian para la parte visual; el README dice que también funciona en Codex, OpenCode, Gemini, ZCode, Cursor y Windsurf. Todo queda en Markdown local, sin base de datos en la nube ni telemetría; solo sale lo que envía el agente que uses.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Requisito principal: se distribuye como plugin de Claude Code. | Instala Claude Code y después el plugin desde su marketplace. |
+| [obsidian-skills](obsidian-skills.md) | Skills oficiales de Obsidian (Markdown de Obsidian, Bases, JSON Canvas, CLI) para que el agente escriba formatos válidos. (combinación por arquitectura) | Instala obsidian-skills en el mismo agente y vault. |
+| [obsidian-clipper](obsidian-clipper.md) | Capturar páginas web como Markdown directamente en `inbox/`. (combinación por arquitectura) | Configura la plantilla del Web Clipper para guardar en la carpeta `inbox/` del vault. |
+| [defuddle](defuddle.md) | Extraer el contenido limpio de páginas web antes de ingerirlas. (combinación por arquitectura) | Usa Defuddle (o su skill) para preparar la fuente y déjala en `inbox/`. |
+
+**Notas:** Alternativas (elige una): obsidian-second-brain.
+
+Estado en GitHub: activo · último push 2026-10-25 · última versión publicada v3.0.1 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AgriciDaniel/claude-obsidian/blob/main/README.md) · [2](https://code.claude.com/docs/en/plugins) · [3](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Claude Code tiene el plugin completo; otros clientes usan skills y adaptaciones; prueba primero una copia de la bóveda |
 | Coste | Consumo del agente que ya utilizas. Las skills usan el agente que configures; no incluyen créditos ni garantizan que todas las fuentes permanezcan locales |
 | Equipo | Preparación según la ruta elegida. Python >=3.11; Obsidian; agente compatible; Bash para scripts; bóveda de prueba |
-
-Claude Code tiene el plugin completo; otros clientes usan skills y adaptaciones; prueba primero una copia de la bóveda
-
-## Qué puedes hacer con él
-
-Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian.
-
-## Por qué destaca
-
-Usos propuestos: Organizar apuntes por conceptos; Consultar decisiones desde una bóveda.
-
-## Cómo funciona
 
 Claude Code tiene el plugin completo; otros clientes usan skills y adaptaciones; prueba primero una copia de la bóveda
 

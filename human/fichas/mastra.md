@@ -29,6 +29,8 @@ Node/TypeScript. Se crea con `npm create mastra@latest` y se integra en apps Rea
 | [CopilotKit](copilotkit.md) | Interfaz de asistente en la web (integración documentada por CopilotKit y citada en el README). | Crea el backend Mastra y conecta CopilotKit en el frontend. |
 | [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse para Mastra. | Configura el exportador en la observabilidad de Mastra. |
 | [Ollama](ollama.md) | Modelos locales a través del enrutamiento de proveedores (combinación por arquitectura) [DATO NO VERIFICADO: proveedor exacto]. | Ollama primero. |
+| [Composio](composio.md) | Combinación recíproca: Composio lo enlaza como «Adaptador de proveedor». | Orden indicado desde Composio: Instala el adaptador de Mastra. |
+| [OpenBot](openbot.md) | Combinación recíproca: OpenBot lo enlaza como «Incluye un agente de ejemplo de Mastra (`agent-mastra`) conectable por AG-UI». | Orden indicado desde OpenBot: Arranca OpenBot y conecta el agente Mastra. |
 
 **Notas:** Alternativas (elige una): langgraphjs, vercel-ai. Las funciones de `ee/` requieren licencia comercial para producción.
 

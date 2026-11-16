@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Computer Use Preview, implementación de referencia de Google para que Gemini controle un navegador. Licencia Apache-2.0. Tiene ~3.3k estrellas y no cambia desde julio de 2026.
+
+## ¿Qué hace?
+
+Un agente con el modelo de uso de ordenador de Gemini ve capturas de pantalla y ejecuta acciones en el navegador a partir de una consulta.
+
+## ¿Cómo lo hace?
+
+Se clona el repo, se crea un venv con `pip install -r requirements.txt` y se instala Playwright con Chrome. Requiere `GEMINI_API_KEY` o Vertex AI; el entorno se elige con `--env` (`playwright` local o Browserbase).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Entorno de navegador local. | Instala Playwright y Chrome. |
+| [sandbox](sandbox.md) | Ejecutar el navegador en un contenedor aislado. (combinación por arquitectura) | Lanza el agente dentro del sandbox. |
+| [E2B](e2b.md) | Escritorio aislado en la nube. (combinación por arquitectura) | Usa `e2b-desktop` como entorno. |
+
+**Notas:** Alternativas (elige una): browser-use, skyvern. Es una referencia, no un producto.
+
+Estado en GitHub: activo · último push 2026-07-28 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-gemini/computer-use-preview/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Es una implementación de referencia y no un servidor genérico que se instala automáticamente en Claude Code, Codex o Antigravity |
 | Coste | Consumo de APIs o servicios. Requiere Gemini API o Vertex con sus credenciales y consumo; no lo cubre por defecto una suscripción de un agente de código |
 | Equipo | Preparación según la ruta elegida. Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba |
-
-Es una implementación de referencia y no un servidor genérico que se instala automáticamente en Claude Code, Codex o Antigravity
-
-## Qué puedes hacer con él
-
-Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios.
-
-## Cómo funciona
 
 Es una implementación de referencia y no un servidor genérico que se instala automáticamente en Claude Code, Codex o Antigravity
 
@@ -99,12 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba
 - **Etiquetas:** `browser` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
 ## Alternativas (elige una)
 

@@ -188,6 +188,7 @@
         }
       ],
       "repo_ids": [
+        "antigravity-cli",
         "antigravity-awesome-skills"
       ],
       "aliases": [],
@@ -226,7 +227,9 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [],
+      "repo_ids": [
+        "deepseek-harness"
+      ],
       "aliases": [
         "DSH",
         "Deepseek Harness"
@@ -1482,9 +1485,7 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [
-        "dsh-android"
-      ],
+      "repo_ids": [],
       "aliases": [],
       "commands": []
     },
@@ -1521,9 +1522,7 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [
-        "dsh-ios"
-      ],
+      "repo_ids": [],
       "aliases": [],
       "commands": []
     },
@@ -1870,7 +1869,7 @@
         "Mide carga antes de aumentar el tamaño."
       ],
       "limits": [
-        "Una VPS barata puede ser insuficiente para un modelo grande; alojar n8n y servir un LLM tienen requisitos distintos."
+        "Una VPS barata puede ser insuficiente para un modelo grande; alojar un motor de flujos y servir un LLM tienen requisitos distintos."
       ],
       "sources": [
         {
@@ -2209,13 +2208,13 @@
       "commands": []
     },
     {
-      "id": "n8n-servicio",
-      "name": "n8n: flujos e integraciones",
+      "id": "activepieces-servicio",
+      "name": "Activepieces: flujos e integraciones",
       "group": "datos",
       "kind": "Automatización entre servicios",
-      "summary": "Conecta eventos y aplicaciones con flujos visuales; puede incorporar IA como una etapa.",
+      "summary": "Conecta eventos y aplicaciones con flujos visuales y piezas listas; puede incorporar IA como una etapa.",
       "prepare": [
-        "Cuenta cloud o instalación propia",
+        "Cuenta cloud o instalación propia con Docker",
         "Credenciales de un servicio de prueba"
       ],
       "steps": [
@@ -2237,14 +2236,12 @@
       "sources": [
         {
           "title": "Documentación oficial del proyecto o servicio",
-          "url": "https://docs.n8n.io/",
-          "checked_at": "2026-11-15"
+          "url": "https://www.activepieces.com/docs",
+          "checked_at": "2026-11-16"
         }
       ],
       "repo_ids": [
-        "n8n",
-        "n8n-mcp",
-        "n8n-skills"
+        "activepieces"
       ],
       "aliases": [],
       "commands": []

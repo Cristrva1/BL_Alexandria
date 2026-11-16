@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma open source de datos web para scraping, crawling, búsqueda, monitorización y extracción con IA, de getmaxun. Licencia AGPL-3.0. Es activa (~18k estrellas) pero joven (v0.1.0) y muestra patrocinadores de proxies.
+
+## ¿Qué hace?
+
+Crea «robots» sin código que graban acciones en el navegador, o extrae datos describiendo en lenguaje natural lo que quieres (AI Mode). Convierte sitios en APIs estructuradas, programa ejecuciones, monitoriza cambios y exporta resultados. Se conecta a agentes mediante MCP.
+
+## ¿Cómo lo hace?
+
+Se autoaloja con Docker Compose según la documentación oficial (también hay versión en la nube). La extracción con IA requiere configurar un proveedor de modelos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Lanzar robots y obtener datos desde el agente con el MCP de Maxun. | Despliega Maxun y configura su servidor MCP en el agente. |
+| [activepieces](activepieces.md) | Encadenar los datos extraídos con otros servicios. (combinación por arquitectura) | Llama a la API de Maxun desde la pieza HTTP de Activepieces. |
+| [changedetection.io](changedetection.md) | Avisar de cambios en páginas antes de volver a extraer. (combinación por arquitectura) | Vigila la página con changedetection y lanza el robot cuando cambie. |
+
+**Notas:** Alternativas (elige una): scrapegraph-ai, llm-scraper. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.1.0 (2026-10-25) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/getmaxun/maxun/blob/develop/README.md) · [2](https://docs.maxun.dev/installation/docker) · [3](https://docs.maxun.dev/category/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos |
 | Coste | El coste depende del proveedor o la ruta. La extracción grabada no exige LLM; Cloud, proxies y modelos se pagan según ruta; Ollama sirve para funciones AI locales |
 | Equipo | Preparación según la ruta elegida. Docker; cuenta local; modelo solo para funciones AI |
-
-MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos
-
-## Qué puedes hacer con él
-
-Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción.
-
-## Por qué destaca
-
-Usos propuestos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo.
-
-## Cómo funciona
 
 MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; cuenta local; modelo solo para funciones AI
 - **Etiquetas:** `scraping` `automation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

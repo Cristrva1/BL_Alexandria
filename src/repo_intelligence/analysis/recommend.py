@@ -71,18 +71,16 @@ DOMAIN_BOOSTS = {
         "keywords": {"whatsapp", "clientes", "leads", "humano", "mensajes", "soporte", "ventas"},
         "repos": {
             "evolution-api": 16,
-            "n8n": 12,
+            "dify": 12,
             "chatwoot": 10,
             "whatsapp-agentkit": 10,
-            "n8n-mcp": 8,
-            "n8n-skills": 8,
             "novu": 5,
             "openwa": 5,
         },
     },
     "mcp": {
         "keywords": {"mcp", "model", "context", "protocol", "servidor", "herramientas", "conectar"},
-        "repos": {"mcp": 14, "servers": 12, "mcp-use": 10, "awesome-mcp-servers": 8, "github-mcp-server": 7, "n8n-mcp": 6},
+        "repos": {"mcp": 14, "servers": 12, "mcp-use": 10, "awesome-mcp-servers": 8, "github-mcp-server": 7},
     },
     "research": {
         "keywords": {"research", "investigacion", "buscar", "citar", "informe", "web"},
@@ -113,7 +111,6 @@ BUILD_TOOL_REPOS = {
         "superpowers": 9,
         "skills": 8,
         "agent-toolkit": 8,
-        "n8n-skills": 7,
         "geo-seo-claude": 7,
         "agency-agents": 7,
     },
@@ -162,7 +159,6 @@ INTENT_BOOSTS = {
         "skillspector": 16,
         "context-engineering": 12,
         "prompt-master": 10,
-        "n8n-skills": 4,
         "geo-seo-claude": 3,
         "agency-agents": 3,
     },
@@ -187,7 +183,6 @@ INTENT_TERMS = {
 
 
 CONDITIONAL_SKILLS = {
-    "n8n-skills": {"n8n", "automatizacion", "automation", "workflow", "flujos"},
     "geo-seo-claude": {"seo", "geo", "search", "busqueda", "marketing", "contenido"},
     "agency-agents": {"agencia", "agency", "clientes", "marketing", "ventas"},
     "marketingskills": {"marketing", "copy", "seo", "ads", "growth", "campanas"},

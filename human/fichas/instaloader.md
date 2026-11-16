@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta Python para descargar fotos, vídeos y metadatos de Instagram. Licencia MIT. Es madura (~14k estrellas, v4.16) y muestra un patrocinador de APIs sociales.
+
+## ¿Qué hace?
+
+Descarga perfiles públicos y privados (si inicias sesión y tienes acceso), hashtags, historias, destacados, reels, publicaciones etiquetadas y guardadas, con comentarios, geoetiquetas y textos. Actualiza descargas de forma incremental (`--fast-update`) y detecta cambios de nombre de perfil. También sirve como librería Python.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install instaloader` y se usa con `instaloader <perfil> [--stories] [--login USUARIO]`. Instagram limita las peticiones y puede bloquear cuentas que descargan mucho.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ArchiveBox](archivebox.md) | Archivar también las publicaciones en formatos de archivo web. (combinación por arquitectura) | Pasa las URLs de las publicaciones a ArchiveBox. |
+| [whisper](whisper.md) | Transcribir el audio de los reels descargados. (combinación por arquitectura) | Extrae el audio y transcríbelo con Whisper. |
+| [yt-dlp](yt-dlp.md) | Descargador alternativo para vídeos sueltos de otros sitios. (combinación por arquitectura) | Usa cada uno para lo que cubre mejor. |
+
+**Notas:** Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas. Descargar contenido de otras personas puede vulnerar su privacidad.
+
+Estado en GitHub: activo · último push 2026-11-01 · última versión publicada v4.16 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/instaloader/instaloader/blob/master/README.rst) · [2](https://instaloader.github.io/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones |
 | Coste | Sin pago a un modelo en la ruta básica. No usa un modelo ni requiere API de IA; la cuenta y la plataforma imponen límites |
 | Equipo | Preparación según la ruta elegida. Python; espacio en disco; sesión propia para contenido que la requiera |
-
-Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones
-
-## Qué puedes hacer con él
-
-Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram.
-
-## Por qué destaca
-
-Usos propuestos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo.
-
-## Cómo funciona
 
 Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones
 

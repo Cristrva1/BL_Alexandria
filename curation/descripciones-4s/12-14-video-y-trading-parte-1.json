@@ -1,0 +1,550 @@
+{
+ "batch": "30-video-generativo-y-trading-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "moneyprinterturbo": {
+   "que_es": "MoneyPrinterTurbo, app para generar vídeos cortos a partir de un tema o palabra clave, de @harry0703. Licencia MIT. Es muy popular (~144k estrellas, v1.3.10) y su README está lleno de patrocinios y enlaces de afiliado a proveedores de modelos.",
+   "que_hace": "Genera el guion con un LLM, busca material en Pexels o Pixabay (o usa tus propios clips), sintetiza la voz, crea subtítulos y música de fondo y compone un vídeo vertical u horizontal. Admite muchos proveedores de LLM (OpenAI, Kimi, DeepSeek y compatibles) y de voz (Edge TTS gratuito, Azure, ElevenLabs, Kokoro, Fish Audio, VoxCPM…). Tiene interfaz web y API.",
+   "como_lo_hace": "Requiere Python 3.11+ y se instala con pip (paquete oficial), desde el código o con Docker. Los subtítulos pueden salir de las marcas de tiempo del TTS o de faster-whisper en local; con GPU el procesamiento es más rápido. Las claves de LLM, de material y de voz se configuran en la interfaz.",
+   "combina_con": [
+    {
+     "id": "faster-whisper",
+     "motivo": "Subtítulos locales con faster-whisper, citado en el README.",
+     "orden_instalacion": "Activa faster-whisper en la configuración."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Voz Kokoro entre los TTS integrados.",
+     "orden_instalacion": "Selecciona Kokoro como servicio de voz."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Usar un modelo local mediante un endpoint compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta el proveedor compatible con OpenAI a Ollama."
+    }
+   ],
+   "notas": "Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.",
+   "fuentes": [
+    "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "harry0703/MoneyPrinterTurbo",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.3.10 (2026-11-07)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "wan2-2": {
+   "que_es": "Wan2.2, familia de modelos abiertos de generación de vídeo de Alibaba (Wan-AI). Licencia Apache-2.0 para los modelos; no reclaman derechos sobre el contenido generado. Tiene ~19k estrellas (sin releases) y su último cambio es de septiembre de 2026.",
+   "que_hace": "Genera vídeo desde texto, imagen o ambos con una arquitectura Mixture-of-Experts para la difusión. Incluye un modelo híbrido TI2V de 5B con un VAE de alta compresión que genera 720p en una GPU de consumo, además de Wan2.2-S2V (vídeo guiado por audio) y Wan2.2-Animate (animación y sustitución de personajes).",
+   "como_lo_hace": "Se instala con `pip install -r requirements.txt` y se descargan los pesos de Hugging Face o ModelScope. Los modelos 14B requieren unos 80 GB de VRAM (o varias GPU); el TI2V-5B funciona con 24 GB (RTX 4090) con offloading. S2V puede sintetizar la voz con CosyVoice.",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "Integración oficial en ComfyUI.",
+     "orden_instalacion": "Sigue el tutorial de Wan2.2 en la documentación de Comfy."
+    },
+    {
+     "id": "diffusers",
+     "motivo": "T2V, I2V, TI2V y Animate integrados en diffusers.",
+     "orden_instalacion": "Usa los checkpoints `-Diffusers` de Hugging Face."
+    },
+    {
+     "id": "cosyvoice",
+     "motivo": "Síntesis de voz para Speech-to-Video.",
+     "orden_instalacion": "Instala `requirements_s2v.txt`."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Ampliar los vídeos generados. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa los fotogramas por Real-ESRGAN."
+    },
+    {
+     "id": "wan2gp",
+     "motivo": "Combinación recíproca: WanGP lo enlaza como «Ejecuta los modelos Wan 2.2 con menos VRAM».",
+     "orden_instalacion": "Orden indicado desde WanGP: Descarga el modelo desde la interfaz.",
+     "reciproca_de": "wan2gp"
+    }
+   ],
+   "notas": "Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.",
+   "fuentes": [
+    "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
+    "https://docs.comfy.org/tutorials/video/wan/wan2_2",
+    "https://huggingface.co/docs/diffusers/main/en/api/pipelines/wan"
+   ],
+   "github": {
+    "name_with_owner": "Wan-Video/Wan2.2",
+    "archived": false,
+    "pushed_at": "2026-09-21",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "hunyuanvideo": {
+   "que_es": "HunyuanVideo, modelo abierto de generación de vídeo de 13B parámetros de Tencent Hunyuan. Usa la Tencent Hunyuan Community License, que excluye expresamente la UE, Reino Unido y Corea del Sur (GitHub muestra NOASSERTION). Tiene ~13k estrellas y su sucesor es HunyuanVideo-1.5 (repositorio aparte, noviembre de 2025).",
+   "que_hace": "Genera vídeo a partir de texto con un transformer de difusión y ofrece inferencia en varias GPU, pesos FP8 y modelos derivados (I2V, Avatar, Custom). Es la base de varias implementaciones de la comunidad.",
+   "como_lo_hace": "Se instala con PyTorch para CUDA, `requirements.txt` y, opcionalmente, flash-attention y xDiT para paralelismo. Requiere GPU con mucha memoria; existen versiones optimizadas de la comunidad para menos VRAM.",
+   "combina_con": [
+    {
+     "id": "diffusers",
+     "motivo": "Pipeline de HunyuanVideo en diffusers.",
+     "orden_instalacion": "Usa el pipeline `HunyuanVideoPipeline`."
+    },
+    {
+     "id": "comfyui",
+     "motivo": "Soporte nativo en ComfyUI.",
+     "orden_instalacion": "Carga los pesos y usa el flujo de ejemplo."
+    },
+    {
+     "id": "wan2gp",
+     "motivo": "Interfaz para GPU modestas con soporte de Hunyuan Video.",
+     "orden_instalacion": "Selecciona Hunyuan Video en WanGP."
+    }
+   ],
+   "notas": "Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
+   "fuentes": [
+    "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md",
+    "https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video",
+    "https://docs.comfy.org/tutorials/video/hunyuan/hunyuan-video"
+   ],
+   "github": {
+    "name_with_owner": "Tencent-Hunyuan/HunyuanVideo",
+    "archived": false,
+    "pushed_at": "2026-10-08",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "wan2gp": {
+   "que_es": "WanGP, superapp local para modelos generativos abiertos «para GPU modestas», de @deepbeepmeep. Usa la WanGP Community License 2.0, propia (GitHub muestra NOASSERTION), y es gratuita para uso local, también en el trabajo. Es muy activa (~12k estrellas).",
+   "que_hace": "Ejecuta modelos de vídeo (Wan 2.1/2.2, LTX-2, Hunyuan Video, LongCat…), imagen (Flux, Qwen Image, Z-Image…), audio y voz y 3D desde una interfaz web, con optimizaciones de memoria para GPU de gama media. Incluye un «Showrunner» para series con personajes y escenarios coherentes. Tiene interfaz MCP para que agentes externos usen todas sus funciones.",
+   "como_lo_hace": "Se instala con PyTorch para CUDA y `requirements.txt` (también Pinokio u otros instaladores). Está optimizada para NVIDIA (RTX 30–50) y ROCm; no tiene ruta para Apple Silicon. El README avisa de servicios de terceros que usan su nombre sin afiliación.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Interfaz MCP para que agentes manejen WanGP. (combinación por arquitectura)",
+     "orden_instalacion": "Arranca WanGP con `--mcp` y añádelo al agente."
+    },
+    {
+     "id": "wan2-2",
+     "motivo": "Ejecuta los modelos Wan 2.2 con menos VRAM.",
+     "orden_instalacion": "Descarga el modelo desde la interfaz."
+    },
+    {
+     "id": "moviepy",
+     "motivo": "Montar en Python los clips generados. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los clips y únelos con MoviePy."
+    },
+    {
+     "id": "lossless-cut",
+     "motivo": "Recortar resultados sin recodificar. (combinación por arquitectura)",
+     "orden_instalacion": "Abre los vídeos en LosslessCut."
+    },
+    {
+     "id": "hunyuanvideo-1-5",
+     "motivo": "Wan2GP incluye Hunyuan Video 1.5 entre sus modelos para GPUs con poca VRAM.",
+     "orden_instalacion": "Elige el modelo en la interfaz; los pesos se descargan aparte."
+    },
+    {
+     "id": "hunyuanvideo",
+     "motivo": "Combinación recíproca: HunyuanVideo lo enlaza como «Interfaz para GPU modestas con soporte de Hunyuan Video».",
+     "orden_instalacion": "Orden indicado desde HunyuanVideo: Selecciona Hunyuan Video en WanGP.",
+     "reciproca_de": "hunyuanvideo"
+    }
+   ],
+   "notas": "Alternativas (elige una): comfyui. Licencia propia, no OSI: revísala antes de redistribuir.",
+   "fuentes": [
+    "https://github.com/deepbeepmeep/WanGP/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "deepbeepmeep/WanGP",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "manager-v0.1.17 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ai-youtube-shorts-generator": {
+   "que_es": "AI YouTube Shorts Generator, pipeline en Python para extraer clips verticales de vídeos largos de YouTube, de @Anil-matcha. Licencia MIT. Tiene ~6k estrellas (sin releases) y lo «impulsa» MuAPI, cuyas APIs de pago se promocionan en el README.",
+   "que_hace": "Descarga el vídeo, lo transcribe con Whisper, detecta los momentos más «virales» con un LLM, recorta en 9:16 con seguimiento de caras y genera shorts ordenados por puntuación. Se presenta como alternativa a Opus Clip, Vidyo.ai o SubMagic.",
+   "como_lo_hace": "Tiene dos modos: `--mode api` usa MuAPI para descarga, transcripción y recorte (de pago), y `--mode local` funciona sin conexión con yt-dlp, faster-whisper y OpenCV. Se instala con `pip install -r requirements.txt` (más `requirements-local.txt` para el modo local).",
+   "combina_con": [
+    {
+     "id": "faster-whisper",
+     "motivo": "Transcripción local en el modo offline.",
+     "orden_instalacion": "Instala `requirements-local.txt`."
+    },
+    {
+     "id": "yt-dlp",
+     "motivo": "Descarga de vídeos en el modo local.",
+     "orden_instalacion": "Viene en las dependencias locales."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Corte y codificación de los clips.",
+     "orden_instalacion": "Instala FFmpeg en el sistema."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Respeta los derechos de autor y los términos de YouTube al reutilizar vídeos ajenos.",
+   "fuentes": [
+    "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Anil-matcha/AI-Youtube-Shorts-Generator",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "short-video-factory": {
+   "que_es": "Short Video Factory (短视频工厂), app de escritorio para crear vídeos cortos de producto y contenido general, de @YILS-LIN. Licencia AGPL-3.0. Tiene ~6k estrellas (v1.4.0) y su README está principalmente en chino.",
+   "que_hace": "Genera el texto con IA a partir de un prompt, combina clips de material por escenas, sintetiza la voz con Edge TTS y monta los vídeos automáticamente y por lotes. Está pensado para marketing de producto.",
+   "como_lo_hace": "Es una app Electron con Vue y TypeScript para Windows, macOS y Linux. Requiere configurar un proveedor de LLM.",
+   "combina_con": [
+    {
+     "id": "edge-tts",
+     "motivo": "Síntesis de voz con Edge TTS.",
+     "orden_instalacion": "Viene integrada en la app."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesamiento de vídeo. (combinación por arquitectura)",
+     "orden_instalacion": "Asegura FFmpeg si la build no lo incluye."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Generar los textos con un modelo local. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un endpoint compatible si la app lo admite."
+    }
+   ],
+   "notas": "Alternativa (elige una): moneyprinterturbo.",
+   "fuentes": [
+    "https://github.com/YILS-LIN/short-video-factory/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "YILS-LIN/short-video-factory",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.4.0 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "concat": {
+   "que_es": "Concat, editor de vídeo libre y multiplataforma, de @jub0t. Licencia AGPL-3.0 o posterior, con licencia comercial disponible. Es reciente (~18k estrellas, v0.2.11).",
+   "que_hace": "Cubre lo habitual en edición (cortes, pistas, efectos) y añade subtítulos automáticos, texto a voz y recorte de fondo con modelos que se descargan una vez y funcionan sin conexión. Incluye un servidor MCP (`concat --mcp`) y una API JSON-RPC para que agentes y scripts editen.",
+   "como_lo_hace": "Se descarga desde su web o desde GitHub Releases para macOS, Windows, Linux y Android. Está escrito en Rust y usa FFmpeg (en macOS se instala con `brew install ffmpeg`).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Servidor MCP integrado documentado.",
+     "orden_instalacion": "Configura `concat --mcp` en el agente."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Dependencia para leer y exportar medios.",
+     "orden_instalacion": "Instala FFmpeg en el sistema."
+    },
+    {
+     "id": "yt-dlp",
+     "motivo": "Editar material descargado. (combinación por arquitectura)",
+     "orden_instalacion": "Descarga y abre el archivo en Concat."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/jub0t/Concat/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "jub0t/Concat",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "Rust",
+    "latest_release": "v0.2.11 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ccxt": {
+   "que_es": "CCXT, librería que unifica las APIs de más de 100 exchanges de criptomonedas y mercados de predicción. Licencia MIT. Es muy madura (~45k estrellas, v4.5.92).",
+   "que_hace": "Ofrece una API común para datos de mercado (tickers, libros de órdenes, velas), gestión de cuentas y trading, además de WebSockets en la versión pro. Normaliza las diferencias entre exchanges y sirve de base a muchos bots.",
+   "como_lo_hace": "Está disponible en JavaScript/TypeScript (`npm install ccxt`), Python (`pip install ccxt`), PHP, C#, Go, Java y Rust. También se añade como skill de agentes (`npx skills add ccxt/ccxt`). Las claves de API deben limitarse (sin retiros).",
+   "combina_con": [
+    {
+     "id": "freqtrade",
+     "motivo": "Freqtrade se apoya en CCXT para conectarse a exchanges.",
+     "orden_instalacion": "Configura el exchange en Freqtrade."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Descargar datos históricos para backtesting. (combinación por arquitectura)",
+     "orden_instalacion": "Obtén velas con CCXT y pásalas a vectorbt."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Skill oficial para agentes.",
+     "orden_instalacion": "Ejecuta `npx skills add ccxt/ccxt`."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Riesgo financiero: usa claves sin permiso de retiro.",
+   "fuentes": [
+    "https://github.com/ccxt/ccxt/blob/master/README.md",
+    "https://docs.ccxt.com"
+   ],
+   "github": {
+    "name_with_owner": "ccxt/ccxt",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v4.5.92 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "freqtrade": {
+   "que_es": "Freqtrade, bot de trading de criptomonedas en Python. Licencia GPL-3.0. Es muy maduro (~57k estrellas, 2026.10).",
+   "que_hace": "Ejecuta estrategias en los principales exchanges, con backtesting, optimización de hiperparámetros, gráficos y FreqAI para modelos de ML adaptativos. Se controla por Telegram o una interfaz web. El README insiste en que es educativo y en empezar en modo dry-run.",
+   "como_lo_hace": "Requiere Python 3.12+ y se instala con Docker (recomendado) o con un script. Se conecta a los exchanges mediante CCXT.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "Capa de conexión con exchanges.",
+     "orden_instalacion": "Viene incluida como dependencia."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Explorar ideas rápidamente antes de codificar la estrategia. (combinación por arquitectura)",
+     "orden_instalacion": "Prototipa con vectorbt y porta a Freqtrade."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Paneles de rendimiento a partir de la base de datos del bot. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta Grafana a la base SQL de Freqtrade."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Riesgo financiero alto: empieza en dry-run.",
+   "fuentes": [
+    "https://github.com/freqtrade/freqtrade/blob/develop/README.md",
+    "https://www.freqtrade.io/en/stable/"
+   ],
+   "github": {
+    "name_with_owner": "freqtrade/freqtrade",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "2026.10 (2026-10-30)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "hummingbot": {
+   "que_es": "Hummingbot, framework open source para diseñar y ejecutar bots de trading en exchanges centralizados y descentralizados. Licencia Apache-2.0. Es maduro (~21k estrellas, v2.17.0) y recibe patrocinio de exchanges mediante acuerdos de broker.",
+   "que_hace": "Ofrece estrategias de market making, arbitraje y otras, con conectores para muchos CEX y DEX. Se controla con la CLI `hbot` (no interactiva, para automatizar) o la interfaz clásica, y se complementa con Condor, un arnés de IA para estrategias agénticas.",
+   "como_lo_hace": "Se instala desde el código con Anaconda o Miniconda, o con Docker Compose. Está escrito en Python y Cython.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "Contrastar datos de exchanges no cubiertos por conectores propios. (combinación por arquitectura)",
+     "orden_instalacion": "Usa CCXT en scripts de análisis aparte."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Automatizar la operación con la CLI `hbot`, pensada para uso no interactivo. (combinación por arquitectura)",
+     "orden_instalacion": "Permite al agente ejecutar `hbot` con límites."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Monitorizar bots en ejecución. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta métricas y crea paneles."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Riesgo financiero alto; los patrocinios de exchanges pueden sesgar la oferta de conectores.",
+   "fuentes": [
+    "https://github.com/hummingbot/hummingbot/blob/master/README.md",
+    "https://hummingbot.org"
+   ],
+   "github": {
+    "name_with_owner": "hummingbot/hummingbot",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v2.17.0 (2026-09-22)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "nautilus-trader": {
+   "que_es": "NautilusTrader, motor de trading y backtesting de alto rendimiento nativo en Rust con API de Python, de Nautech Systems. Licencia LGPL-3.0. Es muy activo (~32k estrellas, v1.231.0).",
+   "que_hace": "Ofrece una arquitectura orientada a eventos con el mismo código para backtesting y trading en vivo, multi-activo y multi-venue. Se integra mediante adaptadores con exchanges cripto (CEX y DEX), brokers tradicionales y proveedores de datos. Las estrategias se pueden escribir en Python o íntegramente en Rust.",
+   "como_lo_hace": "Se instala con `pip install -U nautilus_trader` (estable) o con `--pre` para la rama 2.0, también desde su índice propio de paquetes. El núcleo está en Rust con bindings para Python 3.13–3.15 y Rust 1.100+.",
+   "combina_con": [
+    {
+     "id": "polars",
+     "motivo": "Preparar grandes volúmenes de datos de mercado. (combinación por arquitectura)",
+     "orden_instalacion": "Transforma los datos con Polars y cárgalos en el catálogo."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Analizar resultados de backtests en notebooks. (combinación por arquitectura)",
+     "orden_instalacion": "Carga los informes en marimo."
+    },
+    {
+     "id": "ccxt",
+     "motivo": "Comparar o completar datos de exchanges sin adaptador. (combinación por arquitectura)",
+     "orden_instalacion": "Descarga datos con CCXT para pruebas."
+    },
+    {
+     "id": "py-sdk",
+     "motivo": "Combinación recíproca: py-sdk lo enlaza como «NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde py-sdk: Elige uno como capa de ejecución; prueba primero en modo simulado.",
+     "reciproca_de": "py-sdk"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Curva de aprendizaje alta; la rama 2.0 aún es prerelease.",
+   "fuentes": [
+    "https://github.com/nautechsystems/nautilus_trader/blob/develop/README.md",
+    "https://nautilustrader.io/docs/"
+   ],
+   "github": {
+    "name_with_owner": "nautechsystems/nautilus_trader",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "LGPL-3.0",
+    "primary_language": "Rust",
+    "latest_release": "v1.231.0 (2026-08-02)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "vectorbt": {
+   "que_es": "VectorBT, toolkit de Python para investigación de trading a escala, de @polakowo. Licencia Apache-2.0 con Commons Clause, «fair-code» que no permite vender el software (GitHub muestra NOASSERTION). Tiene ~10k estrellas (v1.2.1) y una versión comercial, VectorBT PRO.",
+   "que_hace": "Permite explorar datos de mercado, crear indicadores y señales y comparar miles de estrategias entre activos y marcos temporales con operaciones vectorizadas. Analiza operaciones, comisiones, drawdowns y rendimiento con gráficos interactivos.",
+   "como_lo_hace": "Se instala con `pip install -U vectorbt` (extras `[full]` y `[rust]`). Usa NumPy, pandas, Numba y Plotly. Algunas dependencias opcionales tienen licencias más restrictivas.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "Datos históricos de cripto para los backtests. (combinación por arquitectura)",
+     "orden_instalacion": "Descarga velas con CCXT."
+    },
+    {
+     "id": "freqtrade",
+     "motivo": "Llevar la idea validada a un bot. (combinación por arquitectura)",
+     "orden_instalacion": "Reimplementa la estrategia en Freqtrade."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Exploración interactiva de resultados. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta los análisis en notebooks marimo."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Commons Clause: no es open source según la OSI.",
+   "fuentes": [
+    "https://github.com/polakowo/vectorbt/blob/master/README.md",
+    "https://vectorbt.dev"
+   ],
+   "github": {
+    "name_with_owner": "polakowo/vectorbt",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v1.2.1 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "lumibot": {
+   "que_es": "LumiBot, framework de Python para crear bots y agentes de trading, de Lumiwealth. Licencia GPL-3.0. Tiene ~2k estrellas (v4.6.73) y promociona su nube BotSpot y su MCP.",
+   "que_hace": "Permite escribir reglas de trading, dejar que agentes de IA tomen decisiones o combinar ambas cosas. La misma clase de estrategia sirve para backtesting y para operar en papel o real con brokers soportados (por ejemplo, Alpaca). Cubre acciones, opciones, cripto y otros activos.",
+   "como_lo_hace": "Se instala con `pip install lumibot` (Python 3.10+). Los ejemplos usan datos de Yahoo y, para agentes, un modelo de OpenAI. El MCP gratuito de BotSpot aporta datos económicos y herramientas, pero es un servicio externo.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Escribir y probar estrategias con ayuda del MCP de BotSpot (servicio externo). (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el MCP solo si aceptas sus condiciones."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Agentes de decisión con modelos locales en lugar de OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un modelo compatible si la versión lo permite."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Explorar señales a gran escala antes de implementarlas. (combinación por arquitectura)",
+     "orden_instalacion": "Valida con vectorbt y codifica en LumiBot."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Riesgo financiero; el README empuja hacia servicios de pago de la empresa.",
+   "fuentes": [
+    "https://github.com/Lumiwealth/lumibot/blob/dev/README.md",
+    "https://lumibot.lumiwealth.com"
+   ],
+   "github": {
+    "name_with_owner": "Lumiwealth/lumibot",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v4.6.73 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "qlib": {
+   "que_es": "Qlib, plataforma de investigación cuantitativa orientada a IA de Microsoft. Licencia MIT. Es madura (~50k estrellas, v0.9.8).",
+   "que_hace": "Cubre todo el flujo cuantitativo: datos, factores, modelos (desde GBDT hasta redes profundas y RL), backtesting y análisis, con un gestor de experimentos. Se complementa con RD-Agent, de Microsoft, para minar factores y optimizar modelos con LLM. La rama principal introduce un cambio incompatible que restringe la carga de artefactos guardados.",
+   "como_lo_hace": "Se instala con `pip install pyqlib` o desde el código (requiere NumPy y Cython), y también con Docker. El gestor de experimentos usa MLflow. En Mac M1 puede requerir OpenMP para LightGBM.",
+   "combina_con": [
+    {
+     "id": "mlflow",
+     "motivo": "El recorder de Qlib se basa en MLflow.",
+     "orden_instalacion": "Configura el URI de MLflow para los experimentos."
+    },
+    {
+     "id": "finrl",
+     "motivo": "Comparar enfoques de aprendizaje por refuerzo. (combinación por arquitectura)",
+     "orden_instalacion": "Usa ambos sobre los mismos datos."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Analizar resultados en notebooks. (combinación por arquitectura)",
+     "orden_instalacion": "Carga los informes de Qlib en marimo."
+    },
+    {
+     "id": "finceptterminal",
+     "motivo": "Combinación recíproca: FinceptTerminal lo enlaza como «Investigación cuantitativa más profunda fuera del terminal. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde FinceptTerminal: Exporta datos y modela con Qlib.",
+     "reciproca_de": "finceptterminal"
+    },
+    {
+     "id": "machine-learning-for-trading",
+     "motivo": "Combinación recíproca: machine-learning-for-trading lo enlaza como «Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde machine-learning-for-trading: Reproduce un caso de estudio en Qlib.",
+     "reciproca_de": "machine-learning-for-trading"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Revisa la guía de migración de artefactos antes de actualizar desde el código.",
+   "fuentes": [
+    "https://github.com/microsoft/qlib/blob/main/README.md",
+    "https://qlib.readthedocs.io/en/latest/component/recorder.html"
+   ],
+   "github": {
+    "name_with_owner": "microsoft/qlib",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.9.8 (2026-10-08)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

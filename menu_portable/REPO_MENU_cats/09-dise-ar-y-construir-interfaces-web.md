@@ -95,6 +95,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `langgraph`, `ui`
 **Alternativas (elige una):** `copilotkit`
 
+## `chakra-ui`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,react,library
+
+**Qué es:** Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/chakra-ui/chakra-ui
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/chakra-ui/chakra-ui/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala `@chakra-ui/react` y `@emotion/react` en un proyecto React y renderiza un botón con el proveedor.
+**Qué comprobar:** El componente se muestra con el tema por defecto y cambia a modo oscuro.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `storybook`, `lucide`, `claude-code`
+**Alternativas (elige una):** `mantine`, `mui`
+
 ## `copilotkit`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic · tags=ui,agents,react,typescript
 
@@ -123,7 +154,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una app de ejemplo y una acción que lea un dato ficticio de la interfaz
 **Qué comprobar:** El agente recibe el contexto y devuelve una acción que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `mastra`, `agent-framework`, `crewai`
+**Combina con:** `langgraph`, `mastra`, `agent-framework`, `crewai`, `openbot`
 **Alternativas (elige una):** `assistant-ui`
 
 ## `daisyui`
@@ -185,7 +216,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja tres pasos de un proceso y exporta el diagrama como imagen
 **Qué comprobar:** Puedes abrir la imagen y conservar el archivo editable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `penpot`, `flexoki`
+**Combina con:** `claude-code`, `penpot`, `flexoki`, `kroki`
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
 ## `flexoki`
@@ -216,7 +247,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Aplica la paleta a una página de prueba y comprueba contraste de texto y controles
 **Qué comprobar:** Puedes identificar colores semánticos legibles en claro y oscuro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `daisyui`, `excalidraw`
+**Combina con:** `tailwindcss`, `daisyui`, `excalidraw`, `normalize.css`
 
 ## `heroui`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,typescript
@@ -246,7 +277,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade un botón y un campo con un tema sencillo y prueba el foco por teclado
 **Qué comprobar:** Los componentes muestran el tema y estados interactivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `claude-code`, `swr`
+**Combina con:** `tailwindcss`, `claude-code`, `swr`, `echarts`
 **Alternativas (elige una):** `mui`
 
 ## `json-render`
@@ -338,7 +369,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un icono de búsqueda junto a una etiqueta y cambia tamaño y grosor
 **Qué comprobar:** El icono se ve consistente y el control conserva nombre accesible
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `tailwindcss`, `daisyui`
+**Combina con:** `ui`, `tailwindcss`, `daisyui`, `konva`, `normalize.css`, `radix-primitives`
 
 ## `magicui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui
@@ -368,8 +399,39 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un componente visual pequeño y comprueba el diseño en móvil y con movimiento reducido
 **Qué comprobar:** El contenido sigue siendo legible y el componente no desborda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `tailwindcss`, `motion`, `claude-code`
+**Combina con:** `ui`, `tailwindcss`, `motion`, `claude-code`, `animejs`
 **Alternativas (elige una):** `react-bits`
+
+## `mantine`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,react,library
+
+**Qué es:** Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mantinedev/mantine
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/mantinedev/mantine/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala @mantine/core y @mantine/hooks, envuelve la app en MantineProvider y renderiza un formulario.
+**Qué comprobar:** El formulario se muestra con estilos de Mantine y valida los campos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `storybook`, `recharts`, `claude-code`
+**Alternativas (elige una):** `chakra-ui`, `mui`
 
 ## `mui`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
@@ -400,7 +462,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Los campos muestran validación y se recorren con teclado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `recharts`, `swr`, `vercel-ai`
-**Alternativas (elige una):** `ant-design`, `ui`, `heroui`
+**Alternativas (elige una):** `ant-design`, `ui`, `heroui`, `chakra-ui`, `mantine`
 
 ## `normalize.css`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design
@@ -617,7 +679,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Construye el popover de inicio y prueba abrir, cerrar y devolver foco con teclado
 **Qué comprobar:** El foco y el estado del popover se comportan como esperas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `tailwindcss`, `lucide`
+**Combina con:** `ui`, `tailwindcss`, `lucide`, `normalize.css`
 
 ## `react-bits`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
@@ -712,6 +774,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `stitch-skills`, `design.md`
 **Alternativas (elige una):** `screenshot-to-code`
 
+## `storybook`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,javascript,docs
+
+**Qué es:** Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/storybookjs/storybook
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/storybookjs/storybook/blob/next/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta el comando de inicialización de Storybook en un proyecto web de prueba y abre el servidor local.
+**Qué comprobar:** Aparecen las stories de ejemplo y puedes cambiar sus props desde el panel de controles.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `playwright`, `tailwindcss`, `mantine`, `chakra-ui`, `cypress`
+
 ## `swr`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript
 
@@ -740,7 +832,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Muestra un perfil ficticio y cambia el dato del servidor para observar la revalidación
 **Qué comprobar:** Se distinguen carga, error, datos cacheados y datos nuevos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `heroui`, `supabase`
+**Combina con:** `ui`, `heroui`, `supabase`, `ant-design`, `mui`, `uplot`
+**Alternativas (elige una):** `tanstack-query`
 
 ## `tailwindcss`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
@@ -771,6 +864,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar diferencias entre móvil y escritorio
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `daisyui`, `heroui`, `magicui`
+
+## `tanstack-query`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=frontend,data-fetching,cache,typescript
+
+**Qué es:** Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Un proyecto JavaScript o TypeScript con el adaptador de tu framework.
+**Repo:** https://github.com/TanStack/query
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/TanStack/query/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Envuelve una llamada a una API pública de prueba en una consulta y muestra sus estados
+**Qué comprobar:** Ves carga, datos y un refetch al volver a enfocar la ventana
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `supabase`, `ui`, `tailwindcss`
+**Alternativas (elige una):** `swr`
 
 ## `tldraw`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=design,ui,react,typescript
@@ -862,4 +986,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Construye una primitiva con comportamiento de foco y prueba abrir y cerrar su contenido
 **Qué comprobar:** Puedes verificar recuperación de foco y estados interactivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `radix-primitives`, `tailwindcss`
+**Combina con:** `claude-code`, `tailwindcss`, `playwright`

@@ -180,9 +180,27 @@
      "id": "supabase",
      "motivo": "Consultar un backend Supabase desde React con caché y revalidación. (combinación por arquitectura)",
      "orden_instalacion": "Usa el cliente de Supabase dentro del fetcher de SWR."
+    },
+    {
+     "id": "ant-design",
+     "motivo": "Combinación recíproca: Ant Design lo enlaza como «Carga de datos con caché para alimentar tablas y formularios. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Ant Design: Añade swr y conecta sus hooks a los componentes.",
+     "reciproca_de": "ant-design"
+    },
+    {
+     "id": "mui",
+     "motivo": "Combinación recíproca: Material UI lo enlaza como «Carga de datos con caché para alimentar los componentes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Material UI: Añade swr y usa sus hooks en las vistas.",
+     "reciproca_de": "mui"
+    },
+    {
+     "id": "uplot",
+     "motivo": "Combinación recíproca: uPlot lo enlaza como «Actualizar series en vivo con la recarga de datos de SWR. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde uPlot: Obtén los datos con SWR y llama a `setData`.",
+     "reciproca_de": "uplot"
     }
    ],
-   "notas": "Sin alternativas declaradas en el catálogo (TanStack Query no figura).",
+   "notas": "Alternativa (elige una): tanstack-query.",
    "fuentes": [
     "https://github.com/vercel/swr/blob/main/README.md",
     "https://swr.vercel.app/docs/with-nextjs"
@@ -216,6 +234,12 @@
      "id": "swr",
      "motivo": "Carga de datos para los componentes. (combinación por arquitectura)",
      "orden_instalacion": "Añade swr y usa sus hooks en las vistas."
+    },
+    {
+     "id": "echarts",
+     "motivo": "Combinación recíproca: echarts lo enlaza como «Paneles con componentes HeroUI y gráficos ECharts. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde echarts: Envuelve el gráfico en un componente de tarjeta.",
+     "reciproca_de": "echarts"
     }
    ],
    "notas": "Alternativas (elige una): mui.",
@@ -252,6 +276,24 @@
      "id": "daisyui",
      "motivo": "Iconos para componentes daisyUI, que no trae biblioteca de iconos propia. (combinación por arquitectura)",
      "orden_instalacion": "Instala el paquete de Lucide de tu framework."
+    },
+    {
+     "id": "konva",
+     "motivo": "Combinación recíproca: konva lo enlaza como «Iconos para las herramientas del editor. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde konva: Instala lucide-react.",
+     "reciproca_de": "konva"
+    },
+    {
+     "id": "normalize.css",
+     "motivo": "Combinación recíproca: normalize.css lo enlaza como «Iconos SVG en proyectos de CSS propio. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde normalize.css: Instala el paquete de Lucide adecuado.",
+     "reciproca_de": "normalize.css"
+    },
+    {
+     "id": "radix-primitives",
+     "motivo": "Combinación recíproca: Radix Primitives lo enlaza como «Iconos para triggers y menús. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Radix Primitives: Instala lucide-react.",
+     "reciproca_de": "radix-primitives"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -293,6 +335,12 @@
      "id": "claude-code",
      "motivo": "Usar los componentes desde el asistente vía el servidor MCP de Magic UI.",
      "orden_instalacion": "Registra el MCP según magicui.design/docs/mcp."
+    },
+    {
+     "id": "animejs",
+     "motivo": "Combinación recíproca: Anime.js lo enlaza como «Animaciones extra en componentes de interfaz. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Anime.js: Aplica animaciones a componentes.",
+     "reciproca_de": "animejs"
     }
    ],
    "notas": "Alternativas (elige una): react-bits.",
@@ -329,6 +377,12 @@
      "id": "lucide",
      "motivo": "Iconos para triggers y menús. (combinación por arquitectura)",
      "orden_instalacion": "Instala lucide-react."
+    },
+    {
+     "id": "normalize.css",
+     "motivo": "Combinación recíproca: normalize.css lo enlaza como «Base de estilos coherente para primitivas sin estilos en proyectos sin Tailwind. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde normalize.css: Importa normalize.css antes de tus estilos propios.",
+     "reciproca_de": "normalize.css"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -477,6 +531,12 @@
      "id": "excalidraw",
      "motivo": "Paleta coherente para diagramas y documentación visual. (combinación por arquitectura)",
      "orden_instalacion": "Configura los colores personalizados en Excalidraw."
+    },
+    {
+     "id": "normalize.css",
+     "motivo": "Combinación recíproca: normalize.css lo enlaza como «Paleta de color sobre una base de estilos normalizada en un sitio de CSS propio. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde normalize.css: Importa normalize.css y define las variables de color de Flexoki.",
+     "reciproca_de": "normalize.css"
     }
    ],
    "notas": "Sin alternativas declaradas.",

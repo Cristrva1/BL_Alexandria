@@ -29,6 +29,8 @@ Se instala con `pip install dspy`. La integración con LM usa motores nativos `l
 | [MLflow](mlflow.md) | Seguimiento de experimentos y trazas con el flavor oficial de DSPy en MLflow. | Activa el autolog de MLflow antes de optimizar. |
 | [langfuse](langfuse.md) | Trazas de los programas DSPy con la integración oficial de Langfuse. | Instrumenta antes de las ejecuciones. |
 | [Ragas](ragas.md) | Métricas de RAG como objetivo para los optimizadores (combinación por arquitectura). | Define la métrica antes de compilar. |
+| [hermes-agent-self-evolution](hermes-agent-self-evolution.md) | Combinación recíproca: hermes-agent-self-evolution lo enlaza como «Motor de optimización (DSPy + GEPA) sobre el que está construida». | Orden indicado desde hermes-agent-self-evolution: Se instala como dependencia; consulta la documentación de GEPA en DSPy para entender los parámetros. |
+| [Opik](opik.md) | Combinación recíproca: Opik lo enlaza como «Integración documentada con DSPy». | Orden indicado desde Opik: Activa el callback de Opik en DSPy. |
 
 **Notas:** Alternativa (elige una): promptfoo. Si actualizas desde versiones con LiteLLM, revisa la guía de migración.
 
