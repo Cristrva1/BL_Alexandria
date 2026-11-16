@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada de kyrolabs con herramientas y productos de código abierto para construir agentes de IA. GitHub no detecta licencia. Activa; ha lanzado una lista hermana, Awesome ADE, sobre entornos de desarrollo agéntico.
+
+## ¿Qué hace?
+
+Clasifica proyectos en frameworks (OpenClaw, Hermes Agent, Transformers Agents…), testing y evaluación, desarrollo de software, investigación, agentes conversacionales, juegos y simulación, memoria y gestión del conocimiento, y automatización (navegador, entre otras). Cada entrada lleva una descripción breve.
+
+## ¿Cómo lo hace?
+
+README con enlaces. No se instala.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenClaw](openclaw.md) | Uno de los frameworks destacados en la lista (combinación por arquitectura). | No aplica: es una lista de consulta. |
+| [hermes-agent](hermes-agent.md) | Uno de los frameworks destacados (combinación por arquitectura). | No aplica. |
+| [Awesome Agent Skills](awesome-agent-skills.md) | Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura). | No aplica. |
+
+**Notas:** Sin licencia declarada. Muchas entradas son proyectos pequeños que se autopromocionan: verifica la madurez de cada uno.
+
+Estado en GitHub: activo · último push 2026-11-11 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kyrolabs/awesome-agents/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne |
 | Coste | Sin pago a un modelo en la ruta básica. El directorio no ejecuta modelos; cada proyecto enlazado tiene su coste y licencia |
 | Equipo | Preparación según la ruta elegida. Navegador;  definir qué tarea quieres delegar |
-
-No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne
-
-## Qué puedes hacer con él
-
-Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.
-
-## Por qué destaca
-
-Usos propuestos: Descubrir un asistente personal que trabaja con modelos locales; Encontrar frameworks para estudiar equipos de agentes.
-
-## Cómo funciona
 
 No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne
 

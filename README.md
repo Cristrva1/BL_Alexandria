@@ -8,10 +8,8 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 
 Un proyecto de **Binarias Labs**: tecnología que integra posibilidades.
 
-Las **638 fichas tienen revisión documental individual**: categoría, ejemplos prácticos, primeros pasos, costes y compatibilidad con Claude Code, Codex, Antigravity y modelos locales. Consulta el [registro de revisión](reports/review-679-2026-11-14.json) y el [método editorial](curation/review-679-2026-11-14/README.md). Los ejemplos son propuestas; las instalaciones no se ejecutaron.
-
 <!-- BL:STATS -->
-**638 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **100 subcategorías**
+**811 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías prácticas** · **32 categorías técnicas** · **110 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 [Primera vez: lee cómo elegir](human/elegir.md) · [Diccionario breve](human/vocabulario.md)

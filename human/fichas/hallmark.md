@@ -30,7 +30,7 @@ Se instala con `npx skills add nutlope/hallmark -g` (opción `--agent` para un s
 | [Codex CLI](codex.md) | Agente soportado. | `--agent codex`. |
 | [OpenCode](opencode.md) | Agente soportado. | `--agent opencode`. |
 
-**Notas:** Se solapa con impeccable y taste-skill (el propio README cita a impeccable como referencia).
+**Notas:** Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, impeccable. El propio README cita a impeccable como referencia.
 
 Estado en GitHub: activo · último push 2026-11-11 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -107,6 +107,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; brief de sitio; acceso a recursos si descargas fotos
 - **Etiquetas:** `skills` `skill` `css`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
+| [taste-skill](taste-skill.md) | 116k | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. |
+| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
 
 ## Enlaces
 

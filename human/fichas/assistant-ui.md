@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca open source TypeScript/React (MIT) para construir experiencias de chat con IA de calidad de producción. Es activa (assistant-ui@0.0.135, aún 0.x). Tiene un servicio opcional de pago, Assistant Cloud, para persistencia de hilos, telemetría y archivos.
+
+## ¿Qué hace?
+
+Ofrece primitivas componibles (`Thread`, `Message`, `Composer`, `ThreadList`, `ActionBar`…) para construir cualquier interfaz de chat con streaming, adjuntos, edición, ramas, renderizado de herramientas y accesibilidad. Incluye runtimes para Vercel AI SDK, LangGraph, LangChain, data streams y backends propios. Mastra figura entre sus integraciones destacadas.
+
+## ¿Cómo lo hace?
+
+Una CLI genera un proyecto Next.js o añade componentes con estilo a uno existente (`npx assistant-ui@latest create` o `init`). También se puede instalar directamente con `npm install @assistant-ui/react @assistant-ui/ai-sdk ai`. `useChatRuntime` conecta con el AI SDK por defecto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI SDK (Vercel)](vercel-ai.md) | Runtime por defecto (`@assistant-ui/ai-sdk`, `useChatRuntime`). | Instala `ai` y el proveedor; después el runtime de assistant-ui. |
+| [LangGraph](langgraph.md) | Runtime oficial `@assistant-ui/react-langgraph`. | Despliega el grafo y usa `useLangGraphRuntime`. |
+| [ui](ui.md) | Los componentes con estilo que añade la CLI siguen el patrón de shadcn/ui. (combinación por arquitectura) | Inicializa shadcn/ui o deja que la CLI configure el proyecto. |
+
+**Notas:** Alternativas (elige una): copilotkit.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada assistant-ui@0.0.135 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/assistant-ui/assistant-ui/blob/main/README.md) · [2](https://www.assistant-ui.com/docs/runtimes/ai-sdk) · [3](https://www.assistant-ui.com/docs/runtimes/langgraph)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es la interfaz del chat; necesitas configurar el backend y no basta con instalar el paquete React |
 | Coste | El coste depende del proveedor o la ruta. Los componentes no incluyen modelo; admite proveedores como Ollama además de APIs y servicios de pago |
 | Equipo | Preparación según la ruta elegida. React y TypeScript; Node; runtime y proveedor |
-
-Es la interfaz del chat; necesitas configurar el backend y no basta con instalar el paquete React
-
-## Qué puedes hacer con él
-
-Librería React y TypeScript para interfaces de chat con IA de calidad producción.
-
-## Por qué destaca
-
-Usos propuestos: Construir un chat para una app; Añadir herramientas y adjuntos a una conversación.
-
-## Cómo funciona
 
 Es la interfaz del chat; necesitas configurar el backend y no basta con instalar el paquete React
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React y TypeScript; Node; runtime y proveedor
 - **Etiquetas:** `ui` `chatbot` `react` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [AI SDK (Vercel)](vercel-ai.md) | 28k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 
 ## Alternativas (elige una)
 

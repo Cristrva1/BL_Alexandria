@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Playwright CLI, CLI de Playwright con skills para agentes de código, de Microsoft. Licencia Apache-2.0. Tiene ~15k estrellas (v0.1.x).
+
+## ¿Qué hace?
+
+Expone la automatización del navegador como comandos (más eficientes en tokens que MCP, según el README): navegar, hacer snapshots, clic, trazas, etc.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 20+ y se instala con `npm install -g @playwright/cli@latest`. Funciona con Claude Code, GitHub Copilot y otros agentes, y puede conectarse a un navegador abierto con la extensión Playwright MCP Bridge.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Motor subyacente. | Viene incluido. |
+| [Claude Code](claude-code.md) | Agente documentado. | Instala las skills. |
+| [Playwright MCP](playwright-mcp.md) | Variante MCP para agentes sin shell. | Elige CLI o MCP según el agente. |
+
+**Notas:** Alternativas (elige una): agent-browser.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v0.1.24 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/playwright-cli/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo |
 | Coste | El coste depende del proveedor o la ruta. El CLI no necesita API de IA propia; el agente usa su modelo o plan |
 | Equipo | Preparación según la ruta elegida. Node; navegador; agente con shell; aplicación de prueba |
-
-Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo
-
-## Qué puedes hacer con él
-
-Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto.
-
-## Por qué destaca
-
-Usos propuestos: Probar un flujo con un agente; Registrar una secuencia de navegación.
-
-## Cómo funciona
 
 Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo
 
@@ -95,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; navegador; agente con shell; aplicación de prueba
 - **Etiquetas:** `browser` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
-| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
 
 ## Alternativas (elige una)
 

@@ -30,6 +30,14 @@ Monorepo en Node.js: frontend Vite + React, servidor y un `collector` Express qu
 | [Qdrant](qdrant.md) | Base vectorial soportada cuando LanceDB embebida se queda corta. | Qdrant primero; elige el vectorizador antes de ingerir documentos (cambiarlo obliga a reindexar). |
 | [litellm](litellm.md) | Proveedor soportado para enrutar varios modelos detrás de un proxy. | LiteLLM primero; configura su URL y clave. |
 | [LocalAI](localai.md) | Proveedor soportado de LLM y embeddings totalmente local. | Alternativa a Ollama como motor: usa uno de los dos. |
+| [Chroma](chroma.md) | Combinación recíproca: Chroma lo enlaza como «Base vectorial soportada (Chroma y ChromaCloud)». | Orden indicado desde Chroma: Servidor Chroma primero; configura su URL en AnythingLLM. |
+| [Milvus](milvus.md) | Combinación recíproca: Milvus lo enlaza como «Base vectorial soportada por AnythingLLM». | Orden indicado desde Milvus: Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[llamafile](llamafile.md) · [pgvector](pgvector.md)
 
 **Notas:** Alternativas (elige una): open-webui, khoj, private-gpt, onyx.
 

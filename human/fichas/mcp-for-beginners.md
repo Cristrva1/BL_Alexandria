@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Curso de Microsoft para aprender Model Context Protocol con ejemplos prácticos en C#, Java, JavaScript, Rust, Python y TypeScript. Licencia MIT. Es popular (~18k estrellas, sin releases) y tiene más de 50 traducciones automáticas.
+
+## ¿Qué hace?
+
+Recorre desde los conceptos básicos de MCP hasta la construcción de servidores y clientes, seguridad, despliegue y casos reales, con lecciones y código por lenguaje. Mantiene las traducciones con Co-op Translator.
+
+## ¿Cómo lo hace?
+
+Se clona el repo (el README recomienda un clon parcial sin traducciones porque pesan mucho) y se siguen las lecciones. Cada ejemplo usa el SDK oficial del lenguaje correspondiente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MCP Python SDK](mcp-python-sdk.md) | SDK oficial usado en los ejemplos de Python. | Instala `mcp[cli]` para seguir las lecciones de Python. |
+| [FastMCP](fastmcp.md) | Framework popular para practicar servidores Python tras el curso. (combinación por arquitectura) | Rehaz un ejercicio con FastMCP para comparar. |
+| [MCP Inspector](mcp-inspector.md) | Probar los servidores de los ejercicios. (combinación por arquitectura) | Lanza el Inspector contra cada servidor que construyas. |
+| [AI Agents for Beginners](ai-agents-for-beginners.md) | Combinación recíproca: AI Agents for Beginners lo enlaza como «Profundizar en MCP, que el curso trata en la lección de protocolos agénticos (enlazado en el README)». | Orden indicado desde AI Agents for Beginners: Tómalo después de la lección 11. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | Combinación recíproca: Generative AI for Beginners lo enlaza como «Curso complementario sobre Model Context Protocol (enlazado en el README)». | Orden indicado desde Generative AI for Beginners: Tómalo cuando llegues a la parte de herramientas y agentes. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/mcp-for-beginners/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. No necesitas ejecutar todos los lenguajes ni desplegar todos los ejemplos para empezar |
 | Coste | Sin pago a un modelo en la ruta básica. El curso se lee sin API; los ejercicios concretos pueden usar modelos, nube o servicios de pago |
 | Equipo | Preparación según la ruta elegida. Navegador; lenguaje elegido para los ejercicios |
-
-No necesitas ejecutar todos los lenguajes ni desplegar todos los ejemplos para empezar
-
-## Qué puedes hacer con él
-
-Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python.
-
-## Por qué destaca
-
-Usos propuestos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript.
-
-## Cómo funciona
 
 No necesitas ejecutar todos los lenguajes ni desplegar todos los ejemplos para empezar
 
@@ -84,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; lenguaje elegido para los ejercicios
 - **Etiquetas:** `mcp` `learning`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
-| [MCP Inspector](mcp-inspector.md) | 11.3k | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. |
 
 ## Enlaces
 

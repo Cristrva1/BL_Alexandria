@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skills «con opinión» de @leonardocouy (Softaworks), con licencia MIT y en formato Agent Skills, pensadas para ganar eficiencia en Claude Code. Sin releases; último cambio en marzo de 2026.
+
+## ¿Qué hace?
+
+Reúne skills, agentes y comandos de desarrollo y productividad, entre ellos `/codex-plan` (planes con Codex), `/compose-email`, `/explain-pr-changes`, `/sync-branch` y `/viral-tweet`, además de skills como un humanizador.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add softaworks/agent-toolkit`, que funciona en Claude Code, Codex, Cursor y otros agentes, o como marketplace de Claude Code. Cada skill, agente o comando es un plugin independiente (`/plugin install <nombre>@agent-toolkit`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Marketplace y destino principal. | Instala solo los plugins que necesites. |
+| [Codex CLI](codex.md) | Agente compatible con `npx skills`; el comando `/codex-plan` también lo usa. | Instala y autentica Codex antes de usar `/codex-plan`. |
+| [SkillSpector](skillspector.md) | Cada skill, agente o comando del toolkit es un plugin independiente: SkillSpector permite auditarlos antes de instalarlos (combinación por arquitectura). | Clona o descarga el plugin, revísalo con SkillSpector y después instálalo con `/plugin install <nombre>@agent-toolkit`. |
+
+**Notas:** Se quitó superpowers porque no hay integración.
+
+Estado en GitHub: activo · último push 2026-03-05 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/softaworks/agent-toolkit/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones usan el agente; herramientas y servicios de cada skill se revisan por separado |
 | Equipo | Preparación según la ruta elegida. Node.js;  agente compatible y una skill escogida |
-
-La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code
-
-## Qué puedes hacer con él
-
-Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación.
-
-## Por qué destaca
-
-Usos propuestos: Aclarar una petición ambigua antes de programar; Documentar el contrato entre frontend y backend.
-
-## Cómo funciona
 
 La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js;  agente compatible y una skill escogida
 - **Etiquetas:** `agents` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
 ## Enlaces
 

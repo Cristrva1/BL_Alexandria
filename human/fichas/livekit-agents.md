@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+LiveKit Agents, framework para agentes de voz y vídeo en tiempo real sobre la infraestructura WebRTC de LiveKit. Licencia Apache-2.0; sus modelos de detección de turno usan la «LiveKit Model License». Es activo (~15k estrellas, 1.8.12).
+
+## ¿Qué hace?
+
+Crea participantes programables que escuchan, hablan y ven en salas LiveKit, con plugins de STT, LLM y TTS, detección de turnos, herramientas y telefonía. Hay SDK en Python y Node.js (AgentsJS).
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install "livekit-agents[openai,deepgram,cartesia]"` (u otros plugins) y requiere un servidor LiveKit, autoalojado o LiveKit Cloud.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Kokoro](kokoro.md) | TTS local vía endpoint compatible. (combinación por arquitectura) | Expón Kokoro y configúralo como TTS. |
+| [Ollama](ollama.md) | LLM local vía plugin compatible con OpenAI. (combinación por arquitectura) | Apunta el plugin al endpoint de Ollama. |
+| [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Expón el servidor y úsalo como STT. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | LiveKit Agents documenta un plugin de TTS de ElevenLabs. | Instala el plugin y define la clave de ElevenLabs. |
+
+**Notas:** Alternativas (elige una): pipecat, dograh.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada livekit-agents@1.8.12 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/livekit/agents/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte |
 | Coste | El coste depende del proveedor o la ruta. Modelos, STT, TTS, transporte y Cloud se costean por separado; Ollama es una ruta LLM local documentada |
 | Equipo | Preparación según la ruta elegida. Python; LiveKit; proveedores o modelos locales; micrófono de prueba |
-
-El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte
-
-## Qué puedes hacer con él
-
-Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit.
-
-## Por qué destaca
-
-Usos propuestos: Construir un asistente de voz; Evaluar conversación en tiempo real.
-
-## Cómo funciona
 
 El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte
 
@@ -95,17 +110,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `audio` `agents` `video` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [dograh](dograh.md) | 6.1k | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. |
+| [TEN Framework](ten-framework.md) | 11.2k | Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos. |
 
 ## Enlaces
 

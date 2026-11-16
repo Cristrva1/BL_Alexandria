@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework libre de ingeniería inversa para línea de comandos (r2), reescritura completa de radare. Licencia LGPL-3.0, aunque cada plugin puede tener la suya (GitHub muestra NOASSERTION; `r2 -Lj` lista las licencias). Es muy maduro y activo (~25k estrellas, 6.2.6).
+
+## ¿Qué hace?
+
+Ofrece librerías, herramientas y plugins para desensamblar, analizar, depurar, parchear y editar binarios en hexadecimal, con soporte para muchísimas arquitecturas y formatos. Se automatiza con su intérprete JavaScript embebido o con r2pipe desde cualquier lenguaje. Tiene un ecosistema de plugins como r2frida (instrumentación con Frida) y r2ghidra.
+
+## ¿Cómo lo hace?
+
+Está escrito en C; se recomienda instalarlo desde git con `sys/install.sh` (o paquetes) y añadir plugins con su gestor `r2pm`. Funciona en Linux, macOS, Windows, BSD, Android e iOS. La curva de aprendizaje de su interfaz de comandos es alta.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [frida](frida.md) | Instrumentar procesos en vivo desde r2 con el plugin oficial r2frida (`r2 frida://0`). | Instala Frida y luego `r2pm -ci r2frida`. |
+| [Claude Code](claude-code.md) | Dar a un agente acceso a r2 con el servidor MCP oficial r2mcp (radareorg/radare2-mcp, no catalogado). | Instala r2mcp con r2pm y regístralo en el cliente MCP. |
+| [ImHex](imhex.md) | Analizar formatos de datos con patrones visuales mientras r2 trabaja el código. (combinación por arquitectura) | Usa ambos sobre el mismo binario. |
+
+**Notas:** Alternativas (elige una): rizin, ghidra. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 6.2.6 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/radareorg/radare2/blob/master/README.md) · [2](https://github.com/nowsecure/r2frida) · [3](https://github.com/radareorg/radare2-mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El ecosistema permite depuración y escritura; para empezar limita la prueba a lectura estática |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo; plugins pueden tener licencias y dependencias distintas |
 | Equipo | Preparación según la ruta elegida. Release o compilación compatible; binario propio de práctica |
-
-El ecosistema permite depuración y escritura; para empezar limita la prueba a lectura estática
-
-## Qué puedes hacer con él
-
-Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.
-
-## Por qué destaca
-
-Usos propuestos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio.
-
-## Cómo funciona
 
 El ecosistema permite depuración y escritura; para empezar limita la prueba a lectura estática
 

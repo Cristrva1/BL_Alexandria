@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Colección de tutoriales de @NirDiamant para llevar agentes de IA a producción. **Licencia no comercial personalizada** (GitHub la marca NOASSERTION): no es open source en sentido OSI. Es muy activa y el README promociona un libro del autor.
+
+## ¿Qué hace?
+
+Reúne unos 28 tutoriales con código sobre flujos con estado (LangGraph), memoria (Redis, Mem0), datos web en tiempo real (Tavily), MCP, despliegue on-premise con Ollama, trazado (LangSmith), seguridad y guardrails, evaluación, contenedores, GPU y más. Muchos tutoriales están patrocinados por la empresa cuya herramienta enseñan.
+
+## ¿Cómo lo hace?
+
+Notebooks Python independientes, cada uno con sus `requirements.txt` y sus claves de servicio. Se clona el repositorio y se abre el tutorial elegido. La licencia impide el uso comercial del material sin permiso.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Base de varios tutoriales de flujos con estado (tutorial 'Stateful Agent Workflows with LangGraph'). | Instálalo en el entorno del tutorial correspondiente. |
+| [mem0](mem0.md) | Tutorial de memoria auto-mejorable con Mem0. | Configura Mem0 (cloud o local) antes del notebook. |
+| [Ollama](ollama.md) | Tutorial de despliegue on-premise de LLMs con Ollama. | Instala Ollama y descarga el modelo indicado. |
+
+**Notas:** Sin alternativas declaradas. Licencia no comercial: revisa el LICENSE antes de reutilizar el código en un producto. Contenido parcialmente patrocinado.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada book-v1.0 (2026-10-26) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NirDiamant/agents-towards-production/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo |
 | Coste | El coste depende del proveedor o la ruta. Consultar no requiere API; los laboratorios pueden consumir nube, modelos y cómputo |
 | Equipo | Preparación según la ruta elegida. Python; dependencias por tutorial; servicios o GPU según ejercicio |
-
-La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo
-
-## Qué puedes hacer con él
-
-Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación.
-
-## Por qué destaca
-
-Usos propuestos: Aprender a desplegar un agente; Comparar un servicio LLM con Ollama on-prem.
-
-## Cómo funciona
 
 La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo
 
@@ -94,14 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dependencias por tutorial; servicios o GPU según ejercicio
 - **Etiquetas:** `agents` `learning` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [mem0](mem0.md) | 69k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Enlaces
 
