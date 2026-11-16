@@ -28,7 +28,7 @@ Es una app Next.js que requiere Node.js 20.19+ (22 LTS recomendado) y PostgreSQL
 |---|---|---|
 | [metabase](metabase.md) | Consultar con SQL la base PostgreSQL de Umami para informes a medida. (combinación por arquitectura) | Conecta Metabase a la base de Umami en solo lectura. |
 | [Grafana](grafana.md) | Paneles operativos sobre los datos de Umami en PostgreSQL. (combinación por arquitectura) | Añade la fuente PostgreSQL en Grafana. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `umami` para usar Umami en flujos (sustituye a la antigua combinación con n8n). | Umami en marcha con sus credenciales; después añade la pieza `umami` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `umami` para usar Umami en flujos. | Umami en marcha con sus credenciales; después añade la pieza `umami` en un flujo de Activepieces. |
 
 **Notas:** Alternativas (elige una): plausible, matomo.
 

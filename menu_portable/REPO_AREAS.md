@@ -190,13 +190,7 @@ Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas 
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-`activepieces`, `huginn`, `kestra`, `node-red`, `self-hosted-ai-starter-kit`, `trigger-dev`, `windmill`
-
-### n8n: plantillas, skills y conectores
-
-Recursos específicos para construir y mantener flujos de n8n.
-
-`awesome-n8n-templates`, `self-hosted-ai-starter-kit`
+`activepieces`, `huginn`, `kestra`, `node-red`, `trigger-dev`, `windmill`
 
 ### WhatsApp y pasarelas de mensajería
 
@@ -306,7 +300,7 @@ Interfaces de conversación y espacios de trabajo con tus fuentes.
 
 Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
-`airllm`, `exo`, `freetoken`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `ollama`, `self-hosted-ai-starter-kit`, `transformers.js`
+`airllm`, `exo`, `freetoken`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `ollama`, `transformers.js`
 
 ### Modelos abiertos y pesos
 

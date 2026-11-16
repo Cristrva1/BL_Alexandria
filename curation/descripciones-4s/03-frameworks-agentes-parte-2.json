@@ -204,7 +204,7 @@
      "orden_instalacion": "Plataforma primero; luego registra el MCP en Codex."
     }
    ],
-   "notas": "Alternativas (elige una): sim, langflow. Combinación anterior con n8n eliminada: sin integración documentada. Licencia: Polyform Shield en la plataforma (no es open source OSI).",
+   "notas": "Alternativas (elige una): sim, langflow. Licencia: Polyform Shield en la plataforma (no es open source OSI).",
    "fuentes": [
     "https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md",
     "https://agpt.co/docs/platform/api-and-integrations/api-guide",

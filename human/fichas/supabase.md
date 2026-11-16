@@ -27,7 +27,7 @@ Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo lo
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [pgvector](pgvector.md) | Extensión de vectores para embeddings. | Activa la extensión en la base de datos. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos (sustituye a la antigua combinación con n8n). | supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos. | supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces. |
 | [coolify](coolify.md) | Autoalojar Supabase. (combinación por arquitectura) | Despliega desde Coolify. |
 
 **Notas:** Sin alternativas declaradas.

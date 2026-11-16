@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **623 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **621 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -12,7 +12,7 @@ Las **623 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 
 | # | Categoría | Repos | Para qué |
 |---:|---|---:|---|
-| 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 12 | Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos. |
+| 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 10 | Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot. |
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
 | 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 30 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
 | 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 20 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
@@ -66,7 +66,7 @@ Las **623 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 
 ## 🤖 1. Automatizar procesos y crear herramientas internas
 
-Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos.
+Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.
 
 **⚖️ ¿Cuál elegir? — huginn, Node-RED**
 
@@ -158,29 +158,6 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [FFmpeg](human/fichas/ffmpeg.md) · [playwright](human/fichas/playwright.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/trigger-dev.md) · [GitHub](https://github.com/triggerdotdev/trigger.dev)
-
-### Ecosistema n8n
-
-#### 🔁 Self-hosted AI Starter Kit ⭐
-**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 15.4k<br>
-**Qué es:** Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
-cp .env.example .env # you should update secrets and passwords inside
-docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Open WebUI](human/fichas/open-webui.md) · [Docling](human/fichas/docling.md) · [Awesome n8n Templates](human/fichas/awesome-n8n-templates.md)<br>
-**Más:** [ficha completa](human/fichas/self-hosted-ai-starter-kit.md) · [GitHub](https://github.com/n8n-io/self-hosted-ai-starter-kit)
-
-#### 🔁 Awesome n8n Templates
-**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 26.4k<br>
-**Qué es:** Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Self-hosted AI Starter Kit](human/fichas/self-hosted-ai-starter-kit.md)<br>
-**Más:** [ficha completa](human/fichas/awesome-n8n-templates.md) · [GitHub](https://github.com/enescingoz/awesome-n8n-templates)
 
 ### Apps internas y bases de datos no-code
 

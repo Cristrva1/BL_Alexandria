@@ -34,7 +34,7 @@ Es una aplicación PHP con frontend en JavaScript/Vue; necesita servidor web, PH
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v33.0.11 (2026-11-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nextcloud/server/blob/master/README.md) · [2](https://github.com/nextcloud/all-in-one) · [3](https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html) · [4](https://apps.nextcloud.com/apps/integration_openai) · [5](https://coolify.io/docs/services/nextcloud) · [6](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nextcloud/) · [7](https://www.home-assistant.io/integrations/nextcloud/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nextcloud/server/blob/master/README.md) · [2](https://github.com/nextcloud/all-in-one) · [3](https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html) · [4](https://apps.nextcloud.com/apps/integration_openai) · [5](https://coolify.io/docs/services/nextcloud) · [6](https://www.home-assistant.io/integrations/nextcloud/)</sub>
 
 ## Acceso, coste y equipo
 

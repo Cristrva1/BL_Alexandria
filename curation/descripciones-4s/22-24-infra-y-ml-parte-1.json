@@ -336,7 +336,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos.",
      "orden_instalacion": "supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces."
     },
     {

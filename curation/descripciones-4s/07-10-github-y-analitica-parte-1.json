@@ -20,7 +20,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos.",
      "orden_instalacion": "GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces."
     }
    ],
@@ -95,7 +95,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `umami` para usar Umami en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `umami` para usar Umami en flujos.",
      "orden_instalacion": "Umami en marcha con sus credenciales; después añade la pieza `umami` en un flujo de Activepieces."
     }
    ],
@@ -128,7 +128,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos.",
      "orden_instalacion": "posthog en marcha con sus credenciales; después añade la pieza `posthog` en un flujo de Activepieces."
     },
     {
@@ -141,7 +141,6 @@
    "fuentes": [
     "https://github.com/PostHog/posthog/blob/master/README.md",
     "https://posthog.com/docs/model-context-protocol",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.posthog/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/posthog"
    ],
    "github": {
@@ -161,7 +160,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos.",
      "orden_instalacion": "Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces."
     },
     {
@@ -208,7 +207,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos.",
      "orden_instalacion": "Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces."
     }
    ],

@@ -293,7 +293,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [SGLang](fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Serena](fichas/serena.md) | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Semgrep](fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-10 | [Self-hosted AI Starter Kit](fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Selenium](fichas/selenium.md) | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [SearXNG](fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [screenshot-to-code](fichas/screenshot-to-code.md) | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. | Depende de la ruta elegida |
@@ -426,7 +425,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [BMAD Method](fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Blender MCP](fichas/blender-mcp.md) | Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. | API de IA opcional |
 | 2026-11-10 | [Baileys](fichas/baileys.md) | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-10 | [Awesome n8n Templates](fichas/awesome-n8n-templates.md) | Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. | Depende de la ruta elegida |
 | 2026-11-10 | [Awesome LLM Apps](fichas/awesome-llm-apps.md) | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. | API de IA opcional |
 | 2026-11-10 | [Awesome GitHub Copilot](fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Awesome Claude Skills](fichas/awesome-claude-skills.md) | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | Sin clave propia de API de IA en la ruta básica |

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 625 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 623 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -306,17 +306,13 @@
    "num": 1,
    "emoji": "🤖",
    "title": "Automatizar procesos y crear herramientas internas",
-   "desc": "Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos.",
+   "desc": "Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-   "count": 12,
+   "count": 10,
    "subs": [
     {
      "key": "motores",
      "title": "Motores de workflow y automatización"
-    },
-    {
-     "key": "n8n",
-     "title": "Ecosistema n8n"
     },
     {
      "key": "internas",
@@ -2562,76 +2558,6 @@
    "routes": [
     "no_api",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "self-hosted-ai-starter-kit",
-   "name": "Self-hosted AI Starter Kit",
-   "emoji": "🔁",
-   "cat": 1,
-   "sub": "n8n",
-   "role": "platform",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "automation",
-    "local",
-    "rag",
-    "docker"
-   ],
-   "stars": 15361,
-   "gh": "n8n-io/self-hosted-ai-starter-kit",
-   "lib": false,
-   "pick": true,
-   "one": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
-   "alt": [],
-   "doc": "human/fichas/self-hosted-ai-starter-kit.md",
-   "github_id": 762303728,
-   "added_at": "2026-11-10",
-   "goals": [
-    "automatizar"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "awesome-n8n-templates",
-   "name": "Awesome n8n Templates",
-   "emoji": "🔁",
-   "cat": 1,
-   "sub": "n8n",
-   "role": "directory",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "automation",
-    "prompts"
-   ],
-   "stars": 26416,
-   "gh": "enescingoz/awesome-n8n-templates",
-   "lib": false,
-   "pick": false,
-   "one": "Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.",
-   "alt": [],
-   "doc": "human/fichas/awesome-n8n-templates.md",
-   "github_id": 980205160,
-   "added_at": "2026-11-10",
-   "goals": [
-    "automatizar",
-    "aprender"
-   ],
-   "routes": [
-    "local_model",
-    "api",
-    "reference"
    ],
    "source_archived": false
   },
@@ -26402,7 +26328,6 @@
      "ai-agents-for-beginners"
     ],
     "categories": [
-     1,
      2,
      3,
      4,
@@ -27190,24 +27115,6 @@
         ]
        }
       ],
-      "repos": [
-       "self-hosted-ai-starter-kit"
-      ],
-      "keywords": [],
-      "reference_repos": []
-     },
-     {
-      "id": "negocio-n8n",
-      "title": "n8n: plantillas, skills y conectores",
-      "description": "Recursos específicos para construir y mantener flujos de n8n.",
-      "selectors": [
-       {
-        "cat": 1,
-        "subs": [
-         "n8n"
-        ]
-       }
-      ],
       "repos": [],
       "keywords": [],
       "reference_repos": []
@@ -27532,9 +27439,7 @@
         ]
        }
       ],
-      "repos": [
-       "self-hosted-ai-starter-kit"
-      ],
+      "repos": [],
       "keywords": [],
       "reference_repos": []
      },

@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**623 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**621 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -8,7 +8,7 @@
 
 ## Índice
 
-1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 12
+1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 10
 2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 30
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 30
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 20
@@ -42,7 +42,7 @@
 32. [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) — 11
 ## 🤖 1. Automatizar procesos y crear herramientas internas
 
-_Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos._ → [página de la categoría](human/categorias/01-automatizaci-n-mensajer-a-crm.md)
+_Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot._ → [página de la categoría](human/categorias/01-automatizaci-n-mensajer-a-crm.md)
 
 ### Motores de workflow y automatización
 
@@ -54,13 +54,6 @@ _Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del p
 | [Node-RED](human/fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [Windmill](human/fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [Trigger.dev](human/fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
-
-### Ecosistema n8n
-
-| Repo | Qué hace | API de IA | Tipo | Preparación |
-|---|---|---|---|---|
-| ⭐ [Self-hosted AI Starter Kit](human/fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
-| [Awesome n8n Templates](human/fichas/awesome-n8n-templates.md) | Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. | Depende de la ruta elegida | 📂 catálogo/recurso | 🟢 fácil |
 
 ### Apps internas y bases de datos no-code
 

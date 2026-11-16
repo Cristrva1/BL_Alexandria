@@ -97,7 +97,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 - **Stack:** Docker Compose con PostgreSQL y Redis, o una cuenta alojada
 - **Etiquetas:** `automation` `typescript` `docker`
-- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
 ## Enlaces
 

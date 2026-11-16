@@ -28,7 +28,7 @@ Es un binario en Go para macOS, Windows y Linux, instalable con Homebrew, winget
 |---|---|---|
 | [Claude Code](claude-code.md) | Dar al agente acceso a PR, issues y CI desde la terminal. (combinación por arquitectura) | Autentica `gh` y permite su uso al agente. |
 | [GitHub MCP Server](github-mcp-server.md) | Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura) | Usa `gh` en terminal y el servidor MCP en clientes sin shell. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos (sustituye a la antigua combinación con n8n). | GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos. | GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces. |
 
 **Notas:** Sin alternativas declaradas. Limita los scopes del token que uses con agentes.
 

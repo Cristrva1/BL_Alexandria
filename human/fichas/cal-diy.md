@@ -32,7 +32,7 @@ Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v6.2.0 (2026-03-01) · licencia declarada MIT (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/calcom/cal.diy/blob/main/README.md) · [2](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/calcom/cal.diy/blob/main/README.md)</sub>
 
 ## Acceso, coste y equipo
 

@@ -309,7 +309,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos.",
      "orden_instalacion": "Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces."
     }
    ],

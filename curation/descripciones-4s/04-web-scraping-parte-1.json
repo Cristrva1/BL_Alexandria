@@ -10,7 +10,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos.",
      "orden_instalacion": "firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces."
     },
     {
@@ -194,7 +194,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `jina-ai` para usar Jina Reader en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `jina-ai` para usar Jina Reader en flujos.",
      "orden_instalacion": "Jina Reader en marcha con sus credenciales; después añade la pieza `jina-ai` en un flujo de Activepieces."
     },
     {
@@ -211,7 +211,6 @@
    "notas": "Alternativas (elige una): firecrawl, crawl4ai.",
    "fuentes": [
     "https://github.com/jina-ai/reader/blob/main/README.md",
-    "https://n8n.io/integrations/jina-ai/",
     "https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/jina-ai"
    ],

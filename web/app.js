@@ -265,7 +265,7 @@
     const featuredPrompts = (prompts.filter(p => p.featured).length ? prompts.filter(p => p.featured) : prompts).slice(0, 3);
     const groups = catalog.discovery.goal_groups || [];
     const goalById = Object.fromEntries(catalog.discovery.goals.map(g => [g.id, g]));
-    const queries = ["transcribir audio", "bot de WhatsApp", "presentación desde PDF", "modelo local", "n8n", "subtítulos"];
+    const queries = ["transcribir audio", "bot de WhatsApp", "presentación desde PDF", "modelo local", "automatizar flujos", "subtítulos"];
     const stats = [
       [catalog.counts.repos, "repos curados", "#/explorar"], [catalog.counts.work_areas || areas.length, "áreas de trabajo", "#/salas"],
       [catalog.counts.topics, "subcategorías", "#/salas"], [catalog.counts.recipes, "recetas completas", "#/recetas"],
@@ -816,7 +816,7 @@
     const suggested=[...new Set(ids.flatMap(id=>repo(id).alt_refs.map(ref=>ref.id)).filter(Boolean))];
     const starters=catalog.discovery.goals.find(g=>g.id===goal)?.starters||[];
     const found=AlexandriaDecisions.candidates(catalog.repos,query,ids,goal,[...suggested,...starters]);
-    return `<search><form id="compare-search" class="decision-form"><div><label for="compare-query">Buscar por nombre o tecnología</label><input id="compare-query" name="q" type="search" value="${esc(query)}" placeholder="Por ejemplo: n8n, whisper o react" aria-describedby="compare-search-help"></div><div><label for="compare-goal">Acotar por objetivo</label><select id="compare-goal" name="goal">${goalOptions(goal)}</select></div><button class="btn" type="submit">Buscar herramientas</button></form></search><p id="compare-search-help" class="meta">Selecciona hasta tres. Cada resultado muestra su identidad para distinguir repos con el mismo nombre.</p>
+    return `<search><form id="compare-search" class="decision-form"><div><label for="compare-query">Buscar por nombre o tecnología</label><input id="compare-query" name="q" type="search" value="${esc(query)}" placeholder="Por ejemplo: activepieces, whisper o react" aria-describedby="compare-search-help"></div><div><label for="compare-goal">Acotar por objetivo</label><select id="compare-goal" name="goal">${goalOptions(goal)}</select></div><button class="btn" type="submit">Buscar herramientas</button></form></search><p id="compare-search-help" class="meta">Selecciona hasta tres. Cada resultado muestra su identidad para distinguir repos con el mismo nombre.</p>
       <section aria-labelledby="compare-candidates-title"><h2 id="compare-candidates-title" class="compact-title">${query||goal?"Resultados para añadir":suggested.length?"Alternativas documentadas para seguir comparando":"Busca una herramienta o empieza con una comparación"}</h2><div id="compare-candidates" aria-live="polite">${found.length?`<p class="meta">${found.length} ${found.length===1?"coincidencia":"coincidencias"}${found.length>6?"; se muestran seis. Afina la búsqueda para ver otras.":"."}</p><ul class="compare-candidates">${found.slice(0,6).map(item=>`<li><div><strong>${esc(item.name)}</strong><span class="meta">${esc(item.gh||item.id)}</span><p>${esc(item.lead)}</p></div><button class="btn small ghost" type="button" data-action="compare" data-id="${esc(item.id)}" aria-label="Añadir ${esc(item.name)} (${esc(item.gh||item.id)}) a comparar"${ids.length===3?" disabled":""}>Añadir</button></li>`).join("")}</ul>`:query||goal?`<p>No hay coincidencias para esta búsqueda. Prueba un nombre más corto o cambia el objetivo.</p>`:""}</div></section>`;
   }
   function comparisonTable(group,items,differences) {

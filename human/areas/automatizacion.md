@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-44 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+42 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -26,20 +26,8 @@ Elegir el motor que coordina tareas entre aplicaciones.
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
 | [Node-RED](../fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica |
-| [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 | [Trigger.dev](../fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional |
 | [Windmill](../fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional |
-
-### n8n: plantillas, skills y conectores
-
-Recursos específicos para construir y mantener flujos de n8n.
-
-[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-n8n)
-
-| Repositorio | Para qué sirve | API de IA |
-|---|---|---|
-| [Awesome n8n Templates](../fichas/awesome-n8n-templates.md) | Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. | Depende de la ruta elegida |
-| [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 
 ### WhatsApp y pasarelas de mensajería
 

@@ -1,13 +1,13 @@
 {
   "generated_at": "2026-11-16",
-  "title": "Índice IA — 625 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 623 repos curados de IA, automatización y herramientas",
   "counts": {
-    "repos": 623,
+    "repos": 621,
     "categories": 32,
     "areas": 16,
     "work_areas": 13,
     "tool_collections": 3,
-    "topics": 99,
+    "topics": 98,
     "recipes": 14,
     "mcp": 123,
     "labs": 282
@@ -2134,7 +2134,7 @@
           "Mide carga antes de aumentar el tamaño."
         ],
         "limits": [
-          "Una VPS barata puede ser insuficiente para un modelo grande; alojar n8n y servir un LLM tienen requisitos distintos."
+          "Una VPS barata puede ser insuficiente para un modelo grande; alojar un motor de flujos y servir un LLM tienen requisitos distintos."
         ],
         "sources": [
           {
@@ -2473,13 +2473,13 @@
         "commands": []
       },
       {
-        "id": "n8n-servicio",
-        "name": "n8n: flujos e integraciones",
+        "id": "activepieces-servicio",
+        "name": "Activepieces: flujos e integraciones",
         "group": "datos",
         "kind": "Automatización entre servicios",
-        "summary": "Conecta eventos y aplicaciones con flujos visuales; puede incorporar IA como una etapa.",
+        "summary": "Conecta eventos y aplicaciones con flujos visuales y piezas listas; puede incorporar IA como una etapa.",
         "prepare": [
-          "Cuenta cloud o instalación propia",
+          "Cuenta cloud o instalación propia con Docker",
           "Credenciales de un servicio de prueba"
         ],
         "steps": [
@@ -2501,11 +2501,13 @@
         "sources": [
           {
             "title": "Documentación oficial del proyecto o servicio",
-            "url": "https://docs.n8n.io/",
-            "checked_at": "2026-11-15"
+            "url": "https://www.activepieces.com/docs",
+            "checked_at": "2026-11-16"
           }
         ],
-        "repo_ids": [],
+        "repo_ids": [
+          "activepieces"
+        ],
         "aliases": [],
         "commands": []
       },
@@ -8022,7 +8024,6 @@
           "ai-agents-for-beginners"
         ],
         "categories": [
-          1,
           2,
           3,
           4,
@@ -9307,9 +9308,7 @@
                 ]
               }
             ],
-            "repos": [
-              "self-hosted-ai-starter-kit"
-            ],
+            "repos": [],
             "keywords": [],
             "reference_repos": [],
             "repo_ids": [
@@ -9317,32 +9316,10 @@
               "huginn",
               "kestra",
               "node-red",
-              "self-hosted-ai-starter-kit",
               "trigger-dev",
               "windmill"
             ],
-            "count": 7
-          },
-          {
-            "id": "negocio-n8n",
-            "title": "n8n: plantillas, skills y conectores",
-            "description": "Recursos específicos para construir y mantener flujos de n8n.",
-            "selectors": [
-              {
-                "cat": 1,
-                "subs": [
-                  "n8n"
-                ]
-              }
-            ],
-            "repos": [],
-            "keywords": [],
-            "reference_repos": [],
-            "repo_ids": [
-              "awesome-n8n-templates",
-              "self-hosted-ai-starter-kit"
-            ],
-            "count": 2
+            "count": 6
           },
           {
             "id": "negocio-whatsapp",
@@ -9543,7 +9520,6 @@
           "agency-agents",
           "appsmith",
           "arcads-claude-code",
-          "awesome-n8n-templates",
           "baileys",
           "botpress",
           "budibase",
@@ -9571,7 +9547,6 @@
           "open-seo",
           "openwa",
           "postiz-app",
-          "self-hosted-ai-starter-kit",
           "sellbird",
           "social-media-research-skills",
           "tooljet",
@@ -9584,7 +9559,7 @@
           "whatsmeow",
           "windmill"
         ],
-        "count": 44
+        "count": 42
       },
       {
         "id": "agentes",
@@ -10018,9 +9993,7 @@
                 ]
               }
             ],
-            "repos": [
-              "self-hosted-ai-starter-kit"
-            ],
+            "repos": [],
             "keywords": [],
             "reference_repos": [],
             "repo_ids": [
@@ -10033,10 +10006,9 @@
               "localai",
               "magnitude",
               "ollama",
-              "self-hosted-ai-starter-kit",
               "transformers.js"
             ],
-            "count": 11
+            "count": 10
           },
           {
             "id": "local-modelos",
@@ -10154,7 +10126,6 @@
           "peft",
           "private-gpt",
           "pytorch",
-          "self-hosted-ai-starter-kit",
           "sglang",
           "surfsense",
           "tensorflow",
@@ -10167,7 +10138,7 @@
           "unsloth",
           "vllm"
         ],
-        "count": 48
+        "count": 47
       },
       {
         "id": "documentos",
@@ -18509,27 +18480,23 @@
       "num": 1,
       "title": "Automatizar procesos y crear herramientas internas",
       "question": "¿Quieres conectar aplicaciones o automatizar tareas repetidas?",
-      "blurb": "Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos.",
-      "description": "Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos.",
+      "blurb": "Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.",
+      "description": "Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.",
       "subs": [
         {
           "key": "motores",
           "title": "Motores de workflow y automatización"
         },
         {
-          "key": "n8n",
-          "title": "Ecosistema n8n"
-        },
-        {
           "key": "internas",
           "title": "Apps internas y bases de datos no-code"
         }
       ],
-      "count": 12,
+      "count": 10,
       "starters": [
         "nocodb",
         "node-red",
-        "awesome-n8n-templates"
+        "activepieces"
       ]
     },
     {
@@ -19436,7 +19403,7 @@
       "title": "Bot de WhatsApp con IA",
       "goal": "Atender y vender por WhatsApp con un agente LLM que guarda leads y pasa la conversación a una persona cuando hace falta.",
       "how": "Evolution API mantiene la sesión de WhatsApp y, mediante su integración nativa con Dify, pasa cada mensaje a una app de Dify (agente o chatflow) que arma el contexto, llama al LLM y guarda el lead. La integración nativa de Evolution con Chatwoot lleva las conversaciones a la bandeja para que responda una persona cuando hace falta. Novu avisa al equipo cuando Dify detecta un lead (por ejemplo, con una herramienta HTTP).",
-      "lesson": "Un bot de mensajería tiene tres capas: la puerta al canal, el flujo que decide y el lugar donde un humano retoma la conversación. Para la primera versión no hace falta un framework de agentes: n8n ya puede llamar al modelo.",
+      "lesson": "Un bot de mensajería tiene tres capas: la puerta al canal, el flujo que decide y el lugar donde un humano retoma la conversación. Para la primera versión no hace falta un framework de agentes: Evolution API se integra de forma nativa con Dify, que llama al modelo.",
       "pick_one": [],
       "steps": [
         {
@@ -21955,185 +21922,6 @@
       "discovery_text": " Automatización, negocios y marketing automatizacion negocios marketing crm whatsapp Aplicaciones internas sin código"
     },
     {
-      "id": "awesome-n8n-templates",
-      "name": "Awesome n8n Templates",
-      "cat": 1,
-      "role": "directory",
-      "exec": "local",
-      "setup": "easy",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "automation",
-        "prompts"
-      ],
-      "one": "Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.",
-      "desc": "Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "self-hosted-ai-starter-kit"
-      ],
-      "alt": [],
-      "stack": "n8n;  credenciales y dependencias de la plantilla elegida",
-      "repo_url": "https://github.com/enescingoz/awesome-n8n-templates",
-      "doc": "human/fichas/awesome-n8n-templates.md",
-      "agent_tools": [],
-      "sub": "n8n",
-      "how": "Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API",
-      "why": "Usos propuestos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram.",
-      "cases": [
-        "Estudiar una plantilla que clasifica correo con Ollama",
-        "Adaptar una alerta de precio que avisa por Telegram"
-      ],
-      "gh": "enescingoz/awesome-n8n-templates",
-      "limits": "Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API",
-      "getting_started": {
-        "kind": "reference",
-        "audience": "reading",
-        "entry_url": "",
-        "prerequisites": [
-          " credenciales y dependencias de la plantilla elegida"
-        ],
-        "steps": [
-          "Importa una plantilla JSON en un flujo desactivado y revisa sus nodos.",
-          "Comprueba: El lienzo muestra los pasos y puedes identificar qué credenciales faltan."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "reference",
-        "source": "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Importa una plantilla JSON en un flujo desactivado y revisa sus nodos",
-        "success": "El lienzo muestra los pasos y puedes identificar qué credenciales faltan",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Estudiar una plantilla que clasifica correo con Ollama",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Adaptar una alerta de precio que avisa por Telegram",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md",
-        "source_blob_sha": "358bb3a191c84b1ad657c4e819f5319e33a5e7e6",
-        "previous_source_blob_sha": "358bb3a191c84b1ad657c4e819f5319e33a5e7e6",
-        "previous_category": [
-          1,
-          "n8n"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "access": {
-        "mode": "reference",
-        "api": "depends",
-        "local_model": "supported",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "choice",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste",
-        "subscription_note": "Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API",
-        "local_note": "Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API",
-        "cost_note": "Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste",
-        "hardware_note": "n8n;  credenciales y dependencias de la plantilla elegida",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md"
-        ],
-        "source_blob_sha": "358bb3a191c84b1ad657c4e819f5319e33a5e7e6",
-        "antigravity": "not_documented"
-      },
-      "routes": [
-        "local_model",
-        "api",
-        "reference"
-      ],
-      "goals": [
-        "automatizar",
-        "aprender"
-      ],
-      "added_at": "2026-11-10",
-      "status": "",
-      "pick": false,
-      "stars": 26416,
-      "license": "NOASSERTION",
-      "homepage": "https://n8n.partnerlinks.io/h1pwwf5m4toe",
-      "combina_con": [
-        {
-          "id": "self-hosted-ai-starter-kit",
-          "motivo": "Entorno local listo (n8n, Ollama, Qdrant) para probar las plantillas de IA sin pagar APIs, cambiando el nodo del modelo por Ollama (combinación por arquitectura).",
-          "orden_instalacion": "Levanta el kit y después importa las plantillas."
-        }
-      ],
-      "que_es": "Colección curada por la comunidad de más de 280 archivos de plantillas de flujo para n8n, actualizada en 2026. No es software ejecutable sino material de referencia; su licencia no está declarada de forma estándar en GitHub y el README contiene enlaces de afiliado.",
-      "que_hace": "Ofrece flujos listos para importar organizados por plataforma: Gmail y email, Telegram, Google Drive y Sheets, WordPress, PDF y documentos, Discord, bases de datos, DevOps, Airtable, Notion, Slack, OpenAI y LLM, WhatsApp y redes sociales. Sirve para aprender patrones de n8n o partir de un ejemplo en lugar de empezar desde cero.",
-      "como_lo_hace": "Cada plantilla es un archivo JSON de flujo de n8n que se importa con «Workflows → Import from File»; después hay que configurar las credenciales de cada servicio y probar el flujo. El propio README advierte que debes revisar, configurar y probar cada flujo antes de usarlo.",
-      "descripcion_notas": "Las plantillas son de terceros: revisa qué datos envían y a qué servicios antes de conectar credenciales reales.",
-      "descripcion_fuentes": [
-        "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md",
-        "https://github.com/czlonkowski/n8n-mcp/blob/main/README.md"
-      ],
-      "descripcion_revision": {
-        "batch": "01-automatizacion-mensajeria",
-        "checked_at": "2026-11-15",
-        "status": "source_reviewed",
-        "installation_tested": false
-      },
-      "descripcion_github": {
-        "name_with_owner": "enescingoz/awesome-n8n-templates",
-        "archived": false,
-        "pushed_at": "2026-09-12",
-        "license": "no estándar (NOASSERTION)",
-        "checked_at": "2026-11-15"
-      },
-      "lead": "Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.",
-      "body": "Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.",
-      "install": {
-        "command": "Consultar el material original; elegir un ejemplo antes de instalar.",
-        "confidence": "clone",
-        "note": "Una referencia no se instala como un servicio único."
-      },
-      "alt_refs": [],
-      "combine_refs": [
-        {
-          "id": "self-hosted-ai-starter-kit",
-          "label": "self-hosted-ai-starter-kit"
-        }
-      ],
-      "areas": [
-        "automatizacion"
-      ],
-      "topics": [
-        "negocio-n8n"
-      ],
-      "discovery_text": " Automatización, negocios y marketing automatizacion negocios marketing crm whatsapp n8n: plantillas, skills y conectores"
-    },
-    {
       "id": "budibase",
       "name": "Budibase",
       "cat": 1,
@@ -22966,7 +22754,6 @@
       "descripcion_notas": "Alternativas (elige una): appsmith, budibase.",
       "descripcion_fuentes": [
         "https://github.com/nocodb/nocodb/blob/develop/README.md",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb/",
         "https://www.activepieces.com/pieces/nocodb",
         "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/nocodb",
         "https://github.com/coollabsio/coolify/tree/main/templates/compose"
@@ -23232,211 +23019,6 @@
         "negocio-flujos"
       ],
       "discovery_text": " Automatización, negocios y marketing automatizacion negocios marketing crm whatsapp Automatización y flujos"
-    },
-    {
-      "id": "self-hosted-ai-starter-kit",
-      "name": "Self-hosted AI Starter Kit",
-      "cat": 1,
-      "role": "platform",
-      "exec": "local",
-      "setup": "medium",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "automation",
-        "local",
-        "rag",
-        "docker"
-      ],
-      "one": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
-      "desc": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "open-webui",
-        "docling",
-        "awesome-n8n-templates"
-      ],
-      "alt": [],
-      "stack": "Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado",
-      "repo_url": "https://github.com/n8n-io/self-hosted-ai-starter-kit",
-      "doc": "human/fichas/self-hosted-ai-starter-kit.md",
-      "agent_tools": [],
-      "sub": "n8n",
-      "how": "El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos",
-      "why": "Usos propuestos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial.",
-      "cases": [
-        "Probar un asistente local que responde preguntas sobre material de ejemplo",
-        "Explorar cómo se conectan n8n, Ollama y una base vectorial"
-      ],
-      "gh": "n8n-io/self-hosted-ai-starter-kit",
-      "limits": "El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos",
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Docker Compose",
-          " memoria y almacenamiento para el modelo",
-          " archivo .env preparado"
-        ],
-        "steps": [
-          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git\ncd self-hosted-ai-starter-kit\ncp .env.example .env # you should update secrets and passwords inside\ndocker compose --profile cpu up",
-        "command_language": "bash",
-        "command_status": "documented",
-        "source": "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Abre n8n y ejecuta el flujo local incluido con una pregunta sencilla",
-        "success": "El flujo devuelve una respuesta usando el servicio Ollama del stack",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Probar un asistente local que responde preguntas sobre material de ejemplo",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Explorar cómo se conectan n8n, Ollama y una base vectorial",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md",
-        "source_blob_sha": "aeb222095ef5ca1d300ff0e84fad38afaf77f77e",
-        "previous_source_blob_sha": "aeb222095ef5ca1d300ff0e84fad38afaf77f77e",
-        "previous_category": [
-          1,
-          "n8n"
-        ],
-        "category_verdict": "confirmed",
-        "note": "El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "access": {
-        "mode": "software",
-        "api": "not_required",
-        "local_model": "supported",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "no_model_fee",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía",
-        "subscription_note": "El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos",
-        "local_note": "El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos",
-        "cost_note": "La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía",
-        "hardware_note": "Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md"
-        ],
-        "source_blob_sha": "aeb222095ef5ca1d300ff0e84fad38afaf77f77e",
-        "antigravity": "not_documented"
-      },
-      "routes": [
-        "no_api",
-        "local_model"
-      ],
-      "goals": [
-        "automatizar"
-      ],
-      "added_at": "2026-11-10",
-      "status": "",
-      "pick": true,
-      "stars": 15361,
-      "license": "Apache-2.0",
-      "homepage": "https://n8n.io",
-      "combina_con": [
-        {
-          "id": "open-webui",
-          "motivo": "Añade una interfaz de chat que reutiliza el Ollama del kit para conversar con los mismos modelos (combinación por arquitectura).",
-          "orden_instalacion": "Kit primero; inicia Open WebUI con `OLLAMA_BASE_URL` apuntando al Ollama del kit y en un puerto distinto de 5678."
-        },
-        {
-          "id": "docling",
-          "motivo": "Convierte PDF y documentos de oficina en Markdown limpio antes de vectorizarlos en el Qdrant del kit (combinación por arquitectura).",
-          "orden_instalacion": "Instala Docling o docling-serve aparte y llámalo desde n8n por HTTP o desde un script."
-        },
-        {
-          "id": "awesome-n8n-templates",
-          "motivo": "Colección de flujos importables para aprender patrones sobre el n8n del kit.",
-          "orden_instalacion": "Después de levantar el kit; importa, revisa credenciales y prueba cada plantilla antes de activarla."
-        }
-      ],
-      "que_es": "Plantilla de Docker Compose de código abierto (Apache 2.0) mantenida por el equipo de n8n para levantar en minutos un entorno local de IA y low-code. No es una aplicación nueva: reúne servicios existentes ya configurados para funcionar juntos.",
-      "que_hace": "Arranca n8n autoalojado junto con Ollama para modelos locales, Qdrant como base vectorial y PostgreSQL. Sirve para prototipar agentes de IA que agendan citas, resumir PDF de la empresa sin enviar datos fuera, crear bots de Slack más útiles o analizar documentos financieros privados a bajo coste. Es un punto de partida para pruebas, no un despliegue endurecido para producción.",
-      "como_lo_hace": "Se clona el repositorio, se copia `.env.example` a `.env` (cambiando secretos y contraseñas) y se ejecuta `docker compose` con el perfil adecuado: `gpu-nvidia`, `gpu-amd` en Linux o solo CPU. En Mac con Apple Silicon la GPU no se expone a Docker, así que se recomienda CPU o ejecutar Ollama de forma nativa y ajustar `OLLAMA_HOST`. Incluye una carpeta compartida para que los flujos de n8n lean archivos locales y un flujo de demostración.",
-      "descripcion_notas": "Ya incluye n8n, Ollama, Qdrant y PostgreSQL: no instales esos servicios por separado en la misma máquina o chocarán los puertos (5678, 11434, 6333, 5432). Cambia todas las contraseñas de `.env`.",
-      "descripcion_fuentes": [
-        "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md"
-      ],
-      "descripcion_revision": {
-        "batch": "01-automatizacion-mensajeria",
-        "checked_at": "2026-11-15",
-        "status": "source_reviewed",
-        "installation_tested": false
-      },
-      "descripcion_github": {
-        "name_with_owner": "n8n-io/self-hosted-ai-starter-kit",
-        "archived": false,
-        "pushed_at": "2026-11-12",
-        "license": "Apache-2.0",
-        "checked_at": "2026-11-15"
-      },
-      "lead": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
-      "body": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
-      "install": {
-        "command": "git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git\ncd self-hosted-ai-starter-kit\ncp .env.example .env # you should update secrets and passwords inside\ndocker compose --profile cpu up",
-        "confidence": "ok",
-        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
-      },
-      "alt_refs": [],
-      "combine_refs": [
-        {
-          "id": "open-webui",
-          "label": "open-webui"
-        },
-        {
-          "id": "docling",
-          "label": "docling"
-        },
-        {
-          "id": "awesome-n8n-templates",
-          "label": "awesome-n8n-templates"
-        }
-      ],
-      "areas": [
-        "automatizacion",
-        "ia-local"
-      ],
-      "topics": [
-        "negocio-flujos",
-        "negocio-n8n",
-        "local-motores"
-      ],
-      "discovery_text": " Automatización, negocios y marketing automatizacion negocios marketing crm whatsapp Automatización y flujos n8n: plantillas, skills y conectores IA local, modelos y entrenamiento ia local modelos locales offline modelos abiertos Motores para modelos locales"
     },
     {
       "id": "tooljet",
@@ -31616,7 +31198,7 @@
       "que_es": "Plataforma de Significant-Gravitas para crear, desplegar y gestionar agentes de IA ('Experts') que automatizan flujos de trabajo. La licencia es mixta: `autogpt_platform/` usa Polyform Shield, que no es OSI y prohíbe competir con el producto, y `classic/` y el resto del repo son MIT. La plataforma está en beta (autogpt-platform-beta-v0.11.3), con ~188k estrellas heredadas del AutoGPT original.",
       "que_hace": "Ofrece 'Experts', agentes con rol configurable mediante instrucciones, contexto, skills y apps conectadas, que pueden partir de plantillas. Tiene un constructor visual de bloques con lógica de ramificación, integraciones con herramientas de terceros, y una API y servidor MCP para lanzar workflows desde código o desde un agente de programación. El AutoGPT original sigue en `classic/` (con Forge y agbenchmark), separado de la plataforma.",
       "como_lo_hace": "La plataforma se puede usar en la nube (agpt.co) o autoalojada (frontend y backend en Python con Docker, según su documentación). La documentación de la plataforma incluye una guía para usar modelos locales con Ollama. Antes de desplegarla en una empresa hay que revisar la licencia Polyform Shield.",
-      "descripcion_notas": "Alternativas (elige una): sim, langflow. Combinación anterior con n8n eliminada: sin integración documentada. Licencia: Polyform Shield en la plataforma (no es open source OSI).",
+      "descripcion_notas": "Alternativas (elige una): sim, langflow. Licencia: Polyform Shield en la plataforma (no es open source OSI).",
       "descripcion_fuentes": [
         "https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md",
         "https://agpt.co/docs/platform/api-and-integrations/api-guide",
@@ -39008,7 +38590,7 @@
       "combina_con": [
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos.",
           "orden_instalacion": "firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces."
         },
         {
@@ -39426,7 +39008,7 @@
       "combina_con": [
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `jina-ai` para usar Jina Reader en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `jina-ai` para usar Jina Reader en flujos.",
           "orden_instalacion": "Jina Reader en marcha con sus credenciales; después añade la pieza `jina-ai` en un flujo de Activepieces."
         },
         {
@@ -39446,7 +39028,6 @@
       "descripcion_notas": "Alternativas (elige una): firecrawl, crawl4ai.",
       "descripcion_fuentes": [
         "https://github.com/jina-ai/reader/blob/main/README.md",
-        "https://n8n.io/integrations/jina-ai/",
         "https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina",
         "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/jina-ai"
       ],
@@ -50712,7 +50293,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos.",
           "orden_instalacion": "Qdrant en marcha con sus credenciales; después añade la pieza `qdrant` en un flujo de Activepieces."
         },
         {
@@ -50738,7 +50319,6 @@
       "descripcion_fuentes": [
         "https://github.com/qdrant/qdrant/blob/master/README.md",
         "https://qdrant.tech/documentation/data-management/docling/",
-        "https://qdrant.tech/documentation/frameworks/n8n/",
         "https://qdrant.tech/documentation/frameworks/llama-index/",
         "https://qdrant.tech/documentation/frameworks/langchain/",
         "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/qdrant"
@@ -52489,7 +52069,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos.",
           "orden_instalacion": "GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces."
         }
       ],
@@ -67550,7 +67130,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos.",
           "orden_instalacion": "Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces."
         }
       ],
@@ -68386,7 +67966,7 @@
       "combina_con": [
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos.",
           "orden_instalacion": "Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces."
         },
         {
@@ -68608,7 +68188,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos.",
           "orden_instalacion": "posthog en marcha con sus credenciales; después añade la pieza `posthog` en un flujo de Activepieces."
         },
         {
@@ -68624,7 +68204,6 @@
       "descripcion_fuentes": [
         "https://github.com/PostHog/posthog/blob/master/README.md",
         "https://posthog.com/docs/model-context-protocol",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.posthog/",
         "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/posthog"
       ],
       "descripcion_revision": {
@@ -69477,7 +69056,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `umami` para usar Umami en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `umami` para usar Umami en flujos.",
           "orden_instalacion": "Umami en marcha con sus credenciales; después añade la pieza `umami` en un flujo de Activepieces."
         }
       ],
@@ -84433,8 +84012,7 @@
       "descripcion_fuentes": [
         "https://github.com/bitwarden/clients/blob/main/README.md",
         "https://github.com/bitwarden/clients/blob/main/LICENSE.txt",
-        "https://bitwarden.com/help/self-host-an-organization/",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitwarden/"
+        "https://bitwarden.com/help/self-host-an-organization/"
       ],
       "descripcion_revision": {
         "batch": "18-personal-notas-parte-1",
@@ -85090,8 +84668,7 @@
         "https://www.home-assistant.io/installation/",
         "https://www.home-assistant.io/integrations/ollama/",
         "https://www.home-assistant.io/integrations/mcp_server/",
-        "https://www.home-assistant.io/integrations/mcp/",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.homeassistant/"
+        "https://www.home-assistant.io/integrations/mcp/"
       ],
       "descripcion_revision": {
         "batch": "18-personal-notas-parte-1",
@@ -87991,7 +87568,6 @@
         "https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html",
         "https://apps.nextcloud.com/apps/integration_openai",
         "https://coolify.io/docs/services/nextcloud",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nextcloud/",
         "https://www.home-assistant.io/integrations/nextcloud/"
       ],
       "descripcion_revision": {
@@ -95459,7 +95035,7 @@
         {
           "id": "typebot",
           "motivo": "Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura).",
-          "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de n8n."
+          "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill."
         }
       ],
       "que_es": "WAHA («WhatsApp HTTP API») es una API REST de WhatsApp que instalas en tu propio servidor, de devlike.pro, con licencia Apache 2.0. Desde la versión 2026.6 las funciones de la antigua edición «Plus» están incluidas en la imagen principal.",
@@ -95469,7 +95045,6 @@
       "descripcion_fuentes": [
         "https://github.com/devlikeapro/waha/blob/core/README.md",
         "https://waha.devlike.pro/docs/how-to/engines/",
-        "https://waha.devlike.pro/docs/integrations/n8n/",
         "https://waha.devlike.pro/docs/apps/chatwoot/"
       ],
       "descripcion_revision": {
@@ -96312,8 +95887,7 @@
       "que_hace": "Permite publicar tipos de evento, compartir enlaces de reserva, conectar calendarios y recibir citas sin cuenta ni clave de licencia de Cal.com. Respecto a Cal.com elimina equipos, organizaciones, Insights, Workflows, SSO/SAML y otras funciones EE. Las integraciones disponibles requieren credenciales propias de cada servicio.",
       "como_lo_hace": "Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior; requiere Node.js 18 o superior y se recomienda Yarn. Se instala clonando el repositorio, instalando paquetes con yarn y configurando variables de entorno, o con la imagen Docker `calcom/cal.diy`.",
       "descripcion_fuentes": [
-        "https://github.com/calcom/cal.diy/blob/main/README.md",
-        "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/"
+        "https://github.com/calcom/cal.diy/blob/main/README.md"
       ],
       "descripcion_revision": {
         "batch": "02-crm-ventas-marketing",
@@ -96502,7 +96076,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos.",
           "orden_instalacion": "chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces."
         },
         {
@@ -97130,8 +96704,7 @@
       "como_lo_hace": "Se basa en Frappe Framework, un framework web completo en Python y JavaScript con capa de abstracción de base de datos, autenticación y API REST, y en Frappe UI (Vue) para la interfaz. Para autoalojar se usa `frappe_docker` con Docker y Docker Compose v2; el entorno rápido es solo de evaluación y no admite apps personalizadas, por lo que para producción se sigue la guía completa. Frappe Cloud gestiona instalación, actualizaciones y copias.",
       "descripcion_notas": "Alternativa (elige una): odoo.",
       "descripcion_fuentes": [
-        "https://github.com/frappe/erpnext/blob/develop/README.md",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext/"
+        "https://github.com/frappe/erpnext/blob/develop/README.md"
       ],
       "descripcion_revision": {
         "batch": "02-crm-ventas-marketing",
@@ -97520,7 +97093,7 @@
       "combina_con": [
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos.",
           "orden_instalacion": "mautic en marcha con sus credenciales; después añade la pieza `mautic` en un flujo de Activepieces."
         },
         {
@@ -97540,7 +97113,6 @@
       "descripcion_notas": "Se solapa con listmonk en envío masivo de email; usa uno como canal principal de boletines.",
       "descripcion_fuentes": [
         "https://github.com/mautic/mautic/blob/7.x/README.md",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/",
         "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/mautic"
       ],
       "descripcion_revision": {
@@ -97925,7 +97497,7 @@
       "combina_con": [
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos.",
           "orden_instalacion": "Odoo en marcha con sus credenciales; después añade la pieza `odoo` en un flujo de Activepieces."
         },
         {
@@ -97941,13 +97513,12 @@
       ],
       "que_es": "Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.",
       "que_hace": "Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, facturación y contabilidad, punto de venta, recursos humanos, marketing y fabricación. Cada app funciona sola, pero al instalar varias se integran en un ERP completo. Casos típicos: gestión comercial y de inventario de pymes, facturación y tienda en línea conectadas.",
-      "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].",
+      "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones de terceros, como la pieza `odoo` de Activepieces [DATO NO VERIFICADO: protocolo exacto según versión].",
       "descripcion_notas": "Alternativa (elige una): erpnext. Algunas apps solo existen en la edición Enterprise.",
       "descripcion_fuentes": [
         "https://github.com/odoo/odoo/blob/20.0/README.md",
         "https://github.com/odoo/odoo/blob/20.0/LICENSE",
         "https://www.odoo.com/documentation/19.0/administration/on_premise/source.html",
-        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/",
         "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo"
       ],
       "descripcion_revision": {
@@ -98349,7 +97920,7 @@
       "combina_con": [
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos.",
           "orden_instalacion": "postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces."
         },
         {
@@ -98774,13 +98345,13 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos.",
           "orden_instalacion": "twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces."
         },
         {
           "id": "evolution-api",
-          "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura).",
-          "orden_instalacion": "Evolution API y n8n primero; después el flujo que escribe en Twenty."
+          "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura).",
+          "orden_instalacion": "Evolution API y Activepieces primero; después el flujo que escribe en Twenty."
         },
         {
           "id": "cal.diy",
@@ -115523,7 +115094,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos.",
           "orden_instalacion": "supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces."
         },
         {
@@ -154427,7 +153998,7 @@
         },
         {
           "id": "activepieces",
-          "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos (sustituye a la antigua combinación con n8n).",
+          "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos.",
           "orden_instalacion": "Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces."
         }
       ],

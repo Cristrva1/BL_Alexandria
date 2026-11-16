@@ -31,7 +31,6 @@
     "https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html",
     "https://apps.nextcloud.com/apps/integration_openai",
     "https://coolify.io/docs/services/nextcloud",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nextcloud/",
     "https://www.home-assistant.io/integrations/nextcloud/"
    ],
    "github": {
@@ -146,8 +145,7 @@
    "fuentes": [
     "https://github.com/bitwarden/clients/blob/main/README.md",
     "https://github.com/bitwarden/clients/blob/main/LICENSE.txt",
-    "https://bitwarden.com/help/self-host-an-organization/",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitwarden/"
+    "https://bitwarden.com/help/self-host-an-organization/"
    ],
    "github": {
     "name_with_owner": "bitwarden/clients",
@@ -223,8 +221,7 @@
     "https://www.home-assistant.io/installation/",
     "https://www.home-assistant.io/integrations/ollama/",
     "https://www.home-assistant.io/integrations/mcp_server/",
-    "https://www.home-assistant.io/integrations/mcp/",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.homeassistant/"
+    "https://www.home-assistant.io/integrations/mcp/"
    ],
    "github": {
     "name_with_owner": "home-assistant/core",

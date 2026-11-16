@@ -6,11 +6,11 @@
   "odoo": {
    "que_es": "Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.",
    "que_hace": "Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, facturación y contabilidad, punto de venta, recursos humanos, marketing y fabricación. Cada app funciona sola, pero al instalar varias se integran en un ERP completo. Casos típicos: gestión comercial y de inventario de pymes, facturación y tienda en línea conectadas.",
-   "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].",
+   "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones de terceros, como la pieza `odoo` de Activepieces [DATO NO VERIFICADO: protocolo exacto según versión].",
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos.",
      "orden_instalacion": "Odoo en marcha con sus credenciales; después añade la pieza `odoo` en un flujo de Activepieces."
     },
     {
@@ -29,7 +29,6 @@
     "https://github.com/odoo/odoo/blob/20.0/README.md",
     "https://github.com/odoo/odoo/blob/20.0/LICENSE",
     "https://www.odoo.com/documentation/19.0/administration/on_premise/source.html",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo"
    ],
    "github": {
@@ -53,13 +52,13 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos.",
      "orden_instalacion": "twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces."
     },
     {
      "id": "evolution-api",
-     "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura).",
-     "orden_instalacion": "Evolution API y n8n primero; después el flujo que escribe en Twenty."
+     "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura).",
+     "orden_instalacion": "Evolution API y Activepieces primero; después el flujo que escribe en Twenty."
     },
     {
      "id": "cal.diy",
@@ -105,8 +104,7 @@
    ],
    "notas": "Alternativa (elige una): odoo.",
    "fuentes": [
-    "https://github.com/frappe/erpnext/blob/develop/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext/"
+    "https://github.com/frappe/erpnext/blob/develop/README.md"
    ],
    "github": {
     "name_with_owner": "frappe/erpnext",
@@ -199,7 +197,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos.",
      "orden_instalacion": "mautic en marcha con sus credenciales; después añade la pieza `mautic` en un flujo de Activepieces."
     },
     {
@@ -216,7 +214,6 @@
    "notas": "Se solapa con listmonk en envío masivo de email; usa uno como canal principal de boletines.",
    "fuentes": [
     "https://github.com/mautic/mautic/blob/7.x/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/mautic"
    ],
    "github": {
@@ -251,8 +248,7 @@
     }
    ],
    "fuentes": [
-    "https://github.com/calcom/cal.diy/blob/main/README.md",
-    "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/"
+    "https://github.com/calcom/cal.diy/blob/main/README.md"
    ],
    "github": {
     "name_with_owner": "calcom/cal.diy",
@@ -376,7 +372,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos.",
      "orden_instalacion": "postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces."
     },
     {

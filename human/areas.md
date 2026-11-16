@@ -2,7 +2,7 @@
 
 # Categorías y subcategorías prácticas
 
-13 áreas de trabajo y 3 colecciones de configuración, con 99 subcategorías.
+13 áreas de trabajo y 3 colecciones de configuración, con 98 subcategorías.
 
 Elige un área, después una tarea y por último una ficha. Un repositorio puede servir en varias áreas; conserva una sola identidad y ficha. Los recuentos por área no se suman para obtener el total de proyectos.
 
@@ -14,9 +14,9 @@ Elige un área, después una tarea y por último una ficha. Un repositorio puede
 | [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Credenciales y privacidad, Aprender ciberseguridad | 30 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 89 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 21 |
-| [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, n8n: plantillas, skills y conectores, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 44 |
+| [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 42 |
 | [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 102 |
-| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 48 |
+| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 47 |
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 51 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 28 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 31 |

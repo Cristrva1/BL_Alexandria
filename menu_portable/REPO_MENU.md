@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 625 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 623 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **625 repos** de IA y
+proyecto concreto. Tienes un menú curado de **623 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -216,18 +216,16 @@ Formato: `id` [role|exec|setup|inst] — one — tags:… — prov:… — tools
 - `guia` [D|loc|E|?] — Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo. — tags: learning
 - `tools` [D|loc|E|?] — Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar. — tags: skills
 
-### 1. Automatizar procesos y crear herramientas internas (12)
+### 1. Automatizar procesos y crear herramientas internas (10)
 Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.md`
 
 - `activepieces` [P|hyb|M|?] — Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flu — tags: automation,typescript,docker
 - `appsmith` [P|loc|M|?] — Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. — tags: ui,automation,typescript,docker — alt: tooljet,budibase,nocodb
-- `awesome-n8n-templates` [D|loc|E|?] — Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. — tags: automation,prompts
 - `budibase` [P|loc|M|?] — Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. — tags: automation,agents,docker — alt: appsmith,tooljet,nocodb
 - `huginn` [P|loc|M|+] — Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como u — tags: automation,ruby,docker — alt: node-red
 - `kestra` [P|loc|M|+] — Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. — tags: automation,data,java,docker — alt: windmill,trigger-dev
 - `nocodb` [P|loc|E|+] — Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas. — tags: data,automation,docker — alt: appsmith,budibase
 - `node-red` [P|loc|E|?] — Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. — tags: automation,javascript,docker — alt: huginn
-- `self-hosted-ai-starter-kit` [P|loc|M|+] — Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. — tags: automation,local,rag,docker
 - `tooljet` [P|loc|M|?] — Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. — tags: ui,automation,docker — alt: appsmith,budibase
 - `trigger-dev` [P|hyb|M|?] — Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. — tags: automation,agents,typescript — alt: windmill,kestra
 - `windmill` [P|loc|M|+] — Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. — tags: automation,agents,rust,docker — alt: kestra,trigger-dev

@@ -27,8 +27,8 @@ Backend NestJS en TypeScript con BullMQ, PostgreSQL y Redis, y frontend en React
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Claude Code](claude-code.md) | Twenty publica skills oficiales para que un agente de código cree objetos, vistas y lógica de apps del CRM. | Instala la CLI de Twenty y las skills; inicia sesión en tu espacio con `twenty auth login` antes de publicar. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos (sustituye a la antigua combinación con n8n). | twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces. |
-| [evolution-api](evolution-api.md) | Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura). | Evolution API y n8n primero; después el flujo que escribe en Twenty. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos. | twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces. |
+| [evolution-api](evolution-api.md) | Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura). | Evolution API y Activepieces primero; después el flujo que escribe en Twenty. |
 | [cal.diy](cal-diy.md) | Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio). | Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty. |
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada twenty/v2.58.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

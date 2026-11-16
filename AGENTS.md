@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**623 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **99 subcategorías**
+**621 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -75,7 +75,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 <!-- BL:AGENT_CATEGORIES -->
 | # | Categoría | Repos | Subcategorías | Archivo |
 |---:|---|---:|---|---|
-| 1 | 🤖 Automatizar procesos y crear herramientas internas | 12 | Motores de workflow y automatización, Ecosistema n8n, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 1 | 🤖 Automatizar procesos y crear herramientas internas | 10 | Motores de workflow y automatización, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
 | 2 | 🧠 Skills, plugins y métodos para agentes | 30 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
 | 3 | 🕸️ Construir agentes y coordinar equipos de IA | 30 | Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
 | 4 | 🕷️ Buscar, extraer y monitorear información web | 20 | Crawlers y extracción para IA, Scraping guiado por LLM, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |

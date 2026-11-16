@@ -34,7 +34,7 @@ Está escrito en Python (asyncio). La instalación recomendada es Home Assistant
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2026.11.1 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/home-assistant/core/blob/dev/README.rst) · [2](https://www.home-assistant.io/installation/) · [3](https://www.home-assistant.io/integrations/ollama/) · [4](https://www.home-assistant.io/integrations/mcp_server/) · [5](https://www.home-assistant.io/integrations/mcp/) · [6](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.homeassistant/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/home-assistant/core/blob/dev/README.rst) · [2](https://www.home-assistant.io/installation/) · [3](https://www.home-assistant.io/integrations/ollama/) · [4](https://www.home-assistant.io/integrations/mcp_server/) · [5](https://www.home-assistant.io/integrations/mcp/)</sub>
 
 ## Acceso, coste y equipo
 

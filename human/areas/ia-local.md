@@ -4,7 +4,7 @@
 
 Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
 
-48 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
+47 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
 
 ## Opciones para empezar
 
@@ -43,7 +43,7 @@ Interfaces de conversación y espacios de trabajo con tus fuentes.
 
 Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
-[Explorar 11 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-motores)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-motores)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -56,7 +56,6 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 | [LocalAI](../fichas/localai.md) | Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. | Sin clave propia de API de IA en la ruta básica |
 | [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [Ollama](../fichas/ollama.md) | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. | API de IA opcional |
-| [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 | [transformers.js](../fichas/transformers-js.md) | Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. | Sin clave propia de API de IA en la ruta básica |
 
 ### Modelos abiertos y pesos

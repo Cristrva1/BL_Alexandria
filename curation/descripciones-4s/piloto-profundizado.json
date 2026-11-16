@@ -50,7 +50,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos.",
      "orden_instalacion": "chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces."
     },
     {
@@ -294,7 +294,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos.",
      "orden_instalacion": "Qdrant en marcha con sus credenciales; después añade la pieza `qdrant` en un flujo de Activepieces."
     },
     {
@@ -317,7 +317,6 @@
    "fuentes": [
     "https://github.com/qdrant/qdrant/blob/master/README.md",
     "https://qdrant.tech/documentation/data-management/docling/",
-    "https://qdrant.tech/documentation/frameworks/n8n/",
     "https://qdrant.tech/documentation/frameworks/llama-index/",
     "https://qdrant.tech/documentation/frameworks/langchain/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/qdrant"

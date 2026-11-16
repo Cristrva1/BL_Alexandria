@@ -64,36 +64,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supabase`, `activepieces`, `metabase`
 **Alternativas (elige una):** `tooljet`, `budibase`, `nocodb`
 
-## `awesome-n8n-templates`
-role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=automation,prompts
-
-**Qué es:** Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.
-**Stack:** n8n;  credenciales y dependencias de la plantilla elegida
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
-- Coste: El coste depende del proveedor o la ruta. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste
-- Equipo: Preparación según la ruta elegida. n8n;  credenciales y dependencias de la plantilla elegida
-**Repo:** https://github.com/enescingoz/awesome-n8n-templates
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Importa una plantilla JSON en un flujo desactivado y revisa sus nodos
-**Qué comprobar:** El lienzo muestra los pasos y puedes identificar qué credenciales faltan
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `self-hosted-ai-starter-kit`
-
 ## `budibase`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,docker
 
@@ -259,39 +229,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `home-assistant`, `ollama`, `grafana`
 **Alternativas (elige una):** `huginn`
-
-## `self-hosted-ai-starter-kit`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,local,rag,docker
-
-**Qué es:** Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.
-**Stack:** Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
-- Coste: Sin pago a un modelo en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía
-- Equipo: Preparación según la ruta elegida. Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado
-**Repo:** https://github.com/n8n-io/self-hosted-ai-starter-kit
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
-cp .env.example .env # you should update secrets and passwords inside
-docker compose --profile cpu up
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre n8n y ejecuta el flujo local incluido con una pregunta sencilla
-**Qué comprobar:** El flujo devuelve una respuesta usando el servicio Ollama del stack
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-webui`, `docling`, `awesome-n8n-templates`
 
 ## `tooljet`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=ui,automation,docker

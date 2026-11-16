@@ -26,7 +26,7 @@ Monorepo en TypeScript con Next.js (React), NestJS, Temporal para flujos y Prism
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos (sustituye a la antigua combinación con n8n). | postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos. | postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces. |
 | [Claude Code](claude-code.md) | Servidor MCP de Postiz para que un agente programe y gestione publicaciones. | Postiz con canales conectados; luego registra el MCP en el agente. |
 | [coolify](coolify.md) | Ruta de despliegue citada en el README. | Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque. |
 

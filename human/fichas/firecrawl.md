@@ -26,7 +26,7 @@ Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker seg
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos (sustituye a la antigua combinación con n8n). | firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos. | firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces. |
 | [Claude Code](claude-code.md) | Dar al agente scraping y búsqueda con el servidor MCP oficial firecrawl-mcp. | Añade `firecrawl-mcp` a la configuración MCP con tu clave. |
 | [gpt-researcher](gpt-researcher.md) | Usar Firecrawl como scraper de GPT Researcher, documentado en su guía de scraping. | Define el scraper Firecrawl y su clave en la configuración de GPT Researcher. |
 
