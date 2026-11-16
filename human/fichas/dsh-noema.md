@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plugin de código abierto (MIT) de ZSeven-W que añade memoria a largo plazo a DeepSeek Harness usando Noema, un sistema de memoria local sin vectores. Proyecto pequeño y reciente, probado con DSH 0.2.0-rc.2 y publicado en npm sin releases en GitHub.
+
+## ¿Qué hace?
+
+Carga contexto relevante al inicio de cada sesión (`noema_recall`) y ofrece búsqueda, navegación y catálogo de memorias. Importa los archivos de memoria de otras diez herramientas (Codex, Claude Code, opencode, Cursor, Grok, WorkBuddy, Antigravity, Trae, Qoder, Hermes) y los guarda como memorias duraderas. Incluye una página de ajustes para gestionar memorias y servidor, y un bucle que reinicia el servidor MCP si falla.
+
+## ¿Cómo lo hace?
+
+Las memorias son archivos Markdown inspeccionables en `NOEMA_ROOT` (por defecto `~/.agent-memory/`), servidos por el proceso hijo `noema-mcp`. La extracción de entidades combina segmentación jieba con señales de nombres propios y términos técnicos. Se instala con `dsh plugin --profile web add @zseven-w/dsh-noema@latest` y se recarga en caliente mediante Cordis HMR.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | `noema_import` lee sus archivos de memoria para migrarlos. | Instala el plugin en DSH y después ejecuta la importación. |
+| [Codex CLI](codex.md) | Fuente de importación soportada. | Igual que arriba. |
+| [hermes-agent](hermes-agent.md) | Fuente de importación soportada. | Igual que arriba. |
+
+**Notas:** Requiere DeepSeek Harness, que no está en el catálogo.
+
+Estado en GitHub: activo · último push 2026-10-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ZSeven-W/dsh-noema/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Importar archivos de memoria de Claude, Codex o Antigravity no es una integración para ejecutar este plugin dentro de esos clientes |
 | Coste | Consumo del agente que ya utilizas. La memoria básica no necesita API propia; el agente anfitrión mantiene sus costes |
 | Equipo | Preparación según la ruta elegida. DeepSeek Harness compatible; plugin Noema; directorio de prueba |
-
-Importar archivos de memoria de Claude, Codex o Antigravity no es una integración para ejecutar este plugin dentro de esos clientes
-
-## Qué puedes hacer con él
-
-Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración.
-
-## Por qué destaca
-
-Usos propuestos: Dar memoria a DeepSeek Harness; Importar una nota propia de otro agente.
-
-## Cómo funciona
 
 Importar archivos de memoria de Claude, Codex o Antigravity no es una integración para ejecutar este plugin dentro de esos clientes
 

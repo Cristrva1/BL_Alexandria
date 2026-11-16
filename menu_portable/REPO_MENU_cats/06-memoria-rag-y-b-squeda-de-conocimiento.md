@@ -60,7 +60,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra una decisión ficticia y búscala desde otro cliente conectado al mismo servidor
 **Qué comprobar:** Puedes inspeccionar el recuerdo y confirmar que ambos clientes usan la misma instancia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mem0`, `ruflo`
+**Combina con:** `claude-code`, `gemini-cli`, `hermes-agent`
 **Alternativas (elige una):** `engram`, `supermemory`, `claude-mem`
 
 ## `chroma`
@@ -122,7 +122,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una decisión ficticia en una sesión y consulta si se recupera en una nueva
 **Qué comprobar:** Puedes distinguir captura, resumen y recuperación y ver qué proveedor los produjo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `superpowers`
+**Combina con:** `claude-code`, `codex`, `opencode`
 **Alternativas (elige una):** `engram`, `agentmemory`
 
 ## `cognee`
@@ -153,7 +153,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda un hecho ficticio con remember y recupéralo con recall sin configurar una clave LLM
 **Qué comprobar:** Se devuelve el texto de origen y no una respuesta inventada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qdrant`, `mcp-neo4j`
+**Combina con:** `claude-code`, `codex`, `openclaw`
 **Alternativas (elige una):** `graphiti`, `mem0`, `graphrag`, `letta`
 
 ## `dsh-noema`
@@ -184,6 +184,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda un recuerdo ficticio desde DSH y comprueba que puedes verlo y eliminarlo desde ajustes
 **Qué comprobar:** El recuerdo persiste y el panel muestra su contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `hermes-agent`
 
 ## `engram`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=memory,mcp,coding-agent,go
@@ -213,7 +214,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda una decisión con su razón y recupérala por palabras clave
 **Qué comprobar:** El registro aparece con contenido y contexto que puedes inspeccionar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`
+**Combina con:** `claude-code`, `opencode`, `gemini-cli`
 **Alternativas (elige una):** `claude-mem`, `agentmemory`
 
 ## `faiss`
@@ -275,7 +276,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade dos hechos con fechas distintas y consulta cuál era válido en cada momento
 **Qué comprobar:** El grafo conserva relaciones temporales y sus fuentes
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-neo4j`
+**Combina con:** `claude-code`, `langgraph`, `mcp-neo4j`
 **Alternativas (elige una):** `cognee`, `graphrag`
 
 ## `graphrag`
@@ -337,7 +338,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el enlace al código actual y crea un agente con una nota de memoria ficticia
 **Qué comprobar:** Puedes recuperar esa nota en una conversación posterior
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `ollama`, `vllm`, `openclaw`
 **Alternativas (elige una):** `mem0`, `cognee`
 
 ## `lightrag`
@@ -400,7 +401,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda dos preferencias de un usuario ficticio y consulta una de ellas por su identificador
 **Qué comprobar:** La búsqueda devuelve la preferencia del usuario correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `crewai`, `langchain`, `agentmemory`
+**Combina con:** `langgraph`, `crewai`, `qdrant`, `hermes-desktop`
 **Alternativas (elige una):** `letta`, `cognee`, `supermemory`
 
 ## `mempalace`
@@ -432,7 +433,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa dos notas propias y busca una decisión con palabras distintas a las originales
 **Qué comprobar:** Puedes abrir el fragmento literal y comprobar su origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-notebook`, `odysseus`
+**Combina con:** `claude-code`, `chroma`, `codex`
 
 ## `milvus`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vector-db,rag,go,docker
@@ -523,7 +524,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una nota de contexto ficticia y consulta cómo se recupera en otra sesión
 **Qué comprobar:** Puedes inspeccionar el documento y la memoria que usa el agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`
+**Combina con:** `claude-code`, `openclaw`, `ollama`
 
 ## `pageindex`
 role=library · exec=cloud · setup=easy · mcp=False · prov=openai · tags=rag,docs,python
@@ -677,7 +678,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una nota de prueba y consulta su contenido desde una segunda sesión
 **Qué comprobar:** Puedes verificar qué se almacenó y en qué instancia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vercel-ai`
+**Combina con:** `claude-code`, `opencode`, `ollama`
 **Alternativas (elige una):** `mem0`, `agentmemory`
 
 ## `turbovec`

@@ -1,0 +1,400 @@
+{
+ "batch": "05-memoria-agentes",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación oficial enlazada; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "claude-mem": {
+   "que_es": "Sistema de memoria persistente de código abierto (Apache 2.0) para agentes de código, de thedotmack. Muy activo (v15.19.0), con servicio en la nube opcional (CMEM Pro / cmem.ai) para copias y memoria alojada.",
+   "que_hace": "Ejecuta un segundo agente junto al tuyo que toma notas mientras trabajas; la siguiente sesión empieza con un índice breve de lo importante y carga los detalles solo cuando hacen falta. Registra sesiones de Claude Code, Codex, Cursor, OpenCode y otros 11 agentes; Copilot CLI, Goose, Roo Code, Warp y Zed solo pueden consultar la memoria. Incluye herramientas de búsqueda MCP, un visor web con observaciones citables por ID, cola de revisión y avisos opcionales a Telegram, Discord o Slack.",
+   "como_lo_hace": "Se instala con `npx claude-mem install`, que detecta los agentes, registra los hooks o plugins, configura el proveedor de IA y arranca un servicio «worker» local con API y visor web. `npm install -g claude-mem` solo instala el SDK y no registra hooks. Algunos entornos (Pi, DeepSeek Harness) usan el runtime del worker y otros, sin hooks, se observan leyendo los archivos de registro del chat.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente principal soportado con hooks nativos para capturar y recuperar memoria.",
+     "orden_instalacion": "Claude Code instalado primero; después `npx claude-mem install` y elige Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "Soportado con plugin nativo (también a través de T3 Code).",
+     "orden_instalacion": "Igual; activa los hooks de Codex si el instalador lo pide."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Agente soportado con registro de sesiones.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "notas": "Alternativas (elige una): engram, agentmemory. Las observaciones pueden contener código o secretos: revisa qué se sincroniza con la nube.",
+   "fuentes": [
+    "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "thedotmack/claude-mem",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v15.19.0 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mem0": {
+   "que_es": "Capa de memoria para asistentes y agentes de IA de Mem0 («mem-zero»), de código abierto (Apache 2.0) con plataforma gestionada de pago. Muy activa; en abril de 2026 publicó un nuevo algoritmo de memoria y su evaluación es reproducible con un marco abierto.",
+   "que_hace": "Recuerda preferencias y contexto a nivel de usuario, sesión y agente para personalizar respuestas. El algoritmo nuevo extrae en una sola pasada y solo añade (no sobrescribe), trata los hechos confirmados por el agente como de primera clase, enlaza entidades y combina recuperación semántica, BM25 y por entidades con razonamiento temporal. Sus cifras publicadas (92,5 en LoCoMo, 94,4 en LongMemEval) corresponden a la plataforma gestionada, que incluye componentes propietarios.",
+   "como_lo_hace": "Se usa como biblioteca (`pip install mem0ai` o `npm install mem0ai`), como servidor autoalojado (`cd server && docker compose up -d`, en el puerto 3000, con autenticación activada por defecto) o en la nube. Tiene CLI (`@mem0/cli` o `mem0-cli`) y SDK multiplataforma; admite varios LLM y bases vectoriales, entre ellos Ollama y Qdrant según su documentación.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Guía oficial para construir un bot con LangGraph y memoria de Mem0.",
+     "orden_instalacion": "Configura Mem0 (biblioteca o servidor) y añade sus llamadas al grafo de LangGraph."
+    },
+    {
+     "id": "crewai",
+     "motivo": "Integración documentada para dar memoria a equipos de agentes de CrewAI.",
+     "orden_instalacion": "Mem0 configurado primero; activa la memoria en la definición del crew."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Base vectorial documentada como almacén de Mem0 en código abierto.",
+     "orden_instalacion": "Qdrant primero; la dimensión de la colección debe coincidir con el modelo de embeddings."
+    },
+    {
+     "id": "hermes-desktop",
+     "motivo": "Hermes Desktop lista Mem0 entre sus proveedores de memoria.",
+     "orden_instalacion": "Clave o servidor de Mem0 listo antes de activarlo en la app."
+    }
+   ],
+   "notas": "Alternativas (elige una): letta, cognee, supermemory. La migración de la v2 a la v3 de código abierto tiene guía propia.",
+   "fuentes": [
+    "https://github.com/mem0ai/mem0/blob/main/README.md",
+    "https://docs.mem0.ai/integrations/langgraph",
+    "https://docs.mem0.ai/integrations/crewai",
+    "https://docs.mem0.ai/components/vectordbs/dbs/qdrant"
+   ],
+   "github": {
+    "name_with_owner": "mem0ai/mem0",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "ts-v3.3.1 (2026-09-25)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mempalace": {
+   "que_es": "Sistema de memoria de IA «local primero» de código abierto (MIT) del proyecto MemPalace, distribuido en PyPI. Muy activo (v3.12.0); avisa de sitios web impostores: solo el repositorio, el paquete de PyPI y su web oficial son legítimos.",
+   "que_hace": "Guarda el historial de conversaciones de forma literal (sin resumir ni parafrasear) y lo recupera con búsqueda semántica, organizado en «alas» (personas y proyectos), «salas» (temas) y «cajones» (contenido original) para acotar las búsquedas. Según su README alcanza 96,6 % R@5 en LongMemEval sin llamadas a API [DATO NO VERIFICADO: benchmark propio]. Puede funcionar como memoria privada local, como «cerebro compartido» o como cliente de un hub existente.",
+   "como_lo_hace": "Paquete Python (`pip install mempalace`) con CLI y servidor MCP, y una imagen de contenedor. El backend de recuperación es intercambiable y por defecto usa ChromaDB. Publica tres skills (`npx skills add MemPalace/mempalace`) para instalación guiada, recuerdo antes de responder y delegación; la skill de instalación configura el MCP pero no lo instala por sí sola. Nada sale de tu máquina salvo que lo actives.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Integración con hooks de autoguardado y MCP; el README advierte que sin hooks las sesiones de Claude Code caducan a los 30 días.",
+     "orden_instalacion": "Instala las skills, deja que el agente configure el MCP y conecta los hooks de autoguardado."
+    },
+    {
+     "id": "chroma",
+     "motivo": "Backend de recuperación por defecto.",
+     "orden_instalacion": "Se usa embebido; solo instala un servidor Chroma aparte si quieres compartirlo."
+    },
+    {
+     "id": "codex",
+     "motivo": "Las skills y el servidor MCP sirven para otros agentes compatibles (combinación por arquitectura).",
+     "orden_instalacion": "Registra el servidor MCP en la configuración de Codex."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/MemPalace/mempalace/blob/develop/README.md"
+   ],
+   "github": {
+    "name_with_owner": "MemPalace/mempalace",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v3.12.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "cognee": {
+   "que_es": "Plataforma de memoria de IA de código abierto (Apache 2.0) de topoteretes que da a los agentes memoria persistente a largo plazo, con artículo de investigación propio. Activa (v1.6.8) y con servicio gestionado Cognee Cloud.",
+   "que_hace": "Convierte documentos, código y conversaciones en un grafo de conocimiento autoalojado que los agentes pueden consultar y mejorar. Casos de uso: un «cerebro de empresa» que une documentación, tickets, código y trabajo de agentes; memoria entre ejecuciones con decisiones y reglas aprendidas; y memoria estructurada con modelos de datos y ontologías propias. Funciona en local sin clave de API usando modelos pequeños en CPU.",
+   "como_lo_hace": "Biblioteca Python 3.10–3.14 (`uv pip install \"cognee[gliner]\"`): sin clave de LLM extrae el grafo con un modelo local (GLiNER) y las etapas que requieren LLM se saltan; con clave usa OpenAI por defecto u otro proveedor. Ofrece plugins de memoria para Claude Code, Codex y OpenClaw, servidor MCP, SDK de TypeScript y Rust, API REST (imagen Docker en el puerto 8000, multiinquilino con autenticación por defecto) y una interfaz local con `cognee-cli -ui`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial de memoria (`claude plugin install cognee-memory@cognee`).",
+     "orden_instalacion": "Instala Cognee y configura el LLM; luego añade el marketplace y el plugin."
+    },
+    {
+     "id": "codex",
+     "motivo": "Plugin oficial para Codex.",
+     "orden_instalacion": "Activa los hooks de Codex primero; después añade el marketplace y el plugin."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Plugin oficial `@cognee/cognee-openclaw`.",
+     "orden_instalacion": "OpenClaw instalado; añade el plugin desde npm."
+    }
+   ],
+   "notas": "Alternativas (elige una): graphiti, mem0, graphrag, letta. En la API, `ENABLE_BACKEND_ACCESS_CONTROL=false` solo para uso local de un usuario.",
+   "fuentes": [
+    "https://github.com/topoteretes/cognee/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "topoteretes/cognee",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.6.8 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "graphiti": {
+   "que_es": "Framework de código abierto (Apache 2.0) de Zep para construir y consultar grafos de contexto temporales para agentes de IA. Activo (v0.31.2); Zep ofrece una plataforma empresarial gestionada sobre el mismo concepto.",
+   "que_hace": "Construye grafos de entidades, relaciones y hechos en los que cada hecho tiene una ventana de validez (cuándo fue cierto y cuándo se sustituyó) y se remonta a los «episodios» de datos originales. Integra de forma incremental interacciones de usuarios y datos estructurados o no, sin recalcular el grafo completo, y consulta por tiempo, significado y relaciones con recuperación híbrida (semántica, palabras clave y recorrido del grafo).",
+   "como_lo_hace": "Biblioteca Python 3.10+ (`pip install graphiti-core`) que necesita una base de grafos: Neo4j 5.26, FalkorDB 1.1.2 o Amazon Neptune con OpenSearch. Usa OpenAI por defecto para LLM y embeddings y funciona mejor con proveedores con salida estructurada (OpenAI, Anthropic, Gemini; también Groq como extra). El repositorio incluye un servidor MCP y un servidor REST.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El servidor MCP del repositorio da memoria de grafo a asistentes compatibles.",
+     "orden_instalacion": "Base de grafos (Neo4j o FalkorDB) y claves de LLM primero; después arranca el servidor MCP y regístralo."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Guía oficial de agente con LangGraph y Graphiti.",
+     "orden_instalacion": "Graphiti con su base de grafos operativa antes de integrarlo en el grafo de LangGraph."
+    },
+    {
+     "id": "mcp-neo4j",
+     "motivo": "Explorar y consultar con un agente el grafo guardado en Neo4j (combinación por arquitectura).",
+     "orden_instalacion": "Usa un usuario de solo lectura para el MCP de Neo4j."
+    }
+   ],
+   "notas": "Alternativas (elige una): cognee, graphrag.",
+   "fuentes": [
+    "https://github.com/getzep/graphiti/blob/main/README.md",
+    "https://help.getzep.com/graphiti/getting-started/mcp-server",
+    "https://help.getzep.com/graphiti/integrations/lang-graph-agent"
+   ],
+   "github": {
+    "name_with_owner": "getzep/graphiti",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.31.2 (2026-10-20)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "supermemory": {
+   "que_es": "Motor de memoria y contexto para IA de Supermemory, que se define como laboratorio de investigación. El repositorio es MIT (servidor en versión 0.0.x) y el servicio principal es una API alojada; afirma ser el n.º 1 en LongMemEval, LoCoMo y ConvoMem [DATO NO VERIFICADO: benchmarks propios].",
+   "que_hace": "Aprende de las conversaciones, extrae hechos, mantiene perfiles de usuario (unos 50 ms por llamada), gestiona actualizaciones y contradicciones y olvida información caducada. Combina RAG y memoria en una sola consulta, sincroniza Google Drive, Gmail, Notion, OneDrive y GitHub, y extrae contenido de PDF, imágenes (OCR), video (transcripción) y código. Da memoria persistente a Claude Code, Cursor, Codex y OpenCode mediante plugins o MCP.",
+   "como_lo_hace": "Ofrece una API única con SDK, un servidor MCP alojado (`https://mcp.supermemory.ai/mcp`, código abierto) y una versión local de un solo binario (`npx supermemory local` o script de instalación) que en el primer arranque prepara su motor de grafos embebido, embeddings locales y una clave de API. Admite cualquier modelo o funcionar sin conexión con Ollama.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin y servidor MCP para memoria persistente entre conversaciones.",
+     "orden_instalacion": "Decide entre la nube y la versión local; después registra el MCP o el plugin."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Agente soportado por plugin o MCP.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "ollama",
+     "motivo": "La versión local puede funcionar sin conexión con Ollama.",
+     "orden_instalacion": "Ollama primero con los modelos; después arranca `supermemory-server`."
+    }
+   ],
+   "notas": "Alternativas (elige una): mem0, agentmemory. Con el MCP alojado los datos se procesan en sus servidores.",
+   "fuentes": [
+    "https://github.com/supermemoryai/supermemory/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "supermemoryai/supermemory",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "server-v0.0.9 (2026-10-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "agentmemory": {
+   "que_es": "Memoria persistente de código abierto (Apache 2.0) para sesiones de programación y agentes, de rohitg00, que se presenta como implementación del patrón «LLM Wiki» de Karpathy con puntuación de confianza, ciclo de vida, grafos y búsqueda híbrida. Muy activo (v0.9.33).",
+   "que_hace": "Captura las sesiones de Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, DeepSeek Harness y cualquier cliente MCP, hace buscables decisiones y arreglos y permite a otro agente retomar historial, lecciones y traspasos. Elimina secretos al capturar, permite reproducir sin conexión y ofrece un visor en vivo para explorar, editar, exportar y olvidar memorias.",
+   "como_lo_hace": "Requiere Node.js 20+; se ejecuta con `npx -y @agentmemory/agentmemory@latest`. Sin clave usa búsqueda por palabras clave (BM25) y coincidencias estructurales del grafo; con embeddings locales o remotos añade búsqueda semántica. La API queda en `localhost:3111` y el visor en `localhost:3113`, ambos solo en loopback por defecto; la configuración vive en `~/.agentmemory/.env`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Captura con hooks y plugins nativos.",
+     "orden_instalacion": "Arranca agentmemory primero y luego conecta el agente según su guía."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Agente soportado de forma nativa.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Agente soportado de forma nativa.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "notas": "Alternativas (elige una): engram, supermemory, claude-mem. No expongas los puertos 3111/3113 fuera de loopback sin autenticación.",
+   "fuentes": [
+    "https://github.com/rohitg00/agentmemory/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "rohitg00/agentmemory",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.9.33 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "letta": {
+   "que_es": "Repositorio histórico de Letta (antes MemGPT), plataforma para crear agentes con estado y memoria que aprenden con el tiempo. Licencia Apache 2.0; el código activo se trasladó a `letta-ai/letta-code` y este repositorio conserva el servidor de la API V1 retirado en la rama `archive` (última etiqueta 0.16.8).",
+   "que_hace": "Letta permite crear agentes persistentes con memoria, identidad y conversaciones que sobreviven entre sesiones, usarlos desde un terminal interactivo, chat.letta.com, canales como Slack, Telegram y Discord, o integrarlos en aplicaciones TypeScript con el Letta Agent SDK. Letta Cloud mantiene la memoria disponible entre equipos.",
+   "como_lo_hace": "La versión actual se instala con `npm install -g @letta-ai/letta-code`; `letta` abre la interfaz de terminal y `letta server` ejecuta el App Server para agentes locales o autoalojados. Las etiquetas y releases antiguas siguen disponibles para reproducibilidad, pero los proyectos nuevos deben usar letta-code.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "La documentación de Letta describe el uso de modelos de Ollama.",
+     "orden_instalacion": "Ollama primero; configura el proveedor en el servidor de Letta [DATO NO VERIFICADO: vigencia en letta-code]."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Servir modelos propios con GPU para agentes autoalojados (combinación por arquitectura).",
+     "orden_instalacion": "vLLM primero; añádelo como proveedor compatible con OpenAI."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Usar Letta como memoria/agente persistente detrás de canales de mensajería que ya gestionas (combinación por arquitectura).",
+     "orden_instalacion": "Evita duplicar canales: decide cuál de los dos atiende cada uno."
+    }
+   ],
+   "notas": "Alternativas (elige una): mem0, cognee. Para instalar, sigue letta-ai/letta-code, no este repositorio.",
+   "fuentes": [
+    "https://github.com/letta-ai/letta/blob/main/README.md",
+    "https://docs.letta.com/models/ollama"
+   ],
+   "github": {
+    "name_with_owner": "letta-ai/letta",
+    "archived": false,
+    "pushed_at": "2026-10-18",
+    "license": "Apache-2.0",
+    "latest_release": "0.16.8 (2026-05-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "engram": {
+   "que_es": "Memoria persistente para agentes de código de Gentleman-Programming, de código abierto (MIT) y financiada por donaciones, sin funciones de pago. Muy activa (v3.7.2) y parte del ecosistema Gentle-AI.",
+   "que_hace": "Da a tu agente una memoria única entre sesiones, local o en la nube, independiente del agente. Tiene 14 destinos de configuración (Claude Code, Pi, OpenCode, Gemini CLI, Codex, Antigravity, Windsurf, Qwen Code, Kiro, Cursor, VS Code Copilot, Kilo Code, Kimi Code, CommandCode) además de cualquier agente compatible con MCP. Permite compartir memoria por Git Sync y replicarla opcionalmente con Engram Cloud.",
+   "como_lo_hace": "Un único binario en Go sin dependencias, con SQLite y búsqueda de texto completo FTS5, expuesto mediante CLI, API HTTP, MCP (stdio) y una TUI interactiva. Los datos se guardan en `~/.engram` (configurable con `ENGRAM_DATA_DIR`); la base SQLite local es la fuente de verdad y Git Sync exporta fragmentos comprimidos para otras máquinas.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Destino de configuración soportado vía MCP.",
+     "orden_instalacion": "Instala el binario y ejecuta la configuración para Claude Code."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Destino de configuración soportado.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Destino de configuración soportado.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "notas": "Alternativas (elige una): claude-mem, agentmemory.",
+   "fuentes": [
+    "https://github.com/Gentleman-Programming/engram/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Gentleman-Programming/engram",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Go",
+    "latest_release": "v3.7.2 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openviking": {
+   "que_es": "Base de datos de contexto de código abierto (AGPLv3) para agentes de IA, de Volcengine (ByteDance). Activa (v0.5.5), con un servicio alojado por Volcengine y un Studio web.",
+   "que_hace": "Organiza conocimiento, memoria y skills de un agente como un sistema de archivos virtual bajo `viking://`, que el agente recorre como carpetas. Limita la búsqueda semántica a un subárbol, genera resúmenes por directorio (L0) y vistas generales (L1) antes del contenido completo (L2), y archiva cada sesión extrayendo memorias en Markdown editables. Según su benchmark eleva la precisión en LoCoMo de OpenClaw, Hermes y Claude Code [DATO NO VERIFICADO: benchmark propio].",
+   "como_lo_hace": "Servidor Python 3.10+ instalado con `uv tool install openviking` y configurado con `openviking-server init`, que escribe `~/.openviking/ov.conf` y admite Volcengine, OpenAI, Codex OAuth, Kimi, GLM y Ollama local. Incluye CLI `ov`, un instalador de plugin de memoria para Claude Code, Codex, Cursor, TRAE, OpenCode y otros, y Web Studio autoalojable.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin de memoria oficial instalable con su instalador.",
+     "orden_instalacion": "Servidor OpenViking en marcha primero; luego instala el plugin y reinicia Claude Code."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Agente evaluado en su benchmark y soportado como cliente de memoria.",
+     "orden_instalacion": "Igual: servidor primero, plugin después."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local soportado por el asistente `init`.",
+     "orden_instalacion": "Ollama con los modelos de chat y embeddings antes de ejecutar `openviking-server init`."
+    }
+   ],
+   "notas": "La AGPLv3 obliga a publicar cambios si ofreces el servicio modificado a terceros.",
+   "fuentes": [
+    "https://github.com/volcengine/OpenViking/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "volcengine/OpenViking",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v0.5.5 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "dsh-noema": {
+   "que_es": "Plugin de código abierto (MIT) de ZSeven-W que añade memoria a largo plazo a DeepSeek Harness usando Noema, un sistema de memoria local sin vectores. Proyecto pequeño y reciente, probado con DSH 0.2.0-rc.2 y publicado en npm sin releases en GitHub.",
+   "que_hace": "Carga contexto relevante al inicio de cada sesión (`noema_recall`) y ofrece búsqueda, navegación y catálogo de memorias. Importa los archivos de memoria de otras diez herramientas (Codex, Claude Code, opencode, Cursor, Grok, WorkBuddy, Antigravity, Trae, Qoder, Hermes) y los guarda como memorias duraderas. Incluye una página de ajustes para gestionar memorias y servidor, y un bucle que reinicia el servidor MCP si falla.",
+   "como_lo_hace": "Las memorias son archivos Markdown inspeccionables en `NOEMA_ROOT` (por defecto `~/.agent-memory/`), servidos por el proceso hijo `noema-mcp`. La extracción de entidades combina segmentación jieba con señales de nombres propios y términos técnicos. Se instala con `dsh plugin --profile web add @zseven-w/dsh-noema@latest` y se recarga en caliente mediante Cordis HMR.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "`noema_import` lee sus archivos de memoria para migrarlos.",
+     "orden_instalacion": "Instala el plugin en DSH y después ejecuta la importación."
+    },
+    {
+     "id": "codex",
+     "motivo": "Fuente de importación soportada.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Fuente de importación soportada.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "notas": "Requiere DeepSeek Harness, que no está en el catálogo.",
+   "fuentes": [
+    "https://github.com/ZSeven-W/dsh-noema/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ZSeven-W/dsh-noema",
+    "archived": false,
+    "pushed_at": "2026-10-06",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

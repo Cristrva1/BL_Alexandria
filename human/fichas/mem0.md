@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Capa de memoria para asistentes y agentes de IA de Mem0 («mem-zero»), de código abierto (Apache 2.0) con plataforma gestionada de pago. Muy activa; en abril de 2026 publicó un nuevo algoritmo de memoria y su evaluación es reproducible con un marco abierto.
+
+## ¿Qué hace?
+
+Recuerda preferencias y contexto a nivel de usuario, sesión y agente para personalizar respuestas. El algoritmo nuevo extrae en una sola pasada y solo añade (no sobrescribe), trata los hechos confirmados por el agente como de primera clase, enlaza entidades y combina recuperación semántica, BM25 y por entidades con razonamiento temporal. Sus cifras publicadas (92,5 en LoCoMo, 94,4 en LongMemEval) corresponden a la plataforma gestionada, que incluye componentes propietarios.
+
+## ¿Cómo lo hace?
+
+Se usa como biblioteca (`pip install mem0ai` o `npm install mem0ai`), como servidor autoalojado (`cd server && docker compose up -d`, en el puerto 3000, con autenticación activada por defecto) o en la nube. Tiene CLI (`@mem0/cli` o `mem0-cli`) y SDK multiplataforma; admite varios LLM y bases vectoriales, entre ellos Ollama y Qdrant según su documentación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Guía oficial para construir un bot con LangGraph y memoria de Mem0. | Configura Mem0 (biblioteca o servidor) y añade sus llamadas al grafo de LangGraph. |
+| [crewAI](crewai.md) | Integración documentada para dar memoria a equipos de agentes de CrewAI. | Mem0 configurado primero; activa la memoria en la definición del crew. |
+| [Qdrant](qdrant.md) | Base vectorial documentada como almacén de Mem0 en código abierto. | Qdrant primero; la dimensión de la colección debe coincidir con el modelo de embeddings. |
+| [Hermes Desktop](hermes-desktop.md) | Hermes Desktop lista Mem0 entre sus proveedores de memoria. | Clave o servidor de Mem0 listo antes de activarlo en la app. |
+
+**Notas:** Alternativas (elige una): letta, cognee, supermemory. La migración de la v2 a la v3 de código abierto tiene guía propia.
+
+Estado en GitHub: activo · último push 2026-11-06 · última versión publicada ts-v3.3.1 (2026-09-25) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mem0ai/mem0/blob/main/README.md) · [2](https://docs.mem0.ai/integrations/langgraph) · [3](https://docs.mem0.ai/integrations/crewai) · [4](https://docs.mem0.ai/components/vectordbs/dbs/qdrant)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Las skills enseñan a integrar Mem0; no incluyen el servicio ni ejecutan gratis la memoria de tu aplicación |
 | Coste | El coste depende del proveedor o la ruta. La plataforma y el SDK abierto tienen rutas distintas; Ollama sirve para LLM local, pero el ejemplo conserva OpenAI para embeddings si no los cambias |
 | Equipo | Preparación según la ruta elegida. Python; LLM; embeddings; almacén; identificador ficticio de usuario |
-
-Las skills enseñan a integrar Mem0; no incluyen el servicio ni ejecutan gratis la memoria de tu aplicación
-
-## Qué puedes hacer con él
-
-Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental.
-
-## Por qué destaca
-
-Usos propuestos: Recordar preferencias de atención; Mantener contexto de una app entre conversaciones.
-
-## Cómo funciona
 
 Las skills enseñan a integrar Mem0; no incluyen el servicio ni ejecutan gratis la memoria de tu aplicación
 
@@ -95,14 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; LLM; embeddings; almacén; identificador ficticio de usuario
 - **Etiquetas:** `memory` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [crewAI](crewai.md) | 60.9k | Framework para orquestar "crews" de agentes con roles y tareas. |
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [agentmemory](agentmemory.md) | 30.4k | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. |
 
 ## Alternativas (elige una)
 

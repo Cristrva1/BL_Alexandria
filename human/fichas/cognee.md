@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de memoria de IA de código abierto (Apache 2.0) de topoteretes que da a los agentes memoria persistente a largo plazo, con artículo de investigación propio. Activa (v1.6.8) y con servicio gestionado Cognee Cloud.
+
+## ¿Qué hace?
+
+Convierte documentos, código y conversaciones en un grafo de conocimiento autoalojado que los agentes pueden consultar y mejorar. Casos de uso: un «cerebro de empresa» que une documentación, tickets, código y trabajo de agentes; memoria entre ejecuciones con decisiones y reglas aprendidas; y memoria estructurada con modelos de datos y ontologías propias. Funciona en local sin clave de API usando modelos pequeños en CPU.
+
+## ¿Cómo lo hace?
+
+Biblioteca Python 3.10–3.14 (`uv pip install "cognee[gliner]"`): sin clave de LLM extrae el grafo con un modelo local (GLiNER) y las etapas que requieren LLM se saltan; con clave usa OpenAI por defecto u otro proveedor. Ofrece plugins de memoria para Claude Code, Codex y OpenClaw, servidor MCP, SDK de TypeScript y Rust, API REST (imagen Docker en el puerto 8000, multiinquilino con autenticación por defecto) y una interfaz local con `cognee-cli -ui`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial de memoria (`claude plugin install cognee-memory@cognee`). | Instala Cognee y configura el LLM; luego añade el marketplace y el plugin. |
+| [Codex CLI](codex.md) | Plugin oficial para Codex. | Activa los hooks de Codex primero; después añade el marketplace y el plugin. |
+| [OpenClaw](openclaw.md) | Plugin oficial `@cognee/cognee-openclaw`. | OpenClaw instalado; añade el plugin desde npm. |
+
+**Notas:** Alternativas (elige una): graphiti, mem0, graphrag, letta. En la API, `ENABLE_BACKEND_ACCESS_CONTROL=false` solo para uso local de un usuario.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.6.8 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/topoteretes/cognee/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente |
 | Coste | El coste depende del proveedor o la ruta. GLiNER y embeddings locales cubren la ruta básica; generación, visión, transcripción o Cloud pueden añadir costes |
 | Equipo | Preparación según la ruta elegida. Python 3.10–3.14; modelos locales iniciales; plugins opcionales |
-
-Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente
-
-## Qué puedes hacer con él
-
-Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños.
-
-## Por qué destaca
-
-Usos propuestos: Construir memoria de documentos; Recuperar contexto desde Claude Code o Codex.
-
-## Cómo funciona
 
 Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10–3.14; modelos locales iniciales; plugins opcionales
 - **Etiquetas:** `memory` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| [mcp-neo4j](mcp-neo4j.md) | 989 | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Memoria persistente de código abierto (Apache 2.0) para sesiones de programación y agentes, de rohitg00, que se presenta como implementación del patrón «LLM Wiki» de Karpathy con puntuación de confianza, ciclo de vida, grafos y búsqueda híbrida. Muy activo (v0.9.33).
+
+## ¿Qué hace?
+
+Captura las sesiones de Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, DeepSeek Harness y cualquier cliente MCP, hace buscables decisiones y arreglos y permite a otro agente retomar historial, lecciones y traspasos. Elimina secretos al capturar, permite reproducir sin conexión y ofrece un visor en vivo para explorar, editar, exportar y olvidar memorias.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 20+; se ejecuta con `npx -y @agentmemory/agentmemory@latest`. Sin clave usa búsqueda por palabras clave (BM25) y coincidencias estructurales del grafo; con embeddings locales o remotos añade búsqueda semántica. La API queda en `localhost:3111` y el visor en `localhost:3113`, ambos solo en loopback por defecto; la configuración vive en `~/.agentmemory/.env`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Captura con hooks y plugins nativos. | Arranca agentmemory primero y luego conecta el agente según su guía. |
+| [Gemini CLI](gemini-cli.md) | Agente soportado de forma nativa. | Igual que arriba. |
+| [hermes-agent](hermes-agent.md) | Agente soportado de forma nativa. | Igual que arriba. |
+
+**Notas:** Alternativas (elige una): engram, supermemory, claude-mem. No expongas los puertos 3111/3113 fuera de loopback sin autenticación.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.9.33 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rohitg00/agentmemory/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa |
 | Coste | El coste depende del proveedor o la ruta. Captura y búsqueda por palabras funcionan sin clave; embeddings locales son opcionales; compresión LLM puede hacer una llamada por observación |
 | Equipo | Preparación según la ruta elegida. Node.js >=20; servidor local; hooks revisados en el cliente |
-
-Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa
-
-## Qué puedes hacer con él
-
-Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes.
-
-## Por qué destaca
-
-Usos propuestos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto.
-
-## Cómo funciona
 
 Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js >=20; servidor local; hooks revisados en el cliente
 - **Etiquetas:** `agents` `memory` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [mem0](mem0.md) | 69k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
-| [ruflo](ruflo.md) | 81.7k | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |
 
 ## Alternativas (elige una)
 

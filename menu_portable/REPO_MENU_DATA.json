@@ -26104,8 +26104,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mem0",
-        "ruflo"
+        "claude-code",
+        "gemini-cli",
+        "hermes-agent"
       ],
       "alt": [
         "engram",
@@ -26354,7 +26355,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "superpowers"
+        "codex",
+        "opencode"
       ],
       "alt": [
         "engram",
@@ -26482,8 +26484,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir memoria de documentos; Recuperar contexto desde Claude Code o Codex",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "qdrant",
-        "mcp-neo4j"
+        "claude-code",
+        "codex",
+        "openclaw"
       ],
       "alt": [
         "graphiti",
@@ -26600,7 +26603,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Dar memoria a DeepSeek Harness; Importar una nota propia de otro agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "hermes-agent"
+      ],
       "alt": []
     },
     {
@@ -26719,7 +26726,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "opencode"
+        "opencode",
+        "gemini-cli"
       ],
       "alt": [
         "claude-mem",
@@ -26961,6 +26969,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Representar cambios de una relación comercial; Conservar hechos de conversaciones con fechas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "langgraph",
         "mcp-neo4j"
       ],
       "alt": [
@@ -27202,7 +27212,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un agente con memoria persistente; Crear un asistente que conserve preferencias",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "vllm",
+        "openclaw"
       ],
       "alt": [
         "mem0",
@@ -27452,9 +27464,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Recordar preferencias de atención; Mantener contexto de una app entre conversaciones",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "langgraph",
         "crewai",
-        "langchain",
-        "agentmemory"
+        "qdrant",
+        "hermes-desktop"
       ],
       "alt": [
         "letta",
@@ -27578,8 +27591,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Recuperar decisiones antiguas; Consultar archivos de contexto sin resúmenes destructivos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-notebook",
-        "odysseus"
+        "claude-code",
+        "chroma",
+        "codex"
       ],
       "alt": []
     },
@@ -27937,7 +27951,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conservar contexto de un proyecto; Consultar conocimientos y skills desde un almacén común",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-code"
+        "claude-code",
+        "openclaw",
+        "ollama"
       ],
       "alt": []
     },
@@ -28538,7 +28554,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conservar contexto entre agentes; Buscar documentos y recuerdos de un proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "vercel-ai"
+        "claude-code",
+        "opencode",
+        "ollama"
       ],
       "alt": [
         "mem0",
