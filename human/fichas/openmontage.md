@@ -29,6 +29,7 @@ Requiere Python 3.10+, FFmpeg y Node.js parcheado (22.23.4+, 24.22.1+ o 26.12.1+
 | [remotion](remotion.md) | Composición final. | Viene integrado; revisa la licencia de Remotion. |
 | [FFmpeg](ffmpeg.md) | Procesado de medios. | Instala FFmpeg. |
 | [Kokoro](kokoro.md) | Narración local sin claves. (combinación por arquitectura) | Configura un TTS local. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | OpenMontage usa ElevenLabs para TTS premium, música y efectos; su código importa este SDK. | Añade `ELEVENLABS_API_KEY` al `.env`. |
 
 **Notas:** Alternativas (elige una): remotion-superpowers, moneyprinterturbo.
 

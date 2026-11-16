@@ -30,6 +30,12 @@ Está disponible en JavaScript/TypeScript (`npm install ccxt`), Python (`pip ins
 | [vectorbt](vectorbt.md) | Descargar datos históricos para backtesting. (combinación por arquitectura) | Obtén velas con CCXT y pásalas a vectorbt. |
 | [Claude Code](claude-code.md) | Skill oficial para agentes. | Ejecuta `npx skills add ccxt/ccxt`. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AutoHedge](autohedge.md) · [binance-trader](binance-trader.md) · [FinceptTerminal](finceptterminal.md) · [hummingbot](hummingbot.md) · [nautilus_trader](nautilus-trader.md) · [py-sdk](py-sdk.md)
+
 **Notas:** Sin alternativas declaradas. Riesgo financiero: usa claves sin permiso de retiro.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.5.92 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).

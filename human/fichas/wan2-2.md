@@ -30,8 +30,9 @@ Se instala con `pip install -r requirements.txt` y se descargan los pesos de Hug
 | [diffusers](diffusers.md) | T2V, I2V, TI2V y Animate integrados en diffusers. | Usa los checkpoints `-Diffusers` de Hugging Face. |
 | [CosyVoice](cosyvoice.md) | Síntesis de voz para Speech-to-Video. | Instala `requirements_s2v.txt`. |
 | [Real-ESRGAN](real-esrgan.md) | Ampliar los vídeos generados. (combinación por arquitectura) | Pasa los fotogramas por Real-ESRGAN. |
+| [WanGP](wan2gp.md) | Combinación recíproca: WanGP lo enlaza como «Ejecuta los modelos Wan 2.2 con menos VRAM». | Orden indicado desde WanGP: Descarga el modelo desde la interfaz. |
 
-**Notas:** Alternativas (elige una): hunyuanvideo.
+**Notas:** Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.
 
 Estado en GitHub: activo · último push 2026-09-21 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -119,6 +120,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [HunyuanVideo](hunyuanvideo.md) | 12.8k | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | 4.6k | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Enlaces
 

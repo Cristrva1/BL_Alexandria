@@ -30,7 +30,7 @@ La instalación manual requiere conocimientos técnicos: Python (el README menci
 | [OBS Studio](obs-studio.md) | Emitir la cámara virtual. (combinación por arquitectura) | Captura la salida en OBS. |
 | [CodeFormer](codeformer.md) | Restaurar rostros en vídeo procesado offline. (combinación por arquitectura) | Aplica sobre los fotogramas. |
 
-**Notas:** Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación); se quita face-recognition de las combinaciones (sin integración documentada).
+**Notas:** Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación).
 
 Estado en GitHub: activo · último push 2026-11-08 · última versión publicada 2.8 (2026-10-22) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 

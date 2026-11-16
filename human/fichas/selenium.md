@@ -27,8 +27,17 @@ Tiene bindings para Java, Python, C#, Ruby y JavaScript, y Selenium Manager gest
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [mitmproxy](mitmproxy.md) | Inspección de tráfico en pruebas. (combinación por arquitectura) | Configura el proxy en el navegador. |
-| [n8n](n8n.md) | Orquestar scripts de automatización. (combinación por arquitectura) | Lanza los scripts desde workflows. |
+| [activepieces](activepieces.md) | Orquestar scripts de automatización. (combinación por arquitectura) | Lanza los scripts desde flujos de Activepieces. |
 | [Claude Code](claude-code.md) | Generar y mantener pruebas. (combinación por arquitectura) | Pide al agente las pruebas WebDriver. |
+| [FlareSolverr](flaresolverr.md) | Combinación recíproca: FlareSolverr lo enlaza como «FlareSolverr usa Selenium con undetected-chromedriver para controlar Chrome internamente». | Orden indicado desde FlareSolverr: Ejecuta FlareSolverr con Docker (incluye Selenium y Chrome); después llama a su API. |
+| [Steel Browser](steel-browser.md) | Combinación recíproca: Steel Browser lo enlaza como «Steel crea sesiones compatibles con el protocolo WebDriver de Selenium con la opción `isSelenium`». | Orden indicado desde Steel Browser: Arranca Steel y crea la sesión con `isSelenium: true`; después conecta tu cliente de Selenium. |
+| [Ladybird](ladybird.md) | Combinación recíproca: Ladybird lo enlaza como «Ladybird incluye un servicio WebDriver al que pueden conectarse clientes de Selenium para automatizar pruebas (combinación por arquitectura)». | Orden indicado desde Ladybird: Compila Ladybird con su servicio WebDriver; después conecta Selenium a ese endpoint. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Servo](servo.md)
 
 **Notas:** Alternativas (elige una): playwright, puppeteer.
 
@@ -106,6 +115,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 | [Puppeteer](puppeteer.md) | 95.8k | Librería de Google para controlar Chrome y Firefox desde Node.js. |
+| [Cypress](cypress.md) | 51k | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. |
+| [WebdriverIO](webdriverio.md) | 9.9k | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. |
 
 ## Enlaces
 

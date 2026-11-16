@@ -30,6 +30,14 @@ Se instala con `pip install claude-agent-sdk` y requiere Python 3.10+. El paquet
 | [FastMCP](fastmcp.md) | Construir servidores MCP externos que el agente consuma además de las herramientas en proceso. | Crea el servidor con FastMCP y regístralo en las opciones `mcp_servers` del SDK. |
 | [langfuse](langfuse.md) | Trazas de las ejecuciones del agente (integración oficial de Langfuse para Claude Agent SDK). | Langfuse primero; configura la instrumentación antes de lanzar consultas. |
 | [E2B](e2b.md) | Ejecutar el agente, que tiene acceso a Bash y archivos, dentro de un sandbox aislado. (combinación por arquitectura) | Crea el sandbox e instala el SDK dentro de él. |
+| [Agno](agno.md) | Combinación recíproca: Agno lo enlaza como «SDK soportado para construir agentes que AgentOS sirve». | Orden indicado desde Agno: Instala Agno y el SDK de Claude Agent en el mismo entorno. |
+| [PageIndex](pageindex.md) | Combinación recíproca: PageIndex lo enlaza como «Integración documentada con el Claude Agent SDK». | Orden indicado desde PageIndex: Igual que arriba. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Anthropic Skills](anthropic-skills.md) · [Claude Cookbooks](claude-cookbooks.md) · [claude-quickstarts](claude-quickstarts.md) · [financial-services](financial-services.md)
 
 **Notas:** Sin alternativas declaradas; comparable a openai-agents-python (otro proveedor).
 

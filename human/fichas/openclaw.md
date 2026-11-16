@@ -31,6 +31,12 @@ Se instala con `curl -fsSL https://openclaw.ai/install.sh | bash` o PowerShell, 
 | [Claude Code](claude-code.md) | Harness de agente como plugin. | Configura Claude como harness. |
 | [Ollama](ollama.md) | Modelos locales como plugin. (combinación por arquitectura) | Configura un proveedor local. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Agent-Reach](agent-reach.md) · [awesome-agents](awesome-agents.md) · [cognee](cognee.md) · [Letta](letta.md) · [OpenMAIC](openmaic.md) · [OpenViking](openviking.md) · [paperclip](paperclip.md) · [Qwen Code](qwen-code.md) · [signal-cli](signal-cli.md) · [TEN Framework](ten-framework.md) · [Vibe-Trading](vibe-trading.md)
+
 **Notas:** Alternativas (elige una): hermes-agent, mercury-agent. Superficie de ataque amplia (canales y credenciales): conviene aislarlo.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2026.11.4 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).

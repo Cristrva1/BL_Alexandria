@@ -26,9 +26,9 @@ Es un README; no requiere instalación. Comprueba la vigencia de cada API, porqu
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Conectar APIs de la lista en flujos con el nodo HTTP Request. (combinación por arquitectura) | Elige la API, revisa su autenticación y crea el flujo. |
+| [activepieces](activepieces.md) | Conectar APIs de la lista en flujos con la pieza HTTP. (combinación por arquitectura) | Elige la API, revisa su autenticación y crea el flujo. |
 | [firecrawl](firecrawl.md) | Cubrir con scraping los datos que no ofrece ninguna API. (combinación por arquitectura) | Usa primero la API pública y recurre a Firecrawl solo si no existe. |
-| [treg](treg.md) | Catálogo de herramientas de pago por llamada como alternativa a APIs gratuitas. (combinación por arquitectura) | Compara coste y condiciones antes de elegir. |
+| [Claude Code](claude-code.md) | Un agente de código puede elegir una API de la lista y escribir el cliente para consumirla. (combinación por arquitectura) | Comprueba vigencia y condiciones de la API antes de integrarla. |
 
 **Notas:** Sin alternativas declaradas. Parte del contenido destacado es publicidad del patrocinador.
 

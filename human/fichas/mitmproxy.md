@@ -29,6 +29,15 @@ Está escrito en Python; se instala con los binarios oficiales, `pipx install mi
 | [frida](frida.md) | Saltar el certificate pinning de apps móviles para inspeccionar su tráfico. (combinación por arquitectura) | Instala la CA de mitmproxy y carga un script de Frida contra el pinning. |
 | [playwright](playwright.md) | Pasar un navegador automatizado por el proxy con la opción `proxy` documentada por Playwright. | Arranca mitmproxy y lanza Playwright con `proxy: { server: 'http://localhost:8080' }`. |
 | [k6](k6.md) | Convertir tráfico capturado en un HAR y de ahí en un script de carga con el conversor HAR de k6. (combinación por arquitectura) (la exportación HAR de mitmproxy depende de la versión) | Captura con mitmproxy, exporta a HAR y conviértelo con `har-to-k6`. |
+| [Apktool](apktool.md) | Combinación recíproca: Apktool lo enlaza como «Modificar `network_security_config` para que la app confíe en el certificado de mitmproxy. (combinación por arquitectura)». | Orden indicado desde Apktool: Edita la configuración con Apktool, reconstruye, firma e intercepta. |
+| [Selenium](selenium.md) | Combinación recíproca: Selenium lo enlaza como «Inspección de tráfico en pruebas. (combinación por arquitectura)». | Orden indicado desde Selenium: Configura el proxy en el navegador. |
+| [shannon](shannon.md) | Combinación recíproca: shannon lo enlaza como «Observar el tráfico de la prueba contra el entorno de staging. (combinación por arquitectura)». | Orden indicado desde shannon: Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ffuf](ffuf.md) · [Katana](katana.md) · [Servo](servo.md) · [sqlmap](sqlmap.md) · [Wireshark](wireshark.md)
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

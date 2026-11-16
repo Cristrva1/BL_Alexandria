@@ -29,6 +29,7 @@ Escrita en TypeScript puro sin dependencias, se instala con `npm install mediabu
 | [remotion](remotion.md) | Patrocinador; procesado de medios en navegador. (combinación por arquitectura) | Úsalo en pipelines web de vídeo. |
 | [FFmpeg](ffmpeg.md) | Equivalente en servidor para formatos no cubiertos. (combinación por arquitectura) | Reparte trabajo cliente/servidor. |
 | [openfilm](openfilm.md) | Exportación de vídeo desde HTML. (combinación por arquitectura) | Evalúalo para codificar en el navegador. |
+| [PixiJS](pixijs.md) | Combinación recíproca: PixiJS lo enlaza como «Mediabunny puede codificar en el navegador vídeo a partir de un canvas, como el que dibuja PixiJS (combinación por arquitectura)». | Orden indicado desde PixiJS: Renderiza la escena con PixiJS; después captura su canvas con la fuente de canvas de Mediabunny. |
 
 **Notas:** Sin alternativas declaradas.
 

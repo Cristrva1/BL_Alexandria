@@ -27,8 +27,8 @@ Markdown con código Python y PyTorch. Se instalan `torch`, `tiktoken`, `dataset
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [nanochat](nanochat.md) | Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura) | Termina el libro antes de alquilar GPU para nanochat. |
-| [LLMs from Scratch](llms-from-scratch.md) | Referencia más rigurosa y revisada editorialmente sobre el mismo tema. (combinación por arquitectura) | Úsalo para contrastar explicaciones. |
 | [PyTorch](pytorch.md) | Biblioteca usada en todo el libro. | Instálala en la versión CPU o GPU según el capítulo de configuración. |
+| [marimo](marimo.md) | Ejecutar paso a paso el código Python y PyTorch de cada capítulo en un notebook reactivo (combinación por arquitectura). | Instala primero las dependencias del libro (`torch`, `tiktoken`, `datasets`…) en el mismo entorno y después marimo. |
 
 **Notas:** Sin alternativas declaradas. Material escrito con ayuda de IA según su autor: verifica las afirmaciones técnicas.
 

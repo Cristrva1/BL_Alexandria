@@ -30,6 +30,8 @@ Python 3.11+ (`pip install google-adk`). Incluye ADK Web para desarrollar y se d
 | [FastMCP](fastmcp.md) | Servidores MCP propios como herramientas (combinación por arquitectura; ADK documenta herramientas MCP). | Servidor MCP primero. |
 | [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse para Google ADK. | Instrumenta antes de desplegar. |
 | [skills](google-skills.md) | Skills oficiales de Google Cloud para que un agente de código despliegue en Cloud Run o Agent Runtime (combinación por arquitectura). | Independientes. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | Combinación recíproca: Awesome LLM Apps lo enlaza como «Framework de Google usado en otras plantillas (citado en el README)». | Orden indicado desde Awesome LLM Apps: Instálalo en el entorno de la plantilla correspondiente. |
+| [gemini-skills](gemini-skills.md) | Combinación recíproca: gemini-skills lo enlaza como «Construir agentes sobre la API de Gemini con el ADK (combinación por arquitectura)». | Orden indicado desde gemini-skills: Independientes. |
 
 **Notas:** Alternativas (elige una): langgraph, openai-agents-python. Se quitó gemini-cli: no es una integración.
 

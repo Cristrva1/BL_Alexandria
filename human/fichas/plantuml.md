@@ -1,0 +1,124 @@
+[🏠 Inicio](../README.md) › [📄 Presentaciones, diagramas y explicación visual](../categorias/31-presentaciones-diagramas.md) › Diagramas y documentación
+
+# 🖥️ PlantUML
+
+> Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.
+
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 13.4k | Multilicencia (GPL-3.0, LGPL-3.0, Apache-2.0, EPL-2.0 o MIT) | Java | 2026-11-16 |
+
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
+
+## ¿Qué es?
+
+Proyecto de código abierto veterano y muy activo, publicado con varias licencias a elegir (GPL, LGPL, Apache, EPL o MIT) según la distribución. Muy integrado en wikis, IDEs y herramientas de documentación.
+
+## ¿Qué hace?
+
+Genera diagramas de secuencia, casos de uso, clases, objetos, actividad, componentes, despliegue, estados y tiempo, además de diagramas no UML (JSON, YAML, redes, wireframes, arquitectura, Gantt, mapas mentales, WBS, EBNF) desde texto.
+
+## ¿Cómo lo hace?
+
+Es un programa Java que se ejecuta como JAR, servidor web o biblioteca; usa Graphviz para algunos layouts. El paquete `@plantuml/mcp-js` es un servidor MCP en Node.js que renderiza y valida diagramas sin Java.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Kroki](kroki.md) | Kroki renderiza PlantUML (y C4 con PlantUML) mediante su API HTTP. | Despliega Kroki; después envía el código a `/plantuml/svg`. |
+| [Claude Code](claude-code.md) | El servidor MCP oficial `@plantuml/mcp-js` permite a asistentes de IA renderizar y revisar diagramas PlantUML. | Añade `npx @plantuml/mcp-js` como servidor MCP del agente; después pide los diagramas. |
+| [draw.io](drawio.md) | draw.io puede insertar diagramas PlantUML desde su menú avanzado. | Escribe el PlantUML; después insértalo en draw.io para combinarlo con otras formas. |
+
+**Notas:** Alternativa de D2 y Mermaid; PlantUML cubre más tipos de diagramas UML formales.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.2026.10 (2026-11-11) · licencia declarada LGPL-3.0 (consultado el 2026-11-16).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plantuml/plantuml/blob/master/README.md) · [2](https://www.npmjs.com/package/@plantuml/mcp-js)</sub>
+
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
+| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
+| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+
+Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+
+## Cómo empezar
+
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+
+1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
+2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
+3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+
+Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+
+[Instrucciones originales de instalación](https://github.com/plantuml/plantuml/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar PlantUML para mi objetivo y necesito pasos guiados. Lee https://github.com/plantuml/plantuml/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Descarga el JAR de las releases, escribe un `@startuml` sencillo en `a.puml` y ejecuta `java -jar plantuml.jar a.puml`..
+
+**Qué comprobar:** Obtienes un PNG con el diagrama..
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
+## Casos de uso
+
+- documentar diagramas de secuencia y clases como texto en el repositorio
+- generar diagramas automáticamente en la documentación técnica
+
+## ¿Es para ti?
+
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| Tu objetivo encaja con estos ejemplos: documentar diagramas de secuencia y clases como texto en el repositorio; generar diagramas automáticamente en la documentación técnica | necesitas una instalación sin cuentas ni dependencias adicionales |
+
+**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+
+## Stack y modelos
+
+- **Stack:** Java, Dockerfile
+- **Etiquetas:** `diagrams` `uml` `java` `docs-as-code`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [D2](d2.md) | 25.8k | Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos. |
+| [Mermaid](mermaid.md) | 91.1k | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. |
+
+## Enlaces
+
+- 🐙 GitHub: [plantuml/plantuml](https://github.com/plantuml/plantuml)
+- 🌐 Web: <https://plantuml.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-16. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
+
+- [Fuente 1](https://github.com/plantuml/plantuml/blob/master/README.md)
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

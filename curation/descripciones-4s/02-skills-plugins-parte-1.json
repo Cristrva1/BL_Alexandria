@@ -22,6 +22,24 @@
      "id": "claude-agent-sdk-python",
      "motivo": "Usar las skills dentro de agentes propios (combinación por arquitectura).",
      "orden_instalacion": "Copia las skills al directorio que cargue tu agente."
+    },
+    {
+     "id": "hello-halo",
+     "motivo": "Combinación recíproca: hello-halo lo enlaza como «Skills compatibles con el ecosistema de Claude Code».",
+     "orden_instalacion": "Orden indicado desde hello-halo: Importa las skills.",
+     "reciproca_de": "hello-halo"
+    },
+    {
+     "id": "scientific-agent-skills",
+     "motivo": "Combinación recíproca: scientific-agent-skills lo enlaza como «Sus skills de documentos provienen de anthropics/skills».",
+     "orden_instalacion": "Orden indicado desde scientific-agent-skills: No dupliques las mismas skills de documentos desde ambos repositorios.",
+     "reciproca_de": "scientific-agent-skills"
+    },
+    {
+     "id": "financial-services",
+     "motivo": "Combinación recíproca: financial-services lo enlaza como «Skills de documentos (Excel, PowerPoint, Word) para producir modelos y presentaciones (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde financial-services: Instala las skills de documentos en el mismo entorno.",
+     "reciproca_de": "financial-services"
     }
    ],
    "notas": "Se quitaron claude-plugins-official y superpowers porque no hay integración documentada.",
@@ -55,6 +73,12 @@
      "id": "skills",
      "motivo": "Las skills de Matt Pocock se instalan desde este marketplace.",
      "orden_instalacion": "`claude plugin install mattpocock-skills@claude-plugins-official`."
+    },
+    {
+     "id": "awesome-claude-code",
+     "motivo": "Combinación recíproca: Awesome Claude Code lo enlaza como «Marketplace oficial frente a los recursos comunitarios de la lista (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome Claude Code: Prioriza lo oficial y revisa lo comunitario.",
+     "reciproca_de": "awesome-claude-code"
     }
    ],
    "notas": "Alternativa (elige una): wshobson-agents. Se quitaron anthropic-skills y awesome-claude-code: son catálogos paralelos, no integraciones.",
@@ -161,6 +185,12 @@
      "id": "skillspector",
      "motivo": "Auditar un catálogo tan grande antes de instalar nada (combinación por arquitectura).",
      "orden_instalacion": "Audita las skills seleccionadas."
+    },
+    {
+     "id": "antigravity-cli",
+     "motivo": "Combinación recíproca: Antigravity CLI lo enlaza como «Su instalador lista Antigravity CLI (`antigravity-cli`) como destino de instalación de skills».",
+     "orden_instalacion": "Orden indicado desde Antigravity CLI: Instala solo las skills que vayas a usar para no sobrecargar el agente.",
+     "reciproca_de": "antigravity-cli"
     }
    ],
    "notas": "Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.",
@@ -196,6 +226,12 @@
      "id": "opencode",
      "motivo": "`make install-opencode`.",
      "orden_instalacion": "Desde un clon del repositorio."
+    },
+    {
+     "id": "plugins",
+     "motivo": "Combinación recíproca: plugins lo enlaza como «Catálogo de plugins con marketplace para Cursor».",
+     "orden_instalacion": "Orden indicado desde plugins: Instala desde su marketplace.",
+     "reciproca_de": "plugins"
     }
    ],
    "notas": "Alternativas (elige una): claude-plugins-official, antigravity-awesome-skills, agency-agents. Se quitó skillspector porque no hay integración (sigue siendo buena práctica auditar).",
@@ -268,6 +304,12 @@
      "id": "skillspector",
      "motivo": "Auditar skills de terceros (combinación por arquitectura).",
      "orden_instalacion": "Antes de instalarlas."
+    },
+    {
+     "id": "awesome-agents",
+     "motivo": "Combinación recíproca: awesome-agents lo enlaza como «Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-agents: No aplica.",
+     "reciproca_de": "awesome-agents"
     }
    ],
    "notas": "Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.",
@@ -301,6 +343,12 @@
      "id": "gemini-cli",
      "motivo": "Guía de instalación documentada.",
      "orden_instalacion": "Sigue la sección de Gemini CLI."
+    },
+    {
+     "id": "plugins",
+     "motivo": "Combinación recíproca: plugins lo enlaza como «Skills de ingeniería con guía de instalación para Cursor».",
+     "orden_instalacion": "Orden indicado desde plugins: Sigue la sección de Cursor.",
+     "reciproca_de": "plugins"
     }
    ],
    "notas": "Alternativa (elige una): superpowers.",
@@ -336,6 +384,12 @@
      "id": "codex",
      "motivo": "Marketplace propio para Codex.",
      "orden_instalacion": "`codex plugin marketplace add mattpocock/skills`."
+    },
+    {
+     "id": "plugins",
+     "motivo": "Combinación recíproca: plugins lo enlaza como «Skills de ingeniería instalables también en Cursor (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde plugins: `npx skills add mattpocock/skills -a cursor`.",
+     "reciproca_de": "plugins"
     }
    ],
    "notas": "Se quitó awesome-agent-skills: es un catálogo, no una integración.",
@@ -376,6 +430,12 @@
      "id": "hermes-agent",
      "motivo": "Instalación documentada para Hermes Agent.",
      "orden_instalacion": "Reinicia la sesión tras instalar para activar los hooks."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Combinación recíproca: Claude Code lo enlaza como «Biblioteca de skills y flujos para Claude Code».",
+     "orden_instalacion": "Orden indicado desde Claude Code: Instala el plugin desde su marketplace.",
+     "reciproca_de": "claude-code"
     }
    ],
    "notas": "Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
@@ -416,6 +476,18 @@
      "id": "gemini-cli",
      "motivo": "Adaptador con capacidades limitadas.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "claude-code-hooks-mastery",
+     "motivo": "Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Marco que también usa hooks; sirve de ejemplo de producción (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-code-hooks-mastery: No mezcles hooks de ambos sin revisar los conflictos.",
+     "reciproca_de": "claude-code-hooks-mastery"
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Combinación recíproca: hermes-agent lo enlaza como «Skills y configuración reutilizables. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde hermes-agent: Importa las skills que apliquen.",
+     "reciproca_de": "hermes-agent"
     }
    ],
    "notas": "Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
@@ -451,6 +523,18 @@
      "id": "multica",
      "motivo": "Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura).",
      "orden_instalacion": "Independientes."
+    },
+    {
+     "id": "claude-token-efficient",
+     "motivo": "Combinación recíproca: claude-token-efficient lo enlaza como «Principios compatibles contra la sobreingeniería (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-token-efficient: Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada.",
+     "reciproca_de": "claude-token-efficient"
+    },
+    {
+     "id": "ponytail",
+     "motivo": "Combinación recíproca: Ponytail lo enlaza como «Principios compatibles de simplicidad y cambios mínimos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Ponytail: Evita instrucciones contradictorias si usas ambos.",
+     "reciproca_de": "ponytail"
     }
    ],
    "notas": "Sin licencia declarada. Se quitaron awesome-claude-code y context-engineering porque no hay integración.",
@@ -518,9 +602,21 @@
      "id": "gemini-cli",
      "motivo": "Integración `--integration gemini`.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "awesome-copilot",
+     "motivo": "Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Proceso de desarrollo guiado por especificaciones con integración para Copilot».",
+     "orden_instalacion": "Orden indicado desde Awesome GitHub Copilot: `specify init <proyecto> --integration copilot`.",
+     "reciproca_de": "awesome-copilot"
+    },
+    {
+     "id": "elephant-goldfish-model",
+     "motivo": "Combinación recíproca: elephant-goldfish-model lo enlaza como «Revisar con ojos frescos las especificaciones que genera Spec Kit (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde elephant-goldfish-model: Genera la especificación y pásala por `egm-review`.",
+     "reciproca_de": "elephant-goldfish-model"
     }
    ],
-   "notas": "Alternativa (elige una): bmad-method.",
+   "notas": "Alternativas (elige una): bmad-method, claude-task-master.",
    "fuentes": [
     "https://github.com/github/spec-kit/blob/main/README.md",
     "https://github.github.io/spec-kit/integrations/index.html"

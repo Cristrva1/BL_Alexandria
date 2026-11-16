@@ -1,0 +1,802 @@
+{
+ "batch": "47-expansion-p01",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "grist-core": {
+   "que_es": "Servidor de la edición Community de Grist (Apache-2.0), mantenido por Grist Labs (Nueva York) con contribuciones relevantes de organismos públicos franceses. Proyecto maduro con desarrollo continuo; Grist Labs vende hosting y una edición con funciones adicionales bajo licencia propietaria.",
+   "que_hace": "Combina la flexibilidad de una hoja de cálculo con la estructura de una base de datos: columnas con nombre y tipo, referencias entre tablas (también bidireccionales), fórmulas en Python con biblioteca estándar y muchas funciones de Excel, vistas de formulario, tarjeta y gráfico, y reglas de acceso granulares. Sirve para inventarios, CRM sencillos, seguimiento de proyectos o publicar datos en una web estática con grist-static.",
+   "como_lo_hace": "El servidor está escrito en TypeScript y ejecuta las fórmulas en un sandbox de Python; cada documento es un archivo SQLite autocontenido, legible por cualquier herramienta SQLite y fácil de respaldar. Se prueba con `docker run -p 8484:8484 -it gristlabs/grist` y se persiste montando `/persist`; existen además una app de escritorio (grist-desktop) y una compilación solo navegador (grist-static). Ofrece API REST y webhooks.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API REST y los webhooks de Grist permiten disparar flujos de Activepieces cuando cambia una fila o escribir resultados de vuelta en una tabla (combinación por arquitectura).",
+     "orden_instalacion": "Grist en marcha con una clave de API; después crea en Activepieces el flujo con peticiones HTTP o webhook."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Un documento .grist es SQLite: DuckDB puede adjuntarlo con su extensión sqlite para consultas analíticas sin tocar el servidor (combinación por arquitectura).",
+     "orden_instalacion": "Copia el documento .grist; después ábrelo en DuckDB en modo solo lectura."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Grist se distribuye como imagen Docker de un solo contenedor, fácil de desplegar y respaldar desde Coolify con su volumen /persist (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego crea el servicio con la imagen gristlabs/grist y un volumen persistente."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir fórmulas Python o scripts contra la API REST de Grist para migrar o limpiar datos (combinación por arquitectura).",
+     "orden_instalacion": "Grist accesible y una clave de API de un documento de prueba; después pide al agente el script."
+    }
+   ],
+   "notas": "Alternativas (elige una): baserow, teable, nocodb. Si activas el asistente de IA, las fórmulas y el contexto se envían al proveedor configurado.",
+   "fuentes": [
+    "https://github.com/gristlabs/grist-core/blob/main/README.md",
+    "https://support.getgrist.com/self-managed/"
+   ],
+   "github": {
+    "name_with_owner": "gristlabs/grist-core",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.7.22 (2026-10-29)"
+   }
+  },
+  "airflow": {
+   "que_es": "Plataforma de orquestación de workflows de la Apache Software Foundation (Apache-2.0), creada en Airbnb en 2014 y proyecto de nivel superior de Apache. Muy madura y usada en producción por miles de organizaciones; la serie 3.x es la actual.",
+   "que_hace": "Permite definir, programar y monitorizar flujos de trabajo como código: cada DAG declara tareas y dependencias, y Airflow las ejecuta por calendario, eventos o activos de datos, con reintentos, backfills, alertas y una interfaz web con logs y estado. Sus paquetes de proveedores conectan con nubes, bases de datos y servicios externos.",
+   "como_lo_hace": "Escrito en Python; se instala con pip usando los archivos de constraints oficiales, o con la imagen Docker y el chart de Helm. Necesita una base de metadatos (PostgreSQL o MySQL en producción), un scheduler, el servidor de API e interfaz y un ejecutor (local, Celery o Kubernetes). Cada versión declara las versiones de Python y Kubernetes soportadas.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Una tarea de Airflow puede ejecutar transformaciones con DuckDB sobre Parquet o CSV sin levantar un almacén de datos (combinación por arquitectura).",
+     "orden_instalacion": "Instala duckdb en el entorno de los workers; después llama a DuckDB desde una tarea Python."
+    },
+    {
+     "id": "polars",
+     "motivo": "Las tareas Python del DAG pueden usar Polars para transformar lotes grandes en memoria antes de cargarlos (combinación por arquitectura).",
+     "orden_instalacion": "Añade polars a la imagen o al entorno de los workers; luego úsalo dentro de las tareas."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Airflow publica métricas por StatsD u OpenTelemetry que se pueden visualizar en Grafana a través de Prometheus u otro backend (combinación por arquitectura).",
+     "orden_instalacion": "Configura las métricas de Airflow y el exportador o colector; después añade la fuente de datos y el panel en Grafana."
+    },
+    {
+     "id": "mlflow",
+     "motivo": "Airflow programa los pasos de entrenamiento y evaluación y MLflow registra parámetros, métricas y modelos de cada ejecución (combinación por arquitectura).",
+     "orden_instalacion": "Servidor de MLflow primero; después tareas de Airflow que usen su cliente con MLFLOW_TRACKING_URI."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Los DAGs son Python normal: un agente de código puede escribirlos y probarlos con `airflow dags test` en un entorno de desarrollo (combinación por arquitectura).",
+     "orden_instalacion": "Entorno de Airflow de pruebas; después pide al agente el DAG y pruébalo antes de desplegarlo."
+    },
+    {
+     "id": "dbt",
+     "motivo": "Combinación recíproca: dbt lo enlaza como «Airflow se usa habitualmente para programar ejecuciones de dbt (por ejemplo con Astronomer Cosmos u operadores Bash)».",
+     "orden_instalacion": "Orden indicado desde dbt: Instala dbt en el entorno de Airflow; después crea un DAG que ejecute `dbt build`.",
+     "reciproca_de": "dbt"
+    }
+   ],
+   "notas": "Alternativas (elige una): prefect, dagster, kestra. Instalar sin el archivo de constraints suele romper dependencias.",
+   "fuentes": [
+    "https://github.com/apache/airflow/blob/main/README.md",
+    "https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html",
+    "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/metrics.html"
+   ],
+   "github": {
+    "name_with_owner": "apache/airflow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.4.0 (2026-11-06)"
+   }
+  },
+  "temporal": {
+   "que_es": "Servidor de ejecución duradera de código abierto (MIT) desarrollado por Temporal Technologies, la empresa de los creadores de Cadence en Uber, del que es un fork. Tecnología madura usada en producción; existe una oferta gestionada (Temporal Cloud) aparte.",
+   "que_hace": "Ejecuta workflows definidos como código de forma resiliente: persiste cada paso, reintenta automáticamente actividades fallidas, gestiona temporizadores de días o meses y permite consultar, señalar o cancelar ejecuciones en curso. Se usa para orquestar microservicios, transacciones largas, pipelines y, cada vez más, agentes de IA que deben sobrevivir a caídas.",
+   "como_lo_hace": "El servidor está escrito en Go y almacena el historial en Cassandra, PostgreSQL, MySQL o SQLite (desarrollo); la lógica vive en workers del usuario que usan los SDK oficiales. Para empezar basta la CLI (`brew install temporal` y `temporal server start-dev`), que incluye interfaz web; en producción se despliega con Helm o Docker y una base de datos persistente.",
+   "combina_con": [
+    {
+     "id": "openai-agents-python",
+     "motivo": "El SDK de Python de Temporal publica una integración con el OpenAI Agents SDK para ejecutar agentes como workflows duraderos con reintentos y reanudación.",
+     "orden_instalacion": "Servidor de Temporal primero; después instala el SDK de Python de Temporal con la integración y define el agente dentro de un workflow."
+    },
+    {
+     "id": "pydantic-ai",
+     "motivo": "Pydantic AI documenta ejecución duradera de agentes sobre Temporal: cada llamada a modelo y herramienta se convierte en actividad reintentable.",
+     "orden_instalacion": "Servidor de Temporal en marcha; después instala pydantic-ai con su extra de Temporal y registra el worker."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "El SDK de Python de Temporal incluye un módulo contrib para LangGraph que ejecuta grafos de agentes como workflows duraderos.",
+     "orden_instalacion": "Servidor de Temporal primero; después usa el módulo temporalio.contrib.langgraph con tu grafo."
+    },
+    {
+     "id": "grafana",
+     "motivo": "El servidor y los SDK exponen métricas de Prometheus y Temporal mantiene paneles de Grafana para vigilar latencias y colas de tareas.",
+     "orden_instalacion": "Configura la exportación de métricas a Prometheus; después importa los paneles en Grafana."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir workflows y actividades con los SDK y probarlos contra el servidor de desarrollo local (combinación por arquitectura).",
+     "orden_instalacion": "`temporal server start-dev` primero; después pide al agente el worker y ejecútalo en local."
+    }
+   ],
+   "notas": "Temporal no es un orquestador de datos por calendario como Airflow: modela procesos de aplicación duraderos. La persistencia de producción requiere una base de datos dimensionada.",
+   "fuentes": [
+    "https://github.com/temporalio/temporal/blob/main/README.md",
+    "https://docs.temporal.io/",
+    "https://ai.pydantic.dev/durable_execution/temporal/",
+    "https://github.com/temporalio/sdk-python/tree/main/temporalio/contrib",
+    "https://github.com/temporalio/dashboards"
+   ],
+   "github": {
+    "name_with_owner": "temporalio/temporal",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.32.2 (2026-11-02)"
+   }
+  },
+  "teable": {
+   "que_es": "Plataforma de base de datos sin código de código abierto mantenida por Teable (teableio). El núcleo es AGPL-3.0 y los paquetes compartidos MIT; las funciones Enterprise se activan con licencia comercial. Proyecto muy activo que se posiciona como alternativa a Airtable sobre PostgreSQL.",
+   "que_hace": "Ofrece tablas con vistas de cuadrícula, formulario, kanban, galería y calendario; fórmulas, agrupación, historial de registros, colaboración en tiempo real, consultas SQL y millones de filas. En sus versiones recientes añade chat sobre los datos, automatizaciones disparadas por cambios, horarios o webhooks con pasos de IA, rellenado de campos con IA y un constructor de apps que despliega en contenedores aislados.",
+   "como_lo_hace": "Está escrito en TypeScript y usa PostgreSQL como almacenamiento, de modo que los datos son tablas SQL reales. El README describe tres formas de ejecutarlo (nube, autoalojado con Docker y desarrollo con pnpm) y una arquitectura con sandbox de agentes en contenedores. Expone API REST y SDK.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks y la API de Teable permiten encadenar sus registros con flujos de Activepieces hacia otras apps (combinación por arquitectura).",
+     "orden_instalacion": "Teable con un token de API; después crea en Activepieces el disparador webhook o las peticiones HTTP."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Teable necesita PostgreSQL: se puede apuntar a una base gestionada como la de Supabase en lugar de mantener una propia (combinación por arquitectura).",
+     "orden_instalacion": "Crea el proyecto de Supabase y su cadena de conexión; después configura Teable con esa base."
+    },
+    {
+     "id": "metabase",
+     "motivo": "Como los datos de Teable viven en tablas PostgreSQL, Metabase puede leerlos con un usuario de solo lectura para dashboards (combinación por arquitectura).",
+     "orden_instalacion": "Teable con datos; después conecta Metabase a PostgreSQL con permisos de lectura."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Teable se despliega con Docker Compose y PostgreSQL, un patrón que Coolify gestiona con volúmenes y copias (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego importa el Compose de Teable y configura la base de datos."
+    }
+   ],
+   "notas": "Alternativas (elige una): grist-core, baserow, nocodb. Las funciones de IA y el sandbox de agentes añaden requisitos de contenedores y de proveedor.",
+   "fuentes": [
+    "https://github.com/teableio/teable/blob/develop/README.md",
+    "https://help.teable.ai/en/deploy/architecture"
+   ],
+   "github": {
+    "name_with_owner": "teableio/teable",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "release.2026-11-13T02-21-01Z.3890 (2026-11-13)"
+   }
+  },
+  "baserow": {
+   "que_es": "Plataforma de base de datos sin código de Baserow B.V. con núcleo MIT y funciones premium y enterprise bajo licencia propia. Proyecto maduro que se trasladó de GitLab a GitHub; ofrece nube y autoalojamiento.",
+   "que_hace": "Permite crear bases relacionales con interfaz de hoja de cálculo, publicar aplicaciones y portales en un dominio propio, automatizar tareas repetitivas, montar dashboards y usar un asistente de IA (Kuma) para generar estructuras. Es API-first y headless, útil como backend sencillo de herramientas internas.",
+   "como_lo_hace": "Usa Django, Vue.js y PostgreSQL. La vía más rápida es un único contenedor (`docker run -v baserow_data:/baserow/data -p 80:80 -p 443:443 baserow/baserow:<versión>`); también hay Docker Compose, Helm y otras guías. Cada tabla expone endpoints REST documentados automáticamente.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API REST y los webhooks de Baserow permiten disparar o alimentar flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Baserow con un token de base de datos; después crea el flujo en Activepieces."
+    },
+    {
+     "id": "metabase",
+     "motivo": "Metabase puede leer la base PostgreSQL de Baserow con un usuario de solo lectura para análisis más complejos que sus dashboards (combinación por arquitectura).",
+     "orden_instalacion": "Baserow con PostgreSQL accesible; después conecta Metabase con permisos de lectura."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El contenedor único de Baserow encaja con un despliegue gestionado por Coolify con volumen persistente (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego crea el servicio con la imagen baserow/baserow y el volumen de datos."
+    }
+   ],
+   "notas": "Alternativas (elige una): grist-core, teable, nocodb. Comprueba qué funciones son premium antes de planificar un despliegue.",
+   "fuentes": [
+    "https://github.com/baserow/baserow/blob/develop/README.md",
+    "https://baserow.io/docs/installation/install-with-docker"
+   ],
+   "github": {
+    "name_with_owner": "baserow/baserow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.4.3 (2026-11-14)"
+   }
+  },
+  "prefect": {
+   "que_es": "Framework de orquestación de workflows de Prefect Technologies (Apache-2.0), con servidor autoalojable y una nube comercial (Prefect Cloud). Proyecto maduro en su serie 3.x; requiere Python 3.11 o superior según el README.",
+   "que_hace": "Eleva scripts de Python a flujos de producción: programación, caché, reintentos, concurrencia, lógica condicional, automatizaciones por eventos y seguimiento de cada ejecución. Sirve para pipelines de datos, tareas de ML y cualquier proceso que deba ejecutarse de forma fiable.",
+   "como_lo_hace": "Se instala con `pip install -U prefect` o `uv add prefect`; los flujos son funciones Python decoradas con `@flow` y `@task`. El servidor (`prefect server start`) ofrece interfaz y API; los despliegues se ejecutan mediante workers sobre procesos, Docker o Kubernetes. El README enlaza guías para conectar agentes mediante plugins o MCP.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Las tareas de Prefect pueden transformar archivos con DuckDB y pasar resultados entre pasos sin un almacén externo (combinación por arquitectura).",
+     "orden_instalacion": "Instala duckdb en el entorno del flujo; después úsalo dentro de las tareas."
+    },
+    {
+     "id": "polars",
+     "motivo": "Polars acelera las transformaciones en memoria dentro de tareas de Prefect (combinación por arquitectura).",
+     "orden_instalacion": "Añade polars al entorno del worker; luego llámalo en las tareas."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Prefect documenta guías para conectar agentes de código mediante plugins o MCP y gestionar flujos desde la CLI.",
+     "orden_instalacion": "Prefect instalado y servidor accesible; después sigue la guía de agentes de Prefect para Claude Code."
+    },
+    {
+     "id": "mlflow",
+     "motivo": "Prefect orquesta entrenamientos y evaluaciones mientras MLflow registra métricas y modelos (combinación por arquitectura).",
+     "orden_instalacion": "Servidor de MLflow primero; después tareas de Prefect con su cliente."
+    }
+   ],
+   "notas": "Alternativas (elige una): airflow, dagster, kestra.",
+   "fuentes": [
+    "https://github.com/PrefectHQ/prefect/blob/main/README.md",
+    "https://www.prefect.io/agents"
+   ],
+   "github": {
+    "name_with_owner": "PrefectHQ/prefect",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.9.3 (2026-11-13)"
+   }
+  },
+  "dagster": {
+   "que_es": "Orquestador de pipelines de datos de Dagster Labs (Apache-2.0), con oferta comercial gestionada (Dagster+). Proyecto maduro; el README indica soporte oficial de Python 3.9 a 3.14.",
+   "que_hace": "Gestiona activos de datos (tablas, conjuntos de datos, modelos de ML, informes) a lo largo de todo el ciclo: desarrollo local, tests, staging y producción. Programa materializaciones, rastrea linaje y metadatos, detecta activos desactualizados e integra herramientas como dbt, DuckDB, Snowflake o Spark mediante bibliotecas propias.",
+   "como_lo_hace": "Los activos se declaran como funciones Python decoradas y sus dependencias se deducen de los parámetros. Se instala con `uv add dagster dagster-webserver dagster-dg-cli` y se arranca la interfaz en local; en producción usa una base PostgreSQL, un daemon de programación y ejecutores sobre procesos, Docker o Kubernetes.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Dagster mantiene una integración oficial con DuckDB (dagster-duckdb) para guardar y leer activos como tablas DuckDB.",
+     "orden_instalacion": "Instala dagster-duckdb; después configura el recurso o el IO manager de DuckDB en las definiciones."
+    },
+    {
+     "id": "polars",
+     "motivo": "Existe la integración dagster-polars para manejar DataFrames de Polars como activos con IO managers en Parquet o Delta.",
+     "orden_instalacion": "Instala dagster-polars; después declara los activos que devuelven DataFrames de Polars."
+    },
+    {
+     "id": "mlflow",
+     "motivo": "Dagster puede materializar modelos como activos mientras MLflow registra parámetros y métricas de entrenamiento (combinación por arquitectura).",
+     "orden_instalacion": "Servidor de MLflow primero; después activos de Dagster que usen su cliente."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Las definiciones son Python y la CLI dg permite crear y validar proyectos, lo que facilita que un agente de código los genere y pruebe (combinación por arquitectura).",
+     "orden_instalacion": "Proyecto Dagster local; después pide al agente activos nuevos y valídalos con la CLI."
+    },
+    {
+     "id": "dbt",
+     "motivo": "Combinación recíproca: dbt lo enlaza como «La biblioteca dagster-dbt carga los modelos de un proyecto dbt como assets de Dagster para orquestarlos y monitorizarlos».",
+     "orden_instalacion": "Orden indicado desde dbt: Instala `dagster-dbt`; después carga el proyecto dbt con `@dbt_assets`.",
+     "reciproca_de": "dbt"
+    },
+    {
+     "id": "dlt",
+     "motivo": "Combinación recíproca: dlt (data load tool) lo enlaza como «La biblioteca dagster-dlt carga los recursos de dlt como assets de Dagster».",
+     "orden_instalacion": "Orden indicado desde dlt (data load tool): Instala `dagster-dlt`; después declara los assets con `@dlt_assets`.",
+     "reciproca_de": "dlt"
+    }
+   ],
+   "notas": "Alternativas (elige una): airflow, prefect, kestra.",
+   "fuentes": [
+    "https://github.com/dagster-io/dagster/blob/master/README.md",
+    "https://docs.dagster.io/integrations/libraries/duckdb",
+    "https://docs.dagster.io/integrations/libraries/polars"
+   ],
+   "github": {
+    "name_with_owner": "dagster-io/dagster",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.13.30 (2026-11-12)"
+   }
+  },
+  "agentscope": {
+   "que_es": "Framework de agentes de código abierto (Apache-2.0) desarrollado por el equipo de AgentScope (origen en Alibaba/Tongyi). La versión 2.0 se presenta como lista para producción; requiere Python 3.11 o superior y tiene desarrollo muy activo.",
+   "que_hace": "Permite construir agentes que razonan y usan herramientas: agentes ReAct, equipos con líder que delega (TeamPipeline), procedimientos operativos estándar, enrutado de modelos, agentes de voz en tiempo real por WebRTC y un servicio de agentes con historial compartido. Gestiona herramientas Python, servidores MCP y skills, con ejecución aislada local, Docker o en sandbox remoto.",
+   "como_lo_hace": "Se instala con `uv pip install agentscope` (o desde el código con `uv pip install -e .`); el frontend del servicio usa pnpm. Los modelos se configuran por proveedor (OpenAI, Anthropic, Gemini, DashScope, Ollama, entre otros) y las herramientas MCP se registran en el toolkit. La documentación cubre bloques de construcción, despliegue y trazas.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "AgentScope incluye cliente de modelos para Ollama, de modo que los agentes pueden razonar con modelos locales.",
+     "orden_instalacion": "Ollama con un modelo descargado; después configura el modelo de Ollama en AgentScope."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "El toolkit de AgentScope registra servidores MCP; FastMCP sirve para escribir esos servidores con herramientas propias (combinación por arquitectura).",
+     "orden_instalacion": "Escribe y arranca el servidor con FastMCP; después regístralo en el toolkit del agente."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Las trazas de agentes (OpenTelemetry) pueden enviarse a una plataforma de observabilidad como Langfuse (combinación por arquitectura) [DATO NO VERIFICADO: configuración concreta].",
+     "orden_instalacion": "Langfuse en marcha; después configura el exportador de trazas en AgentScope."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Un proxy LiteLLM con API compatible con OpenAI permite cambiar de proveedor sin tocar el código de los agentes (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; después apunta el cliente OpenAI de AgentScope a su URL."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: crewai, ag2, camel.",
+   "fuentes": [
+    "https://github.com/agentscope-ai/agentscope/blob/main/README.md",
+    "https://docs.agentscope.io/"
+   ],
+   "github": {
+    "name_with_owner": "agentscope-ai/agentscope",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.0.12 (2026-11-16)"
+   }
+  },
+  "openmanus": {
+   "que_es": "Implementación abierta (MIT) de un agente general al estilo Manus, creada por miembros de MetaGPT y la comunidad FoundationAgents. Los autores la describen como una implementación sencilla; ritmo de cambios alto y sin versiones estables marcadas.",
+   "que_hace": "Recibe una instrucción en lenguaje natural y la resuelve en varios pasos: navega con Browser Use, ejecuta código Python, edita archivos y puede trabajar con flujos de varios agentes. Sirve para experimentar con agentes autónomos de propósito general.",
+   "como_lo_hace": "Se instala clonando el repositorio y creando un entorno con conda o uv (`uv venv --python 3.12` y `uv pip install -r requirements.txt`); la configuración del modelo se copia de `config/config.example.toml`. Inicia Browser Use CLI como servidor MCP por defecto; BrowserGym requiere navegadores de Playwright.",
+   "combina_con": [
+    {
+     "id": "browser-use",
+     "motivo": "OpenManus arranca Browser Use CLI como servidor MCP por defecto para sus acciones de navegador.",
+     "orden_instalacion": "Prepara uv y ejecuta `uvx browser-use install`; después lanza OpenManus."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Algunas rutas (BrowserGym) requieren los navegadores de Playwright instalados.",
+     "orden_instalacion": "Instala los navegadores de Playwright; después ejecuta las tareas que los usan."
+    },
+    {
+     "id": "litellm",
+     "motivo": "OpenManus usa una API compatible con OpenAI configurable: un proxy LiteLLM permite apuntar a otros proveedores o a modelos locales (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM en marcha; después pon su base_url en config.toml."
+    }
+   ],
+   "notas": "El agente ejecuta código y navega por sí mismo: úsalo en un entorno aislado y con datos de prueba.",
+   "fuentes": [
+    "https://github.com/FoundationAgents/OpenManus/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "FoundationAgents/OpenManus",
+    "archived": false,
+    "pushed_at": "2026-11-02",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.3.0 (2025-04-10)"
+   }
+  },
+  "chatdev": {
+   "que_es": "Proyecto de investigación y plataforma de OpenBMB (Tsinghua) bajo Apache-2.0. ChatDev 2.0 (DevAll), publicada en enero de 2026, es una plataforma multiagente sin código; la versión 1.x, la «empresa de software virtual», se conserva en una rama legacy.",
+   "que_hace": "Permite construir y ejecutar sistemas multiagente personalizados mediante configuración: roles, flujos y herramientas para tareas de desarrollo, análisis o generación de contenidos, incluida generación 3D con Blender. Acompaña artículos sobre colaboración multiagente (MacNet, co-aprendizaje experiencial, orquestación evolutiva).",
+   "como_lo_hace": "Backend en Python y frontend web (npm); se ejecuta en local o con `docker compose up --build`. Requiere credenciales de un proveedor de modelos. Los flujos de ejemplo documentan dependencias externas, como Blender y blender-mcp para escenas 3D.",
+   "combina_con": [
+    {
+     "id": "blender",
+     "motivo": "El flujo de generación 3D de ChatDev requiere Blender instalado.",
+     "orden_instalacion": "Instala Blender y blender-mcp; después ejecuta el flujo 3D."
+    },
+    {
+     "id": "blender-mcp",
+     "motivo": "ChatDev documenta blender-mcp como requisito de su flujo de construcción 3D.",
+     "orden_instalacion": "Blender primero, luego blender-mcp, y por último el flujo de ChatDev."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Un proxy LiteLLM compatible con OpenAI permite usar otros proveedores o modelos locales con ChatDev (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM en marcha; después configura su URL como endpoint del modelo."
+    }
+   ],
+   "notas": "El código generado por agentes debe revisarse antes de usarse; ejecútalo en contenedores.",
+   "fuentes": [
+    "https://github.com/OpenBMB/ChatDev/blob/main/README.md",
+    "https://arxiv.org/abs/2307.07924"
+   ],
+   "github": {
+    "name_with_owner": "OpenBMB/ChatDev",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.2.0 (2026-03-23)"
+   }
+  },
+  "camel": {
+   "que_es": "Framework multiagente de código abierto (Apache-2.0) de la comunidad CAMEL-AI, nacido del artículo «CAMEL: Communicative Agents» (2023). Orientado a investigación sobre las leyes de escala de los agentes; desarrollo activo.",
+   "que_hace": "Ofrece agentes conversacionales con roles, sociedades de agentes, generación de datos sintéticos, automatización de tareas con herramientas y simulación de mundos. Incluye toolkits (búsqueda, navegador, código, MCP), memorias y lectores de datos, con ejemplos y cookbooks.",
+   "como_lo_hace": "Se instala con `pip install camel-ai` (extras como `camel-ai[web_tools]`); los modelos se eligen por plataforma (OpenAI, Anthropic, Ollama, vLLM, entre otros). Admite almacenes vectoriales como Qdrant y cookbooks con Firecrawl para ingestar webs.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "CAMEL soporta Ollama como plataforma de modelos para ejecutar agentes con modelos locales.",
+     "orden_instalacion": "Ollama con un modelo descargado; después crea el modelo con la plataforma Ollama en CAMEL."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "CAMEL incluye almacenamiento vectorial en Qdrant para la memoria y la recuperación de los agentes.",
+     "orden_instalacion": "Qdrant en marcha; después configura el almacenamiento Qdrant en CAMEL."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Un cookbook oficial de CAMEL muestra tres formas de ingestar webs con Firecrawl.",
+     "orden_instalacion": "Clave o instancia de Firecrawl; después usa el lector de Firecrawl de CAMEL."
+    },
+    {
+     "id": "vllm",
+     "motivo": "CAMEL admite vLLM como plataforma de modelos para servir modelos abiertos con API compatible con OpenAI.",
+     "orden_instalacion": "vLLM sirviendo el modelo; después apunta CAMEL a su endpoint."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: crewai, ag2, agentscope.",
+   "fuentes": [
+    "https://github.com/camel-ai/camel/blob/master/README.md",
+    "https://docs.camel-ai.org/cookbooks/data_processing/ingest_data_from_websites_with_Firecrawl"
+   ],
+   "github": {
+    "name_with_owner": "camel-ai/camel",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.2.90 (2026-03-22)"
+   }
+  },
+  "rsshub": {
+   "que_es": "Red y servidor de feeds RSS de código abierto (AGPL-3.0) creado por DIYgod y mantenido por una comunidad amplia. Muy usado (más de 5.000 instancias según el proyecto) y en desarrollo continuo.",
+   "que_hace": "Convierte contenidos de redes sociales, webs de noticias, plataformas de vídeo y otros servicios en feeds RSS, Atom o JSON mediante rutas parametrizables. Se complementa con extensiones como RSSHub Radar para descubrir feeds y con lectores como Folo.",
+   "como_lo_hace": "Escrito en TypeScript sobre Node.js; se usa la instancia pública rsshub.app o se autoaloja con Docker (imagen diygod/rsshub) o npm. Algunas rutas necesitan cookies, claves o un navegador sin interfaz configurados por variables de entorno; admite caché con Redis.",
+   "combina_con": [
+    {
+     "id": "freshrss",
+     "motivo": "FreshRSS se suscribe a las rutas de RSSHub como a cualquier feed y las organiza para lectura (combinación por arquitectura).",
+     "orden_instalacion": "RSSHub en marcha; después añade sus URLs como feeds en FreshRSS."
+    },
+    {
+     "id": "miniflux",
+     "motivo": "Miniflux lee los feeds generados por RSSHub y aplica sus filtros y su lectura minimalista (combinación por arquitectura).",
+     "orden_instalacion": "RSSHub primero; después suscribe sus rutas en Miniflux."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Un disparador de RSS en Activepieces puede reaccionar a nuevos elementos de una ruta de RSSHub (combinación por arquitectura).",
+     "orden_instalacion": "RSSHub accesible desde Activepieces; después crea el flujo con el disparador de feed."
+    },
+    {
+     "id": "coolify",
+     "motivo": "RSSHub se publica como imagen Docker con Redis opcional, un despliegue sencillo de gestionar en Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego crea el servicio con la imagen diygod/rsshub."
+    }
+   ],
+   "notas": "La instancia pública puede limitar peticiones; para uso intensivo conviene autoalojarla.",
+   "fuentes": [
+    "https://github.com/DIYgod/RSSHub/blob/master/README.md",
+    "https://docs.rsshub.app/"
+   ],
+   "github": {
+    "name_with_owner": "DIYgod/RSSHub",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2026.11.16-8658.b4990a8 (2026-11-16)"
+   }
+  },
+  "gallery-dl": {
+   "que_es": "Herramienta de línea de comandos de código abierto (GPL-2.0) creada por Mike Fährmann y mantenida durante años. El README anuncia que el desarrollo activo se ha trasladado a Codeberg; GitHub sigue recibiendo cambios.",
+   "que_hace": "Descarga galerías, colecciones y publicaciones de cientos de sitios de alojamiento de imágenes y redes (lista de sitios soportados en la documentación), con opciones de filtrado, autenticación, archivo de descargas previas y plantillas de nombres de archivo.",
+   "como_lo_hace": "Requiere Python 3.8+ y Requests; opcionalmente yt-dlp o youtube-dl para vídeos HLS/DASH y FFmpeg para convertir animaciones Ugoira. Se instala con pip, Homebrew, ejecutables o Docker, y se configura con un archivo JSON.",
+   "combina_con": [
+    {
+     "id": "yt-dlp",
+     "motivo": "gallery-dl usa yt-dlp de forma opcional para descargas de vídeo HLS/DASH e integración ytdl.",
+     "orden_instalacion": "Instala yt-dlp en el mismo entorno; después activa la integración en la configuración."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "FFmpeg es la dependencia opcional para convertir animaciones Ugoira de Pixiv.",
+     "orden_instalacion": "Instala FFmpeg en el PATH; después configura el postprocesador correspondiente."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Las imágenes descargadas pueden escalarse en lote con Real-ESRGAN antes de usarlas (combinación por arquitectura).",
+     "orden_instalacion": "Descarga primero con gallery-dl; después procesa la carpeta con Real-ESRGAN."
+    },
+    {
+     "id": "upscayl",
+     "motivo": "Combinación recíproca: Upscayl lo enlaza como «Las colecciones descargadas con gallery-dl se pueden ampliar en lote con Upscayl (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Upscayl: Descarga primero con gallery-dl; después procesa la carpeta en Upscayl.",
+     "reciproca_de": "upscayl"
+    }
+   ],
+   "notas": "Repositorio canónico de desarrollo: Codeberg (mikf/gallery-dl); GitHub se mantiene como espejo con actividad.",
+   "fuentes": [
+    "https://github.com/mikf/gallery-dl/blob/master/README.rst",
+    "https://codeberg.org/mikf/gallery-dl"
+   ],
+   "origen": {
+    "host": "codeberg",
+    "name_with_owner": "mikf/gallery-dl",
+    "url": "https://codeberg.org/mikf/gallery-dl",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "latest_release": "v1.32.20 (2026-11-14)",
+    "license": "GPL-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   },
+   "github": {
+    "name_with_owner": "mikf/gallery-dl",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.32.20 (2026-11-14)"
+   }
+  },
+  "freshrss": {
+   "que_es": "Agregador RSS autoalojado de código abierto (AGPL-3.0) mantenido por la comunidad FreshRSS. Proyecto maduro y traducido a más de 20 idiomas.",
+   "que_hace": "Recoge y organiza feeds RSS/Atom y JSON para varios usuarios, con modo de lectura anónimo, etiquetas, consultas de usuario compartibles en HTML, RSS y OPML, notificaciones instantáneas por WebSub y extracción básica de webs sin feed mediante XPath. Admite varios métodos de inicio de sesión, incluido OpenID Connect.",
+   "como_lo_hace": "Escrito en PHP; funciona con SQLite, MySQL/MariaDB o PostgreSQL y se instala en un servidor web o con la imagen Docker oficial. Ofrece API compatible con clientes móviles, CLI y sistema de extensiones.",
+   "combina_con": [
+    {
+     "id": "rsshub",
+     "motivo": "RSSHub genera feeds para webs sin RSS que FreshRSS puede suscribir (combinación por arquitectura).",
+     "orden_instalacion": "RSSHub en marcha; después añade sus rutas como feeds en FreshRSS."
+    },
+    {
+     "id": "wallabag",
+     "motivo": "FreshRSS incluye wallabag entre sus servicios para compartir artículos y guardarlos para leer más tarde.",
+     "orden_instalacion": "wallabag accesible; después configura su URL en las opciones de compartir de FreshRSS."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker oficial de FreshRSS se despliega y respalda fácilmente desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego crea el servicio con la imagen de FreshRSS y un volumen de datos."
+    }
+   ],
+   "notas": "Alternativas (elige una): miniflux.",
+   "fuentes": [
+    "https://github.com/FreshRSS/FreshRSS/blob/edge/README.md",
+    "https://freshrss.github.io/FreshRSS/en/users/08_sharing_services.html"
+   ],
+   "github": {
+    "name_with_owner": "FreshRSS/FreshRSS",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.30.4 (2026-10-21)"
+   }
+  },
+  "wallabag": {
+   "que_es": "Aplicación «leer más tarde» de código abierto (MIT) mantenida por la comunidad wallabag desde 2013. Madura, con apps oficiales para Android e iOS y servicio alojado (wallabag.it) aparte.",
+   "que_hace": "Guarda páginas web extrayendo el contenido principal sin anuncios ni ventanas emergentes, permite etiquetar, anotar, marcar como leído y exportar a formatos como EPUB o PDF, y sincroniza con apps móviles y lectores electrónicos compatibles.",
+   "como_lo_hace": "Escrita en PHP con Symfony; se instala en un servidor con los requisitos documentados o con Docker. Ofrece API REST con OAuth usada por las apps y la extensión wallabagger.",
+   "combina_con": [
+    {
+     "id": "freshrss",
+     "motivo": "FreshRSS puede enviar artículos a wallabag mediante su servicio de compartir integrado.",
+     "orden_instalacion": "wallabag primero; después configúralo en FreshRSS."
+    },
+    {
+     "id": "miniflux",
+     "motivo": "Miniflux integra wallabag entre sus servicios de terceros para guardar artículos.",
+     "orden_instalacion": "wallabag con credenciales de API; después actívalo en las integraciones de Miniflux."
+    },
+    {
+     "id": "coolify",
+     "motivo": "wallabag se despliega con Docker y una base de datos, gestionable desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego despliega wallabag con su base de datos y volúmenes."
+    }
+   ],
+   "notas": "Alternativa cercana en el catálogo: karakeep (marcadores con IA).",
+   "fuentes": [
+    "https://github.com/wallabag/wallabag/blob/master/README.md",
+    "https://doc.wallabag.org/"
+   ],
+   "github": {
+    "name_with_owner": "wallabag/wallabag",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.6.17 (2026-11-13)"
+   }
+  },
+  "miniflux": {
+   "que_es": "Lector de feeds de código abierto (Apache-2.0) creado por Frédéric Guillot. Proyecto maduro, deliberadamente minimalista y «opinionated».",
+   "que_hace": "Lee Atom, RSS y JSON Feed, importa y exporta OPML, reproduce adjuntos y vídeos de YouTube, organiza por categorías y marcadores, comparte artículos y ofrece búsqueda de texto completo. Elimina píxeles de rastreo y parámetros de seguimiento, y se integra con más de 25 servicios.",
+   "como_lo_hace": "Escrito en Go como binario único; requiere PostgreSQL. Se instala con paquetes, Docker o binarios, y ofrece API propia y compatibilidad con clientes Fever y Google Reader.",
+   "combina_con": [
+    {
+     "id": "rsshub",
+     "motivo": "Miniflux suscribe las rutas de RSSHub para seguir webs que no publican feeds (combinación por arquitectura).",
+     "orden_instalacion": "RSSHub en marcha; después añade sus rutas en Miniflux."
+    },
+    {
+     "id": "wallabag",
+     "motivo": "wallabag figura entre las integraciones documentadas de Miniflux para guardar artículos.",
+     "orden_instalacion": "wallabag con credenciales; después actívalo en Miniflux."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Miniflux y PostgreSQL se despliegan con Docker Compose, un patrón gestionable desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego el Compose de Miniflux con su base de datos."
+    }
+   ],
+   "notas": "Alternativas (elige una): freshrss.",
+   "fuentes": [
+    "https://github.com/miniflux/v2/blob/main/README.md",
+    "https://miniflux.app/docs/"
+   ],
+   "github": {
+    "name_with_owner": "miniflux/v2",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.3.5 (2026-11-02)"
+   }
+  },
+  "colly": {
+   "que_es": "Biblioteca de scraping de código abierto (Apache-2.0) para Go, mantenida por la comunidad gocolly. Madura y estable en su versión v2; actividad moderada.",
+   "que_hace": "Facilita escribir crawlers, scrapers y spiders que extraen datos estructurados para minería, procesamiento o archivo. Ofrece más de mil peticiones por segundo en un núcleo según el README, retardos y concurrencia máxima por dominio, cookies y sesiones automáticas, ejecución síncrona, asíncrona o paralela, caché y conversión de codificaciones.",
+   "como_lo_hace": "Se usa como módulo Go (`github.com/gocolly/colly/v2`) con callbacks `OnHTML`, `OnRequest` y `OnResponse`; incluye ejemplos en `_examples`. No ejecuta JavaScript: para páginas dinámicas se necesita un navegador aparte.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Los resultados que Colly escribe en CSV o JSON se pueden consultar directamente con DuckDB (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta el crawler para generar archivos; después consúltalos con DuckDB."
+    },
+    {
+     "id": "polars",
+     "motivo": "Polars carga y limpia los datos extraídos por Colly para analizarlos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta a CSV o JSON; después procésalos con Polars."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir y ajustar los callbacks del crawler en Go a partir de la estructura de una página (combinación por arquitectura).",
+     "orden_instalacion": "Proyecto Go con Colly; después pide al agente el extractor y pruébalo con pocas páginas."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: scrapy (Python), crawlee (Node/Python).",
+   "fuentes": [
+    "https://github.com/gocolly/colly/blob/master/README.md",
+    "https://pkg.go.dev/github.com/gocolly/colly/v2"
+   ],
+   "github": {
+    "name_with_owner": "gocolly/colly",
+    "archived": false,
+    "pushed_at": "2026-10-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.2.0 (2025-03-27)"
+   }
+  },
+  "katana": {
+   "que_es": "Crawler de código abierto (MIT) de ProjectDiscovery, el equipo de nuclei y subfinder. Muy activo y orientado a reconocimiento de seguridad.",
+   "que_hace": "Rastrea sitios de forma rápida y configurable: modo estándar y headless, análisis y rastreo de JavaScript, relleno automático de formularios, control de alcance por campos o expresiones regulares, clasificación de páginas y formularios con un modelo descargado automáticamente, y salidas filtrables en texto o JSON.",
+   "como_lo_hace": "Escrito en Go; requiere una versión reciente de Go para `go install` (con CGO) o se usa con la imagen Docker. El modo headless usa Chrome del sistema y puede conectarse a una sesión de navegador ya autenticada con depuración remota; admite proxy.",
+   "combina_con": [
+    {
+     "id": "mitmproxy",
+     "motivo": "Katana admite proxy en modo headless: enviar su tráfico a mitmproxy permite inspeccionar y registrar las peticiones del rastreo (combinación por arquitectura).",
+     "orden_instalacion": "Arranca mitmproxy en un puerto local; después pasa la opción de proxy a Katana."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "La salida JSON de Katana se puede consultar con DuckDB para filtrar y agrupar endpoints (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta Katana con salida JSON; después consulta el archivo con DuckDB."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede lanzar Katana sobre un objetivo autorizado y resumir los endpoints descubiertos (combinación por arquitectura).",
+     "orden_instalacion": "Instala Katana y define el alcance permitido; después pide al agente el análisis."
+    },
+    {
+     "id": "theharvester",
+     "motivo": "Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado.",
+     "reciproca_de": "theharvester"
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Combinación recíproca: Nuclei lo enlaza como «katana rastrea URLs y endpoints que Nuclei escanea a continuación».",
+     "orden_instalacion": "Orden indicado desde Nuclei: Rastrea con katana; después pasa las URLs a nuclei.",
+     "reciproca_de": "nuclei"
+    },
+    {
+     "id": "subfinder",
+     "motivo": "Combinación recíproca: subfinder lo enlaza como «katana rastrea los subdominios descubiertos para mapear endpoints».",
+     "orden_instalacion": "Orden indicado desde subfinder: Enumera con subfinder; después pasa los hosts a katana.",
+     "reciproca_de": "subfinder"
+    }
+   ],
+   "notas": "Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.",
+   "fuentes": [
+    "https://github.com/projectdiscovery/katana/blob/dev/README.md"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/katana",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.8.0 (2026-10-05)"
+   }
+  },
+  "spotdl": {
+   "que_es": "Descargador de música de línea de comandos de código abierto (MIT) mantenido por la comunidad spotDL; versión 4 estable y activa.",
+   "que_hace": "Encuentra en YouTube las canciones de listas, álbumes o pistas de Spotify y las descarga con carátula, letras y metadatos. Ofrece modos de sincronización de listas, servidor web y varios formatos de salida.",
+   "como_lo_hace": "Escrito en Python; se instala con `pip install spotdl`, ejecutables publicados, Termux o Docker. Requiere FFmpeg (puede descargarlo con su propia opción) y usa yt-dlp para la descarga del audio.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "spotDL necesita FFmpeg para convertir el audio descargado; documenta su instalación.",
+     "orden_instalacion": "Instala FFmpeg o usa la opción de descarga de spotDL; después descarga canciones."
+    },
+    {
+     "id": "yt-dlp",
+     "motivo": "spotDL usa yt-dlp para descargar el audio encontrado en YouTube.",
+     "orden_instalacion": "Se instala como dependencia; mantenlo actualizado si fallan las descargas."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura).",
+     "orden_instalacion": "Descarga con spotDL en una carpeta; después compártela con Syncthing."
+    }
+   ],
+   "notas": "La coincidencia en YouTube no siempre es exacta: revisa versiones en vivo o remezclas.",
+   "fuentes": [
+    "https://github.com/spotDL/spotify-downloader/blob/master/README.md",
+    "https://spotdl.readthedocs.io/en/latest/"
+   ],
+   "github": {
+    "name_with_owner": "spotDL/spotify-downloader",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.6.0 (2026-10-26)"
+   }
+  }
+ }
+}

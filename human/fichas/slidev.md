@@ -29,6 +29,7 @@ Requiere Node.js 22.12+ y se inicia con `npm init slidev`. Usa Vite para la reca
 | [Mermaid](mermaid.md) | Diagramas integrados en Markdown. | Escribe bloques mermaid. |
 | [Claude Code](claude-code.md) | Generar diapositivas en Markdown. (combinación por arquitectura) | Pide al agente el slides.md. |
 | [playwright](playwright.md) | Exportación a PDF o PNG. | Instala playwright-chromium cuando lo pida. |
+| [diagram-design](diagram-design.md) | Combinación recíproca: diagram-design lo enlaza como «Incrustar diagramas en presentaciones. (combinación por arquitectura)». | Orden indicado desde diagram-design: Exporta SVG/PNG e insértalos. |
 
 **Notas:** Alternativas (elige una): marp, reveal.js.
 

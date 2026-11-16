@@ -30,6 +30,7 @@ Lista en Markdown con enlaces a cada `SKILL.md` y una tabla de rutas por agente.
 | [Codex CLI](codex.md) | Agente compatible documentado. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Agente compatible documentado. | Igual que arriba. |
 | [SkillSpector](skillspector.md) | Auditar skills de terceros (combinación por arquitectura). | Antes de instalarlas. |
+| [awesome-agents](awesome-agents.md) | Combinación recíproca: awesome-agents lo enlaza como «Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura)». | Orden indicado desde awesome-agents: No aplica. |
 
 **Notas:** Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.
 

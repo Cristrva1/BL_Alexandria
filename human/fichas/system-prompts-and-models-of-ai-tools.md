@@ -29,6 +29,7 @@ Archivos de texto y JSON organizados por producto, sin código ni instalación. 
 | [chatgpt_system_prompt](chatgpt-system-prompt.md) | Corpus complementario centrado en GPTs personalizados. (combinación por arquitectura) | Consúltalos juntos para comparar. |
 | [promptfoo](promptfoo.md) | Evaluar la resistencia de tus propios prompts frente a extracción e inyección. (combinación por arquitectura) | Diseña pruebas de red teaming basadas en los patrones observados. |
 | [Claude Code](claude-code.md) | Comparar los prompts recopilados con las instrucciones de agentes que usas (CLAUDE.md, skills). (combinación por arquitectura) | Úsalo como referencia al redactar tus propias reglas. |
+| [ChatGPT_DAN](chatgpt-dan.md) | Combinación recíproca: ChatGPT_DAN lo enlaza como «Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura)». | Orden indicado desde ChatGPT_DAN: Úsalos juntos solo con fines de estudio y defensa. |
 
 **Notas:** Sin alternativas declaradas. Contenido de procedencia no verificada.
 

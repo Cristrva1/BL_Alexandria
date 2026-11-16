@@ -30,6 +30,7 @@ Se instala desde el repo con pip (extras para métricas, DeepSpeed, etc.) o se u
 | [Transformers](transformers.md) | Modelos base. | Viene como dependencia. |
 | [vLLM](vllm.md) | Worker de inferencia integrado. | Configura `infer_backend: vllm`. |
 | [SGLang](sglang.md) | Worker de inferencia alternativo. | Configura el backend SGLang. |
+| [Gradio](gradio.md) | Combinación recíproca: Gradio lo enlaza como «Su LlamaBoard está construido con Gradio». | Orden indicado desde Gradio: Usa la UI de LlamaFactory. |
 
 **Notas:** Alternativas (elige una): unsloth.
 
@@ -117,6 +118,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Unsloth](unsloth.md) | 79.5k | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. |
+| [Axolotl](axolotl.md) | 12.7k | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. |
+| [torchtune](torchtune.md) | 5.8k | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. |
 
 ## Enlaces
 

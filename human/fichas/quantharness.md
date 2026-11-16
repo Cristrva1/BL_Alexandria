@@ -28,7 +28,7 @@ Se instala con `pip install -r requirements.txt` y se configuran claves de un LL
 |---|---|---|
 | [LangGraph](langgraph.md) | Framework de orquestación de los agentes. | Viene en las dependencias. |
 | [langchain](langchain.md) | Componentes de LLM y herramientas. | Viene en las dependencias. |
-| [TradingAgents](tradingagents.md) | Comparar con otro framework multiagente de trading. (combinación por arquitectura) | Evalúa ambos con los mismos activos. |
+| [langfuse](langfuse.md) | Trazar las llamadas de sus agentes de LangChain y LangGraph con la integración de Langfuse para LangChain (combinación por arquitectura). | Langfuse en marcha y sus claves en el entorno; después añade el callback de Langfuse a la ejecución de los agentes. |
 
 **Notas:** Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión.
 
