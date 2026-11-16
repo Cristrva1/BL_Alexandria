@@ -53,7 +53,7 @@ def main() -> None:
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     compact = json.loads((root / "INDICE_IA.json").read_text(encoding="utf-8"))
-    repos = [r for r in compact["repos"] if r.get("gh") and not r.get("alias_of")]
+    repos = [r for r in compact["repos"] if r.get("gh") and not r.get("alias_of") and r.get("repository_host", "github") == "github"]
     if args.ids:
         unknown = set(args.ids) - {r["id"] for r in repos}
         if unknown:

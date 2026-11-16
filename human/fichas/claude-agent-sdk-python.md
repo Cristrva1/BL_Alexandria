@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+SDK oficial de Anthropic (MIT) para usar desde Python el bucle de agente de Claude Code. Es muy activo (v0.2.182), con publicaciones casi a diario, pero sigue en 0.x y su API puede cambiar.
+
+## ¿Qué hace?
+
+Ofrece `query()`, una función asíncrona para consultas puntuales, y `ClaudeSDKClient` para conversaciones interactivas con sesiones. Da acceso a todas las herramientas de Claude Code (Read, Write, Edit, Bash…), controladas con `allowed_tools` y modos de permiso. Permite definir herramientas propias como servidores MCP en proceso (`create_sdk_mcp_server`), conectar servidores MCP externos y usar hooks para interceptar el comportamiento del agente.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install claude-agent-sdk` y requiere Python 3.10+. El paquete incluye la CLI de Claude Code; también se puede usar una instalación propia con `cli_path`. Algunas funciones piden una versión mínima de la CLI (2.1.257+). Requiere credenciales de Anthropic y está atado a los modelos Claude.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Motor subyacente; la CLI viene incluida, pero conviene alinear versiones si usas una instalación propia. | Normalmente basta con el SDK; si usas tu propia CLI, instálala primero y pásala con cli_path. |
+| [FastMCP](fastmcp.md) | Construir servidores MCP externos que el agente consuma además de las herramientas en proceso. | Crea el servidor con FastMCP y regístralo en las opciones `mcp_servers` del SDK. |
+| [langfuse](langfuse.md) | Trazas de las ejecuciones del agente (integración oficial de Langfuse para Claude Agent SDK). | Langfuse primero; configura la instrumentación antes de lanzar consultas. |
+| [E2B](e2b.md) | Ejecutar el agente, que tiene acceso a Bash y archivos, dentro de un sandbox aislado. (combinación por arquitectura) | Crea el sandbox e instala el SDK dentro de él. |
+| [Agno](agno.md) | Combinación recíproca: Agno lo enlaza como «SDK soportado para construir agentes que AgentOS sirve». | Orden indicado desde Agno: Instala Agno y el SDK de Claude Agent en el mismo entorno. |
+| [PageIndex](pageindex.md) | Combinación recíproca: PageIndex lo enlaza como «Integración documentada con el Claude Agent SDK». | Orden indicado desde PageIndex: Igual que arriba. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Anthropic Skills](anthropic-skills.md) · [Claude Cookbooks](claude-cookbooks.md) · [claude-quickstarts](claude-quickstarts.md) · [financial-services](financial-services.md)
+
+**Notas:** Sin alternativas declaradas; comparable a openai-agents-python (otro proveedor).
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.2.182 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/claude-agent-sdk-python/blob/main/README.md) · [2](https://platform.claude.com/docs/en/agent-sdk/python) · [3](https://langfuse.com/integrations/frameworks/claude-agent-sdk)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelo local no documentado. Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa |
 | Coste | Consumo de APIs o servicios. La guía oficial del SDK prescribe autenticación API; no asumas que una suscripción personal incluye tu producto o agentes de terceros |
 | Equipo | Preparación según la ruta elegida. Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba |
-
-Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa
-
-## Qué puedes hacer con él
-
-SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
-
-## Por qué destaca
-
-Usos propuestos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio.
-
-## Cómo funciona
 
 Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa
 

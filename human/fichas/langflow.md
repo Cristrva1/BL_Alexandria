@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma open source (MIT) de langflow-ai para construir y desplegar agentes y workflows de IA con un editor visual. Es muy madura y activa (v1.13.2, ~157k estrellas).
+
+## ¿Qué hace?
+
+Ofrece un constructor visual, acceso al código Python de cada componente para personalizarlo, un playground interactivo para probar flujos paso a paso y orquestación multiagente con gestión de conversación y retrieval. Cada flujo se puede desplegar como API, exportar como JSON para apps Python o publicar como servidor MCP para que lo usen clientes MCP. Integra observabilidad con LangSmith, Langfuse y otros.
+
+## ¿Cómo lo hace?
+
+Paquete Python (Python 3.10–3.14) que se instala con `uv pip install langflow -U` y se ejecuta con `uv run langflow run`. También hay imagen Docker y Langflow Desktop, que incluye todas las dependencias. Los modelos se conectan por componentes, Ollama entre ellos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langfuse](langfuse.md) | Trazas de los flujos (integración oficial documentada por Langflow). | Despliega Langfuse y define sus variables de entorno antes de arrancar Langflow. |
+| [Ollama](ollama.md) | Modelos locales mediante el bundle de componentes de Ollama documentado por Langflow. | Instala Ollama y descarga los modelos; después usa el componente en el flujo. |
+| [Claude Code](claude-code.md) | Usar flujos de Langflow como herramientas desde un cliente MCP (la documentación de su servidor MCP cubre Cursor y otros). (combinación por arquitectura para Claude Code) | Publica el proyecto como servidor MCP y registra la URL en el cliente. |
+| [langchain](langchain.md) | Muchos componentes de Langflow envuelven integraciones de LangChain. (combinación por arquitectura: el README actual no lo menciona) | No requiere instalación aparte; añade paquetes de integración solo si un componente los pide. |
+
+**Notas:** Alternativas (elige una): sim, autogpt. Combinación anterior con dify eliminada: plataformas solapadas sin integración documentada.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.13.2 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langflow-ai/langflow/blob/main/README.md) · [2](https://docs.langflow.org/integrations-langfuse) · [3](https://docs.langflow.org/bundles-ollama) · [4](https://docs.langflow.org/mcp-server)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Configura la contraseña antes de iniciar; las herramientas de autoría MCP pueden crear componentes que ejecutan código en el servidor |
 | Coste | El coste depende del proveedor o la ruta. Los modelos del flujo y del Assistant son configuraciones distintas y pueden consumir por separado; Ollama ofrece una ruta local |
 | Equipo | Preparación según la ruta elegida. Python 3.10–3.14; uv; entorno virtual; contraseña de administrador |
-
-Configura la contraseña antes de iniciar; las herramientas de autoría MCP pueden crear componentes que ejecutan código en el servidor
-
-## Qué puedes hacer con él
-
-Constructor visual de flujos LLM/agentes construido sobre LangChain.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar un agente visual; Exponer un flujo como herramienta MCP.
-
-## Cómo funciona
 
 Configura la contraseña antes de iniciar; las herramientas de autoría MCP pueden crear componentes que ejecutan código en el servidor
 
@@ -96,13 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10–3.14; uv; entorno virtual; contraseña de administrador
 - **Etiquetas:** `automation` `agents` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [dify](dify.md) | 161k | Plataforma integral para construir apps de IA con backend y UI listos. |
 
 ## Alternativas (elige una)
 

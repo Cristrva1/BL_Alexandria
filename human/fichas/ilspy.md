@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Navegador y decompilador de ensamblados .NET open source y multiplataforma, del equipo icsharpcode. Licencia MIT. Es muy maduro (~27k estrellas, v11.2) y su motor se publica como paquete NuGet (ICSharpCode.Decompiler).
+
+## ¿Qué hace?
+
+Decompila ensamblados .NET a C# legible, permite navegar tipos y miembros, buscar, analizar usos y exportar proyectos. Su motor de decompilación lo reutilizan otras herramientas, como dnSpyEx. El README declara que no usa servicios de telemetría.
+
+## ¿Cómo lo hace?
+
+La interfaz de escritorio usa Avalonia y funciona en Windows, Linux y macOS; se descarga desde las releases. También existen `ilspycmd` (herramienta de línea de comandos para dotnet), el paquete NuGet del decompilador y extensiones para Visual Studio y VS Code; Visual Studio 2022/2026 ya trae sus motores para F12. Compilarlo requiere el SDK de .NET.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [dnSpy](dnspy.md) | dnSpyEx usa el motor de ILSpy y añade depuración y edición de ensamblados. | Decompila con ILSpy y pasa a dnSpyEx cuando necesites depurar o parchear. |
+| [Claude Code](claude-code.md) | Que un agente lea la salida de `ilspycmd` para entender una librería sin código fuente. (combinación por arquitectura) | Instala `ilspycmd` como herramienta dotnet y exporta el proyecto para el agente. |
+| [ImHex](imhex.md) | Inspeccionar recursos o formatos binarios incrustados. (combinación por arquitectura) | Extrae el recurso y ábrelo en ImHex. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v11.2 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/icsharpcode/ILSpy/blob/master/README.md) · [2](https://github.com/icsharpcode/ILSpy/tree/master/ICSharpCode.ILSpyCmd)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un descompilador; el resultado reconstruido puede diferir de la fuente original |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo ni API; la distribución usa licencia MIT |
 | Equipo | Preparación según la ruta elegida. App o ilspycmd del sistema; ensamblado .NET de práctica |
-
-Es un descompilador; el resultado reconstruido puede diferir de la fuente original
-
-## Qué puedes hacer con él
-
-Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.
-
-## Por qué destaca
-
-Usos propuestos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado.
-
-## Cómo funciona
 
 Es un descompilador; el resultado reconstruido puede diferir de la fuente original
 

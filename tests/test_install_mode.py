@@ -3,9 +3,9 @@ from pathlib import Path
 from repo_intelligence.core.install_mode import decision, install_mode
 
 
-def test_n8n_is_docker_local() -> None:
-    assert install_mode({"id": "n8n", "role": "platform", "setup": "medium"}) == "docker_local"
-    assert decision({"id": "n8n", "role": "platform", "setup": "medium"}) == "use_now"
+def test_activepieces_is_docker_local() -> None:
+    assert install_mode({"id": "activepieces", "role": "platform", "setup": "medium"}) == "docker_local"
+    assert decision({"id": "activepieces", "role": "platform", "setup": "medium"}) == "use_now"
 
 
 def test_evolution_api_is_docker_local() -> None:
@@ -13,8 +13,8 @@ def test_evolution_api_is_docker_local() -> None:
 
 
 def test_skill_is_reference_only() -> None:
-    assert install_mode({"id": "n8n-skills", "role": "skill", "setup": "easy"}) == "reference_only"
-    assert decision({"id": "n8n-skills", "role": "skill"}) == "reference"
+    assert install_mode({"id": "marketingskills", "role": "skill", "setup": "easy"}) == "reference_only"
+    assert decision({"id": "marketingskills", "role": "skill"}) == "reference"
 
 
 def test_repomix_is_global() -> None:
@@ -40,5 +40,5 @@ def test_unknown_library_is_reference_only() -> None:
 
 
 def test_id_list_wins_over_heavy() -> None:
-    # n8n is medium in the index; if someone marks setup heavy, docker_local still wins
-    assert install_mode({"id": "n8n", "role": "platform", "setup": "heavy"}) == "docker_local"
+    # activepieces is medium in the index; if someone marks setup heavy, docker_local still wins
+    assert install_mode({"id": "activepieces", "role": "platform", "setup": "heavy"}) == "docker_local"

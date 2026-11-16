@@ -30,7 +30,7 @@ Se instala con `npx skills add https://github.com/Leonxlnx/taste-skill --skill "
 | [FFmpeg](ffmpeg.md) | Dependencia opcional para exportar WebP. | Añádelo al PATH si necesitas WebP. |
 | [Stitch Skills](stitch-skills.md) | Trae una variante `stitch-design-taste` para trabajar con Stitch. | Configura antes el MCP de Stitch. |
 
-**Notas:** Se solapa con ui-ux-pro-max-skill, impeccable y hallmark; conviene elegir uno como guía principal.
+**Notas:** Alternativas (elige una): ui-ux-pro-max-skill, impeccable, hallmark.
 
 Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v2.5.1 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -108,6 +108,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22+; Chrome, Edge o Chromium; agente; brief de sitio
 - **Etiquetas:** `skills` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
+| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
+| [hallmark](hallmark.md) | 55.1k | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. |
 
 ## Enlaces
 

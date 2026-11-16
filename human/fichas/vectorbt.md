@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+VectorBT, toolkit de Python para investigación de trading a escala, de @polakowo. Licencia Apache-2.0 con Commons Clause, «fair-code» que no permite vender el software (GitHub muestra NOASSERTION). Tiene ~10k estrellas (v1.2.1) y una versión comercial, VectorBT PRO.
+
+## ¿Qué hace?
+
+Permite explorar datos de mercado, crear indicadores y señales y comparar miles de estrategias entre activos y marcos temporales con operaciones vectorizadas. Analiza operaciones, comisiones, drawdowns y rendimiento con gráficos interactivos.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -U vectorbt` (extras `[full]` y `[rust]`). Usa NumPy, pandas, Numba y Plotly. Algunas dependencias opcionales tienen licencias más restrictivas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | Datos históricos de cripto para los backtests. (combinación por arquitectura) | Descarga velas con CCXT. |
+| [freqtrade](freqtrade.md) | Llevar la idea validada a un bot. (combinación por arquitectura) | Reimplementa la estrategia en Freqtrade. |
+| [marimo](marimo.md) | Exploración interactiva de resultados. (combinación por arquitectura) | Ejecuta los análisis en notebooks marimo. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AutoHedge](autohedge.md) · [binance-trader](binance-trader.md) · [FinRL](finrl.md) · [lumibot](lumibot.md) · [machine-learning-for-trading](machine-learning-for-trading.md) · [OpenBB Open Data Platform](openbb.md) · [Vibe-Trading](vibe-trading.md) · [yfinance](yfinance.md)
+
+**Notas:** Sin alternativas declaradas. Commons Clause: no es open source según la OSI.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v1.2.1 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/polakowo/vectorbt/blob/master/README.md) · [2](https://vectorbt.dev)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. Probar muchas combinaciones aumenta el riesgo de sobreajuste; sus mensajes comerciales no acreditan una ventaja en tu caso |
 | Coste | El coste depende del proveedor o la ruta. No exige LLM; usa Apache-2.0 con Commons Clause y ofrece productos comerciales distintos; datos y cómputo cuestan según ruta |
 | Equipo | Preparación según la ruta elegida. Python; dependencias compatibles; serie histórica; comisiones y frecuencia definidas |
-
-Probar muchas combinaciones aumenta el riesgo de sobreajuste; sus mensajes comerciales no acreditan una ventaja en tu caso
-
-## Qué puedes hacer con él
-
-Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado.
-
-## Por qué destaca
-
-Usos propuestos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica.
-
-## Cómo funciona
 
 Probar muchas combinaciones aumenta el riesgo de sobreajuste; sus mensajes comerciales no acreditan una ventaja en tu caso
 
@@ -93,6 +113,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dependencias compatibles; serie histórica; comisiones y frecuencia definidas
 - **Etiquetas:** `cuant` `framework` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Backtesting.py](backtesting-py.md) | 9.2k | Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
 
 ## Enlaces
 

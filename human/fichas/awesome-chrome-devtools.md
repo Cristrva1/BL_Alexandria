@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Awesome Chrome DevTools, lista curada de herramientas y recursos del ecosistema Chrome DevTools y del protocolo CDP, mantenida en la organización ChromeDevTools. Licencia CC0-1.0. Existe desde 2016 (~7k estrellas).
+
+## ¿Qué hace?
+
+Recopila drivers del protocolo (Puppeteer, Playwright, chrome-remote-interface), visores de trazas, frontends y guías de depuración, incluido Node.js.
+
+## ¿Cómo lo hace?
+
+Es solo Markdown, no se instala.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Puppeteer](puppeteer.md) | Driver CDP listado. | Consulta y elige. |
+| [Chrome DevTools MCP](chrome-devtools-mcp.md) | MCP para agentes del mismo ecosistema. (combinación por arquitectura) | Instálalo si usas agentes. |
+| [Lightpanda](lightpanda.md) | Navegador con servidor CDP. (combinación por arquitectura) | Evalúalo como backend. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-06 · licencia declarada CC0-1.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ChromeDevTools/awesome-chrome-devtools/blob/master/readme.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente |
 | Coste | Sin pago a un modelo en la ruta básica. Consultar la lista no usa IA; cada proyecto enlazado tiene sus condiciones |
 | Equipo | Preparación según la ruta elegida. Navegador; necesidad de depuración o automatización |
-
-Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente
-
-## Qué puedes hacer con él
-
-Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una herramienta de depuración; Explorar clientes de DevTools Protocol.
-
-## Cómo funciona
 
 Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente
 

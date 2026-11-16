@@ -1,0 +1,658 @@
+{
+ "batch": "p02",
+ "title": "MCP, búsqueda vectorial, calidad de código y chats o motores locales",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "weaviate",
+   "qdrant",
+   "milvus"
+  ],
+  [
+   "lancedb",
+   "chroma"
+  ],
+  [
+   "gitleaks",
+   "trufflehog"
+  ],
+  [
+   "sonarqube",
+   "semgrep"
+  ],
+  [
+   "nextchat",
+   "lobehub",
+   "chatbox"
+  ],
+  [
+   "koboldcpp",
+   "llamafile"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "googleapis/mcp-toolbox",
+   "id": "mcp-toolbox",
+   "cat": 5,
+   "sub": "servidores",
+   "kind": "mcp",
+   "name": "MCP Toolbox for Databases",
+   "one": "Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes.",
+   "how": "Binario Go configurado con tools.yaml; expone herramientas SQL y de búsqueda por MCP y SDK para Python, JavaScript, Go y Java.",
+   "examples": [
+    "consultar y explorar el esquema de una base PostgreSQL desde tu agente de código",
+    "dar a un agente en producción consultas parametrizadas en lugar de SQL libre"
+   ],
+   "try": [
+    "Prepara un tools.yaml contra una base de prueba, arranca el servidor y regístralo en tu cliente MCP.",
+    "El cliente lista las herramientas y una consulta de solo lectura devuelve filas de la base de prueba."
+   ],
+   "setup": "medium",
+   "tags": [
+    "mcp",
+    "go",
+    "data",
+    "database"
+   ],
+   "goals": [
+    "mcp"
+   ],
+   "cmd": "brew install mcp-toolbox"
+  },
+  {
+   "gh": "awslabs/mcp",
+   "id": "aws-mcp",
+   "cat": 5,
+   "sub": "servidores",
+   "kind": "mcp",
+   "name": "MCP servers for AWS",
+   "one": "Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios.",
+   "how": "Monorepo de servidores MCP (sobre todo Python, ejecutados con uvx) que llaman a las APIs de AWS con tus credenciales y perfiles.",
+   "examples": [
+    "consultar la documentación actualizada de AWS desde tu agente de código",
+    "revisar y generar plantillas de CloudFormation o CDK con validación de seguridad"
+   ],
+   "try": [
+    "Configura el servidor de documentación de AWS con uvx en tu cliente MCP y pregunta por un servicio concreto.",
+    "El agente devuelve fragmentos de la documentación oficial con su enlace."
+   ],
+   "setup": "medium",
+   "tags": [
+    "mcp",
+    "python",
+    "cloud",
+    "aws"
+   ],
+   "goals": [
+    "mcp"
+   ],
+   "caveat": "La mayoría de servidores necesitan una cuenta de AWS; las acciones sobre recursos pueden generar costes."
+  },
+  {
+   "gh": "weaviate/weaviate",
+   "id": "weaviate",
+   "cat": 6,
+   "sub": "vectores",
+   "kind": "server",
+   "name": "Weaviate",
+   "one": "Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada.",
+   "how": "Servidor en Go con índices HNSW, API REST, GraphQL y gRPC, y módulos que vectorizan al importar con proveedores como OpenAI, Cohere, Hugging Face u Ollama.",
+   "examples": [
+    "montar la búsqueda semántica con filtros de un catálogo o base documental",
+    "servir la recuperación de un sistema RAG con búsqueda híbrida"
+   ],
+   "try": [
+    "Arranca Weaviate con el Docker Compose del quickstart local, crea una colección y busca con el cliente de Python.",
+    "La consulta híbrida devuelve objetos ordenados por relevancia con sus propiedades."
+   ],
+   "setup": "medium",
+   "tags": [
+    "vector-db",
+    "rag",
+    "go",
+    "docker"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "local_choice",
+   "models": "Vectorización opcional con OpenAI, Cohere, Hugging Face, Ollama u otros; también admite vectores propios",
+   "caveat": "La mayor parte es BSD-3-Clause, pero el código de la carpeta wl/ (edición Enterprise) solo se publica para revisión y requiere licencia.",
+   "license": "BSD-3-Clause"
+  },
+  {
+   "gh": "meilisearch/meilisearch",
+   "id": "meilisearch",
+   "cat": 6,
+   "sub": "rag",
+   "kind": "server",
+   "name": "Meilisearch",
+   "one": "Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.",
+   "how": "Servidor Rust con API REST que indexa documentos JSON; añade búsqueda vectorial con embedders configurables (OpenAI, Hugging Face, Ollama, REST).",
+   "examples": [
+    "añadir búsqueda instantánea con facetas a una web o aplicación",
+    "combinar búsqueda por palabras y semántica como capa de recuperación para RAG"
+   ],
+   "try": [
+    "Arranca Meilisearch con Docker o el script de instalación, sube un JSON de ejemplo y busca con una errata.",
+    "La búsqueda devuelve los documentos correctos en milisegundos pese a la errata."
+   ],
+   "setup": "easy",
+   "tags": [
+    "rag",
+    "search",
+    "rust",
+    "docker"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "optional",
+   "models": "Embedders opcionales: OpenAI, Hugging Face, Ollama u otro endpoint REST",
+   "caveat": "La Community Edition es MIT; la Enterprise (sharding y otras funciones) usa licencia comercial o BUSL-1.1 y solo permite uso no productivo sin acuerdo.",
+   "license": "MIT"
+  },
+  {
+   "gh": "Cinnamon/kotaemon",
+   "id": "kotaemon",
+   "cat": 6,
+   "sub": "rag",
+   "kind": "app",
+   "name": "kotaemon",
+   "one": "Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG.",
+   "how": "Aplicación Gradio en Python con pipelines RAG configurables, recuperación híbrida, citas y varios motores de grafos.",
+   "examples": [
+    "hacer preguntas con citas sobre una carpeta de PDF propios",
+    "comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus"
+   ],
+   "try": [
+    "Arranca la imagen Docker main-lite (u ollama) del README, sube un PDF y haz una pregunta.",
+    "La respuesta incluye citas enlazadas a las páginas del documento."
+   ],
+   "setup": "medium",
+   "tags": [
+    "rag",
+    "python",
+    "docs",
+    "local"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "local_choice",
+   "models": "APIs (OpenAI, Azure OpenAI, Cohere…) o modelos locales vía Ollama y llama-cpp-python",
+   "caveat": "Último push en julio de 2026: ritmo de mantenimiento bajo."
+  },
+  {
+   "gh": "neuml/txtai",
+   "id": "txtai",
+   "cat": 6,
+   "sub": "rag",
+   "kind": "framework",
+   "name": "txtai",
+   "one": "Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia.",
+   "how": "Biblioteca Python cuya base de embeddings une índices vectoriales densos y dispersos, grafos y SQL; añade pipelines, workflows, agentes y APIs web y MCP.",
+   "examples": [
+    "indexar documentos y hacer búsqueda semántica con SQL en local",
+    "montar un RAG o un grafo de conocimiento sin desplegar varios servicios"
+   ],
+   "try": [
+    "Instala con `pip install txtai`, indexa unas frases y busca por significado.",
+    "La búsqueda devuelve las frases más parecidas aunque no compartan palabras."
+   ],
+   "setup": "easy",
+   "tags": [
+    "rag",
+    "python",
+    "library",
+    "mcp"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "local_choice",
+   "models": "Modelos de Hugging Face en local; LLM vía Transformers, llama.cpp o LiteLLM",
+   "cmd": "pip install txtai"
+  },
+  {
+   "gh": "lancedb/lancedb",
+   "id": "lancedb",
+   "cat": 6,
+   "sub": "vectores",
+   "kind": "library",
+   "name": "LanceDB",
+   "one": "Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener.",
+   "how": "Núcleo en Rust con SDK de Python, TypeScript y Rust; guarda tablas Lance en disco o almacenamiento de objetos con versionado automático.",
+   "examples": [
+    "añadir búsqueda vectorial a una app local sin desplegar un servidor",
+    "gestionar datos multimodales y sus embeddings con versiones para entrenamiento"
+   ],
+   "try": [
+    "Instala el SDK de Python, crea una tabla con vectores de ejemplo y lanza una búsqueda.",
+    "La búsqueda devuelve los vecinos más cercanos y la tabla queda guardada en una carpeta local."
+   ],
+   "setup": "easy",
+   "tags": [
+    "vector-db",
+    "rag",
+    "rust",
+    "library"
+   ],
+   "goals": [
+    "documentos"
+   ]
+  },
+  {
+   "gh": "astral-sh/ruff",
+   "id": "ruff",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "app",
+   "name": "Ruff",
+   "one": "Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas.",
+   "how": "Binario Rust que lee pyproject.toml, analiza el código con caché y aplica correcciones automáticas o formateo.",
+   "examples": [
+    "sustituir Flake8, isort y Black por una sola herramienta en un proyecto",
+    "revisar y corregir el código que genera un agente antes de cada commit"
+   ],
+   "try": [
+    "Ejecuta `uvx ruff check` y `uvx ruff format` en un proyecto Python de prueba.",
+    "Ruff informa de los problemas en segundos y el formateo deja un diff limpio."
+   ],
+   "setup": "easy",
+   "tags": [
+    "code",
+    "python",
+    "rust",
+    "cli"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install ruff"
+  },
+  {
+   "gh": "gitleaks/gitleaks",
+   "id": "gitleaks",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "app",
+   "name": "Gitleaks",
+   "one": "Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI.",
+   "how": "CLI en Go que recorre el historial git o directorios aplicando reglas de expresiones regulares y entropía configurables en TOML.",
+   "examples": [
+    "revisar el historial de un repositorio antes de hacerlo público",
+    "bloquear commits que contengan claves con un hook pre-commit"
+   ],
+   "try": [
+    "Instala Gitleaks y ejecútalo sobre un repositorio de prueba con una clave falsa en un commit.",
+    "El informe señala el archivo, la línea y el commit de la clave falsa."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "code"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "brew install gitleaks",
+   "caveat": "El autor declara Gitleaks completo en funciones: solo publicará parches de seguridad y centra su trabajo en Betterleaks."
+  },
+  {
+   "gh": "trufflesecurity/trufflehog",
+   "id": "trufflehog",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "app",
+   "name": "TruffleHog",
+   "one": "Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos.",
+   "how": "CLI en Go con cientos de detectores que, además de encontrar secretos, comprueban contra la API del proveedor si siguen activos.",
+   "examples": [
+    "auditar los repositorios de una organización en busca de claves activas",
+    "revisar buckets o logs exportados antes de compartirlos"
+   ],
+   "try": [
+    "Ejecuta la imagen Docker contra el repositorio de pruebas trufflesecurity/test_keys como indica el README.",
+    "El informe muestra las claves encontradas y si están verificadas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "code"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "brew install trufflehog",
+   "caveat": "La verificación hace peticiones reales a las APIs de los proveedores con las credenciales encontradas: úsalo solo sobre activos propios o autorizados."
+  },
+  {
+   "gh": "biomejs/biome",
+   "id": "biome",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "app",
+   "name": "Biome",
+   "one": "Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por CLI y LSP.",
+   "how": "Binario Rust con más de 750 reglas de lint y un formateador con alta compatibilidad con Prettier; se configura con biome.json.",
+   "examples": [
+    "sustituir ESLint y Prettier en un proyecto web por una sola herramienta",
+    "formatear y revisar el código que genera un agente antes de abrir un PR"
+   ],
+   "try": [
+    "Instala `@biomejs/biome` como dependencia de desarrollo y ejecuta `npx @biomejs/biome check --write`.",
+    "Biome formatea y corrige los archivos y lista los problemas restantes."
+   ],
+   "setup": "easy",
+   "tags": [
+    "code",
+    "javascript",
+    "typescript",
+    "rust"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "npm install --save-dev --save-exact @biomejs/biome"
+  },
+  {
+   "gh": "pre-commit/pre-commit",
+   "id": "pre-commit",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "app",
+   "name": "pre-commit",
+   "one": "Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML.",
+   "how": "CLI en Python que lee .pre-commit-config.yaml, instala cada hook en un entorno aislado y lo ejecuta sobre los archivos cambiados.",
+   "examples": [
+    "obligar a pasar formato, lint y escaneo de secretos antes de cada commit",
+    "aplicar las mismas comprobaciones en local y en CI"
+   ],
+   "try": [
+    "Instala pre-commit, crea un .pre-commit-config.yaml con un hook de formato y ejecuta `pre-commit run --all-files`.",
+    "El hook se instala solo y formatea o señala los archivos del repositorio."
+   ],
+   "setup": "easy",
+   "tags": [
+    "code",
+    "python",
+    "cli",
+    "git"
+   ],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "gh": "SonarSource/sonarqube",
+   "id": "sonarqube",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "server",
+   "name": "SonarQube Community Build",
+   "one": "Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes.",
+   "how": "Servidor Java con base de datos que recibe análisis de los escáneres en CI y muestra problemas, puntos críticos de seguridad y deuda técnica por proyecto.",
+   "examples": [
+    "vigilar la calidad y seguridad de un repositorio en cada PR",
+    "revisar el código generado por IA con reglas consistentes antes de fusionarlo"
+   ],
+   "try": [
+    "Arranca la imagen Docker oficial, crea un proyecto y analiza un repositorio pequeño con el escáner.",
+    "El panel muestra problemas, puntos críticos y la puerta de calidad del proyecto."
+   ],
+   "setup": "medium",
+   "tags": [
+    "code",
+    "java",
+    "security",
+    "docker"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "caveat": "Este repositorio es la Community Build (LGPL-3.0); las ediciones Developer, Enterprise y Data Center son de pago."
+  },
+  {
+   "gh": "junegunn/fzf",
+   "id": "fzf",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "app",
+   "name": "fzf",
+   "one": "Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva.",
+   "how": "Binario Go que lee líneas de la entrada estándar, filtra con coincidencia difusa y devuelve la selección; integra atajos para Bash, Zsh, Fish, Vim y Neovim.",
+   "examples": [
+    "buscar archivos y comandos del historial al instante en la terminal",
+    "construir menús interactivos en scripts de shell"
+   ],
+   "try": [
+    "Instala fzf, activa la integración de tu shell y pulsa CTRL-T para elegir un archivo.",
+    "El selector filtra miles de archivos al escribir y pega la ruta elegida en la línea de comandos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "cli",
+    "go",
+    "terminal"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "brew install fzf"
+  },
+  {
+   "gh": "jesseduffield/lazygit",
+   "id": "lazygit",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "app",
+   "name": "lazygit",
+   "one": "Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos.",
+   "how": "Aplicación TUI en Go que ejecuta comandos git por debajo y muestra estado, ramas, commits y diffs en paneles navegables.",
+   "examples": [
+    "revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos",
+    "hacer rebases interactivos y deshacer operaciones sin recordar comandos"
+   ],
+   "try": [
+    "Instala lazygit y ábrelo en un repositorio de prueba con cambios sin confirmar.",
+    "Puedes preparar una sola línea y crear el commit desde la interfaz."
+   ],
+   "setup": "easy",
+   "tags": [
+    "cli",
+    "go",
+    "git",
+    "terminal"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "brew install lazygit"
+  },
+  {
+   "gh": "BurntSushi/ripgrep",
+   "id": "ripgrep",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "app",
+   "name": "ripgrep",
+   "one": "Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios.",
+   "how": "CLI en Rust (comando rg) con motor de expresiones regulares propio, paralelismo y filtrado automático según .gitignore.",
+   "examples": [
+    "localizar todas las apariciones de una función en un repositorio grande",
+    "buscar texto en miles de archivos de logs o notas en segundos"
+   ],
+   "try": [
+    "Instala ripgrep y ejecuta `rg` con un patrón en un repositorio.",
+    "Obtienes las coincidencias con archivo y línea, sin resultados de carpetas ignoradas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "cli",
+    "rust",
+    "code",
+    "search"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "brew install ripgrep"
+  },
+  {
+   "gh": "SillyTavern/SillyTavern",
+   "id": "sillytavern",
+   "cat": 8,
+   "sub": "chats",
+   "kind": "app",
+   "name": "SillyTavern",
+   "one": "Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones.",
+   "how": "Servidor Node.js que se ejecuta en tu equipo y conecta con backends de texto (KoboldCpp, Ollama, Ooba, OpenAI, Claude, OpenRouter…), imagen y voz.",
+   "examples": [
+    "escribir historias o partidas de rol con personajes y memoria persistente",
+    "probar el mismo prompt contra varios modelos locales y remotos"
+   ],
+   "try": [
+    "Instala SillyTavern con Node.js 20+, conéctalo a un backend local como KoboldCpp u Ollama y abre un chat.",
+    "El chat responde con el modelo conectado y la conversación se guarda en tu equipo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "chatbot",
+    "javascript",
+    "local",
+    "app"
+   ],
+   "goals": [
+    "local"
+   ],
+   "ai": "local_choice",
+   "models": "Backends de texto locales (KoboldCpp, Ollama, Ooba, Tabby) o APIs (OpenAI, Claude, Mistral, OpenRouter…)"
+  },
+  {
+   "gh": "ChatGPTNextWeb/NextChat",
+   "id": "nextchat",
+   "cat": 8,
+   "sub": "chats",
+   "kind": "app",
+   "name": "NextChat",
+   "one": "Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP.",
+   "how": "Aplicación Next.js desplegable en Vercel o Docker y app de escritorio; guarda los datos en el navegador y llama a la API que configures.",
+   "examples": [
+    "desplegar un chat privado con tu propia clave para un equipo pequeño",
+    "usar un modelo autoalojado compatible con OpenAI desde una interfaz web ligera"
+   ],
+   "try": [
+    "Despliega NextChat con Docker o Vercel usando tu clave de API y abre un chat.",
+    "El chat responde con el modelo configurado y el historial queda en el navegador."
+   ],
+   "setup": "easy",
+   "tags": [
+    "chatbot",
+    "typescript",
+    "app",
+    "mcp"
+   ],
+   "goals": [
+    "local"
+   ],
+   "ai": "required",
+   "models": "APIs de OpenAI, Anthropic, Google, DeepSeek y otros, o servidores autoalojados compatibles como LocalAI",
+   "mcp": true
+  },
+  {
+   "gh": "mlc-ai/mlc-llm",
+   "id": "mlc-llm",
+   "cat": 8,
+   "sub": "motores",
+   "kind": "engine",
+   "name": "MLC LLM",
+   "one": "Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI.",
+   "how": "Compila modelos con Apache TVM para Vulkan, CUDA, ROCm, Metal, OpenCL y WebGPU, y los sirve con MLCEngine en Python, REST, iOS, Android o web.",
+   "examples": [
+    "ejecutar un LLM en un móvil o en el navegador sin servidor",
+    "servir un modelo en GPU AMD, Intel o Apple con una API compatible con OpenAI"
+   ],
+   "try": [
+    "Sigue el quick start para instalar el paquete de tu plataforma y chatear con un modelo precompilado.",
+    "El modelo responde en local y el servidor REST devuelve respuestas al endpoint de chat."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "inference",
+    "python",
+    "local",
+    "model"
+   ],
+   "goals": [
+    "local"
+   ],
+   "models": "Modelos abiertos compilados (Llama, Qwen, Gemma, Mistral, Phi…) desde pesos de Hugging Face"
+  },
+  {
+   "gh": "LostRuins/koboldcpp",
+   "id": "koboldcpp",
+   "cat": 8,
+   "sub": "motores",
+   "kind": "engine",
+   "name": "KoboldCpp",
+   "one": "Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama.",
+   "how": "Programa C++/Python autocontenido que carga modelos GGUF en CPU o GPU y sirve una interfaz web y endpoints para otras apps.",
+   "examples": [
+    "chatear o escribir historias con un modelo local sin instalar dependencias",
+    "dar a otras apps una API local compatible con OpenAI u Ollama"
+   ],
+   "try": [
+    "Descarga el ejecutable de la release para tu sistema, elige un modelo GGUF pequeño y arráncalo.",
+    "La interfaz web local responde y el endpoint compatible con OpenAI devuelve texto."
+   ],
+   "setup": "easy",
+   "tags": [
+    "inference",
+    "cpp",
+    "local",
+    "app"
+   ],
+   "goals": [
+    "local"
+   ],
+   "models": "Modelos GGUF locales de texto; también imagen (SD, Flux), voz (Whisper, Kokoro) y música según el modelo cargado",
+   "caveat": "Es un fork de llama.cpp con licencia AGPL-3.0; revisa también la licencia de cada modelo."
+  },
+  {
+   "gh": "ml-explore/mlx-lm",
+   "id": "mlx-lm",
+   "cat": 8,
+   "sub": "motores",
+   "kind": "engine",
+   "name": "MLX LM",
+   "one": "Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP.",
+   "how": "Biblioteca y CLI en Python sobre MLX; descarga modelos de Hugging Face, los cuantiza y sirve una API compatible con OpenAI con mlx_lm.server.",
+   "examples": [
+    "ejecutar un LLM local optimizado en un Mac con chip Apple",
+    "afinar un modelo con LoRA en un Mac sin GPU NVIDIA"
+   ],
+   "try": [
+    "Instala con `pip install mlx-lm` en un Mac con Apple Silicon y genera texto con un modelo cuantizado del Hub.",
+    "El modelo se descarga, genera la respuesta y la CLI informa de tokens por segundo."
+   ],
+   "setup": "easy",
+   "tags": [
+    "inference",
+    "python",
+    "local",
+    "training"
+   ],
+   "goals": [
+    "local"
+   ],
+   "models": "Modelos abiertos de Hugging Face convertidos o cuantizados para MLX",
+   "cmd": "pip install mlx-lm"
+  }
+ ]
+}

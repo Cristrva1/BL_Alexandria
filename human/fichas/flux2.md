@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Código oficial de inferencia de los modelos FLUX.2 de Black Forest Labs. El código es Apache-2.0, pero los pesos tienen licencias distintas: los modelos 4B [klein] son Apache-2.0 y los 9B y FLUX.2 [dev] (32B) usan la FLUX Non-Commercial License. Tiene ~2.9k estrellas, sin releases, y su último cambio es de marzo de 2026.
+
+## ¿Qué hace?
+
+Genera y edita imágenes con una o varias imágenes de referencia. Incluye FLUX.2 [dev], transformer de flow matching de 32B, y la familia [klein], de generación casi instantánea en GPU de consumo. Ofrece upsampling del prompt local o vía API.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -e .` y el índice de PyTorch para CUDA. FLUX.2 [dev] a precisión completa requiere una GPU equivalente a H100; hay versiones cuantizadas con Hugging Face para una RTX 4090. La API de pago de BFL es una vía alternativa.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ComfyUI](comfyui.md) | Soporte nativo y tutorial oficial en ComfyUI. | Carga los pesos en ComfyUI y usa el flujo de ejemplo. |
+| [diffusers](diffusers.md) | Pipeline FLUX.2 documentado en diffusers. | Usa el pipeline FLUX.2 con cuantización si tu GPU es pequeña. |
+| [Real-ESRGAN](real-esrgan.md) | Ampliar las imágenes generadas. (combinación por arquitectura) | Pasa la salida por Real-ESRGAN. |
+| [InvokeAI](invokeai.md) | Combinación recíproca: InvokeAI lo enlaza como «Usar modelos FLUX en el lienzo de Invoke. (combinación por arquitectura)». | Orden indicado desde InvokeAI: Instala el modelo desde el gestor de modelos si está soportado. |
+| [Krita AI Diffusion](krita-ai-diffusion.md) | Combinación recíproca: Krita AI Diffusion lo enlaza como «Usar modelos FLUX en Krita a través de ComfyUI. (combinación por arquitectura)». | Orden indicado desde Krita AI Diffusion: Instala el modelo en ComfyUI y selecciónalo en el plugin. |
+
+**Notas:** Sin alternativas declaradas. Revisa la licencia de cada peso: varios no permiten uso comercial.
+
+Estado en GitHub: activo · último push 2026-03-12 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/black-forest-labs/flux2/blob/main/README.md) · [2](https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux2) · [3](https://docs.comfy.org/tutorials/flux/flux-2-dev)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -25,18 +53,6 @@
 | Equipo | GPU o infraestructura especializada. Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face |
 
 Claude Code, Codex o Antigravity pueden ayudarte a instalarlo, pero las imágenes se generan en tu GPU o en la API de BFL
-
-## Qué puedes hacer con él
-
-Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas.
-
-## Por qué destaca
-
-Usos propuestos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia.
-
-## Cómo funciona
-
-FLUX.2 [klein] 4B usa Apache 2.0 y cabe en unos 8 GB de VRAM; klein 9B y FLUX.2 [dev] usan una licencia no comercial y [dev] necesita mucha más memoria
 
 ## Cómo empezar
 
@@ -96,13 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
-| [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
 
 ## Enlaces
 

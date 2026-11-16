@@ -1,0 +1,469 @@
+{
+ "batch": "41-voz-y-audio-parte-2",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "index-tts": {
+   "que_es": "IndexTTS, sistema de TTS zero-shot «de nivel industrial» con control de duración y emoción, de bilibili (organización index-tts). Usa el «bilibili Model Use License Agreement» propio (GitHub muestra NOASSERTION). Tiene ~25k estrellas (v2.5.0).",
+   "que_hace": "Clona una voz a partir de una sola muestra y permite controlar la duración exacta y la emoción, incluso con texto descriptivo de la emoción mediante un módulo basado en Qwen (`use_qwen_emo`).",
+   "como_lo_hace": "Se instala con uv a partir del repo; los modelos se descargan al iniciar la WebUI por primera vez, sin necesidad de Git LFS. Se recomienda GPU NVIDIA.",
+   "combina_con": [
+    {
+     "id": "whisperx",
+     "motivo": "Transcribir y alinear las referencias de voz. (combinación por arquitectura)",
+     "orden_instalacion": "Prepara las muestras."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Preparar y convertir audio. (combinación por arquitectura)",
+     "orden_instalacion": "Normaliza las muestras."
+    },
+    {
+     "id": "pipecat",
+     "motivo": "TTS en agentes de voz. (combinación por arquitectura)",
+     "orden_instalacion": "Expón el modelo como servicio TTS."
+    }
+   ],
+   "notas": "Alternativas (elige una): cosyvoice. Licencia no OSI; riesgo de suplantación de voz.",
+   "fuentes": [
+    "https://github.com/index-tts/index-tts/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "index-tts/index-tts",
+    "archived": false,
+    "pushed_at": "2026-09-29",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v2.5.0 (2026-08-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "cosyvoice": {
+   "que_es": "CosyVoice, modelo de voz multilingüe del equipo Qwen/FunAudioLLM de Alibaba, con inferencia, entrenamiento y despliegue. Licencia Apache-2.0. Tiene ~24k estrellas, la versión actual es Fun-CosyVoice 3.0 y el repo no cambia desde mayo de 2026.",
+   "que_hace": "Genera voz y clona voces zero-shot entre idiomas, con streaming de baja latencia y control por instrucciones.",
+   "como_lo_hace": "Se instala con conda y `pip install -r requirements.txt` (los ejemplos usan espejos de Aliyun); ttsfrd es opcional para normalizar texto. Puede acelerarse con vLLM (0.9 o 0.11 con versiones fijadas de transformers) y desplegarse con Docker, gRPC o FastAPI. Los modelos están en ModelScope y Hugging Face.",
+   "combina_con": [
+    {
+     "id": "pipecat",
+     "motivo": "TTS en agentes de voz. (combinación por arquitectura)",
+     "orden_instalacion": "Expón el servidor FastAPI o gRPC."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Inferencia acelerada documentada.",
+     "orden_instalacion": "Instala la versión de vLLM indicada."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Postproceso de audio. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte la salida."
+    },
+    {
+     "id": "wan2-2",
+     "motivo": "Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video».",
+     "orden_instalacion": "Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`.",
+     "reciproca_de": "wan2-2"
+    }
+   ],
+   "notas": "Alternativas (elige una): fish-speech, index-tts.",
+   "fuentes": [
+    "https://github.com/QwenAudio/CosyVoice/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "QwenAudio/CosyVoice",
+    "archived": false,
+    "pushed_at": "2026-05-25",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "luxtts": {
+   "que_es": "LuxTTS, modelo TTS ligero basado en ZipVoice para clonar voces, de @ysharma3501. Licencia Apache-2.0 para modelo y código. Es reciente (enero de 2026, ~5.6k estrellas) y no cambia desde junio de 2026.",
+   "que_hace": "Clona voces con calidad alta y genera audio a más de 150× tiempo real en una GPU, y más rápido que tiempo real en CPU, según el autor. Cabe en ~1 GB de VRAM.",
+   "como_lo_hace": "Se instala desde el repo con `pip install -r requirements.txt` y descarga el modelo de Hugging Face.",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "Integrar la síntesis en flujos visuales. (combinación por arquitectura)",
+     "orden_instalacion": "Usa un nodo comunitario si existe."
+    },
+    {
+     "id": "pipecat",
+     "motivo": "TTS local en agentes de voz. (combinación por arquitectura)",
+     "orden_instalacion": "Expón el modelo como servicio."
+    },
+    {
+     "id": "moviepy",
+     "motivo": "Narración de vídeos. (combinación por arquitectura)",
+     "orden_instalacion": "Monta el audio generado."
+    }
+   ],
+   "notas": "Alternativas (elige una): kokoro. Se quitan litellm y cosmos de las combinaciones (sin relación).",
+   "fuentes": [
+    "https://github.com/ysharma3501/LuxTTS/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ysharma3501/LuxTTS",
+    "archived": false,
+    "pushed_at": "2026-06-05",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pipecat": {
+   "que_es": "Pipecat, framework open source en Python para agentes de voz y multimodales en tiempo real, creado por Daily. Licencia BSD-2-Clause. Es maduro y muy activo (~17k estrellas, v1.16.0).",
+   "que_hace": "Construye agentes de voz individuales o sistemas multiagente con pipelines de STT, LLM y TTS, turnos de conversación, interrupciones y transporte en tiempo real. Tiene integraciones con decenas de servicios, entre ellos Whisper, Kokoro, Fish, Piper, XTTS, NVIDIA y Ollama, y transportes como Daily, LiveKit, WebSocket y telefonía.",
+   "como_lo_hace": "Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con `pip install pipecat-ai[...]` o `pipecat init quickstart`. Daily ofrece soporte enterprise.",
+   "combina_con": [
+    {
+     "id": "kokoro",
+     "motivo": "Servicio TTS integrado.",
+     "orden_instalacion": "Instala el extra correspondiente."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "STT local. (combinación por arquitectura)",
+     "orden_instalacion": "Usa un servicio STT local."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Servicio LLM integrado.",
+     "orden_instalacion": "Configura el servicio Ollama."
+    },
+    {
+     "id": "nemo",
+     "motivo": "Servicios NVIDIA integrados.",
+     "orden_instalacion": "Configura el servicio NVIDIA."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK.",
+     "orden_instalacion": "Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs."
+    }
+   ],
+   "notas": "Alternativas (elige una): livekit-agents, dograh.",
+   "fuentes": [
+    "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
+    "https://docs.pipecat.ai/getting-started/quickstart"
+   ],
+   "github": {
+    "name_with_owner": "pipecat-ai/pipecat",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-2-Clause",
+    "primary_language": "Python",
+    "latest_release": "v1.16.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "livekit-agents": {
+   "que_es": "LiveKit Agents, framework para agentes de voz y vídeo en tiempo real sobre la infraestructura WebRTC de LiveKit. Licencia Apache-2.0; sus modelos de detección de turno usan la «LiveKit Model License». Es activo (~15k estrellas, 1.8.12).",
+   "que_hace": "Crea participantes programables que escuchan, hablan y ven en salas LiveKit, con plugins de STT, LLM y TTS, detección de turnos, herramientas y telefonía. Hay SDK en Python y Node.js (AgentsJS).",
+   "como_lo_hace": "Se instala con `pip install \"livekit-agents[openai,deepgram,cartesia]\"` (u otros plugins) y requiere un servidor LiveKit, autoalojado o LiveKit Cloud.",
+   "combina_con": [
+    {
+     "id": "kokoro",
+     "motivo": "TTS local vía endpoint compatible. (combinación por arquitectura)",
+     "orden_instalacion": "Expón Kokoro y configúralo como TTS."
+    },
+    {
+     "id": "ollama",
+     "motivo": "LLM local vía plugin compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta el plugin al endpoint de Ollama."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "STT local. (combinación por arquitectura)",
+     "orden_instalacion": "Expón el servidor y úsalo como STT."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "LiveKit Agents documenta un plugin de TTS de ElevenLabs.",
+     "orden_instalacion": "Instala el plugin y define la clave de ElevenLabs."
+    }
+   ],
+   "notas": "Alternativas (elige una): pipecat, dograh.",
+   "fuentes": [
+    "https://github.com/livekit/agents/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "livekit/agents",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "livekit-agents@1.8.12 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "audiocraft": {
+   "que_es": "AudioCraft, librería PyTorch de Meta para investigación en generación de audio (MusicGen y AudioGen). El código es MIT y los pesos son CC-BY-NC 4.0 (no comercial). Tiene ~24k estrellas y no cambia desde marzo de 2026.",
+   "que_hace": "Genera música (MusicGen) y efectos de sonido (AudioGen) a partir de texto, e incluye EnCodec, MAGNeT y otros componentes con código de entrenamiento.",
+   "como_lo_hace": "Requiere Python 3.9 y PyTorch 2.1.0 (versiones antiguas) y se instala con `pip install -U audiocraft`. Se recomienda tener FFmpeg y conviene una GPU.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Recomendado por el README para E/S de audio.",
+     "orden_instalacion": "Instala FFmpeg."
+    },
+    {
+     "id": "moviepy",
+     "motivo": "Añadir la música generada a vídeos. (combinación por arquitectura)",
+     "orden_instalacion": "Monta el audio."
+    },
+    {
+     "id": "remotion",
+     "motivo": "Banda sonora para vídeo programático. (combinación por arquitectura)",
+     "orden_instalacion": "Usa el audio generado."
+    },
+    {
+     "id": "rubberband",
+     "motivo": "Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde rubberband: Procesa la salida.",
+     "reciproca_de": "rubberband"
+    },
+    {
+     "id": "audacity",
+     "motivo": "Combinación recíproca: Audacity lo enlaza como «Los plugins OpenVINO de Intel para Audacity generan y continúan música con MusicGen de AudioCraft».",
+     "orden_instalacion": "Orden indicado desde Audacity: Instala los plugins OpenVINO y los modelos MusicGen; después usa Music Generation.",
+     "reciproca_de": "audacity"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.",
+   "fuentes": [
+    "https://github.com/facebookresearch/audiocraft/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "facebookresearch/audiocraft",
+    "archived": false,
+    "pushed_at": "2026-03-03",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ace-step-1.5": {
+   "que_es": "ACE-Step 1.5, modelo y herramientas open source para generar música en local, de ace-step (ACE Studio y StepFun). Licencia MIT. Tiene ~15k estrellas (v0.1.8); la serie XL (DiT de 4B) salió en abril de 2026.",
+   "que_hace": "Genera canciones a partir de letras e instrucciones de estilo, con variantes por calidad y velocidad (turbo, sft, XL) y un modelo de lenguaje de planificación.",
+   "como_lo_hace": "Requiere Python 3.11–3.12 y GPU CUDA recomendada (también MPS, ROCm, Intel XPU o CPU). La elección de modelo depende de la VRAM (por ejemplo, 16–20 GB para 2B sft o XL turbo) y puede usar vLLM para el LM.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Backend del modelo de lenguaje.",
+     "orden_instalacion": "Activa el backend vllm."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Convertir y masterizar la salida. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa el audio."
+    },
+    {
+     "id": "rubberband",
+     "motivo": "Ajustar tempo o tono sin degradar. (combinación por arquitectura)",
+     "orden_instalacion": "Aplica stretching al resultado."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ace-step/ACE-Step-1.5",
+    "archived": false,
+    "pushed_at": "2026-11-08",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.1.8 (2026-05-18)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "edge-tts": {
+   "que_es": "edge-tts, módulo Python y CLI no oficial para usar el servicio TTS en línea de Microsoft Edge, de @rany2. Licencia LGPL-3.0, salvo un archivo bajo MIT (GitHub muestra NOASSERTION). Es maduro (~13k estrellas, 7.3.1).",
+   "que_hace": "Sintetiza voz con las voces neuronales de Edge en muchos idiomas y genera subtítulos. Ya no admite SSML personalizado porque Microsoft lo bloquea.",
+   "como_lo_hace": "Se instala con `pip install edge-tts` y se usa con `edge-tts` o `edge-playback` (este último requiere mpv salvo en Windows). Depende de un servicio de Microsoft que puede cambiar o cortarse.",
+   "combina_con": [
+    {
+     "id": "moviepy",
+     "motivo": "Narración rápida para vídeos.",
+     "orden_instalacion": "Genera el MP3 y móntalo."
+    },
+    {
+     "id": "whisper",
+     "motivo": "Comparar o subtitular. (combinación por arquitectura)",
+     "orden_instalacion": "Combina según el caso."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Convertir el audio. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte el formato."
+    },
+    {
+     "id": "short-video-factory",
+     "motivo": "Combinación recíproca: short-video-factory lo enlaza como «Síntesis de voz con Edge TTS».",
+     "orden_instalacion": "Orden indicado desde short-video-factory: Viene integrada en la app.",
+     "reciproca_de": "short-video-factory"
+    }
+   ],
+   "notas": "Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad.",
+   "fuentes": [
+    "https://github.com/rany2/edge-tts/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "rany2/edge-tts",
+    "archived": false,
+    "pushed_at": "2026-10-14",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "7.3.1 (2026-10-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "rubberband": {
+   "que_es": "Rubber Band Library, biblioteca y utilidad para estirar el tiempo y cambiar el tono de audio, de Chris Cannam (Breakfast Quay). Licencia GPL-2.0+, con licencia comercial disponible. Es madura, de nicho (~800 estrellas) y no cambia desde marzo de 2025.",
+   "que_hace": "Cambia la duración sin alterar el tono, o el tono sin alterar la duración, con alta calidad, en tiempo real u offline. Se usa en numerosas aplicaciones de audio.",
+   "como_lo_hace": "Se compila con Meson. La utilidad de línea de comandos requiere libsndfile (LGPL); hay bindings y plugins LADSPA/LV2.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Filtro rubberband en FFmpeg.",
+     "orden_instalacion": "Usa un FFmpeg compilado con librubberband."
+    },
+    {
+     "id": "ace-step-1.5",
+     "motivo": "Ajustar tempo de música generada. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa la salida."
+    },
+    {
+     "id": "audiocraft",
+     "motivo": "Ajustar duración de audio generado. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa la salida."
+    },
+    {
+     "id": "ultimate-vocal-remover",
+     "motivo": "Combinación recíproca: Ultimate Vocal Remover (UVR) lo enlaza como «UVR usa Rubber Band para las funciones de cambio de tiempo y de tono».",
+     "orden_instalacion": "Orden indicado desde Ultimate Vocal Remover (UVR): Instala Rubber Band según el README; después usa las herramientas de tempo y tono.",
+     "reciproca_de": "ultimate-vocal-remover"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/breakfastquay/rubberband/blob/default/README.md"
+   ],
+   "github": {
+    "name_with_owner": "breakfastquay/rubberband",
+    "archived": false,
+    "pushed_at": "2025-03-03",
+    "license": "GPL-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "dograh": {
+   "que_es": "Dograh AI, plataforma open source y autoalojable para construir agentes de voz, alternativa a Vapi y Retell. Licencia BSD-2-Clause. Tiene ~6k estrellas y es activa (dograh-v1.51.0).",
+   "que_hace": "Ofrece un constructor visual de flujos, pruebas rápidas, telefonía y la posibilidad de usar cualquier LLM, STT o TTS, o su propio stack. Los asistentes de código con IA pueden ayudar a diseñar los agentes.",
+   "como_lo_hace": "Se autoaloja con un comando Docker. Por defecto el quickstart abre un túnel público de trycloudflare.com para los webhooks de telefonía y deja el registro abierto, algo a revisar en producción.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "LLM local. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un proveedor compatible."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "STT autoalojado. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un STT propio."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "TTS autoalojado. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un TTS propio."
+    }
+   ],
+   "notas": "Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.",
+   "fuentes": [
+    "https://github.com/dograh-hq/dograh/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "dograh-hq/dograh",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-2-Clause",
+    "primary_language": "Python",
+    "latest_release": "dograh-v1.51.0 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "earshot": {
+   "que_es": "earshot, «oídos para agentes de código»: herramientas locales de análisis de audio, de @Leonxlnx. Licencia MIT. Es muy reciente (octubre de 2026, ~4.9k estrellas, v0.4.1).",
+   "que_hace": "Convierte sonido en evidencia para un agente: describe un archivo en palabras, mide su ajuste a una descripción, encuentra el mejor momento, distingue grabación real de sonido sintetizado y genera transcripciones de escucha y puntuaciones. También crea sonidos en código y los mejora escuchándolos (`forge`) o traduce grabaciones a código (`fit`).",
+   "como_lo_hace": "Funciona en CPU como CLI, API Python y servidor MCP; se instala con `uv tool install \"earshot[mcp] @ git+https://github.com/Leonxlnx/earshot\"`. La crítica con Gemini es opcional y requiere clave propia.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Servidor MCP para agentes.",
+     "orden_instalacion": "Añade `earshot mcp` al agente."
+    },
+    {
+     "id": "remotion",
+     "motivo": "Revisar el sonido de vídeos programáticos. (combinación por arquitectura)",
+     "orden_instalacion": "Analiza el render con earshot."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Extraer audio de vídeos. (combinación por arquitectura)",
+     "orden_instalacion": "Extrae la pista antes de analizar."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/Leonxlnx/earshot/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Leonxlnx/earshot",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.4.1 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "rnnoise": {
+   "que_es": "RNNoise, biblioteca de supresión de ruido basada en una red neuronal recurrente, de Xiph.Org (algoritmo de Jean-Marc Valin). Licencia BSD-3-Clause. Es madura y estable (~6k estrellas, v0.2) y no cambia desde febrero de 2025.",
+   "que_hace": "Elimina ruido de voz en tiempo real con un enfoque híbrido DSP más aprendizaje profundo, con muy bajo coste computacional. Se usa en aplicaciones de VoIP y streaming.",
+   "como_lo_hace": "Se compila con autotools (`./autogen.sh`, `./configure`, `make install`) y se usa como librería C. FFmpeg incluye el filtro `arnndn` basado en sus modelos.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Filtro `arnndn` con modelos RNNoise.",
+     "orden_instalacion": "Aplica el filtro con un modelo."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Supresión de ruido en streaming.",
+     "orden_instalacion": "Usa el filtro de supresión de ruido RNNoise de OBS."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "Limpiar audio antes de transcribir. (combinación por arquitectura)",
+     "orden_instalacion": "Filtra y luego transcribe."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/xiph/rnnoise/blob/main/README"
+   ],
+   "github": {
+    "name_with_owner": "xiph/rnnoise",
+    "archived": false,
+    "pushed_at": "2025-02-22",
+    "license": "BSD-3-Clause",
+    "primary_language": "C",
+    "latest_release": "v0.2 (2024-04-15)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

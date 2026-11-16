@@ -370,7 +370,8 @@ def main() -> None:
     audit={r['id']:r for r in json.loads((root/'data/reports/access-source-audit.json').read_text(encoding='utf8'))}
     counts=Counter()
     for repo in compact['repos']:
-        if not repo.get('gh') or repo.get('alias_of'):continue
+        # Repos cuya forja canónica no es GitHub (p. ej. pdfding en Codeberg) conservan su perfil revisado a mano.
+        if not repo.get('gh') or repo.get('alias_of') or repo.get('repository_host','github')!='github':continue
         rid=repo['id'];d=detail['repos'][rid];source=audit[rid]
         if source.get('error'):raise RuntimeError(f"Source unavailable: {rid}")
         text=(root/'data/extracted'/rid/'readme.md').read_text(encoding='utf8')

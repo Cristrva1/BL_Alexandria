@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plantilla oficial para crear plugins de Obsidian en TypeScript. Licencia 0BSD. Es estable (~5k estrellas, 1.0.0).
+
+## ¿Qué hace?
+
+Muestra lo básico de la API de plugins: icono en la barra lateral, comando que abre un modal, pestaña de ajustes, eventos globales e intervalos. Sirve como punto de partida que se clona y se adapta. Depende de la API más reciente (`obsidian.d.ts`) con comentarios TSDoc.
+
+## ¿Cómo lo hace?
+
+Se crea un repo desde la plantilla, se clona dentro de `.obsidian/plugins/` de un vault de pruebas, se ejecuta `npm i` y `npm run dev`, y se recarga Obsidian. Requiere Node.js. Para publicar se siguen la guía de envío y las políticas de desarrolladores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Obsidian: distribución y extensiones](obsidian-releases.md) | Directorio donde se envía el plugin terminado. | Publica una release en GitHub y abre el PR en obsidian-releases. |
+| [obsidian-skills](obsidian-skills.md) | La skill `obsidian-cli` incluye desarrollo de plugins y temas con la CLI de Obsidian. | Instala obsidian-skills en el agente antes de pedirle cambios al plugin. |
+| [Claude Code](claude-code.md) | Agente para escribir y depurar el plugin a partir de la plantilla. (combinación por arquitectura) | Abre el repo del plugin con el agente. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-08-02 · última versión publicada 1.0.0 (2020-10-28) · licencia declarada 0BSD (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md) · [2](https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin) · [3](https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin |
 | Coste | Sin pago a un modelo en la ruta básica. La plantilla no usa LLM; publicar y mantener un plugin requiere trabajo y dependencias propias |
 | Equipo | Preparación según la ruta elegida. Node; TypeScript; Git; Obsidian con bóveda de desarrollo |
-
-Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin
-
-## Qué puedes hacer con él
-
-Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.
-
-## Por qué destaca
-
-Usos propuestos: Aprender a programar un plugin; Prototipar una función para notas.
-
-## Cómo funciona
 
 Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin
 
