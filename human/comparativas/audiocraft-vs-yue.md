@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | hard |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Sigue la instalación y el ejemplo mínimo en https://github.com/multimodal-art-projectio… |
+| Instalación | `python -m pip install -U audiocraft` | `git clone https://github.com/multimodal-art-projection/YuE.git` |
 
 ## Regla práctica
 

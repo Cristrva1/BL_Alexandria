@@ -143,13 +143,13 @@ role=library · exec=local · setup=hard · mcp=False · prov=— · tags=vision
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/facebookresearch/detectron2
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/facebookresearch/detectron2/blob/main/README.md
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un detector o segmentador sobre un conjunto de imágenes propio; usar modelos preentrenados de detección como base para investigación
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -233,13 +233,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,vi
 - Equipo: Preparación según la ruta elegida. Sistema compatible; modelos; CPU o GPU; material autorizado
 **Repo:** https://github.com/facefusion/facefusion
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.facefusion.io/installation
+git clone https://github.com/facefusion/facefusion
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -421,13 +421,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vis
 - Equipo: Preparación según la ruta elegida. Python; PyTorch y dependencias OpenMMLab compatibles; checkpoint
 **Repo:** https://github.com/open-mmlab/mmpose
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://mmpose.readthedocs.io/en/latest/installation.html
+git clone https://github.com/open-mmlab/mmpose.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar modelos de pose; Preparar una demo de análisis de movimiento
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -481,13 +481,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vis
 - Equipo: Preparación según la ruta elegida. Plataforma compatible; dependencias de compilación; modelos; imagen autorizada
 **Repo:** https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md
+git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estimación de postura; Preparar puntos de movimiento para una demo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -633,13 +633,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vis
 - Equipo: Preparación según la ruta elegida. Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado
 **Repo:** https://github.com/yohanshin/WHAM
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/yohanshin/WHAM/blob/main/docs/INSTALL.md
+docker pull yusun9/wham-vitpose-dpvo-cuda11.3-python3.9:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

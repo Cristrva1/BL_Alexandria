@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 12.5k | NOASSERTION | Python | 2026-11-14 |
+| 12.5k | LGPL-3.0 (un archivo MIT) | Python | 2026-11-14 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
 **Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** LGPL-3.0 (un archivo MIT). Solo src/edge_tts/srt_composer.py es MIT. Fuente: [LICENSE](https://github.com/rany2/edge-tts/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

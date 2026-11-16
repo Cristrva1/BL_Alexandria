@@ -13,7 +13,7 @@
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟡 medio |
-| Licencia | Apache-2.0 | NOASSERTION |
+| Licencia | Apache-2.0 | Remotion License (no OSI) |
 | Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica

@@ -14,7 +14,7 @@
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MPL-2.0 | MIT |
-| Instalación | Sigue la instalación y el ejemplo mínimo en https://github.com/d2lang/d2/blob/master/RE… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Instalación | Sigue la instalación y el ejemplo mínimo en https://github.com/d2lang/d2/blob/master/RE… | `npm install mermaid` |
 
 ## Regla práctica
 

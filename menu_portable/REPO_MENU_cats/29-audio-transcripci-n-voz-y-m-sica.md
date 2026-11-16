@@ -85,13 +85,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=local · tags=au
 - Equipo: Preparación según la ruta elegida. Python 3.9 y PyTorch 2.1 según guía; modelo; GPU según tamaño; texto propio
 **Repo:** https://github.com/facebookresearch/audiocraft
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/facebookresearch/audiocraft/blob/main/README.md
+python -m pip install -U audiocraft
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar generación de música; Estudiar sonidos a partir de texto
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -180,13 +180,13 @@ role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=voz-agen
 - Equipo: Preparación según la ruta elegida. Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba
 **Repo:** https://github.com/dograh-hq/dograh
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/dograh-hq/dograh/blob/main/README.md
+/plugin marketplace add dograh-hq/dograh-plugins
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un agente de voz; Editar un workflow mediante MCP
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -365,13 +365,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tt
 - Equipo: Preparación según la ruta elegida. Entorno y GPU compatibles; modelo con licencia aplicable; texto y voz autorizados
 **Repo:** https://github.com/fishaudio/fish-speech
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://speech.fish.audio/install/
+docker run --gpus device=0 -v ./checkpoints:/app/checkpoints -e LLAMA_CHECKPOINT_PATH=checkpoints/drama-3 -p 8080:8080 fishaudio/fish-speech:server-cuda
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -464,13 +464,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,
 - Equipo: Preparación según la ruta elegida. Python; Kokoro y soundfile; espeak-ng según idioma; pesos
 **Repo:** https://github.com/hexgrad/kokoro
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/hexgrad/kokoro/blob/main/README.md
+pip install kokoro
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Narrar una nota propia; Probar una voz para una demo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -592,13 +592,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audi
 - Equipo: Preparación según la ruta elegida. Instalador VoiceStudio para tu sistema; modelos; almacenamiento; voces autorizadas
 **Repo:** https://github.com/debpalash/VoiceStudio
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/debpalash/VoiceStudio/blob/main/README.md
+brew install --cask debpalash/tap/voicestudio
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -807,13 +807,13 @@ role=library · exec=hybrid · setup=hard · mcp=False · prov=— · tags=voice
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/TEN-framework/ten-framework
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/TEN-framework/ten-framework/blob/main/README.md
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: montar un asistente de voz que conversa en tiempo real con un LLM; construir un agente de voz con avatar o con transcripción en vivo
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -868,13 +868,13 @@ role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=tts
 - Equipo: Preparación según la ruta elegida. Modelo y guía específicos; Python y GPU según variante; audio autorizado
 **Repo:** https://github.com/microsoft/VibeVoice
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/microsoft/VibeVoice/blob/main/README.md
+git clone https://github.com/microsoft/VibeVoice.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -1021,13 +1021,13 @@ role=runtime · exec=local · setup=hard · mcp=False · prov=— · tags=music,
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/multimodal-art-projection/YuE
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/multimodal-art-projection/YuE/blob/main/README.md
+git clone https://github.com/multimodal-art-projection/YuE.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: generar una maqueta de canción con letra propia para un proyecto personal o académico; editar la armonía de una canción generada manteniendo la melodía
 **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos

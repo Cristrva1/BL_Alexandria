@@ -8638,7 +8638,7 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 30.7k<br>
 **Qué es:** Plataforma para intercambio y mejora de rostros en imágenes y video.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.facefusion.io/installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/facefusion/facefusion` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [InsightFace](human/fichas/insightface.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
 **Más:** [ficha completa](human/fichas/facefusion.md) · [GitHub](https://github.com/facefusion/facefusion)
@@ -8728,7 +8728,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup hard · ⭐ 35k<br>
 **Qué es:** Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/facebookresearch/detectron2/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un detector o segmentador sobre un conjunto de imágenes propio; usar modelos preentrenados de detección como base para investigación — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [PyTorch](human/fichas/pytorch.md) · [CVAT Community](human/fichas/cvat.md) · [OpenCV](human/fichas/opencv.md)<br>
 **Más:** [ficha completa](human/fichas/detectron2.md) · [GitHub](https://github.com/facebookresearch/detectron2)
@@ -8737,7 +8737,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 34.6k<br>
 **Qué es:** Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estimación de postura; Preparar puntos de movimiento para una demo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OpenCV](human/fichas/opencv.md) · [EasyMocap](human/fichas/easymocap.md) · [ComfyUI](human/fichas/comfyui.md)<br>
 **Más:** [ficha completa](human/fichas/openpose.md) · [GitHub](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
@@ -8792,7 +8792,7 @@ docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/labe
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 8.1k<br>
 **Qué es:** Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://mmpose.readthedocs.io/en/latest/installation.html); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/open-mmlab/mmpose.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar modelos de pose; Preparar una demo de análisis de movimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [PyTorch](human/fichas/pytorch.md) · [OpenCV](human/fichas/opencv.md) · [EasyMocap](human/fichas/easymocap.md) · [CVAT Community](human/fichas/cvat.md)<br>
 **Más:** [ficha completa](human/fichas/mmpose.md) · [GitHub](https://github.com/open-mmlab/mmpose)
@@ -8822,7 +8822,7 @@ conda activate 4D-humans` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 1.2k<br>
 **Qué es:** Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/yohanshin/WHAM/blob/main/docs/INSTALL.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker pull yusun9/wham-vitpose-dpvo-cuda11.3-python3.9:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [4D-Humans](human/fichas/4d-humans.md) · [blender](human/fichas/blender.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/wham.md) · [GitHub](https://github.com/yohanshin/WHAM)
@@ -8947,7 +8947,7 @@ uv sync --extra all --extra cu13     # CUDA 13.x (recommended) — use --extra c
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 10.1k<br>
 **Qué es:** Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/hexgrad/kokoro/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install kokoro` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Narrar una nota propia; Probar una voz para una demo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Pipecat](human/fichas/pipecat.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/kokoro.md) · [GitHub](https://github.com/hexgrad/kokoro)
@@ -8956,7 +8956,7 @@ uv sync --extra all --extra cu13     # CUDA 13.x (recommended) — use --extra c
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 111k<br>
 **Qué es:** App local de voz con modelos descargables,edición AGPL y una oferta comercial separada.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/debpalash/VoiceStudio/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install --cask debpalash/tap/voicestudio` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [whisperX](human/fichas/whisperx.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Kokoro](human/fichas/kokoro.md)<br>
 **Más:** [ficha completa](human/fichas/omnivoice-studio.md) · [GitHub](https://github.com/debpalash/VoiceStudio)
@@ -8978,7 +8978,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 57.2k<br>
 **Qué es:** Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/microsoft/VibeVoice/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/microsoft/VibeVoice.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Transformers](human/fichas/transformers.md) · [open-notebook](human/fichas/open-notebook.md) · [Pipecat](human/fichas/pipecat.md) · [TEN Framework](human/fichas/ten-framework.md)<br>
 **Más:** [ficha completa](human/fichas/vibevoice.md) · [GitHub](https://github.com/microsoft/VibeVoice)
@@ -9007,7 +9007,7 @@ python -m pip install --upgrade pip setuptools wheel` (comprobar los pasos compl
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 33.7k<br>
 **Qué es:** Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://speech.fish.audio/install/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run --gpus device=0 -v ./checkpoints:/app/checkpoints -e LLAMA_CHECKPOINT_PATH=checkpoints/drama-3 -p 8080:8080 fishaudio/fish-speech:server-cuda` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Pipecat](human/fichas/pipecat.md) · [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md)<br>
 **Más:** [ficha completa](human/fichas/fish-speech.md) · [GitHub](https://github.com/fishaudio/fish-speech)
@@ -9098,7 +9098,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup hard · ⭐ 11.2k<br>
 **Qué es:** Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
-**Arranque:** [Instrucciones originales](https://github.com/TEN-framework/ten-framework/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: montar un asistente de voz que conversa en tiempo real con un LLM; construir un agente de voz con avatar o con transcripción en vivo — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [dify](human/fichas/dify.md) · [OpenClaw](human/fichas/openclaw.md) · [VibeVoice](human/fichas/vibevoice.md) · [whisper](human/fichas/whisper.md) · [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md)<br>
 **Más:** [ficha completa](human/fichas/ten-framework.md) · [GitHub](https://github.com/TEN-framework/ten-framework)
@@ -9107,7 +9107,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.1k<br>
 **Qué es:** Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/dograh-hq/dograh/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `/plugin marketplace add dograh-hq/dograh-plugins` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un agente de voz; Editar un workflow mediante MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [Kokoro](human/fichas/kokoro.md)<br>
 **Más:** [ficha completa](human/fichas/dograh.md) · [GitHub](https://github.com/dograh-hq/dograh)
@@ -9118,7 +9118,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 23.9k<br>
 **Qué es:** Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/facebookresearch/audiocraft/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `python -m pip install -U audiocraft` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar generación de música; Estudiar sonidos a partir de texto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [MoviePy](human/fichas/moviepy.md) · [remotion](human/fichas/remotion.md) · [rubberband](human/fichas/rubberband.md) · [Audacity](human/fichas/audacity.md)<br>
 **Más:** [ficha completa](human/fichas/audiocraft.md) · [GitHub](https://github.com/facebookresearch/audiocraft)
@@ -9142,7 +9142,7 @@ uv run acestep` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup hard · ⭐ 13.5k<br>
 **Qué es:** Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/multimodal-art-projection/YuE/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/multimodal-art-projection/YuE.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: generar una maqueta de canción con letra propia para un proyecto personal o académico; editar la armonía de una canción generada manteniendo la melodía — **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [PyTorch](human/fichas/pytorch.md) · [Audacity](human/fichas/audacity.md)<br>
 **Más:** [ficha completa](human/fichas/yue.md) · [GitHub](https://github.com/multimodal-art-projection/YuE)
@@ -9259,7 +9259,7 @@ Herramientas y skills para escenas, motion graphics y montaje programático. Dis
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 15.2k<br>
 **Qué es:** Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://zulko.github.io/moviepy/getting_started/install.html); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install moviepy` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar variantes de un video; Componer clips y rótulos desde Python — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [whisperX](human/fichas/whisperx.md) · [Kokoro](human/fichas/kokoro.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/moviepy.md) · [GitHub](https://github.com/Zulko/moviepy)
@@ -9290,7 +9290,7 @@ manimgl` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 42.5k<br>
 **Qué es:** Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://docs.manim.community/en/stable/installation.html); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install manim` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una explicación matemática; Crear una animación de geometría — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [Kokoro](human/fichas/kokoro.md) · [srt-whiteboard-animation](human/fichas/srt-whiteboard-animation.md)<br>
 **Más:** [ficha completa](human/fichas/manim-community.md) · [GitHub](https://github.com/ManimCommunity/manim)
@@ -9348,7 +9348,7 @@ make setup` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 31.1k<br>
 **Qué es:** Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe.<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
-**Arranque:** [Instrucciones originales](https://github.com/browser-use/video-use/blob/main/install.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/browser-use/video-use ~/Developer/video-use` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar una entrevista propia; Seleccionar tomas de un tutorial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [Claude Code](human/fichas/claude-code.md) · [hermes-agent](human/fichas/hermes-agent.md) · [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md)<br>
 **Más:** [ficha completa](human/fichas/video-use.md) · [GitHub](https://github.com/browser-use/video-use)
@@ -9385,7 +9385,7 @@ claude plugin install lemo-opuscar@lemolab` (comprobar los pasos completos en la
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🎨 skill/prompt · Setup 🟡 medio · ⭐ 8.6k<br>
 **Qué es:** Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/JuneYaooo/rea-video/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install "rea-video[ocr] @ git+https://github.com/JuneYaooo/rea-video"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [remotion](human/fichas/remotion.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/rea-video.md) · [GitHub](https://github.com/JuneYaooo/rea-video)
@@ -9518,7 +9518,7 @@ Presentaciones, diagramas y documentación visual. Elige entre editar una pieza,
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 76.8k<br>
 **Qué es:** Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/hugohe3/ppt-master/blob/main/docs/getting-started.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/hugohe3/ppt-master.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una presentación de un informe; Adaptar una plantilla corporativa — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [markitdown](human/fichas/markitdown.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/ppt-master.md) · [GitHub](https://github.com/hugohe3/ppt-master)
@@ -9527,7 +9527,7 @@ Presentaciones, diagramas y documentación visual. Elige entre editar una pieza,
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 72.6k<br>
 **Qué es:** Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://revealjs.com/installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install reveal.js` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una presentación web; Mostrar un ejemplo interactivo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Mermaid](human/fichas/mermaid.md) · [GSAP](human/fichas/gsap.md) · [Claude Code](human/fichas/claude-code.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/reveal-js.md) · [GitHub](https://github.com/hakimel/reveal.js)
@@ -9536,7 +9536,7 @@ Presentaciones, diagramas y documentación visual. Elige entre editar una pieza,
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 12.7k<br>
 **Qué es:** Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/marp-team/marp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install --save-dev @marp-team/marp-cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar slides sencillas; Versionar una presentación en Git — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Mermaid](human/fichas/mermaid.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/marp.md) · [GitHub](https://github.com/marp-team/marp)
@@ -9561,7 +9561,7 @@ Presentaciones, diagramas y documentación visual. Elige entre editar una pieza,
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 91.1k<br>
 **Qué es:** Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/mermaid-js/mermaid/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install mermaid` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar un proceso; Preparar un diagrama de secuencia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Slidev](human/fichas/slidev.md) · [Claude Code](human/fichas/claude-code.md) · [archify](human/fichas/archify.md) · [Marp](human/fichas/marp.md) · [reveal.js](human/fichas/reveal-js.md) · [draw.io](human/fichas/drawio.md)<br>
 **Más:** [ficha completa](human/fichas/mermaid.md) · [GitHub](https://github.com/mermaid-js/mermaid)
@@ -9597,7 +9597,7 @@ Presentaciones, diagramas y documentación visual. Elige entre editar una pieza,
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 13.4k<br>
 **Qué es:** Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/plantuml/plantuml/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/plantuml/plantuml.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: documentar diagramas de secuencia y clases como texto en el repositorio; generar diagramas automáticamente en la documentación técnica — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Kroki](human/fichas/kroki.md) · [Claude Code](human/fichas/claude-code.md) · [draw.io](human/fichas/drawio.md)<br>
 **Más:** [ficha completa](human/fichas/plantuml.md) · [GitHub](https://github.com/plantuml/plantuml)
@@ -9731,7 +9731,7 @@ npx playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 121k<br>
 **Qué es:** Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/browser-use/browser-use/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `uv add 'browser-use==1.0.6'` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [Pydantic AI](human/fichas/pydantic-ai.md) · [sandbox](human/fichas/sandbox.md) · [OpenManus](human/fichas/openmanus.md) · [Steel Browser](human/fichas/steel-browser.md)<br>
 **Más:** [ficha completa](human/fichas/browser-use.md) · [GitHub](https://github.com/browser-use/browser-use)
@@ -9778,7 +9778,7 @@ playwright-cli --help` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.3k<br>
 **Qué es:** Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/nanobrowser/nanobrowser/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/nanobrowser/nanobrowser.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: automatizar tareas repetitivas en webs donde ya tienes la sesión iniciada; investigar y resumir información de varias páginas desde el panel lateral — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [llama.cpp](human/fichas/llama-cpp.md) · [vLLM](human/fichas/vllm.md) · [Puppeteer](human/fichas/puppeteer.md)<br>
 **Más:** [ficha completa](human/fichas/nanobrowser.md) · [GitHub](https://github.com/nanobrowser/nanobrowser)
@@ -9798,7 +9798,7 @@ playwright-cli --help` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 42k<br>
 **Qué es:** Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/lightpanda-io/browser/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install lightpanda-io/browser/lightpanda` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar navegación headless; Explorar un agente con modelo local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Puppeteer](human/fichas/puppeteer.md) · [playwright](human/fichas/playwright.md) · [Stagehand](human/fichas/stagehand.md) · [agent-browser](human/fichas/agent-browser.md) · [awesome-chrome-devtools](human/fichas/awesome-chrome-devtools.md)<br>
 **Más:** [ficha completa](human/fichas/lightpanda.md) · [GitHub](https://github.com/lightpanda-io/browser)

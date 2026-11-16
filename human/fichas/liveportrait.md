@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 19.5k | NOASSERTION | Python | 2026-06-23 |
+| 19.5k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
 **Nivel:** 3 Avanzado — preparación pesada
 
 **Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** MIT. Los modelos de InsightFace que usa son solo para investigación no comercial. Fuente: [LICENSE](https://github.com/KlingAIResearch/LivePortrait/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

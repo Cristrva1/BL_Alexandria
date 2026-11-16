@@ -1114,60 +1114,60 @@ Detalle: `REPO_MENU_cats/28-visi-n-artificial-rostros-y-percepci-n.md`
 - `cvat` [P|loc|M|+] — Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y export — tags: annotation,vision,dataset,self-hosted — alt: label-studio
 - `deep-live-cam` [R|loc|H|+] — Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. — tags: vision,image,python — alt: facefusion
 - `deepface` [L|loc|E|+] — Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve — tags: face,python,vision,biometrics
-- `detectron2` [L|loc|-|?] — Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorc — tags: vision,pytorch,detection,segmentation
+- `detectron2` [L|loc|-|+] — Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorc — tags: vision,pytorch,detection,segmentation
 - `dlib` [L|loc|M|+] — Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciale — tags: vision,cpp,python,face
 - `easymocap` [R|loc|H|?] — Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imág — tags: vision,model,python — prov: local
-- `facefusion` [A|loc|M|?] — Plataforma para intercambio y mejora de rostros en imágenes y video. — tags: image,video,vision,python — alt: deep-live-cam
+- `facefusion` [A|loc|M|+] — Plataforma para intercambio y mejora de rostros en imágenes y video. — tags: image,video,vision,python — alt: deep-live-cam
 - `insightface` [L|loc|M|?] — Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. — tags: vision,image,python
 - `kornia` [L|loc|M|+] — Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en — tags: vision,library,python — prov: local
 - `label-studio` [P|loc|E|+] — Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. — tags: data,vision,training,docker — alt: cvat
 - `liveportrait` [R|loc|H|+] — Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia — tags: image,vision,python
 - `mediapipe` [L|loc|M|?] — Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplic — tags: vision,library,c — prov: local
-- `mmpose` [R|loc|H|?] — Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento hum — tags: vision,model,python — prov: local
+- `mmpose` [R|loc|H|+] — Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento hum — tags: vision,model,python — prov: local
 - `opencv` [L|loc|E|?] — La librería de visión por computadora de referencia, con miles de algoritmos. — tags: vision,image,cpp,python
-- `openpose` [R|loc|H|?] — Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. — tags: vision,model,c — prov: local
+- `openpose` [R|loc|H|+] — Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. — tags: vision,model,c — prov: local
 - `sam3` [L|loc|H|+] — Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos q — tags: vision,video,python
 - `supervision` [L|loc|E|+] — Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. — tags: vision,python
 - `tfjs-models` [L|loc|H|?] — Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en ap — tags: vision,library,typescript — prov: local
 - `ultralytics` [L|loc|E|+] — Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. — tags: vision,training,python
-- `wham` [R|loc|H|?] — Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de vi — tags: vision,model,python — prov: local
+- `wham` [R|loc|H|+] — Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de vi — tags: vision,model,python — prov: local
 
 ### 29. Audio, transcripción, voz y música (33)
 Detalle: `REPO_MENU_cats/29-audio-transcripci-n-voz-y-m-sica.md`
 
 - `ace-step-1.5` [P|loc|H|+] — Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tam — tags: musica,text2music,python — alt: yue,audiocraft
 - `audacity` [A|loc|E|?] — Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incl — tags: audio,editor,cpp,app
-- `audiocraft` [L|loc|M|?] — Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códe — tags: audio,inference,training,python — prov: local — alt: yue,ace-step-1.5
+- `audiocraft` [L|loc|M|+] — Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códe — tags: audio,inference,training,python — prov: local — alt: yue,ace-step-1.5
 - `cosyvoice` [L|loc|M|+] — Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. — tags: tts,audio,python — prov: local — alt: fish-speech,index-tts,f5-tts
 - `demucs` [L|loc|E|+] — Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación ma — tags: audio,music,separation,pytorch
-- `dograh` [A|hyb|M|?] — Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configu — tags: voz-agentes,agent,python — alt: pipecat,livekit-agents,ten-framework
+- `dograh` [A|hyb|M|+] — Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configu — tags: voz-agentes,agent,python — alt: pipecat,livekit-agents,ten-framework
 - `earshot` [R|hyb|M|+] — Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. — tags: edicion,mcp,python — prov: local
 - `edge-tts` [L|cld|E|+] — Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. — tags: tts,speech-synthesis,text-to-speech,python — alt: kokoro
 - `elevenlabs-python` [L|hyb|E|+] — SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y age — tags: tts,voice,api,python — prov: elevenlabs
 - `f5-tts` [R|loc|M|+] — Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con D — tags: tts,voice-cloning,pytorch,speech — alt: fish-speech,cosyvoice
 - `faster-whisper` [R|loc|M|+] — Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. — tags: stt,audio,python — alt: whisper-cpp
-- `fish-speech` [L|loc|M|?] — Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. — tags: tts,audio,python — prov: local — alt: cosyvoice,gpt-sovits,f5-tts
+- `fish-speech` [L|loc|M|+] — Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. — tags: tts,audio,python — prov: local — alt: cosyvoice,gpt-sovits,f5-tts
 - `gpt-sovits` [A|loc|M|+] — Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y — tags: tts,audio,python — prov: local — alt: fish-speech
 - `index-tts` [L|loc|M|+] — Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. — tags: tts,audio,python — prov: local — alt: cosyvoice
-- `kokoro` [L|loc|E|?] — Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles — tags: tts,audio,local — prov: local — alt: luxtts,edge-tts
+- `kokoro` [L|loc|E|+] — Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles — tags: tts,audio,local — prov: local — alt: luxtts,edge-tts
 - `livekit-agents` [R|hyb|M|+] — Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. — tags: audio,agents,video,python — prov: openai,anthropic,google — alt: pipecat,dograh,ten-framework
 - `luxtts` [L|loc|E|+] — Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. — tags: tts,audio,python — prov: local — alt: kokoro
 - `nemo` [L|loc|H|+] — Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenami — tags: stt,tts,audio,python — alt: whisperx
-- `omnivoice-studio` [A|loc|M|?] — App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. — tags: tts,audio,python — alt: videolingo
+- `omnivoice-studio` [A|loc|M|+] — App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. — tags: tts,audio,python — alt: videolingo
 - `pipecat` [R|hyb|M|+] — Framework open source para agentes de voz y apps multimodales en tiempo real. — tags: audio,agents,stt,tts,python — prov: openai,anthropic,google — alt: livekit-agents,dograh,ten-framework
 - `pyannote-audio` [L|hyb|M|+] — Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio pr — tags: audio,diarization,pytorch,python — prov: local
 - `rnnoise` [R|loc|M|?] — Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. — tags: edicion,model,c — prov: local
 - `rubberband` [L|loc|M|?] — Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramient — tags: edicion,library,c
 - `rvc` [A|loc|M|+] — Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. — tags: audio,tts,python — prov: local
 - `sherpa-onnx` [R|loc|M|?] — Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante — tags: speech,stt,tts,onnx
-- `ten-framework` [L|hyb|-|?] — Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, t — tags: voice,agents,realtime,framework — alt: pipecat,livekit-agents,dograh
+- `ten-framework` [L|hyb|-|+] — Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, t — tags: voice,agents,realtime,framework — alt: pipecat,livekit-agents,dograh
 - `ultimate-vocal-remover` [A|loc|E|?] — Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), — tags: audio,music,separation,app
-- `vibevoice` [L|loc|H|?] — Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. — tags: tts,audio,python — prov: local
+- `vibevoice` [L|loc|H|+] — Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. — tags: tts,audio,python — prov: local
 - `voxcpm` [R|loc|H|+] — VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. — tags: tts,audio,python
 - `whisper` [R|loc|M|+] — Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. — tags: stt,audio,python — alt: whisper-cpp
 - `whisper-cpp` [R|loc|E|+] — Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. — tags: stt,audio,local,cpp — prov: local — alt: faster-whisper,whisper
 - `whisperx` [R|loc|M|+] — Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. — tags: stt,audio,python — alt: nemo
-- `yue` [R|loc|-|?] — Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con par — tags: music,generation,audio,model — alt: ace-step-1.5,audiocraft
+- `yue` [R|loc|-|+] — Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con par — tags: music,generation,audio,model — alt: ace-step-1.5,audiocraft
 
 ### 30. Video con código y agentes creativos (23)
 Detalle: `REPO_MENU_cats/30-video-con-c-digo-y-agentes-creativos.md`
@@ -1178,22 +1178,22 @@ Detalle: `REPO_MENU_cats/30-video-con-c-digo-y-agentes-creativos.md`
 - `hyperframes` [R|loc|E|+] — Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo use — tags: video,agents,skills,typescript — prov: mcp — alt: remotion,moviepy
 - `lemo-opuscar` [S|loc|M|+] — Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y me — tags: programatico,skill,javascript
 - `manim` [L|loc|M|+] — Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenG — tags: video,dataviz,learning,python — alt: manim-community
-- `manim-community` [L|loc|M|?] — Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. — tags: programatico,animations,hacktoberfest,manim,math,python — alt: manim
+- `manim-community` [L|loc|M|+] — Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. — tags: programatico,animations,hacktoberfest,manim,math,python — alt: manim
 - `mediabunny` [L|loc|M|+] — Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones w — tags: edicion,library,typescript
 - `motion-canvas` [L|loc|E|?] — Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que s — tags: animation,typescript,video,code — alt: revideo,remotion
 - `motionmaxxing` [S|loc|M|+] — Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. — tags: programatico,skill,javascript
-- `moviepy` [L|loc|E|?] — Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efecto — tags: video,audio,automation,python — alt: remotion,hyperframes
+- `moviepy` [L|loc|E|+] — Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efecto — tags: video,audio,automation,python — alt: remotion,hyperframes
 - `openfilm` [S|loc|M|+] — Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. — tags: programatico,skill,typescript
 - `openmontage` [S|loc|M|+] — Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcion — tags: video,coding-agent,skills — alt: remotion-superpowers,moneyprinterturbo
 - `papermorph` [S|loc|M|+] — Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visu — tags: programatico,skill,javascript
-- `rea-video` [S|hyb|M|?] — Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO — tags: programatico,agent-skills,ai-video,aigc-detection,claude-code,codex,ffmpeg,prompt-engineering
+- `rea-video` [S|hyb|M|+] — Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO — tags: programatico,agent-skills,ai-video,aigc-detection,claude-code,codex,ffmpeg,prompt-engineering
 - `remotion` [L|loc|M|+] — Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. — tags: video,typescript — alt: moviepy,hyperframes,motion-canvas,revideo
 - `remotion-superpowers` [S|loc|E|+] — Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por et — tags: video,skills,coding-agent — alt: openmontage,video-use
 - `revideo` [L|loc|M|+] — Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor Reac — tags: video,typescript,rendering,code — alt: motion-canvas,remotion
 - `skills-remotion` [S|loc|E|+] — Skills oficiales de Remotion para que tu agente de código cree videos con React. — tags: video,skills
 - `srt-whiteboard-animation` [S|loc|M|?] — Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos  — tags: programatico,skill,python
 - `video-shotcraft` [S|loc|M|+] — Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de son — tags: programatico,skill,typescript
-- `video-use` [S|loc|E|?] — Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. — tags: video,coding-agent,skills,python — alt: remotion-superpowers
+- `video-use` [S|loc|E|+] — Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. — tags: video,coding-agent,skills,python — alt: remotion-superpowers
 - `videofy-minimal` [A|loc|E|+] — Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revis — tags: video,typescript — alt: moneyprinterturbo
 
 ### 31. Presentaciones, diagramas y explicación visual (12)
@@ -1204,12 +1204,12 @@ Detalle: `REPO_MENU_cats/31-presentaciones-diagramas-y-explicaci-n-visual.md`
 - `diagram-design` [S|loc|M|+] — Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilida — tags: diagramas,skill,html — alt: archify
 - `drawio` [A|loc|E|?] — Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura  — tags: diagrams,editor,javascript,app
 - `kroki` [P|loc|E|+] — Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de — tags: diagrams,api,self-hosted,docker
-- `marp` [D|loc|E|?] — Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separad — tags: slides,typescript — alt: slidev,reveal.js
-- `mermaid` [L|loc|E|?] — Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. — tags: docs,dataviz,typescript — alt: excalidraw,d2,plantuml
-- `plantuml` [A|loc|E|?] — Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales)  — tags: diagrams,uml,java,docs-as-code — alt: d2,mermaid
-- `ppt-master` [S|hyb|E|?] — Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documento — tags: slides,python — alt: presenton
+- `marp` [D|loc|E|+] — Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separad — tags: slides,typescript — alt: slidev,reveal.js
+- `mermaid` [L|loc|E|+] — Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. — tags: docs,dataviz,typescript — alt: excalidraw,d2,plantuml
+- `plantuml` [A|loc|E|+] — Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales)  — tags: diagrams,uml,java,docs-as-code — alt: d2,mermaid
+- `ppt-master` [S|hyb|E|+] — Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documento — tags: slides,python — alt: presenton
 - `presenton` [A|hyb|E|+] — Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. — tags: slides,agents,typescript — prov: openai,google,local — alt: ppt-master
-- `reveal.js` [L|loc|E|?] — Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orad — tags: slides,javascript — alt: slidev,marp
+- `reveal.js` [L|loc|E|+] — Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orad — tags: slides,javascript — alt: slidev,marp
 - `slidev` [A|loc|E|+] — Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. — tags: slides,typescript — alt: marp,reveal.js
 
 ### 32. Navegadores y automatización web (19)
@@ -1218,13 +1218,13 @@ Detalle: `REPO_MENU_cats/32-navegadores-y-automatizaci-n-web.md`
 - `agent-browser` [A|loc|E|+] — CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. — tags: navegador,rust — alt: playwright-cli
 - `awesome-chrome-devtools` [D|loc|E|?] — Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. — tags: navegador,awesome,awesome-list
 - `browser-harness` [R|loc|E|?] — Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. — tags: browser,coding-agent,python — alt: playwright-mcp,chrome-devtools-mcp,browser-use
-- `browser-use` [L|hyb|M|?] — Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. — tags: automation,browser,python — alt: computer-use-preview,stagehand,skyvern,playwright-mcp,browser-harness
+- `browser-use` [L|hyb|M|+] — Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. — tags: automation,browser,python — alt: computer-use-preview,stagehand,skyvern,playwright-mcp,browser-harness
 - `camoufox` [L|loc|M|+] — Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada  — tags: browser,scraping,firefox,playwright
 - `cypress` [L|loc|E|+] — Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interac — tags: testing,e2e,javascript,browser — alt: webdriverio,playwright,selenium,puppeteer
 - `flaresolverr` [P|loc|E|+] — Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el — tags: scraping,proxy,cloudflare,docker
 - `ladybird` [A|loc|-|?] — Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Ch — tags: browser,engine,cpp,independent — alt: servo
-- `lightpanda` [R|loc|E|?] — Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. — tags: browser,scraping
-- `nanobrowser` [A|hyb|E|?] — Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, co — tags: browser,agent,chrome,extension
+- `lightpanda` [R|loc|E|+] — Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. — tags: browser,scraping
+- `nanobrowser` [A|hyb|E|+] — Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, co — tags: browser,agent,chrome,extension
 - `playwright` [L|hyb|M|+] — Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola A — tags: automation,browser,typescript — alt: puppeteer,selenium,cypress,webdriverio
 - `playwright-cli` [S|hyb|E|+] — Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador  — tags: browser,typescript — alt: agent-browser
 - `puppeteer` [L|loc|E|+] — Librería de Google para controlar Chrome y Firefox desde Node.js. — tags: browser,scraping,typescript — alt: playwright,selenium,cypress,webdriverio

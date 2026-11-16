@@ -205,13 +205,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=prog
 - Equipo: Preparación según la ruta elegida. Python; dependencias de la versión; LaTeX según escena; equipo
 **Repo:** https://github.com/ManimCommunity/manim
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.manim.community/en/stable/installation.html
+pip install manim
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una explicación matemática; Crear una animación de geometría
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -328,13 +328,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=video,
 - Equipo: Preparación según la ruta elegida. Python; FFmpeg según instalación; fuente tipográfica para títulos; video de prueba
 **Repo:** https://github.com/Zulko/moviepy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://zulko.github.io/moviepy/getting_started/install.html
+pip install moviepy
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar variantes de un video; Componer clips y rótulos desde Python
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -452,13 +452,13 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=progr
 - Equipo: Preparación según la ruta elegida. Python >=3.10; FFmpeg; video autorizado; modelo con visión solo si eliges revisión AI
 **Repo:** https://github.com/JuneYaooo/rea-video
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/JuneYaooo/rea-video/blob/main/README.md
+pip install "rea-video[ocr] @ git+https://github.com/JuneYaooo/rea-video"
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -666,13 +666,13 @@ role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,co
 - Equipo: Preparación según la ruta elegida. Agente con shell; Python y uv; FFmpeg; material propio; clave ElevenLabs
 **Repo:** https://github.com/browser-use/video-use
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/browser-use/video-use/blob/main/install.md
+git clone https://github.com/browser-use/video-use ~/Developer/video-use
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar una entrevista propia; Seleccionar tomas de un tutorial
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

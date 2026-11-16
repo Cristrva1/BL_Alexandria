@@ -33,7 +33,7 @@ flowchart LR
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
 | 1 | [whisperX](../fichas/whisperx.md) | Transcribe y alinea palabra por palabra para los subtítulos | 25.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 2 | [Kokoro](../fichas/kokoro.md) | Genera una voz en off con una voz e idioma compatibles | 10.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [Kokoro](../fichas/kokoro.md) | Genera una voz en off con una voz e idioma compatibles | 10.1k | `pip install kokoro` |
 | 3 | [ComfyUI](../fichas/comfyui.md) | Genera imágenes o b-roll con modelos de difusión | 147k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 4 | [Real-ESRGAN](../fichas/real-esrgan.md) | Escala y limpia las imágenes antes del montaje | 37.5k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 5 | [remotion](../fichas/remotion.md) | Ensambla el video con plantillas en React | 73.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
