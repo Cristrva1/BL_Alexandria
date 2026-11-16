@@ -64,6 +64,12 @@
      "id": "imhex",
      "motivo": "Analizar formatos de datos con patrones visuales mientras r2 trabaja el código. (combinación por arquitectura)",
      "orden_instalacion": "Usa ambos sobre el mismo binario."
+    },
+    {
+     "id": "yara",
+     "motivo": "Combinación recíproca: YARA lo enlaza como «Tras un match YARA, inspecciona el binario con radare2».",
+     "orden_instalacion": "Orden indicado desde YARA: Match YARA → abrir en radare2.",
+     "reciproca_de": "yara"
     }
    ],
    "notas": "Alternativas (elige una): rizin, ghidra. Úsalo solo con software y sistemas que tengas derecho a analizar.",

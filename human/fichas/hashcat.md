@@ -29,6 +29,7 @@ Escrito en C; se usa con binarios de la release o paquetes de la plataforma. Req
 | [Metasploit Framework](metasploit.md) | Los módulos de análisis de Metasploit pueden usar Hashcat para probar los hashes recogidos en un ejercicio. | Instala Hashcat; después ejecuta el módulo crack_* con la acción hashcat. |
 | [BloodHound Community Edition](bloodhound.md) | BloodHound identifica cuentas expuestas (por ejemplo, kerberoasteables) cuyos hashes se auditan con Hashcat (combinación por arquitectura). | Analiza el dominio con BloodHound; después audita los hashes autorizados con Hashcat. |
 | [Claude Code](claude-code.md) | Un agente puede ayudar a construir reglas, máscaras y comandos de Hashcat para una auditoría (combinación por arquitectura). | Describe la política de contraseñas; después revisa el comando propuesto. |
+| [SecLists](seclists.md) | Combinación recíproca: SecLists lo enlaza como «Diccionarios de SecLists alimentan ataques de contraseña en lab». | Orden indicado desde SecLists: SecLists primero; Hashcat con la lista autorizada. |
 
 **Notas:** Alternativas (elige una): john.
 

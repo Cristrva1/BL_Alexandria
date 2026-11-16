@@ -31,6 +31,12 @@ Escrito en Ruby; se recomienda instalar con los instaladores nightly oficiales e
 | [John the Ripper (jumbo)](john.md) | Los mismos módulos `crack_*` pueden usar John the Ripper como motor. | Instala John; después ejecuta el módulo con la acción john. |
 | [BloodHound Community Edition](bloodhound.md) | BloodHound mapea rutas de ataque en Active Directory que después se validan con módulos de Metasploit en un ejercicio autorizado (combinación por arquitectura). | Recoge y analiza datos con BloodHound; después prueba las rutas en el laboratorio. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[CALDERA](caldera.md) · [Impacket](impacket.md) · [PEASS-ng](peass-ng.md) · [Sliver](sliver.md)
+
 **Notas:** Mantén Metasploit en una VM o laboratorio aislado; los antivirus suelen detectar sus cargas útiles.
 
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada NOASSERTION (consultado el 2026-11-16).

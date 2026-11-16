@@ -32,6 +32,12 @@ Escrito en Go; se instala con `go install`, Docker o binarios. Las plantillas se
 | [ffuf](ffuf.md) | Combinación recíproca: ffuf lo enlaza como «Las rutas que descubre ffuf se revisan después con plantillas de Nuclei (combinación por arquitectura)». | Orden indicado desde ffuf: Guarda la salida de ffuf; después pasa las URLs a nuclei. |
 | [ZAP (Zed Attack Proxy)](zaproxy.md) | Combinación recíproca: ZAP (Zed Attack Proxy) lo enlaza como «Nuclei comprueba CVE concretos mientras ZAP analiza la lógica y las respuestas de la aplicación (combinación por arquitectura)». | Orden indicado desde ZAP (Zed Attack Proxy): Ejecuta ambos escaneos sobre el mismo entorno de pruebas. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Amass](amass.md) · [Evilginx2](evilginx2.md) · [httpx](httpx.md) · [Naabu](naabu.md) · [PayloadsAllTheThings](payloadsallthethings.md) · [SecLists](seclists.md)
+
 **Notas:** Algunas plantillas son intrusivas; filtra por etiquetas y severidad antes de escanear.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.11.1 (2026-08-08) · licencia declarada MIT (consultado el 2026-11-16).

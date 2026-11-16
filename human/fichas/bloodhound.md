@@ -29,6 +29,9 @@ Backend en Go con frontend React; se despliega con Docker Compose (PostgreSQL y 
 | [hashcat](hashcat.md) | Las cuentas que BloodHound señala como expuestas se auditan después con Hashcat (combinación por arquitectura). | Identifica las cuentas con BloodHound; después audita sus hashes con Hashcat. |
 | [John the Ripper (jumbo)](john.md) | John the Ripper sirve para la misma auditoría de contraseñas de las cuentas señaladas (combinación por arquitectura). | Identifica las cuentas; después audita con John. |
 | [Metasploit Framework](metasploit.md) | Las rutas de ataque encontradas se validan con módulos de Metasploit en un ejercicio autorizado (combinación por arquitectura). | Analiza con BloodHound; después valida en laboratorio con Metasploit. |
+| [Impacket](impacket.md) | Combinación recíproca: Impacket lo enlaza como «Impacket recolecta datos que BloodHound analiza como rutas de ataque». | Orden indicado desde Impacket: Recolecta con Impacket/SharpHound; después importa en BloodHound. |
+| [NetExec](netexec.md) | Combinación recíproca: NetExec lo enlaza como «Los hallazgos de NetExec orientan la recolección para BloodHound». | Orden indicado desde NetExec: Enumera con NetExec; importa el grafo en BloodHound. |
+| [PEASS-ng](peass-ng.md) | Combinación recíproca: PEASS-ng lo enlaza como «En AD, BloodHound da rutas de dominio; PEASS el host». | Orden indicado desde PEASS-ng: Usa ambos niveles. |
 
 **Notas:** Ejecutar colectores en un dominio genera actividad detectable; coordínalo con el equipo de seguridad.
 

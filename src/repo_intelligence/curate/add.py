@@ -440,8 +440,10 @@ def sync_four_files(root: Path, additions: dict[str, list[dict]], extra: dict[st
             f = next((k for k, doc in extra.items() if b in doc.get("repos", {})), f)
         if not f:
             continue
-        doc = files.setdefault(f, json.loads(Path(f).read_text(encoding="utf8")))
-        entry = doc["repos"][b]
+        if f not in files:
+            files[f] = json.loads(Path(f).read_text(encoding="utf8"))
+        doc = files[f]
+        entry = doc.setdefault("repos", {}).setdefault(b, {"combina_con": []})
         have = {c["id"] for c in entry.get("combina_con") or []}
         entry["combina_con"] = list(entry.get("combina_con") or []) + [dict(n) for n in new if n["id"] not in have]
     return files

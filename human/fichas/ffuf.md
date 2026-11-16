@@ -30,6 +30,7 @@ Escrito en Go; se instala con binarios, Homebrew, Scoop, Winget o `go install`. 
 | [mitmproxy](mitmproxy.md) | ffuf puede enviar o reenviar sus peticiones a un proxy como mitmproxy para inspeccionarlas. | Arranca mitmproxy; después usa `-x` o `-replay-proxy` en ffuf. |
 | [Nuclei](nuclei.md) | Las rutas que descubre ffuf se revisan después con plantillas de Nuclei (combinación por arquitectura). | Guarda la salida de ffuf; después pasa las URLs a nuclei. |
 | [sqlmap](sqlmap.md) | Combinación recíproca: sqlmap lo enlaza como «ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura)». | Orden indicado desde sqlmap: Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap. |
+| [SecLists](seclists.md) | Combinación recíproca: SecLists lo enlaza como «SecLists alimenta ffuf». | Orden indicado desde SecLists: Clona SecLists; pasa la wordlist a ffuf. |
 
 **Notas:** Ajusta la tasa de peticiones para no saturar el servidor objetivo.
 

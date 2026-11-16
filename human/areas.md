@@ -2,7 +2,7 @@
 
 # Categorías y subcategorías prácticas
 
-13 áreas de trabajo y 3 colecciones de configuración, con 101 subcategorías prácticas. Es una capa de navegación distinta del índice técnico (32 categorías y 115 subcategorías técnicas); por eso los recuentos no coinciden.
+13 áreas de trabajo y 3 colecciones de configuración, con 103 subcategorías prácticas. Es una capa de navegación distinta del índice técnico (32 categorías y 117 subcategorías técnicas); por eso los recuentos no coinciden.
 
 Elige un área, después una tarea y por último una ficha. Un repositorio puede servir en varias áreas; conserva una sola identidad y ficha. Los recuentos por área no se suman para obtener el total de proyectos.
 
@@ -11,7 +11,7 @@ Elige un área, después una tarea y por último una ficha. Un repositorio puede
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
 | [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 74 |
-| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad | 48 |
+| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 73 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 111 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 25 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 59 |

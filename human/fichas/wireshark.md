@@ -29,6 +29,15 @@ Escrito en C con interfaz Qt; usa libpcap o Npcap para capturar. Hay instaladore
 | [mitmproxy](mitmproxy.md) | mitmproxy puede exportar las claves TLS (SSLKEYLOGFILE) para que Wireshark descifre el tráfico capturado. | Arranca mitmproxy con SSLKEYLOGFILE; después configura ese archivo en las preferencias de TLS de Wireshark. |
 | [Nmap](nmap.md) | Ver un escaneo de Nmap en Wireshark ayuda a entender sus técnicas y depurar cortafuegos (combinación por arquitectura). | Inicia la captura; después lanza el escaneo. |
 | [John the Ripper (jumbo)](john.md) | Las capturas de handshakes WPA de tu propia red pueden convertirse a hashes para John con wpapcap2john. | Captura con Wireshark; después extrae el hash para auditar la clave. |
+| [Sliver](sliver.md) | Combinación recíproca: Sliver lo enlaza como «Wireshark valida el tráfico C2 generado en lab». | Orden indicado desde Sliver: Captura con Wireshark mientras el implant habla con el server. |
+| [Suricata](suricata.md) | Combinación recíproca: Suricata lo enlaza como «Wireshark analiza PCAP que Suricata marca». | Orden indicado desde Suricata: Exporta el PCAP de la alerta a Wireshark. |
+| [Zeek](zeek.md) | Combinación recíproca: Zeek lo enlaza como «Wireshark profundiza en sesiones que Zeek resume». | Orden indicado desde Zeek: Usa el UID/conn de Zeek para abrir el PCAP. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Volatility 3](volatility3.md)
 
 **Notas:** Para capturar en Linux sin root hay que configurar permisos de captura según la documentación.
 

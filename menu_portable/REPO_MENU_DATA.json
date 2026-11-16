@@ -92,7 +92,7 @@
     {
       "num": 16,
       "title": "Analizar software y comprobar su seguridad",
-      "count": 43
+      "count": 68
     },
     {
       "num": 17,
@@ -1786,9 +1786,10 @@
             "imhex",
             "jadx",
             "radare2",
-            "rizin"
+            "rizin",
+            "yara"
           ],
-          "count": 9
+          "count": 10
         },
         {
           "id": "seguridad-depuracion",
@@ -1870,12 +1871,22 @@
           ],
           "reference_repos": [],
           "repo_ids": [
+            "amass",
+            "atomic-red-team",
             "bloodhound",
+            "caldera",
+            "evilginx2",
+            "httpx",
+            "impacket",
             "metasploit",
+            "naabu",
+            "netexec",
             "nmap",
+            "peass-ng",
+            "sliver",
             "subfinder"
           ],
-          "count": 4
+          "count": 14
         },
         {
           "id": "seguridad-deteccion",
@@ -1898,9 +1909,13 @@
           "reference_repos": [],
           "repo_ids": [
             "crowdsec",
-            "wazuh"
+            "osquery",
+            "sigma",
+            "suricata",
+            "wazuh",
+            "zeek"
           ],
-          "count": 2
+          "count": 6
         },
         {
           "id": "seguridad-nube",
@@ -1922,9 +1937,13 @@
           ],
           "reference_repos": [],
           "repo_ids": [
+            "checkov",
+            "falco",
+            "grype",
+            "prowler",
             "trivy"
           ],
-          "count": 1
+          "count": 5
         },
         {
           "id": "seguridad-privacidad",
@@ -1969,62 +1988,139 @@
           "repo_ids": [
             "awesome-ai-reverse-engineering",
             "awesome-reverse-engineering",
-            "cybersecurity-skills"
+            "cybersecurity-skills",
+            "payloadsallthethings",
+            "seclists"
           ],
-          "count": 3
+          "count": 5
+        },
+        {
+          "id": "seguridad-ir",
+          "title": "Respuesta a incidentes y forense",
+          "description": "Recolectar evidencias, analizar memoria y cazar en endpoints propios.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "ir-forense"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [
+            "forense",
+            "IR",
+            "EDR"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "velociraptor",
+            "volatility3"
+          ],
+          "count": 2
+        },
+        {
+          "id": "seguridad-ti",
+          "title": "Inteligencia de amenazas",
+          "description": "Compartir IOCs, modelar campañas y enriquecer el SOC.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "inteligencia-amenazas"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [
+            "threat intel",
+            "MISP",
+            "STIX"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "misp",
+            "opencti"
+          ],
+          "count": 2
         }
       ],
       "repo_ids": [
         "adguardhome",
+        "amass",
         "angr",
         "apktool",
+        "atomic-red-team",
         "awesome-ai-reverse-engineering",
         "awesome-reverse-engineering",
         "bitwarden-clients",
         "bla",
         "bloodhound",
+        "caldera",
+        "checkov",
         "craft-anything",
         "crowdsec",
         "cybersecurity-skills",
         "defending-code-reference-harness",
         "dnspy",
+        "evilginx2",
+        "falco",
         "ffuf",
         "frida",
         "garak",
         "ghidra",
         "ghidramcp",
+        "grype",
         "hashcat",
+        "httpx",
         "ilspy",
         "imhex",
+        "impacket",
         "jadx",
         "john",
         "k6",
         "locust",
         "lynis",
         "metasploit",
+        "misp",
         "mitmproxy",
+        "naabu",
+        "netexec",
         "nmap",
         "nuclei",
+        "opencti",
+        "osquery",
+        "payloadsallthethings",
+        "peass-ng",
         "pi-hole",
+        "prowler",
         "radare2",
         "raddebugger",
         "rea",
         "rizin",
+        "seclists",
         "security-audit-skill",
         "semgrep",
         "shannon",
+        "sigma",
         "skillspector",
+        "sliver",
         "sqlmap",
         "strix",
         "subfinder",
+        "suricata",
         "trivy",
         "vaultwarden",
+        "velociraptor",
+        "volatility3",
         "wazuh",
         "wireshark",
         "x64dbg",
-        "zaproxy"
+        "yara",
+        "zaproxy",
+        "zeek"
       ],
-      "count": 48
+      "count": 73
     },
     {
       "id": "audiovisual",
@@ -59109,6 +59205,122 @@
       "alt": []
     },
     {
+      "id": "amass",
+      "name": "Amass",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "osint",
+        "recon",
+        "go"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/owasp-amass/amass/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "b6c0853b670b7c91d3194e37342fc732b83e4301"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp-amass.github.io/docs",
+        "source": "https://github.com/owasp-amass/amass/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Amass según https://owasp-amass.github.io/docs y ejecuta un enum pasivo sobre un dominio de laboratorio.",
+        "success": "Obtienes un listado de FQDN, IPs y fuentes usadas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "inventariar subdominios de un dominio propio antes de un pentest",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "cruzar certificados TLS públicos con la infraestructura conocida",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/owasp-amass/amass/blob/main/README.md",
+        "source_blob_sha": "b6c0853b670b7c91d3194e37342fc732b83e4301",
+        "previous_category": [
+          16,
+          "reconocimiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos.",
+      "desc": "Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos.",
+      "stack": "Go, Dockerfile, go.mod",
+      "repo": "https://github.com/owasp-amass/amass",
+      "install": "Seguir la instalación original: https://github.com/owasp-amass/amass/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: inventariar subdominios de un dominio propio antes de un pentest; cruzar certificados TLS públicos con la infraestructura conocida",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "nmap",
+        "subfinder",
+        "nuclei",
+        "httpx",
+        "naabu"
+      ],
+      "alt": []
+    },
+    {
       "id": "angr",
       "name": "angr",
       "cat": 16,
@@ -59335,6 +59547,120 @@
         "jadx",
         "frida",
         "mitmproxy"
+      ],
+      "alt": []
+    },
+    {
+      "id": "atomic-red-team",
+      "name": "Atomic Red Team",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "attack",
+        "purple"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/redcanaryco/atomic-red-team/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "6d5496bb578437cc282ddbf062f88ef2c0f894ee"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/redcanaryco/atomic-red-team",
+        "source": "https://github.com/redcanaryco/atomic-red-team/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio.",
+        "success": "Observas el artefacto/comportamiento esperado y contrastas con tus alertas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "validar una regla de detección con un atomic concreto",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "entrenar al SOC con técnicas ATT&CK controladas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/redcanaryco/atomic-red-team/blob/master/README.md",
+        "source_blob_sha": "6d5496bb578437cc282ddbf062f88ef2c0f894ee",
+        "previous_category": [
+          16,
+          "explotacion-c2"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
+      "desc": "Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
+      "stack": "C, Gemfile, pyproject.toml",
+      "repo": "https://github.com/redcanaryco/atomic-red-team",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "wazuh",
+        "sigma",
+        "caldera",
+        "evilginx2"
       ],
       "alt": []
     },
@@ -59796,7 +60122,237 @@
       "combines_with": [
         "hashcat",
         "john",
+        "metasploit",
+        "impacket",
+        "netexec",
+        "peass-ng"
+      ],
+      "alt": []
+    },
+    {
+      "id": "caldera",
+      "name": "CALDERA",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "attack",
+        "purple"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/apache/caldera/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "6a91f92e603fb210477bb91366733e16cb16446f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -p 8888:8888 ghcr.io/apache/caldera:latest",
+        "command_status": "documented",
+        "entry_url": "https://caldera.apache.org/",
+        "source": "https://github.com/apache/caldera/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Arranca con `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` y abre la UI en el puerto 8888.",
+        "success": "Accedes a la consola para crear una operación de lab.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "lanzar una operación ATT&CK contra VMs de laboratorio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "comparar cobertura de detección entre dos campañas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/apache/caldera/blob/master/README.md",
+        "source_blob_sha": "6a91f92e603fb210477bb91366733e16cb16446f",
+        "previous_category": [
+          16,
+          "explotacion-c2"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
+      "desc": "Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
+      "stack": "Python, Dockerfile, docker-compose.yml, package.json, requirements.txt",
+      "repo": "https://github.com/apache/caldera",
+      "install": "docker run -p 8888:8888 ghcr.io/apache/caldera:latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "atomic-red-team",
+        "wazuh",
         "metasploit"
+      ],
+      "alt": []
+    },
+    {
+      "id": "checkov",
+      "name": "Checkov",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "iac",
+        "terraform"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/bridgecrewio/checkov/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "aae659c9b7b35e655321668b3f6af875ab88835b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pip3 install checkov",
+        "command_status": "documented",
+        "entry_url": "https://www.checkov.io/",
+        "source": "https://github.com/bridgecrewio/checkov/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip3 install checkov` y ejecuta `checkov -d .` en un repo IaC propio.",
+        "success": "Obtienes checks fallidos con archivo y línea.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "revisar un módulo Terraform antes del apply",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "bloquear un manifiesto K8s con privilegios excesivos en CI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/bridgecrewio/checkov/blob/main/README.md",
+        "source_blob_sha": "aae659c9b7b35e655321668b3f6af875ab88835b",
+        "previous_category": [
+          16,
+          "nube-contenedores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos.",
+      "desc": "SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos.",
+      "stack": "Python, Dockerfile, pyproject.toml, setup.py",
+      "repo": "https://github.com/bridgecrewio/checkov",
+      "install": "pip3 install checkov",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: revisar un módulo Terraform antes del apply; bloquear un manifiesto K8s con privilegios excesivos en CI",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "trivy",
+        "semgrep",
+        "prowler",
+        "grype"
       ],
       "alt": []
     },
@@ -60033,7 +60589,9 @@
         "grafana",
         "wazuh",
         "coolify",
-        "traefik"
+        "traefik",
+        "falco",
+        "sigma"
       ],
       "alt": []
     },
@@ -60396,6 +60954,233 @@
       "alt": []
     },
     {
+      "id": "evilginx2",
+      "name": "Evilginx2",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "phishing",
+        "redteam"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/kgretzky/evilginx2/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "21583ed9f2bbc521ed96503a6444e3c6c6e6521e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/kgretzky/evilginx2/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la documentación oficial de Evilginx para instalar el release en un VPS de laboratorio aislado.",
+        "success": "El phishlet de prueba captura una sesión de un usuario voluntario.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar al personal con un phishing MFA controlado",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "evaluar la detección de reverse-proxy phishing",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/kgretzky/evilginx2/blob/master/README.md",
+        "source_blob_sha": "21583ed9f2bbc521ed96503a6444e3c6c6e6521e",
+        "previous_category": [
+          16,
+          "explotacion-c2"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería social autorizadas.",
+      "desc": "Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería social autorizadas.",
+      "stack": "Go, Makefile, go.mod",
+      "repo": "https://github.com/kgretzky/evilginx2",
+      "install": "Seguir la instalación original: https://github.com/kgretzky/evilginx2/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar al personal con un phishing MFA controlado; evaluar la detección de reverse-proxy phishing",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "nuclei",
+        "wazuh",
+        "atomic-red-team"
+      ],
+      "alt": []
+    },
+    {
+      "id": "falco",
+      "name": "Falco",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "k8s",
+        "runtime"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/falcosecurity/falco/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9fa6aeae085a904d5b74c6cee1a732ff68b1e5bf"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://falco.org",
+        "source": "https://github.com/falcosecurity/falco/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue https://falco.org/docs/getting-started e instala Falco en un nodo o clúster de laboratorio.",
+        "success": "Al provocar un evento de prueba ves la alerta correspondiente.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "detectar un shell interactivo en un pod de producción propia",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "alertar sobre escritura inesperada en /etc dentro de un contenedor",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/falcosecurity/falco/blob/master/README.md",
+        "source_blob_sha": "9fa6aeae085a904d5b74c6cee1a732ff68b1e5bf",
+        "previous_category": [
+          16,
+          "nube-contenedores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes.",
+      "desc": "Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes.",
+      "stack": "C++, CMakeLists.txt, Makefile",
+      "repo": "https://github.com/falcosecurity/falco",
+      "install": "Seguir la instalación original: https://github.com/falcosecurity/falco/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: detectar un shell interactivo en un pod de producción propia; alertar sobre escritura inesperada en /etc dentro de un contenedor",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "trivy",
+        "wazuh",
+        "crowdsec",
+        "grype"
+      ],
+      "alt": []
+    },
+    {
       "id": "ffuf",
       "name": "ffuf",
       "cat": 16,
@@ -60506,7 +61291,8 @@
         "subfinder",
         "mitmproxy",
         "nuclei",
-        "sqlmap"
+        "sqlmap",
+        "seclists"
       ],
       "alt": []
     },
@@ -60860,6 +61646,121 @@
       ]
     },
     {
+      "id": "grype",
+      "name": "Grype",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "containers",
+        "sbom"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/anchore/grype/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7b547e59369ddedd9ea575a9eccd4720255cf074"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/anchore/grype/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin` y ejecuta `grype <imagen>`.",
+        "success": "Obtienes CVE por paquete con severidad.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "escanear una imagen Docker propia antes de publicarla",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "evaluar un SBOM generado en CI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/anchore/grype/blob/main/README.md",
+        "source_blob_sha": "7b547e59369ddedd9ea575a9eccd4720255cf074",
+        "previous_category": [
+          16,
+          "nube-contenedores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
+      "desc": "Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
+      "stack": "Go, Dockerfile, Makefile, go.mod",
+      "repo": "https://github.com/anchore/grype",
+      "install": "curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: escanear una imagen Docker propia antes de publicarla; evaluar un SBOM generado en CI",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "falco",
+        "semgrep",
+        "checkov"
+      ],
+      "alt": [
+        "trivy"
+      ]
+    },
+    {
       "id": "hashcat",
       "name": "hashcat",
       "cat": 16,
@@ -60969,10 +61870,127 @@
       "combines_with": [
         "metasploit",
         "bloodhound",
-        "claude-code"
+        "claude-code",
+        "seclists"
       ],
       "alt": [
         "john"
+      ]
+    },
+    {
+      "id": "httpx",
+      "name": "httpx",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "http",
+        "recon",
+        "go"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/projectdiscovery/httpx/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "bfab87245a8c1a5a922ba510ff4391f03570855b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest",
+        "command_status": "documented",
+        "entry_url": "https://docs.projectdiscovery.io/tools/httpx",
+        "source": "https://github.com/projectdiscovery/httpx/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest` y sonda un listado de hosts propios.",
+        "success": "Obtienes líneas con código, título y URL final.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "filtrar qué hosts de un listado de recon responden HTTP",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "obtener títulos y tecnologías de un alcance autorizado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/projectdiscovery/httpx/blob/dev/README.md",
+        "source_blob_sha": "bfab87245a8c1a5a922ba510ff4391f03570855b",
+        "previous_category": [
+          16,
+          "reconocimiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
+      "desc": "Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
+      "stack": "Go, Dockerfile, Makefile, go.mod",
+      "repo": "https://github.com/projectdiscovery/httpx",
+      "install": "go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "subfinder",
+        "nuclei",
+        "amass"
+      ],
+      "alt": [
+        "naabu"
       ]
     },
     {
@@ -61201,6 +62219,121 @@
         "ghidra",
         "radare2",
         "x64dbg"
+      ],
+      "alt": []
+    },
+    {
+      "id": "impacket",
+      "name": "Impacket",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ad",
+        "python",
+        "library"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/fortra/impacket/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5eebf67884d6b499c1fbfdd61a59e6a4b9115388"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "python3 -m pipx install impacket",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/fortra/impacket/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `python3 -m pipx install impacket` y ejecuta un script de ejemplo contra un lab GOAD/HTB.",
+        "success": "Obtienes salida del protocolo (hashes, shells o tickets) en el entorno autorizado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "extraer hashes con secretsdump en un DC de laboratorio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "simular autenticación SMB/Kerberos en un lab aislado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/fortra/impacket/blob/master/README.md",
+        "source_blob_sha": "5eebf67884d6b499c1fbfdd61a59e6a4b9115388",
+        "previous_category": [
+          16,
+          "ad-interno"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory.",
+      "desc": "Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory.",
+      "stack": "Python, Dockerfile, requirements.txt, setup.py",
+      "repo": "https://github.com/fortra/impacket",
+      "install": "python3 -m pipx install impacket",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: extraer hashes con secretsdump en un DC de laboratorio; simular autenticación SMB/Kerberos en un lab aislado",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "bloodhound",
+        "nmap",
+        "metasploit",
+        "netexec"
       ],
       "alt": []
     },
@@ -61777,7 +62910,9 @@
       "combines_with": [
         "wazuh",
         "trivy",
-        "claude-code"
+        "claude-code",
+        "prowler",
+        "peass-ng"
       ],
       "alt": []
     },
@@ -61897,6 +63032,119 @@
       "alt": []
     },
     {
+      "id": "misp",
+      "name": "MISP",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ti",
+        "soc"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/MISP/MISP/blob/2.5/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "238d18884b7a7fb789c48ec99ada71fc1183f3c4"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://www.misp-project.org/",
+        "source": "https://github.com/MISP/MISP/blob/2.5/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía de instalación en misp-project.org y levanta una instancia de laboratorio.",
+        "success": "Creas un evento de prueba y exportas IOCs.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "compartir IOCs de un incidente interno con un partner",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "ingerir un feed OSINT y enriquecer alertas del SIEM",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/MISP/MISP/blob/2.5/README.md",
+        "source_blob_sha": "238d18884b7a7fb789c48ec99ada71fc1183f3c4",
+        "previous_category": [
+          16,
+          "inteligencia-amenazas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizaciones.",
+      "desc": "Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizaciones.",
+      "stack": "PHP, requirements.txt",
+      "repo": "https://github.com/MISP/MISP",
+      "install": "Seguir la instalación original: https://github.com/MISP/MISP/blob/2.5/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: compartir IOCs de un incidente interno con un partner; ingerir un feed OSINT y enriquecer alertas del SIEM",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "wazuh",
+        "opencti",
+        "yara"
+      ],
+      "alt": []
+    },
+    {
       "id": "mitmproxy",
       "name": "mitmproxy",
       "cat": 16,
@@ -62011,6 +63259,234 @@
         "apktool",
         "selenium",
         "shannon"
+      ],
+      "alt": []
+    },
+    {
+      "id": "naabu",
+      "name": "Naabu",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "portscan",
+        "go"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/projectdiscovery/naabu/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "28dc4dc878dd0ba12cd658eb8783137b041382f6"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest",
+        "command_status": "documented",
+        "entry_url": "https://docs.projectdiscovery.io/tools/naabu",
+        "source": "https://github.com/projectdiscovery/naabu/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio.",
+        "success": "Obtienes puertos abiertos listos para Nmap o httpx.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "enumerar puertos abiertos de un segmento de laboratorio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "combinar resultados con Nmap para fingerprint de servicios",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/projectdiscovery/naabu/blob/dev/README.md",
+        "source_blob_sha": "28dc4dc878dd0ba12cd658eb8783137b041382f6",
+        "previous_category": [
+          16,
+          "reconocimiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
+      "desc": "Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
+      "stack": "Go, Dockerfile, Makefile, go.mod",
+      "repo": "https://github.com/projectdiscovery/naabu",
+      "install": "go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "nmap",
+        "amass",
+        "nuclei"
+      ],
+      "alt": [
+        "httpx"
+      ]
+    },
+    {
+      "id": "netexec",
+      "name": "NetExec",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ad",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Pennyw0rth/NetExec/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2b754c749f6cfe02f09c84843da967ca134e5629"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pipx install git+https://github.com/Pennyw0rth/NetExec",
+        "command_status": "documented",
+        "entry_url": "https://netexec.wiki/",
+        "source": "https://github.com/Pennyw0rth/NetExec/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pipx install git+https://github.com/Pennyw0rth/NetExec` y prueba `nxc smb` contra un host de laboratorio.",
+        "success": "Obtienes qué hosts aceptan las credenciales y módulos aplicables.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "validar un set de credenciales contra un segmento Windows de lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "enumerar shares y sesiones tras un compromiso autorizado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Pennyw0rth/NetExec/blob/main/README.md",
+        "source_blob_sha": "2b754c749f6cfe02f09c84843da967ca134e5629",
+        "previous_category": [
+          16,
+          "ad-interno"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales.",
+      "desc": "Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales.",
+      "stack": "Python, Dockerfile, Makefile, pyproject.toml",
+      "repo": "https://github.com/Pennyw0rth/NetExec",
+      "install": "pipx install git+https://github.com/Pennyw0rth/NetExec",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: validar un set de credenciales contra un segmento Windows de lab; enumerar shares y sesiones tras un compromiso autorizado",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "impacket",
+        "bloodhound",
+        "nmap"
       ],
       "alt": []
     },
@@ -62245,6 +63721,573 @@
       "alt": []
     },
     {
+      "id": "opencti",
+      "name": "OpenCTI",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ti",
+        "stix"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OpenCTI-Platform/opencti/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5728fad2bfbc8ff5613b129551b810c869d3d51f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://opencti.io",
+        "source": "https://github.com/OpenCTI-Platform/opencti/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega con Docker según https://docs.opencti.io/latest/deployment/installation/#using-docker.",
+        "success": "Accedes a la UI Community sin licencia EE.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "modelar una campaña APT con relaciones STIX",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "centralizar feeds y casos de amenaza del SOC",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OpenCTI-Platform/opencti/blob/master/README.md",
+        "source_blob_sha": "5728fad2bfbc8ff5613b129551b810c869d3d51f",
+        "previous_category": [
+          16,
+          "inteligencia-amenazas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE.",
+      "desc": "Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/OpenCTI-Platform/opencti",
+      "install": "Seguir la instalación original: https://github.com/OpenCTI-Platform/opencti/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: modelar una campaña APT con relaciones STIX; centralizar feeds y casos de amenaza del SOC",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "misp",
+        "wazuh",
+        "sigma"
+      ],
+      "alt": []
+    },
+    {
+      "id": "osquery",
+      "name": "osquery",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "endpoint",
+        "sql"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/osquery/osquery/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "a60d2f3bb4e8da5d7201ba105dd2bba6c928af16"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://osquery.io",
+        "source": "https://github.com/osquery/osquery/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala el paquete desde https://osquery.io/downloads y abre `osqueryi` con una query de prueba.",
+        "success": "Ves filas SQL del host.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "consultar procesos escuchando puertos en flotas de lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "montar hunts SQL sobre cambios de persistencia",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/osquery/osquery/blob/master/README.md",
+        "source_blob_sha": "a60d2f3bb4e8da5d7201ba105dd2bba6c928af16",
+        "previous_category": [
+          16,
+          "deteccion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts.",
+      "desc": "Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts.",
+      "stack": "C++, CMakeLists.txt, Makefile",
+      "repo": "https://github.com/osquery/osquery",
+      "install": "Seguir la instalación original: https://github.com/osquery/osquery/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: consultar procesos escuchando puertos en flotas de lab; montar hunts SQL sobre cambios de persistencia",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "wazuh",
+        "velociraptor",
+        "sigma"
+      ],
+      "alt": []
+    },
+    {
+      "id": "payloadsallthethings",
+      "name": "PayloadsAllTheThings",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "web",
+        "cheatsheet"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "41fa5e3f9ebba6d5e623c19139c39d4e11cb0ffb"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://swisskyrepo.github.io/PayloadsAllTheThings/",
+        "source": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre https://swisskyrepo.github.io/PayloadsAllTheThings/ o clona el repo y busca la sección de la vulnerabilidad.",
+        "success": "Copias el payload al laboratorio autorizado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "preparar payloads SSRF para un lab Juice Shop",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "repasar técnicas de una categoría OWASP antes de un ejercicio",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/README.md",
+        "source_blob_sha": "41fa5e3f9ebba6d5e623c19139c39d4e11cb0ffb",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
+      "desc": "Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
+      "stack": "Python",
+      "repo": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: preparar payloads SSRF para un lab Juice Shop; repasar técnicas de una categoría OWASP antes de un ejercicio",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "zaproxy",
+        "sqlmap",
+        "nuclei"
+      ],
+      "alt": [
+        "seclists"
+      ]
+    },
+    {
+      "id": "peass-ng",
+      "name": "PEASS-ng",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "privesc"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/peass-ng/PEASS-ng/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "8b6eb3896288450bf804e996e4b56819f3163600"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/peass-ng/PEASS-ng/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga el release desde GitHub y ejecuta LinPEAS/WinPEAS en el host de laboratorio.",
+        "success": "La salida destaca vectores de escalada.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "enumerar privesc en una VM Linux de HTB/GOAD",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "revisar un bastión Windows tras un acceso autorizado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/peass-ng/PEASS-ng/blob/master/README.md",
+        "source_blob_sha": "8b6eb3896288450bf804e996e4b56819f3163600",
+        "previous_category": [
+          16,
+          "explotacion-c2"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS comprometidos.",
+      "desc": "LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS comprometidos.",
+      "stack": "C#",
+      "repo": "https://github.com/peass-ng/PEASS-ng",
+      "install": "Seguir la instalación original: https://github.com/peass-ng/PEASS-ng/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: enumerar privesc en una VM Linux de HTB/GOAD; revisar un bastión Windows tras un acceso autorizado",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "metasploit",
+        "bloodhound",
+        "lynis"
+      ],
+      "alt": []
+    },
+    {
+      "id": "prowler",
+      "name": "Prowler",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "cloud",
+        "aws"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/prowler-cloud/prowler/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f447839e499824e23c33ca492d97c183bf64b907"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pip install prowler",
+        "command_status": "documented",
+        "entry_url": "https://prowler.com",
+        "source": "https://github.com/prowler-cloud/prowler/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install prowler` y ejecuta `prowler aws` con credenciales de una cuenta de prueba.",
+        "success": "Obtienes findings con severidad y referencias de cumplimiento.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "auditar cuentas AWS de laboratorio contra CIS",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar un informe de posture antes de un ejercicio interno",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/prowler-cloud/prowler/blob/master/README.md",
+        "source_blob_sha": "f447839e499824e23c33ca492d97c183bf64b907",
+        "previous_category": [
+          16,
+          "nube-contenedores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago.",
+      "desc": "Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago.",
+      "stack": "Python, Dockerfile, Makefile, docker-compose.yml, pyproject.toml",
+      "repo": "https://github.com/prowler-cloud/prowler",
+      "install": "pip install prowler",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: auditar cuentas AWS de laboratorio contra CIS; generar un informe de posture antes de un ejercicio interno",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "trivy",
+        "semgrep",
+        "lynis",
+        "checkov"
+      ],
+      "alt": []
+    },
+    {
       "id": "radare2",
       "name": "radare2",
       "cat": 16,
@@ -62354,7 +64397,8 @@
       "combines_with": [
         "frida",
         "claude-code",
-        "imhex"
+        "imhex",
+        "yara"
       ],
       "alt": [
         "rizin",
@@ -62714,6 +64758,120 @@
       ],
       "alt": [
         "radare2"
+      ]
+    },
+    {
+      "id": "seclists",
+      "name": "SecLists",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "wordlists"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/danielmiessler/SecLists/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "c0c837f68766d5852b10dbb2cc3315d0f6279abb"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "git clone --depth 1 https://github.com/danielmiessler/SecLists.git",
+        "command_status": "documented",
+        "entry_url": "https://github.com/danielmiessler/SecLists",
+        "source": "https://github.com/danielmiessler/SecLists/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona con `git clone --depth 1 https://github.com/danielmiessler/SecLists.git` y apunta ffuf a una lista.",
+        "success": "El fuzzer usa el diccionario seleccionado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "fuzzear rutas de una app web de lab con la lista Discovery",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar contraseñas comunes solo contra cuentas de prueba",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/danielmiessler/SecLists/blob/master/README.md",
+        "source_blob_sha": "c0c837f68766d5852b10dbb2cc3315d0f6279abb",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas.",
+      "desc": "Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas.",
+      "stack": "PHP",
+      "repo": "https://github.com/danielmiessler/SecLists",
+      "install": "git clone --depth 1 https://github.com/danielmiessler/SecLists.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: fuzzear rutas de una app web de lab con la lista Discovery; probar contraseñas comunes solo contra cuentas de prueba",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "ffuf",
+        "hashcat",
+        "nuclei"
+      ],
+      "alt": [
+        "payloadsallthethings"
       ]
     },
     {
@@ -63083,6 +65241,121 @@
       ]
     },
     {
+      "id": "sigma",
+      "name": "Sigma",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "detection",
+        "siem"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/SigmaHQ/sigma/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "c3a52bd4c7e775fc812175137474fdf9425a4442"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://sigmahq.io/",
+        "source": "https://github.com/SigmaHQ/sigma/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona SigmaHQ/sigma y convierte una regla con pySigma hacia tu SIEM de lab.",
+        "success": "La regla convertida se carga y dispara con telemetría de prueba.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "portar una detección a varios SIEM sin reescribirla",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "cubrir técnicas ATT&CK con reglas comunitarias",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/SigmaHQ/sigma/blob/master/README.md",
+        "source_blob_sha": "c3a52bd4c7e775fc812175137474fdf9425a4442",
+        "previous_category": [
+          16,
+          "deteccion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc.",
+      "desc": "Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc.",
+      "stack": "Python",
+      "repo": "https://github.com/SigmaHQ/sigma",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: portar una detección a varios SIEM sin reescribirla; cubrir técnicas ATT&CK con reglas comunitarias",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "wazuh",
+        "atomic-red-team",
+        "crowdsec",
+        "opencti",
+        "osquery"
+      ],
+      "alt": []
+    },
+    {
       "id": "skillspector",
       "name": "SkillSpector",
       "cat": 16,
@@ -63205,6 +65478,119 @@
       "alt": []
     },
     {
+      "id": "sliver",
+      "name": "Sliver",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "c2",
+        "redteam"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/BishopFox/sliver/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f7ce527701e8e7ae8000511c7f763490e0636ccc"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "curl https://sliver.sh/install|sudo bash",
+        "command_status": "documented",
+        "entry_url": "https://sliver.sh/docs",
+        "source": "https://github.com/BishopFox/sliver/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `curl https://sliver.sh/install|sudo bash` (o el release) en una VM aislada y arranca `sliver`.",
+        "success": "Obtienes la consola del servidor lista para generar implants de lab.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "montar un C2 de laboratorio con implant Linux/Windows",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar detección de canales C2 en un entorno controlado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/BishopFox/sliver/blob/master/README.md",
+        "source_blob_sha": "f7ce527701e8e7ae8000511c7f763490e0636ccc",
+        "previous_category": [
+          16,
+          "explotacion-c2"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
+      "desc": "Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
+      "stack": "Go, Dockerfile, Makefile, go.mod",
+      "repo": "https://github.com/BishopFox/sliver",
+      "install": "curl https://sliver.sh/install|sudo bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "metasploit",
+        "nmap",
+        "wireshark"
+      ],
+      "alt": []
+    },
+    {
       "id": "sqlmap",
       "name": "sqlmap",
       "cat": 16,
@@ -63314,7 +65700,8 @@
       "combines_with": [
         "mitmproxy",
         "zaproxy",
-        "ffuf"
+        "ffuf",
+        "payloadsallthethings"
       ],
       "alt": []
     },
@@ -63554,7 +65941,122 @@
       "combines_with": [
         "nuclei",
         "katana",
-        "ffuf"
+        "ffuf",
+        "amass",
+        "httpx"
+      ],
+      "alt": []
+    },
+    {
+      "id": "suricata",
+      "name": "Suricata",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ids",
+        "network"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OISF/suricata/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "45831312ec3b18d88d0e5b75043b0fc1248fb010"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://suricata.io",
+        "source": "https://github.com/OISF/suricata/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo.",
+        "success": "Con tráfico de prueba ves alertas en eve.json o el SIEM.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "desplegar un sensor IDS en el perímetro de un lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "validar firmas contra tráfico de un ejercicio Red Team",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OISF/suricata/blob/main/README.md",
+        "source_blob_sha": "45831312ec3b18d88d0e5b75043b0fc1248fb010",
+        "previous_category": [
+          16,
+          "deteccion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad.",
+      "desc": "IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad.",
+      "stack": "C",
+      "repo": "https://github.com/OISF/suricata",
+      "install": "Seguir la instalación original: https://github.com/OISF/suricata/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "wazuh",
+        "wireshark",
+        "zeek"
       ],
       "alt": []
     },
@@ -63672,6 +66174,234 @@
         "coolify",
         "wazuh",
         "lynis"
+      ],
+      "alt": [
+        "grype"
+      ]
+    },
+    {
+      "id": "velociraptor",
+      "name": "Velociraptor",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ir",
+        "edr"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Velocidex/velociraptor/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "62142aee8dfc6de1e5912cf91603d6d3c990ba75"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://docs.velociraptor.app/",
+        "source": "https://github.com/Velocidex/velociraptor/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga el release desde GitHub y sigue docs.velociraptor.app para levantar servidor y cliente de lab.",
+        "success": "La UI muestra el cliente online listo para una recolección.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "recolectar evidencias de un endpoint comprometido en lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "lanzar un hunt de IOCs en una flota de prueba",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Velocidex/velociraptor/blob/master/README.md",
+        "source_blob_sha": "62142aee8dfc6de1e5912cf91603d6d3c990ba75",
+        "previous_category": [
+          16,
+          "ir-forense"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS.",
+      "desc": "EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS.",
+      "stack": "Go, Makefile, go.mod",
+      "repo": "https://github.com/Velocidex/velociraptor",
+      "install": "Seguir la instalación original: https://github.com/Velocidex/velociraptor/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "wazuh",
+        "osquery",
+        "volatility3"
+      ],
+      "alt": []
+    },
+    {
+      "id": "volatility3",
+      "name": "Volatility 3",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "forensics",
+        "memory"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/volatilityfoundation/volatility3/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e38975f91cc5975e260985d2e0bef9668a24f692"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pip install volatility3",
+        "command_status": "documented",
+        "entry_url": "https://volatilityfoundation.org/",
+        "source": "https://github.com/volatilityfoundation/volatility3/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install volatility3` y ejecuta un plugin sobre un dump de laboratorio.",
+        "success": "Obtienes la tabla del plugin (pslist, netscan, etc.).",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "listar procesos ocultos en un dump de lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "extraer conexiones de red desde memoria",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/volatilityfoundation/volatility3/blob/develop/README.md",
+        "source_blob_sha": "e38975f91cc5975e260985d2e0bef9668a24f692",
+        "previous_category": [
+          16,
+          "ir-forense"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware.",
+      "desc": "Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/volatilityfoundation/volatility3",
+      "install": "pip install volatility3",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: listar procesos ocultos en un dump de lab; extraer conexiones de red desde memoria",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "velociraptor",
+        "yara",
+        "wireshark"
       ],
       "alt": []
     },
@@ -63899,7 +66629,10 @@
       "combines_with": [
         "mitmproxy",
         "nmap",
-        "john"
+        "john",
+        "sliver",
+        "suricata",
+        "zeek"
       ],
       "alt": []
     },
@@ -64020,6 +66753,120 @@
       "alt": []
     },
     {
+      "id": "yara",
+      "name": "YARA",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "malware",
+        "yara"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/VirusTotal/yara/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9c60ec8df06704e4dbfa1d247f7a181f90186fc7"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://virustotal.github.io/yara/",
+        "source": "https://github.com/VirusTotal/yara/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Compila YARA siguiendo https://virustotal.github.io/yara/ o usa el paquete del SO, y escanea un fichero de prueba.",
+        "success": "La regla hace match o no según el contenido.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "clasificar muestras de malware de un lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "bloquear indicadores conocidos en un pipeline de análisis",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/VirusTotal/yara/blob/master/README.md",
+        "source_blob_sha": "9c60ec8df06704e4dbfa1d247f7a181f90186fc7",
+        "previous_category": [
+          16,
+          "reversing"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas.",
+      "desc": "Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas.",
+      "stack": "C",
+      "repo": "https://github.com/VirusTotal/yara",
+      "install": "Seguir la instalación original: https://github.com/VirusTotal/yara/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "ghidra",
+        "radare2",
+        "misp",
+        "volatility3"
+      ],
+      "alt": []
+    },
+    {
       "id": "zaproxy",
       "name": "ZAP (Zed Attack Proxy)",
       "cat": 16,
@@ -64129,7 +66976,121 @@
       "combines_with": [
         "sqlmap",
         "playwright",
-        "nuclei"
+        "nuclei",
+        "payloadsallthethings"
+      ],
+      "alt": []
+    },
+    {
+      "id": "zeek",
+      "name": "Zeek",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "network",
+        "nsm"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/zeek/zeek/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9563a2546796c486b8a26cdb20a9dc6d3b291f1b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://www.zeek.org",
+        "source": "https://github.com/zeek/zeek/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Compila con `./configure && make && sudo make install` (docs.zeek.org) o usa paquetes, y captura en un interfaz de lab.",
+        "success": "Obtienes logs en el directorio configurado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "generar logs DNS/HTTP de un segmento de lab",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "investigar un incidente a partir de logs Zeek",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/zeek/zeek/blob/master/README.md",
+        "source_blob_sha": "9563a2546796c486b8a26cdb20a9dc6d3b291f1b",
+        "previous_category": [
+          16,
+          "deteccion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.",
+      "desc": "Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.",
+      "stack": "C++, CMakeLists.txt, Makefile",
+      "repo": "https://github.com/zeek/zeek",
+      "install": "Seguir la instalación original: https://github.com/zeek/zeek/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: generar logs DNS/HTTP de un segmento de lab; investigar un incidente a partir de logs Zeek",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "suricata",
+        "wazuh",
+        "wireshark"
       ],
       "alt": []
     },

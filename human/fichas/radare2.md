@@ -29,6 +29,7 @@ Está escrito en C; se recomienda instalarlo desde git con `sys/install.sh` (o p
 | [frida](frida.md) | Instrumentar procesos en vivo desde r2 con el plugin oficial r2frida (`r2 frida://0`). | Instala Frida y luego `r2pm -ci r2frida`. |
 | [Claude Code](claude-code.md) | Dar a un agente acceso a r2 con el servidor MCP oficial r2mcp (radareorg/radare2-mcp, no catalogado). | Instala r2mcp con r2pm y regístralo en el cliente MCP. |
 | [ImHex](imhex.md) | Analizar formatos de datos con patrones visuales mientras r2 trabaja el código. (combinación por arquitectura) | Usa ambos sobre el mismo binario. |
+| [YARA](yara.md) | Combinación recíproca: YARA lo enlaza como «Tras un match YARA, inspecciona el binario con radare2». | Orden indicado desde YARA: Match YARA → abrir en radare2. |
 
 **Notas:** Alternativas (elige una): rizin, ghidra. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

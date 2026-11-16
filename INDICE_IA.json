@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 813 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 838 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -741,9 +741,17 @@
     {
      "key": "skills",
      "title": "Skills de análisis y seguridad"
+    },
+    {
+     "key": "ir-forense",
+     "title": "Respuesta a incidentes y forense"
+    },
+    {
+     "key": "inteligencia-amenazas",
+     "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 43,
+   "count": 68,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -29000,7 +29008,9 @@
    "lib": false,
    "pick": false,
    "one": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
-   "alt": [],
+   "alt": [
+    "grype"
+   ],
    "doc": "human/fichas/trivy.md",
    "github_id": 180687624,
    "lang": "Go",
@@ -32980,6 +32990,896 @@
     "no_api",
     "local_model"
    ]
+  },
+  {
+   "id": "amass",
+   "name": "Amass",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "osint",
+    "recon",
+    "go"
+   ],
+   "stars": 15526,
+   "gh": "owasp-amass/amass",
+   "lib": false,
+   "pick": false,
+   "one": "Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos.",
+   "alt": [],
+   "doc": "human/fichas/amass.md",
+   "github_id": 140457254,
+   "lang": "Go",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "httpx",
+   "name": "httpx",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "http",
+    "recon",
+    "go"
+   ],
+   "stars": 10623,
+   "gh": "projectdiscovery/httpx",
+   "lib": false,
+   "pick": false,
+   "one": "Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
+   "alt": [
+    "naabu"
+   ],
+   "doc": "human/fichas/httpx.md",
+   "github_id": 267713284,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "naabu",
+   "name": "Naabu",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "portscan",
+    "go"
+   ],
+   "stars": 6376,
+   "gh": "projectdiscovery/naabu",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
+   "alt": [
+    "httpx"
+   ],
+   "doc": "human/fichas/naabu.md",
+   "github_id": 235320869,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "impacket",
+   "name": "Impacket",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ad",
+    "python",
+    "library"
+   ],
+   "stars": 16274,
+   "gh": "fortra/impacket",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory.",
+   "alt": [],
+   "doc": "human/fichas/impacket.md",
+   "github_id": 33997353,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "netexec",
+   "name": "NetExec",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ad",
+    "python"
+   ],
+   "stars": 6025,
+   "gh": "Pennyw0rth/NetExec",
+   "lib": false,
+   "pick": false,
+   "one": "Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales.",
+   "alt": [],
+   "doc": "human/fichas/netexec.md",
+   "github_id": 689013903,
+   "lang": "Python",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sliver",
+   "name": "Sliver",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "c2",
+    "redteam"
+   ],
+   "stars": 12348,
+   "gh": "BishopFox/sliver",
+   "lib": false,
+   "pick": false,
+   "one": "Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
+   "alt": [],
+   "doc": "human/fichas/sliver.md",
+   "github_id": 166304026,
+   "lang": "Go",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "atomic-red-team",
+   "name": "Atomic Red Team",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "attack",
+    "purple"
+   ],
+   "stars": 12871,
+   "gh": "redcanaryco/atomic-red-team",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
+   "alt": [],
+   "doc": "human/fichas/atomic-red-team.md",
+   "github_id": 106586124,
+   "lang": "C",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "caldera",
+   "name": "CALDERA",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "attack",
+    "purple"
+   ],
+   "stars": 7536,
+   "gh": "apache/caldera",
+   "lib": false,
+   "pick": false,
+   "one": "Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
+   "alt": [],
+   "doc": "human/fichas/caldera.md",
+   "github_id": 112409981,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "falco",
+   "name": "Falco",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "k8s",
+    "runtime"
+   ],
+   "stars": 9581,
+   "gh": "falcosecurity/falco",
+   "lib": false,
+   "pick": false,
+   "one": "Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes.",
+   "alt": [],
+   "doc": "human/fichas/falco.md",
+   "github_id": 49986046,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "prowler",
+   "name": "Prowler",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "cloud",
+    "aws"
+   ],
+   "stars": 15255,
+   "gh": "prowler-cloud/prowler",
+   "lib": false,
+   "pick": false,
+   "one": "Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago.",
+   "alt": [],
+   "doc": "human/fichas/prowler.md",
+   "github_id": 66474729,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "checkov",
+   "name": "Checkov",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "iac",
+    "terraform"
+   ],
+   "stars": 9161,
+   "gh": "bridgecrewio/checkov",
+   "lib": false,
+   "pick": false,
+   "one": "SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos.",
+   "alt": [],
+   "doc": "human/fichas/checkov.md",
+   "github_id": 224386599,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "grype",
+   "name": "Grype",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "containers",
+    "sbom"
+   ],
+   "stars": 13271,
+   "gh": "anchore/grype",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
+   "alt": [
+    "trivy"
+   ],
+   "doc": "human/fichas/grype.md",
+   "github_id": 267054247,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "suricata",
+   "name": "Suricata",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ids",
+    "network"
+   ],
+   "stars": 6898,
+   "gh": "OISF/suricata",
+   "lib": false,
+   "pick": false,
+   "one": "IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad.",
+   "alt": [],
+   "doc": "human/fichas/suricata.md",
+   "github_id": 5410234,
+   "lang": "C",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zeek",
+   "name": "Zeek",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "network",
+    "nsm"
+   ],
+   "stars": 8247,
+   "gh": "zeek/zeek",
+   "lib": false,
+   "pick": false,
+   "one": "Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.",
+   "alt": [],
+   "doc": "human/fichas/zeek.md",
+   "github_id": 4930716,
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "velociraptor",
+   "name": "Velociraptor",
+   "cat": 16,
+   "sub": "ir-forense",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ir",
+    "edr"
+   ],
+   "stars": 4477,
+   "gh": "Velocidex/velociraptor",
+   "lib": false,
+   "pick": false,
+   "one": "EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS.",
+   "alt": [],
+   "doc": "human/fichas/velociraptor.md",
+   "github_id": 126576769,
+   "lang": "Go",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "misp",
+   "name": "MISP",
+   "cat": 16,
+   "sub": "inteligencia-amenazas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ti",
+    "soc"
+   ],
+   "stars": 6669,
+   "gh": "MISP/MISP",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizaciones.",
+   "alt": [],
+   "doc": "human/fichas/misp.md",
+   "github_id": 8077402,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "opencti",
+   "name": "OpenCTI",
+   "cat": 16,
+   "sub": "inteligencia-amenazas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ti",
+    "stix"
+   ],
+   "stars": 10378,
+   "gh": "OpenCTI-Platform/opencti",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE.",
+   "alt": [],
+   "doc": "human/fichas/opencti.md",
+   "github_id": 162200234,
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sigma",
+   "name": "Sigma",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "detection",
+    "siem"
+   ],
+   "stars": 11516,
+   "gh": "SigmaHQ/sigma",
+   "lib": false,
+   "pick": false,
+   "one": "Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc.",
+   "alt": [],
+   "doc": "human/fichas/sigma.md",
+   "github_id": 77276660,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "volatility3",
+   "name": "Volatility 3",
+   "cat": 16,
+   "sub": "ir-forense",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "forensics",
+    "memory"
+   ],
+   "stars": 4604,
+   "gh": "volatilityfoundation/volatility3",
+   "lib": false,
+   "pick": false,
+   "one": "Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware.",
+   "alt": [],
+   "doc": "human/fichas/volatility3.md",
+   "github_id": 16258388,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "yara",
+   "name": "YARA",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "malware",
+    "yara"
+   ],
+   "stars": 10043,
+   "gh": "VirusTotal/yara",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas.",
+   "alt": [],
+   "doc": "human/fichas/yara.md",
+   "github_id": 7037996,
+   "lang": "C",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "seclists",
+   "name": "SecLists",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "wordlists"
+   ],
+   "stars": 74792,
+   "gh": "danielmiessler/SecLists",
+   "lib": false,
+   "pick": false,
+   "one": "Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas.",
+   "alt": [
+    "payloadsallthethings"
+   ],
+   "doc": "human/fichas/seclists.md",
+   "github_id": 3482588,
+   "lang": "PHP",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "payloadsallthethings",
+   "name": "PayloadsAllTheThings",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "web",
+    "cheatsheet"
+   ],
+   "stars": 82717,
+   "gh": "swisskyrepo/PayloadsAllTheThings",
+   "lib": false,
+   "pick": false,
+   "one": "Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
+   "alt": [
+    "seclists"
+   ],
+   "doc": "human/fichas/payloadsallthethings.md",
+   "github_id": 71220757,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "evilginx2",
+   "name": "Evilginx2",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "phishing",
+    "redteam"
+   ],
+   "stars": 15925,
+   "gh": "kgretzky/evilginx2",
+   "lib": false,
+   "pick": false,
+   "one": "Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería social autorizadas.",
+   "alt": [],
+   "doc": "human/fichas/evilginx2.md",
+   "github_id": 140412864,
+   "lang": "Go",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "peass-ng",
+   "name": "PEASS-ng",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "privesc"
+   ],
+   "stars": 20836,
+   "gh": "peass-ng/PEASS-ng",
+   "lib": false,
+   "pick": false,
+   "one": "LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS comprometidos.",
+   "alt": [],
+   "doc": "human/fichas/peass-ng.md",
+   "github_id": 165548191,
+   "lang": "C#",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "osquery",
+   "name": "osquery",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "endpoint",
+    "sql"
+   ],
+   "stars": 23773,
+   "gh": "osquery/osquery",
+   "lib": false,
+   "pick": false,
+   "one": "Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts.",
+   "alt": [],
+   "doc": "human/fichas/osquery.md",
+   "github_id": 22394357,
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
   }
  ],
  "discovery": {
@@ -34123,6 +35023,46 @@
        "cybersecurity-skills"
       ],
       "keywords": [],
+      "reference_repos": []
+     },
+     {
+      "id": "seguridad-ir",
+      "title": "Respuesta a incidentes y forense",
+      "description": "Recolectar evidencias, analizar memoria y cazar en endpoints propios.",
+      "selectors": [
+       {
+        "cat": 16,
+        "subs": [
+         "ir-forense"
+        ]
+       }
+      ],
+      "repos": [],
+      "keywords": [
+       "forense",
+       "IR",
+       "EDR"
+      ],
+      "reference_repos": []
+     },
+     {
+      "id": "seguridad-ti",
+      "title": "Inteligencia de amenazas",
+      "description": "Compartir IOCs, modelar campañas y enriquecer el SOC.",
+      "selectors": [
+       {
+        "cat": 16,
+        "subs": [
+         "inteligencia-amenazas"
+        ]
+       }
+      ],
+      "repos": [],
+      "keywords": [
+       "threat intel",
+       "MISP",
+       "STIX"
+      ],
       "reference_repos": []
      }
     ]

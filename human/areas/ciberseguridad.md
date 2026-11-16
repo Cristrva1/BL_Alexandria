@@ -4,7 +4,7 @@
 
 Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
 
-48 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
+73 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
 
 ## Opciones para empezar
 
@@ -37,7 +37,7 @@ Agentes y skills que guían revisiones de seguridad.
 
 Inspeccionar programas, ejecutables y formatos compilados.
 
-[Explorar 9 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-inversa)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-inversa)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -50,6 +50,7 @@ Inspeccionar programas, ejecutables y formatos compilados.
 | [jadx](../fichas/jadx.md) | Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [radare2](../fichas/radare2.md) | Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. | Sin clave propia de API de IA en la ruta básica |
 | [rizin](../fichas/rizin.md) | Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. | Sin clave propia de API de IA en la ruta básica |
+| [YARA](../fichas/yara.md) | Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas. | Sin clave propia de API de IA en la ruta básica |
 
 ### Depuración e inspección
 
@@ -90,34 +91,52 @@ Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
 Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ofensiva)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ofensiva)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Amass](../fichas/amass.md) | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos. | Sin clave propia de API de IA en la ruta básica |
+| [Atomic Red Team](../fichas/atomic-red-team.md) | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. | Sin clave propia de API de IA en la ruta básica |
 | [BloodHound Community Edition](../fichas/bloodhound.md) | Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria). | Sin clave propia de API de IA en la ruta básica |
+| [CALDERA](../fichas/caldera.md) | Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. | Sin clave propia de API de IA en la ruta básica |
+| [Evilginx2](../fichas/evilginx2.md) | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería social autorizadas. | Sin clave propia de API de IA en la ruta básica |
+| [httpx](../fichas/httpx.md) | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. | Sin clave propia de API de IA en la ruta básica |
+| [Impacket](../fichas/impacket.md) | Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory. | Sin clave propia de API de IA en la ruta básica |
 | [Metasploit Framework](../fichas/metasploit.md) | Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva. | Sin clave propia de API de IA en la ruta básica |
+| [Naabu](../fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Sin clave propia de API de IA en la ruta básica |
+| [NetExec](../fichas/netexec.md) | Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales. | Sin clave propia de API de IA en la ruta básica |
 | [Nmap](../fichas/nmap.md) | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada. | Sin clave propia de API de IA en la ruta básica |
+| [PEASS-ng](../fichas/peass-ng.md) | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS comprometidos. | Sin clave propia de API de IA en la ruta básica |
+| [Sliver](../fichas/sliver.md) | Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. | Sin clave propia de API de IA en la ruta básica |
 | [subfinder](../fichas/subfinder.md) | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras. | Sin clave propia de API de IA en la ruta básica |
 
 ### Detección y respuesta
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-[Explorar 2 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [CrowdSec](../fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Sin clave propia de API de IA en la ruta básica |
+| [osquery](../fichas/osquery.md) | Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts. | Sin clave propia de API de IA en la ruta básica |
+| [Sigma](../fichas/sigma.md) | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. | Sin clave propia de API de IA en la ruta básica |
+| [Suricata](../fichas/suricata.md) | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad. | Sin clave propia de API de IA en la ruta básica |
 | [Wazuh](../fichas/wazuh.md) | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. | Sin clave propia de API de IA en la ruta básica |
+| [Zeek](../fichas/zeek.md) | Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red. | Sin clave propia de API de IA en la ruta básica |
 
 ### Nube, contenedores e IaC
 
 Revisar imágenes, clústeres y cuentas de nube antes de publicar.
 
-[Explorar 1 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-nube)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-nube)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Checkov](../fichas/checkov.md) | SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos. | Sin clave propia de API de IA en la ruta básica |
+| [Falco](../fichas/falco.md) | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes. | Sin clave propia de API de IA en la ruta básica |
+| [Grype](../fichas/grype.md) | Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. | Sin clave propia de API de IA en la ruta básica |
+| [Prowler](../fichas/prowler.md) | Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago. | Sin clave propia de API de IA en la ruta básica |
 | [Trivy](../fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Sin clave propia de API de IA en la ruta básica |
 
 ### Credenciales y privacidad
@@ -137,12 +156,36 @@ Gestionar contraseñas y proteger servicios personales.
 
 Directorios y material de referencia para orientar el análisis.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-recursos)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-recursos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [awesome-ai-reverse-engineering](../fichas/awesome-ai-reverse-engineering.md) | Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-reverse-engineering](../fichas/awesome-reverse-engineering.md) | Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. | Sin clave propia de API de IA en la ruta básica |
 | [Cybersecurity Skills (comunidad)](../fichas/cybersecurity-skills.md) | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica |
+| [PayloadsAllTheThings](../fichas/payloadsallthethings.md) | Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest. | Sin clave propia de API de IA en la ruta básica |
+| [SecLists](../fichas/seclists.md) | Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas. | Sin clave propia de API de IA en la ruta básica |
+
+### Respuesta a incidentes y forense
+
+Recolectar evidencias, analizar memoria y cazar en endpoints propios.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ir)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Velociraptor](../fichas/velociraptor.md) | EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS. | Sin clave propia de API de IA en la ruta básica |
+| [Volatility 3](../fichas/volatility3.md) | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware. | Sin clave propia de API de IA en la ruta básica |
+
+### Inteligencia de amenazas
+
+Compartir IOCs, modelar campañas y enriquecer el SOC.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ti)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [MISP](../fichas/misp.md) | Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizaciones. | Sin clave propia de API de IA en la ruta básica |
+| [OpenCTI](../fichas/opencti.md) | Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

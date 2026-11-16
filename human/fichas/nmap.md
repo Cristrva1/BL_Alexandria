@@ -30,6 +30,12 @@ Escrito en C/C++ con Lua para NSE; hay instaladores para Windows, macOS y Linux 
 | [Nuclei](nuclei.md) | Los servicios que encuentra Nmap se revisan con plantillas de Nuclei (combinación por arquitectura). | Escanea con Nmap; después pasa los objetivos a nuclei. |
 | [Wireshark](wireshark.md) | Wireshark permite ver a nivel de paquete qué envía un escaneo de Nmap, útil para aprender o depurar reglas de red (combinación por arquitectura). | Inicia la captura en Wireshark; después lanza el escaneo. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Amass](amass.md) · [Impacket](impacket.md) · [Naabu](naabu.md) · [NetExec](netexec.md) · [Sliver](sliver.md)
+
 **Notas:** Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
 
 Estado en GitHub: activo · último push 2026-11-12 · licencia declarada NOASSERTION (consultado el 2026-11-16).

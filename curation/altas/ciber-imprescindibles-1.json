@@ -1,0 +1,781 @@
+{
+ "lote": "ciber-imprescindibles-1",
+ "fecha": "2026-11-16",
+ "metodo": "README + docs oficiales + gh api (2026-11-16). No se instaló ningún proyecto.",
+ "subcategorias_nuevas": [
+  {
+   "cat": 16,
+   "key": "ir-forense",
+   "title": "Respuesta a incidentes y forense"
+  },
+  {
+   "cat": 16,
+   "key": "inteligencia-amenazas",
+   "title": "Inteligencia de amenazas"
+  }
+ ],
+ "alt_groups": [
+  [
+   "httpx",
+   "naabu"
+  ],
+  [
+   "grype",
+   "trivy"
+  ],
+  [
+   "seclists",
+   "payloadsallthethings"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "owasp-amass/amass",
+   "id": "amass",
+   "name": "Amass",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos.",
+   "how": "Motor de enumeración pasiva y activa (DNS, certificados, APIs de terceros) con grafo de activos y salidas JSON/CSV.",
+   "examples": [
+    "inventariar subdominios de un dominio propio antes de un pentest",
+    "cruzar certificados TLS públicos con la infraestructura conocida"
+   ],
+   "try": [
+    "Instala Amass según https://owasp-amass.github.io/docs y ejecuta un enum pasivo sobre un dominio de laboratorio.",
+    "Obtienes un listado de FQDN, IPs y fuentes usadas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "osint",
+    "recon",
+    "go"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Licencia Apache-2.0 en LICENSE pese a NOASSERTION en la API de GitHub.",
+   "url": "https://owasp-amass.github.io/docs",
+   "alt": []
+  },
+  {
+   "gh": "projectdiscovery/httpx",
+   "id": "httpx",
+   "name": "httpx",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
+   "how": "CLI Go del ecosistema ProjectDiscovery; lanza sondas HTTP concurrentes con reintentos y salidas listas para Nuclei o Naabu.",
+   "examples": [
+    "filtrar qué hosts de un listado de recon responden HTTP",
+    "obtener títulos y tecnologías de un alcance autorizado"
+   ],
+   "try": [
+    "Instala con `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest` y sonda un listado de hosts propios.",
+    "Obtienes líneas con código, título y URL final."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "http",
+    "recon",
+    "go"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest",
+   "url": "https://docs.projectdiscovery.io/tools/httpx",
+   "alt": []
+  },
+  {
+   "gh": "projectdiscovery/naabu",
+   "id": "naabu",
+   "name": "Naabu",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
+   "how": "CLI Go de ProjectDiscovery: sondeo de puertos masivo, deduplicación de IP y opción de pasar a Nmap para detalle de servicios.",
+   "examples": [
+    "enumerar puertos abiertos de un segmento de laboratorio",
+    "combinar resultados con Nmap para fingerprint de servicios"
+   ],
+   "try": [
+    "Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio.",
+    "Obtienes puertos abiertos listos para Nmap o httpx."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "portscan",
+    "go"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest",
+   "url": "https://docs.projectdiscovery.io/tools/naabu",
+   "alt": []
+  },
+  {
+   "gh": "fortra/impacket",
+   "id": "impacket",
+   "name": "Impacket",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "library",
+   "one": "Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory.",
+   "how": "Clases y scripts (psexec, secretsdump, GetNPUsers…) para construir y parsear paquetes de protocolos Windows en laboratorio.",
+   "examples": [
+    "extraer hashes con secretsdump en un DC de laboratorio",
+    "simular autenticación SMB/Kerberos en un lab aislado"
+   ],
+   "try": [
+    "Instala con `python3 -m pipx install impacket` y ejecuta un script de ejemplo contra un lab GOAD/HTB.",
+    "Obtienes salida del protocolo (hashes, shells o tickets) en el entorno autorizado."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "ad",
+    "python",
+    "library"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Licencia Apache modificada (LICENSE). Solo labs autorizados.",
+   "cmd": "python3 -m pipx install impacket",
+   "alt": []
+  },
+  {
+   "gh": "Pennyw0rth/NetExec",
+   "id": "netexec",
+   "name": "NetExec",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "app",
+   "one": "Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales.",
+   "how": "CLI Python modular sobre SMB, WinRM, LDAP, MSSQL… que prueba autenticación, ejecuta módulos y reporta accesos en entornos autorizados.",
+   "examples": [
+    "validar un set de credenciales contra un segmento Windows de lab",
+    "enumerar shares y sesiones tras un compromiso autorizado"
+   ],
+   "try": [
+    "Instala con `pipx install git+https://github.com/Pennyw0rth/NetExec` y prueba `nxc smb` contra un host de laboratorio.",
+    "Obtienes qué hosts aceptan las credenciales y módulos aplicables."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "ad",
+    "python"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "pipx install git+https://github.com/Pennyw0rth/NetExec",
+   "url": "https://netexec.wiki/",
+   "alt": []
+  },
+  {
+   "gh": "BishopFox/sliver",
+   "id": "sliver",
+   "name": "Sliver",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
+   "how": "Servidor e implants compilados dinámicamente con post-explotación nativa; se opera desde consola tras instalar el release o el script oficial.",
+   "examples": [
+    "montar un C2 de laboratorio con implant Linux/Windows",
+    "probar detección de canales C2 en un entorno controlado"
+   ],
+   "try": [
+    "Instala con `curl https://sliver.sh/install|sudo bash` (o el release) en una VM aislada y arranca `sliver`.",
+    "Obtienes la consola del servidor lista para generar implants de lab."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "c2",
+    "redteam"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "curl https://sliver.sh/install|sudo bash",
+   "url": "https://sliver.sh/docs",
+   "alt": []
+  },
+  {
+   "gh": "redcanaryco/atomic-red-team",
+   "id": "atomic-red-team",
+   "name": "Atomic Red Team",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "reference",
+   "one": "Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
+   "how": "Colección de atomics (YAML/scripts) ejecutables con Invoke-AtomicRedTeam u orquestadores; cada prueba mapea a técnicas MITRE ATT&CK.",
+   "examples": [
+    "validar una regla de detección con un atomic concreto",
+    "entrenar al SOC con técnicas ATT&CK controladas"
+   ],
+   "try": [
+    "Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio.",
+    "Observas el artefacto/comportamiento esperado y contrastas con tus alertas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "attack",
+    "purple"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "url": "https://github.com/redcanaryco/atomic-red-team",
+   "alt": []
+  },
+  {
+   "gh": "apache/caldera",
+   "id": "caldera",
+   "name": "CALDERA",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
+   "how": "Servidor Python con plugins de habilidades y agentes; se despliega con Docker o clonando el repo con submódulos.",
+   "examples": [
+    "lanzar una operación ATT&CK contra VMs de laboratorio",
+    "comparar cobertura de detección entre dos campañas"
+   ],
+   "try": [
+    "Arranca con `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` y abre la UI en el puerto 8888.",
+    "Accedes a la consola para crear una operación de lab."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "attack",
+    "purple"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "docker run -p 8888:8888 ghcr.io/apache/caldera:latest",
+   "url": "https://caldera.apache.org/",
+   "alt": []
+  },
+  {
+   "gh": "falcosecurity/falco",
+   "id": "falco",
+   "name": "Falco",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes.",
+   "how": "Motor eBPF/kernel module de la CNCF con reglas YAML; se despliega como DaemonSet o binario y emite alertas en tiempo real.",
+   "examples": [
+    "detectar un shell interactivo en un pod de producción propia",
+    "alertar sobre escritura inesperada en /etc dentro de un contenedor"
+   ],
+   "try": [
+    "Sigue https://falco.org/docs/getting-started e instala Falco en un nodo o clúster de laboratorio.",
+    "Al provocar un evento de prueba ves la alerta correspondiente."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "k8s",
+    "runtime"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://falco.org",
+   "alt": []
+  },
+  {
+   "gh": "prowler-cloud/prowler",
+   "id": "prowler",
+   "name": "Prowler",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago.",
+   "how": "CLI/SDK Python con miles de checks; genera informes locales. Prowler Cloud (SaaS) y Private Cloud añaden orquestación, SSO e IA de pago.",
+   "examples": [
+    "auditar cuentas AWS de laboratorio contra CIS",
+    "generar un informe de posture antes de un ejercicio interno"
+   ],
+   "try": [
+    "Instala con `pip install prowler` y ejecuta `prowler aws` con credenciales de una cuenta de prueba.",
+    "Obtienes findings con severidad y referencias de cumplimiento."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "cloud",
+    "aws"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Open source = CLI/SDK/Local Server Apache-2.0. Prowler Cloud (~99 USD/cuenta·mes) y Private Cloud son de pago.",
+   "cmd": "pip install prowler",
+   "url": "https://prowler.com",
+   "alt": []
+  },
+  {
+   "gh": "bridgecrewio/checkov",
+   "id": "checkov",
+   "name": "Checkov",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos.",
+   "how": "CLI Python (Prisma Cloud / Bridgecrew) que analiza plantillas IaC en local o CI y reporta fallos de configuración.",
+   "examples": [
+    "revisar un módulo Terraform antes del apply",
+    "bloquear un manifiesto K8s con privilegios excesivos en CI"
+   ],
+   "try": [
+    "Instala con `pip3 install checkov` y ejecuta `checkov -d .` en un repo IaC propio.",
+    "Obtienes checks fallidos con archivo y línea."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "iac",
+    "terraform"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "pip3 install checkov",
+   "url": "https://www.checkov.io/",
+   "alt": []
+  },
+  {
+   "gh": "anchore/grype",
+   "id": "grype",
+   "name": "Grype",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
+   "how": "CLI Go de Anchore que consume SBOMs (p. ej. Syft) o escanea imágenes directamente y lista CVE con severidad.",
+   "examples": [
+    "escanear una imagen Docker propia antes de publicarla",
+    "evaluar un SBOM generado en CI"
+   ],
+   "try": [
+    "Instala con `curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin` y ejecuta `grype <imagen>`.",
+    "Obtienes CVE por paquete con severidad."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "containers",
+    "sbom"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin",
+   "alt": []
+  },
+  {
+   "gh": "OISF/suricata",
+   "id": "suricata",
+   "name": "Suricata",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad.",
+   "how": "Motor C multi-hilo con reglas estilo Snort/Suricata; se despliega en sensores o inline según la guía oficial.",
+   "examples": [
+    "desplegar un sensor IDS en el perímetro de un lab",
+    "validar firmas contra tráfico de un ejercicio Red Team"
+   ],
+   "try": [
+    "Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo.",
+    "Con tráfico de prueba ves alertas en eve.json o el SIEM."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "ids",
+    "network"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://suricata.io",
+   "alt": []
+  },
+  {
+   "gh": "zeek/zeek",
+   "id": "zeek",
+   "name": "Zeek",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.",
+   "how": "Framework C++/scripting Zeek que genera logs estructurados (conn, http, dns…) a partir de captura o live traffic.",
+   "examples": [
+    "generar logs DNS/HTTP de un segmento de lab",
+    "investigar un incidente a partir de logs Zeek"
+   ],
+   "try": [
+    "Compila con `./configure && make && sudo make install` (docs.zeek.org) o usa paquetes, y captura en un interfaz de lab.",
+    "Obtienes logs en el directorio configurado."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "network",
+    "nsm"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://www.zeek.org",
+   "alt": []
+  },
+  {
+   "gh": "Velocidex/velociraptor",
+   "id": "velociraptor",
+   "name": "Velociraptor",
+   "cat": 16,
+   "sub": "ir-forense",
+   "kind": "app",
+   "one": "EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS.",
+   "how": "Servidor + clientes con lenguaje VQL; despliega artefactos de recolección y hunts desde la UI o CLI.",
+   "examples": [
+    "recolectar evidencias de un endpoint comprometido en lab",
+    "lanzar un hunt de IOCs en una flota de prueba"
+   ],
+   "try": [
+    "Descarga el release desde GitHub y sigue docs.velociraptor.app para levantar servidor y cliente de lab.",
+    "La UI muestra el cliente online listo para una recolección."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "ir",
+    "edr"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Gobierna con cuidado el acceso al servidor: puede leer y ejecutar en todos los endpoints enrolados.",
+   "url": "https://docs.velociraptor.app/",
+   "alt": []
+  },
+  {
+   "gh": "MISP/MISP",
+   "id": "misp",
+   "name": "MISP",
+   "cat": 16,
+   "sub": "inteligencia-amenazas",
+   "kind": "server",
+   "one": "Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizaciones.",
+   "how": "Aplicación PHP/MySQL con sync feeds y API; se despliega con las guías oficiales de instalación MISP.",
+   "examples": [
+    "compartir IOCs de un incidente interno con un partner",
+    "ingerir un feed OSINT y enriquecer alertas del SIEM"
+   ],
+   "try": [
+    "Sigue la guía de instalación en misp-project.org y levanta una instancia de laboratorio.",
+    "Creas un evento de prueba y exportas IOCs."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "ti",
+    "soc"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://www.misp-project.org/",
+   "alt": []
+  },
+  {
+   "gh": "OpenCTI-Platform/opencti",
+   "id": "opencti",
+   "name": "OpenCTI",
+   "cat": 16,
+   "sub": "inteligencia-amenazas",
+   "kind": "server",
+   "one": "Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE.",
+   "how": "Stack Node/Python + Elasticsearch/Redis/MinIO con conectores STIX; CE se despliega con Docker según docs.opencti.io.",
+   "examples": [
+    "modelar una campaña APT con relaciones STIX",
+    "centralizar feeds y casos de amenaza del SOC"
+   ],
+   "try": [
+    "Despliega con Docker según https://docs.opencti.io/latest/deployment/installation/#using-docker.",
+    "Accedes a la UI Community sin licencia EE."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "ti",
+    "stix"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "CE Apache-2.0 gratuita. EE (playbooks, SSO por UI, AI Insights, NLP, PIR, full-text, etc.) requiere licencia Filigran (trial disponible).",
+   "url": "https://opencti.io",
+   "alt": []
+  },
+  {
+   "gh": "SigmaHQ/sigma",
+   "id": "sigma",
+   "name": "Sigma",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "reference",
+   "one": "Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc.",
+   "how": "Repositorio de reglas YAML + especificación Sigma; se usan con pySigma/sigmac hacia el SIEM objetivo.",
+   "examples": [
+    "portar una detección a varios SIEM sin reescribirla",
+    "cubrir técnicas ATT&CK con reglas comunitarias"
+   ],
+   "try": [
+    "Clona SigmaHQ/sigma y convierte una regla con pySigma hacia tu SIEM de lab.",
+    "La regla convertida se carga y dispara con telemetría de prueba."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "detection",
+    "siem"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://sigmahq.io/",
+   "alt": []
+  },
+  {
+   "gh": "volatilityfoundation/volatility3",
+   "id": "volatility3",
+   "name": "Volatility 3",
+   "cat": 16,
+   "sub": "ir-forense",
+   "kind": "app",
+   "one": "Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware.",
+   "how": "Framework Python con plugins; se instala con pip y se apunta a un dump de memoria adquirido previamente.",
+   "examples": [
+    "listar procesos ocultos en un dump de lab",
+    "extraer conexiones de red desde memoria"
+   ],
+   "try": [
+    "Instala con `pip install volatility3` y ejecuta un plugin sobre un dump de laboratorio.",
+    "Obtienes la tabla del plugin (pslist, netscan, etc.)."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "forensics",
+    "memory"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "pip install volatility3",
+   "url": "https://volatilityfoundation.org/",
+   "alt": []
+  },
+  {
+   "gh": "VirusTotal/yara",
+   "id": "yara",
+   "name": "YARA",
+   "cat": 16,
+   "sub": "reversing",
+   "kind": "app",
+   "one": "Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas.",
+   "how": "Biblioteca/CLI C que compila reglas YARA y las evalúa sobre ficheros, procesos o dumps.",
+   "examples": [
+    "clasificar muestras de malware de un lab",
+    "bloquear indicadores conocidos en un pipeline de análisis"
+   ],
+   "try": [
+    "Compila YARA siguiendo https://virustotal.github.io/yara/ o usa el paquete del SO, y escanea un fichero de prueba.",
+    "La regla hace match o no según el contenido."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "malware",
+    "yara"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://virustotal.github.io/yara/",
+   "alt": []
+  },
+  {
+   "gh": "danielmiessler/SecLists",
+   "id": "seclists",
+   "name": "SecLists",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas.",
+   "how": "Árbol de ficheros de texto categorizados; se clona o descarga el zip y se apunta desde ffuf, gobuster, hydra, etc.",
+   "examples": [
+    "fuzzear rutas de una app web de lab con la lista Discovery",
+    "probar contraseñas comunes solo contra cuentas de prueba"
+   ],
+   "try": [
+    "Clona con `git clone --depth 1 https://github.com/danielmiessler/SecLists.git` y apunta ffuf a una lista.",
+    "El fuzzer usa el diccionario seleccionado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "wordlists"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "git clone --depth 1 https://github.com/danielmiessler/SecLists.git",
+   "url": "https://github.com/danielmiessler/SecLists",
+   "alt": []
+  },
+  {
+   "gh": "swisskyrepo/PayloadsAllTheThings",
+   "id": "payloadsallthethings",
+   "name": "PayloadsAllTheThings",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
+   "how": "Documentación Markdown con cheatsheets y payloads; se consulta en GitHub Pages o clonando el repo.",
+   "examples": [
+    "preparar payloads SSRF para un lab Juice Shop",
+    "repasar técnicas de una categoría OWASP antes de un ejercicio"
+   ],
+   "try": [
+    "Abre https://swisskyrepo.github.io/PayloadsAllTheThings/ o clona el repo y busca la sección de la vulnerabilidad.",
+    "Copias el payload al laboratorio autorizado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "web",
+    "cheatsheet"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "url": "https://swisskyrepo.github.io/PayloadsAllTheThings/",
+   "alt": []
+  },
+  {
+   "gh": "kgretzky/evilginx2",
+   "id": "evilginx2",
+   "name": "Evilginx2",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería social autorizadas.",
+   "how": "Binario Go con servidor HTTP/DNS propio y phishlets; se configura un dominio de lab y se opera según la documentación oficial.",
+   "examples": [
+    "entrenar al personal con un phishing MFA controlado",
+    "evaluar la detección de reverse-proxy phishing"
+   ],
+   "try": [
+    "Sigue la documentación oficial de Evilginx para instalar el release en un VPS de laboratorio aislado.",
+    "El phishlet de prueba captura una sesión de un usuario voluntario."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "phishing",
+    "redteam"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Riesgo legal/criminal muy alto fuera de simulaciones con consentimiento informado y alcance firmado. Nunca contra terceros sin permiso.",
+   "alt": []
+  },
+  {
+   "gh": "peass-ng/PEASS-ng",
+   "id": "peass-ng",
+   "name": "PEASS-ng",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS comprometidos.",
+   "how": "Scripts bash/PowerShell y binarios de release que revisan misconfigs, credenciales y vectores de privesc con salida coloreada.",
+   "examples": [
+    "enumerar privesc en una VM Linux de HTB/GOAD",
+    "revisar un bastión Windows tras un acceso autorizado"
+   ],
+   "try": [
+    "Descarga el release desde GitHub y ejecuta LinPEAS/WinPEAS en el host de laboratorio.",
+    "La salida destaca vectores de escalada."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "privesc"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "alt": []
+  },
+  {
+   "gh": "osquery/osquery",
+   "id": "osquery",
+   "name": "osquery",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts.",
+   "how": "Daemon/CLI C++ (licencia dual Apache-2.0 + GPL) que expone tablas SQL del sistema operativo.",
+   "examples": [
+    "consultar procesos escuchando puertos en flotas de lab",
+    "montar hunts SQL sobre cambios de persistencia"
+   ],
+   "try": [
+    "Instala el paquete desde https://osquery.io/downloads y abre `osqueryi` con una query de prueba.",
+    "Ves filas SQL del host."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "endpoint",
+    "sql"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://osquery.io",
+   "alt": []
+  }
+ ]
+}

@@ -154,6 +154,12 @@
      "id": "ffuf",
      "motivo": "ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura).",
      "orden_instalacion": "Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap."
+    },
+    {
+     "id": "payloadsallthethings",
+     "motivo": "Combinación recíproca: PayloadsAllTheThings lo enlaza como «Complementa SQLi manual del cheatsheet con sqlmap».",
+     "orden_instalacion": "Orden indicado desde PayloadsAllTheThings: Prueba manual; automatiza con sqlmap si procede.",
+     "reciproca_de": "payloadsallthethings"
     }
    ],
    "notas": "Las técnicas de extracción pueden alterar datos o cargar el servidor; nunca lo uses en producción sin acuerdo previo.",
@@ -390,6 +396,18 @@
      "id": "claude-code",
      "motivo": "Un agente puede explicar y priorizar las sugerencias del informe de Lynis (combinación por arquitectura).",
      "orden_instalacion": "Ejecuta Lynis y guarda el informe; después pásalo al agente sin datos sensibles."
+    },
+    {
+     "id": "prowler",
+     "motivo": "Combinación recíproca: Prowler lo enlaza como «Lynis endurece el host; Prowler la nube».",
+     "orden_instalacion": "Orden indicado desde Prowler: Audita VMs con Lynis y cuentas con Prowler.",
+     "reciproca_de": "prowler"
+    },
+    {
+     "id": "peass-ng",
+     "motivo": "Combinación recíproca: PEASS-ng lo enlaza como «Lynis endurece; PEASS encuentra lo explotable».",
+     "orden_instalacion": "Orden indicado desde PEASS-ng: Audita con Lynis; valida con PEASS en lab.",
+     "reciproca_de": "peass-ng"
     }
    ],
    "notas": "Las sugerencias son genéricas; valida cada cambio antes de aplicarlo en producción.",
@@ -432,6 +450,18 @@
      "motivo": "Combinación recíproca: Traefik Proxy lo enlaza como «CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware».",
      "orden_instalacion": "Orden indicado desde Traefik Proxy: CrowdSec en el servidor; después añade el bouncer como middleware de Traefik.",
      "reciproca_de": "traefik"
+    },
+    {
+     "id": "falco",
+     "motivo": "Combinación recíproca: Falco lo enlaza como «CrowdSec bloquea IPs; Falco detecta abuso dentro del host».",
+     "orden_instalacion": "Orden indicado desde Falco: Complementa red (CrowdSec) con runtime (Falco).",
+     "reciproca_de": "falco"
+    },
+    {
+     "id": "sigma",
+     "motivo": "Combinación recíproca: Sigma lo enlaza como «CrowdSec y Sigma cubren detección en red y logs».",
+     "orden_instalacion": "Orden indicado desde Sigma: Despliega CrowdSec; aporta reglas Sigma al SIEM.",
+     "reciproca_de": "sigma"
     }
    ],
    "notas": "Compartir señales con la red comunitaria es opcional; revisa qué datos se envían.",
@@ -505,6 +535,12 @@
      "id": "claude-code",
      "motivo": "Un agente puede ayudar a construir reglas, máscaras y comandos de Hashcat para una auditoría (combinación por arquitectura).",
      "orden_instalacion": "Describe la política de contraseñas; después revisa el comando propuesto."
+    },
+    {
+     "id": "seclists",
+     "motivo": "Combinación recíproca: SecLists lo enlaza como «Diccionarios de SecLists alimentan ataques de contraseña en lab».",
+     "orden_instalacion": "Orden indicado desde SecLists: SecLists primero; Hashcat con la lista autorizada.",
+     "reciproca_de": "seclists"
     }
    ],
    "notas": "Alternativas (elige una): john.",
@@ -547,6 +583,12 @@
      "motivo": "Combinación recíproca: sqlmap lo enlaza como «ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde sqlmap: Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap.",
      "reciproca_de": "sqlmap"
+    },
+    {
+     "id": "seclists",
+     "motivo": "Combinación recíproca: SecLists lo enlaza como «SecLists alimenta ffuf».",
+     "orden_instalacion": "Orden indicado desde SecLists: Clona SecLists; pasa la wordlist a ffuf.",
+     "reciproca_de": "seclists"
     }
    ],
    "notas": "Ajusta la tasa de peticiones para no saturar el servidor objetivo.",
@@ -582,6 +624,12 @@
      "id": "nuclei",
      "motivo": "Nuclei comprueba CVE concretos mientras ZAP analiza la lógica y las respuestas de la aplicación (combinación por arquitectura).",
      "orden_instalacion": "Ejecuta ambos escaneos sobre el mismo entorno de pruebas."
+    },
+    {
+     "id": "payloadsallthethings",
+     "motivo": "Combinación recíproca: PayloadsAllTheThings lo enlaza como «Usa payloads del repo dentro de ZAP».",
+     "orden_instalacion": "Orden indicado desde PayloadsAllTheThings: Define el alcance en ZAP; consulta PayloadsAllTheThings.",
+     "reciproca_de": "payloadsallthethings"
     }
    ],
    "notas": "No hay alternativa equivalente abierta en el catálogo (Burp Suite es propietario); mitmproxy es un proxy de depuración, no un escáner.",
@@ -618,6 +666,18 @@
      "id": "ffuf",
      "motivo": "ffuf fuzzea contenido en los subdominios descubiertos (combinación por arquitectura).",
      "orden_instalacion": "Enumera con subfinder; después lanza ffuf por host."
+    },
+    {
+     "id": "amass",
+     "motivo": "Combinación recíproca: Amass lo enlaza como «Subfinder y Amass cubren fuentes DNS distintas y se contrastan».",
+     "orden_instalacion": "Orden indicado desde Amass: Ejecuta ambos y unifica resultados antes de sondear.",
+     "reciproca_de": "amass"
+    },
+    {
+     "id": "httpx",
+     "motivo": "Combinación recíproca: httpx lo enlaza como «httpx filtra qué FQDN descubiertos por Subfinder están vivos».",
+     "orden_instalacion": "Orden indicado desde httpx: Primero Subfinder; después httpx sobre la lista.",
+     "reciproca_de": "httpx"
     }
    ],
    "notas": "Cercano a theharvester (que además recoge correos y otros datos); subfinder se centra solo en subdominios.",
@@ -689,6 +749,24 @@
      "id": "john",
      "motivo": "Las capturas de handshakes WPA de tu propia red pueden convertirse a hashes para John con wpapcap2john.",
      "orden_instalacion": "Captura con Wireshark; después extrae el hash para auditar la clave."
+    },
+    {
+     "id": "sliver",
+     "motivo": "Combinación recíproca: Sliver lo enlaza como «Wireshark valida el tráfico C2 generado en lab».",
+     "orden_instalacion": "Orden indicado desde Sliver: Captura con Wireshark mientras el implant habla con el server.",
+     "reciproca_de": "sliver"
+    },
+    {
+     "id": "suricata",
+     "motivo": "Combinación recíproca: Suricata lo enlaza como «Wireshark analiza PCAP que Suricata marca».",
+     "orden_instalacion": "Orden indicado desde Suricata: Exporta el PCAP de la alerta a Wireshark.",
+     "reciproca_de": "suricata"
+    },
+    {
+     "id": "zeek",
+     "motivo": "Combinación recíproca: Zeek lo enlaza como «Wireshark profundiza en sesiones que Zeek resume».",
+     "orden_instalacion": "Orden indicado desde Zeek: Usa el UID/conn de Zeek para abrir el PCAP.",
+     "reciproca_de": "zeek"
     }
    ],
    "notas": "Para capturar en Linux sin root hay que configurar permisos de captura según la documentación.",
@@ -725,6 +803,24 @@
      "id": "metasploit",
      "motivo": "Las rutas de ataque encontradas se validan con módulos de Metasploit en un ejercicio autorizado (combinación por arquitectura).",
      "orden_instalacion": "Analiza con BloodHound; después valida en laboratorio con Metasploit."
+    },
+    {
+     "id": "impacket",
+     "motivo": "Combinación recíproca: Impacket lo enlaza como «Impacket recolecta datos que BloodHound analiza como rutas de ataque».",
+     "orden_instalacion": "Orden indicado desde Impacket: Recolecta con Impacket/SharpHound; después importa en BloodHound.",
+     "reciproca_de": "impacket"
+    },
+    {
+     "id": "netexec",
+     "motivo": "Combinación recíproca: NetExec lo enlaza como «Los hallazgos de NetExec orientan la recolección para BloodHound».",
+     "orden_instalacion": "Orden indicado desde NetExec: Enumera con NetExec; importa el grafo en BloodHound.",
+     "reciproca_de": "netexec"
+    },
+    {
+     "id": "peass-ng",
+     "motivo": "Combinación recíproca: PEASS-ng lo enlaza como «En AD, BloodHound da rutas de dominio; PEASS el host».",
+     "orden_instalacion": "Orden indicado desde PEASS-ng: Usa ambos niveles.",
+     "reciproca_de": "peass-ng"
     }
    ],
    "notas": "Ejecutar colectores en un dominio genera actividad detectable; coordínalo con el equipo de seguridad.",

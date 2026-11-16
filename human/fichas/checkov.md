@@ -1,0 +1,125 @@
+[🏠 Inicio](../README.md) › [🔍 Analizar software y comprobar su seguridad](../categorias/16-analisis-de-software-y-seguridad.md) › Nube, contenedores e IaC
+
+# 🖥️ Checkov
+
+> SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos.
+
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 9.2k | Apache-2.0 | Python | 2026-11-16 |
+
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
+
+## ¿Qué es?
+
+Escáner de IaC open source de Bridgecrew/Prisma Cloud para detectar misconfigs antes del despliegue.
+
+## ¿Qué hace?
+
+Parsea Terraform, K8s, ARM, CloudFormation, etc., y evalúa políticas de seguridad y cumplimiento.
+
+## ¿Cómo lo hace?
+
+Se instala con pip, brew o Docker (`bridgecrew/checkov`); se integra en pipelines CI.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Trivy](trivy.md) | Trivy y Checkov se complementan (imagen/secretos vs IaC). | Checkov sobre plantillas; Trivy sobre imágenes. |
+| [Semgrep](semgrep.md) | Semgrep cubre código de aplicación; Checkov la IaC. | Ambos en el mismo pipeline. |
+| [Prowler](prowler.md) | Checkov previene; Prowler audita lo ya desplegado. | Checkov en CI; Prowler sobre la cuenta. |
+| [Grype](grype.md) | Combinación recíproca: Grype lo enlaza como «Checkov endurece IaC; Grype la imagen resultante». | Orden indicado desde Grype: Checkov → build → Grype. |
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 3.4.5 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bridgecrewio/checkov#readme) · [2](https://www.checkov.io/)</sub>
+
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
+| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
+| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+
+Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+
+## Cómo empezar
+
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real.
+
+1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
+2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
+3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+pip3 install checkov
+```
+
+Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+
+[Instrucciones originales de instalación](https://github.com/bridgecrewio/checkov/blob/main/README.md)
+
+[Abrir la web o descarga indicada por el autor](https://www.checkov.io/)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Checkov para mi objetivo y necesito pasos guiados. Lee https://github.com/bridgecrewio/checkov/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Instala con `pip3 install checkov` y ejecuta `checkov -d .` en un repo IaC propio..
+
+**Qué comprobar:** Obtienes checks fallidos con archivo y línea..
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
+## Casos de uso
+
+- revisar un módulo Terraform antes del apply
+- bloquear un manifiesto K8s con privilegios excesivos en CI
+
+## ¿Es para ti?
+
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| Tu objetivo encaja con estos ejemplos: revisar un módulo Terraform antes del apply; bloquear un manifiesto K8s con privilegios excesivos en CI | necesitas una instalación sin cuentas ni dependencias adicionales |
+
+**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas requieren un alcance autorizado y un entorno adecuado.
+
+## Stack y modelos
+
+- **Stack:** Python, Dockerfile, pyproject.toml, setup.py
+- **Etiquetas:** `security` `iac` `terraform`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Enlaces
+
+- 🐙 GitHub: [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov)
+- 🌐 Web: <https://www.checkov.io/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-16. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
+
+- [Fuente 1](https://github.com/bridgecrewio/checkov/blob/main/README.md)
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

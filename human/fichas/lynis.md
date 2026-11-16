@@ -29,6 +29,8 @@ Script de shell sin dependencias ni instalación obligatoria; se ejecuta desde e
 | [Wazuh](wazuh.md) | Wazuh mantiene vigilancia continua de los sistemas que Lynis audita puntualmente (combinación por arquitectura). | Corrige lo que señala Lynis; después vigila con Wazuh. |
 | [Trivy](trivy.md) | Trivy revisa imágenes y dependencias mientras Lynis audita el sistema anfitrión (combinación por arquitectura). | Audita el host con Lynis; escanea las imágenes con Trivy. |
 | [Claude Code](claude-code.md) | Un agente puede explicar y priorizar las sugerencias del informe de Lynis (combinación por arquitectura). | Ejecuta Lynis y guarda el informe; después pásalo al agente sin datos sensibles. |
+| [Prowler](prowler.md) | Combinación recíproca: Prowler lo enlaza como «Lynis endurece el host; Prowler la nube». | Orden indicado desde Prowler: Audita VMs con Lynis y cuentas con Prowler. |
+| [PEASS-ng](peass-ng.md) | Combinación recíproca: PEASS-ng lo enlaza como «Lynis endurece; PEASS encuentra lo explotable». | Orden indicado desde PEASS-ng: Audita con Lynis; valida con PEASS en lab. |
 
 **Notas:** Las sugerencias son genéricas; valida cada cambio antes de aplicarlo en producción.
 
