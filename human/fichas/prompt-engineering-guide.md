@@ -29,6 +29,7 @@ El sitio está hecho con Next.js y Nextra; para verlo en local se instalan las d
 | [prompt-master](prompt-master.md) | Aplicar las técnicas de la guía a encargos concretos con una skill que reescribe prompts para cada herramienta. (combinación por arquitectura) | Lee primero la guía para entender las técnicas; instala la skill si quieres automatizarlas. |
 | [Context-Engineering](context-engineering.md) | Continuación natural hacia la ingeniería de contexto, que la propia guía ya incluye como tema. (combinación por arquitectura) | Úsalo después de dominar los fundamentos de prompting. |
 | [promptfoo](promptfoo.md) | Medir con evaluaciones reproducibles si una técnica de la guía mejora de verdad tus resultados. (combinación por arquitectura) | Diseña los prompts con la guía y valídalos con un conjunto de pruebas en promptfoo. |
+| [chatgpt_system_prompt](chatgpt-system-prompt.md) | Combinación recíproca: chatgpt_system_prompt lo enlaza como «Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)». | Orden indicado desde chatgpt_system_prompt: Úsalo como marco conceptual. |
 
 **Notas:** Alternativas (elige una): prompt-eng-tutorial.
 

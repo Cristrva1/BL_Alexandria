@@ -28,7 +28,7 @@ Se autoaloja siguiendo la guía de instalación (Docker, con imágenes preparada
 |---|---|---|
 | [DuckDB](duckdb.md) | Consultar archivos locales o analíticos con SQL. (combinación por arquitectura) | Configura la fuente de datos correspondiente. |
 | [supabase](supabase.md) | Fuente PostgreSQL para consultas y paneles. (combinación por arquitectura) | Conecta con un usuario de solo lectura. |
-| [n8n](n8n.md) | Disparar flujos a partir de alertas de Redash. (combinación por arquitectura) | Configura un webhook de alerta hacia n8n. |
+| [activepieces](activepieces.md) | Disparar flujos a partir de alertas de Redash. (combinación por arquitectura) | Configura un webhook de alerta hacia Activepieces. |
 
 **Notas:** Alternativas (elige una): metabase, superset.
 

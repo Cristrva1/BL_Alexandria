@@ -30,7 +30,7 @@ Se ejecuta en local con Node.js 24.x (24.14+) o 26.x, con Docker Compose o con u
 | [hermes-agent](hermes-agent.md) | Agente con acceso a datos geoespaciales vía MCP. (combinación por arquitectura) | Configura el MCP local en el agente. |
 | [Pythia](pythia.md) | Contrastar las predicciones de PYTHIA con las capas en vivo. (combinación por arquitectura) | Usa ambos sobre la misma región. |
 
-**Notas:** Sin alternativas declaradas; solapa con osiris (solo anotado). El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.
+**Notas:** Alternativa (elige una): osiris. El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.3.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -112,6 +112,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP
 - **Etiquetas:** `osint` `app` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [osiris](osiris.md) | 11.7k | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. |
 
 ## Enlaces
 

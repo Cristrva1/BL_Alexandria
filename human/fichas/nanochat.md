@@ -29,6 +29,9 @@ Código Python compacto gestionado con uv (`uv sync --extra gpu` para CUDA o `--
 | [PyTorch](pytorch.md) | Base del entrenamiento. | Se instala con `uv sync` según el extra (gpu o cpu). |
 | [LLMs from Scratch](llms-from-scratch.md) | Entender cada componente antes de ejecutar el pipeline completo. (combinación por arquitectura) | Estudia el libro y vuelve a nanochat para el entrenamiento a escala. |
 | [llm.c](llm-c.md) | Versión en C/CUDA del mismo autor para entender el entrenamiento sin PyTorch. (combinación por arquitectura) | Opcional, para profundizar en rendimiento de bajo nivel. |
+| [autoresearch](autoresearch.md) | Combinación recíproca: autoresearch lo enlaza como «Base de entrenamiento sobre la que experimenta». | Orden indicado desde autoresearch: Viene integrado en forma simplificada. |
+| [how-to-train-your-gpt](how-to-train-your-gpt.md) | Combinación recíproca: how-to-train-your-gpt lo enlaza como «Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura)». | Orden indicado desde how-to-train-your-gpt: Termina el libro antes de alquilar GPU para nanochat. |
+| [train-llm-from-scratch](train-llm-from-scratch.md) | Combinación recíproca: train-llm-from-scratch lo enlaza como «Pipeline completo optimizado para comparar rendimiento y resultados. (combinación por arquitectura)». | Orden indicado desde train-llm-from-scratch: Opcional, como siguiente paso. |
 
 **Notas:** Sin alternativas declaradas. Coste real: alquilar 8×H100 durante horas.
 

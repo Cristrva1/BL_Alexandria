@@ -29,6 +29,15 @@ Aplicación Node.js/React configurada con `librechat.yaml`. El Docker Compose de
 | [litellm](litellm.md) | LiteLLM como endpoint personalizado para centralizar proveedores, claves y gasto. | LiteLLM primero; declara su URL en `librechat.yaml`. |
 | [Ollama](ollama.md) | Ollama figura entre los proveedores locales compatibles. | Ollama accesible desde la red de Docker (host.docker.internal o IP). |
 | [langfuse](langfuse.md) | La v0.8.8 permite configurar identidad y metadatos de trazas para Langfuse. | Langfuse en marcha con claves de proyecto; configúralas en LibreChat. |
+| [llama.cpp](llama-cpp.md) | Combinación recíproca: llama.cpp lo enlaza como «LibreChat admite endpoints personalizados compatibles con OpenAI, como el de llama.cpp». | Orden indicado desde llama.cpp: Servidor de llama.cpp accesible desde el contenedor de LibreChat; luego decláralo en `librechat.yaml`. |
+| [pgvector](pgvector.md) | Combinación recíproca: pgvector lo enlaza como «El Docker Compose de LibreChat usa una imagen pgvector para su RAG API». | Orden indicado desde pgvector: Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo. |
+| [exo](exo.md) | Combinación recíproca: exo lo enlaza como «Endpoint personalizado compatible con OpenAI para un chat multiusuario sobre el clúster (combinación por arquitectura)». | Orden indicado desde exo: Igual que arriba; asegúrate de que el contenedor llega a la IP del nodo. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[llamafile](llamafile.md) · [LocalAI](localai.md) · [Text Generation WebUI](textgen.md)
 
 **Notas:** Alternativas (elige una): open-webui, lobehub. Meilisearch, pgvector y RAG API ya vienen en su Compose.
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skyvern, automatización de flujos web con LLMs y visión por computador, de Skyvern-AI. Licencia AGPL-3.0, con versión cloud gestionada. Tiene ~23k estrellas (v1.0.58).
+
+## ¿Qué hace?
+
+Navega sitios nunca vistos sin XPath frágiles: rellena formularios y completa flujos. Ofrece un SDK compatible con Playwright que añade IA y un constructor de workflows.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11–3.13 y `pip install "skyvern[server]"` (servidor local; la interfaz va aparte o con Docker). Recoge estadísticas de uso por defecto (opt-out).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | SDK compatible. | Usa el SDK de Skyvern sobre Playwright. |
+| [Ollama](ollama.md) | Modelos locales. (combinación por arquitectura) | Configura un proveedor compatible. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos. | Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces. |
+
+**Notas:** Alternativas (elige una): browser-use, stagehand, computer-use-preview. Telemetría activa por defecto.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.0.58 (2026-11-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Skyvern-AI/skyvern/blob/main/README.md) · [2](https://docs.skyvern.com/) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/skyvern)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Usa LLM y visión; evitar selectores frágiles no garantiza funcionar sin errores en todos los sitios |
 | Coste | El coste depende del proveedor o la ruta. Autoalojar no incluye inferencia; API o Ollama según configuración y browser o Cloud tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Python; browser; proveedor o modelo local Ollama; flujo de prueba |
-
-Usa LLM y visión; evitar selectores frágiles no garantiza funcionar sin errores en todos los sitios
-
-## Qué puedes hacer con él
-
-Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar un flujo propio; Evaluar extracción basada en visión.
-
-## Cómo funciona
 
 Usa LLM y visión; evitar selectores frágiles no garantiza funcionar sin errores en todos los sitios
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; browser; proveedor o modelo local Ollama; flujo de prueba
 - **Etiquetas:** `browser` `automation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

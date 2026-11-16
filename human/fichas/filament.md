@@ -29,6 +29,7 @@ Se descargan las releases estables o se compila con CMake. Soporta Vulkan, Metal
 | [meshoptimizer](meshoptimizer.md) | Optimizar geometría glTF antes de cargarla. (combinación por arquitectura) | Procesa los modelos con gltfpack. |
 | [blender](blender.md) | Exportar modelos glTF. (combinación por arquitectura) | Exporta desde Blender y carga con gltfio. |
 | [ozz-animation](ozz-animation.md) | Animación esquelética en runtime. (combinación por arquitectura) | Integra ozz en el motor. |
+| [awesome-cad](awesome-cad.md) | Combinación recíproca: awesome-cad lo enlaza como «Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)». | Orden indicado desde awesome-cad: Exporta a glTF y visualiza con Filament. |
 
 **Notas:** Sin alternativas declaradas.
 

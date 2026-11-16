@@ -1,0 +1,988 @@
+{
+ "batch": "47-expansion-p09",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "deepface": {
+   "que_es": "Biblioteca de código abierto (MIT) creada por Sefik Ilkin Serengil. Muy popular y activa; su autor ofrece además una API gestionada (deepface.dev).",
+   "que_hace": "Verifica si dos caras son de la misma persona, busca una cara en una base de imágenes, extrae embeddings faciales y estima edad, género, emoción y origen étnico aparentes. Incluye detección facial con varios backends (OpenCV, SSD, Dlib, MTCNN, RetinaFace, MediaPipe, YOLO, YuNet, CenterFace), API REST y gRPC, y análisis en tiempo real con cámara.",
+   "como_lo_hace": "Se instala con pip; usa ONNX Runtime por defecto o TensorFlow/PyTorch con extras. Descarga los pesos de cada modelo al primer uso. Funciona en CPU; la GPU acelera el análisis por lotes.",
+   "combina_con": [
+    {
+     "id": "opencv",
+     "motivo": "OpenCV es el detector facial por defecto de DeepFace y se usa para leer imágenes y vídeo.",
+     "orden_instalacion": "Instala DeepFace (incluye OpenCV); después elige `detector_backend=\"opencv\"`."
+    },
+    {
+     "id": "dlib",
+     "motivo": "DeepFace incluye Dlib como detector facial y como modelo de reconocimiento.",
+     "orden_instalacion": "Instala `dlib`; después usa `detector_backend=\"dlib\"` o `model_name=\"Dlib\"`."
+    },
+    {
+     "id": "mediapipe",
+     "motivo": "DeepFace puede usar MediaPipe como detector facial.",
+     "orden_instalacion": "Instala `mediapipe`; después usa `detector_backend=\"mediapipe\"`."
+    },
+    {
+     "id": "ultralytics",
+     "motivo": "Los detectores YOLO (yolov8, yolov11, yolov12) de DeepFace usan Ultralytics.",
+     "orden_instalacion": "Instala `ultralytics`; después usa por ejemplo `detector_backend=\"yolov11n\"`."
+    },
+    {
+     "id": "insightface",
+     "motivo": "El modelo de reconocimiento Buffalo_L que envuelve DeepFace procede de InsightFace.",
+     "orden_instalacion": "Instala DeepFace; después usa `model_name=\"Buffalo_L\"` (revisa la licencia de los pesos de InsightFace)."
+    }
+   ],
+   "notas": "Úsalo solo con imágenes propias o con consentimiento; la estimación de atributos como el origen étnico es sensible y puede tener sesgos.",
+   "fuentes": [
+    "https://github.com/serengil/deepface/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "serengil/deepface",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.0.105 (2026-11-12)"
+   }
+  },
+  "detectron2": {
+   "que_es": "Biblioteca de investigación de código abierto (Apache-2.0) de Facebook AI Research (Meta), sucesora de Detectron y maskrcnn-benchmark. Muy citada, pero con mantenimiento bajo: la última versión publicada es v0.6 (2021) y el último push es de octubre de 2026.",
+   "que_hace": "Proporciona algoritmos de detección y segmentación: detección de objetos, segmentación de instancias, semántica y panóptica, keypoints, DensePose, cajas rotadas, PointRend, DeepLab, ViTDet y MViTv2, con un zoo de modelos preentrenados y proyectos de investigación construidos encima.",
+   "como_lo_hace": "Está escrita en Python sobre PyTorch con extensiones C++/CUDA que se compilan al instalar. Usa configuraciones declarativas (YACS o LazyConfig) y permite exportar modelos a TorchScript para despliegue.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Detectron2 está construida sobre PyTorch y requiere una versión compatible instalada antes.",
+     "orden_instalacion": "Instala PyTorch con CUDA; después compila Detectron2 siguiendo la guía oficial."
+    },
+    {
+     "id": "cvat",
+     "motivo": "CVAT incluye una función serverless con RetinaNet de Detectron2 para preanotar imágenes automáticamente.",
+     "orden_instalacion": "Despliega CVAT con soporte serverless (Nuclio); después activa la función de Detectron2."
+    },
+    {
+     "id": "opencv",
+     "motivo": "La demo de Detectron2 usa OpenCV para leer imágenes, vídeo o cámara y dibujar resultados.",
+     "orden_instalacion": "Instala OpenCV junto a Detectron2; después ejecuta `demo/demo.py`."
+    }
+   ],
+   "notas": "Para detección en producción, Ultralytics (YOLO) suele ser más sencillo; Detectron2 sigue siendo útil en investigación y segmentación avanzada.",
+   "fuentes": [
+    "https://github.com/facebookresearch/detectron2/blob/main/README.md",
+    "https://detectron2.readthedocs.io/tutorials/install.html",
+    "https://github.com/cvat-ai/cvat/blob/develop/README.md"
+   ],
+   "github": {
+    "name_with_owner": "facebookresearch/detectron2",
+    "archived": false,
+    "pushed_at": "2026-10-27",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.6 (2021-11-15)"
+   }
+  },
+  "cvat": {
+   "que_es": "Edición comunitaria, autoalojable y de código abierto (MIT) de CVAT, una de las herramientas de anotación de datos más usadas en visión por computador desde 2018. Es la base de CVAT Online y CVAT Enterprise (comerciales). Muy activa.",
+   "que_hace": "Permite anotar imágenes, vídeo, audio y nubes de puntos 3D con cajas, polígonos, máscaras, puntos y pistas, gestionar proyectos y tareas, colaborar en equipo, conectar almacenamiento en la nube, preanotar con modelos (SAM, YOLO, Detectron2, HRNet de MMPose…) y exportar o importar más de 20 formatos (COCO, YOLO, Pascal VOC…).",
+   "como_lo_hace": "Se despliega con Docker Compose o Kubernetes. Backend Django con PostgreSQL y Redis, frontend React; las funciones de IA se ejecutan como serverless en Nuclio. Ofrece SDK (`cvat-sdk`) y CLI (`cvat-cli`) en Python y usa bibliotecas de FFmpeg para vídeo.",
+   "combina_con": [
+    {
+     "id": "detectron2",
+     "motivo": "CVAT incluye una función serverless con RetinaNet R101 de Detectron2 para detectar objetos automáticamente.",
+     "orden_instalacion": "Despliega CVAT con el componente serverless; después instala la función de Detectron2 con nuctl."
+    },
+    {
+     "id": "mmpose",
+     "motivo": "CVAT incluye una función serverless con HRNet32 de MMPose para estimar pose de cuerpo completo.",
+     "orden_instalacion": "Despliega CVAT con el componente serverless; después instala la función de MMPose."
+    },
+    {
+     "id": "ultralytics",
+     "motivo": "CVAT exporta e importa anotaciones en los formatos YOLO de Ultralytics (detección, segmentación, pose) para entrenar con esa biblioteca.",
+     "orden_instalacion": "Anota en CVAT y exporta en formato Ultralytics YOLO; después entrena con `yolo train`."
+    }
+   ],
+   "notas": "Alternativa de Label Studio: CVAT está más especializado en visión (vídeo, pistas y 3D); Label Studio cubre más tipos de datos generales.",
+   "fuentes": [
+    "https://github.com/cvat-ai/cvat/blob/develop/README.md",
+    "https://github.com/cvat-ai/cvat/blob/develop/cvat/apps/dataset_manager/formats/yolo.py"
+   ],
+   "github": {
+    "name_with_owner": "cvat-ai/cvat",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.83.0 (2026-11-12)"
+   }
+  },
+  "dlib": {
+   "que_es": "Toolkit de código abierto (Boost Software License) creado y mantenido por Davis King desde 2002. Clásico y estable, con cambios continuos pero menos frecuentes que en bibliotecas más nuevas.",
+   "que_hace": "Ofrece algoritmos de aprendizaje automático (SVM, regresión, clustering, redes profundas con su propio módulo), procesamiento de imagen, detección de objetos HOG y CNN, detección de caras, predicción de 68 puntos faciales, reconocimiento facial, seguimiento de objetos, optimización numérica y utilidades de redes e hilos.",
+   "como_lo_hace": "Biblioteca C++17 que se compila con CMake (con AVX y CUDA opcionales); los bindings de Python se instalan con `pip install dlib`, que compila el código. Los modelos preentrenados se descargan desde dlib.net.",
+   "combina_con": [
+    {
+     "id": "deepface",
+     "motivo": "DeepFace usa dlib como detector facial y como modelo de reconocimiento (`Dlib`).",
+     "orden_instalacion": "Instala dlib; después elige el backend `dlib` en DeepFace."
+    },
+    {
+     "id": "opencv",
+     "motivo": "dlib incluye `cv_image` para trabajar directamente con imágenes de OpenCV en C++, y en Python ambos comparten arrays de NumPy.",
+     "orden_instalacion": "Lee los fotogramas con OpenCV; después pásalos a los detectores de dlib."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "dlib es una biblioteca C++/Python que un agente de código puede integrar y compilar en tu proyecto (combinación por arquitectura).",
+     "orden_instalacion": "Instala CMake y dlib; después pide al agente el código de integración."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/davisking/dlib/blob/master/README.md",
+    "http://dlib.net"
+   ],
+   "github": {
+    "name_with_owner": "davisking/dlib",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "BSL-1.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v20.1 (2026-11-14)"
+   }
+  },
+  "ultimate-vocal-remover": {
+   "que_es": "Aplicación de código abierto (MIT) de Anjok07 y aufr33, referencia popular para separar voces. La última versión publicada es la v5.6 (2023); el README remite a una actualización de desarrollo de octubre de 2026.",
+   "que_hace": "Separa pistas de audio en voz e instrumental (y en stems como batería o bajo con Demucs) usando modelos entrenados por sus desarrolladores (MDX-Net, VR Architecture) y modelos Demucs. Permite procesar por lotes, encadenar modelos (ensembles) y cambiar tempo o tono.",
+   "como_lo_hace": "Se distribuye como instalador para Windows y macOS que incluye Python y PyTorch; en Linux se instala desde el código. Usa FFmpeg para formatos distintos de WAV y Rubber Band para cambios de tiempo y tono. Funciona en CPU; la GPU (CUDA o Apple Silicon) acelera.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "UVR necesita FFmpeg para procesar archivos que no son WAV.",
+     "orden_instalacion": "Instala FFmpeg (o copia el binario a la carpeta de UVR); después abre MP3 u otros formatos."
+    },
+    {
+     "id": "rubberband",
+     "motivo": "UVR usa Rubber Band para las funciones de cambio de tiempo y de tono.",
+     "orden_instalacion": "Instala Rubber Band según el README; después usa las herramientas de tempo y tono."
+    },
+    {
+     "id": "demucs",
+     "motivo": "UVR incluye los modelos Demucs v3 y v4 como una de sus arquitecturas de separación.",
+     "orden_instalacion": "Descarga los modelos Demucs desde el gestor de modelos de UVR; después elige el método Demucs."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Anjok07/ultimatevocalremovergui",
+    "archived": false,
+    "pushed_at": "2026-10-06",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v5.6 (2023-09-26)"
+   }
+  },
+  "sherpa-onnx": {
+   "que_es": "Motor de voz de código abierto (Apache-2.0) del proyecto k2-fsa (Next-gen Kaldi). Muy activo y con muchos proyectos que lo usan en móviles y dispositivos embebidos.",
+   "que_hace": "Ofrece, sin conexión, reconocimiento de voz en streaming y por archivos, síntesis de voz, separación de fuentes, identificación, verificación y diarización de hablantes, identificación de idioma, etiquetado de audio, detección de actividad de voz (VAD), detección de palabras clave, puntuación y mejora de voz.",
+   "como_lo_hace": "Usa ONNX Runtime para ejecutar modelos exportados en x86, ARM, RISC-V y NPUs. Tiene APIs en una docena de lenguajes y binarios para Android, iOS, HarmonyOS, Windows, macOS, Linux, WebAssembly y Flutter. Los modelos preentrenados se descargan desde su documentación o releases.",
+   "combina_con": [
+    {
+     "id": "whisper",
+     "motivo": "sherpa-onnx ejecuta modelos Whisper exportados a ONNX para reconocimiento e identificación de idioma.",
+     "orden_instalacion": "Descarga un modelo Whisper preparado para sherpa-onnx; después úsalo con el reconocedor offline."
+    },
+    {
+     "id": "nemo",
+     "motivo": "sherpa-onnx ejecuta modelos de NeMo como Parakeet TDT y transductores/CTC exportados a ONNX.",
+     "orden_instalacion": "Descarga el modelo NeMo convertido; después úsalo con el reconocedor de sherpa-onnx."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "sherpa-onnx incluye Kokoro-82M entre sus motores de síntesis de voz.",
+     "orden_instalacion": "Descarga el modelo Kokoro para sherpa-onnx; después genera audio con la API de TTS."
+    },
+    {
+     "id": "pyannote-audio",
+     "motivo": "La diarización de sherpa-onnx usa el modelo de segmentación de pyannote exportado a ONNX junto a un modelo de embeddings de hablante.",
+     "orden_instalacion": "Descarga el modelo de segmentación de pyannote para sherpa-onnx; después ejecuta la diarización."
+    }
+   ],
+   "notas": "Alternativa ligera y multiplataforma a whisper.cpp o faster-whisper cuando necesitas varias tareas de voz en dispositivos.",
+   "fuentes": [
+    "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+    "https://k2-fsa.github.io/sherpa/onnx/"
+   ],
+   "github": {
+    "name_with_owner": "k2-fsa/sherpa-onnx",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.0.1 (2026-10-26)"
+   }
+  },
+  "f5-tts": {
+   "que_es": "Proyecto de investigación de código abierto (código MIT) del equipo SWivid, publicado con su artículo en arXiv. Los pesos preentrenados son CC-BY-NC. Activo (modelo base v1 en marzo de 2025).",
+   "que_hace": "Genera voz a partir de texto imitando la voz de un audio de referencia de pocos segundos (clonación zero-shot). Incluye app web Gradio (con chat por voz y varios hablantes), CLI, servidor socket, entrenamiento y ajuste fino.",
+   "como_lo_hace": "Usa flow matching con un Diffusion Transformer y ConvNeXt V2, muestreo Sway en inferencia y el vocoder Vocos. Se instala con pip después de PyTorch (CUDA, ROCm, XPU o Apple Silicon); también hay imagen Docker. Requiere FFmpeg.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "F5-TTS necesita PyTorch y torchaudio instalados para el dispositivo (CUDA, ROCm, XPU o CPU).",
+     "orden_instalacion": "Instala PyTorch para tu GPU; después `pip install f5-tts`."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "El README pide instalar FFmpeg para procesar el audio.",
+     "orden_instalacion": "Instala FFmpeg (p. ej. `conda install ffmpeg`); después F5-TTS."
+    },
+    {
+     "id": "gradio",
+     "motivo": "F5-TTS incluye una aplicación web Gradio (`f5-tts_infer-gradio`) para generar voz sin programar.",
+     "orden_instalacion": "Instala F5-TTS (incluye Gradio); después ejecuta `f5-tts_infer-gradio`."
+    }
+   ],
+   "notas": "Alternativa de Fish Speech y CosyVoice para clonación de voz; revisa siempre la licencia de los pesos antes de usos comerciales.",
+   "fuentes": [
+    "https://github.com/SWivid/F5-TTS/blob/main/README.md",
+    "https://arxiv.org/abs/2410.06885"
+   ],
+   "github": {
+    "name_with_owner": "SWivid/F5-TTS",
+    "archived": false,
+    "pushed_at": "2026-11-03",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.1.22 (2026-07-23)"
+   }
+  },
+  "audacity": {
+   "que_es": "Editor de audio libre (GPLv3; la mayoría de archivos GPLv2 o posterior) mantenido por el equipo de Audacity con apoyo de Muse Group. Referencia histórica en edición de audio libre. El repositorio está en una reestructuración profunda hacia Audacity 4 (nueva interfaz).",
+   "que_hace": "Graba y edita audio multipista: cortar, mezclar, efectos (ecualización, compresión, reducción de ruido), análisis espectral, etiquetas, procesado por lotes con macros y soporte de plugins VST3, LV2, Audio Units y Nyquist. Importa y exporta WAV, MP3, FLAC, OGG y, con FFmpeg, muchos más formatos.",
+   "como_lo_hace": "Aplicación C++ multiplataforma. Se instala desde los binarios oficiales; la biblioteca FFmpeg se instala aparte para formatos adicionales. Los plugins OpenVINO de Intel (proyecto aparte, GPL-3.0) añaden funciones de IA locales.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Audacity usa la biblioteca FFmpeg para importar y exportar formatos adicionales (AAC, M4A, WMA, audio de vídeos).",
+     "orden_instalacion": "Instala la biblioteca FFmpeg compatible; después Audacity la detecta en Preferencias > Bibliotecas."
+    },
+    {
+     "id": "demucs",
+     "motivo": "Los plugins OpenVINO de Intel para Audacity incluyen separación musical con Demucs v4.",
+     "orden_instalacion": "Instala los plugins OpenVINO para Audacity; después usa el efecto Music Separation."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "Los plugins OpenVINO de Intel para Audacity transcriben voz a una pista de etiquetas con whisper.cpp.",
+     "orden_instalacion": "Instala los plugins OpenVINO; después usa el analizador Whisper Transcription."
+    },
+    {
+     "id": "audiocraft",
+     "motivo": "Los plugins OpenVINO de Intel para Audacity generan y continúan música con MusicGen de AudioCraft.",
+     "orden_instalacion": "Instala los plugins OpenVINO y los modelos MusicGen; después usa Music Generation."
+    },
+    {
+     "id": "yue",
+     "motivo": "Combinación recíproca: YuE2 lo enlaza como «Las canciones generadas por YuE2 se pueden recortar, mezclar y masterizar en Audacity (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde YuE2: Genera el audio con YuE2; después ábrelo en Audacity para editarlo.",
+     "reciproca_de": "yue"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/audacity/audacity/blob/master/README.md",
+    "https://github.com/intel/openvino-plugins-ai-audacity/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "audacity/audacity",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "Audacity-4.0.2 (2026-11-02)"
+   }
+  },
+  "demucs": {
+   "que_es": "Versión mantenida oficialmente por Alexandre Défossez, autor de Demucs, tras dejar Meta (y archivarse facebookresearch/demucs). El código es MIT. El propio autor avisa de que no trabaja activamente en él: respuestas lentas y sin funciones nuevas.",
+   "que_hace": "Separa música en stems: batería, bajo, voz y resto (y guitarra y piano con la variante de 6 fuentes). La v4 (Hybrid Transformer Demucs) alcanza 9,0–9,2 dB de SDR en MUSDB HQ. Incluye CLI, API de Python y scripts de entrenamiento.",
+   "como_lo_hace": "Usa una arquitectura U-Net híbrida en espectrograma y forma de onda con un codificador Transformer entre dominios. Se instala con pip sobre PyTorch; FFmpeg es opcional pero necesario para salida FLAC y algunos formatos. Funciona en CPU o GPU.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Demucs usa FFmpeg para leer formatos de audio adicionales y para exportar en FLAC.",
+     "orden_instalacion": "Instala FFmpeg; después ejecuta `demucs --flac cancion.mp3`."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Demucs se ejecuta sobre PyTorch; torchaudio incluye además una implementación de Hybrid Demucs.",
+     "orden_instalacion": "Instala PyTorch para tu dispositivo; después instala Demucs."
+    },
+    {
+     "id": "ultimate-vocal-remover",
+     "motivo": "Ultimate Vocal Remover incluye los modelos Demucs v3 y v4 en una interfaz gráfica.",
+     "orden_instalacion": "Instala UVR; después descarga los modelos Demucs desde su gestor de modelos."
+    },
+    {
+     "id": "audacity",
+     "motivo": "Los plugins OpenVINO de Intel para Audacity usan Demucs v4 para separar pistas dentro del editor.",
+     "orden_instalacion": "Instala Audacity y los plugins OpenVINO; después aplica Music Separation."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/adefossez/demucs/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "adefossez/demucs",
+    "archived": false,
+    "pushed_at": "2026-10-26",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "yue": {
+   "que_es": "Modelo de investigación de código abierto del proyecto Multimodal Art Projection (M-A-P). Desde septiembre de 2026 el repositorio aloja YuE2; el YuE original se conserva en la rama YuE-v1. Código, skill y documentación son Apache-2.0; los pesos son CC BY-NC 4.0 con permiso adicional de los creadores.",
+   "que_hace": "Genera canciones completas con voz y acompañamiento a partir de letra y estilo, escribe primero una partitura ABC editable, hace covers zero-shot a partir de grabaciones (transcritas con SheetSage2), genera música instrumental y permite editar la composición de forma conversacional. Incluye la skill `yue2-music` para agentes.",
+   "como_lo_hace": "Un backbone AR–NAR Mixture-of-Transformers predice partitura y tokens semánticos, y genera latentes acústicos con flow matching que un VAE decodifica a audio estéreo de 48 kHz. Requiere Linux, Python 3.12 y GPU NVIDIA con BF16 y 24 GB de VRAM; los pesos se descargan de Hugging Face al primer uso.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "YuE2 incluye la skill `yue2-music` para agentes de código que orquesta generación, covers y edición de partituras (el README recomienda GPT-6 Astra como agente).",
+     "orden_instalacion": "Instala YuE2 con `pip install .`; después importa `skills/yue2-music/` en el directorio de skills del agente."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "YuE2 se ejecuta sobre PyTorch con CUDA en GPU NVIDIA.",
+     "orden_instalacion": "Instala PyTorch con CUDA; después instala YuE2."
+    },
+    {
+     "id": "audacity",
+     "motivo": "Las canciones generadas por YuE2 se pueden recortar, mezclar y masterizar en Audacity (combinación por arquitectura).",
+     "orden_instalacion": "Genera el audio con YuE2; después ábrelo en Audacity para editarlo."
+    }
+   ],
+   "notas": "Alternativa abierta de ACE-Step 1.5 y AudioCraft (MusicGen). El README dice que YuE2 compite con Suno v5/v6 en WildSongBench [DATO NO VERIFICADO: benchmark del propio equipo].",
+   "fuentes": [
+    "https://github.com/multimodal-art-projection/YuE/blob/main/README.md",
+    "https://github.com/multimodal-art-projection/YuE/blob/main/MODEL_LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "multimodal-art-projection/YuE",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "yue2-v0.1.6 (2026-09-09)"
+   }
+  },
+  "ten-framework": {
+   "que_es": "Framework de código abierto impulsado por Agora para agentes de voz conversacionales. Muy activo. Se publica con licencia Apache-2.0 con restricciones adicionales, por lo que no es una licencia OSI.",
+   "que_hace": "Conecta en tiempo real reconocimiento de voz, LLM, síntesis de voz, detección de actividad de voz y de turnos (TEN VAD, TEN Turn Detection), avatares y herramientas en un grafo de extensiones. Incluye TMAN Designer para editar el grafo sin código, un agente de ejemplo con interfaz web y extensiones para muchos proveedores.",
+   "como_lo_hace": "Runtime con extensiones en C++, Go, Python y Node.js. Los ejemplos se ejecutan en un contenedor de desarrollo con Docker Compose o en Codespaces y se despliegan como imagen Docker. El transporte en tiempo real usa Agora RTC por defecto.",
+   "combina_con": [
+    {
+     "id": "dify",
+     "motivo": "TEN incluye una extensión que conecta el agente de voz con aplicaciones de Dify.",
+     "orden_instalacion": "Crea la app en Dify; después configura la extensión de Dify en el grafo de TEN con su clave."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "TEN incluye una extensión y un ejemplo de agente de voz que delega tareas en OpenClaw.",
+     "orden_instalacion": "Instala OpenClaw; después configura su extensión en TEN."
+    },
+    {
+     "id": "vibevoice",
+     "motivo": "TEN incluye una extensión de síntesis de voz con VibeVoice.",
+     "orden_instalacion": "Despliega VibeVoice; después elige su extensión TTS en el grafo."
+    },
+    {
+     "id": "whisper",
+     "motivo": "TEN incluye extensiones de reconocimiento de voz basadas en Whisper.",
+     "orden_instalacion": "Configura la extensión ASR de Whisper; después úsala en lugar de Deepgram."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "El ejemplo rápido de TEN usa ElevenLabs para la síntesis de voz (requiere clave).",
+     "orden_instalacion": "Crea una clave de ElevenLabs; después ponla en `ELEVENLABS_TTS_KEY` del `.env`."
+    }
+   ],
+   "notas": "Alternativa de Pipecat, LiveKit Agents y Dograh; revisa la licencia antes de usarlo en productos.",
+   "fuentes": [
+    "https://github.com/TEN-framework/ten-framework/blob/main/README.md",
+    "https://github.com/TEN-framework/ten-framework/blob/main/LICENSE",
+    "https://github.com/TEN-framework/ten-framework/tree/main/ai_agents/agents/ten_packages/extension"
+   ],
+   "github": {
+    "name_with_owner": "TEN-framework/ten-framework",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "0.11.75 (2026-11-03)"
+   }
+  },
+  "motion-canvas": {
+   "que_es": "Biblioteca de código abierto (MIT) orientada a vídeos explicativos. Popular; el desarrollo se ha ralentizado (última versión publicada v3.17.2, diciembre de 2024; último push en julio de 2026).",
+   "que_hace": "Permite programar animaciones vectoriales (formas, texto, código, imágenes) con TypeScript y previsualizarlas en un editor web, con línea de tiempo, sincronización con audio y renderizado a secuencias de imágenes o vídeo.",
+   "como_lo_hace": "Las escenas se escriben como funciones generadoras en TypeScript; el editor corre sobre Vite en el navegador. El paquete `@motion-canvas/ffmpeg` exporta directamente a vídeo con FFmpeg.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "El exportador `@motion-canvas/ffmpeg` renderiza el proyecto directamente a vídeo con FFmpeg.",
+     "orden_instalacion": "Instala `@motion-canvas/ffmpeg` y añádelo al proyecto; después elige el exportador de vídeo."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Una narración generada con Kokoro puede usarse como pista de audio para sincronizar las animaciones (combinación por arquitectura).",
+     "orden_instalacion": "Genera la narración con Kokoro; después cárgala como audio del proyecto de Motion Canvas."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Las escenas son código TypeScript que un agente de código puede escribir y modificar (combinación por arquitectura).",
+     "orden_instalacion": "Crea el proyecto con `npm init @motion-canvas@latest`; después pide al agente las escenas."
+    }
+   ],
+   "notas": "Alternativa de Revideo (fork orientado a renderizado programático) y Remotion (React).",
+   "fuentes": [
+    "https://github.com/motion-canvas/motion-canvas/blob/main/README.md",
+    "https://motion-canvas.io/docs/quickstart",
+    "https://github.com/motion-canvas/motion-canvas/tree/main/packages/ffmpeg"
+   ],
+   "github": {
+    "name_with_owner": "motion-canvas/motion-canvas",
+    "archived": false,
+    "pushed_at": "2026-07-02",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.17.2 (2024-12-14)"
+   }
+  },
+  "revideo": {
+   "que_es": "Framework de código abierto (MIT) mantenido por Midrender (es el motor de su producto), derivado históricamente de Motion Canvas. Actividad moderada: el último push es de julio de 2026.",
+   "que_hace": "Permite definir vídeos con TypeScript (escenas, texto, vídeo, audio, imágenes) y renderizarlos sin interfaz desde código o una API, con reproductor React para previsualizar en la web y plantillas de ejemplo.",
+   "como_lo_hace": "Las escenas son funciones generadoras en TypeScript; el renderizado headless se ejecuta donde haya Node y un navegador headless (incluido Google Cloud Run) y puede repartirse entre workers. El paquete `@revideo/ffmpeg` usa fluent-ffmpeg con binarios de FFmpeg instalados por npm. Se crea un proyecto con `npm init @revideo@latest`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El README de Revideo indica que, como una escena es TypeScript plano, Claude o Codex pueden generarla a partir de un prompt.",
+     "orden_instalacion": "Crea el proyecto con `npm init @revideo@latest`; después abre la carpeta con el agente."
+    },
+    {
+     "id": "codex",
+     "motivo": "El README de Revideo indica que Codex (o Claude) puede generar una escena a partir de un prompt.",
+     "orden_instalacion": "Crea el proyecto; después pide a Codex las escenas."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "El paquete `@revideo/ffmpeg` usa FFmpeg (vía fluent-ffmpeg y @ffmpeg-installer) para codificar y procesar audio y vídeo.",
+     "orden_instalacion": "Crea el proyecto (las dependencias instalan los binarios de FFmpeg); después renderiza con `renderVideo()`."
+    }
+   ],
+   "notas": "Alternativa de Motion Canvas y Remotion; frente a Remotion, su licencia MIT no exige licencia comercial para empresas.",
+   "fuentes": [
+    "https://github.com/midrender/revideo/blob/main/README.md",
+    "https://github.com/midrender/revideo/blob/main/packages/ffmpeg/package.json"
+   ],
+   "github": {
+    "name_with_owner": "midrender/revideo",
+    "archived": false,
+    "pushed_at": "2026-07-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "d2": {
+   "que_es": "Lenguaje y herramienta de código abierto (MPL-2.0) de Terrastruct. Muy popular y activo. Su motor TALA, antes un componente aparte, ahora se incluye en el repositorio bajo la misma licencia.",
+   "que_hace": "Convierte descripciones de texto en diagramas (arquitectura, secuencia, tablas SQL, grids, clases) con temas oficiales, modo boceto, etiquetas LaTeX, autoformato y exportación a SVG, PNG, GIF, PDF y PPTX. Incluye modo `--watch` con vista previa en vivo.",
+   "como_lo_hace": "Está escrito en Go; incluye tres motores de layout (Dagro, port de Dagre; elk-go, port de ELK; y TALA, opcional) sin dependencias externas. Se instala con un script, con Go o con gestores de paquetes, y también se usa como biblioteca Go.",
+   "combina_con": [
+    {
+     "id": "kroki",
+     "motivo": "Kroki incluye D2 entre los lenguajes que renderiza mediante su API HTTP unificada.",
+     "orden_instalacion": "Despliega Kroki; después envía el código D2 a `/d2/svg`."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Hay filtros de Pandoc de la comunidad (d2-filter, pandoc-d2-filter) que renderizan bloques D2 dentro de documentos.",
+     "orden_instalacion": "Instala D2 y el filtro; después convierte con `pandoc --filter`."
+    },
+    {
+     "id": "logseq",
+     "motivo": "El plugin comunitario Logseq-D2 renderiza bloques D2 en las notas de Logseq.",
+     "orden_instalacion": "Instala D2 y el plugin Logseq-D2; después escribe bloques D2 en tus páginas."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Los diagramas D2 son texto que un agente de código puede generar y mantener junto al código (combinación por arquitectura).",
+     "orden_instalacion": "Instala D2; después pide al agente el archivo .d2 y renderízalo con `d2`."
+    }
+   ],
+   "notas": "Alternativa de PlantUML y Mermaid; D2 prioriza la legibilidad del código y la calidad del layout.",
+   "fuentes": [
+    "https://github.com/d2lang/d2/blob/master/README.md",
+    "https://github.com/d2lang/d2/blob/master/d2layouts/d2talalayout/README.md"
+   ],
+   "github": {
+    "name_with_owner": "d2lang/d2",
+    "archived": false,
+    "pushed_at": "2026-10-11",
+    "license": "MPL-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.9.0 (2026-09-07)"
+   }
+  },
+  "drawio": {
+   "que_es": "Editor de diagramas de código abierto (Apache-2.0) de JGraph, muy usado y activo. Los iconos, plantillas y librerías de formas tienen condiciones adicionales. El proyecto no acepta contribuciones externas.",
+   "que_hace": "Permite crear diagramas de flujo, UML, ER, redes, arquitectura cloud, BPMN y organigramas con más de 10.000 formas, importar Mermaid, PlantUML y CSV, colaborar mediante almacenamiento en la nube y exportar a PNG, SVG, PDF y XML.",
+   "como_lo_hace": "Funciona por completo en el cliente (navegador o draw.io Desktop con Electron); los diagramas se guardan como XML en archivos .drawio. El servidor oficial `jgraph/drawio-mcp` permite a asistentes de IA crear y abrir diagramas.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El repositorio oficial jgraph/drawio-mcp ofrece un servidor MCP y un plugin para Claude Code que generan diagramas .drawio editables.",
+     "orden_instalacion": "Instala draw.io Desktop (para exportar); después añade el plugin o el MCP de draw.io al agente."
+    },
+    {
+     "id": "mermaid",
+     "motivo": "draw.io importa diagramas Mermaid y los convierte en diagramas editables.",
+     "orden_instalacion": "Escribe el diagrama en Mermaid; después usa Organizar > Insertar > Avanzado > Mermaid en draw.io."
+    },
+    {
+     "id": "plantuml",
+     "motivo": "draw.io puede insertar diagramas PlantUML desde el menú avanzado.",
+     "orden_instalacion": "Escribe el diagrama PlantUML; después insértalo con Organizar > Insertar > Avanzado > PlantUML."
+    },
+    {
+     "id": "kroki",
+     "motivo": "Kroki renderiza diagramas de Diagrams.net (draw.io) de forma experimental desde su API.",
+     "orden_instalacion": "Despliega Kroki con su contenedor complementario; después envía el XML a `/diagramsnet`."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/jgraph/drawio/blob/dev/README.md",
+    "https://github.com/jgraph/drawio-mcp/blob/main/README.md",
+    "https://github.com/yuzutech/kroki/blob/main/README.adoc"
+   ],
+   "github": {
+    "name_with_owner": "jgraph/drawio",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v32.6.10 (2026-11-04)"
+   }
+  },
+  "plantuml": {
+   "que_es": "Proyecto de código abierto veterano y muy activo, publicado con varias licencias a elegir (GPL, LGPL, Apache, EPL o MIT) según la distribución. Muy integrado en wikis, IDEs y herramientas de documentación.",
+   "que_hace": "Genera diagramas de secuencia, casos de uso, clases, objetos, actividad, componentes, despliegue, estados y tiempo, además de diagramas no UML (JSON, YAML, redes, wireframes, arquitectura, Gantt, mapas mentales, WBS, EBNF) desde texto.",
+   "como_lo_hace": "Es un programa Java que se ejecuta como JAR, servidor web o biblioteca; usa Graphviz para algunos layouts. El paquete `@plantuml/mcp-js` es un servidor MCP en Node.js que renderiza y valida diagramas sin Java.",
+   "combina_con": [
+    {
+     "id": "kroki",
+     "motivo": "Kroki renderiza PlantUML (y C4 con PlantUML) mediante su API HTTP.",
+     "orden_instalacion": "Despliega Kroki; después envía el código a `/plantuml/svg`."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El servidor MCP oficial `@plantuml/mcp-js` permite a asistentes de IA renderizar y revisar diagramas PlantUML.",
+     "orden_instalacion": "Añade `npx @plantuml/mcp-js` como servidor MCP del agente; después pide los diagramas."
+    },
+    {
+     "id": "drawio",
+     "motivo": "draw.io puede insertar diagramas PlantUML desde su menú avanzado.",
+     "orden_instalacion": "Escribe el PlantUML; después insértalo en draw.io para combinarlo con otras formas."
+    }
+   ],
+   "notas": "Alternativa de D2 y Mermaid; PlantUML cubre más tipos de diagramas UML formales.",
+   "fuentes": [
+    "https://github.com/plantuml/plantuml/blob/master/README.md",
+    "https://www.npmjs.com/package/@plantuml/mcp-js"
+   ],
+   "github": {
+    "name_with_owner": "plantuml/plantuml",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "LGPL-3.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.2026.10 (2026-11-11)"
+   }
+  },
+  "kroki": {
+   "que_es": "Servidor de código abierto (MIT) de Yuzutech, con instancia pública gratuita en kroki.io y despliegue propio con Docker. Activo.",
+   "que_hace": "Ofrece una API unificada para renderizar BlockDiag, BPMN, Bytefield, C4 (con PlantUML), D2, DBML, Diagrams.net (experimental), Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, Pikchr, PlantUML, SvgBob, Vega, WaveDrom y otros a SVG, PNG o PDF según el tipo.",
+   "como_lo_hace": "El gateway en Java incluye la mayoría de herramientas; Mermaid, BPMN, Excalidraw y Diagrams.net se ejecutan en contenedores complementarios (Node.js) que se conectan por variables de entorno en Docker Compose. Los diagramas se envían por POST o codificados en la URL de un GET.",
+   "combina_con": [
+    {
+     "id": "plantuml",
+     "motivo": "Kroki incluye PlantUML (y C4-PlantUML) en su servidor principal.",
+     "orden_instalacion": "Ejecuta Kroki; después usa el endpoint `/plantuml/svg`."
+    },
+    {
+     "id": "d2",
+     "motivo": "Kroki incluye D2 entre sus lenguajes soportados.",
+     "orden_instalacion": "Ejecuta Kroki; después usa el endpoint `/d2/svg`."
+    },
+    {
+     "id": "mermaid",
+     "motivo": "Kroki renderiza Mermaid con el contenedor complementario `yuzutech/kroki-mermaid`.",
+     "orden_instalacion": "Despliega Kroki y `kroki-mermaid` con Docker Compose; después usa `/mermaid/svg`."
+    },
+    {
+     "id": "excalidraw",
+     "motivo": "Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`.",
+     "orden_instalacion": "Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`."
+    },
+    {
+     "id": "drawio",
+     "motivo": "Kroki renderiza diagramas de Diagrams.net (draw.io) de forma experimental con un contenedor complementario.",
+     "orden_instalacion": "Despliega Kroki con el complemento de Diagrams.net; después usa `/diagramsnet/svg`."
+    }
+   ],
+   "notas": "Útil como backend para Asciidoctor, MkDocs y otros generadores; autoalojarlo evita enviar diagramas a kroki.io.",
+   "fuentes": [
+    "https://github.com/yuzutech/kroki/blob/main/README.adoc",
+    "https://docs.kroki.io/kroki/setup/install/"
+   ],
+   "github": {
+    "name_with_owner": "yuzutech/kroki",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.36.0 (2026-11-09)"
+   }
+  },
+  "flaresolverr": {
+   "que_es": "Servidor de código abierto (MIT) mantenido por la comunidad (ngosang y colaboradores), muy usado junto a indexadores multimedia. Activo, aunque depende de que Cloudflare no cambie sus desafíos.",
+   "que_hace": "Recibe peticiones por una API HTTP, abre la URL en un Chrome automatizado, espera a que se resuelva el desafío de Cloudflare o DDoS-GUARD (o a que expire) y devuelve el HTML y las cookies. Admite sesiones persistentes, proxies y peticiones POST.",
+   "como_lo_hace": "Está escrito en Python y usa Selenium con undetected-chromedriver para controlar Chrome. Se ejecuta normalmente con Docker; también hay binarios y ejecución desde el código con Python 3.11 o superior.",
+   "combina_con": [
+    {
+     "id": "selenium",
+     "motivo": "FlareSolverr usa Selenium con undetected-chromedriver para controlar Chrome internamente.",
+     "orden_instalacion": "Ejecuta FlareSolverr con Docker (incluye Selenium y Chrome); después llama a su API."
+    },
+    {
+     "id": "scrapy",
+     "motivo": "Un spider de Scrapy puede pedir a FlareSolverr la página o las cookies de un sitio autorizado y continuar con peticiones normales (combinación por arquitectura).",
+     "orden_instalacion": "Despliega FlareSolverr; después llama a su API desde el spider o un middleware."
+    },
+    {
+     "id": "crawlee-python",
+     "motivo": "Un crawler HTTP de Crawlee puede obtener de FlareSolverr las cookies de un sitio autorizado antes de continuar (combinación por arquitectura).",
+     "orden_instalacion": "Despliega FlareSolverr; después usa sus cookies en las peticiones de Crawlee."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/FlareSolverr/FlareSolverr/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "FlareSolverr/FlareSolverr",
+    "archived": false,
+    "pushed_at": "2026-10-24",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.5.2 (2026-09-12)"
+   }
+  },
+  "camoufox": {
+   "que_es": "Navegador antidetección de código abierto creado por daijro. El navegador es MPL-2.0 y los paquetes de lanzamiento de Python son MIT. Muy activo; el propio README avisa de que está en desarrollo.",
+   "que_hace": "Lanza un Firefox modificado con una identidad de dispositivo distinta y coherente en cada arranque (pantalla, GPU, WebGL, fuentes, audio, geolocalización según el proxy), reportada de forma nativa en lugar de con sobrescrituras en JavaScript, y lo expone como navegador de Playwright.",
+   "como_lo_hace": "Parchea el código de Firefox y usa el protocolo Juggler en un mundo aislado para que la página no detecte la automatización. El lanzador toma la identidad de un generador de huellas (fpgen) y la pasa al navegador. Hay paquetes para Python y para Node.js (`camoufox` con `playwright-core`).",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Camoufox se controla con Playwright: el lanzador devuelve un `Browser` de Playwright normal.",
+     "orden_instalacion": "Instala Camoufox y descarga el navegador; después usa tu código de Playwright con el navegador que devuelve."
+    },
+    {
+     "id": "crawlee-python",
+     "motivo": "Crawlee para Python documenta un ejemplo de PlaywrightCrawler con Camoufox.",
+     "orden_instalacion": "Instala `crawlee[playwright]` y Camoufox; después pasa Camoufox como navegador del crawler."
+    },
+    {
+     "id": "crawlee",
+     "motivo": "Crawlee para Node.js incluye una guía para evitar bloqueos usando Camoufox con su PlaywrightCrawler.",
+     "orden_instalacion": "Instala `camoufox` y Crawlee; después configura el lanzador de Camoufox en el crawler."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/daijro/camoufox/blob/main/README.md",
+    "https://crawlee.dev/python/docs/examples/playwright-crawler-with-camoufox",
+    "https://github.com/apify/crawlee/blob/master/docs/guides/avoid-blocking-camoufox.ts"
+   ],
+   "github": {
+    "name_with_owner": "daijro/camoufox",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MPL-2.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "v158.0.1-beta.41 (2026-10-29)"
+   }
+  },
+  "nanobrowser": {
+   "que_es": "Extensión de código abierto (Apache-2.0), gratuita y alternativa abierta a agentes web comerciales. Muy activa.",
+   "que_hace": "Recibe tareas en lenguaje natural en el panel lateral y las ejecuta en el navegador: lee páginas, hace clic, escribe y cambia de pestaña. Ejecuta varias tareas a la vez en grupos de pestañas, permite elegir modo Ask o Auto y reglas por sitio, y conserva historial.",
+   "como_lo_hace": "Funciona por completo en el navegador; las claves se guardan localmente y solo se envían a su proveedor. Controla la página con la API `chrome.debugger` y usa Puppeteer para seguir los marcos. Se instala desde la Chrome Web Store o se compila con Node.js 24 y pnpm.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Nanobrowser admite Ollama como proveedor local de modelos.",
+     "orden_instalacion": "Instala Ollama y configura `OLLAMA_ORIGINS` para permitir la extensión; después elige Ollama en los ajustes."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "Nanobrowser se conecta al servidor de llama.cpp mediante su proveedor compatible con OpenAI.",
+     "orden_instalacion": "Arranca `llama-server`; después añade su URL como proveedor compatible con OpenAI."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Nanobrowser se conecta a vLLM mediante su proveedor compatible con OpenAI.",
+     "orden_instalacion": "Arranca el servidor de vLLM; después añade su URL como proveedor compatible con OpenAI."
+    },
+    {
+     "id": "puppeteer",
+     "motivo": "Nanobrowser usa Puppeteer para seguir los marcos de la página sobre la API `chrome.debugger`.",
+     "orden_instalacion": "No requiere instalación aparte: Puppeteer va incluido en la extensión."
+    }
+   ],
+   "notas": "Con modelos locales, el README recomienda tareas simples y un contexto de 16k tokens o más.",
+   "fuentes": [
+    "https://github.com/nanobrowser/nanobrowser/blob/master/README.md",
+    "https://github.com/nanobrowser/nanobrowser/blob/master/PRIVACY.md"
+   ],
+   "github": {
+    "name_with_owner": "nanobrowser/nanobrowser",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.3.0 (2026-10-15)"
+   }
+  },
+  "steel-browser": {
+   "que_es": "Proyecto de código abierto (Apache-2.0) de Steel, la base autoalojable de su servicio comercial Steel Cloud. Muy activo.",
+   "que_hace": "Ofrece navegadores Chrome como servicio: sesiones con estado (cookies, almacenamiento local), proxies con rotación de IP, extensiones de Chrome, registro de peticiones, interfaz para ver y repetir sesiones, y endpoints para scraping, capturas y PDF.",
+   "como_lo_hace": "Servidor Node.js que controla Chrome con Puppeteer y CDP; los clientes se conectan por CDP con Puppeteer, Playwright o Selenium. Se ejecuta con Docker o Docker Compose y tiene SDK de Node y Python compatibles con la versión autoalojada.",
+   "combina_con": [
+    {
+     "id": "puppeteer",
+     "motivo": "Steel controla Chrome con Puppeteer y la documentación muestra cómo conectar Puppeteer a una sesión.",
+     "orden_instalacion": "Arranca Steel con Docker; después conecta Puppeteer a la URL CDP de la sesión."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Puedes conectar Playwright (Node o Python) a una sesión de Steel por CDP.",
+     "orden_instalacion": "Arranca Steel; después usa `connectOverCDP` con la URL de la sesión."
+    },
+    {
+     "id": "selenium",
+     "motivo": "Steel crea sesiones compatibles con el protocolo WebDriver de Selenium con la opción `isSelenium`.",
+     "orden_instalacion": "Arranca Steel y crea la sesión con `isSelenium: true`; después conecta tu cliente de Selenium."
+    },
+    {
+     "id": "browser-use",
+     "motivo": "El cookbook oficial de Steel incluye ejemplos de browser-use sobre sesiones de Steel.",
+     "orden_instalacion": "Arranca Steel; después sigue el ejemplo `browser-use` del cookbook."
+    },
+    {
+     "id": "stagehand",
+     "motivo": "El cookbook oficial de Steel incluye ejemplos de Stagehand en Python y TypeScript.",
+     "orden_instalacion": "Arranca Steel; después sigue el ejemplo `stagehand-ts` o `stagehand-py` del cookbook."
+    },
+    {
+     "id": "webdriverio",
+     "motivo": "Combinación recíproca: WebdriverIO lo enlaza como «Steel expone sesiones compatibles con el protocolo WebDriver a las que puede conectarse un cliente estándar como WebdriverIO (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WebdriverIO: Arranca Steel y crea una sesión con `isSelenium`; después apunta WebdriverIO a ese endpoint.",
+     "reciproca_de": "webdriverio"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/steel-dev/steel-browser/blob/main/README.md",
+    "https://github.com/steel-dev/steel-cookbook/tree/main/examples"
+   ],
+   "github": {
+    "name_with_owner": "steel-dev/steel-browser",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.5.5-beta (2026-10-31)"
+   }
+  },
+  "cypress": {
+   "que_es": "Framework de pruebas de código abierto (MIT) de Cypress.io, uno de los más usados en pruebas de front-end. Muy activo. La empresa ofrece Cypress Cloud como servicio comercial.",
+   "que_hace": "Ejecuta pruebas end-to-end y de componentes en Chrome, Edge, Electron, Firefox y WebKit (experimental), con viaje en el tiempo por los pasos, esperas automáticas, intercepción de red, capturas, grabación de vídeo y depuración con las herramientas del navegador. Incluye funciones de IA como Cypress Studio y `cy.prompt`.",
+   "como_lo_hace": "Se instala como dependencia de desarrollo con npm, yarn o pnpm; la app de escritorio (Electron) lanza el navegador y ejecuta las pruebas en el mismo bucle que la aplicación. Graba vídeos con FFmpeg incluido. Cypress Cloud recibe resultados si conectas el proyecto.",
+   "combina_con": [
+    {
+     "id": "storybook",
+     "motivo": "La documentación de Storybook explica cómo reutilizar historias de componentes en pruebas end-to-end con Cypress.",
+     "orden_instalacion": "Publica o arranca Storybook; después visita las historias desde las pruebas de Cypress."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Cypress Cloud MCP y el plugin `cypress` (con las Cypress AI Skills) dan a Claude Code acceso a los resultados de las pruebas; requiere cuenta de Cypress Cloud.",
+     "orden_instalacion": "Conecta el proyecto a Cypress Cloud; después instala el plugin `cypress` en Claude Code."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Cypress graba vídeos de las ejecuciones con FFmpeg, que incluye como dependencia.",
+     "orden_instalacion": "No requiere instalación aparte; activa `video: true` en la configuración."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/cypress-io/cypress/blob/develop/README.md",
+    "https://storybook.js.org/docs/writing-tests/integrations/stories-in-end-to-end-tests",
+    "https://docs.cypress.io/cloud/integrations/cloud-mcp",
+    "https://github.com/cypress-io/cypress/blob/develop/packages/server/package.json"
+   ],
+   "github": {
+    "name_with_owner": "cypress-io/cypress",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v16.3.0 (2026-11-10)"
+   }
+  },
+  "webdriverio": {
+   "que_es": "Proyecto de código abierto (MIT) de la OpenJS Foundation, mantenido por la comunidad. Muy activo.",
+   "que_hace": "Automatiza navegadores y apps móviles para pruebas end-to-end, unitarias y de componentes en el navegador, con soporte de Mocha, Jasmine y Cucumber, servicios (Appium, DevTools, nubes como Sauce Labs o BrowserStack), reporters y un servidor MCP (`@wdio/mcp`) para que asistentes de IA controlen navegadores y apps.",
+   "como_lo_hace": "Paquetes Node.js en un monorepo: `webdriver` implementa los protocolos W3C WebDriver y WebDriver BiDi, `webdriverio` ofrece la API de alto nivel y `@wdio/cli` el test runner. Se configura con el asistente `create-wdio`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El servidor MCP oficial `@wdio/mcp` permite a asistentes de IA automatizar navegadores y apps móviles con WebdriverIO.",
+     "orden_instalacion": "Añade `@wdio/mcp` como servidor MCP del agente; después pide la automatización."
+    },
+    {
+     "id": "steel-browser",
+     "motivo": "Steel expone sesiones compatibles con el protocolo WebDriver a las que puede conectarse un cliente estándar como WebdriverIO (combinación por arquitectura).",
+     "orden_instalacion": "Arranca Steel y crea una sesión con `isSelenium`; después apunta WebdriverIO a ese endpoint."
+    },
+    {
+     "id": "ladybird",
+     "motivo": "Ladybird incluye un servicio WebDriver al que pueden conectarse clientes estándar como WebdriverIO para probar el motor (combinación por arquitectura).",
+     "orden_instalacion": "Compila Ladybird con su servicio WebDriver; después configura WebdriverIO para conectarse a él."
+    },
+    {
+     "id": "servo",
+     "motivo": "Servo incluye un servidor WebDriver al que pueden conectarse clientes estándar como WebdriverIO (combinación por arquitectura).",
+     "orden_instalacion": "Arranca Servo con WebDriver activado; después conecta WebdriverIO a su puerto."
+    }
+   ],
+   "notas": "Alternativa de Cypress, Playwright, Selenium y Puppeteer; destaca por usar protocolos estándar y cubrir apps móviles.",
+   "fuentes": [
+    "https://github.com/webdriverio/webdriverio/blob/main/README.md",
+    "https://github.com/webdriverio/mcp",
+    "https://webdriver.io/docs/gettingstarted"
+   ],
+   "github": {
+    "name_with_owner": "webdriverio/webdriverio",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v10.2.0 (2026-11-06)"
+   }
+  },
+  "ladybird": {
+   "que_es": "Navegador de código abierto (BSD-2-Clause) desarrollado por Ladybird Browser Initiative, organización sin ánimo de lucro, a partir de componentes de SerenityOS. Muy popular y activo; está en pre-alfa.",
+   "que_hace": "Construye un navegador completo con motor propio: renderizado web (LibWeb), JavaScript (LibJS), WebAssembly (LibWasm), TLS, HTTP, gráficos, Unicode y reproducción multimedia, con aislamiento de procesos por sitio y un servicio WebDriver para pruebas automatizadas.",
+   "como_lo_hace": "Está escrito en C++ con arquitectura multiproceso: proceso de interfaz, procesos WebContent aislados, y procesos auxiliares de red, decodificación de imágenes, composición y multimedia. Se compila desde el código; las dependencias de terceros (como FFmpeg) se gestionan con vcpkg.",
+   "combina_con": [
+    {
+     "id": "selenium",
+     "motivo": "Ladybird incluye un servicio WebDriver al que pueden conectarse clientes de Selenium para automatizar pruebas (combinación por arquitectura).",
+     "orden_instalacion": "Compila Ladybird con su servicio WebDriver; después conecta Selenium a ese endpoint."
+    },
+    {
+     "id": "webdriverio",
+     "motivo": "Ladybird incluye un servicio WebDriver al que puede conectarse WebdriverIO (combinación por arquitectura).",
+     "orden_instalacion": "Compila Ladybird; después configura WebdriverIO con el endpoint de su servicio WebDriver."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Ladybird usa FFmpeg (dependencia gestionada con vcpkg) para decodificar audio y vídeo.",
+     "orden_instalacion": "Compila Ladybird; vcpkg descarga y compila FFmpeg automáticamente."
+    }
+   ],
+   "notas": "Alternativa de Servo como motor de navegador independiente.",
+   "fuentes": [
+    "https://github.com/LadybirdBrowser/ladybird/blob/master/README.md",
+    "https://github.com/LadybirdBrowser/ladybird/tree/master/Services/WebDriver",
+    "https://github.com/LadybirdBrowser/ladybird/blob/master/vcpkg.json"
+   ],
+   "github": {
+    "name_with_owner": "LadybirdBrowser/ladybird",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-2-Clause",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "servo": {
+   "que_es": "Motor de navegador de código abierto (MPL-2.0) iniciado por Mozilla y alojado ahora en Linux Foundation Europe. Muy activo; sigue considerándose un prototipo. Su política prohíbe contribuciones generadas con modelos de lenguaje.",
+   "que_hace": "Renderiza páginas web (HTML, CSS, JavaScript con SpiderMonkey, WebGL, WebGPU) con un motor paralelo y seguro en memoria, pensado para incrustarse en aplicaciones. Incluye un navegador de demostración, servidor WebDriver y soporte de devtools.",
+   "como_lo_hace": "Está escrito en Rust y se compila con la herramienta `mach`. Se divide en componentes (layout, script, net, webgpu, webdriver_server…); la red admite configurar un proxy HTTP mediante preferencias (`network_http_proxy_uri`).",
+   "combina_con": [
+    {
+     "id": "selenium",
+     "motivo": "Servo incluye un servidor WebDriver al que pueden conectarse clientes de Selenium (combinación por arquitectura).",
+     "orden_instalacion": "Arranca Servo con WebDriver activado; después conecta Selenium a su puerto."
+    },
+    {
+     "id": "webdriverio",
+     "motivo": "Servo incluye un servidor WebDriver al que puede conectarse WebdriverIO (combinación por arquitectura).",
+     "orden_instalacion": "Arranca Servo con WebDriver activado; después configura WebdriverIO para ese puerto."
+    },
+    {
+     "id": "mitmproxy",
+     "motivo": "Servo permite fijar un proxy HTTP con la preferencia `network_http_proxy_uri`, de modo que mitmproxy puede inspeccionar su tráfico (combinación por arquitectura).",
+     "orden_instalacion": "Arranca mitmproxy; después arranca Servo con la preferencia de proxy apuntando a él."
+    }
+   ],
+   "notas": "Alternativa de Ladybird como motor independiente; Servo se orienta más a incrustar que a ser un navegador completo.",
+   "fuentes": [
+    "https://github.com/servo/servo/blob/main/README.md",
+    "https://book.servo.org/policy/ai-usage.html",
+    "https://github.com/servo/servo/blob/main/components/config/prefs.rs"
+   ],
+   "github": {
+    "name_with_owner": "servo/servo",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MPL-2.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.8.0 (2026-11-09)"
+   }
+  }
+ }
+}

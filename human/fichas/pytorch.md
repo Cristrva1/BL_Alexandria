@@ -30,7 +30,13 @@ Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o C
 | [diffusers](diffusers.md) | Modelos de difusión sobre PyTorch. | Instala Diffusers. |
 | [vLLM](vllm.md) | Inferencia en producción construida sobre PyTorch. | Instala vLLM con la versión de PyTorch compatible. |
 
-**Notas:** Sin alternativas declaradas; compite con tensorflow (solo anotado).
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (34). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[4D-Humans](4d-humans.md) · [Accelerate](accelerate.md) · [awesome-machine-learning](awesome-machine-learning.md) · [BentoML](bentoml.md) · [bionemo-recipes](bionemo-recipes.md) · [chaiNNer](chainner.md) · [cosmos](cosmos.md) · [Demucs](demucs.md) · [Detectron2](detectron2.md) · [F5-TTS](f5-tts.md) · [FinGPT](fingpt.md) · [Genesis World](genesis-world.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [JupyterLab](jupyterlab.md) · [Keras 3](keras.md) · [kornia](kornia.md) · [labml.ai Annotated Paper Implementations](annotated-dl-papers.md) · [LLM Course](llm-course.md) · [llm.c](llm-c.md) · [LLMs from Scratch](llms-from-scratch.md) · [LTX-2](ltx-2.md) · [mmpose](mmpose.md) · [nanochat](nanochat.md) · [NeMo Speech](nemo.md) · [pyannote.audio](pyannote-audio.md) · [PyTorch Lightning](pytorch-lightning.md) · [Ray](ray.md) · [TimesFM](timesfm.md) · [torchtune](torchtune.md) · [train-llm-from-scratch](train-llm-from-scratch.md) · [warp](warp.md) · [WHAM](wham.md) · [whisper](whisper.md) · [YuE2](yue.md)
+
+**Notas:** Alternativa (elige una): tensorflow.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -100,6 +106,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python compatible; paquete para CPU o tu GPU; entorno aislado
 - **Etiquetas:** `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [tensorflow](tensorflow.md) | 202k | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
+| [JAX](jax.md) | 36.6k | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
 
 ## Enlaces
 

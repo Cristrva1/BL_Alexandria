@@ -27,6 +27,18 @@
      "id": "claude-code",
      "motivo": "Agente sobre un modelo local vía `unsloth start claude`.",
      "orden_instalacion": "Instala Claude Code y lanza con un modelo local."
+    },
+    {
+     "id": "llm-course",
+     "motivo": "Combinación recíproca: LLM Course lo enlaza como «Fine-tuning eficiente usado en el notebook 'Fine-tune Llama 3.1 with Unsloth'».",
+     "orden_instalacion": "Orden indicado desde LLM Course: Abre el notebook en Colab con GPU; instala Unsloth según indique.",
+     "reciproca_de": "llm-course"
+    },
+    {
+     "id": "sglang",
+     "motivo": "Combinación recíproca: SGLang lo enlaza como «Servir con SGLang modelos afinados con Unsloth. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SGLang: Afina y exporta con Unsloth y sirve los pesos con SGLang.",
+     "reciproca_de": "sglang"
     }
    ],
    "notas": "Alternativas (elige una): llama-factory. La AGPL de Studio importa si redistribuyes la UI.",
@@ -64,7 +76,7 @@
      "orden_instalacion": "Instala vLLM con la versión de PyTorch compatible."
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con tensorflow (solo anotado).",
+   "notas": "Alternativa (elige una): tensorflow.",
    "fuentes": [
     "https://github.com/pytorch/pytorch/blob/main/README.md",
     "https://pytorch.org/get-started/locally/"
@@ -103,6 +115,12 @@
      "id": "sglang",
      "motivo": "Worker de inferencia alternativo.",
      "orden_instalacion": "Configura el backend SGLang."
+    },
+    {
+     "id": "gradio",
+     "motivo": "Combinación recíproca: Gradio lo enlaza como «Su LlamaBoard está construido con Gradio».",
+     "orden_instalacion": "Orden indicado desde Gradio: Usa la UI de LlamaFactory.",
+     "reciproca_de": "gradio"
     }
    ],
    "notas": "Alternativas (elige una): unsloth.",
@@ -213,6 +231,12 @@
      "id": "nemotron",
      "motivo": "Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura)",
      "orden_instalacion": "Usa Nemotron como planificador."
+    },
+    {
+     "id": "warp",
+     "motivo": "Combinación recíproca: warp lo enlaza como «Datos de simulación para modelos de mundo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde warp: Genera escenas con Warp.",
+     "reciproca_de": "warp"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -253,6 +277,12 @@
      "id": "nemo",
      "motivo": "Pila de entrenamiento de las recetas.",
      "orden_instalacion": "Instala NeMo para reproducir recetas."
+    },
+    {
+     "id": "cosmos",
+     "motivo": "Combinación recíproca: cosmos lo enlaza como «Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cosmos: Usa Nemotron como planificador.",
+     "reciproca_de": "cosmos"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -322,9 +352,27 @@
      "id": "marimo",
      "motivo": "Experimentación en notebooks reactivos. (combinación por arquitectura)",
      "orden_instalacion": "Instala marimo en el mismo entorno."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Combinación recíproca: JupyterLab lo enlaza como «Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde JupyterLab: Instala TensorFlow en el entorno del kernel.",
+     "reciproca_de": "jupyterlab"
+    },
+    {
+     "id": "tfjs-models",
+     "motivo": "Combinación recíproca: tfjs-models lo enlaza como «Entrenar en Python y convertir a TF.js. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde tfjs-models: Convierte con tensorflowjs_converter.",
+     "reciproca_de": "tfjs-models"
+    },
+    {
+     "id": "keras",
+     "motivo": "Combinación recíproca: Keras 3 lo enlaza como «TensorFlow es uno de los backends de Keras 3».",
+     "orden_instalacion": "Orden indicado desde Keras 3: Instala TensorFlow; después define KERAS_BACKEND=tensorflow.",
+     "reciproca_de": "keras"
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con pytorch (solo anotado).",
+   "notas": "Alternativa (elige una): pytorch.",
    "fuentes": [
     "https://github.com/tensorflow/tensorflow/blob/master/README.md",
     "https://www.tensorflow.org/install"
@@ -420,6 +468,16 @@
      "id": "timesfm",
      "motivo": "Preparar series temporales para pronóstico. (combinación por arquitectura)",
      "orden_instalacion": "Extrae las series con SQL."
+    },
+    {
+     "id": "apache-iceberg",
+     "motivo": "DuckDB lee tablas Apache Iceberg con su extensión oficial `iceberg`.",
+     "orden_instalacion": "Carga la extensión y consulta una tabla de prueba."
+    },
+    {
+     "id": "delta-lake",
+     "motivo": "DuckDB lee tablas Delta Lake con su extensión oficial `delta`.",
+     "orden_instalacion": "Carga la extensión `delta` y apunta al directorio de la tabla."
     }
    ],
    "notas": "Alternativas (elige una): polars.",
@@ -456,6 +514,16 @@
      "id": "streamlit",
      "motivo": "Apps de datos sobre DataFrames de Polars. (combinación por arquitectura)",
      "orden_instalacion": "Muestra el DataFrame en Streamlit."
+    },
+    {
+     "id": "apache-iceberg",
+     "motivo": "Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg).",
+     "orden_instalacion": "Instala PyIceberg junto a Polars."
+    },
+    {
+     "id": "delta-lake",
+     "motivo": "Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake.",
+     "orden_instalacion": "Instala el paquete `deltalake` junto a Polars."
     }
    ],
    "notas": "Alternativas (elige una): duckdb.",
@@ -494,7 +562,7 @@
      "orden_instalacion": "Configura el proveedor de IA de marimo apuntando a Ollama."
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con Jupyter (solo anotado).",
+   "notas": "Alternativa (elige una): jupyterlab.",
    "fuentes": [
     "https://github.com/marimo-team/marimo/blob/main/README.md",
     "https://docs.marimo.io/guides/apps.html"

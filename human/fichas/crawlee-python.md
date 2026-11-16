@@ -29,6 +29,8 @@ Se instala con `pip install 'crawlee[all]'` y `playwright install` para los nave
 | [playwright](playwright.md) | Crawler de navegador soportado de forma nativa. | Instala los navegadores con `playwright install` y usa `PlaywrightCrawler`. |
 | [Scrapegraph-ai](scrapegraph-ai.md) | Extraer datos con LLM a partir de las páginas recogidas. (combinación por arquitectura) | Recoge con Crawlee y pasa el HTML a ScrapeGraphAI. |
 | [Qdrant](qdrant.md) | Indexar el contenido rastreado para RAG. (combinación por arquitectura) | Trocea y vectoriza los resultados y guárdalos en Qdrant. |
+| [FlareSolverr](flaresolverr.md) | Combinación recíproca: FlareSolverr lo enlaza como «Un crawler HTTP de Crawlee puede obtener de FlareSolverr las cookies de un sitio autorizado antes de continuar (combinación por arquitectura)». | Orden indicado desde FlareSolverr: Despliega FlareSolverr; después usa sus cookies en las peticiones de Crawlee. |
+| [Camoufox](camoufox.md) | Combinación recíproca: Camoufox lo enlaza como «Crawlee para Python documenta un ejemplo de PlaywrightCrawler con Camoufox». | Orden indicado desde Camoufox: Instala `crawlee[playwright]` y Camoufox; después pasa Camoufox como navegador del crawler. |
 
 **Notas:** Sin alternativas declaradas. Se quita la combinación con scrapy por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

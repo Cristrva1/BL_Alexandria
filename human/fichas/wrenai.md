@@ -31,7 +31,7 @@ Se instala con `pip install wrenai` (con extras por conector) y se añade como s
 | [langchain](langchain.md) | Integración citada en el README. | Usa WrenAI como herramienta en LangChain. |
 | [Apache Superset](superset.md) | Visualizar en Superset las consultas gobernadas. (combinación por arquitectura) | Apunta Superset a la misma base. |
 
-**Notas:** Alternativas (elige una): pandas-ai. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago.
+**Notas:** Sin alternativas declaradas. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada wren-v0.18.0 (2026-11-10) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -111,12 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Node para skills; base o muestra jaffle_shop; agente
 - **Etiquetas:** `analytics` `data` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [PandasAI](pandas-ai.md) | 23.9k | Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM. |
 
 ## Enlaces
 

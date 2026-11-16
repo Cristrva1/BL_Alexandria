@@ -29,6 +29,9 @@ Se instala con `npm install motion` (React/JS) o `npm install motion-v` (Vue).
 | [magicui](magicui.md) | Componentes animados construidos con Motion. | Instala Motion como dependencia. |
 | [react-three-fiber](react-three-fiber.md) | Animar escenas R3F. (combinación por arquitectura) | Usa Motion para la capa UI y R3F para 3D. |
 | [Claude Code](claude-code.md) | Skill y MCP oficiales (`npx motion-ai`). | Ejecuta `npx motion-ai`. |
+| [GSAP](gsap.md) | Combinación recíproca: GSAP lo enlaza como «Combinar en apps React (Motion para la UI, GSAP para la narrativa con scroll). (combinación por arquitectura)». | Orden indicado desde GSAP: Evita animar el mismo elemento con ambas. |
+| [motion-design-skill](motion-design-skill.md) | Combinación recíproca: motion-design-skill lo enlaza como «Igual, en React (combinación por arquitectura)». | Orden indicado desde motion-design-skill: Igual que arriba. |
+| [skills_emil](skills-emil.md) | Combinación recíproca: skills_emil lo enlaza como «Biblioteca de animación de React donde aplicar sus reglas (combinación por arquitectura)». | Orden indicado desde skills_emil: Añádela al proyecto si la skill `pick-ui-library` la elige. |
 
 **Notas:** Alternativas (elige una): animejs.
 

@@ -29,6 +29,15 @@ Se instala con el paquete del framework (por ejemplo, `lucide-react`) e importa 
 | [ui](ui.md) | Biblioteca de iconos por defecto de shadcn/ui. | Se instala automáticamente con los componentes de shadcn que la usan. |
 | [tailwindcss](tailwindcss.md) | Estilar iconos con clases utilitarias (tamaño, color). (combinación por arquitectura) | Aplica clases de Tailwind al componente del icono. |
 | [daisyUI](daisyui.md) | Iconos para componentes daisyUI, que no trae biblioteca de iconos propia. (combinación por arquitectura) | Instala el paquete de Lucide de tu framework. |
+| [konva](konva.md) | Combinación recíproca: konva lo enlaza como «Iconos para las herramientas del editor. (combinación por arquitectura)». | Orden indicado desde konva: Instala lucide-react. |
+| [normalize.css](normalize-css.md) | Combinación recíproca: normalize.css lo enlaza como «Iconos SVG en proyectos de CSS propio. (combinación por arquitectura)». | Orden indicado desde normalize.css: Instala el paquete de Lucide adecuado. |
+| [Radix Primitives](radix-primitives.md) | Combinación recíproca: Radix Primitives lo enlaza como «Iconos para triggers y menús. (combinación por arquitectura)». | Orden indicado desde Radix Primitives: Instala lucide-react. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Chakra UI](chakra-ui.md)
 
 **Notas:** Sin alternativas declaradas.
 

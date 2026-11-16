@@ -29,6 +29,15 @@ Se instala con `pip install peft` y está integrada con Transformers, Diffusers 
 | [Transformers](transformers.md) | Integración nativa. | Instala Transformers primero. |
 | [TRL](trl.md) | Entrenar con LoRA en SFT, DPO o GRPO. | Pasa la configuración de PEFT al trainer. |
 | [diffusers](diffusers.md) | Gestión de adaptadores en modelos de difusión. | Carga adaptadores LoRA en el pipeline. |
+| [LLaMA-Factory](llama-factory.md) | Combinación recíproca: LLaMA-Factory lo enlaza como «Métodos LoRA y QLoRA». | Orden indicado desde LLaMA-Factory: Viene como dependencia. |
+| [airllm](airllm.md) | Combinación recíproca: airllm lo enlaza como «Entrenar adaptadores con pesos congelados por capas (combinación por arquitectura; [DATO NO VERIFICADO: si usa PEFT internamente])». | Orden indicado desde airllm: Fija las versiones de PEFT y transformers en el mismo entorno. |
+| [bionemo-recipes](bionemo-recipes.md) | Combinación recíproca: bionemo-recipes lo enlaza como «Ajuste eficiente con datos propios. (combinación por arquitectura)». | Orden indicado desde bionemo-recipes: Aplica LoRA sobre el checkpoint. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Axolotl](axolotl.md) · [FinGPT](fingpt.md)
 
 **Notas:** Sin alternativas declaradas.
 

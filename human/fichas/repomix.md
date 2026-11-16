@@ -29,6 +29,8 @@ Se ejecuta con `npx repomix@latest`, `npm install -g repomix` o `brew install re
 | [Claude Code](claude-code.md) | Generar skills para Claude Code (`--skill-generate`) o usar Repomix como MCP. | Ejecuta `repomix --mcp` o genera la skill en `.claude/skills/`. |
 | [tree-sitter](tree-sitter.md) | La opción `--compress` usa Tree-sitter. | Usa `repomix --compress` para reducir tokens. |
 | [markitdown](markitdown.md) | Convertir documentos del repo a Markdown antes de empaquetar. (combinación por arquitectura) | Convierte PDF/DOCX con MarkItDown y empaqueta después. |
+| [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `repomix_runner.py`». | Orden indicado desde tools: Instala repomix (npm). |
+| [codebase-memory-mcp](codebase-memory-mcp.md) | Combinación recíproca: codebase-memory-mcp lo enlaza como «Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)». | Orden indicado desde codebase-memory-mcp: Localiza con el grafo y empaqueta con Repomix. |
 
 **Notas:** Alternativas (elige una): gitnexus.
 

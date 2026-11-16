@@ -29,6 +29,7 @@ Se instala con `pip install -U nautilus_trader` (estable) o con `--pre` para la 
 | [Polars](polars.md) | Preparar grandes volúmenes de datos de mercado. (combinación por arquitectura) | Transforma los datos con Polars y cárgalos en el catálogo. |
 | [marimo](marimo.md) | Analizar resultados de backtests en notebooks. (combinación por arquitectura) | Carga los informes en marimo. |
 | [ccxt](ccxt.md) | Comparar o completar datos de exchanges sin adaptador. (combinación por arquitectura) | Descarga datos con CCXT para pruebas. |
+| [py-sdk](py-sdk.md) | Combinación recíproca: py-sdk lo enlaza como «NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura)». | Orden indicado desde py-sdk: Elige uno como capa de ejecución; prueba primero en modo simulado. |
 
 **Notas:** Sin alternativas declaradas. Curva de aprendizaje alta; la rama 2.0 aún es prerelease.
 
