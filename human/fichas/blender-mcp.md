@@ -29,6 +29,9 @@ Un comando instala el complemento de Blender y configura las apps de IA; tambié
 | [Claude Code](claude-code.md) | Controlar Blender desde un cliente MCP como Claude Code. | Ejecuta el setup y elige tu cliente. |
 | [blender](blender.md) | Complemento que se instala dentro de Blender. | Instala Blender y activa el complemento. |
 | [unity-mcp](unity-mcp.md) | Llevar a Unity los modelos creados en Blender, ambos controlados por agentes. (combinación por arquitectura) | Exporta desde Blender e importa en Unity con MCP for Unity. |
+| [blender-skills](blender-skills.md) | Combinación recíproca: blender-skills lo enlaza como «Vía de ejecución de las skills en Blender». | Orden indicado desde blender-skills: Instala y conecta el MCP siguiendo `docs/BLENDER_MCP_SETUP.md`. |
+| [dream-loop](dream-loop.md) | Combinación recíproca: dream-loop lo enlaza como «Vía preferida para que el agente controle Blender». | Orden indicado desde dream-loop: Blender abierto con el complemento del MCP antes de iniciar el bucle. |
+| [ChatDev](chatdev.md) | Combinación recíproca: ChatDev lo enlaza como «ChatDev documenta blender-mcp como requisito de su flujo de construcción 3D». | Orden indicado desde ChatDev: Blender primero, luego blender-mcp, y por último el flujo de ChatDev. |
 
 **Notas:** Sin alternativas declaradas. Revisa los ajustes de telemetría y el uso de servicios 3D de terceros.
 

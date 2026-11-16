@@ -10,7 +10,7 @@ _DEFAULTS = {
     "global": ["repomix", "gitnexus"],
     "local_project": ["markitdown", "crawl4ai", "litellm"],
     "docker_local": [
-        "n8n",
+        "activepieces",
         "langfuse",
         "evolution-api",
         "chatwoot",

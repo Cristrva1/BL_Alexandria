@@ -30,7 +30,7 @@ Es una app Next.js 16 con MapLibre GL que se instala con npm, Docker Compose o l
 | [hermes-agent](hermes-agent.md) | Agente citado como cliente del MCP de Osiris. | Configura `/api/mcp` en el agente. |
 | [Claude Code](claude-code.md) | Consultar el panel vía MCP. | Añade el endpoint MCP de tu instancia. |
 
-**Notas:** Sin alternativas declaradas; solapa con gods-eye-view (solo anotado). El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.
+**Notas:** Alternativa (elige una): gods-eye-view. El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v5.0.0 (2026-09-28) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -110,6 +110,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y npm; conexión a fuentes públicas; claves opcionales para capas extra
 - **Etiquetas:** `osint` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gods-eye-view](gods-eye-view.md) | 64.9k | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
 
 ## Enlaces
 

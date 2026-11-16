@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+EasyMocap, toolbox open source de captura de movimiento sin marcadores y síntesis de nuevas vistas desde vídeo RGB, del grupo ZJU3DV (Universidad de Zhejiang). Licencia «Project Registration License (PRL) v1.0» propia (GitHub muestra NOASSERTION). Tiene ~5k estrellas y está poco activo (v0.1).
+
+## ¿Qué hace?
+
+Ajusta modelos SMPL, SMPL+H, SMPL-X y MANO para capturar cuerpo, manos y cara desde una o varias cámaras, con múltiples demos. Incluye trabajos de síntesis de vistas presentados en SIGGRAPH 2022.
+
+## ¿Cómo lo hace?
+
+Se instala desde el repo con PyTorch. Necesita detectores de keypoints 2D (OpenPose, HRNet o MediaPipe, este último soportado desde 2021) y los modelos SMPL, que requieren registro.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [openpose](openpose.md) | Detector de keypoints 2D de entrada. | Genera los keypoints con OpenPose. |
+| [mediapipe](mediapipe.md) | Detector de keypoints soportado. | Usa el detector MediaPipe. |
+| [blender](blender.md) | Visualizar y animar las mallas. (combinación por arquitectura) | Importa el resultado. |
+| [mmpose](mmpose.md) | Combinación recíproca: mmpose lo enlaza como «Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura)». | Orden indicado desde mmpose: Exporta los keypoints. |
+
+**Notas:** Sin alternativas declaradas. Revisa la licencia PRL antes de redistribuir.
+
+Estado en GitHub: activo · último push 2026-09-15 · última versión publicada v0.1 (2021-03-29) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zju3dv/EasyMocap/blob/master/Readme.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena |
 | Coste | El coste depende del proveedor o la ruta. La ejecución propia usa cómputo y modelos o datasets con condiciones separadas; no incluye equipos |
 | Equipo | Preparación según la ruta elegida. Entorno de la demo; cámaras y calibración según método; modelos corporales autorizados |
-
-La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena
-
-## Qué puedes hacer con él
-
-Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar captura multicámara; Explorar reconstrucción de movimiento.
-
-## Cómo funciona
 
 La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena
 

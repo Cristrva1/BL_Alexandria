@@ -29,6 +29,7 @@ Se instala con npm (`mcp-use`) y se crea un proyecto con su CLI; la v2 tiene gu�
 | [Claude Code](claude-code.md) | Construir y probar conectores desde el agente con el flujo «agent-first» de mcp-use. | Crea el proyecto y deja que el agente use los comandos de mcp-use. |
 | [awesome-mcp-servers](awesome-mcp-servers.md) | Buscar servidores existentes antes de construir uno. (combinación por arquitectura) | Consulta la lista y reutiliza lo que exista. |
 | [Google MCP](mcp.md) | Referencia de servidores MCP de Google para integrarlos o tomarlos como ejemplo. (combinación por arquitectura) | Revisa la lista de Google y conecta los que necesites. |
+| [servers](servers.md) | Combinación recíproca: servers lo enlaza como «Tomar los servidores como ejemplo al construir uno propio. (combinación por arquitectura)». | Orden indicado desde servers: Estudia el servidor parecido y construye el tuyo con mcp-use. |
 
 **Notas:** Alternativas (elige una): mcp-typescript-sdk.
 

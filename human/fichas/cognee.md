@@ -29,6 +29,7 @@ Biblioteca Python 3.10–3.14 (`uv pip install "cognee[gliner]"`): sin clave de 
 | [Claude Code](claude-code.md) | Plugin oficial de memoria (`claude plugin install cognee-memory@cognee`). | Instala Cognee y configura el LLM; luego añade el marketplace y el plugin. |
 | [Codex CLI](codex.md) | Plugin oficial para Codex. | Activa los hooks de Codex primero; después añade el marketplace y el plugin. |
 | [OpenClaw](openclaw.md) | Plugin oficial `@cognee/cognee-openclaw`. | OpenClaw instalado; añade el plugin desde npm. |
+| [Neo4j MCP (oficial)](neo4j-mcp.md) | Combinación recíproca: Neo4j MCP (oficial) lo enlaza como «Cognee documenta Neo4j como almacén de grafos; el servidor MCP da al agente consultas Cypher directas sobre lo que Cognee construye. (combinación por arquitectura)». | Orden indicado desde Neo4j MCP (oficial): Configura Cognee con Neo4j y luego añade el servidor MCP. |
 
 **Notas:** Alternativas (elige una): graphiti, mem0, graphrag, letta. En la API, `ENABLE_BACKEND_ACCESS_CONTROL=false` solo para uso local de un usuario.
 
