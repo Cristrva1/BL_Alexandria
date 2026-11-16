@@ -29,8 +29,9 @@ Se instala con pipx, uv o pip (`strix-agent`) y necesita Docker en marcha; la pr
 | [Ollama](ollama.md) | Usar un modelo local a través de `LLM_API_BASE`, documentado en el README. | Levanta Ollama y define `LLM_API_BASE` y el modelo. |
 | [GitHub MCP Server](github-mcp-server.md) | Dar al agente herramientas de GitHub con la configuración MCP de Strix (el README usa el servidor MCP de GitHub como ejemplo). | Añade el servidor a `~/.strix/mcp-servers.json`. |
 | [Semgrep](semgrep.md) | Análisis estático en CI junto a las pruebas dinámicas. (combinación por arquitectura) | Ejecuta ambos en el pipeline de PR. |
+| [Defending Code Reference Harness](defending-code-reference-harness.md) | Combinación recíproca: Defending Code Reference Harness lo enlaza como «Validar dinámicamente en un entorno de prueba los hallazgos del arnés. (combinación por arquitectura)». | Orden indicado desde Defending Code Reference Harness: Despliega el objetivo en un entorno aislado y lanza Strix contra él. |
 
-**Notas:** Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.
+**Notas:** Alternativa (elige una): shannon. Úsalo solo contra sistemas propios o con autorización escrita.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.7.1 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -100,6 +101,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker activo; modelo con herramientas; objetivo de laboratorio autorizado
 - **Etiquetas:** `agentes` `agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [shannon](shannon.md) | 51.9k | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
 
 ## Enlaces
 

@@ -10,6 +10,40 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+DuckDB, base de datos analítica en proceso (in-process), de la DuckDB Foundation y DuckDB Labs. Licencia MIT. Es muy madura (~43k estrellas, v2.0.0).
+
+## ¿Qué hace?
+
+Ejecuta SQL analítico muy rápido dentro de tu aplicación y lee y escribe CSV, Parquet, JSON y formatos lakehouse (Iceberg, Delta, DuckLake). Puede adjuntar y consultar en sitio otras bases de datos como Postgres, MySQL o SQLite.
+
+## ¿Cómo lo hace?
+
+Hay CLI independiente y clientes para Python, R, Java, Node, Rust, Go, WebAssembly y más. Las extensiones del núcleo vienen incluidas y las comunitarias se cargan bajo demanda. La instalación por plataforma está en duckdb.org.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [marimo](marimo.md) | Celdas SQL nativas sobre DuckDB. | Instala marimo y escribe celdas SQL. |
+| [Apache Superset](superset.md) | Dashboards sobre DuckDB. (combinación por arquitectura) | Conecta DuckDB como base de datos. |
+| [TimesFM](timesfm.md) | Preparar series temporales para pronóstico. (combinación por arquitectura) | Extrae las series con SQL. |
+| [Apache Iceberg](apache-iceberg.md) | DuckDB lee tablas Apache Iceberg con su extensión oficial `iceberg`. | Carga la extensión y consulta una tabla de prueba. |
+| [Delta Lake](delta-lake.md) | DuckDB lee tablas Delta Lake con su extensión oficial `delta`. | Carga la extensión `delta` y apunta al directorio de la tabla. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (32). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Apache Airflow](airflow.md) · [Apache Arrow](arrow.md) · [awesome-bigdata](awesome-bigdata.md) · [Chart.js](chart-js.md) · [Colly](colly.md) · [Dagster](dagster.md) · [dash](dash.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [dbt](dbt.md) · [dlt (data load tool)](dlt.md) · [Evidence](evidence.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [Grist](grist-core.md) · [hudi](hudi.md) · [Ibis](ibis.md) · [JupyterLab](jupyterlab.md) · [Katana](katana.md) · [Kestra](kestra.md) · [LanceDB](lancedb.md) · [Maigret](maigret.md) · [metabase](metabase.md) · [pandas](pandas.md) · [Prefect](prefect.md) · [PyGWalker](pygwalker.md) · [QGIS](qgis.md) · [Recon-ng](recon-ng.md) · [Redash](redash.md) · [Sherlock](sherlock.md) · [streamlit](streamlit.md) · [uPlot](uplot.md) · [Windmill](windmill.md) · [WrenAI](wrenai.md)
+
+**Notas:** Alternativas (elige una): polars.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.0.0 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/duckdb/duckdb/blob/main/README.md) · [2](https://duckdb.org/docs/installation/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +57,6 @@
 | Modelos locales | La función básica no necesita un modelo. Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor |
 | Coste | Sin pago a un modelo en la ruta básica. No usa LLM ni API de IA; servicios Cloud o almacenamiento remoto tienen sus condiciones |
 | Equipo | Preparación según la ruta elegida. CLI o biblioteca para tu sistema; CSV pequeño |
-
-Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor
-
-## Qué puedes hacer con él
-
-Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL.
-
-## Por qué destaca
-
-Usos propuestos: Explorar ventas de muestra; Consultar Parquet sin desplegar un servidor.
-
-## Cómo funciona
 
 Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor
 
@@ -84,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** CLI o biblioteca para tu sistema; CSV pequeño
 - **Etiquetas:** `data` `analytics` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [marimo](marimo.md) | 23.6k | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
-| [Apache Superset](superset.md) | 75.5k | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
 
 ## Alternativas (elige una)
 

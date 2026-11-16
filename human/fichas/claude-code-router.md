@@ -29,8 +29,9 @@ Se usa como app de escritorio (Electron) o con `npm install -g @musistudio/claud
 | [Claude Code](claude-code.md) | Cliente principal del router. | Instala CCR y lanza Claude Code a través de él. |
 | [Codex CLI](codex.md) | Cliente soportado según el README. | Configura Codex para usar CCR como proveedor. |
 | [OpenCode](opencode.md) | Cliente soportado según el README. | Apunta OpenCode a la pasarela de CCR. |
+| [claude-code-hooks-mastery](claude-code-hooks-mastery.md) | Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Enrutar Claude Code a otros modelos mientras experimentas con hooks (combinación por arquitectura)». | Orden indicado desde claude-code-hooks-mastery: Independientes. |
 
-**Notas:** Sin alternativas declaradas. Posible grupo alt con omniroute, backdoor y litellm (solo anotado). Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.
+**Notas:** Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.1.4 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -108,6 +109,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22+ o app; proveedor y credenciales; agente de prueba
 - **Etiquetas:** `serving` `server` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OmniRoute](omniroute.md) | 87.5k | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
+| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
+| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces
 

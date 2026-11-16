@@ -29,6 +29,7 @@ Es contenido Markdown con ejemplos de código (TypeScript, entre otros) y una ch
 | [Context-Engineering](context-engineering.md) | Profundiza en el factor 3 (gestionar la ventana de contexto). (combinación por arquitectura) | Lee primero los 12 factores y luego la guía de contexto. |
 | [LangGraph](langgraph.md) | Framework de bajo nivel que permite aplicar los principios (control del flujo, pausar y reanudar) sin ocultar los prompts. (combinación por arquitectura) | Diseña con los 12 factores y usa LangGraph solo donde aporte estado duradero. |
 | [AI SDK (Vercel)](vercel-ai.md) | Biblioteca ligera para aplicar los factores en TypeScript manteniendo el control de prompts y bucle. (combinación por arquitectura) | Implementa el bucle propio con generateText/tools. |
+| [awesome-harness-engineering](awesome-harness-engineering.md) | Combinación recíproca: awesome-harness-engineering lo enlaza como «Principios concretos de diseño de harnesses fiables. (combinación por arquitectura)». | Orden indicado desde awesome-harness-engineering: Lee los 12 factores como base y usa la lista para ampliar. |
 
 **Notas:** Sin alternativas declaradas.
 

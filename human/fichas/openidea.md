@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+OpenIDEA, IDE nativo con núcleo en Rust que reproduce la forma de trabajar de IntelliJ IDEA, de l0ng-ai. Licencia Apache-2.0; no está afiliado a JetBrains. Es muy reciente (creado en octubre de 2026) y ya tiene ~9k estrellas.
+
+## ¿Qué hace?
+
+Ofrece editor, análisis de código, depurador, Git, terminal y clientes de bases de datos y HTTP para más de 60 lenguajes, con el keymap y las ventanas de herramientas de IntelliJ. Su benchmark propio (abriendo freqtrade) muestra arranque y memoria muy inferiores a IDEA, aunque el propio README admite que IDEA analiza Python con más profundidad.
+
+## ¿Cómo lo hace?
+
+Hay builds para macOS, Windows y Linux. Los plugins se ejecutan como componentes WebAssembly aislados y se crean con `openidea-plugin new`; la API de plugins está en preview.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenCode](opencode.md) | Agente de terminal en la terminal integrada. (combinación por arquitectura) | Instala OpenCode y ábrelo en la terminal del IDE. |
+| [Claude Code](claude-code.md) | Agente de terminal en la terminal integrada. (combinación por arquitectura) | Ejecuta Claude Code en la terminal del IDE. |
+| [Aider](aider.md) | Pareja de programación con git en la terminal integrada. (combinación por arquitectura) | Ejecuta aider dentro del proyecto. |
+
+**Notas:** Sin alternativas declaradas. Proyecto muy joven: conviene vigilar su madurez.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.45 (2026-11-14) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/l0ng-ai/openidea/blob/main/README.md) · [2](https://openidea.sh/en/plugins)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un IDE independiente en Rust y la API de plugins está en preview; los benchmarks del autor no son una garantía de igual rendimiento en tu equipo |
 | Coste | Sin pago a un modelo en la ruta básica. El editor básico no necesita API de IA; servicios o plugins externos pueden tener condiciones propias |
 | Equipo | Preparación según la ruta elegida. Instalador para tu sistema; proyecto pequeño |
-
-Es un IDE independiente en Rust y la API de plugins está en preview; los benchmarks del autor no son una garantía de igual rendimiento en tu equipo
-
-## Qué puedes hacer con él
-
-Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.
-
-## Por qué destaca
-
-Usos propuestos: Explorar código con atajos tipo IntelliJ; Probar un editor nativo con plugins.
-
-## Cómo funciona
 
 Es un IDE independiente en Rust y la API de plugins está en preview; los benchmarks del autor no son una garantía de igual rendimiento en tu equipo
 
