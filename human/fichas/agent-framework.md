@@ -30,6 +30,7 @@ Paquetes `agent-framework` en PyPI (Python) y `Microsoft.Agents.AI` en NuGet (.N
 | [CopilotKit](copilotkit.md) | Interfaz React/Next.js para agentes de Agent Framework (integración documentada por CopilotKit). | Expón el agente desde el backend de Agent Framework y conecta CopilotKit en el frontend. |
 | [ag2](ag2.md) | Útil si migras desde AutoGen 0.2/AG2: hay una guía oficial de migración desde AutoGen. (combinación por arquitectura: no se integran entre sí, se usan como origen y destino de una migración). | Mantén AG2 solo mientras portas los agentes a Agent Framework con la guía de Microsoft. |
 | [Ollama](ollama.md) | Modelos locales para desarrollo mediante un endpoint compatible con OpenAI. (combinación por arquitectura) | Arranca Ollama y apunta el cliente compatible con OpenAI a su URL local. |
+| [AI Agents for Beginners](ai-agents-for-beginners.md) | Combinación recíproca: AI Agents for Beginners lo enlaza como «Framework usado en todos los ejemplos de código del curso». | Orden indicado desde AI Agents for Beginners: Sigue la lección de configuración del curso; instala agent-framework en Python. |
 
 **Notas:** Sin alternativas declaradas en el catálogo; frameworks comparables: langgraph, crewai, openai-agents-python. Hallazgo: AutoGen (microsoft/autogen) no está en el catálogo; Agent Framework es su sucesor oficial.
 

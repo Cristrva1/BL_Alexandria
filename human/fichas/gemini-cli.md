@@ -30,7 +30,13 @@ Se ejecuta con `npx @google/gemini-cli` o se instala con `npm install -g @google
 | [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Configura el MCP de Context7 en `settings.json`. |
 | [Google MCP](mcp.md) | Servidores MCP oficiales de Google Cloud. (combinación por arquitectura) | Añade los endpoints MCP a la configuración. |
 
-**Notas:** Alternativas (elige una): claude-code, codex, opencode. Para uso individual, Google remite a Antigravity CLI (no catalogado).
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (18). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Agent Skills (Addy Osmani)](agent-skills.md) · [agentmemory](agentmemory.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [Browser Harness](browser-harness.md) · [Chrome DevTools MCP](chrome-devtools-mcp.md) · [ECC](ecc.md) · [Engram](engram.md) · [gemini-skills](gemini-skills.md) · [i-have-adhd](i-have-adhd.md) · [logo-design-skill](logo-design-skill.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [notebooklm-mcp-cli](notebooklm-mcp-cli.md) · [rtk](rtk.md) · [skills](google-skills.md) · [Spec Kit](spec-kit.md) · [superpowers](superpowers.md) · [The Agency (agency-agents)](agency-agents.md) · [Zed](zed.md)
+
+**Notas:** Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.68.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -116,6 +122,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [Antigravity CLI](antigravity-cli.md) | 2.8k | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. |
+| [Qwen Code](qwen-code.md) | 30.6k | Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP. |
 
 ## Enlaces
 

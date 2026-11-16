@@ -30,6 +30,12 @@ Se instala con `pip install frida-tools` (CLI), `pip install frida` (Python) o `
 | [mitmproxy](mitmproxy.md) | Desactivar el certificate pinning con scripts de Frida para interceptar el tráfico HTTPS de una app. (combinación por arquitectura) | Configura el proxy y el certificado de mitmproxy y carga el script de Frida al lanzar la app. |
 | [jadx](jadx.md) | Localizar en el código decompilado los métodos que luego interceptas con Frida. (combinación por arquitectura) | Decompila en JADX, anota clases y métodos y escribe los hooks. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[angr](angr.md) · [Apktool](apktool.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [bla](bla.md)
+
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 17.26.3 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

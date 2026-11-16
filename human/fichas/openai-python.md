@@ -29,6 +29,8 @@ Se instala con `pip install openai` y requiere Python 3.10+. Usa HTTPX2 por defe
 | [litellm](litellm.md) | El proxy LiteLLM se consume con el SDK de OpenAI cambiando `base_url`. | Arranca el proxy y crea el cliente con su URL y clave. |
 | [vLLM](vllm.md) | vLLM expone un servidor compatible con OpenAI que se usa con este SDK. | Lanza `vllm serve` y apunta `base_url` a `/v1`. |
 | [langchain](langchain.md) | `langchain-openai` se construye sobre este SDK. | Instala `langchain-openai` y configura la clave. |
+| [OpenAI Agents SDK](openai-agents-python.md) | Combinación recíproca: OpenAI Agents SDK lo enlaza como «Cliente oficial de OpenAI que usa el SDK». | Orden indicado desde OpenAI Agents SDK: Se instala como dependencia. |
+| [OpenAI Cookbook](openai-cookbook.md) | Combinación recíproca: OpenAI Cookbook lo enlaza como «SDK oficial usado por casi todos los notebooks». | Orden indicado desde OpenAI Cookbook: Instala `openai` en el entorno antes de ejecutar los ejemplos. |
 
 **Notas:** Sin alternativas declaradas.
 

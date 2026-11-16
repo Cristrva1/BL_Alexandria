@@ -27,6 +27,12 @@
      "id": "stitch-sdk",
      "motivo": "Acceso programático a la misma plataforma Stitch (combinación por arquitectura).",
      "orden_instalacion": "Úsalo para automatizar lo que las skills hacen de forma interactiva."
+    },
+    {
+     "id": "taste-skill",
+     "motivo": "Combinación recíproca: taste-skill lo enlaza como «Trae una variante `stitch-design-taste` para trabajar con Stitch».",
+     "orden_instalacion": "Orden indicado desde taste-skill: Configura antes el MCP de Stitch.",
+     "reciproca_de": "taste-skill"
     }
    ],
    "fuentes": [
@@ -200,6 +206,24 @@
      "id": "claude-code",
      "motivo": "El agente lee el DESIGN.md como contexto persistente (combinación por arquitectura).",
      "orden_instalacion": "Coloca el archivo en la raíz del repositorio."
+    },
+    {
+     "id": "design-dna",
+     "motivo": "Combinación recíproca: design-dna lo enlaza como «Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde design-dna: Extrae primero y valida después.",
+     "reciproca_de": "design-dna"
+    },
+    {
+     "id": "open-design",
+     "motivo": "Combinación recíproca: open-design lo enlaza como «Formato `DESIGN.md` para describir el sistema de diseño que el agente sigue. (combinación por arquitectura) (OpenDesign usa archivos DESIGN.md; la compatibilidad exacta con la especificación de Google no está verificada)».",
+     "orden_instalacion": "Orden indicado desde open-design: Redacta el DESIGN.md antes de generar prototipos.",
+     "reciproca_de": "open-design"
+    },
+    {
+     "id": "stitch-sdk",
+     "motivo": "Combinación recíproca: Stitch SDK lo enlaza como «Especificación de sistema de diseño de Google Labs para guiar la generación. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Stitch SDK: Redacta el DESIGN.md e inclúyelo en los prompts.",
+     "reciproca_de": "stitch-sdk"
     }
    ],
    "notas": "La especificación sigue en alpha y puede cambiar.",
@@ -404,6 +428,24 @@
      "id": "motion",
      "motivo": "Igual, en React (combinación por arquitectura).",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "animejs",
+     "motivo": "Combinación recíproca: Anime.js lo enlaza como «Principios de movimiento para agentes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Anime.js: Añade la skill.",
+     "reciproca_de": "animejs"
+    },
+    {
+     "id": "gsap-skills",
+     "motivo": "Combinación recíproca: gsap-skills lo enlaza como «Principios de dirección de movimiento independientes de la herramienta (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde gsap-skills: Independientes.",
+     "reciproca_de": "gsap-skills"
+    },
+    {
+     "id": "scenejs",
+     "motivo": "Combinación recíproca: scenejs lo enlaza como «Principios de ritmo y transiciones para diseñar la línea de tiempo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde scenejs: Añade la skill al agente que escribe la animación.",
+     "reciproca_de": "scenejs"
     }
    ],
    "fuentes": [
@@ -436,6 +478,24 @@
      "id": "claude-code",
      "motivo": "Agente objetivo.",
      "orden_instalacion": "Instala con `-a claude-code -g`."
+    },
+    {
+     "id": "pixelfx",
+     "motivo": "Combinación recíproca: pixelfx lo enlaza como «Efectos para juegos de navegador. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde pixelfx: Integra los sprite sheets en el juego.",
+     "reciproca_de": "pixelfx"
+    },
+    {
+     "id": "planck-js",
+     "motivo": "Combinación recíproca: planck.js lo enlaza como «Juegos de navegador asistidos por agente. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde planck.js: Usa Planck para la física 2D.",
+     "reciproca_de": "planck-js"
+    },
+    {
+     "id": "react-three-rapier",
+     "motivo": "Combinación recíproca: react-three-rapier lo enlaza como «Juegos 3D de navegador. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde react-three-rapier: Usa Rapier para la física.",
+     "reciproca_de": "react-three-rapier"
     }
    ],
    "notas": "Las claves opcionales nunca deben ir en el código del navegador (lo advierte el README).",
@@ -504,6 +564,18 @@
      "id": "codex",
      "motivo": "Primer objetivo de evaluación.",
      "orden_instalacion": "Copia la carpeta de la skill a la ubicación que reconozca tu versión de Codex."
+    },
+    {
+     "id": "blender",
+     "motivo": "Combinación recíproca: blender lo enlaza como «Skill de escenas 3D con Blender».",
+     "orden_instalacion": "Orden indicado desde blender: Añade la skill al agente.",
+     "reciproca_de": "blender"
+    },
+    {
+     "id": "globalbuildingatlas",
+     "motivo": "Combinación recíproca: GlobalBuildingAtlas lo enlaza como «Escenas 3D asistidas por agente. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde GlobalBuildingAtlas: Usa los datos como entrada.",
+     "reciproca_de": "globalbuildingatlas"
     }
    ],
    "notas": "Alternativa (elige una): threejs-skills. El video de cabecera es material previo del autor, no una demo de la skill (lo aclara el README).",

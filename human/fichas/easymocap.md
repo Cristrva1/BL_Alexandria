@@ -29,6 +29,7 @@ Se instala desde el repo con PyTorch. Necesita detectores de keypoints 2D (OpenP
 | [openpose](openpose.md) | Detector de keypoints 2D de entrada. | Genera los keypoints con OpenPose. |
 | [mediapipe](mediapipe.md) | Detector de keypoints soportado. | Usa el detector MediaPipe. |
 | [blender](blender.md) | Visualizar y animar las mallas. (combinación por arquitectura) | Importa el resultado. |
+| [mmpose](mmpose.md) | Combinación recíproca: mmpose lo enlaza como «Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura)». | Orden indicado desde mmpose: Exporta los keypoints. |
 
 **Notas:** Sin alternativas declaradas. Revisa la licencia PRL antes de redistribuir.
 

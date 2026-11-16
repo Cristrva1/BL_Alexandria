@@ -27,8 +27,8 @@ Es un script de Python con dependencias mínimas (`requests`) y una imagen Docke
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [ccxt](ccxt.md) | Migrar a una librería de exchanges mantenida y multiplataforma. (combinación por arquitectura) | Reescribe las llamadas con CCXT. |
-| [freqtrade](freqtrade.md) | Alternativa madura con backtesting y dry-run. (combinación por arquitectura) | Prueba la estrategia en Freqtrade en dry-run. |
 | [vectorbt](vectorbt.md) | Evaluar la estrategia con datos históricos. (combinación por arquitectura) | Backtestea antes de usar dinero real. |
+| [coolify](coolify.md) | Desplegar su imagen Docker en un servidor propio gestionado con Coolify (combinación por arquitectura). | Coolify primero; las claves de API de Binance como secretos y con permisos mínimos (sin retirada de fondos). |
 
 **Notas:** Sin alternativas declaradas. Proyecto experimental. Riesgo financiero: no es asesoramiento de inversión.
 

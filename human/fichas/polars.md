@@ -29,6 +29,14 @@ Se instala con `pip install polars` (hay feature flags para extras) o se compila
 | [marimo](marimo.md) | Visualización interactiva de DataFrames en notebooks. | Instala marimo y muestra el DataFrame. |
 | [TimesFM](timesfm.md) | Preparar series para pronóstico. (combinación por arquitectura) | Limpia los datos con Polars. |
 | [streamlit](streamlit.md) | Apps de datos sobre DataFrames de Polars. (combinación por arquitectura) | Muestra el DataFrame en Streamlit. |
+| [Apache Iceberg](apache-iceberg.md) | Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg). | Instala PyIceberg junto a Polars. |
+| [Delta Lake](delta-lake.md) | Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake. | Instala el paquete `deltalake` junto a Polars. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Apache Airflow](airflow.md) · [Apache Arrow](arrow.md) · [Colly](colly.md) · [Dagster](dagster.md) · [Ibis](ibis.md) · [JupyterLab](jupyterlab.md) · [LanceDB](lancedb.md) · [nautilus_trader](nautilus-trader.md) · [Prefect](prefect.md) · [PyGWalker](pygwalker.md) · [Windmill](windmill.md)
 
 **Notas:** Alternativas (elige una): duckdb.
 
@@ -112,6 +120,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| [pandas](pandas.md) | 50.5k | Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
 
 ## Enlaces
 

@@ -29,7 +29,6 @@ CLI en Go que se instala con binarios, Homebrew (como `fabric-ai`), paquetes de 
 | [Ollama](ollama.md) | Ejecutar los patterns con modelos locales (proveedor soportado en el README). | Instala Ollama y descarga un modelo; después elígelo en `fabric --setup`. |
 | [yt-dlp](yt-dlp.md) | Extraer transcripciones de vídeos para resumirlas con `fabric -y`; Fabric delega en yt-dlp (opción `--yt-dlp-args`). | Instala yt-dlp en el PATH antes de usar las funciones de YouTube. |
 | [Open WebUI](open-webui.md) | Usar el servidor REST de Fabric en modo de compatibilidad con Ollama como backend de una interfaz de chat. (combinación por arquitectura) (no hay guía conjunta) | Arranca `fabric --serve` con el modo Ollama y apunta el cliente a esa URL. |
-| [n8n](n8n.md) | Llamar a patterns desde automatizaciones a través de la API REST. (combinación por arquitectura) | Arranca el servidor REST y usa nodos HTTP de n8n. |
 
 **Notas:** Alternativas (elige una): prompts-chat. Ojo: el uso de OAuth de suscripción vía backend privado puede contravenir los términos del proveedor [DATO NO VERIFICADO].
 

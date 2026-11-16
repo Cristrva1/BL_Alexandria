@@ -29,6 +29,8 @@ Biblioteca Python 3.10+ (`pip install graphiti-core`) que necesita una base de g
 | [Claude Code](claude-code.md) | El servidor MCP del repositorio da memoria de grafo a asistentes compatibles. | Base de grafos (Neo4j o FalkorDB) y claves de LLM primero; después arranca el servidor MCP y regístralo. |
 | [LangGraph](langgraph.md) | Guía oficial de agente con LangGraph y Graphiti. | Graphiti con su base de grafos operativa antes de integrarlo en el grafo de LangGraph. |
 | [mcp-neo4j](mcp-neo4j.md) | Explorar y consultar con un agente el grafo guardado en Neo4j (combinación por arquitectura). | Usa un usuario de solo lectura para el MCP de Neo4j. |
+| [MiroFish](mirofish.md) | Combinación recíproca: MiroFish lo enlaza como «Motor open source de grafos temporales de Zep; podría sustituir o complementar Zep Cloud para no depender del servicio. (combinación por arquitectura: MiroFish solo documenta Zep Cloud)». | Orden indicado desde MiroFish: Requiere adaptar el código; evalúalo solo si necesitas autoalojar la memoria. |
+| [Neo4j MCP (oficial)](neo4j-mcp.md) | Combinación recíproca: Neo4j MCP (oficial) lo enlaza como «Graphiti guarda su grafo de contexto en Neo4j 5.26 (entre otros backends); este servidor permite inspeccionar y consultar ese mismo grafo con Cypher. (combinación por arquitectura)». | Orden indicado desde Neo4j MCP (oficial): Instala Neo4j, ejecuta Graphiti y después conecta el servidor MCP en modo solo lectura. |
 
 **Notas:** Alternativas (elige una): cognee, graphrag.
 

@@ -29,6 +29,14 @@ Se instala con `pip install ultralytics` y usa PyTorch. La documentación comple
 | [supervision](supervision.md) | Anotar, contar y rastrear sobre resultados YOLO. | Convierte con `sv.Detections.from_ultralytics`. |
 | [Label Studio](label-studio.md) | Etiquetar datos para entrenar. (combinación por arquitectura) | Exporta en formato YOLO. |
 | [OpenCV](opencv.md) | Captura y procesado de vídeo. (combinación por arquitectura) | Lee fotogramas con OpenCV. |
+| [kornia](kornia.md) | Combinación recíproca: kornia lo enlaza como «Aumentos de datos en GPU para entrenar. (combinación por arquitectura)». | Orden indicado desde kornia: Aplica aumentos antes del entrenamiento. |
+| [SAM 3](sam3.md) | Combinación recíproca: SAM 3 lo enlaza como «Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura)». | Orden indicado desde SAM 3: Usa las cajas como prompts. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[CVAT Community](cvat.md) · [DeepFace](deepface.md)
 
 **Notas:** Sin alternativas declaradas. La AGPL obliga a publicar el código de servicios que lo usen, salvo con licencia Enterprise.
 

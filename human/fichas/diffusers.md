@@ -31,6 +31,12 @@ Se instala con `pip install --upgrade diffusers[torch]` (también hay soporte pa
 | [Transformers](transformers.md) | Codificadores de texto y componentes compartidos. | Se instala como dependencia de muchos pipelines. |
 | [cosmos](cosmos.md) | Probar modelos de mundo de NVIDIA con pipelines de difusión. (combinación por arquitectura) | Consulta si existe pipeline para el checkpoint elegido. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[HunyuanVideo](hunyuanvideo.md) · [InvokeAI](invokeai.md) · [PyTorch](pytorch.md) · [Wan2.2](wan2-2.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.43.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

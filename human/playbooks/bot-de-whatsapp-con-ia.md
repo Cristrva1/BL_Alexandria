@@ -8,7 +8,7 @@
 
 Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
 
-**Piezas iniciales:** [evolution-api](../fichas/evolution-api.md), [n8n](../fichas/n8n.md), [chatwoot](../fichas/chatwoot.md)
+**Piezas iniciales:** [evolution-api](../fichas/evolution-api.md), [dify](../fichas/dify.md), [chatwoot](../fichas/chatwoot.md)
 
 **Prepara:** Un mensaje enviado desde un número de prueba
 
@@ -16,30 +16,28 @@ Propuesta editorial; no es una integración ejecutada ni una lista completa de d
 
 **Qué comprobar:** El mensaje llega a la bandeja y puedes responder manualmente
 
-Decide primero la conexión del canal, sus políticas y posibles tarifas; las skills ayudan a construir y no ejecutan el bot
+Decide primero la conexión del canal, sus políticas y posibles tarifas; Dify y Evolution se conectan por su integración nativa, sin flujos intermedios
 
 ## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  evolution_api["evolution-api"] --> n8n["n8n"]
-  n8n["n8n"] --> chatwoot["chatwoot"]
+  evolution_api["evolution-api"] --> dify["dify"]
+  dify["dify"] --> chatwoot["chatwoot"]
 ```
 
 ## 🧩 Piezas
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [evolution-api](../fichas/evolution-api.md) | Canal de WhatsApp: recibe y envía mensajes por webhook | 10.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
-| 2 | [n8n](../fichas/n8n.md) | Orquesta el flujo: llama al LLM, guarda el lead y decide el traspaso | 211k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 3 | [n8n-mcp](../fichas/n8n-mcp.md) | Le da a tu agente de código el contexto de los nodos de n8n | 23.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
-| 4 | [n8n-skills](../fichas/n8n-skills.md) | Instrucciones y patrones para ayudar al agente a construir workflows de n8n | 6.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 5 | [chatwoot](../fichas/chatwoot.md) | Bandeja omnicanal para el traspaso a un agente humano | 39.9k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
-| 6 | [novu](../fichas/novu.md) | Notificaciones internas (email, push) cuando entra un lead | 40.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 1 | [evolution-api](../fichas/evolution-api.md) | Canal de WhatsApp: recibe y envía mensajes; integra Dify y Chatwoot de forma nativa | 10.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [dify](../fichas/dify.md) | Agente o flujo con LLM: responde, guarda el lead y decide el traspaso | 161k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 3 | [chatwoot](../fichas/chatwoot.md) | Bandeja omnicanal para el traspaso a un agente humano | 39.9k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 4 | [novu](../fichas/novu.md) | Notificaciones internas (email, push) cuando entra un lead | 40.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## 🔌 Cómo se conecta
 
-Evolution API mantiene la sesión de WhatsApp y reenvía cada mensaje a un webhook de n8n. El workflow de n8n arma el contexto, llama al LLM, guarda el lead y, si detecta una intención de compra o un problema, abre la conversación en Chatwoot para que responda una persona. Novu avisa al equipo. Con n8n-mcp y n8n-skills, tu agente de código construye y corrige esos workflows por ti.
+Evolution API mantiene la sesión de WhatsApp y, mediante su integración nativa con Dify, pasa cada mensaje a una app de Dify (agente o chatflow) que arma el contexto, llama al LLM y guarda el lead. La integración nativa de Evolution con Chatwoot lleva las conversaciones a la bandeja para que responda una persona cuando hace falta. Novu avisa al equipo cuando Dify detecta un lead (por ejemplo, con una herramienta HTTP).
 
 ## 🚫 Cuándo NO usar esta receta
 
@@ -48,7 +46,7 @@ Si solo necesitas respuestas automáticas simples sin traspaso a humano, basta c
 ## 🔁 Variantes
 
 - En lugar de [evolution-api](../fichas/evolution-api.md): [whatsapp-web.js](../fichas/whatsapp-web-js.md), [WAHA](../fichas/waha.md)
-- En lugar de [n8n](../fichas/n8n.md): [activepieces](../fichas/activepieces.md), [huginn](../fichas/huginn.md), [Windmill](../fichas/windmill.md)
+- En lugar de [dify](../fichas/dify.md): [Sim](../fichas/sim.md), [RAGFlow](../fichas/ragflow.md)
 
 ---
 

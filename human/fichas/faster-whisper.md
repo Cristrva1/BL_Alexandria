@@ -29,6 +29,15 @@ Requiere Python 3.9+ y se instala con `pip install faster-whisper`. En GPU neces
 | [whisperX](whisperx.md) | Backend de transcripción de WhisperX. | Instala WhisperX, que lo usa por debajo. |
 | [Pipecat](pipecat.md) | STT local en agentes de voz. (combinación por arquitectura) | Usa un servicio STT basado en faster-whisper. |
 | [MoviePy](moviepy.md) | Generar subtítulos sobre vídeo. (combinación por arquitectura) | Convierte los segmentos a SRT. |
+| [AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) | Combinación recíproca: AI-Youtube-Shorts-Generator lo enlaza como «Transcripción local en el modo offline». | Orden indicado desde AI-Youtube-Shorts-Generator: Instala `requirements-local.txt`. |
+| [MoneyPrinterTurbo](moneyprinterturbo.md) | Combinación recíproca: MoneyPrinterTurbo lo enlaza como «Subtítulos locales con faster-whisper, citado en el README». | Orden indicado desde MoneyPrinterTurbo: Activa faster-whisper en la configuración. |
+| [OBS Studio](obs-studio.md) | Combinación recíproca: OBS Studio lo enlaza como «Subtitular las grabaciones. (combinación por arquitectura)». | Orden indicado desde OBS Studio: Transcribe el audio exportado. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[pyannote.audio](pyannote-audio.md)
 
 **Notas:** Alternativas (elige una): whisper-cpp.
 

@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige una receta sencilla y compara el render con un criterio de composición explícito
 **Qué comprobar:** Puedes inspeccionar escena y resultados del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `three.js`, `claude-code`, `codex`
+**Combina con:** `three.js`, `claude-code`, `codex`, `blender`, `globalbuildingatlas`
 **Alternativas (elige una):** `threejs-skills`
 
 ## `agency-agents`
@@ -279,7 +279,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Valida un archivo de identidad y corrige una referencia de token rota
 **Qué comprobar:** Puedes revisar el JSON de hallazgos y repetir la validación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `impeccable`, `claude-code`
+**Combina con:** `tailwindcss`, `impeccable`, `claude-code`, `design-dna`, `open-design`, `stitch-sdk`
 
 ## `dream-loop`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
@@ -711,7 +711,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala un skill de copy y crea dos propuestas a partir de un brief ficticio
 **Qué comprobar:** Puedes comparar audiencia, mensaje y llamada a la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `posthog`, `mautic`, `open-seo`
+**Combina con:** `claude-code`, `posthog`, `mautic`, `open-seo`, `humanizer`, `linkedin-agent-skill`
 
 ## `minimalist-entrepreneur-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,reference
@@ -802,7 +802,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide dos alternativas de timing para un cambio de estado y prueba cuál comunica mejor la transición
 **Qué comprobar:** Puedes justificar duración, easing y orden
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `gsap`, `motion`
+**Combina con:** `claude-code`, `gsap`, `motion`, `animejs`, `gsap-skills`, `scenejs`
 
 ## `no-ai-slop`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
@@ -923,7 +923,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Investiga una pequeña muestra pública y revisa origen, fecha y coste antes de ampliar la búsqueda
 **Qué comprobar:** Puedes rastrear las observaciones a publicaciones concretas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `postiz-app`
+**Combina con:** `claude-code`, `codex`, `postiz-app`, `instagram-agent-skill`
 **Alternativas (elige una):** `last30days-skill`
 
 ## `stitch-skills`
@@ -954,7 +954,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta Stitch y pide una sola pantalla a partir de un brief antes de construir una app completa
 **Qué comprobar:** Puedes revisar diseño y recursos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`, `claude-code`, `gemini-cli`, `stitch-sdk`
+**Combina con:** `codex`, `claude-code`, `gemini-cli`, `stitch-sdk`, `taste-skill`
 
 ## `stop-slop`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,prompts,docs
@@ -1046,7 +1046,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un juego con una sola mecánica y recursos procedurales antes de añadir servicios de assets
 **Qué comprobar:** Puedes jugar y comprobar reglas de victoria y reinicio
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `three.js`, `codex`, `claude-code`
+**Combina con:** `three.js`, `codex`, `claude-code`, `pixelfx`, `planck-js`, `react-three-rapier`
 
 ## `threejs-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference

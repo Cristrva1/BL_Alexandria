@@ -30,7 +30,13 @@ Se instala con `pip install marimo` o conda (`marimo tutorial intro` para empeza
 | [Polars](polars.md) | DataFrames con visualización interactiva. | Instala Polars. |
 | [Ollama](ollama.md) | Modelo local para el asistente de IA del editor. (combinación por arquitectura) | Configura el proveedor de IA de marimo apuntando a Ollama. |
 
-**Notas:** Sin alternativas declaradas; compite con Jupyter (solo anotado).
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) · [D3.js](d3.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [dlt (data load tool)](dlt.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [machine-learning-for-trading](machine-learning-for-trading.md) · [ML for Beginners](ml-for-beginners.md) · [nautilus_trader](nautilus-trader.md) · [ODM](odm.md) · [Panel](panel.md) · [qlib](qlib.md) · [tensorflow](tensorflow.md) · [vectorbt](vectorbt.md) · [WebODM](webodm.md)
+
+**Notas:** Alternativa (elige una): jupyterlab.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.25.2 (2026-10-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -108,6 +114,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI
 - **Etiquetas:** `notebooks` `data` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [JupyterLab](jupyterlab.md) | 15.4k | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
 
 ## Enlaces
 

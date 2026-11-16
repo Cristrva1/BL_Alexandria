@@ -12,7 +12,7 @@
 
 ## ¿Qué es?
 
-Librería y CLI de Python de código abierto que convierte documentos a formatos listos para aplicaciones de IA generativa.
+Docling, librería y CLI de Python que convierte documentos a formatos listos para IA generativa. Nació en IBM Research y hoy está alojada en LF AI & Data (Linux Foundation). Licencia MIT. Es muy activa (~71k estrellas, v2.150.x).
 
 ## ¿Qué hace?
 
@@ -29,10 +29,19 @@ Lee PDF, DOCX, PPTX, XLSX, HTML, EPUB, imágenes, audio, video, correo y más. E
 | [LlamaIndex](llama-index.md) | Integración nativa documentada: Docling hace la lectura y LlamaIndex el indexado y la consulta RAG. | Mismo entorno Python; instala docling y luego los paquetes de integración de LlamaIndex. |
 | [Haystack](haystack.md) | Integración nativa documentada para usar Docling como conversor en pipelines de Haystack. | Mismo entorno Python. Elige LlamaIndex o Haystack como framework, no los dos. |
 | [Qdrant](qdrant.md) | Qdrant documenta cómo indexar la salida de Docling para búsqueda semántica. | Qdrant en marcha antes de indexar; Docling no lo necesita para convertir. |
+| [langchain](langchain.md) | Integración nativa documentada (DoclingLoader) para cargar documentos en LangChain. | Mismo entorno Python; elige un solo framework RAG. |
 
-**Notas:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones.
+## Usado por
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/docling-project/docling/blob/main/README.md) · [2](https://docling-project.github.io/docling/integrations/llamaindex/) · [3](https://docling-project.github.io/docling/integrations/haystack/) · [4](https://qdrant.tech/documentation/data-management/docling/)</sub>
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[annas-mcp](annas-mcp.md) · [book-to-skill](book-to-skill.md) · [DeepTutor](deeptutor.md) · [graphrag](graphrag.md) · [kotaemon](kotaemon.md) · [LightRAG](lightrag.md)
+
+**Notas:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones. Los modelos de diseño se descargan la primera vez: en entornos sin red, prepáralos antes.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.150.1 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/docling-project/docling/blob/main/README.md) · [2](https://docling-project.github.io/docling/integrations/llamaindex/) · [3](https://docling-project.github.io/docling/integrations/haystack/) · [4](https://qdrant.tech/documentation/data-management/docling/) · [5](https://docling-project.github.io/docling/integrations/langchain/)</sub>
 
 ## Acceso, coste y equipo
 

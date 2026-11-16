@@ -29,6 +29,7 @@ Se usa instalando el port de cada aplicación o copiando los valores de color (h
 | [tailwindcss](tailwindcss.md) | Usar la paleta como colores del tema mediante el port de Tailwind listado en el README. | Copia el port y regístralo en `@theme`. |
 | [daisyUI](daisyui.md) | Crear un tema daisyUI propio con los colores de Flexoki. (combinación por arquitectura) | Define un tema personalizado con las variables de la paleta. |
 | [Excalidraw](excalidraw.md) | Paleta coherente para diagramas y documentación visual. (combinación por arquitectura) | Configura los colores personalizados en Excalidraw. |
+| [normalize.css](normalize-css.md) | Combinación recíproca: normalize.css lo enlaza como «Paleta de color sobre una base de estilos normalizada en un sitio de CSS propio. (combinación por arquitectura)». | Orden indicado desde normalize.css: Importa normalize.css y define las variables de color de Flexoki. |
 
 **Notas:** Sin alternativas declaradas.
 
