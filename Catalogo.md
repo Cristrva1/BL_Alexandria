@@ -310,7 +310,7 @@ _Índices de código, análisis, calidad, benchmarks y herramientas de desarroll
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
-| [ast-grep](human/fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| ⭐ [ast-grep](human/fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [SWE-bench](human/fichas/swe-bench.md) | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | API de IA opcional | 📚 librería/SDK | 🔴 pesado |
 
 ### CLIs y SDKs de desarrollo
@@ -618,7 +618,7 @@ _Agentes de investigación, análisis cuantitativo, backtesting y bots de ejempl
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
-| [machine-learning-for-trading](human/fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | API de IA opcional | 📂 catálogo/recurso | 🔴 pesado |
+| ⭐ [machine-learning-for-trading](human/fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | API de IA opcional | 📂 catálogo/recurso | 🔴 pesado |
 
 ## 🗂️ 15. Organizar notas, archivos y servicios personales
 
@@ -1331,7 +1331,7 @@ _Navegadores, librerías de pruebas y agentes que interactúan con sitios web. P
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
-| [Lightpanda](human/fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
+| ⭐ [Lightpanda](human/fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 
 ### Directorios y recursos de navegador
 

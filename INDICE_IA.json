@@ -7343,7 +7343,7 @@
    "stars": 42045,
    "gh": "lightpanda-io/browser",
    "lib": false,
-   "pick": false,
+   "pick": true,
    "one": "Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.",
    "alt": [],
    "doc": "human/fichas/lightpanda.md",
@@ -10038,7 +10038,7 @@
    "stars": 16582,
    "gh": "ast-grep/ast-grep",
    "lib": false,
-   "pick": false,
+   "pick": true,
    "one": "CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código.",
    "alt": [
     "semgrep"
@@ -18722,7 +18722,7 @@
    "gh": "stefan-jansen/machine-learning-for-trading",
    "github_id": 132754148,
    "lib": false,
-   "pick": false,
+   "pick": true,
    "one": "Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.",
    "alt": [],
    "doc": "human/fichas/machine-learning-for-trading.md",

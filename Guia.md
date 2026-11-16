@@ -1695,7 +1695,7 @@ claude plugin install floorplan@floorplan` (comprobar los pasos completos en la 
 
 ### Calidad, seguridad y benchmarks de código
 
-#### 🛡️ ast-grep
+#### 🛡️ ast-grep ⭐
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 16.6k<br>
 **Qué es:** CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
@@ -3276,7 +3276,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 
 ### Ejemplos y aprendizaje
 
-#### 📊 machine-learning-for-trading
+#### 📊 machine-learning-for-trading ⭐
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 21.8k<br>
 **Qué es:** Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
@@ -7092,7 +7092,7 @@ playwright-cli --help` (comprobar los pasos completos en la ficha).<br>
 
 ### Navegadores y servidores de ejecución
 
-#### 🌐 Lightpanda
+#### 🌐 Lightpanda ⭐
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 42k<br>
 **Qué es:** Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>

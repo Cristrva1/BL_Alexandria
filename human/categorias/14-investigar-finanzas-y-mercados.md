@@ -15,6 +15,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [daily_stock_analysis](../fichas/daily-stock-analysis.md) | Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario. | Depende de la ruta elegida |
 | [dexter](../fichas/dexter.md) | Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. | Depende de la ruta elegida |
 | [qlib](../fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | API de IA opcional |
+| [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | API de IA opcional |
 
 ## Secciones
 

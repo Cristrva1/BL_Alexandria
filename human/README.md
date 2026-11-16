@@ -50,14 +50,14 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 4 | [🕷️ Buscar, extraer y monitorear información web](categorias/04-scraping-b-squeda-research-web.md) | 20 | [firecrawl](fichas/firecrawl.md), [Scrapegraph-ai](fichas/scrapegraph-ai.md), [SearXNG](fichas/searxng.md), [yt-dlp](fichas/yt-dlp.md) |
 | 5 | [🔌 Conectar herramientas con MCP](categorias/05-mcp-conectividad.md) | 23 | [FastMCP](fichas/fastmcp.md), [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md), [Context7](fichas/context7.md), [Playwright MCP](fichas/playwright-mcp.md), [MCP for Beginners](fichas/mcp-for-beginners.md) |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](categorias/06-memoria-rag-llm-ops.md) | 23 | [claude-mem](fichas/claude-mem.md), [RAGFlow](fichas/ragflow.md), [Qdrant](fichas/qdrant.md) |
-| 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 11 | [Repomix](fichas/repomix.md), [GitHub CLI](fichas/cli.md) |
+| 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 11 | [Repomix](fichas/repomix.md), [ast-grep](fichas/ast-grep.md), [GitHub CLI](fichas/cli.md) |
 | 8 | [🏠 Chats, modelos locales y espacios privados](categorias/08-ia-local-modelos-chats-workspaces.md) | 26 | [Ollama](fichas/ollama.md), [Open WebUI](fichas/open-webui.md), [Jan](fichas/jan.md), [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
 | 9 | [🎨 Diseñar y construir interfaces web](categorias/09-dise-o-ui-frontend.md) | 29 | [ui](fichas/ui.md), [daisyUI](fichas/daisyui.md), [Excalidraw](fichas/excalidraw.md), [CopilotKit](fichas/copilotkit.md) |
 | 10 | [📊 Dashboards, analítica y mapas](categorias/10-anal-tica-visualizaci-n.md) | 21 | [Umami](fichas/umami.md), [Apache Superset](fichas/superset.md), [WrenAI](fichas/wrenai.md), [Recharts](fichas/recharts.md) |
 | 11 | [🖼️ Generar y editar imágenes con IA](categorias/11-generaci-n-de-imagen-visi-n.md) | 8 | [ComfyUI](fichas/comfyui.md), [FLUX.2](fichas/flux2.md), [rembg](fichas/rembg.md) |
 | 12 | [🎬 Editar, grabar y generar video](categorias/12-audio-voz-video.md) | 15 | [FFmpeg](fichas/ffmpeg.md), [MoneyPrinterTurbo](fichas/moneyprinterturbo.md), [Wan2.2](fichas/wan2-2.md) |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](categorias/13-documentos-presentaciones.md) | 19 | [Docling](fichas/docling.md), [PaddleOCR](fichas/paddleocr.md), [OCRmyPDF](fichas/ocrmypdf.md), [Stirling-PDF](fichas/stirling-pdf.md) |
-| 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 19 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md) |
+| 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 19 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md), [machine-learning-for-trading](fichas/machine-learning-for-trading.md) |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](categorias/15-notas-archivos-y-servicios-personales.md) | 27 | [Anytype Desktop](fichas/anytype-ts.md) |
 | 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 26 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](categorias/17-mensajeria-chatbots.md) | 10 | [whatsapp-web.js](fichas/whatsapp-web-js.md), [Typebot](fichas/typebot.md) |
@@ -75,7 +75,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 29 | [🎬 Audio, transcripción, voz y música](categorias/29-audio-voz-musica.md) | 26 | [whisper.cpp](fichas/whisper-cpp.md), [Kokoro](fichas/kokoro.md), [Pipecat](fichas/pipecat.md), [AudioCraft](fichas/audiocraft.md) |
 | 30 | [🎬 Video con código y agentes creativos](categorias/30-video-codigo-agentes.md) | 21 | [HyperFrames](fichas/hyperframes.md), [MoviePy](fichas/moviepy.md), [Remotion Agent Skills](fichas/skills-remotion.md) |
 | 31 | [📄 Presentaciones, diagramas y explicación visual](categorias/31-presentaciones-diagramas.md) | 8 | [Slidev](fichas/slidev.md), [Mermaid](fichas/mermaid.md) |
-| 32 | [🕷️ Navegadores y automatización web](categorias/32-navegadores-automatizacion-web.md) | 11 | [Stagehand](fichas/stagehand.md) |
+| 32 | [🕷️ Navegadores y automatización web](categorias/32-navegadores-automatizacion-web.md) | 11 | [Stagehand](fichas/stagehand.md), [Lightpanda](fichas/lightpanda.md) |
 
 ## Construye un flujo completo
 
