@@ -64263,7 +64263,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "codex"
+        "claude-code",
+        "codex",
+        "playwright-mcp"
       ],
       "alt": []
     },
@@ -64489,7 +64491,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "nextcloud-server",
+        "adguardhome",
+        "n8n"
+      ],
       "alt": []
     },
     {
@@ -64607,7 +64613,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Descomponer un proyecto web; Revisar orden y dependencias de tareas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
       "alt": []
     },
     {
@@ -64725,7 +64735,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "codex",
+        "t3code",
+        "context7"
+      ],
       "alt": []
     },
     {
@@ -65082,7 +65096,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "supabase",
+        "n8n",
+        "freedomain"
+      ],
       "alt": []
     },
     {
@@ -65312,7 +65330,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar infraestructura para una demo; Comparar niveles gratuitos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "freedomain",
+        "supabase",
+        "coolify"
+      ],
       "alt": []
     },
     {
@@ -65428,7 +65450,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender DNS; Evaluar un dominio para un proyecto personal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "coolify",
+        "free-for-dev",
+        "masterdnsvpn"
+      ],
       "alt": []
     },
     {
@@ -65545,7 +65571,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "freedomain",
+        "free-for-dev",
+        "casaos"
+      ],
       "alt": []
     },
     {
@@ -65786,7 +65816,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
       "alt": []
     },
     {
@@ -66025,7 +66059,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
       "alt": []
     },
     {
@@ -66140,7 +66178,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un backend para una web; Conectar un agente a un esquema de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pgvector",
+        "n8n",
+        "coolify"
+      ],
       "alt": []
     },
     {
@@ -69418,7 +69460,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "transformers",
-        "trl"
+        "trl",
+        "diffusers"
       ],
       "alt": []
     },
@@ -69887,9 +69930,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar un texto localmente; Probar un modelo de visión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "pytorch",
         "peft",
         "trl",
-        "pytorch"
+        "vllm"
       ],
       "alt": []
     },
@@ -70007,7 +70051,8 @@
       "combines_with": [
         "transformers",
         "peft",
-        "unsloth"
+        "unsloth",
+        "vllm"
       ],
       "alt": []
     },

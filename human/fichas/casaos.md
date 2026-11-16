@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+CasaOS, sistema para nube personal sobre Docker, de IceWhaleTech (ZimaSpace). Licencia Apache-2.0. Tiene ~38k estrellas, pero su última release es v0.4.15 (diciembre de 2024), aunque el repo sigue recibiendo cambios.
+
+## ¿Qué hace?
+
+Ofrece un panel web para gestionar un servidor doméstico, archivos y una tienda de apps con instalación en un clic, además de acceso a miles de apps del ecosistema Docker. Funciona en ZimaBoard, NUC, Raspberry Pi o equipos viejos.
+
+## ¿Cómo lo hace?
+
+Se instala con un script en Debian, Ubuntu, Raspberry Pi OS y similares, y requiere Docker.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [server](nextcloud-server.md) | Nube de archivos como app. (combinación por arquitectura) | Instala Nextcloud desde la tienda o como contenedor. |
+| [AdGuardHome](adguardhome.md) | DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura) | Instálalo como app. |
+| [n8n](n8n.md) | Automatizaciones en el servidor doméstico. (combinación por arquitectura) | Instálalo como contenedor. |
+
+**Notas:** Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v0.4.15 (2024-12-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/IceWhaleTech/CasaOS/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita API de IA; equipo, discos y energía se pagan aparte |
 | Equipo | Preparación según la ruta elegida. Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar |
-
-La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes
-
-## Qué puedes hacer con él
-
-Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.
-
-## Por qué destaca
-
-Usos propuestos: Organizar servicios domésticos; Explorar un servidor personal.
-
-## Cómo funciona
 
 La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes
 

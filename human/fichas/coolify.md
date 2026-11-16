@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Coolify, plataforma autoalojada para desplegar aplicaciones, bases de datos y servicios en tus propios servidores, de coollabsio. Licencia Apache-2.0. Es muy popular (~66k estrellas), activa y financiada por patrocinios.
+
+## ¿Qué hace?
+
+Es una alternativa autoalojada a Heroku, Netlify y Vercel. Despliega desde GitHub, GitLab, Bitbucket o Gitea con Nixpacks, Railpack, Dockerfile, Compose o imágenes. Gestiona bases de datos, backups, SSL y dominios, con dashboard, API, CLI y MCP. Los recursos siguen funcionando si dejas de usarlo.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en un servidor compatible (VPS, bare metal, Raspberry Pi); solo necesita SSH hacia los servidores gestionados.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [supabase](supabase.md) | Autoalojar Supabase como servicio. (combinación por arquitectura) | Despliega Supabase desde Coolify. |
+| [n8n](n8n.md) | Autoalojar n8n. (combinación por arquitectura) | Despliega n8n desde Coolify. |
+| [FreeDomain](freedomain.md) | Dominio gratuito para las apps. (combinación por arquitectura) | Apunta el DNS al servidor. |
+
+**Notas:** Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.7.5 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/coollabsio/coolify/blob/main/README.md) · [2](https://coolify.io/docs/installation)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente |
 | Coste | El coste depende del proveedor o la ruta. Self-host abierto requiere servidores y mantenimiento; Cloud es un servicio de pago separado |
 | Equipo | Preparación según la ruta elegida. Servidor compatible; Docker; dominio opcional; aplicación de prueba |
-
-Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente
-
-## Qué puedes hacer con él
-
-Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.
-
-## Por qué destaca
-
-Usos propuestos: Alojar una demo web; Administrar despliegues en servidor propio.
-
-## Cómo funciona
 
 Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente
 

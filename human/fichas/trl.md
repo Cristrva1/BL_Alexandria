@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+TRL, librería de Hugging Face para post-entrenar modelos fundacionales (SFT, GRPO, DPO, reward modeling…). Licencia Apache-2.0. Es madura y muy activa (~20k estrellas, v1.18.0).
+
+## ¿Qué hace?
+
+Ofrece trainers como SFTTrainer, GRPOTrainer, DPOTrainer y RewardTrainer. AsyncGRPOTrainer, ya estable, separa la generación (en un servidor vLLM) del entrenamiento para acelerar GRPO.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install trl` y escala con Accelerate, DeepSpeed y PEFT. También tiene CLI.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | Modelos base. | Instala Transformers. |
+| [PEFT](peft.md) | LoRA y adaptadores. | Instala `peft`. |
+| [Unsloth](unsloth.md) | Entrenamiento acelerado compatible con los trainers de TRL. | Carga el modelo con Unsloth y entrena con TRL. |
+| [vLLM](vllm.md) | Generación en AsyncGRPOTrainer. | Levanta el servidor vLLM. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.18.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/trl/blob/main/README.md) · [2](https://huggingface.co/docs/trl/async_grpo_trainer)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. SFT, DPO y GRPO son métodos distintos; la disponibilidad de un trainer no garantiza una mejora sin evaluar el resultado |
 | Coste | Sin pago a un modelo en la ruta básica. Entrenamiento propio sin API obligatoria; cómputo y posibles modelos de recompensa tienen costes |
 | Equipo | Preparación según la ruta elegida. Python; Transformers; modelo y datos; GPU según método |
-
-SFT, DPO y GRPO son métodos distintos; la disponibilidad de un trainer no garantiza una mejora sin evaluar el resultado
-
-## Qué puedes hacer con él
-
-Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más.
-
-## Por qué destaca
-
-Usos propuestos: Aprender ajuste supervisado; Estudiar DPO o GRPO.
-
-## Cómo funciona
 
 SFT, DPO y GRPO son métodos distintos; la disponibilidad de un trainer no garantiza una mejora sin evaluar el resultado
 
@@ -94,14 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Transformers; modelo y datos; GPU según método
 - **Etiquetas:** `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
-| [PEFT](peft.md) | 21.9k | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. |
-| [Unsloth](unsloth.md) | 79.5k | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. |
 
 ## Enlaces
 

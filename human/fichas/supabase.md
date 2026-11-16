@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Supabase, plataforma de desarrollo sobre PostgreSQL que ofrece funciones similares a Firebase con herramientas open source. Licencia Apache-2.0. Es muy madura (~115k estrellas) y tiene servicio alojado y opción de autoalojamiento.
+
+## ¿Qué hace?
+
+Ofrece base de datos Postgres, autenticación, APIs REST y GraphQL autogeneradas, Realtime, funciones de base de datos y Edge Functions, almacenamiento de archivos, vectores para IA y un dashboard.
+
+## ¿Cómo lo hace?
+
+Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo local. Combina servicios como PostgREST, Realtime (Elixir) y Storage, con librerías cliente modulares por lenguaje.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [pgvector](pgvector.md) | Extensión de vectores para embeddings. | Activa la extensión en la base de datos. |
+| [n8n](n8n.md) | Nodo de Supabase en flujos de automatización. (combinación por arquitectura) | Configura las credenciales en n8n. |
+| [coolify](coolify.md) | Autoalojar Supabase. (combinación por arquitectura) | Despliega desde Coolify. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.26.08 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/supabase/supabase/blob/master/README.md) · [2](https://supabase.com/docs/guides/hosting/overview)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas |
 | Coste | El coste depende del proveedor o la ruta. La base no exige LLM; Cloud, almacenamiento, cómputo y extras tienen planes y cuotas; self-host requiere infraestructura |
 | Equipo | Preparación según la ruta elegida. Proyecto de prueba o entorno local; cuenta para Cloud; cliente MCP opcional |
-
-El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas
-
-## Qué puedes hacer con él
-
-Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un backend para una web; Conectar un agente a un esquema de prueba.
-
-## Cómo funciona
 
 El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas
 

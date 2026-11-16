@@ -242,7 +242,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Estudia el ejemplo LoRA y comprueba qué parámetros serán entrenables
 **Qué comprobar:** Puedes distinguir modelo base de adaptador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `trl`
+**Combina con:** `transformers`, `trl`, `diffusers`
 
 ## `pytorch`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -363,7 +363,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un pipeline de clasificación con un texto breve y revisa sus etiquetas
 **Qué comprobar:** Puedes identificar modelo descargado y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `peft`, `trl`, `pytorch`
+**Combina con:** `pytorch`, `peft`, `trl`, `vllm`
 
 ## `trl`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -393,7 +393,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige el ejemplo SFT y revisa formato de datos antes de probar métodos de recompensa
 **Qué comprobar:** Puedes relacionar datos, método y checkpoint
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `peft`, `unsloth`
+**Combina con:** `transformers`, `peft`, `unsloth`, `vllm`
 
 ## `unsloth`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,local,python

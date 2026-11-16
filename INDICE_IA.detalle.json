@@ -33261,9 +33261,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una biblioteca de modelos y no un agente de código ni una aplicación lista para todo hardware",
    "combines_with": [
+    "pytorch",
     "peft",
     "trl",
-    "pytorch"
+    "vllm"
    ],
    "alternatives": [],
    "repo": "https://github.com/huggingface/transformers",
@@ -33358,7 +33359,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Transformers, la librería de definición de modelos de Hugging Face para texto, visión, audio, vídeo y multimodal. Licencia Apache-2.0. Es muy madura (~169k estrellas, v5.23.0).",
+   "que_hace": "Ofrece modelos preentrenados para inferencia y entrenamiento, con APIs como `pipeline`, `Trainer` y `generate`, y acceso a los checkpoints del Hub. Actúa como pivote de compatibilidad entre frameworks de entrenamiento (Axolotl, Unsloth, DeepSpeed…) y motores de inferencia (vLLM, SGLang, TGI).",
+   "como_lo_hace": "Requiere Python 3.11+ y PyTorch 2.6+. Se instala con `pip install \"transformers[torch]\"` o `uv pip install`.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Backend de ejecución.",
+     "orden_instalacion": "Instala PyTorch antes."
+    },
+    {
+     "id": "peft",
+     "motivo": "Adaptadores eficientes integrados.",
+     "orden_instalacion": "Instala `peft` y carga adaptadores."
+    },
+    {
+     "id": "trl",
+     "motivo": "Post-entrenamiento sobre modelos de Transformers.",
+     "orden_instalacion": "Instala `trl`."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Motor de inferencia compatible con las definiciones de Transformers.",
+     "orden_instalacion": "Sirve el checkpoint con vLLM."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/huggingface/transformers/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "huggingface/transformers",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v5.23.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "pytorch": {
    "name": "PyTorch",
@@ -33609,7 +33654,8 @@
    "limits": "Reducir parámetros entrenables no elimina toda la memoria del modelo base; los ejemplos de hardware no se generalizan a cualquier modelo",
    "combines_with": [
     "transformers",
-    "trl"
+    "trl",
+    "diffusers"
    ],
    "alternatives": [],
    "repo": "https://github.com/huggingface/peft",
@@ -33704,7 +33750,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "PEFT, librería de Hugging Face para fine-tuning eficiente en parámetros (LoRA y similares). Licencia Apache-2.0. Es madura (~22k estrellas, v0.21.3).",
+   "que_hace": "Adapta modelos grandes entrenando una pequeña fracción de parámetros, lo que reduce el coste de cómputo y almacenamiento. Gestiona adaptadores para entrenamiento e inferencia.",
+   "como_lo_hace": "Se instala con `pip install peft` y está integrada con Transformers, Diffusers y Accelerate.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Integración nativa.",
+     "orden_instalacion": "Instala Transformers primero."
+    },
+    {
+     "id": "trl",
+     "motivo": "Entrenar con LoRA en SFT, DPO o GRPO.",
+     "orden_instalacion": "Pasa la configuración de PEFT al trainer."
+    },
+    {
+     "id": "diffusers",
+     "motivo": "Gestión de adaptadores en modelos de difusión.",
+     "orden_instalacion": "Carga adaptadores LoRA en el pipeline."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/huggingface/peft/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "huggingface/peft",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.21.3 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "trl": {
    "name": "TRL",
@@ -33726,7 +33811,8 @@
    "combines_with": [
     "transformers",
     "peft",
-    "unsloth"
+    "unsloth",
+    "vllm"
    ],
    "alternatives": [],
    "repo": "https://github.com/huggingface/trl",
@@ -33821,7 +33907,52 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "TRL, librería de Hugging Face para post-entrenar modelos fundacionales (SFT, GRPO, DPO, reward modeling…). Licencia Apache-2.0. Es madura y muy activa (~20k estrellas, v1.18.0).",
+   "que_hace": "Ofrece trainers como SFTTrainer, GRPOTrainer, DPOTrainer y RewardTrainer. AsyncGRPOTrainer, ya estable, separa la generación (en un servidor vLLM) del entrenamiento para acelerar GRPO.",
+   "como_lo_hace": "Se instala con `pip install trl` y escala con Accelerate, DeepSpeed y PEFT. También tiene CLI.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Modelos base.",
+     "orden_instalacion": "Instala Transformers."
+    },
+    {
+     "id": "peft",
+     "motivo": "LoRA y adaptadores.",
+     "orden_instalacion": "Instala `peft`."
+    },
+    {
+     "id": "unsloth",
+     "motivo": "Entrenamiento acelerado compatible con los trainers de TRL.",
+     "orden_instalacion": "Carga el modelo con Unsloth y entrena con TRL."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Generación en AsyncGRPOTrainer.",
+     "orden_instalacion": "Levanta el servidor vLLM."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/huggingface/trl/blob/main/README.md",
+    "https://huggingface.co/docs/trl/async_grpo_trainer"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "huggingface/trl",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.18.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "llm-course": {
    "name": "LLM Course",
@@ -57785,7 +57916,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación",
    "combines_with": [
-    "codex"
+    "claude-code",
+    "codex",
+    "playwright-mcp"
    ],
    "alternatives": [],
    "repo": "https://github.com/vercel-labs/agent-desktop",
@@ -57886,7 +58019,46 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "agent-desktop, CLI y biblioteca de Vercel Labs para que un agente use apps de escritorio en macOS, Windows y Linux a través del árbol de accesibilidad del sistema. Licencia Apache-2.0. Tiene ~24k estrellas y está activo.",
+   "que_hace": "Lee el árbol de accesibilidad de una app y lo devuelve como JSON, con una referencia para cada elemento accionable; así el agente actúa sin capturas de pantalla ni comparación de píxeles. Incluye sesiones, sandboxes y trazas. El README advierte que los snapshots pueden contener datos privados.",
+   "como_lo_hace": "Se instala con `npm install -g agent-desktop` (con binarios nativos x64 y ARM64) o `brew install agent-desktop`. En macOS requiere el permiso de Accesibilidad. Se expone como servidor MCP (`agent-desktop mcp`) o como skill (`npx skills add …`).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Instalable como skill o MCP.",
+     "orden_instalacion": "Añade la skill o el servidor MCP."
+    },
+    {
+     "id": "codex",
+     "motivo": "Cliente MCP stdio. (combinación por arquitectura)",
+     "orden_instalacion": "Añade `agent-desktop mcp` a la configuración."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Complemento para la parte web. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Playwright MCP en el navegador y agent-desktop en apps nativas."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; enfoque complementario al de computer-use-preview (accesibilidad frente a píxeles).",
+   "descripcion_fuentes": [
+    "https://github.com/vercel-labs/agent-desktop/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "vercel-labs/agent-desktop",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "latest_release": "v1.3.1 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "edge-tts": {
    "name": "edge-tts",
@@ -60168,7 +60340,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta Claude Code, Codex y Antigravity; la licencia BUSL-1.1 y sus límites no deben presentarse como MIT sin restricciones; local aquí incluye dictado, no todo agente",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "opencode"
+   ],
    "alternatives": [],
    "repo": "https://github.com/eneskirca/nodeterm",
    "homepage": "https://nodeterm.dev",
@@ -60267,7 +60443,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "nodeterm, gestor de terminales y sesiones de agentes sobre un lienzo infinito, de @eneskirca. Licencia Business Source License 1.1 (no es open source; GitHub muestra NOASSERTION). Tiene ~2.5k estrellas y busca patrocinadores fundadores.",
+   "que_hace": "Coloca terminales reales como nodos arrastrables en un lienzo con zoom, y cada proyecto funciona además como tablero tipo Trello de sesiones de Claude Code en vivo. Está pensado para personas con TDAH o flujos de trabajo dispersos.",
+   "como_lo_hace": "Hay app de escritorio para macOS, Linux y Windows (beta), con `brew install --cask nodeterm`, edición servidor autoalojada para usarlo desde el navegador y app compañera para iOS.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Sesiones de Claude Code integradas en el tablero.",
+     "orden_instalacion": "Instala Claude Code y añade nodos de sesión."
+    },
+    {
+     "id": "codex",
+     "motivo": "Otro agente de terminal en un nodo. (combinación por arquitectura)",
+     "orden_instalacion": "Abre Codex en un nodo de terminal."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Otro agente de terminal en un nodo. (combinación por arquitectura)",
+     "orden_instalacion": "Abre OpenCode en un nodo de terminal."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Licencia BUSL: revisa las restricciones de uso.",
+   "descripcion_fuentes": [
+    "https://github.com/eneskirca/nodeterm/blob/main/README.md",
+    "https://nodeterm.dev/docs"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "eneskirca/nodeterm",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.5.1 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
   },
   "codex-chatgpt-web": {
    "name": "codex-chatgpt-web",
@@ -60286,7 +60502,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración",
-   "combines_with": [],
+   "combines_with": [
+    "codex",
+    "t3code",
+    "context7"
+   ],
    "alternatives": [],
    "repo": "https://github.com/miuuyy/codex-chatgpt-web",
    "homepage": "",
@@ -60385,7 +60605,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Integración no oficial de terceros que permite usar en Codex los modelos de ChatGPT Web de tu cuenta, incluido Pro, de @miuuyy. Licencia MIT. Tiene ~16k estrellas.",
+   "que_hace": "Envía los mensajes a través de tu sesión iniciada en ChatGPT Web, con los límites de esa cuenta, desde el selector de modelos nativo de Codex. En modo «Full harness», ChatGPT accede a los archivos, la terminal y las herramientas de la tarea mediante MCP.",
+   "como_lo_hace": "Se distribuye como lanzador descargable con navegador integrado; el modo MCP requiere un túnel y una clave. El propio README advierte que es automatización de navegador no oficial (no la API de OpenAI), que los cambios de la interfaz pueden romperla, que el perfil del navegador es un artefacto sensible y que el listener de loopback es accesible para otros procesos del mismo usuario.",
+   "combina_con": [
+    {
+     "id": "codex",
+     "motivo": "Cliente que integra.",
+     "orden_instalacion": "Instala Codex y luego el lanzador."
+    },
+    {
+     "id": "t3code",
+     "motivo": "Controlar Codex desde web o móvil. (combinación por arquitectura)",
+     "orden_instalacion": "Usa T3 Code sobre Codex."
+    },
+    {
+     "id": "context7",
+     "motivo": "Documentación vía MCP en modo harness. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el MCP a Codex."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Riesgo de términos de servicio y de seguridad (automatiza una sesión de consumidor). Pregunta de pertenencia al catálogo (solo anotada). No se descargaron sus binarios.",
+   "descripcion_fuentes": [
+    "https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "miuuyy/codex-chatgpt-web",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v6.1.18 (2026-11-08)",
+    "checked_at": "2026-11-15"
+   }
   },
   "grok-plugin-claude-code": {
    "name": "grok-plugin-claude-code",
@@ -62684,7 +62943,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender DNS; Evaluar un dominio para un proyecto personal",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre",
-   "combines_with": [],
+   "combines_with": [
+    "coolify",
+    "free-for-dev",
+    "masterdnsvpn"
+   ],
    "alternatives": [],
    "repo": "https://github.com/DigitalPlatDev/FreeDomain",
    "homepage": "https://dashboard.digitalplat.org",
@@ -62781,7 +63044,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "DigitalPlat FreeDomain, servicio de registro gratuito de subdominios con guías de DNS. El repo contiene información pública y tutoriales; el código de la aplicación está en DigitalPlatDev/Domain-OSS. Licencia AGPL-3.0. Tiene ~208k estrellas, una cifra inusualmente alta para un repo de documentación.",
+   "que_hace": "Permite registrar un dominio gratuito, delegarlo a tu proveedor de DNS mediante nameservers personalizados y seguir una guía desde el registro hasta el despliegue.",
+   "como_lo_hace": "Se usa desde el panel web (dash.domain.digitalplat.org). El README avisa de que su antiguo Telegram fue comprometido y ya no es un canal oficial.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Apuntar el dominio a apps autoalojadas. (combinación por arquitectura)",
+     "orden_instalacion": "Delega el DNS y configura el dominio en Coolify."
+    },
+    {
+     "id": "free-for-dev",
+     "motivo": "Lo lista entre los dominios gratuitos.",
+     "orden_instalacion": "Consulta alternativas en la lista."
+    },
+    {
+     "id": "masterdnsvpn",
+     "motivo": "Delegar un subdominio (registros A y NS), requisito del túnel. (combinación por arquitectura)",
+     "orden_instalacion": "Crea los registros antes de desplegar el servidor."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Recuento de estrellas inusual y canal comprometido: conviene precaución.",
+   "descripcion_fuentes": [
+    "https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "DigitalPlatDev/FreeDomain",
+    "archived": false,
+    "pushed_at": "2026-08-12",
+    "license": "AGPL-3.0",
+    "primary_language": "Markdown",
+    "checked_at": "2026-11-15"
+   }
   },
   "palmier-pro": {
    "name": "palmier-pro",
@@ -63449,7 +63750,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers",
-   "combines_with": [],
+   "combines_with": [
+    "freedomain",
+    "free-for-dev",
+    "casaos"
+   ],
    "alternatives": [],
    "repo": "https://github.com/masterking32/MasterDnsVPN",
    "homepage": "https://t.me/masterdnsvpn",
@@ -63548,7 +63853,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "MasterDnsVPN, proyecto de investigación en Go para transportar tráfico TCP mediante consultas y respuestas DNS, de @masterking32. Licencia MIT. Tiene ~7.3k estrellas y existe una versión legacy en Python.",
+   "que_hace": "Funciona como túnel DNS, parecido en objetivo a DNSTT o SlipStream, diseñado para tolerar resolvers diversos y redes hostiles. Las comparativas de velocidad y overhead del README son propias. Expone un SOCKS5 al cliente.",
+   "como_lo_hace": "Requiere un servidor propio y un subdominio delegado (registro A más NS) y puede desplegarse con Docker. No puede compartir el puerto 53 con otro túnel DNS. El README advierte que usarlo fuera de entornos de prueba puede afectar la red y que eludir leyes locales puede tener consecuencias legales.",
+   "combina_con": [
+    {
+     "id": "freedomain",
+     "motivo": "Subdominio para la delegación NS. (combinación por arquitectura)",
+     "orden_instalacion": "Registra el dominio y crea los registros A y NS."
+    },
+    {
+     "id": "free-for-dev",
+     "motivo": "Buscar un VPS gratuito para el servidor. (combinación por arquitectura)",
+     "orden_instalacion": "Elige un proveedor de la lista."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Gestionar el contenedor en un servidor casero. (combinación por arquitectura)",
+     "orden_instalacion": "Despliega la imagen Docker."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Herramienta de doble uso con implicaciones legales según el país; no se probó.",
+   "descripcion_fuentes": [
+    "https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "masterking32/MasterDnsVPN",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Go",
+    "latest_release": "v2026.10.26.100415-5f83ee9 (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
   },
   "music-megathread": {
    "name": "Music-Megathread",
@@ -66318,7 +66662,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar infraestructura para una demo; Comparar niveles gratuitos",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un directorio de servicios as-a-Service, no software autoalojado ni una garantía permanente de gratuidad",
-   "combines_with": [],
+   "combines_with": [
+    "freedomain",
+    "supabase",
+    "coolify"
+   ],
    "alternatives": [],
    "repo": "https://github.com/ripienaar/free-for-dev",
    "homepage": "https://free-for.dev/",
@@ -66415,7 +66763,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "free-for.dev, lista curada de servicios SaaS, PaaS e IaaS con niveles gratuitos para desarrolladores de infraestructura, iniciada por @ripienaar. GitHub no detecta licencia. Es muy popular (~143k estrellas) y tiene más de 1600 contribuidores.",
+   "que_hace": "Clasifica por categorías (cómputo, bases de datos, APIs, DNS, monitorización, CI…) ofertas con plan gratuito y sus límites. Las condiciones cambian a menudo, así que hay que confirmarlas en cada proveedor.",
+   "como_lo_hace": "Es un único README en Markdown; se consulta en GitHub o en free-for.dev. No requiere instalación.",
+   "combina_con": [
+    {
+     "id": "freedomain",
+     "motivo": "Listado en la sección de dominios (DigitalPlat).",
+     "orden_instalacion": "Registra un subdominio gratuito."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Listado con plan gratuito.",
+     "orden_instalacion": "Crea un proyecto en el plan gratuito."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Autoalojar en un VPS gratuito de la lista. (combinación por arquitectura)",
+     "orden_instalacion": "Instala Coolify en el servidor."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Recurso, no software.",
+   "descripcion_fuentes": [
+    "https://github.com/ripienaar/free-for-dev/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ripienaar/free-for-dev",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-15"
+   }
   },
   "system-prompts-and-models-of-ai-tools": {
    "name": "system-prompts-and-models-of-ai-tools",
@@ -73520,7 +73905,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente",
-   "combines_with": [],
+   "combines_with": [
+    "supabase",
+    "n8n",
+    "freedomain"
+   ],
    "alternatives": [],
    "repo": "https://github.com/coollabsio/coolify",
    "homepage": "https://coolify.io",
@@ -73621,7 +74010,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Coolify, plataforma autoalojada para desplegar aplicaciones, bases de datos y servicios en tus propios servidores, de coollabsio. Licencia Apache-2.0. Es muy popular (~66k estrellas), activa y financiada por patrocinios.",
+   "que_hace": "Es una alternativa autoalojada a Heroku, Netlify y Vercel. Despliega desde GitHub, GitLab, Bitbucket o Gitea con Nixpacks, Railpack, Dockerfile, Compose o imágenes. Gestiona bases de datos, backups, SSL y dominios, con dashboard, API, CLI y MCP. Los recursos siguen funcionando si dejas de usarlo.",
+   "como_lo_hace": "Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en un servidor compatible (VPS, bare metal, Raspberry Pi); solo necesita SSH hacia los servidores gestionados.",
+   "combina_con": [
+    {
+     "id": "supabase",
+     "motivo": "Autoalojar Supabase como servicio. (combinación por arquitectura)",
+     "orden_instalacion": "Despliega Supabase desde Coolify."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Autoalojar n8n. (combinación por arquitectura)",
+     "orden_instalacion": "Despliega n8n desde Coolify."
+    },
+    {
+     "id": "freedomain",
+     "motivo": "Dominio gratuito para las apps. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta el DNS al servidor."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).",
+   "descripcion_fuentes": [
+    "https://github.com/coollabsio/coolify/blob/main/README.md",
+    "https://coolify.io/docs/installation"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "coollabsio/coolify",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "PHP",
+    "latest_release": "v4.7.5 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "opendots": {
    "name": "OpenDots",
@@ -75777,7 +76206,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Descomponer un proyecto web; Revisar orden y dependencias de tareas",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la configuración",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "opencode"
+   ],
    "alternatives": [],
    "repo": "https://github.com/eyaltoledano/claude-task-master",
    "homepage": "https://tryhamster.com",
@@ -75881,7 +76314,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Taskmaster, sistema de gestión de tareas para desarrollo con IA, de @eyaltoledano y @RalphEcom. Licencia MIT con Commons Clause (no OSI; GitHub muestra NOASSERTION). Tiene ~28k estrellas, pero su último cambio es de abril de 2026; la documentación vive en tryhamster.com.",
+   "que_hace": "Convierte un PRD en tareas con dependencias y estructura, y las expande y gestiona desde el editor. Usa tres roles de modelo (principal, investigación y respaldo).",
+   "como_lo_hace": "Se usa como servidor MCP (recomendado: `claude mcp add taskmaster-ai -- npx -y task-master-ai`, o el deeplink de Cursor) o como CLI. Admite Claude Code sin clave de API y Codex CLI vía OAuth, además de claves de proveedores.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Proveedor sin clave de API y cliente MCP.",
+     "orden_instalacion": "Añade el MCP con `claude mcp add`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Proveedor vía OAuth de ChatGPT.",
+     "orden_instalacion": "Instala Codex CLI e inicia sesión."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Cliente MCP genérico. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el servidor MCP."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; se solapa con spec-kit (solo anotado). Actividad reciente baja.",
+   "descripcion_fuentes": [
+    "https://github.com/eyaltoledano/claude-task-master/blob/main/README.md",
+    "https://tryhamster.com/docs/taskmaster/capabilities/mcp"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "eyaltoledano/claude-task-master",
+    "archived": false,
+    "pushed_at": "2026-04-28",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "JavaScript",
+    "latest_release": "task-master-ai@0.43.1 (2026-03-31)",
+    "checked_at": "2026-11-15"
+   }
   },
   "freetoken": {
    "name": "FreeToken",
@@ -79264,7 +79737,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes",
-   "combines_with": [],
+   "combines_with": [
+    "nextcloud-server",
+    "adguardhome",
+    "n8n"
+   ],
    "alternatives": [],
    "repo": "https://github.com/IceWhaleTech/CasaOS",
    "homepage": "https://casaos.zimaspace.com",
@@ -79364,7 +79841,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "CasaOS, sistema para nube personal sobre Docker, de IceWhaleTech (ZimaSpace). Licencia Apache-2.0. Tiene ~38k estrellas, pero su última release es v0.4.15 (diciembre de 2024), aunque el repo sigue recibiendo cambios.",
+   "que_hace": "Ofrece un panel web para gestionar un servidor doméstico, archivos y una tienda de apps con instalación en un clic, además de acceso a miles de apps del ecosistema Docker. Funciona en ZimaBoard, NUC, Raspberry Pi o equipos viejos.",
+   "como_lo_hace": "Se instala con un script en Debian, Ubuntu, Raspberry Pi OS y similares, y requiere Docker.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "Nube de archivos como app. (combinación por arquitectura)",
+     "orden_instalacion": "Instala Nextcloud desde la tienda o como contenedor."
+    },
+    {
+     "id": "adguardhome",
+     "motivo": "DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura)",
+     "orden_instalacion": "Instálalo como app."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Automatizaciones en el servidor doméstico. (combinación por arquitectura)",
+     "orden_instalacion": "Instálalo como contenedor."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.",
+   "descripcion_fuentes": [
+    "https://github.com/IceWhaleTech/CasaOS/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "IceWhaleTech/CasaOS",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "latest_release": "v0.4.15 (2024-12-19)",
+    "checked_at": "2026-11-15"
+   }
   },
   "ilspy": {
    "name": "ILSpy",
@@ -89928,7 +90444,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La reversibilidad afecta al estado capturado por el runtime y no promete deshacer cualquier efecto externo; la demo offline no es un LLM local",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "opencode"
+   ],
    "alternatives": [],
    "repo": "https://github.com/shepherd-agents/shepherd",
    "homepage": "https://shepherd-agents.ai/",
@@ -90030,7 +90550,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Shepherd, sustrato de ejecución para meta-agentes programables con trazas de ejecución reversibles, de shepherd-agents. Licencia MIT. Está en alfa temprana con APIs cambiantes, tiene ~2.6k estrellas y artículo citado.",
+   "que_hace": "Registra las ejecuciones de agentes como trazas duraderas e inspeccionables. Los resultados se quedan en el workspace para revisarlos antes de aplicarlos o descartarlos, con permisos que se aplican a nivel de sistema operativo.",
+   "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install shepherd-ai`. Aplica los permisos con Seatbelt en macOS y Landlock en Linux (en contenedor privilegiado); Windows no está soportado (usar WSL). El ejemplo principal ejecuta Claude Code dentro del sandbox.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Cuerpo de tarea documentado (requiere la CLI `claude`).",
+     "orden_instalacion": "Instala e inicia sesión en Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "Otro agente como cuerpo de tarea. (combinación por arquitectura)",
+     "orden_instalacion": "Envuelve Codex en una tarea."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Otro agente como cuerpo de tarea. (combinación por arquitectura)",
+     "orden_instalacion": "Envuelve OpenCode en una tarea."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Es alfa.",
+   "descripcion_fuentes": [
+    "https://github.com/shepherd-agents/shepherd/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "shepherd-agents/shepherd",
+    "archived": false,
+    "pushed_at": "2026-09-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.3.1 (2026-09-09)",
+    "checked_at": "2026-11-15"
+   }
   },
   "4d-humans": {
    "name": "4D-Humans",
@@ -90650,7 +91209,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un backend para una web; Conectar un agente a un esquema de prueba",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas",
-   "combines_with": [],
+   "combines_with": [
+    "pgvector",
+    "n8n",
+    "coolify"
+   ],
    "alternatives": [],
    "repo": "https://github.com/supabase/supabase",
    "homepage": "https://supabase.com",
@@ -90752,7 +91315,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Supabase, plataforma de desarrollo sobre PostgreSQL que ofrece funciones similares a Firebase con herramientas open source. Licencia Apache-2.0. Es muy madura (~115k estrellas) y tiene servicio alojado y opción de autoalojamiento.",
+   "que_hace": "Ofrece base de datos Postgres, autenticación, APIs REST y GraphQL autogeneradas, Realtime, funciones de base de datos y Edge Functions, almacenamiento de archivos, vectores para IA y un dashboard.",
+   "como_lo_hace": "Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo local. Combina servicios como PostgREST, Realtime (Elixir) y Storage, con librerías cliente modulares por lenguaje.",
+   "combina_con": [
+    {
+     "id": "pgvector",
+     "motivo": "Extensión de vectores para embeddings.",
+     "orden_instalacion": "Activa la extensión en la base de datos."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Nodo de Supabase en flujos de automatización. (combinación por arquitectura)",
+     "orden_instalacion": "Configura las credenciales en n8n."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Autoalojar Supabase. (combinación por arquitectura)",
+     "orden_instalacion": "Despliega desde Coolify."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/supabase/supabase/blob/master/README.md",
+    "https://supabase.com/docs/guides/hosting/overview"
+   ],
+   "descripcion_revision": {
+    "batch": "35-infra-agentes-parte-2-y-ml-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "supabase/supabase",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.26.08 (2026-08-07)",
+    "checked_at": "2026-11-15"
+   }
   },
   "treg": {
    "name": "treg",

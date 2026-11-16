@@ -4958,6 +4958,7 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `claude mcp add taskmaster-ai -- npx -y task-master-ai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Descomponer un proyecto web; Revisar orden y dependencias de tareas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/claude-task-master.md) · [GitHub](https://github.com/eyaltoledano/claude-task-master)
 
 #### 🕸️ agent-desktop
@@ -4968,7 +4969,7 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 agent-desktop status                # platform, permissions, supported surfaces
 agent-desktop permissions --guide   # macOS: walks you through the Accessibility grant` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/agent-desktop.md) · [GitHub](https://github.com/vercel-labs/agent-desktop)
 
 #### 🛠️ NemoClaw
@@ -4986,6 +4987,7 @@ agent-desktop permissions --guide   # macOS: walks you through the Accessibility
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Codex CLI](human/fichas/codex.md) · [T3 Code](human/fichas/t3code.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/codex-chatgpt-web.md) · [GitHub](https://github.com/miuuyy/codex-chatgpt-web)
 
 #### 📦 sandbox
@@ -5022,6 +5024,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install shepherd-ai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/shepherd.md) · [GitHub](https://github.com/shepherd-agents/shepherd)
 
 #### 🕸️ nodeterm
@@ -5030,6 +5033,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/eneskirca/nodeterm/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/nodeterm.md) · [GitHub](https://github.com/eneskirca/nodeterm)
 
 #### 🛠️ Agent Protocol
@@ -5049,6 +5053,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender DNS; Evaluar un dominio para un proyecto personal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [free-for-dev](human/fichas/free-for-dev.md) · [MasterDnsVPN](human/fichas/masterdnsvpn.md)<br>
 **Más:** [ficha completa](human/fichas/freedomain.md) · [GitHub](https://github.com/DigitalPlatDev/FreeDomain)
 
 #### 🔌 free-for-dev
@@ -5057,6 +5062,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/ripienaar/free-for-dev/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar infraestructura para una demo; Comparar niveles gratuitos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [FreeDomain](human/fichas/freedomain.md) · [supabase](human/fichas/supabase.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/free-for-dev.md) · [GitHub](https://github.com/ripienaar/free-for-dev)
 
 ### Redes y transporte
@@ -5067,6 +5073,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [FreeDomain](human/fichas/freedomain.md) · [free-for-dev](human/fichas/free-for-dev.md) · [CasaOS](human/fichas/casaos.md)<br>
 **Más:** [ficha completa](human/fichas/masterdnsvpn.md) · [GitHub](https://github.com/masterking32/MasterDnsVPN)
 
 ### Alojamiento y backend
@@ -5077,6 +5084,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://supabase.com/docs/guides/getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un backend para una web; Conectar un agente a un esquema de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [pgvector](human/fichas/pgvector.md) · [n8n](human/fichas/n8n.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/supabase.md) · [GitHub](https://github.com/supabase/supabase)
 
 #### ⚙️ coolify
@@ -5085,6 +5093,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://coolify.io/docs/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [supabase](human/fichas/supabase.md) · [n8n](human/fichas/n8n.md) · [FreeDomain](human/fichas/freedomain.md)<br>
 **Más:** [ficha completa](human/fichas/coolify.md) · [GitHub](https://github.com/coollabsio/coolify)
 
 #### ⚙️ CasaOS
@@ -5093,6 +5102,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/IceWhaleTech/CasaOS/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [server](human/fichas/nextcloud-server.md) · [AdGuardHome](human/fichas/adguardhome.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/casaos.md) · [GitHub](https://github.com/IceWhaleTech/CasaOS)
 
 ---
@@ -5364,7 +5374,7 @@ Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los p
 **Comando documentado:** `# pip
 pip install "transformers[torch]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Clasificar un texto localmente; Probar un modelo de visión — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [PEFT](human/fichas/peft.md) · [TRL](human/fichas/trl.md) · [PyTorch](human/fichas/pytorch.md)<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [PEFT](human/fichas/peft.md) · [TRL](human/fichas/trl.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/transformers.md) · [GitHub](https://github.com/huggingface/transformers)
 
 #### 🏋️ PyTorch
@@ -5394,7 +5404,7 @@ pip install -r requirements/metrics.txt` (comprobar los pasos completos en la fi
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install peft` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar un modelo con menos parámetros; Reutilizar un adaptador entrenado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Transformers](human/fichas/transformers.md) · [TRL](human/fichas/trl.md)<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [TRL](human/fichas/trl.md) · [diffusers](human/fichas/diffusers.md)<br>
 **Más:** [ficha completa](human/fichas/peft.md) · [GitHub](https://github.com/huggingface/peft)
 
 #### 🏋️ TRL
@@ -5403,7 +5413,7 @@ pip install -r requirements/metrics.txt` (comprobar los pasos completos en la fi
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install trl` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender ajuste supervisado; Estudiar DPO o GRPO — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Transformers](human/fichas/transformers.md) · [PEFT](human/fichas/peft.md) · [Unsloth](human/fichas/unsloth.md)<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [PEFT](human/fichas/peft.md) · [Unsloth](human/fichas/unsloth.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/trl.md) · [GitHub](https://github.com/huggingface/trl)
 
 #### 🧑‍💻 bionemo-recipes

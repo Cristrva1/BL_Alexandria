@@ -33,7 +33,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta status y permissions --guide y obtén una captura de una ventana de prueba sin pulsar controles
 **Qué comprobar:** Puedes comprobar plataforma, permisos y referencias de accesibilidad
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`
+**Combina con:** `claude-code`, `codex`, `playwright-mcp`
 
 ## `agent-protocol`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=agents,python
@@ -93,6 +93,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta compatibilidad y prueba el panel en un equipo de laboratorio antes de instalar apps
 **Qué comprobar:** Puedes identificar almacenamiento y una app de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nextcloud-server`, `adguardhome`, `n8n`
 
 ## `claude-task-master`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=infra,agent,javascript
@@ -122,6 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte una especificación corta de prueba en tareas y revisa dependencias antes de ejecutarlas
 **Qué comprobar:** Puedes rastrear cada tarea a un requisito
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `codex-chatgpt-web`
 role=app · exec=cloud · setup=medium · mcp=True · prov=— · tags=infra,chatgpt,chatgpt-pro,codex,free-ai,mcp,openai,playwright
@@ -151,6 +153,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lee el modelo de seguridad y usa una tarea sin datos sensibles antes de activar full harness
 **Qué comprobar:** Puedes identificar sesión web, modelo elegido y permisos expuestos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `codex`, `t3code`, `context7`
 
 ## `composio`
 role=platform · exec=cloud · setup=easy · mcp=True · prov=openai,anthropic,mcp · tags=agents,mcp,automation,typescript
@@ -246,6 +249,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Despliega una página estática de prueba y revisa logs antes de añadir bases de datos reales
 **Qué comprobar:** Puedes abrir el sitio y reconocer su servicio y registros
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `supabase`, `n8n`, `freedomain`
 
 ## `e2b`
 role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=agents,security,python
@@ -306,6 +310,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servicio de alojamiento y comprueba sus límites y condiciones en la web del proveedor antes de crear una cuenta
 **Qué comprobar:** Puedes distinguir plan gratuito, cuotas y extras de pago
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `freedomain`, `supabase`, `coolify`
 
 ## `freedomain`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
@@ -335,6 +340,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee las condiciones de registro y dibuja registros DNS para un sitio ficticio sin cambiar dominios activos
 **Qué comprobar:** Puedes distinguir registro, DNS y alojamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `free-for-dev`, `masterdnsvpn`
 
 ## `masterdnsvpn`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
@@ -364,6 +370,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Revisa la delegación DNS y prepara una prueba entre equipos propios antes de sustituir una conexión habitual
 **Qué comprobar:** Puedes identificar servidor, resolver y túnel y comprobar conectividad básica
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `freedomain`, `free-for-dev`, `casaos`
 
 ## `nemoclaw`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,security,typescript
@@ -424,6 +431,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un terminal y un nodo de agente para explicar una carpeta de prueba
 **Qué comprobar:** Puedes ver sesión, terminal y contexto de proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `sandbox`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=agents,automation,python,docker
@@ -489,6 +497,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empieza por Offline Quickstart para observar una traza reversible sin llamar un modelo
 **Qué comprobar:** Puedes inspeccionar estados y bifurcaciones de la demostración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `supabase`
 role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=infraestructura,server,typescript
@@ -518,3 +527,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea datos ficticios en un proyecto de desarrollo y consulta su estructura con permisos de solo lectura
 **Qué comprobar:** Puedes comprobar tablas y acceso sin tocar datos de producción
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pgvector`, `n8n`, `coolify`

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+PEFT, librería de Hugging Face para fine-tuning eficiente en parámetros (LoRA y similares). Licencia Apache-2.0. Es madura (~22k estrellas, v0.21.3).
+
+## ¿Qué hace?
+
+Adapta modelos grandes entrenando una pequeña fracción de parámetros, lo que reduce el coste de cómputo y almacenamiento. Gestiona adaptadores para entrenamiento e inferencia.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install peft` y está integrada con Transformers, Diffusers y Accelerate.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | Integración nativa. | Instala Transformers primero. |
+| [TRL](trl.md) | Entrenar con LoRA en SFT, DPO o GRPO. | Pasa la configuración de PEFT al trainer. |
+| [diffusers](diffusers.md) | Gestión de adaptadores en modelos de difusión. | Carga adaptadores LoRA en el pipeline. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.21.3 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/peft/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Reducir parámetros entrenables no elimina toda la memoria del modelo base; los ejemplos de hardware no se generalizan a cualquier modelo |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de modelo alojado; entrenar y almacenar pesos requiere cómputo propio o alquilado |
 | Equipo | Preparación según la ruta elegida. Python; modelo Transformers; dataset; hardware suficiente |
-
-Reducir parámetros entrenables no elimina toda la memoria del modelo base; los ejemplos de hardware no se generalizan a cualquier modelo
-
-## Qué puedes hacer con él
-
-Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA.
-
-## Por qué destaca
-
-Usos propuestos: Ajustar un modelo con menos parámetros; Reutilizar un adaptador entrenado.
-
-## Cómo funciona
 
 Reducir parámetros entrenables no elimina toda la memoria del modelo base; los ejemplos de hardware no se generalizan a cualquier modelo
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; modelo Transformers; dataset; hardware suficiente
 - **Etiquetas:** `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
-| [TRL](trl.md) | 19.7k | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. |
 
 ## Enlaces
 

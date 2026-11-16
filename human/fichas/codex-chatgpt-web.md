@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Integración no oficial de terceros que permite usar en Codex los modelos de ChatGPT Web de tu cuenta, incluido Pro, de @miuuyy. Licencia MIT. Tiene ~16k estrellas.
+
+## ¿Qué hace?
+
+Envía los mensajes a través de tu sesión iniciada en ChatGPT Web, con los límites de esa cuenta, desde el selector de modelos nativo de Codex. En modo «Full harness», ChatGPT accede a los archivos, la terminal y las herramientas de la tarea mediante MCP.
+
+## ¿Cómo lo hace?
+
+Se distribuye como lanzador descargable con navegador integrado; el modo MCP requiere un túnel y una clave. El propio README advierte que es automatización de navegador no oficial (no la API de OpenAI), que los cambios de la interfaz pueden romperla, que el perfil del navegador es un artefacto sensible y que el listener de loopback es accesible para otros procesos del mismo usuario.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Codex CLI](codex.md) | Cliente que integra. | Instala Codex y luego el lanzador. |
+| [T3 Code](t3code.md) | Controlar Codex desde web o móvil. (combinación por arquitectura) | Usa T3 Code sobre Codex. |
+| [Context7](context7.md) | Documentación vía MCP en modo harness. (combinación por arquitectura) | Añade el MCP a Codex. |
+
+**Notas:** Sin alternativas declaradas. Riesgo de términos de servicio y de seguridad (automatiza una sesión de consumidor). Pregunta de pertenencia al catálogo (solo anotada). No se descargaron sus binarios.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v6.1.18 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración |
 | Coste | Consumo del agente que ya utilizas. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio |
 | Equipo | Preparación según la ruta elegida. Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza |
-
-Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
-
-## Qué puedes hacer con él
-
-Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial.
-
-## Cómo funciona
 
 Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
 
