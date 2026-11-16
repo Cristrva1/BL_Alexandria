@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Depurador binario open source para Windows orientado a análisis de malware e ingeniería inversa de ejecutables sin código fuente, con @mrexodia entre sus autores según los créditos. Licencia GPL-3.0 (GitHub muestra NOASSERTION). Es muy maduro y activo (~50k estrellas, snapshot 2026.05.27).
+
+## ¿Qué hace?
+
+Depura ejecutables de 32 bits (x32dbg) y 64 bits (x64dbg) con breakpoints, trazas, edición de memoria, ensamblado en línea, análisis gráfico y búsqueda de patrones. Tiene un sistema de plugins y scripting muy amplio. Su documentación oficial está en help.x64dbg.com.
+
+## ¿Cómo lo hace?
+
+Se descarga un snapshot, se descomprime y se ejecuta `x32\x32dbg.exe` o `x64\x64dbg.exe` según el binario. Solo funciona en Windows. Está escrito sobre todo en C++.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ghidra](ghidra.md) | Analizar estáticamente en Ghidra las funciones que luego depuras. (combinación por arquitectura) | Localiza direcciones en Ghidra y pon breakpoints en x64dbg. |
+| [ImHex](imhex.md) | Estudiar volcados de memoria o archivos con patrones. (combinación por arquitectura) | Vuelca la región desde x64dbg y ábrela en ImHex. |
+| [dnSpy](dnspy.md) | Cubrir la parte .NET de un proceso mixto. (combinación por arquitectura) | Usa dnSpyEx para el código gestionado y x64dbg para el nativo. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar. Analiza malware solo en una máquina virtual aislada.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 2026.05.27 (2026-05-27) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/x64dbg/x64dbg/blob/development/README.md) · [2](https://help.x64dbg.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Ejecuta el programa objetivo durante la depuración; una muestra desconocida requiere un laboratorio apropiado, no abrirla como si fuera texto |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelo ni API; herramientas y recursos son locales |
 | Equipo | Preparación según la ruta elegida. Windows; distribución oficial; ejecutable de práctica propio |
-
-Ejecuta el programa objetivo durante la depuración; una muestra desconocida requiere un laboratorio apropiado, no abrirla como si fuera texto
-
-## Qué puedes hacer con él
-
-Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas.
-
-## Por qué destaca
-
-Usos propuestos: Aprender depuración en Windows; Investigar un fallo reproducible de una app propia.
-
-## Cómo funciona
 
 Ejecuta el programa objetivo durante la depuración; una muestra desconocida requiere un laboratorio apropiado, no abrirla como si fuera texto
 

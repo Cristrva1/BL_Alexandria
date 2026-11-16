@@ -31,6 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un programa propio sencillo y explora sus funciones y estados simbólicos
 **Qué comprobar:** Puedes relacionar una ruta analizada con la lógica del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidra`, `frida`, `claude-code`
 
 ## `apktool`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,java
@@ -60,6 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Decodifica recursos de un APK de laboratorio y localiza su manifiesto
 **Qué comprobar:** Puedes contrastar nombres de recursos y permisos declarados
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `jadx`, `frida`, `mitmproxy`
 
 ## `awesome-ai-reverse-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=referencias,reference
@@ -270,6 +272,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un ensamblado de ejemplo e inspecciona una clase y sus metadatos
 **Qué comprobar:** Puedes localizar el método y distinguir código reconstruido de fuente original
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ilspy`, `x64dbg`, `imhex`
 
 ## `frida`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,meson
@@ -299,6 +302,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instrumenta una función de un programa de práctica y observa su argumento
 **Qué comprobar:** El evento coincide con una llamada que puedes reproducir
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `radare2`, `mitmproxy`, `jadx`
 
 ## `ghidra`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,java
@@ -328,6 +332,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un ejecutable propio sencillo y revisa funciones y referencias tras el análisis
 **Qué comprobar:** Puedes localizar un flujo conocido en el desensamblado y descompilado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidramcp`, `jadx`, `imhex`, `x64dbg`
 **Alternativas (elige una):** `radare2`
 
 ## `ilspy`
@@ -358,6 +363,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una biblioteca propia y navega por un método y sus referencias
 **Qué comprobar:** Puedes distinguir metadatos y C# descompilado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dnspy`, `claude-code`, `imhex`
 
 ## `imhex`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=reversing,app,c
@@ -387,6 +393,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un archivo propio pequeño y aplica un patrón conocido para interpretar su cabecera
 **Qué comprobar:** Los campos interpretados coinciden con los bytes del archivo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidra`, `radare2`, `x64dbg`
 
 ## `jadx`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,java
@@ -416,6 +423,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una app Android de prueba y navega por una clase y sus recursos
 **Qué comprobar:** Puedes identificar métodos y líneas que no se reconstruyen correctamente
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `frida`, `apktool`, `ghidra`
 
 ## `k6`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,app,go
@@ -474,6 +482,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Inspecciona una petición de tu app de laboratorio y revisa cabeceras y respuesta
 **Qué comprobar:** Puedes reconocer origen, destino y contenido capturado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `frida`, `playwright`, `k6`
 
 ## `radare2`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -503,6 +512,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre el binario en modo de lectura y lista información de formato y funciones
 **Qué comprobar:** Puedes reconocer arquitectura, secciones y símbolos del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `frida`, `claude-code`, `imhex`
 **Alternativas (elige una):** `rizin`, `ghidra`
 
 ## `raddebugger`
@@ -533,6 +543,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un programa propio pequeño y detén una función con un breakpoint
 **Qué comprobar:** Puedes ver pila y variables del punto de parada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `x64dbg`, `imhex`, `semgrep`
 
 ## `rea`
 role=skill · exec=local · setup=medium · mcp=True · prov=— · tags=agentes,skill,typescript
@@ -591,6 +602,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Inspecciona secciones e imports de un ejecutable de laboratorio
 **Qué comprobar:** Puedes contrastar el formato y las dependencias del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidra`, `angr`, `imhex`
 **Alternativas (elige una):** `radare2`
 
 ## `security-audit-skill`
@@ -780,3 +792,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Depura un programa sencillo y detén la ejecución en una función conocida
 **Qué comprobar:** Puedes ver instrucciones, pila y valores del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidra`, `imhex`, `dnspy`

@@ -3634,6 +3634,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [GhidraMCP](human/fichas/ghidramcp.md) · [jadx](human/fichas/jadx.md) · [ImHex](human/fichas/imhex.md) · [x64dbg](human/fichas/x64dbg.md)<br>
 **Más:** [ficha completa](human/fichas/ghidra.md) · [GitHub](https://github.com/NationalSecurityAgency/ghidra)
 
 #### 🖥️ ImHex
@@ -3642,6 +3643,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/WerWolv/ImHex/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un formato de archivo; Comparar dos versiones de una estructura binaria — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [radare2](human/fichas/radare2.md) · [x64dbg](human/fichas/x64dbg.md)<br>
 **Más:** [ficha completa](human/fichas/imhex.md) · [GitHub](https://github.com/WerWolv/ImHex)
 
 #### 🖥️ jadx
@@ -3650,6 +3652,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/skylot/jadx/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una app Android propia; Documentar recursos y referencias de un APK — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [frida](human/fichas/frida.md) · [Apktool](human/fichas/apktool.md) · [ghidra](human/fichas/ghidra.md)<br>
 **Más:** [ficha completa](human/fichas/jadx.md) · [GitHub](https://github.com/skylot/jadx)
 
 #### 🖥️ Apktool
@@ -3658,6 +3661,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://apktool.org/wiki/the-basics/intro); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar recursos de una app Android; Revisar una configuración de manifiesto propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [jadx](human/fichas/jadx.md) · [frida](human/fichas/frida.md) · [mitmproxy](human/fichas/mitmproxy.md)<br>
 **Más:** [ficha completa](human/fichas/apktool.md) · [GitHub](https://github.com/iBotPeaches/Apktool)
 
 #### 🖥️ ILSpy
@@ -3666,6 +3670,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/icsharpcode/ILSpy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [dnSpy](human/fichas/dnspy.md) · [Claude Code](human/fichas/claude-code.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/ilspy.md) · [GitHub](https://github.com/icsharpcode/ILSpy)
 
 #### 🖥️ radare2
@@ -3674,6 +3679,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/radareorg/radare2/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [frida](human/fichas/frida.md) · [Claude Code](human/fichas/claude-code.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/radare2.md) · [GitHub](https://github.com/radareorg/radare2)
 
 #### 🖥️ frida
@@ -3682,6 +3688,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://frida.re/docs/home/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar comportamiento dinámico de una app propia; Depurar una llamada que no aparece en logs — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [radare2](human/fichas/radare2.md) · [mitmproxy](human/fichas/mitmproxy.md) · [jadx](human/fichas/jadx.md)<br>
 **Más:** [ficha completa](human/fichas/frida.md) · [GitHub](https://github.com/frida/frida)
 
 #### 📚 angr
@@ -3690,6 +3697,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://docs.angr.io/introductory-errata/install); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [frida](human/fichas/frida.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/angr.md) · [GitHub](https://github.com/angr/angr)
 
 #### 🖥️ rizin
@@ -3698,6 +3706,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://rizin.re/install/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [angr](human/fichas/angr.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/rizin.md) · [GitHub](https://github.com/rizinorg/rizin)
 
 ### Depuración e inspección de procesos
@@ -3708,6 +3717,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/x64dbg/x64dbg/blob/development/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender depuración en Windows; Investigar un fallo reproducible de una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [ImHex](human/fichas/imhex.md) · [dnSpy](human/fichas/dnspy.md)<br>
 **Más:** [ficha completa](human/fichas/x64dbg.md) · [GitHub](https://github.com/x64dbg/x64dbg)
 
 #### 🖥️ dnSpy
@@ -3716,6 +3726,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/dnSpyEx/dnSpy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ILSpy](human/fichas/ilspy.md) · [x64dbg](human/fichas/x64dbg.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/dnspy.md) · [GitHub](https://github.com/dnSpyEx/dnSpy)
 
 #### 🖥️ raddebugger
@@ -3724,6 +3735,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/EpicGames/raddebugger/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender depuración nativa; Inspeccionar un fallo de una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [x64dbg](human/fichas/x64dbg.md) · [ImHex](human/fichas/imhex.md) · [Semgrep](human/fichas/semgrep.md)<br>
 **Más:** [ficha completa](human/fichas/raddebugger.md) · [GitHub](https://github.com/EpicGames/raddebugger)
 
 ### Tráfico, rendimiento y pruebas
@@ -3734,6 +3746,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://docs.mitmproxy.org/stable/overview-installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar llamadas HTTP de una app propia; Comprender un error de integración de desarrollo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [frida](human/fichas/frida.md) · [playwright](human/fichas/playwright.md) · [k6](human/fichas/k6.md)<br>
 **Más:** [ficha completa](human/fichas/mitmproxy.md) · [GitHub](https://github.com/mitmproxy/mitmproxy)
 
 #### 🖥️ k6

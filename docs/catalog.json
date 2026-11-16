@@ -84481,7 +84481,11 @@
       "desc": "Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ghidra",
+        "frida",
+        "claude-code"
+      ],
       "alt": [],
       "stack": "Python y entorno compatible; binario de laboratorio",
       "repo_url": "https://github.com/angr/angr",
@@ -84589,6 +84593,45 @@
       "stars": 9379,
       "license": "BSD-2-Clause",
       "homepage": "http://angr.io",
+      "combina_con": [
+        {
+          "id": "ghidra",
+          "motivo": "Explorar el binario en Ghidra y automatizar la búsqueda de rutas en angr. (combinación por arquitectura)",
+          "orden_instalacion": "Identifica direcciones en Ghidra y úsalas en el script de angr."
+        },
+        {
+          "id": "frida",
+          "motivo": "Combinar análisis dinámico en ejecución con análisis simbólico. (combinación por arquitectura)",
+          "orden_instalacion": "Captura valores reales con Frida y úsalos como restricciones en angr."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Escribir y depurar scripts de angr con un agente. (combinación por arquitectura)",
+          "orden_instalacion": "Instala angr en un entorno virtual y abre el proyecto con el agente."
+        }
+      ],
+      "que_es": "Framework de análisis binario en Python, independiente de la plataforma, del Computer Security Lab de UC Santa Barbara, SEFCOM de Arizona State University y el equipo CTF Shellphish. Licencia BSD-2-Clause. Es maduro y muy usado en investigación y CTF (~9k estrellas).",
+      "que_hace": "Carga un binario y permite desensamblarlo y elevarlo a una representación intermedia, instrumentarlo, ejecutarlo simbólicamente, analizar el flujo de control y las dependencias de datos, hacer análisis de conjuntos de valores (VSA) y decompilar. Sirve para encontrar entradas que alcanzan cierto código, resolver retos o automatizar análisis de vulnerabilidades.",
+      "como_lo_hace": "Es un conjunto de librerías Python 3: se instala con `pip install angr`, en un entorno virtual propio, como recomienda el README. Se usa desde scripts o un REPL como IPython. La ejecución simbólica puede consumir mucha memoria y tiempo con binarios grandes.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/angr/angr/blob/master/README.md",
+        "https://docs.angr.io/en/latest/getting-started/installing.html"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "angr/angr",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "BSD-2-Clause",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.",
       "body": "Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.",
       "install": {
@@ -84597,7 +84640,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "ghidra",
+          "label": "ghidra"
+        },
+        {
+          "id": "frida",
+          "label": "frida"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -84624,7 +84680,11 @@
       "desc": "Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar recursos de una app Android; Revisar una configuración de manifiesto propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "jadx",
+        "frida",
+        "mitmproxy"
+      ],
       "alt": [],
       "stack": "Java y distribución de Apktool; APK propio de prueba",
       "repo_url": "https://github.com/iBotPeaches/Apktool",
@@ -84732,6 +84792,46 @@
       "stars": 27222,
       "license": "Apache-2.0",
       "homepage": "https://apktool.org",
+      "combina_con": [
+        {
+          "id": "jadx",
+          "motivo": "Leer el código en Java con JADX mientras editas smali y recursos con Apktool. (combinación por arquitectura)",
+          "orden_instalacion": "Decompila en JADX para entender y modifica con Apktool."
+        },
+        {
+          "id": "frida",
+          "motivo": "Incrustar Frida Gadget en la APK reconstruida cuando no hay root. (combinación por arquitectura)",
+          "orden_instalacion": "Añade la librería del gadget con Apktool, reconstruye y firma."
+        },
+        {
+          "id": "mitmproxy",
+          "motivo": "Modificar `network_security_config` para que la app confíe en el certificado de mitmproxy. (combinación por arquitectura)",
+          "orden_instalacion": "Edita la configuración con Apktool, reconstruye, firma e intercepta."
+        }
+      ],
+      "que_es": "Herramienta para hacer ingeniería inversa de apps Android binarias y cerradas, de @iBotPeaches. Licencia Apache-2.0. Es muy madura (~27k estrellas, v3.0.3).",
+      "que_hace": "Decodifica los recursos de una APK casi a su forma original (XML, manifest, smali) y vuelve a construir la app tras modificarla. Facilita depurar smali paso a paso y trabajar con la estructura de proyecto de la app. Sirve para localización, auditoría o parches.",
+      "como_lo_hace": "Es una herramienta Java: se descarga el JAR y el script envoltorio según la guía de apktool.org (requiere Java). Se usa con `apktool d app.apk` y `apktool b carpeta`; la APK reconstruida debe alinearse y firmarse antes de instalarla. No convierte smali a Java legible: para eso se usa un decompilador.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/iBotPeaches/Apktool/blob/main/README.md",
+        "https://apktool.org/docs/install"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "iBotPeaches/Apktool",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "Apache-2.0",
+        "primary_language": "Java",
+        "latest_release": "v3.0.3 (2026-07-20)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicación.",
       "body": "Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicación.",
       "install": {
@@ -84740,7 +84840,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "jadx",
+          "label": "jadx"
+        },
+        {
+          "id": "frida",
+          "label": "frida"
+        },
+        {
+          "id": "mitmproxy",
+          "label": "mitmproxy"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -85690,7 +85803,11 @@
       "desc": "Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ilspy",
+        "x64dbg",
+        "imhex"
+      ],
       "alt": [],
       "stack": "Distribución dnSpyEx compatible; ensamblado .NET propio de prueba",
       "repo_url": "https://github.com/dnSpyEx/dnSpy",
@@ -85798,6 +85915,46 @@
       "stars": 11483,
       "license": "GPL-3.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "ilspy",
+          "motivo": "Su decompilador se basa en el motor de ILSpy, según los créditos del README.",
+          "orden_instalacion": "Usa ILSpy para revisar y dnSpyEx para depurar o editar."
+        },
+        {
+          "id": "x64dbg",
+          "motivo": "Depurar las partes nativas de un proceso que mezcla .NET y código nativo. (combinación por arquitectura)",
+          "orden_instalacion": "Adjunta x64dbg al proceso cuando llegues a código nativo."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Comparar o inspeccionar binarios parcheados. (combinación por arquitectura)",
+          "orden_instalacion": "Usa el diff de ImHex entre el ensamblado original y el modificado."
+        }
+      ],
+      "que_es": "dnSpyEx, continuación no oficial del proyecto dnSpy (archivado): depurador y editor de ensamblados .NET. Licencia GPL-3.0. Es activo (~11k estrellas, v6.6.0).",
+      "que_hace": "Permite depurar y editar ensamblados .NET y Unity aunque no tengas el código fuente. Pone breakpoints y tracepoints, depura varios procesos a la vez, evalúa expresiones C# o Visual Basic y depura ensamblados que se descifran en memoria; decompila con el motor de ILSpy y permite editar el código. Para depurar juegos Unity necesita el repositorio adicional dnSpy-Unity-mono.",
+      "como_lo_hace": "Es una aplicación de escritorio para Windows que se descarga desde las releases; también hay builds de CI. Para compilarlo se necesita el SDK de .NET, según el README.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/dnSpyEx/dnSpy/blob/master/README.md",
+        "https://github.com/dnSpyEx/dnSpy/releases"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "dnSpyEx/dnSpy",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "GPL-3.0",
+        "primary_language": "C#",
+        "latest_release": "v6.6.0 (2026-06-20)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.",
       "body": "Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.",
       "install": {
@@ -85806,7 +85963,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "ilspy",
+          "label": "ilspy"
+        },
+        {
+          "id": "x64dbg",
+          "label": "x64dbg"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -85833,7 +86003,11 @@
       "desc": "Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su ejecución.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar comportamiento dinámico de una app propia; Depurar una llamada que no aparece en logs",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "radare2",
+        "mitmproxy",
+        "jadx"
+      ],
       "alt": [],
       "stack": "Paquetes de plataforma; programa propio de laboratorio; permisos del entorno",
       "repo_url": "https://github.com/frida/frida",
@@ -85942,6 +86116,47 @@
       "stars": 22792,
       "license": "NOASSERTION",
       "homepage": "https://frida.re",
+      "combina_con": [
+        {
+          "id": "radare2",
+          "motivo": "Combinar análisis estático e instrumentación con r2frida.",
+          "orden_instalacion": "Instala Frida y luego `r2pm -ci r2frida`."
+        },
+        {
+          "id": "mitmproxy",
+          "motivo": "Desactivar el certificate pinning con scripts de Frida para interceptar el tráfico HTTPS de una app. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el proxy y el certificado de mitmproxy y carga el script de Frida al lanzar la app."
+        },
+        {
+          "id": "jadx",
+          "motivo": "Localizar en el código decompilado los métodos que luego interceptas con Frida. (combinación por arquitectura)",
+          "orden_instalacion": "Decompila en JADX, anota clases y métodos y escribe los hooks."
+        }
+      ],
+      "que_es": "Kit de instrumentación dinámica para desarrolladores, ingenieros inversos e investigadores de seguridad. Licencia wxWindows Library Licence 3.1 (GitHub muestra NOASSERTION). Es muy maduro y activo (~23k estrellas, 17.26.3).",
+      "que_hace": "Inyecta JavaScript en procesos en ejecución para interceptar funciones, leer y modificar memoria, trazar llamadas y cambiar comportamiento en tiempo real. Funciona en Windows, macOS, Linux, iOS, Android y otros. Otras herramientas se apoyan en él, como el plugin r2frida de radare2.",
+      "como_lo_hace": "Se instala con `pip install frida-tools` (CLI), `pip install frida` (Python) o `npm install frida` (Node.js), o desde binarios precompilados. En Android o iOS se ejecuta `frida-server` en el dispositivo (normalmente con root o jailbreak) o se incrusta Frida Gadget en la app. Compilarlo desde el código es complejo y está documentado aparte.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/frida/frida/blob/main/README.md",
+        "https://frida.re/docs/home/",
+        "https://frida.re/docs/android/"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "frida/frida",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Meson",
+        "latest_release": "17.26.3 (2026-11-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su ejecución.",
       "body": "Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su ejecución.",
       "install": {
@@ -85950,7 +86165,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "radare2",
+          "label": "radare2"
+        },
+        {
+          "id": "mitmproxy",
+          "label": "mitmproxy"
+        },
+        {
+          "id": "jadx",
+          "label": "jadx"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -85977,7 +86205,12 @@
       "desc": "Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ghidramcp",
+        "jadx",
+        "imhex",
+        "x64dbg"
+      ],
       "alt": [
         "radare2"
       ],
@@ -86088,6 +86321,52 @@
       "stars": 100096,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "ghidramcp",
+          "motivo": "Exponer funciones de Ghidra (decompilar, renombrar, listar) a asistentes por MCP con la extensión GhidraMCP.",
+          "orden_instalacion": "Instala la extensión en Ghidra, arranca su servidor y conecta el cliente MCP."
+        },
+        {
+          "id": "jadx",
+          "motivo": "Leer el código Java de una APK en JADX y analizar sus librerías nativas `.so` en Ghidra. (combinación por arquitectura)",
+          "orden_instalacion": "Extrae la APK, decompila Java en JADX y abre los `.so` en Ghidra."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Inspeccionar estructuras binarias y formatos con el lenguaje de patrones de ImHex. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ImHex para el formato del archivo y Ghidra para el código."
+        },
+        {
+          "id": "x64dbg",
+          "motivo": "Contrastar el análisis estático con depuración dinámica en Windows. (combinación por arquitectura)",
+          "orden_instalacion": "Localiza funciones en Ghidra y pon breakpoints en x64dbg."
+        }
+      ],
+      "que_es": "Framework de ingeniería inversa de software creado y mantenido por la Research Directorate de la NSA. Licencia Apache-2.0. Es muy maduro y popular (~100k estrellas, Ghidra 12.2). El README avisa de vulnerabilidades conocidas en algunas versiones y remite a sus avisos de seguridad.",
+      "que_hace": "Analiza código compilado de muchas arquitecturas en Windows, macOS y Linux: desensambla, ensambla, decompila a pseudo-C, genera grafos y permite scripting. Incluye cientos de funciones (análisis automático, tipos, referencias cruzadas, depurador, parcheo) y modo colaborativo con servidor. Se extiende con scripts y extensiones en Java o Python.",
+      "como_lo_hace": "Es una aplicación Java: se instala el JDK 25 de 64 bits, se descarga la release y se descomprime en una carpeta nueva (no encima de otra instalación). Se lanza con `ghidraRun` y también tiene modo headless para análisis por lotes. Compilarlo desde el código usa Gradle.",
+      "descripcion_notas": "Alternativas (elige una): radare2. Úsalo solo con software y sistemas que tengas derecho a analizar. Revisa los avisos de seguridad antes de abrir proyectos de terceros.",
+      "descripcion_fuentes": [
+        "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md",
+        "https://github.com/NationalSecurityAgency/ghidra/security/advisories",
+        "https://github.com/LaurieWired/GhidraMCP"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "NationalSecurityAgency/ghidra",
+        "archived": false,
+        "pushed_at": "2026-11-10",
+        "license": "Apache-2.0",
+        "primary_language": "Java",
+        "latest_release": "Ghidra_12.2_build (2026-10-22)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
       "body": "Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
       "install": {
@@ -86101,7 +86380,24 @@
           "label": "radare2"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "ghidramcp",
+          "label": "ghidramcp"
+        },
+        {
+          "id": "jadx",
+          "label": "jadx"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        },
+        {
+          "id": "x64dbg",
+          "label": "x64dbg"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -86128,7 +86424,11 @@
       "desc": "Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "dnspy",
+        "claude-code",
+        "imhex"
+      ],
       "alt": [],
       "stack": "App o ilspycmd del sistema; ensamblado .NET de práctica",
       "repo_url": "https://github.com/icsharpcode/ILSpy",
@@ -86236,6 +86536,46 @@
       "stars": 27070,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "dnspy",
+          "motivo": "dnSpyEx usa el motor de ILSpy y añade depuración y edición de ensamblados.",
+          "orden_instalacion": "Decompila con ILSpy y pasa a dnSpyEx cuando necesites depurar o parchear."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Que un agente lea la salida de `ilspycmd` para entender una librería sin código fuente. (combinación por arquitectura)",
+          "orden_instalacion": "Instala `ilspycmd` como herramienta dotnet y exporta el proyecto para el agente."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Inspeccionar recursos o formatos binarios incrustados. (combinación por arquitectura)",
+          "orden_instalacion": "Extrae el recurso y ábrelo en ImHex."
+        }
+      ],
+      "que_es": "Navegador y decompilador de ensamblados .NET open source y multiplataforma, del equipo icsharpcode. Licencia MIT. Es muy maduro (~27k estrellas, v11.2) y su motor se publica como paquete NuGet (ICSharpCode.Decompiler).",
+      "que_hace": "Decompila ensamblados .NET a C# legible, permite navegar tipos y miembros, buscar, analizar usos y exportar proyectos. Su motor de decompilación lo reutilizan otras herramientas, como dnSpyEx. El README declara que no usa servicios de telemetría.",
+      "como_lo_hace": "La interfaz de escritorio usa Avalonia y funciona en Windows, Linux y macOS; se descarga desde las releases. También existen `ilspycmd` (herramienta de línea de comandos para dotnet), el paquete NuGet del decompilador y extensiones para Visual Studio y VS Code; Visual Studio 2022/2026 ya trae sus motores para F12. Compilarlo requiere el SDK de .NET.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/icsharpcode/ILSpy/blob/master/README.md",
+        "https://github.com/icsharpcode/ILSpy/tree/master/ICSharpCode.ILSpyCmd"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "icsharpcode/ILSpy",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "C#",
+        "latest_release": "v11.2 (2026-10-27)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.",
       "body": "Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.",
       "install": {
@@ -86244,7 +86584,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "dnspy",
+          "label": "dnspy"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -86271,7 +86624,11 @@
       "desc": "Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un formato de archivo; Comparar dos versiones de una estructura binaria",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ghidra",
+        "radare2",
+        "x64dbg"
+      ],
       "alt": [],
       "stack": "Release compatible; GPU OpenGL 3.0; archivo binario de prueba",
       "repo_url": "https://github.com/WerWolv/ImHex",
@@ -86380,6 +86737,46 @@
       "stars": 55863,
       "license": "GPL-2.0",
       "homepage": "https://imhex.werwolv.net/",
+      "combina_con": [
+        {
+          "id": "ghidra",
+          "motivo": "Analizar el formato de un archivo en ImHex y el código que lo procesa en Ghidra. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ambos sobre el mismo caso."
+        },
+        {
+          "id": "radare2",
+          "motivo": "Combinar el editor visual con el análisis por línea de comandos. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ImHex para datos y r2 para código."
+        },
+        {
+          "id": "x64dbg",
+          "motivo": "Estudiar volcados de memoria tomados durante la depuración. (combinación por arquitectura)",
+          "orden_instalacion": "Vuelca la región en x64dbg y ábrela en ImHex."
+        }
+      ],
+      "que_es": "Editor hexadecimal para ingenieros inversos y programadores, creado por @WerWolv. La mayor parte es GPL-2.0-only, con partes en LGPL-2.1 (librerías y plugins). Es muy popular y activo (~56k estrellas, v1.38.1).",
+      "que_hace": "Además de la vista hexadecimal, ofrece un lenguaje de patrones tipo C++ para describir y resaltar formatos, inspector de datos, preprocesador por nodos, búsquedas, hashes, diffs, desensamblador integrado, reglas YARA, marcadores y visualizadores. Carga datos de archivos, procesos, discos y otras fuentes. Tiene un actualizador de contenido con patrones y bibliotecas de la comunidad.",
+      "como_lo_hace": "Es una aplicación de escritorio en C++ (Dear ImGui) para Windows, macOS y Linux; se instala desde las releases o gestores de paquetes. Requiere una GPU con OpenGL 3.0. Se extiende con plugins y con su lenguaje de patrones.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/WerWolv/ImHex/blob/master/README.md",
+        "https://github.com/WerWolv/ImHex/blob/master/PLUGINS.md"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "WerWolv/ImHex",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "GPL-2.0",
+        "primary_language": "C++",
+        "latest_release": "v1.38.1 (2025-12-21)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones.",
       "body": "Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones.",
       "install": {
@@ -86388,7 +86785,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "ghidra",
+          "label": "ghidra"
+        },
+        {
+          "id": "radare2",
+          "label": "radare2"
+        },
+        {
+          "id": "x64dbg",
+          "label": "x64dbg"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -86415,7 +86825,11 @@
       "desc": "Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una app Android propia; Documentar recursos y referencias de un APK",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "frida",
+        "apktool",
+        "ghidra"
+      ],
       "alt": [],
       "stack": "Java y release apropiada; APK o DEX propio",
       "repo_url": "https://github.com/skylot/jadx",
@@ -86523,6 +86937,46 @@
       "stars": 51831,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "frida",
+          "motivo": "Localizar clases y métodos para escribir hooks de Frida. (combinación por arquitectura)",
+          "orden_instalacion": "Analiza en JADX y escribe el script de Frida con las firmas encontradas."
+        },
+        {
+          "id": "apktool",
+          "motivo": "Modificar y reconstruir la app tras entenderla en JADX. (combinación por arquitectura)",
+          "orden_instalacion": "Usa JADX para leer y Apktool para editar smali y recursos."
+        },
+        {
+          "id": "ghidra",
+          "motivo": "Analizar las librerías nativas `.so` que JADX no cubre. (combinación por arquitectura)",
+          "orden_instalacion": "Extrae `lib/` de la APK y ábrelas en Ghidra."
+        }
+      ],
+      "que_es": "Decompilador de Dex a Java con herramientas de línea de comandos y GUI, de @skylot. Licencia Apache-2.0. Es muy maduro y popular (~52k estrellas, v1.5.6).",
+      "que_hace": "Produce código Java a partir de APK, DEX, AAB, APKS, APKM, XAPK y ZIP, y también decompila bytecode Java (jar, class) y smali. Decodifica `AndroidManifest.xml` y recursos, e incluye desofuscador. La GUI permite resaltar sintaxis, saltar a declaraciones, buscar usos y texto completo, y tiene un depurador smali. El README avisa que casi nunca decompila el 100 % del código.",
+      "como_lo_hace": "Es Java (requiere Java 11+); se instala desde las releases, con `brew install jadx` u otros gestores. Se usa con `jadx -d salida app.apk` o con `jadx-gui`. Admite plugins y opciones para modos de decompilación alternativos cuando falla el principal.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/skylot/jadx/blob/master/README.md",
+        "https://github.com/skylot/jadx/wiki"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "skylot/jadx",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "Apache-2.0",
+        "primary_language": "Java",
+        "latest_release": "v1.5.6 (2026-07-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.",
       "body": "Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.",
       "install": {
@@ -86531,7 +86985,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "frida",
+          "label": "frida"
+        },
+        {
+          "id": "apktool",
+          "label": "apktool"
+        },
+        {
+          "id": "ghidra",
+          "label": "ghidra"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -86702,7 +87169,11 @@
       "desc": "Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Depurar llamadas HTTP de una app propia; Comprender un error de integración de desarrollo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "frida",
+        "playwright",
+        "k6"
+      ],
       "alt": [],
       "stack": "Distribución compatible; cliente y servicio propios de prueba; certificado solo en el entorno de ensayo",
       "repo_url": "https://github.com/mitmproxy/mitmproxy",
@@ -86811,6 +87282,48 @@
       "stars": 46961,
       "license": "MIT",
       "homepage": "https://mitmproxy.org",
+      "combina_con": [
+        {
+          "id": "frida",
+          "motivo": "Saltar el certificate pinning de apps móviles para inspeccionar su tráfico. (combinación por arquitectura)",
+          "orden_instalacion": "Instala la CA de mitmproxy y carga un script de Frida contra el pinning."
+        },
+        {
+          "id": "playwright",
+          "motivo": "Pasar un navegador automatizado por el proxy con la opción `proxy` documentada por Playwright.",
+          "orden_instalacion": "Arranca mitmproxy y lanza Playwright con `proxy: { server: 'http://localhost:8080' }`."
+        },
+        {
+          "id": "k6",
+          "motivo": "Convertir tráfico capturado en un HAR y de ahí en un script de carga con el conversor HAR de k6. (combinación por arquitectura) (la exportación HAR de mitmproxy depende de la versión)",
+          "orden_instalacion": "Captura con mitmproxy, exporta a HAR y conviértelo con `har-to-k6`."
+        }
+      ],
+      "que_es": "Proxy interceptor interactivo con soporte SSL/TLS para HTTP/1, HTTP/2 y WebSockets. Licencia MIT. Es muy maduro y activo (~47k estrellas, v12.3.1).",
+      "que_hace": "Intercepta, inspecciona, modifica y reproduce tráfico. Tiene tres interfaces: `mitmproxy` (consola interactiva), `mitmdump` (línea de comandos, «tcpdump para HTTP») y `mitmweb` (web). Se automatiza con addons en Python y funciona en modos proxy normal, transparente, inverso, SOCKS y otros.",
+      "como_lo_hace": "Está escrito en Python; se instala con los binarios oficiales, `pipx install mitmproxy` o gestores de paquetes según la guía. Para ver HTTPS, el cliente debe confiar en la CA que genera mitmproxy. Las apps con certificate pinning necesitan pasos adicionales.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/mitmproxy/mitmproxy/blob/main/README.md",
+        "https://docs.mitmproxy.org/stable/overview-installation/",
+        "https://playwright.dev/docs/network#http-proxy",
+        "https://grafana.com/docs/k6/latest/using-k6/test-authoring/create-tests-from-recordings/using-the-har-converter/"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "mitmproxy/mitmproxy",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v12.3.1 (2026-10-25)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas.",
       "body": "Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas.",
       "install": {
@@ -86819,7 +87332,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "frida",
+          "label": "frida"
+        },
+        {
+          "id": "playwright",
+          "label": "playwright"
+        },
+        {
+          "id": "k6",
+          "label": "k6"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -86846,7 +87372,11 @@
       "desc": "Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "frida",
+        "claude-code",
+        "imhex"
+      ],
       "alt": [
         "rizin",
         "ghidra"
@@ -86957,6 +87487,47 @@
       "stars": 25433,
       "license": "NOASSERTION",
       "homepage": "https://www.radare.org",
+      "combina_con": [
+        {
+          "id": "frida",
+          "motivo": "Instrumentar procesos en vivo desde r2 con el plugin oficial r2frida (`r2 frida://0`).",
+          "orden_instalacion": "Instala Frida y luego `r2pm -ci r2frida`."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Dar a un agente acceso a r2 con el servidor MCP oficial r2mcp (radareorg/radare2-mcp, no catalogado).",
+          "orden_instalacion": "Instala r2mcp con r2pm y regístralo en el cliente MCP."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Analizar formatos de datos con patrones visuales mientras r2 trabaja el código. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ambos sobre el mismo binario."
+        }
+      ],
+      "que_es": "Framework libre de ingeniería inversa para línea de comandos (r2), reescritura completa de radare. Licencia LGPL-3.0, aunque cada plugin puede tener la suya (GitHub muestra NOASSERTION; `r2 -Lj` lista las licencias). Es muy maduro y activo (~25k estrellas, 6.2.6).",
+      "que_hace": "Ofrece librerías, herramientas y plugins para desensamblar, analizar, depurar, parchear y editar binarios en hexadecimal, con soporte para muchísimas arquitecturas y formatos. Se automatiza con su intérprete JavaScript embebido o con r2pipe desde cualquier lenguaje. Tiene un ecosistema de plugins como r2frida (instrumentación con Frida) y r2ghidra.",
+      "como_lo_hace": "Está escrito en C; se recomienda instalarlo desde git con `sys/install.sh` (o paquetes) y añadir plugins con su gestor `r2pm`. Funciona en Linux, macOS, Windows, BSD, Android e iOS. La curva de aprendizaje de su interfaz de comandos es alta.",
+      "descripcion_notas": "Alternativas (elige una): rizin, ghidra. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/radareorg/radare2/blob/master/README.md",
+        "https://github.com/nowsecure/r2frida",
+        "https://github.com/radareorg/radare2-mcp"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "radareorg/radare2",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "C",
+        "latest_release": "6.2.6 (2026-11-05)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
       "body": "Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
       "install": {
@@ -86974,7 +87545,20 @@
           "label": "ghidra"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "frida",
+          "label": "frida"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -87001,7 +87585,11 @@
       "desc": "Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender depuración nativa; Inspeccionar un fallo de una app propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "x64dbg",
+        "imhex",
+        "semgrep"
+      ],
       "alt": [],
       "stack": "Windows x64 o Linux temprano; build o release; programa y símbolos de prueba",
       "repo_url": "https://github.com/EpicGames/raddebugger",
@@ -87110,6 +87698,46 @@
       "stars": 8844,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "x64dbg",
+          "motivo": "Depurar binarios ajenos sin símbolos, que no son el foco de RAD Debugger. (combinación por arquitectura)",
+          "orden_instalacion": "Usa RAD Debugger para tu código con símbolos y x64dbg para binarios cerrados."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Inspeccionar volcados y estructuras de datos binarias. (combinación por arquitectura)",
+          "orden_instalacion": "Exporta la memoria y ábrela en ImHex."
+        },
+        {
+          "id": "semgrep",
+          "motivo": "Encontrar con análisis estático los fallos que luego reproduces en el depurador. (combinación por arquitectura)",
+          "orden_instalacion": "Ejecuta Semgrep en CI y depura los hallazgos con RAD Debugger."
+        }
+      ],
+      "que_es": "RAD Debugger, depurador gráfico nativo de Epic Games (equipo RAD), junto con el RAD Linker y herramientas de información de depuración. Licencia MIT. Está en alfa (v0.9.29-alpha), aunque ya tiene ~9k estrellas.",
+      "que_hace": "Depura procesos de modo usuario y varios procesos a la vez con una interfaz rápida, pensada para proyectos grandes en C y C++. Ahora mismo solo depura localmente x64 en Windows y Linux (el soporte Linux es muy temprano); el equipo planea otras arquitecturas y depuración remota. El repo incluye el RAD Linker, un enlazador PE/COFF x64 orientado a rendimiento, y convertidores al formato de depuración RDI.",
+      "como_lo_hace": "Está escrito en C; se descargan binarios desde las releases o se compila con los scripts `build` del repo (el README detalla los requisitos por plataforma). Convierte PDB y DWARF a su formato RDI bajo demanda. El README del repo es técnico; las instrucciones de uso vienen con cada release.",
+      "descripcion_notas": "Sin alternativas declaradas. Software en alfa: reporta los fallos con volcados.",
+      "descripcion_fuentes": [
+        "https://github.com/EpicGames/raddebugger/blob/master/README.md",
+        "https://github.com/EpicGames/raddebugger/releases"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "EpicGames/raddebugger",
+        "archived": false,
+        "pushed_at": "2026-11-10",
+        "license": "MIT",
+        "primary_language": "C",
+        "latest_release": "v0.9.29-alpha (2026-09-30)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas.",
       "body": "Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas.",
       "install": {
@@ -87118,7 +87746,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "x64dbg",
+          "label": "x64dbg"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        },
+        {
+          "id": "semgrep",
+          "label": "semgrep"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -87301,7 +87942,11 @@
       "desc": "Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ghidra",
+        "angr",
+        "imhex"
+      ],
       "alt": [
         "radare2"
       ],
@@ -87411,6 +88056,47 @@
       "stars": 4196,
       "license": "LGPL-3.0",
       "homepage": "https://rizin.re",
+      "combina_con": [
+        {
+          "id": "ghidra",
+          "motivo": "Usar el decompilador de Ghidra dentro de Rizin con el plugin oficial rz-ghidra.",
+          "orden_instalacion": "Compila o instala rz-ghidra para tu versión de Rizin."
+        },
+        {
+          "id": "angr",
+          "motivo": "Ejecución simbólica sobre las rutas que identifiques en Rizin. (combinación por arquitectura)",
+          "orden_instalacion": "Localiza la función en Rizin y modela la búsqueda en angr."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Análisis de formatos con patrones visuales. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ambos sobre el mismo archivo."
+        }
+      ],
+      "que_es": "Framework de ingeniería inversa nacido como fork de radare2, centrado en usabilidad, funciones y limpieza del código. Licencia LGPL-3.0. Es activo (~4k estrellas, v0.9.1).",
+      "que_hace": "Analiza binarios, desensambla, depura, sirve como herramienta forense y como editor hexadecimal scriptable capaz de abrir archivos de disco. Comparte el modelo de comandos de radare2, pero con una API y comandos reorganizados. Se extiende con plugins como rz-ghidra, que integra el decompilador de Ghidra.",
+      "como_lo_hace": "Está escrito en C y se compila con Meson según el README; también hay binarios y paquetes. El libro oficial (book.rizin.re) documenta su uso. Se automatiza con rz-pipe.",
+      "descripcion_notas": "Alternativas (elige una): radare2. Úsalo solo con software y sistemas que tengas derecho a analizar.",
+      "descripcion_fuentes": [
+        "https://github.com/rizinorg/rizin/blob/dev/README.md",
+        "https://book.rizin.re",
+        "https://github.com/rizinorg/rz-ghidra"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "rizinorg/rizin",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "LGPL-3.0",
+        "primary_language": "C",
+        "latest_release": "v0.9.1 (2026-06-29)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
       "body": "Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
       "install": {
@@ -87424,7 +88110,20 @@
           "label": "radare2"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "ghidra",
+          "label": "ghidra"
+        },
+        {
+          "id": "angr",
+          "label": "angr"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],
@@ -88251,7 +88950,11 @@
       "desc": "Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender depuración en Windows; Investigar un fallo reproducible de una app propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ghidra",
+        "imhex",
+        "dnspy"
+      ],
       "alt": [],
       "stack": "Windows; distribución oficial; ejecutable de práctica propio",
       "repo_url": "https://github.com/x64dbg/x64dbg",
@@ -88360,6 +89063,46 @@
       "stars": 50315,
       "license": "NOASSERTION",
       "homepage": "http://x64dbg.com",
+      "combina_con": [
+        {
+          "id": "ghidra",
+          "motivo": "Analizar estáticamente en Ghidra las funciones que luego depuras. (combinación por arquitectura)",
+          "orden_instalacion": "Localiza direcciones en Ghidra y pon breakpoints en x64dbg."
+        },
+        {
+          "id": "imhex",
+          "motivo": "Estudiar volcados de memoria o archivos con patrones. (combinación por arquitectura)",
+          "orden_instalacion": "Vuelca la región desde x64dbg y ábrela en ImHex."
+        },
+        {
+          "id": "dnspy",
+          "motivo": "Cubrir la parte .NET de un proceso mixto. (combinación por arquitectura)",
+          "orden_instalacion": "Usa dnSpyEx para el código gestionado y x64dbg para el nativo."
+        }
+      ],
+      "que_es": "Depurador binario open source para Windows orientado a análisis de malware e ingeniería inversa de ejecutables sin código fuente, con @mrexodia entre sus autores según los créditos. Licencia GPL-3.0 (GitHub muestra NOASSERTION). Es muy maduro y activo (~50k estrellas, snapshot 2026.05.27).",
+      "que_hace": "Depura ejecutables de 32 bits (x32dbg) y 64 bits (x64dbg) con breakpoints, trazas, edición de memoria, ensamblado en línea, análisis gráfico y búsqueda de patrones. Tiene un sistema de plugins y scripting muy amplio. Su documentación oficial está en help.x64dbg.com.",
+      "como_lo_hace": "Se descarga un snapshot, se descomprime y se ejecuta `x32\\x32dbg.exe` o `x64\\x64dbg.exe` según el binario. Solo funciona en Windows. Está escrito sobre todo en C++.",
+      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar. Analiza malware solo en una máquina virtual aislada.",
+      "descripcion_fuentes": [
+        "https://github.com/x64dbg/x64dbg/blob/development/README.md",
+        "https://help.x64dbg.com"
+      ],
+      "descripcion_revision": {
+        "batch": "20-seguridad-reversing-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "x64dbg/x64dbg",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "C++",
+        "latest_release": "2026.05.27 (2026-05-27)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas.",
       "body": "Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas.",
       "install": {
@@ -88368,7 +89111,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "ghidra",
+          "label": "ghidra"
+        },
+        {
+          "id": "imhex",
+          "label": "imhex"
+        },
+        {
+          "id": "dnspy",
+          "label": "dnspy"
+        }
+      ],
       "areas": [
         "ciberseguridad"
       ],

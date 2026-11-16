@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de ingeniería inversa de software creado y mantenido por la Research Directorate de la NSA. Licencia Apache-2.0. Es muy maduro y popular (~100k estrellas, Ghidra 12.2). El README avisa de vulnerabilidades conocidas en algunas versiones y remite a sus avisos de seguridad.
+
+## ¿Qué hace?
+
+Analiza código compilado de muchas arquitecturas en Windows, macOS y Linux: desensambla, ensambla, decompila a pseudo-C, genera grafos y permite scripting. Incluye cientos de funciones (análisis automático, tipos, referencias cruzadas, depurador, parcheo) y modo colaborativo con servidor. Se extiende con scripts y extensiones en Java o Python.
+
+## ¿Cómo lo hace?
+
+Es una aplicación Java: se instala el JDK 25 de 64 bits, se descarga la release y se descomprime en una carpeta nueva (no encima de otra instalación). Se lanza con `ghidraRun` y también tiene modo headless para análisis por lotes. Compilarlo desde el código usa Gradle.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GhidraMCP](ghidramcp.md) | Exponer funciones de Ghidra (decompilar, renombrar, listar) a asistentes por MCP con la extensión GhidraMCP. | Instala la extensión en Ghidra, arranca su servidor y conecta el cliente MCP. |
+| [jadx](jadx.md) | Leer el código Java de una APK en JADX y analizar sus librerías nativas `.so` en Ghidra. (combinación por arquitectura) | Extrae la APK, decompila Java en JADX y abre los `.so` en Ghidra. |
+| [ImHex](imhex.md) | Inspeccionar estructuras binarias y formatos con el lenguaje de patrones de ImHex. (combinación por arquitectura) | Usa ImHex para el formato del archivo y Ghidra para el código. |
+| [x64dbg](x64dbg.md) | Contrastar el análisis estático con depuración dinámica en Windows. (combinación por arquitectura) | Localiza funciones en Ghidra y pon breakpoints en x64dbg. |
+
+**Notas:** Alternativas (elige una): radare2. Úsalo solo con software y sistemas que tengas derecho a analizar. Revisa los avisos de seguridad antes de abrir proyectos de terceros.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada Ghidra_12.2_build (2026-10-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md) · [2](https://github.com/NationalSecurityAgency/ghidra/security/advisories) · [3](https://github.com/LaurieWired/GhidraMCP)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Descarga el ZIP de release Ghidra; los archivos Source Code no son la distribución lista para ejecutar |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere LLM; equipo y almacenamiento de proyectos son propios |
 | Equipo | Preparación según la ruta elegida. JDK 25 de 64 bits para release revisada; ZIP de release; binario de laboratorio |
-
-Descarga el ZIP de release Ghidra; los archivos Source Code no son la distribución lista para ejecutar
-
-## Qué puedes hacer con él
-
-Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos.
-
-## Cómo funciona
 
 Descarga el ZIP de release Ghidra; los archivos Source Code no son la distribución lista para ejecutar
 
