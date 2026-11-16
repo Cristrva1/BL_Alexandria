@@ -18240,8 +18240,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Hay CLI, skill y MCP stdio; compatibilidad MCP no significa que la suscripción del cliente pague Firecrawl",
    "combines_with": [
-    "gpt-researcher",
-    "crawl4ai"
+    "n8n",
+    "claude-code",
+    "gpt-researcher"
    ],
    "alternatives": [
     "jina-reader"
@@ -18339,7 +18340,49 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "API para buscar, extraer e interactuar con la web a escala, pensada como «API de contexto» para agentes de IA, de Firecrawl. Licencia AGPL-3.0, con servicio alojado de pago. Es muy popular y activo (~202k estrellas, v2.11.0).",
+   "que_hace": "Convierte sitios en Markdown limpio o JSON estructurado mediante scrape, crawl, map, search y extracción con LLM; también procesa PDF y DOCX, interactúa con páginas y monitoriza cambios. Ofrece SDK, CLI, skills y un servidor MCP (firecrawl-mcp) para conectarlo a agentes. Tiene integraciones oficiales con n8n, Zapier, Lovable y otros.",
+   "como_lo_hace": "Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker según la guía; la versión autoalojada no incluye todo: por ejemplo, el servicio «Alexandria» de proveedores de datos solo funciona en Firecrawl Cloud, y motores como Fire-engine se configuran aparte. Para agentes, `npx -y firecrawl-cli@latest init` instala CLI y skills, y el MCP se ejecuta con `npx -y firecrawl-mcp`.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Nodo e integración oficial de Firecrawl en n8n.",
+     "orden_instalacion": "Crea la credencial de Firecrawl en n8n y usa el nodo en tus flujos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Dar al agente scraping y búsqueda con el servidor MCP oficial firecrawl-mcp.",
+     "orden_instalacion": "Añade `firecrawl-mcp` a la configuración MCP con tu clave."
+    },
+    {
+     "id": "gpt-researcher",
+     "motivo": "Usar Firecrawl como scraper de GPT Researcher, documentado en su guía de scraping.",
+     "orden_instalacion": "Define el scraper Firecrawl y su clave en la configuración de GPT Researcher."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): jina-reader. Se quita la combinación con crawl4ai por solaparse como crawler. Coincidencia de nombre: el producto «Alexandria» de Firecrawl no tiene relación con esta biblioteca. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/firecrawl/firecrawl/blob/main/README.md",
+    "https://docs.firecrawl.dev/mcp-server",
+    "https://n8n.io/integrations/firecrawl/",
+    "https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "firecrawl/firecrawl",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v2.11.0 (2026-06-19)",
+    "checked_at": "2026-11-15"
+   }
   },
   "scrapling": {
    "name": "Scrapling",
@@ -18359,7 +18402,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La instalación base solo trae parser; MCP requiere scrapling[ai]; los tres clientes admiten sus transportes estándar sin prueba de instalación aquí",
    "combines_with": [
-    "scrapy"
+    "claude-code",
+    "scrapy",
+    "defuddle"
    ],
    "alternatives": [],
    "repo": "https://github.com/D4Vinci/Scrapling",
@@ -18456,7 +18501,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Framework de web scraping en Python con peticiones HTTP rápidas, navegadores sigilosos, parsing potente y crawling concurrente, creado por @D4Vinci. Licencia BSD-3-Clause. Es muy popular (~103k estrellas, v0.5.1) y muestra patrocinadores de proxies residenciales y resolución de CAPTCHA.",
+   "que_hace": "Descarga páginas estáticas, renderiza JavaScript, interactúa con sitios y extrae datos de las API que hay detrás. Selecciona con CSS, XPath, texto o regex y tiene extracción «adaptativa» que relocaliza elementos cuando cambia el HTML. Incluye spiders con rotación de proxies, CLI, servidor MCP y una Agent Skill; dice manejar Cloudflare Turnstile.",
+   "como_lo_hace": "Se instala con pip (con extras para navegadores) y se usa desde Python, la terminal o un agente mediante su servidor MCP. Los fetchers sigilosos descargan navegadores adicionales. Su capacidad de evadir protecciones antibots exige especial cuidado legal.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Navegar y extraer datos desde el agente con el servidor MCP y la skill oficiales.",
+     "orden_instalacion": "Instala Scrapling con el extra de IA y registra su servidor MCP."
+    },
+    {
+     "id": "scrapy",
+     "motivo": "Reutilizar el parser de Scrapling dentro de proyectos Scrapy existentes. (combinación por arquitectura)",
+     "orden_instalacion": "Mantén la infraestructura de Scrapy y usa Scrapling para seleccionar elementos."
+    },
+    {
+     "id": "defuddle",
+     "motivo": "Quedarte solo con el contenido principal de los artículos descargados. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa el HTML obtenido por Defuddle para limpiarlo."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/D4Vinci/Scrapling/blob/main/README.md",
+    "https://scrapling.readthedocs.io/en/latest/ai/mcp-server.html"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "D4Vinci/Scrapling",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "latest_release": "v0.5.1 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
   },
   "crawl4ai": {
    "name": "crawl4ai",
@@ -18628,7 +18713,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un framework de desarrollo, no una app de conversación ni una garantía de acceso a cualquier web",
    "combines_with": [
-    "crawlee-python"
+    "playwright",
+    "scrapling",
+    "defuddle"
    ],
    "alternatives": [],
    "repo": "https://github.com/scrapy/scrapy",
@@ -18722,7 +18809,48 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework de crawling y scraping rápido y de alto nivel para Python, mantenido por Zyte. Licencia BSD-3-Clause. Es el estándar veterano del sector (~65k estrellas, 2.20.0).",
+   "que_hace": "Recorre sitios y extrae datos estructurados con spiders, selectores CSS y XPath, pipelines de procesamiento, middlewares, control de concurrencia y exportación a JSON, CSV u otros formatos. Sirve para minería de datos, monitorización y pruebas automatizadas. Tiene un ecosistema amplio de plugins.",
+   "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install scrapy`; se crea un proyecto con `scrapy startproject`. Está basado en Twisted (asíncrono). Para páginas con JavaScript se usa el plugin oficial scrapy-playwright.",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Renderizar páginas con JavaScript desde spiders con el plugin oficial scrapy-playwright.",
+     "orden_instalacion": "Instala `scrapy-playwright` y los navegadores de Playwright, y activa su handler de descargas."
+    },
+    {
+     "id": "scrapling",
+     "motivo": "Parser adaptativo para selectores frágiles. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Scrapling en los callbacks de tus spiders."
+    },
+    {
+     "id": "defuddle",
+     "motivo": "Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa el HTML guardado con Defuddle."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Se quita la combinación con crawlee-python por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/scrapy/scrapy/blob/master/README.rst",
+    "https://docs.scrapy.org/en/latest/",
+    "https://github.com/scrapy-plugins/scrapy-playwright"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "scrapy/scrapy",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "latest_release": "2.20.0 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
   },
   "crawlee": {
    "name": "crawlee",
@@ -18742,7 +18870,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El generador ofrece plantillas; elige HTTP para HTML sencillo y navegador cuando sea necesario",
    "combines_with": [
-    "playwright"
+    "playwright",
+    "defuddle",
+    "llm-scraper"
    ],
    "alternatives": [],
    "repo": "https://github.com/apify/crawlee",
@@ -18836,7 +18966,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Librería de web scraping y automatización de navegadores para Node.js, de Apify. Licencia Apache-2.0. Es madura y activa (~26k estrellas, v3.18.2).",
+   "que_hace": "Cubre el crawling de principio a fin: cola de URLs, reintentos, almacenamiento de resultados, rotación de proxies y gestión de sesiones. Trabaja con HTTP plano (Cheerio, JSDOM) o con navegadores (Playwright, Puppeteer) con la misma interfaz. Por defecto intenta parecer humano para evitar protecciones antibots.",
+   "como_lo_hace": "Requiere Node.js 22.13+; se crea un proyecto con `npx crawlee create my-crawler` o se instala con `npm install crawlee playwright`. Se ejecuta en local o en la plataforma Apify. Es TypeScript.",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Crawler de navegador basado en Playwright, soportado de forma nativa.",
+     "orden_instalacion": "Instala `crawlee` y `playwright` y usa `PlaywrightCrawler`."
+    },
+    {
+     "id": "defuddle",
+     "motivo": "Limpiar el contenido principal de cada página en el mismo proyecto Node.js. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa el HTML de cada página a Defuddle."
+    },
+    {
+     "id": "llm-scraper",
+     "motivo": "Extraer datos estructurados con un LLM de las páginas que abre Crawlee. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa la página de Playwright a LLM Scraper con un esquema Zod."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/apify/crawlee/blob/master/README.md",
+    "https://crawlee.dev/js/docs/quick-start"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "apify/crawlee",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.18.2 (2026-09-29)",
+    "checked_at": "2026-11-15"
+   }
   },
   "jina-reader": {
    "name": "Jina Reader",
@@ -18857,6 +19027,7 @@
    "limits": "El contenedor básico no tiene caché ni control de tasa; localhost usa el puerto HTTP/1.1 del ejemplo",
    "combines_with": [
     "n8n",
+    "open-webui",
     "llama-index"
    ],
    "alternatives": [
@@ -18952,7 +19123,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Reader, de Jina AI: convierte cualquier URL en entrada apta para LLM y busca en la web. Licencia Apache-2.0. Es popular (~12k estrellas, sin releases) y el código abierto se resincronizó con el SaaS en abril de 2026 sin la capa de almacenamiento.",
+   "que_hace": "Con `https://r.jina.ai/<url>` devuelve el contenido limpio en Markdown, y con `https://s.jina.ai/<consulta>` busca y devuelve los primeros resultados ya leídos. Sirve para agentes y RAG que necesitan leer páginas sin escribir un scraper. El servicio alojado tiene límites de uso y opciones con clave.",
+   "como_lo_hace": "Se usa directamente por HTTP o se autoaloja con la imagen `ghcr.io/jina-ai/reader:oss` (Docker, modo sin estado). Algunos artefactos no redistribuibles en `licensed/` son necesarios para compilar o ejecutar, según el README.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Usar Jina AI desde flujos con la integración de n8n.",
+     "orden_instalacion": "Configura la credencial de Jina AI en n8n."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Usar Jina como proveedor de búsqueda web en Open WebUI, documentado en su guía.",
+     "orden_instalacion": "Activa la búsqueda web en Open WebUI y elige Jina con tu clave."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Cargar el texto limpio de URLs en índices de LlamaIndex. (combinación por arquitectura)",
+     "orden_instalacion": "Llama a r.jina.ai y crea documentos con la respuesta."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): firecrawl, crawl4ai.",
+   "descripcion_fuentes": [
+    "https://github.com/jina-ai/reader/blob/main/README.md",
+    "https://n8n.io/integrations/jina-ai/",
+    "https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "jina-ai/reader",
+    "archived": false,
+    "pushed_at": "2026-05-22",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "crawlee-python": {
    "name": "crawlee-python",
@@ -18972,8 +19183,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping",
    "combines_with": [
-    "scrapy",
-    "playwright"
+    "playwright",
+    "scrapegraph-ai",
+    "qdrant"
    ],
    "alternatives": [],
    "repo": "https://github.com/apify/crawlee-python",
@@ -19068,7 +19280,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Versión en Python de Crawlee, la librería de scraping y automatización de navegadores de Apify. Licencia Apache-2.0. Es activa (~10k estrellas, v1.11.2).",
+   "que_hace": "Ofrece cola de URLs, reintentos, almacenamiento, proxies y sesiones con varios crawlers, entre ellos uno HTTP con BeautifulSoup y otro de navegador con Playwright. Intenta parecer humano por defecto. Tiene tipado completo y estilo asíncrono.",
+   "como_lo_hace": "Se instala con `pip install 'crawlee[all]'` y `playwright install` para los navegadores, o se crea un proyecto con `uvx 'crawlee[cli]' create my-crawler`. Se ejecuta en local o en Apify.",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Crawler de navegador soportado de forma nativa.",
+     "orden_instalacion": "Instala los navegadores con `playwright install` y usa `PlaywrightCrawler`."
+    },
+    {
+     "id": "scrapegraph-ai",
+     "motivo": "Extraer datos con LLM a partir de las páginas recogidas. (combinación por arquitectura)",
+     "orden_instalacion": "Recoge con Crawlee y pasa el HTML a ScrapeGraphAI."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Indexar el contenido rastreado para RAG. (combinación por arquitectura)",
+     "orden_instalacion": "Trocea y vectoriza los resultados y guárdalos en Qdrant."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Se quita la combinación con scrapy por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/apify/crawlee-python/blob/master/README.md",
+    "https://crawlee.dev/python/docs/quick-start"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "apify/crawlee-python",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.11.2 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "scrapegraph-ai": {
    "name": "Scrapegraph-ai",
@@ -19088,7 +19340,8 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El MCP compañero scrapegraph-mcp usa el servicio ScrapeGraph con clave propia; la biblioteca local y el servicio no comparten necesariamente costes o requisitos",
    "combines_with": [
-    "crawl4ai",
+    "ollama",
+    "playwright",
     "graphrag"
    ],
    "alternatives": [
@@ -19188,7 +19441,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Librería Python de scraping con LLM y grafos, de ScrapeGraphAI. Licencia MIT. Es popular (~33k estrellas, v2.3.1) y el README promociona en primer plano su API comercial.",
+   "que_hace": "Describes en lenguaje natural qué datos quieres y la librería construye un pipeline (grafo) que descarga la página o documento y extrae la información estructurada con un LLM. Tiene grafos para una página, para varias páginas, para resultados de búsqueda y para generar un script Python de scraping. Funciona con OpenAI, Groq, Azure, Gemini y otros, o con modelos locales vía Ollama.",
+   "como_lo_hace": "Se instala con `pip install scrapegraphai` y `playwright install` para la descarga de páginas. Se configura el modelo en un diccionario (`ollama/llama3.2`, etc.). Hay un servidor MCP y conectores de bajo código como Pipedream o Zapier vinculados a la API de pago.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales soportados de forma nativa.",
+     "orden_instalacion": "Instala Ollama, descarga el modelo y apúntalo en la configuración."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Descarga y renderizado de páginas.",
+     "orden_instalacion": "Ejecuta `playwright install` tras instalar la librería."
+    },
+    {
+     "id": "graphrag",
+     "motivo": "Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los resultados como documentos para GraphRAG."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): maxun. Se quita la combinación con crawl4ai por solaparse. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/README.md",
+    "https://docs.scrapegraphai.com/introduction"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ScrapeGraphAI/Scrapegraph-ai",
+    "archived": false,
+    "pushed_at": "2026-10-06",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.3.1 (2026-10-06)",
+    "checked_at": "2026-11-15"
+   }
   },
   "maxun": {
    "name": "Maxun",
@@ -19208,7 +19501,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos",
    "combines_with": [
-    "n8n"
+    "claude-code",
+    "n8n",
+    "changedetection"
    ],
    "alternatives": [
     "scrapegraph-ai",
@@ -19307,7 +19602,48 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Plataforma open source de datos web para scraping, crawling, búsqueda, monitorización y extracción con IA, de getmaxun. Licencia AGPL-3.0. Es activa (~18k estrellas) pero joven (v0.1.0) y muestra patrocinadores de proxies.",
+   "que_hace": "Crea «robots» sin código que graban acciones en el navegador, o extrae datos describiendo en lenguaje natural lo que quieres (AI Mode). Convierte sitios en APIs estructuradas, programa ejecuciones, monitoriza cambios y exporta resultados. Se conecta a agentes mediante MCP.",
+   "como_lo_hace": "Se autoaloja con Docker Compose según la documentación oficial (también hay versión en la nube). La extracción con IA requiere configurar un proveedor de modelos.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Lanzar robots y obtener datos desde el agente con el MCP de Maxun.",
+     "orden_instalacion": "Despliega Maxun y configura su servidor MCP en el agente."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Encadenar los datos extraídos con otros servicios. (combinación por arquitectura)",
+     "orden_instalacion": "Llama a la API de Maxun desde un nodo HTTP Request."
+    },
+    {
+     "id": "changedetection",
+     "motivo": "Avisar de cambios en páginas antes de volver a extraer. (combinación por arquitectura)",
+     "orden_instalacion": "Vigila la página con changedetection y lanza el robot cuando cambie."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): scrapegraph-ai, llm-scraper. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/getmaxun/maxun/blob/develop/README.md",
+    "https://docs.maxun.dev/installation/docker",
+    "https://docs.maxun.dev/category/mcp"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "getmaxun/maxun",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.1.0 (2026-10-25)",
+    "checked_at": "2026-11-15"
+   }
   },
   "llm-scraper": {
    "name": "llm-scraper",
@@ -19328,7 +19664,8 @@
    "limits": "Instala el adaptador del proveedor además de llm-scraper y descarga el navegador de Playwright",
    "combines_with": [
     "playwright",
-    "firecrawl"
+    "vercel-ai",
+    "ollama"
    ],
    "alternatives": [
     "maxun"
@@ -19426,7 +19763,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Librería TypeScript para extraer datos estructurados de cualquier página web con LLM, de @mishushakov. Licencia MIT. Es estable (~7k estrellas, sin releases) y su versión 2.0 usa el Vercel AI SDK 6.",
+   "que_hace": "Define un esquema (Zod o JSON Schema) y obtén datos tipados de una página abierta con Playwright. Admite modelos GPT, Claude, Gemini, Llama y Qwen, varios modos de formato (HTML, Markdown, texto, imagen) y streaming.",
+   "como_lo_hace": "Se instala con `npm i zod playwright llm-scraper` y el proveedor del AI SDK que prefieras (`@ai-sdk/openai`, `@ai-sdk/anthropic`, `ollama-ai-provider-v2`…). Requiere Node.js y navegadores de Playwright.",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Abre y controla la página que se analiza.",
+     "orden_instalacion": "Instala Playwright y sus navegadores."
+    },
+    {
+     "id": "vercel-ai",
+     "motivo": "Proveedores de modelos mediante el AI SDK 6.",
+     "orden_instalacion": "Instala el paquete de proveedor del AI SDK correspondiente."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante `ollama-ai-provider-v2`, documentado en el README.",
+     "orden_instalacion": "Levanta Ollama e instala el proveedor."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): maxun. Se quita la combinación con firecrawl por no estar documentada. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
+   "descripcion_fuentes": [
+    "https://github.com/mishushakov/llm-scraper/blob/main/README.md",
+    "https://ai-sdk.dev/docs/introduction"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mishushakov/llm-scraper",
+    "archived": false,
+    "pushed_at": "2026-10-26",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "stagehand": {
    "name": "Stagehand",
@@ -20601,7 +20977,48 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Metabuscador libre que agrega resultados de muchos motores sin rastrear ni perfilar al usuario. Licencia AGPL-3.0-or-later. Es un proyecto comunitario maduro y activo (~40k estrellas; publica desde la rama principal, sin releases en GitHub).",
+   "que_hace": "Consulta a la vez decenas de servicios de búsqueda y combina los resultados, sin guardar historial ni compartir datos con los motores. Puedes elegir motores, categorías e idiomas, y sacar resultados en JSON para otras aplicaciones. Es la búsqueda que usan muchas apps de IA autoalojadas.",
+   "como_lo_hace": "Es una aplicación Python; se instala con Docker (searxng-docker), con el script de instalación o a mano según la guía de administración. Para que lo usen apps de IA hay que activar el formato `json` en `settings.yml`. Los motores públicos pueden limitar o bloquear peticiones frecuentes.",
+   "combina_con": [
+    {
+     "id": "gpt-researcher",
+     "motivo": "Usarlo como motor de búsqueda (retriever Searx) de GPT Researcher.",
+     "orden_instalacion": "Despliega SearXNG con JSON activado y configura su URL en GPT Researcher."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Proveedor de búsqueda web documentado en Open WebUI.",
+     "orden_instalacion": "Activa el formato JSON y añade la URL de consulta en Open WebUI."
+    },
+    {
+     "id": "vane",
+     "motivo": "Motor de búsqueda integrado de Vane (va dentro de su imagen Docker o como servicio aparte).",
+     "orden_instalacion": "Usa la imagen completa de Vane o apunta `SEARXNG_API_URL` a tu instancia."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. No expongas tu instancia sin limitación de peticiones.",
+   "descripcion_fuentes": [
+    "https://github.com/searxng/searxng/blob/master/README.rst",
+    "https://docs.searxng.org/admin/installation.html",
+    "https://docs.openwebui.com/features/chat-conversations/web-search/providers/searxng",
+    "https://docs.gptr.dev/docs/gpt-researcher/search-engines"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "searxng/searxng",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "agent-reach": {
    "name": "Agent-Reach",
@@ -20856,7 +21273,8 @@
    "limits": "Antes llamado Perplexica; búsqueda web privada no significa que los sitios externos no reciban consultas",
    "combines_with": [
     "searxng",
-    "ollama"
+    "ollama",
+    "markitdown"
    ],
    "alternatives": [
     "gpt-researcher"
@@ -20951,7 +21369,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Motor de respuestas con IA centrado en la privacidad que se ejecuta en tu propio equipo, de @ItzCrazyKns. Licencia MIT. Es popular (~38k estrellas, v1.12.2) y su último cambio es de septiembre de 2026.",
+   "que_hace": "Responde preguntas buscando en internet con SearXNG y citando fuentes, al estilo de un buscador con IA. Tiene modos rápido, equilibrado y de calidad, admite subir documentos (PDF, texto, imágenes) y también puede usar Tavily o Exa. Funciona con modelos locales vía Ollama o con OpenAI, Claude, Gemini, Groq y otros.",
+   "como_lo_hace": "Se despliega con Docker: la imagen completa incluye SearXNG (`docker run -p 3000:3000 … itzcrazykns1337/vane:latest`) y la versión `slim` usa una instancia propia mediante `SEARXNG_API_URL`. Los proveedores y modelos se configuran en la interfaz web.",
+   "combina_con": [
+    {
+     "id": "searxng",
+     "motivo": "Motor de búsqueda que usa por defecto.",
+     "orden_instalacion": "Usa la imagen completa o apunta a tu SearXNG con JSON activado."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales soportados de forma nativa.",
+     "orden_instalacion": "Levanta Ollama y configura su URL en Vane (cuidado con la red de Docker)."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "Convertir documentos de Office a texto antes de subirlos. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte con MarkItDown y sube el resultado."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): gpt-researcher.",
+   "descripcion_fuentes": [
+    "https://github.com/ItzCrazyKns/Vane/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ItzCrazyKns/Vane",
+    "archived": false,
+    "pushed_at": "2026-09-01",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.12.2 (2026-04-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "changedetection": {
    "name": "changedetection.io",
@@ -21088,7 +21545,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica",
    "combines_with": [
-    "yt-dlp"
+    "yt-dlp",
+    "changedetection",
+    "karakeep"
    ],
    "alternatives": [],
    "repo": "https://github.com/ArchiveBox/ArchiveBox",
@@ -21181,7 +21640,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Aplicación autoalojada para archivar sitios web en varios formatos. Licencia MIT. Es madura y activa (~29k estrellas, v0.9.77).",
+   "que_hace": "Guarda cada URL como HTML original, SingleFile, captura PNG, PDF, WARC, texto del artículo, medios (con yt-dlp), repositorios git y metadatos. Acepta URLs sueltas o importaciones programadas desde marcadores, historial, redes sociales o RSS, y ofrece interfaz web, CLI y extensión de navegador. Por defecto también envía cada página a archive.org como redundancia (se puede desactivar).",
+   "como_lo_hace": "Se instala con Docker Compose (recomendado) o `pip install archivebox` en Linux y macOS; usa Chrome, wget, yt-dlp y otras herramientas estándar. Se añaden URLs con `archivebox add` o desde la interfaz. Los archivos quedan en formatos abiertos legibles sin ArchiveBox.",
+   "combina_con": [
+    {
+     "id": "yt-dlp",
+     "motivo": "Descarga de audio y vídeo, integrada como extractor.",
+     "orden_instalacion": "Viene en la imagen Docker; en pip instala yt-dlp aparte."
+    },
+    {
+     "id": "changedetection",
+     "motivo": "Archivar una nueva copia cuando una página cambia. (combinación por arquitectura)",
+     "orden_instalacion": "Usa una notificación de changedetection (webhook) para añadir la URL a ArchiveBox."
+    },
+    {
+     "id": "karakeep",
+     "motivo": "Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los enlaces de Karakeep e impórtalos en ArchiveBox."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Desactiva el envío a archive.org si archivas páginas privadas.",
+   "descripcion_fuentes": [
+    "https://github.com/ArchiveBox/ArchiveBox/blob/dev/README.md",
+    "https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#archivedotorg_enabled"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ArchiveBox/ArchiveBox",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.9.77 (2026-10-27)",
+    "checked_at": "2026-11-15"
+   }
   },
   "yt-dlp": {
    "name": "yt-dlp",
@@ -62556,7 +63055,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera",
-   "combines_with": [],
+   "combines_with": [
+    "scrapy",
+    "crawlee",
+    "firecrawl"
+   ],
    "alternatives": [],
    "repo": "https://github.com/lorien/awesome-web-scraping",
    "homepage": "",
@@ -62653,7 +63156,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Lista de paquetes, servicios y manuales de web scraping, de @lorien. GitHub muestra licencia NOASSERTION. Es una lista veterana (~8k estrellas) que se sigue actualizando.",
+   "que_hace": "Organiza los recursos por lenguaje (Python, PHP, Ruby, JavaScript, Go, Java y otros) en archivos separados, además de servicios, herramientas y manuales. Sirve para explorar opciones antes de elegir un framework.",
+   "como_lo_hace": "Es un README con enlaces a subpáginas; no requiere instalación. Comprueba la vigencia de cada enlace, porque algunas herramientas antiguas ya no se mantienen.",
+   "combina_con": [
+    {
+     "id": "scrapy",
+     "motivo": "Framework de referencia en la sección de Python. (combinación por arquitectura)",
+     "orden_instalacion": "Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico."
+    },
+    {
+     "id": "crawlee",
+     "motivo": "Opción moderna para JavaScript/TypeScript. (combinación por arquitectura)",
+     "orden_instalacion": "Compárala con las demás de la sección de JavaScript."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Servicio orientado a LLM para comparar con las librerías de la lista. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo si prefieres una API gestionada."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/lorien/awesome-web-scraping/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "lorien/awesome-web-scraping",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "openrv": {
    "name": "OpenRV",
@@ -74231,7 +74772,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas",
-   "combines_with": [],
+   "combines_with": [
+    "obsidian-clipper",
+    "obsidian-skills",
+    "crawlee"
+   ],
    "alternatives": [],
    "repo": "https://github.com/kepano/defuddle",
    "homepage": "https://defuddle.md",
@@ -74331,7 +74876,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Librería y CLI que extrae el contenido principal de páginas web, de @kepano. Licencia MIT. Es activa (~10k estrellas, 0.19.6) y el propio README avisa de que sigue en desarrollo.",
+   "que_hace": "Elimina comentarios, barras laterales, cabeceras, pies y otros elementos accesorios, y devuelve HTML limpio o Markdown con metadatos (título, autor, fecha…). Normaliza notas al pie, código y fórmulas para producir una salida consistente. Es el motor de extracción de Obsidian Web Clipper.",
+   "como_lo_hace": "Se usa con `npx defuddle parse <archivo|url> [--markdown|--json]` o como librería en navegador y Node.js (`npm install defuddle`). Funciona sin modelos de IA.",
+   "combina_con": [
+    {
+     "id": "obsidian-clipper",
+     "motivo": "El Web Clipper oficial de Obsidian usa Defuddle para extraer contenido.",
+     "orden_instalacion": "Instala el Clipper; Defuddle va incluido."
+    },
+    {
+     "id": "obsidian-skills",
+     "motivo": "La skill oficial `defuddle` enseña a los agentes a usarlo para ahorrar tokens.",
+     "orden_instalacion": "Instala obsidian-skills en el agente."
+    },
+    {
+     "id": "crawlee",
+     "motivo": "Limpiar el contenido de cada página de un crawler Node.js. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa el HTML de cada página a Defuddle."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. En desarrollo: la salida puede cambiar entre versiones.",
+   "descripcion_fuentes": [
+    "https://github.com/kepano/defuddle/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "22-web-scraping-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "kepano/defuddle",
+    "archived": false,
+    "pushed_at": "2026-10-25",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "0.19.6 (2026-10-24)",
+    "checked_at": "2026-11-15"
+   }
   },
   "flexoki": {
    "name": "flexoki",

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Librería Python de scraping con LLM y grafos, de ScrapeGraphAI. Licencia MIT. Es popular (~33k estrellas, v2.3.1) y el README promociona en primer plano su API comercial.
+
+## ¿Qué hace?
+
+Describes en lenguaje natural qué datos quieres y la librería construye un pipeline (grafo) que descarga la página o documento y extrae la información estructurada con un LLM. Tiene grafos para una página, para varias páginas, para resultados de búsqueda y para generar un script Python de scraping. Funciona con OpenAI, Groq, Azure, Gemini y otros, o con modelos locales vía Ollama.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install scrapegraphai` y `playwright install` para la descarga de páginas. Se configura el modelo en un diccionario (`ollama/llama3.2`, etc.). Hay un servidor MCP y conectores de bajo código como Pipedream o Zapier vinculados a la API de pago.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales soportados de forma nativa. | Instala Ollama, descarga el modelo y apúntalo en la configuración. |
+| [playwright](playwright.md) | Descarga y renderizado de páginas. | Ejecuta `playwright install` tras instalar la librería. |
+| [graphrag](graphrag.md) | Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura) | Exporta los resultados como documentos para GraphRAG. |
+
+**Notas:** Alternativas (elige una): maxun. Se quita la combinación con crawl4ai por solaparse. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-10-06 · última versión publicada v2.3.1 (2026-10-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/README.md) · [2](https://docs.scrapegraphai.com/introduction)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El MCP compañero scrapegraph-mcp usa el servicio ScrapeGraph con clave propia; la biblioteca local y el servicio no comparten necesariamente costes o requisitos |
 | Coste | El coste depende del proveedor o la ruta. La ruta local documentada evita API de pago; proveedores remotos y servicio comercial se cobran por separado |
 | Equipo | Preparación según la ruta elegida. Python; Playwright; modelo Ollama o proveedor remoto |
-
-El MCP compañero scrapegraph-mcp usa el servicio ScrapeGraph con clave propia; la biblioteca local y el servicio no comparten necesariamente costes o requisitos
-
-## Qué puedes hacer con él
-
-Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping.
-
-## Por qué destaca
-
-Usos propuestos: Extraer fichas de productos; Transformar artículos en registros estructurados.
-
-## Cómo funciona
 
 El MCP compañero scrapegraph-mcp usa el servicio ScrapeGraph con clave propia; la biblioteca local y el servicio no comparten necesariamente costes o requisitos
 
@@ -96,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Playwright; modelo Ollama o proveedor remoto
 - **Etiquetas:** `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [crawl4ai](crawl4ai.md) | 87.4k | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
-| [graphrag](graphrag.md) | 36.6k | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
 
 ## Alternativas (elige una)
 

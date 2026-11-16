@@ -976,7 +976,7 @@ Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx -y firecrawl-cli@latest init --all --browser` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar páginas para un buscador documental; Crear un mapa de URLs de una web propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [gpt-researcher](human/fichas/gpt-researcher.md) · [crawl4ai](human/fichas/crawl4ai.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Claude Code](human/fichas/claude-code.md) · [gpt-researcher](human/fichas/gpt-researcher.md)<br>
 **Más:** [ficha completa](human/fichas/firecrawl.md) · [GitHub](https://github.com/firecrawl/firecrawl)
 
 #### 🩹 Scrapling
@@ -987,7 +987,7 @@ Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer 
 <br>
     scrapling install           # normal install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recopilar un catálogo público permitido; Extraer texto para un índice de búsqueda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [scrapy](human/fichas/scrapy.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [scrapy](human/fichas/scrapy.md) · [defuddle](human/fichas/defuddle.md)<br>
 **Más:** [ficha completa](human/fichas/scrapling.md) · [GitHub](https://github.com/D4Vinci/Scrapling)
 
 #### 🕷️ crawl4ai
@@ -1006,7 +1006,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install scrapy` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recopilar listados públicos permitidos; Programar extracción repetible con pipelines — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [crawlee-python](human/fichas/crawlee-python.md)<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [Scrapling](human/fichas/scrapling.md) · [defuddle](human/fichas/defuddle.md)<br>
 **Más:** [ficha completa](human/fichas/scrapy.md) · [GitHub](https://github.com/scrapy/scrapy)
 
 #### 🦗 crawlee
@@ -1015,7 +1015,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx crawlee create my-crawler` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Rastrear una documentación propia; Extraer datos de páginas con JavaScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [playwright](human/fichas/playwright.md)<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [defuddle](human/fichas/defuddle.md) · [llm-scraper](human/fichas/llm-scraper.md)<br>
 **Más:** [ficha completa](human/fichas/crawlee.md) · [GitHub](https://github.com/apify/crawlee)
 
 #### 🕷️ Jina Reader
@@ -1025,7 +1025,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Comando documentado:** `docker run --rm -p 3000:8081 ghcr.io/jina-ai/reader:oss
 # then: curl http://localhost:3000/https://example.com` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un artículo a texto para consulta; Preparar una página para un índice documental — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [LlamaIndex](human/fichas/llama-index.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Open WebUI](human/fichas/open-webui.md) · [LlamaIndex](human/fichas/llama-index.md)<br>
 **Más:** [ficha completa](human/fichas/jina-reader.md) · [GitHub](https://github.com/jina-ai/reader)
 
 #### 📚 defuddle
@@ -1034,6 +1034,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install defuddle` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [obsidian-clipper](human/fichas/obsidian-clipper.md) · [obsidian-skills](human/fichas/obsidian-skills.md) · [crawlee](human/fichas/crawlee.md)<br>
 **Más:** [ficha completa](human/fichas/defuddle.md) · [GitHub](https://github.com/kepano/defuddle)
 
 #### 🦗 crawlee-python
@@ -1042,7 +1043,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `python -m pip install 'crawlee[all]'` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [scrapy](human/fichas/scrapy.md) · [playwright](human/fichas/playwright.md)<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [Scrapegraph-ai](human/fichas/scrapegraph-ai.md) · [Qdrant](human/fichas/qdrant.md)<br>
 **Más:** [ficha completa](human/fichas/crawlee-python.md) · [GitHub](https://github.com/apify/crawlee-python)
 
 #### 🕷️ awesome-web-scraping
@@ -1051,6 +1052,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/lorien/awesome-web-scraping/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [scrapy](human/fichas/scrapy.md) · [crawlee](human/fichas/crawlee.md) · [firecrawl](human/fichas/firecrawl.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-web-scraping.md) · [GitHub](https://github.com/lorien/awesome-web-scraping)
 
 ### Scraping guiado por LLM
@@ -1064,7 +1066,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 # IMPORTANT (for fetching websites content)
 playwright install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer fichas de productos; Transformar artículos en registros estructurados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [crawl4ai](human/fichas/crawl4ai.md) · [graphrag](human/fichas/graphrag.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [playwright](human/fichas/playwright.md) · [graphrag](human/fichas/graphrag.md)<br>
 **Más:** [ficha completa](human/fichas/scrapegraph-ai.md) · [GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai)
 
 #### 🧠 Maxun
@@ -1073,7 +1075,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.maxun.dev/installation/docker); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [n8n](human/fichas/n8n.md) · [changedetection.io](human/fichas/changedetection.md)<br>
 **Más:** [ficha completa](human/fichas/maxun.md) · [GitHub](https://github.com/getmaxun/maxun)
 
 #### 🧾 llm-scraper
@@ -1082,7 +1084,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm i zod playwright llm-scraper` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [playwright](human/fichas/playwright.md) · [firecrawl](human/fichas/firecrawl.md)<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/llm-scraper.md) · [GitHub](https://github.com/mishushakov/llm-scraper)
 
 ### Búsqueda, monitoreo y research web
@@ -1121,7 +1123,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `docker run -d -p 3000:3000 -v vane-data:/home/vane/data --name vane itzcrazykns1337/vane:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Investigar un tema con citas; Consultar la web usando Ollama — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [SearXNG](human/fichas/searxng.md) · [Ollama](human/fichas/ollama.md)<br>
+**Combina con:** [SearXNG](human/fichas/searxng.md) · [Ollama](human/fichas/ollama.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/vane.md) · [GitHub](https://github.com/ItzCrazyKns/Vane)
 
 #### 🔍 changedetection.io
@@ -1139,7 +1141,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [yt-dlp](human/fichas/yt-dlp.md)<br>
+**Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [changedetection.io](human/fichas/changedetection.md) · [karakeep](human/fichas/karakeep.md)<br>
 **Más:** [ficha completa](human/fichas/archivebox.md) · [GitHub](https://github.com/ArchiveBox/ArchiveBox)
 
 ### Redes sociales y descarga de medios

@@ -21177,7 +21177,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "yt-dlp"
+        "yt-dlp",
+        "changedetection",
+        "karakeep"
       ],
       "alt": []
     },
@@ -21294,7 +21296,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "scrapy",
+        "crawlee",
+        "firecrawl"
+      ],
       "alt": []
     },
     {
@@ -21653,7 +21659,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Rastrear una documentación propia; Extraer datos de páginas con JavaScript",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "playwright"
+        "playwright",
+        "defuddle",
+        "llm-scraper"
       ],
       "alt": []
     },
@@ -21768,8 +21776,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "scrapy",
-        "playwright"
+        "playwright",
+        "scrapegraph-ai",
+        "qdrant"
       ],
       "alt": []
     },
@@ -21881,7 +21890,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-clipper",
+        "obsidian-skills",
+        "crawlee"
+      ],
       "alt": []
     },
     {
@@ -21999,8 +22012,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar páginas para un buscador documental; Crear un mapa de URLs de una web propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "gpt-researcher",
-        "crawl4ai"
+        "n8n",
+        "claude-code",
+        "gpt-researcher"
       ],
       "alt": [
         "jina-reader"
@@ -22228,6 +22242,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
+        "open-webui",
         "llama-index"
       ],
       "alt": [
@@ -22471,7 +22486,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "playwright",
-        "firecrawl"
+        "vercel-ai",
+        "ollama"
       ],
       "alt": [
         "maxun"
@@ -22594,7 +22610,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "claude-code",
+        "n8n",
+        "changedetection"
       ],
       "alt": [
         "scrapegraph-ai",
@@ -22716,7 +22734,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Extraer fichas de productos; Transformar artículos en registros estructurados",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "crawl4ai",
+        "ollama",
+        "playwright",
         "graphrag"
       ],
       "alt": [
@@ -22838,7 +22857,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Recopilar un catálogo público permitido; Extraer texto para un índice de búsqueda",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "scrapy"
+        "claude-code",
+        "scrapy",
+        "defuddle"
       ],
       "alt": []
     },
@@ -22951,7 +22972,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Recopilar listados públicos permitidos; Programar extracción repetible con pipelines",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "crawlee-python"
+        "playwright",
+        "scrapling",
+        "defuddle"
       ],
       "alt": []
     },
@@ -23186,7 +23209,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "searxng",
-        "ollama"
+        "ollama",
+        "markitdown"
       ],
       "alt": [
         "gpt-researcher"

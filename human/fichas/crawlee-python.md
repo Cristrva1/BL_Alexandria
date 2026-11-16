@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Versión en Python de Crawlee, la librería de scraping y automatización de navegadores de Apify. Licencia Apache-2.0. Es activa (~10k estrellas, v1.11.2).
+
+## ¿Qué hace?
+
+Ofrece cola de URLs, reintentos, almacenamiento, proxies y sesiones con varios crawlers, entre ellos uno HTTP con BeautifulSoup y otro de navegador con Playwright. Intenta parecer humano por defecto. Tiene tipado completo y estilo asíncrono.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install 'crawlee[all]'` y `playwright install` para los navegadores, o se crea un proyecto con `uvx 'crawlee[cli]' create my-crawler`. Se ejecuta en local o en Apify.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Crawler de navegador soportado de forma nativa. | Instala los navegadores con `playwright install` y usa `PlaywrightCrawler`. |
+| [Scrapegraph-ai](scrapegraph-ai.md) | Extraer datos con LLM a partir de las páginas recogidas. (combinación por arquitectura) | Recoge con Crawlee y pasa el HTML a ScrapeGraphAI. |
+| [Qdrant](qdrant.md) | Indexar el contenido rastreado para RAG. (combinación por arquitectura) | Trocea y vectoriza los resultados y guárdalos en Qdrant. |
+
+**Notas:** Sin alternativas declaradas. Se quita la combinación con scrapy por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.11.2 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apify/crawlee-python/blob/master/README.md) · [2](https://crawlee.dev/python/docs/quick-start)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping |
 | Coste | El coste depende del proveedor o la ruta. El crawling básico no necesita LLM; la extracción con Pydantic AI o Stagehand y proveedores externos puede costar |
 | Equipo | Preparación según la ruta elegida. Python; entorno virtual; navegador si eliges Playwright |
-
-No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping
-
-## Qué puedes hacer con él
-
-Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python.
-
-## Por qué destaca
-
-Usos propuestos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación.
-
-## Cómo funciona
 
 No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; entorno virtual; navegador si eliges Playwright
 - **Etiquetas:** `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [scrapy](scrapy.md) | 65.4k | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. |
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
 ## Enlaces
 

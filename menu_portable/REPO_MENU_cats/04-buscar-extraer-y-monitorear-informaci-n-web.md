@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Archiva una página propia y abre las copias HTML y captura desde el panel
 **Qué comprobar:** La captura conserva la URL y se puede consultar después
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `yt-dlp`
+**Combina con:** `yt-dlp`, `changedetection`, `karakeep`
 
 ## `awesome-web-scraping`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=crawlers,captcha-bypass,captcha-recaptcha,crawler,crawling,crawling-framework,crawling-python,crawling-tool
@@ -91,6 +91,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige la lista de tu lenguaje y compara dos bibliotecas por mantenimiento y salida
 **Qué comprobar:** Obtienes dos candidatos con sus repositorios originales
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `scrapy`, `crawlee`, `firecrawl`
 
 ## `changedetection`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=scraping,notifications,python,docker
@@ -182,7 +183,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un crawler con límite pequeño y recoge títulos de tres páginas de prueba
 **Qué comprobar:** La cola termina y guarda un registro por página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`
+**Combina con:** `playwright`, `defuddle`, `llm-scraper`
 
 ## `crawlee-python`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
@@ -212,7 +213,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Recoge enlaces de tres páginas con una cola acotada y guarda sus títulos
 **Qué comprobar:** Se controlan duplicados y obtienes los tres registros esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `scrapy`, `playwright`
+**Combina con:** `playwright`, `scrapegraph-ai`, `qdrant`
 
 ## `defuddle`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,library,typescript
@@ -242,6 +243,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae Markdown de un artículo con menú y comprueba qué texto conserva
 **Qué comprobar:** El resultado prioriza el artículo y elimina navegación irrelevante
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-clipper`, `obsidian-skills`, `crawlee`
 
 ## `firecrawl`
 role=platform · exec=cloud · setup=medium · mcp=True · prov=— · tags=scraping,typescript,docker
@@ -271,7 +273,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae título y contenido de una página pública de prueba y revisa el Markdown
 **Qué comprobar:** Se conserva el contenido principal con la URL de origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gpt-researcher`, `crawl4ai`
+**Combina con:** `n8n`, `claude-code`, `gpt-researcher`
 **Alternativas (elige una):** `jina-reader`
 
 ## `instaloader`
@@ -332,7 +334,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Antepon r.jina.ai a una URL pública y compara el texto devuelto con la página
 **Qué comprobar:** Obtienes contenido legible con su dirección de origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `llama-index`
+**Combina con:** `n8n`, `open-webui`, `llama-index`
 **Alternativas (elige una):** `firecrawl`, `crawl4ai`
 
 ## `last30days-skill`
@@ -395,7 +397,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Define nombre, precio y moneda y extrae un producto ficticio de una página de prueba
 **Qué comprobar:** El objeto respeta el esquema y coincide con la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `firecrawl`
+**Combina con:** `playwright`, `vercel-ai`, `ollama`
 **Alternativas (elige una):** `maxun`
 
 ## `maxun`
@@ -426,7 +428,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Graba un robot que recoge nombres y precios de una página de prueba
 **Qué comprobar:** El robot devuelve filas que puedes repetir y comparar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `claude-code`, `n8n`, `changedetection`
 **Alternativas (elige una):** `scrapegraph-ai`, `llm-scraper`
 
 ## `scrapegraph-ai`
@@ -460,7 +462,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Describe dos campos de una página de prueba y revisa el JSON extraído
 **Qué comprobar:** Los campos coinciden con el contenido y faltan datos que no están en la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `crawl4ai`, `graphrag`
+**Combina con:** `ollama`, `playwright`, `graphrag`
 **Alternativas (elige una):** `maxun`
 
 ## `scrapling`
@@ -493,7 +495,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae nombre y precio de tres productos de una página de prueba mediante selectores
 **Qué comprobar:** Obtienes tres registros que coinciden con el HTML
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `scrapy`
+**Combina con:** `claude-code`, `scrapy`, `defuddle`
 
 ## `scrapy`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
@@ -523,7 +525,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un spider para una página propia con tres productos y exporta sus nombres
 **Qué comprobar:** El archivo de salida contiene exactamente los tres productos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `crawlee-python`
+**Combina con:** `playwright`, `scrapling`, `defuddle`
 
 ## `searxng`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=search,research,python,docker
@@ -583,7 +585,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Busca una pregunta de actualidad sencilla y abre las referencias antes de aceptar el resumen
 **Qué comprobar:** La respuesta muestra enlaces que apoyan sus afirmaciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `searxng`, `ollama`
+**Combina con:** `searxng`, `ollama`, `markitdown`
 **Alternativas (elige una):** `gpt-researcher`
 
 ## `yt-dlp`

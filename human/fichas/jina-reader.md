@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Reader, de Jina AI: convierte cualquier URL en entrada apta para LLM y busca en la web. Licencia Apache-2.0. Es popular (~12k estrellas, sin releases) y el código abierto se resincronizó con el SaaS en abril de 2026 sin la capa de almacenamiento.
+
+## ¿Qué hace?
+
+Con `https://r.jina.ai/<url>` devuelve el contenido limpio en Markdown, y con `https://s.jina.ai/<consulta>` busca y devuelve los primeros resultados ya leídos. Sirve para agentes y RAG que necesitan leer páginas sin escribir un scraper. El servicio alojado tiene límites de uso y opciones con clave.
+
+## ¿Cómo lo hace?
+
+Se usa directamente por HTTP o se autoaloja con la imagen `ghcr.io/jina-ai/reader:oss` (Docker, modo sin estado). Algunos artefactos no redistribuibles en `licensed/` son necesarios para compilar o ejecutar, según el README.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Usar Jina AI desde flujos con la integración de n8n. | Configura la credencial de Jina AI en n8n. |
+| [Open WebUI](open-webui.md) | Usar Jina como proveedor de búsqueda web en Open WebUI, documentado en su guía. | Activa la búsqueda web en Open WebUI y elige Jina con tu clave. |
+| [LlamaIndex](llama-index.md) | Cargar el texto limpio de URLs en índices de LlamaIndex. (combinación por arquitectura) | Llama a r.jina.ai y crea documentos con la respuesta. |
+
+**Notas:** Alternativas (elige una): firecrawl, crawl4ai.
+
+Estado en GitHub: activo · último push 2026-05-22 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jina-ai/reader/blob/main/README.md) · [2](https://n8n.io/integrations/jina-ai/) · [3](https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El contenedor básico no tiene caché ni control de tasa; localhost usa el puerto HTTP/1.1 del ejemplo |
 | Coste | El coste depende del proveedor o la ruta. El servicio público tiene cupos y modalidades con clave; self-hosting usa recursos y puede necesitar activos con licencia propia |
 | Equipo | Preparación según la ruta elegida. Navegador para servicio público; Docker solo para self-hosting |
-
-El contenedor básico no tiene caché ni control de tasa; localhost usa el puerto HTTP/1.1 del ejemplo
-
-## Qué puedes hacer con él
-
-Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai.
-
-## Por qué destaca
-
-Usos propuestos: Convertir un artículo a texto para consulta; Preparar una página para un índice documental.
-
-## Cómo funciona
 
 El contenedor básico no tiene caché ni control de tasa; localhost usa el puerto HTTP/1.1 del ejemplo
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador para servicio público; Docker solo para self-hosting
 - **Etiquetas:** `scraping` `rag` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
 
 ## Alternativas (elige una)
 

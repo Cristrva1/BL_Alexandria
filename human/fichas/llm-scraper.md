@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Librería TypeScript para extraer datos estructurados de cualquier página web con LLM, de @mishushakov. Licencia MIT. Es estable (~7k estrellas, sin releases) y su versión 2.0 usa el Vercel AI SDK 6.
+
+## ¿Qué hace?
+
+Define un esquema (Zod o JSON Schema) y obtén datos tipados de una página abierta con Playwright. Admite modelos GPT, Claude, Gemini, Llama y Qwen, varios modos de formato (HTML, Markdown, texto, imagen) y streaming.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i zod playwright llm-scraper` y el proveedor del AI SDK que prefieras (`@ai-sdk/openai`, `@ai-sdk/anthropic`, `ollama-ai-provider-v2`…). Requiere Node.js y navegadores de Playwright.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Abre y controla la página que se analiza. | Instala Playwright y sus navegadores. |
+| [AI SDK (Vercel)](vercel-ai.md) | Proveedores de modelos mediante el AI SDK 6. | Instala el paquete de proveedor del AI SDK correspondiente. |
+| [Ollama](ollama.md) | Modelos locales mediante `ollama-ai-provider-v2`, documentado en el README. | Levanta Ollama e instala el proveedor. |
+
+**Notas:** Alternativas (elige una): maxun. Se quita la combinación con firecrawl por no estar documentada. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-10-26 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mishushakov/llm-scraper/blob/main/README.md) · [2](https://ai-sdk.dev/docs/introduction)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Instala el adaptador del proveedor además de llm-scraper y descarga el navegador de Playwright |
 | Coste | El coste depende del proveedor o la ruta. El modelo puede ser Ollama local o un proveedor API; no es gratis por instalar la biblioteca |
 | Equipo | Preparación según la ruta elegida. Node.js; Playwright; esquema Zod; modelo elegido |
-
-Instala el adaptador del proveedor además de llm-scraper y descarga el navegador de Playwright
-
-## Qué puedes hacer con él
-
-Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído.
-
-## Por qué destaca
-
-Usos propuestos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares.
-
-## Cómo funciona
 
 Instala el adaptador del proveedor además de llm-scraper y descarga el navegador de Playwright
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; Playwright; esquema Zod; modelo elegido
 - **Etiquetas:** `scraping` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
 ## Alternativas (elige una)
 
