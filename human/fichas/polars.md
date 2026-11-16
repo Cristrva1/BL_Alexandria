@@ -34,9 +34,9 @@ Se instala con `pip install polars` (hay feature flags para extras) o se compila
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Apache Airflow](airflow.md) · [Colly](colly.md) · [Dagster](dagster.md) · [JupyterLab](jupyterlab.md) · [nautilus_trader](nautilus-trader.md) · [Prefect](prefect.md) · [Windmill](windmill.md)
+[Apache Airflow](airflow.md) · [Apache Arrow](arrow.md) · [Colly](colly.md) · [Dagster](dagster.md) · [Ibis](ibis.md) · [JupyterLab](jupyterlab.md) · [LanceDB](lancedb.md) · [nautilus_trader](nautilus-trader.md) · [Prefect](prefect.md) · [PyGWalker](pygwalker.md) · [Windmill](windmill.md)
 
 **Notas:** Alternativas (elige una): duckdb.
 
@@ -120,6 +120,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| [pandas](pandas.md) | 50.5k | Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
 
 ## Enlaces
 

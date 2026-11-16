@@ -33,6 +33,12 @@ Está escrito en OCaml con envoltorio Python; se instala con `brew install semgr
 | [raddebugger](raddebugger.md) | Combinación recíproca: raddebugger lo enlaza como «Encontrar con análisis estático los fallos que luego reproduces en el depurador. (combinación por arquitectura)». | Orden indicado desde raddebugger: Ejecuta Semgrep en CI y depura los hallazgos con RAD Debugger. |
 | [shannon](shannon.md) | Combinación recíproca: shannon lo enlaza como «Análisis estático previo para priorizar rutas. (combinación por arquitectura)». | Orden indicado desde shannon: Ejecuta Semgrep en el repo antes de la prueba. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Gitleaks](gitleaks.md) · [pre-commit](pre-commit.md) · [Trivy](trivy.md) · [TruffleHog](trufflehog.md)
+
 **Notas:** Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.185.0 (2026-11-10) · licencia declarada LGPL-2.1 (consultado el 2026-11-15).
@@ -115,6 +121,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [ast-grep](ast-grep.md) | 16.6k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
+| [SonarQube Community Build](sonarqube.md) | 11.2k | Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes. |
 
 ## Enlaces
 

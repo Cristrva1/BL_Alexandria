@@ -34,9 +34,9 @@ Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST de
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agno](agno.md) · [AnythingLLM](anything-llm.md) · [CAMEL](camel.md) · [crawlee-python](crawlee-python.md) · [Haystack](haystack.md) · [langchain4j](langchain4j.md) · [mem0](mem0.md) · [STORM](storm.md) · [transformers.js](transformers-js.md) · [Unstructured](unstructured.md)
+[agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agno](agno.md) · [AnythingLLM](anything-llm.md) · [CAMEL](camel.md) · [crawlee-python](crawlee-python.md) · [Haystack](haystack.md) · [langchain4j](langchain4j.md) · [mem0](mem0.md) · [STORM](storm.md) · [transformers.js](transformers-js.md) · [Unstructured](unstructured.md) · [Xberg (antes Kreuzberg)](xberg.md)
 
 **Notas:** Alternativas (elige una): milvus, chroma, pgvector, faiss. Configura autenticación (API key) antes de exponer el puerto 6333.
 
@@ -122,6 +122,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Chroma](chroma.md) | 29.7k | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. |
 | [pgvector](pgvector.md) | 23.7k | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. |
 | [Faiss](faiss.md) | 41.7k | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. |
+| [Weaviate](weaviate.md) | 17k | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada. |
 
 ## Enlaces
 

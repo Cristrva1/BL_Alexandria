@@ -1,0 +1,678 @@
+{
+ "batch": "p03",
+ "title": "Interfaces, mapas y OSINT, imagen, vídeo y documentos",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "chakra-ui",
+   "mantine",
+   "mui"
+  ],
+  [
+   "leaflet",
+   "maplibre"
+  ],
+  [
+   "sherlock",
+   "maigret"
+  ],
+  [
+   "shotcut",
+   "kdenlive",
+   "opencut"
+  ],
+  [
+   "xberg",
+   "tika",
+   "unstructured"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "storybookjs/storybook",
+   "id": "storybook",
+   "cat": 9,
+   "sub": "componentes",
+   "kind": "app",
+   "name": "Storybook",
+   "one": "Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.",
+   "how": "Herramienta de desarrollo en TypeScript que arranca un servidor local con tus «stories» y añade documentación, pruebas visuales e interacciones mediante addons.",
+   "examples": [
+    "documentar el sistema de diseño de un producto con ejemplos interactivos",
+    "probar estados límite de componentes sin montar toda la aplicación"
+   ],
+   "try": [
+    "Ejecuta el comando de inicialización de Storybook en un proyecto web de prueba y abre el servidor local.",
+    "Aparecen las stories de ejemplo y puedes cambiar sus props desde el panel de controles."
+   ],
+   "setup": "easy",
+   "tags": [
+    "ui",
+    "typescript",
+    "javascript",
+    "docs"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "gh": "Leaflet/Leaflet",
+   "id": "leaflet",
+   "cat": 10,
+   "sub": "geoespacial",
+   "kind": "library",
+   "name": "Leaflet",
+   "one": "Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.",
+   "how": "Biblioteca JavaScript sin dependencias que pinta teselas raster y capas vectoriales en el DOM, con API sencilla y extensible por plugins.",
+   "examples": [
+    "añadir un mapa con marcadores y popups a una web",
+    "publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap"
+   ],
+   "try": [
+    "Crea una página HTML con Leaflet desde CDN, un mapa de OpenStreetMap y un marcador.",
+    "El mapa se desplaza y amplía y el marcador muestra su popup al hacer clic."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "javascript",
+    "library",
+    "maps"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "license": "BSD-2-Clause"
+  },
+  {
+   "gh": "sherlock-project/sherlock",
+   "id": "sherlock",
+   "cat": 10,
+   "sub": "osint",
+   "kind": "app",
+   "name": "Sherlock",
+   "one": "CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.",
+   "how": "Programa Python que comprueba la existencia del usuario en cada sitio según reglas de respuesta definidas en un archivo de datos.",
+   "examples": [
+    "comprobar dónde está registrado un nombre de usuario propio o de tu marca",
+    "iniciar una investigación OSINT autorizada a partir de un alias"
+   ],
+   "try": [
+    "Instala con `pipx install sherlock-project` y busca un nombre de usuario propio.",
+    "La salida lista las URL de los perfiles encontrados y guarda un archivo de resultados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "osint",
+    "python",
+    "cli",
+    "security"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "cmd": "pipx install sherlock-project",
+   "caveat": "Uso OSINT sobre personas: respeta las leyes de protección de datos aplicables (p. ej. RGPD o LFPDPPP) y los términos de cada sitio."
+  },
+  {
+   "gh": "soxoj/maigret",
+   "id": "maigret",
+   "cat": 10,
+   "sub": "osint",
+   "kind": "app",
+   "name": "Maigret",
+   "one": "Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.",
+   "how": "Programa Python asíncrono que consulta miles de sitios, analiza las páginas de perfil y genera informes HTML, PDF, XMind o JSON.",
+   "examples": [
+    "auditar la huella pública de un alias propio",
+    "investigaciones OSINT autorizadas que requieren un informe consolidado"
+   ],
+   "try": [
+    "Instala con `pip install maigret` (Python 3.10+) y busca un alias propio con salida HTML.",
+    "Se genera un informe HTML con los perfiles encontrados y los datos extraídos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "osint",
+    "python",
+    "cli",
+    "security"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "cmd": "pip install maigret",
+   "caveat": "Uso OSINT sobre personas: respeta las leyes de protección de datos aplicables (p. ej. RGPD o LFPDPPP) y los términos de cada sitio."
+  },
+  {
+   "gh": "upscayl/upscayl",
+   "id": "upscayl",
+   "cat": 11,
+   "sub": "edicion",
+   "kind": "app",
+   "name": "Upscayl",
+   "one": "Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows.",
+   "how": "App Electron que usa el backend upscayl-ncnn con modelos Real-ESRGAN y aceleración Vulkan; procesa imágenes sueltas o carpetas.",
+   "examples": [
+    "ampliar fotos antiguas o de baja resolución para imprimirlas",
+    "escalar en lote una carpeta de imágenes para una web"
+   ],
+   "try": [
+    "Instala la release para tu sistema, abre una imagen pequeña y amplíala x4 con el modelo por defecto.",
+    "La imagen ampliada se guarda en la carpeta elegida con más detalle que el original."
+   ],
+   "setup": "easy",
+   "tags": [
+    "image",
+    "typescript",
+    "app",
+    "local"
+   ],
+   "goals": [
+    "imagenes"
+   ],
+   "models": "Modelos de superresolución Real-ESRGAN incluidos y modelos personalizados compatibles",
+   "ready": true
+  },
+  {
+   "gh": "HandBrake/HandBrake",
+   "id": "handbrake",
+   "cat": 12,
+   "sub": "edicion",
+   "kind": "app",
+   "name": "HandBrake",
+   "one": "Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo.",
+   "how": "Aplicación en C que usa bibliotecas como FFmpeg (libav) y x264/x265 para convertir vídeos con presets y filtros.",
+   "examples": [
+    "convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs",
+    "reducir el tamaño de una videoteca manteniendo la calidad"
+   ],
+   "try": [
+    "Instala HandBrake, abre un vídeo corto y conviértelo con un preset de 1080p.",
+    "Obtienes un MP4 reproducible en el móvil con menor tamaño que el original."
+   ],
+   "setup": "easy",
+   "tags": [
+    "video",
+    "c",
+    "app"
+   ],
+   "goals": [
+    "video"
+   ],
+   "ready": true,
+   "license": "GPL-2.0"
+  },
+  {
+   "gh": "Lightricks/LTX-2",
+   "id": "ltx-2",
+   "cat": 12,
+   "sub": "generativo",
+   "kind": "model",
+   "name": "LTX-2",
+   "one": "Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado.",
+   "how": "Paquetes Python con pipelines de texto o imagen a vídeo, modo destilado rápido y ruta de mayor calidad, y entrenador LoRA; los pesos se descargan de Hugging Face.",
+   "examples": [
+    "generar clips cortos con audio a partir de texto o una imagen en una GPU propia",
+    "entrenar un LoRA de estilo o personaje para el modelo"
+   ],
+   "try": [
+    "Clona el repositorio, instala las dependencias, descarga los pesos de LTX-2.5 y ejecuta la DistilledPipeline con un prompt corto.",
+    "Se genera un clip de vídeo con audio en la carpeta de salida sin agotar la VRAM."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "video",
+    "python",
+    "model",
+    "local"
+   ],
+   "goals": [
+    "video"
+   ],
+   "ai": "local",
+   "models": "Pesos LTX-2.5 y LTX-2.3 de Hugging Face (licencias LTX-2 Community) y codificador de texto Gemma 3",
+   "caveat": "El código es Apache-2.0, pero los pesos usan las licencias LTX-2 Community (no OSI) y el codificador Gemma 3 la licencia de Google."
+  },
+  {
+   "gh": "datalab-to/surya",
+   "id": "surya",
+   "cat": 13,
+   "sub": "ocr",
+   "kind": "model",
+   "name": "Surya",
+   "one": "OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas.",
+   "how": "Cliente Python ligero que lanza o usa un servidor de inferencia (vLLM en GPU, llama.cpp en CPU/Apple o mlx_vlm) con el modelo de Surya.",
+   "examples": [
+    "digitalizar documentos escaneados en varios idiomas conservando el orden de lectura",
+    "extraer tablas de PDF como HTML con celdas combinadas"
+   ],
+   "try": [
+    "Instala con `pip install surya-ocr` y procesa una página de prueba con OCR y layout.",
+    "Obtienes el texto en orden de lectura y las regiones de layout detectadas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "ocr",
+    "python",
+    "pdf",
+    "model"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "local",
+   "models": "Modelo Surya (VLM de 689M) servido localmente con vLLM, llama.cpp o mlx_vlm",
+   "cmd": "pip install surya-ocr",
+   "caveat": "Código Apache-2.0; los pesos usan una licencia AI Pubs Open Rail-M modificada (gratis para investigación, uso personal y startups con menos de 5 M$), con licencia comercial aparte."
+  },
+  {
+   "gh": "chakra-ui/chakra-ui",
+   "id": "chakra-ui",
+   "cat": 9,
+   "sub": "componentes",
+   "kind": "library",
+   "name": "Chakra UI",
+   "one": "Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.",
+   "how": "Biblioteca React con componentes accesibles (basados en Ark UI), sistema de estilos con tokens y temas, y modo oscuro.",
+   "examples": [
+    "construir el panel de un SaaS con componentes accesibles y tema propio",
+    "crear un sistema de diseño con tokens y recetas de estilo"
+   ],
+   "try": [
+    "Instala `@chakra-ui/react` y `@emotion/react` en un proyecto React y renderiza un botón con el proveedor.",
+    "El componente se muestra con el tema por defecto y cambia a modo oscuro."
+   ],
+   "setup": "easy",
+   "tags": [
+    "ui",
+    "typescript",
+    "react",
+    "library"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "gh": "mantinedev/mantine",
+   "id": "mantine",
+   "cat": 9,
+   "sub": "componentes",
+   "kind": "library",
+   "name": "Mantine",
+   "one": "Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones.",
+   "how": "Conjunto de paquetes React en TypeScript (@mantine/core, hooks, form, charts, dates…) con estilos CSS nativos y temas.",
+   "examples": [
+    "montar un panel de administración con formularios, tablas y gráficos",
+    "prototipar una app React con componentes accesibles y modo oscuro"
+   ],
+   "try": [
+    "Instala @mantine/core y @mantine/hooks, envuelve la app en MantineProvider y renderiza un formulario.",
+    "El formulario se muestra con estilos de Mantine y valida los campos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "ui",
+    "typescript",
+    "react",
+    "library"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "gh": "evidence-dev/evidence",
+   "id": "evidence",
+   "cat": 10,
+   "sub": "bi",
+   "kind": "app",
+   "name": "Evidence",
+   "one": "BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio.",
+   "how": "Herramienta que convierte archivos Markdown con consultas SQL y componentes de gráficos en un sitio de informes, con motor DuckDB para unificar fuentes.",
+   "examples": [
+    "publicar informes de negocio versionados en git",
+    "generar dashboards con SQL que un agente de código puede editar"
+   ],
+   "try": [
+    "Instala Evidence con el script del README, crea un proyecto de ejemplo y abre el servidor local.",
+    "Ves un informe con gráficos generados a partir de las consultas SQL del Markdown."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "analytics",
+    "typescript",
+    "app"
+   ],
+   "goals": [
+    "datos"
+   ]
+  },
+  {
+   "gh": "qgis/QGIS",
+   "id": "qgis",
+   "cat": 10,
+   "sub": "geoespacial",
+   "kind": "app",
+   "name": "QGIS",
+   "one": "Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server.",
+   "how": "Aplicación de escritorio en C++/Qt con cientos de formatos vía GDAL/OGR, herramientas de análisis, consola y plugins en Python, y servidor de mapas.",
+   "examples": [
+    "preparar y analizar capas geográficas para un estudio o mapa impreso",
+    "publicar servicios de mapas WMS/WFS con QGIS Server"
+   ],
+   "try": [
+    "Instala QGIS, carga una capa GeoJSON y un mapa base, y exporta un mapa en PDF.",
+    "El PDF contiene el mapa con la capa estilizada, leyenda y escala."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "cpp",
+    "app",
+    "maps"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "ready": true
+  },
+  {
+   "gh": "visgl/deck.gl",
+   "id": "deck.gl",
+   "cat": 10,
+   "sub": "geoespacial",
+   "kind": "library",
+   "name": "deck.gl",
+   "one": "Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D.",
+   "how": "Biblioteca JavaScript que mapea arrays de datos a capas visuales (iconos, polígonos, hexágonos, arcos) renderizadas en GPU; pydeck la expone a Python.",
+   "examples": [
+    "visualizar millones de puntos geográficos con interacción fluida",
+    "crear mapas 3D de densidad o rutas en una web o cuaderno"
+   ],
+   "try": [
+    "Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo.",
+    "El mapa muestra los puntos y permite seleccionar uno con el ratón."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "typescript",
+    "library",
+    "maps"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "cmd": "npm install deck.gl"
+  },
+  {
+   "gh": "maplibre/maplibre-gl-js",
+   "id": "maplibre",
+   "cat": 10,
+   "sub": "geoespacial",
+   "kind": "library",
+   "name": "MapLibre GL JS",
+   "one": "Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.",
+   "how": "Biblioteca TypeScript que dibuja teselas vectoriales con WebGL2 a partir de un estilo JSON, con rotación, inclinación y 3D.",
+   "examples": [
+    "publicar mapas vectoriales con estilo propio sin depender de un proveedor",
+    "crear mapas 3D con edificios y terreno en una web"
+   ],
+   "try": [
+    "Crea una página con MapLibre desde unpkg y el estilo de demostración de MapLibre.",
+    "El mapa vectorial se carga, rota e inclina con el ratón."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "typescript",
+    "library",
+    "maps"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "license": "BSD-3-Clause"
+  },
+  {
+   "gh": "keplergl/kepler.gl",
+   "id": "kepler.gl",
+   "cat": 10,
+   "sub": "geoespacial",
+   "kind": "app",
+   "name": "kepler.gl",
+   "one": "Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.",
+   "how": "Aplicación React/Redux construida sobre deck.gl y MapLibre que carga CSV, GeoJSON o Arrow y crea capas, filtros y animaciones temporales.",
+   "examples": [
+    "explorar millones de viajes o eventos geolocalizados en el navegador",
+    "incrustar un explorador de mapas en una aplicación React o en un cuaderno"
+   ],
+   "try": [
+    "Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud.",
+    "El mapa crea capas automáticamente y permite filtrar por tiempo."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "typescript",
+    "app",
+    "maps"
+   ],
+   "goals": [
+    "datos"
+   ]
+  },
+  {
+   "gh": "laramies/theHarvester",
+   "id": "theharvester",
+   "cat": 10,
+   "sub": "osint",
+   "kind": "app",
+   "name": "theHarvester",
+   "one": "Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas.",
+   "how": "CLI y API REST en Python que consulta fuentes pasivas (buscadores, logs de transparencia de certificados, DNS, repositorios, inteligencia de amenazas) y consolida resultados.",
+   "examples": [
+    "inventariar la superficie expuesta de tu propio dominio",
+    "fase inicial de reconocimiento en una auditoría de seguridad autorizada"
+   ],
+   "try": [
+    "Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio.",
+    "La terminal informa del resultado de cada fuente y lista subdominios encontrados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "osint",
+    "python",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Úsalo solo sobre dominios propios o con permiso explícito; incluso las fuentes pasivas reciben el objetivo consultado."
+  },
+  {
+   "gh": "lanmaster53/recon-ng",
+   "id": "recon-ng",
+   "cat": 10,
+   "sub": "osint",
+   "kind": "app",
+   "name": "Recon-ng",
+   "one": "Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit.",
+   "how": "Consola interactiva en Python con un mercado de módulos que consultan fuentes abiertas y guardan resultados en una base SQLite por espacio de trabajo.",
+   "examples": [
+    "organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles",
+    "automatizar consultas a varias fuentes con módulos y claves de API"
+   ],
+   "try": [
+    "Instala las dependencias del README, crea un espacio de trabajo e instala un módulo pasivo del marketplace.",
+    "El módulo se ejecuta y sus resultados aparecen en la tabla correspondiente del espacio de trabajo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "osint",
+    "python",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Úsalo solo sobre objetivos propios o con autorización; muchos módulos requieren claves de API de terceros."
+  },
+  {
+   "gh": "chaiNNer-org/chaiNNer",
+   "id": "chainner",
+   "cat": 11,
+   "sub": "edicion",
+   "kind": "app",
+   "name": "chaiNNer",
+   "one": "Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux.",
+   "how": "App de escritorio (TypeScript/React y backend Python) que conecta nodos de modelos (PyTorch, ONNX, NCNN, TensorRT) y operaciones de imagen.",
+   "examples": [
+    "escalar y restaurar lotes de imágenes con varios modelos en cadena",
+    "crear flujos repetibles de conversión y retoque de imágenes"
+   ],
+   "try": [
+    "Instala la release, deja que descargue su Python integrado e instala PyTorch o NCNN desde el gestor de dependencias; después escala una imagen con un modelo.",
+    "El flujo de nodos procesa la imagen y guarda el resultado sin errores."
+   ],
+   "setup": "medium",
+   "tags": [
+    "image",
+    "python",
+    "app",
+    "local"
+   ],
+   "goals": [
+    "imagenes"
+   ],
+   "models": "Modelos de superresolución y restauración compatibles (ESRGAN, GFPGAN y otros) en PyTorch, ONNX, NCNN o TensorRT",
+   "ready": true
+  },
+  {
+   "gh": "mltframework/shotcut",
+   "id": "shotcut",
+   "cat": 12,
+   "sub": "edicion",
+   "kind": "app",
+   "name": "Shotcut",
+   "one": "Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.",
+   "how": "Aplicación C++/Qt sobre el framework multimedia MLT y las bibliotecas de FFmpeg; incluye reconocimiento de voz con modelos Whisper para subtítulos.",
+   "examples": [
+    "editar vídeos de YouTube o cursos con cortes, transiciones y títulos",
+    "generar subtítulos automáticos a partir del audio de un vídeo"
+   ],
+   "try": [
+    "Instala Shotcut desde shotcut.org, importa dos clips, córtalos en la línea de tiempo y exporta un MP4.",
+    "El MP4 exportado reproduce los dos clips con el corte aplicado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "video",
+    "cpp",
+    "app",
+    "edicion"
+   ],
+   "goals": [
+    "video"
+   ],
+   "ready": true
+  },
+  {
+   "gh": "KDE/kdenlive",
+   "id": "kdenlive",
+   "cat": 12,
+   "sub": "edicion",
+   "kind": "app",
+   "name": "Kdenlive",
+   "one": "Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.",
+   "how": "Aplicación C++/Qt con KDE Frameworks y MLT; su función de voz a texto usa Whisper o VOSK para generar subtítulos.",
+   "examples": [
+    "montar vídeos con varias pistas, efectos y corrección de color",
+    "subtitular automáticamente entrevistas o tutoriales"
+   ],
+   "try": [
+    "Instala Kdenlive desde kdenlive.org, crea un proyecto, añade clips a la línea de tiempo y renderiza un MP4.",
+    "El render termina y el archivo reproduce el montaje."
+   ],
+   "setup": "easy",
+   "tags": [
+    "video",
+    "cpp",
+    "app",
+    "edicion"
+   ],
+   "goals": [
+    "video"
+   ],
+   "ready": true
+  },
+  {
+   "gh": "xberg-io/xberg",
+   "id": "xberg",
+   "cat": 13,
+   "sub": "conversion",
+   "kind": "library",
+   "name": "Xberg (antes Kreuzberg)",
+   "one": "Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP.",
+   "how": "Núcleo Rust con bindings para 15 lenguajes, CLI, API REST y servidor MCP; detecta el formato, extrae y aplica OCR o transcripción cuando hace falta.",
+   "examples": [
+    "preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG",
+    "extraer texto y tablas de escaneos con OCR en lote sin GPU"
+   ],
+   "try": [
+    "Instala con `pip install xberg` y extrae el texto de un PDF y un DOCX de prueba.",
+    "Obtienes Markdown limpio con tablas y metadatos de ambos archivos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "docs",
+    "rust",
+    "pdf",
+    "mcp"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "optional",
+   "models": "OCR con Tesseract, PaddleOCR o VLM; transcripción con Whisper ONNX; embeddings locales ONNX o de proveedores",
+   "cmd": "pip install xberg",
+   "mcp": true
+  },
+  {
+   "gh": "apache/tika",
+   "id": "tika",
+   "cat": 13,
+   "sub": "conversion",
+   "kind": "server",
+   "name": "Apache Tika",
+   "one": "Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG.",
+   "how": "Biblioteca y servidor Java (tika-server) con parsers para PDF, Office, imágenes y más; aísla el análisis en procesos y usa Tesseract o VLM para OCR.",
+   "examples": [
+    "extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación",
+    "alimentar un sistema RAG con Markdown generado desde documentos Office y PDF"
+   ],
+   "try": [
+    "Arranca tika-server con su imagen Docker o JAR y envía un PDF de prueba al endpoint de extracción.",
+    "El servidor devuelve el texto en Markdown y los metadatos del documento."
+   ],
+   "setup": "medium",
+   "tags": [
+    "docs",
+    "java",
+    "pdf",
+    "server"
+   ],
+   "goals": [
+    "documentos"
+   ],
+   "ai": "optional",
+   "models": "Parsers opcionales con modelos de visión y lenguaje (Claude, Gemini, OpenAI) para documentos que el OCR no lee"
+  }
+ ]
+}

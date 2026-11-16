@@ -31,6 +31,7 @@ Paquete Python con CLI (`graphrag init`, indexado y consulta) que llama a los mo
 | [Docling](docling.md) | Convertir PDF y otros formatos a texto antes del indexado, que espera texto, CSV o JSON (combinación por arquitectura). | Convierte primero y deja los archivos en la carpeta de entrada. |
 | [graphify](graphify.md) | Combinación recíproca: graphify lo enlaza como «Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura)». | Orden indicado desde graphify: Usa Graphify para el código y GraphRAG para la documentación. |
 | [Scrapegraph-ai](scrapegraph-ai.md) | Combinación recíproca: Scrapegraph-ai lo enlaza como «Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)». | Orden indicado desde Scrapegraph-ai: Exporta los resultados como documentos para GraphRAG. |
+| [kotaemon](kotaemon.md) | Combinación recíproca: kotaemon lo enlaza como «kotaemon soporta GraphRAG de Microsoft y nano-GraphRAG para preguntas sobre relaciones entre documentos». | Orden indicado desde kotaemon: Instala graphrag o nano-graphrag según el README; después elige ese índice. |
 
 **Notas:** Alternativas (elige una): graphiti, cognee, lightrag. Por su estado de mantenimiento, evalúa lightrag para proyectos nuevos.
 

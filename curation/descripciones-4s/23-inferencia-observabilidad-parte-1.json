@@ -120,6 +120,12 @@
      "motivo": "Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado para GPU NVIDIA».",
      "orden_instalacion": "Orden indicado desde DeepSeek-V3: Construye el motor con TensorRT-LLM.",
      "reciproca_de": "deepseek-v3"
+    },
+    {
+     "id": "gpustack",
+     "motivo": "Combinación recíproca: GPUStack lo enlaza como «GPUStack configura TensorRT-LLM en GPU NVIDIA».",
+     "orden_instalacion": "Orden indicado desde GPUStack: Elige TensorRT-LLM como motor en el despliegue.",
+     "reciproca_de": "gpustack"
     }
    ],
    "notas": "Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.",

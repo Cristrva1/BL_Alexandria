@@ -33,6 +33,12 @@ Se instala con `pip install jupyterlab`, conda o mamba (conda-forge) y se abre c
 | [Apache Iceberg](apache-iceberg.md) | Combinación recíproca: Apache Iceberg lo enlaza como «Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)». | Orden indicado desde Apache Iceberg: Instala JupyterLab en el mismo entorno que PyIceberg. |
 | [Delta Lake](delta-lake.md) | Combinación recíproca: Delta Lake lo enlaza como «Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)». | Orden indicado desde Delta Lake: Instala JupyterLab en el entorno con PySpark o deltalake. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Backtesting.py](backtesting-py.md) · [deck.gl](deck-gl.md) · [Gemma (biblioteca JAX)](gemma.md) · [JAX](jax.md) · [kepler.gl](kepler-gl.md) · [ML for Beginners](ml-for-beginners.md) · [OpenBB Open Data Platform](openbb.md) · [pandas](pandas.md) · [Panel](panel.md) · [PyGWalker](pygwalker.md) · [scikit-learn](scikit-learn.md) · [yfinance](yfinance.md)
+
 **Notas:** Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.6.6 (2026-11-06) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).

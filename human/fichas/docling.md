@@ -33,9 +33,9 @@ Lee PDF, DOCX, PPTX, XLSX, HTML, EPUB, imágenes, audio, video, correo y más. E
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[annas-mcp](annas-mcp.md) · [book-to-skill](book-to-skill.md) · [DeepTutor](deeptutor.md) · [graphrag](graphrag.md) · [LightRAG](lightrag.md)
+[annas-mcp](annas-mcp.md) · [book-to-skill](book-to-skill.md) · [DeepTutor](deeptutor.md) · [graphrag](graphrag.md) · [kotaemon](kotaemon.md) · [LightRAG](lightrag.md)
 
 **Notas:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones. Los modelos de diseño se descargan la primera vez: en entornos sin red, prepáralos antes.
 

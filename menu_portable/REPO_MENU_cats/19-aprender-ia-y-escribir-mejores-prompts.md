@@ -63,6 +63,36 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crewai`, `langgraph`, `agno`
 
+## `agents-course`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,agents,python
+
+**Qué es:** Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.
+**Stack:** MDX
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/huggingface/agents-course
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo.
+**Qué comprobar:** Construyes un agente sencillo que usa una herramienta.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `smolagents`, `langgraph`, `llama-index`, `langfuse`
+
 ## `agents-towards-production`
 role=directory · exec=cloud · setup=medium · mcp=True · prov=openai,local · tags=agents,learning,notebooks,python
 
@@ -153,6 +183,36 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Puedes identificar dónde se almacenan documentos y dónde se usa el modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crewai`, `llama-index`, `firecrawl`, `ollama`
+
+## `annotated-dl-papers`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,python,pytorch
+
+**Qué es:** Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.
+**Stack:** Python, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/labmlai/annotated_deep_learning_paper_implementations
+
+**Instalación** [+]:
+
+```
+pip install labml-nn
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre en nn.labml.ai la implementación de atención multi-cabeza y lee el código con sus notas.
+**Qué comprobar:** Ves el código de PyTorch con la explicación de cada paso al lado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `claude-code`, `llms-from-scratch`
 
 ## `awesome-harness-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference,python
@@ -520,7 +580,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos
 **Qué comprobar:** Puedes ubicar la diferencia entre entrenar, cuantizar y servir un modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `unsloth`, `trl`, `pytorch`, `awesome-machine-learning`
+**Combina con:** `unsloth`, `trl`, `pytorch`, `awesome-machine-learning`, `ml-for-beginners`
 **Alternativas (elige una):** `llms-from-scratch`, `generative-ai-for-beginners`
 
 ## `llm.c`
@@ -581,7 +641,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el capítulo de tokenización con una frase corta antes de entrenar una red
 **Qué comprobar:** Puedes ver la conversión de texto a tokens y explicarla
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `nanochat`, `transformers`, `llm.c`
+**Combina con:** `pytorch`, `nanochat`, `transformers`, `llm.c`, `annotated-dl-papers`
 **Alternativas (elige una):** `llm-course`
 
 ## `loop-engineering`
@@ -614,6 +674,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar la configuración y los avisos del diagnóstico
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`, `awesome-harness-engineering`
+
+## `ml-for-beginners`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python
+
+**Qué es:** Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.
+**Stack:** Jupyter Notebook, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/microsoft/ML-For-Beginners
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter.
+**Qué comprobar:** El cuaderno se ejecuta y muestra el primer modelo de regresión.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `jupyterlab`, `marimo`, `llm-course`, `scikit-learn`
 
 ## `nanochat`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python

@@ -33,6 +33,12 @@ Se instala con `python -m pip install aider-install` y `aider-install`. Conecta 
 | [openidea](openidea.md) | Combinación recíproca: openidea lo enlaza como «Pareja de programación con git en la terminal integrada. (combinación por arquitectura)». | Orden indicado desde openidea: Ejecuta aider dentro del proyecto. |
 | [SWE-bench](swe-bench.md) | Combinación recíproca: SWE-bench lo enlaza como «Comparar el rendimiento de distintos modelos en Aider. (combinación por arquitectura)». | Orden indicado desde SWE-bench: Exporta los parches como predicciones. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[lazygit](lazygit.md)
+
 **Notas:** Alternativas (elige una): opencode, cline. Actividad reciente baja.
 
 Estado en GitHub: activo · último push 2026-05-22 · última versión publicada v0.86.0 (2025-08-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

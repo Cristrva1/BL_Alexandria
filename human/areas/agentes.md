@@ -4,7 +4,7 @@
 
 Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
 
-114 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
+124 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
 
 ## Opciones para empezar
 
@@ -142,7 +142,7 @@ Convertir páginas y redes sociales en contenido o datos.
 
 Abrir páginas e interactuar con interfaces reales.
 
-[Explorar 11 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-navegacion)
+[Explorar 19 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-navegacion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -150,19 +150,27 @@ Abrir páginas e interactuar con interfaces reales.
 | [awesome-chrome-devtools](../fichas/awesome-chrome-devtools.md) | Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. | Sin clave propia de API de IA en la ruta básica |
 | [Browser Harness](../fichas/browser-harness.md) | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. | Sin clave propia de API de IA en la ruta básica |
 | [browser-use](../fichas/browser-use.md) | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. | API de IA opcional |
+| [Camoufox](../fichas/camoufox.md) | Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright. | Sin clave propia de API de IA en la ruta básica |
+| [Cypress](../fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica |
+| [FlareSolverr](../fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica |
+| [Ladybird](../fichas/ladybird.md) | Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa. | Sin clave propia de API de IA en la ruta básica |
 | [Lightpanda](../fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional |
+| [Nanobrowser](../fichas/nanobrowser.md) | Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local. | API de IA opcional |
 | [playwright](../fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica |
 | [playwright-cli](../fichas/playwright-cli.md) | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. | Sin clave propia de API de IA en la ruta básica |
 | [Puppeteer](../fichas/puppeteer.md) | Librería de Google para controlar Chrome y Firefox desde Node.js. | Sin clave propia de API de IA en la ruta básica |
 | [Selenium](../fichas/selenium.md) | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. | Sin clave propia de API de IA en la ruta básica |
+| [Servo](../fichas/servo.md) | Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe. | Sin clave propia de API de IA en la ruta básica |
 | [Skyvern](../fichas/skyvern.md) | Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles. | API de IA opcional |
 | [Stagehand](../fichas/stagehand.md) | SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural. | API de IA necesaria |
+| [Steel Browser](../fichas/steel-browser.md) | API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium. | Sin clave propia de API de IA en la ruta básica |
+| [WebdriverIO](../fichas/webdriverio.md) | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. | Sin clave propia de API de IA en la ruta básica |
 
 ### MCP: conectar herramientas
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-[Explorar 24 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
+[Explorar 26 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -180,6 +188,8 @@ Servidores, clientes y SDKs para dar herramientas a un agente.
 | [MCP for Beginners](../fichas/mcp-for-beginners.md) | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. | Sin clave propia de API de IA en la ruta básica |
 | [MCP Inspector](../fichas/mcp-inspector.md) | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | Sin clave propia de API de IA en la ruta básica |
 | [MCP Python SDK](../fichas/mcp-python-sdk.md) | SDK oficial de Python para crear servidores y clientes del Model Context Protocol. | Sin clave propia de API de IA en la ruta básica |
+| [MCP servers for AWS](../fichas/aws-mcp.md) | Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios. | Sin clave propia de API de IA en la ruta básica |
+| [MCP Toolbox for Databases](../fichas/mcp-toolbox.md) | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes. | Sin clave propia de API de IA en la ruta básica |
 | [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md) | SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. | Sin clave propia de API de IA en la ruta básica |
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Sin clave propia de API de IA en la ruta básica |
 | [mcp-use](../fichas/mcp-use.md) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | API de IA opcional |

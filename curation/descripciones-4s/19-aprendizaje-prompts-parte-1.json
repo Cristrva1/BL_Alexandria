@@ -539,6 +539,12 @@
      "motivo": "Combinación recíproca: awesome-machine-learning lo enlaza como «Ruta de estudio guiada para quien llega a la lista buscando aprender LLMs. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde awesome-machine-learning: Combina la exploración de la lista con un curso estructurado.",
      "reciproca_de": "awesome-machine-learning"
+    },
+    {
+     "id": "ml-for-beginners",
+     "motivo": "Combinación recíproca: ML for Beginners lo enlaza como «Tras el ML clásico, llm-course ofrece el recorrido hacia modelos de lenguaje (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ML for Beginners: Completa el curso; después sigue con llm-course.",
+     "reciproca_de": "ml-for-beginners"
     }
    ],
    "notas": "Alternativas (elige una): llms-from-scratch, generative-ai-for-beginners. Combinación anterior con llama-factory eliminada: el curso no lo usa (y es alternativa de unsloth).",

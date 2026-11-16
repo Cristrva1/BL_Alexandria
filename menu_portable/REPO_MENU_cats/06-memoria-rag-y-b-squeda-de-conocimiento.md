@@ -93,7 +93,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Se devuelve el documento relacionado y su identificador
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mempalace`, `anything-llm`, `langchain`
-**Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`
+**Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`, `lancedb`
 
 ## `claude-mem`
 role=skill · exec=local · setup=easy · mcp=True · prov=anthropic,mcp · tags=memory,coding-agent,mcp,typescript
@@ -308,8 +308,69 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa unos textos ficticios y pregunta por un tema que conecte varios de ellos
 **Qué comprobar:** Puedes revisar entidades, comunidades y fuentes de la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `mcp-neo4j`, `docling`, `graphify`, `scrapegraph-ai`
+**Combina con:** `litellm`, `mcp-neo4j`, `docling`, `graphify`, `scrapegraph-ai`, `kotaemon`
 **Alternativas (elige una):** `graphiti`, `cognee`, `lightrag`
+
+## `kotaemon`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=rag,python,docs,local
+
+**Qué es:** Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Cinnamon/kotaemon
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Cinnamon/kotaemon/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Arranca la imagen Docker main-lite (u ollama) del README, sube un PDF y haz una pregunta.
+**Qué comprobar:** La respuesta incluye citas enlazadas a las páginas del documento.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `lightrag`, `graphrag`, `docling`
+
+## `lancedb`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust,library
+
+**Qué es:** Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener.
+**Stack:** Rust, Cargo.toml, docker-compose.yml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/lancedb/lancedb
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/lancedb/lancedb/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala el SDK de Python, crea una tabla con vectores de ejemplo y lanza una búsqueda.
+**Qué comprobar:** La búsqueda devuelve los vecinos más cercanos y la tabla queda guardada en una carpeta local.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langchain`, `llama-index`, `duckdb`, `polars`
+**Alternativas (elige una):** `chroma`
 
 ## `letta`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=memory,agents,typescript
@@ -373,6 +434,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pgvector`, `ollama`, `docling`, `langfuse`, `ragas`, `deeptutor`
 **Alternativas (elige una):** `graphrag`, `ragflow`, `pageindex`
+
+## `meilisearch`
+role=platform · exec=hybrid · setup=easy · mcp=False · prov=— · tags=rag,search,rust,docker
+
+**Qué es:** Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.
+**Stack:** Rust, Cargo.toml, Dockerfile
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/meilisearch/meilisearch
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/meilisearch/meilisearch/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda instantánea con facetas a una web o aplicación; combinar búsqueda por palabras y semántica como capa de recuperación para RAG
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Meilisearch con Docker o el script de instalación, sube un JSON de ejemplo y busca con una errata.
+**Qué comprobar:** La búsqueda devuelve los documentos correctos en milisegundos pese a la errata.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `langchain`, `firecrawl`
 
 ## `mem0`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=memory,python
@@ -465,7 +556,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes contrastar el vecino y los metadatos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `anything-llm`, `lightrag`, `llama-index`, `langchain4j`
-**Alternativas (elige una):** `qdrant`, `chroma`, `pgvector`
+**Alternativas (elige una):** `qdrant`, `chroma`, `pgvector`, `weaviate`
 
 ## `onyx`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=rag,agent,python
@@ -619,7 +710,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La búsqueda devuelve el registro esperado y respeta el filtro
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `docling`, `activepieces`, `llama-index`, `langchain`, `crawl4ai`
-**Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`
+**Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`, `weaviate`
 
 ## `ragflow`
 role=platform · exec=local · setup=heavy · mcp=False · prov=openai,local · tags=rag,docs,agents,docker
@@ -712,3 +803,64 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes medir memoria, tiempo y coincidencia en tus propios datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `llama-index`, `haystack`
+
+## `txtai`
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=rag,python,library,mcp
+
+**Qué es:** Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia.
+**Stack:** Python, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/neuml/txtai
+
+**Instalación** [+]:
+
+```
+pip install txtai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: indexar documentos y hacer búsqueda semántica con SQL en local; montar un RAG o un grafo de conocimiento sin desplegar varios servicios
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install txtai`, indexa unas frases y busca por significado.
+**Qué comprobar:** La búsqueda devuelve las frases más parecidas aunque no compartan palabras.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `litellm`, `llama-cpp`, `claude-code`
+
+## `weaviate`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=vector-db,rag,go,docker
+
+**Qué es:** Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada.
+**Stack:** Go, Dockerfile, docker-compose.yml, go.mod, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/weaviate/weaviate
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/weaviate/weaviate/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Weaviate con el Docker Compose del quickstart local, crea una colección y busca con el cliente de Python.
+**Qué comprobar:** La consulta híbrida devuelve objetos ordenados por relevancia con sus propiedades.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langchain`, `llama-index`, `ollama`, `claude-code`
+**Alternativas (elige una):** `qdrant`, `milvus`

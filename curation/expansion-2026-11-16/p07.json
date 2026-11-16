@@ -1,0 +1,567 @@
+{
+ "batch": "p07",
+ "title": "Evaluación, observabilidad, serving y entrenamiento de modelos",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "axolotl",
+   "torchtune",
+   "llama-factory",
+   "unsloth"
+  ],
+  [
+   "verl",
+   "openrlhf"
+  ],
+  [
+   "helicone",
+   "langfuse"
+  ],
+  [
+   "jax",
+   "pytorch",
+   "tensorflow"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "EleutherAI/lm-evaluation-harness",
+   "id": "lm-eval-harness",
+   "cat": 23,
+   "sub": "observabilidad",
+   "kind": "framework",
+   "name": "LM Evaluation Harness",
+   "one": "Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.",
+   "how": "Paquete Python con tareas definidas en YAML y backends de modelo intercambiables (hf, vllm, sglang, gguf, APIs) que calculan métricas few-shot reproducibles.",
+   "examples": [
+    "comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K",
+    "reproducir resultados de tablas de clasificación con la misma configuración"
+   ],
+   "try": [
+    "Instala con `pip install \"lm_eval[hf]\"` y evalúa un modelo pequeño de Hugging Face en una tarea ligera con `lm_eval --model hf --tasks ...`.",
+    "Obtienes una tabla con la métrica de la tarea y su error estándar."
+   ],
+   "setup": "medium",
+   "tags": [
+    "evaluation",
+    "python",
+    "llm",
+    "benchmark"
+   ],
+   "goals": [
+    "programar",
+    "local"
+   ],
+   "ai": "local_choice",
+   "models": "Modelos de Hugging Face, vLLM, SGLang, GGUF o APIs comerciales (OpenAI, Anthropic y otras)",
+   "cmd": "pip install \"lm_eval[hf]\""
+  },
+  {
+   "gh": "scikit-learn/scikit-learn",
+   "id": "scikit-learn",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "library",
+   "name": "scikit-learn",
+   "one": "La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.",
+   "how": "Paquete Python sobre NumPy y SciPy con una API uniforme de estimadores (fit/predict/transform), pipelines y validación cruzada.",
+   "examples": [
+    "entrenar y validar un clasificador sobre datos tabulares",
+    "construir un pipeline de preprocesado y modelo reproducible"
+   ],
+   "try": [
+    "Instala con `pip install -U scikit-learn` y entrena un clasificador sobre el conjunto iris incluido.",
+    "Obtienes la precisión del modelo en validación cruzada."
+   ],
+   "setup": "easy",
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "data"
+   ],
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "cmd": "pip install -U scikit-learn"
+  },
+  {
+   "gh": "axolotl-ai-cloud/axolotl",
+   "id": "axolotl",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "framework",
+   "name": "Axolotl",
+   "one": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
+   "how": "Paquete Python sobre PyTorch, Transformers y PEFT que convierte un YAML en un trabajo de entrenamiento, con DeepSpeed, FSDP y paralelismo de expertos.",
+   "examples": [
+    "ajustar un modelo abierto con QLoRA a partir de un archivo YAML",
+    "entrenar con GRPO o DPO en varias GPU"
+   ],
+   "try": [
+    "Sigue la instalación con uv del README en una máquina con GPU y lanza uno de los ejemplos de configuración QLoRA pequeños.",
+    "El entrenamiento arranca y guarda el adaptador al final."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "training",
+    "python",
+    "llm",
+    "gpu"
+   ],
+   "goals": [
+    "local",
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos abiertos de Hugging Face (Llama, Qwen, Mistral, Gemma, VLM y otros)"
+  },
+  {
+   "gh": "traceloop/openllmetry",
+   "id": "openllmetry",
+   "cat": 23,
+   "sub": "observabilidad",
+   "kind": "library",
+   "name": "OpenLLMetry",
+   "one": "Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad.",
+   "how": "SDK Python (traceloop-sdk) e instrumentaciones OpenTelemetry por proveedor y framework que exportan trazas a cualquier backend compatible.",
+   "examples": [
+    "trazar llamadas a OpenAI, LangChain o Ollama en Grafana o Datadog",
+    "añadir observabilidad de LLM a una pila OpenTelemetry existente"
+   ],
+   "try": [
+    "Instala con `pip install traceloop-sdk`, inicializa el SDK en un script con una llamada a un modelo y envía las trazas a la consola o a tu backend.",
+    "Ves las trazas con prompts, tokens y latencias."
+   ],
+   "setup": "easy",
+   "tags": [
+    "observability",
+    "python",
+    "llm",
+    "opentelemetry"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install traceloop-sdk"
+  },
+  {
+   "gh": "Helicone/helicone",
+   "id": "helicone",
+   "cat": 23,
+   "sub": "observabilidad",
+   "kind": "server",
+   "name": "Helicone",
+   "one": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
+   "how": "Plataforma TypeScript con proxy/pasarela compatible con OpenAI, panel web, ClickHouse y Supabase/PostgreSQL; autoalojable con Docker Compose o en la nube.",
+   "examples": [
+    "ver coste y latencia de todas las llamadas a modelos de tu aplicación",
+    "versionar prompts y enrutar entre proveedores con reintentos"
+   ],
+   "try": [
+    "Despliega Helicone con su Docker Compose, cambia la URL base de un cliente OpenAI a la pasarela y haz una petición.",
+    "La petición aparece en el panel con coste, tokens y latencia."
+   ],
+   "setup": "medium",
+   "tags": [
+    "observability",
+    "typescript",
+    "llm",
+    "self-hosted"
+   ],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "gh": "ray-project/ray",
+   "id": "ray",
+   "cat": 23,
+   "sub": "serving",
+   "kind": "framework",
+   "name": "Ray",
+   "one": "Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.",
+   "how": "Runtime distribuido en C++/Python con tareas y actores, y bibliotecas Ray Data, Train, Tune, RLlib y Serve; se despliega en clústeres o Kubernetes (KubeRay).",
+   "examples": [
+    "paralelizar un procesamiento de datos o entrenamiento en varias máquinas",
+    "servir modelos con autoescalado mediante Ray Serve"
+   ],
+   "try": [
+    "Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo.",
+    "Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso."
+   ],
+   "setup": "medium",
+   "tags": [
+    "distributed",
+    "python",
+    "serving",
+    "ml"
+   ],
+   "goals": [
+    "programar",
+    "local"
+   ],
+   "cmd": "pip install ray"
+  },
+  {
+   "gh": "xorbitsai/inference",
+   "id": "xinference",
+   "cat": 23,
+   "sub": "serving",
+   "kind": "server",
+   "name": "Xinference",
+   "one": "Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.",
+   "how": "Servidor Python que despliega modelos con vLLM, SGLang, TRT-LLM, Transformers, llama.cpp o MLX en local o en clúster, con interfaz web, CLI y SDK.",
+   "examples": [
+    "servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor",
+    "conectar Dify, LangChain o LlamaIndex a modelos propios"
+   ],
+   "try": [
+    "Instala con `pip install xinference`, arranca `xinference-local` y lanza un modelo pequeño desde la interfaz web.",
+    "El modelo responde por la API compatible con OpenAI."
+   ],
+   "setup": "medium",
+   "tags": [
+    "serving",
+    "python",
+    "llm",
+    "self-hosted"
+   ],
+   "goals": [
+    "local"
+   ],
+   "ai": "local",
+   "models": "Más de 300 modelos integrados de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, y modelos propios",
+   "cmd": "pip install xinference"
+  },
+  {
+   "gh": "bentoml/BentoML",
+   "id": "bentoml",
+   "cat": 23,
+   "sub": "serving",
+   "kind": "framework",
+   "name": "BentoML",
+   "one": "Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.",
+   "how": "Biblioteca Python donde defines servicios con decoradores; BentoML genera la API, gestiona dependencias y crea imágenes Docker para desplegar.",
+   "examples": [
+    "publicar un modelo de Transformers como API REST",
+    "empaquetar un LLM servido con vLLM en una imagen desplegable"
+   ],
+   "try": [
+    "Instala con `pip install -U bentoml`, define el servicio de ejemplo del README y arráncalo con `bentoml serve`.",
+    "La API responde en localhost con el resultado del modelo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "serving",
+    "python",
+    "ml",
+    "docker"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install -U bentoml"
+  },
+  {
+   "gh": "gpustack/gpustack",
+   "id": "gpustack",
+   "cat": 23,
+   "sub": "serving",
+   "kind": "server",
+   "name": "GPUStack",
+   "one": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
+   "how": "Servidor Python con interfaz web que orquesta motores de inferencia en nodos trabajadores con Docker y selecciona parámetros automáticamente.",
+   "examples": [
+    "servir varios modelos en las GPU de tu laboratorio con una sola consola",
+    "dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios"
+   ],
+   "try": [
+    "Sigue la guía de instalación con Docker en un nodo con GPU NVIDIA, despliega un modelo pequeño y prueba la API con curl.",
+    "El modelo responde por el endpoint compatible con OpenAI."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "serving",
+    "python",
+    "gpu",
+    "self-hosted"
+   ],
+   "goals": [
+    "local"
+   ],
+   "ai": "local",
+   "models": "Modelos abiertos servidos con vLLM, SGLang, TensorRT-LLM o motores propios"
+  },
+  {
+   "gh": "keras-team/keras",
+   "id": "keras",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "library",
+   "name": "Keras 3",
+   "one": "API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).",
+   "how": "Biblioteca Python de alto nivel con capas, modelos y bucles de entrenamiento que delega el cálculo en el backend elegido.",
+   "examples": [
+    "prototipar una red neuronal con una API sencilla",
+    "cambiar de backend sin reescribir el modelo para ganar rendimiento"
+   ],
+   "try": [
+    "Instala con `pip install keras --upgrade` y un backend (por ejemplo JAX), y entrena el ejemplo MNIST de la documentación.",
+    "El modelo entrena y muestra la precisión por época."
+   ],
+   "setup": "easy",
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "deep-learning"
+   ],
+   "goals": [
+    "programar",
+    "aprender"
+   ],
+   "cmd": "pip install keras --upgrade"
+  },
+  {
+   "gh": "deepspeedai/DeepSpeed",
+   "id": "deepspeed",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "library",
+   "name": "DeepSpeed",
+   "one": "Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.",
+   "how": "Biblioteca Python/C++/CUDA que envuelve el entrenamiento de PyTorch con particionado de estados (ZeRO), paralelismo de tensores y pipeline, y kernels optimizados.",
+   "examples": [
+    "entrenar un modelo que no cabe en una GPU repartiendo estados con ZeRO-3",
+    "acelerar un ajuste fino distribuido con Transformers o Accelerate"
+   ],
+   "try": [
+    "Instala con `pip install deepspeed` en un entorno con PyTorch y GPU y ejecuta `ds_report` para comprobar la compatibilidad.",
+    "El informe muestra qué operaciones y extensiones están disponibles."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "training",
+    "python",
+    "gpu",
+    "distributed"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install deepspeed"
+  },
+  {
+   "gh": "jax-ml/jax",
+   "id": "jax",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "library",
+   "name": "JAX",
+   "one": "Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
+   "how": "Biblioteca Python con transformaciones componibles (grad, jit, vmap, shard_map) sobre una API compatible con NumPy, compilada con XLA.",
+   "examples": [
+    "entrenar modelos o simulaciones científicas en GPU o TPU",
+    "calcular derivadas de funciones numéricas complejas"
+   ],
+   "try": [
+    "Instala con `pip install -U jax` y calcula el gradiente de una función simple con `jax.grad`.",
+    "Obtienes el valor del gradiente evaluado en el punto indicado."
+   ],
+   "setup": "medium",
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "numerical"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install -U jax"
+  },
+  {
+   "gh": "Lightning-AI/pytorch-lightning",
+   "id": "pytorch-lightning",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "framework",
+   "name": "PyTorch Lightning",
+   "one": "Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.",
+   "how": "Biblioteca Python que separa ciencia (LightningModule) e ingeniería (Trainer): precisión mixta, distribución, checkpoints y registro.",
+   "examples": [
+    "organizar un proyecto de entrenamiento en PyTorch sin código repetitivo",
+    "pasar de una GPU a varias con DDP, FSDP o DeepSpeed"
+   ],
+   "try": [
+    "Instala con `pip install lightning` y ejecuta el ejemplo de autoencoder del README.",
+    "El Trainer entrena y muestra métricas por época."
+   ],
+   "setup": "easy",
+   "tags": [
+    "training",
+    "python",
+    "pytorch"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install lightning"
+  },
+  {
+   "gh": "verl-project/verl",
+   "id": "verl",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "framework",
+   "name": "verl",
+   "one": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
+   "how": "Biblioteca Python que orquesta con Ray el flujo de RL: entrenamiento con FSDP o Megatron-LM y generación de muestras con vLLM, SGLang o Hugging Face.",
+   "examples": [
+    "entrenar un modelo de razonamiento con GRPO sobre problemas verificables",
+    "investigar nuevos algoritmos de RL para LLM a escala"
+   ],
+   "try": [
+    "Sigue la guía de inicio rápido de verl en un nodo con GPU y ejecuta el ejemplo PPO o GRPO pequeño con GSM8K.",
+    "El entrenamiento arranca y registra recompensas por paso."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "training",
+    "python",
+    "rl",
+    "gpu"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos de Hugging Face y ModelScope (Qwen, Llama, Gemma, DeepSeek y otros)"
+  },
+  {
+   "gh": "OpenRLHF/OpenRLHF",
+   "id": "openrlhf",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "framework",
+   "name": "OpenRLHF",
+   "one": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
+   "how": "Biblioteca Python que distribuye actor, crítico, recompensa y generación entre GPU con Ray, genera con vLLM y entrena con DeepSpeed ZeRO-3.",
+   "examples": [
+    "entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa",
+    "experimentar con RL para agentes con varios turnos"
+   ],
+   "try": [
+    "Sigue la guía rápida de OpenRLHF en un entorno con GPU y ejecuta un script de ejemplo de SFT o RM pequeño.",
+    "El entrenamiento arranca y guarda los checkpoints."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "training",
+    "python",
+    "rl",
+    "gpu"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos de Hugging Face para actor, crítico y recompensa"
+  },
+  {
+   "gh": "huggingface/accelerate",
+   "id": "accelerate",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "library",
+   "name": "Accelerate",
+   "one": "Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.",
+   "how": "Biblioteca Python con un objeto Accelerator que prepara modelo, optimizador y datos para la configuración elegida, y una CLI (`accelerate config`, `accelerate launch`).",
+   "examples": [
+    "convertir un bucle de entrenamiento de PyTorch a multi-GPU sin reescribirlo",
+    "lanzar un entrenamiento con DeepSpeed desde un archivo de configuración"
+   ],
+   "try": [
+    "Instala con `pip install accelerate`, ejecuta `accelerate config` y lanza un script de ejemplo con `accelerate launch`.",
+    "El script se ejecuta con la configuración elegida."
+   ],
+   "setup": "easy",
+   "tags": [
+    "training",
+    "python",
+    "pytorch"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "cmd": "pip install accelerate"
+  },
+  {
+   "gh": "meta-pytorch/torchtune",
+   "id": "torchtune",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "kind": "library",
+   "name": "torchtune",
+   "one": "Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.",
+   "how": "Biblioteca Python con recetas configurables en YAML y una CLI (`tune`) para descargar modelos, ajustar y evaluar sobre PyTorch puro.",
+   "examples": [
+    "estudiar recetas limpias de ajuste fino en PyTorch puro",
+    "reproducir un ajuste LoRA con configuraciones existentes"
+   ],
+   "try": [
+    "Instala con `pip install torchtune` (junto a torch, torchvision y torchao) y lista las recetas con `tune ls`.",
+    "La CLI muestra las recetas y configuraciones disponibles."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "training",
+    "python",
+    "pytorch",
+    "llm"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos abiertos como Llama, Qwen, Gemma, Mistral y Phi",
+   "cmd": "pip install torchtune",
+   "caveat": "Sin mantenimiento activo: según su README, el desarrollo terminó en 2025; no esperes soporte para modelos nuevos."
+  },
+  {
+   "gh": "google-deepmind/gemma",
+   "id": "gemma",
+   "cat": 24,
+   "sub": "modelos",
+   "kind": "library",
+   "name": "Gemma (biblioteca JAX)",
+   "one": "Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.",
+   "how": "Paquete Python sobre JAX y Flax con modelos Gemma, muestreadores de chat, carga de checkpoints, LoRA y utilidades de entrenamiento.",
+   "examples": [
+    "chatear con un modelo Gemma en Python con JAX",
+    "ajustar Gemma con LoRA en GPU o TPU"
+   ],
+   "try": [
+    "Instala JAX para tu hardware y después `pip install gemma`; ejecuta el ejemplo de muestreo con un checkpoint pequeño.",
+    "El modelo responde al prompt de ejemplo."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "model",
+    "python",
+    "jax",
+    "llm"
+   ],
+   "goals": [
+    "local",
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos Gemma de pesos abiertos (varios tamaños, incluidos multimodales)",
+   "cmd": "pip install gemma",
+   "caveat": "El código es Apache-2.0, pero los pesos de Gemma se rigen por los términos de uso de Gemma de Google."
+  }
+ ]
+}
