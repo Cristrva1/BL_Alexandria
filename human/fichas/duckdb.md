@@ -34,9 +34,9 @@ Hay CLI independiente y clientes para Python, R, Java, Node, Rust, Go, WebAssemb
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (26). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (32). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Apache Airflow](airflow.md) · [awesome-bigdata](awesome-bigdata.md) · [Chart.js](chart-js.md) · [Colly](colly.md) · [Dagster](dagster.md) · [dash](dash.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [Evidence](evidence.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [Grist](grist-core.md) · [hudi](hudi.md) · [JupyterLab](jupyterlab.md) · [Katana](katana.md) · [Kestra](kestra.md) · [LanceDB](lancedb.md) · [Maigret](maigret.md) · [metabase](metabase.md) · [Prefect](prefect.md) · [QGIS](qgis.md) · [Recon-ng](recon-ng.md) · [Redash](redash.md) · [Sherlock](sherlock.md) · [streamlit](streamlit.md) · [uPlot](uplot.md) · [Windmill](windmill.md) · [WrenAI](wrenai.md)
+[Apache Airflow](airflow.md) · [Apache Arrow](arrow.md) · [awesome-bigdata](awesome-bigdata.md) · [Chart.js](chart-js.md) · [Colly](colly.md) · [Dagster](dagster.md) · [dash](dash.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [dbt](dbt.md) · [dlt (data load tool)](dlt.md) · [Evidence](evidence.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [Grist](grist-core.md) · [hudi](hudi.md) · [Ibis](ibis.md) · [JupyterLab](jupyterlab.md) · [Katana](katana.md) · [Kestra](kestra.md) · [LanceDB](lancedb.md) · [Maigret](maigret.md) · [metabase](metabase.md) · [pandas](pandas.md) · [Prefect](prefect.md) · [PyGWalker](pygwalker.md) · [QGIS](qgis.md) · [Recon-ng](recon-ng.md) · [Redash](redash.md) · [Sherlock](sherlock.md) · [streamlit](streamlit.md) · [uPlot](uplot.md) · [Windmill](windmill.md) · [WrenAI](wrenai.md)
 
 **Notas:** Alternativas (elige una): polars.
 

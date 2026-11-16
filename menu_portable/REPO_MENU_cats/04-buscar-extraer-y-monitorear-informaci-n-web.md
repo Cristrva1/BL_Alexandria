@@ -213,7 +213,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un crawler con límite pequeño y recoge títulos de tres páginas de prueba
 **Qué comprobar:** La cola termina y guarda un registro por página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `defuddle`, `llm-scraper`, `awesome-web-scraping`
+**Combina con:** `playwright`, `defuddle`, `llm-scraper`, `awesome-web-scraping`, `camoufox`
 
 ## `crawlee-python`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
@@ -243,7 +243,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Recoge enlaces de tres páginas con una cola acotada y guarda sus títulos
 **Qué comprobar:** Se controlan duplicados y obtienes los tres registros esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `scrapegraph-ai`, `qdrant`
+**Combina con:** `playwright`, `scrapegraph-ai`, `qdrant`, `flaresolverr`, `camoufox`
 
 ## `defuddle`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,library,typescript
@@ -708,7 +708,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un spider para una página propia con tres productos y exporta sus nombres
 **Qué comprobar:** El archivo de salida contiene exactamente los tres productos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `scrapling`, `defuddle`, `awesome-web-scraping`
+**Combina con:** `playwright`, `scrapling`, `defuddle`, `awesome-web-scraping`, `flaresolverr`
 
 ## `searxng`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=search,research,python,docker

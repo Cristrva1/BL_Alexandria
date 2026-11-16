@@ -35,9 +35,9 @@ Lee el documento a una representación interna y lo escribe al formato de destin
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Calibre-Web](calibre-web.md) · [Joplin](joplin.md) · [Logseq](logseq.md) · [Trilium Notes](trilium.md)
+[Calibre-Web](calibre-web.md) · [D2](d2.md) · [Joplin](joplin.md) · [Logseq](logseq.md) · [Trilium Notes](trilium.md)
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 3.14 (2026-11-12) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
 

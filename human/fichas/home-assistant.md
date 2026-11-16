@@ -34,9 +34,9 @@ Está escrito en Python (asyncio). La instalación recomendada es Home Assistant
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ESPHome](esphome.md) · [Frigate NVR](frigate.md) · [Pi-hole](pi-hole.md) · [Zigbee2MQTT](zigbee2mqtt.md)
+[ESPHome](esphome.md) · [Frigate NVR](frigate.md) · [frp](frp.md) · [Pi-hole](pi-hole.md) · [Zigbee2MQTT](zigbee2mqtt.md)
 
 **Notas:** Sin alternativas declaradas. Exponer entidades por MCP da control físico de la casa a un modelo: limita qué entidades se exponen.
 

@@ -1,0 +1,632 @@
+{
+ "batch": "p08",
+ "title": "Datos y apps en Python, motores 3D, CAD y simulación física",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "pandas",
+   "polars"
+  ],
+  [
+   "reflex",
+   "nicegui",
+   "panel",
+   "streamlit",
+   "gradio"
+  ],
+  [
+   "three.js",
+   "babylonjs",
+   "playcanvas"
+  ],
+  [
+   "godot",
+   "bevy"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "pandas-dev/pandas",
+   "id": "pandas",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "library",
+   "name": "pandas",
+   "one": "Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
+   "how": "Paquete Python sobre NumPy (con backend opcional de PyArrow) que ofrece DataFrame/Series etiquetados, groupby, merge, pivot y lectores/escritores de CSV, Excel, SQL, Parquet y HDF5.",
+   "examples": [
+    "limpiar y cruzar varios CSV o Excel antes de un informe",
+    "preparar un conjunto de datos para entrenar un modelo de scikit-learn"
+   ],
+   "try": [
+    "Instala con `pip install pandas`, carga un CSV con `pd.read_csv` y agrupa por una columna con `groupby().sum()`.",
+    "Obtienes un DataFrame resumido que puedes exportar a CSV o Parquet."
+   ],
+   "setup": "easy",
+   "tags": [
+    "data",
+    "python",
+    "dataframe",
+    "analytics"
+   ],
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "cmd": "pip install pandas"
+  },
+  {
+   "gh": "dbt-labs/dbt",
+   "id": "dbt",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "app",
+   "name": "dbt",
+   "one": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
+   "how": "CLI que compila modelos SELECT con Jinja, resuelve dependencias con `ref`, materializa tablas o vistas en el almacén, ejecuta pruebas y genera documentación; la v2 es una reescritura en Rust.",
+   "examples": [
+    "mantener las transformaciones de un almacén analítico como código revisable en Git",
+    "añadir pruebas de calidad (únicos, no nulos) a las tablas de un informe"
+   ],
+   "try": [
+    "Sigue la guía de instalación oficial, crea un proyecto con un modelo SELECT simple y ejecútalo con `dbt run` contra una base de pruebas.",
+    "El modelo aparece como tabla o vista en la base y `dbt test` informa de las pruebas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "data",
+    "sql",
+    "etl",
+    "analytics"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "caveat": "La rama main es dbt v2 (reescritura en Rust); la implementación Python v1 sigue en la rama 1.latest. Revisa qué adaptadores admite cada versión.",
+   "license": "Apache-2.0"
+  },
+  {
+   "gh": "reflex-dev/reflex",
+   "id": "reflex",
+   "cat": 25,
+   "sub": "apps",
+   "kind": "framework",
+   "name": "Reflex",
+   "one": "Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado.",
+   "how": "Biblioteca Python que compila la interfaz declarada en Python a una app React/Next.js y mantiene el estado en el servidor (FastAPI) sincronizado por WebSocket.",
+   "examples": [
+    "construir un panel interno o una herramienta con formularios y tablas sin escribir JavaScript",
+    "prototipar una app de IA con estado, como un generador de imágenes"
+   ],
+   "try": [
+    "Crea un proyecto con `uv init`, ejecuta `uv add reflex`, `uv run reflex init` y `uv run reflex run`.",
+    "La app de ejemplo se abre en http://localhost:3000 y se recarga al editar el código."
+   ],
+   "setup": "easy",
+   "tags": [
+    "python",
+    "web",
+    "framework",
+    "ui"
+   ],
+   "goals": [
+    "programar",
+    "datos"
+   ],
+   "cmd": "uv add reflex",
+   "caveat": "El framework es Apache-2.0; AI Builder, el alojamiento gestionado y algunos componentes empresariales (p. ej. AG Grid) son servicios o licencias aparte."
+  },
+  {
+   "gh": "zauberzeug/nicegui",
+   "id": "nicegui",
+   "cat": 25,
+   "sub": "apps",
+   "kind": "framework",
+   "name": "NiceGUI",
+   "one": "Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas.",
+   "how": "Biblioteca Python sobre FastAPI con frontend Vue/Quasar sincronizado por socket.io; cada elemento de interfaz es un objeto Python y admite modo nativo de escritorio.",
+   "examples": [
+    "crear un panel de control para un robot o una casa domótica",
+    "hacer una pequeña herramienta web para ajustar parámetros de un algoritmo"
+   ],
+   "try": [
+    "Instala con `python3 -m pip install nicegui`, escribe un script con `ui.label` y `ui.button` y ejecútalo con `ui.run()`.",
+    "La interfaz se abre en el navegador (puerto 8080) y se recarga al guardar."
+   ],
+   "setup": "easy",
+   "tags": [
+    "python",
+    "web",
+    "ui",
+    "framework"
+   ],
+   "goals": [
+    "programar",
+    "datos"
+   ],
+   "cmd": "python3 -m pip install nicegui"
+  },
+  {
+   "gh": "holoviz/panel",
+   "id": "panel",
+   "cat": 25,
+   "sub": "apps",
+   "kind": "framework",
+   "name": "Panel",
+   "one": "Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`.",
+   "how": "Biblioteca Python sobre Bokeh y Param que enlaza widgets con funciones o clases reactivas y muestra gráficos de Matplotlib, Plotly, HoloViews, ECharts o deck.gl.",
+   "examples": [
+    "convertir un análisis de notebook en un dashboard interactivo para el equipo",
+    "crear una plataforma interna con varias páginas, tablas editables y autenticación"
+   ],
+   "try": [
+    "Instala con `pip install panel`, crea `app.py` con un widget enlazado a un gráfico y ejecútalo con `panel serve app.py --dev`.",
+    "El dashboard se abre en el navegador y responde a los controles."
+   ],
+   "setup": "easy",
+   "tags": [
+    "python",
+    "dashboard",
+    "dataviz",
+    "framework"
+   ],
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "cmd": "pip install panel"
+  },
+  {
+   "gh": "ClickHouse/ClickHouse",
+   "id": "clickhouse",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "server",
+   "name": "ClickHouse",
+   "one": "Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube.",
+   "how": "Servidor C++ con almacenamiento columnar (motores MergeTree), ejecución vectorizada y paralela, compresión, replicación y SQL extendido; también como binario local (clickhouse-local).",
+   "examples": [
+    "guardar y consultar logs, métricas o eventos de producto con latencias de segundos",
+    "servir de motor para dashboards analíticos sobre grandes volúmenes"
+   ],
+   "try": [
+    "Instala con `curl https://clickhouse.com/ | sh` en una máquina de pruebas y consulta un CSV local con `./clickhouse local`.",
+    "Obtienes el resultado de la consulta SQL en la terminal sin levantar un servidor."
+   ],
+   "setup": "medium",
+   "tags": [
+    "database",
+    "sql",
+    "analytics",
+    "cpp"
+   ],
+   "goals": [
+    "datos",
+    "servicios"
+   ],
+   "cmd": "curl https://clickhouse.com/ | sh",
+   "caveat": "ClickHouse Cloud es un servicio de pago; el servidor de este repositorio es Apache-2.0. Revisa el script de instalación antes de ejecutarlo."
+  },
+  {
+   "gh": "apache/spark",
+   "id": "spark",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "engine",
+   "name": "Apache Spark",
+   "one": "Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark.",
+   "how": "Motor JVM (Scala) con APIs en Python (PySpark), Java, Scala y R que planifica grafos de ejecución distribuidos sobre memoria y disco en clústeres locales, YARN o Kubernetes.",
+   "examples": [
+    "procesar terabytes de logs o eventos en un clúster con SQL o PySpark",
+    "alimentar un lakehouse con Delta Lake o Iceberg mediante trabajos batch y streaming"
+   ],
+   "try": [
+    "Instala PySpark (`pip install pyspark`) y procesa un CSV local con un DataFrame y una consulta SQL en modo local.",
+    "Obtienes el resultado agregado en la consola sin necesidad de clúster."
+   ],
+   "setup": "hard",
+   "tags": [
+    "data",
+    "bigdata",
+    "sql",
+    "streaming"
+   ],
+   "goals": [
+    "datos"
+   ]
+  },
+  {
+   "gh": "apache/arrow",
+   "id": "arrow",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "library",
+   "name": "Apache Arrow",
+   "one": "Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas.",
+   "how": "Especificación de formato columnar con bibliotecas en C++, Python (PyArrow), R, Ruby y otras, más IPC, Flight RPC, lectura de Parquet y el motor de consultas Acero.",
+   "examples": [
+    "mover datos entre pandas, Polars, DuckDB y Spark sin serializar",
+    "leer y escribir Parquet o datasets particionados desde Python"
+   ],
+   "try": [
+    "Instala PyArrow, lee un archivo Parquet con `pyarrow.parquet.read_table` y conviértelo a pandas.",
+    "Obtienes una tabla Arrow y su DataFrame equivalente."
+   ],
+   "setup": "easy",
+   "tags": [
+    "data",
+    "columnar",
+    "python",
+    "cpp"
+   ],
+   "goals": [
+    "datos",
+    "programar"
+   ]
+  },
+  {
+   "gh": "Kanaries/pygwalker",
+   "id": "pygwalker",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "library",
+   "name": "PyGWalker",
+   "one": "Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos.",
+   "how": "Biblioteca Python que integra Graphic Walker (interfaz visual en JavaScript) como widget de notebook; los cálculos pueden hacerse en el navegador o con DuckDB en el kernel.",
+   "examples": [
+    "explorar un conjunto de datos nuevo con gráficos de arrastrar y soltar sin escribir código de visualización",
+    "publicar una exploración interactiva de datos dentro de una app de Streamlit"
+   ],
+   "try": [
+    "Instala con `pip install pygwalker` y, en un notebook, ejecuta `pyg.walk(df)` con un DataFrame.",
+    "Aparece una interfaz donde arrastras columnas para crear gráficos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "dataviz",
+    "python",
+    "jupyter",
+    "eda"
+   ],
+   "goals": [
+    "datos"
+   ],
+   "cmd": "pip install pygwalker",
+   "caveat": "La opción `computation=\"cloud\"` y algunas funciones de IA usan servicios de Kanaries; el último push es de septiembre de 2026 (ritmo moderado)."
+  },
+  {
+   "gh": "ibis-project/ibis",
+   "id": "ibis",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "library",
+   "name": "Ibis",
+   "one": "Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores.",
+   "how": "API de expresiones perezosas en Python que compila a SQL o al motor elegido (DuckDB por defecto) y permite mezclar código de dataframe con SQL.",
+   "examples": [
+    "desarrollar una transformación en local con DuckDB y ejecutarla después en un almacén en la nube",
+    "escribir lógica de datos sin atarse al dialecto SQL de un motor"
+   ],
+   "try": [
+    "Instala con `pip install 'ibis-framework[duckdb,examples]'` y filtra un conjunto de ejemplo en modo interactivo.",
+    "Obtienes la tabla resultante calculada por DuckDB."
+   ],
+   "setup": "easy",
+   "tags": [
+    "data",
+    "python",
+    "dataframe",
+    "sql"
+   ],
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "cmd": "pip install 'ibis-framework[duckdb,examples]'"
+  },
+  {
+   "gh": "dlt-hub/dlt",
+   "id": "dlt",
+   "cat": 25,
+   "sub": "datos",
+   "kind": "library",
+   "name": "dlt (data load tool)",
+   "one": "Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental.",
+   "how": "Paquete Python que extrae con generadores o fuentes declarativas REST, infiere y evoluciona el esquema, normaliza datos anidados y carga en el destino elegido de forma incremental.",
+   "examples": [
+    "volcar los datos de una API REST paginada en DuckDB para analizarlos",
+    "sincronizar tablas de una base SQL a un almacén analítico cada día"
+   ],
+   "try": [
+    "Instala con `pip install \"dlt[duckdb]\"`, define una fuente REST pequeña y ejecuta el pipeline con destino DuckDB.",
+    "Obtienes un archivo DuckDB con tablas tipadas creadas por dlt."
+   ],
+   "setup": "easy",
+   "tags": [
+    "data",
+    "etl",
+    "python",
+    "pipeline"
+   ],
+   "goals": [
+    "datos",
+    "automatizar"
+   ],
+   "cmd": "pip install \"dlt[duckdb]\"",
+   "caveat": "dlt es Apache-2.0; dltHub (plataforma gestionada y el extra `dlt[hub]`) es un producto comercial con licencia propia."
+  },
+  {
+   "gh": "godotengine/godot",
+   "id": "godot",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "kind": "app",
+   "name": "Godot Engine",
+   "one": "Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.",
+   "how": "Aplicación C++ con editor, sistema de escenas y nodos, renderizado Vulkan/OpenGL, física, audio y exportadores; importa escenas glTF, FBX y archivos .blend de Blender.",
+   "examples": [
+    "crear un juego 2D o 3D y exportarlo a Windows, Android y web",
+    "construir una visualización interactiva o una simulación con editor visual"
+   ],
+   "try": [
+    "Descarga Godot desde su web, abre un proyecto de las demos oficiales y ejecútalo con F5.",
+    "La demo se ejecuta en una ventana y puedes modificar sus escenas en el editor."
+   ],
+   "setup": "easy",
+   "tags": [
+    "gamedev",
+    "3d",
+    "2d",
+    "cpp"
+   ],
+   "goals": [
+    "3d"
+   ],
+   "ready": true
+  },
+  {
+   "gh": "pixijs/pixijs",
+   "id": "pixijs",
+   "cat": 26,
+   "sub": "animacion",
+   "kind": "library",
+   "name": "PixiJS",
+   "one": "Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador.",
+   "how": "Biblioteca TypeScript con grafo de escena, sprites, texto, gráficos vectoriales, filtros, máscaras y cargador de recursos, renderizada por WebGL o WebGPU.",
+   "examples": [
+    "crear un juego 2D o una experiencia interactiva para navegador",
+    "dibujar miles de elementos animados en una visualización web"
+   ],
+   "try": [
+    "Crea un proyecto con `npm create pixi.js@latest`, añade un sprite y anímalo en el ticker.",
+    "El sprite se mueve en el canvas del navegador a alta tasa de fotogramas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "javascript",
+    "2d",
+    "webgl",
+    "animation"
+   ],
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "cmd": "npm create pixi.js@latest"
+  },
+  {
+   "gh": "BabylonJS/Babylon.js",
+   "id": "babylonjs",
+   "cat": 26,
+   "sub": "animacion",
+   "kind": "library",
+   "name": "Babylon.js",
+   "one": "Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.",
+   "how": "Biblioteca TypeScript con renderizado WebGL/WebGPU, cargadores glTF/OBJ/.babylon, física (Havok), animación, GUI, audio y WebXR, publicada en npm como módulos ES6.",
+   "examples": [
+    "mostrar un configurador de producto 3D en una web",
+    "crear un juego o experiencia WebXR en el navegador"
+   ],
+   "try": [
+    "Abre el playground oficial, carga un ejemplo y modifícalo; o instala con `npm install babylonjs --save`.",
+    "La escena 3D se renderiza en el navegador con tus cambios."
+   ],
+   "setup": "easy",
+   "tags": [
+    "javascript",
+    "3d",
+    "webgl",
+    "webxr"
+   ],
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "cmd": "npm install babylonjs --save"
+  },
+  {
+   "gh": "playcanvas/engine",
+   "id": "playcanvas",
+   "cat": 26,
+   "sub": "animacion",
+   "kind": "library",
+   "name": "PlayCanvas Engine",
+   "one": "Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.",
+   "how": "Biblioteca JavaScript con sistema de entidades y componentes, renderizado PBR, animación, física ammo.js, audio, XR y cargadores glTF (con Draco y meshopt) y de splats.",
+   "examples": [
+    "publicar una escena 3D o un escaneo con Gaussian splats en una web",
+    "crear un juego ligero que funcione en cualquier navegador y móvil"
+   ],
+   "try": [
+    "Crea un proyecto con `npm create playcanvas@latest` o instala `npm install playcanvas` y ejecuta el ejemplo del cubo giratorio.",
+    "El cubo 3D gira en un canvas del navegador."
+   ],
+   "setup": "easy",
+   "tags": [
+    "javascript",
+    "3d",
+    "webgpu",
+    "gamedev"
+   ],
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "cmd": "npm install playcanvas",
+   "caveat": "El motor es MIT; el editor en la nube de PlayCanvas es un servicio con planes de pago."
+  },
+  {
+   "gh": "bevyengine/bevy",
+   "id": "bevy",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "kind": "framework",
+   "name": "Bevy",
+   "one": "Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.",
+   "how": "Conjunto de crates Rust con arquitectura Entity Component System paralela, renderizado wgpu (Vulkan, Metal, DX12, WebGPU), carga de glTF, audio y entrada.",
+   "examples": [
+    "programar un juego 2D o 3D en Rust con alto rendimiento",
+    "crear una simulación o herramienta visual que compile también a WebAssembly"
+   ],
+   "try": [
+    "Clona el repositorio y ejecuta `cargo run --example breakout`.",
+    "Se abre el juego de ejemplo Breakout en una ventana."
+   ],
+   "setup": "medium",
+   "tags": [
+    "rust",
+    "gamedev",
+    "ecs",
+    "3d"
+   ],
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "cmd": "cargo run --example breakout",
+   "caveat": "Proyecto en fase temprana: publica versiones con cambios incompatibles aproximadamente cada tres meses y no tiene editor visual estable.",
+   "license": "MIT OR Apache-2.0"
+  },
+  {
+   "gh": "FreeCAD/FreeCAD",
+   "id": "freecad",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "kind": "app",
+   "name": "FreeCAD",
+   "one": "Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python.",
+   "how": "Aplicación C++/Qt sobre OpenCASCADE con bancos de trabajo (Sketcher, Part Design, TechDraw, BIM, FEM, CAM, OpenSCAD) y consola y macros en Python.",
+   "examples": [
+    "diseñar una pieza mecánica paramétrica y exportarla a STL para impresión 3D",
+    "generar planos técnicos acotados a partir de un modelo 3D"
+   ],
+   "try": [
+    "Instala FreeCAD desde su web, crea un boceto en Part Design y extrúyelo.",
+    "Obtienes un sólido paramétrico que cambia al editar las cotas del boceto."
+   ],
+   "setup": "easy",
+   "tags": [
+    "cad",
+    "3d",
+    "cpp",
+    "app"
+   ],
+   "goals": [
+    "3d"
+   ],
+   "ready": true
+  },
+  {
+   "gh": "openscad/openscad",
+   "id": "openscad",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "kind": "app",
+   "name": "OpenSCAD",
+   "one": "CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas.",
+   "how": "Programa C++ que interpreta scripts .scad con geometría sólida constructiva (CSG) y extrusión de contornos 2D, y renderiza con CGAL o Manifold.",
+   "examples": [
+    "diseñar piezas paramétricas para impresión 3D cambiando variables",
+    "generar variantes de una pieza (tamaños, agujeros) desde el mismo script"
+   ],
+   "try": [
+    "Instala OpenSCAD, escribe `cube(10); translate([5,5,5]) sphere(6);`, renderiza con F6 y exporta a STL.",
+    "Obtienes un archivo STL listo para el laminador de la impresora."
+   ],
+   "setup": "easy",
+   "tags": [
+    "cad",
+    "3d",
+    "code",
+    "app"
+   ],
+   "goals": [
+    "3d"
+   ],
+   "ready": true,
+   "caveat": "Licencia GPL-2.0 con una excepción para enlazar con la biblioteca CGAL. La última versión estable publicada es 2021.01; las mejoras recientes (como el backend Manifold) solo están en las instantáneas de desarrollo.",
+   "license": "GPL-2.0 (con excepción CGAL)"
+  },
+  {
+   "gh": "Genesis-Embodied-AI/genesis-world",
+   "id": "genesis-world",
+   "cat": 26,
+   "sub": "simulacion",
+   "kind": "framework",
+   "name": "Genesis World",
+   "one": "Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU.",
+   "how": "Biblioteca Python con motor multifísica, compilador Quadrants que genera kernels para CUDA, ROCm, Metal, Vulkan o CPU, y renderizadores Nyx, Luisa y Pyrender.",
+   "examples": [
+    "entrenar políticas de robots con miles de entornos paralelos en GPU",
+    "generar datos sintéticos de manipulación con cuerpos rígidos y deformables"
+   ],
+   "try": [
+    "Instala PyTorch y después `pip install genesis-world`; ejecuta el ejemplo `examples/rigid/single_franka.py`.",
+    "Se simula un brazo Franka en una escena con visor."
+   ],
+   "setup": "hard",
+   "tags": [
+    "simulation",
+    "robotics",
+    "physics",
+    "python"
+   ],
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "cmd": "pip install genesis-world"
+  },
+  {
+   "gh": "google-deepmind/mujoco",
+   "id": "mujoco",
+   "cat": 26,
+   "sub": "simulacion",
+   "kind": "library",
+   "name": "MuJoCo",
+   "one": "Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo.",
+   "how": "Biblioteca C con API de bajo nivel, compilador de modelos XML (MJCF), visualizador interactivo y bindings de Python; MJX la reimplementa en JAX.",
+   "examples": [
+    "simular un robot o un brazo para probar controladores antes del hardware",
+    "entrenar políticas de aprendizaje por refuerzo en entornos físicos"
+   ],
+   "try": [
+    "Instala con `pip install mujoco`, carga un modelo MJCF de ejemplo y ábrelo con `python -m mujoco.viewer`.",
+    "Ves el modelo simulado en el visor interactivo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "simulation",
+    "robotics",
+    "physics",
+    "python"
+   ],
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "cmd": "pip install mujoco",
+   "caveat": "El código es Apache-2.0; la documentación y los recursos de la carpeta doc usan CC BY 4.0."
+  }
+ ]
+}

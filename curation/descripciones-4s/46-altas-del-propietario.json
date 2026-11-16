@@ -277,6 +277,12 @@
      "id": "jupyterlab",
      "motivo": "Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)",
      "orden_instalacion": "Instala JupyterLab en el mismo entorno que PyIceberg."
+    },
+    {
+     "id": "spark",
+     "motivo": "Combinación recíproca: Apache Spark lo enlaza como «Iceberg ofrece un runtime para Spark que permite crear y consultar tablas Iceberg con Spark SQL».",
+     "orden_instalacion": "Orden indicado desde Apache Spark: Añade el JAR `iceberg-spark-runtime` y configura un catálogo; después usa Spark SQL.",
+     "reciproca_de": "spark"
     }
    ],
    "notas": "Alternativas (elige una): delta-lake, hudi. Para consultas locales pequeñas suele bastar Parquet con DuckDB; Iceberg aporta valor con varios motores o escritores concurrentes.",
@@ -315,6 +321,12 @@
      "id": "jupyterlab",
      "motivo": "Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)",
      "orden_instalacion": "Instala JupyterLab en el entorno con PySpark o deltalake."
+    },
+    {
+     "id": "spark",
+     "motivo": "Combinación recíproca: Apache Spark lo enlaza como «Delta Lake nació para Spark: añade transacciones ACID, versiones y MERGE a tablas en almacenamiento de objetos usando Spark como motor».",
+     "orden_instalacion": "Orden indicado desde Apache Spark: Añade el paquete `delta-spark` a la sesión de Spark; después lee y escribe con `format(\"delta\")`.",
+     "reciproca_de": "spark"
     }
    ],
    "notas": "Alternativas (elige una): apache-iceberg, hudi. Delta UniForm acerca ambos formatos: Delta puede publicar metadatos Iceberg.",
@@ -412,6 +424,12 @@
      "id": "ffmpeg",
      "motivo": "Requisito documentado: torchcodec usa ffmpeg para decodificar el audio.",
      "orden_instalacion": "Instala ffmpeg antes del paquete."
+    },
+    {
+     "id": "sherpa-onnx",
+     "motivo": "Combinación recíproca: sherpa-onnx lo enlaza como «La diarización de sherpa-onnx usa el modelo de segmentación de pyannote exportado a ONNX junto a un modelo de embeddings de hablante».",
+     "orden_instalacion": "Orden indicado desde sherpa-onnx: Descarga el modelo de segmentación de pyannote para sherpa-onnx; después ejecuta la diarización.",
+     "reciproca_de": "sherpa-onnx"
     }
    ],
    "notas": "Diarizar personas tiene implicaciones de privacidad: informa a los participantes. Las cifras del README (DER, velocidad en H100) son del autor.",
@@ -458,6 +476,12 @@
      "id": "remotion-superpowers",
      "motivo": "El plugin usa las skills oficiales de ElevenLabs para locución, efectos y música. (combinación por arquitectura)",
      "orden_instalacion": "Configura la clave de ElevenLabs al instalar el plugin."
+    },
+    {
+     "id": "ten-framework",
+     "motivo": "Combinación recíproca: TEN Framework lo enlaza como «El ejemplo rápido de TEN usa ElevenLabs para la síntesis de voz (requiere clave)».",
+     "orden_instalacion": "Orden indicado desde TEN Framework: Crea una clave de ElevenLabs; después ponla en `ELEVENLABS_TTS_KEY` del `.env`.",
+     "reciproca_de": "ten-framework"
     }
    ],
    "notas": "La clonación de voz exige el consentimiento de la persona. Vigila el consumo de créditos: el SDK no limita el gasto.",

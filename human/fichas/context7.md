@@ -32,9 +32,9 @@ Se configura con `npx ctx7 setup` (Node.js 22.13+), que autentica por OAuth, gen
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Antigravity CLI](antigravity-cli.md) · [Codex CLI](codex.md) · [Gemini CLI](gemini-cli.md) · [hello-halo](hello-halo.md) · [MiMo-Code](mimo-code.md) · [Open Interpreter](open-interpreter.md) · [OpenCursor](opencursor.md) · [Serena](serena.md) · [SuperClaude_Framework](superclaude-framework.md)
+[Antigravity CLI](antigravity-cli.md) · [Codex CLI](codex.md) · [Gemini CLI](gemini-cli.md) · [hello-halo](hello-halo.md) · [Kilo Code](kilocode.md) · [MiMo-Code](mimo-code.md) · [Open Interpreter](open-interpreter.md) · [OpenCursor](opencursor.md) · [Serena](serena.md) · [SuperClaude_Framework](superclaude-framework.md)
 
 **Notas:** Sin alternativas declaradas. Las consultas salen hacia el servicio de Upstash.
 

@@ -29,6 +29,7 @@ VibeVoice-ASR está integrado en Transformers y en Azure AI Foundry Labs, y hay 
 | [Transformers](transformers.md) | VibeVoice-ASR integrado en Transformers. | Carga el modelo con Transformers. |
 | [open-notebook](open-notebook.md) | Narración de podcasts. (combinación por arquitectura) | Usa un TTS compatible para los episodios. |
 | [Pipecat](pipecat.md) | ASR o TTS en agentes de voz. (combinación por arquitectura) | Integra el modelo como servicio. |
+| [TEN Framework](ten-framework.md) | Combinación recíproca: TEN Framework lo enlaza como «TEN incluye una extensión de síntesis de voz con VibeVoice». | Orden indicado desde TEN Framework: Despliega VibeVoice; después elige su extensión TTS en el grafo. |
 
 **Notas:** Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido.
 

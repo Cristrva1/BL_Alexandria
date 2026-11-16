@@ -32,9 +32,9 @@ Se instala con paquetes, Docker o Helm, o se usa en Grafana Cloud. Está escrito
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (21). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Apache Airflow](airflow.md) · [CrowdSec](crowdsec.md) · [freqtrade](freqtrade.md) · [hummingbot](hummingbot.md) · [k6](k6.md) · [Locust](locust.md) · [Matomo](matomo.md) · [Node-RED](node-red.md) · [open-sol-bot](open-sol-bot.md) · [Pi-hole](pi-hole.md) · [Plausible Analytics](plausible.md) · [Temporal](temporal.md) · [uPlot](uplot.md)
+[Apache Airflow](airflow.md) · [ClickHouse](clickhouse.md) · [CrowdSec](crowdsec.md) · [freqtrade](freqtrade.md) · [Headscale](headscale.md) · [hummingbot](hummingbot.md) · [k6](k6.md) · [Locust](locust.md) · [Matomo](matomo.md) · [NetBird](netbird.md) · [Node-RED](node-red.md) · [open-sol-bot](open-sol-bot.md) · [OpenLLMetry](openllmetry.md) · [Pi-hole](pi-hole.md) · [Plausible Analytics](plausible.md) · [Synapse](synapse.md) · [Temporal](temporal.md) · [Traefik Proxy](traefik.md) · [uPlot](uplot.md) · [Uptime Kuma](uptime-kuma.md) · [WireGuard Easy](wg-easy.md)
 
 **Notas:** Sin alternativas declaradas. AGPL: ofrecerlo modificado como servicio obliga a publicar cambios.
 

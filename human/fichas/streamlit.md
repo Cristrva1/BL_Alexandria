@@ -30,6 +30,7 @@ Se instala con `pip install streamlit` y se ejecuta con `streamlit run app.py`. 
 | [Polars](polars.md) | DataFrames rápidos dentro de la app. (combinación por arquitectura) | Procesa con Polars y muestra con `st.dataframe`. |
 | [DuckDB](duckdb.md) | Consultas SQL locales en la app. (combinación por arquitectura) | Consulta con DuckDB y muestra el resultado. |
 | [Awesome LLM Apps](awesome-llm-apps.md) | Combinación recíproca: Awesome LLM Apps lo enlaza como «Interfaz de muchas de las apps de ejemplo». | Orden indicado desde Awesome LLM Apps: Se instala con los requirements de cada plantilla. |
+| [PyGWalker](pygwalker.md) | Combinación recíproca: PyGWalker lo enlaza como «PyGWalker documenta su uso dentro de apps de Streamlit para publicar la exploración en web». | Orden indicado desde PyGWalker: Instala PyGWalker en la app de Streamlit; después usa su componente para Streamlit. |
 
 **Notas:** Alternativas (elige una): gradio.
 
@@ -114,6 +115,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Gradio](gradio.md) | 44.1k | Librería Python para crear y compartir apps web de modelos de ML en minutos. |
+| [Reflex](reflex.md) | 29k | Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado. |
+| [NiceGUI](nicegui.md) | 16.3k | Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas. |
+| [Panel](panel.md) | 5.8k | Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`. |
 
 ## Enlaces
 

@@ -32,9 +32,9 @@ Se añade al cliente MCP con `npx @playwright/mcp@latest` (VS Code, Cursor, Wind
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[agent-desktop](agent-desktop.md) · [Cherry Studio](cherry-studio.md) · [Cline](cline.md) · [goose](goose.md) · [hello-halo](hello-halo.md) · [Jan](jan.md) · [LobeHub](lobehub.md) · [odysseus](odysseus.md) · [playwright-cli](playwright-cli.md) · [SurfSense](surfsense.md)
+[agent-desktop](agent-desktop.md) · [Cherry Studio](cherry-studio.md) · [Cline](cline.md) · [goose](goose.md) · [hello-halo](hello-halo.md) · [Jan](jan.md) · [Kilo Code](kilocode.md) · [LobeHub](lobehub.md) · [odysseus](odysseus.md) · [playwright-cli](playwright-cli.md) · [SurfSense](surfsense.md)
 
 **Notas:** Alternativas (elige una): chrome-devtools-mcp, browser-use, browser-harness.
 

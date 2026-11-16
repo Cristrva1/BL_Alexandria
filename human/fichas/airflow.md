@@ -31,6 +31,13 @@ Escrito en Python; se instala con pip usando los archivos de constraints oficial
 | [Grafana](grafana.md) | Airflow publica métricas por StatsD u OpenTelemetry que se pueden visualizar en Grafana a través de Prometheus u otro backend (combinación por arquitectura). | Configura las métricas de Airflow y el exportador o colector; después añade la fuente de datos y el panel en Grafana. |
 | [MLflow](mlflow.md) | Airflow programa los pasos de entrenamiento y evaluación y MLflow registra parámetros, métricas y modelos de cada ejecución (combinación por arquitectura). | Servidor de MLflow primero; después tareas de Airflow que usen su cliente con MLFLOW_TRACKING_URI. |
 | [Claude Code](claude-code.md) | Los DAGs son Python normal: un agente de código puede escribirlos y probarlos con `airflow dags test` en un entorno de desarrollo (combinación por arquitectura). | Entorno de Airflow de pruebas; después pide al agente el DAG y pruébalo antes de desplegarlo. |
+| [dbt](dbt.md) | Combinación recíproca: dbt lo enlaza como «Airflow se usa habitualmente para programar ejecuciones de dbt (por ejemplo con Astronomer Cosmos u operadores Bash)». | Orden indicado desde dbt: Instala dbt en el entorno de Airflow; después crea un DAG que ejecute `dbt build`. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dlt (data load tool)](dlt.md)
 
 **Notas:** Alternativas (elige una): prefect, dagster, kestra. Instalar sin el archivo de constraints suele romper dependencias.
 

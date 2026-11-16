@@ -35,9 +35,9 @@ Se instala con `pip install peft` y está integrada con Transformers, Diffusers 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[FinGPT](fingpt.md)
+[Axolotl](axolotl.md) · [FinGPT](fingpt.md)
 
 **Notas:** Sin alternativas declaradas.
 

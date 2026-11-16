@@ -29,6 +29,7 @@ Escrito en Go; se instala con paquetes, Docker o Helm. Las reglas y escenarios v
 | [Grafana](grafana.md) | CrowdSec expone métricas Prometheus y documenta paneles de Grafana para visualizarlas. | Habilita las métricas Prometheus; después importa el panel en Grafana. |
 | [Wazuh](wazuh.md) | CrowdSec bloquea en el perímetro y Wazuh correlaciona alertas de los equipos (combinación por arquitectura). | Despliega CrowdSec; después reenvía sus registros a Wazuh. |
 | [coolify](coolify.md) | Coolify usa Traefik como proxy, que puede protegerse con el bouncer de CrowdSec para Traefik (combinación por arquitectura). | CrowdSec en el servidor; después añade el bouncer como middleware de Traefik. |
+| [Traefik Proxy](traefik.md) | Combinación recíproca: Traefik Proxy lo enlaza como «CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware». | Orden indicado desde Traefik Proxy: CrowdSec en el servidor; después añade el bouncer como middleware de Traefik. |
 
 **Notas:** Compartir señales con la red comunitaria es opcional; revisa qué datos se envían.
 

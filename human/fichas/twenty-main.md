@@ -101,6 +101,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `crm` `typescript` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [EspoCRM](espocrm.md) | 3.6k | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. |
+
 ## Enlaces
 
 - 🐙 GitHub: [twentyhq/twenty](https://github.com/twentyhq/twenty)

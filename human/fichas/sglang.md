@@ -35,9 +35,9 @@ Se usa con la imagen Docker `lmsysorg/sglang` o con `uv pip install --prerelease
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Unlimited-OCR](unlimited-ocr.md)
+[GPUStack](gpustack.md) · [LM Evaluation Harness](lm-eval-harness.md) · [Unlimited-OCR](unlimited-ocr.md) · [verl](verl.md)
 
 **Notas:** Alternativas (elige una): vllm.
 

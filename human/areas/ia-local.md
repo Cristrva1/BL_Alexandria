@@ -4,7 +4,7 @@
 
 Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
 
-52 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
+67 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
 
 ## Opciones para empezar
 
@@ -67,12 +67,13 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
 Modelos publicados por sus autores para evaluar e integrar.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-modelos)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-modelos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [cosmos](../fichas/cosmos.md) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | API de IA opcional |
 | [DeepSeek-V3](../fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional |
+| [Gemma (biblioteca JAX)](../fichas/gemma.md) | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino. | Sin clave propia de API de IA en la ruta básica |
 | [Kimi K2.7 Code](../fichas/kimi-k2-7-code.md) | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. | API de IA opcional |
 | [laya](../fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin clave propia de API de IA en la ruta básica |
 | [Nemotron (NVIDIA)](../fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | API de IA opcional |
@@ -82,33 +83,47 @@ Modelos publicados por sus autores para evaluar e integrar.
 
 Bibliotecas para entrenar o adaptar modelos a tus datos.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-entrenamiento)
+[Explorar 18 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-entrenamiento)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Accelerate](../fichas/accelerate.md) | Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas. | Sin clave propia de API de IA en la ruta básica |
+| [Axolotl](../fichas/axolotl.md) | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. | Sin clave propia de API de IA en la ruta básica |
 | [bionemo-recipes](../fichas/bionemo-recipes.md) | Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. | Sin clave propia de API de IA en la ruta básica |
+| [DeepSpeed](../fichas/deepspeed.md) | Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes. | Sin clave propia de API de IA en la ruta básica |
+| [JAX](../fichas/jax.md) | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. | Sin clave propia de API de IA en la ruta básica |
+| [Keras 3](../fichas/keras.md) | API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia). | Sin clave propia de API de IA en la ruta básica |
 | [LLaMA-Factory](../fichas/llama-factory.md) | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. | Sin clave propia de API de IA en la ruta básica |
+| [OpenRLHF](../fichas/openrlhf.md) | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. | Sin clave propia de API de IA en la ruta básica |
 | [PEFT](../fichas/peft.md) | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. | Sin clave propia de API de IA en la ruta básica |
 | [PyTorch](../fichas/pytorch.md) | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. | Sin clave propia de API de IA en la ruta básica |
+| [PyTorch Lightning](../fichas/pytorch-lightning.md) | Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto. | Sin clave propia de API de IA en la ruta básica |
+| [scikit-learn](../fichas/scikit-learn.md) | La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado. | Sin clave propia de API de IA en la ruta básica |
 | [tensorflow](../fichas/tensorflow.md) | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. | Sin clave propia de API de IA en la ruta básica |
+| [torchtune](../fichas/torchtune.md) | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. | Sin clave propia de API de IA en la ruta básica |
 | [Transformers](../fichas/transformers.md) | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. | Sin clave propia de API de IA en la ruta básica |
 | [TRL](../fichas/trl.md) | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. | Sin clave propia de API de IA en la ruta básica |
 | [Unsloth](../fichas/unsloth.md) | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. | API de IA opcional |
+| [verl](../fichas/verl.md) | Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. | Sin clave propia de API de IA en la ruta básica |
 
 ### Inferencia, servidores y gateways
 
 Servir modelos y organizar el acceso de tus aplicaciones.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-servidores)
+[Explorar 11 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-servidores)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional |
+| [BentoML](../fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
+| [GPUStack](../fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Sin clave propia de API de IA en la ruta básica |
 | [litellm](../fichas/litellm.md) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | API de IA opcional |
 | [OmniRoute](../fichas/omniroute.md) | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. | API de IA opcional |
+| [Ray](../fichas/ray.md) | Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving. | Sin clave propia de API de IA en la ruta básica |
 | [SGLang](../fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Sin clave propia de API de IA en la ruta básica |
 | [TensorRT-LLM](../fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Sin clave propia de API de IA en la ruta básica |
 | [vLLM](../fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica |
+| [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

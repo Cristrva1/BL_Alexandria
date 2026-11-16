@@ -29,6 +29,7 @@ Se instala con `curl -sSL https://install.pi-hole.net | bash` en Linux (Raspberr
 | [Home Assistant](home-assistant.md) | Home Assistant tiene una integración oficial de Pi-hole para ver estadísticas y activar o desactivar el bloqueo. | Pi-hole en marcha con su clave de API; después añade la integración en Home Assistant. |
 | [Grafana](grafana.md) | Las estadísticas de Pi-hole se pueden exportar a Prometheus con un exportador de la comunidad y verse en Grafana (combinación por arquitectura). | Configura un exportador de métricas de Pi-hole; después añade la fuente y el panel en Grafana. |
 | [coolify](coolify.md) | La imagen Docker de Pi-hole se puede desplegar desde Coolify en un servidor de la red local (combinación por arquitectura). | Coolify primero; después despliega Pi-hole exponiendo el puerto DNS. |
+| [WireGuard Easy](wg-easy.md) | Combinación recíproca: WireGuard Easy lo enlaza como «Los clientes de la VPN pueden usar Pi-hole como DNS para bloquear anuncios fuera de casa (combinación por arquitectura)». | Orden indicado desde WireGuard Easy: Pi-hole en la red; después define su IP como DNS de los clientes en wg-easy. |
 
 **Notas:** Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.
 

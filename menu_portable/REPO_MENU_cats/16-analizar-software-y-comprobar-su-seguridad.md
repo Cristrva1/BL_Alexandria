@@ -244,7 +244,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala CrowdSec en un servidor propio, añade la colección de SSH y un bouncer de cortafuegos, y consulta `cscli metrics`.
 **Qué comprobar:** CrowdSec muestra los registros analizados y las decisiones de bloqueo.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `grafana`, `wazuh`, `coolify`
+**Combina con:** `grafana`, `wazuh`, `coolify`, `traefik`
 
 ## `cybersecurity-skills`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=cybersecurity,seguridad,skills,claude-code,codex,comunidad

@@ -35,9 +35,9 @@ Está escrito en Python; se instala con los binarios oficiales, `pipx install mi
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ffuf](ffuf.md) · [Katana](katana.md) · [sqlmap](sqlmap.md) · [Wireshark](wireshark.md)
+[ffuf](ffuf.md) · [Katana](katana.md) · [Servo](servo.md) · [sqlmap](sqlmap.md) · [Wireshark](wireshark.md)
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

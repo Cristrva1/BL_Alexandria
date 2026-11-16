@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-62 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+74 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Opciones para empezar
 
@@ -96,16 +96,19 @@ Instrucciones de diseño, accesibilidad y calidad para tu agente.
 
 Movimiento, gráficos y escenas interactivas en el navegador.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=frontend&topic=web-movimiento)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-movimiento)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Anime.js](../fichas/animejs.md) | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | Sin clave propia de API de IA en la ruta básica |
+| [Babylon.js](../fichas/babylonjs.md) | Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. | Sin clave propia de API de IA en la ruta básica |
 | [GSAP](../fichas/gsap.md) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | Sin clave propia de API de IA en la ruta básica |
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin clave propia de API de IA en la ruta básica |
 | [motion](../fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional |
 | [pencil](../fichas/pencil.md) | Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | Sin clave propia de API de IA en la ruta básica |
 | [pixelfx](../fichas/pixelfx.md) | Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | API de IA opcional |
+| [PixiJS](../fichas/pixijs.md) | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador. | Sin clave propia de API de IA en la ruta básica |
+| [PlayCanvas Engine](../fichas/playcanvas.md) | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. | Sin clave propia de API de IA en la ruta básica |
 | [react-three-fiber](../fichas/react-three-fiber.md) | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. | Sin clave propia de API de IA en la ruta básica |
 | [regl](../fichas/regl.md) | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web. | Sin clave propia de API de IA en la ruta básica |
 | [scenejs](../fichas/scenejs.md) | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. | Sin clave propia de API de IA en la ruta básica |
@@ -118,16 +121,25 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Appwrite](../fichas/appwrite.md) | Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. | Sin clave propia de API de IA en la ruta básica |
+| [Caddy](../fichas/caddy.md) | Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API. | Sin clave propia de API de IA en la ruta básica |
 | [CasaOS](../fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin clave propia de API de IA en la ruta básica |
 | [coolify](../fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin clave propia de API de IA en la ruta básica |
+| [Cypress](../fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica |
+| [Dokploy](../fichas/dokploy.md) | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. | Sin clave propia de API de IA en la ruta básica |
+| [FlareSolverr](../fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica |
 | [playwright](../fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica |
 | [Playwright MCP](../fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
+| [Portainer CE](../fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Sin clave propia de API de IA en la ruta básica |
 | [Puppeteer](../fichas/puppeteer.md) | Librería de Google para controlar Chrome y Firefox desde Node.js. | Sin clave propia de API de IA en la ruta básica |
 | [Selenium](../fichas/selenium.md) | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. | Sin clave propia de API de IA en la ruta básica |
 | [supabase](../fichas/supabase.md) | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | Sin clave propia de API de IA en la ruta básica |
+| [Traefik Proxy](../fichas/traefik.md) | Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. | Sin clave propia de API de IA en la ruta básica |
+| [Uptime Kuma](../fichas/uptime-kuma.md) | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado. | Sin clave propia de API de IA en la ruta básica |
+| [WebdriverIO](../fichas/webdriverio.md) | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

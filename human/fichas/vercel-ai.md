@@ -34,9 +34,9 @@ Paquetes npm (`npm i ai` más el proveedor elegido) para Node.js, edge runtimes 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[12-Factor Agents](12-factor-agents.md) · [Ant Design](ant-design.md) · [jev-fraud](jev-fraud.md) · [json-render](json-render.md) · [llm-scraper](llm-scraper.md) · [Material UI](mui.md) · [MCP TypeScript SDK](mcp-typescript-sdk.md) · [novu](novu.md) · [Stitch SDK](stitch-sdk.md) · [tldraw](tldraw.md) · [Trigger.dev](trigger-dev.md)
+[12-Factor Agents](12-factor-agents.md) · [Ant Design](ant-design.md) · [discord.js](discord-js.md) · [jev-fraud](jev-fraud.md) · [json-render](json-render.md) · [llm-scraper](llm-scraper.md) · [Material UI](mui.md) · [MCP TypeScript SDK](mcp-typescript-sdk.md) · [novu](novu.md) · [Stitch SDK](stitch-sdk.md) · [tldraw](tldraw.md) · [Trigger.dev](trigger-dev.md)
 
 **Notas:** Alternativas (elige una): langgraphjs, mastra. Ojo: algunos ejemplos del README usan modelos vía AI Gateway que requieren cuenta de Vercel.
 
