@@ -29,6 +29,15 @@ Se usa con la imagen Docker `lmsysorg/sglang` o con `uv pip install --prerelease
 | [litellm](litellm.md) | Usar SGLang a través del proveedor compatible con OpenAI de LiteLLM. (combinación por arquitectura) | Lanza SGLang y regístralo como endpoint OpenAI en LiteLLM. |
 | [Open WebUI](open-webui.md) | Interfaz de chat sobre el endpoint OpenAI de SGLang. (combinación por arquitectura) | Configura la conexión OpenAI de Open WebUI con la URL de SGLang. |
 | [Unsloth](unsloth.md) | Servir con SGLang modelos afinados con Unsloth. (combinación por arquitectura) | Afina y exporta con Unsloth y sirve los pesos con SGLang. |
+| [DeepSeek-V3](deepseek-v3.md) | Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado en BF16 y FP8». | Orden indicado desde DeepSeek-V3: Sirve el modelo con SGLang. |
+| [Kimi K2.7 Code](kimi-k2-7-code.md) | Combinación recíproca: Kimi K2.7 Code lo enlaza como «Despliegue documentado». | Orden indicado desde Kimi K2.7 Code: Sirve el modelo con SGLang. |
+| [LLaMA-Factory](llama-factory.md) | Combinación recíproca: LLaMA-Factory lo enlaza como «Worker de inferencia alternativo». | Orden indicado desde LLaMA-Factory: Configura el backend SGLang. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[GPUStack](gpustack.md) · [LM Evaluation Harness](lm-eval-harness.md) · [Unlimited-OCR](unlimited-ocr.md) · [verl](verl.md)
 
 **Notas:** Alternativas (elige una): vllm.
 

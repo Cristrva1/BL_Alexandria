@@ -29,6 +29,9 @@ Se usa con `npx defuddle parse <archivo|url> [--markdown|--json]` o como librer�
 | [obsidian-clipper](obsidian-clipper.md) | El Web Clipper oficial de Obsidian usa Defuddle para extraer contenido. | Instala el Clipper; Defuddle va incluido. |
 | [obsidian-skills](obsidian-skills.md) | La skill oficial `defuddle` enseña a los agentes a usarlo para ahorrar tokens. | Instala obsidian-skills en el agente. |
 | [crawlee](crawlee.md) | Limpiar el contenido de cada página de un crawler Node.js. (combinación por arquitectura) | Pasa el HTML de cada página a Defuddle. |
+| [claude-obsidian](claude-obsidian.md) | Combinación recíproca: claude-obsidian lo enlaza como «Extraer el contenido limpio de páginas web antes de ingerirlas. (combinación por arquitectura)». | Orden indicado desde claude-obsidian: Usa Defuddle (o su skill) para preparar la fuente y déjala en `inbox/`. |
+| [Scrapling](scrapling.md) | Combinación recíproca: Scrapling lo enlaza como «Quedarte solo con el contenido principal de los artículos descargados. (combinación por arquitectura)». | Orden indicado desde Scrapling: Pasa el HTML obtenido por Defuddle para limpiarlo. |
+| [scrapy](scrapy.md) | Combinación recíproca: scrapy lo enlaza como «Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura)». | Orden indicado desde scrapy: Procesa el HTML guardado con Defuddle. |
 
 **Notas:** Sin alternativas declaradas. En desarrollo: la salida puede cambiar entre versiones.
 

@@ -48,8 +48,7 @@ Si solo haces cambios pequeños y puntuales, el agente tal cual basta: cada piez
 
 - En lugar de [Claude Code](../fichas/claude-code.md): [Codex CLI](../fichas/codex.md), [Gemini CLI](../fichas/gemini-cli.md), [OpenCode](../fichas/opencode.md)
 - En lugar de [superpowers](../fichas/superpowers.md): [Agent Skills (Addy Osmani)](../fichas/agent-skills.md), [SuperClaude_Framework](../fichas/superclaude-framework.md), [ECC](../fichas/ecc.md)
-- En lugar de [Context7](../fichas/context7.md): [DeepWiki Open](../fichas/deepwiki-open.md)
-- En lugar de [Serena](../fichas/serena.md): [codegraph](../fichas/codegraph.md), [GitNexus](../fichas/gitnexus.md)
+- En lugar de [Serena](../fichas/serena.md): [codegraph](../fichas/codegraph.md), [GitNexus](../fichas/gitnexus.md), [codebase-memory-mcp](../fichas/codebase-memory-mcp.md)
 - En lugar de [claude-mem](../fichas/claude-mem.md): [Engram](../fichas/engram.md), [agentmemory](../fichas/agentmemory.md)
 
 ---

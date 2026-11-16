@@ -27,10 +27,10 @@ Es un binario nativo en C que se instala con un script (`install.sh` o `install.
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Claude Code](claude-code.md) | Cliente MCP de programación. (combinación por arquitectura) | Instala el binario y ejecuta `install` para configurar el cliente. |
-| [Serena](serena.md) | Edición semántica con LSP junto a la memoria de grafo. (combinación por arquitectura) | Usa codebase-memory para explorar y Serena para editar. |
 | [Repomix](repomix.md) | Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura) | Localiza con el grafo y empaqueta con Repomix. |
+| [Codex CLI](codex.md) | Cliente MCP soportado: el README indica que comparte un daemon de coordinación entre Claude Code, Codex, OpenCode y otros clientes configurados. | Ejecuta `install` para configurar Codex como cliente. |
 
-**Notas:** Alternativas (elige una): codegraph, gitnexus. Revisa el script de instalación antes de ejecutarlo.
+**Notas:** Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.12.1 (2026-10-16) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -107,6 +107,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
 | [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
+| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 
 ## Enlaces
 

@@ -30,6 +30,7 @@ Requiere Python 3.11+ con uv, Ollama con un modelo descargado y una copia de Osi
 | [MiroFish](mirofish.md) | Motor de predicción por enjambre integrado. | Viene integrado en PYTHIA. |
 | [Ollama](ollama.md) | Modelos locales para cada persona del enjambre. | Arranca Ollama y descarga un modelo de chat. |
 | [Claude Code](claude-code.md) | Servidor MCP documentado en el README. | Ejecuta `claude mcp add pythia …`. |
+| [gods-eye-view](gods-eye-view.md) | Combinación recíproca: gods-eye-view lo enlaza como «Contrastar las predicciones de PYTHIA con las capas en vivo. (combinación por arquitectura)». | Orden indicado desde gods-eye-view: Usa ambos sobre la misma región. |
 
 **Notas:** Sin alternativas declaradas. Las predicciones de LLM no son análisis de inteligencia verificados.
 

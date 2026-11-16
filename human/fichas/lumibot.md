@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+LumiBot, framework de Python para crear bots y agentes de trading, de Lumiwealth. Licencia GPL-3.0. Tiene ~2k estrellas (v4.6.73) y promociona su nube BotSpot y su MCP.
+
+## ¿Qué hace?
+
+Permite escribir reglas de trading, dejar que agentes de IA tomen decisiones o combinar ambas cosas. La misma clase de estrategia sirve para backtesting y para operar en papel o real con brokers soportados (por ejemplo, Alpaca). Cubre acciones, opciones, cripto y otros activos.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install lumibot` (Python 3.10+). Los ejemplos usan datos de Yahoo y, para agentes, un modelo de OpenAI. El MCP gratuito de BotSpot aporta datos económicos y herramientas, pero es un servicio externo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Escribir y probar estrategias con ayuda del MCP de BotSpot (servicio externo). (combinación por arquitectura) | Conecta el MCP solo si aceptas sus condiciones. |
+| [Ollama](ollama.md) | Agentes de decisión con modelos locales en lugar de OpenAI. (combinación por arquitectura) | Configura un modelo compatible si la versión lo permite. |
+| [vectorbt](vectorbt.md) | Explorar señales a gran escala antes de implementarlas. (combinación por arquitectura) | Valida con vectorbt y codifica en LumiBot. |
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero; el README empuja hacia servicios de pago de la empresa.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.6.73 (2026-11-15) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Lumiwealth/lumibot/blob/dev/README.md) · [2](https://lumibot.lumiwealth.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El asistente que escribe código y los agentes dentro de la estrategia son procesos distintos; no comparten automáticamente presupuesto |
 | Coste | El coste depende del proveedor o la ruta. Las reglas no necesitan modelo; AI consume proveedor; BotSpot conecta gratis pero uso alojado depende del plan y los datos pueden cobrar |
 | Equipo | Preparación según la ruta elegida. Python >=3.10; datos históricos; proveedor solo para estrategia AI; broker solo si lo eliges |
-
-El asistente que escribe código y los agentes dentro de la estrategia son procesos distintos; no comparten automáticamente presupuesto
-
-## Qué puedes hacer con él
-
-Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers.
-
-## Por qué destaca
-
-Usos propuestos: Comparar una estrategia de reglas; Estudiar decisiones de una estrategia AI en backtest.
-
-## Cómo funciona
 
 El asistente que escribe código y los agentes dentro de la estrategia son procesos distintos; no comparten automáticamente presupuesto
 

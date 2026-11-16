@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+HunyuanVideo, modelo abierto de generación de vídeo de 13B parámetros de Tencent Hunyuan. Usa la Tencent Hunyuan Community License, que excluye expresamente la UE, Reino Unido y Corea del Sur (GitHub muestra NOASSERTION). Tiene ~13k estrellas y su sucesor es HunyuanVideo-1.5 (repositorio aparte, noviembre de 2025).
+
+## ¿Qué hace?
+
+Genera vídeo a partir de texto con un transformer de difusión y ofrece inferencia en varias GPU, pesos FP8 y modelos derivados (I2V, Avatar, Custom). Es la base de varias implementaciones de la comunidad.
+
+## ¿Cómo lo hace?
+
+Se instala con PyTorch para CUDA, `requirements.txt` y, opcionalmente, flash-attention y xDiT para paralelismo. Requiere GPU con mucha memoria; existen versiones optimizadas de la comunidad para menos VRAM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [diffusers](diffusers.md) | Pipeline de HunyuanVideo en diffusers. | Usa el pipeline `HunyuanVideoPipeline`. |
+| [ComfyUI](comfyui.md) | Soporte nativo en ComfyUI. | Carga los pesos y usa el flujo de ejemplo. |
+| [WanGP](wan2gp.md) | Interfaz para GPU modestas con soporte de Hunyuan Video. | Selecciona Hunyuan Video en WanGP. |
+
+**Notas:** Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.
+
+Estado en GitHub: activo · último push 2026-10-08 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md) · [2](https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video) · [3](https://docs.comfy.org/tutorials/video/hunyuan/hunyuan-video)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La ruta original cita 45 GB VRAM para 544x960x129 y 60 GB para 720x1280x129; no es una instalación ligera para cualquier laptop |
 | Coste | El coste depende del proveedor o la ruta. No exige API remota; hardware y almacenamiento son importantes y los pesos tienen licencia Hunyuan propia |
 | Equipo | Preparación según la ruta elegida. Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia |
-
-La ruta original cita 45 GB VRAM para 544x960x129 y 60 GB para 720x1280x129; no es una instalación ligera para cualquier laptop
-
-## Qué puedes hacer con él
-
-Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos.
-
-## Cómo funciona
 
 La ruta original cita 45 GB VRAM para 544x960x129 y 60 GB para 720x1280x129; no es una instalación ligera para cualquier laptop
 
@@ -87,19 +101,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `video` `inference` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
-| [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
-| [Real-ESRGAN](real-esrgan.md) | 37.5k | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Wan2.2](wan2-2.md) | 18.7k | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | 4.6k | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Enlaces
 

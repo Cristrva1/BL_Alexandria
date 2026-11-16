@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Transformers, la librería de definición de modelos de Hugging Face para texto, visión, audio, vídeo y multimodal. Licencia Apache-2.0. Es muy madura (~169k estrellas, v5.23.0).
+
+## ¿Qué hace?
+
+Ofrece modelos preentrenados para inferencia y entrenamiento, con APIs como `pipeline`, `Trainer` y `generate`, y acceso a los checkpoints del Hub. Actúa como pivote de compatibilidad entre frameworks de entrenamiento (Axolotl, Unsloth, DeepSpeed…) y motores de inferencia (vLLM, SGLang, TGI).
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ y PyTorch 2.6+. Se instala con `pip install "transformers[torch]"` o `uv pip install`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Backend de ejecución. | Instala PyTorch antes. |
+| [PEFT](peft.md) | Adaptadores eficientes integrados. | Instala `peft` y carga adaptadores. |
+| [TRL](trl.md) | Post-entrenamiento sobre modelos de Transformers. | Instala `trl`. |
+| [vLLM](vllm.md) | Motor de inferencia compatible con las definiciones de Transformers. | Sirve el checkpoint con vLLM. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (24). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Accelerate](accelerate.md) · [airllm](airllm.md) · [awesome-machine-learning](awesome-machine-learning.md) · [Axolotl](axolotl.md) · [BentoML](bentoml.md) · [bionemo-recipes](bionemo-recipes.md) · [DeepSpeed](deepspeed.md) · [diffusers](diffusers.md) · [Faiss](faiss.md) · [FinGPT](fingpt.md) · [Gradio](gradio.md) · [LLaMA-Factory](llama-factory.md) · [LLMs from Scratch](llms-from-scratch.md) · [LM Evaluation Harness](lm-eval-harness.md) · [MLC LLM](mlc-llm.md) · [MLflow](mlflow.md) · [smolagents](smolagents.md) · [tensorflow](tensorflow.md) · [TensorRT-LLM](tensorrt-llm.md) · [torchtune](torchtune.md) · [txtai](txtai.md) · [Unlimited-OCR](unlimited-ocr.md) · [verl](verl.md) · [VibeVoice](vibevoice.md)
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v5.23.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/transformers/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelos locales documentados. Es una biblioteca de modelos y no un agente de código ni una aplicación lista para todo hardware |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita API para inferencia descargada; modelos restringidos pueden pedir acceso y cada peso tiene licencia |
 | Equipo | Preparación según la ruta elegida. Python; PyTorch; pesos de un modelo; memoria suficiente |
-
-Es una biblioteca de modelos y no un agente de código ni una aplicación lista para todo hardware
-
-## Qué puedes hacer con él
-
-Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación.
-
-## Por qué destaca
-
-Usos propuestos: Clasificar un texto localmente; Probar un modelo de visión.
-
-## Cómo funciona
 
 Es una biblioteca de modelos y no un agente de código ni una aplicación lista para todo hardware
 
@@ -95,14 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; PyTorch; pesos de un modelo; memoria suficiente
 - **Etiquetas:** `training` `inference` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [PEFT](peft.md) | 21.9k | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. |
-| [TRL](trl.md) | 19.7k | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. |
-| [PyTorch](pytorch.md) | 106k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
 
 ## Enlaces
 

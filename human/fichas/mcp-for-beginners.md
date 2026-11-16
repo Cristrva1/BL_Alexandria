@@ -29,6 +29,8 @@ Se clona el repo (el README recomienda un clon parcial sin traducciones porque p
 | [MCP Python SDK](mcp-python-sdk.md) | SDK oficial usado en los ejemplos de Python. | Instala `mcp[cli]` para seguir las lecciones de Python. |
 | [FastMCP](fastmcp.md) | Framework popular para practicar servidores Python tras el curso. (combinación por arquitectura) | Rehaz un ejercicio con FastMCP para comparar. |
 | [MCP Inspector](mcp-inspector.md) | Probar los servidores de los ejercicios. (combinación por arquitectura) | Lanza el Inspector contra cada servidor que construyas. |
+| [AI Agents for Beginners](ai-agents-for-beginners.md) | Combinación recíproca: AI Agents for Beginners lo enlaza como «Profundizar en MCP, que el curso trata en la lección de protocolos agénticos (enlazado en el README)». | Orden indicado desde AI Agents for Beginners: Tómalo después de la lección 11. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | Combinación recíproca: Generative AI for Beginners lo enlaza como «Curso complementario sobre Model Context Protocol (enlazado en el README)». | Orden indicado desde Generative AI for Beginners: Tómalo cuando llegues a la parte de herramientas y agentes. |
 
 **Notas:** Sin alternativas declaradas.
 

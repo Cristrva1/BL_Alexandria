@@ -27,7 +27,7 @@ Es un monorepo gestionado con Lerna: el constructor es una aplicación Svelte, e
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [supabase](supabase.md) | Budibase documenta la conexión a PostgreSQL; Supabase aporta ese PostgreSQL gestionado como fuente de datos (combinación por arquitectura). | Supabase primero; conecta Budibase con un usuario de permisos limitados. |
-| [n8n](n8n.md) | Las automatizaciones de Budibase pueden llamar a webhooks de n8n para integraciones que Budibase no trae (combinación por arquitectura). | Crea y protege el webhook en n8n antes de configurarlo en Budibase. |
+| [activepieces](activepieces.md) | Las automatizaciones de Budibase pueden llamar a webhooks de Activepieces para integraciones que Budibase no trae (combinación por arquitectura). | Crea y protege el webhook en Activepieces antes de configurarlo en Budibase. |
 | [Ollama](ollama.md) | Usar un modelo local para los agentes si Budibase permite un proveedor compatible con OpenAI en tu edición (combinación por arquitectura) [DATO NO VERIFICADO]. | Ollama primero; configura el proveedor de IA en Budibase si tu versión lo permite. |
 
 **Notas:** Alternativas (elige una): appsmith, tooljet, nocodb. Comprueba qué funciones de IA o administración caen en la licencia de pago.
