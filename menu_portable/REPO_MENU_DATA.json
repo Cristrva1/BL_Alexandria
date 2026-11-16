@@ -47369,7 +47369,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "home-assistant",
+        "n8n",
+        "vaultwarden"
+      ],
       "alt": []
     },
     {
@@ -47484,7 +47488,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Adaptar un CV a una oferta; Preparar preguntas para una entrevista",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "markitdown"
+      ],
       "alt": []
     },
     {
@@ -47595,7 +47603,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "markitdown",
+        "n8n"
+      ],
       "alt": [
         "appflowy"
       ]
@@ -47710,7 +47722,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar un proyecto colaborativo; Construir una wiki de equipo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "coolify",
+        "markitdown"
+      ],
       "alt": [
         "anytype-ts"
       ]
@@ -47824,7 +47840,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar audiolibros propios o autorizados; Gestionar una colección de podcasts",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "coolify",
+        "syncthing",
+        "n8n"
+      ],
       "alt": []
     },
     {
@@ -47935,7 +47955,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vaultwarden",
+        "n8n",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -48172,7 +48196,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar apps preinstaladas de una TV propia; Planificar un launcher sin perder funciones necesarias",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "adguardhome"
+      ],
       "alt": []
     },
     {
@@ -48286,7 +48314,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Controlar una luz de práctica por horario; Visualizar sensores de una vivienda",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "n8n",
+        "adguardhome",
+        "syncthing"
+      ],
       "alt": []
     },
     {
@@ -48511,7 +48544,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "coolify",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -48737,7 +48774,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Alojar documentos de un equipo; Sincronizar archivos y calendarios propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "coolify",
+        "n8n",
+        "home-assistant",
+        "ollama"
+      ],
       "alt": []
     },
     {
@@ -49877,7 +49919,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "adguardhome",
+        "universal-android-debloater-next-generation",
+        "cleanyourtv"
+      ],
       "alt": []
     },
     {
@@ -49988,7 +50034,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir una carpeta personal entre equipos; Mantener una colección de notas sincronizada",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "home-assistant",
+        "coolify",
+        "paperless-ngx",
+        "audiobookshelf"
+      ],
       "alt": []
     },
     {
@@ -50100,7 +50151,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "adguardhome",
+        "cleanyourtv",
+        "optimizerduck"
+      ],
       "alt": []
     },
     {
@@ -50214,7 +50269,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "bitwarden-clients"
+        "bitwarden-clients",
+        "coolify",
+        "adguardhome"
       ],
       "alt": []
     },

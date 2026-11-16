@@ -60,6 +60,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un único dispositivo de prueba y revisa una consulta en el registro DNS
 **Qué comprobar:** Puedes identificar si el dominio se permitió o bloqueó y por qué regla
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `n8n`, `vaultwarden`
 
 ## `ai-job-search`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=personal,skill,python
@@ -89,6 +90,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Evalúa una vacante ficticia y prepara un borrador sin enviar ninguna candidatura
 **Qué comprobar:** Puedes revisar criterios, datos del perfil y texto que necesitaría corrección
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `markitdown`
 
 ## `anytype-ts`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,typescript
@@ -118,6 +120,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea dos objetos de prueba y relaciónalos en una vista sin añadir datos privados
 **Qué comprobar:** Puedes navegar de un objeto al otro y revisar dónde se guardan
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `markitdown`, `n8n`
 **Alternativas (elige una):** `appflowy`
 
 ## `appflowy`
@@ -148,6 +151,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una página y una tabla de proyecto antes de activar funciones de IA
 **Qué comprobar:** Puedes editar y recuperar los datos de la página y la tabla
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `coolify`, `markitdown`
 **Alternativas (elige una):** `anytype-ts`
 
 ## `audiobookshelf`
@@ -178,6 +182,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade una grabación propia, reproduce un minuto y comprueba el progreso guardado
 **Qué comprobar:** Puedes retomar la reproducción desde otro dispositivo autorizado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `syncthing`, `n8n`
 
 ## `bitwarden-clients`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=privacidad,app,typescript
@@ -207,6 +212,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda una credencial ficticia y comprueba que puedes recuperarla y sincronizarla
 **Qué comprobar:** El registro aparece solo en la cuenta y bóveda esperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vaultwarden`, `n8n`, `claude-code`
 
 ## `claude-obsidian`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=notas,skill,python
@@ -267,6 +273,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Empieza por identificar modelo y guardar la lista de paquetes, sin aplicar una lista de otro televisor
 **Qué comprobar:** Puedes reconocer paquetes y preparar una selección revisable para tu modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `adguardhome`
 
 ## `home-assistant`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=domotica,server,python
@@ -296,6 +303,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un dispositivo de prueba y crea una automatización sencilla que puedas desactivar
 **Qué comprobar:** Puedes ver el estado y comprobar el disparador y la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `n8n`, `adguardhome`, `syncthing`
 
 ## `jsoncanvas`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=notas,reference,javascript
@@ -354,6 +362,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda dos enlaces de prueba y comprueba búsqueda y etiquetas antes de activar resúmenes AI
 **Qué comprobar:** Puedes abrir origen, nota y etiquetas de cada marcador
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `coolify`, `claude-code`
 
 ## `kepano-obsidian`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=notas,template,reference
@@ -412,6 +421,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una cuenta de prueba, sube un archivo y comparte un enlace con permisos limitados
 **Qué comprobar:** Puedes abrir el archivo con los permisos configurados
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `n8n`, `home-assistant`, `ollama`
 
 ## `obsidian-clipper`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,typescript
@@ -708,6 +718,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Revisa la descripción de un solo ajuste y cómo revertirlo antes de aplicarlo
 **Qué comprobar:** Puedes explicar qué configuración cambiaría y cómo comprobar su estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `adguardhome`, `universal-android-debloater-next-generation`, `cleanyourtv`
 
 ## `syncthing`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=archivos,app,go
@@ -737,6 +748,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sincroniza una carpeta con un archivo ficticio y observa un cambio desde el segundo equipo
 **Qué comprobar:** Ambos equipos muestran el mismo contenido y estado de sincronización
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `coolify`, `paperless-ngx`, `audiobookshelf`
 
 ## `universal-android-debloater-next-generation`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=personal,app,rust
@@ -766,6 +778,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un dispositivo de prueba y revisa una entrada y su explicación sin aplicar una selección masiva
 **Qué comprobar:** Puedes identificar paquete, función y posibilidad de restauración documentada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `adguardhome`, `cleanyourtv`, `optimizerduck`
 
 ## `vaultwarden`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=privacidad,server,rust
@@ -795,4 +808,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un cliente Bitwarden a una instancia de prueba y guarda un registro ficticio
 **Qué comprobar:** Puedes reconocer la URL de servidor y recuperar el registro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `bitwarden-clients`
+**Combina con:** `bitwarden-clients`, `coolify`, `adguardhome`

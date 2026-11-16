@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Gestor de marcadores autoalojado «guárdalo todo» (antes Hoarder) con etiquetado por IA, de Localhost Labs Ltd. Licencia AGPL-3.0. Es activo y popular (~31k estrellas, v0.35.0).
+
+## ¿Qué hace?
+
+Guarda enlaces, notas, imágenes y PDF, obtiene título, descripción e imagen de los enlaces y archiva páginas completas. Usa LLM para etiquetar y resumir automáticamente, también con modelos locales vía Ollama, y hace OCR de imágenes. Ofrece búsqueda de texto completo, listas, reglas, importadores (Chrome, Pocket, Linkwarden, Omnivore), sincronización con marcadores del navegador vía floccus, extensiones de Chrome y Firefox y apps de iOS y Android.
+
+## ¿Cómo lo hace?
+
+Es una app TypeScript (Next.js) desplegada con Docker Compose, que incluye Meilisearch para la búsqueda y un Chrome sin interfaz para capturar páginas. La IA se configura con variables de entorno (clave de OpenAI o URL de Ollama). Tiene API REST, CLI y skills para agentes de programación documentadas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Etiquetado y resúmenes con modelos locales, soportado de forma nativa. | Levanta Ollama, descarga un modelo y define las variables de Ollama en Karakeep. |
+| [coolify](coolify.md) | Desplegar Karakeep con sus servicios auxiliares como servicio de un clic (Coolify documenta el servicio Karakeep). | Instala Coolify y añade el servicio Karakeep. |
+| [Claude Code](claude-code.md) | Consultar y organizar marcadores desde un agente con las skills y la CLI documentadas de Karakeep. | Instala la CLI, crea una clave de API e instala la skill en el agente. |
+
+**Notas:** Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.35.0 (2026-11-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/karakeep-app/karakeep/blob/main/README.md) · [2](https://docs.karakeep.com/installation/docker) · [3](https://docs.karakeep.com/configuration) · [4](https://docs.karakeep.com/integrations/agentic-skills) · [5](https://docs.karakeep.com/integrations/command-line) · [6](https://coolify.io/docs/services/karakeep)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Antes Hoarder; el modo de lectura offline no significa que un proveedor AI remoto procese localmente los artículos |
 | Coste | El coste depende del proveedor o la ruta. El guardado básico no necesita IA; Ollama local, proveedores remotos y Cloud tienen recursos o planes distintos |
 | Equipo | Preparación según la ruta elegida. Docker; volumen persistente; modelo solo para etiquetado AI |
-
-Antes Hoarder; el modo de lectura offline no significa que un proveedor AI remoto procese localmente los artículos
-
-## Qué puedes hacer con él
-
-Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local.
-
-## Cómo funciona
 
 Antes Hoarder; el modo de lectura offline no significa que un proveedor AI remoto procese localmente los artículos
 

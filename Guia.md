@@ -3358,6 +3358,7 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/anyproto/anytype-ts/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [markitdown](human/fichas/markitdown.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/anytype-ts.md) · [GitHub](https://github.com/anyproto/anytype-ts)
 
 #### 🖥️ AppFlowy
@@ -3366,6 +3367,7 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.appflowy.io/docs/appflowy/install-appflowy/installation-methods); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar un proyecto colaborativo; Construir una wiki de equipo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/appflowy.md) · [GitHub](https://github.com/AppFlowy-IO/AppFlowy)
 
 #### 🎨 obsidian-skills
@@ -3384,6 +3386,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.karakeep.com/Installation/docker); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/karakeep.md) · [GitHub](https://github.com/karakeep-app/karakeep)
 
 #### 🖥️ Obsidian: distribución y extensiones
@@ -3476,6 +3479,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/syncthing/syncthing/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir una carpeta personal entre equipos; Mantener una colección de notas sincronizada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [coolify](human/fichas/coolify.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [audiobookshelf](human/fichas/audiobookshelf.md)<br>
 **Más:** [ficha completa](human/fichas/syncthing.md) · [GitHub](https://github.com/syncthing/syncthing)
 
 #### 🏠 server
@@ -3484,6 +3488,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://nextcloud.com/install/#instructions-server); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Alojar documentos de un equipo; Sincronizar archivos y calendarios propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [n8n](human/fichas/n8n.md) · [Home Assistant](human/fichas/home-assistant.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/nextcloud-server.md) · [GitHub](https://github.com/nextcloud/server)
 
 ### Credenciales y privacidad
@@ -3494,7 +3499,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/dani-garcia/vaultwarden/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Bitwarden Clients](human/fichas/bitwarden-clients.md)<br>
+**Combina con:** [Bitwarden Clients](human/fichas/bitwarden-clients.md) · [coolify](human/fichas/coolify.md) · [AdGuardHome](human/fichas/adguardhome.md)<br>
 **Más:** [ficha completa](human/fichas/vaultwarden.md) · [GitHub](https://github.com/dani-garcia/vaultwarden)
 
 #### ⚙️ AdGuardHome
@@ -3503,6 +3508,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [n8n](human/fichas/n8n.md) · [vaultwarden](human/fichas/vaultwarden.md)<br>
 **Más:** [ficha completa](human/fichas/adguardhome.md) · [GitHub](https://github.com/AdguardTeam/AdGuardHome)
 
 #### 🖥️ Bitwarden Clients
@@ -3511,6 +3517,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://bitwarden.com/download/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [vaultwarden](human/fichas/vaultwarden.md) · [n8n](human/fichas/n8n.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/bitwarden-clients.md) · [GitHub](https://github.com/bitwarden/clients)
 
 ### Libros, podcasts y bibliotecas personales
@@ -3521,6 +3528,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://audiobookshelf.org/docs/category/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar audiolibros propios o autorizados; Gestionar una colección de podcasts — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [syncthing](human/fichas/syncthing.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/audiobookshelf.md) · [GitHub](https://github.com/advplyr/audiobookshelf)
 
 ### Automatización del hogar
@@ -3531,6 +3539,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://www.home-assistant.io/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Controlar una luz de práctica por horario; Visualizar sensores de una vivienda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [n8n](human/fichas/n8n.md) · [AdGuardHome](human/fichas/adguardhome.md) · [syncthing](human/fichas/syncthing.md)<br>
 **Más:** [ficha completa](human/fichas/home-assistant.md) · [GitHub](https://github.com/home-assistant/core)
 
 ### Herramientas y organización personal
@@ -3541,6 +3550,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/ai-job-search-dev/ai-job-search/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Adaptar un CV a una oferta; Preparar preguntas para una entrevista — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/ai-job-search.md) · [GitHub](https://github.com/ai-job-search-dev/ai-job-search)
 
 #### 🖥️ cleanyourtv
@@ -3549,6 +3559,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/Gathin23/cleanyourtv/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar apps preinstaladas de una TV propia; Planificar un launcher sin perder funciones necesarias — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [AdGuardHome](human/fichas/adguardhome.md)<br>
 **Más:** [ficha completa](human/fichas/cleanyourtv.md) · [GitHub](https://github.com/Gathin23/cleanyourtv)
 
 #### 🖥️ optimizerDuck
@@ -3557,6 +3568,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://optimizerduck.vercel.app/docs/guides/getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [AdGuardHome](human/fichas/adguardhome.md) · [universal-android-debloater-next-generation](human/fichas/universal-android-debloater-next-generation.md) · [cleanyourtv](human/fichas/cleanyourtv.md)<br>
 **Más:** [ficha completa](human/fichas/optimizerduck.md) · [GitHub](https://github.com/itsfatduck/optimizerDuck)
 
 #### 🖥️ universal-android-debloater-next-generation
@@ -3565,6 +3577,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/wiki/Getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [AdGuardHome](human/fichas/adguardhome.md) · [cleanyourtv](human/fichas/cleanyourtv.md) · [optimizerDuck](human/fichas/optimizerduck.md)<br>
 **Más:** [ficha completa](human/fichas/universal-android-debloater-next-generation.md) · [GitHub](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation)
 
 #### 📂 40-questions

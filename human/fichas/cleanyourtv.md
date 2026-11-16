@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Kit para quitar bloatware y anuncios de televisores Android TV y Google TV con ayuda de un agente de programación, creado por @Gathin23. El repo incluye un archivo LICENSE MIT, aunque GitHub muestra NOASSERTION. Ha tenido un crecimiento enorme y rápido (~58k estrellas, v3.5.0); el README enlaza patrocinios (0G Private Computer).
+
+## ¿Qué hace?
+
+Desactiva telemetría del fabricante, servicios de anuncios, filas de contenido y apps preinstaladas con `pm disable-user`, sin desinstalar nada ni requerir root. Instala un lanzador nativo ligero como pantalla de inicio y deja un script de restauración de una línea. Dice cubrir 481 modelos de 131 marcas [DATO NO VERIFICADO]; para Samsung, LG, Roku, Vizio o VIDAA ofrece solo guías, porque no puede ejecutarse allí.
+
+## ¿Cómo lo hace?
+
+Se activa la depuración (USB o red) en el televisor y un agente (Claude Code, Codex, Gemini CLI, entre otros) sigue las instrucciones del repo, ejecuta ADB y compila el lanzador con build-tools de Android. También existe un procedimiento manual con los mismos comandos y apps comunitarias para móvil y escritorio. Desactivar paquetes del sistema puede romper funciones; revisa la lista antes de aplicarla.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente que ejecuta el procedimiento, citado en el README como compatible. | Instala el agente y las herramientas de Android (ADB, build-tools) y abre el repo con él. |
+| [Codex CLI](codex.md) | Alternativa de agente citada en el README. | Instala Codex CLI y sigue el inicio rápido del repo. |
+| [AdGuardHome](adguardhome.md) | Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura) | Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor. |
+
+**Notas:** Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (MIT). Da acceso ADB al agente solo mientras dure la tarea.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.5.0 (2026-11-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Gathin23/cleanyourtv/blob/main/README.md) · [2](https://cleanyour.tv)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La ruta Antigravity documentada es CLI; quitar paquetes depende del modelo y puede afectar funciones; la revisión de paquetes precede a cualquier cambio |
 | Coste | El coste depende del proveedor o la ruta. Los scripts no requieren LLM; un agente que te asista tiene sus propios límites; hardware y herramientas son independientes |
 | Equipo | Preparación según la ruta elegida. TV propia Android/Google TV; misma red; ADB autorizado; Python; JDK 17–22 y Android SDK para launcher |
-
-La ruta Antigravity documentada es CLI; quitar paquetes depende del modelo y puede afectar funciones; la revisión de paquetes precede a cualquier cambio
-
-## Qué puedes hacer con él
-
-Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB.
-
-## Por qué destaca
-
-Usos propuestos: Revisar apps preinstaladas de una TV propia; Planificar un launcher sin perder funciones necesarias.
-
-## Cómo funciona
 
 La ruta Antigravity documentada es CLI; quitar paquetes depende del modelo y puede afectar funciones; la revisión de paquetes precede a cualquier cambio
 

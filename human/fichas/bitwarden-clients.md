@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Monorepo de los clientes oficiales de Bitwarden: web vault, extensión de navegador, escritorio y CLI. Lo mantiene Bitwarden, Inc. Es muy maduro (~14k estrellas, desktop-v2026.10.4). GitHub muestra licencia NOASSERTION porque el repo combina GPL-3.0 (por defecto) con la Bitwarden License v1.0 para el código del directorio `bitwarden_license/`.
+
+## ¿Qué hace?
+
+Reúne todas las aplicaciones cliente de Bitwarden salvo las móviles, que viven en `bitwarden/ios` y `bitwarden/android`. Permite guardar, autocompletar y compartir contraseñas, notas, tarjetas, identidades y passkeys con cifrado de extremo a extremo. La CLI (`bw`) da acceso al vault desde scripts.
+
+## ¿Cómo lo hace?
+
+Es TypeScript con Angular para la web y la extensión, y Electron para el escritorio. Los usuarios instalan las versiones publicadas (tiendas de extensiones, instaladores, `npm install -g @bitwarden/cli`), no este repo. Para desarrollar se necesita Node.js y npm, y la documentación de contribución de Bitwarden. Los clientes funcionan contra Bitwarden Cloud, contra un servidor Bitwarden autoalojado o contra servidores compatibles como Vaultwarden.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vaultwarden](vaultwarden.md) | Usar los clientes oficiales con un servidor autoalojado ligero; Vaultwarden se declara compatible con los clientes oficiales. | Despliega Vaultwarden con HTTPS y, en el cliente, cambia la URL del servidor a la tuya. |
+| [n8n](n8n.md) | Gestionar colecciones, grupos y miembros de una organización Bitwarden con el nodo oficial de n8n (usa la API de organizaciones, no da acceso a los elementos del vault). | Crea la clave de API de la organización y configura la credencial en n8n. |
+| [Claude Code](claude-code.md) | Inyectar secretos en scripts con la CLI `bw` en lugar de escribirlos en archivos. (combinación por arquitectura) (no des al agente la sesión desbloqueada del vault completo) | Instala `@bitwarden/cli` y usa una cuenta o colección limitada para la automatización. |
+
+**Notas:** Sin alternativas declaradas. Revisa la licencia antes de reutilizar código de `bitwarden_license/`.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada desktop-v2026.10.4 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bitwarden/clients/blob/main/README.md) · [2](https://github.com/bitwarden/clients/blob/main/LICENSE.txt) · [3](https://bitwarden.com/help/self-host-an-organization/) · [4](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitwarden/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Este repositorio contiene clientes y no todo el servidor; las apps móviles viven en repositorios separados |
 | Coste | El coste depende del proveedor o la ruta. No usa LLM; planes y funciones de servidor tienen condiciones comerciales propias |
 | Equipo | Preparación según la ruta elegida. Cliente oficial de tu sistema; cuenta y servidor elegido; bóveda de prueba |
-
-Este repositorio contiene clientes y no todo el servidor; las apps móviles viven en repositorios separados
-
-## Qué puedes hacer con él
-
-Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send.
-
-## Por qué destaca
-
-Usos propuestos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio.
-
-## Cómo funciona
 
 Este repositorio contiene clientes y no todo el servidor; las apps móviles viven en repositorios separados
 

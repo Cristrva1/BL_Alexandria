@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Servidor DNS de bloqueo de anuncios y rastreadores para toda la red, de AdGuard. Licencia GPL-3.0. Es muy maduro (~38k estrellas, v0.107.80) y sigue en la serie 0.107 desde hace años.
+
+## ¿Qué hace?
+
+Actúa como servidor DNS de la red y bloquea dominios de anuncios, rastreo y malware para todos los dispositivos sin instalar nada en ellos. Admite listas de bloqueo, reglas propias, control parental, búsqueda segura y estadísticas por cliente. Ofrece DNS cifrado (DNS-over-HTTPS, DNS-over-TLS, DNSCrypt), reescrituras DNS locales y servidor DHCP opcional.
+
+## ¿Cómo lo hace?
+
+Es un binario único en Go con interfaz web (TypeScript). Se instala con el script oficial, con Docker (`adguard/adguardhome`), con Snap o descargando el binario; después un asistente web configura los puertos. Requiere que los dispositivos o el router usen su IP como DNS, y expone una API HTTP documentada en OpenAPI.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Home Assistant](home-assistant.md) | Ver estadísticas y activar o desactivar filtros desde Home Assistant con la integración oficial de AdGuard Home. | Instala AdGuard Home y añade la integración con su URL y credenciales. |
+| [n8n](n8n.md) | Automatizar tareas (pausar el filtrado, añadir reglas) llamando a la API HTTP de AdGuard Home. (combinación por arquitectura) | Crea un usuario de AdGuard Home y usa el nodo HTTP Request de n8n contra su API. |
+| [vaultwarden](vaultwarden.md) | Dar un nombre local (p. ej. `vault.casa`) a los servicios autoalojados con las reescrituras DNS de AdGuard Home. (combinación por arquitectura) | Configura la reescritura DNS hacia el proxy inverso que publica Vaultwarden con HTTPS. |
+
+**Notas:** Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.107.80 (2026-11-03) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md) · [2](https://adguard-dns.io/kb/adguard-home/getting-started/) · [3](https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started) · [4](https://github.com/AdguardTeam/AdGuardHome/tree/master/openapi) · [5](https://www.home-assistant.io/integrations/adguard/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El filtrado DNS no bloquea todo anuncio ni sustituye otras protecciones; no cambies toda la red para la primera prueba |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; servidor, DNS externos y recursos de red tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Equipo servidor; acceso de configuración DNS; cliente de prueba |
-
-El filtrado DNS no bloquea todo anuncio ni sustituye otras protecciones; no cambies toda la red para la primera prueba
-
-## Qué puedes hacer con él
-
-Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central.
-
-## Por qué destaca
-
-Usos propuestos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS.
-
-## Cómo funciona
 
 El filtrado DNS no bloquea todo anuncio ni sustituye otras protecciones; no cambies toda la red para la primera prueba
 

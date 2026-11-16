@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Servidor autoalojado de audiolibros y podcasts, creado por @advplyr. Licencia GPL-3.0. Es maduro y activo (~15k estrellas, v2.37.2), pero el README avisa que no se revisan PR del frontend en Vue porque se está reescribiendo en React.
+
+## ¿Qué hace?
+
+Transmite cualquier formato de audio, guarda el progreso por usuario y lo sincroniza entre dispositivos. Busca y descarga podcasts con descarga automática, obtiene metadatos y portadas, y admite subida masiva, varios usuarios con permisos y copias de seguridad diarias. Tiene PWA, soporte de Chromecast y apps para Android e iOS (en beta) en un repositorio aparte.
+
+## ¿Cómo lo hace?
+
+Es una aplicación Node.js con frontend en Vue (en migración a React). Se instala sobre todo con Docker o Docker Compose; la documentación oficial describe otros métodos. Si va detrás de un proxy inverso, este debe permitir WebSockets, que el README marca como obligatorios. Tiene una API REST documentada.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [coolify](coolify.md) | Desplegar Audiobookshelf como servicio de un clic (Coolify documenta el servicio Audiobookshelf). | Instala Coolify y añade el servicio Audiobookshelf desde su catálogo. |
+| [syncthing](syncthing.md) | Llevar audiolibros desde otros equipos a la carpeta de la biblioteca; Audiobookshelf detecta los cambios sin reescanear. (combinación por arquitectura) | Comparte en Syncthing la carpeta que usa la biblioteca de Audiobookshelf. |
+| [n8n](n8n.md) | Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura) | Crea un token de API en Audiobookshelf y úsalo en un nodo HTTP Request de n8n. |
+
+**Notas:** Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.37.2 (2026-10-23) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/advplyr/audiobookshelf/blob/master/readme.md) · [2](https://www.audiobookshelf.org/docs) · [3](https://api.audiobookshelf.org/) · [4](https://coolify.io/docs/services/audiobookshelf)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los comandos Docker y VS Code del README son para desarrollo; para usar el servidor sigue la guía de instalación |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelo; almacenamiento, servidor y acceso a contenidos pueden costar |
 | Equipo | Preparación según la ruta elegida. Servidor o Docker; carpetas de audio; volumen persistente; WebSocket si usas proxy |
-
-Los comandos Docker y VS Code del README son para desarrollo; para usar el servidor sigue la guía de instalación
-
-## Qué puedes hacer con él
-
-Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción.
-
-## Por qué destaca
-
-Usos propuestos: Organizar audiolibros propios o autorizados; Gestionar una colección de podcasts.
-
-## Cómo funciona
 
 Los comandos Docker y VS Code del README son para desarrollo; para usar el servidor sigue la guía de instalación
 
