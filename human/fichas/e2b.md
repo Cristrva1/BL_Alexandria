@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+E2B, infraestructura open source para ejecutar código generado por IA en sandboxes aislados en la nube. Licencia Apache-2.0. Es maduro y activo (~15k estrellas).
+
+## ¿Qué hace?
+
+Crea sandboxes desde el SDK, ejecuta comandos y código (Code Interpreter) y ofrece escritorios virtuales para agentes de uso de ordenador (`e2b-desktop`).
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i e2b` o `pip install e2b` y requiere `E2B_API_KEY` del servicio alojado. La infraestructura se puede autoalojar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [smolagents](smolagents.md) | Ejecutor remoto E2B soportado. | Configura el ejecutor E2B en el agente. |
+| [Open SWE](open-swe.md) | Proveedor de sandbox posible. (combinación por arquitectura) | Configúralo como sandbox si tu despliegue lo admite. |
+| [Gemini Computer Use (preview)](computer-use-preview.md) | Escritorio aislado para agentes de uso de ordenador. (combinación por arquitectura) | Ejecuta el navegador en `e2b-desktop`. |
+
+**Notas:** Alternativas (elige una): sandbox.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada @e2b/cli@2.24.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/e2b-dev/E2B/blob/main/README.md) · [2](https://e2b.dev/docs/code-interpreting)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA |
 | Coste | Consumo de APIs o servicios. No necesita API de IA para crear el entorno pero sí clave del servicio E2B; cómputo y tiempo del sandbox se facturan según plan |
 | Equipo | Preparación según la ruta elegida. Node o Python; cuenta E2B y clave; presupuesto de sandbox |
-
-Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA
-
-## Qué puedes hacer con él
-
-Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas.
-
-## Por qué destaca
-
-Usos propuestos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente.
-
-## Cómo funciona
 
 Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node o Python; cuenta E2B y clave; presupuesto de sandbox
 - **Etiquetas:** `agents` `security` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [smolagents](smolagents.md) | 30.4k | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. |
-| [Open SWE](open-swe.md) | 11.2k | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
 
 ## Alternativas (elige una)
 

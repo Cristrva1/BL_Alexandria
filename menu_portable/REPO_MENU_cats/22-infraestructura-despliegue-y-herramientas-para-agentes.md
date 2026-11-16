@@ -63,7 +63,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee las rutas threads y runs y dibuja cómo una aplicación inicia y consulta una ejecución
 **Qué comprobar:** Puedes distinguir estado del hilo y ejecución del agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`
+**Combina con:** `langgraph`, `langgraphjs`, `deepagents`
 
 ## `casaos`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,go
@@ -180,7 +180,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Busca una herramienta de consulta y revisa sus permisos antes de enlazar una cuenta
 **Qué comprobar:** Puedes identificar acción, aplicación y alcance de autorización
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `openai-agents-python`, `mastra`
+**Combina con:** `openai-agents-python`, `langgraph`, `mastra`, `claude-code`
 
 ## `computer-use-preview`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=google · tags=browser,agents,python
@@ -215,7 +215,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa una página de prueba y solicita localizar un elemento sin cuentas personales ni acciones reales
 **Qué comprobar:** Puedes comparar la captura y la acción propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`
+**Combina con:** `playwright`, `sandbox`, `e2b`
 **Alternativas (elige una):** `browser-use`, `skyvern`
 
 ## `coolify`
@@ -275,7 +275,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un sandbox de prueba, ejecuta una operación de texto inocua y ciérralo
 **Qué comprobar:** Puedes revisar resultado y ciclo de vida del sandbox
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `smolagents`, `open-swe`
+**Combina con:** `smolagents`, `open-swe`, `computer-use-preview`
 **Alternativas (elige una):** `sandbox`
 
 ## `free-for-dev`
@@ -393,7 +393,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lee los requisitos y prueba la política con una tarea de consulta en un entorno descartable
 **Qué comprobar:** Puedes identificar los permisos de archivos, red e inferencia configurados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openclaw`, `hermes-agent`, `nemotron`
+**Combina con:** `openclaw`, `hermes-agent`, `deepagents`, `nemotron`
 **Alternativas (elige una):** `sandbox`
 
 ## `nodeterm`
@@ -458,7 +458,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca el contenedor limitado a loopback y consulta el contexto o una captura antes de ejecutar comandos
 **Qué comprobar:** Puedes acceder al entorno autenticado y reconocer navegador, terminal y archivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openhands`, `ecc`
+**Combina con:** `openhands`, `browser-use`, `deer-flow`
 **Alternativas (elige una):** `nemoclaw`, `e2b`
 
 ## `shepherd`

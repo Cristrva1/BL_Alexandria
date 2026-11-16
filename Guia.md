@@ -4770,6 +4770,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.paperclip.ing/reference/cli/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenClaw](human/fichas/openclaw.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
 **Más:** [ficha completa](human/fichas/paperclip.md) · [GitHub](https://github.com/paperclipai/paperclip)
 
 #### 🐝 ruflo
@@ -4812,6 +4813,7 @@ npm ci
 cp .env.example .env
 npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [Composio](human/fichas/composio.md) · [servers](human/fichas/servers.md)<br>
 **Más:** [ficha completa](human/fichas/opendots.md) · [GitHub](https://github.com/CopilotKit/OpenDots)
 
 #### 🦾 Mercury Agent
@@ -4831,7 +4833,7 @@ npm run dev` (comprobar los pasos completos en la ficha).<br>
 
 yarn install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph.js](human/fichas/langgraphjs.md)<br>
+**Combina con:** [LangGraph.js](human/fichas/langgraphjs.md) · [firecrawl](human/fichas/firecrawl.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/social-media-agent.md) · [GitHub](https://github.com/langchain-ai/social-media-agent)
 
 #### 🖥️ hello-halo
@@ -4840,6 +4842,7 @@ yarn install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/openkursar/hello-halo/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Anthropic Skills](human/fichas/anthropic-skills.md) · [Context7](human/fichas/context7.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/hello-halo.md) · [GitHub](https://github.com/openkursar/hello-halo)
 
 #### 🖥️ agentes-chat
@@ -4848,6 +4851,7 @@ yarn install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/agentes-chat/agentes-chat/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar un espacio de colaboración con agentes; Organizar consultas en canales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md)<br>
 **Más:** [ficha completa](human/fichas/agentes-chat.md) · [GitHub](https://github.com/agentes-chat/agentes-chat)
 
 #### 🖥️ fugu
@@ -4856,6 +4860,7 @@ yarn install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
 **Arranque:** [Instrucciones originales](https://github.com/SakanaAI/fugu/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un sistema multiagente como proveedor; Comparar un flujo de código con Fugu — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Codex CLI](human/fichas/codex.md) · [Claude Code](human/fichas/claude-code.md) · [T3 Code](human/fichas/t3code.md)<br>
 **Más:** [ficha completa](human/fichas/fugu.md) · [GitHub](https://github.com/SakanaAI/fugu)
 
 ### Agentes de research autónomo
@@ -4901,7 +4906,7 @@ conda create -n storm python=3.11
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/assafelovic/gpt-researcher/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [firecrawl](human/fichas/firecrawl.md) · [browser-use](human/fichas/browser-use.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [firecrawl](human/fichas/firecrawl.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/gpt-researcher.md) · [GitHub](https://github.com/assafelovic/gpt-researcher)
 
 #### 🕸️ local-deep-research
@@ -4910,6 +4915,7 @@ conda create -n storm python=3.11
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/LearningCircuit/local-deep-research/blob/main/docs/installation.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [SearXNG](human/fichas/searxng.md) · [llama.cpp](human/fichas/llama-cpp.md)<br>
 **Más:** [ficha completa](human/fichas/local-deep-research.md) · [GitHub](https://github.com/LearningCircuit/local-deep-research)
 
 ---
@@ -4934,7 +4940,7 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo de APIs o servicios<br>
 **Arranque:** [Instrucciones originales](https://github.com/ComposioHQ/composio/blob/next/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md) · [OpenAI Agents SDK](human/fichas/openai-agents-python.md) · [Mastra](human/fichas/mastra.md)<br>
+**Combina con:** [OpenAI Agents SDK](human/fichas/openai-agents-python.md) · [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/composio.md) · [GitHub](https://github.com/ComposioHQ/composio)
 
 #### 🛠️ E2B ⭐
@@ -4943,7 +4949,7 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo de APIs o servicios<br>
 **Comando documentado:** `npm i e2b` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [smolagents](human/fichas/smolagents.md) · [Open SWE](human/fichas/open-swe.md)<br>
+**Combina con:** [smolagents](human/fichas/smolagents.md) · [Open SWE](human/fichas/open-swe.md) · [Gemini Computer Use (preview)](human/fichas/computer-use-preview.md)<br>
 **Más:** [ficha completa](human/fichas/e2b.md) · [GitHub](https://github.com/e2b-dev/E2B)
 
 #### 🖥️ claude-task-master
@@ -4971,7 +4977,7 @@ agent-desktop permissions --guide   # macOS: walks you through the Accessibility
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OpenClaw](human/fichas/openclaw.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Nemotron (NVIDIA)](human/fichas/nemotron.md)<br>
+**Combina con:** [OpenClaw](human/fichas/openclaw.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Deep Agents](human/fichas/deepagents.md) · [Nemotron (NVIDIA)](human/fichas/nemotron.md)<br>
 **Más:** [ficha completa](human/fichas/nemoclaw.md) · [GitHub](https://github.com/NVIDIA/NemoClaw)
 
 #### 🕸️ codex-chatgpt-web
@@ -4993,7 +4999,7 @@ docker run --security-opt seccomp=unconfined --rm -it \
   -e SANDBOX_API_KEY=your-secret-key \
   -p 127.0.0.1:8080:8080 ghcr.io/agent-infra/sandbox:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar herramientas de un agente en un contenedor; Consultar una interfaz de navegador aislada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OpenHands](human/fichas/openhands.md) · [ECC](human/fichas/ecc.md)<br>
+**Combina con:** [OpenHands](human/fichas/openhands.md) · [browser-use](human/fichas/browser-use.md) · [deer-flow](human/fichas/deer-flow.md)<br>
 **Más:** [ficha completa](human/fichas/sandbox.md) · [GitHub](https://github.com/agent-infra/sandbox)
 
 #### 🛠️ Gemini Computer Use (preview)
@@ -5007,7 +5013,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [playwright](human/fichas/playwright.md)<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [sandbox](human/fichas/sandbox.md) · [E2B](human/fichas/e2b.md)<br>
 **Más:** [ficha completa](human/fichas/computer-use-preview.md) · [GitHub](https://github.com/google-gemini/computer-use-preview)
 
 #### 📚 shepherd
@@ -5032,7 +5038,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/langchain-ai/agent-protocol/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una API de agentes; Comparar protocolos antes de implementar — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [LangGraph.js](human/fichas/langgraphjs.md) · [Deep Agents](human/fichas/deepagents.md)<br>
 **Más:** [ficha completa](human/fichas/agent-protocol.md) · [GitHub](https://github.com/langchain-ai/agent-protocol)
 
 ### Dominios y recursos de infraestructura

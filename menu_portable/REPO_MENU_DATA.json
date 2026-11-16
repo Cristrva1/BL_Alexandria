@@ -62185,7 +62185,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Evaluar un espacio de colaboración con agentes; Organizar consultas en canales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "github-mcp-server"
+      ],
       "alt": []
     },
     {
@@ -62668,7 +62672,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un sistema multiagente como proveedor; Comparar un flujo de código con Fugu",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "codex",
+        "claude-code",
+        "t3code"
+      ],
       "alt": []
     },
     {
@@ -62788,8 +62796,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
         "firecrawl",
-        "browser-use"
+        "ollama"
       ],
       "alt": [
         "storm",
@@ -62908,7 +62917,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "anthropic-skills",
+        "context7",
+        "playwright-mcp"
+      ],
       "alt": []
     },
     {
@@ -63153,7 +63166,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "searxng",
+        "llama-cpp"
+      ],
       "alt": []
     },
     {
@@ -63635,7 +63652,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "copilotkit",
+        "composio",
+        "servers"
+      ],
       "alt": []
     },
     {
@@ -63756,7 +63777,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openclaw",
+        "claude-code",
+        "codex",
+        "hermes-agent"
+      ],
       "alt": []
     },
     {
@@ -63992,7 +64018,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langgraphjs"
+        "langgraphjs",
+        "firecrawl",
+        "supabase"
       ],
       "alt": []
     },
@@ -64347,7 +64375,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una API de agentes; Comparar protocolos antes de implementar",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langgraph"
+        "langgraph",
+        "langgraphjs",
+        "deepagents"
       ],
       "alt": []
     },
@@ -64813,9 +64843,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langgraph",
         "openai-agents-python",
-        "mastra"
+        "langgraph",
+        "mastra",
+        "claude-code"
       ],
       "alt": []
     },
@@ -64933,7 +64964,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "playwright"
+        "playwright",
+        "sandbox",
+        "e2b"
       ],
       "alt": [
         "browser-use",
@@ -65163,7 +65196,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "smolagents",
-        "open-swe"
+        "open-swe",
+        "computer-use-preview"
       ],
       "alt": [
         "sandbox"
@@ -65626,6 +65660,7 @@
       "combines_with": [
         "openclaw",
         "hermes-agent",
+        "deepagents",
         "nemotron"
       ],
       "alt": [
@@ -65870,7 +65905,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "openhands",
-        "ecc"
+        "browser-use",
+        "deer-flow"
       ],
       "alt": [
         "nemoclaw",

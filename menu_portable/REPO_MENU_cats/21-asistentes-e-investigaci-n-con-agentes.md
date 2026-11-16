@@ -31,6 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un canal de prueba y pide al agente una respuesta sin conectar acciones externas
 **Qué comprobar:** Puedes revisar conversación, herramientas permitidas y aprobaciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `github-mcp-server`
 
 ## `autoresearch`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=research,agents,python
@@ -157,6 +158,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue la configuración manual para tu sistema y consulta un archivo breve antes de permitir cambios
 **Qué comprobar:** Puedes identificar Fugu como proveedor y revisar la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `codex`, `claude-code`, `t3code`
 
 ## `gpt-researcher`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,research,python,docker
@@ -186,7 +188,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Haz una pregunta acotada y verifica dos fuentes antes de reutilizar el informe
 **Qué comprobar:** Puedes recuperar contexto y enlaces que respaldan conclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `firecrawl`, `browser-use`
+**Combina con:** `claude-code`, `firecrawl`, `ollama`
 **Alternativas (elige una):** `storm`, `vane`
 
 ## `hello-halo`
@@ -217,6 +219,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un espacio con un archivo de ejemplo y solicita una explicación antes de activar control del navegador
 **Qué comprobar:** Puedes revisar el motor y los cambios propuestos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `anthropic-skills`, `context7`, `playwright-mcp`
 
 ## `hermes-agent`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=agents,python
@@ -277,6 +280,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Investiga una pregunta pequeña con Ollama y SearXNG y abre las fuentes citadas
 **Qué comprobar:** Puedes identificar buscador, modelo y evidencia utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `searxng`, `llama-cpp`
 
 ## `mercury-agent`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,chatbot,typescript
@@ -402,6 +406,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un Dot de prueba y haz una pregunta sin conceder herramientas de escritura
 **Qué comprobar:** Puedes comprobar la respuesta y el panel de conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `copilotkit`, `composio`, `servers`
 
 ## `paperclip`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance
@@ -431,6 +436,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una tarea de explicación para un agente y revisa historial y presupuesto antes de activar heartbeats
 **Qué comprobar:** Puedes atribuir una ejecución a su tarea, agente y coste registrado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openclaw`, `claude-code`, `codex`, `hermes-agent`
 
 ## `ruflo`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=automation,agents,typescript
@@ -492,7 +498,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera un borrador desde un enlace propio y recházalo o edítalo sin publicarlo
 **Qué comprobar:** Puedes revisar texto y aprobación antes de cualquier publicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraphjs`
+**Combina con:** `langgraphjs`, `firecrawl`, `supabase`
 
 ## `storm`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=research,agents,python

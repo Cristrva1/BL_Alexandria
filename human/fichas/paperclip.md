@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Paperclip, servidor Node.js con interfaz React para orquestar equipos de agentes de IA como si fueran una empresa. Licencia MIT. Creado en marzo de 2026, ya tiene ~114k estrellas; hay lista de espera para un servicio cloud.
+
+## ¿Qué hace?
+
+Defines objetivos de negocio, «contratas» agentes con roles (CEO, CTO…), apruebas la estrategia y fijas presupuestos. Incluye organigramas, gobernanza, seguimiento de tokens y costes por agente o proyecto, y conectores (GitHub, Notion, Railway, MCP).
+
+## ¿Cómo lo hace?
+
+Se inicia con `npx paperclipai@latest onboard --yes` o se prueba con `npx paperclipai test-drive` y una clave de proveedor. Funciona con OpenClaw, Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes y otros.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenClaw](openclaw.md) | Harness soportado. | Registra OpenClaw como agente. |
+| [Claude Code](claude-code.md) | Harness soportado. | Instala Claude Code y asígnalo. |
+| [Codex CLI](codex.md) | Harness soportado (`--harness codex`). | Instala Codex y asígnalo. |
+| [hermes-agent](hermes-agent.md) | Harness soportado. | Registra Hermes vía su gateway. |
+
+**Notas:** Sin alternativas declaradas; se solapa con multica (solo anotado). Conviene vigilar el gasto con presupuestos.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2026.1106.0 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/paperclipai/paperclip/blob/master/README.md) · [2](https://docs.paperclip.ing/connectors/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas |
 | Coste | El coste depende del proveedor o la ruta. Usa modelos y agentes propios; servidor, proveedores y servicios conectados tienen costes independientes |
 | Equipo | Preparación según la ruta elegida. Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba |
-
-El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas
-
-## Qué puedes hacer con él
-
-Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.
-
-## Por qué destaca
-
-Usos propuestos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla.
-
-## Cómo funciona
 
 El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas
 

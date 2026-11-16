@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Sakana Fugu, sistema multiagente comercial de Sakana AI que se consume como un único modelo. El repo solo contiene ejemplos e instaladores, sin licencia; el servicio es de pago o con registro en console.sakana.ai. Tiene ~1k estrellas.
+
+## ¿Qué hace?
+
+Orquesta dinámicamente un conjunto de modelos frontera para resolver tareas complejas de varios pasos, expuesto como un único endpoint de modelo. Las cifras de rendimiento provienen del informe técnico de Sakana.
+
+## ¿Cómo lo hace?
+
+Se integra con Codex o Claude Code mediante `curl -fsSL https://sakana.ai/fugu/install | bash`, que crea los comandos `codex-fugu` y `claude-fugu` (Ubuntu y macOS; en Windows hay configuración manual). Con Claude Code hay diferencias de compatibilidad, mayormente cosméticas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Codex CLI](codex.md) | Integración nativa (`codex-fugu`). | Instala Codex y luego el script de Fugu. |
+| [Claude Code](claude-code.md) | Integración nativa (`claude-fugu`). | Instala Claude Code y luego el script de Fugu. |
+| [T3 Code](t3code.md) | Controlar desde web o móvil el Codex que usa Fugu. (combinación por arquitectura) | Usa T3 Code sobre Codex. |
+
+**Notas:** Sin alternativas declaradas. Pregunta de pertenencia al catálogo: el repo es un cliente de un servicio propietario (solo anotado).
+
+Estado en GitHub: activo · último push 2026-10-28 · última versión publicada user-demo-v1 (2026-06-26) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SakanaAI/fugu/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Los launchers son adaptaciones de proveedor; el autor documenta diferencias con Claude Code y un procedimiento manual específico para Windows |
 | Coste | Consumo de APIs o servicios. Se consume mediante Sakana API y sus condiciones; usar los launchers no incluye créditos del plan Claude Code o Codex |
 | Equipo | Preparación según la ruta elegida. Acceso Sakana API; Claude Code o Codex si eliges sus launchers; carpeta de prueba |
-
-Los launchers son adaptaciones de proveedor; el autor documenta diferencias con Claude Code y un procedimiento manual específico para Windows
-
-## Qué puedes hacer con él
-
-Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.
-
-## Por qué destaca
-
-Usos propuestos: Probar un sistema multiagente como proveedor; Comparar un flujo de código con Fugu.
-
-## Cómo funciona
 
 Los launchers son adaptaciones de proveedor; el autor documenta diferencias con Claude Code y un procedimiento manual específico para Windows
 

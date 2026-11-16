@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+OpenDots, plantilla open source de CopilotKit para agentes persistentes, cada uno con su propio ordenador, en web y móvil. Licencia MIT. Tiene ~6.6k estrellas; CopilotKit ofrece ahora la versión más robusta como skin de OpenBot.
+
+## ¿Qué hace?
+
+Los «Dots» conversan por texto, llamadas y Slack, navegan, redactan y guardan resultados en páginas editables tras una tarjeta de aprobación humana. Usan herramientas MCP y apps de Composio con aprobación para escrituras.
+
+## ¿Cómo lo hace?
+
+Se autoaloja, pero las conversaciones requieren CopilotKit Intelligence: servicio alojado, evaluación local con Docker o despliegue autoalojado con licencia. La telemetría del SDK está activa.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [CopilotKit](copilotkit.md) | Framework base y requisito (CopilotKit Intelligence). | Crea el proyecto con `npx copilotkit@latest login`. |
+| [Composio](composio.md) | Apps conectadas integradas. | Añade la clave de Composio. |
+| [servers](servers.md) | Servidores MCP de referencia como herramientas. (combinación por arquitectura) | Añade los MCP por Dot. |
+
+**Notas:** Sin alternativas declaradas. No es autónomo del todo: depende de un servicio de CopilotKit.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CopilotKit/OpenDots/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local |
 | Coste | El coste depende del proveedor o la ruta. La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte |
 | Equipo | Preparación según la ruta elegida. Node; CopilotKit Intelligence; proveedores y conectores elegidos |
-
-Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local
-
-## Qué puedes hacer con él
-
-Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.
-
-## Por qué destaca
-
-Usos propuestos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas.
-
-## Cómo funciona
 
 Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local
 
