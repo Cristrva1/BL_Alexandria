@@ -30,6 +30,7 @@ Requiere Python 3.10+ y se instala con `pip install --upgrade gradio`. Se despli
 | [LLaMA-Factory](llama-factory.md) | Su LlamaBoard está construido con Gradio. | Usa la UI de LlamaFactory. |
 | [Ollama](ollama.md) | Interfaz de chat sobre un modelo local. (combinación por arquitectura) | Llama a la API de Ollama desde ChatInterface. |
 | [rembg](rembg.md) | Combinación recíproca: rembg lo enlaza como «Interfaz web rápida para uso interno. (combinación por arquitectura)». | Orden indicado desde rembg: Envuelve `remove()` en una app Gradio. |
+| [F5-TTS](f5-tts.md) | Combinación recíproca: F5-TTS lo enlaza como «F5-TTS incluye una aplicación web Gradio (`f5-tts_infer-gradio`) para generar voz sin programar». | Orden indicado desde F5-TTS: Instala F5-TTS (incluye Gradio); después ejecuta `f5-tts_infer-gradio`. |
 
 **Notas:** Alternativas (elige una): streamlit.
 

@@ -278,6 +278,12 @@
      "id": "pytorch",
      "motivo": "Backend.",
      "orden_instalacion": "Instala PyTorch con CUDA."
+    },
+    {
+     "id": "sherpa-onnx",
+     "motivo": "Combinación recíproca: sherpa-onnx lo enlaza como «sherpa-onnx ejecuta modelos de NeMo como Parakeet TDT y transductores/CTC exportados a ONNX».",
+     "orden_instalacion": "Orden indicado desde sherpa-onnx: Descarga el modelo NeMo convertido; después úsalo con el reconocedor de sherpa-onnx.",
+     "reciproca_de": "sherpa-onnx"
     }
    ],
    "notas": "Alternativas (elige una): whisperx.",
@@ -423,6 +429,12 @@
      "id": "pipecat",
      "motivo": "ASR o TTS en agentes de voz. (combinación por arquitectura)",
      "orden_instalacion": "Integra el modelo como servicio."
+    },
+    {
+     "id": "ten-framework",
+     "motivo": "Combinación recíproca: TEN Framework lo enlaza como «TEN incluye una extensión de síntesis de voz con VibeVoice».",
+     "orden_instalacion": "Orden indicado desde TEN Framework: Despliega VibeVoice; después elige su extensión TTS en el grafo.",
+     "reciproca_de": "ten-framework"
     }
    ],
    "notas": "Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido.",

@@ -152,27 +152,27 @@
     {
       "num": 28,
       "title": "Visión artificial, rostros y percepción",
-      "count": 17
+      "count": 21
     },
     {
       "num": 29,
       "title": "Audio, transcripción, voz y música",
-      "count": 26
+      "count": 33
     },
     {
       "num": 30,
       "title": "Video con código y agentes creativos",
-      "count": 21
+      "count": 23
     },
     {
       "num": 31,
       "title": "Presentaciones, diagramas y explicación visual",
-      "count": 8
+      "count": 12
     },
     {
       "num": 32,
       "title": "Navegadores y automatización web",
-      "count": 11
+      "count": 19
     }
   ],
   "recipes": [
@@ -1617,7 +1617,9 @@
             "caddy",
             "casaos",
             "coolify",
+            "cypress",
             "dokploy",
+            "flaresolverr",
             "playwright",
             "playwright-mcp",
             "portainer",
@@ -1625,9 +1627,10 @@
             "selenium",
             "supabase",
             "traefik",
-            "uptime-kuma"
+            "uptime-kuma",
+            "webdriverio"
           ],
-          "count": 13
+          "count": 16
         }
       ],
       "repo_ids": [
@@ -1642,11 +1645,13 @@
         "chakra-ui",
         "coolify",
         "copilotkit",
+        "cypress",
         "daisyui",
         "design-dna",
         "design.md",
         "dokploy",
         "excalidraw",
+        "flaresolverr",
         "flexoki",
         "front-end-checklist",
         "gsap",
@@ -1700,10 +1705,11 @@
         "ui-sdk",
         "ui-ux-pro-max-skill",
         "uptime-kuma",
+        "webdriverio",
         "webgl-noise",
         "zdog"
       ],
-      "count": 71
+      "count": 74
     },
     {
       "id": "ciberseguridad",
@@ -2050,6 +2056,7 @@
             "manim",
             "manim-community",
             "mediabunny",
+            "motion-canvas",
             "motion-design-skill",
             "motionmaxxing",
             "moviepy",
@@ -2059,13 +2066,14 @@
             "rea-video",
             "remotion",
             "remotion-superpowers",
+            "revideo",
             "skills-remotion",
             "srt-whiteboard-animation",
             "video-shotcraft",
             "video-use",
             "videofy-minimal"
           ],
-          "count": 22
+          "count": 24
         },
         {
           "id": "av-voz",
@@ -2086,6 +2094,7 @@
             "cosyvoice",
             "edge-tts",
             "elevenlabs-python",
+            "f5-tts",
             "fish-speech",
             "gpt-sovits",
             "index-tts",
@@ -2096,7 +2105,7 @@
             "vibevoice",
             "voxcpm"
           ],
-          "count": 12
+          "count": 13
         },
         {
           "id": "av-transcripcion",
@@ -2118,12 +2127,13 @@
           "repo_ids": [
             "faster-whisper",
             "nemo",
+            "sherpa-onnx",
             "vibevoice",
             "whisper",
             "whisper-cpp",
             "whisperx"
           ],
-          "count": 6
+          "count": 7
         },
         {
           "id": "av-audio",
@@ -2143,13 +2153,17 @@
           "reference_repos": [],
           "repo_ids": [
             "ace-step-1.5",
+            "audacity",
             "audiocraft",
+            "demucs",
             "earshot",
             "pyannote-audio",
             "rnnoise",
-            "rubberband"
+            "rubberband",
+            "ultimate-vocal-remover",
+            "yue"
           ],
-          "count": 6
+          "count": 10
         },
         {
           "id": "av-conversacion",
@@ -2169,9 +2183,10 @@
           "repo_ids": [
             "dograh",
             "livekit-agents",
-            "pipecat"
+            "pipecat",
+            "ten-framework"
           ],
-          "count": 3
+          "count": 4
         },
         {
           "id": "av-imagen",
@@ -2225,12 +2240,13 @@
           "repo_ids": [
             "claude-animated-shorts",
             "deep-live-cam",
+            "deepface",
             "facefusion",
             "genjutsu",
             "insightface",
             "liveportrait"
           ],
-          "count": 6
+          "count": 7
         },
         {
           "id": "av-3d",
@@ -2300,6 +2316,7 @@
         "3dviz-pro-max",
         "ace-step-1.5",
         "ai-youtube-shorts-generator",
+        "audacity",
         "audiocraft",
         "awesome-cad",
         "bevy",
@@ -2316,11 +2333,14 @@
         "creative-architect",
         "davinci-resolve-mcp",
         "deep-live-cam",
+        "deepface",
+        "demucs",
         "diffusers",
         "dograh",
         "earshot",
         "edge-tts",
         "elevenlabs-python",
+        "f5-tts",
         "facefusion",
         "faster-whisper",
         "ffmpeg",
@@ -2355,6 +2375,7 @@
         "mediabunny",
         "meshoptimizer",
         "moneyprinterturbo",
+        "motion-canvas",
         "motion-design-skill",
         "motionmaxxing",
         "moviepy",
@@ -2378,13 +2399,17 @@
         "rembg",
         "remotion",
         "remotion-superpowers",
+        "revideo",
         "rnnoise",
         "rubberband",
         "rvc",
+        "sherpa-onnx",
         "short-video-factory",
         "shotcut",
         "skills-remotion",
         "srt-whiteboard-animation",
+        "ten-framework",
+        "ultimate-vocal-remover",
         "upscayl",
         "vibevoice",
         "video-shotcraft",
@@ -2397,9 +2422,10 @@
         "warp",
         "whisper",
         "whisper-cpp",
-        "whisperx"
+        "whisperx",
+        "yue"
       ],
-      "count": 101
+      "count": 111
     },
     {
       "id": "trading",
@@ -3090,15 +3116,23 @@
             "awesome-chrome-devtools",
             "browser-harness",
             "browser-use",
+            "camoufox",
+            "cypress",
+            "flaresolverr",
+            "ladybird",
             "lightpanda",
+            "nanobrowser",
             "playwright",
             "playwright-cli",
             "puppeteer",
             "selenium",
+            "servo",
             "skyvern",
-            "stagehand"
+            "stagehand",
+            "steel-browser",
+            "webdriverio"
           ],
-          "count": 11
+          "count": 19
         },
         {
           "id": "agentes-mcp",
@@ -3168,6 +3202,7 @@
         "browser-harness",
         "browser-use",
         "camel",
+        "camoufox",
         "changedetection",
         "chatdev",
         "chrome-devtools-mcp",
@@ -3178,6 +3213,7 @@
         "crawlee",
         "crawlee-python",
         "crewai",
+        "cypress",
         "deepagents",
         "deeptutor",
         "deer-flow",
@@ -3187,6 +3223,7 @@
         "fastmcp",
         "figma-context-mcp",
         "firecrawl",
+        "flaresolverr",
         "freshrss",
         "gallery-dl",
         "ghidramcp",
@@ -3200,6 +3237,7 @@
         "jev-fraud",
         "jina-reader",
         "katana",
+        "ladybird",
         "langchain",
         "langchain4j",
         "langflow",
@@ -3226,6 +3264,7 @@
         "miniflux",
         "mirofish",
         "multica",
+        "nanobrowser",
         "neo4j-mcp",
         "openai-agents-python",
         "openbot",
@@ -3249,21 +3288,24 @@
         "selenium",
         "serena",
         "servers",
+        "servo",
         "sim",
         "skyvern",
         "smolagents",
         "social-media-agent",
         "spotdl",
         "stagehand",
+        "steel-browser",
         "storm",
         "tooljet",
         "unity-mcp",
         "vane",
         "vercel-ai",
         "wallabag",
+        "webdriverio",
         "yt-dlp"
       ],
-      "count": 116
+      "count": 124
     },
     {
       "id": "ia-local",
@@ -3641,11 +3683,15 @@
           "reference_repos": [],
           "repo_ids": [
             "archify",
+            "d2",
             "diagram-design",
+            "drawio",
             "excalidraw",
-            "mermaid"
+            "kroki",
+            "mermaid",
+            "plantuml"
           ],
-          "count": 4
+          "count": 8
         },
         {
           "id": "docs-rag",
@@ -3722,9 +3768,11 @@
         "chroma",
         "claude-mem",
         "cognee",
+        "d2",
         "diagram-design",
         "docling",
         "docuseal",
+        "drawio",
         "dsh-noema",
         "engram",
         "excalidraw",
@@ -3732,6 +3780,7 @@
         "graphiti",
         "graphrag",
         "kotaemon",
+        "kroki",
         "lancedb",
         "letta",
         "lightrag",
@@ -3758,6 +3807,7 @@
         "pdfding",
         "pdfmathtranslate",
         "pgvector",
+        "plantuml",
         "ppt-master",
         "presenton",
         "qdrant",
@@ -3776,7 +3826,7 @@
         "weaviate",
         "xberg"
       ],
-      "count": 59
+      "count": 63
     },
     {
       "id": "datos",
@@ -4563,6 +4613,9 @@
           "reference_repos": [],
           "repo_ids": [
             "4d-humans",
+            "cvat",
+            "detectron2",
+            "dlib",
             "easymocap",
             "kornia",
             "label-studio",
@@ -4576,7 +4629,7 @@
             "ultralytics",
             "wham"
           ],
-          "count": 13
+          "count": 16
         },
         {
           "id": "vision-rostros",
@@ -4595,11 +4648,12 @@
           "reference_repos": [],
           "repo_ids": [
             "deep-live-cam",
+            "deepface",
             "facefusion",
             "insightface",
             "liveportrait"
           ],
-          "count": 4
+          "count": 5
         },
         {
           "id": "vision-mapas",
@@ -4638,8 +4692,12 @@
       ],
       "repo_ids": [
         "4d-humans",
+        "cvat",
         "deck.gl",
         "deep-live-cam",
+        "deepface",
+        "detectron2",
+        "dlib",
         "easymocap",
         "facefusion",
         "gods-eye-view",
@@ -4669,7 +4727,7 @@
         "webodm",
         "wham"
       ],
-      "count": 31
+      "count": 35
     },
     {
       "id": "aprender",
@@ -18980,7 +19038,8 @@
         "ollama",
         "claude-code",
         "evolution-api",
-        "paddleocr"
+        "paddleocr",
+        "ten-framework"
       ],
       "alt": [
         "sim",
@@ -22423,7 +22482,8 @@
         "playwright",
         "defuddle",
         "llm-scraper",
-        "awesome-web-scraping"
+        "awesome-web-scraping",
+        "camoufox"
       ],
       "alt": []
     },
@@ -22540,7 +22600,9 @@
       "combines_with": [
         "playwright",
         "scrapegraph-ai",
-        "qdrant"
+        "qdrant",
+        "flaresolverr",
+        "camoufox"
       ],
       "alt": []
     },
@@ -24321,7 +24383,8 @@
         "playwright",
         "scrapling",
         "defuddle",
-        "awesome-web-scraping"
+        "awesome-web-scraping",
+        "flaresolverr"
       ],
       "alt": []
     },
@@ -38301,7 +38364,8 @@
       "combines_with": [
         "claude-code",
         "penpot",
-        "flexoki"
+        "flexoki",
+        "kroki"
       ],
       "alt": [
         "tldraw",
@@ -40570,7 +40634,8 @@
         "playwright",
         "tailwindcss",
         "mantine",
-        "chakra-ui"
+        "chakra-ui",
+        "cypress"
       ],
       "alt": []
     },
@@ -56609,7 +56674,8 @@
       "combines_with": [
         "syncthing",
         "pandoc",
-        "claude-code"
+        "claude-code",
+        "d2"
       ],
       "alt": [
         "joplin",
@@ -86754,7 +86820,8 @@
         "transformers",
         "llama-factory",
         "ollama",
-        "rembg"
+        "rembg",
+        "f5-tts"
       ],
       "alt": [
         "streamlit",
@@ -95950,6 +96017,121 @@
       "alt": []
     },
     {
+      "id": "cvat",
+      "name": "CVAT Community",
+      "cat": 28,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "annotation",
+        "vision",
+        "dataset",
+        "self-hosted"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/cvat-ai/cvat/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "cc864015798c5a83c2d70fbf0746f908a7cebc1d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker compose up -d",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/cvat-ai/cvat/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repositorio y ejecuta `docker compose up -d`; crea un usuario y una tarea con unas pocas imágenes.",
+        "success": "Puedes dibujar cajas o polígonos y exportar las anotaciones en formato COCO o YOLO.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "etiquetar un dataset de detección o segmentación con varias personas",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preanotar vídeos con un modelo y corregir solo los errores",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/cvat-ai/cvat/blob/develop/README.md",
+        "source_blob_sha": "cc864015798c5a83c2d70fbf0746f908a7cebc1d",
+        "previous_category": [
+          28,
+          "vision"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.",
+      "desc": "Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.",
+      "stack": "Python, Dockerfile, docker-compose.yml, package.json, pyproject.toml",
+      "repo": "https://github.com/cvat-ai/cvat",
+      "install": "docker compose up -d",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: etiquetar un dataset de detección o segmentación con varias personas; preanotar vídeos con un modelo y corregir solo los errores",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "detectron2",
+        "mmpose",
+        "ultralytics"
+      ],
+      "alt": [
+        "label-studio"
+      ]
+    },
+    {
       "id": "deep-live-cam",
       "name": "Deep-Live-Cam",
       "cat": 28,
@@ -96070,6 +96252,350 @@
       "alt": [
         "facefusion"
       ]
+    },
+    {
+      "id": "deepface",
+      "name": "DeepFace",
+      "cat": 28,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "face",
+        "python",
+        "vision",
+        "biometrics"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/serengil/deepface/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "edba08b52d9cdf8505a5a31ee70ea872f6bb7e22"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install deepface",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/serengil/deepface/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install deepface` y ejecuta `DeepFace.verify` con dos imágenes tuyas.",
+        "success": "Obtienes un diccionario con `verified`, la distancia y el umbral usado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "verificar si dos fotos propias o autorizadas corresponden a la misma persona",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "buscar una cara dentro de una carpeta de imágenes con consentimiento de las personas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/serengil/deepface/blob/master/README.md",
+        "source_blob_sha": "edba08b52d9cdf8505a5a31ee70ea872f6bb7e22",
+        "previous_category": [
+          28,
+          "rostros"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face.",
+      "desc": "Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face.",
+      "stack": "Python, Dockerfile, setup.py",
+      "repo": "https://github.com/serengil/deepface",
+      "install": "pip install deepface",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: verificar si dos fotos propias o autorizadas corresponden a la misma persona; buscar una cara dentro de una carpeta de imágenes con consentimiento de las personas",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "opencv",
+        "dlib",
+        "mediapipe",
+        "ultralytics",
+        "insightface"
+      ],
+      "alt": []
+    },
+    {
+      "id": "detectron2",
+      "name": "Detectron2",
+      "cat": 28,
+      "role": "library",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "vision",
+        "pytorch",
+        "detection",
+        "segmentation"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/facebookresearch/detectron2/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7d99b46e415ad06b7dd69e4b6a6b302ffea1d303"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/facebookresearch/detectron2/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía de instalación oficial (requiere PyTorch y compilar extensiones) y ejecuta la demo con un modelo del zoo sobre una imagen.",
+        "success": "Obtienes la imagen con cajas y máscaras de los objetos detectados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar un detector o segmentador sobre un conjunto de imágenes propio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "usar modelos preentrenados de detección como base para investigación",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/facebookresearch/detectron2/blob/main/README.md",
+        "source_blob_sha": "7d99b46e415ad06b7dd69e4b6a6b302ffea1d303",
+        "previous_category": [
+          28,
+          "vision"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.",
+      "desc": "Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.",
+      "stack": "Python, setup.py",
+      "repo": "https://github.com/facebookresearch/detectron2",
+      "install": "Seguir la instalación original: https://github.com/facebookresearch/detectron2/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar un detector o segmentador sobre un conjunto de imágenes propio; usar modelos preentrenados de detección como base para investigación",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "pytorch",
+        "cvat",
+        "opencv"
+      ],
+      "alt": []
+    },
+    {
+      "id": "dlib",
+      "name": "dlib",
+      "cat": 28,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "vision",
+        "cpp",
+        "python",
+        "face"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/davisking/dlib/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "ff32038173291dc0e6286d3ff7c330cd31b47d53"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install dlib",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/davisking/dlib/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install dlib` (necesita CMake y compilador) y ejecuta el ejemplo de detección facial de la carpeta python_examples.",
+        "success": "Obtienes las coordenadas de las caras detectadas en la imagen.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "detectar caras y sus puntos de referencia en fotos para alinear o recortar",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "usar un detector rápido en CPU dentro de una aplicación C++",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/davisking/dlib/blob/master/README.md",
+        "source_blob_sha": "ff32038173291dc0e6286d3ff7c330cd31b47d53",
+        "previous_category": [
+          28,
+          "vision"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización.",
+      "desc": "Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización.",
+      "stack": "C++, CMakeLists.txt, pyproject.toml, setup.py",
+      "repo": "https://github.com/davisking/dlib",
+      "install": "pip install dlib",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: detectar caras y sus puntos de referencia en fotos para alinear o recortar; usar un detector rápido en CPU dentro de una aplicación C++",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "deepface",
+        "opencv",
+        "claude-code"
+      ],
+      "alt": []
     },
     {
       "id": "easymocap",
@@ -96427,7 +96953,8 @@
       "combines_with": [
         "facefusion",
         "deep-live-cam",
-        "liveportrait"
+        "liveportrait",
+        "deepface"
       ],
       "alt": []
     },
@@ -96668,7 +97195,9 @@
         "sam3",
         "supervision"
       ],
-      "alt": []
+      "alt": [
+        "cvat"
+      ]
     },
     {
       "id": "liveportrait",
@@ -96908,7 +97437,8 @@
         "tfjs-models",
         "three.js",
         "easymocap",
-        "tensorflow"
+        "tensorflow",
+        "deepface"
       ],
       "alt": []
     },
@@ -97027,7 +97557,8 @@
       "combines_with": [
         "pytorch",
         "opencv",
-        "easymocap"
+        "easymocap",
+        "cvat"
       ],
       "alt": []
     },
@@ -97980,6 +98511,124 @@
         "ffmpeg",
         "rubberband"
       ],
+      "alt": [
+        "yue",
+        "audiocraft"
+      ]
+    },
+    {
+      "id": "audacity",
+      "name": "Audacity",
+      "cat": 29,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "audio",
+        "editor",
+        "cpp",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/audacity/audacity/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "92c12c2c1853859cd008f4728563ba62f5d046c4"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/audacity/audacity/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga Audacity desde su web, graba o importa un audio y aplica reducción de ruido y normalización.",
+        "success": "Exportas un MP3 o WAV más limpio.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "limpiar, cortar y normalizar una grabación de voz o podcast",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "editar stems separados con IA antes de mezclarlos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/audacity/audacity/blob/master/README.md",
+        "source_blob_sha": "92c12c2c1853859cd008f4728563ba62f5d046c4",
+        "previous_category": [
+          29,
+          "audio"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel.",
+      "desc": "Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel.",
+      "stack": "C++, CMakeLists.txt",
+      "repo": "https://github.com/audacity/audacity",
+      "install": "Seguir la instalación original: https://github.com/audacity/audacity/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: limpiar, cortar y normalizar una grabación de voz o podcast; editar stems separados con IA antes de mezclarlos",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "ffmpeg",
+        "demucs",
+        "whisper-cpp",
+        "audiocraft",
+        "yue"
+      ],
       "alt": []
     },
     {
@@ -98100,9 +98749,13 @@
         "ffmpeg",
         "moviepy",
         "remotion",
-        "rubberband"
+        "rubberband",
+        "audacity"
       ],
-      "alt": []
+      "alt": [
+        "yue",
+        "ace-step-1.5"
+      ]
     },
     {
       "id": "cosyvoice",
@@ -98226,8 +98879,124 @@
       ],
       "alt": [
         "fish-speech",
-        "index-tts"
+        "index-tts",
+        "f5-tts"
       ]
+    },
+    {
+      "id": "demucs",
+      "name": "Demucs",
+      "cat": 29,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "audio",
+        "music",
+        "separation",
+        "pytorch"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/adefossez/demucs/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "fbf54ea8820314f3380d2cdf56e829550033016b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "python3 -m pip install -U demucs",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/adefossez/demucs/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `python3 -m pip install -U demucs` y ejecuta `demucs cancion.mp3`.",
+        "success": "Obtienes una carpeta con las pistas separadas (drums, bass, vocals, other).",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "separar la voz y la batería de una canción propia para remezclar",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar stems para karaoke o práctica musical",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/adefossez/demucs/blob/main/README.md",
+        "source_blob_sha": "fbf54ea8820314f3380d2cdf56e829550033016b",
+        "previous_category": [
+          29,
+          "audio"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Me",
+      "desc": "Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/adefossez/demucs",
+      "install": "python3 -m pip install -U demucs",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: separar la voz y la batería de una canción propia para remezclar; generar stems para karaoke o práctica musical",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "ffmpeg",
+        "pytorch",
+        "ultimate-vocal-remover",
+        "audacity"
+      ],
+      "alt": []
     },
     {
       "id": "dograh",
@@ -98348,7 +99117,8 @@
       ],
       "alt": [
         "pipecat",
-        "livekit-agents"
+        "livekit-agents",
+        "ten-framework"
       ]
     },
     {
@@ -98711,9 +99481,127 @@
         "pipecat",
         "livekit-agents",
         "video-use",
-        "remotion-superpowers"
+        "remotion-superpowers",
+        "ten-framework"
       ],
       "alt": []
+    },
+    {
+      "id": "f5-tts",
+      "name": "F5-TTS",
+      "cat": 29,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "pytorch",
+        "speech"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/SWivid/F5-TTS/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e0903aea55ae3e02c0cfa77407dcf7a49940633d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+          "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+          "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+        ],
+        "command": "pip install f5-tts",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/SWivid/F5-TTS/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala PyTorch y `pip install f5-tts`; ejecuta `f5-tts_infer-gradio` y genera audio con una referencia de tu voz.",
+        "success": "Obtienes un audio con el texto leído imitando la voz de referencia.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "generar narración con tu propia voz a partir de una muestra corta",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "prototipar voces para un proyecto de investigación sin uso comercial",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/SWivid/F5-TTS/blob/main/README.md",
+        "source_blob_sha": "e0903aea55ae3e02c0cfa77407dcf7a49940633d",
+        "previous_category": [
+          29,
+          "tts"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI.",
+      "desc": "Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI.",
+      "stack": "Python, Dockerfile, pyproject.toml",
+      "repo": "https://github.com/SWivid/F5-TTS",
+      "install": "pip install f5-tts",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: generar narración con tu propia voz a partir de una muestra corta; prototipar voces para un proyecto de investigación sin uso comercial",
+      "avoid_if": "no tienes el hardware o no aceptas la licencia de los pesos",
+      "combines_with": [
+        "pytorch",
+        "ffmpeg",
+        "gradio"
+      ],
+      "alt": [
+        "fish-speech",
+        "cosyvoice"
+      ]
     },
     {
       "id": "faster-whisper",
@@ -98958,7 +99846,8 @@
       ],
       "alt": [
         "cosyvoice",
-        "gpt-sovits"
+        "gpt-sovits",
+        "f5-tts"
       ]
     },
     {
@@ -99464,7 +100353,8 @@
       ],
       "alt": [
         "pipecat",
-        "dograh"
+        "dograh",
+        "ten-framework"
       ]
     },
     {
@@ -99707,7 +100597,8 @@
       "combines_with": [
         "nemotron",
         "pipecat",
-        "pytorch"
+        "pytorch",
+        "sherpa-onnx"
       ],
       "alt": [
         "whisperx"
@@ -99962,7 +100853,8 @@
       ],
       "alt": [
         "livekit-agents",
-        "dograh"
+        "dograh",
+        "ten-framework"
       ]
     },
     {
@@ -100079,7 +100971,8 @@
         "whisperx",
         "pytorch",
         "faster-whisper",
-        "ffmpeg"
+        "ffmpeg",
+        "sherpa-onnx"
       ],
       "alt": []
     },
@@ -100313,7 +101206,8 @@
       "combines_with": [
         "ffmpeg",
         "ace-step-1.5",
-        "audiocraft"
+        "audiocraft",
+        "ultimate-vocal-remover"
       ],
       "alt": []
     },
@@ -100440,6 +101334,354 @@
       "alt": []
     },
     {
+      "id": "sherpa-onnx",
+      "name": "sherpa-onnx",
+      "cat": 29,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "speech",
+        "stt",
+        "tts",
+        "onnx"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "8f34b0935640ff49d716a7a9b170dd784deaa2e0"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+          "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+          "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala el paquete de Python, descarga un modelo de reconocimiento preentrenado de la documentación y transcribe un WAV de prueba.",
+        "success": "Obtienes el texto reconocido sin conexión a internet.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "añadir dictado o transcripción sin conexión a una app Android o iOS",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "poner reconocimiento y síntesis de voz en una Raspberry Pi sin nube",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+        "source_blob_sha": "8f34b0935640ff49d716a7a9b170dd784deaa2e0",
+        "previous_category": [
+          29,
+          "stt"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor.",
+      "desc": "Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor.",
+      "stack": "C++, CMakeLists.txt, pom.xml, setup.py",
+      "repo": "https://github.com/k2-fsa/sherpa-onnx",
+      "install": "Seguir la instalación original: https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: añadir dictado o transcripción sin conexión a una app Android o iOS; poner reconocimiento y síntesis de voz en una Raspberry Pi sin nube",
+      "avoid_if": "no quieres preparar modelos, dependencias y hardware propios",
+      "combines_with": [
+        "whisper",
+        "nemo",
+        "kokoro",
+        "pyannote-audio"
+      ],
+      "alt": []
+    },
+    {
+      "id": "ten-framework",
+      "name": "TEN Framework",
+      "cat": 29,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "voice",
+        "agents",
+        "realtime",
+        "framework"
+      ],
+      "routes": [
+        "api"
+      ],
+      "access": {
+        "api": "required",
+        "local_model": "not_documented",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "usage_based",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/TEN-framework/ten-framework/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "781565d67cc8f1022ee1a1c8f2da594847a2859e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/TEN-framework/ten-framework/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repo, rellena `.env` con las claves de Agora, OpenAI, Deepgram y ElevenLabs y ejecuta `docker compose up -d`; abre el ejemplo de voz en el navegador.",
+        "success": "Puedes hablar con un agente que responde por voz en tiempo real.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "montar un asistente de voz que conversa en tiempo real con un LLM",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "construir un agente de voz con avatar o con transcripción en vivo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/TEN-framework/ten-framework/blob/main/README.md",
+        "source_blob_sha": "781565d67cc8f1022ee1a1c8f2da594847a2859e",
+        "previous_category": [
+          29,
+          "voz-agentes"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.",
+      "desc": "Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.",
+      "stack": "Python, package.json",
+      "repo": "https://github.com/TEN-framework/ten-framework",
+      "install": "Seguir la instalación original: https://github.com/TEN-framework/ten-framework/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: montar un asistente de voz que conversa en tiempo real con un LLM; construir un agente de voz con avatar o con transcripción en vivo",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "dify",
+        "openclaw",
+        "vibevoice",
+        "whisper",
+        "elevenlabs-python"
+      ],
+      "alt": [
+        "pipecat",
+        "livekit-agents",
+        "dograh"
+      ]
+    },
+    {
+      "id": "ultimate-vocal-remover",
+      "name": "Ultimate Vocal Remover (UVR)",
+      "cat": 29,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "audio",
+        "music",
+        "separation",
+        "app"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "93746d4b4f06f301257c1ee5045e914fee23c974"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/Anjok07/ultimatevocalremovergui/releases",
+        "source": "https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga el instalador para tu sistema desde las releases, abre una canción y separa con un modelo MDX-Net.",
+        "success": "Obtienes dos archivos: voz e instrumental.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "obtener la pista instrumental o la voz aislada de una canción propia",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preparar stems para remezclar o practicar con una canción",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md",
+        "source_blob_sha": "93746d4b4f06f301257c1ee5045e914fee23c974",
+        "previous_category": [
+          29,
+          "audio"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar.",
+      "desc": "Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar.",
+      "stack": "Python, requirements.txt",
+      "repo": "https://github.com/Anjok07/ultimatevocalremovergui",
+      "install": "Seguir la instalación original: https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: obtener la pista instrumental o la voz aislada de una canción propia; preparar stems para remezclar o practicar con una canción",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "ffmpeg",
+        "rubberband",
+        "demucs"
+      ],
+      "alt": []
+    },
+    {
       "id": "vibevoice",
       "name": "VibeVoice",
       "cat": 29,
@@ -100554,7 +101796,8 @@
       "combines_with": [
         "transformers",
         "open-notebook",
-        "pipecat"
+        "pipecat",
+        "ten-framework"
       ],
       "alt": []
     },
@@ -101047,6 +102290,123 @@
       ],
       "alt": [
         "nemo"
+      ]
+    },
+    {
+      "id": "yue",
+      "name": "YuE2",
+      "cat": 29,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "music",
+        "generation",
+        "audio",
+        "model"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/multimodal-art-projection/YuE/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f5c3df379eec0f033a02f9b1f440925fa2e50112"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+          "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+          "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/multimodal-art-projection/YuE/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En Linux con una GPU NVIDIA de 24 GB, clona el repo, ejecuta `python -m pip install .` y genera una canción con `YuE2Pipeline`.",
+        "success": "Obtienes un audio estéreo y la partitura ABC editable.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "generar una maqueta de canción con letra propia para un proyecto personal o académico",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "editar la armonía de una canción generada manteniendo la melodía",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/multimodal-art-projection/YuE/blob/main/README.md",
+        "source_blob_sha": "f5c3df379eec0f033a02f9b1f440925fa2e50112",
+        "previous_category": [
+          29,
+          "musica"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.",
+      "desc": "Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/multimodal-art-projection/YuE",
+      "install": "Seguir la instalación original: https://github.com/multimodal-art-projection/YuE/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: generar una maqueta de canción con letra propia para un proyecto personal o académico; editar la armonía de una canción generada manteniendo la melodía",
+      "avoid_if": "no tienes el hardware o no aceptas la licencia de los pesos",
+      "combines_with": [
+        "claude-code",
+        "pytorch",
+        "audacity"
+      ],
+      "alt": [
+        "ace-step-1.5",
+        "audiocraft"
       ]
     },
     {
@@ -102019,6 +103379,122 @@
       "alt": []
     },
     {
+      "id": "motion-canvas",
+      "name": "Motion Canvas",
+      "cat": 30,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "animation",
+        "typescript",
+        "video",
+        "code"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/motion-canvas/motion-canvas/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "446c8db1aa77f01ddea44d0ff89ed42aa03cd54b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/motion-canvas/motion-canvas/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta `npm init @motion-canvas@latest`, entra en la carpeta, ejecuta `npm install` y `npm start`, y abre el editor.",
+        "success": "Ves la escena de ejemplo y puedes editar el código con recarga en vivo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "hacer vídeos explicativos de programación o matemáticas con animaciones precisas",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "sincronizar animaciones con una narración grabada",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/motion-canvas/motion-canvas/blob/main/README.md",
+        "source_blob_sha": "446c8db1aa77f01ddea44d0ff89ed42aa03cd54b",
+        "previous_category": [
+          30,
+          "motores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.",
+      "desc": "Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/motion-canvas/motion-canvas",
+      "install": "Seguir la instalación original: https://github.com/motion-canvas/motion-canvas/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: hacer vídeos explicativos de programación o matemáticas con animaciones precisas; sincronizar animaciones con una narración grabada",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "ffmpeg",
+        "kokoro",
+        "claude-code"
+      ],
+      "alt": [
+        "revideo",
+        "remotion"
+      ]
+    },
+    {
       "id": "motionmaxxing",
       "name": "motionmaxxing",
       "cat": 30,
@@ -102883,7 +104359,9 @@
       ],
       "alt": [
         "moviepy",
-        "hyperframes"
+        "hyperframes",
+        "motion-canvas",
+        "revideo"
       ]
     },
     {
@@ -103011,6 +104489,122 @@
       "alt": [
         "openmontage",
         "video-use"
+      ]
+    },
+    {
+      "id": "revideo",
+      "name": "Revideo",
+      "cat": 30,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "video",
+        "typescript",
+        "rendering",
+        "code"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/midrender/revideo/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3f5d9cee1158dbd50e66f71f974a875428166943"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "npm init @revideo@latest",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/midrender/revideo/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta `npm init @revideo@latest` y sigue el asistente; después renderiza el proyecto de ejemplo.",
+        "success": "Obtienes un MP4 generado desde código.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "generar muchas variantes de un vídeo a partir de datos o plantillas",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "añadir un renderizador de vídeo a una aplicación web",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/midrender/revideo/blob/main/README.md",
+        "source_blob_sha": "3f5d9cee1158dbd50e66f71f974a875428166943",
+        "previous_category": [
+          30,
+          "motores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.",
+      "desc": "Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/midrender/revideo",
+      "install": "npm init @revideo@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: generar muchas variantes de un vídeo a partir de datos o plantillas; añadir un renderizador de vídeo a una aplicación web",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "ffmpeg"
+      ],
+      "alt": [
+        "motion-canvas",
+        "remotion"
       ]
     },
     {
@@ -103746,6 +105340,123 @@
       ]
     },
     {
+      "id": "d2",
+      "name": "D2",
+      "cat": 31,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "diagrams",
+        "go",
+        "cli",
+        "docs-as-code"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/d2lang/d2/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4c3007db102c42736991747298176a1feedf6aaa"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "curl -fsSL https://d2lang.com/install.sh | sh -s --",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/d2lang/d2/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con el script oficial, escribe `x -> y` en `in.d2` y ejecuta `d2 --watch in.d2 out.svg`.",
+        "success": "Se abre una vista en el navegador que se actualiza al guardar el archivo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "mantener diagramas de arquitectura como texto versionado junto al código",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar diagramas desde scripts o documentación técnica",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/d2lang/d2/blob/master/README.md",
+        "source_blob_sha": "4c3007db102c42736991747298176a1feedf6aaa",
+        "previous_category": [
+          31,
+          "diagramas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
+      "desc": "Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/d2lang/d2",
+      "install": "curl -fsSL https://d2lang.com/install.sh | sh -s --",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: mantener diagramas de arquitectura como texto versionado junto al código; generar diagramas desde scripts o documentación técnica",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "kroki",
+        "pandoc",
+        "logseq",
+        "claude-code"
+      ],
+      "alt": [
+        "plantuml",
+        "mermaid"
+      ]
+    },
+    {
       "id": "diagram-design",
       "name": "diagram-design",
       "cat": 31,
@@ -103867,6 +105578,235 @@
       "alt": [
         "archify"
       ]
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io",
+      "cat": 31,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "diagrams",
+        "editor",
+        "javascript",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/jgraph/drawio/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2d854e6f655ee750625131ca83c5df93b096827c"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/jgraph/drawio/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre app.diagrams.net en el navegador o instala draw.io Desktop, y crea un diagrama desde una plantilla.",
+        "success": "Guardas un archivo .drawio editable o lo exportas a PNG, SVG o PDF.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "dibujar diagramas de arquitectura o redes con iconos de AWS, Azure o GCP",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "convertir un diagrama Mermaid en uno editable a mano",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/jgraph/drawio/blob/dev/README.md",
+        "source_blob_sha": "2d854e6f655ee750625131ca83c5df93b096827c",
+        "previous_category": [
+          31,
+          "diagramas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML.",
+      "desc": "Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML.",
+      "stack": "JavaScript",
+      "repo": "https://github.com/jgraph/drawio",
+      "install": "Seguir la instalación original: https://github.com/jgraph/drawio/blob/dev/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: dibujar diagramas de arquitectura o redes con iconos de AWS, Azure o GCP; convertir un diagrama Mermaid en uno editable a mano",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "claude-code",
+        "mermaid",
+        "plantuml",
+        "kroki"
+      ],
+      "alt": []
+    },
+    {
+      "id": "kroki",
+      "name": "Kroki",
+      "cat": 31,
+      "role": "platform",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "diagrams",
+        "api",
+        "self-hosted",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/yuzutech/kroki/blob/main/README.adoc"
+        ],
+        "mode": "software",
+        "source_blob_sha": "a2793509099cf37f766439b8dee52e60917f15c9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -d -p 8000:8000 yuzutech/kroki",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/yuzutech/kroki/blob/main/README.adoc",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta `docker run -d -p 8000:8000 yuzutech/kroki` y abre `http://localhost:8000/plantuml/svg/` con un diagrama codificado.",
+        "success": "Obtienes el SVG del diagrama desde tu propio servidor.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "renderizar diagramas de varios lenguajes en una wiki o generador de documentación",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "autoalojar el renderizado para no enviar diagramas a servicios públicos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/yuzutech/kroki/blob/main/README.adoc",
+        "source_blob_sha": "a2793509099cf37f766439b8dee52e60917f15c9",
+        "previous_category": [
+          31,
+          "diagramas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG.",
+      "desc": "Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG.",
+      "stack": "JavaScript, package.json, pom.xml",
+      "repo": "https://github.com/yuzutech/kroki",
+      "install": "docker run -d -p 8000:8000 yuzutech/kroki",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: renderizar diagramas de varios lenguajes en una wiki o generador de documentación; autoalojar el renderizado para no enviar diagramas a servicios públicos",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "plantuml",
+        "d2",
+        "mermaid",
+        "excalidraw",
+        "drawio"
+      ],
+      "alt": []
     },
     {
       "id": "marp",
@@ -104097,10 +106037,129 @@
         "claude-code",
         "archify",
         "marp",
-        "reveal.js"
+        "reveal.js",
+        "drawio"
       ],
       "alt": [
-        "excalidraw"
+        "excalidraw",
+        "d2",
+        "plantuml"
+      ]
+    },
+    {
+      "id": "plantuml",
+      "name": "PlantUML",
+      "cat": 31,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "diagrams",
+        "uml",
+        "java",
+        "docs-as-code"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/plantuml/plantuml/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5fad8be911eed9096251c0383eafce5eb6e1acf3"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/plantuml/plantuml/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga el JAR de las releases, escribe un `@startuml` sencillo en `a.puml` y ejecuta `java -jar plantuml.jar a.puml`.",
+        "success": "Obtienes un PNG con el diagrama.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "documentar diagramas de secuencia y clases como texto en el repositorio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar diagramas automáticamente en la documentación técnica",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/plantuml/plantuml/blob/master/README.md",
+        "source_blob_sha": "5fad8be911eed9096251c0383eafce5eb6e1acf3",
+        "previous_category": [
+          31,
+          "diagramas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
+      "desc": "Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
+      "stack": "Java, Dockerfile",
+      "repo": "https://github.com/plantuml/plantuml",
+      "install": "Seguir la instalación original: https://github.com/plantuml/plantuml/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: documentar diagramas de secuencia y clases como texto en el repositorio; generar diagramas automáticamente en la documentación técnica",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "kroki",
+        "claude-code",
+        "drawio"
+      ],
+      "alt": [
+        "d2",
+        "mermaid"
       ]
     },
     {
@@ -105069,7 +107128,8 @@
         "ollama",
         "pydantic-ai",
         "sandbox",
-        "openmanus"
+        "openmanus",
+        "steel-browser"
       ],
       "alt": [
         "computer-use-preview",
@@ -105077,6 +107137,465 @@
         "skyvern",
         "playwright-mcp",
         "browser-harness"
+      ]
+    },
+    {
+      "id": "camoufox",
+      "name": "Camoufox",
+      "cat": 32,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "browser",
+        "scraping",
+        "firefox",
+        "playwright"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/daijro/camoufox/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "0753d07ebccd7fe526a0ad8a4fc4cb4b7ba78846"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install -U \"camoufox[geoip]\"",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/daijro/camoufox/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install -U \"camoufox[geoip]\"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README.",
+        "success": "Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "automatizar navegación en sitios propios o autorizados que bloquean navegadores headless",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar cómo responde tu web a distintas huellas de navegador",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/daijro/camoufox/blob/main/README.md",
+        "source_blob_sha": "0753d07ebccd7fe526a0ad8a4fc4cb4b7ba78846",
+        "previous_category": [
+          32,
+          "motores-web"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright.",
+      "desc": "Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright.",
+      "stack": "C",
+      "repo": "https://github.com/daijro/camoufox",
+      "install": "pip install -U \"camoufox[geoip]\"",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "playwright",
+        "crawlee-python",
+        "crawlee"
+      ],
+      "alt": []
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "cat": 32,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "testing",
+        "e2e",
+        "javascript",
+        "browser"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/cypress-io/cypress/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "371257991c8a62e869cdc81463b7d60aa784f3c4"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "npm install cypress --save-dev",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/cypress-io/cypress/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En un proyecto web ejecuta `npm install cypress --save-dev` y `npx cypress open`; crea una prueba de ejemplo.",
+        "success": "Ves la prueba ejecutándose paso a paso en el navegador.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "probar los flujos críticos de una web (registro, compra) en cada cambio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar componentes de React, Vue o Angular de forma aislada",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/cypress-io/cypress/blob/develop/README.md",
+        "source_blob_sha": "371257991c8a62e869cdc81463b7d60aa784f3c4",
+        "previous_category": [
+          32,
+          "bibliotecas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso.",
+      "desc": "Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso.",
+      "stack": "TypeScript, docker-compose.yml, package.json",
+      "repo": "https://github.com/cypress-io/cypress",
+      "install": "npm install cypress --save-dev",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: probar los flujos críticos de una web (registro, compra) en cada cambio; probar componentes de React, Vue o Angular de forma aislada",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "storybook",
+        "claude-code",
+        "ffmpeg"
+      ],
+      "alt": [
+        "webdriverio",
+        "playwright",
+        "selenium",
+        "puppeteer"
+      ]
+    },
+    {
+      "id": "flaresolverr",
+      "name": "FlareSolverr",
+      "cat": 32,
+      "role": "platform",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "scraping",
+        "proxy",
+        "cloudflare",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/FlareSolverr/FlareSolverr/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "ed5431ad3e303f9ee100f60b2b1f7468dc265956"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -d --name=flaresolverr -p 127.0.0.1:8191:8191 -e LOG_LEVEL=info --restart unless-stopped ghcr.io/flaresolverr/flaresolverr:latest",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/FlareSolverr/FlareSolverr/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta el contenedor con Docker y envía un POST a `http://localhost:8191/v1` con `cmd: request.get` y una URL autorizada.",
+        "success": "Obtienes el HTML de la página y las cookies de la sesión.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "dar acceso a indexadores (como Prowlarr o Jackett) a sitios propios o autorizados detrás de Cloudflare",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "obtener cookies válidas para que un scraper autorizado continúe con un cliente HTTP ligero",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/FlareSolverr/FlareSolverr/blob/master/README.md",
+        "source_blob_sha": "ed5431ad3e303f9ee100f60b2b1f7468dc265956",
+        "previous_category": [
+          32,
+          "bibliotecas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.",
+      "desc": "Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.",
+      "stack": "Python, Dockerfile, docker-compose.yml, package.json, requirements.txt",
+      "repo": "https://github.com/FlareSolverr/FlareSolverr",
+      "install": "docker run -d --name=flaresolverr -p 127.0.0.1:8191:8191 -e LOG_LEVEL=info --restart unless-stopped ghcr.io/flaresolverr/flaresolverr:latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: dar acceso a indexadores (como Prowlarr o Jackett) a sitios propios o autorizados detrás de Cloudflare; obtener cookies válidas para que un scraper autorizado continúe con un cliente HTTP ligero",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "selenium",
+        "scrapy",
+        "crawlee-python"
+      ],
+      "alt": []
+    },
+    {
+      "id": "ladybird",
+      "name": "Ladybird",
+      "cat": 32,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "browser",
+        "engine",
+        "cpp",
+        "independent"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/LadybirdBrowser/ladybird/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4d45336769487dfe98a38bb3f24df9443074b9ec"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/LadybirdBrowser/ladybird/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía de compilación (`Documentation/BuildInstructionsLadybird.md`) en Linux o macOS y ejecuta el navegador.",
+        "success": "Abres páginas con un motor independiente, todavía con fallos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "seguir o contribuir al desarrollo de un motor de navegador independiente",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar la compatibilidad de una web con un motor nuevo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/LadybirdBrowser/ladybird/blob/master/README.md",
+        "source_blob_sha": "4d45336769487dfe98a38bb3f24df9443074b9ec",
+        "previous_category": [
+          32,
+          "motores-web"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.",
+      "desc": "Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.",
+      "stack": "Rust, CMakeLists.txt, Cargo.toml, pyproject.toml, requirements.txt",
+      "repo": "https://github.com/LadybirdBrowser/ladybird",
+      "install": "Seguir la instalación original: https://github.com/LadybirdBrowser/ladybird/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: seguir o contribuir al desarrollo de un motor de navegador independiente; probar la compatibilidad de una web con un motor nuevo",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "selenium",
+        "webdriverio",
+        "ffmpeg"
+      ],
+      "alt": [
+        "servo"
       ]
     },
     {
@@ -105202,6 +107721,122 @@
       "alt": []
     },
     {
+      "id": "nanobrowser",
+      "name": "Nanobrowser",
+      "cat": 32,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "browser",
+        "agent",
+        "chrome",
+        "extension"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+        "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/nanobrowser/nanobrowser/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "a8970b7b7c0c8de33f6fafcff950f65a58697ae2"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/nanobrowser/nanobrowser/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Nanobrowser desde la Chrome Web Store, configura una clave de API o Ollama y pide una tarea sencilla en el panel lateral.",
+        "success": "El agente abre las páginas y realiza la tarea en una pestaña propia.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "automatizar tareas repetitivas en webs donde ya tienes la sesión iniciada",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "investigar y resumir información de varias páginas desde el panel lateral",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/nanobrowser/nanobrowser/blob/master/README.md",
+        "source_blob_sha": "a8970b7b7c0c8de33f6fafcff950f65a58697ae2",
+        "previous_category": [
+          32,
+          "agentes-web"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.",
+      "desc": "Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/nanobrowser/nanobrowser",
+      "install": "Seguir la instalación original: https://github.com/nanobrowser/nanobrowser/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: automatizar tareas repetitivas en webs donde ya tienes la sesión iniciada; investigar y resumir información de varias páginas desde el panel lateral",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "ollama",
+        "llama-cpp",
+        "vllm",
+        "puppeteer"
+      ],
+      "alt": []
+    },
+    {
       "id": "playwright",
       "name": "playwright",
       "cat": 32,
@@ -105321,7 +107956,9 @@
       ],
       "alt": [
         "puppeteer",
-        "selenium"
+        "selenium",
+        "cypress",
+        "webdriverio"
       ]
     },
     {
@@ -105561,11 +108198,15 @@
       "combines_with": [
         "lightpanda",
         "chrome-devtools-mcp",
-        "awesome-chrome-devtools"
+        "awesome-chrome-devtools",
+        "nanobrowser",
+        "steel-browser"
       ],
       "alt": [
         "playwright",
-        "selenium"
+        "selenium",
+        "cypress",
+        "webdriverio"
       ]
     },
     {
@@ -105679,11 +108320,132 @@
       "combines_with": [
         "mitmproxy",
         "activepieces",
-        "claude-code"
+        "claude-code",
+        "flaresolverr",
+        "steel-browser",
+        "ladybird"
       ],
       "alt": [
         "playwright",
-        "puppeteer"
+        "puppeteer",
+        "cypress",
+        "webdriverio"
+      ]
+    },
+    {
+      "id": "servo",
+      "name": "Servo",
+      "cat": 32,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "browser",
+        "engine",
+        "rust",
+        "embedding"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/servo/servo/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1481211a7cc7e7fca3dd464cd650a8d76fdc7bf9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+          "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+          "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/servo/servo/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala Rust y las dependencias del sistema según el README y ejecuta `./mach build` y `./mach run https://servo.org`.",
+        "success": "Abres una web con el navegador de demostración de Servo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "incrustar renderizado web en una aplicación Rust sin depender de Chromium",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "experimentar con un motor de navegador moderno y seguro en memoria",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/servo/servo/blob/main/README.md",
+        "source_blob_sha": "1481211a7cc7e7fca3dd464cd650a8d76fdc7bf9",
+        "previous_category": [
+          32,
+          "motores-web"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.",
+      "desc": "Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.",
+      "stack": "Rust, Cargo.toml, pyproject.toml",
+      "repo": "https://github.com/servo/servo",
+      "install": "Seguir la instalación original: https://github.com/servo/servo/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: incrustar renderizado web en una aplicación Rust sin depender de Chromium; experimentar con un motor de navegador moderno y seguro en memoria",
+      "avoid_if": "no quieres preparar modelos, dependencias y hardware propios",
+      "combines_with": [
+        "selenium",
+        "webdriverio",
+        "mitmproxy"
+      ],
+      "alt": [
+        "ladybird"
       ]
     },
     {
@@ -105933,11 +108695,247 @@
       "combines_with": [
         "claude-code",
         "lightpanda",
-        "firecrawl"
+        "firecrawl",
+        "steel-browser"
       ],
       "alt": [
         "browser-use",
         "skyvern"
+      ]
+    },
+    {
+      "id": "steel-browser",
+      "name": "Steel Browser",
+      "cat": 32,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "browser",
+        "api",
+        "agents",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/steel-dev/steel-browser/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "b773847813309bd45256feb9af5c60e93cd63a47"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -p 3000:3000 -p 9223:9223 ghcr.io/steel-dev/steel-browser",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/steel-dev/steel-browser/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta el contenedor con Docker y abre la interfaz en `http://localhost:3000/ui` o llama a la API en el puerto 3000.",
+        "success": "Puedes crear una sesión y conectar Puppeteer o Playwright a ella.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "dar a un agente de IA un navegador aislado y persistente sin montar infraestructura",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "extraer páginas o capturas mediante una API REST propia",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/steel-dev/steel-browser/blob/main/README.md",
+        "source_blob_sha": "b773847813309bd45256feb9af5c60e93cd63a47",
+        "previous_category": [
+          32,
+          "agentes-web"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o S",
+      "desc": "API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium.",
+      "stack": "TypeScript, Dockerfile, docker-compose.yml, package.json",
+      "repo": "https://github.com/steel-dev/steel-browser",
+      "install": "docker run -p 3000:3000 -p 9223:9223 ghcr.io/steel-dev/steel-browser",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: dar a un agente de IA un navegador aislado y persistente sin montar infraestructura; extraer páginas o capturas mediante una API REST propia",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "puppeteer",
+        "playwright",
+        "selenium",
+        "browser-use",
+        "stagehand",
+        "webdriverio"
+      ],
+      "alt": []
+    },
+    {
+      "id": "webdriverio",
+      "name": "WebdriverIO",
+      "cat": 32,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "testing",
+        "e2e",
+        "webdriver",
+        "mobile"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/webdriverio/webdriverio/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2619a4f91e60c998c64c99d6fc7032284220f3d3"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/webdriverio/webdriverio/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En un proyecto ejecuta el asistente `npm init wdio@latest .` y lanza la prueba de ejemplo.",
+        "success": "Ves el navegador abrirse y la prueba pasar en la terminal.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "probar una web en varios navegadores reales con protocolos estándar",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "automatizar pruebas de apps iOS y Android con Appium",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/webdriverio/webdriverio/blob/main/README.md",
+        "source_blob_sha": "2619a4f91e60c998c64c99d6fc7032284220f3d3",
+        "previous_category": [
+          32,
+          "bibliotecas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA.",
+      "desc": "Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/webdriverio/webdriverio",
+      "install": "Seguir la instalación original: https://github.com/webdriverio/webdriverio/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: probar una web en varios navegadores reales con protocolos estándar; automatizar pruebas de apps iOS y Android con Appium",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "claude-code",
+        "steel-browser",
+        "ladybird",
+        "servo"
+      ],
+      "alt": [
+        "cypress",
+        "playwright",
+        "selenium",
+        "puppeteer"
       ]
     }
   ]

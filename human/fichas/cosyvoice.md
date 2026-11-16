@@ -119,6 +119,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Fish Speech](fish-speech.md) | 33.7k | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. |
 | [IndexTTS](index-tts.md) | 25.1k | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. |
+| [F5-TTS](f5-tts.md) | 15.6k | Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI. |
 
 ## Enlaces
 

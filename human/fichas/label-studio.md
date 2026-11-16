@@ -109,6 +109,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `data` `vision` `training` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [CVAT Community](cvat.md) | 17.1k | Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets. |
+
 ## Enlaces
 
 - 🐙 GitHub: [HumanSignal/label-studio](https://github.com/HumanSignal/label-studio)

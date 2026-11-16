@@ -4,7 +4,7 @@
 
 Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
 
-59 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
+63 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
 
 ## Opciones para empezar
 
@@ -72,14 +72,18 @@ Preparar y exportar una presentación.
 
 Explicar sistemas e ideas mediante diagramas.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-diagramas)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-diagramas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [archify](../fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | Sin clave propia de API de IA en la ruta básica |
+| [D2](../fichas/d2.md) | Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos. | Sin clave propia de API de IA en la ruta básica |
 | [diagram-design](../fichas/diagram-design.md) | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | Sin clave propia de API de IA en la ruta básica |
+| [draw.io](../fichas/drawio.md) | Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML. | Sin clave propia de API de IA en la ruta básica |
 | [Excalidraw](../fichas/excalidraw.md) | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. | Sin clave propia de API de IA en la ruta básica |
+| [Kroki](../fichas/kroki.md) | Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG. | Sin clave propia de API de IA en la ruta básica |
 | [Mermaid](../fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | Sin clave propia de API de IA en la ruta básica |
+| [PlantUML](../fichas/plantuml.md) | Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto. | Sin clave propia de API de IA en la ruta básica |
 
 ### Preguntar a documentos y buscar conocimiento
 

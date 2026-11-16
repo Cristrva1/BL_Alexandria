@@ -251,6 +251,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `remotion`, `ffmpeg`, `openfilm`, `pixijs`
 
+## `motion-canvas`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=animation,typescript,video,code
+
+**Qué es:** Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/motion-canvas/motion-canvas
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/motion-canvas/motion-canvas/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer vídeos explicativos de programación o matemáticas con animaciones precisas; sincronizar animaciones con una narración grabada
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Ejecuta `npm init @motion-canvas@latest`, entra en la carpeta, ejecuta `npm install` y `npm start`, y abre el editor.
+**Qué comprobar:** Ves la escena de ejemplo y puedes editar el código con recarga en vivo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `kokoro`, `claude-code`
+**Alternativas (elige una):** `revideo`, `remotion`
+
 ## `motionmaxxing`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
 
@@ -465,7 +496,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes reproducir y exportar un clip con inicio y fin definidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `skills-remotion`, `remotion-superpowers`, `gsap`
-**Alternativas (elige una):** `moviepy`, `hyperframes`
+**Alternativas (elige una):** `moviepy`, `hyperframes`, `motion-canvas`, `revideo`
 
 ## `remotion-superpowers`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills,coding-agent
@@ -498,6 +529,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `remotion`, `skills-remotion`, `claude-code`, `elevenlabs-python`
 **Alternativas (elige una):** `openmontage`, `video-use`
+
+## `revideo`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,typescript,rendering,code
+
+**Qué es:** Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/midrender/revideo
+
+**Instalación** [+]:
+
+```
+npm init @revideo@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar muchas variantes de un vídeo a partir de datos o plantillas; añadir un renderizador de vídeo a una aplicación web
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Ejecuta `npm init @revideo@latest` y sigue el asistente; después renderiza el proyecto de ejemplo.
+**Qué comprobar:** Obtienes un MP4 generado desde código.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `ffmpeg`
+**Alternativas (elige una):** `motion-canvas`, `remotion`
 
 ## `skills-remotion`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills

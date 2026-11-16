@@ -61,6 +61,12 @@
      "motivo": "Combinación recíproca: rembg lo enlaza como «Interfaz web rápida para uso interno. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde rembg: Envuelve `remove()` en una app Gradio.",
      "reciproca_de": "rembg"
+    },
+    {
+     "id": "f5-tts",
+     "motivo": "Combinación recíproca: F5-TTS lo enlaza como «F5-TTS incluye una aplicación web Gradio (`f5-tts_infer-gradio`) para generar voz sin programar».",
+     "orden_instalacion": "Orden indicado desde F5-TTS: Instala F5-TTS (incluye Gradio); después ejecuta `f5-tts_infer-gradio`.",
+     "reciproca_de": "f5-tts"
     }
    ],
    "notas": "Alternativas (elige una): streamlit.",

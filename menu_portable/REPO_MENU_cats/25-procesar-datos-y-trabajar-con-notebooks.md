@@ -334,7 +334,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una interfaz para una función simple de texto y pruébala localmente antes de compartir un enlace
 **Qué comprobar:** Puedes ver la relación entre entrada, función y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `llama-factory`, `ollama`, `rembg`
+**Combina con:** `transformers`, `llama-factory`, `ollama`, `rembg`, `f5-tts`
 **Alternativas (elige una):** `streamlit`, `reflex`, `nicegui`, `panel`
 
 ## `hudi`

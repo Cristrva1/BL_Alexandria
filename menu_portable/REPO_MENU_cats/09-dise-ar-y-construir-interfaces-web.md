@@ -216,7 +216,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja tres pasos de un proceso y exporta el diagrama como imagen
 **Qué comprobar:** Puedes abrir la imagen y conservar el archivo editable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `penpot`, `flexoki`
+**Combina con:** `claude-code`, `penpot`, `flexoki`, `kroki`
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
 ## `flexoki`
@@ -802,7 +802,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta el comando de inicialización de Storybook en un proyecto web de prueba y abre el servidor local.
 **Qué comprobar:** Aparecen las stories de ejemplo y puedes cambiar sus props desde el panel de controles.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `tailwindcss`, `mantine`, `chakra-ui`
+**Combina con:** `playwright`, `tailwindcss`, `mantine`, `chakra-ui`, `cypress`
 
 ## `swr`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript
