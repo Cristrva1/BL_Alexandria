@@ -30,6 +30,8 @@ Los activos se declaran como funciones Python decoradas y sus dependencias se de
 | [Polars](polars.md) | Existe la integración dagster-polars para manejar DataFrames de Polars como activos con IO managers en Parquet o Delta. | Instala dagster-polars; después declara los activos que devuelven DataFrames de Polars. |
 | [MLflow](mlflow.md) | Dagster puede materializar modelos como activos mientras MLflow registra parámetros y métricas de entrenamiento (combinación por arquitectura). | Servidor de MLflow primero; después activos de Dagster que usen su cliente. |
 | [Claude Code](claude-code.md) | Las definiciones son Python y la CLI dg permite crear y validar proyectos, lo que facilita que un agente de código los genere y pruebe (combinación por arquitectura). | Proyecto Dagster local; después pide al agente activos nuevos y valídalos con la CLI. |
+| [dbt](dbt.md) | Combinación recíproca: dbt lo enlaza como «La biblioteca dagster-dbt carga los modelos de un proyecto dbt como assets de Dagster para orquestarlos y monitorizarlos». | Orden indicado desde dbt: Instala `dagster-dbt`; después carga el proyecto dbt con `@dbt_assets`. |
+| [dlt (data load tool)](dlt.md) | Combinación recíproca: dlt (data load tool) lo enlaza como «La biblioteca dagster-dlt carga los recursos de dlt como assets de Dagster». | Orden indicado desde dlt (data load tool): Instala `dagster-dlt`; después declara los assets con `@dlt_assets`. |
 
 **Notas:** Alternativas (elige una): airflow, prefect, kestra.
 

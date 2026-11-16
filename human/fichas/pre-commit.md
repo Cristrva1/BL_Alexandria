@@ -31,6 +31,7 @@ Escrito en Python; se instala con pip o gestores de paquetes y se activa con `pr
 | [TruffleHog](trufflehog.md) | TruffleHog se puede ejecutar como hook para escanear cambios antes del commit. | pre-commit instalado; después añade el hook de TruffleHog. |
 | [Biome](biome.md) | Biome publica hooks oficiales para pre-commit. | pre-commit instalado; después añade los hooks de Biome. |
 | [Semgrep](semgrep.md) | Semgrep ofrece un hook de pre-commit para analizar los archivos modificados. | pre-commit instalado; después añade el hook de Semgrep con su configuración. |
+| [Trivy](trivy.md) | Combinación recíproca: Trivy lo enlaza como «Un hook local de pre-commit puede lanzar `trivy fs` o el escaneo de secretos antes de cada commit (combinación por arquitectura)». | Orden indicado desde Trivy: Instala Trivy; después define un hook local en .pre-commit-config.yaml. |
 
 **Notas:** Los hooks se descargan de repositorios externos: fija revisiones y revisa su origen.
 

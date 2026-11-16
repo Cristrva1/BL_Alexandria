@@ -30,6 +30,8 @@ Se clona el repo, se instalan dependencias de PyTorch y BasicSR y se ejecuta `in
 | [ComfyUI](comfyui.md) | Restaurar caras dentro de flujos de ComfyUI con nodos de la comunidad. (combinación por arquitectura) | Instala un nodo de restauración facial compatible. |
 | [rembg](rembg.md) | Recortar el retrato restaurado. (combinación por arquitectura) | Restaura con CodeFormer y quita el fondo con rembg. |
 | [Deep-Live-Cam](deep-live-cam.md) | Combinación recíproca: Deep-Live-Cam lo enlaza como «Restaurar rostros en vídeo procesado offline. (combinación por arquitectura)». | Orden indicado desde Deep-Live-Cam: Aplica sobre los fotogramas. |
+| [Upscayl](upscayl.md) | Combinación recíproca: Upscayl lo enlaza como «Para retratos, CodeFormer restaura rostros antes o después de ampliar la imagen con Upscayl (combinación por arquitectura)». | Orden indicado desde Upscayl: Restaura con CodeFormer; después amplía con Upscayl y compara. |
+| [chaiNNer](chainner.md) | Combinación recíproca: chaiNNer lo enlaza como «Los modelos de restauración facial que soporta chaiNNer (vía spandrel) se encadenan con el escalado; CodeFormer sirve para comparar resultados en retratos (combinación por arquitectura)». | Orden indicado desde chaiNNer: Restaura con CodeFormer o un modelo facial compatible; después escala en chaiNNer. |
 
 **Notas:** Sin alternativas declaradas. Licencia no comercial.
 

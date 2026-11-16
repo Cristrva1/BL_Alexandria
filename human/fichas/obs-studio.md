@@ -33,6 +33,12 @@ Se instala con los instaladores oficiales o paquetes de la distribución. Está 
 | [Deep-Live-Cam](deep-live-cam.md) | Combinación recíproca: Deep-Live-Cam lo enlaza como «Emitir la cámara virtual. (combinación por arquitectura)». | Orden indicado desde Deep-Live-Cam: Captura la salida en OBS. |
 | [RVC WebUI](rvc.md) | Combinación recíproca: RVC WebUI lo enlaza como «Cambiador de voz en tiempo real para streaming. (combinación por arquitectura)». | Orden indicado desde RVC WebUI: Enruta el audio a OBS. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[HandBrake](handbrake.md) · [Kdenlive](kdenlive.md) · [Shotcut](shotcut.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 33.0.1 (2026-10-29) · licencia declarada GPL-2.0 (consultado el 2026-11-15).

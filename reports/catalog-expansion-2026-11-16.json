@@ -365,12 +365,1376 @@
         "license": "MIT",
         "pushed_at": "2026-11-06"
       }
+    ],
+    "p03": [
+      {
+        "id": "storybook",
+        "full_name": "storybookjs/storybook",
+        "github_id": 54173593,
+        "readme_blob_sha": "cbcab61d0d47bf48f89215a05a2a0d304f2d2250",
+        "stars": 91581,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "leaflet",
+        "full_name": "Leaflet/Leaflet",
+        "github_id": 931135,
+        "readme_blob_sha": "0cbf2fc130b3c1470dd3aaa3f2f82d15615f4304",
+        "stars": 45933,
+        "license": "BSD-2-Clause",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "sherlock",
+        "full_name": "sherlock-project/sherlock",
+        "github_id": 162998479,
+        "readme_blob_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+        "stars": 112706,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "maigret",
+        "full_name": "soxoj/maigret",
+        "github_id": 275386910,
+        "readme_blob_sha": "6f4a4cf717fdbd2bb84b6cfcb6612aba5fede71b",
+        "stars": 40774,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "upscayl",
+        "full_name": "upscayl/upscayl",
+        "github_id": 519577891,
+        "readme_blob_sha": "f102b2d39a5b0aeb9199e1a2823db07dd694fa16",
+        "stars": 52711,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "handbrake",
+        "full_name": "HandBrake/HandBrake",
+        "github_id": 41215835,
+        "readme_blob_sha": "880f735211000624ee8f35959d6fcf34b4378f85",
+        "stars": 25017,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "ltx-2",
+        "full_name": "Lightricks/LTX-2",
+        "github_id": 1127234517,
+        "readme_blob_sha": "de9c6d5b76e133a3973985b0ca41b473b441a597",
+        "stars": 10259,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "surya",
+        "full_name": "datalab-to/surya",
+        "github_id": 741297064,
+        "readme_blob_sha": "3fa746aac8f22d258086d77f27f5a2c5e948cff6",
+        "stars": 21593,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "chakra-ui",
+        "full_name": "chakra-ui/chakra-ui",
+        "github_id": 202890778,
+        "readme_blob_sha": "693a61a6a94bab0eea0e7e1a5adae42e1e85b896",
+        "stars": 40727,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mantine",
+        "full_name": "mantinedev/mantine",
+        "github_id": 327628682,
+        "readme_blob_sha": "d2eb802b62933bfb934ce29bf59fb7d5d4f69165",
+        "stars": 31948,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "evidence",
+        "full_name": "evidence-dev/evidence",
+        "github_id": 371239231,
+        "readme_blob_sha": "22ef3a6534a4eb11382c718946cc7fc24cb42621",
+        "stars": 7119,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "qgis",
+        "full_name": "qgis/QGIS",
+        "github_id": 1690480,
+        "readme_blob_sha": "6b31e11f091b69bf1b8ae72a6dceaae48333cb27",
+        "stars": 14842,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "deck.gl",
+        "full_name": "visgl/deck.gl",
+        "github_id": 48030204,
+        "readme_blob_sha": "aa8b0cba915c1d3130a6f50a2ff0dbf45956f0cc",
+        "stars": 14760,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "maplibre",
+        "full_name": "maplibre/maplibre-gl-js",
+        "github_id": 319779344,
+        "readme_blob_sha": "003feca1715ba46dcfd1ee452934b45410409bd6",
+        "stars": 12101,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kepler.gl",
+        "full_name": "keplergl/kepler.gl",
+        "github_id": 123345344,
+        "readme_blob_sha": "a952281179fbcc9f0f8e5198504b1311225ffa44",
+        "stars": 12096,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "theharvester",
+        "full_name": "laramies/theHarvester",
+        "github_id": 1212922,
+        "readme_blob_sha": "cb3a8ddae1634fefaaed1c5f45328cff3bd32df0",
+        "stars": 18328,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "recon-ng",
+        "full_name": "lanmaster53/recon-ng",
+        "github_id": 178254323,
+        "readme_blob_sha": "c1134b41d4c82cde38ea5def314b1a88321fec9d",
+        "stars": 6050,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-10-05"
+      },
+      {
+        "id": "chainner",
+        "full_name": "chaiNNer-org/chaiNNer",
+        "github_id": 404144554,
+        "readme_blob_sha": "0207ea1fa6ad9019f22a2765f8c01ef23c258a62",
+        "stars": 6172,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "shotcut",
+        "full_name": "mltframework/shotcut",
+        "github_id": 4118776,
+        "readme_blob_sha": "6b878f53252d686ea72b3bb5969af8bc44c19b8e",
+        "stars": 15698,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kdenlive",
+        "full_name": "KDE/kdenlive",
+        "github_id": 42723268,
+        "readme_blob_sha": "aafacd56d79aeb85ff57fe1cfbbfd8e6a585db6d",
+        "stars": 6122,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "xberg",
+        "full_name": "xberg-io/xberg",
+        "github_id": 925434317,
+        "readme_blob_sha": "1a96d41c9746e03feeb5c372b01d8bc25ed13035",
+        "stars": 9590,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "tika",
+        "full_name": "apache/tika",
+        "github_id": 206427,
+        "readme_blob_sha": "f910de770cc4c5f120eb25aca5bc106bf4b8a027",
+        "stars": 4150,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      }
+    ],
+    "p04": [
+      {
+        "id": "openbb",
+        "full_name": "openbq-org/OpenBB",
+        "github_id": 323048702,
+        "readme_blob_sha": "50b697682036bd8de1ace483ed7ded872add87e7",
+        "stars": 75460,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "immich",
+        "full_name": "immich-app/immich",
+        "github_id": 455229168,
+        "readme_blob_sha": "79d6e2d4672a1a0fbf39c3bfe30cdecb30a2dc5a",
+        "stars": 119326,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "frigate",
+        "full_name": "blakeblackshear/frigate",
+        "github_id": 167694194,
+        "readme_blob_sha": "1fb158b19161962d49473aa6659356e684434121",
+        "stars": 37493,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "jellyfin",
+        "full_name": "jellyfin/jellyfin",
+        "github_id": 161012019,
+        "readme_blob_sha": "ee9067a68bfaae9fd368bc7e38ad86aa1bcd4de8",
+        "stars": 59415,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "memos",
+        "full_name": "usememos/memos",
+        "github_id": 436297812,
+        "readme_blob_sha": "69210e53c4d2b84435362adae94997ca3c6db0a0",
+        "stars": 64495,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "pi-hole",
+        "full_name": "pi-hole/pi-hole",
+        "github_id": 20619036,
+        "readme_blob_sha": "7ec57000aafa867ecd1c191366c9a7df08846bdb",
+        "stars": 62046,
+        "license": "EUPL-1.2",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "fingpt",
+        "full_name": "AI4Finance-Foundation/FinGPT",
+        "github_id": 600544354,
+        "readme_blob_sha": "6210432880cacb4e8c773d5a2bb155b8f585e5ed",
+        "stars": 21581,
+        "license": "MIT",
+        "pushed_at": "2026-10-25"
+      },
+      {
+        "id": "yfinance",
+        "full_name": "ranaroussi/yfinance",
+        "github_id": 91948540,
+        "readme_blob_sha": "1a88866061ee62abf6722ef068029aefcf419fc4",
+        "stars": 25930,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "backtesting-py",
+        "full_name": "kernc/backtesting.py",
+        "github_id": 163788469,
+        "readme_blob_sha": "d9b511b02c93b00fb454d51e3a7e011653e41b6d",
+        "stars": 9245,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-08-05"
+      },
+      {
+        "id": "photoprism",
+        "full_name": "photoprism/photoprism",
+        "github_id": 119160553,
+        "readme_blob_sha": "8f39569d3869d13d9834f1a70c0cf202d17d0317",
+        "stars": 40454,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "zigbee2mqtt",
+        "full_name": "Koenkk/zigbee2mqtt",
+        "github_id": 128636610,
+        "readme_blob_sha": "0fc292ca8a1e9dd58fa67799945b58c587b9648e",
+        "stars": 15830,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "esphome",
+        "full_name": "esphome/esphome",
+        "github_id": 128479644,
+        "readme_blob_sha": "16497ee0be21c8eddbfd6941f78e35bc07a147a2",
+        "stars": 12111,
+        "license": "MIT + GPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "calibre-web",
+        "full_name": "janeczku/calibre-web",
+        "github_id": 40089578,
+        "readme_blob_sha": "e32fe7f8423183064007766f6870f5dface4043e",
+        "stars": 18568,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kavita",
+        "full_name": "Kareadita/Kavita",
+        "github_id": 320936145,
+        "readme_blob_sha": "3a5f9d7572aaec4042dfc7c3c62e1c1f28186036",
+        "stars": 12135,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "joplin",
+        "full_name": "laurent22/joplin",
+        "github_id": 79162682,
+        "readme_blob_sha": "6f9f342fa1f579f868cc40ae6ddb31bb2d94e2d4",
+        "stars": 57199,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "siyuan",
+        "full_name": "siyuan-note/siyuan",
+        "github_id": 291438522,
+        "readme_blob_sha": "ad72a90695ddd4212ee3a7d21285c6948373a0a6",
+        "stars": 47247,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "logseq",
+        "full_name": "logseq/logseq",
+        "github_id": 266231149,
+        "readme_blob_sha": "662bad17d543ea6865cd8d146c91478858436dc2",
+        "stars": 45607,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "trilium",
+        "full_name": "TriliumNext/Trilium",
+        "github_id": 92111509,
+        "readme_blob_sha": "e686e04e62c5659dd7e5c19120ee9e5fc1aed87d",
+        "stars": 38959,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "actual",
+        "full_name": "actualbudget/actual",
+        "github_id": 486815039,
+        "readme_blob_sha": "57e95060c5009be43140f4140eaf8c3d170a4a79",
+        "stars": 30292,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "firefly-iii",
+        "full_name": "firefly-iii/firefly-iii",
+        "github_id": 21298446,
+        "readme_blob_sha": "2cc76d511ff9d0f170e5d8b7371cf7640d12e8f3",
+        "stars": 25260,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "ghostfolio",
+        "full_name": "ghostfolio/ghostfolio",
+        "github_id": 357671824,
+        "readme_blob_sha": "f8c3c92b8995e58156055639078f61f87b0597dd",
+        "stars": 9713,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      }
+    ],
+    "p05": [
+      {
+        "id": "garak",
+        "full_name": "NVIDIA/garak",
+        "github_id": 639097338,
+        "readme_blob_sha": "29d7e4f4c740f1252c64b1b15045abfc7bd71051",
+        "stars": 10043,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-06"
+      },
+      {
+        "id": "trivy",
+        "full_name": "aquasecurity/trivy",
+        "github_id": 180687624,
+        "readme_blob_sha": "9ba2df0ea662b376ec36db33ed6a0120ae197b13",
+        "stars": 39390,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "metasploit",
+        "full_name": "rapid7/metasploit-framework",
+        "github_id": 2293158,
+        "readme_blob_sha": "d8eacb7cb613ce5ad7178fa3c5c5d40f406acb9b",
+        "stars": 39584,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "sqlmap",
+        "full_name": "sqlmapproject/sqlmap",
+        "github_id": 4793392,
+        "readme_blob_sha": "f5edd06c53b30dfb717cb6a8b88f7b804c08922e",
+        "stars": 38961,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "nuclei",
+        "full_name": "projectdiscovery/nuclei",
+        "github_id": 252813491,
+        "readme_blob_sha": "772f61ee87ac3396175d677d777dae50b5155982",
+        "stars": 32965,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "nmap",
+        "full_name": "nmap/nmap",
+        "github_id": 3671479,
+        "readme_blob_sha": "58c58fe4af0767049ce31b3b78affc0052c5eba9",
+        "stars": 14000,
+        "license": "NPSL (no OSI)",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "ml-for-beginners",
+        "full_name": "microsoft/ML-For-Beginners",
+        "github_id": 343965132,
+        "readme_blob_sha": "b4669359167ec6995991a01cbfa981119e885cea",
+        "stars": 92213,
+        "license": "MIT",
+        "pushed_at": "2026-11-07"
+      },
+      {
+        "id": "agents-course",
+        "full_name": "huggingface/agents-course",
+        "github_id": 917868934,
+        "readme_blob_sha": "540d14ac71b29b3ea5569371e21690fa0c4bb077",
+        "stars": 35017,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-10"
+      },
+      {
+        "id": "wazuh",
+        "full_name": "wazuh/wazuh",
+        "github_id": 40556106,
+        "readme_blob_sha": "c99b4e496ad763bd72254ff0320e3e06a6353efb",
+        "stars": 17760,
+        "license": "GPL-2.0 + AGPL-3.0 (partes)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "lynis",
+        "full_name": "CISOfy/lynis",
+        "github_id": 15078635,
+        "readme_blob_sha": "95936beec55fcbd8d06f776b9419459a9d36a78d",
+        "stars": 16695,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-09-16"
+      },
+      {
+        "id": "crowdsec",
+        "full_name": "crowdsecurity/crowdsec",
+        "github_id": 264154402,
+        "readme_blob_sha": "5a4bb31438a2f1c9d313db17550b6bd382d1dafd",
+        "stars": 15643,
+        "license": "MIT",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "locust",
+        "full_name": "locustio/locust",
+        "github_id": 1377867,
+        "readme_blob_sha": "9bde2ba9d37e1642f4ea6928e55eafe4c8d2f50c",
+        "stars": 28288,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "hashcat",
+        "full_name": "hashcat/hashcat",
+        "github_id": 47409672,
+        "readme_blob_sha": "4697d6ce30d990fa8d1c4bc915da5bd3e7f40b81",
+        "stars": 27357,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "ffuf",
+        "full_name": "ffuf/ffuf",
+        "github_id": 156681830,
+        "readme_blob_sha": "3151a056a06c5870a9aa573827f5cdf3eb2c7756",
+        "stars": 17065,
+        "license": "MIT",
+        "pushed_at": "2026-09-26"
+      },
+      {
+        "id": "zaproxy",
+        "full_name": "zaproxy/zaproxy",
+        "github_id": 36817565,
+        "readme_blob_sha": "e5efcf16bf926466a0dbb8e29f146884df227f05",
+        "stars": 16198,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "subfinder",
+        "full_name": "projectdiscovery/subfinder",
+        "github_id": 127519518,
+        "readme_blob_sha": "2731bedf85fe0d0c6468f5d0d24eac25955a8c66",
+        "stars": 14812,
+        "license": "MIT",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "john",
+        "full_name": "openwall/john",
+        "github_id": 2997204,
+        "readme_blob_sha": "d14b3c0bc01351d3dfd6a883d460d9e12dfb739c",
+        "stars": 13935,
+        "license": "GPL-2.0 (con partes bajo otras licencias)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "wireshark",
+        "full_name": "wireshark/wireshark",
+        "github_id": 21329550,
+        "readme_blob_sha": "8f1d96edc95b767b4ee3182a12f6aa52aab26d90",
+        "stars": 10226,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "bloodhound",
+        "full_name": "SpecterOps/BloodHound",
+        "github_id": 674367771,
+        "readme_blob_sha": "88b5b5c9319268ad2e90421125e98893b0feb6fd",
+        "stars": 3570,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "annotated-dl-papers",
+        "full_name": "labmlai/annotated_deep_learning_paper_implementations",
+        "github_id": 290091948,
+        "readme_blob_sha": "706d38e26fa3a2c180e69324127b0c4b9774aee5",
+        "stars": 67752,
+        "license": "MIT",
+        "pushed_at": "2026-11-02"
+      }
+    ],
+    "p06": [
+      {
+        "id": "python-telegram-bot",
+        "full_name": "python-telegram-bot/python-telegram-bot",
+        "github_id": 38696925,
+        "readme_blob_sha": "62b3e41f940c1d4c33bc6be58175d11adcdd4e00",
+        "stars": 29594,
+        "license": "LGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kilocode",
+        "full_name": "Kilo-Org/kilocode",
+        "github_id": 946087422,
+        "readme_blob_sha": "a1944bab3c3e6b5586f5a9065bd5df1cd7cc1e28",
+        "stars": 28010,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "qwen-code",
+        "full_name": "QwenLM/qwen-code",
+        "github_id": 1008713177,
+        "readme_blob_sha": "f1452ecb9f78089da829c77c368fdf048f3eef08",
+        "stars": 30566,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "uptime-kuma",
+        "full_name": "louislam/uptime-kuma",
+        "github_id": 382496361,
+        "readme_blob_sha": "eb23a1b7e8d53bf2d92daa69c62d420d7ddce447",
+        "stars": 94452,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "dokploy",
+        "full_name": "Dokploy/dokploy",
+        "github_id": 788847937,
+        "readme_blob_sha": "4e78a277017d4f87202013cbf71037034a6bce83",
+        "stars": 38545,
+        "license": "Apache-2.0 + licencia propietaria (/proprietary)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "frp",
+        "full_name": "fatedier/frp",
+        "github_id": 48378947,
+        "readme_blob_sha": "d1998eaa69391414fb88be1e8fa9d031b58b9c5b",
+        "stars": 110591,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-10"
+      },
+      {
+        "id": "headscale",
+        "full_name": "juanfont/headscale",
+        "github_id": 273871859,
+        "readme_blob_sha": "c3a854f0a4ceaccca621af3610f05ef8fc88ab13",
+        "stars": 45750,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "discord-js",
+        "full_name": "discordjs/discord.js",
+        "github_id": 40484398,
+        "readme_blob_sha": "ae445fec90fd5ee35d26cc9f6c6855a568760c90",
+        "stars": 26837,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "rocket-chat",
+        "full_name": "RocketChat/Rocket.Chat",
+        "github_id": 35866694,
+        "readme_blob_sha": "84109f3b1b39bb78f0574bda1763139c4f9a415e",
+        "stars": 46515,
+        "license": "MIT + licencia Enterprise (ee/)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mattermost",
+        "full_name": "mattermost/mattermost",
+        "github_id": 37448451,
+        "readme_blob_sha": "448f0f269a0c92f441527fe51704e3827696d190",
+        "stars": 39621,
+        "license": "AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "synapse",
+        "full_name": "element-hq/synapse",
+        "github_id": 731190011,
+        "readme_blob_sha": "599dafefb7ccba2bc834982fc71cd4ad532d99f6",
+        "stars": 4800,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "signal-cli",
+        "full_name": "AsamK/signal-cli",
+        "github_id": 35418187,
+        "readme_blob_sha": "a98f651c21501585c63a437da7bfda2be1a61175",
+        "stars": 5051,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "zammad",
+        "full_name": "zammad/zammad",
+        "github_id": 3898922,
+        "readme_blob_sha": "21fe878728b204c8863017b75d8fdfa43cf15248",
+        "stars": 6121,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "freescout",
+        "full_name": "freescout-help-desk/freescout",
+        "github_id": 138328462,
+        "readme_blob_sha": "de54b533d51d454860ca982e9a48795f1c586f6b",
+        "stars": 4670,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "espocrm",
+        "full_name": "espocrm/espocrm",
+        "github_id": 24459441,
+        "readme_blob_sha": "62e9141a2e1cea7a15cb57e67bca8168531f54f9",
+        "stars": 3620,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "easyappointments",
+        "full_name": "alextselegidis/easyappointments",
+        "github_id": 27195711,
+        "readme_blob_sha": "e1678866560dc8dd2cb0d5c84328e114508e2360",
+        "stars": 4491,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "zed",
+        "full_name": "zed-industries/zed",
+        "github_id": 340547520,
+        "readme_blob_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
+        "stars": 95114,
+        "license": "GPL-3.0 (Apache-2.0 en componentes marcados)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mini-swe-agent",
+        "full_name": "SWE-agent/mini-swe-agent",
+        "github_id": 1010318950,
+        "readme_blob_sha": "7db1d82dfa92eaa00adeb10c8681677a9e6ec639",
+        "stars": 9643,
+        "license": "MIT",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "caddy",
+        "full_name": "caddyserver/caddy",
+        "github_id": 29207621,
+        "readme_blob_sha": "24b466d8c42d1b198ac13e49d81ad53df8b6328d",
+        "stars": 79083,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "traefik",
+        "full_name": "traefik/traefik",
+        "github_id": 42408804,
+        "readme_blob_sha": "de1ddd2717d453af9c2f597247011da8227a345b",
+        "stars": 65563,
+        "license": "MIT",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "appwrite",
+        "full_name": "appwrite/appwrite",
+        "github_id": 180190854,
+        "readme_blob_sha": "39a96d254f1d23e622630e5004d54a9de331ef7d",
+        "stars": 58106,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "portainer",
+        "full_name": "portainer/portainer",
+        "github_id": 59239347,
+        "readme_blob_sha": "98b8f608aef5a9004b5add91bc186d32f5faea12",
+        "stars": 38833,
+        "license": "Zlib",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "netbird",
+        "full_name": "netbirdio/netbird",
+        "github_id": 357897199,
+        "readme_blob_sha": "4dbfc7bd0b8236c4d60c3e1be90046c0457ce9d6",
+        "stars": 31035,
+        "license": "BSD-3-Clause + AGPL-3.0 (management, signal, relay)",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "wg-easy",
+        "full_name": "wg-easy/wg-easy",
+        "github_id": 369764441,
+        "readme_blob_sha": "b80abcec5b9c25b6f4786fd588e19e41093b3def",
+        "stars": 27497,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-09"
+      }
+    ],
+    "p07": [
+      {
+        "id": "lm-eval-harness",
+        "full_name": "EleutherAI/lm-evaluation-harness",
+        "github_id": 290909192,
+        "readme_blob_sha": "76d494a86f1c41b9583defbbf394958b35b9a636",
+        "stars": 14481,
+        "license": "MIT",
+        "pushed_at": "2026-11-04"
+      },
+      {
+        "id": "scikit-learn",
+        "full_name": "scikit-learn/scikit-learn",
+        "github_id": 843222,
+        "readme_blob_sha": "cf30a4b3289a096a273ca490e1a846cf4c088795",
+        "stars": 68191,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "axolotl",
+        "full_name": "axolotl-ai-cloud/axolotl",
+        "github_id": 627727693,
+        "readme_blob_sha": "4a40d093efb907c0d19dc1f474fea97eb3e887da",
+        "stars": 12724,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "openllmetry",
+        "full_name": "traceloop/openllmetry",
+        "github_id": 686364232,
+        "readme_blob_sha": "65ac1c4c42121f8b2beb99058be4eb3cd3dc2999",
+        "stars": 7538,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "helicone",
+        "full_name": "Helicone/helicone",
+        "github_id": 595832198,
+        "readme_blob_sha": "0bfc46167e1a9056c564bf67173641f3dd96d498",
+        "stars": 6282,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "ray",
+        "full_name": "ray-project/ray",
+        "github_id": 71932349,
+        "readme_blob_sha": "a51e52cf34c013e2a7be0663e24b0fd098caf36c",
+        "stars": 44292,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "xinference",
+        "full_name": "xorbitsai/inference",
+        "github_id": 653496050,
+        "readme_blob_sha": "9adcf167e643f8b0ff64418763281898fbe323ff",
+        "stars": 9660,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "bentoml",
+        "full_name": "bentoml/BentoML",
+        "github_id": 178976529,
+        "readme_blob_sha": "f3fa37f9c4ab176951d40e20f16cbfc07efc798b",
+        "stars": 8941,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-02"
+      },
+      {
+        "id": "gpustack",
+        "full_name": "gpustack/gpustack",
+        "github_id": 799049436,
+        "readme_blob_sha": "6987b1354bc278f1b7dea893f5020d79a2f0dd81",
+        "stars": 6049,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "keras",
+        "full_name": "keras-team/keras",
+        "github_id": 33015583,
+        "readme_blob_sha": "da60850f49d6bac37ecf108b10c827894e95f49f",
+        "stars": 64424,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "deepspeed",
+        "full_name": "deepspeedai/DeepSpeed",
+        "github_id": 235860204,
+        "readme_blob_sha": "1e890bd018f58be9bf9491e2dda73d929777c72e",
+        "stars": 43330,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "jax",
+        "full_name": "jax-ml/jax",
+        "github_id": 154739597,
+        "readme_blob_sha": "6c1da50d9a243065cf6a24245ecc4d757379262c",
+        "stars": 36632,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "pytorch-lightning",
+        "full_name": "Lightning-AI/pytorch-lightning",
+        "github_id": 178626720,
+        "readme_blob_sha": "9f91e0eae154ae4ca3785b7c221fbf243cb3c92a",
+        "stars": 31450,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "verl",
+        "full_name": "verl-project/verl",
+        "github_id": 881221486,
+        "readme_blob_sha": "2c1a8d037eec7c27e0166e9d5b84116ff37b7bdb",
+        "stars": 24239,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "openrlhf",
+        "full_name": "OpenRLHF/OpenRLHF",
+        "github_id": 672415139,
+        "readme_blob_sha": "f117521d7159c797d5be39062ea22e9516006322",
+        "stars": 10157,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-03"
+      },
+      {
+        "id": "accelerate",
+        "full_name": "huggingface/accelerate",
+        "github_id": 308638334,
+        "readme_blob_sha": "344d31807fcb44ec034e2606233b7845b7b28942",
+        "stars": 9949,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "torchtune",
+        "full_name": "meta-pytorch/torchtune",
+        "github_id": 707869465,
+        "readme_blob_sha": "ad44a8d6006a405940af040ded29ce3c2f21922f",
+        "stars": 5817,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "gemma",
+        "full_name": "google-deepmind/gemma",
+        "github_id": 760683276,
+        "readme_blob_sha": "21415fad49cd6af0db5e52261ed95caf102d7f7b",
+        "stars": 5853,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-10-28"
+      }
+    ],
+    "p08": [
+      {
+        "id": "pandas",
+        "full_name": "pandas-dev/pandas",
+        "github_id": 858127,
+        "readme_blob_sha": "9c759350971e68ffd2d8b26e1b49b832a475ddf0",
+        "stars": 50536,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "dbt",
+        "full_name": "dbt-labs/dbt",
+        "github_id": 53548867,
+        "readme_blob_sha": "e879e4e705dedb1f227e0889473cb9c9afc2dc5d",
+        "stars": 14175,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "reflex",
+        "full_name": "reflex-dev/reflex",
+        "github_id": 557075997,
+        "readme_blob_sha": "0922e274ca684794ac2bca6429817a51dd4c01f8",
+        "stars": 29029,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "nicegui",
+        "full_name": "zauberzeug/nicegui",
+        "github_id": 365250183,
+        "readme_blob_sha": "8d6ef2bc91c727941f49c02d80ef117f7fedc730",
+        "stars": 16342,
+        "license": "MIT",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "panel",
+        "full_name": "holoviz/panel",
+        "github_id": 145848899,
+        "readme_blob_sha": "2cf9b62e8c8a8cd005866910858c337e855e5ea0",
+        "stars": 5825,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "clickhouse",
+        "full_name": "ClickHouse/ClickHouse",
+        "github_id": 60246359,
+        "readme_blob_sha": "86f8e38b02f523cab27229f0f4203c2a45b9033b",
+        "stars": 50950,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "spark",
+        "full_name": "apache/spark",
+        "github_id": 17165658,
+        "readme_blob_sha": "9f5b2c59d9657a8c9d56c9051a3d39ff8acf1702",
+        "stars": 44536,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "arrow",
+        "full_name": "apache/arrow",
+        "github_id": 51905353,
+        "readme_blob_sha": "7ba3f56fce388c2ce16001f2cfa26f3d22d476ae",
+        "stars": 17301,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "pygwalker",
+        "full_name": "Kanaries/pygwalker",
+        "github_id": 602389947,
+        "readme_blob_sha": "4bb63fa0847d0f9a068a77890cfb44434cda0102",
+        "stars": 16009,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-09-05"
+      },
+      {
+        "id": "ibis",
+        "full_name": "ibis-project/ibis",
+        "github_id": 34139230,
+        "readme_blob_sha": "d4ce3c0ea135d7b6ae39dd41923c857e5a3469e9",
+        "stars": 6701,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "dlt",
+        "full_name": "dlt-hub/dlt",
+        "github_id": 452221115,
+        "readme_blob_sha": "8bc2249f4293ab09747379457605f1fc78c837e1",
+        "stars": 6096,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "godot",
+        "full_name": "godotengine/godot",
+        "github_id": 15634981,
+        "readme_blob_sha": "aa4bc5f484dbf486a2bd7f1773fdc7ec97f210e1",
+        "stars": 120252,
+        "license": "MIT",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "pixijs",
+        "full_name": "pixijs/pixijs",
+        "github_id": 7741856,
+        "readme_blob_sha": "6d27872539a6b9530f5dcc43fc8db27ef25bb8a5",
+        "stars": 48745,
+        "license": "MIT",
+        "pushed_at": "2026-11-11"
+      },
+      {
+        "id": "babylonjs",
+        "full_name": "BabylonJS/Babylon.js",
+        "github_id": 11007313,
+        "readme_blob_sha": "dae9a1a73cd3250f9b616b1b81af46801eebe65f",
+        "stars": 26376,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "playcanvas",
+        "full_name": "playcanvas/engine",
+        "github_id": 19696006,
+        "readme_blob_sha": "2e23aa6bdb4b5bc6821efb16d199e75dc0e29ccc",
+        "stars": 17306,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "bevy",
+        "full_name": "bevyengine/bevy",
+        "github_id": 234798675,
+        "readme_blob_sha": "f7642983953bc5028424231fb75f182637bcd4ee",
+        "stars": 49777,
+        "license": "MIT OR Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "freecad",
+        "full_name": "FreeCAD/FreeCAD",
+        "github_id": 5736080,
+        "readme_blob_sha": "d39480c08d4bd6a3fbd2a86eff1a3c3eabbbe89f",
+        "stars": 35493,
+        "license": "LGPL-2.1",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "openscad",
+        "full_name": "openscad/openscad",
+        "github_id": 1049088,
+        "readme_blob_sha": "a16f83066366e7e800699abf117cb12358a59c6f",
+        "stars": 10662,
+        "license": "GPL-2.0 (con excepción CGAL)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "genesis-world",
+        "full_name": "Genesis-Embodied-AI/genesis-world",
+        "github_id": 712225112,
+        "readme_blob_sha": "b25aabc2ee72659f5a4c27deb14a2c25950f1844",
+        "stars": 30235,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "mujoco",
+        "full_name": "google-deepmind/mujoco",
+        "github_id": 400501136,
+        "readme_blob_sha": "c6fb8355165ddd1477109a96d3aace4e6f9cd17b",
+        "stars": 18110,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      }
+    ],
+    "p09": [
+      {
+        "id": "deepface",
+        "full_name": "serengil/deepface",
+        "github_id": 239201565,
+        "readme_blob_sha": "edba08b52d9cdf8505a5a31ee70ea872f6bb7e22",
+        "stars": 23701,
+        "license": "MIT",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "detectron2",
+        "full_name": "facebookresearch/detectron2",
+        "github_id": 206660580,
+        "readme_blob_sha": "7d99b46e415ad06b7dd69e4b6a6b302ffea1d303",
+        "stars": 34985,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-10-27"
+      },
+      {
+        "id": "cvat",
+        "full_name": "cvat-ai/cvat",
+        "github_id": 139156354,
+        "readme_blob_sha": "cc864015798c5a83c2d70fbf0746f908a7cebc1d",
+        "stars": 17144,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "dlib",
+        "full_name": "davisking/dlib",
+        "github_id": 16331291,
+        "readme_blob_sha": "ff32038173291dc0e6286d3ff7c330cd31b47d53",
+        "stars": 14476,
+        "license": "BSL-1.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "ultimate-vocal-remover",
+        "full_name": "Anjok07/ultimatevocalremovergui",
+        "github_id": 281229404,
+        "readme_blob_sha": "93746d4b4f06f301257c1ee5045e914fee23c974",
+        "stars": 27193,
+        "license": "MIT",
+        "pushed_at": "2026-10-06"
+      },
+      {
+        "id": "sherpa-onnx",
+        "full_name": "k2-fsa/sherpa-onnx",
+        "github_id": 531380835,
+        "readme_blob_sha": "8f34b0935640ff49d716a7a9b170dd784deaa2e0",
+        "stars": 15978,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "f5-tts",
+        "full_name": "SWivid/F5-TTS",
+        "github_id": 869549554,
+        "readme_blob_sha": "e0903aea55ae3e02c0cfa77407dcf7a49940633d",
+        "stars": 15600,
+        "license": "MIT",
+        "pushed_at": "2026-11-03"
+      },
+      {
+        "id": "audacity",
+        "full_name": "audacity/audacity",
+        "github_id": 32921736,
+        "readme_blob_sha": "92c12c2c1853859cd008f4728563ba62f5d046c4",
+        "stars": 19083,
+        "license": "GPL-3.0 (mayoría de archivos GPL-2.0-or-later)",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "demucs",
+        "full_name": "adefossez/demucs",
+        "github_id": 719554886,
+        "readme_blob_sha": "fbf54ea8820314f3380d2cdf56e829550033016b",
+        "stars": 3551,
+        "license": "MIT",
+        "pushed_at": "2026-10-26"
+      },
+      {
+        "id": "yue",
+        "full_name": "multimodal-art-projection/YuE",
+        "github_id": 920995232,
+        "readme_blob_sha": "f5c3df379eec0f033a02f9b1f440925fa2e50112",
+        "stars": 13528,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-01"
+      },
+      {
+        "id": "ten-framework",
+        "full_name": "TEN-framework/ten-framework",
+        "github_id": 817354652,
+        "readme_blob_sha": "781565d67cc8f1022ee1a1c8f2da594847a2859e",
+        "stars": 11232,
+        "license": "Apache-2.0 con condiciones adicionales (Agora)",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "motion-canvas",
+        "full_name": "motion-canvas/motion-canvas",
+        "github_id": 520955562,
+        "readme_blob_sha": "446c8db1aa77f01ddea44d0ff89ed42aa03cd54b",
+        "stars": 19965,
+        "license": "MIT",
+        "pushed_at": "2026-07-02"
+      },
+      {
+        "id": "revideo",
+        "full_name": "midrender/revideo",
+        "github_id": 770297271,
+        "readme_blob_sha": "3f5d9cee1158dbd50e66f71f974a875428166943",
+        "stars": 4212,
+        "license": "MIT",
+        "pushed_at": "2026-07-15"
+      },
+      {
+        "id": "d2",
+        "full_name": "d2lang/d2",
+        "github_id": 533087958,
+        "readme_blob_sha": "4c3007db102c42736991747298176a1feedf6aaa",
+        "stars": 25844,
+        "license": "MPL-2.0",
+        "pushed_at": "2026-10-11"
+      },
+      {
+        "id": "drawio",
+        "full_name": "jgraph/drawio",
+        "github_id": 67508428,
+        "readme_blob_sha": "2d854e6f655ee750625131ca83c5df93b096827c",
+        "stars": 9390,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-04"
+      },
+      {
+        "id": "plantuml",
+        "full_name": "plantuml/plantuml",
+        "github_id": 1051476,
+        "readme_blob_sha": "5fad8be911eed9096251c0383eafce5eb6e1acf3",
+        "stars": 13421,
+        "license": "Multilicencia (GPL-3.0, LGPL-3.0, Apache-2.0, EPL-2.0 o MIT)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "kroki",
+        "full_name": "yuzutech/kroki",
+        "github_id": 165063056,
+        "readme_blob_sha": "a2793509099cf37f766439b8dee52e60917f15c9",
+        "stars": 4407,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "flaresolverr",
+        "full_name": "FlareSolverr/FlareSolverr",
+        "github_id": 270910423,
+        "readme_blob_sha": "ed5431ad3e303f9ee100f60b2b1f7468dc265956",
+        "stars": 16238,
+        "license": "MIT",
+        "pushed_at": "2026-10-24"
+      },
+      {
+        "id": "camoufox",
+        "full_name": "daijro/camoufox",
+        "github_id": 834082440,
+        "readme_blob_sha": "0753d07ebccd7fe526a0ad8a4fc4cb4b7ba78846",
+        "stars": 13330,
+        "license": "MPL-2.0 (navegador) y MIT (paquetes de Python)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "nanobrowser",
+        "full_name": "nanobrowser/nanobrowser",
+        "github_id": 910418754,
+        "readme_blob_sha": "a8970b7b7c0c8de33f6fafcff950f65a58697ae2",
+        "stars": 14317,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-10"
+      },
+      {
+        "id": "steel-browser",
+        "full_name": "steel-dev/steel-browser",
+        "github_id": 882026761,
+        "readme_blob_sha": "b773847813309bd45256feb9af5c60e93cd63a47",
+        "stars": 7973,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "cypress",
+        "full_name": "cypress-io/cypress",
+        "github_id": 31629751,
+        "readme_blob_sha": "371257991c8a62e869cdc81463b7d60aa784f3c4",
+        "stars": 51029,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "webdriverio",
+        "full_name": "webdriverio/webdriverio",
+        "github_id": 2296970,
+        "readme_blob_sha": "2619a4f91e60c998c64c99d6fc7032284220f3d3",
+        "stars": 9884,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "ladybird",
+        "full_name": "LadybirdBrowser/ladybird",
+        "github_id": 808045485,
+        "readme_blob_sha": "4d45336769487dfe98a38bb3f24df9443074b9ec",
+        "stars": 67152,
+        "license": "BSD-2-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "servo",
+        "full_name": "servo/servo",
+        "github_id": 3390243,
+        "readme_blob_sha": "1481211a7cc7e7fca3dd464cd650a8d76fdc7bf9",
+        "stars": 38529,
+        "license": "MPL-2.0",
+        "pushed_at": "2026-11-16"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 40,
-  "total_repositories": 663
+  "added_count": 190,
+  "total_repositories": 813
 }

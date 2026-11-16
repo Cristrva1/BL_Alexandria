@@ -409,7 +409,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings
 **Qué comprobar:** La respuesta recupera un fragmento comprobable del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `ollama`, `claude-code`, `evolution-api`, `paddleocr`
+**Combina con:** `langfuse`, `ollama`, `claude-code`, `evolution-api`, `paddleocr`, `ten-framework`
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`
@@ -1049,7 +1049,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Calcula el total y promedio de cinco importes ficticios y revisa el código generado
 **Qué comprobar:** Los resultados coinciden con los números de entrada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `e2b`, `transformers`, `litellm`, `langfuse`
+**Combina con:** `e2b`, `transformers`, `litellm`, `langfuse`, `agents-course`
 **Alternativas (elige una):** `pydantic-ai`, `openai-agents-python`
 
 ## `vercel-ai`

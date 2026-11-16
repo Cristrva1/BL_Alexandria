@@ -463,6 +463,12 @@
      "id": "semgrep",
      "motivo": "Semgrep ofrece un hook de pre-commit para analizar los archivos modificados.",
      "orden_instalacion": "pre-commit instalado; después añade el hook de Semgrep con su configuración."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Combinación recíproca: Trivy lo enlaza como «Un hook local de pre-commit puede lanzar `trivy fs` o el escaneo de secretos antes de cada commit (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Trivy: Instala Trivy; después define un hook local en .pre-commit-config.yaml.",
+     "reciproca_de": "trivy"
     }
    ],
    "notas": "Los hooks se descargan de repositorios externos: fija revisiones y revisa su origen.",

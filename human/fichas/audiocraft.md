@@ -30,6 +30,7 @@ Requiere Python 3.9 y PyTorch 2.1.0 (versiones antiguas) y se instala con `pip i
 | [MoviePy](moviepy.md) | Añadir la música generada a vídeos. (combinación por arquitectura) | Monta el audio. |
 | [remotion](remotion.md) | Banda sonora para vídeo programático. (combinación por arquitectura) | Usa el audio generado. |
 | [rubberband](rubberband.md) | Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)». | Orden indicado desde rubberband: Procesa la salida. |
+| [Audacity](audacity.md) | Combinación recíproca: Audacity lo enlaza como «Los plugins OpenVINO de Intel para Audacity generan y continúan música con MusicGen de AudioCraft». | Orden indicado desde Audacity: Instala los plugins OpenVINO y los modelos MusicGen; después usa Music Generation. |
 
 **Notas:** Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.
 
@@ -102,6 +103,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.9 y PyTorch 2.1 según guía; modelo; GPU según tamaño; texto propio
 - **Etiquetas:** `audio` `inference` `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [YuE2](yue.md) | 13.5k | Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes. |
+| [ACE-Step-1.5](ace-step-1-5.md) | 14.8k | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
 
 ## Enlaces
 

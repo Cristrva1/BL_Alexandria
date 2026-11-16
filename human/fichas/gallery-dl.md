@@ -29,6 +29,7 @@ Requiere Python 3.8+ y Requests; opcionalmente yt-dlp o youtube-dl para vídeos 
 | [yt-dlp](yt-dlp.md) | gallery-dl usa yt-dlp de forma opcional para descargas de vídeo HLS/DASH e integración ytdl. | Instala yt-dlp en el mismo entorno; después activa la integración en la configuración. |
 | [FFmpeg](ffmpeg.md) | FFmpeg es la dependencia opcional para convertir animaciones Ugoira de Pixiv. | Instala FFmpeg en el PATH; después configura el postprocesador correspondiente. |
 | [Real-ESRGAN](real-esrgan.md) | Las imágenes descargadas pueden escalarse en lote con Real-ESRGAN antes de usarlas (combinación por arquitectura). | Descarga primero con gallery-dl; después procesa la carpeta con Real-ESRGAN. |
+| [Upscayl](upscayl.md) | Combinación recíproca: Upscayl lo enlaza como «Las colecciones descargadas con gallery-dl se pueden ampliar en lote con Upscayl (combinación por arquitectura)». | Orden indicado desde Upscayl: Descarga primero con gallery-dl; después procesa la carpeta en Upscayl. |
 
 **Notas:** Repositorio canónico de desarrollo: Codeberg (mikf/gallery-dl); GitHub se mantiene como espejo con actividad.
 

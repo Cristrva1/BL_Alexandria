@@ -61,6 +61,12 @@
      "motivo": "Combinación recíproca: rembg lo enlaza como «Interfaz web rápida para uso interno. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde rembg: Envuelve `remove()` en una app Gradio.",
      "reciproca_de": "rembg"
+    },
+    {
+     "id": "f5-tts",
+     "motivo": "Combinación recíproca: F5-TTS lo enlaza como «F5-TTS incluye una aplicación web Gradio (`f5-tts_infer-gradio`) para generar voz sin programar».",
+     "orden_instalacion": "Orden indicado desde F5-TTS: Instala F5-TTS (incluye Gradio); después ejecuta `f5-tts_infer-gradio`.",
+     "reciproca_de": "f5-tts"
     }
    ],
    "notas": "Alternativas (elige una): streamlit.",
@@ -103,6 +109,12 @@
      "motivo": "Combinación recíproca: Awesome LLM Apps lo enlaza como «Interfaz de muchas de las apps de ejemplo».",
      "orden_instalacion": "Orden indicado desde Awesome LLM Apps: Se instala con los requirements de cada plantilla.",
      "reciproca_de": "awesome-llm-apps"
+    },
+    {
+     "id": "pygwalker",
+     "motivo": "Combinación recíproca: PyGWalker lo enlaza como «PyGWalker documenta su uso dentro de apps de Streamlit para publicar la exploración en web».",
+     "orden_instalacion": "Orden indicado desde PyGWalker: Instala PyGWalker en la app de Streamlit; después usa su componente para Streamlit.",
+     "reciproca_de": "pygwalker"
     }
    ],
    "notas": "Alternativas (elige una): gradio.",
@@ -209,6 +221,12 @@
      "id": "awesome-bigdata",
      "motivo": "Mapa del ecosistema alrededor. (combinación por arquitectura)",
      "orden_instalacion": "Consulta la lista."
+    },
+    {
+     "id": "spark",
+     "motivo": "Combinación recíproca: Apache Spark lo enlaza como «Hudi se integra con Spark como motor principal de escritura e ingestión incremental».",
+     "orden_instalacion": "Orden indicado desde Apache Spark: Añade el bundle de Hudi para Spark; después escribe con `format(\"hudi\")`.",
+     "reciproca_de": "spark"
     }
    ],
    "notas": "Alternativas (elige una): apache-iceberg, delta-lake.",
@@ -459,6 +477,12 @@
      "id": "cosmos",
      "motivo": "Datos de simulación para modelos de mundo. (combinación por arquitectura)",
      "orden_instalacion": "Genera escenas con Warp."
+    },
+    {
+     "id": "mujoco",
+     "motivo": "Combinación recíproca: MuJoCo lo enlaza como «MuJoCo Warp (MJWarp), mantenido por Google DeepMind y NVIDIA dentro del proyecto Newton, es una versión de MuJoCo acelerada en GPU con NVIDIA Warp».",
+     "orden_instalacion": "Orden indicado desde MuJoCo: Instala MuJoCo Warp (requiere Warp y GPU NVIDIA); después carga tus modelos MJCF.",
+     "reciproca_de": "mujoco"
     }
    ],
    "notas": "Sin alternativas declaradas.",

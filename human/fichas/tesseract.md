@@ -29,6 +29,8 @@ Desde Tesseract 4 usa un motor de redes neuronales LSTM centrado en líneas, ade
 | [OCRmyPDF](ocrmypdf.md) | OCRmyPDF usa Tesseract para añadir capas de texto a PDF. | Instala Tesseract y los idiomas primero. |
 | [paperless-ngx](paperless-ngx.md) | Hace el OCR de Paperless a través de OCRmyPDF. | Incluido en la imagen de Paperless; añade idiomas con su configuración. |
 | [Unstructured](unstructured.md) | Dependencia de unstructured para OCR de imágenes y PDF. | Instálalo antes de procesar escaneados. |
+| [Xberg (antes Kreuzberg)](xberg.md) | Combinación recíproca: Xberg (antes Kreuzberg) lo enlaza como «Tesseract es uno de los motores de OCR que Xberg usa bajo demanda para documentos escaneados». | Orden indicado desde Xberg (antes Kreuzberg): Instala Tesseract y sus idiomas; después activa el backend en la configuración. |
+| [Apache Tika](tika.md) | Combinación recíproca: Apache Tika lo enlaza como «Tika usa Tesseract como motor de OCR para imágenes y PDF escaneados». | Orden indicado desde Apache Tika: Instala Tesseract y sus idiomas en el sistema o la imagen; después activa el parser de OCR. |
 
 **Notas:** Alternativa (elige una): paddleocr. Para diseños complejos o escritura a mano rinde peor que los modelos VLM.
 

@@ -404,7 +404,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala pre-commit, crea un .pre-commit-config.yaml con un hook de formato y ejecuta `pre-commit run --all-files`.
 **Qué comprobar:** El hook se instala solo y formatea o señala los archivos del repositorio.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ruff`, `gitleaks`, `trufflehog`, `biome`, `semgrep`
+**Combina con:** `ruff`, `gitleaks`, `trufflehog`, `biome`, `semgrep`, `trivy`
 
 ## `repomix`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=code,coding-agent,typescript

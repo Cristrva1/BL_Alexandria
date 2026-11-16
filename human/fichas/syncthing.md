@@ -32,6 +32,12 @@ Es un binario en Go con interfaz web local. Se instala con paquetes del sistema,
 | [audiobookshelf](audiobookshelf.md) | Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura) | Comparte la carpeta de la biblioteca en Syncthing. |
 | [spotDL](spotdl.md) | Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)». | Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Calibre-Web](calibre-web.md) · [Immich](immich.md) · [Joplin](joplin.md) · [Kavita](kavita.md) · [Logseq](logseq.md) · [PhotoPrism](photoprism.md)
+
 **Notas:** Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.
 
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v2.1.7 (2026-10-21) · licencia declarada MPL-2.0 (consultado el 2026-11-15).
