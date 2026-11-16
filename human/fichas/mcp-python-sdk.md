@@ -29,6 +29,7 @@ Se instala con `uv add "mcp[cli]"` o `pip install "mcp[cli]"`; el extra `cli` a�
 | [MCP Inspector](mcp-inspector.md) | Probar el servidor durante el desarrollo; `mcp dev` lo usa. | Ejecuta `mcp dev servidor.py`. |
 | [Pydantic AI](pydantic-ai.md) | Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura) | Conecta el servidor como toolset MCP. |
 | [Claude Code](claude-code.md) | Probar el servidor en un agente. (combinación por arquitectura) | Regístralo con `claude mcp add`. |
+| [MCP for Beginners](mcp-for-beginners.md) | Combinación recíproca: MCP for Beginners lo enlaza como «SDK oficial usado en los ejemplos de Python». | Orden indicado desde MCP for Beginners: Instala `mcp[cli]` para seguir las lecciones de Python. |
 
 **Notas:** Alternativas (elige una): fastmcp.
 

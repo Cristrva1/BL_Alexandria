@@ -30,7 +30,7 @@ La plataforma se puede usar en la nube (agpt.co) o autoalojada (frontend y backe
 | [Claude Code](claude-code.md) | Ejecutar y construir workflows desde un agente de programación a través de la API/MCP de la plataforma (documentado en el README). | Plataforma operativa con su clave de API; luego registra el servidor MCP en Claude Code. |
 | [Codex CLI](codex.md) | Mismo uso vía MCP desde Codex CLI. (combinación por arquitectura: el README habla de 'un agente de programación' sin nombrar Codex) | Plataforma primero; luego registra el MCP en Codex. |
 
-**Notas:** Alternativas (elige una): sim, langflow. Combinación anterior con n8n eliminada: sin integración documentada. Licencia: Polyform Shield en la plataforma (no es open source OSI).
+**Notas:** Alternativas (elige una): sim, langflow. Licencia: Polyform Shield en la plataforma (no es open source OSI).
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada autogpt-platform-beta-v0.11.3 (2026-11-15) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 

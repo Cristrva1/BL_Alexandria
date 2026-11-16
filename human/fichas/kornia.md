@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Kornia, biblioteca de visión por computador diferenciable sobre PyTorch. Licencia Apache-2.0. Es madura (~12k estrellas, v0.9.1).
+
+## ¿Qué hace?
+
+Ofrece transformaciones geométricas, filtros, aumentos de datos en GPU, detección y emparejamiento de características (LoFTR, DISK…), calibración y modelos preentrenados, todo diferenciable para integrarlo en redes.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install kornia` y requiere PyTorch.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Backend. | Instala PyTorch primero. |
+| [OpenCV](opencv.md) | Preprocesado clásico fuera del grafo. (combinación por arquitectura) | Combina según necesidad. |
+| [Ultralytics YOLO](ultralytics.md) | Aumentos de datos en GPU para entrenar. (combinación por arquitectura) | Aplica aumentos antes del entrenamiento. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kornia/kornia/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es una biblioteca para desarrolladores y sus convenciones geométricas deben comprobarse al combinarla con otros motores |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API remota para operaciones o modelos locales; pesos y cómputo se revisan aparte |
 | Equipo | Preparación según la ruta elegida. Python; PyTorch; tensor o imagen de prueba |
-
-Es una biblioteca para desarrolladores y sus convenciones geométricas deben comprobarse al combinarla con otros motores
-
-## Qué puedes hacer con él
-
-Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.
-
-## Por qué destaca
-
-Usos propuestos: Preparar datos visuales; Estudiar geometría diferenciable.
-
-## Cómo funciona
 
 Es una biblioteca para desarrolladores y sus convenciones geométricas deben comprobarse al combinarla con otros motores
 

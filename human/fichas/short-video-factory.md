@@ -30,7 +30,7 @@ Es una app Electron con Vue y TypeScript para Windows, macOS y Linux. Requiere c
 | [FFmpeg](ffmpeg.md) | Procesamiento de vídeo. (combinación por arquitectura) | Asegura FFmpeg si la build no lo incluye. |
 | [Ollama](ollama.md) | Generar los textos con un modelo local. (combinación por arquitectura) | Configura un endpoint compatible si la app lo admite. |
 
-**Notas:** Sin alternativas declaradas; solapa con moneyprinterturbo (solo anotado).
+**Notas:** Alternativa (elige una): moneyprinterturbo.
 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v1.4.0 (2026-11-09) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
@@ -100,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** App de escritorio; proveedores de guion y voz; clips e imágenes propios
 - **Etiquetas:** `generativo` `ai` `automatic` `automation` `clipping` `cross-platform` `desktop` `linux`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [MoneyPrinterTurbo](moneyprinterturbo.md) | 144k | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
 
 ## Enlaces
 

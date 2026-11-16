@@ -25,7 +25,7 @@ def test_every_public_entry_has_one_consistent_room_in_all_catalog_layers():
 
 def test_task_boundaries_separate_different_jobs_and_preserve_historical_category_paths():
     catalog = load_catalog(ROOT)
-    for group in [("n8n","evolution-api","odoo"),("codex","langgraph","gpt-researcher"),
+    for group in [("activepieces","evolution-api","odoo"),("codex","langgraph","gpt-researcher"),
                   ("whisper","ffmpeg","remotion"),("comfyui","ultralytics"),
                   ("docling","ppt-master"),("mem0","langfuse"),
                   ("duckdb","unsloth","repomix")]:

@@ -29,6 +29,7 @@ Se prueba sin instalar en build.nvidia.com o se instala con `uv pip install --to
 | [diffusers](diffusers.md) | Pipeline oficial `Cosmos3OmniPipeline`. | Instala Diffusers y carga el checkpoint. |
 | [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA. |
 | [Nemotron (NVIDIA)](nemotron.md) | Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura) | Usa Nemotron como planificador. |
+| [warp](warp.md) | Combinación recíproca: warp lo enlaza como «Datos de simulación para modelos de mundo. (combinación por arquitectura)». | Orden indicado desde warp: Genera escenas con Warp. |
 
 **Notas:** Sin alternativas declaradas.
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Lemo-Opuscar, colección de 99 estilos cinematográficos para que un agente de código haga películas cortas íntegramente con código, de Lemomo (@lemomo_ai). Licencia mixta (por eso GitHub muestra NOASSERTION): código MIT, documentación (incluidos los STYLE.md de cada estilo) CC BY-NC 4.0 y películas demo CC BY 4.0. Tiene ~17k estrellas (v2.0.0).
+
+## ¿Qué hace?
+
+Eliges un estilo, aportas tu historia y el agente produce la película con una demo de referencia para cada estilo.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin de Claude Code (`claude plugin marketplace add lemomo-ai/lemo-opuscar`). Requiere Node 20+, FFmpeg 7+ y Python 3.11+ (o uv). Está pensado para modelos Claude con esfuerzo alto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial. | Añade el marketplace e instala el plugin. |
+| [FFmpeg](ffmpeg.md) | Render (versión 7+). | Instala FFmpeg 7 o superior. |
+| [three.js](three-js.md) | Escenas 3D en código. (combinación por arquitectura) | Según el estilo elegido. |
+
+**Notas:** Sin alternativas declaradas. La documentación de los estilos es no comercial (CC BY-NC).
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v2.0.0 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El autor lo orienta a Claude y advierte diferencias con otros modelos; demos, guías, voz y assets no comparten una licencia única; Kokoro local no sustituye el agente |
 | Coste | El coste depende del proveedor o la ruta. Código MIT; prompts y guías actuales CC BY-NC con permiso adicional acotado para crear films; otros usos comerciales pueden requerir licencia |
 | Equipo | Preparación según la ruta elegida. Claude Code; dependencias del estilo; material propio; Kokoro según voz |
-
-El autor lo orienta a Claude y advierte diferencias con otros modelos; demos, guías, voz y assets no comparten una licencia única; Kokoro local no sustituye el agente
-
-## Qué puedes hacer con él
-
-Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y medios.
-
-## Por qué destaca
-
-Usos propuestos: Explorar una dirección visual para un video; Preparar una pieza por código.
-
-## Cómo funciona
 
 El autor lo orienta a Claude y advierte diferencias con otros modelos; demos, guías, voz y assets no comparten una licencia única; Kokoro local no sustituye el agente
 

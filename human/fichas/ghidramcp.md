@@ -29,6 +29,7 @@ Se descarga la release (plugin de Ghidra + cliente MCP en Python), se instala el
 | [ghidra](ghidra.md) | Requisito: es un plugin de Ghidra. | Instala Ghidra y luego la extensión de la release correspondiente. |
 | [Claude Code](claude-code.md) | Cliente MCP para dirigir el análisis. | Registra el puente MCP en el agente. |
 | [angr](angr.md) | Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura) | Usa angr en scripts aparte sobre el mismo binario. |
+| [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Servidor MCP de Ghidra que encabeza la sección de MCP». | Orden indicado desde awesome-ai-reverse-engineering: Revisa su README e instálalo en Ghidra. |
 
 **Notas:** Sin alternativas declaradas. Analiza solo software que tengas derecho a analizar.
 
