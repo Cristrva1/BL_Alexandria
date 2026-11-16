@@ -2,11 +2,10 @@
 
 # ⚖️ Comparativas
 
-60 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
-- [activepieces vs n8n](activepieces-vs-n8n.md)
 - [Appsmith vs NocoDB](appsmith-vs-nocodb.md)
 
 ## 🧠 Skills, plugins y métodos para agentes
@@ -60,12 +59,12 @@
 
 - [Chart.js vs Recharts](chart-js-vs-recharts.md)
 - [metabase vs Apache Superset](metabase-vs-superset.md)
-- [PandasAI vs WrenAI](pandas-ai-vs-wrenai.md)
 - [Plausible Analytics vs Umami](plausible-vs-umami.md)
 
 ## 🎬 Editar, grabar y generar video
 
 - [HunyuanVideo vs Wan2.2](hunyuanvideo-vs-wan2-2.md)
+- [MoneyPrinterTurbo vs short-video-factory](moneyprinterturbo-vs-short-video-factory.md)
 
 ## 📄 PDF, OCR y procesamiento de documentos
 
@@ -123,6 +122,11 @@
 
 - [DuckDB vs Polars](duckdb-vs-polars.md)
 - [Gradio vs streamlit](gradio-vs-streamlit.md)
+- [JupyterLab vs marimo](jupyterlab-vs-marimo.md)
+
+## 🎨 Animación, gráficos y creación 3D
+
+- [Babylon.js vs three.js](babylonjs-vs-three-js.md)
 
 ## 🎨 Skills de diseño, contenido y especialidades
 
@@ -134,6 +138,7 @@
 
 ## 🎬 Audio, transcripción, voz y música
 
+- [AudioCraft vs YuE2](audiocraft-vs-yue.md)
 - [faster-whisper vs whisper.cpp](faster-whisper-vs-whisper-cpp.md)
 - [Kokoro vs LuxTTS](kokoro-vs-luxtts.md)
 - [LiveKit Agents vs Pipecat](livekit-agents-vs-pipecat.md)
@@ -145,6 +150,7 @@
 
 ## 📄 Presentaciones, diagramas y explicación visual
 
+- [D2 vs Mermaid](d2-vs-mermaid.md)
 - [Marp vs Slidev](marp-vs-slidev.md)
 
 ## 🕷️ Navegadores y automatización web

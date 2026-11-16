@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Apache ECharts, librería de visualización de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~68k estrellas, 6.1.0).
+
+## ¿Qué hace?
+
+Ofrece decenas de tipos de gráficos (series, mapas, grafos, árboles, 3D con ECharts GL, calendarios) muy interactivos y personalizables, pensados para productos comerciales y paneles. Renderiza con Canvas o SVG y maneja grandes volúmenes de datos con renderizado progresivo.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install echarts` o desde CDN y se configura con un objeto `option` declarativo. Está escrito en TypeScript sobre la librería de renderizado ZRender.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [metabase](metabase.md) | Metabase usa ECharts en sus visualizaciones. (combinación por arquitectura) | No requiere instalación aparte. |
+| [Apache Superset](superset.md) | Superset usa ECharts en muchos de sus gráficos. (combinación por arquitectura) | No requiere instalación aparte. |
+| [heroui](heroui.md) | Paneles con componentes HeroUI y gráficos ECharts. (combinación por arquitectura) | Envuelve el gráfico en un componente de tarjeta. |
+| [Ant Design](ant-design.md) | Combinación recíproca: Ant Design lo enlaza como «Gráficos avanzados en paneles de administración junto a las tablas y formularios de antd. (combinación por arquitectura); el ecosistema oficial ofrece Ant Design Charts como opción integrada». | Orden indicado desde Ant Design: Instala echarts y su envoltorio para React; úsalo en componentes Card o layouts de antd. |
+| [awesome-dataviz](awesome-dataviz.md) | Combinación recíproca: awesome-dataviz lo enlaza como «Una de las librerías destacadas de la lista. (combinación por arquitectura)». | Orden indicado desde awesome-dataviz: Compara alternativas en la lista antes de elegir. |
+| [dash](dash.md) | Combinación recíproca: dash lo enlaza como «Gráficos alternativos mediante componentes comunitarios. (combinación por arquitectura)». | Orden indicado desde dash: Integra el componente correspondiente. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[NiceGUI](nicegui.md) · [Panel](panel.md)
+
+**Notas:** Alternativas (elige una): d3, chart-js, recharts.
+
+Estado en GitHub: activo · último push 2026-10-13 · última versión publicada 6.1.0 (2026-05-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/echarts/blob/master/README.md) · [2](https://echarts.apache.org/en/index.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | La función básica no necesita un modelo. npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca Apache-2.0 no requiere IA; datos y mapas externos conservan sus condiciones |
 | Equipo | Preparación según la ruta elegida. JavaScript; contenedor con tamaño; datos |
-
-npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app
-
-## Qué puedes hacer con él
-
-Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos.
-
-## Por qué destaca
-
-Usos propuestos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web.
-
-## Cómo funciona
 
 npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app
 
@@ -85,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** JavaScript; contenedor con tamaño; datos
 - **Etiquetas:** `dataviz` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
-| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
 
 ## Alternativas (elige una)
 

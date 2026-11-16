@@ -4,7 +4,7 @@
 
 Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.
 
-28 repos · 4 secciones
+32 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Componentes, iconos y sistemas de diseño](#componentes-iconos-y-sistemas-de-diseño) — 10 repos
+- [Componentes, iconos y sistemas de diseño](#componentes-iconos-y-sistemas-de-diseño) — 14 repos
 - [CSS y estilos](#css-y-estilos) — 4 repos
 - [Diseño visual, canvas y builders](#diseño-visual-canvas-y-builders) — 6 repos
 - [UI generada con IA y frontends para agentes](#ui-generada-con-ia-y-frontends-para-agentes) — 8 repos
@@ -31,8 +31,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [ui](../fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Tu objetivo encaja con estos ejemplos: Construir un formulario con componentes propios; Crear un sistema de interfaz con código modificable | Sin clave propia de API de IA en la ruta básica |
 | [Ant Design](../fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Tu objetivo encaja con estos ejemplos: Crear un panel administrativo; Montar formularios de gestión | Sin clave propia de API de IA en la ruta básica |
 | [Material UI](../fichas/mui.md) | Librería de componentes React completa que implementa Material Design de Google. | Tu objetivo encaja con estos ejemplos: Crear un dashboard Material Design; Construir una pantalla de ajustes | Sin clave propia de API de IA en la ruta básica |
+| [Storybook](../fichas/storybook.md) | Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros. | Tu objetivo encaja con estos ejemplos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación | Sin clave propia de API de IA en la ruta básica |
 | [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual | Sin clave propia de API de IA en la ruta básica |
+| [TanStack Query](../fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual | Sin clave propia de API de IA en la ruta básica |
+| [Chakra UI](../fichas/chakra-ui.md) | Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC. | Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo | Sin clave propia de API de IA en la ruta básica |
 | [swr](../fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña | Sin clave propia de API de IA en la ruta básica |
+| [Mantine](../fichas/mantine.md) | Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones. | Tu objetivo encaja con estos ejemplos: montar un panel de administración con formularios, tablas y gráficos; prototipar una app React con componentes accesibles y modo oscuro | Sin clave propia de API de IA en la ruta básica |
 | [heroui](../fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Tu objetivo encaja con estos ejemplos: Construir formularios accesibles; Crear una interfaz con temas compartidos | Sin clave propia de API de IA en la ruta básica |
 | [Lucide](../fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz | Sin clave propia de API de IA en la ruta básica |
 | [magicui](../fichas/magicui.md) | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. | Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación | Sin clave propia de API de IA en la ruta básica |

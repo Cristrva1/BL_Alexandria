@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Open RV, visor de imágenes y secuencias para artistas de VFX y animación, de la Academy Software Foundation. Licencia Apache-2.0 con componentes bajo otras licencias (GitHub muestra NOASSERTION). Tiene ~800 estrellas (v4.0.2).
+
+## ¿Qué hace?
+
+Reproduce y compara tomas, secuencias de imágenes y vídeo con aceleración por hardware, gestión de color y herramientas de revisión y anotación. Está pensado para integrarse en pipelines de estudio.
+
+## ¿Cómo lo hace?
+
+Se compila desde el código (clonado recursivo con submódulos) siguiendo las guías por plataforma; la compilación es compleja. CentOS 7 ya no está soportado desde 2025.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [blender](blender.md) | Revisar renders y secuencias exportadas de Blender. (combinación por arquitectura) | Renderiza a secuencia EXR/PNG y ábrela en Open RV. |
+| [FFmpeg](ffmpeg.md) | Convertir entregas a formatos de revisión. (combinación por arquitectura) | Transcodifica con FFmpeg cuando haga falta. |
+| [ComfyUI](comfyui.md) | Comparar variantes generadas por IA fotograma a fotograma. (combinación por arquitectura) | Exporta las secuencias y compáralas en Open RV. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v4.0.2 (2026-08-20) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md) · [2](https://www.aswf.io/projects/openrv/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo ni API; compilación, almacenamiento y componentes de terceros tienen requisitos propios |
 | Equipo | Preparación según la ruta elegida. Build compatible o herramientas de compilación; secuencia o video de prueba |
-
-Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo
-
-## Qué puedes hacer con él
-
-Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.
-
-## Por qué destaca
-
-Usos propuestos: Revisar una entrega de animación; Comparar versiones de un efecto visual.
-
-## Cómo funciona
 
 Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Anime.js, motor de animación JavaScript ligero, de @juliangarnier. Licencia MIT. Es maduro (~75k estrellas, v4.5.0) y se financia con patrocinios.
+
+## ¿Qué hace?
+
+Anima propiedades CSS, SVG, atributos DOM y objetos JavaScript con una API simple: timelines, stagger, easing, scroll y arrastre en la v4.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install animejs` o desde CDN como módulo ES.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Animar valores de objetos 3D. (combinación por arquitectura) | Pasa el objeto three.js como objetivo. |
+| [magicui](magicui.md) | Animaciones extra en componentes de interfaz. (combinación por arquitectura) | Aplica animaciones a componentes. |
+| [motion-design-skill](motion-design-skill.md) | Principios de movimiento para agentes. (combinación por arquitectura) | Añade la skill. |
+| [zdog](zdog.md) | Combinación recíproca: zdog lo enlaza como «Animar propiedades de las formas. (combinación por arquitectura)». | Orden indicado desde zdog: Interpola rotaciones con Anime.js. |
+
+**Notas:** Alternativas (elige una): gsap, motion.
+
+Estado en GitHub: activo · último push 2026-11-02 · última versión publicada v4.5.0 (2026-06-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/juliangarnier/anime/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca MIT no requiere modelo ni API; recursos externos se evalúan aparte |
 | Equipo | Preparación según la ruta elegida. Proyecto JavaScript; DOM o SVG de prueba |
-
-Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app
-
-## Qué puedes hacer con él
-
-Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos.
-
-## Por qué destaca
-
-Usos propuestos: Mostrar una transición de estado; Animar un SVG sencillo.
-
-## Cómo funciona
 
 Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app
 

@@ -28,7 +28,7 @@ Se prueba con un contenedor Docker (`tooljet/try:ee-lts-latest`, puerto 80) que 
 |---|---|---|
 | [Claude Code](claude-code.md) | Plugin y servidor MCP oficiales: el agente genera páginas, consultas y componentes de ToolJet desde un prompt y modifica apps existentes. | ToolJet en marcha; después instala el plugin o registra el MCP siguiendo la guía de ToolJet MCP (beta). |
 | [Codex CLI](codex.md) | También compatible como plugin según el README, para quien trabaja con Codex en lugar de Claude Code. | Igual que con Claude Code; usa solo un agente a la vez sobre la misma app. |
-| [n8n](n8n.md) | Los flujos de ToolJet aceptan disparadores por webhook y las apps pueden llamar a webhooks de n8n para tareas con muchas integraciones (combinación por arquitectura). | Crea primero el webhook en el sistema que recibe y protégelo con un token. |
+| [activepieces](activepieces.md) | Los flujos de ToolJet aceptan disparadores por webhook y las apps pueden llamar a webhooks de Activepieces para tareas con muchas integraciones (combinación por arquitectura). | Crea primero el webhook en el sistema que recibe y protégelo con un token. |
 
 **Notas:** Alternativas (elige una): appsmith, budibase. El contenedor de prueba usa la imagen Enterprise (ee); revisa qué funciones requieren licencia.
 

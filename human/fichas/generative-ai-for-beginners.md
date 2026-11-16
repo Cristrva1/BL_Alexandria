@@ -20,7 +20,7 @@ Ofrece 21 lecciones que combinan conceptos ('Learn') y código ('Build'): prompt
 
 ## ¿Cómo lo hace?
 
-Los ejemplos están en Python y TypeScript y funcionan con Azure OpenAI, Microsoft Foundry Models y la API de OpenAI. GitHub Models se retira a finales de julio de 2026, según el README. Una lección de configuración prepara el entorno, por ejemplo con Codespaces. El repositorio pesa mucho por las traducciones, así que el README recomienda un sparse checkout.
+Los ejemplos están en Python y TypeScript y funcionan con Azure OpenAI, Microsoft Foundry Models y la API de OpenAI. GitHub Models se retiró a finales de julio de 2026 (según el README), así que las lecciones etiquetadas «githubmodels» ya no funcionan tal cual. Una lección de configuración prepara el entorno, por ejemplo con Codespaces. El repositorio pesa mucho por las traducciones, así que el README recomienda un sparse checkout.
 
 ## ¿Con qué otros repos se combina?
 
@@ -30,7 +30,7 @@ Los ejemplos están en Python y TypeScript y funcionan con Azure OpenAI, Microso
 | [MCP for Beginners](mcp-for-beginners.md) | Curso complementario sobre Model Context Protocol (enlazado en el README). | Tómalo cuando llegues a la parte de herramientas y agentes. |
 | [OpenAI Cookbook](openai-cookbook.md) | Recetas más avanzadas para quienes usan la API de OpenAI en los ejercicios. (combinación por arquitectura) | Úsalo como siguiente paso práctico tras las lecciones 'Build'. |
 
-**Notas:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependen de GitHub Models, que se retira; usa Foundry o la API de OpenAI.
+**Notas:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependían de GitHub Models, retirado a finales de julio de 2026; usa Microsoft Foundry Models o la API de OpenAI.
 
 Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
 

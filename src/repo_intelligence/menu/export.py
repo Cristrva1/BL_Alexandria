@@ -200,7 +200,8 @@ def export_menu(project_root: Path, output_dir: Path | None = None) -> dict:
     _write_json_mirror(out, scan, merged, by_cat, cat_meta, recipes, model_guidance)
     areas=build_areas(scan,[r for r in merged.values() if int(r.get("cat") or 0)>0 and not r.get("alias_of")])
     if areas:
-        lines=["# Categorías y subcategorías prácticas", "", "Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.", "", "Los recuentos por área pueden solaparse: no equivalen a proyectos distintos.", ""]
+        tech=[c for c in categories if int(c.get("num") or 0)>0]
+        lines=["# Categorías y subcategorías prácticas", "", f"{sum(len(a['topics']) for a in areas)} subcategorías prácticas en {len(areas)} áreas. El índice técnico tiene {len(tech)} categorías y {sum(len(c.get('subs', [])) for c in tech)} subcategorías técnicas.", "", "Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.", "", "Los recuentos por área pueden solaparse: no equivalen a proyectos distintos.", ""]
         for area in areas:
             lines += ["## "+area["title"], "", area["description"], ""]
             for topic in area["topics"]:

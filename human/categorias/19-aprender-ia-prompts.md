@@ -4,7 +4,7 @@
 
 Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos.
 
-30 repos · 3 secciones
+31 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -22,7 +22,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Prompts y prompt engineering](#prompts-y-prompt-engineering) — 8 repos
 - [Guías, cursos y cookbooks](#guías-cursos-y-cookbooks) — 14 repos
-- [Aprender LLMs desde cero](#aprender-llms-desde-cero) — 8 repos
+- [Aprender LLMs desde cero](#aprender-llms-desde-cero) — 9 repos
 
 ## Prompts y prompt engineering
 
@@ -48,13 +48,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Claude Cookbooks](../fichas/claude-cookbooks.md) | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. | Tu objetivo encaja con estos ejemplos: Clasificar tickets ficticios; Estudiar llamadas a herramientas | API de IA opcional |
 | [ai-engineering-hub](../fichas/ai-engineering-hub.md) | Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial. | Tu objetivo encaja con estos ejemplos: Aprender RAG con Ollama; Comparar técnicas de ajuste fino | API de IA opcional |
 | [500-AI-Agents-Projects](../fichas/500-ai-agents-projects.md) | Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas. | Tu objetivo encaja con estos ejemplos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API | API de IA opcional |
+| [Hugging Face Agents Course](../fichas/agents-course.md) | Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable. | Tu objetivo encaja con estos ejemplos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente | Sin clave propia de API de IA en la ruta básica |
 | [12-Factor Agents](../fichas/12-factor-agents.md) | Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps. | Tu objetivo encaja con estos ejemplos: Revisar un diseño antes de programar; Estudiar recuperación de errores en agentes | Sin clave propia de API de IA en la ruta básica |
 | [Agents Towards Production](../fichas/agents-towards-production.md) | Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación. | Tu objetivo encaja con estos ejemplos: Aprender a desplegar un agente; Comparar un servicio LLM con Ollama on-prem | API de IA opcional |
 | [claude-quickstarts](../fichas/claude-quickstarts.md) | Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora. | Tu objetivo encaja con estos ejemplos: Prototipar soporte con Claude; Estudiar una demo de uso de computadora | API de IA opcional |
 | [Loop Engineering](../fichas/loop-engineering.md) | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. | Tu objetivo encaja con estos ejemplos: Diseñar un ciclo de revisión de issues; Estimar el coste de un bucle antes de automatizarlo | Sin clave propia de API de IA en la ruta básica |
 | [Context-Engineering](../fichas/context-engineering.md) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | Tu objetivo encaja con estos ejemplos: Preparar contexto para una tarea larga; Estudiar memoria y recuperación | Sin clave propia de API de IA en la ruta básica |
 | [awesome-harness-engineering](../fichas/awesome-harness-engineering.md) | Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA. | Tu objetivo encaja con estos ejemplos: Diseñar el entorno de un agente; Encontrar recursos de evaluación | Sin clave propia de API de IA en la ruta básica |
-| [mvanhorn](../fichas/mvanhorn.md) | Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. | Tu objetivo encaja con estos ejemplos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos | Sin clave propia de API de IA en la ruta básica |
 
 ## Aprender LLMs desde cero
 
@@ -62,11 +62,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [LLM Course](../fichas/llm-course.md) | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. | Tu objetivo encaja con estos ejemplos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF | API de IA opcional |
 | [LLMs from Scratch](../fichas/llms-from-scratch.md) | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. | Tu objetivo encaja con estos ejemplos: Aprender cómo funciona un Transformer; Estudiar ajuste de instrucciones | API de IA opcional |
+| [ML for Beginners](../fichas/ml-for-beginners.md) | Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R. | Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase | Sin clave propia de API de IA en la ruta básica |
 | [awesome-machine-learning](../fichas/awesome-machine-learning.md) | Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. | Tu objetivo encaja con estos ejemplos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje | Sin clave propia de API de IA en la ruta básica |
+| [labml.ai Annotated Paper Implementations](../fichas/annotated-dl-papers.md) | Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más. | Tu objetivo encaja con estos ejemplos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos | Sin clave propia de API de IA en la ruta básica |
 | [nanochat](../fichas/nanochat.md) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | Tu objetivo encaja con estos ejemplos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado | Sin clave propia de API de IA en la ruta básica |
 | [llm.c](../fichas/llm-c.md) | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. | Tu objetivo encaja con estos ejemplos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch | Sin clave propia de API de IA en la ruta básica |
 | [train-llm-from-scratch](../fichas/train-llm-from-scratch.md) | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. | Tu objetivo encaja con estos ejemplos: Comprender la preparación de un corpus; Explorar un entrenamiento pequeño controlado | Sin clave propia de API de IA en la ruta básica |
-| [python-machine-learning-book](../fichas/python-machine-learning-book.md) | Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. | Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos | Sin clave propia de API de IA en la ruta básica |
 | [how-to-train-your-gpt](../fichas/how-to-train-your-gpt.md) | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción. | Tu objetivo encaja con estos ejemplos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños | Sin clave propia de API de IA en la ruta básica |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)

@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+DigitalPlat FreeDomain, servicio de registro gratuito de subdominios con guías de DNS. El repo contiene información pública y tutoriales; el código de la aplicación está en DigitalPlatDev/Domain-OSS. Licencia AGPL-3.0. Tiene ~208k estrellas, una cifra inusualmente alta para un repo de documentación.
+
+## ¿Qué hace?
+
+Permite registrar un dominio gratuito, delegarlo a tu proveedor de DNS mediante nameservers personalizados y seguir una guía desde el registro hasta el despliegue.
+
+## ¿Cómo lo hace?
+
+Se usa desde el panel web (dash.domain.digitalplat.org). El README avisa de que su antiguo Telegram fue comprometido y ya no es un canal oficial.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [coolify](coolify.md) | Apuntar el dominio a apps autoalojadas. (combinación por arquitectura) | Delega el DNS y configura el dominio en Coolify. |
+| [free-for-dev](free-for-dev.md) | Lo lista entre los dominios gratuitos. | Consulta alternativas en la lista. |
+| [MasterDnsVPN](masterdnsvpn.md) | Delegar un subdominio (registros A y NS), requisito del túnel. (combinación por arquitectura) | Crea los registros antes de desplegar el servidor. |
+
+**Notas:** Sin alternativas declaradas. Recuento de estrellas inusual y canal comprometido: conviene precaución.
+
+Estado en GitHub: activo · último push 2026-08-12 · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre |
 | Coste | Sin pago a un modelo en la ruta básica. El recurso describe opciones gratuitas sujetas a políticas, disponibilidad y elegibilidad; alojamiento no está incluido |
 | Equipo | Preparación según la ruta elegida. Navegador; nombre de dominio de prueba |
-
-No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre
-
-## Qué puedes hacer con él
-
-Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat.
-
-## Por qué destaca
-
-Usos propuestos: Aprender DNS; Evaluar un dominio para un proyecto personal.
-
-## Cómo funciona
 
 No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre
 

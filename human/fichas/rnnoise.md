@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+RNNoise, biblioteca de supresión de ruido basada en una red neuronal recurrente, de Xiph.Org (algoritmo de Jean-Marc Valin). Licencia BSD-3-Clause. Es madura y estable (~6k estrellas, v0.2) y no cambia desde febrero de 2025.
+
+## ¿Qué hace?
+
+Elimina ruido de voz en tiempo real con un enfoque híbrido DSP más aprendizaje profundo, con muy bajo coste computacional. Se usa en aplicaciones de VoIP y streaming.
+
+## ¿Cómo lo hace?
+
+Se compila con autotools (`./autogen.sh`, `./configure`, `make install`) y se usa como librería C. FFmpeg incluye el filtro `arnndn` basado en sus modelos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Filtro `arnndn` con modelos RNNoise. | Aplica el filtro con un modelo. |
+| [OBS Studio](obs-studio.md) | Supresión de ruido en streaming. | Usa el filtro de supresión de ruido RNNoise de OBS. |
+| [whisper.cpp](whisper-cpp.md) | Limpiar audio antes de transcribir. (combinación por arquitectura) | Filtra y luego transcribe. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2025-02-22 · última versión publicada v0.2 (2024-04-15) · licencia declarada BSD-3-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/xiph/rnnoise/blob/main/README)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La demo recibe y devuelve PCM RAW, no WAV; autogen descarga archivos de modelo y GitHub es una copia de conveniencia del repositorio Xiph |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no requiere API remota; cómputo y datos propios separados |
 | Equipo | Preparación según la ruta elegida. Compilador y autotools; modelo descargado; audio RAW mono 16-bit 48 kHz |
-
-La demo recibe y devuelve PCM RAW, no WAV; autogen descarga archivos de modelo y GitHub es una copia de conveniencia del repositorio Xiph
-
-## Qué puedes hacer con él
-
-Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente.
-
-## Por qué destaca
-
-Usos propuestos: Reducir ruido de una grabación; Estudiar una red de supresión de ruido.
-
-## Cómo funciona
 
 La demo recibe y devuelve PCM RAW, no WAV; autogen descarga archivos de modelo y GitHub es una copia de conveniencia del repositorio Xiph
 

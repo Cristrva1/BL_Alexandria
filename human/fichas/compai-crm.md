@@ -28,7 +28,7 @@ Monorepo TypeScript: front end Next.js (puerto 3000), API NestJS con tRPC, auten
 |---|---|---|
 | [sellbird](sellbird.md) | Sellbird encuentra y contacta empresas; el CRM investiga y conserva la evidencia de cada contacto (combinación por arquitectura). | Independientes; define cuál es la fuente de verdad de cada contacto para no duplicar. |
 | [cal.diy](cal-diy.md) | Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura). | Después del CRM; conecta las invitaciones al buzón sincronizado. |
-| [n8n](n8n.md) | Mover datos del CRM a otros sistemas mediante su API (combinación por arquitectura). | CRM desplegado y con API accesible; después el flujo. |
+| [activepieces](activepieces.md) | Mover datos del CRM a otros sistemas mediante su API (combinación por arquitectura). | CRM desplegado y con API accesible; después el flujo. |
 
 **Notas:** Las herramientas nuevas o modificadas requieren revisión antes de que el agente pueda usarlas. Pensado para Vercel; en otro proveedor hay que sustituir Sandbox, Blob y AI Gateway.
 

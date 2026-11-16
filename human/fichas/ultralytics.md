@@ -10,6 +10,40 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Ultralytics, paquete con los modelos YOLO para detección, segmentación, clasificación, pose y OBB. Licencia AGPL-3.0, con licencia Enterprise de pago para uso comercial cerrado. Es muy activo (~63k estrellas, v8.4.215).
+
+## ¿Qué hace?
+
+Entrena, valida, predice, rastrea y exporta modelos YOLO con una API Python y la CLI `yolo`. Exporta a ONNX, TensorRT, CoreML, TFLite y otros formatos, y se integra con su plataforma HUB.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install ultralytics` y usa PyTorch. La documentación completa está en docs.ultralytics.com.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [supervision](supervision.md) | Anotar, contar y rastrear sobre resultados YOLO. | Convierte con `sv.Detections.from_ultralytics`. |
+| [Label Studio](label-studio.md) | Etiquetar datos para entrenar. (combinación por arquitectura) | Exporta en formato YOLO. |
+| [OpenCV](opencv.md) | Captura y procesado de vídeo. (combinación por arquitectura) | Lee fotogramas con OpenCV. |
+| [kornia](kornia.md) | Combinación recíproca: kornia lo enlaza como «Aumentos de datos en GPU para entrenar. (combinación por arquitectura)». | Orden indicado desde kornia: Aplica aumentos antes del entrenamiento. |
+| [SAM 3](sam3.md) | Combinación recíproca: SAM 3 lo enlaza como «Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura)». | Orden indicado desde SAM 3: Usa las cajas como prompts. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[CVAT Community](cvat.md) · [DeepFace](deepface.md)
+
+**Notas:** Sin alternativas declaradas. La AGPL obliga a publicar el código de servicios que lo usen, salvo con licencia Enterprise.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v8.4.215 (2026-11-16) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ultralytics/ultralytics/blob/main/README.md) · [2](https://docs.ultralytics.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +57,6 @@
 | Modelos locales | Modelos locales documentados. La licencia se debe revisar para el uso previsto; un modelo rápido o preciso en benchmarks no garantiza igual resultado en tus imágenes |
 | Coste | El coste depende del proveedor o la ruta. Inferencia local sin API obligatoria; AGPL y licencia Enterprise tienen condiciones distintas y hardware aparte |
 | Equipo | Preparación según la ruta elegida. Python; PyTorch; modelo y memoria compatibles; imagen de prueba |
-
-La licencia se debe revisar para el uso previsto; un modelo rápido o preciso en benchmarks no garantiza igual resultado en tus imágenes
-
-## Qué puedes hacer con él
-
-Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar.
-
-## Por qué destaca
-
-Usos propuestos: Contar objetos de muestra; Probar segmentación en un prototipo.
-
-## Cómo funciona
 
 La licencia se debe revisar para el uso previsto; un modelo rápido o preciso en benchmarks no garantiza igual resultado en tus imágenes
 
@@ -94,13 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; PyTorch; modelo y memoria compatibles; imagen de prueba
 - **Etiquetas:** `vision` `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [supervision](supervision.md) | 51.6k | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. |
-| [Label Studio](label-studio.md) | 28.7k | Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. |
 
 ## Enlaces
 

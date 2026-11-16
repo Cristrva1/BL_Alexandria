@@ -29,6 +29,7 @@ El backend está en Python (3.11–3.12, con uv) y el frontend en Node.js 18+. T
 | [Graphiti](graphiti.md) | Motor open source de grafos temporales de Zep; podría sustituir o complementar Zep Cloud para no depender del servicio. (combinación por arquitectura: MiroFish solo documenta Zep Cloud) | Requiere adaptar el código; evalúalo solo si necesitas autoalojar la memoria. |
 | [litellm](litellm.md) | Proxy compatible con OpenAI para usar cualquier proveedor o modelo local mediante `LLM_BASE_URL`. (combinación por arquitectura) | Arranca el proxy de LiteLLM y apunta las variables LLM_* de MiroFish a él. |
 | [Ollama](ollama.md) | Modelos locales para reducir el coste de simulaciones masivas vía endpoint compatible con OpenAI. (combinación por arquitectura; la calidad con modelos pequeños no está verificada) | Instala Ollama y apunta LLM_BASE_URL a su API /v1. |
+| [Pythia](pythia.md) | Combinación recíproca: Pythia lo enlaza como «Motor de predicción por enjambre integrado». | Orden indicado desde Pythia: Viene integrado en PYTHIA. |
 
 **Notas:** Sin alternativas declaradas. Combinación anterior con openevolve eliminada: sin relación técnica documentada. Licencia AGPL-3.0: ofrecerlo como servicio en red obliga a publicar las modificaciones.
 
