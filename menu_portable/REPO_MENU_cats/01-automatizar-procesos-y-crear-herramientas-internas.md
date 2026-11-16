@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Levanta un entorno local de pruebas siguiendo la guía oficial y ejecuta un DAG de ejemplo con dos tareas dependientes.
 **Qué comprobar:** El DAG aparece en la interfaz, ambas tareas terminan en verde y puedes leer sus logs.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `polars`, `grafana`, `mlflow`, `claude-code`
+**Combina con:** `duckdb`, `polars`, `grafana`, `mlflow`, `claude-code`, `dbt`
 **Alternativas (elige una):** `prefect`, `dagster`, `kestra`
 
 ## `appsmith`
@@ -185,7 +185,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala con `uv add dagster dagster-webserver dagster-dg-cli`, define dos activos dependientes y materialízalos desde la interfaz.
 **Qué comprobar:** La interfaz muestra el grafo de activos y ambos aparecen materializados con sus metadatos.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `polars`, `mlflow`, `claude-code`
+**Combina con:** `duckdb`, `polars`, `mlflow`, `claude-code`, `dbt`, `dlt`
 **Alternativas (elige una):** `airflow`, `prefect`, `kestra`
 
 ## `grist-core`
@@ -351,7 +351,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Une un nodo Inject con un nodo Debug y pulsa el disparador
 **Qué comprobar:** El panel Debug muestra el mensaje que inyectaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `home-assistant`, `ollama`, `grafana`
+**Combina con:** `home-assistant`, `ollama`, `grafana`, `zigbee2mqtt`
 **Alternativas (elige una):** `huginn`
 
 ## `prefect`

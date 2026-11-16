@@ -29,6 +29,7 @@ Pesa unos 40 kB de JS y 2,4 kB de CSS comprimidos; se carga desde CDN o npm. No 
 | [WebODM](webodm.md) | WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura). | Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet. |
 | [QGIS](qgis.md) | QGIS prepara y estiliza datos que se exportan como GeoJSON o teselas para mostrarlos con Leaflet (combinación por arquitectura). | Prepara las capas en QGIS; después exporta y cárgalas en Leaflet. |
 | [Claude Code](claude-code.md) | Un agente de código puede generar el HTML y JavaScript de un mapa Leaflet a partir de un GeoJSON (combinación por arquitectura). | Ten el GeoJSON listo; después pide al agente la página y revísala en el navegador. |
+| [NiceGUI](nicegui.md) | Combinación recíproca: NiceGUI lo enlaza como «El elemento `ui.leaflet` de NiceGUI muestra mapas interactivos con Leaflet». | Orden indicado desde NiceGUI: Instala NiceGUI; después añade `ui.leaflet(center=...)` a la página. |
 
 **Notas:** Alternativas (elige una): maplibre (mapas vectoriales con WebGL).
 

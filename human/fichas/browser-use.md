@@ -31,6 +31,7 @@ Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta m
 | [Pydantic AI](pydantic-ai.md) | Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI. | Instala el extra correspondiente de pydantic-ai para el proveedor elegido. |
 | [sandbox](sandbox.md) | Combinación recíproca: sandbox lo enlaza como «Navegador del sandbox para automatización. (combinación por arquitectura)». | Orden indicado desde sandbox: Conecta browser-use al navegador expuesto. |
 | [OpenManus](openmanus.md) | Combinación recíproca: OpenManus lo enlaza como «OpenManus arranca Browser Use CLI como servidor MCP por defecto para sus acciones de navegador». | Orden indicado desde OpenManus: Prepara uv y ejecuta `uvx browser-use install`; después lanza OpenManus. |
+| [Steel Browser](steel-browser.md) | Combinación recíproca: Steel Browser lo enlaza como «El cookbook oficial de Steel incluye ejemplos de browser-use sobre sesiones de Steel». | Orden indicado desde Steel Browser: Arranca Steel; después sigue el ejemplo `browser-use` del cookbook. |
 
 **Notas:** Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.
 

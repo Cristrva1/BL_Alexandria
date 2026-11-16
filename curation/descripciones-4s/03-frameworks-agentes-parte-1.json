@@ -414,6 +414,12 @@
      "id": "langfuse",
      "motivo": "Trazas con la integración oficial de Langfuse.",
      "orden_instalacion": "Instrumenta antes de producción."
+    },
+    {
+     "id": "agents-course",
+     "motivo": "Combinación recíproca: Hugging Face Agents Course lo enlaza como «La unidad 2.1 enseña a construir agentes con smolagents».",
+     "orden_instalacion": "Orden indicado desde Hugging Face Agents Course: Sigue la unidad; instala smolagents en el entorno del cuaderno.",
+     "reciproca_de": "agents-course"
     }
    ],
    "notas": "Alternativas (elige una): pydantic-ai, openai-agents-python. No ejecutes CodeAgent sin sandbox con datos o credenciales reales.",

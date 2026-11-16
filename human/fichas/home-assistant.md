@@ -32,6 +32,12 @@ Está escrito en Python (asyncio). La instalación recomendada es Home Assistant
 | [server](nextcloud-server.md) | Combinación recíproca: server lo enlaza como «Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud». | Orden indicado desde server: Activa la integración en Home Assistant con un usuario administrador de Nextcloud. |
 | [Node-RED](node-red.md) | Combinación recíproca: Node-RED lo enlaza como «El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar». | Orden indicado desde Node-RED: Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ESPHome](esphome.md) · [Frigate NVR](frigate.md) · [frp](frp.md) · [Pi-hole](pi-hole.md) · [Zigbee2MQTT](zigbee2mqtt.md)
+
 **Notas:** Sin alternativas declaradas. Exponer entidades por MCP da control físico de la casa a un modelo: limita qué entidades se exponen.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2026.11.1 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

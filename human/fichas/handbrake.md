@@ -29,6 +29,7 @@ Escrito en C con interfaces nativas para cada sistema y HandBrakeCLI; usa biblio
 | [FFmpeg](ffmpeg.md) | HandBrake se apoya en las bibliotecas de FFmpeg (libav) para decodificar y en códecs comunes; FFmpeg queda para operaciones que HandBrake no expone. | Usa HandBrake para conversiones con presets; recurre a FFmpeg para tareas por script. |
 | [OBS Studio](obs-studio.md) | Las grabaciones de OBS Studio en MKV se convierten con HandBrake a MP4 de menor tamaño para publicarlas (combinación por arquitectura). | Graba con OBS; después transcodifica con un preset de HandBrake. |
 | [LosslessCut](lossless-cut.md) | LosslessCut recorta sin recodificar y HandBrake recodifica solo el resultado final (combinación por arquitectura). | Recorta primero con LosslessCut; después convierte con HandBrake. |
+| [Jellyfin](jellyfin.md) | Combinación recíproca: Jellyfin lo enlaza como «Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura)». | Orden indicado desde Jellyfin: Convierte con HandBrake; después añade los archivos a la biblioteca. |
 
 **Notas:** No elimina protecciones anticopia; respeta los derechos del material que conviertes.
 

@@ -124,8 +124,130 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un navegador de prueba y solicita leer una página sin enviar formularios ni usar cuentas personales
 **Qué comprobar:** Puedes revisar pestaña, contexto y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ollama`, `pydantic-ai`, `sandbox`, `openmanus`
+**Combina con:** `claude-code`, `ollama`, `pydantic-ai`, `sandbox`, `openmanus`, `steel-browser`
 **Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`, `browser-harness`
+
+## `camoufox`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=browser,scraping,firefox,playwright
+
+**Qué es:** Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/daijro/camoufox
+
+**Instalación** [+]:
+
+```
+pip install -U "camoufox[geoip]"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install -U "camoufox[geoip]"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README.
+**Qué comprobar:** Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `playwright`, `crawlee-python`, `crawlee`
+
+## `cypress`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=testing,e2e,javascript,browser
+
+**Qué es:** Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso.
+**Stack:** TypeScript, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/cypress-io/cypress
+
+**Instalación** [+]:
+
+```
+npm install cypress --save-dev
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: probar los flujos críticos de una web (registro, compra) en cada cambio; probar componentes de React, Vue o Angular de forma aislada
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** En un proyecto web ejecuta `npm install cypress --save-dev` y `npx cypress open`; crea una prueba de ejemplo.
+**Qué comprobar:** Ves la prueba ejecutándose paso a paso en el navegador.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `storybook`, `claude-code`, `ffmpeg`
+**Alternativas (elige una):** `webdriverio`, `playwright`, `selenium`, `puppeteer`
+
+## `flaresolverr`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,proxy,cloudflare,docker
+
+**Qué es:** Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.
+**Stack:** Python, Dockerfile, docker-compose.yml, package.json, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/FlareSolverr/FlareSolverr
+
+**Instalación** [+]:
+
+```
+docker run -d --name=flaresolverr -p 127.0.0.1:8191:8191 -e LOG_LEVEL=info --restart unless-stopped ghcr.io/flaresolverr/flaresolverr:latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: dar acceso a indexadores (como Prowlarr o Jackett) a sitios propios o autorizados detrás de Cloudflare; obtener cookies válidas para que un scraper autorizado continúe con un cliente HTTP ligero
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Ejecuta el contenedor con Docker y envía un POST a `http://localhost:8191/v1` con `cmd: request.get` y una URL autorizada.
+**Qué comprobar:** Obtienes el HTML de la página y las cookies de la sesión.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `selenium`, `scrapy`, `crawlee-python`
+
+## `ladybird`
+role=app · exec=local · setup=hard · mcp=False · prov=— · tags=browser,engine,cpp,independent
+
+**Qué es:** Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.
+**Stack:** Rust, CMakeLists.txt, Cargo.toml, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/LadybirdBrowser/ladybird
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/LadybirdBrowser/ladybird/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: seguir o contribuir al desarrollo de un motor de navegador independiente; probar la compatibilidad de una web con un motor nuevo
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Sigue la guía de compilación (`Documentation/BuildInstructionsLadybird.md`) en Linux o macOS y ejecuta el navegador.
+**Qué comprobar:** Abres páginas con un motor independiente, todavía con fallos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `selenium`, `webdriverio`, `ffmpeg`
+**Alternativas (elige una):** `servo`
 
 ## `lightpanda`
 role=runtime · exec=local · setup=easy · mcp=True · prov=— · tags=browser,scraping
@@ -157,6 +279,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `puppeteer`, `playwright`, `stagehand`, `agent-browser`, `awesome-chrome-devtools`
 
+## `nanobrowser`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=browser,agent,chrome,extension
+
+**Qué es:** Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/nanobrowser/nanobrowser
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/nanobrowser/nanobrowser/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: automatizar tareas repetitivas en webs donde ya tienes la sesión iniciada; investigar y resumir información de varias páginas desde el panel lateral
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Instala Nanobrowser desde la Chrome Web Store, configura una clave de API o Ollama y pide una tarea sencilla en el panel lateral.
+**Qué comprobar:** El agente abre las páginas y realiza la tarea en una pestaña propia.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `llama-cpp`, `vllm`, `puppeteer`
+
 ## `playwright`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,browser,typescript
 
@@ -187,7 +339,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes distinguir fallo de aserción y fallo de arranque del navegador
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `playwright-mcp`, `playwright-cli`, `lightpanda`, `crawlee`
-**Alternativas (elige una):** `puppeteer`, `selenium`
+**Alternativas (elige una):** `puppeteer`, `selenium`, `cypress`, `webdriverio`
 
 ## `playwright-cli`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=browser,typescript
@@ -249,8 +401,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una página de prueba y consulta su título o captura antes de añadir interacciones
 **Qué comprobar:** Puedes comprobar navegador y salida obtenida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `lightpanda`, `chrome-devtools-mcp`, `awesome-chrome-devtools`
-**Alternativas (elige una):** `playwright`, `selenium`
+**Combina con:** `lightpanda`, `chrome-devtools-mcp`, `awesome-chrome-devtools`, `nanobrowser`, `steel-browser`
+**Alternativas (elige una):** `playwright`, `selenium`, `cypress`, `webdriverio`
 
 ## `selenium`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=browser,java,python
@@ -280,8 +432,39 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una página de prueba y verifica un elemento mediante WebDriver
 **Qué comprobar:** Puedes comprobar que la sesión controla el navegador correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mitmproxy`, `activepieces`, `claude-code`
-**Alternativas (elige una):** `playwright`, `puppeteer`
+**Combina con:** `mitmproxy`, `activepieces`, `claude-code`, `flaresolverr`, `steel-browser`, `ladybird`
+**Alternativas (elige una):** `playwright`, `puppeteer`, `cypress`, `webdriverio`
+
+## `servo`
+role=runtime · exec=local · setup=hard · mcp=False · prov=— · tags=browser,engine,rust,embedding
+
+**Qué es:** Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.
+**Stack:** Rust, Cargo.toml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/servo/servo
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/servo/servo/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: incrustar renderizado web en una aplicación Rust sin depender de Chromium; experimentar con un motor de navegador moderno y seguro en memoria
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Instala Rust y las dependencias del sistema según el README y ejecuta `./mach build` y `./mach run https://servo.org`.
+**Qué comprobar:** Abres una web con el navegador de demostración de Servo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `selenium`, `webdriverio`, `mitmproxy`
+**Alternativas (elige una):** `ladybird`
 
 ## `skyvern`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=browser,automation,python
@@ -342,5 +525,66 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae dos campos de una página propia y contrasta la estructura con el contenido visible
 **Qué comprobar:** Puedes comprobar datos y acciones del navegador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `lightpanda`, `firecrawl`
+**Combina con:** `claude-code`, `lightpanda`, `firecrawl`, `steel-browser`
 **Alternativas (elige una):** `browser-use`, `skyvern`
+
+## `steel-browser`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=browser,api,agents,docker
+
+**Qué es:** API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/steel-dev/steel-browser
+
+**Instalación** [+]:
+
+```
+docker run -p 3000:3000 -p 9223:9223 ghcr.io/steel-dev/steel-browser
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: dar a un agente de IA un navegador aislado y persistente sin montar infraestructura; extraer páginas o capturas mediante una API REST propia
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Ejecuta el contenedor con Docker y abre la interfaz en `http://localhost:3000/ui` o llama a la API en el puerto 3000.
+**Qué comprobar:** Puedes crear una sesión y conectar Puppeteer o Playwright a ella.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `puppeteer`, `playwright`, `selenium`, `browser-use`, `stagehand`, `webdriverio`
+
+## `webdriverio`
+role=library · exec=local · setup=medium · mcp=True · prov=— · tags=testing,e2e,webdriver,mobile
+
+**Qué es:** Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/webdriverio/webdriverio
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/webdriverio/webdriverio/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: probar una web en varios navegadores reales con protocolos estándar; automatizar pruebas de apps iOS y Android con Appium
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** En un proyecto ejecuta el asistente `npm init wdio@latest .` y lanza la prueba de ejemplo.
+**Qué comprobar:** Ves el navegador abrirse y la prueba pasar en la terminal.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `steel-browser`, `ladybird`, `servo`
+**Alternativas (elige una):** `cypress`, `playwright`, `selenium`, `puppeteer`

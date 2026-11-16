@@ -29,6 +29,7 @@ Registra cada cambio en un log de transacciones (`_delta_log`) definido en PROTO
 | [DuckDB](duckdb.md) | DuckDB lee tablas Delta con su extensión oficial `delta`. | Instala DuckDB y carga la extensión `delta`. |
 | [Polars](polars.md) | Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake (delta-rs). | Instala Polars con el paquete `deltalake`. |
 | [JupyterLab](jupyterlab.md) | Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura) | Instala JupyterLab en el entorno con PySpark o deltalake. |
+| [Apache Spark](spark.md) | Combinación recíproca: Apache Spark lo enlaza como «Delta Lake nació para Spark: añade transacciones ACID, versiones y MERGE a tablas en almacenamiento de objetos usando Spark como motor». | Orden indicado desde Apache Spark: Añade el paquete `delta-spark` a la sesión de Spark; después lee y escribe con `format("delta")`. |
 
 **Notas:** Alternativas (elige una): apache-iceberg, hudi. Delta UniForm acerca ambos formatos: Delta puede publicar metadatos Iceberg.
 

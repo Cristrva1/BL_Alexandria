@@ -4,7 +4,7 @@
 
 Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.
 
-31 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
+35 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
 
 ## Opciones para empezar
 
@@ -18,11 +18,14 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Modelos y herramientas de visión por computador.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=vision&topic=vision-detectar)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=vision&topic=vision-detectar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [4D-Humans](../fichas/4d-humans.md) | Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video. | Sin clave propia de API de IA en la ruta básica |
+| [CVAT Community](../fichas/cvat.md) | Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets. | Sin clave propia de API de IA en la ruta básica |
+| [Detectron2](../fichas/detectron2.md) | Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados. | Sin clave propia de API de IA en la ruta básica |
+| [dlib](../fichas/dlib.md) | Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización. | Sin clave propia de API de IA en la ruta básica |
 | [EasyMocap](../fichas/easymocap.md) | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. | Sin clave propia de API de IA en la ruta básica |
 | [kornia](../fichas/kornia.md) | Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch. | Sin clave propia de API de IA en la ruta básica |
 | [Label Studio](../fichas/label-studio.md) | Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. | API de IA opcional |
@@ -40,11 +43,12 @@ Modelos y herramientas de visión por computador.
 
 Herramientas especializadas en caras y retratos.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=vision&topic=vision-rostros)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=vision&topic=vision-rostros)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Deep-Live-Cam](../fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica |
+| [DeepFace](../fichas/deepface.md) | Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face. | Sin clave propia de API de IA en la ruta básica |
 | [FaceFusion](../fichas/facefusion.md) | Plataforma para intercambio y mejora de rostros en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
 | [InsightFace](../fichas/insightface.md) | Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. | Sin clave propia de API de IA en la ruta básica |
 | [LivePortrait](../fichas/liveportrait.md) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | Sin clave propia de API de IA en la ruta básica |

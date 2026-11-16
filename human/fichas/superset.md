@@ -33,6 +33,12 @@ Se prueba con Docker Compose y se despliega en producción con Kubernetes (Helm)
 | [Kestra](kestra.md) | Combinación recíproca: Kestra lo enlaza como «Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura)». | Orden indicado desde Kestra: Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén. |
 | [deck.gl](deck-gl.md) | Combinación recíproca: deck.gl lo enlaza como «Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales». | Orden indicado desde deck.gl: Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ClickHouse](clickhouse.md)
+
 **Notas:** Alternativas (elige una): metabase, redash.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 6.1.0 (2026-05-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

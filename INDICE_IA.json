@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 685 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 813 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -645,7 +645,7 @@
      "title": "Ejemplos y aprendizaje"
     }
    ],
-   "count": 19,
+   "count": 23,
    "question": "¿Quieres investigar mercados, probar una estrategia o conectar un exchange?"
   },
   {
@@ -684,7 +684,7 @@
      "title": "Aprendizaje asistido"
     }
    ],
-   "count": 27,
+   "count": 44,
    "question": "¿Quieres organizar tus notas, archivos o servicios personales?"
   },
   {
@@ -723,7 +723,7 @@
      "title": "Skills de análisis y seguridad"
     }
    ],
-   "count": 26,
+   "count": 43,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -747,7 +747,7 @@
      "title": "Comunidades,chat y llamadas"
     }
    ],
-   "count": 10
+   "count": 16
   },
   {
    "num": 18,
@@ -770,7 +770,7 @@
      "title": "Reservas y programación de citas"
     }
    ],
-   "count": 13
+   "count": 17
   },
   {
    "num": 19,
@@ -793,7 +793,7 @@
      "title": "Aprender LLMs desde cero"
     }
    ],
-   "count": 28
+   "count": 31
   },
   {
    "num": 20,
@@ -820,7 +820,7 @@
      "title": "Interfaces para gestionar sesiones"
     }
    ],
-   "count": 17
+   "count": 21
   },
   {
    "num": 21,
@@ -866,7 +866,7 @@
      "title": "Alojamiento y backend"
     }
    ],
-   "count": 16
+   "count": 26
   },
   {
    "num": 23,
@@ -889,7 +889,7 @@
      "title": "Observabilidad, evaluación y guardrails"
     }
    ],
-   "count": 19
+   "count": 26
   },
   {
    "num": 24,
@@ -908,7 +908,7 @@
      "title": "Modelos abiertos y fundacionales"
     }
    ],
-   "count": 14
+   "count": 25
   },
   {
    "num": 25,
@@ -927,7 +927,7 @@
      "title": "Apps de datos en Python"
     }
    ],
-   "count": 12
+   "count": 23
   },
   {
    "num": 26,
@@ -950,7 +950,7 @@
      "title": "Física y simulación"
     }
    ],
-   "count": 19
+   "count": 28
   },
   {
    "num": 27,
@@ -992,7 +992,7 @@
      "title": "Visión por computador"
     }
    ],
-   "count": 17
+   "count": 21
   },
   {
    "num": 29,
@@ -1023,7 +1023,7 @@
      "title": "Procesamiento y limpieza de audio"
     }
    ],
-   "count": 26
+   "count": 33
   },
   {
    "num": 30,
@@ -1046,7 +1046,7 @@
      "title": "Aplicaciones y flujos de producción"
     }
    ],
-   "count": 21
+   "count": 23
   },
   {
    "num": 31,
@@ -1065,7 +1065,7 @@
      "title": "Diagramas y documentación"
     }
    ],
-   "count": 8
+   "count": 12
   },
   {
    "num": 32,
@@ -1092,7 +1092,7 @@
      "title": "Directorios y recursos de navegador"
     }
    ],
-   "count": 11
+   "count": 19
   }
  ],
  "recipes": [
@@ -2945,7 +2945,9 @@
    "lib": false,
    "pick": false,
    "one": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.",
-   "alt": [],
+   "alt": [
+    "espocrm"
+   ],
    "doc": "human/fichas/twenty-main.md",
    "github_id": 572984571,
    "starred_by": "Cristrva1",
@@ -4939,7 +4941,8 @@
     "claude-code",
     "codex",
     "opencode",
-    "antigravity-cli"
+    "antigravity-cli",
+    "qwen-code"
    ],
    "doc": "human/fichas/gemini-cli.md",
    "github_id": 968197216,
@@ -4978,7 +4981,8 @@
    "pick": false,
    "one": "Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.",
    "alt": [
-    "open-swe"
+    "open-swe",
+    "mini-swe-agent"
    ],
    "doc": "human/fichas/openhands.md",
    "github_id": 771302083,
@@ -5022,7 +5026,8 @@
    "pick": false,
    "one": "Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.",
    "alt": [
-    "aider"
+    "aider",
+    "kilocode"
    ],
    "doc": "human/fichas/cline.md",
    "github_id": 824874689,
@@ -7278,7 +7283,9 @@
    "one": "Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje.",
    "alt": [
     "puppeteer",
-    "selenium"
+    "selenium",
+    "cypress",
+    "webdriverio"
    ],
    "doc": "human/fichas/playwright.md",
    "github_id": 221981891,
@@ -7317,7 +7324,9 @@
    "one": "Librería de Google para controlar Chrome y Firefox desde Node.js.",
    "alt": [
     "playwright",
-    "selenium"
+    "selenium",
+    "cypress",
+    "webdriverio"
    ],
    "doc": "human/fichas/puppeteer.md",
    "github_id": 90796663,
@@ -7389,7 +7398,9 @@
    "one": "Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.",
    "alt": [
     "playwright",
-    "puppeteer"
+    "puppeteer",
+    "cypress",
+    "webdriverio"
    ],
    "doc": "human/fichas/selenium.md",
    "github_id": 7613257,
@@ -9476,7 +9487,8 @@
    "alt": [
     "phoenix",
     "opik",
-    "mlflow"
+    "mlflow",
+    "helicone"
    ],
    "doc": "human/fichas/langfuse.md",
    "github_id": 642497346,
@@ -10161,7 +10173,9 @@
    "pick": true,
    "one": "App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales.",
    "alt": [
-    "llama-factory"
+    "llama-factory",
+    "axolotl",
+    "torchtune"
    ],
    "doc": "human/fichas/unsloth.md",
    "github_id": 725205304,
@@ -10230,7 +10244,8 @@
    "pick": false,
    "one": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
    "alt": [
-    "tensorflow"
+    "tensorflow",
+    "jax"
    ],
    "doc": "human/fichas/pytorch.md",
    "github_id": 65600975,
@@ -10265,7 +10280,9 @@
    "pick": false,
    "one": "Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código.",
    "alt": [
-    "unsloth"
+    "unsloth",
+    "axolotl",
+    "torchtune"
    ],
    "doc": "human/fichas/llama-factory.md",
    "github_id": 646410686,
@@ -10808,7 +10825,8 @@
    "pick": false,
    "one": "Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.",
    "alt": [
-    "duckdb"
+    "duckdb",
+    "pandas"
    ],
    "doc": "human/fichas/polars.md",
    "github_id": 263727855,
@@ -12168,7 +12186,10 @@
    "lib": false,
    "pick": true,
    "one": "Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.",
-   "alt": [],
+   "alt": [
+    "babylonjs",
+    "playcanvas"
+   ],
    "doc": "human/fichas/three-js.md",
    "github_id": 576201,
    "starred_by": "Cristrva1",
@@ -13502,7 +13523,10 @@
    "pick": true,
    "one": "Librería Python para crear y compartir apps web de modelos de ML en minutos.",
    "alt": [
-    "streamlit"
+    "streamlit",
+    "reflex",
+    "nicegui",
+    "panel"
    ],
    "doc": "human/fichas/gradio.md",
    "github_id": 162405963,
@@ -13542,7 +13566,10 @@
    "pick": false,
    "one": "Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS.",
    "alt": [
-    "gradio"
+    "gradio",
+    "reflex",
+    "nicegui",
+    "panel"
    ],
    "doc": "human/fichas/streamlit.md",
    "github_id": 204086862,
@@ -14249,7 +14276,9 @@
    "lib": false,
    "pick": false,
    "one": "Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video.",
-   "alt": [],
+   "alt": [
+    "cvat"
+   ],
    "doc": "human/fichas/label-studio.md",
    "github_id": 192640529,
    "added_at": "2026-11-10",
@@ -14696,7 +14725,8 @@
    "one": "Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.",
    "alt": [
     "cosyvoice",
-    "gpt-sovits"
+    "gpt-sovits",
+    "f5-tts"
    ],
    "doc": "human/fichas/fish-speech.md",
    "github_id": 702796244,
@@ -14773,7 +14803,8 @@
    "one": "Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue.",
    "alt": [
     "fish-speech",
-    "index-tts"
+    "index-tts",
+    "f5-tts"
    ],
    "doc": "human/fichas/cosyvoice.md",
    "github_id": 823430322,
@@ -14855,7 +14886,8 @@
    "one": "Framework open source para agentes de voz y apps multimodales en tiempo real.",
    "alt": [
     "livekit-agents",
-    "dograh"
+    "dograh",
+    "ten-framework"
    ],
    "doc": "human/fichas/pipecat.md",
    "github_id": 736272311,
@@ -14897,7 +14929,8 @@
    "one": "Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit.",
    "alt": [
     "pipecat",
-    "dograh"
+    "dograh",
+    "ten-framework"
    ],
    "doc": "human/fichas/livekit-agents.md",
    "github_id": 707441527,
@@ -15313,7 +15346,9 @@
    "one": "Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos.",
    "alt": [
     "moviepy",
-    "hyperframes"
+    "hyperframes",
+    "motion-canvas",
+    "revideo"
    ],
    "doc": "human/fichas/remotion.md",
    "github_id": 274495425,
@@ -15687,7 +15722,10 @@
    "lib": false,
    "pick": true,
    "one": "Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.",
-   "alt": [],
+   "alt": [
+    "yue",
+    "ace-step-1.5"
+   ],
    "doc": "human/fichas/audiocraft.md",
    "github_id": 650945129,
    "added_at": "2026-11-10",
@@ -16503,7 +16541,9 @@
    "pick": true,
    "one": "Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown.",
    "alt": [
-    "excalidraw"
+    "excalidraw",
+    "d2",
+    "plantuml"
    ],
    "doc": "human/fichas/mermaid.md",
    "github_id": 26066727,
@@ -16591,7 +16631,9 @@
    "lib": false,
    "pick": false,
    "one": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
-   "alt": [],
+   "alt": [
+    "easyappointments"
+   ],
    "doc": "human/fichas/cal-diy.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -18270,7 +18312,8 @@
    "pick": false,
    "one": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
    "alt": [
-    "pytorch"
+    "pytorch",
+    "jax"
    ],
    "doc": "human/fichas/tensorflow.md",
    "starred_by": "Cristrva1",
@@ -19012,7 +19055,10 @@
    "lib": false,
    "pick": false,
    "one": "Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.",
-   "alt": [],
+   "alt": [
+    "yue",
+    "audiocraft"
+   ],
    "doc": "human/fichas/ace-step-1-5.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -19362,7 +19408,9 @@
    "lib": false,
    "pick": false,
    "one": "Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central.",
-   "alt": [],
+   "alt": [
+    "pi-hole"
+   ],
    "stars": 38471,
    "github_id": 62712899,
    "gh": "AdguardTeam/AdGuardHome",
@@ -20344,7 +20392,8 @@
    "pick": false,
    "one": "Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
    "alt": [
-    "casaos"
+    "casaos",
+    "dokploy"
    ],
    "stars": 66090,
    "github_id": 332880689,
@@ -20666,7 +20715,8 @@
    "one": "Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.",
    "alt": [
     "pipecat",
-    "livekit-agents"
+    "livekit-agents",
+    "ten-framework"
    ],
    "stars": 6094,
    "github_id": 1053292493,
@@ -21406,7 +21456,9 @@
    "lib": false,
    "pick": false,
    "one": "Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.",
-   "alt": [],
+   "alt": [
+    "locust"
+   ],
    "stars": 32298,
    "github_id": 54400687,
    "gh": "grafana/k6",
@@ -23901,7 +23953,9 @@
    "lib": false,
    "pick": false,
    "one": "Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado.",
-   "alt": [],
+   "alt": [
+    "backtesting-py"
+   ],
    "stars": 9851,
    "github_id": 110684325,
    "gh": "polakowo/vectorbt",
@@ -24293,7 +24347,9 @@
    "lib": false,
    "pick": false,
    "one": "Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.",
-   "alt": [],
+   "alt": [
+    "appwrite"
+   ],
    "stars": 115046,
    "github_id": 214587193,
    "gh": "supabase/supabase",
@@ -28071,6 +28127,4839 @@
     "no_api",
     "api"
    ]
+  },
+  {
+   "id": "openbb",
+   "name": "OpenBB Open Data Platform",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "data",
+    "mcp"
+   ],
+   "stars": 75460,
+   "gh": "openbq-org/OpenBB",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP.",
+   "alt": [],
+   "doc": "human/fichas/openbb.md",
+   "github_id": 323048702,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "immich",
+   "name": "Immich",
+   "cat": 15,
+   "sub": "archivos",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "typescript",
+    "docker",
+    "image"
+   ],
+   "stars": 119326,
+   "gh": "immich-app/immich",
+   "lib": false,
+   "pick": false,
+   "one": "Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local.",
+   "alt": [
+    "photoprism"
+   ],
+   "doc": "human/fichas/immich.md",
+   "github_id": 455229168,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "frigate",
+   "name": "Frigate NVR",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vision",
+    "python",
+    "docker",
+    "self-hosted"
+   ],
+   "stars": 37493,
+   "gh": "blakeblackshear/frigate",
+   "lib": false,
+   "pick": false,
+   "one": "Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant.",
+   "alt": [],
+   "doc": "human/fichas/frigate.md",
+   "github_id": 167694194,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "jellyfin",
+   "name": "Jellyfin",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "csharp",
+    "video",
+    "server"
+   ],
+   "stars": 59415,
+   "gh": "jellyfin/jellyfin",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby.",
+   "alt": [],
+   "doc": "human/fichas/jellyfin.md",
+   "github_id": 161012019,
+   "lang": "C#",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "memos",
+   "name": "Memos",
+   "cat": 15,
+   "sub": "notas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "notas",
+    "go",
+    "self-hosted",
+    "mcp"
+   ],
+   "stars": 64495,
+   "gh": "usememos/memos",
+   "lib": false,
+   "pick": false,
+   "one": "App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP.",
+   "alt": [],
+   "doc": "human/fichas/memos.md",
+   "github_id": 436297812,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pi-hole",
+   "name": "Pi-hole",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "privacy",
+    "self-hosted",
+    "shell",
+    "server"
+   ],
+   "stars": 62046,
+   "gh": "pi-hole/pi-hole",
+   "lib": false,
+   "pick": false,
+   "one": "Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.",
+   "alt": [
+    "adguardhome"
+   ],
+   "doc": "human/fichas/pi-hole.md",
+   "github_id": 20619036,
+   "lang": "Shell",
+   "license": "EUPL-1.2",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "fingpt",
+   "name": "FinGPT",
+   "cat": 14,
+   "sub": "agentes",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "model",
+    "training"
+   ],
+   "stars": 21581,
+   "gh": "AI4Finance-Foundation/FinGPT",
+   "lib": false,
+   "pick": false,
+   "one": "Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras.",
+   "alt": [],
+   "doc": "human/fichas/fingpt.md",
+   "github_id": 600544354,
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "yfinance",
+   "name": "yfinance",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "library",
+    "data"
+   ],
+   "stars": 25930,
+   "gh": "ranaroussi/yfinance",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas.",
+   "alt": [],
+   "doc": "human/fichas/yfinance.md",
+   "github_id": 91948540,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "backtesting-py",
+   "name": "Backtesting.py",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "library"
+   ],
+   "stars": 9245,
+   "gh": "kernc/backtesting.py",
+   "lib": false,
+   "pick": false,
+   "one": "Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos.",
+   "alt": [
+    "vectorbt"
+   ],
+   "doc": "human/fichas/backtesting-py.md",
+   "github_id": 163788469,
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "photoprism",
+   "name": "PhotoPrism",
+   "cat": 15,
+   "sub": "archivos",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "go",
+    "docker",
+    "image"
+   ],
+   "stars": 40454,
+   "gh": "photoprism/photoprism",
+   "lib": false,
+   "pick": false,
+   "one": "App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube.",
+   "alt": [
+    "immich"
+   ],
+   "doc": "human/fichas/photoprism.md",
+   "github_id": 119160553,
+   "lang": "Go",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "zigbee2mqtt",
+   "name": "Zigbee2MQTT",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "typescript",
+    "iot",
+    "self-hosted"
+   ],
+   "stars": 15830,
+   "gh": "Koenkk/zigbee2mqtt",
+   "lib": false,
+   "pick": false,
+   "one": "Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros.",
+   "alt": [],
+   "doc": "human/fichas/zigbee2mqtt.md",
+   "github_id": 128636610,
+   "lang": "TypeScript",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "esphome",
+   "name": "ESPHome",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "python",
+    "iot",
+    "cpp"
+   ],
+   "stars": 12111,
+   "gh": "esphome/esphome",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlarlos desde Home Assistant.",
+   "alt": [],
+   "doc": "human/fichas/esphome.md",
+   "github_id": 128479644,
+   "lang": "C++",
+   "license": "MIT + GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "calibre-web",
+   "name": "Calibre-Web",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "python",
+    "server",
+    "reading"
+   ],
+   "stars": 18568,
+   "gh": "janeczku/calibre-web",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador.",
+   "alt": [
+    "kavita"
+   ],
+   "doc": "human/fichas/calibre-web.md",
+   "github_id": 40089578,
+   "lang": "Fluent",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kavita",
+   "name": "Kavita",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "csharp",
+    "server",
+    "reading"
+   ],
+   "stars": 12135,
+   "gh": "Kareadita/Kavita",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos.",
+   "alt": [
+    "calibre-web"
+   ],
+   "doc": "human/fichas/kavita.md",
+   "github_id": 320936145,
+   "lang": "C#",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "joplin",
+   "name": "Joplin",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "typescript",
+    "app"
+   ],
+   "stars": 57199,
+   "gh": "laurent22/joplin",
+   "lib": false,
+   "pick": false,
+   "one": "App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extremo y apps para escritorio y móvil.",
+   "alt": [
+    "trilium",
+    "siyuan",
+    "logseq"
+   ],
+   "doc": "human/fichas/joplin.md",
+   "github_id": 79162682,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "siyuan",
+   "name": "SiYuan",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "typescript",
+    "self-hosted",
+    "app"
+   ],
+   "stars": 47247,
+   "gh": "siyuan-note/siyuan",
+   "lib": false,
+   "pick": false,
+   "one": "Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA.",
+   "alt": [
+    "joplin",
+    "trilium",
+    "logseq"
+   ],
+   "doc": "human/fichas/siyuan.md",
+   "github_id": 291438522,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "logseq",
+   "name": "Logseq",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "clojure",
+    "app",
+    "local"
+   ],
+   "stars": 45607,
+   "gh": "logseq/logseq",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org.",
+   "alt": [
+    "joplin",
+    "trilium",
+    "siyuan"
+   ],
+   "doc": "human/fichas/logseq.md",
+   "github_id": 266231149,
+   "lang": "Clojure",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "trilium",
+   "name": "Trilium Notes",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "typescript",
+    "app",
+    "self-hosted"
+   ],
+   "stars": 38959,
+   "gh": "TriliumNext/Trilium",
+   "lib": false,
+   "pick": false,
+   "one": "App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.",
+   "alt": [
+    "joplin",
+    "siyuan",
+    "logseq"
+   ],
+   "doc": "human/fichas/trilium.md",
+   "github_id": 92111509,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "actual",
+   "name": "Actual Budget",
+   "cat": 15,
+   "sub": "personal",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "typescript",
+    "self-hosted",
+    "finance"
+   ],
+   "stars": 30292,
+   "gh": "actualbudget/actual",
+   "lib": false,
+   "pick": false,
+   "one": "App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.",
+   "alt": [
+    "firefly-iii"
+   ],
+   "doc": "human/fichas/actual.md",
+   "github_id": 486815039,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "firefly-iii",
+   "name": "Firefly III",
+   "cat": 15,
+   "sub": "personal",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "php",
+    "self-hosted",
+    "finance"
+   ],
+   "stars": 25260,
+   "gh": "firefly-iii/firefly-iii",
+   "lib": false,
+   "pick": false,
+   "one": "Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.",
+   "alt": [
+    "actual"
+   ],
+   "doc": "human/fichas/firefly-iii.md",
+   "github_id": 21298446,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ghostfolio",
+   "name": "Ghostfolio",
+   "cat": 15,
+   "sub": "personal",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "typescript",
+    "self-hosted",
+    "finance"
+   ],
+   "stars": 9713,
+   "gh": "ghostfolio/ghostfolio",
+   "lib": false,
+   "pick": false,
+   "one": "Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube.",
+   "alt": [],
+   "doc": "human/fichas/ghostfolio.md",
+   "github_id": 357671824,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "garak",
+   "name": "garak",
+   "cat": 16,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "llm",
+    "python",
+    "evaluation"
+   ],
+   "stars": 10043,
+   "gh": "NVIDIA/garak",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.",
+   "alt": [],
+   "doc": "human/fichas/garak.md",
+   "github_id": 639097338,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "trivy",
+   "name": "Trivy",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "devops"
+   ],
+   "stars": 39390,
+   "gh": "aquasecurity/trivy",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
+   "alt": [],
+   "doc": "human/fichas/trivy.md",
+   "github_id": 180687624,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "metasploit",
+   "name": "Metasploit Framework",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "ruby",
+    "security",
+    "cli"
+   ],
+   "stars": 39584,
+   "gh": "rapid7/metasploit-framework",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.",
+   "alt": [],
+   "doc": "human/fichas/metasploit.md",
+   "github_id": 2293158,
+   "lang": "Ruby",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sqlmap",
+   "name": "sqlmap",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "python",
+    "security",
+    "cli"
+   ],
+   "stars": 38961,
+   "gh": "sqlmapproject/sqlmap",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.",
+   "alt": [],
+   "doc": "human/fichas/sqlmap.md",
+   "github_id": 4793392,
+   "lang": "Python",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nuclei",
+   "name": "Nuclei",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "cli"
+   ],
+   "stars": 32965,
+   "gh": "projectdiscovery/nuclei",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.",
+   "alt": [],
+   "doc": "human/fichas/nuclei.md",
+   "github_id": 252813491,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nmap",
+   "name": "Nmap",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "stars": 14000,
+   "gh": "nmap/nmap",
+   "lib": false,
+   "pick": false,
+   "one": "El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.",
+   "alt": [],
+   "doc": "human/fichas/nmap.md",
+   "github_id": 3671479,
+   "lang": "C",
+   "license": "NPSL (no OSI)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ml-for-beginners",
+   "name": "ML for Beginners",
+   "cat": 19,
+   "sub": "aprender",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "learning",
+    "notebooks",
+    "python"
+   ],
+   "stars": 92213,
+   "gh": "microsoft/ML-For-Beginners",
+   "lib": false,
+   "pick": false,
+   "one": "Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.",
+   "alt": [],
+   "doc": "human/fichas/ml-for-beginners.md",
+   "github_id": 343965132,
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "agents-course",
+   "name": "Hugging Face Agents Course",
+   "cat": 19,
+   "sub": "guias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "learning",
+    "agents",
+    "python"
+   ],
+   "stars": 35017,
+   "gh": "huggingface/agents-course",
+   "lib": false,
+   "pick": false,
+   "one": "Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.",
+   "alt": [],
+   "doc": "human/fichas/agents-course.md",
+   "github_id": 917868934,
+   "lang": "MDX",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "wazuh",
+   "name": "Wazuh",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "server",
+    "self-hosted",
+    "cpp"
+   ],
+   "stars": 17760,
+   "gh": "wazuh/wazuh",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.",
+   "alt": [],
+   "doc": "human/fichas/wazuh.md",
+   "github_id": 40556106,
+   "lang": "C++",
+   "license": "GPL-2.0 + AGPL-3.0 (partes)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "lynis",
+   "name": "Lynis",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "shell",
+    "cli"
+   ],
+   "stars": 16695,
+   "gh": "CISOfy/lynis",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.",
+   "alt": [],
+   "doc": "human/fichas/lynis.md",
+   "github_id": 15078635,
+   "lang": "Shell",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "crowdsec",
+   "name": "CrowdSec",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "go",
+    "server",
+    "self-hosted"
+   ],
+   "stars": 15643,
+   "gh": "crowdsecurity/crowdsec",
+   "lib": false,
+   "pick": false,
+   "one": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
+   "alt": [],
+   "doc": "human/fichas/crowdsec.md",
+   "github_id": 264154402,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "locust",
+   "name": "Locust",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "python",
+    "app"
+   ],
+   "stars": 28288,
+   "gh": "locustio/locust",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
+   "alt": [
+    "k6"
+   ],
+   "doc": "human/fichas/locust.md",
+   "github_id": 1377867,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "hashcat",
+   "name": "hashcat",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "stars": 27357,
+   "gh": "hashcat/hashcat",
+   "lib": false,
+   "pick": false,
+   "one": "Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
+   "alt": [
+    "john"
+   ],
+   "doc": "human/fichas/hashcat.md",
+   "github_id": 47409672,
+   "lang": "C",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ffuf",
+   "name": "ffuf",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "cli"
+   ],
+   "stars": 17065,
+   "gh": "ffuf/ffuf",
+   "lib": false,
+   "pick": false,
+   "one": "Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.",
+   "alt": [],
+   "doc": "human/fichas/ffuf.md",
+   "github_id": 156681830,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zaproxy",
+   "name": "ZAP (Zed Attack Proxy)",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "java",
+    "security",
+    "app"
+   ],
+   "stars": 16198,
+   "gh": "zaproxy/zaproxy",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
+   "alt": [],
+   "doc": "human/fichas/zaproxy.md",
+   "github_id": 36817565,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "subfinder",
+   "name": "subfinder",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "osint"
+   ],
+   "stars": 14812,
+   "gh": "projectdiscovery/subfinder",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.",
+   "alt": [],
+   "doc": "human/fichas/subfinder.md",
+   "github_id": 127519518,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "john",
+   "name": "John the Ripper (jumbo)",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "stars": 13935,
+   "gh": "openwall/john",
+   "lib": false,
+   "pick": false,
+   "one": "Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
+   "alt": [
+    "hashcat"
+   ],
+   "doc": "human/fichas/john.md",
+   "github_id": 2997204,
+   "lang": "C",
+   "license": "GPL-2.0 (con partes bajo otras licencias)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "wireshark",
+   "name": "Wireshark",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "c",
+    "network",
+    "app"
+   ],
+   "stars": 10226,
+   "gh": "wireshark/wireshark",
+   "lib": false,
+   "pick": false,
+   "one": "Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.",
+   "alt": [],
+   "doc": "human/fichas/wireshark.md",
+   "github_id": 21329550,
+   "lang": "C",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "bloodhound",
+   "name": "BloodHound Community Edition",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "graph"
+   ],
+   "stars": 3570,
+   "gh": "SpecterOps/BloodHound",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).",
+   "alt": [],
+   "doc": "human/fichas/bloodhound.md",
+   "github_id": 674367771,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "annotated-dl-papers",
+   "name": "labml.ai Annotated Paper Implementations",
+   "cat": 19,
+   "sub": "aprender",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "learning",
+    "python",
+    "pytorch"
+   ],
+   "stars": 67752,
+   "gh": "labmlai/annotated_deep_learning_paper_implementations",
+   "lib": false,
+   "pick": false,
+   "one": "Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.",
+   "alt": [],
+   "doc": "human/fichas/annotated-dl-papers.md",
+   "github_id": 290091948,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "python-telegram-bot",
+   "name": "python-telegram-bot",
+   "cat": 17,
+   "sub": "chatbots",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chatbots",
+    "python",
+    "library",
+    "telegram"
+   ],
+   "stars": 29594,
+   "gh": "python-telegram-bot/python-telegram-bot",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel.",
+   "alt": [],
+   "doc": "human/fichas/python-telegram-bot.md",
+   "github_id": 38696925,
+   "lang": "Python",
+   "license": "LGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kilocode",
+   "name": "Kilo Code",
+   "cat": 20,
+   "sub": "editor",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "typescript",
+    "vscode"
+   ],
+   "stars": 28010,
+   "gh": "Kilo-Org/kilocode",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.",
+   "alt": [
+    "cline"
+   ],
+   "doc": "human/fichas/kilocode.md",
+   "github_id": 946087422,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "qwen-code",
+   "name": "Qwen Code",
+   "cat": 20,
+   "sub": "terminal",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "cli",
+    "typescript"
+   ],
+   "stars": 30566,
+   "gh": "QwenLM/qwen-code",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP.",
+   "alt": [
+    "gemini-cli"
+   ],
+   "doc": "human/fichas/qwen-code.md",
+   "github_id": 1008713177,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "uptime-kuma",
+   "name": "Uptime Kuma",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "monitoring",
+    "self-hosted",
+    "javascript",
+    "docker"
+   ],
+   "stars": 94452,
+   "gh": "louislam/uptime-kuma",
+   "lib": false,
+   "pick": false,
+   "one": "Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.",
+   "alt": [],
+   "doc": "human/fichas/uptime-kuma.md",
+   "github_id": 382496361,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dokploy",
+   "name": "Dokploy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "paas",
+    "typescript",
+    "docker"
+   ],
+   "stars": 38545,
+   "gh": "Dokploy/dokploy",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.",
+   "alt": [
+    "coolify"
+   ],
+   "doc": "human/fichas/dokploy.md",
+   "github_id": 788847937,
+   "lang": "TypeScript",
+   "license": "Apache-2.0 + licencia propietaria (/proprietary)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "frp",
+   "name": "frp",
+   "cat": 22,
+   "sub": "redes",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "cli"
+   ],
+   "stars": 110591,
+   "gh": "fatedier/frp",
+   "lib": false,
+   "pick": false,
+   "one": "Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P.",
+   "alt": [],
+   "doc": "human/fichas/frp.md",
+   "github_id": 48378947,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "headscale",
+   "name": "Headscale",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "vpn"
+   ],
+   "stars": 45750,
+   "gh": "juanfont/headscale",
+   "lib": false,
+   "pick": false,
+   "one": "Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.",
+   "alt": [
+    "netbird"
+   ],
+   "doc": "human/fichas/headscale.md",
+   "github_id": 273871859,
+   "lang": "Go",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "discord-js",
+   "name": "discord.js",
+   "cat": 17,
+   "sub": "chatbots",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chatbots",
+    "javascript",
+    "library",
+    "discord"
+   ],
+   "stars": 26837,
+   "gh": "discordjs/discord.js",
+   "lib": false,
+   "pick": false,
+   "one": "Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.",
+   "alt": [],
+   "doc": "human/fichas/discord-js.md",
+   "github_id": 40484398,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "rocket-chat",
+   "name": "Rocket.Chat",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "self-hosted",
+    "typescript",
+    "server"
+   ],
+   "stars": 46515,
+   "gh": "RocketChat/Rocket.Chat",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
+   "alt": [
+    "mattermost"
+   ],
+   "doc": "human/fichas/rocket-chat.md",
+   "github_id": 35866694,
+   "lang": "TypeScript",
+   "license": "MIT + licencia Enterprise (ee/)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mattermost",
+   "name": "Mattermost",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "self-hosted",
+    "go",
+    "server"
+   ],
+   "stars": 39621,
+   "gh": "mattermost/mattermost",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.",
+   "alt": [
+    "rocket-chat"
+   ],
+   "doc": "human/fichas/mattermost.md",
+   "github_id": 37448451,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "synapse",
+   "name": "Synapse",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "python",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 4800,
+   "gh": "element-hq/synapse",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo.",
+   "alt": [],
+   "doc": "human/fichas/synapse.md",
+   "github_id": 731190011,
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "signal-cli",
+   "name": "signal-cli",
+   "cat": 17,
+   "sub": "whatsapp",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "messaging",
+    "java",
+    "cli"
+   ],
+   "stars": 5051,
+   "gh": "AsamK/signal-cli",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.",
+   "alt": [],
+   "doc": "human/fichas/signal-cli.md",
+   "github_id": 35418187,
+   "lang": "Java",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zammad",
+   "name": "Zammad",
+   "cat": 18,
+   "sub": "crm",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "helpdesk",
+    "ruby",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 6121,
+   "gh": "zammad/zammad",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
+   "alt": [
+    "freescout"
+   ],
+   "doc": "human/fichas/zammad.md",
+   "github_id": 3898922,
+   "lang": "Ruby",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "freescout",
+   "name": "FreeScout",
+   "cat": 18,
+   "sub": "crm",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "helpdesk",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 4670,
+   "gh": "freescout-help-desk/freescout",
+   "lib": false,
+   "pick": false,
+   "one": "Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
+   "alt": [
+    "zammad"
+   ],
+   "doc": "human/fichas/freescout.md",
+   "github_id": 138328462,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "espocrm",
+   "name": "EspoCRM",
+   "cat": 18,
+   "sub": "crm",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "crm",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 3620,
+   "gh": "espocrm/espocrm",
+   "lib": false,
+   "pick": false,
+   "one": "CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.",
+   "alt": [
+    "twenty-main"
+   ],
+   "doc": "human/fichas/espocrm.md",
+   "github_id": 24459441,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "easyappointments",
+   "name": "Easy!Appointments",
+   "cat": 18,
+   "sub": "reservas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "booking",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 4491,
+   "gh": "alextselegidis/easyappointments",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.",
+   "alt": [
+    "cal.diy"
+   ],
+   "doc": "human/fichas/easyappointments.md",
+   "github_id": 27195711,
+   "lang": "PHP",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zed",
+   "name": "Zed",
+   "cat": 20,
+   "sub": "editor",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "editor",
+    "rust",
+    "coding",
+    "app"
+   ],
+   "stars": 95114,
+   "gh": "zed-industries/zed",
+   "lib": false,
+   "pick": false,
+   "one": "Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.",
+   "alt": [],
+   "doc": "human/fichas/zed.md",
+   "github_id": 340547520,
+   "lang": "Rust",
+   "license": "GPL-3.0 (Apache-2.0 en componentes marcados)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "mini-swe-agent",
+   "name": "mini-swe-agent",
+   "cat": 20,
+   "sub": "ingenieria",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "python",
+    "research"
+   ],
+   "stars": 9643,
+   "gh": "SWE-agent/mini-swe-agent",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.",
+   "alt": [
+    "openhands"
+   ],
+   "doc": "human/fichas/mini-swe-agent.md",
+   "github_id": 1010318950,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "caddy",
+   "name": "Caddy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "web",
+    "go",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 79083,
+   "gh": "caddyserver/caddy",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.",
+   "alt": [
+    "traefik"
+   ],
+   "doc": "human/fichas/caddy.md",
+   "github_id": 29207621,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "traefik",
+   "name": "Traefik Proxy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 65563,
+   "gh": "traefik/traefik",
+   "lib": false,
+   "pick": false,
+   "one": "Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.",
+   "alt": [
+    "caddy"
+   ],
+   "doc": "human/fichas/traefik.md",
+   "github_id": 42408804,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "appwrite",
+   "name": "Appwrite",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "backend",
+    "self-hosted",
+    "docker",
+    "mcp"
+   ],
+   "stars": 58106,
+   "gh": "appwrite/appwrite",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.",
+   "alt": [
+    "supabase"
+   ],
+   "doc": "human/fichas/appwrite.md",
+   "github_id": 180190854,
+   "lang": "TypeScript",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "portainer",
+   "name": "Portainer CE",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "containers",
+    "go",
+    "self-hosted",
+    "docker"
+   ],
+   "stars": 38833,
+   "gh": "portainer/portainer",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition).",
+   "alt": [],
+   "doc": "human/fichas/portainer.md",
+   "github_id": 59239347,
+   "lang": "TypeScript",
+   "license": "Zlib",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "netbird",
+   "name": "NetBird",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "vpn"
+   ],
+   "stars": 31035,
+   "gh": "netbirdio/netbird",
+   "lib": false,
+   "pick": false,
+   "one": "Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.",
+   "alt": [
+    "headscale"
+   ],
+   "doc": "human/fichas/netbird.md",
+   "github_id": 357897199,
+   "lang": "Go",
+   "license": "BSD-3-Clause + AGPL-3.0 (management, signal, relay)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "wg-easy",
+   "name": "WireGuard Easy",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "self-hosted",
+    "docker",
+    "vpn"
+   ],
+   "stars": 27497,
+   "gh": "wg-easy/wg-easy",
+   "lib": false,
+   "pick": false,
+   "one": "La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.",
+   "alt": [],
+   "doc": "human/fichas/wg-easy.md",
+   "github_id": 369764441,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "lm-eval-harness",
+   "name": "LM Evaluation Harness",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "evaluation",
+    "python",
+    "llm",
+    "benchmark"
+   ],
+   "stars": 14481,
+   "gh": "EleutherAI/lm-evaluation-harness",
+   "lib": false,
+   "pick": false,
+   "one": "Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.",
+   "alt": [],
+   "doc": "human/fichas/lm-eval-harness.md",
+   "github_id": 290909192,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "scikit-learn",
+   "name": "scikit-learn",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "data"
+   ],
+   "stars": 68191,
+   "gh": "scikit-learn/scikit-learn",
+   "lib": false,
+   "pick": false,
+   "one": "La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.",
+   "alt": [],
+   "doc": "human/fichas/scikit-learn.md",
+   "github_id": 843222,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "axolotl",
+   "name": "Axolotl",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "llm",
+    "gpu"
+   ],
+   "stars": 12724,
+   "gh": "axolotl-ai-cloud/axolotl",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
+   "alt": [
+    "torchtune",
+    "llama-factory",
+    "unsloth"
+   ],
+   "doc": "human/fichas/axolotl.md",
+   "github_id": 627727693,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "openllmetry",
+   "name": "OpenLLMetry",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "observability",
+    "python",
+    "llm",
+    "opentelemetry"
+   ],
+   "stars": 7538,
+   "gh": "traceloop/openllmetry",
+   "lib": false,
+   "pick": false,
+   "one": "Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad.",
+   "alt": [],
+   "doc": "human/fichas/openllmetry.md",
+   "github_id": 686364232,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "helicone",
+   "name": "Helicone",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "observability",
+    "typescript",
+    "llm",
+    "self-hosted"
+   ],
+   "stars": 6282,
+   "gh": "Helicone/helicone",
+   "lib": false,
+   "pick": false,
+   "one": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
+   "alt": [
+    "langfuse"
+   ],
+   "doc": "human/fichas/helicone.md",
+   "github_id": 595832198,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ray",
+   "name": "Ray",
+   "cat": 23,
+   "sub": "serving",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "distributed",
+    "python",
+    "serving",
+    "ml"
+   ],
+   "stars": 44292,
+   "gh": "ray-project/ray",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.",
+   "alt": [],
+   "doc": "human/fichas/ray.md",
+   "github_id": 71932349,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "xinference",
+   "name": "Xinference",
+   "cat": 23,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "python",
+    "llm",
+    "self-hosted"
+   ],
+   "stars": 9660,
+   "gh": "xorbitsai/inference",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.",
+   "alt": [],
+   "doc": "human/fichas/xinference.md",
+   "github_id": 653496050,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "bentoml",
+   "name": "BentoML",
+   "cat": 23,
+   "sub": "serving",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "python",
+    "ml",
+    "docker"
+   ],
+   "stars": 8941,
+   "gh": "bentoml/BentoML",
+   "lib": false,
+   "pick": false,
+   "one": "Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.",
+   "alt": [],
+   "doc": "human/fichas/bentoml.md",
+   "github_id": 178976529,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "gpustack",
+   "name": "GPUStack",
+   "cat": 23,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "python",
+    "gpu",
+    "self-hosted"
+   ],
+   "stars": 6049,
+   "gh": "gpustack/gpustack",
+   "lib": false,
+   "pick": false,
+   "one": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
+   "alt": [],
+   "doc": "human/fichas/gpustack.md",
+   "github_id": 799049436,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "keras",
+   "name": "Keras 3",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "deep-learning"
+   ],
+   "stars": 64424,
+   "gh": "keras-team/keras",
+   "lib": false,
+   "pick": false,
+   "one": "API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).",
+   "alt": [],
+   "doc": "human/fichas/keras.md",
+   "github_id": 33015583,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "deepspeed",
+   "name": "DeepSpeed",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "gpu",
+    "distributed"
+   ],
+   "stars": 43330,
+   "gh": "deepspeedai/DeepSpeed",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.",
+   "alt": [],
+   "doc": "human/fichas/deepspeed.md",
+   "github_id": 235860204,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "jax",
+   "name": "JAX",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "numerical"
+   ],
+   "stars": 36632,
+   "gh": "jax-ml/jax",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
+   "alt": [
+    "pytorch",
+    "tensorflow"
+   ],
+   "doc": "human/fichas/jax.md",
+   "github_id": 154739597,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pytorch-lightning",
+   "name": "PyTorch Lightning",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "pytorch"
+   ],
+   "stars": 31450,
+   "gh": "Lightning-AI/pytorch-lightning",
+   "lib": false,
+   "pick": false,
+   "one": "Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.",
+   "alt": [],
+   "doc": "human/fichas/pytorch-lightning.md",
+   "github_id": 178626720,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "verl",
+   "name": "verl",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "rl",
+    "gpu"
+   ],
+   "stars": 24239,
+   "gh": "verl-project/verl",
+   "lib": false,
+   "pick": false,
+   "one": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
+   "alt": [
+    "openrlhf"
+   ],
+   "doc": "human/fichas/verl.md",
+   "github_id": 881221486,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "openrlhf",
+   "name": "OpenRLHF",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "rl",
+    "gpu"
+   ],
+   "stars": 10157,
+   "gh": "OpenRLHF/OpenRLHF",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
+   "alt": [
+    "verl"
+   ],
+   "doc": "human/fichas/openrlhf.md",
+   "github_id": 672415139,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "accelerate",
+   "name": "Accelerate",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "pytorch"
+   ],
+   "stars": 9949,
+   "gh": "huggingface/accelerate",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.",
+   "alt": [],
+   "doc": "human/fichas/accelerate.md",
+   "github_id": 308638334,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "torchtune",
+   "name": "torchtune",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "pytorch",
+    "llm"
+   ],
+   "stars": 5817,
+   "gh": "meta-pytorch/torchtune",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.",
+   "alt": [
+    "axolotl",
+    "llama-factory",
+    "unsloth"
+   ],
+   "doc": "human/fichas/torchtune.md",
+   "github_id": 707869465,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "gemma",
+   "name": "Gemma (biblioteca JAX)",
+   "cat": 24,
+   "sub": "modelos",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "model",
+    "python",
+    "jax",
+    "llm"
+   ],
+   "stars": 5853,
+   "gh": "google-deepmind/gemma",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.",
+   "alt": [],
+   "doc": "human/fichas/gemma.md",
+   "github_id": 760683276,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "pandas",
+   "name": "pandas",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "python",
+    "dataframe",
+    "analytics"
+   ],
+   "stars": 50536,
+   "gh": "pandas-dev/pandas",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
+   "alt": [
+    "polars"
+   ],
+   "doc": "human/fichas/pandas.md",
+   "github_id": 858127,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dbt",
+   "name": "dbt",
+   "cat": 25,
+   "sub": "datos",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "sql",
+    "etl",
+    "analytics"
+   ],
+   "stars": 14175,
+   "gh": "dbt-labs/dbt",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
+   "alt": [],
+   "doc": "human/fichas/dbt.md",
+   "github_id": 53548867,
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "reflex",
+   "name": "Reflex",
+   "cat": 25,
+   "sub": "apps",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "web",
+    "framework",
+    "ui"
+   ],
+   "stars": 29029,
+   "gh": "reflex-dev/reflex",
+   "lib": false,
+   "pick": false,
+   "one": "Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado.",
+   "alt": [
+    "nicegui",
+    "panel",
+    "streamlit",
+    "gradio"
+   ],
+   "doc": "human/fichas/reflex.md",
+   "github_id": 557075997,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nicegui",
+   "name": "NiceGUI",
+   "cat": 25,
+   "sub": "apps",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "web",
+    "ui",
+    "framework"
+   ],
+   "stars": 16342,
+   "gh": "zauberzeug/nicegui",
+   "lib": false,
+   "pick": false,
+   "one": "Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas.",
+   "alt": [
+    "reflex",
+    "panel",
+    "streamlit",
+    "gradio"
+   ],
+   "doc": "human/fichas/nicegui.md",
+   "github_id": 365250183,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "panel",
+   "name": "Panel",
+   "cat": 25,
+   "sub": "apps",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "dashboard",
+    "dataviz",
+    "framework"
+   ],
+   "stars": 5825,
+   "gh": "holoviz/panel",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`.",
+   "alt": [
+    "reflex",
+    "nicegui",
+    "streamlit",
+    "gradio"
+   ],
+   "doc": "human/fichas/panel.md",
+   "github_id": 145848899,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "clickhouse",
+   "name": "ClickHouse",
+   "cat": 25,
+   "sub": "datos",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "database",
+    "sql",
+    "analytics",
+    "cpp"
+   ],
+   "stars": 50950,
+   "gh": "ClickHouse/ClickHouse",
+   "lib": false,
+   "pick": false,
+   "one": "Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube.",
+   "alt": [],
+   "doc": "human/fichas/clickhouse.md",
+   "github_id": 60246359,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "spark",
+   "name": "Apache Spark",
+   "cat": 25,
+   "sub": "datos",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "bigdata",
+    "sql",
+    "streaming"
+   ],
+   "stars": 44536,
+   "gh": "apache/spark",
+   "lib": false,
+   "pick": false,
+   "one": "Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark.",
+   "alt": [],
+   "doc": "human/fichas/spark.md",
+   "github_id": 17165658,
+   "lang": "Scala",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "arrow",
+   "name": "Apache Arrow",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "columnar",
+    "python",
+    "cpp"
+   ],
+   "stars": 17301,
+   "gh": "apache/arrow",
+   "lib": false,
+   "pick": false,
+   "one": "Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas.",
+   "alt": [],
+   "doc": "human/fichas/arrow.md",
+   "github_id": 51905353,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pygwalker",
+   "name": "PyGWalker",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "python",
+    "jupyter",
+    "eda"
+   ],
+   "stars": 16009,
+   "gh": "Kanaries/pygwalker",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos.",
+   "alt": [],
+   "doc": "human/fichas/pygwalker.md",
+   "github_id": 602389947,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ibis",
+   "name": "Ibis",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "python",
+    "dataframe",
+    "sql"
+   ],
+   "stars": 6701,
+   "gh": "ibis-project/ibis",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores.",
+   "alt": [],
+   "doc": "human/fichas/ibis.md",
+   "github_id": 34139230,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dlt",
+   "name": "dlt (data load tool)",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "etl",
+    "python",
+    "pipeline"
+   ],
+   "stars": 6096,
+   "gh": "dlt-hub/dlt",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental.",
+   "alt": [],
+   "doc": "human/fichas/dlt.md",
+   "github_id": 452221115,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "godot",
+   "name": "Godot Engine",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "gamedev",
+    "3d",
+    "2d",
+    "cpp"
+   ],
+   "stars": 120252,
+   "gh": "godotengine/godot",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.",
+   "alt": [
+    "bevy"
+   ],
+   "doc": "human/fichas/godot.md",
+   "github_id": 15634981,
+   "lang": "C++",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pixijs",
+   "name": "PixiJS",
+   "cat": 26,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "javascript",
+    "2d",
+    "webgl",
+    "animation"
+   ],
+   "stars": 48745,
+   "gh": "pixijs/pixijs",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador.",
+   "alt": [],
+   "doc": "human/fichas/pixijs.md",
+   "github_id": 7741856,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "babylonjs",
+   "name": "Babylon.js",
+   "cat": 26,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "javascript",
+    "3d",
+    "webgl",
+    "webxr"
+   ],
+   "stars": 26376,
+   "gh": "BabylonJS/Babylon.js",
+   "lib": false,
+   "pick": false,
+   "one": "Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.",
+   "alt": [
+    "three.js",
+    "playcanvas"
+   ],
+   "doc": "human/fichas/babylonjs.md",
+   "github_id": 11007313,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "playcanvas",
+   "name": "PlayCanvas Engine",
+   "cat": 26,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "javascript",
+    "3d",
+    "webgpu",
+    "gamedev"
+   ],
+   "stars": 17306,
+   "gh": "playcanvas/engine",
+   "lib": false,
+   "pick": false,
+   "one": "Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.",
+   "alt": [
+    "three.js",
+    "babylonjs"
+   ],
+   "doc": "human/fichas/playcanvas.md",
+   "github_id": 19696006,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "bevy",
+   "name": "Bevy",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "rust",
+    "gamedev",
+    "ecs",
+    "3d"
+   ],
+   "stars": 49777,
+   "gh": "bevyengine/bevy",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.",
+   "alt": [
+    "godot"
+   ],
+   "doc": "human/fichas/bevy.md",
+   "github_id": 234798675,
+   "lang": "Rust",
+   "license": "MIT OR Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "freecad",
+   "name": "FreeCAD",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cad",
+    "3d",
+    "cpp",
+    "app"
+   ],
+   "stars": 35493,
+   "gh": "FreeCAD/FreeCAD",
+   "lib": false,
+   "pick": false,
+   "one": "Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python.",
+   "alt": [],
+   "doc": "human/fichas/freecad.md",
+   "github_id": 5736080,
+   "lang": "C++",
+   "license": "LGPL-2.1",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "openscad",
+   "name": "OpenSCAD",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cad",
+    "3d",
+    "code",
+    "app"
+   ],
+   "stars": 10662,
+   "gh": "openscad/openscad",
+   "lib": false,
+   "pick": false,
+   "one": "CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas.",
+   "alt": [],
+   "doc": "human/fichas/openscad.md",
+   "github_id": 1049088,
+   "lang": "C++",
+   "license": "GPL-2.0 (con excepción CGAL)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "genesis-world",
+   "name": "Genesis World",
+   "cat": 26,
+   "sub": "simulacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "simulation",
+    "robotics",
+    "physics",
+    "python"
+   ],
+   "stars": 30235,
+   "gh": "Genesis-Embodied-AI/genesis-world",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU.",
+   "alt": [],
+   "doc": "human/fichas/genesis-world.md",
+   "github_id": 712225112,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mujoco",
+   "name": "MuJoCo",
+   "cat": 26,
+   "sub": "simulacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "simulation",
+    "robotics",
+    "physics",
+    "python"
+   ],
+   "stars": 18110,
+   "gh": "google-deepmind/mujoco",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo.",
+   "alt": [],
+   "doc": "human/fichas/mujoco.md",
+   "github_id": 400501136,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "deepface",
+   "name": "DeepFace",
+   "cat": 28,
+   "sub": "rostros",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "face",
+    "python",
+    "vision",
+    "biometrics"
+   ],
+   "stars": 23701,
+   "gh": "serengil/deepface",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face.",
+   "alt": [],
+   "doc": "human/fichas/deepface.md",
+   "github_id": 239201565,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "detectron2",
+   "name": "Detectron2",
+   "cat": 28,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vision",
+    "pytorch",
+    "detection",
+    "segmentation"
+   ],
+   "stars": 34985,
+   "gh": "facebookresearch/detectron2",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.",
+   "alt": [],
+   "doc": "human/fichas/detectron2.md",
+   "github_id": 206660580,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "cvat",
+   "name": "CVAT Community",
+   "cat": 28,
+   "sub": "vision",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "annotation",
+    "vision",
+    "dataset",
+    "self-hosted"
+   ],
+   "stars": 17144,
+   "gh": "cvat-ai/cvat",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.",
+   "alt": [
+    "label-studio"
+   ],
+   "doc": "human/fichas/cvat.md",
+   "github_id": 139156354,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dlib",
+   "name": "dlib",
+   "cat": 28,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vision",
+    "cpp",
+    "python",
+    "face"
+   ],
+   "stars": 14476,
+   "gh": "davisking/dlib",
+   "lib": false,
+   "pick": false,
+   "one": "Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización.",
+   "alt": [],
+   "doc": "human/fichas/dlib.md",
+   "github_id": 16331291,
+   "lang": "C++",
+   "license": "BSL-1.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "ultimate-vocal-remover",
+   "name": "Ultimate Vocal Remover (UVR)",
+   "cat": 29,
+   "sub": "audio",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "music",
+    "separation",
+    "app"
+   ],
+   "stars": 27193,
+   "gh": "Anjok07/ultimatevocalremovergui",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar.",
+   "alt": [],
+   "doc": "human/fichas/ultimate-vocal-remover.md",
+   "github_id": 281229404,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "sherpa-onnx",
+   "name": "sherpa-onnx",
+   "cat": 29,
+   "sub": "stt",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "speech",
+    "stt",
+    "tts",
+    "onnx"
+   ],
+   "stars": 15978,
+   "gh": "k2-fsa/sherpa-onnx",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor.",
+   "alt": [],
+   "doc": "human/fichas/sherpa-onnx.md",
+   "github_id": 531380835,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "f5-tts",
+   "name": "F5-TTS",
+   "cat": 29,
+   "sub": "tts",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "tts",
+    "voice-cloning",
+    "pytorch",
+    "speech"
+   ],
+   "stars": 15600,
+   "gh": "SWivid/F5-TTS",
+   "lib": false,
+   "pick": false,
+   "one": "Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI.",
+   "alt": [
+    "fish-speech",
+    "cosyvoice"
+   ],
+   "doc": "human/fichas/f5-tts.md",
+   "github_id": 869549554,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "narrar",
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "audacity",
+   "name": "Audacity",
+   "cat": 29,
+   "sub": "audio",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "editor",
+    "cpp",
+    "app"
+   ],
+   "stars": 19083,
+   "gh": "audacity/audacity",
+   "lib": false,
+   "pick": false,
+   "one": "Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel.",
+   "alt": [],
+   "doc": "human/fichas/audacity.md",
+   "github_id": 32921736,
+   "lang": "C++",
+   "license": "GPL-3.0 (mayoría de archivos GPL-2.0-or-later)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "demucs",
+   "name": "Demucs",
+   "cat": 29,
+   "sub": "audio",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "music",
+    "separation",
+    "pytorch"
+   ],
+   "stars": 3551,
+   "gh": "adefossez/demucs",
+   "lib": false,
+   "pick": false,
+   "one": "Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta.",
+   "alt": [],
+   "doc": "human/fichas/demucs.md",
+   "github_id": 719554886,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "yue",
+   "name": "YuE2",
+   "cat": 29,
+   "sub": "musica",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "music",
+    "generation",
+    "audio",
+    "model"
+   ],
+   "stars": 13528,
+   "gh": "multimodal-art-projection/YuE",
+   "lib": false,
+   "pick": false,
+   "one": "Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.",
+   "alt": [
+    "ace-step-1.5",
+    "audiocraft"
+   ],
+   "doc": "human/fichas/yue.md",
+   "github_id": 920995232,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "ten-framework",
+   "name": "TEN Framework",
+   "cat": 29,
+   "sub": "voz-agentes",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "voice",
+    "agents",
+    "realtime",
+    "framework"
+   ],
+   "stars": 11232,
+   "gh": "TEN-framework/ten-framework",
+   "lib": false,
+   "pick": false,
+   "one": "Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.",
+   "alt": [
+    "pipecat",
+    "livekit-agents",
+    "dograh"
+   ],
+   "doc": "human/fichas/ten-framework.md",
+   "github_id": 817354652,
+   "lang": "Python",
+   "license": "Apache-2.0 con condiciones adicionales (Agora)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "motion-canvas",
+   "name": "Motion Canvas",
+   "cat": 30,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animation",
+    "typescript",
+    "video",
+    "code"
+   ],
+   "stars": 19965,
+   "gh": "motion-canvas/motion-canvas",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.",
+   "alt": [
+    "revideo",
+    "remotion"
+   ],
+   "doc": "human/fichas/motion-canvas.md",
+   "github_id": 520955562,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "revideo",
+   "name": "Revideo",
+   "cat": 30,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "video",
+    "typescript",
+    "rendering",
+    "code"
+   ],
+   "stars": 4212,
+   "gh": "midrender/revideo",
+   "lib": false,
+   "pick": false,
+   "one": "Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.",
+   "alt": [
+    "motion-canvas",
+    "remotion"
+   ],
+   "doc": "human/fichas/revideo.md",
+   "github_id": 770297271,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "d2",
+   "name": "D2",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "go",
+    "cli",
+    "docs-as-code"
+   ],
+   "stars": 25844,
+   "gh": "d2lang/d2",
+   "lib": false,
+   "pick": false,
+   "one": "Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
+   "alt": [
+    "plantuml",
+    "mermaid"
+   ],
+   "doc": "human/fichas/d2.md",
+   "github_id": 533087958,
+   "lang": "Go",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "drawio",
+   "name": "draw.io",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "editor",
+    "javascript",
+    "app"
+   ],
+   "stars": 9390,
+   "gh": "jgraph/drawio",
+   "lib": false,
+   "pick": false,
+   "one": "Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML.",
+   "alt": [],
+   "doc": "human/fichas/drawio.md",
+   "github_id": 67508428,
+   "lang": "JavaScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "plantuml",
+   "name": "PlantUML",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "uml",
+    "java",
+    "docs-as-code"
+   ],
+   "stars": 13421,
+   "gh": "plantuml/plantuml",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
+   "alt": [
+    "d2",
+    "mermaid"
+   ],
+   "doc": "human/fichas/plantuml.md",
+   "github_id": 1051476,
+   "lang": "Java",
+   "license": "Multilicencia (GPL-3.0, LGPL-3.0, Apache-2.0, EPL-2.0 o MIT)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kroki",
+   "name": "Kroki",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "api",
+    "self-hosted",
+    "docker"
+   ],
+   "stars": 4407,
+   "gh": "yuzutech/kroki",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG.",
+   "alt": [],
+   "doc": "human/fichas/kroki.md",
+   "github_id": 165063056,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "flaresolverr",
+   "name": "FlareSolverr",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "scraping",
+    "proxy",
+    "cloudflare",
+    "docker"
+   ],
+   "stars": 16238,
+   "gh": "FlareSolverr/FlareSolverr",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.",
+   "alt": [],
+   "doc": "human/fichas/flaresolverr.md",
+   "github_id": 270910423,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "camoufox",
+   "name": "Camoufox",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "scraping",
+    "firefox",
+    "playwright"
+   ],
+   "stars": 13330,
+   "gh": "daijro/camoufox",
+   "lib": false,
+   "pick": false,
+   "one": "Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright.",
+   "alt": [],
+   "doc": "human/fichas/camoufox.md",
+   "github_id": 834082440,
+   "lang": "C",
+   "license": "MPL-2.0 (navegador) y MIT (paquetes de Python)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nanobrowser",
+   "name": "Nanobrowser",
+   "cat": 32,
+   "sub": "agentes-web",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "agent",
+    "chrome",
+    "extension"
+   ],
+   "stars": 14317,
+   "gh": "nanobrowser/nanobrowser",
+   "lib": false,
+   "pick": false,
+   "one": "Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.",
+   "alt": [],
+   "doc": "human/fichas/nanobrowser.md",
+   "github_id": 910418754,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "steel-browser",
+   "name": "Steel Browser",
+   "cat": 32,
+   "sub": "agentes-web",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "api",
+    "agents",
+    "docker"
+   ],
+   "stars": 7973,
+   "gh": "steel-dev/steel-browser",
+   "lib": false,
+   "pick": false,
+   "one": "API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium.",
+   "alt": [],
+   "doc": "human/fichas/steel-browser.md",
+   "github_id": 882026761,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "cypress",
+   "name": "Cypress",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "testing",
+    "e2e",
+    "javascript",
+    "browser"
+   ],
+   "stars": 51029,
+   "gh": "cypress-io/cypress",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso.",
+   "alt": [
+    "webdriverio",
+    "playwright",
+    "selenium",
+    "puppeteer"
+   ],
+   "doc": "human/fichas/cypress.md",
+   "github_id": 31629751,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "webdriverio",
+   "name": "WebdriverIO",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "testing",
+    "e2e",
+    "webdriver",
+    "mobile"
+   ],
+   "stars": 9884,
+   "gh": "webdriverio/webdriverio",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA.",
+   "alt": [
+    "cypress",
+    "playwright",
+    "selenium",
+    "puppeteer"
+   ],
+   "doc": "human/fichas/webdriverio.md",
+   "github_id": 2296970,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ladybird",
+   "name": "Ladybird",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "engine",
+    "cpp",
+    "independent"
+   ],
+   "stars": 67152,
+   "gh": "LadybirdBrowser/ladybird",
+   "lib": false,
+   "pick": false,
+   "one": "Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.",
+   "alt": [
+    "servo"
+   ],
+   "doc": "human/fichas/ladybird.md",
+   "github_id": 808045485,
+   "lang": "Rust",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "servo",
+   "name": "Servo",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "engine",
+    "rust",
+    "embedding"
+   ],
+   "stars": 38529,
+   "gh": "servo/servo",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.",
+   "alt": [
+    "ladybird"
+   ],
+   "doc": "human/fichas/servo.md",
+   "github_id": 3390243,
+   "lang": "Rust",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   }
  ],
  "discovery": {
@@ -28094,7 +32983,18 @@
      3,
      7,
      16,
-     20
+     17,
+     20,
+     22,
+     23,
+     24,
+     25,
+     26,
+     28,
+     29,
+     30,
+     31,
+     32
     ],
     "keywords": [
      "programar",
@@ -28128,7 +33028,11 @@
     ],
     "categories": [
      1,
-     18
+     17,
+     18,
+     25,
+     29,
+     32
     ],
     "keywords": [
      "automatizar",
@@ -28237,6 +33141,7 @@
     "categories": [
      3,
      4,
+     16,
      21
     ],
     "keywords": [
@@ -28274,6 +33179,7 @@
     "categories": [
      8,
      15,
+     23,
      24
     ],
     "keywords": [
@@ -28312,7 +33218,8 @@
     "categories": [
      9,
      26,
-     27
+     27,
+     32
     ],
     "keywords": [
      "web",
@@ -28553,7 +33460,9 @@
     ],
     "categories": [
      10,
-     25
+     24,
+     25,
+     28
     ],
     "keywords": [
      "datos",
@@ -28787,8 +33696,11 @@
     "categories": [
      13,
      15,
+     16,
+     17,
      18,
-     22
+     22,
+     25
     ],
     "keywords": [
      "servidor propio",

@@ -156,7 +156,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala HandBrake, abre un vídeo corto y conviértelo con un preset de 1080p.
 **Qué comprobar:** Obtienes un MP4 reproducible en el móvil con menor tamaño que el original.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `obs-studio`, `lossless-cut`
+**Combina con:** `ffmpeg`, `obs-studio`, `lossless-cut`, `jellyfin`
 
 ## `hunyuanvideo`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python

@@ -30,6 +30,8 @@ Escrito en Go; requiere una versión reciente de Go para `go install` (con CGO) 
 | [DuckDB](duckdb.md) | La salida JSON de Katana se puede consultar con DuckDB para filtrar y agrupar endpoints (combinación por arquitectura). | Ejecuta Katana con salida JSON; después consulta el archivo con DuckDB. |
 | [Claude Code](claude-code.md) | Un agente puede lanzar Katana sobre un objetivo autorizado y resumir los endpoints descubiertos (combinación por arquitectura). | Instala Katana y define el alcance permitido; después pide al agente el análisis. |
 | [theHarvester](theharvester.md) | Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)». | Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado. |
+| [Nuclei](nuclei.md) | Combinación recíproca: Nuclei lo enlaza como «katana rastrea URLs y endpoints que Nuclei escanea a continuación». | Orden indicado desde Nuclei: Rastrea con katana; después pasa las URLs a nuclei. |
+| [subfinder](subfinder.md) | Combinación recíproca: subfinder lo enlaza como «katana rastrea los subdominios descubiertos para mapear endpoints». | Orden indicado desde subfinder: Enumera con subfinder; después pasa los hosts a katana. |
 
 **Notas:** Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.
 
