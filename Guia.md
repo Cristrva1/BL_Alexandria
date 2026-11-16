@@ -2123,7 +2123,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://ui.shadcn.com/docs/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un formulario con componentes propios; Crear un sistema de interfaz con código modificable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [plasmic](human/fichas/plasmic.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [Radix Primitives](human/fichas/radix-primitives.md) · [Lucide](human/fichas/lucide.md) · [magicui](human/fichas/magicui.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/ui.md) · [GitHub](https://github.com/shadcn-ui/ui)
 
 #### 🧱 Ant Design
@@ -2132,7 +2132,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install antd` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un panel administrativo; Montar formularios de gestión — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [echarts](human/fichas/echarts.md)<br>
+**Combina con:** [echarts](human/fichas/echarts.md) · [swr](human/fichas/swr.md) · [AI SDK (Vercel)](human/fichas/vercel-ai.md)<br>
 **Más:** [ficha completa](human/fichas/ant-design.md) · [GitHub](https://github.com/ant-design/ant-design)
 
 #### 🧱 Material UI
@@ -2141,7 +2141,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://mui.com/material-ui/getting-started/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un dashboard Material Design; Construir una pantalla de ajustes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Recharts](human/fichas/recharts.md)<br>
+**Combina con:** [Recharts](human/fichas/recharts.md) · [swr](human/fichas/swr.md) · [AI SDK (Vercel)](human/fichas/vercel-ai.md)<br>
 **Más:** [ficha completa](human/fichas/mui.md) · [GitHub](https://github.com/mui/material-ui)
 
 #### 🧱 React Bits
@@ -2150,7 +2150,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx shadcn@latest add @react-bits/SplitText-TS-TW` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui](human/fichas/ui.md) · [motion](human/fichas/motion.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/react-bits.md) · [GitHub](https://github.com/DavidHDev/react-bits)
 
 #### 🔄 swr
@@ -2159,7 +2159,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://swr.vercel.app/docs/getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [heroui](human/fichas/heroui.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [heroui](human/fichas/heroui.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/swr.md) · [GitHub](https://github.com/vercel/swr)
 
 #### 🦸 heroui
@@ -2168,7 +2168,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install @heroui/styles @heroui/react` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir formularios accesibles; Crear una interfaz con temas compartidos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [swr](human/fichas/swr.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [Claude Code](human/fichas/claude-code.md) · [swr](human/fichas/swr.md)<br>
 **Más:** [ficha completa](human/fichas/heroui.md) · [GitHub](https://github.com/heroui-inc/heroui)
 
 #### 🧱 Lucide
@@ -2177,7 +2177,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://lucide.dev/guide/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui](human/fichas/ui.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [daisyUI](human/fichas/daisyui.md)<br>
 **Más:** [ficha completa](human/fichas/lucide.md) · [GitHub](https://github.com/lucide-icons/lucide)
 
 #### ✨ magicui
@@ -2186,7 +2186,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://magicui.design/docs); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [motion](human/fichas/motion.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [motion](human/fichas/motion.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/magicui.md) · [GitHub](https://github.com/magicuidesign/magicui)
 
 #### 🧱 Radix Primitives
@@ -2195,7 +2195,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://www.radix-ui.com/primitives/docs/overview/getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un menú accesible; Crear un sistema de diseño sin estilos impuestos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Lucide](human/fichas/lucide.md)<br>
 **Más:** [ficha completa](human/fichas/radix-primitives.md) · [GitHub](https://github.com/radix-ui/primitives)
 
 #### 📚 konva
@@ -2204,6 +2204,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install konva` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un editor de anotaciones; Crear un pequeño diagrama interactivo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Lucide](human/fichas/lucide.md)<br>
 **Más:** [ficha completa](human/fichas/konva.md) · [GitHub](https://github.com/konvajs/konva)
 
 ### CSS y estilos
@@ -2214,7 +2215,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://daisyui.com/docs/install/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [Lucide](human/fichas/lucide.md) · [flexoki](human/fichas/flexoki.md)<br>
 **Más:** [ficha completa](human/fichas/daisyui.md) · [GitHub](https://github.com/saadeghi/daisyui)
 
 #### 🌬️ tailwindcss
@@ -2223,7 +2224,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://tailwindcss.com/docs/installation/using-vite); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un formulario responsive; Definir colores y espaciado consistentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [heroui](human/fichas/heroui.md) · [magicui](human/fichas/magicui.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [daisyUI](human/fichas/daisyui.md) · [heroui](human/fichas/heroui.md) · [magicui](human/fichas/magicui.md)<br>
 **Más:** [ficha completa](human/fichas/tailwindcss.md) · [GitHub](https://github.com/tailwindlabs/tailwindcss)
 
 #### 🧯 normalize.css
@@ -2232,7 +2233,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install --save normalize.css` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Unificar una base de estilos; Reducir diferencias iniciales de formularios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Combina con:** [Radix Primitives](human/fichas/radix-primitives.md) · [flexoki](human/fichas/flexoki.md) · [Lucide](human/fichas/lucide.md)<br>
 **Más:** [ficha completa](human/fichas/normalize-css.md) · [GitHub](https://github.com/necolas/normalize.css)
 
 #### 📂 flexoki
@@ -2241,6 +2242,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/kepano/flexoki/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Definir una paleta para una app de notas; Crear un tema de editor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [daisyUI](human/fichas/daisyui.md) · [Excalidraw](human/fichas/excalidraw.md)<br>
 **Más:** [ficha completa](human/fichas/flexoki.md) · [GitHub](https://github.com/kepano/flexoki)
 
 ### Diseño visual, canvas y builders

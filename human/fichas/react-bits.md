@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Colección de más de 215 componentes y fondos React animados de @DavidHDev. Su licencia es **MIT + Commons Clause**, no open source en sentido OSI: impide vender el software como tal. Es muy popular (~52k estrellas) y tiene una versión comercial, React Bits Pro.
+
+## ¿Qué hace?
+
+Ofrece animaciones de texto, fondos, componentes interactivos y efectos para webs llamativas, cada uno con demo en vivo y controles. Cada componente viene en cuatro variantes: JavaScript o TypeScript, con CSS o con Tailwind. Tiene servidor MCP y herramientas para que un agente elija e instale componentes.
+
+## ¿Cómo lo hace?
+
+Los componentes se copian al proyecto manualmente o con CLIs de registro (shadcn o jsrepo, según la documentación de instalación). Algunas animaciones dependen de bibliotecas como GSAP o Motion [DATO NO VERIFICADO: dependencias por componente]. Hay que revisar el rendimiento y la accesibilidad: muchas animaciones son pesadas en móviles.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | Instalar componentes con la CLI de shadcn junto a una base de componentes accesibles. | Inicializa shadcn/ui y añade los componentes de React Bits con su comando de registro. |
+| [tailwindcss](tailwindcss.md) | Variante de estilos con Tailwind de cada componente. | Configura Tailwind antes de copiar las variantes TW. |
+| [Claude Code](claude-code.md) | Elegir e instalar componentes desde un agente vía el servidor MCP de React Bits. | Registra el MCP según reactbits.dev/get-started/mcp. |
+
+**Notas:** Alternativas (elige una): magicui. Licencia con Commons Clause: revísala antes de uso comercial que implique revender los componentes.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DavidHDev/react-bits/blob/main/README.md) · [2](https://reactbits.dev/get-started/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias |
 | Coste | El coste depende del proveedor o la ruta. El repositorio usa MIT más Commons Clause; Pro y productos externos se revisan por separado; no requiere modelo |
 | Equipo | Preparación según la ruta elegida. React o Next.js; Node; dependencias de la variante del componente |
-
-MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias
-
-## Qué puedes hacer con él
-
-La mayor colección open source de componentes React animados e interactivos para webs llamativas.
-
-## Por qué destaca
-
-Usos propuestos: Crear un encabezado animado; Prototipar una interacción visual.
-
-## Cómo funciona
 
 MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React o Next.js; Node; dependencias de la variante del componente
 - **Etiquetas:** `ui` `react` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
-| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Alternativas (elige una)
 

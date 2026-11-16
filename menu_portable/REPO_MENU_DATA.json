@@ -33789,7 +33789,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un panel administrativo; Montar formularios de gestión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "echarts"
+        "echarts",
+        "swr",
+        "vercel-ai"
       ],
       "alt": [
         "mui",
@@ -34147,7 +34149,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "tailwindcss"
+        "tailwindcss",
+        "lucide",
+        "flexoki"
       ],
       "alt": [
         "ui"
@@ -34376,7 +34380,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Definir una paleta para una app de notas; Crear un tema de editor",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "tailwindcss",
+        "daisyui",
+        "excalidraw"
+      ],
       "alt": []
     },
     {
@@ -34492,6 +34500,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "tailwindcss",
+        "claude-code",
         "swr"
       ],
       "alt": [
@@ -34722,7 +34731,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir un editor de anotaciones; Crear un pequeño diagrama interactivo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ui",
+        "tailwindcss",
+        "lucide"
+      ],
       "alt": []
     },
     {
@@ -34833,7 +34846,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ui"
+        "ui",
+        "tailwindcss",
+        "daisyui"
       ],
       "alt": []
     },
@@ -34944,8 +34959,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ui",
         "tailwindcss",
-        "motion"
+        "motion",
+        "claude-code"
       ],
       "alt": [
         "react-bits"
@@ -35066,7 +35083,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un dashboard Material Design; Construir una pantalla de ajustes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "recharts"
+        "recharts",
+        "swr",
+        "vercel-ai"
       ],
       "alt": [
         "ant-design",
@@ -35182,7 +35201,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Unificar una base de estilos; Reducir diferencias iniciales de formularios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "tailwindcss"
+        "radix-primitives",
+        "flexoki",
+        "lucide"
       ],
       "alt": []
     },
@@ -35891,7 +35912,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ui",
-        "tailwindcss"
+        "tailwindcss",
+        "lucide"
       ],
       "alt": []
     },
@@ -36009,7 +36031,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ui",
-        "motion"
+        "tailwindcss",
+        "claude-code"
       ],
       "alt": [
         "magicui"
@@ -36368,7 +36391,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "heroui"
+        "ui",
+        "heroui",
+        "supabase"
       ],
       "alt": []
     },
@@ -36481,6 +36506,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar un formulario responsive; Definir colores y espaciado consistentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ui",
+        "daisyui",
         "heroui",
         "magicui"
       ],
@@ -36725,7 +36752,10 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "tailwindcss",
-        "plasmic"
+        "radix-primitives",
+        "lucide",
+        "magicui",
+        "claude-code"
       ],
       "alt": [
         "mui",

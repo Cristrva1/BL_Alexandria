@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Biblioteca de componentes React (Apache-2.0) antes llamada NextUI, de HeroUI Inc. Es madura y muy activa (v3.2.7).
+
+## ¿Qué hace?
+
+Combina la accesibilidad de React Aria (teclado, foco, lectores de pantalla conformes a WCAG) con estilos utilitarios de Tailwind CSS v4. Ofrece una API de componentes compuestos (`Card.Header`, `Card.Content`), no necesita un Provider envolvente y apunta a SaaS, paneles y tiendas. Es 'AI-native': incluye servidor MCP (`@heroui/react-mcp`), `llms.txt` y skills de agente.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install @heroui/styles @heroui/react`, con importaciones por componente disponibles. Requiere Tailwind CSS v4 y no usa CSS-in-JS en tiempo de ejecución. El servidor MCP se instala en Cursor, Claude Code, Windsurf u otros clientes MCP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Motor de estilos requerido (Tailwind CSS v4). | Configura Tailwind v4 antes de instalar HeroUI. |
+| [Claude Code](claude-code.md) | Componentes y tema accesibles para el asistente mediante el servidor MCP `@heroui/react-mcp`. | Instala HeroUI y registra su servidor MCP en Claude Code. |
+| [swr](swr.md) | Carga de datos para los componentes. (combinación por arquitectura) | Añade swr y usa sus hooks en las vistas. |
+
+**Notas:** Alternativas (elige una): mui.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.7 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/heroui-inc/heroui/blob/v3/README.md) · [2](https://www.heroui.com/docs/react/getting-started)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no exige modelo; servicios y contenidos comerciales relacionados tienen condiciones aparte |
 | Equipo | Preparación según la ruta elegida. React; Tailwind CSS v4 y configuración según guía; Node |
-
-Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes
-
-## Qué puedes hacer con él
-
-Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes.
-
-## Por qué destaca
-
-Usos propuestos: Construir formularios accesibles; Crear una interfaz con temas compartidos.
-
-## Cómo funciona
 
 Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; Tailwind CSS v4 y configuración según guía; Node
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
-| [swr](swr.md) | 32.5k | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. |
 
 ## Alternativas (elige una)
 

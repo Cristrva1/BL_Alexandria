@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca de componentes UI animados (MIT) para 'design engineers', de Magic UI. Es popular (~23k estrellas) y activa.
+
+## ¿Qué hace?
+
+Ofrece componentes y efectos visuales (globos, marquesinas, partículas, textos animados, bordes brillantes y otros) para landing pages y webs de producto. Incluye un servidor MCP para que asistentes de IA usen los componentes.
+
+## ¿Cómo lo hace?
+
+Se distribuye como registro de shadcn: `npx shadcn@latest add @magicui/<componente>` copia el código al proyecto. Usa React, TypeScript, Tailwind CSS y Motion para las animaciones. Requiere un proyecto con shadcn/ui inicializado.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | Base de instalación: Magic UI se añade con la CLI de shadcn. | Ejecuta `npx shadcn@latest init` y luego añade los componentes de Magic UI. |
+| [tailwindcss](tailwindcss.md) | Estilos de los componentes. | Se configura con la inicialización de shadcn. |
+| [motion](motion.md) | Biblioteca de animación usada por los componentes. | Se instala como dependencia al añadir cada componente. |
+| [Claude Code](claude-code.md) | Usar los componentes desde el asistente vía el servidor MCP de Magic UI. | Registra el MCP según magicui.design/docs/mcp. |
+
+**Notas:** Alternativas (elige una): react-bits.
+
+Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/magicuidesign/magicui/blob/main/README.md) · [2](https://magicui.design/docs/installation) · [3](https://magicui.design/docs/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos |
 | Coste | Sin pago a un modelo en la ruta básica. Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios |
 | Equipo | Preparación según la ruta elegida. React; dependencias del componente elegido; proyecto de prueba |
-
-Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
-
-## Qué puedes hacer con él
-
-Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar una sección de landing; Añadir una interacción de presentación.
-
-## Cómo funciona
 
 Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
 
@@ -85,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; dependencias del componente elegido; proyecto de prueba
 - **Etiquetas:** `ui`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
-| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Alternativas (elige una)
 

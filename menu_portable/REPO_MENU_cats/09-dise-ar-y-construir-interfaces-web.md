@@ -60,7 +60,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Muestra una tabla con tres filas ficticias y añade un filtro
 **Qué comprobar:** El filtro cambia las filas y puedes revisar el estado seleccionado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `echarts`
+**Combina con:** `echarts`, `swr`, `vercel-ai`
 **Alternativas (elige una):** `mui`, `ui`
 
 ## `assistant-ui`
@@ -153,7 +153,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un botón y una tarjeta con un tema y cambia al segundo tema
 **Qué comprobar:** Se actualizan colores sin reescribir cada componente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`
+**Combina con:** `tailwindcss`, `lucide`, `flexoki`
 **Alternativas (elige una):** `ui`
 
 ## `excalidraw`
@@ -214,6 +214,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Aplica la paleta a una página de prueba y comprueba contraste de texto y controles
 **Qué comprobar:** Puedes identificar colores semánticos legibles en claro y oscuro
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `tailwindcss`, `daisyui`, `excalidraw`
 
 ## `heroui`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,typescript
@@ -243,7 +244,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade un botón y un campo con un tema sencillo y prueba el foco por teclado
 **Qué comprobar:** Los componentes muestran el tema y estados interactivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `swr`
+**Combina con:** `tailwindcss`, `claude-code`, `swr`
 **Alternativas (elige una):** `mui`
 
 ## `json-render`
@@ -304,6 +305,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja un rectángulo arrastrable y exporta el canvas a imagen
 **Qué comprobar:** Puedes mover la forma y abrir la exportación
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ui`, `tailwindcss`, `lucide`
 
 ## `lucide`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
@@ -333,7 +335,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un icono de búsqueda junto a una etiqueta y cambia tamaño y grosor
 **Qué comprobar:** El icono se ve consistente y el control conserva nombre accesible
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`
+**Combina con:** `ui`, `tailwindcss`, `daisyui`
 
 ## `magicui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui
@@ -363,7 +365,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un componente visual pequeño y comprueba el diseño en móvil y con movimiento reducido
 **Qué comprobar:** El contenido sigue siendo legible y el componente no desborda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `motion`
+**Combina con:** `ui`, `tailwindcss`, `motion`, `claude-code`
 **Alternativas (elige una):** `react-bits`
 
 ## `mui`
@@ -394,7 +396,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Construye un formulario pequeño y verifica estados de error y foco
 **Qué comprobar:** Los campos muestran validación y se recorren con teclado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `recharts`
+**Combina con:** `recharts`, `swr`, `vercel-ai`
 **Alternativas (elige una):** `ant-design`, `ui`, `heroui`
 
 ## `normalize.css`
@@ -425,7 +427,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Incluye la hoja en una página con formulario y compara dos navegadores
 **Qué comprobar:** Puedes observar qué estilos base se normalizan y cuáles siguen siendo tuyos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`
+**Combina con:** `radix-primitives`, `flexoki`, `lucide`
 
 ## `onlook`
 role=app · exec=local · setup=easy · mcp=False · prov=anthropic · tags=design,ui,coding-agent,typescript
@@ -612,7 +614,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Construye el popover de inicio y prueba abrir, cerrar y devolver foco con teclado
 **Qué comprobar:** El foco y el estado del popover se comportan como esperas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `tailwindcss`
+**Combina con:** `ui`, `tailwindcss`, `lucide`
 
 ## `react-bits`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
@@ -642,7 +644,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala un único componente SplitText en una página de prueba y comprueba su lectura sin animación
 **Qué comprobar:** El texto sigue siendo legible y puedes ajustar duración y estilos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `motion`
+**Combina con:** `ui`, `tailwindcss`, `claude-code`
 **Alternativas (elige una):** `magicui`
 
 ## `screenshot-to-code`
@@ -735,7 +737,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Muestra un perfil ficticio y cambia el dato del servidor para observar la revalidación
 **Qué comprobar:** Se distinguen carga, error, datos cacheados y datos nuevos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `heroui`
+**Combina con:** `ui`, `heroui`, `supabase`
 
 ## `tailwindcss`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
@@ -765,7 +767,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una tarjeta adaptable y cambia el espaciado con utilidades
 **Qué comprobar:** Puedes comprobar diferencias entre móvil y escritorio
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `heroui`, `magicui`
+**Combina con:** `ui`, `daisyui`, `heroui`, `magicui`
 
 ## `tldraw`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=design,ui,react,typescript
@@ -825,7 +827,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade una tarjeta con botón y modifica sus estilos desde el código copiado al proyecto
 **Qué comprobar:** Ves el componente y puedes localizar su archivo editable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `plasmic`
+**Combina con:** `tailwindcss`, `radix-primitives`, `lucide`, `magicui`, `claude-code`
 **Alternativas (elige una):** `mui`, `ant-design`, `daisyui`
 
 ## `ui-sdk`

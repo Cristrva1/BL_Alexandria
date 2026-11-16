@@ -1,0 +1,534 @@
+{
+ "batch": "16-ui-componentes-estilos",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "ui": {
+   "que_es": "shadcn/ui es un conjunto de componentes React (MIT) pensado para construir tu propia biblioteca de componentes: no se instala como dependencia, sino que el código se copia en tu proyecto. Es muy maduro y popular (~128k estrellas), con una CLI muy activa (shadcn@4.23.0).",
+   "que_hace": "Ofrece componentes accesibles y personalizables (botones, formularios, diálogos, tablas, gráficos, barras laterales y otros) que pasan a ser código propio. Su sistema de registros permite distribuir componentes, bloques y temas propios o de terceros (por ejemplo `@magicui/...`) con la misma CLI. Incluye un servidor MCP para que asistentes como Claude Code, Cursor, Codex o VS Code busquen e instalen componentes de los registros.",
+   "como_lo_hace": "La CLI (`npx shadcn@latest init`, `add`, `create`) configura `components.json` y copia los componentes al proyecto. Se apoya en Tailwind CSS y en primitivas accesibles: Radix UI o Base UI, según la documentación actual. Por defecto usa iconos de Lucide. Funciona con Next.js, Vite, React Router, Astro y otros frameworks. Como el código es tuyo, las actualizaciones no llegan solas: hay que volver a traerlas con la CLI y revisar las diferencias.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "Sistema de estilos sobre el que están escritos todos los componentes.",
+     "orden_instalacion": "Configura Tailwind (o deja que lo haga `shadcn init`) antes de añadir componentes."
+    },
+    {
+     "id": "radix-primitives",
+     "motivo": "Primitivas accesibles sin estilos que usan muchos componentes (alternativa: Base UI).",
+     "orden_instalacion": "Se instalan automáticamente al añadir cada componente."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Biblioteca de iconos por defecto (`iconLibrary` en components.json).",
+     "orden_instalacion": "Se instala con los componentes que la necesitan."
+    },
+    {
+     "id": "magicui",
+     "motivo": "Componentes animados distribuidos como registro de shadcn (`npx shadcn@latest add @magicui/...`).",
+     "orden_instalacion": "Inicializa shadcn/ui y luego añade componentes de Magic UI con la misma CLI."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Explorar e instalar componentes de los registros desde el asistente vía el servidor MCP de shadcn.",
+     "orden_instalacion": "Configura el proyecto con shadcn y registra el servidor MCP según su documentación."
+    }
+   ],
+   "notas": "Alternativas (elige una): mui, ant-design, daisyui. Combinación anterior con plasmic eliminada: sin integración documentada.",
+   "fuentes": [
+    "https://github.com/shadcn-ui/ui/blob/main/README.md",
+    "https://ui.shadcn.com/docs/cli",
+    "https://ui.shadcn.com/docs/registry",
+    "https://ui.shadcn.com/docs/mcp",
+    "https://ui.shadcn.com/docs/components-json",
+    "https://magicui.design/docs/installation"
+   ],
+   "github": {
+    "name_with_owner": "shadcn-ui/ui",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "shadcn@4.23.0 (2026-10-27)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ant-design": {
+   "que_es": "Lenguaje de diseño empresarial y biblioteca de componentes React (MIT) de Ant Group. Es muy madura (versión 6.7.0, ~100k estrellas), está escrita en TypeScript y se financia con patrocinios en Open Collective.",
+   "que_hace": "Ofrece un conjunto amplio de componentes de alta calidad para aplicaciones web empresariales: tablas, formularios, árboles, calendarios, layouts y más. Trae internacionalización para decenas de idiomas y personalización de temas basada en CSS-in-JS. El ecosistema añade Ant Design Pro (plantillas), Pro Components y Ant Design Charts.",
+   "como_lo_hace": "Se instala con `npm install antd` o `pnpm add antd`. Funciona en navegadores modernos, con renderizado en servidor y en Electron. Al usar CSS-in-JS, los estilos se generan en tiempo de ejecución, lo que conviene tener en cuenta si combinas con Tailwind o buscas un CSS mínimo. Su estética es la propia de Ant Design; adaptarla a otra marca exige trabajo de tema.",
+   "combina_con": [
+    {
+     "id": "echarts",
+     "motivo": "Gráficos avanzados en paneles de administración junto a las tablas y formularios de antd. (combinación por arquitectura); el ecosistema oficial ofrece Ant Design Charts como opción integrada",
+     "orden_instalacion": "Instala echarts y su envoltorio para React; úsalo en componentes Card o layouts de antd."
+    },
+    {
+     "id": "swr",
+     "motivo": "Carga de datos con caché para alimentar tablas y formularios. (combinación por arquitectura)",
+     "orden_instalacion": "Añade swr y conecta sus hooks a los componentes."
+    },
+    {
+     "id": "vercel-ai",
+     "motivo": "Añadir funciones de IA (chat, streaming) a una aplicación empresarial construida con antd. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los hooks de AI SDK UI y renderiza con componentes de antd."
+    }
+   ],
+   "notas": "Alternativas (elige una): mui, ui.",
+   "fuentes": [
+    "https://github.com/ant-design/ant-design/blob/master/README.md",
+    "https://ant.design/"
+   ],
+   "github": {
+    "name_with_owner": "ant-design/ant-design",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "6.7.0 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mui": {
+   "que_es": "Material UI es una biblioteca completa de componentes React (MIT) con una implementación independiente de Material Design de Google, desarrollada por MUI. Es muy madura (v9.5.0, más de una década de desarrollo). La empresa tiene productos de pago: MUI X Pro y Premium, con licencia comercial, y plantillas premium.",
+   "que_hace": "Ofrece decenas de componentes listos para producción (entradas, navegación, superficies, tablas, diálogos y más) con un sistema de temas y personalización. MUI X amplía con componentes complejos (data grid, selectores de fecha, gráficos, árboles). Algunas funciones avanzadas solo están en los planes Pro o Premium.",
+   "como_lo_hace": "Se instala `@mui/material` junto con su motor de estilos: Emotion por defecto, o styled-components como alternativa documentada. La documentación incluye guías de migración entre versiones mayores (v5 → v6 y siguientes), que conviene revisar antes de actualizar, y plantillas gratuitas y de pago.",
+   "combina_con": [
+    {
+     "id": "recharts",
+     "motivo": "Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)",
+     "orden_instalacion": "Instala recharts y envuélvelo en componentes Card o Paper de MUI."
+    },
+    {
+     "id": "swr",
+     "motivo": "Carga de datos con caché para alimentar los componentes. (combinación por arquitectura)",
+     "orden_instalacion": "Añade swr y usa sus hooks en las vistas."
+    },
+    {
+     "id": "vercel-ai",
+     "motivo": "Añadir chat o streaming de IA sobre una interfaz Material. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los hooks de AI SDK UI y renderiza con componentes MUI."
+    }
+   ],
+   "notas": "Alternativas (elige una): ant-design, ui, heroui. MUI X Pro/Premium tiene licencia comercial.",
+   "fuentes": [
+    "https://github.com/mui/material-ui/blob/master/README.md",
+    "https://mui.com/x/introduction/licensing/",
+    "https://mui.com/material-ui/getting-started/installation/"
+   ],
+   "github": {
+    "name_with_owner": "mui/material-ui",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v9.5.0 (2026-10-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "react-bits": {
+   "que_es": "Colección de más de 215 componentes y fondos React animados de @DavidHDev. Su licencia es **MIT + Commons Clause**, no open source en sentido OSI: impide vender el software como tal. Es muy popular (~52k estrellas) y tiene una versión comercial, React Bits Pro.",
+   "que_hace": "Ofrece animaciones de texto, fondos, componentes interactivos y efectos para webs llamativas, cada uno con demo en vivo y controles. Cada componente viene en cuatro variantes: JavaScript o TypeScript, con CSS o con Tailwind. Tiene servidor MCP y herramientas para que un agente elija e instale componentes.",
+   "como_lo_hace": "Los componentes se copian al proyecto manualmente o con CLIs de registro (shadcn o jsrepo, según la documentación de instalación). Algunas animaciones dependen de bibliotecas como GSAP o Motion [DATO NO VERIFICADO: dependencias por componente]. Hay que revisar el rendimiento y la accesibilidad: muchas animaciones son pesadas en móviles.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "Instalar componentes con la CLI de shadcn junto a una base de componentes accesibles.",
+     "orden_instalacion": "Inicializa shadcn/ui y añade los componentes de React Bits con su comando de registro."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Variante de estilos con Tailwind de cada componente.",
+     "orden_instalacion": "Configura Tailwind antes de copiar las variantes TW."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Elegir e instalar componentes desde un agente vía el servidor MCP de React Bits.",
+     "orden_instalacion": "Registra el MCP según reactbits.dev/get-started/mcp."
+    }
+   ],
+   "notas": "Alternativas (elige una): magicui. Licencia con Commons Clause: revísala antes de uso comercial que implique revender los componentes.",
+   "fuentes": [
+    "https://github.com/DavidHDev/react-bits/blob/main/README.md",
+    "https://reactbits.dev/get-started/mcp"
+   ],
+   "github": {
+    "name_with_owner": "DavidHDev/react-bits",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "swr": {
+   "que_es": "Biblioteca de hooks React para cargar datos (MIT), creada por Vercel. Su nombre viene de la estrategia de caché stale-while-revalidate (RFC 5861). Es madura y estable (v2.5.1); último push en octubre de 2026.",
+   "que_hace": "Con un solo hook (`useSWR`) devuelve primero los datos en caché, después revalida con una nueva petición y actualiza la vista. Incluye caché y deduplicación de peticiones, revalidación al recuperar el foco o la red, polling, paginación, mutaciones optimistas, soporte de Suspense y SSR/SSG. Es agnóstica del transporte (REST, GraphQL…).",
+   "como_lo_hace": "Se instala con `npm i swr` y se usa con una función `fetcher` propia. Tiene integración documentada con Next.js. Es ligera y no impone backend ni cliente HTTP.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "Alimentar los componentes shadcn/ui (tablas, listas) con datos cacheados. (combinación por arquitectura)",
+     "orden_instalacion": "Añade swr y conecta sus hooks a los componentes."
+    },
+    {
+     "id": "heroui",
+     "motivo": "Combinación anterior del catálogo: datos para componentes HeroUI. (combinación por arquitectura)",
+     "orden_instalacion": "Instala ambas y usa useSWR en las vistas."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Consultar un backend Supabase desde React con caché y revalidación. (combinación por arquitectura)",
+     "orden_instalacion": "Usa el cliente de Supabase dentro del fetcher de SWR."
+    }
+   ],
+   "notas": "Sin alternativas declaradas en el catálogo (TanStack Query no figura).",
+   "fuentes": [
+    "https://github.com/vercel/swr/blob/main/README.md",
+    "https://swr.vercel.app/docs/with-nextjs"
+   ],
+   "github": {
+    "name_with_owner": "vercel/swr",
+    "archived": false,
+    "pushed_at": "2026-10-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v2.5.1 (2026-08-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "heroui": {
+   "que_es": "Biblioteca de componentes React (Apache-2.0) antes llamada NextUI, de HeroUI Inc. Es madura y muy activa (v3.2.7).",
+   "que_hace": "Combina la accesibilidad de React Aria (teclado, foco, lectores de pantalla conformes a WCAG) con estilos utilitarios de Tailwind CSS v4. Ofrece una API de componentes compuestos (`Card.Header`, `Card.Content`), no necesita un Provider envolvente y apunta a SaaS, paneles y tiendas. Es 'AI-native': incluye servidor MCP (`@heroui/react-mcp`), `llms.txt` y skills de agente.",
+   "como_lo_hace": "Se instala con `npm install @heroui/styles @heroui/react`, con importaciones por componente disponibles. Requiere Tailwind CSS v4 y no usa CSS-in-JS en tiempo de ejecución. El servidor MCP se instala en Cursor, Claude Code, Windsurf u otros clientes MCP.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "Motor de estilos requerido (Tailwind CSS v4).",
+     "orden_instalacion": "Configura Tailwind v4 antes de instalar HeroUI."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Componentes y tema accesibles para el asistente mediante el servidor MCP `@heroui/react-mcp`.",
+     "orden_instalacion": "Instala HeroUI y registra su servidor MCP en Claude Code."
+    },
+    {
+     "id": "swr",
+     "motivo": "Carga de datos para los componentes. (combinación por arquitectura)",
+     "orden_instalacion": "Añade swr y usa sus hooks en las vistas."
+    }
+   ],
+   "notas": "Alternativas (elige una): mui.",
+   "fuentes": [
+    "https://github.com/heroui-inc/heroui/blob/v3/README.md",
+    "https://www.heroui.com/docs/react/getting-started"
+   ],
+   "github": {
+    "name_with_owner": "heroui-inc/heroui",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.2.7 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "lucide": {
+   "que_es": "Biblioteca open source de más de 1.600 iconos SVG consistentes. El LICENSE es ISC (GitHub lo marca NOASSERTION porque incluye partes heredadas de Feather). Es muy activa (1.73.0).",
+   "que_hace": "Ofrece iconos de trazo uniforme para proyectos digitales y no digitales, con paquetes oficiales para JavaScript puro, React, Vue, Svelte, Angular, Astro, Preact, Solid, React Native y SVG estático. Hay un plugin de Figma y una web para buscar y personalizar iconos (tamaño, grosor, color).",
+   "como_lo_hace": "Se instala con el paquete del framework (por ejemplo, `lucide-react`) e importa solo los iconos usados, lo que permite el tree-shaking. Los iconos son componentes SVG configurables por props.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "Biblioteca de iconos por defecto de shadcn/ui.",
+     "orden_instalacion": "Se instala automáticamente con los componentes de shadcn que la usan."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilar iconos con clases utilitarias (tamaño, color). (combinación por arquitectura)",
+     "orden_instalacion": "Aplica clases de Tailwind al componente del icono."
+    },
+    {
+     "id": "daisyui",
+     "motivo": "Iconos para componentes daisyUI, que no trae biblioteca de iconos propia. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el paquete de Lucide de tu framework."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/lucide-icons/lucide/blob/main/README.md",
+    "https://lucide.dev/guide/packages/lucide-react"
+   ],
+   "github": {
+    "name_with_owner": "lucide-icons/lucide",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "1.73.0 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "magicui": {
+   "que_es": "Biblioteca de componentes UI animados (MIT) para 'design engineers', de Magic UI. Es popular (~23k estrellas) y activa.",
+   "que_hace": "Ofrece componentes y efectos visuales (globos, marquesinas, partículas, textos animados, bordes brillantes y otros) para landing pages y webs de producto. Incluye un servidor MCP para que asistentes de IA usen los componentes.",
+   "como_lo_hace": "Se distribuye como registro de shadcn: `npx shadcn@latest add @magicui/<componente>` copia el código al proyecto. Usa React, TypeScript, Tailwind CSS y Motion para las animaciones. Requiere un proyecto con shadcn/ui inicializado.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "Base de instalación: Magic UI se añade con la CLI de shadcn.",
+     "orden_instalacion": "Ejecuta `npx shadcn@latest init` y luego añade los componentes de Magic UI."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilos de los componentes.",
+     "orden_instalacion": "Se configura con la inicialización de shadcn."
+    },
+    {
+     "id": "motion",
+     "motivo": "Biblioteca de animación usada por los componentes.",
+     "orden_instalacion": "Se instala como dependencia al añadir cada componente."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Usar los componentes desde el asistente vía el servidor MCP de Magic UI.",
+     "orden_instalacion": "Registra el MCP según magicui.design/docs/mcp."
+    }
+   ],
+   "notas": "Alternativas (elige una): react-bits.",
+   "fuentes": [
+    "https://github.com/magicuidesign/magicui/blob/main/README.md",
+    "https://magicui.design/docs/installation",
+    "https://magicui.design/docs/mcp"
+   ],
+   "github": {
+    "name_with_owner": "magicuidesign/magicui",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "MDX",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "radix-primitives": {
+   "que_es": "Biblioteca de componentes React de bajo nivel, sin estilos y accesibles (MIT), con copyright de WorkOS. Es madura y muy usada como base de sistemas de diseño, aunque su ritmo de cambios es moderado: el último push es de octubre de 2026.",
+   "que_hace": "Ofrece primitivas como diálogos, menús, popovers, pestañas, tooltips y selects que resuelven la accesibilidad (WAI-ARIA, foco, teclado) y el comportamiento, dejando los estilos al desarrollador. Se usa como capa base de un sistema de diseño o de forma incremental.",
+   "como_lo_hace": "Paquetes npm (paquete unificado `radix-ui` o `@radix-ui/react-*` por componente). El README describe el desarrollo del monorepo con pnpm; la documentación de uso está en radix-ui.com. Como no trae estilos, hace falta CSS propio o Tailwind.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "shadcn/ui se construye sobre Radix (o Base UI) y añade estilos Tailwind.",
+     "orden_instalacion": "Usa shadcn/ui si quieres estilos listos; Radix directamente si diseñas tu propio sistema."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilar las primitivas sin estilos con clases utilitarias. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Tailwind y aplica clases a cada parte de la primitiva."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Iconos para triggers y menús. (combinación por arquitectura)",
+     "orden_instalacion": "Instala lucide-react."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/radix-ui/primitives/blob/main/README.md",
+    "https://www.radix-ui.com/primitives/docs/overview/introduction"
+   ],
+   "github": {
+    "name_with_owner": "radix-ui/primitives",
+    "archived": false,
+    "pushed_at": "2026-10-14",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "daisyui": {
+   "que_es": "Biblioteca de componentes para Tailwind CSS (MIT) de @saadeghi, la más popular de su tipo según el README. Es madura y activa (daisyUI 5, v5.8.1).",
+   "que_hace": "Añade clases semánticas de componentes (`btn`, `card`, `modal` y otras) sobre Tailwind, para escribir menos clases utilitarias, e incluye un sistema de temas con decenas de temas predefinidos. Es agnóstica del framework: funciona con HTML puro, React, Vue, Svelte y otros, porque es solo CSS.",
+   "como_lo_hace": "Es un plugin de Tailwind CSS v4: se instala con npm y se activa con `@plugin \"daisyui\"` en el CSS. No trae JavaScript: el comportamiento interactivo (modales, menús) depende de HTML nativo o de tu propio código.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "daisyUI es un plugin de Tailwind; sin él no funciona.",
+     "orden_instalacion": "Instala Tailwind v4 y añade `@plugin \"daisyui\"`."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Iconos para los componentes. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el paquete de Lucide de tu framework."
+    },
+    {
+     "id": "flexoki",
+     "motivo": "Paleta para crear un tema personalizado de daisyUI. (combinación por arquitectura)",
+     "orden_instalacion": "Define un tema propio con los colores de Flexoki."
+    }
+   ],
+   "notas": "Alternativas (elige una): ui.",
+   "fuentes": [
+    "https://github.com/saadeghi/daisyui/blob/master/README.md",
+    "https://daisyui.com/docs/install/"
+   ],
+   "github": {
+    "name_with_owner": "saadeghi/daisyui",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v5.8.1 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "tailwindcss": {
+   "que_es": "Framework CSS utility-first (MIT) de Tailwind Labs. Es el estándar de facto en muchos stacks modernos de frontend, muy maduro y activo (v4.3.5).",
+   "que_hace": "Proporciona clases utilitarias (espaciado, color, tipografía, layout y otras) para construir interfaces directamente en el marcado. Genera solo el CSS que se usa. La v4 configura el tema con CSS (`@theme`), incluye Preflight (un reset basado en modern-normalize) y admite variantes, modo oscuro y plugins.",
+   "como_lo_hace": "Se instala como plugin de Vite (`npm install tailwindcss @tailwindcss/vite`), mediante PostCSS o con la CLI, y se importa con `@import \"tailwindcss\"`. Funciona con cualquier framework. La migración de v3 a v4 cambia la configuración, que pasa de `tailwind.config.js` a CSS, así que conviene usar la herramienta de actualización oficial.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "shadcn/ui escribe todos sus componentes con Tailwind.",
+     "orden_instalacion": "Configura Tailwind primero y luego inicializa shadcn/ui."
+    },
+    {
+     "id": "daisyui",
+     "motivo": "Plugin de componentes semánticos para Tailwind.",
+     "orden_instalacion": "Añade `@plugin \"daisyui\"` tras configurar Tailwind."
+    },
+    {
+     "id": "heroui",
+     "motivo": "Biblioteca de componentes que requiere Tailwind v4.",
+     "orden_instalacion": "Configura Tailwind v4 antes de instalar HeroUI."
+    },
+    {
+     "id": "magicui",
+     "motivo": "Componentes animados escritos con Tailwind (vía shadcn).",
+     "orden_instalacion": "Tailwind y shadcn primero; luego Magic UI."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/tailwindlabs/tailwindcss/blob/main/README.md",
+    "https://tailwindcss.com/docs/installation/using-vite",
+    "https://tailwindcss.com/docs/preflight"
+   ],
+   "github": {
+    "name_with_owner": "tailwindlabs/tailwindcss",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v4.3.5 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "normalize.css": {
+   "que_es": "Hoja de estilos (MIT) de @necolas que normaliza los estilos por defecto entre navegadores, como alternativa moderna a los 'CSS resets'. Su último push es de junio de 2024: está prácticamente sin mantenimiento, y su lista de compatibilidad aún incluye Internet Explorer 10+.",
+   "que_hace": "Conserva los valores por defecto útiles, normaliza estilos de muchos elementos, corrige errores e inconsistencias comunes de los navegadores y mejora detalles de usabilidad. Cada regla está comentada para explicar su motivo.",
+   "como_lo_hace": "Se instala con `npm install --save normalize.css`, por CDN o descargando el archivo, y se importa antes de tus estilos. Si usas Tailwind CSS no hace falta, porque su Preflight ya se basa en modern-normalize, un fork actualizado.",
+   "combina_con": [
+    {
+     "id": "radix-primitives",
+     "motivo": "Base de estilos coherente para primitivas sin estilos en proyectos sin Tailwind. (combinación por arquitectura)",
+     "orden_instalacion": "Importa normalize.css antes de tus estilos propios."
+    },
+    {
+     "id": "flexoki",
+     "motivo": "Paleta de color sobre una base de estilos normalizada en un sitio de CSS propio. (combinación por arquitectura)",
+     "orden_instalacion": "Importa normalize.css y define las variables de color de Flexoki."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Iconos SVG en proyectos de CSS propio. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el paquete de Lucide adecuado."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Combinación anterior con tailwindcss eliminada: es redundante con Preflight. Mantenimiento: sin cambios desde 2024; considera modern-normalize.",
+   "fuentes": [
+    "https://github.com/necolas/normalize.css/blob/master/README.md",
+    "https://tailwindcss.com/docs/preflight"
+   ],
+   "github": {
+    "name_with_owner": "necolas/normalize.css",
+    "archived": false,
+    "pushed_at": "2024-06-12",
+    "license": "MIT",
+    "primary_language": "CSS",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "flexoki": {
+   "que_es": "Esquema de color (MIT) de @kepano (stephango.com, también autor del tema Minimal de Obsidian) pensado para leer y escribir en pantallas, inspirado en tintas de imprenta y tonos de papel. Versión 2.0.0; último push en marzo de 2026.",
+   "que_hace": "Define una paleta de colores para prosa, código e interfaces, con variantes claras y oscuras y resaltado de sintaxis. Tiene ports para decenas de aplicaciones y herramientas, la mayoría comunitarios: Alacritty, Chrome, Discord, Emacs, Neovim, Obsidian, VS Code, Vim, terminales y Tailwind, entre otros.",
+   "como_lo_hace": "Se usa instalando el port de cada aplicación o copiando los valores de color (hex, variables CSS) desde stephango.com/flexoki. El port de Tailwind lo mantiene la comunidad (@bslobodin). No es software, sino una especificación de colores con archivos de tema.",
+   "combina_con": [
+    {
+     "id": "tailwindcss",
+     "motivo": "Usar la paleta como colores del tema mediante el port de Tailwind listado en el README.",
+     "orden_instalacion": "Copia el port y regístralo en `@theme`."
+    },
+    {
+     "id": "daisyui",
+     "motivo": "Crear un tema daisyUI propio con los colores de Flexoki. (combinación por arquitectura)",
+     "orden_instalacion": "Define un tema personalizado con las variables de la paleta."
+    },
+    {
+     "id": "excalidraw",
+     "motivo": "Paleta coherente para diagramas y documentación visual. (combinación por arquitectura)",
+     "orden_instalacion": "Configura los colores personalizados en Excalidraw."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/kepano/flexoki/blob/main/README.md",
+    "https://stephango.com/flexoki"
+   ],
+   "github": {
+    "name_with_owner": "kepano/flexoki",
+    "archived": false,
+    "pushed_at": "2026-03-07",
+    "license": "MIT",
+    "primary_language": "CSS",
+    "latest_release": "2.0.0 (2025-01-07)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "konva": {
+   "que_es": "Framework open source de canvas 2D (MIT, sin clave de licencia) para gráficos interactivos en la web, mantenido por @lavrton. Nació como fork de KineticJS, de ahí que GitHub marque la licencia como NOASSERTION. Es maduro y activo (10.9.1).",
+   "que_hace": "Ofrece un grafo de escena en el que cada forma tiene sus propios eventos, arrastre, transformaciones, animación, caché y exportación. Se usa para editores de diseño, pizarras, diagramas, anotaciones y mapas. El README promociona Polotno, un editor de diseño comercial para quien no quiera construirlo desde cero.",
+   "como_lo_hace": "Se instala con `npm install konva`. Tiene bindings oficiales `react-konva` y `vue-konva`, y funciona en Node.js con `canvas` o `skia-canvas` para renderizado en servidor. No incluye interfaz de editor: hay que construir barras de herramientas y paneles.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "Paneles, diálogos y barras de herramientas alrededor del lienzo en un editor React. (combinación por arquitectura)",
+     "orden_instalacion": "Construye el lienzo con react-konva y la interfaz con shadcn/ui."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilos de la interfaz del editor (Konva solo dibuja en canvas). (combinación por arquitectura)",
+     "orden_instalacion": "Configura Tailwind para la UI fuera del lienzo."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Iconos para las herramientas del editor. (combinación por arquitectura)",
+     "orden_instalacion": "Instala lucide-react."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Si buscas una pizarra ya hecha, considera excalidraw o tldraw.",
+   "fuentes": [
+    "https://github.com/konvajs/konva/blob/master/README.md",
+    "https://konvajs.org/docs/react/index.html"
+   ],
+   "github": {
+    "name_with_owner": "konvajs/konva",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "10.9.1 (2026-10-31)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}
