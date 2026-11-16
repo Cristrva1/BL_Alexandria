@@ -12,7 +12,7 @@
 
 ## ¿Qué es?
 
-API REST de código abierto para WhatsApp y mensajería multicanal, mantenida por Evolution Foundation, con licencia Apache 2.0 y condiciones adicionales de marca.
+Evolution API, API REST para WhatsApp y mensajería multicanal, mantenida por Evolution Foundation. Licencia Apache-2.0 con condiciones adicionales: conservar el logo y el copyright en los componentes frontend y avisar del uso, incluso en sistemas cerrados. No es una licencia OSI estándar, por eso GitHub muestra NOASSERTION. Es madura (~10k estrellas, v2.3.7) y nació de CodeChat.
 
 ## ¿Qué hace?
 
@@ -31,7 +31,9 @@ Servidor Node.js 20+ en TypeScript con Express y Prisma sobre PostgreSQL o MySQL
 | [Typebot](typebot.md) | Integración nativa con gestión de disparadores para flujos conversacionales visuales sin programar. | Typebot primero; luego vincula el bot a la instancia. |
 | [dify](dify.md) | Integración nativa para responder con agentes o RAG construidos en Dify. | Dify primero, con su app publicada; luego conéctala a la instancia. |
 
-**Notas:** Alternativas (elige una): whatsapp-web-js, waha, baileys. Evolution y Chatwoot necesitan PostgreSQL y Redis; pueden compartir servidor, pero usa bases de datos separadas (recomendación, no probada).
+**Notas:** Alternativas (elige una): whatsapp-web-js, waha. La conexión Baileys usa WhatsApp Web de forma no oficial: riesgo de bloqueo del número y de incumplir los términos de WhatsApp. Evolution y Chatwoot necesitan PostgreSQL y Redis; pueden compartir servidor, pero usa bases de datos separadas (recomendación, no probada).
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 2.3.7 (2025-12-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
 

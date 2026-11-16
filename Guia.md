@@ -997,7 +997,7 @@ Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer 
 **Comando documentado:** `pip install -U crawl4ai
 crawl4ai-setup        # installs the browser, once` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar artículos para RAG; Extraer datos estructurados con un modelo local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md) · [Qdrant](human/fichas/qdrant.md) · [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Qdrant](human/fichas/qdrant.md) · [n8n](human/fichas/n8n.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/crawl4ai.md) · [GitHub](https://github.com/unclecode/crawl4ai)
 
 #### 🐍 scrapy
@@ -1601,7 +1601,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `docker run -p 6333:6333 qdrant/qdrant` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Guardar embeddings de documentos; Combinar similitud y filtros de metadatos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Docling](human/fichas/docling.md) · [n8n](human/fichas/n8n.md) · [LlamaIndex](human/fichas/llama-index.md) · [langchain](human/fichas/langchain.md)<br>
+**Combina con:** [Docling](human/fichas/docling.md) · [n8n](human/fichas/n8n.md) · [LlamaIndex](human/fichas/llama-index.md) · [langchain](human/fichas/langchain.md) · [crawl4ai](human/fichas/crawl4ai.md)<br>
 **Más:** [ficha completa](human/fichas/qdrant.md) · [GitHub](https://github.com/qdrant/qdrant)
 
 #### 🧮 Milvus
@@ -1832,7 +1832,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.ollama.com/quickstart); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un LLM local; Conectar un modelo local a Codex CLI — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Open WebUI](human/fichas/open-webui.md) · [n8n](human/fichas/n8n.md) · [litellm](human/fichas/litellm.md) · [crawl4ai](human/fichas/crawl4ai.md)<br>
+**Combina con:** [Open WebUI](human/fichas/open-webui.md) · [n8n](human/fichas/n8n.md) · [litellm](human/fichas/litellm.md) · [crawl4ai](human/fichas/crawl4ai.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/ollama.md) · [GitHub](https://github.com/ollama/ollama)
 
 #### 🦙 llama.cpp
@@ -2964,7 +2964,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install docling` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para RAG; Extraer tablas antes de un análisis — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [Haystack](human/fichas/haystack.md) · [Qdrant](human/fichas/qdrant.md)<br>
+**Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [Haystack](human/fichas/haystack.md) · [Qdrant](human/fichas/qdrant.md) · [langchain](human/fichas/langchain.md)<br>
 **Más:** [ficha completa](human/fichas/docling.md) · [GitHub](https://github.com/docling-project/docling)
 
 #### 📝 markitdown
@@ -4106,7 +4106,7 @@ docker compose -f pwd.yml up -d` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/chatwoot/chatwoot/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una mesa de soporte; Comparar atención humana y asistencia AI — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n](human/fichas/n8n.md) · [firecrawl](human/fichas/firecrawl.md)<br>
 **Más:** [ficha completa](human/fichas/chatwoot.md) · [GitHub](https://github.com/chatwoot/chatwoot)
 
 #### 🤖 crm
@@ -5169,7 +5169,7 @@ vllm download-kernels  # precompiled kernels for faster startup` (comprobar los 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv add litellm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md) · [Open WebUI](human/fichas/open-webui.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Open WebUI](human/fichas/open-webui.md) · [langfuse](human/fichas/langfuse.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/litellm.md) · [GitHub](https://github.com/BerriAI/litellm)
 
 #### 🚀 SGLang

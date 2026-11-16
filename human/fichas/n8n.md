@@ -12,15 +12,15 @@
 
 ## ¿Qué es?
 
-Plataforma de automatización de flujos de trabajo y agentes de IA con código disponible bajo licencia fair-code (Sustainable Use License). Se puede autoalojar o usar en n8n Cloud.
+n8n, plataforma de automatización de flujos de trabajo y agentes de IA, de n8n GmbH. Es «fair-code», no open source OSI: Sustainable Use License más la n8n Enterprise License para funciones de pago (por eso GitHub muestra NOASSERTION). Es muy madura y popular (~211k estrellas, serie 2.x). Se puede autoalojar o usar en n8n Cloud.
 
 ## ¿Qué hace?
 
-Conecta más de 1500 integraciones (APIs, bases de datos y apps SaaS) en flujos que se disparan por eventos, horarios o webhooks. Incluye nodos de IA para crear agentes de varios pasos con herramientas, aprobaciones humanas y modelos de OpenAI, Anthropic, Google o modelos abiertos, y ofrece más de 9000 plantillas.
+Conecta más de 1500 integraciones (APIs, bases de datos y apps SaaS) en flujos que se disparan por eventos, horarios o webhooks. Sus nodos de IA crean agentes de varios pasos con herramientas, aprobaciones humanas y modelos de OpenAI, Anthropic, Google o modelos abiertos. Ofrece más de 9000 plantillas. La licencia permite el uso interno y comercial propio, pero restringe revenderlo como servicio.
 
 ## ¿Cómo lo hace?
 
-Es una aplicación TypeScript/Node.js con un editor visual de nodos en el navegador (puerto 5678); cada nodo recibe datos JSON, los transforma y los pasa al siguiente. Cuando lo visual no alcanza, admite nodos de código en JavaScript o Python y paquetes npm. Se instala normalmente con Docker y un volumen persistente (`n8n_data`); sus nodos de IA forman la familia `n8n-nodes-langchain`.
+Es una aplicación TypeScript/Node.js con un editor visual de nodos en el navegador (puerto 5678): cada nodo recibe datos JSON, los transforma y los pasa al siguiente. Cuando lo visual no alcanza, admite nodos de código en JavaScript o Python y paquetes npm. Se instala normalmente con Docker y un volumen persistente (`docker volume create n8n_data`) o con el script de instalación (requiere Docker). Sus nodos de IA forman la familia `n8n-nodes-langchain`.
 
 ## ¿Con qué otros repos se combina?
 
@@ -32,7 +32,11 @@ Es una aplicación TypeScript/Node.js con un editor visual de nodos en el navega
 | [Ollama](ollama.md) | Los nodos de IA de n8n pueden usar modelos locales servidos por Ollama (credencial documentada por n8n), sin pagar una API remota. | Ollama primero. Si n8n corre en Docker, `localhost` apunta al contenedor: usa la dirección del host para llegar al puerto 11434. |
 | [Qdrant](qdrant.md) | n8n incluye el nodo Qdrant Vector Store para guardar y consultar embeddings dentro de un flujo (RAG). | Qdrant primero (puerto 6333) y luego la credencial en n8n. Qdrant arranca sin autenticación: no lo expongas a internet. |
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/n8n-io/n8n/blob/master/README.md) · [2](https://docs.n8n.io/integrations/builtin/credentials/ollama/) · [3](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreqdrant/) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md) · [5](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md)</sub>
+**Notas:** Alternativas (elige una): activepieces, huginn, windmill, node-red. n8n-io es un alias de este mismo repositorio en el catálogo. Revisa la Sustainable Use License si vas a ofrecer n8n a terceros.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada n8n@2.47.7 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/n8n-io/n8n/blob/master/README.md) · [2](https://docs.n8n.io/integrations/builtin/credentials/ollama/) · [3](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreqdrant/) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md) · [5](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md) · [6](https://docs.n8n.io/sustainable-use-license/)</sub>
 
 ## Acceso, coste y equipo
 

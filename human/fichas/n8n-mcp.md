@@ -12,7 +12,7 @@
 
 ## ¿Qué es?
 
-Servidor MCP de código abierto (MIT), independiente del servidor MCP que trae n8n, que permite a asistentes como Claude, ChatGPT, Cursor o Codex operar una instancia de n8n.
+n8n-mcp, servidor MCP de código abierto de @czlonkowski que permite a asistentes como Claude, ChatGPT, Cursor o Codex operar una instancia de n8n. Licencia MIT. Es muy activo (~23k estrellas, v2.102.0) y es independiente del servidor MCP que trae n8n.
 
 ## ¿Qué hace?
 
@@ -31,7 +31,9 @@ Corre como proceso aparte (npx, Docker, Railway o el servicio alojado del autor,
 | [Claude Code](claude-code.md) | Cliente MCP con guía de configuración propia en el repositorio (docs/CLAUDE_CODE_SETUP.md). | Instala Claude Code y luego registra n8n-mcp siguiendo esa guía. |
 | [MCP Inspector](mcp-inspector.md) | Herramienta oficial para listar y probar las herramientas de un servidor MCP antes de dárselas a un agente (combinación por arquitectura). | Opcional, solo para depurar la conexión. |
 
-**Notas:** La documentación de n8n usa el nombre `n8n-mcp` para su propio servidor MCP integrado; no es este proyecto.
+**Notas:** Sin alternativas declaradas. La documentación de n8n usa el nombre «n8n MCP» para su propio servidor integrado; no es este proyecto. El servicio alojado lo opera el autor (nivel gratuito de 100 llamadas al día): tus credenciales de n8n pasan por un tercero.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v2.102.0 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md) · [2](https://github.com/czlonkowski/n8n-skills/blob/main/README.md)</sub>
 

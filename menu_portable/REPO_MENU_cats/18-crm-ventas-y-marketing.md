@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una bandeja de ensayo y recorre una conversación ficticia con etiquetas y asignación
 **Qué comprobar:** Puedes seguir estado, agente asignado e historial de la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `evolution-api`, `n8n`
+**Combina con:** `evolution-api`, `n8n`, `firecrawl`
 
 ## `cloud-mail`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=marketing,server,javascript

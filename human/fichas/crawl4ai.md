@@ -12,7 +12,7 @@
 
 ## ¿Qué es?
 
-Crawler y extractor web de código abierto (Apache 2.0) orientado a IA. Se usa como librería Python, como servidor Docker propio o a través del servicio de pago Crawl4AI Cloud.
+Crawl4AI, crawler y extractor web orientado a IA de @unclecode. Licencia Apache-2.0. Es muy popular (~87k estrellas, v0.9.5). Este repositorio es el motor de Crawl4AI Cloud, un servicio de pago; se puede usar como librería Python o como servidor Docker propio.
 
 ## ¿Qué hace?
 
@@ -20,7 +20,7 @@ Convierte páginas en Markdown limpio para RAG, extrae JSON estructurado y proce
 
 ## ¿Cómo lo hace?
 
-Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegador) desde `AsyncWebCrawler`. Quita menús y pies de página con filtros de poda, BM25 o un LLM, fragmenta páginas largas y puede ordenar fragmentos por similitud coseno. Extrae datos con esquemas CSS/XPath sin LLM o con `LLMExtractionStrategy`, que acepta cualquier proveedor soportado por LiteLLM, incluido Ollama.
+Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegador) desde `AsyncWebCrawler`. Quita menús y pies de página con filtros de poda, BM25 o un LLM, fragmenta páginas largas y puede ordenar fragmentos por similitud coseno. Extrae datos con esquemas CSS/XPath sin LLM o con `LLMExtractionStrategy`, que acepta cualquier proveedor soportado por LiteLLM, incluido Ollama. Se instala con `pip install -U crawl4ai` y después `crawl4ai-setup`.
 
 ## ¿Con qué otros repos se combina?
 
@@ -29,8 +29,11 @@ Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegado
 | [Ollama](ollama.md) | Modelo local para la extracción con LLM, sin enviar el contenido a una API de pago. | Ollama con el modelo descargado antes de lanzar la extracción. |
 | [Qdrant](qdrant.md) | El Markdown fragmentado se convierte en embeddings y se guarda en Qdrant para buscarlo en un RAG (combinación por arquitectura). | Independientes; necesitas además un modelo de embeddings. |
 | [n8n](n8n.md) | Un flujo de n8n puede llamar al servidor Docker de Crawl4AI con un nodo HTTP para rastrear páginas de forma programada (combinación por arquitectura). | Levanta el servidor Docker de Crawl4AI y luego crea el flujo. |
+| [litellm](litellm.md) | La extracción con LLM usa LiteLLM para hablar con cualquier proveedor. | Viene como dependencia; configura el proveedor con su prefijo. |
 
-**Notas:** firecrawl y jina-reader cumplen una función parecida: elige uno. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye Firecrawl, BeautifulSoup y navegador), por eso se retiró de las combinaciones.
+**Notas:** Alternativas (elige una): jina-reader. firecrawl cumple una función parecida. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye Firecrawl, BeautifulSoup y navegador), por eso se retiró de las combinaciones. Respeta robots.txt y los términos de cada sitio.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.9.5 (2026-10-14) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/unclecode/crawl4ai/blob/main/README.md) · [2](https://api.github.com/repos/assafelovic/gpt-researcher/contents/gpt_researcher/scraper)</sub>
 

@@ -31,7 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte un PDF breve con tabla y compara el Markdown y JSON con el original
 **Qué comprobar:** Puedes identificar texto, estructura y campos que necesitan corrección
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `haystack`, `qdrant`
+**Combina con:** `llama-index`, `haystack`, `qdrant`, `langchain`
 **Alternativas (elige una):** `marker`, `mineru`, `unstructured`, `olmocr`
 
 ## `docuseal`

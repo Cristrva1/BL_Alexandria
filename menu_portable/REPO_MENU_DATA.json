@@ -11719,9 +11719,7 @@
       "choose_if": "quieres ver el origen del texto de las fichas",
       "avoid_if": "buscas una herramienta para tu proyecto",
       "combines_with": [
-        "andrej-karpathy-skills",
-        "antigravity-awesome-skills",
-        "awesome-agent-skills"
+        "tools"
       ],
       "alt": []
     },
@@ -11771,7 +11769,12 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "mantienes esta biblioteca",
       "avoid_if": "buscas una herramienta para tu proyecto",
-      "combines_with": [],
+      "combines_with": [
+        "crawl4ai",
+        "markitdown",
+        "repomix",
+        "gitnexus"
+      ],
       "alt": []
     },
     {
@@ -21547,7 +21550,8 @@
       "combines_with": [
         "ollama",
         "qdrant",
-        "n8n"
+        "n8n",
+        "litellm"
       ],
       "alt": [
         "jina-reader"
@@ -28535,7 +28539,8 @@
         "docling",
         "n8n",
         "llama-index",
-        "langchain"
+        "langchain",
+        "crawl4ai"
       ],
       "alt": [
         "milvus",
@@ -32907,7 +32912,8 @@
         "open-webui",
         "n8n",
         "litellm",
-        "crawl4ai"
+        "crawl4ai",
+        "claude-code"
       ],
       "alt": [
         "llama-cpp",
@@ -42631,7 +42637,8 @@
       "combines_with": [
         "llama-index",
         "haystack",
-        "qdrant"
+        "qdrant",
+        "langchain"
       ],
       "alt": [
         "marker",
@@ -55077,7 +55084,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "evolution-api",
-        "n8n"
+        "n8n",
+        "firecrawl"
       ],
       "alt": []
     },
@@ -67159,7 +67167,8 @@
       "combines_with": [
         "ollama",
         "open-webui",
-        "langfuse"
+        "langfuse",
+        "claude-code"
       ],
       "alt": []
     },

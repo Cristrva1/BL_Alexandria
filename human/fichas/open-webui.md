@@ -12,7 +12,7 @@
 
 ## ¿Qué es?
 
-Plataforma de chat con IA autoalojada y extensible, diseñada para poder funcionar completamente sin conexión.
+Open WebUI, plataforma de chat con IA autoalojada y extensible, diseñada para poder funcionar sin conexión, de Open WebUI Inc. (creada por Timothy Jaeryang Baek). Usa la «Open WebUI License», tipo BSD-3 con una cláusula que obliga a conservar la marca Open WebUI; las contribuciones anteriores siguen bajo sus licencias originales. No es una licencia OSI estándar, por eso GitHub muestra NOASSERTION. Es muy popular (~159k estrellas, v0.13.x) y tiene edición Enterprise.
 
 ## ¿Qué hace?
 
@@ -30,7 +30,9 @@ Frontend en Svelte y backend en Python: se instala con `pip install open-webui` 
 | [litellm](litellm.md) | Como endpoint compatible con OpenAI, LiteLLM da acceso a más de 100 proveedores con claves virtuales y control de gasto desde la misma interfaz. | LiteLLM proxy primero (puerto 4000); luego añádelo como conexión OpenAI en Open WebUI. |
 | [SearXNG](searxng.md) | Motor de búsqueda web autoalojado para las respuestas con búsqueda en Open WebUI. | SearXNG primero; activa el formato `json` en su `settings.yml` (si no, Open WebUI recibe 403) y define `SEARXNG_QUERY_URL`. |
 
-**Notas:** Alternativas (elige una): librechat, lobehub, anything-llm, textgen.
+**Notas:** Alternativas (elige una): librechat, lobehub, anything-llm, textgen. La cláusula de marca limita el rebranding: revisa LICENSE antes de redistribuirlo con otra imagen.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.13.3 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/open-webui/open-webui/blob/main/README.md) · [2](https://docs.openwebui.com/features/chat-conversations/web-search/providers/searxng)</sub>
 

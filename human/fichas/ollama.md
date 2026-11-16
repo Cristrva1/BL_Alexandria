@@ -12,15 +12,15 @@
 
 ## ¿Qué es?
 
-Motor para descargar y ejecutar modelos de lenguaje abiertos en tu equipo (macOS, Windows, Linux o Docker), con opción de usar modelos en su nube.
+Ollama, motor para descargar y ejecutar modelos de lenguaje abiertos en tu equipo (macOS, Windows, Linux o Docker), de Ollama Inc. Licencia MIT. Es muy madura y popular (~187k estrellas, v0.40.x). Ofrece además modelos en su nube (Ollama Cloud), con cuenta y condiciones propias.
 
 ## ¿Qué hace?
 
-Ejecuta modelos de su biblioteca y permite conversar con ellos (por ejemplo `ollama run gemma4`) o servirlos a otras aplicaciones. Con `ollama launch` conecta modelos a agentes como Claude Code, Codex, Copilot CLI u OpenCode.
+Ejecuta modelos de su biblioteca, permite conversar con ellos (por ejemplo `ollama run gemma4`) y los sirve a otras aplicaciones. Con `ollama launch` conecta modelos a agentes como Claude Code, Codex, Copilot CLI, OpenCode u OpenClaw; así cambia el modelo del agente, pero no da acceso a modelos de Anthropic u OpenAI.
 
 ## ¿Cómo lo hace?
 
-Está escrito en Go y declara llama.cpp como backend. Expone una API REST local en el puerto 11434 (por ejemplo `/api/chat`) y tiene librerías oficiales para Python y JavaScript. Los modelos se importan y personalizan con un Modelfile.
+Está escrito en Go y declara llama.cpp como backend. Expone una API REST local en el puerto 11434 (por ejemplo `/api/chat`), es compatible con la API de OpenAI y tiene librerías oficiales para Python y JavaScript. Los modelos se importan y personalizan con un Modelfile. Los requisitos de RAM y GPU dependen del modelo.
 
 ## ¿Con qué otros repos se combina?
 
@@ -30,8 +30,11 @@ Está escrito en Go y declara llama.cpp como backend. Expone una API REST local 
 | [n8n](n8n.md) | Los nodos de IA de n8n usan Ollama como proveedor local mediante una credencial documentada. | Ollama primero; desde un n8n en Docker apunta a la dirección del host, no a `localhost`. |
 | [litellm](litellm.md) | LiteLLM trae los proveedores `ollama` y `ollama_chat` y pone los modelos locales detrás de la misma API compatible con OpenAI que los de la nube. | Ollama primero y luego declara sus modelos en la configuración de LiteLLM. |
 | [crawl4ai](crawl4ai.md) | La extracción con LLM de Crawl4AI acepta modelos de Ollama (ejemplo `ollama/llama3.3`), así que puedes estructurar páginas sin API de pago. | Ollama con el modelo descargado antes de lanzar la extracción. |
+| [Claude Code](claude-code.md) | `ollama launch claude` configura Claude Code para usar un modelo de Ollama. | Ollama primero con el modelo descargado; luego `ollama launch claude`. |
 
-**Notas:** Alternativas (elige una): llama-cpp, localai, llamafile. Varios motores en la misma máquina compiten por GPU y memoria.
+**Notas:** Alternativas (elige una): llama-cpp, localai, llamafile. Varios motores en la misma máquina compiten por GPU y memoria. Por defecto la API escucha solo en localhost: no la expongas sin autenticación.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.40.16 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ollama/ollama/blob/main/README.md) · [2](https://github.com/open-webui/open-webui/blob/main/README.md) · [3](https://docs.litellm.ai/docs/providers/ollama) · [4](https://github.com/unclecode/crawl4ai/blob/main/README.md)</sub>
 

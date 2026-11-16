@@ -12,7 +12,7 @@
 
 ## ¿Qué es?
 
-Motor de búsqueda por similitud vectorial y base de datos vectorial de código abierto escrito en Rust, también disponible como servicio gestionado (Qdrant Cloud, con nivel gratuito).
+Qdrant, motor de búsqueda vectorial y base de datos vectorial escrita en Rust, de Qdrant Solutions GmbH. Licencia Apache-2.0. Es madura (~36k estrellas, v1.20.x). También existe como servicio gestionado (Qdrant Cloud, con nivel gratuito).
 
 ## ¿Qué hace?
 
@@ -30,8 +30,11 @@ Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST de
 | [n8n](n8n.md) | Nodo Qdrant Vector Store para RAG dentro de flujos visuales. | Qdrant primero; después la credencial en n8n. |
 | [LlamaIndex](llama-index.md) | Integración documentada como almacén vectorial de LlamaIndex. | Qdrant en marcha y cliente `qdrant-client` en el entorno Python. |
 | [langchain](langchain.md) | Integración documentada como vector store de LangChain. | Igual que con LlamaIndex; elige un solo framework para no duplicar la lógica de RAG. |
+| [crawl4ai](crawl4ai.md) | Ingesta de páginas web en Markdown fragmentado para indexar. (combinación por arquitectura) | Rastrea, genera embeddings e inserta en Qdrant. |
 
-**Notas:** Alternativas (elige una): milvus, chroma, pgvector, faiss. Configura autenticación antes de exponer el puerto 6333.
+**Notas:** Alternativas (elige una): milvus, chroma, pgvector, faiss. Configura autenticación (API key) antes de exponer el puerto 6333.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.20.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/qdrant/qdrant/blob/master/README.md) · [2](https://qdrant.tech/documentation/data-management/docling/) · [3](https://qdrant.tech/documentation/frameworks/n8n/) · [4](https://qdrant.tech/documentation/frameworks/llama-index/) · [5](https://qdrant.tech/documentation/frameworks/langchain/)</sub>
 
