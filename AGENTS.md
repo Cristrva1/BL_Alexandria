@@ -157,7 +157,19 @@ uv run pytest
 
 La web pública es [Alexandría](https://cristrva1.github.io/BL_Alexandria/). GitHub Pages publica el contenido generado de `main/docs`: al actualizar el catálogo, ejecuta `guide build` y sube sus resultados para que se desplieguen. El generador conserva `.nojekyll` para servir los archivos estáticos directamente.
 
-Para agregar repos con datos completos: `discover` → `analyze --new` → `enrich --new --auto-merge` (borradores revisables en `data/drafts/`) → `guide build`. La lógica de inferencia está en `src/repo_intelligence/analysis/curation.py`.
+### Cómo agregar un repo
+
+Usa `uv run repo-intelligence add` (código en `src/repo_intelligence/curate/add.py`). Lee la identidad con `gh api`, rechaza archivados, duplicados (id numérico, `owner/repo`, URL o id) y retirados (salvo `--force`), y escribe los dos índices, el lote de 4 secciones, la especificación en `curation/altas/` y el informe en `reports/altas/`.
+
+```powershell
+uv run repo-intelligence add owner/repo --categoria 16 --sub defensa --ligero   # borrador PENDIENTE
+uv run repo-intelligence add --desde curation/altas/mi-lote.json --construir     # lote con 4 secciones
+uv run repo-intelligence add wazuh --sugerir-combos [--aplicar-combos]
+```
+
+Completo: 3-6 `combina_con` y reciprocidad automática dentro del límite de 6. `--ligero`: 0-6, exento de simetría (`nivel: "ligero"`), ids válidos. No publiques entradas con `PENDIENTE`. Formato del lote en [mantenimiento editorial](human/mantenimiento.md#incorporar-un-repo).
+
+Con un clon local también existe `discover` → `analyze --new` → `enrich --new --auto-merge` (borradores en `data/drafts/`) → `guide build`; la inferencia está en `src/repo_intelligence/analysis/curation.py`.
 
 Ese flujo sirve cuando existe un clon. Para nuevas stars sin clones, usa fuentes de GitHub y el proceso de [mantenimiento editorial](human/mantenimiento.md). `scripts/audit_sources.py` guarda README y evidencias para revisar; no confirma requisitos a partir de keywords. Los scripts `curate_access.py` y `curate_discovery.py` son migraciones editoriales fechadas y requieren revisar sus decisiones antes de reutilizarlas. Un perfil nuevo conserva incertidumbre hasta disponer de evidencia.
 

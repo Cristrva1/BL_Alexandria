@@ -26,14 +26,33 @@ def test_policy_classifies_toy_graph():
     assert used_by(combos)["d"] == ["c"]
 
 
+def _ligero(compact):
+    return {r["id"] for r in compact["repos"] if r.get("nivel") == "ligero"}
+
+
+def test_policy_exempts_ligero_entries_in_both_directions():
+    combos = {"full": ["lite"], "lite": ["other"], "other": ["x"]}
+    groups = classify(combos, exempt={"lite"})
+    assert ("full", "lite") in groups["exempt"] and ("lite", "other") in groups["exempt"]
+    assert not groups["violation"]
+    assert classify(combos)["violation"]  # sin exención, ambos enlaces serían violaciones
+    assert used_by(combos)["other"] == ["lite"]  # «Usado por» sigue funcionando
+
+
 def test_catalog_has_no_symmetry_violations():
     detail = _detail()
-    groups = classify(combo_map(detail))
-    assert not groups["violation"], groups["violation"][:20]
     compact = json.loads((ROOT / "INDICE_IA.json").read_text(encoding="utf8"))
+    ligero = _ligero(compact)
+    groups = classify(combo_map(detail), exempt=ligero)
+    assert not groups["violation"], groups["violation"][:20]
     public = {r["id"] for r in compact["repos"] if not r.get("alias_of") and int(r.get("cat") or 0) > 0}
     for rid in public:
-        assert MIN_COMBOS <= len(detail[rid]["combina_con"]) <= MAX_COMBOS, rid
+        low = 0 if rid in ligero else MIN_COMBOS
+        assert low <= len(detail[rid].get("combina_con") or []) <= MAX_COMBOS, rid
+    for rid in ligero:  # las altas ligeras pueden no declarar combinaciones, pero las que declaran existen
+        assert detail[rid].get("nivel") == "ligero", rid
+        for combo in detail[rid].get("combina_con") or []:
+            assert combo["id"] in public and combo.get("motivo"), (rid, combo)
 
 
 def test_reciprocal_links_are_grounded_and_bad_links_removed():

@@ -71,4 +71,16 @@ Las [recetas](human/playbooks/README.md) ordenan pocas piezas por función: What
 - [Menú portable](menu_portable/REPO_MENU.md): copia el índice a otro proyecto.
 - [Mantenimiento editorial](human/mantenimiento.md): cómo incorporar, verificar y regenerar.
 
+## Cómo agregar un repo
+
+Un solo comando lee la identidad en GitHub (`gh api`), rechaza archivados, duplicados y retirados, y escribe la entrada en los dos índices:
+
+```powershell
+uv run repo-intelligence add owner/repo --categoria 16 --sub defensa --ligero   # borrador con textos PENDIENTE
+uv run repo-intelligence add --desde curation/altas/mi-lote.json --construir     # lote con las 4 secciones
+uv run repo-intelligence add wazuh --sugerir-combos                                # combinaciones candidatas
+```
+
+Con `--ligero` las combinaciones son opcionales; sin él hacen falta de 3 a 6 y la reciprocidad se completa sola. Detalles en [mantenimiento editorial](human/mantenimiento.md#incorporar-un-repo).
+
 No es necesario descargar los proyectos catalogados para consultar la biblioteca.

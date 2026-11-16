@@ -620,7 +620,7 @@
   }
 
   function hasFour(item) {
-    return Boolean(item.que_es && item.que_hace && item.como_lo_hace && (item.combina_con || []).length);
+    return Boolean(item.que_es && item.que_hace && item.como_lo_hace && ((item.combina_con || []).length || item.nivel === 'ligero'));
   }
 
   function usedBy(item) {
