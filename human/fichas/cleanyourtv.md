@@ -29,6 +29,8 @@ Se activa la depuración (USB o red) en el televisor y un agente (Claude Code, C
 | [Claude Code](claude-code.md) | Agente que ejecuta el procedimiento, citado en el README como compatible. | Instala el agente y las herramientas de Android (ADB, build-tools) y abre el repo con él. |
 | [Codex CLI](codex.md) | Alternativa de agente citada en el README. | Instala Codex CLI y sigue el inicio rápido del repo. |
 | [AdGuardHome](adguardhome.md) | Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura) | Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor. |
+| [optimizerDuck](optimizerduck.md) | Combinación recíproca: optimizerDuck lo enlaza como «Misma filosofía para el televisor Android. (combinación por arquitectura)». | Orden indicado desde optimizerDuck: Úsalos por separado, cada uno en su plataforma. |
+| [universal-android-debloater-next-generation](universal-android-debloater-next-generation.md) | Combinación recíproca: universal-android-debloater-next-generation lo enlaza como «Misma técnica (ADB, `pm`) para televisores Android. (combinación por arquitectura)». | Orden indicado desde universal-android-debloater-next-generation: Úsalos por separado con el mismo ADB instalado. |
 
 **Notas:** Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (MIT). Da acceso ADB al agente solo mientras dure la tarea.
 

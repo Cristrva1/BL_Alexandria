@@ -30,6 +30,7 @@ Skills más instrucciones iniciales y hooks de sesión. Se instala por separado 
 | [Codex CLI](codex.md) | Instalación documentada (app y CLI). | Sigue la sección de Codex. |
 | [Gemini CLI](gemini-cli.md) | Extensión de Gemini CLI. | `gemini extensions install https://github.com/obra/superpowers`. |
 | [hermes-agent](hermes-agent.md) | Instalación documentada para Hermes Agent. | Reinicia la sesión tras instalar para activar los hooks. |
+| [Claude Code](claude-code.md) | Combinación recíproca: Claude Code lo enlaza como «Biblioteca de skills y flujos para Claude Code». | Orden indicado desde Claude Code: Instala el plugin desde su marketplace. |
 
 **Notas:** Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.
 

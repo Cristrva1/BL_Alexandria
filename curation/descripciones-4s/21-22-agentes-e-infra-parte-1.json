@@ -1,0 +1,502 @@
+{
+ "batch": "34-agentes-autonomos-parte-2-e-infra-agentes-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "gpt-researcher": {
+   "que_es": "GPT Researcher, agente open source de investigación profunda en web y documentos locales, de @assafelovic. Licencia Apache-2.0. Es maduro (desde 2023, ~31k estrellas, v3.8.0).",
+   "que_hace": "Planifica una investigación, consulta múltiples fuentes y genera informes detallados con citas. Admite investigación híbrida web más MCP (GitHub, bases de datos, APIs) y se puede usar como skill de Claude.",
+   "como_lo_hace": "Requiere Python 3.12+. Se instala con `pip install gpt-researcher` o desde el repo (servidor FastAPI con uvicorn), y como skill con `npx skills add assafelovic/gpt-researcher`. El buscador se elige con `RETRIEVER` (por ejemplo `tavily,mcp`) y necesita claves de LLM y de búsqueda.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Instalable como skill de Claude.",
+     "orden_instalacion": "Añade la skill con `npx skills add`."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Scraping de páginas difíciles. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Firecrawl como fuente o vía MCP."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el LLM a través de un proveedor compatible."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Combinación recíproca: SearXNG lo enlaza como «Usarlo como motor de búsqueda (retriever Searx) de GPT Researcher».",
+     "orden_instalacion": "Orden indicado desde SearXNG: Despliega SearXNG con JSON activado y configura su URL en GPT Researcher.",
+     "reciproca_de": "searxng"
+    }
+   ],
+   "notas": "Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).",
+   "fuentes": [
+    "https://github.com/assafelovic/gpt-researcher/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "assafelovic/gpt-researcher",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.8.0 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "local-deep-research": {
+   "que_es": "Local Deep Research, asistente de investigación agéntica que puede ejecutarse totalmente en local, de LearningCircuit. Licencia MIT. Tiene ~9.6k estrellas (v2.0.1); según su propio README, alcanza ~95% en SimpleQA con Qwen3.6-27B en una RTX 3090 (benchmark del autor).",
+   "que_hace": "Hace investigación profunda con múltiples LLM y buscadores, con citas, y construye una base de conocimiento consultable. La base de datos está cifrada con SQLCipher.",
+   "como_lo_hace": "Se despliega con Docker o Docker Compose junto a Ollama (por ejemplo, `gpt-oss:20b`) y SearXNG. En Docker Desktop (Mac/Windows/WSL2), `--network host` no funciona y hay que usar Compose.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local recomendado en el quickstart.",
+     "orden_instalacion": "Arranca Ollama y descarga un modelo."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Buscador recomendado en el quickstart.",
+     "orden_instalacion": "Arranca SearXNG y fija su URL."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "Servidor local alternativo compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Expón llama-server y configúralo."
+    }
+   ],
+   "notas": "Alternativa (elige una): gpt-researcher.",
+   "fuentes": [
+    "https://github.com/LearningCircuit/local-deep-research/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "LearningCircuit/local-deep-research",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.0.1 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "paperclip": {
+   "que_es": "Paperclip, servidor Node.js con interfaz React para orquestar equipos de agentes de IA como si fueran una empresa. Licencia MIT. Creado en marzo de 2026, ya tiene ~114k estrellas; hay lista de espera para un servicio cloud.",
+   "que_hace": "Defines objetivos de negocio, «contratas» agentes con roles (CEO, CTO…), apruebas la estrategia y fijas presupuestos. Incluye organigramas, gobernanza, seguimiento de tokens y costes por agente o proyecto, y conectores (GitHub, Notion, Railway, MCP).",
+   "como_lo_hace": "Se inicia con `npx paperclipai@latest onboard --yes` o se prueba con `npx paperclipai test-drive` y una clave de proveedor. Funciona con OpenClaw, Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes y otros.",
+   "combina_con": [
+    {
+     "id": "openclaw",
+     "motivo": "Harness soportado.",
+     "orden_instalacion": "Registra OpenClaw como agente."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Harness soportado.",
+     "orden_instalacion": "Instala Claude Code y asígnalo."
+    },
+    {
+     "id": "codex",
+     "motivo": "Harness soportado (`--harness codex`).",
+     "orden_instalacion": "Instala Codex y asígnalo."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Harness soportado.",
+     "orden_instalacion": "Registra Hermes vía su gateway."
+    }
+   ],
+   "notas": "Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos.",
+   "fuentes": [
+    "https://github.com/paperclipai/paperclip/blob/master/README.md",
+    "https://docs.paperclip.ing/connectors/"
+   ],
+   "github": {
+    "name_with_owner": "paperclipai/paperclip",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v2026.1106.0 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "social-media-agent": {
+   "que_es": "Social Media Agent, agente de ejemplo de LangChain que convierte una URL en publicaciones para X y LinkedIn. Licencia MIT. Tiene ~3k estrellas; es más una plantilla que un producto.",
+   "que_hace": "Extrae el contenido de la URL, redacta la publicación y usa un flujo human-in-the-loop (Agent Inbox) para revisarla y programarla. Admite crons, scripts predefinidos y estilos personalizables.",
+   "como_lo_hace": "Se ejecuta en un servidor LangGraph JS (`npx @langchain/langgraph-cli dev`). Necesita claves de LLM, Firecrawl y Arcade (autenticación en redes sociales); la configuración completa añade Supabase, Slack y GitHub.",
+   "combina_con": [
+    {
+     "id": "langgraphjs",
+     "motivo": "Runtime del agente.",
+     "orden_instalacion": "Arranca el servidor LangGraph."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Scraping de las URLs.",
+     "orden_instalacion": "Añade `FIRECRAWL_API_KEY`."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Almacenamiento de imágenes en la configuración completa.",
+     "orden_instalacion": "Crea el proyecto y añade las claves."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Publica en cuentas reales: revisa siempre antes de aprobar.",
+   "fuentes": [
+    "https://github.com/langchain-ai/social-media-agent/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "langchain-ai/social-media-agent",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "agentes-chat": {
+   "que_es": "agentes.chat, alternativa autoalojada a Slack donde trabajan juntos personas y agentes de IA, de Codari Global, LLC. Licencia AGPL-3.0, con licencia comercial y CLA. Es muy reciente (noviembre de 2026, ~1.5k estrellas) y tiene app de escritorio.",
+   "que_hace": "Los agentes son miembros del workspace, con rol, responsable y presupuesto, y piden aprobación para acciones sensibles (merges, despliegues). Usan Claude, ChatGPT/Codex, Gemini, Grok u OpenRouter, herramientas MCP, y tienen su propio ordenador y navegador.",
+   "como_lo_hace": "Se instala con un comando en un servidor Linux; la única dependencia es Postgres. También hay versión Cloud de pago con el mismo código.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Herramienta de trabajo de los agentes.",
+     "orden_instalacion": "Conecta tu cuenta de Claude."
+    },
+    {
+     "id": "codex",
+     "motivo": "Herramienta de trabajo de los agentes.",
+     "orden_instalacion": "Conecta Codex."
+    },
+    {
+     "id": "github-mcp-server",
+     "motivo": "Conector MCP por URL. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el servidor desde el panel de la organización."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Proyecto muy joven.",
+   "fuentes": [
+    "https://github.com/agentes-chat/agentes-chat/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "agentes-chat/agentes-chat",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "desktop-v0.8.10 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "opendots": {
+   "que_es": "OpenDots, plantilla open source de CopilotKit para agentes persistentes, cada uno con su propio ordenador, en web y móvil. Licencia MIT. Tiene ~6.6k estrellas; CopilotKit ofrece ahora la versión más robusta como skin de OpenBot.",
+   "que_hace": "Los «Dots» conversan por texto, llamadas y Slack, navegan, redactan y guardan resultados en páginas editables tras una tarjeta de aprobación humana. Usan herramientas MCP y apps de Composio con aprobación para escrituras.",
+   "como_lo_hace": "Se autoaloja, pero las conversaciones requieren CopilotKit Intelligence: servicio alojado, evaluación local con Docker o despliegue autoalojado con licencia. La telemetría del SDK está activa.",
+   "combina_con": [
+    {
+     "id": "copilotkit",
+     "motivo": "Framework base y requisito (CopilotKit Intelligence).",
+     "orden_instalacion": "Crea el proyecto con `npx copilotkit@latest login`."
+    },
+    {
+     "id": "composio",
+     "motivo": "Apps conectadas integradas.",
+     "orden_instalacion": "Añade la clave de Composio."
+    },
+    {
+     "id": "servers",
+     "motivo": "Servidores MCP de referencia como herramientas. (combinación por arquitectura)",
+     "orden_instalacion": "Añade los MCP por Dot."
+    }
+   ],
+   "notas": "Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.",
+   "fuentes": [
+    "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "CopilotKit/OpenDots",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "hello-halo": {
+   "que_es": "Halo AI Workstation, estación de trabajo de IA de escritorio open source, de OpenKursar. El LICENSE es MIT (GitHub muestra NOASSERTION). Tiene ~1.9k estrellas (v3.0.5).",
+   "que_hace": "Funciona como un banco de trabajo de IA (chat, código, documentos, investigación) y añade «Digital Humans»: miembros IA que se reparten el trabajo, acumulan memoria y siguen activos de forma autónoma. Permite delegar trabajo desde cualquier lugar.",
+   "como_lo_hace": "Es una app de escritorio basada en Node; desde el código se instala con `npm install`. Conecta servidores MCP y skills compatibles con el ecosistema de Claude Code. El README incluye partners y patrocinadores.",
+   "combina_con": [
+    {
+     "id": "anthropic-skills",
+     "motivo": "Skills compatibles con el ecosistema de Claude Code.",
+     "orden_instalacion": "Importa las skills."
+    },
+    {
+     "id": "context7",
+     "motivo": "Documentación vía MCP. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el MCP."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Navegador vía MCP. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el MCP."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/openkursar/hello-halo/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "openkursar/hello-halo",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.0.5 (2026-11-01)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "composio": {
+   "que_es": "Composio, monorepo de SDKs que da a los agentes más de 1000 toolkits preautenticados, de ComposioHQ. Licencia MIT para los SDKs; la plataforma es un servicio con API key. Tiene ~31k estrellas.",
+   "que_hace": "Gestiona sesiones por usuario, autenticación, triggers y un sandbox para que los agentes actúen en apps externas. Cada sesión expone además un endpoint MCP alojado.",
+   "como_lo_hace": "Incluye SDK de TypeScript (`@composio/core`, o la variante reducida `@composio/slim`), SDK de Python (`pip install composio`), una CLI y adaptadores para OpenAI Agents, Claude Agent SDK, Vercel AI SDK, LangChain y más. Requiere `COMPOSIO_API_KEY`.",
+   "combina_con": [
+    {
+     "id": "openai-agents-python",
+     "motivo": "Adaptador oficial (`composio-openai-agents`).",
+     "orden_instalacion": "Instala el SDK y el adaptador."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Adaptador LangChain/LangGraph.",
+     "orden_instalacion": "Instala el adaptador del proveedor."
+    },
+    {
+     "id": "mastra",
+     "motivo": "Adaptador de proveedor.",
+     "orden_instalacion": "Instala el adaptador de Mastra."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Cliente del endpoint MCP de la sesión.",
+     "orden_instalacion": "Pasa `mcp: true` y añade la URL."
+    },
+    {
+     "id": "awesome-claude-skills",
+     "motivo": "Combinación recíproca: Awesome Claude Skills lo enlaza como «El plugin `connect-apps` usa Composio para la autenticación y las integraciones».",
+     "orden_instalacion": "Orden indicado desde Awesome Claude Skills: Crea una clave de Composio antes de ejecutar el setup.",
+     "reciproca_de": "awesome-claude-skills"
+    },
+    {
+     "id": "openbot",
+     "motivo": "Combinación recíproca: OpenBot lo enlaza como «Composio actúa como intermediario de cientos de apps detrás de una sola cuenta en el catálogo MCP gobernado».",
+     "orden_instalacion": "Orden indicado desde OpenBot: Prepara `setup:composio` y concede solo las apps necesarias.",
+     "reciproca_de": "openbot"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Dependencia de un servicio comercial para las credenciales de terceros.",
+   "fuentes": [
+    "https://github.com/ComposioHQ/composio/blob/next/README.md",
+    "https://docs.composio.dev/docs/providers/custom-providers"
+   ],
+   "github": {
+    "name_with_owner": "ComposioHQ/composio",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "@composio/cli@0.6.1 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "e2b": {
+   "que_es": "E2B, infraestructura open source para ejecutar código generado por IA en sandboxes aislados en la nube. Licencia Apache-2.0. Es maduro y activo (~15k estrellas).",
+   "que_hace": "Crea sandboxes desde el SDK, ejecuta comandos y código (Code Interpreter) y ofrece escritorios virtuales para agentes de uso de ordenador (`e2b-desktop`).",
+   "como_lo_hace": "Se instala con `npm i e2b` o `pip install e2b` y requiere `E2B_API_KEY` del servicio alojado. La infraestructura se puede autoalojar.",
+   "combina_con": [
+    {
+     "id": "smolagents",
+     "motivo": "Ejecutor remoto E2B soportado.",
+     "orden_instalacion": "Configura el ejecutor E2B en el agente."
+    },
+    {
+     "id": "open-swe",
+     "motivo": "Proveedor de sandbox posible. (combinación por arquitectura)",
+     "orden_instalacion": "Configúralo como sandbox si tu despliegue lo admite."
+    },
+    {
+     "id": "computer-use-preview",
+     "motivo": "Escritorio aislado para agentes de uso de ordenador. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta el navegador en `e2b-desktop`."
+    }
+   ],
+   "notas": "Alternativas (elige una): sandbox.",
+   "fuentes": [
+    "https://github.com/e2b-dev/E2B/blob/main/README.md",
+    "https://e2b.dev/docs/code-interpreting"
+   ],
+   "github": {
+    "name_with_owner": "e2b-dev/E2B",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "@e2b/cli@2.24.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "nemoclaw": {
+   "que_es": "NVIDIA NemoClaw, stack de referencia open source para ejecutar agentes con más seguridad dentro de sandboxes NVIDIA OpenShell. Licencia Apache-2.0. Tiene ~23k estrellas y está activo.",
+   "que_hace": "Ofrece onboarding guiado, inferencia gestionada, políticas de red, integraciones gestionadas, persistencia de estado y operaciones de ciclo de vida mediante la CLI NemoClaw. Los agentes soportados son OpenClaw (por defecto), Hermes y LangChain Deep Agents Code.",
+   "como_lo_hace": "Tiene instalador y un prompt de inicio para que un agente de programación (Cursor, Claude Code, Codex…) lo instale contigo con aprobación de cada comando. Depende de OpenShell.",
+   "combina_con": [
+    {
+     "id": "openclaw",
+     "motivo": "Agente por defecto.",
+     "orden_instalacion": "Instala NemoClaw y elige OpenClaw."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Agente soportado.",
+     "orden_instalacion": "Elige Hermes en el onboarding."
+    },
+    {
+     "id": "deepagents",
+     "motivo": "Deep Agents Code soportado.",
+     "orden_instalacion": "Elige Deep Agents Code."
+    },
+    {
+     "id": "nemotron",
+     "motivo": "Modelos de NVIDIA para la inferencia gestionada. (combinación por arquitectura)",
+     "orden_instalacion": "Configura la inferencia."
+    }
+   ],
+   "notas": "Alternativas (elige una): sandbox.",
+   "fuentes": [
+    "https://github.com/NVIDIA/NemoClaw/blob/main/README.md",
+    "https://docs.nvidia.com/nemoclaw/latest/"
+   ],
+   "github": {
+    "name_with_owner": "NVIDIA/NemoClaw",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "sandbox": {
+   "que_es": "AIO Sandbox, entorno sandbox todo en uno para agentes (navegador, terminal, archivos, VSCode, Jupyter y MCP en un contenedor), de agent-infra. Licencia Apache-2.0. Tiene ~6.3k estrellas (v1.11.0) y artículo asociado.",
+   "que_hace": "Expone navegador (con VNC), shell, sistema de archivos, VSCode Server, JupyterLab y servicios MCP preconfigurados mediante una API común para agentes.",
+   "como_lo_hace": "Se ejecuta con `docker run … ghcr.io/agent-infra/sandbox:<tag>` (hay espejo en China). Se recomienda definir `SANDBOX_API_KEY`, porque sin ella los servicios quedan abiertos, y publicar solo en 127.0.0.1. Usa `seccomp=unconfined`.",
+   "combina_con": [
+    {
+     "id": "openhands",
+     "motivo": "Backend aislado para agentes. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta el agente a la API del sandbox."
+    },
+    {
+     "id": "browser-use",
+     "motivo": "Navegador del sandbox para automatización. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta browser-use al navegador expuesto."
+    },
+    {
+     "id": "deer-flow",
+     "motivo": "Sandbox para el harness. (combinación por arquitectura)",
+     "orden_instalacion": "Configúralo como entorno de ejecución."
+    },
+    {
+     "id": "computer-use-preview",
+     "motivo": "Combinación recíproca: Gemini Computer Use (preview) lo enlaza como «Ejecutar el navegador en un contenedor aislado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Gemini Computer Use (preview): Lanza el agente dentro del sandbox.",
+     "reciproca_de": "computer-use-preview"
+    }
+   ],
+   "notas": "Alternativas (elige una): nemoclaw, e2b. Se quita ecc (sin relación documentada). Riesgo: sin API key, todo queda expuesto.",
+   "fuentes": [
+    "https://github.com/agent-infra/sandbox/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "agent-infra/sandbox",
+    "archived": false,
+    "pushed_at": "2026-09-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.11.0 (2026-06-23)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "computer-use-preview": {
+   "que_es": "Computer Use Preview, implementación de referencia de Google para que Gemini controle un navegador. Licencia Apache-2.0. Tiene ~3.3k estrellas y no cambia desde julio de 2026.",
+   "que_hace": "Un agente con el modelo de uso de ordenador de Gemini ve capturas de pantalla y ejecuta acciones en el navegador a partir de una consulta.",
+   "como_lo_hace": "Se clona el repo, se crea un venv con `pip install -r requirements.txt` y se instala Playwright con Chrome. Requiere `GEMINI_API_KEY` o Vertex AI; el entorno se elige con `--env` (`playwright` local o Browserbase).",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Entorno de navegador local.",
+     "orden_instalacion": "Instala Playwright y Chrome."
+    },
+    {
+     "id": "sandbox",
+     "motivo": "Ejecutar el navegador en un contenedor aislado. (combinación por arquitectura)",
+     "orden_instalacion": "Lanza el agente dentro del sandbox."
+    },
+    {
+     "id": "e2b",
+     "motivo": "Escritorio aislado en la nube. (combinación por arquitectura)",
+     "orden_instalacion": "Usa `e2b-desktop` como entorno."
+    }
+   ],
+   "notas": "Alternativas (elige una): browser-use, skyvern. Es una referencia, no un producto.",
+   "fuentes": [
+    "https://github.com/google-gemini/computer-use-preview/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "google-gemini/computer-use-preview",
+    "archived": false,
+    "pushed_at": "2026-07-28",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "agent-protocol": {
+   "que_es": "Agent Protocol, especificación de LangChain de APIs independientes del framework para servir agentes LLM en producción. Licencia MIT. Es una especificación de nicho (~700 estrellas).",
+   "que_hace": "Define endpoints para runs, threads, store y streaming (Agent Streaming Protocol con esquema CDDL y bindings Python/TypeScript). LangGraph Platform implementa un superconjunto.",
+   "como_lo_hace": "Incluye la especificación OpenAPI, stubs de servidor en Python (Pydantic V2 y FastAPI) y referencias a la implementación LangGraph.js API.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "LangGraph Platform implementa un superconjunto.",
+     "orden_instalacion": "Despliega agentes con LangGraph."
+    },
+    {
+     "id": "langgraphjs",
+     "motivo": "Implementación open source en LangGraph.js API.",
+     "orden_instalacion": "Sirve el agente JS con langgraph-api."
+    },
+    {
+     "id": "deepagents",
+     "motivo": "Agentes servibles mediante el servidor LangGraph. (combinación por arquitectura)",
+     "orden_instalacion": "Expón el agente vía el servidor."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/langchain-ai/agent-protocol/blob/main/README.md",
+    "https://langchain-ai.github.io/agent-protocol/api.html"
+   ],
+   "github": {
+    "name_with_owner": "langchain-ai/agent-protocol",
+    "archived": false,
+    "pushed_at": "2026-11-05",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "langchain-protocol==0.0.21 (2026-11-05)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

@@ -1,0 +1,526 @@
+{
+ "batch": "39-vision-parte-2",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "insightface": {
+   "que_es": "InsightFace, proyecto de análisis facial 2D y 3D mantenido por Jia Guo y Jiankang Deng. El código es MIT, pero los datos de entrenamiento y los modelos entrenados con ellos son solo para investigación no comercial; GitHub no detecta licencia. Tiene ~30k estrellas y es una referencia histórica del área.",
+   "que_hace": "Ofrece detección (SCRFD/RetinaFace), reconocimiento (ArcFace), alineación, atributos y reconstrucción 3D, con un model zoo. Sus modelos (por ejemplo, inswapper) son la base de muchas herramientas de face swap.",
+   "como_lo_hace": "Se usa mediante el paquete Python `insightface` (que descarga los modelos automáticamente) con ONNX Runtime. El código de entrenamiento funciona con PyTorch 1.6+ y/o MXNet.",
+   "combina_con": [
+    {
+     "id": "facefusion",
+     "motivo": "Usa modelos de análisis facial del ecosistema. (combinación por arquitectura)",
+     "orden_instalacion": "Instala FaceFusion con sus modelos."
+    },
+    {
+     "id": "deep-live-cam",
+     "motivo": "Usa su modelo inswapper.",
+     "orden_instalacion": "Viene como dependencia."
+    },
+    {
+     "id": "liveportrait",
+     "motivo": "Detección y recorte facial. (combinación por arquitectura)",
+     "orden_instalacion": "Viene como dependencia en la ruta por defecto."
+    },
+    {
+     "id": "deepface",
+     "motivo": "Combinación recíproca: DeepFace lo enlaza como «El modelo de reconocimiento Buffalo_L que envuelve DeepFace procede de InsightFace».",
+     "orden_instalacion": "Orden indicado desde DeepFace: Instala DeepFace; después usa `model_name=\"Buffalo_L\"` (revisa la licencia de los pesos de InsightFace).",
+     "reciproca_de": "deepface"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Los pesos no permiten uso comercial.",
+   "fuentes": [
+    "https://github.com/deepinsight/insightface/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "deepinsight/insightface",
+    "archived": false,
+    "pushed_at": "2026-10-19",
+    "primary_language": "Python",
+    "latest_release": "model-zoo (2026-09-03)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "liveportrait": {
+   "que_es": "LivePortrait, sistema de animación de retratos con control de stitching y retargeting, del Kuaishou Visual Generation and Interaction Center (KlingAIResearch). El código es MIT (GitHub muestra NOASSERTION), pero depende de modelos de terceros con sus propias licencias, como InsightFace (no comercial). Tiene ~19k estrellas y no cambia desde junio de 2026.",
+   "que_hace": "Transfiere expresiones y movimientos de un vídeo conductor a un retrato estático (humanos y animales) de forma eficiente. Permite editar ojos y labios y tiene interfaz Gradio.",
+   "como_lo_hace": "Requiere PyTorch con CUDA (el README fija versiones como torch 2.3) y `pip install -r requirements.txt`; hay requisitos específicos para macOS. Los pesos se descargan de Hugging Face y existe un nodo comunitario para ComfyUI.",
+   "combina_con": [
+    {
+     "id": "moviepy",
+     "motivo": "Postproducción del vídeo resultante. (combinación por arquitectura)",
+     "orden_instalacion": "Edita el resultado con MoviePy."
+    },
+    {
+     "id": "comfyui",
+     "motivo": "Nodo comunitario ComfyUI-LivePortraitKJ.",
+     "orden_instalacion": "Instala el nodo en ComfyUI."
+    },
+    {
+     "id": "insightface",
+     "motivo": "Detección facial por defecto. (combinación por arquitectura)",
+     "orden_instalacion": "Viene como dependencia."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/KlingAIResearch/LivePortrait/blob/main/readme.md"
+   ],
+   "github": {
+    "name_with_owner": "KlingAIResearch/LivePortrait",
+    "archived": false,
+    "pushed_at": "2026-06-01",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ultralytics": {
+   "que_es": "Ultralytics, paquete con los modelos YOLO para detección, segmentación, clasificación, pose y OBB. Licencia AGPL-3.0, con licencia Enterprise de pago para uso comercial cerrado. Es muy activo (~63k estrellas, v8.4.215).",
+   "que_hace": "Entrena, valida, predice, rastrea y exporta modelos YOLO con una API Python y la CLI `yolo`. Exporta a ONNX, TensorRT, CoreML, TFLite y otros formatos, y se integra con su plataforma HUB.",
+   "como_lo_hace": "Se instala con `pip install ultralytics` y usa PyTorch. La documentación completa está en docs.ultralytics.com.",
+   "combina_con": [
+    {
+     "id": "supervision",
+     "motivo": "Anotar, contar y rastrear sobre resultados YOLO.",
+     "orden_instalacion": "Convierte con `sv.Detections.from_ultralytics`."
+    },
+    {
+     "id": "label-studio",
+     "motivo": "Etiquetar datos para entrenar. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta en formato YOLO."
+    },
+    {
+     "id": "opencv",
+     "motivo": "Captura y procesado de vídeo. (combinación por arquitectura)",
+     "orden_instalacion": "Lee fotogramas con OpenCV."
+    },
+    {
+     "id": "kornia",
+     "motivo": "Combinación recíproca: kornia lo enlaza como «Aumentos de datos en GPU para entrenar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde kornia: Aplica aumentos antes del entrenamiento.",
+     "reciproca_de": "kornia"
+    },
+    {
+     "id": "sam3",
+     "motivo": "Combinación recíproca: SAM 3 lo enlaza como «Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SAM 3: Usa las cajas como prompts.",
+     "reciproca_de": "sam3"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. La AGPL obliga a publicar el código de servicios que lo usen, salvo con licencia Enterprise.",
+   "fuentes": [
+    "https://github.com/ultralytics/ultralytics/blob/main/README.md",
+    "https://docs.ultralytics.com"
+   ],
+   "github": {
+    "name_with_owner": "ultralytics/ultralytics",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v8.4.215 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "sam3": {
+   "que_es": "SAM 3 (Segment Anything with Concepts), modelo de Meta Superintelligence Labs para detectar, segmentar y seguir objetos en imágenes y vídeo a partir de conceptos. Licencia «SAM License» propia (GitHub muestra NOASSERTION). Tiene ~12k estrellas y ya publicó checkpoints SAM 3.1.",
+   "que_hace": "Segmenta todas las instancias de un concepto descrito con texto o ejemplos, además de prompts clásicos (puntos, cajas) y seguimiento en vídeo.",
+   "como_lo_hace": "Requiere Python 3.12+, PyTorch 2.10 con CUDA y `pip install -e .` (extras para notebooks y entrenamiento; FlashAttention 3 es opcional). Antes hay que solicitar acceso a los checkpoints en Hugging Face.",
+   "combina_con": [
+    {
+     "id": "label-studio",
+     "motivo": "Pre-etiquetado de máscaras. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el modelo como backend de ML."
+    },
+    {
+     "id": "supervision",
+     "motivo": "Visualizar y procesar máscaras. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte las máscaras a Detections."
+    },
+    {
+     "id": "ultralytics",
+     "motivo": "Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura)",
+     "orden_instalacion": "Usa las cajas como prompts."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Pesos con acceso restringido.",
+   "fuentes": [
+    "https://github.com/facebookresearch/sam3/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "facebookresearch/sam3",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "opencv": {
+   "que_es": "OpenCV, la biblioteca open source de visión por computador de referencia, gestionada por OpenCV.org. Licencia Apache-2.0. Es muy madura (~92k estrellas, 5.1.0).",
+   "que_hace": "Ofrece miles de algoritmos de procesamiento de imagen, vídeo, calibración, características, detección, seguimiento y un módulo DNN para inferencia. Los módulos extra están en opencv_contrib.",
+   "como_lo_hace": "Se instala en Python con `pip install opencv-python` (o `-contrib`, o `-headless` para servidores), o se compila con CMake para C++. La documentación de la rama 5.x está en docs.opencv.org/5.x.",
+   "combina_con": [
+    {
+     "id": "ultralytics",
+     "motivo": "Fuente de fotogramas para YOLO.",
+     "orden_instalacion": "Lee vídeo con OpenCV y pasa los frames."
+    },
+    {
+     "id": "supervision",
+     "motivo": "Dibujo y anotación sobre imágenes OpenCV.",
+     "orden_instalacion": "Usa los anotadores sobre arrays NumPy."
+    },
+    {
+     "id": "mediapipe",
+     "motivo": "Captura con OpenCV y análisis con MediaPipe. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte BGR a RGB antes."
+    },
+    {
+     "id": "mmpose",
+     "motivo": "Combinación recíproca: mmpose lo enlaza como «Captura y visualización».",
+     "orden_instalacion": "Orden indicado desde mmpose: Instala OpenCV.",
+     "reciproca_de": "mmpose"
+    },
+    {
+     "id": "openpose",
+     "motivo": "Combinación recíproca: openpose lo enlaza como «Captura y visualización».",
+     "orden_instalacion": "Orden indicado desde openpose: Instala OpenCV.",
+     "reciproca_de": "openpose"
+    },
+    {
+     "id": "kornia",
+     "motivo": "Combinación recíproca: kornia lo enlaza como «Preprocesado clásico fuera del grafo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde kornia: Combina según necesidad.",
+     "reciproca_de": "kornia"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/opencv/opencv/blob/5.x/README.md"
+   ],
+   "github": {
+    "name_with_owner": "opencv/opencv",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "latest_release": "5.1.0 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "supervision": {
+   "que_es": "supervision, herramientas reutilizables de visión por computador de Roboflow. Licencia MIT. Es madura y muy activa (~52k estrellas, 0.31.7).",
+   "que_hace": "Carga datasets, dibuja detecciones y máscaras, cuenta objetos que cruzan zonas o líneas, rastrea (ByteTrack) y convierte entre formatos. Es independiente del modelo, con conectores para Ultralytics, Transformers, Inference y otros.",
+   "como_lo_hace": "Requiere Python 3.10+ y se instala con `pip install supervision`. Usar Roboflow Inference requiere una API key de Roboflow.",
+   "combina_con": [
+    {
+     "id": "ultralytics",
+     "motivo": "Conector nativo `from_ultralytics`.",
+     "orden_instalacion": "Instala ambos y convierte los resultados."
+    },
+    {
+     "id": "opencv",
+     "motivo": "Lectura y escritura de vídeo.",
+     "orden_instalacion": "Instala `opencv-python`."
+    },
+    {
+     "id": "sam3",
+     "motivo": "Visualizar máscaras de segmentación. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte las máscaras."
+    },
+    {
+     "id": "label-studio",
+     "motivo": "Combinación recíproca: Label Studio lo enlaza como «Revisar y convertir anotaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Label Studio: Carga el dataset exportado.",
+     "reciproca_de": "label-studio"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/roboflow/supervision/blob/develop/README.md"
+   ],
+   "github": {
+    "name_with_owner": "roboflow/supervision",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "0.31.7 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "label-studio": {
+   "que_es": "Label Studio, herramienta open source de etiquetado de datos, de HumanSignal. Licencia Apache-2.0. Es madura (~29k estrellas, 1.23.2) y tiene edición Enterprise de pago.",
+   "que_hace": "Permite etiquetar imágenes, texto, audio, vídeo y series temporales con interfaces configurables, y exporta a varios formatos de modelo. Un backend de ML permite pre-etiquetar y hacer aprendizaje activo.",
+   "como_lo_hace": "Se ejecuta con Docker (`docker run -p 8080:8080 heartexlabs/label-studio`) o con `pip install label-studio` (Python 3.10+).",
+   "combina_con": [
+    {
+     "id": "ultralytics",
+     "motivo": "Exportar en formato YOLO para entrenar. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta el proyecto y entrena."
+    },
+    {
+     "id": "sam3",
+     "motivo": "Pre-etiquetado de máscaras mediante el backend de ML. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el backend."
+    },
+    {
+     "id": "supervision",
+     "motivo": "Revisar y convertir anotaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Carga el dataset exportado."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/HumanSignal/label-studio/blob/develop/README.md"
+   ],
+   "github": {
+    "name_with_owner": "HumanSignal/label-studio",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "1.23.2 (2026-09-29)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openpose": {
+   "que_es": "OpenPose, sistema de CMU que fue el primero en detectar en tiempo real keypoints de cuerpo, manos, cara y pies de varias personas. Licencia académica, gratuita solo para uso no comercial (GitHub muestra NOASSERTION). Tiene ~35k estrellas, pero es histórico: sin cambios desde agosto de 2024 (v1.7.0).",
+   "que_hace": "Estima hasta 135 keypoints por persona en imágenes y vídeo, con API C++ y Python y una demo.",
+   "como_lo_hace": "Se compila con CMake en Linux, macOS o Windows, con CUDA y cuDNN para tiempo real, o usando binarios para Windows. Depende de Caffe.",
+   "combina_con": [
+    {
+     "id": "opencv",
+     "motivo": "Captura y visualización.",
+     "orden_instalacion": "Instala OpenCV."
+    },
+    {
+     "id": "easymocap",
+     "motivo": "Usa keypoints 2D estilo OpenPose para ajustar SMPL.",
+     "orden_instalacion": "Genera los keypoints y pásalos a EasyMocap."
+    },
+    {
+     "id": "comfyui",
+     "motivo": "Mapas de pose OpenPose como condición en flujos de imagen. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los preprocesadores de pose en ComfyUI."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Licencia no comercial e inactivo.",
+   "fuentes": [
+    "https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "CMU-Perceptual-Computing-Lab/openpose",
+    "archived": false,
+    "pushed_at": "2024-08-03",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C++",
+    "latest_release": "v1.7.0 (2020-11-17)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mediapipe": {
+   "que_es": "MediaPipe, framework de Google AI Edge para ML en dispositivo. Licencia Apache-2.0. Es maduro (~38k estrellas, v1.2.3).",
+   "que_hace": "Ofrece MediaPipe Tasks (detección y landmarks de cara, manos y pose, segmentación, clasificación, LLM Inference y más) y Model Maker para personalizar modelos. Funciona en Android, iOS, web, escritorio, edge e IoT.",
+   "como_lo_hace": "Se instala con `pip install mediapipe` o con los SDK de Android, iOS y web. La documentación principal está en developers.google.com/edge/mediapipe; las antiguas «Legacy Solutions» se sustituyeron por Tasks.",
+   "combina_con": [
+    {
+     "id": "opencv",
+     "motivo": "Captura de vídeo en escritorio.",
+     "orden_instalacion": "Lee frames con OpenCV y pásalos a Tasks."
+    },
+    {
+     "id": "tfjs-models",
+     "motivo": "Modelos de pose en navegador con backend MediaPipe.",
+     "orden_instalacion": "Elige el runtime `mediapipe` en pose-detection."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Avatares controlados por landmarks. (combinación por arquitectura)",
+     "orden_instalacion": "Mapea landmarks a un esqueleto 3D."
+    },
+    {
+     "id": "easymocap",
+     "motivo": "Combinación recíproca: EasyMocap lo enlaza como «Detector de keypoints soportado».",
+     "orden_instalacion": "Orden indicado desde EasyMocap: Usa el detector MediaPipe.",
+     "reciproca_de": "easymocap"
+    },
+    {
+     "id": "tensorflow",
+     "motivo": "Combinación recíproca: tensorflow lo enlaza como «Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde tensorflow: Usa modelos TF Lite en MediaPipe.",
+     "reciproca_de": "tensorflow"
+    },
+    {
+     "id": "deepface",
+     "motivo": "Combinación recíproca: DeepFace lo enlaza como «DeepFace puede usar MediaPipe como detector facial».",
+     "orden_instalacion": "Orden indicado desde DeepFace: Instala `mediapipe`; después usa `detector_backend=\"mediapipe\"`.",
+     "reciproca_de": "deepface"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/google-ai-edge/mediapipe/blob/master/README.md",
+    "https://developers.google.com/edge/mediapipe/solutions/"
+   ],
+   "github": {
+    "name_with_owner": "google-ai-edge/mediapipe",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "latest_release": "v1.2.3 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "kornia": {
+   "que_es": "Kornia, biblioteca de visión por computador diferenciable sobre PyTorch. Licencia Apache-2.0. Es madura (~12k estrellas, v0.9.1).",
+   "que_hace": "Ofrece transformaciones geométricas, filtros, aumentos de datos en GPU, detección y emparejamiento de características (LoFTR, DISK…), calibración y modelos preentrenados, todo diferenciable para integrarlo en redes.",
+   "como_lo_hace": "Se instala con `pip install kornia` y requiere PyTorch.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Backend.",
+     "orden_instalacion": "Instala PyTorch primero."
+    },
+    {
+     "id": "opencv",
+     "motivo": "Preprocesado clásico fuera del grafo. (combinación por arquitectura)",
+     "orden_instalacion": "Combina según necesidad."
+    },
+    {
+     "id": "ultralytics",
+     "motivo": "Aumentos de datos en GPU para entrenar. (combinación por arquitectura)",
+     "orden_instalacion": "Aplica aumentos antes del entrenamiento."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/kornia/kornia/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "kornia/kornia",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.9.1 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mmpose": {
+   "que_es": "MMPose, toolbox de estimación de pose de OpenMMLab (incluye RTMPose). Licencia Apache-2.0. Tiene ~8k estrellas, pero no cambia desde agosto de 2025 (v1.3.2).",
+   "que_hace": "Cubre pose 2D y 3D de cuerpo, manos, cara, animales y prendas con numerosos modelos y benchmarks.",
+   "como_lo_hace": "Requiere PyTorch y la pila OpenMMLab (MMEngine, MMCV, MMDetection), instalada con `mim`. La compatibilidad con versiones recientes de PyTorch puede requerir trabajo.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Backend.",
+     "orden_instalacion": "Instala una versión compatible."
+    },
+    {
+     "id": "opencv",
+     "motivo": "Captura y visualización.",
+     "orden_instalacion": "Instala OpenCV."
+    },
+    {
+     "id": "easymocap",
+     "motivo": "Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los keypoints."
+    },
+    {
+     "id": "cvat",
+     "motivo": "Combinación recíproca: CVAT Community lo enlaza como «CVAT incluye una función serverless con HRNet32 de MMPose para estimar pose de cuerpo completo».",
+     "orden_instalacion": "Orden indicado desde CVAT Community: Despliega CVAT con el componente serverless; después instala la función de MMPose.",
+     "reciproca_de": "cvat"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Actividad baja.",
+   "fuentes": [
+    "https://github.com/open-mmlab/mmpose/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "open-mmlab/mmpose",
+    "archived": false,
+    "pushed_at": "2025-08-04",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.3.2 (2024-07-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "4d-humans": {
+   "que_es": "4DHumans (HMR 2.0), implementación del artículo «Humans in 4D: Reconstructing and Tracking Humans with Transformers» (UC Berkeley). Licencia MIT. Es código de investigación (~1.7k estrellas) sin cambios desde febrero de 2026.",
+   "que_hace": "Reconstruye mallas humanas 3D (SMPL) a partir de imágenes y las rastrea en vídeo con PHALP.",
+   "como_lo_hace": "Se instala con `pip install torch` y `pip install -e .[all]`, más PHALP desde GitHub. Requiere GPU y descargar el modelo SMPL, con su propia licencia y registro.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Backend.",
+     "orden_instalacion": "Instala PyTorch."
+    },
+    {
+     "id": "wham",
+     "motivo": "Otro enfoque de movimiento 3D en vídeo para comparar. (combinación por arquitectura)",
+     "orden_instalacion": "Compara resultados."
+    },
+    {
+     "id": "blender",
+     "motivo": "Visualizar y animar las mallas. (combinación por arquitectura)",
+     "orden_instalacion": "Importa las mallas exportadas."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Código de investigación.",
+   "fuentes": [
+    "https://github.com/shubham-goel/4D-Humans/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "shubham-goel/4D-Humans",
+    "archived": false,
+    "pushed_at": "2026-02-07",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "tfjs-models": {
+   "que_es": "Colección de modelos preentrenados portados a TensorFlow.js, de Google. Licencia Apache-2.0. Tiene ~15k estrellas y está poco activa (último cambio en junio de 2026).",
+   "que_hace": "Ofrece modelos listos para el navegador o Node: MobileNet, COCO-SSD, detección de pose, manos y landmarks faciales, DeepLab, toxicidad, comandos de voz y otros, para usar directamente o en transfer learning.",
+   "como_lo_hace": "Se instala por paquete npm (por ejemplo `npm i @tensorflow-models/pose-detection`) o desde unpkg, junto con `@tensorflow/tfjs`.",
+   "combina_con": [
+    {
+     "id": "mediapipe",
+     "motivo": "Runtime alternativo en pose-detection.",
+     "orden_instalacion": "Elige el runtime `mediapipe`."
+    },
+    {
+     "id": "tensorflow",
+     "motivo": "Entrenar en Python y convertir a TF.js. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte con tensorflowjs_converter."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Interacción 3D a partir de pose o manos. (combinación por arquitectura)",
+     "orden_instalacion": "Mapea los keypoints a la escena."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/tensorflow/tfjs-models/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "tensorflow/tfjs-models",
+    "archived": false,
+    "pushed_at": "2026-06-23",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "tasks-v0.0.1-alpha.6 (2021-05-13)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

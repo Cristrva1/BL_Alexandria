@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+agent-desktop, CLI y biblioteca de Vercel Labs para que un agente use apps de escritorio en macOS, Windows y Linux a través del árbol de accesibilidad del sistema. Licencia Apache-2.0. Tiene ~24k estrellas y está activo.
+
+## ¿Qué hace?
+
+Lee el árbol de accesibilidad de una app y lo devuelve como JSON, con una referencia para cada elemento accionable; así el agente actúa sin capturas de pantalla ni comparación de píxeles. Incluye sesiones, sandboxes y trazas. El README advierte que los snapshots pueden contener datos privados.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install -g agent-desktop` (con binarios nativos x64 y ARM64) o `brew install agent-desktop`. En macOS requiere el permiso de Accesibilidad. Se expone como servidor MCP (`agent-desktop mcp`) o como skill (`npx skills add …`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalable como skill o MCP. | Añade la skill o el servidor MCP. |
+| [Codex CLI](codex.md) | Cliente MCP stdio. (combinación por arquitectura) | Añade `agent-desktop mcp` a la configuración. |
+| [Playwright MCP](playwright-mcp.md) | Complemento para la parte web. (combinación por arquitectura) | Usa Playwright MCP en el navegador y agent-desktop en apps nativas. |
+
+**Notas:** Sin alternativas declaradas; enfoque complementario al de computer-use-preview (accesibilidad frente a píxeles).
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.3.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel-labs/agent-desktop/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación |
 | Coste | Sin pago a un modelo en la ruta básica. El CLI y MCP no necesitan un LLM propio; el agente que los controle usa su modelo o plan |
 | Equipo | Preparación según la ruta elegida. Node; permisos de accesibilidad del sistema; cliente de agente opcional |
-
-Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación
-
-## Qué puedes hacer con él
-
-CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio.
-
-## Por qué destaca
-
-Usos propuestos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz.
-
-## Cómo funciona
 
 Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; permisos de accesibilidad del sistema; cliente de agente opcional
 - **Etiquetas:** `infra` `accessibility` `accessibility-api` `ai-agents` `automation` `cli` `computer-use` `computer-use-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Enlaces
 

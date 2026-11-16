@@ -29,6 +29,7 @@ Se descarga el ZIP del repo, se descomprime y se abre la carpeta como vault nuev
 | [obsidian-minimal](obsidian-minimal.md) | Tema del mismo autor, coherente con la plantilla. (combinación por arquitectura) | Abre el vault e instala Minimal desde los temas de la comunidad. |
 | [obsidian-clipper](obsidian-clipper.md) | Guardar páginas web como notas dentro de la estructura del vault. (combinación por arquitectura) | Configura el Web Clipper para guardar en la carpeta que corresponda. |
 | [obsidian-skills](obsidian-skills.md) | Que un agente cree notas, Bases y canvas respetando los formatos de Obsidian. (combinación por arquitectura) | Instala las skills en el agente y abre el vault con él. |
+| [40-questions](40-questions.md) | Combinación recíproca: 40-questions lo enlaza como «Guardar la revisión anual en el vault de plantilla del mismo autor. (combinación por arquitectura)». | Orden indicado desde 40-questions: Descarga la plantilla del vault y crea ahí una nota anual con las preguntas. |
 
 **Notas:** Sin alternativas declaradas.
 

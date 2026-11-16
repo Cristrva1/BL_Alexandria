@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Slidev, presentaciones para desarrolladores escritas en Markdown, de Anthony Fu y slidevjs. Licencia MIT. Es madura (~49k estrellas, v53.1.0).
+
+## ¿Qué hace?
+
+Crea diapositivas con Markdown, componentes Vue, resaltado de código, diagramas Mermaid, LaTeX, grabación, modo presentador y exportación a PDF, PPTX o PNG.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 22.12+ y se inicia con `npm init slidev`. Usa Vite para la recarga instantánea.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Mermaid](mermaid.md) | Diagramas integrados en Markdown. | Escribe bloques mermaid. |
+| [Claude Code](claude-code.md) | Generar diapositivas en Markdown. (combinación por arquitectura) | Pide al agente el slides.md. |
+| [playwright](playwright.md) | Exportación a PDF o PNG. | Instala playwright-chromium cuando lo pida. |
+| [diagram-design](diagram-design.md) | Combinación recíproca: diagram-design lo enlaza como «Incrustar diagramas en presentaciones. (combinación por arquitectura)». | Orden indicado desde diagram-design: Exporta SVG/PNG e insértalos. |
+
+**Notas:** Alternativas (elige una): marp, reveal.js.
+
+Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v53.1.0 (2026-11-05) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/slidevjs/slidev/blob/main/README.md) · [2](https://sli.dev/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una herramienta orientada a Markdown y componentes Vue; utilizar un agente para escribir el contenido no la convierte en plugin de ese agente |
 | Coste | Sin pago a un modelo en la ruta básica. MIT y sin API de IA obligatoria; hosting y recursos externos tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Node; editor de texto; navegador; contenido propio |
-
-Es una herramienta orientada a Markdown y componentes Vue; utilizar un agente para escribir el contenido no la convierte en plugin de ese agente
-
-## Qué puedes hacer con él
-
-Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una charla técnica; Explicar un ejemplo de código.
-
-## Cómo funciona
 
 Es una herramienta orientada a Markdown y componentes Vue; utilizar un agente para escribir el contenido no la convierte en plugin de ese agente
 
@@ -93,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; editor de texto; navegador; contenido propio
 - **Etiquetas:** `slides` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Mermaid](mermaid.md) | 91.1k | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. |
 
 ## Alternativas (elige una)
 
