@@ -1,7 +1,7 @@
 """Expande las columnas 'Qué es' y 'Elige si…' de las tablas de escaneo en guias/*.md.
 
 Usa el texto de las fichas editoriales (más rico) y lo comprime a una línea de tabla.
-Luego hay que correr `python tools_check/mirror_to_guia.py` para reconstruir Guia.md.
+Guia.md ya no se reconstruye desde guias/: lo genera `repo-intelligence guide build`.
 """
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from pathlib import Path
 from repo_intelligence.extract.readme import clip_sentence
 
 ROOT = Path(__file__).resolve().parents[1]
-GUIDES = [ROOT / "guias" / f"guia{i}.md" for i in range(1, 6)]
+GUIDES = sorted((ROOT / "guias").glob("guia*.md"))
 
 
 def _norm(name: str) -> str:

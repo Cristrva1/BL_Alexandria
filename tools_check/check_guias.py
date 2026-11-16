@@ -2,7 +2,7 @@
 """Verificación de integridad de las guías (guias/*.md).
 
 Revisa:
-  (a) Nº de fichas por archivo y total (esperado 156).
+  (a) Nº de fichas por archivo y total (esperado 95: guia1 y guia3 se retiraron el 2026-11-16).
   (b) Anclas internas `(#-...)` que no tengan un `###` correspondiente.
   (c) Fichas a las que les falte algún campo obligatorio.
   (d) Filas de tabla con nº de columnas distinto a su cabecera.
@@ -15,7 +15,7 @@ import re, sys, io, pathlib
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 GUIDE_DIR = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "guias")
-EXPECTED_TOTAL = 156
+EXPECTED_TOTAL = 95
 
 REQUIRED_FIELDS = [
     "Qué es", "Por qué destaca", "Cómo funciona", "Instalación",

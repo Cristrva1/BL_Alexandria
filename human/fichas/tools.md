@@ -18,7 +18,7 @@ tools, entrada interna del hub BL_Alexandria que representa sus utilidades auxil
 
 ## ¿Qué hace?
 
-Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `tools_check/` verifica las guías heredadas (`check_guias.py`), reconstruye `Guia.md` desde ellas (`mirror_to_guia.py`) y reconcilia los JSON con su contenido (`reconcile_json.py`).
+Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `tools_check/` verifica las guías heredadas que quedan en `guias/` (`check_guias.py`) y reconcilia los JSON con su contenido (`reconcile_json.py`); `Guia.md` lo genera `repo-intelligence guide build`.
 
 ## ¿Cómo lo hace?
 

@@ -32,7 +32,7 @@ Entornos privados todo-en-uno y herramientas tipo NotebookLM.
 **Casos:** que Claude ejecute comandos bash sin poner en riesgo el sistema · memoria persistente y hooks entre sesiones · sandbox de agentes con auditoría de cada acción.
 **Stack:** Rust (core), TypeScript, Python, Go — **Modelo/API:** Claude Code, Cursor, Zed, Codex, Gemini, Copilot.
 **Elige si:** ejecutas agentes con acceso real a tu máquina y necesitas contención — **Evita si:** solo haces prompts de chat sin ejecución de código.
-**Combina con:** [OpenHands](#-openhands) · [sandbox](#-sandbox) · [hermes-agent](#-hermes-agent)
+**Combina con:** [OpenHands](#-openhands) · [sandbox](../human/fichas/sandbox.md) · [hermes-agent](#-hermes-agent)
 **Repo:** [GitHub](https://github.com/affaan-m/ECC)
 
 ### ⛺ odysseus
@@ -44,7 +44,7 @@ Entornos privados todo-en-uno y herramientas tipo NotebookLM.
 **Casos:** asistente administrativo privado que redacta correos y agenda desde tus documentos · research sobre tu propia base de conocimiento · sustituto self-host de Copilot personal.
 **Stack:** Python, React, PostgreSQL — **Modelo/API:** Ollama/Llama.cpp o APIs comerciales (agnóstico vía configuración).
 **Elige si:** quieres operación privada todo-en-uno y aceptas operar la infra — **Evita si:** prefieres SaaS gestionado sin mantenimiento.
-**Combina con:** [open-notebook](#-open-notebook) · [ECC](#-ecc) · [mem0](#-mem0) · receta [Workspace privado](#-4-workspace-privado-local-soberano)
+**Combina con:** [open-notebook](#-open-notebook) · [ECC](#-ecc) · [mem0](../human/fichas/mem0.md) · receta Workspace privado
 **Repo:** [GitHub](https://github.com/pewdiepie-archdaemon/odysseus)
 
 ### 📓 open-notebook
@@ -82,7 +82,7 @@ Entornos privados todo-en-uno y herramientas tipo NotebookLM.
 **Stack:** Python, MCP — **Modelo/API:** NotebookLM/Google.
 **Limitaciones:** depende de credenciales de Google y de endpoints internos no oficiales; puede romper ante cambios de NotebookLM.
 **Elige si:** integras NotebookLM con tu asistente MCP — **Evita si:** prefieres la API directa en scripts ([notebooklm-py](#-notebooklm-py)).
-**Combina con:** [notebooklm-py](#-notebooklm-py) · [awesome-mcp-servers](#-awesome-mcp-servers)
+**Combina con:** [notebooklm-py](#-notebooklm-py) · [awesome-mcp-servers](../human/fichas/awesome-mcp-servers.md)
 **Repo:** [GitHub](https://github.com/jacob-bd/notebooklm-mcp-cli)
 
 ---
@@ -138,7 +138,7 @@ Diseño asistido, librerías de componentes, animación y 3D.
 **Casos:** describir una pantalla y ver cómo la IA la maqueta y anima · importar sistemas de diseño (Figma, Tailwind) y iterarlos por voz.
 **Stack:** TypeScript/React, Tauri (Rust) — **Modelo/API:** GPT-4o, Claude, Gemini, DeepSeek vía AMR.
 **Elige si:** generas UI desde texto y quieres edición visual — **Evita si:** prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).
-**Combina con:** [tailwindcss](#-tailwindcss) · [heroui](#-heroui) · receta [Web app moderna](#-7-web-app-moderna-con-ia)
+**Combina con:** [tailwindcss](#-tailwindcss) · [heroui](#-heroui) · receta Web app moderna
 **Repo:** [GitHub](https://github.com/nexu-io/open-design)
 
 ### ✏️ penpot
@@ -306,7 +306,7 @@ Diseño asistido, librerías de componentes, animación y 3D.
 **Casos:** consumir APIs en frontend con caché y revalidación · datos en tiempo casi real sin WebSocket · mutaciones optimistas con `useSWRMutation`.
 **Stack:** JavaScript/React — **Modelo/API:** N/A.
 **Elige si:** manejas datos remotos en React y quieres caché simple — **Evita si:** prefieres React Query con su modelo de caché global más rico.
-**Combina con:** [heroui](#-heroui) · receta [Web app moderna](#-7-web-app-moderna-con-ia)
+**Combina con:** [heroui](#-heroui) · receta Web app moderna
 **Repo:** [GitHub](https://github.com/vercel/swr)
 
 ---
@@ -345,7 +345,7 @@ Product analytics, dashboards y librerías de gráficos.
 **Casos:** medir conversiones antes/después de cambios · funnels y session replay para diagnosticar fricción · feature flags y A/B tests controlados.
 **Stack:** Python/Node, ClickHouse, self-host o cloud — **Modelo/API:** complementa apps instrumentadas con agentes.
 **Elige si:** quieres entender el uso real y el comportamiento de usuarios — **Evita si:** solo necesitas BI sobre una BD estática ([metabase](#-metabase)).
-**Combina con:** [metabase](#-metabase) · receta [Marketing de agencia](#-6-marketing-de-agencia)
+**Combina con:** [metabase](#-metabase) · receta Marketing de agencia
 **Repo:** [GitHub](https://github.com/PostHog/posthog)
 
 ### 📊 metabase
@@ -393,7 +393,7 @@ Product analytics, dashboards y librerías de gráficos.
 **Casos:** dashboards con muchísimos puntos · charts rápidos en frontend embebido · monitorización en tiempo real donde el peso importa.
 **Stack:** JavaScript — **Modelo/API:** N/A.
 **Elige si:** priorizas velocidad y peso del bundle — **Evita si:** necesitas tipos de gráfico variados ([echarts](#-echarts)).
-**Combina con:** [swr](#-swr) · receta [Web app moderna](#-7-web-app-moderna-con-ia)
+**Combina con:** [swr](#-swr) · receta Web app moderna
 **Repo:** [GitHub](https://github.com/leeoniya/uPlot)
 
 ### 📊 streamlit
@@ -405,7 +405,7 @@ Product analytics, dashboards y librerías de gráficos.
 **Casos:** prototipo para consultar datos/resultados de un modelo · demos de datos y modelos para stakeholders · dashboards internos rápidos.
 **Stack:** Python — **Modelo/API:** frontend ideal para LLMs/pipelines.
 **Elige si:** quieres una UI de datos al vuelo y prototipos rápidos — **Evita si:** necesitas una app productiva con control fino del frontend ([dash](#-dash)).
-**Combina con:** [dash](#-dash) · [data-science-ipython-notebooks](#-data-science-ipython-notebooks)
+**Combina con:** [dash](#-dash) · data-science-ipython-notebooks
 **Repo:** [GitHub](https://github.com/streamlit/streamlit)
 
 ### 🗂️ awesome-dataviz
@@ -417,7 +417,7 @@ Product analytics, dashboards y librerías de gráficos.
 **Casos:** elegir una librería de charts por lenguaje/plataforma · descubrir recursos y ejemplos de dataviz · comparar alternativas antes de decidir.
 **Stack:** Markdown — **Modelo/API:** N/A.
 **Elige si:** buscas opciones de visualización y aún no has elegido — **Evita si:** ya elegiste tu librería y solo necesitas usarla.
-**Combina con:** [echarts](#-echarts) · [awesome-bigdata](#-awesome-bigdata)
+**Combina con:** [echarts](#-echarts) · [awesome-bigdata](../human/fichas/awesome-bigdata.md)
 **Repo:** [GitHub](https://github.com/javierluraschi/awesome-dataviz)
 
 ---
@@ -475,7 +475,7 @@ Motores de difusión, control/condicionamiento, restauración y rostros.
 **Stack:** Python, GPU, PyTorch, modelos locales — **Modelo/API:** local-first (difusión).
 **Limitaciones:** requiere GPU con VRAM suficiente; los checkpoints pesan varios GB y la curva del grafo de nodos es empinada para nuevos.
 **Elige si:** quieres control total y pipelines reproducibles — **Evita si:** buscas simplicidad inmediata ([Fooocus](#-fooocus)).
-**Combina con:** [ComfyUI_IPAdapter_plus](#-comfyui_ipadapter_plus) · [Real-ESRGAN](#-real-esrgan) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [ComfyUI_IPAdapter_plus](#-comfyui_ipadapter_plus) · [Real-ESRGAN](#-real-esrgan) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/comfyanonymous/ComfyUI)
 
 ### 🖼️ stable-diffusion-webui

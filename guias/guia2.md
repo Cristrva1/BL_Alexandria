@@ -44,7 +44,7 @@
 **Casos:** auditar skills de terceros antes de instalarlas · detectar comandos peligrosos o exfiltración · revisar catálogos descargados en lote.
 **Stack:** Python/Node, Docker — **Modelo/API:** agnóstico; no invoca LLMs, solo analiza archivos.
 **Elige si:** instalas skills externas o curas catálogos — **Evita si:** solo usas skills propias de confianza.
-**Combina con:** [antigravity-awesome-skills](#-antigravity-awesome-skills)
+**Combina con:** [antigravity-awesome-skills](../human/fichas/antigravity-awesome-skills.md)
 **Repo:** [GitHub](https://github.com/NVIDIA/SkillSpector)
 
 ### 🧑 humanizer
@@ -128,7 +128,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Casos:** equipos de agentes que se reparten tareas · flujos de decisión estructurados · agentes que escriben y ejecutan código en bucle.
 **Stack:** Python — **Modelo/API:** OpenAI, Anthropic, Gemini, locales (Ollama); agnóstico vía variables de entorno.
 **Elige si:** construyes multiagente serio en Python — **Evita si:** te basta un agente único o quieres orquestación visual.
-**Combina con:** [langchain](#-langchain) · [langfuse](#-langfuse)
+**Combina con:** [langchain](#-langchain) · [langfuse](../human/fichas/langfuse.md)
 **Repo:** [GitHub](https://github.com/ag2ai/ag2)
 
 ### 👥 crewAI
@@ -140,7 +140,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Casos:** avanzar rápido en flujos de agentes · prototipos colaborativos · pipelines de research/redacción repartidos por rol.
 **Stack:** Python — **Modelo/API:** OpenAI, Anthropic, Gemini, locales; agnóstico vía variables de entorno.
 **Elige si:** quieres velocidad y un modelo mental simple de "equipo" — **Evita si:** necesitas control de bajo nivel o orquestación muy custom.
-**Combina con:** [langchain](#-langchain) · [mem0](#-mem0)
+**Combina con:** [langchain](#-langchain) · [mem0](../human/fichas/mem0.md)
 **Repo:** [GitHub](https://github.com/crewAIInc/crewAI)
 
 ### 🦜 langchain
@@ -152,7 +152,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Casos:** orquestar LLM + herramientas + memoria · base de casi cualquier app de IA · RAG sobre documentos propios.
 **Stack:** Python/JS/TS — **Modelo/API:** prácticamente todos (OpenAI, Anthropic, Google, locales vía Ollama).
 **Elige si:** quieres la base estándar con máximas integraciones — **Evita si:** prefieres mínima abstracción o un solo proveedor sin cambiar.
-**Combina con:** [langflow](#-langflow) · [langfuse](#-langfuse) · [litellm](#-litellm)
+**Combina con:** [langflow](#-langflow) · [langfuse](../human/fichas/langfuse.md) · [litellm](../human/fichas/litellm.md)
 **Repo:** [GitHub](https://github.com/langchain-ai/langchain)
 
 ### 🔗 langflow
@@ -201,7 +201,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Stack:** Python/TS, Docker — **Modelo/API:** OpenAI, Anthropic, Gemini, locales; agnóstico vía variables de entorno.
 **Elige si:** quieres un agente que "haga", no solo hable — **Evita si:** solo necesitas chat/RAG o no puedes correr Docker.
 **Limitaciones:** el sandbox Docker consume recursos y la ejecución de código arbitrario exige cuidar el aislamiento.
-**Combina con:** [ECC](#-ecc) · [sandbox](#-sandbox)
+**Combina con:** [ECC](#-ecc) · [sandbox](../human/fichas/sandbox.md)
 **Repo:** [GitHub](https://github.com/All-Hands-AI/OpenHands)
 
 ### 🦌 deer-flow
@@ -263,7 +263,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Casos:** análisis de un tema con fuentes · reportes en PDF/Markdown · briefing automático antes de una decisión.
 **Stack:** Python, Next.js, FastAPI — **Modelo/API:** GPT-4o, Claude, Gemini + locales; agnóstico vía variables de entorno.
 **Elige si:** necesitas research profundo citado — **Evita si:** solo quieres una respuesta corta o un chat simple.
-**Combina con:** [firecrawl](#-firecrawl) · [browser-use](#-browser-use) · receta [Research profundo](#-3-agente-de-research-profundo)
+**Combina con:** [firecrawl](#-firecrawl) · [browser-use](../human/fichas/browser-use.md) · receta Research profundo
 **Repo:** [GitHub](https://github.com/assafelovic/gpt-researcher)
 
 ### 🔬 autoresearch
@@ -288,7 +288,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Stack:** Rust — **Modelo/API:** Claude Code, Codex (vía sus CLIs).
 **Elige si:** orquestas muchos agentes a escala y quieres rendimiento — **Evita si:** solo necesitas 1-2 agentes o no usas Claude Code/Codex.
 **Limitaciones:** setup pesado (Rust + CLIs de agentes) y caso de uso estrecho; no es una librería de uso general.
-**Combina con:** [mem0](#-mem0) · [ECC](#-ecc)
+**Combina con:** [mem0](../human/fichas/mem0.md) · [ECC](#-ecc)
 **Repo:** [GitHub](https://github.com/ruvnet/ruflo)
 
 ### 🧑‍🤝‍🧑 multica
@@ -301,7 +301,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Stack:** web/TS, Docker, PostgreSQL — **Modelo/API:** múltiples; agnóstico vía variables de entorno.
 **Elige si:** mezclas trabajo humano y agentes en un mismo flujo — **Evita si:** quieres automatización 100% headless o un producto maduro.
 **Limitaciones:** proyecto de nicho y madurez limitada; conviene validar estado antes de apostar por él.
-**Combina con:** [ruflo](#-ruflo) · [chatwoot](#-chatwoot)
+**Combina con:** [ruflo](#-ruflo) · [chatwoot](../human/fichas/chatwoot.md)
 **Repo:** [GitHub](https://github.com/multica-ai/multica)
 
 ### 🐟 MiroFish
@@ -327,7 +327,7 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 **Stack:** Python, React, FastAPI, PostgreSQL — **Modelo/API:** múltiples LLMs (OpenAI, Anthropic, Google, xAI Grok).
 **Elige si:** quieres consenso entre modelos o comparar proveedores — **Evita si:** te basta un único LLM o el coste multi-modelo no es asumible.
 **Limitaciones:** cada consulta se multiplica por el nº de modelos del consejo, elevando coste y latencia.
-**Combina con:** [litellm](#-litellm)
+**Combina con:** [litellm](../human/fichas/litellm.md)
 **Repo:** [GitHub](https://github.com/karpathy/llm-council)
 
 ### 🕸️ awesome-LangGraph
@@ -362,10 +362,10 @@ Crawling, extracción estructurada y navegación web con LLMs.
 | [llm-scraper](#-llm-scraper) | Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. | TS | 🟢 | Quieres salida tipada y validada en stack TS. |
 | [Scrapegraph-ai](#-scrapegraph-ai) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Python | 🟡 | Quieres estructura semántica "by prompt" en Python. |
 | [playwright](#-playwright) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | TS/Python | 🟡 | Necesitas control preciso y reproducible del browser. |
-| [playwright-cli](#-playwright-cli) | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. | TS | 🟢 | Tu agente vive en CLI y el contexto es un recurso caro. |
-| [browser-use](#-browser-use) | Biblioteca Python que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos. | Python | 🟡 | Quieres navegación como humano y tolerancia a cambios de UI. |
-| [instaloader](#-instaloader) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Python | 🟢 | Necesitas datos de Instagram de forma fiable. |
-| [snscrape](#-snscrape) | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | Python | 🟢 | Recolectas varias redes y no te sirve una API oficial. |
+| [playwright-cli](../human/fichas/playwright-cli.md) | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. | TS | 🟢 | Tu agente vive en CLI y el contexto es un recurso caro. |
+| [browser-use](../human/fichas/browser-use.md) | Biblioteca Python que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos. | Python | 🟡 | Quieres navegación como humano y tolerancia a cambios de UI. |
+| [instaloader](../human/fichas/instaloader.md) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Python | 🟢 | Necesitas datos de Instagram de forma fiable. |
+| snscrape | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | Python | 🟢 | Recolectas varias redes y no te sirve una API oficial. |
 
 ### ⚖️ ¿Cuál elegir? — Crawling/scraping
 
@@ -384,7 +384,7 @@ Crawling, extracción estructurada y navegación web con LLMs.
 | **llm-scraper** | Quieres un esquema tipado (Zod) relleno por LLM | Salida validada, integración directa con Playwright | Prefieres extracción semántica por grafos o trabajas en Python |
 | **Scrapegraph-ai** | Extracción semántica "by prompt" en Python | Combina scraping + razonamiento, multi-proveedor | Te basta un esquema simple o el coste de LLM por página es alto |
 | **browser-use** | El agente debe navegar como humano | Control visual, sin selectores fijos | Necesitas reproducibilidad determinista o sin coste de visión |
-| **playwright** / **playwright-cli** | Control determinista del browser | Reproducible, multiplataforma, auto-waits | Quieres que el agente decida por visión ([browser-use](#-browser-use)) |
+| **playwright** / **playwright-cli** | Control determinista del browser | Reproducible, multiplataforma, auto-waits | Quieres que el agente decida por visión ([browser-use](../human/fichas/browser-use.md)) |
 
 ### 🔥 firecrawl
 **Etiquetas:** Ejecución ☁️ API/cloud · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio
@@ -396,7 +396,7 @@ Crawling, extracción estructurada y navegación web con LLMs.
 **Stack:** API/SDK (TS/Python), hosted o self-host, Docker — **Modelo/API:** MCP y agentes; no atado a un proveedor de LLM.
 **Elige si:** alimentas agentes/RAG con web y quieres salida limpia — **Evita si:** solo quieres HTML crudo o el presupuesto de API no encaja.
 **Limitaciones:** la API hosted de pago escala por páginas; el self-host requiere operar Redis, workers y Chromium.
-**Combina con:** [gpt-researcher](#-gpt-researcher) · [crawl4ai](#-crawl4ai) · receta [Research profundo](#-3-agente-de-research-profundo)
+**Combina con:** [gpt-researcher](#-gpt-researcher) · [crawl4ai](#-crawl4ai) · receta Research profundo
 **Repo:** [GitHub](https://github.com/firecrawl/firecrawl)
 
 ### 🕷️ crawl4ai
@@ -493,7 +493,7 @@ Crawling, extracción estructurada y navegación web con LLMs.
 **Casos:** extracción semántica de sitios · datasets útiles para IA · scraping sin selectores, solo describiendo los campos.
 **Stack:** Python, LangChain/LangGraph, Playwright — **Modelo/API:** múltiples LLMs (OpenAI, Anthropic, locales vía Ollama); agnóstico vía variables de entorno.
 **Elige si:** quieres estructura semántica "by prompt" en Python — **Evita si:** te basta un esquema simple ([llm-scraper](#-llm-scraper)) o el coste de LLM por página es alto.
-**Combina con:** [crawl4ai](#-crawl4ai) · [graphrag](#-graphrag)
+**Combina con:** [crawl4ai](#-crawl4ai) · [graphrag](../human/fichas/graphrag.md)
 **Repo:** [GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai)
 
 ### 🎭 playwright
@@ -504,6 +504,6 @@ Crawling, extracción estructurada y navegación web con LLMs.
 **Instalación:** `npm i playwright` o `pip install playwright`, seguido de `playwright install` para los navegadores. Requiere descargar los binarios de Chromium/Firefox/WebKit (~varios cientos de MB).
 **Casos:** testing E2E · scraping dinámico · scripting reproducible · herramienta de agentes vía MCP.
 **Stack:** Node.js o Python (también Java/.NET) — **Modelo/API:** se integra con MCP y agentes; no usa LLM por sí mismo.
-**Elige si:** necesitas control preciso y reproducible del browser — **Evita si:** quieres que el agente navegue por visión ([browser-use](#-browser-use)) o no necesitas un navegador real.
-**Combina con:** [browser-use](#-browser-use) · [crawlee](#-crawlee)
+**Elige si:** necesitas control preciso y reproducible del browser — **Evita si:** quieres que el agente navegue por visión ([browser-use](../human/fichas/browser-use.md)) o no necesitas un navegador real.
+**Combina con:** [browser-use](../human/fichas/browser-use.md) · [crawlee](#-crawlee)
 **Repo:** [GitHub](https://github.com/microsoft/playwright)

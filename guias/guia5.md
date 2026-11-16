@@ -22,7 +22,7 @@
 **Stack:** Python, PyTorch, Hugging Face Hub — **Modelo/API:** modelos open-source (local/self-host), agnóstico del proveedor.
 **Elige si:** programas generación y quieres control total por código — **Evita si:** quieres una UI lista ([Fooocus](#-fooocus)) o grafos nodales ([ComfyUI](#-comfyui)).
 **Limitaciones:** GPU prácticamente obligatoria para latencia razonable; gestionar versiones de pesos y dependencias puede romper pipelines entre releases.
-**Combina con:** [ControlNet](#-controlnet) · [cosmos](#-cosmos)
+**Combina con:** [ControlNet](#-controlnet) · [cosmos](../human/fichas/cosmos.md)
 **Repo:** [GitHub](https://github.com/huggingface/diffusers)
 
 ### 🧭 ControlNet
@@ -84,7 +84,7 @@
 **Casos:** reescalar creativos antiguos · mejorar detalle de assets comprimidos · upscaling de frames de video en pipelines.
 **Stack:** Python, PyTorch, GPU — **Modelo/API:** modelos locales.
 **Elige si:** reescalas imágenes o video a más resolución — **Evita si:** solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar.
-**Combina con:** [GFPGAN](#-gfpgan) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [GFPGAN](#-gfpgan) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/xinntao/Real-ESRGAN)
 
 ### 🧑 LivePortrait
@@ -135,7 +135,7 @@
 **Casos:** generar un clip promocional desde terminal · activos visuales rápidos para agentes · sustituir varias APIs de pago por un único hub.
 **Stack:** Python, Node.js — **Modelo/API:** MuAPI (render en nube) o GPUs locales.
 **Elige si:** quieres un hub de generación multi-modal sin atarte a un SaaS — **Evita si:** ya tienes tu pipeline local ([ComfyUI](#-comfyui)) o necesitas control fino por nodo.
-**Combina con:** [remotion](#-remotion) · receta [Marketing de agencia](#-6-marketing-de-agencia)
+**Combina con:** [remotion](#-remotion) · receta Marketing de agencia
 **Repo:** [GitHub](https://github.com/Anil-matcha/Open-Generative-AI)
 
 ### 🌐 fluxer
@@ -203,7 +203,7 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 **Casos:** `whisper grabacion.mp3 --model medium` para SRT con timestamps · subtitulado automático de video · transcripción de reuniones y podcasts.
 **Stack:** Python 3.9+, PyTorch — **Modelo/API:** local (modelos tiny→large), sin API de pago.
 **Elige si:** quieres la referencia robusta y no te obsesiona la latencia — **Evita si:** necesitas más velocidad ([faster-whisper](#-faster-whisper)) o timings por palabra ([whisperX](#-whisperx)).
-**Combina con:** [whisperX](#-whisperx) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [whisperX](#-whisperx) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/openai/whisper)
 
 ### ⚡ faster-whisper
@@ -227,7 +227,7 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 **Casos:** subtítulos bien ajustados para reels/entrevistas · separar hablantes en podcasts · exportar SRT/VTT con timings de palabra.
 **Stack:** Python, faster-whisper, wav2vec2, pyannote — **Modelo/API:** local.
 **Elige si:** necesitas subtítulos precisos o diarización — **Evita si:** te basta texto plano ([whisper](#-whisper)) o no quieres gestionar tokens de HF.
-**Combina con:** [whisper](#-whisper) · [moviepy](#-moviepy) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [whisper](#-whisper) · [moviepy](#-moviepy) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/m-bain/whisperX)
 
 ### 🔊 supertonic
@@ -290,7 +290,7 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 **Casos:** preparar clips para reels/anuncios sin editor pesado · cortes rápidos sin pérdida · extraer pistas de audio/subtítulos de un contenedor.
 **Stack:** Node.js/Electron, ffmpeg — **Modelo/API:** N/A.
 **Elige si:** cortas material rápido y sin recomprimir — **Evita si:** necesitas edición compositiva, efectos o reencode ([moviepy](#-moviepy)).
-**Combina con:** [moviepy](#-moviepy) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [moviepy](#-moviepy) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/mifi/lossless-cut)
 
 ### 🎬 moviepy
@@ -302,7 +302,7 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 **Casos:** montar videos cortos desde imágenes, subtítulos y voz · overlays y texto por script · ensamblar reels a partir de TTS + imágenes.
 **Stack:** Python, ffmpeg, NumPy/Pillow — **Modelo/API:** capa de ensamblaje final (no genera contenido, lo compone).
 **Elige si:** ensamblas video por código en Python — **Evita si:** prefieres React/programático web ([remotion](#-remotion)) o una UI ([OpenCut](#-opencut)).
-**Combina con:** [whisperX](#-whisperx) · [TTS](#-tts) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [whisperX](#-whisperx) · [TTS](#-tts) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/Zulko/moviepy)
 
 ### ⚛️ remotion
@@ -314,7 +314,7 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 **Casos:** generar variantes de video a escala · plantillas de video programáticas para marketing · animaciones de datos sincronizadas con audio.
 **Stack:** Node.js, React, Chromium, ffmpeg — **Modelo/API:** N/A.
 **Elige si:** generas video a escala con React y quieres variantes parametrizadas — **Evita si:** trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.
-**Combina con:** [Open-Generative-AI](#-open-generative-ai) · receta [Pipeline de Reels](#-2-pipeline-de-reels--video-corto)
+**Combina con:** [Open-Generative-AI](#-open-generative-ai) · receta Pipeline de Reels
 **Repo:** [GitHub](https://github.com/remotion-dev/remotion)
 
 ### 📲 videofy_minimal
@@ -404,7 +404,7 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 **Casos:** convertir carpetas de informes (XLSX/PDF) a `.md` · ingesta de datos para IA · preprocesar documentos antes de indexarlos en un vector store.
 **Stack:** Python 3.8+ — **Modelo/API:** opcional (visión para OCR, Whisper para audio), agnóstico vía variables de entorno.
 **Elige si:** alimentas LLMs con documentos de formatos variados — **Evita si:** ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF).
-**Combina con:** [ppt-master](#-ppt-master) · [open-notebook](#-open-notebook) · receta [Docs → presentaciones](#-9-documentos--presentaciones)
+**Combina con:** [ppt-master](#-ppt-master) · [open-notebook](#-open-notebook) · receta Docs → presentaciones
 **Repo:** [GitHub](https://github.com/microsoft/markitdown)
 
 ### 📊 ppt-master
@@ -416,7 +416,7 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 **Casos:** pasar un informe Markdown a un borrador de slides corporativos en segundos · generar una primera versión editable de una presentación a partir de notas.
 **Stack:** Python, python-pptx — **Modelo/API:** Claude 3.5 Sonnet o GPT-4o para estructurar (vía API key).
 **Elige si:** quieres PPTX editable de Office rápido — **Evita si:** prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.
-**Combina con:** [markitdown](#-markitdown) · receta [Docs → presentaciones](#-9-documentos--presentaciones)
+**Combina con:** [markitdown](#-markitdown) · receta Docs → presentaciones
 **Repo:** [GitHub](https://github.com/hugohe3/ppt-master)
 
 ### 📄 pdfcraft
