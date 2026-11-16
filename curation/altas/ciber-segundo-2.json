@@ -506,7 +506,8 @@
    "alt": [
     "zaproxy"
    ],
-   "ligero": true
+   "ligero": true,
+   "licencia_nota": "Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP."
   },
   {
    "gh": "Neo23x0/Loki",
@@ -646,7 +647,8 @@
    "caveat": "Business Source License 1.1 (IBM) desde Vault 1.15.0: uso productivo permitido salvo ofrecerlo como servicio competidor de pago. No es licencia OSI.",
    "url": "https://www.vaultproject.io/",
    "ligero": true,
-   "alt": []
+   "alt": [],
+   "licencia_nota": "Vault no es open source según la definición OSI: desde la versión 1.15.0 usa Business Source License 1.1 (licenciante IBM). Permite uso en producción salvo ofrecerlo a terceros como servicio que compita con las versiones de pago; cada versión pasa a MPL-2.0 a los 4 años de publicarse. Alternativa con licencia abierta: OpenBao (openbao/openbao, fork MPL-2.0 de la Linux Foundation, ~9.000★), que aún no está en el catálogo."
   },
   {
    "gh": "getsops/sops",

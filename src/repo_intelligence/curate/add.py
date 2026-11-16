@@ -335,6 +335,8 @@ def apply_four_sections(detail: dict, spec: dict, fetched: dict, date: str, lote
     detail["combines_with"] = [c["id"] for c in detail["combina_con"]]
     if rec.get("notas"):
         detail["descripcion_notas"] = rec["notas"].strip()
+    if (spec.get("licencia_nota") or "").strip():
+        detail["licencia_nota"] = spec["licencia_nota"].strip()
     detail["descripcion_fuentes"] = rec["fuentes"]
     detail["descripcion_revision"] = {"batch": f"altas-{lote}", "checked_at": date,
                                       "status": "draft" if spec.get("borrador") else "source_reviewed", "installation_tested": False}

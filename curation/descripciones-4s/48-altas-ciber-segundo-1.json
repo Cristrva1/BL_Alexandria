@@ -210,7 +210,7 @@
    }
   },
   "wpscan": {
-   "que_es": "CLI WPScan (Public Source License; uso comercial SaaS requiere licencia de pago).",
+   "que_es": "Escáner de WordPress (WPScan Public Source License, source-available con cláusula comercial). La base de vulnerabilidades depende de la API de wpscan.com: 25 peticiones/día gratis; Enterprise de pago.",
    "que_hace": "Enumera y detecta vulnerabilidades en sitios WordPress.",
    "como_lo_hace": "gem, brew tap o Docker wpscanteam/wpscan.",
    "combina_con": [
@@ -237,7 +237,8 @@
     "primary_language": "Ruby",
     "checked_at": "2026-11-16",
     "latest_release": "v4.2.0 (2026-10-27)"
-   }
+   },
+   "licencia_nota": "WPScan usa la «WPScan Public Source License»: gratis para pentesting propio o como parte de una auditoría, pero el uso comercial (SaaS, producto o servicio de valor añadido) exige licencia de pago. Los datos de vulnerabilidades vienen de la API de wpscan.com: 25 peticiones/día gratis con token; sin token o agotada la cuota escanea sin datos de vulnerabilidades. La base local Enterprise es de pago."
   },
   "juice-shop": {
    "que_es": "Lab web vulnerable OWASP (MIT).",

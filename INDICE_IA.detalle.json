@@ -135232,7 +135232,7 @@
     ],
     "installation_tested": false
    },
-   "que_es": "Herramienta open source (Apache-2.0) de posture cloud; Prowler Cloud/Private Cloud son productos comerciales aparte.",
+   "que_es": "Auditoría de seguridad multi-cloud de Prowler. Open-core: CLI/SDK Apache-2.0 gratuitos; Prowler Cloud y Private Cloud son de pago.",
    "que_hace": "Ejecuta cientos de checks de configuración y compliance sobre proveedores cloud y exporta resultados.",
    "como_lo_hace": "CLI con `pip install prowler` o Docker; los productos Cloud se contratan aparte (prueba 7 días en prowler.com).",
    "combina_con": [
@@ -135277,7 +135277,8 @@
     "primary_language": "Python",
     "checked_at": "2026-11-16",
     "latest_release": "5.50.0 (2026-11-16)"
-   }
+   },
+   "licencia_nota": "Open-core: la CLI, el SDK y el Local Server son Apache-2.0 y gratuitos (todos los checks y marcos públicos). Prowler Cloud (SaaS, ~99 USD por cuenta cloud al mes, prueba de 7 días) y Prowler Private Cloud añaden escaneos programados, onboarding de organizaciones, Lighthouse AI, attack paths completos, Jira/Slack, SSO y soporte (prowler.com/pricing, consultado 2026-11-16)."
   },
   "checkov": {
    "name": "Checkov",
@@ -136353,7 +136354,7 @@
     ],
     "installation_tested": false
    },
-   "que_es": "OpenCTI Community Edition (Apache-2.0). Enterprise Edition (misma repo, licencia EE) añade actividad, playbooks, SSO GUI, NLP, PIR, etc.",
+   "que_es": "Plataforma de threat intel de Filigran. Open-core: Community Edition Apache-2.0; Enterprise Edition (playbooks, SSO por UI, IA/NLP, PIR, auditoría) con licencia de pago.",
    "que_hace": "Ingiere, relaciona y visualiza conocimiento de amenazas en un grafo STIX.",
    "como_lo_hace": "Docker Compose/Helm según la documentación; la EE se activa con licencia Filigran en settings.",
    "combina_con": [
@@ -136392,7 +136393,8 @@
     "primary_language": "TypeScript",
     "checked_at": "2026-11-16",
     "latest_release": "7.261116.0 (2026-11-16)"
-   }
+   },
+   "licencia_nota": "Open-core: la Community Edition es Apache-2.0 y gratuita. La Enterprise Edition (mismo repositorio, ficheros con cabecera EE) requiere licencia Filigran: registro de actividad, playbooks, segregación por organización, indexado de texto completo, AI Insights/NLP, PIR, SSO configurado desde la UI, campos personalizados, entre otros. Filigran ofrece licencias de prueba y gratuitas para I+D y ONG."
   },
   "sigma": {
    "name": "Sigma",
@@ -138875,7 +138877,7 @@
     "installation_tested": false
    },
    "nivel": "ligero",
-   "que_es": "CLI WPScan (Public Source License; uso comercial SaaS requiere licencia de pago).",
+   "que_es": "Escáner de WordPress (WPScan Public Source License, source-available con cláusula comercial). La base de vulnerabilidades depende de la API de wpscan.com: 25 peticiones/día gratis; Enterprise de pago.",
    "que_hace": "Enumera y detecta vulnerabilidades en sitios WordPress.",
    "como_lo_hace": "gem, brew tap o Docker wpscanteam/wpscan.",
    "combina_con": [
@@ -138908,7 +138910,8 @@
     "primary_language": "Ruby",
     "checked_at": "2026-11-16",
     "latest_release": "v4.2.0 (2026-10-27)"
-   }
+   },
+   "licencia_nota": "WPScan usa la «WPScan Public Source License»: gratis para pentesting propio o como parte de una auditoría, pero el uso comercial (SaaS, producto o servicio de valor añadido) exige licencia de pago. Los datos de vulnerabilidades vienen de la API de wpscan.com: 25 peticiones/día gratis con token; sin token o agotada la cuota escanea sin datos de vulnerabilidades. La base local Enterprise es de pago."
   },
   "juice-shop": {
    "name": "OWASP Juice Shop",
@@ -143926,7 +143929,7 @@
     "installation_tested": false
    },
    "nivel": "ligero",
-   "que_es": "Proxy web propietario con plan Basic gratis (2 proyectos, 7 workflows, 3 plugins).",
+   "que_es": "Proxy de pentest web propietario (no open source) de Caido Labs. Plan Basic gratuito con límites; Individual, Team y Enterprise de pago.",
    "que_hace": "Intercepta, inspecciona y reenvía HTTP/S para AppSec.",
    "como_lo_hace": "Descarga desde el dashboard; este repo es branding/roadmap/plugins.",
    "combina_con": [
@@ -143960,7 +143963,8 @@
     "primary_language": "Shell",
     "checked_at": "2026-11-16",
     "latest_release": "v0.59.1 (2026-11-13)"
-   }
+   },
+   "licencia_nota": "Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP."
   },
   "loki": {
    "name": "LOKI",
@@ -144686,7 +144690,7 @@
     "installation_tested": false
    },
    "nivel": "ligero",
-   "que_es": "Vault (BSL 1.1 para ≥1.15; Change License MPL-2.0 a 4 años). Producto IBM/HashiCorp.",
+   "que_es": "Gestor de secretos de HashiCorp/IBM bajo Business Source License 1.1 desde la 1.15 (source-available, no OSI); cada versión pasa a MPL-2.0 a los 4 años. OpenBao es el fork MPL-2.0.",
    "que_hace": "Almacena, genera y audita secretos y certificados.",
    "como_lo_hace": "Binario oficial / Docker / Helm.",
    "combina_con": [
@@ -144724,7 +144728,8 @@
     "primary_language": "Go",
     "checked_at": "2026-11-16",
     "latest_release": "v2.2.2 (2026-11-12)"
-   }
+   },
+   "licencia_nota": "Vault no es open source según la definición OSI: desde la versión 1.15.0 usa Business Source License 1.1 (licenciante IBM). Permite uso en producción salvo ofrecerlo a terceros como servicio que compita con las versiones de pago; cada versión pasa a MPL-2.0 a los 4 años de publicarse. Alternativa con licencia abierta: OpenBao (openbao/openbao, fork MPL-2.0 de la Linux Foundation, ~9.000★), que aún no está en el catálogo."
   },
   "sops": {
    "name": "SOPS",

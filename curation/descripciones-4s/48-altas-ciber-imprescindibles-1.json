@@ -348,7 +348,7 @@
    }
   },
   "prowler": {
-   "que_es": "Herramienta open source (Apache-2.0) de posture cloud; Prowler Cloud/Private Cloud son productos comerciales aparte.",
+   "que_es": "Auditoría de seguridad multi-cloud de Prowler. Open-core: CLI/SDK Apache-2.0 gratuitos; Prowler Cloud y Private Cloud son de pago.",
    "que_hace": "Ejecuta cientos de checks de configuración y compliance sobre proveedores cloud y exporta resultados.",
    "como_lo_hace": "CLI con `pip install prowler` o Docker; los productos Cloud se contratan aparte (prueba 7 días en prowler.com).",
    "combina_con": [
@@ -387,7 +387,8 @@
     "primary_language": "Python",
     "checked_at": "2026-11-16",
     "latest_release": "5.50.0 (2026-11-16)"
-   }
+   },
+   "licencia_nota": "Open-core: la CLI, el SDK y el Local Server son Apache-2.0 y gratuitos (todos los checks y marcos públicos). Prowler Cloud (SaaS, ~99 USD por cuenta cloud al mes, prueba de 7 días) y Prowler Private Cloud añaden escaneos programados, onboarding de organizaciones, Lighthouse AI, attack paths completos, Jira/Slack, SSO y soporte (prowler.com/pricing, consultado 2026-11-16)."
   },
   "checkov": {
    "que_es": "Escáner de IaC open source de Bridgecrew/Prisma Cloud para detectar misconfigs antes del despliegue.",
@@ -605,7 +606,7 @@
    }
   },
   "opencti": {
-   "que_es": "OpenCTI Community Edition (Apache-2.0). Enterprise Edition (misma repo, licencia EE) añade actividad, playbooks, SSO GUI, NLP, PIR, etc.",
+   "que_es": "Plataforma de threat intel de Filigran. Open-core: Community Edition Apache-2.0; Enterprise Edition (playbooks, SSO por UI, IA/NLP, PIR, auditoría) con licencia de pago.",
    "que_hace": "Ingiere, relaciona y visualiza conocimiento de amenazas en un grafo STIX.",
    "como_lo_hace": "Docker Compose/Helm según la documentación; la EE se activa con licencia Filigran en settings.",
    "combina_con": [
@@ -638,7 +639,8 @@
     "primary_language": "TypeScript",
     "checked_at": "2026-11-16",
     "latest_release": "7.261116.0 (2026-11-16)"
-   }
+   },
+   "licencia_nota": "Open-core: la Community Edition es Apache-2.0 y gratuita. La Enterprise Edition (mismo repositorio, ficheros con cabecera EE) requiere licencia Filigran: registro de actividad, playbooks, segregación por organización, indexado de texto completo, AI Insights/NLP, PIR, SSO configurado desde la UI, campos personalizados, entre otros. Filigran ofrece licencias de prueba y gratuitas para I+D y ONG."
   },
   "sigma": {
    "que_es": "Estándar abierto de reglas de detección; especificación en dominio público y reglas bajo Detection Rule License 1.1.",

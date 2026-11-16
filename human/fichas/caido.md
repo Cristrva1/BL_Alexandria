@@ -10,9 +10,11 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+> ⚠️ **Licencia y costes:** Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP.
+
 ## ¿Qué es?
 
-Proxy web propietario con plan Basic gratis (2 proyectos, 7 workflows, 3 plugins).
+Proxy de pentest web propietario (no open source) de Caido Labs. Plan Basic gratuito con límites; Individual, Team y Enterprise de pago.
 
 ## ¿Qué hace?
 

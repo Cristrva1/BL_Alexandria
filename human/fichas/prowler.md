@@ -10,9 +10,11 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+> ⚠️ **Licencia y costes:** Open-core: la CLI, el SDK y el Local Server son Apache-2.0 y gratuitos (todos los checks y marcos públicos). Prowler Cloud (SaaS, ~99 USD por cuenta cloud al mes, prueba de 7 días) y Prowler Private Cloud añaden escaneos programados, onboarding de organizaciones, Lighthouse AI, attack paths completos, Jira/Slack, SSO y soporte (prowler.com/pricing, consultado 2026-11-16).
+
 ## ¿Qué es?
 
-Herramienta open source (Apache-2.0) de posture cloud; Prowler Cloud/Private Cloud son productos comerciales aparte.
+Auditoría de seguridad multi-cloud de Prowler. Open-core: CLI/SDK Apache-2.0 gratuitos; Prowler Cloud y Private Cloud son de pago.
 
 ## ¿Qué hace?
 

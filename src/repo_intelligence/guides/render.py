@@ -416,6 +416,8 @@ def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
     if not has_four_sections(repo):
         return []
     lines: list[str] = []
+    if (repo.get("licencia_nota") or "").strip():
+        lines += [f"> ⚠️ **Licencia y costes:** {repo['licencia_nota'].strip()}", ""]
     for title, field in (("¿Qué es?", "que_es"), ("¿Qué hace?", "que_hace"), ("¿Cómo lo hace?", "como_lo_hace")):
         lines += [f"## {title}", "", repo[field].strip(), ""]
     rows = []
