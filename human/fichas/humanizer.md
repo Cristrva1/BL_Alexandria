@@ -31,7 +31,7 @@ Es un conjunto de instrucciones para agentes (formato skill). Se instala como pl
 | [Marketing Skills](marketingskills.md) | Pulir los textos de marketing que generan otras skills (combinación por arquitectura). | Genera con marketingskills y pasa el resultado por `/humanizer`. |
 | [postiz-app](postiz-app.md) | Revisar publicaciones antes de programarlas (combinación por arquitectura). | Humaniza primero; programa después. |
 
-**Notas:** Alternativa (elige una): stop-slop.
+**Notas:** Alternativas (elige una): no-ai-slop, stop-slop.
 
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v4.0.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -113,6 +113,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Stop Slop](stop-slop.md) | 18.9k | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
+| [no-ai-slop](no-ai-slop.md) | 13.5k | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. |
 
 ## Enlaces
 

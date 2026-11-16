@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+BLA (Blind LLM Agents), servidor MCP y CLI de defensa para proteger releases de software frente a agentes de ingeniería inversa con IA, como REA. Lo crea @qybaihe. Licencia MIT. Es muy reciente (creado en octubre de 2026, ~6k estrellas, bla-agents-3.4.1).
+
+## ¿Qué hace?
+
+Endurece artefactos JS/TS, Electron ASAR, WASM, Python, binarios nativos, SQLite, modelos GGUF/Safetensors y DEX de Android. Aplica entrelazado de lógica, cifrado de cadenas y detección en tiempo de ejecución de CDP, Node Inspector, Frida o WebDriver. Su objetivo declarado es envenenar, agotar y hacer alucinar a los agentes de análisis. El propio README marca qué defensas están verificadas y cuáles dependen de herramientas externas no probadas.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js: `npx bla-agents harden .` para endurecer un proyecto, o `npx bla-agents setup` para registrar el MCP y la skill en agentes como Claude Code, Cursor, Codex o Gemini CLI. El README pide instalar solo desde el repo o el paquete npm oficial. La ofuscación puede romper builds o depuración y no sustituye a una seguridad real.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [rea](rea.md) | Probar las defensas contra el agente de análisis al que dice responder. | Endurece una build de prueba y analízala con REA en un entorno aislado. |
+| [Claude Code](claude-code.md) | Flujo de defensa guiado por el agente con el MCP y la skill de BLA. | Ejecuta `npx bla-agents setup` y elige Claude Code. |
+| [frida](frida.md) | Verificar que el escudo de ejecución detecta la instrumentación con Frida. (combinación por arquitectura) | Lanza la app endurecida e intenta adjuntar Frida en un entorno de pruebas. |
+
+**Notas:** Sin alternativas declaradas. Mide si la ofuscación compensa su coste de mantenimiento.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada bla-agents-3.4.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/qybaihe/bla/blob/main/README.md) · [2](https://bla.tools/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso |
 | Coste | Sin pago a un modelo en la ruta básica. Las transformaciones locales no requieren LLM; el agente y herramientas externas mantienen sus costes |
 | Equipo | Preparación según la ruta elegida. Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba |
-
-Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso
-
-## Qué puedes hacer con él
-
-Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas.
-
-## Cómo funciona
 
 Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso
 

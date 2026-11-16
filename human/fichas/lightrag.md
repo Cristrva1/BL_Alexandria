@@ -31,6 +31,13 @@ Biblioteca y servidor Python (`pip install "lightrag-hku[api]"`, luego `lightrag
 | [Docling](docling.md) | Servicio de análisis multimodal soportado tras la integración de RAG-Anything. | Arranca el servicio de Docling y apunta LightRAG a él. |
 | [langfuse](langfuse.md) | Trazas integradas desde 2025. | Configura las claves de Langfuse en el entorno del servidor. |
 | [Ragas](ragas.md) | Evaluación integrada; la API devuelve los contextos recuperados para medir precisión. | Después de tener datos indexados. |
+| [DeepTutor](deeptutor.md) | Combinación recíproca: DeepTutor lo enlaza como «Integración nativa de modelos de rol LightRAG». | Orden indicado desde DeepTutor: Configura LightRAG desde ajustes. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[kotaemon](kotaemon.md) · [Milvus](milvus.md) · [MinerU](mineru.md) · [olmOCR](olmocr.md)
 
 **Notas:** Alternativas (elige una): graphrag, ragflow, pageindex. `lightrag-server` escucha en 0.0.0.0 sin autenticación por defecto: actívala antes de usarlo en red.
 

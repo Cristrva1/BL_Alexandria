@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Framework open source (MIT) de Daniel Miessler para aumentar capacidades humanas con IA, organizado en torno a 'patterns' (prompts reutilizables por tarea). Es muy activo (v1.4.576, publicaciones casi diarias) y maduro.
+
+## ¿Qué hace?
+
+Ofrece cientos de patterns para tareas reales, como resumir, extraer ideas, analizar afirmaciones o escribir, que se aplican a texto desde la terminal con tuberías (`pbpaste | fabric -p summarize`). Puede extraer transcripciones de YouTube (vía yt-dlp) y procesar páginas web. Admite 'strategies' de prompting y sesiones. Incluye un servidor REST con documentación Swagger, un modo de compatibilidad con la API de Ollama y una interfaz web.
+
+## ¿Cómo lo hace?
+
+CLI en Go que se instala con binarios, Homebrew (como `fabric-ai`), paquetes de Arch, `go install` o Docker. `fabric --setup` configura proveedores y descarga los patterns. Admite OpenAI (incluido OAuth de suscripción ChatGPT/Codex vía un backend privado, según el README), Anthropic, Ollama, Azure OpenAI y otros. Los patterns son Markdown editables, y se pueden crear patterns propios.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Ejecutar los patterns con modelos locales (proveedor soportado en el README). | Instala Ollama y descarga un modelo; después elígelo en `fabric --setup`. |
+| [yt-dlp](yt-dlp.md) | Extraer transcripciones de vídeos para resumirlas con `fabric -y`; Fabric delega en yt-dlp (opción `--yt-dlp-args`). | Instala yt-dlp en el PATH antes de usar las funciones de YouTube. |
+| [Open WebUI](open-webui.md) | Usar el servidor REST de Fabric en modo de compatibilidad con Ollama como backend de una interfaz de chat. (combinación por arquitectura) (no hay guía conjunta) | Arranca `fabric --serve` con el modo Ollama y apunta el cliente a esa URL. |
+
+**Notas:** Alternativas (elige una): prompts-chat. Ojo: el uso de OAuth de suscripción vía backend privado puede contravenir los términos del proveedor [DATO NO VERIFICADO].
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.4.576 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/danielmiessler/Fabric/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan |
 | Coste | El coste depende del proveedor o la ruta. Ollama y LM Studio permiten modelos locales; API por consumo o backends de Claude Code y Codex con sus cuentas y límites |
 | Equipo | Preparación según la ruta elegida. Go o instalador para tu sistema; proveedor o CLI autenticado; texto breve propio |
-
-Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan
-
-## Qué puedes hacer con él
-
-CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal.
-
-## Por qué destaca
-
-Usos propuestos: Extraer acciones de una reunión; Convertir notas en un esquema de artículo.
-
-## Cómo funciona
 
 Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Go o instalador para tu sistema; proveedor o CLI autenticado; texto breve propio
 - **Etiquetas:** `prompts` `automation` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
 
 ## Alternativas (elige una)
 

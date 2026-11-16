@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Servidor MCP oficial de GitHub que conecta herramientas de IA con la plataforma. Licencia MIT. Es muy activo (~35k estrellas, v2.1.0).
+
+## ¿Qué hace?
+
+Permite a agentes leer repositorios y código, gestionar issues y PR, analizar código, revisar workflows de Actions y automatizar tareas, organizados en toolsets que se pueden activar o desactivar. Tiene modo de solo lectura y políticas de gobierno para organizaciones. Se publica también como módulo Go.
+
+## ¿Cómo lo hace?
+
+Se usa en remoto (alojado por GitHub, con OAuth o token) en hosts compatibles, o en local con Docker (`ghcr.io/github/github-mcp-server`) o el binario y un token personal. Hay guías de instalación para Claude, Codex y otros clientes. Limita los toolsets y permisos del token a lo necesario.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Guía oficial de instalación para Claude. | Sigue `docs/installation-guides/install-claude.md`. |
+| [Codex CLI](codex.md) | Guía oficial de instalación para Codex. | Sigue `docs/installation-guides/install-codex.md`. |
+| [strix](strix.md) | Strix usa el servidor MCP de GitHub como ejemplo de configuración. | Añádelo a `~/.strix/mcp-servers.json`. |
+| [agentes-chat](agentes-chat.md) | Combinación recíproca: agentes-chat lo enlaza como «Conector MCP por URL. (combinación por arquitectura)». | Orden indicado desde agentes-chat: Añade el servidor desde el panel de la organización. |
+| [Awesome GitHub Copilot](awesome-copilot.md) | Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Servidor MCP que pueden usar los agentes de Copilot de la colección (combinación por arquitectura)». | Orden indicado desde Awesome GitHub Copilot: Configura el MCP en Copilot antes de usar agentes que lo requieran. |
+| [GitHub CLI](cli.md) | Combinación recíproca: GitHub CLI lo enlaza como «Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura)». | Orden indicado desde GitHub CLI: Usa `gh` en terminal y el servidor MCP en clientes sin shell. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[goose](goose.md) · [Kilo Code](kilocode.md)
+
+**Notas:** Sin alternativas declaradas. Usa el modo de solo lectura cuando no necesites escribir.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.1.0 (2026-11-03) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/github/github-mcp-server/blob/main/README.md) · [2](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-claude.md) · [3](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-codex.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | La función básica no necesita un modelo. Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales |
 | Coste | El coste depende del proveedor o la ruta. La herramienta no exige modelo propio; el cliente, planes GitHub y acciones del servicio tienen límites y posibles costes |
 | Equipo | Preparación según la ruta elegida. Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota |
-
-Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales
-
-## Qué puedes hacer con él
-
-Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código.
-
-## Por qué destaca
-
-Usos propuestos: Explorar una base de código; Revisar el estado de una pull request.
-
-## Cómo funciona
 
 Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales
 
@@ -85,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota
 - **Etiquetas:** `mcp` `code` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Enlaces
 

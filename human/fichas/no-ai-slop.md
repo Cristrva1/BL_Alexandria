@@ -30,7 +30,7 @@ Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills
 | [Codex CLI](codex.md) | Agente compatible documentado. | Igual que arriba. |
 | [Marketing Skills](marketingskills.md) | Revisar los textos de marketing generados (combinación por arquitectura). | Genera primero y revisa después. |
 
-**Notas:** Se solapa con humanizer y stop-slop: usa uno como revisor principal.
+**Notas:** Alternativas (elige una): humanizer, stop-slop.
 
 Estado en GitHub: activo · último push 2026-09-02 · última versión publicada v1.0.6 (2026-08-01) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -106,6 +106,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; texto propio
 - **Etiquetas:** `escritura` `skill` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Humanizer](humanizer.md) | 69.1k | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
+| [Stop Slop](stop-slop.md) | 18.9k | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
 ## Enlaces
 

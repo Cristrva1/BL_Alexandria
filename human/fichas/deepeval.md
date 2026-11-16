@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+DeepEval, framework open source de evaluación de LLM al estilo pytest, de Confident AI. Licencia Apache-2.0. Es muy activo (~19k estrellas, python-v4.2.4).
+
+## ¿Qué hace?
+
+Evalúa aplicaciones de LLM de extremo a extremo, trayectorias completas de agentes y pasos individuales (llamadas, herramientas, recuperación, traspasos). Incluye decenas de métricas, entre ellas G-Eval, alucinación, RAG y métricas específicas de MCP. Sirve para comparar modelos y prompts y detectar regresiones en CI.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -U deepeval` y se escriben tests con `assert_test` que se ejecutan con `deepeval test run`. Las métricas usan un LLM juez, por lo que requieren clave de API o un modelo local. La plataforma de pago Confident AI añade paneles y trazas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langchain](langchain.md) | Integración documentada con LangChain. | Instrumenta la cadena con el callback de DeepEval. |
+| [LlamaIndex](llama-index.md) | Integración documentada con LlamaIndex. | Evalúa el motor de consulta con las métricas de DeepEval. |
+| [MLflow](mlflow.md) | Métricas de DeepEval como scorers de terceros en MLflow. | Usa DeepEval desde la evaluación de MLflow. |
+| [langfuse](langfuse.md) | Calcular métricas con DeepEval y guardarlas como scores en Langfuse. (combinación por arquitectura) | Ejecuta DeepEval sobre trazas exportadas y sube los scores. |
+
+**Notas:** Alternativas (elige una): ragas, promptfoo. Las métricas con LLM juez cuestan tokens.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada python-v4.2.4 (2026-09-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/confident-ai/deepeval/blob/main/README.md) · [2](https://deepeval.com/integrations/frameworks/langchain) · [3](https://deepeval.com/integrations/frameworks/llamaindex)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema |
 | Coste | El coste depende del proveedor o la ruta. Muchas métricas usan un juez LLM por consumo o uno local Ollama; Confident AI y embeddings tienen configuración propia |
 | Equipo | Preparación según la ruta elegida. Python; casos con respuestas conocidas; modelo evaluador y embeddings si se usan |
-
-El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema
-
-## Qué puedes hacer con él
-
-Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas.
-
-## Por qué destaca
-
-Usos propuestos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG.
-
-## Cómo funciona
 
 El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema
 
@@ -93,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; casos con respuestas conocidas; modelo evaluador y embeddings si se usan
 - **Etiquetas:** `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 

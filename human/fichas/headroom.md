@@ -10,6 +10,35 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Headroom, capa de compresión de contexto para agentes y LLM de Headroom Labs (paquete `headroom-ai` en PyPI y npm). Licencia Apache-2.0. Es muy activo (~80k estrellas, v0.44.0).
+
+## ¿Qué hace?
+
+Comprime salidas de herramientas, logs, fragmentos de RAG, archivos e historial antes de que lleguen al modelo. Según su propia medición ahorra entre un 21 y un 57 % de tokens de entrada en escenarios de agentes y más del 90 % en JSON y logs repetitivos, con poco efecto en prosa. Ofrece SDK, proxy, envoltura de agentes de programación, memoria compartida entre agentes y servidor MCP.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install headroom-ai` (o con extras `[proxy]`/`[all]`) y se usa con `compress(...)` en código, con `headroom proxy --port 8787` o con `headroom wrap claude|codex|cursor|…`. La compresión corre en local; `HEADROOM_OFFLINE=1` evita cualquier llamada de red.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Envoltura nativa: `headroom wrap claude`. | Instala headroom-ai[all] y envuelve el agente. |
+| [litellm](litellm.md) | Integración citada en el README para apps que llaman a LiteLLM. | Comprime los mensajes antes de enviarlos por LiteLLM. |
+| [Context-Engineering](context-engineering.md) | Aplicar técnicas de ingeniería de contexto junto a la compresión. (combinación por arquitectura) | Diseña el contexto y comprime después lo voluminoso. |
+| [codegraph](codegraph.md) | Reducir lecturas de código con un índice semántico. (combinación por arquitectura) | Usa codegraph para localizar y Headroom para comprimir. |
+| [Claude-Code-Usage-Monitor](claude-code-usage-monitor.md) | Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el ahorro de compresión de contexto. (combinación por arquitectura)». | Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo con y sin `headroom wrap claude`. |
+| [MiMo-Code](mimo-code.md) | Combinación recíproca: MiMo-Code lo enlaza como «Comprimir el contexto en sesiones largas. (combinación por arquitectura)». | Orden indicado desde MiMo-Code: Envuelve el agente con Headroom si es compatible. |
+
+**Notas:** Alternativas (elige una): rtk. El número de estrellas crece de forma inusual para un proyecto tan joven; los ahorros son mediciones del propio proyecto.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.44.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/headroomlabs-ai/headroom/blob/main/README.md) · [2](https://docs.headroomlabs.ai/docs)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea |
 | Coste | El coste depende del proveedor o la ruta. La compresión básica no pide clave ni descargar modelo; el agente y funciones opcionales pueden usar otros recursos |
 | Equipo | Preparación según la ruta elegida. Python compatible; contenido de prueba; agente o cliente MCP si lo conectas |
-
-Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea
-
-## Qué puedes hacer con él
-
-Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.
-
-## Por qué destaca
-
-Usos propuestos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión.
-
-## Cómo funciona
 
 Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea
 
@@ -93,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python compatible; contenido de prueba; agente o cliente MCP si lo conectas
 - **Etiquetas:** `automation` `llmops` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Context-Engineering](context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. |
-| [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
 
 ## Alternativas (elige una)
 

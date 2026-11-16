@@ -30,6 +30,14 @@ Skills en formato estándar instalables con `npx skills` (todas o una a una) par
 | [posthog](posthog.md) | Leer métricas de producto para las skills de analítica y conversión (combinación por arquitectura). | Usa credenciales de solo lectura siguiendo su guía de conexión. |
 | [mautic](mautic.md) | Llevar a campañas las secuencias y segmentos que redacta el agente (combinación por arquitectura). | Revisa los textos antes de activarlos. |
 | [open-seo](open-seo.md) | Datos SEO vía MCP para las skills de SEO (combinación por arquitectura). | Conecta el MCP de OpenSEO antes de usar las skills de SEO. |
+| [Humanizer](humanizer.md) | Combinación recíproca: Humanizer lo enlaza como «Pulir los textos de marketing que generan otras skills (combinación por arquitectura)». | Orden indicado desde Humanizer: Genera con marketingskills y pasa el resultado por `/humanizer`. |
+| [linkedin-agent-skill](linkedin-agent-skill.md) | Combinación recíproca: linkedin-agent-skill lo enlaza como «Estrategia y mensajes de marketing como base de los textos (combinación por arquitectura)». | Orden indicado desde linkedin-agent-skill: Independientes. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[no-ai-slop](no-ai-slop.md) · [skills](minimalist-entrepreneur-skills.md) · [Stop Slop](stop-slop.md)
 
 **Notas:** Algunas herramientas recomendadas son socios que financian el proyecto; lo declara en su registro.
 

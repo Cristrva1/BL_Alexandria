@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.
+
+## ¿Qué hace?
+
+Ofrece 21 lecciones que combinan conceptos ('Learn') y código ('Build'): prompts, chat, búsqueda, generación de imágenes, RAG, agentes, fine-tuning, seguridad y más. Cada lección incluye vídeo, texto y ejercicios. Enlaza otros cursos de la serie, como agentes y MCP para principiantes.
+
+## ¿Cómo lo hace?
+
+Los ejemplos están en Python y TypeScript y funcionan con Azure OpenAI, Microsoft Foundry Models y la API de OpenAI. GitHub Models se retiró a finales de julio de 2026 (según el README), así que las lecciones etiquetadas «githubmodels» ya no funcionan tal cual. Una lección de configuración prepara el entorno, por ejemplo con Codespaces. El repositorio pesa mucho por las traducciones, así que el README recomienda un sparse checkout.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI Agents for Beginners](ai-agents-for-beginners.md) | Siguiente curso de la serie, centrado en agentes (enlazado en el README). | Haz primero este curso y continúa con el de agentes. |
+| [MCP for Beginners](mcp-for-beginners.md) | Curso complementario sobre Model Context Protocol (enlazado en el README). | Tómalo cuando llegues a la parte de herramientas y agentes. |
+| [OpenAI Cookbook](openai-cookbook.md) | Recetas más avanzadas para quienes usan la API de OpenAI en los ejercicios. (combinación por arquitectura) | Úsalo como siguiente paso práctico tras las lecciones 'Build'. |
+
+**Notas:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependían de GitHub Models, retirado a finales de julio de 2026; usa Microsoft Foundry Models o la API de OpenAI.
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local |
 | Coste | El coste depende del proveedor o la ruta. Curso abierto; nube y APIs pueden cobrar por uso; Foundry Local ofrece una ruta offline con requisitos de equipo |
 | Equipo | Preparación según la ruta elegida. Navegador; Python para los laboratorios; proveedor o Foundry Local según lección |
-
-No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local
-
-## Qué puedes hacer con él
-
-Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.
-
-## Por qué destaca
-
-Usos propuestos: Empezar a construir una app generativa; Comparar nube con Foundry Local.
-
-## Cómo funciona
 
 No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; Python para los laboratorios; proveedor o Foundry Local según lección
 - **Etiquetas:** `learning` `prompts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [AI Agents for Beginners](ai-agents-for-beginners.md) | 79.6k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
-| [MCP for Beginners](mcp-for-beginners.md) | 17.7k | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. |
 
 ## Alternativas (elige una)
 

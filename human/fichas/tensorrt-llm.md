@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+TensorRT LLM, la librería de NVIDIA para optimizar inferencia de LLM y modelos de generación visual en GPU NVIDIA. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activa (~15k estrellas, v1.2.1).
+
+## ¿Qué hace?
+
+Ofrece kernels especializados, un runtime eficiente y una API de Python (LLM API) construida sobre PyTorch para servir modelos en una o varias GPU. Incluye cuantización, caché KV optimizada, decodificación especulativa y técnicas para MoE a gran escala. Sirve modelos con `trtllm-serve` mediante una API compatible con OpenAI.
+
+## ¿Cómo lo hace?
+
+Se instala con pip o con contenedores NGC y solo funciona en GPU NVIDIA con CUDA. Desde la versión 1.0 tiene política formal de deprecaciones. Recoge telemetría anónima por defecto (se desactiva automáticamente en CI; revisa la documentación para desactivarla).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Enrutar a `trtllm-serve` como endpoint compatible con OpenAI. (combinación por arquitectura) | Lanza trtllm-serve y regístralo en LiteLLM. |
+| [Open WebUI](open-webui.md) | Chat sobre modelos servidos con TensorRT LLM. (combinación por arquitectura) | Configura Open WebUI contra el endpoint de trtllm-serve. |
+| [Transformers](transformers.md) | Partir de checkpoints de Hugging Face para optimizarlos. (combinación por arquitectura) | Descarga el modelo con Transformers/Hub y cárgalo en la LLM API. |
+| [DeepSeek-V3](deepseek-v3.md) | Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado para GPU NVIDIA». | Orden indicado desde DeepSeek-V3: Construye el motor con TensorRT-LLM. |
+| [GPUStack](gpustack.md) | Combinación recíproca: GPUStack lo enlaza como «GPUStack configura TensorRT-LLM en GPU NVIDIA». | Orden indicado desde GPUStack: Elige TensorRT-LLM como motor en el despliegue. |
+
+**Notas:** Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.2.1 (2026-04-20) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA/TensorRT-LLM/blob/main/README.md) · [2](https://nvidia.github.io/TensorRT-LLM/) · [3](https://nvidia.github.io/TensorRT-LLM/commands/trtllm-serve/index.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere API de modelo remota; hardware, energía, nube y licencia del modelo son independientes |
 | Equipo | Preparación según la ruta elegida. GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado |
-
-Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU
-
-## Qué puedes hacer con él
-
-Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados.
-
-## Por qué destaca
-
-Usos propuestos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA.
-
-## Cómo funciona
 
 Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU
 

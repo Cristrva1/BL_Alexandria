@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework multiagente open source (MIT) de FoundationAgents (antes geekan/MetaGPT) que asigna roles a LLMs para que colaboren como un equipo. Tiene mucha repercusión (~71k estrellas), pero poca actividad: la última release es la v0.8.1 de abril de 2024 y el último push, de enero de 2026. Sus autores se han centrado en el producto comercial MGX/Atoms y en investigación (AFlow, SPO, AOT).
+
+## ¿Qué hace?
+
+Recibe un requisito de una línea y simula una empresa de software con roles de product manager, arquitecto, project manager e ingeniero. Produce historias de usuario, análisis competitivo, requisitos, estructuras de datos, APIs, documentos y código. Sigue procedimientos operativos estándar (SOPs) codificados como prompts. El repositorio también incluye código de los artículos de investigación del equipo.
+
+## ¿Cómo lo hace?
+
+Python 3.9 a 3.11 (no admite 3.12+), instalable con `pip install --upgrade metagpt`. Requiere Node.js y pnpm para algunas funciones. Se configura con `~/.metagpt/config2.yaml`, donde se define el proveedor de LLM: OpenAI, Azure, Ollama y otros según la documentación. Por la versión antigua de Python y la falta de releases, conviene aislarlo en un entorno propio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales mediante la configuración de LLM documentada por MetaGPT. | Instala Ollama y define api_type ollama en config2.yaml. |
+| [E2B](e2b.md) | Ejecutar el código generado en un sandbox aislado en lugar del equipo local. (combinación por arquitectura) | Genera el proyecto con MetaGPT y pruébalo dentro de un sandbox de E2B. |
+| [Claude Code](claude-code.md) | Revisar y completar el código que genera MetaGPT, que suele necesitar correcciones. (combinación por arquitectura) | MetaGPT genera el esqueleto; después itera sobre él con un agente de programación. |
+
+**Notas:** Alternativas (elige una): crewai. Mantenimiento bajo: sin releases desde 2024.
+
+Estado en GitHub: activo · último push 2026-01-21 · última versión publicada v0.8.1 (2024-04-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/FoundationAgents/MetaGPT/blob/main/README.md) · [2](https://docs.deepwisdom.ai/main/en/guide/get_started/configuration/llm_api_configuration.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los artefactos generados no acreditan una aplicación lista ni sustituyen pruebas y revisión |
 | Coste | El coste depende del proveedor o la ruta. Cada rol puede llamar varias veces al modelo; Ollama está en la configuración; APIs y herramientas externas cuestan según uso |
 | Equipo | Preparación según la ruta elegida. Python según guía estable; proveedor o Ollama; directorio de salida de prueba |
-
-Los artefactos generados no acreditan una aplicación lista ni sustituyen pruebas y revisión
-
-## Qué puedes hacer con él
-
-Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo.
-
-## Por qué destaca
-
-Usos propuestos: Bocetar requisitos de una app; Simular roles de un equipo de software.
-
-## Cómo funciona
 
 Los artefactos generados no acreditan una aplicación lista ni sustituyen pruebas y revisión
 

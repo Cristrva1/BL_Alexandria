@@ -30,8 +30,16 @@ Se instala como plugin `ecc@ecc` en Claude Code (asistente guiado o comandos nat
 | [Codex CLI](codex.md) | Plugin nativo. | Consulta la matriz de soporte antes de esperar las mismas funciones. |
 | [OpenCode](opencode.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
+| [claude-code-hooks-mastery](claude-code-hooks-mastery.md) | Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Marco que también usa hooks; sirve de ejemplo de producción (combinación por arquitectura)». | Orden indicado desde claude-code-hooks-mastery: No mezcles hooks de ambos sin revisar los conflictos. |
+| [hermes-agent](hermes-agent.md) | Combinación recíproca: hermes-agent lo enlaza como «Skills y configuración reutilizables. (combinación por arquitectura)». | Orden indicado desde hermes-agent: Importa las skills que apliquen. |
 
-**Notas:** El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenHands](openhands.md)
+
+**Notas:** Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.2.3 (2026-10-01) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -107,6 +115,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js compatible;  Git y cliente que elegirá el instalador
 - **Etiquetas:** `automation` `skills` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
+| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 
 ## Enlaces
 

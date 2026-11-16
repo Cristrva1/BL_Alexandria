@@ -1,0 +1,497 @@
+{
+ "batch": "29-imagen-y-video-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "comfyui": {
+   "que_es": "ComfyUI, motor modular de creación con IA basado en grafos de nodos, mantenido por Comfy Org. Licencia GPL-3.0. Es uno de los proyectos de IA generativa más populares (~147k estrellas, v0.45.0).",
+   "que_hace": "Permite construir flujos de generación y edición de imagen, vídeo, audio y 3D conectando nodos, con soporte nativo para modelos abiertos recientes (SD 1.5/SDXL/SD3.5, Flux.1/Flux.2, Qwen Image, Wan 2.1/2.2, LTX-Video, HunyuanVideo…). Carga checkpoints, VAE, LoRA, ControlNet y upscalers, y solo reejecuta las partes del grafo que cambian. Los «Partner nodes» opcionales dan acceso de pago a modelos cerrados.",
+   "como_lo_hace": "Se usa con la app de escritorio (recomendada), la versión portable de Windows, `comfy-cli` o instalación manual con PyTorch para CUDA, ROCm, XPU o Apple Silicon. Funciona sin conexión; `--offline` desactiva los nodos de API de pago. El ecosistema de nodos personalizados es enorme, pero de calidad y seguridad variables.",
+   "combina_con": [
+    {
+     "id": "flux2",
+     "motivo": "Tutoriales oficiales de Comfy para FLUX.2.",
+     "orden_instalacion": "Descarga los pesos de FLUX.2 y carga el flujo de ejemplo."
+    },
+    {
+     "id": "krita-ai-diffusion",
+     "motivo": "El plugin de Krita usa ComfyUI como backend.",
+     "orden_instalacion": "Instala ComfyUI con las extensiones requeridas y conéctalo desde Krita."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Cargar modelos ESRGAN como upscalers.",
+     "orden_instalacion": "Copia los pesos en `models/upscale_models`."
+    },
+    {
+     "id": "hunyuanvideo-1-5",
+     "motivo": "ComfyUI soporta HunyuanVideo 1.5 de forma nativa con flujos de video de ejemplo.",
+     "orden_instalacion": "Descarga los pesos de HunyuanVideo 1.5 y carga el flujo de ejemplo."
+    }
+   ],
+   "notas": "Alternativas (elige una): wan2gp. Revisa los nodos personalizados antes de instalarlos: ejecutan código arbitrario.",
+   "fuentes": [
+    "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+    "https://docs.comfy.org",
+    "https://docs.comfy.org/tutorials/flux/flux-2-dev"
+   ],
+   "github": {
+    "name_with_owner": "Comfy-Org/ComfyUI",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v0.45.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "invokeai": {
+   "que_es": "Invoke (InvokeAI), suite creativa de IA para medios visuales, de Invoke AI. Licencia Apache-2.0. Es madura (~29k estrellas, v6.14.4).",
+   "que_hace": "Ofrece una interfaz web profesional con lienzo unificado para generar, retocar (inpainting/outpainting), usar capas y regiones de control, y crear flujos con nodos. Gestiona modelos, LoRA y embeddings. Está pensado para uso profesional con licencia apta para empresas.",
+   "como_lo_hace": "Se instala con el Launcher oficial en hardware compatible (GPU NVIDIA, AMD o Apple Silicon) o con Docker. Está escrito en Python (PyTorch, diffusers) con frontend React.",
+   "combina_con": [
+    {
+     "id": "diffusers",
+     "motivo": "Ejecutar o entrenar fuera de la UI los mismos modelos. (combinación por arquitectura)",
+     "orden_instalacion": "Usa diffusers para scripts y Invoke para trabajo visual."
+    },
+    {
+     "id": "flux2",
+     "motivo": "Usar modelos FLUX en el lienzo de Invoke. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el modelo desde el gestor de modelos si está soportado."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Ampliar resultados finales. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta y amplía con Real-ESRGAN."
+    }
+   ],
+   "notas": "Alternativas (elige una): krita-ai-diffusion.",
+   "fuentes": [
+    "https://github.com/invoke-ai/InvokeAI/blob/main/README.md",
+    "https://invoke.ai/start-here/installation/"
+   ],
+   "github": {
+    "name_with_owner": "invoke-ai/InvokeAI",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v6.14.4 (2026-11-03)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "krita-ai-diffusion": {
+   "que_es": "Generative AI for Krita, plugin para usar IA generativa dentro de Krita, de @Acly (Interstice). Licencia GPL-3.0. Es maduro (~11k estrellas, v1.53.0).",
+   "que_hace": "Integra generación, inpainting, outpainting, refinado, regiones, control por bocetos y poses, y upscaling en el flujo de pintura de Krita, con selección como máscara. Prioriza precisión y control sobre la generación por texto. Puede usar modelos propios en local o generación en la nube de pago.",
+   "como_lo_hace": "Se instala como plugin de Krita desde la release y, desde el docker del plugin, se configura un servidor ComfyUI local gestionado o uno existente con las extensiones requeridas. En local necesita GPU NVIDIA con al menos 6 GB de VRAM (también admite AMD, Apple Silicon o CPU con menos rendimiento).",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "Backend requerido del plugin.",
+     "orden_instalacion": "Deja que el plugin instale ComfyUI o conecta uno con las extensiones listadas."
+    },
+    {
+     "id": "flux2",
+     "motivo": "Usar modelos FLUX en Krita a través de ComfyUI. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el modelo en ComfyUI y selecciónalo en el plugin."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Upscaling en ComfyUI con modelos ESRGAN. (combinación por arquitectura)",
+     "orden_instalacion": "Instala los modelos de upscale en ComfyUI."
+    }
+   ],
+   "notas": "Alternativas (elige una): invokeai.",
+   "fuentes": [
+    "https://github.com/Acly/krita-ai-diffusion/blob/main/README.md",
+    "https://docs.interstice.cloud/installation",
+    "https://docs.interstice.cloud/comfyui-setup"
+   ],
+   "github": {
+    "name_with_owner": "Acly/krita-ai-diffusion",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v1.53.0 (2026-08-22)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "flux2": {
+   "que_es": "Código oficial de inferencia de los modelos FLUX.2 de Black Forest Labs. El código es Apache-2.0, pero los pesos tienen licencias distintas: los modelos 4B [klein] son Apache-2.0 y los 9B y FLUX.2 [dev] (32B) usan la FLUX Non-Commercial License. Tiene ~2.9k estrellas, sin releases, y su último cambio es de marzo de 2026.",
+   "que_hace": "Genera y edita imágenes con una o varias imágenes de referencia. Incluye FLUX.2 [dev], transformer de flow matching de 32B, y la familia [klein], de generación casi instantánea en GPU de consumo. Ofrece upsampling del prompt local o vía API.",
+   "como_lo_hace": "Se instala con `pip install -e .` y el índice de PyTorch para CUDA. FLUX.2 [dev] a precisión completa requiere una GPU equivalente a H100; hay versiones cuantizadas con Hugging Face para una RTX 4090. La API de pago de BFL es una vía alternativa.",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "Soporte nativo y tutorial oficial en ComfyUI.",
+     "orden_instalacion": "Carga los pesos en ComfyUI y usa el flujo de ejemplo."
+    },
+    {
+     "id": "diffusers",
+     "motivo": "Pipeline FLUX.2 documentado en diffusers.",
+     "orden_instalacion": "Usa el pipeline FLUX.2 con cuantización si tu GPU es pequeña."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Ampliar las imágenes generadas. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa la salida por Real-ESRGAN."
+    },
+    {
+     "id": "invokeai",
+     "motivo": "Combinación recíproca: InvokeAI lo enlaza como «Usar modelos FLUX en el lienzo de Invoke. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde InvokeAI: Instala el modelo desde el gestor de modelos si está soportado.",
+     "reciproca_de": "invokeai"
+    },
+    {
+     "id": "krita-ai-diffusion",
+     "motivo": "Combinación recíproca: Krita AI Diffusion lo enlaza como «Usar modelos FLUX en Krita a través de ComfyUI. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Krita AI Diffusion: Instala el modelo en ComfyUI y selecciónalo en el plugin.",
+     "reciproca_de": "krita-ai-diffusion"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Revisa la licencia de cada peso: varios no permiten uso comercial.",
+   "fuentes": [
+    "https://github.com/black-forest-labs/flux2/blob/main/README.md",
+    "https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux2",
+    "https://docs.comfy.org/tutorials/flux/flux-2-dev"
+   ],
+   "github": {
+    "name_with_owner": "black-forest-labs/flux2",
+    "archived": false,
+    "pushed_at": "2026-03-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "diffusers": {
+   "que_es": "Diffusers, la librería de Hugging Face para modelos de difusión preentrenados. Licencia Apache-2.0. Es muy madura (~35k estrellas, v0.43.0).",
+   "que_hace": "Ofrece pipelines listos para generar imágenes, vídeo y audio, schedulers intercambiables y modelos como bloques para crear sistemas propios. Soporta inferencia y entrenamiento (incluido LoRA), cuantización y descarga de modelos del Hub.",
+   "como_lo_hace": "Se instala con `pip install --upgrade diffusers[torch]` (también hay soporte para Flax). Funciona sobre PyTorch en GPU, CPU o Apple Silicon y descarga pesos desde Hugging Face Hub.",
+   "combina_con": [
+    {
+     "id": "flux2",
+     "motivo": "Pipeline oficial de FLUX.2.",
+     "orden_instalacion": "Carga el modelo con el pipeline FLUX.2."
+    },
+    {
+     "id": "peft",
+     "motivo": "Carga y entrenamiento de LoRA mediante PEFT.",
+     "orden_instalacion": "Instala peft y usa `load_lora_weights`."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Codificadores de texto y componentes compartidos.",
+     "orden_instalacion": "Se instala como dependencia de muchos pipelines."
+    },
+    {
+     "id": "cosmos",
+     "motivo": "Probar modelos de mundo de NVIDIA con pipelines de difusión. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta si existe pipeline para el checkpoint elegido."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/huggingface/diffusers/blob/main/README.md",
+    "https://huggingface.co/docs/diffusers/index",
+    "https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux2"
+   ],
+   "github": {
+    "name_with_owner": "huggingface/diffusers",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.43.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ffmpeg": {
+   "que_es": "FFmpeg, conjunto de librerías y herramientas para procesar contenido multimedia. Licencia mayoritariamente LGPL con componentes opcionales GPL (GitHub muestra NOASSERTION). Es infraestructura fundamental (~67k estrellas en el espejo de GitHub).",
+   "que_hace": "Convierte, corta, filtra, codifica, decodifica y transmite audio, vídeo y subtítulos. Lo forman libavcodec, libavformat, libavfilter, libavdevice, libswresample, libswscale y libavutil, y las herramientas `ffmpeg`, `ffplay` y `ffprobe`. Casi todas las herramientas de vídeo y audio con IA dependen de él.",
+   "como_lo_hace": "Se instala con paquetes del sistema o binarios precompilados, o se compila con `./configure` eligiendo códecs. Los parches se envían al Forgejo del proyecto (code.ffmpeg.org) o a la lista ffmpeg-devel, no por pull requests de GitHub.",
+   "combina_con": [
+    {
+     "id": "whisper",
+     "motivo": "Whisper requiere FFmpeg para leer audio.",
+     "orden_instalacion": "Instala FFmpeg antes de Whisper."
+    },
+    {
+     "id": "yt-dlp",
+     "motivo": "yt-dlp usa FFmpeg para unir y convertir formatos.",
+     "orden_instalacion": "Instala FFmpeg en el PATH."
+    },
+    {
+     "id": "moviepy",
+     "motivo": "MoviePy usa FFmpeg para leer y escribir vídeo.",
+     "orden_instalacion": "Se instala con imageio-ffmpeg o usa el del sistema."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Al distribuir binarios, revisa si incluyen componentes GPL o códecs con patentes.",
+   "fuentes": [
+    "https://github.com/FFmpeg/FFmpeg/blob/master/README.md",
+    "https://ffmpeg.org/documentation.html"
+   ],
+   "github": {
+    "name_with_owner": "FFmpeg/FFmpeg",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "opencut": {
+   "que_es": "OpenCut, editor de vídeo libre para web, escritorio y móvil. Licencia MIT. Es muy popular (~99k estrellas, v0.3.0) y se está reescribiendo desde cero.",
+   "que_hace": "La nueva versión promete una API del editor, plugins de terceros, una base Rust común para escritorio, móvil y navegador, servidor MCP para agentes, modo headless y scripting. Mientras tanto, la versión utilizable es opencut-classic, que también se prueba en opencut.app.",
+   "como_lo_hace": "El desarrollo usa proto (moonrepo) para fijar herramientas. Para editar hoy conviene usar opencut-classic o la versión web.",
+   "combina_con": [
+    {
+     "id": "lossless-cut",
+     "motivo": "Recortes sin recodificar antes de editar. (combinación por arquitectura)",
+     "orden_instalacion": "Corta el material bruto con LosslessCut y edita en OpenCut."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Grabar el material que luego se edita. (combinación por arquitectura)",
+     "orden_instalacion": "Graba con OBS e importa en OpenCut."
+    },
+    {
+     "id": "whisperx",
+     "motivo": "Generar subtítulos con marcas de tiempo. (combinación por arquitectura)",
+     "orden_instalacion": "Transcribe con WhisperX e importa los subtítulos."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. En reescritura: el código del repo principal aún no es un editor utilizable.",
+   "fuentes": [
+    "https://github.com/OpenCut-app/OpenCut/blob/main/README.md",
+    "https://opencut.app"
+   ],
+   "github": {
+    "name_with_owner": "OpenCut-app/OpenCut",
+    "archived": false,
+    "pushed_at": "2026-09-24",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.3.0 (2026-04-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "obs-studio": {
+   "que_es": "OBS Studio, software libre para grabar y transmitir vídeo en directo. Licencia GPL-2.0 o posterior. Es muy maduro (~80k estrellas, 33.0.1).",
+   "que_hace": "Captura, compone, codifica, graba y transmite vídeo con escenas, fuentes, mezclador de audio, filtros y transiciones. Admite plugins, scripting y control remoto por WebSocket. Funciona en Windows, macOS y Linux.",
+   "como_lo_hace": "Se instala con los instaladores oficiales o paquetes de la distribución. Está escrito en C/C++ con Qt y aprovecha codificadores por hardware (NVENC, AMF, QuickSync, Apple VT).",
+   "combina_con": [
+    {
+     "id": "lossless-cut",
+     "motivo": "Recortar grabaciones sin recodificar. (combinación por arquitectura)",
+     "orden_instalacion": "Graba con OBS y recorta con LosslessCut."
+    },
+    {
+     "id": "opencut",
+     "motivo": "Editar las grabaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Importa las grabaciones en el editor."
+    },
+    {
+     "id": "faster-whisper",
+     "motivo": "Subtitular las grabaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Transcribe el audio exportado."
+    },
+    {
+     "id": "rnnoise",
+     "motivo": "Combinación recíproca: rnnoise lo enlaza como «Supresión de ruido en streaming».",
+     "orden_instalacion": "Orden indicado desde rnnoise: Usa el filtro de supresión de ruido RNNoise de OBS.",
+     "reciproca_de": "rnnoise"
+    },
+    {
+     "id": "deep-live-cam",
+     "motivo": "Combinación recíproca: Deep-Live-Cam lo enlaza como «Emitir la cámara virtual. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Deep-Live-Cam: Captura la salida en OBS.",
+     "reciproca_de": "deep-live-cam"
+    },
+    {
+     "id": "rvc",
+     "motivo": "Combinación recíproca: RVC WebUI lo enlaza como «Cambiador de voz en tiempo real para streaming. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde RVC WebUI: Enruta el audio a OBS.",
+     "reciproca_de": "rvc"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/obsproject/obs-studio/blob/master/README.rst",
+    "https://obsproject.com"
+   ],
+   "github": {
+    "name_with_owner": "obsproject/obs-studio",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "GPL-2.0",
+    "primary_language": "C",
+    "latest_release": "33.0.1 (2026-10-29)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "lossless-cut": {
+   "que_es": "LosslessCut, app de escritorio para editar vídeo y audio sin pérdida mediante FFmpeg, de @mifi. Licencia GPL-2.0. Es madura (~46k estrellas, v3.70.2) y la mantiene una sola persona.",
+   "que_hace": "Recorta, corta, une y remuxa vídeo, audio y subtítulos sin recodificar, muy rápido y sin pérdida de calidad. También extrae pistas, cambia metadatos, hace capturas y detecta escenas o silencios. Es útil para hacer un primer corte de material grande de cámara, GoPro o dron.",
+   "como_lo_hace": "Es una app Electron que usa FFmpeg, para Windows, macOS y Linux. Las descargas oficiales son las de GitHub y las tiendas de Mac y Microsoft (de pago en las tiendas); el README advierte de copias en otras webs.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Es una interfaz gráfica de FFmpeg.",
+     "orden_instalacion": "Viene incluido en la app."
+    },
+    {
+     "id": "yt-dlp",
+     "motivo": "Recortar vídeos descargados. (combinación por arquitectura)",
+     "orden_instalacion": "Descarga con yt-dlp y abre el archivo en LosslessCut."
+    },
+    {
+     "id": "whisperx",
+     "motivo": "Subtitular los fragmentos recortados. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta el audio y transcríbelo."
+    },
+    {
+     "id": "moviepy",
+     "motivo": "Automatizar en Python lo que se hace a mano en la app. (combinación por arquitectura)",
+     "orden_instalacion": "Usa MoviePy para lotes repetitivos."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Combinación recíproca: OBS Studio lo enlaza como «Recortar grabaciones sin recodificar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OBS Studio: Graba con OBS y recorta con LosslessCut.",
+     "reciproca_de": "obs-studio"
+    },
+    {
+     "id": "opencut",
+     "motivo": "Combinación recíproca: OpenCut lo enlaza como «Recortes sin recodificar antes de editar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OpenCut: Corta el material bruto con LosslessCut y edita en OpenCut.",
+     "reciproca_de": "opencut"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Descarga solo desde las fuentes oficiales.",
+   "fuentes": [
+    "https://github.com/mifi/lossless-cut/blob/master/README.md",
+    "https://losslesscut.app/docs/faq"
+   ],
+   "github": {
+    "name_with_owner": "mifi/lossless-cut",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.70.2 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "videolingo": {
+   "que_es": "VideoLingo, app para subtitular, traducir y doblar vídeos, de @Huanshere. Licencia Apache-2.0. Es activa (~19k estrellas, v3.2.0).",
+   "que_hace": "Descarga vídeos de YouTube con yt-dlp, transcribe con Qwen3-ASR y ForcedAligner en local (o ElevenLabs y MAI-Transcribe-2), segmenta y traduce subtítulos con un LLM, y dobla con GPT-SoVITS, OpenAI, Edge TTS y otros. Produce archivos de subtítulos y vídeos subtitulados o doblados. La calidad depende del modelo de traducción elegido.",
+   "como_lo_hace": "Tiene una interfaz Streamlit. En Windows, `OneKeyStart.bat` instala uv, Python 3.12 y dependencias; también hay Docker con GPU. El LLM debe ser compatible con OpenAI Chat Completions y devolver el JSON estructurado que exige el flujo.",
+   "combina_con": [
+    {
+     "id": "yt-dlp",
+     "motivo": "Descarga integrada de YouTube.",
+     "orden_instalacion": "Viene incluido; mantenlo actualizado."
+    },
+    {
+     "id": "gpt-sovits",
+     "motivo": "Doblaje con voz clonada.",
+     "orden_instalacion": "Arranca GPT-SoVITS y selecciónalo como TTS."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesamiento de audio y vídeo. (combinación por arquitectura)",
+     "orden_instalacion": "Instala FFmpeg si tu instalación no lo trae."
+    }
+   ],
+   "notas": "Alternativas (elige una): omnivoice-studio. Se retiró whisperx de las combinaciones: ya no es el ASR por defecto y solo aparece en agradecimientos.",
+   "fuentes": [
+    "https://github.com/Huanshere/VideoLingo/blob/main/README.md",
+    "https://videolingo.io"
+   ],
+   "github": {
+    "name_with_owner": "Huanshere/VideoLingo",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.2.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "davinci-resolve-mcp": {
+   "que_es": "DaVinci Resolve MCP Server, servidor MCP que permite a asistentes de IA controlar DaVinci Resolve mediante su API oficial de scripting, de @samuelgursky. Licencia MIT. Es activo (~4k estrellas, v5.2.11).",
+   "que_hace": "Cubre toda la API de scripting y añade ayudas guiadas para montaje, color, medios y renderizado. Incluye un panel de control local en el navegador para inspeccionar el estado de Resolve y analizar clips y planos. En la versión gratuita usa un puente desde el menú de scripts, porque Blackmagic limita el scripting externo a Studio.",
+   "como_lo_hace": "Se instala con `npx davinci-resolve-mcp setup` o clonando y ejecutando `python install.py` (Python 3.10+). En Studio hay que activar el scripting externo «Local». El instalador y el servidor consultan GitHub para buscar actualizaciones.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Cliente MCP configurado por el instalador.",
+     "orden_instalacion": "Ejecuta el setup y elige tu cliente."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Preparar o convertir medios antes de importarlos. (combinación por arquitectura)",
+     "orden_instalacion": "Normaliza los medios con FFmpeg."
+    },
+    {
+     "id": "whisper",
+     "motivo": "Generar subtítulos para importarlos en la línea de tiempo. (combinación por arquitectura)",
+     "orden_instalacion": "Transcribe y añade el SRT al proyecto."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Trabaja sobre copias de proyectos: el agente puede modificar la línea de tiempo.",
+   "fuentes": [
+    "https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "samuelgursky/davinci-resolve-mcp",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v5.2.11 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openrv": {
+   "que_es": "Open RV, visor de imágenes y secuencias para artistas de VFX y animación, de la Academy Software Foundation. Licencia Apache-2.0 con componentes bajo otras licencias (GitHub muestra NOASSERTION). Tiene ~800 estrellas (v4.0.2).",
+   "que_hace": "Reproduce y compara tomas, secuencias de imágenes y vídeo con aceleración por hardware, gestión de color y herramientas de revisión y anotación. Está pensado para integrarse en pipelines de estudio.",
+   "como_lo_hace": "Se compila desde el código (clonado recursivo con submódulos) siguiendo las guías por plataforma; la compilación es compleja. CentOS 7 ya no está soportado desde 2025.",
+   "combina_con": [
+    {
+     "id": "blender",
+     "motivo": "Revisar renders y secuencias exportadas de Blender. (combinación por arquitectura)",
+     "orden_instalacion": "Renderiza a secuencia EXR/PNG y ábrela en Open RV."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Convertir entregas a formatos de revisión. (combinación por arquitectura)",
+     "orden_instalacion": "Transcodifica con FFmpeg cuando haga falta."
+    },
+    {
+     "id": "comfyui",
+     "motivo": "Comparar variantes generadas por IA fotograma a fotograma. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta las secuencias y compáralas en Open RV."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md",
+    "https://www.aswf.io/projects/openrv/"
+   ],
+   "github": {
+    "name_with_owner": "AcademySoftwareFoundation/OpenRV",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C++",
+    "latest_release": "v4.0.2 (2026-08-20)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

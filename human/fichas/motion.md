@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Motion (antes Framer Motion), librería de animación open source para JavaScript, React y Vue, de motiondivision. Licencia MIT. Es madura (~35k estrellas) y tiene oferta de pago (Motion+).
+
+## ¿Qué hace?
+
+Ofrece animaciones declarativas, gestos, layout animations, scroll y transiciones de salida, con aceleración por hardware. Incluye una skill de agente y servidores MCP (`npx motion-ai`) para Claude Code, Cursor, OpenCode y otros.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install motion` (React/JS) o `npm install motion-v` (Vue).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [magicui](magicui.md) | Componentes animados construidos con Motion. | Instala Motion como dependencia. |
+| [react-three-fiber](react-three-fiber.md) | Animar escenas R3F. (combinación por arquitectura) | Usa Motion para la capa UI y R3F para 3D. |
+| [Claude Code](claude-code.md) | Skill y MCP oficiales (`npx motion-ai`). | Ejecuta `npx motion-ai`. |
+| [GSAP](gsap.md) | Combinación recíproca: GSAP lo enlaza como «Combinar en apps React (Motion para la UI, GSAP para la narrativa con scroll). (combinación por arquitectura)». | Orden indicado desde GSAP: Evita animar el mismo elemento con ambas. |
+| [motion-design-skill](motion-design-skill.md) | Combinación recíproca: motion-design-skill lo enlaza como «Igual, en React (combinación por arquitectura)». | Orden indicado desde motion-design-skill: Igual que arriba. |
+| [skills_emil](skills-emil.md) | Combinación recíproca: skills_emil lo enlaza como «Biblioteca de animación de React donde aplicar sus reglas (combinación por arquitectura)». | Orden indicado desde skills_emil: Añádela al proyecto si la skill `pick-ui-library` la elige. |
+
+**Notas:** Alternativas (elige una): animejs.
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/motiondivision/motion/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP busca documentación y metadatos de ejemplos; no concede acceso a recursos premium ni ejecuta una suscripción de Codex por sí mismo |
 | Coste | El coste depende del proveedor o la ruta. El núcleo y MCP de documentación son gratuitos; Motion+, Studio y el modelo del agente tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Proyecto React, JavaScript o Vue; componente de prueba; agente opcional |
-
-El MCP busca documentación y metadatos de ejemplos; no concede acceso a recursos premium ni ejecuta una suscripción de Codex por sí mismo
-
-## Qué puedes hacer con él
-
-Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código.
-
-## Por qué destaca
-
-Usos propuestos: Animar apertura de contenido; Crear una transición de lista.
-
-## Cómo funciona
 
 El MCP busca documentación y metadatos de ejemplos; no concede acceso a recursos premium ni ejecuta una suscripción de Codex por sí mismo
 
@@ -94,13 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto React, JavaScript o Vue; componente de prueba; agente opcional
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [magicui](magicui.md) | 23.3k | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
-| [react-three-fiber](react-three-fiber.md) | 33.7k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
 
 ## Alternativas (elige una)
 

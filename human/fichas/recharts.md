@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Recharts, librería de gráficos para React construida con D3. Licencia MIT. Es madura (~28k estrellas, v3.10.1).
+
+## ¿Qué hace?
+
+Permite componer gráficos (líneas, barras, áreas, tartas, radar, dispersión…) con componentes React declarativos. Renderiza SVG nativo con pocas dependencias. Es la base de los componentes de gráficos de shadcn/ui.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install recharts react-is` y se usa dentro de componentes React. La documentación incluye ejemplos y un storybook.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | Los componentes Chart de shadcn/ui se construyen con Recharts. | Añade el componente chart de shadcn/ui. |
+| [D3.js](d3.md) | Recharts usa módulos de D3 internamente. | No requiere instalación aparte. |
+| [tailwindcss](tailwindcss.md) | Estilar los gráficos con las variables de tema de Tailwind. (combinación por arquitectura) | Pasa colores del tema a los componentes. |
+| [Material UI](mui.md) | Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)». | Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI. |
+| [Mantine](mantine.md) | Combinación recíproca: Mantine lo enlaza como «Mantine Charts está construido sobre Recharts». | Orden indicado desde Mantine: Instala @mantine/charts y recharts; después usa los componentes de gráficos. |
+
+**Notas:** Alternativas (elige una): chart-js, echarts.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.10.1 (2026-07-25) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/recharts/recharts/blob/main/README.md) · [2](https://ui.shadcn.com/docs/components/chart) · [3](https://recharts.github.io)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. El signo $ del ejemplo es un indicador de terminal y no parte del comando; ajusta react-is a la versión de React |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelo ni API; la fuente de datos se presupuesta aparte |
 | Equipo | Preparación según la ruta elegida. React; Node; react-is compatible; datos de prueba |
-
-El signo $ del ejemplo es un indicador de terminal y no parte del comando; ajusta react-is a la versión de React
-
-## Qué puedes hacer con él
-
-Librería de gráficos para React construida con D3, declarativa y componible.
-
-## Por qué destaca
-
-Usos propuestos: Visualizar una serie de ventas; Comparar categorías en un dashboard React.
-
-## Cómo funciona
 
 El signo $ del ejemplo es un indicador de terminal y no parte del comando; ajusta react-is a la versión de React
 
@@ -94,12 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; Node; react-is compatible; datos de prueba
 - **Etiquetas:** `dataviz` `react` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 
 ## Alternativas (elige una)
 

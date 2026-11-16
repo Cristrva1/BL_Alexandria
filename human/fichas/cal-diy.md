@@ -26,13 +26,14 @@ Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | n8n tiene un disparador de Cal.com para reaccionar a reservas, cancelaciones o reprogramaciones; con cal.diy hay que apuntarlo a tu instancia [DATO NO VERIFICADO: compatibilidad con instancia propia]. | cal.diy accesible para n8n y clave de API; después el disparador. |
+| [activepieces](activepieces.md) | Reaccionar a reservas, cancelaciones o reprogramaciones recibiendo los webhooks de cal.diy en un disparador Webhook de Activepieces. (combinación por arquitectura) | Configura el webhook en tu instancia de cal.diy apuntando a la URL del flujo. |
 | [twenty-main](twenty-main.md) | Registrar cada reserva como actividad u oportunidad en el CRM (combinación por arquitectura, con webhooks y un flujo intermedio). | Configura el webhook de cal.diy hacia el flujo que escribe en Twenty. |
 | [Botpress](botpress.md) | Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO]. | Instancia accesible por internet y token de API antes de configurar la integración. |
+| [crm](compai-crm.md) | Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)». | Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado. |
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v6.2.0 (2026-03-01) · licencia declarada MIT (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/calcom/cal.diy/blob/main/README.md) · [2](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/calcom/cal.diy/blob/main/README.md)</sub>
 
 ## Acceso, coste y equipo
 
@@ -97,6 +98,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo
 - **Etiquetas:** `motores` `next-auth` `nextjs` `open-source` `postgresql` `prisma` `t3-stack` `tailwindcss`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Easy!Appointments](easyappointments.md) | 4.5k | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. |
 
 ## Enlaces
 

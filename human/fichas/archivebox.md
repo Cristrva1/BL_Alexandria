@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Aplicación autoalojada para archivar sitios web en varios formatos. Licencia MIT. Es madura y activa (~29k estrellas, v0.9.77).
+
+## ¿Qué hace?
+
+Guarda cada URL como HTML original, SingleFile, captura PNG, PDF, WARC, texto del artículo, medios (con yt-dlp), repositorios git y metadatos. Acepta URLs sueltas o importaciones programadas desde marcadores, historial, redes sociales o RSS, y ofrece interfaz web, CLI y extensión de navegador. Por defecto también envía cada página a archive.org como redundancia (se puede desactivar).
+
+## ¿Cómo lo hace?
+
+Se instala con Docker Compose (recomendado) o `pip install archivebox` en Linux y macOS; usa Chrome, wget, yt-dlp y otras herramientas estándar. Se añaden URLs con `archivebox add` o desde la interfaz. Los archivos quedan en formatos abiertos legibles sin ArchiveBox.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [yt-dlp](yt-dlp.md) | Descarga de audio y vídeo, integrada como extractor. | Viene en la imagen Docker; en pip instala yt-dlp aparte. |
+| [changedetection.io](changedetection.md) | Archivar una nueva copia cuando una página cambia. (combinación por arquitectura) | Usa una notificación de changedetection (webhook) para añadir la URL a ArchiveBox. |
+| [karakeep](karakeep.md) | Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura) | Exporta los enlaces de Karakeep e impórtalos en ArchiveBox. |
+| [instaloader](instaloader.md) | Combinación recíproca: instaloader lo enlaza como «Archivar también las publicaciones en formatos de archivo web. (combinación por arquitectura)». | Orden indicado desde instaloader: Pasa las URLs de las publicaciones a ArchiveBox. |
+
+**Notas:** Sin alternativas declaradas. Desactiva el envío a archive.org si archivas páginas privadas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.77 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ArchiveBox/ArchiveBox/blob/dev/README.md) · [2](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#archivedotorg_enabled)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; almacenamiento, navegador y servidor son recursos propios |
 | Equipo | Preparación según la ruta elegida. Docker o dependencias nativas; directorio persistente; espacio en disco |
-
-El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica
-
-## Qué puedes hacer con él
-
-Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios.
-
-## Por qué destaca
-
-Usos propuestos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación.
-
-## Cómo funciona
 
 El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica
 
@@ -85,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o dependencias nativas; directorio persistente; espacio en disco
 - **Etiquetas:** `scraping` `data` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
 
 ## Enlaces
 
