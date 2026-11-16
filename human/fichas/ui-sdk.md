@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Biblioteca de comportamientos de interfaz (Apache-2.0) de Vercel Labs, pensada para que agentes de IA construyan componentes. Está en **beta** y no tiene releases.
+
+## ¿Qué hace?
+
+Ofrece en `@ui-sdk/core` los comportamientos que necesitan los componentes (navegación por teclado, foco, selección, cierre, popups, arrastrar y soltar) con su ARIA, para componer primitivas propias. Tiene adaptadores para React, Vue, Svelte, Solid y Web Components. La idea es que el desarrollador no escriba estas primitivas, sino que lo haga el agente con la skill oficial.
+
+## ¿Cómo lo hace?
+
+Se instala el núcleo y el adaptador del framework (`npm install @ui-sdk/react @ui-sdk/core`) y se da al agente la skill (`npx skills add vercel-labs/ui --skill ui-sdk`). Al ser beta, su API puede cambiar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente que usa la skill de UI SDK para crear primitivas. (combinación por arquitectura) (la skill se instala con el CLI `skills`, compatible con varios agentes) | Instala la skill en el proyecto y pide al agente los componentes. |
+| [Radix Primitives](radix-primitives.md) | Primitivas accesibles maduras como referencia o alternativa estable mientras UI SDK está en beta. (combinación por arquitectura) | Usa Radix en producción y evalúa UI SDK en paralelo. |
+| [tailwindcss](tailwindcss.md) | Estilar las primitivas sin estilos. (combinación por arquitectura) | Configura Tailwind en el proyecto. |
+
+**Notas:** Sin alternativas declaradas. Beta.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel-labs/ui/blob/main/README.md) · [2](https://ui-sdk.dev/docs)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo en ejecución; el agente que utilice su skill mantiene sus costes |
 | Equipo | Preparación según la ruta elegida. Framework compatible; Node; skill opcional para el agente |
-
-Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API
-
-## Qué puedes hacer con él
-
-Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
-
-## Por qué destaca
-
-Usos propuestos: Crear componentes con comportamientos reutilizables; Guiar a un agente con patrones de interfaz.
-
-## Cómo funciona
 
 Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API
 

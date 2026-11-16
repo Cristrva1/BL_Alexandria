@@ -31,6 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Usa una página de referencia propia y pide recrear una única sección en el proyecto de prueba
 **Qué comprobar:** Puedes comparar referencia y resultado a la misma anchura y revisar el código
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ui`, `playwright`
 
 ## `ant-design`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,typescript
@@ -91,7 +92,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca un chat mínimo y prueba estados de envío, streaming y error con un backend de prueba
 **Qué comprobar:** Los mensajes y estados de la interfaz corresponden a la respuesta del backend
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vercel-ai`, `ui`
+**Combina con:** `vercel-ai`, `langgraph`, `ui`
 **Alternativas (elige una):** `copilotkit`
 
 ## `copilotkit`
@@ -122,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una app de ejemplo y una acción que lea un dato ficticio de la interfaz
 **Qué comprobar:** El agente recibe el contexto y devuelve una acción que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `mastra`
+**Combina con:** `langgraph`, `mastra`, `agent-framework`, `crewai`
 **Alternativas (elige una):** `assistant-ui`
 
 ## `daisyui`
@@ -184,6 +185,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja tres pasos de un proceso y exporta el diagrama como imagen
 **Qué comprobar:** Puedes abrir la imagen y conservar el archivo editable
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `penpot`, `flexoki`
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
 ## `flexoki`
@@ -276,6 +278,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Renderiza primero un JSON escrito a mano con una tarjeta y un botón permitido
 **Qué comprobar:** La interfaz refleja el JSON y rechaza componentes fuera de catálogo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ui`, `remotion`, `vercel-ai`
 
 ## `konva`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=componentes,library,typescript
@@ -457,7 +460,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una app de prueba, cambia un espaciado visualmente y revisa el diff de código
 **Qué comprobar:** El cambio visible corresponde a un cambio identificable en los archivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `ui`
+**Combina con:** `tailwindcss`, `supabase`, `ui`
 **Alternativas (elige una):** `open-design`
 
 ## `open-design`
@@ -493,7 +496,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre un proyecto de prueba y pide una pantalla pequeña antes de activar generación de medios
 **Qué comprobar:** Puedes revisar el artefacto y el agente o proveedor que lo generó
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`, `heroui`
+**Combina con:** `claude-code`, `design.md`, `hyperframes`, `ollama`
 **Alternativas (elige una):** `onlook`
 
 ## `openui`
@@ -524,7 +527,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Define una tarjeta permitida y pide al modelo una respuesta que la utilice
 **Qué comprobar:** El renderer muestra solo componentes del catálogo esperado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `copilotkit`
+**Combina con:** `langgraph`, `langchain`, `copilotkit`
 
 ## `penpot`
 role=app · exec=local · setup=heavy · mcp=True · prov=— · tags=design,docker
@@ -554,7 +557,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja una tarjeta con texto y botón y comparte un prototipo de prueba
 **Qué comprobar:** Se pueden inspeccionar componentes y recorrer la interacción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `plasmic`
+**Combina con:** `claude-code`, `excalidraw`, `tailwindcss`
 
 ## `plasmic`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=design,typescript
@@ -584,7 +587,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Diseña una sección de prueba y cárgala desde la aplicación conectada
 **Qué comprobar:** Ves el contenido visual y puedes inspeccionar la integración en el código
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`
+**Combina con:** `tailwindcss`, `ui`, `supabase`
 
 ## `radix-primitives`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,typescript
@@ -675,7 +678,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga una captura de una interfaz propia mínima y compara el HTML generado con ella
 **Qué comprobar:** Puedes revisar código y vista previa y señalar diferencias
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tailwindcss`
+**Combina con:** `tailwindcss`, `ui`, `playwright`
 **Alternativas (elige una):** `stitch-sdk`
 
 ## `stitch-sdk`
@@ -706,7 +709,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una pantalla sencilla con texto ficticio y guarda HTML y captura
 **Qué comprobar:** Puedes abrir ambos archivos y revisar el resultado generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `stitch-skills`
+**Combina con:** `vercel-ai`, `stitch-skills`, `design.md`
 **Alternativas (elige una):** `screenshot-to-code`
 
 ## `swr`
@@ -797,6 +800,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Muestra un lienzo y añade una forma personalizada en un proyecto de prueba
 **Qué comprobar:** Puedes mover, editar y guardar el estado de la forma
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vercel-ai`, `ui`, `supabase`
 **Alternativas (elige una):** `excalidraw`
 
 ## `ui`
@@ -858,3 +862,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Construye una primitiva con comportamiento de foco y prueba abrir y cerrar su contenido
 **Qué comprobar:** Puedes verificar recuperación de foco y estados interactivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `radix-primitives`, `tailwindcss`

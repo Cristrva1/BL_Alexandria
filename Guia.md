@@ -2253,6 +2253,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/excalidraw/excalidraw/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explicar un flujo a un equipo; Bocetar una interfaz antes de construirla — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [penpot](human/fichas/penpot.md) · [flexoki](human/fichas/flexoki.md)<br>
 **Más:** [ficha completa](human/fichas/excalidraw.md) · [GitHub](https://github.com/excalidraw/excalidraw)
 
 #### 🎨 open-design
@@ -2266,7 +2267,7 @@ echo "OD_API_TOKEN=$(openssl rand -hex 32)" >> .env
 docker compose up -d
 # open http://127.0.0.1:7456` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un dashboard; Iterar una interfaz con feedback de equipo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [heroui](human/fichas/heroui.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [design.md](human/fichas/design-md.md) · [HyperFrames](human/fichas/hyperframes.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/open-design.md) · [GitHub](https://github.com/nexu-io/open-design)
 
 #### ✏️ penpot
@@ -2275,7 +2276,7 @@ docker compose up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://help.penpot.app/technical-guide/getting-started/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una interfaz antes de programarla; Colaborar en un sistema de diseño — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [plasmic](human/fichas/plasmic.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Excalidraw](human/fichas/excalidraw.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
 **Más:** [ficha completa](human/fichas/penpot.md) · [GitHub](https://github.com/penpot/penpot)
 
 #### ✏️ tldraw
@@ -2284,6 +2285,7 @@ docker compose up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm i tldraw` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una pizarra de colaboración; Crear un editor de diagramas propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [ui](human/fichas/ui.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/tldraw.md) · [GitHub](https://github.com/tldraw/tldraw)
 
 #### ✏️ Onlook
@@ -2292,7 +2294,7 @@ docker compose up -d
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.onlook.com/developers/running-locally); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [ui](human/fichas/ui.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [supabase](human/fichas/supabase.md) · [ui](human/fichas/ui.md)<br>
 **Más:** [ficha completa](human/fichas/onlook.md) · [GitHub](https://github.com/onlook-dev/onlook)
 
 #### 🧱 plasmic
@@ -2301,7 +2303,7 @@ docker compose up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm install @plasmicapp/loader-nextjs` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Permitir editar contenido visual de una web; Prototipar una página conectada a React — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [ui](human/fichas/ui.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/plasmic.md) · [GitHub](https://github.com/plasmicapp/plasmic)
 
 ### UI generada con IA y frontends para agentes
@@ -2312,7 +2314,7 @@ docker compose up -d
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx copilotkit@latest create` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir asistencia contextual a una app; Mostrar componentes generados a partir de respuestas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [Microsoft Agent Framework](human/fichas/agent-framework.md) · [crewAI](human/fichas/crewai.md)<br>
 **Más:** [ficha completa](human/fichas/copilotkit.md) · [GitHub](https://github.com/CopilotKit/CopilotKit)
 
 #### 🪄 screenshot-to-code
@@ -2321,7 +2323,7 @@ docker compose up -d
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/abi/screenshot-to-code/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [ui](human/fichas/ui.md) · [playwright](human/fichas/playwright.md)<br>
 **Más:** [ficha completa](human/fichas/screenshot-to-code.md) · [GitHub](https://github.com/abi/screenshot-to-code)
 
 #### 📚 ai-website-cloner-template
@@ -2330,6 +2332,7 @@ docker compose up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [ui](human/fichas/ui.md) · [playwright](human/fichas/playwright.md)<br>
 **Más:** [ficha completa](human/fichas/ai-website-cloner-template.md) · [GitHub](https://github.com/JCodesMore/ai-website-cloner-template)
 
 #### 📚 json-render
@@ -2339,6 +2342,7 @@ docker compose up -d
 **Comando documentado:** `# for React
 npm install @json-render/core @json-render/react` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear interfaces dinámicas desde datos; Acotar la UI que puede proponer un modelo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ui](human/fichas/ui.md) · [remotion](human/fichas/remotion.md) · [AI SDK (Vercel)](human/fichas/vercel-ai.md)<br>
 **Más:** [ficha completa](human/fichas/json-render.md) · [GitHub](https://github.com/vercel-labs/json-render)
 
 #### 🪄 OpenUI
@@ -2347,7 +2351,7 @@ npm install @json-render/core @json-render/react` (comprobar los pasos completos
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx @openuidev/cli@latest create --name genui-chat-app` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear respuestas de chat con interfaz; Construir formularios generados y acotados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [CopilotKit](human/fichas/copilotkit.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langchain](human/fichas/langchain.md) · [CopilotKit](human/fichas/copilotkit.md)<br>
 **Más:** [ficha completa](human/fichas/openui.md) · [GitHub](https://github.com/thesysdev/openui)
 
 #### 🪄 assistant-ui
@@ -2356,7 +2360,7 @@ npm install @json-render/core @json-render/react` (comprobar los pasos completos
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx assistant-ui@latest create   # new project` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un chat para una app; Añadir herramientas y adjuntos a una conversación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [ui](human/fichas/ui.md)<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [LangGraph](human/fichas/langgraph.md) · [ui](human/fichas/ui.md)<br>
 **Más:** [ficha completa](human/fichas/assistant-ui.md) · [GitHub](https://github.com/assistant-ui/assistant-ui)
 
 #### 📚 UI SDK (Vercel)
@@ -2365,6 +2369,7 @@ npm install @json-render/core @json-render/react` (comprobar los pasos completos
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install @ui-sdk/react @ui-sdk/core` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear componentes con comportamientos reutilizables; Guiar a un agente con patrones de interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Radix Primitives](human/fichas/radix-primitives.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
 **Más:** [ficha completa](human/fichas/ui-sdk.md) · [GitHub](https://github.com/vercel-labs/ui)
 
 #### 🪄 Stitch SDK
@@ -2373,7 +2378,7 @@ npm install @json-render/core @json-render/react` (comprobar los pasos completos
 **Acceso:** API de IA necesaria · Coste por confirmar<br>
 **Comando documentado:** `npm install @google/stitch-sdk` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar borradores de UI; Conectar herramientas Stitch a un agente mediante proxy MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Stitch Skills](human/fichas/stitch-skills.md)<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [Stitch Skills](human/fichas/stitch-skills.md) · [design.md](human/fichas/design-md.md)<br>
 **Más:** [ficha completa](human/fichas/stitch-sdk.md) · [GitHub](https://github.com/google-labs-code/stitch-sdk)
 
 ---

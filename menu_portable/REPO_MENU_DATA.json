@@ -33676,7 +33676,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "ui",
+        "playwright"
+      ],
       "alt": []
     },
     {
@@ -33912,6 +33916,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "vercel-ai",
+        "langgraph",
         "ui"
       ],
       "alt": [
@@ -34035,7 +34040,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "langgraph",
-        "mastra"
+        "mastra",
+        "agent-framework",
+        "crewai"
       ],
       "alt": [
         "assistant-ui"
@@ -34267,7 +34274,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar un flujo a un equipo; Bocetar una interfaz antes de construirla",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "penpot",
+        "flexoki"
+      ],
       "alt": [
         "tldraw",
         "mermaid"
@@ -34619,7 +34630,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear interfaces dinámicas desde datos; Acotar la UI que puede proponer un modelo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ui",
+        "remotion",
+        "vercel-ai"
+      ],
       "alt": []
     },
     {
@@ -35321,6 +35336,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "tailwindcss",
+        "supabase",
         "ui"
       ],
       "alt": [
@@ -35443,8 +35459,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar un dashboard; Iterar una interfaz con feedback de equipo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "tailwindcss",
-        "heroui"
+        "claude-code",
+        "design.md",
+        "hyperframes",
+        "ollama"
       ],
       "alt": [
         "onlook"
@@ -35566,6 +35584,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear respuestas de chat con interfaz; Construir formularios generados y acotados",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "langgraph",
+        "langchain",
         "copilotkit"
       ],
       "alt": []
@@ -35684,7 +35704,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una interfaz antes de programarla; Colaborar en un sistema de diseño",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "plasmic"
+        "claude-code",
+        "excalidraw",
+        "tailwindcss"
       ],
       "alt": []
     },
@@ -35797,7 +35819,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Permitir editar contenido visual de una web; Prototipar una página conectada a React",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "tailwindcss"
+        "tailwindcss",
+        "ui",
+        "supabase"
       ],
       "alt": []
     },
@@ -36154,7 +36178,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "tailwindcss"
+        "tailwindcss",
+        "ui",
+        "playwright"
       ],
       "alt": [
         "stitch-sdk"
@@ -36277,7 +36303,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar borradores de UI; Conectar herramientas Stitch a un agente mediante proxy MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "stitch-skills"
+        "vercel-ai",
+        "stitch-skills",
+        "design.md"
       ],
       "alt": [
         "screenshot-to-code"
@@ -36632,7 +36660,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir una pizarra de colaboración; Crear un editor de diagramas propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vercel-ai",
+        "ui",
+        "supabase"
+      ],
       "alt": [
         "excalidraw"
       ]
@@ -36876,7 +36908,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear componentes con comportamientos reutilizables; Guiar a un agente con patrones de interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "radix-primitives",
+        "tailwindcss"
+      ],
       "alt": []
     },
     {

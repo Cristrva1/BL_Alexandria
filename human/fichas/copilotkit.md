@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Stack open source (MIT) para poner agentes de IA frente a usuarios reales en React, de CopilotKit, el equipo creador del protocolo AG-UI. Es muy activo (v1.88.0). Tiene un producto de pago, CopilotKit Intelligence, que añade memoria entre sesiones y aprendizaje continuo.
+
+## ¿Qué hace?
+
+Conecta un agente ya construido en cualquier framework con una interfaz de chat, UI generativa, estado compartido entre agente y app, y human-in-the-loop. Soporta AG-UI 1.0, A2UI y MCP Apps. Tiene integraciones documentadas con LangGraph, Mastra, CrewAI, Google ADK, AG2, Agno, LlamaIndex, Strands y Microsoft Agent Framework, entre otros.
+
+## ¿Cómo lo hace?
+
+Paquetes npm (`@copilotkit/react-core`, `@copilotkit/runtime`), un asistente de onboarding que puede ejecutar un agente de programación (`npx copilotkit@latest onboard start`) y plantillas (`npx copilotkit@latest create`). El runtime se despliega en tu backend y la UI va en React.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Backend de agente con integración oficial documentada. | Despliega el grafo y conecta CopilotKit a su endpoint. |
+| [Mastra](mastra.md) | Agentes TypeScript con integración oficial documentada. | Configura Mastra y registra el agente en el runtime de CopilotKit. |
+| [Microsoft Agent Framework](agent-framework.md) | Agentes de Microsoft Agent Framework con integración documentada. | Expón el agente y conéctalo vía AG-UI. |
+| [crewAI](crewai.md) | Equipos de agentes CrewAI con integración documentada. | Despliega el crew y conéctalo al runtime. |
+
+**Notas:** Alternativas (elige una): assistant-ui.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.88.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CopilotKit/CopilotKit/blob/main/README.md) · [2](https://docs.copilotkit.ai/agentic-protocols/ag-ui) · [3](https://docs.copilotkit.ai/mastra) · [4](https://docs.copilotkit.ai/langgraph) · [5](https://docs.copilotkit.ai/microsoft-agent-framework) · [6](https://docs.copilotkit.ai/crewai-crews)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. El prompt de onboarding ayuda a un agente a instalar; no demuestra que el plan de Claude Code o Codex ejecute el backend del producto |
 | Coste | El coste depende del proveedor o la ruta. La interfaz y el protocolo no incluyen inferencia; backend, modelos y servicios gestionados se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Node; framework compatible; backend de agente; proveedor del modelo |
-
-El prompt de onboarding ayuda a un agente a instalar; no demuestra que el plan de Claude Code o Codex ejecute el backend del producto
-
-## Qué puedes hacer con él
-
-Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI.
-
-## Por qué destaca
-
-Usos propuestos: Añadir asistencia contextual a una app; Mostrar componentes generados a partir de respuestas.
-
-## Cómo funciona
 
 El prompt de onboarding ayuda a un agente a instalar; no demuestra que el plan de Claude Code o Codex ejecute el backend del producto
 
@@ -94,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; framework compatible; backend de agente; proveedor del modelo
 - **Etiquetas:** `ui` `agents` `react` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [Mastra](mastra.md) | 29.5k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
 
 ## Alternativas (elige una)
 
