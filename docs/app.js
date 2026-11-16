@@ -619,6 +619,25 @@
       <details class="guided-help"><summary>Necesito ayuda paso a paso con esta herramienta</summary><p>Copia este encargo en Claude Code, Codex o tu asistente. Que te ayude a instalar no significa que la aplicación use su suscripción.</p><label for="help-prompt">Encargo para tu asistente</label><textarea id="help-prompt" rows="9" readonly>${esc(prompt)}</textarea><button class="btn small" type="button" data-action="copy" data-text="${esc(prompt)}">Copiar encargo</button><p class="copy-status" role="status"></p></details></section>`;
   }
 
+  function hasFour(item) {
+    return Boolean(item.que_es && item.que_hace && item.como_lo_hace && (item.combina_con || []).length);
+  }
+
+  function fourSections(item) {
+    if (!hasFour(item)) return "";
+    const combos = item.combina_con.filter((combo) => repo(combo.id)).map((combo) => `<li><a href="#/repo/${encodeURIComponent(combo.id)}"><strong>${esc(repo(combo.id).name)}</strong></a>: ${esc(combo.motivo || "")}${combo.orden_instalacion ? `<br><span class="meta">Orden y cuidados: ${esc(combo.orden_instalacion)}</span>` : ""}</li>`).join("");
+    const sources = (item.descripcion_fuentes || []).map((url, index) => `<a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index + 1}</a>`).join(" · ");
+    const checked = (item.descripcion_revision || {}).checked_at || "fecha por confirmar";
+    return `<section id="repo-four" class="section">
+        <h2>¿Qué es?</h2><p>${esc(item.que_es)}</p>
+        <h2>¿Qué hace?</h2><p>${esc(item.que_hace)}</p>
+        <h2>¿Cómo lo hace?</h2><p>${esc(item.como_lo_hace)}</p>
+        <h2>¿Con qué otros repos se combina?</h2><ul>${combos}</ul>
+        ${item.descripcion_notas ? `<p><strong>Notas.</strong> ${esc(item.descripcion_notas)}</p>` : ""}
+        <p class="meta">Descripción redactada a partir de la documentación del autor (revisada el ${esc(checked)}); no se instaló ni ejecutó.${sources ? ` ${sources}` : ""}</p>
+      </section>`;
+  }
+
   function renderRepo(id) {
     const item = repo(id);
     if (!item) return missing("Ese repo no está en la biblioteca.", "#/explorar");
@@ -643,17 +662,18 @@
       ${dek}
       ${badges(item)}
       <nav class="repo-toc" aria-label="En esta ficha"><a href="#/repo/${encodeURIComponent(item.id)}?section=examples">Ver ejemplos</a><a href="#/repo/${encodeURIComponent(item.id)}?section=access">Ver acceso y costes</a><a href="#/repo/${encodeURIComponent(item.id)}?section=start">Ir a los primeros pasos</a></nav>
+      ${fourSections(item)}
       ${item.practical_examples?.length?`<section id="repo-examples" class="section"><h2>Para qué puedes usarlo</h2><ul>${item.practical_examples.map(example=>`<li>${esc(example.scenario)}</li>`).join("")}</ul><p class="meta">Ejemplos de uso propuestos para orientar tu elección.</p></section>`:""}
       ${accessSection(item)}
-      ${body?`<div class="section">${body}</div>`:""}
-      ${item.how ? `<section class="section"><h2>Qué conviene saber</h2><p>${esc(item.how)}</p></section>` : ""}
+      ${body&&!hasFour(item)?`<div class="section">${body}</div>`:""}
+      ${item.how&&!hasFour(item) ? `<section class="section"><h2>Qué conviene saber</h2><p>${esc(item.how)}</p></section>` : ""}
       ${skill}
       ${startSection(item)}
       ${item.areas?.length?`<section class="section"><h2>Encuéntralo por tema</h2><ul class="access-links" role="list">${item.areas.map(id=>areaById[id]).filter(Boolean).map(area=>`<li><a href="#/area/${esc(area.id)}">${esc(area.title)}</a></li>`).join("")}</ul></section>`:""}
       <section class="section grid-2">
         <div>
           <h2>Combina con</h2>
-          <p class="meta">${esc(catalog.copy.combine_note)}</p>
+          <p class="meta">${esc(hasFour(item) ? "Detalle y orden de instalación en «¿Con qué otros repos se combina?»." : catalog.copy.combine_note)}</p>
           ${refLinks(item.combine_refs)}
         </div>
         <div>

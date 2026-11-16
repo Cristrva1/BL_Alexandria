@@ -12607,7 +12607,9 @@
       "combines_with": [
         "n8n-mcp",
         "n8n-skills",
-        "evolution-api"
+        "evolution-api",
+        "ollama",
+        "qdrant"
       ],
       "alt": [
         "activepieces",
@@ -12781,7 +12783,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "n8n-skills"
+        "n8n-skills",
+        "claude-code",
+        "mcp-inspector"
       ],
       "alt": []
     },
@@ -21367,8 +21371,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar artículos para RAG; Extraer datos estructurados con un modelo local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "firecrawl",
-        "gpt-researcher"
+        "ollama",
+        "qdrant",
+        "n8n"
       ],
       "alt": [
         "jina-reader"
@@ -28256,9 +28261,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Guardar embeddings de documentos; Combinar similitud y filtros de metadatos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "docling",
+        "n8n",
         "llama-index",
-        "langchain",
-        "n8n"
+        "langchain"
       ],
       "alt": [
         "milvus",
@@ -32669,7 +32675,8 @@
       "combines_with": [
         "open-webui",
         "n8n",
-        "anything-llm"
+        "litellm",
+        "crawl4ai"
       ],
       "alt": [
         "llama-cpp",
@@ -32915,8 +32922,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "searxng",
-        "litellm"
+        "litellm",
+        "searxng"
       ],
       "alt": [
         "librechat",
@@ -42213,7 +42220,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "llama-index",
-        "ragflow",
+        "haystack",
         "qdrant"
       ],
       "alt": [
@@ -53257,7 +53264,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "chatwoot"
+        "chatwoot",
+        "typebot",
+        "dify"
       ],
       "alt": [
         "whatsapp-web-js",
@@ -54312,7 +54321,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "evolution-api",
-        "novu"
+        "n8n"
       ],
       "alt": []
     },
@@ -66376,9 +66385,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain",
-        "langfuse",
-        "llm-council"
+        "ollama",
+        "open-webui",
+        "langfuse"
       ],
       "alt": []
     },

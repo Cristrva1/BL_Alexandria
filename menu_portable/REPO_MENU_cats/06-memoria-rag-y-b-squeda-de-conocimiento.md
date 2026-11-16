@@ -615,7 +615,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inserta tres vectores pequeños con etiquetas y consulta el más parecido con un filtro
 **Qué comprobar:** La búsqueda devuelve el registro esperado y respeta el filtro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `langchain`, `n8n`
+**Combina con:** `docling`, `n8n`, `llama-index`, `langchain`
 **Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`
 
 ## `ragflow`

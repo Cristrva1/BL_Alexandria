@@ -640,7 +640,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Descarga un modelo pequeño y formula una pregunta antes de conectarlo a un agente
 **Qué comprobar:** Puedes identificar el modelo ejecutado y ver la respuesta en tu equipo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-webui`, `n8n`, `anything-llm`
+**Combina con:** `open-webui`, `n8n`, `litellm`, `crawl4ai`
 **Alternativas (elige una):** `llama-cpp`, `localai`, `llamafile`
 
 ## `open-notebook`
@@ -702,7 +702,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Conecta un modelo y conversa sobre un texto ficticio antes de cargar documentos privados
 **Qué comprobar:** Puedes ver el modelo seleccionado y conservar una conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `searxng`, `litellm`
+**Combina con:** `ollama`, `litellm`, `searxng`
 **Alternativas (elige una):** `librechat`, `lobehub`, `anything-llm`, `textgen`
 
 ## `private-gpt`

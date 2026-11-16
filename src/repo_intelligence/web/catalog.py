@@ -225,6 +225,13 @@ def build_catalog(project_root: Path) -> dict:
             "license": detail.get("license") or "",
             "homepage": detail.get("homepage") or "",
         }
+        # 4-section description: only emitted when curated, to keep catalog.json small.
+        combos = [dict(item) for item in detail.get("combina_con") or [] if isinstance(item, dict) and item.get("id")]
+        if combos:
+            merged["combina_con"] = combos
+        for field in ("que_es", "que_hace", "como_lo_hace", "descripcion_notas", "descripcion_fuentes", "descripcion_revision"):
+            if detail.get(field):
+                merged[field] = detail[field]
         command, confidence, note = derive_install({**merged, "repo": merged["repo_url"]})
         lead, body = _lead(merged)
         merged["lead"] = lead
@@ -241,6 +248,8 @@ def build_catalog(project_root: Path) -> dict:
     for repo in draft:
         repo["alt_refs"] = _refs(repo["alt"], index)
         repo["combine_refs"] = _refs(repo["combines_with"], index)
+        for combo in repo.get("combina_con", []):
+            combo["id"] = _resolve(str(combo["id"]), index) or combo["id"]
         repos.append(repo)
     repos.sort(key=lambda repo: (repo["cat"], (repo["name"] or "").lower(), repo["id"]))
 

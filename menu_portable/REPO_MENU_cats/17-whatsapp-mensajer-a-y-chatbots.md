@@ -92,7 +92,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura una instancia de ensayo y consulta su estado antes de habilitar webhooks o respuestas
 **Qué comprobar:** Puedes identificar motor, instancia y permisos de acceso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `chatwoot`
+**Combina con:** `n8n`, `chatwoot`, `typebot`, `dify`
 **Alternativas (elige una):** `whatsapp-web-js`, `waha`
 
 ## `fluxer`

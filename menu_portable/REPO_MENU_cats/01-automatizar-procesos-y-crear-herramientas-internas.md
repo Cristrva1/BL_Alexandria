@@ -224,7 +224,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un flujo manual que devuelva un texto y ejecútalo en el editor
 **Qué comprobar:** La ejecución termina y su salida contiene el texto que escribiste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n-mcp`, `n8n-skills`, `evolution-api`
+**Combina con:** `n8n-mcp`, `n8n-skills`, `evolution-api`, `ollama`, `qdrant`
 **Alternativas (elige una):** `activepieces`, `huginn`, `windmill`, `node-red`
 
 ## `n8n-io`
@@ -282,7 +282,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Pide al cliente buscar un nodo de n8n y consultar su esquema antes de editar un flujo
 **Qué comprobar:** La respuesta contiene las propiedades del nodo y una validación comprensible
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-skills`
+**Combina con:** `n8n`, `n8n-skills`, `claude-code`, `mcp-inspector`
 
 ## `n8n-skills`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,automation

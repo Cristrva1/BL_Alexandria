@@ -151,7 +151,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte una página de prueba a Markdown y después extrae dos campos sin LLM
 **Qué comprobar:** Puedes comparar texto y campos con la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `firecrawl`, `gpt-researcher`
+**Combina con:** `ollama`, `qdrant`, `n8n`
 **Alternativas (elige una):** `jina-reader`
 
 ## `crawlee`

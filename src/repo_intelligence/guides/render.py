@@ -241,6 +241,10 @@ def _render_detail_index(project_root: Path, cat: Catalog, local_ids: set[str]) 
                 "choose_if": repo.get("choose_if"),
                 "avoid_if": repo.get("avoid_if"),
                 "combines_with": repo.get("combines_with", []),
+                "que_es": repo.get("que_es"),
+                "que_hace": repo.get("que_hace"),
+                "como_lo_hace": repo.get("como_lo_hace"),
+                "combina_con": repo.get("combina_con", []),
                 "alternatives": repo.get("alternatives", []),
                 "install_mode": repo.get("install_mode"),
                 "decision": repo.get("decision"),
@@ -305,6 +309,8 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     status = _status_note(repo)
     if status:
         lines += [f"> {status}", ""]
+    four = _four_sections(cat, repo, "fichas")
+    lines += four
 
     def section(title: str, body: str | None) -> None:
         if body:
@@ -314,9 +320,10 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     lines += [f"| {title} | {md_cell(body)} |" for title, body in access_rows(repo)]
     access = access_facts(repo)
     lines += ["", access["subscription_note"], ""]
-    section("Qué puedes hacer con él", repo.get("desc"))
-    section("Por qué destaca", repo.get("why"))
-    section("Cómo funciona", repo.get("how"))
+    if not four:
+        section("Qué puedes hacer con él", repo.get("desc"))
+        section("Por qué destaca", repo.get("why"))
+        section("Cómo funciona", repo.get("how"))
     getting = repo.get("getting_started") or {}
     if getting:
         lines += ["## Cómo empezar", ""]
@@ -359,7 +366,8 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     facts.append(f"- **Modo de instalación sugerido:** {_install_mode_text(repo.get('install_mode', 'reference_only'))}")
     lines += ["## Stack y modelos", ""] + facts + [""]
 
-    lines += _repo_table_section(cat, "Combina con", repo.get("combines_with", []), "fichas")
+    if not four:
+        lines += _repo_table_section(cat, "Combina con", repo.get("combines_with", []), "fichas")
     lines += _repo_table_section(cat, "Alternativas (elige una)", repo.get("alternatives", []), "fichas")
 
     links = []
@@ -384,6 +392,34 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         lines += [f"- [Fuente {index}]({url})" for index, url in enumerate(access["sources"], 1)] + [""]
     lines.append(_footer(cat))
     return "\n".join(lines)
+
+
+def has_four_sections(repo: dict[str, Any]) -> bool:
+    return all((repo.get(field) or "").strip() for field in ("que_es", "que_hace", "como_lo_hace")) and bool(repo.get("combina_con"))
+
+
+def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
+    """Render ¿Qué es? / ¿Qué hace? / ¿Cómo lo hace? / ¿Con qué se combina? when curated."""
+    if not has_four_sections(repo):
+        return []
+    lines: list[str] = []
+    for title, field in (("¿Qué es?", "que_es"), ("¿Qué hace?", "que_hace"), ("¿Cómo lo hace?", "como_lo_hace")):
+        lines += [f"## {title}", "", repo[field].strip(), ""]
+    rows = []
+    for combo in repo.get("combina_con") or []:
+        if not cat.get(combo.get("id")):
+            continue
+        rows.append(f"| {repo_link(cat, combo['id'], base)} | {md_cell(combo.get('motivo') or '—')} | {md_cell(combo.get('orden_instalacion') or '—')} |")
+    if rows:
+        lines += ["## ¿Con qué otros repos se combina?", "", "| Repo | Para qué juntarlos | Orden de instalación y cuidados |", "|---|---|---|", *rows, ""]
+    if repo.get("descripcion_notas"):
+        lines += [f"**Notas:** {repo['descripcion_notas'].strip()}", ""]
+    review = repo.get("descripcion_revision") or {}
+    sources = repo.get("descripcion_fuentes") or []
+    if sources:
+        fecha = review.get("checked_at") or "fecha por confirmar"
+        lines += [f"<sub>Descripción redactada a partir de la documentación del autor (revisada el {fecha}); no se instaló ni ejecutó. Fuentes: " + " · ".join(f"[{i}]({url})" for i, url in enumerate(sources, 1)) + "</sub>", ""]
+    return lines
 
 
 def _repo_table_section(cat: Catalog, title: str, ids: list[str], base: str) -> list[str]:

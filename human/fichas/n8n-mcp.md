@@ -10,6 +10,31 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Servidor MCP de código abierto (MIT), independiente del servidor MCP que trae n8n, que permite a asistentes como Claude, ChatGPT, Cursor o Codex operar una instancia de n8n.
+
+## ¿Qué hace?
+
+Lee ejecuciones fallidas y señala el nodo que falló, edita flujos de forma parcial, los valida y autocorrige, los prueba por webhook, formulario o chat y gestiona credenciales, tablas de datos y una auditoría de seguridad. Sin conexión a n8n también sirve como referencia de 3501 nodos y 2352 plantillas.
+
+## ¿Cómo lo hace?
+
+Corre como proceso aparte (npx, Docker, Railway o el servicio alojado del autor, con 100 llamadas diarias gratis) y habla con n8n por su Public API usando `N8N_API_URL` y `N8N_API_KEY`; trae una base de datos empaquetada de nodos y plantillas para documentar y validar. Antes de cambiar un flujo guarda hasta 10 versiones para revertir, y con `N8N_MCP_ACCESS_TOKEN` delega en el MCP integrado de n8n lo que la API pública no cubre.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Es la instancia que opera; sin ella solo funcionan las herramientas de documentación y validación. | n8n primero, con la Public API habilitada y una API key. No edites el mismo flujo en la interfaz mientras trabaja el asistente. |
+| [n8n-skills](n8n-skills.md) | Del mismo autor: enseña al agente a usar las herramientas de n8n-mcp sin bucles de errores de validación. | Después de conectar n8n-mcp a tu cliente. |
+| [Claude Code](claude-code.md) | Cliente MCP con guía de configuración propia en el repositorio (docs/CLAUDE_CODE_SETUP.md). | Instala Claude Code y luego registra n8n-mcp siguiendo esa guía. |
+| [MCP Inspector](mcp-inspector.md) | Herramienta oficial para listar y probar las herramientas de un servidor MCP antes de dárselas a un agente (combinación por arquitectura). | Opcional, solo para depurar la conexión. |
+
+**Notas:** La documentación de n8n usa el nombre `n8n-mcp` para su propio servidor MCP integrado; no es este proyecto.
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md) · [2](https://github.com/czlonkowski/n8n-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +48,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI |
 | Coste | El coste depende del proveedor o la ruta. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura |
 | Equipo | Preparación según la ruta elegida. Cliente MCP;  n8n y sus credenciales solo para operar una instancia |
-
-El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
-
-## Qué puedes hacer con él
-
-Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows.
-
-## Por qué destaca
-
-Usos propuestos: Investigar por qué falló una ejecución de un flujo propio; Preparar y validar un flujo de prueba con ayuda del agente.
-
-## Cómo funciona
 
 El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
 
@@ -84,13 +97,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cliente MCP;  n8n y sus credenciales solo para operar una instancia
 - **Etiquetas:** `automation` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [n8n-skills](n8n-skills.md) | 6.6k | Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas. |
 
 ## Enlaces
 

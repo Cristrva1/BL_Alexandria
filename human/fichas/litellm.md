@@ -10,6 +10,28 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Gateway de IA y SDK de Python de código abierto que unifica el acceso a más de 100 proveedores de LLM usando el formato de OpenAI.
+
+## ¿Qué hace?
+
+Permite llamar a OpenAI, Anthropic, Gemini, Bedrock, Azure, Ollama y otros con una sola interfaz. Como proxy centralizado añade claves virtuales, control de gasto, guardrails, balanceo de carga, enrutamiento automático por complejidad, panel de administración y una pasarela MCP.
+
+## ¿Cómo lo hace?
+
+En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefijo del modelo (`openai/...`, `anthropic/...`) y `Router` reparte entre modelos. El proxy (`litellm[proxy]`, puerto 4000) expone endpoints compatibles con OpenAI como `/chat/completions`, `/embeddings`, `/responses` y `/messages`, de modo que un cliente de OpenAI solo cambia `base_url`. Los paquetes `litellm` y `litellm-core` no deben instalarse en el mismo entorno.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local soportado (`ollama`, `ollama_chat`): mezcla modelos locales y de nube con la misma API. | Ollama primero; luego registra sus modelos en LiteLLM. |
+| [Open WebUI](open-webui.md) | Interfaz de chat que consume el proxy como si fuera OpenAI. | LiteLLM primero; después añade su URL como conexión en Open WebUI. |
+| [langfuse](langfuse.md) | Integración de observabilidad documentada por LiteLLM: trazas, costes y latencia de cada llamada. | Langfuse primero (para tener sus claves); luego actívalo como callback en LiteLLM. |
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BerriAI/litellm/blob/main/README.md) · [2](https://docs.litellm.ai/docs/providers/ollama) · [3](https://docs.litellm.ai/docs/observability/langfuse_integration)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +45,6 @@
 | Modelos locales | Modelos locales documentados. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos |
 | Coste | El coste depende del proveedor o la ruta. Las llamadas siguen usando claves, cuotas y precios de cada proveedor; Ollama y LM Studio permiten rutas locales |
 | Equipo | Preparación según la ruta elegida. Python y uv; proveedor o endpoint local; presupuesto de prueba |
-
-Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos
-
-## Qué puedes hacer con él
-
-Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.
-
-## Por qué destaca
-
-Usos propuestos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio.
-
-## Cómo funciona
 
 Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos
 
@@ -93,14 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; proveedor o endpoint local; presupuesto de prueba
 - **Etiquetas:** `inference` `llmops` `python` `docker`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
-| [llm-council](llm-council.md) | 26.5k | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. |
 
 ## Enlaces
 

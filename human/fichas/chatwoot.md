@@ -10,6 +10,27 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Plataforma de atención al cliente de código abierto (MIT) y autoalojable, alternativa a Intercom o Zendesk.
+
+## ¿Qué hace?
+
+Reúne en una bandeja omnicanal las conversaciones de chat web, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line y SMS, con asignación automática, respuestas predefinidas, notas privadas, contactos, campañas, centro de ayuda y reportes con CSAT. Incluye Captain, un agente de IA que responde consultas frecuentes; su disponibilidad en la edición comunitaria es [DATO NO VERIFICADO].
+
+## ¿Cómo lo hace?
+
+Backend en Ruby y frontend en Vue, según los lenguajes del repositorio en GitHub. En Docker se despliega con PostgreSQL, Redis y workers Sidekiq para tareas en segundo plano, y necesita variables de entorno correctas para cada función. Se integra con Slack, Dialogflow, Shopify, Linear y Google Translate y permite incrustar herramientas internas como Dashboard Apps.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [evolution-api](evolution-api.md) | Aporta el canal de WhatsApp mediante la integración nativa que Evolution tiene con Chatwoot. | Chatwoot primero; después configura la integración desde la instancia de Evolution. |
+| [n8n](n8n.md) | Automatiza acciones (crear contactos, etiquetar, notificar) llamando a la API de Chatwoot desde nodos HTTP (combinación por arquitectura). | Independientes; crea un token de acceso en Chatwoot y úsalo en n8n. |
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatwoot/chatwoot/blob/develop/README.md) · [2](https://www.chatwoot.com/docs/self-hosted/deployment/docker) · [3](https://api.github.com/repos/chatwoot/chatwoot/languages) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +44,6 @@
 | Modelos locales | Modelo local no documentado. El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado |
 | Coste | El coste depende del proveedor o la ruta. Community, Cloud y Enterprise tienen condiciones distintas; canales y funciones AI pueden consumir servicios |
 | Equipo | Preparación según la ruta elegida. Cuenta o servidor; canal de prueba; proveedor solo para funciones AI |
-
-El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
-
-## Qué puedes hacer con él
-
-Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una mesa de soporte; Comparar atención humana y asistencia AI.
-
-## Cómo funciona
 
 El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
 
@@ -86,13 +95,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta o servidor; canal de prueba; proveedor solo para funciones AI
 - **Etiquetas:** `automation` `crm` `ruby` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
-| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
 
 ## Enlaces
 

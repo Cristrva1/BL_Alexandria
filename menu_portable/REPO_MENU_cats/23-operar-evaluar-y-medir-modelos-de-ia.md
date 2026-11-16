@@ -253,7 +253,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un único proveedor y envía una petición breve antes de activar fallback y balanceo
 **Qué comprobar:** Puedes identificar el proveedor real y su consumo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `langfuse`, `llm-council`
+**Combina con:** `ollama`, `open-webui`, `langfuse`
 
 ## `loguru`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=observability,evaluation,python

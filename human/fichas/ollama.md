@@ -10,6 +10,31 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Motor para descargar y ejecutar modelos de lenguaje abiertos en tu equipo (macOS, Windows, Linux o Docker), con opción de usar modelos en su nube.
+
+## ¿Qué hace?
+
+Ejecuta modelos de su biblioteca y permite conversar con ellos (por ejemplo `ollama run gemma4`) o servirlos a otras aplicaciones. Con `ollama launch` conecta modelos a agentes como Claude Code, Codex, Copilot CLI u OpenCode.
+
+## ¿Cómo lo hace?
+
+Está escrito en Go y declara llama.cpp como backend. Expone una API REST local en el puerto 11434 (por ejemplo `/api/chat`) y tiene librerías oficiales para Python y JavaScript. Los modelos se importan y personalizan con un Modelfile.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Open WebUI](open-webui.md) | Interfaz de chat tipo ChatGPT que se conecta a Ollama con `OLLAMA_BASE_URL`. | Ollama primero, o usa la imagen `:ollama` de Open WebUI que ya lo incluye; no instales los dos por separado si usas esa imagen. |
+| [n8n](n8n.md) | Los nodos de IA de n8n usan Ollama como proveedor local mediante una credencial documentada. | Ollama primero; desde un n8n en Docker apunta a la dirección del host, no a `localhost`. |
+| [litellm](litellm.md) | LiteLLM trae los proveedores `ollama` y `ollama_chat` y pone los modelos locales detrás de la misma API compatible con OpenAI que los de la nube. | Ollama primero y luego declara sus modelos en la configuración de LiteLLM. |
+| [crawl4ai](crawl4ai.md) | La extracción con LLM de Crawl4AI acepta modelos de Ollama (ejemplo `ollama/llama3.3`), así que puedes estructurar páginas sin API de pago. | Ollama con el modelo descargado antes de lanzar la extracción. |
+
+**Notas:** Alternativas (elige una): llama-cpp, localai, llamafile. Varios motores en la misma máquina compiten por GPU y memoria.
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ollama/ollama/blob/main/README.md) · [2](https://github.com/open-webui/open-webui/blob/main/README.md) · [3](https://docs.litellm.ai/docs/providers/ollama) · [4](https://github.com/unclecode/crawl4ai/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +48,6 @@
 | Modelos locales | Modelos locales documentados. Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción |
 | Coste | El coste depende del proveedor o la ruta. Los modelos locales usan tu hardware; modelos Cloud y búsqueda web tienen autenticación y condiciones propias |
 | Equipo | Preparación según la ruta elegida. Instalador oficial para tu sistema; RAM y disco adecuados al modelo |
-
-Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción
-
-## Qué puedes hacer con él
-
-La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI.
-
-## Por qué destaca
-
-Usos propuestos: Probar un LLM local; Conectar un modelo local a Codex CLI.
-
-## Cómo funciona
 
 Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción
 
@@ -85,14 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador oficial para tu sistema; RAM y disco adecuados al modelo
 - **Etiquetas:** `inference` `local` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [AnythingLLM](anything-llm.md) | 68.3k | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
 
 ## Alternativas (elige una)
 
