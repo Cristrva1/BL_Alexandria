@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **621 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **640 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -12,10 +12,10 @@ Las **621 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 
 | # | Categoría | Repos | Para qué |
 |---:|---|---:|---|
-| 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 10 | Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot. |
+| 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 17 | Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot. |
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
-| 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 30 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
-| 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 20 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
+| 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 34 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
+| 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 28 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
 | 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 23 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 23 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 11 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
@@ -75,15 +75,18 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 | [huginn](human/fichas/huginn.md) | Tu objetivo encaja con estos ejemplos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Node-RED](human/fichas/node-red.md) | Tu objetivo encaja con estos ejemplos: Mostrar lecturas de un sensor recibidas por MQTT; Convertir un webhook en una secuencia de acciones | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Kestra, Windmill, Trigger.dev**
+**⚖️ ¿Cuál elegir? — Apache Airflow, Kestra, Prefect, Windmill, Trigger.dev, Dagster**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
+| [Apache Airflow](human/fichas/airflow.md) | Tu objetivo encaja con estos ejemplos: programar un ETL diario que descarga, transforma y carga datos en un almacén; coordinar entrenamientos y despliegues de modelos con dependencias y reintentos | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 | [Kestra](human/fichas/kestra.md) | Tu objetivo encaja con estos ejemplos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Prefect](human/fichas/prefect.md) | Tu objetivo encaja con estos ejemplos: convertir un script de ingesta en un flujo con reintentos y ejecución programada; encadenar pasos de datos o ML con dependencias dinámicas y observabilidad | buscas una aplicación lista y no quieres preparar un proyecto de código |
 | [Windmill](human/fichas/windmill.md) | Tu objetivo encaja con estos ejemplos: Convertir un script de conciliación en una herramienta interna con formulario; Programar una consulta de datos como tarea recurrente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Trigger.dev](human/fichas/trigger-dev.md) | Tu objetivo encaja con estos ejemplos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Dagster](human/fichas/dagster.md) | Tu objetivo encaja con estos ejemplos: mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles; probar pipelines de datos con tests unitarios antes de llevarlos a producción | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
-**⚖️ ¿Cuál elegir? — NocoDB, Appsmith, ToolJet, Budibase**
+**⚖️ ¿Cuál elegir? — NocoDB, Appsmith, ToolJet, Budibase, Teable, Grist, Baserow**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -91,6 +94,9 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 | [Appsmith](human/fichas/appsmith.md) | Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [ToolJet](human/fichas/tooljet.md) | Tu objetivo encaja con estos ejemplos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Budibase](human/fichas/budibase.md) | Tu objetivo encaja con estos ejemplos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Teable](human/fichas/teable.md) | Tu objetivo encaja con estos ejemplos: gestionar un catálogo o pipeline comercial con vistas de cuadrícula, kanban y calendario; dar a un equipo tablas en PostgreSQL con permisos y API sin escribir backend | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Grist](human/fichas/grist-core.md) | Tu objetivo encaja con estos ejemplos: sustituir una hoja compartida por tablas relacionadas con permisos por fila; montar un inventario o CRM ligero en tu propio servidor | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Baserow](human/fichas/baserow.md) | Tu objetivo encaja con estos ejemplos: crear una base de clientes o inventario compartida sin escribir backend; publicar un portal o formulario sobre tus propias tablas en tu dominio | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 ### Motores de workflow y automatización
 
@@ -102,6 +108,15 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 **Elige si:** Tu objetivo encaja con estos ejemplos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [coolify](human/fichas/coolify.md) · [changedetection.io](human/fichas/changedetection.md)<br>
 **Más:** [ficha completa](human/fichas/huginn.md) · [GitHub](https://github.com/huginn/huginn)
+
+#### ⚙️ Apache Airflow
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 47.5k<br>
+**Qué es:** Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/apache/airflow/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: programar un ETL diario que descarga, transforma y carga datos en un almacén; coordinar entrenamientos y despliegues de modelos con dependencias y reintentos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Grafana](human/fichas/grafana.md) · [MLflow](human/fichas/mlflow.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/airflow.md) · [GitHub](https://github.com/apache/airflow)
 
 #### 🔁 Kestra
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 30.2k<br>
@@ -127,6 +142,24 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 **Elige si:** Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [NocoDB](human/fichas/nocodb.md) · [Claude Code](human/fichas/claude-code.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/activepieces.md) · [GitHub](https://github.com/activepieces/activepieces)
+
+#### ⚙️ Temporal
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 24.4k<br>
+**Qué es:** Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install temporal` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: procesos de negocio largos como pagos o altas que deben completarse aunque caiga un servicio; agentes de IA con pasos largos que necesitan reintentos y reanudación — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [OpenAI Agents SDK](human/fichas/openai-agents-python.md) · [Pydantic AI](human/fichas/pydantic-ai.md) · [LangGraph](human/fichas/langgraph.md) · [Grafana](human/fichas/grafana.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/temporal.md) · [GitHub](https://github.com/temporalio/temporal)
+
+#### 📚 Prefect
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 24.2k<br>
+**Qué es:** Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install -U prefect` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: convertir un script de ingesta en un flujo con reintentos y ejecución programada; encadenar pasos de datos o ML con dependencias dinámicas y observabilidad — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Claude Code](human/fichas/claude-code.md) · [MLflow](human/fichas/mlflow.md)<br>
+**Más:** [ficha completa](human/fichas/prefect.md) · [GitHub](https://github.com/PrefectHQ/prefect)
 
 #### 🔁 Node-RED
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 23.8k<br>
@@ -158,6 +191,15 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [FFmpeg](human/fichas/ffmpeg.md) · [playwright](human/fichas/playwright.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/trigger-dev.md) · [GitHub](https://github.com/triggerdotdev/trigger.dev)
+
+#### 📚 Dagster
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 16.4k<br>
+**Qué es:** Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `uv add dagster dagster-webserver dagster-dg-cli` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles; probar pipelines de datos con tests unitarios antes de llevarlos a producción — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [MLflow](human/fichas/mlflow.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/dagster.md) · [GitHub](https://github.com/dagster-io/dagster)
 
 ### Apps internas y bases de datos no-code
 
@@ -200,6 +242,33 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/budibase.md) · [GitHub](https://github.com/Budibase/budibase)
+
+#### ⚙️ Teable
+**Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 22k<br>
+**Qué es:** Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/teableio/teable/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: gestionar un catálogo o pipeline comercial con vistas de cuadrícula, kanban y calendario; dar a un equipo tablas en PostgreSQL con permisos y API sin escribir backend — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [supabase](human/fichas/supabase.md) · [metabase](human/fichas/metabase.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/teable.md) · [GitHub](https://github.com/teableio/teable)
+
+#### ⚙️ Grist
+**Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 12.1k<br>
+**Qué es:** Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `docker run -p 8484:8484 -it gristlabs/grist` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir una hoja compartida por tablas relacionadas con permisos por fila; montar un inventario o CRM ligero en tu propio servidor — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [DuckDB](human/fichas/duckdb.md) · [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/grist-core.md) · [GitHub](https://github.com/gristlabs/grist-core)
+
+#### ⚙️ Baserow
+**Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 6.3k<br>
+**Qué es:** Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `docker run -v baserow_data:/baserow/data -p 80:80 -p 443:443 baserow/baserow:2.4.3` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear una base de clientes o inventario compartida sin escribir backend; publicar un portal o formulario sobre tus propias tablas en tu dominio — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [metabase](human/fichas/metabase.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/baserow.md) · [GitHub](https://github.com/baserow/baserow)
 
 ---
 
@@ -619,6 +688,15 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 **Combina con:** [mem0](human/fichas/mem0.md) · [langfuse](human/fichas/langfuse.md) · [FastMCP](human/fichas/fastmcp.md) · [500-AI-Agents-Projects](human/fichas/500-ai-agents-projects.md) · [ai-engineering-hub](human/fichas/ai-engineering-hub.md) · [CopilotKit](human/fichas/copilotkit.md)<br>
 **Más:** [ficha completa](human/fichas/crewai.md) · [GitHub](https://github.com/crewAIInc/crewAI)
 
+#### 🖥️ OpenManus
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 59k<br>
+**Qué es:** Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.<br>
+**Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
+**Arranque:** [Instrucciones originales](https://github.com/FoundationAgents/OpenManus/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: delegar una investigación web que termine en un informe guardado en disco; experimentar con un agente general en local antes de elegir un framework — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [browser-use](human/fichas/browser-use.md) · [playwright](human/fichas/playwright.md) · [litellm](human/fichas/litellm.md)<br>
+**Más:** [ficha completa](human/fichas/openmanus.md) · [GitHub](https://github.com/FoundationAgents/OpenManus)
+
 #### 🐍 LlamaIndex
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 52.9k<br>
 **Qué es:** Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos.<br>
@@ -649,6 +727,24 @@ pip install llama-index-embeddings-huggingface` (comprobar los pasos completos e
 **Elige si:** Tu objetivo encaja con estos ejemplos: Clasificar solicitudes de soporte; Optimizar un extractor de datos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [MLflow](human/fichas/mlflow.md) · [langfuse](human/fichas/langfuse.md) · [Ragas](human/fichas/ragas.md) · [hermes-agent-self-evolution](human/fichas/hermes-agent-self-evolution.md) · [Opik](human/fichas/opik.md)<br>
 **Más:** [ficha completa](human/fichas/dspy.md) · [GitHub](https://github.com/stanfordnlp/dspy)
+
+#### 📚 AgentScope
+**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 36.1k<br>
+**Qué es:** Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `uv pip install agentscope` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso; orquestar un equipo de agentes con un líder que delega tareas — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [FastMCP](human/fichas/fastmcp.md) · [langfuse](human/fichas/langfuse.md) · [litellm](human/fichas/litellm.md)<br>
+**Más:** [ficha completa](human/fichas/agentscope.md) · [GitHub](https://github.com/agentscope-ai/agentscope)
+
+#### 🖥️ ChatDev
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 34.8k<br>
+**Qué es:** Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.<br>
+**Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
+**Comando documentado:** `docker compose up --build` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: prototipar una pequeña aplicación con agentes que actúan como roles de un equipo; estudiar patrones de colaboración multiagente de los artículos del proyecto — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [blender](human/fichas/blender.md) · [Blender MCP](human/fichas/blender-mcp.md) · [litellm](human/fichas/litellm.md)<br>
+**Más:** [ficha completa](human/fichas/chatdev.md) · [GitHub](https://github.com/OpenBMB/ChatDev)
 
 #### 🐍 Deep Agents
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 31.3k<br>
@@ -704,6 +800,15 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer campos de mensajes; Validar datos generados antes de guardarlos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [langfuse](human/fichas/langfuse.md) · [FastMCP](human/fichas/fastmcp.md) · [Ollama](human/fichas/ollama.md) · [browser-use](human/fichas/browser-use.md) · [loguru](human/fichas/loguru.md) · [MCP Python SDK](human/fichas/mcp-python-sdk.md)<br>
 **Más:** [ficha completa](human/fichas/pydantic-ai.md) · [GitHub](https://github.com/pydantic/pydantic-ai)
+
+#### 📚 CAMEL
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 18k<br>
+**Qué es:** Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install camel-ai` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar datos sintéticos con agentes que dialogan en roles; montar un experimento de simulación con muchos agentes y medir su comportamiento — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Qdrant](human/fichas/qdrant.md) · [firecrawl](human/fichas/firecrawl.md) · [vLLM](human/fichas/vllm.md)<br>
+**Más:** [ficha completa](human/fichas/camel.md) · [GitHub](https://github.com/camel-ai/camel)
 
 #### 📚 claude-agent-sdk-python
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 8.5k<br>
@@ -919,6 +1024,13 @@ Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer 
 | [Maxun](human/fichas/maxun.md) | Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [llm-scraper](human/fichas/llm-scraper.md) | Tu objetivo encaja con estos ejemplos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — FreshRSS, Miniflux**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [FreshRSS](human/fichas/freshrss.md) | Tu objetivo encaja con estos ejemplos: centralizar en tu servidor los feeds de noticias y blogs que sigues; seguir webs sin RSS con reglas de extracción XPath | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Miniflux](human/fichas/miniflux.md) | Tu objetivo encaja con estos ejemplos: leer feeds sin rastreadores en una instancia propia ligera; enviar artículos automáticamente a un servicio de lectura o notas | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
 ### Crawlers y extracción para IA
 
 #### 🔥 firecrawl ⭐
@@ -968,6 +1080,24 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Elige si:** Tu objetivo encaja con estos ejemplos: Rastrear una documentación propia; Extraer datos de páginas con JavaScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [playwright](human/fichas/playwright.md) · [defuddle](human/fichas/defuddle.md) · [llm-scraper](human/fichas/llm-scraper.md) · [awesome-web-scraping](human/fichas/awesome-web-scraping.md)<br>
 **Más:** [ficha completa](human/fichas/crawlee.md) · [GitHub](https://github.com/apify/crawlee)
+
+#### 📚 Colly
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 25.6k<br>
+**Qué es:** Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/gocolly/colly/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: escribir un rastreador rápido que extraiga datos estructurados de un sitio; archivar páginas de un dominio respetando límites de velocidad — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/colly.md) · [GitHub](https://github.com/gocolly/colly)
+
+#### 🖥️ Katana
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 17.9k<br>
+**Qué es:** Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install github.com/projectdiscovery/katana/cmd/katana@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/katana.md) · [GitHub](https://github.com/projectdiscovery/katana)
 
 #### 🕷️ Jina Reader
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 12.3k<br>
@@ -1068,6 +1198,15 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Agent-Reach](human/fichas/agent-reach.md)<br>
 **Más:** [ficha completa](human/fichas/last30days-skill.md) · [GitHub](https://github.com/mvanhorn/last30days-skill)
 
+#### ⚙️ RSSHub
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 47k<br>
+**Qué es:** Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/DIYgod/RSSHub/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: seguir canales, perfiles o webs sin RSS desde tu lector de feeds; alimentar un flujo de monitorización de fuentes con feeds uniformes — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [FreshRSS](human/fichas/freshrss.md) · [Miniflux](human/fichas/miniflux.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/rsshub.md) · [GitHub](https://github.com/DIYgod/RSSHub)
+
 #### 🔍 Vane
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 38.2k<br>
 **Qué es:** Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica).<br>
@@ -1095,6 +1234,33 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [changedetection.io](human/fichas/changedetection.md) · [karakeep](human/fichas/karakeep.md) · [instaloader](human/fichas/instaloader.md)<br>
 **Más:** [ficha completa](human/fichas/archivebox.md) · [GitHub](https://github.com/ArchiveBox/ArchiveBox)
 
+#### ⚙️ FreshRSS
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 16.6k<br>
+**Qué es:** Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/FreshRSS/FreshRSS/blob/edge/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar en tu servidor los feeds de noticias y blogs que sigues; seguir webs sin RSS con reglas de extracción XPath — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [RSSHub](human/fichas/rsshub.md) · [wallabag](human/fichas/wallabag.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/freshrss.md) · [GitHub](https://github.com/FreshRSS/FreshRSS)
+
+#### ⚙️ wallabag
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 13.1k<br>
+**Qué es:** Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/wallabag/wallabag/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: guardar artículos para leerlos sin conexión en el móvil; archivar lecturas con etiquetas y anotaciones en tu propio servidor — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [FreshRSS](human/fichas/freshrss.md) · [Miniflux](human/fichas/miniflux.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/wallabag.md) · [GitHub](https://github.com/wallabag/wallabag)
+
+#### ⚙️ Miniflux
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 9.9k<br>
+**Qué es:** Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/miniflux/v2/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: leer feeds sin rastreadores en una instancia propia ligera; enviar artículos automáticamente a un servicio de lectura o notas — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [RSSHub](human/fichas/rsshub.md) · [wallabag](human/fichas/wallabag.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/miniflux.md) · [GitHub](https://github.com/miniflux/v2)
+
 ### Redes sociales y descarga de medios
 
 #### 📱 yt-dlp ⭐
@@ -1105,6 +1271,24 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md) · [Fabric](human/fichas/fabric.md)<br>
 **Más:** [ficha completa](human/fichas/yt-dlp.md) · [GitHub](https://github.com/yt-dlp/yt-dlp)
+
+#### 🖥️ spotDL
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 26.8k<br>
+**Qué es:** CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install spotdl` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: conservar una copia local de listas de reproducción propias; etiquetar automáticamente archivos de audio con metadatos de Spotify — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [yt-dlp](human/fichas/yt-dlp.md) · [syncthing](human/fichas/syncthing.md)<br>
+**Más:** [ficha completa](human/fichas/spotdl.md) · [GitHub](https://github.com/spotDL/spotify-downloader)
+
+#### 🖥️ gallery-dl
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 20.5k<br>
+**Qué es:** Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install gallery-dl` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: archivar una colección propia de imágenes con metadatos y nombres ordenados; descargar un conjunto de imágenes públicas para un dataset con permiso de uso — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
+**Más:** [ficha completa](human/fichas/gallery-dl.md) · [GitHub](https://github.com/mikf/gallery-dl)
 
 #### 📸 instaloader
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 13.9k<br>
@@ -1250,7 +1434,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Comando documentado:** `winget install --id=astral-sh.uv -e
 uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una escena 3D; Automatizar ajustes de objetos y materiales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [blender](human/fichas/blender.md) · [unity-mcp](human/fichas/unity-mcp.md) · [blender-skills](human/fichas/blender-skills.md) · [dream-loop](human/fichas/dream-loop.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [blender](human/fichas/blender.md) · [unity-mcp](human/fichas/unity-mcp.md) · [blender-skills](human/fichas/blender-skills.md) · [dream-loop](human/fichas/dream-loop.md) · [ChatDev](human/fichas/chatdev.md)<br>
 **Más:** [ficha completa](human/fichas/blender-mcp.md) · [GitHub](https://github.com/ahujasid/mcp-for-blender)
 
 #### 🔌 Serena
@@ -3444,7 +3628,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/syncthing/syncthing/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir una carpeta personal entre equipos; Mantener una colección de notas sincronizada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [coolify](human/fichas/coolify.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [audiobookshelf](human/fichas/audiobookshelf.md)<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [coolify](human/fichas/coolify.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [audiobookshelf](human/fichas/audiobookshelf.md) · [spotDL](human/fichas/spotdl.md)<br>
 **Más:** [ficha completa](human/fichas/syncthing.md) · [GitHub](https://github.com/syncthing/syncthing)
 
 #### 🏠 server
@@ -5187,7 +5371,7 @@ promptfoo init --example getting-started` (comprobar los pasos completos en la f
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uvx mlflow server` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Registrar experimentos de ML; Añadir trazas a una app de IA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [DSPy](human/fichas/dspy.md) · [Transformers](human/fichas/transformers.md) · [DeepEval](human/fichas/deepeval.md) · [Ragas](human/fichas/ragas.md) · [qlib](human/fichas/qlib.md)<br>
+**Combina con:** [DSPy](human/fichas/dspy.md) · [Transformers](human/fichas/transformers.md) · [DeepEval](human/fichas/deepeval.md) · [Ragas](human/fichas/ragas.md) · [qlib](human/fichas/qlib.md) · [Apache Airflow](human/fichas/airflow.md)<br>
 **Más:** [ficha completa](human/fichas/mlflow.md) · [GitHub](https://github.com/mlflow/mlflow)
 
 #### 📝 loguru
@@ -7049,7 +7233,7 @@ npx playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/browser-use/browser-use/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [Pydantic AI](human/fichas/pydantic-ai.md) · [sandbox](human/fichas/sandbox.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [Pydantic AI](human/fichas/pydantic-ai.md) · [sandbox](human/fichas/sandbox.md) · [OpenManus](human/fichas/openmanus.md)<br>
 **Más:** [ficha completa](human/fichas/browser-use.md) · [GitHub](https://github.com/browser-use/browser-use)
 
 #### 🕷️ agent-browser

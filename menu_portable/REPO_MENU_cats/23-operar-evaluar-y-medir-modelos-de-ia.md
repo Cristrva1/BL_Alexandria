@@ -319,7 +319,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicia el servidor de prueba y registra una ejecución pequeña con parámetros y resultado
 **Qué comprobar:** Puedes abrir la ejecución y comparar sus datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`, `qlib`
+**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`, `qlib`, `airflow`
 **Alternativas (elige una):** `langfuse`
 
 ## `omniroute`

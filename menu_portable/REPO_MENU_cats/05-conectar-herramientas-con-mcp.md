@@ -122,7 +122,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un cubo y cambia su material en una escena vacía
 **Qué comprobar:** Puedes ver el objeto y el material en Blender
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `blender`, `unity-mcp`, `blender-skills`, `dream-loop`
+**Combina con:** `claude-code`, `blender`, `unity-mcp`, `blender-skills`, `dream-loop`, `chatdev`
 
 ## `chrome-devtools-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript

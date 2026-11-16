@@ -190,7 +190,7 @@ Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas 
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-`activepieces`, `huginn`, `kestra`, `node-red`, `trigger-dev`, `windmill`
+`activepieces`, `airflow`, `dagster`, `huginn`, `kestra`, `node-red`, `prefect`, `temporal`, `trigger-dev`, `windmill`
 
 ### WhatsApp y pasarelas de mensajería
 
@@ -220,7 +220,7 @@ Guías para que tu agente prepare análisis, mensajes y contenido.
 
 Crear herramientas de operación y formularios sobre tus datos.
 
-`appsmith`, `budibase`, `nocodb`, `tooljet`
+`appsmith`, `baserow`, `budibase`, `grist-core`, `nocodb`, `teable`, `tooljet`
 
 ### Reservas y citas
 
@@ -248,7 +248,7 @@ Construye un agente, delega investigación o dale acceso a páginas y herramient
 
 Bases para construir agentes y coordinar sus tareas.
 
-`adk-python`, `ag2`, `agent-framework`, `agno`, `awesome-langgraph`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `pydantic-ai`, `smolagents`, `vercel-ai`
+`adk-python`, `ag2`, `agent-framework`, `agentscope`, `agno`, `awesome-langgraph`, `camel`, `chatdev`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `openmanus`, `pydantic-ai`, `smolagents`, `vercel-ai`
 
 ### Constructores visuales de agentes
 
@@ -266,13 +266,13 @@ Asistentes listos o adaptables para tareas de varias etapas.
 
 Agentes y herramientas de búsqueda para investigar una pregunta.
 
-`agent-reach`, `archivebox`, `autoresearch`, `changedetection`, `deer-flow`, `gpt-researcher`, `last30days-skill`, `local-deep-research`, `searxng`, `storm`, `vane`
+`agent-reach`, `archivebox`, `autoresearch`, `changedetection`, `deer-flow`, `freshrss`, `gpt-researcher`, `last30days-skill`, `local-deep-research`, `miniflux`, `rsshub`, `searxng`, `storm`, `vane`, `wallabag`
 
 ### Scraping y extracción web
 
 Convertir páginas y redes sociales en contenido o datos.
 
-`awesome-web-scraping`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `instaloader`, `jina-reader`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapling`, `scrapy`, `yt-dlp`
+`awesome-web-scraping`, `colly`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `gallery-dl`, `instaloader`, `jina-reader`, `katana`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapling`, `scrapy`, `spotdl`, `yt-dlp`
 
 ### Navegadores y automatización web
 

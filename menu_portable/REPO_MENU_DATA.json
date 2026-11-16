@@ -17,7 +17,7 @@
     {
       "num": 1,
       "title": "Automatizar procesos y crear herramientas internas",
-      "count": 10
+      "count": 17
     },
     {
       "num": 2,
@@ -27,12 +27,12 @@
     {
       "num": 3,
       "title": "Construir agentes y coordinar equipos de IA",
-      "count": 30
+      "count": 34
     },
     {
       "num": 4,
       "title": "Buscar, extraer y monitorear información web",
-      "count": 20
+      "count": 28
     },
     {
       "num": 5,
@@ -2497,13 +2497,17 @@
           "reference_repos": [],
           "repo_ids": [
             "activepieces",
+            "airflow",
+            "dagster",
             "huginn",
             "kestra",
             "node-red",
+            "prefect",
+            "temporal",
             "trigger-dev",
             "windmill"
           ],
-          "count": 6
+          "count": 10
         },
         {
           "id": "negocio-whatsapp",
@@ -2629,11 +2633,14 @@
           "reference_repos": [],
           "repo_ids": [
             "appsmith",
+            "baserow",
             "budibase",
+            "grist-core",
             "nocodb",
+            "teable",
             "tooljet"
           ],
-          "count": 4
+          "count": 7
         },
         {
           "id": "negocio-reservas",
@@ -2702,9 +2709,11 @@
       "repo_ids": [
         "activepieces",
         "agency-agents",
+        "airflow",
         "appsmith",
         "arcads-claude-code",
         "baileys",
+        "baserow",
         "botpress",
         "budibase",
         "cal.diy",
@@ -2712,10 +2721,12 @@
         "claude-seo",
         "cloud-mail",
         "compai-crm",
+        "dagster",
         "erpnext",
         "evolution-api",
         "fluxer",
         "geo-seo-claude",
+        "grist-core",
         "huginn",
         "instagram-agent-skill",
         "kestra",
@@ -2731,8 +2742,11 @@
         "open-seo",
         "openwa",
         "postiz-app",
+        "prefect",
         "sellbird",
         "social-media-research-skills",
+        "teable",
+        "temporal",
         "tooljet",
         "trigger-dev",
         "twenty-main",
@@ -2743,7 +2757,7 @@
         "whatsmeow",
         "windmill"
       ],
-      "count": 42
+      "count": 49
     },
     {
       "id": "agentes",
@@ -2784,8 +2798,11 @@
             "adk-python",
             "ag2",
             "agent-framework",
+            "agentscope",
             "agno",
             "awesome-langgraph",
+            "camel",
+            "chatdev",
             "claude-agent-sdk-python",
             "crewai",
             "deepagents",
@@ -2804,11 +2821,12 @@
             "mirofish",
             "openai-agents-python",
             "openevolve",
+            "openmanus",
             "pydantic-ai",
             "smolagents",
             "vercel-ai"
           ],
-          "count": 26
+          "count": 30
         },
         {
           "id": "agentes-visuales",
@@ -2891,14 +2909,18 @@
             "autoresearch",
             "changedetection",
             "deer-flow",
+            "freshrss",
             "gpt-researcher",
             "last30days-skill",
             "local-deep-research",
+            "miniflux",
+            "rsshub",
             "searxng",
             "storm",
-            "vane"
+            "vane",
+            "wallabag"
           ],
-          "count": 11
+          "count": 15
         },
         {
           "id": "agentes-extraccion",
@@ -2919,21 +2941,25 @@
           "reference_repos": [],
           "repo_ids": [
             "awesome-web-scraping",
+            "colly",
             "crawl4ai",
             "crawlee",
             "crawlee-python",
             "defuddle",
             "firecrawl",
+            "gallery-dl",
             "instaloader",
             "jina-reader",
+            "katana",
             "llm-scraper",
             "maxun",
             "scrapegraph-ai",
             "scrapling",
             "scrapy",
+            "spotdl",
             "yt-dlp"
           ],
-          "count": 14
+          "count": 18
         },
         {
           "id": "agentes-navegacion",
@@ -3012,6 +3038,7 @@
         "agent-framework",
         "agent-reach",
         "agentes-chat",
+        "agentscope",
         "agno",
         "annas-mcp",
         "archivebox",
@@ -3025,9 +3052,12 @@
         "blender-mcp",
         "browser-harness",
         "browser-use",
+        "camel",
         "changedetection",
+        "chatdev",
         "chrome-devtools-mcp",
         "claude-agent-sdk-python",
+        "colly",
         "context7",
         "crawl4ai",
         "crawlee",
@@ -3042,6 +3072,8 @@
         "fastmcp",
         "figma-context-mcp",
         "firecrawl",
+        "freshrss",
+        "gallery-dl",
         "ghidramcp",
         "github-mcp-server",
         "gpt-researcher",
@@ -3052,6 +3084,7 @@
         "instaloader",
         "jev-fraud",
         "jina-reader",
+        "katana",
         "langchain",
         "langchain4j",
         "langflow",
@@ -3074,6 +3107,7 @@
         "mcp-use",
         "mercury-agent",
         "metagpt",
+        "miniflux",
         "mirofish",
         "multica",
         "neo4j-mcp",
@@ -3082,6 +3116,7 @@
         "openclaw",
         "opendots",
         "openevolve",
+        "openmanus",
         "paperclip",
         "playwright",
         "playwright-cli",
@@ -3089,6 +3124,7 @@
         "public-apis",
         "puppeteer",
         "pydantic-ai",
+        "rsshub",
         "ruflo",
         "scrapegraph-ai",
         "scrapling",
@@ -3101,15 +3137,17 @@
         "skyvern",
         "smolagents",
         "social-media-agent",
+        "spotdl",
         "stagehand",
         "storm",
         "tooljet",
         "unity-mcp",
         "vane",
         "vercel-ai",
+        "wallabag",
         "yt-dlp"
       ],
-      "count": 102
+      "count": 114
     },
     {
       "id": "ia-local",
@@ -11501,6 +11539,125 @@
       "alt": []
     },
     {
+      "id": "airflow",
+      "name": "Apache Airflow",
+      "cat": 1,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "automation",
+        "data",
+        "python",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/apache/airflow/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f3462530b7f9780cfab99c707ff7d5d304293c5f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/apache/airflow/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Levanta un entorno local de pruebas siguiendo la guía oficial y ejecuta un DAG de ejemplo con dos tareas dependientes.",
+        "success": "El DAG aparece en la interfaz, ambas tareas terminan en verde y puedes leer sus logs.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "programar un ETL diario que descarga, transforma y carga datos en un almacén",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "coordinar entrenamientos y despliegues de modelos con dependencias y reintentos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/apache/airflow/blob/main/README.md",
+        "source_blob_sha": "f3462530b7f9780cfab99c707ff7d5d304293c5f",
+        "previous_category": [
+          1,
+          "motores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.",
+      "desc": "Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.",
+      "stack": "Python, Dockerfile, pyproject.toml",
+      "repo": "https://github.com/apache/airflow",
+      "install": "Seguir la instalación original: https://github.com/apache/airflow/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: programar un ETL diario que descarga, transforma y carga datos en un almacén; coordinar entrenamientos y despliegues de modelos con dependencias y reintentos",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "grafana",
+        "mlflow",
+        "claude-code"
+      ],
+      "alt": [
+        "prefect",
+        "dagster",
+        "kestra"
+      ]
+    },
+    {
       "id": "appsmith",
       "name": "Appsmith",
       "cat": 1,
@@ -11622,6 +11779,124 @@
       ]
     },
     {
+      "id": "baserow",
+      "name": "Baserow",
+      "cat": 1,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "no-code",
+        "python",
+        "docker"
+      ],
+      "routes": [
+        "no_api",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/baserow/baserow/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3c434cf485fe316d2bc4a25e065fe51361a3871e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -v baserow_data:/baserow/data -p 80:80 -p 443:443 baserow/baserow:2.4.3",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/baserow/baserow/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Arranca el contenedor de la documentación con un volumen de datos y crea una base con una tabla y un formulario.",
+        "success": "El formulario guarda filas en la tabla y la API REST devuelve esos registros con un token.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "crear una base de clientes o inventario compartida sin escribir backend",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "publicar un portal o formulario sobre tus propias tablas en tu dominio",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/baserow/baserow/blob/develop/README.md",
+        "source_blob_sha": "3c434cf485fe316d2bc4a25e065fe51361a3871e",
+        "previous_category": [
+          1,
+          "internas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.",
+      "desc": "Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.",
+      "stack": "Python, docker-compose.yml",
+      "repo": "https://github.com/baserow/baserow",
+      "install": "docker run -v baserow_data:/baserow/data -p 80:80 -p 443:443 baserow/baserow:2.4.3",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: crear una base de clientes o inventario compartida sin escribir backend; publicar un portal o formulario sobre tus propias tablas en tu dominio",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "activepieces",
+        "metabase",
+        "coolify"
+      ],
+      "alt": [
+        "grist-core",
+        "teable",
+        "nocodb"
+      ]
+    },
+    {
       "id": "budibase",
       "name": "Budibase",
       "cat": 1,
@@ -11738,6 +12013,242 @@
       "alt": [
         "appsmith",
         "tooljet",
+        "nocodb"
+      ]
+    },
+    {
+      "id": "dagster",
+      "name": "Dagster",
+      "cat": 1,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "automation",
+        "data",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/dagster-io/dagster/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "93aed1dec84d15801939d969d284f84ccd145143"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "uv add dagster dagster-webserver dagster-dg-cli",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/dagster-io/dagster/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `uv add dagster dagster-webserver dagster-dg-cli`, define dos activos dependientes y materialízalos desde la interfaz.",
+        "success": "La interfaz muestra el grafo de activos y ambos aparecen materializados con sus metadatos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "probar pipelines de datos con tests unitarios antes de llevarlos a producción",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/dagster-io/dagster/blob/master/README.md",
+        "source_blob_sha": "93aed1dec84d15801939d969d284f84ccd145143",
+        "previous_category": [
+          1,
+          "motores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje.",
+      "desc": "Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/dagster-io/dagster",
+      "install": "uv add dagster dagster-webserver dagster-dg-cli",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles; probar pipelines de datos con tests unitarios antes de llevarlos a producción",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "mlflow",
+        "claude-code"
+      ],
+      "alt": [
+        "airflow",
+        "prefect",
+        "kestra"
+      ]
+    },
+    {
+      "id": "grist-core",
+      "name": "Grist",
+      "cat": 1,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "spreadsheet",
+        "docker",
+        "python"
+      ],
+      "routes": [
+        "no_api",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/gristlabs/grist-core/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "fae5fa1365bf85fb807c2795609719465d10e456"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -p 8484:8484 -it gristlabs/grist",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/gristlabs/grist-core/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Arranca la imagen Docker de prueba, crea un documento con dos tablas enlazadas y una fórmula Python.",
+        "success": "La fórmula se recalcula al editar la tabla referenciada y el documento sigue disponible tras reiniciar con /persist montado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "sustituir una hoja compartida por tablas relacionadas con permisos por fila",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "montar un inventario o CRM ligero en tu propio servidor",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/gristlabs/grist-core/blob/main/README.md",
+        "source_blob_sha": "fae5fa1365bf85fb807c2795609719465d10e456",
+        "previous_category": [
+          1,
+          "internas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite.",
+      "desc": "Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite.",
+      "stack": "TypeScript, Dockerfile, package.json",
+      "repo": "https://github.com/gristlabs/grist-core",
+      "install": "docker run -p 8484:8484 -it gristlabs/grist",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: sustituir una hoja compartida por tablas relacionadas con permisos por fila; montar un inventario o CRM ligero en tu propio servidor",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "activepieces",
+        "duckdb",
+        "coolify",
+        "claude-code"
+      ],
+      "alt": [
+        "baserow",
+        "teable",
         "nocodb"
       ]
     },
@@ -11983,7 +12494,10 @@
       ],
       "alt": [
         "windmill",
-        "trigger-dev"
+        "trigger-dev",
+        "airflow",
+        "prefect",
+        "dagster"
       ]
     },
     {
@@ -12102,7 +12616,10 @@
       ],
       "alt": [
         "appsmith",
-        "budibase"
+        "budibase",
+        "grist-core",
+        "baserow",
+        "teable"
       ]
     },
     {
@@ -12220,6 +12737,357 @@
       "alt": [
         "huginn"
       ]
+    },
+    {
+      "id": "prefect",
+      "name": "Prefect",
+      "cat": 1,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "automation",
+        "data",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/PrefectHQ/prefect/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "8db638e3a225f8ab758c35ee72c055393e56a405"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install -U prefect",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/PrefectHQ/prefect/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install -U prefect`, ejecuta el ejemplo de estrellas de GitHub del README y abre el servidor local.",
+        "success": "El flujo y sus tareas aparecen como completados en la interfaz con sus logs.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "convertir un script de ingesta en un flujo con reintentos y ejecución programada",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "encadenar pasos de datos o ML con dependencias dinámicas y observabilidad",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/PrefectHQ/prefect/blob/main/README.md",
+        "source_blob_sha": "8db638e3a225f8ab758c35ee72c055393e56a405",
+        "previous_category": [
+          1,
+          "motores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización.",
+      "desc": "Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización.",
+      "stack": "Python, Dockerfile, pyproject.toml",
+      "repo": "https://github.com/PrefectHQ/prefect",
+      "install": "pip install -U prefect",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: convertir un script de ingesta en un flujo con reintentos y ejecución programada; encadenar pasos de datos o ML con dependencias dinámicas y observabilidad",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "claude-code",
+        "mlflow"
+      ],
+      "alt": [
+        "airflow",
+        "dagster",
+        "kestra"
+      ]
+    },
+    {
+      "id": "teable",
+      "name": "Teable",
+      "cat": 1,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "no-code",
+        "typescript",
+        "docker"
+      ],
+      "routes": [
+        "no_api",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/teableio/teable/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "165770d4bab9f780142d912014a8c9c1366e6fc2"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/teableio/teable/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega Teable con la guía Docker oficial y crea una tabla con un formulario y una vista kanban.",
+        "success": "Los registros enviados por el formulario aparecen en la tabla y en la vista kanban, y se conservan tras reiniciar.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "gestionar un catálogo o pipeline comercial con vistas de cuadrícula, kanban y calendario",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "dar a un equipo tablas en PostgreSQL con permisos y API sin escribir backend",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/teableio/teable/blob/develop/README.md",
+        "source_blob_sha": "165770d4bab9f780142d912014a8c9c1366e6fc2",
+        "previous_category": [
+          1,
+          "internas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA.",
+      "desc": "Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/teableio/teable",
+      "install": "Seguir la instalación original: https://github.com/teableio/teable/blob/develop/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: gestionar un catálogo o pipeline comercial con vistas de cuadrícula, kanban y calendario; dar a un equipo tablas en PostgreSQL con permisos y API sin escribir backend",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "activepieces",
+        "supabase",
+        "metabase",
+        "coolify"
+      ],
+      "alt": [
+        "grist-core",
+        "baserow",
+        "nocodb"
+      ]
+    },
+    {
+      "id": "temporal",
+      "name": "Temporal",
+      "cat": 1,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "automation",
+        "go",
+        "server",
+        "agents"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/temporalio/temporal/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d89e30ebb9863ea82c9203e1e696170ea9484af9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "brew install temporal",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/temporalio/temporal/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala la CLI con `brew install temporal`, arranca el servidor de desarrollo y ejecuta el ejemplo hello-world de un SDK.",
+        "success": "El workflow aparece completado en la interfaz web local con su historial de eventos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "procesos de negocio largos como pagos o altas que deben completarse aunque caiga un servicio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "agentes de IA con pasos largos que necesitan reintentos y reanudación",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/temporalio/temporal/blob/main/README.md",
+        "source_blob_sha": "d89e30ebb9863ea82c9203e1e696170ea9484af9",
+        "previous_category": [
+          1,
+          "motores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor.",
+      "desc": "Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/temporalio/temporal",
+      "install": "brew install temporal",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: procesos de negocio largos como pagos o altas que deben completarse aunque caiga un servicio; agentes de IA con pasos largos que necesitan reintentos y reanudación",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "openai-agents-python",
+        "pydantic-ai",
+        "langgraph",
+        "grafana",
+        "claude-code"
+      ],
+      "alt": []
     },
     {
       "id": "tooljet",
@@ -16586,6 +17454,122 @@
       "alt": []
     },
     {
+      "id": "agentscope",
+      "name": "AgentScope",
+      "cat": 3,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "agents",
+        "python",
+        "mcp",
+        "framework"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+        "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/agentscope-ai/agentscope/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3820fb3a39b5c5ff47cea04beef2f98ff083a0fa"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "uv pip install agentscope",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/agentscope-ai/agentscope/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `uv pip install agentscope` y ejecuta el ejemplo de inicio rápido con un modelo configurado.",
+        "success": "El agente responde y usa al menos una herramienta, y puedes ver sus pasos en la salida.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "orquestar un equipo de agentes con un líder que delega tareas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/agentscope-ai/agentscope/blob/main/README.md",
+        "source_blob_sha": "3820fb3a39b5c5ff47cea04beef2f98ff083a0fa",
+        "previous_category": [
+          3,
+          "py"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable.",
+      "desc": "Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/agentscope-ai/agentscope",
+      "install": "uv pip install agentscope",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso; orquestar un equipo de agentes con un líder que delega tareas",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "ollama",
+        "fastmcp",
+        "langfuse",
+        "litellm"
+      ],
+      "alt": []
+    },
+    {
       "id": "agno",
       "name": "Agno",
       "cat": 3,
@@ -16956,6 +17940,234 @@
         "langgraph",
         "langchain",
         "deepagents"
+      ],
+      "alt": []
+    },
+    {
+      "id": "camel",
+      "name": "CAMEL",
+      "cat": 3,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "agents",
+        "python",
+        "research",
+        "framework"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+        "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/camel-ai/camel/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "92076babf5e2e66552069caea60ce56363823d1d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install camel-ai",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/camel-ai/camel/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install camel-ai`, configura la clave de un modelo y ejecuta el ejemplo de ChatAgent.",
+        "success": "El agente responde y el script termina sin errores mostrando la conversación.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "generar datos sintéticos con agentes que dialogan en roles",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "montar un experimento de simulación con muchos agentes y medir su comportamiento",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/camel-ai/camel/blob/master/README.md",
+        "source_blob_sha": "92076babf5e2e66552069caea60ce56363823d1d",
+        "previous_category": [
+          3,
+          "py"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores.",
+      "desc": "Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/camel-ai/camel",
+      "install": "pip install camel-ai",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: generar datos sintéticos con agentes que dialogan en roles; montar un experimento de simulación con muchos agentes y medir su comportamiento",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "ollama",
+        "qdrant",
+        "firecrawl",
+        "vllm"
+      ],
+      "alt": []
+    },
+    {
+      "id": "chatdev",
+      "name": "ChatDev",
+      "cat": 3,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "agents",
+        "python",
+        "research"
+      ],
+      "routes": [
+        "api"
+      ],
+      "access": {
+        "api": "required",
+        "local_model": "not_documented",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "usage_based",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OpenBMB/ChatDev/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f10600b131738b13df6fd6d1fdbd6c6df3644d1f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker compose up --build",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/OpenBMB/ChatDev/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Arranca la aplicación con `docker compose up --build`, configura una clave de modelo y ejecuta un flujo de ejemplo.",
+        "success": "El flujo termina y muestra los mensajes entre agentes y el artefacto generado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "prototipar una pequeña aplicación con agentes que actúan como roles de un equipo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "estudiar patrones de colaboración multiagente de los artículos del proyecto",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OpenBMB/ChatDev/blob/main/README.md",
+        "source_blob_sha": "f10600b131738b13df6fd6d1fdbd6c6df3644d1f",
+        "previous_category": [
+          3,
+          "py"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.",
+      "desc": "Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.",
+      "stack": "Python, Dockerfile, package.json, pyproject.toml, requirements.txt",
+      "repo": "https://github.com/OpenBMB/ChatDev",
+      "install": "docker compose up --build",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: prototipar una pequeña aplicación con agentes que actúan como roles de un equipo; estudiar patrones de colaboración multiagente de los artículos del proyecto",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "blender",
+        "blender-mcp",
+        "litellm"
       ],
       "alt": []
     },
@@ -19435,6 +20647,118 @@
       "alt": []
     },
     {
+      "id": "openmanus",
+      "name": "OpenManus",
+      "cat": 3,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "agents",
+        "python",
+        "browser"
+      ],
+      "routes": [
+        "api"
+      ],
+      "access": {
+        "api": "required",
+        "local_model": "not_documented",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "usage_based",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/FoundationAgents/OpenManus/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "a2b64c9cc810732131e9144202af7c66526f549e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/FoundationAgents/OpenManus/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea el entorno con uv según el README, configura la clave del modelo en config.toml y lanza una tarea pequeña de búsqueda.",
+        "success": "El agente completa los pasos visibles en consola y deja el resultado en el espacio de trabajo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "delegar una investigación web que termine en un informe guardado en disco",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "experimentar con un agente general en local antes de elegir un framework",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/FoundationAgents/OpenManus/blob/main/README.md",
+        "source_blob_sha": "a2b64c9cc810732131e9144202af7c66526f549e",
+        "previous_category": [
+          3,
+          "py"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.",
+      "desc": "Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.",
+      "stack": "Python, Dockerfile, requirements.txt, setup.py",
+      "repo": "https://github.com/FoundationAgents/OpenManus",
+      "install": "Seguir la instalación original: https://github.com/FoundationAgents/OpenManus/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: delegar una investigación web que termine en un informe guardado en disco; experimentar con un agente general en local antes de elegir un framework",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "browser-use",
+        "playwright",
+        "litellm"
+      ],
+      "alt": []
+    },
+    {
       "id": "pydantic-ai",
       "name": "Pydantic AI",
       "cat": 3,
@@ -20432,6 +21756,118 @@
       "alt": []
     },
     {
+      "id": "colly",
+      "name": "Colly",
+      "cat": 4,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "scraping",
+        "go",
+        "library"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/gocolly/colly/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e8b1b1834235307cf1883eb345ef9189dc52fd78"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/gocolly/colly/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea un módulo Go, añade Colly v2 y ejecuta uno de los ejemplos del repositorio contra un sitio de prueba.",
+        "success": "El programa visita las páginas y escribe los campos extraídos en la salida.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "escribir un rastreador rápido que extraiga datos estructurados de un sitio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "archivar páginas de un dominio respetando límites de velocidad",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/gocolly/colly/blob/master/README.md",
+        "source_blob_sha": "e8b1b1834235307cf1883eb345ef9189dc52fd78",
+        "previous_category": [
+          4,
+          "crawlers"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela.",
+      "desc": "Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/gocolly/colly",
+      "install": "Seguir la instalación original: https://github.com/gocolly/colly/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: escribir un rastreador rápido que extraiga datos estructurados de un sitio; archivar páginas de un dominio respetando límites de velocidad",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "claude-code"
+      ],
+      "alt": []
+    },
+    {
       "id": "crawl4ai",
       "name": "crawl4ai",
       "cat": 4,
@@ -21031,6 +22467,234 @@
       ]
     },
     {
+      "id": "freshrss",
+      "name": "FreshRSS",
+      "cat": 4,
+      "role": "platform",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "research",
+        "rss",
+        "php",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/FreshRSS/FreshRSS/blob/edge/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4f049f20f07c9dce1af330f784a85fe2f93e677b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/FreshRSS/FreshRSS/blob/edge/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega FreshRSS con Docker, importa un archivo OPML pequeño y actualiza los feeds.",
+        "success": "Los artículos aparecen en la interfaz y un cliente móvil compatible puede sincronizarlos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "centralizar en tu servidor los feeds de noticias y blogs que sigues",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "seguir webs sin RSS con reglas de extracción XPath",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/FreshRSS/FreshRSS/blob/edge/README.md",
+        "source_blob_sha": "4f049f20f07c9dce1af330f784a85fe2f93e677b",
+        "previous_category": [
+          4,
+          "busqueda"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.",
+      "desc": "Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.",
+      "stack": "PHP, composer.json, package.json",
+      "repo": "https://github.com/FreshRSS/FreshRSS",
+      "install": "Seguir la instalación original: https://github.com/FreshRSS/FreshRSS/blob/edge/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: centralizar en tu servidor los feeds de noticias y blogs que sigues; seguir webs sin RSS con reglas de extracción XPath",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "rsshub",
+        "wallabag",
+        "coolify"
+      ],
+      "alt": [
+        "miniflux"
+      ]
+    },
+    {
+      "id": "gallery-dl",
+      "name": "gallery-dl",
+      "cat": 4,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "scraping",
+        "python",
+        "image",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/mikf/gallery-dl/blob/master/README.rst"
+        ],
+        "mode": "software",
+        "source_blob_sha": "09ba97ce9d6a5c4adb9cb2233a8db6bb6e286e8e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "brew install gallery-dl",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/mikf/gallery-dl/blob/master/README.rst",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala gallery-dl (pip, Homebrew o binario) y descarga una galería pública pequeña a una carpeta de prueba.",
+        "success": "Las imágenes quedan en disco con la estructura de carpetas y nombres configurada.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "archivar una colección propia de imágenes con metadatos y nombres ordenados",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "descargar un conjunto de imágenes públicas para un dataset con permiso de uso",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/mikf/gallery-dl/blob/master/README.rst",
+        "source_blob_sha": "09ba97ce9d6a5c4adb9cb2233a8db6bb6e286e8e",
+        "previous_category": [
+          4,
+          "social"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables.",
+      "desc": "Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables.",
+      "stack": "Python, Dockerfile, pyproject.toml, requirements.txt, setup.py",
+      "repo": "https://github.com/mikf/gallery-dl",
+      "install": "brew install gallery-dl",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: archivar una colección propia de imágenes con metadatos y nombres ordenados; descargar un conjunto de imágenes públicas para un dataset con permiso de uso",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "yt-dlp",
+        "ffmpeg",
+        "real-esrgan"
+      ],
+      "alt": []
+    },
+    {
       "id": "instaloader",
       "name": "instaloader",
       "cat": 4,
@@ -21263,6 +22927,119 @@
         "firecrawl",
         "crawl4ai"
       ]
+    },
+    {
+      "id": "katana",
+      "name": "Katana",
+      "cat": 4,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "scraping",
+        "go",
+        "security",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/projectdiscovery/katana/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2b2e744f334c1f452d57918a376fce2cb26e643c"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "go install github.com/projectdiscovery/katana/cmd/katana@latest",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/projectdiscovery/katana/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta la imagen Docker oficial contra el sitio de ejemplo books.toscrape.com que usa el README.",
+        "success": "Katana lista las URLs descubiertas sin errores.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "descubrir los endpoints de una aplicación propia antes de una auditoría autorizada",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "mapear rutas generadas por JavaScript en un sitio de pruebas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/projectdiscovery/katana/blob/dev/README.md",
+        "source_blob_sha": "2b2e744f334c1f452d57918a376fce2cb26e643c",
+        "previous_category": [
+          4,
+          "crawlers"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON.",
+      "desc": "Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON.",
+      "stack": "Go, Dockerfile, go.mod",
+      "repo": "https://github.com/projectdiscovery/katana",
+      "install": "go install github.com/projectdiscovery/katana/cmd/katana@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "mitmproxy",
+        "duckdb",
+        "claude-code"
+      ],
+      "alt": []
     },
     {
       "id": "last30days-skill",
@@ -21634,6 +23411,235 @@
         "scrapegraph-ai",
         "llm-scraper"
       ]
+    },
+    {
+      "id": "miniflux",
+      "name": "Miniflux",
+      "cat": 4,
+      "role": "platform",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "research",
+        "rss",
+        "go",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/miniflux/v2/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e18aa617526b844572a9b12217421f446f0dc783"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/miniflux/v2/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega Miniflux con PostgreSQL según la guía, importa un OPML y lee un artículo.",
+        "success": "Los feeds se actualizan, la búsqueda devuelve resultados y no aparecen píxeles de seguimiento.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "leer feeds sin rastreadores en una instancia propia ligera",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "enviar artículos automáticamente a un servicio de lectura o notas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/miniflux/v2/blob/main/README.md",
+        "source_blob_sha": "e18aa617526b844572a9b12217421f446f0dc783",
+        "previous_category": [
+          4,
+          "busqueda"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.",
+      "desc": "Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/miniflux/v2",
+      "install": "Seguir la instalación original: https://github.com/miniflux/v2/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: leer feeds sin rastreadores en una instancia propia ligera; enviar artículos automáticamente a un servicio de lectura o notas",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "rsshub",
+        "wallabag",
+        "coolify"
+      ],
+      "alt": [
+        "freshrss"
+      ]
+    },
+    {
+      "id": "rsshub",
+      "name": "RSSHub",
+      "cat": 4,
+      "role": "platform",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "research",
+        "rss",
+        "typescript",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/DIYgod/RSSHub/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2b9abe2ac0c86b38926229e7d2b0b14121052b96"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/DIYgod/RSSHub/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega RSSHub con Docker según su documentación y abre una ruta de ejemplo en el navegador.",
+        "success": "La ruta devuelve un feed RSS válido que tu lector puede suscribir.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "seguir canales, perfiles o webs sin RSS desde tu lector de feeds",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "alimentar un flujo de monitorización de fuentes con feeds uniformes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/DIYgod/RSSHub/blob/master/README.md",
+        "source_blob_sha": "2b9abe2ac0c86b38926229e7d2b0b14121052b96",
+        "previous_category": [
+          4,
+          "busqueda"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.",
+      "desc": "Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.",
+      "stack": "TypeScript, Dockerfile, docker-compose.yml, package.json",
+      "repo": "https://github.com/DIYgod/RSSHub",
+      "install": "Seguir la instalación original: https://github.com/DIYgod/RSSHub/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: seguir canales, perfiles o webs sin RSS desde tu lector de feeds; alimentar un flujo de monitorización de fuentes con feeds uniformes",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "freshrss",
+        "miniflux",
+        "activepieces",
+        "coolify"
+      ],
+      "alt": []
     },
     {
       "id": "scrapegraph-ai",
@@ -22112,6 +24118,118 @@
       "alt": []
     },
     {
+      "id": "spotdl",
+      "name": "spotDL",
+      "cat": 4,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "audio",
+        "python",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/spotDL/spotify-downloader/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "69d2189d790ecc0bced007fdc3b6bf36ef62c479"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pip install spotdl",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/spotDL/spotify-downloader/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install spotdl`, prepara FFmpeg y descarga una canción con su URL.",
+        "success": "El archivo de audio queda en la carpeta con título, artista y carátula incrustados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "conservar una copia local de listas de reproducción propias",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "etiquetar automáticamente archivos de audio con metadatos de Spotify",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/spotDL/spotify-downloader/blob/master/README.md",
+        "source_blob_sha": "69d2189d790ecc0bced007fdc3b6bf36ef62c479",
+        "previous_category": [
+          4,
+          "social"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos.",
+      "desc": "CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos.",
+      "stack": "Python, Dockerfile, docker-compose.yml, pyproject.toml",
+      "repo": "https://github.com/spotDL/spotify-downloader",
+      "install": "pip install spotdl",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: conservar una copia local de listas de reproducción propias; etiquetar automáticamente archivos de audio con metadatos de Spotify",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "ffmpeg",
+        "yt-dlp",
+        "syncthing"
+      ],
+      "alt": []
+    },
+    {
       "id": "vane",
       "name": "Vane",
       "cat": 4,
@@ -22233,6 +24351,119 @@
       "alt": [
         "gpt-researcher"
       ]
+    },
+    {
+      "id": "wallabag",
+      "name": "wallabag",
+      "cat": 4,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "research",
+        "read-later",
+        "php",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/wallabag/wallabag/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "29d55b08ecc51d0bda3589fc3a6f56d2bdda1a1e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/wallabag/wallabag/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala wallabag con Docker o según su documentación y guarda un artículo desde la extensión del navegador.",
+        "success": "El artículo aparece limpio en la lista de lectura y se puede exportar.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "guardar artículos para leerlos sin conexión en el móvil",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "archivar lecturas con etiquetas y anotaciones en tu propio servidor",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/wallabag/wallabag/blob/master/README.md",
+        "source_blob_sha": "29d55b08ecc51d0bda3589fc3a6f56d2bdda1a1e",
+        "previous_category": [
+          4,
+          "busqueda"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.",
+      "desc": "Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.",
+      "stack": "PHP, compose.yaml, composer.json, package.json",
+      "repo": "https://github.com/wallabag/wallabag",
+      "install": "Seguir la instalación original: https://github.com/wallabag/wallabag/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: guardar artículos para leerlos sin conexión en el móvil; archivar lecturas con etiquetas y anotaciones en tu propio servidor",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "freshrss",
+        "miniflux",
+        "coolify"
+      ],
+      "alt": []
     },
     {
       "id": "yt-dlp",
@@ -22818,7 +25049,8 @@
         "blender",
         "unity-mcp",
         "blender-skills",
-        "dream-loop"
+        "dream-loop",
+        "chatdev"
       ],
       "alt": []
     },
@@ -48789,7 +51021,8 @@
         "home-assistant",
         "coolify",
         "paperless-ngx",
-        "audiobookshelf"
+        "audiobookshelf",
+        "spotdl"
       ],
       "alt": []
     },
@@ -65565,7 +67798,8 @@
         "transformers",
         "deepeval",
         "ragas",
-        "qlib"
+        "qlib",
+        "airflow"
       ],
       "alt": [
         "langfuse"
@@ -85659,7 +87893,8 @@
         "claude-code",
         "ollama",
         "pydantic-ai",
-        "sandbox"
+        "sandbox",
+        "openmanus"
       ],
       "alt": [
         "computer-use-preview",

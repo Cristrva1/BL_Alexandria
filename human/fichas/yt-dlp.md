@@ -32,9 +32,9 @@ Se instala con los binarios oficiales, `pip install -U "yt-dlp[default]"` o gest
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) · [ArchiveBox](archivebox.md) · [Concat](concat.md) · [instaloader](instaloader.md) · [LosslessCut](lossless-cut.md) · [obsidian-second-brain](obsidian-second-brain.md) · [VideoLingo](videolingo.md)
+[AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) · [ArchiveBox](archivebox.md) · [Concat](concat.md) · [gallery-dl](gallery-dl.md) · [instaloader](instaloader.md) · [LosslessCut](lossless-cut.md) · [obsidian-second-brain](obsidian-second-brain.md) · [spotDL](spotdl.md) · [VideoLingo](videolingo.md)
 
 **Notas:** Sin alternativas declaradas. Descargar contenido protegido puede infringir derechos de autor o términos de uso.
 

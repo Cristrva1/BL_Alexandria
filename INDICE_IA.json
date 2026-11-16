@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 623 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 642 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -308,7 +308,7 @@
    "title": "Automatizar procesos y crear herramientas internas",
    "desc": "Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-   "count": 10,
+   "count": 17,
    "subs": [
     {
      "key": "motores",
@@ -346,7 +346,7 @@
    "title": "Construir agentes y coordinar equipos de IA",
    "desc": "Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.",
    "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
-   "count": 30,
+   "count": 34,
    "subs": [
     {
      "key": "py",
@@ -373,7 +373,7 @@
    "title": "Buscar, extraer y monitorear información web",
    "desc": "Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web.",
    "file": "human/categorias/04-scraping-b-squeda-research-web.md",
-   "count": 20,
+   "count": 28,
    "subs": [
     {
      "key": "crawlers",
@@ -2391,7 +2391,10 @@
    "one": "Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio.",
    "alt": [
     "windmill",
-    "trigger-dev"
+    "trigger-dev",
+    "airflow",
+    "prefect",
+    "dagster"
    ],
    "doc": "human/fichas/kestra.md",
    "github_id": 204164353,
@@ -3147,7 +3150,10 @@
    "one": "Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas.",
    "alt": [
     "appsmith",
-    "budibase"
+    "budibase",
+    "grist-core",
+    "baserow",
+    "teable"
    ],
    "doc": "human/fichas/nocodb.md",
    "github_id": 108761645,
@@ -25728,6 +25734,719 @@
    "routes": [
     "api"
    ]
+  },
+  {
+   "id": "grist-core",
+   "name": "Grist",
+   "cat": 1,
+   "sub": "internas",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "spreadsheet",
+    "docker",
+    "python"
+   ],
+   "stars": 12103,
+   "gh": "gristlabs/grist-core",
+   "lib": false,
+   "pick": false,
+   "one": "Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite.",
+   "alt": [
+    "baserow",
+    "teable",
+    "nocodb"
+   ],
+   "doc": "human/fichas/grist-core.md",
+   "github_id": 266033395,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "airflow",
+   "name": "Apache Airflow",
+   "cat": 1,
+   "sub": "motores",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "data",
+    "python",
+    "docker"
+   ],
+   "stars": 47492,
+   "gh": "apache/airflow",
+   "lib": false,
+   "pick": false,
+   "one": "Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.",
+   "alt": [
+    "prefect",
+    "dagster",
+    "kestra"
+   ],
+   "doc": "human/fichas/airflow.md",
+   "github_id": 33884891,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "temporal",
+   "name": "Temporal",
+   "cat": 1,
+   "sub": "motores",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "go",
+    "server",
+    "agents"
+   ],
+   "stars": 24423,
+   "gh": "temporalio/temporal",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor.",
+   "alt": [],
+   "doc": "human/fichas/temporal.md",
+   "github_id": 215654064,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "teable",
+   "name": "Teable",
+   "cat": 1,
+   "sub": "internas",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "no-code",
+    "typescript",
+    "docker"
+   ],
+   "stars": 21993,
+   "gh": "teableio/teable",
+   "lib": false,
+   "pick": false,
+   "one": "Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA.",
+   "alt": [
+    "grist-core",
+    "baserow",
+    "nocodb"
+   ],
+   "doc": "human/fichas/teable.md",
+   "github_id": 560299175,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "baserow",
+   "name": "Baserow",
+   "cat": 1,
+   "sub": "internas",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "no-code",
+    "python",
+    "docker"
+   ],
+   "stars": 6347,
+   "gh": "baserow/baserow",
+   "lib": false,
+   "pick": false,
+   "one": "Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.",
+   "alt": [
+    "grist-core",
+    "teable",
+    "nocodb"
+   ],
+   "doc": "human/fichas/baserow.md",
+   "github_id": 281073868,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "prefect",
+   "name": "Prefect",
+   "cat": 1,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "data",
+    "python"
+   ],
+   "stars": 24163,
+   "gh": "PrefectHQ/prefect",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización.",
+   "alt": [
+    "airflow",
+    "dagster",
+    "kestra"
+   ],
+   "doc": "human/fichas/prefect.md",
+   "github_id": 139199684,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dagster",
+   "name": "Dagster",
+   "cat": 1,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "data",
+    "python"
+   ],
+   "stars": 16427,
+   "gh": "dagster-io/dagster",
+   "lib": false,
+   "pick": false,
+   "one": "Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje.",
+   "alt": [
+    "airflow",
+    "prefect",
+    "kestra"
+   ],
+   "doc": "human/fichas/dagster.md",
+   "github_id": 131619646,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "agentscope",
+   "name": "AgentScope",
+   "cat": 3,
+   "sub": "py",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "agents",
+    "python",
+    "mcp",
+    "framework"
+   ],
+   "stars": 36070,
+   "gh": "agentscope-ai/agentscope",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable.",
+   "alt": [],
+   "doc": "human/fichas/agentscope.md",
+   "github_id": 742244656,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "openmanus",
+   "name": "OpenManus",
+   "cat": 3,
+   "sub": "py",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "agents",
+    "python",
+    "browser"
+   ],
+   "stars": 58969,
+   "gh": "FoundationAgents/OpenManus",
+   "lib": false,
+   "pick": false,
+   "one": "Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.",
+   "alt": [],
+   "doc": "human/fichas/openmanus.md",
+   "github_id": 943934999,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "chatdev",
+   "name": "ChatDev",
+   "cat": 3,
+   "sub": "py",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "agents",
+    "python",
+    "research"
+   ],
+   "stars": 34755,
+   "gh": "OpenBMB/ChatDev",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.",
+   "alt": [],
+   "doc": "human/fichas/chatdev.md",
+   "github_id": 683892956,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "camel",
+   "name": "CAMEL",
+   "cat": 3,
+   "sub": "py",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "agents",
+    "python",
+    "research",
+    "framework"
+   ],
+   "stars": 18036,
+   "gh": "camel-ai/camel",
+   "lib": false,
+   "pick": false,
+   "one": "Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores.",
+   "alt": [],
+   "doc": "human/fichas/camel.md",
+   "github_id": 615510678,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "rsshub",
+   "name": "RSSHub",
+   "cat": 4,
+   "sub": "busqueda",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "research",
+    "rss",
+    "typescript",
+    "docker"
+   ],
+   "stars": 47043,
+   "gh": "DIYgod/RSSHub",
+   "lib": false,
+   "pick": false,
+   "one": "Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.",
+   "alt": [],
+   "doc": "human/fichas/rsshub.md",
+   "github_id": 127769231,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "gallery-dl",
+   "name": "gallery-dl",
+   "cat": 4,
+   "sub": "social",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "scraping",
+    "python",
+    "image",
+    "cli"
+   ],
+   "stars": 20527,
+   "gh": "mikf/gallery-dl",
+   "lib": false,
+   "pick": false,
+   "one": "Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables.",
+   "alt": [],
+   "doc": "human/fichas/gallery-dl.md",
+   "github_id": 25129800,
+   "lang": "Python",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "freshrss",
+   "name": "FreshRSS",
+   "cat": 4,
+   "sub": "busqueda",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "research",
+    "rss",
+    "php",
+    "docker"
+   ],
+   "stars": 16596,
+   "gh": "FreshRSS/FreshRSS",
+   "lib": false,
+   "pick": false,
+   "one": "Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.",
+   "alt": [
+    "miniflux"
+   ],
+   "doc": "human/fichas/freshrss.md",
+   "github_id": 6322699,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "wallabag",
+   "name": "wallabag",
+   "cat": 4,
+   "sub": "busqueda",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "research",
+    "read-later",
+    "php",
+    "docker"
+   ],
+   "stars": 13063,
+   "gh": "wallabag/wallabag",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.",
+   "alt": [],
+   "doc": "human/fichas/wallabag.md",
+   "github_id": 9193949,
+   "lang": "PHP",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "miniflux",
+   "name": "Miniflux",
+   "cat": 4,
+   "sub": "busqueda",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "research",
+    "rss",
+    "go",
+    "docker"
+   ],
+   "stars": 9942,
+   "gh": "miniflux/v2",
+   "lib": false,
+   "pick": false,
+   "one": "Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.",
+   "alt": [
+    "freshrss"
+   ],
+   "doc": "human/fichas/miniflux.md",
+   "github_id": 111364256,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "colly",
+   "name": "Colly",
+   "cat": 4,
+   "sub": "crawlers",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "scraping",
+    "go",
+    "library"
+   ],
+   "stars": 25599,
+   "gh": "gocolly/colly",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela.",
+   "alt": [],
+   "doc": "human/fichas/colly.md",
+   "github_id": 105279544,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "katana",
+   "name": "Katana",
+   "cat": 4,
+   "sub": "crawlers",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "scraping",
+    "go",
+    "security",
+    "cli"
+   ],
+   "stars": 17855,
+   "gh": "projectdiscovery/katana",
+   "lib": false,
+   "pick": false,
+   "one": "Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON.",
+   "alt": [],
+   "doc": "human/fichas/katana.md",
+   "github_id": 326228917,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "spotdl",
+   "name": "spotDL",
+   "cat": 4,
+   "sub": "social",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "python",
+    "cli"
+   ],
+   "stars": 26846,
+   "gh": "spotDL/spotify-downloader",
+   "lib": false,
+   "pick": false,
+   "one": "CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos.",
+   "alt": [],
+   "doc": "human/fichas/spotdl.md",
+   "github_id": 62743585,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
   }
  ],
  "discovery": {
@@ -25748,6 +26467,7 @@
      "goose"
     ],
     "categories": [
+     3,
      7,
      16,
      20
@@ -25891,6 +26611,7 @@
      "storm"
     ],
     "categories": [
+     3,
      4,
      21
     ],

@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**78 repos.**
+**79 repos.**
 
 ## ⏳ Diferir
 
@@ -12,6 +12,7 @@ _Pesado: solo si llega a finalista._
 
 | Repo | Categoría | Qué hace |
 |---|---|---|
+| [Apache Airflow](fichas/airflow.md) | 🤖 Automatizar procesos y crear herramientas internas | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. |
 | [AutoGPT](fichas/autogpt.md) | 🕸️ Construir agentes y coordinar equipos de IA | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. |
 | [MiroFish](fichas/mirofish.md) | 🕸️ Construir agentes y coordinar equipos de IA | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. |
 | [openevolve](fichas/openevolve.md) | 🕸️ Construir agentes y coordinar equipos de IA | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. |

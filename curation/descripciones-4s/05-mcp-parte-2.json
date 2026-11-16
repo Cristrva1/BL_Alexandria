@@ -76,6 +76,12 @@
      "motivo": "Combinación recíproca: dream-loop lo enlaza como «Vía preferida para que el agente controle Blender».",
      "orden_instalacion": "Orden indicado desde dream-loop: Blender abierto con el complemento del MCP antes de iniciar el bucle.",
      "reciproca_de": "dream-loop"
+    },
+    {
+     "id": "chatdev",
+     "motivo": "Combinación recíproca: ChatDev lo enlaza como «ChatDev documenta blender-mcp como requisito de su flujo de construcción 3D».",
+     "orden_instalacion": "Orden indicado desde ChatDev: Blender primero, luego blender-mcp, y por último el flujo de ChatDev.",
+     "reciproca_de": "chatdev"
     }
    ],
    "notas": "Sin alternativas declaradas. Revisa los ajustes de telemetría y el uso de servicios 3D de terceros.",

@@ -33,6 +33,12 @@ Está escrito en Python; se instala con los binarios oficiales, `pipx install mi
 | [Selenium](selenium.md) | Combinación recíproca: Selenium lo enlaza como «Inspección de tráfico en pruebas. (combinación por arquitectura)». | Orden indicado desde Selenium: Configura el proxy en el navegador. |
 | [shannon](shannon.md) | Combinación recíproca: shannon lo enlaza como «Observar el tráfico de la prueba contra el entorno de staging. (combinación por arquitectura)». | Orden indicado desde shannon: Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Katana](katana.md)
+
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v12.3.1 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).

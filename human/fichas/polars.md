@@ -34,9 +34,9 @@ Se instala con `pip install polars` (hay feature flags para extras) o se compila
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[JupyterLab](jupyterlab.md) · [nautilus_trader](nautilus-trader.md) · [Windmill](windmill.md)
+[Apache Airflow](airflow.md) · [Colly](colly.md) · [Dagster](dagster.md) · [JupyterLab](jupyterlab.md) · [nautilus_trader](nautilus-trader.md) · [Prefect](prefect.md) · [Windmill](windmill.md)
 
 **Notas:** Alternativas (elige una): duckdb.
 

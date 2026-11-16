@@ -32,9 +32,9 @@ Se instala con paquetes, Docker o Helm, o se usa en Grafana Cloud. Está escrito
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[freqtrade](freqtrade.md) · [hummingbot](hummingbot.md) · [k6](k6.md) · [Matomo](matomo.md) · [Node-RED](node-red.md) · [open-sol-bot](open-sol-bot.md) · [Plausible Analytics](plausible.md) · [uPlot](uplot.md)
+[Apache Airflow](airflow.md) · [freqtrade](freqtrade.md) · [hummingbot](hummingbot.md) · [k6](k6.md) · [Matomo](matomo.md) · [Node-RED](node-red.md) · [open-sol-bot](open-sol-bot.md) · [Plausible Analytics](plausible.md) · [Temporal](temporal.md) · [uPlot](uplot.md)
 
 **Notas:** Sin alternativas declaradas. AGPL: ofrecerlo modificado como servicio obliga a publicar cambios.
 

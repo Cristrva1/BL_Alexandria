@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-621 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+640 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -27,8 +27,8 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Credenciales y privacidad, Aprender ciberseguridad | 30 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 89 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 21 |
-| [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 42 |
-| [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 102 |
+| [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 49 |
+| [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 114 |
 | [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 47 |
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 51 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 28 |
@@ -44,10 +44,10 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 
 | # | Categoría | Repos | Puntos de partida |
 |---:|---|---:|---|
-| 1 | [🤖 Automatizar procesos y crear herramientas internas](categorias/01-automatizaci-n-mensajer-a-crm.md) | 10 | [NocoDB](fichas/nocodb.md) |
+| 1 | [🤖 Automatizar procesos y crear herramientas internas](categorias/01-automatizaci-n-mensajer-a-crm.md) | 17 | [NocoDB](fichas/nocodb.md) |
 | 2 | [🧠 Skills, plugins y métodos para agentes](categorias/02-skills-prompts-gu-as-de-agente.md) | 30 | [Anthropic Skills](fichas/anthropic-skills.md), [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agent Skills (Addy Osmani)](fichas/agent-skills.md) |
-| 3 | [🕸️ Construir agentes y coordinar equipos de IA](categorias/03-frameworks-orquestaci-n-de-agentes.md) | 30 | [LangGraph](fichas/langgraph.md), [Mastra](fichas/mastra.md), [Sim](fichas/sim.md), [MiroFish](fichas/mirofish.md) |
-| 4 | [🕷️ Buscar, extraer y monitorear información web](categorias/04-scraping-b-squeda-research-web.md) | 20 | [firecrawl](fichas/firecrawl.md), [Scrapegraph-ai](fichas/scrapegraph-ai.md), [SearXNG](fichas/searxng.md), [yt-dlp](fichas/yt-dlp.md) |
+| 3 | [🕸️ Construir agentes y coordinar equipos de IA](categorias/03-frameworks-orquestaci-n-de-agentes.md) | 34 | [LangGraph](fichas/langgraph.md), [Mastra](fichas/mastra.md), [Sim](fichas/sim.md), [MiroFish](fichas/mirofish.md) |
+| 4 | [🕷️ Buscar, extraer y monitorear información web](categorias/04-scraping-b-squeda-research-web.md) | 28 | [firecrawl](fichas/firecrawl.md), [Scrapegraph-ai](fichas/scrapegraph-ai.md), [SearXNG](fichas/searxng.md), [yt-dlp](fichas/yt-dlp.md) |
 | 5 | [🔌 Conectar herramientas con MCP](categorias/05-mcp-conectividad.md) | 23 | [FastMCP](fichas/fastmcp.md), [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md), [Context7](fichas/context7.md), [Playwright MCP](fichas/playwright-mcp.md), [MCP for Beginners](fichas/mcp-for-beginners.md) |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](categorias/06-memoria-rag-llm-ops.md) | 23 | [claude-mem](fichas/claude-mem.md), [RAGFlow](fichas/ragflow.md), [Qdrant](fichas/qdrant.md) |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 11 | [Repomix](fichas/repomix.md), [ast-grep](fichas/ast-grep.md), [GitHub CLI](fichas/cli.md) |

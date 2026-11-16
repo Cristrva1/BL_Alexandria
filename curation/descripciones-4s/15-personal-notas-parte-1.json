@@ -293,6 +293,12 @@
      "id": "audiobookshelf",
      "motivo": "Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura)",
      "orden_instalacion": "Comparte la carpeta de la biblioteca en Syncthing."
+    },
+    {
+     "id": "spotdl",
+     "motivo": "Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing.",
+     "reciproca_de": "spotdl"
     }
    ],
    "notas": "Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.",

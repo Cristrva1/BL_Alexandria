@@ -34,9 +34,9 @@ Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST de
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agno](agno.md) · [AnythingLLM](anything-llm.md) · [crawlee-python](crawlee-python.md) · [Haystack](haystack.md) · [langchain4j](langchain4j.md) · [mem0](mem0.md) · [STORM](storm.md) · [transformers.js](transformers-js.md) · [Unstructured](unstructured.md)
+[agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agno](agno.md) · [AnythingLLM](anything-llm.md) · [CAMEL](camel.md) · [crawlee-python](crawlee-python.md) · [Haystack](haystack.md) · [langchain4j](langchain4j.md) · [mem0](mem0.md) · [STORM](storm.md) · [transformers.js](transformers-js.md) · [Unstructured](unstructured.md)
 
 **Notas:** Alternativas (elige una): milvus, chroma, pgvector, faiss. Configura autenticación (API key) antes de exponer el puerto 6333.
 

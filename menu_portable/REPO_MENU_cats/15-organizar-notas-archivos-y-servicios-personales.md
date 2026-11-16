@@ -760,7 +760,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sincroniza una carpeta con un archivo ficticio y observa un cambio desde el segundo equipo
 **Qué comprobar:** Ambos equipos muestran el mismo contenido y estado de sincronización
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `home-assistant`, `coolify`, `paperless-ngx`, `audiobookshelf`
+**Combina con:** `home-assistant`, `coolify`, `paperless-ngx`, `audiobookshelf`, `spotdl`
 
 ## `universal-android-debloater-next-generation`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=personal,app,rust

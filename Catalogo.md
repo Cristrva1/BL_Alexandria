@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**621 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**640 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -8,10 +8,10 @@
 
 ## Índice
 
-1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 10
+1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 17
 2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 30
-3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 30
-4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 20
+3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 34
+4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 28
 5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 23
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 23
 7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 11
@@ -49,11 +49,15 @@ _Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.de
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [huginn](human/fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Apache Airflow](human/fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [Kestra](human/fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [activepieces](human/fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [Temporal](human/fichas/temporal.md) | Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Prefect](human/fichas/prefect.md) | Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Node-RED](human/fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [Windmill](human/fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [Trigger.dev](human/fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [Dagster](human/fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ### Apps internas y bases de datos no-code
 
@@ -63,6 +67,9 @@ _Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.de
 | [Appsmith](human/fichas/appsmith.md) | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [ToolJet](human/fichas/tooljet.md) | Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [Budibase](human/fichas/budibase.md) | Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [Teable](human/fichas/teable.md) | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [Grist](human/fichas/grist-core.md) | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite. | API de IA opcional | ⚙️ plataforma | 🟢 fácil |
+| [Baserow](human/fichas/baserow.md) | Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first. | API de IA opcional | ⚙️ plataforma | 🟢 fácil |
 
 ## 🧠 2. Skills, plugins y métodos para agentes
 
@@ -120,15 +127,19 @@ _Frameworks, builders visuales y experimentos de coordinación. Separa la base t
 | [langchain](human/fichas/langchain.md) | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 | [MetaGPT](human/fichas/metagpt.md) | Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. | Depende de la ruta elegida | 🧩 motor/runtime | 🟡 medio |
 | [crewAI](human/fichas/crewai.md) | Framework para orquestar "crews" de agentes con roles y tareas. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
+| [OpenManus](human/fichas/openmanus.md) | Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP. | API de IA necesaria | 🖥️ app | 🟡 medio |
 | [LlamaIndex](human/fichas/llama-index.md) | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
 | [Agno](human/fichas/agno.md) | Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. | Depende de la ruta elegida | 🧩 motor/runtime | 🟢 fácil |
 | [DSPy](human/fichas/dspy.md) | Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
+| [AgentScope](human/fichas/agentscope.md) | Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
+| [ChatDev](human/fichas/chatdev.md) | Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software. | API de IA necesaria | 🖥️ app | 🟡 medio |
 | [Deep Agents](human/fichas/deepagents.md) | Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. | Depende de la ruta elegida | 🧩 motor/runtime | 🟢 fácil |
 | [OpenAI Agents SDK](human/fichas/openai-agents-python.md) | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
 | [smolagents](human/fichas/smolagents.md) | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
 | [Haystack](human/fichas/haystack.md) | Framework de deepset para pipelines de RAG y agentes listos para producción. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 | [Agent Development Kit (ADK)](human/fichas/adk-python.md) | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
 | [Pydantic AI](human/fichas/pydantic-ai.md) | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
+| [CAMEL](human/fichas/camel.md) | Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [claude-agent-sdk-python](human/fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | API de IA necesaria | 📚 librería/SDK | 🟡 medio |
 | [ag2](human/fichas/ag2.md) | Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 | [awesome-LangGraph](human/fichas/awesome-langgraph.md) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
@@ -175,6 +186,8 @@ _Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer
 | [crawl4ai](human/fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [scrapy](human/fichas/scrapy.md) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [crawlee](human/fichas/crawlee.md) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Colly](human/fichas/colly.md) | Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Katana](human/fichas/katana.md) | Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Jina Reader](human/fichas/jina-reader.md) | Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [defuddle](human/fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [crawlee-python](human/fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
@@ -195,15 +208,21 @@ _Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer
 | ⭐ [SearXNG](human/fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [Agent-Reach](human/fichas/agent-reach.md) | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [last30days](human/fichas/last30days-skill.md) | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. | API de IA opcional | 🎨 skill/prompt | 🟢 fácil |
+| [RSSHub](human/fichas/rsshub.md) | Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [Vane](human/fichas/vane.md) | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). | Depende de la ruta elegida | 🖥️ app | 🟢 fácil |
 | [changedetection.io](human/fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [ArchiveBox](human/fichas/archivebox.md) | Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [FreshRSS](human/fichas/freshrss.md) | Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [wallabag](human/fichas/wallabag.md) | Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Miniflux](human/fichas/miniflux.md) | Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 
 ### Redes sociales y descarga de medios
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [yt-dlp](human/fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [spotDL](human/fichas/spotdl.md) | CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [gallery-dl](human/fichas/gallery-dl.md) | Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [instaloader](human/fichas/instaloader.md) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 
 ## 🔌 5. Conectar herramientas con MCP

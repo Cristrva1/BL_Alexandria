@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-42 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+49 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -18,14 +18,18 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [activepieces](../fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
+| [Apache Airflow](../fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Sin clave propia de API de IA en la ruta básica |
+| [Dagster](../fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica |
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
 | [Node-RED](../fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica |
+| [Prefect](../fichas/prefect.md) | Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización. | Sin clave propia de API de IA en la ruta básica |
+| [Temporal](../fichas/temporal.md) | Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor. | Sin clave propia de API de IA en la ruta básica |
 | [Trigger.dev](../fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional |
 | [Windmill](../fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional |
 
@@ -97,13 +101,16 @@ Guías para que tu agente prepare análisis, mensajes y contenido.
 
 Crear herramientas de operación y formularios sobre tus datos.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-apps)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-apps)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Appsmith](../fichas/appsmith.md) | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. | API de IA opcional |
+| [Baserow](../fichas/baserow.md) | Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first. | API de IA opcional |
 | [Budibase](../fichas/budibase.md) | Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. | API de IA opcional |
+| [Grist](../fichas/grist-core.md) | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite. | API de IA opcional |
 | [NocoDB](../fichas/nocodb.md) | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas. | Sin clave propia de API de IA en la ruta básica |
+| [Teable](../fichas/teable.md) | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA. | API de IA opcional |
 | [ToolJet](../fichas/tooljet.md) | Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. | API de IA opcional |
 
 ### Reservas y citas

@@ -6,12 +6,18 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 
 | Repo | Alternativas declaradas |
 |---|---|
+| [Apache Airflow](fichas/airflow.md) | [Prefect](fichas/prefect.md), [Dagster](fichas/dagster.md), [Kestra](fichas/kestra.md) |
 | [Appsmith](fichas/appsmith.md) | [ToolJet](fichas/tooljet.md), [Budibase](fichas/budibase.md), [NocoDB](fichas/nocodb.md) |
+| [Baserow](fichas/baserow.md) | [Grist](fichas/grist-core.md), [Teable](fichas/teable.md), [NocoDB](fichas/nocodb.md) |
 | [Budibase](fichas/budibase.md) | [Appsmith](fichas/appsmith.md), [ToolJet](fichas/tooljet.md), [NocoDB](fichas/nocodb.md) |
+| [Dagster](fichas/dagster.md) | [Apache Airflow](fichas/airflow.md), [Prefect](fichas/prefect.md), [Kestra](fichas/kestra.md) |
+| [Grist](fichas/grist-core.md) | [Baserow](fichas/baserow.md), [Teable](fichas/teable.md), [NocoDB](fichas/nocodb.md) |
 | [huginn](fichas/huginn.md) | [Node-RED](fichas/node-red.md) |
-| [Kestra](fichas/kestra.md) | [Windmill](fichas/windmill.md), [Trigger.dev](fichas/trigger-dev.md) |
-| [NocoDB](fichas/nocodb.md) | [Appsmith](fichas/appsmith.md), [Budibase](fichas/budibase.md) |
+| [Kestra](fichas/kestra.md) | [Windmill](fichas/windmill.md), [Trigger.dev](fichas/trigger-dev.md), [Apache Airflow](fichas/airflow.md), [Prefect](fichas/prefect.md), [Dagster](fichas/dagster.md) |
+| [NocoDB](fichas/nocodb.md) | [Appsmith](fichas/appsmith.md), [Budibase](fichas/budibase.md), [Grist](fichas/grist-core.md), [Baserow](fichas/baserow.md), [Teable](fichas/teable.md) |
 | [Node-RED](fichas/node-red.md) | [huginn](fichas/huginn.md) |
+| [Prefect](fichas/prefect.md) | [Apache Airflow](fichas/airflow.md), [Dagster](fichas/dagster.md), [Kestra](fichas/kestra.md) |
+| [Teable](fichas/teable.md) | [Grist](fichas/grist-core.md), [Baserow](fichas/baserow.md), [NocoDB](fichas/nocodb.md) |
 | [ToolJet](fichas/tooljet.md) | [Appsmith](fichas/appsmith.md), [Budibase](fichas/budibase.md) |
 | [Trigger.dev](fichas/trigger-dev.md) | [Windmill](fichas/windmill.md), [Kestra](fichas/kestra.md) |
 | [Windmill](fichas/windmill.md) | [Kestra](fichas/kestra.md), [Trigger.dev](fichas/trigger-dev.md) |
@@ -50,10 +56,12 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [smolagents](fichas/smolagents.md) | [Pydantic AI](fichas/pydantic-ai.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
 | [crawl4ai](fichas/crawl4ai.md) | [Jina Reader](fichas/jina-reader.md) |
 | [firecrawl](fichas/firecrawl.md) | [Jina Reader](fichas/jina-reader.md) |
+| [FreshRSS](fichas/freshrss.md) | [Miniflux](fichas/miniflux.md) |
 | [Jina Reader](fichas/jina-reader.md) | [firecrawl](fichas/firecrawl.md), [crawl4ai](fichas/crawl4ai.md) |
 | [last30days](fichas/last30days-skill.md) | [social-media-research-skills](fichas/social-media-research-skills.md) |
 | [llm-scraper](fichas/llm-scraper.md) | [Maxun](fichas/maxun.md) |
 | [Maxun](fichas/maxun.md) | [Scrapegraph-ai](fichas/scrapegraph-ai.md), [llm-scraper](fichas/llm-scraper.md) |
+| [Miniflux](fichas/miniflux.md) | [FreshRSS](fichas/freshrss.md) |
 | [Scrapegraph-ai](fichas/scrapegraph-ai.md) | [Maxun](fichas/maxun.md) |
 | [Vane](fichas/vane.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md) | [Playwright MCP](fichas/playwright-mcp.md), [Browser Harness](fichas/browser-harness.md) |

@@ -32,9 +32,9 @@ Se instala con `pip install basicsr facexlib gfpgan` y `requirements.txt`, o se 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[FaceFusion](facefusion.md) · [FLUX.2](flux2.md) · [InvokeAI](invokeai.md) · [Krita AI Diffusion](krita-ai-diffusion.md) · [Wan2.2](wan2-2.md)
+[FaceFusion](facefusion.md) · [FLUX.2](flux2.md) · [gallery-dl](gallery-dl.md) · [InvokeAI](invokeai.md) · [Krita AI Diffusion](krita-ai-diffusion.md) · [Wan2.2](wan2-2.md)
 
 **Notas:** Sin alternativas declaradas. Sin mantenimiento activo desde 2024.
 

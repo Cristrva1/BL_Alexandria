@@ -133,6 +133,12 @@
      "motivo": "Combinación recíproca: sandbox lo enlaza como «Navegador del sandbox para automatización. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde sandbox: Conecta browser-use al navegador expuesto.",
      "reciproca_de": "sandbox"
+    },
+    {
+     "id": "openmanus",
+     "motivo": "Combinación recíproca: OpenManus lo enlaza como «OpenManus arranca Browser Use CLI como servidor MCP por defecto para sus acciones de navegador».",
+     "orden_instalacion": "Orden indicado desde OpenManus: Prepara uv y ejecuta `uvx browser-use install`; después lanza OpenManus.",
+     "reciproca_de": "openmanus"
     }
    ],
    "notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.",

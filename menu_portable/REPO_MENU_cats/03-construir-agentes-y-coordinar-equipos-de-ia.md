@@ -96,6 +96,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langfuse`, `copilotkit`, `ag2`, `ollama`, `ai-agents-for-beginners`
 
+## `agentscope`
+role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=agents,python,mcp,framework
+
+**Qué es:** Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/agentscope-ai/agentscope
+
+**Instalación** [+]:
+
+```
+uv pip install agentscope
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso; orquestar un equipo de agentes con un líder que delega tareas
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `uv pip install agentscope` y ejecuta el ejemplo de inicio rápido con un modelo configurado.
+**Qué comprobar:** El agente responde y usa al menos una herramienta, y puedes ver sus pasos en la salida.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `fastmcp`, `langfuse`, `litellm`
+
 ## `agno`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,memory,python
 
@@ -198,6 +228,66 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Tienes un candidato y sabes qué aporta al flujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `langchain`, `deepagents`
+
+## `camel`
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,python,research,framework
+
+**Qué es:** Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/camel-ai/camel
+
+**Instalación** [+]:
+
+```
+pip install camel-ai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar datos sintéticos con agentes que dialogan en roles; montar un experimento de simulación con muchos agentes y medir su comportamiento
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install camel-ai`, configura la clave de un modelo y ejecuta el ejemplo de ChatAgent.
+**Qué comprobar:** El agente responde y el script termina sin errores mostrando la conversación.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `qdrant`, `firecrawl`, `vllm`
+
+## `chatdev`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,python,research
+
+**Qué es:** Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.
+**Stack:** Python, Dockerfile, package.json, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OpenBMB/ChatDev
+
+**Instalación** [+]:
+
+```
+docker compose up --build
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: prototipar una pequeña aplicación con agentes que actúan como roles de un equipo; estudiar patrones de colaboración multiagente de los artículos del proyecto
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Arranca la aplicación con `docker compose up --build`, configura una clave de modelo y ejecuta un flujo de ejemplo.
+**Qué comprobar:** El flujo termina y muestra los mensajes entre agentes y el artefacto generado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `blender-mcp`, `litellm`
 
 ## `claude-agent-sdk-python`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=py,framework,python
@@ -838,6 +928,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El evaluador permite comparar la puntuación inicial y la final
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `vllm`, `litellm`
+
+## `openmanus`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,python,browser
+
+**Qué es:** Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.
+**Stack:** Python, Dockerfile, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/FoundationAgents/OpenManus
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/FoundationAgents/OpenManus/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: delegar una investigación web que termine en un informe guardado en disco; experimentar con un agente general en local antes de elegir un framework
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Crea el entorno con uv según el README, configura la clave del modelo en config.toml y lanza una tarea pequeña de búsqueda.
+**Qué comprobar:** El agente completa los pasos visibles en consola y deja el resultado en el espacio de trabajo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `browser-use`, `playwright`, `litellm`
 
 ## `pydantic-ai`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,python

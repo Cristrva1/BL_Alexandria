@@ -1,0 +1,185 @@
+{
+  "checked_at": "2026-11-16",
+  "source": "Propuesta aprobada por el propietario (190 candidatos, 2026-11-16).",
+  "batches": {
+    "p01": [
+      {
+        "id": "grist-core",
+        "full_name": "gristlabs/grist-core",
+        "github_id": 266033395,
+        "readme_blob_sha": "fae5fa1365bf85fb807c2795609719465d10e456",
+        "stars": 12103,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "airflow",
+        "full_name": "apache/airflow",
+        "github_id": 33884891,
+        "readme_blob_sha": "f3462530b7f9780cfab99c707ff7d5d304293c5f",
+        "stars": 47492,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "temporal",
+        "full_name": "temporalio/temporal",
+        "github_id": 215654064,
+        "readme_blob_sha": "d89e30ebb9863ea82c9203e1e696170ea9484af9",
+        "stars": 24423,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "teable",
+        "full_name": "teableio/teable",
+        "github_id": 560299175,
+        "readme_blob_sha": "165770d4bab9f780142d912014a8c9c1366e6fc2",
+        "stars": 21993,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "baserow",
+        "full_name": "baserow/baserow",
+        "github_id": 281073868,
+        "readme_blob_sha": "3c434cf485fe316d2bc4a25e065fe51361a3871e",
+        "stars": 6347,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "prefect",
+        "full_name": "PrefectHQ/prefect",
+        "github_id": 139199684,
+        "readme_blob_sha": "8db638e3a225f8ab758c35ee72c055393e56a405",
+        "stars": 24163,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "dagster",
+        "full_name": "dagster-io/dagster",
+        "github_id": 131619646,
+        "readme_blob_sha": "93aed1dec84d15801939d969d284f84ccd145143",
+        "stars": 16427,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "agentscope",
+        "full_name": "agentscope-ai/agentscope",
+        "github_id": 742244656,
+        "readme_blob_sha": "3820fb3a39b5c5ff47cea04beef2f98ff083a0fa",
+        "stars": 36070,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "openmanus",
+        "full_name": "FoundationAgents/OpenManus",
+        "github_id": 943934999,
+        "readme_blob_sha": "a2b64c9cc810732131e9144202af7c66526f549e",
+        "stars": 58969,
+        "license": "MIT",
+        "pushed_at": "2026-11-02"
+      },
+      {
+        "id": "chatdev",
+        "full_name": "OpenBMB/ChatDev",
+        "github_id": 683892956,
+        "readme_blob_sha": "f10600b131738b13df6fd6d1fdbd6c6df3644d1f",
+        "stars": 34755,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-06"
+      },
+      {
+        "id": "camel",
+        "full_name": "camel-ai/camel",
+        "github_id": 615510678,
+        "readme_blob_sha": "92076babf5e2e66552069caea60ce56363823d1d",
+        "stars": 18036,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "rsshub",
+        "full_name": "DIYgod/RSSHub",
+        "github_id": 127769231,
+        "readme_blob_sha": "2b9abe2ac0c86b38926229e7d2b0b14121052b96",
+        "stars": 47043,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "gallery-dl",
+        "full_name": "mikf/gallery-dl",
+        "github_id": 25129800,
+        "readme_blob_sha": "09ba97ce9d6a5c4adb9cb2233a8db6bb6e286e8e",
+        "stars": 20527,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "freshrss",
+        "full_name": "FreshRSS/FreshRSS",
+        "github_id": 6322699,
+        "readme_blob_sha": "4f049f20f07c9dce1af330f784a85fe2f93e677b",
+        "stars": 16596,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "wallabag",
+        "full_name": "wallabag/wallabag",
+        "github_id": 9193949,
+        "readme_blob_sha": "29d55b08ecc51d0bda3589fc3a6f56d2bdda1a1e",
+        "stars": 13063,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "miniflux",
+        "full_name": "miniflux/v2",
+        "github_id": 111364256,
+        "readme_blob_sha": "e18aa617526b844572a9b12217421f446f0dc783",
+        "stars": 9942,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "colly",
+        "full_name": "gocolly/colly",
+        "github_id": 105279544,
+        "readme_blob_sha": "e8b1b1834235307cf1883eb345ef9189dc52fd78",
+        "stars": 25599,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-10-16"
+      },
+      {
+        "id": "katana",
+        "full_name": "projectdiscovery/katana",
+        "github_id": 326228917,
+        "readme_blob_sha": "2b2e744f334c1f452d57918a376fce2cb26e643c",
+        "stars": 17855,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "spotdl",
+        "full_name": "spotDL/spotify-downloader",
+        "github_id": 62743585,
+        "readme_blob_sha": "69d2189d790ecc0bced007fdc3b6bf36ef62c479",
+        "stars": 26846,
+        "license": "MIT",
+        "pushed_at": "2026-11-13"
+      }
+    ]
+  },
+  "notes": [
+    "No se instaló ni se ejecutó ningún proyecto del catálogo.",
+    "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
+  ],
+  "added_count": 19,
+  "total_repositories": 642
+}

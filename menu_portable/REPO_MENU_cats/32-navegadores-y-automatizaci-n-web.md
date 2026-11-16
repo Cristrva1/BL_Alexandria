@@ -124,7 +124,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un navegador de prueba y solicita leer una página sin enviar formularios ni usar cuentas personales
 **Qué comprobar:** Puedes revisar pestaña, contexto y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ollama`, `pydantic-ai`, `sandbox`
+**Combina con:** `claude-code`, `ollama`, `pydantic-ai`, `sandbox`, `openmanus`
 **Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`, `browser-harness`
 
 ## `lightpanda`
