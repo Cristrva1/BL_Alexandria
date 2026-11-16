@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Herramienta de Nous Research para mejorar automáticamente Hermes Agent mediante evolución de prompts con DSPy y GEPA. El repositorio no tiene archivo LICENSE: la mención 'MIT licensed' del README parece referirse a GEPA [DATO NO VERIFICADO]. Es temprana: solo está implementada la fase 1 y el último push es de junio de 2026.
+
+## ¿Qué hace?
+
+Lee una skill (SKILL.md) de Hermes Agent, genera un dataset de evaluación (sintético o a partir de historial real de sesiones de Claude Code, Copilot y Hermes) y usa GEPA para proponer y seleccionar variantes mejores a partir de trazas de ejecución. El resultado se propone como PR contra hermes-agent. La optimización de descripciones de herramientas, prompts de sistema y código está planificada pero sin implementar.
+
+## ¿Cómo lo hace?
+
+Paquete Python que se instala desde el código fuente (`pip install -e ".[dev]"`) y se apunta al repositorio local de hermes-agent con `HERMES_AGENT_REPO`. No necesita GPU, todo va por llamadas a API; el README estima de 2 a 10 dólares por ejecución. Hay que revisar qué historial de sesiones se envía al LLM, porque puede contener datos sensibles.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [hermes-agent](hermes-agent.md) | Objetivo de la optimización; sin él la herramienta no tiene uso. | Instala Hermes Agent primero y exporta HERMES_AGENT_REPO. |
+| [DSPy](dspy.md) | Motor de optimización (DSPy + GEPA) sobre el que está construida. | Se instala como dependencia; consulta la documentación de GEPA en DSPy para entender los parámetros. |
+| [Claude Code](claude-code.md) | Su historial de sesiones puede servir como fuente de evaluación real (`--eval-source sessiondb`). | Úsalo solo si aceptas que esas sesiones se procesen con un LLM externo. |
+
+**Notas:** Sin alternativas declaradas. Sin archivo de licencia en el repositorio.
+
+Estado en GitHub: activo · último push 2026-06-17 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NousResearch/hermes-agent-self-evolution/blob/main/README.md) · [2](https://github.com/NousResearch/hermes-agent) · [3](https://dspy.ai/api/optimizers/GEPA/overview/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como datos |
 | Coste | Consumo de APIs o servicios. La ruta documentada opera mediante APIs y no requiere entrenamiento GPU; el presupuesto depende de iteraciones y evaluaciones |
 | Equipo | Preparación según la ruta elegida. Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación |
-
-Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como datos
-
-## Qué puedes hacer con él
-
-Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA.
-
-## Por qué destaca
-
-Usos propuestos: Refinar una skill de revisión de código; Comparar instrucciones con fallos observados.
-
-## Cómo funciona
 
 Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como datos
 
@@ -97,12 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación
 - **Etiquetas:** `experimentos` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [hermes-agent](hermes-agent.md) | 263k | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
 
 ## Enlaces
 

@@ -30,6 +30,12 @@ Requiere Python 3.10–3.14; se instala con `pip install 'markitdown[all]'` o so
 | [Khoj](khoj.md) | Convertir formatos no soportados a Markdown antes de indexarlos (combinación por arquitectura). | Convierte primero y sincroniza la carpeta resultante. |
 | [Pandoc](pandoc.md) | MarkItDown extrae a Markdown y Pandoc lo publica en DOCX, HTML, LaTeX o EPUB (combinación por arquitectura). | Independientes; encadénalos en un script. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-job-search](ai-job-search.md) · [annas-mcp](annas-mcp.md) · [Anytype Desktop](anytype-ts.md) · [AppFlowy](appflowy.md) · [obsidian-importer](obsidian-importer.md) · [ppt-master](ppt-master.md) · [Repomix](repomix.md) · [tools](tools.md) · [Vane](vane.md)
+
 **Notas:** Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada.
 
 Estado en GitHub: activo · último push 2026-11-07 · última versión publicada v0.1.9 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).

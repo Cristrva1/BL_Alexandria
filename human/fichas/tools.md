@@ -12,6 +12,32 @@
 
 > 🧰 Carpeta interna del hub; no es un producto para instalar.
 
+## ¿Qué es?
+
+tools, entrada interna del hub BL_Alexandria que representa sus utilidades auxiliares de mantenimiento, no un proyecto externo. No tiene repositorio en GitHub ni licencia propia. En el repositorio actual estas utilidades están en `src/repo_intelligence/tools/`; no hay una carpeta `tools/` en la raíz.
+
+## ¿Qué hace?
+
+Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `Guia.md` y las fichas los genera `repo-intelligence guide build` desde el índice; las guías heredadas escritas a mano y sus scripts de verificación se retiraron el 2026-11-16.
+
+## ¿Cómo lo hace?
+
+Son scripts Python del propio repo que se ejecutan con `uv run` dentro del entorno del proyecto. Las herramientas externas (crawl4ai, markitdown, repomix, gitnexus) deben estar instaladas para que funcionen los envoltorios correspondientes. Sirven para mantener la biblioteca, no como dependencia de otros proyectos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [crawl4ai](crawl4ai.md) | Envoltorio `crawl4ai_docs.py` (AsyncWebCrawler). | Instala crawl4ai en el entorno del proyecto. |
+| [markitdown](markitdown.md) | Envoltorio `markitdown_runner.py` (CLI markitdown). | Instala la CLI markitdown. |
+| [Repomix](repomix.md) | Envoltorio `repomix_runner.py`. | Instala repomix (npm). |
+| [GitNexus](gitnexus.md) | Envoltorio `gitnexus_runner.py`. | Instala la CLI gitnexus. |
+| [Guía (histórica)](guia.md) | Combinación recíproca: Guía (histórica) lo enlaza como «Utilidades internas del hub que alimentan y verifican el índice del que se genera la guía». | Orden indicado desde Guía (histórica): Ambas vienen con el repositorio; no requieren instalación. |
+
+**Notas:** Entrada local (categoría 0), excluida del recuento de cobertura. La ficha describía una carpeta `tools/` que ya no existe; se documentan las ubicaciones reales.
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Cristrva1/BL_Alexandria/tree/main/src/repo_intelligence/tools)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -27,18 +53,6 @@
 | Equipo | Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar. |
 
 Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
-
-## Qué puedes hacer con él
-
-Contiene utilidades de apoyo de la biblioteca. Sirve como referencia interna, no como dependencia de un proyecto.
-
-## Por qué destaca
-
-Uso interno.
-
-## Cómo funciona
-
-Scripts auxiliares locales.
 
 ## Cómo empezar
 

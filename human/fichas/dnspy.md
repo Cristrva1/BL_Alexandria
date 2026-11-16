@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+dnSpyEx, continuación no oficial del proyecto dnSpy (archivado): depurador y editor de ensamblados .NET. Licencia GPL-3.0. Es activo (~11k estrellas, v6.6.0).
+
+## ¿Qué hace?
+
+Permite depurar y editar ensamblados .NET y Unity aunque no tengas el código fuente. Pone breakpoints y tracepoints, depura varios procesos a la vez, evalúa expresiones C# o Visual Basic y depura ensamblados que se descifran en memoria; decompila con el motor de ILSpy y permite editar el código. Para depurar juegos Unity necesita el repositorio adicional dnSpy-Unity-mono.
+
+## ¿Cómo lo hace?
+
+Es una aplicación de escritorio para Windows que se descarga desde las releases; también hay builds de CI. Para compilarlo se necesita el SDK de .NET, según el README.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ILSpy](ilspy.md) | Su decompilador se basa en el motor de ILSpy, según los créditos del README. | Usa ILSpy para revisar y dnSpyEx para depurar o editar. |
+| [x64dbg](x64dbg.md) | Depurar las partes nativas de un proceso que mezcla .NET y código nativo. (combinación por arquitectura) | Adjunta x64dbg al proceso cuando llegues a código nativo. |
+| [ImHex](imhex.md) | Comparar o inspeccionar binarios parcheados. (combinación por arquitectura) | Usa el diff de ImHex entre el ensamblado original y el modificado. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v6.6.0 (2026-06-20) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dnSpyEx/dnSpy/blob/master/README.md) · [2](https://github.com/dnSpyEx/dnSpy/releases)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. dnSpyEx es continuación no oficial de dnSpy; no confundas las releases de ambos proyectos |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni API; herramientas y entorno son locales |
 | Equipo | Preparación según la ruta elegida. Distribución dnSpyEx compatible; ensamblado .NET propio de prueba |
-
-dnSpyEx es continuación no oficial de dnSpy; no confundas las releases de ambos proyectos
-
-## Qué puedes hacer con él
-
-Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo.
-
-## Cómo funciona
 
 dnSpyEx es continuación no oficial de dnSpy; no confundas las releases de ambos proyectos
 

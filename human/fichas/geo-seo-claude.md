@@ -30,7 +30,7 @@ Se instala con un script (macOS/Linux o Git Bash en Windows) que copia la skill 
 | [playwright](playwright.md) | Dependencia opcional para capturas de pantalla. | Instala Playwright y sus navegadores si quieres capturas en los informes. |
 | [open-seo](open-seo.md) | Datos de palabras clave y backlinks como complemento a la auditoría (combinación por arquitectura). | Conecta el MCP de OpenSEO al mismo agente. |
 
-**Notas:** Revisa el script antes de ejecutar `curl | bash`. Se solapa en parte con claude-seo.
+**Notas:** Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.
 
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -110,6 +110,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code; Python; Git Bash en Windows; web propia de prueba
 - **Etiquetas:** `skills` `search` `pdf` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [claude-seo](claude-seo.md) | 29.4k | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. |
 
 ## Enlaces
 

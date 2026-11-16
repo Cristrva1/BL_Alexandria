@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Tutorial y código (MIT) de @FareedKhan-dev para entrenar un modelo de lenguaje desde cero en PyTorch puro. Empezó como tutorial de preentrenamiento y hoy cubre hasta modelos alineados de estilo razonador. Es activo (último push en octubre de 2026) y tiene CI.
+
+## ¿Qué hace?
+
+Implementa a mano, sin `trl`, `peft` ni `transformers`, todo el pipeline: modelo base → SFT → modelo de recompensa → PPO/DPO → GRPO → evaluación y chat. Tiene dos arquitecturas: el transformer original de 'Attention is All You Need' y una moderna con RoPE, RMSNorm, SwiGLU, atención agrupada y latente, Mixture of Experts y KV cache. Incluye una ruta para entrenar un modelo pequeño en CPU en minutos y tablas de GPU para modelos de hasta miles de millones de parámetros.
+
+## ¿Cómo lo hace?
+
+Paquete Python 3.10+ instalable con `pip install -e .`. La ruta de portátil no requiere GPU; los modelos grandes necesitan GPUs con mucha memoria, según la tabla del README. El código está pensado para leerse y aprender, no para entrenar en producción.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Única base del código. | Instala PyTorch (CPU o CUDA) antes de `pip install -e .`. |
+| [TRL](trl.md) | Contrastar las implementaciones manuales de SFT, DPO, PPO y GRPO con la biblioteca de referencia. (combinación por arquitectura) | Úsala después para entrenar en serio. |
+| [nanochat](nanochat.md) | Pipeline completo optimizado para comparar rendimiento y resultados. (combinación por arquitectura) | Opcional, como siguiente paso. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-02 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/FareedKhan-dev/train-llm-from-scratch/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande |
 | Coste | El coste depende del proveedor o la ruta. No exige API; GPU, almacenamiento y seguimiento externo opcional tienen sus costes |
 | Equipo | Preparación según la ruta elegida. Python y PyTorch; datos pequeños; CPU o GPU según escala |
-
-Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande
-
-## Qué puedes hacer con él
-
-Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación.
-
-## Por qué destaca
-
-Usos propuestos: Comprender la preparación de un corpus; Explorar un entrenamiento pequeño controlado.
-
-## Cómo funciona
 
 Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande
 

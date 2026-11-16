@@ -30,7 +30,7 @@ Plugin de Claude Code (marketplace e instalación del plugin) con unos 30 comand
 | [posthog](posthog.md) | Extensión `seo-posthog` para cruzar datos de analítica. | Configura credenciales de PostHog de solo lectura. |
 | [open-seo](open-seo.md) | Datos de palabras clave y posiciones vía MCP (combinación por arquitectura). | Conecta el MCP de OpenSEO al mismo agente. |
 
-**Notas:** Se solapa con geo-seo-claude; elige uno para auditorías.
+**Notas:** Alternativa (elige una): geo-seo-claude.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.6.2 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -110,6 +110,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code; Python 3.11–3.14; web propia; dependencias de navegador
 - **Etiquetas:** `dominio` `skill` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [GEO-SEO Claude](geo-seo-claude.md) | 11.7k | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. |
 
 ## Enlaces
 

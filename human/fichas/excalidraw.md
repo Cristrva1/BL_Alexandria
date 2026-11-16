@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Pizarra virtual open source (MIT) con estilo dibujado a mano, colaborativa y con cifrado de extremo a extremo. Es muy madura y popular (~136k estrellas, v0.18.1). Tiene una versión comercial, Excalidraw+, con funciones para equipos.
+
+## ¿Qué hace?
+
+Ofrece un lienzo infinito para diagramas, wireframes y bocetos con rectángulos, elipses, rombos, flechas con enlace y etiquetas, dibujo libre y borrador. Incluye modo oscuro, imágenes, bibliotecas de formas, i18n, deshacer y rehacer, y zoom. Exporta a PNG, SVG, portapapeles y a un formato abierto `.excalidraw` (JSON). La app web añade colaboración en tiempo real y cifrado E2E.
+
+## ¿Cómo lo hace?
+
+Se usa en excalidraw.com o se embebe en apps React con `npm install react react-dom @excalidraw/excalidraw`. El componente es personalizable y tiene API. Hay integraciones comunitarias, como una extensión de VS Code. El formato JSON abierto permite que herramientas o agentes generen diagramas programáticamente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Generar o editar diagramas `.excalidraw` (JSON abierto) desde un agente. (combinación por arquitectura) | Pide al agente que escriba el JSON y ábrelo en Excalidraw. |
+| [penpot](penpot.md) | Pasar de bocetos rápidos a diseño de alta fidelidad. (combinación por arquitectura) | Boceta en Excalidraw y diseña la versión final en Penpot. |
+| [flexoki](flexoki.md) | Paleta coherente para diagramas de documentación. (combinación por arquitectura) | Define los colores personalizados en la paleta del lienzo. |
+| [Kroki](kroki.md) | Combinación recíproca: Kroki lo enlaza como «Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`». | Orden indicado desde Kroki: Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`. |
+
+**Notas:** Alternativas (elige una): tldraw, mermaid.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.18.1 (2026-04-21) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/excalidraw/excalidraw/blob/master/README.md) · [2](https://docs.excalidraw.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Para dibujar puedes usar la app web; npm instala el componente para integrarlo en otra aplicación |
 | Coste | Sin pago a un modelo en la ruta básica. La pizarra básica no requiere IA; productos alojados adicionales pueden tener planes |
 | Equipo | Preparación según la ruta elegida. Navegador para la app; React solo si integras el componente |
-
-Para dibujar puedes usar la app web; npm instala el componente para integrarlo en otra aplicación
-
-## Qué puedes hacer con él
-
-Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa.
-
-## Por qué destaca
-
-Usos propuestos: Explicar un flujo a un equipo; Bocetar una interfaz antes de construirla.
-
-## Cómo funciona
 
 Para dibujar puedes usar la app web; npm instala el componente para integrarlo en otra aplicación
 

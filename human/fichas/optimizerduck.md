@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta gratuita y open source para optimizar Windows en rendimiento, privacidad y simplicidad, de @itsfatduck. El archivo LICENSE es GPL-3.0, aunque GitHub muestra NOASSERTION. Es activa (~12k estrellas, v2.29.0).
+
+## ¿Qué hace?
+
+Aplica ajustes de rendimiento, energía y privacidad: desactiva telemetría, informes de errores, ID de publicidad, ubicación, Cortana, Copilot y sugerencias de contenido. También desactiva servicios y tareas programadas y quita apps preinstaladas. Cada cambio guarda un archivo de reversión, permite deshacer con un clic y sugiere un punto de restauración antes del primer uso.
+
+## ¿Cómo lo hace?
+
+Es una app de escritorio en C# sobre .NET 10 que se descarga desde Releases. Modifica el registro y la configuración del sistema, así que necesita privilegios de administrador. El binario no está firmado, por lo que SmartScreen lo advertirá. Dice no tener telemetría ni conexiones salientes [DATO NO VERIFICADO].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AdGuardHome](adguardhome.md) | Bloqueo de telemetría a nivel de red que complementa los ajustes locales. (combinación por arquitectura) | Configura AdGuard Home como DNS y luego aplica los ajustes de privacidad en Windows. |
+| [universal-android-debloater-next-generation](universal-android-debloater-next-generation.md) | Misma limpieza de bloatware y telemetría para los móviles Android de casa. (combinación por arquitectura) | Úsalos por separado, cada uno en su plataforma. |
+| [cleanyourtv](cleanyourtv.md) | Misma filosofía para el televisor Android. (combinación por arquitectura) | Úsalos por separado, cada uno en su plataforma. |
+
+**Notas:** Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (GPL-3.0). Binario sin firmar con permisos de administrador: verifica la release y crea un punto de restauración.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.29.0 (2026-10-07) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/itsfatduck/optimizerDuck/blob/master/README.md) · [2](https://optimizerduck.vercel.app/docs/guides/how-it-works)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Modifica registro y configuración del sistema; no es una herramienta de diagnóstico que se limite a observar |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo ni API; no se garantiza una mejora de rendimiento por aplicar opciones |
 | Equipo | Preparación según la ruta elegida. Windows compatible; administrador para cambios; respaldo y conocimiento del ajuste elegido |
-
-Modifica registro y configuración del sistema; no es una herramienta de diagnóstico que se limite a observar
-
-## Qué puedes hacer con él
-
-Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento.
-
-## Cómo funciona
 
 Modifica registro y configuración del sistema; no es una herramienta de diagnóstico que se limite a observar
 

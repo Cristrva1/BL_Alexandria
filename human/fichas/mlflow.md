@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+MLflow, plataforma open source de ingeniería de IA para agentes, LLM y modelos de ML. Licencia Apache-2.0. Es muy madura (~29k estrellas, v3.18.0) y el README cita más de 60 millones de descargas mensuales.
+
+## ¿Qué hace?
+
+Para apps de LLM ofrece trazas basadas en OpenTelemetry, evaluación, gestión y optimización de prompts y un AI Gateway. Para ML clásico mantiene seguimiento de experimentos, registro de modelos y despliegue. Tiene SDK para Python, TypeScript/JavaScript, Java y R.
+
+## ¿Cómo lo hace?
+
+Se arranca un servidor con `uvx mlflow server` o `pip install mlflow`, y se instrumenta el código con autolog o el SDK. Incluye un asistente que configura el proyecto con Claude Code, Codex u OpenCode. Para producción necesita base de datos y almacenamiento de artefactos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DSPy](dspy.md) | Trazado nativo de DSPy con autolog. | Activa `mlflow.dspy.autolog()`. |
+| [Transformers](transformers.md) | Flavor nativo para registrar y servir modelos de Transformers. | Registra el pipeline con `mlflow.transformers`. |
+| [DeepEval](deepeval.md) | Métricas de DeepEval disponibles como scorers de terceros en MLflow. | Instala deepeval y úsalo desde la evaluación de MLflow. |
+| [Ragas](ragas.md) | Métricas de Ragas disponibles como scorers de terceros. | Instala ragas y úsalo desde la evaluación de MLflow. |
+| [qlib](qlib.md) | Combinación recíproca: qlib lo enlaza como «El recorder de Qlib se basa en MLflow». | Orden indicado desde qlib: Configura el URI de MLflow para los experimentos. |
+| [Apache Airflow](airflow.md) | Combinación recíproca: Apache Airflow lo enlaza como «Airflow programa los pasos de entrenamiento y evaluación y MLflow registra parámetros, métricas y modelos de cada ejecución (combinación por arquitectura)». | Orden indicado desde Apache Airflow: Servidor de MLflow primero; después tareas de Airflow que usen su cliente con MLFLOW_TRACKING_URI. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Dagster](dagster.md) · [Prefect](prefect.md) · [PyTorch Lightning](pytorch-lightning.md) · [scikit-learn](scikit-learn.md)
+
+**Notas:** Alternativas (elige una): langfuse.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.18.0 (2026-11-04) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mlflow/mlflow/blob/master/README.md) · [2](https://mlflow.org/docs/latest/genai/tracing/integrations/listing/dspy) · [3](https://mlflow.org/docs/latest/ml/deep-learning/transformers/) · [4](https://mlflow.org/docs/latest/genai/eval-monitor/scorers/third-party/deepeval) · [5](https://mlflow.org/docs/latest/genai/eval-monitor/scorers/third-party/ragas)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelo local no documentado. El wizard documenta Claude Code y Codex para añadir instrumentación; no es una autorización para cambiar automáticamente proyectos reales |
 | Coste | El coste depende del proveedor o la ruta. Seguimiento básico sin API de IA; evaluadores, modelos y alojamiento gestionado pueden generar costes |
 | Equipo | Preparación según la ruta elegida. uv o Python; app y datos ficticios; agente opcional para instrumentar |
-
-El wizard documenta Claude Code y Codex para añadir instrumentación; no es una autorización para cambiar automáticamente proyectos reales
-
-## Qué puedes hacer con él
-
-Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro.
-
-## Por qué destaca
-
-Usos propuestos: Registrar experimentos de ML; Añadir trazas a una app de IA.
-
-## Cómo funciona
 
 El wizard documenta Claude Code y Codex para añadir instrumentación; no es una autorización para cambiar automáticamente proyectos reales
 
@@ -93,13 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv o Python; app y datos ficticios; agente opcional para instrumentar
 - **Etiquetas:** `observability` `training` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
-| [DSPy](dspy.md) | 39.1k | Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano. |
 
 ## Alternativas (elige una)
 

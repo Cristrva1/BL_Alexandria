@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Archivo de prompts de 'jailbreak' (DAN y otros) para ChatGPT, mantenido por @0xk1h0. No tiene licencia declarada. Es contenido histórico: la última nota de funcionamiento del README es de julio de 2023 (DAN 12.0 con GPT-3.5), aunque el repositorio recibe pushes.
+
+## ¿Qué hace?
+
+Recoge prompts de rol que intentaban que ChatGPT ignorara sus políticas de uso: DAN 13.0, 'Developer Mode' y variantes. Funcionan explotando el entrenamiento de 'role play'. Su valor actual es documental y de investigación en seguridad (red teaming, comprensión de inyecciones), no práctico.
+
+## ¿Cómo lo hace?
+
+Texto Markdown, sin código ni instalación. Usar estos prompts contra servicios comerciales puede violar sus términos de uso y provocar la suspensión de la cuenta. Los modelos actuales suelen rechazarlos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [promptfoo](promptfoo.md) | Usar los prompts como casos de prueba de red teaming para comprobar que tu aplicación los resiste. (combinación por arquitectura) | Añádelos como dataset adversarial en una configuración de red team. |
+| [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md) | Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura) | Úsalos juntos solo con fines de estudio y defensa. |
+| [chatgpt_system_prompt](chatgpt-system-prompt.md) | Recursos sobre protección de instrucciones de sistema frente a extracción. (combinación por arquitectura) | Consulta su guía de seguridad para endurecer tus prompts. |
+
+**Notas:** Sin alternativas declaradas. Contenido de jailbreak sin licencia: solo para investigación defensiva.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v1.0.0 (2023-08-22) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Las afirmaciones de funcionamiento se refieren a GPT-3.5 en 2023 y no prueban eficacia ni compatibilidad actual |
 | Coste | Sin pago a un modelo en la ruta básica. El archivo se consulta sin API; no incluye acceso a modelos ni créditos |
 | Equipo | Preparación según la ruta elegida. Navegador; criterio de lectura histórica |
-
-Las afirmaciones de funcionamiento se refieren a GPT-3.5 en 2023 y no prueban eficacia ni compatibilidad actual
-
-## Qué puedes hacer con él
-
-Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar la historia de prompts de roleplay; Reconocer intentos de manipulación de instrucciones.
-
-## Cómo funciona
 
 Las afirmaciones de funcionamiento se refieren a GPT-3.5 en 2023 y no prueban eficacia ni compatibilidad actual
 

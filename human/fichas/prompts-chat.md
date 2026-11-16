@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+La biblioteca de prompts open source más grande, mantenida por Fatih Kadir Akın (f), antes conocida como 'Awesome ChatGPT Prompts' (diciembre de 2022). Tiene licencia doble: el código y el contenido del sitio son MIT, y los prompts (prompts.csv, PROMPTS.md y los que envía la comunidad) son dominio público CC0 1.0. Por eso GitHub la marca como NOASSERTION. Es muy activa y popular (~178k estrellas).
+
+## ¿Qué hace?
+
+Ofrece una colección curada de prompts, sobre todo de rol y de tarea, utilizable con ChatGPT, Claude, Gemini, Llama y otros. Se puede consultar en prompts.chat, como CSV o Markdown, o como dataset de Hugging Face. Se puede usar como servidor MCP remoto o local, como plugin de Claude Code y desde la CLI `npx prompts.chat`. Permite montar una biblioteca de prompts propia y privada para equipos.
+
+## ¿Cómo lo hace?
+
+La aplicación es Next.js con Prisma y se puede autoalojar con `npx prompts.chat new <nombre>`, o clonar y ejecutar `npm install && npm run setup`. También tiene guía de Docker. El servidor MCP remoto está en `https://prompts.chat/api/mcp`. La calidad de los prompts es heterogénea, porque son contribuciones comunitarias.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalar la biblioteca como plugin de Claude Code (`/plugin marketplace add f/prompts.chat`). | Ten Claude Code instalado; añade el marketplace y luego el plugin. |
+| [promptfoo](promptfoo.md) | Evaluar prompts de la colección antes de adoptarlos en producción. (combinación por arquitectura) | Elige los prompts candidatos y crea pruebas con casos reales. |
+| [Open WebUI](open-webui.md) | Importar prompts de la colección a la biblioteca de prompts de una interfaz de chat autoalojada. (combinación por arquitectura) | Descarga prompts.csv e impórtalo o cópialo en la sección de prompts. |
+
+**Notas:** Alternativas (elige una): fabric.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/f/prompts.chat/blob/main/README.md) · [2](https://huggingface.co/datasets/fka/prompts.chat)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios |
 | Coste | Sin pago a un modelo en la ruta básica. Consultar la biblioteca no consume una API de modelos; ejecutar prompts depende del asistente y alojar tu copia tiene costes propios |
 | Equipo | Preparación según la ruta elegida. Navegador para explorar; Node y cliente MCP si conectas la biblioteca |
-
-Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios
-
-## Qué puedes hacer con él
-
-La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts.
-
-## Cómo funciona
 
 Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios
 

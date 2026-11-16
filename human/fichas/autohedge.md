@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+AutoHedge, «fondo de cobertura autónomo» de agentes de The Swarm Corporation. Licencia MIT. Tiene ~7k estrellas (sin releases) y su último cambio es de mayo de 2026.
+
+## ¿Qué hace?
+
+Combina agentes especializados (análisis de mercado, tesis, riesgo, ejecución) construidos con el framework Swarms para analizar y operar de forma continua. Por ahora solo opera de forma autónoma en Solana; Coinbase y otros exchanges están anunciados como «próximamente».
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -U autohedge` y se configura con claves de LLM y una clave privada de wallet (`WALLET_PRIVATE_KEY`). El README lo califica de «enterprise-grade», calificación que no se pudo comprobar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | Obtener datos de mercado de exchanges centralizados para análisis. (combinación por arquitectura) | Usa CCXT en un módulo de datos aparte. |
+| [LangGraph](langgraph.md) | Reimplementar el flujo de agentes con control explícito de estados. (combinación por arquitectura) | Compara con un grafo propio en LangGraph. |
+| [vectorbt](vectorbt.md) | Validar las tesis con backtesting antes de operar. (combinación por arquitectura) | Backtestea la lógica en vectorbt. |
+
+**Notas:** Sin alternativas declaradas. Riesgo muy alto: opera con una clave privada real de forma autónoma. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-05-11 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/The-Swarm-Corporation/AutoHedge/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada |
 | Coste | El coste depende del proveedor o la ruta. El ejemplo pide claves OpenAI o Anthropic y Jupiter; operaciones y proveedores pueden tener comisiones y consumo |
 | Equipo | Preparación según la ruta elegida. Python; credenciales de modelo y herramientas; entorno de investigación sin fondos |
-
-El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada
-
-## Qué puedes hacer con él
-
-Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading.
-
-## Cómo funciona
 
 El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada
 

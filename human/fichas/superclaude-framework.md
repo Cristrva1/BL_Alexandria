@@ -30,7 +30,7 @@ Se instala con pipx (`pipx install superclaude`), que despliega los componentes 
 | [Context7](context7.md) | MCP opcional para consultar documentación oficial. | `superclaude mcp --servers context7`. |
 | [Serena](serena.md) | MCP opcional de comprensión de código. | Mediante airis-mcp-gateway. |
 
-**Notas:** Inyecta muchas instrucciones: puede chocar con otros marcos como superpowers o ecc; usa uno.
+**Notas:** Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos.
 
 Estado en GitHub: activo · último push 2026-09-27 · última versión publicada v4.3.0 (2026-03-22) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -111,6 +111,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code;  Python y pipx según la guía;  copia de configuración revisable
 - **Etiquetas:** `metodologia` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
+| [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 
 ## Enlaces
 

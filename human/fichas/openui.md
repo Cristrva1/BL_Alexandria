@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Framework de UI generativa (MIT) de Thesys, construido en torno a OpenUI Lang, un lenguaje compacto y pensado para streaming. Es activo (@openuidev/server@0.4.3) y reciente. El README avisa de que no existe ninguna criptomoneda oficial con su nombre.
+
+## ¿Qué hace?
+
+Permite que el modelo responda con interfaces en lugar de solo texto: defines componentes, se generan los prompts y el modelo emite OpenUI Lang, que se renderiza progresivamente. Tiene runtimes oficiales para React, Vue, Svelte y Angular, componentes de chat, integración con agentes de LangChain/LangGraph y observabilidad, opcionalmente en la nube de Thesys.
+
+## ¿Cómo lo hace?
+
+Paquetes npm (`@openuidev/react-lang`, `@openuidev/react-ui`, `@openuidev/lang-core`, `@openuidev/langchain`…) y una CLI para crear un proyecto (`npx @openuidev/cli@latest create`). Funciona con cualquier proveedor de modelos a través del servidor.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Agentes LangGraph que emiten UI con el paquete `@openuidev/langchain`. | Instala `@openuidev/langchain @langchain/langgraph` y conecta el agente. |
+| [langchain](langchain.md) | Integración oficial para agentes y servidores LangChain. | Usa el mismo paquete de integración. |
+| [CopilotKit](copilotkit.md) | Combinación anterior del catálogo: frontend de agentes. (combinación por arquitectura) (OpenUI y AG-UI/A2UI son enfoques distintos de UI generativa) | Evalúa si necesitas ambos; normalmente se elige uno. |
+
+**Notas:** Sin alternativas declaradas; enfoques comparables: json-render, copilotkit (A2UI).
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada @openuidev/server@0.4.3 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/thesysdev/openui/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La skill sirve para construir y depurar; su portabilidad no implica que la app use la suscripción del agente para inferencia |
 | Coste | El coste depende del proveedor o la ruta. El framework y la skill no incluyen llamadas de modelo; proveedor y backend tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Node; framework elegido; backend y modelo; catálogo de componentes |
-
-La skill sirve para construir y depurar; su portabilidad no implica que la app use la suscripción del agente para inferencia
-
-## Qué puedes hacer con él
-
-Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces, no solo texto.
-
-## Por qué destaca
-
-Usos propuestos: Crear respuestas de chat con interfaz; Construir formularios generados y acotados.
-
-## Cómo funciona
 
 La skill sirve para construir y depurar; su portabilidad no implica que la app use la suscripción del agente para inferencia
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; framework elegido; backend y modelo; catálogo de componentes
 - **Etiquetas:** `ui` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [CopilotKit](copilotkit.md) | 38.7k | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
 
 ## Enlaces
 

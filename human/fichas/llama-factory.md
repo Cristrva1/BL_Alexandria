@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+LlamaFactory, framework para fine-tuning unificado de más de 100 LLM y modelos de visión con CLI e interfaz web sin código, de @hiyouga. Licencia Apache-2.0. Es maduro (~76k estrellas, v0.9.5) y está citado por empresas como Amazon y NVIDIA.
+
+## ¿Qué hace?
+
+Admite SFT, preentrenamiento, reward modeling, PPO, DPO, KTO y otros métodos, con LoRA, QLoRA y entrenamiento completo. LlamaBoard (Gradio) permite configurar el entrenamiento sin código, e incluye inferencia con API estilo OpenAI.
+
+## ¿Cómo lo hace?
+
+Se instala desde el repo con pip (extras para métricas, DeepSpeed, etc.) o se usa en Colab o PAI-DSW. La inferencia rápida usa workers de vLLM o SGLang (`infer_backend: vllm`). El README promociona otro proyecto del autor (PenguinHarness) y a sus patrocinadores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PEFT](peft.md) | Métodos LoRA y QLoRA. | Viene como dependencia. |
+| [Transformers](transformers.md) | Modelos base. | Viene como dependencia. |
+| [vLLM](vllm.md) | Worker de inferencia integrado. | Configura `infer_backend: vllm`. |
+| [SGLang](sglang.md) | Worker de inferencia alternativo. | Configura el backend SGLang. |
+| [Gradio](gradio.md) | Combinación recíproca: Gradio lo enlaza como «Su LlamaBoard está construido con Gradio». | Orden indicado desde Gradio: Usa la UI de LlamaFactory. |
+
+**Notas:** Alternativas (elige una): unsloth.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.5 (2026-05-30) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hiyouga/LlamaFactory/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. La interfaz reduce programación pero no elimina requisitos de memoria, licencia o evaluación de datos; no todas las configuraciones caben en un portátil |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API de modelo remota; cómputo, almacenamiento y acceso a pesos son independientes |
 | Equipo | Preparación según la ruta elegida. Python; modelo y dataset autorizados; GPU y memoria según configuración |
-
-La interfaz reduce programación pero no elimina requisitos de memoria, licencia o evaluación de datos; no todas las configuraciones caben en un portátil
-
-## Qué puedes hacer con él
-
-Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código.
-
-## Por qué destaca
-
-Usos propuestos: Ajustar un modelo con ejemplos propios; Comparar un adaptador antes de exportarlo.
-
-## Cómo funciona
 
 La interfaz reduce programación pero no elimina requisitos de memoria, licencia o evaluación de datos; no todas las configuraciones caben en un portátil
 
@@ -97,18 +113,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [PEFT](peft.md) | 21.9k | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. |
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Unsloth](unsloth.md) | 79.5k | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. |
+| [Axolotl](axolotl.md) | 12.7k | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. |
+| [torchtune](torchtune.md) | 5.8k | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. |
 
 ## Enlaces
 

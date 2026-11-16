@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Tree-sitter, generador de parsers y librería de parsing incremental. Licencia MIT. Es infraestructura madura (~27k estrellas, v0.27.2) usada por muchos editores y herramientas.
+
+## ¿Qué hace?
+
+Construye un árbol sintáctico concreto de un archivo y lo actualiza eficientemente mientras se edita. Es lo bastante general para cualquier lenguaje, lo bastante rápido para cada pulsación y robusto ante errores de sintaxis. Es la base del resaltado, la navegación y el análisis estructural en editores y herramientas de IA.
+
+## ¿Cómo lo hace?
+
+El runtime está escrito en C puro sin dependencias, con bindings para Rust, Wasm y otros lenguajes. Las gramáticas se generan con la CLI (`tree-sitter generate`), que requiere Node.js para gramáticas en JavaScript.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ast-grep](ast-grep.md) | ast-grep usa Tree-sitter para buscar y reescribir por patrones. | Instala ast-grep; incluye las gramáticas comunes. |
+| [Aider](aider.md) | El mapa del repo de Aider se construye con Tree-sitter. | No requiere instalación aparte en Aider. |
+| [Repomix](repomix.md) | `repomix --compress` extrae la estructura con Tree-sitter. | Usa la opción `--compress`. |
+| [graphify](graphify.md) | Graphify analiza el código con Tree-sitter. | Viene incluido en graphifyy. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.27.2 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tree-sitter/tree-sitter/blob/master/README.md) · [2](https://tree-sitter.github.io) · [3](https://aider.chat/docs/repomap.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es infraestructura de parsing; no contesta por sí sola preguntas sobre arquitectura o intención del código |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere IA ni servicios; compilar gramáticas puede necesitar herramientas nativas |
 | Equipo | Preparación según la ruta elegida. Herramientas y binding del lenguaje elegido; gramática |
-
-Es infraestructura de parsing; no contesta por sí sola preguntas sobre arquitectura o intención del código
-
-## Qué puedes hacer con él
-
-Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código.
-
-## Por qué destaca
-
-Usos propuestos: Construir un analizador de código; Extraer símbolos para una herramienta de edición.
-
-## Cómo funciona
 
 Es infraestructura de parsing; no contesta por sí sola preguntas sobre arquitectura o intención del código
 
@@ -84,13 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Herramientas y binding del lenguaje elegido; gramática
 - **Etiquetas:** `code` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ast-grep](ast-grep.md) | 16.6k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
-| [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
 
 ## Enlaces
 
