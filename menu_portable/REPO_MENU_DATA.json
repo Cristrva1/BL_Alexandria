@@ -54245,7 +54245,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "twenty-main",
+        "botpress"
+      ],
       "alt": []
     },
     {
@@ -54474,7 +54478,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar correo sobre Workers; Gestionar buzones de un dominio de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "open-seo",
+        "changedetection"
+      ],
       "alt": []
     },
     {
@@ -54589,7 +54597,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "sellbird",
+        "cal.diy",
+        "n8n"
+      ],
       "alt": []
     },
     {
@@ -54703,7 +54715,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "metabase"
+        "metabase",
+        "paperless-ngx"
       ],
       "alt": [
         "odoo"
@@ -54821,8 +54834,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Gestionar una newsletter propia; Evaluar segmentación de una lista de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mautic",
-        "n8n"
+        "n8n",
+        "novu",
+        "postiz-app"
       ],
       "alt": []
     },
@@ -54936,8 +54950,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar segmentación de audiencias; Prototipar una secuencia de marketing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "listmonk",
-        "marketingskills"
+        "n8n",
+        "marketingskills",
+        "posthog"
       ],
       "alt": []
     },
@@ -55050,8 +55065,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "chatwoot",
-        "activepieces"
+        "vercel-ai",
+        "langgraph",
+        "listmonk"
       ],
       "alt": []
     },
@@ -55167,7 +55183,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "metabase"
+        "metabase",
+        "botpress"
       ],
       "alt": [
         "erpnext"
@@ -55286,7 +55303,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Investigar palabras clave de una web propia; Preparar una revisión técnica SEO",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "coolify",
+        "geo-seo-claude"
+      ],
       "alt": []
     },
     {
@@ -55402,7 +55423,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar un calendario de contenido; Evaluar generación asistida de borradores",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "claude-code",
+        "coolify"
+      ],
       "alt": []
     },
     {
@@ -55516,7 +55541,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un borrador de prospección; Evaluar criterios de selección de empresas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "compai-crm"
+      ],
       "alt": []
     },
     {
@@ -55635,8 +55664,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "n8n",
         "evolution-api",
-        "n8n"
+        "cal.diy"
       ],
       "alt": []
     },

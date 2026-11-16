@@ -81167,7 +81167,11 @@
       "desc": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "twenty-main",
+        "botpress"
+      ],
       "alt": [],
       "stack": "Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo",
       "repo_url": "https://github.com/calcom/cal.diy",
@@ -81276,6 +81280,45 @@
       "stars": 50047,
       "license": "MIT",
       "homepage": "https://cal.diy",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "n8n tiene un disparador de Cal.com para reaccionar a reservas, cancelaciones o reprogramaciones; con cal.diy hay que apuntarlo a tu instancia [DATO NO VERIFICADO: compatibilidad con instancia propia].",
+          "orden_instalacion": "cal.diy accesible para n8n y clave de API; después el disparador."
+        },
+        {
+          "id": "twenty-main",
+          "motivo": "Registrar cada reserva como actividad u oportunidad en el CRM (combinación por arquitectura, con webhooks y un flujo intermedio).",
+          "orden_instalacion": "Configura el webhook de cal.diy hacia el flujo que escribe en Twenty."
+        },
+        {
+          "id": "botpress",
+          "motivo": "Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO].",
+          "orden_instalacion": "Instancia accesible por internet y token de API antes de configurar la integración."
+        }
+      ],
+      "que_es": "Plataforma de agendamiento de código abierto y comunitaria: un fork de Cal.com con todo el código Enterprise eliminado, 100 % bajo licencia MIT. Sus autores la recomiendan para uso personal y no productivo, y remiten a Cal.com para usos comerciales; no existe versión alojada.",
+      "que_hace": "Permite publicar tipos de evento, compartir enlaces de reserva, conectar calendarios y recibir citas sin cuenta ni clave de licencia de Cal.com. Respecto a Cal.com elimina equipos, organizaciones, Insights, Workflows, SSO/SAML y otras funciones EE. Las integraciones disponibles requieren credenciales propias de cada servicio.",
+      "como_lo_hace": "Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior; requiere Node.js 18 o superior y se recomienda Yarn. Se instala clonando el repositorio, instalando paquetes con yarn y configurando variables de entorno, o con la imagen Docker `calcom/cal.diy`.",
+      "descripcion_fuentes": [
+        "https://github.com/calcom/cal.diy/blob/main/README.md",
+        "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "calcom/cal.diy",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v6.2.0 (2026-03-01)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
       "body": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
       "install": {
@@ -81284,7 +81327,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "n8n",
+          "label": "n8n"
+        },
+        {
+          "id": "twenty-main",
+          "label": "twenty-main"
+        },
+        {
+          "id": "botpress",
+          "label": "botpress"
+        }
+      ],
       "areas": [
         "automatizacion"
       ],
@@ -81497,7 +81553,11 @@
       "desc": "Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar correo sobre Workers; Gestionar buzones de un dominio de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "open-seo",
+        "changedetection"
+      ],
       "alt": [],
       "stack": "Cuenta Cloudflare; dominio propio; Workers y almacenamiento de la guía; canal de envío",
       "repo_url": "https://github.com/maillab/cloud-mail",
@@ -81607,6 +81667,45 @@
       "stars": 16001,
       "license": "MIT",
       "homepage": "https://docs.skymail.ink",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "Usar la API abierta para crear buzones en lote o procesar correos recibidos en flujos (combinación por arquitectura).",
+          "orden_instalacion": "Despliega cloud-mail y crea un token de API; después llama a la API desde n8n."
+        },
+        {
+          "id": "open-seo",
+          "motivo": "Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura).",
+          "orden_instalacion": "Configura el dominio en Cloudflare primero; separa subdominios por servicio."
+        },
+        {
+          "id": "changedetection",
+          "motivo": "Usar una dirección de cloud-mail como buzón de alertas de cambios web y reenviarlas a Telegram (combinación por arquitectura).",
+          "orden_instalacion": "Crea la dirección en cloud-mail y configúrala como destino de notificación en changedetection."
+        }
+      ],
+      "que_es": "Plataforma de correo de código abierto (MIT) basada en Cloudflare, del proyecto maillab, que permite crear muchos buzones con un solo dominio. Su documentación principal está en chino, con traducciones al inglés y japonés; publica versiones activas (v3.5 en 2026).",
+      "que_hace": "Crea múltiples direcciones de correo con tu dominio, recibe y envía emails (incluido envío masivo) con adjuntos, y reenvía correos recibidos a un bot de Telegram u otro buzón. Incluye administración de usuarios y correos con permisos RBAC, API abierta para crear usuarios en lote y consultar correos, reconocimiento automático de códigos de verificación con Workers AI y gráficos de uso con ECharts.",
+      "como_lo_hace": "Se despliega en Cloudflare Workers para reducir costes de servidor: backend con el framework Hono y el ORM Drizzle, frontend Vue 3 con Element Plus, base de datos Cloudflare D1, caché KV y archivos en R2. El envío usa Cloudflare Email o Resend.",
+      "descripcion_notas": "Depende de servicios de Cloudflare (Workers, D1, KV, R2) y de sus límites de plan.",
+      "descripcion_fuentes": [
+        "https://github.com/maillab/cloud-mail/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "maillab/cloud-mail",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "v3.5.0 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.",
       "body": "Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.",
       "install": {
@@ -81615,7 +81714,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "n8n",
+          "label": "n8n"
+        },
+        {
+          "id": "open-seo",
+          "label": "open-seo"
+        },
+        {
+          "id": "changedetection",
+          "label": "changedetection"
+        }
+      ],
       "areas": [
         "automatizacion"
       ],
@@ -81641,7 +81753,11 @@
       "desc": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "sellbird",
+        "cal.diy",
+        "n8n"
+      ],
       "alt": [],
       "stack": "Bun; PostgreSQL; OAuth Google o Microsoft para login; AI Gateway para agentes fuera de Vercel",
       "repo_url": "https://github.com/trycompai/crm",
@@ -81755,6 +81871,45 @@
       "stars": 12089,
       "license": "MIT",
       "homepage": "https://trycrm.ai",
+      "combina_con": [
+        {
+          "id": "sellbird",
+          "motivo": "Sellbird encuentra y contacta empresas; el CRM investiga y conserva la evidencia de cada contacto (combinación por arquitectura).",
+          "orden_instalacion": "Independientes; define cuál es la fuente de verdad de cada contacto para no duplicar."
+        },
+        {
+          "id": "cal.diy",
+          "motivo": "Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura).",
+          "orden_instalacion": "Después del CRM; conecta las invitaciones al buzón sincronizado."
+        },
+        {
+          "id": "n8n",
+          "motivo": "Mover datos del CRM a otros sistemas mediante su API (combinación por arquitectura).",
+          "orden_instalacion": "CRM desplegado y con API accesible; después el flujo."
+        }
+      ],
+      "que_es": "CRM de código abierto (MIT) «agentic-first» de Comp AI, en el que el agente es el usuario principal y el CRM es donde guarda sus notas. Es reciente y activo (v1.16 en 2026).",
+      "que_hace": "Un agente que corre en su propio despliegue, con su calendario y cola de trabajo, decide qué investigar, programa sus propios seguimientos, gasta un presupuesto de investigación y se detiene al agotarlo. Identifica contactos, investiga personas y empresas y registra hechos solo con evidencia observada: la evidencia fuerte se escribe en la ficha y la débil queda como sugerencia para que una persona decida. Sin claves de API también funciona leyendo el historial de tus propios hilos de correo.",
+      "como_lo_hace": "Monorepo TypeScript: front end Next.js (puerto 3000), API NestJS con tRPC, autenticación y sincronización de buzones (puerto 3001) y un agente sobre el framework eve con 18 herramientas propias, 4 skills en Markdown y un único programador. Los modelos pasan por Vercel AI Gateway; el agente usa un sandbox (Vercel Sandbox en producción, Docker o microsandbox en local) sin salida a internet por defecto. Datos en Prisma con PostgreSQL (Neon) y Redis opcional (Upstash); autenticación con Better Auth (Google, Microsoft o tu IdP).",
+      "descripcion_notas": "Las herramientas nuevas o modificadas requieren revisión antes de que el agente pueda usarlas. Pensado para Vercel; en otro proveedor hay que sustituir Sandbox, Blob y AI Gateway.",
+      "descripcion_fuentes": [
+        "https://github.com/trycompai/crm/blob/release/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "trycompai/crm",
+        "archived": false,
+        "pushed_at": "2026-11-01",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.16.0 (2026-10-22)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.",
       "body": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.",
       "install": {
@@ -81763,7 +81918,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "sellbird",
+          "label": "sellbird"
+        },
+        {
+          "id": "cal.diy",
+          "label": "cal.diy"
+        },
+        {
+          "id": "n8n",
+          "label": "n8n"
+        }
+      ],
       "areas": [
         "automatizacion"
       ],
@@ -81791,7 +81959,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "metabase"
+        "metabase",
+        "paperless-ngx"
       ],
       "alt": [
         "odoo"
@@ -81905,6 +82074,46 @@
       "stars": 41296,
       "license": "GPL-3.0",
       "homepage": "https://frappe.io/erpnext",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "n8n tiene un nodo ERPNext para crear y consultar documentos (clientes, pedidos, facturas) desde flujos.",
+          "orden_instalacion": "ERPNext primero con un usuario y claves de API; después la credencial en n8n."
+        },
+        {
+          "id": "metabase",
+          "motivo": "Análisis y dashboards conectando a la base de datos de ERPNext con un usuario de solo lectura (combinación por arquitectura).",
+          "orden_instalacion": "Crea un usuario de lectura en la base de datos y conecta Metabase a ella o a una réplica."
+        },
+        {
+          "id": "paperless-ngx",
+          "motivo": "Archivar y hacer OCR de facturas y documentos escaneados que luego se registran en el ERP (combinación por arquitectura).",
+          "orden_instalacion": "Independientes; define qué sistema es el maestro de cada documento para no duplicar."
+        }
+      ],
+      "que_es": "Sistema ERP 100 % de código abierto (GPL v3) de Frappe Technologies, construido sobre el Frappe Framework. Es maduro y muy activo (serie v16 en 2026), con hospedaje gestionado opcional en Frappe Cloud.",
+      "que_hace": "Cubre contabilidad (desde el registro de transacciones hasta informes financieros), gestión de pedidos e inventario, clientes y proveedores, fabricación con planificación de capacidad y subcontratación, gestión de activos y proyectos con tareas, partes de horas e incidencias. Pensado para que una empresa sustituya varias herramientas separadas por un solo sistema.",
+      "como_lo_hace": "Se basa en Frappe Framework, un framework web completo en Python y JavaScript con capa de abstracción de base de datos, autenticación y API REST, y en Frappe UI (Vue) para la interfaz. Para autoalojar se usa `frappe_docker` con Docker y Docker Compose v2; el entorno rápido es solo de evaluación y no admite apps personalizadas, por lo que para producción se sigue la guía completa. Frappe Cloud gestiona instalación, actualizaciones y copias.",
+      "descripcion_notas": "Alternativa (elige una): odoo.",
+      "descripcion_fuentes": [
+        "https://github.com/frappe/erpnext/blob/develop/README.md",
+        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext/"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "frappe/erpnext",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "GPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "v16.55.0 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura.",
       "body": "ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura.",
       "install": {
@@ -81926,6 +82135,10 @@
         {
           "id": "metabase",
           "label": "metabase"
+        },
+        {
+          "id": "paperless-ngx",
+          "label": "paperless-ngx"
         }
       ],
       "areas": [
@@ -81956,8 +82169,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Gestionar una newsletter propia; Evaluar segmentación de una lista de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mautic",
-        "n8n"
+        "n8n",
+        "novu",
+        "postiz-app"
       ],
       "alt": [],
       "stack": "Docker; PostgreSQL; SMTP de ensayo; lista ficticia",
@@ -82067,6 +82281,48 @@
       "stars": 24302,
       "license": "AGPL-3.0",
       "homepage": "https://listmonk.app",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "Alta de suscriptores o envíos transaccionales desde formularios y otros sistemas usando la API de listmonk (combinación por arquitectura).",
+          "orden_instalacion": "Crea un token de API con permisos acotados en listmonk y úsalo en nodos HTTP de n8n."
+        },
+        {
+          "id": "novu",
+          "motivo": "listmonk para boletines masivos y Novu para notificaciones de producto multicanal (combinación por arquitectura).",
+          "orden_instalacion": "Independientes; separa dominios de envío."
+        },
+        {
+          "id": "postiz-app",
+          "motivo": "Coordinar el calendario de redes sociales con las campañas de email (combinación por arquitectura).",
+          "orden_instalacion": "Independientes; pueden compartir servidor pero cada uno con su base de datos."
+        }
+      ],
+      "que_es": "Gestor autoalojado de boletines y listas de correo, de código abierto (AGPLv3), creado por Kailash Nadh en 2018. Se distribuye como un único binario en Go; en noviembre de 2026 su última versión es la v7.0.0-beta.2.",
+      "que_hace": "Gestiona millones de suscriptores en listas de suscripción simple o doble, segmenta con expresiones SQL, envía campañas con plantillas dinámicas (lenguaje de plantillas de Go con más de 100 funciones) y editor visual, WYSIWYG, Markdown o HTML. Incluye analítica de campañas (rebotes, enlaces más clicados), API de correos transaccionales, «messengers» por webhook para SMS, WhatsApp o notificaciones push, exportación o borrado de datos del suscriptor, SSO OIDC, roles y biblioteca de medios con almacenamiento S3.",
+      "como_lo_hace": "Un binario en Go con PostgreSQL como único almacén. Se instala con Docker Compose (archivo de ejemplo en el repositorio) o descargando el binario: `./listmonk --new-config`, `--install` para preparar la base y luego `./listmonk`; la interfaz queda en el puerto 9000. Envía por colas multihilo con varios servidores SMTP y límites de tasa con ventana deslizante; según su web, una campaña de más de 7 millones de correos usó una fracción de un núcleo y 57 MB de RAM.",
+      "descripcion_notas": "Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email masivo; elegí no listarlo como combinación.",
+      "descripcion_fuentes": [
+        "https://github.com/knadh/listmonk/blob/master/README.md",
+        "https://listmonk.app",
+        "https://listmonk.app/docs/messengers/",
+        "https://listmonk.app/docs/apis/apis/"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "knadh/listmonk",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "AGPL-3.0",
+        "primary_language": "Go",
+        "latest_release": "v7.0.0-beta.2 (2026-11-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.",
       "body": "Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.",
       "install": {
@@ -82077,12 +82333,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "mautic",
-          "label": "mautic"
-        },
-        {
           "id": "n8n",
           "label": "n8n"
+        },
+        {
+          "id": "novu",
+          "label": "novu"
+        },
+        {
+          "id": "postiz-app",
+          "label": "postiz-app"
         }
       ],
       "areas": [
@@ -82112,8 +82372,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar segmentación de audiencias; Prototipar una secuencia de marketing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "listmonk",
-        "marketingskills"
+        "n8n",
+        "marketingskills",
+        "posthog"
       ],
       "alt": [],
       "stack": "Servidor y versión compatibles; SMTP; contactos ficticios; colas y tareas según guía",
@@ -82222,6 +82483,46 @@
       "stars": 10988,
       "license": "NOASSERTION",
       "homepage": "https://www.mautic.org",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "n8n tiene un nodo Mautic para crear o actualizar contactos y añadirlos a segmentos o campañas.",
+          "orden_instalacion": "Mautic primero con la API activada y credenciales; después la credencial en n8n."
+        },
+        {
+          "id": "marketingskills",
+          "motivo": "Skills de marketing para que un agente redacte secuencias, segmentos y copys que luego se cargan en Mautic (combinación por arquitectura).",
+          "orden_instalacion": "Independientes; revisa los textos generados antes de activarlos."
+        },
+        {
+          "id": "posthog",
+          "motivo": "PostHog mide el comportamiento en producto y Mautic actúa con campañas sobre esos segmentos (combinación por arquitectura).",
+          "orden_instalacion": "Define un identificador común de contacto antes de sincronizar datos entre ambos."
+        }
+      ],
+      "que_es": "Plataforma de automatización de marketing de código abierto, presentada como el mayor proyecto abierto de su tipo y con comunidad mundial. Se distribuye bajo GPL v3 [DATO NO VERIFICADO: GitHub no reconoce la licencia como estándar] y publica versiones activas (7.2 en 2026); también existen pruebas alojadas por terceros.",
+      "que_hace": "Crea campañas de marketing integradas y multicanal con segmentación y automatización sin límites, formularios, páginas y seguimiento de contactos, con foco en privacidad y en ser dueño de tus datos. Permite crear integraciones propias y personalizar frontend y backend. Casos típicos: nutrir clientes potenciales, campañas de email por comportamiento y puntuación de leads.",
+      "como_lo_hace": "Es una aplicación PHP que se instala con Composer siguiendo la documentación de línea de comandos (o descargando el paquete), con requisitos y versiones soportadas publicados en su documentación; el repositorio incluye configuración DDEV para desarrollo local. Necesita un servidor web con PHP y una base de datos MySQL/MariaDB [DATO NO VERIFICADO: versiones exactas] y tareas cron para procesar segmentos y campañas.",
+      "descripcion_notas": "Se solapa con listmonk en envío masivo de email; usa uno como canal principal de boletines.",
+      "descripcion_fuentes": [
+        "https://github.com/mautic/mautic/blob/7.x/README.md",
+        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "mautic/mautic",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "PHP",
+        "latest_release": "7.2.2 (2026-10-26)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo.",
       "body": "Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo.",
       "install": {
@@ -82232,12 +82533,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "listmonk",
-          "label": "listmonk"
+          "id": "n8n",
+          "label": "n8n"
         },
         {
           "id": "marketingskills",
           "label": "marketingskills"
+        },
+        {
+          "id": "posthog",
+          "label": "posthog"
         }
       ],
       "areas": [
@@ -82267,8 +82572,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "chatwoot",
-        "activepieces"
+        "vercel-ai",
+        "langgraph",
+        "listmonk"
       ],
       "alt": [],
       "stack": "Proyecto de notificaciones; credenciales del canal; destino propio de prueba",
@@ -82376,6 +82682,46 @@
       "stars": 40341,
       "license": "NOASSERTION",
       "homepage": "https://go.novu.co/github",
+      "combina_con": [
+        {
+          "id": "vercel-ai",
+          "motivo": "El README cita el AI SDK entre los agentes que puede conectar a canales como Slack, Teams o email.",
+          "orden_instalacion": "Agente con AI SDK funcionando primero; después conecta el canal en Novu y apunta su enrutamiento al agente."
+        },
+        {
+          "id": "langgraph",
+          "motivo": "Agentes construidos con LangGraph se exponen en Slack, Telegram o email a través de la capa ACI de Novu.",
+          "orden_instalacion": "Igual: primero el agente desplegado con un endpoint, luego Novu."
+        },
+        {
+          "id": "listmonk",
+          "motivo": "Novu cubre notificaciones transaccionales e in-app; listmonk, boletines y listas masivas (combinación por arquitectura).",
+          "orden_instalacion": "Independientes; usa dominios o subdominios de envío separados para no mezclar reputación."
+        }
+      ],
+      "que_es": "Infraestructura de comunicación de código abierto para productos y agentes, de Novu. Sigue un modelo «open core»: el núcleo es abierto y la carpeta `enterprise` requiere licencia comercial; publica versiones con frecuencia.",
+      "que_hace": "Envía notificaciones por bandeja in-app, email, SMS, push y chat con una sola API, con flujos, resúmenes («digests») y un componente de bandeja incrustable. Su capa ACI (Agent Communication Infrastructure) conecta cualquier agente que ya tengas (Claude, AI SDK, LangGraph o propio) a Slack, Microsoft Teams, Telegram, WhatsApp, email o una bandeja in-app, normalizando los mensajes entrantes y devolviendo las respuestas con hilos, reacciones y formato por canal.",
+      "como_lo_hace": "Es un monorepo en TypeScript con API, panel de administración y SDK (incluido `@novu/framework` y componentes para React). Unifica proveedores por canal (por ejemplo SendGrid para email) detrás de un modelo de conversación único. Se usa en Novu Cloud o autoalojado [DATO NO VERIFICADO: requisitos de infraestructura del autoalojamiento, no descritos en el README].",
+      "descripcion_fuentes": [
+        "https://github.com/novuhq/novu/blob/next/README.md",
+        "https://docs.novu.co/platform/quickstart/react",
+        "https://docs.novu.co/platform/integrations/email/sendgrid"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "novuhq/novu",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "TypeScript",
+        "latest_release": "@novu/framework@v2.14.0 (2026-09-28)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.",
       "body": "Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.",
       "install": {
@@ -82386,12 +82732,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "chatwoot",
-          "label": "chatwoot"
+          "id": "vercel-ai",
+          "label": "vercel-ai"
         },
         {
-          "id": "activepieces",
-          "label": "activepieces"
+          "id": "langgraph",
+          "label": "langgraph"
+        },
+        {
+          "id": "listmonk",
+          "label": "listmonk"
         }
       ],
       "areas": [
@@ -82422,7 +82772,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "metabase"
+        "metabase",
+        "botpress"
       ],
       "alt": [
         "erpnext"
@@ -82536,6 +82887,47 @@
       "stars": 55798,
       "license": "NOASSERTION",
       "homepage": "https://www.odoo.com",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "n8n tiene un nodo Odoo para crear o leer contactos, oportunidades y otros registros desde flujos.",
+          "orden_instalacion": "Odoo primero con un usuario de integración y clave de API; después la credencial en n8n."
+        },
+        {
+          "id": "metabase",
+          "motivo": "Dashboards sobre la base PostgreSQL de Odoo sin tocar la aplicación (combinación por arquitectura).",
+          "orden_instalacion": "Conecta Metabase con un usuario de solo lectura, idealmente a una réplica, para no cargar la base de producción."
+        },
+        {
+          "id": "botpress",
+          "motivo": "Botpress Cloud tiene una integración oficial con Odoo para que un bot consulte o registre datos.",
+          "orden_instalacion": "Odoo accesible por internet con usuario de API; luego activa la integración en el Hub de Botpress."
+        }
+      ],
+      "que_es": "Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.",
+      "que_hace": "Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, facturación y contabilidad, punto de venta, recursos humanos, marketing y fabricación. Cada app funciona sola, pero al instalar varias se integran en un ERP completo. Casos típicos: gestión comercial y de inventario de pymes, facturación y tienda en línea conectadas.",
+      "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].",
+      "descripcion_notas": "Alternativa (elige una): erpnext. Algunas apps solo existen en la edición Enterprise.",
+      "descripcion_fuentes": [
+        "https://github.com/odoo/odoo/blob/20.0/README.md",
+        "https://github.com/odoo/odoo/blob/20.0/LICENSE",
+        "https://www.odoo.com/documentation/19.0/administration/on_premise/source.html",
+        "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "odoo/odoo",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web.",
       "body": "Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web.",
       "install": {
@@ -82557,6 +82949,10 @@
         {
           "id": "metabase",
           "label": "metabase"
+        },
+        {
+          "id": "botpress",
+          "label": "botpress"
         }
       ],
       "areas": [
@@ -82585,7 +82981,11 @@
       "desc": "Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Investigar palabras clave de una web propia; Preparar una revisión técnica SEO",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "coolify",
+        "geo-seo-claude"
+      ],
       "alt": [],
       "stack": "Cuenta o despliegue; DataForSEO; cliente MCP opcional; dominio propio de prueba",
       "repo_url": "https://github.com/every-app/open-seo",
@@ -82699,6 +83099,45 @@
       "stars": 27735,
       "license": "MIT",
       "homepage": "https://openseo.so",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Servidor MCP y skills oficiales para que el agente investigue palabras clave o audite sitios con tus datos.",
+          "orden_instalacion": "OpenSEO desplegado con tu clave de DataForSEO; luego conecta el MCP según su guía."
+        },
+        {
+          "id": "coolify",
+          "motivo": "El README cita Coolify entre las plataformas Compose compatibles con su imagen Docker.",
+          "orden_instalacion": "Coolify en el servidor; crea el servicio desde el Compose de OpenSEO y protege el acceso."
+        },
+        {
+          "id": "geo-seo-claude",
+          "motivo": "Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura).",
+          "orden_instalacion": "Después de conectar el MCP de OpenSEO al agente."
+        }
+      ],
+      "que_es": "Herramienta SEO de código abierto (MIT), alternativa a Semrush y Ahrefs, de every-app. Es reciente y activa (v0.1.x en 2026), con versión alojada de pago opcional.",
+      "que_hace": "Cubre investigación de palabras clave, seguimiento de posiciones, análisis de competidores, backlinks, auditorías de sitio y visibilidad en IA. Funciona por consumo: usas tu propia clave de DataForSEO y pagas solo lo que consultas. Expone un servidor MCP y skills para que agentes como Claude Code, OpenClaw o Hermes usen tus datos SEO; también se integra con ChatGPT y Codex.",
+      "como_lo_hace": "Aplicación en TypeScript con dos vías de autoalojamiento: Docker con imagen precompilada (compatible con Coolify, Portainer y Dokploy) o un despliegue de un comando en tu cuenta de Cloudflare (funciona en el plan gratuito), opcionalmente detrás de Cloudflare Access. Usa cuentas con email y contraseña: el primer visitante es administrador y el resto entra por invitación.",
+      "descripcion_notas": "Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel.",
+      "descripcion_fuentes": [
+        "https://github.com/every-app/open-seo/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "every-app/open-seo",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v0.1.27 (2026-11-11)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.",
       "body": "Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.",
       "install": {
@@ -82707,7 +83146,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "coolify",
+          "label": "coolify"
+        },
+        {
+          "id": "geo-seo-claude",
+          "label": "geo-seo-claude"
+        }
+      ],
       "areas": [
         "automatizacion",
         "configurar-claude-code",
@@ -82740,7 +83192,11 @@
       "desc": "Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar un calendario de contenido; Evaluar generación asistida de borradores",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "claude-code",
+        "coolify"
+      ],
       "alt": [],
       "stack": "Cuenta Cloud o self-host con PostgreSQL y Redis; apps de plataforma; modelos solo para AI",
       "repo_url": "https://github.com/gitroomhq/postiz-app",
@@ -82854,6 +83310,45 @@
       "stars": 41620,
       "license": "AGPL-3.0",
       "homepage": "https://postiz.com",
+      "combina_con": [
+        {
+          "id": "n8n",
+          "motivo": "Nodo personalizado oficial de n8n para publicar desde flujos (por ejemplo, al aprobar un contenido).",
+          "orden_instalacion": "Postiz primero con clave de API pública; después instala el nodo en n8n."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Servidor MCP de Postiz para que un agente programe y gestione publicaciones.",
+          "orden_instalacion": "Postiz con canales conectados; luego registra el MCP en el agente."
+        },
+        {
+          "id": "coolify",
+          "motivo": "Ruta de despliegue citada en el README.",
+          "orden_instalacion": "Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque."
+        }
+      ],
+      "que_es": "Plataforma de gestión de redes sociales para programar, automatizar y analizar contenido, de gitroomhq. La edición autoalojada es de código abierto (AGPL-3.0) sin funciones limitadas por licencia, y existe Postiz Cloud gestionado.",
+      "que_hace": "Programa publicaciones en Instagram, YouTube, Dribbble, LinkedIn, Reddit, TikTok, Facebook, Pinterest, Threads, X, Slack, Discord, Mastodon y Bluesky, con analítica y un copiloto de IA para textos, imágenes y videos. Ofrece API pública, SDK de Node.js, nodo personalizado para n8n, integración con Make.com y un servidor MCP para agentes como Claude Code, Codex o Cursor.",
+      "como_lo_hace": "Monorepo en TypeScript con Next.js (React), NestJS, Temporal para flujos y Prisma con PostgreSQL por defecto. En autoalojamiento debes configurar PostgreSQL, Redis, almacenamiento y variables de entorno, y crear tus propias apps de desarrollador en cada red (la aprobación de Meta, YouTube o TikTok puede tardar semanas). Se despliega con Docker, Coolify, Railway o cualquier VPS; la IA requiere tus propias claves de OpenAI u otros proveedores.",
+      "descripcion_fuentes": [
+        "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+        "https://docs.postiz.com/public-api"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "gitroomhq/postiz-app",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "AGPL-3.0",
+        "primary_language": "TypeScript",
+        "latest_release": "v2.26.0 (2026-11-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.",
       "body": "Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.",
       "install": {
@@ -82862,7 +83357,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "n8n",
+          "label": "n8n"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "coolify",
+          "label": "coolify"
+        }
+      ],
       "areas": [
         "automatizacion",
         "configurar-claude-code",
@@ -82895,7 +83403,11 @@
       "desc": "Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un borrador de prospección; Evaluar criterios de selección de empresas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "compai-crm"
+      ],
       "alt": [],
       "stack": "Python 3.13; Claude Code o Codex CLI autenticado; SMTP y fuentes solo según la prueba",
       "repo_url": "https://github.com/ethanplusai/sellbird",
@@ -83005,6 +83517,45 @@
       "stars": 5588,
       "license": "AGPL-3.0",
       "homepage": "https://sellbird.ai",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Motor de razonamiento por defecto y guía de instalación mediante `CLAUDE.md`.",
+          "orden_instalacion": "Claude Code con sesión iniciada (`claude login`) en un plan Pro o Max antes de instalar Sellbird."
+        },
+        {
+          "id": "codex",
+          "motivo": "Alternativa documentada para quien tiene plan de ChatGPT.",
+          "orden_instalacion": "Codex CLI con sesión iniciada; sigue `docs/codex.md`. Usa un solo motor."
+        },
+        {
+          "id": "compai-crm",
+          "motivo": "Guardar los contactos y respuestas en un CRM que investiga y conserva evidencia (combinación por arquitectura).",
+          "orden_instalacion": "Después de validar Sellbird; define qué sistema es maestro de contactos."
+        }
+      ],
+      "que_es": "Plataforma de prospección («outreach») de código abierto (AGPL-3.0) que funciona con tu plan de Claude o ChatGPT, antes llamada Harvey. Es reciente (v0.4 en 2026) y tiene una versión alojada en acceso anticipado.",
+      "que_hace": "Ejecuta un pipeline completo o por pasos: encuentra empresas que encajan con tu cliente ideal (gratis en OpenStreetMap o en fuentes de pago que muestran el coste antes), detecta señales de compra en su web, identifica hasta dos personas que deciden, verifica su email, escribe secuencias personalizadas y las envía desde Gmail, Microsoft 365 o SMTP dentro de límites diarios y horario de oficina. Lee las respuestas, redacta contestaciones, respeta bajas al instante y te pasa lo que no debe contestar solo; por defecto nada sale sin tu aprobación.",
+      "como_lo_hace": "Es una aplicación Python 3.11+ que corre en tu máquina; piensa a través de la CLI de Claude Code (plan Pro o Max) o de Codex (plan de ChatGPT), sin API key ni cobro por token, y se limita a sí misma para dejar margen en el plan. Se instala con `pip install -e .` en un entorno virtual o con Docker en Linux; `sellbird dashboard` abre un panel privado en el puerto 5555. El `CLAUDE.md` del repositorio convierte a Claude Code en guía de instalación.",
+      "descripcion_notas": "El email en frío está regulado (por ejemplo GDPR o CAN-SPAM); revisa la normativa de tu país y usa dominios de envío separados.",
+      "descripcion_fuentes": [
+        "https://github.com/ethanplusai/sellbird/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "ethanplusai/sellbird",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "v0.4.0 (2026-11-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.",
       "body": "Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.",
       "install": {
@@ -83013,7 +83564,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "compai-crm",
+          "label": "compai-crm"
+        }
+      ],
       "areas": [
         "automatizacion",
         "configurar-claude-code",
@@ -83046,8 +83610,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "n8n",
         "evolution-api",
-        "n8n"
+        "cal.diy"
       ],
       "alt": [],
       "stack": "CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI",
@@ -83163,6 +83729,50 @@
       "stars": 60937,
       "license": "NOASSERTION",
       "homepage": "https://twenty.com",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Twenty publica skills oficiales para que un agente de código cree objetos, vistas y lógica de apps del CRM.",
+          "orden_instalacion": "Instala la CLI de Twenty y las skills; inicia sesión en tu espacio con `twenty auth login` antes de publicar."
+        },
+        {
+          "id": "n8n",
+          "motivo": "Sincronizar contactos y oportunidades con otros sistemas usando la API de Twenty desde nodos HTTP (combinación por arquitectura).",
+          "orden_instalacion": "Crea una clave de API en Twenty y úsala en n8n."
+        },
+        {
+          "id": "evolution-api",
+          "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura).",
+          "orden_instalacion": "Evolution API y n8n primero; después el flujo que escribe en Twenty."
+        },
+        {
+          "id": "cal.diy",
+          "motivo": "Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio).",
+          "orden_instalacion": "Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty."
+        }
+      ],
+      "que_es": "CRM de código abierto pensado para equipos técnicos, de Twenty (twentyhq), que se construye, despliega y versiona como el resto del código. Es muy activo (versión 2.58 en 2026); su licencia no figura como estándar en GitHub y combina código abierto con partes comerciales [DATO NO VERIFICADO: reparto exacto de licencias].",
+      "que_hace": "Gestiona empresas, personas, oportunidades y tareas con objetos, campos y vistas personalizables. Permite crear «apps» propias con objetos, vistas, agentes y funciones lógicas definidas como código y publicarlas en tu espacio de trabajo. Se usa en la nube de Twenty o autoalojado.",
+      "como_lo_hace": "Backend NestJS en TypeScript con BullMQ, PostgreSQL y Redis, y frontend en React. Las apps se crean con la CLI (`npm install -g twenty`, `twenty app init`, `twenty app publish`) y el SDK `twenty-sdk`; hay skills oficiales para agentes de código instalables con `npx skills add`. El autoalojamiento se hace con Docker Compose según su documentación.",
+      "descripcion_fuentes": [
+        "https://github.com/twentyhq/twenty/blob/main/README.md",
+        "https://docs.twenty.com/developers/self-host/capabilities/docker-compose"
+      ],
+      "descripcion_revision": {
+        "batch": "02-crm-ventas-marketing",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "twentyhq/twenty",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "TypeScript",
+        "latest_release": "twenty/v2.58.0 (2026-11-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.",
       "body": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.",
       "install": {
@@ -83173,12 +83783,20 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "evolution-api",
-          "label": "evolution-api"
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
           "id": "n8n",
           "label": "n8n"
+        },
+        {
+          "id": "evolution-api",
+          "label": "evolution-api"
+        },
+        {
+          "id": "cal.diy",
+          "label": "cal.diy"
         }
       ],
       "areas": [

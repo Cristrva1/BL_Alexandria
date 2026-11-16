@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Plataforma de correo de código abierto (MIT) basada en Cloudflare, del proyecto maillab, que permite crear muchos buzones con un solo dominio. Su documentación principal está en chino, con traducciones al inglés y japonés; publica versiones activas (v3.5 en 2026).
+
+## ¿Qué hace?
+
+Crea múltiples direcciones de correo con tu dominio, recibe y envía emails (incluido envío masivo) con adjuntos, y reenvía correos recibidos a un bot de Telegram u otro buzón. Incluye administración de usuarios y correos con permisos RBAC, API abierta para crear usuarios en lote y consultar correos, reconocimiento automático de códigos de verificación con Workers AI y gráficos de uso con ECharts.
+
+## ¿Cómo lo hace?
+
+Se despliega en Cloudflare Workers para reducir costes de servidor: backend con el framework Hono y el ORM Drizzle, frontend Vue 3 con Element Plus, base de datos Cloudflare D1, caché KV y archivos en R2. El envío usa Cloudflare Email o Resend.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Usar la API abierta para crear buzones en lote o procesar correos recibidos en flujos (combinación por arquitectura). | Despliega cloud-mail y crea un token de API; después llama a la API desde n8n. |
+| [open-seo](open-seo.md) | Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura). | Configura el dominio en Cloudflare primero; separa subdominios por servicio. |
+| [changedetection.io](changedetection.md) | Usar una dirección de cloud-mail como buzón de alertas de cambios web y reenviarlas a Telegram (combinación por arquitectura). | Crea la dirección en cloud-mail y configúrala como destino de notificación en changedetection. |
+
+**Notas:** Depende de servicios de Cloudflare (Workers, D1, KV, R2) y de sus límites de plan.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v3.5.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/maillab/cloud-mail/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No es una app totalmente local: se apoya en servicios Cloudflare y en la configuración del dominio |
 | Coste | El coste depende del proveedor o la ruta. No requiere LLM para correo básico; dominio, Workers, almacenamiento y proveedor de envío tienen cuotas y costes propios |
 | Equipo | Preparación según la ruta elegida. Cuenta Cloudflare; dominio propio; Workers y almacenamiento de la guía; canal de envío |
-
-No es una app totalmente local: se apoya en servicios Cloudflare y en la configuración del dominio
-
-## Qué puedes hacer con él
-
-Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar correo sobre Workers; Gestionar buzones de un dominio de prueba.
-
-## Cómo funciona
 
 No es una app totalmente local: se apoya en servicios Cloudflare y en la configuración del dominio
 

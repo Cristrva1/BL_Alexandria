@@ -10,6 +10,31 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+CRM de código abierto pensado para equipos técnicos, de Twenty (twentyhq), que se construye, despliega y versiona como el resto del código. Es muy activo (versión 2.58 en 2026); su licencia no figura como estándar en GitHub y combina código abierto con partes comerciales [DATO NO VERIFICADO: reparto exacto de licencias].
+
+## ¿Qué hace?
+
+Gestiona empresas, personas, oportunidades y tareas con objetos, campos y vistas personalizables. Permite crear «apps» propias con objetos, vistas, agentes y funciones lógicas definidas como código y publicarlas en tu espacio de trabajo. Se usa en la nube de Twenty o autoalojado.
+
+## ¿Cómo lo hace?
+
+Backend NestJS en TypeScript con BullMQ, PostgreSQL y Redis, y frontend en React. Las apps se crean con la CLI (`npm install -g twenty`, `twenty app init`, `twenty app publish`) y el SDK `twenty-sdk`; hay skills oficiales para agentes de código instalables con `npx skills add`. El autoalojamiento se hace con Docker Compose según su documentación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Twenty publica skills oficiales para que un agente de código cree objetos, vistas y lógica de apps del CRM. | Instala la CLI de Twenty y las skills; inicia sesión en tu espacio con `twenty auth login` antes de publicar. |
+| [n8n](n8n.md) | Sincronizar contactos y oportunidades con otros sistemas usando la API de Twenty desde nodos HTTP (combinación por arquitectura). | Crea una clave de API en Twenty y úsala en n8n. |
+| [evolution-api](evolution-api.md) | Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura). | Evolution API y n8n primero; después el flujo que escribe en Twenty. |
+| [cal.diy](cal-diy.md) | Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio). | Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty. |
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada twenty/v2.58.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/twentyhq/twenty/blob/main/README.md) · [2](https://docs.twenty.com/developers/self-host/capabilities/docker-compose)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +48,6 @@
 | Modelos locales | Modelo local no documentado. El CLI twenty app init crea una extensión y no todo el servidor CRM; para usar el producto elige su instalación o servicio |
 | Coste | El coste depende del proveedor o la ruta. CRM, hosting y AI tienen costes por ruta; las skills de desarrollo usan el agente anfitrión |
 | Equipo | Preparación según la ruta elegida. CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI |
-
-El CLI twenty app init crea una extensión y no todo el servidor CRM; para usar el producto elige su instalación o servicio
-
-## Qué puedes hacer con él
-
-CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.
-
-## Por qué destaca
-
-Usos propuestos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM.
-
-## Cómo funciona
 
 El CLI twenty app init crea una extensión y no todo el servidor CRM; para usar el producto elige su instalación o servicio
 
@@ -86,13 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI
 - **Etiquetas:** `automation` `crm` `typescript` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

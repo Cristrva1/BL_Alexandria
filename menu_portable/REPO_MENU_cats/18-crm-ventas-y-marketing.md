@@ -31,6 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un evento personal de prueba y abre su página de reserva
 **Qué comprobar:** Puedes elegir una franja disponible y revisar la reserva creada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `n8n`, `twenty-main`, `botpress`
 
 ## `chatwoot`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,crm,ruby,docker
@@ -90,6 +91,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Despliega un entorno de prueba y comprueba recepción con un buzón propio antes de usar correo real
 **Qué comprobar:** Puedes identificar dónde se guarda el mensaje y qué servicio lo entrega
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `n8n`, `open-seo`, `changedetection`
 
 ## `compai-crm`
 role=platform · exec=cloud · setup=heavy · mcp=False · prov=— · tags=crm,typescript
@@ -127,6 +129,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga datos ficticios y revisa qué fuentes de enriquecimiento y modelo están configurados antes de conectar correo
 **Qué comprobar:** Puedes distinguir funciones CRM, lectura de historial y llamadas a proveedores externos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sellbird`, `cal.diy`, `n8n`
 
 ## `erpnext`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=crm,python
@@ -159,7 +162,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa la demo Docker y crea un artículo y una oportunidad ficticios antes de configurar una empresa real
 **Qué comprobar:** Puedes inspeccionar módulos y flujo de documentos de la demo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `metabase`
+**Combina con:** `n8n`, `metabase`, `paperless-ngx`
 **Alternativas (elige una):** `odoo`
 
 ## `listmonk`
@@ -194,7 +197,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una lista de prueba y revisa el preview de una campaña antes de un envío de ensayo propio
 **Qué comprobar:** Puedes comprobar plantilla, destinatario y estado del trabajo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mautic`, `n8n`
+**Combina con:** `n8n`, `novu`, `postiz-app`
 
 ## `mautic`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,email,php
@@ -224,7 +227,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Diseña una campaña de prueba con un contacto ficticio y revisa condiciones y acciones antes de activarla
 **Qué comprobar:** Puedes explicar qué evento dispara cada paso del flujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `listmonk`, `marketingskills`
+**Combina con:** `n8n`, `marketingskills`, `posthog`
 
 ## `novu`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,email,typescript
@@ -254,7 +257,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Define un evento ficticio y comprueba su preview y entrega en un canal de ensayo
 **Qué comprobar:** Puedes rastrear evento, plantilla y estado de entrega
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `chatwoot`, `activepieces`
+**Combina con:** `vercel-ai`, `langgraph`, `listmonk`
 
 ## `odoo`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=crm,python,postgres
@@ -284,7 +287,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un contacto y una oportunidad ficticios y recorre sus etapas sin emitir documentos reales
 **Qué comprobar:** Puedes comprobar campos, etapas y permisos del flujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `metabase`
+**Combina con:** `n8n`, `metabase`, `botpress`
 **Alternativas (elige una):** `erpnext`
 
 ## `open-seo`
@@ -315,6 +318,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una métrica de un dominio propio y revisa origen, fecha y coste de la solicitud
 **Qué comprobar:** Puedes identificar qué datos devuelve DataForSEO y qué interpreta el agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `coolify`, `geo-seo-claude`
 
 ## `postiz-app`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=marketing,server,typescript
@@ -344,6 +348,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara una publicación ficticia en borrador y revisa preview, canal y horario sin programarla
 **Qué comprobar:** Puedes comprobar contenido y cuenta de destino antes de publicar
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `n8n`, `claude-code`, `coolify`
 
 ## `sellbird`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=marketing,agent,python
@@ -374,6 +379,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Estudia un prospecto ficticio y genera un borrador sin habilitar envíos automáticos
 **Qué comprobar:** Puedes revisar evidencias, redacción y costes de la fuente antes de aprobar cualquier envío
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `compai-crm`
 
 ## `twenty-main`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=automation,crm,typescript,docker
@@ -403,4 +409,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un objeto y dos registros ficticios y revisa sus relaciones antes de añadir automatización
 **Qué comprobar:** Puedes consultar registros y reconocer la estructura de campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `evolution-api`, `n8n`
+**Combina con:** `claude-code`, `n8n`, `evolution-api`, `cal.diy`

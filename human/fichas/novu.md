@@ -10,6 +10,30 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Infraestructura de comunicación de código abierto para productos y agentes, de Novu. Sigue un modelo «open core»: el núcleo es abierto y la carpeta `enterprise` requiere licencia comercial; publica versiones con frecuencia.
+
+## ¿Qué hace?
+
+Envía notificaciones por bandeja in-app, email, SMS, push y chat con una sola API, con flujos, resúmenes («digests») y un componente de bandeja incrustable. Su capa ACI (Agent Communication Infrastructure) conecta cualquier agente que ya tengas (Claude, AI SDK, LangGraph o propio) a Slack, Microsoft Teams, Telegram, WhatsApp, email o una bandeja in-app, normalizando los mensajes entrantes y devolviendo las respuestas con hilos, reacciones y formato por canal.
+
+## ¿Cómo lo hace?
+
+Es un monorepo en TypeScript con API, panel de administración y SDK (incluido `@novu/framework` y componentes para React). Unifica proveedores por canal (por ejemplo SendGrid para email) detrás de un modelo de conversación único. Se usa en Novu Cloud o autoalojado [DATO NO VERIFICADO: requisitos de infraestructura del autoalojamiento, no descritos en el README].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI SDK (Vercel)](vercel-ai.md) | El README cita el AI SDK entre los agentes que puede conectar a canales como Slack, Teams o email. | Agente con AI SDK funcionando primero; después conecta el canal en Novu y apunta su enrutamiento al agente. |
+| [LangGraph](langgraph.md) | Agentes construidos con LangGraph se exponen en Slack, Telegram o email a través de la capa ACI de Novu. | Igual: primero el agente desplegado con un endpoint, luego Novu. |
+| [listmonk](listmonk.md) | Novu cubre notificaciones transaccionales e in-app; listmonk, boletines y listas masivas (combinación por arquitectura). | Independientes; usa dominios o subdominios de envío separados para no mezclar reputación. |
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada @novu/framework@v2.14.0 (2026-09-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/novuhq/novu/blob/next/README.md) · [2](https://docs.novu.co/platform/quickstart/react) · [3](https://docs.novu.co/platform/integrations/email/sendgrid)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones |
 | Coste | El coste depende del proveedor o la ruta. La infraestructura no necesita un modelo para notificar; proveedores de canal, Cloud y módulos Enterprise tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Proyecto de notificaciones; credenciales del canal; destino propio de prueba |
-
-Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones
-
-## Qué puedes hacer con él
-
-Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.
-
-## Por qué destaca
-
-Usos propuestos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat.
-
-## Cómo funciona
 
 Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones
 
@@ -85,13 +97,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto de notificaciones; credenciales del canal; destino propio de prueba
 - **Etiquetas:** `automation` `email` `typescript`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
-| [activepieces](activepieces.md) | 25.5k | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. |
 
 ## Enlaces
 

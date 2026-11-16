@@ -3956,7 +3956,7 @@ Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://www.odoo.com/documentation/master/administration/install/install.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [metabase](human/fichas/metabase.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [metabase](human/fichas/metabase.md) · [Botpress](human/fichas/botpress.md)<br>
 **Más:** [ficha completa](human/fichas/odoo.md) · [GitHub](https://github.com/odoo/odoo)
 
 #### 👥 twenty-main
@@ -3965,7 +3965,7 @@ Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/twentyhq/twenty/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [n8n](human/fichas/n8n.md) · [evolution-api](human/fichas/evolution-api.md) · [cal.diy](human/fichas/cal-diy.md)<br>
 **Más:** [ficha completa](human/fichas/twenty-main.md) · [GitHub](https://github.com/twentyhq/twenty)
 
 #### 👥 ERPNext
@@ -3977,7 +3977,7 @@ cd frappe_docker
 
 docker compose -f pwd.yml up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [metabase](human/fichas/metabase.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [metabase](human/fichas/metabase.md) · [paperless-ngx](human/fichas/paperless-ngx.md)<br>
 **Más:** [ficha completa](human/fichas/erpnext.md) · [GitHub](https://github.com/frappe/erpnext)
 
 #### 💬 chatwoot
@@ -4003,6 +4003,7 @@ bun run db:deploy             # apply migrations
 bun run db:seed               # optional: a believable pipeline to look at
 bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [sellbird](human/fichas/sellbird.md) · [cal.diy](human/fichas/cal-diy.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/compai-crm.md) · [GitHub](https://github.com/trycompai/crm)
 
 ### Email, marketing y notificaciones
@@ -4013,7 +4014,7 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.novu.co/platform/quickstart); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [chatwoot](human/fichas/chatwoot.md) · [activepieces](human/fichas/activepieces.md)<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [LangGraph](human/fichas/langgraph.md) · [listmonk](human/fichas/listmonk.md)<br>
 **Más:** [ficha completa](human/fichas/novu.md) · [GitHub](https://github.com/novuhq/novu)
 
 #### ⚙️ postiz-app
@@ -4022,6 +4023,7 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.postiz.com/quickstart); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar un calendario de contenido; Evaluar generación asistida de borradores — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/postiz-app.md) · [GitHub](https://github.com/gitroomhq/postiz-app)
 
 #### ⚙️ open-seo
@@ -4030,6 +4032,7 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/every-app/open-seo/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Investigar palabras clave de una web propia; Preparar una revisión técnica SEO — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md) · [GEO-SEO Claude](human/fichas/geo-seo-claude.md)<br>
 **Más:** [ficha completa](human/fichas/open-seo.md) · [GitHub](https://github.com/every-app/open-seo)
 
 #### 📬 listmonk
@@ -4042,7 +4045,7 @@ curl -LO https://github.com/knadh/listmonk/raw/master/docker-compose.yml
 # Run the services in the background.
 docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar una newsletter propia; Evaluar segmentación de una lista de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [mautic](human/fichas/mautic.md) · [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [novu](human/fichas/novu.md) · [postiz-app](human/fichas/postiz-app.md)<br>
 **Más:** [ficha completa](human/fichas/listmonk.md) · [GitHub](https://github.com/knadh/listmonk)
 
 #### ⚙️ cloud-mail
@@ -4051,6 +4054,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/maillab/cloud-mail/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar correo sobre Workers; Gestionar buzones de un dominio de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [open-seo](human/fichas/open-seo.md) · [changedetection.io](human/fichas/changedetection.md)<br>
 **Más:** [ficha completa](human/fichas/cloud-mail.md) · [GitHub](https://github.com/maillab/cloud-mail)
 
 #### 📣 mautic
@@ -4059,7 +4063,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.mautic.org/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar segmentación de audiencias; Prototipar una secuencia de marketing — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [listmonk](human/fichas/listmonk.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Marketing Skills](human/fichas/marketingskills.md) · [posthog](human/fichas/posthog.md)<br>
 **Más:** [ficha completa](human/fichas/mautic.md) · [GitHub](https://github.com/mautic/mautic)
 
 #### 🖥️ sellbird
@@ -4069,6 +4073,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `# 1. Install. Use python3.13, not python3: on macOS bare python3 is 3.9.
 python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un borrador de prospección; Evaluar criterios de selección de empresas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [crm](human/fichas/compai-crm.md)<br>
 **Más:** [ficha completa](human/fichas/sellbird.md) · [GitHub](https://github.com/ethanplusai/sellbird)
 
 ### Reservas y programación de citas
@@ -4079,6 +4084,7 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/calcom/cal.diy/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md)<br>
 **Más:** [ficha completa](human/fichas/cal-diy.md) · [GitHub](https://github.com/calcom/cal.diy)
 
 ---

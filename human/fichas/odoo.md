@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.
+
+## ¿Qué hace?
+
+Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, facturación y contabilidad, punto de venta, recursos humanos, marketing y fabricación. Cada app funciona sola, pero al instalar varias se integran en un ERP completo. Casos típicos: gestión comercial y de inventario de pymes, facturación y tienda en línea conectadas.
+
+## ¿Cómo lo hace?
+
+Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | n8n tiene un nodo Odoo para crear o leer contactos, oportunidades y otros registros desde flujos. | Odoo primero con un usuario de integración y clave de API; después la credencial en n8n. |
+| [metabase](metabase.md) | Dashboards sobre la base PostgreSQL de Odoo sin tocar la aplicación (combinación por arquitectura). | Conecta Metabase con un usuario de solo lectura, idealmente a una réplica, para no cargar la base de producción. |
+| [Botpress](botpress.md) | Botpress Cloud tiene una integración oficial con Odoo para que un bot consulte o registre datos. | Odoo accesible por internet con usuario de API; luego activa la integración en el Hub de Botpress. |
+
+**Notas:** Alternativa (elige una): erpnext. Algunas apps solo existen en la edición Enterprise.
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/odoo/odoo/blob/20.0/README.md) · [2](https://github.com/odoo/odoo/blob/20.0/LICENSE) · [3](https://www.odoo.com/documentation/19.0/administration/on_premise/source.html) · [4](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales |
 | Coste | El coste depende del proveedor o la ruta. Community, Enterprise y alojamiento tienen condiciones distintas; apps y servicios AI pueden añadir costes |
 | Equipo | Preparación según la ruta elegida. Edición y versión elegidas; servidor y PostgreSQL; negocio ficticio |
-
-La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales
-
-## Qué puedes hacer con él
-
-Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web.
-
-## Por qué destaca
-
-Usos propuestos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario.
-
-## Cómo funciona
 
 La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Edición y versión elegidas; servidor y PostgreSQL; negocio ficticio
 - **Etiquetas:** `crm` `python` `postgres`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 
 ## Alternativas (elige una)
 

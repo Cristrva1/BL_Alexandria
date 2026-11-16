@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+CRM de código abierto (MIT) «agentic-first» de Comp AI, en el que el agente es el usuario principal y el CRM es donde guarda sus notas. Es reciente y activo (v1.16 en 2026).
+
+## ¿Qué hace?
+
+Un agente que corre en su propio despliegue, con su calendario y cola de trabajo, decide qué investigar, programa sus propios seguimientos, gasta un presupuesto de investigación y se detiene al agotarlo. Identifica contactos, investiga personas y empresas y registra hechos solo con evidencia observada: la evidencia fuerte se escribe en la ficha y la débil queda como sugerencia para que una persona decida. Sin claves de API también funciona leyendo el historial de tus propios hilos de correo.
+
+## ¿Cómo lo hace?
+
+Monorepo TypeScript: front end Next.js (puerto 3000), API NestJS con tRPC, autenticación y sincronización de buzones (puerto 3001) y un agente sobre el framework eve con 18 herramientas propias, 4 skills en Markdown y un único programador. Los modelos pasan por Vercel AI Gateway; el agente usa un sandbox (Vercel Sandbox en producción, Docker o microsandbox en local) sin salida a internet por defecto. Datos en Prisma con PostgreSQL (Neon) y Redis opcional (Upstash); autenticación con Better Auth (Google, Microsoft o tu IdP).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [sellbird](sellbird.md) | Sellbird encuentra y contacta empresas; el CRM investiga y conserva la evidencia de cada contacto (combinación por arquitectura). | Independientes; define cuál es la fuente de verdad de cada contacto para no duplicar. |
+| [cal.diy](cal-diy.md) | Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura). | Después del CRM; conecta las invitaciones al buzón sincronizado. |
+| [n8n](n8n.md) | Mover datos del CRM a otros sistemas mediante su API (combinación por arquitectura). | CRM desplegado y con API accesible; después el flujo. |
+
+**Notas:** Las herramientas nuevas o modificadas requieren revisión antes de que el agente pueda usarlas. Pensado para Vercel; en otro proveedor hay que sustituir Sandbox, Blob y AI Gateway.
+
+Estado en GitHub: activo · último push 2026-11-01 · última versión publicada v1.16.0 (2026-10-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/trycompai/crm/blob/release/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable |
 | Coste | El coste depende del proveedor o la ruta. Fuentes de enriquecimiento son opcionales; el modelo del agente usa Vercel AI Gateway con OIDC en Vercel o clave fuera; sin clave escrita no significa sin consumo |
 | Equipo | Preparación según la ruta elegida. Bun; PostgreSQL; OAuth Google o Microsoft para login; AI Gateway para agentes fuera de Vercel |
-
-El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable
-
-## Qué puedes hacer con él
-
-CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen.
-
-## Cómo funciona
 
 El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable
 
