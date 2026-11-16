@@ -10,9 +10,11 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+> ⚠️ **Licencia y costes:** WPScan usa la «WPScan Public Source License»: gratis para pentesting propio o como parte de una auditoría, pero el uso comercial (SaaS, producto o servicio de valor añadido) exige licencia de pago. Los datos de vulnerabilidades vienen de la API de wpscan.com: 25 peticiones/día gratis con token; sin token o agotada la cuota escanea sin datos de vulnerabilidades. La base local Enterprise es de pago.
+
 ## ¿Qué es?
 
-CLI WPScan (Public Source License; uso comercial SaaS requiere licencia de pago).
+Escáner de WordPress (WPScan Public Source License, source-available con cláusula comercial). La base de vulnerabilidades depende de la API de wpscan.com: 25 peticiones/día gratis; Enterprise de pago.
 
 ## ¿Qué hace?
 

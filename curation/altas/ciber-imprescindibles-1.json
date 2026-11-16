@@ -335,7 +335,8 @@
    "caveat": "Open source = CLI/SDK/Local Server Apache-2.0. Prowler Cloud (~99 USD/cuenta·mes) y Private Cloud son de pago.",
    "cmd": "pip install prowler",
    "url": "https://prowler.com",
-   "alt": []
+   "alt": [],
+   "licencia_nota": "Open-core: la CLI, el SDK y el Local Server son Apache-2.0 y gratuitos (todos los checks y marcos públicos). Prowler Cloud (SaaS, ~99 USD por cuenta cloud al mes, prueba de 7 días) y Prowler Private Cloud añaden escaneos programados, onboarding de organizaciones, Lighthouse AI, attack paths completos, Jira/Slack, SSO y soporte (prowler.com/pricing, consultado 2026-11-16)."
   },
   {
    "gh": "bridgecrewio/checkov",
@@ -541,7 +542,8 @@
    ],
    "caveat": "CE Apache-2.0 gratuita. EE (playbooks, SSO por UI, AI Insights, NLP, PIR, full-text, etc.) requiere licencia Filigran (trial disponible).",
    "url": "https://opencti.io",
-   "alt": []
+   "alt": [],
+   "licencia_nota": "Open-core: la Community Edition es Apache-2.0 y gratuita. La Enterprise Edition (mismo repositorio, ficheros con cabecera EE) requiere licencia Filigran: registro de actividad, playbooks, segregación por organización, indexado de texto completo, AI Insights/NLP, PIR, SSO configurado desde la UI, campos personalizados, entre otros. Filigran ofrece licencias de prueba y gratuitas para I+D y ONG."
   },
   {
    "gh": "SigmaHQ/sigma",

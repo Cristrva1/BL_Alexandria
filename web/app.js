@@ -643,7 +643,8 @@
     const ogHost = ({codeberg:"Codeberg",gitlab:"GitLab",huggingface:"Hugging Face"})[og.host] || og.host || "la forja original";
     const ogLine = og.checked_at ? `<p class="meta">Estado en ${esc(ogHost)}: ${og.archived ? "⚠️ archivado (solo lectura)" : "activo"}${og.pushed_at ? ` · última actividad ${esc(og.pushed_at)}` : ""}${og.latest_release ? ` · última versión ${esc(og.latest_release)}` : ""}${og.license ? ` · licencia ${esc(og.license)}` : ""} (consultado el ${esc(og.checked_at)}).</p>` : "";
     const ghLine = gh.checked_at ? `<p class="meta">${og.checked_at ? "Copia antigua en GitHub" : "Estado en GitHub"}: ${gh.archived ? "⚠️ archivado (solo lectura)" : "activo"}${gh.renamed_to ? ` · renombrado a ${esc(gh.renamed_to)}` : ""}${gh.pushed_at ? ` · último push ${esc(gh.pushed_at)}` : ""}${gh.latest_release ? ` · última versión ${esc(gh.latest_release)}` : ""}${gh.license ? ` · licencia ${esc(gh.license)}` : ""} (consultado el ${esc(gh.checked_at)}).</p>` : "";
-    return `<section id="repo-four" class="section">
+    const licNote = item.licencia_nota ? `<p class="notice"><strong>⚠️ Licencia y costes:</strong> ${esc(item.licencia_nota)}</p>` : "";
+    return `<section id="repo-four" class="section">${licNote}
         <h2>¿Qué es?</h2><p>${esc(item.que_es)}</p>
         <h2>¿Qué hace?</h2><p>${esc(item.que_hace)}</p>
         <h2>¿Cómo lo hace?</h2><p>${esc(item.como_lo_hace)}</p>

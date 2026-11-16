@@ -10,9 +10,11 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
+> ⚠️ **Licencia y costes:** Open-core: la Community Edition es Apache-2.0 y gratuita. La Enterprise Edition (mismo repositorio, ficheros con cabecera EE) requiere licencia Filigran: registro de actividad, playbooks, segregación por organización, indexado de texto completo, AI Insights/NLP, PIR, SSO configurado desde la UI, campos personalizados, entre otros. Filigran ofrece licencias de prueba y gratuitas para I+D y ONG.
+
 ## ¿Qué es?
 
-OpenCTI Community Edition (Apache-2.0). Enterprise Edition (misma repo, licencia EE) añade actividad, playbooks, SSO GUI, NLP, PIR, etc.
+Plataforma de threat intel de Filigran. Open-core: Community Edition Apache-2.0; Enterprise Edition (playbooks, SSO por UI, IA/NLP, PIR, auditoría) con licencia de pago.
 
 ## ¿Qué hace?
 

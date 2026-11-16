@@ -479,7 +479,7 @@
    }
   },
   "caido": {
-   "que_es": "Proxy web propietario con plan Basic gratis (2 proyectos, 7 workflows, 3 plugins).",
+   "que_es": "Proxy de pentest web propietario (no open source) de Caido Labs. Plan Basic gratuito con límites; Individual, Team y Enterprise de pago.",
    "que_hace": "Intercepta, inspecciona y reenvía HTTP/S para AppSec.",
    "como_lo_hace": "Descarga desde el dashboard; este repo es branding/roadmap/plugins.",
    "combina_con": [
@@ -507,7 +507,8 @@
     "primary_language": "Shell",
     "checked_at": "2026-11-16",
     "latest_release": "v0.59.1 (2026-11-13)"
-   }
+   },
+   "licencia_nota": "Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP."
   },
   "loki": {
    "que_es": "IOC scanner de Neo23x0 (GPL-3).",
@@ -625,7 +626,7 @@
    }
   },
   "vault": {
-   "que_es": "Vault (BSL 1.1 para ≥1.15; Change License MPL-2.0 a 4 años). Producto IBM/HashiCorp.",
+   "que_es": "Gestor de secretos de HashiCorp/IBM bajo Business Source License 1.1 desde la 1.15 (source-available, no OSI); cada versión pasa a MPL-2.0 a los 4 años. OpenBao es el fork MPL-2.0.",
    "que_hace": "Almacena, genera y audita secretos y certificados.",
    "como_lo_hace": "Binario oficial / Docker / Helm.",
    "combina_con": [
@@ -657,7 +658,8 @@
     "primary_language": "Go",
     "checked_at": "2026-11-16",
     "latest_release": "v2.2.2 (2026-11-12)"
-   }
+   },
+   "licencia_nota": "Vault no es open source según la definición OSI: desde la versión 1.15.0 usa Business Source License 1.1 (licenciante IBM). Permite uso en producción salvo ofrecerlo a terceros como servicio que compita con las versiones de pago; cada versión pasa a MPL-2.0 a los 4 años de publicarse. Alternativa con licencia abierta: OpenBao (openbao/openbao, fork MPL-2.0 de la Linux Foundation, ~9.000★), que aún no está en el catálogo."
   },
   "sops": {
    "que_es": "Secrets OPerationS (MPL-2.0).",

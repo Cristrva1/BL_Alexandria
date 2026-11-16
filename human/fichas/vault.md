@@ -10,9 +10,11 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
+> ⚠️ **Licencia y costes:** Vault no es open source según la definición OSI: desde la versión 1.15.0 usa Business Source License 1.1 (licenciante IBM). Permite uso en producción salvo ofrecerlo a terceros como servicio que compita con las versiones de pago; cada versión pasa a MPL-2.0 a los 4 años de publicarse. Alternativa con licencia abierta: OpenBao (openbao/openbao, fork MPL-2.0 de la Linux Foundation, ~9.000★), que aún no está en el catálogo.
+
 ## ¿Qué es?
 
-Vault (BSL 1.1 para ≥1.15; Change License MPL-2.0 a 4 años). Producto IBM/HashiCorp.
+Gestor de secretos de HashiCorp/IBM bajo Business Source License 1.1 desde la 1.15 (source-available, no OSI); cada versión pasa a MPL-2.0 a los 4 años. OpenBao es el fork MPL-2.0.
 
 ## ¿Qué hace?
 

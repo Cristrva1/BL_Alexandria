@@ -252,7 +252,8 @@
    "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. API vulns: 25 peticiones/día gratis; Enterprise Local DB de pago. Licencia source-available con cláusula comercial.",
    "cmd": "gem install wpscan",
    "ligero": true,
-   "alt": []
+   "alt": [],
+   "licencia_nota": "WPScan usa la «WPScan Public Source License»: gratis para pentesting propio o como parte de una auditoría, pero el uso comercial (SaaS, producto o servicio de valor añadido) exige licencia de pago. Los datos de vulnerabilidades vienen de la API de wpscan.com: 25 peticiones/día gratis con token; sin token o agotada la cuota escanea sin datos de vulnerabilidades. La base local Enterprise es de pago."
   },
   {
    "gh": "juice-shop/juice-shop",

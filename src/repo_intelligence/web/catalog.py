@@ -233,7 +233,7 @@ def build_catalog(project_root: Path) -> dict:
             merged["combina_con"] = combos
         if source.get("nivel"):
             merged["nivel"] = source["nivel"]  # alta ligera: combinaciones opcionales
-        for field in ("que_es", "que_hace", "como_lo_hace", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
+        for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
             if detail.get(field):
                 merged[field] = detail[field]
         command, confidence, note = derive_install({**merged, "repo": merged["repo_url"]})
