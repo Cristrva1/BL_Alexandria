@@ -22,6 +22,12 @@
      "id": "liveportrait",
      "motivo": "Detección y recorte facial. (combinación por arquitectura)",
      "orden_instalacion": "Viene como dependencia en la ruta por defecto."
+    },
+    {
+     "id": "deepface",
+     "motivo": "Combinación recíproca: DeepFace lo enlaza como «El modelo de reconocimiento Buffalo_L que envuelve DeepFace procede de InsightFace».",
+     "orden_instalacion": "Orden indicado desde DeepFace: Instala DeepFace; después usa `model_name=\"Buffalo_L\"` (revisa la licencia de los pesos de InsightFace).",
+     "reciproca_de": "deepface"
     }
    ],
    "notas": "Sin alternativas declaradas. Los pesos no permiten uso comercial.",
@@ -348,6 +354,12 @@
      "motivo": "Combinación recíproca: tensorflow lo enlaza como «Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde tensorflow: Usa modelos TF Lite en MediaPipe.",
      "reciproca_de": "tensorflow"
+    },
+    {
+     "id": "deepface",
+     "motivo": "Combinación recíproca: DeepFace lo enlaza como «DeepFace puede usar MediaPipe como detector facial».",
+     "orden_instalacion": "Orden indicado desde DeepFace: Instala `mediapipe`; después usa `detector_backend=\"mediapipe\"`.",
+     "reciproca_de": "deepface"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -419,6 +431,12 @@
      "id": "easymocap",
      "motivo": "Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura)",
      "orden_instalacion": "Exporta los keypoints."
+    },
+    {
+     "id": "cvat",
+     "motivo": "Combinación recíproca: CVAT Community lo enlaza como «CVAT incluye una función serverless con HRNet32 de MMPose para estimar pose de cuerpo completo».",
+     "orden_instalacion": "Orden indicado desde CVAT Community: Despliega CVAT con el componente serverless; después instala la función de MMPose.",
+     "reciproca_de": "cvat"
     }
    ],
    "notas": "Sin alternativas declaradas. Actividad baja.",

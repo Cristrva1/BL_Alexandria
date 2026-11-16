@@ -32,9 +32,9 @@ Se instala con `pip install kokoro>=0.9.4 soundfile`. Usa misaki (G2P) y espeak-
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (15). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[dograh](dograh.md) · [huashu-motion](huashu-motion.md) · [HyperFrames](hyperframes.md) · [KoboldCpp](koboldcpp.md) · [LiveKit Agents](livekit-agents.md) · [Manim (ManimGL)](manim.md) · [manim](manim-community.md) · [MoneyPrinterTurbo](moneyprinterturbo.md) · [OpenMontage](openmontage.md) · [Papermorph](papermorph.md) · [SillyTavern](sillytavern.md) · [srt-whiteboard-animation](srt-whiteboard-animation.md) · [VoiceStudio](omnivoice-studio.md)
+[dograh](dograh.md) · [huashu-motion](huashu-motion.md) · [HyperFrames](hyperframes.md) · [KoboldCpp](koboldcpp.md) · [LiveKit Agents](livekit-agents.md) · [Manim (ManimGL)](manim.md) · [manim](manim-community.md) · [MoneyPrinterTurbo](moneyprinterturbo.md) · [Motion Canvas](motion-canvas.md) · [OpenMontage](openmontage.md) · [Papermorph](papermorph.md) · [sherpa-onnx](sherpa-onnx.md) · [SillyTavern](sillytavern.md) · [srt-whiteboard-animation](srt-whiteboard-animation.md) · [VoiceStudio](omnivoice-studio.md)
 
 **Notas:** Alternativas (elige una): luxtts, edge-tts. Inactivo desde 2025.
 

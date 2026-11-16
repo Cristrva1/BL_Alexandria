@@ -73,6 +73,12 @@
      "id": "claude-code",
      "motivo": "Los DAGs son Python normal: un agente de código puede escribirlos y probarlos con `airflow dags test` en un entorno de desarrollo (combinación por arquitectura).",
      "orden_instalacion": "Entorno de Airflow de pruebas; después pide al agente el DAG y pruébalo antes de desplegarlo."
+    },
+    {
+     "id": "dbt",
+     "motivo": "Combinación recíproca: dbt lo enlaza como «Airflow se usa habitualmente para programar ejecuciones de dbt (por ejemplo con Astronomer Cosmos u operadores Bash)».",
+     "orden_instalacion": "Orden indicado desde dbt: Instala dbt en el entorno de Airflow; después crea un DAG que ejecute `dbt build`.",
+     "reciproca_de": "dbt"
     }
    ],
    "notas": "Alternativas (elige una): prefect, dagster, kestra. Instalar sin el archivo de constraints suele romper dependencias.",
@@ -282,6 +288,18 @@
      "id": "claude-code",
      "motivo": "Las definiciones son Python y la CLI dg permite crear y validar proyectos, lo que facilita que un agente de código los genere y pruebe (combinación por arquitectura).",
      "orden_instalacion": "Proyecto Dagster local; después pide al agente activos nuevos y valídalos con la CLI."
+    },
+    {
+     "id": "dbt",
+     "motivo": "Combinación recíproca: dbt lo enlaza como «La biblioteca dagster-dbt carga los modelos de un proyecto dbt como assets de Dagster para orquestarlos y monitorizarlos».",
+     "orden_instalacion": "Orden indicado desde dbt: Instala `dagster-dbt`; después carga el proyecto dbt con `@dbt_assets`.",
+     "reciproca_de": "dbt"
+    },
+    {
+     "id": "dlt",
+     "motivo": "Combinación recíproca: dlt (data load tool) lo enlaza como «La biblioteca dagster-dlt carga los recursos de dlt como assets de Dagster».",
+     "orden_instalacion": "Orden indicado desde dlt (data load tool): Instala `dagster-dlt`; después declara los assets con `@dlt_assets`.",
+     "reciproca_de": "dlt"
     }
    ],
    "notas": "Alternativas (elige una): airflow, prefect, kestra.",
@@ -716,6 +734,18 @@
      "motivo": "Combinación recíproca: theHarvester lo enlaza como «Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde theHarvester: Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado.",
      "reciproca_de": "theharvester"
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Combinación recíproca: Nuclei lo enlaza como «katana rastrea URLs y endpoints que Nuclei escanea a continuación».",
+     "orden_instalacion": "Orden indicado desde Nuclei: Rastrea con katana; después pasa las URLs a nuclei.",
+     "reciproca_de": "nuclei"
+    },
+    {
+     "id": "subfinder",
+     "motivo": "Combinación recíproca: subfinder lo enlaza como «katana rastrea los subdominios descubiertos para mapear endpoints».",
+     "orden_instalacion": "Orden indicado desde subfinder: Enumera con subfinder; después pasa los hosts a katana.",
+     "reciproca_de": "subfinder"
     }
    ],
    "notas": "Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.",

@@ -35,9 +35,9 @@ Se instala con `pip install jupyterlab`, conda o mamba (conda-forge) y se abre c
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Backtesting.py](backtesting-py.md) · [deck.gl](deck-gl.md) · [kepler.gl](kepler-gl.md) · [OpenBB Open Data Platform](openbb.md) · [yfinance](yfinance.md)
+[Backtesting.py](backtesting-py.md) · [deck.gl](deck-gl.md) · [Gemma (biblioteca JAX)](gemma.md) · [JAX](jax.md) · [kepler.gl](kepler-gl.md) · [ML for Beginners](ml-for-beginners.md) · [OpenBB Open Data Platform](openbb.md) · [pandas](pandas.md) · [Panel](panel.md) · [PyGWalker](pygwalker.md) · [scikit-learn](scikit-learn.md) · [yfinance](yfinance.md)
 
 **Notas:** Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.
 

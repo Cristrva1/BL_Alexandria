@@ -30,6 +30,7 @@ Se instala con `uv add pyannote.audio` o `pip install pyannote.audio` (Python 3.
 | [PyTorch](pytorch.md) | pyannote.audio está construido sobre PyTorch; la elección de CUDA o CPU sigue la instalación de PyTorch. | Instala primero la variante de PyTorch adecuada a tu GPU. |
 | [faster-whisper](faster-whisper.md) | Transcribir con faster-whisper y asignar después los segmentos a los hablantes de pyannote. (combinación por arquitectura) | Ejecuta la diarización y la transcripción por separado y cruza las marcas de tiempo. |
 | [FFmpeg](ffmpeg.md) | Requisito documentado: torchcodec usa ffmpeg para decodificar el audio. | Instala ffmpeg antes del paquete. |
+| [sherpa-onnx](sherpa-onnx.md) | Combinación recíproca: sherpa-onnx lo enlaza como «La diarización de sherpa-onnx usa el modelo de segmentación de pyannote exportado a ONNX junto a un modelo de embeddings de hablante». | Orden indicado desde sherpa-onnx: Descarga el modelo de segmentación de pyannote para sherpa-onnx; después ejecuta la diarización. |
 
 **Notas:** Diarizar personas tiene implicaciones de privacidad: informa a los participantes. Las cifras del README (DER, velocidad en H100) son del autor.
 

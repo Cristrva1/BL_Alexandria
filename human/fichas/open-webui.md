@@ -32,9 +32,9 @@ Frontend en Svelte y backend en Python: se instala con `pip install open-webui` 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (15). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[exo](exo.md) · [Fabric](fabric.md) · [FreeToken](freetoken.md) · [Jina Reader](jina-reader.md) · [KoboldCpp](koboldcpp.md) · [langfuse](langfuse.md) · [llama.cpp](llama-cpp.md) · [llamafile](llamafile.md) · [LocalAI](localai.md) · [MLC LLM](mlc-llm.md) · [MLX LM](mlx-lm.md) · [prompts.chat](prompts-chat.md) · [SGLang](sglang.md) · [TensorRT-LLM](tensorrt-llm.md) · [vLLM](vllm.md)
+[exo](exo.md) · [Fabric](fabric.md) · [FreeToken](freetoken.md) · [Helicone](helicone.md) · [Jina Reader](jina-reader.md) · [KoboldCpp](koboldcpp.md) · [langfuse](langfuse.md) · [llama.cpp](llama-cpp.md) · [llamafile](llamafile.md) · [LocalAI](localai.md) · [MLC LLM](mlc-llm.md) · [MLX LM](mlx-lm.md) · [prompts.chat](prompts-chat.md) · [SGLang](sglang.md) · [TensorRT-LLM](tensorrt-llm.md) · [vLLM](vllm.md)
 
 **Notas:** Alternativas (elige una): librechat, lobehub, anything-llm, textgen. La cláusula de marca limita el rebranding: revisa LICENSE antes de redistribuirlo con otra imagen.
 

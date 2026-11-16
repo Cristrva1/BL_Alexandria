@@ -732,7 +732,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala Logseq, abre una carpeta vacía como grafo y crea una página enlazada desde el diario.
 **Qué comprobar:** La página aparece en el grafo y sus referencias se muestran en ambas notas.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `syncthing`, `pandoc`, `claude-code`
+**Combina con:** `syncthing`, `pandoc`, `claude-code`, `d2`
 **Alternativas (elige una):** `joplin`, `trilium`, `siyuan`
 
 ## `memos`
@@ -1159,7 +1159,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala Pi-hole en una máquina Linux de prueba o contenedor y apunta el DNS de un equipo a ella.
 **Qué comprobar:** El panel muestra consultas bloqueadas y las webs cargan sin anuncios.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `home-assistant`, `grafana`, `coolify`
+**Combina con:** `home-assistant`, `grafana`, `coolify`, `wg-easy`
 **Alternativas (elige una):** `adguardhome`
 
 ## `siyuan`

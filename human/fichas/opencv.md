@@ -35,9 +35,9 @@ Se instala en Python con `pip install opencv-python` (o `-contrib`, o `-headless
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Frigate NVR](frigate.md)
+[DeepFace](deepface.md) · [Detectron2](detectron2.md) · [dlib](dlib.md) · [Frigate NVR](frigate.md)
 
 **Notas:** Sin alternativas declaradas.
 

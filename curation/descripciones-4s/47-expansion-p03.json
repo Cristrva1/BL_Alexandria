@@ -27,6 +27,12 @@
      "id": "chakra-ui",
      "motivo": "Las stories de componentes Chakra se envuelven en su proveedor de tema mediante un decorador de Storybook (combinación por arquitectura).",
      "orden_instalacion": "Instala Chakra UI; después añade el decorador con su Provider en preview."
+    },
+    {
+     "id": "cypress",
+     "motivo": "Combinación recíproca: Cypress lo enlaza como «La documentación de Storybook explica cómo reutilizar historias de componentes en pruebas end-to-end con Cypress».",
+     "orden_instalacion": "Orden indicado desde Cypress: Publica o arranca Storybook; después visita las historias desde las pruebas de Cypress.",
+     "reciproca_de": "cypress"
     }
    ],
    "notas": "Añade peso de dependencias al proyecto; mantenlo como dependencia de desarrollo.",
@@ -64,6 +70,12 @@
      "id": "claude-code",
      "motivo": "Un agente de código puede generar el HTML y JavaScript de un mapa Leaflet a partir de un GeoJSON (combinación por arquitectura).",
      "orden_instalacion": "Ten el GeoJSON listo; después pide al agente la página y revísala en el navegador."
+    },
+    {
+     "id": "nicegui",
+     "motivo": "Combinación recíproca: NiceGUI lo enlaza como «El elemento `ui.leaflet` de NiceGUI muestra mapas interactivos con Leaflet».",
+     "orden_instalacion": "Orden indicado desde NiceGUI: Instala NiceGUI; después añade `ui.leaflet(center=...)` a la página.",
+     "reciproca_de": "nicegui"
     }
    ],
    "notas": "Alternativas (elige una): maplibre (mapas vectoriales con WebGL).",
@@ -476,6 +488,12 @@
      "id": "jupyterlab",
      "motivo": "pydeck, el binding de Python de deck.gl, muestra mapas interactivos en cuadernos Jupyter.",
      "orden_instalacion": "Instala pydeck en el entorno de JupyterLab; después renderiza las capas en una celda."
+    },
+    {
+     "id": "panel",
+     "motivo": "Combinación recíproca: Panel lo enlaza como «Panel incluye un pane DeckGL para mostrar visualizaciones geoespaciales de deck.gl».",
+     "orden_instalacion": "Orden indicado desde Panel: Instala Panel; después usa `pn.pane.DeckGL` con la especificación de deck.gl.",
+     "reciproca_de": "panel"
     }
    ],
    "notas": "Para mapas base comerciales revisa las condiciones y claves del proveedor.",

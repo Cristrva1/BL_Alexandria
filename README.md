@@ -9,7 +9,7 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 Un proyecto de **Binarias Labs**: tecnología que integra posibilidades.
 
 <!-- BL:STATS -->
-**704 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
+**811 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías prácticas** · **32 categorías técnicas** · **110 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 [Primera vez: lee cómo elegir](human/elegir.md) · [Diccionario breve](human/vocabulario.md)

@@ -32,9 +32,9 @@ Se instala con `pip install -U openai-whisper` y requiere FFmpeg en el sistema. 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Arcads AI Video Skill Pack](arcads-claude-code.md) · [DaVinci Resolve MCP](davinci-resolve-mcp.md) · [edge-tts](edge-tts.md) · [instaloader](instaloader.md) · [Kdenlive](kdenlive.md) · [transformers.js](transformers-js.md) · [videofy_minimal](videofy-minimal.md)
+[Arcads AI Video Skill Pack](arcads-claude-code.md) · [DaVinci Resolve MCP](davinci-resolve-mcp.md) · [edge-tts](edge-tts.md) · [instaloader](instaloader.md) · [Kdenlive](kdenlive.md) · [sherpa-onnx](sherpa-onnx.md) · [TEN Framework](ten-framework.md) · [transformers.js](transformers-js.md) · [videofy_minimal](videofy-minimal.md)
 
 **Notas:** Alternativas (elige una): whisper-cpp. Para producción suelen preferirse faster-whisper o whisper.cpp por velocidad.
 

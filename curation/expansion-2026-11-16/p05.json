@@ -1,0 +1,602 @@
+{
+ "batch": "p05",
+ "title": "Seguridad ofensiva y defensiva, y material para aprender",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "hashcat",
+   "john"
+  ],
+  [
+   "locust",
+   "k6"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "NVIDIA/garak",
+   "id": "garak",
+   "cat": 16,
+   "sub": "agentes",
+   "kind": "app",
+   "name": "garak",
+   "one": "Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.",
+   "how": "CLI en Python que lanza sondas estáticas, dinámicas y adaptativas contra un modelo o servicio mediante generadores (Hugging Face, OpenAI, Ollama, LiteLLM, REST…) y evalúa las respuestas con detectores.",
+   "examples": [
+    "auditar un chatbot propio frente a inyección de prompts y jailbreaks antes de publicarlo",
+    "comparar la robustez de varios modelos locales con las mismas sondas"
+   ],
+   "try": [
+    "Instala con `python -m pip install -U garak` y ejecuta una sonda sencilla contra un modelo pequeño de Hugging Face o local.",
+    "Obtienes un informe con el porcentaje de fallos por sonda y un registro JSONL."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "llm",
+    "python",
+    "evaluation"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ai": "local_choice",
+   "models": "Cualquier modelo accesible por sus generadores: Hugging Face local, Ollama, APIs de OpenAI, Anthropic, NIM, LiteLLM o REST",
+   "cmd": "python -m pip install -U garak",
+   "caveat": "Lanzar sondas contra servicios de terceros puede violar sus términos de uso; pruébalo con modelos o endpoints propios."
+  },
+  {
+   "gh": "aquasecurity/trivy",
+   "id": "trivy",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "name": "Trivy",
+   "one": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
+   "how": "Binario Go con escáneres (vulnerabilidades, IaC, secretos, licencias, SBOM) aplicados a objetivos como imágenes de contenedor, sistemas de archivos, repositorios Git, VM y clústeres.",
+   "examples": [
+    "escanear una imagen Docker antes de desplegarla",
+    "generar un SBOM y revisar dependencias vulnerables de un proyecto en CI"
+   ],
+   "try": [
+    "Instala con `brew install trivy` (o la imagen Docker) y ejecuta `trivy fs .` en un proyecto propio.",
+    "Obtienes una tabla de vulnerabilidades por paquete con severidad y versión corregida."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "go",
+    "cli",
+    "devops"
+   ],
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "cmd": "brew install trivy"
+  },
+  {
+   "gh": "rapid7/metasploit-framework",
+   "id": "metasploit",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "framework",
+   "name": "Metasploit Framework",
+   "one": "Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.",
+   "how": "Framework en Ruby con miles de módulos (exploits, auxiliares, payloads, post) gestionados desde msfconsole, con base de datos PostgreSQL para resultados.",
+   "examples": [
+    "validar en un laboratorio si una vulnerabilidad conocida es explotable",
+    "practicar post-explotación y escalada en máquinas vulnerables de entrenamiento"
+   ],
+   "try": [
+    "Instala Metasploit con los instaladores oficiales en una VM de laboratorio y arranca `msfconsole` para buscar un módulo auxiliar de escaneo.",
+    "La consola muestra los módulos disponibles y sus opciones."
+   ],
+   "setup": "medium",
+   "tags": [
+    "pruebas",
+    "ruby",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países.",
+   "license": "BSD-3-Clause"
+  },
+  {
+   "gh": "sqlmapproject/sqlmap",
+   "id": "sqlmap",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "sqlmap",
+   "one": "Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.",
+   "how": "CLI en Python que prueba parámetros HTTP con técnicas de inyección y, si encuentra una, enumera y extrae datos del motor de base de datos.",
+   "examples": [
+    "comprobar si un formulario de tu aplicación es vulnerable a inyección SQL",
+    "reproducir un hallazgo de inyección en una auditoría autorizada"
+   ],
+   "try": [
+    "Clona el repositorio y ejecuta `python sqlmap.py -h` para ver las opciones; después pruébalo contra una aplicación vulnerable de laboratorio.",
+    "sqlmap identifica el parámetro inyectable y el motor de base de datos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "python",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países.",
+   "license": "GPL-2.0"
+  },
+  {
+   "gh": "projectdiscovery/nuclei",
+   "id": "nuclei",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "Nuclei",
+   "one": "Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.",
+   "how": "Binario Go que ejecuta miles de plantillas YAML (nuclei-templates) contra objetivos con varios protocolos y agrupa peticiones para escanear en paralelo.",
+   "examples": [
+    "revisar tus propios servicios expuestos frente a CVE recientes",
+    "añadir pruebas de regresión de seguridad a un pipeline de CI"
+   ],
+   "try": [
+    "Instala con `go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest` y escanea un objetivo de laboratorio propio con las plantillas por defecto.",
+    "Nuclei lista los hallazgos con su severidad y la plantilla que los detectó."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest",
+   "caveat": "Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países."
+  },
+  {
+   "gh": "nmap/nmap",
+   "id": "nmap",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "Nmap",
+   "one": "El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.",
+   "how": "Programa en C/C++ con motor de scripts Lua (NSE), detección de versiones y de sistema operativo; incluye Zenmap, Ncat y Nping.",
+   "examples": [
+    "inventariar los equipos y puertos abiertos de tu red doméstica",
+    "comprobar qué servicios expone un servidor propio"
+   ],
+   "try": [
+    "Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`.",
+    "Obtienes la lista de puertos abiertos y los servicios detectados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Licencia propia NPSL (no aprobada por la OSI, basada en GPLv2 pero no compatible). Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países.",
+   "license": "NPSL (no OSI)"
+  },
+  {
+   "gh": "microsoft/ML-For-Beginners",
+   "id": "ml-for-beginners",
+   "cat": 19,
+   "sub": "aprender",
+   "kind": "reference",
+   "name": "ML for Beginners",
+   "one": "Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.",
+   "how": "Lecciones en Markdown y cuadernos Jupyter con Scikit-learn y R, cuestionarios y tareas; traducciones a más de 50 idiomas.",
+   "examples": [
+    "aprender regresión, clasificación y clustering desde cero",
+    "preparar un temario de ML clásico para una clase"
+   ],
+   "try": [
+    "Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter.",
+    "El cuaderno se ejecuta y muestra el primer modelo de regresión."
+   ],
+   "setup": "easy",
+   "tags": [
+    "learning",
+    "notebooks",
+    "python"
+   ],
+   "goals": [
+    "aprender"
+   ]
+  },
+  {
+   "gh": "huggingface/agents-course",
+   "id": "agents-course",
+   "cat": 19,
+   "sub": "guias",
+   "kind": "reference",
+   "name": "Hugging Face Agents Course",
+   "one": "Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.",
+   "how": "Unidades en MDX publicadas en hf.co/learn con cuadernos, Spaces y una evaluación final con tabla de resultados.",
+   "examples": [
+    "aprender a construir agentes con distintos frameworks de forma guiada",
+    "obtener un certificado tras un proyecto evaluado automáticamente"
+   ],
+   "try": [
+    "Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo.",
+    "Construyes un agente sencillo que usa una herramienta."
+   ],
+   "setup": "easy",
+   "tags": [
+    "learning",
+    "agents",
+    "python"
+   ],
+   "goals": [
+    "aprender"
+   ]
+  },
+  {
+   "gh": "wazuh/wazuh",
+   "id": "wazuh",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "server",
+   "name": "Wazuh",
+   "one": "Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.",
+   "how": "Agentes multiplataforma envían datos a un servidor que los analiza con reglas; el indexador y el panel de Wazuh almacenan y muestran alertas.",
+   "examples": [
+    "vigilar los servidores de tu laboratorio o pyme con alertas centralizadas",
+    "auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos"
+   ],
+   "try": [
+    "Despliega Wazuh en una VM con el asistente o Docker siguiendo su guía rápida e instala un agente en otro equipo.",
+    "El panel muestra el agente conectado y sus primeras alertas."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "security",
+    "server",
+    "self-hosted",
+    "cpp"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "license": "GPL-2.0 + AGPL-3.0 (partes)"
+  },
+  {
+   "gh": "CISOfy/lynis",
+   "id": "lynis",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "name": "Lynis",
+   "one": "Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.",
+   "how": "Script de shell que se ejecuta en el propio sistema y realiza cientos de comprobaciones, mostrando advertencias y sugerencias con un índice de endurecimiento.",
+   "examples": [
+    "revisar el endurecimiento de un servidor Linux recién instalado",
+    "preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA)"
+   ],
+   "try": [
+    "Clona el repositorio y ejecuta `./lynis audit system` en una máquina propia.",
+    "Obtienes advertencias, sugerencias y un índice de endurecimiento."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "shell",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "gh": "crowdsecurity/crowdsec",
+   "id": "crowdsec",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "server",
+   "name": "CrowdSec",
+   "one": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
+   "how": "Motor Go que analiza registros y peticiones HTTP con escenarios del hub y aplica bloqueos mediante bouncers (cortafuegos, proxy inverso, CDN).",
+   "examples": [
+    "bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor",
+    "proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas"
+   ],
+   "try": [
+    "Instala CrowdSec en un servidor propio, añade la colección de SSH y un bouncer de cortafuegos, y consulta `cscli metrics`.",
+    "CrowdSec muestra los registros analizados y las decisiones de bloqueo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "go",
+    "server",
+    "self-hosted"
+   ],
+   "goals": [
+    "seguridad",
+    "servicios"
+   ]
+  },
+  {
+   "gh": "locustio/locust",
+   "id": "locust",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "Locust",
+   "one": "Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
+   "how": "Paquete Python que ejecuta usuarios simulados en greenlets (gevent), con interfaz web o CLI y modo distribuido.",
+   "examples": [
+    "medir cuántos usuarios concurrentes aguanta tu API",
+    "reproducir un flujo de usuario realista con login y varias peticiones"
+   ],
+   "try": [
+    "Instala Locust con pip, escribe un `locustfile.py` con una tarea contra tu servicio local y abre la interfaz web.",
+    "Ves en tiempo real peticiones por segundo, tiempos de respuesta y errores."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "python",
+    "app"
+   ],
+   "goals": [
+    "seguridad",
+    "programar"
+   ]
+  },
+  {
+   "gh": "hashcat/hashcat",
+   "id": "hashcat",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "hashcat",
+   "one": "Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
+   "how": "Programa en C con kernels para CUDA, HIP, Metal y OpenCL, motor de reglas, ataques por diccionario, máscara y combinados, y cracking distribuido.",
+   "examples": [
+    "auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados",
+    "recuperar la contraseña de un archivo propio olvidado"
+   ],
+   "try": [
+    "Descarga la release oficial y ejecuta el benchmark (`hashcat -b`) en tu equipo.",
+    "Obtienes la velocidad de cálculo por tipo de hash en tu GPU o CPU."
+   ],
+   "setup": "medium",
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Romper hashes o contraseñas ajenas sin permiso es delito; úsalo solo con datos propios o autorizados.",
+   "license": "MIT"
+  },
+  {
+   "gh": "ffuf/ffuf",
+   "id": "ffuf",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "ffuf",
+   "one": "Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.",
+   "how": "Binario Go que sustituye la palabra clave FUZZ en URLs, cabeceras o cuerpos con listas de palabras y filtra las respuestas por código, tamaño o patrones.",
+   "examples": [
+    "descubrir rutas o archivos olvidados en tu aplicación web",
+    "probar parámetros GET y POST en una auditoría autorizada"
+   ],
+   "try": [
+    "Instala con `brew install ffuf` o `go install` y lanza un descubrimiento de directorios contra un servidor de laboratorio.",
+    "ffuf lista las rutas que responden con códigos de interés."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "brew install ffuf",
+   "caveat": "Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países."
+  },
+  {
+   "gh": "zaproxy/zaproxy",
+   "id": "zaproxy",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "ZAP (Zed Attack Proxy)",
+   "one": "Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
+   "how": "Aplicación Java que actúa como proxy entre navegador y aplicación, con araña tradicional y AJAX, escáner pasivo y activo, API y marco de automatización.",
+   "examples": [
+    "buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo",
+    "integrar un escaneo DAST en el pipeline de CI"
+   ],
+   "try": [
+    "Descarga ZAP desde zaproxy.org y ejecuta el escaneo automatizado contra una aplicación de laboratorio propia.",
+    "ZAP muestra alertas clasificadas por riesgo con evidencias y soluciones."
+   ],
+   "setup": "medium",
+   "tags": [
+    "pruebas",
+    "java",
+    "security",
+    "app"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países."
+  },
+  {
+   "gh": "projectdiscovery/subfinder",
+   "id": "subfinder",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "subfinder",
+   "one": "Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.",
+   "how": "Binario Go que consulta fuentes pasivas (con claves de API opcionales), resuelve y elimina comodines, y escribe a stdout, archivo o JSON.",
+   "examples": [
+    "inventariar los subdominios públicos de tu propia organización",
+    "preparar el alcance de un programa de bug bounty"
+   ],
+   "try": [
+    "Instala con `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` y enumera un dominio propio.",
+    "Obtienes la lista de subdominios encontrados en fuentes pasivas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "osint"
+   ],
+   "goals": [
+    "seguridad",
+    "investigar"
+   ],
+   "cmd": "go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest",
+   "caveat": "Las fuentes pasivas tienen términos y límites propios; respeta el alcance autorizado."
+  },
+  {
+   "gh": "openwall/john",
+   "id": "john",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "John the Ripper (jumbo)",
+   "one": "Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
+   "how": "Programa en C con modos de ataque (single, diccionario con reglas, incremental) y utilidades *2john que extraen hashes de archivos, capturas y formatos diversos.",
+   "examples": [
+    "auditar contraseñas débiles a partir de hashes autorizados",
+    "extraer el hash de un archivo cifrado propio para recuperarlo"
+   ],
+   "try": [
+    "Compila John desde `src/` según doc/INSTALL o usa los paquetes de john-packages y ejecuta `john --test`.",
+    "John muestra la velocidad de los formatos soportados en tu equipo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "pruebas",
+    "c",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Romper contraseñas ajenas sin permiso es delito; úsalo solo con datos propios o autorizados.",
+   "license": "GPL-2.0 (con partes bajo otras licencias)"
+  },
+  {
+   "gh": "wireshark/wireshark",
+   "id": "wireshark",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "name": "Wireshark",
+   "one": "Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.",
+   "how": "Aplicación C/Qt sobre libpcap o Npcap con disectores de protocolos, filtros de captura y visualización, y herramientas como TShark y editcap.",
+   "examples": [
+    "depurar por qué una aplicación no se conecta a un servidor",
+    "aprender cómo funcionan protocolos como DNS, TLS o HTTP observando el tráfico"
+   ],
+   "try": [
+    "Instala Wireshark desde wireshark.org, captura en tu propia interfaz y aplica el filtro `dns`.",
+    "Ves las consultas y respuestas DNS de tu equipo decodificadas campo a campo."
+   ],
+   "setup": "easy",
+   "tags": [
+    "pruebas",
+    "c",
+    "network",
+    "app"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Capturar tráfico ajeno sin consentimiento puede violar leyes de interceptación de comunicaciones."
+  },
+  {
+   "gh": "SpecterOps/BloodHound",
+   "id": "bloodhound",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "server",
+   "name": "BloodHound Community Edition",
+   "one": "Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).",
+   "how": "Aplicación web monolítica con frontend React y Sigma.js y API REST en Go, desplegada con PostgreSQL y una base de grafos; los datos se recogen con colectores como SharpHound o AzureHound.",
+   "examples": [
+    "identificar rutas de escalada hacia administrador de dominio en tu propio AD",
+    "priorizar qué permisos excesivos corregir primero"
+   ],
+   "try": [
+    "Sigue la guía rápida de BloodHound CE con Docker Compose en un laboratorio y carga los datos de ejemplo o de un dominio de pruebas.",
+    "El grafo muestra rutas de ataque entre usuarios, grupos y equipos."
+   ],
+   "setup": "medium",
+   "tags": [
+    "pruebas",
+    "go",
+    "security",
+    "graph"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Úsalo solo contra sistemas propios o con autorización escrita: usarlo contra terceros sin permiso es delito en la mayoría de países."
+  },
+  {
+   "gh": "labmlai/annotated_deep_learning_paper_implementations",
+   "id": "annotated-dl-papers",
+   "cat": 19,
+   "sub": "aprender",
+   "kind": "reference",
+   "name": "labml.ai Annotated Paper Implementations",
+   "one": "Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.",
+   "how": "Código Python/PyTorch documentado con explicaciones que la web nn.labml.ai muestra como notas al margen; paquete pip labml-nn.",
+   "examples": [
+    "entender un mecanismo como la atención o RoPE leyendo código comentado",
+    "reutilizar una implementación de referencia como punto de partida para experimentos"
+   ],
+   "try": [
+    "Abre en nn.labml.ai la implementación de atención multi-cabeza y lee el código con sus notas.",
+    "Ves el código de PyTorch con la explicación de cada paso al lado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "learning",
+    "python",
+    "pytorch"
+   ],
+   "goals": [
+    "aprender"
+   ],
+   "cmd": "pip install labml-nn"
+  }
+ ]
+}

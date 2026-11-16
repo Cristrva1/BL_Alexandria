@@ -4,7 +4,7 @@
 
 Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores.
 
-21 repos · 3 secciones
+23 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Motores de video y escenas por código](#motores-de-video-y-escenas-por-código) — 6 repos
+- [Motores de video y escenas por código](#motores-de-video-y-escenas-por-código) — 8 repos
 - [Skills y métodos de producción audiovisual](#skills-y-métodos-de-producción-audiovisual) — 14 repos
 - [Aplicaciones y flujos de producción](#aplicaciones-y-flujos-de-producción) — 1 repos
 
@@ -31,7 +31,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Manim (ManimGL)](../fichas/manim.md) | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | Tu objetivo encaja con estos ejemplos: Explicar una transformación matemática; Preparar una animación geométrica | Sin clave propia de API de IA en la ruta básica |
 | [remotion](../fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | Tu objetivo encaja con estos ejemplos: Crear una plantilla de video con datos; Preparar títulos animados | API de IA opcional |
 | [manim](../fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | Tu objetivo encaja con estos ejemplos: Preparar una explicación matemática; Crear una animación de geometría | Sin clave propia de API de IA en la ruta básica |
+| [Motion Canvas](../fichas/motion-canvas.md) | Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz. | Tu objetivo encaja con estos ejemplos: hacer vídeos explicativos de programación o matemáticas con animaciones precisas; sincronizar animaciones con una narración grabada | Sin clave propia de API de IA en la ruta básica |
 | [mediabunny](../fichas/mediabunny.md) | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web. | Tu objetivo encaja con estos ejemplos: Procesar video dentro de una aplicación web; Construir una herramienta de conversión en navegador | Sin clave propia de API de IA en la ruta básica |
+| [Revideo](../fichas/revideo.md) | Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador. | Tu objetivo encaja con estos ejemplos: generar muchas variantes de un vídeo a partir de datos o plantillas; añadir un renderizador de vídeo a una aplicación web | Sin clave propia de API de IA en la ruta básica |
 
 ## Skills y métodos de producción audiovisual
 

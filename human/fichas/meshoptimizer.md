@@ -32,6 +32,12 @@ Tiene interfaz C y C++ (usable por FFI desde otros lenguajes; en Rust, el crate 
 | [ozz-animation](ozz-animation.md) | Combinación recíproca: ozz-animation lo enlaza como «Optimizar las mallas de los personajes. (combinación por arquitectura)». | Orden indicado desde ozz-animation: Procesa las mallas antes. |
 | [regl](regl.md) | Combinación recíproca: regl lo enlaza como «Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)». | Orden indicado desde regl: Optimiza la malla antes de subirla a buffers. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Babylon.js](babylonjs.md) · [Bevy](bevy.md) · [Godot Engine](godot.md) · [PlayCanvas Engine](playcanvas.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-10-14 · última versión publicada v1.3 (2026-09-25) · licencia declarada MIT (consultado el 2026-11-15).
