@@ -31,7 +31,7 @@ _Levántalo con docker cuando el proyecto lo necesite._
 
 | Repo | Categoría | Qué hace |
 |---|---|---|
-| [n8n](fichas/n8n.md) | 🤖 Automatizar procesos y crear herramientas internas | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [activepieces](fichas/activepieces.md) | 🤖 Automatizar procesos y crear herramientas internas | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. |
 | [metabase](fichas/metabase.md) | 📊 Dashboards, analítica y mapas | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 | [posthog](fichas/posthog.md) | 📊 Dashboards, analítica y mapas | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. |
 | [evolution-api](fichas/evolution-api.md) | 🤖 WhatsApp, mensajería y chatbots | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |

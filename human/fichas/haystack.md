@@ -30,6 +30,7 @@ Se instala con `pip install haystack-ai` (también hay imágenes Docker) y las i
 | [Docling](docling.md) | Conversión de documentos complejos con la integración oficial de Docling. | Añade el convertidor de Docling al pipeline de indexación. |
 | [Ollama](ollama.md) | Generadores con modelos locales (`OllamaChatGenerator`). | Ollama con el modelo descargado primero. |
 | [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse. | Añade el componente tracer de Langfuse. |
+| [turbovec](turbovec.md) | Combinación recíproca: turbovec lo enlaza como «Integración oficial (`turbovec[haystack]`)». | Orden indicado desde turbovec: Igual que arriba. |
 
 **Notas:** Alternativas (elige una): llama-index, langchain. Desactiva la telemetría si tu política lo exige.
 

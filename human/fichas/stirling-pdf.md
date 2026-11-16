@@ -27,8 +27,9 @@ Servidor Java (imagen basada en Eclipse Temurin) con frontend TypeScript, que in
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [OCRmyPDF](ocrmypdf.md) | Incluido en la imagen para la herramienta de OCR. | No hace falta instalarlo aparte. |
-| [n8n](n8n.md) | Automatizar conversiones u OCR masivo llamando a su API REST (combinación por arquitectura). | Protege la API con clave antes de exponerla. |
+| [activepieces](activepieces.md) | Automatizar conversiones u OCR masivo llamando a su API REST (combinación por arquitectura). | Protege la API con clave antes de exponerla. |
 | [paperless-ngx](paperless-ngx.md) | Preparar o limpiar PDF antes de archivarlos (combinación por arquitectura). | Independientes; cambia el puerto 8080 si choca con otro servicio. |
+| [docuseal](docuseal.md) | Combinación recíproca: docuseal lo enlaza como «Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura)». | Orden indicado desde docuseal: Independientes; cambia puertos si coinciden. |
 
 **Notas:** Alternativa (elige una): pdfcraft.
 

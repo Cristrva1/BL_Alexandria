@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Agent Protocol, especificación de LangChain de APIs independientes del framework para servir agentes LLM en producción. Licencia MIT. Es una especificación de nicho (~700 estrellas).
+
+## ¿Qué hace?
+
+Define endpoints para runs, threads, store y streaming (Agent Streaming Protocol con esquema CDDL y bindings Python/TypeScript). LangGraph Platform implementa un superconjunto.
+
+## ¿Cómo lo hace?
+
+Incluye la especificación OpenAPI, stubs de servidor en Python (Pydantic V2 y FastAPI) y referencias a la implementación LangGraph.js API.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | LangGraph Platform implementa un superconjunto. | Despliega agentes con LangGraph. |
+| [LangGraph.js](langgraphjs.md) | Implementación open source en LangGraph.js API. | Sirve el agente JS con langgraph-api. |
+| [Deep Agents](deepagents.md) | Agentes servibles mediante el servidor LangGraph. (combinación por arquitectura) | Expón el agente vía el servidor. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-05 · última versión publicada langchain-protocol==0.0.21 (2026-11-05) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/agent-protocol/blob/main/README.md) · [2](https://langchain-ai.github.io/agent-protocol/api.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una especificación de API y no MCP ni un servidor instalable; los bloques Hurl ilustran peticiones y no son comandos de terminal normales |
 | Coste | Sin pago a un modelo en la ruta básica. Leer la especificación no consume API de IA; una implementación y su alojamiento tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Navegador; nociones de HTTP |
-
-Es una especificación de API y no MCP ni un servidor instalable; los bloques Hurl ilustran peticiones y no son comandos de terminal normales
-
-## Qué puedes hacer con él
-
-Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar una API de agentes; Comparar protocolos antes de implementar.
-
-## Cómo funciona
 
 Es una especificación de API y no MCP ni un servidor instalable; los bloques Hurl ilustran peticiones y no son comandos de terminal normales
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; nociones de HTTP
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
 ## Enlaces
 

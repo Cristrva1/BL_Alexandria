@@ -31,7 +31,7 @@ Se instala con `pip install graphifyy` o `uv tool install graphifyy` (paquete of
 | [Ollama](ollama.md) | Extra `[ollama]` para inferencia local. | Instala `graphifyy[ollama]` y arranca Ollama. |
 | [graphrag](graphrag.md) | Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura) | Usa Graphify para el código y GraphRAG para la documentación. |
 
-**Notas:** Sin alternativas declaradas; funcionalmente compite con codegraph (solo anotado). Ojo con paquetes PyPI de nombre parecido.
+**Notas:** Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.111 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -109,6 +109,15 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10+; uv o pipx; carpeta de código
 - **Etiquetas:** `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
+| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
+| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 
 ## Enlaces
 

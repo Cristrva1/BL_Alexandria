@@ -10,6 +10,40 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+meshoptimizer, biblioteca para optimizar mallas de triángulos para GPU, de @zeux. Licencia MIT. Es madura y muy usada en la industria (~8.9k estrellas, v1.3).
+
+## ¿Qué hace?
+
+Ofrece algoritmos de optimización de caché de vértices, overdraw y fetch, cuantización, simplificación, construcción de meshlets y compresión. Su compresión es la extensión glTF EXT_meshopt_compression.
+
+## ¿Cómo lo hace?
+
+Tiene interfaz C y C++ (usable por FFI desde otros lenguajes; en Rust, el crate meshopt). Se distribuye junto a gltfpack, CLI para optimizar glTF disponible como binario o vía npm, y clusterlod.h.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Carga glTF comprimido con EXT_meshopt (MeshoptDecoder). | Optimiza con gltfpack y carga con GLTFLoader. |
+| [filament](filament.md) | Geometría optimizada para su render. (combinación por arquitectura) | Procesa los modelos antes. |
+| [blender](blender.md) | Optimizar exportaciones glTF. (combinación por arquitectura) | Pasa el glTF exportado por gltfpack. |
+| [ozz-animation](ozz-animation.md) | Combinación recíproca: ozz-animation lo enlaza como «Optimizar las mallas de los personajes. (combinación por arquitectura)». | Orden indicado desde ozz-animation: Procesa las mallas antes. |
+| [regl](regl.md) | Combinación recíproca: regl lo enlaza como «Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)». | Orden indicado desde regl: Optimiza la malla antes de subirla a buffers. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Babylon.js](babylonjs.md) · [Bevy](bevy.md) · [Godot Engine](godot.md) · [PlayCanvas Engine](playcanvas.md)
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-14 · última versión publicada v1.3 (2026-09-25) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zeux/meshoptimizer/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +57,6 @@
 | Modelos locales | La función básica no necesita un modelo. Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets |
 | Coste | Sin pago a un modelo en la ruta básica. MIT sin API de IA; assets y herramientas de procesamiento tienen sus licencias |
 | Equipo | Preparación según la ruta elegida. Entorno de desarrollo compatible; malla pequeña; copia del original |
-
-Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets
-
-## Qué puedes hacer con él
-
-Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.
-
-## Por qué destaca
-
-Usos propuestos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real.
-
-## Cómo funciona
 
 Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets
 

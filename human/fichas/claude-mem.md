@@ -29,6 +29,7 @@ Se instala con `npx claude-mem install`, que detecta los agentes, registra los h
 | [Claude Code](claude-code.md) | Agente principal soportado con hooks nativos para capturar y recuperar memoria. | Claude Code instalado primero; después `npx claude-mem install` y elige Claude Code. |
 | [Codex CLI](codex.md) | Soportado con plugin nativo (también a través de T3 Code). | Igual; activa los hooks de Codex si el instalador lo pide. |
 | [OpenCode](opencode.md) | Agente soportado con registro de sesiones. | Igual que arriba. |
+| [OpenClaw](openclaw.md) | Combinación recíproca: OpenClaw lo enlaza como «Plugin de memoria persistente para gateways OpenClaw». | Orden indicado desde OpenClaw: Instala claude-mem con su comando para OpenClaw. |
 
 **Notas:** Alternativas (elige una): engram, agentmemory. Las observaciones pueden contener código o secretos: revisa qué se sincroniza con la nube.
 

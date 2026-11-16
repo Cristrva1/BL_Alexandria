@@ -29,6 +29,8 @@ Se copia el `CLAUDE.md` al proyecto o se instala como plugin (`/plugin marketpla
 | [Claude Code](claude-code.md) | Formato CLAUDE.md y plugin. | Copia el archivo o instala el plugin. |
 | [Codex CLI](codex.md) | Los mismos principios pueden ir en un AGENTS.md (combinación por arquitectura). | Adapta el texto al AGENTS.md del proyecto. |
 | [multica](multica.md) | Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura). | Independientes. |
+| [claude-token-efficient](claude-token-efficient.md) | Combinación recíproca: claude-token-efficient lo enlaza como «Principios compatibles contra la sobreingeniería (combinación por arquitectura)». | Orden indicado desde claude-token-efficient: Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada. |
+| [Ponytail](ponytail.md) | Combinación recíproca: Ponytail lo enlaza como «Principios compatibles de simplicidad y cambios mínimos (combinación por arquitectura)». | Orden indicado desde Ponytail: Evita instrucciones contradictorias si usas ambos. |
 
 **Notas:** Sin licencia declarada. Se quitaron awesome-claude-code y context-engineering porque no hay integración.
 

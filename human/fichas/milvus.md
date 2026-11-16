@@ -29,8 +29,9 @@ Arquitectura distribuida nativa de Kubernetes que separa cómputo y almacenamien
 | [AnythingLLM](anything-llm.md) | Base vectorial soportada por AnythingLLM. | Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos. |
 | [LightRAG](lightrag.md) | Backend de almacenamiento vectorial soportado. | Milvus primero; fija el modelo de embeddings antes de indexar. |
 | [LlamaIndex](llama-index.md) | Integración documentada en la web de Milvus. | Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor. |
+| [langchain4j](langchain4j.md) | Combinación recíproca: langchain4j lo enlaza como «Almacén vectorial alternativo para volúmenes grandes (módulo oficial)». | Orden indicado desde langchain4j: Elige uno de los almacenes vectoriales; despliega Milvus y añade su módulo. |
 
-**Notas:** Alternativas (elige una): qdrant, chroma.
+**Notas:** Alternativas (elige una): qdrant, chroma, pgvector.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.0.6 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -106,6 +107,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 | [Chroma](chroma.md) | 29.7k | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. |
+| [pgvector](pgvector.md) | 23.7k | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. |
+| [Weaviate](weaviate.md) | 17k | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada. |
 
 ## Enlaces
 

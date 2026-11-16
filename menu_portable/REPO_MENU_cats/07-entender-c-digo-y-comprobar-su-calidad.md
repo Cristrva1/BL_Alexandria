@@ -34,6 +34,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tree-sitter`, `claude-code`, `aider`
 **Alternativas (elige una):** `semgrep`
 
+## `biome`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=code,javascript,typescript,rust
+
+**Qué es:** Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por CLI y LSP.
+**Stack:** Rust, Cargo.toml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/biomejs/biome
+
+**Instalación** [+]:
+
+```
+npm install --save-dev --save-exact @biomejs/biome
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir ESLint y Prettier en un proyecto web por una sola herramienta; formatear y revisar el código que genera un agente antes de abrir un PR
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala `@biomejs/biome` como dependencia de desarrollo y ejecuta `npx @biomejs/biome check --write`.
+**Qué comprobar:** Biome formatea y corrige los archivos y lista los problemas restantes.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pre-commit`, `tailwindcss`, `claude-code`
+
 ## `cli`
 role=app · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,go
 
@@ -62,7 +92,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Autentica tu cuenta y consulta el estado de una pull request de un repositorio de prueba
 **Qué comprobar:** Ves el estado que coincide con la interfaz de GitHub
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `github-mcp-server`
+**Combina con:** `claude-code`, `github-mcp-server`, `activepieces`, `antigravity-awesome-skills`, `awesome-copilot`
 
 ## `codebase-memory-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=code,mcp,memory
@@ -92,8 +122,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un proyecto pequeño y consulta el impacto de cambiar una función
 **Qué comprobar:** Puedes abrir las referencias y relaciones del grafo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `serena`, `repomix`
-**Alternativas (elige una):** `codegraph`, `gitnexus`
+**Combina con:** `claude-code`, `repomix`, `codex`
+**Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `graphify`
 
 ## `codegraph`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=code,typescript
@@ -123,69 +153,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa una carpeta y consulta quién llama a una función conocida
 **Qué comprobar:** Los resultados identifican definiciones y relaciones comprobables
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `headroom`
-**Alternativas (elige una):** `codebase-memory-mcp`, `serena`
-
-## `deepwiki-open`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,google,local · tags=code,docs,python
-
-**Qué es:** Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki.
-**Stack:** Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
-- Coste: El coste depende del proveedor o la ruta. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes
-- Equipo: Preparación según la ruta elegida. Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos
-**Repo:** https://github.com/AsyncFuncAI/deepwiki-open
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Genera una wiki de un repositorio pequeño y contrasta una página con sus archivos
-**Qué comprobar:** La explicación enlaza partes del código que puedes abrir
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `litellm`, `mermaid`
-**Alternativas (elige una):** `context7`
-
-## `dsh-qa`
-role=library · exec=local · setup=medium · mcp=True · prov=— · tags=calidad,plugin,javascript
-
-**Qué es:** Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles.
-**Stack:** DeepSeek Harness; Node >=24.11; driver de navegador; app de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La exploración usa el agente DSH; replay y drivers consumen recursos; los drivers de escritorio o dispositivos tienen requisitos adicionales
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Documenta servidor MCP stdio independiente; requiere configurar drivers y permisos y no hereda todos los hooks o superficies de DSH en otros clientes
-- Coste: Consumo del agente que ya utilizas. La exploración usa el agente DSH; replay y drivers consumen recursos; los drivers de escritorio o dispositivos tienen requisitos adicionales
-- Equipo: Preparación según la ruta elegida. DeepSeek Harness; Node >=24.11; driver de navegador; app de prueba
-**Repo:** https://github.com/ZSeven-W/dsh-qa
-
-**Instalación** [+]:
-
-```
-npm install @zseven-w/dsh-qa           # the orchestrator
-npm install @zseven-w/dsh-browser      # browser sessions
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Repetir una prueba de registro en desarrollo; Guardar evidencia de un fallo de interfaz
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Explora un formulario local, guarda evidencia y exporta un recorrido para repetirlo
-**Qué comprobar:** El replay comprueba acciones y estados del recorrido observado
-Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `headroom`, `floorplan`
+**Alternativas (elige una):** `codebase-memory-mcp`, `serena`, `gitnexus`, `graphify`
 
 ## `floorplan`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=codigo,skill,javascript
@@ -217,6 +186,67 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes contrastar nombres legibles, archivos y conexiones del mapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `codegraph`
+
+## `fzf`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cli,go,terminal
+
+**Qué es:** Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva.
+**Stack:** Go, Dockerfile, Gemfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/junegunn/fzf
+
+**Instalación** [+]:
+
+```
+brew install fzf
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: buscar archivos y comandos del historial al instante en la terminal; construir menús interactivos en scripts de shell
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala fzf, activa la integración de tu shell y pulsa CTRL-T para elegir un archivo.
+**Qué comprobar:** El selector filtra miles de archivos al escribir y pega la ruta elegida en la línea de comandos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ripgrep`, `claude-code`, `codex`
+
+## `gitleaks`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,go,cli,code
+
+**Qué es:** Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/gitleaks/gitleaks
+
+**Instalación** [+]:
+
+```
+brew install gitleaks
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar el historial de un repositorio antes de hacerlo público; bloquear commits que contengan claves con un hook pre-commit
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Gitleaks y ejecútalo sobre un repositorio de prueba con una clave falsa en un commit.
+**Qué comprobar:** El informe señala el archivo, la línea y el commit de la clave falsa.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pre-commit`, `semgrep`, `claude-code`
+**Alternativas (elige una):** `trufflehog`
 
 ## `gitnexus`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=code,typescript
@@ -250,8 +280,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función
 **Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`, `codex`
-**Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`
+**Combina con:** `claude-code`, `opencode`, `codex`, `tools`
+**Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`, `codegraph`, `graphify`
 
 ## `graphify`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=code,python
@@ -283,6 +313,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Cada relación se puede contrastar con un archivo o símbolo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tree-sitter`, `ollama`, `graphrag`
+**Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `codebase-memory-mcp`
+
+## `lazygit`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cli,go,git,terminal
+
+**Qué es:** Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/jesseduffield/lazygit
+
+**Instalación** [+]:
+
+```
+brew install lazygit
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos; hacer rebases interactivos y deshacer operaciones sin recordar comandos
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala lazygit y ábrelo en un repositorio de prueba con cambios sin confirmar.
+**Qué comprobar:** Puedes preparar una sola línea y crear el commit desde la interfaz.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `aider`
 
 ## `openai-python`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,python
@@ -313,7 +374,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Envía una petición breve de ejemplo y revisa respuesta y uso informado
 **Qué comprobar:** Obtienes la salida del endpoint y puedes localizar el consumo del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `langchain`
+**Combina con:** `litellm`, `vllm`, `langchain`, `openai-agents-python`, `openai-cookbook`
+
+## `pre-commit`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=code,python,cli,git
+
+**Qué es:** Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML.
+**Stack:** Python, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/pre-commit/pre-commit
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/pre-commit/pre-commit/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: obligar a pasar formato, lint y escaneo de secretos antes de cada commit; aplicar las mismas comprobaciones en local y en CI
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala pre-commit, crea un .pre-commit-config.yaml con un hook de formato y ejecuta `pre-commit run --all-files`.
+**Qué comprobar:** El hook se instala solo y formatea o señala los archivos del repositorio.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ruff`, `gitleaks`, `trufflehog`, `biome`, `semgrep`, `trivy`
 
 ## `repomix`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=code,coding-agent,typescript
@@ -343,8 +434,99 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empaqueta una carpeta pequeña y abre el resultado antes de entregarlo a una IA
 **Qué comprobar:** Puedes comprobar archivos incluidos, tamaño y exclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `tree-sitter`, `markitdown`
+**Combina con:** `claude-code`, `tree-sitter`, `markitdown`, `tools`, `codebase-memory-mcp`
 **Alternativas (elige una):** `gitnexus`
+
+## `ripgrep`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cli,rust,code,search
+
+**Qué es:** Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios.
+**Stack:** Rust, Cargo.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/BurntSushi/ripgrep
+
+**Instalación** [+]:
+
+```
+brew install ripgrep
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: localizar todas las apariciones de una función en un repositorio grande; buscar texto en miles de archivos de logs o notas en segundos
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala ripgrep y ejecuta `rg` con un patrón en un repositorio.
+**Qué comprobar:** Obtienes las coincidencias con archivo y línea, sin resultados de carpetas ignoradas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `fzf`, `claude-code`, `opencode`
+
+## `ruff`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=code,python,rust,cli
+
+**Qué es:** Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas.
+**Stack:** Rust, Cargo.toml, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/astral-sh/ruff
+
+**Instalación** [+]:
+
+```
+pip install ruff
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Flake8, isort y Black por una sola herramienta en un proyecto; revisar y corregir el código que genera un agente antes de cada commit
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta `uvx ruff check` y `uvx ruff format` en un proyecto Python de prueba.
+**Qué comprobar:** Ruff informa de los problemas en segundos y el formateo deja un diff limpio.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pre-commit`, `sonarqube`, `claude-code`
+
+## `sonarqube`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=code,java,security,docker
+
+**Qué es:** Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes.
+**Stack:** Java, build.gradle
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/SonarSource/sonarqube
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/SonarSource/sonarqube/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: vigilar la calidad y seguridad de un repositorio en cada PR; revisar el código generado por IA con reglas consistentes antes de fusionarlo
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca la imagen Docker oficial, crea un proyecto y analiza un repositorio pequeño con el escáner.
+**Qué comprobar:** El panel muestra problemas, puntos críticos y la puerta de calidad del proyecto.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ruff`, `claude-code`, `coolify`
+**Alternativas (elige una):** `semgrep`
 
 ## `swe-bench`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=evaluation,coding-agent,python
@@ -407,3 +589,34 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El árbol refleja el cambio sin interpretar semánticamente todo el programa
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ast-grep`, `aider`, `repomix`, `graphify`
+
+## `trufflehog`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,go,cli,code
+
+**Qué es:** Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/trufflesecurity/trufflehog
+
+**Instalación** [+]:
+
+```
+brew install trufflehog
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar los repositorios de una organización en busca de claves activas; revisar buckets o logs exportados antes de compartirlos
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta la imagen Docker contra el repositorio de pruebas trufflesecurity/test_keys como indica el README.
+**Qué comprobar:** El informe muestra las claves encontradas y si están verificadas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pre-commit`, `semgrep`, `claude-code`
+**Alternativas (elige una):** `gitleaks`
