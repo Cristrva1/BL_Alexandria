@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Framework de orquestación de IA de código abierto (Apache 2.0) de deepset para aplicaciones LLM en producción con Python. Maduro y activo (v3.5.0); deepset ofrece soporte y plataforma comerciales (Haystack Enterprise).
+
+## ¿Qué hace?
+
+Permite diseñar pipelines modulares y flujos de agentes con control explícito sobre recuperación, enrutamiento, memoria y generación: RAG escalable, aplicaciones multimodales, búsqueda semántica, preguntas y respuestas. Los agentes tienen hooks de ciclo de vida para guardrails y métricas de pasos y tokens. Hayhooks despliega pipelines como API REST o servidores MCP.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install haystack-ai` (también hay imágenes Docker) y las integraciones van en `haystack-core-integrations`. Recoge telemetría anónima de uso de componentes por defecto; se puede desactivar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Qdrant](qdrant.md) | Document store con integración oficial. | Qdrant primero; luego `qdrant-haystack`. |
+| [Docling](docling.md) | Conversión de documentos complejos con la integración oficial de Docling. | Añade el convertidor de Docling al pipeline de indexación. |
+| [Ollama](ollama.md) | Generadores con modelos locales (`OllamaChatGenerator`). | Ollama con el modelo descargado primero. |
+| [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse. | Añade el componente tracer de Langfuse. |
+| [turbovec](turbovec.md) | Combinación recíproca: turbovec lo enlaza como «Integración oficial (`turbovec[haystack]`)». | Orden indicado desde turbovec: Igual que arriba. |
+
+**Notas:** Alternativas (elige una): llama-index, langchain. Desactiva la telemetría si tu política lo exige.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.5.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/deepset-ai/haystack/blob/main/README.md) · [2](https://qdrant.tech/documentation/frameworks/haystack/) · [3](https://haystack.deepset.ai/integrations/docling) · [4](https://docs.haystack.deepset.ai/docs/ollamachatgenerator) · [5](https://langfuse.com/integrations/frameworks/haystack)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte |
 | Coste | El coste depende del proveedor o la ruta. La biblioteca admite modelos locales y remotos; deepset gestionado, almacenamiento y modelos son costes separados |
 | Equipo | Preparación según la ruta elegida. Python; documentos; componentes de recuperación y generación |
-
-El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte
-
-## Qué puedes hacer con él
-
-Framework de deepset para pipelines de RAG y agentes listos para producción.
-
-## Por qué destaca
-
-Usos propuestos: Responder sobre manuales propios; Comparar recuperación de dos consultas.
-
-## Cómo funciona
 
 El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte
 
@@ -93,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; documentos; componentes de recuperación y generación
 - **Etiquetas:** `rag` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 

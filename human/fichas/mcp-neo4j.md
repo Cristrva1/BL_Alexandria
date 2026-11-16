@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Servidores MCP de Neo4j Labs, mantenidos por el equipo Field GenAI de Neo4j. Licencia MIT. Son experimentales (~1k estrellas, mcp-neo4j-cypher-v0.6.0) y el README remite al servidor MCP oficial de producto (neo4j/mcp).
+
+## ¿Qué hace?
+
+Incluye cuatro servidores: `mcp-neo4j-cypher` (lenguaje natural a consultas Cypher sobre un esquema), `mcp-neo4j-memory` (memoria como grafo de conocimiento), `mcp-neo4j-cloud-aura-api` (gestión de instancias Aura) y `mcp-neo4j-data-modeling` (modelado de datos interactivo). Funcionan con Claude Desktop, VS Code, Cursor, Windsurf, Gemini CLI y otros clientes.
+
+## ¿Cómo lo hace?
+
+Cada servidor se instala por separado (normalmente con `uvx`) y se configura con la URL y las credenciales de Neo4j. Como proyecto de Labs, se actualiza a menudo y sin garantías de soporte.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Consultar y modelar grafos Neo4j desde un cliente MCP. (combinación por arquitectura) | Configura el servidor Cypher con un usuario de solo lectura primero. |
+| [graphrag](graphrag.md) | Explorar en Neo4j grafos de conocimiento generados con GraphRAG. (combinación por arquitectura) | Carga el grafo en Neo4j y consúltalo con el servidor Cypher. |
+| [Graphiti](graphiti.md) | Combinación recíproca: Graphiti lo enlaza como «Explorar y consultar con un agente el grafo guardado en Neo4j (combinación por arquitectura)». | Orden indicado desde Graphiti: Usa un usuario de solo lectura para el MCP de Neo4j. |
+
+**Notas:** Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos.
+
+Estado en GitHub: activo · último push 2026-09-09 · última versión publicada mcp-neo4j-cypher-v0.6.0 (2026-04-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md) · [2](https://github.com/neo4j/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio |
 | Coste | El coste depende del proveedor o la ruta. El conector no necesita modelo propio; Neo4j Aura, base local y agente tienen costes distintos |
 | Equipo | Preparación según la ruta elegida. Neo4j; credenciales; APOC para inspección de esquema; servidor elegido |
-
-Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio
-
-## Qué puedes hacer con él
-
-Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto.
-
-## Por qué destaca
-
-Usos propuestos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones.
-
-## Cómo funciona
 
 Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio
 
@@ -87,12 +101,11 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [graphrag](graphrag.md) | 36.6k | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
-| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.7k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
+| [Neo4j MCP (oficial)](neo4j-mcp.md) | 307 | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. |
 
 ## Enlaces
 

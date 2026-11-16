@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Servidor MCP oficial de Microsoft que da a los LLM automatización de navegador con Playwright. Licencia Apache-2.0. Es muy popular y activo (~40k estrellas, v0.0.85, aún 0.x).
+
+## ¿Qué hace?
+
+Permite a un modelo navegar, hacer clic, rellenar formularios y leer páginas a través del árbol de accesibilidad (instantáneas estructuradas), sin depender de capturas de pantalla ni modelos de visión. El README recomienda Playwright CLI + skills para agentes de programación (más eficiente en tokens) y reserva el MCP para bucles que se benefician de estado persistente e inspección rica.
+
+## ¿Cómo lo hace?
+
+Se añade al cliente MCP con `npx @playwright/mcp@latest` (VS Code, Cursor, Windsurf, Claude Desktop, Goose, Grok, Junie y otros); requiere Node.js. Tiene opciones de navegador, perfil, modo headless y capacidades adicionales.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Automatización de navegador desde el agente con `claude mcp add`. | Registra `npx @playwright/mcp@latest` como servidor MCP. |
+| [playwright](playwright.md) | Motor de automatización sobre el que se construye. | Se instala con el servidor; los navegadores se descargan con Playwright. |
+| [MCP Inspector](mcp-inspector.md) | Inspeccionar las herramientas y respuestas del servidor. (combinación por arquitectura) | Conecta el Inspector al servidor. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[agent-desktop](agent-desktop.md) · [Cherry Studio](cherry-studio.md) · [Cline](cline.md) · [goose](goose.md) · [hello-halo](hello-halo.md) · [Jan](jan.md) · [Kilo Code](kilocode.md) · [LobeHub](lobehub.md) · [odysseus](odysseus.md) · [playwright-cli](playwright-cli.md) · [SurfSense](surfsense.md)
+
+**Notas:** Alternativas (elige una): chrome-devtools-mcp, browser-use, browser-harness.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.0.85 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/playwright-mcp/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies |
 | Coste | Consumo del agente que ya utilizas. No necesita API adicional de modelo; usa el agente anfitrión y recursos del navegador |
 | Equipo | Preparación según la ruta elegida. Node.js; npm; cliente MCP; navegador de prueba |
-
-El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies
-
-## Qué puedes hacer con él
-
-Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright.
-
-## Por qué destaca
-
-Usos propuestos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo.
-
-## Cómo funciona
 
 El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies
 
@@ -93,13 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; npm; cliente MCP; navegador de prueba
 - **Etiquetas:** `mcp` `browser` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
 ## Alternativas (elige una)
 

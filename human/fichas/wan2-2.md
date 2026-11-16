@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Wan2.2, familia de modelos abiertos de generación de vídeo de Alibaba (Wan-AI). Licencia Apache-2.0 para los modelos; no reclaman derechos sobre el contenido generado. Tiene ~19k estrellas (sin releases) y su último cambio es de septiembre de 2026.
+
+## ¿Qué hace?
+
+Genera vídeo desde texto, imagen o ambos con una arquitectura Mixture-of-Experts para la difusión. Incluye un modelo híbrido TI2V de 5B con un VAE de alta compresión que genera 720p en una GPU de consumo, además de Wan2.2-S2V (vídeo guiado por audio) y Wan2.2-Animate (animación y sustitución de personajes).
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -r requirements.txt` y se descargan los pesos de Hugging Face o ModelScope. Los modelos 14B requieren unos 80 GB de VRAM (o varias GPU); el TI2V-5B funciona con 24 GB (RTX 4090) con offloading. S2V puede sintetizar la voz con CosyVoice.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ComfyUI](comfyui.md) | Integración oficial en ComfyUI. | Sigue el tutorial de Wan2.2 en la documentación de Comfy. |
+| [diffusers](diffusers.md) | T2V, I2V, TI2V y Animate integrados en diffusers. | Usa los checkpoints `-Diffusers` de Hugging Face. |
+| [CosyVoice](cosyvoice.md) | Síntesis de voz para Speech-to-Video. | Instala `requirements_s2v.txt`. |
+| [Real-ESRGAN](real-esrgan.md) | Ampliar los vídeos generados. (combinación por arquitectura) | Pasa los fotogramas por Real-ESRGAN. |
+| [WanGP](wan2gp.md) | Combinación recíproca: WanGP lo enlaza como «Ejecuta los modelos Wan 2.2 con menos VRAM». | Orden indicado desde WanGP: Descarga el modelo desde la interfaz. |
+
+**Notas:** Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.
+
+Estado en GitHub: activo · último push 2026-09-21 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Wan-Video/Wan2.2/blob/main/README.md) · [2](https://docs.comfy.org/tutorials/video/wan/wan2_2) · [3](https://huggingface.co/docs/diffusers/main/en/api/pipelines/wan)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. El ejemplo 5B cita al menos 24 GB VRAM; otros ejemplos 14B citan 80 GB; no extrapoles esos mínimos a interfaces optimizadas de terceros |
 | Coste | El coste depende del proveedor o la ruta. Inferencia local usa hardware; expansión de prompts puede llamar DashScope; pesos y descargas tienen licencias propias |
 | Equipo | Preparación según la ruta elegida. Python y PyTorch >=2.4; GPU; pesos y disco según variante |
-
-El ejemplo 5B cita al menos 24 GB VRAM; otros ejemplos 14B citan 80 GB; no extrapoles esos mínimos a interfaces optimizadas de terceros
-
-## Qué puedes hacer con él
-
-Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local.
-
-## Cómo funciona
 
 El ejemplo 5B cita al menos 24 GB VRAM; otros ejemplos 14B citan 80 GB; no extrapoles esos mínimos a interfaces optimizadas de terceros
 
@@ -99,20 +115,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `video` `inference` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
-| [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
-| [Real-ESRGAN](real-esrgan.md) | 37.5k | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. |
-| [CosyVoice](cosyvoice.md) | 24.4k | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [HunyuanVideo](hunyuanvideo.md) | 12.8k | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | 4.6k | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Enlaces
 

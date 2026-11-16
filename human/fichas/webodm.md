@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.
+
+## ¿Qué hace?
+
+Genera mapas georreferenciados, nubes de puntos, modelos de elevación, modelos 3D texturizados y gaussian splats a partir de fotos aéreas. Admite varios motores de procesamiento: ODX (su fork propio), MicMac y LGT. Incluye gestión de proyectos, visor de mapas y 3D, y API.
+
+## ¿Cómo lo hace?
+
+Se instala con los instaladores oficiales gratuitos o con Docker; usa Django 5.2, PostgreSQL 18 y Valkey. El README avisa de que quien pagó un instalador después de abril de 2026 compró otro software y documenta la migración. Revisa los requisitos de hardware antes de procesar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [blender](blender.md) | Editar o renderizar los modelos exportados. (combinación por arquitectura) | Exporta el modelo texturizado e impórtalo en Blender. |
+| [three.js](three-js.md) | Publicar modelos o splats en una web propia. (combinación por arquitectura) | Exporta y carga con three.js. |
+| [marimo](marimo.md) | Analizar ortomosaicos y DEM exportados. (combinación por arquitectura) | Abre los GeoTIFF en un notebook. |
+| [Leaflet](leaflet.md) | Combinación recíproca: Leaflet lo enlaza como «WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura)». | Orden indicado desde Leaflet: Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet. |
+| [QGIS](qgis.md) | Combinación recíproca: QGIS lo enlaza como «Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura)». | Orden indicado desde QGIS: Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS. |
+
+**Notas:** Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.1 (2026-11-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/WebODM/WebODM/blob/master/README.md) · [2](https://webodm.org/blog/announcement/) · [3](https://docs.webodm.org/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen |
 | Coste | El coste depende del proveedor o la ruta. Los instaladores oficiales actuales se anuncian gratuitos; hardware, soporte o servicios externos pueden costar |
 | Equipo | Preparación según la ruta elegida. Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba |
-
-El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen
-
-## Qué puedes hacer con él
-
-Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.
-
-## Por qué destaca
-
-Usos propuestos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica.
-
-## Cómo funciona
 
 El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen
 
@@ -85,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba
 - **Etiquetas:** `geoespacial` `server` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ODM](odm.md) | 6.6k | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. |
 
 ## Enlaces
 

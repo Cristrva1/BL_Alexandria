@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Harness de agentes de código abierto (MIT) de LangChain, «con pilas incluidas», que funciona sin configuración y es extensible. Activo (0.7.38), con versión JS/TS.
+
+## ¿Qué hace?
+
+Trae defaults para trabajo largo y multipaso: subagentes con contexto aislado, sistema de archivos con backends locales, en sandbox o remotos, gestión de contexto (resume hilos y descarga salidas de herramientas a disco), acceso a shell en el sandbox elegido, memoria persistente, aprobación humana de herramientas, skills y herramientas propias o de cualquier servidor MCP.
+
+## ¿Cómo lo hace?
+
+Se instala con `uv add deepagents` y está construido sobre LangGraph (streaming, persistencia, checkpoints), con trazas, evaluación y despliegue mediante LangSmith. Es agnóstico de modelo: vale cualquier LLM con tool calling, incluidos modelos locales.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Base de ejecución sobre la que está construido. | Se instala como dependencia; baja a LangGraph para personalizar el grafo. |
+| [langchain](langchain.md) | Modelos e integraciones del mismo ecosistema. | Añade los paquetes del proveedor de modelos. |
+| [langfuse](langfuse.md) | Trazas de código abierto mediante la integración de Langfuse con LangChain/LangGraph (combinación por arquitectura). | Configura el callback antes de producción. |
+| [awesome-LangGraph](awesome-langgraph.md) | Combinación recíproca: awesome-LangGraph lo enlaza como «Sección propia en la lista». | Orden indicado desde awesome-LangGraph: No aplica. |
+| [NemoClaw](nemoclaw.md) | Combinación recíproca: NemoClaw lo enlaza como «Deep Agents Code soportado». | Orden indicado desde NemoClaw: Elige Deep Agents Code. |
+| [Open SWE](open-swe.md) | Combinación recíproca: Open SWE lo enlaza como «Framework sobre el que está construido». | Orden indicado desde Open SWE: Viene incluido. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Agent Protocol](agent-protocol.md)
+
+**Notas:** Alternativa (elige una): openai-agents-python. Si da shell al agente, úsalo dentro de un sandbox.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada deepagents==0.7.38 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/deepagents/blob/main/README.md) · [2](https://langfuse.com/integrations/frameworks/langchain)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Su parecido con Claude Code no acredita el uso de la suscripción de Claude Code |
 | Coste | El coste depende del proveedor o la ruta. Usa el modelo configurado y sus costes; Ollama, vLLM y llama.cpp requieren hardware suficiente |
 | Equipo | Preparación según la ruta elegida. Python y uv; modelo con herramientas; directorio de prueba |
-
-Su parecido con Claude Code no acredita el uso de la suscripción de Claude Code
-
-## Qué puedes hacer con él
-
-Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos.
-
-## Por qué destaca
-
-Usos propuestos: Resumir documentos de proyecto; Dividir una revisión de archivos en tareas.
-
-## Cómo funciona
 
 Su parecido con Claude Code no acredita el uso de la suscripción de Claude Code
 
@@ -93,13 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; modelo con herramientas; directorio de prueba
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca minimalista de agentes de Hugging Face (Apache 2.0): la lógica principal cabe en unas 1.000 líneas. Activa (v1.26.0).
+
+## ¿Qué hace?
+
+Su `CodeAgent` escribe sus acciones como código Python en lugar de JSON. También hay agentes de tool calling. Permite compartir y descargar herramientas y agentes del Hub, admite texto, visión, vídeo y audio, y usa herramientas de cualquier servidor MCP o de LangChain.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install "smolagents[toolkit]"`. Es agnóstico de modelo: `transformers` u Ollama en local, proveedores del Hub, LiteLLM para más de 100 LLM, OpenAI o Anthropic. Como ejecuta código, recomienda sandboxes (E2B, Blaxel, Modal o Docker): su `LocalPythonExecutor` no es una frontera de seguridad.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [E2B](e2b.md) | Sandbox gestionado documentado para ejecutar el código del agente. | Cuenta de E2B y extra correspondiente antes de ejecutar CodeAgent. |
+| [Transformers](transformers.md) | Modelos locales de Hugging Face. | Requiere GPU para modelos medianos. |
+| [litellm](litellm.md) | Acceso a más de 100 LLM con `LiteLLMModel`. | Configura las claves del proveedor. |
+| [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse. | Instrumenta antes de producción. |
+| [Hugging Face Agents Course](agents-course.md) | Combinación recíproca: Hugging Face Agents Course lo enlaza como «La unidad 2.1 enseña a construir agentes con smolagents». | Orden indicado desde Hugging Face Agents Course: Sigue la unidad; instala smolagents en el entorno del cuaderno. |
+
+**Notas:** Alternativas (elige una): pydantic-ai, openai-agents-python. No ejecutes CodeAgent sin sandbox con datos o credenciales reales.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.26.0 (2026-05-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/smolagents/blob/main/README.md) · [2](https://huggingface.co/docs/smolagents/tutorials/secure_code_execution) · [3](https://langfuse.com/integrations/frameworks/smolagents)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. El agente ejecuta código: usa el aislamiento documentado y archivos de prueba |
 | Coste | El coste depende del proveedor o la ruta. Admite Transformers u Ollama locales y APIs; aislamiento y búsqueda externa pueden costar aparte |
 | Equipo | Preparación según la ruta elegida. Python; modelo; ejecutor aislado |
-
-El agente ejecuta código: usa el aislamiento documentado y archivos de prueba
-
-## Qué puedes hacer con él
-
-Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python.
-
-## Por qué destaca
-
-Usos propuestos: Calcular indicadores de un CSV; Transformar datos consultados en un resumen.
-
-## Cómo funciona
 
 El agente ejecuta código: usa el aislamiento documentado y archivos de prueba
 
@@ -93,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; modelo; ejecutor aislado
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [E2B](e2b.md) | 14.9k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework open source de canvas 2D (MIT, sin clave de licencia) para gráficos interactivos en la web, mantenido por @lavrton. Nació como fork de KineticJS, de ahí que GitHub marque la licencia como NOASSERTION. Es maduro y activo (10.9.1).
+
+## ¿Qué hace?
+
+Ofrece un grafo de escena en el que cada forma tiene sus propios eventos, arrastre, transformaciones, animación, caché y exportación. Se usa para editores de diseño, pizarras, diagramas, anotaciones y mapas. El README promociona Polotno, un editor de diseño comercial para quien no quiera construirlo desde cero.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install konva`. Tiene bindings oficiales `react-konva` y `vue-konva`, y funciona en Node.js con `canvas` o `skia-canvas` para renderizado en servidor. No incluye interfaz de editor: hay que construir barras de herramientas y paneles.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | Paneles, diálogos y barras de herramientas alrededor del lienzo en un editor React. (combinación por arquitectura) | Construye el lienzo con react-konva y la interfaz con shadcn/ui. |
+| [tailwindcss](tailwindcss.md) | Estilos de la interfaz del editor (Konva solo dibuja en canvas). (combinación por arquitectura) | Configura Tailwind para la UI fuera del lienzo. |
+| [Lucide](lucide.md) | Iconos para las herramientas del editor. (combinación por arquitectura) | Instala lucide-react. |
+
+**Notas:** Sin alternativas declaradas. Si buscas una pizarra ya hecha, considera excalidraw o tldraw.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada 10.9.1 (2026-10-31) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/konvajs/konva/blob/master/README.md) · [2](https://konvajs.org/docs/react/index.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El renderizado de servidor necesita un backend canvas adicional; no instales esas dependencias si solo lo usas en el navegador |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca MIT no exige licencia de pago ni modelo; backend y assets son independientes |
 | Equipo | Preparación según la ruta elegida. Node; proyecto web; wrapper si usas React u otro framework |
-
-El renderizado de servidor necesita un backend canvas adicional; no instales esas dependencias si solo lo usas en el navegador
-
-## Qué puedes hacer con él
-
-Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.
-
-## Por qué destaca
-
-Usos propuestos: Construir un editor de anotaciones; Crear un pequeño diagrama interactivo.
-
-## Cómo funciona
 
 El renderizado de servidor necesita un backend canvas adicional; no instales esas dependencias si solo lo usas en el navegador
 

@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+SDK oficial de Google Labs (Apache-2.0) para Google Stitch, el servicio de diseño de interfaces con IA. Permite generar pantallas de UI desde texto y extraer su HTML y capturas de forma programática. Está en una fase muy temprana (v0.1.1).
+
+## ¿Qué hace?
+
+Crea proyectos y genera o edita pantallas desde prompts. Devuelve URLs de descarga del HTML y de la captura de cada pantalla, y lista y referencia proyectos existentes. Expone las herramientas de Stitch como cliente MCP para agentes y como herramientas listas para el Vercel AI SDK (`stitchTools()`).
+
+## ¿Cómo lo hace?
+
+Paquete npm `@google/stitch-sdk` que requiere `STITCH_API_KEY`. Para usarlo con el AI SDK hay que instalar también `ai`. `StitchToolClient` permite configurar la clave y la URL base. Depende del servicio de Google Stitch, con sus condiciones y límites.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI SDK (Vercel)](vercel-ai.md) | Integración documentada: `stitchTools()` añade las herramientas de Stitch a un agente del AI SDK. | Instala `@google/stitch-sdk ai` y pasa las herramientas al modelo. |
+| [Stitch Skills](stitch-skills.md) | Skills oficiales de Google Labs para trabajar con Stitch desde agentes de programación. | Usa el SDK para scripts y las skills para agentes interactivos. |
+| [design.md](design-md.md) | Especificación de sistema de diseño de Google Labs para guiar la generación. (combinación por arquitectura) | Redacta el DESIGN.md e inclúyelo en los prompts. |
+
+**Notas:** Alternativas (elige una): screenshot-to-code.
+
+Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v0.1.1 (2026-04-27) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-labs-code/stitch-sdk/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El proxy stdio permite exponer herramientas a clientes MCP; su acceso no acredita que el plan de Antigravity pague las llamadas |
 | Coste | Coste por confirmar. Requiere autenticación del servicio; el README no confirma aquí su tarifa o cupo, por lo que no se promete ni gratuidad ni cobro por llamada |
 | Equipo | Preparación según la ruta elegida. Node.js; clave Stitch u OAuth con proyecto; servicio Stitch |
-
-El proxy stdio permite exponer herramientas a clientes MCP; su acceso no acredita que el plan de Antigravity pague las llamadas
-
-## Qué puedes hacer con él
-
-SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar borradores de UI; Conectar herramientas Stitch a un agente mediante proxy MCP.
-
-## Cómo funciona
 
 El proxy stdio permite exponer herramientas a clientes MCP; su acceso no acredita que el plan de Antigravity pague las llamadas
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; clave Stitch u OAuth con proyecto; servicio Stitch
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Stitch Skills](stitch-skills.md) | 8.9k | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. |
 
 ## Alternativas (elige una)
 

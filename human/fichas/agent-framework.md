@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework open source (MIT) de Microsoft para construir, orquestar y desplegar agentes y workflows multiagente. Lo presentan como sucesor de AutoGen y Semantic Kernel, con guías oficiales de migración desde ambos. Es muy activo: el SDK de Python va por la 1.26.0, y hay implementaciones en .NET y un SDK de Go en otro repositorio.
+
+## ¿Qué hace?
+
+Ofrece agentes con varios proveedores de LLM, un sistema de middleware para el procesamiento de peticiones y respuestas, y workflows basados en grafos (secuenciales, concurrentes, con checkpoints y human-in-the-loop). También incluye agentes declarativos en YAML y 'Agent Skills' construidas a partir de varias fuentes. Trae una DevUI para probar y depurar y paquetes experimentales en 'AF Labs' (benchmarks, aprendizaje por refuerzo). Además permite desplegar agentes alojados en Microsoft Foundry.
+
+## ¿Cómo lo hace?
+
+Paquetes `agent-framework` en PyPI (Python) y `Microsoft.Agents.AI` en NuGet (.NET), con una API coherente entre los dos lenguajes. Trae instrumentación OpenTelemetry integrada para trazas distribuidas. Funciona con Azure OpenAI, OpenAI y otros proveedores; parte de las funciones (Foundry Hosted Agents) dependen de servicios de Azure. La documentación está en Microsoft Learn.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langfuse](langfuse.md) | Trazas de agentes y workflows a través de OpenTelemetry (integración oficial de Langfuse para Microsoft Agent Framework). | Langfuse primero; configura el exportador OTLP antes de crear los agentes. |
+| [CopilotKit](copilotkit.md) | Interfaz React/Next.js para agentes de Agent Framework (integración documentada por CopilotKit). | Expón el agente desde el backend de Agent Framework y conecta CopilotKit en el frontend. |
+| [ag2](ag2.md) | Útil si migras desde AutoGen 0.2/AG2: hay una guía oficial de migración desde AutoGen. (combinación por arquitectura: no se integran entre sí, se usan como origen y destino de una migración). | Mantén AG2 solo mientras portas los agentes a Agent Framework con la guía de Microsoft. |
+| [Ollama](ollama.md) | Modelos locales para desarrollo mediante un endpoint compatible con OpenAI. (combinación por arquitectura) | Arranca Ollama y apunta el cliente compatible con OpenAI a su URL local. |
+| [AI Agents for Beginners](ai-agents-for-beginners.md) | Combinación recíproca: AI Agents for Beginners lo enlaza como «Framework usado en todos los ejemplos de código del curso». | Orden indicado desde AI Agents for Beginners: Sigue la lección de configuración del curso; instala agent-framework en Python. |
+
+**Notas:** Sin alternativas declaradas en el catálogo; frameworks comparables: langgraph, crewai, openai-agents-python. Hallazgo: AutoGen (microsoft/autogen) no está en el catálogo; Agent Framework es su sucesor oficial.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada python-1.26.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/agent-framework/blob/main/README.md) · [2](https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen) · [3](https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel) · [4](https://docs.langfuse.com/integrations/frameworks/microsoft-agent-framework) · [5](https://docs.copilotkit.ai/microsoft-agent-framework)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. La skill de construcción usa el agente; el runtime tiene autenticación y costes propios; módulos Lab son experimentales |
 | Coste | El coste depende del proveedor o la ruta. Admite Ollama y otros proveedores; Foundry y despliegues gestionados pueden generar gasto |
 | Equipo | Preparación según la ruta elegida. Python o .NET; proveedor configurado |
-
-La skill de construcción usa el agente; el runtime tiene autenticación y costes propios; módulos Lab son experimentales
-
-## Qué puedes hacer con él
-
-Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel.
-
-## Por qué destaca
-
-Usos propuestos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito.
-
-## Cómo funciona
 
 La skill de construcción usa el agente; el runtime tiene autenticación y costes propios; módulos Lab son experimentales
 

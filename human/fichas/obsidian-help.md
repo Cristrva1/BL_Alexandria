@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Fuente de la documentación oficial de ayuda de Obsidian y sus traducciones. El repo no tiene archivo de licencia. Lo mantiene Obsidian y es activo (~2k estrellas).
+
+## ¿Qué hace?
+
+Cada idioma es un vault independiente publicado con Obsidian Publish en obsidian.md/help. Cubre el uso de la app, la sintaxis de Obsidian Flavored Markdown, Bases, Canvas, Sync, Publish, la CLI, el Web Clipper y las guías de importación. No admite issues sobre fallos o peticiones de la app, que van al foro.
+
+## ¿Cómo lo hace?
+
+Se puede clonar y abrir como vault en Obsidian para leer la ayuda sin conexión, o contribuir correcciones y traducciones por pull request. Al no tener licencia declarada, reutilizar el texto fuera de la contribución no está claro.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [obsidian-importer](obsidian-importer.md) | Las guías de importación del Importer se alojan y se mantienen en este repo. | Consulta la guía del formato antes de importar. |
+| [obsidian-clipper](obsidian-clipper.md) | La documentación del Web Clipper vive en la ayuda oficial. | Lee la sección del Web Clipper antes de crear plantillas. |
+| [obsidian-skills](obsidian-skills.md) | Las skills enlazan a esta documentación como referencia de sintaxis. (combinación por arquitectura) | Abre el vault de ayuda en local si el agente necesita consultar la sintaxis. |
+| [jsoncanvas](jsoncanvas.md) | Especificación abierta del formato `.canvas` que usa Obsidian Canvas, documentado en la ayuda. | Consulta la especificación cuando necesites leer o generar lienzos fuera de Obsidian. |
+
+**Notas:** Sin alternativas declaradas. Sin licencia explícita.
+
+Estado en GitHub: activo · último push 2026-11-12 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/obsidian-help/blob/master/README.md) · [2](https://obsidian.md/help/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Contiene fuentes y traducciones de la ayuda, no el código fuente completo del producto |
 | Coste | Sin pago a un modelo en la ruta básica. La documentación se consulta sin API; aplicación y servicios opcionales tienen términos propios |
 | Equipo | Preparación según la ruta elegida. Navegador; Obsidian solo para practicar |
-
-Contiene fuentes y traducciones de la ayuda, no el código fuente completo del producto
-
-## Qué puedes hacer con él
-
-Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda.
-
-## Por qué destaca
-
-Usos propuestos: Aprender funciones básicas de Obsidian; Consultar cómo configurar una bóveda.
-
-## Cómo funciona
 
 Contiene fuentes y traducciones de la ayuda, no el código fuente completo del producto
 

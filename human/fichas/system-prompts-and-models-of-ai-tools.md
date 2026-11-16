@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección (GPL-3.0) de @x1xhlol con system prompts, definiciones de herramientas y modelos atribuidos a herramientas de IA comerciales como Cursor, Devin, v0, Lovable o Windsurf. Es muy popular (~145k estrellas). Se financia con patrocinios, donaciones en criptomonedas y Patreon, y promociona un servicio comercial de seguridad (ZeroLeaks).
+
+## ¿Qué hace?
+
+Permite estudiar cómo instruyen las empresas a sus agentes de programación y asistentes (estructura, reglas, uso de herramientas). Es útil como referencia para diseñar prompts de agentes y para entender riesgos de extracción de prompts. La autenticidad y vigencia de cada prompt no está verificada [DATO NO VERIFICADO]: muchos son extracciones que pueden estar desactualizadas.
+
+## ¿Cómo lo hace?
+
+Archivos de texto y JSON organizados por producto, sin código ni instalación. Redistribuir prompts propietarios de terceros puede tener implicaciones legales; la licencia GPL-3.0 del repositorio no garantiza derechos sobre ese contenido.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [chatgpt_system_prompt](chatgpt-system-prompt.md) | Corpus complementario centrado en GPTs personalizados. (combinación por arquitectura) | Consúltalos juntos para comparar. |
+| [promptfoo](promptfoo.md) | Evaluar la resistencia de tus propios prompts frente a extracción e inyección. (combinación por arquitectura) | Diseña pruebas de red teaming basadas en los patrones observados. |
+| [Claude Code](claude-code.md) | Comparar los prompts recopilados con las instrucciones de agentes que usas (CLAUDE.md, skills). (combinación por arquitectura) | Úsalo como referencia al redactar tus propias reglas. |
+| [ChatGPT_DAN](chatgpt-dan.md) | Combinación recíproca: ChatGPT_DAN lo enlaza como «Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura)». | Orden indicado desde ChatGPT_DAN: Úsalos juntos solo con fines de estudio y defensa. |
+
+**Notas:** Sin alternativas declaradas. Contenido de procedencia no verificada.
+
+Estado en GitHub: activo · último push 2026-10-12 · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Las atribuciones son del recopilador; listar Claude Code o Codex no equivale a un plugin compatible ni autentica su configuración interna |
 | Coste | Sin pago a un modelo en la ruta básica. Consultar el archivo no usa una API; no entrega acceso a ninguno de los productos mencionados |
 | Equipo | Preparación según la ruta elegida. Navegador; interés en diseño de instrucciones |
-
-Las atribuciones son del recopilador; listar Claude Code o Codex no equivale a un plugin compatible ni autentica su configuración interna
-
-## Qué puedes hacer con él
-
-Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar instrucciones de herramientas de código; Preparar una plantilla propia de sistema.
-
-## Cómo funciona
 
 Las atribuciones son del recopilador; listar Claude Code o Codex no equivale a un plugin compatible ni autentica su configuración interna
 

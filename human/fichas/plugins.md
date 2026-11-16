@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Repositorio oficial de Cursor con plugins para herramientas de desarrollo, frameworks y productos SaaS. Muy activo; GitHub no detecta licencia de repositorio.
+
+## ¿Qué hace?
+
+Contiene unos 130 plugins: propios de Cursor (teaching, continual-learning para actualizar AGENTS.md, cursor-team-kit, thermos para revisiones profundas de ramas, create-plugin, ralph-loop, agent-compatibility…) e integraciones de terceros como Ashby o Workable, organizados por categoría.
+
+## ¿Cómo lo hace?
+
+Cada plugin es un directorio con su manifiesto `.cursor-plugin/plugin.json` que aparece en el marketplace de Cursor.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [skills](skills.md) | Skills de ingeniería instalables también en Cursor (combinación por arquitectura). | `npx skills add mattpocock/skills -a cursor`. |
+| [Agent Skills (Addy Osmani)](agent-skills.md) | Skills de ingeniería con guía de instalación para Cursor. | Sigue la sección de Cursor. |
+| [wshobson/agents](wshobson-agents.md) | Catálogo de plugins con marketplace para Cursor. | Instala desde su marketplace. |
+
+**Notas:** Sin licencia declarada en la raíz; revisa la de cada plugin de terceros.
+
+Estado en GitHub: activo · último push 2026-11-15 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cursor/plugins/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El manifiesto es de Cursor. No se afirma que todo el plugin pueda copiarse directamente a Claude Code, Codex o Antigravity |
 | Coste | El coste depende del proveedor o la ruta. Consultar el repositorio es libre; Cursor y los servicios conectados tienen sus planes y tarifas |
 | Equipo | Preparación según la ruta elegida. Cursor;  revisar el plugin concreto y sus credenciales |
-
-El manifiesto es de Cursor. No se afirma que todo el plugin pueda copiarse directamente a Claude Code, Codex o Antigravity
-
-## Qué puedes hacer con él
-
-Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una integración de un servicio que ya utiliza tu equipo; Estudiar cómo empaquetar reglas y skills para Cursor.
-
-## Cómo funciona
 
 El manifiesto es de Cursor. No se afirma que todo el plugin pueda copiarse directamente a Claude Code, Codex o Antigravity
 

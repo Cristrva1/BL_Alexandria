@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+OSIRIS (Open Source Intelligence & Reconnaissance Integrated System), panel OSINT en tiempo real de @simplifaisoul. Licencia MIT. Es reciente (creado en mayo de 2026, ~12k estrellas, v5.0.0).
+
+## ¿Qué hace?
+
+Reúne en un globo 3D acelerado por GPU vuelos en directo, cámaras CCTV públicas, sismos, zonas de conflicto y noticias 24/7. Permite dibujar un área y exportar como GeoJSON las cámaras que contiene. Expone una API REST con SSE y un servidor MCP en `/api/mcp` para agentes como Hermes, Claude o Cursor.
+
+## ¿Cómo lo hace?
+
+Es una app Next.js 16 con MapLibre GL que se instala con npm, Docker Compose o la imagen `ghcr.io/simplifaisoul/osiris`. Las zonas de conflicto son una lista mantenida a mano, no una medición en vivo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Pythia](pythia.md) | PYTHIA añade predicciones con enjambres de agentes sobre Osiris. | Instala Osiris y aplica el overlay de PYTHIA. |
+| [hermes-agent](hermes-agent.md) | Agente citado como cliente del MCP de Osiris. | Configura `/api/mcp` en el agente. |
+| [Claude Code](claude-code.md) | Consultar el panel vía MCP. | Añade el endpoint MCP de tu instancia. |
+
+**Notas:** Alternativa (elige una): gods-eye-view. El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v5.0.0 (2026-09-28) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/simplifaisoul/osiris/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La etiqueta tiempo real no garantiza latencia ni precisión de todas las fuentes; el MCP expone acciones y debe configurarse aparte |
 | Coste | El coste depende del proveedor o la ruta. Parte del panel funciona sin claves; capas, proveedores y funciones AI pueden tener costes o límites; el equipo renderiza el globo |
 | Equipo | Preparación según la ruta elegida. Node y npm; conexión a fuentes públicas; claves opcionales para capas extra |
-
-La etiqueta tiempo real no garantiza latencia ni precisión de todas las fuentes; el MCP expone acciones y debe configurarse aparte
-
-## Qué puedes hacer con él
-
-Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.
-
-## Por qué destaca
-
-Usos propuestos: Explorar noticias por ubicación; Comparar eventos públicos en un globo.
-
-## Cómo funciona
 
 La etiqueta tiempo real no garantiza latencia ni precisión de todas las fuentes; el MCP expone acciones y debe configurarse aparte
 
@@ -96,6 +110,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y npm; conexión a fuentes públicas; claves opcionales para capas extra
 - **Etiquetas:** `osint` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gods-eye-view](gods-eye-view.md) | 64.9k | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
 
 ## Enlaces
 

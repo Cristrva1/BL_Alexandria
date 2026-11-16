@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+@react-three/rapier, wrapper del motor de física Rapier (WASM) para react-three-fiber, de pmndrs. Licencia MIT. Tiene ~1.7k estrellas (v2.2.0).
+
+## ¿Qué hace?
+
+Añade cuerpos rígidos, colisionadores, uniones y eventos de colisión a escenas R3F con una API pequeña y directa. La v2 soporta R3F v9 y React 19; con React 18 hay que usar la v1.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install @react-three/rapier` junto a `@react-three/fiber` y three.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [react-three-fiber](react-three-fiber.md) | Pipeline sobre el que se integra. | Instala R3F primero. |
+| [three.js](three-js.md) | Motor 3D subyacente. | Viene con R3F. |
+| [threejs-game-skills](threejs-game-skills.md) | Juegos 3D de navegador. (combinación por arquitectura) | Usa Rapier para la física. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-12 · última versión publicada @react-three/rapier@2.2.0 (2025-11-03) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pmndrs/react-three-rapier/blob/main/readme.md) · [2](https://rapier.rs/docs/user_guides/javascript)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; recursos y cómputo de la aplicación separados |
 | Equipo | Preparación según la ruta elegida. React y Fiber compatibles; escena 3D; Rapier |
-
-La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones
-
-## Qué puedes hacer con él
-
-Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales.
-
-## Por qué destaca
-
-Usos propuestos: Crear una escena física React; Prototipar interacción con objetos 3D.
-
-## Cómo funciona
 
 La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones
 

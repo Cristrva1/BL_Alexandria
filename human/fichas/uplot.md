@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+μPlot, librería compacta de gráficos de series temporales sobre Canvas 2D, de @leeoniya. Licencia MIT. Es madura (~11k estrellas, 1.6.32).
+
+## ¿Qué hace?
+
+Dibuja series temporales, líneas, áreas, OHLC y barras muy rápido y con poca memoria (~50 KB minificado), apto para cientos de miles de puntos y actualizaciones en streaming. Prioriza rendimiento sobre variedad de tipos y animaciones.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install uplot` o se carga desde `dist/`. Es JavaScript puro sin dependencias; los envoltorios para frameworks son de la comunidad.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Grafana](grafana.md) | Grafana usa uPlot en sus paneles de series temporales. (combinación por arquitectura) | Para paneles completos usa Grafana; para embeber, uPlot. |
+| [swr](swr.md) | Actualizar series en vivo con la recarga de datos de SWR. (combinación por arquitectura) | Obtén los datos con SWR y llama a `setData`. |
+| [DuckDB](duckdb.md) | Agregar series largas antes de pintarlas. (combinación por arquitectura) | Agrupa por intervalo en DuckDB. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.6.32 (2025-03-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/leeoniya/uPlot/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelo ni servicios por defecto; los datos y el alojamiento son aparte |
 | Equipo | Preparación según la ruta elegida. JavaScript; datos temporales ordenados; estilos y build distribuidos |
-
-Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización
-
-## Qué puedes hacer con él
-
-Permite visualizar series temporales, líneas, áreas y otros formatos en una página. Su rendimiento depende del volumen, configuración, navegador y equipo; conviene medirlo con una muestra representativa.
-
-## Por qué destaca
-
-Usos propuestos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos.
-
-## Cómo funciona
 
 Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** JavaScript; datos temporales ordenados; estilos y build distribuidos
 - **Etiquetas:** `dataviz` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [swr](swr.md) | 32.5k | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. |
 
 ## Enlaces
 
