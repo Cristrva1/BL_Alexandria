@@ -66,6 +66,7 @@ def test_cli_writes_report_and_leaves_retired_untouched(project, monkeypatch):
     assert result.exit_code == 0, result.output
     md = (project / "reports/candidatos-retiro-2026-11-16.md").read_text(encoding="utf8")
     js = json.loads((project / "reports/candidatos-retiro-2026-11-16.json").read_text(encoding="utf8"))
+    assert "pendiente de revisión" in md
     assert "## Candidatos (2)" in md and "`viejo`" in md and "Evidencia por repo" in md and "alternativa" in md.lower()
     assert len(js["candidatos"]) == 2 and js["nota"].startswith("Propuesta")
     assert (project / "data/retired.json").read_bytes() == before
@@ -76,6 +77,18 @@ def test_published_report_matches_current_data():
     assert reports, "falta el informe de candidatos a retiro"
     data = json.loads(reports[-1].read_text(encoding="utf8"))
     retired = {r.get("id") for r in json.loads((ROOT / "data/retired.json").read_text(encoding="utf8"))["repos"]}
-    assert not retired & {e["id"] for e in data["candidatos"]}
     for e in data["candidatos"]:
+        assert (e["id"] in retired) == (e.get("estado") == "retirado"), e["id"]
         assert e["puntuacion"] < data["umbral"] and (e["commits_365d"] == 0 or e["archivado"]) and e["grupo"]["papel"] != "recomendado"
+
+
+def test_retired_candidate_keeps_its_row_with_state(project):
+    retirement.write_report(project, retirement.evaluate(project, today="2026-11-16"))
+    ledger = json.loads((project / "data/retired.json").read_text(encoding="utf8"))
+    ledger["repos"].append({"id": "viejo", "retired_at": "2026-11-16", "reason": "inactivo"})
+    (project / "data/retired.json").write_text(json.dumps(ledger), encoding="utf8")
+    data = retirement.evaluate(project, today="2026-11-16")
+    state = {e["id"]: e["estado"] for e in data["candidatos"]}
+    assert state == {"viejo": "retirado", "archivado": "pendiente de revisión"}
+    assert "Retirados tras la revisión: viejo" in data["nota"]
+    assert "retirado el 2026-11-16 (inactivo)" in retirement.render_md(data)

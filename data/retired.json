@@ -1067,6 +1067,21 @@
         "qdrant",
         "open-webui"
       ]
+    },
+    {
+      "id": "prompt-eng-tutorial",
+      "gh": "anthropics/prompt-eng-interactive-tutorial",
+      "github_id": 781022269,
+      "name": "Anthropic's Prompt Engineering Tutorial",
+      "cat": 19,
+      "retired_at": "2026-11-16",
+      "reason": "inactivo",
+      "evidence": "Candidato único del informe reports/candidatos-retiro-2026-11-16.md, aprobado por el propietario: puntuación de calidad 38,4/100 (< 45), último commit en la rama principal el 2024-04-08 (sin commits en 365 días) y sin caso de uso único en el grupo «Guías de ingeniería de prompts». La alternativa prompt-engineering-guide puntúa 62.",
+      "last_commit": "2024-04-08",
+      "archived": false,
+      "replaced_by": [
+        "prompt-engineering-guide"
+      ]
     }
   ]
 }

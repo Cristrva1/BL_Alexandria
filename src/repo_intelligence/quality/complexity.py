@@ -109,8 +109,10 @@ def apply_all(root: Path) -> Counter:
         if d is None:
             continue
         res = resolve(r["id"], r, d, overrides)
+        r.pop("complejidad", None)  # siempre al final: orden estable tras `score`/`grupos`
         r["complejidad"] = res["nivel"]
         d.pop("complejidad", None)
+        d.pop("complejidad_detalle", None)
         d["complejidad_detalle"] = res
         dist[res["nivel"]] += 1
     cpath.write_text(json.dumps(compact, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

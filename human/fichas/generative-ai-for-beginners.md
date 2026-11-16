@@ -47,7 +47,7 @@ Grupo **Cursos de Microsoft para principiantes**: Generative AI for Beginners oc
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Generative AI for Beginners** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. |
-| 2 | [AI Agents for Beginners](ai-agents-for-beginners.md) | 66 | Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
+| 2 | [AI Agents for Beginners](ai-agents-for-beginners.md) | 65 | Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
 
 ## Acceso, coste y equipo
 

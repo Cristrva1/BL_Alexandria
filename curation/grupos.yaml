@@ -1014,11 +1014,6 @@ grupos:
   miembros:
   - ppt-master
   - presenton
-- id: g-guias-de-ingenieria-de-prompts
-  titulo: Guías de ingeniería de prompts
-  miembros:
-  - prompt-eng-tutorial
-  - prompt-engineering-guide
 - id: g-de-diseno-o-captura-a-codigo
   titulo: De diseño o captura a código
   miembros:

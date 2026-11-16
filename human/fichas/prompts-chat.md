@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,7 +46,7 @@ Grupo **Colecciones de prompts**: prompts.chat ocupa la posición 1 de 2 (recome
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **prompts.chat** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. |
+| 1 | **prompts.chat** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. |
 | 2 | [Fabric](fabric.md) | 63 | Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. |
 
 ## Acceso, coste y equipo

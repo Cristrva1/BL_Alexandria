@@ -4,7 +4,7 @@
 
 Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos.
 
-31 repos · 3 secciones
+30 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Prompts y prompt engineering](#prompts-y-prompt-engineering) — 8 repos
+- [Prompts y prompt engineering](#prompts-y-prompt-engineering) — 7 repos
 - [Guías, cursos y cookbooks](#guías-cursos-y-cookbooks) — 14 repos
 - [Aprender LLMs desde cero](#aprender-llms-desde-cero) — 9 repos
 
@@ -32,7 +32,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Fabric](../fichas/fabric.md) | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. | Tu objetivo encaja con estos ejemplos: Extraer acciones de una reunión; Convertir notas en un esquema de artículo | API de IA opcional |
 | [prompts.chat](../fichas/prompts-chat.md) | La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. | Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts | Sin clave propia de API de IA en la ruta básica |
 | [system-prompts-and-models-of-ai-tools](../fichas/system-prompts-and-models-of-ai-tools.md) | Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. | Tu objetivo encaja con estos ejemplos: Estudiar instrucciones de herramientas de código; Preparar una plantilla propia de sistema | Sin clave propia de API de IA en la ruta básica |
-| [Anthropic's Prompt Engineering Tutorial](../fichas/prompt-eng-tutorial.md) | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. | Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes | API de IA opcional |
 | [prompt-master](../fichas/prompt-master.md) | Skill de Claude que ayuda a formular encargos para distintas herramientas de IA; no garantiza ahorro de tokens. | Tu objetivo encaja con estos ejemplos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos | Sin clave propia de API de IA en la ruta básica |
 | [ChatGPT_DAN](../fichas/chatgpt-dan.md) | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT. | Tu objetivo encaja con estos ejemplos: Estudiar la historia de prompts de roleplay; Reconocer intentos de manipulación de instrucciones | Sin clave propia de API de IA en la ruta básica |
 | [chatgpt_system_prompt](../fichas/chatgpt-system-prompt.md) | Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts. | Tu objetivo encaja con estos ejemplos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio | Sin clave propia de API de IA en la ruta básica |
