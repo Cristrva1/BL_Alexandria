@@ -70,7 +70,7 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 ### Datos, usuarios e integraciones
 
 - [Supabase](#supabase)
-- [n8n: flujos e integraciones](#n8n-servicio)
+- [Activepieces: flujos e integraciones](#activepieces-servicio)
 - [Neon](#neon)
 - [Redis](#redis)
 
@@ -309,7 +309,7 @@ Organiza trabajo con agentes en las superficies App, CLI o IDE de Google Antigra
 
 - No intercambies configuraciones entre App, CLI e IDE sin comprobar que la documentación las comparte.
 
-Fichas del catálogo: [antigravity-awesome-skills](fichas/antigravity-awesome-skills.md)
+Fichas del catálogo: [antigravity-cli](fichas/antigravity-cli.md) · [antigravity-awesome-skills](fichas/antigravity-awesome-skills.md)
 
 ### Fuentes
 
@@ -361,6 +361,8 @@ npx @deepseek-ai/dsh web
 Descarga o ejecuta el paquete e inicia un servidor local. Revisa versión y origen antes de ejecutarlo.
 
 [Fuente del comando](https://github.com/deepseek-ai/deepseek-harness)
+
+Fichas del catálogo: [deepseek-harness](fichas/deepseek-harness.md)
 
 ### Fuentes
 
@@ -1648,8 +1650,6 @@ Conecta DeepSeek Harness con emuladores o Android por USB mediante ADB.
 
 - Que se registren herramientas no demuestra que ADB o el dispositivo estén listos.
 
-Fichas del catálogo: [dsh-android](fichas/dsh-android.md)
-
 ### Fuentes
 
 - [Documentación oficial del proyecto o servicio](https://github.com/ZSeven-W/dsh-android) · 2026-11-15
@@ -1688,8 +1688,6 @@ Permite trabajar con simulador de iOS y rutas documentadas para iPhone conectado
 ### Límites
 
 - No se presenta como una instalación desde Windows ni como control libre de cualquier iPhone.
-
-Fichas del catálogo: [dsh-ios](fichas/dsh-ios.md)
 
 ### Fuentes
 
@@ -2067,7 +2065,7 @@ Un ordenador virtual remoto donde administras sistema, aplicaciones y datos.
 
 ### Límites
 
-- Una VPS barata puede ser insuficiente para un modelo grande; alojar n8n y servir un LLM tienen requisitos distintos.
+- Una VPS barata puede ser insuficiente para un modelo grande; alojar un motor de flujos y servir un LLM tienen requisitos distintos.
 
 ### Fuentes
 
@@ -2409,17 +2407,17 @@ Una interfaz para administrar despliegues en servidores que siguen necesitando o
 
 - [Documentación oficial del proyecto o servicio](https://coolify.io/docs/) · 2026-11-15
 
-<a id="n8n-servicio"></a>
+<a id="activepieces-servicio"></a>
 
-## n8n: flujos e integraciones
+## Activepieces: flujos e integraciones
 
 **Tipo:** Automatización entre servicios
 
-Conecta eventos y aplicaciones con flujos visuales; puede incorporar IA como una etapa.
+Conecta eventos y aplicaciones con flujos visuales y piezas listas; puede incorporar IA como una etapa.
 
 ### Antes de empezar
 
-- Cuenta cloud o instalación propia
+- Cuenta cloud o instalación propia con Docker
 - Credenciales de un servicio de prueba
 
 ### Primera prueba
@@ -2444,11 +2442,11 @@ Conecta eventos y aplicaciones con flujos visuales; puede incorporar IA como una
 
 - Un flujo que envía mensajes o crea registros puede duplicarlos si se repite sin control.
 
-Fichas del catálogo: [n8n](fichas/n8n.md) · [n8n-mcp](fichas/n8n-mcp.md) · [n8n-skills](fichas/n8n-skills.md)
+Fichas del catálogo: [activepieces](fichas/activepieces.md)
 
 ### Fuentes
 
-- [Documentación oficial del proyecto o servicio](https://docs.n8n.io/) · 2026-11-15
+- [Documentación oficial del proyecto o servicio](https://www.activepieces.com/docs) · 2026-11-16
 
 <a id="uptime-kuma"></a>
 

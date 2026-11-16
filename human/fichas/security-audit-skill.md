@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de auditoría de seguridad para agentes de programación, de Cloudflare. Licencia MIT. Es muy popular (~73k estrellas, sin releases) y fue el germen del arnés de descubrimiento de vulnerabilidades que Cloudflare describe en su blog.
+
+## ¿Qué hace?
+
+Convierte al agente en auditor: orquesta agentes aislados en reconocimiento, búsqueda guiada por cobertura, validación de candidatos, salida estructurada y verificación independiente de cada hallazgo. Exige que la severidad dependa del impacto (probabilidad × impacto) y no de desviarse de una checklist. Los reemplazos importantes pasan por otro verificador independiente.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add https://github.com/cloudflare/security-audit-skill` eligiendo el agente. Requiere un agente con un modelo que soporte herramientas y subagentes en paralelo. Una auditoría completa consume muchos tokens.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible con skills y subagentes en paralelo. | Instala la skill con `npx skills add` para Claude Code. |
+| [Codex CLI](codex.md) | Agente compatible mediante el instalador `skills`. | Instala la skill seleccionando Codex. |
+| [Semgrep](semgrep.md) | Partir de hallazgos estáticos para orientar la búsqueda. (combinación por arquitectura) | Ejecuta Semgrep y entrega el informe al agente. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.
+
+Estado en GitHub: activo · último push 2026-09-14 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cloudflare/security-audit-skill/blob/main/README.md) · [2](https://blog.cloudflare.com/build-your-own-vulnerability-harness)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El formato Agent Skills es portable; el workflow completo requiere las capacidades de herramientas y subagentes indicadas por el autor |
 | Coste | Consumo del agente que ya utilizas. La skill usa el agente y puede multiplicar llamadas al delegar; herramientas y servicios externos tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Agente con herramientas y subagentes paralelos; proyecto propio de prueba |
-
-El formato Agent Skills es portable; el workflow completo requiere las capacidades de herramientas y subagentes indicadas por el autor
-
-## Qué puedes hacer con él
-
-Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una revisión de código autorizada; Evaluar la calidad de hallazgos generados por un agente.
-
-## Cómo funciona
 
 El formato Agent Skills es portable; el workflow completo requiere las capacidades de herramientas y subagentes indicadas por el autor
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente con herramientas y subagentes paralelos; proyecto propio de prueba
 - **Etiquetas:** `metodologia` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Enlaces
 

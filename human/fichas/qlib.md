@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Qlib, plataforma de investigación cuantitativa orientada a IA de Microsoft. Licencia MIT. Es madura (~50k estrellas, v0.9.8).
+
+## ¿Qué hace?
+
+Cubre todo el flujo cuantitativo: datos, factores, modelos (desde GBDT hasta redes profundas y RL), backtesting y análisis, con un gestor de experimentos. Se complementa con RD-Agent, de Microsoft, para minar factores y optimizar modelos con LLM. La rama principal introduce un cambio incompatible que restringe la carga de artefactos guardados.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install pyqlib` o desde el código (requiere NumPy y Cython), y también con Docker. El gestor de experimentos usa MLflow. En Mac M1 puede requerir OpenMP para LightGBM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MLflow](mlflow.md) | El recorder de Qlib se basa en MLflow. | Configura el URI de MLflow para los experimentos. |
+| [FinRL](finrl.md) | Comparar enfoques de aprendizaje por refuerzo. (combinación por arquitectura) | Usa ambos sobre los mismos datos. |
+| [marimo](marimo.md) | Analizar resultados en notebooks. (combinación por arquitectura) | Carga los informes de Qlib en marimo. |
+| [FinceptTerminal](finceptterminal.md) | Combinación recíproca: FinceptTerminal lo enlaza como «Investigación cuantitativa más profunda fuera del terminal. (combinación por arquitectura)». | Orden indicado desde FinceptTerminal: Exporta datos y modela con Qlib. |
+| [machine-learning-for-trading](machine-learning-for-trading.md) | Combinación recíproca: machine-learning-for-trading lo enlaza como «Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura)». | Orden indicado desde machine-learning-for-trading: Reproduce un caso de estudio en Qlib. |
+
+**Notas:** Sin alternativas declaradas. Revisa la guía de migración de artefactos antes de actualizar desde el código.
+
+Estado en GitHub: activo · último push 2026-11-04 · última versión publicada v0.9.8 (2026-10-08) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/qlib/blob/main/README.md) · [2](https://qlib.readthedocs.io/en/latest/component/recorder.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Los baselines no comparten siempre versiones de Python; los cambios recientes del recorder requieren revisar la migración |
 | Coste | El coste depende del proveedor o la ruta. El núcleo ML no exige LLM; datos licenciados, cómputo y automatización externa pueden costar |
 | Equipo | Preparación según la ruta elegida. Python compatible con baseline; datos históricos; dependencias del modelo |
-
-Los baselines no comparten siempre versiones de Python; los cambios recientes del recorder requieren revisar la migración
-
-## Qué puedes hacer con él
-
-Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias.
-
-## Por qué destaca
-
-Usos propuestos: Comparar modelos sobre datos temporales; Investigar un pipeline cuantitativo reproducible.
-
-## Cómo funciona
 
 Los baselines no comparten siempre versiones de Python; los cambios recientes del recorder requieren revisar la migración
 

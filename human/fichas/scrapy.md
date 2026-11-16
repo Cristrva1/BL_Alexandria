@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de crawling y scraping rápido y de alto nivel para Python, mantenido por Zyte. Licencia BSD-3-Clause. Es el estándar veterano del sector (~65k estrellas, 2.20.0).
+
+## ¿Qué hace?
+
+Recorre sitios y extrae datos estructurados con spiders, selectores CSS y XPath, pipelines de procesamiento, middlewares, control de concurrencia y exportación a JSON, CSV u otros formatos. Sirve para minería de datos, monitorización y pruebas automatizadas. Tiene un ecosistema amplio de plugins.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ y se instala con `pip install scrapy`; se crea un proyecto con `scrapy startproject`. Está basado en Twisted (asíncrono). Para páginas con JavaScript se usa el plugin oficial scrapy-playwright.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Renderizar páginas con JavaScript desde spiders con el plugin oficial scrapy-playwright. | Instala `scrapy-playwright` y los navegadores de Playwright, y activa su handler de descargas. |
+| [Scrapling](scrapling.md) | Parser adaptativo para selectores frágiles. (combinación por arquitectura) | Usa Scrapling en los callbacks de tus spiders. |
+| [defuddle](defuddle.md) | Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura) | Procesa el HTML guardado con Defuddle. |
+| [awesome-web-scraping](awesome-web-scraping.md) | Combinación recíproca: awesome-web-scraping lo enlaza como «Framework de referencia en la sección de Python. (combinación por arquitectura)». | Orden indicado desde awesome-web-scraping: Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico. |
+| [FlareSolverr](flaresolverr.md) | Combinación recíproca: FlareSolverr lo enlaza como «Un spider de Scrapy puede pedir a FlareSolverr la página o las cookies de un sitio autorizado y continuar con peticiones normales (combinación por arquitectura)». | Orden indicado desde FlareSolverr: Despliega FlareSolverr; después llama a su API desde el spider o un middleware. |
+
+**Notas:** Sin alternativas declaradas. Se quita la combinación con crawlee-python por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 2.20.0 (2026-11-06) · licencia declarada BSD-3-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/scrapy/scrapy/blob/master/README.rst) · [2](https://docs.scrapy.org/en/latest/) · [3](https://github.com/scrapy-plugins/scrapy-playwright)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un framework de desarrollo, no una app de conversación ni una garantía de acceso a cualquier web |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelos; servidor, proxies y almacenamiento pueden generar gasto |
 | Equipo | Preparación según la ruta elegida. Python 3.11+; entorno virtual; conocimientos básicos de selectores |
-
-Es un framework de desarrollo, no una app de conversación ni una garantía de acceso a cualquier web
-
-## Qué puedes hacer con él
-
-Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala.
-
-## Por qué destaca
-
-Usos propuestos: Recopilar listados públicos permitidos; Programar extracción repetible con pipelines.
-
-## Cómo funciona
 
 Es un framework de desarrollo, no una app de conversación ni una garantía de acceso a cualquier web
 
@@ -92,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.11+; entorno virtual; conocimientos básicos de selectores
 - **Etiquetas:** `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [crawlee-python](crawlee-python.md) | 9.7k | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. |
 
 ## Enlaces
 

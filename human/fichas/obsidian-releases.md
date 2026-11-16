@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Repositorio de Obsidian para las releases públicas de la app y los directorios de plugins y temas de la comunidad. No tiene archivo de licencia y no contiene el código de Obsidian, que no es open source. Es muy activo (~23k estrellas, v1.15.1).
+
+## ¿Qué hace?
+
+Aloja los instaladores de Obsidian y los archivos JSON de los directorios de plugins y temas de la comunidad que la app consulta. Es donde los desarrolladores envían por pull request sus plugins y temas para que aparezcan en Obsidian. No acepta issues: los problemas de plugins van a sus repos y los de Obsidian, al foro.
+
+## ¿Cómo lo hace?
+
+Los usuarios no lo instalan: la app lee estos directorios. Para publicar un plugin o tema se sigue la guía oficial de envío y las políticas para desarrolladores; `manifest.json` y `versions.json` controlan la compatibilidad con versiones de la app.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [obsidian-sample-plugin](obsidian-sample-plugin.md) | Plantilla oficial para crear un plugin que luego se envía a este directorio. | Crea el plugin desde la plantilla, publica una release y abre el PR aquí. |
+| [obsidian-minimal](obsidian-minimal.md) | Ejemplo de tema distribuido mediante este directorio. | Instálalo desde el navegador de temas. |
+| [obsidian-importer](obsidian-importer.md) | Ejemplo de plugin oficial distribuido mediante este directorio. | Instálalo desde el navegador de plugins. |
+
+**Notas:** Sin alternativas declaradas. Obsidian no es open source; este repo es solo distribución.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.15.1 (2026-11-12) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/obsidian-releases/blob/master/README.md) · [2](https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin) · [3](https://docs.obsidian.md/Developer+policies)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Este repositorio distribuye releases y catálogos; no contiene el código completo de Obsidian ni todos los plugins listados |
 | Coste | El coste depende del proveedor o la ruta. La lista no usa IA; Obsidian y complementos o servicios pueden tener planes propios |
 | Equipo | Preparación según la ruta elegida. Navegador; instalador Obsidian compatible |
-
-Este repositorio distribuye releases y catálogos; no contiene el código completo de Obsidian ni todos los plugins listados
-
-## Qué puedes hacer con él
-
-Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una distribución oficial; Estudiar el catálogo de temas y plugins.
-
-## Cómo funciona
 
 Este repositorio distribuye releases y catálogos; no contiene el código completo de Obsidian ni todos los plugins listados
 

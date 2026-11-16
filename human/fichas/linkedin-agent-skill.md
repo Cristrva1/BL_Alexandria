@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Once skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de LinkedIn, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.
+
+## ¿Qué hace?
+
+Escriben publicaciones con 21 fórmulas de gancho, comentan publicaciones ajenas, responden comentarios, puntúan el perfil sobre 100 y planifican la semana (qué publicar, cuándo y con quién interactuar). Incluyen un humanizador con panel de cinco comprobaciones. No publican nada sin tu aprobación.
+
+## ¿Cómo lo hace?
+
+Igual que su skill hermana de Instagram: se copian `skills/li-*` a `~/.claude/skills/` o se instala como plugin; se recomienda completar `templates/voice.md`. Fuera de Claude Code se pierden las dos herramientas Python del humanizador.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin y skills nativas. | Instala el plugin y dedica unos minutos a la plantilla de voz. |
+| [postiz-app](postiz-app.md) | Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura). | Aprueba antes de programar. |
+| [Marketing Skills](marketingskills.md) | Estrategia y mensajes de marketing como base de los textos (combinación por arquitectura). | Independientes. |
+
+**Notas:** Automatizar comentarios en LinkedIn puede chocar con sus condiciones de uso; publica manualmente.
+
+Estado en GitHub: activo · último push 2026-09-17 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Jakeschincariol/linkedin-agent-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La instalación documentada es para Claude y las instrucciones pueden pegarse en otros modelos; no publica ni garantiza alcance |
 | Coste | Consumo del agente que ya utilizas. No requiere API key o conectar LinkedIn en su ruta básica; usa el modelo del anfitrión |
 | Equipo | Preparación según la ruta elegida. Claude o Claude Code; experiencia propia y tema |
-
-La instalación documentada es para Claude y las instrucciones pueden pegarse en otros modelos; no publica ni garantiza alcance
-
-## Qué puedes hacer con él
-
-Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.
-
-## Por qué destaca
-
-Usos propuestos: Planificar una semana de contenido; Revisar un perfil profesional.
-
-## Cómo funciona
 
 La instalación documentada es para Claude y las instrucciones pueden pegarse en otros modelos; no publica ni garantiza alcance
 

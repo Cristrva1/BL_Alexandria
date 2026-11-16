@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plantilla (MIT) de @JCodesMore para que un agente de programación estudie una web de referencia y la recree como app Next.js. Es activa (v0.6.1) y popular (~39k estrellas). El README incluye un patrocinio de un servicio de proxies residenciales.
+
+## ¿Qué hace?
+
+Da al agente instrucciones, skills y estructura para inspeccionar una URL con un navegador (layout, responsive, medios, animaciones; tiene guía específica para Framer) y reconstruirla con shadcn/ui y Tailwind CSS v4. Casos previstos: migrar un sitio propio desde WordPress, Webflow o Squarespace, recuperar código perdido o aprender. El README prohíbe phishing, suplantación, apropiarse de diseños ajenos o violar términos de servicio.
+
+## ¿Cómo lo hace?
+
+Se clona como proyecto independiente y se abre en el agente con acceso a navegador. Funciona mejor con Claude Code según el README, y también con Codex, Cursor y OpenCode. El resultado es una app Next.js con primitivas Base UI y shadcn/ui. Hay que verificar derechos sobre el sitio de origen antes de usarlo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente recomendado por el README para ejecutar la plantilla. | Instala Claude Code con acceso a navegador y abre la plantilla. |
+| [ui](ui.md) | Stack de componentes de la app generada (shadcn/ui con Base UI). | Viene configurado en la plantilla. |
+| [playwright](playwright.md) | Navegador automatizado para que el agente inspeccione la web de referencia. (combinación por arquitectura) (el README pide 'browser access' sin fijar herramienta) | Configura un MCP de navegador en el agente. |
+
+**Notas:** Sin alternativas declaradas. Úsala solo con sitios propios o con permiso.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v0.6.1 (2026-10-05) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity |
 | Coste | Consumo del agente que ya utilizas. Usa el agente de código y sus límites; publicar, dominios y servicios del proyecto cuestan aparte |
 | Equipo | Preparación según la ruta elegida. Node; agente con acceso de navegador; web propia o referencia autorizada |
-
-La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity
-
-## Qué puedes hacer con él
-
-Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia.
-
-## Cómo funciona
 
 La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity
 

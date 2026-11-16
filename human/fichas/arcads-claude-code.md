@@ -10,6 +10,33 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Paquete de skills (MIT) de «Mr. Paid Social» para crear videos e imágenes publicitarios con la cuenta de Arcads desde Claude Code o Cursor. El README usa enlaces de afiliado y promociona una comunidad de pago.
+
+## ¿Qué hace?
+
+Automatiza flujos creativos de Arcads: generación de imágenes y videos, anuncios estilo Pixar o plastilina con storyboard, guías de anuncios con canción y subtítulos incrustados en cualquier video. Pensado para equipos de compra de medios que producen muchas variantes.
+
+## ¿Cómo lo hace?
+
+Scripts Python 3.10+ (los generadores de imagen solo usan la biblioteca estándar) que llaman a la API de Arcads con tu clave. Los flujos avanzados requieren ffmpeg (unión y chroma key), jq, Node.js con `npx hyperframes` (subtítulos) y el paquete `openai-whisper` para transcripción.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Necesario para unir clips y superponer elementos. | Instálalo antes de los flujos de video. |
+| [HyperFrames](hyperframes.md) | Usado para incrustar subtítulos. | Requiere Node.js; se ejecuta con npx bajo demanda. |
+| [whisper](whisper.md) | Transcribe el audio para los subtítulos. | `pip install openai-whisper`; el modelo medium necesita bastante memoria. |
+| [Claude Code](claude-code.md) | Agente que ejecuta las skills. | Configura la clave de API de Arcads como variable de entorno, no en el chat. |
+
+**Notas:** Requiere cuenta de pago de Arcads; cada generación consume créditos.
+
+Estado en GitHub: activo · último push 2026-10-19 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. El repositorio es gratuito pero no incluye generaciones ni acceso gratuito a todos los modelos; empieza por crear sin publicar |
 | Coste | Consumo de APIs o servicios. La generación usa la API de Arcads y el agente por separado; publicar en Meta añade credenciales y condiciones |
 | Equipo | Preparación según la ruta elegida. Claude Code o Cursor; cuenta y acceso API Arcads; presupuesto de generación |
-
-El repositorio es gratuito pero no incluye generaciones ni acceso gratuito a todos los modelos; empieza por crear sin publicar
-
-## Qué puedes hacer con él
-
-Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling).
-
-## Por qué destaca
-
-Usos propuestos: Prototipar un anuncio vertical; Preparar variantes de una imagen de producto.
-
-## Cómo funciona
 
 El repositorio es gratuito pero no incluye generaciones ni acceso gratuito a todos los modelos; empieza por crear sin publicar
 
@@ -94,15 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code o Cursor; cuenta y acceso API Arcads; presupuesto de generación
 - **Etiquetas:** `video` `image` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [HyperFrames](hyperframes.md) | 84.4k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. |
-| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
-| [Marketing Skills](marketingskills.md) | 60.4k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
 
 ## Enlaces
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Opik, plataforma open source de Comet para observabilidad, evaluación y trazado de agentes de IA. Licencia Apache-2.0 en toda la plataforma (servidor incluido). Es muy activa (~23k estrellas, 2.2.143).
+
+## ¿Qué hace?
+
+Traza llamadas a LLM, conversaciones y agentes con árboles de pasos y herramientas. Evalúa con datasets, experimentos y métricas de LLM como juez (alucinación, moderación, RAG). Incluye optimizador de prompts y agentes, monitorización en producción y guardrails.
+
+## ¿Cómo lo hace?
+
+Se usa en Comet Cloud o se autoaloja (Docker Compose o Kubernetes); el cliente se instala con `pip install opik`. Tiene servidor MCP (`uvx opik mcp configure`) e integraciones con decenas de frameworks.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Integración nativa para trazar grafos de LangGraph. | Envuelve el grafo con el tracer de Opik. |
+| [litellm](litellm.md) | Integración nativa con LiteLLM. | Activa el callback de Opik en LiteLLM. |
+| [Ragas](ragas.md) | Integración documentada para registrar métricas de Ragas. | Calcula métricas con Ragas y regístralas en Opik. |
+| [DSPy](dspy.md) | Integración documentada con DSPy. | Activa el callback de Opik en DSPy. |
+
+**Notas:** Alternativas (elige una): langfuse, phoenix.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2.2.143 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/comet-ml/opik/blob/main/README.md) · [2](https://www.comet.com/docs/opik/integrations/langgraph) · [3](https://www.comet.com/docs/opik/integrations/litellm) · [4](https://www.comet.com/docs/opik/integrations/ragas) · [5](https://www.comet.com/docs/opik/integrations/dspy)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Documenta configuración MCP para Claude Code, Codex y otros clientes; puede registrar Ollama, pero no sirve el modelo por sí mismo |
 | Coste | El coste depende del proveedor o la ruta. Plataforma Apache autoalojable o Cloud; los modelos evaluadores y la infraestructura tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Python; Cloud o instancia propia; app y datos de prueba; uv para MCP |
-
-Documenta configuración MCP para Claude Code, Codex y otros clientes; puede registrar Ollama, pero no sirve el modelo por sí mismo
-
-## Qué puedes hacer con él
-
-Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes.
-
-## Por qué destaca
-
-Usos propuestos: Depurar una cadena RAG; Revisar fallos con un agente de código.
-
-## Cómo funciona
 
 Documenta configuración MCP para Claude Code, Codex y otros clientes; puede registrar Ollama, pero no sirve el modelo por sí mismo
 
@@ -95,12 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Cloud o instancia propia; app y datos de prueba; uv para MCP
 - **Etiquetas:** `observability` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Framework CSS utility-first (MIT) de Tailwind Labs. Es el estándar de facto en muchos stacks modernos de frontend, muy maduro y activo (v4.3.5).
+
+## ¿Qué hace?
+
+Proporciona clases utilitarias (espaciado, color, tipografía, layout y otras) para construir interfaces directamente en el marcado. Genera solo el CSS que se usa. La v4 configura el tema con CSS (`@theme`), incluye Preflight (un reset basado en modern-normalize) y admite variantes, modo oscuro y plugins.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin de Vite (`npm install tailwindcss @tailwindcss/vite`), mediante PostCSS o con la CLI, y se importa con `@import "tailwindcss"`. Funciona con cualquier framework. La migración de v3 a v4 cambia la configuración, que pasa de `tailwind.config.js` a CSS, así que conviene usar la herramienta de actualización oficial.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | shadcn/ui escribe todos sus componentes con Tailwind. | Configura Tailwind primero y luego inicializa shadcn/ui. |
+| [daisyUI](daisyui.md) | Plugin de componentes semánticos para Tailwind. | Añade `@plugin "daisyui"` tras configurar Tailwind. |
+| [heroui](heroui.md) | Biblioteca de componentes que requiere Tailwind v4. | Configura Tailwind v4 antes de instalar HeroUI. |
+| [magicui](magicui.md) | Componentes animados escritos con Tailwind (vía shadcn). | Tailwind y shadcn primero; luego Magic UI. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (18). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Biome](biome.md) · [Chart.js](chart-js.md) · [design.md](design-md.md) · [Figma Context MCP](figma-context-mcp.md) · [flexoki](flexoki.md) · [konva](konva.md) · [Lucide](lucide.md) · [Onlook](onlook.md) · [penpot](penpot.md) · [plasmic](plasmic.md) · [Radix Primitives](radix-primitives.md) · [React Bits](react-bits.md) · [Recharts](recharts.md) · [screenshot-to-code](screenshot-to-code.md) · [Storybook](storybook.md) · [TanStack Query](tanstack-query.md) · [UI SDK (Vercel)](ui-sdk.md) · [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md)
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v4.3.5 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tailwindlabs/tailwindcss/blob/main/README.md) · [2](https://tailwindcss.com/docs/installation/using-vite) · [3](https://tailwindcss.com/docs/preflight)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | La función básica no necesita un modelo. Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3 |
 | Coste | Sin pago a un modelo en la ruta básica. El framework no usa modelos ni API; productos de pago del ecosistema tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Proyecto Vite u otra integración elegida; Node |
-
-Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3
-
-## Qué puedes hacer con él
-
-Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar un formulario responsive; Definir colores y espaciado consistentes.
-
-## Cómo funciona
 
 Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3
 
@@ -84,13 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto Vite u otra integración elegida; Node
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
-| [magicui](magicui.md) | 23.3k | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
 
 ## Enlaces
 

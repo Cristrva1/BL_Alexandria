@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Local Deep Research, asistente de investigación agéntica que puede ejecutarse totalmente en local, de LearningCircuit. Licencia MIT. Tiene ~9.6k estrellas (v2.0.1); según su propio README, alcanza ~95% en SimpleQA con Qwen3.6-27B en una RTX 3090 (benchmark del autor).
+
+## ¿Qué hace?
+
+Hace investigación profunda con múltiples LLM y buscadores, con citas, y construye una base de conocimiento consultable. La base de datos está cifrada con SQLCipher.
+
+## ¿Cómo lo hace?
+
+Se despliega con Docker o Docker Compose junto a Ollama (por ejemplo, `gpt-oss:20b`) y SearXNG. En Docker Desktop (Mac/Windows/WSL2), `--network host` no funciona y hay que usar Compose.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local recomendado en el quickstart. | Arranca Ollama y descarga un modelo. |
+| [SearXNG](searxng.md) | Buscador recomendado en el quickstart. | Arranca SearXNG y fija su URL. |
+| [llama.cpp](llama-cpp.md) | Servidor local alternativo compatible con OpenAI. (combinación por arquitectura) | Expón llama-server y configúralo. |
+
+**Notas:** Alternativa (elige una): gpt-researcher.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.0.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LearningCircuit/local-deep-research/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El MCP documentado usa stdio para uso local y carece de autenticación y límite de peticiones; el benchmark del autor no garantiza exactitud en cualquier tema |
 | Coste | El coste depende del proveedor o la ruta. Modelos locales y SearXNG ofrecen ruta sin API de pago; motores y modelos remotos tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo |
-
-El MCP documentado usa stdio para uso local y carece de autenticación y límite de peticiones; el benchmark del autor no garantiza exactitud en cualquier tema
-
-## Qué puedes hacer con él
-
-Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.
-
-## Por qué destaca
-
-Usos propuestos: Consultar documentos privados; Preparar una revisión bibliográfica.
-
-## Cómo funciona
 
 El MCP documentado usa stdio para uso local y carece de autenticación y límite de peticiones; el benchmark del autor no garantiza exactitud en cualquier tema
 
@@ -87,6 +101,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo
 - **Etiquetas:** `research` `academia` `anthropic` `arxiv` `brave` `deep-research` `encryption` `home-automation`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 
 ## Enlaces
 

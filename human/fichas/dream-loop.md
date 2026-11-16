@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de agente (MIT) de achimala (@anshuc) para construir juegos, apps o escenas con visuales de alto nivel. Sin releases; probada solo con GPT-6 Astra en Codex según su README.
+
+## ¿Qué hace?
+
+Crea un bucle cerrado: la IA «sueña» una captura objetivo con generación de imágenes, construye con ese objetivo, un crítico separado compara la captura real con el objetivo y da retroalimentación, y se repite hasta que el crítico queda satisfecho; opcionalmente genera un objetivo mejor a partir del estado actual.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add achimala/dream-loop` o copiándola al directorio de skills. Requiere un agente con generación de imágenes (integrada o vía API, por ejemplo Gemini), entrada de visión y, preferiblemente, subagentes. Para modelado 3D propio recomienda Blender mediante su MCP o scripting.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Codex CLI](codex.md) | Único entorno probado por el autor. | Codex con generación de imágenes disponible. |
+| [blender](blender.md) | Recomendado para modelado 3D personalizado. | Instala Blender antes de pedir escenas 3D. |
+| [Blender MCP](blender-mcp.md) | Vía preferida para que el agente controle Blender. | Blender abierto con el complemento del MCP antes de iniciar el bucle. |
+
+**Notas:** Cada iteración genera imágenes y capturas: el coste de tokens puede ser alto.
+
+Estado en GitHub: activo · último push 2026-09-09 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/achimala/dream-loop/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El autor solo declara pruebas con Codex en la configuración indicada; otros modelos se proponen como posibles y no como verificados |
 | Coste | El coste depende del proveedor o la ruta. Necesita generación de imagen incluida en el host o vía API y consumo del agente; Blender usa equipo propio |
 | Equipo | Preparación según la ruta elegida. Agente con visión y generación de imagen; Blender para modelado propio; presupuesto |
-
-El autor solo declara pruebas con Codex en la configuración indicada; otros modelos se proponen como posibles y no como verificados
-
-## Qué puedes hacer con él
-
-Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar una escena 3D; Comparar dirección visual de un juego.
-
-## Cómo funciona
 
 El autor solo declara pruebas con Codex en la configuración indicada; otros modelos se proponen como posibles y no como verificados
 

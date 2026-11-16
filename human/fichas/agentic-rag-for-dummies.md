@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Proyecto educativo de código abierto (MIT) de Giovanni Pasqualino que enseña a construir un sistema de RAG agéntico modular con LangGraph. Activo (v2.3.1), con cuaderno interactivo y proyecto ejecutable.
+
+## ¿Qué hace?
+
+Muestra paso a paso indexación jerárquica (busca en trozos pequeños y recupera el trozo padre), memoria de conversación, aclaración de consultas ambiguas con intervención humana, orquestación con agentes, descomposición map-reduce en subconsultas paralelas, autocorrección, compresión de contexto, observabilidad con Langfuse y evaluación con RAGAS.
+
+## ¿Cómo lo hace?
+
+Ofrece dos rutas: un cuaderno Jupyter para aprender y un proyecto modular donde se cambian proveedor de LLM, modelo de embeddings, conversor de PDF y flujo del agente. La app ejecutable usa Ollama por defecto (por ejemplo `granite4.1:8b`) y Qdrant como base vectorial, y puede adaptarse a cualquier proveedor de LangChain.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Orquesta todo el flujo de recuperación y razonamiento. | Se instala con las dependencias del proyecto. |
+| [Ollama](ollama.md) | Proveedor por defecto de la app ejecutable. | Ollama con el modelo descargado antes de lanzar la app. |
+| [Qdrant](qdrant.md) | Base vectorial del proyecto. | Sigue la configuración del repositorio (local o servidor) antes de indexar. |
+| [langfuse](langfuse.md) | Observabilidad de llamadas, herramientas y grafo. | Opcional; configura las claves en el entorno. |
+| [Ragas](ragas.md) | Evaluación de recuperación y respuestas. | Después de tener un corpus indexado. |
+
+**Notas:** Es material de aprendizaje y referencia, no un producto para producción.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v2.3.1 (2026-10-17) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook |
 | Coste | El coste depende del proveedor o la ruta. La app es Ollama-first; Colab alojado no trae Ollama y requiere cambiar de modelo o conectar una instancia; las APIs alternativas consumen |
 | Equipo | Preparación según la ruta elegida. Python; checkout; Ollama local; PDFs propios; Jupyter para notebook |
-
-No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook
-
-## Qué puedes hacer con él
-
-Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.
-
-## Por qué destaca
-
-Usos propuestos: Aprender RAG por pasos; Comparar un pipeline local con otro proveedor.
-
-## Cómo funciona
 
 No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook
 

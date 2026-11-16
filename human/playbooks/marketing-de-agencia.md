@@ -34,11 +34,10 @@ flowchart LR
 | 3 | [mautic](../fichas/mautic.md) | Automatización de marketing: segmentos, scoring y nurturing | 11k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 | 4 | [listmonk](../fichas/listmonk.md) | Newsletters y envíos masivos baratos | 24.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 5 | [posthog](../fichas/posthog.md) | Analítica de producto y embudos | 40.8k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 6 | [Open-Generative-AI](../fichas/open-generative-ai.md) | Creatividades de imagen y video | 34.7k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## 🔌 Cómo se conecta
 
-Las skills y los roles guían a tu agente de código en cada canal; Mautic segmenta y nutre leads; listmonk envía newsletters; PostHog mide conversión y retención; Open Generative AI produce piezas visuales. Metabase o Superset sirven si necesitas reportes para clientes.
+Las skills y los roles guían a tu agente de código en cada canal; Mautic segmenta y nutre leads; listmonk envía newsletters; PostHog mide conversión y retención. Metabase o Superset sirven si necesitas reportes para clientes.
 
 ## 🚫 Cuándo NO usar esta receta
 

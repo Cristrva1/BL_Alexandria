@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Papermorph, skill para agentes que convierte libros de texto en lecciones web narradas e interactivas, historias en películas de títeres de papel y libros en documentales o cortos verticales, de @DozenTwelve. El código es MIT, con MathJax bajo Apache-2.0. Es reciente (octubre de 2026, ~1.7k estrellas).
+
+## ¿Qué hace?
+
+Genera experiencias web animadas y narradas a partir de libros, con una estantería en vivo de ejemplos.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add DozenTwelve/Papermorph --skill papermorph --agent claude-code` (o `--agent opencode`); un clon del repo ya incluye el comando para OpenCode.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado. | Instala la skill. |
+| [OpenCode](opencode.md) | Agente soportado con comando incluido. | Instala con `--agent opencode`. |
+| [Kokoro](kokoro.md) | Narración local. (combinación por arquitectura) | Configura un TTS si la skill lo admite. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada engine-v2.11 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DozenTwelve/Papermorph/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Documenta Claude Code y OpenCode; sus ejemplos de coste son de producciones concretas y los recursos del sitio conservan licencias separadas del código |
 | Coste | El coste depende del proveedor o la ruta. Kokoro ofrece voz local y Edge TTS voz online; generación de imágenes, clips o voces opcionales puede cobrar aparte |
 | Equipo | Preparación según la ruta elegida. uv; FFmpeg; navegadores Playwright; libro propio o autorizado; voz local o remota |
-
-Documenta Claude Code y OpenCode; sus ejemplos de coste son de producciones concretas y los recursos del sitio conservan licencias separadas del código
-
-## Qué puedes hacer con él
-
-Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una lección animada; Explorar una historia interactiva.
-
-## Cómo funciona
 
 Documenta Claude Code y OpenCode; sus ejemplos de coste son de producciones concretas y los recursos del sitio conservan licencias separadas del código
 

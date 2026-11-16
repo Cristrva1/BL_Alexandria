@@ -8,7 +8,8 @@ Cada lote es la fuente editable; INDICE_IA.detalle.json sigue siendo la fuente d
 los generadores (`guide build`, `menu export`, `web build`). El script:
 - añade `que_es`, `que_hace`, `como_lo_hace`, `combina_con`, `descripcion_notas`,
   `descripcion_fuentes`, `descripcion_revision` y `descripcion_github` (estado leído de la API de GitHub:
-  archivado, renombrado, último push, licencia) sin tocar los demás campos;
+  archivado, renombrado, último push, licencia) sin tocar los demás campos; si el proyecto vive fuera
+  de GitHub, `origen` se copia a `descripcion_origen` (forja canónica, p. ej. Codeberg);
 - sincroniza `combines_with` con los ids de `combina_con` (misma lista, mismo orden),
   porque recomendador, decisiones y menú portable siguen leyendo `combines_with`;
 - rechaza ids inexistentes, autorreferencias, alternativas listadas como combinación y textos vacíos.
@@ -81,6 +82,9 @@ def apply(batch: dict, detail: dict) -> list[str]:
         }
         if entry.get("github"):
             target["descripcion_github"] = dict(entry["github"])
+        if entry.get("origen"):
+            # Forja canónica fuera de GitHub (p. ej. Codeberg); `github` queda como estado de la copia antigua.
+            target["descripcion_origen"] = dict(entry["origen"])
         target["combines_with"] = [c["id"] for c in entry["combina_con"]]
         removed = [c for c in before if c not in target["combines_with"]]
         added = [c for c in target["combines_with"] if c not in before]

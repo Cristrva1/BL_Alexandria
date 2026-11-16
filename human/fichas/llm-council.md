@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Experimento personal de Andrej Karpathy, 'vibe coded' en un sábado según el propio README. El autor avisa de que no lo mantendrá ni lo soportará. No tiene archivo de licencia, así que legalmente no hay permiso de reutilización explícito, y su último push es de noviembre de 2025.
+
+## ¿Qué hace?
+
+Envía una pregunta a varios LLM a la vez (el 'consejo') en 3 etapas. Primero recoge respuestas individuales, que se ven en pestañas. Después cada modelo revisa y ordena las respuestas anonimizadas de los demás. Por último un modelo 'presidente' redacta la respuesta final.
+
+## ¿Cómo lo hace?
+
+El backend es FastAPI (Python 3.10+, httpx asíncrono) y el frontend React con Vite, gestionados con uv y npm. Todas las llamadas pasan por OpenRouter (`OPENROUTER_API_KEY`) y los modelos se configuran en el backend. Cada consulta dispara varias llamadas de pago.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Sustituir OpenRouter por un proxy propio con control de costes y proveedores. (combinación por arquitectura: requiere cambiar el cliente del backend) | Despliega el proxy LiteLLM y modifica la URL base del cliente. |
+| [Ollama](ollama.md) | Incluir modelos locales en el consejo, vía LiteLLM o un endpoint compatible. (combinación por arquitectura) | Ollama y LiteLLM primero; añade los modelos a la configuración. |
+| [promptfoo](promptfoo.md) | Si el objetivo es comparar modelos de forma sistemática y repetible, promptfoo ofrece evaluaciones reproducibles. (combinación por arquitectura) | Úsalo en paralelo para validar con datasets lo que el consejo sugiere de forma anecdótica. |
+
+**Notas:** Sin alternativas declaradas. Sin licencia: no reutilices el código en proyectos distribuidos sin permiso. Combinación anterior con openevolve (desde openevolve) eliminada en esa ficha.
+
+Estado en GitHub: activo · último push 2025-11-22 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/karpathy/llm-council/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes |
 | Coste | Consumo de APIs o servicios. Cada pregunta puede producir varias llamadas mediante OpenRouter; el coste crece con los miembros y sus revisiones |
 | Equipo | Preparación según la ruta elegida. Python y uv; Node.js; clave OpenRouter |
-
-Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes
-
-## Qué puedes hacer con él
-
-"consejo" donde varios LLMs deliberan y se evalúan entre sí para responder.
-
-## Por qué destaca
-
-Usos propuestos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica.
-
-## Cómo funciona
 
 Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes
 
@@ -97,12 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; Node.js; clave OpenRouter
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces
 

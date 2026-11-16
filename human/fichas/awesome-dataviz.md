@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Awesome Dataviz, lista curada de frameworks, librerías y software de visualización open source, creada por @fasouto y mantenida con patrocinio de Hal9. Licencia CC BY 4.0 (GitHub muestra NOASSERTION). Tiene ~4.5k estrellas.
+
+## ¿Qué hace?
+
+Organiza herramientas por lenguaje y tipo (JavaScript, Python, R, BI, mapas, herramientas para agentes y MCP). Se puede navegar en awesomedataviz.com con búsqueda, rankings, estadísticas de GitHub, comparativas y un servidor MCP generado a partir del README.
+
+## ¿Cómo lo hace?
+
+Es un README; no requiere instalación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [echarts](echarts.md) | Una de las librerías destacadas de la lista. (combinación por arquitectura) | Compara alternativas en la lista antes de elegir. |
+| [D3.js](d3.md) | Base de muchas entradas de JavaScript. (combinación por arquitectura) | Revisa la sección de JavaScript. |
+| [awesome-bigdata](awesome-bigdata.md) | Lista complementaria para el procesamiento de datos. (combinación por arquitectura) | Usa ambas para elegir el stack de datos y visualización. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-11 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hal9ai/awesome-dataviz/blob/main/README.md) · [2](https://awesomedataviz.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El directorio reúne opciones; no se instala completo ni verifica automáticamente la calidad de cada enlace |
 | Coste | Sin pago a un modelo en la ruta básica. La lista se consulta sin API; herramientas y servicios enlazados tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Navegador; tipo de gráfico y framework objetivo |
-
-El directorio reúne opciones; no se instala completo ni verifica automáticamente la calidad de cada enlace
-
-## Qué puedes hacer con él
-
-Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una biblioteca de mapas; Comparar gráficos para React y JavaScript.
-
-## Cómo funciona
 
 El directorio reúne opciones; no se instala completo ni verifica automáticamente la calidad de cada enlace
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; tipo de gráfico y framework objetivo
 - **Etiquetas:** `automation` `dataviz` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
-| [awesome-bigdata](awesome-bigdata.md) | 14.7k | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. |
 
 ## Enlaces
 

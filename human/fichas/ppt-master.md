@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+PPT Master, workflow (skill) que genera presentaciones PowerPoint nativas y editables a partir de cualquier documento, de @hugohe3. Licencia MIT. Creado en diciembre de 2025, tiene ~77k estrellas (v6.9.0); el README incluye patrocinios de servicios de reventa de APIs.
+
+## ¿Qué hace?
+
+Dentro de un agente («haz una presentación de este PDF») analiza, diseña y exporta localmente un PPTX con patrones, formas nativas y gráficos y tablas con datos. También extrae plantillas de marca o rellena una existente.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10–3.14 y `pip install -r requirements.txt` (Pandoc opcional). Funciona con cualquier agente y modelo (Kimi, Gemini, GPT, Claude).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente que ejecuta el workflow. (combinación por arquitectura) | Clona el repo e invoca la skill. |
+| [markitdown](markitdown.md) | Convertir documentos fuente. (combinación por arquitectura) | Preprocesa a Markdown. |
+| [Pandoc](pandoc.md) | Conversión de documentos. | Instala Pandoc si se necesita. |
+
+**Notas:** Alternativas (elige una): presenton.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v6.9.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hugohe3/ppt-master/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios |
 | Coste | El coste depende del proveedor o la ruta. Usa el agente y posibles proveedores de imagen o voz; no incluye créditos ni acceso a patrocinadores |
 | Equipo | Preparación según la ruta elegida. Python 3.10–3.14; agente con archivos; dependencias; documento y plantilla autorizados |
-
-Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios
-
-## Qué puedes hacer con él
-
-Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una presentación de un informe; Adaptar una plantilla corporativa.
-
-## Cómo funciona
 
 Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10–3.14; agente con archivos; dependencias; documento y plantilla autorizados
 - **Etiquetas:** `slides` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Alternativas (elige una)
 
