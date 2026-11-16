@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de código abierto veterano y muy activo, publicado con varias licencias a elegir (GPL, LGPL, Apache, EPL o MIT) según la distribución. Muy integrado en wikis, IDEs y herramientas de documentación.
@@ -35,6 +37,16 @@ Es un programa Java que se ejecuta como JAR, servidor web o biblioteca; usa Grap
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.2026.10 (2026-11-11) · licencia declarada LGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plantuml/plantuml/blob/master/README.md) · [2](https://www.npmjs.com/package/@plantuml/mcp-js)</sub>
+
+## Ver similares
+
+Grupo **Diagramas como código**: PlantUML ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Mermaid](mermaid.md) ⭐ recomendado | 78 | Si buscas esto: genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. |
+| 2 | [D2](d2.md) | 58 | Si buscas esto: lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos. |
+| 3 | **PlantUML** (esta ficha) | 55 | Si buscas esto: herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Editor de código abierto de Zed Industries. El código es principalmente GPL-3.0-or-later con componentes Apache-2.0 donde se indica. Muy activo; ofrece planes de pago para su IA alojada.

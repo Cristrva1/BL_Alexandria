@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** hard
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de procesamiento de datos distribuido de la Apache Software Foundation (Apache-2.0), estándar en big data desde hace más de una década y base de plataformas como Databricks. Muy activo.

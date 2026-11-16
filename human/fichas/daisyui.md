@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de componentes para Tailwind CSS (MIT) de @saadeghi, la más popular de su tipo según el README. Es madura y activa (daisyUI 5, v5.8.1).

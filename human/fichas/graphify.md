@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Graphify, CLI y skill que convierte código y documentos en un grafo de conocimiento consultable, de Graphify Labs. Licencia Apache-2.0. Tiene un recuento de estrellas excepcionalmente alto (~149k), publica muy a menudo (v0.9.111) y ofrece un servicio de pago, Graphify Cloud.
@@ -36,6 +38,18 @@ Se instala con `pip install graphifyy` o `uv tool install graphifyy` (paquete of
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.111 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Graphify-Labs/graphify/blob/v8/README.md)</sub>
+
+## Ver similares
+
+Grupo **Mapas e índices de código para agentes**: graphify ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **graphify** (esta ficha) ⭐ recomendado | 75 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
+| 2 | [codegraph](codegraph.md) | 67 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
+| 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
+| 4 | [Repomix](repomix.md) | 52 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
+| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 

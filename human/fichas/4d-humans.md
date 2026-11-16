@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 4DHumans (HMR 2.0), implementación del artículo «Humans in 4D: Reconstructing and Tracking Humans with Transformers» (UC Berkeley). Licencia MIT. Es código de investigación (~1.7k estrellas) sin cambios desde febrero de 2026.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 codebase-memory-mcp, motor local de inteligencia de código para agentes vía MCP, de DeusData. Licencia MIT. Es muy activo (~49k estrellas, v0.12.1).
@@ -35,6 +37,18 @@ Es un binario nativo en C que se instala con un script (`install.sh` o `install.
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.12.1 (2026-10-16) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Mapas e índices de código para agentes**: codebase-memory-mcp ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [graphify](graphify.md) ⭐ recomendado | 75 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
+| 2 | [codegraph](codegraph.md) | 67 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
+| 3 | **codebase-memory-mcp** (esta ficha) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
+| 4 | [Repomix](repomix.md) | 52 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
+| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 

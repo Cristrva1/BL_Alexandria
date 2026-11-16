@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 GUI forense (Apache-2.0 en LICENSE-2.0.txt; API sin SPDX).
@@ -32,6 +34,15 @@ Instalador / build.
 Estado en GitHub: activo · último push 2026-06-20 · última versión publicada autopsy-4.23.1 (2026-05-07) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sleuthkit/autopsy#readme) · [2](http://www.sleuthkit.org/autopsy/)</sub>
+
+## Ver similares
+
+Grupo **Análisis forense de discos**: Autopsy ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Autopsy** (esta ficha) ⭐ recomendado | 46 | Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. |
+| 2 | [The Sleuth Kit](sleuthkit.md) | 41 | Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
 
 ## Acceso, coste y equipo
 

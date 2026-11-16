@@ -170,10 +170,44 @@ def score_command(
     n = score_mod.sync_indices(root, scores)
     errors = sorted(i for i, m in metrics.items() if m.get("error"))
     console.print(f"Puntuados {n} repos. Escrito {out}")
+    if (root / "curation" / "grupos.yaml").exists():
+        from repo_intelligence.quality import similar as similar_mod
+
+        groups = similar_mod.rebuild(root, today)
+        console.print(f"Grupos de similares reordenados: {len(groups)}")
     if errors:
         console.print(f"[yellow]Sin métricas ({len(errors)}):[/yellow] {', '.join(errors[:30])}")
     if mostrar and mostrar in scores:
         console.print_json(_json.dumps(scores[mostrar], ensure_ascii=False))
+
+
+@app.command("grupos")
+def grupos_command(
+    proponer: Annotated[bool, typer.Option("--proponer", help="Muestra grupos que la similitud propone y que no están curados.")] = False,
+) -> None:
+    """Grupos de similares: ranking por puntuación, recomendado y alternativas (curation/grupos.yaml → data/grupos.json)."""
+    import json as _json
+
+    from repo_intelligence.quality import similar as similar_mod
+
+    root = ProjectPaths.load().project_root
+    compact = _json.loads((root / "INDICE_IA.json").read_text(encoding="utf8"))
+    curated = similar_mod.load_curated(root)
+    errors = similar_mod.validate_curated(curated, compact)
+    if errors:
+        for e in errors:
+            console.print(f"[red]{e}[/red]")
+        raise typer.Exit(1)
+    groups = similar_mod.rebuild(root, _now()[:10])
+    console.print(f"{len(groups)} grupos, {sum(len(g['miembros']) for g in groups)} repos. Escrito data/grupos.json")
+    if proponer:
+        detail = _json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf8"))["repos"]
+        model = similar_mod.SimilarityModel(compact, detail)
+        grouped = {m for g in groups for m in g["miembros"]} | set(curated.get("sin_grupo") or [])
+        for g in similar_mod.propose_groups(model):
+            fresh = [m for m in g if m not in grouped]
+            if fresh:
+                console.print(f"Propuesta: {', '.join(g)}  (sin grupo: {', '.join(fresh)})")
 
 
 @app.command()

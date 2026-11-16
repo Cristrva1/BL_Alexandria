@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 faster-whisper, reimplementación de Whisper sobre CTranslate2, de SYSTRAN. Licencia MIT. Es madura (~27k estrellas, v1.2.1).
@@ -44,6 +46,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.2.1 (2025-10-31) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SYSTRAN/faster-whisper/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Transcripción con Whisper**: faster-whisper ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [whisper.cpp](whisper-cpp.md) ⭐ recomendado | 73 | Si buscas esto: port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
+| 2 | **faster-whisper** (esta ficha) | 70 | Si buscas esto: runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
+| 3 | [whisper](whisper.md) | 67 | Si buscas esto: modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
 
 ## Acceso, coste y equipo
 

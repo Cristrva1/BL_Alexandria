@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de comportamientos de interfaz (Apache-2.0) de Vercel Labs, pensada para que agentes de IA construyan componentes. Está en **beta** y no tiene releases.

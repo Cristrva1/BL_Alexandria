@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor de Nextcloud: la plataforma autoalojada de archivos, colaboración y productividad mantenida por Nextcloud GmbH y su comunidad. Licencia AGPL-3.0-or-later, sin CLA. Es muy madura y activa (~37k estrellas, v33.0.11).

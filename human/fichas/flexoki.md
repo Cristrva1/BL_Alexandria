@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Esquema de color (MIT) de @kepano (stephango.com, también autor del tema Minimal de Obsidian) pensado para leer y escribir en pantallas, inspirado en tintas de imprenta y tonos de papel. Versión 2.0.0; último push en marzo de 2026.

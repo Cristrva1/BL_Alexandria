@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Agent Protocol, especificación de LangChain de APIs independientes del framework para servir agentes LLM en producción. Licencia MIT. Es una especificación de nicho (~700 estrellas).

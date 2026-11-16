@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección de skills de marketing para agentes de IA, de Corey Haines (agencia Conversion Factory), MIT y financiada por «Verified Partners» declarados. Muy activa (v2.14.12).

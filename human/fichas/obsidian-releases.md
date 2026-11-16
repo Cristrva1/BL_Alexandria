@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio de Obsidian para las releases públicas de la app y los directorios de plugins y temas de la comunidad. No tiene archivo de licencia y no contiene el código de Obsidian, que no es open source. Es muy activo (~23k estrellas, v1.15.1).

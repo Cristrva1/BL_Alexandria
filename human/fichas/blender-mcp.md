@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 MCP for Blender (antes blender-mcp), integración de terceros que conecta Blender con cualquier LLM, creada por @ahujasid. Licencia MIT. Es muy popular (~35k estrellas) y no está hecha por la Blender Foundation; el paquete PyPI pasó a llamarse `mcp-for-blender`.

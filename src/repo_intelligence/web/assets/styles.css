@@ -804,3 +804,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--green); width:
 .used-by summary h2 { display: inline; }
 
 .notice{border-left:4px solid #d97706;background:rgba(217,119,6,.08);padding:.6rem .8rem;margin:0 0 1rem;border-radius:4px}
+.similar-list{list-style:none;padding:0;margin:.5rem 0 0;display:grid;gap:.5rem}
+.similar-row{display:flex;gap:.75rem;align-items:flex-start;padding:.5rem .6rem;border-radius:6px;background:rgba(0,0,0,.03)}
+.similar-row.is-self{outline:2px solid rgba(217,119,6,.45)}
+.similar-rank{font-weight:700;min-width:1.5rem;text-align:right}

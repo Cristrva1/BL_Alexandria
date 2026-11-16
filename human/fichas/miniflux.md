@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lector de feeds de código abierto (Apache-2.0) creado por Frédéric Guillot. Proyecto maduro, deliberadamente minimalista y «opinionated».
@@ -35,6 +37,15 @@ Escrito en Go como binario único; requiere PostgreSQL. Se instala con paquetes,
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 2.3.5 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/miniflux/v2/blob/main/README.md) · [2](https://miniflux.app/docs/)</sub>
+
+## Ver similares
+
+Grupo **Lectores RSS auto-hospedados**: Miniflux ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [FreshRSS](freshrss.md) ⭐ recomendado | 65 | Si buscas esto: agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones. |
+| 2 | **Miniflux** (esta ficha) | 58 | Si buscas esto: lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones. |
 
 ## Acceso, coste y equipo
 

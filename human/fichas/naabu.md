@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
@@ -39,6 +41,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.7.0 (2026-10-28) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/projectdiscovery/naabu#readme) · [2](https://docs.projectdiscovery.io/tools/naabu)</sub>
+
+## Ver similares
+
+Grupo **Sondeo y escaneo de reconocimiento**: Naabu ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [httpx](httpx.md) ⭐ recomendado | 76 | Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. |
+| 2 | **Naabu** (esta ficha) | 62 | Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. |
 
 ## Acceso, coste y equipo
 

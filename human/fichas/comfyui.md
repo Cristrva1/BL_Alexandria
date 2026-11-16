@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 82/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 ComfyUI, motor modular de creación con IA basado en grafos de nodos, mantenido por Comfy Org. Licencia GPL-3.0. Es uno de los proyectos de IA generativa más populares (~147k estrellas, v0.45.0).

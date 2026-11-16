@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 VectorBT, toolkit de Python para investigación de trading a escala, de @polakowo. Licencia Apache-2.0 con Commons Clause, «fair-code» que no permite vender el software (GitHub muestra NOASSERTION). Tiene ~10k estrellas (v1.2.1) y una versión comercial, VectorBT PRO.
@@ -41,6 +43,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v1.2.1 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/polakowo/vectorbt/blob/master/README.md) · [2](https://vectorbt.dev)</sub>
+
+## Ver similares
+
+Grupo **Backtesting en Python**: vectorbt ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **vectorbt** (esta ficha) ⭐ recomendado | 56 | Si buscas esto: biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. |
+| 2 | [Backtesting.py](backtesting-py.md) | 51 | Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
 
 ## Acceso, coste y equipo
 

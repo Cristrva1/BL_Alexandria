@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de Significant-Gravitas para crear, desplegar y gestionar agentes de IA ('Experts') que automatizan flujos de trabajo. La licencia es mixta: `autogpt_platform/` usa Polyform Shield, que no es OSI y prohíbe competir con el producto, y `classic/` y el resto del repo son MIT. La plataforma está en beta (autogpt-platform-beta-v0.11.3), con ~188k estrellas heredadas del AutoGPT original.
@@ -35,6 +37,17 @@ La plataforma se puede usar en la nube (agpt.co) o autoalojada (frontend y backe
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada autogpt-platform-beta-v0.11.3 (2026-11-15) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md) · [2](https://agpt.co/docs/platform/api-and-integrations/api-guide) · [3](https://agpt.co/docs/platform/ollama)</sub>
+
+## Ver similares
+
+Grupo **Builders visuales de agentes**: AutoGPT ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langflow](langflow.md) ⭐ recomendado | 70 | Si quieres diseñar flujos de LangChain visualmente y exportarlos. |
+| 2 | **AutoGPT** (esta ficha) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
+| 3 | [dify](dify.md) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
+| 4 | [Sim](sim.md) | 61 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Guía de 12 principios para construir aplicaciones con LLM fiables, escrita por Dex (HumanLayer) a imagen de las '12 Factor Apps'. El código es Apache 2.0 y el contenido CC BY-SA 4.0 (GitHub lo marca NOASSERTION). Es un texto de referencia estable; último push en septiembre de 2025.

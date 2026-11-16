@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Compilador de ML y motor de despliegue de código abierto (Apache-2.0) del proyecto MLC (CMU, OctoAI y comunidad), basado en Apache TVM. Activo; hermano de WebLLM para el navegador.

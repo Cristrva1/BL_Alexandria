@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio oficial de Anthropic con su implementación de skills para Claude: carpetas de instrucciones, scripts y recursos que Claude carga bajo demanda. Muy activo y sin releases. GitHub no detecta una licencia de repositorio, pero el README dice que muchas skills son Apache 2.0, incluidas las de documentos.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor DNS de bloqueo de anuncios y rastreadores para toda la red, de AdGuard. Licencia GPL-3.0. Es muy maduro (~38k estrellas, v0.107.80) y sigue en la serie 0.107 desde hace años.
@@ -44,6 +46,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.107.80 (2026-11-03) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md) · [2](https://adguard-dns.io/kb/adguard-home/getting-started/) · [3](https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started) · [4](https://github.com/AdguardTeam/AdGuardHome/tree/master/openapi) · [5](https://www.home-assistant.io/integrations/adguard/)</sub>
+
+## Ver similares
+
+Grupo **Bloqueo de anuncios por DNS**: AdGuardHome ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Pi-hole](pi-hole.md) ⭐ recomendado | 68 | Si buscas esto: sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. |
+| 2 | **AdGuardHome** (esta ficha) | 59 | Si buscas esto: servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. |
 
 ## Acceso, coste y equipo
 

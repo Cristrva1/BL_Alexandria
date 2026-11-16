@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Escáner de vulnerabilidades open source de Anchore, pareja natural de Syft y alternativa/complemento de Trivy.
@@ -39,6 +41,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.121.3 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anchore/grype#readme)</sub>
+
+## Ver similares
+
+Grupo **Escáneres de vulnerabilidades de contenedores**: Grype ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Trivy](trivy.md) ⭐ recomendado | 79 | Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. |
+| 2 | **Grype** (esta ficha) | 70 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
 
 ## Acceso, coste y equipo
 

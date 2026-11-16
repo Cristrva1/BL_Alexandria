@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Apache ECharts, librería de visualización de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~68k estrellas, 6.1.0).
@@ -44,6 +46,17 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se 
 Estado en GitHub: activo · último push 2026-10-13 · última versión publicada 6.1.0 (2026-05-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/echarts/blob/master/README.md) · [2](https://echarts.apache.org/en/index.html)</sub>
+
+## Ver similares
+
+Grupo **Librerías de gráficos**: echarts ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **echarts** (esta ficha) ⭐ recomendado | 71 | Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas. |
+| 2 | [D3.js](d3.md) | 70 | Si necesitas visualizaciones a medida y control total sobre SVG. |
+| 3 | [Recharts](recharts.md) | 69 | Si usas React y quieres gráficos declarativos con pocas líneas. |
+| 4 | [Chart.js](chart-js.md) | 64 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
 
 ## Acceso, coste y equipo
 

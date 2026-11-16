@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema de reservas de código abierto (GPL-3.0) creado por Alex Tselegidis. Maduro y activo.
@@ -36,6 +38,15 @@ Escrito en PHP 8.2+ con MySQL; se instala en un servidor web o con el entorno Do
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 1.6.1 (2026-10-19) · licencia declarada GPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/alextselegidis/easyappointments/blob/main/README.md) · [2](https://easyappointments.org)</sub>
+
+## Ver similares
+
+Grupo **Reservas y citas**: Easy!Appointments ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [cal.diy](cal-diy.md) ⭐ recomendado | 70 | Si buscas esto: edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
+| 2 | **Easy!Appointments** (esta ficha) | 47 | Si buscas esto: aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. |
 
 ## Acceso, coste y equipo
 

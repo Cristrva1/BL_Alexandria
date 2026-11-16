@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Harness de agentes de código abierto (MIT) de LangChain, «con pilas incluidas», que funciona sin configuración y es extensible. Activo (0.7.38), con versión JS/TS.
@@ -44,6 +46,21 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada deepagents==0.7.38 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/deepagents/blob/main/README.md) · [2](https://langfuse.com/integrations/frameworks/langchain)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de agentes en Python**: Deep Agents ocupa la posición 3 de 8 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [LangGraph](langgraph.md) ⭐ recomendado | 72 | Si necesitas flujos con estado, ciclos, checkpoints y control fino del grafo en producción. |
+| 2 | [crewAI](crewai.md) | 72 | Si piensas en equipos de agentes con roles y tareas y quieres arrancar rápido. |
+| 3 | **Deep Agents** (esta ficha) | 70 | Si quieres agentes de largo recorrido con planificación, subagentes y sistema de archivos sobre LangGraph. |
+| 4 | [OpenAI Agents SDK](openai-agents-python.md) | 67 | Si usas la API de OpenAI y quieres handoffs, guardrails y trazas oficiales. |
+| 5 | [Pydantic AI](pydantic-ai.md) | 66 | Si quieres salidas tipadas y validadas con Pydantic y un estilo cercano a FastAPI. |
+| 6 | [Agent Development Kit (ADK)](adk-python.md) | 65 | Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google. |
+| 7 | [Agno](agno.md) | 61 | Si quieres un runtime de agentes con memoria, conocimiento y equipos listo para servir por API. |
+| 8 | [smolagents](smolagents.md) | 55 | Si quieres agentes mínimos que escriben código Python como acciones, de Hugging Face. |
 
 ## Acceso, coste y equipo
 

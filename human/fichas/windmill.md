@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma «code-first» autoalojable para flujos de trabajo, apps internas y agentes de IA, de Windmill Labs. El código es abierto bajo AGPLv3 y la empresa vende instancias dedicadas, soporte y licencias comerciales; publica versiones casi a diario.
@@ -36,6 +38,19 @@ Backend en Rust con servidores de API sin estado y workers que toman trabajos de
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.875.0 (2026-11-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/windmill-labs/windmill/blob/main/README.md) · [2](https://www.windmill.dev/docs/core_concepts/mcp)</sub>
+
+## Ver similares
+
+Grupo **Orquestadores de workflows de datos y tareas**: Windmill ocupa la posición 5 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Apache Airflow](airflow.md) ⭐ recomendado | 81 | Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores. |
+| 2 | [Kestra](kestra.md) | 80 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
+| 3 | [Prefect](prefect.md) | 68 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
+| 4 | [Trigger.dev](trigger-dev.md) | 68 | Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas. |
+| 5 | **Windmill** (esta ficha) | 61 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
+| 6 | [Dagster](dagster.md) | 57 | Si piensas en activos de datos (tablas, modelos) con linaje y pruebas. |
 
 ## Acceso, coste y equipo
 

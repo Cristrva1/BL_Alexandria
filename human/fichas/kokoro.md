@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 kokoro, librería de inferencia para Kokoro-82M, modelo TTS de pesos abiertos de 82 millones de parámetros, de @hexgrad. Licencia Apache-2.0. Tiene ~10k estrellas, pero no cambia desde agosto de 2025.
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (15). La lista se
 Estado en GitHub: activo · último push 2025-08-06 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hexgrad/kokoro/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **TTS ligero y rápido**: Kokoro ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [edge-tts](edge-tts.md) ⭐ recomendado | 60 | Si buscas esto: biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. |
+| 2 | [LuxTTS](luxtts.md) | 56 | Si buscas esto: modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. |
+| 3 | **Kokoro** (esta ficha) | 52 | Si buscas esto: modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Monorepo de los clientes oficiales de Bitwarden: web vault, extensión de navegador, escritorio y CLI. Lo mantiene Bitwarden, Inc. Es muy maduro (~14k estrellas, desktop-v2026.10.4). GitHub muestra licencia NOASSERTION porque el repo combina GPL-3.0 (por defecto) con la Bitwarden License v1.0 para el código del directorio `bitwarden_license/`.

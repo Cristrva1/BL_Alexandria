@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).
@@ -35,6 +37,15 @@ Frontend React/Vite y backend FastAPI, ejecutables en local o con Docker. Requie
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/abi/screenshot-to-code/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **De diseño o captura a código**: screenshot-to-code ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **screenshot-to-code** (esta ficha) ⭐ recomendado | 60 | Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
+| 2 | [Stitch SDK](stitch-sdk.md) | 49 | Si buscas esto: sDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
 
 ## Acceso, coste y equipo
 

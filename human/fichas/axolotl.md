@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto (Apache-2.0) de Axolotl AI. Muy activo y usado por la comunidad de ajuste fino.
@@ -36,6 +38,17 @@ Se instala con uv o pip (o imágenes Docker) en Linux con GPU NVIDIA o AMD. Usa 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.21.1 (2026-10-27) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md) · [2](https://docs.axolotl.ai/docs/rlhf.html)</sub>
+
+## Ver similares
+
+Grupo **Fine-tuning de LLM**: Axolotl ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Unsloth](unsloth.md) ⭐ recomendado | 82 | Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU. |
+| 2 | **Axolotl** (esta ficha) | 65 | Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU. |
+| 3 | [LLaMA-Factory](llama-factory.md) | 60 | Si quieres una interfaz web para afinar cientos de modelos sin programar. |
+| 4 | [torchtune](torchtune.md) | 52 | Si prefieres recetas nativas de PyTorch fáciles de modificar. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Programa de sincronización continua de archivos entre dispositivos, sin servidor central. Licencia MPL-2.0. Es un proyecto comunitario muy maduro (~90k estrellas, v2.1.7) que prioriza la seguridad de los datos.

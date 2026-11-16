@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de diseño (MIT) de Nutlope, publicada como «hecha por Together AI», para Claude Code, Codex, Cursor y OpenCode. Activa, sin releases.
@@ -35,6 +37,17 @@ Se instala con `npx skills add nutlope/hallmark -g` (opción `--agent` para un s
 Estado en GitHub: activo · último push 2026-11-11 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Nutlope/hallmark/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de diseño de interfaces para agentes**: hallmark ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) ⭐ recomendado | 73 | Si quieres una skill con bases de estilos, paletas y tipografías para generar UI. |
+| 2 | [taste-skill](taste-skill.md) | 70 | Si quieres que el agente evite el aspecto genérico en las interfaces. |
+| 3 | [impeccable](impeccable.md) | 63 | Si quieres vocabulario y playbooks de diseño con detector y hooks. |
+| 4 | **hallmark** (esta ficha) | 51 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
 
 ## Acceso, coste y equipo
 

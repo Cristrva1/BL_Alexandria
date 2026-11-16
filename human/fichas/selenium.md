@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Selenium, proyecto paraguas de automatización de navegadores e infraestructura de la especificación W3C WebDriver, de SeleniumHQ. Licencia Apache-2.0. Es el veterano del sector (repo desde 2013, ~35k estrellas, 4.52).
@@ -44,6 +46,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada selenium-4.52.0 (2026-10-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SeleniumHQ/selenium/blob/trunk/README.md) · [2](https://www.selenium.dev/documentation/)</sub>
+
+## Ver similares
+
+Grupo **Automatización de navegador y pruebas E2E**: Selenium ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [playwright](playwright.md) ⭐ recomendado | 78 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
+| 2 | [Puppeteer](puppeteer.md) | 72 | Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas. |
+| 3 | [Cypress](cypress.md) | 65 | Si haces pruebas de componentes y E2E de frontend dentro del navegador. |
+| 4 | [WebdriverIO](webdriverio.md) | 60 | Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js. |
+| 5 | **Selenium** (esta ficha) | 60 | Si necesitas el estándar W3C WebDriver, muchos lenguajes o grids existentes. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 huashu-motion, skill para generar vídeos de lanzamiento de producto «de calidad comercial» con un agente, de @alchaincyf (花叔). Licencia MIT; incluye GSAP (licencia Standard de GSAP) y fuentes SIL OFL. Es reciente (octubre de 2026, ~2.8k estrellas, v0.5.0) y el README está en chino.

@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 edge-tts, módulo Python y CLI no oficial para usar el servicio TTS en línea de Microsoft Edge, de @rany2. Licencia LGPL-3.0, salvo un archivo bajo MIT (GitHub muestra NOASSERTION). Es maduro (~13k estrellas, 7.3.1).
@@ -36,6 +38,16 @@ Se instala con `pip install edge-tts` y se usa con `edge-tts` o `edge-playback` 
 Estado en GitHub: activo · último push 2026-10-14 · última versión publicada 7.3.1 (2026-10-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rany2/edge-tts/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **TTS ligero y rápido**: edge-tts ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **edge-tts** (esta ficha) ⭐ recomendado | 60 | Si buscas esto: biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. |
+| 2 | [LuxTTS](luxtts.md) | 56 | Si buscas esto: modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. |
+| 3 | [Kokoro](kokoro.md) | 52 | Si buscas esto: modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
 
 ## Acceso, coste y equipo
 

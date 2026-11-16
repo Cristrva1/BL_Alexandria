@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de scraping de código abierto (Apache-2.0) para Go, mantenida por la comunidad gocolly. Madura y estable en su versión v2; actividad moderada.

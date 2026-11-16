@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca oficial de Google (Apache 2.0) de skills para la API de Gemini, su SDK y la interacción con los modelos. Activa, sin releases.

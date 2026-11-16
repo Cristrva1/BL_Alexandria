@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 43/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de agente (MIT) de achimala (@anshuc) para construir juegos, apps o escenas con visuales de alto nivel. Sin releases; probada solo con GPT-6 Astra en Codex según su README.

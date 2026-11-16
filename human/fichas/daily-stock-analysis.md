@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema de análisis inteligente de acciones con LLM (股票智能分析系统), de @ZhuLinsen. Licencia MIT. Es muy popular (~73k estrellas, v3.34.0) y su README, principalmente en chino, incluye patrocinios de proveedores de modelos.

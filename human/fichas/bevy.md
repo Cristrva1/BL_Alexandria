@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de juegos de código abierto en Rust, con licencia dual MIT o Apache-2.0, impulsado por la comunidad y la Bevy Foundation. Muy activo, pero el propio README advierte que está en una fase temprana, con funciones importantes ausentes y cambios incompatibles en cada versión.
@@ -35,6 +37,15 @@ Se usa como dependencia de Cargo en un proyecto Rust. La lógica se escribe como
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.20.1 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bevyengine/bevy/blob/main/README.md) · [2](https://github.com/bevyengine/bevy/blob/main/crates/bevy_pbr/Cargo.toml)</sub>
+
+## Ver similares
+
+Grupo **Motores de videojuegos**: Bevy ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Godot Engine](godot.md) ⭐ recomendado | 77 | Si buscas esto: motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas. |
+| 2 | **Bevy** (esta ficha) | 66 | Si buscas esto: motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones. |
 
 ## Acceso, coste y equipo
 

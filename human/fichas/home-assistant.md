@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 83/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Núcleo de Home Assistant, la plataforma de domótica open source centrada en control local y privacidad. Licencia Apache-2.0. La mantiene la Open Home Foundation con una comunidad enorme (~92k estrellas, 2026.11.1, publica versión mensual).

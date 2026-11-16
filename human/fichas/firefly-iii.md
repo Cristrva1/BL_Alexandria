@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Gestor de finanzas personales de código abierto (AGPL-3.0) creado por James Cole. Muy maduro; se declara sin IA, sin nube y respetuoso con la privacidad.
@@ -35,6 +37,15 @@ Escrito en PHP con Laravel; se instala con Docker o en un servidor web con base 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v6.7.9 (2026-10-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/firefly-iii/firefly-iii/blob/main/readme.md) · [2](https://docs.firefly-iii.org/)</sub>
+
+## Ver similares
+
+Grupo **Finanzas personales**: Firefly III ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Actual Budget](actual.md) ⭐ recomendado | 70 | Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. |
+| 2 | **Firefly III** (esta ficha) | 59 | Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. |
 
 ## Acceso, coste y equipo
 

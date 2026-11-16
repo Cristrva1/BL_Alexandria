@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Editor de vídeo de código abierto (GPL-3.0 según GitHub) desarrollado por la comunidad KDE. El repositorio de GitHub es un espejo: el desarrollo canónico vive en invent.kde.org (multimedia/kdenlive). Maduro, con versiones trimestrales.
@@ -37,6 +39,16 @@ Estado en KDE Invent (GitLab): activo · última actividad 2026-11-12 · última
 Copia antigua en GitHub: activo · último push 2026-11-16 · licencia declarada GPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/KDE/kdenlive/blob/master/README.md) · [2](https://docs.kdenlive.org/en/effects_and_filters/speech_to_text.html) · [3](https://invent.kde.org/multimedia/kdenlive)</sub>
+
+## Ver similares
+
+Grupo **Editores de video**: Kdenlive ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenCut](opencut.md) ⭐ recomendado | 62 | Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. |
+| 2 | [Shotcut](shotcut.md) | 59 | Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. |
+| 3 | **Kdenlive** (esta ficha) | 59 | Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. |
 
 ## Acceso, coste y equipo
 

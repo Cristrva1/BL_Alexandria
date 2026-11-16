@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección MIT de VoltAgent con skills de agentes oficiales de equipos de desarrollo y de la comunidad, seleccionadas a mano. Muy activa; el README lleva patrocinadores.
@@ -37,6 +39,19 @@ Lista en Markdown con enlaces a cada `SKILL.md` y una tabla de rutas por agente.
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Catálogos de skills y plugins para agentes**: Awesome Agent Skills ocupa la posición 3 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) ⭐ recomendado | 68 | Si quieres el catálogo más grande de skills instalables para varios agentes. |
+| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 61 | Si quieres solo plugins publicados por Anthropic. |
+| 3 | **Awesome Agent Skills** (esta ficha) | 53 | Si quieres skills en formato portable para varios agentes. |
+| 4 | [Awesome Claude Skills](awesome-claude-skills.md) | 50 | Si buscas skills para Claude ordenadas por tema. |
+| 5 | [Awesome Claude Code](awesome-claude-code.md) | 50 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
+| 6 | [wshobson/agents](wshobson-agents.md) | 49 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
 
 ## Acceso, coste y equipo
 

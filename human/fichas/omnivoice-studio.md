@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 VoiceStudio (antes OmniVoice Studio; repo debpalash/VoiceStudio), estudio de voz con IA que funciona en el dispositivo. La app es AGPL-3.0; los pesos, voces y salidas tienen licencias propias, y hay ediciones Pro y Cloud de pago con licencia comercial. Creado en abril de 2026, tiene ~111k estrellas, una cifra inusual.

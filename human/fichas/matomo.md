@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Matomo (antes Piwik), plataforma de analítica web libre y autoalojable. Licencia GPL-3.0 o posterior. Es muy madura (~22k estrellas, 5.14.2) y el README cita más de 1,4 millones de sitios.
@@ -35,6 +37,16 @@ Es una aplicación PHP que requiere PHP 8.1+ y MySQL 8.0+ o MariaDB 10.6+. Se in
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 5.14.2 (2026-10-22) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/matomo-org/matomo/blob/6.x-dev/README.md) · [2](https://developer.matomo.org/api-reference/reporting-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/matomo)</sub>
+
+## Ver similares
+
+Grupo **Analítica web auto-hospedada**: Matomo ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Umami](umami.md) ⭐ recomendado | 74 | Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
+| 2 | [Plausible Analytics](plausible.md) | 59 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
+| 3 | **Matomo** (esta ficha) | 57 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
 
 ## Acceso, coste y equipo
 

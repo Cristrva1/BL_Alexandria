@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** hard
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de simulación de código abierto (Apache-2.0), antes llamada Genesis, que nació como proyecto académico en diciembre de 2024 y ahora cuenta con el apoyo de la empresa Genesis AI. Muy activa (Genesis World 1.0).

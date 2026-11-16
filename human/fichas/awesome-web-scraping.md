@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista de paquetes, servicios y manuales de web scraping, de @lorien. GitHub muestra licencia NOASSERTION. Es una lista veterana (~8k estrellas) que se sigue actualizando.

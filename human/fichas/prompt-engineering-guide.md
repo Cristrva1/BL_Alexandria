@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Guía de referencia de DAIR.AI (MIT) sobre ingeniería de prompts, con versión web en promptingguide.ai. Es material educativo, no software para instalar. Es una de las referencias más citadas del tema (~80k estrellas), pero el repositorio se actualiza poco: el último push es de marzo de 2026.
@@ -36,6 +38,15 @@ El sitio está hecho con Next.js y Nextra; para verlo en local se instalan las d
 Estado en GitHub: activo · último push 2026-03-11 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md) · [2](https://www.promptingguide.ai/)</sub>
+
+## Ver similares
+
+Grupo **Guías de ingeniería de prompts**: Prompt Engineering Guide ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Prompt Engineering Guide** (esta ficha) ⭐ recomendado | 62 | Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
+| 2 | [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | 38 | Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
 
 ## Acceso, coste y equipo
 

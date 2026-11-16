@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Conversor universal de formatos de marcado de John MacFarlane: una biblioteca Haskell y una herramienta de línea de comandos. GPL-2.0, muy madura y activa (versión 3.14).

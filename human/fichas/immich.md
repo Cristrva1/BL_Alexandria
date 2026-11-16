@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 81/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Solución de gestión de fotos de código abierto (AGPL-3.0) del equipo Immich, financiado por FUTO. Uno de los proyectos autoalojados más populares; desarrollo muy activo.
@@ -35,6 +37,15 @@ Se despliega con Docker Compose: servidor, servicio de machine learning, Postgre
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.4.1 (2026-11-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/immich-app/immich/blob/main/README.md) · [2](https://docs.immich.app/install/requirements)</sub>
+
+## Ver similares
+
+Grupo **Gestión de fotos auto-hospedada**: Immich ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Immich** (esta ficha) ⭐ recomendado | 81 | Si buscas esto: gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local. |
+| 2 | [PhotoPrism](photoprism.md) | 66 | Si buscas esto: app de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.

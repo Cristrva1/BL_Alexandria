@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista curada clásica de frameworks, bibliotecas y software de machine learning organizada por lenguaje, mantenida por Joseph Misiti e inspirada en awesome-php. GitHub marca su licencia como NOASSERTION. Es activa (último push en noviembre de 2026). Desde abril de 2026 el mantenedor pide verificar por email que el contribuyente es humano, por el exceso de PRs generados con LLMs.

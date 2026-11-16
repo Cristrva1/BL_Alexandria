@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de base de datos sin código de Baserow B.V. con núcleo MIT y funciones premium y enterprise bajo licencia propia. Proyecto maduro que se trasladó de GitLab a GitHub; ofrece nube y autoalojamiento.
@@ -35,6 +37,20 @@ Usa Django, Vue.js y PostgreSQL. La vía más rápida es un único contenedor (`
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2.4.3 (2026-11-14) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/baserow/baserow/blob/develop/README.md) · [2](https://baserow.io/docs/installation/install-with-docker)</sub>
+
+## Ver similares
+
+Grupo **Herramientas internas y bases de datos no-code**: Baserow ocupa la posición 7 de 7 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ToolJet](tooljet.md) ⭐ recomendado | 75 | Si quieres un builder de apps internas con muchos conectores y opciones de IA. |
+| 2 | [Appsmith](appsmith.md) | 72 | Si construyes paneles internos arrastrando componentes sobre APIs y bases de datos. |
+| 3 | [NocoDB](nocodb.md) | 70 | Si quieres una interfaz tipo Airtable sobre tu base de datos SQL existente. |
+| 4 | [Budibase](budibase.md) | 62 | Si quieres formularios, portales y automatizaciones internas con poco código. |
+| 5 | [Teable](teable.md) | 56 | Si quieres una hoja-base de datos rápida sobre PostgreSQL con buen rendimiento en tablas grandes. |
+| 6 | [Grist](grist-core.md) | 53 | Si necesitas una hoja de cálculo relacional con fórmulas en Python. |
+| 7 | **Baserow** (esta ficha) | 50 | Si buscas una alternativa a Airtable auto-hospedada y fácil de usar. |
 
 ## Acceso, coste y equipo
 

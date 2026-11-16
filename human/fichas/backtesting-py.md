@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de backtesting de código abierto (AGPL-3.0) creada por kernc. Madura, con ritmo de cambios bajo (último push en agosto de 2026).
@@ -36,6 +38,15 @@ Se instala con `pip install backtesting`; funciona con DataFrames OHLC de pandas
 Estado en GitHub: activo · último push 2026-08-05 · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kernc/backtesting.py/blob/master/README.md) · [2](https://kernc.github.io/backtesting.py/)</sub>
+
+## Ver similares
+
+Grupo **Backtesting en Python**: Backtesting.py ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [vectorbt](vectorbt.md) ⭐ recomendado | 56 | Si buscas esto: biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. |
+| 2 | **Backtesting.py** (esta ficha) | 51 | Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
 
 ## Acceso, coste y equipo
 

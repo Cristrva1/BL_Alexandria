@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repomix, herramienta para empaquetar un repositorio en un único archivo apto para LLM, de @yamadashy. Licencia MIT. Es madura y muy usada (~29k estrellas, v1.19.0) y tiene patrocinadores destacados en el README.
@@ -37,6 +39,18 @@ Se ejecuta con `npx repomix@latest`, `npm install -g repomix` o `brew install re
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.19.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/yamadashy/repomix/blob/main/README.md) · [2](https://repomix.com)</sub>
+
+## Ver similares
+
+Grupo **Mapas e índices de código para agentes**: Repomix ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [graphify](graphify.md) ⭐ recomendado | 75 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
+| 2 | [codegraph](codegraph.md) | 67 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
+| 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
+| 4 | **Repomix** (esta ficha) | 52 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
+| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 

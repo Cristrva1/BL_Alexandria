@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.
@@ -35,6 +37,15 @@ Los ejemplos están en Python y TypeScript y funcionan con Azure OpenAI, Microso
 Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Cursos de Microsoft para principiantes**: Generative AI for Beginners ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Generative AI for Beginners** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. |
+| 2 | [AI Agents for Beginners](ai-agents-for-beginners.md) | 66 | Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
 
 ## Acceso, coste y equipo
 

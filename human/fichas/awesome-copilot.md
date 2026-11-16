@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección comunitaria alojada por GitHub (MIT) de agentes personalizados, instrucciones, skills, hooks, flujos de trabajo y plugins para GitHub Copilot. Muy activa; tiene web con búsqueda y un Learning Hub.

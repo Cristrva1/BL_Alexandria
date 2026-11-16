@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills de investigación en redes sociales (MIT) de ScrapeCreators, que funcionan con su API de pago. Sin releases; último cambio en agosto de 2026.

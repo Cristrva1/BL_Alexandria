@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 82/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Apache Superset, aplicación web de BI de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~76k estrellas, 6.1.0).
@@ -44,6 +46,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 6.1.0 (2026-05-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/superset/blob/master/README.md) · [2](https://superset.apache.org/user-docs/databases/supported/duckdb)</sub>
+
+## Ver similares
+
+Grupo **BI y dashboards**: Apache Superset ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Apache Superset** (esta ficha) ⭐ recomendado | 82 | Si buscas esto: plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
+| 2 | [metabase](metabase.md) | 67 | Si buscas esto: herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
+| 3 | [Redash](redash.md) | 54 | Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
 
 ## Acceso, coste y equipo
 

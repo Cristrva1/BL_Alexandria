@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de IA de código abierto (MIT) creado por Ettore Di Giacinto y mantenido por el equipo de LocalAI, que se presenta como «tu propia IA en tu propio hardware». Muy activo; la versión estable en noviembre de 2026 es la 4.12.1 y algunas funciones nuevas solo están en compilaciones de desarrollo.
@@ -37,6 +39,18 @@ Servidor en Go que descarga cada backend como imagen separada solo cuando un mod
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.12.1 (2026-10-23) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mudler/LocalAI/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Motores para correr LLM en local**: LocalAI ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ollama](ollama.md) ⭐ recomendado | 84 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
+| 2 | [llama.cpp](llama-cpp.md) | 78 | Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento. |
+| 3 | **LocalAI** (esta ficha) | 72 | Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor. |
+| 4 | [llamafile](llamafile.md) | 52 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
+| 5 | [KoboldCpp](koboldcpp.md) | 46 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
 
 ## Acceso, coste y equipo
 

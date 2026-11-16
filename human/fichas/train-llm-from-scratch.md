@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Tutorial y código (MIT) de @FareedKhan-dev para entrenar un modelo de lenguaje desde cero en PyTorch puro. Empezó como tutorial de preentrenamiento y hoy cubre hasta modelos alineados de estilo razonador. Es activo (último push en octubre de 2026) y tiene CI.

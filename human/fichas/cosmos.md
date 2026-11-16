@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 NVIDIA Cosmos, plataforma de modelos fundacionales de mundo (world foundation models) para IA física: robótica, vehículos autónomos, industria y más. Código y modelos con licencia OpenMDW-1.1 (GitHub muestra NOASSERTION). Tiene ~12k estrellas; la familia actual es Cosmos 3 (mayo de 2026) y Cosmos3-Edge (4B) está pensado para dispositivos.

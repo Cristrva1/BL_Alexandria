@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Kit de red teaming y evaluación de IA generativa de código abierto (Apache-2.0), creado por Leon Derczynski y mantenido bajo la organización NVIDIA. Activo y con artículo académico asociado.

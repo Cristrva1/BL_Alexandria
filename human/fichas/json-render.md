@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de UI generativa (Apache-2.0) de Vercel Labs: la IA genera interfaces desde prompts, restringidas a un catálogo de componentes definido por ti. Es muy activo (v0.23.1, aún 0.x).

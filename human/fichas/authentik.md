@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Identity provider (MIT + enterprise/ propietaria).
@@ -32,6 +34,15 @@ Docker/Helm oficiales.
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada version/2026.8.5 (2026-10-21) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/goauthentik/authentik#readme) · [2](https://docs.goauthentik.io)</sub>
+
+## Ver similares
+
+Grupo **Proveedores de identidad y SSO**: authentik ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Keycloak](keycloak.md) ⭐ recomendado | 67 | Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. |
+| 2 | **authentik** (esta ficha) | 64 | Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. |
 
 ## Acceso, coste y equipo
 

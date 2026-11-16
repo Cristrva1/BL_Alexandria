@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plantilla personal de vault de Obsidian de @kepano, con su enfoque «de abajo arriba» para tomar notas. Licencia MIT. Es estable (~6k estrellas, 2.2.0) y poco activa (último cambio en enero de 2026).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Pentester autónomo con IA para aplicaciones web y APIs, de Keygraph. Licencia AGPL-3.0. Es muy activo (~52k estrellas, v3.5.1).
@@ -35,6 +37,15 @@ Se lanza con `npx @keygraph/shannon@latest setup` y `start`, y requiere Docker y
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.5.1 (2026-11-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/KeygraphHQ/shannon/blob/main/README.md) · [2](https://github.com/KeygraphHQ/shannon/blob/main/docs/ai-providers.md)</sub>
+
+## Ver similares
+
+Grupo **Pentesting autónomo con agentes**: shannon ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [strix](strix.md) ⭐ recomendado | 72 | Si buscas esto: agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT. |
+| 2 | **shannon** (esta ficha) | 62 | Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
 
 ## Acceso, coste y equipo
 

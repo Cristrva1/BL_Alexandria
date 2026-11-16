@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework open source de canvas 2D (MIT, sin clave de licencia) para gráficos interactivos en la web, mantenido por @lavrton. Nació como fork de KineticJS, de ahí que GitHub marque la licencia como NOASSERTION. Es maduro y activo (10.9.1).

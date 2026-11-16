@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 REA, un servidor MCP para hacer ingeniería inversa con agentes, desde el comportamiento de una aplicación hasta binarios nativos, de @morluto. Licencia MIT. Su número de estrellas es anómalo (~462k en siete meses, desde abril de 2026), sin explicación pública [DATO NO VERIFICADO sobre su origen].

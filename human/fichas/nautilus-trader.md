@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 NautilusTrader, motor de trading y backtesting de alto rendimiento nativo en Rust con API de Python, de Nautech Systems. Licencia LGPL-3.0. Es muy activo (~32k estrellas, v1.231.0).

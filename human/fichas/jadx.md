@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Decompilador de Dex a Java con herramientas de línea de comandos y GUI, de @skylot. Licencia Apache-2.0. Es muy maduro y popular (~52k estrellas, v1.5.6).

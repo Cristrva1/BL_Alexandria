@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 43/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Awesome Chrome DevTools, lista curada de herramientas y recursos del ecosistema Chrome DevTools y del protocolo CDP, mantenida en la organización ChromeDevTools. Licencia CC0-1.0. Existe desde 2016 (~7k estrellas).

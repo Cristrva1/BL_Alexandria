@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 81/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de código abierto (MIT) mantenida por Chromatic y la comunidad Storybook. Estándar de la industria para desarrollo de componentes, muy maduro y con un ecosistema amplio de addons.

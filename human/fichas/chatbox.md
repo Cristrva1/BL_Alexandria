@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Cliente de escritorio para ChatGPT, Claude y otros LLM, en su edición comunitaria de código abierto (GPLv3) de chatboxai; el código se sincroniza con la versión Pro. Activo (v1.24.4).
@@ -35,6 +37,21 @@ Aplicación Electron con interfaz React (procesos main, renderer y preload) y pr
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.24.4 (2026-11-12) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatboxai/chatbox/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Interfaces de chat con LLM**: chatbox ocupa la posición 7 de 8 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Open WebUI](open-webui.md) ⭐ recomendado | 74 | Si quieres la interfaz más completa para Ollama o APIs, multiusuario y con RAG. |
+| 2 | [Cherry Studio](cherry-studio.md) | 72 | Si quieres un cliente de escritorio para muchos proveedores con asistentes predefinidos. |
+| 3 | [LobeHub](lobehub.md) | 70 | Si quieres una interfaz moderna con plugins, agentes y despliegue sencillo. |
+| 4 | [LibreChat](librechat.md) | 68 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
+| 5 | [Jan](jan.md) | 65 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
+| 6 | [NextChat](nextchat.md) | 63 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
+| 7 | **chatbox** (esta ficha) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
+| 8 | [Text Generation WebUI](textgen.md) | 50 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
 
 ## Acceso, coste y equipo
 

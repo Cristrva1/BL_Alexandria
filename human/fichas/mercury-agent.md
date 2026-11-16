@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Mercury, agente personal open source «con alma» (personalidad escrita por el usuario), de cosmicstack-labs. Licencia MIT. Tiene ~4k estrellas.
@@ -35,6 +37,16 @@ Se instala con un instalador de una línea o con `npm i -g @cosmicstack/mercury-
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.5.2 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cosmicstack-labs/mercury-agent/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Asistentes personales autónomos**: Mercury Agent ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenClaw](openclaw.md) ⭐ recomendado | 82 | Si buscas esto: asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
+| 2 | [hermes-agent](hermes-agent.md) | 74 | Si buscas esto: asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
+| 3 | **Mercury Agent** (esta ficha) | 49 | Si buscas esto: agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 
 ## Acceso, coste y equipo
 

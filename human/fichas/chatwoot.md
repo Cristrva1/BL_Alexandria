@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Chatwoot, plataforma de atención al cliente autoalojable y alternativa a Intercom o Zendesk, de Chatwoot Inc. La Community Edition es MIT; el directorio `enterprise/` tiene licencia propia (por eso GitHub muestra NOASSERTION). Es madura (~40k estrellas, v4.19.1).

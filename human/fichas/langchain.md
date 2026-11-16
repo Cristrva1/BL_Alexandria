@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 80/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework (MIT) de LangChain Inc. para construir agentes y aplicaciones con LLM encadenando componentes intercambiables e integraciones de terceros. Es uno de los proyectos más populares del ecosistema y está en desarrollo activo (langchain-core 1.8.1).
@@ -42,6 +44,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (24). La lista se
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada langchain-core==1.8.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/langchain/blob/master/README.md) · [2](https://langfuse.com/integrations/frameworks/langchain) · [3](https://docs.langchain.com/oss/python/integrations/vectorstores/qdrant) · [4](https://docs.langchain.com/oss/python/integrations/providers/ollama)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de RAG y orquestación de LLM**: langchain ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **langchain** (esta ficha) ⭐ recomendado | 80 | Si buscas esto: framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| 2 | [Haystack](haystack.md) | 66 | Si buscas esto: framework de deepset para pipelines de RAG y agentes listos para producción. |
+| 3 | [LlamaIndex](llama-index.md) | 63 | Si buscas esto: framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
 
 ## Acceso, coste y equipo
 

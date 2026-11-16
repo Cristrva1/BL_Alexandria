@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 WAHA («WhatsApp HTTP API») es una API REST de WhatsApp que instalas en tu propio servidor, de devlike.pro, con licencia Apache 2.0. Desde la versión 2026.6 las funciones de la antigua edición «Plus» están incluidas en la imagen principal.
@@ -35,6 +37,18 @@ Se distribuye como imagen Docker (`devlikeapro/waha`) y se arranca con `docker r
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 2026.10.1 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/devlikeapro/waha/blob/core/README.md) · [2](https://waha.devlike.pro/docs/how-to/engines/) · [3](https://waha.devlike.pro/docs/apps/chatwoot/)</sub>
+
+## Ver similares
+
+Grupo **APIs y librerías no oficiales de WhatsApp**: WAHA ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [whatsapp-web.js](whatsapp-web-js.md) ⭐ recomendado | 69 | Si programas en Node.js y prefieres controlar WhatsApp Web con un navegador. |
+| 2 | [Baileys](baileys.md) | 67 | Si programas en Node.js y quieres la librería de bajo nivel por WebSocket. |
+| 3 | **WAHA** (esta ficha) | 62 | Si quieres WhatsApp por HTTP en un contenedor, con varios motores. |
+| 4 | [evolution-api](evolution-api.md) | 54 | Si quieres una API REST de WhatsApp lista para n8n, Chatwoot o CRMs. |
+| 5 | [whatsmeow](whatsmeow.md) | 49 | Si programas en Go y quieres una librería multi-dispositivo eficiente. |
 
 ## Acceso, coste y equipo
 

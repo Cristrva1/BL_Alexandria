@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 88/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Ultralytics, paquete con los modelos YOLO para detección, segmentación, clasificación, pose y OBB. Licencia AGPL-3.0, con licencia Enterprise de pago para uso comercial cerrado. Es muy activo (~63k estrellas, v8.4.215).

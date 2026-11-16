@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Editor visual open source (Apache-2.0) para diseñar sobre apps Next.js + Tailwind con IA. Es el proyecto que dio origen a Onlook; la empresa construye ahora un producto alojado distinto, en acceso anticipado con lista de espera. El repositorio sigue activo (v0.2.32), pero su futuro frente al producto alojado es incierto.
@@ -35,6 +37,15 @@ Stack: Next.js, Tailwind CSS, Supabase (autenticación, base de datos y almacena
 Estado en GitHub: activo · último push 2026-10-21 · última versión publicada v0.2.32 (2025-07-17) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/onlook-dev/onlook/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Editores visuales de diseño con IA**: Onlook ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [open-design](open-design.md) ⭐ recomendado | 78 | Si buscas esto: espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. |
+| 2 | **Onlook** (esta ficha) | 53 | Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
 
 ## Acceso, coste y equipo
 

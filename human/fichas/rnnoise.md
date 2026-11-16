@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 41/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 RNNoise, biblioteca de supresión de ruido basada en una red neuronal recurrente, de Xiph.Org (algoritmo de Jean-Marc Valin). Licencia BSD-3-Clause. Es madura y estable (~6k estrellas, v0.2) y no cambia desde febrero de 2025.

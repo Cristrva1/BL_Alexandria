@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca minimalista de agentes de Hugging Face (Apache 2.0): la lógica principal cabe en unas 1.000 líneas. Activa (v1.26.0).
@@ -37,6 +39,21 @@ Se instala con `pip install "smolagents[toolkit]"`. Es agnóstico de modelo: `tr
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.26.0 (2026-05-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/smolagents/blob/main/README.md) · [2](https://huggingface.co/docs/smolagents/tutorials/secure_code_execution) · [3](https://langfuse.com/integrations/frameworks/smolagents)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de agentes en Python**: smolagents ocupa la posición 8 de 8 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [LangGraph](langgraph.md) ⭐ recomendado | 72 | Si necesitas flujos con estado, ciclos, checkpoints y control fino del grafo en producción. |
+| 2 | [crewAI](crewai.md) | 72 | Si piensas en equipos de agentes con roles y tareas y quieres arrancar rápido. |
+| 3 | [Deep Agents](deepagents.md) | 70 | Si quieres agentes de largo recorrido con planificación, subagentes y sistema de archivos sobre LangGraph. |
+| 4 | [OpenAI Agents SDK](openai-agents-python.md) | 67 | Si usas la API de OpenAI y quieres handoffs, guardrails y trazas oficiales. |
+| 5 | [Pydantic AI](pydantic-ai.md) | 66 | Si quieres salidas tipadas y validadas con Pydantic y un estilo cercano a FastAPI. |
+| 6 | [Agent Development Kit (ADK)](adk-python.md) | 65 | Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google. |
+| 7 | [Agno](agno.md) | 61 | Si quieres un runtime de agentes con memoria, conocimiento y equipos listo para servir por API. |
+| 8 | **smolagents** (esta ficha) | 55 | Si quieres agentes mínimos que escriben código Python como acciones, de Hugging Face. |
 
 ## Acceso, coste y equipo
 

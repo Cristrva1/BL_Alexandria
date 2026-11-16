@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Recharts, librería de gráficos para React construida con D3. Licencia MIT. Es madura (~28k estrellas, v3.10.1).
@@ -37,6 +39,17 @@ Se instala con `npm install recharts react-is` y se usa dentro de componentes Re
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.10.1 (2026-07-25) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/recharts/recharts/blob/main/README.md) · [2](https://ui.shadcn.com/docs/components/chart) · [3](https://recharts.github.io)</sub>
+
+## Ver similares
+
+Grupo **Librerías de gráficos**: Recharts ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [echarts](echarts.md) ⭐ recomendado | 71 | Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas. |
+| 2 | [D3.js](d3.md) | 70 | Si necesitas visualizaciones a medida y control total sobre SVG. |
+| 3 | **Recharts** (esta ficha) | 69 | Si usas React y quieres gráficos declarativos con pocas líneas. |
+| 4 | [Chart.js](chart-js.md) | 64 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
 
 ## Acceso, coste y equipo
 

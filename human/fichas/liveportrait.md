@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 LivePortrait, sistema de animación de retratos con control de stitching y retargeting, del Kuaishou Visual Generation and Interaction Center (KlingAIResearch). El código es MIT (GitHub muestra NOASSERTION), pero depende de modelos de terceros con sus propias licencias, como InsightFace (no comercial). Tiene ~19k estrellas y no cambia desde junio de 2026.

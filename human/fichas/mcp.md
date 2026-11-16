@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio de Google con la lista de sus servidores MCP oficiales, guías para desplegar servidores en Google Cloud y ejemplos. Licencia Apache-2.0. Es pequeño (~5k estrellas) y su último cambio es de agosto de 2026.

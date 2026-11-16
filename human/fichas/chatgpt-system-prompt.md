@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026). Buena parte del contenido se obtuvo por extracción de prompts ajenos, lo que plantea dudas legales y éticas [DATO NO VERIFICADO: estatus de derechos de cada prompt].

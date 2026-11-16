@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 agent-browser, CLI nativa en Rust para que agentes controlen un navegador comando a comando, de Vercel Labs. Licencia Apache-2.0. Creado en enero de 2026, tiene ~52k estrellas (v0.43.0).
@@ -35,6 +37,15 @@ Se instala con `npm install -g agent-browser` o `brew install agent-browser`, y 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.43.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel-labs/agent-browser/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **CLIs de navegador para agentes**: agent-browser ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **agent-browser** (esta ficha) ⭐ recomendado | 63 | Si buscas esto: cLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. |
+| 2 | [playwright-cli](playwright-cli.md) | 57 | Si buscas esto: interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. |
 
 ## Acceso, coste y equipo
 

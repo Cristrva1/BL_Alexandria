@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Once skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de LinkedIn, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.
@@ -35,6 +37,15 @@ Igual que su skill hermana de Instagram: se copian `skills/li-*` a `~/.claude/sk
 Estado en GitHub: activo · último push 2026-09-17 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Jakeschincariol/linkedin-agent-skill/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills para redes sociales**: linkedin-agent-skill ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [instagram-agent-skill](instagram-agent-skill.md) ⭐ recomendado | 56 | Si buscas esto: skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. |
+| 2 | **linkedin-agent-skill** (esta ficha) | 47 | Si buscas esto: skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. |
 
 ## Acceso, coste y equipo
 

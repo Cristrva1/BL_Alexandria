@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Agente de código de código abierto (MIT) de Kilo Code, Inc., con servicio en la nube y pasarela de modelos de pago por uso. Muy activo. La extensión nació a partir de Roo Code y Cline; según el README, la CLI actual es un fork de OpenCode.
@@ -35,6 +37,15 @@ Escrito en TypeScript; se instala como extensión del marketplace de VS Code, pl
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v7.8.27 (2026-11-05) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Kilo-Org/kilocode/blob/main/README.md) · [2](https://kilo.ai/)</sub>
+
+## Ver similares
+
+Grupo **Agentes de código en el editor**: Kilo Code ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Cline](cline.md) ⭐ recomendado | 66 | Si buscas esto: agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. |
+| 2 | **Kilo Code** (esta ficha) | 60 | Si buscas esto: agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP. |
 
 ## Acceso, coste y equipo
 

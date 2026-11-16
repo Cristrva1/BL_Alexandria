@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework en TypeScript para aplicaciones y agentes de IA, de Mastra. Doble licencia: Apache 2.0 para el núcleo y Mastra Enterprise License (código visible pero no libre) en los directorios `ee/`; GitHub lo marca NOASSERTION. Muy activo (@mastra/core 1.83.0).
@@ -37,6 +39,16 @@ Node/TypeScript. Se crea con `npm create mastra@latest` y se integra en apps Rea
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @mastra/core@1.83.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mastra-ai/mastra/blob/main/README.md) · [2](https://docs.copilotkit.ai/mastra) · [3](https://langfuse.com/integrations/frameworks/mastra) · [4](https://mastra.ai/docs/observability/overview)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de agentes en TypeScript**: Mastra ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [AI SDK (Vercel)](vercel-ai.md) ⭐ recomendado | 67 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
+| 2 | **Mastra** (esta ficha) | 65 | Si buscas esto: framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
+| 3 | [LangGraph.js](langgraphjs.md) | 60 | Si buscas esto: versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
 
 ## Acceso, coste y equipo
 

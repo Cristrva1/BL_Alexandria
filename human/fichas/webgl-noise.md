@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 webgl-noise, rutinas de ruido procedural en GLSL (simplex, clásico, celular y psrdnoise) de Ashima Arts y @stegu. Licencia MIT. Es un repo histórico y estable (~3k estrellas, sin cambios desde noviembre de 2024).

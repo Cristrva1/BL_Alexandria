@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Código de *Machine Learning for Trading* (3.ª edición) de Stefan Jansen: 27 capítulos y nueve casos de estudio. El código es MIT; el contenido del libro está protegido. Es muy popular (~22k estrellas, v3.1.0-artifacts).

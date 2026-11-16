@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OmniRoute, pasarela local de IA gratuita creada por @diegosouzapw. Licencia MIT. Tiene un recuento de estrellas inusualmente alto (~88k) y publica versiones casi a diario (v3.8.53).
@@ -35,6 +37,17 @@ Se instala con `npm install -g omniroute`, con Docker (`diegosouzapw/omniroute`)
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.8.53 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md)</sub>
+
+## Ver similares
+
+Grupo **Pasarelas y routers de proveedores LLM**: OmniRoute ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [litellm](litellm.md) ⭐ recomendado | 77 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
+| 2 | **OmniRoute** (esta ficha) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
+| 3 | [claude-code-router](claude-code-router.md) | 57 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
+| 4 | [backdoor](backdoor.md) | 36 | Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros). |
 
 ## Acceso, coste y equipo
 

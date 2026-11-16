@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OSIRIS (Open Source Intelligence & Reconnaissance Integrated System), panel OSINT en tiempo real de @simplifaisoul. Licencia MIT. Es reciente (creado en mayo de 2026, ~12k estrellas, v5.0.0).
@@ -35,6 +37,15 @@ Es una app Next.js 16 con MapLibre GL que se instala con npm, Docker Compose o l
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v5.0.0 (2026-09-28) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/simplifaisoul/osiris/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Paneles OSINT sobre globo 3D**: osiris ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [gods-eye-view](gods-eye-view.md) ⭐ recomendado | 68 | Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
+| 2 | **osiris** (esta ficha) | 53 | Si buscas esto: panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. |
 
 ## Acceso, coste y equipo
 

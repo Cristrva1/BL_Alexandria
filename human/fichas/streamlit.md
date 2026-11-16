@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Streamlit, framework de apps de datos en Python, propiedad de Snowflake. Licencia Apache-2.0. Es muy maduro (~46k estrellas, 1.67.0) y ahora se presenta como «agent-native».
@@ -37,6 +39,18 @@ Se instala con `pip install streamlit` y se ejecuta con `streamlit run app.py`. 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.67.0 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/streamlit/streamlit/blob/develop/README.md)</sub>
+
+## Ver similares
+
+Grupo **Apps web de datos en Python**: streamlit ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **streamlit** (esta ficha) ⭐ recomendado | 76 | Si quieres convertir un script de datos en app web con la menor curva. |
+| 2 | [Gradio](gradio.md) | 71 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
+| 3 | [Reflex](reflex.md) | 71 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 4 | [NiceGUI](nicegui.md) | 68 | Si quieres una interfaz web en Python con control fino de componentes. |
+| 5 | [Panel](panel.md) | 55 | Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos. |
 
 ## Acceso, coste y equipo
 

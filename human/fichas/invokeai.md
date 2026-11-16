@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Invoke (InvokeAI), suite creativa de IA para medios visuales, de Invoke AI. Licencia Apache-2.0. Es madura (~29k estrellas, v6.14.4).
@@ -35,6 +37,15 @@ Se instala con el Launcher oficial en hardware compatible (GPU NVIDIA, AMD o App
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v6.14.4 (2026-11-03) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/invoke-ai/InvokeAI/blob/main/README.md) · [2](https://invoke.ai/start-here/installation/)</sub>
+
+## Ver similares
+
+Grupo **Interfaces de creación de imágenes**: InvokeAI ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **InvokeAI** (esta ficha) ⭐ recomendado | 73 | Si buscas esto: suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. |
+| 2 | [Krita AI Diffusion](krita-ai-diffusion.md) | 55 | Si buscas esto: plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. |
 
 ## Acceso, coste y equipo
 

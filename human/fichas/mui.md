@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Material UI es una biblioteca completa de componentes React (MIT) con una implementación independiente de Material Design de Google, desarrollada por MUI. Es muy madura (v9.5.0, más de una década de desarrollo). La empresa tiene productos de pago: MUI X Pro y Premium, con licencia comercial, y plantillas premium.
@@ -35,6 +37,19 @@ Se instala `@mui/material` junto con su motor de estilos: Emotion por defecto, o
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v9.5.0 (2026-10-09) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mui/material-ui/blob/master/README.md) · [2](https://mui.com/x/introduction/licensing/) · [3](https://mui.com/material-ui/getting-started/installation/)</sub>
+
+## Ver similares
+
+Grupo **Bibliotecas de componentes React**: Material UI ocupa la posición 3 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ant Design](ant-design.md) ⭐ recomendado | 77 | Si construyes paneles empresariales densos en datos. |
+| 2 | [ui](ui.md) | 73 | Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui). |
+| 3 | **Material UI** (esta ficha) | 70 | Si quieres Material Design y la biblioteca de componentes React más usada. |
+| 4 | [Chakra UI](chakra-ui.md) | 64 | Si priorizas accesibilidad y estilos por props. |
+| 5 | [heroui](heroui.md) | 62 | Si quieres componentes bonitos sobre Tailwind (antes NextUI). |
+| 6 | [Mantine](mantine.md) | 58 | Si quieres componentes y hooks completos con buena documentación y poca configuración. |
 
 ## Acceso, coste y equipo
 

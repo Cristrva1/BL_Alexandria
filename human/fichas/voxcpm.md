@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 VoxCPM2, TTS sin tokenizador para habla multilingüe, diseño de voces y clonación, de OpenBMB. Licencia Apache-2.0 para código y pesos, con uso comercial permitido. Tiene ~43k estrellas (2.0.3).

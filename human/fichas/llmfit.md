@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de terminal de código abierto (MIT) escrita en Rust por Alex Jones que calcula qué LLM puede ejecutar tu hardware. Proyecto de 2026 muy activo (v1.1.20).

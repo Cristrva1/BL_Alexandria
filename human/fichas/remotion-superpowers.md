@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Remotion Superpowers, plugin que conecta voz en off, música, efectos, material de archivo, imágenes y clips de IA, subtítulos y un ciclo de revisión con Remotion a través del agente, de DojoCodingLabs. Licencia MIT. Es de nicho (~170 estrellas, v2.3.0).
@@ -36,6 +38,16 @@ Requiere Node.js 22.18+ y las skills oficiales, que instala `/setup`. El servido
 Estado en GitHub: activo · último push 2026-10-29 · última versión publicada v2.3.0 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DojoCodingLabs/remotion-superpowers/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills y flujos de producción de video**: Remotion Superpowers ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenMontage](openmontage.md) ⭐ recomendado | 72 | Si buscas esto: pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. |
+| 2 | [video-use](video-use.md) | 60 | Si buscas esto: edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. |
+| 3 | **Remotion Superpowers** (esta ficha) | 48 | Si buscas esto: orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. |
 
 ## Acceso, coste y equipo
 

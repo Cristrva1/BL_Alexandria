@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de código abierto (MIT) de la AI4Finance Foundation, ligado a investigación académica. Activo, aunque gran parte del contenido son cuadernos y recetas.

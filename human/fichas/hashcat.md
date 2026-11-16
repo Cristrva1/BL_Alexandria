@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de recuperación de contraseñas de código abierto (MIT) del proyecto hashcat, creada por Jens Steube. Muy madura y activa.
@@ -42,6 +44,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v8.0.0 (2026-10-25) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hashcat/hashcat/blob/master/README.md) · [2](https://hashcat.net/hashcat/)</sub>
+
+## Ver similares
+
+Grupo **Cracking de contraseñas**: hashcat ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **hashcat** (esta ficha) ⭐ recomendado | 62 | Si buscas esto: utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. |
+| 2 | [John the Ripper (jumbo)](john.md) | 53 | Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Gestor de marcadores autoalojado «guárdalo todo» (antes Hoarder) con etiquetado por IA, de Localhost Labs Ltd. Licencia AGPL-3.0. Es activo y popular (~31k estrellas, v0.35.0).

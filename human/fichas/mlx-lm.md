@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Paquete de código abierto (MIT) del equipo ml-explore de Apple, construido sobre el framework MLX. Activo; requiere un Mac con Apple Silicon.

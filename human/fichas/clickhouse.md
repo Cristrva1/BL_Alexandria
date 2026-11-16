@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 80/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema de gestión de bases de datos columnar de código abierto (Apache-2.0) mantenido por ClickHouse Inc., que también vende ClickHouse Cloud. Muy activo, con versiones mensuales; en enero de 2026 la empresa adquirió Langfuse, que usa ClickHouse como almacén analítico.

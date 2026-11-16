@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 react-three-fiber (@react-three/fiber), renderer de React para three.js, de pmndrs. Licencia MIT. Es madura (~34k estrellas, v9.8.2).

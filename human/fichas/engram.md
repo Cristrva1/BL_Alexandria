@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Memoria persistente para agentes de código de Gentleman-Programming, de código abierto (MIT) y financiada por donaciones, sin funciones de pago. Muy activa (v3.7.2) y parte del ecosistema Gentle-AI.
@@ -37,6 +39,16 @@ Un único binario en Go sin dependencias, con SQLite y búsqueda de texto comple
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.7.2 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Gentleman-Programming/engram/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Memoria persistente para agentes de código**: Engram ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [claude-mem](claude-mem.md) ⭐ recomendado | 74 | Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más. |
+| 2 | **Engram** (esta ficha) | 62 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
+| 3 | [agentmemory](agentmemory.md) | 52 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
 
 ## Acceso, coste y equipo
 

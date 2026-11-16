@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 DeerFlow 2.0, «super agent harness» open source de ByteDance, construido sobre LangGraph y LangChain. Licencia MIT. Es una reescritura completa sin código compartido con la v1 (el framework Deep Research sigue en la rama 1.x), tiene ~85k estrellas y está activo.

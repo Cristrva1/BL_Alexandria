@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección de tutoriales de @NirDiamant para llevar agentes de IA a producción. **Licencia no comercial personalizada** (GitHub la marca NOASSERTION): no es open source en sentido OSI. Es muy activa y el README promociona un libro del autor.

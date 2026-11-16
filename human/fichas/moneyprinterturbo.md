@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 MoneyPrinterTurbo, app para generar vídeos cortos a partir de un tema o palabra clave, de @harry0703. Licencia MIT. Es muy popular (~144k estrellas, v1.3.10) y su README está lleno de patrocinios y enlaces de afiliado a proveedores de modelos.
@@ -35,6 +37,15 @@ Requiere Python 3.11+ y se instala con pip (paquete oficial), desde el código o
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.3.10 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Generación automática de videos cortos**: MoneyPrinterTurbo ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **MoneyPrinterTurbo** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: app que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
+| 2 | [short-video-factory](short-video-factory.md) | 46 | Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. |
 
 ## Acceso, coste y equipo
 

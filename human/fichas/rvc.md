@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 RVC (Retrieval-based Voice Conversion WebUI), framework para convertir el timbre de voz, de RVC-Project. Licencia MIT. Es muy popular (~39k estrellas, 2.3.260718); el README principal está en chino.

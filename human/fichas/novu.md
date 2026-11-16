@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Infraestructura de comunicación de código abierto para productos y agentes, de Novu. Sigue un modelo «open core»: el núcleo es abierto y la carpeta `enterprise` requiere licencia comercial; publica versiones con frecuencia.

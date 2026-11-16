@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Chart.js, librería JavaScript de gráficos sobre Canvas para diseñadores y desarrolladores. Licencia MIT. Es muy madura (~68k estrellas, v4.6.1).
@@ -35,6 +37,17 @@ Se instala con `npm install chart.js` o desde CDN y dibuja en un elemento `<canv
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v4.6.1 (2026-10-22) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chartjs/Chart.js/blob/master/README.md) · [2](https://www.chartjs.org/docs/latest/)</sub>
+
+## Ver similares
+
+Grupo **Librerías de gráficos**: Chart.js ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [echarts](echarts.md) ⭐ recomendado | 71 | Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas. |
+| 2 | [D3.js](d3.md) | 70 | Si necesitas visualizaciones a medida y control total sobre SVG. |
+| 3 | [Recharts](recharts.md) | 69 | Si usas React y quieres gráficos declarativos con pocas líneas. |
+| 4 | **Chart.js** (esta ficha) | 64 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
 
 ## Acceso, coste y equipo
 

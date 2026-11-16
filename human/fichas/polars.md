@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Polars, motor de consultas y DataFrames escrito en Rust con API de Python (y Rust, Node, R), de pola-rs. Licencia MIT. Es muy madura (~40k estrellas, py-2.1.0).
@@ -43,6 +45,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada py-2.1.0 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pola-rs/polars/blob/main/README.md) · [2](https://docs.pola.rs/user-guide/installation/)</sub>
+
+## Ver similares
+
+Grupo **Procesamiento de datos tabulares**: Polars ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [pandas](pandas.md) ⭐ recomendado | 77 | Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
+| 2 | [DuckDB](duckdb.md) | 68 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| 3 | **Polars** (esta ficha) | 67 | Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Acceso, coste y equipo
 

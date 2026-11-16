@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OpenIDEA, IDE nativo con núcleo en Rust que reproduce la forma de trabajar de IntelliJ IDEA, de l0ng-ai. Licencia Apache-2.0; no está afiliado a JetBrains. Es muy reciente (creado en octubre de 2026) y ya tiene ~9k estrellas.

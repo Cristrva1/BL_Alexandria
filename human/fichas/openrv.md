@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 44/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Open RV, visor de imágenes y secuencias para artistas de VFX y animación, de la Academy Software Foundation. Licencia Apache-2.0 con componentes bajo otras licencias (GitHub muestra NOASSERTION). Tiene ~800 estrellas (v4.0.2).

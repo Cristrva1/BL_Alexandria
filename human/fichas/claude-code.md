@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Claude Code, agente de programación de Anthropic para la terminal, el IDE y la web. Es software propietario: el repo contiene documentación, plugins y seguimiento de issues, y el uso se rige por los Términos Comerciales de Anthropic (GitHub no detecta licencia). Es muy activo (~156k estrellas, v2.1.325).
@@ -42,6 +44,22 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (282). La lista s
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.1.325 (2026-11-13) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/claude-code/blob/main/README.md) · [2](https://code.claude.com/docs/en/overview)</sub>
+
+## Ver similares
+
+Grupo **Agentes de programación en terminal**: Claude Code ocupa la posición 6 de 9 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenCode](opencode.md) ⭐ recomendado | 82 | Si quieres un agente de terminal independiente del proveedor, con TUI cuidada y muchos modelos. |
+| 2 | [Codex CLI](codex.md) | 71 | Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox. |
+| 3 | [Gemini CLI](gemini-cli.md) | 65 | Si trabajas con Google Code Assist empresarial; para uso individual Google remite a Antigravity CLI. |
+| 4 | [Qwen Code](qwen-code.md) | 64 | Si quieres un agente de terminal que hable con varios protocolos (OpenAI, Anthropic, Gemini) o con modelos locales. |
+| 5 | [goose](goose.md) | 62 | Si quieres un agente local extensible por MCP, con app de escritorio además de la CLI. |
+| 6 | **Claude Code** (esta ficha) | 58 | Si usas Claude (Pro/Max o API) y quieres el agente de terminal más maduro con skills, hooks y subagentes. |
+| 7 | [MiMo-Code](mimo-code.md) | 50 | Si quieres probar el agente de Xiaomi MiMo con memoria persistente. |
+| 8 | [Aider](aider.md) | 49 | Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo. |
+| 9 | [Antigravity CLI](antigravity-cli.md) | 27 | Si usas Antigravity de Google y quieres su agente desde la terminal. |
 
 ## Acceso, coste y equipo
 

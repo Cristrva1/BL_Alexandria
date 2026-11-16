@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Kit de diarización de hablantes en Python sobre PyTorch (organización pyannote; pyannoteAI ofrece el servicio premium). Licencia MIT para el código; los modelos se publican en Hugging Face con condiciones propias. Versión 4.0.7 (junio de 2026), ~11k estrellas.

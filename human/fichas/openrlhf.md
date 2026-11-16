@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto (Apache-2.0) de la comunidad OpenRLHF. Activo; el README recomienda también Molt (NVIDIA NeMo) como alternativa ligera.
@@ -35,6 +37,15 @@ Paquete Python (pip o Docker) sobre PyTorch; usa Ray para distribuir, vLLM para 
 Estado en GitHub: activo · último push 2026-11-03 · última versión publicada v0.11.2 (2026-09-14) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md) · [2](https://openrlhf.readthedocs.io/)</sub>
+
+## Ver similares
+
+Grupo **Aprendizaje por refuerzo para LLM**: OpenRLHF ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [verl](verl.md) ⭐ recomendado | 68 | Si buscas esto: framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. |
+| 2 | **OpenRLHF** (esta ficha) | 58 | Si buscas esto: framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. |
 
 ## Acceso, coste y equipo
 

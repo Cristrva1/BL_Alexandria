@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor autoalojado de audiolibros y podcasts, creado por @advplyr. Licencia GPL-3.0. Es maduro y activo (~15k estrellas, v2.37.2), pero el README avisa que no se revisan PR del frontend en Vue porque se está reescribiendo en React.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de escritorio de código abierto (Apache 2.0) de MODSetter, alternativa a NotebookLM que puede funcionar sin conexión («air-gapped») para documentos que no puedes subir. Activa (v2.3.1); algunos complementos requieren licencia de SurfSense con prueba gratuita de 14 días.
@@ -35,6 +37,15 @@ Backend en Python con frontend en TypeScript, empaquetado como app para Windows,
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.3.1 (2026-11-03) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/MODSetter/SurfSense/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Alternativas a NotebookLM**: SurfSense ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [open-notebook](open-notebook.md) ⭐ recomendado | 67 | Si buscas esto: clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
+| 2 | **SurfSense** (esta ficha) | 62 | Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
 ## Acceso, coste y equipo
 

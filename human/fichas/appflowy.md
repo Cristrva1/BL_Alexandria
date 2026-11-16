@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Espacio de trabajo con IA, open source y alternativa a Notion, de AppFlowy. Licencia AGPL-3.0. Es maduro y popular (~79k estrellas, 0.15.1) y sigue versionado como 0.x.
@@ -35,6 +37,15 @@ El cliente está hecho con Flutter (Dart) y Rust, y tiene apps para escritorio y
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 0.15.1 (2026-11-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md) · [2](https://appflowy.com/docs/Step-by-step-Self-Hosting-Guide---From-Zero-to-Production) · [3](https://appflowy.com/guide/appflowy-local-ai-ollama) · [4](https://coolify.io/docs/services/appflowy)</sub>
+
+## Ver similares
+
+Grupo **Espacios de trabajo local-first tipo Notion**: AppFlowy ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **AppFlowy** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. |
+| 2 | [Anytype Desktop](anytype-ts.md) | 48 | Si buscas esto: cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. |
 
 ## Acceso, coste y equipo
 

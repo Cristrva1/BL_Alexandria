@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Opik, plataforma open source de Comet para observabilidad, evaluación y trazado de agentes de IA. Licencia Apache-2.0 en toda la plataforma (servidor incluido). Es muy activa (~23k estrellas, 2.2.143).
@@ -36,6 +38,18 @@ Se usa en Comet Cloud o se autoaloja (Docker Compose o Kubernetes); el cliente s
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2.2.143 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/comet-ml/opik/blob/main/README.md) · [2](https://www.comet.com/docs/opik/integrations/langgraph) · [3](https://www.comet.com/docs/opik/integrations/litellm) · [4](https://www.comet.com/docs/opik/integrations/ragas) · [5](https://www.comet.com/docs/opik/integrations/dspy)</sub>
+
+## Ver similares
+
+Grupo **Observabilidad y trazas de LLM**: Opik ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langfuse](langfuse.md) ⭐ recomendado | 79 | Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande. |
+| 2 | **Opik** (esta ficha) | 75 | Si quieres trazas y evaluación de LLM con integración en pruebas. |
+| 3 | [MLflow](mlflow.md) | 70 | Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM. |
+| 4 | [Phoenix](phoenix.md) | 53 | Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks. |
+| 5 | [Helicone](helicone.md) | 50 | Si quieres observabilidad como proxy con solo cambiar la URL base. |
 
 ## Acceso, coste y equipo
 

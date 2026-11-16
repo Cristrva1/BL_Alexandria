@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 27/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CLI oficial de Google Antigravity (`agy`), producto propietario. El repositorio google-antigravity/antigravity-cli solo contiene README, CHANGELOG, ejemplos y releases con binarios; no publica código fuente ni licencia. La organización de GitHub no está verificada, pero el sitio oficial antigravity.google enlaza la documentación y describe la CLI. Versión 1.5.9 (noviembre de 2026).
@@ -36,6 +38,22 @@ Se instala con los scripts oficiales de antigravity.google (macOS/Linux, PowerSh
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 1.5.9 (2026-11-14) · licencia declarada sin licencia (propietario) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-antigravity/antigravity-cli/blob/main/README.md) · [2](https://antigravity.google/product/antigravity-cli) · [3](https://antigravity.google/docs/cli/overview)</sub>
+
+## Ver similares
+
+Grupo **Agentes de programación en terminal**: Antigravity CLI ocupa la posición 9 de 9 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenCode](opencode.md) ⭐ recomendado | 82 | Si quieres un agente de terminal independiente del proveedor, con TUI cuidada y muchos modelos. |
+| 2 | [Codex CLI](codex.md) | 71 | Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox. |
+| 3 | [Gemini CLI](gemini-cli.md) | 65 | Si trabajas con Google Code Assist empresarial; para uso individual Google remite a Antigravity CLI. |
+| 4 | [Qwen Code](qwen-code.md) | 64 | Si quieres un agente de terminal que hable con varios protocolos (OpenAI, Anthropic, Gemini) o con modelos locales. |
+| 5 | [goose](goose.md) | 62 | Si quieres un agente local extensible por MCP, con app de escritorio además de la CLI. |
+| 6 | [Claude Code](claude-code.md) | 58 | Si usas Claude (Pro/Max o API) y quieres el agente de terminal más maduro con skills, hooks y subagentes. |
+| 7 | [MiMo-Code](mimo-code.md) | 50 | Si quieres probar el agente de Xiaomi MiMo con memoria persistente. |
+| 8 | [Aider](aider.md) | 49 | Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo. |
+| 9 | **Antigravity CLI** (esta ficha) | 27 | Si usas Antigravity de Google y quieres su agente desde la terminal. |
 
 ## Acceso, coste y equipo
 

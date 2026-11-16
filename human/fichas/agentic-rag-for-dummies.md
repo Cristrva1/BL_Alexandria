@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto educativo de código abierto (MIT) de Giovanni Pasqualino que enseña a construir un sistema de RAG agéntico modular con LangGraph. Activo (v2.3.1), con cuaderno interactivo y proyecto ejecutable.

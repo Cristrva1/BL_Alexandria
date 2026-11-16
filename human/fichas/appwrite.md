@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de backend de código abierto (BSD-3-Clause) de Appwrite, que ofrece también una nube gestionada. Muy popular y activa.
@@ -35,6 +37,15 @@ Se autoaloja con Docker (un `docker run` que instala la pila de contenedores) o 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2.7.2 (2026-11-12) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/appwrite/appwrite/blob/main/README.md) · [2](https://appwrite.io/docs)</sub>
+
+## Ver similares
+
+Grupo **Backends como servicio auto-hospedados**: Appwrite ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [supabase](supabase.md) ⭐ recomendado | 76 | Si buscas esto: plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. |
+| 2 | **Appwrite** (esta ficha) | 73 | Si buscas esto: plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. |
 
 ## Acceso, coste y equipo
 

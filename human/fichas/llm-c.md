@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Implementación de entrenamiento de LLMs en C/CUDA puro (MIT) de Andrej Karpathy, sin PyTorch ni Python. Es un proyecto educativo y de investigación de rendimiento, poco activo: el último push es de junio de 2025.

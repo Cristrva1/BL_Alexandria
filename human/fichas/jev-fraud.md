@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 36/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Demo open source (MIT) de @Nutlope que muestra una cascada de modelos para detectar fraude en emails. Es un proyecto de ejemplo, no una herramienta mantenida: tiene ~17 estrellas y su último push es de septiembre de 2026.

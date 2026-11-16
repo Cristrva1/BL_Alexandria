@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Marp, ecosistema para escribir presentaciones en Markdown plano, de marp-team. Licencia MIT. Es maduro (~13k estrellas); este repo es el punto de entrada (web y documentación) a Marpit, Marp Core, Marp CLI y Marp for VS Code.
@@ -35,6 +37,16 @@ Marp CLI se usa vía npm o npx y Marp for VS Code ofrece previsualización. La e
 Estado en GitHub: activo · último push 2026-11-07 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/marp-team/marp/blob/main/README.md) · [2](https://marp.app/)</sub>
+
+## Ver similares
+
+Grupo **Presentaciones desde Markdown**: Marp ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Slidev](slidev.md) ⭐ recomendado | 73 | Si buscas esto: presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| 2 | [reveal.js](reveal-js.md) | 59 | Si buscas esto: framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
+| 3 | **Marp** (esta ficha) | 47 | Si buscas esto: entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado. |
 
 ## Acceso, coste y equipo
 

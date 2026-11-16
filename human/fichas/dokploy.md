@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 PaaS autoalojable de Dokploy Technology, Inc. La licencia es Apache-2.0 salvo el contenido bajo /proprietary (LICENSE_PROPRIETARY). Muy activo; ofrece Dokploy Cloud de pago.
@@ -35,6 +37,16 @@ Se instala en un servidor Linux con un script que configura Docker, Swarm y Trae
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.31.2 (2026-11-13) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Dokploy/dokploy/blob/canary/README.md) · [2](https://docs.dokploy.com/) · [3](https://github.com/Dokploy/dokploy/blob/canary/LICENSE.MD)</sub>
+
+## Ver similares
+
+Grupo **Paneles de auto-hospedaje y PaaS propios**: Dokploy ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [coolify](coolify.md) ⭐ recomendado | 74 | Si buscas esto: plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. |
+| 2 | **Dokploy** (esta ficha) | 67 | Si buscas esto: plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. |
+| 3 | [CasaOS](casaos.md) | 52 | Si buscas esto: entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
 
 ## Acceso, coste y equipo
 

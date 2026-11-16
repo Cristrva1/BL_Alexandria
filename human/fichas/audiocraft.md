@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 AudioCraft, librería PyTorch de Meta para investigación en generación de audio (MusicGen y AudioGen). El código es MIT y los pesos son CC-BY-NC 4.0 (no comercial). Tiene ~24k estrellas y no cambia desde marzo de 2026.
@@ -37,6 +39,16 @@ Requiere Python 3.9 y PyTorch 2.1.0 (versiones antiguas) y se instala con `pip i
 Estado en GitHub: activo · último push 2026-03-03 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facebookresearch/audiocraft/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Generación de música**: AudioCraft ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ACE-Step-1.5](ace-step-1-5.md) ⭐ recomendado | 70 | Si buscas esto: modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
+| 2 | [YuE2](yue.md) | 67 | Si buscas esto: modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes. |
+| 3 | **AudioCraft** (esta ficha) | 54 | Si buscas esto: librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de código abierto de la Open Home Foundation. La licencia combina MIT (código Python) y GPL-3.0 (código C++ del firmware) según su archivo de licencia. Muy maduro.

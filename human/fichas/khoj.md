@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de IA personal («segundo cerebro») de código abierto (AGPL-3.0) y autoalojable de Khoj, que escala de un uso individual en el dispositivo a IA empresarial. Ofrece app en la nube, autoalojamiento y opciones Enterprise; su última versión es una beta de la 2.0, con actividad menor desde agosto de 2026 mientras el equipo impulsa Pipali.
@@ -35,6 +37,16 @@ Aplicación Python con clientes en TypeScript, Emacs Lisp y Java (Android). El a
 Estado en GitHub: activo · último push 2026-08-02 · última versión publicada 2.0.0-beta.28 (2026-03-26) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/khoj-ai/khoj/blob/master/README.md) · [2](https://docs.khoj.dev/advanced/ollama) · [3](https://docs.khoj.dev/advanced/litellm) · [4](https://docs.khoj.dev/clients/obsidian)</sub>
+
+## Ver similares
+
+Grupo **Workspaces privados con documentos y chat**: Khoj ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [AnythingLLM](anything-llm.md) ⭐ recomendado | 78 | Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
+| 2 | [PrivateGPT](private-gpt.md) | 67 | Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
+| 3 | **Khoj** (esta ficha) | 48 | Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
 
 ## Acceso, coste y equipo
 

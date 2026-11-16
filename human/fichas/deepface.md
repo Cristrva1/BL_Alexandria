@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (MIT) creada por Sefik Ilkin Serengil. Muy popular y activa; su autor ofrece además una API gestionada (deepface.dev).

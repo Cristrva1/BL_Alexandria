@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Qlib, plataforma de investigación cuantitativa orientada a IA de Microsoft. Licencia MIT. Es madura (~50k estrellas, v0.9.8).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Archify, skill que convierte ideas, preguntas o planes en visuales HTML interactivos, de @tt-a1i. Licencia Apache-2.0 (las concesiones MIT históricas siguen vigentes; servicios de terceros y planes de pago no son del proyecto). Creado en abril de 2026, tiene ~97k estrellas (v3.2.0), una cifra inusual.
@@ -35,6 +37,15 @@ Funciona con Cursor, Claude Code, Codex CLI y OpenCode; en Claude.ai se sube `ar
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.0 (2026-10-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tt-a1i/archify/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de diagramas de arquitectura**: archify ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **archify** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. |
+| 2 | [diagram-design](diagram-design.md) | 56 | Si buscas esto: skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. |
 
 ## Acceso, coste y equipo
 

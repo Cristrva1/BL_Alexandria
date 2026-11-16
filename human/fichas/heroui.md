@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de componentes React (Apache-2.0) antes llamada NextUI, de HeroUI Inc. Es madura y muy activa (v3.2.7).
@@ -36,6 +38,19 @@ Se instala con `npm install @heroui/styles @heroui/react`, con importaciones por
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.7 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/heroui-inc/heroui/blob/v3/README.md) · [2](https://www.heroui.com/docs/react/getting-started)</sub>
+
+## Ver similares
+
+Grupo **Bibliotecas de componentes React**: heroui ocupa la posición 5 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ant Design](ant-design.md) ⭐ recomendado | 77 | Si construyes paneles empresariales densos en datos. |
+| 2 | [ui](ui.md) | 73 | Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui). |
+| 3 | [Material UI](mui.md) | 70 | Si quieres Material Design y la biblioteca de componentes React más usada. |
+| 4 | [Chakra UI](chakra-ui.md) | 64 | Si priorizas accesibilidad y estilos por props. |
+| 5 | **heroui** (esta ficha) | 62 | Si quieres componentes bonitos sobre Tailwind (antes NextUI). |
+| 6 | [Mantine](mantine.md) | 58 | Si quieres componentes y hooks completos con buena documentación y poca configuración. |
 
 ## Acceso, coste y equipo
 

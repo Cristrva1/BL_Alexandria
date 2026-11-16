@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Fincept Terminal, terminal nativo de escritorio para investigación financiera, de Fincept Corporation. Licencia AGPL-3.0 o posterior, con una edición Enterprise propietaria de pago. Es popular (~34k estrellas, v4.5.2).

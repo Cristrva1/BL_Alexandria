@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación autoalojada para archivar sitios web en varios formatos. Licencia MIT. Es madura y activa (~29k estrellas, v0.9.77).

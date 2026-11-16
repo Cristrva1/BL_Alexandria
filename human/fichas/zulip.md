@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Team chat Apache-2.0 con topic threading.
@@ -31,6 +33,16 @@ Installer/docs o cloud.
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 13.2 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zulip/zulip#readme) · [2](https://zulip.com)</sub>
+
+## Ver similares
+
+Grupo **Chat de equipo auto-hospedado**: Zulip ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Rocket.Chat](rocket-chat.md) ⭐ recomendado | 75 | Si buscas esto: plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. |
+| 2 | [Mattermost](mattermost.md) | 71 | Si buscas esto: plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. |
+| 3 | **Zulip** (esta ficha) | 63 | Si buscas esto: chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. |
 
 ## Acceso, coste y equipo
 

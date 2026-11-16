@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 WrenAI, motor de BI generativo (GenBI) de Canner. El motor (capa semántica MDL, text-to-SQL, MCP, CLI y conectores) es Apache-2.0 y las funciones de seguridad fina y la UI GenBI son comerciales (GitHub muestra NOASSERTION). Es activo (~18k estrellas, wren-v0.18.0).

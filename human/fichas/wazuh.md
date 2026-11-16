@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de seguridad de código abierto de Wazuh Inc. (GPL-2.0 en su mayor parte, con componentes bajo otras licencias, como AGPL). Muy madura; la empresa vende cloud y soporte.

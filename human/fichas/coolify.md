@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Coolify, plataforma autoalojada para desplegar aplicaciones, bases de datos y servicios en tus propios servidores, de coollabsio. Licencia Apache-2.0. Es muy popular (~66k estrellas), activa y financiada por patrocinios.
@@ -42,6 +44,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (55). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.7.5 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/coollabsio/coolify/blob/main/README.md) · [2](https://coolify.io/docs/installation) · [3](https://github.com/coollabsio/coolify/tree/main/templates/compose)</sub>
+
+## Ver similares
+
+Grupo **Paneles de auto-hospedaje y PaaS propios**: coolify ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **coolify** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. |
+| 2 | [Dokploy](dokploy.md) | 67 | Si buscas esto: plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. |
+| 3 | [CasaOS](casaos.md) | 52 | Si buscas esto: entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de LangGenius para desarrollar aplicaciones con LLM, con versión cloud y autoalojada. La licencia es la 'Dify Open Source License', basada en Apache 2.0 con condiciones adicionales (GitHub la marca NOASSERTION), así que hay que revisarla antes de ofrecer Dify como servicio multi-inquilino o quitar su marca. Es muy madura y activa (1.19.0, ~161k estrellas).
@@ -38,6 +40,17 @@ Se despliega con Docker Compose (v2.35.0+) desde `docker/` tras copiar `.env.exa
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.19.0 (2026-11-04) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langgenius/dify/blob/main/README.md) · [2](https://docs.dify.ai/en/self-host/use-dify/monitor/integrations/integrate-langfuse.md) · [3](https://docs.dify.ai/en/self-host/use-dify/nodes/llm.md) · [4](https://docs.dify.ai/en/self-host/use-dify/publish/publish-mcp.md) · [5](https://www.comet.com/docs/opik/integrations/dify)</sub>
+
+## Ver similares
+
+Grupo **Builders visuales de agentes**: dify ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langflow](langflow.md) ⭐ recomendado | 70 | Si quieres diseñar flujos de LangChain visualmente y exportarlos. |
+| 2 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
+| 3 | **dify** (esta ficha) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
+| 4 | [Sim](sim.md) | 61 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
 
 ## Acceso, coste y equipo
 

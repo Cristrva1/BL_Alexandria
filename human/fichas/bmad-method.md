@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 BMad Method es un marco de «desarrollo ágil dirigido por IA» de bmad-code-org. El README declara licencia MIT, aunque GitHub la marca como NOASSERTION. Tiene dos líneas: la v6.12 estable, congelada salvo correcciones (release v6.12.4), y la V7 en alfa de vista previa, que cambia a menudo.
@@ -35,6 +37,15 @@ La v6.12 se instala con `npx bmad-method install` y requiere Node.js 20.12+ y Py
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v6.12.4 (2026-10-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Desarrollo guiado por especificaciones**: BMAD Method ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Spec Kit](spec-kit.md) ⭐ recomendado | 76 | Si buscas esto: kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
+| 2 | **BMAD Method** (esta ficha) | 60 | Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
 
 ## Acceso, coste y equipo
 

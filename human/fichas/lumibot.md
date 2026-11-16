@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 LumiBot, framework de Python para crear bots y agentes de trading, de Lumiwealth. Licencia GPL-3.0. Tiene ~2k estrellas (v4.6.73) y promociona su nube BotSpot y su MCP.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de agendamiento de código abierto y comunitaria: un fork de Cal.com con todo el código Enterprise eliminado, 100 % bajo licencia MIT. Sus autores la recomiendan para uso personal y no productivo, y remiten a Cal.com para usos comerciales; no existe versión alojada.
@@ -35,6 +37,15 @@ Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v6.2.0 (2026-03-01) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/calcom/cal.diy/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Reservas y citas**: cal.diy ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **cal.diy** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
+| 2 | [Easy!Appointments](easyappointments.md) | 47 | Si buscas esto: aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. |
 
 ## Acceso, coste y equipo
 

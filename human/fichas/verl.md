@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto (Apache-2.0) iniciado por ByteDance Seed y mantenido ahora por la comunidad verl-project; implementa el artículo HybridFlow. Muy activo.
@@ -36,6 +38,15 @@ Paquete Python sobre PyTorch y Ray; usa FSDP o Megatron-LM para entrenar y vLLM,
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.1 (2026-09-20) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/verl-project/verl/blob/main/README.md) · [2](https://verl-project.github.io)</sub>
+
+## Ver similares
+
+Grupo **Aprendizaje por refuerzo para LLM**: verl ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **verl** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. |
+| 2 | [OpenRLHF](openrlhf.md) | 58 | Si buscas esto: framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. |
 
 ## Acceso, coste y equipo
 

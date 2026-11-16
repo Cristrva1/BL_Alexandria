@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.
@@ -35,6 +37,18 @@ Se instala con pipx (`pipx install superclaude`), que despliega los componentes 
 Estado en GitHub: activo · último push 2026-09-27 · última versión publicada v4.3.0 (2026-03-22) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Metodologías y harness para agentes de código**: SuperClaude_Framework ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ECC](ecc.md) ⭐ recomendado | 72 | Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes. |
+| 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
+| 3 | [Agent Skills (Addy Osmani)](agent-skills.md) | 63 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
+| 4 | [superpowers](superpowers.md) | 62 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
+| 5 | **SuperClaude_Framework** (esta ficha) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo
 

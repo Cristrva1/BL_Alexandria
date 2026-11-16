@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de agentes de código abierto (Apache-2.0) desarrollado por el equipo de AgentScope (origen en Alibaba/Tongyi). La versión 2.0 se presenta como lista para producción; requiere Python 3.11 o superior y tiene desarrollo muy activo.

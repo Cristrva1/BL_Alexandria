@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Presenton, generador open source de presentaciones con IA y API, alternativa a Gamma o Beautiful AI. Licencia Apache-2.0. Tiene ~12k estrellas; app web autoalojada con Docker y app de escritorio en beta.
@@ -35,6 +37,15 @@ Se despliega con `docker run -p 5001:80 ghcr.io/presenton/presenton:latest`, o e
 Estado en GitHub: activo · último push 2026-11-06 · última versión publicada electron-v0.9.12-beta (2026-10-26) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/presenton/presenton/blob/main/README.md) · [2](https://docs.presenton.ai/)</sub>
+
+## Ver similares
+
+Grupo **Generación de presentaciones con IA**: Presenton ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ppt-master](ppt-master.md) ⭐ recomendado | 69 | Si buscas esto: herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. |
+| 2 | **Presenton** (esta ficha) | 60 | Si buscas esto: generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. |
 
 ## Acceso, coste y equipo
 

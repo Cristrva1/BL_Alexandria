@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills de agente de Matt Pocock (MIT) para «ingeniería real, no vibe coding»: pequeñas, adaptables y combinables. Activas (v1.3.2).

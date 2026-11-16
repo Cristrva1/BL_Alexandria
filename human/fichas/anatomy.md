@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de Claude (MIT) de wheresryan22 que explica ideas construyéndolas como objetos interactivos; también funciona en Antigravity, OpenCode, Codex y MiniMax Code. Activa (v1.1.0).

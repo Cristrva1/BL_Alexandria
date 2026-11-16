@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Escáner de aplicaciones web de código abierto (Apache-2.0), nacido en OWASP y patrocinado ahora por Checkmarx. Muy maduro y comunitario.
@@ -42,6 +44,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.17.0 (2025-12-15) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zaproxy/zaproxy/blob/main/README.md) · [2](https://www.zaproxy.org/docs/)</sub>
+
+## Ver similares
+
+Grupo **Proxies de pruebas de aplicaciones web**: ZAP (Zed Attack Proxy) ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **ZAP (Zed Attack Proxy)** (esta ficha) ⭐ recomendado | 73 | Si buscas esto: escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. |
+| 2 | [Caido](caido.md) | 38 | Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. |
 
 ## Acceso, coste y equipo
 

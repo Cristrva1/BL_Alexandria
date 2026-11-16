@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SRT 白板动画, skill que convierte subtítulos SRT en vídeos de pizarra dibujados a mano siguiendo la narración, de @geeklee. Licencia MIT. Tiene ~5.6k estrellas (v1.0.0) y el README está en chino.

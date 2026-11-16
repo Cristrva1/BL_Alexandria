@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CLI y servidor MCP no oficiales para Gemini Notebook (antes Google NotebookLM), de jacob-bd. MIT y muy activo (v0.16.5); el repositorio se renombró a `gemini-notebook-mcp-cli`. Las cuentas personales se prueban con regularidad; el soporte Enterprise es experimental.

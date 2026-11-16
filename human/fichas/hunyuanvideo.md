@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 HunyuanVideo, modelo abierto de generación de vídeo de 13B parámetros de Tencent Hunyuan. Usa la Tencent Hunyuan Community License, que excluye expresamente la UE, Reino Unido y Corea del Sur (GitHub muestra NOASSERTION). Tiene ~13k estrellas y su sucesor es HunyuanVideo-1.5 (repositorio aparte, noviembre de 2025).
@@ -35,6 +37,16 @@ Se instala con PyTorch para CUDA, `requirements.txt` y, opcionalmente, flash-att
 Estado en GitHub: activo · último push 2026-10-08 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md) · [2](https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video) · [3](https://docs.comfy.org/tutorials/video/hunyuan/hunyuan-video)</sub>
+
+## Ver similares
+
+Grupo **Modelos abiertos de video generativo**: HunyuanVideo ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Wan2.2](wan2-2.md) ⭐ recomendado | 67 | Si buscas esto: familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
+| 2 | **HunyuanVideo** (esta ficha) | 54 | Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
+| 3 | [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | 41 | Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (Apache-2.0) creada por Microsoft y ahora bajo la organización deepspeedai, alojada en la LF AI & Data Foundation. Muy madura.

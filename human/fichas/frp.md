@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.

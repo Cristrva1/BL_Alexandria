@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista curada (CC0) de recursos, patrones y plantillas para diseñar 'harnesses' de agentes de IA, es decir, el andamiaje alrededor del modelo. La mantiene ai-boost, acepta patrocinios y está traducida a 9 idiomas. Es muy reciente y activa (último push en noviembre de 2026).

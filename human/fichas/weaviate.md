@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Base de datos vectorial de código abierto de Weaviate B.V. La mayor parte del repositorio es BSD-3-Clause; los archivos de `wl/` pertenecen a la edición Enterprise y requieren clave de licencia. Proyecto maduro con nube gestionada aparte.
@@ -36,6 +38,20 @@ Escrito en Go; se despliega con Docker (`docker compose up -d`), Kubernetes o We
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.40.5 (2026-11-10) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/weaviate/weaviate/blob/main/README.md) · [2](https://docs.weaviate.io/weaviate/model-providers) · [3](https://docs.weaviate.io/deploy/enterprise)</sub>
+
+## Ver similares
+
+Grupo **Bases y librerías vectoriales**: Weaviate ocupa la posición 6 de 7 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Milvus](milvus.md) ⭐ recomendado | 77 | Si necesitas escala de miles de millones de vectores y despliegue distribuido. |
+| 2 | [Qdrant](qdrant.md) | 65 | Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local. |
+| 3 | [Chroma](chroma.md) | 63 | Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG. |
+| 4 | [LanceDB](lancedb.md) | 62 | Si quieres una base vectorial embebida sobre archivos, sin servidor. |
+| 5 | [pgvector](pgvector.md) | 59 | Si ya usas PostgreSQL y quieres vectores en la misma base. |
+| 6 | **Weaviate** (esta ficha) | 59 | Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados. |
+| 7 | [Faiss](faiss.md) | 56 | Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU. |
 
 ## Acceso, coste y equipo
 

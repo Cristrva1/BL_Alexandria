@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Base de datos de contexto de código abierto (AGPLv3) para agentes de IA, de Volcengine (ByteDance). Activa (v0.5.5), con un servicio alojado por Volcengine y un Studio web.

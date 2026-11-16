@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidores MCP de Neo4j Labs, mantenidos por el equipo Field GenAI de Neo4j. Licencia MIT. Son experimentales (~1k estrellas, mcp-neo4j-cypher-v0.6.0) y el README remite al servidor MCP oficial de producto (neo4j/mcp).
@@ -35,6 +37,15 @@ Cada servidor se instala por separado (normalmente con `uvx`) y se configura con
 Estado en GitHub: activo · último push 2026-09-09 · última versión publicada mcp-neo4j-cypher-v0.6.0 (2026-04-10) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md) · [2](https://github.com/neo4j/mcp)</sub>
+
+## Ver similares
+
+Grupo **Servidores MCP de Neo4j**: mcp-neo4j ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Neo4j MCP (oficial)](neo4j-mcp.md) ⭐ recomendado | 60 | Si buscas esto: servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. |
+| 2 | **mcp-neo4j** (esta ficha) | 52 | Si buscas esto: servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. |
 
 ## Acceso, coste y equipo
 

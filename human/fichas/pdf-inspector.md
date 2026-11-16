@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca en Rust de Firecrawl (MIT) para clasificar PDF y extraer su texto. Muy activa (v1.26.0) y disponible para Rust, CLI, Python, Node y WebAssembly en navegador.

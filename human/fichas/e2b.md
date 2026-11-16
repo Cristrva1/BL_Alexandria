@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 E2B, infraestructura open source para ejecutar código generado por IA en sandboxes aislados en la nube. Licencia Apache-2.0. Es maduro y activo (~15k estrellas).
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada @e2b/cli@2.24.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/e2b-dev/E2B/blob/main/README.md) · [2](https://e2b.dev/docs/code-interpreting)</sub>
+
+## Ver similares
+
+Grupo **Sandboxes para agentes**: E2B ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [NemoClaw](nemoclaw.md) ⭐ recomendado | 69 | Si buscas esto: stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
+| 2 | **E2B** (esta ficha) | 65 | Si buscas esto: sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
+| 3 | [sandbox](sandbox.md) | 52 | Si buscas esto: entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
 
 ## Acceso, coste y equipo
 

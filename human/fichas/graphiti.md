@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto (Apache 2.0) de Zep para construir y consultar grafos de contexto temporales para agentes de IA. Activo (v0.31.2); Zep ofrece una plataforma empresarial gestionada sobre el mismo concepto.
@@ -37,6 +39,18 @@ Biblioteca Python 3.10+ (`pip install graphiti-core`) que necesita una base de g
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.31.2 (2026-10-20) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/getzep/graphiti/blob/main/README.md) · [2](https://help.getzep.com/graphiti/getting-started/mcp-server) · [3](https://help.getzep.com/graphiti/integrations/lang-graph-agent)</sub>
+
+## Ver similares
+
+Grupo **Capas de memoria para apps y agentes de IA**: Graphiti ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [mem0](mem0.md) ⭐ recomendado | 76 | Si tu app necesita memoria de usuario a largo plazo con una API sencilla. |
+| 2 | [cognee](cognee.md) | 68 | Si quieres convertir documentos en un grafo de conocimiento consultable por agentes. |
+| 3 | **Graphiti** (esta ficha) | 61 | Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo. |
+| 4 | [supermemory](supermemory.md) | 61 | Si buscas una API de memoria y contexto rápida orientada a productos. |
+| 5 | [Letta](letta.md) | 55 | Si quieres agentes con estado gestionados por un servidor (antes MemGPT). |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Context7, servicio de Upstash que da a los agentes documentación actualizada y ejemplos de código de librerías. Licencia MIT para el repo; el servicio es alojado y requiere clave. Es muy popular (~65k estrellas).

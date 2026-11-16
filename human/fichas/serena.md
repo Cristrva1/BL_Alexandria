@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Serena, un kit de herramientas de código semántico para agentes («el IDE de tu agente»), de Oraios AI. La aplicación es GPL-3.0-or-later y el componente SolidLSP es MIT (GitHub muestra NOASSERTION). Es muy activa (~31k estrellas, v2.1.0).

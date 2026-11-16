@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de componentes React de bajo nivel, sin estilos y accesibles (MIT), con copyright de WorkOS. Es madura y muy usada como base de sistemas de diseño, aunque su ritmo de cambios es moderado: el último push es de octubre de 2026.

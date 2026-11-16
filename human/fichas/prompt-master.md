@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill para Claude (MIT) de nidhinjs que redacta prompts optimizados para otras herramientas de IA. Es un proyecto individual y reciente (último push en octubre de 2026), sin releases. Promete ahorrar créditos y tokens [DATO NO VERIFICADO: sin medición independiente].

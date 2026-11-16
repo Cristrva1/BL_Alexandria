@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 DuckDB, base de datos analítica en proceso (in-process), de la DuckDB Foundation y DuckDB Labs. Licencia MIT. Es muy madura (~43k estrellas, v2.0.0).
@@ -43,6 +45,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (32). La lista se
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.0.0 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/duckdb/duckdb/blob/main/README.md) · [2](https://duckdb.org/docs/installation/)</sub>
+
+## Ver similares
+
+Grupo **Procesamiento de datos tabulares**: DuckDB ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [pandas](pandas.md) ⭐ recomendado | 77 | Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
+| 2 | **DuckDB** (esta ficha) | 68 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| 3 | [Polars](polars.md) | 67 | Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Acceso, coste y equipo
 

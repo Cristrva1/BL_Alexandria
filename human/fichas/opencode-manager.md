@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 44/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OpenCode Manager, centro de mando web autoalojado para OpenCode, de @chriswritescode-dev. Licencia MIT. Tiene ~1k estrellas y está activo.
@@ -35,6 +37,15 @@ Requiere Docker con Compose v2. Se instala con `curl -fsSL https://opencodemanag
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.1.0 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md) · [2](https://opencodemanager.app/docs/getting-started/installation)</sub>
+
+## Ver similares
+
+Grupo **Gestores de sesiones de agentes de código**: opencode-manager ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [T3 Code](t3code.md) ⭐ recomendado | 72 | Si buscas esto: interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. |
+| 2 | **opencode-manager** (esta ficha) | 44 | Si buscas esto: interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. |
 
 ## Acceso, coste y equipo
 

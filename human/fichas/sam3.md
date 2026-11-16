@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SAM 3 (Segment Anything with Concepts), modelo de Meta Superintelligence Labs para detectar, segmentar y seguir objetos en imágenes y vídeo a partir de conceptos. Licencia «SAM License» propia (GitHub muestra NOASSERTION). Tiene ~12k estrellas y ya publicó checkpoints SAM 3.1.

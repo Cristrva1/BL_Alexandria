@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta open source de pentesting con agentes de IA autónomos, de usestrix. Licencia Apache-2.0. Es muy activa (~76k estrellas, v1.7.1); el README distingue la versión open source de otras opciones en strix.ai.
@@ -36,6 +38,15 @@ Se instala con pipx, uv o pip (`strix-agent`) y necesita Docker en marcha; la pr
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.7.1 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/usestrix/strix/blob/main/README.md) · [2](https://docs.strix.ai/quickstart) · [3](https://docs.strix.ai/integrations/mcp)</sub>
+
+## Ver similares
+
+Grupo **Pentesting autónomo con agentes**: strix ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **strix** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT. |
+| 2 | [shannon](shannon.md) | 62 | Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
 
 ## Acceso, coste y equipo
 

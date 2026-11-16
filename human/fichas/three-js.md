@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 three.js, biblioteca JavaScript 3D de propósito general, de @mrdoob y comunidad. Licencia MIT. Es muy madura (~119k estrellas, r187).
@@ -42,6 +44,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (20). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada r187 (2026-10-30) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mrdoob/three.js/blob/dev/README.md) · [2](https://threejs.org/docs/)</sub>
+
+## Ver similares
+
+Grupo **Motores 3D para la web**: three.js ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **three.js** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
+| 2 | [Babylon.js](babylonjs.md) | 67 | Si buscas esto: motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. |
+| 3 | [PlayCanvas Engine](playcanvas.md) | 65 | Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
 
 ## Acceso, coste y equipo
 

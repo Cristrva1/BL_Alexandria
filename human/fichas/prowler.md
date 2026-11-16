@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 > ⚠️ **Licencia y costes:** Open-core: la CLI, el SDK y el Local Server son Apache-2.0 y gratuitos (todos los checks y marcos públicos). Prowler Cloud (SaaS, ~99 USD por cuenta cloud al mes, prueba de 7 días) y Prowler Private Cloud añaden escaneos programados, onboarding de organizaciones, Lighthouse AI, attack paths completos, Jira/Slack, SSO y soporte (prowler.com/pricing, consultado 2026-11-16).
 
 ## ¿Qué es?

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de código abierto (MIT) de la OpenJS Foundation, mantenido por la comunidad. Muy activo.
@@ -36,6 +38,18 @@ Paquetes Node.js en un monorepo: `webdriver` implementa los protocolos W3C WebDr
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v10.2.0 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/webdriverio/webdriverio/blob/main/README.md) · [2](https://github.com/webdriverio/mcp) · [3](https://webdriver.io/docs/gettingstarted)</sub>
+
+## Ver similares
+
+Grupo **Automatización de navegador y pruebas E2E**: WebdriverIO ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [playwright](playwright.md) ⭐ recomendado | 78 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
+| 2 | [Puppeteer](puppeteer.md) | 72 | Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas. |
+| 3 | [Cypress](cypress.md) | 65 | Si haces pruebas de componentes y E2E de frontend dentro del navegador. |
+| 4 | **WebdriverIO** (esta ficha) | 60 | Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js. |
+| 5 | [Selenium](selenium.md) | 60 | Si necesitas el estándar W3C WebDriver, muchos lenguajes o grids existentes. |
 
 ## Acceso, coste y equipo
 

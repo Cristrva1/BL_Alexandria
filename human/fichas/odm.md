@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 ODM (OpenDroneMap), kit de línea de comandos para procesar imágenes aéreas de drones. Licencia AGPL-3.0. Es maduro (~6.6k estrellas, v3.6.2).
@@ -35,6 +37,15 @@ La vía recomendada es Docker (`opendronemap/odm`, con imagen GPU opcional). Est
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.6.2 (2026-08-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenDroneMap/ODM/blob/master/README.md) · [2](https://opendronemap.org/download)</sub>
+
+## Ver similares
+
+Grupo **Fotogrametría con drones**: ODM ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **ODM** (esta ficha) ⭐ recomendado | 58 | Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. |
+| 2 | [WebODM](webodm.md) | 57 | Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
 
 ## Acceso, coste y equipo
 

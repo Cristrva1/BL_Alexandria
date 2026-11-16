@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Editor de diagramas de código abierto (Apache-2.0) de JGraph, muy usado y activo. Los iconos, plantillas y librerías de formas tienen condiciones adicionales. El proyecto no acepta contribuciones externas.

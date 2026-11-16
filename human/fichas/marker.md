@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Conversor de documentos de Datalab que produce Markdown, JSON, fragmentos y HTML. El código es Apache 2.0, pero los pesos de los modelos usan una licencia OpenRAIL-M modificada (gratuita para investigación, uso personal y empresas pequeñas, con condiciones para el resto); activo (v2.2.0) y con API gestionada de pago.
@@ -36,6 +38,19 @@ Biblioteca Python 3.10+ con PyTorch (`pip install marker-pdf`, `[full]` para for
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.2.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/datalab-to/marker/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Conversión de documentos a Markdown/JSON para IA**: Marker ocupa la posición 4 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Docling](docling.md) ⭐ recomendado | 78 | Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local. |
+| 2 | [MinerU](mineru.md) | 68 | Si procesas PDF científicos o en chino con fórmulas y maquetación compleja. |
+| 3 | [Xberg (antes Kreuzberg)](xberg.md) | 63 | Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario. |
+| 4 | **Marker** (esta ficha) | 60 | Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional. |
+| 5 | [Apache Tika](tika.md) | 59 | Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado. |
+| 6 | [Unstructured](unstructured.md) | 58 | Si quieres particionar muchos formatos en elementos para pipelines de RAG. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CodeGraph, CLI que indexa el código en local para dar contexto semántico a asistentes de IA, de @colbymchenry. Licencia MIT. Es muy popular (~78k estrellas, v1.6.2) y prepara una plataforma alojada.
@@ -36,6 +38,18 @@ Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y confi
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.2 (2026-10-03) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/colbymchenry/codegraph/blob/main/README.md) · [2](https://colbymchenry.github.io/codegraph/)</sub>
+
+## Ver similares
+
+Grupo **Mapas e índices de código para agentes**: codegraph ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [graphify](graphify.md) ⭐ recomendado | 75 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
+| 2 | **codegraph** (esta ficha) | 67 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
+| 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
+| 4 | [Repomix](repomix.md) | 52 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
+| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 

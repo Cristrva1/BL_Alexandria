@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Short Video Factory (短视频工厂), app de escritorio para crear vídeos cortos de producto y contenido general, de @YILS-LIN. Licencia AGPL-3.0. Tiene ~6k estrellas (v1.4.0) y su README está principalmente en chino.
@@ -35,6 +37,15 @@ Es una app Electron con Vue y TypeScript para Windows, macOS y Linux. Requiere c
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v1.4.0 (2026-11-09) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/YILS-LIN/short-video-factory/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Generación automática de videos cortos**: short-video-factory ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [MoneyPrinterTurbo](moneyprinterturbo.md) ⭐ recomendado | 77 | Si buscas esto: app que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
+| 2 | **short-video-factory** (esta ficha) | 46 | Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. |
 
 ## Acceso, coste y equipo
 

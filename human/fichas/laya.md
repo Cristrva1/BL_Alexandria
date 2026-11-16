@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 laya, motor de decisión multilingüe no autoregresivo de @NandhaKishorM, con preprint asociado («From Laya to Vega»). Licencia Apache-2.0. Es muy reciente (septiembre de 2026, v0.4.34) y ya tiene ~36k estrellas, una cifra inusual; promociona Studio, el servicio de pago de Embedding Space.

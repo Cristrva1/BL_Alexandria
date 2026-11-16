@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de programación low-code para aplicaciones basadas en eventos, proyecto de la OpenJS Foundation con licencia Apache 2.0. Existe desde 2013 y sigue publicando versiones (serie 5.x en 2026).
@@ -36,6 +38,15 @@ Es una aplicación Node.js: se instala con `npm install -g node-red`, se lanza c
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 5.0.9 (2026-10-21) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/node-red/node-red/blob/master/README.md) · [2](https://flows.nodered.org/node/node-red-contrib-home-assistant-websocket) · [3](https://flows.nodered.org/node/node-red-contrib-ollama)</sub>
+
+## Ver similares
+
+Grupo **Automatización por eventos auto-hospedada**: Node-RED ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Node-RED** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. |
+| 2 | [huginn](huginn.md) | 63 | Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". |
 
 ## Acceso, coste y equipo
 

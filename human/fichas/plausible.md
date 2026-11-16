@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plausible Analytics, analítica web ligera y sin cookies hecha y alojada en la UE. Plausible CE es AGPL-3.0 o posterior y el script de seguimiento es MIT. Es madura (~30k estrellas, v3.2.1).
@@ -35,6 +37,16 @@ Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.2.1 (2026-05-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plausible/analytics/blob/master/README.md) · [2](https://plausible.io/docs/stats-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/plausible)</sub>
+
+## Ver similares
+
+Grupo **Analítica web auto-hospedada**: Plausible Analytics ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Umami](umami.md) ⭐ recomendado | 74 | Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
+| 2 | **Plausible Analytics** (esta ficha) | 59 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
+| 3 | [Matomo](matomo.md) | 57 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
 
 ## Acceso, coste y equipo
 

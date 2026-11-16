@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 HyperFrames, framework de HeyGen que convierte HTML, CSS, medios y animaciones navegables en vídeos MP4 deterministas, pensado para agentes. Licencia Apache-2.0, sin tarifas por render ni umbrales comerciales. Creado en marzo de 2026, ya tiene ~85k estrellas (v0.9.56).
@@ -44,6 +46,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.56 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/heygen-com/hyperframes/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Video y escenas por código**: HyperFrames ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **HyperFrames** (esta ficha) ⭐ recomendado | 73 | Si quieres que un agente componga video desde HTML con HeyGen HyperFrames. |
+| 2 | [remotion](remotion.md) | 68 | Si sabes React y quieres generar videos programáticos con calidad de producción (revisa su licencia). |
+| 3 | [Motion Canvas](motion-canvas.md) | 56 | Si haces animaciones explicativas en TypeScript con editor en tiempo real. |
+| 4 | [MoviePy](moviepy.md) | 54 | Si editas video desde Python (cortes, composición, texto) sin interfaz. |
+| 5 | [Revideo](revideo.md) | 51 | Si quieres renderizar videos desde código TypeScript como API o servicio. |
 
 ## Acceso, coste y equipo
 

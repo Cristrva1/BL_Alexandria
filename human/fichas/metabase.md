@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Metabase, herramienta open source de BI y paneles. La edición open source es AGPL y el repo incluye también código de las ediciones comerciales (GitHub muestra NOASSERTION). Es muy madura (~50k estrellas, v0.65.4).
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.65.4 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/metabase/metabase/blob/master/README.md) · [2](https://github.com/motherduckdb/metabase_duckdb_driver) · [3](https://www.metabase.com/docs/latest/databases/connections/postgresql)</sub>
+
+## Ver similares
+
+Grupo **BI y dashboards**: metabase ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Apache Superset](superset.md) ⭐ recomendado | 82 | Si buscas esto: plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
+| 2 | **metabase** (esta ficha) | 67 | Si buscas esto: herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
+| 3 | [Redash](redash.md) | 54 | Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
 
 ## Acceso, coste y equipo
 

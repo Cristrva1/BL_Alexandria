@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 DeepSeek-V3, modelo de lenguaje MoE de DeepSeek con 671B parámetros totales y 37B activos por token. El código es MIT y los pesos usan un Model Agreement propio. El repo tiene ~105k estrellas, pero no se actualiza desde agosto de 2025 y DeepSeek ha publicado versiones posteriores.

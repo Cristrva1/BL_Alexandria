@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Interfaz de terminal para git de código abierto (MIT) creada por Jesse Duffield y mantenida con la comunidad y patrocinadores. Muy popular y activa.

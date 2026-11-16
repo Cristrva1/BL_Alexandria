@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor MCP de código abierto (Apache-2.0) mantenido por Google (organización googleapis). El repositorio se llamaba genai-toolbox y se renombró a mcp-toolbox; publica versiones frecuentes y SDK oficiales.

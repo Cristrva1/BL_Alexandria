@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista curada de clientes MCP de @punkpeye. Licencia MIT. Es pequeña (~7k estrellas) y poco activa (último cambio en junio de 2026); el propio README remite a glama.ai/mcp/clients para la lista más actual.

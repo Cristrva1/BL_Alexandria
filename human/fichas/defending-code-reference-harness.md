@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Implementación de referencia de Anthropic para descubrir y corregir vulnerabilidades de forma autónoma con Claude, basada en su trabajo con equipos de seguridad tras lanzar Claude Mythos Preview. El archivo LICENSE es Apache-2.0, aunque GitHub muestra NOASSERTION. Es una referencia para adaptar, no un producto (~8k estrellas, sin releases).

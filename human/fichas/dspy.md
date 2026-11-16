@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de Stanford NLP (MIT) para «programar, no promptear» modelos de lenguaje (Declarative Self-improving Python). Maduro y activo (3.5.0).

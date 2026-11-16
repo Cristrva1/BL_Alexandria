@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista de verificación de desarrollo front-end (MIT) de David Dias, un clásico renovado para personas y agentes de IA. Versión v2.0.

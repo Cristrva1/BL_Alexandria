@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección oficial de Google Labs (Apache 2.0) de skills y plugins de agente para Google Stitch, la herramienta de diseño de interfaces con IA, que sigue el estándar abierto Agent Skills. Tiene release v1.0; último cambio en agosto de 2026.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Videofy Minimal, herramienta local para convertir artículos de noticias en vídeos cortos para pantallas de señalización digital, del grupo de medios Schibsted. Licencia Apache-2.0. Es de nicho (~650 estrellas) y no cambia desde marzo de 2026.

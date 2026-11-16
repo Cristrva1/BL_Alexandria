@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Agente de código de código abierto (Apache-2.0) del equipo Qwen de Alibaba, derivado de Gemini CLI. Muy activo.
@@ -36,6 +38,22 @@ Se instala con npm (Node.js) y se configura con el proveedor de modelos; cambia 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada sdk-typescript-v0.1.34 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/QwenLM/qwen-code/blob/main/README.md) · [2](https://qwenlm.github.io/qwen-code-docs/en/users/overview) · [3](https://qwenlm.github.io/qwen-code-docs/en/users/integration-zed/)</sub>
+
+## Ver similares
+
+Grupo **Agentes de programación en terminal**: Qwen Code ocupa la posición 4 de 9 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenCode](opencode.md) ⭐ recomendado | 82 | Si quieres un agente de terminal independiente del proveedor, con TUI cuidada y muchos modelos. |
+| 2 | [Codex CLI](codex.md) | 71 | Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox. |
+| 3 | [Gemini CLI](gemini-cli.md) | 65 | Si trabajas con Google Code Assist empresarial; para uso individual Google remite a Antigravity CLI. |
+| 4 | **Qwen Code** (esta ficha) | 64 | Si quieres un agente de terminal que hable con varios protocolos (OpenAI, Anthropic, Gemini) o con modelos locales. |
+| 5 | [goose](goose.md) | 62 | Si quieres un agente local extensible por MCP, con app de escritorio además de la CLI. |
+| 6 | [Claude Code](claude-code.md) | 58 | Si usas Claude (Pro/Max o API) y quieres el agente de terminal más maduro con skills, hooks y subagentes. |
+| 7 | [MiMo-Code](mimo-code.md) | 50 | Si quieres probar el agente de Xiaomi MiMo con memoria persistente. |
+| 8 | [Aider](aider.md) | 49 | Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo. |
+| 9 | [Antigravity CLI](antigravity-cli.md) | 27 | Si usas Antigravity de Google y quieres su agente desde la terminal. |
 
 ## Acceso, coste y equipo
 

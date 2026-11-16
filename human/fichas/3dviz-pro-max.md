@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill independiente (MIT) de viettranx para visualización 3D creativa; la promociona también el README de ui-ux-pro-max-skill. Sin releases; último cambio en septiembre de 2026.
@@ -37,6 +39,15 @@ Skill con datos y plantillas, incluido un scaffold Vite + Three.js con gestión 
 Estado en GitHub: activo · último push 2026-09-11 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/viettranx/3dviz-pro-max/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de visualización 3D**: 3dviz-pro-max ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **3dviz-pro-max** (esta ficha) ⭐ recomendado | 53 | Si buscas esto: skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. |
+| 2 | [threejs-skills](threejs-skills.md) | 53 | Si buscas esto: colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio oficial del código del libro 'Build a Large Language Model (From Scratch)' de Sebastian Raschka (Manning). El LICENSE es Apache-2.0, aunque GitHub lo marca NOASSERTION. Es material educativo maduro y mantenido (último push en noviembre de 2026, ~108k estrellas).
@@ -37,6 +39,15 @@ Notebooks Jupyter en PyTorch, sin bibliotecas externas de LLM. El código de los
 Estado en GitHub: activo · último push 2026-11-09 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rasbt/LLMs-from-scratch/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Aprender LLM desde cero**: LLMs from Scratch ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **LLMs from Scratch** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. |
+| 2 | [LLM Course](llm-course.md) | 53 | Si buscas esto: curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. |
 
 ## Acceso, coste y equipo
 

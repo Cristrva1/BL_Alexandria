@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Dexter, agente autónomo de investigación financiera de @virattt. El README declara MIT, pero GitHub no detecta licencia. Es popular (~28k estrellas, v1.1.0).

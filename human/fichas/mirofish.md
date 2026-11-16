@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de 'inteligencia colectiva' (AGPL-3.0) de 666ghj para predecir escenarios simulando sociedades de agentes. Su motor de simulación es OASIS, de CAMEL-AI. Es experimental (v0.1.2 de marzo de 2026; último push en octubre de 2026), pese a sus ~86k estrellas.

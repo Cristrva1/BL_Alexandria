@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Crawl4AI, crawler y extractor web orientado a IA de @unclecode. Licencia Apache-2.0. Es muy popular (~87k estrellas, v0.9.5). Este repositorio es el motor de Crawl4AI Cloud, un servicio de pago; se puede usar como librería Python o como servidor Docker propio.
@@ -36,6 +38,16 @@ Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegado
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.9.5 (2026-10-14) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/unclecode/crawl4ai/blob/main/README.md) · [2](https://api.github.com/repos/assafelovic/gpt-researcher/contents/gpt_researcher/scraper)</sub>
+
+## Ver similares
+
+Grupo **Crawlers que entregan contenido listo para LLM**: crawl4ai ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **crawl4ai** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
+| 2 | [firecrawl](firecrawl.md) | 71 | Si buscas esto: plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
+| 3 | [Jina Reader](jina-reader.md) | 52 | Si buscas esto: servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. |
 
 ## Acceso, coste y equipo
 

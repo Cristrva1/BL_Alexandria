@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Chrome DevTools para agentes: servidor MCP y CLI del equipo de Chrome DevTools para controlar e inspeccionar un Chrome real. Licencia Apache-2.0. Es muy popular (~57k estrellas, v1.13.0).
@@ -44,6 +46,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada chrome-devtools-mcp-v1.13.0 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Servidores MCP de navegador**: Chrome DevTools MCP ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Chrome DevTools MCP** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
+| 2 | [Playwright MCP](playwright-mcp.md) | 62 | Si buscas esto: servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 
 ## Acceso, coste y equipo
 

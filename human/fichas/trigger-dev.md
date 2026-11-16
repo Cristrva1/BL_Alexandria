@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de código abierto (Apache 2.0) para crear flujos de IA y tareas en segundo plano en TypeScript. Ofrece un servicio gestionado y guías oficiales de autoalojamiento; publica versiones con frecuencia (serie 4.x).
@@ -36,6 +38,19 @@ Las tareas se escriben en tu propio código con el SDK `@trigger.dev/sdk` (funci
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v4.8.5 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/triggerdotdev/trigger.dev/blob/main/README.md) · [2](https://trigger.dev/docs/guides/examples/vercel-ai-sdk) · [3](https://trigger.dev/docs/config/extensions/ffmpeg) · [4](https://trigger.dev/docs/config/extensions/playwright)</sub>
+
+## Ver similares
+
+Grupo **Orquestadores de workflows de datos y tareas**: Trigger.dev ocupa la posición 4 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Apache Airflow](airflow.md) ⭐ recomendado | 81 | Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores. |
+| 2 | [Kestra](kestra.md) | 80 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
+| 3 | [Prefect](prefect.md) | 68 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
+| 4 | **Trigger.dev** (esta ficha) | 68 | Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas. |
+| 5 | [Windmill](windmill.md) | 61 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
+| 6 | [Dagster](dagster.md) | 57 | Si piensas en activos de datos (tablas, modelos) con linaje y pruebas. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Archivos de skill (MIT) de CloudAI-X que dan a Claude Code conocimiento actual y verificado de three.js. Sin releases; último cambio en octubre de 2026.
@@ -35,6 +37,15 @@ Skills en Markdown instalables con `npx skills add cloudai-x/threejs-skills` o c
 Estado en GitHub: activo · último push 2026-10-19 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CloudAI-X/threejs-skills/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de visualización 3D**: threejs-skills ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [3dviz-pro-max](3dviz-pro-max.md) ⭐ recomendado | 53 | Si buscas esto: skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. |
+| 2 | **threejs-skills** (esta ficha) | 53 | Si buscas esto: colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. |
 
 ## Acceso, coste y equipo
 

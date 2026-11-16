@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de pruebas de código abierto (MIT) de Cypress.io, uno de los más usados en pruebas de front-end. Muy activo. La empresa ofrece Cypress Cloud como servicio comercial.
@@ -33,6 +35,18 @@ Se instala como dependencia de desarrollo con npm, yarn o pnpm; la app de escrit
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v16.3.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cypress-io/cypress/blob/develop/README.md) · [2](https://storybook.js.org/docs/writing-tests/integrations/stories-in-end-to-end-tests) · [3](https://docs.cypress.io/cloud/integrations/cloud-mcp) · [4](https://github.com/cypress-io/cypress/blob/develop/packages/server/package.json)</sub>
+
+## Ver similares
+
+Grupo **Automatización de navegador y pruebas E2E**: Cypress ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [playwright](playwright.md) ⭐ recomendado | 78 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
+| 2 | [Puppeteer](puppeteer.md) | 72 | Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas. |
+| 3 | **Cypress** (esta ficha) | 65 | Si haces pruebas de componentes y E2E de frontend dentro del navegador. |
+| 4 | [WebdriverIO](webdriverio.md) | 60 | Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js. |
+| 5 | [Selenium](selenium.md) | 60 | Si necesitas el estándar W3C WebDriver, muchos lenguajes o grids existentes. |
 
 ## Acceso, coste y equipo
 

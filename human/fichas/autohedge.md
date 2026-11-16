@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 AutoHedge, «fondo de cobertura autónomo» de agentes de The Swarm Corporation. Licencia MIT. Tiene ~7k estrellas (sin releases) y su último cambio es de mayo de 2026.

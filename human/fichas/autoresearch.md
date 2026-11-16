@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 autoresearch, experimento de @karpathy en el que un agente investiga de forma autónoma sobre el entrenamiento de nanochat con una sola GPU. Licencia MIT según el README, pero sin archivo LICENSE (GitHub no detecta licencia). Tiene ~100k estrellas y está inactivo desde marzo de 2026.

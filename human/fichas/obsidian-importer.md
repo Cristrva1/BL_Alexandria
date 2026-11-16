@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plugin oficial de Obsidian para importar notas desde otras apps y formatos. Licencia MIT. Es activo (~2k estrellas, 3.2.0).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Suite de herramientas PDF en el navegador de PDFCraftTool, AGPL-3.0, activa con versiones por fecha. Tiene un proyecto hermano de escritorio, LibrePDF (Apache 2.0).
@@ -35,6 +37,15 @@ Aplicación Next.js con Tailwind CSS que procesa los archivos en el cliente con 
 Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v2026.11.08-98e89d4 (2026-11-08) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Suites de herramientas PDF**: pdfcraft ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Stirling-PDF](stirling-pdf.md) ⭐ recomendado | 76 | Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
+| 2 | **pdfcraft** (esta ficha) | 51 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
 
 ## Acceso, coste y equipo
 

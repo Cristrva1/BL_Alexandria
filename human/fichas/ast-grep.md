@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 ast-grep (sg), CLI en Rust para búsqueda estructural, lint y reescritura de código, de @HerringtonDarkholme. Licencia MIT. Es activa (~17k estrellas, 0.51.2).

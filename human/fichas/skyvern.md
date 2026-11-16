@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skyvern, automatización de flujos web con LLMs y visión por computador, de Skyvern-AI. Licencia AGPL-3.0, con versión cloud gestionada. Tiene ~23k estrellas (v1.0.58).
@@ -35,6 +37,17 @@ Requiere Python 3.11–3.13 y `pip install "skyvern[server]"` (servidor local; l
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.0.58 (2026-11-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Skyvern-AI/skyvern/blob/main/README.md) · [2](https://docs.skyvern.com/) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/skyvern)</sub>
+
+## Ver similares
+
+Grupo **Agentes que navegan la web**: Skyvern ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [browser-use](browser-use.md) ⭐ recomendado | 73 | Si quieres el framework Python más usado para que un LLM controle el navegador. |
+| 2 | [Stagehand](stagehand.md) | 61 | Si trabajas en TypeScript y quieres mezclar código Playwright con acciones en lenguaje natural. |
+| 3 | **Skyvern** (esta ficha) | 60 | Si automatizas formularios y flujos repetitivos con visión y no quieres selectores frágiles. |
+| 4 | [Browser Harness](browser-harness.md) | 60 | Si quieres que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión. |
 
 ## Acceso, coste y equipo
 

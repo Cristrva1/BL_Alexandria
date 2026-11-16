@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 video-shotcraft, skill para que Claude Code o Codex creen vídeos promocionales de producto a partir de capturas de tus páginas reales, de @Vincentwei1021. Código y docs Apache-2.0; el audio de Freesound mantiene sus licencias (créditos CC BY). Tiene ~20k estrellas.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 GSAP (GreenSock Animation Platform), librería de animación JavaScript independiente del framework, propiedad de Webflow. Usa la licencia propia «Standard No Charge», gratuita pero no OSI (GitHub no detecta licencia). Es muy madura (~31k estrellas) y está en más de 12 millones de sitios, según el proyecto.
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se
 Estado en GitHub: activo · último push 2026-11-04 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/greensock/GSAP/blob/master/README.md) · [2](https://gsap.com/standard-license)</sub>
+
+## Ver similares
+
+Grupo **Animación web en JavaScript**: GSAP ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [motion](motion.md) ⭐ recomendado | 77 | Si buscas esto: librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| 2 | [Anime.js](animejs.md) | 60 | Si buscas esto: motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
+| 3 | **GSAP** (esta ficha) | 55 | Si buscas esto: librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
 ## Acceso, coste y equipo
 

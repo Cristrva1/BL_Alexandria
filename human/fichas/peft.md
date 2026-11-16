@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 PEFT, librería de Hugging Face para fine-tuning eficiente en parámetros (LoRA y similares). Licencia Apache-2.0. Es madura (~22k estrellas, v0.21.3).

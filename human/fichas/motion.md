@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motion (antes Framer Motion), librería de animación open source para JavaScript, React y Vue, de motiondivision. Licencia MIT. Es madura (~35k estrellas) y tiene oferta de pago (Motion+).
@@ -38,6 +40,16 @@ Se instala con `npm install motion` (React/JS) o `npm install motion-v` (Vue).
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/motiondivision/motion/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Animación web en JavaScript**: motion ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **motion** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| 2 | [Anime.js](animejs.md) | 60 | Si buscas esto: motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
+| 3 | [GSAP](gsap.md) | 55 | Si buscas esto: librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
 ## Acceso, coste y equipo
 

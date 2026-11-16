@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Dash, framework de Plotly para construir apps analíticas web en Python (también R y Julia), sobre Plotly.js, React y Flask. Licencia MIT. Es maduro (~24k estrellas, v4.5.0) y tiene versión comercial (Dash Enterprise).

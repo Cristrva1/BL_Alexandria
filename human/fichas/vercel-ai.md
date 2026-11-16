@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Toolkit TypeScript de Vercel (AI SDK) para construir aplicaciones y agentes con IA. El LICENSE es Apache-2.0 aunque GitHub no reconozca la licencia (NOASSERTION). Es un monorepo maduro y muy activo, con publicaciones casi a diario de paquetes como `ai`, `@ai-sdk/react` o `@ai-sdk/vue`.
@@ -43,6 +45,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @ai-sdk/vue@3.0.332 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel/ai/blob/main/README.md) · [2](https://ai-sdk.dev/docs/ai-sdk-ui/overview) · [3](https://www.assistant-ui.com/docs/runtimes/ai-sdk) · [4](https://ai-sdk.dev/elements) · [5](https://docs.langfuse.com/integrations/frameworks/vercel-ai-sdk) · [6](https://ai-sdk.dev/providers/community-providers/ollama) · [7](https://docs.mem0.ai/integrations/vercel-ai-sdk)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de agentes en TypeScript**: AI SDK (Vercel) ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **AI SDK (Vercel)** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
+| 2 | [Mastra](mastra.md) | 65 | Si buscas esto: framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
+| 3 | [LangGraph.js](langgraphjs.md) | 60 | Si buscas esto: versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
 
 ## Acceso, coste y equipo
 

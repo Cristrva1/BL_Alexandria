@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 NeMo Guardrails, toolkit open source de NVIDIA para añadir barreras programables a aplicaciones conversacionales con LLM. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activo (~7.5k estrellas, v0.24.1).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 supervision, herramientas reutilizables de visión por computador de Roboflow. Licencia MIT. Es madura y muy activa (~52k estrellas, 0.31.7).

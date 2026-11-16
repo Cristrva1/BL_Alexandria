@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección oficial de Anthropic (MIT) de proyectos de inicio para construir aplicaciones con la API de Claude. Es activa (último push en noviembre de 2026) y se amplía con las novedades de la plataforma.

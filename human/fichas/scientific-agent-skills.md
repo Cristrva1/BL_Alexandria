@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección MIT de 177 skills científicas y de investigación de K-Dense (antes Claude Scientific Skills), compatible con cualquier agente que siga el estándar Agent Skills. Muy activa (v2.72.0); K-Dense ofrece además un «co-científico» de escritorio de código abierto basado en ellas.

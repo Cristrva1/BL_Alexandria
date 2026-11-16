@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Un archivo `CLAUDE.md` de drona23 (MIT) para que Claude responda de forma concisa y gaste menos tokens. Sin releases; último cambio en junio de 2026.

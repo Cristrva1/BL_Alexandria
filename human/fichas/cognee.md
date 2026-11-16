@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de memoria de IA de código abierto (Apache 2.0) de topoteretes que da a los agentes memoria persistente a largo plazo, con artículo de investigación propio. Activa (v1.6.8) y con servicio gestionado Cognee Cloud.
@@ -36,6 +38,18 @@ Biblioteca Python 3.10–3.14 (`uv pip install "cognee[gliner]"`): sin clave de 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.6.8 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/topoteretes/cognee/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Capas de memoria para apps y agentes de IA**: cognee ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [mem0](mem0.md) ⭐ recomendado | 76 | Si tu app necesita memoria de usuario a largo plazo con una API sencilla. |
+| 2 | **cognee** (esta ficha) | 68 | Si quieres convertir documentos en un grafo de conocimiento consultable por agentes. |
+| 3 | [Graphiti](graphiti.md) | 61 | Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo. |
+| 4 | [supermemory](supermemory.md) | 61 | Si buscas una API de memoria y contexto rápida orientada a productos. |
+| 5 | [Letta](letta.md) | 55 | Si quieres agentes con estado gestionados por un servidor (antes MemGPT). |
 
 ## Acceso, coste y equipo
 

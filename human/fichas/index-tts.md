@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 IndexTTS, sistema de TTS zero-shot «de nivel industrial» con control de duración y emoción, de bilibili (organización index-tts). Usa el «bilibili Model Use License Agreement» propio (GitHub muestra NOASSERTION). Tiene ~25k estrellas (v2.5.0).
@@ -35,6 +37,18 @@ Se instala con uv a partir del repo; los modelos se descargan al iniciar la WebU
 Estado en GitHub: activo · último push 2026-09-29 · última versión publicada v2.5.0 (2026-08-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/index-tts/index-tts/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Clonación de voz y TTS multilingüe**: IndexTTS ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 72 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
+| 2 | [F5-TTS](f5-tts.md) | 63 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
+| 3 | [CosyVoice](cosyvoice.md) | 61 | Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino. |
+| 4 | [Fish Speech](fish-speech.md) | 61 | Si buscas TTS multilingüe con clonación y buena latencia. |
+| 5 | **IndexTTS** (esta ficha) | 56 | Si necesitas controlar duración y emoción de la voz sintetizada. |
 
 ## Acceso, coste y equipo
 

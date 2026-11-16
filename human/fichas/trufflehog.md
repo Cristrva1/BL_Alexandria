@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de código abierto (AGPL-3.0) de Truffle Security, que financia el proyecto con una edición Enterprise de monitorización continua. Muy activa.
@@ -35,6 +37,15 @@ Escrito en Go; se instala con Homebrew, Docker, script de instalación o desde e
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.99.9 (2026-11-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/trufflesecurity/trufflehog/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Detección de secretos en repos**: TruffleHog ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Gitleaks](gitleaks.md) ⭐ recomendado | 61 | Si buscas esto: detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. |
+| 2 | **TruffleHog** (esta ficha) | 60 | Si buscas esto: busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. |
 
 ## Acceso, coste y equipo
 

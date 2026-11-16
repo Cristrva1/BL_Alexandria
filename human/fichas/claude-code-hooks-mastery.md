@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 30/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio didáctico de disler (IndyDevDan) para dominar los hooks de Claude Code, con subagentes, estilos de salida y líneas de estado. Sin licencia declarada; último cambio en marzo de 2026.

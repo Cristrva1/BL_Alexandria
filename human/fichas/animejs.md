@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Anime.js, motor de animación JavaScript ligero, de @juliangarnier. Licencia MIT. Es maduro (~75k estrellas, v4.5.0) y se financia con patrocinios.
@@ -36,6 +38,16 @@ Se instala con `npm install animejs` o desde CDN como módulo ES.
 Estado en GitHub: activo · último push 2026-11-02 · última versión publicada v4.5.0 (2026-06-22) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/juliangarnier/anime/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Animación web en JavaScript**: Anime.js ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [motion](motion.md) ⭐ recomendado | 77 | Si buscas esto: librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| 2 | **Anime.js** (esta ficha) | 60 | Si buscas esto: motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
+| 3 | [GSAP](gsap.md) | 55 | Si buscas esto: librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
 ## Acceso, coste y equipo
 

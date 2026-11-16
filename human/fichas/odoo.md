@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.
@@ -35,6 +37,18 @@ Es una aplicación web en Python con un framework propio de módulos («addons»
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/odoo/odoo/blob/20.0/README.md) · [2](https://github.com/odoo/odoo/blob/20.0/LICENSE) · [3](https://www.odoo.com/documentation/19.0/administration/on_premise/source.html) · [4](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo)</sub>
+
+## Ver similares
+
+Grupo **CRM y ERP auto-hospedados**: Odoo ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [twenty-main](twenty-main.md) ⭐ recomendado | 75 | Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado. |
+| 2 | [ERPNext](erpnext.md) | 74 | Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH. |
+| 3 | **Odoo** (esta ficha) | 66 | Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema. |
+| 4 | [EspoCRM](espocrm.md) | 53 | Si quieres un CRM ligero y personalizable en PHP. |
+| 5 | [SuiteCRM](suitecrm.md) | 45 | Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos. |
 
 ## Acceso, coste y equipo
 

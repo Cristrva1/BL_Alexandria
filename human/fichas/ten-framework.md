@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** hard
 
+**Puntuación de calidad** 43/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto impulsado por Agora para agentes de voz conversacionales. Muy activo. Se publica con licencia Apache-2.0 con restricciones adicionales, por lo que no es una licencia OSI.
@@ -37,6 +39,17 @@ Runtime con extensiones en C++, Go, Python y Node.js. Los ejemplos se ejecutan e
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 0.11.75 (2026-11-03) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/TEN-framework/ten-framework/blob/main/README.md) · [2](https://github.com/TEN-framework/ten-framework/blob/main/LICENSE) · [3](https://github.com/TEN-framework/ten-framework/tree/main/ai_agents/agents/ten_packages/extension)</sub>
+
+## Ver similares
+
+Grupo **Agentes de voz en tiempo real**: TEN Framework ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Pipecat](pipecat.md) ⭐ recomendado | 73 | Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables. |
+| 2 | [LiveKit Agents](livekit-agents.md) | 73 | Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada. |
+| 3 | [dograh](dograh.md) | 60 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
+| 4 | **TEN Framework** (esta ficha) | 43 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION). El repo de GitHub es un espejo del desarrollo oficial, con ~22k estrellas.

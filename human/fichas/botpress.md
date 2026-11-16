@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio de herramientas de desarrollo de Botpress Cloud, la plataforma comercial de chatbots y asistentes con IA de Botpress, con licencia MIT. No contiene el servidor autoalojable: la versión local v12 vive en el repositorio aparte `botpress/v12`, cuyo último lanzamiento visible aquí es de 2023.

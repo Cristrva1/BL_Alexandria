@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Metabuscador libre que agrega resultados de muchos motores sin rastrear ni perfilar al usuario. Licencia AGPL-3.0-or-later. Es un proyecto comunitario maduro y activo (~40k estrellas; publica desde la rama principal, sin releases en GitHub).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Rubber Band Library, biblioteca y utilidad para estirar el tiempo y cambiar el tono de audio, de Chris Cannam (Breakfast Quay). Licencia GPL-2.0+, con licencia comercial disponible. Es madura, de nicho (~800 estrellas) y no cambia desde marzo de 2025.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (BSD-2-Clause) creada en 2010 por Volodymyr Agafonkin y mantenida por la comunidad Leaflet. La biblioteca de mapas web interactivos más extendida; muy madura.
@@ -36,6 +38,15 @@ Pesa unos 40 kB de JS y 2,4 kB de CSS comprimidos; se carga desde CDN o npm. No 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.9.4 (2023-05-18) · licencia declarada BSD-2-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Leaflet/Leaflet/blob/main/README.md) · [2](https://leafletjs.com/)</sub>
+
+## Ver similares
+
+Grupo **Mapas web interactivos**: Leaflet ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Leaflet** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. |
+| 2 | [MapLibre GL JS](maplibre.md) | 67 | Si buscas esto: biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia. |
 
 ## Acceso, coste y equipo
 

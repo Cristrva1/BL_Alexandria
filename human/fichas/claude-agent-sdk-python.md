@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SDK oficial de Anthropic (MIT) para usar desde Python el bucle de agente de Claude Code. Es muy activo (v0.2.182), con publicaciones casi a diario, pero sigue en 0.x y su API puede cambiar.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Crackeador de contraseñas de Openwall (Solar Designer); esta es la versión jumbo con aportes de la comunidad. Licencia GPL-2.0 con archivos bajo licencias más permisivas (ver doc/LICENSE). El README avisa de que parte del código jumbo no es maduro.
@@ -35,6 +37,15 @@ Escrito en C; se compila desde el código (doc/INSTALL) o se instala con paquete
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openwall/john/blob/bleeding-jumbo/README.md) · [2](https://www.openwall.com/john/)</sub>
+
+## Ver similares
+
+Grupo **Cracking de contraseñas**: John the Ripper (jumbo) ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [hashcat](hashcat.md) ⭐ recomendado | 62 | Si buscas esto: utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. |
+| 2 | **John the Ripper (jumbo)** (esta ficha) | 53 | Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. |
 
 ## Acceso, coste y equipo
 

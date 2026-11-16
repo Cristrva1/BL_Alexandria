@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de física de código abierto (Apache-2.0) mantenido por Google DeepMind, que lo adquirió en 2021 y lo liberó en 2022. Referencia en investigación de robótica y aprendizaje por refuerzo. Muy activo.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Taskmaster, sistema de gestión de tareas para desarrollo con IA, de @eyaltoledano y @RalphEcom. Licencia MIT con Commons Clause (no OSI; GitHub muestra NOASSERTION). Tiene ~28k estrellas, pero su último cambio es de abril de 2026; la documentación vive en tryhamster.com.

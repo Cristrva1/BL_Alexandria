@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Extensión de código abierto de PostgreSQL para búsqueda de similitud vectorial, de Andrew Kane. Se distribuye con una licencia de estilo PostgreSQL (GitHub la marca como no estándar); madura y activa (v0.8.7), sin releases en GitHub.
@@ -37,6 +39,20 @@ Extensión en C para Postgres 13+ que se compila e instala o se obtiene por Dock
 Estado en GitHub: activo · último push 2026-11-14 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pgvector/pgvector/blob/master/README.md) · [2](https://supabase.com/docs/guides/database/extensions/pgvector)</sub>
+
+## Ver similares
+
+Grupo **Bases y librerías vectoriales**: pgvector ocupa la posición 5 de 7 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Milvus](milvus.md) ⭐ recomendado | 77 | Si necesitas escala de miles de millones de vectores y despliegue distribuido. |
+| 2 | [Qdrant](qdrant.md) | 65 | Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local. |
+| 3 | [Chroma](chroma.md) | 63 | Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG. |
+| 4 | [LanceDB](lancedb.md) | 62 | Si quieres una base vectorial embebida sobre archivos, sin servidor. |
+| 5 | **pgvector** (esta ficha) | 59 | Si ya usas PostgreSQL y quieres vectores en la misma base. |
+| 6 | [Weaviate](weaviate.md) | 59 | Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados. |
+| 7 | [Faiss](faiss.md) | 56 | Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU. |
 
 ## Acceso, coste y equipo
 

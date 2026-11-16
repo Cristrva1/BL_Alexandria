@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Crawler de código abierto (MIT) de ProjectDiscovery, el equipo de nuclei y subfinder. Muy activo y orientado a reconocimiento de seguridad.

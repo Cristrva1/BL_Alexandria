@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Mediabunny, librería JavaScript para leer, escribir y convertir medios (MP4, WebM, MP3, HLS) directamente en el navegador, de @Vanilagy. Licencia MPL-2.0. Es activa (~7.5k estrellas, v1.66.0) y la patrocina, entre otros, Remotion.

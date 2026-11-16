@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Deep-Live-Cam, herramienta de intercambio de rostros (face swap) y deepfake en tiempo real a partir de una sola imagen, de @hacksider. Licencia AGPL-3.0. Tiene ~98k estrellas y versión 2.8, y vende una versión precompilada «Ultimate» (quickstart) en deeplivecam.net.
@@ -35,6 +37,15 @@ La instalación manual requiere conocimientos técnicos: Python (el README menci
 Estado en GitHub: activo · último push 2026-11-08 · última versión publicada 2.8 (2026-10-22) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Intercambio de rostros**: Deep-Live-Cam ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Deep-Live-Cam** (esta ficha) ⭐ recomendado | 75 | Si buscas esto: herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
+| 2 | [FaceFusion](facefusion.md) | 56 | Si buscas esto: plataforma para intercambio y mejora de rostros en imágenes y video. |
 
 ## Acceso, coste y equipo
 

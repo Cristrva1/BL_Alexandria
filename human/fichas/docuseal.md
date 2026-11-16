@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de código abierto (AGPL-3.0) para rellenar y firmar documentos, de DocuSeal. Activa (3.3.6), con nube de pago y funciones Pro.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor web de código abierto (Apache-2.0) creado por Matt Holt y patrocinado por empresas. Muy maduro.
@@ -44,6 +46,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.11.9 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/caddyserver/caddy/blob/master/README.md) · [2](https://caddyserver.com/docs/) · [3](https://coolify.io/docs/knowledge-base/server/proxies)</sub>
+
+## Ver similares
+
+Grupo **Proxies inversos con HTTPS automático**: Caddy ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Caddy** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API. |
+| 2 | [Traefik Proxy](traefik.md) | 70 | Si buscas esto: proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. |
 
 ## Acceso, coste y equipo
 

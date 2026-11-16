@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Currículo educativo de código abierto (MIT) de Microsoft (serie «for Beginners»). Muy popular; mantenimiento continuo con traducciones automáticas.

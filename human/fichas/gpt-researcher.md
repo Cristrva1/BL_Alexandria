@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 GPT Researcher, agente open source de investigación profunda en web y documentos locales, de @assafelovic. Licencia Apache-2.0. Es maduro (desde 2023, ~31k estrellas, v3.8.0).
@@ -36,6 +38,16 @@ Requiere Python 3.12+. Se instala con `pip install gpt-researcher` o desde el re
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v3.8.0 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/assafelovic/gpt-researcher/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Agentes de investigación autónoma**: gpt-researcher ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **gpt-researcher** (esta ficha) ⭐ recomendado | 61 | Si buscas esto: agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
+| 2 | [STORM](storm.md) | 60 | Si buscas esto: sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
+| 3 | [local-deep-research](local-deep-research.md) | 58 | Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
 
 ## Acceso, coste y equipo
 

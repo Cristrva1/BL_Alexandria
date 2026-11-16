@@ -16,6 +16,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 1. **Lee `INDICE_IA.json`**, el índice compacto con una entrada por repo. Es la única lectura obligatoria.
 2. **Empieza por `discovery.areas`** si el usuario nombra un campo (frontend, ciberseguridad, audiovisual, trading) o quiere configurar Claude Code, Codex o Antigravity. Cada área tiene subcategorías con `selectors` (`cat`/`subs`), `repos` explícitos y, cuando aplica, `reference_repos` de consulta. La unión por id evita duplicados. Después filtra por `goals`, `routes`, `cat`/`sub`, `tags`, `role`, `setup` y `one`. `pick: true` es una selección editorial, no una garantía de adecuación.
 3. **Desempata** con `alt`: si ya elegiste un repo, **descarta sus `alt`**, porque cumplen la misma función.
+   Si el repo tiene `grupo`, `data/grupos.json` ordena ese grupo por `puntuacion` (0-100, rúbrica en `human/calidad.md`): el primero es el recomendado y cada miembro trae «cuándo elegirlo». La puntuación desempata; no sustituye el encaje con el proyecto.
 4. **Parte de una receta** (`recipes`) si el usuario quiere un producto completo y no una pieza suelta.
 5. **Solo para finalistas (menos de 8)**, abre su entrada en `INDICE_IA.detalle.json`: `access` separa API,Claude Code,Codex,Antigravity,modelos locales,coste y equipo; `getting_started` trae preparación,pasos y entrada con fuente. `first_try` indica acción y resultado observable, `practical_examples` escenarios ilustrativos y `editorial_review` el alcance documental. No confundas revisión de fuentes con instalación o ejecución probada.
 
@@ -41,6 +42,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 | `human/acceso.md`, `human/instalar.md`, `human/vocabulario.md` | Cuentas, primer uso y términos | Personas que empiezan |
 | `PRODUCT.md` | Público y propósito confirmados | Al cambiar navegación o interfaz |
 | `data/techniques.json` → `human/TECNICAS.md` | Técnicas, ideas, reglas y sitios útiles con fuente pública | Al pedir buenas prácticas de trabajo con agentes |
+| `data/grupos.json`, `data/metricas/puntuaciones.json` | Grupos de similares con ranking y desglose de la puntuación de calidad | Al desempatar entre opciones parecidas |
 | `data/retired.json` | Repos retirados por archivados, abandonados, sustituidos o inactivos, con sustitutos | Antes de proponer o reincorporar un repo |
 | `human/areas.md`, `human/areas/*.md` | Áreas prácticas, subcategorías y configuración de asistentes | Para orientarse por campo o herramienta |
 

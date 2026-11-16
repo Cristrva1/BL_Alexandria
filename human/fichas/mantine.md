@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de componentes de código abierto (MIT) creada por Vitaly Rtishchev y financiada por patrocinadores en Open Collective. Madura y muy activa.
@@ -35,6 +37,19 @@ Paquetes npm en TypeScript con estilos basados en CSS modules y variables CSS; p
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 9.8.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mantinedev/mantine/blob/master/README.md) · [2](https://mantine.dev/guides/storybook/) · [3](https://mantine.dev/llms.txt)</sub>
+
+## Ver similares
+
+Grupo **Bibliotecas de componentes React**: Mantine ocupa la posición 6 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ant Design](ant-design.md) ⭐ recomendado | 77 | Si construyes paneles empresariales densos en datos. |
+| 2 | [ui](ui.md) | 73 | Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui). |
+| 3 | [Material UI](mui.md) | 70 | Si quieres Material Design y la biblioteca de componentes React más usada. |
+| 4 | [Chakra UI](chakra-ui.md) | 64 | Si priorizas accesibilidad y estilos por props. |
+| 5 | [heroui](heroui.md) | 62 | Si quieres componentes bonitos sobre Tailwind (antes NextUI). |
+| 6 | **Mantine** (esta ficha) | 58 | Si quieres componentes y hooks completos con buena documentación y poca configuración. |
 
 ## Acceso, coste y equipo
 

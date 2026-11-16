@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 /brag, skill que convierte el proyecto que has construido en un vídeo de lanzamiento corto y compartible, con música, movimiento y textos para redes, de latent-spaces. Licencia MIT. Creado en junio de 2026, tiene ~22k estrellas (v0.6.0). Tiene versión web alojada (letsbrag.app).

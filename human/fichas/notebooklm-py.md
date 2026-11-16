@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 API de Python no oficial y skill para agentes para Google NotebookLM, rebautizado como Gemini Notebook en julio de 2026, creada por teng-lin. MIT y muy activa (v0.8.6); usa APIs no documentadas de Google que pueden cambiar sin aviso y no tiene afiliación con Google.

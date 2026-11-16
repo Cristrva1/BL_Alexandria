@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Claude Animated Shorts, skill gratuita de Claude que acompaña a un vídeo tutorial, de @mromidev. Licencia MIT (los fotogramas de referencia solo sirven para estudiar el estilo). Creada en noviembre de 2026, tiene ~3.6k estrellas y sin releases.

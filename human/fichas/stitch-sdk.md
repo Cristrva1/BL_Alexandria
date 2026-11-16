@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SDK oficial de Google Labs (Apache-2.0) para Google Stitch, el servicio de diseño de interfaces con IA. Permite generar pantallas de UI desde texto y extraer su HTML y capturas de forma programática. Está en una fase muy temprana (v0.1.1).
@@ -35,6 +37,15 @@ Paquete npm `@google/stitch-sdk` que requiere `STITCH_API_KEY`. Para usarlo con 
 Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v0.1.1 (2026-04-27) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-labs-code/stitch-sdk/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **De diseño o captura a código**: Stitch SDK ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [screenshot-to-code](screenshot-to-code.md) ⭐ recomendado | 60 | Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
+| 2 | **Stitch SDK** (esta ficha) | 49 | Si buscas esto: sDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
 
 ## Acceso, coste y equipo
 

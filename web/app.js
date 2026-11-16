@@ -123,6 +123,7 @@
       `<span class="badge ${item.setup === "heavy" ? "terra" : item.setup === "easy" ? "green" : "gold"}">${esc(label("setup", item.setup))}</span>`,
     ];
     if (item.mcp) bits.push('<span class="badge green">MCP</span>');
+    if (item.calidad) bits.push(`<span class="badge" title="Puntuación de calidad (métricas del ${esc(item.calidad.fecha || "")})">Calidad ${Math.round(item.calidad.puntuacion)}/100</span>`);
     return `<div class="badges">${bits.join("")}</div>`;
   }
 
@@ -633,6 +634,19 @@
       : `<h2>Usado por (${users.length})</h2>${body}`;
   }
 
+  function similarSection(item) {
+    const sim = item.similares;
+    if (!sim || !sim.ranking || sim.ranking.length < 2) return "";
+    const rows = sim.ranking.filter(r => repo(r.id)).map(r => {
+      const self = r.id === item.id;
+      const name = self ? `<strong>${esc(repo(r.id).name)}</strong> <span class="meta">(esta ficha)</span>` : `<a href="#/repo/${encodeURIComponent(r.id)}"><strong>${esc(repo(r.id).name)}</strong></a>`;
+      const star = r.papel === "recomendado" ? ' <span class="badge green">Recomendado</span>' : "";
+      const score = r.puntuacion == null ? "—" : Math.round(r.puntuacion);
+      return `<li class="similar-row${self ? " is-self" : ""}"><span class="similar-rank">${r.posicion}</span><div>${name}${star} <span class="meta">· ${score}/100</span><br><span>${esc(r.cuando || "")}</span></div></li>`;
+    }).join("");
+    return `<section id="repo-similares" class="section"><h2>Ver similares</h2><p class="meta">Grupo «${esc(sim.titulo)}»: posición ${sim.posicion} de ${sim.total}. Orden por puntuación de calidad; mira «cuándo elegirlo», porque no todos cubren lo mismo.</p><ol class="similar-list" role="list">${rows}</ol></section>`;
+  }
+
   function fourSections(item) {
     if (!hasFour(item)) return "";
     const combos = item.combina_con.filter((combo) => repo(combo.id)).map((combo) => `<li><a href="#/repo/${encodeURIComponent(combo.id)}"><strong>${esc(repo(combo.id).name)}</strong></a>: ${esc(combo.motivo || "")}${combo.orden_instalacion ? `<br><span class="meta">Orden y cuidados: ${esc(combo.orden_instalacion)}</span>` : ""}</li>`).join("");
@@ -681,6 +695,7 @@
       ${badges(item)}
       <nav class="repo-toc" aria-label="En esta ficha"><a href="#/repo/${encodeURIComponent(item.id)}?section=examples">Ver ejemplos</a><a href="#/repo/${encodeURIComponent(item.id)}?section=access">Ver acceso y costes</a><a href="#/repo/${encodeURIComponent(item.id)}?section=start">Ir a los primeros pasos</a></nav>
       ${fourSections(item)}
+      ${similarSection(item)}
       ${item.practical_examples?.length?`<section id="repo-examples" class="section"><h2>Para qué puedes usarlo</h2><ul>${item.practical_examples.map(example=>`<li>${esc(example.scenario)}</li>`).join("")}</ul><p class="meta">Ejemplos de uso propuestos para orientar tu elección.</p></section>`:""}
       ${accessSection(item)}
       ${body&&!hasFour(item)?`<div class="section">${body}</div>`:""}

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plugin de Claude Code que convierte un vault de Obsidian en una wiki de conocimiento que crece con cada fuente, creado por @AgriciDaniel. Licencia MIT. Es activo y popular (~17k estrellas, v3.0.1) y sigue el patrón «LLM Wiki» de Andrej Karpathy, citado en el README.
@@ -36,6 +38,15 @@ Se instala como plugin de Claude Code (`claude plugin marketplace add AgriciDani
 Estado en GitHub: activo · último push 2026-10-25 · última versión publicada v3.0.1 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AgriciDaniel/claude-obsidian/blob/main/README.md) · [2](https://code.claude.com/docs/en/plugins) · [3](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)</sub>
+
+## Ver similares
+
+Grupo **Obsidian como segundo cerebro para agentes**: claude-obsidian ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [obsidian-second-brain](obsidian-second-brain.md) ⭐ recomendado | 62 | Si buscas esto: sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. |
+| 2 | **claude-obsidian** (esta ficha) | 60 | Si buscas esto: instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema de agentes autoalojado para automatizar tareas en línea, descrito por sus autores como una versión «hackeable» de IFTTT o Zapier en tu propio servidor. Es un proyecto comunitario veterano (creado en 2013), con licencia MIT y lanzamientos frecuentes en 2026.
@@ -36,6 +38,15 @@ Cada agente crea y consume eventos que se propagan por un grafo dirigido; la ló
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v2026.11.09 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huginn/huginn/blob/master/README.md) · [2](https://docs.ollama.com/api/openai-compatibility)</sub>
+
+## Ver similares
+
+Grupo **Automatización por eventos auto-hospedada**: huginn ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Node-RED](node-red.md) ⭐ recomendado | 64 | Si buscas esto: editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. |
+| 2 | **huginn** (esta ficha) | 63 | Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". |
 
 ## Acceso, coste y equipo
 

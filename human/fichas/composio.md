@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Composio, monorepo de SDKs que da a los agentes más de 1000 toolkits preautenticados, de ComposioHQ. Licencia MIT para los SDKs; la plataforma es un servicio con API key. Tiene ~31k estrellas.

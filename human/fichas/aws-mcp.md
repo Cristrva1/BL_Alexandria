@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Conjunto de servidores MCP de código abierto (Apache-2.0) publicado por AWS Labs. Muy activo; desde mayo de 2026 AWS recomienda para producción el Agent Toolkit for AWS, presentado como sucesor, aunque este repositorio sigue funcionando y aceptando contribuciones.

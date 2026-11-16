@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Librería de Go para la API multidispositivo de WhatsApp Web, creada por Tulir Asokan (autor de los puentes mautrix) con licencia MPL-2.0. Es un proyecto activo sin versiones etiquetadas; el soporte comunitario se hace en una sala de Matrix y en GitHub Discussions.
@@ -35,6 +37,18 @@ Implementa el protocolo multidispositivo de WhatsApp Web directamente en Go, sin
 Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MPL-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tulir/whatsmeow/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **APIs y librerías no oficiales de WhatsApp**: whatsmeow ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [whatsapp-web.js](whatsapp-web-js.md) ⭐ recomendado | 69 | Si programas en Node.js y prefieres controlar WhatsApp Web con un navegador. |
+| 2 | [Baileys](baileys.md) | 67 | Si programas en Node.js y quieres la librería de bajo nivel por WebSocket. |
+| 3 | [WAHA](waha.md) | 62 | Si quieres WhatsApp por HTTP en un contenedor, con varios motores. |
+| 4 | [evolution-api](evolution-api.md) | 54 | Si quieres una API REST de WhatsApp lista para n8n, Chatwoot o CRMs. |
+| 5 | **whatsmeow** (esta ficha) | 49 | Si programas en Go y quieres una librería multi-dispositivo eficiente. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema de memoria persistente de código abierto (Apache 2.0) para agentes de código, de thedotmack. Muy activo (v15.19.0), con servicio en la nube opcional (CMEM Pro / cmem.ai) para copias y memoria alojada.
@@ -36,6 +38,16 @@ Se instala con `npx claude-mem install`, que detecta los agentes, registra los h
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v15.19.0 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/thedotmack/claude-mem/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Memoria persistente para agentes de código**: claude-mem ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **claude-mem** (esta ficha) ⭐ recomendado | 74 | Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más. |
+| 2 | [Engram](engram.md) | 62 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
+| 3 | [agentmemory](agentmemory.md) | 52 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
 
 ## Acceso, coste y equipo
 

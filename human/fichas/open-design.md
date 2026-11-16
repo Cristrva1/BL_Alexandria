@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Espacio de trabajo de diseño colaborativo con agentes de IA (Apache-2.0) de nexu-io. Es muy activo (open-design-v0.27.1) y ha crecido muy deprisa (~108k estrellas). Tiene una oferta comercial (OpenDesign Cloud y el plan 'Go' de créditos) que el README promociona en primer plano.
@@ -36,6 +38,15 @@ Hay apps de escritorio para macOS y Windows; en Linux se ejecuta desde el códig
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada open-design-v0.27.1 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nexu-io/open-design/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Editores visuales de diseño con IA**: open-design ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **open-design** (esta ficha) ⭐ recomendado | 78 | Si buscas esto: espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. |
+| 2 | [Onlook](onlook.md) | 53 | Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
 
 ## Acceso, coste y equipo
 

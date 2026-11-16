@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de gestión de redes sociales para programar, automatizar y analizar contenido, de gitroomhq. La edición autoalojada es de código abierto (AGPL-3.0) sin funciones limitadas por licencia, y existe Postiz Cloud gestionado.

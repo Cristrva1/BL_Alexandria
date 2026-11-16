@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework Python para construir servidores, clientes y aplicaciones interactivas del Model Context Protocol, hecho por Prefect. Licencia Apache-2.0. Es muy popular (~29k estrellas, v4.2.0); su versión 1.0 se incorporó al SDK oficial de Python en 2024.
@@ -41,6 +43,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.2.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PrefectHQ/fastmcp/blob/main/README.md) · [2](https://gofastmcp.com/getting-started/installation) · [3](https://gofastmcp.com/integrations/claude-code)</sub>
+
+## Ver similares
+
+Grupo **SDKs de MCP en Python**: FastMCP ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **FastMCP** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: la forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
+| 2 | [MCP Python SDK](mcp-python-sdk.md) | 61 | Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
 
 ## Acceso, coste y equipo
 

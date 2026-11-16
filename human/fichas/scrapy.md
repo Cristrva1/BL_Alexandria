@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de crawling y scraping rápido y de alto nivel para Python, mantenido por Zyte. Licencia BSD-3-Clause. Es el estándar veterano del sector (~65k estrellas, 2.20.0).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 TimesFM, modelo fundacional preentrenado de Google Research para pronóstico de series temporales (artículo en ICML 2024). El código es Apache-2.0 y la licencia de los pesos cambia por versión. Tiene ~36k estrellas y su versión actual es TimesFM 3.0; el README aclara que esta versión abierta no es un producto oficial de Google.

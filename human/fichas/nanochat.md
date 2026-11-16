@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Arnés experimental mínimo (MIT) de Andrej Karpathy para entrenar LLMs de principio a fin en un solo nodo de GPU. Es experimental pero muy seguido (~61k estrellas); último push en septiembre de 2026. Sucede conceptualmente a nanoGPT.

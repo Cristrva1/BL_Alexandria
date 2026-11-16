@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Un solo archivo `CLAUDE.md`, con plugin de Claude Code, basado en las observaciones de Andrej Karpathy sobre los fallos de los LLM al programar. Lo mantiene multica-ai, cuyo autor promociona su plataforma Multica. No declara licencia y su último cambio es de abril de 2026.

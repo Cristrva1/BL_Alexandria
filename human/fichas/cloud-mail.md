@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de correo de código abierto (MIT) basada en Cloudflare, del proyecto maillab, que permite crear muchos buzones con un solo dominio. Su documentación principal está en chino, con traducciones al inglés y japonés; publica versiones activas (v3.5 en 2026).

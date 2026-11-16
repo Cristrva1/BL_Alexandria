@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de componentes de código abierto (MIT) mantenida por Segun Adebayo y la comunidad Chakra UI. Madura; la versión 3 es la actual y mantiene documentación de v2, v1 y v0.
@@ -35,6 +37,19 @@ Se instala con `npm i @chakra-ui/react @emotion/react` y se envuelve la app en s
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @chakra-ui/panda-preset@3.38.0 (2026-11-03) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chakra-ui/chakra-ui/blob/main/README.md) · [2](https://chakra-ui.com/docs/get-started/ai/mcp-server)</sub>
+
+## Ver similares
+
+Grupo **Bibliotecas de componentes React**: Chakra UI ocupa la posición 4 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ant Design](ant-design.md) ⭐ recomendado | 77 | Si construyes paneles empresariales densos en datos. |
+| 2 | [ui](ui.md) | 73 | Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui). |
+| 3 | [Material UI](mui.md) | 70 | Si quieres Material Design y la biblioteca de componentes React más usada. |
+| 4 | **Chakra UI** (esta ficha) | 64 | Si priorizas accesibilidad y estilos por props. |
+| 5 | [heroui](heroui.md) | 62 | Si quieres componentes bonitos sobre Tailwind (antes NextUI). |
+| 6 | [Mantine](mantine.md) | 58 | Si quieres componentes y hooks completos con buena documentación y poca configuración. |
 
 ## Acceso, coste y equipo
 

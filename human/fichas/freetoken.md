@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de servicio de modelos Mixture-of-Experts (MoE) para hardware de consumo, de FlashML, con artículo académico asociado. Apache 2.0, reciente y activo (v0.2.2).

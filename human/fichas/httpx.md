@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Toolkit HTTP multipropósito de ProjectDiscovery, pareja natural de Subfinder y Nuclei.
@@ -39,6 +41,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.12.0 (2026-09-08) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/projectdiscovery/httpx#readme) · [2](https://docs.projectdiscovery.io/tools/httpx)</sub>
+
+## Ver similares
+
+Grupo **Sondeo y escaneo de reconocimiento**: httpx ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **httpx** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. |
+| 2 | [Naabu](naabu.md) | 62 | Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. |
 
 ## Acceso, coste y equipo
 

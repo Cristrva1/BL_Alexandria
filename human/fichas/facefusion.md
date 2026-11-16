@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 FaceFusion, plataforma de manipulación facial (intercambio y mejora de rostros) para imágenes y vídeo. Licencia OpenRAIL-AS (GitHub muestra NOASSERTION). Tiene ~31k estrellas y está activa (3.9.2).
@@ -35,6 +37,15 @@ La instalación requiere conocimientos técnicos según el propio README (docs.f
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 3.9.2 (2026-10-26) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facefusion/facefusion/blob/master/README.md) · [2](https://docs.facefusion.io/installation)</sub>
+
+## Ver similares
+
+Grupo **Intercambio de rostros**: FaceFusion ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Deep-Live-Cam](deep-live-cam.md) ⭐ recomendado | 75 | Si buscas esto: herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
+| 2 | **FaceFusion** (esta ficha) | 56 | Si buscas esto: plataforma para intercambio y mejora de rostros en imágenes y video. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de voz de código abierto (Apache-2.0) del proyecto k2-fsa (Next-gen Kaldi). Muy activo y con muchos proyectos que lo usan en móviles y dispositivos embebidos.

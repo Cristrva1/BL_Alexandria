@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (Apache-2.0) de dltHub. Se presenta como "una biblioteca, no una plataforma". Desde marzo de 2026 la empresa ofrece dltHub, una plataforma gestionada con licencia comercial. Activa.

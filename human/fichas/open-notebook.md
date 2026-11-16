@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Alternativa de código abierto (MIT) a NotebookLM de Google, centrada en la privacidad y creada por Luis Novo (lfnovo). Activa (v1.15.1), con interfaz en 14 idiomas.
@@ -38,6 +40,15 @@ Backend en Python con LangChain, frontend Next.js/React y SurrealDB como base de
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.15.1 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lfnovo/open-notebook/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Alternativas a NotebookLM**: open-notebook ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **open-notebook** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
+| 2 | [SurfSense](surfsense.md) | 62 | Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Pizarra virtual open source (MIT) con estilo dibujado a mano, colaborativa y con cifrado de extremo a extremo. Es muy madura y popular (~136k estrellas, v0.18.1). Tiene una versión comercial, Excalidraw+, con funciones para equipos.
@@ -36,6 +38,15 @@ Se usa en excalidraw.com o se embebe en apps React con `npm install react react-
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.18.1 (2026-04-21) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/excalidraw/excalidraw/blob/master/README.md) · [2](https://docs.excalidraw.com)</sub>
+
+## Ver similares
+
+Grupo **Pizarras y diagramas a mano alzada**: Excalidraw ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Excalidraw** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
+| 2 | [tldraw](tldraw.md) | 55 | Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
 
 ## Acceso, coste y equipo
 

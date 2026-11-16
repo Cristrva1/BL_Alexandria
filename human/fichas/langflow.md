@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma open source (MIT) de langflow-ai para construir y desplegar agentes y workflows de IA con un editor visual. Es muy madura y activa (v1.13.2, ~157k estrellas).
@@ -36,6 +38,17 @@ Paquete Python (Python 3.10–3.14) que se instala con `uv pip install langflow 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.13.2 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langflow-ai/langflow/blob/main/README.md) · [2](https://docs.langflow.org/integrations-langfuse) · [3](https://docs.langflow.org/bundles-ollama) · [4](https://docs.langflow.org/mcp-server)</sub>
+
+## Ver similares
+
+Grupo **Builders visuales de agentes**: langflow ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **langflow** (esta ficha) ⭐ recomendado | 70 | Si quieres diseñar flujos de LangChain visualmente y exportarlos. |
+| 2 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
+| 3 | [dify](dify.md) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
+| 4 | [Sim](sim.md) | 61 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
 
 ## Acceso, coste y equipo
 

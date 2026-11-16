@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** hard
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Empire de BC-Security (BSD-3).
@@ -32,6 +34,16 @@ Clone + instalación documentada.
 Estado en GitHub: activo · último push 2026-09-08 · última versión publicada v7.0.2 (2026-09-08) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BC-SECURITY/Empire#readme) · [2](https://bc-security.gitbook.io/empire-wiki/)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de C2 y post-explotación**: Empire ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Sliver](sliver.md) ⭐ recomendado | 70 | Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. |
+| 2 | **Empire** (esta ficha) | 58 | Si buscas esto: framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. |
+| 3 | [Mythic](mythic.md) | 50 | Si buscas esto: framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. |
 
 ## Acceso, coste y equipo
 

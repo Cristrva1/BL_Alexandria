@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OBS Studio, software libre para grabar y transmitir vídeo en directo. Licencia GPL-2.0 o posterior. Es muy maduro (~80k estrellas, 33.0.1).

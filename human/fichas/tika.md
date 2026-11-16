@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de la Apache Software Foundation (Apache-2.0), referencia histórica en extracción de contenido. Muy maduro; la serie 4.x se orienta a pipelines de agentes.
@@ -35,6 +37,19 @@ Escrito en Java; se usa como biblioteca Maven, aplicación o tika-server por RES
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/tika/blob/main/README.md) · [2](https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/configuration.md)</sub>
+
+## Ver similares
+
+Grupo **Conversión de documentos a Markdown/JSON para IA**: Apache Tika ocupa la posición 5 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Docling](docling.md) ⭐ recomendado | 78 | Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local. |
+| 2 | [MinerU](mineru.md) | 68 | Si procesas PDF científicos o en chino con fórmulas y maquetación compleja. |
+| 3 | [Xberg (antes Kreuzberg)](xberg.md) | 63 | Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario. |
+| 4 | [Marker](marker.md) | 60 | Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional. |
+| 5 | **Apache Tika** (esta ficha) | 59 | Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado. |
+| 6 | [Unstructured](unstructured.md) | 58 | Si quieres particionar muchos formatos en elementos para pipelines de RAG. |
 
 ## Acceso, coste y equipo
 

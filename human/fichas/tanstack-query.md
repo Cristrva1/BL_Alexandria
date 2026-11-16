@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de gestión de estado asíncrono de TanStack (antes React Query), en TypeScript con licencia MIT. Proyecto maduro (desde 2019), ~50k estrellas, con publicaciones frecuentes (última: noviembre de 2026).
@@ -35,6 +37,15 @@ Es un núcleo agnóstico (`query-core`) con adaptadores para React, Vue, Solid, 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada release-2026-11-06-2304 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/TanStack/query/blob/main/README.md) · [2](https://tanstack.com/query/latest/docs/framework/react/overview)</sub>
+
+## Ver similares
+
+Grupo **Obtención de datos en React**: TanStack Query ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **TanStack Query** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. |
+| 2 | [swr](swr.md) | 59 | Si buscas esto: librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. |
 
 ## Acceso, coste y equipo
 

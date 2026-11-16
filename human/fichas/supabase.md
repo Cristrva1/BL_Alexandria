@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Supabase, plataforma de desarrollo sobre PostgreSQL que ofrece funciones similares a Firebase con herramientas open source. Licencia Apache-2.0. Es muy madura (~115k estrellas) y tiene servicio alojado y opción de autoalojamiento.
@@ -41,6 +43,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (17). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.26.08 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/supabase/supabase/blob/master/README.md) · [2](https://supabase.com/docs/guides/hosting/overview) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/supabase)</sub>
+
+## Ver similares
+
+Grupo **Backends como servicio auto-hospedados**: supabase ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **supabase** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. |
+| 2 | [Appwrite](appwrite.md) | 73 | Si buscas esto: plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. |
 
 ## Acceso, coste y equipo
 

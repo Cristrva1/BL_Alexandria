@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Obsidian Web Clipper, la extensión oficial de navegador de Obsidian para capturar y subrayar la web. Código MIT; las marcas y recursos de marketing quedan excluidos. Es activa (~6k estrellas, 1.7.1).

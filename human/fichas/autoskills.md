@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 39/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CLI de midudev que detecta el stack de un proyecto e instala skills de agente seleccionadas. Licencia CC BY-NC 4.0, que no es de código abierto y prohíbe el uso comercial, y que GitHub marca como NOASSERTION. Activo (v0.4.1).

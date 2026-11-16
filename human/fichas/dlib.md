@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Toolkit de código abierto (Boost Software License) creado y mantenido por Davis King desde 2002. Clásico y estable, con cambios continuos pero menos frecuentes que en bibliotecas más nuevas.

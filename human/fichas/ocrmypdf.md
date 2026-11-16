@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de línea de comandos de código abierto (MPL-2.0) que añade una capa de texto OCR a PDF escaneados. Muy madura (v17.14) y probada en millones de PDF.

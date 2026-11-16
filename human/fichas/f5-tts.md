@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de investigación de código abierto (código MIT) del equipo SWivid, publicado con su artículo en arXiv. Los pesos preentrenados son CC-BY-NC. Activo (modelo base v1 en marzo de 2025).
@@ -35,6 +37,18 @@ Usa flow matching con un Diffusion Transformer y ConvNeXt V2, muestreo Sway en i
 Estado en GitHub: activo · último push 2026-11-03 · última versión publicada 1.1.22 (2026-07-23) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SWivid/F5-TTS/blob/main/README.md) · [2](https://arxiv.org/abs/2410.06885)</sub>
+
+## Ver similares
+
+Grupo **Clonación de voz y TTS multilingüe**: F5-TTS ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 72 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
+| 2 | **F5-TTS** (esta ficha) | 63 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
+| 3 | [CosyVoice](cosyvoice.md) | 61 | Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino. |
+| 4 | [Fish Speech](fish-speech.md) | 61 | Si buscas TTS multilingüe con clonación y buena latencia. |
+| 5 | [IndexTTS](index-tts.md) | 56 | Si necesitas controlar duración y emoción de la voz sintetizada. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Mermaid, herramienta para generar diagramas a partir de texto tipo Markdown, de mermaid-js. Licencia MIT. Es madura y muy extendida (~91k estrellas), y tiene soporte nativo en GitHub, Slidev y muchas otras herramientas.
@@ -44,6 +46,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @mermaid-js/examples@2.1.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mermaid-js/mermaid/blob/develop/README.md) · [2](https://mermaid.js.org/)</sub>
+
+## Ver similares
+
+Grupo **Diagramas como código**: Mermaid ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Mermaid** (esta ficha) ⭐ recomendado | 78 | Si buscas esto: genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. |
+| 2 | [D2](d2.md) | 58 | Si buscas esto: lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos. |
+| 3 | [PlantUML](plantuml.md) | 55 | Si buscas esto: herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto. |
 
 ## Acceso, coste y equipo
 

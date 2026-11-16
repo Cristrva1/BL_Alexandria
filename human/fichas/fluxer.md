@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de mensajería instantánea y llamadas de voz (VoIP) gratuita y de código abierto para amigos, grupos y comunidades, con licencia AGPL-3.0 o posterior. Creada en 2026, publica versiones casi a diario; los reportes de errores se gestionan en feedback.fluxer.com y no en GitHub.

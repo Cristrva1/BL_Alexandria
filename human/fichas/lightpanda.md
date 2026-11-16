@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).

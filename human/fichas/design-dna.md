@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de agente (MIT) de zanwei para extraer, estructurar y aplicar la identidad visual de un diseño como «ADN de diseño» legible por máquina. Sin releases; último cambio en agosto de 2026.

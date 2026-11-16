@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 La biblioteca de prompts open source más grande, mantenida por Fatih Kadir Akın (f), antes conocida como 'Awesome ChatGPT Prompts' (diciembre de 2022). Tiene licencia doble: el código y el contenido del sitio son MIT, y los prompts (prompts.csv, PROMPTS.md y los que envía la comunidad) son dominio público CC0 1.0. Por eso GitHub la marca como NOASSERTION. Es muy activa y popular (~178k estrellas).
@@ -35,6 +37,15 @@ La aplicación es Next.js con Prisma y se puede autoalojar con `npx prompts.chat
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/f/prompts.chat/blob/main/README.md) · [2](https://huggingface.co/datasets/fka/prompts.chat)</sub>
+
+## Ver similares
+
+Grupo **Colecciones de prompts**: prompts.chat ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **prompts.chat** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. |
+| 2 | [Fabric](fabric.md) | 63 | Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. |
 
 ## Acceso, coste y equipo
 

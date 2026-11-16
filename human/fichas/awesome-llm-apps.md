@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección (Apache-2.0) de @Shubhamsaboo con más de 100 plantillas open source de agentes, skills de agente y apps RAG. Es muy popular (~145k estrellas) y se actualiza a diario. El README afirma que cada plantilla está probada de principio a fin [DATO NO VERIFICADO].
@@ -36,6 +38,16 @@ Cada plantilla es independiente: se clona el repositorio, se entra en la carpeta
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Cookbooks y ejemplos de apps con LLM**: Awesome LLM Apps ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Awesome LLM Apps** (esta ficha) ⭐ recomendado | 75 | Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
+| 2 | [OpenAI Cookbook](openai-cookbook.md) | 58 | Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. |
+| 3 | [Claude Cookbooks](claude-cookbooks.md) | 56 | Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
 
 ## Acceso, coste y equipo
 

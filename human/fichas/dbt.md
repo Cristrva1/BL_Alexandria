@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de transformación de datos de código abierto (Apache-2.0) de dbt Labs, muy extendida en equipos de analítica ("analytics engineering"). La rama main contiene dbt v2.0, una reescritura en Rust distribuida como binario autocontenido; dbt v1 (Python) se mantiene en la rama `1.latest`. Existe además una plataforma comercial (dbt platform).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta gratuita y open source para optimizar Windows en rendimiento, privacidad y simplicidad, de @itsfatduck. El archivo LICENSE es GPL-3.0, aunque GitHub muestra NOASSERTION. Es activa (~12k estrellas, v2.29.0).

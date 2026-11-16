@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Curso gratuito (Apache-2.0) de Maxime Labonne para aprender LLMs, con rutas de estudio y notebooks de Colab. Es muy popular (~85k estrellas). El autor coescribió el libro 'LLM Engineer's Handbook' basado en este curso. Último push en febrero de 2026.
@@ -37,6 +39,15 @@ Es una hoja de ruta en Markdown con enlaces a artículos y notebooks de Google C
 Estado en GitHub: activo · último push 2026-02-05 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mlabonne/llm-course/blob/main/README.md) · [2](https://mlabonne.github.io/blog/)</sub>
+
+## Ver similares
+
+Grupo **Aprender LLM desde cero**: LLM Course ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [LLMs from Scratch](llms-from-scratch.md) ⭐ recomendado | 71 | Si buscas esto: código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. |
+| 2 | **LLM Course** (esta ficha) | 53 | Si buscas esto: curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. |
 
 ## Acceso, coste y equipo
 

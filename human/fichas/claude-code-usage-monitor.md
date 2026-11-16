@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Claude Code Usage Monitor (`claude-monitor` en PyPI), monitor de terminal del uso de Claude Code, de @Maciek-roboblog. Licencia MIT. Es popular (~9k estrellas, v4.0.0) y su último cambio es de julio de 2026.

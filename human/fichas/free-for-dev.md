@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 free-for.dev, lista curada de servicios SaaS, PaaS e IaaS con niveles gratuitos para desarrolladores de infraestructura, iniciada por @ripienaar. GitHub no detecta licencia. Es muy popular (~143k estrellas) y tiene más de 1600 contribuidores.

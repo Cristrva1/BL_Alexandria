@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Capa de memoria para asistentes y agentes de IA de Mem0 («mem-zero»), de código abierto (Apache 2.0) con plataforma gestionada de pago. Muy activa; en abril de 2026 publicó un nuevo algoritmo de memoria y su evaluación es reproducible con un marco abierto.
@@ -44,6 +46,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-06 · última versión publicada ts-v3.3.1 (2026-09-25) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mem0ai/mem0/blob/main/README.md) · [2](https://docs.mem0.ai/integrations/langgraph) · [3](https://docs.mem0.ai/integrations/crewai) · [4](https://docs.mem0.ai/components/vectordbs/dbs/qdrant)</sub>
+
+## Ver similares
+
+Grupo **Capas de memoria para apps y agentes de IA**: mem0 ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **mem0** (esta ficha) ⭐ recomendado | 76 | Si tu app necesita memoria de usuario a largo plazo con una API sencilla. |
+| 2 | [cognee](cognee.md) | 68 | Si quieres convertir documentos en un grafo de conocimiento consultable por agentes. |
+| 3 | [Graphiti](graphiti.md) | 61 | Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo. |
+| 4 | [supermemory](supermemory.md) | 61 | Si buscas una API de memoria y contexto rápida orientada a productos. |
+| 5 | [Letta](letta.md) | 55 | Si quieres agentes con estado gestionados por un servidor (antes MemGPT). |
 
 ## Acceso, coste y equipo
 

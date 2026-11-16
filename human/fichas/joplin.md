@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.
@@ -35,6 +37,17 @@ Escrita en TypeScript; apps para Windows, macOS, Linux, Android e iOS y una CLI.
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.7.22 (2026-10-28) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/laurent22/joplin/blob/dev/README.md) · [2](https://joplinapp.org)</sub>
+
+## Ver similares
+
+Grupo **Notas y bases de conocimiento personales**: Joplin ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [SiYuan](siyuan.md) ⭐ recomendado | 76 | Si quieres bloques referenciables y una base de conocimiento local muy completa. |
+| 2 | [Trilium Notes](trilium.md) | 64 | Si quieres jerarquías profundas de notas con scripting y servidor propio. |
+| 3 | [Logseq](logseq.md) | 59 | Si piensas en esquemas y grafos con notas diarias, local-first. |
+| 4 | **Joplin** (esta ficha) | 57 | Si quieres notas Markdown con sincronización cifrada en todos tus dispositivos. |
 
 ## Acceso, coste y equipo
 

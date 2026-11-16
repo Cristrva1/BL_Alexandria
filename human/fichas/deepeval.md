@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 DeepEval, framework open source de evaluación de LLM al estilo pytest, de Confident AI. Licencia Apache-2.0. Es muy activo (~19k estrellas, python-v4.2.4).
@@ -36,6 +38,16 @@ Se instala con `pip install -U deepeval` y se escriben tests con `assert_test` q
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada python-v4.2.4 (2026-09-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/confident-ai/deepeval/blob/main/README.md) · [2](https://deepeval.com/integrations/frameworks/langchain) · [3](https://deepeval.com/integrations/frameworks/llamaindex)</sub>
+
+## Ver similares
+
+Grupo **Evaluación y pruebas de LLM**: DeepEval ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [promptfoo](promptfoo.md) ⭐ recomendado | 79 | Si buscas esto: cLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
+| 2 | **DeepEval** (esta ficha) | 63 | Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. |
+| 3 | [Ragas](ragas.md) | 51 | Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
 
 ## Acceso, coste y equipo
 

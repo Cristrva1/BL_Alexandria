@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de investigación y plataforma de OpenBMB (Tsinghua) bajo Apache-2.0. ChatDev 2.0 (DevAll), publicada en enero de 2026, es una plataforma multiagente sin código; la versión 1.x, la «empresa de software virtual», se conserva en una rama legacy.

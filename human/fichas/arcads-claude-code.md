@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 39/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Paquete de skills (MIT) de «Mr. Paid Social» para crear videos e imágenes publicitarios con la cuenta de Arcads desde Claude Code o Cursor. El README usa enlaces de afiliado y promociona una comunidad de pago.

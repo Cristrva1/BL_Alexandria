@@ -2394,7 +2394,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 63,
+   "grupo": "g-automatizacion-por-eventos-auto-hospedada"
   },
   {
    "id": "kestra",
@@ -2440,7 +2441,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 80,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "activepieces",
@@ -2480,7 +2482,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 64
   },
   {
    "id": "node-red",
@@ -2516,7 +2518,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 64,
+   "grupo": "g-automatizacion-por-eventos-auto-hospedada"
   },
   {
    "id": "windmill",
@@ -2558,7 +2561,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 61,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "trigger-dev",
@@ -2596,7 +2600,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 68,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "whatsapp-web-js",
@@ -2634,7 +2639,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 69,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "openwa",
@@ -2672,7 +2678,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 70
   },
   {
    "id": "baileys",
@@ -2709,7 +2715,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 67,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "fluxer",
@@ -2784,7 +2791,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 54,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "waha",
@@ -2822,7 +2830,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 62,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "whatsapp-agentkit",
@@ -2858,7 +2867,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 38
+   "puntuacion": 41
   },
   {
    "id": "typebot",
@@ -2968,7 +2977,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 66,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "twenty-main",
@@ -3012,7 +3022,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 75,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "erpnext",
@@ -3047,7 +3058,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 75
+   "puntuacion": 74,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "chatwoot",
@@ -3222,7 +3234,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "tooljet",
@@ -3264,7 +3277,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 75
+   "puntuacion": 75,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "appsmith",
@@ -3305,7 +3319,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "budibase",
@@ -3345,7 +3360,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 62,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "anthropic-skills",
@@ -3426,7 +3442,8 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 61,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "awesome-claude-skills",
@@ -3469,7 +3486,8 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 50,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "awesome-claude-code",
@@ -3510,7 +3528,8 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 50,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "antigravity-awesome-skills",
@@ -3554,7 +3573,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 68,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "wshobson-agents",
@@ -3596,7 +3616,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 49,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "awesome-copilot",
@@ -3632,7 +3653,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 65
   },
   {
    "id": "awesome-agent-skills",
@@ -3672,7 +3693,8 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 53,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "agent-skills",
@@ -3710,7 +3732,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 63,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "skills",
@@ -3747,7 +3770,7 @@
     "codex"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 60
   },
   {
    "id": "superpowers",
@@ -3789,7 +3812,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 62,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "ecc",
@@ -3831,7 +3855,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "andrej-karpathy-skills",
@@ -3866,7 +3891,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 49
   },
   {
    "id": "ponytail",
@@ -3903,7 +3928,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 72
   },
   {
    "id": "spec-kit",
@@ -3944,7 +3969,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 76,
+   "grupo": "g-desarrollo-guiado-por-especificaciones"
   },
   {
    "id": "bmad-method",
@@ -3983,7 +4009,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 60,
+   "grupo": "g-desarrollo-guiado-por-especificaciones"
   },
   {
    "id": "skillspector",
@@ -4061,7 +4088,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 42
+   "puntuacion": 45
   },
   {
    "id": "humanizer",
@@ -4102,7 +4129,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 72,
+   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "stop-slop",
@@ -4141,7 +4169,8 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 42
+   "puntuacion": 43,
+   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "marketingskills",
@@ -4181,7 +4210,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 71
   },
   {
    "id": "agency-agents",
@@ -4264,7 +4293,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 49,
+   "grupo": "g-skills-de-seo-para-agentes"
   },
   {
    "id": "arcads-claude-code",
@@ -4339,7 +4369,8 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 62,
+   "grupo": "g-guias-de-ingenieria-de-prompts"
   },
   {
    "id": "fabric",
@@ -4383,7 +4414,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 63,
+   "grupo": "g-colecciones-de-prompts"
   },
   {
    "id": "prompts-chat",
@@ -4422,7 +4454,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 70,
+   "grupo": "g-colecciones-de-prompts"
   },
   {
    "id": "prompt-eng-tutorial",
@@ -4463,7 +4496,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 37
+   "puntuacion": 38,
+   "grupo": "g-guias-de-ingenieria-de-prompts"
   },
   {
    "id": "prompt-master",
@@ -4499,7 +4533,7 @@
    ],
    "desc": "Skill que recopila contexto y restricciones para redactar prompts destinados a herramientas de código, imagen y otros servicios. La instalación documentada corresponde a Claude; los nombres de otros productos describen destinos de los prompts generados.",
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 53
   },
   {
    "id": "generative-ai-for-beginners",
@@ -4538,7 +4572,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 68,
+   "grupo": "g-cursos-de-microsoft-para-principiantes"
   },
   {
    "id": "ai-agents-for-beginners",
@@ -4579,7 +4614,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 66,
+   "grupo": "g-cursos-de-microsoft-para-principiantes"
   },
   {
    "id": "awesome-llm-apps",
@@ -4628,7 +4664,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 75,
+   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm"
   },
   {
    "id": "openai-cookbook",
@@ -4668,7 +4705,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 58,
+   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm"
   },
   {
    "id": "claude-cookbooks",
@@ -4711,7 +4749,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 56,
+   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm"
   },
   {
    "id": "12-factor-agents",
@@ -4748,7 +4787,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 53
   },
   {
    "id": "agents-towards-production",
@@ -4791,7 +4830,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 46
+   "puntuacion": 49
   },
   {
    "id": "loop-engineering",
@@ -4828,7 +4867,7 @@
     "codex"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 67
   },
   {
    "id": "context-engineering",
@@ -4865,7 +4904,7 @@
     "codex"
    ],
    "source_archived": false,
-   "puntuacion": 43
+   "puntuacion": 44
   },
   {
    "id": "opencode",
@@ -4916,7 +4955,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 82,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "claude-code",
@@ -4965,7 +5005,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 58,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "codex",
@@ -5011,7 +5052,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 71,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "gemini-cli",
@@ -5057,7 +5099,8 @@
    ],
    "desc": "Agente de terminal de Google. Su aviso actual diferencia el acceso empresarial de Gemini Code Assist, Antigravity CLI para usuarios individuales y Gemini API CLI para llamadas sin estado. Revisa esa distinción antes de instalar o asumir una cuota gratuita.",
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 65,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "openhands",
@@ -5099,7 +5142,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 74,
+   "grupo": "g-agentes-que-resuelven-issues-de-software"
   },
   {
    "id": "cline",
@@ -5144,7 +5188,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 66,
+   "grupo": "g-agentes-de-codigo-en-el-editor"
   },
   {
    "id": "open-interpreter",
@@ -5184,7 +5229,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 57
   },
   {
    "id": "goose",
@@ -5233,7 +5278,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 62,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "t3code",
@@ -5273,7 +5319,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo"
   },
   {
    "id": "aider",
@@ -5315,7 +5362,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 49
+   "puntuacion": 49,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "open-swe",
@@ -5355,7 +5403,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 61,
+   "grupo": "g-agentes-que-resuelven-issues-de-software"
   },
   {
    "id": "langgraph",
@@ -5400,7 +5449,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 72,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "langchain",
@@ -5437,7 +5487,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 85
+   "puntuacion": 80,
+   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm"
   },
   {
    "id": "crewai",
@@ -5477,7 +5528,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 72,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "llama-index",
@@ -5517,7 +5569,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 63,
+   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm"
   },
   {
    "id": "agno",
@@ -5560,7 +5613,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 61,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "dspy",
@@ -5599,7 +5653,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 67
   },
   {
    "id": "deepagents",
@@ -5637,7 +5691,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 70,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "openai-agents-python",
@@ -5679,7 +5734,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 67,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "smolagents",
@@ -5717,7 +5773,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 55,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "haystack",
@@ -5760,7 +5817,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 66,
+   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm"
   },
   {
    "id": "adk-python",
@@ -5798,7 +5856,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 65,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "pydantic-ai",
@@ -5839,7 +5898,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 66,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "ag2",
@@ -5873,7 +5933,7 @@
    ],
    "desc": "AG2 v1 utiliza import ag2 y su propia arquitectura de agentes y redes. Los proyectos con ConversableAgent, GroupChat e import autogen deben seguir la distribución ag2-classic y su documentación de migración.",
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 62
   },
   {
    "id": "awesome-langgraph",
@@ -5909,7 +5969,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 36
+   "puntuacion": 37
   },
   {
    "id": "mastra",
@@ -5951,7 +6011,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 65,
+   "grupo": "g-frameworks-de-agentes-en-typescript"
   },
   {
    "id": "vercel-ai",
@@ -5993,7 +6054,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 67,
+   "grupo": "g-frameworks-de-agentes-en-typescript"
   },
   {
    "id": "agent-framework",
@@ -6031,7 +6093,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 67
   },
   {
    "id": "langgraphjs",
@@ -6068,7 +6130,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 60,
+   "grupo": "g-frameworks-de-agentes-en-typescript"
   },
   {
    "id": "sim",
@@ -6112,7 +6175,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 61,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "autogpt",
@@ -6154,7 +6218,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "dify",
@@ -6192,7 +6257,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "langflow",
@@ -6233,7 +6299,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "openclaw",
@@ -6279,7 +6346,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 86
+   "puntuacion": 82,
+   "grupo": "g-asistentes-personales-autonomos"
   },
   {
    "id": "hermes-agent",
@@ -6317,7 +6385,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 80
+   "puntuacion": 74,
+   "grupo": "g-asistentes-personales-autonomos"
   },
   {
    "id": "ruflo",
@@ -6355,7 +6424,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 69
   },
   {
    "id": "deeptutor",
@@ -6399,7 +6468,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 69
   },
   {
    "id": "multica",
@@ -6436,7 +6505,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 56,
+   "grupo": "g-paneles-para-coordinar-equipos-de-agentes"
   },
   {
    "id": "mercury-agent",
@@ -6474,7 +6544,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 49,
+   "grupo": "g-asistentes-personales-autonomos"
   },
   {
    "id": "autoresearch",
@@ -6512,7 +6583,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 48
   },
   {
    "id": "deer-flow",
@@ -6549,7 +6620,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 67
   },
   {
    "id": "storm",
@@ -6587,7 +6658,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 60,
+   "grupo": "g-agentes-de-investigacion-autonoma"
   },
   {
    "id": "gpt-researcher",
@@ -6632,7 +6704,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 61,
+   "grupo": "g-agentes-de-investigacion-autonoma"
   },
   {
    "id": "composio",
@@ -6706,7 +6779,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 65,
+   "grupo": "g-sandboxes-para-agentes"
   },
   {
    "id": "nemoclaw",
@@ -6741,7 +6815,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 69,
+   "grupo": "g-sandboxes-para-agentes"
   },
   {
    "id": "sandbox",
@@ -6783,7 +6858,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 52,
+   "grupo": "g-sandboxes-para-agentes"
   },
   {
    "id": "computer-use-preview",
@@ -6821,7 +6897,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 45
   },
   {
    "id": "agent-protocol",
@@ -6856,7 +6932,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 48
   },
   {
    "id": "mirofish",
@@ -6997,7 +7073,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 71,
+   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm"
   },
   {
    "id": "scrapling",
@@ -7035,7 +7112,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 69
   },
   {
    "id": "crawl4ai",
@@ -7076,7 +7153,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm"
   },
   {
    "id": "scrapy",
@@ -7110,7 +7188,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 78
+   "puntuacion": 77
   },
   {
    "id": "crawlee",
@@ -7143,7 +7221,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 65,
+   "grupo": "g-crawlee-node-js-y-python"
   },
   {
    "id": "jina-reader",
@@ -7180,7 +7259,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 52,
+   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm"
   },
   {
    "id": "crawlee-python",
@@ -7215,7 +7295,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 66,
+   "grupo": "g-crawlee-node-js-y-python"
   },
   {
    "id": "scrapegraph-ai",
@@ -7255,7 +7336,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-scraping-guiado-por-llm"
   },
   {
    "id": "maxun",
@@ -7297,7 +7379,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-scraping-guiado-por-llm"
   },
   {
    "id": "llm-scraper",
@@ -7334,7 +7417,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 47,
+   "grupo": "g-scraping-guiado-por-llm"
   },
   {
    "id": "stagehand",
@@ -7375,7 +7459,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 61,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "browser-use",
@@ -7419,7 +7504,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 73,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "playwright",
@@ -7461,7 +7547,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 79
+   "puntuacion": 78,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "puppeteer",
@@ -7501,7 +7588,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 72,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "lightpanda",
@@ -7537,7 +7625,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 70
   },
   {
    "id": "selenium",
@@ -7574,7 +7662,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 60,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "skyvern",
@@ -7615,7 +7704,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 60,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "browser-harness",
@@ -7655,7 +7745,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 60,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "playwright-cli",
@@ -7692,7 +7783,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 57,
+   "grupo": "g-clis-de-navegador-para-agentes"
   },
   {
    "id": "searxng",
@@ -7727,7 +7819,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 69
   },
   {
    "id": "agent-reach",
@@ -7805,7 +7897,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 73
   },
   {
    "id": "vane",
@@ -7887,7 +7979,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 70
   },
   {
    "id": "archivebox",
@@ -7923,7 +8015,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 66
   },
   {
    "id": "yt-dlp",
@@ -8025,7 +8117,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 74,
+   "grupo": "g-sdks-de-mcp-en-python"
   },
   {
    "id": "mcp-typescript-sdk",
@@ -8062,7 +8155,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 60,
+   "grupo": "g-sdks-de-mcp-en-typescript"
   },
   {
    "id": "mcp-python-sdk",
@@ -8099,7 +8193,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 61,
+   "grupo": "g-sdks-de-mcp-en-python"
   },
   {
    "id": "mcp-inspector",
@@ -8133,7 +8228,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 69
   },
   {
    "id": "mcp-use",
@@ -8170,7 +8265,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 64,
+   "grupo": "g-sdks-de-mcp-en-typescript"
   },
   {
    "id": "context7",
@@ -8253,7 +8349,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 62,
+   "grupo": "g-servidores-mcp-de-navegador"
   },
   {
    "id": "servers",
@@ -8289,7 +8386,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 79
+   "puntuacion": 80
   },
   {
    "id": "chrome-devtools-mcp",
@@ -8332,7 +8429,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 72,
+   "grupo": "g-servidores-mcp-de-navegador"
   },
   {
    "id": "github-mcp-server",
@@ -8412,7 +8510,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 59
   },
   {
    "id": "serena",
@@ -8537,7 +8635,8 @@
    ],
    "desc": "Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto.",
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 52,
+   "grupo": "g-servidores-mcp-de-neo4j"
   },
   {
    "id": "mcp-for-beginners",
@@ -8760,7 +8859,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 74,
+   "grupo": "g-memoria-persistente-para-agentes-de-codigo"
   },
   {
    "id": "mem0",
@@ -8800,7 +8900,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 76,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "mempalace",
@@ -8837,7 +8938,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 67
   },
   {
    "id": "cognee",
@@ -8882,7 +8983,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 68,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "graphiti",
@@ -8924,7 +9026,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 61,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "supermemory",
@@ -8963,7 +9066,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 61,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "agentmemory",
@@ -9007,7 +9111,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 52,
+   "grupo": "g-memoria-persistente-para-agentes-de-codigo"
   },
   {
    "id": "letta",
@@ -9046,7 +9151,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 55,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "engram",
@@ -9090,7 +9196,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 62,
+   "grupo": "g-memoria-persistente-para-agentes-de-codigo"
   },
   {
    "id": "ragflow",
@@ -9132,7 +9239,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 82
+   "puntuacion": 82,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "lightrag",
@@ -9173,7 +9281,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 66,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "pageindex",
@@ -9212,7 +9321,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 60,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "graphrag",
@@ -9250,7 +9360,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 54,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "qdrant",
@@ -9291,7 +9402,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 65,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "milvus",
@@ -9331,7 +9443,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 77,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "faiss",
@@ -9368,7 +9481,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 56,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "chroma",
@@ -9408,7 +9522,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 63,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "pgvector",
@@ -9447,7 +9562,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 59,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "turbovec",
@@ -9482,7 +9598,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 52
   },
   {
    "id": "vllm",
@@ -9519,7 +9635,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 82
+   "puntuacion": 78,
+   "grupo": "g-servidores-de-inferencia-de-alto-rendimiento"
   },
   {
    "id": "litellm",
@@ -9561,7 +9678,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 80
+   "puntuacion": 77,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "sglang",
@@ -9597,7 +9715,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 67,
+   "grupo": "g-servidores-de-inferencia-de-alto-rendimiento"
   },
   {
    "id": "headroom",
@@ -9636,7 +9755,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 60,
+   "grupo": "g-compactar-contexto-y-tokens"
   },
   {
    "id": "promptfoo",
@@ -9679,7 +9799,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 79,
+   "grupo": "g-evaluacion-y-pruebas-de-llm"
   },
   {
    "id": "langfuse",
@@ -9723,7 +9844,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 79,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "mlflow",
@@ -9761,7 +9883,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 70,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "loguru",
@@ -9794,7 +9917,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 63
   },
   {
    "id": "opik",
@@ -9834,7 +9957,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78
+   "puntuacion": 75,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "deepeval",
@@ -9872,7 +9996,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 63,
+   "grupo": "g-evaluacion-y-pruebas-de-llm"
   },
   {
    "id": "ragas",
@@ -9909,7 +10034,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 51,
+   "grupo": "g-evaluacion-y-pruebas-de-llm"
   },
   {
    "id": "phoenix",
@@ -9949,7 +10075,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 53,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "guardrails",
@@ -9982,7 +10109,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 53
   },
   {
    "id": "repomix",
@@ -10023,7 +10150,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 52,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "graphify",
@@ -10068,7 +10196,8 @@
    ],
    "desc": "Permite consultar símbolos y relaciones de una base de código desde distintos agentes. El análisis de código es determinista y local; documentos, PDFs, imágenes y video requieren la ruta semántica y sus dependencias. Ofrece adaptadores documentados para Claude Code, Codex y Antigravity.",
    "source_archived": false,
-   "puntuacion": 75
+   "puntuacion": 75,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "codegraph",
@@ -10112,7 +10241,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 67,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "codebase-memory-mcp",
@@ -10160,7 +10290,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 58,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "gitnexus",
@@ -10203,7 +10334,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 51,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "tree-sitter",
@@ -10236,7 +10368,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 58
   },
   {
    "id": "semgrep",
@@ -10309,7 +10441,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 59
   },
   {
    "id": "defending-code-reference-harness",
@@ -10427,7 +10559,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 80
+   "puntuacion": 82,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "transformers",
@@ -10460,7 +10593,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 85
+   "puntuacion": 86
   },
   {
    "id": "pytorch",
@@ -10495,7 +10628,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 78,
+   "grupo": "g-frameworks-de-deep-learning"
   },
   {
    "id": "llama-factory",
@@ -10533,7 +10667,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 60,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "peft",
@@ -10637,7 +10772,8 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 53,
+   "grupo": "g-aprender-llm-desde-cero"
   },
   {
    "id": "llms-from-scratch",
@@ -10675,7 +10811,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 71,
+   "grupo": "g-aprender-llm-desde-cero"
   },
   {
    "id": "nanochat",
@@ -10744,7 +10881,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 52
   },
   {
    "id": "how-to-train-your-gpt",
@@ -10778,7 +10915,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 48
   },
   {
    "id": "timesfm",
@@ -11017,7 +11154,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 68,
+   "grupo": "g-procesamiento-de-datos-tabulares"
   },
   {
    "id": "marimo",
@@ -11057,7 +11195,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78
+   "puntuacion": 76,
+   "grupo": "g-notebooks"
   },
   {
    "id": "polars",
@@ -11094,7 +11233,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 67,
+   "grupo": "g-procesamiento-de-datos-tabulares"
   },
   {
    "id": "awesome-bigdata",
@@ -11129,7 +11269,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 45
+   "puntuacion": 46
   },
   {
    "id": "ollama",
@@ -11173,7 +11313,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 87
+   "puntuacion": 84,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "llama-cpp",
@@ -11214,7 +11355,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 78,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "localai",
@@ -11255,7 +11397,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 75
+   "puntuacion": 72,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "exo",
@@ -11292,7 +11435,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 69
   },
   {
    "id": "llmfit",
@@ -11328,7 +11471,7 @@
    ],
    "desc": "Inspecciona el hardware y recomienda modelos según memoria, aceleradores y estimaciones de velocidad. Ayuda a elegir antes de descargar; no evalúa la calidad del modelo en una tarea de negocio.",
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 64
   },
   {
    "id": "llamafile",
@@ -11369,7 +11512,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 52,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "open-webui",
@@ -11416,7 +11560,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 74,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "jan",
@@ -11459,7 +11604,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 65,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "lobehub",
@@ -11508,7 +11654,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 70,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "cherry-studio",
@@ -11553,7 +11700,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 72,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "textgen",
@@ -11594,7 +11742,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 50,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "librechat",
@@ -11640,7 +11789,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 68,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "anything-llm",
@@ -11688,7 +11838,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 78,
+   "grupo": "g-workspaces-privados-con-documentos-y-chat"
   },
   {
    "id": "odysseus",
@@ -11726,7 +11877,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 73
   },
   {
    "id": "private-gpt",
@@ -11768,7 +11919,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 67,
+   "grupo": "g-workspaces-privados-con-documentos-y-chat"
   },
   {
    "id": "khoj",
@@ -11812,7 +11964,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 48,
+   "grupo": "g-workspaces-privados-con-documentos-y-chat"
   },
   {
    "id": "hermes-desktop",
@@ -11848,7 +12001,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 54
   },
   {
    "id": "surfsense",
@@ -11891,7 +12044,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 62,
+   "grupo": "g-alternativas-a-notebooklm"
   },
   {
    "id": "open-notebook",
@@ -11933,7 +12087,8 @@
    ],
    "desc": "Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración.",
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 67,
+   "grupo": "g-alternativas-a-notebooklm"
   },
   {
    "id": "notebooklm-py",
@@ -11972,7 +12127,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 59
   },
   {
    "id": "notebooklm-mcp-cli",
@@ -12012,7 +12167,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 51
   },
   {
    "id": "ui",
@@ -12053,7 +12208,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 73,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "ant-design",
@@ -12090,7 +12246,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 77,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "mui",
@@ -12133,7 +12290,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 70,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "react-bits",
@@ -12172,7 +12330,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 59,
+   "grupo": "g-componentes-animados-para-react"
   },
   {
    "id": "swr",
@@ -12208,7 +12367,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 59,
+   "grupo": "g-obtencion-de-datos-en-react"
   },
   {
    "id": "heroui",
@@ -12247,7 +12407,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 62,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "lucide",
@@ -12281,7 +12442,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 66
   },
   {
    "id": "magicui",
@@ -12315,7 +12476,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 53,
+   "grupo": "g-componentes-animados-para-react"
   },
   {
    "id": "radix-primitives",
@@ -12349,7 +12511,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 54
   },
   {
    "id": "daisyui",
@@ -12492,7 +12654,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 69,
+   "grupo": "g-motores-3d-para-la-web"
   },
   {
    "id": "animejs",
@@ -12529,7 +12692,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 60,
+   "grupo": "g-animacion-web-en-javascript"
   },
   {
    "id": "motion",
@@ -12569,7 +12733,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 80
+   "puntuacion": 77,
+   "grupo": "g-animacion-web-en-javascript"
   },
   {
    "id": "react-three-fiber",
@@ -12603,7 +12768,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 76
   },
   {
    "id": "gsap",
@@ -12640,7 +12805,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 55,
+   "grupo": "g-animacion-web-en-javascript"
   },
   {
    "id": "excalidraw",
@@ -12678,7 +12844,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-pizarras-y-diagramas-a-mano-alzada"
   },
   {
    "id": "open-design",
@@ -12720,7 +12887,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78
+   "puntuacion": 78,
+   "grupo": "g-editores-visuales-de-diseno-con-ia"
   },
   {
    "id": "penpot",
@@ -12756,7 +12924,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 68
   },
   {
    "id": "tldraw",
@@ -12794,7 +12962,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 55,
+   "grupo": "g-pizarras-y-diagramas-a-mano-alzada"
   },
   {
    "id": "onlook",
@@ -12833,7 +13002,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 53,
+   "grupo": "g-editores-visuales-de-diseno-con-ia"
   },
   {
    "id": "plasmic",
@@ -12866,7 +13036,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 54
   },
   {
    "id": "copilotkit",
@@ -12906,7 +13076,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-componentes-de-chat-y-copilotos-para-react"
   },
   {
    "id": "screenshot-to-code",
@@ -12947,7 +13118,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 60,
+   "grupo": "g-de-diseno-o-captura-a-codigo"
   },
   {
    "id": "openui",
@@ -12984,7 +13156,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 59
   },
   {
    "id": "assistant-ui",
@@ -13022,7 +13194,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 62,
+   "grupo": "g-componentes-de-chat-y-copilotos-para-react"
   },
   {
    "id": "stitch-sdk",
@@ -13065,7 +13238,8 @@
     "review"
    ],
    "source_archived": false,
-   "puntuacion": 45
+   "puntuacion": 49,
+   "grupo": "g-de-diseno-o-captura-a-codigo"
   },
   {
    "id": "stitch-skills",
@@ -13105,7 +13279,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 57
   },
   {
    "id": "ui-ux-pro-max-skill",
@@ -13148,7 +13322,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 73,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "taste-skill",
@@ -13191,7 +13366,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 70,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "impeccable",
@@ -13235,7 +13411,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 63,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "skills-emil",
@@ -13273,7 +13450,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 62
   },
   {
    "id": "design.md",
@@ -13309,7 +13486,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 64
   },
   {
    "id": "umami",
@@ -13346,7 +13523,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 74,
+   "grupo": "g-analitica-web-auto-hospedada"
   },
   {
    "id": "posthog",
@@ -13385,7 +13563,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 71
   },
   {
    "id": "plausible",
@@ -13421,7 +13599,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 59,
+   "grupo": "g-analitica-web-auto-hospedada"
   },
   {
    "id": "matomo",
@@ -13458,7 +13637,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 57,
+   "grupo": "g-analitica-web-auto-hospedada"
   },
   {
    "id": "superset",
@@ -13496,7 +13676,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 82
+   "puntuacion": 82,
+   "grupo": "g-bi-y-dashboards"
   },
   {
    "id": "wrenai",
@@ -13537,7 +13718,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 57
   },
   {
    "id": "grafana",
@@ -13572,7 +13753,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 82
+   "puntuacion": 80
   },
   {
    "id": "metabase",
@@ -13610,7 +13791,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 67,
+   "grupo": "g-bi-y-dashboards"
   },
   {
    "id": "redash",
@@ -13647,7 +13829,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 54,
+   "grupo": "g-bi-y-dashboards"
   },
   {
    "id": "recharts",
@@ -13684,7 +13867,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 69,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "d3",
@@ -13719,7 +13903,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 70,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "chart-js",
@@ -13755,7 +13940,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 64,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "echarts",
@@ -13792,7 +13978,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 71,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "uplot",
@@ -13827,7 +14014,7 @@
    ],
    "desc": "Permite visualizar series temporales, líneas, áreas y otros formatos en una página. Su rendimiento depende del volumen, configuración, navegador y equipo; conviene medirlo con una muestra representativa.",
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 59
   },
   {
    "id": "gradio",
@@ -13870,7 +14057,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 71,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "streamlit",
@@ -13913,7 +14101,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 76,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "dash",
@@ -13947,7 +14136,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 69
   },
   {
    "id": "daily-stock-analysis",
@@ -14061,7 +14250,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78
+   "puntuacion": 82
   },
   {
    "id": "invokeai",
@@ -14098,7 +14287,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 73,
+   "grupo": "g-interfaces-de-creacion-de-imagenes"
   },
   {
    "id": "krita-ai-diffusion",
@@ -14138,7 +14328,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 55,
+   "grupo": "g-interfaces-de-creacion-de-imagenes"
   },
   {
    "id": "flux2",
@@ -14352,7 +14543,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 75,
+   "grupo": "g-intercambio-de-rostros"
   },
   {
    "id": "facefusion",
@@ -14390,7 +14582,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 56,
+   "grupo": "g-intercambio-de-rostros"
   },
   {
    "id": "insightface",
@@ -14425,7 +14618,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 54
   },
   {
    "id": "liveportrait",
@@ -14461,7 +14654,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 46
+   "puntuacion": 50
   },
   {
    "id": "ultralytics",
@@ -14531,7 +14724,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 52
   },
   {
    "id": "opencv",
@@ -14600,7 +14793,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 79
+   "puntuacion": 78
   },
   {
    "id": "label-studio",
@@ -14638,7 +14831,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 71,
+   "grupo": "g-etiquetado-de-datos-para-vision"
   },
   {
    "id": "whisper-cpp",
@@ -14679,7 +14873,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 73,
+   "grupo": "g-transcripcion-con-whisper"
   },
   {
    "id": "whisper",
@@ -14717,7 +14912,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 67,
+   "grupo": "g-transcripcion-con-whisper"
   },
   {
    "id": "faster-whisper",
@@ -14754,7 +14950,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 70,
+   "grupo": "g-transcripcion-con-whisper"
   },
   {
    "id": "whisperx",
@@ -14792,7 +14989,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 67,
+   "grupo": "g-transcripcion-con-modelos-nvidia-y-alineacion"
   },
   {
    "id": "nemo",
@@ -14830,7 +15028,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 66,
+   "grupo": "g-transcripcion-con-modelos-nvidia-y-alineacion"
   },
   {
    "id": "kokoro",
@@ -14870,7 +15069,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 52,
+   "grupo": "g-tts-ligero-y-rapido"
   },
   {
    "id": "omnivoice-studio",
@@ -14908,7 +15108,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 76
   },
   {
    "id": "gpt-sovits",
@@ -14947,7 +15147,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 72,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "vibevoice",
@@ -14985,7 +15186,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 62
   },
   {
    "id": "voxcpm",
@@ -15021,7 +15222,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 68
   },
   {
    "id": "rvc",
@@ -15058,7 +15259,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 61
   },
   {
    "id": "fish-speech",
@@ -15099,7 +15300,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 61,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "index-tts",
@@ -15138,7 +15340,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 56,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "cosyvoice",
@@ -15179,7 +15382,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 61,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "luxtts",
@@ -15219,7 +15423,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 56,
+   "grupo": "g-tts-ligero-y-rapido"
   },
   {
    "id": "pipecat",
@@ -15264,7 +15469,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 73,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "livekit-agents",
@@ -15310,7 +15516,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 73,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "ffmpeg",
@@ -15346,7 +15553,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 69
   },
   {
    "id": "moviepy",
@@ -15384,7 +15591,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 54,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "opencut",
@@ -15423,7 +15631,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 62,
+   "grupo": "g-editores-de-video"
   },
   {
    "id": "obs-studio",
@@ -15493,7 +15702,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 61
   },
   {
    "id": "videolingo",
@@ -15534,7 +15743,7 @@
    ],
    "desc": "Combina reconocimiento de voz, alineación, traducción, segmentación y doblaje. La ruta revisada utiliza Qwen3-ASR y ForcedAligner localmente por defecto; traducción y TTS tienen requisitos y costes distintos según proveedor.",
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 63
   },
   {
    "id": "davinci-resolve-mcp",
@@ -15576,7 +15785,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 60
   },
   {
    "id": "hyperframes",
@@ -15622,7 +15831,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 73,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "skills-remotion",
@@ -15698,7 +15908,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 57,
+   "grupo": "g-animaciones-matematicas-manim"
   },
   {
    "id": "remotion",
@@ -15741,7 +15952,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 68,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "video-use",
@@ -15783,7 +15995,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 60,
+   "grupo": "g-skills-y-flujos-de-produccion-de-video"
   },
   {
    "id": "videofy-minimal",
@@ -15861,7 +16074,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 45
+   "puntuacion": 48,
+   "grupo": "g-skills-y-flujos-de-produccion-de-video"
   },
   {
    "id": "openmontage",
@@ -15905,7 +16119,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "grupo": "g-skills-y-flujos-de-produccion-de-video"
   },
   {
    "id": "moneyprinterturbo",
@@ -15951,7 +16166,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 77,
+   "grupo": "g-generacion-automatica-de-videos-cortos"
   },
   {
    "id": "wan2-2",
@@ -15993,7 +16209,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 67,
+   "grupo": "g-modelos-abiertos-de-video-generativo"
   },
   {
    "id": "hunyuanvideo",
@@ -16034,7 +16251,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 54,
+   "grupo": "g-modelos-abiertos-de-video-generativo"
   },
   {
    "id": "wan2gp",
@@ -16081,7 +16299,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 56
   },
   {
    "id": "audiocraft",
@@ -16120,7 +16338,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 54,
+   "grupo": "g-generacion-de-musica"
   },
   {
    "id": "docling",
@@ -16166,7 +16385,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78
+   "puntuacion": 78,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "markitdown",
@@ -16244,7 +16464,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 68,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "pandoc",
@@ -16276,7 +16497,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "marker",
@@ -16316,7 +16537,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 60,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "pdf-inspector",
@@ -16352,7 +16574,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 56
   },
   {
    "id": "unstructured",
@@ -16391,7 +16613,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 58,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "paddleocr",
@@ -16430,7 +16653,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "ocrmypdf",
@@ -16501,7 +16725,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 64,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "unlimited-ocr",
@@ -16540,7 +16765,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 65,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "olmocr",
@@ -16582,7 +16808,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 53,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "stirling-pdf",
@@ -16617,7 +16844,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 76,
+   "grupo": "g-suites-de-herramientas-pdf"
   },
   {
    "id": "pdfmathtranslate",
@@ -16659,7 +16887,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 67
   },
   {
    "id": "pdfcraft",
@@ -16695,7 +16923,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 51,
+   "grupo": "g-suites-de-herramientas-pdf"
   },
   {
    "id": "pdfding",
@@ -16767,7 +16996,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 73,
+   "grupo": "g-presentaciones-desde-markdown"
   },
   {
    "id": "ppt-master",
@@ -16806,7 +17036,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 69,
+   "grupo": "g-generacion-de-presentaciones-con-ia"
   },
   {
    "id": "reveal.js",
@@ -16842,7 +17073,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 59,
+   "grupo": "g-presentaciones-desde-markdown"
   },
   {
    "id": "marp",
@@ -16878,7 +17110,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 47,
+   "grupo": "g-presentaciones-desde-markdown"
   },
   {
    "id": "presenton",
@@ -16923,7 +17156,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 60,
+   "grupo": "g-generacion-de-presentaciones-con-ia"
   },
   {
    "id": "mermaid",
@@ -16961,7 +17195,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 78,
+   "grupo": "g-diagramas-como-codigo"
   },
   {
    "id": "guia",
@@ -17051,7 +17286,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-reservas-y-citas"
   },
   {
    "id": "compai-crm",
@@ -17086,7 +17322,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 66
   },
   {
    "id": "whatsmeow",
@@ -17122,7 +17358,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 49,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "500-ai-agents-projects",
@@ -17161,7 +17398,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 61
   },
   {
    "id": "ai-engineering-hub",
@@ -17204,7 +17441,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 59
   },
   {
    "id": "autoskills",
@@ -17239,7 +17476,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 38
+   "puntuacion": 39
   },
   {
    "id": "awesome-agents",
@@ -17354,7 +17591,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 53
   },
   {
    "id": "claude-quickstarts",
@@ -17392,7 +17629,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "claude-token-efficient",
@@ -17430,7 +17667,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 50
   },
   {
    "id": "codex-plugin-cc",
@@ -17472,7 +17709,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 57
   },
   {
    "id": "financial-services",
@@ -17510,7 +17747,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 61
   },
   {
    "id": "gemini-skills",
@@ -17552,7 +17789,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 54
   },
   {
    "id": "grok-plugin-claude-code",
@@ -17598,7 +17835,7 @@
     "review"
    ],
    "source_archived": false,
-   "puntuacion": 34
+   "puntuacion": 36
   },
   {
    "id": "security-audit-skill",
@@ -17684,7 +17921,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 51
   },
   {
    "id": "superclaude-framework",
@@ -17726,7 +17963,8 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 49,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "system-prompts-and-models-of-ai-tools",
@@ -17809,7 +18047,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 65
   },
   {
    "id": "hermes-agent-self-evolution",
@@ -17930,7 +18168,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 58,
+   "grupo": "g-agentes-de-investigacion-autonoma"
   },
   {
    "id": "metagpt",
@@ -17970,7 +18209,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 61
   },
   {
    "id": "mimo-code",
@@ -18014,7 +18253,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 50,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "nodeterm",
@@ -18103,7 +18343,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 46
+   "puntuacion": 48
   },
   {
    "id": "paperclip",
@@ -18146,7 +18386,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 67,
+   "grupo": "g-paneles-para-coordinar-equipos-de-agentes"
   },
   {
    "id": "social-media-agent",
@@ -18178,7 +18419,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 46
   },
   {
    "id": "agent-browser",
@@ -18215,7 +18456,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 63,
+   "grupo": "g-clis-de-navegador-para-agentes"
   },
   {
    "id": "awesome-chrome-devtools",
@@ -18293,7 +18535,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 48
   },
   {
    "id": "annas-mcp",
@@ -18333,7 +18575,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 28
+   "puntuacion": 27
   },
   {
    "id": "free-for-dev",
@@ -18498,7 +18740,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 34
+   "puntuacion": 36,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "rtk",
@@ -18542,7 +18785,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 69,
+   "grupo": "g-compactar-contexto-y-tokens"
   },
   {
    "id": "tensorrt-llm",
@@ -18580,7 +18824,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 72
   },
   {
    "id": "awesome-machine-learning",
@@ -18615,7 +18859,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 58
   },
   {
    "id": "bionemo-recipes",
@@ -18689,7 +18933,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 34
+   "puntuacion": 35
   },
   {
    "id": "hudi",
@@ -18732,7 +18976,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 51,
+   "grupo": "g-formatos-de-tabla-para-data-lakes"
   },
   {
    "id": "tensorflow",
@@ -18774,7 +19019,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 81
+   "puntuacion": 79,
+   "grupo": "g-frameworks-de-deep-learning"
   },
   {
    "id": "train-llm-from-scratch",
@@ -18899,7 +19145,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 52,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "nextcloud-server",
@@ -19023,7 +19270,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 59
   },
   {
    "id": "autohedge",
@@ -19344,7 +19591,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 53,
+   "grupo": "g-paneles-osint-sobre-globo-3d"
   },
   {
    "id": "pythia",
@@ -19382,7 +19630,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 50
   },
   {
    "id": "qlib",
@@ -19537,7 +19785,8 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "grupo": "g-generacion-de-musica"
   },
   {
    "id": "ai-youtube-shorts-generator",
@@ -19617,7 +19866,8 @@
     "review"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 60,
+   "grupo": "g-tts-ligero-y-rapido"
   },
   {
    "id": "manim-community",
@@ -19657,7 +19907,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 71,
+   "grupo": "g-animaciones-matematicas-manim"
   },
   {
    "id": "rea-video",
@@ -19702,7 +19953,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 63
   },
   {
    "id": "short-video-factory",
@@ -19744,7 +19995,8 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 46,
+   "grupo": "g-generacion-automatica-de-videos-cortos"
   },
   {
    "id": "archify",
@@ -19792,7 +20044,8 @@
     "codex"
    ],
    "source_archived": false,
-   "puntuacion": 72
+   "puntuacion": 70,
+   "grupo": "g-skills-de-diagramas-de-arquitectura"
   },
   {
    "id": "openrv",
@@ -19866,7 +20119,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 42
+   "puntuacion": 43
   },
   {
    "id": "adguardhome",
@@ -19903,7 +20156,8 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 59,
+   "grupo": "g-bloqueo-de-anuncios-por-dns"
   },
   {
    "id": "audiobookshelf",
@@ -19938,7 +20192,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 53
   },
   {
    "id": "agentes-chat",
@@ -19974,7 +20228,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 46
+   "puntuacion": 50
   },
   {
    "id": "claude-obsidian",
@@ -20014,7 +20268,8 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 60,
+   "grupo": "g-obsidian-como-segundo-cerebro-para-agentes"
   },
   {
    "id": "claude-seo",
@@ -20053,7 +20308,8 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 69
+   "puntuacion": 70,
+   "grupo": "g-skills-de-seo-para-agentes"
   },
   {
    "id": "awesome-harness-engineering",
@@ -20090,7 +20346,7 @@
     "aprender"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 49
   },
   {
    "id": "ai-job-search",
@@ -20126,7 +20382,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 72
   },
   {
    "id": "finrl",
@@ -20164,7 +20420,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 53
   },
   {
    "id": "huashu-motion",
@@ -20271,7 +20527,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 52
+   "puntuacion": 56
   },
   {
    "id": "anytype-ts",
@@ -20308,7 +20564,8 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 49
+   "puntuacion": 48,
+   "grupo": "g-espacios-de-trabajo-local-first-tipo-notion"
   },
   {
    "id": "appflowy",
@@ -20346,7 +20603,8 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 64,
+   "grupo": "g-espacios-de-trabajo-local-first-tipo-notion"
   },
   {
    "id": "blender-skills",
@@ -20384,7 +20642,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 49
   },
   {
    "id": "webgl-noise",
@@ -20419,7 +20677,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 43
+   "puntuacion": 46
   },
   {
    "id": "genjutsu",
@@ -20456,7 +20714,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "i-have-adhd",
@@ -20494,7 +20752,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 67
   },
   {
    "id": "gods-eye-view",
@@ -20535,7 +20793,8 @@
     "datos"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 68,
+   "grupo": "g-paneles-osint-sobre-globo-3d"
   },
   {
    "id": "bitwarden-clients",
@@ -20568,7 +20827,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 61
   },
   {
    "id": "blender",
@@ -20604,7 +20863,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 76
   },
   {
    "id": "rubberband",
@@ -20679,7 +20938,8 @@
     "diagramas"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 56,
+   "grupo": "g-skills-de-diagramas-de-arquitectura"
   },
   {
    "id": "ccxt",
@@ -20761,7 +21021,8 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 76,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "opencode-manager",
@@ -20798,7 +21059,8 @@
     "programar"
    ],
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 44,
+   "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo"
   },
   {
    "id": "threejs-skills",
@@ -20838,7 +21100,8 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 53,
+   "grupo": "g-skills-de-visualizacion-3d"
   },
   {
    "id": "openpose",
@@ -20914,7 +21177,8 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 74
+   "puntuacion": 74,
+   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
   },
   {
    "id": "opendots",
@@ -20949,7 +21213,8 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 48,
+   "grupo": "g-espacios-de-asistentes-de-copilotkit"
   },
   {
    "id": "unity-mcp",
@@ -20989,7 +21254,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 64
   },
   {
    "id": "plugins",
@@ -21026,7 +21291,7 @@
     "aprender"
    ],
    "source_archived": false,
-   "puntuacion": 45
+   "puntuacion": 48
   },
   {
    "id": "vaultwarden",
@@ -21063,7 +21328,8 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 64,
+   "grupo": "g-gestores-de-contrasenas"
   },
   {
    "id": "scenejs",
@@ -21098,7 +21364,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 50
   },
   {
    "id": "claude-code-hooks-mastery",
@@ -21138,7 +21404,7 @@
     "aprender"
    ],
    "source_archived": false,
-   "puntuacion": 28
+   "puntuacion": 30
   },
   {
    "id": "dnspy",
@@ -21251,7 +21517,8 @@
     "mcp"
    ],
    "source_archived": false,
-   "puntuacion": 60
+   "puntuacion": 60,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "papermorph",
@@ -21290,7 +21557,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 59
+   "puntuacion": 58
   },
   {
    "id": "raddebugger",
@@ -21401,7 +21668,8 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 62,
+   "grupo": "g-obsidian-como-segundo-cerebro-para-agentes"
   },
   {
    "id": "open-seo",
@@ -21518,7 +21786,7 @@
     "local"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 58
   },
   {
    "id": "freqtrade",
@@ -21590,7 +21858,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 58
   },
   {
    "id": "gstack",
@@ -21632,7 +21900,8 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 66,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "cleanyourtv",
@@ -21743,7 +22012,7 @@
     "documentos"
    ],
    "source_archived": false,
-   "puntuacion": 43
+   "puntuacion": 45
   },
   {
    "id": "postiz-app",
@@ -21858,7 +22127,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 65
   },
   {
    "id": "filament",
@@ -21894,7 +22163,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 69
   },
   {
    "id": "google-skills",
@@ -21932,7 +22201,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 58
   },
   {
    "id": "modern-web-guidance",
@@ -21972,7 +22241,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 66
   },
   {
    "id": "k6",
@@ -22009,7 +22278,8 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 76
+   "puntuacion": 70,
+   "grupo": "g-pruebas-de-carga"
   },
   {
    "id": "gsap-skills",
@@ -22048,7 +22318,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 51
   },
   {
    "id": "ozz-animation",
@@ -22084,7 +22354,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 41
+   "puntuacion": 42
   },
   {
    "id": "floorplan",
@@ -22121,7 +22391,7 @@
     "programar"
    ],
    "source_archived": false,
-   "puntuacion": 50
+   "puntuacion": 57
   },
   {
    "id": "vibe-trading",
@@ -22305,7 +22575,8 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 52,
+   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
   },
   {
    "id": "ilspy",
@@ -22340,7 +22611,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 67
+   "puntuacion": 68
   },
   {
    "id": "optimizerduck",
@@ -22409,7 +22680,8 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 56,
+   "grupo": "g-skills-para-redes-sociales"
   },
   {
    "id": "linkedin-agent-skill",
@@ -22445,7 +22717,8 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 47,
+   "grupo": "g-skills-para-redes-sociales"
   },
   {
    "id": "ai-website-cloner-template",
@@ -22482,7 +22755,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 62
   },
   {
    "id": "concat",
@@ -22560,7 +22833,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 71
   },
   {
    "id": "logo-design-skill",
@@ -22599,7 +22872,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 60
   },
   {
    "id": "karakeep",
@@ -22637,7 +22910,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 66
+   "puntuacion": 68
   },
   {
    "id": "40-questions",
@@ -22707,7 +22980,7 @@
     "investigar"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 57
   },
   {
    "id": "flexoki",
@@ -22779,7 +23052,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 52
   },
   {
    "id": "obsidian-minimal",
@@ -22814,7 +23087,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 46
+   "puntuacion": 48
   },
   {
    "id": "shannon",
@@ -22855,7 +23128,8 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 62,
+   "grupo": "g-pentesting-autonomo-con-agentes"
   },
   {
    "id": "konva",
@@ -22890,7 +23164,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 58
   },
   {
    "id": "kornia",
@@ -22928,7 +23202,7 @@
     "imagenes"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 74
   },
   {
    "id": "openidea",
@@ -22963,7 +23237,7 @@
     "programar"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 63
   },
   {
    "id": "brag",
@@ -23040,7 +23314,7 @@
     "mcp"
    ],
    "source_archived": false,
-   "puntuacion": 41
+   "puntuacion": 42
   },
   {
    "id": "lemo-opuscar",
@@ -23079,7 +23353,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 64
+   "puntuacion": 65
   },
   {
    "id": "earshot",
@@ -23161,7 +23435,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 40
+   "puntuacion": 42
   },
   {
    "id": "lumibot",
@@ -23200,7 +23474,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 56
   },
   {
    "id": "airllm",
@@ -23238,7 +23512,7 @@
     "local"
    ],
    "source_archived": false,
-   "puntuacion": 49
+   "puntuacion": 51
   },
   {
    "id": "claude-code-usage-monitor",
@@ -23272,7 +23546,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 49
+   "puntuacion": 53
   },
   {
    "id": "magnitude",
@@ -23312,7 +23586,7 @@
     "local"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 62
   },
   {
    "id": "cloud-mail",
@@ -23422,7 +23696,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 43
+   "puntuacion": 46
   },
   {
    "id": "mitmproxy",
@@ -23494,7 +23768,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 33
+   "puntuacion": 34
   },
   {
    "id": "awesome-reverse-engineering",
@@ -23531,7 +23805,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 56
   },
   {
    "id": "rea",
@@ -23569,7 +23843,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 77
+   "puntuacion": 75
   },
   {
    "id": "claude-animated-shorts",
@@ -23645,7 +23919,8 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 57,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "laya",
@@ -23721,7 +23996,8 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 73
+   "puntuacion": 71,
+   "grupo": "g-ingenieria-inversa-y-desensambladores"
   },
   {
    "id": "nautilus-trader",
@@ -23756,7 +24032,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 71
+   "puntuacion": 70
   },
   {
    "id": "hallmark",
@@ -23798,7 +24074,8 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 51,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "jev-fraud",
@@ -23869,7 +24146,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 50
   },
   {
    "id": "obsidian-clipper",
@@ -23906,7 +24183,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 57
   },
   {
    "id": "obsidian-help",
@@ -23943,7 +24220,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 41
+   "puntuacion": 42
   },
   {
    "id": "obsidian-importer",
@@ -23978,7 +24255,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 56
+   "puntuacion": 58
   },
   {
    "id": "obsidian-releases",
@@ -24013,7 +24290,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 57
+   "puntuacion": 60
   },
   {
    "id": "obsidian-sample-plugin",
@@ -24048,7 +24325,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 49
+   "puntuacion": 50
   },
   {
    "id": "obsidian-skills",
@@ -24086,7 +24363,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 63
   },
   {
    "id": "onyx",
@@ -24130,7 +24407,7 @@
     "mcp"
    ],
    "source_archived": false,
-   "puntuacion": 65
+   "puntuacion": 69
   },
   {
    "id": "pdf-craft",
@@ -24208,7 +24485,7 @@
     "imagenes"
    ],
    "source_archived": false,
-   "puntuacion": 55
+   "puntuacion": 56
   },
   {
    "id": "odm",
@@ -24243,7 +24520,8 @@
     "datos"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 58,
+   "grupo": "g-fotogrametria-con-drones"
   },
   {
    "id": "openfilm",
@@ -24319,7 +24597,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 50
   },
   {
    "id": "paperless-ngx",
@@ -24392,7 +24670,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 63
   },
   {
    "id": "pencil",
@@ -24427,7 +24705,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 44
+   "puntuacion": 47
   },
   {
    "id": "no-ai-slop",
@@ -24468,7 +24746,8 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 55,
+   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "planck-js",
@@ -24575,7 +24854,8 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 53
+   "puntuacion": 56,
+   "grupo": "g-backtesting-en-python"
   },
   {
    "id": "py-sdk",
@@ -24687,7 +24967,8 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 68,
+   "grupo": "g-ingenieria-inversa-y-desensambladores"
   },
   {
    "id": "regl",
@@ -24722,7 +25003,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 54
+   "puntuacion": 57
   },
   {
    "id": "rizin",
@@ -24759,7 +25040,8 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 46,
+   "grupo": "g-ingenieria-inversa-y-desensambladores"
   },
   {
    "id": "shepherd",
@@ -24794,7 +25076,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 49
   },
   {
    "id": "4d-humans",
@@ -24867,7 +25149,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 63
+   "puntuacion": 64
   },
   {
    "id": "minimalist-entrepreneur-skills",
@@ -24903,7 +25185,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 37
+   "puntuacion": 36
   },
   {
    "id": "craft-anything",
@@ -24943,7 +25225,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 60
   },
   {
    "id": "supabase",
@@ -24983,7 +25265,8 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 79
+   "puntuacion": 76,
+   "grupo": "g-backends-como-servicio-auto-hospedados"
   },
   {
    "id": "syncthing",
@@ -25016,7 +25299,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 72
   },
   {
    "id": "motionmaxxing",
@@ -25094,7 +25377,7 @@
     "imagenes"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 59
   },
   {
    "id": "openmaic",
@@ -25166,7 +25449,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 47
+   "puntuacion": 48
   },
   {
    "id": "strix",
@@ -25209,7 +25492,8 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 72,
+   "grupo": "g-pentesting-autonomo-con-agentes"
   },
   {
    "id": "mediabunny",
@@ -25318,7 +25602,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 60
   },
   {
    "id": "3dviz-pro-max",
@@ -25359,7 +25643,8 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 48
+   "puntuacion": 53,
+   "grupo": "g-skills-de-visualizacion-3d"
   },
   {
    "id": "video-shotcraft",
@@ -25436,7 +25721,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 58
+   "puntuacion": 62
   },
   {
    "id": "openviking",
@@ -25474,7 +25759,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 70
+   "puntuacion": 69
   },
   {
    "id": "webodm",
@@ -25509,7 +25794,8 @@
     "datos"
    ],
    "source_archived": false,
-   "puntuacion": 51
+   "puntuacion": 57,
+   "grupo": "g-fotogrametria-con-drones"
   },
   {
    "id": "imhex",
@@ -25544,7 +25830,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 62
+   "puntuacion": 64
   },
   {
    "id": "anatomy",
@@ -25584,7 +25870,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 68
+   "puntuacion": 71
   },
   {
    "id": "x64dbg",
@@ -25734,7 +26020,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 45
+   "puntuacion": 46
   },
   {
    "id": "meshoptimizer",
@@ -25770,7 +26056,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 61
+   "puntuacion": 62
   },
   {
    "id": "awesome-ai-reverse-engineering",
@@ -25844,7 +26130,7 @@
     "imagenes"
    ],
    "source_archived": false,
-   "puntuacion": 37
+   "puntuacion": 38
   },
   {
    "id": "dsh-noema",
@@ -25877,7 +26163,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 45
+   "puntuacion": 47
   },
   {
    "id": "creative-architect",
@@ -25920,7 +26206,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 40
+   "puntuacion": 41
   },
   {
    "id": "cybersecurity-skills",
@@ -26041,7 +26327,8 @@
     "codex",
     "antigravity"
    ],
-   "puntuacion": 55
+   "puntuacion": 60,
+   "grupo": "g-servidores-mcp-de-neo4j"
   },
   {
    "id": "deepseek-harness",
@@ -26085,7 +26372,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 76
+   "puntuacion": 74
   },
   {
    "id": "tanstack-query",
@@ -26124,7 +26411,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73
+   "puntuacion": 74,
+   "grupo": "g-obtencion-de-datos-en-react"
   },
   {
    "id": "antigravity-cli",
@@ -26169,7 +26457,8 @@
     "no_api",
     "antigravity"
    ],
-   "puntuacion": 27
+   "puntuacion": 27,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "openbot",
@@ -26216,7 +26505,8 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 61
+   "puntuacion": 67,
+   "grupo": "g-espacios-de-asistentes-de-copilotkit"
   },
   {
    "id": "hunyuanvideo-1-5",
@@ -26260,7 +26550,8 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 40
+   "puntuacion": 41,
+   "grupo": "g-modelos-abiertos-de-video-generativo"
   },
   {
    "id": "apache-iceberg",
@@ -26300,7 +26591,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58
+   "puntuacion": 62,
+   "grupo": "g-formatos-de-tabla-para-data-lakes"
   },
   {
    "id": "delta-lake",
@@ -26340,7 +26632,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56
+   "puntuacion": 63,
+   "grupo": "g-formatos-de-tabla-para-data-lakes"
   },
   {
    "id": "jupyterlab",
@@ -26379,7 +26672,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71
+   "puntuacion": 66,
+   "grupo": "g-notebooks"
   },
   {
    "id": "pyannote-audio",
@@ -26459,7 +26753,7 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 67
+   "puntuacion": 66
   },
   {
    "id": "grist-core",
@@ -26501,7 +26795,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 53
+   "puntuacion": 53,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "airflow",
@@ -26542,7 +26837,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 83
+   "puntuacion": 81,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "temporal",
@@ -26579,7 +26875,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 67
   },
   {
    "id": "teable",
@@ -26621,7 +26917,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 56
+   "puntuacion": 56,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "baserow",
@@ -26663,7 +26960,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 50
+   "puntuacion": 50,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "prefect",
@@ -26703,7 +27001,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72
+   "puntuacion": 68,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "dagster",
@@ -26743,7 +27042,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 57,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "agentscope",
@@ -26782,7 +27082,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 64
+   "puntuacion": 70
   },
   {
    "id": "openmanus",
@@ -26818,7 +27118,7 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 60
+   "puntuacion": 61
   },
   {
    "id": "chatdev",
@@ -26854,7 +27154,7 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 60
+   "puntuacion": 64
   },
   {
    "id": "camel",
@@ -26893,7 +27193,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 54
+   "puntuacion": 59
   },
   {
    "id": "rsshub",
@@ -26930,7 +27230,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74
+   "puntuacion": 73
   },
   {
    "id": "gallery-dl",
@@ -27006,7 +27306,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60
+   "puntuacion": 65,
+   "grupo": "g-lectores-rss-auto-hospedados"
   },
   {
    "id": "wallabag",
@@ -27082,7 +27383,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56
+   "puntuacion": 58,
+   "grupo": "g-lectores-rss-auto-hospedados"
   },
   {
    "id": "colly",
@@ -27118,7 +27420,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52
+   "puntuacion": 53
   },
   {
    "id": "katana",
@@ -27269,7 +27571,7 @@
     "claude",
     "codex"
    ],
-   "puntuacion": 61
+   "puntuacion": 60
   },
   {
    "id": "weaviate",
@@ -27311,7 +27613,8 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 59
+   "puntuacion": 59,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "meilisearch",
@@ -27349,7 +27652,7 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "kotaemon",
@@ -27388,7 +27691,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 51
+   "puntuacion": 56
   },
   {
    "id": "txtai",
@@ -27427,7 +27730,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 56
+   "puntuacion": 57
   },
   {
    "id": "lancedb",
@@ -27466,7 +27769,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 62,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "ruff",
@@ -27503,7 +27807,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76
+   "puntuacion": 74
   },
   {
    "id": "gitleaks",
@@ -27542,7 +27846,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57
+   "puntuacion": 61,
+   "grupo": "g-deteccion-de-secretos-en-repos"
   },
   {
    "id": "trufflehog",
@@ -27581,7 +27886,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61
+   "puntuacion": 60,
+   "grupo": "g-deteccion-de-secretos-en-repos"
   },
   {
    "id": "biome",
@@ -27618,7 +27924,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72
+   "puntuacion": 70
   },
   {
    "id": "pre-commit",
@@ -27694,7 +28000,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55
+   "puntuacion": 54
   },
   {
    "id": "fzf",
@@ -27843,7 +28149,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 48
+   "puntuacion": 51
   },
   {
    "id": "nextchat",
@@ -27883,7 +28189,8 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 64
+   "puntuacion": 63,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "mlc-llm",
@@ -27921,7 +28228,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "koboldcpp",
@@ -27961,7 +28268,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 48
+   "puntuacion": 46,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "mlx-lm",
@@ -27999,7 +28307,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 57
+   "puntuacion": 59
   },
   {
    "id": "storybook",
@@ -28075,7 +28383,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75
+   "puntuacion": 70,
+   "grupo": "g-mapas-web-interactivos"
   },
   {
    "id": "sherlock",
@@ -28114,7 +28423,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 67,
+   "grupo": "g-busqueda-de-usuarios-en-redes-sociales"
   },
   {
    "id": "maigret",
@@ -28153,7 +28463,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 63,
+   "grupo": "g-busqueda-de-usuarios-en-redes-sociales"
   },
   {
    "id": "upscayl",
@@ -28226,7 +28537,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 58
   },
   {
    "id": "ltx-2",
@@ -28264,7 +28575,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 67
+   "puntuacion": 68
   },
   {
    "id": "surya",
@@ -28302,7 +28613,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 61
+   "puntuacion": 62
   },
   {
    "id": "chakra-ui",
@@ -28342,7 +28653,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 64,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "mantine",
@@ -28382,7 +28694,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 58,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "evidence",
@@ -28419,7 +28732,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56
+   "puntuacion": 57
   },
   {
    "id": "qgis",
@@ -28456,7 +28769,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 61
   },
   {
    "id": "deck.gl",
@@ -28532,7 +28845,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74
+   "puntuacion": 67,
+   "grupo": "g-mapas-web-interactivos"
   },
   {
    "id": "kepler.gl",
@@ -28569,7 +28883,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 66
   },
   {
    "id": "theharvester",
@@ -28606,7 +28920,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 62
   },
   {
    "id": "recon-ng",
@@ -28643,7 +28957,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 42
+   "puntuacion": 47
   },
   {
    "id": "chainner",
@@ -28720,7 +29034,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57
+   "puntuacion": 59,
+   "grupo": "g-editores-de-video"
   },
   {
    "id": "kdenlive",
@@ -28760,7 +29075,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57
+   "puntuacion": 59,
+   "grupo": "g-editores-de-video"
   },
   {
    "id": "xberg",
@@ -28801,7 +29117,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 62
+   "puntuacion": 63,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "tika",
@@ -28842,7 +29159,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 59
+   "puntuacion": 59,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "openbb",
@@ -28919,7 +29237,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 83
+   "puntuacion": 81,
+   "grupo": "g-gestion-de-fotos-auto-hospedada"
   },
   {
    "id": "frigate",
@@ -28994,7 +29313,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 77
+   "puntuacion": 75
   },
   {
    "id": "memos",
@@ -29031,7 +29350,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 77
+   "puntuacion": 79
   },
   {
    "id": "pi-hole",
@@ -29070,7 +29389,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 69
+   "puntuacion": 68,
+   "grupo": "g-bloqueo-de-anuncios-por-dns"
   },
   {
    "id": "fingpt",
@@ -29146,7 +29466,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 68
   },
   {
    "id": "backtesting-py",
@@ -29184,7 +29504,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48
+   "puntuacion": 51,
+   "grupo": "g-backtesting-en-python"
   },
   {
    "id": "photoprism",
@@ -29224,7 +29545,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 64
+   "puntuacion": 66,
+   "grupo": "g-gestion-de-fotos-auto-hospedada"
   },
   {
    "id": "zigbee2mqtt",
@@ -29337,7 +29659,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 43
+   "puntuacion": 45,
+   "grupo": "g-bibliotecas-de-libros-y-comics"
   },
   {
    "id": "kavita",
@@ -29376,7 +29699,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51
+   "puntuacion": 57,
+   "grupo": "g-bibliotecas-de-libros-y-comics"
   },
   {
    "id": "joplin",
@@ -29416,7 +29740,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 57,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "siyuan",
@@ -29458,7 +29783,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 76
+   "puntuacion": 76,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "logseq",
@@ -29499,7 +29825,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 59,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "trilium",
@@ -29541,7 +29868,8 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 70
+   "puntuacion": 64,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "actual",
@@ -29580,7 +29908,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72
+   "puntuacion": 70,
+   "grupo": "g-finanzas-personales"
   },
   {
    "id": "firefly-iii",
@@ -29619,7 +29948,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61
+   "puntuacion": 59,
+   "grupo": "g-finanzas-personales"
   },
   {
    "id": "ghostfolio",
@@ -29656,7 +29986,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 63
   },
   {
    "id": "garak",
@@ -29735,7 +30065,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 82
+   "puntuacion": 79,
+   "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores"
   },
   {
    "id": "metasploit",
@@ -29772,7 +30103,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74
+   "puntuacion": 72
   },
   {
    "id": "sqlmap",
@@ -29920,7 +30251,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 68
+   "puntuacion": 70
   },
   {
    "id": "agents-course",
@@ -29957,7 +30288,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 58
+   "puntuacion": 61
   },
   {
    "id": "wazuh",
@@ -30070,7 +30401,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76
+   "puntuacion": 75,
+   "grupo": "g-bloqueo-de-ip-por-comportamiento"
   },
   {
    "id": "locust",
@@ -30109,7 +30441,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 82
+   "puntuacion": 77,
+   "grupo": "g-pruebas-de-carga"
   },
   {
    "id": "hashcat",
@@ -30148,7 +30481,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63
+   "puntuacion": 62,
+   "grupo": "g-cracking-de-contrasenas"
   },
   {
    "id": "ffuf",
@@ -30188,7 +30522,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 68,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "zaproxy",
@@ -30227,7 +30562,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 73,
+   "grupo": "g-proxies-de-pruebas-de-aplicaciones-web"
   },
   {
    "id": "subfinder",
@@ -30304,7 +30640,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54
+   "puntuacion": 53,
+   "grupo": "g-cracking-de-contrasenas"
   },
   {
    "id": "wireshark",
@@ -30341,7 +30678,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67
+   "puntuacion": 68
   },
   {
    "id": "bloodhound",
@@ -30415,7 +30752,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 58
+   "puntuacion": 59
   },
   {
    "id": "python-telegram-bot",
@@ -30492,7 +30829,8 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 63
+   "puntuacion": 60,
+   "grupo": "g-agentes-de-codigo-en-el-editor"
   },
   {
    "id": "qwen-code",
@@ -30533,7 +30871,8 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 64
+   "puntuacion": 64,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "uptime-kuma",
@@ -30570,7 +30909,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76
+   "puntuacion": 72
   },
   {
    "id": "dokploy",
@@ -30609,7 +30948,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 67,
+   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
   },
   {
    "id": "frp",
@@ -30646,7 +30986,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63
+   "puntuacion": 64
   },
   {
    "id": "headscale",
@@ -30685,7 +31025,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 69,
+   "grupo": "g-redes-privadas-tipo-mesh-wireguard"
   },
   {
    "id": "discord-js",
@@ -30763,7 +31104,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75
+   "puntuacion": 75,
+   "grupo": "g-chat-de-equipo-auto-hospedado"
   },
   {
    "id": "mattermost",
@@ -30803,7 +31145,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73
+   "puntuacion": 71,
+   "grupo": "g-chat-de-equipo-auto-hospedado"
   },
   {
    "id": "synapse",
@@ -30840,7 +31183,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56
+   "puntuacion": 59
   },
   {
    "id": "signal-cli",
@@ -30876,7 +31219,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 49
+   "puntuacion": 50
   },
   {
    "id": "zammad",
@@ -30915,7 +31258,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56
+   "puntuacion": 58,
+   "grupo": "g-help-desk-y-tickets"
   },
   {
    "id": "freescout",
@@ -30954,7 +31298,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53
+   "puntuacion": 56,
+   "grupo": "g-help-desk-y-tickets"
   },
   {
    "id": "espocrm",
@@ -30995,7 +31340,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54
+   "puntuacion": 53,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "easyappointments",
@@ -31034,7 +31380,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 46
+   "puntuacion": 47,
+   "grupo": "g-reservas-y-citas"
   },
   {
    "id": "zed",
@@ -31072,7 +31419,7 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 63
+   "puntuacion": 64
   },
   {
    "id": "mini-swe-agent",
@@ -31113,7 +31460,8 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 52
+   "puntuacion": 52,
+   "grupo": "g-agentes-que-resuelven-issues-de-software"
   },
   {
    "id": "caddy",
@@ -31152,7 +31500,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67
+   "puntuacion": 70,
+   "grupo": "g-proxies-inversos-con-https-automatico"
   },
   {
    "id": "traefik",
@@ -31191,7 +31540,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 70,
+   "grupo": "g-proxies-inversos-con-https-automatico"
   },
   {
    "id": "appwrite",
@@ -31231,7 +31581,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76
+   "puntuacion": 73,
+   "grupo": "g-backends-como-servicio-auto-hospedados"
   },
   {
    "id": "portainer",
@@ -31268,7 +31619,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 66
   },
   {
    "id": "netbird",
@@ -31307,7 +31658,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 63,
+   "grupo": "g-redes-privadas-tipo-mesh-wireguard"
   },
   {
    "id": "wg-easy",
@@ -31344,7 +31696,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60
+   "puntuacion": 63
   },
   {
    "id": "lm-eval-harness",
@@ -31384,7 +31736,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 54
+   "puntuacion": 57
   },
   {
    "id": "scikit-learn",
@@ -31465,7 +31817,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 61
+   "puntuacion": 65,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "openllmetry",
@@ -31502,7 +31855,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 63
   },
   {
    "id": "helicone",
@@ -31541,7 +31894,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50
+   "puntuacion": 50,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "ray",
@@ -31579,7 +31933,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 74
   },
   {
    "id": "xinference",
@@ -31617,7 +31971,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 63
+   "puntuacion": 66
   },
   {
    "id": "bentoml",
@@ -31654,7 +32008,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56
+   "puntuacion": 57
   },
   {
    "id": "gpustack",
@@ -31692,7 +32046,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 61
+   "puntuacion": 62
   },
   {
    "id": "keras",
@@ -31730,7 +32084,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73
+   "puntuacion": 74
   },
   {
    "id": "deepspeed",
@@ -31807,7 +32161,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71
+   "puntuacion": 64,
+   "grupo": "g-frameworks-de-deep-learning"
   },
   {
    "id": "pytorch-lightning",
@@ -31843,7 +32198,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61
+   "puntuacion": 60
   },
   {
    "id": "verl",
@@ -31883,7 +32238,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 64
+   "puntuacion": 68,
+   "grupo": "g-aprendizaje-por-refuerzo-para-llm"
   },
   {
    "id": "openrlhf",
@@ -31923,7 +32279,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 57
+   "puntuacion": 58,
+   "grupo": "g-aprendizaje-por-refuerzo-para-llm"
   },
   {
    "id": "accelerate",
@@ -31959,7 +32316,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 63
   },
   {
    "id": "torchtune",
@@ -32001,7 +32358,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 50
+   "puntuacion": 52,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "gemma",
@@ -32080,7 +32438,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 82
+   "puntuacion": 77,
+   "grupo": "g-procesamiento-de-datos-tabulares"
   },
   {
    "id": "dbt",
@@ -32117,7 +32476,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 66
   },
   {
    "id": "reflex",
@@ -32160,7 +32519,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72
+   "puntuacion": 71,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "nicegui",
@@ -32203,7 +32563,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 69
+   "puntuacion": 68,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "panel",
@@ -32246,7 +32607,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55
+   "puntuacion": 55,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "clickhouse",
@@ -32284,7 +32646,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 79
+   "puntuacion": 80
   },
   {
    "id": "spark",
@@ -32322,7 +32684,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 75
+   "puntuacion": 76
   },
   {
    "id": "arrow",
@@ -32360,7 +32722,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 70
   },
   {
    "id": "pygwalker",
@@ -32397,7 +32759,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "ibis",
@@ -32435,7 +32797,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52
+   "puntuacion": 55
   },
   {
    "id": "dlt",
@@ -32473,7 +32835,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61
+   "puntuacion": 64
   },
   {
    "id": "godot",
@@ -32512,7 +32874,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 80
+   "puntuacion": 77,
+   "grupo": "g-motores-de-videojuegos"
   },
   {
    "id": "pixijs",
@@ -32550,7 +32913,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 72
   },
   {
    "id": "babylonjs",
@@ -32591,7 +32954,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 67,
+   "grupo": "g-motores-3d-para-la-web"
   },
   {
    "id": "playcanvas",
@@ -32632,7 +32996,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 65,
+   "grupo": "g-motores-3d-para-la-web"
   },
   {
    "id": "bevy",
@@ -32672,7 +33037,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74
+   "puntuacion": 66,
+   "grupo": "g-motores-de-videojuegos"
   },
   {
    "id": "freecad",
@@ -32709,7 +33075,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 71
   },
   {
    "id": "openscad",
@@ -32746,7 +33112,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58
+   "puntuacion": 59
   },
   {
    "id": "genesis-world",
@@ -32861,7 +33227,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 68
+   "puntuacion": 70
   },
   {
    "id": "detectron2",
@@ -32940,7 +33306,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72
+   "puntuacion": 68,
+   "grupo": "g-etiquetado-de-datos-para-vision"
   },
   {
    "id": "dlib",
@@ -32979,7 +33346,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 59
+   "puntuacion": 60
   },
   {
    "id": "ultimate-vocal-remover",
@@ -33056,7 +33423,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 64
+   "puntuacion": 67
   },
   {
    "id": "f5-tts",
@@ -33098,7 +33465,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 64
+   "puntuacion": 63,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "audacity",
@@ -33214,7 +33582,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 67
+   "puntuacion": 67,
+   "grupo": "g-generacion-de-musica"
   },
   {
    "id": "ten-framework",
@@ -33256,7 +33625,8 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 43
+   "puntuacion": 43,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "motion-canvas",
@@ -33297,7 +33667,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55
+   "puntuacion": 56,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "revideo",
@@ -33338,7 +33709,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 49
+   "puntuacion": 51,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "d2",
@@ -33379,7 +33751,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58
+   "puntuacion": 58,
+   "grupo": "g-diagramas-como-codigo"
   },
   {
    "id": "drawio",
@@ -33416,7 +33789,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 66
+   "puntuacion": 69
   },
   {
    "id": "plantuml",
@@ -33457,7 +33830,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55
+   "puntuacion": 55,
+   "grupo": "g-diagramas-como-codigo"
   },
   {
    "id": "kroki",
@@ -33495,7 +33869,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 60
   },
   {
    "id": "flaresolverr",
@@ -33533,7 +33907,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57
+   "puntuacion": 58
   },
   {
    "id": "camoufox",
@@ -33611,7 +33985,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 50
+   "puntuacion": 59
   },
   {
    "id": "steel-browser",
@@ -33649,7 +34023,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51
+   "puntuacion": 56
   },
   {
    "id": "cypress",
@@ -33692,7 +34066,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67
+   "puntuacion": 65,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "webdriverio",
@@ -33735,7 +34110,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 60,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "ladybird",
@@ -33775,7 +34151,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74
+   "puntuacion": 72,
+   "grupo": "g-motores-de-navegador-independientes"
   },
   {
    "id": "servo",
@@ -33816,7 +34193,8 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 58
+   "puntuacion": 58,
+   "grupo": "g-motores-de-navegador-independientes"
   },
   {
    "id": "amass",
@@ -33892,7 +34270,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76
+   "puntuacion": 76,
+   "grupo": "g-sondeo-y-escaneo-de-reconocimiento"
   },
   {
    "id": "naabu",
@@ -33930,7 +34309,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 66
+   "puntuacion": 62,
+   "grupo": "g-sondeo-y-escaneo-de-reconocimiento"
   },
   {
    "id": "impacket",
@@ -34042,7 +34422,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 70,
+   "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
   {
    "id": "atomic-red-team",
@@ -34079,7 +34460,8 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 61
+   "puntuacion": 64,
+   "grupo": "g-emulacion-de-adversarios"
   },
   {
    "id": "caldera",
@@ -34115,7 +34497,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 62,
+   "grupo": "g-emulacion-de-adversarios"
   },
   {
    "id": "falco",
@@ -34151,7 +34534,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71
+   "puntuacion": 72
   },
   {
    "id": "prowler",
@@ -34187,7 +34570,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 69
   },
   {
    "id": "checkov",
@@ -34223,7 +34606,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71
+   "puntuacion": 72
   },
   {
    "id": "grype",
@@ -34261,7 +34644,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75
+   "puntuacion": 70,
+   "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores"
   },
   {
    "id": "suricata",
@@ -34333,7 +34717,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 69
+   "puntuacion": 70
   },
   {
    "id": "velociraptor",
@@ -34369,7 +34753,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61
+   "puntuacion": 57
   },
   {
    "id": "misp",
@@ -34478,7 +34862,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 55
+   "puntuacion": 56
   },
   {
    "id": "volatility3",
@@ -34514,7 +34898,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52
+   "puntuacion": 47
   },
   {
    "id": "yara",
@@ -34588,7 +34972,8 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 70
+   "puntuacion": 66,
+   "grupo": "g-listas-de-payloads-y-diccionarios"
   },
   {
    "id": "payloadsallthethings",
@@ -34627,7 +35012,8 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 63
+   "puntuacion": 63,
+   "grupo": "g-listas-de-payloads-y-diccionarios"
   },
   {
    "id": "evilginx2",
@@ -34663,7 +35049,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57
+   "puntuacion": 54
   },
   {
    "id": "peass-ng",
@@ -34698,7 +35084,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73
+   "puntuacion": 72
   },
   {
    "id": "osquery",
@@ -34734,7 +35120,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71
+   "puntuacion": 72
   },
   {
    "id": "dnsx",
@@ -34769,7 +35155,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58
+   "puntuacion": 60
   },
   {
    "id": "interactsh",
@@ -34804,7 +35190,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 61
   },
   {
    "id": "gobuster",
@@ -34843,7 +35229,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58
+   "puntuacion": 57,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "feroxbuster",
@@ -34882,7 +35269,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55
+   "puntuacion": 57,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "dirsearch",
@@ -34920,7 +35308,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59
+   "puntuacion": 60,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "rustscan",
@@ -34955,7 +35344,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 63
   },
   {
    "id": "masscan",
@@ -35025,7 +35414,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 49
+   "puntuacion": 48
   },
   {
    "id": "juice-shop",
@@ -35060,7 +35449,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 72
   },
   {
    "id": "certipy",
@@ -35235,7 +35624,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48
+   "puntuacion": 46
   },
   {
    "id": "mythic",
@@ -35273,7 +35662,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 49
+   "puntuacion": 50,
+   "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
   {
    "id": "empire",
@@ -35311,7 +35701,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54
+   "puntuacion": 58,
+   "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
   {
    "id": "kube-bench",
@@ -35346,7 +35737,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52
+   "puntuacion": 53
   },
   {
    "id": "syft",
@@ -35381,7 +35772,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75
+   "puntuacion": 76
   },
   {
    "id": "cosign",
@@ -35416,7 +35807,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 70
   },
   {
    "id": "osv-scanner",
@@ -35451,7 +35842,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76
+   "puntuacion": 78
   },
   {
    "id": "pacu",
@@ -35591,7 +35982,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 63
   },
   {
    "id": "sleuthkit",
@@ -35628,7 +36019,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 37
+   "puntuacion": 41,
+   "grupo": "g-analisis-forense-de-discos"
   },
   {
    "id": "autopsy",
@@ -35665,7 +36057,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 37
+   "puntuacion": 46,
+   "grupo": "g-analisis-forense-de-discos"
   },
   {
    "id": "capa",
@@ -35805,7 +36198,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60
+   "puntuacion": 61
   },
   {
    "id": "syzkaller",
@@ -35840,7 +36233,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54
+   "puntuacion": 53
   },
   {
    "id": "aircrack-ng",
@@ -35910,7 +36303,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63
+   "puntuacion": 62
   },
   {
    "id": "thc-hydra",
@@ -35945,7 +36338,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52
+   "puntuacion": 53
   },
   {
    "id": "fail2ban",
@@ -35982,7 +36375,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64
+   "puntuacion": 61,
+   "grupo": "g-bloqueo-de-ip-por-comportamiento"
   },
   {
    "id": "coreruleset",
@@ -36053,7 +36447,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50
+   "puntuacion": 51
   },
   {
    "id": "goad",
@@ -36125,7 +36519,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 54
+   "puntuacion": 56
   },
   {
    "id": "cheatsheetseries",
@@ -36161,7 +36555,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 73
+   "puntuacion": 76
   },
   {
    "id": "caido",
@@ -36198,7 +36592,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 37
+   "puntuacion": 38,
+   "grupo": "g-proxies-de-pruebas-de-aplicaciones-web"
   },
   {
    "id": "loki",
@@ -36339,7 +36734,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 49
+   "puntuacion": 47
   },
   {
    "id": "vault",
@@ -36374,7 +36769,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62
+   "puntuacion": 64
   },
   {
    "id": "sops",
@@ -36409,7 +36804,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51
+   "puntuacion": 55
   },
   {
    "id": "age",
@@ -36444,7 +36839,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55
+   "puntuacion": 61
   },
   {
    "id": "keepassxc",
@@ -36481,7 +36876,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57
+   "puntuacion": 54,
+   "grupo": "g-gestores-de-contrasenas"
   },
   {
    "id": "formbricks",
@@ -36518,7 +36914,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 66
   },
   {
    "id": "zulip",
@@ -36557,7 +36953,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68
+   "puntuacion": 63,
+   "grupo": "g-chat-de-equipo-auto-hospedado"
   },
   {
    "id": "element-web",
@@ -36593,7 +36990,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60
+   "puntuacion": 63
   },
   {
    "id": "authentik",
@@ -36631,7 +37028,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 64,
+   "grupo": "g-proveedores-de-identidad-y-sso"
   },
   {
    "id": "keycloak",
@@ -36669,7 +37067,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70
+   "puntuacion": 67,
+   "grupo": "g-proveedores-de-identidad-y-sso"
   },
   {
    "id": "dagger",
@@ -36706,7 +37105,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65
+   "puntuacion": 64
   },
   {
    "id": "suitecrm",
@@ -36745,7 +37144,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 45
+   "puntuacion": 45,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   }
  ],
  "discovery": {

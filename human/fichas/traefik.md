@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proxy inverso de código abierto (MIT) de Traefik Labs, que vende productos comerciales aparte. Muy maduro.
@@ -37,6 +39,15 @@ Escrito en Go; un binario o imagen Docker oficial. La configuración estática s
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.7.19 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/traefik/traefik/blob/master/README.md) · [2](https://doc.traefik.io/traefik/) · [3](https://docs.crowdsec.net/u/bouncers/traefik)</sub>
+
+## Ver similares
+
+Grupo **Proxies inversos con HTTPS automático**: Traefik Proxy ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Caddy](caddy.md) ⭐ recomendado | 70 | Si buscas esto: servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API. |
+| 2 | **Traefik Proxy** (esta ficha) | 70 | Si buscas esto: proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. |
 
 ## Acceso, coste y equipo
 

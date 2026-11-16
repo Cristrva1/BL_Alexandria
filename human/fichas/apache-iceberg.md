@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Formato abierto de tablas analíticas, proyecto de primer nivel de la Apache Software Foundation, con licencia Apache-2.0. Este repositorio contiene la biblioteca Java de referencia; hay implementaciones oficiales en Python (PyIceberg), Go, Rust y C++. Versión 1.12.0 (septiembre de 2026), en desarrollo activo.
@@ -36,6 +38,16 @@ Mantiene una especificación de metadatos estable (archivos de metadatos, manifi
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada apache-iceberg-1.12.0 (2026-09-30) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/iceberg/blob/main/README.md) · [2](https://iceberg.apache.org/docs/latest/) · [3](https://duckdb.org/docs/stable/core_extensions/iceberg/overview) · [4](https://docs.pola.rs/api/python/stable/reference/api/polars.scan_iceberg.html)</sub>
+
+## Ver similares
+
+Grupo **Formatos de tabla para data lakes**: Apache Iceberg ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Delta Lake](delta-lake.md) ⭐ recomendado | 63 | Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. |
+| 2 | **Apache Iceberg** (esta ficha) | 62 | Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. |
+| 3 | [hudi](hudi.md) | 51 | Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 
 ## Acceso, coste y equipo
 

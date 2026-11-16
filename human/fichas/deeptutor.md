@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 DeepTutor, sistema de tutoría personalizada con agentes, de la organización HKUDS. Licencia Apache-2.0. Es muy activo, con releases casi semanales (v1.7.3), tiene ~60k estrellas y busca mantenedores.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Stack open source (MIT) para poner agentes de IA frente a usuarios reales en React, de CopilotKit, el equipo creador del protocolo AG-UI. Es muy activo (v1.88.0). Tiene un producto de pago, CopilotKit Intelligence, que añade memoria entre sesiones y aprendizaje continuo.
@@ -43,6 +45,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.88.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CopilotKit/CopilotKit/blob/main/README.md) · [2](https://docs.copilotkit.ai/agentic-protocols/ag-ui) · [3](https://docs.copilotkit.ai/mastra) · [4](https://docs.copilotkit.ai/langgraph) · [5](https://docs.copilotkit.ai/microsoft-agent-framework) · [6](https://docs.copilotkit.ai/crewai-crews)</sub>
+
+## Ver similares
+
+Grupo **Componentes de chat y copilotos para React**: CopilotKit ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **CopilotKit** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
+| 2 | [assistant-ui](assistant-ui.md) | 62 | Si buscas esto: librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Acceso, coste y equipo
 

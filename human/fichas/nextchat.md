@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Cliente de chat de código abierto (MIT), antes ChatGPT-Next-Web, muy popular. Su organización ofrece además un servicio SaaS de pago por uso; el repositorio sigue siendo el cliente autoalojable.
@@ -35,6 +37,21 @@ Escrito en TypeScript con Next.js; se despliega en Vercel con un clic, con Docke
 Estado en GitHub: activo · último push 2026-10-20 · última versión publicada v2.16.1 (2025-07-29) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ChatGPTNextWeb/NextChat/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Interfaces de chat con LLM**: NextChat ocupa la posición 6 de 8 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Open WebUI](open-webui.md) ⭐ recomendado | 74 | Si quieres la interfaz más completa para Ollama o APIs, multiusuario y con RAG. |
+| 2 | [Cherry Studio](cherry-studio.md) | 72 | Si quieres un cliente de escritorio para muchos proveedores con asistentes predefinidos. |
+| 3 | [LobeHub](lobehub.md) | 70 | Si quieres una interfaz moderna con plugins, agentes y despliegue sencillo. |
+| 4 | [LibreChat](librechat.md) | 68 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
+| 5 | [Jan](jan.md) | 65 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
+| 6 | **NextChat** (esta ficha) | 63 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
+| 7 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
+| 8 | [Text Generation WebUI](textgen.md) | 50 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
 
 ## Acceso, coste y equipo
 

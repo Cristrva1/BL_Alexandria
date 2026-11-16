@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de colaboración open core de Mattermost, Inc. El código fuente se licencia bajo AGPL-3.0 o licencia comercial; los binarios oficiales, bajo MIT; hay ediciones de pago. Muy madura.
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v12.1.0 (2026-11-05) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mattermost/mattermost/blob/master/README.md) · [2](https://github.com/mattermost/mattermost/blob/master/LICENSE.txt) · [3](https://docs.mattermost.com/guides/deployment.html)</sub>
+
+## Ver similares
+
+Grupo **Chat de equipo auto-hospedado**: Mattermost ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Rocket.Chat](rocket-chat.md) ⭐ recomendado | 75 | Si buscas esto: plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. |
+| 2 | **Mattermost** (esta ficha) | 71 | Si buscas esto: plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. |
+| 3 | [Zulip](zulip.md) | 63 | Si buscas esto: chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. |
 
 ## Acceso, coste y equipo
 

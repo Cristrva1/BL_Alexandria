@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Apache Hudi, plataforma de data lakehouse abierta sobre un formato de tabla de alto rendimiento, de la Apache Software Foundation. Licencia Apache-2.0. Es madura (~6.4k estrellas, release-1.2.1).
@@ -36,6 +38,16 @@ Se integra con Apache Spark y Flink (herramientas de ingestión integradas) y lo
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada release-1.2.1 (2026-09-24) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/hudi/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Formatos de tabla para data lakes**: hudi ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Delta Lake](delta-lake.md) ⭐ recomendado | 63 | Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. |
+| 2 | [Apache Iceberg](apache-iceberg.md) | 62 | Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. |
+| 3 | **hudi** (esta ficha) | 51 | Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 
 ## Acceso, coste y equipo
 

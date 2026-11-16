@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 FinRL, el framework open source de aprendizaje por refuerzo para finanzas, de AI4Finance Foundation. Licencia MIT; la marca FinRL pertenece a FinRL LLC. Es maduro (~17k estrellas, v0.3.8) y su sucesor orientado a producción es FinRL-X (repositorio FinRL-Trading).

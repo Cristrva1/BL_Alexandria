@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de agente (MIT) de Leonxlnx para que los agentes construyan webs de empresa de calidad profesional en lugar de landings genéricas. Muy popular y activa (v2.5.1), con patrocinadores.
@@ -35,6 +37,17 @@ Se instala con `npx skills add https://github.com/Leonxlnx/taste-skill --skill "
 Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v2.5.1 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Leonxlnx/taste-skill/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de diseño de interfaces para agentes**: taste-skill ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) ⭐ recomendado | 73 | Si quieres una skill con bases de estilos, paletas y tipografías para generar UI. |
+| 2 | **taste-skill** (esta ficha) | 70 | Si quieres que el agente evite el aspecto genérico en las interfaces. |
+| 3 | [impeccable](impeccable.md) | 63 | Si quieres vocabulario y playbooks de diseño con detector y hooks. |
+| 4 | [hallmark](hallmark.md) | 51 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
 
 ## Acceso, coste y equipo
 

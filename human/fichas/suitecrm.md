@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CRM AGPL SuiteCRM Ltd.
@@ -32,6 +34,18 @@ LAMP/Docker + instalador.
 Estado en GitHub: activo · último push 2026-11-04 · última versión publicada v7.15.2 (2026-07-31) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SuiteCRM/SuiteCRM#readme) · [2](https://suitecrm.com)</sub>
+
+## Ver similares
+
+Grupo **CRM y ERP auto-hospedados**: SuiteCRM ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [twenty-main](twenty-main.md) ⭐ recomendado | 75 | Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado. |
+| 2 | [ERPNext](erpnext.md) | 74 | Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH. |
+| 3 | [Odoo](odoo.md) | 66 | Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema. |
+| 4 | [EspoCRM](espocrm.md) | 53 | Si quieres un CRM ligero y personalizable en PHP. |
+| 5 | **SuiteCRM** (esta ficha) | 45 | Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos. |
 
 ## Acceso, coste y equipo
 

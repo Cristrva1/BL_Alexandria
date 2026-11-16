@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 NVIDIA NemoClaw, stack de referencia open source para ejecutar agentes con más seguridad dentro de sandboxes NVIDIA OpenShell. Licencia Apache-2.0. Tiene ~23k estrellas y está activo.
@@ -36,6 +38,16 @@ Tiene instalador y un prompt de inicio para que un agente de programación (Curs
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA/NemoClaw/blob/main/README.md) · [2](https://docs.nvidia.com/nemoclaw/latest/)</sub>
+
+## Ver similares
+
+Grupo **Sandboxes para agentes**: NemoClaw ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **NemoClaw** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
+| 2 | [E2B](e2b.md) | 65 | Si buscas esto: sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
+| 3 | [sandbox](sandbox.md) | 52 | Si buscas esto: entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 earshot, «oídos para agentes de código»: herramientas locales de análisis de audio, de @Leonxlnx. Licencia MIT. Es muy reciente (octubre de 2026, ~4.9k estrellas, v0.4.1).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OpenCV, la biblioteca open source de visión por computador de referencia, gestionada por OpenCV.org. Licencia Apache-2.0. Es muy madura (~92k estrellas, 5.1.0).

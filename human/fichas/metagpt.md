@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework multiagente open source (MIT) de FoundationAgents (antes geekan/MetaGPT) que asigna roles a LLMs para que colaboren como un equipo. Tiene mucha repercusión (~71k estrellas), pero poca actividad: la última release es la v0.8.1 de abril de 2024 y el último push, de enero de 2026. Sus autores se han centrado en el producto comercial MGX/Atoms y en investigación (AFlow, SPO, AOT).

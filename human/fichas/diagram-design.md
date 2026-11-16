@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 diagram-design, skill que dibuja diagramas como un único archivo HTML + SVG autocontenido con tu marca, de @cathrynlavery. Licencia MIT. Creado en abril de 2026, tiene ~67k estrellas y sin releases.
@@ -35,6 +37,15 @@ Se instala con `npx skills add cathrynlavery/diagram-design`. La exportación a 
 Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cathrynlavery/diagram-design/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de diagramas de arquitectura**: diagram-design ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [archify](archify.md) ⭐ recomendado | 70 | Si buscas esto: skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. |
+| 2 | **diagram-design** (esta ficha) | 56 | Si buscas esto: skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. |
 
 ## Acceso, coste y equipo
 

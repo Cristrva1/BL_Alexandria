@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de código abierto (Apache-2.0) de Helicone (Y Combinator W23), con nube de pago. Activa.
@@ -35,6 +37,18 @@ Se integra cambiando la URL base del cliente o mediante SDK; se autoaloja con Do
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v2025.08.21-1 (2025-08-21) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Helicone/helicone/blob/main/README.md) · [2](https://docs.litellm.ai/docs/observability/helicone_integration) · [3](https://docs.helicone.ai/integrations/openai/langchain)</sub>
+
+## Ver similares
+
+Grupo **Observabilidad y trazas de LLM**: Helicone ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langfuse](langfuse.md) ⭐ recomendado | 79 | Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande. |
+| 2 | [Opik](opik.md) | 75 | Si quieres trazas y evaluación de LLM con integración en pruebas. |
+| 3 | [MLflow](mlflow.md) | 70 | Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM. |
+| 4 | [Phoenix](phoenix.md) | 53 | Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks. |
+| 5 | **Helicone** (esta ficha) | 50 | Si quieres observabilidad como proxy con solo cambiar la URL base. |
 
 ## Acceso, coste y equipo
 

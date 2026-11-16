@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de código abierto (GPL-2.0 con aclaraciones propias; ver LICENSE) de Bernardo Damele y Miroslav Stampar. Muy madura y activa desde 2006.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca Python de código abierto (Apache 2.0) de lyogavin para reducir la memoria de inferencia de LLM grandes. Existe desde 2023 y publicó la v4.0.0 en 2026; el README incluye enlaces patrocinados ajenos al proyecto.

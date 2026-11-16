@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 38/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista de herramientas de ingeniería inversa con IA para Claude Code, Codex y otros agentes, de @zhuyansen. GitHub muestra licencia NOASSERTION. Es pequeña (~100 estrellas) y se genera a partir de agentskillshub.top, que la actualiza cada 8 horas y añade etiquetas propias como «SAFE».

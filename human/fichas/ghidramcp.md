@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 GhidraMCP, servidor MCP y plugin que permite a los LLM hacer ingeniería inversa autónoma con Ghidra, de @LaurieWired. Licencia Apache-2.0. Es popular (~12k estrellas, versión 2.0).

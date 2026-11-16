@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 RTK (Rust Token Killer), filtro de salidas de terminal para agentes de programación, de rtk-ai. El binario por defecto combina Apache-2.0 y BUSL-1.1, y la edición `rtk-oss` es solo Apache-2.0. Es muy popular (~87k estrellas, v1.2.0) y tiene una versión comercial (RTK Pro).
@@ -37,6 +39,15 @@ Se instala con `brew install rtk`, `winget` o un script `curl … | sh`, y se re
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.2.0 (2026-11-08) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rtk-ai/rtk/blob/develop/README.md) · [2](https://www.rtk-ai.app/docs/)</sub>
+
+## Ver similares
+
+Grupo **Compactar contexto y tokens**: rtk ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **rtk** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. |
+| 2 | [headroom](headroom.md) | 60 | Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Acceso, coste y equipo
 

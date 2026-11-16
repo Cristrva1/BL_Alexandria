@@ -233,6 +233,11 @@ def build_catalog(project_root: Path) -> dict:
             merged["combina_con"] = combos
         if source.get("nivel"):
             merged["nivel"] = source["nivel"]  # alta ligera: combinaciones opcionales
+        quality = detail.get("calidad") or {}
+        if quality.get("puntuacion") is not None:
+            merged["calidad"] = {"puntuacion": quality["puntuacion"], "fecha": quality.get("fecha")}
+        if detail.get("similares"):
+            merged["similares"] = detail["similares"]
         for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
             if detail.get(field):
                 merged[field] = detail[field]

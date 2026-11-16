@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (BSD-3-Clause) de la organización MapLibre, creada como fork de mapbox-gl-js cuando este pasó a una licencia no libre en diciembre de 2020. Madura y con amplio respaldo.
@@ -35,6 +37,15 @@ Escrito en TypeScript con WebGL2; se carga desde npm (`maplibre-gl`) o CDN. Nece
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v6.18.0 (2026-11-11) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/maplibre/maplibre-gl-js/blob/main/README.md) · [2](https://maplibre.org/maplibre-gl-js/docs/)</sub>
+
+## Ver similares
+
+Grupo **Mapas web interactivos**: MapLibre GL JS ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Leaflet](leaflet.md) ⭐ recomendado | 70 | Si buscas esto: biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. |
+| 2 | **MapLibre GL JS** (esta ficha) | 67 | Si buscas esto: biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia. |
 
 ## Acceso, coste y equipo
 

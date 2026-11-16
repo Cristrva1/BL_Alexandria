@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de inferencia de LLM y modelos de visión (VLM) en C/C++, mantenido por la organización ggml-org sobre la biblioteca de tensores ggml. Licencia MIT, desarrollo diario desde 2023 y primera versión 1.0.0 publicada en noviembre de 2026; es la base de muchas herramientas locales.
@@ -42,6 +44,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ggml-org/llama.cpp/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Motores para correr LLM en local**: llama.cpp ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ollama](ollama.md) ⭐ recomendado | 84 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
+| 2 | **llama.cpp** (esta ficha) | 78 | Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento. |
+| 3 | [LocalAI](localai.md) | 72 | Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor. |
+| 4 | [llamafile](llamafile.md) | 52 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
+| 5 | [KoboldCpp](koboldcpp.md) | 46 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
 
 ## Acceso, coste y equipo
 

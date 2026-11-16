@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 36/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plugin no oficial de zachdunn (MIT) para Claude Code que delega tareas en Grok CLI de xAI. Versión v0.2.0; último cambio en junio de 2026.

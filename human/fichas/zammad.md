@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Helpdesk de código abierto (AGPL-3.0) de la Zammad Foundation, con alojamiento y soporte de pago de Zammad GmbH. Muy maduro.
@@ -35,6 +37,15 @@ Escrito en Ruby on Rails; se instala con Docker Compose, paquetes de Linux o Hel
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zammad/zammad/blob/develop/README.md) · [2](https://docs.zammad.org/en/latest/install/docker-compose.html)</sub>
+
+## Ver similares
+
+Grupo **Help desk y tickets**: Zammad ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Zammad** (esta ficha) ⭐ recomendado | 58 | Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
+| 2 | [FreeScout](freescout.md) | 56 | Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. |
 
 ## Acceso, coste y equipo
 

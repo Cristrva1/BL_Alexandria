@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.

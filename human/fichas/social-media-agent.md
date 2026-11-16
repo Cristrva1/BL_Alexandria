@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Social Media Agent, agente de ejemplo de LangChain que convierte una URL en publicaciones para X y LinkedIn. Licencia MIT. Tiene ~3k estrellas; es más una plantilla que un producto.

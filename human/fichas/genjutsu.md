@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills para Claude Code de AThevon para animación y diseño de interfaces; el README declara MIT, aunque GitHub no reconoce la licencia como estándar. Activo (v4.2.1).

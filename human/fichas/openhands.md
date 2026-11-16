@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OpenHands, cuyo repo principal es ahora Agent Canvas, centro de control autoalojado para agentes de programación y automatizaciones. Licencia MIT. Es muy activo (~94k estrellas, v1.40.0).
@@ -37,6 +39,16 @@ Se instala con `npm install -g @openhands/agent-canvas` o con Docker. Por defect
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.40.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenHands/OpenHands/blob/main/README.md) · [2](https://docs.openhands.dev)</sub>
+
+## Ver similares
+
+Grupo **Agentes que resuelven issues de software**: OpenHands ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **OpenHands** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
+| 2 | [Open SWE](open-swe.md) | 61 | Si buscas esto: robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
+| 3 | [mini-swe-agent](mini-swe-agent.md) | 52 | Si buscas esto: agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench. |
 
 ## Acceso, coste y equipo
 

@@ -82,6 +82,7 @@ def render_all(project_root: Path) -> dict[str, int]:
     _render_catalog(project_root, cat, local_ids)
     _render_guide(project_root, cat)
     _render_human_home(project_root, cat)
+    _render_quality_page(project_root)
     render_explorer(project_root, cat)
     _update_root_docs(project_root, cat)
 
@@ -308,11 +309,15 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         ),
         "",
     ]
+    quality = _quality_line(repo, "..")
+    if quality:
+        lines += [quality, ""]
     status = _status_note(repo)
     if status:
         lines += [f"> {status}", ""]
     four = _four_sections(cat, repo, "fichas")
     lines += four
+    lines += _similar_section(cat, repo, "fichas")
 
     def section(title: str, body: str | None) -> None:
         if body:
@@ -394,6 +399,78 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         lines += [f"- [Fuente {index}]({url})" for index, url in enumerate(access["sources"], 1)] + [""]
     lines.append(_footer(cat))
     return "\n".join(lines)
+
+
+def _quality_line(repo: dict[str, Any], up: str) -> str:
+    """Línea de puntuación de calidad (rúbrica de config/calidad.yaml)."""
+    q = repo.get("calidad") or {}
+    if q.get("puntuacion") is None:
+        return ""
+    return (f"**Puntuación de calidad** {q['puntuacion']:.0f}/100 · métricas del {q.get('fecha') or 'fecha por confirmar'} · "
+            f"[cómo se calcula]({up}/calidad.md)")
+
+
+def _similar_section(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
+    """«Ver similares»: el grupo funcional ordenado por puntuación, con cuándo elegir cada uno."""
+    sim = repo.get("similares") or {}
+    rows = [r for r in sim.get("ranking") or [] if cat.get(r["id"])]
+    if len(rows) < 2:
+        return []
+    lines = ["## Ver similares", "",
+             f"Grupo **{sim['titulo']}**: {repo.get('name') or repo['id']} ocupa la posición {sim['posicion']} de {sim['total']}"
+             f" ({'recomendado' if sim['papel'] == 'recomendado' else 'alternativa'}). Orden por puntuación de calidad;"
+             " revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.", "",
+             "| # | Repo | Puntuación | Cuándo elegirlo |", "|---:|---|---:|---|"]
+    for r in rows:
+        name = repo_link(cat, r["id"], base)
+        if r["id"] == repo["id"]:
+            name = f"**{cat.get(r['id']).get('name') or r['id']}** (esta ficha)"
+        tag = " ⭐ recomendado" if r["papel"] == "recomendado" else ""
+        score = "—" if r.get("puntuacion") is None else f"{r['puntuacion']:.0f}"
+        lines.append(f"| {r['posicion']} | {name}{tag} | {score} | {md_cell(r.get('cuando') or '—')} |")
+    return lines + [""]
+
+
+def _render_quality_page(project_root: Path) -> None:
+    """human/calidad.md: rúbrica y método, generado desde config/calidad.yaml."""
+    import yaml
+
+    cfg_path = project_root / "config" / "calidad.yaml"
+    if not cfg_path.exists():  # copia temporal sin config/: usa la rúbrica del propio código fuente
+        cfg_path = Path(__file__).resolve().parents[3] / "config" / "calidad.yaml"
+    if not cfg_path.exists():
+        return
+    cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
+    w = cfg.get("pesos") or {}
+    sub = cfg.get("subpesos") or {}
+    lp = cfg.get("licencia_puntos") or {}
+    rows = [
+        ("Adopción", w.get("adopcion"), ", ".join(f"{k.replace('_', ' ')} {v}" for k, v in (sub.get("adopcion") or {}).items())),
+        ("Mantenimiento", w.get("mantenimiento"), ", ".join(f"{k.replace('_', ' ')} {v}" for k, v in (sub.get("mantenimiento") or {}).items())),
+        ("Licencia", w.get("licencia"), ", ".join(f"{k.replace('_', ' ')} {v}" for k, v in lp.items())),
+        ("Madurez", w.get("madurez"), ", ".join(f"{k} {v}" for k, v in (sub.get("madurez") or {}).items())),
+        ("Respaldo", w.get("respaldo"), "fundación 10, organización 8, persona 5"),
+        ("Encaje con el stack", w.get("encaje"), "Python/TypeScript/JavaScript/Go 3, Docker 3, ejecución local 2, modelos locales/Ollama 2"),
+        ("Seguridad", w.get("seguridad"), "OpenSSF Scorecard × 0,5 (sin dato: 2,5)"),
+    ]
+    lines = ["[🏠 Inicio](README.md)", "", "# Puntuación de calidad y grupos de similares", "",
+             "Cada repo recibe una puntuación de 0 a 100 calculada con métricas públicas (GitHub, PyPI, npm, Docker Hub y OpenSSF Scorecard). "
+             "Se recalcula una vez al mes. Sirve para ordenar opciones parecidas, no para decidir por ti: revisa siempre «Cuándo elegirlo».", "",
+             "| Eje | Puntos | Señales |", "|---|---:|---|", *[f"| {a} | {b} | {c} |" for a, b, c in rows], "",
+             "## Cómo se compara", "",
+             "- Las métricas numéricas se convierten en percentiles: la mitad frente a la categoría técnica y la mitad frente al grupo de similares. "
+             "El último de un grupo pequeño no queda en cero y un valor extremo no deforma la escala.",
+             "- Primera respuesta: mediana, en las 40 issues más recientes, del primer comentario de otra persona (sin bots) o del cierre. "
+             "Las issues sin respuesta cuentan con el tiempo transcurrido hasta hoy.",
+             "- Repos derivados que fusionan su upstream: solo cuentan los commits del propietario y los contribuidores propios.",
+             "- Licencia: si GitHub no reconoce el SPDX se lee el archivo LICENSE; hay correcciones manuales en `config/calidad.yaml`.",
+             "- Sin Scorecard publicado, el eje de seguridad queda neutral (2,5).", "",
+             "## Grupos de similares", "",
+             "Los grupos (`curation/grupos.yaml`) reúnen repos que resuelven lo mismo dentro de una subcategoría. Se sembraron por similitud de texto "
+             "(TF-IDF), temas compartidos y alternativas declaradas, con un máximo de 8 por grupo, y se corrigieron a mano. El primero por puntuación es el "
+             "**recomendado** y el resto son **alternativas**; nada se retira automáticamente.", "",
+             "Datos: `data/metricas/puntuaciones.json` (desglose por repo) y `data/grupos.json` (ranking por grupo).", ""]
+    _write(project_root / "human" / "calidad.md", "\n".join(lines))
 
 
 def has_four_sections(repo: dict[str, Any]) -> bool:
