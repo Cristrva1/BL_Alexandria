@@ -30,7 +30,7 @@ Notebooks principalmente en Python que requieren una clave de API de Claude, con
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | Base de prompting recomendada antes de las recetas. (combinación por arquitectura) | Completa primero el tutorial de prompts. |
+| [Prompt Engineering Guide](prompt-engineering-guide.md) | Guía de referencia de prompting para leer antes de las recetas. (combinación por arquitectura) | Repasa primero la guía de prompts. |
 | [claude-agent-sdk-python](claude-agent-sdk-python.md) | Siguiente paso cuando las recetas de herramientas y subagentes se quedan cortas y necesitas el bucle de agente completo. (combinación por arquitectura) | Pasa al SDK cuando quieras agentes con herramientas de sistema. |
 | [promptfoo](promptfoo.md) | Automatizar las evaluaciones que el cookbook enseña a construir. (combinación por arquitectura) | Convierte el notebook de evaluaciones en una configuración de promptfoo. |
 

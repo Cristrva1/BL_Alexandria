@@ -2395,7 +2395,7 @@
     {
      "id": "awesome-llm-apps",
      "posicion": 1,
-     "puntuacion": 75.1,
+     "puntuacion": 75.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.",
      "cuando_origen": "plantilla",
@@ -2404,7 +2404,7 @@
     {
      "id": "openai-cookbook",
      "posicion": 2,
-     "puntuacion": 58.4,
+     "puntuacion": 58.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales.",
      "cuando_origen": "plantilla",
@@ -2413,7 +2413,7 @@
     {
      "id": "claude-cookbooks",
      "posicion": 3,
-     "puntuacion": 56.1,
+     "puntuacion": 55.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.",
      "cuando_origen": "plantilla",
@@ -3745,7 +3745,7 @@
     {
      "id": "generative-ai-for-beginners",
      "posicion": 1,
-     "puntuacion": 67.9,
+     "puntuacion": 67.8,
      "papel": "recomendado",
      "cuando": "Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.",
      "cuando_origen": "plantilla",
@@ -3754,7 +3754,7 @@
     {
      "id": "ai-agents-for-beginners",
      "posicion": 2,
-     "puntuacion": 65.5,
+     "puntuacion": 65.4,
      "papel": "alternativa",
      "cuando": "Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español.",
      "cuando_origen": "plantilla",
@@ -4561,7 +4561,7 @@
     {
      "id": "prompts-chat",
      "posicion": 1,
-     "puntuacion": 69.5,
+     "puntuacion": 69.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
      "cuando_origen": "plantilla",
@@ -4570,7 +4570,7 @@
     {
      "id": "fabric",
      "posicion": 2,
-     "puntuacion": 63.0,
+     "puntuacion": 62.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal.",
      "cuando_origen": "plantilla",
@@ -5241,7 +5241,7 @@
     {
      "id": "llms-from-scratch",
      "posicion": 1,
-     "puntuacion": 71.2,
+     "puntuacion": 71.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso.",
      "cuando_origen": "plantilla",
@@ -5250,7 +5250,7 @@
     {
      "id": "llm-course",
      "posicion": 2,
-     "puntuacion": 53.1,
+     "puntuacion": 52.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.",
      "cuando_origen": "plantilla",
@@ -5838,40 +5838,6 @@
    "recomendado": "ppt-master",
    "alternativas": [
     "presenton"
-   ]
-  },
-  {
-   "id": "g-guias-de-ingenieria-de-prompts",
-   "titulo": "Guías de ingeniería de prompts",
-   "cat": 19,
-   "sub": "prompts",
-   "miembros": [
-    "prompt-eng-tutorial",
-    "prompt-engineering-guide"
-   ],
-   "ranking": [
-    {
-     "id": "prompt-engineering-guide",
-     "posicion": 1,
-     "puntuacion": 62.2,
-     "papel": "recomendado",
-     "cuando": "Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
-     "id": "prompt-eng-tutorial",
-     "posicion": 2,
-     "puntuacion": 38.4,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    }
-   ],
-   "recomendado": "prompt-engineering-guide",
-   "alternativas": [
-    "prompt-eng-tutorial"
    ]
   },
   {

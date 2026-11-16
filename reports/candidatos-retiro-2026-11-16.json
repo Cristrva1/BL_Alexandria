@@ -1,13 +1,13 @@
 {
   "fecha": "2026-11-16",
   "umbral": 45.0,
-  "nota": "Propuesta para revisión. No se ha retirado nada: data/retired.json no cambia.",
+  "nota": "Propuesta para revisión. El informe no retira nada; los retiros los decide el propietario y se registran en data/retired.json. Retirados tras la revisión: prompt-eng-tutorial.",
   "criterios": [
     "puntuación < umbral",
     "sin commits en 365 días (propios en derivados) o archivado",
     "sin caso de uso único: en un grupo, no recomendado y sin marca caso_unico"
   ],
-  "evaluados": 892,
+  "evaluados": 891,
   "sin_datos": [
     {
       "id": "kimi-k2-7-code",
@@ -57,7 +57,10 @@
         "puntuacion_baja": true,
         "sin_actividad": true,
         "sin_caso_unico": true
-      }
+      },
+      "estado": "retirado",
+      "retirado_el": "2026-11-16",
+      "motivo_retiro": "inactivo"
     }
   ],
   "cerca": [

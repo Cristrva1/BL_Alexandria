@@ -36,9 +36,9 @@ Se instala con `npm install -g promptfoo`, `brew`, `pip` o se usa con `npx promp
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) · [ChatGPT_DAN](chatgpt-dan.md) · [chatgpt_system_prompt](chatgpt-system-prompt.md) · [Claude Cookbooks](claude-cookbooks.md) · [Cybersecurity Skills (comunidad)](cybersecurity-skills.md) · [garak](garak.md) · [jev-fraud](jev-fraud.md) · [llm-council](llm-council.md) · [NeMo Guardrails](guardrails.md) · [OpenAI Cookbook](openai-cookbook.md) · [Prompt Engineering Guide](prompt-engineering-guide.md) · [prompts.chat](prompts-chat.md) · [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md)
+[ChatGPT_DAN](chatgpt-dan.md) · [chatgpt_system_prompt](chatgpt-system-prompt.md) · [Claude Cookbooks](claude-cookbooks.md) · [Cybersecurity Skills (comunidad)](cybersecurity-skills.md) · [garak](garak.md) · [jev-fraud](jev-fraud.md) · [llm-council](llm-council.md) · [NeMo Guardrails](guardrails.md) · [OpenAI Cookbook](openai-cookbook.md) · [Prompt Engineering Guide](prompt-engineering-guide.md) · [prompts.chat](prompts-chat.md) · [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md)
 
 **Notas:** Alternativas (elige una): deepeval, ragas, dspy. Tras la compra por OpenAI conviene vigilar la gobernanza del proyecto.
 

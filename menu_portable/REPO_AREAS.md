@@ -542,7 +542,7 @@ Material para empezar a construir y entender aplicaciones de IA.
 
 Escribir mejores encargos y comprender instrucciones de agentes.
 
-`chatgpt-dan`, `chatgpt-system-prompt`, `fabric`, `prompt-eng-tutorial`, `prompt-engineering-guide`, `prompt-master`, `prompts-chat`, `system-prompts-and-models-of-ai-tools`
+`chatgpt-dan`, `chatgpt-system-prompt`, `fabric`, `prompt-engineering-guide`, `prompt-master`, `prompts-chat`, `system-prompts-and-models-of-ai-tools`
 
 ### Aprender cómo funcionan los modelos
 

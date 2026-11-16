@@ -582,7 +582,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [prompts.chat](fichas/prompts-chat.md) | La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [promptfoo](fichas/promptfoo.md) | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. | API de IA opcional |
 | 2026-11-10 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-10 | [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. | API de IA opcional |
 | 2026-11-10 | [PrivateGPT](fichas/private-gpt.md) | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. | Depende de la ruta elegida |
 | 2026-11-10 | [Presenton](fichas/presenton.md) | Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. | API de IA opcional |
 | 2026-11-10 | [Polars](fichas/polars.md) | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. | Sin clave propia de API de IA en la ruta básica |

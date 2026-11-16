@@ -1,6 +1,6 @@
 # Candidatos a retiro — 2026-11-16
 
-Propuesta para revisión. No se ha retirado nada: data/retired.json no cambia.
+Propuesta para revisión. El informe no retira nada; los retiros los decide el propietario y se registran en data/retired.json. Retirados tras la revisión: prompt-eng-tutorial.
 
 Un repo aparece aquí solo si cumple las tres condiciones:
 
@@ -8,20 +8,21 @@ Un repo aparece aquí solo si cumple las tres condiciones:
 2. sin commits en 365 días (propios en derivados) o archivado
 3. sin caso de uso único: en un grupo, no recomendado y sin marca caso_unico
 
-Umbral de puntuación: 45. Repos evaluados: 892. Sin datos suficientes (no evaluables): 2.
+Umbral de puntuación: 45. Repos evaluados: 891. Sin datos suficientes (no evaluables): 2.
 
 «Commits 365 d» cuenta commits en la rama principal (propios en repos derivados). «Último push» incluye cualquier rama, por eso puede ser reciente aunque no haya commits en la principal.
 
 ## Candidatos (1)
 
-| Repo | Puntuación | Commits 365 d | Último push | Grupo (posición) | Alternativa recomendada |
-|---|---:|---:|---|---|---|
-| `prompt-eng-tutorial` (anthropics/prompt-eng-interactive-tutorial) | 38.4 | 0 | 2026-08-28 | Guías de ingeniería de prompts (2/2) | `prompt-engineering-guide` (62) |
+| Repo | Puntuación | Commits 365 d | Último push | Grupo (posición) | Alternativa recomendada | Estado |
+|---|---:|---:|---|---|---|---|
+| `prompt-eng-tutorial` (anthropics/prompt-eng-interactive-tutorial) | 38.4 | 0 | 2026-08-28 | Guías de ingeniería de prompts (2/2) | `prompt-engineering-guide` (62) | retirado el 2026-11-16 (inactivo) — en data/retired.json |
 
 ### Evidencia por repo
 
 #### Anthropic's Prompt Engineering Tutorial (`prompt-eng-tutorial`)
 
+- Estado: retirado el 2026-11-16 (inactivo) — en data/retired.json.
 - Puntuación 38.4: adopción 7.7/25, mantenimiento 7.1/25, licencia 5.0/15 (desconocida), madurez 8.0/10, respaldo 8.0/10, encaje 0.0/10, seguridad 2.5/5.
 - Actividad: 0 commits en 365 días, último push 2026-08-28.
 - Grupo «Guías de ingeniería de prompts»: posición 2 de 2; recomendado `prompt-engineering-guide`.

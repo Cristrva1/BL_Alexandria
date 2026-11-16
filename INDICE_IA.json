@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 894 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 893 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -821,7 +821,7 @@
      "title": "Aprender LLMs desde cero"
     }
    ],
-   "count": 31
+   "count": 30
   },
   {
    "num": 20,
@@ -4404,9 +4404,7 @@
    "lib": false,
    "pick": true,
    "one": "Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.",
-   "alt": [
-    "prompt-eng-tutorial"
-   ],
+   "alt": [],
    "doc": "human/fichas/prompt-engineering-guide.md",
    "github_id": 579082810,
    "added_at": "2026-11-10",
@@ -4419,8 +4417,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 62,
-   "grupo": "g-guias-de-ingenieria-de-prompts",
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -4506,51 +4503,8 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 69,
    "grupo": "g-colecciones-de-prompts",
-   "complejidad": 1
-  },
-  {
-   "id": "prompt-eng-tutorial",
-   "name": "Anthropic's Prompt Engineering Tutorial",
-   "emoji": "💡",
-   "cat": 19,
-   "sub": "prompts",
-   "role": "directory",
-   "exec": "cloud",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [
-    "anthropic"
-   ],
-   "tags": [
-    "learning",
-    "prompts",
-    "notebooks"
-   ],
-   "stars": 39347,
-   "gh": "anthropics/prompt-eng-interactive-tutorial",
-   "lib": false,
-   "pick": false,
-   "one": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-   "alt": [
-    "prompt-engineering-guide"
-   ],
-   "doc": "human/fichas/prompt-eng-tutorial.md",
-   "github_id": 781022269,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-10",
-   "goals": [
-    "skills",
-    "aprender"
-   ],
-   "routes": [
-    "no_api",
-    "api"
-   ],
-   "source_archived": false,
-   "puntuacion": 38,
-   "grupo": "g-guias-de-ingenieria-de-prompts",
    "complejidad": 1
   },
   {
@@ -4670,7 +4624,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66,
+   "puntuacion": 65,
    "grupo": "g-cursos-de-microsoft-para-principiantes",
    "complejidad": 1
   },
@@ -11059,7 +11013,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 66,
+   "puntuacion": 65,
    "complejidad": 2
   },
   {
@@ -17820,7 +17774,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 58,
    "complejidad": 1
   },
   {
@@ -30999,7 +30953,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 61,
+   "puntuacion": 60,
    "complejidad": 1
   },
   {

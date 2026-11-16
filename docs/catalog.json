@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-11-16",
-  "title": "Índice IA — 894 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 893 repos curados de IA, automatización y herramientas",
   "counts": {
-    "repos": 892,
+    "repos": 891,
     "categories": 32,
     "areas": 16,
     "work_areas": 13,
@@ -11,7 +11,7 @@
     "technical_subs": 117,
     "recipes": 14,
     "mcp": 132,
-    "labs": 408
+    "labs": 407
   },
   "labels": {
     "role": {
@@ -11937,13 +11937,12 @@
               "chatgpt-dan",
               "chatgpt-system-prompt",
               "fabric",
-              "prompt-eng-tutorial",
               "prompt-engineering-guide",
               "prompt-master",
               "prompts-chat",
               "system-prompts-and-models-of-ai-tools"
             ],
-            "count": 8
+            "count": 7
           },
           {
             "id": "aprender-modelos",
@@ -12150,7 +12149,6 @@
           "openai-cookbook",
           "plugins",
           "ponytail",
-          "prompt-eng-tutorial",
           "prompt-engineering-guide",
           "prompt-master",
           "prompts-chat",
@@ -12171,7 +12169,7 @@
           "ui-ux-pro-max-skill",
           "wshobson-agents"
         ],
-        "count": 97
+        "count": 96
       },
       {
         "id": "configurar-claude-code",
@@ -19798,7 +19796,7 @@
           "title": "Aprender LLMs desde cero"
         }
       ],
-      "count": 31,
+      "count": 30,
       "starters": [
         "fabric",
         "loop-engineering",
@@ -22622,10 +22620,6 @@
     {
       "a": "ppt-master",
       "b": "reveal.js"
-    },
-    {
-      "a": "prompt-eng-tutorial",
-      "b": "prompt-engineering-guide"
     },
     {
       "a": "promptfoo",
@@ -157947,7 +157941,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 52.9,
+        "puntuacion": 52.6,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -158167,7 +158161,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 61.0,
+        "puntuacion": 60.6,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -158388,7 +158382,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 48.9,
+        "puntuacion": 48.7,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -158606,7 +158600,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 65.5,
+        "puntuacion": 65.4,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -158628,14 +158622,14 @@
           {
             "id": "generative-ai-for-beginners",
             "posicion": 1,
-            "puntuacion": 67.9,
+            "puntuacion": 67.8,
             "papel": "recomendado",
             "cuando": "Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa."
           },
           {
             "id": "ai-agents-for-beginners",
             "posicion": 2,
-            "puntuacion": 65.5,
+            "puntuacion": 65.4,
             "papel": "alternativa",
             "cuando": "Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español."
           }
@@ -158857,7 +158851,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 58.7,
+        "puntuacion": 58.3,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -158922,251 +158916,6 @@
         "aprender-cursos"
       ],
       "discovery_text": " Aprender IA, prompts y skills aprender formacion cursos skills prompts Cursos, guías y ejemplos"
-    },
-    {
-      "id": "prompt-eng-tutorial",
-      "name": "Anthropic's Prompt Engineering Tutorial",
-      "cat": 19,
-      "role": "directory",
-      "exec": "cloud",
-      "setup": "easy",
-      "mcp": false,
-      "prov": [
-        "anthropic"
-      ],
-      "tags": [
-        "learning",
-        "prompts",
-        "notebooks"
-      ],
-      "one": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-      "desc": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "claude-cookbooks",
-        "promptfoo",
-        "marimo"
-      ],
-      "alt": [
-        "prompt-engineering-guide"
-      ],
-      "stack": "Navegador; cuenta y acceso al modelo para ejecutar ejercicios",
-      "repo_url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
-      "doc": "human/fichas/prompt-eng-tutorial.md",
-      "agent_tools": [],
-      "sub": "prompts",
-      "how": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-      "why": "Usos propuestos: Practicar instrucciones claras; Aprender a separar datos y órdenes.",
-      "cases": [
-        "Practicar instrucciones claras",
-        "Aprender a separar datos y órdenes"
-      ],
-      "gh": "anthropics/prompt-eng-interactive-tutorial",
-      "limits": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Navegador",
-          "cuenta y acceso al modelo para ejecutar ejercicios"
-        ],
-        "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Completa Basic Prompt Structure y compara una respuesta ambigua con otra que pide un formato concreto",
-        "success": "Puedes reconocer la diferencia entre instrucción y contenido",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Practicar instrucciones claras",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Aprender a separar datos y órdenes",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md",
-        "source_blob_sha": "d99c4d5dd799c6eb04fa0e834a3ac186272d5b1a",
-        "previous_source_blob_sha": "d99c4d5dd799c6eb04fa0e834a3ac186272d5b1a",
-        "previous_category": [
-          19,
-          "prompts"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "access": {
-        "mode": "software",
-        "api": "optional",
-        "local_model": "not_documented",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "choice",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo",
-        "subscription_note": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-        "local_note": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-        "cost_note": "Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo",
-        "hardware_note": "Navegador; cuenta y acceso al modelo para ejecutar ejercicios",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md"
-        ],
-        "source_blob_sha": "d99c4d5dd799c6eb04fa0e834a3ac186272d5b1a",
-        "antigravity": "not_documented"
-      },
-      "routes": [
-        "no_api",
-        "api"
-      ],
-      "goals": [
-        "skills",
-        "aprender"
-      ],
-      "added_at": "2026-11-10",
-      "status": "",
-      "pick": false,
-      "stars": 39347,
-      "license": "",
-      "homepage": "",
-      "combina_con": [
-        {
-          "id": "claude-cookbooks",
-          "motivo": "Pasar de la teoría de prompts a recetas de código (herramientas, RAG, evaluación) del mismo proveedor. (combinación por arquitectura)",
-          "orden_instalacion": "Termina el tutorial y continúa con las recetas que necesites."
-        },
-        {
-          "id": "promptfoo",
-          "motivo": "Convertir los ejercicios en pruebas automáticas y comparar variantes de prompt. (combinación por arquitectura)",
-          "orden_instalacion": "Usa los prompts del tutorial como casos base."
-        },
-        {
-          "id": "marimo",
-          "motivo": "Ejecutar los notebooks en un entorno reactivo y reproducible en lugar de Jupyter clásico. (combinación por arquitectura) (requiere convertirlos)",
-          "orden_instalacion": "Convierte el notebook con la herramienta de importación de marimo."
-        }
-      ],
-      "calidad": {
-        "puntuacion": 38.4,
-        "fecha": "2026-11-16"
-      },
-      "complejidad": {
-        "nivel": 1,
-        "nombre": "Básico",
-        "motivos": [
-          "material de consulta: se lee, no se instala"
-        ],
-        "origen": "auto"
-      },
-      "similares": {
-        "grupo": "g-guias-de-ingenieria-de-prompts",
-        "titulo": "Guías de ingeniería de prompts",
-        "posicion": 2,
-        "total": 2,
-        "papel": "alternativa",
-        "cuando": "Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-        "ranking": [
-          {
-            "id": "prompt-engineering-guide",
-            "posicion": 1,
-            "puntuacion": 62.2,
-            "papel": "recomendado",
-            "cuando": "Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes."
-          },
-          {
-            "id": "prompt-eng-tutorial",
-            "posicion": 2,
-            "puntuacion": 38.4,
-            "papel": "alternativa",
-            "cuando": "Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios."
-          }
-        ]
-      },
-      "que_es": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con Claude. El repositorio no tiene archivo de licencia, así que no hay permiso explícito de reutilización. Último push en agosto de 2026; los ejemplos usan Claude 3 Haiku, un modelo ya antiguo.",
-      "que_hace": "Enseña en 9 capítulos con ejercicios y un apéndice la estructura de un buen prompt, los fallos habituales y las técnicas '80/20' para corregirlos, las fortalezas y debilidades de Claude, y a construir prompts desde cero para casos comunes. Cada lección tiene un 'Example Playground' para experimentar.",
-      "como_lo_hace": "Notebooks Jupyter en dos versiones: API de Anthropic (carpeta 'Anthropic 1P') y Amazon Bedrock. También existe una versión en Google Sheets con la extensión Claude for Sheets. Requiere una clave de API de Anthropic o acceso a Bedrock, y cada ejercicio consume tokens.",
-      "descripcion_notas": "Alternativas (elige una): prompt-engineering-guide. Sin archivo de licencia. Combinación anterior con claude-cookbooks conservada como complemento de aprendizaje.",
-      "descripcion_fuentes": [
-        "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md"
-      ],
-      "descripcion_revision": {
-        "batch": "14-aprendizaje-prompts-parte-1",
-        "checked_at": "2026-11-15",
-        "status": "source_reviewed",
-        "installation_tested": false
-      },
-      "descripcion_github": {
-        "name_with_owner": "anthropics/prompt-eng-interactive-tutorial",
-        "archived": false,
-        "pushed_at": "2026-08-28",
-        "primary_language": "Jupyter Notebook",
-        "checked_at": "2026-11-15"
-      },
-      "lead": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-      "body": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-      "install": {
-        "command": "Consultar el material original; elegir un ejemplo antes de instalar.",
-        "confidence": "clone",
-        "note": "Una referencia no se instala como un servicio único."
-      },
-      "alt_refs": [
-        {
-          "id": "prompt-engineering-guide",
-          "label": "prompt-engineering-guide"
-        }
-      ],
-      "combine_refs": [
-        {
-          "id": "claude-cookbooks",
-          "label": "claude-cookbooks"
-        },
-        {
-          "id": "promptfoo",
-          "label": "promptfoo"
-        },
-        {
-          "id": "marimo",
-          "label": "marimo"
-        }
-      ],
-      "areas": [
-        "aprender"
-      ],
-      "topics": [
-        "aprender-prompts"
-      ],
-      "discovery_text": " Aprender IA, prompts y skills aprender formacion cursos skills prompts Prompts y contexto"
     },
     {
       "id": "awesome-llm-apps",
@@ -159337,7 +159086,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 75.1,
+        "puntuacion": 75.0,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -159359,21 +159108,21 @@
           {
             "id": "awesome-llm-apps",
             "posicion": 1,
-            "puntuacion": 75.1,
+            "puntuacion": 75.0,
             "papel": "recomendado",
             "cuando": "Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM."
           },
           {
             "id": "openai-cookbook",
             "posicion": 2,
-            "puntuacion": 58.4,
+            "puntuacion": 58.1,
             "papel": "alternativa",
             "cuando": "Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales."
           },
           {
             "id": "claude-cookbooks",
             "posicion": 3,
-            "puntuacion": 56.1,
+            "puntuacion": 55.8,
             "papel": "alternativa",
             "cuando": "Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización."
           }
@@ -160023,7 +159772,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 32.4,
+        "puntuacion": 32.2,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -160243,7 +159992,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 53.4,
+        "puntuacion": 53.3,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -160331,7 +160080,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar tickets ficticios; Estudiar llamadas a herramientas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "prompt-eng-tutorial",
+        "prompt-engineering-guide",
         "claude-agent-sdk-python",
         "promptfoo"
       ],
@@ -160450,9 +160199,9 @@
       "homepage": "",
       "combina_con": [
         {
-          "id": "prompt-eng-tutorial",
-          "motivo": "Base de prompting recomendada antes de las recetas. (combinación por arquitectura)",
-          "orden_instalacion": "Completa primero el tutorial de prompts."
+          "id": "prompt-engineering-guide",
+          "motivo": "Guía de referencia de prompting para leer antes de las recetas. (combinación por arquitectura)",
+          "orden_instalacion": "Repasa primero la guía de prompts."
         },
         {
           "id": "claude-agent-sdk-python",
@@ -160466,7 +160215,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 56.1,
+        "puntuacion": 55.8,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -160488,21 +160237,21 @@
           {
             "id": "awesome-llm-apps",
             "posicion": 1,
-            "puntuacion": 75.1,
+            "puntuacion": 75.0,
             "papel": "recomendado",
             "cuando": "Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM."
           },
           {
             "id": "openai-cookbook",
             "posicion": 2,
-            "puntuacion": 58.4,
+            "puntuacion": 58.1,
             "papel": "alternativa",
             "cuando": "Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales."
           },
           {
             "id": "claude-cookbooks",
             "posicion": 3,
-            "puntuacion": 56.1,
+            "puntuacion": 55.8,
             "papel": "alternativa",
             "cuando": "Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización."
           }
@@ -160548,8 +160297,8 @@
       ],
       "combine_refs": [
         {
-          "id": "prompt-eng-tutorial",
-          "label": "prompt-eng-tutorial"
+          "id": "prompt-engineering-guide",
+          "label": "prompt-engineering-guide"
         },
         {
           "id": "claude-agent-sdk-python",
@@ -160721,7 +160470,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 56.2,
+        "puntuacion": 56.1,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -160933,7 +160682,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 43.7,
+        "puntuacion": 43.6,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -161160,7 +160909,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 63.0,
+        "puntuacion": 62.7,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -161182,14 +160931,14 @@
           {
             "id": "prompts-chat",
             "posicion": 1,
-            "puntuacion": 69.5,
+            "puntuacion": 69.4,
             "papel": "recomendado",
             "cuando": "Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable."
           },
           {
             "id": "fabric",
             "posicion": 2,
-            "puntuacion": 63.0,
+            "puntuacion": 62.7,
             "papel": "alternativa",
             "cuando": "Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal."
           }
@@ -161411,7 +161160,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 67.9,
+        "puntuacion": 67.8,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -161433,14 +161182,14 @@
           {
             "id": "generative-ai-for-beginners",
             "posicion": 1,
-            "puntuacion": 67.9,
+            "puntuacion": 67.8,
             "papel": "recomendado",
             "cuando": "Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa."
           },
           {
             "id": "ai-agents-for-beginners",
             "posicion": 2,
-            "puntuacion": 65.5,
+            "puntuacion": 65.4,
             "papel": "alternativa",
             "cuando": "Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español."
           }
@@ -161866,7 +161615,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 60.8,
+        "puntuacion": 60.5,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -162078,7 +161827,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 59.3,
+        "puntuacion": 59.1,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -162309,7 +162058,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 53.1,
+        "puntuacion": 52.9,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -162331,14 +162080,14 @@
           {
             "id": "llms-from-scratch",
             "posicion": 1,
-            "puntuacion": 71.2,
+            "puntuacion": 71.0,
             "papel": "recomendado",
             "cuando": "Si buscas esto: código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso."
           },
           {
             "id": "llm-course",
             "posicion": 2,
-            "puntuacion": 53.1,
+            "puntuacion": 52.9,
             "papel": "alternativa",
             "cuando": "Si buscas esto: curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción."
           }
@@ -162561,7 +162310,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 51.8,
+        "puntuacion": 51.7,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -162795,7 +162544,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 71.2,
+        "puntuacion": 71.0,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -162817,14 +162566,14 @@
           {
             "id": "llms-from-scratch",
             "posicion": 1,
-            "puntuacion": 71.2,
+            "puntuacion": 71.0,
             "papel": "recomendado",
             "cuando": "Si buscas esto: código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso."
           },
           {
             "id": "llm-course",
             "posicion": 2,
-            "puntuacion": 53.1,
+            "puntuacion": 52.9,
             "papel": "alternativa",
             "cuando": "Si buscas esto: curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción."
           }
@@ -163054,7 +162803,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 67.4,
+        "puntuacion": 67.3,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -163278,7 +163027,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 70.4,
+        "puntuacion": 70.1,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -163517,7 +163266,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 65.6,
+        "puntuacion": 65.4,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -163753,7 +163502,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 58.4,
+        "puntuacion": 58.1,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -163775,21 +163524,21 @@
           {
             "id": "awesome-llm-apps",
             "posicion": 1,
-            "puntuacion": 75.1,
+            "puntuacion": 75.0,
             "papel": "recomendado",
             "cuando": "Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM."
           },
           {
             "id": "openai-cookbook",
             "posicion": 2,
-            "puntuacion": 58.4,
+            "puntuacion": 58.1,
             "papel": "alternativa",
             "cuando": "Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales."
           },
           {
             "id": "claude-cookbooks",
             "posicion": 3,
-            "puntuacion": 56.1,
+            "puntuacion": 55.8,
             "papel": "alternativa",
             "cuando": "Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización."
           }
@@ -163882,11 +163631,10 @@
         "prompt-master",
         "context-engineering",
         "promptfoo",
-        "chatgpt-system-prompt"
+        "chatgpt-system-prompt",
+        "claude-cookbooks"
       ],
-      "alt": [
-        "prompt-eng-tutorial"
-      ],
+      "alt": [],
       "stack": "Navegador; pregunta de ejemplo",
       "repo_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
       "doc": "human/fichas/prompt-engineering-guide.md",
@@ -164016,10 +163764,16 @@
           "motivo": "Combinación recíproca: chatgpt_system_prompt lo enlaza como «Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)».",
           "orden_instalacion": "Orden indicado desde chatgpt_system_prompt: Úsalo como marco conceptual.",
           "reciproca_de": "chatgpt-system-prompt"
+        },
+        {
+          "id": "claude-cookbooks",
+          "motivo": "Combinación recíproca: Claude Cookbooks lo enlaza como «Guía de referencia de prompting para leer antes de las recetas. (combinación por arquitectura)».",
+          "orden_instalacion": "Orden indicado desde Claude Cookbooks: Repasa primero la guía de prompts.",
+          "reciproca_de": "claude-cookbooks"
         }
       ],
       "calidad": {
-        "puntuacion": 62.2,
+        "puntuacion": 55.5,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -164030,34 +163784,9 @@
         ],
         "origen": "auto"
       },
-      "similares": {
-        "grupo": "g-guias-de-ingenieria-de-prompts",
-        "titulo": "Guías de ingeniería de prompts",
-        "posicion": 1,
-        "total": 2,
-        "papel": "recomendado",
-        "cuando": "Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.",
-        "ranking": [
-          {
-            "id": "prompt-engineering-guide",
-            "posicion": 1,
-            "puntuacion": 62.2,
-            "papel": "recomendado",
-            "cuando": "Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes."
-          },
-          {
-            "id": "prompt-eng-tutorial",
-            "posicion": 2,
-            "puntuacion": 38.4,
-            "papel": "alternativa",
-            "cuando": "Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios."
-          }
-        ]
-      },
       "que_es": "Guía de referencia de DAIR.AI (MIT) sobre ingeniería de prompts, con versión web en promptingguide.ai. Es material educativo, no software para instalar. Es una de las referencias más citadas del tema (~80k estrellas), pero el repositorio se actualiza poco: el último push es de marzo de 2026.",
       "que_hace": "Recopila técnicas de prompting (zero-shot, few-shot, chain-of-thought, etc.), aplicaciones, riesgos, artículos, lecturas y herramientas, y amplía su cobertura a RAG, agentes e ingeniería de contexto. Está traducida a varios idiomas. Sirve como mapa conceptual para equipos que empiezan con LLMs. DAIR.AI promociona en el README cursos de pago en su Academy.",
       "como_lo_hace": "El sitio está hecho con Next.js y Nextra; para verlo en local se instalan las dependencias con pnpm y se arranca con `pnpm dev`. El contenido está en archivos MDX dentro del repositorio. No requiere claves de API para leerlo.",
-      "descripcion_notas": "Alternativas (elige una): prompt-eng-tutorial.",
       "descripcion_fuentes": [
         "https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md",
         "https://www.promptingguide.ai/"
@@ -164083,12 +163812,7 @@
         "confidence": "clone",
         "note": "Una referencia no se instala como un servicio único."
       },
-      "alt_refs": [
-        {
-          "id": "prompt-eng-tutorial",
-          "label": "prompt-eng-tutorial"
-        }
-      ],
+      "alt_refs": [],
       "combine_refs": [
         {
           "id": "prompt-master",
@@ -164105,6 +163829,10 @@
         {
           "id": "chatgpt-system-prompt",
           "label": "chatgpt-system-prompt"
+        },
+        {
+          "id": "claude-cookbooks",
+          "label": "claude-cookbooks"
         }
       ],
       "areas": [
@@ -164265,7 +163993,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 53.4,
+        "puntuacion": 53.2,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -164484,7 +164212,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 69.5,
+        "puntuacion": 69.4,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -164506,14 +164234,14 @@
           {
             "id": "prompts-chat",
             "posicion": 1,
-            "puntuacion": 69.5,
+            "puntuacion": 69.4,
             "papel": "recomendado",
             "cuando": "Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable."
           },
           {
             "id": "fabric",
             "posicion": 2,
-            "puntuacion": 63.0,
+            "puntuacion": 62.7,
             "papel": "alternativa",
             "cuando": "Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal."
           }
@@ -164744,7 +164472,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 60.1,
+        "puntuacion": 59.9,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -164966,7 +164694,7 @@
         }
       ],
       "calidad": {
-        "puntuacion": 59.4,
+        "puntuacion": 59.3,
         "fecha": "2026-11-16"
       },
       "complejidad": {
@@ -186928,7 +186656,6 @@
         }
       ],
       "used_by": [
-        "prompt-eng-tutorial",
         "chatgpt-dan",
         "chatgpt-system-prompt",
         "claude-cookbooks",
@@ -198938,7 +198665,6 @@
         }
       ],
       "used_by": [
-        "prompt-eng-tutorial",
         "d3",
         "data-analyst-roadmap",
         "dlt",

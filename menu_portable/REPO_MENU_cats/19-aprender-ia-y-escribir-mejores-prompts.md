@@ -393,7 +393,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee una receta de extracción y adapta sus datos a un párrafo ficticio
 **Qué comprobar:** Entiendes qué se envía al modelo y qué respuesta se valida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `prompt-eng-tutorial`, `claude-agent-sdk-python`, `promptfoo`
+**Combina con:** `prompt-engineering-guide`, `claude-agent-sdk-python`, `promptfoo`
 **Alternativas (elige una):** `openai-cookbook`, `awesome-llm-apps`
 
 ## `claude-quickstarts`
@@ -766,37 +766,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openai-python`, `openai-agents-python`, `promptfoo`, `generative-ai-for-beginners`
 **Alternativas (elige una):** `claude-cookbooks`, `awesome-llm-apps`
 
-## `prompt-eng-tutorial`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=learning,prompts,notebooks
-
-**Qué es:** Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.
-**Stack:** Navegador; cuenta y acceso al modelo para ejecutar ejercicios
-**Acceso y costes:**
-- API de IA: API de IA opcional. Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar
-- Coste: El coste depende del proveedor o la ruta. Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo
-- Equipo: Preparación según la ruta elegida. Navegador; cuenta y acceso al modelo para ejecutar ejercicios
-**Repo:** https://github.com/anthropics/prompt-eng-interactive-tutorial
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Completa Basic Prompt Structure y compara una respuesta ambigua con otra que pide un formato concreto
-**Qué comprobar:** Puedes reconocer la diferencia entre instrucción y contenido
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-cookbooks`, `promptfoo`, `marimo`
-**Alternativas (elige una):** `prompt-engineering-guide`
-
 ## `prompt-engineering-guide`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,prompts,rag
 
@@ -825,8 +794,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia
 **Qué comprobar:** Puedes explicar qué información añadiste y por qué
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`, `chatgpt-system-prompt`
-**Alternativas (elige una):** `prompt-eng-tutorial`
+**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`, `chatgpt-system-prompt`, `claude-cookbooks`
 
 ## `prompt-master`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,prompts

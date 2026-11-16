@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+62 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -93,7 +93,6 @@
 - [Fabric vs prompts.chat](fabric-vs-prompts-chat.md)
 - [Generative AI for Beginners vs LLM Course](generative-ai-for-beginners-vs-llm-course.md)
 - [LLM Course vs LLMs from Scratch](llm-course-vs-llms-from-scratch.md)
-- [Anthropic's Prompt Engineering Tutorial vs Prompt Engineering Guide](prompt-eng-tutorial-vs-prompt-engineering-guide.md)
 
 ## 🕸️ Programar con agentes de código
 

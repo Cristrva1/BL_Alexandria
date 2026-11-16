@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -34,21 +34,11 @@ El sitio está hecho con Next.js y Nextra; para verlo en local se instalan las d
 | [Context-Engineering](context-engineering.md) | Continuación natural hacia la ingeniería de contexto, que la propia guía ya incluye como tema. (combinación por arquitectura) | Úsalo después de dominar los fundamentos de prompting. |
 | [promptfoo](promptfoo.md) | Medir con evaluaciones reproducibles si una técnica de la guía mejora de verdad tus resultados. (combinación por arquitectura) | Diseña los prompts con la guía y valídalos con un conjunto de pruebas en promptfoo. |
 | [chatgpt_system_prompt](chatgpt-system-prompt.md) | Combinación recíproca: chatgpt_system_prompt lo enlaza como «Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)». | Orden indicado desde chatgpt_system_prompt: Úsalo como marco conceptual. |
-
-**Notas:** Alternativas (elige una): prompt-eng-tutorial.
+| [Claude Cookbooks](claude-cookbooks.md) | Combinación recíproca: Claude Cookbooks lo enlaza como «Guía de referencia de prompting para leer antes de las recetas. (combinación por arquitectura)». | Orden indicado desde Claude Cookbooks: Repasa primero la guía de prompts. |
 
 Estado en GitHub: activo · último push 2026-03-11 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md) · [2](https://www.promptingguide.ai/)</sub>
-
-## Ver similares
-
-Grupo **Guías de ingeniería de prompts**: Prompt Engineering Guide ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
-
-| # | Repo | Puntuación | Cuándo elegirlo |
-|---:|---|---:|---|
-| 1 | **Prompt Engineering Guide** (esta ficha) ⭐ recomendado | 62 | Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
-| 2 | [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | 38 | Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
 
 ## Acceso, coste y equipo
 
@@ -112,12 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; pregunta de ejemplo
 - **Etiquetas:** `learning` `prompts` `rag`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | 39.3k | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
 
 ## Enlaces
 

@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-97 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+96 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -41,11 +41,10 @@ Material para empezar a construir y entender aplicaciones de IA.
 
 Escribir mejores encargos y comprender instrucciones de agentes.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-prompts)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-prompts)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [Anthropic's Prompt Engineering Tutorial](../fichas/prompt-eng-tutorial.md) | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. | API de IA opcional |
 | [ChatGPT_DAN](../fichas/chatgpt-dan.md) | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT. | Sin clave propia de API de IA en la ruta básica |
 | [chatgpt_system_prompt](../fichas/chatgpt-system-prompt.md) | Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts. | Sin clave propia de API de IA en la ruta básica |
 | [Fabric](../fichas/fabric.md) | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. | API de IA opcional |

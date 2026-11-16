@@ -248,7 +248,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [SuiteCRM](fichas/suitecrm.md) | [EspoCRM](fichas/espocrm.md), [twenty-main](fichas/twenty-main.md), [Odoo](fichas/odoo.md) |
 | [twenty-main](fichas/twenty-main.md) | [EspoCRM](fichas/espocrm.md), [SuiteCRM](fichas/suitecrm.md), [Odoo](fichas/odoo.md) |
 | [Zammad](fichas/zammad.md) | [FreeScout](fichas/freescout.md) |
-| [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) |
 | [Awesome LLM Apps](fichas/awesome-llm-apps.md) | [OpenAI Cookbook](fichas/openai-cookbook.md), [Claude Cookbooks](fichas/claude-cookbooks.md) |
 | [Claude Cookbooks](fichas/claude-cookbooks.md) | [OpenAI Cookbook](fichas/openai-cookbook.md), [Awesome LLM Apps](fichas/awesome-llm-apps.md) |
 | [Fabric](fichas/fabric.md) | [prompts.chat](fichas/prompts-chat.md) |
@@ -256,7 +255,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [LLM Course](fichas/llm-course.md) | [LLMs from Scratch](fichas/llms-from-scratch.md), [Generative AI for Beginners](fichas/generative-ai-for-beginners.md) |
 | [LLMs from Scratch](fichas/llms-from-scratch.md) | [LLM Course](fichas/llm-course.md) |
 | [OpenAI Cookbook](fichas/openai-cookbook.md) | [Claude Cookbooks](fichas/claude-cookbooks.md), [Awesome LLM Apps](fichas/awesome-llm-apps.md) |
-| [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) | [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) |
 | [prompts.chat](fichas/prompts-chat.md) | [Fabric](fichas/fabric.md) |
 | [Aider](fichas/aider.md) | [OpenCode](fichas/opencode.md), [Cline](fichas/cline.md) |
 | [Antigravity CLI](fichas/antigravity-cli.md) | [Gemini CLI](fichas/gemini-cli.md), [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md) |

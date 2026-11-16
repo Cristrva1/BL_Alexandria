@@ -46,7 +46,7 @@ Grupo **Colecciones de prompts**: Fabric ocupa la posición 2 de 2 (alternativa)
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [prompts.chat](prompts-chat.md) ⭐ recomendado | 70 | Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. |
+| 1 | [prompts.chat](prompts-chat.md) ⭐ recomendado | 69 | Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. |
 | 2 | **Fabric** (esta ficha) | 63 | Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. |
 
 ## Acceso, coste y equipo

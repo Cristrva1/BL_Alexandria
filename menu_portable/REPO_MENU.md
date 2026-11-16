@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 894 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 893 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **894 repos** de IA y
+proyecto concreto. Tienes un menú curado de **893 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -839,7 +839,7 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 - `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker — alt: espocrm,suitecrm,odoo
 - `zammad` [P|loc|H|?] — Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola int — tags: helpdesk,ruby,self-hosted,server — alt: freescout
 
-### 19. Aprender IA y escribir mejores prompts (31)
+### 19. Aprender IA y escribir mejores prompts (30)
 Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 
 - `12-factor-agents` [D|hyb|E|?] — Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12  — tags: agents,learning,prompts,typescript
@@ -867,8 +867,7 @@ Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 - `ml-for-beginners` [D|loc|E|?] — Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Py — tags: learning,notebooks,python
 - `nanochat` [L|loc|M|+] — Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde e — tags: learning,python
 - `openai-cookbook` [D|cld|E|?] — Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. — tags: learning,notebooks,python — alt: claude-cookbooks,awesome-llm-apps
-- `prompt-eng-tutorial` [D|cld|E|?] — Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. — tags: learning,prompts,notebooks — prov: anthropic — alt: prompt-engineering-guide
-- `prompt-engineering-guide` [D|cld|E|?] — Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. — tags: learning,prompts,rag — alt: prompt-eng-tutorial
+- `prompt-engineering-guide` [D|cld|E|?] — Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. — tags: learning,prompts,rag
 - `prompt-master` [S|cld|E|+] — Skill de Claude que ayuda a formular encargos para distintas herramientas de IA; no garantiza ahorro de tokens — tags: skills,prompts
 - `prompts-chat` [D|loc|E|?] — La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. — tags: prompts,chatbot — alt: fabric
 - `system-prompts-and-models-of-ai-tools` [D|hyb|E|?] — Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. — tags: prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin

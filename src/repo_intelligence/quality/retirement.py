@@ -77,12 +77,30 @@ def evaluate(root: Path, *, threshold: float = UMBRAL, today: str | None = None)
             candidates.append(evidence)
         elif met == 2:
             near.append(evidence)
+    for e in candidates:
+        e["estado"] = "pendiente de revisión"
+    # candidatos de un informe anterior con la misma fecha que ya se retiraron: se conservan con su estado
+    previous = _load(root / "reports" / f"candidatos-retiro-{today}.json", {"candidatos": []})["candidatos"]
+    ledger = {r.get("id"): r for r in _load(root / "data" / "retired.json", {"repos": []}).get("repos", [])}
+    for e in previous:
+        if e["id"] in ledger and e["id"] not in {x["id"] for x in candidates}:
+            candidates.append({**e, "estado": "retirado", "retirado_el": ledger[e["id"]].get("retired_at"),
+                               "motivo_retiro": ledger[e["id"]].get("reason")})
     key = lambda e: (e["puntuacion"], e["id"])  # noqa: E731
-    return {"fecha": today, "umbral": threshold, "nota": "Propuesta para revisión. No se ha retirado nada: data/retired.json no cambia.",
+    retired_now = [e["id"] for e in candidates if e.get("estado") == "retirado"]
+    nota = ("Propuesta para revisión. El informe no retira nada; los retiros los decide el propietario y se registran en data/retired.json."
+            + (f" Retirados tras la revisión: {', '.join(retired_now)}." if retired_now else ""))
+    return {"fecha": today, "umbral": threshold, "nota": nota,
             "criterios": ["puntuación < umbral", "sin commits en 365 días (propios en derivados) o archivado",
                           "sin caso de uso único: en un grupo, no recomendado y sin marca caso_unico"],
             "evaluados": sum(1 for r in compact["repos"] if not r.get("alias_of") and int(r.get("cat") or 0) > 0 and r["id"] not in retired),
             "sin_datos": sorted(missing, key=lambda x: x["id"]), "candidatos": sorted(candidates, key=key), "cerca": sorted(near, key=key)}
+
+
+def _state(e: dict) -> str:
+    if e.get("estado") == "retirado":
+        return f"retirado el {e.get('retirado_el')} ({e.get('motivo_retiro')}) — en data/retired.json"
+    return e.get("estado") or "pendiente de revisión"
 
 
 def _fails(e: dict) -> str:
@@ -103,16 +121,17 @@ def render_md(data: dict) -> str:
     if not cands:
         lines += ["Ningún repo cumple las tres condiciones.", ""]
     else:
-        lines += ["| Repo | Puntuación | Commits 365 d | Último push | Grupo (posición) | Alternativa recomendada |", "|---|---:|---:|---|---|---|"]
+        lines += ["| Repo | Puntuación | Commits 365 d | Último push | Grupo (posición) | Alternativa recomendada | Estado |",
+                  "|---|---:|---:|---|---|---|---|"]
         for e in cands:
             g = e["grupo"]
             arch = " · archivado" if e["archivado"] else ""
             lines.append(f"| `{e['id']}` ({e['gh']}) | {e['puntuacion']:.1f} | {e['commits_365d']}{arch} | {e['ultimo_push'] or '—'} | "
-                         f"{g['titulo']} ({g['posicion']}/{g['total']}) | `{g['recomendado']}` ({g['puntuacion_recomendado']:.0f}) |")
+                         f"{g['titulo']} ({g['posicion']}/{g['total']}) | `{g['recomendado']}` ({g['puntuacion_recomendado']:.0f}) | {_state(e)} |")
         lines += ["", "### Evidencia por repo", ""]
         for e in cands:
             g, ax = e["grupo"], e["ejes"]
-            lines += [f"#### {e['nombre']} (`{e['id']}`)", "",
+            lines += [f"#### {e['nombre']} (`{e['id']}`)", "", f"- Estado: {_state(e)}.",
                       f"- Puntuación {e['puntuacion']:.1f}: adopción {ax['adopcion']:.1f}/25, mantenimiento {ax['mantenimiento']:.1f}/25, "
                       f"licencia {ax['licencia']:.1f}/15 ({e['licencia']}), madurez {ax['madurez']:.1f}/10, respaldo {ax['respaldo']:.1f}/10, "
                       f"encaje {ax['encaje']:.1f}/10, seguridad {ax['seguridad']:.1f}/5.",

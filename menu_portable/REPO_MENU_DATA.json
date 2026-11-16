@@ -107,7 +107,7 @@
     {
       "num": 19,
       "title": "Aprender IA y escribir mejores prompts",
-      "count": 31
+      "count": 30
     },
     {
       "num": 20,
@@ -5090,13 +5090,12 @@
             "chatgpt-dan",
             "chatgpt-system-prompt",
             "fabric",
-            "prompt-eng-tutorial",
             "prompt-engineering-guide",
             "prompt-master",
             "prompts-chat",
             "system-prompts-and-models-of-ai-tools"
           ],
-          "count": 8
+          "count": 7
         },
         {
           "id": "aprender-modelos",
@@ -5303,7 +5302,6 @@
         "openai-cookbook",
         "plugins",
         "ponytail",
-        "prompt-eng-tutorial",
         "prompt-engineering-guide",
         "prompt-master",
         "prompts-chat",
@@ -5324,7 +5322,7 @@
         "ui-ux-pro-max-skill",
         "wshobson-agents"
       ],
-      "count": 97
+      "count": 96
     },
     {
       "id": "configurar-claude-code",
@@ -79228,7 +79226,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79469,7 +79467,7 @@
       "exec": "cloud",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 66,
+      "puntuacion": 65,
       "grupo": "g-cursos-de-microsoft-para-principiantes",
       "mcp": false,
       "prov": [
@@ -79592,7 +79590,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 59,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80551,7 +80549,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar tickets ficticios; Estudiar llamadas a herramientas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "prompt-eng-tutorial",
+        "prompt-engineering-guide",
         "claude-agent-sdk-python",
         "promptfoo"
       ],
@@ -81788,7 +81786,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 66,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -82028,129 +82026,6 @@
       ]
     },
     {
-      "id": "prompt-eng-tutorial",
-      "name": "Anthropic's Prompt Engineering Tutorial",
-      "cat": 19,
-      "role": "directory",
-      "exec": "cloud",
-      "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 38,
-      "grupo": "g-guias-de-ingenieria-de-prompts",
-      "mcp": false,
-      "prov": [
-        "anthropic"
-      ],
-      "tags": [
-        "learning",
-        "prompts",
-        "notebooks"
-      ],
-      "routes": [
-        "no_api",
-        "api"
-      ],
-      "access": {
-        "mode": "software",
-        "api": "optional",
-        "local_model": "not_documented",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "choice",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo",
-        "subscription_note": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-        "local_note": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-        "cost_note": "Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo",
-        "hardware_note": "Navegador; cuenta y acceso al modelo para ejecutar ejercicios",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md"
-        ],
-        "source_blob_sha": "d99c4d5dd799c6eb04fa0e834a3ac186272d5b1a",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Navegador",
-          "cuenta y acceso al modelo para ejecutar ejercicios"
-        ],
-        "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Completa Basic Prompt Structure y compara una respuesta ambigua con otra que pide un formato concreto",
-        "success": "Puedes reconocer la diferencia entre instrucción y contenido",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Practicar instrucciones claras",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Aprender a separar datos y órdenes",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md",
-        "source_blob_sha": "d99c4d5dd799c6eb04fa0e834a3ac186272d5b1a",
-        "previous_source_blob_sha": "d99c4d5dd799c6eb04fa0e834a3ac186272d5b1a",
-        "previous_category": [
-          19,
-          "prompts"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-      "desc": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
-      "stack": "Navegador; cuenta y acceso al modelo para ejecutar ejercicios",
-      "repo": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "claude-cookbooks",
-        "promptfoo",
-        "marimo"
-      ],
-      "alt": [
-        "prompt-engineering-guide"
-      ]
-    },
-    {
       "id": "prompt-engineering-guide",
       "name": "Prompt Engineering Guide",
       "cat": 19,
@@ -82158,8 +82033,8 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 62,
-      "grupo": "g-guias-de-ingenieria-de-prompts",
+      "puntuacion": 56,
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -82265,11 +82140,10 @@
         "prompt-master",
         "context-engineering",
         "promptfoo",
-        "chatgpt-system-prompt"
+        "chatgpt-system-prompt",
+        "claude-cookbooks"
       ],
-      "alt": [
-        "prompt-eng-tutorial"
-      ]
+      "alt": []
     },
     {
       "id": "prompt-master",
@@ -82398,7 +82272,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 70,
+      "puntuacion": 69,
       "grupo": "g-colecciones-de-prompts",
       "mcp": true,
       "prov": [],

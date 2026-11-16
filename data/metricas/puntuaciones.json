@@ -37,10 +37,10 @@
  },
  "repos": {
   "12-factor-agents": {
-   "puntuacion": 52.9,
+   "puntuacion": 52.6,
    "ejes": {
-    "adopcion": 12.3,
-    "mantenimiento": 5.4,
+    "adopcion": 12.2,
+    "mantenimiento": 5.2,
     "madurez": 6.7,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -48,13 +48,13 @@
     "encaje": 3.0
    },
    "percentiles": {
-    "estrellas_anio": 0.5,
-    "estrellas": 0.475,
-    "commits_90d": 0.112,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.315,
-    "ratio_cerradas": 0.1,
-    "bus_factor": 0.156
+    "estrellas_anio": 0.492,
+    "estrellas": 0.481,
+    "commits_90d": 0.106,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.303,
+    "ratio_cerradas": 0.086,
+    "bus_factor": 0.158
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -179,10 +179,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "500-ai-agents-projects": {
-   "puntuacion": 61.0,
+   "puntuacion": 60.6,
    "ejes": {
-    "adopcion": 18.0,
-    "mantenimiento": 8.5,
+    "adopcion": 17.8,
+    "mantenimiento": 8.3,
     "madurez": 7.0,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -190,13 +190,13 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.747,
-    "estrellas": 0.651,
-    "commits_90d": 0.292,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.1,
-    "ratio_cerradas": 0.627,
-    "bus_factor": 0.348
+    "estrellas_anio": 0.742,
+    "estrellas": 0.642,
+    "commits_90d": 0.281,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.086,
+    "ratio_cerradas": 0.619,
+    "bus_factor": 0.353
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -922,10 +922,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "agents-course": {
-   "puntuacion": 60.8,
+   "puntuacion": 60.5,
    "ejes": {
-    "adopcion": 14.5,
-    "mantenimiento": 11.8,
+    "adopcion": 14.4,
+    "mantenimiento": 11.6,
     "madurez": 6.9,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -933,13 +933,13 @@
     "encaje": 2.0
    },
    "percentiles": {
-    "estrellas_anio": 0.588,
-    "estrellas": 0.563,
-    "commits_90d": 0.396,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.491,
-    "ratio_cerradas": 0.332,
-    "bus_factor": 0.932
+    "estrellas_anio": 0.581,
+    "estrellas": 0.569,
+    "commits_90d": 0.386,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.481,
+    "ratio_cerradas": 0.319,
+    "bus_factor": 0.931
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -957,10 +957,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "agents-towards-production": {
-   "puntuacion": 48.9,
+   "puntuacion": 48.7,
    "ejes": {
-    "adopcion": 9.7,
-    "mantenimiento": 16.9,
+    "adopcion": 9.5,
+    "mantenimiento": 16.8,
     "madurez": 7.9,
     "licencia": 5.0,
     "respaldo": 5.0,
@@ -968,13 +968,13 @@
     "encaje": 2.0
    },
    "percentiles": {
-    "estrellas_anio": 0.38,
-    "estrellas": 0.403,
-    "commits_90d": 0.676,
-    "releases_365d": 0.868,
-    "primera_respuesta_dias": 0.419,
-    "ratio_cerradas": 0.94,
-    "bus_factor": 0.419
+    "estrellas_anio": 0.369,
+    "estrellas": 0.408,
+    "commits_90d": 0.669,
+    "releases_365d": 0.867,
+    "primera_respuesta_dias": 0.408,
+    "ratio_cerradas": 0.939,
+    "bus_factor": 0.425
    },
    "licencia": {
     "clase": "source_available",
@@ -1063,7 +1063,7 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "ai-agents-for-beginners": {
-   "puntuacion": 65.5,
+   "puntuacion": 65.4,
    "ejes": {
     "adopcion": 17.7,
     "mantenimiento": 15.1,
@@ -1074,13 +1074,13 @@
     "encaje": 0.0
    },
    "percentiles": {
-    "estrellas_anio": 0.802,
-    "estrellas": 0.488,
-    "commits_90d": 0.835,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.488,
-    "ratio_cerradas": 0.52,
-    "bus_factor": 0.536
+    "estrellas_anio": 0.8,
+    "estrellas": 0.483,
+    "commits_90d": 0.833,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.483,
+    "ratio_cerradas": 0.517,
+    "bus_factor": 0.533
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -1096,10 +1096,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "ai-engineering-hub": {
-   "puntuacion": 58.7,
+   "puntuacion": 58.3,
    "ejes": {
-    "adopcion": 16.9,
-    "mantenimiento": 10.0,
+    "adopcion": 16.8,
+    "mantenimiento": 9.8,
     "madurez": 7.3,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -1107,13 +1107,13 @@
     "encaje": 2.0
    },
    "percentiles": {
-    "estrellas_anio": 0.659,
-    "estrellas": 0.722,
-    "commits_90d": 0.468,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.244,
-    "ratio_cerradas": 0.26,
-    "bus_factor": 0.636
+    "estrellas_anio": 0.653,
+    "estrellas": 0.714,
+    "commits_90d": 0.458,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.231,
+    "ratio_cerradas": 0.247,
+    "bus_factor": 0.631
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -1587,10 +1587,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "annotated-dl-papers": {
-   "puntuacion": 59.3,
+   "puntuacion": 59.1,
    "ejes": {
     "adopcion": 11.5,
-    "mantenimiento": 8.8,
+    "mantenimiento": 8.6,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -1598,13 +1598,13 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.387,
-    "estrellas": 0.636,
-    "commits_90d": 0.435,
-    "releases_365d": 0.432,
-    "primera_respuesta_dias": 0.244,
-    "ratio_cerradas": 0.333,
-    "bus_factor": 0.196
+    "estrellas_anio": 0.392,
+    "estrellas": 0.63,
+    "commits_90d": 0.425,
+    "releases_365d": 0.431,
+    "primera_respuesta_dias": 0.232,
+    "ratio_cerradas": 0.324,
+    "bus_factor": 0.199
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -2950,8 +2950,8 @@
   "awesome-harness-engineering": {
    "puntuacion": 48.6,
    "ejes": {
-    "adopcion": 3.7,
-    "mantenimiento": 12.1,
+    "adopcion": 3.8,
+    "mantenimiento": 12.0,
     "madurez": 5.3,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -2959,13 +2959,13 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.188,
-    "estrellas": 0.052,
-    "commits_90d": 0.828,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.172,
-    "ratio_cerradas": 0.452,
-    "bus_factor": 0.244
+    "estrellas_anio": 0.192,
+    "estrellas": 0.053,
+    "commits_90d": 0.825,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.158,
+    "ratio_cerradas": 0.442,
+    "bus_factor": 0.247
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -3019,10 +3019,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "awesome-llm-apps": {
-   "puntuacion": 75.1,
+   "puntuacion": 75.0,
    "ejes": {
     "adopcion": 22.3,
-    "mantenimiento": 17.4,
+    "mantenimiento": 17.3,
     "madurez": 7.9,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -3032,11 +3032,11 @@
    "percentiles": {
     "estrellas_anio": 0.892,
     "estrellas": 0.892,
-    "commits_90d": 0.844,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.763,
-    "ratio_cerradas": 0.828,
-    "bus_factor": 0.382
+    "commits_90d": 0.842,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.758,
+    "ratio_cerradas": 0.825,
+    "bus_factor": 0.375
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -3057,8 +3057,8 @@
   "awesome-machine-learning": {
    "puntuacion": 57.6,
    "ejes": {
-    "adopcion": 6.7,
-    "mantenimiento": 16.6,
+    "adopcion": 6.6,
+    "mantenimiento": 16.5,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -3066,13 +3066,13 @@
     "encaje": 3.0
    },
    "percentiles": {
-    "estrellas_anio": 0.076,
-    "estrellas": 0.724,
-    "commits_90d": 0.652,
-    "releases_365d": 0.432,
-    "primera_respuesta_dias": 0.843,
-    "ratio_cerradas": 0.896,
-    "bus_factor": 0.468
+    "estrellas_anio": 0.077,
+    "estrellas": 0.718,
+    "commits_90d": 0.646,
+    "releases_365d": 0.431,
+    "primera_respuesta_dias": 0.839,
+    "ratio_cerradas": 0.895,
+    "bus_factor": 0.475
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -4747,10 +4747,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "chatgpt-dan": {
-   "puntuacion": 32.4,
+   "puntuacion": 32.2,
    "ejes": {
     "adopcion": 3.4,
-    "mantenimiento": 6.5,
+    "mantenimiento": 6.2,
     "madurez": 10.0,
     "licencia": 5.0,
     "respaldo": 5.0,
@@ -4759,12 +4759,12 @@
    },
    "percentiles": {
     "estrellas_anio": 0.071,
-    "estrellas": 0.292,
-    "commits_90d": 0.183,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.389,
-    "ratio_cerradas": 0.087,
-    "bus_factor": 0.119
+    "estrellas": 0.296,
+    "commits_90d": 0.171,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.379,
+    "ratio_cerradas": 0.071,
+    "bus_factor": 0.121
    },
    "licencia": {
     "clase": "desconocida",
@@ -4780,10 +4780,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "chatgpt-system-prompt": {
-   "puntuacion": 53.4,
+   "puntuacion": 53.3,
    "ejes": {
     "adopcion": 4.6,
-    "mantenimiento": 17.8,
+    "mantenimiento": 17.7,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -4792,12 +4792,12 @@
    },
    "percentiles": {
     "estrellas_anio": 0.212,
-    "estrellas": 0.119,
-    "commits_90d": 0.704,
-    "releases_365d": 0.468,
+    "estrellas": 0.121,
+    "commits_90d": 0.696,
+    "releases_365d": 0.467,
     "primera_respuesta_dias": 0.929,
-    "ratio_cerradas": 0.768,
-    "bus_factor": 0.704
+    "ratio_cerradas": 0.762,
+    "bus_factor": 0.696
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -5238,10 +5238,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "claude-cookbooks": {
-   "puntuacion": 56.1,
+   "puntuacion": 55.8,
    "ejes": {
-    "adopcion": 11.8,
-    "mantenimiento": 10.3,
+    "adopcion": 11.6,
+    "mantenimiento": 10.2,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -5249,13 +5249,13 @@
     "encaje": 0.0
    },
    "percentiles": {
-    "estrellas_anio": 0.516,
-    "estrellas": 0.366,
-    "commits_90d": 0.333,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.301,
-    "ratio_cerradas": 0.269,
-    "bus_factor": 0.909
+    "estrellas_anio": 0.508,
+    "estrellas": 0.358,
+    "commits_90d": 0.325,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.292,
+    "ratio_cerradas": 0.258,
+    "bus_factor": 0.908
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -5378,10 +5378,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "claude-quickstarts": {
-   "puntuacion": 56.2,
+   "puntuacion": 56.1,
    "ejes": {
-    "adopcion": 7.0,
-    "mantenimiento": 13.2,
+    "adopcion": 7.1,
+    "mantenimiento": 13.0,
     "madurez": 7.5,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -5389,13 +5389,13 @@
     "encaje": 3.0
    },
    "percentiles": {
-    "estrellas_anio": 0.26,
-    "estrellas": 0.332,
-    "commits_90d": 0.588,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.627,
-    "ratio_cerradas": 0.188,
-    "bus_factor": 0.844
+    "estrellas_anio": 0.264,
+    "estrellas": 0.336,
+    "commits_90d": 0.581,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.619,
+    "ratio_cerradas": 0.175,
+    "bus_factor": 0.842
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -6120,10 +6120,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "context-engineering": {
-   "puntuacion": 43.7,
+   "puntuacion": 43.6,
    "ejes": {
     "adopcion": 2.4,
-    "mantenimiento": 9.5,
+    "mantenimiento": 9.4,
     "madurez": 6.3,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -6131,13 +6131,13 @@
     "encaje": 3.0
    },
    "percentiles": {
-    "estrellas_anio": 0.084,
-    "estrellas": 0.124,
-    "commits_90d": 0.112,
-    "releases_365d": 0.412,
-    "primera_respuesta_dias": 0.844,
-    "ratio_cerradas": 0.531,
-    "bus_factor": 0.052
+    "estrellas_anio": 0.086,
+    "estrellas": 0.125,
+    "commits_90d": 0.106,
+    "releases_365d": 0.411,
+    "primera_respuesta_dias": 0.842,
+    "ratio_cerradas": 0.522,
+    "bus_factor": 0.053
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -9166,9 +9166,9 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "fabric": {
-   "puntuacion": 63.0,
+   "puntuacion": 62.7,
    "ejes": {
-    "adopcion": 8.6,
+    "adopcion": 8.4,
     "mantenimiento": 17.0,
     "madurez": 9.8,
     "licencia": 15.0,
@@ -9177,13 +9177,13 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.327,
-    "estrellas": 0.391,
-    "commits_90d": 0.601,
+    "estrellas_anio": 0.317,
+    "estrellas": 0.383,
+    "commits_90d": 0.6,
     "releases_365d": 0.867,
-    "primera_respuesta_dias": 0.52,
-    "ratio_cerradas": 0.754,
-    "bus_factor": 0.754
+    "primera_respuesta_dias": 0.517,
+    "ratio_cerradas": 0.75,
+    "bus_factor": 0.75
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -10642,9 +10642,9 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "generative-ai-for-beginners": {
-   "puntuacion": 67.9,
+   "puntuacion": 67.8,
    "ejes": {
-    "adopcion": 15.5,
+    "adopcion": 15.4,
     "mantenimiento": 16.4,
     "madurez": 8.5,
     "licencia": 15.0,
@@ -10653,13 +10653,13 @@
     "encaje": 2.0
    },
    "percentiles": {
-    "estrellas_anio": 0.536,
-    "estrellas": 0.819,
-    "commits_90d": 0.52,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.819,
-    "ratio_cerradas": 0.843,
-    "bus_factor": 0.819
+    "estrellas_anio": 0.533,
+    "estrellas": 0.817,
+    "commits_90d": 0.517,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.817,
+    "ratio_cerradas": 0.842,
+    "bus_factor": 0.817
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -12306,8 +12306,8 @@
   "how-to-train-your-gpt": {
    "puntuacion": 47.9,
    "ejes": {
-    "adopcion": 5.0,
-    "mantenimiento": 11.2,
+    "adopcion": 5.1,
+    "mantenimiento": 11.1,
     "madurez": 5.2,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -12315,12 +12315,12 @@
     "encaje": 4.0
    },
    "percentiles": {
-    "estrellas_anio": 0.267,
+    "estrellas_anio": 0.27,
     "estrellas": 0.044,
-    "commits_90d": 0.332,
-    "releases_365d": 0.432,
-    "primera_respuesta_dias": 0.532,
-    "ratio_cerradas": 0.896,
+    "commits_90d": 0.32,
+    "releases_365d": 0.431,
+    "primera_respuesta_dias": 0.525,
+    "ratio_cerradas": 0.895,
     "bus_factor": 0.044
    },
    "licencia": {
@@ -15319,10 +15319,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "llm-course": {
-   "puntuacion": 53.1,
+   "puntuacion": 52.9,
    "ejes": {
-    "adopcion": 12.4,
-    "mantenimiento": 5.7,
+    "adopcion": 12.3,
+    "mantenimiento": 5.6,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -15330,13 +15330,13 @@
     "encaje": 4.0
    },
    "percentiles": {
-    "estrellas_anio": 0.488,
-    "estrellas": 0.52,
-    "commits_90d": 0.181,
-    "releases_365d": 0.468,
+    "estrellas_anio": 0.483,
+    "estrellas": 0.517,
+    "commits_90d": 0.175,
+    "releases_365d": 0.467,
     "primera_respuesta_dias": 0.133,
-    "ratio_cerradas": 0.181,
-    "bus_factor": 0.165
+    "ratio_cerradas": 0.167,
+    "bus_factor": 0.167
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -15391,10 +15391,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "llm.c": {
-   "puntuacion": 51.8,
+   "puntuacion": 51.7,
    "ejes": {
-    "adopcion": 11.1,
-    "mantenimiento": 6.3,
+    "adopcion": 11.2,
+    "mantenimiento": 6.1,
     "madurez": 8.0,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -15402,13 +15402,13 @@
     "encaje": 4.0
    },
    "percentiles": {
-    "estrellas_anio": 0.475,
-    "estrellas": 0.364,
-    "commits_90d": 0.128,
-    "releases_365d": 0.432,
-    "primera_respuesta_dias": 0.092,
-    "ratio_cerradas": 0.124,
-    "bus_factor": 0.707
+    "estrellas_anio": 0.48,
+    "estrellas": 0.37,
+    "commits_90d": 0.121,
+    "releases_365d": 0.431,
+    "primera_respuesta_dias": 0.077,
+    "ratio_cerradas": 0.111,
+    "bus_factor": 0.701
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -15460,10 +15460,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "llms-from-scratch": {
-   "puntuacion": 71.2,
+   "puntuacion": 71.0,
    "ejes": {
-    "adopcion": 19.5,
-    "mantenimiento": 16.7,
+    "adopcion": 19.4,
+    "mantenimiento": 16.6,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -15471,13 +15471,13 @@
     "encaje": 4.0
    },
    "percentiles": {
-    "estrellas_anio": 0.77,
-    "estrellas": 0.802,
-    "commits_90d": 0.673,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.851,
-    "ratio_cerradas": 0.802,
-    "bus_factor": 0.496
+    "estrellas_anio": 0.767,
+    "estrellas": 0.8,
+    "commits_90d": 0.667,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.85,
+    "ratio_cerradas": 0.8,
+    "bus_factor": 0.5
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -15812,9 +15812,9 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "loop-engineering": {
-   "puntuacion": 67.4,
+   "puntuacion": 67.3,
    "ejes": {
-    "adopcion": 11.6,
+    "adopcion": 11.5,
     "mantenimiento": 21.7,
     "madurez": 6.6,
     "licencia": 15.0,
@@ -15823,14 +15823,14 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.851,
+    "estrellas_anio": 0.847,
     "descargas_mes": 0.039,
-    "estrellas": 0.211,
-    "commits_90d": 0.916,
-    "releases_365d": 0.948,
-    "primera_respuesta_dias": 0.932,
-    "ratio_cerradas": 0.723,
-    "bus_factor": 0.708
+    "estrellas": 0.214,
+    "commits_90d": 0.914,
+    "releases_365d": 0.947,
+    "primera_respuesta_dias": 0.931,
+    "ratio_cerradas": 0.717,
+    "bus_factor": 0.703
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -17821,10 +17821,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "ml-for-beginners": {
-   "puntuacion": 70.4,
+   "puntuacion": 70.1,
    "ejes": {
-    "adopcion": 17.2,
-    "mantenimiento": 17.1,
+    "adopcion": 17.0,
+    "mantenimiento": 17.0,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -17832,13 +17832,13 @@
     "encaje": 2.0
    },
    "percentiles": {
-    "estrellas_anio": 0.611,
-    "estrellas": 0.876,
-    "commits_90d": 0.756,
-    "releases_365d": 0.432,
-    "primera_respuesta_dias": 0.724,
-    "ratio_cerradas": 0.684,
-    "bus_factor": 0.859
+    "estrellas_anio": 0.601,
+    "estrellas": 0.873,
+    "commits_90d": 0.751,
+    "releases_365d": 0.431,
+    "primera_respuesta_dias": 0.718,
+    "ratio_cerradas": 0.68,
+    "bus_factor": 0.856
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -18460,10 +18460,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "nanochat": {
-   "puntuacion": 65.6,
+   "puntuacion": 65.4,
    "ejes": {
     "adopcion": 20.3,
-    "mantenimiento": 9.8,
+    "mantenimiento": 9.6,
     "madurez": 6.0,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -18471,13 +18471,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.924,
-    "estrellas": 0.548,
-    "commits_90d": 0.128,
-    "releases_365d": 0.432,
-    "primera_respuesta_dias": 0.636,
-    "ratio_cerradas": 0.429,
-    "bus_factor": 0.571
+    "estrellas_anio": 0.923,
+    "estrellas": 0.542,
+    "commits_90d": 0.121,
+    "releases_365d": 0.431,
+    "primera_respuesta_dias": 0.63,
+    "ratio_cerradas": 0.42,
+    "bus_factor": 0.563
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -20166,10 +20166,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "openai-cookbook": {
-   "puntuacion": 58.4,
+   "puntuacion": 58.1,
    "ejes": {
-    "adopcion": 10.0,
-    "mantenimiento": 14.3,
+    "adopcion": 9.8,
+    "mantenimiento": 14.2,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -20177,13 +20177,13 @@
     "encaje": 0.0
    },
    "percentiles": {
-    "estrellas_anio": 0.317,
-    "estrellas": 0.597,
-    "commits_90d": 0.597,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.548,
-    "ratio_cerradas": 0.556,
-    "bus_factor": 0.726
+    "estrellas_anio": 0.308,
+    "estrellas": 0.592,
+    "commits_90d": 0.592,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.542,
+    "ratio_cerradas": 0.55,
+    "bus_factor": 0.725
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -22876,44 +22876,11 @@
    "fecha_metricas": "2026-11-16",
    "fecha_puntuacion": "2026-11-16"
   },
-  "prompt-eng-tutorial": {
-   "puntuacion": 38.4,
-   "ejes": {
-    "adopcion": 7.7,
-    "mantenimiento": 7.1,
-    "madurez": 8.0,
-    "licencia": 5.0,
-    "respaldo": 8.0,
-    "seguridad": 2.5,
-    "encaje": 0.0
-   },
-   "percentiles": {
-    "estrellas_anio": 0.294,
-    "estrellas": 0.343,
-    "commits_90d": 0.306,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.149,
-    "ratio_cerradas": 0.133,
-    "bus_factor": 0.359
-   },
-   "licencia": {
-    "clase": "desconocida",
-    "detalle": "sin SPDX: sin archivo de licencia"
-   },
-   "respaldo": "organizacion",
-   "encaje": [],
-   "notas": [
-    "Adopción: sin dato de descargas_mes (se reparte el peso)",
-    "Sin OpenSSF Scorecard publicado: seguridad neutral"
-   ],
-   "fecha_metricas": "2026-11-16",
-   "fecha_puntuacion": "2026-11-16"
-  },
   "prompt-engineering-guide": {
-   "puntuacion": 62.2,
+   "puntuacion": 55.5,
    "ejes": {
-    "adopcion": 17.7,
-    "mantenimiento": 10.5,
+    "adopcion": 16.4,
+    "mantenimiento": 5.1,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -22921,13 +22888,13 @@
     "encaje": 0.0
    },
    "percentiles": {
-    "estrellas_anio": 0.69,
-    "estrellas": 0.754,
-    "commits_90d": 0.306,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.415,
-    "ratio_cerradas": 0.415,
-    "bus_factor": 0.657
+    "estrellas_anio": 0.617,
+    "estrellas": 0.75,
+    "commits_90d": 0.1,
+    "releases_365d": 0.433,
+    "primera_respuesta_dias": 0.05,
+    "ratio_cerradas": 0.05,
+    "bus_factor": 0.55
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -22943,10 +22910,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "prompt-master": {
-   "puntuacion": 53.4,
+   "puntuacion": 53.2,
    "ejes": {
     "adopcion": 14.8,
-    "mantenimiento": 10.7,
+    "mantenimiento": 10.5,
     "madurez": 5.4,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -22954,13 +22921,13 @@
     "encaje": 0.0
    },
    "percentiles": {
-    "estrellas_anio": 0.659,
-    "estrellas": 0.433,
-    "commits_90d": 0.546,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.216,
-    "ratio_cerradas": 0.341,
-    "bus_factor": 0.514
+    "estrellas_anio": 0.654,
+    "estrellas": 0.438,
+    "commits_90d": 0.537,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.204,
+    "ratio_cerradas": 0.329,
+    "bus_factor": 0.521
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -23013,10 +22980,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "prompts-chat": {
-   "puntuacion": 69.5,
+   "puntuacion": 69.4,
    "ejes": {
     "adopcion": 20.8,
-    "mantenimiento": 15.7,
+    "mantenimiento": 15.6,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -23024,13 +22991,13 @@
     "encaje": 2.0
    },
    "percentiles": {
-    "estrellas_anio": 0.819,
+    "estrellas_anio": 0.817,
     "estrellas": 0.867,
     "commits_90d": 0.867,
-    "releases_365d": 0.343,
-    "primera_respuesta_dias": 0.786,
-    "ratio_cerradas": 0.407,
-    "bus_factor": 0.488
+    "releases_365d": 0.342,
+    "primera_respuesta_dias": 0.783,
+    "ratio_cerradas": 0.4,
+    "bus_factor": 0.483
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -27687,10 +27654,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "system-prompts-and-models-of-ai-tools": {
-   "puntuacion": 60.1,
+   "puntuacion": 59.9,
    "ejes": {
     "adopcion": 23.0,
-    "mantenimiento": 10.8,
+    "mantenimiento": 10.7,
     "madurez": 6.8,
     "licencia": 12.0,
     "respaldo": 5.0,
@@ -27699,12 +27666,12 @@
    },
    "percentiles": {
     "estrellas_anio": 0.929,
-    "estrellas": 0.897,
-    "commits_90d": 0.341,
-    "releases_365d": 0.468,
-    "primera_respuesta_dias": 0.546,
-    "ratio_cerradas": 0.482,
-    "bus_factor": 0.373
+    "estrellas": 0.896,
+    "commits_90d": 0.329,
+    "releases_365d": 0.467,
+    "primera_respuesta_dias": 0.537,
+    "ratio_cerradas": 0.471,
+    "bus_factor": 0.379
    },
    "licencia": {
     "clase": "osi_copyleft",
@@ -28604,10 +28571,10 @@
    "fecha_puntuacion": "2026-11-16"
   },
   "train-llm-from-scratch": {
-   "puntuacion": 59.4,
+   "puntuacion": 59.3,
    "ejes": {
-    "adopcion": 4.6,
-    "mantenimiento": 16.8,
+    "adopcion": 4.7,
+    "mantenimiento": 16.7,
     "madurez": 8.5,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -28615,13 +28582,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.18,
-    "estrellas": 0.196,
-    "commits_90d": 0.843,
-    "releases_365d": 0.916,
-    "primera_respuesta_dias": 0.429,
-    "ratio_cerradas": 0.597,
-    "bus_factor": 0.316
+    "estrellas_anio": 0.182,
+    "estrellas": 0.199,
+    "commits_90d": 0.839,
+    "releases_365d": 0.914,
+    "primera_respuesta_dias": 0.42,
+    "ratio_cerradas": 0.592,
+    "bus_factor": 0.32
    },
    "licencia": {
     "clase": "osi_permisiva",

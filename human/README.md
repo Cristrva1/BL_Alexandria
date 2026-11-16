@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-892 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+891 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -35,7 +35,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 54 |
 | [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 93 |
 | [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 35 |
-| [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 97 |
+| [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 96 |
 | [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 242 |
 | [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 207 |
 | [Configuración de Antigravity](areas/configurar-antigravity.md) | Instalar y seleccionar skills, Diseño y creación de interfaces, Prompts y organización del trabajo, MCP y herramientas conectadas, Integraciones,proveedores y paneles | 159 |
@@ -62,7 +62,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 113 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](categorias/17-mensajeria-chatbots.md) | 18 | [whatsapp-web.js](fichas/whatsapp-web-js.md), [Typebot](fichas/typebot.md) |
 | 18 | [🤖 CRM, ventas y marketing](categorias/18-crm-ventas-marketing.md) | 19 | [Odoo](fichas/odoo.md), [novu](fichas/novu.md) |
-| 19 | [🧠 Aprender IA y escribir mejores prompts](categorias/19-aprender-ia-prompts.md) | 31 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md), [Fabric](fichas/fabric.md), [Generative AI for Beginners](fichas/generative-ai-for-beginners.md), [AI Agents for Beginners](fichas/ai-agents-for-beginners.md), [LLM Course](fichas/llm-course.md) |
+| 19 | [🧠 Aprender IA y escribir mejores prompts](categorias/19-aprender-ia-prompts.md) | 30 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md), [Fabric](fichas/fabric.md), [Generative AI for Beginners](fichas/generative-ai-for-beginners.md), [AI Agents for Beginners](fichas/ai-agents-for-beginners.md), [LLM Course](fichas/llm-course.md) |
 | 20 | [🕸️ Programar con agentes de código](categorias/20-agentes-de-codigo.md) | 21 | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md) |
 | 21 | [🕸️ Asistentes e investigación con agentes](categorias/21-asistentes-investigacion.md) | 17 | [OpenClaw](fichas/openclaw.md), [autoresearch](fichas/autoresearch.md) |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 26 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |

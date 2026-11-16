@@ -195,7 +195,7 @@ def candidatos_retiro_command(
     console.print(f"{len(data['candidatos'])} candidatos de {data['evaluados']} repos; {len(data['cerca'])} cumplen dos de tres; "
                   f"{len(data['sin_datos'])} sin datos.")
     for e in data["candidatos"]:
-        console.print(f"  {e['id']}: {e['puntuacion']:.0f}/100, {e['commits_365d']} commits en 365 días, "
+        console.print(f"  {e['id']} ({e.get('estado')}): {e['puntuacion']:.0f}/100, {e['commits_365d']} commits en 365 días, "
                       f"alternativa {e['grupo']['recomendado']}")
     console.print("Escrito: " + ", ".join(str(p) for p in paths) + ". data/retired.json no se modifica.")
 
