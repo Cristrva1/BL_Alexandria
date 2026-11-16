@@ -47,6 +47,7 @@
       if (implicitRoutes.some(route=>!(item.routes||[]).includes(route))) return false;
       if (goal && !(item.goals || []).includes(goal.id) && !goal.starters.includes(item.id)) return false;
       for (const field of ["role", "exec", "setup"]) if (params.get(field) && item[field] !== params.get(field)) return false;
+      if (params.get("complejidad") && String((item.complejidad || {}).nivel || "") !== params.get("complejidad")) return false;
       if (params.get("mcp") === "1" && !item.mcp) return false;
       if (params.get("status") === "active" && item.status) return false;
       if (params.get("status") && params.get("status") !== "active" && item.status !== params.get("status")) return false;

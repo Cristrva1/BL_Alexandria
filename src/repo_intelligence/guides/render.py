@@ -309,6 +309,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         ),
         "",
     ]
+    level = _level_line(repo)
+    if level:
+        lines += [level, ""]
     quality = _quality_line(repo, "..")
     if quality:
         lines += [quality, ""]
@@ -399,6 +402,16 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         lines += [f"- [Fuente {index}]({url})" for index, url in enumerate(access["sources"], 1)] + [""]
     lines.append(_footer(cat))
     return "\n".join(lines)
+
+
+def _level_line(repo: dict[str, Any]) -> str:
+    """«Nivel: N Nombre» con sus motivos (curation/complejidad.yaml corrige el cálculo)."""
+    cx = repo.get("complejidad_detalle") or {}
+    if not cx.get("nivel"):
+        return ""
+    why = "; ".join(cx.get("motivos") or [])
+    origin = " · corregido a mano" if cx.get("origen") == "manual" else ""
+    return f"**Nivel:** {cx['nivel']} {cx['nombre']} — {why}{origin}"
 
 
 def _quality_line(repo: dict[str, Any], up: str) -> str:

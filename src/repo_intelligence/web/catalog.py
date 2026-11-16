@@ -236,6 +236,9 @@ def build_catalog(project_root: Path) -> dict:
         quality = detail.get("calidad") or {}
         if quality.get("puntuacion") is not None:
             merged["calidad"] = {"puntuacion": quality["puntuacion"], "fecha": quality.get("fecha")}
+        if detail.get("complejidad_detalle"):
+            cx = detail["complejidad_detalle"]
+            merged["complejidad"] = {"nivel": cx["nivel"], "nombre": cx["nombre"], "motivos": cx.get("motivos") or [], "origen": cx.get("origen")}
         if detail.get("similares"):
             merged["similares"] = detail["similares"]
         for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):

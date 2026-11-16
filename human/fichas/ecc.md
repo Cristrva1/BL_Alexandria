@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🔴 pesado
 
+**Nivel:** 2 Intermedio — preparación pesada; se instala dentro de un agente (skill, plugin o MCP)
+
 **Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

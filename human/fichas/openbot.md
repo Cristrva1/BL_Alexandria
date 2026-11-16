@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Nivel:** 2 Intermedio — preparación pesada; app o instalador listo para usar
+
 **Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

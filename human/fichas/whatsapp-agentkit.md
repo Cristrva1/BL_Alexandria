@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Nivel:** 2 Intermedio — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP); requiere clave de API
+
 **Puntuación de calidad** 41/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

@@ -210,6 +210,23 @@ def grupos_command(
                 console.print(f"Propuesta: {', '.join(g)}  (sin grupo: {', '.join(fresh)})")
 
 
+@app.command("complejidad")
+def complejidad_command(
+    mostrar: Annotated[str | None, typer.Option("--mostrar", help="Muestra nivel y motivos de un id.")] = None,
+) -> None:
+    """Nivel de complejidad 1-4 (Básico, Intermedio, Avanzado, Experto) con motivos; correcciones en curation/complejidad.yaml."""
+    import json as _json
+
+    from repo_intelligence.quality import complexity as cx
+
+    root = ProjectPaths.load().project_root
+    dist = cx.apply_all(root)
+    console.print("Complejidad: " + " · ".join(f"{n} {cx.NAMES[n]}: {dist.get(n, 0)}" for n in (1, 2, 3, 4)))
+    if mostrar:
+        detail = _json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf8"))["repos"]
+        console.print_json(_json.dumps(detail.get(mostrar, {}).get("complejidad_detalle"), ensure_ascii=False))
+
+
 @app.command()
 def conflicts() -> None:
     """Write functional-overlap conflicts derived from compact alt pairs."""
