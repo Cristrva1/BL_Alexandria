@@ -32,9 +32,9 @@ Se bajan binarios/scripts de Releases y se ejecutan en el host objetivo autoriza
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[mimikatz](mimikatz.md)
+[HackTricks](hacktricks.md) · [mimikatz](mimikatz.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 20261116-7dd73e1d (2026-11-16) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 

@@ -4,7 +4,7 @@
 
 Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar.
 
-44 repos · 7 secciones
+48 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Notas, bóvedas y conocimiento personal](#notas-bóvedas-y-conocimiento-personal) — 19 repos
 - [Sincronización y gestión de archivos](#sincronización-y-gestión-de-archivos) — 4 repos
-- [Credenciales y privacidad](#credenciales-y-privacidad) — 4 repos
+- [Credenciales y privacidad](#credenciales-y-privacidad) — 8 repos
 - [Libros, podcasts y bibliotecas personales](#libros-podcasts-y-bibliotecas-personales) — 4 repos
 - [Automatización del hogar](#automatización-del-hogar) — 4 repos
 - [Herramientas y organización personal](#herramientas-y-organización-personal) — 8 repos
@@ -64,6 +64,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [vaultwarden](../fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden | Sin clave propia de API de IA en la ruta básica |
 | [Pi-hole](../fichas/pi-hole.md) | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. | Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red | Sin clave propia de API de IA en la ruta básica |
 | [AdGuardHome](../fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS | Sin clave propia de API de IA en la ruta básica |
+| [HashiCorp Vault](../fichas/vault.md) | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro. | Tu objetivo encaja con estos ejemplos: centralizar secretos de un entorno propio; emitir credenciales dinámicas de DB de lab | Sin clave propia de API de IA en la ruta básica |
+| [KeePassXC](../fichas/keepassxc.md) | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. | Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube | Sin clave propia de API de IA en la ruta básica |
+| [age](../fichas/age.md) | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. | Tu objetivo encaja con estos ejemplos: cifrar un backup antes de subirlo; claves age para SOPS | Sin clave propia de API de IA en la ruta básica |
+| [SOPS](../fichas/sops.md) | Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI. | Tu objetivo encaja con estos ejemplos: cifrar secrets de Kubernetes en Git; rotar claves age de un repo | Sin clave propia de API de IA en la ruta básica |
 | [Bitwarden Clients](../fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Tu objetivo encaja con estos ejemplos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio | Sin clave propia de API de IA en la ruta básica |
 
 ## Libros, podcasts y bibliotecas personales

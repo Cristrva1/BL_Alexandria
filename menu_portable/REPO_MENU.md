@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 862 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 887 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **862 repos** de IA y
+proyecto concreto. Tienes un menú curado de **887 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -622,12 +622,13 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `vibe-trading` [A|hyb|M|+] — Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. — tags: agentes,agent,python — prov: local
 - `yfinance` [L|loc|E|+] — Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames d — tags: finanzas,python,library,data
 
-### 15. Organizar notas, archivos y servicios personales (44)
+### 15. Organizar notas, archivos y servicios personales (48)
 Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 
 - `40-questions` [D|loc|E|?] — Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones pe — tags: personal,reference
 - `actual` [A|loc|E|?] — App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos — tags: personal,typescript,self-hosted,finance — alt: firefly-iii
 - `adguardhome` [P|loc|H|?] — Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración centr — tags: privacidad,server,typescript — alt: pi-hole
+- `age` [A|loc|E|?] — Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. — tags: security
 - `ai-job-search` [S|loc|M|?] — Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de e — tags: personal,skill,python
 - `anytype-ts` [A|loc|E|?] — Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento pers — tags: notas,app,typescript — alt: appflowy
 - `appflowy` [A|hyb|E|?] — Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento  — tags: notas,app,dart — alt: anytype-ts
@@ -647,6 +648,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `jsoncanvas` [D|loc|E|?] — Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. — tags: notas,reference,javascript
 - `karakeep` [P|hyb|H|?] — Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación median — tags: notas,server,typescript
 - `kavita` [P|loc|E|?] — Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y met — tags: self-hosted,csharp,server,reading — alt: calibre-web
+- `keepassxc` [A|loc|E|?] — Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. — tags: security — alt: vaultwarden
 - `kepano-obsidian` [L|loc|M|?] — Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. — tags: notas,template,reference
 - `logseq` [A|loc|E|?] — Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consult — tags: notas,clojure,app,local — alt: joplin,trilium,siyuan
 - `memos` [P|loc|E|?] — App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, AP — tags: notas,go,self-hosted,mcp
@@ -664,45 +666,59 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `photoprism` [P|loc|M|?] — App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en — tags: self-hosted,go,docker,image — alt: immich
 - `pi-hole` [P|loc|E|?] — Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con p — tags: privacy,self-hosted,shell,server — alt: adguardhome
 - `siyuan` [A|hyb|E|?] — Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQ — tags: notas,typescript,self-hosted,app — alt: joplin,trilium,logseq
+- `sops` [A|loc|E|?] — Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI. — tags: security
 - `syncthing` [A|loc|E|?] — Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. — tags: archivos,app,go
 - `trilium` [A|hyb|E|?] — App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y se — tags: notas,typescript,app,self-hosted — alt: joplin,siyuan,logseq
 - `universal-android-debloater-next-generation` [A|loc|M|?] — Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplica — tags: personal,app,rust
-- `vaultwarden` [P|loc|H|?] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust
+- `vault` [P|loc|-|?] — Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open sou — tags: security
+- `vaultwarden` [P|loc|H|?] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
 - `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable  — tags: automation,typescript,iot,self-hosted
 
-### 16. Analizar software y comprobar su seguridad (92)
+### 16. Analizar software y comprobar su seguridad (113)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 
+- `aflplusplus` [A|loc|-|+] — Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. — tags: security
+- `aircrack-ng` [A|loc|M|?] — Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas. — tags: security
 - `amass` [A|loc|M|?] — Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT  — tags: security,osint,recon,go
 - `angr` [L|loc|M|?] — Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de — tags: reversing,library,python
 - `apktool` [A|loc|M|?] — Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicac — tags: reversing,app,java
 - `arkime` [A|loc|-|?] — Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red. — tags: security
 - `atomic-red-team` [D|loc|M|?] — Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio pr — tags: security,attack,purple
+- `autopsy` [A|loc|M|?] — GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. — tags: security — alt: sleuthkit
 - `awesome-ai-reverse-engineering` [D|loc|E|?] — Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. — tags: referencias,reference
 - `awesome-reverse-engineering` [D|loc|E|?] — Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. — tags: referencias,reference,python
+- `bettercap` [A|loc|M|?] — Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita. — tags: security
 - `bla` [A|loc|M|+] — Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por  — tags: defensa,app,typescript
 - `bloodhound` [P|loc|M|?] — Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de — tags: pruebas,go,security,graph
+- `caido` [A|loc|E|?] — Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pag — tags: security — alt: zaproxy
 - `caldera` [A|loc|-|+] — Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controlada — tags: security,attack,purple
+- `capa` [A|loc|E|?] — Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…) mediante reglas y análisis estático. — tags: security
 - `certipy` [A|loc|M|?] — Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados. — tags: security
+- `cheatsheetseries` [D|loc|E|?] — Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores. — tags: security
 - `checkov` [A|loc|E|+] — SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y — tags: security,iac,terraform
+- `coreruleset` [D|loc|M|?] — Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. — tags: security
 - `cosign` [A|loc|M|?] — Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC. — tags: security
 - `craft-anything` [A|hyb|M|+] — Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con age — tags: agentes,app,rust — prov: local
-- `crowdsec` [P|loc|M|?] — IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Wind — tags: security,go,server,self-hosted
+- `crowdsec` [P|loc|M|?] — IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Wind — tags: security,go,server,self-hosted — alt: fail2ban
 - `cybersecurity-skills` [S|hyb|E|+] — Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Co — tags: cybersecurity,seguridad,skills,claude-code,codex,comunidad
 - `defending-code-reference-harness` [S|cld|M|+] — Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilid — tags: security,skills,coding-agent — prov: anthropic
+- `detection-rules` [D|loc|M|?] — Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. — tags: security
 - `dirsearch` [A|loc|E|+] — Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio. — tags: security — alt: gobuster,feroxbuster
 - `dnspy` [A|loc|E|?] — Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. — tags: depuracion,app,c
 - `dnsx` [A|loc|E|+] — Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder  — tags: security
 - `empire` [A|loc|-|+] — Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. — tags: security — alt: mythic,sliver
 - `evilginx2` [A|loc|-|?] — Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería soci — tags: security,phishing,redteam
+- `fail2ban` [A|loc|M|+] — Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. — tags: security — alt: crowdsec
 - `falco` [A|loc|-|?] — Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Ku — tags: security,k8s,runtime
 - `feroxbuster` [A|loc|E|+] — Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. — tags: security — alt: gobuster,dirsearch,ffuf
 - `ffuf` [A|loc|E|+] — Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo  — tags: pruebas,go,security,cli — alt: gobuster,feroxbuster
 - `frida` [A|loc|M|?] — Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su e — tags: reversing,app,meson
 - `garak` [A|hyb|M|+] — Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucina — tags: security,llm,python,evaluation
 - `ghidra` [A|loc|M|?] — Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. — tags: reversing,app,java — alt: radare2
+- `goad` [D|loc|-|?] — Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD en VMs locales aisladas. — tags: security
 - `gobuster` [A|loc|E|+] — Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado. — tags: security — alt: feroxbuster,dirsearch,ffuf
 - `grype` [A|loc|E|+] — Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediac — tags: security,containers,sbom — alt: trivy
+- `hacktricks` [D|loc|E|+] — Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunid — tags: security
 - `hashcat` [A|loc|M|?] — Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos — tags: pruebas,c,security,cli — alt: john
 - `hayabusa` [A|loc|E|?] — Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR. — tags: security
 - `httpx` [A|loc|E|+] — Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para f — tags: security,http,recon,go — alt: naabu
@@ -717,6 +733,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `kube-bench` [A|loc|M|?] — Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración. — tags: security
 - `ligolo-ng` [A|loc|M|?] — Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado. — tags: security
 - `locust` [A|loc|E|?] — Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, co — tags: pruebas,python,app — alt: k6
+- `loki` [A|loc|E|?] — Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos. — tags: security
 - `lynis` [A|loc|E|?] — Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere — tags: security,shell,cli
 - `masscan` [A|loc|M|?] — Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance. — tags: security
 - `metasploit` [L|loc|M|?] — Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-expl — tags: pruebas,ruby,security,cli
@@ -735,6 +752,8 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `payloadsallthethings` [D|loc|E|?] — Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest. — tags: security,web,cheatsheet — alt: seclists
 - `peass-ng` [A|loc|E|?] — LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS — tags: security,privesc
 - `prowler` [A|loc|M|+] — Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Priv — tags: security,cloud,aws
+- `pwndbg` [A|loc|M|?] — Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más. — tags: security
+- `pwntools` [L|loc|M|+] — Framework Python para CTF y desarrollo de exploits: tubos, packing, ROP y utilidades de binarios. — tags: security
 - `radare2` [A|loc|M|?] — Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. — tags: reversing,app,c — alt: rizin,ghidra
 - `raddebugger` [A|loc|E|?] — Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas. — tags: depuracion,app,c
 - `rea` [S|loc|M|+] — Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de c — tags: agentes,skill,typescript
@@ -742,19 +761,25 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `rizin` [A|loc|M|?] — Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones  — tags: reversing,app,c — alt: radare2
 - `rubeus` [A|loc|M|?] — Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados. — tags: security
 - `rustscan` [A|loc|E|+] — Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios. — tags: security
+- `scubagear` [A|loc|M|+] — Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra baselines de seguridad. — tags: security
 - `seclists` [D|loc|E|+] — Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizad — tags: security,wordlists — alt: payloadsallthethings
 - `security-audit-skill` [S|hyb|M|+] — Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estru — tags: metodologia,javascript
 - `securityonion` [A|loc|-|?] — Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. — tags: security
 - `semgrep` [A|loc|E|+] — Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. — tags: security,code — alt: ast-grep,sonarqube
 - `shannon` [A|hyb|M|+] — Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autor — tags: agentes,agent,typescript — prov: local — alt: strix
+- `shuffle` [A|loc|-|?] — SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. — tags: security
 - `sigma` [D|loc|M|?] — Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. — tags: security,detection,siem
 - `skillspector` [A|cld|E|+] — Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. — tags: skills,coding-agent,python
+- `sleuthkit` [L|loc|M|?] — Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evid — tags: security — alt: autopsy
 - `sliver` [A|loc|-|+] — Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y can — tags: security,c2,redteam — alt: mythic,empire
+- `social-engineer-toolkit` [A|loc|M|+] — Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y vectores solo con consentimiento. — tags: security
 - `sqlmap` [A|loc|E|?] — Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el — tags: pruebas,python,security,cli
 - `strix` [A|hyb|M|?] — Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de Ch — tags: agentes,agent,python — prov: local — alt: shannon
 - `subfinder` [A|loc|E|+] — Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para e — tags: pruebas,go,security,osint
 - `suricata` [A|loc|-|?] — IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velo — tags: security,ids,network
 - `syft` [A|loc|E|+] — Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scan — tags: security
+- `syzkaller` [A|loc|-|?] — Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada. — tags: security
+- `thc-hydra` [A|loc|E|+] — Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con autorización explícita. — tags: security
 - `trivy` [A|loc|E|+] — Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, r — tags: security,go,cli,devops — alt: grype
 - `velociraptor` [A|loc|-|?] — EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS. — tags: security,ir,edr
 - `volatility3` [A|loc|M|+] — Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware. — tags: security,forensics,memory
@@ -763,7 +788,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `wpscan` [A|loc|M|+] — Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago). — tags: security
 - `x64dbg` [A|loc|E|?] — Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. — tags: depuracion,app,c
 - `yara` [A|loc|M|?] — Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas. — tags: security,malware,yara
-- `zaproxy` [A|loc|M|?] — Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy intercepto — tags: pruebas,java,security,app
+- `zaproxy` [A|loc|M|?] — Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy intercepto — tags: pruebas,java,security,app — alt: caido
 - `zeek` [A|loc|-|?] — Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red. — tags: security,network,nsm
 
 ### 17. WhatsApp, mensajería y chatbots (16)

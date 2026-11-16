@@ -35,9 +35,9 @@ Está escrito en OCaml con envoltorio Python; se instala con `brew install semgr
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Checkov](checkov.md) · [Gitleaks](gitleaks.md) · [Grype](grype.md) · [pre-commit](pre-commit.md) · [Prowler](prowler.md) · [Trivy](trivy.md) · [TruffleHog](trufflehog.md)
+[AFL++](aflplusplus.md) · [Checkov](checkov.md) · [Gitleaks](gitleaks.md) · [Grype](grype.md) · [OWASP CheatSheet Series](cheatsheetseries.md) · [pre-commit](pre-commit.md) · [Prowler](prowler.md) · [Trivy](trivy.md) · [TruffleHog](trufflehog.md)
 
 **Notas:** Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura.
 

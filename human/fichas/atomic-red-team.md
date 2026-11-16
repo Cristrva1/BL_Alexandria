@@ -31,6 +31,12 @@ Se clona el repositorio; las pruebas se lanzan con Invoke-AtomicRedTeam u otros 
 | [CALDERA](caldera.md) | Caldera puede orquestar atomics en campañas automatizadas. | Ten Caldera listo; importa o lanza atomics según la guía. |
 | [Evilginx2](evilginx2.md) | Combinación recíproca: Evilginx2 lo enlaza como «Complementa con atomics de phishing/inicial access». | Orden indicado desde Evilginx2: Atomic + Evilginx2 en purple team. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[SET](social-engineer-toolkit.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/redcanaryco/atomic-red-team#readme) · [2](https://github.com/redcanaryco/invoke-atomicredteam)</sub>

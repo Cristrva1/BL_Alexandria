@@ -32,9 +32,9 @@ Se instala con pipx desde GitHub; el binario `nxc` opera por protocolo (smb, lda
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Responder](responder.md)
+[GOAD](goad.md) · [Responder](responder.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.5.1 (2026-02-23) · licencia declarada BSD-2-Clause (consultado el 2026-11-16).
 

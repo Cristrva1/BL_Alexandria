@@ -29,6 +29,12 @@ npm o Docker.
 | [ZAP (Zed Attack Proxy)](zaproxy.md) | ZAP contra Juice Shop. | Levanta Juice Shop; escanea con ZAP. |
 | [Nuclei](nuclei.md) | Plantillas Nuclei sobre el lab. | Juice Shop → Nuclei. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP CheatSheet Series](cheatsheetseries.md)
+
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v20.4.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/juice-shop/juice-shop#readme) · [2](https://owasp-juice.shop)</sub>

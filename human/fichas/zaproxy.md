@@ -107,6 +107,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `pruebas` `java` `security` `app`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Caido](caido.md) | 2.7k | Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. |
+
 ## Enlaces
 
 - 🐙 GitHub: [zaproxy/zaproxy](https://github.com/zaproxy/zaproxy)

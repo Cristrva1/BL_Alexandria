@@ -29,6 +29,12 @@ Releases firmados.
 | [Sigma](sigma.md) | Usa reglas SigmaHQ. | Paquete Sigma → Hayabusa. |
 | [Velociraptor](velociraptor.md) | Velociraptor recolecta; Hayabusa tria. | Recolección → Hayabusa. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Autopsy](autopsy.md)
+
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v4.4.0 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Yamato-Security/hayabusa#readme) · [2](https://yamato-security.github.io/hayabusa/getting-started/)</sub>

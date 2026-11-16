@@ -193,14 +193,20 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Immich](fichas/immich.md) | [PhotoPrism](fichas/photoprism.md) |
 | [Joplin](fichas/joplin.md) | [Trilium Notes](fichas/trilium.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
 | [Kavita](fichas/kavita.md) | [Calibre-Web](fichas/calibre-web.md) |
+| [KeePassXC](fichas/keepassxc.md) | [vaultwarden](fichas/vaultwarden.md) |
 | [Logseq](fichas/logseq.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [SiYuan](fichas/siyuan.md) |
 | [obsidian-second-brain](fichas/obsidian-second-brain.md) | [claude-obsidian](fichas/claude-obsidian.md) |
 | [PhotoPrism](fichas/photoprism.md) | [Immich](fichas/immich.md) |
 | [Pi-hole](fichas/pi-hole.md) | [AdGuardHome](fichas/adguardhome.md) |
 | [SiYuan](fichas/siyuan.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [Logseq](fichas/logseq.md) |
 | [Trilium Notes](fichas/trilium.md) | [Joplin](fichas/joplin.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
+| [vaultwarden](fichas/vaultwarden.md) | [KeePassXC](fichas/keepassxc.md) |
+| [Autopsy](fichas/autopsy.md) | [The Sleuth Kit](fichas/sleuthkit.md) |
+| [Caido](fichas/caido.md) | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) |
+| [CrowdSec](fichas/crowdsec.md) | [Fail2ban](fichas/fail2ban.md) |
 | [dirsearch](fichas/dirsearch.md) | [Gobuster](fichas/gobuster.md), [feroxbuster](fichas/feroxbuster.md) |
 | [Empire](fichas/empire.md) | [Mythic](fichas/mythic.md), [Sliver](fichas/sliver.md) |
+| [Fail2ban](fichas/fail2ban.md) | [CrowdSec](fichas/crowdsec.md) |
 | [feroxbuster](fichas/feroxbuster.md) | [Gobuster](fichas/gobuster.md), [dirsearch](fichas/dirsearch.md), [ffuf](fichas/ffuf.md) |
 | [ffuf](fichas/ffuf.md) | [Gobuster](fichas/gobuster.md), [feroxbuster](fichas/feroxbuster.md) |
 | [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
@@ -221,7 +227,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [shannon](fichas/shannon.md) | [strix](fichas/strix.md) |
 | [Sliver](fichas/sliver.md) | [Mythic](fichas/mythic.md), [Empire](fichas/empire.md) |
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
+| [The Sleuth Kit](fichas/sleuthkit.md) | [Autopsy](fichas/autopsy.md) |
 | [Trivy](fichas/trivy.md) | [Grype](fichas/grype.md) |
+| [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) | [Caido](fichas/caido.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [evolution-api](fichas/evolution-api.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [Mattermost](fichas/mattermost.md) | [Rocket.Chat](fichas/rocket-chat.md) |

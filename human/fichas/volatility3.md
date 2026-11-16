@@ -30,6 +30,12 @@ pip (`volatility3`) o editable desde el repo; requiere un memory dump previo.
 | [YARA](yara.md) | Escaneo YARA sobre regiones de memoria con plugins. | Carga reglas YARA en el plugin adecuado. |
 | [Wireshark](wireshark.md) | Reconstruye PCAP desde memoria y ábrelo en Wireshark. | Plugin de red → Wireshark. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[The Sleuth Kit](sleuthkit.md)
+
 Estado en GitHub: activo · último push 2026-10-12 · última versión publicada v2.28.2 (2026-09-17) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/volatilityfoundation/volatility3#readme) · [2](https://volatilityfoundation.org/)</sub>

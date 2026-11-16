@@ -34,9 +34,9 @@ Se clonan las reglas y se convierten con las herramientas pySigma documentadas.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Hayabusa](hayabusa.md)
+[Elastic detection-rules](detection-rules.md) · [Hayabusa](hayabusa.md)
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada r2026-07-01 (2026-07-09) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 

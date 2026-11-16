@@ -1,0 +1,736 @@
+{
+ "lote": "ciber-segundo-2",
+ "fecha": "2026-11-16",
+ "metodo": "README + docs + gh api + pricing pages. Ligero. No se instaló ningún proyecto.",
+ "alt_groups": [
+  [
+   "sleuthkit",
+   "autopsy"
+  ],
+  [
+   "fail2ban",
+   "crowdsec"
+  ],
+  [
+   "caido",
+   "zaproxy"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "sleuthkit/sleuthkit",
+   "id": "sleuthkit",
+   "name": "The Sleuth Kit",
+   "cat": 16,
+   "sub": "ir-forense",
+   "kind": "library",
+   "one": "Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
+   "how": "Biblioteca C/CLI (fls, icat, mmls…); licencias mixtas en licenses/; base de Autopsy.",
+   "examples": [
+    "listar ficheros de una imagen E01/raw de lab",
+    "recuperar un fichero borrado de un volume de prueba"
+   ],
+   "try": [
+    "Compila/instala según INSTALL.txt y ejecuta `fls` sobre una imagen de laboratorio.",
+    "Listas inodos/nombres de fichero."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "sleuthkit/autopsy",
+   "id": "autopsy",
+   "name": "Autopsy",
+   "cat": 16,
+   "sub": "ir-forense",
+   "kind": "app",
+   "one": "GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
+   "how": "Instalador Windows con dependencias; en otras plataformas build documentado.",
+   "examples": [
+    "abrir un caso forense de lab",
+    "generar timeline de un disco de prueba"
+   ],
+   "try": [
+    "Instala el paquete Windows desde el sitio oficial o sigue README.txt y abre un caso de lab.",
+    "UI de Autopsy con el disco cargado."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "alt": [
+    "sleuthkit"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "mandiant/capa",
+   "id": "capa",
+   "name": "capa",
+   "cat": 16,
+   "sub": "reversing",
+   "kind": "app",
+   "one": "Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…) mediante reglas y análisis estático.",
+   "how": "Binarios standalone en Releases o pip; analiza PE/ELF y reporta MITRE/capabilities.",
+   "examples": [
+    "clasificar una muestra de lab",
+    "priorizar qué abrir en Ghidra"
+   ],
+   "try": [
+    "Descarga el release standalone y ejecuta `capa muestra.exe` en un sandbox.",
+    "Listas capacidades detectadas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://mandiant.github.io/capa/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "Gallopsled/pwntools",
+   "id": "pwntools",
+   "name": "pwntools",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "library",
+   "one": "Framework Python para CTF y desarrollo de exploits: tubos, packing, ROP y utilidades de binarios.",
+   "how": "pip (`pwntools`); scripts Python contra binarios/remotos de lab.",
+   "examples": [
+    "escribir un exploit de un challenge CTF",
+    "automatizar I/O con un servicio de lab"
+   ],
+   "try": [
+    "`python3 -m pip install --upgrade pwntools` y lanza un script mínimo contra un binario local.",
+    "Interacción local/remota funcionando."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "python3 -m pip install --upgrade pwntools",
+   "url": "http://pwntools.com",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "pwndbg/pwndbg",
+   "id": "pwndbg",
+   "name": "pwndbg",
+   "cat": 16,
+   "sub": "depuracion",
+   "kind": "app",
+   "one": "Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más.",
+   "how": "Se instala según pwndbg.re; se carga como plugin de GDB/LLDB.",
+   "examples": [
+    "depurar un binario vulnerable de lab",
+    "inspeccionar heap tras un overflow"
+   ],
+   "try": [
+    "Sigue https://pwndbg.re/stable/setup e inicia GDB con pwndbg sobre un binario de lab.",
+    "Ves el layout enriquecido."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "url": "https://pwndbg.re/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "AFLplusplus/AFLplusplus",
+   "id": "aflplusplus",
+   "name": "AFL++",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado.",
+   "how": "Docker o build desde fuente; instrumenta el binario y muta entradas.",
+   "examples": [
+    "fuzzear un parser interno",
+    "regresión de seguridad en CI de un proyecto propio"
+   ],
+   "try": [
+    "`docker pull aflplusplus/aflplusplus` y monta el target según la guía.",
+    "Campañas de fuzz generan crashes."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "docker pull aflplusplus/aflplusplus",
+   "url": "https://aflplus.plus",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "google/syzkaller",
+   "id": "syzkaller",
+   "name": "syzkaller",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada.",
+   "how": "Requiere VMs/managers según docs/setup.md; no es un one-liner.",
+   "examples": [
+    "fuzzear un driver out-of-tree en lab",
+    "reproducir un crash de kernel reportado"
+   ],
+   "try": [
+    "Sigue docs/setup.md en un entorno con VMs dedicadas.",
+    "Manager e instancias fuzzando."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "aircrack-ng/aircrack-ng",
+   "id": "aircrack-ng",
+   "name": "Aircrack-ng",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas.",
+   "how": "Binarios/paquetes; requiere hardware compatible en modo monitor.",
+   "examples": [
+    "auditar la Wi-Fi corporativa de lab",
+    "comprobar fortaleza de un PSK de prueba"
+   ],
+   "try": [
+    "Instala el paquete o compila según aircrack-ng.org y captura en un AP de laboratorio.",
+    "Handshake/PSK según el ejercicio."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Solo redes propias/autorizadas; respeta regulación de radio local.",
+   "url": "https://aircrack-ng.org",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "bettercap/bettercap",
+   "id": "bettercap",
+   "name": "bettercap",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita.",
+   "how": "Binario Go / Docker; módulos de red y Wi-Fi.",
+   "examples": [
+    "MITM ARP en un lab aislado",
+    "inspeccionar tráfico HTTP de prueba"
+   ],
+   "try": [
+    "Instala bettercap (release/Docker) en un lab aislado y lanza un módulo de descubrimiento.",
+    "Ves hosts/tráfico del segmento autorizado."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "url": "https://www.bettercap.org/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "vanhauser-thc/thc-hydra",
+   "id": "thc-hydra",
+   "name": "THC Hydra",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con autorización explícita.",
+   "how": "Binario/Docker; diccionarios externos (SecLists).",
+   "examples": [
+    "probar passwords de un lab SSH",
+    "validar lockout de un portal de prueba"
+   ],
+   "try": [
+    "`docker pull vanhauser/hydra` o compila y lanza un ataque de diccionario contra un servicio de lab.",
+    "Éxitos/fracasos según el diccionario."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "docker pull vanhauser/hydra",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "fail2ban/fail2ban",
+   "id": "fail2ban",
+   "name": "Fail2ban",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts.",
+   "how": "Servicio Python; jails/filters; paquetes de distro o clone.",
+   "examples": [
+    "proteger SSH de un VPS propio",
+    "banear force brute a un panel web"
+   ],
+   "try": [
+    "Instala el paquete de tu distro o clona y sigue COPYING/README; activa el jail sshd.",
+    "IPs repetidas quedan baneadas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "git clone https://github.com/fail2ban/fail2ban.git",
+   "url": "http://www.fail2ban.org",
+   "alt": [
+    "crowdsec"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "coreruleset/coreruleset",
+   "id": "coreruleset",
+   "name": "OWASP CRS",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "reference",
+   "one": "Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias.",
+   "how": "Conjunto de reglas; se carga en ModSecurity o Coraza delante de la app.",
+   "examples": [
+    "proteger un reverse proxy propio",
+    "ajustar falsos positivos de CRS"
+   ],
+   "try": [
+    "Sigue coreruleset.org para cargar CRS en ModSecurity/Coraza de lab.",
+    "Tráfico de ataque de prueba genera bloqueos."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://coreruleset.org",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "cisagov/ScubaGear",
+   "id": "scubagear",
+   "name": "ScubaGear",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra baselines de seguridad.",
+   "how": "Módulo PSGallery `Install-Module ScubaGear`; `Invoke-SCuBA`.",
+   "examples": [
+    "auditar un tenant M365 de lab",
+    "preparar evidencia BOD 25-01"
+   ],
+   "try": [
+    "En PowerShell 5 Windows: `Install-Module -Name ScubaGear` y `Invoke-SCuBA -ProductNames *` sobre un tenant de prueba.",
+    "Informe HTML/JSON de posture."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "Install-Module -Name ScubaGear",
+   "url": "https://www.cisa.gov/resources-tools/services/secure-cloud-business-applications-scuba-project",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "Orange-Cyberdefense/GOAD",
+   "id": "goad",
+   "name": "GOAD",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "reference",
+   "one": "Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD en VMs locales aisladas.",
+   "how": "Provisiona varias VMs (Vagrant/Ansible/etc. según docs) con bosques AD intencionadamente inseguros.",
+   "examples": [
+    "montar un lab AD completo",
+    "practicar BloodHound/Certipy/NetExec con seguridad"
+   ],
+   "try": [
+    "Sigue https://orange-cyberdefense.github.io/GOAD/ en hardware con suficiente RAM.",
+    "VMs AD listas para atacar en aislamiento."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Solo lab local/aislado. Nunca exponer a Internet.",
+   "url": "https://orange-cyberdefense.github.io/GOAD/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "HackTricks-wiki/hacktricks",
+   "id": "hacktricks",
+   "name": "HackTricks",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunidad.",
+   "how": "Consulta web o clone; también Docker Compose para servir en local.",
+   "examples": [
+    "repasar privesc Linux antes de un lab",
+    "consultar técnicas AD"
+   ],
+   "try": [
+    "Abre https://book.hacktricks.xyz o `docker compose up` tras clonar.",
+    "Navegas la técnica buscada."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "git clone https://github.com/HackTricks-wiki/hacktricks",
+   "url": "http://book.hacktricks.xyz/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "OWASP/CheatSheetSeries",
+   "id": "cheatsheetseries",
+   "name": "OWASP CheatSheet Series",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores.",
+   "how": "Markdown en el repo; sitio generado; `make generate-site`.",
+   "examples": [
+    "revisar controles de auth en un diseño",
+    "checklist XSS antes de release"
+   ],
+   "try": [
+    "Abre https://cheatsheetseries.owasp.org y abre la cheatsheet relevante.",
+    "Aplicas el control a tu proyecto."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://cheatsheetseries.owasp.org",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "caido/caido",
+   "id": "caido",
+   "name": "Caido",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.",
+   "how": "Binarios desde dashboard.caido.io; plugin ecosystem parcialmente abierto en este repo.",
+   "examples": [
+    "interceptar tráfico de una app de lab",
+    "reproducir requests en un ejercicio web"
+   ],
+   "try": [
+    "Crea cuenta en dashboard.caido.io, descarga el cliente Basic y apunta el proxy al lab.",
+    "Tráfico HTTP visible en Caido."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. No es open source. Basic gratis limitado; Individual/Team/Enterprise de pago. Repo GitHub ≠ código del producto.",
+   "alt": [
+    "zaproxy"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "Neo23x0/Loki",
+   "id": "loki",
+   "name": "LOKI",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.",
+   "how": "Script/binario Python; se ejecuta sobre rutas locales con reglas/IOCs.",
+   "examples": [
+    "triar un servidor de lab tras alerta",
+    "buscar IOCs de un informe MISP"
+   ],
+   "try": [
+    "Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba.",
+    "Hits de IOC en consola."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "elastic/detection-rules",
+   "id": "detection-rules",
+   "name": "Elastic detection-rules",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "reference",
+   "one": "Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI.",
+   "how": "Repo de reglas TOML/YAML; se cargan en Elastic Security stack.",
+   "examples": [
+    "importar reglas ATT&CK en un Elastic de lab",
+    "adaptar una regla a otro SIEM vía Sigma si aplica"
+   ],
+   "try": [
+    "Clona el repo y revisa una regla; impórtala en un Elastic de laboratorio si lo tienes.",
+    "La regla aparece en el SIEM."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Elastic License 2.0 (source-available, no OSI).",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "Shuffle/Shuffle",
+   "id": "shuffle",
+   "name": "Shuffle",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows.",
+   "how": "Docker/K8s; UI de workflows; apps/conectores.",
+   "examples": [
+    "abrir ticket y enriquecer IOC tras alerta Wazuh",
+    "orquestar quarantine en lab"
+   ],
+   "try": [
+    "Despliega Shuffle según la documentación oficial del repo y crea un workflow de prueba.",
+    "El workflow corre de extremo a extremo."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "trustedsec/social-engineer-toolkit",
+   "id": "social-engineer-toolkit",
+   "name": "SET",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y vectores solo con consentimiento.",
+   "how": "Python; clone + readme/LICENSE; menús interactivos.",
+   "examples": [
+    "simulación de phishing interna autorizada",
+    "entrenamiento de concienciación"
+   ],
+   "try": [
+    "Clona el repo, revisa readme/LICENSE y lanza SET solo contra voluntarios del ejercicio.",
+    "Campaña de lab registrada."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Solo con consentimiento informado y alcance firmado. Phishing real sin permiso es delito.",
+   "cmd": "git clone https://github.com/trustedsec/social-engineer-toolkit",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "hashicorp/vault",
+   "id": "vault",
+   "name": "HashiCorp Vault",
+   "cat": 15,
+   "sub": "privacidad",
+   "kind": "server",
+   "one": "Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro.",
+   "how": "Binario/Docker; servidor + agents/CLI; políticas ACL.",
+   "examples": [
+    "centralizar secretos de un entorno propio",
+    "emitir credenciales dinámicas de DB de lab"
+   ],
+   "try": [
+    "Arranca Vault en modo dev (`vault server -dev`) según docs y escribe un secreto KV.",
+    "Lees el secreto con la CLI."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Business Source License 1.1 (IBM) desde Vault 1.15.0: uso productivo permitido salvo ofrecerlo como servicio competidor de pago. No es licencia OSI.",
+   "url": "https://www.vaultproject.io/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "getsops/sops",
+   "id": "sops",
+   "name": "SOPS",
+   "cat": 15,
+   "sub": "privacidad",
+   "kind": "app",
+   "one": "Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI.",
+   "how": "CLI Go; edita ficheros cifrados transparentemente.",
+   "examples": [
+    "cifrar secrets de Kubernetes en Git",
+    "rotar claves age de un repo"
+   ],
+   "try": [
+    "Instala sops (release) y cifra un YAML de lab con age.",
+    "El fichero en Git permanece cifrado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "FiloSottile/age",
+   "id": "age",
+   "name": "age",
+   "cat": 15,
+   "sub": "privacidad",
+   "kind": "app",
+   "one": "Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable.",
+   "how": "Binario Go; `age -r` para cifrar, `age -d` para descifrar.",
+   "examples": [
+    "cifrar un backup antes de subirlo",
+    "claves age para SOPS"
+   ],
+   "try": [
+    "Instala age (release/paquetes) y cifra un fichero de lab.",
+    "Descifrado con la clave privada."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "keepassxreboot/keepassxc",
+   "id": "keepassxc",
+   "name": "KeePassXC",
+   "cat": 15,
+   "sub": "privacidad",
+   "kind": "app",
+   "one": "Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador.",
+   "how": "Instaladores de escritorio; base de datos cifrada local (.kdbx).",
+   "examples": [
+    "cofre local para el equipo de lab",
+    "TOTP + contraseñas sin nube"
+   ],
+   "try": [
+    "Instala KeePassXC desde keepassxc.org y crea una base .kdbx de prueba.",
+    "Entradas guardadas y desbloqueables."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://keepassxc.org",
+   "alt": [
+    "vaultwarden"
+   ],
+   "ligero": true
+  }
+ ]
+}

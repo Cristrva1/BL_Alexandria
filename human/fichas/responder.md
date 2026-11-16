@@ -29,6 +29,12 @@ git clone + pip requirements.
 | [NetExec](netexec.md) | Hashes capturados se prueban con NetExec. | Responder → NetExec. |
 | [hashcat](hashcat.md) | Craqueo de hashes capturados. | Responder → Hashcat. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[bettercap](bettercap.md)
+
 Estado en GitHub: activo · último push 2026-06-10 · licencia declarada GPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lgandx/Responder#readme)</sub>

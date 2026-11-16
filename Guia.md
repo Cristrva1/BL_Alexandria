@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **860 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **885 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -26,8 +26,8 @@ Las **860 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 19 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
-| 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 44 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
-| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 92 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
+| 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 48 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
+| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 113 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 16 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 17 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 31 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
@@ -3969,6 +3969,13 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 | [Immich](human/fichas/immich.md) | Tu objetivo encaja con estos ejemplos: hacer copia automática de las fotos del móvil a tu propio servidor; buscar fotos por personas, lugares o descripciones sin enviar datos a la nube | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 | [PhotoPrism](human/fichas/photoprism.md) | Tu objetivo encaja con estos ejemplos: organizar automáticamente un archivo de fotos por lugares, etiquetas y personas; navegar y compartir una colección familiar desde tu servidor | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
+**⚖️ ¿Cuál elegir? — vaultwarden, KeePassXC**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [vaultwarden](human/fichas/vaultwarden.md) | Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [KeePassXC](human/fichas/keepassxc.md) | Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — Pi-hole, AdGuardHome**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4233,6 +4240,42 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [activepieces](human/fichas/activepieces.md) · [vaultwarden](human/fichas/vaultwarden.md) · [CasaOS](human/fichas/casaos.md) · [cleanyourtv](human/fichas/cleanyourtv.md) · [optimizerDuck](human/fichas/optimizerduck.md)<br>
 **Más:** [ficha completa](human/fichas/adguardhome.md) · [GitHub](https://github.com/AdguardTeam/AdGuardHome)
 
+#### ⚙️ HashiCorp Vault
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 36.5k<br>
+**Qué es:** Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/hashicorp/vault/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar secretos de un entorno propio; emitir credenciales dinámicas de DB de lab — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [SOPS](human/fichas/sops.md) · [age](human/fichas/age.md) · [vaultwarden](human/fichas/vaultwarden.md)<br>
+**Más:** [ficha completa](human/fichas/vault.md) · [GitHub](https://github.com/hashicorp/vault)
+
+#### 🖥️ KeePassXC
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 30k<br>
+**Qué es:** Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/keepassxreboot/keepassxc/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [SOPS](human/fichas/sops.md)<br>
+**Más:** [ficha completa](human/fichas/keepassxc.md) · [GitHub](https://github.com/keepassxreboot/keepassxc)
+
+#### 🖥️ age
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 24.3k<br>
+**Qué es:** Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/FiloSottile/age/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: cifrar un backup antes de subirlo; claves age para SOPS — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [SOPS](human/fichas/sops.md) · [HashiCorp Vault](human/fichas/vault.md)<br>
+**Más:** [ficha completa](human/fichas/age.md) · [GitHub](https://github.com/FiloSottile/age)
+
+#### 🖥️ SOPS
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 23.7k<br>
+**Qué es:** Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/getsops/sops/blob/main/README.rst); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: cifrar secrets de Kubernetes en Git; rotar claves age de un repo — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [age](human/fichas/age.md) · [HashiCorp Vault](human/fichas/vault.md)<br>
+**Más:** [ficha completa](human/fichas/sops.md) · [GitHub](https://github.com/getsops/sops)
+
 #### 🖥️ Bitwarden Clients
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.2k<br>
 **Qué es:** Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send.<br>
@@ -4442,6 +4485,13 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [Gobuster](human/fichas/gobuster.md) | Tu objetivo encaja con estos ejemplos: descubrir rutas ocultas en una app de lab; enumerar vhosts de un dominio propio | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [feroxbuster](human/fichas/feroxbuster.md) | Tu objetivo encaja con estos ejemplos: recursión de directorios en un lab Juice Shop; comparar cobertura con Gobuster | necesitas una instalación sin cuentas ni dependencias adicionales |
 
+**⚖️ ¿Cuál elegir? — ZAP (Zed Attack Proxy), Caido**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) | Tu objetivo encaja con estos ejemplos: buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo; integrar un escaneo DAST en el pipeline de CI | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Caido](human/fichas/caido.md) | Tu objetivo encaja con estos ejemplos: interceptar tráfico de una app de lab; reproducir requests en un ejercicio web | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — httpx, Naabu**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4456,6 +4506,13 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [Sliver](human/fichas/sliver.md) | Tu objetivo encaja con estos ejemplos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [Empire](human/fichas/empire.md) | Tu objetivo encaja con estos ejemplos: listener + stager en un lab Windows; módulos de post-ex en ejercicio red team | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [Mythic](human/fichas/mythic.md) | Tu objetivo encaja con estos ejemplos: montar un C2 de lab con un agente oficial; ejercicio purple team multi-operador | necesitas una instalación sin cuentas ni dependencias adicionales |
+
+**⚖️ ¿Cuál elegir? — Fail2ban, CrowdSec**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Fail2ban](human/fichas/fail2ban.md) | Tu objetivo encaja con estos ejemplos: proteger SSH de un VPS propio; banear force brute a un panel web | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [CrowdSec](human/fichas/crowdsec.md) | Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 **⚖️ ¿Cuál elegir? — Trivy, Grype**
 
@@ -4477,6 +4534,13 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 |---|---|---|
 | [PayloadsAllTheThings](human/fichas/payloadsallthethings.md) | Tu objetivo encaja con estos ejemplos: preparar payloads SSRF para un lab Juice Shop; repasar técnicas de una categoría OWASP antes de un ejercicio | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
 | [SecLists](human/fichas/seclists.md) | Tu objetivo encaja con estos ejemplos: fuzzear rutas de una app web de lab con la lista Discovery; probar contraseñas comunes solo contra cuentas de prueba | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
+
+**⚖️ ¿Cuál elegir? — Autopsy, The Sleuth Kit**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Autopsy](human/fichas/autopsy.md) | Tu objetivo encaja con estos ejemplos: abrir un caso forense de lab; generar timeline de un disco de prueba | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [The Sleuth Kit](human/fichas/sleuthkit.md) | Tu objetivo encaja con estos ejemplos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
 ### Ingeniería inversa y formatos binarios
 
@@ -4561,6 +4625,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [ghidra](human/fichas/ghidra.md) · [frida](human/fichas/frida.md) · [Claude Code](human/fichas/claude-code.md) · [GhidraMCP](human/fichas/ghidramcp.md) · [rizin](human/fichas/rizin.md)<br>
 **Más:** [ficha completa](human/fichas/angr.md) · [GitHub](https://github.com/angr/angr)
 
+#### 🖥️ capa
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 6.3k<br>
+**Qué es:** Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…) mediante reglas y análisis estático.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/mandiant/capa/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: clasificar una muestra de lab; priorizar qué abrir en Ghidra — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [YARA](human/fichas/yara.md)<br>
+**Más:** [ficha completa](human/fichas/capa.md) · [GitHub](https://github.com/mandiant/capa)
+
 #### 🖥️ rizin
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 4.2k<br>
 **Qué es:** Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.<br>
@@ -4589,6 +4662,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ILSpy](human/fichas/ilspy.md) · [x64dbg](human/fichas/x64dbg.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/dnspy.md) · [GitHub](https://github.com/dnSpyEx/dnSpy)
+
+#### 🖥️ pwndbg
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 11.2k<br>
+**Qué es:** Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/pwndbg/pwndbg/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: depurar un binario vulnerable de lab; inspeccionar heap tras un overflow — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [pwntools](human/fichas/pwntools.md) · [ghidra](human/fichas/ghidra.md)<br>
+**Más:** [ficha completa](human/fichas/pwndbg.md) · [GitHub](https://github.com/pwndbg/pwndbg)
 
 #### 🖥️ raddebugger
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 8.8k<br>
@@ -4655,6 +4737,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [BloodHound Community Edition](human/fichas/bloodhound.md) · [Claude Code](human/fichas/claude-code.md) · [SecLists](human/fichas/seclists.md)<br>
 **Más:** [ficha completa](human/fichas/hashcat.md) · [GitHub](https://github.com/hashcat/hashcat)
 
+#### 🖥️ bettercap
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 20.3k<br>
+**Qué es:** Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/bettercap/bettercap/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: MITM ARP en un lab aislado; inspeccionar tráfico HTTP de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Wireshark](human/fichas/wireshark.md) · [Responder](human/fichas/responder.md)<br>
+**Más:** [ficha completa](human/fichas/bettercap.md) · [GitHub](https://github.com/bettercap/bettercap)
+
 #### 🖥️ ffuf
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 17.1k<br>
 **Qué es:** Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.<br>
@@ -4709,6 +4800,24 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [Wireshark](human/fichas/wireshark.md) · [BloodHound Community Edition](human/fichas/bloodhound.md)<br>
 **Más:** [ficha completa](human/fichas/john.md) · [GitHub](https://github.com/openwall/john)
 
+#### 📚 pwntools
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 13.9k<br>
+**Qué es:** Framework Python para CTF y desarrollo de exploits: tubos, packing, ROP y utilidades de binarios.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `python3 -m pip install --upgrade pwntools` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: escribir un exploit de un challenge CTF; automatizar I/O con un servicio de lab — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [pwndbg](human/fichas/pwndbg.md) · [ghidra](human/fichas/ghidra.md)<br>
+**Más:** [ficha completa](human/fichas/pwntools.md) · [GitHub](https://github.com/Gallopsled/pwntools)
+
+#### 🖥️ THC Hydra
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 12.5k<br>
+**Qué es:** Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con autorización explícita.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker pull vanhauser/hydra` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: probar passwords de un lab SSH; validar lockout de un portal de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [SecLists](human/fichas/seclists.md) · [Nmap](human/fichas/nmap.md)<br>
+**Más:** [ficha completa](human/fichas/thc-hydra.md) · [GitHub](https://github.com/vanhauser-thc/thc-hydra)
+
 #### 🖥️ Wireshark
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 10.2k<br>
 **Qué es:** Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.<br>
@@ -4735,6 +4844,42 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: recursión de directorios en un lab Juice Shop; comparar cobertura con Gobuster — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [SecLists](human/fichas/seclists.md) · [Nuclei](human/fichas/nuclei.md)<br>
 **Más:** [ficha completa](human/fichas/feroxbuster.md) · [GitHub](https://github.com/epi052/feroxbuster)
+
+#### 🖥️ Aircrack-ng
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 7.9k<br>
+**Qué es:** Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/aircrack-ng/aircrack-ng/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar la Wi-Fi corporativa de lab; comprobar fortaleza de un PSK de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [hashcat](human/fichas/hashcat.md) · [Wireshark](human/fichas/wireshark.md)<br>
+**Más:** [ficha completa](human/fichas/aircrack-ng.md) · [GitHub](https://github.com/aircrack-ng/aircrack-ng)
+
+#### 🖥️ AFL++
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 6.9k<br>
+**Qué es:** Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker pull aflplusplus/aflplusplus` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: fuzzear un parser interno; regresión de seguridad en CI de un proyecto propio — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Semgrep](human/fichas/semgrep.md) · [pwntools](human/fichas/pwntools.md)<br>
+**Más:** [ficha completa](human/fichas/aflplusplus.md) · [GitHub](https://github.com/AFLplusplus/AFLplusplus)
+
+#### 🖥️ syzkaller
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 6.4k<br>
+**Qué es:** Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/google/syzkaller/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: fuzzear un driver out-of-tree en lab; reproducir un crash de kernel reportado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [AFL++](human/fichas/aflplusplus.md) · [radare2](human/fichas/radare2.md)<br>
+**Más:** [ficha completa](human/fichas/syzkaller.md) · [GitHub](https://github.com/google/syzkaller)
+
+#### 🖥️ Caido
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 2.7k<br>
+**Qué es:** Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/caido/caido/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: interceptar tráfico de una app de lab; reproducir requests en un ejercicio web — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nuclei](human/fichas/nuclei.md) · [ffuf](human/fichas/ffuf.md)<br>
+**Más:** [ficha completa](human/fichas/caido.md) · [GitHub](https://github.com/caido/caido)
 
 ### Reconocimiento y superficie de ataque
 
@@ -4848,6 +4993,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Nuclei](human/fichas/nuclei.md) · [Wazuh](human/fichas/wazuh.md) · [Atomic Red Team](human/fichas/atomic-red-team.md)<br>
 **Más:** [ficha completa](human/fichas/evilginx2.md) · [GitHub](https://github.com/kgretzky/evilginx2)
 
+#### 🖥️ SET
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 15.5k<br>
+**Qué es:** Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y vectores solo con consentimiento.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/trustedsec/social-engineer-toolkit` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: simulación de phishing interna autorizada; entrenamiento de concienciación — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Evilginx2](human/fichas/evilginx2.md) · [Atomic Red Team](human/fichas/atomic-red-team.md)<br>
+**Más:** [ficha completa](human/fichas/social-engineer-toolkit.md) · [GitHub](https://github.com/trustedsec/social-engineer-toolkit)
+
 #### 📂 Atomic Red Team
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 12.9k<br>
 **Qué es:** Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.<br>
@@ -4922,6 +5076,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [Nmap](human/fichas/nmap.md) · [Metasploit Framework](human/fichas/metasploit.md) · [NetExec](human/fichas/netexec.md)<br>
 **Más:** [ficha completa](human/fichas/impacket.md) · [GitHub](https://github.com/fortra/impacket)
 
+#### 📂 GOAD
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup hard · ⭐ 8.6k<br>
+**Qué es:** Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD en VMs locales aisladas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Orange-Cyberdefense/GOAD/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un lab AD completo; practicar BloodHound/Certipy/NetExec con seguridad — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [Certipy](human/fichas/certipy.md) · [NetExec](human/fichas/netexec.md)<br>
+**Más:** [ficha completa](human/fichas/goad.md) · [GitHub](https://github.com/Orange-Cyberdefense/GOAD)
+
 #### 🖥️ Responder
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.7k<br>
 **Qué es:** Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio.<br>
@@ -4977,6 +5140,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: consultar procesos escuchando puertos en flotas de lab; montar hunts SQL sobre cambios de persistencia — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [Velociraptor](human/fichas/velociraptor.md) · [Sigma](human/fichas/sigma.md)<br>
 **Más:** [ficha completa](human/fichas/osquery.md) · [GitHub](https://github.com/osquery/osquery)
+
+#### 🖥️ Fail2ban
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 19k<br>
+**Qué es:** Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/fail2ban/fail2ban.git` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: proteger SSH de un VPS propio; banear force brute a un panel web — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Wazuh](human/fichas/wazuh.md)<br>
+**Más:** [ficha completa](human/fichas/fail2ban.md) · [GitHub](https://github.com/fail2ban/fail2ban)
 
 #### ⚙️ Wazuh
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 17.8k<br>
@@ -5040,6 +5212,42 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: levantar un SOC de lab; entrenar analistas con telemetría realista — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Suricata](human/fichas/suricata.md) · [Zeek](human/fichas/zeek.md) · [Wazuh](human/fichas/wazuh.md)<br>
 **Más:** [ficha completa](human/fichas/securityonion.md) · [GitHub](https://github.com/Security-Onion-Solutions/securityonion)
+
+#### 🖥️ LOKI
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 3.8k<br>
+**Qué es:** Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Neo23x0/Loki/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [YARA](human/fichas/yara.md) · [MISP](human/fichas/misp.md)<br>
+**Más:** [ficha completa](human/fichas/loki.md) · [GitHub](https://github.com/Neo23x0/Loki)
+
+#### 📂 OWASP CRS
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 3.4k<br>
+**Qué es:** Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/coreruleset/coreruleset/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: proteger un reverse proxy propio; ajustar falsos positivos de CRS — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [Caddy](human/fichas/caddy.md) · [Nuclei](human/fichas/nuclei.md)<br>
+**Más:** [ficha completa](human/fichas/coreruleset.md) · [GitHub](https://github.com/coreruleset/coreruleset)
+
+#### 📂 Elastic detection-rules
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 3k<br>
+**Qué es:** Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/elastic/detection-rules/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [Sigma](human/fichas/sigma.md) · [Wazuh](human/fichas/wazuh.md)<br>
+**Más:** [ficha completa](human/fichas/detection-rules.md) · [GitHub](https://github.com/elastic/detection-rules)
+
+#### 🖥️ Shuffle
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 2.5k<br>
+**Qué es:** SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Shuffle/Shuffle/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Wazuh](human/fichas/wazuh.md) · [MISP](human/fichas/misp.md)<br>
+**Más:** [ficha completa](human/fichas/shuffle.md) · [GitHub](https://github.com/Shuffle/Shuffle)
 
 ### Nube, contenedores e IaC
 
@@ -5132,6 +5340,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: enumerar privilegios de una cuenta sandbox; simular escalada IAM en lab — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Prowler](human/fichas/prowler.md) · [Trivy](human/fichas/trivy.md)<br>
 **Más:** [ficha completa](human/fichas/pacu.md) · [GitHub](https://github.com/RhinoSecurityLabs/pacu)
+
+#### 🖥️ ScubaGear
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 2.8k<br>
+**Qué es:** Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra baselines de seguridad.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `Install-Module -Name ScubaGear` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar un tenant M365 de lab; preparar evidencia BOD 25-01 — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Prowler](human/fichas/prowler.md) · [Lynis](human/fichas/lynis.md)<br>
+**Más:** [ficha completa](human/fichas/scubagear.md) · [GitHub](https://github.com/cisagov/ScubaGear)
 
 ### Análisis y pruebas con agentes
 
@@ -5232,6 +5449,24 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [ffuf](human/fichas/ffuf.md) · [hashcat](human/fichas/hashcat.md) · [Nuclei](human/fichas/nuclei.md)<br>
 **Más:** [ficha completa](human/fichas/seclists.md) · [GitHub](https://github.com/danielmiessler/SecLists)
 
+#### 📂 OWASP CheatSheet Series
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 34.1k<br>
+**Qué es:** Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/CheatSheetSeries/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar controles de auth en un diseño; checklist XSS antes de release — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [Semgrep](human/fichas/semgrep.md) · [OWASP Juice Shop](human/fichas/juice-shop.md)<br>
+**Más:** [ficha completa](human/fichas/cheatsheetseries.md) · [GitHub](https://github.com/OWASP/CheatSheetSeries)
+
+#### 📂 HackTricks
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 12.8k<br>
+**Qué es:** Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunidad.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/HackTricks-wiki/hacktricks` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: repasar privesc Linux antes de un lab; consultar técnicas AD — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [PEASS-ng](human/fichas/peass-ng.md) · [PayloadsAllTheThings](human/fichas/payloadsallthethings.md)<br>
+**Más:** [ficha completa](human/fichas/hacktricks.md) · [GitHub](https://github.com/HackTricks-wiki/hacktricks)
+
 #### 📂 awesome-reverse-engineering
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 2.1k<br>
 **Qué es:** Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos.<br>
@@ -5329,6 +5564,24 @@ claude` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Sigma](human/fichas/sigma.md) · [Velociraptor](human/fichas/velociraptor.md)<br>
 **Más:** [ficha completa](human/fichas/hayabusa.md) · [GitHub](https://github.com/Yamato-Security/hayabusa)
+
+#### 🖥️ Autopsy
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 3.5k<br>
+**Qué es:** GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/sleuthkit/autopsy/blob/develop/README.txt); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: abrir un caso forense de lab; generar timeline de un disco de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Hayabusa](human/fichas/hayabusa.md) · [Wazuh](human/fichas/wazuh.md)<br>
+**Más:** [ficha completa](human/fichas/autopsy.md) · [GitHub](https://github.com/sleuthkit/autopsy)
+
+#### 📚 The Sleuth Kit
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 3.2k<br>
+**Qué es:** Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/sleuthkit/sleuthkit/blob/develop-4.1x/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Velociraptor](human/fichas/velociraptor.md) · [Volatility 3](human/fichas/volatility3.md)<br>
+**Más:** [ficha completa](human/fichas/sleuthkit.md) · [GitHub](https://github.com/sleuthkit/sleuthkit)
 
 ### Inteligencia de amenazas
 

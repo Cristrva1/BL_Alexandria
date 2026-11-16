@@ -60,55 +60,55 @@ Agentes y skills que guían revisiones de seguridad.
 
 Inspeccionar programas, ejecutables y formatos compilados.
 
-`angr`, `apktool`, `frida`, `ghidra`, `ilspy`, `imhex`, `jadx`, `radare2`, `rizin`, `yara`
+`angr`, `apktool`, `capa`, `frida`, `ghidra`, `ilspy`, `imhex`, `jadx`, `radare2`, `rizin`, `yara`
 
 ### Depuración e inspección
 
 Comprender procesos y examinar cómo se comporta el software.
 
-`dnspy`, `ghidramcp`, `raddebugger`, `x64dbg`
+`dnspy`, `ghidramcp`, `pwndbg`, `raddebugger`, `x64dbg`
 
 ### Tráfico, pruebas y protección
 
 Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-`bla`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `hashcat`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `nuclei`, `semgrep`, `sqlmap`, `wireshark`, `wpscan`, `zaproxy`
+`aflplusplus`, `aircrack-ng`, `bettercap`, `bla`, `caido`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `hashcat`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `nuclei`, `pwntools`, `semgrep`, `sqlmap`, `syzkaller`, `thc-hydra`, `wireshark`, `wpscan`, `zaproxy`
 
 ### Pruebas de intrusión autorizadas
 
 Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
-`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `certipy`, `dnsx`, `empire`, `evilginx2`, `httpx`, `impacket`, `interactsh`, `ligolo-ng`, `masscan`, `metasploit`, `mimikatz`, `mythic`, `naabu`, `netexec`, `nmap`, `peass-ng`, `responder`, `rubeus`, `rustscan`, `sliver`, `subfinder`
+`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `certipy`, `dnsx`, `empire`, `evilginx2`, `goad`, `httpx`, `impacket`, `interactsh`, `ligolo-ng`, `masscan`, `metasploit`, `mimikatz`, `mythic`, `naabu`, `netexec`, `nmap`, `peass-ng`, `responder`, `rubeus`, `rustscan`, `sliver`, `social-engineer-toolkit`, `subfinder`
 
 ### Detección y respuesta
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-`arkime`, `crowdsec`, `osquery`, `securityonion`, `sigma`, `suricata`, `wazuh`, `zeek`
+`arkime`, `coreruleset`, `crowdsec`, `detection-rules`, `fail2ban`, `loki`, `osquery`, `securityonion`, `shuffle`, `sigma`, `suricata`, `wazuh`, `zeek`
 
 ### Nube, contenedores e IaC
 
 Revisar imágenes, clústeres y cuentas de nube antes de publicar.
 
-`checkov`, `cosign`, `falco`, `grype`, `kube-bench`, `osv-scanner`, `pacu`, `prowler`, `syft`, `trivy`
+`checkov`, `cosign`, `falco`, `grype`, `kube-bench`, `osv-scanner`, `pacu`, `prowler`, `scubagear`, `syft`, `trivy`
 
 ### Credenciales y privacidad
 
 Gestionar contraseñas y proteger servicios personales.
 
-`adguardhome`, `bitwarden-clients`, `pi-hole`, `vaultwarden`
+`adguardhome`, `age`, `bitwarden-clients`, `keepassxc`, `pi-hole`, `sops`, `vault`, `vaultwarden`
 
 ### Aprender ciberseguridad
 
 Directorios y material de referencia para orientar el análisis.
 
-`awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cybersecurity-skills`, `payloadsallthethings`, `seclists`
+`awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cheatsheetseries`, `cybersecurity-skills`, `hacktricks`, `payloadsallthethings`, `seclists`
 
 ### Respuesta a incidentes y forense
 
 Recolectar evidencias, analizar memoria y cazar en endpoints propios.
 
-`hayabusa`, `velociraptor`, `volatility3`
+`autopsy`, `hayabusa`, `sleuthkit`, `velociraptor`, `volatility3`
 
 ### Inteligencia de amenazas
 
@@ -452,7 +452,7 @@ Sincronizar archivos y organizar libros o contenido personal.
 
 Herramientas personales para gestionar credenciales y proteger datos.
 
-`adguardhome`, `bitwarden-clients`, `pi-hole`, `vaultwarden`
+`adguardhome`, `age`, `bitwarden-clients`, `keepassxc`, `pi-hole`, `sops`, `vault`, `vaultwarden`
 
 ### Hogar, dispositivos y utilidades
 

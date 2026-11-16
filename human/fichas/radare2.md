@@ -31,6 +31,12 @@ Está escrito en C; se recomienda instalarlo desde git con `sys/install.sh` (o p
 | [ImHex](imhex.md) | Analizar formatos de datos con patrones visuales mientras r2 trabaja el código. (combinación por arquitectura) | Usa ambos sobre el mismo binario. |
 | [YARA](yara.md) | Combinación recíproca: YARA lo enlaza como «Tras un match YARA, inspecciona el binario con radare2». | Orden indicado desde YARA: Match YARA → abrir en radare2. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[syzkaller](syzkaller.md)
+
 **Notas:** Alternativas (elige una): rizin, ghidra. Úsalo solo con software y sistemas que tengas derecho a analizar.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 6.2.6 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

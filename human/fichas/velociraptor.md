@@ -32,9 +32,9 @@ Binarios de release; se configura servidor/frontend y se despliegan clientes.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Hayabusa](hayabusa.md)
+[Hayabusa](hayabusa.md) · [The Sleuth Kit](sleuthkit.md)
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.77.3 (2026-10-05) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 

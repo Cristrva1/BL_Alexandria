@@ -95,6 +95,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `home-assistant`, `activepieces`, `vaultwarden`, `casaos`, `cleanyourtv`, `optimizerduck`
 **Alternativas (elige una):** `pi-hole`
 
+## `age`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
+
+**Qué es:** Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/FiloSottile/age
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/FiloSottile/age/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: cifrar un backup antes de subirlo; claves age para SOPS
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala age (release/paquetes) y cifra un fichero de lab.
+**Qué comprobar:** Descifrado con la clave privada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sops`, `vault`
+
 ## `ai-job-search`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=personal,skill,python
 
@@ -674,6 +704,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `syncthing`, `audiobookshelf`, `coolify`
 **Alternativas (elige una):** `calibre-web`
 
+## `keepassxc`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
+
+**Qué es:** Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/keepassxreboot/keepassxc
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/keepassxreboot/keepassxc/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala KeePassXC desde keepassxc.org y crea una base .kdbx de prueba.
+**Qué comprobar:** Entradas guardadas y desbloqueables.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sops`
+**Alternativas (elige una):** `vaultwarden`
+
 ## `kepano-obsidian`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=notas,template,reference
 
@@ -1193,6 +1254,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `nextcloud-server`, `claude-code`
 **Alternativas (elige una):** `joplin`, `trilium`, `logseq`
 
+## `sops`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
+
+**Qué es:** Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI.
+**Stack:** Go, Makefile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/getsops/sops
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/getsops/sops/blob/main/README.rst
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: cifrar secrets de Kubernetes en Git; rotar claves age de un repo
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala sops (release) y cifra un YAML de lab con age.
+**Qué comprobar:** El fichero en Git permanece cifrado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `age`, `vault`
+
 ## `syncthing`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=archivos,app,go
 
@@ -1284,6 +1375,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `adguardhome`, `cleanyourtv`, `optimizerduck`
 
+## `vault`
+role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=security
+
+**Qué es:** Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro.
+**Stack:** Go, Dockerfile, Makefile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/hashicorp/vault
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/hashicorp/vault/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar secretos de un entorno propio; emitir credenciales dinámicas de DB de lab
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Vault en modo dev (`vault server -dev`) según docs y escribe un secreto KV.
+**Qué comprobar:** Lees el secreto con la CLI.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sops`, `age`, `vaultwarden`
+
 ## `vaultwarden`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=privacidad,server,rust
 
@@ -1313,6 +1434,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes reconocer la URL de servidor y recuperar el registro
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `bitwarden-clients`, `coolify`, `adguardhome`
+**Alternativas (elige una):** `keepassxc`
 
 ## `zigbee2mqtt`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,iot,self-hosted

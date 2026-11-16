@@ -35,9 +35,9 @@ Backend en Go con frontend React; se despliega con Docker Compose (PostgreSQL y 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Certipy](certipy.md) · [mimikatz](mimikatz.md) · [Rubeus](rubeus.md)
+[Certipy](certipy.md) · [GOAD](goad.md) · [mimikatz](mimikatz.md) · [Rubeus](rubeus.md)
 
 **Notas:** Ejecutar colectores en un dominio genera actividad detectable; coordínalo con el equipo de seguridad.
 

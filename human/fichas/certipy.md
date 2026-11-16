@@ -29,6 +29,12 @@ pip/poetry según wiki.
 | [BloodHound Community Edition](bloodhound.md) | Rutas de BloodHound + AD CS con Certipy. | BloodHound → Certipy. |
 | [Impacket](impacket.md) | Autenticación/tickets con Impacket. | Impacket + Certipy. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[GOAD](goad.md)
+
 Estado en GitHub: activo · último push 2026-07-30 · última versión publicada 5.1.0 (2026-06-23) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ly4k/Certipy#readme) · [2](https://github.com/ly4k/Certipy/wiki)</sub>

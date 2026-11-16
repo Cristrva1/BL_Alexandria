@@ -103,6 +103,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `security` `go` `server` `self-hosted`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Fail2ban](fail2ban.md) | 19k | Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
+
 ## Enlaces
 
 - 🐙 GitHub: [crowdsecurity/crowdsec](https://github.com/crowdsecurity/crowdsec)
