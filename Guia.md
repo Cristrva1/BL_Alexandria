@@ -3755,6 +3755,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://grafana.com/docs/k6/latest/set-up/install-k6/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Medir un endpoint en desarrollo; Definir un umbral reproducible de rendimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [mitmproxy](human/fichas/mitmproxy.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/k6.md) · [GitHub](https://github.com/grafana/k6)
 
 ### Análisis y pruebas con agentes
@@ -3765,6 +3766,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx rea-agents setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Entender estructura de una app propia; Comparar dos versiones de un formato de laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [ghidra](human/fichas/ghidra.md) · [jadx](human/fichas/jadx.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/rea.md) · [GitHub](https://github.com/morluto/rea)
 
 #### 🖥️ strix
@@ -3773,6 +3775,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/usestrix/strix/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md) · [Semgrep](human/fichas/semgrep.md)<br>
 **Más:** [ficha completa](human/fichas/strix.md) · [GitHub](https://github.com/usestrix/strix)
 
 #### 🖥️ shannon
@@ -3781,6 +3784,7 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx @keygraph/shannon@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Semgrep](human/fichas/semgrep.md) · [mitmproxy](human/fichas/mitmproxy.md)<br>
 **Más:** [ficha completa](human/fichas/shannon.md) · [GitHub](https://github.com/KeygraphHQ/shannon)
 
 #### 🖥️ craft-anything
@@ -3792,6 +3796,7 @@ cargo run --release -p craft-anything                # the desktop app
 cargo install --path apps/craft-anything-cli         # the CLI, as `craft-anything-cli`
 craft-anything-cli doctor                            # checks the install, coding agents and engines` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comprender una implementación propia existente; Comparar comportamiento antes de una reimplementación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [ghidra](human/fichas/ghidra.md) · [rea](human/fichas/rea.md)<br>
 **Más:** [ficha completa](human/fichas/craft-anything.md) · [GitHub](https://github.com/storytold/craft-anything)
 
 ### Protección y verificación de software
@@ -3802,7 +3807,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv tool install semgrep` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Detectar patrones inseguros repetidos; Aplicar reglas de calidad en CI — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Defending Code Reference Harness](human/fichas/defending-code-reference-harness.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [security-audit-skill](human/fichas/security-audit-skill.md) · [strix](human/fichas/strix.md)<br>
 **Más:** [ficha completa](human/fichas/semgrep.md) · [GitHub](https://github.com/semgrep/semgrep)
 
 #### 🖥️ bla
@@ -3811,6 +3816,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx bla-agents setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [rea](human/fichas/rea.md) · [Claude Code](human/fichas/claude-code.md) · [frida](human/fichas/frida.md)<br>
 **Más:** [ficha completa](human/fichas/bla.md) · [GitHub](https://github.com/qybaihe/bla)
 
 ### Directorios y aprendizaje
@@ -3821,6 +3827,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar un analizador de ELF; Encontrar material introductorio de ensamblador — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [rea](human/fichas/rea.md) · [ghidra](human/fichas/ghidra.md) · [frida](human/fichas/frida.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-reverse-engineering.md) · [GitHub](https://github.com/morluto/awesome-reverse-engineering)
 
 #### 📂 awesome-ai-reverse-engineering
@@ -3829,6 +3836,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una integración MCP para análisis; Comparar herramientas con backends locales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [GhidraMCP](human/fichas/ghidramcp.md) · [rea](human/fichas/rea.md) · [jadx](human/fichas/jadx.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-ai-reverse-engineering.md) · [GitHub](https://github.com/zhuyansen/awesome-ai-reverse-engineering)
 
 ### Skills de análisis y seguridad
@@ -3840,7 +3848,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Comando documentado:** `npx skills add https://github.com/cloudflare/security-audit-skill \
   --skill security-audit` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una revisión de código autorizada; Evaluar la calidad de hallazgos generados por un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Semgrep](human/fichas/semgrep.md)<br>
 **Más:** [ficha completa](human/fichas/security-audit-skill.md) · [GitHub](https://github.com/cloudflare/security-audit-skill)
 
 #### 🎨 Cybersecurity Skills (comunidad)
@@ -3850,6 +3858,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Comando documentado:** `# Option 1: npx (recommended)
 npx skills add mukul975/Anthropic-Cybersecurity-Skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una revisión de configuración; Preparar un ejercicio de respuesta defensiva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [SkillSpector](human/fichas/skillspector.md) · [promptfoo](human/fichas/promptfoo.md)<br>
 **Más:** [ficha completa](human/fichas/cybersecurity-skills.md) · [GitHub](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)
 
 #### 🛡️ SkillSpector
@@ -3867,7 +3876,7 @@ uv venv .venv && source .venv/bin/activate
 # Install for production use
 make install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Examinar una skill antes de incorporarla al agente; Añadir un escaneo de skills a una revisión de cambios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md) · [Cybersecurity Skills (comunidad)](human/fichas/cybersecurity-skills.md)<br>
 **Más:** [ficha completa](human/fichas/skillspector.md) · [GitHub](https://github.com/NVIDIA/SkillSpector)
 
 #### 🛡️ Defending Code Reference Harness
@@ -3878,7 +3887,7 @@ make install` (comprobar los pasos completos en la ficha).<br>
 cd defending-code-reference-harness
 claude` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender un flujo de modelado de amenazas; Priorizar y revisar parches en software autorizado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Semgrep](human/fichas/semgrep.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Semgrep](human/fichas/semgrep.md) · [strix](human/fichas/strix.md)<br>
 **Más:** [ficha completa](human/fichas/defending-code-reference-harness.md) · [GitHub](https://github.com/anthropics/defending-code-reference-harness)
 
 ---

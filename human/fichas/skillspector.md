@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Escáner de seguridad para skills de agentes de IA, de NVIDIA. Licencia Apache-2.0. Es activo (~26k estrellas, v2.13.4) y forma parte de la canalización NVIDIA Verified Skills.
+
+## ¿Qué hace?
+
+Detecta vulnerabilidades, patrones maliciosos y riesgos en skills antes de instalarlas: 71 patrones en 17 categorías, como inyección de prompts, exfiltración de datos, escalada de privilegios, cadena de suministro y agencia excesiva. Combina un análisis estático rápido con una evaluación semántica opcional por LLM. El README cita un estudio en el que el 26,1 % de 31.132 skills analizadas tenían vulnerabilidades.
+
+## ¿Cómo lo hace?
+
+Es una herramienta Python que se instala con `uv tool install` desde el repo (con el extra `[mcp]` si quieres `skillspector mcp`) o se ejecuta con Docker (`docker run … skillspector scan ./skill --no-llm`). El análisis por LLM requiere credenciales de un proveedor (p. ej. Anthropic) en un `.env`. Avisa de que descarga e instala software de terceros con sus propias licencias.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Escanear skills desde el agente con el servidor MCP integrado (`skillspector mcp`). | Instala SkillSpector con el extra `[mcp]` y regístralo como servidor MCP. |
+| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | Revisar skills de colecciones grandes antes de instalarlas. (combinación por arquitectura) | Clona la colección y ejecuta `skillspector scan` sobre cada skill elegida. |
+| [Cybersecurity Skills (comunidad)](cybersecurity-skills.md) | Revisar una biblioteca de skills ofensivas y de doble uso antes de dársela a un agente. (combinación por arquitectura) | Escanea las skills que vayas a instalar con `--no-llm` primero. |
+
+**Notas:** Sin alternativas declaradas. Un escaneo limpio no garantiza que una skill sea segura.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.13.4 (2026-11-04) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA/SkillSpector/blob/main/README.md) · [2](https://docs.nvidia.com/skills/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio |
 | Coste | El coste depende del proveedor o la ruta. La ruta estática no requiere LLM; el análisis semántico puede usar Ollama, un CLI admitido o APIs con consumo |
 | Equipo | Preparación según la ruta elegida. Python, Git, uv y Make;  entorno Bash compatible para la ruta seleccionada |
-
-Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio
-
-## Qué puedes hacer con él
-
-Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos.
-
-## Por qué destaca
-
-Usos propuestos: Examinar una skill antes de incorporarla al agente; Añadir un escaneo de skills a una revisión de cambios.
-
-## Cómo funciona
 
 Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio
 
@@ -101,12 +115,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python, Git, uv y Make;  entorno Bash compatible para la ruta seleccionada
 - **Etiquetas:** `skills` `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Herramienta open source de pentesting con agentes de IA autónomos, de usestrix. Licencia Apache-2.0. Es muy activa (~76k estrellas, v1.7.1); el README distingue la versión open source de otras opciones en strix.ai.
+
+## ¿Qué hace?
+
+Sus agentes ejecutan tu aplicación dinámicamente, buscan vulnerabilidades, las validan con pruebas de concepto reales y proponen correcciones. Incluye un runtime Python aislado para exploits, integración con GitHub Actions para escanear cada PR y conexión a servidores MCP que tú declares. También se distribuye como skill (`npx skills add usestrix/strix`).
+
+## ¿Cómo lo hace?
+
+Se instala con pipx, uv o pip (`strix-agent`) y necesita Docker en marcha; la primera ejecución descarga la imagen sandbox. Usa tu propia clave de LLM o un modelo local mediante `LLM_API_BASE` (Ollama, LM Studio). Los resultados se guardan en `strix_runs/`. El README exige autorización escrita y dentro del alcance acordado.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Usar un modelo local a través de `LLM_API_BASE`, documentado en el README. | Levanta Ollama y define `LLM_API_BASE` y el modelo. |
+| [GitHub MCP Server](github-mcp-server.md) | Dar al agente herramientas de GitHub con la configuración MCP de Strix (el README usa el servidor MCP de GitHub como ejemplo). | Añade el servidor a `~/.strix/mcp-servers.json`. |
+| [Semgrep](semgrep.md) | Análisis estático en CI junto a las pruebas dinámicas. (combinación por arquitectura) | Ejecuta ambos en el pipeline de PR. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.7.1 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/usestrix/strix/blob/main/README.md) · [2](https://docs.strix.ai/quickstart) · [3](https://docs.strix.ai/integrations/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las skills ayudan a operar Strix; la ruta de suscripción ChatGPT es distinta de cargar una skill en Codex; no se hereda el coste entre ambas |
 | Coste | El coste depende del proveedor o la ruta. Admite claves API, modelos locales y login ChatGPT Plus/Pro según guía; cada ruta mantiene límites y cómputo del entorno |
 | Equipo | Preparación según la ruta elegida. Docker activo; modelo con herramientas; objetivo de laboratorio autorizado |
-
-Las skills ayudan a operar Strix; la ruta de suscripción ChatGPT es distinta de cargar una skill en Codex; no se hereda el coste entre ambas
-
-## Qué puedes hacer con él
-
-Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba.
-
-## Cómo funciona
 
 Las skills ayudan a operar Strix; la ruta de suscripción ChatGPT es distinta de cargar una skill en Codex; no se hereda el coste entre ambas
 

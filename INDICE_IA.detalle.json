@@ -7495,7 +7495,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio",
    "combines_with": [
-    "antigravity-awesome-skills"
+    "claude-code",
+    "antigravity-awesome-skills",
+    "cybersecurity-skills"
    ],
    "alternatives": [],
    "repo": "https://github.com/NVIDIA/SkillSpector",
@@ -7591,7 +7593,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Escáner de seguridad para skills de agentes de IA, de NVIDIA. Licencia Apache-2.0. Es activo (~26k estrellas, v2.13.4) y forma parte de la canalización NVIDIA Verified Skills.",
+   "que_hace": "Detecta vulnerabilidades, patrones maliciosos y riesgos en skills antes de instalarlas: 71 patrones en 17 categorías, como inyección de prompts, exfiltración de datos, escalada de privilegios, cadena de suministro y agencia excesiva. Combina un análisis estático rápido con una evaluación semántica opcional por LLM. El README cita un estudio en el que el 26,1 % de 31.132 skills analizadas tenían vulnerabilidades.",
+   "como_lo_hace": "Es una herramienta Python que se instala con `uv tool install` desde el repo (con el extra `[mcp]` si quieres `skillspector mcp`) o se ejecuta con Docker (`docker run … skillspector scan ./skill --no-llm`). El análisis por LLM requiere credenciales de un proveedor (p. ej. Anthropic) en un `.env`. Avisa de que descarga e instala software de terceros con sus propias licencias.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Escanear skills desde el agente con el servidor MCP integrado (`skillspector mcp`).",
+     "orden_instalacion": "Instala SkillSpector con el extra `[mcp]` y regístralo como servidor MCP."
+    },
+    {
+     "id": "antigravity-awesome-skills",
+     "motivo": "Revisar skills de colecciones grandes antes de instalarlas. (combinación por arquitectura)",
+     "orden_instalacion": "Clona la colección y ejecuta `skillspector scan` sobre cada skill elegida."
+    },
+    {
+     "id": "cybersecurity-skills",
+     "motivo": "Revisar una biblioteca de skills ofensivas y de doble uso antes de dársela a un agente. (combinación por arquitectura)",
+     "orden_instalacion": "Escanea las skills que vayas a instalar con `--no-llm` primero."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Un escaneo limpio no garantiza que una skill sea segura.",
+   "descripcion_fuentes": [
+    "https://github.com/NVIDIA/SkillSpector/blob/main/README.md",
+    "https://docs.nvidia.com/skills/"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NVIDIA/SkillSpector",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v2.13.4 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
   },
   "agent-toolkit": {
    "name": "agent-toolkit",
@@ -29009,7 +29051,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El README documenta plugin de Claude Code; un hallazgo estático necesita revisión y no demuestra por sí solo una vulnerabilidad explotable",
    "combines_with": [
-    "defending-code-reference-harness"
+    "claude-code",
+    "security-audit-skill",
+    "strix"
    ],
    "alternatives": [
     "ast-grep"
@@ -29104,7 +29148,48 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Herramienta de análisis estático rápida y open source para buscar código, encontrar bugs y aplicar normas de seguridad. La edición comunitaria es LGPL-2.1; la empresa Semgrep vende la AppSec Platform con reglas y análisis propietarios. Es muy madura y activa (~18k estrellas, v1.185.0).",
+   "que_hace": "Busca patrones con reglas que se parecen al propio código, en más de 30 lenguajes, y se usa en local, en el editor o en CI. Tiene un registro público de reglas. El README admite que, en seguridad, la edición comunitaria pierde muchos verdaderos positivos porque solo analiza dentro de una función o archivo; el análisis entre archivos, SCA y secretos con más de 20.000 reglas propietarias es de pago.",
+   "como_lo_hace": "Está escrito en OCaml con envoltorio Python; se instala con `brew install semgrep`, `pip install semgrep` o Docker, y se ejecuta con `semgrep scan` o `semgrep ci`. El servidor MCP para escanear desde agentes vive ahora dentro del propio binario `semgrep` (el repo independiente semgrep/mcp está archivado). Las reglas propias se escriben en YAML.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Ejecutar escaneos desde el agente con el servidor MCP incluido en el binario de Semgrep.",
+     "orden_instalacion": "Instala Semgrep y registra su servidor MCP en el agente."
+    },
+    {
+     "id": "security-audit-skill",
+     "motivo": "Usar hallazgos deterministas de Semgrep como candidatos que el agente valida. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta Semgrep primero y pasa los resultados a la auditoría."
+    },
+    {
+     "id": "strix",
+     "motivo": "Combinar análisis estático en CI con pruebas dinámicas por agentes. (combinación por arquitectura)",
+     "orden_instalacion": "Pon Semgrep en cada PR y Strix en entornos de prueba."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura.",
+   "descripcion_fuentes": [
+    "https://github.com/semgrep/semgrep/blob/develop/README.md",
+    "https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp",
+    "https://semgrep.dev/docs/getting-started/quickstart"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "semgrep/semgrep",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "LGPL-2.1",
+    "primary_language": "C",
+    "latest_release": "v1.185.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "ast-grep": {
    "name": "ast-grep",
@@ -29240,7 +29325,8 @@
    "limits": "El CLI autónomo y las skills son rutas distintas; el sandbox usa dependencias adicionales y no se configura solo por clonar",
    "combines_with": [
     "claude-code",
-    "semgrep"
+    "semgrep",
+    "strix"
    ],
    "alternatives": [],
    "repo": "https://github.com/anthropics/defending-code-reference-harness",
@@ -29335,7 +29421,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Implementación de referencia de Anthropic para descubrir y corregir vulnerabilidades de forma autónoma con Claude, basada en su trabajo con equipos de seguridad tras lanzar Claude Mythos Preview. El archivo LICENSE es Apache-2.0, aunque GitHub muestra NOASSERTION. Es una referencia para adaptar, no un producto (~8k estrellas, sin releases).",
+   "que_hace": "Sigue el ciclo reconocimiento → búsqueda → triaje → informe → parche, con verificación en varias etapas para reducir falsos positivos y gestión de hallazgos (triaje, validación de la corrección, generación rápida de parches). Incluye skills de Claude Code (`/quickstart`, `/threat-model`, `/vuln-scan`, entre otras) y un arnés con agentes en contenedores. Comprueba que la prueba de concepto deja de fallar y que los tests del objetivo siguen pasando.",
+   "como_lo_hace": "Es Python (`pip install -e .`) con Docker y gVisor para aislar los agentes (`scripts/setup_sandbox.sh`). Funciona con cualquier acceso a la API de Claude (API key, token OAuth de Claude Code, Bedrock, Vertex o Azure). Las skills se pueden usar sin sandbox solo si revisas y apruebas cada uso de herramientas en Claude Code.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Las skills del repo se ejecutan en Claude Code.",
+     "orden_instalacion": "Clona el repo y usa `/quickstart` desde Claude Code."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Añadir candidatos deterministas al reconocimiento. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta Semgrep y aporta sus hallazgos a la fase de búsqueda."
+    },
+    {
+     "id": "strix",
+     "motivo": "Validar dinámicamente en un entorno de prueba los hallazgos del arnés. (combinación por arquitectura)",
+     "orden_instalacion": "Despliega el objetivo en un entorno aislado y lanza Strix contra él."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.",
+   "descripcion_fuentes": [
+    "https://github.com/anthropics/defending-code-reference-harness/blob/main/README.md",
+    "https://claude.com/blog/using-llms-to-secure-source-code",
+    "https://www.anthropic.com/glasswing"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "anthropics/defending-code-reference-harness",
+    "archived": false,
+    "pushed_at": "2026-08-06",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "swe-bench": {
    "name": "SWE-bench",
@@ -52786,7 +52912,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El formato Agent Skills es portable; el workflow completo requiere las capacidades de herramientas y subagentes indicadas por el autor",
    "combines_with": [
-    "codex"
+    "claude-code",
+    "codex",
+    "semgrep"
    ],
    "alternatives": [],
    "repo": "https://github.com/cloudflare/security-audit-skill",
@@ -52887,7 +53015,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill de auditoría de seguridad para agentes de programación, de Cloudflare. Licencia MIT. Es muy popular (~73k estrellas, sin releases) y fue el germen del arnés de descubrimiento de vulnerabilidades que Cloudflare describe en su blog.",
+   "que_hace": "Convierte al agente en auditor: orquesta agentes aislados en reconocimiento, búsqueda guiada por cobertura, validación de candidatos, salida estructurada y verificación independiente de cada hallazgo. Exige que la severidad dependa del impacto (probabilidad × impacto) y no de desviarse de una checklist. Los reemplazos importantes pasan por otro verificador independiente.",
+   "como_lo_hace": "Se instala con `npx skills add https://github.com/cloudflare/security-audit-skill` eligiendo el agente. Requiere un agente con un modelo que soporte herramientas y subagentes en paralelo. Una auditoría completa consume muchos tokens.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible con skills y subagentes en paralelo.",
+     "orden_instalacion": "Instala la skill con `npx skills add` para Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "Agente compatible mediante el instalador `skills`.",
+     "orden_instalacion": "Instala la skill seleccionando Codex."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Partir de hallazgos estáticos para orientar la búsqueda. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta Semgrep y entrega el informe al agente."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.",
+   "descripcion_fuentes": [
+    "https://github.com/cloudflare/security-audit-skill/blob/main/README.md",
+    "https://blog.cloudflare.com/build-your-own-vulnerability-harness"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "cloudflare/security-audit-skill",
+    "archived": false,
+    "pushed_at": "2026-09-14",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "ai-engineering-hub": {
    "name": "ai-engineering-hub",
@@ -71009,7 +71176,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Medir un endpoint en desarrollo; Definir un umbral reproducible de rendimiento",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El ejemplo del README aumenta usuarios; no lo ejecutes contra un servicio ajeno ni lo trates como una prueba sin impacto",
-   "combines_with": [],
+   "combines_with": [
+    "grafana",
+    "mitmproxy",
+    "claude-code"
+   ],
    "alternatives": [],
    "repo": "https://github.com/grafana/k6",
    "homepage": "https://grafana.com/oss/k6/",
@@ -71109,7 +71280,49 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Herramienta de pruebas de carga y rendimiento de Grafana Labs. Licencia AGPL-3.0. Es muy madura y activa (~32k estrellas, v2.4.0).",
+   "que_hace": "Ejecuta pruebas de carga escritas en JavaScript con el rendimiento de Go, sobre HTTP, WebSockets, gRPC, navegador y otros protocolos. Permite umbrales y checks para usarlas en CI, y tiene un amplio ecosistema de extensiones. Se integra de forma nativa con Grafana Cloud k6 y exporta resultados a distintos backends.",
+   "como_lo_hace": "Es un binario en Go: se instala con gestores de paquetes, Docker o el binario oficial, y se ejecuta con `k6 run script.js`. Los scripts usan módulos ES; el módulo de navegador permite pruebas basadas en Chromium. Hay un servidor MCP oficial (grafana/mcp-k6, no catalogado) para agentes.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "Visualizar métricas de las pruebas en Grafana o Grafana Cloud k6 (integración nativa).",
+     "orden_instalacion": "Configura una salida de resultados de k6 (p. ej. Prometheus remote write) y un panel en Grafana."
+    },
+    {
+     "id": "mitmproxy",
+     "motivo": "Convertir tráfico real capturado en un HAR y de ahí en script con el conversor HAR. (combinación por arquitectura)",
+     "orden_instalacion": "Captura con mitmproxy, exporta a HAR y conviértelo con `har-to-k6`."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Escribir y ejecutar scripts de k6 desde un agente con el servidor MCP oficial grafana/mcp-k6.",
+     "orden_instalacion": "Instala k6 y registra mcp-k6 en el agente."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. No lances pruebas de carga contra servicios ajenos.",
+   "descripcion_fuentes": [
+    "https://github.com/grafana/k6/blob/master/README.md",
+    "https://grafana.com/docs/k6/latest/set-up/install-k6/",
+    "https://grafana.com/docs/k6/latest/results-output/",
+    "https://github.com/grafana/mcp-k6"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "grafana/k6",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Go",
+    "latest_release": "v2.4.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "gsap-skills": {
    "name": "gsap-skills",
@@ -74614,7 +74827,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual",
-   "combines_with": [],
+   "combines_with": [
+    "ollama",
+    "semgrep",
+    "mitmproxy"
+   ],
    "alternatives": [],
    "repo": "https://github.com/KeygraphHQ/shannon",
    "homepage": "https://keygraph.io/",
@@ -74718,7 +74935,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Pentester autónomo con IA para aplicaciones web y APIs, de Keygraph. Licencia AGPL-3.0. Es muy activo (~52k estrellas, v3.5.1).",
+   "que_hace": "Analiza el código fuente, identifica rutas de ataque y ejecuta exploits reales para demostrar las vulnerabilidades antes de producción, con la regla «sin exploit, no hay informe». Incluye sondas experimentales (por ejemplo, para verificar el parche de la cadena RCE php2shell). Genera informes con pruebas reproducibles.",
+   "como_lo_hace": "Se lanza con `npx @keygraph/shannon@latest setup` y `start`, y requiere Docker y Docker Compose v2. Es agnóstico de proveedor (BYOK): Anthropic, OpenAI, xAI (también con suscripción), Bedrock, APIs compatibles y modelos locales vía Ollama, vLLM o LM Studio; no admite suscripciones de Claude Code. El README advierte que ejecuta exploits: solo contra entornos propios o con autorización escrita, y nunca en producción.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Ejecutar el agente con modelos locales, soportado según el README.",
+     "orden_instalacion": "Levanta Ollama y configúralo como proveedor en el asistente de Shannon."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Análisis estático previo para priorizar rutas. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta Semgrep en el repo antes de la prueba."
+    },
+    {
+     "id": "mitmproxy",
+     "motivo": "Observar el tráfico de la prueba contra el entorno de staging. (combinación por arquitectura)",
+     "orden_instalacion": "Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
+   "descripcion_fuentes": [
+    "https://github.com/KeygraphHQ/shannon/blob/main/README.md",
+    "https://github.com/KeygraphHQ/shannon/blob/main/docs/ai-providers.md"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "KeygraphHQ/shannon",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.5.1 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
   },
   "konva": {
    "name": "konva",
@@ -77178,7 +77435,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar un analizador de ELF; Encontrar material introductorio de ensamblador",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces",
-   "combines_with": [],
+   "combines_with": [
+    "rea",
+    "ghidra",
+    "frida"
+   ],
    "alternatives": [],
    "repo": "https://github.com/morluto/awesome-reverse-engineering",
    "homepage": null,
@@ -77277,7 +77538,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Lista curada de herramientas y recursos de ingeniería inversa para binarios, aplicaciones, firmware, formatos y protocolos, de @morluto (los creadores de REA). Licencia CC0-1.0. Es reciente y activa (~2k estrellas) y destaca REA en primer plano.",
+   "que_hace": "Organiza herramientas por tarea: aprendizaje, identificación de ejecutables, desensamblado y decompilación, depuración, análisis dinámico, .NET, Java/Android, memoria, firmware, protocolos y más. Cada entrada describe su propósito, marca las comerciales y advierte de proyectos archivados (p. ej. de4dot). Se presenta como una selección inicial abierta a correcciones.",
+   "como_lo_hace": "Es un README con enlaces; no requiere instalación. Las herramientas listadas tienen sus propias licencias y requisitos.",
+   "combina_con": [
+    {
+     "id": "rea",
+     "motivo": "Herramienta destacada por los mismos autores.",
+     "orden_instalacion": "Lee la sección de REA y su documentación antes de instalarlo."
+    },
+    {
+     "id": "ghidra",
+     "motivo": "Decompilador de referencia de la lista. (combinación por arquitectura)",
+     "orden_instalacion": "Empieza por la sección de desensamblado."
+    },
+    {
+     "id": "frida",
+     "motivo": "Herramienta de análisis dinámico listada, con r2frida. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta la sección de instrumentación."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Ten en cuenta que promociona REA, de los mismos autores.",
+   "descripcion_fuentes": [
+    "https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "morluto/awesome-reverse-engineering",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "CC0-1.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "rea": {
    "name": "rea",
@@ -77294,7 +77593,12 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Entender estructura de una app propia; Comparar dos versiones de un formato de laboratorio",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los backends tienen requisitos distintos; el setup propone cambios de cliente y conserva copias; no todos los formatos funcionan solo con Node",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "ghidra",
+    "jadx",
+    "codex"
+   ],
    "alternatives": [],
    "repo": "https://github.com/morluto/rea",
    "homepage": "https://rea.tools",
@@ -77398,7 +77702,52 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "REA, un servidor MCP para hacer ingeniería inversa con agentes, desde el comportamiento de una aplicación hasta binarios nativos, de @morluto. Licencia MIT. Su número de estrellas es anómalo (~462k en siete meses, desde abril de 2026), sin explicación pública [DATO NO VERIFICADO sobre su origen].",
+   "que_hace": "Registra herramientas MCP e instrucciones de flujo de trabajo para analizar instalaciones de escritorio, binarios nativos (pseudocódigo, ensamblado, cadenas, símbolos), APK Android, WASM, apps Electron y JavaScript, ejecutables PyInstaller, firmware y fallos de Linux. Valida cada resultado del lado del servidor y ofrece esquemas compactos para gastar menos contexto. También permite crear entornos de aprendizaje por refuerzo a partir de los análisis.",
+   "como_lo_hace": "Requiere Node.js y npm: `npx rea-agents setup` registra el servidor en el agente (Claude Code, Codex, Cursor y otros) con copias de seguridad de la configuración previa. El análisis nativo usa una instalación existente de Hopper, Ghidra, IDA o Kuna; los APK, JADX headless con un JDK completo; otros análisis, pwntools o WABT aportados por el usuario.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Registro automático como servidor MCP y plugin de Claude Code.",
+     "orden_instalacion": "Ejecuta `npx rea-agents setup` y elige Claude Code."
+    },
+    {
+     "id": "ghidra",
+     "motivo": "Motor de análisis nativo compatible, según el README.",
+     "orden_instalacion": "Instala Ghidra (JDK incluido) antes de configurar REA."
+    },
+    {
+     "id": "jadx",
+     "motivo": "Análisis de APK mediante JADX headless.",
+     "orden_instalacion": "Instala JADX y un JDK completo."
+    },
+    {
+     "id": "codex",
+     "motivo": "Plugin de Codex disponible.",
+     "orden_instalacion": "Ejecuta el setup y elige Codex."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Revisa qué escribe el setup en la configuración de tu agente. Úsalo solo con software propio o con autorización escrita.",
+   "descripcion_fuentes": [
+    "https://github.com/morluto/rea/blob/main/README.md",
+    "https://rea.tools/"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "morluto/rea",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "rea-agents-6.9.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "claude-animated-shorts": {
    "name": "claude-animated-shorts",
@@ -81368,7 +81717,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso",
-   "combines_with": [],
+   "combines_with": [
+    "rea",
+    "claude-code",
+    "frida"
+   ],
    "alternatives": [],
    "repo": "https://github.com/qybaihe/bla",
    "homepage": "https://bla.tools",
@@ -81470,7 +81823,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "BLA (Blind LLM Agents), servidor MCP y CLI de defensa para proteger releases de software frente a agentes de ingeniería inversa con IA, como REA. Lo crea @qybaihe. Licencia MIT. Es muy reciente (creado en octubre de 2026, ~6k estrellas, bla-agents-3.4.1).",
+   "que_hace": "Endurece artefactos JS/TS, Electron ASAR, WASM, Python, binarios nativos, SQLite, modelos GGUF/Safetensors y DEX de Android. Aplica entrelazado de lógica, cifrado de cadenas y detección en tiempo de ejecución de CDP, Node Inspector, Frida o WebDriver. Su objetivo declarado es envenenar, agotar y hacer alucinar a los agentes de análisis. El propio README marca qué defensas están verificadas y cuáles dependen de herramientas externas no probadas.",
+   "como_lo_hace": "Requiere Node.js: `npx bla-agents harden .` para endurecer un proyecto, o `npx bla-agents setup` para registrar el MCP y la skill en agentes como Claude Code, Cursor, Codex o Gemini CLI. El README pide instalar solo desde el repo o el paquete npm oficial. La ofuscación puede romper builds o depuración y no sustituye a una seguridad real.",
+   "combina_con": [
+    {
+     "id": "rea",
+     "motivo": "Probar las defensas contra el agente de análisis al que dice responder.",
+     "orden_instalacion": "Endurece una build de prueba y analízala con REA en un entorno aislado."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Flujo de defensa guiado por el agente con el MCP y la skill de BLA.",
+     "orden_instalacion": "Ejecuta `npx bla-agents setup` y elige Claude Code."
+    },
+    {
+     "id": "frida",
+     "motivo": "Verificar que el escudo de ejecución detecta la instrumentación con Frida. (combinación por arquitectura)",
+     "orden_instalacion": "Lanza la app endurecida e intenta adjuntar Frida en un entorno de pruebas."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Mide si la ofuscación compensa su coste de mantenimiento.",
+   "descripcion_fuentes": [
+    "https://github.com/qybaihe/bla/blob/main/README.md",
+    "https://bla.tools/"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "qybaihe/bla",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "bla-agents-3.4.1 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "radare2": {
    "name": "radare2",
@@ -82608,7 +83001,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Comprender una implementación propia existente; Comparar comportamiento antes de una reimplementación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El autor dice que existe adaptador Codex pero no está probado en una instalación real; MCP y análisis no certifican esa ruta de reconstrucción",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "ghidra",
+    "rea"
+   ],
    "alternatives": [],
    "repo": "https://github.com/storytold/craft-anything",
    "homepage": "",
@@ -82711,7 +83108,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Motor open source en Rust para estudiar cómo funciona un sitio web, una app o un juego y que un agente construya una versión propia en «sala limpia», del equipo ArtCraft (storytold). Licencia dual MIT o Apache-2.0. Es muy reciente (creado en octubre de 2026) y crece muy rápido (~34k estrellas, v0.6.1).",
+   "que_hace": "Inspecciona el objetivo con herramientas reales (320 herramientas, cada una disponible como comando CLI y herramienta MCP), hace que un agente de programación construya un proyecto nuevo, lo compara con el original y lo refina. Cada comprobación indica el parecido y tú apruebas lo que quede fuera de las reglas. El modo profundo usa Ghidra si está instalado, y genera imágenes y modelos 3D de forma opcional con tu clave de fal.ai.",
+   "como_lo_hace": "Tiene app de escritorio (egui), CLI y servidor MCP (`craft-anything-cli mcp`); compilarlo requiere Rust 1.97+ (`cargo install --path apps/craft-anything-cli`). Construir requiere un agente local: Claude Code primero (usa tu propio programa y sesión), adaptador de Codex sin verificar, y GitHub Copilot o Grok Build vía ACP. El README aclara que la «sala limpia» es una regla de lo que la herramienta ofrece, no un sandbox del sistema.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente constructor soportado de forma prioritaria.",
+     "orden_instalacion": "Instala Claude Code e inicia sesión antes de lanzar una construcción."
+    },
+    {
+     "id": "ghidra",
+     "motivo": "Análisis profundo de binarios cuando Ghidra está instalado.",
+     "orden_instalacion": "Instala Ghidra y activa el modo profundo."
+    },
+    {
+     "id": "rea",
+     "motivo": "Análisis más profundo del comportamiento del objetivo. (combinación por arquitectura)",
+     "orden_instalacion": "Usa REA para investigar y Craft Anything para construir."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Clonar el diseño o el código de terceros puede infringir derechos de autor, marcas o términos de servicio: úsalo solo con objetivos que puedas reproducir legalmente.",
+   "descripcion_fuentes": [
+    "https://github.com/storytold/craft-anything/blob/main/README.md",
+    "https://github.com/storytold/craft-anything/blob/main/docs/claude-code.md"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "storytold/craft-anything",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "latest_release": "v0.6.1 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "supabase": {
    "name": "supabase",
@@ -83702,7 +84139,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Las skills ayudan a operar Strix; la ruta de suscripción ChatGPT es distinta de cargar una skill en Codex; no se hereda el coste entre ambas",
-   "combines_with": [],
+   "combines_with": [
+    "ollama",
+    "github-mcp-server",
+    "semgrep"
+   ],
    "alternatives": [],
    "repo": "https://github.com/usestrix/strix",
    "homepage": "https://strix.ai",
@@ -83804,7 +84245,48 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Herramienta open source de pentesting con agentes de IA autónomos, de usestrix. Licencia Apache-2.0. Es muy activa (~76k estrellas, v1.7.1); el README distingue la versión open source de otras opciones en strix.ai.",
+   "que_hace": "Sus agentes ejecutan tu aplicación dinámicamente, buscan vulnerabilidades, las validan con pruebas de concepto reales y proponen correcciones. Incluye un runtime Python aislado para exploits, integración con GitHub Actions para escanear cada PR y conexión a servidores MCP que tú declares. También se distribuye como skill (`npx skills add usestrix/strix`).",
+   "como_lo_hace": "Se instala con pipx, uv o pip (`strix-agent`) y necesita Docker en marcha; la primera ejecución descarga la imagen sandbox. Usa tu propia clave de LLM o un modelo local mediante `LLM_API_BASE` (Ollama, LM Studio). Los resultados se guardan en `strix_runs/`. El README exige autorización escrita y dentro del alcance acordado.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Usar un modelo local a través de `LLM_API_BASE`, documentado en el README.",
+     "orden_instalacion": "Levanta Ollama y define `LLM_API_BASE` y el modelo."
+    },
+    {
+     "id": "github-mcp-server",
+     "motivo": "Dar al agente herramientas de GitHub con la configuración MCP de Strix (el README usa el servidor MCP de GitHub como ejemplo).",
+     "orden_instalacion": "Añade el servidor a `~/.strix/mcp-servers.json`."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Análisis estático en CI junto a las pruebas dinámicas. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta ambos en el pipeline de PR."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.",
+   "descripcion_fuentes": [
+    "https://github.com/usestrix/strix/blob/main/README.md",
+    "https://docs.strix.ai/quickstart",
+    "https://docs.strix.ai/integrations/mcp"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "usestrix/strix",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.7.1 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "mediabunny": {
    "name": "mediabunny",
@@ -85992,7 +86474,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una integración MCP para análisis; Comparar herramientas con backends locales",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría",
-   "combines_with": [],
+   "combines_with": [
+    "ghidramcp",
+    "rea",
+    "jadx"
+   ],
    "alternatives": [],
    "repo": "https://github.com/zhuyansen/awesome-ai-reverse-engineering",
    "homepage": "https://agentskillshub.top/best/ai-reverse-engineering/",
@@ -86091,7 +86577,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Lista de herramientas de ingeniería inversa con IA para Claude Code, Codex y otros agentes, de @zhuyansen. GitHub muestra licencia NOASSERTION. Es pequeña (~100 estrellas) y se genera a partir de agentskillshub.top, que la actualiza cada 8 horas y añade etiquetas propias como «SAFE».",
+   "que_hace": "Agrupa repos por tipo: servidores MCP para desensambladores y decompiladores (Ghidra, IDA Pro, Binary Ninja, radare2), herramientas móviles (jadx, Frida), skills de ingeniería inversa, REA y programas reconstruidos con él. Ordena por estrellas y enlaza a fichas del sitio.",
+   "como_lo_hace": "Es un README generado automáticamente; no requiere instalación. Las etiquetas de seguridad del sitio no son una auditoría independiente [DATO NO VERIFICADO].",
+   "combina_con": [
+    {
+     "id": "ghidramcp",
+     "motivo": "Servidor MCP de Ghidra que encabeza la sección de MCP.",
+     "orden_instalacion": "Revisa su README e instálalo en Ghidra."
+    },
+    {
+     "id": "rea",
+     "motivo": "Listado como herramienta destacada.",
+     "orden_instalacion": "Consulta su ficha antes de instalarlo."
+    },
+    {
+     "id": "jadx",
+     "motivo": "Herramienta móvil de la lista. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo con un servidor MCP de Android si lo necesitas."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Calidad editorial baja: lista autogenerada que redirige tráfico a un sitio externo.",
+   "descripcion_fuentes": [
+    "https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md",
+    "https://agentskillshub.top/best/ai-reverse-engineering/"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zhuyansen/awesome-ai-reverse-engineering",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "checked_at": "2026-11-15"
+   }
   },
   "easymocap": {
    "name": "EasyMocap",
@@ -87073,7 +87597,11 @@
     "collection": "pending-document-references"
    },
    "alternatives": [],
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "skillspector",
+    "promptfoo"
+   ],
    "how": "Colección comunitaria, no un producto oficial de Anthropic; los marcos citados orientan la clasificación y no certifican resultados",
    "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md",
    "stack": "Agente compatible; herramientas de la skill elegida; entorno propio de práctica",
@@ -87126,7 +87654,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Biblioteca comunitaria de skills de ciberseguridad para agentes, de @mukul975. Licencia Apache-2.0. No está afiliada a Anthropic pese a su nombre. Tiene ~36k estrellas (v1.3.0) y su último cambio es de agosto de 2026.",
+   "que_hace": "Dice reunir 818 skills en 34 dominios, mapeadas a seis marcos como MITRE ATT&CK v19.1 y ATLAS, para más de 26 plataformas de agentes [DATO NO VERIFICADO sobre la calidad de cada skill]. Cubre defensa, respuesta a incidentes, seguridad de IA (red teaming de LLM, inyección de prompts, seguridad MCP) y técnicas ofensivas y de doble uso (C2, phishing simulado, explotación). El README exige uso autorizado y legal.",
+   "como_lo_hace": "Son carpetas `SKILL.md` que se instalan con `npx skills add mukul975/Anthropic-Cybersecurity-Skills` o copiándolas al directorio de skills del agente. Algunas skills invocan herramientas externas que hay que instalar aparte.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible con el formato `SKILL.md`.",
+     "orden_instalacion": "Instala solo las skills que necesites con `npx skills add`."
+    },
+    {
+     "id": "skillspector",
+     "motivo": "Escanear las skills ofensivas antes de instalarlas. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa SkillSpector sobre cada skill elegida."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "Complementar las skills de seguridad de IA con pruebas automatizadas de red teaming de LLM. (combinación por arquitectura)",
+     "orden_instalacion": "Usa promptfoo para las pruebas y las skills como guía del agente."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Contiene técnicas ofensivas: úsalo solo contra sistemas propios o con autorización escrita.",
+   "descripcion_fuentes": [
+    "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md",
+    "https://attack.mitre.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "21-seguridad-reversing-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mukul975/Anthropic-Cybersecurity-Skills",
+    "archived": false,
+    "pushed_at": "2026-08-31",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.3.0 (2026-06-22)",
+    "checked_at": "2026-11-15"
+   }
   },
   "kimi-k2-7-code": {
    "name": "Kimi K2.7 Code",

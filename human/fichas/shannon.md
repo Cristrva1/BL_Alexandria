@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Pentester autónomo con IA para aplicaciones web y APIs, de Keygraph. Licencia AGPL-3.0. Es muy activo (~52k estrellas, v3.5.1).
+
+## ¿Qué hace?
+
+Analiza el código fuente, identifica rutas de ataque y ejecuta exploits reales para demostrar las vulnerabilidades antes de producción, con la regla «sin exploit, no hay informe». Incluye sondas experimentales (por ejemplo, para verificar el parche de la cadena RCE php2shell). Genera informes con pruebas reproducibles.
+
+## ¿Cómo lo hace?
+
+Se lanza con `npx @keygraph/shannon@latest setup` y `start`, y requiere Docker y Docker Compose v2. Es agnóstico de proveedor (BYOK): Anthropic, OpenAI, xAI (también con suscripción), Bedrock, APIs compatibles y modelos locales vía Ollama, vLLM o LM Studio; no admite suscripciones de Claude Code. El README advierte que ejecuta exploits: solo contra entornos propios o con autorización escrita, y nunca en producción.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Ejecutar el agente con modelos locales, soportado según el README. | Levanta Ollama y configúralo como proveedor en el asistente de Shannon. |
+| [Semgrep](semgrep.md) | Análisis estático previo para priorizar rutas. (combinación por arquitectura) | Ejecuta Semgrep en el repo antes de la prueba. |
+| [mitmproxy](mitmproxy.md) | Observar el tráfico de la prueba contra el entorno de staging. (combinación por arquitectura) | Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.5.1 (2026-11-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/KeygraphHQ/shannon/blob/main/README.md) · [2](https://github.com/KeygraphHQ/shannon/blob/main/docs/ai-providers.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual |
 | Coste | El coste depende del proveedor o la ruta. Admite APIs, servidores locales y ruta Codex con Plus/Pro según guía; cada opción mantiene límites; ediciones comerciales se cobran aparte |
 | Equipo | Preparación según la ruta elegida. Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local |
-
-La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual
-
-## Qué puedes hacer con él
-
-Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.
-
-## Por qué destaca
-
-Usos propuestos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada.
-
-## Cómo funciona
 
 La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual
 

@@ -91,6 +91,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una herramienta y contrasta su README, licencia y configuración antes de aceptar la etiqueta del directorio
 **Qué comprobar:** Puedes distinguir la evaluación del recopilador de la evidencia del autor
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidramcp`, `rea`, `jadx`
 
 ## `awesome-reverse-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=referencias,reference,python
@@ -120,6 +121,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara dos herramientas de análisis de tu formato por licencia y modo estático o dinámico
 **Qué comprobar:** Tienes candidatos con documentación y requisitos identificados
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `rea`, `ghidra`, `frida`
 
 ## `bla`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=defensa,app,typescript
@@ -149,6 +151,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inspecciona una protección en una copia pequeña y compara comportamiento y diferencias antes de adoptarla
 **Qué comprobar:** Puedes identificar qué transforma y qué pruebas conservarían la función original
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `rea`, `claude-code`, `frida`
 
 ## `craft-anything`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=agentes,app,rust
@@ -181,6 +184,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta doctor y prueba una consulta de análisis sobre una app pequeña propia antes de pedir reconstrucción
 **Qué comprobar:** Puedes identificar motores disponibles, proveedor y capacidades verificadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ghidra`, `rea`
 
 ## `cybersecurity-skills`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=cybersecurity,seguridad,skills,claude-code,codex,comunidad
@@ -211,6 +215,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige una skill de revisión defensiva y comprueba sus requisitos antes de usarla en un proyecto pequeño
 **Qué comprobar:** Puedes identificar entradas, herramientas, evidencias y límites del procedimiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `skillspector`, `promptfoo`
 
 ## `defending-code-reference-harness`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=security,skills,coding-agent
@@ -242,7 +247,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el repositorio en Claude Code y usa quickstart sobre el canary incluido
 **Qué comprobar:** Puedes revisar un hallazgo contra el objetivo y su evidencia de práctica
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `semgrep`
+**Combina con:** `claude-code`, `semgrep`, `strix`
 
 ## `dnspy`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c
@@ -453,6 +458,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta una prueba local con un usuario y una petición antes de aumentar carga
 **Qué comprobar:** Puedes revisar tasa, errores y latencia de esa prueba limitada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `mitmproxy`, `claude-code`
 
 ## `mitmproxy`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,app,python
@@ -573,6 +579,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza estáticamente un pequeño proyecto JavaScript propio y revisa el informe y sus rutas de archivos
 **Qué comprobar:** Puedes contrastar cada elemento con el código del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ghidra`, `jadx`, `codex`
 
 ## `rizin`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -634,7 +641,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Solicita una revisión de una app pequeña propia y separa candidatos de hallazgos validados
 **Qué comprobar:** Cada hallazgo tiene ubicación, evidencia, impacto y veredicto revisable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`
+**Combina con:** `claude-code`, `codex`, `semgrep`
 
 ## `semgrep`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,code
@@ -664,7 +671,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una regla sencilla sobre un archivo ficticio con un patrón conocido
 **Qué comprobar:** El hallazgo señala la línea y puedes comprobarlo manualmente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `defending-code-reference-harness`
+**Combina con:** `claude-code`, `security-audit-skill`, `strix`
 **Alternativas (elige una):** `ast-grep`
 
 ## `shannon`
@@ -695,6 +702,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura primero un objetivo desechable propio y revisa alcance, credenciales y límites antes de iniciar un análisis
 **Qué comprobar:** Puedes identificar exactamente qué se analizaría y dónde se guardarían hallazgos y costes
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `semgrep`, `mitmproxy`
 
 ## `skillspector`
 role=app · exec=cloud · setup=easy · mcp=True · prov=— · tags=skills,coding-agent,python
@@ -733,7 +741,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Escanea una carpeta de skill de prueba con la opción no-llm
 **Qué comprobar:** Se genera un informe que enumera comprobaciones, hallazgos y cobertura
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `antigravity-awesome-skills`
+**Combina con:** `claude-code`, `antigravity-awesome-skills`, `cybersecurity-skills`
 
 ## `strix`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agentes,agent,python
@@ -763,6 +771,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Delimita una app propia desechable y revisa proveedor y modo antes de una evaluación pequeña
 **Qué comprobar:** Los hallazgos quedan asociados al alcance y evidencias que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `github-mcp-server`, `semgrep`
 
 ## `x64dbg`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c
