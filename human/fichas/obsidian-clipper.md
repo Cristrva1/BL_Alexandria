@@ -29,6 +29,8 @@ Se instala desde la tienda de extensiones de cada navegador. Está escrito en Ty
 | [defuddle](defuddle.md) | Motor de extracción de contenido y conversión a Markdown que usa el Clipper, según su README. | Viene incluido; úsalo aparte solo si quieres la misma extracción en scripts. |
 | [claude-obsidian](claude-obsidian.md) | Capturar fuentes en la carpeta `inbox/` para que el agente las convierta en wiki. (combinación por arquitectura) | Configura una plantilla del Clipper que guarde en `inbox/`. |
 | [kepano-obsidian](kepano-obsidian.md) | Guardar los recortes dentro de una estructura de vault ya pensada. (combinación por arquitectura) | Apunta la carpeta de destino del Clipper al vault de plantilla. |
+| [obsidian-help](obsidian-help.md) | Combinación recíproca: obsidian-help lo enlaza como «La documentación del Web Clipper vive en la ayuda oficial». | Orden indicado desde obsidian-help: Lee la sección del Web Clipper antes de crear plantillas. |
+| [obsidian-minimal](obsidian-minimal.md) | Combinación recíproca: obsidian-minimal lo enlaza como «Lectura cómoda de los artículos capturados. (combinación por arquitectura)». | Orden indicado desde obsidian-minimal: Captura con el Web Clipper y lee las notas con Minimal. |
 
 **Notas:** Sin alternativas declaradas. El Interpreter envía el contenido de la página al proveedor de modelos que configures.
 

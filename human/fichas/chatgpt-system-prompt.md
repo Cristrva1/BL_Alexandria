@@ -29,6 +29,7 @@ Markdown organizado por GPT y producto, sin código ni instalación. Se consulta
 | [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md) | Corpus paralelo centrado en herramientas de IA de programación. (combinación por arquitectura) | Consulta ambos para comparar estilos de instrucciones. |
 | [promptfoo](promptfoo.md) | Probar si tus propios prompts de sistema resisten las técnicas de extracción documentadas. (combinación por arquitectura) | Configura pruebas de extracción en promptfoo. |
 | [Prompt Engineering Guide](prompt-engineering-guide.md) | Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura) | Úsalo como marco conceptual. |
+| [ChatGPT_DAN](chatgpt-dan.md) | Combinación recíproca: ChatGPT_DAN lo enlaza como «Recursos sobre protección de instrucciones de sistema frente a extracción. (combinación por arquitectura)». | Orden indicado desde ChatGPT_DAN: Consulta su guía de seguridad para endurecer tus prompts. |
 
 **Notas:** Sin alternativas declaradas.
 

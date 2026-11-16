@@ -30,7 +30,7 @@ Se autoaloja, pero las conversaciones requieren CopilotKit Intelligence: servici
 | [Composio](composio.md) | Apps conectadas integradas. | Añade la clave de Composio. |
 | [servers](servers.md) | Servidores MCP de referencia como herramientas. (combinación por arquitectura) | Añade los MCP por Dot. |
 
-**Notas:** Sin alternativas declaradas. No es autónomo del todo: depende de un servicio de CopilotKit.
+**Notas:** Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.
 
 Estado en GitHub: activo · último push 2026-11-14 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -111,6 +111,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; CopilotKit Intelligence; proveedores y conectores elegidos
 - **Etiquetas:** `asistentes` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenBot](openbot.md) | 12.5k | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
 
 ## Enlaces
 

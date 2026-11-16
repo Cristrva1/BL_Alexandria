@@ -31,6 +31,12 @@ Se instala con `npm install three` o se importa desde CDN como módulo ES. Tiene
 | [threejs-skills](threejs-skills.md) | Skills para que un agente programe escenas. | Añade las skills al agente. |
 | [meshoptimizer](meshoptimizer.md) | Optimizar geometría glTF. | Comprime los modelos antes de cargarlos. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (20). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[3dviz-pro-max](3dviz-pro-max.md) · [Anime.js](animejs.md) · [awesome-cad](awesome-cad.md) · [blender](blender.md) · [claude-animated-shorts](claude-animated-shorts.md) · [genjutsu](genjutsu.md) · [GlobalBuildingAtlas](globalbuildingatlas.md) · [lemo-opuscar](lemo-opuscar.md) · [mediapipe](mediapipe.md) · [NiceGUI](nicegui.md) · [ODM](odm.md) · [openfilm](openfilm.md) · [planck.js](planck-js.md) · [react-three-rapier](react-three-rapier.md) · [regl](regl.md) · [tfjs-models](tfjs-models.md) · [threejs-game-skills](threejs-game-skills.md) · [webgl-noise](webgl-noise.md) · [WebODM](webodm.md) · [zdog](zdog.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada r187 (2026-10-30) · licencia declarada MIT (consultado el 2026-11-15).
@@ -100,6 +106,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Babylon.js](babylonjs.md) | 26.4k | Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. |
+| [PlayCanvas Engine](playcanvas.md) | 17.3k | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
 
 ## Enlaces
 

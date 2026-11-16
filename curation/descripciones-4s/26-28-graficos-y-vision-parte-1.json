@@ -57,6 +57,12 @@
      "id": "ozz-animation",
      "motivo": "Animación esquelética en runtime. (combinación por arquitectura)",
      "orden_instalacion": "Integra ozz en el motor."
+    },
+    {
+     "id": "awesome-cad",
+     "motivo": "Combinación recíproca: awesome-cad lo enlaza como «Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-cad: Exporta a glTF y visualiza con Filament.",
+     "reciproca_de": "awesome-cad"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -127,6 +133,12 @@
      "id": "three.js",
      "motivo": "Pasar a 3D real cuando haga falta. (combinación por arquitectura)",
      "orden_instalacion": "Migra la escena a three.js."
+    },
+    {
+     "id": "scenejs",
+     "motivo": "Combinación recíproca: scenejs lo enlaza como «Animar ilustraciones pseudo-3D. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde scenejs: Anima propiedades de Zdog desde la escena.",
+     "reciproca_de": "scenejs"
     }
    ],
    "notas": "Sin alternativas declaradas. Inactivo.",
@@ -162,6 +174,18 @@
      "id": "filament",
      "motivo": "Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)",
      "orden_instalacion": "Exporta a glTF y visualiza con Filament."
+    },
+    {
+     "id": "freecad",
+     "motivo": "Combinación recíproca: FreeCAD lo enlaza como «El directorio awesome-cad incluye FreeCAD entre sus programas CAD de referencia».",
+     "orden_instalacion": "Orden indicado desde FreeCAD: Consulta awesome-cad para elegir herramientas complementarias; después instálalas junto a FreeCAD.",
+     "reciproca_de": "freecad"
+    },
+    {
+     "id": "openscad",
+     "motivo": "Combinación recíproca: OpenSCAD lo enlaza como «El directorio awesome-cad incluye OpenSCAD entre sus herramientas CAD».",
+     "orden_instalacion": "Orden indicado desde OpenSCAD: Consulta awesome-cad para bibliotecas y complementos; después úsalos con OpenSCAD.",
+     "reciproca_de": "openscad"
     }
    ],
    "notas": "Sin alternativas declaradas. Recurso, no software.",
@@ -195,6 +219,12 @@
      "id": "planck-js",
      "motivo": "Física 2D para el juego que usa los efectos. (combinación por arquitectura)",
      "orden_instalacion": "Combina en el mismo juego."
+    },
+    {
+     "id": "pencil",
+     "motivo": "Combinación recíproca: pencil lo enlaza como «Efectos de pixel art de referencia. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde pencil: Usa los sprite sheets como guía.",
+     "reciproca_de": "pencil"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -263,9 +293,15 @@
      "orden_instalacion": "Usa Planck para la física 2D."
     },
     {
-     "id": "dsh-game-studio",
-     "motivo": "Física 2D en juegos generados. (combinación por arquitectura)",
-     "orden_instalacion": "Añádelo al juego exportado."
+     "id": "three.js",
+     "motivo": "Simular física 2D y dibujar el resultado en una escena three.js (por ejemplo, con cámara ortográfica). (combinación por arquitectura)",
+     "orden_instalacion": "Actualiza las posiciones de las mallas desde el paso de simulación de Planck."
+    },
+    {
+     "id": "pixijs",
+     "motivo": "Combinación recíproca: PixiJS lo enlaza como «Planck.js simula física 2D y PixiJS puede dibujar sus cuerpos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PixiJS: Calcula la física con Planck.js; después sincroniza las posiciones de los sprites en cada fotograma.",
+     "reciproca_de": "pixijs"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -370,6 +406,18 @@
      "id": "blender",
      "motivo": "Optimizar exportaciones glTF. (combinación por arquitectura)",
      "orden_instalacion": "Pasa el glTF exportado por gltfpack."
+    },
+    {
+     "id": "ozz-animation",
+     "motivo": "Combinación recíproca: ozz-animation lo enlaza como «Optimizar las mallas de los personajes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ozz-animation: Procesa las mallas antes.",
+     "reciproca_de": "ozz-animation"
+    },
+    {
+     "id": "regl",
+     "motivo": "Combinación recíproca: regl lo enlaza como «Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde regl: Optimiza la malla antes de subirla a buffers.",
+     "reciproca_de": "regl"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -407,7 +455,7 @@
      "orden_instalacion": "Aplica sobre los fotogramas."
     }
    ],
-   "notas": "Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación); se quita face-recognition de las combinaciones (sin integración documentada).",
+   "notas": "Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación).",
    "fuentes": [
     "https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md"
    ],
@@ -418,41 +466,6 @@
     "license": "AGPL-3.0",
     "primary_language": "Python",
     "latest_release": "2.8 (2026-10-22)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "face-recognition": {
-   "que_es": "face_recognition, librería Python de reconocimiento facial sobre dlib, de @ageitgey. Licencia MIT. Tiene ~57k estrellas, pero su última release es v1.2.2 (abril de 2018) y el README aún menciona Python 2.7/3.3: está prácticamente sin mantenimiento.",
-   "que_hace": "Detecta rostros, localiza rasgos faciales y compara caras con una API de alto nivel y una CLI (`face_recognition`, `face_detection`). Trae ejemplos con webcam vía OpenCV.",
-   "como_lo_hace": "Se instala con `pip install face_recognition`, lo que requiere compilar dlib (con CMake y un compilador). En Windows no está soportado oficialmente.",
-   "combina_con": [
-    {
-     "id": "opencv",
-     "motivo": "Captura de vídeo y dibujo en los ejemplos.",
-     "orden_instalacion": "Instala `opencv-python`."
-    },
-    {
-     "id": "supervision",
-     "motivo": "Anotar y rastrear detecciones. (combinación por arquitectura)",
-     "orden_instalacion": "Convierte las cajas a Detections."
-    },
-    {
-     "id": "mediapipe",
-     "motivo": "Detección facial moderna y más ligera. (combinación por arquitectura)",
-     "orden_instalacion": "Compara antes de adoptar."
-    }
-   ],
-   "notas": "Alternativas (elige una): insightface. Se quita deep-live-cam de las combinaciones. Considera insightface o mediapipe para proyectos nuevos.",
-   "fuentes": [
-    "https://github.com/ageitgey/face_recognition/blob/master/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ageitgey/face_recognition",
-    "archived": false,
-    "pushed_at": "2026-06-25",
-    "license": "MIT",
-    "primary_language": "Python",
-    "latest_release": "v1.2.2 (2018-04-02)",
     "checked_at": "2026-11-15"
    }
   },

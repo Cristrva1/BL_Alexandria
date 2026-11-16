@@ -29,6 +29,7 @@ Se usa como paquete npm o clonando el repo; funciona en cualquier navegador. Sli
 | [Mermaid](mermaid.md) | Diagramas en las diapositivas. (combinación por arquitectura) | Añade un plugin de Mermaid. |
 | [GSAP](gsap.md) | Animaciones avanzadas. (combinación por arquitectura) | Úsalo en las diapositivas. |
 | [Claude Code](claude-code.md) | Generar HTML de presentaciones. (combinación por arquitectura) | Pide al agente el index.html. |
+| [Pandoc](pandoc.md) | Combinación recíproca: Pandoc lo enlaza como «Pandoc genera presentaciones reveal.js desde Markdown». | Orden indicado desde Pandoc: Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local. |
 
 **Notas:** Alternativas (elige una): slidev, marp.
 

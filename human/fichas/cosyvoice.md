@@ -29,6 +29,7 @@ Se instala con conda y `pip install -r requirements.txt` (los ejemplos usan espe
 | [Pipecat](pipecat.md) | TTS en agentes de voz. (combinación por arquitectura) | Expón el servidor FastAPI o gRPC. |
 | [vLLM](vllm.md) | Inferencia acelerada documentada. | Instala la versión de vLLM indicada. |
 | [FFmpeg](ffmpeg.md) | Postproceso de audio. (combinación por arquitectura) | Convierte la salida. |
+| [Wan2.2](wan2-2.md) | Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video». | Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`. |
 
 **Notas:** Alternativas (elige una): fish-speech, index-tts.
 
@@ -118,6 +119,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Fish Speech](fish-speech.md) | 33.7k | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. |
 | [IndexTTS](index-tts.md) | 25.1k | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. |
+| [F5-TTS](f5-tts.md) | 15.6k | Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI. |
 
 ## Enlaces
 

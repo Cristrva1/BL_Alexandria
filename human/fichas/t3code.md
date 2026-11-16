@@ -30,7 +30,7 @@ Se instala con `brew install --cask t3-code` o las descargas por plataforma, o s
 | [Codex CLI](codex.md) | Agente soportado. | Instala Codex y selecciónalo. |
 | [OpenCode](opencode.md) | Agente soportado. | Instala OpenCode y selecciónalo. |
 
-**Notas:** Sin alternativas declaradas; solapa con opencode-manager (solo anotado).
+**Notas:** Alternativa (elige una): opencode-manager.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.9 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -100,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba
 - **Etiquetas:** `coding-agent` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [opencode-manager](opencode-manager.md) | 1.1k | Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. |
 
 ## Enlaces
 

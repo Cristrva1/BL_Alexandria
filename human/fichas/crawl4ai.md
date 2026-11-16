@@ -28,8 +28,8 @@ Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegado
 |---|---|---|
 | [Ollama](ollama.md) | Modelo local para la extracción con LLM, sin enviar el contenido a una API de pago. | Ollama con el modelo descargado antes de lanzar la extracción. |
 | [Qdrant](qdrant.md) | El Markdown fragmentado se convierte en embeddings y se guarda en Qdrant para buscarlo en un RAG (combinación por arquitectura). | Independientes; necesitas además un modelo de embeddings. |
-| [n8n](n8n.md) | Un flujo de n8n puede llamar al servidor Docker de Crawl4AI con un nodo HTTP para rastrear páginas de forma programada (combinación por arquitectura). | Levanta el servidor Docker de Crawl4AI y luego crea el flujo. |
 | [litellm](litellm.md) | La extracción con LLM usa LiteLLM para hablar con cualquier proveedor. | Viene como dependencia; configura el proveedor con su prefijo. |
+| [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `crawl4ai_docs.py` (AsyncWebCrawler)». | Orden indicado desde tools: Instala crawl4ai en el entorno del proyecto. |
 
 **Notas:** Alternativas (elige una): jina-reader. firecrawl cumple una función parecida. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye Firecrawl, BeautifulSoup y navegador), por eso se retiró de las combinaciones. Respeta robots.txt y los términos de cada sitio.
 

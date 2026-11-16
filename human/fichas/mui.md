@@ -107,6 +107,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Ant Design](ant-design.md) | 100k | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. |
 | [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 | [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
+| [Chakra UI](chakra-ui.md) | 40.7k | Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC. |
+| [Mantine](mantine.md) | 31.9k | Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones. |
 
 ## Enlaces
 

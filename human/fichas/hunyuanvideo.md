@@ -30,7 +30,7 @@ Se instala con PyTorch para CUDA, `requirements.txt` y, opcionalmente, flash-att
 | [ComfyUI](comfyui.md) | Soporte nativo en ComfyUI. | Carga los pesos y usa el flujo de ejemplo. |
 | [WanGP](wan2gp.md) | Interfaz para GPU modestas con soporte de Hunyuan Video. | Selecciona Hunyuan Video en WanGP. |
 
-**Notas:** Alternativas (elige una): wan2-2. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.
+**Notas:** Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.
 
 Estado en GitHub: activo · último push 2026-10-08 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -106,6 +106,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Wan2.2](wan2-2.md) | 18.7k | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | 4.6k | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Enlaces
 

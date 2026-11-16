@@ -27,8 +27,8 @@ Requiere Node 22+, Python 3, FFmpeg y Google Chrome. Opcionalmente usa una clave
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [GSAP](gsap.md) | Biblioteca de animación incluida. | Viene incluida; revisa su licencia. |
-| [HyperFrames](hyperframes.md) | Mismo enfoque HTML→vídeo y misma licencia. (combinación por arquitectura) | Úsalo para pulir composiciones. |
 | [Claude Code](claude-code.md) | Anfitrión documentado. | Instala la skill. |
+| [FFmpeg](ffmpeg.md) | FFmpeg es un requisito declarado en el README para renderizar y comparar los vídeos. | Instala FFmpeg (junto a Node 22+, Python 3 y Chrome) antes de la skill. |
 
 **Notas:** Sin alternativas declaradas.
 

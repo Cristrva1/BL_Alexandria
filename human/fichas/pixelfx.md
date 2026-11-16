@@ -29,6 +29,7 @@ Se instala con `npm i github:patch-gg/pixelfx` o copiando `src/core` y los efect
 | [Claude Code](claude-code.md) | Skill para generar efectos nuevos. | Instala la skill del repo. |
 | [threejs-game-skills](threejs-game-skills.md) | Efectos para juegos de navegador. (combinación por arquitectura) | Integra los sprite sheets en el juego. |
 | [planck.js](planck-js.md) | Física 2D para el juego que usa los efectos. (combinación por arquitectura) | Combina en el mismo juego. |
+| [pencil](pencil.md) | Combinación recíproca: pencil lo enlaza como «Efectos de pixel art de referencia. (combinación por arquitectura)». | Orden indicado desde pencil: Usa los sprite sheets como guía. |
 
 **Notas:** Sin alternativas declaradas.
 

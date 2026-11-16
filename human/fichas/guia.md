@@ -18,7 +18,7 @@ Guía (histórica), entrada interna del hub BL_Alexandria, no un proyecto extern
 
 ## ¿Qué hace?
 
-`Guia.md` reúne las 635 fichas en un solo documento agrupado por categoría y subcategoría, con leyenda de etiquetas y mapa de categorías, para leer de corrido o buscar con Ctrl+F. Sirve como historial editorial y referencia de redacción, no como herramienta para otros proyectos.
+`Guia.md` reúne todas las fichas en un solo documento agrupado por categoría y subcategoría, con leyenda de etiquetas y mapa de categorías, para leer de corrido o buscar con Ctrl+F. Sirve como historial editorial y referencia de redacción, no como herramienta para otros proyectos.
 
 ## ¿Cómo lo hace?
 

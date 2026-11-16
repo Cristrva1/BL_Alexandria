@@ -5,7 +5,7 @@
  "repos": {
   "guia": {
    "que_es": "Guía (histórica), entrada interna del hub BL_Alexandria, no un proyecto externo. Corresponde a la guía editorial original de la biblioteca; su texto escrito a mano se incorporó a las fichas, y hoy `Guia.md` se genera automáticamente desde el índice. No tiene repositorio en GitHub ni licencia propia.",
-   "que_hace": "`Guia.md` reúne las 635 fichas en un solo documento agrupado por categoría y subcategoría, con leyenda de etiquetas y mapa de categorías, para leer de corrido o buscar con Ctrl+F. Sirve como historial editorial y referencia de redacción, no como herramienta para otros proyectos.",
+   "que_hace": "`Guia.md` reúne todas las fichas en un solo documento agrupado por categoría y subcategoría, con leyenda de etiquetas y mapa de categorías, para leer de corrido o buscar con Ctrl+F. Sirve como historial editorial y referencia de redacción, no como herramienta para otros proyectos.",
    "como_lo_hace": "Lo regenera `uv run repo-intelligence guide build` a partir de `INDICE_IA.json` e `INDICE_IA.detalle.json`. No se edita a mano. AGENTS.md pide a los agentes no leer `Guia.md` entero (es para humanos) y consultar el índice. No se instala: forma parte de este repositorio.",
    "combina_con": [
     {
@@ -21,8 +21,8 @@
    ]
   },
   "tools": {
-   "que_es": "tools, entrada interna del hub BL_Alexandria que representa sus utilidades auxiliares de mantenimiento, no un proyecto externo. No tiene repositorio en GitHub ni licencia propia. En el repositorio actual estas utilidades están en `src/repo_intelligence/tools/` y `tools_check/`; no hay una carpeta `tools/` en la raíz.",
-   "que_hace": "Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `tools_check/` verifica las guías heredadas (`check_guias.py`), reconstruye `Guia.md` desde ellas (`mirror_to_guia.py`) y reconcilia los JSON con su contenido (`reconcile_json.py`).",
+   "que_es": "tools, entrada interna del hub BL_Alexandria que representa sus utilidades auxiliares de mantenimiento, no un proyecto externo. No tiene repositorio en GitHub ni licencia propia. En el repositorio actual estas utilidades están en `src/repo_intelligence/tools/`; no hay una carpeta `tools/` en la raíz.",
+   "que_hace": "Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `Guia.md` y las fichas los genera `repo-intelligence guide build` desde el índice; las guías heredadas escritas a mano y sus scripts de verificación se retiraron el 2026-11-16.",
    "como_lo_hace": "Son scripts Python del propio repo que se ejecutan con `uv run` dentro del entorno del proyecto. Las herramientas externas (crawl4ai, markitdown, repomix, gitnexus) deben estar instaladas para que funcionen los envoltorios correspondientes. Sirven para mantener la biblioteca, no como dependencia de otros proyectos.",
    "combina_con": [
     {
@@ -44,12 +44,17 @@
      "id": "gitnexus",
      "motivo": "Envoltorio `gitnexus_runner.py`.",
      "orden_instalacion": "Instala la CLI gitnexus."
+    },
+    {
+     "id": "guia",
+     "motivo": "Combinación recíproca: Guía (histórica) lo enlaza como «Utilidades internas del hub que alimentan y verifican el índice del que se genera la guía».",
+     "orden_instalacion": "Orden indicado desde Guía (histórica): Ambas vienen con el repositorio; no requieren instalación.",
+     "reciproca_de": "guia"
     }
    ],
    "notas": "Entrada local (categoría 0), excluida del recuento de cobertura. La ficha describía una carpeta `tools/` que ya no existe; se documentan las ubicaciones reales.",
    "fuentes": [
-    "https://github.com/Cristrva1/BL_Alexandria/tree/main/src/repo_intelligence/tools",
-    "https://github.com/Cristrva1/BL_Alexandria/tree/main/tools_check"
+    "https://github.com/Cristrva1/BL_Alexandria/tree/main/src/repo_intelligence/tools"
    ]
   }
  }

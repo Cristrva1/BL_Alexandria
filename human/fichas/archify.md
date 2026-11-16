@@ -30,7 +30,7 @@ Funciona con Cursor, Claude Code, Codex CLI y OpenCode; en Claude.ai se sube `ar
 | [OpenCode](opencode.md) | Agente soportado. | Instala la skill. |
 | [Mermaid](mermaid.md) | Diagramas textuales para documentación estática. (combinación por arquitectura) | Usa Mermaid en docs y Archify para explorar. |
 
-**Notas:** Sin alternativas declaradas. Tiene un grupo funcional con diagram-design.
+**Notas:** Alternativa (elige una): diagram-design.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.0 (2026-10-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -99,6 +99,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente con archivos y ejecución; idea o repositorio de prueba
 - **Etiquetas:** `diagramas` `agent-skills` `ai-agents` `architecture-diagram` `claude-code` `claude-skills` `codex` `coding-agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [diagram-design](diagram-design.md) | 67.2k | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. |
 
 ## Enlaces
 

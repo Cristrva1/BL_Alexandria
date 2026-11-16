@@ -29,6 +29,7 @@ Requiere Python 3.10+ y se instala con `pip install supervision`. Usar Roboflow 
 | [Ultralytics YOLO](ultralytics.md) | Conector nativo `from_ultralytics`. | Instala ambos y convierte los resultados. |
 | [OpenCV](opencv.md) | Lectura y escritura de vídeo. | Instala `opencv-python`. |
 | [SAM 3](sam3.md) | Visualizar máscaras de segmentación. (combinación por arquitectura) | Convierte las máscaras. |
+| [Label Studio](label-studio.md) | Combinación recíproca: Label Studio lo enlaza como «Revisar y convertir anotaciones. (combinación por arquitectura)». | Orden indicado desde Label Studio: Carga el dataset exportado. |
 
 **Notas:** Sin alternativas declaradas.
 

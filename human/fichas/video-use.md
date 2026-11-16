@@ -29,6 +29,7 @@ Se instala con `uv sync` o `pip install -e .`, más FFmpeg (obligatorio) y yt-dl
 | [FFmpeg](ffmpeg.md) | Motor de edición. | Instala FFmpeg. |
 | [Claude Code](claude-code.md) | Agente principal documentado. | Registra la skill en Claude Code. |
 | [hermes-agent](hermes-agent.md) | Agente compatible. | Registra la skill en Hermes. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | Combinación recíproca: ElevenLabs (SDK de Python) lo enlaza como «video-use pide una clave de ElevenLabs para la voz; el SDK sirve para elegir y probar voces o generar pistas fuera del flujo. (combinación por arquitectura)». | Orden indicado desde ElevenLabs (SDK de Python): Usa la misma clave en ambos y prueba la voz antes de editar. |
 
 **Notas:** Alternativas (elige una): remotion-superpowers. Depende de ElevenLabs (servicio de pago) para transcribir.
 
