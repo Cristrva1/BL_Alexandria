@@ -65,6 +65,68 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `langgraphjs`, `deepagents`
 
+## `appwrite`
+role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=backend,self-hosted,docker,mcp
+
+**Qué es:** Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.
+**Stack:** TypeScript, Cargo.toml, Dockerfile, composer.json, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/appwrite/appwrite
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/appwrite/appwrite/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Lanza Appwrite con el `docker run` del README, crea un proyecto y un usuario de prueba.
+**Qué comprobar:** El panel muestra el proyecto con autenticación y base de datos listas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `coolify`
+**Alternativas (elige una):** `supabase`
+
+## `caddy`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=web,go,self-hosted,server
+
+**Qué es:** Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/caddyserver/caddy
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/caddyserver/caddy/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala Caddy y ejecuta `caddy reverse-proxy --from localhost:8443 --to localhost:8080` sobre un servicio local.
+**Qué comprobar:** Caddy sirve el servicio por HTTPS con un certificado local automático.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `uptime-kuma`, `headscale`, `frp`, `synapse`, `wg-easy`
+**Alternativas (elige una):** `traefik`
+
 ## `casaos`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,go
 
@@ -222,7 +284,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes abrir el sitio y reconocer su servicio y registros
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supabase`, `activepieces`, `windmill`, `freedomain`
-**Alternativas (elige una):** `casaos`
+**Alternativas (elige una):** `casaos`, `dokploy`
+
+## `dokploy`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=self-hosted,paas,typescript,docker
+
+**Qué es:** Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Dokploy/dokploy
+
+**Instalación** [+]:
+
+```
+curl -sSL https://dokploy.com/install.sh | bash
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web; levantar con un clic plantillas como Plausible o Cal.com
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** En un VPS de pruebas ejecuta el instalador oficial (`curl -sSL https://dokploy.com/install.sh | bash`) y despliega una aplicación de ejemplo.
+**Qué comprobar:** La aplicación queda accesible a través de Traefik desde el panel.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `traefik`, `uptime-kuma`, `supabase`
+**Alternativas (elige una):** `coolify`
 
 ## `e2b`
 role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=agents,security,python
@@ -315,6 +408,67 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `coolify`, `free-for-dev`, `masterdnsvpn`
 
+## `frp`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=network,go,self-hosted,cli
+
+**Qué es:** Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/fatedier/frp
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/fatedier/frp/blob/dev/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README.
+**Qué comprobar:** Puedes conectar por SSH al equipo local a través del puerto del VPS.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `caddy`, `uptime-kuma`, `home-assistant`
+
+## `headscale`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=network,go,self-hosted,vpn
+
+**Qué es:** Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/juanfont/headscale
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/juanfont/headscale/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala Headscale en un servidor siguiendo su documentación, crea un usuario y registra un cliente de Tailscale con `--login-server`.
+**Qué comprobar:** El dispositivo aparece en `headscale nodes list` y alcanza a otros nodos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `caddy`, `grafana`, `uptime-kuma`
+**Alternativas (elige una):** `netbird`
+
 ## `masterdnsvpn`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
 
@@ -376,6 +530,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openclaw`, `hermes-agent`, `deepagents`, `nemotron`
 **Alternativas (elige una):** `sandbox`
 
+## `netbird`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=network,go,self-hosted,vpn
+
+**Qué es:** Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/netbirdio/netbird
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/netbirdio/netbird/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Sigue la guía de autoalojamiento rápido de NetBird en un VPS y conecta dos dispositivos con el cliente.
+**Qué comprobar:** Ambos dispositivos aparecen en el panel y se alcanzan por la red privada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `uptime-kuma`, `coolify`
+**Alternativas (elige una):** `headscale`
+
 ## `nodeterm`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=infra,adhd,agent-orchestration,ai-agents,canvas,claude-code,codex,coding-agents
 
@@ -405,6 +590,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes ver sesión, terminal y contexto de proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
+
+## `portainer`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=containers,go,self-hosted,docker
+
+**Qué es:** Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition).
+**Stack:** TypeScript, go.mod, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/portainer/portainer
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/portainer/portainer/blob/release/2.45/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales.
+**Qué comprobar:** El panel lista los contenedores con su estado y registros.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `traefik`, `uptime-kuma`, `wg-easy`
 
 ## `sandbox`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=agents,automation,python,docker
@@ -501,3 +716,95 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar tablas y acceso sin tocar datos de producción
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pgvector`, `activepieces`, `coolify`
+**Alternativas (elige una):** `appwrite`
+
+## `traefik`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=network,go,self-hosted,server
+
+**Qué es:** Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/traefik/traefik
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/traefik/traefik/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta.
+**Qué comprobar:** El servicio responde en el dominio configurado sin reiniciar Traefik.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `dokploy`, `crowdsec`, `grafana`, `portainer`
+**Alternativas (elige una):** `caddy`
+
+## `uptime-kuma`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=monitoring,self-hosted,javascript,docker
+
+**Qué es:** Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.
+**Stack:** JavaScript, compose.yaml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/louislam/uptime-kuma
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/louislam/uptime-kuma/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación.
+**Qué comprobar:** El panel muestra el monitor en verde y el historial de tiempos de respuesta.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `coolify`, `caddy`
+
+## `wg-easy`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=network,self-hosted,docker,vpn
+
+**Qué es:** La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/wg-easy/wg-easy
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/wg-easy/wg-easy/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard.
+**Qué comprobar:** El cliente se conecta y aparece activo en el panel.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `caddy`, `pi-hole`, `portainer`

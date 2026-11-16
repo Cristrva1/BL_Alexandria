@@ -1,23 +1,25 @@
-"""Legacy guides, plans and n8n infrastructure removed (2026-11-16)."""
-import subprocess
-import sys
+"""Legacy guides, plans, n8n infrastructure and guide tooling removed (2026-11-16)."""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-GONE = ["guias/guia1.md", "guias/guia3.md", "Plan.a.md", "PLAN_ENRIQUECER_GUIAS.md",
-        "docs/superpowers/specs/2026-08-23-bl-alexandria-mapa-completo.md", "infra/n8n/docker-compose.yml",
-        "tools_check/mirror_to_guia.py"]
+GONE = ["guias", "Plan.a.md", "PLAN_ENRIQUECER_GUIAS.md",
+        "docs/superpowers/specs/2026-08-23-bl-alexandria-mapa-completo.md", "infra/n8n",
+        "tools_check", "scripts/expand_guia_scan_tables.py"]
+NEEDLES = ["guias/", "guia1.md", "guia2.md", "guia3.md", "guia4.md", "guia5.md", "Plan.a.md", "PLAN_ENRIQUECER_GUIAS",
+           "mirror_to_guia", "check_guias", "reconcile_json", "expand_guia_scan_tables", "tools_check", "infra/n8n"]
 
 
-def test_legacy_files_are_gone_and_unreferenced():
+def test_legacy_files_are_gone():
     for rel in GONE:
         assert not (ROOT / rel).exists(), rel
-    for rel in ["README.md", "AGENTS.md", "Guia.md", "scripts/expand_guia_scan_tables.py", "INDICE_IA.detalle.json"]:
+
+
+def test_nothing_references_removed_files():
+    files = ["README.md", "AGENTS.md", "Guia.md", "INDICE_IA.json", "INDICE_IA.detalle.json", "human/fichas/tools.md",
+             "curation/descripciones-4s/00-hub-local.json", "pyproject.toml"]
+    files += [str(p.relative_to(ROOT)) for p in (ROOT / "src").rglob("*.py")]
+    files += [str(p.relative_to(ROOT)) for p in (ROOT / "tests").glob("*.py") if p.name != Path(__file__).name]
+    for rel in files:
         text = (ROOT / rel).read_text(encoding="utf8")
-        for needle in ["guia1.md", "guia3.md", "Plan.a.md", "PLAN_ENRIQUECER_GUIAS", "mirror_to_guia", "infra/n8n"]:
+        for needle in NEEDLES:
             assert needle not in text, (rel, needle)
-
-
-def test_remaining_legacy_guides_have_no_broken_anchors():
-    result = subprocess.run([sys.executable, "tools_check/check_guias.py"], cwd=ROOT, capture_output=True, text=True)
-    assert result.returncode == 0, result.stdout[-2000:]

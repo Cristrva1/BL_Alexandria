@@ -35,9 +35,9 @@ Python 3.10+ (`pip install openai-agents`), con extras opcionales para voz (`[vo
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OpenAI Cookbook](openai-cookbook.md) · [PageIndex](pageindex.md)
+[OpenAI Cookbook](openai-cookbook.md) · [PageIndex](pageindex.md) · [Temporal](temporal.md)
 
 **Notas:** Alternativas (elige una): pydantic-ai, langgraph, smolagents, deepagents, adk-python. Las trazas están activadas por defecto y van al panel de OpenAI; se desactivan con `OPENAI_AGENTS_DISABLE_TRACING=1`.
 

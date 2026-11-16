@@ -30,6 +30,7 @@ Requiere Python 3.11+ y se instala con `pip install scrapy`; se crea un proyecto
 | [Scrapling](scrapling.md) | Parser adaptativo para selectores frágiles. (combinación por arquitectura) | Usa Scrapling en los callbacks de tus spiders. |
 | [defuddle](defuddle.md) | Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura) | Procesa el HTML guardado con Defuddle. |
 | [awesome-web-scraping](awesome-web-scraping.md) | Combinación recíproca: awesome-web-scraping lo enlaza como «Framework de referencia en la sección de Python. (combinación por arquitectura)». | Orden indicado desde awesome-web-scraping: Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico. |
+| [FlareSolverr](flaresolverr.md) | Combinación recíproca: FlareSolverr lo enlaza como «Un spider de Scrapy puede pedir a FlareSolverr la página o las cookies de un sitio autorizado y continuar con peticiones normales (combinación por arquitectura)». | Orden indicado desde FlareSolverr: Despliega FlareSolverr; después llama a su API desde el spider o un middleware. |
 
 **Notas:** Sin alternativas declaradas. Se quita la combinación con crawlee-python por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

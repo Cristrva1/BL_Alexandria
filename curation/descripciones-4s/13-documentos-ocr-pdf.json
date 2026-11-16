@@ -144,6 +144,12 @@
      "id": "pandoc",
      "motivo": "Publicar el Markdown resultante en DOCX, EPUB o LaTeX (combinación por arquitectura).",
      "orden_instalacion": "Encadénalos en un script."
+    },
+    {
+     "id": "surya",
+     "motivo": "Combinación recíproca: Surya lo enlaza como «marker, del mismo equipo, usa los modelos de Surya para convertir PDF a Markdown».",
+     "orden_instalacion": "Orden indicado desde Surya: Instala marker; usará Surya para OCR y layout.",
+     "reciproca_de": "surya"
     }
    ],
    "notas": "Alternativas (elige una): docling, mineru, pdf-craft. Se retiró llama-index por no estar documentado en el README actual.",
@@ -341,6 +347,18 @@
      "id": "unstructured",
      "motivo": "Dependencia de unstructured para OCR de imágenes y PDF.",
      "orden_instalacion": "Instálalo antes de procesar escaneados."
+    },
+    {
+     "id": "xberg",
+     "motivo": "Combinación recíproca: Xberg (antes Kreuzberg) lo enlaza como «Tesseract es uno de los motores de OCR que Xberg usa bajo demanda para documentos escaneados».",
+     "orden_instalacion": "Orden indicado desde Xberg (antes Kreuzberg): Instala Tesseract y sus idiomas; después activa el backend en la configuración.",
+     "reciproca_de": "xberg"
+    },
+    {
+     "id": "tika",
+     "motivo": "Combinación recíproca: Apache Tika lo enlaza como «Tika usa Tesseract como motor de OCR para imágenes y PDF escaneados».",
+     "orden_instalacion": "Orden indicado desde Apache Tika: Instala Tesseract y sus idiomas en el sistema o la imagen; después activa el parser de OCR.",
+     "reciproca_de": "tika"
     }
    ],
    "notas": "Alternativa (elige una): paddleocr. Para diseños complejos o escritura a mano rinde peor que los modelos VLM.",

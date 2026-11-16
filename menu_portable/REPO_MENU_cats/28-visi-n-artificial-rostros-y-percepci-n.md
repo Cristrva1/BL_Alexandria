@@ -36,6 +36,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pytorch`, `wham`, `blender`
 
+## `cvat`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=annotation,vision,dataset,self-hosted
+
+**Qué es:** Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.
+**Stack:** Python, Dockerfile, docker-compose.yml, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/cvat-ai/cvat
+
+**Instalación** [+]:
+
+```
+docker compose up -d
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: etiquetar un dataset de detección o segmentación con varias personas; preanotar vídeos con un modelo y corregir solo los errores
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Clona el repositorio y ejecuta `docker compose up -d`; crea un usuario y una tarea con unas pocas imágenes.
+**Qué comprobar:** Puedes dibujar cajas o polígonos y exportar las anotaciones en formato COCO o YOLO.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `detectron2`, `mmpose`, `ultralytics`
+**Alternativas (elige una):** `label-studio`
+
 ## `deep-live-cam`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
 
@@ -66,6 +97,96 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `insightface`, `obs-studio`, `codeformer`
 **Alternativas (elige una):** `facefusion`
+
+## `deepface`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=face,python,vision,biometrics
+
+**Qué es:** Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face.
+**Stack:** Python, Dockerfile, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/serengil/deepface
+
+**Instalación** [+]:
+
+```
+pip install deepface
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: verificar si dos fotos propias o autorizadas corresponden a la misma persona; buscar una cara dentro de una carpeta de imágenes con consentimiento de las personas
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install deepface` y ejecuta `DeepFace.verify` con dos imágenes tuyas.
+**Qué comprobar:** Obtienes un diccionario con `verified`, la distancia y el umbral usado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `opencv`, `dlib`, `mediapipe`, `ultralytics`, `insightface`
+
+## `detectron2`
+role=library · exec=local · setup=hard · mcp=False · prov=— · tags=vision,pytorch,detection,segmentation
+
+**Qué es:** Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.
+**Stack:** Python, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/facebookresearch/detectron2
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/facebookresearch/detectron2/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un detector o segmentador sobre un conjunto de imágenes propio; usar modelos preentrenados de detección como base para investigación
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue la guía de instalación oficial (requiere PyTorch y compilar extensiones) y ejecuta la demo con un modelo del zoo sobre una imagen.
+**Qué comprobar:** Obtienes la imagen con cajas y máscaras de los objetos detectados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `cvat`, `opencv`
+
+## `dlib`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,cpp,python,face
+
+**Qué es:** Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización.
+**Stack:** C++, CMakeLists.txt, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/davisking/dlib
+
+**Instalación** [+]:
+
+```
+pip install dlib
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: detectar caras y sus puntos de referencia en fotos para alinear o recortar; usar un detector rápido en CPU dentro de una aplicación C++
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install dlib` (necesita CMake y compilador) y ejecuta el ejemplo de detección facial de la carpeta python_examples.
+**Qué comprobar:** Obtienes las coordenadas de las caras detectadas en la imagen.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `deepface`, `opencv`, `claude-code`
 
 ## `easymocap`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
@@ -156,7 +277,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta detección sobre una imagen propia y revisa resultados antes de usar comparaciones
 **Qué comprobar:** Puedes identificar modelo, backend y caras detectadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `facefusion`, `deep-live-cam`, `liveportrait`
+**Combina con:** `facefusion`, `deep-live-cam`, `liveportrait`, `deepface`
 
 ## `kornia`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=vision,library,python
@@ -218,6 +339,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes exportar anotaciones y comprobar el formato
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ultralytics`, `sam3`, `supervision`
+**Alternativas (elige una):** `cvat`
 
 ## `liveportrait`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,vision,python
@@ -282,7 +404,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige una tarea como landmarks de manos y revisa sus puntos en una muestra
 **Qué comprobar:** Puedes distinguir tarea, modelo y SDK
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `opencv`, `tfjs-models`, `three.js`, `easymocap`, `tensorflow`
+**Combina con:** `opencv`, `tfjs-models`, `three.js`, `easymocap`, `tensorflow`, `deepface`
 
 ## `mmpose`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
@@ -312,7 +434,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta una demo de pose y revisa articulaciones y confianza en una imagen conocida
 **Qué comprobar:** Puedes identificar configuración y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `opencv`, `easymocap`
+**Combina con:** `pytorch`, `opencv`, `easymocap`, `cvat`
 
 ## `opencv`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,image,cpp,python

@@ -117,6 +117,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Appsmith](appsmith.md) | 41.3k | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. |
 | [Budibase](budibase.md) | 28.4k | Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. |
+| [Grist](grist-core.md) | 12.1k | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite. |
+| [Baserow](baserow.md) | 6.3k | Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first. |
+| [Teable](teable.md) | 22k | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA. |
 
 ## Enlaces
 

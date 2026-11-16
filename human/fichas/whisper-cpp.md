@@ -35,9 +35,9 @@ Se compila con CMake o make y se descargan modelos ggml (por ejemplo `make -j la
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[rnnoise](rnnoise.md)
+[Audacity](audacity.md) · [rnnoise](rnnoise.md) · [Shotcut](shotcut.md)
 
 **Notas:** Alternativas (elige una): faster-whisper, whisper.
 

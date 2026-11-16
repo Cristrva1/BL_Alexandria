@@ -31,6 +31,7 @@ Se instala con `pip install tensorflow` (o `tensorflow-cpu`) y tiene imágenes D
 | [marimo](marimo.md) | Experimentación en notebooks reactivos. (combinación por arquitectura) | Instala marimo en el mismo entorno. |
 | [JupyterLab](jupyterlab.md) | Combinación recíproca: JupyterLab lo enlaza como «Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura)». | Orden indicado desde JupyterLab: Instala TensorFlow en el entorno del kernel. |
 | [tfjs-models](tfjs-models.md) | Combinación recíproca: tfjs-models lo enlaza como «Entrenar en Python y convertir a TF.js. (combinación por arquitectura)». | Orden indicado desde tfjs-models: Convierte con tensorflowjs_converter. |
+| [Keras 3](keras.md) | Combinación recíproca: Keras 3 lo enlaza como «TensorFlow es uno de los backends de Keras 3». | Orden indicado desde Keras 3: Instala TensorFlow; después define KERAS_BACKEND=tensorflow. |
 
 **Notas:** Alternativa (elige una): pytorch.
 
@@ -115,6 +116,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [PyTorch](pytorch.md) | 106k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
+| [JAX](jax.md) | 36.6k | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
 
 ## Enlaces
 

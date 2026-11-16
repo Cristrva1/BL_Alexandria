@@ -120,6 +120,12 @@
      "motivo": "Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado para GPU NVIDIA».",
      "orden_instalacion": "Orden indicado desde DeepSeek-V3: Construye el motor con TensorRT-LLM.",
      "reciproca_de": "deepseek-v3"
+    },
+    {
+     "id": "gpustack",
+     "motivo": "Combinación recíproca: GPUStack lo enlaza como «GPUStack configura TensorRT-LLM en GPU NVIDIA».",
+     "orden_instalacion": "Orden indicado desde GPUStack: Elige TensorRT-LLM como motor en el despliegue.",
+     "reciproca_de": "gpustack"
     }
    ],
    "notas": "Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.",
@@ -250,6 +256,12 @@
      "motivo": "Combinación recíproca: qlib lo enlaza como «El recorder de Qlib se basa en MLflow».",
      "orden_instalacion": "Orden indicado desde qlib: Configura el URI de MLflow para los experimentos.",
      "reciproca_de": "qlib"
+    },
+    {
+     "id": "airflow",
+     "motivo": "Combinación recíproca: Apache Airflow lo enlaza como «Airflow programa los pasos de entrenamiento y evaluación y MLflow registra parámetros, métricas y modelos de cada ejecución (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Apache Airflow: Servidor de MLflow primero; después tareas de Airflow que usen su cliente con MLFLOW_TRACKING_URI.",
+     "reciproca_de": "airflow"
     }
    ],
    "notas": "Alternativas (elige una): langfuse.",

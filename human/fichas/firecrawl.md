@@ -32,9 +32,9 @@ Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker seg
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ai-engineering-hub](ai-engineering-hub.md) · [Awesome LLM Apps](awesome-llm-apps.md) · [awesome-web-scraping](awesome-web-scraping.md) · [chatwoot](chatwoot.md) · [deer-flow](deer-flow.md) · [onyx](onyx.md) · [OpenBot](openbot.md) · [PDF Inspector](pdf-inspector.md) · [public-apis](public-apis.md) · [social-media-agent](social-media-agent.md) · [Stagehand](stagehand.md)
+[ai-engineering-hub](ai-engineering-hub.md) · [Awesome LLM Apps](awesome-llm-apps.md) · [awesome-web-scraping](awesome-web-scraping.md) · [CAMEL](camel.md) · [chatwoot](chatwoot.md) · [deer-flow](deer-flow.md) · [Meilisearch](meilisearch.md) · [onyx](onyx.md) · [OpenBot](openbot.md) · [PDF Inspector](pdf-inspector.md) · [public-apis](public-apis.md) · [social-media-agent](social-media-agent.md) · [Stagehand](stagehand.md)
 
 **Notas:** Alternativas (elige una): jina-reader. Se quita la combinación con crawl4ai por solaparse como crawler. Coincidencia de nombre: el producto «Alexandria» de Firecrawl no tiene relación con esta biblioteca. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

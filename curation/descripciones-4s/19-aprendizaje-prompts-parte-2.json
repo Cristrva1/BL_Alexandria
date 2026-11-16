@@ -28,6 +28,12 @@
      "motivo": "Combinación recíproca: llm.c lo enlaza como «Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde llm.c: Estudia primero la versión en PyTorch.",
      "reciproca_de": "llm.c"
+    },
+    {
+     "id": "annotated-dl-papers",
+     "motivo": "Combinación recíproca: labml.ai Annotated Paper Implementations lo enlaza como «LLMs from Scratch construye un modelo de lenguaje completo y estas notas profundizan en piezas concretas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde labml.ai Annotated Paper Implementations: Sigue el libro; consulta la implementación anotada de cada componente.",
+     "reciproca_de": "annotated-dl-papers"
     }
    ],
    "notas": "Alternativas (elige una): llm-course.",

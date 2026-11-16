@@ -109,6 +109,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `privacidad` `server` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Pi-hole](pi-hole.md) | 62k | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. |
+
 ## Enlaces
 
 - 🐙 GitHub: [AdguardTeam/AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)

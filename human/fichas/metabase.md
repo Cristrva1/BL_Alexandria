@@ -32,9 +32,9 @@ Se ejecuta como JAR (Java) o con Docker y necesita una base de aplicación (Post
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Appsmith](appsmith.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [ERPNext](erpnext.md) · [Matomo](matomo.md) · [NocoDB](nocodb.md) · [Odoo](odoo.md) · [Umami](umami.md)
+[Appsmith](appsmith.md) · [Baserow](baserow.md) · [ClickHouse](clickhouse.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [ERPNext](erpnext.md) · [Matomo](matomo.md) · [NocoDB](nocodb.md) · [Odoo](odoo.md) · [Teable](teable.md) · [Umami](umami.md)
 
 **Notas:** Alternativas (elige una): superset, redash.
 
