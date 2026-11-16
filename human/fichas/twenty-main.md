@@ -106,6 +106,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [EspoCRM](espocrm.md) | 3.6k | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. |
+| [SuiteCRM](suitecrm.md) | 5.9k | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. |
+| [Odoo](odoo.md) | 55.8k | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 
 ## Enlaces
 

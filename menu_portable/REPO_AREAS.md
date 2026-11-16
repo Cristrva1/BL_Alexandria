@@ -96,7 +96,7 @@ Revisar imágenes, clústeres y cuentas de nube antes de publicar.
 
 Gestionar contraseñas y proteger servicios personales.
 
-`adguardhome`, `age`, `bitwarden-clients`, `keepassxc`, `pi-hole`, `sops`, `vault`, `vaultwarden`
+`adguardhome`, `age`, `authentik`, `bitwarden-clients`, `keepassxc`, `keycloak`, `pi-hole`, `sops`, `vault`, `vaultwarden`
 
 ### Aprender ciberseguridad
 
@@ -222,7 +222,7 @@ Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas 
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-`activepieces`, `airflow`, `dagster`, `huginn`, `kestra`, `node-red`, `prefect`, `temporal`, `trigger-dev`, `windmill`
+`activepieces`, `airflow`, `dagger`, `dagster`, `huginn`, `kestra`, `node-red`, `prefect`, `temporal`, `trigger-dev`, `windmill`
 
 ### WhatsApp y pasarelas de mensajería
 
@@ -234,7 +234,7 @@ Distinguir conexiones oficiales,pasarelas y bibliotecas de WhatsApp.
 
 Gestionar clientes, oportunidades y conversaciones con personas.
 
-`chatwoot`, `compai-crm`, `erpnext`, `espocrm`, `freescout`, `odoo`, `twenty-main`, `zammad`
+`chatwoot`, `compai-crm`, `erpnext`, `espocrm`, `freescout`, `odoo`, `suitecrm`, `twenty-main`, `zammad`
 
 ### Email, campañas y redes sociales
 
@@ -258,7 +258,7 @@ Crear herramientas de operación y formularios sobre tus datos.
 
 Organizar disponibilidad y reserva de horarios.
 
-`cal.diy`, `easyappointments`
+`cal.diy`, `easyappointments`, `formbricks`
 
 ### Constructores de conversaciones
 
@@ -270,7 +270,7 @@ Diseñar flujos conversacionales y conectar canales.
 
 Organizar espacios compartidos de comunicación.
 
-`fluxer`, `mattermost`, `rocket-chat`, `synapse`
+`element-web`, `fluxer`, `mattermost`, `rocket-chat`, `synapse`, `zulip`
 
 ## Agentes de IA, investigación y navegación
 
@@ -452,7 +452,7 @@ Sincronizar archivos y organizar libros o contenido personal.
 
 Herramientas personales para gestionar credenciales y proteger datos.
 
-`adguardhome`, `age`, `bitwarden-clients`, `keepassxc`, `pi-hole`, `sops`, `vault`, `vaultwarden`
+`adguardhome`, `age`, `authentik`, `bitwarden-clients`, `keepassxc`, `keycloak`, `pi-hole`, `sops`, `vault`, `vaultwarden`
 
 ### Hogar, dispositivos y utilidades
 

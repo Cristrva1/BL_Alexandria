@@ -104,6 +104,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Mattermost](mattermost.md) | 39.6k | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. |
+| [Zulip](zulip.md) | 26.2k | Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. |
 
 ## Enlaces
 

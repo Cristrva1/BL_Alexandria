@@ -4,7 +4,7 @@
 
 Organiza información, sincroniza archivos y prepara herramientas para tu trabajo cotidiano y tu hogar.
 
-52 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/productividad).
+54 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/productividad).
 
 ## Opciones para empezar
 
@@ -63,15 +63,17 @@ Sincronizar archivos y organizar libros o contenido personal.
 
 Herramientas personales para gestionar credenciales y proteger datos.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=productividad&topic=personal-privacidad)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=productividad&topic=personal-privacidad)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [AdGuardHome](../fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Sin clave propia de API de IA en la ruta básica |
 | [age](../fichas/age.md) | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. | Sin clave propia de API de IA en la ruta básica |
+| [authentik](../fichas/authentik.md) | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. | Sin clave propia de API de IA en la ruta básica |
 | [Bitwarden Clients](../fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin clave propia de API de IA en la ruta básica |
 | [HashiCorp Vault](../fichas/vault.md) | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro. | Sin clave propia de API de IA en la ruta básica |
 | [KeePassXC](../fichas/keepassxc.md) | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. | Sin clave propia de API de IA en la ruta básica |
+| [Keycloak](../fichas/keycloak.md) | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. | Sin clave propia de API de IA en la ruta básica |
 | [Pi-hole](../fichas/pi-hole.md) | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. | Sin clave propia de API de IA en la ruta básica |
 | [SOPS](../fichas/sops.md) | Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI. | Sin clave propia de API de IA en la ruta básica |
 | [vaultwarden](../fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Sin clave propia de API de IA en la ruta básica |

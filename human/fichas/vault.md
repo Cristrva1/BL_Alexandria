@@ -30,6 +30,12 @@ Binario oficial / Docker / Helm.
 | [age](age.md) | Age para ficheros simples; Vault para org. | Elige según escala. |
 | [vaultwarden](vaultwarden.md) | Vaultwarden es passwords de usuario; Vault secretos de infra. | Complementarios. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Keycloak](keycloak.md)
+
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.2.2 (2026-11-12) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hashicorp/vault#readme) · [2](https://developer.hashicorp.com/vault)</sub>

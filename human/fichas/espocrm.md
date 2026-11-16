@@ -104,6 +104,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [twenty-main](twenty-main.md) | 60.9k | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
+| [SuiteCRM](suitecrm.md) | 5.9k | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. |
+| [Odoo](odoo.md) | 55.8k | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 
 ## Enlaces
 

@@ -32,9 +32,9 @@ Es un servidor Rust que usa SQLite por defecto y admite MySQL/MariaDB o PostgreS
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[HashiCorp Vault](vault.md)
+[authentik](authentik.md) · [HashiCorp Vault](vault.md)
 
 **Notas:** Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token.
 

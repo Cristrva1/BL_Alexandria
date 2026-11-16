@@ -32,9 +32,9 @@ El backend está en Ruby y el frontend en Vue, según los lenguajes del reposito
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OpenWA](openwa.md) · [Typebot](typebot.md) · [WAHA](waha.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
+[OpenWA](openwa.md) · [SuiteCRM](suitecrm.md) · [Typebot](typebot.md) · [WAHA](waha.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
 
 **Notas:** Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. Se resuelve el antiguo [DATO NO VERIFICADO] sobre Captain: no está en la Community Edition.
 

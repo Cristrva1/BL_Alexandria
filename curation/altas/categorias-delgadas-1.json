@@ -1,0 +1,242 @@
+{
+ "lote": "categorias-delgadas-1",
+ "fecha": "2026-11-16",
+ "metodo": "README + docs + gh api. Formbricks completo; resto ligero. No se instaló ningún proyecto.",
+ "alt_groups": [
+  [
+   "authentik",
+   "keycloak"
+  ],
+  [
+   "zulip",
+   "mattermost",
+   "rocket-chat"
+  ],
+  [
+   "suitecrm",
+   "espocrm",
+   "twenty-main",
+   "odoo"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "formbricks/formbricks",
+   "id": "formbricks",
+   "name": "Formbricks",
+   "cat": 18,
+   "sub": "reservas",
+   "kind": "app",
+   "one": "Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.",
+   "how": "App Node/Next; Docker o cloud; módulos EE bajo licencia distinta, núcleo AGPL.",
+   "examples": [
+    "encuestas NPS in-app en un producto propio",
+    "formularios de onboarding autoalojados"
+   ],
+   "try": [
+    "Sigue https://formbricks.com docs para Docker Compose y abre la UI.",
+    "Creas una encuesta de prueba."
+   ],
+   "setup": "medium",
+   "tags": [
+    "forms",
+    "surveys",
+    "self-hosted"
+   ],
+   "goals": [
+    "automatizar",
+    "web"
+   ],
+   "caveat": "Open-core: directorio apps/web/modules/ee con licencia Enterprise. Núcleo AGPL.",
+   "url": "https://formbricks.com",
+   "alt": []
+  },
+  {
+   "gh": "zulip/zulip",
+   "id": "zulip",
+   "name": "Zulip",
+   "cat": 17,
+   "sub": "comunidades",
+   "kind": "server",
+   "one": "Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.",
+   "how": "Servidor Python/Django + clients; instalador documentado o Docker.",
+   "examples": [
+    "chat interno con hilos por ticket",
+    "comunidad open source autoalojada"
+   ],
+   "try": [
+    "Sigue https://zulip.readthedocs.io para un install de lab o usa Zulip Cloud de prueba.",
+    "Creas un stream y un topic."
+   ],
+   "setup": "hard",
+   "tags": [
+    "chat",
+    "self-hosted"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "url": "https://zulip.com",
+   "alt": [
+    "mattermost",
+    "rocket-chat"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "element-hq/element-web",
+   "id": "element-web",
+   "name": "Element Web",
+   "cat": 17,
+   "sub": "comunidades",
+   "kind": "app",
+   "one": "Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.",
+   "how": "App React; se sirve estático apuntando a un homeserver Matrix.",
+   "examples": [
+    "UI web delante de Synapse propio",
+    "salas E2E para un equipo"
+   ],
+   "try": [
+    "Configura element-web contra tu Synapse de lab según docs Element.",
+    "Inicias sesión en el cliente web."
+   ],
+   "setup": "medium",
+   "tags": [
+    "matrix",
+    "chat"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "url": "https://element.io",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "goauthentik/authentik",
+   "id": "authentik",
+   "name": "authentik",
+   "cat": 15,
+   "sub": "privacidad",
+   "kind": "server",
+   "one": "IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.",
+   "how": "Docker Compose / Helm; outposts; UI de flujos.",
+   "examples": [
+    "SSO delante de apps autoalojadas",
+    "MFA centralizado para el lab"
+   ],
+   "try": [
+    "Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba.",
+    "Login SSO funcionando."
+   ],
+   "setup": "hard",
+   "tags": [
+    "idp",
+    "sso"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Open-core: authentik/enterprise/ con licencia distinta. Núcleo MIT.",
+   "url": "https://goauthentik.io",
+   "alt": [
+    "keycloak"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "keycloak/keycloak",
+   "id": "keycloak",
+   "name": "Keycloak",
+   "cat": 15,
+   "sub": "privacidad",
+   "kind": "server",
+   "one": "IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.",
+   "how": "Quarkus distro; Operator/Helm/Docker; consola de administración.",
+   "examples": [
+    "OIDC para un cluster de apps propias",
+    "federar un LDAP existente"
+   ],
+   "try": [
+    "Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console.",
+    "Realm de prueba creado."
+   ],
+   "setup": "hard",
+   "tags": [
+    "idp",
+    "sso"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "url": "https://www.keycloak.org",
+   "alt": [
+    "authentik"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "dagger/dagger",
+   "id": "dagger",
+   "name": "Dagger",
+   "cat": 1,
+   "sub": "motores",
+   "kind": "app",
+   "one": "Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry.",
+   "how": "CLI (`brew install dagger/tap/dagger`) + engine; pipelines en Go/Python/TS/…",
+   "examples": [
+    "reemplazar un script CI frágil",
+    "correr el mismo pipeline en laptop y CI"
+   ],
+   "try": [
+    "`brew install dagger/tap/dagger` y ejecuta el quickstart del README.",
+    "Pipeline de ejemplo termina en local."
+   ],
+   "setup": "medium",
+   "tags": [
+    "ci",
+    "containers"
+   ],
+   "goals": [
+    "programar",
+    "automatizar"
+   ],
+   "cmd": "brew install dagger/tap/dagger",
+   "url": "https://dagger.io",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "SuiteCRM/SuiteCRM",
+   "id": "suitecrm",
+   "name": "SuiteCRM",
+   "cat": 18,
+   "sub": "crm",
+   "kind": "app",
+   "one": "CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP.",
+   "how": "PHP/MySQL; instalador web o imagen; docs en suitecrm.com.",
+   "examples": [
+    "CRM interno para un equipo comercial pequeño",
+    "portal de casos de soporte"
+   ],
+   "try": [
+    "Despliega SuiteCRM según la guía oficial (LAMP/Docker) y completa el instalador web.",
+    "Escritorio CRM accesible."
+   ],
+   "setup": "medium",
+   "tags": [
+    "crm"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "url": "https://suitecrm.com",
+   "alt": [
+    "espocrm",
+    "twenty-main",
+    "odoo"
+   ],
+   "ligero": true
+  }
+ ]
+}

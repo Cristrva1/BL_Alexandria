@@ -187,6 +187,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [AdGuardHome](fichas/adguardhome.md) | [Pi-hole](fichas/pi-hole.md) |
 | [Anytype Desktop](fichas/anytype-ts.md) | [AppFlowy](fichas/appflowy.md) |
 | [AppFlowy](fichas/appflowy.md) | [Anytype Desktop](fichas/anytype-ts.md) |
+| [authentik](fichas/authentik.md) | [Keycloak](fichas/keycloak.md) |
 | [Calibre-Web](fichas/calibre-web.md) | [Kavita](fichas/kavita.md) |
 | [claude-obsidian](fichas/claude-obsidian.md) | [obsidian-second-brain](fichas/obsidian-second-brain.md) |
 | [Firefly III](fichas/firefly-iii.md) | [Actual Budget](fichas/actual.md) |
@@ -194,6 +195,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Joplin](fichas/joplin.md) | [Trilium Notes](fichas/trilium.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
 | [Kavita](fichas/kavita.md) | [Calibre-Web](fichas/calibre-web.md) |
 | [KeePassXC](fichas/keepassxc.md) | [vaultwarden](fichas/vaultwarden.md) |
+| [Keycloak](fichas/keycloak.md) | [authentik](fichas/authentik.md) |
 | [Logseq](fichas/logseq.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [SiYuan](fichas/siyuan.md) |
 | [obsidian-second-brain](fichas/obsidian-second-brain.md) | [claude-obsidian](fichas/claude-obsidian.md) |
 | [PhotoPrism](fichas/photoprism.md) | [Immich](fichas/immich.md) |
@@ -232,17 +234,19 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) | [Caido](fichas/caido.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [evolution-api](fichas/evolution-api.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
-| [Mattermost](fichas/mattermost.md) | [Rocket.Chat](fichas/rocket-chat.md) |
-| [Rocket.Chat](fichas/rocket-chat.md) | [Mattermost](fichas/mattermost.md) |
+| [Mattermost](fichas/mattermost.md) | [Rocket.Chat](fichas/rocket-chat.md), [Zulip](fichas/zulip.md) |
+| [Rocket.Chat](fichas/rocket-chat.md) | [Mattermost](fichas/mattermost.md), [Zulip](fichas/zulip.md) |
 | [WAHA](fichas/waha.md) | [evolution-api](fichas/evolution-api.md), [whatsapp-web.js](fichas/whatsapp-web-js.md), [Baileys](fichas/baileys.md) |
 | [whatsapp-web.js](fichas/whatsapp-web-js.md) | [Baileys](fichas/baileys.md), [WAHA](fichas/waha.md), [evolution-api](fichas/evolution-api.md) |
+| [Zulip](fichas/zulip.md) | [Mattermost](fichas/mattermost.md), [Rocket.Chat](fichas/rocket-chat.md) |
 | [cal.diy](fichas/cal-diy.md) | [Easy!Appointments](fichas/easyappointments.md) |
 | [Easy!Appointments](fichas/easyappointments.md) | [cal.diy](fichas/cal-diy.md) |
 | [ERPNext](fichas/erpnext.md) | [Odoo](fichas/odoo.md) |
-| [EspoCRM](fichas/espocrm.md) | [twenty-main](fichas/twenty-main.md) |
+| [EspoCRM](fichas/espocrm.md) | [twenty-main](fichas/twenty-main.md), [SuiteCRM](fichas/suitecrm.md), [Odoo](fichas/odoo.md) |
 | [FreeScout](fichas/freescout.md) | [Zammad](fichas/zammad.md) |
-| [Odoo](fichas/odoo.md) | [ERPNext](fichas/erpnext.md) |
-| [twenty-main](fichas/twenty-main.md) | [EspoCRM](fichas/espocrm.md) |
+| [Odoo](fichas/odoo.md) | [ERPNext](fichas/erpnext.md), [SuiteCRM](fichas/suitecrm.md), [EspoCRM](fichas/espocrm.md), [twenty-main](fichas/twenty-main.md) |
+| [SuiteCRM](fichas/suitecrm.md) | [EspoCRM](fichas/espocrm.md), [twenty-main](fichas/twenty-main.md), [Odoo](fichas/odoo.md) |
+| [twenty-main](fichas/twenty-main.md) | [EspoCRM](fichas/espocrm.md), [SuiteCRM](fichas/suitecrm.md), [Odoo](fichas/odoo.md) |
 | [Zammad](fichas/zammad.md) | [FreeScout](fichas/freescout.md) |
 | [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) |
 | [Awesome LLM Apps](fichas/awesome-llm-apps.md) | [OpenAI Cookbook](fichas/openai-cookbook.md), [Claude Cookbooks](fichas/claude-cookbooks.md) |

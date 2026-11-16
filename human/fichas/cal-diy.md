@@ -30,6 +30,7 @@ Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior
 | [twenty-main](twenty-main.md) | Registrar cada reserva como actividad u oportunidad en el CRM (combinación por arquitectura, con webhooks y un flujo intermedio). | Configura el webhook de cal.diy hacia el flujo que escribe en Twenty. |
 | [Botpress](botpress.md) | Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO]. | Instancia accesible por internet y token de API antes de configurar la integración. |
 | [crm](compai-crm.md) | Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)». | Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado. |
+| [Formbricks](formbricks.md) | Combinación recíproca: Formbricks lo enlaza como «Cal.diy agenda; Formbricks encuesta post-cita». | Orden indicado desde Formbricks: Cal.diy → Formbricks. |
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v6.2.0 (2026-03-01) · licencia declarada MIT (consultado el 2026-11-15).
 

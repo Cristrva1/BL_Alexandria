@@ -106,6 +106,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [ERPNext](erpnext.md) | 41.3k | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. |
+| [SuiteCRM](suitecrm.md) | 5.9k | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. |
+| [EspoCRM](espocrm.md) | 3.6k | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. |
+| [twenty-main](twenty-main.md) | 60.9k | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 
 ## Enlaces
 

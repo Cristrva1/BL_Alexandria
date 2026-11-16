@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**885 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**892 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -8,7 +8,7 @@
 
 ## Índice
 
-1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 17
+1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 18
 2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 30
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 34
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 28
@@ -22,10 +22,10 @@
 12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 19
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 23
-15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 48
+15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 50
 16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 113
-17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 16
-18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 17
+17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 18
+18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 19
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 31
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
 21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 17
@@ -57,6 +57,7 @@ _Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.de
 | [Node-RED](human/fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [Windmill](human/fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [Trigger.dev](human/fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [Dagger](human/fichas/dagger.md) | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Dagster](human/fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ### Apps internas y bases de datos no-code
@@ -730,8 +731,10 @@ _Notas, sincronización, privacidad, aprendizaje y servidores personales. Distin
 | [vaultwarden](human/fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [Pi-hole](human/fichas/pi-hole.md) | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [AdGuardHome](human/fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Keycloak](human/fichas/keycloak.md) | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | hard |
 | [HashiCorp Vault](human/fichas/vault.md) | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | hard |
 | [KeePassXC](human/fichas/keepassxc.md) | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [authentik](human/fichas/authentik.md) | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | hard |
 | [age](human/fichas/age.md) | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [SOPS](human/fichas/sops.md) | Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Bitwarden Clients](human/fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
@@ -992,6 +995,8 @@ _Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de me
 |---|---|---|---|---|
 | [Rocket.Chat](human/fichas/rocket-chat.md) | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Mattermost](human/fichas/mattermost.md) | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Zulip](human/fichas/zulip.md) | Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | hard |
+| [Element Web](human/fichas/element-web.md) | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [fluxer](human/fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Synapse](human/fichas/synapse.md) | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
@@ -1009,6 +1014,7 @@ _Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la
 | [chatwoot](human/fichas/chatwoot.md) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [crm](human/fichas/compai-crm.md) | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [Zammad](human/fichas/zammad.md) | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [SuiteCRM](human/fichas/suitecrm.md) | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [FreeScout](human/fichas/freescout.md) | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [EspoCRM](human/fichas/espocrm.md) | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
@@ -1029,6 +1035,7 @@ _Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [cal.diy](human/fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Formbricks](human/fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Easy!Appointments](human/fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ## 🧠 19. Aprender IA y escribir mejores prompts

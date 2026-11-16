@@ -491,6 +491,12 @@
      "motivo": "Combinación recíproca: WAHA lo enlaza como «Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde WAHA: Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill.",
      "reciproca_de": "waha"
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Typebot conversacional; Formbricks formularios clásicos».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Elige según UX.",
+     "reciproca_de": "formbricks"
     }
    ],
    "notas": "Revisa la FSL antes de ofrecer Typebot como servicio a terceros.",

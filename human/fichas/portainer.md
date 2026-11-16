@@ -30,6 +30,12 @@ Escrito en Go con frontend web; se instala como contenedor con acceso al socket 
 | [Uptime Kuma](uptime-kuma.md) | Uptime Kuma, desplegado como stack desde Portainer, vigila los servicios del host (combinación por arquitectura). | Crea el stack de Uptime Kuma en Portainer; después añade monitores. |
 | [WireGuard Easy](wg-easy.md) | wg-easy se despliega y actualiza como stack desde Portainer (combinación por arquitectura). | Crea el stack con el Compose de wg-easy. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Dagger](dagger.md)
+
 **Notas:** Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2.45.3 (2026-10-21) · licencia declarada Zlib (consultado el 2026-11-16).

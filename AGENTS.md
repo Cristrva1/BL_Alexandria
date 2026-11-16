@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**885 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **103 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
+**892 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **103 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
@@ -75,7 +75,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 <!-- BL:AGENT_CATEGORIES -->
 | # | Categoría | Repos | Subcategorías | Archivo |
 |---:|---|---:|---|---|
-| 1 | 🤖 Automatizar procesos y crear herramientas internas | 17 | Motores de workflow y automatización, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 1 | 🤖 Automatizar procesos y crear herramientas internas | 18 | Motores de workflow y automatización, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
 | 2 | 🧠 Skills, plugins y métodos para agentes | 30 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
 | 3 | 🕸️ Construir agentes y coordinar equipos de IA | 34 | Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
 | 4 | 🕷️ Buscar, extraer y monitorear información web | 28 | Crawlers y extracción para IA, Scraping guiado por LLM, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |
@@ -89,10 +89,10 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 12 | 🎬 Editar, grabar y generar video | 19 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
 | 13 | 📄 PDF, OCR y procesamiento de documentos | 22 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 23 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
-| 15 | 🗂️ Organizar notas, archivos y servicios personales | 48 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
+| 15 | 🗂️ Organizar notas, archivos y servicios personales | 50 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
 | 16 | 🔍 Analizar software y comprobar su seguridad | 113 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Reconocimiento y superficie de ataque, Explotación, C2 y post-explotación, Active Directory y red interna, Detección, SIEM e IDS, Nube, contenedores e IaC, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | `human/categorias/16-analisis-de-software-y-seguridad.md` |
-| 17 | 🤖 WhatsApp, mensajería y chatbots | 16 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
-| 18 | 🤖 CRM, ventas y marketing | 17 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
+| 17 | 🤖 WhatsApp, mensajería y chatbots | 18 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
+| 18 | 🤖 CRM, ventas y marketing | 19 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
 | 19 | 🧠 Aprender IA y escribir mejores prompts | 31 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
 | 20 | 🕸️ Programar con agentes de código | 21 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones | `human/categorias/20-agentes-de-codigo.md` |
 | 21 | 🕸️ Asistentes e investigación con agentes | 17 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |

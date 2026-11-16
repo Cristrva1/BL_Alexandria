@@ -157,6 +157,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supabase`, `activepieces`, `ollama`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
 
+## `dagger`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=ci,containers
+
+**Qué es:** Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/dagger/dagger
+
+**Instalación** [+]:
+
+```
+brew install dagger/tap/dagger
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** `brew install dagger/tap/dagger` y ejecuta el quickstart del README.
+**Qué comprobar:** Pipeline de ejemplo termina en local.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `portainer`
+
 ## `dagster`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,data,python
 

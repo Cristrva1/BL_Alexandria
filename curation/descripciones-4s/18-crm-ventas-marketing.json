@@ -177,6 +177,12 @@
      "id": "postiz-app",
      "motivo": "Coordinar el calendario de redes sociales con las campañas de email (combinación por arquitectura).",
      "orden_instalacion": "Independientes; pueden compartir servidor pero cada uno con su base de datos."
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Listmonk envía; Formbricks mide».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Listmonk ↔ Formbricks.",
+     "reciproca_de": "formbricks"
     }
    ],
    "notas": "Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email masivo; elegí no listarlo como combinación.",
@@ -257,6 +263,12 @@
      "motivo": "Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado.",
      "reciproca_de": "compai-crm"
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Cal.diy agenda; Formbricks encuesta post-cita».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Cal.diy → Formbricks.",
+     "reciproca_de": "formbricks"
     }
    ],
    "fuentes": [

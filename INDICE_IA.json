@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 887 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 894 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -308,7 +308,7 @@
    "title": "Automatizar procesos y crear herramientas internas",
    "desc": "Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-   "count": 17,
+   "count": 18,
    "subs": [
     {
      "key": "motores",
@@ -684,7 +684,7 @@
      "title": "Aprendizaje asistido"
     }
    ],
-   "count": 48,
+   "count": 50,
    "question": "¿Quieres organizar tus notas, archivos o servicios personales?"
   },
   {
@@ -775,7 +775,7 @@
      "title": "Comunidades,chat y llamadas"
     }
    ],
-   "count": 16
+   "count": 18
   },
   {
    "num": 18,
@@ -798,7 +798,7 @@
      "title": "Reservas y programación de citas"
     }
    ],
-   "count": 17
+   "count": 19
   },
   {
    "num": 19,
@@ -2937,7 +2937,10 @@
    "pick": true,
    "one": "Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web.",
    "alt": [
-    "erpnext"
+    "erpnext",
+    "suitecrm",
+    "espocrm",
+    "twenty-main"
    ],
    "doc": "human/fichas/odoo.md",
    "github_id": 19745004,
@@ -2974,7 +2977,9 @@
    "pick": false,
    "one": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.",
    "alt": [
-    "espocrm"
+    "espocrm",
+    "suitecrm",
+    "odoo"
    ],
    "doc": "human/fichas/twenty-main.md",
    "github_id": 572984571,
@@ -30012,7 +30017,8 @@
    "pick": false,
    "one": "Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
    "alt": [
-    "mattermost"
+    "mattermost",
+    "zulip"
    ],
    "doc": "human/fichas/rocket-chat.md",
    "github_id": 35866694,
@@ -30050,7 +30056,8 @@
    "pick": false,
    "one": "Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.",
    "alt": [
-    "rocket-chat"
+    "rocket-chat",
+    "zulip"
    ],
    "doc": "human/fichas/mattermost.md",
    "github_id": 37448451,
@@ -30235,7 +30242,9 @@
    "pick": false,
    "one": "CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.",
    "alt": [
-    "twenty-main"
+    "twenty-main",
+    "suitecrm",
+    "odoo"
    ],
    "doc": "human/fichas/espocrm.md",
    "github_id": 24459441,
@@ -35590,6 +35599,263 @@
    "routes": [
     "no_api"
    ]
+  },
+  {
+   "id": "formbricks",
+   "name": "Formbricks",
+   "cat": 18,
+   "sub": "reservas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "forms",
+    "surveys",
+    "self-hosted"
+   ],
+   "stars": 13246,
+   "gh": "formbricks/formbricks",
+   "lib": false,
+   "pick": false,
+   "one": "Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.",
+   "alt": [],
+   "doc": "human/fichas/formbricks.md",
+   "github_id": 500289888,
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar",
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zulip",
+   "name": "Zulip",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "self-hosted"
+   ],
+   "stars": 26239,
+   "gh": "zulip/zulip",
+   "lib": false,
+   "pick": false,
+   "one": "Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.",
+   "alt": [
+    "mattermost",
+    "rocket-chat"
+   ],
+   "doc": "human/fichas/zulip.md",
+   "github_id": 43160685,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "element-web",
+   "name": "Element Web",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "matrix",
+    "chat"
+   ],
+   "stars": 13662,
+   "gh": "element-hq/element-web",
+   "lib": false,
+   "pick": false,
+   "one": "Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.",
+   "alt": [],
+   "doc": "human/fichas/element-web.md",
+   "github_id": 39487546,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "authentik",
+   "name": "authentik",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "idp",
+    "sso"
+   ],
+   "stars": 26366,
+   "gh": "goauthentik/authentik",
+   "lib": false,
+   "pick": false,
+   "one": "IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.",
+   "alt": [
+    "keycloak"
+   ],
+   "doc": "human/fichas/authentik.md",
+   "github_id": 230885748,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "keycloak",
+   "name": "Keycloak",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "idp",
+    "sso"
+   ],
+   "stars": 37893,
+   "gh": "keycloak/keycloak",
+   "lib": false,
+   "pick": false,
+   "one": "IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.",
+   "alt": [
+    "authentik"
+   ],
+   "doc": "human/fichas/keycloak.md",
+   "github_id": 11125589,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dagger",
+   "name": "Dagger",
+   "cat": 1,
+   "sub": "motores",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ci",
+    "containers"
+   ],
+   "stars": 16621,
+   "gh": "dagger/dagger",
+   "lib": false,
+   "pick": false,
+   "one": "Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry.",
+   "alt": [],
+   "doc": "human/fichas/dagger.md",
+   "github_id": 222824662,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "suitecrm",
+   "name": "SuiteCRM",
+   "cat": 18,
+   "sub": "crm",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "crm"
+   ],
+   "stars": 5865,
+   "gh": "SuiteCRM/SuiteCRM",
+   "lib": false,
+   "pick": false,
+   "one": "CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP.",
+   "alt": [
+    "espocrm",
+    "twenty-main",
+    "odoo"
+   ],
+   "doc": "human/fichas/suitecrm.md",
+   "github_id": 13044600,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
   }
  ],
  "discovery": {
@@ -35610,6 +35876,7 @@
      "goose"
     ],
     "categories": [
+     1,
      3,
      7,
      16,
@@ -35847,6 +36114,7 @@
     ],
     "categories": [
      9,
+     18,
      26,
      27,
      32

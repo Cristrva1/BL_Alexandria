@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un evento personal de prueba y abre su página de reserva
 **Qué comprobar:** Puedes elegir una franja disponible y revisar la reserva creada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `twenty-main`, `botpress`, `compai-crm`
+**Combina con:** `activepieces`, `twenty-main`, `botpress`, `compai-crm`, `formbricks`
 **Alternativas (elige una):** `easyappointments`
 
 ## `chatwoot`
@@ -160,7 +160,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba.
 **Qué comprobar:** La cita aparece en el calendario del proveedor.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `espocrm`, `activepieces`, `coolify`
+**Combina con:** `espocrm`, `activepieces`, `coolify`, `formbricks`
 **Alternativas (elige una):** `cal.diy`
 
 ## `erpnext`
@@ -226,7 +226,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** La oportunidad aparece en el pipeline con su etapa.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `easyappointments`, `coolify`
-**Alternativas (elige una):** `twenty-main`
+**Alternativas (elige una):** `twenty-main`, `suitecrm`, `odoo`
+
+## `formbricks`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=forms,surveys,self-hosted
+
+**Qué es:** Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/formbricks/formbricks
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/formbricks/formbricks/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Sigue https://formbricks.com docs para Docker Compose y abre la UI.
+**Qué comprobar:** Creas una encuesta de prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `cal.diy`, `easyappointments`, `listmonk`, `typebot`
 
 ## `freescout`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=helpdesk,php,self-hosted,server
@@ -291,7 +321,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una lista de prueba y revisa el preview de una campaña antes de un envío de ensayo propio
 **Qué comprobar:** Puedes comprobar plantilla, destinatario y estado del trabajo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `novu`, `postiz-app`
+**Combina con:** `activepieces`, `novu`, `postiz-app`, `formbricks`
 
 ## `mautic`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,email,php
@@ -382,7 +412,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar campos, etapas y permisos del flujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `metabase`, `botpress`
-**Alternativas (elige una):** `erpnext`
+**Alternativas (elige una):** `erpnext`, `suitecrm`, `espocrm`, `twenty-main`
 
 ## `open-seo`
 role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=marketing,server,typescript
@@ -475,6 +505,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `compai-crm`
 
+## `suitecrm`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=crm
+
+**Qué es:** CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP.
+**Stack:** PHP, composer.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/SuiteCRM/SuiteCRM
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: CRM interno para un equipo comercial pequeño; portal de casos de soporte
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Despliega SuiteCRM según la guía oficial (LAMP/Docker) y completa el instalador web.
+**Qué comprobar:** Escritorio CRM accesible.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `chatwoot`, `listmonk`
+**Alternativas (elige una):** `espocrm`, `twenty-main`, `odoo`
+
 ## `twenty-main`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=automation,crm,typescript,docker
 
@@ -504,7 +565,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes consultar registros y reconocer la estructura de campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `activepieces`, `evolution-api`, `cal.diy`, `docuseal`
-**Alternativas (elige una):** `espocrm`
+**Alternativas (elige una):** `espocrm`, `suitecrm`, `odoo`
 
 ## `zammad`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=helpdesk,ruby,self-hosted,server

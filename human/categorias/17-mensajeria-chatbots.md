@@ -4,7 +4,7 @@
 
 Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación.
 
-16 repos · 3 secciones
+18 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [WhatsApp y mensajería](#whatsapp-y-mensajería) — 8 repos
 - [Chatbots y asistentes conversacionales](#chatbots-y-asistentes-conversacionales) — 4 repos
-- [Comunidades,chat y llamadas](#comunidadeschat-y-llamadas) — 4 repos
+- [Comunidades,chat y llamadas](#comunidadeschat-y-llamadas) — 6 repos
 
 ## WhatsApp y mensajería
 
@@ -49,6 +49,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Rocket.Chat](../fichas/rocket-chat.md) | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. | Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida | Sin clave propia de API de IA en la ruta básica |
 | [Mattermost](../fichas/mattermost.md) | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. | Tu objetivo encaja con estos ejemplos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo | Sin clave propia de API de IA en la ruta básica |
+| [Zulip](../fichas/zulip.md) | Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. | Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada | Sin clave propia de API de IA en la ruta básica |
+| [Element Web](../fichas/element-web.md) | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse. | Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo | Sin clave propia de API de IA en la ruta básica |
 | [fluxer](../fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia | Sin clave propia de API de IA en la ruta básica |
 | [Synapse](../fichas/synapse.md) | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. | Tu objetivo encaja con estos ejemplos: alojar tu propio servidor de chat federado para un grupo o comunidad; conectar usuarios con otros servidores Matrix manteniendo tus datos | Sin clave propia de API de IA en la ruta básica |
 
