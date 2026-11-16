@@ -80226,7 +80226,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar una base musical de prueba; Comparar variantes de generación local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vllm",
+        "ffmpeg",
+        "rubberband"
+      ],
       "alt": []
     },
     {
@@ -80344,9 +80348,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar generación de música; Estudiar sonidos a partir de texto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ffmpeg",
         "moviepy",
-        "remotion",
-        "ffmpeg"
+        "remotion"
       ],
       "alt": []
     },
@@ -80465,7 +80469,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "pipecat"
+        "pipecat",
+        "vllm",
+        "ffmpeg"
       ],
       "alt": [
         "fish-speech",
@@ -80584,7 +80590,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar un agente de voz; Editar un workflow mediante MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "whisper-cpp",
+        "kokoro"
+      ],
       "alt": []
     },
     {
@@ -80706,7 +80716,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar una mezcla con un agente; Analizar un efecto sonoro",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "remotion",
+        "ffmpeg"
+      ],
       "alt": []
     },
     {
@@ -80821,7 +80835,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "moviepy"
+        "moviepy",
+        "whisper",
+        "ffmpeg"
       ],
       "alt": [
         "kokoro"
@@ -81310,7 +81326,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "whisperx",
+        "ffmpeg",
+        "pipecat"
+      ],
       "alt": [
         "cosyvoice"
       ]
@@ -81561,7 +81581,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir un asistente de voz; Evaluar conversación en tiempo real",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "kokoro"
+        "kokoro",
+        "ollama",
+        "whisper-cpp"
       ],
       "alt": [
         "pipecat"
@@ -81683,9 +81705,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "litellm",
-        "cosmos",
-        "comfyui"
+        "comfyui",
+        "pipecat",
+        "moviepy"
       ],
       "alt": [
         "kokoro"
@@ -81797,7 +81819,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar un reproductor; Explorar herramientas de audio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "whisper",
+        "rubberband",
+        "awesome-bigdata"
+      ],
       "alt": []
     },
     {
@@ -82164,7 +82190,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "kokoro",
-        "whisper-cpp"
+        "whisper-cpp",
+        "ollama",
+        "nemo"
       ],
       "alt": [
         "livekit-agents"
@@ -82282,7 +82310,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir ruido de una grabación; Estudiar una red de supresión de ruido",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ffmpeg",
+        "obs-studio",
+        "whisper-cpp"
+      ],
       "alt": []
     },
     {
@@ -82393,7 +82425,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Ajustar duración de una narración; Explorar cambio de tono",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ffmpeg",
+        "ace-step-1.5",
+        "audiocraft"
+      ],
       "alt": []
     },
     {

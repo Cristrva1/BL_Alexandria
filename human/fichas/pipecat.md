@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Pipecat, framework open source en Python para agentes de voz y multimodales en tiempo real, creado por Daily. Licencia BSD-2-Clause. Es maduro y muy activo (~17k estrellas, v1.16.0).
+
+## ¿Qué hace?
+
+Construye agentes de voz individuales o sistemas multiagente con pipelines de STT, LLM y TTS, turnos de conversación, interrupciones y transporte en tiempo real. Tiene integraciones con decenas de servicios, entre ellos Whisper, Kokoro, Fish, Piper, XTTS, NVIDIA y Ollama, y transportes como Daily, LiveKit, WebSocket y telefonía.
+
+## ¿Cómo lo hace?
+
+Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con `pip install pipecat-ai[...]` o `pipecat init quickstart`. Daily ofrece soporte enterprise.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Kokoro](kokoro.md) | Servicio TTS integrado. | Instala el extra correspondiente. |
+| [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Usa un servicio STT local. |
+| [Ollama](ollama.md) | Servicio LLM integrado. | Configura el servicio Ollama. |
+| [NeMo Speech](nemo.md) | Servicios NVIDIA integrados. | Configura el servicio NVIDIA. |
+
+**Notas:** Alternativas (elige una): livekit-agents.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.16.0 (2026-11-12) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pipecat-ai/pipecat/blob/main/README.md) · [2](https://docs.pipecat.ai/getting-started/quickstart)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Tiene skills específicos de Claude Code; un agente que genera el código no aporta automáticamente el runtime ni créditos de telefonía o voz |
 | Coste | El coste depende del proveedor o la ruta. Cada servicio tiene costes propios; documenta Whisper, Ollama y Piper locales además de proveedores Cloud |
 | Equipo | Preparación según la ruta elegida. uv; proveedores STT, LLM y TTS; micrófono; transporte local o remoto |
-
-Tiene skills específicos de Claude Code; un agente que genera el código no aporta automáticamente el runtime ni créditos de telefonía o voz
-
-## Qué puedes hacer con él
-
-Framework open source para agentes de voz y apps multimodales en tiempo real.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar un agente de voz; Comparar combinaciones STT/LLM/TTS.
-
-## Cómo funciona
 
 Tiene skills específicos de Claude Code; un agente que genera el código no aporta automáticamente el runtime ni créditos de telefonía o voz
 
@@ -95,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv; proveedores STT, LLM y TTS; micrófono; transporte local o remoto
 - **Etiquetas:** `audio` `agents` `stt` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-| [whisper.cpp](whisper-cpp.md) | 55.2k | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
 
 ## Alternativas (elige una)
 

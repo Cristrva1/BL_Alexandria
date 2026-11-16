@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Rubber Band Library, biblioteca y utilidad para estirar el tiempo y cambiar el tono de audio, de Chris Cannam (Breakfast Quay). Licencia GPL-2.0+, con licencia comercial disponible. Es madura, de nicho (~800 estrellas) y no cambia desde marzo de 2025.
+
+## ¿Qué hace?
+
+Cambia la duración sin alterar el tono, o el tono sin alterar la duración, con alta calidad, en tiempo real u offline. Se usa en numerosas aplicaciones de audio.
+
+## ¿Cómo lo hace?
+
+Se compila con Meson. La utilidad de línea de comandos requiere libsndfile (LGPL); hay bindings y plugins LADSPA/LV2.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Filtro rubberband en FFmpeg. | Usa un FFmpeg compilado con librubberband. |
+| [ACE-Step-1.5](ace-step-1-5.md) | Ajustar tempo de música generada. (combinación por arquitectura) | Procesa la salida. |
+| [AudioCraft](audiocraft.md) | Ajustar duración de audio generado. (combinación por arquitectura) | Procesa la salida. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2025-03-03 · licencia declarada GPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/breakfastquay/rubberband/blob/default/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales |
 | Coste | El coste depende del proveedor o la ruta. GPL con alternativa comercial para determinados usos; no necesita API de IA y hardware separado |
 | Equipo | Preparación según la ruta elegida. Biblioteca o utilidad compilada; libsndfile; audio de prueba |
-
-Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales
-
-## Qué puedes hacer con él
-
-Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.
-
-## Por qué destaca
-
-Usos propuestos: Ajustar duración de una narración; Explorar cambio de tono.
-
-## Cómo funciona
 
 Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales
 

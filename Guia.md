@@ -6545,6 +6545,7 @@ python -m pip install --upgrade pip setuptools wheel` (comprobar los pasos compl
 
 pip install -U uv  # or see the link above for other install methods` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [whisperX](human/fichas/whisperx.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Pipecat](human/fichas/pipecat.md)<br>
 **Más:** [ficha completa](human/fichas/index-tts.md) · [GitHub](https://github.com/index-tts/index-tts)
 
 #### 🗣️ CosyVoice
@@ -6556,7 +6557,7 @@ pip install -U uv  # or see the link above for other install methods` (comprobar
     cd CosyVoice
     git submodule update --init --recursive` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Pipecat](human/fichas/pipecat.md)<br>
+**Combina con:** [Pipecat](human/fichas/pipecat.md) · [vLLM](human/fichas/vllm.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/cosyvoice.md) · [GitHub](https://github.com/QwenAudio/CosyVoice)
 
 #### 🎬 edge-tts
@@ -6565,7 +6566,7 @@ pip install -U uv  # or see the link above for other install methods` (comprobar
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Coste por confirmar<br>
 **Comando documentado:** `pipx install edge-tts` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MoviePy](human/fichas/moviepy.md)<br>
+**Combina con:** [MoviePy](human/fichas/moviepy.md) · [whisper](human/fichas/whisper.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/edge-tts.md) · [GitHub](https://github.com/rany2/edge-tts)
 
 #### 🗣️ LuxTTS
@@ -6576,7 +6577,7 @@ pip install -U uv  # or see the link above for other install methods` (comprobar
 cd LuxTTS
 pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [cosmos](human/fichas/cosmos.md) · [ComfyUI](human/fichas/comfyui.md)<br>
+**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [Pipecat](human/fichas/pipecat.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/luxtts.md) · [GitHub](https://github.com/ysharma3501/LuxTTS)
 
 ### Agentes de voz en tiempo real
@@ -6588,7 +6589,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Comando documentado:** `uv tool install "pipecat-ai[cli]"
 pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un agente de voz; Comparar combinaciones STT/LLM/TTS — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Kokoro](human/fichas/kokoro.md) · [whisper.cpp](human/fichas/whisper-cpp.md)<br>
+**Combina con:** [Kokoro](human/fichas/kokoro.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [Ollama](human/fichas/ollama.md) · [NeMo Speech](human/fichas/nemo.md)<br>
 **Más:** [ficha completa](human/fichas/pipecat.md) · [GitHub](https://github.com/pipecat-ai/pipecat)
 
 #### 📞 LiveKit Agents
@@ -6597,7 +6598,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install "livekit-agents[openai,deepgram,cartesia]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un asistente de voz; Evaluar conversación en tiempo real — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Kokoro](human/fichas/kokoro.md)<br>
+**Combina con:** [Kokoro](human/fichas/kokoro.md) · [Ollama](human/fichas/ollama.md) · [whisper.cpp](human/fichas/whisper-cpp.md)<br>
 **Más:** [ficha completa](human/fichas/livekit-agents.md) · [GitHub](https://github.com/livekit/agents)
 
 #### 🖥️ dograh
@@ -6606,6 +6607,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/dograh-hq/dograh/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un agente de voz; Editar un workflow mediante MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [Kokoro](human/fichas/kokoro.md)<br>
 **Más:** [ficha completa](human/fichas/dograh.md) · [GitHub](https://github.com/dograh-hq/dograh)
 
 ### Música y audio generativo
@@ -6616,7 +6618,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/facebookresearch/audiocraft/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar generación de música; Estudiar sonidos a partir de texto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MoviePy](human/fichas/moviepy.md) · [remotion](human/fichas/remotion.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [MoviePy](human/fichas/moviepy.md) · [remotion](human/fichas/remotion.md)<br>
 **Más:** [ficha completa](human/fichas/audiocraft.md) · [GitHub](https://github.com/facebookresearch/audiocraft)
 
 #### 🎬 ACE-Step-1.5
@@ -6631,6 +6633,7 @@ uv sync
 # 3. Launch Gradio UI (models auto-download on first run)
 uv run acestep` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una base musical de prueba; Comparar variantes de generación local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [FFmpeg](human/fichas/ffmpeg.md) · [rubberband](human/fichas/rubberband.md)<br>
 **Más:** [ficha completa](human/fichas/ace-step-1-5.md) · [GitHub](https://github.com/ace-step/ACE-Step-1.5)
 
 #### 🎬 Music-Megathread
@@ -6639,6 +6642,7 @@ uv run acestep` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/MoonWalker440/Music-Megathread/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar un reproductor; Explorar herramientas de audio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [whisper](human/fichas/whisper.md) · [rubberband](human/fichas/rubberband.md) · [awesome-bigdata](human/fichas/awesome-bigdata.md)<br>
 **Más:** [ficha completa](human/fichas/music-megathread.md) · [GitHub](https://github.com/MoonWalker440/Music-Megathread)
 
 ### Procesamiento y limpieza de audio
@@ -6649,6 +6653,7 @@ uv run acestep` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/xiph/rnnoise/blob/main/README); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir ruido de una grabación; Estudiar una red de supresión de ruido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [OBS Studio](human/fichas/obs-studio.md) · [whisper.cpp](human/fichas/whisper-cpp.md)<br>
 **Más:** [ficha completa](human/fichas/rnnoise.md) · [GitHub](https://github.com/xiph/rnnoise)
 
 #### 🧩 earshot
@@ -6658,6 +6663,7 @@ uv run acestep` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `uv tool install "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot"
 earshot doctor --fetch     # downloads the two models now (~1.1 GB)` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar una mezcla con un agente; Analizar un efecto sonoro — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [remotion](human/fichas/remotion.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/earshot.md) · [GitHub](https://github.com/Leonxlnx/earshot)
 
 #### 📚 rubberband
@@ -6666,6 +6672,7 @@ earshot doctor --fetch     # downloads the two models now (~1.1 GB)` (comprobar 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/breakfastquay/rubberband/blob/default/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar duración de una narración; Explorar cambio de tono — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [ACE-Step-1.5](human/fichas/ace-step-1-5.md) · [AudioCraft](human/fichas/audiocraft.md)<br>
 **Más:** [ficha completa](human/fichas/rubberband.md) · [GitHub](https://github.com/breakfastquay/rubberband)
 
 ---

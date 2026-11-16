@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Music Megathread, directorio de reproductores, herramientas, descargadores, sitios de streaming y bots de Telegram de música, de @MoonWalker440. GitHub no detecta licencia. Tiene ~3k estrellas y no cambia desde junio de 2025.
+
+## ¿Qué hace?
+
+Lista recursos gratuitos para escuchar, descubrir y descargar música, incluidos descargadores de servicios de pago que pueden infringir derechos de autor o términos de servicio.
+
+## ¿Cómo lo hace?
+
+Es un README; no requiere instalación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisper](whisper.md) | Transcribir letras de audio propio. (combinación por arquitectura) | Combina según el caso. |
+| [rubberband](rubberband.md) | Editar tempo y tono de audio propio. (combinación por arquitectura) | Combina según el caso. |
+| [awesome-bigdata](awesome-bigdata.md) | Otra lista curada del catálogo. (combinación por arquitectura) | Consulta según el área. |
+
+**Notas:** Sin alternativas declaradas. Contiene enlaces a herramientas de descarga de dudosa legalidad: pregunta de pertenencia al catálogo (solo anotada).
+
+Estado en GitHub: activo · último push 2025-06-24 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/MoonWalker440/Music-Megathread/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un directorio de enlaces y no un paquete instalable ni una autorización de uso de todo contenido enlazado |
 | Coste | Sin pago a un modelo en la ruta básica. La lista es libre; servicios y recursos externos pueden requerir suscripción o tener condiciones propias |
 | Equipo | Preparación según la ruta elegida. Navegador; necesidad concreta |
-
-Es un directorio de enlaces y no un paquete instalable ni una autorización de uso de todo contenido enlazado
-
-## Qué puedes hacer con él
-
-Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar un reproductor; Explorar herramientas de audio.
-
-## Cómo funciona
 
 Es un directorio de enlaces y no un paquete instalable ni una autorización de uso de todo contenido enlazado
 

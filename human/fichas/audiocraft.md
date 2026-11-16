@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+AudioCraft, librería PyTorch de Meta para investigación en generación de audio (MusicGen y AudioGen). El código es MIT y los pesos son CC-BY-NC 4.0 (no comercial). Tiene ~24k estrellas y no cambia desde marzo de 2026.
+
+## ¿Qué hace?
+
+Genera música (MusicGen) y efectos de sonido (AudioGen) a partir de texto, e incluye EnCodec, MAGNeT y otros componentes con código de entrenamiento.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.9 y PyTorch 2.1.0 (versiones antiguas) y se instala con `pip install -U audiocraft`. Se recomienda tener FFmpeg y conviene una GPU.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Recomendado por el README para E/S de audio. | Instala FFmpeg. |
+| [MoviePy](moviepy.md) | Añadir la música generada a vídeos. (combinación por arquitectura) | Monta el audio. |
+| [remotion](remotion.md) | Banda sonora para vídeo programático. (combinación por arquitectura) | Usa el audio generado. |
+
+**Notas:** Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.
+
+Estado en GitHub: activo · último push 2026-03-03 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facebookresearch/audiocraft/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los pesos publicados no permiten asumir uso comercial porque el código sea MIT; las alternativas de instalación del README no se ejecutan todas juntas |
 | Coste | El coste depende del proveedor o la ruta. Código MIT y pesos CC BY-NC 4.0; ejecución propia no exige API pero hardware y licencia de uso son separados |
 | Equipo | Preparación según la ruta elegida. Python 3.9 y PyTorch 2.1 según guía; modelo; GPU según tamaño; texto propio |
-
-Los pesos publicados no permiten asumir uso comercial porque el código sea MIT; las alternativas de instalación del README no se ejecutan todas juntas
-
-## Qué puedes hacer con él
-
-Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.
-
-## Por qué destaca
-
-Usos propuestos: Explorar generación de música; Estudiar sonidos a partir de texto.
-
-## Cómo funciona
 
 Los pesos publicados no permiten asumir uso comercial porque el código sea MIT; las alternativas de instalación del README no se ejecutan todas juntas
 
@@ -87,14 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.9 y PyTorch 2.1 según guía; modelo; GPU según tamaño; texto propio
 - **Etiquetas:** `audio` `inference` `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
-| [remotion](remotion.md) | 73.2k | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Enlaces
 

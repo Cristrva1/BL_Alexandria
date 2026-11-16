@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+ACE-Step 1.5, modelo y herramientas open source para generar música en local, de ace-step (ACE Studio y StepFun). Licencia MIT. Tiene ~15k estrellas (v0.1.8); la serie XL (DiT de 4B) salió en abril de 2026.
+
+## ¿Qué hace?
+
+Genera canciones a partir de letras e instrucciones de estilo, con variantes por calidad y velocidad (turbo, sft, XL) y un modelo de lenguaje de planificación.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11–3.12 y GPU CUDA recomendada (también MPS, ROCm, Intel XPU o CPU). La elección de modelo depende de la VRAM (por ejemplo, 16–20 GB para 2B sft o XL turbo) y puede usar vLLM para el LM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Backend del modelo de lenguaje. | Activa el backend vllm. |
+| [FFmpeg](ffmpeg.md) | Convertir y masterizar la salida. (combinación por arquitectura) | Procesa el audio. |
+| [rubberband](rubberband.md) | Ajustar tempo o tono sin degradar. (combinación por arquitectura) | Aplica stretching al resultado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v0.1.8 (2026-05-18) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas |
 | Coste | Sin pago a un modelo en la ruta básica. La ejecución local no necesita API de pago; hardware y modelos tienen sus costes y condiciones; el servicio web tiene términos independientes |
 | Equipo | Preparación según la ruta elegida. Python 3.11–3.12; uv; modelo y equipo compatibles; espacio para descarga |
-
-CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas
-
-## Qué puedes hacer con él
-
-Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.
-
-## Por qué destaca
-
-Usos propuestos: Explorar una base musical de prueba; Comparar variantes de generación local.
-
-## Cómo funciona
 
 CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas
 

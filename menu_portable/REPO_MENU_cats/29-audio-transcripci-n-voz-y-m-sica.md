@@ -37,6 +37,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una pieza muy corta y revisa duración, coherencia y recursos consumidos
 **Qué comprobar:** Puedes relacionar parámetros y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `ffmpeg`, `rubberband`
 
 ## `audiocraft`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=audio,inference,training,python
@@ -66,7 +67,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Genera una muestra corta y compara su relación con el prompt sin publicar el resultado
 **Qué comprobar:** Puedes identificar modelo, duración y artefactos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `moviepy`, `remotion`, `ffmpeg`
+**Combina con:** `ffmpeg`, `moviepy`, `remotion`
 
 ## `cosyvoice`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -99,7 +100,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Descarga una variante compatible y prueba una frase del idioma elegido
 **Qué comprobar:** Puedes comprobar voz, texto y archivo generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pipecat`
+**Combina con:** `pipecat`, `vllm`, `ffmpeg`
 **Alternativas (elige una):** `fish-speech`, `index-tts`
 
 ## `dograh`
@@ -130,6 +131,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un flujo de borrador y prueba una conversación local sin realizar llamadas telefónicas
 **Qué comprobar:** Puedes inspeccionar nodos, proveedores y transiciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `whisper-cpp`, `kokoro`
 
 ## `earshot`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=local · tags=edicion,mcp,python
@@ -160,6 +162,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta doctor y analiza un clip corto antes de solicitar modificaciones o generar sonidos
 **Qué comprobar:** Puedes revisar informe, segmentos y archivo original
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `remotion`, `ffmpeg`
 
 ## `edge-tts`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=tts,speech-synthesis,text-to-speech,python
@@ -189,7 +192,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera un audio y subtítulos de una frase y escucha pronunciación y pausas
 **Qué comprobar:** Puedes localizar MP3 y SRT y comprobar su contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `moviepy`
+**Combina con:** `moviepy`, `whisper`, `ffmpeg`
 **Alternativas (elige una):** `kokoro`
 
 ## `faster-whisper`
@@ -319,6 +322,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sintetiza una frase con duración acotada y comprueba pronunciación y tiempo real obtenido
 **Qué comprobar:** Puedes identificar controles que afectaron al resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `whisperx`, `ffmpeg`, `pipecat`
 **Alternativas (elige una):** `cosyvoice`
 
 ## `kokoro`
@@ -380,7 +384,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa terminal mode para una conversación breve y revisa cada etapa antes de añadir telefonía
 **Qué comprobar:** Puedes comprobar audio de entrada, modelo y respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `kokoro`
+**Combina con:** `kokoro`, `ollama`, `whisper-cpp`
 **Alternativas (elige una):** `pipecat`
 
 ## `luxtts`
@@ -413,7 +417,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sintetiza una frase y mide tiempo y calidad en tu propio equipo
 **Qué comprobar:** Puedes comparar texto, referencia y audio generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Combina con:** `comfyui`, `pipecat`, `moviepy`
 **Alternativas (elige una):** `kokoro`
 
 ## `music-megathread`
@@ -444,6 +448,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un reproductor local y comprueba su fuente, licencia y compatibilidad antes de descargar
 **Qué comprobar:** Puedes distinguir una app de un enlace a un servicio
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `whisper`, `rubberband`, `awesome-bigdata`
 
 ## `nemo`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=stt,tts,audio,python
@@ -538,7 +543,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una prueba local de una pregunta y comprueba transcripción, respuesta y audio por separado
 **Qué comprobar:** Puedes localizar en qué etapa falla la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `kokoro`, `whisper-cpp`
+**Combina con:** `kokoro`, `whisper-cpp`, `ollama`, `nemo`
 **Alternativas (elige una):** `livekit-agents`
 
 ## `rnnoise`
@@ -569,6 +574,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Procesa una copia corta de audio con ruido y escucha si mejora sin deformar la voz
 **Qué comprobar:** Puedes comparar original y salida y verificar formato
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `obs-studio`, `whisper-cpp`
 
 ## `rubberband`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=edicion,library,c
@@ -598,6 +604,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Cambia ligeramente el tempo de una copia de audio y compara duración y artefactos
 **Qué comprobar:** Puedes reconocer qué cambió en tiempo y tono
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `ace-step-1.5`, `audiocraft`
 
 ## `rvc`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=audio,tts,python

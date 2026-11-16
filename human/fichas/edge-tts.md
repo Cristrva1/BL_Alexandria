@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+edge-tts, módulo Python y CLI no oficial para usar el servicio TTS en línea de Microsoft Edge, de @rany2. Licencia LGPL-3.0, salvo un archivo bajo MIT (GitHub muestra NOASSERTION). Es maduro (~13k estrellas, 7.3.1).
+
+## ¿Qué hace?
+
+Sintetiza voz con las voces neuronales de Edge en muchos idiomas y genera subtítulos. Ya no admite SSML personalizado porque Microsoft lo bloquea.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install edge-tts` y se usa con `edge-tts` o `edge-playback` (este último requiere mpv salvo en Windows). Depende de un servicio de Microsoft que puede cambiar o cortarse.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MoviePy](moviepy.md) | Narración rápida para vídeos. | Genera el MP3 y móntalo. |
+| [whisper](whisper.md) | Comparar o subtitular. (combinación por arquitectura) | Combina según el caso. |
+| [FFmpeg](ffmpeg.md) | Convertir el audio. (combinación por arquitectura) | Convierte el formato. |
+
+**Notas:** Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad.
+
+Estado en GitHub: activo · último push 2026-10-14 · última versión publicada 7.3.1 (2026-10-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rany2/edge-tts/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz |
 | Coste | Coste por confirmar. Usa el servicio online de Microsoft Edge sin pedir una clave propia en el ejemplo; no se confirma garantía de coste, cuota o SLA |
 | Equipo | Preparación según la ruta elegida. Python y pipx; internet; texto no sensible |
-
-No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz
-
-## Qué puedes hacer con él
-
-Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una voz de prueba online; Explorar voces disponibles.
-
-## Cómo funciona
 
 No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y pipx; internet; texto no sensible
 - **Etiquetas:** `tts` `speech-synthesis` `text-to-speech` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
 ## Alternativas (elige una)
 
