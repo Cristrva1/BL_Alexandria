@@ -181,6 +181,25 @@ def score_command(
         console.print_json(_json.dumps(scores[mostrar], ensure_ascii=False))
 
 
+@app.command("candidatos-retiro")
+def candidatos_retiro_command(
+    umbral: Annotated[float, typer.Option("--umbral", help="Puntuación por debajo de la cual un repo puede ser candidato.")] = 45.0,
+    fecha: Annotated[str | None, typer.Option("--fecha", help="Fecha del informe (AAAA-MM-DD); por defecto, hoy.")] = None,
+    root: Annotated[Path, typer.Option("--root", help="Raíz de la biblioteca.")] = Path("."),
+) -> None:
+    """Informe de candidatos a retiro (puntuación baja + sin actividad + sin caso único). No retira nada."""
+    from repo_intelligence.quality import retirement
+
+    data = retirement.evaluate(root, threshold=umbral, today=fecha)
+    paths = retirement.write_report(root, data)
+    console.print(f"{len(data['candidatos'])} candidatos de {data['evaluados']} repos; {len(data['cerca'])} cumplen dos de tres; "
+                  f"{len(data['sin_datos'])} sin datos.")
+    for e in data["candidatos"]:
+        console.print(f"  {e['id']}: {e['puntuacion']:.0f}/100, {e['commits_365d']} commits en 365 días, "
+                      f"alternativa {e['grupo']['recomendado']}")
+    console.print("Escrito: " + ", ".join(str(p) for p in paths) + ". data/retired.json no se modifica.")
+
+
 @app.command("grupos")
 def grupos_command(
     proponer: Annotated[bool, typer.Option("--proponer", help="Muestra grupos que la similitud propone y que no están curados.")] = False,

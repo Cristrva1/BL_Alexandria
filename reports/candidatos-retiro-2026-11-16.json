@@ -1,0 +1,669 @@
+{
+  "fecha": "2026-11-16",
+  "umbral": 45.0,
+  "nota": "Propuesta para revisión. No se ha retirado nada: data/retired.json no cambia.",
+  "criterios": [
+    "puntuación < umbral",
+    "sin commits en 365 días (propios en derivados) o archivado",
+    "sin caso de uso único: en un grupo, no recomendado y sin marca caso_unico"
+  ],
+  "evaluados": 892,
+  "sin_datos": [
+    {
+      "id": "kimi-k2-7-code",
+      "motivo": "sin repositorio de GitHub"
+    },
+    {
+      "id": "pdfding",
+      "motivo": "alojado en codeberg"
+    }
+  ],
+  "candidatos": [
+    {
+      "id": "prompt-eng-tutorial",
+      "nombre": "Anthropic's Prompt Engineering Tutorial",
+      "gh": "anthropics/prompt-eng-interactive-tutorial",
+      "cat": 19,
+      "sub": "prompts",
+      "puntuacion": 38.4,
+      "ejes": {
+        "adopcion": 7.7,
+        "mantenimiento": 7.1,
+        "madurez": 8.0,
+        "licencia": 5.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 0.0
+      },
+      "licencia": "desconocida",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2026-08-28",
+      "archivado": false,
+      "estrellas": 39464,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-guias-de-ingenieria-de-prompts",
+        "titulo": "Guías de ingeniería de prompts",
+        "posicion": 2,
+        "total": 2,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
+        "cuando_origen": "plantilla",
+        "recomendado": "prompt-engineering-guide",
+        "puntuacion_recomendado": 62.2
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": true,
+        "sin_caso_unico": true
+      }
+    }
+  ],
+  "cerca": [
+    {
+      "id": "antigravity-cli",
+      "nombre": "Antigravity CLI",
+      "gh": "google-antigravity/antigravity-cli",
+      "cat": 20,
+      "sub": "terminal",
+      "puntuacion": 26.6,
+      "ejes": {
+        "adopcion": 2.0,
+        "mantenimiento": 6.4,
+        "madurez": 6.7,
+        "licencia": 1.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 0.0
+      },
+      "licencia": "propietaria",
+      "commits_365d": 109,
+      "commits_90d": 66,
+      "ultimo_push": "2026-11-14",
+      "archivado": false,
+      "estrellas": 2857,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-agentes-de-programacion-en-terminal",
+        "titulo": "Agentes de programación en terminal",
+        "posicion": 9,
+        "total": 9,
+        "papel": "alternativa",
+        "cuando": "Si usas Antigravity de Google y quieres su agente desde la terminal.",
+        "cuando_origen": "curado",
+        "recomendado": "opencode",
+        "puntuacion_recomendado": 82.4
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "backdoor",
+      "nombre": "backdoor",
+      "gh": "ajsai47/backdoor",
+      "cat": 23,
+      "sub": "serving",
+      "puntuacion": 36.5,
+      "ejes": {
+        "adopcion": 1.8,
+        "mantenimiento": 2.0,
+        "madurez": 5.2,
+        "licencia": 15.0,
+        "respaldo": 5.0,
+        "seguridad": 2.5,
+        "encaje": 5.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 18,
+      "commits_90d": 0,
+      "ultimo_push": "2026-05-22",
+      "archivado": false,
+      "estrellas": 302,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-pasarelas-y-routers-de-proveedores-llm",
+        "titulo": "Pasarelas y routers de proveedores LLM",
+        "posicion": 4,
+        "total": 4,
+        "papel": "alternativa",
+        "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros).",
+        "cuando_origen": "curado",
+        "recomendado": "litellm",
+        "puntuacion_recomendado": 77.2
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "caido",
+      "nombre": "Caido",
+      "gh": "caido/caido",
+      "cat": 16,
+      "sub": "pruebas",
+      "puntuacion": 37.9,
+      "ejes": {
+        "adopcion": 4.1,
+        "mantenimiento": 7.3,
+        "madurez": 10.0,
+        "licencia": 1.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 5.0
+      },
+      "licencia": "propietaria",
+      "commits_365d": 14,
+      "commits_90d": 2,
+      "ultimo_push": "2026-11-13",
+      "archivado": false,
+      "estrellas": 2738,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-proxies-de-pruebas-de-aplicaciones-web",
+        "titulo": "Proxies de pruebas de aplicaciones web",
+        "posicion": 2,
+        "total": 2,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.",
+        "cuando_origen": "plantilla",
+        "recomendado": "zaproxy",
+        "puntuacion_recomendado": 72.6
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "wham",
+      "nombre": "WHAM",
+      "gh": "yohanshin/WHAM",
+      "cat": 28,
+      "sub": "vision",
+      "puntuacion": 39.0,
+      "ejes": {
+        "adopcion": 0.7,
+        "mantenimiento": 3.4,
+        "madurez": 5.4,
+        "licencia": 15.0,
+        "respaldo": 5.0,
+        "seguridad": 2.5,
+        "encaje": 7.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2024-04-18",
+      "archivado": false,
+      "estrellas": 1178,
+      "fork_de": null,
+      "grupo": null,
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": true,
+        "sin_caso_unico": false
+      },
+      "caso_unico_motivo": "sin grupo de similares"
+    },
+    {
+      "id": "sleuthkit",
+      "nombre": "The Sleuth Kit",
+      "gh": "sleuthkit/sleuthkit",
+      "cat": 16,
+      "sub": "ir-forense",
+      "puntuacion": 41.0,
+      "ejes": {
+        "adopcion": 3.4,
+        "mantenimiento": 9.5,
+        "madurez": 10.0,
+        "licencia": 5.0,
+        "respaldo": 8.0,
+        "seguridad": 3.0,
+        "encaje": 2.0
+      },
+      "licencia": "desconocida",
+      "commits_365d": 327,
+      "commits_90d": 64,
+      "ultimo_push": "2026-11-14",
+      "archivado": false,
+      "estrellas": 3198,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-analisis-forense-de-discos",
+        "titulo": "Análisis forense de discos",
+        "posicion": 2,
+        "total": 2,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
+        "cuando_origen": "plantilla",
+        "recomendado": "autopsy",
+        "puntuacion_recomendado": 45.6
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "rnnoise",
+      "nombre": "rnnoise",
+      "gh": "xiph/rnnoise",
+      "cat": 29,
+      "sub": "audio",
+      "puntuacion": 41.1,
+      "ejes": {
+        "adopcion": 4.7,
+        "mantenimiento": 3.5,
+        "madurez": 5.0,
+        "licencia": 15.0,
+        "respaldo": 8.0,
+        "seguridad": 0.8,
+        "encaje": 4.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2025-02-22",
+      "archivado": false,
+      "estrellas": 5966,
+      "fork_de": null,
+      "grupo": null,
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": true,
+        "sin_caso_unico": false
+      },
+      "caso_unico_motivo": "sin grupo de similares"
+    },
+    {
+      "id": "data-analyst-roadmap",
+      "nombre": "data-analyst-roadmap",
+      "gh": "mtahiraslan/data-analyst-roadmap",
+      "cat": 10,
+      "sub": "recursos",
+      "puntuacion": 41.2,
+      "ejes": {
+        "adopcion": 3.3,
+        "mantenimiento": 4.9,
+        "madurez": 8.5,
+        "licencia": 15.0,
+        "respaldo": 5.0,
+        "seguridad": 2.5,
+        "encaje": 2.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2025-10-14",
+      "archivado": false,
+      "estrellas": 1136,
+      "fork_de": null,
+      "grupo": null,
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": true,
+        "sin_caso_unico": false
+      },
+      "caso_unico_motivo": "sin grupo de similares"
+    },
+    {
+      "id": "hunyuanvideo-1-5",
+      "nombre": "HunyuanVideo 1.5",
+      "gh": "Tencent-Hunyuan/HunyuanVideo-1.5",
+      "cat": 12,
+      "sub": "generativo",
+      "puntuacion": 41.2,
+      "ejes": {
+        "adopcion": 7.0,
+        "mantenimiento": 7.9,
+        "madurez": 5.8,
+        "licencia": 5.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 5.0
+      },
+      "licencia": "source_available",
+      "commits_365d": 120,
+      "commits_90d": 0,
+      "ultimo_push": "2026-04-10",
+      "archivado": false,
+      "estrellas": 4607,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-modelos-abiertos-de-video-generativo",
+        "titulo": "Modelos abiertos de video generativo",
+        "posicion": 3,
+        "total": 3,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+        "cuando_origen": "plantilla",
+        "recomendado": "wan2-2",
+        "puntuacion_recomendado": 67.2
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "rubberband",
+      "nombre": "rubberband",
+      "gh": "breakfastquay/rubberband",
+      "cat": 29,
+      "sub": "audio",
+      "puntuacion": 42.5,
+      "ejes": {
+        "adopcion": 1.1,
+        "mantenimiento": 6.9,
+        "madurez": 10.0,
+        "licencia": 12.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 2.0
+      },
+      "licencia": "osi_copyleft",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2025-03-03",
+      "archivado": false,
+      "estrellas": 814,
+      "fork_de": null,
+      "grupo": null,
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": true,
+        "sin_caso_unico": false
+      },
+      "caso_unico_motivo": "sin grupo de similares"
+    },
+    {
+      "id": "stop-slop",
+      "nombre": "Stop Slop",
+      "gh": "hardikpandya/stop-slop",
+      "cat": 27,
+      "sub": "escritura",
+      "puntuacion": 43.2,
+      "ejes": {
+        "adopcion": 9.3,
+        "mantenimiento": 5.7,
+        "madurez": 5.6,
+        "licencia": 15.0,
+        "respaldo": 5.0,
+        "seguridad": 2.5,
+        "encaje": 0.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 12,
+      "commits_90d": 0,
+      "ultimo_push": "2026-03-17",
+      "archivado": false,
+      "estrellas": 18992,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
+        "titulo": "Skills para quitar el tono de IA a los textos",
+        "posicion": 3,
+        "total": 3,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
+        "cuando_origen": "plantilla",
+        "recomendado": "humanizer",
+        "puntuacion_recomendado": 72.0
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "ten-framework",
+      "nombre": "TEN Framework",
+      "gh": "TEN-framework/ten-framework",
+      "cat": 29,
+      "sub": "voz-agentes",
+      "puntuacion": 43.2,
+      "ejes": {
+        "adopcion": 6.3,
+        "mantenimiento": 11.1,
+        "madurez": 7.2,
+        "licencia": 5.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 3.0
+      },
+      "licencia": "source_available",
+      "commits_365d": 426,
+      "commits_90d": 64,
+      "ultimo_push": "2026-11-16",
+      "archivado": false,
+      "estrellas": 11233,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-agentes-de-voz-en-tiempo-real",
+        "titulo": "Agentes de voz en tiempo real",
+        "posicion": 4,
+        "total": 4,
+        "papel": "alternativa",
+        "cuando": "Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real.",
+        "cuando_origen": "curado",
+        "recomendado": "pipecat",
+        "puntuacion_recomendado": 73.1
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "opencode-manager",
+      "nombre": "opencode-manager",
+      "gh": "chriswritescode-dev/opencode-manager",
+      "cat": 20,
+      "sub": "sesiones",
+      "puntuacion": 44.2,
+      "ejes": {
+        "adopcion": 3.4,
+        "mantenimiento": 8.0,
+        "madurez": 7.3,
+        "licencia": 15.0,
+        "respaldo": 5.0,
+        "seguridad": 2.5,
+        "encaje": 3.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 1375,
+      "commits_90d": 594,
+      "ultimo_push": "2026-11-16",
+      "archivado": false,
+      "estrellas": 1088,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-gestores-de-sesiones-de-agentes-de-codigo",
+        "titulo": "Gestores de sesiones de agentes de código",
+        "posicion": 2,
+        "total": 2,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.",
+        "cuando_origen": "plantilla",
+        "recomendado": "t3code",
+        "puntuacion_recomendado": 72.4
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "suitecrm",
+      "nombre": "SuiteCRM",
+      "gh": "SuiteCRM/SuiteCRM",
+      "cat": 18,
+      "sub": "crm",
+      "puntuacion": 44.8,
+      "ejes": {
+        "adopcion": 6.2,
+        "mantenimiento": 4.1,
+        "madurez": 10.0,
+        "licencia": 12.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 2.0
+      },
+      "licencia": "osi_copyleft",
+      "commits_365d": 199,
+      "commits_90d": 47,
+      "ultimo_push": "2026-11-04",
+      "archivado": false,
+      "estrellas": 5865,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-crm-y-erp-auto-hospedados",
+        "titulo": "CRM y ERP auto-hospedados",
+        "posicion": 5,
+        "total": 5,
+        "papel": "alternativa",
+        "cuando": "Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos.",
+        "cuando_origen": "curado",
+        "recomendado": "twenty-main",
+        "puntuacion_recomendado": 74.9
+      },
+      "condiciones": {
+        "puntuacion_baja": true,
+        "sin_actividad": false,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "kokoro",
+      "nombre": "Kokoro",
+      "gh": "hexgrad/kokoro",
+      "cat": 29,
+      "sub": "tts",
+      "puntuacion": 51.5,
+      "ejes": {
+        "adopcion": 9.8,
+        "mantenimiento": 6.3,
+        "madurez": 7.0,
+        "licencia": 15.0,
+        "respaldo": 5.0,
+        "seguridad": 1.4,
+        "encaje": 7.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2025-08-06",
+      "archivado": false,
+      "estrellas": 10162,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-tts-ligero-y-rapido",
+        "titulo": "TTS ligero y rápido",
+        "posicion": 3,
+        "total": 3,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.",
+        "cuando_origen": "plantilla",
+        "recomendado": "edge-tts",
+        "puntuacion_recomendado": 60.1
+      },
+      "condiciones": {
+        "puntuacion_baja": false,
+        "sin_actividad": true,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "audiocraft",
+      "nombre": "AudioCraft",
+      "gh": "facebookresearch/audiocraft",
+      "cat": 29,
+      "sub": "musica",
+      "puntuacion": 54.0,
+      "ejes": {
+        "adopcion": 9.4,
+        "mantenimiento": 5.1,
+        "madurez": 10.0,
+        "licencia": 15.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 4.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2026-03-03",
+      "archivado": false,
+      "estrellas": 23890,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-generacion-de-musica",
+        "titulo": "Generación de música",
+        "posicion": 3,
+        "total": 3,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.",
+        "cuando_origen": "plantilla",
+        "recomendado": "ace-step-1.5",
+        "puntuacion_recomendado": 69.6
+      },
+      "condiciones": {
+        "puntuacion_baja": false,
+        "sin_actividad": true,
+        "sin_caso_unico": true
+      }
+    },
+    {
+      "id": "storm",
+      "nombre": "STORM",
+      "gh": "stanford-oval/storm",
+      "cat": 21,
+      "sub": "research",
+      "puntuacion": 60.2,
+      "ejes": {
+        "adopcion": 15.6,
+        "mantenimiento": 6.6,
+        "madurez": 9.5,
+        "licencia": 15.0,
+        "respaldo": 8.0,
+        "seguridad": 2.5,
+        "encaje": 3.0
+      },
+      "licencia": "osi_permisiva",
+      "commits_365d": 0,
+      "commits_90d": 0,
+      "ultimo_push": "2025-09-30",
+      "archivado": false,
+      "estrellas": 31898,
+      "fork_de": null,
+      "grupo": {
+        "id": "g-agentes-de-investigacion-autonoma",
+        "titulo": "Agentes de investigación autónoma",
+        "posicion": 2,
+        "total": 3,
+        "papel": "alternativa",
+        "cuando": "Si buscas esto: sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia.",
+        "cuando_origen": "plantilla",
+        "recomendado": "gpt-researcher",
+        "puntuacion_recomendado": 61.3
+      },
+      "condiciones": {
+        "puntuacion_baja": false,
+        "sin_actividad": true,
+        "sin_caso_unico": true
+      }
+    }
+  ]
+}
