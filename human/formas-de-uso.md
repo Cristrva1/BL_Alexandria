@@ -6,7 +6,7 @@ Estas rutas se pueden combinar con un objetivo o categoría. Revisa la ficha: ca
 
 | Ruta | Repos | Abrir |
 |---|---:|---|
-| Sin clave de API de IA | 784 | [Explorar](../docs/index.html#/explorar?route=no_api) |
+| Sin clave de API de IA | 791 | [Explorar](../docs/index.html#/explorar?route=no_api) |
 | Con Claude Code | 244 | [Explorar](../docs/index.html#/explorar?route=claude) |
 | Con Codex | 210 | [Explorar](../docs/index.html#/explorar?route=codex) |
 | Con Antigravity | 160 | [Explorar](../docs/index.html#/explorar?route=antigravity) |

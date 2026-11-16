@@ -4,7 +4,7 @@
 
 Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas.
 
-17 repos · 3 secciones
+19 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -17,9 +17,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [CRM, ERP y soporte al cliente](#crm-erp-y-soporte-al-cliente) — 8 repos
+- [CRM, ERP y soporte al cliente](#crm-erp-y-soporte-al-cliente) — 9 repos
 - [Email, marketing y notificaciones](#email-marketing-y-notificaciones) — 7 repos
-- [Reservas y programación de citas](#reservas-y-programación-de-citas) — 2 repos
+- [Reservas y programación de citas](#reservas-y-programación-de-citas) — 3 repos
 
 ## CRM, ERP y soporte al cliente
 
@@ -31,6 +31,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [chatwoot](../fichas/chatwoot.md) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | Tu objetivo encaja con estos ejemplos: Organizar una mesa de soporte; Comparar atención humana y asistencia AI | API de IA opcional |
 | [crm](../fichas/compai-crm.md) | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. | Tu objetivo encaja con estos ejemplos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen | API de IA opcional |
 | [Zammad](../fichas/zammad.md) | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. | Tu objetivo encaja con estos ejemplos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención | Sin clave propia de API de IA en la ruta básica |
+| [SuiteCRM](../fichas/suitecrm.md) | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. | Tu objetivo encaja con estos ejemplos: CRM interno para un equipo comercial pequeño; portal de casos de soporte | Sin clave propia de API de IA en la ruta básica |
 | [FreeScout](../fichas/freescout.md) | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. | Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos | Sin clave propia de API de IA en la ruta básica |
 | [EspoCRM](../fichas/espocrm.md) | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. | Tu objetivo encaja con estos ejemplos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar | Sin clave propia de API de IA en la ruta básica |
 
@@ -51,6 +52,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [cal.diy](../fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita | Sin clave propia de API de IA en la ruta básica |
+| [Formbricks](../fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados | Sin clave propia de API de IA en la ruta básica |
 | [Easy!Appointments](../fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas

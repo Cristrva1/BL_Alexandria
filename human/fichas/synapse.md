@@ -30,6 +30,12 @@ Escrito en Python y Rust; se instala con paquetes de Debian, Docker o pip. Para 
 | [Caddy](caddy.md) | Caddy sirve como proxy inverso con TLS y delegación .well-known para Synapse (combinación por arquitectura). | Synapse en local; después configura reverse_proxy en Caddy. |
 | [coolify](coolify.md) | Synapse se puede desplegar en contenedor desde Coolify (combinación por arquitectura). | Coolify primero; después crea el servicio con volúmenes persistentes. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Element Web](element-web.md) · [Zulip](zulip.md)
+
 **Notas:** Para despliegues sencillos, servidores Matrix más ligeros (no catalogados) pueden bastar.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.165.0 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).

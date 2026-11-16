@@ -30,6 +30,12 @@ Servidor en Go con frontend React y PostgreSQL; se despliega con Docker, paquete
 | [Ollama](ollama.md) | Las funciones de IA de Mattermost o un bot propio pueden apuntar a un modelo local servido por Ollama (combinación por arquitectura). | Ollama en marcha; después configura el endpoint en la integración de IA. |
 | [coolify](coolify.md) | Mattermost se puede desplegar en contenedor desde Coolify (combinación por arquitectura). | Coolify primero; después crea el servicio con volúmenes persistentes. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Element Web](element-web.md)
+
 **Notas:** Alternativas (elige una): rocket-chat.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v12.1.0 (2026-11-05) · licencia declarada NOASSERTION (consultado el 2026-11-16).
@@ -104,6 +110,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Rocket.Chat](rocket-chat.md) | 46.5k | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. |
+| [Zulip](zulip.md) | 26.2k | Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. |
 
 ## Enlaces
 

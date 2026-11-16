@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-59 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+64 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -18,12 +18,13 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 10 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 11 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [activepieces](../fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
 | [Apache Airflow](../fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Sin clave propia de API de IA en la ruta básica |
+| [Dagger](../fichas/dagger.md) | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry. | Sin clave propia de API de IA en la ruta básica |
 | [Dagster](../fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica |
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
@@ -54,7 +55,7 @@ Distinguir conexiones oficiales,pasarelas y bibliotecas de WhatsApp.
 
 Gestionar clientes, oportunidades y conversaciones con personas.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-crm)
+[Explorar 9 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-crm)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -64,6 +65,7 @@ Gestionar clientes, oportunidades y conversaciones con personas.
 | [EspoCRM](../fichas/espocrm.md) | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. | Sin clave propia de API de IA en la ruta básica |
 | [FreeScout](../fichas/freescout.md) | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. | Sin clave propia de API de IA en la ruta básica |
 | [Odoo](../fichas/odoo.md) | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. | API de IA opcional |
+| [SuiteCRM](../fichas/suitecrm.md) | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. | Sin clave propia de API de IA en la ruta básica |
 | [twenty-main](../fichas/twenty-main.md) | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. | API de IA opcional |
 | [Zammad](../fichas/zammad.md) | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. | Sin clave propia de API de IA en la ruta básica |
 
@@ -121,12 +123,13 @@ Crear herramientas de operación y formularios sobre tus datos.
 
 Organizar disponibilidad y reserva de horarios.
 
-[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-reservas)
+[Explorar 3 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-reservas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [cal.diy](../fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica |
 | [Easy!Appointments](../fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Sin clave propia de API de IA en la ruta básica |
+| [Formbricks](../fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Sin clave propia de API de IA en la ruta básica |
 
 ### Constructores de conversaciones
 
@@ -145,13 +148,15 @@ Diseñar flujos conversacionales y conectar canales.
 
 Organizar espacios compartidos de comunicación.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-comunidades)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-comunidades)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Element Web](../fichas/element-web.md) | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse. | Sin clave propia de API de IA en la ruta básica |
 | [fluxer](../fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 | [Mattermost](../fichas/mattermost.md) | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. | Sin clave propia de API de IA en la ruta básica |
 | [Rocket.Chat](../fichas/rocket-chat.md) | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. | Sin clave propia de API de IA en la ruta básica |
 | [Synapse](../fichas/synapse.md) | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. | Sin clave propia de API de IA en la ruta básica |
+| [Zulip](../fichas/zulip.md) | Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

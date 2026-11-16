@@ -571,6 +571,12 @@
      "id": "coolify",
      "motivo": "Easy!Appointments se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
      "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Citas + encuesta de satisfacción».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Easy!Appointments → Formbricks.",
+     "reciproca_de": "formbricks"
     }
    ],
    "notas": "Alternativas (elige una): cal.diy.",

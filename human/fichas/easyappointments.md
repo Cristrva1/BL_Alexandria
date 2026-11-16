@@ -29,6 +29,7 @@ Escrito en PHP 8.2+ con MySQL; se instala en un servidor web o con el entorno Do
 | [EspoCRM](espocrm.md) | Las citas pueden registrarse como actividades del cliente en EspoCRM mediante ambas APIs (combinación por arquitectura). | Conecta las APIs con un flujo de automatización. |
 | [activepieces](activepieces.md) | La API REST de Easy!Appointments permite automatizar recordatorios o altas desde Activepieces (combinación por arquitectura). | Crea credenciales de API; después úsalas en Activepieces. |
 | [coolify](coolify.md) | Easy!Appointments se puede desplegar en contenedor desde Coolify (combinación por arquitectura). | Coolify primero; después crea el servicio con volúmenes persistentes. |
+| [Formbricks](formbricks.md) | Combinación recíproca: Formbricks lo enlaza como «Citas + encuesta de satisfacción». | Orden indicado desde Formbricks: Easy!Appointments → Formbricks. |
 
 **Notas:** Alternativas (elige una): cal.diy.
 

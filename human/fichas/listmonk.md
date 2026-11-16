@@ -29,6 +29,13 @@ Un binario en Go con PostgreSQL como único almacén. Se instala con Docker Comp
 | [activepieces](activepieces.md) | Alta de suscriptores o envíos transaccionales desde formularios y otros sistemas usando la API de listmonk (combinación por arquitectura). | Crea un token de API con permisos acotados en listmonk y úsalo en la pieza HTTP de Activepieces. |
 | [novu](novu.md) | listmonk para boletines masivos y Novu para notificaciones de producto multicanal (combinación por arquitectura). | Independientes; separa dominios de envío. |
 | [postiz-app](postiz-app.md) | Coordinar el calendario de redes sociales con las campañas de email (combinación por arquitectura). | Independientes; pueden compartir servidor pero cada uno con su base de datos. |
+| [Formbricks](formbricks.md) | Combinación recíproca: Formbricks lo enlaza como «Listmonk envía; Formbricks mide». | Orden indicado desde Formbricks: Listmonk ↔ Formbricks. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[SuiteCRM](suitecrm.md)
 
 **Notas:** Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email masivo; elegí no listarlo como combinación.
 

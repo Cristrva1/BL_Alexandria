@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **885 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **892 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -12,7 +12,7 @@ Las **885 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 
 | # | Categoría | Repos | Para qué |
 |---:|---|---:|---|
-| 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 17 | Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot. |
+| 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 18 | Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot. |
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
 | 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 34 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
 | 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 28 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
@@ -26,10 +26,10 @@ Las **885 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 19 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
-| 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 48 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
+| 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 50 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
 | 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 113 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
-| 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 16 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
-| 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 17 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
+| 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 18 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
+| 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 19 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 31 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
 | 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 21 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
 | 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
@@ -191,6 +191,15 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [FFmpeg](human/fichas/ffmpeg.md) · [playwright](human/fichas/playwright.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/trigger-dev.md) · [GitHub](https://github.com/triggerdotdev/trigger.dev)
+
+#### 🖥️ Dagger
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 16.6k<br>
+**Qué es:** Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install dagger/tap/dagger` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [Portainer CE](human/fichas/portainer.md)<br>
+**Más:** [ficha completa](human/fichas/dagger.md) · [GitHub](https://github.com/dagger/dagger)
 
 #### 📚 Dagster
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 16.4k<br>
@@ -3983,6 +3992,13 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 | [Pi-hole](human/fichas/pi-hole.md) | Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 | [AdGuardHome](human/fichas/adguardhome.md) | Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — Keycloak, authentik**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Keycloak](human/fichas/keycloak.md) | Tu objetivo encaja con estos ejemplos: OIDC para un cluster de apps propias; federar un LDAP existente | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [authentik](human/fichas/authentik.md) | Tu objetivo encaja con estos ejemplos: SSO delante de apps autoalojadas; MFA centralizado para el lab | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
 **⚖️ ¿Cuál elegir? — Calibre-Web, Kavita**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4240,6 +4256,15 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [activepieces](human/fichas/activepieces.md) · [vaultwarden](human/fichas/vaultwarden.md) · [CasaOS](human/fichas/casaos.md) · [cleanyourtv](human/fichas/cleanyourtv.md) · [optimizerDuck](human/fichas/optimizerduck.md)<br>
 **Más:** [ficha completa](human/fichas/adguardhome.md) · [GitHub](https://github.com/AdguardTeam/AdGuardHome)
 
+#### ⚙️ Keycloak
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 37.9k<br>
+**Qué es:** IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/keycloak/keycloak/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: OIDC para un cluster de apps propias; federar un LDAP existente — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [HashiCorp Vault](human/fichas/vault.md) · [Caddy](human/fichas/caddy.md)<br>
+**Más:** [ficha completa](human/fichas/keycloak.md) · [GitHub](https://github.com/keycloak/keycloak)
+
 #### ⚙️ HashiCorp Vault
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 36.5k<br>
 **Qué es:** Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro.<br>
@@ -4257,6 +4282,15 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Elige si:** Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [SOPS](human/fichas/sops.md)<br>
 **Más:** [ficha completa](human/fichas/keepassxc.md) · [GitHub](https://github.com/keepassxreboot/keepassxc)
+
+#### ⚙️ authentik
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 26.4k<br>
+**Qué es:** IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/goauthentik/authentik/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: SSO delante de apps autoalojadas; MFA centralizado para el lab — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [vaultwarden](human/fichas/vaultwarden.md) · [Caddy](human/fichas/caddy.md)<br>
+**Más:** [ficha completa](human/fichas/authentik.md) · [GitHub](https://github.com/goauthentik/authentik)
 
 #### 🖥️ age
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 24.3k<br>
@@ -5618,12 +5652,13 @@ Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de men
 | [evolution-api](human/fichas/evolution-api.md) | Tu objetivo encaja con estos ejemplos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [WAHA](human/fichas/waha.md) | Tu objetivo encaja con estos ejemplos: Prototipar un webhook de mensajería; Evaluar un gateway HTTP para una app propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Rocket.Chat, Mattermost**
+**⚖️ ¿Cuál elegir? — Rocket.Chat, Mattermost, Zulip**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Rocket.Chat](human/fichas/rocket-chat.md) | Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 | [Mattermost](human/fichas/mattermost.md) | Tu objetivo encaja con estos ejemplos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Zulip](human/fichas/zulip.md) | Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 ### WhatsApp y mensajería
 
@@ -5717,7 +5752,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.typebot.io/self-hosting/get-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [chatwoot](human/fichas/chatwoot.md) · [OpenWA](human/fichas/openwa.md) · [WAHA](human/fichas/waha.md)<br>
+**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [chatwoot](human/fichas/chatwoot.md) · [OpenWA](human/fichas/openwa.md) · [WAHA](human/fichas/waha.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/typebot.md) · [GitHub](https://github.com/baptisteArno/typebot.io)
 
 #### 📚 python-telegram-bot
@@ -5767,6 +5802,24 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/mattermost.md) · [GitHub](https://github.com/mattermost/mattermost)
 
+#### ⚙️ Zulip
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 26.2k<br>
+**Qué es:** Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/zulip/zulip/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Synapse](human/fichas/synapse.md)<br>
+**Más:** [ficha completa](human/fichas/zulip.md) · [GitHub](https://github.com/zulip/zulip)
+
+#### 🖥️ Element Web
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.7k<br>
+**Qué es:** Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/element-hq/element-web/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Synapse](human/fichas/synapse.md) · [Mattermost](human/fichas/mattermost.md)<br>
+**Más:** [ficha completa](human/fichas/element-web.md) · [GitHub](https://github.com/element-hq/element-web)
+
 #### 🌐 fluxer
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 10.9k<br>
 **Qué es:** Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.<br>
@@ -5791,18 +5844,14 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 
 Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas.
 
-**⚖️ ¿Cuál elegir? — Odoo, ERPNext**
+**⚖️ ¿Cuál elegir? — Odoo, twenty-main, ERPNext, SuiteCRM, EspoCRM**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Odoo](human/fichas/odoo.md) | Tu objetivo encaja con estos ejemplos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [ERPNext](human/fichas/erpnext.md) | Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
-**⚖️ ¿Cuál elegir? — twenty-main, EspoCRM**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
 | [twenty-main](human/fichas/twenty-main.md) | Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [ERPNext](human/fichas/erpnext.md) | Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [SuiteCRM](human/fichas/suitecrm.md) | Tu objetivo encaja con estos ejemplos: CRM interno para un equipo comercial pequeño; portal de casos de soporte | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [EspoCRM](human/fichas/espocrm.md) | Tu objetivo encaja con estos ejemplos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 **⚖️ ¿Cuál elegir? — Zammad, FreeScout**
@@ -5886,6 +5935,15 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/zammad.md) · [GitHub](https://github.com/zammad/zammad)
 
+#### 🖥️ SuiteCRM
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.9k<br>
+**Qué es:** CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: CRM interno para un equipo comercial pequeño; portal de casos de soporte — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [chatwoot](human/fichas/chatwoot.md) · [listmonk](human/fichas/listmonk.md)<br>
+**Más:** [ficha completa](human/fichas/suitecrm.md) · [GitHub](https://github.com/SuiteCRM/SuiteCRM)
+
 #### ⚙️ FreeScout
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 4.7k<br>
 **Qué es:** Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.<br>
@@ -5943,7 +6001,7 @@ curl -LO https://github.com/knadh/listmonk/raw/master/docker-compose.yml
 # Run the services in the background.
 docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar una newsletter propia; Evaluar segmentación de una lista de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [activepieces](human/fichas/activepieces.md) · [novu](human/fichas/novu.md) · [postiz-app](human/fichas/postiz-app.md)<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [novu](human/fichas/novu.md) · [postiz-app](human/fichas/postiz-app.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/listmonk.md) · [GitHub](https://github.com/knadh/listmonk)
 
 #### ⚙️ cloud-mail
@@ -5982,8 +6040,17 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/calcom/cal.diy/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md) · [crm](human/fichas/compai-crm.md)<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md) · [crm](human/fichas/compai-crm.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/cal-diy.md) · [GitHub](https://github.com/calcom/cal.diy)
+
+#### 🖥️ Formbricks
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.2k<br>
+**Qué es:** Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/formbricks/formbricks/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [cal.diy](human/fichas/cal-diy.md) · [Easy!Appointments](human/fichas/easyappointments.md) · [listmonk](human/fichas/listmonk.md) · [Typebot](human/fichas/typebot.md)<br>
+**Más:** [ficha completa](human/fichas/formbricks.md) · [GitHub](https://github.com/formbricks/formbricks)
 
 #### ⚙️ Easy!Appointments
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.5k<br>
@@ -5991,7 +6058,7 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/alextselegidis/easyappointments/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
-**Combina con:** [EspoCRM](human/fichas/espocrm.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
+**Combina con:** [EspoCRM](human/fichas/espocrm.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/easyappointments.md) · [GitHub](https://github.com/alextselegidis/easyappointments)
 
 ---

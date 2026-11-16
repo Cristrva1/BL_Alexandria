@@ -247,6 +247,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `coolify`, `syncthing`, `activepieces`, `jellyfin`, `kavita`
 
+## `authentik`
+role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=idp,sso
+
+**Qué es:** IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.
+**Stack:** Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/goauthentik/authentik
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/goauthentik/authentik/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: SSO delante de apps autoalojadas; MFA centralizado para el lab
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba.
+**Qué comprobar:** Login SSO funcionando.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vaultwarden`, `caddy`
+**Alternativas (elige una):** `keycloak`
+
 ## `bitwarden-clients`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=privacidad,app,typescript
 
@@ -764,6 +795,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes reconocer qué convenciones te sirven sin alterar tu bóveda habitual
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `obsidian-minimal`, `obsidian-clipper`, `obsidian-skills`, `40-questions`
+
+## `keycloak`
+role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=idp,sso
+
+**Qué es:** IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.
+**Stack:** Java, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/keycloak/keycloak
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/keycloak/keycloak/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: OIDC para un cluster de apps propias; federar un LDAP existente
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console.
+**Qué comprobar:** Realm de prueba creado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vault`, `caddy`
+**Alternativas (elige una):** `authentik`
 
 ## `logseq`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,clojure,app,local

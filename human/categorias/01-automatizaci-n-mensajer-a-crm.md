@@ -4,7 +4,7 @@
 
 Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.
 
-17 repos · 2 secciones
+18 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -16,7 +16,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Motores de workflow y automatización](#motores-de-workflow-y-automatización) — 10 repos
+- [Motores de workflow y automatización](#motores-de-workflow-y-automatización) — 11 repos
 - [Apps internas y bases de datos no-code](#apps-internas-y-bases-de-datos-no-code) — 7 repos
 
 ## Motores de workflow y automatización
@@ -32,6 +32,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Node-RED](../fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Tu objetivo encaja con estos ejemplos: Mostrar lecturas de un sensor recibidas por MQTT; Convertir un webhook en una secuencia de acciones | Sin clave propia de API de IA en la ruta básica |
 | [Windmill](../fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | Tu objetivo encaja con estos ejemplos: Convertir un script de conciliación en una herramienta interna con formulario; Programar una consulta de datos como tarea recurrente | API de IA opcional |
 | [Trigger.dev](../fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | Tu objetivo encaja con estos ejemplos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor | API de IA opcional |
+| [Dagger](../fichas/dagger.md) | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry. | Tu objetivo encaja con estos ejemplos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI | Sin clave propia de API de IA en la ruta básica |
 | [Dagster](../fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Tu objetivo encaja con estos ejemplos: mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles; probar pipelines de datos con tests unitarios antes de llevarlos a producción | Sin clave propia de API de IA en la ruta básica |
 
 ## Apps internas y bases de datos no-code

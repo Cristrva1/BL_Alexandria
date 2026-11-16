@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 887 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 894 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **887 repos** de IA y
+proyecto concreto. Tienes un menú curado de **894 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -216,7 +216,7 @@ Formato: `id` [role|exec|setup|inst] — one — tags:… — prov:… — tools
 - `guia` [D|loc|E|?] — Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo. — tags: learning
 - `tools` [D|loc|E|?] — Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar. — tags: skills
 
-### 1. Automatizar procesos y crear herramientas internas (17)
+### 1. Automatizar procesos y crear herramientas internas (18)
 Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.md`
 
 - `activepieces` [P|hyb|M|?] — Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flu — tags: automation,typescript,docker
@@ -224,6 +224,7 @@ Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.m
 - `appsmith` [P|loc|M|?] — Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. — tags: ui,automation,typescript,docker — alt: tooljet,budibase,nocodb
 - `baserow` [P|hyb|E|+] — Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashbo — tags: data,no-code,python,docker — alt: grist-core,teable,nocodb
 - `budibase` [P|loc|M|?] — Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. — tags: automation,agents,docker — alt: appsmith,tooljet,nocodb
+- `dagger` [A|loc|M|+] — Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría O — tags: ci,containers
 - `dagster` [L|loc|M|+] — Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster  — tags: automation,data,python — alt: airflow,prefect,kestra
 - `grist-core` [P|hyb|E|+] — Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en  — tags: data,spreadsheet,docker,python — alt: baserow,teable,nocodb
 - `huginn` [P|loc|M|+] — Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como u — tags: automation,ruby,docker — alt: node-red
@@ -622,7 +623,7 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `vibe-trading` [A|hyb|M|+] — Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. — tags: agentes,agent,python — prov: local
 - `yfinance` [L|loc|E|+] — Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames d — tags: finanzas,python,library,data
 
-### 15. Organizar notas, archivos y servicios personales (48)
+### 15. Organizar notas, archivos y servicios personales (50)
 Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 
 - `40-questions` [D|loc|E|?] — Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones pe — tags: personal,reference
@@ -633,6 +634,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `anytype-ts` [A|loc|E|?] — Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento pers — tags: notas,app,typescript — alt: appflowy
 - `appflowy` [A|hyb|E|?] — Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento  — tags: notas,app,dart — alt: anytype-ts
 - `audiobookshelf` [P|loc|H|?] — Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reprodu — tags: lectura,server,javascript
+- `authentik` [P|loc|-|?] — IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. — tags: idp,sso — alt: keycloak
 - `bitwarden-clients` [A|loc|E|?] — Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información co — tags: privacidad,app,typescript
 - `calibre-web` [P|loc|E|+] — Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuari — tags: self-hosted,python,server,reading — alt: kavita
 - `claude-obsidian` [S|loc|M|+] — Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsi — tags: notas,skill,python — alt: obsidian-second-brain
@@ -650,6 +652,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `kavita` [P|loc|E|?] — Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y met — tags: self-hosted,csharp,server,reading — alt: calibre-web
 - `keepassxc` [A|loc|E|?] — Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. — tags: security — alt: vaultwarden
 - `kepano-obsidian` [L|loc|M|?] — Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. — tags: notas,template,reference
+- `keycloak` [P|loc|-|?] — IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. — tags: idp,sso — alt: authentik
 - `logseq` [A|loc|E|?] — Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consult — tags: notas,clojure,app,local — alt: joplin,trilium,siyuan
 - `memos` [P|loc|E|?] — App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, AP — tags: notas,go,self-hosted,mcp
 - `nextcloud-server` [P|hyb|H|?] — Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. — tags: workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
@@ -791,18 +794,19 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `zaproxy` [A|loc|M|?] — Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy intercepto — tags: pruebas,java,security,app — alt: caido
 - `zeek` [A|loc|-|?] — Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red. — tags: security,network,nsm
 
-### 17. WhatsApp, mensajería y chatbots (16)
+### 17. WhatsApp, mensajería y chatbots (18)
 Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
 
 - `baileys` [L|loc|E|?] — Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. — tags: whatsapp,chatbot,typescript — alt: whatsapp-web-js,waha
 - `botpress` [L|hyb|M|+] — Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. — tags: chatbot,agents,typescript
 - `discord-js` [L|loc|E|?] — Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST  — tags: chatbots,javascript,library,discord
+- `element-web` [A|loc|M|?] — Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse. — tags: matrix,chat
 - `evolution-api` [P|loc|H|?] — API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. — tags: automation,whatsapp,typescript,docker — alt: whatsapp-web-js,waha
 - `fluxer` [P|hyb|M|?] — Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de aloj — tags: whatsapp,chatbot,typescript
-- `mattermost` [P|loc|M|?] — Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llama — tags: chat,self-hosted,go,server — alt: rocket-chat
+- `mattermost` [P|loc|M|?] — Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llama — tags: chat,self-hosted,go,server — alt: rocket-chat,zulip
 - `openwa` [P|loc|E|+] — Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndhar — tags: whatsapp,chatbot,typescript
 - `python-telegram-bot` [L|loc|E|+] — Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y  — tags: chatbots,python,library,telegram
-- `rocket-chat` [P|loc|M|?] — Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, om — tags: chat,self-hosted,typescript,server — alt: mattermost
+- `rocket-chat` [P|loc|M|?] — Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, om — tags: chat,self-hosted,typescript,server — alt: mattermost,zulip
 - `signal-cli` [A|loc|M|?] — Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir  — tags: messaging,java,cli
 - `synapse` [P|loc|H|?] — Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que  — tags: chat,python,self-hosted,server
 - `typebot` [P|loc|M|?] — Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. — tags: chatbot,automation,typescript
@@ -810,8 +814,9 @@ Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
 - `whatsapp-agentkit` [S|hyb|E|+] — Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita  — tags: agents,automation,python
 - `whatsapp-web-js` [L|loc|E|+] — Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. — tags: whatsapp,chatbot,javascript — alt: baileys,waha,evolution-api
 - `whatsmeow` [L|hyb|M|?] — Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. — tags: whatsapp,go,golang,whatsapp-web
+- `zulip` [P|loc|-|?] — Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. — tags: chat,self-hosted — alt: mattermost,rocket-chat
 
-### 18. CRM, ventas y marketing (17)
+### 18. CRM, ventas y marketing (19)
 Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 
 - `cal.diy` [P|hyb|H|?] — Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. — tags: motores,next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss — alt: easyappointments
@@ -820,16 +825,18 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 - `compai-crm` [P|cld|H|+] — CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. — tags: crm,typescript
 - `easyappointments` [P|loc|M|?] — Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedore — tags: booking,php,self-hosted,server — alt: cal.diy
 - `erpnext` [P|loc|H|+] — ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. — tags: crm,python — alt: odoo
-- `espocrm` [P|loc|M|?] — CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y p — tags: crm,php,self-hosted,server — alt: twenty-main
+- `espocrm` [P|loc|M|?] — CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y p — tags: crm,php,self-hosted,server — alt: twenty-main,suitecrm,odoo
+- `formbricks` [A|loc|M|?] — Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analiti — tags: forms,surveys,self-hosted
 - `freescout` [P|loc|E|?] — Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desp — tags: helpdesk,php,self-hosted,server — alt: zammad
 - `listmonk` [P|loc|M|+] — Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depe — tags: automation,email,go,docker
 - `mautic` [P|loc|H|?] — Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites com — tags: automation,email,php
 - `novu` [P|hyb|M|?] — Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y ch — tags: automation,email,typescript
-- `odoo` [P|loc|H|?] — Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. — tags: crm,python,postgres — alt: erpnext
+- `odoo` [P|loc|H|?] — Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. — tags: crm,python,postgres — alt: erpnext,suitecrm,espocrm,twenty-main
 - `open-seo` [P|loc|H|?] — Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. — tags: marketing,server,typescript
 - `postiz-app` [P|hyb|H|?] — Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones — tags: marketing,server,typescript
 - `sellbird` [A|loc|M|+] — Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. — tags: marketing,agent,python
-- `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker — alt: espocrm
+- `suitecrm` [A|loc|M|?] — CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP. — tags: crm — alt: espocrm,twenty-main,odoo
+- `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker — alt: espocrm,suitecrm,odoo
 - `zammad` [P|loc|H|?] — Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola int — tags: helpdesk,ruby,self-hosted,server — alt: freescout
 
 ### 19. Aprender IA y escribir mejores prompts (31)

@@ -1,0 +1,222 @@
+{
+ "batch": "altas-categorias-delgadas-1",
+ "checked_at": "2026-11-16",
+ "method": "README + docs + gh api. Formbricks completo; resto ligero. No se instaló ningún proyecto.",
+ "repos": {
+  "formbricks": {
+   "que_es": "Formbricks: experiencia/encuestas OS (AGPL núcleo; packages MIT; apps/web/modules/ee con licencia EE).",
+   "que_hace": "Crea y sirve encuestas web/in-app y recoge respuestas.",
+   "como_lo_hace": "Docker/docs oficiales o cloud Formbricks.",
+   "combina_con": [
+    {
+     "id": "cal.diy",
+     "motivo": "Cal.diy agenda; Formbricks encuesta post-cita.",
+     "orden_instalacion": "Cal.diy → Formbricks."
+    },
+    {
+     "id": "easyappointments",
+     "motivo": "Citas + encuesta de satisfacción.",
+     "orden_instalacion": "Easy!Appointments → Formbricks."
+    },
+    {
+     "id": "listmonk",
+     "motivo": "Listmonk envía; Formbricks mide.",
+     "orden_instalacion": "Listmonk ↔ Formbricks."
+    },
+    {
+     "id": "typebot",
+     "motivo": "Typebot conversacional; Formbricks formularios clásicos.",
+     "orden_instalacion": "Elige según UX."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/formbricks/formbricks#readme",
+    "https://formbricks.com"
+   ],
+   "github": {
+    "name_with_owner": "formbricks/formbricks",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "6.2.0 (2026-11-13)"
+   }
+  },
+  "zulip": {
+   "que_es": "Team chat Apache-2.0 con topic threading.",
+   "que_hace": "Mensajería organizada por streams y topics.",
+   "como_lo_hace": "Installer/docs o cloud.",
+   "combina_con": [
+    {
+     "id": "synapse",
+     "motivo": "Matrix federado vs Zulip centralizado.",
+     "orden_instalacion": "Elige modelo."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/zulip/zulip#readme",
+    "https://zulip.com"
+   ],
+   "github": {
+    "name_with_owner": "zulip/zulip",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "13.2 (2026-11-13)"
+   }
+  },
+  "element-web": {
+   "que_es": "Cliente Matrix AGPL de Element.",
+   "que_hace": "UI web para homeservers Matrix.",
+   "como_lo_hace": "Build/static host o imagen.",
+   "combina_con": [
+    {
+     "id": "synapse",
+     "motivo": "Element es el cliente típico de Synapse.",
+     "orden_instalacion": "Synapse → Element Web."
+    },
+    {
+     "id": "mattermost",
+     "motivo": "Chat de equipo no federado.",
+     "orden_instalacion": "Compara requisitos."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/element-hq/element-web#readme",
+    "https://element.io"
+   ],
+   "github": {
+    "name_with_owner": "element-hq/element-web",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.12.35 (2026-11-12)"
+   }
+  },
+  "authentik": {
+   "que_es": "Identity provider (MIT + enterprise/ propietaria).",
+   "que_hace": "Autentica y autoriza usuarios hacia apps.",
+   "como_lo_hace": "Docker/Helm oficiales.",
+   "combina_con": [
+    {
+     "id": "vaultwarden",
+     "motivo": "Credenciales de usuario + IdP.",
+     "orden_instalacion": "authentik SSO; Vaultwarden passwords."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy protege rutas con forward-auth.",
+     "orden_instalacion": "authentik + Caddy."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/goauthentik/authentik#readme",
+    "https://docs.goauthentik.io"
+   ],
+   "github": {
+    "name_with_owner": "goauthentik/authentik",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "version/2026.8.5 (2026-10-21)"
+   }
+  },
+  "keycloak": {
+   "que_es": "IdP Apache-2.0 de Keycloak.",
+   "que_hace": "Gestiona identidades, realms y protocolos SSO.",
+   "como_lo_hace": "Contenedor / Operator / distro.",
+   "combina_con": [
+    {
+     "id": "vault",
+     "motivo": "Vault puede federar/OIDC con Keycloak.",
+     "orden_instalacion": "Keycloak IdP → Vault."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Apps detrás de Caddy con OIDC.",
+     "orden_instalacion": "Keycloak + Caddy."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/keycloak/keycloak#readme",
+    "https://www.keycloak.org"
+   ],
+   "github": {
+    "name_with_owner": "keycloak/keycloak",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "26.8.2 (2026-11-05)"
+   }
+  },
+  "dagger": {
+   "que_es": "Motor de pipelines portable (Apache-2.0).",
+   "que_hace": "Orquesta funciones en contenedores de forma tipada y cacheable.",
+   "como_lo_hace": "brew/instalador + runtime de contenedores.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Coolify despliega; Dagger construye.",
+     "orden_instalacion": "Dagger build → Coolify."
+    },
+    {
+     "id": "portainer",
+     "motivo": "Portainer gestiona el runtime Docker.",
+     "orden_instalacion": "Dagger usa el mismo Docker."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/dagger/dagger#readme",
+    "https://dagger.io"
+   ],
+   "github": {
+    "name_with_owner": "dagger/dagger",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.21.11 (2026-10-21)"
+   }
+  },
+  "suitecrm": {
+   "que_es": "CRM AGPL SuiteCRM Ltd.",
+   "que_hace": "Gestiona leads, cuentas, oportunidades y soporte.",
+   "como_lo_hace": "LAMP/Docker + instalador.",
+   "combina_con": [
+    {
+     "id": "chatwoot",
+     "motivo": "Chatwoot atención; SuiteCRM backoffice.",
+     "orden_instalacion": "Complementarios."
+    },
+    {
+     "id": "listmonk",
+     "motivo": "Campañas email + CRM.",
+     "orden_instalacion": "SuiteCRM + Listmonk."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/SuiteCRM/SuiteCRM#readme",
+    "https://suitecrm.com"
+   ],
+   "github": {
+    "name_with_owner": "SuiteCRM/SuiteCRM",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "v7.15.2 (2026-07-31)"
+   }
+  }
+ }
+}

@@ -94,6 +94,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `ollama`, `coolify`
 
+## `element-web`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=matrix,chat
+
+**Qué es:** Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/element-hq/element-web
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/element-hq/element-web/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Configura element-web contra tu Synapse de lab según docs Element.
+**Qué comprobar:** Inicias sesión en el cliente web.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `synapse`, `mattermost`
+
 ## `evolution-api`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,whatsapp,typescript,docker
 
@@ -184,7 +214,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Los mensajes enviados al webhook aparecen en el canal.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `ollama`, `coolify`
-**Alternativas (elige una):** `rocket-chat`
+**Alternativas (elige una):** `rocket-chat`, `zulip`
 
 ## `openwa`
 role=platform · exec=local · setup=easy · mcp=True · prov=— · tags=whatsapp,chatbot,typescript
@@ -283,7 +313,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes chatear en el canal desde la web y la app móvil.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `ollama`, `coolify`
-**Alternativas (elige una):** `mattermost`
+**Alternativas (elige una):** `mattermost`, `zulip`
 
 ## `signal-cli`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=messaging,java,cli
@@ -373,7 +403,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un flujo de dos preguntas con respuestas fijas y comprueba la rama elegida
 **Qué comprobar:** El resultado guarda respuestas y recorre el camino esperado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `evolution-api`, `chatwoot`, `openwa`, `waha`
+**Combina con:** `evolution-api`, `chatwoot`, `openwa`, `waha`, `formbricks`
 
 ## `waha`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,automation,docker
@@ -498,3 +528,34 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes reconocer el estado del cliente multidispositivo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `ollama`, `chatwoot`
+
+## `zulip`
+role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=chat,self-hosted
+
+**Qué es:** Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.
+**Stack:** Python, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/zulip/zulip
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/zulip/zulip/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Sigue https://zulip.readthedocs.io para un install de lab o usa Zulip Cloud de prueba.
+**Qué comprobar:** Creas un stream y un topic.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `synapse`
+**Alternativas (elige una):** `mattermost`, `rocket-chat`

@@ -1,0 +1,224 @@
+{
+  "lote": "categorias-delgadas-1",
+  "checked_at": "2026-11-16",
+  "added": [
+    {
+      "id": "formbricks",
+      "nivel": "completo",
+      "borrador": false,
+      "full_name": "formbricks/formbricks",
+      "github_id": 500289888,
+      "stars": 13246,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-16",
+      "archived": false,
+      "topics": [
+        "experience-management",
+        "form",
+        "forms",
+        "nextjs",
+        "open-source",
+        "react",
+        "reactjs",
+        "survey",
+        "survey-analysis",
+        "survey-data",
+        "survey-form",
+        "surveys",
+        "tailwindcss",
+        "turborepo",
+        "typeform",
+        "typescript",
+        "xm"
+      ],
+      "homepage": "https://formbricks.com",
+      "default_branch": "main",
+      "language": "TypeScript",
+      "description": "Open Source Qualtrics Alternative"
+    },
+    {
+      "id": "zulip",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "zulip/zulip",
+      "github_id": 43160685,
+      "stars": 26239,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-16",
+      "archived": false,
+      "topics": [
+        "apache",
+        "chat",
+        "collaboration",
+        "electron",
+        "foss",
+        "free",
+        "javascript",
+        "python",
+        "python3",
+        "react-native",
+        "slack",
+        "zulip"
+      ],
+      "homepage": "https://zulip.com",
+      "default_branch": "main",
+      "language": "Python",
+      "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused."
+    },
+    {
+      "id": "element-web",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "element-hq/element-web",
+      "github_id": 39487546,
+      "stars": 13662,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-16",
+      "archived": false,
+      "topics": [
+        "hacktoberfest",
+        "matrix"
+      ],
+      "homepage": "https://element.io",
+      "default_branch": "develop",
+      "language": "TypeScript",
+      "description": "A glossy Matrix collaboration client for the web."
+    },
+    {
+      "id": "authentik",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "goauthentik/authentik",
+      "github_id": 230885748,
+      "stars": 26366,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-16",
+      "archived": false,
+      "topics": [
+        "authentication",
+        "authentik",
+        "authorization",
+        "kubernetes",
+        "oauth2",
+        "oauth2-client",
+        "oauth2-server",
+        "oidc",
+        "oidc-client",
+        "oidc-provider",
+        "proxy",
+        "reverse-proxy",
+        "saml",
+        "saml-idp",
+        "saml-sp",
+        "security",
+        "sso"
+      ],
+      "homepage": "https://goauthentik.io",
+      "default_branch": "main",
+      "language": "Python",
+      "description": "The authentication glue you need."
+    },
+    {
+      "id": "keycloak",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "keycloak/keycloak",
+      "github_id": 11125589,
+      "stars": 37893,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-16",
+      "archived": false,
+      "topics": [
+        "keycloak",
+        "oidc",
+        "saml"
+      ],
+      "homepage": "https://www.keycloak.org",
+      "default_branch": "main",
+      "language": "Java",
+      "description": "Open Source Identity and Access Management For Modern Applications and Services"
+    },
+    {
+      "id": "dagger",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "dagger/dagger",
+      "github_id": 222824662,
+      "stars": 16621,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-16",
+      "archived": false,
+      "topics": [
+        "agents",
+        "caching",
+        "ci-cd",
+        "containers",
+        "continuous-deployment",
+        "continuous-integration",
+        "devops",
+        "docker",
+        "graphql",
+        "workflows"
+      ],
+      "homepage": "https://dagger.io",
+      "default_branch": "main",
+      "language": "Go",
+      "description": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud"
+    },
+    {
+      "id": "suitecrm",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "SuiteCRM/SuiteCRM",
+      "github_id": 13044600,
+      "stars": 5865,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-04",
+      "archived": false,
+      "topics": [
+        "accounts",
+        "agplv3",
+        "cases",
+        "contacts",
+        "contracts",
+        "crm",
+        "documents",
+        "leads",
+        "multi-currency",
+        "multi-language-support",
+        "opportunities",
+        "php",
+        "portal",
+        "quotes",
+        "reports",
+        "suitecrm",
+        "workflow"
+      ],
+      "homepage": "https://www.suitecrm.com",
+      "default_branch": "hotfix",
+      "language": "PHP",
+      "description": "SuiteCRM - Open source CRM for the world"
+    }
+  ],
+  "skipped": [],
+  "warnings": [],
+  "reciprocal": {
+    "cal.diy": [
+      "formbricks"
+    ],
+    "easyappointments": [
+      "formbricks"
+    ],
+    "listmonk": [
+      "formbricks"
+    ],
+    "typebot": [
+      "formbricks"
+    ]
+  },
+  "new_subs": [],
+  "notes": [
+    "No se instaló ni se ejecutó ningún proyecto del catálogo.",
+    "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
+  ]
+}

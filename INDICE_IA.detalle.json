@@ -2130,7 +2130,8 @@
     "evolution-api",
     "chatwoot",
     "openwa",
-    "waha"
+    "waha",
+    "formbricks"
    ],
    "alternatives": [],
    "repo": "https://github.com/baptisteArno/typebot.io",
@@ -2248,6 +2249,12 @@
      "motivo": "Combinación recíproca: WAHA lo enlaza como «Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde WAHA: Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill.",
      "reciproca_de": "waha"
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Typebot conversacional; Formbricks formularios clásicos».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Elige según UX.",
+     "reciproca_de": "formbricks"
     }
    ],
    "descripcion_notas": "Revisa la FSL antes de ofrecer Typebot como servicio a terceros.",
@@ -2455,7 +2462,10 @@
     "botpress"
    ],
    "alternatives": [
-    "erpnext"
+    "erpnext",
+    "suitecrm",
+    "espocrm",
+    "twenty-main"
    ],
    "repo": "https://github.com/odoo/odoo",
    "homepage": "https://www.odoo.com",
@@ -2615,7 +2625,9 @@
     "docuseal"
    ],
    "alternatives": [
-    "espocrm"
+    "espocrm",
+    "suitecrm",
+    "odoo"
    ],
    "repo": "https://github.com/twentyhq/twenty",
    "homepage": "https://twenty.com",
@@ -3255,7 +3267,8 @@
    "combines_with": [
     "activepieces",
     "novu",
-    "postiz-app"
+    "postiz-app",
+    "formbricks"
    ],
    "alternatives": [],
    "repo": "https://github.com/knadh/listmonk",
@@ -3369,6 +3382,12 @@
      "id": "postiz-app",
      "motivo": "Coordinar el calendario de redes sociales con las campañas de email (combinación por arquitectura).",
      "orden_instalacion": "Independientes; pueden compartir servidor pero cada uno con su base de datos."
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Listmonk envía; Formbricks mide».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Listmonk ↔ Formbricks.",
+     "reciproca_de": "formbricks"
     }
    ],
    "descripcion_notas": "Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email masivo; elegí no listarlo como combinación.",
@@ -66409,7 +66428,8 @@
     "activepieces",
     "twenty-main",
     "botpress",
-    "compai-crm"
+    "compai-crm",
+    "formbricks"
    ],
    "alternatives": [
     "easyappointments"
@@ -66535,6 +66555,12 @@
      "motivo": "Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado.",
      "reciproca_de": "compai-crm"
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Cal.diy agenda; Formbricks encuesta post-cita».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Cal.diy → Formbricks.",
+     "reciproca_de": "formbricks"
     }
    ],
    "descripcion_fuentes": [
@@ -120673,7 +120699,8 @@
     "coolify"
    ],
    "alternatives": [
-    "mattermost"
+    "mattermost",
+    "zulip"
    ],
    "repo": "https://github.com/RocketChat/Rocket.Chat",
    "homepage": "https://rocket.chat/",
@@ -120833,7 +120860,8 @@
     "coolify"
    ],
    "alternatives": [
-    "rocket-chat"
+    "rocket-chat",
+    "zulip"
    ],
    "repo": "https://github.com/mattermost/mattermost",
    "homepage": "https://mattermost.com",
@@ -121630,7 +121658,9 @@
     "coolify"
    ],
    "alternatives": [
-    "twenty-main"
+    "twenty-main",
+    "suitecrm",
+    "odoo"
    ],
    "repo": "https://github.com/espocrm/espocrm",
    "homepage": "https://www.espocrm.com",
@@ -121787,7 +121817,8 @@
    "combines_with": [
     "espocrm",
     "activepieces",
-    "coolify"
+    "coolify",
+    "formbricks"
    ],
    "alternatives": [
     "cal.diy"
@@ -121906,6 +121937,12 @@
      "id": "coolify",
      "motivo": "Easy!Appointments se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
      "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    },
+    {
+     "id": "formbricks",
+     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Citas + encuesta de satisfacción».",
+     "orden_instalacion": "Orden indicado desde Formbricks: Easy!Appointments → Formbricks.",
+     "reciproca_de": "formbricks"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): cal.diy.",
@@ -145137,6 +145174,1086 @@
     "primary_language": "C++",
     "checked_at": "2026-11-16",
     "latest_release": "2.8.0 (2026-10-21)"
+   }
+  },
+  "formbricks": {
+   "name": "Formbricks",
+   "cat": 18,
+   "sub": "reservas",
+   "desc": "Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.",
+   "how": "App Node/Next; Docker o cloud; módulos EE bajo licencia distinta, núcleo AGPL.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/formbricks/formbricks/blob/main/README.md",
+   "cases": [
+    "encuestas NPS in-app en un producto propio",
+    "formularios de onboarding autoalojados"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Open-core: directorio apps/web/modules/ee con licencia Enterprise. Núcleo AGPL.",
+   "combines_with": [
+    "cal.diy",
+    "easyappointments",
+    "listmonk",
+    "typebot"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/formbricks/formbricks",
+   "homepage": "https://formbricks.com",
+   "license": "NOASSERTION",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/formbricks.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/formbricks/formbricks/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "251685c7bff8f3325e9056b8ffdd7f824034ea7c"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://formbricks.com",
+    "source": "https://github.com/formbricks/formbricks/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "251685c7bff8f3325e9056b8ffdd7f824034ea7c",
+    "root_tree_sha": "4d194335e23d8161052a3250883b1c34cb073623",
+    "readme_url": "https://github.com/formbricks/formbricks/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "encuestas NPS in-app en un producto propio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "formularios de onboarding autoalojados",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Sigue https://formbricks.com docs para Docker Compose y abre la UI.",
+    "success": "Creas una encuesta de prueba.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/formbricks/formbricks/blob/main/README.md",
+    "source_blob_sha": "251685c7bff8f3325e9056b8ffdd7f824034ea7c",
+    "previous_category": [
+     18,
+     "reservas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Formbricks: experiencia/encuestas OS (AGPL núcleo; packages MIT; apps/web/modules/ee con licencia EE).",
+   "que_hace": "Crea y sirve encuestas web/in-app y recoge respuestas.",
+   "como_lo_hace": "Docker/docs oficiales o cloud Formbricks.",
+   "combina_con": [
+    {
+     "id": "cal.diy",
+     "motivo": "Cal.diy agenda; Formbricks encuesta post-cita.",
+     "orden_instalacion": "Cal.diy → Formbricks."
+    },
+    {
+     "id": "easyappointments",
+     "motivo": "Citas + encuesta de satisfacción.",
+     "orden_instalacion": "Easy!Appointments → Formbricks."
+    },
+    {
+     "id": "listmonk",
+     "motivo": "Listmonk envía; Formbricks mide.",
+     "orden_instalacion": "Listmonk ↔ Formbricks."
+    },
+    {
+     "id": "typebot",
+     "motivo": "Typebot conversacional; Formbricks formularios clásicos.",
+     "orden_instalacion": "Elige según UX."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/formbricks/formbricks#readme",
+    "https://formbricks.com"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "formbricks/formbricks",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "6.2.0 (2026-11-13)"
+   }
+  },
+  "zulip": {
+   "name": "Zulip",
+   "cat": 17,
+   "sub": "comunidades",
+   "desc": "Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.",
+   "how": "Servidor Python/Django + clients; instalador documentado o Docker.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/zulip/zulip/blob/main/README.md",
+   "cases": [
+    "chat interno con hilos por ticket",
+    "comunidad open source autoalojada"
+   ],
+   "stack": "Python, package.json, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "synapse"
+   ],
+   "alternatives": [
+    "mattermost",
+    "rocket-chat"
+   ],
+   "repo": "https://github.com/zulip/zulip",
+   "homepage": "https://zulip.com",
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/zulip.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/zulip/zulip/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "062e7788bfa050ccfc43727a68a29025a0a61127"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://zulip.com",
+    "source": "https://github.com/zulip/zulip/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "062e7788bfa050ccfc43727a68a29025a0a61127",
+    "root_tree_sha": "afcd0cae679ed84eecd3570d072c93e50a71d865",
+    "readme_url": "https://github.com/zulip/zulip/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: chat interno con hilos por ticket; comunidad open source autoalojada.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "chat interno con hilos por ticket",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "comunidad open source autoalojada",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Sigue https://zulip.readthedocs.io para un install de lab o usa Zulip Cloud de prueba.",
+    "success": "Creas un stream y un topic.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/zulip/zulip/blob/main/README.md",
+    "source_blob_sha": "062e7788bfa050ccfc43727a68a29025a0a61127",
+    "previous_category": [
+     17,
+     "comunidades"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Team chat Apache-2.0 con topic threading.",
+   "que_hace": "Mensajería organizada por streams y topics.",
+   "como_lo_hace": "Installer/docs o cloud.",
+   "combina_con": [
+    {
+     "id": "synapse",
+     "motivo": "Matrix federado vs Zulip centralizado.",
+     "orden_instalacion": "Elige modelo."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/zulip/zulip#readme",
+    "https://zulip.com"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zulip/zulip",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "13.2 (2026-11-13)"
+   }
+  },
+  "element-web": {
+   "name": "Element Web",
+   "cat": 17,
+   "sub": "comunidades",
+   "desc": "Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.",
+   "how": "App React; se sirve estático apuntando a un homeserver Matrix.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/element-hq/element-web/blob/develop/README.md",
+   "cases": [
+    "UI web delante de Synapse propio",
+    "salas E2E para un equipo"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "synapse",
+    "mattermost"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/element-hq/element-web",
+   "homepage": "https://element.io",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/element-web.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/element-hq/element-web/blob/develop/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "3a18763b13d380fc9ab84fe48de5524ad6e76b7e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://element.io",
+    "source": "https://github.com/element-hq/element-web/blob/develop/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "3a18763b13d380fc9ab84fe48de5524ad6e76b7e",
+    "root_tree_sha": "5985a54e4139833dc550e56a8e6271cb7ec398f0",
+    "readme_url": "https://github.com/element-hq/element-web/blob/develop/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: UI web delante de Synapse propio; salas E2E para un equipo.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "UI web delante de Synapse propio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "salas E2E para un equipo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Configura element-web contra tu Synapse de lab según docs Element.",
+    "success": "Inicias sesión en el cliente web.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/element-hq/element-web/blob/develop/README.md",
+    "source_blob_sha": "3a18763b13d380fc9ab84fe48de5524ad6e76b7e",
+    "previous_category": [
+     17,
+     "comunidades"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Cliente Matrix AGPL de Element.",
+   "que_hace": "UI web para homeservers Matrix.",
+   "como_lo_hace": "Build/static host o imagen.",
+   "combina_con": [
+    {
+     "id": "synapse",
+     "motivo": "Element es el cliente típico de Synapse.",
+     "orden_instalacion": "Synapse → Element Web."
+    },
+    {
+     "id": "mattermost",
+     "motivo": "Chat de equipo no federado.",
+     "orden_instalacion": "Compara requisitos."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/element-hq/element-web#readme",
+    "https://element.io"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "element-hq/element-web",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.12.35 (2026-11-12)"
+   }
+  },
+  "authentik": {
+   "name": "authentik",
+   "cat": 15,
+   "sub": "privacidad",
+   "desc": "IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.",
+   "how": "Docker Compose / Helm; outposts; UI de flujos.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/goauthentik/authentik/blob/main/README.md",
+   "cases": [
+    "SSO delante de apps autoalojadas",
+    "MFA centralizado para el lab"
+   ],
+   "stack": "Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: SSO delante de apps autoalojadas; MFA centralizado para el lab",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Open-core: authentik/enterprise/ con licencia distinta. Núcleo MIT.",
+   "combines_with": [
+    "vaultwarden",
+    "caddy"
+   ],
+   "alternatives": [
+    "keycloak"
+   ],
+   "repo": "https://github.com/goauthentik/authentik",
+   "homepage": "https://goauthentik.io",
+   "license": "NOASSERTION",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/authentik.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/goauthentik/authentik/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "067ed57f7c1190a2cf7961daa86d9069c8aa5c43"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://goauthentik.io",
+    "source": "https://github.com/goauthentik/authentik/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "067ed57f7c1190a2cf7961daa86d9069c8aa5c43",
+    "root_tree_sha": "b37ff93d319f72fe7a4462806362b4654f3a22f9",
+    "readme_url": "https://github.com/goauthentik/authentik/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: SSO delante de apps autoalojadas; MFA centralizado para el lab.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "SSO delante de apps autoalojadas",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "MFA centralizado para el lab",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba.",
+    "success": "Login SSO funcionando.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/goauthentik/authentik/blob/main/README.md",
+    "source_blob_sha": "067ed57f7c1190a2cf7961daa86d9069c8aa5c43",
+    "previous_category": [
+     15,
+     "privacidad"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Identity provider (MIT + enterprise/ propietaria).",
+   "que_hace": "Autentica y autoriza usuarios hacia apps.",
+   "como_lo_hace": "Docker/Helm oficiales.",
+   "combina_con": [
+    {
+     "id": "vaultwarden",
+     "motivo": "Credenciales de usuario + IdP.",
+     "orden_instalacion": "authentik SSO; Vaultwarden passwords."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy protege rutas con forward-auth.",
+     "orden_instalacion": "authentik + Caddy."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/goauthentik/authentik#readme",
+    "https://docs.goauthentik.io"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "goauthentik/authentik",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "version/2026.8.5 (2026-10-21)"
+   }
+  },
+  "keycloak": {
+   "name": "Keycloak",
+   "cat": 15,
+   "sub": "privacidad",
+   "desc": "IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.",
+   "how": "Quarkus distro; Operator/Helm/Docker; consola de administración.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/keycloak/keycloak/blob/main/README.md",
+   "cases": [
+    "OIDC para un cluster de apps propias",
+    "federar un LDAP existente"
+   ],
+   "stack": "Java, pom.xml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: OIDC para un cluster de apps propias; federar un LDAP existente",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "vault",
+    "caddy"
+   ],
+   "alternatives": [
+    "authentik"
+   ],
+   "repo": "https://github.com/keycloak/keycloak",
+   "homepage": "https://www.keycloak.org",
+   "license": "Apache-2.0",
+   "lang": "Java",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/keycloak.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/keycloak/keycloak/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "7fb6e8054e969370aec2e0518be50d2cf06c3947"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://www.keycloak.org",
+    "source": "https://github.com/keycloak/keycloak/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "7fb6e8054e969370aec2e0518be50d2cf06c3947",
+    "root_tree_sha": "44f3366823b74361efa67d109ee7e29f5e8e1b99",
+    "readme_url": "https://github.com/keycloak/keycloak/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: OIDC para un cluster de apps propias; federar un LDAP existente.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "OIDC para un cluster de apps propias",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "federar un LDAP existente",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console.",
+    "success": "Realm de prueba creado.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/keycloak/keycloak/blob/main/README.md",
+    "source_blob_sha": "7fb6e8054e969370aec2e0518be50d2cf06c3947",
+    "previous_category": [
+     15,
+     "privacidad"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "IdP Apache-2.0 de Keycloak.",
+   "que_hace": "Gestiona identidades, realms y protocolos SSO.",
+   "como_lo_hace": "Contenedor / Operator / distro.",
+   "combina_con": [
+    {
+     "id": "vault",
+     "motivo": "Vault puede federar/OIDC con Keycloak.",
+     "orden_instalacion": "Keycloak IdP → Vault."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Apps detrás de Caddy con OIDC.",
+     "orden_instalacion": "Keycloak + Caddy."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/keycloak/keycloak#readme",
+    "https://www.keycloak.org"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "keycloak/keycloak",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "26.8.2 (2026-11-05)"
+   }
+  },
+  "dagger": {
+   "name": "Dagger",
+   "cat": 1,
+   "sub": "motores",
+   "desc": "Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry.",
+   "how": "CLI (`brew install dagger/tap/dagger`) + engine; pipelines en Go/Python/TS/…",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/dagger/dagger/blob/main/README.md",
+   "cases": [
+    "reemplazar un script CI frágil",
+    "correr el mismo pipeline en laptop y CI"
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "coolify",
+    "portainer"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/dagger/dagger",
+   "homepage": "https://dagger.io",
+   "license": "Apache-2.0",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/dagger.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/dagger/dagger/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "e4de8960f283d2fad72755e7f2eee0f74688e9dc"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "brew install dagger/tap/dagger",
+    "command_status": "documented",
+    "entry_url": "https://dagger.io",
+    "source": "https://github.com/dagger/dagger/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "e4de8960f283d2fad72755e7f2eee0f74688e9dc",
+    "root_tree_sha": "2a385e9049da611843fca1478ddb5014ae71f303",
+    "readme_url": "https://github.com/dagger/dagger/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "reemplazar un script CI frágil",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "correr el mismo pipeline en laptop y CI",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "`brew install dagger/tap/dagger` y ejecuta el quickstart del README.",
+    "success": "Pipeline de ejemplo termina en local.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/dagger/dagger/blob/main/README.md",
+    "source_blob_sha": "e4de8960f283d2fad72755e7f2eee0f74688e9dc",
+    "previous_category": [
+     1,
+     "motores"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Motor de pipelines portable (Apache-2.0).",
+   "que_hace": "Orquesta funciones en contenedores de forma tipada y cacheable.",
+   "como_lo_hace": "brew/instalador + runtime de contenedores.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Coolify despliega; Dagger construye.",
+     "orden_instalacion": "Dagger build → Coolify."
+    },
+    {
+     "id": "portainer",
+     "motivo": "Portainer gestiona el runtime Docker.",
+     "orden_instalacion": "Dagger usa el mismo Docker."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/dagger/dagger#readme",
+    "https://dagger.io"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "dagger/dagger",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.21.11 (2026-10-21)"
+   }
+  },
+  "suitecrm": {
+   "name": "SuiteCRM",
+   "cat": 18,
+   "sub": "crm",
+   "desc": "CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y portal en PHP.",
+   "how": "PHP/MySQL; instalador web o imagen; docs en suitecrm.com.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md",
+   "cases": [
+    "CRM interno para un equipo comercial pequeño",
+    "portal de casos de soporte"
+   ],
+   "stack": "PHP, composer.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: CRM interno para un equipo comercial pequeño; portal de casos de soporte",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "chatwoot",
+    "listmonk"
+   ],
+   "alternatives": [
+    "espocrm",
+    "twenty-main",
+    "odoo"
+   ],
+   "repo": "https://github.com/SuiteCRM/SuiteCRM",
+   "homepage": "https://www.suitecrm.com",
+   "license": "AGPL-3.0",
+   "lang": "PHP",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/suitecrm.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "815d441ed2e36381313d54ca4287657d92c4703d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://suitecrm.com",
+    "source": "https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "815d441ed2e36381313d54ca4287657d92c4703d",
+    "root_tree_sha": "be6191927d643872942a364bc5877493a6ae25a2",
+    "readme_url": "https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "altas-categorias-delgadas-1"
+   },
+   "why": "Usos propuestos: CRM interno para un equipo comercial pequeño; portal de casos de soporte.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "CRM interno para un equipo comercial pequeño",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "portal de casos de soporte",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega SuiteCRM según la guía oficial (LAMP/Docker) y completa el instalador web.",
+    "success": "Escritorio CRM accesible.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md",
+    "source_blob_sha": "815d441ed2e36381313d54ca4287657d92c4703d",
+    "previous_category": [
+     18,
+     "crm"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "CRM AGPL SuiteCRM Ltd.",
+   "que_hace": "Gestiona leads, cuentas, oportunidades y soporte.",
+   "como_lo_hace": "LAMP/Docker + instalador.",
+   "combina_con": [
+    {
+     "id": "chatwoot",
+     "motivo": "Chatwoot atención; SuiteCRM backoffice.",
+     "orden_instalacion": "Complementarios."
+    },
+    {
+     "id": "listmonk",
+     "motivo": "Campañas email + CRM.",
+     "orden_instalacion": "SuiteCRM + Listmonk."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/SuiteCRM/SuiteCRM#readme",
+    "https://suitecrm.com"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-categorias-delgadas-1",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "SuiteCRM/SuiteCRM",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "v7.15.2 (2026-07-31)"
    }
   }
  },
