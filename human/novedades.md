@@ -107,7 +107,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [nautilus_trader](fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [mvanhorn](fichas/mvanhorn.md) | Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [Music-Megathread](fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [Muse Spark — afiliación por verificar](fichas/muse-spark.md) | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. | API: por confirmar |
 | 2026-11-14 | [motionmaxxing](fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
 | 2026-11-14 | [motion-design-skill](fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [modern-web-guidance](fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Sin clave propia de API de IA en la ruta básica |
@@ -381,7 +380,7 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [LightRAG](fichas/lightrag.md) | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. | Depende de la ruta elegida |
 | 2026-11-10 | [Lightpanda](fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional |
 | 2026-11-10 | [LibreChat](fichas/librechat.md) | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. | API de IA opcional |
-| 2026-11-10 | [Letta](fichas/letta.md) | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). | Depende de la ruta elegida |
+| 2026-11-10 | [Letta](fichas/letta.md) | Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo. | Depende de la ruta elegida |
 | 2026-11-10 | [LangGraph](fichas/langgraph.md) | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. | API de IA opcional |
 | 2026-11-10 | [Label Studio](fichas/label-studio.md) | Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. | API de IA opcional |
 | 2026-11-10 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. | API de IA opcional |

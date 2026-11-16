@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 638 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 637 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -474,7 +474,7 @@
    "title": "Chats, modelos locales y espacios privados",
    "desc": "Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.",
    "file": "human/categorias/08-ia-local-modelos-chats-workspaces.md",
-   "count": 27,
+   "count": 26,
    "subs": [
     {
      "key": "motores",
@@ -9052,19 +9052,19 @@
    "tags": [
     "memory",
     "agents",
-    "python"
+    "typescript"
    ],
-   "stars": 25440,
-   "gh": "letta-ai/letta",
+   "stars": 3847,
+   "gh": "letta-ai/letta-code",
    "lib": false,
    "pick": false,
-   "one": "Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT).",
+   "one": "Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo.",
    "alt": [
     "mem0",
     "cognee"
    ],
    "doc": "human/fichas/letta.md",
-   "github_id": 703411624,
+   "github_id": 1082960574,
    "added_at": "2026-11-10",
    "goals": [],
    "routes": [
@@ -18877,48 +18877,6 @@
     "no_api",
     "local_model",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "muse-spark",
-   "name": "Muse Spark — afiliación por verificar",
-   "emoji": "🏠",
-   "cat": 8,
-   "sub": "workspaces",
-   "role": "app",
-   "exec": "hybrid",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "workspaces",
-    "download-muse-ai",
-    "download-muse-spark",
-    "muse",
-    "muse-ai",
-    "muse-spark",
-    "muse-spark-1-1",
-    "muse-spark-1-2"
-   ],
-   "stars": 15,
-   "gh": "muse-spark-app/muse-spark",
-   "github_id": 1364404896,
-   "lib": false,
-   "pick": false,
-   "one": "Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas.",
-   "alt": [],
-   "doc": "human/fichas/muse-spark.md",
-   "status": "unverified",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "documentos",
-    "local"
-   ],
-   "routes": [
-    "reference",
-    "review"
    ],
    "source_archived": false
   },
@@ -34162,8 +34120,8 @@
    }
   ],
   "editorial_review": {
-   "total": 638,
-   "reviewed": 638,
+   "total": 637,
+   "reviewed": 637,
    "date": "2026-11-15",
    "report": "reports/review-679-2026-11-14.json",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."

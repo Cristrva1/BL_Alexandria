@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 641 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 640 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **641 repos** de IA y
+proyecto concreto. Tienes un menú curado de **640 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -368,7 +368,7 @@ Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 - `faiss` [L|loc|M|?] — Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. — tags: vector-db,python,cpp — alt: qdrant,chroma
 - `graphiti` [L|hyb|M|+] — Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. — tags: memory,rag,python — prov: openai,anthropic — alt: cognee,graphrag
 - `graphrag` [L|hyb|M|?] — Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lu — tags: rag,python — alt: graphiti,cognee,lightrag
-- `letta` [P|hyb|M|+] — Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). — tags: memory,agents,python — prov: openai,anthropic,local — alt: mem0,cognee
+- `letta` [P|hyb|M|+] — Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente ree — tags: memory,agents,typescript — prov: openai,anthropic,local — alt: mem0,cognee
 - `lightrag` [L|hyb|M|+] — RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. — tags: rag,python — prov: openai,local — alt: graphrag,ragflow,pageindex
 - `mem0` [L|hyb|E|+] — Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y — tags: memory,python — alt: letta,cognee,supermemory
 - `mempalace` [L|loc|E|+] — Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin envia — tags: memory,python
@@ -399,7 +399,7 @@ Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 - `swe-bench` [L|loc|H|+] — Benchmark para evaluar si los modelos resuelven issues reales de GitHub. — tags: evaluation,coding-agent,python
 - `tree-sitter` [L|loc|M|?] — Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. — tags: code,rust
 
-### 8. Chats, modelos locales y espacios privados (27)
+### 8. Chats, modelos locales y espacios privados (26)
 Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 
 - `airllm` [R|loc|H|+] — Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus compon — tags: motores,engine,jupyter-notebook — prov: local
@@ -418,7 +418,6 @@ Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 - `lobehub` [A|hyb|E|+] — Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: open-webui,librechat,cherry-studio
 - `localai` [R|loc|M|+] — Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. — tags: inference,local,go,docker — prov: local — alt: ollama,llama-cpp
 - `magnitude` [R|loc|H|+] — Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. — tags: motores,engine,rust — prov: local
-- `muse-spark` [A|hyb|H|?] — Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están v — tags: workspaces,download-muse-ai,download-muse-spark,muse,muse-ai,muse-spark,muse-spark-1-1,muse-spark-1-2
 - `notebooklm-mcp-cli` [R|cld|E|+] — CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde termi — tags: mcp,notebooks,python
 - `notebooklm-py` [L|cld|E|?] — API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuen — tags: notebooks,research,python
 - `odysseus` [P|loc|H|+] — Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por age — tags: agents,local,python,docker

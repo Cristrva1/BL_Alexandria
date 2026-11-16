@@ -4,7 +4,7 @@
 
 Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.
 
-27 repos · 4 secciones
+26 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -22,7 +22,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 10 repos
 - [Interfaces de chat auto-hospedadas](#interfaces-de-chat-auto-hospedadas) — 7 repos
-- [Workspaces privados y segundos cerebros](#workspaces-privados-y-segundos-cerebros) — 6 repos
+- [Workspaces privados y segundos cerebros](#workspaces-privados-y-segundos-cerebros) — 5 repos
 - [NotebookLM: alternativas y clientes](#notebooklm-alternativas-y-clientes) — 4 repos
 
 ## Motores para correr modelos en local
@@ -61,7 +61,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [PrivateGPT](../fichas/private-gpt.md) | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. | Tu objetivo encaja con estos ejemplos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación | Depende de la ruta elegida |
 | [Khoj](../fichas/khoj.md) | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. | Tu objetivo encaja con estos ejemplos: Consultar notas desde Obsidian; Crear un asistente de investigación personal | Depende de la ruta elegida |
 | [Hermes Desktop](../fichas/hermes-desktop.md) | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes | Depende de la ruta elegida |
-| [Muse Spark — afiliación por verificar](../fichas/muse-spark.md) | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. | Tu objetivo encaja con estos ejemplos: Verificar procedencia de un instalador antes de usarlo; Contrastar afirmaciones de privacidad con documentación verificable | API: por confirmar |
 
 ## NotebookLM: alternativas y clientes
 

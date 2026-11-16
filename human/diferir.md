@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**78 repos.**
+**77 repos.**
 
 ## ⏳ Diferir
 
@@ -23,7 +23,6 @@ _Pesado: solo si llega a finalista._
 | [airllm](fichas/airllm.md) | 🏠 Chats, modelos locales y espacios privados | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. |
 | [FreeToken](fichas/freetoken.md) | 🏠 Chats, modelos locales y espacios privados | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. |
 | [magnitude](fichas/magnitude.md) | 🏠 Chats, modelos locales y espacios privados | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. |
-| [Muse Spark — afiliación por verificar](fichas/muse-spark.md) | 🏠 Chats, modelos locales y espacios privados | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. |
 | [penpot](fichas/penpot.md) | 🎨 Diseñar y construir interfaces web | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |
 | [WebODM](fichas/webodm.md) | 📊 Dashboards, analítica y mapas | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
 | [Pythia](fichas/pythia.md) | 📊 Dashboards, analítica y mapas | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. |

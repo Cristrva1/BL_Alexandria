@@ -495,35 +495,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `hermes-agent`, `codex`, `opencode`
 
-## `muse-spark`
-role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,download-muse-ai,download-muse-spark,muse,muse-ai,muse-spark,muse-spark-1-1,muse-spark-1-2
-
-**Qué es:** Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas.
-**Stack:** Contrastar identidad con los canales oficiales Meta antes de instalar
-**Acceso y costes:**
-- API de IA: API: por confirmar. No están confirmados los costes, funciones ni ruta local de este repositorio; no se asume que sus afirmaciones representen al producto Meta
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Ejecución con modelos locales por confirmar. El README se llama oficial, pero esta revisión no encuentra confirmación de esa afiliación; se mantiene como entrada por verificar y sin instalación recomendada
-- Coste: Coste por confirmar. No están confirmados los costes, funciones ni ruta local de este repositorio; no se asume que sus afirmaciones representen al producto Meta
-- Equipo: Preparación según la ruta elegida. Contrastar identidad con los canales oficiales Meta antes de instalar
-**Repo:** https://github.com/muse-spark-app/muse-spark
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Verificar procedencia de un instalador antes de usarlo; Contrastar afirmaciones de privacidad con documentación verificable
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Compara el propietario y los enlaces del repositorio con la distribución anunciada por Meta
-**Qué comprobar:** Puedes identificar qué afiliación, descargas y capacidades siguen sin una fuente oficial que las respalde
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
 ## `notebooklm-mcp-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=— · tags=mcp,notebooks,python
 

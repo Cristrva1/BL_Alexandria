@@ -312,19 +312,19 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `graphiti`, `cognee`, `lightrag`
 
 ## `letta`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=memory,agents,python
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=memory,agents,typescript
 
-**Qué es:** Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT).
-**Stack:** Node.js y npm; credenciales del proveedor según la guía actual
+**Qué es:** Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo.
+**Stack:** Node.js y npm, o Python 3.9+ con uv/pipx; credenciales del proveedor de modelos o cuenta de Letta
 **Acceso y costes:**
 - API de IA: Depende de la ruta elegida. El runtime, Letta Cloud y los modelos tienen condiciones propias; el comando npm no aporta créditos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Este repositorio remite ahora el desarrollo a letta-ai/letta-code; la rama archive conserva el servidor V1 retirado
+- Modelos locales: Modelos locales documentados. Con `letta backend local`, los proveedores Ollama o LM Studio mantienen el estado del agente y el modelo en tu equipo (docs.letta.com/letta-code/models).
 - Coste: El coste depende del proveedor o la ruta. El runtime, Letta Cloud y los modelos tienen condiciones propias; el comando npm no aporta créditos
-- Equipo: Preparación según la ruta elegida. Node.js y npm; credenciales del proveedor según la guía actual
-**Repo:** https://github.com/letta-ai/letta
+- Equipo: Preparación según la ruta elegida. Node.js y npm, o Python 3.9+ con uv/pipx; Linux glibc 2.28+, macOS 14+ o Windows x64
+**Repo:** https://github.com/letta-ai/letta-code
 
 **Instalación** [+]:
 
@@ -339,7 +339,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el enlace al código actual y crea un agente con una nota de memoria ficticia
 **Qué comprobar:** Puedes recuperar esa nota en una conversación posterior
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `vllm`, `openclaw`
+**Combina con:** `ollama`, `vllm`, `openclaw`, `hermes-agent`
 **Alternativas (elige una):** `mem0`, `cognee`
 
 ## `lightrag`

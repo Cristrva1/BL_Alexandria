@@ -65,9 +65,8 @@ def test_meaningful_classification_and_identity_corrections():
     assert cat.get('llmfit')['role']=='app'
     assert 'hardware' in cat.get('llmfit')['desc'].lower() or 'equipo' in cat.get('llmfit')['desc'].lower()
     assert cat.get('botpress')['role']=='library' and not cat.get('botpress')['alternatives']
-    assert cat.get('muse-spark')['status']=='unverified'
-    assert cat.get('muse-spark')['access']['api']=='unconfirmed'
-    assert not cat.get('muse-spark')['getting_started']['command']
+    # muse-spark se retiró por señales de suplantación/malware (data/retired.json).
+    assert cat.get('muse-spark') is None
 
 
 def test_references_and_unknown_costs_do_not_become_supported_plan_routes():

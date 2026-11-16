@@ -300,7 +300,7 @@ Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para
 
 Interfaces de conversación y espacios de trabajo con tus fuentes.
 
-`anything-llm`, `chatbox`, `cherry-studio`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `muse-spark`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `private-gpt`, `surfsense`, `textgen`
+`anything-llm`, `chatbox`, `cherry-studio`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `private-gpt`, `surfsense`, `textgen`
 
 ### Motores para modelos locales
 

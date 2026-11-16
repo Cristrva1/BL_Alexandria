@@ -52,7 +52,7 @@
     {
       "num": 8,
       "title": "Chats, modelos locales y espacios privados",
-      "count": 27
+      "count": 26
     },
     {
       "num": 9,
@@ -3237,7 +3237,6 @@
             "khoj",
             "librechat",
             "lobehub",
-            "muse-spark",
             "notebooklm-mcp-cli",
             "notebooklm-py",
             "odysseus",
@@ -3247,7 +3246,7 @@
             "surfsense",
             "textgen"
           ],
-          "count": 17
+          "count": 16
         },
         {
           "id": "local-motores",
@@ -3386,7 +3385,6 @@
         "lobehub",
         "localai",
         "magnitude",
-        "muse-spark",
         "nemotron",
         "notebooklm-mcp-cli",
         "notebooklm-py",
@@ -3411,7 +3409,7 @@
         "unsloth",
         "vllm"
       ],
-      "count": 49
+      "count": 48
     },
     {
       "id": "documentos",
@@ -27132,31 +27130,32 @@
       "tags": [
         "memory",
         "agents",
-        "python"
+        "typescript"
       ],
       "routes": [
+        "local_model",
         "api"
       ],
       "access": {
         "mode": "software",
         "api": "depends",
-        "local_model": "not_documented",
+        "local_model": "supported",
         "claude_code": "not_documented",
         "codex": "not_documented",
         "cost": "choice",
         "hardware": "prerequisites",
         "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
         "api_note": "El runtime, Letta Cloud y los modelos tienen condiciones propias; el comando npm no aporta créditos",
-        "subscription_note": "Este repositorio remite ahora el desarrollo a letta-ai/letta-code; la rama archive conserva el servidor V1 retirado",
-        "local_note": "Este repositorio remite ahora el desarrollo a letta-ai/letta-code; la rama archive conserva el servidor V1 retirado",
+        "subscription_note": "Letta Cloud es el backend por defecto; equipos remotos y secretos requieren cuenta de Letta. El servidor V1 de letta-ai/letta está retirado en la rama archive.",
+        "local_note": "Con `letta backend local`, los proveedores Ollama o LM Studio mantienen el estado del agente y el modelo en tu equipo (docs.letta.com/letta-code/models).",
         "cost_note": "El runtime, Letta Cloud y los modelos tienen condiciones propias; el comando npm no aporta créditos",
-        "hardware_note": "Node.js y npm; credenciales del proveedor según la guía actual",
+        "hardware_note": "Node.js y npm, o Python 3.9+ con uv/pipx; Linux glibc 2.28+, macOS 14+ o Windows x64",
         "checked_at": "2026-11-15",
         "review": "documented",
         "sources": [
-          "https://github.com/letta-ai/letta/blob/main/README.md"
+          "https://github.com/letta-ai/letta-code/blob/main/README.md"
         ],
-        "source_blob_sha": "9a23cb4226d462b555ae75052e32370a7d82adee",
+        "source_blob_sha": "6b09e6cf359981d7c2a6c225a6fa1b8617a8435b",
         "antigravity": "not_documented"
       },
       "getting_started": {
@@ -27164,8 +27163,8 @@
         "audience": "setup",
         "entry_url": "",
         "prerequisites": [
-          "Node.js y npm",
-          "credenciales del proveedor según la guía actual"
+          "Node.js y npm, o Python 3.9+ con uv/pipx",
+          "credenciales del proveedor de modelos o cuenta de Letta"
         ],
         "steps": [
           "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
@@ -27176,7 +27175,7 @@
         "command": "npm install -g @letta-ai/letta-code",
         "command_language": "bash",
         "command_status": "documented",
-        "source": "https://github.com/letta-ai/letta/blob/main/README.md",
+        "source": "https://github.com/letta-ai/letta-code/blob/main/README.md",
         "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
         "checked_at": "2026-11-15"
       },
@@ -27198,8 +27197,8 @@
       "editorial_review": {
         "status": "source_reviewed",
         "checked_at": "2026-11-15",
-        "source": "https://github.com/letta-ai/letta/blob/main/README.md",
-        "source_blob_sha": "9a23cb4226d462b555ae75052e32370a7d82adee",
+        "source": "https://github.com/letta-ai/letta-code/blob/main/README.md",
+        "source_blob_sha": "6b09e6cf359981d7c2a6c225a6fa1b8617a8435b",
         "previous_source_blob_sha": "9a23cb4226d462b555ae75052e32370a7d82adee",
         "previous_category": [
           6,
@@ -27218,12 +27217,13 @@
           "antigravity",
           "local_model"
         ],
-        "installation_tested": false
+        "installation_tested": false,
+        "previous_source": "https://github.com/letta-ai/letta/blob/main/README.md"
       },
-      "one": "Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT).",
-      "desc": "Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT).",
-      "stack": "Node.js y npm; credenciales del proveedor según la guía actual",
-      "repo": "https://github.com/letta-ai/letta",
+      "one": "Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo.",
+      "desc": "Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo.",
+      "stack": "Node.js y npm, o Python 3.9+ con uv/pipx; credenciales del proveedor de modelos o cuenta de Letta",
+      "repo": "https://github.com/letta-ai/letta-code",
       "install": "npm install -g @letta-ai/letta-code",
       "install_conf": "ok",
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
@@ -27232,7 +27232,8 @@
       "combines_with": [
         "ollama",
         "vllm",
-        "openclaw"
+        "openclaw",
+        "hermes-agent"
       ],
       "alt": [
         "mem0",
@@ -32203,123 +32204,6 @@
         "codex",
         "opencode"
       ],
-      "alt": []
-    },
-    {
-      "id": "muse-spark",
-      "name": "Muse Spark — afiliación por verificar",
-      "cat": 8,
-      "role": "app",
-      "exec": "hybrid",
-      "setup": "heavy",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "workspaces",
-        "download-muse-ai",
-        "download-muse-spark",
-        "muse",
-        "muse-ai",
-        "muse-spark",
-        "muse-spark-1-1",
-        "muse-spark-1-2"
-      ],
-      "routes": [
-        "reference",
-        "review"
-      ],
-      "access": {
-        "mode": "reference",
-        "api": "unconfirmed",
-        "local_model": "unconfirmed",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "unconfirmed",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "No están confirmados los costes, funciones ni ruta local de este repositorio; no se asume que sus afirmaciones representen al producto Meta",
-        "subscription_note": "El README se llama oficial, pero esta revisión no encuentra confirmación de esa afiliación; se mantiene como entrada por verificar y sin instalación recomendada",
-        "local_note": "El README se llama oficial, pero esta revisión no encuentra confirmación de esa afiliación; se mantiene como entrada por verificar y sin instalación recomendada",
-        "cost_note": "No están confirmados los costes, funciones ni ruta local de este repositorio; no se asume que sus afirmaciones representen al producto Meta",
-        "hardware_note": "Contrastar identidad con los canales oficiales Meta antes de instalar",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/muse-spark-app/muse-spark/blob/main/README.md",
-          "https://ai.meta.com/muse/",
-          "https://dev.meta.ai/docs/overview"
-        ],
-        "source_blob_sha": "ef07b93a8c74335f277a4e29e1d12a4be48b65fc",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "reference",
-        "audience": "reading",
-        "entry_url": "",
-        "prerequisites": [
-          "Contrastar identidad con los canales oficiales Meta antes de instalar"
-        ],
-        "steps": [
-          "Compara el propietario y los enlaces del repositorio con la distribución anunciada por Meta.",
-          "Comprueba: Puedes identificar qué afiliación, descargas y capacidades siguen sin una fuente oficial que las respalde."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "reference",
-        "source": "https://github.com/muse-spark-app/muse-spark/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Compara el propietario y los enlaces del repositorio con la distribución anunciada por Meta",
-        "success": "Puedes identificar qué afiliación, descargas y capacidades siguen sin una fuente oficial que las respalde",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Verificar procedencia de un instalador antes de usarlo",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Contrastar afirmaciones de privacidad con documentación verificable",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/muse-spark-app/muse-spark/blob/main/README.md",
-        "source_blob_sha": "ef07b93a8c74335f277a4e29e1d12a4be48b65fc",
-        "previous_source_blob_sha": "ef07b93a8c74335f277a4e29e1d12a4be48b65fc",
-        "previous_category": [
-          8,
-          "workspaces"
-        ],
-        "category_verdict": "confirmed",
-        "note": "El README se llama oficial, pero esta revisión no encuentra confirmación de esa afiliación; se mantiene como entrada por verificar y sin instalación recomendada",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas.",
-      "desc": "Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas.",
-      "stack": "Contrastar identidad con los canales oficiales Meta antes de instalar",
-      "repo": "https://github.com/muse-spark-app/muse-spark",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Verificar procedencia de un instalador antes de usarlo; Contrastar afirmaciones de privacidad con documentación verificable",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
       "alt": []
     },
     {

@@ -4,7 +4,7 @@
 
 Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
 
-49 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
+48 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Interfaces de conversación y espacios de trabajo con tus fuentes.
 
-[Explorar 17 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-chats)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-chats)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -30,7 +30,6 @@ Interfaces de conversación y espacios de trabajo con tus fuentes.
 | [Khoj](../fichas/khoj.md) | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. | Depende de la ruta elegida |
 | [LibreChat](../fichas/librechat.md) | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. | API de IA opcional |
 | [LobeHub](../fichas/lobehub.md) | Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. | Depende de la ruta elegida |
-| [Muse Spark — afiliación por verificar](../fichas/muse-spark.md) | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. | API: por confirmar |
 | [notebooklm-mcp-cli](../fichas/notebooklm-mcp-cli.md) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | Sin clave propia de API de IA en la ruta básica |
 | [notebooklm-py](../fichas/notebooklm-py.md) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | Sin clave propia de API de IA en la ruta básica |
 | [odysseus](../fichas/odysseus.md) | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. | Depende de la ruta elegida |

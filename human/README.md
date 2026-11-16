@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-638 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+637 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -29,7 +29,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 24 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, n8n: plantillas, skills y conectores, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 47 |
 | [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 104 |
-| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 49 |
+| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 48 |
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 51 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 26 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 31 |
@@ -51,7 +51,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 5 | [🔌 Conectar herramientas con MCP](categorias/05-mcp-conectividad.md) | 23 | [FastMCP](fichas/fastmcp.md), [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md), [Context7](fichas/context7.md), [Playwright MCP](fichas/playwright-mcp.md), [MCP for Beginners](fichas/mcp-for-beginners.md) |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](categorias/06-memoria-rag-llm-ops.md) | 23 | [claude-mem](fichas/claude-mem.md), [RAGFlow](fichas/ragflow.md), [Qdrant](fichas/qdrant.md) |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 13 | [Repomix](fichas/repomix.md), [GitHub CLI](fichas/cli.md) |
-| 8 | [🏠 Chats, modelos locales y espacios privados](categorias/08-ia-local-modelos-chats-workspaces.md) | 27 | [Ollama](fichas/ollama.md), [Open WebUI](fichas/open-webui.md), [Jan](fichas/jan.md), [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
+| 8 | [🏠 Chats, modelos locales y espacios privados](categorias/08-ia-local-modelos-chats-workspaces.md) | 26 | [Ollama](fichas/ollama.md), [Open WebUI](fichas/open-webui.md), [Jan](fichas/jan.md), [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
 | 9 | [🎨 Diseñar y construir interfaces web](categorias/09-dise-o-ui-frontend.md) | 28 | [ui](fichas/ui.md), [daisyUI](fichas/daisyui.md), [Excalidraw](fichas/excalidraw.md), [CopilotKit](fichas/copilotkit.md) |
 | 10 | [📊 Dashboards, analítica y mapas](categorias/10-anal-tica-visualizaci-n.md) | 22 | [Umami](fichas/umami.md), [Apache Superset](fichas/superset.md), [WrenAI](fichas/wrenai.md), [Recharts](fichas/recharts.md) |
 | 11 | [🖼️ Generar y editar imágenes con IA](categorias/11-generaci-n-de-imagen-visi-n.md) | 9 | [ComfyUI](fichas/comfyui.md), [FLUX.2](fichas/flux2.md), [rembg](fichas/rembg.md), [Open-Generative-AI](fichas/open-generative-ai.md) |

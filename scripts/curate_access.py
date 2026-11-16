@@ -313,7 +313,7 @@ def profile(repo: dict, detail: dict, source: dict, text: str) -> dict:
                       api_note="La ruta documentada usa un servicio en línea mediante sesión o acceso propio; no implica ejecución local del modelo.")
     if rid in {"annas-mcp", "context7", "figma-context-mcp", "github-mcp-server", "blender-mcp"}:
         access["cost"] = "choice"
-    if rid in {"muse-spark", "codex-chatgpt-web"}:
+    if rid in {"codex-chatgpt-web"}:
         access.update(api="unconfirmed", cost="unconfirmed", local_model="unconfirmed", review="pending",
                       api_note="No se da por verificada la autenticación o el coste real de esta integración de terceros.",
                       subscription_note="Consultar la procedencia, el método de sesión y la documentación actual antes de introducir credenciales.")

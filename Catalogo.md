@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**638 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**637 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -15,7 +15,7 @@
 5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 23
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 23
 7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 13
-8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 27
+8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 26
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 28
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 22
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 9
@@ -274,8 +274,8 @@ _Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene cont
 | [Graphiti](human/fichas/graphiti.md) | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 | [supermemory](human/fichas/supermemory.md) | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. | Depende de la ruta elegida | ⚙️ plataforma | 🟢 fácil |
 | [agentmemory](human/fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
-| [Letta](human/fichas/letta.md) | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). | Depende de la ruta elegida | ⚙️ plataforma | 🟡 medio |
 | [Engram](human/fichas/engram.md) | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
+| [Letta](human/fichas/letta.md) | Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo. | Depende de la ruta elegida | ⚙️ plataforma | 🟡 medio |
 | [dsh-noema](human/fichas/dsh-noema.md) | Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ### RAG y motores de conocimiento
@@ -372,7 +372,6 @@ _Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiz
 | [PrivateGPT](human/fichas/private-gpt.md) | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. | Depende de la ruta elegida | ⚙️ plataforma | 🟡 medio |
 | [Khoj](human/fichas/khoj.md) | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [Hermes Desktop](human/fichas/hermes-desktop.md) | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | Depende de la ruta elegida | 🖥️ app | 🟢 fácil |
-| [Muse Spark — afiliación por verificar](human/fichas/muse-spark.md) | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. | API: por confirmar | 🖥️ app | 🔴 pesado |
 
 ### NotebookLM: alternativas y clientes
 

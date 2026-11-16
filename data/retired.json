@@ -6,7 +6,8 @@
     "archivado": "Archivado en GitHub por sus autores.",
     "abandonado": "Sus autores anuncian que ya no se mantiene.",
     "sustituido": "Lo reemplaza otro proyecto o una versión nueva.",
-    "inactivo": "Sin cambios en años y con poco valor actual."
+    "inactivo": "Sin cambios en años y con poco valor actual.",
+    "seguridad": "Señales de suplantación o malware; no se recomienda descargarlo."
   },
   "repos": [
     {
@@ -662,6 +663,19 @@
         "scrapy",
         "crawl4ai"
       ]
+    },
+    {
+      "id": "muse-spark",
+      "gh": "muse-spark-app/muse-spark",
+      "github_id": 1364404896,
+      "name": "Muse Spark",
+      "cat": 8,
+      "retired_at": "2026-11-15",
+      "reason": "seguridad",
+      "evidence": "posible suplantación/malware: org creada 1 min antes, release .7z ejecutado como admin",
+      "last_commit": "2026-09-10",
+      "archived": false,
+      "replaced_by": []
     }
   ]
 }

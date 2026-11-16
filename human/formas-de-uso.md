@@ -10,10 +10,10 @@ Estas rutas se pueden combinar con un objetivo o categoría. Revisa la ficha: ca
 | Con Claude Code | 250 | [Explorar](../docs/index.html#/explorar?route=claude) |
 | Con Codex | 219 | [Explorar](../docs/index.html#/explorar?route=codex) |
 | Con Antigravity | 165 | [Explorar](../docs/index.html#/explorar?route=antigravity) |
-| Con modelos locales | 218 | [Explorar](../docs/index.html#/explorar?route=local_model) |
+| Con modelos locales | 219 | [Explorar](../docs/index.html#/explorar?route=local_model) |
 | Con API de IA | 268 | [Explorar](../docs/index.html#/explorar?route=api) |
-| Leer y aprender | 40 | [Explorar](../docs/index.html#/explorar?route=reference) |
-| Requisitos por confirmar | 4 | [Explorar](../docs/index.html#/explorar?route=review) |
+| Leer y aprender | 39 | [Explorar](../docs/index.html#/explorar?route=reference) |
+| Requisitos por confirmar | 3 | [Explorar](../docs/index.html#/explorar?route=review) |
 
 ## Requisitos por confirmar
 
