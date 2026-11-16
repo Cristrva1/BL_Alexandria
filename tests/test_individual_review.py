@@ -86,9 +86,9 @@ def test_antigravity_is_available_in_exports_without_promoting_sdk_mentions():
     catalog=build_catalog(ROOT)
     assert 'antigravity' in catalog['labels']['route']
     repos={r['id']:r for r in catalog['repos']}
-    assert 'antigravity' in repos['camofox-browser']['routes']
+    assert 'antigravity' in repos['browser-harness']['routes']
     assert 'antigravity' not in repos['openai-python']['routes']
     topics={t['id']:t for a in catalog['discovery']['areas'] for t in a['topics']}
-    assert 'camofox-browser' in topics['antigravity-mcp']['repo_ids']
+    assert 'browser-harness' in topics['antigravity-mcp']['repo_ids']
     assert 'fluxer' not in topics['negocio-whatsapp']['repo_ids']
     assert 'fluxer' in topics['negocio-comunidades']['repo_ids']

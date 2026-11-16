@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Pencil2D, software libre de animación 2D tradicional dibujada a mano, desarrollado por voluntarios. Licencia GPL-2.0. Tiene ~1.9k estrellas y su última release es v0.7.2 (marzo de 2026).
+
+## ¿Qué hace?
+
+Permite crear animación cuadro a cuadro con gráficos bitmap y vectoriales, papel cebolla, capas, cámara y sonido. Es sencillo y ligero, pensado para animación tipo cartoon.
+
+## ¿Cómo lo hace?
+
+Hay instaladores para Windows, macOS, Linux y FreeBSD en pencil2d.org. Está construido con Qt y C++.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Convertir secuencias de imágenes exportadas a vídeo o GIF. (combinación por arquitectura) | Exporta la secuencia y codifícala con FFmpeg. |
+| [blender](blender.md) | Pasar a Grease Pencil para proyectos más grandes. (combinación por arquitectura) | Importa las secuencias. |
+| [pixelfx](pixelfx.md) | Efectos de pixel art de referencia. (combinación por arquitectura) | Usa los sprite sheets como guía. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.7.2 (2026-03-13) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pencil2d/pencil/blob/master/README.md) · [2](https://www.pencil2d.org/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Pencil2D es un editor de animación 2D tradicional; no debe confundirse con herramientas IA o editores de UI que comparten nombre |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni API; medios y equipo son recursos propios |
 | Equipo | Preparación según la ruta elegida. Instalador de tu sistema; tableta opcional; carpeta de proyecto |
-
-Pencil2D es un editor de animación 2D tradicional; no debe confundirse con herramientas IA o editores de UI que comparten nombre
-
-## Qué puedes hacer con él
-
-Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo.
-
-## Por qué destaca
-
-Usos propuestos: Aprender animación dibujada a mano; Crear una prueba de movimiento 2D.
-
-## Cómo funciona
 
 Pencil2D es un editor de animación 2D tradicional; no debe confundirse con herramientas IA o editores de UI que comparten nombre
 

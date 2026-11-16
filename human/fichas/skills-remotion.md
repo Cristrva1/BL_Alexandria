@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Remotion Agent Skills, skills oficiales de Remotion con buenas prácticas para que agentes de código (Claude Code, Codex, Kimi Code, Cursor) trabajen en proyectos Remotion. GitHub no detecta licencia. Tiene ~7.3k estrellas.
+
+## ¿Qué hace?
+
+Define cómo crear composiciones, animaciones, audio, subtítulos y renders en Remotion, e incluye `/remotion-license` para consultar los términos de licencia y dónde comprarla.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add remotion-dev/skills`. Algunas skills requieren versiones mínimas de Remotion.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Framework al que aplican las skills. | Crea el proyecto Remotion y añade las skills. |
+| [Claude Code](claude-code.md) | Agente compatible. | Instala las skills en el proyecto. |
+| [Remotion Superpowers](remotion-superpowers.md) | Plugin que se apoya en las skills oficiales. | Instala las skills y luego el plugin. |
+
+**Notas:** Sin alternativas declaradas. Sin licencia detectada.
+
+Estado en GitHub: activo · último push 2026-11-11 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/remotion-dev/skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Son instrucciones oficiales para hosts Agent Skills; no incluyen la licencia de Remotion ni créditos de medios |
 | Coste | El coste depende del proveedor o la ruta. Las skills usan el agente; Remotion tiene licencia propia y servicios de voz o imagen se pagan aparte |
 | Equipo | Preparación según la ruta elegida. Agente compatible; proyecto Remotion; Node; recursos propios |
-
-Son instrucciones oficiales para hosts Agent Skills; no incluyen la licencia de Remotion ni créditos de medios
-
-## Qué puedes hacer con él
-
-Skills oficiales de Remotion para que tu agente de código cree videos con React.
-
-## Por qué destaca
-
-Usos propuestos: Aprender Remotion con un agente; Preparar una plantilla de video.
-
-## Cómo funciona
 
 Son instrucciones oficiales para hosts Agent Skills; no incluyen la licencia de Remotion ni créditos de medios
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; proyecto Remotion; Node; recursos propios
 - **Etiquetas:** `video` `skills`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [remotion](remotion.md) | 73.2k | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
-| [Remotion Superpowers](remotion-superpowers.md) | 168 | Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. |
 
 ## Enlaces
 

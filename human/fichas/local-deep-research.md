@@ -30,7 +30,7 @@ Se despliega con Docker o Docker Compose junto a Ollama (por ejemplo, `gpt-oss:2
 | [SearXNG](searxng.md) | Buscador recomendado en el quickstart. | Arranca SearXNG y fija su URL. |
 | [llama.cpp](llama-cpp.md) | Servidor local alternativo compatible con OpenAI. (combinación por arquitectura) | Expón llama-server y configúralo. |
 
-**Notas:** Sin alternativas declaradas; se solapa con gpt-researcher (solo anotado).
+**Notas:** Alternativa (elige una): gpt-researcher.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.0.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -101,6 +101,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo
 - **Etiquetas:** `research` `academia` `anthropic` `arxiv` `brave` `deep-research` `encryption` `home-automation`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 
 ## Enlaces
 

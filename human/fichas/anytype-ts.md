@@ -28,7 +28,7 @@ Es una app Electron con TypeScript para macOS, Windows y Linux; el núcleo (anyt
 |---|---|---|
 | [Claude Code](claude-code.md) | Leer y crear objetos de Anytype desde un agente con el servidor MCP oficial `anyproto/anytype-mcp` (el servidor MCP no está en el catálogo). | Activa la API local en Anytype, crea una clave e instala anytype-mcp en el agente. |
 | [markitdown](markitdown.md) | Convertir documentos (DOCX, PDF) a Markdown antes de importarlos. (combinación por arquitectura) | Convierte con MarkItDown e importa los `.md` en Anytype. |
-| [n8n](n8n.md) | Automatizar altas de objetos mediante la API local de Anytype. (combinación por arquitectura) (la API escucha en el equipo del usuario) | Expón la API solo en local y llama desde n8n en la misma máquina. |
+| [activepieces](activepieces.md) | Automatizar altas de objetos mediante la API local de Anytype. (combinación por arquitectura) (la API escucha en el equipo del usuario) | Expón la API solo en local y llama desde Activepieces en la misma máquina. |
 
 **Notas:** Alternativas (elige una): appflowy. La licencia restringe usos comerciales concretos; léela antes de redistribuir.
 

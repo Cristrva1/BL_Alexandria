@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Anima un cuadrado y cambia duración y easing para observar la diferencia
 **Qué comprobar:** Puedes identificar qué propiedad cambia y cuándo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `three.js`, `magicui`, `motion-design-skill`
+**Combina con:** `three.js`, `magicui`, `motion-design-skill`, `zdog`
 **Alternativas (elige una):** `gsap`, `motion`
 
 ## `awesome-cad`
@@ -62,6 +62,69 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida
 **Qué comprobar:** Puedes explicar cuál se ajusta al objeto que quieres diseñar
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `three.js`, `filament`, `freecad`, `openscad`
+
+## `babylonjs`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=javascript,3d,webgl,webxr
+
+**Qué es:** Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/BabylonJS/Babylon.js
+
+**Instalación** [+]:
+
+```
+npm install babylonjs --save
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: mostrar un configurador de producto 3D en una web; crear un juego o experiencia WebXR en el navegador
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Abre el playground oficial, carga un ejemplo y modifícalo; o instala con `npm install babylonjs --save`.
+**Qué comprobar:** La escena 3D se renderiza en el navegador con tus cambios.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `meshoptimizer`, `gsap`
+**Alternativas (elige una):** `three.js`, `playcanvas`
+
+## `bevy`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=rust,gamedev,ecs,3d
+
+**Qué es:** Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.
+**Stack:** Rust, Cargo.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/bevyengine/bevy
+
+**Instalación** [+]:
+
+```
+cargo run --example breakout
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: programar un juego 2D o 3D en Rust con alto rendimiento; crear una simulación o herramienta visual que compile también a WebAssembly
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Clona el repositorio y ejecuta `cargo run --example breakout`.
+**Qué comprobar:** Se abre el juego de ejemplo Breakout en una ventana.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `meshoptimizer`, `claude-code`
+**Alternativas (elige una):** `godot`
 
 ## `blender`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=creacion-3d,app,c
@@ -121,6 +184,98 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un modelo de muestra y cambia iluminación o material para observar la respuesta
 **Qué comprobar:** Puedes distinguir geometría, material y entorno
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `meshoptimizer`, `blender`, `ozz-animation`, `awesome-cad`
+
+## `freecad`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cad,3d,cpp,app
+
+**Qué es:** Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/FreeCAD/FreeCAD
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/FreeCAD/FreeCAD/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: diseñar una pieza mecánica paramétrica y exportarla a STL para impresión 3D; generar planos técnicos acotados a partir de un modelo 3D
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala FreeCAD desde su web, crea un boceto en Part Design y extrúyelo.
+**Qué comprobar:** Obtienes un sólido paramétrico que cambia al editar las cotas del boceto.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openscad`, `blender`, `awesome-cad`
+
+## `genesis-world`
+role=library · exec=local · setup=hard · mcp=False · prov=— · tags=simulation,robotics,physics,python
+
+**Qué es:** Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Genesis-Embodied-AI/genesis-world
+
+**Instalación** [+]:
+
+```
+pip install genesis-world
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar políticas de robots con miles de entornos paralelos en GPU; generar datos sintéticos de manipulación con cuerpos rígidos y deformables
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala PyTorch y después `pip install genesis-world`; ejecuta el ejemplo `examples/rigid/single_franka.py`.
+**Qué comprobar:** Se simula un brazo Franka en una escena con visor.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `mujoco`, `blender`
+
+## `godot`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=gamedev,3d,2d,cpp
+
+**Qué es:** Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.
+**Stack:** C++, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/godotengine/godot
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/godotengine/godot/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear un juego 2D o 3D y exportarlo a Windows, Android y web; construir una visualización interactiva o una simulación con editor visual
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga Godot desde su web, abre un proyecto de las demos oficiales y ejecútalo con F5.
+**Qué comprobar:** La demo se ejecuta en una ventana y puedes modificar sus escenas en el editor.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `meshoptimizer`, `ffmpeg`
+**Alternativas (elige una):** `bevy`
 
 ## `gsap`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
@@ -181,6 +336,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Optimiza una malla de prueba y compara número de vértices, tamaño y apariencia
 **Qué comprobar:** Puedes medir una reducción y detectar si cambia demasiado el detalle
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `filament`, `blender`, `ozz-animation`, `regl`
 
 ## `motion`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,design,typescript
@@ -211,8 +367,68 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade una transición sencilla a un elemento y comprueba su estado inicial y final
 **Qué comprobar:** Puedes ajustar la animación y seguir usando el control con teclado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `magicui`, `react-three-fiber`, `claude-code`
+**Combina con:** `magicui`, `react-three-fiber`, `claude-code`, `gsap`, `motion-design-skill`, `skills-emil`
 **Alternativas (elige una):** `animejs`
+
+## `mujoco`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=simulation,robotics,physics,python
+
+**Qué es:** Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/google-deepmind/mujoco
+
+**Instalación** [+]:
+
+```
+pip install mujoco
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: simular un robot o un brazo para probar controladores antes del hardware; entrenar políticas de aprendizaje por refuerzo en entornos físicos
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install mujoco`, carga un modelo MJCF de ejemplo y ábrelo con `python -m mujoco.viewer`.
+**Qué comprobar:** Ves el modelo simulado en el visor interactivo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `jax`, `warp`, `genesis-world`
+
+## `openscad`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cad,3d,code,app
+
+**Qué es:** CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/openscad/openscad
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/openscad/openscad/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: diseñar piezas paramétricas para impresión 3D cambiando variables; generar variantes de una pieza (tamaños, agujeros) desde el mismo script
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala OpenSCAD, escribe `cube(10); translate([5,5,5]) sphere(6);`, renderiza con F6 y exporta a STL.
+**Qué comprobar:** Obtienes un archivo STL listo para el laminador de la impresora.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `freecad`, `awesome-cad`, `claude-code`
 
 ## `ozz-animation`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,library,c
@@ -242,6 +458,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una muestra de reproducción y cambia el tiempo de una animación esquelética
 **Qué comprobar:** Puedes identificar esqueleto, clip y pose
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `filament`, `blender`, `meshoptimizer`
 
 ## `pencil`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=edicion,app,c
@@ -271,6 +488,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja tres fotogramas sencillos, ajusta su duración y reproduce el movimiento
 **Qué comprobar:** Puedes guardar el proyecto y exportar una animación corta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `blender`, `pixelfx`
 
 ## `pixelfx`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
@@ -300,6 +518,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un efecto existente y cambia tamaño o paleta antes de pedir generar uno nuevo
 **Qué comprobar:** Puedes inspeccionar frames y exportar una muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `threejs-game-skills`, `planck-js`, `pencil`
+
+## `pixijs`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=javascript,2d,webgl,animation
+
+**Qué es:** Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/pixijs/pixijs
+
+**Instalación** [+]:
+
+```
+npm create pixi.js@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear un juego 2D o una experiencia interactiva para navegador; dibujar miles de elementos animados en una visualización web
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea un proyecto con `npm create pixi.js@latest`, añade un sprite y anímalo en el ticker.
+**Qué comprobar:** El sprite se mueve en el canvas del navegador a alta tasa de fotogramas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gsap`, `mediabunny`, `planck-js`
 
 ## `planck-js`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
@@ -329,6 +578,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una demo de un cuerpo que cae y modifica gravedad o rebote
 **Qué comprobar:** Puedes observar colisión y estado del cuerpo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pixelfx`, `threejs-game-skills`, `three.js`, `pixijs`
+
+## `playcanvas`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=javascript,3d,webgpu,gamedev
+
+**Qué es:** Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/playcanvas/engine
+
+**Instalación** [+]:
+
+```
+npm install playcanvas
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar una escena 3D o un escaneo con Gaussian splats en una web; crear un juego ligero que funcione en cualquier navegador y móvil
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea un proyecto con `npm create playcanvas@latest` o instala `npm install playcanvas` y ejecuta el ejemplo del cubo giratorio.
+**Qué comprobar:** El cubo 3D gira en un canvas del navegador.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `meshoptimizer`, `blender`, `gsap`
+**Alternativas (elige una):** `three.js`, `babylonjs`
 
 ## `react-three-fiber`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,typescript
@@ -358,7 +639,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Monta una escena con un cubo y cambia una propiedad mediante estado de React
 **Qué comprobar:** Puedes observar la actualización declarativa del objeto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `three.js`, `react-three-rapier`, `motion`
+**Combina con:** `three.js`, `react-three-rapier`, `motion`, `threejs-skills`, `webgl-noise`
 
 ## `react-three-rapier`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
@@ -388,6 +669,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un cuerpo y un suelo con debug visible y comprueba la colisión
 **Qué comprobar:** Puedes relacionar collider, geometría y movimiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `react-three-fiber`, `three.js`, `threejs-game-skills`
 
 ## `regl`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
@@ -417,6 +699,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja un triángulo de ejemplo y cambia una propiedad del comando de render
 **Qué comprobar:** Puedes identificar buffers, shader y llamada de dibujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `webgl-noise`, `three.js`, `meshoptimizer`
 
 ## `scenejs`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
@@ -446,6 +729,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una animación con dos keyframes y cambia su progreso desde un control
 **Qué comprobar:** Puedes identificar tiempo, propiedad y valor final
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `motion-design-skill`, `remotion`, `zdog`
 
 ## `three.js`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
@@ -476,6 +760,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes ver la escena, cámara y objeto y reconocer su relación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `react-three-fiber`, `gsap`, `threejs-skills`, `meshoptimizer`
+**Alternativas (elige una):** `babylonjs`, `playcanvas`
 
 ## `warp`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
@@ -505,7 +790,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una simulación de ejemplo con pocas partículas y revisa su evolución
 **Qué comprobar:** Puedes identificar kernel, dispositivo y estado simulado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `blender`, `cosmos`
+**Combina con:** `pytorch`, `blender`, `cosmos`, `mujoco`
 
 ## `webgl-noise`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,c
@@ -565,3 +850,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente
 **Qué comprobar:** Puedes reconocer las formas y su orden
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `animejs`, `gsap`, `three.js`, `scenejs`

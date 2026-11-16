@@ -30,6 +30,8 @@ Se instala con PyTorch para CUDA y `requirements.txt` (también Pinokio u otros 
 | [Wan2.2](wan2-2.md) | Ejecuta los modelos Wan 2.2 con menos VRAM. | Descarga el modelo desde la interfaz. |
 | [MoviePy](moviepy.md) | Montar en Python los clips generados. (combinación por arquitectura) | Exporta los clips y únelos con MoviePy. |
 | [LosslessCut](lossless-cut.md) | Recortar resultados sin recodificar. (combinación por arquitectura) | Abre los vídeos en LosslessCut. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | Wan2GP incluye Hunyuan Video 1.5 entre sus modelos para GPUs con poca VRAM. | Elige el modelo en la interfaz; los pesos se descargan aparte. |
+| [HunyuanVideo](hunyuanvideo.md) | Combinación recíproca: HunyuanVideo lo enlaza como «Interfaz para GPU modestas con soporte de Hunyuan Video». | Orden indicado desde HunyuanVideo: Selecciona Hunyuan Video en WanGP. |
 
 **Notas:** Alternativas (elige una): comfyui. Licencia propia, no OSI: revísala antes de redistribuir.
 

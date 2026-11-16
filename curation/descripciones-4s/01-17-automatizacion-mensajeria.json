@@ -29,7 +29,7 @@
      "orden_instalacion": "Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos."
     }
    ],
-   "notas": "Alternativas (elige una): n8n, node-red.",
+   "notas": "Alternativas (elige una): node-red.",
    "fuentes": [
     "https://github.com/huginn/huginn/blob/master/README.md",
     "https://docs.ollama.com/api/openai-compatibility"
@@ -107,7 +107,7 @@
      "orden_instalacion": "LiteLLM primero; usa su URL y una clave virtual en las piezas que acepten un endpoint compatible con OpenAI."
     }
    ],
-   "notas": "Alternativa (elige una): n8n. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.",
+   "notas": "Sin alternativas declaradas. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.",
    "fuentes": [
     "https://github.com/activepieces/activepieces/blob/main/README.md",
     "https://www.activepieces.com/pieces/nocodb"
@@ -141,9 +141,15 @@
      "id": "grafana",
      "motivo": "Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales).",
      "orden_instalacion": "Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Combinación recíproca: Zigbee2MQTT lo enlaza como «Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Zigbee2MQTT: Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT.",
+     "reciproca_de": "zigbee2mqtt"
     }
    ],
-   "notas": "Alternativas (elige una): n8n, huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",
+   "notas": "Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",
    "fuentes": [
     "https://github.com/node-red/node-red/blob/master/README.md",
     "https://flows.nodered.org/node/node-red-contrib-home-assistant-websocket",
@@ -178,9 +184,15 @@
      "id": "polars",
      "motivo": "Scripts Python de Windmill pueden usar Polars para transformar datos tabulares grandes en los workers, con dependencias resueltas por uv (combinación por arquitectura).",
      "orden_instalacion": "Declara polars como dependencia del script; vigila la memoria del worker con archivos grandes."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Combinación recíproca: coolify lo enlaza como «Plantilla de servicio oficial de Coolify para Windmill».",
+     "orden_instalacion": "Orden indicado desde coolify: Coolify primero; luego despliega la plantilla `windmill`.",
+     "reciproca_de": "coolify"
     }
    ],
-   "notas": "Alternativas (elige una): n8n, kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.",
+   "notas": "Alternativas (elige una): kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.",
    "fuentes": [
     "https://github.com/windmill-labs/windmill/blob/main/README.md",
     "https://www.windmill.dev/docs/core_concepts/mcp"
@@ -238,131 +250,15 @@
     "checked_at": "2026-11-15"
    }
   },
-  "self-hosted-ai-starter-kit": {
-   "que_es": "Plantilla de Docker Compose de código abierto (Apache 2.0) mantenida por el equipo de n8n para levantar en minutos un entorno local de IA y low-code. No es una aplicación nueva: reúne servicios existentes ya configurados para funcionar juntos.",
-   "que_hace": "Arranca n8n autoalojado junto con Ollama para modelos locales, Qdrant como base vectorial y PostgreSQL. Sirve para prototipar agentes de IA que agendan citas, resumir PDF de la empresa sin enviar datos fuera, crear bots de Slack más útiles o analizar documentos financieros privados a bajo coste. Es un punto de partida para pruebas, no un despliegue endurecido para producción.",
-   "como_lo_hace": "Se clona el repositorio, se copia `.env.example` a `.env` (cambiando secretos y contraseñas) y se ejecuta `docker compose` con el perfil adecuado: `gpu-nvidia`, `gpu-amd` en Linux o solo CPU. En Mac con Apple Silicon la GPU no se expone a Docker, así que se recomienda CPU o ejecutar Ollama de forma nativa y ajustar `OLLAMA_HOST`. Incluye una carpeta compartida para que los flujos de n8n lean archivos locales y un flujo de demostración.",
-   "combina_con": [
-    {
-     "id": "n8n-mcp",
-     "motivo": "Permite que un agente de código cree, valide y depure flujos dentro del n8n del kit mediante su API pública.",
-     "orden_instalacion": "Levanta el kit, activa la Public API de n8n y crea una API key; después conecta n8n-mcp."
-    },
-    {
-     "id": "open-webui",
-     "motivo": "Añade una interfaz de chat que reutiliza el Ollama del kit para conversar con los mismos modelos (combinación por arquitectura).",
-     "orden_instalacion": "Kit primero; inicia Open WebUI con `OLLAMA_BASE_URL` apuntando al Ollama del kit y en un puerto distinto de 5678."
-    },
-    {
-     "id": "docling",
-     "motivo": "Convierte PDF y documentos de oficina en Markdown limpio antes de vectorizarlos en el Qdrant del kit (combinación por arquitectura).",
-     "orden_instalacion": "Instala Docling o docling-serve aparte y llámalo desde n8n por HTTP o desde un script."
-    },
-    {
-     "id": "awesome-n8n-templates",
-     "motivo": "Colección de flujos importables para aprender patrones sobre el n8n del kit.",
-     "orden_instalacion": "Después de levantar el kit; importa, revisa credenciales y prueba cada plantilla antes de activarla."
-    }
-   ],
-   "notas": "Ya incluye n8n, Ollama, Qdrant y PostgreSQL: no instales esos servicios por separado en la misma máquina o chocarán los puertos (5678, 11434, 6333, 5432). Cambia todas las contraseñas de `.env`.",
-   "fuentes": [
-    "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "n8n-io/self-hosted-ai-starter-kit",
-    "archived": false,
-    "pushed_at": "2026-11-12",
-    "license": "Apache-2.0",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "awesome-n8n-templates": {
-   "que_es": "Colección curada por la comunidad de más de 280 archivos de plantillas de flujo para n8n, actualizada en 2026. No es software ejecutable sino material de referencia; su licencia no está declarada de forma estándar en GitHub y el README contiene enlaces de afiliado.",
-   "que_hace": "Ofrece flujos listos para importar organizados por plataforma: Gmail y email, Telegram, Google Drive y Sheets, WordPress, PDF y documentos, Discord, bases de datos, DevOps, Airtable, Notion, Slack, OpenAI y LLM, WhatsApp y redes sociales. Sirve para aprender patrones de n8n o partir de un ejemplo en lugar de empezar desde cero.",
-   "como_lo_hace": "Cada plantilla es un archivo JSON de flujo de n8n que se importa con «Workflows → Import from File»; después hay que configurar las credenciales de cada servicio y probar el flujo. El propio README advierte que debes revisar, configurar y probar cada flujo antes de usarlo.",
-   "combina_con": [
-    {
-     "id": "n8n",
-     "motivo": "Es la plataforma donde se importan y ejecutan las plantillas.",
-     "orden_instalacion": "n8n en marcha primero; después importa las plantillas una a una."
-    },
-    {
-     "id": "n8n-mcp",
-     "motivo": "Sus herramientas `validate_workflow` y `n8n_autofix_workflow` detectan nodos desconocidos, versiones obsoletas o conexiones rotas en plantillas importadas.",
-     "orden_instalacion": "Después de importar; valida antes de activar cualquier flujo."
-    },
-    {
-     "id": "n8n-skills",
-     "motivo": "Enseña al agente patrones y sintaxis de expresiones de n8n para adaptar las plantillas a tu caso.",
-     "orden_instalacion": "Requiere n8n-mcp configurado."
-    },
-    {
-     "id": "self-hosted-ai-starter-kit",
-     "motivo": "Entorno local listo (n8n, Ollama, Qdrant) para probar las plantillas de IA sin pagar APIs, cambiando el nodo del modelo por Ollama (combinación por arquitectura).",
-     "orden_instalacion": "Levanta el kit y después importa las plantillas."
-    }
-   ],
-   "notas": "Las plantillas son de terceros: revisa qué datos envían y a qué servicios antes de conectar credenciales reales.",
-   "fuentes": [
-    "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md",
-    "https://github.com/czlonkowski/n8n-mcp/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "enescingoz/awesome-n8n-templates",
-    "archived": false,
-    "pushed_at": "2026-09-12",
-    "license": "no estándar (NOASSERTION)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "n8n-skills": {
-   "que_es": "Paquete de skills para Claude Code (también instalable como plugin de Codex) que enseña a un agente a construir flujos de n8n de calidad de producción usando el servidor n8n-mcp. Es del mismo autor que n8n-mcp, con licencia MIT y versiones frecuentes.",
-   "que_hace": "Aporta 14 skills complementarias: sintaxis de expresiones `{{}}`, uso experto de las herramientas de n8n-mcp, patrones de flujo, interpretación de errores de validación, configuración de nodos, nodos de código en JavaScript y Python, manejo de errores, datos binarios, subflujos, agentes de IA, varias instancias y autoalojamiento de n8n. Evita que el agente use mal las herramientas MCP o se quede en bucles de validación.",
-   "como_lo_hace": "Cada skill se activa por su descripción cuando la tarea coincide. En la instalación como plugin de Claude Code o Codex añade una capa de control: una skill «router» cargada al inicio de cada sesión por un hook `SessionStart` y hooks `PreToolUse` que recuerdan la skill adecuada antes de llamadas de alto impacto a n8n-mcp. En Claude.ai se pueden subir skills sueltas, pero sin hooks.",
-   "combina_con": [
-    {
-     "id": "n8n-mcp",
-     "motivo": "Requisito declarado: las skills enseñan a usar sus herramientas y algunas funciones necesitan n8n-mcp 2.97.0 o superior.",
-     "orden_instalacion": "Instala y configura n8n-mcp primero; después el plugin de skills."
-    },
-    {
-     "id": "n8n",
-     "motivo": "Es la plataforma final donde se crean y validan los flujos.",
-     "orden_instalacion": "n8n con la Public API activada antes de conectar n8n-mcp."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Cliente principal: la instalación como plugin activa hooks y router.",
-     "orden_instalacion": "Claude Code instalado; después agrega el plugin según la sección de instalación del README."
-    },
-    {
-     "id": "awesome-n8n-templates",
-     "motivo": "Plantillas reales para que el agente las revise y adapte aplicando las skills de patrones y validación (combinación por arquitectura).",
-     "orden_instalacion": "Opcional, después de tener el resto funcionando."
-    }
-   ],
-   "fuentes": [
-    "https://github.com/czlonkowski/n8n-skills/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "czlonkowski/n8n-skills",
-    "archived": false,
-    "pushed_at": "2026-10-24",
-    "license": "MIT",
-    "primary_language": "Shell",
-    "latest_release": "v1.37.1 (2026-10-24)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "whatsapp-web-js": {
    "que_es": "Librería Node.js de código abierto (Apache 2.0) para interactuar con WhatsApp Web y construir una API de WhatsApp propia. Es un proyecto comunitario no oficial, activo desde 2019 y con versiones frecuentes (serie 1.34 en 2026).",
    "que_hace": "Permite enviar y recibir mensajes, enviar imágenes, audio, documentos y video, trabajar con multidispositivo, grupos, contactos y reacciones, y reaccionar a eventos del cliente web casi como un usuario. Sirve para bots de atención, notificaciones a usuarios que ya te escribieron e integraciones a medida.",
    "como_lo_hace": "Usa Puppeteer para abrir WhatsApp Web en un navegador administrado y llamar a sus funciones internas, de modo que se autentica escaneando un código QR como en un navegador normal. Requiere Node.js 18 o superior y se instala con `npm install whatsapp-web.js`; el envío de video necesita Google Chrome en lugar de Chromium. Las sesiones se guardan y restauran con estrategias de autenticación configurables.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Tu servicio con la librería reenvía cada mensaje a un webhook de n8n, que decide la respuesta y la devuelve por HTTP (combinación por arquitectura).",
-     "orden_instalacion": "Expón un endpoint propio para enviar y apunta los eventos al webhook de n8n; protege ambos con autenticación."
+     "id": "activepieces",
+     "motivo": "Tu servicio con la librería reenvía cada mensaje a un webhook de Activepieces, que decide la respuesta y la devuelve por HTTP (combinación por arquitectura).",
+     "orden_instalacion": "Expón un endpoint propio para enviar y apunta los eventos al webhook de Activepieces; protege ambos con autenticación."
     },
     {
      "id": "ollama",
@@ -405,11 +301,6 @@
      "orden_instalacion": "Typebot con el bot publicado; después activa el plugin en OpenWA."
     },
     {
-     "id": "n8n",
-     "motivo": "Nodos comunitarios de n8n para automatizar envíos y reaccionar a mensajes.",
-     "orden_instalacion": "n8n primero; instala el nodo comunitario y usa una clave de API de OpenWA limitada a las sesiones necesarias."
-    },
-    {
      "id": "claude-code",
      "motivo": "El servidor MCP de OpenWA permite que un agente lea sesiones y mensajes con una clave restringida a ciertos chats.",
      "orden_instalacion": "Activa `MCP_ENABLED=true`, crea una clave limitada y registra el endpoint `/mcp` en el agente."
@@ -441,9 +332,9 @@
      "orden_instalacion": "Usa uno de los dos en cada número: no conectes el mismo número a Baileys propio y a Evolution a la vez."
     },
     {
-     "id": "n8n",
-     "motivo": "Tu servicio con Baileys envía los eventos a un webhook de n8n para la lógica del bot (combinación por arquitectura).",
-     "orden_instalacion": "Servicio Baileys primero con su endpoint de envío protegido; después el flujo en n8n."
+     "id": "activepieces",
+     "motivo": "Tu servicio con Baileys envía los eventos a un webhook de Activepieces para la lógica del bot (combinación por arquitectura).",
+     "orden_instalacion": "Servicio Baileys primero con su endpoint de envío protegido; después el flujo en Activepieces."
     },
     {
      "id": "litellm",
@@ -473,9 +364,9 @@
    "como_lo_hace": "Es un monorepo con servicios separados (API, gateway en tiempo real, mensajes, usuarios, medios, notificaciones push, desplegables y escritorio); GitHub lo clasifica como TypeScript y el repositorio incluye componentes en Rust, Erlang y Go. Expone una API HTTP y un Gateway por WebSocket con eventos y opcodes documentados, además de una API de administración para instancias propias. Se distribuye con instaladores nativos, Flatpak, paquetes deb/rpm, AppImage y repositorios para apt, dnf y pacman.",
    "combina_con": [
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Automatizar avisos o moderación llamando a la API HTTP de Fluxer desde un flujo (combinación por arquitectura).",
-     "orden_instalacion": "Crea una aplicación o token en tu instancia y úsalo en un nodo HTTP de n8n; respeta los límites de tasa documentados."
+     "orden_instalacion": "Crea una aplicación o token en tu instancia y úsalo en la pieza HTTP de Activepieces; respeta los límites de tasa documentados."
     },
     {
      "id": "ollama",
@@ -510,9 +401,9 @@
    "como_lo_hace": "Se distribuye como imagen Docker (`devlikeapro/waha`) y se arranca con `docker run -p 3000:3000`; en ese puerto quedan el panel, la API y Swagger (por ejemplo `POST /api/sendText`). Su documentación describe tres motores intercambiables: WEBJS (navegador), NOWEB (WebSocket) y GOWS (implementación en Go). Está escrito en TypeScript; el único requisito declarado es tener Docker.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "WAHA documenta una integración con n8n (nodo comunitario) para enviar mensajes y reaccionar a eventos de WhatsApp.",
-     "orden_instalacion": "WAHA primero con una sesión activa y clave de API; después instala el nodo en n8n."
+     "id": "activepieces",
+     "motivo": "WAHA envía eventos de WhatsApp a un webhook y expone una API REST para enviar; Activepieces los recibe con un disparador Webhook y responde con la pieza HTTP. (combinación por arquitectura)",
+     "orden_instalacion": "WAHA primero con una sesión activa y clave de API; después el flujo en Activepieces."
     },
     {
      "id": "chatwoot",
@@ -522,14 +413,13 @@
     {
      "id": "typebot",
      "motivo": "Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura).",
-     "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de n8n."
+     "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill."
     }
    ],
    "notas": "Alternativas (elige una): evolution-api, whatsapp-web-js, baileys. Es una conexión no oficial: evita mensajes masivos o no solicitados. Protege la API con clave antes de exponer el puerto 3000.",
    "fuentes": [
     "https://github.com/devlikeapro/waha/blob/core/README.md",
     "https://waha.devlike.pro/docs/how-to/engines/",
-    "https://waha.devlike.pro/docs/integrations/n8n/",
     "https://waha.devlike.pro/docs/apps/chatwoot/"
    ],
    "github": {
@@ -592,14 +482,15 @@
      "orden_instalacion": "Chatwoot primero; configura el bloque con el ID de cuenta y el token."
     },
     {
-     "id": "n8n",
-     "motivo": "El bloque Webhook/HTTP llama a un flujo de n8n para consultar CRM, bases de datos o un modelo y devolver datos al chat.",
-     "orden_instalacion": "Crea primero el webhook en n8n y luego apúntalo desde el bloque."
-    },
-    {
      "id": "openwa",
      "motivo": "Plugin oficial de OpenWA para responder mensajes de WhatsApp con un bot de Typebot.",
      "orden_instalacion": "Typebot publicado y después el plugin en OpenWA."
+    },
+    {
+     "id": "waha",
+     "motivo": "Combinación recíproca: WAHA lo enlaza como «Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WAHA: Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill.",
+     "reciproca_de": "waha"
     }
    ],
    "notas": "Revisa la FSL antes de ofrecer Typebot como servicio a terceros.",
@@ -626,9 +517,9 @@
    "como_lo_hace": "Es un monorepo en TypeScript. Se instala la CLI con `npm install -g @botpress/cli` para desarrollar, probar y publicar integraciones en el Hub, o para definir bots con el SDK. Los bots se ejecutan en la nube de Botpress, que requiere cuenta.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Integración oficial `n8n` en la carpeta de integraciones para conectar el bot con flujos de automatización.",
-     "orden_instalacion": "Cuenta en Botpress Cloud y n8n accesible por internet; luego activa la integración en el Hub."
+     "id": "activepieces",
+     "motivo": "Botpress puede llamar a un webhook de Activepieces (o recibir llamadas de su pieza HTTP) para conectar el bot con otros servicios. (combinación por arquitectura)",
+     "orden_instalacion": "Cuenta en Botpress y Activepieces accesible por internet; protege el webhook con un secreto."
     },
     {
      "id": "odoo",
@@ -662,11 +553,6 @@
    "como_lo_hace": "Se ejecuta en Docker con SQLite (por defecto) o PostgreSQL (`NC_DB=pg://...`) guardando datos en un volumen; el panel queda en `http://localhost:8080/dashboard`. Para producción existe «Auto-upstall», un script que genera un docker-compose; también hay guías para Kubernetes y Helm. Ya no se publican binarios precompilados.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "n8n tiene un nodo NocoDB para crear, leer y actualizar registros desde flujos.",
-     "orden_instalacion": "NocoDB primero y un token de API; después la credencial en n8n."
-    },
-    {
      "id": "activepieces",
      "motivo": "Pieza oficial de NocoDB en Activepieces para usar la base como origen o destino de flujos.",
      "orden_instalacion": "NocoDB primero; luego la conexión en la pieza."
@@ -675,13 +561,19 @@
      "id": "metabase",
      "motivo": "Si NocoDB guarda los datos en PostgreSQL, Metabase puede conectarse a esa base para dashboards (combinación por arquitectura).",
      "orden_instalacion": "Usa NocoDB con PostgreSQL; conecta Metabase con un usuario de solo lectura."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Coolify trae una plantilla de servicio oficial (`nocodb`) para desplegar NocoDB con un clic.",
+     "orden_instalacion": "Coolify primero; luego despliega la plantilla `nocodb` y configura la base de datos."
     }
    ],
    "notas": "Alternativas (elige una): appsmith, budibase.",
    "fuentes": [
     "https://github.com/nocodb/nocodb/blob/develop/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb/",
-    "https://www.activepieces.com/pieces/nocodb"
+    "https://www.activepieces.com/pieces/nocodb",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/nocodb",
+    "https://github.com/coollabsio/coolify/tree/main/templates/compose"
    ],
    "github": {
     "name_with_owner": "nocodb/nocodb",
@@ -709,8 +601,8 @@
      "orden_instalacion": "Igual que con Claude Code; usa solo un agente a la vez sobre la misma app."
     },
     {
-     "id": "n8n",
-     "motivo": "Los flujos de ToolJet aceptan disparadores por webhook y las apps pueden llamar a webhooks de n8n para tareas con muchas integraciones (combinación por arquitectura).",
+     "id": "activepieces",
+     "motivo": "Los flujos de ToolJet aceptan disparadores por webhook y las apps pueden llamar a webhooks de Activepieces para tareas con muchas integraciones (combinación por arquitectura).",
      "orden_instalacion": "Crea primero el webhook en el sistema que recibe y protégelo con un token."
     }
    ],
@@ -740,9 +632,9 @@
      "orden_instalacion": "Supabase primero; crea un usuario con permisos mínimos y conéctalo como fuente PostgreSQL en Appsmith."
     },
     {
-     "id": "n8n",
-     "motivo": "Un botón de Appsmith llama a un webhook de n8n para tareas que tocan muchos servicios (combinación por arquitectura).",
-     "orden_instalacion": "Crea el webhook en n8n, protégelo con un encabezado secreto y configúralo como API en Appsmith."
+     "id": "activepieces",
+     "motivo": "Un botón de Appsmith llama a un webhook de Activepieces para tareas que tocan muchos servicios (combinación por arquitectura).",
+     "orden_instalacion": "Crea el webhook en Activepieces, protégelo con un encabezado secreto y configúralo como API en Appsmith."
     },
     {
      "id": "metabase",
@@ -776,9 +668,9 @@
      "orden_instalacion": "Supabase primero; conecta Budibase con un usuario de permisos limitados."
     },
     {
-     "id": "n8n",
-     "motivo": "Las automatizaciones de Budibase pueden llamar a webhooks de n8n para integraciones que Budibase no trae (combinación por arquitectura).",
-     "orden_instalacion": "Crea y protege el webhook en n8n antes de configurarlo en Budibase."
+     "id": "activepieces",
+     "motivo": "Las automatizaciones de Budibase pueden llamar a webhooks de Activepieces para integraciones que Budibase no trae (combinación por arquitectura).",
+     "orden_instalacion": "Crea y protege el webhook en Activepieces antes de configurarlo en Budibase."
     },
     {
      "id": "ollama",
@@ -807,9 +699,9 @@
    "como_lo_hace": "Implementa el protocolo multidispositivo de WhatsApp Web directamente en Go, sin navegador, por lo que el programa se vincula como un dispositivo más. Se documenta en godoc (`go.mau.fi/whatsmeow`) con todos los métodos y tipos de eventos y un ejemplo básico. Se integra como dependencia de Go en tu propio servicio.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Un servicio en Go con whatsmeow reenvía eventos a un webhook de n8n y expone un endpoint para responder (combinación por arquitectura).",
-     "orden_instalacion": "Servicio Go primero con autenticación en su endpoint; después el flujo en n8n."
+     "id": "activepieces",
+     "motivo": "Un servicio en Go con whatsmeow reenvía eventos a un webhook de Activepieces y expone un endpoint para responder (combinación por arquitectura).",
+     "orden_instalacion": "Servicio Go primero con autenticación en su endpoint; después el flujo en Activepieces."
     },
     {
      "id": "ollama",

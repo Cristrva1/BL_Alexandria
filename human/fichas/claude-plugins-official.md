@@ -29,6 +29,7 @@ Se usa desde el sistema de plugins de Claude Code: `/plugin install <nombre>@cla
 | [Claude Code](claude-code.md) | Marketplace oficial de plugins. | Revisa cada plugin antes de instalarlo, como recomienda el README. |
 | [superpowers](superpowers.md) | Se instala desde este marketplace (`superpowers@claude-plugins-official`). | `/plugin install superpowers@claude-plugins-official`. |
 | [skills](skills.md) | Las skills de Matt Pocock se instalan desde este marketplace. | `claude plugin install mattpocock-skills@claude-plugins-official`. |
+| [Awesome Claude Code](awesome-claude-code.md) | Combinación recíproca: Awesome Claude Code lo enlaza como «Marketplace oficial frente a los recursos comunitarios de la lista (combinación por arquitectura)». | Orden indicado desde Awesome Claude Code: Prioriza lo oficial y revisa lo comunitario. |
 
 **Notas:** Alternativa (elige una): wshobson-agents. Se quitaron anthropic-skills y awesome-claude-code: son catálogos paralelos, no integraciones.
 

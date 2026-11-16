@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Archify, skill que convierte ideas, preguntas o planes en visuales HTML interactivos, de @tt-a1i. Licencia Apache-2.0 (las concesiones MIT históricas siguen vigentes; servicios de terceros y planes de pago no son del proyecto). Creado en abril de 2026, tiene ~97k estrellas (v3.2.0), una cifra inusual.
+
+## ¿Qué hace?
+
+Describes lo que quieres entender o planificar (arquitecturas, mapas de aprendizaje, itinerarios) y el agente genera un HTML interactivo que se puede explorar, personalizar y compartir.
+
+## ¿Cómo lo hace?
+
+Funciona con Cursor, Claude Code, Codex CLI y OpenCode; en Claude.ai se sube `archify.zip` como skill (depende del acceso a Node.js en el sandbox).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado. | Instala la skill. |
+| [OpenCode](opencode.md) | Agente soportado. | Instala la skill. |
+| [Mermaid](mermaid.md) | Diagramas textuales para documentación estática. (combinación por arquitectura) | Usa Mermaid en docs y Archify para explorar. |
+
+**Notas:** Alternativa (elige una): diagram-design.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.0 (2026-10-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tt-a1i/archify/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code y Codex; la comprobación de actualizaciones puede hacer una petición de metadatos y no instala nuevas versiones automáticamente |
 | Coste | Consumo del agente que ya utilizas. La skill usa el agente; los servicios de patrocinadores y planes externos no son parte incluida del proyecto |
 | Equipo | Preparación según la ruta elegida. Agente con archivos y ejecución; idea o repositorio de prueba |
-
-Documenta Claude Code y Codex; la comprobación de actualizaciones puede hacer una petición de metadatos y no instala nuevas versiones automáticamente
-
-## Qué puedes hacer con él
-
-Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas.
-
-## Por qué destaca
-
-Usos propuestos: Explicar una arquitectura; Preparar un plan de trabajo visual.
-
-## Cómo funciona
 
 Documenta Claude Code y Codex; la comprobación de actualizaciones puede hacer una petición de metadatos y no instala nuevas versiones automáticamente
 
@@ -86,11 +100,11 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `diagramas` `agent-skills` `ai-agents` `architecture-diagram` `claude-code` `claude-skills` `codex` `coding-agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
+| [diagram-design](diagram-design.md) | 67.2k | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. |
 
 ## Enlaces
 

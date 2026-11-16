@@ -29,6 +29,15 @@ Está escrito en OCaml con envoltorio Python; se instala con `brew install semgr
 | [Claude Code](claude-code.md) | Ejecutar escaneos desde el agente con el servidor MCP incluido en el binario de Semgrep. | Instala Semgrep y registra su servidor MCP en el agente. |
 | [security-audit-skill](security-audit-skill.md) | Usar hallazgos deterministas de Semgrep como candidatos que el agente valida. (combinación por arquitectura) | Ejecuta Semgrep primero y pasa los resultados a la auditoría. |
 | [strix](strix.md) | Combinar análisis estático en CI con pruebas dinámicas por agentes. (combinación por arquitectura) | Pon Semgrep en cada PR y Strix en entornos de prueba. |
+| [Defending Code Reference Harness](defending-code-reference-harness.md) | Combinación recíproca: Defending Code Reference Harness lo enlaza como «Añadir candidatos deterministas al reconocimiento. (combinación por arquitectura)». | Orden indicado desde Defending Code Reference Harness: Ejecuta Semgrep y aporta sus hallazgos a la fase de búsqueda. |
+| [raddebugger](raddebugger.md) | Combinación recíproca: raddebugger lo enlaza como «Encontrar con análisis estático los fallos que luego reproduces en el depurador. (combinación por arquitectura)». | Orden indicado desde raddebugger: Ejecuta Semgrep en CI y depura los hallazgos con RAD Debugger. |
+| [shannon](shannon.md) | Combinación recíproca: shannon lo enlaza como «Análisis estático previo para priorizar rutas. (combinación por arquitectura)». | Orden indicado desde shannon: Ejecuta Semgrep en el repo antes de la prueba. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Gitleaks](gitleaks.md) · [pre-commit](pre-commit.md) · [Trivy](trivy.md) · [TruffleHog](trufflehog.md)
 
 **Notas:** Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura.
 
@@ -112,6 +121,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [ast-grep](ast-grep.md) | 16.6k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
+| [SonarQube Community Build](sonarqube.md) | 11.2k | Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes. |
 
 ## Enlaces
 

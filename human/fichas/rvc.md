@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+RVC (Retrieval-based Voice Conversion WebUI), framework para convertir el timbre de voz, de RVC-Project. Licencia MIT. Es muy popular (~39k estrellas, 2.3.260718); el README principal está en chino.
+
+## ¿Qué hace?
+
+Convierte una grabación a otra voz con modelos entrenados con poco audio, usando recuperación de características para reducir la fuga de timbre. Incluye entrenamiento, inferencia, separación de voz y conversión en tiempo real.
+
+## ¿Cómo lo hace?
+
+Esta rama apunta a Python 3.12 x64 (se recomienda Ubuntu 24.04) y se instala con pip y requirements por plataforma (CPU, CUDA y otros).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GPT-SoVITS](gpt-sovits.md) | TTS del mismo ecosistema. | Genera voz con GPT-SoVITS y conviértela con RVC. |
+| [FFmpeg](ffmpeg.md) | Preparación de audio. (combinación por arquitectura) | Convierte el audio de entrada. |
+| [OBS Studio](obs-studio.md) | Cambiador de voz en tiempo real para streaming. (combinación por arquitectura) | Enruta el audio a OBS. |
+
+**Notas:** Sin alternativas declaradas. Riesgo de suplantación de voz.
+
+Estado en GitHub: activo · último push 2026-08-04 · última versión publicada 2.3.260718 (2026-07-21) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere API en la ruta propia; entrenamiento, hardware y modelos externos se costean aparte |
 | Equipo | Preparación según la ruta elegida. Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo |
-
-RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal
-
-## Qué puedes hacer con él
-
-Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales.
-
-## Por qué destaca
-
-Usos propuestos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS.
-
-## Cómo funciona
 
 RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal
 
@@ -97,12 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo
 - **Etiquetas:** `audio` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. |
 
 ## Enlaces
 
