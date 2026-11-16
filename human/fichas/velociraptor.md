@@ -30,6 +30,12 @@ Binarios de release; se configura servidor/frontend y se despliegan clientes.
 | [osquery](osquery.md) | Osquery aporta SQL continuo; Velociraptor hunts puntuales. | Usa osquery para baseline; Velociraptor para IR. |
 | [Volatility 3](volatility3.md) | Volatilidad analiza memoria; Velociraptor la adquiere. | Adquiere con Velociraptor; analiza con Volatility3. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Hayabusa](hayabusa.md)
+
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.77.3 (2026-10-05) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Velocidex/velociraptor#readme) · [2](https://docs.velociraptor.app/)</sub>

@@ -30,6 +30,12 @@ Binario Go (`go install …/httpx@latest` o release); se alimenta de listas de h
 | [Nuclei](nuclei.md) | Nuclei escanea las URLs vivas que httpx confirma. | httpx primero; Nuclei con `-l` sobre la salida. |
 | [Amass](amass.md) | Amass entrega hosts que httpx filtra por HTTP vivo. | Amass primero; httpx sobre la lista. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dnsx](dnsx.md) · [interactsh](interactsh.md)
+
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.12.0 (2026-09-08) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/projectdiscovery/httpx#readme) · [2](https://docs.projectdiscovery.io/tools/httpx)</sub>

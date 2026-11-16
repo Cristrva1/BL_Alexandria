@@ -1,0 +1,716 @@
+{
+ "lote": "ciber-segundo-1",
+ "fecha": "2026-11-16",
+ "metodo": "README + docs + gh api. Segundo nivel en modo ligero. No se instaló ningún proyecto.",
+ "alt_groups": [
+  [
+   "gobuster",
+   "feroxbuster",
+   "dirsearch"
+  ],
+  [
+   "mythic",
+   "empire",
+   "sliver"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "projectdiscovery/dnsx",
+   "id": "dnsx",
+   "name": "dnsx",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx.",
+   "how": "CLI Go que consulta registros DNS en paralelo sobre listas de hosts.",
+   "examples": [
+    "resolver un listado de FQDN de lab",
+    "detectar wildcards antes de escanear"
+   ],
+   "try": [
+    "Instala con `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest` y resuelve hosts de lab.",
+    "Obtienes registros DNS por host."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "projectdiscovery/interactsh",
+   "id": "interactsh",
+   "name": "interactsh",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP.",
+   "how": "Cliente/servidor Go; el cliente genera payloads y escucha interacciones en el servidor Interactsh.",
+   "examples": [
+    "confirmar SSRF ciega en una API de lab",
+    "validar plantillas Nuclei con OOB"
+   ],
+   "try": [
+    "Instala el cliente con `go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest`.",
+    "Recibes un dominio OOB de prueba."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "OJ/gobuster",
+   "id": "gobuster",
+   "name": "Gobuster",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado.",
+   "how": "CLI Go con modos dir/dns/vhost/s3; se alimenta de wordlists (p. ej. SecLists).",
+   "examples": [
+    "descubrir rutas ocultas en una app de lab",
+    "enumerar vhosts de un dominio propio"
+   ],
+   "try": [
+    "Instala con `go install github.com/OJ/gobuster/v3@latest` y lanza modo dir contra un lab.",
+    "Listas rutas encontradas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "go install github.com/OJ/gobuster/v3@latest",
+   "alt": [
+    "ffuf"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "epi052/feroxbuster",
+   "id": "feroxbuster",
+   "name": "feroxbuster",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web.",
+   "how": "Binario Rust; apt/brew/cargo o script de instalación; wordlists externas.",
+   "examples": [
+    "recursión de directorios en un lab Juice Shop",
+    "comparar cobertura con Gobuster"
+   ],
+   "try": [
+    "Instala con `brew install feroxbuster` (o el script) y escanea un host de lab.",
+    "Obtienes rutas con códigos HTTP."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "brew install feroxbuster",
+   "alt": [
+    "gobuster",
+    "ffuf"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "maurosoria/dirsearch",
+   "id": "dirsearch",
+   "name": "dirsearch",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio.",
+   "how": "CLI Python; se clona o instala con pip desde GitHub; incluye wordlists propias.",
+   "examples": [
+    "enumerar paneles admin en un lab",
+    "fuzzear extensiones de ficheros"
+   ],
+   "try": [
+    "Clona el repo o `pip3 install git+https://github.com/maurosoria/dirsearch.git` y apunta a un lab.",
+    "Lista paths descubiertos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "pip3 install git+https://github.com/maurosoria/dirsearch.git",
+   "alt": [
+    "gobuster",
+    "feroxbuster"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "bee-san/RustScan",
+   "id": "rustscan",
+   "name": "RustScan",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios.",
+   "how": "Binario Rust (cargo/brew/releases); encuentra puertos abiertos y puede invocar Nmap.",
+   "examples": [
+    "barrido rápido de un segmento de lab",
+    "pasar abiertos a Nmap -sV"
+   ],
+   "try": [
+    "Instala con `brew install rustscan` y escanea un host de lab.",
+    "Lista puertos y, si configuras, salida Nmap."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "brew install rustscan",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "robertdavidgraham/masscan",
+   "id": "masscan",
+   "name": "masscan",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance.",
+   "how": "Binario C; se compila con make o paquetes; sintaxis parecida a Nmap.",
+   "examples": [
+    "barrer un rango RFC1918 de lab",
+    "validar exposición de un /24 propio"
+   ],
+   "try": [
+    "Compila con `make` tras clonar o usa el paquete, y escanea solo un rango de laboratorio.",
+    "Obtienes puertos abiertos a alta velocidad."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Riesgo operativo alto: fácil de abusar si se apunta a Internet sin autorización.",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "wpscanteam/wpscan",
+   "id": "wpscan",
+   "name": "WPScan",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago).",
+   "how": "CLI Ruby (gem/Docker); consulta wpscan.com para la base de vulnerabilidades.",
+   "examples": [
+    "auditar un WordPress de staging propio",
+    "enumerar plugins desactualizados"
+   ],
+   "try": [
+    "Instala con `gem install wpscan` o Docker y escanea un WP de lab con `--api-token` si tienes.",
+    "Informe de usuarios/plugins/vulns según cuota API."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. API vulns: 25 peticiones/día gratis; Enterprise Local DB de pago. Licencia source-available con cláusula comercial.",
+   "cmd": "gem install wpscan",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "juice-shop/juice-shop",
+   "id": "juice-shop",
+   "name": "OWASP Juice Shop",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación.",
+   "how": "Node.js; `npm install && npm start` o imagen Docker; no debe exponerse a Internet.",
+   "examples": [
+    "practicar OWASP Top 10 en local",
+    "validar un scanner contra retos conocidos"
+   ],
+   "try": [
+    "Clona el repo, `npm install` y `npm start`, o usa la imagen Docker oficial.",
+    "Abres la tienda vulnerable en localhost."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Solo laboratorio; no desplegar expuesto a Internet.",
+   "cmd": "npm install",
+   "url": "https://owasp-juice.shop",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "ly4k/Certipy",
+   "id": "certipy",
+   "name": "Certipy",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "app",
+   "one": "Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados.",
+   "how": "CLI Python; se instala según la wiki; habla LDAP/RPC contra AD CS.",
+   "examples": [
+    "enumerar plantillas ESC1-ESC8 en un lab GOAD",
+    "pedir un certificado en un dominio de prueba"
+   ],
+   "try": [
+    "Sigue la wiki de instalación y ejecuta `certipy find` contra un lab AD.",
+    "Listas plantillas y vulnerabilidades AD CS."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "GhostPack/Rubeus",
+   "id": "rubeus",
+   "name": "Rubeus",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "app",
+   "one": "Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados.",
+   "how": "Proyecto .NET; se compila o se usa el release; se ejecuta en hosts Windows del lab.",
+   "examples": [
+    "kerberoasting en un dominio GOAD",
+    "pasar-the-ticket en lab"
+   ],
+   "try": [
+    "Compila Rubeus o usa un release y ejecútalo en un Windows de laboratorio.",
+    "Obtienes tickets/hashes según el comando."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "gentilkiwi/mimikatz",
+   "id": "mimikatz",
+   "name": "mimikatz",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "app",
+   "one": "Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en laboratorios aislados.",
+   "how": "Binarios en Releases; casi siempre detectado por AV; solo VMs de lab sin EDR de producción.",
+   "examples": [
+    "demostrar dump de LSASS en un lab",
+    "enseñar lateral movement con tickets"
+   ],
+   "try": [
+    "Descarga el release en una VM Windows de laboratorio sin datos reales y ejecuta un comando de prueba.",
+    "Ves credenciales/tickets del lab."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Firmas AV casi universales. Solo labs. Uso indebido es delito.",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "lgandx/Responder",
+   "id": "responder",
+   "name": "Responder",
+   "cat": 16,
+   "sub": "ad-interno",
+   "kind": "app",
+   "one": "Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio.",
+   "how": "CLI Python; se clona, instala requirements y escucha en el segmento autorizado.",
+   "examples": [
+    "capturar hashes NetNTLM en un lab GOAD",
+    "validar mitigaciones de name resolution"
+   ],
+   "try": [
+    "Clona el repo, instala requirements y ejecuta Responder en un segmento de lab.",
+    "Capturas hashes de víctimas de lab."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "git clone https://github.com/lgandx/Responder.git",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "nicocha30/ligolo-ng",
+   "id": "ligolo-ng",
+   "name": "Ligolo-ng",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado.",
+   "how": "Binarios agent/proxy; documentación en docs.ligolo.ng.",
+   "examples": [
+    "pivotar a una VLAN de lab tras compromiso",
+    "exponer un servicio interno en el ataque autorizado"
+   ],
+   "try": [
+    "Descarga agent y proxy desde Releases y sigue docs.ligolo.ng en un lab.",
+    "El túnel conecta las redes del ejercicio."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "url": "https://docs.ligolo.ng",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "its-a-feature/Mythic",
+   "id": "mythic",
+   "name": "Mythic",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli.",
+   "how": "Docker + mythic-cli (`sudo make` → `mythic-cli start`); agentes desde GitHub.",
+   "examples": [
+    "montar un C2 de lab con un agente oficial",
+    "ejercicio purple team multi-operador"
+   ],
+   "try": [
+    "Clona Mythic, `sudo make` y `sudo ./mythic-cli start` en una VM aislada.",
+    "UI del servidor lista; instala un agente."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "alt": [
+    "sliver"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "BC-SECURITY/Empire",
+   "id": "empire",
+   "name": "Empire",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "kind": "app",
+   "one": "Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados.",
+   "how": "Se clona el repo BC-SECURITY/Empire y se sigue la wiki de instalación.",
+   "examples": [
+    "listener + stager en un lab Windows",
+    "módulos de post-ex en ejercicio red team"
+   ],
+   "try": [
+    "Clona Empire y sigue https://bc-security.gitbook.io/empire-wiki/ para el setup de lab.",
+    "Consola Empire lista."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "cmd": "git clone https://github.com/BC-SECURITY/Empire.git",
+   "alt": [
+    "sliver",
+    "mythic"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "aquasecurity/kube-bench",
+   "id": "kube-bench",
+   "name": "kube-bench",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración.",
+   "how": "Job K8s o binario; aplica checks CIS y sale con hallazgos.",
+   "examples": [
+    "auditar un clúster de lab tras el deploy",
+    "integrar CIS check en el pipeline"
+   ],
+   "try": [
+    "Aplica el `job.yaml` documentado o el binario release en un clúster de lab.",
+    "Informe CIS por control."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "anchore/syft",
+   "id": "syft",
+   "name": "Syft",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scanners.",
+   "how": "CLI Go; script de instalación Anchore; salidas SPDX/CycloneDX.",
+   "examples": [
+    "generar SBOM de una imagen propia",
+    "adjuntar SBOM al artefacto de CI"
+   ],
+   "try": [
+    "Instala con `curl -sSfL https://get.anchore.io/syft | sudo sh -s -- -b /usr/local/bin` y ejecuta `syft <imagen>`.",
+    "Obtienes el SBOM."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "curl -sSfL https://get.anchore.io/syft | sudo sh -s -- -b /usr/local/bin",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "sigstore/cosign",
+   "id": "cosign",
+   "name": "Cosign",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC.",
+   "how": "CLI Go; firma imágenes OCI y verifica firmas en CI/CD.",
+   "examples": [
+    "firmar una imagen interna",
+    "verificar firmas antes del deploy"
+   ],
+   "try": [
+    "Instala Cosign (release o `go install`) y firma una imagen de lab.",
+    "La verificación confirma la firma."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "google/osv-scanner",
+   "id": "osv-scanner",
+   "name": "OSV-Scanner",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de código.",
+   "how": "CLI Go; `go install` o releases; reporta CVE/OSV IDs.",
+   "examples": [
+    "escanear lockfiles en CI",
+    "revisar una imagen de lab"
+   ],
+   "try": [
+    "Instala con `go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest` y escanea un repo propio.",
+    "Listas vulnerabilidades OSV."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest",
+   "url": "https://google.github.io/osv-scanner/",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "RhinoSecurityLabs/pacu",
+   "id": "pacu",
+   "name": "Pacu",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "kind": "app",
+   "one": "Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas.",
+   "how": "CLI Python (pipx/Docker); módulos enumeran y abusan APIs AWS.",
+   "examples": [
+    "enumerar privilegios de una cuenta sandbox",
+    "simular escalada IAM en lab"
+   ],
+   "try": [
+    "`pipx install git+https://github.com/RhinoSecurityLabs/pacu.git` y abre Pacu con claves de una cuenta de prueba.",
+    "Módulos listos en la CLI."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo. Solo cuentas AWS de prueba dedicadas. Nunca sobre producción ajena.",
+   "cmd": "pipx install git+https://github.com/RhinoSecurityLabs/pacu.git",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "Security-Onion-Solutions/securityonion",
+   "id": "securityonion",
+   "name": "Security Onion",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos.",
+   "how": "ISO/instalador documentado en securityonion.net; open + soporte comercial.",
+   "examples": [
+    "levantar un SOC de lab",
+    "entrenar analistas con telemetría realista"
+   ],
+   "try": [
+    "Sigue https://securityonion.net/docs/installation en hardware/VM dedicada.",
+    "Consola SOC accesible."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "caveat": "Licencia Elastic en partes del stack. Requiere mucha RAM/disco.",
+   "url": "https://securityonion.net",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "arkime/arkime",
+   "id": "arkime",
+   "name": "Arkime",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "app",
+   "one": "Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red.",
+   "how": "Binarios/containers; captura a disco e índice OpenSearch/Elasticsearch.",
+   "examples": [
+    "guardar tráfico de un ejercicio red team",
+    "buscar sesiones por IP/puerto"
+   ],
+   "try": [
+    "Instala desde https://arkime.com/downloads siguiendo la guía simple.",
+    "UI muestra sesiones capturadas."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://arkime.com",
+   "ligero": true,
+   "alt": []
+  },
+  {
+   "gh": "Yamato-Security/hayabusa",
+   "id": "hayabusa",
+   "name": "Hayabusa",
+   "cat": 16,
+   "sub": "ir-forense",
+   "kind": "app",
+   "one": "Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR.",
+   "how": "Binarios firmados en Releases; escanea evtx y aplica reglas.",
+   "examples": [
+    "triar logs de un endpoint Windows de lab",
+    "buscar técnicas ATT&CK en evtx"
+   ],
+   "try": [
+    "Descarga el release firmado y ejecuta Hayabusa sobre un evtx de lab.",
+    "Tabla de hits Sigma."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "ligero": true,
+   "alt": []
+  }
+ ]
+}

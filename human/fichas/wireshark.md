@@ -35,9 +35,9 @@ Escrito en C con interfaz Qt; usa libpcap o Npcap para capturar. Hay instaladore
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Volatility 3](volatility3.md)
+[Arkime](arkime.md) · [Volatility 3](volatility3.md)
 
 **Notas:** Para capturar en Linux sin root hay que configurar permisos de captura según la documentación.
 

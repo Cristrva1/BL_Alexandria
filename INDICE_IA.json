@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 838 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 862 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -751,7 +751,7 @@
      "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 68,
+   "count": 92,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -29447,7 +29447,10 @@
    "lib": false,
    "pick": false,
    "one": "Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.",
-   "alt": [],
+   "alt": [
+    "gobuster",
+    "feroxbuster"
+   ],
    "doc": "human/fichas/ffuf.md",
    "github_id": 156681830,
    "lang": "Go",
@@ -33193,7 +33196,10 @@
    "lib": false,
    "pick": false,
    "one": "Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
-   "alt": [],
+   "alt": [
+    "mythic",
+    "empire"
+   ],
    "doc": "human/fichas/sliver.md",
    "github_id": 166304026,
    "lang": "Go",
@@ -33877,6 +33883,839 @@
     "seguridad"
    ],
    "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dnsx",
+   "name": "dnsx",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 2926,
+   "gh": "projectdiscovery/dnsx",
+   "lib": false,
+   "pick": false,
+   "one": "Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx.",
+   "alt": [],
+   "doc": "human/fichas/dnsx.md",
+   "github_id": 312360662,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "interactsh",
+   "name": "interactsh",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 4645,
+   "gh": "projectdiscovery/interactsh",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP.",
+   "alt": [],
+   "doc": "human/fichas/interactsh.md",
+   "github_id": 334169919,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "gobuster",
+   "name": "Gobuster",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 14324,
+   "gh": "OJ/gobuster",
+   "lib": false,
+   "pick": false,
+   "one": "Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado.",
+   "alt": [
+    "feroxbuster",
+    "dirsearch",
+    "ffuf"
+   ],
+   "doc": "human/fichas/gobuster.md",
+   "github_id": 26639347,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "feroxbuster",
+   "name": "feroxbuster",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 8181,
+   "gh": "epi052/feroxbuster",
+   "lib": false,
+   "pick": false,
+   "one": "Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web.",
+   "alt": [
+    "gobuster",
+    "dirsearch",
+    "ffuf"
+   ],
+   "doc": "human/fichas/feroxbuster.md",
+   "github_id": 289516116,
+   "lang": "Rust",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dirsearch",
+   "name": "dirsearch",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 15089,
+   "gh": "maurosoria/dirsearch",
+   "lib": false,
+   "pick": false,
+   "one": "Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio.",
+   "alt": [
+    "gobuster",
+    "feroxbuster"
+   ],
+   "doc": "human/fichas/dirsearch.md",
+   "github_id": 9774482,
+   "lang": "Python",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "rustscan",
+   "name": "RustScan",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 20730,
+   "gh": "bee-san/RustScan",
+   "lib": false,
+   "pick": false,
+   "one": "Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios.",
+   "alt": [],
+   "doc": "human/fichas/rustscan.md",
+   "github_id": 278933035,
+   "lang": "Rust",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "masscan",
+   "name": "masscan",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 26159,
+   "gh": "robertdavidgraham/masscan",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance.",
+   "alt": [],
+   "doc": "human/fichas/masscan.md",
+   "github_id": 11715753,
+   "lang": "C",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "wpscan",
+   "name": "WPScan",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 9855,
+   "gh": "wpscanteam/wpscan",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago).",
+   "alt": [],
+   "doc": "human/fichas/wpscan.md",
+   "github_id": 4994614,
+   "lang": "Ruby",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "juice-shop",
+   "name": "OWASP Juice Shop",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 14453,
+   "gh": "juice-shop/juice-shop",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación.",
+   "alt": [],
+   "doc": "human/fichas/juice-shop.md",
+   "github_id": 24233689,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "certipy",
+   "name": "Certipy",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 3727,
+   "gh": "ly4k/Certipy",
+   "lib": false,
+   "pick": false,
+   "one": "Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados.",
+   "alt": [],
+   "doc": "human/fichas/certipy.md",
+   "github_id": 414397086,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "rubeus",
+   "name": "Rubeus",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 5228,
+   "gh": "GhostPack/Rubeus",
+   "lib": false,
+   "pick": false,
+   "one": "Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados.",
+   "alt": [],
+   "doc": "human/fichas/rubeus.md",
+   "github_id": 150035938,
+   "lang": "C#",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mimikatz",
+   "name": "mimikatz",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 21975,
+   "gh": "gentilkiwi/mimikatz",
+   "lib": false,
+   "pick": false,
+   "one": "Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en laboratorios aislados.",
+   "alt": [],
+   "doc": "human/fichas/mimikatz.md",
+   "github_id": 18496166,
+   "lang": "C",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "responder",
+   "name": "Responder",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 6681,
+   "gh": "lgandx/Responder",
+   "lib": false,
+   "pick": false,
+   "one": "Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio.",
+   "alt": [],
+   "doc": "human/fichas/responder.md",
+   "github_id": 67535141,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ligolo-ng",
+   "name": "Ligolo-ng",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 5188,
+   "gh": "nicocha30/ligolo-ng",
+   "lib": false,
+   "pick": false,
+   "one": "Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado.",
+   "alt": [],
+   "doc": "human/fichas/ligolo-ng.md",
+   "github_id": 390351016,
+   "lang": "Go",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mythic",
+   "name": "Mythic",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 4912,
+   "gh": "its-a-feature/Mythic",
+   "lib": false,
+   "pick": false,
+   "one": "Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli.",
+   "alt": [
+    "empire",
+    "sliver"
+   ],
+   "doc": "human/fichas/mythic.md",
+   "github_id": 139783546,
+   "lang": "JavaScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "empire",
+   "name": "Empire",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 5355,
+   "gh": "BC-SECURITY/Empire",
+   "lib": false,
+   "pick": false,
+   "one": "Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados.",
+   "alt": [
+    "mythic",
+    "sliver"
+   ],
+   "doc": "human/fichas/empire.md",
+   "github_id": 199975883,
+   "lang": "PowerShell",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kube-bench",
+   "name": "kube-bench",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 8260,
+   "gh": "aquasecurity/kube-bench",
+   "lib": false,
+   "pick": false,
+   "one": "Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración.",
+   "alt": [],
+   "doc": "human/fichas/kube-bench.md",
+   "github_id": 94779471,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "syft",
+   "name": "Syft",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 9905,
+   "gh": "anchore/syft",
+   "lib": false,
+   "pick": false,
+   "one": "Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scanners.",
+   "alt": [],
+   "doc": "human/fichas/syft.md",
+   "github_id": 262126497,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "cosign",
+   "name": "Cosign",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 6442,
+   "gh": "sigstore/cosign",
+   "lib": false,
+   "pick": false,
+   "one": "Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC.",
+   "alt": [],
+   "doc": "human/fichas/cosign.md",
+   "github_id": 335952417,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "osv-scanner",
+   "name": "OSV-Scanner",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 11543,
+   "gh": "google/osv-scanner",
+   "lib": false,
+   "pick": false,
+   "one": "Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de código.",
+   "alt": [],
+   "doc": "human/fichas/osv-scanner.md",
+   "github_id": 565629124,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pacu",
+   "name": "Pacu",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 5399,
+   "gh": "RhinoSecurityLabs/pacu",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas.",
+   "alt": [],
+   "doc": "human/fichas/pacu.md",
+   "github_id": 137276052,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "securityonion",
+   "name": "Security Onion",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 4992,
+   "gh": "Security-Onion-Solutions/securityonion",
+   "lib": false,
+   "pick": false,
+   "one": "Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos.",
+   "alt": [],
+   "doc": "human/fichas/securityonion.md",
+   "github_id": 120338179,
+   "lang": "Shell",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "arkime",
+   "name": "Arkime",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 7577,
+   "gh": "arkime/arkime",
+   "lib": false,
+   "pick": false,
+   "one": "Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red.",
+   "alt": [],
+   "doc": "human/fichas/arkime.md",
+   "github_id": 4927517,
+   "lang": "C",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "hayabusa",
+   "name": "Hayabusa",
+   "cat": 16,
+   "sub": "ir-forense",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 3491,
+   "gh": "Yamato-Security/hayabusa",
+   "lib": false,
+   "pick": false,
+   "one": "Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR.",
+   "alt": [],
+   "doc": "human/fichas/hayabusa.md",
+   "github_id": 296518768,
+   "lang": "Rust",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
    "routes": [
     "no_api"
    ]

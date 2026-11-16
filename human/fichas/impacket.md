@@ -31,6 +31,12 @@ Se instala con pipx/pip; expone scripts listos y una API para herramientas como 
 | [Metasploit Framework](metasploit.md) | Módulos de Metasploit y scripts de Impacket se usan juntos en post-explotación AD. | Define el alcance; elige Impacket o Metasploit según el escenario. |
 | [NetExec](netexec.md) | Combinación recíproca: NetExec lo enlaza como «NetExec apoya muchos flujos en Impacket (SMB/Kerberos)». | Orden indicado desde NetExec: Instala Impacket; después NetExec. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Certipy](certipy.md) · [Rubeus](rubeus.md)
+
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada impacket_0_13_1 (2026-05-19) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/fortra/impacket#readme) · [2](https://www.coresecurity.com)</sub>

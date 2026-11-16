@@ -199,13 +199,19 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Pi-hole](fichas/pi-hole.md) | [AdGuardHome](fichas/adguardhome.md) |
 | [SiYuan](fichas/siyuan.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [Logseq](fichas/logseq.md) |
 | [Trilium Notes](fichas/trilium.md) | [Joplin](fichas/joplin.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
+| [dirsearch](fichas/dirsearch.md) | [Gobuster](fichas/gobuster.md), [feroxbuster](fichas/feroxbuster.md) |
+| [Empire](fichas/empire.md) | [Mythic](fichas/mythic.md), [Sliver](fichas/sliver.md) |
+| [feroxbuster](fichas/feroxbuster.md) | [Gobuster](fichas/gobuster.md), [dirsearch](fichas/dirsearch.md), [ffuf](fichas/ffuf.md) |
+| [ffuf](fichas/ffuf.md) | [Gobuster](fichas/gobuster.md), [feroxbuster](fichas/feroxbuster.md) |
 | [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
+| [Gobuster](fichas/gobuster.md) | [feroxbuster](fichas/feroxbuster.md), [dirsearch](fichas/dirsearch.md), [ffuf](fichas/ffuf.md) |
 | [Grype](fichas/grype.md) | [Trivy](fichas/trivy.md) |
 | [hashcat](fichas/hashcat.md) | [John the Ripper (jumbo)](fichas/john.md) |
 | [httpx](fichas/httpx.md) | [Naabu](fichas/naabu.md) |
 | [John the Ripper (jumbo)](fichas/john.md) | [hashcat](fichas/hashcat.md) |
 | [k6](fichas/k6.md) | [Locust](fichas/locust.md) |
 | [Locust](fichas/locust.md) | [k6](fichas/k6.md) |
+| [Mythic](fichas/mythic.md) | [Empire](fichas/empire.md), [Sliver](fichas/sliver.md) |
 | [Naabu](fichas/naabu.md) | [httpx](fichas/httpx.md) |
 | [PayloadsAllTheThings](fichas/payloadsallthethings.md) | [SecLists](fichas/seclists.md) |
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
@@ -213,6 +219,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [SecLists](fichas/seclists.md) | [PayloadsAllTheThings](fichas/payloadsallthethings.md) |
 | [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md), [SonarQube Community Build](fichas/sonarqube.md) |
 | [shannon](fichas/shannon.md) | [strix](fichas/strix.md) |
+| [Sliver](fichas/sliver.md) | [Mythic](fichas/mythic.md), [Empire](fichas/empire.md) |
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
 | [Trivy](fichas/trivy.md) | [Grype](fichas/grype.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |

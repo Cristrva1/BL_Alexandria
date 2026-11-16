@@ -32,6 +32,12 @@ Se clonan las reglas y se convierten con las herramientas pySigma documentadas.
 | [OpenCTI](opencti.md) | Combinación recíproca: OpenCTI lo enlaza como «Reglas Sigma se gestionan junto al intel en el SOC». | Orden indicado desde OpenCTI: Vincula detecciones Sigma a CTI en OpenCTI. |
 | [osquery](osquery.md) | Combinación recíproca: osquery lo enlaza como «Traduce ideas Sigma a queries osquery». | Orden indicado desde osquery: Diseña la query y despliega el pack. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Hayabusa](hayabusa.md)
+
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada r2026-07-01 (2026-07-09) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SigmaHQ/sigma#readme) · [2](https://sigmahq.io/)</sub>

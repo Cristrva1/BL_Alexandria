@@ -31,6 +31,12 @@ Escrito en C; se usa con binarios de la release o paquetes de la plataforma. Req
 | [Claude Code](claude-code.md) | Un agente puede ayudar a construir reglas, máscaras y comandos de Hashcat para una auditoría (combinación por arquitectura). | Describe la política de contraseñas; después revisa el comando propuesto. |
 | [SecLists](seclists.md) | Combinación recíproca: SecLists lo enlaza como «Diccionarios de SecLists alimentan ataques de contraseña en lab». | Orden indicado desde SecLists: SecLists primero; Hashcat con la lista autorizada. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Responder](responder.md)
+
 **Notas:** Alternativas (elige una): john.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v8.0.0 (2026-10-25) (consultado el 2026-11-16).

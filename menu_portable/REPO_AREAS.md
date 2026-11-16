@@ -72,25 +72,25 @@ Comprender procesos y examinar cómo se comporta el software.
 
 Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-`bla`, `ffuf`, `hashcat`, `john`, `k6`, `locust`, `lynis`, `mitmproxy`, `nuclei`, `semgrep`, `sqlmap`, `wireshark`, `zaproxy`
+`bla`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `hashcat`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `nuclei`, `semgrep`, `sqlmap`, `wireshark`, `wpscan`, `zaproxy`
 
 ### Pruebas de intrusión autorizadas
 
 Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
-`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `evilginx2`, `httpx`, `impacket`, `metasploit`, `naabu`, `netexec`, `nmap`, `peass-ng`, `sliver`, `subfinder`
+`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `certipy`, `dnsx`, `empire`, `evilginx2`, `httpx`, `impacket`, `interactsh`, `ligolo-ng`, `masscan`, `metasploit`, `mimikatz`, `mythic`, `naabu`, `netexec`, `nmap`, `peass-ng`, `responder`, `rubeus`, `rustscan`, `sliver`, `subfinder`
 
 ### Detección y respuesta
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-`crowdsec`, `osquery`, `sigma`, `suricata`, `wazuh`, `zeek`
+`arkime`, `crowdsec`, `osquery`, `securityonion`, `sigma`, `suricata`, `wazuh`, `zeek`
 
 ### Nube, contenedores e IaC
 
 Revisar imágenes, clústeres y cuentas de nube antes de publicar.
 
-`checkov`, `falco`, `grype`, `prowler`, `trivy`
+`checkov`, `cosign`, `falco`, `grype`, `kube-bench`, `osv-scanner`, `pacu`, `prowler`, `syft`, `trivy`
 
 ### Credenciales y privacidad
 
@@ -108,7 +108,7 @@ Directorios y material de referencia para orientar el análisis.
 
 Recolectar evidencias, analizar memoria y cazar en endpoints propios.
 
-`velociraptor`, `volatility3`
+`hayabusa`, `velociraptor`, `volatility3`
 
 ### Inteligencia de amenazas
 

@@ -1,0 +1,719 @@
+{
+ "batch": "altas-ciber-segundo-1",
+ "checked_at": "2026-11-16",
+ "method": "README + docs + gh api. Segundo nivel en modo ligero. No se instaló ningún proyecto.",
+ "repos": {
+  "dnsx": {
+   "que_es": "Herramienta DNS del ecosistema ProjectDiscovery.",
+   "que_hace": "Resuelve y enumera registros DNS a escala.",
+   "como_lo_hace": "Binario Go (`go install` o release).",
+   "combina_con": [
+    {
+     "id": "subfinder",
+     "motivo": "dnsx resuelve lo que Subfinder descubre.",
+     "orden_instalacion": "Subfinder → dnsx."
+    },
+    {
+     "id": "httpx",
+     "motivo": "Tras DNS, httpx confirma HTTP.",
+     "orden_instalacion": "dnsx → httpx."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/projectdiscovery/dnsx#readme",
+    "https://docs.projectdiscovery.io/tools/dnsx"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/dnsx",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.3.1 (2026-08-31)"
+   }
+  },
+  "interactsh": {
+   "que_es": "Plataforma OOB de ProjectDiscovery.",
+   "que_hace": "Detecta interacciones fuera de banda desde payloads.",
+   "como_lo_hace": "Cliente/servidor Go o Docker.",
+   "combina_con": [
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei usa Interactsh para hallazgos OOB.",
+     "orden_instalacion": "Arranca el cliente; Nuclei con OOB."
+    },
+    {
+     "id": "httpx",
+     "motivo": "httpx encuentra endpoints; Interactsh confirma ciegos.",
+     "orden_instalacion": "httpx → Interactsh."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/projectdiscovery/interactsh#readme",
+    "https://docs.projectdiscovery.io/tools/interactsh"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/interactsh",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.4.1 (2026-09-30)"
+   }
+  },
+  "gobuster": {
+   "que_es": "Dirbuster/fuzzer en Go muy usado en pentest.",
+   "que_hace": "Fuerza rutas, DNS y vhosts con diccionarios.",
+   "como_lo_hace": "`go install` o Docker ghcr.io/oj/gobuster.",
+   "combina_con": [
+    {
+     "id": "seclists",
+     "motivo": "SecLists alimenta Gobuster.",
+     "orden_instalacion": "Clona SecLists; `-w` a Gobuster."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei tras descubrir rutas.",
+     "orden_instalacion": "Gobuster → Nuclei."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OJ/gobuster#readme"
+   ],
+   "github": {
+    "name_with_owner": "OJ/gobuster",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.8.2 (2025-09-04)"
+   }
+  },
+  "feroxbuster": {
+   "que_es": "Content discovery en Rust.",
+   "que_hace": "Fuerza rutas web con alto rendimiento.",
+   "como_lo_hace": "Paquetes o script install-nix.sh.",
+   "combina_con": [
+    {
+     "id": "seclists",
+     "motivo": "Wordlists SecLists.",
+     "orden_instalacion": "SecLists → feroxbuster."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Tras descubrir rutas, Nuclei valida vulns.",
+     "orden_instalacion": "feroxbuster → Nuclei."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/epi052/feroxbuster#readme",
+    "https://epi052.github.io/feroxbuster-docs/overview/"
+   ],
+   "github": {
+    "name_with_owner": "epi052/feroxbuster",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.14.0 (2026-11-12)"
+   }
+  },
+  "dirsearch": {
+   "que_es": "Dirbuster Python (GPL-2 según README; API sin SPDX).",
+   "que_hace": "Descubre directorios y ficheros web.",
+   "como_lo_hace": "git clone o pip desde GitHub.",
+   "combina_con": [
+    {
+     "id": "seclists",
+     "motivo": "Puede usar SecLists.",
+     "orden_instalacion": "Aporta la wordlist."
+    },
+    {
+     "id": "ffuf",
+     "motivo": "Contrasta con otro fuzzer.",
+     "orden_instalacion": "Mismo alcance."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/maurosoria/dirsearch#readme"
+   ],
+   "github": {
+    "name_with_owner": "maurosoria/dirsearch",
+    "archived": false,
+    "pushed_at": "2026-11-05",
+    "license": null,
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.5.0 (2026-08-14)"
+   }
+  },
+  "rustscan": {
+   "que_es": "Port scanner Rust que complementa Nmap.",
+   "que_hace": "Descubre puertos a gran velocidad y delega en Nmap.",
+   "como_lo_hace": "brew/cargo/releases.",
+   "combina_con": [
+    {
+     "id": "nmap",
+     "motivo": "RustScan encuentra; Nmap detalla.",
+     "orden_instalacion": "RustScan → Nmap."
+    },
+    {
+     "id": "naabu",
+     "motivo": "Otro escáner rápido del catálogo.",
+     "orden_instalacion": "Compara cobertura."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/bee-san/RustScan#readme"
+   ],
+   "github": {
+    "name_with_owner": "bee-san/RustScan",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "license": "GPL-3.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.4.1 (2025-02-23)"
+   }
+  },
+  "masscan": {
+   "que_es": "Port scanner asíncrono de Robert David Graham.",
+   "que_hace": "Escanea puertos masivamente con control de tasa.",
+   "como_lo_hace": "make install / paquetes.",
+   "combina_con": [
+    {
+     "id": "nmap",
+     "motivo": "Masscan abre; Nmap profundiza.",
+     "orden_instalacion": "Masscan → Nmap."
+    },
+    {
+     "id": "rustscan",
+     "motivo": "Misma familia de tarea.",
+     "orden_instalacion": "Elige según escala."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/robertdavidgraham/masscan#readme"
+   ],
+   "github": {
+    "name_with_owner": "robertdavidgraham/masscan",
+    "archived": false,
+    "pushed_at": "2026-10-05",
+    "license": "AGPL-3.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.3.2 (2021-01-31)"
+   }
+  },
+  "wpscan": {
+   "que_es": "CLI WPScan (Public Source License; uso comercial SaaS requiere licencia de pago).",
+   "que_hace": "Enumera y detecta vulnerabilidades en sitios WordPress.",
+   "como_lo_hace": "gem, brew tap o Docker wpscanteam/wpscan.",
+   "combina_con": [
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei amplía checks web genéricos.",
+     "orden_instalacion": "WPScan para WP; Nuclei para el resto."
+    },
+    {
+     "id": "ffuf",
+     "motivo": "Fuzzing de rutas junto al escaneo WP.",
+     "orden_instalacion": "WPScan → ffuf."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/wpscanteam/wpscan#readme",
+    "https://wpscan.com/wordpress-cli-scanner"
+   ],
+   "github": {
+    "name_with_owner": "wpscanteam/wpscan",
+    "archived": false,
+    "pushed_at": "2026-11-07",
+    "license": "NOASSERTION",
+    "primary_language": "Ruby",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.2.0 (2026-10-27)"
+   }
+  },
+  "juice-shop": {
+   "que_es": "Lab web vulnerable OWASP (MIT).",
+   "que_hace": "Sirve una tienda con fallos intencionados y un scoreboard.",
+   "como_lo_hace": "npm o Docker.",
+   "combina_con": [
+    {
+     "id": "zaproxy",
+     "motivo": "ZAP contra Juice Shop.",
+     "orden_instalacion": "Levanta Juice Shop; escanea con ZAP."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Plantillas Nuclei sobre el lab.",
+     "orden_instalacion": "Juice Shop → Nuclei."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/juice-shop/juice-shop#readme",
+    "https://owasp-juice.shop"
+   ],
+   "github": {
+    "name_with_owner": "juice-shop/juice-shop",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v20.4.0 (2026-11-08)"
+   }
+  },
+  "certipy": {
+   "que_es": "Toolkit AD CS de ly4k (MIT).",
+   "que_hace": "Encuentra y explota misconfigs de certificados AD.",
+   "como_lo_hace": "pip/poetry según wiki.",
+   "combina_con": [
+    {
+     "id": "bloodhound",
+     "motivo": "Rutas de BloodHound + AD CS con Certipy.",
+     "orden_instalacion": "BloodHound → Certipy."
+    },
+    {
+     "id": "impacket",
+     "motivo": "Autenticación/tickets con Impacket.",
+     "orden_instalacion": "Impacket + Certipy."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/ly4k/Certipy#readme",
+    "https://github.com/ly4k/Certipy/wiki"
+   ],
+   "github": {
+    "name_with_owner": "ly4k/Certipy",
+    "archived": false,
+    "pushed_at": "2026-07-30",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "5.1.0 (2026-06-23)"
+   }
+  },
+  "rubeus": {
+   "que_es": "Herramienta GhostPack (BSD-3) para Kerberos offense.",
+   "que_hace": "Manipula tickets y ataques Kerberos.",
+   "como_lo_hace": "Build .NET / release.",
+   "combina_con": [
+    {
+     "id": "bloodhound",
+     "motivo": "Identifica objetivos; Rubeus ataca Kerberos.",
+     "orden_instalacion": "BloodHound → Rubeus."
+    },
+    {
+     "id": "impacket",
+     "motivo": "Complementa con getTGT/getST de Impacket.",
+     "orden_instalacion": "Elige según plataforma."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/GhostPack/Rubeus#readme"
+   ],
+   "github": {
+    "name_with_owner": "GhostPack/Rubeus",
+    "archived": false,
+    "pushed_at": "2026-05-21",
+    "license": "NOASSERTION",
+    "primary_language": "C#",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.6.4 (2021-08-03)"
+   }
+  },
+  "mimikatz": {
+   "que_es": "Herramienta de gentilkiwi (CC BY 4.0 según README; sin SPDX en API).",
+   "que_hace": "Extrae secretos de memoria y realiza operaciones Kerberos/AD ofensivas.",
+   "como_lo_hace": "Binarios de Releases.",
+   "combina_con": [
+    {
+     "id": "bloodhound",
+     "motivo": "Tras mimikatz, BloodHound explica el impacto.",
+     "orden_instalacion": "Lab aislado → ambos."
+    },
+    {
+     "id": "peass-ng",
+     "motivo": "PEASS enumera; mimikatz profundiza credenciales.",
+     "orden_instalacion": "PEASS → mimikatz solo en lab."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/gentilkiwi/mimikatz#readme"
+   ],
+   "github": {
+    "name_with_owner": "gentilkiwi/mimikatz",
+    "archived": false,
+    "pushed_at": "2026-10-30",
+    "license": null,
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.2.0-20220919 (2022-09-19)"
+   }
+  },
+  "responder": {
+   "que_es": "Poisoner de resolución de nombres (GPL-3).",
+   "que_hace": "Responde a broadcasts y captura autenticaciones.",
+   "como_lo_hace": "git clone + pip requirements.",
+   "combina_con": [
+    {
+     "id": "netexec",
+     "motivo": "Hashes capturados se prueban con NetExec.",
+     "orden_instalacion": "Responder → NetExec."
+    },
+    {
+     "id": "hashcat",
+     "motivo": "Craqueo de hashes capturados.",
+     "orden_instalacion": "Responder → Hashcat."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/lgandx/Responder#readme"
+   ],
+   "github": {
+    "name_with_owner": "lgandx/Responder",
+    "archived": false,
+    "pushed_at": "2026-06-10",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "ligolo-ng": {
+   "que_es": "Pivoting tunnel GPL-3.",
+   "que_hace": "Crea túneles agent↔proxy para pivoting.",
+   "como_lo_hace": "Releases + docs.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Pivoting Ligolo junto a sesiones Metasploit.",
+     "orden_instalacion": "Sesión → Ligolo."
+    },
+    {
+     "id": "sliver",
+     "motivo": "C2 Sliver + túnel Ligolo.",
+     "orden_instalacion": "Sliver → Ligolo."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/nicocha30/ligolo-ng#readme",
+    "https://docs.ligolo.ng"
+   ],
+   "github": {
+    "name_with_owner": "nicocha30/ligolo-ng",
+    "archived": false,
+    "pushed_at": "2026-09-26",
+    "license": "GPL-3.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.9.2 (2026-09-26)"
+   }
+  },
+  "mythic": {
+   "que_es": "C2 colaborativo (BSD-3 según LICENSE; API NOASSERTION).",
+   "que_hace": "Orquesta agents/profiles vía UI y API.",
+   "como_lo_hace": "mythic-cli + contenedores.",
+   "combina_con": [
+    {
+     "id": "caldera",
+     "motivo": "CALDERA emulación ATT&CK; Mythic C2 operator-centric.",
+     "orden_instalacion": "Complementarios."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Valida detección del C2 en lab.",
+     "orden_instalacion": "Mythic → Wazuh."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/its-a-feature/Mythic#readme"
+   ],
+   "github": {
+    "name_with_owner": "its-a-feature/Mythic",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "NOASSERTION",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.4.0.5 (2025-10-10)"
+   }
+  },
+  "empire": {
+   "que_es": "Empire de BC-Security (BSD-3).",
+   "que_hace": "C2 y post-explotación con módulos.",
+   "como_lo_hace": "Clone + instalación documentada.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Post-ex complementaria.",
+     "orden_instalacion": "Elige según payload."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Detección del C2.",
+     "orden_instalacion": "Empire → Wazuh."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/BC-SECURITY/Empire#readme",
+    "https://bc-security.gitbook.io/empire-wiki/"
+   ],
+   "github": {
+    "name_with_owner": "BC-SECURITY/Empire",
+    "archived": false,
+    "pushed_at": "2026-09-08",
+    "license": "BSD-3-Clause",
+    "primary_language": "PowerShell",
+    "checked_at": "2026-11-16",
+    "latest_release": "v7.0.2 (2026-09-08)"
+   }
+  },
+  "kube-bench": {
+   "que_es": "Auditor CIS K8s de Aqua Security.",
+   "que_hace": "Evalúa el clúster contra CIS Benchmark.",
+   "como_lo_hace": "kubectl apply job.yaml / release.",
+   "combina_con": [
+    {
+     "id": "trivy",
+     "motivo": "Trivy imágenes; kube-bench el clúster.",
+     "orden_instalacion": "Ambos en el pipeline."
+    },
+    {
+     "id": "falco",
+     "motivo": "kube-bench config; Falco runtime.",
+     "orden_instalacion": "Bench → Falco."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/aquasecurity/kube-bench#readme"
+   ],
+   "github": {
+    "name_with_owner": "aquasecurity/kube-bench",
+    "archived": false,
+    "pushed_at": "2026-10-26",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.16.0 (2026-08-05)"
+   }
+  },
+  "syft": {
+   "que_es": "Generador SBOM de Anchore.",
+   "que_hace": "Inventaria paquetes y produce SBOM estándar.",
+   "como_lo_hace": "Script oficial / releases.",
+   "combina_con": [
+    {
+     "id": "grype",
+     "motivo": "Syft genera; Grype escanea el SBOM.",
+     "orden_instalacion": "syft → grype."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Trivy también SBOM/CVE.",
+     "orden_instalacion": "Compara salidas."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/anchore/syft#readme"
+   ],
+   "github": {
+    "name_with_owner": "anchore/syft",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.57.1 (2026-11-09)"
+   }
+  },
+  "cosign": {
+   "que_es": "Herramienta Sigstore para supply-chain signing.",
+   "que_hace": "Firma/verifica artefactos OCI.",
+   "como_lo_hace": "Release / go install.",
+   "combina_con": [
+    {
+     "id": "trivy",
+     "motivo": "Trivy escanea; Cosign firma.",
+     "orden_instalacion": "Scan → sign."
+    },
+    {
+     "id": "syft",
+     "motivo": "SBOM + firma del artefacto.",
+     "orden_instalacion": "syft → cosign."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/sigstore/cosign#readme"
+   ],
+   "github": {
+    "name_with_owner": "sigstore/cosign",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.1.4 (2026-10-20)"
+   }
+  },
+  "osv-scanner": {
+   "que_es": "Scanner OSV de Google.",
+   "que_hace": "Encuentra vulns conocidas vía OSV.",
+   "como_lo_hace": "go install / releases.",
+   "combina_con": [
+    {
+     "id": "trivy",
+     "motivo": "Contrasta CVE.",
+     "orden_instalacion": "Ambos en CI."
+    },
+    {
+     "id": "grype",
+     "motivo": "Otro motor CVE.",
+     "orden_instalacion": "Compara."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/google/osv-scanner#readme",
+    "https://google.github.io/osv-scanner/"
+   ],
+   "github": {
+    "name_with_owner": "google/osv-scanner",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.7.1 (2026-11-09)"
+   }
+  },
+  "pacu": {
+   "que_es": "Framework ofensivo AWS.",
+   "que_hace": "Ejecuta módulos de enum/exploit sobre AWS.",
+   "como_lo_hace": "pipx o Docker.",
+   "combina_con": [
+    {
+     "id": "prowler",
+     "motivo": "Prowler audita posture; Pacu valida impacto.",
+     "orden_instalacion": "Prowler → Pacu en sandbox."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Complementa con escaneo de imágenes en la cuenta.",
+     "orden_instalacion": "Ambos."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/RhinoSecurityLabs/pacu#readme"
+   ],
+   "github": {
+    "name_with_owner": "RhinoSecurityLabs/pacu",
+    "archived": false,
+    "pushed_at": "2026-05-19",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.7.0 (2026-03-23)"
+   }
+  },
+  "securityonion": {
+   "que_es": "Distro SOC (Elastic License 2.0 en componentes; API NOASSERTION).",
+   "que_hace": "Empaqueta sensores, búsqueda y casos.",
+   "como_lo_hace": "Instalador oficial.",
+   "combina_con": [
+    {
+     "id": "suricata",
+     "motivo": "Incluye Suricata como sensor.",
+     "orden_instalacion": "SO orquesta Suricata."
+    },
+    {
+     "id": "zeek",
+     "motivo": "Incluye Zeek.",
+     "orden_instalacion": "SO orquesta Zeek."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Alternativa SIEM más ligera.",
+     "orden_instalacion": "Compara despliegues."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Security-Onion-Solutions/securityonion#readme",
+    "https://securityonion.net"
+   ],
+   "github": {
+    "name_with_owner": "Security-Onion-Solutions/securityonion",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Shell",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.4.0-20261102 (2026-11-02)"
+   }
+  },
+  "arkime": {
+   "que_es": "Full packet capture indexado (Apache-2.0).",
+   "que_hace": "Captura, indexa y busca PCAP.",
+   "como_lo_hace": "Binarios o contenedores oficiales.",
+   "combina_con": [
+    {
+     "id": "wireshark",
+     "motivo": "Exporta sesiones a Wireshark.",
+     "orden_instalacion": "Arkime → PCAP → Wireshark."
+    },
+    {
+     "id": "suricata",
+     "motivo": "Suricata alerta; Arkime guarda el paquete.",
+     "orden_instalacion": "Ambos en el sensor."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/arkime/arkime#readme",
+    "https://arkime.com"
+   ],
+   "github": {
+    "name_with_owner": "arkime/arkime",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.9.2 (2026-11-12)"
+   }
+  },
+  "hayabusa": {
+   "que_es": "DFIR timeline/rules (AGPL) de Yamato Security.",
+   "que_hace": "Aplica Sigma a event logs Windows.",
+   "como_lo_hace": "Releases firmados.",
+   "combina_con": [
+    {
+     "id": "sigma",
+     "motivo": "Usa reglas SigmaHQ.",
+     "orden_instalacion": "Paquete Sigma → Hayabusa."
+    },
+    {
+     "id": "velociraptor",
+     "motivo": "Velociraptor recolecta; Hayabusa tria.",
+     "orden_instalacion": "Recolección → Hayabusa."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Yamato-Security/hayabusa#readme",
+    "https://yamato-security.github.io/hayabusa/getting-started/"
+   ],
+   "github": {
+    "name_with_owner": "Yamato-Security/hayabusa",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "AGPL-3.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.4.0 (2026-11-10)"
+   }
+  }
+ }
+}

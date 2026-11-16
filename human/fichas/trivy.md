@@ -35,9 +35,9 @@ Se distribuye como binario Go (Homebrew, Docker `aquasec/trivy`, paquetes y GitH
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Checkov](checkov.md) · [Falco](falco.md) · [Prowler](prowler.md)
+[Checkov](checkov.md) · [Cosign](cosign.md) · [Falco](falco.md) · [kube-bench](kube-bench.md) · [OSV-Scanner](osv-scanner.md) · [Pacu](pacu.md) · [Prowler](prowler.md) · [Syft](syft.md)
 
 **Notas:** La base de vulnerabilidades se descarga de registros públicos; en entornos aislados hay que preparar una réplica.
 

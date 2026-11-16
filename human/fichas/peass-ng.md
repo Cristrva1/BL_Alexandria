@@ -30,6 +30,12 @@ Se bajan binarios/scripts de Releases y se ejecutan en el host objetivo autoriza
 | [BloodHound Community Edition](bloodhound.md) | En AD, BloodHound da rutas de dominio; PEASS el host. | Usa ambos niveles. |
 | [Lynis](lynis.md) | Lynis endurece; PEASS encuentra lo explotable. | Audita con Lynis; valida con PEASS en lab. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[mimikatz](mimikatz.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 20261116-7dd73e1d (2026-11-16) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/peass-ng/PEASS-ng#readme) · [2](https://book.hacktricks.xyz)</sub>

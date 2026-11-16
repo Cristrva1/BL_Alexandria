@@ -30,6 +30,12 @@ Se instala desde releases o `curl https://sliver.sh/install|sudo bash`; el opera
 | [Nmap](nmap.md) | Nmap delimita el alcance antes de desplegar implants. | Nmap primero; implants solo en hosts autorizados. |
 | [Wireshark](wireshark.md) | Wireshark valida el tráfico C2 generado en lab. | Captura con Wireshark mientras el implant habla con el server. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Ligolo-ng](ligolo-ng.md)
+
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.7.9 (2026-10-25) · licencia declarada GPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BishopFox/sliver#readme) · [2](https://sliver.sh/docs)</sub>
@@ -105,6 +111,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Go, Dockerfile, Makefile, go.mod
 - **Etiquetas:** `security` `c2` `redteam`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Mythic](mythic.md) | 4.9k | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. |
+| [Empire](empire.md) | 5.4k | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. |
 
 ## Enlaces
 

@@ -4,7 +4,7 @@
 
 Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.
 
-68 repos · 14 secciones
+92 repos · 14 secciones
 
 ## Puntos de partida
 
@@ -19,17 +19,17 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Ingeniería inversa y formatos binarios](#ingeniería-inversa-y-formatos-binarios) — 10 repos
 - [Depuración e inspección de procesos](#depuración-e-inspección-de-procesos) — 3 repos
-- [Tráfico, rendimiento y pruebas](#tráfico-rendimiento-y-pruebas) — 10 repos
-- [Reconocimiento y superficie de ataque](#reconocimiento-y-superficie-de-ataque) — 5 repos
-- [Explotación, C2 y post-explotación](#explotación-c2-y-post-explotación) — 6 repos
-- [Active Directory y red interna](#active-directory-y-red-interna) — 3 repos
-- [Detección, SIEM e IDS](#detección-siem-e-ids) — 6 repos
-- [Nube, contenedores e IaC](#nube-contenedores-e-iac) — 5 repos
+- [Tráfico, rendimiento y pruebas](#tráfico-rendimiento-y-pruebas) — 15 repos
+- [Reconocimiento y superficie de ataque](#reconocimiento-y-superficie-de-ataque) — 9 repos
+- [Explotación, C2 y post-explotación](#explotación-c2-y-post-explotación) — 9 repos
+- [Active Directory y red interna](#active-directory-y-red-interna) — 7 repos
+- [Detección, SIEM e IDS](#detección-siem-e-ids) — 8 repos
+- [Nube, contenedores e IaC](#nube-contenedores-e-iac) — 10 repos
 - [Análisis y pruebas con agentes](#análisis-y-pruebas-con-agentes) — 5 repos
 - [Protección y verificación de software](#protección-y-verificación-de-software) — 3 repos
 - [Directorios y aprendizaje](#directorios-y-aprendizaje) — 4 repos
 - [Skills de análisis y seguridad](#skills-de-análisis-y-seguridad) — 4 repos
-- [Respuesta a incidentes y forense](#respuesta-a-incidentes-y-forense) — 2 repos
+- [Respuesta a incidentes y forense](#respuesta-a-incidentes-y-forense) — 3 repos
 - [Inteligencia de amenazas](#inteligencia-de-amenazas) — 2 repos
 
 ## Ingeniería inversa y formatos binarios
@@ -67,18 +67,27 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [hashcat](../fichas/hashcat.md) | Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. | Tu objetivo encaja con estos ejemplos: auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados; recuperar la contraseña de un archivo propio olvidado | Sin clave propia de API de IA en la ruta básica |
 | [ffuf](../fichas/ffuf.md) | Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy. | Tu objetivo encaja con estos ejemplos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada | Sin clave propia de API de IA en la ruta básica |
 | [ZAP (Zed Attack Proxy)](../fichas/zaproxy.md) | Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. | Tu objetivo encaja con estos ejemplos: buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo; integrar un escaneo DAST en el pipeline de CI | Sin clave propia de API de IA en la ruta básica |
+| [dirsearch](../fichas/dirsearch.md) | Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio. | Tu objetivo encaja con estos ejemplos: enumerar paneles admin en un lab; fuzzear extensiones de ficheros | Sin clave propia de API de IA en la ruta básica |
+| [OWASP Juice Shop](../fichas/juice-shop.md) | Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación. | Tu objetivo encaja con estos ejemplos: practicar OWASP Top 10 en local; validar un scanner contra retos conocidos | Sin clave propia de API de IA en la ruta básica |
+| [Gobuster](../fichas/gobuster.md) | Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado. | Tu objetivo encaja con estos ejemplos: descubrir rutas ocultas en una app de lab; enumerar vhosts de un dominio propio | Sin clave propia de API de IA en la ruta básica |
 | [John the Ripper (jumbo)](../fichas/john.md) | Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. | Tu objetivo encaja con estos ejemplos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo | Sin clave propia de API de IA en la ruta básica |
 | [Wireshark](../fichas/wireshark.md) | Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos. | Tu objetivo encaja con estos ejemplos: depurar por qué una aplicación no se conecta a un servidor; aprender cómo funcionan protocolos como DNS, TLS o HTTP observando el tráfico | Sin clave propia de API de IA en la ruta básica |
+| [WPScan](../fichas/wpscan.md) | Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago). | Tu objetivo encaja con estos ejemplos: auditar un WordPress de staging propio; enumerar plugins desactualizados | Sin clave propia de API de IA en la ruta básica |
+| [feroxbuster](../fichas/feroxbuster.md) | Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. | Tu objetivo encaja con estos ejemplos: recursión de directorios en un lab Juice Shop; comparar cobertura con Gobuster | Sin clave propia de API de IA en la ruta básica |
 
 ## Reconocimiento y superficie de ataque
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [masscan](../fichas/masscan.md) | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance. | Tu objetivo encaja con estos ejemplos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio | Sin clave propia de API de IA en la ruta básica |
+| [RustScan](../fichas/rustscan.md) | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios. | Tu objetivo encaja con estos ejemplos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV | Sin clave propia de API de IA en la ruta básica |
 | [Amass](../fichas/amass.md) | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos. | Tu objetivo encaja con estos ejemplos: inventariar subdominios de un dominio propio antes de un pentest; cruzar certificados TLS públicos con la infraestructura conocida | Sin clave propia de API de IA en la ruta básica |
 | [subfinder](../fichas/subfinder.md) | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras. | Tu objetivo encaja con estos ejemplos: inventariar los subdominios públicos de tu propia organización; preparar el alcance de un programa de bug bounty | Sin clave propia de API de IA en la ruta básica |
 | [Nmap](../fichas/nmap.md) | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada. | Tu objetivo encaja con estos ejemplos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio | Sin clave propia de API de IA en la ruta básica |
 | [httpx](../fichas/httpx.md) | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. | Tu objetivo encaja con estos ejemplos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado | Sin clave propia de API de IA en la ruta básica |
 | [Naabu](../fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Tu objetivo encaja con estos ejemplos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios | Sin clave propia de API de IA en la ruta básica |
+| [interactsh](../fichas/interactsh.md) | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP. | Tu objetivo encaja con estos ejemplos: confirmar SSRF ciega en una API de lab; validar plantillas Nuclei con OOB | Sin clave propia de API de IA en la ruta básica |
+| [dnsx](../fichas/dnsx.md) | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx. | Tu objetivo encaja con estos ejemplos: resolver un listado de FQDN de lab; detectar wildcards antes de escanear | Sin clave propia de API de IA en la ruta básica |
 
 ## Explotación, C2 y post-explotación
 
@@ -90,13 +99,20 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Atomic Red Team](../fichas/atomic-red-team.md) | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. | Tu objetivo encaja con estos ejemplos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas | Sin clave propia de API de IA en la ruta básica |
 | [Sliver](../fichas/sliver.md) | Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. | Tu objetivo encaja con estos ejemplos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado | Sin clave propia de API de IA en la ruta básica |
 | [CALDERA](../fichas/caldera.md) | Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. | Tu objetivo encaja con estos ejemplos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas | Sin clave propia de API de IA en la ruta básica |
+| [Empire](../fichas/empire.md) | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. | Tu objetivo encaja con estos ejemplos: listener + stager en un lab Windows; módulos de post-ex en ejercicio red team | Sin clave propia de API de IA en la ruta básica |
+| [Ligolo-ng](../fichas/ligolo-ng.md) | Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado. | Tu objetivo encaja con estos ejemplos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado | Sin clave propia de API de IA en la ruta básica |
+| [Mythic](../fichas/mythic.md) | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. | Tu objetivo encaja con estos ejemplos: montar un C2 de lab con un agente oficial; ejercicio purple team multi-operador | Sin clave propia de API de IA en la ruta básica |
 
 ## Active Directory y red interna
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [mimikatz](../fichas/mimikatz.md) | Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en laboratorios aislados. | Tu objetivo encaja con estos ejemplos: demostrar dump de LSASS en un lab; enseñar lateral movement con tickets | Sin clave propia de API de IA en la ruta básica |
 | [Impacket](../fichas/impacket.md) | Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory. | Tu objetivo encaja con estos ejemplos: extraer hashes con secretsdump en un DC de laboratorio; simular autenticación SMB/Kerberos en un lab aislado | Sin clave propia de API de IA en la ruta básica |
+| [Responder](../fichas/responder.md) | Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio. | Tu objetivo encaja con estos ejemplos: capturar hashes NetNTLM en un lab GOAD; validar mitigaciones de name resolution | Sin clave propia de API de IA en la ruta básica |
 | [NetExec](../fichas/netexec.md) | Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales. | Tu objetivo encaja con estos ejemplos: validar un set de credenciales contra un segmento Windows de lab; enumerar shares y sesiones tras un compromiso autorizado | Sin clave propia de API de IA en la ruta básica |
+| [Rubeus](../fichas/rubeus.md) | Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados. | Tu objetivo encaja con estos ejemplos: kerberoasting en un dominio GOAD; pasar-the-ticket en lab | Sin clave propia de API de IA en la ruta básica |
+| [Certipy](../fichas/certipy.md) | Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados. | Tu objetivo encaja con estos ejemplos: enumerar plantillas ESC1-ESC8 en un lab GOAD; pedir un certificado en un dominio de prueba | Sin clave propia de API de IA en la ruta básica |
 | [BloodHound Community Edition](../fichas/bloodhound.md) | Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria). | Tu objetivo encaja con estos ejemplos: identificar rutas de escalada hacia administrador de dominio en tu propio AD; priorizar qué permisos excesivos corregir primero | Sin clave propia de API de IA en la ruta básica |
 
 ## Detección, SIEM e IDS
@@ -108,7 +124,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [CrowdSec](../fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas | Sin clave propia de API de IA en la ruta básica |
 | [Sigma](../fichas/sigma.md) | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. | Tu objetivo encaja con estos ejemplos: portar una detección a varios SIEM sin reescribirla; cubrir técnicas ATT&CK con reglas comunitarias | Sin clave propia de API de IA en la ruta básica |
 | [Zeek](../fichas/zeek.md) | Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red. | Tu objetivo encaja con estos ejemplos: generar logs DNS/HTTP de un segmento de lab; investigar un incidente a partir de logs Zeek | Sin clave propia de API de IA en la ruta básica |
+| [Arkime](../fichas/arkime.md) | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red. | Tu objetivo encaja con estos ejemplos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto | Sin clave propia de API de IA en la ruta básica |
 | [Suricata](../fichas/suricata.md) | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad. | Tu objetivo encaja con estos ejemplos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team | Sin clave propia de API de IA en la ruta básica |
+| [Security Onion](../fichas/securityonion.md) | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. | Tu objetivo encaja con estos ejemplos: levantar un SOC de lab; entrenar analistas con telemetría realista | Sin clave propia de API de IA en la ruta básica |
 
 ## Nube, contenedores e IaC
 
@@ -117,8 +135,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Trivy](../fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Tu objetivo encaja con estos ejemplos: escanear una imagen Docker antes de desplegarla; generar un SBOM y revisar dependencias vulnerables de un proyecto en CI | Sin clave propia de API de IA en la ruta básica |
 | [Prowler](../fichas/prowler.md) | Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago. | Tu objetivo encaja con estos ejemplos: auditar cuentas AWS de laboratorio contra CIS; generar un informe de posture antes de un ejercicio interno | Sin clave propia de API de IA en la ruta básica |
 | [Grype](../fichas/grype.md) | Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. | Tu objetivo encaja con estos ejemplos: escanear una imagen Docker propia antes de publicarla; evaluar un SBOM generado en CI | Sin clave propia de API de IA en la ruta básica |
+| [OSV-Scanner](../fichas/osv-scanner.md) | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de código. | Tu objetivo encaja con estos ejemplos: escanear lockfiles en CI; revisar una imagen de lab | Sin clave propia de API de IA en la ruta básica |
+| [Syft](../fichas/syft.md) | Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scanners. | Tu objetivo encaja con estos ejemplos: generar SBOM de una imagen propia; adjuntar SBOM al artefacto de CI | Sin clave propia de API de IA en la ruta básica |
 | [Falco](../fichas/falco.md) | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes. | Tu objetivo encaja con estos ejemplos: detectar un shell interactivo en un pod de producción propia; alertar sobre escritura inesperada en /etc dentro de un contenedor | Sin clave propia de API de IA en la ruta básica |
 | [Checkov](../fichas/checkov.md) | SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos. | Tu objetivo encaja con estos ejemplos: revisar un módulo Terraform antes del apply; bloquear un manifiesto K8s con privilegios excesivos en CI | Sin clave propia de API de IA en la ruta básica |
+| [kube-bench](../fichas/kube-bench.md) | Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración. | Tu objetivo encaja con estos ejemplos: auditar un clúster de lab tras el deploy; integrar CIS check en el pipeline | Sin clave propia de API de IA en la ruta básica |
+| [Cosign](../fichas/cosign.md) | Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC. | Tu objetivo encaja con estos ejemplos: firmar una imagen interna; verificar firmas antes del deploy | Sin clave propia de API de IA en la ruta básica |
+| [Pacu](../fichas/pacu.md) | Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas. | Tu objetivo encaja con estos ejemplos: enumerar privilegios de una cuenta sandbox; simular escalada IAM en lab | Sin clave propia de API de IA en la ruta básica |
 
 ## Análisis y pruebas con agentes
 
@@ -162,6 +185,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Volatility 3](../fichas/volatility3.md) | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware. | Tu objetivo encaja con estos ejemplos: listar procesos ocultos en un dump de lab; extraer conexiones de red desde memoria | Sin clave propia de API de IA en la ruta básica |
 | [Velociraptor](../fichas/velociraptor.md) | EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS. | Tu objetivo encaja con estos ejemplos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba | Sin clave propia de API de IA en la ruta básica |
+| [Hayabusa](../fichas/hayabusa.md) | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR. | Tu objetivo encaja con estos ejemplos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx | Sin clave propia de API de IA en la ruta básica |
 
 ## Inteligencia de amenazas
 

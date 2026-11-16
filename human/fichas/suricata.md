@@ -30,6 +30,12 @@ Se compila o instala por paquetes según la guía; se alimenta de SPAN/TAP o mod
 | [Wireshark](wireshark.md) | Wireshark analiza PCAP que Suricata marca. | Exporta el PCAP de la alerta a Wireshark. |
 | [Zeek](zeek.md) | Zeek aporta telemetría rica; Suricata, firmas IDS. | Despliega ambos sensores y correlaciona. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Arkime](arkime.md) · [Security Onion](securityonion.md)
+
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada suricata-8.0.8 (2026-10-29) · licencia declarada GPL-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OISF/suricata#readme) · [2](https://docs.suricata.io/)</sub>

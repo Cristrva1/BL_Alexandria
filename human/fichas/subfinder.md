@@ -32,6 +32,12 @@ Escrito en Go; se instala con `go install`, binarios o Docker. Las claves de API
 | [Amass](amass.md) | Combinación recíproca: Amass lo enlaza como «Subfinder y Amass cubren fuentes DNS distintas y se contrastan». | Orden indicado desde Amass: Ejecuta ambos y unifica resultados antes de sondear. |
 | [httpx](httpx.md) | Combinación recíproca: httpx lo enlaza como «httpx filtra qué FQDN descubiertos por Subfinder están vivos». | Orden indicado desde httpx: Primero Subfinder; después httpx sobre la lista. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dnsx](dnsx.md)
+
 **Notas:** Cercano a theharvester (que además recoge correos y otros datos); subfinder se centra solo en subdominios.
 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v2.17.0 (2026-10-08) · licencia declarada MIT (consultado el 2026-11-16).

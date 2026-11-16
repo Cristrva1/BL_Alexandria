@@ -31,6 +31,12 @@ CLI con `pip install prowler` o Docker; los productos Cloud se contratan aparte 
 | [Lynis](lynis.md) | Lynis endurece el host; Prowler la nube. | Audita VMs con Lynis y cuentas con Prowler. |
 | [Checkov](checkov.md) | Combinación recíproca: Checkov lo enlaza como «Checkov previene; Prowler audita lo ya desplegado». | Orden indicado desde Checkov: Checkov en CI; Prowler sobre la cuenta. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Pacu](pacu.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 5.50.0 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/prowler-cloud/prowler#readme) · [2](https://prowler.com) · [3](https://prowler.com/pricing)</sub>

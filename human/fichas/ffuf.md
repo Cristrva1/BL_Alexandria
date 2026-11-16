@@ -32,6 +32,12 @@ Escrito en Go; se instala con binarios, Homebrew, Scoop, Winget o `go install`. 
 | [sqlmap](sqlmap.md) | Combinación recíproca: sqlmap lo enlaza como «ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura)». | Orden indicado desde sqlmap: Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap. |
 | [SecLists](seclists.md) | Combinación recíproca: SecLists lo enlaza como «SecLists alimenta ffuf». | Orden indicado desde SecLists: Clona SecLists; pasa la wordlist a ffuf. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dirsearch](dirsearch.md) · [WPScan](wpscan.md)
+
 **Notas:** Ajusta la tasa de peticiones para no saturar el servidor objetivo.
 
 Estado en GitHub: activo · último push 2026-09-26 · última versión publicada v2.3.0 (2026-09-09) · licencia declarada MIT (consultado el 2026-11-16).
@@ -107,6 +113,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Go, go.mod
 - **Etiquetas:** `pruebas` `go` `security` `cli`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Gobuster](gobuster.md) | 14.3k | Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado. |
+| [feroxbuster](feroxbuster.md) | 8.2k | Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. |
 
 ## Enlaces
 

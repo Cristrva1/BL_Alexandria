@@ -30,6 +30,12 @@ Se construye desde fuente o paquetes; se opera como sensor junto a un SIEM.
 | [Wazuh](wazuh.md) | Wazuh ingiere logs Zeek. | Zeek genera; Wazuh alerta. |
 | [Wireshark](wireshark.md) | Wireshark profundiza en sesiones que Zeek resume. | Usa el UID/conn de Zeek para abrir el PCAP. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Security Onion](securityonion.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v9.0.1 (2026-10-26) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zeek/zeek#readme) · [2](https://docs.zeek.org/)</sub>
