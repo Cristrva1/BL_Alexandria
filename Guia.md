@@ -5765,7 +5765,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Comando documentado:** `git clone https://github.com/arjun988/blender-skills.git
 cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un objeto para un juego; Revisar un pipeline de assets 3D — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [blender](human/fichas/blender.md)<br>
+**Combina con:** [Blender MCP](human/fichas/blender-mcp.md) · [blender](human/fichas/blender.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/blender-skills.md) · [GitHub](https://github.com/arjun988/blender-skills)
 
 #### 🎨 motion-design-skill
@@ -5790,6 +5790,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/achimala/dream-loop/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una escena 3D; Comparar dirección visual de un juego — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Codex CLI](human/fichas/codex.md) · [blender](human/fichas/blender.md) · [Blender MCP](human/fichas/blender-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/dream-loop.md) · [GitHub](https://github.com/achimala/dream-loop)
 
 #### 🎨 design-dna
@@ -5814,6 +5815,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add https://genjutsu.athevon.dev -g` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una microinteracción; Planificar movimiento en una app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [GSAP](human/fichas/gsap.md) · [three.js](human/fichas/three-js.md)<br>
 **Más:** [ficha completa](human/fichas/genjutsu.md) · [GitHub](https://github.com/AThevon/genjutsu)
 
 #### 🎨 Creative Architect
@@ -5833,7 +5835,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add blader/humanizer --global --agent codex` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Marketing Skills](human/fichas/marketingskills.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Marketing Skills](human/fichas/marketingskills.md) · [postiz-app](human/fichas/postiz-app.md)<br>
 **Más:** [ficha completa](human/fichas/humanizer.md) · [GitHub](https://github.com/blader/humanizer)
 
 #### 🎨 i-have-adhd
@@ -5842,6 +5844,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
 **Más:** [ficha completa](human/fichas/i-have-adhd.md) · [GitHub](https://github.com/ayghri/i-have-adhd)
 
 #### 🧹 Stop Slop
@@ -5850,7 +5853,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/hardikpandya/stop-slop/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Marketing Skills](human/fichas/marketingskills.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Marketing Skills](human/fichas/marketingskills.md) · [postiz-app](human/fichas/postiz-app.md)<br>
 **Más:** [ficha completa](human/fichas/stop-slop.md) · [GitHub](https://github.com/hardikpandya/stop-slop)
 
 #### 🎨 no-ai-slop
@@ -5859,6 +5862,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
 **Más:** [ficha completa](human/fichas/no-ai-slop.md) · [GitHub](https://github.com/petergyang/no-ai-slop)
 
 ### Skills de dominio: marketing, SEO y negocio
@@ -5869,7 +5873,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx skills add coreyhaines31/marketingskills --skill cro copywriting` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar el texto de una landing; Preparar un plan de medición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [The Agency (agency-agents)](human/fichas/agency-agents.md) · [GEO-SEO Claude](human/fichas/geo-seo-claude.md) · [mautic](human/fichas/mautic.md) · [posthog](human/fichas/posthog.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [posthog](human/fichas/posthog.md) · [mautic](human/fichas/mautic.md) · [open-seo](human/fichas/open-seo.md)<br>
 **Más:** [ficha completa](human/fichas/marketingskills.md) · [GitHub](https://github.com/coreyhaines31/marketingskills)
 
 #### 🏢 The Agency (agency-agents)
@@ -5878,7 +5882,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/msitarzewski/agency-agents/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Seleccionar un perfil de frontend; Revisar un brief de marketing — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Marketing Skills](human/fichas/marketingskills.md) · [GEO-SEO Claude](human/fichas/geo-seo-claude.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
 **Más:** [ficha completa](human/fichas/agency-agents.md) · [GitHub](https://github.com/msitarzewski/agency-agents)
 
 #### 🎨 scientific-agent-skills
@@ -5887,6 +5891,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx skills add K-Dense-AI/scientific-agent-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un dataset científico; Preparar una revisión bibliográfica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [open-notebook](human/fichas/open-notebook.md) · [Anthropic Skills](human/fichas/anthropic-skills.md)<br>
 **Más:** [ficha completa](human/fichas/scientific-agent-skills.md) · [GitHub](https://github.com/K-Dense-AI/scientific-agent-skills)
 
 #### 🧠 financial-services
@@ -5899,7 +5904,7 @@ claude plugin marketplace add anthropics/financial-services
 # Core skills + connectors (install first)
 claude plugin install financial-analysis@claude-for-financial-services` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un análisis de empresa; Estudiar conciliación de registros ficticios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Anthropic Skills](human/fichas/anthropic-skills.md) · [claude-agent-sdk-python](human/fichas/claude-agent-sdk-python.md)<br>
 **Más:** [ficha completa](human/fichas/financial-services.md) · [GitHub](https://github.com/anthropics/financial-services)
 
 #### 🎨 claude-seo
@@ -5910,6 +5915,7 @@ claude plugin install financial-analysis@claude-for-financial-services` (comprob
 /plugin install claude-seo@agricidaniel-claude-seo
 /seo setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [posthog](human/fichas/posthog.md) · [open-seo](human/fichas/open-seo.md)<br>
 **Más:** [ficha completa](human/fichas/claude-seo.md) · [GitHub](https://github.com/AgriciDaniel/claude-seo)
 
 #### 🌍 GEO-SEO Claude
@@ -5920,7 +5926,7 @@ claude plugin install financial-analysis@claude-for-financial-services` (comprob
 cd geo-seo-claude
 ./install.sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Marketing Skills](human/fichas/marketingskills.md) · [The Agency (agency-agents)](human/fichas/agency-agents.md) · [playwright](human/fichas/playwright.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [playwright](human/fichas/playwright.md) · [open-seo](human/fichas/open-seo.md)<br>
 **Más:** [ficha completa](human/fichas/geo-seo-claude.md) · [GitHub](https://github.com/zubair-trabzada/geo-seo-claude)
 
 #### 🎨 skills
@@ -5930,6 +5936,7 @@ cd geo-seo-claude
 **Comando documentado:** `/plugin marketplace add slavingia/skills
 /plugin install minimalist-entrepreneur` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un problema de cliente; Preparar preguntas de validación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Marketing Skills](human/fichas/marketingskills.md) · [posthog](human/fichas/posthog.md)<br>
 **Más:** [ficha completa](human/fichas/minimalist-entrepreneur-skills.md) · [GitHub](https://github.com/slavingia/skills)
 
 #### 🎨 instagram-agent-skill
@@ -5939,6 +5946,7 @@ cd geo-seo-claude
 **Comando documentado:** `git clone https://github.com/Jakeschincariol/instagram-agent-skill.git
 cp -r instagram-agent-skill/skills/ig-* ~/.claude/skills/` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un Reel; Revisar un caption — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [postiz-app](human/fichas/postiz-app.md) · [social-media-research-skills](human/fichas/social-media-research-skills.md)<br>
 **Más:** [ficha completa](human/fichas/instagram-agent-skill.md) · [GitHub](https://github.com/Jakeschincariol/instagram-agent-skill)
 
 #### 🧠 social-media-research-skills
@@ -5947,6 +5955,7 @@ cp -r instagram-agent-skill/skills/ig-* ~/.claude/skills/` (comprobar los pasos 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx skills add ScrapeCreators/social-media-research-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar temas de contenido; Analizar comentarios públicos de una marca — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [postiz-app](human/fichas/postiz-app.md)<br>
 **Más:** [ficha completa](human/fichas/social-media-research-skills.md) · [GitHub](https://github.com/ScrapeCreators/social-media-research-skills)
 
 #### 🎨 linkedin-agent-skill
@@ -5956,6 +5965,7 @@ cp -r instagram-agent-skill/skills/ig-* ~/.claude/skills/` (comprobar los pasos 
 **Comando documentado:** `git clone https://github.com/Jakeschincariol/linkedin-agent-skill.git
 cp -r linkedin-agent-skill/skills/li-* ~/.claude/skills/` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Planificar una semana de contenido; Revisar un perfil profesional — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [postiz-app](human/fichas/postiz-app.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
 **Más:** [ficha completa](human/fichas/linkedin-agent-skill.md) · [GitHub](https://github.com/Jakeschincariol/linkedin-agent-skill)
 
 #### 📈 Arcads AI Video Skill Pack
@@ -5965,7 +5975,7 @@ cp -r linkedin-agent-skill/skills/li-* ~/.claude/skills/` (comprobar los pasos c
 **Comando documentado:** `git clone https://github.com/krusemediallc/arcads-claude-code.git
 cd arcads-claude-code` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un anuncio vertical; Preparar variantes de una imagen de producto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [HyperFrames](human/fichas/hyperframes.md) · [whisper](human/fichas/whisper.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [HyperFrames](human/fichas/hyperframes.md) · [whisper](human/fichas/whisper.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/arcads-claude-code.md) · [GitHub](https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial)
 
 ---

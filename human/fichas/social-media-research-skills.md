@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skills de investigación en redes sociales (MIT) de ScrapeCreators, que funcionan con su API de pago. Sin releases; último cambio en agosto de 2026.
+
+## ¿Qué hace?
+
+Flujos completos para encontrar publicaciones que superan la media de un creador, minar comentarios, analizar transcripciones de video, desmontar competidores y revisar bibliotecas de anuncios en TikTok, Instagram, YouTube, Reddit, X, LinkedIn, Facebook, Threads, Bluesky y otras, produciendo tablas, patrones y ganchos reutilizables.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add ScrapeCreators/social-media-research-skills` y necesita la variable `SCRAPECREATORS_API_KEY`. Funciona con Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI, Windsurf y otros agentes compatibles con el estándar Agent Skills.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible documentado. | Define la clave de ScrapeCreators como variable de entorno. |
+| [Codex CLI](codex.md) | Agente compatible documentado. | Igual que arriba. |
+| [postiz-app](postiz-app.md) | Convertir los hallazgos en publicaciones programadas (combinación por arquitectura). | Investiga primero; programa después. |
+
+**Notas:** Alternativa (elige una): last30days-skill. Cada consulta consume créditos de ScrapeCreators.
+
+Estado en GitHub: activo · último push 2026-08-26 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ScrapeCreators/social-media-research-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La API externa es de datos y no necesariamente una segunda API LLM; el estándar Agent Skills admite los hosts compatibles pero las redes imponen sus límites |
 | Coste | El coste depende del proveedor o la ruta. Necesita la API del servicio ScrapeCreators para obtener datos y el modelo del agente para analizarlos; no son créditos incluidos |
 | Equipo | Preparación según la ruta elegida. Agente con skills; API key de ScrapeCreators; consulta acotada |
-
-La API externa es de datos y no necesariamente una segunda API LLM; el estándar Agent Skills admite los hosts compatibles pero las redes imponen sus límites
-
-## Qué puedes hacer con él
-
-Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators.
-
-## Por qué destaca
-
-Usos propuestos: Comparar temas de contenido; Analizar comentarios públicos de una marca.
-
-## Cómo funciona
 
 La API externa es de datos y no necesariamente una segunda API LLM; el estándar Agent Skills admite los hosts compatibles pero las redes imponen sus límites
 

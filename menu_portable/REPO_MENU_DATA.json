@@ -73000,9 +73000,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Seleccionar un perfil de frontend; Revisar un brief de marketing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "marketingskills",
-        "geo-seo-claude",
-        "claude-code"
+        "claude-code",
+        "opencode",
+        "gemini-cli"
       ],
       "alt": [
         "wshobson-agents"
@@ -73237,10 +73237,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar un anuncio vertical; Preparar variantes de una imagen de producto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ffmpeg",
         "hyperframes",
         "whisper",
-        "ffmpeg",
-        "marketingskills"
+        "claude-code"
       ],
       "alt": []
     },
@@ -73358,7 +73358,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un objeto para un juego; Revisar un pipeline de assets 3D",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "blender"
+        "blender-mcp",
+        "blender",
+        "claude-code"
       ],
       "alt": []
     },
@@ -73475,7 +73477,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "posthog",
+        "open-seo"
+      ],
       "alt": []
     },
     {
@@ -73939,7 +73945,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una escena 3D; Comparar dirección visual de un juego",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "codex",
+        "blender",
+        "blender-mcp"
+      ],
       "alt": []
     },
     {
@@ -74056,7 +74066,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un análisis de empresa; Estudiar conciliación de registros ficticios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-code"
+        "claude-code",
+        "anthropic-skills",
+        "claude-agent-sdk-python"
       ],
       "alt": []
     },
@@ -74292,7 +74304,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una microinteracción; Planificar movimiento en una app",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "gsap",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -74412,9 +74428,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "marketingskills",
-        "agency-agents",
-        "playwright"
+        "claude-code",
+        "playwright",
+        "open-seo"
       ],
       "alt": []
     },
@@ -74762,9 +74778,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "marketingskills",
         "claude-code",
-        "codex"
+        "codex",
+        "marketingskills",
+        "postiz-app"
       ],
       "alt": [
         "stop-slop"
@@ -74882,7 +74899,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "gemini-cli"
+      ],
       "alt": []
     },
     {
@@ -75116,7 +75137,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un Reel; Revisar un caption",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "postiz-app",
+        "social-media-research-skills"
+      ],
       "alt": []
     },
     {
@@ -75229,7 +75254,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Planificar una semana de contenido; Revisar un perfil profesional",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "postiz-app",
+        "marketingskills"
+      ],
       "alt": []
     },
     {
@@ -75465,10 +75494,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar el texto de una landing; Preparar un plan de medición",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "agency-agents",
-        "geo-seo-claude",
+        "claude-code",
+        "posthog",
         "mautic",
-        "posthog"
+        "open-seo"
       ],
       "alt": []
     },
@@ -75583,7 +75612,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un problema de cliente; Preparar preguntas de validación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "marketingskills",
+        "posthog"
+      ],
       "alt": []
     },
     {
@@ -75930,7 +75963,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "marketingskills"
+      ],
       "alt": []
     },
     {
@@ -76047,7 +76084,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un dataset científico; Preparar una revisión bibliográfica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "open-notebook",
+        "anthropic-skills"
+      ],
       "alt": []
     },
     {
@@ -76284,7 +76325,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar temas de contenido; Analizar comentarios públicos de una marca",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "postiz-app"
+      ],
       "alt": [
         "last30days-skill"
       ],
@@ -76522,8 +76567,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
         "marketingskills",
-        "claude-code"
+        "postiz-app"
       ],
       "alt": [
         "humanizer"

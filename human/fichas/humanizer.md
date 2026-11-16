@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill de escritura de código abierto (MIT) de blader que hace que un texto escrito por IA suene a persona sin cambiar su contenido. Muy popular y activa (v4.0.0); el README lleva un patrocinio.
+
+## ¿Qué hace?
+
+Reescribe borradores eliminando las marcas de escritura de IA descritas en la guía «Signs of AI writing» de Wikipedia: entusiasmo vacío, emojis, fórmulas y estructuras repetidas. Se invoca con `/humanizer`. Edita para lectores humanos, no para burlar detectores de IA; según su README, en una prueba ciega los jueces prefirieron su versión 16 de 16 veces [DATO NO VERIFICADO: prueba del propio proyecto].
+
+## ¿Cómo lo hace?
+
+Es un conjunto de instrucciones para agentes (formato skill). Se instala como plugin de Claude Code (`/plugin marketplace add blader/humanizer`, requiere Claude Code 2.1.142+) o con `npx skills add blader/humanizer --global --agent claude-code` o `--agent codex`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial y skill instalable. | Actualiza Claude Code a 2.1.142+ antes de instalar el plugin. |
+| [Codex CLI](codex.md) | Instalación documentada con `npx skills add ... --agent codex`. | Codex instalado primero. |
+| [Marketing Skills](marketingskills.md) | Pulir los textos de marketing que generan otras skills (combinación por arquitectura). | Genera con marketingskills y pasa el resultado por `/humanizer`. |
+| [postiz-app](postiz-app.md) | Revisar publicaciones antes de programarlas (combinación por arquitectura). | Humaniza primero; programa después. |
+
+**Notas:** Alternativa (elige una): stop-slop.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v4.0.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/blader/humanizer/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores |
 | Coste | Consumo del agente que ya utilizas. Usa el modelo o plan del anfitrión; no necesita una API adicional por sí solo |
 | Equipo | Preparación según la ruta elegida. Agente con skills; texto propio breve |
-
-Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores
-
-## Qué puedes hacer con él
-
-Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.
-
-## Por qué destaca
-
-Usos propuestos: Mejorar claridad de un correo; Revisar prosa repetitiva.
-
-## Cómo funciona
 
 Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores
 
@@ -92,14 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente con skills; texto propio breve
 - **Etiquetas:** `skills` `prompts` `docs`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Marketing Skills](marketingskills.md) | 60.4k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

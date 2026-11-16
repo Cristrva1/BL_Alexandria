@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala solo un especialista y pide revisar un componente de prueba con criterios claros
 **Qué comprobar:** Puedes reconocer su función y valorar sus recomendaciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marketingskills`, `geo-seo-claude`, `claude-code`
+**Combina con:** `claude-code`, `opencode`, `gemini-cli`
 **Alternativas (elige una):** `wshobson-agents`
 
 ## `anatomy`
@@ -122,7 +122,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara un brief y revisa el coste y modelo antes de generar una única pieza de prueba
 **Qué comprobar:** Puedes identificar proveedor, entrada y resultado generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `hyperframes`, `whisper`, `ffmpeg`, `marketingskills`
+**Combina con:** `ffmpeg`, `hyperframes`, `whisper`, `claude-code`
 
 ## `blender-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,skill,typescript
@@ -153,7 +153,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un blockout sencillo y revisa objetos y escala antes de exportar
 **Qué comprobar:** Puedes abrir y editar la escena generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `blender`
+**Combina con:** `blender-mcp`, `blender`, `claude-code`
 
 ## `claude-seo`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -185,6 +185,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa setup y revisa una página de prueba para comprobar los hallazgos técnicos
 **Qué comprobar:** Puedes contrastar títulos, enlaces o schema con la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `posthog`, `open-seo`
 
 ## `creative-architect`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=anthropic,openai · tags=direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect
@@ -303,6 +304,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara una escena pequeña y compara la captura con una referencia antes de iterar
 **Qué comprobar:** Puedes identificar una mejora concreta por iteración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `codex`, `blender`, `blender-mcp`
 
 ## `financial-services`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=dominio,python
@@ -336,7 +338,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige una skill de análisis y trabaja sobre un conjunto de cifras de muestra con fuentes explícitas
 **Qué comprobar:** Puedes contrastar fórmulas, datos y supuestos del borrador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`
+**Combina con:** `claude-code`, `anthropic-skills`, `claude-agent-sdk-python`
 
 ## `front-end-checklist`
 role=directory · exec=local · setup=easy · mcp=True · prov=— · tags=skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
@@ -395,6 +397,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una propuesta de interacción para un control y revisa su tesis antes de aceptar código
 **Qué comprobar:** Puedes comprobar propósito, estados y criterio de movimiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gsap`, `three.js`
 
 ## `geo-seo-claude`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=skills,search,pdf,python
@@ -426,7 +429,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML
 **Qué comprobar:** Puedes separar observación, heurística y propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marketingskills`, `agency-agents`, `playwright`
+**Combina con:** `claude-code`, `playwright`, `open-seo`
 
 ## `gsap-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
@@ -514,7 +517,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa un párrafo y compara la versión propuesta con los hechos y tono del original
 **Qué comprobar:** Puedes aceptar cambios de estilo sin alterar el contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marketingskills`, `claude-code`, `codex`
+**Combina con:** `claude-code`, `codex`, `marketingskills`, `postiz-app`
 **Alternativas (elige una):** `stop-slop`
 
 ## `i-have-adhd`
@@ -545,6 +548,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Activa el skill y pide explicar cómo crear una carpeta vacía para comparar la estructura de respuesta
 **Qué comprobar:** Puedes reconocer una respuesta directa y pasos delimitados
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `gemini-cli`
 
 ## `impeccable`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,rust
@@ -605,6 +609,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera un borrador de guion y revisa gancho, datos y llamada a la acción sin publicarlo
 **Qué comprobar:** Puedes editar el texto y comprobar sus afirmaciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `postiz-app`, `social-media-research-skills`
 
 ## `linkedin-agent-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -635,6 +640,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara un borrador basado en un hecho propio y revisa si conserva tu tono antes de publicarlo
 **Qué comprobar:** Puedes distinguir hechos, opiniones y sugerencias del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `postiz-app`, `marketingskills`
 
 ## `logo-design-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,html
@@ -693,7 +699,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala un skill de copy y crea dos propuestas a partir de un brief ficticio
 **Qué comprobar:** Puedes comparar audiencia, mensaje y llamada a la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `agency-agents`, `geo-seo-claude`, `mautic`, `posthog`
+**Combina con:** `claude-code`, `posthog`, `mautic`, `open-seo`
 
 ## `minimalist-entrepreneur-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,reference
@@ -724,6 +730,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa una skill para formular una hipótesis de cliente y una prueba pequeña sin gastar ni contactar personas todavía
 **Qué comprobar:** Puedes distinguir hipótesis, evidencia pendiente y siguiente experimento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `marketingskills`, `posthog`
 
 ## `modern-web-guidance`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
@@ -811,6 +818,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa un texto corto y contrasta cada cambio con el sentido y voz originales
 **Qué comprobar:** Puedes aceptar correcciones concretas sin perder información
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `marketingskills`
 
 ## `scientific-agent-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -840,6 +848,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige una skill de análisis y verifica dependencias y fuentes con un dataset educativo
 **Qué comprobar:** Puedes reproducir un resultado pequeño y revisar las referencias
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `open-notebook`, `anthropic-skills`
 
 ## `skills-emil`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design
@@ -899,6 +908,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Investiga una pequeña muestra pública y revisa origen, fecha y coste antes de ampliar la búsqueda
 **Qué comprobar:** Puedes rastrear las observaciones a publicaciones concretas
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `postiz-app`
 **Alternativas (elige una):** `last30days-skill`
 
 ## `stitch-skills`
@@ -959,7 +969,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Aplica la lista de frases a un párrafo y conserva cualquier término técnico necesario
 **Qué comprobar:** Puedes justificar cada cambio de redacción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marketingskills`, `claude-code`
+**Combina con:** `claude-code`, `marketingskills`, `postiz-app`
 **Alternativas (elige una):** `humanizer`
 
 ## `taste-skill`

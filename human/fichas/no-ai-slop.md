@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).
+
+## ¿Qué hace?
+
+Quita más de 20 patrones de «slop» de IA (como «No es X. Es Y.» o «Lo que nadie te cuenta…») sin aplanar tu voz personal, y lista lo que cambió. También detecta y cita patrones sin juzgar si lo escribió una IA, y genera «slop» exagerado como sátira.
+
+## ¿Cómo lo hace?
+
+Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes`; se usa con `/no-ai-slop`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible documentado. | Instala con npx skills de forma global. |
+| [Codex CLI](codex.md) | Agente compatible documentado. | Igual que arriba. |
+| [Marketing Skills](marketingskills.md) | Revisar los textos de marketing generados (combinación por arquitectura). | Genera primero y revisa después. |
+
+**Notas:** Se solapa con humanizer y stop-slop: usa uno como revisor principal.
+
+Estado en GitHub: activo · último push 2026-09-02 · última versión publicada v1.0.6 (2026-08-01) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/petergyang/no-ai-slop/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI |
 | Coste | Consumo del agente que ya utilizas. Usa el modelo del anfitrión; no necesita una segunda API por sí solo |
 | Equipo | Preparación según la ruta elegida. Agente compatible; texto propio |
-
-Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI
-
-## Qué puedes hacer con él
-
-Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.
-
-## Por qué destaca
-
-Usos propuestos: Editar una publicación; Mejorar claridad de un informe.
-
-## Cómo funciona
 
 Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI
 

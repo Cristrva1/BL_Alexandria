@@ -7078,9 +7078,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores",
    "combines_with": [
-    "marketingskills",
     "claude-code",
-    "codex"
+    "codex",
+    "marketingskills",
+    "postiz-app"
    ],
    "alternatives": [
     "stop-slop"
@@ -7177,7 +7178,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill de escritura de código abierto (MIT) de blader que hace que un texto escrito por IA suene a persona sin cambiar su contenido. Muy popular y activa (v4.0.0); el README lleva un patrocinio.",
+   "que_hace": "Reescribe borradores eliminando las marcas de escritura de IA descritas en la guía «Signs of AI writing» de Wikipedia: entusiasmo vacío, emojis, fórmulas y estructuras repetidas. Se invoca con `/humanizer`. Edita para lectores humanos, no para burlar detectores de IA; según su README, en una prueba ciega los jueces prefirieron su versión 16 de 16 veces [DATO NO VERIFICADO: prueba del propio proyecto].",
+   "como_lo_hace": "Es un conjunto de instrucciones para agentes (formato skill). Se instala como plugin de Claude Code (`/plugin marketplace add blader/humanizer`, requiere Claude Code 2.1.142+) o con `npx skills add blader/humanizer --global --agent claude-code` o `--agent codex`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial y skill instalable.",
+     "orden_instalacion": "Actualiza Claude Code a 2.1.142+ antes de instalar el plugin."
+    },
+    {
+     "id": "codex",
+     "motivo": "Instalación documentada con `npx skills add ... --agent codex`.",
+     "orden_instalacion": "Codex instalado primero."
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Pulir los textos de marketing que generan otras skills (combinación por arquitectura).",
+     "orden_instalacion": "Genera con marketingskills y pasa el resultado por `/humanizer`."
+    },
+    {
+     "id": "postiz-app",
+     "motivo": "Revisar publicaciones antes de programarlas (combinación por arquitectura).",
+     "orden_instalacion": "Humaniza primero; programa después."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): stop-slop.",
+   "descripcion_fuentes": [
+    "https://github.com/blader/humanizer/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "blader/humanizer",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v4.0.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "stop-slop": {
    "name": "Stop Slop",
@@ -7197,8 +7242,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity",
    "combines_with": [
+    "claude-code",
     "marketingskills",
-    "claude-code"
+    "postiz-app"
    ],
    "alternatives": [
     "humanizer"
@@ -7293,7 +7339,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill de código abierto (MIT) de Hardik Pandya para eliminar marcas de IA en la prosa. Sin releases y con último cambio en marzo de 2026.",
+   "que_hace": "Enseña a Claude o a cualquier LLM a detectar y quitar frases vetadas (aperturas de relleno, muletillas de énfasis, jerga empresarial, adverbios, metacomentarios), clichés estructurales (contrastes binarios, fragmentación dramática, voz pasiva) y reglas por frase (sin guiones largos, sin inicios con interrogativos, voz activa). Puntúa el texto del 1 al 10 en cinco dimensiones y pide revisar por debajo de 35/50.",
+   "como_lo_hace": "Una carpeta con `SKILL.md` y archivos de referencia (frases, estructuras) que se cargan bajo demanda. Se añade como skill en Claude Code, se sube a un Proyecto de Claude, se copian sus reglas a instrucciones personalizadas o se incluye en el prompt de sistema por API.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Se añade la carpeta como skill.",
+     "orden_instalacion": "Copia la carpeta al directorio de skills."
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Limpiar textos generados por las skills de marketing (combinación por arquitectura).",
+     "orden_instalacion": "Genera primero y revisa después."
+    },
+    {
+     "id": "postiz-app",
+     "motivo": "Revisar publicaciones antes de programarlas (combinación por arquitectura).",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+   "descripcion_fuentes": [
+    "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "hardikpandya/stop-slop",
+    "archived": false,
+    "pushed_at": "2026-03-17",
+    "license": "MIT",
+    "checked_at": "2026-11-15"
+   }
   },
   "marketingskills": {
    "name": "Marketing Skills",
@@ -7313,10 +7396,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Compatible con Agent Skills; instalar desde una sesión de agente puede elegir una carpeta compartida distinta de .claude y requiere comprobar descubrimiento",
    "combines_with": [
-    "agency-agents",
-    "geo-seo-claude",
+    "claude-code",
+    "posthog",
     "mautic",
-    "posthog"
+    "open-seo"
    ],
    "alternatives": [],
    "repo": "https://github.com/coreyhaines31/marketingskills",
@@ -7412,7 +7495,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Colección de skills de marketing para agentes de IA, de Corey Haines (agencia Conversion Factory), MIT y financiada por «Verified Partners» declarados. Muy activa (v2.14.12).",
+   "que_hace": "Incluye decenas de skills para optimización de conversión, copywriting, SEO y SEO para IA, analítica, atribución, test A/B, anuncios en Google, Meta y LinkedIn, creatividades, ASO, prevención de bajas y más; cada una indica cuándo usarla. Incluye un flujo guiado para conectar herramientas de marketing con credenciales acotadas y una primera lectura de solo lectura.",
+   "como_lo_hace": "Skills en formato estándar instalables con `npx skills` (todas o una a una) para Claude Code y otros agentes compatibles; el registro de herramientas documenta integraciones de terceros.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente principal para ejecutar las skills.",
+     "orden_instalacion": "Instala con `npx skills add` en el proyecto o globalmente."
+    },
+    {
+     "id": "posthog",
+     "motivo": "Leer métricas de producto para las skills de analítica y conversión (combinación por arquitectura).",
+     "orden_instalacion": "Usa credenciales de solo lectura siguiendo su guía de conexión."
+    },
+    {
+     "id": "mautic",
+     "motivo": "Llevar a campañas las secuencias y segmentos que redacta el agente (combinación por arquitectura).",
+     "orden_instalacion": "Revisa los textos antes de activarlos."
+    },
+    {
+     "id": "open-seo",
+     "motivo": "Datos SEO vía MCP para las skills de SEO (combinación por arquitectura).",
+     "orden_instalacion": "Conecta el MCP de OpenSEO antes de usar las skills de SEO."
+    }
+   ],
+   "descripcion_notas": "Algunas herramientas recomendadas son socios que financian el proyecto; lo declara en su registro.",
+   "descripcion_fuentes": [
+    "https://github.com/coreyhaines31/marketingskills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "coreyhaines31/marketingskills",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v2.14.12 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
   },
   "agency-agents": {
    "name": "The Agency (agency-agents)",
@@ -7432,9 +7559,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada",
    "combines_with": [
-    "marketingskills",
-    "geo-seo-claude",
-    "claude-code"
+    "claude-code",
+    "opencode",
+    "gemini-cli"
    ],
    "alternatives": [
     "wshobson-agents"
@@ -7529,7 +7656,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Colección MIT de personalidades de agentes especializados («The Agency») de msitarzewski, surgida de un hilo de Reddit; uno de los repos más populares del catálogo. Sin releases; tiene app de escritorio aparte para instalarla.",
+   "que_hace": "Ofrece agentes con experiencia, voz y procesos propios organizados por divisiones (ingeniería, diseño, marketing, seguridad y otras), desde especialistas en frontend hasta gestores de comunidad en Reddit o «verificadores de realidad». Cada agente define entregables y métricas.",
+   "como_lo_hace": "Archivos Markdown de agentes que se copian a `~/.claude/agents/` o se instalan con `./scripts/install.sh --tool <herramienta> [--division ...]`; `convert.sh` adapta el formato a GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Codex, Hermes y otros. La app Agency Agents (macOS, Linux, Windows; también por Homebrew) instala el catálogo sin terminal.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Destino principal (`--tool claude-code`).",
+     "orden_instalacion": "Instala solo las divisiones que uses para no saturar el selector de agentes."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Destino soportado por el script.",
+     "orden_instalacion": "Ojo: según el README OpenCode solo registra unos 119 agentes; instala por divisiones."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Destino soportado por el script.",
+     "orden_instalacion": "`./scripts/install.sh --tool gemini-cli`."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): wshobson-agents.",
+   "descripcion_fuentes": [
+    "https://github.com/msitarzewski/agency-agents/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "msitarzewski/agency-agents",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "checked_at": "2026-11-15"
+   }
   },
   "geo-seo-claude": {
    "name": "GEO-SEO Claude",
@@ -7549,9 +7714,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
    "combines_with": [
-    "marketingskills",
-    "agency-agents",
-    "playwright"
+    "claude-code",
+    "playwright",
+    "open-seo"
    ],
    "alternatives": [],
    "repo": "https://github.com/zubair-trabzada/geo-seo-claude",
@@ -7647,7 +7812,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill para Claude Code de zubair-trabzada (MIT) que optimiza sitios para buscadores con IA (GEO) sin descuidar el SEO tradicional. Activa, sin releases.",
+   "que_hace": "Comandos `/geo` para auditoría completa GEO+SEO con subagentes en paralelo, instantánea rápida, puntuación de «citabilidad», acceso de rastreadores de IA (robots.txt), análisis o generación de llms.txt, menciones de marca en plataformas citadas por IA, datos estructurados, SEO técnico, calidad de contenido (E-E-A-T) e informes para clientes, también en PDF con gráficos.",
+   "como_lo_hace": "Se instala con un script (macOS/Linux o Git Bash en Windows) que copia la skill y crea un entorno virtual aislado en `~/.claude/skills/geo/.venv/`. Requiere Python 3.10+, Claude Code y Git; uv acelera la instalación y Playwright es opcional para capturas.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Requisito: los comandos se ejecutan dentro de Claude Code.",
+     "orden_instalacion": "Claude Code primero; luego el script de instalación."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Dependencia opcional para capturas de pantalla.",
+     "orden_instalacion": "Instala Playwright y sus navegadores si quieres capturas en los informes."
+    },
+    {
+     "id": "open-seo",
+     "motivo": "Datos de palabras clave y backlinks como complemento a la auditoría (combinación por arquitectura).",
+     "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
+    }
+   ],
+   "descripcion_notas": "Revisa el script antes de ejecutar `curl | bash`. Se solapa en parte con claude-seo.",
+   "descripcion_fuentes": [
+    "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zubair-trabzada/geo-seo-claude",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "arcads-claude-code": {
    "name": "Arcads AI Video Skill Pack",
@@ -7667,10 +7870,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El repositorio es gratuito pero no incluye generaciones ni acceso gratuito a todos los modelos; empieza por crear sin publicar",
    "combines_with": [
+    "ffmpeg",
     "hyperframes",
     "whisper",
-    "ffmpeg",
-    "marketingskills"
+    "claude-code"
    ],
    "alternatives": [],
    "repo": "https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial",
@@ -7765,7 +7968,50 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Paquete de skills (MIT) de «Mr. Paid Social» para crear videos e imágenes publicitarios con la cuenta de Arcads desde Claude Code o Cursor. El README usa enlaces de afiliado y promociona una comunidad de pago.",
+   "que_hace": "Automatiza flujos creativos de Arcads: generación de imágenes y videos, anuncios estilo Pixar o plastilina con storyboard, guías de anuncios con canción y subtítulos incrustados en cualquier video. Pensado para equipos de compra de medios que producen muchas variantes.",
+   "como_lo_hace": "Scripts Python 3.10+ (los generadores de imagen solo usan la biblioteca estándar) que llaman a la API de Arcads con tu clave. Los flujos avanzados requieren ffmpeg (unión y chroma key), jq, Node.js con `npx hyperframes` (subtítulos) y el paquete `openai-whisper` para transcripción.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Necesario para unir clips y superponer elementos.",
+     "orden_instalacion": "Instálalo antes de los flujos de video."
+    },
+    {
+     "id": "hyperframes",
+     "motivo": "Usado para incrustar subtítulos.",
+     "orden_instalacion": "Requiere Node.js; se ejecuta con npx bajo demanda."
+    },
+    {
+     "id": "whisper",
+     "motivo": "Transcribe el audio para los subtítulos.",
+     "orden_instalacion": "`pip install openai-whisper`; el modelo medium necesita bastante memoria."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente que ejecuta las skills.",
+     "orden_instalacion": "Configura la clave de API de Arcads como variable de entorno, no en el chat."
+    }
+   ],
+   "descripcion_notas": "Requiere cuenta de pago de Arcads; cada generación consume créditos.",
+   "descripcion_fuentes": [
+    "https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mrpaidsocial/arcads-claude-code-mrpaidsocial",
+    "archived": false,
+    "pushed_at": "2026-10-19",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "prompt-engineering-guide": {
    "name": "Prompt Engineering Guide",
@@ -49490,7 +49736,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar temas de contenido; Analizar comentarios públicos de una marca",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La API externa es de datos y no necesariamente una segunda API LLM; el estándar Agent Skills admite los hosts compatibles pero las redes imponen sus límites",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "postiz-app"
+   ],
    "alternatives": [
     "last30days-skill"
    ],
@@ -49592,7 +49842,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skills de investigación en redes sociales (MIT) de ScrapeCreators, que funcionan con su API de pago. Sin releases; último cambio en agosto de 2026.",
+   "que_hace": "Flujos completos para encontrar publicaciones que superan la media de un creador, minar comentarios, analizar transcripciones de video, desmontar competidores y revisar bibliotecas de anuncios en TikTok, Instagram, YouTube, Reddit, X, LinkedIn, Facebook, Threads, Bluesky y otras, produciendo tablas, patrones y ganchos reutilizables.",
+   "como_lo_hace": "Se instala con `npx skills add ScrapeCreators/social-media-research-skills` y necesita la variable `SCRAPECREATORS_API_KEY`. Funciona con Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI, Windsurf y otros agentes compatibles con el estándar Agent Skills.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Define la clave de ScrapeCreators como variable de entorno."
+    },
+    {
+     "id": "codex",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "postiz-app",
+     "motivo": "Convertir los hallazgos en publicaciones programadas (combinación por arquitectura).",
+     "orden_instalacion": "Investiga primero; programa después."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): last30days-skill. Cada consulta consume créditos de ScrapeCreators.",
+   "descripcion_fuentes": [
+    "https://github.com/ScrapeCreators/social-media-research-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ScrapeCreators/social-media-research-skills",
+    "archived": false,
+    "pushed_at": "2026-08-26",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-chrome-devtools": {
    "name": "awesome-chrome-devtools",
@@ -53706,7 +53994,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los conectores y cookbooks tienen rutas diferentes; no incluye datos financieros premium ni convierte resultados en asesoría validada",
    "combines_with": [
-    "claude-code"
+    "claude-code",
+    "anthropic-skills",
+    "claude-agent-sdk-python"
    ],
    "alternatives": [],
    "repo": "https://github.com/anthropics/financial-services",
@@ -53807,7 +54097,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Repositorio oficial de Anthropic (Apache 2.0) con agentes de referencia, skills y conectores de datos para servicios financieros. Activo, sin releases; advierte que nada en él es asesoría financiera, legal o fiscal.",
+   "que_hace": "Ofrece agentes de flujo completo (Pitch Agent, Meeting Prep Agent, Model Builder para DCF, LBO y comparables en Excel, Market Researcher, GL Reconciler y otros) para banca de inversión, análisis de renta variable, private equity y gestión patrimonial, además de plugins verticales con skills, comandos y conectores MCP, y plugins de socios (LSEG, S&P Global). Los resultados son borradores para revisión por un profesional.",
+   "como_lo_hace": "Cada agente se publica de dos formas desde la misma fuente: como plugin de Claude Cowork y como plantilla de Claude Managed Agents (API). Los plugins de agente incluyen las skills que usan; los verticales pueden instalarse por separado.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Reutilizar las skills y comandos en Claude Code (combinación por arquitectura; [DATO NO VERIFICADO: compatibilidad de los plugins de Cowork con Claude Code]).",
+     "orden_instalacion": "Prueba primero un plugin vertical aislado."
+    },
+    {
+     "id": "anthropic-skills",
+     "motivo": "Skills de documentos (Excel, PowerPoint, Word) para producir modelos y presentaciones (combinación por arquitectura).",
+     "orden_instalacion": "Instala las skills de documentos en el mismo entorno."
+    },
+    {
+     "id": "claude-agent-sdk-python",
+     "motivo": "Construir agentes propios a partir de las plantillas (combinación por arquitectura).",
+     "orden_instalacion": "Revisa conectores y permisos antes de exponer datos financieros."
+    }
+   ],
+   "descripcion_notas": "Los conectores de datos de socios requieren licencias propias de esos proveedores.",
+   "descripcion_fuentes": [
+    "https://github.com/anthropics/financial-services/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "anthropics/financial-services",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "dexter": {
    "name": "dexter",
@@ -57767,7 +58095,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una escena 3D; Comparar dirección visual de un juego",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El autor solo declara pruebas con Codex en la configuración indicada; otros modelos se proponen como posibles y no como verificados",
-   "combines_with": [],
+   "combines_with": [
+    "codex",
+    "blender",
+    "blender-mcp"
+   ],
    "alternatives": [],
    "repo": "https://github.com/achimala/dream-loop",
    "homepage": null,
@@ -57868,7 +58200,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill de agente (MIT) de achimala (@anshuc) para construir juegos, apps o escenas con visuales de alto nivel. Sin releases; probada solo con GPT-6 Astra en Codex según su README.",
+   "que_hace": "Crea un bucle cerrado: la IA «sueña» una captura objetivo con generación de imágenes, construye con ese objetivo, un crítico separado compara la captura real con el objetivo y da retroalimentación, y se repite hasta que el crítico queda satisfecho; opcionalmente genera un objetivo mejor a partir del estado actual.",
+   "como_lo_hace": "Se instala con `npx skills add achimala/dream-loop` o copiándola al directorio de skills. Requiere un agente con generación de imágenes (integrada o vía API, por ejemplo Gemini), entrada de visión y, preferiblemente, subagentes. Para modelado 3D propio recomienda Blender mediante su MCP o scripting.",
+   "combina_con": [
+    {
+     "id": "codex",
+     "motivo": "Único entorno probado por el autor.",
+     "orden_instalacion": "Codex con generación de imágenes disponible."
+    },
+    {
+     "id": "blender",
+     "motivo": "Recomendado para modelado 3D personalizado.",
+     "orden_instalacion": "Instala Blender antes de pedir escenas 3D."
+    },
+    {
+     "id": "blender-mcp",
+     "motivo": "Vía preferida para que el agente controle Blender.",
+     "orden_instalacion": "Blender abierto con el complemento del MCP antes de iniciar el bucle."
+    }
+   ],
+   "descripcion_notas": "Cada iteración genera imágenes y capturas: el coste de tokens puede ser alto.",
+   "descripcion_fuentes": [
+    "https://github.com/achimala/dream-loop/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "achimala/dream-loop",
+    "archived": false,
+    "pushed_at": "2026-09-09",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "adguardhome": {
    "name": "AdGuardHome",
@@ -58362,7 +58732,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "No promete mejorar ranking ni sustituir una auditoría humana; las funciones de datos en vivo requieren configuración adicional",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "posthog",
+    "open-seo"
+   ],
    "alternatives": [],
    "repo": "https://github.com/AgriciDaniel/claude-seo",
    "homepage": "skool.com/ai-marketing-hub-pro",
@@ -58465,7 +58839,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Plugin SEO gratuito y de código abierto (MIT) para Claude Code, de AgriciDaniel. Activo (v2.6.2), con 29 subskills y 20 agentes especialistas.",
+   "que_hace": "Ejecuta una auditoría SEO completa en 10–15 minutos y entrega un plan priorizado: SEO técnico (rastreo, indexación, sitemaps, redirecciones, Core Web Vitals), calidad de contenido (E-E-A-T, páginas pobres), datos estructurados Schema.org, visibilidad en buscadores con IA (GEO), SEO local y de comercio electrónico. Hasta 17 agentes trabajan en paralelo y cada recomendación explica por qué importa.",
+   "como_lo_hace": "Plugin de Claude Code (marketplace e instalación del plugin) con unos 30 comandos `/seo` en seis grupos, más extensiones opcionales como datos en vivo, generación de imágenes y análisis con PostHog.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Es un plugin de Claude Code.",
+     "orden_instalacion": "Añade el marketplace e instala el plugin."
+    },
+    {
+     "id": "posthog",
+     "motivo": "Extensión `seo-posthog` para cruzar datos de analítica.",
+     "orden_instalacion": "Configura credenciales de PostHog de solo lectura."
+    },
+    {
+     "id": "open-seo",
+     "motivo": "Datos de palabras clave y posiciones vía MCP (combinación por arquitectura).",
+     "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
+    }
+   ],
+   "descripcion_notas": "Se solapa con geo-seo-claude; elige uno para auditorías.",
+   "descripcion_fuentes": [
+    "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "AgriciDaniel/claude-seo",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.6.2 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-harness-engineering": {
    "name": "awesome-harness-engineering",
@@ -59430,7 +59843,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta Claude Code y Codex; instalar instrucciones no instala ni autentica automáticamente el servidor Blender MCP",
    "combines_with": [
-    "blender"
+    "blender-mcp",
+    "blender",
+    "claude-code"
    ],
    "alternatives": [],
    "repo": "https://github.com/arjun988/blender-skills",
@@ -59534,7 +59949,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Paquete de 94 skills (MIT) de arjun988 para artistas de Blender, que se presenta como un equipo de arte técnico senior. Sin releases; su ficha en el marketplace de Anthropic estaba en revisión según el README.",
+   "que_hace": "Cubre modelado, producción, técnica, pipeline, estilos artísticos, paquetes de terror, mundos, ambientes y jugabilidad, ejecutando las acciones en Blender a través de Blender MCP en lugar de dar tutoriales.",
+   "como_lo_hace": "Skills en `.claude/skills` que se copian al proyecto para Claude Code, a `.cursor/skills` en Cursor, al directorio de Kiro o a la ruta de skills de Codex. La documentación completa está en su web en Vercel.",
+   "combina_con": [
+    {
+     "id": "blender-mcp",
+     "motivo": "Vía de ejecución de las skills en Blender.",
+     "orden_instalacion": "Instala y conecta el MCP siguiendo `docs/BLENDER_MCP_SETUP.md`."
+    },
+    {
+     "id": "blender",
+     "motivo": "Aplicación sobre la que actúan.",
+     "orden_instalacion": "Blender instalado y abierto con el complemento del MCP."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Copia las skills al `.claude/skills` del proyecto."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/arjun988/blender-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "arjun988/blender-skills",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "webgl-noise": {
    "name": "webgl-noise",
@@ -59668,7 +60120,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una microinteracción; Planificar movimiento en una app",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El autor desarrolla en Claude Code; las pruebas de Claude.ai son acotadas y no hay evidencia equivalente para todos los hosts anunciados o posibles",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "gsap",
+    "three.js"
+   ],
    "alternatives": [],
    "repo": "https://github.com/AThevon/genjutsu",
    "homepage": "https://genjutsu.athevon.dev",
@@ -59770,7 +60226,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skills para Claude Code de AThevon para animación y diseño de interfaces; el README declara MIT, aunque GitHub no reconoce la licencia como estándar. Activo (v4.2.1).",
+   "que_hace": "Tres skills: `cast` anima una interfaz, `paint` diseña el aspecto de un producto y `bunshin` construye un sitio completo con un equipo de agentes. Cubre web (React, Vue, Svelte, Astro, CSS, Three.js, Canvas) y otros entornos, y mantiene un catálogo de los «tics» por defecto de los modelos (como tres tarjetas iguales) con un comando que los localiza en un proyecto.",
+   "como_lo_hace": "Se instala con `npx skills add https://genjutsu.athevon.dev -g` o como plugin de Claude Code (`/plugin marketplace add AThevon/genjutsu`), que añade `/genjutsu:cast`, `/genjutsu:paint` y `/genjutsu:bunshin`. Publica ejemplos con registros de ejecución, incluidos casos que salieron flojos.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plataforma objetivo de las skills.",
+     "orden_instalacion": "Instala globalmente con `-g` o como plugin."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Biblioteca de animación web sobre la que pueden apoyarse las animaciones generadas (combinación por arquitectura).",
+     "orden_instalacion": "Añádela al proyecto si la skill la propone."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Uno de los entornos cubiertos por sus módulos.",
+     "orden_instalacion": "Instala three en el proyecto web."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/AThevon/genjutsu/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "AThevon/genjutsu",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v4.2.1 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
   },
   "company-pixel-office": {
    "name": "company-pixel-office",
@@ -59904,7 +60398,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "gemini-cli"
+   ],
    "alternatives": [],
    "repo": "https://github.com/ayghri/i-have-adhd",
    "homepage": "",
@@ -60005,7 +60503,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill/plugin de código abierto (MIT) de ayghri que hace las respuestas de los asistentes de código más directas («apto para TDAH, sin diagnóstico necesario»). Popular y activo (v0.4.1).",
+   "que_hace": "Evita que el asistente entierre la respuesta: primero la acción, pasos numerados, referencias a archivo y línea, y sin relleno como «¡Espero que ayude!». Cambia el formato de las respuestas, no las capacidades del agente.",
+   "como_lo_hace": "Instrucciones en formato skill/plugin; se instala pidiéndole al agente que siga el `AGENTS.md` del repositorio o con la guía `INSTALL.md` (incluye plugin de Claude Code).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Instalable como plugin.",
+     "orden_instalacion": "Si tenías una copia anterior, desinstálala antes (el README lo indica)."
+    },
+    {
+     "id": "codex",
+     "motivo": "Instalación guiada por `AGENTS.md` en agentes que lo leen (combinación por arquitectura).",
+     "orden_instalacion": "Pide al agente que siga el AGENTS.md."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Igual que con Codex (combinación por arquitectura).",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/ayghri/i-have-adhd/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ayghri/i-have-adhd",
+    "archived": false,
+    "pushed_at": "2026-10-19",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.4.1 (2026-10-19)",
+    "checked_at": "2026-11-15"
+   }
   },
   "gods-eye-view": {
    "name": "gods-eye-view",
@@ -66336,7 +66872,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un Reel; Revisar un caption",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Produce ideas y revisiones y no conecta automáticamente tu Instagram; pegar SKILL.md en otro modelo no acredita un plugin nativo allí",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "postiz-app",
+    "social-media-research-skills"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Jakeschincariol/instagram-agent-skill",
    "homepage": null,
@@ -66438,7 +66978,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Trece skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de Instagram, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.",
+   "que_hace": "Escriben Reels a partir de 26 fórmulas de gancho y puntúan el gancho, encuentran los reels que funcionan en tu nicho, redactan pies de foto mostrando lo que se ve antes de «… más», puntúan el perfil sobre 100 y planifican la semana. Incluye un «humanizador» que quita guiones largos, vocabulario típico de IA y caracteres invisibles. No publica nada: tú decides.",
+   "como_lo_hace": "Se instala pegando el enlace en Claude, copiando `skills/ig-*` a `~/.claude/skills/` o como plugin (`/plugin marketplace add Jakeschincariol/instagram-agent-skill`). Sin Claude Code, cada `SKILL.md` puede pegarse en un chat, perdiendo las herramientas Python.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin y skills nativas.",
+     "orden_instalacion": "Instala el plugin y completa la plantilla de voz."
+    },
+    {
+     "id": "postiz-app",
+     "motivo": "Programar las publicaciones aprobadas (combinación por arquitectura).",
+     "orden_instalacion": "Aprueba el contenido antes de enviarlo a Postiz."
+    },
+    {
+     "id": "social-media-research-skills",
+     "motivo": "Datos de competidores y tendencias para alimentar los guiones (combinación por arquitectura).",
+     "orden_instalacion": "Requiere clave de ScrapeCreators."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/Jakeschincariol/instagram-agent-skill/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Jakeschincariol/instagram-agent-skill",
+    "archived": false,
+    "pushed_at": "2026-09-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "linkedin-agent-skill": {
    "name": "linkedin-agent-skill",
@@ -66455,7 +67032,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Planificar una semana de contenido; Revisar un perfil profesional",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La instalación documentada es para Claude y las instrucciones pueden pegarse en otros modelos; no publica ni garantiza alcance",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "postiz-app",
+    "marketingskills"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Jakeschincariol/linkedin-agent-skill",
    "homepage": "https://opusjake.ai/r/linkedin-agent",
@@ -66556,7 +67137,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Once skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de LinkedIn, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.",
+   "que_hace": "Escriben publicaciones con 21 fórmulas de gancho, comentan publicaciones ajenas, responden comentarios, puntúan el perfil sobre 100 y planifican la semana (qué publicar, cuándo y con quién interactuar). Incluyen un humanizador con panel de cinco comprobaciones. No publican nada sin tu aprobación.",
+   "como_lo_hace": "Igual que su skill hermana de Instagram: se copian `skills/li-*` a `~/.claude/skills/` o se instala como plugin; se recomienda completar `templates/voice.md`. Fuera de Claude Code se pierden las dos herramientas Python del humanizador.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin y skills nativas.",
+     "orden_instalacion": "Instala el plugin y dedica unos minutos a la plantilla de voz."
+    },
+    {
+     "id": "postiz-app",
+     "motivo": "Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura).",
+     "orden_instalacion": "Aprueba antes de programar."
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Estrategia y mensajes de marketing como base de los textos (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    }
+   ],
+   "descripcion_notas": "Automatizar comentarios en LinkedIn puede chocar con sus condiciones de uso; publica manualmente.",
+   "descripcion_fuentes": [
+    "https://github.com/Jakeschincariol/linkedin-agent-skill/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Jakeschincariol/linkedin-agent-skill",
+    "archived": false,
+    "pushed_at": "2026-09-17",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "pixel-hedge-fund": {
    "name": "pixel-hedge-fund",
@@ -66931,7 +67550,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un dataset científico; Preparar una revisión bibliográfica",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "open-notebook",
+    "anthropic-skills"
+   ],
    "alternatives": [],
    "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
    "homepage": "https://arxiv.org/abs/2609.00065",
@@ -67033,7 +67656,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Colección MIT de 177 skills científicas y de investigación de K-Dense (antes Claude Scientific Skills), compatible con cualquier agente que siga el estándar Agent Skills. Muy activa (v2.72.0); K-Dense ofrece además un «co-científico» de escritorio de código abierto basado en ellas.",
+   "que_hace": "Cubre biología, química, medicina, física, ingeniería, ciencias de la Tierra, datos y finanzas: búsqueda en más de 100 bases de datos científicas y financieras, integraciones con Benchling, DNAnexus, LatchBio, OMERO, Protocols.io, Open Notebook, Ginkgo Cloud Lab, LabArchives y Opentrons, análisis y generación de documentos e imágenes.",
+   "como_lo_hace": "Skills en Markdown con scripts de apoyo; incluye las skills de documentos docx, pdf, pptx y xlsx copiadas de anthropics/skills bajo su licencia, y la generación de imágenes usa la API de OpenRouter. Se instala en el agente compatible según el README.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible principal.",
+     "orden_instalacion": "Instala solo las categorías que necesites."
+    },
+    {
+     "id": "open-notebook",
+     "motivo": "Skill de integración explícita con Open Notebook.",
+     "orden_instalacion": "Open Notebook en marcha y con API accesible antes de usar la skill."
+    },
+    {
+     "id": "anthropic-skills",
+     "motivo": "Sus skills de documentos provienen de anthropics/skills.",
+     "orden_instalacion": "No dupliques las mismas skills de documentos desde ambos repositorios."
+    }
+   ],
+   "descripcion_notas": "Las integraciones de laboratorio requieren cuentas propias en cada plataforma.",
+   "descripcion_fuentes": [
+    "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "K-Dense-AI/scientific-agent-skills",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.72.0 (2026-10-01)",
+    "checked_at": "2026-11-15"
+   }
   },
   "logo-design-skill": {
    "name": "logo-design-skill",
@@ -73480,7 +74142,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "marketingskills"
+   ],
    "alternatives": [],
    "repo": "https://github.com/petergyang/no-ai-slop",
    "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -73581,7 +74247,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).",
+   "que_hace": "Quita más de 20 patrones de «slop» de IA (como «No es X. Es Y.» o «Lo que nadie te cuenta…») sin aplanar tu voz personal, y lista lo que cambió. También detecta y cita patrones sin juzgar si lo escribió una IA, y genera «slop» exagerado como sátira.",
+   "como_lo_hace": "Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes`; se usa con `/no-ai-slop`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Instala con npx skills de forma global."
+    },
+    {
+     "id": "codex",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Revisar los textos de marketing generados (combinación por arquitectura).",
+     "orden_instalacion": "Genera primero y revisa después."
+    }
+   ],
+   "descripcion_notas": "Se solapa con humanizer y stop-slop: usa uno como revisor principal.",
+   "descripcion_fuentes": [
+    "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "petergyang/no-ai-slop",
+    "archived": false,
+    "pushed_at": "2026-09-02",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.0.6 (2026-08-01)",
+    "checked_at": "2026-11-15"
+   }
   },
   "planck-js": {
    "name": "planck.js",
@@ -75015,7 +75720,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un problema de cliente; Preparar preguntas de validación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El pack está basado en un libro y documenta Claude Code; sus plantillas no demuestran demanda, ingresos o validez de un precio",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "marketingskills",
+    "posthog"
+   ],
    "alternatives": [],
    "repo": "https://github.com/slavingia/skills",
    "homepage": "https://minimalistentrepreneur.com",
@@ -75117,7 +75826,43 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Diez skills para Claude Code basadas en el libro «The Minimalist Entrepreneur» de Sahil Lavingia (fundador de Gumroad), publicadas en su repositorio `slavingia/skills`. El repositorio no declara licencia y su último cambio es de abril de 2026.",
+   "que_hace": "Guían cada etapa de un negocio pequeño y rentable: encontrar comunidad, validar ideas, definir un MVP, «procesar» el servicio a mano antes de programar, conseguir los primeros clientes, fijar precios, plan de marketing, crecimiento sostenible y valores de empresa, cada una con su comando (`/validate-idea`, `/mvp`, `/pricing`…).",
+   "como_lo_hace": "Plugin de Claude Code: `/plugin marketplace add slavingia/skills` y `/plugin install minimalist-entrepreneur`, o desde un clon local.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin nativo.",
+     "orden_instalacion": "Instala desde el marketplace."
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Ejecutar el plan de marketing con skills más especializadas (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    },
+    {
+     "id": "posthog",
+     "motivo": "Medir la validación y el crecimiento con datos reales (combinación por arquitectura).",
+     "orden_instalacion": "Define los eventos clave antes de lanzar."
+    }
+   ],
+   "descripcion_notas": "Sin licencia declarada: técnicamente no hay permiso explícito de redistribución.",
+   "descripcion_fuentes": [
+    "https://github.com/slavingia/skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "08-skills-escritura-dominio",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "slavingia/skills",
+    "archived": false,
+    "pushed_at": "2026-04-14",
+    "checked_at": "2026-11-15"
+   }
   },
   "craft-anything": {
    "name": "craft-anything",

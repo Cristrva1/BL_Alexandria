@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plugin SEO gratuito y de código abierto (MIT) para Claude Code, de AgriciDaniel. Activo (v2.6.2), con 29 subskills y 20 agentes especialistas.
+
+## ¿Qué hace?
+
+Ejecuta una auditoría SEO completa en 10–15 minutos y entrega un plan priorizado: SEO técnico (rastreo, indexación, sitemaps, redirecciones, Core Web Vitals), calidad de contenido (E-E-A-T, páginas pobres), datos estructurados Schema.org, visibilidad en buscadores con IA (GEO), SEO local y de comercio electrónico. Hasta 17 agentes trabajan en paralelo y cada recomendación explica por qué importa.
+
+## ¿Cómo lo hace?
+
+Plugin de Claude Code (marketplace e instalación del plugin) con unos 30 comandos `/seo` en seis grupos, más extensiones opcionales como datos en vivo, generación de imágenes y análisis con PostHog.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Es un plugin de Claude Code. | Añade el marketplace e instala el plugin. |
+| [posthog](posthog.md) | Extensión `seo-posthog` para cruzar datos de analítica. | Configura credenciales de PostHog de solo lectura. |
+| [open-seo](open-seo.md) | Datos de palabras clave y posiciones vía MCP (combinación por arquitectura). | Conecta el MCP de OpenSEO al mismo agente. |
+
+**Notas:** Se solapa con geo-seo-claude; elige uno para auditorías.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.6.2 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AgriciDaniel/claude-seo/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No promete mejorar ranking ni sustituir una auditoría humana; las funciones de datos en vivo requieren configuración adicional |
 | Coste | El coste depende del proveedor o la ruta. Plugin público MIT con consumo de Claude; extensiones de datos y versión privada tienen condiciones distintas |
 | Equipo | Preparación según la ruta elegida. Claude Code; Python 3.11–3.14; web propia; dependencias de navegador |
-
-No promete mejorar ranking ni sustituir una auditoría humana; las funciones de datos en vivo requieren configuración adicional
-
-## Qué puedes hacer con él
-
-Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing.
-
-## Cómo funciona
 
 No promete mejorar ranking ni sustituir una auditoría humana; las funciones de datos en vivo requieren configuración adicional
 

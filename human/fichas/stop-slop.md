@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill de código abierto (MIT) de Hardik Pandya para eliminar marcas de IA en la prosa. Sin releases y con último cambio en marzo de 2026.
+
+## ¿Qué hace?
+
+Enseña a Claude o a cualquier LLM a detectar y quitar frases vetadas (aperturas de relleno, muletillas de énfasis, jerga empresarial, adverbios, metacomentarios), clichés estructurales (contrastes binarios, fragmentación dramática, voz pasiva) y reglas por frase (sin guiones largos, sin inicios con interrogativos, voz activa). Puntúa el texto del 1 al 10 en cinco dimensiones y pide revisar por debajo de 35/50.
+
+## ¿Cómo lo hace?
+
+Una carpeta con `SKILL.md` y archivos de referencia (frases, estructuras) que se cargan bajo demanda. Se añade como skill en Claude Code, se sube a un Proyecto de Claude, se copian sus reglas a instrucciones personalizadas o se incluye en el prompt de sistema por API.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Se añade la carpeta como skill. | Copia la carpeta al directorio de skills. |
+| [Marketing Skills](marketingskills.md) | Limpiar textos generados por las skills de marketing (combinación por arquitectura). | Genera primero y revisa después. |
+| [postiz-app](postiz-app.md) | Revisar publicaciones antes de programarlas (combinación por arquitectura). | Igual que arriba. |
+
+**Notas:** Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.
+
+Estado en GitHub: activo · último push 2026-03-17 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hardikpandya/stop-slop/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity |
 | Coste | Consumo del agente que ya utilizas. Usa el modelo elegido; las reglas no aportan créditos ni acceso a servicios |
 | Equipo | Preparación según la ruta elegida. Claude con skills o instrucciones pegadas en otro modelo; texto propio |
-
-Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity
-
-## Qué puedes hacer con él
-
-Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.
-
-## Por qué destaca
-
-Usos propuestos: Reducir frases vagas; Revisar un borrador antes de publicarlo.
-
-## Cómo funciona
 
 Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity
 
@@ -85,13 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude con skills o instrucciones pegadas en otro modelo; texto propio
 - **Etiquetas:** `skills` `prompts` `docs`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Marketing Skills](marketingskills.md) | 60.4k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 

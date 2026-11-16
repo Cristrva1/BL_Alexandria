@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill/plugin de código abierto (MIT) de ayghri que hace las respuestas de los asistentes de código más directas («apto para TDAH, sin diagnóstico necesario»). Popular y activo (v0.4.1).
+
+## ¿Qué hace?
+
+Evita que el asistente entierre la respuesta: primero la acción, pasos numerados, referencias a archivo y línea, y sin relleno como «¡Espero que ayude!». Cambia el formato de las respuestas, no las capacidades del agente.
+
+## ¿Cómo lo hace?
+
+Instrucciones en formato skill/plugin; se instala pidiéndole al agente que siga el `AGENTS.md` del repositorio o con la guía `INSTALL.md` (incluye plugin de Claude Code).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalable como plugin. | Si tenías una copia anterior, desinstálala antes (el README lo indica). |
+| [Codex CLI](codex.md) | Instalación guiada por `AGENTS.md` en agentes que lo leen (combinación por arquitectura). | Pide al agente que siga el AGENTS.md. |
+| [Gemini CLI](gemini-cli.md) | Igual que con Codex (combinación por arquitectura). | Igual que arriba. |
+
+Estado en GitHub: activo · último push 2026-10-19 · última versión publicada v0.4.1 (2026-10-19) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ayghri/i-have-adhd/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica |
 | Coste | Consumo del agente que ya utilizas. Usa el modelo o plan del anfitrión sin API adicional |
 | Equipo | Preparación según la ruta elegida. Agente soportado; preferencia personal de presentación |
-
-INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica
-
-## Qué puedes hacer con él
-
-Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.
-
-## Por qué destaca
-
-Usos propuestos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo.
-
-## Cómo funciona
 
 INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica
 
