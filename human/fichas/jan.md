@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Aplicación de escritorio de código abierto presentada como reemplazo de ChatGPT, de Menlo Research (janhq). Licencia Apache 2.0 según su README (GitHub no la detecta como estándar); activa, con versiones frecuentes (v0.8.8).
+
+## ¿Qué hace?
+
+Descarga y ejecuta LLM de Hugging Face (Llama, Gemma, Qwen, GPT-oss, etc.) con control total y privacidad, y se conecta también a OpenAI, Anthropic, Mistral, Groq, MiniMax y otros. Permite crear asistentes personalizados, usar MCP para capacidades de agente y exponer un servidor local compatible con OpenAI en `localhost:1337` para otras aplicaciones.
+
+## ¿Cómo lo hace?
+
+App de escritorio con Tauri (Rust) y frontend en TypeScript que incluye el motor llama.cpp (variantes CPU, CUDA 12/13, Vulkan). Se descarga para Windows, macOS y Linux (deb, AppImage, Arm64); compilar desde código requiere Node.js ≥ 20, Yarn ≥ 4.5.3, Make y Rust.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [llmfit](llmfit.md) | Elegir qué modelo y cuantización caben en tu equipo antes de descargarlos en Jan (combinación por arquitectura). | Ejecuta llmfit primero; descarga en Jan el modelo recomendado. |
+| [Ollama](ollama.md) | Usar modelos ya descargados en Ollama añadiéndolo como proveedor compatible con OpenAI (combinación por arquitectura). | Ollama en 11434; añade su URL /v1 como proveedor en Jan. |
+| [Playwright MCP](playwright-mcp.md) | Dar al asistente acceso a un navegador mediante su soporte de MCP (combinación por arquitectura). | Registra el servidor MCP en Jan y limita los sitios a los que puede ir. |
+
+**Notas:** Alternativas (elige una): cherry-studio, textgen, chatbox.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.8.8 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/janhq/jan/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan |
 | Coste | El coste depende del proveedor o la ruta. El modo local usa tu equipo; los proveedores remotos tienen sus tarifas; modelos tienen licencias propias |
 | Equipo | Preparación según la ruta elegida. Instalador de escritorio oficial; RAM y disco; modelo compatible |
-
-Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan
-
-## Qué puedes hacer con él
-
-Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz.
-
-## Por qué destaca
-
-Usos propuestos: Conversar con un modelo privado; Comparar un modelo local con una API.
-
-## Cómo funciona
 
 Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador de escritorio oficial; RAM y disco; modelo compatible
 - **Etiquetas:** `chatbot` `local` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 

@@ -30417,7 +30417,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar documentación propia; Separar bases de conocimiento por proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "qdrant",
+        "litellm",
+        "localai"
       ],
       "alt": [
         "open-webui",
@@ -30541,7 +30544,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conversar con varios proveedores; Probar un modelo local desde escritorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "litellm",
+        "localai"
+      ],
       "alt": [
         "jan"
       ]
@@ -30662,7 +30669,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar respuestas de varios modelos; Organizar una base documental de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "litellm",
+        "playwright-mcp"
       ],
       "alt": [
         "jan",
@@ -30783,7 +30792,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir memoria entre equipos compatibles; Experimentar con inferencia distribuida local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-webui"
+        "open-webui",
+        "librechat",
+        "litellm"
       ],
       "alt": []
     },
@@ -31133,7 +31144,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "llmfit",
+        "ollama",
+        "playwright-mcp"
       ],
       "alt": [
         "cherry-studio",
@@ -31383,7 +31396,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "litellm",
-        "ollama"
+        "ollama",
+        "langfuse"
       ],
       "alt": [
         "open-webui",
@@ -31503,7 +31517,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-webui"
+        "open-webui",
+        "llmfit",
+        "librechat",
+        "litellm"
       ],
       "alt": [
         "ollama",
@@ -31623,7 +31640,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Distribuir una demo local de un LLM; Probar inferencia sin montar un servidor complejo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "open-webui",
+        "anything-llm",
+        "librechat"
+      ],
       "alt": [
         "ollama",
         "llama-cpp"
@@ -31738,8 +31759,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Elegir un modelo antes de descargarlo; Comparar requisitos de dos cuantizaciones",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "litellm",
-        "langfuse"
+        "ollama",
+        "llama-cpp",
+        "vllm"
       ],
       "alt": []
     },
@@ -31863,7 +31885,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar agentes para tareas de equipo; Conectar un agente de código a un espacio de trabajo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "litellm",
+        "playwright-mcp"
       ],
       "alt": [
         "open-webui",
@@ -31985,7 +32009,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Ofrecer una API local a una aplicación; Probar texto o voz con distintos backends",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "anything-llm"
+        "anything-llm",
+        "open-webui",
+        "librechat"
       ],
       "alt": [
         "ollama",
@@ -33075,7 +33101,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "qdrant"
+        "vllm",
+        "llama-cpp"
       ],
       "alt": [
         "anything-llm"
@@ -33315,7 +33342,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "librechat",
+        "llmfit",
+        "unsloth"
+      ],
       "alt": [
         "jan",
         "open-webui"

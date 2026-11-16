@@ -1,0 +1,474 @@
+{
+ "batch": "03-llm-local-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación oficial enlazada; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "llama-cpp": {
+   "que_es": "Motor de inferencia de LLM y modelos de visión (VLM) en C/C++, mantenido por la organización ggml-org sobre la biblioteca de tensores ggml. Licencia MIT, desarrollo diario desde 2023 y primera versión 1.0.0 publicada en noviembre de 2026; es la base de muchas herramientas locales.",
+   "que_hace": "Ejecuta modelos en formato GGUF en local o en la nube con configuración mínima: chat en terminal (`llama cli`), servidor con API compatible con OpenAI y una interfaz web integrada (`llama serve`). Descarga modelos directamente de Hugging Face con `-hf`. Sirve para probar modelos abiertos, servirlos a otras aplicaciones o integrarlos en software propio.",
+   "como_lo_hace": "Implementación en C/C++ sin dependencias, con cuantización entera de 1,5 a 8 bits para reducir memoria. Optimiza Apple Silicon (NEON, Accelerate, Metal), x86 (AVX, AVX2, AVX512, AMX) y RISC-V, y tiene núcleos CUDA para NVIDIA, HIP para AMD, Vulkan y SYCL para GPU Intel; puede repartir capas entre CPU y GPU. Se instala con el script de llama.app, Docker, binarios precompilados o compilando desde el código.",
+   "combina_con": [
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat multiusuario conectada al servidor compatible con OpenAI de `llama serve` (combinación por arquitectura).",
+     "orden_instalacion": "Arranca `llama serve` primero y registra su URL /v1 como conexión OpenAI en Open WebUI; evita choques de puerto (ambos suelen usar 8080)."
+    },
+    {
+     "id": "llmfit",
+     "motivo": "llmfit detecta tu hardware y recomienda qué modelo y cuantización caben; lista llama.cpp entre sus proveedores locales.",
+     "orden_instalacion": "Ejecuta llmfit antes de descargar modelos para elegir el GGUF adecuado."
+    },
+    {
+     "id": "librechat",
+     "motivo": "LibreChat admite endpoints personalizados compatibles con OpenAI, como el de llama.cpp.",
+     "orden_instalacion": "Servidor de llama.cpp accesible desde el contenedor de LibreChat; luego decláralo en `librechat.yaml`."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Poner el servidor de llama.cpp detrás de un proxy único con claves, límites y registro de gasto (combinación por arquitectura).",
+     "orden_instalacion": "llama.cpp primero; añade su endpoint como modelo OpenAI-compatible en la configuración de LiteLLM."
+    }
+   ],
+   "notas": "Alternativas (elige una como motor principal): ollama, llamafile, localai.",
+   "fuentes": [
+    "https://github.com/ggml-org/llama.cpp/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ggml-org/llama.cpp",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "C++",
+    "latest_release": "v1.0.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "localai": {
+   "que_es": "Motor de IA de código abierto (MIT) creado por Ettore Di Giacinto y mantenido por el equipo de LocalAI, que se presenta como «tu propia IA en tu propio hardware». Muy activo; la versión estable en noviembre de 2026 es la 4.12.1 y algunas funciones nuevas solo están en compilaciones de desarrollo.",
+   "que_hace": "Sirve texto, visión, voz, imágenes, video y embeddings desde una sola API en los formatos de OpenAI, Anthropic y ElevenLabs, con más de 80 backends. Incluye chats y agentes guardados que usan herramientas, servidores MCP, archivos y skills, un agente de terminal (`local-ai chat`) que pide aprobación para acciones con efectos y, en compilaciones de desarrollo, usuarios, roles, cuotas y complementos como Office, Sandbox o conectores de Telegram, Slack y Discord.",
+   "como_lo_hace": "Servidor en Go que descarga cada backend como imagen separada solo cuando un modelo lo necesita y detecta la GPU (NVIDIA, AMD, Intel, Apple Silicon, Vulkan, Jetson) o funciona solo con CPU. Se instala con un script que verifica sumas de comprobación, con Docker (`localai/localai`, imágenes específicas por GPU) o con la app de escritorio para Linux y macOS. La interfaz y la API quedan en el puerto 8080; los modelos se cargan desde su galería o desde Hugging Face.",
+   "combina_con": [
+    {
+     "id": "anything-llm",
+     "motivo": "AnythingLLM lista LocalAI como proveedor de LLM y de embeddings.",
+     "orden_instalacion": "LocalAI con el modelo cargado primero; después configura su URL en AnythingLLM."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat sobre la API compatible con OpenAI de LocalAI (combinación por arquitectura).",
+     "orden_instalacion": "Cambia el puerto de uno de los dos: ambos usan 8080 por defecto."
+    },
+    {
+     "id": "librechat",
+     "motivo": "LocalAI como endpoint personalizado compatible con OpenAI en LibreChat (combinación por arquitectura).",
+     "orden_instalacion": "LocalAI accesible desde la red de Docker de LibreChat; declara el endpoint en `librechat.yaml`."
+    }
+   ],
+   "notas": "Alternativas (elige una como motor principal): ollama, llama-cpp.",
+   "fuentes": [
+    "https://github.com/mudler/LocalAI/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "mudler/LocalAI",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "latest_release": "v4.12.1 (2026-10-23)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "exo": {
+   "que_es": "Software de código abierto (Apache 2.0) de exo labs para ejecutar modelos de frontera en local uniendo varios dispositivos en un clúster de IA. Activo, con app de macOS y versiones frecuentes (v1.0.71 como última release publicada).",
+   "que_hace": "Permite ejecutar modelos más grandes de lo que cabe en un solo equipo repartiéndolos entre dispositivos que se descubren solos en la red local. Incluye un panel para gestionar el clúster y chatear, y una API compatible con OpenAI Chat Completions, OpenAI Responses, Claude Messages y Ollama, para usar clientes existentes. Su README muestra modelos como DeepSeek v3.1 671B o Qwen3-235B en cuatro Mac Studio M3 Ultra.",
+   "como_lo_hace": "Usa MLX como backend de inferencia y MLX distributed para la comunicación, con paralelismo de tensores (hasta 1,8x con 2 equipos y 3,2x con 4, según el README) y reparto automático según la topología, recursos y latencia de la red. Admite RDMA sobre Thunderbolt 5 (requiere macOS Tahoe 26.2 o posterior). La app de macOS necesita Apple Silicon y macOS Sequoia 15.1+; desde código se ejecuta con `uv run exo`, y en Linux por ahora solo funciona con CPU. Panel y API en el puerto 52415.",
+   "combina_con": [
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat apuntando a la API compatible con OpenAI u Ollama del clúster (combinación por arquitectura).",
+     "orden_instalacion": "Clúster exo en marcha primero; registra http://<nodo>:52415 en Open WebUI."
+    },
+    {
+     "id": "librechat",
+     "motivo": "Endpoint personalizado compatible con OpenAI para un chat multiusuario sobre el clúster (combinación por arquitectura).",
+     "orden_instalacion": "Igual que arriba; asegúrate de que el contenedor llega a la IP del nodo."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Unificar el clúster exo con proveedores en la nube detrás de un solo proxy (combinación por arquitectura).",
+     "orden_instalacion": "exo primero; añádelo a LiteLLM como modelo compatible con OpenAI."
+    }
+   ],
+   "notas": "Todos los nodos deben ejecutar la misma versión de exo. El rendimiento en Linux (solo CPU) no es comparable con el de Apple Silicon.",
+   "fuentes": [
+    "https://github.com/exo-explore/exo/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "exo-explore/exo",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.0.71 (2026-04-23)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "llmfit": {
+   "que_es": "Herramienta de terminal de código abierto (MIT) escrita en Rust por Alex Jones que calcula qué LLM puede ejecutar tu hardware. Proyecto de 2026 muy activo (v1.1.20).",
+   "que_hace": "Detecta CPU, RAM, GPU, VRAM y memoria unificada, puntúa cada modelo por calidad, velocidad, ajuste y contexto, y recomienda cuantizaciones (GGUF, AWQ, GPTQ, EXL2) que funcionarán bien. Admite varias GPU, modelos MoE, estimación de velocidad y planificación de modelos repartidos en varias máquinas (por ejemplo con Ray y vLLM). También permite medir tokens por segundo reales y aportar resultados al proyecto.",
+   "como_lo_hace": "Ofrece una TUI interactiva (por defecto), un modo CLI clásico, un panel web y una API REST (`/api/v1/system`, `/api/v1/models`). Detecta NVIDIA CUDA, Apple Silicon, AMD ROCm e Intel OneAPI e integra proveedores locales como Ollama, llama.cpp, MLX, Docker Model Runner y LM Studio. Se instala con Homebrew, Scoop o desde sus binarios, en macOS, Linux y Windows.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local soportado: elige con llmfit el modelo que cabe y descárgalo en Ollama.",
+     "orden_instalacion": "Ollama instalado; ejecuta llmfit para decidir el modelo antes de `ollama pull`."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "Proveedor local soportado para descargar y servir el GGUF recomendado.",
+     "orden_instalacion": "Igual: primero la recomendación, luego la descarga."
+    },
+    {
+     "id": "vllm",
+     "motivo": "El README describe comprobar si un modelo cabe en varias máquinas con Ray y vLLM antes de lanzarlo.",
+     "orden_instalacion": "Usa llmfit para planificar; despliega vLLM después."
+    }
+   ],
+   "notas": "Las estimaciones de velocidad son proyecciones; contrástalas con la función de benchmark.",
+   "fuentes": [
+    "https://github.com/AlexsJones/llmfit/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "AlexsJones/llmfit",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "latest_release": "v1.1.20 (2026-11-03)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "llamafile": {
+   "que_es": "Proyecto de Mozilla Builders, renovado por Mozilla.ai, para distribuir y ejecutar LLM como un solo archivo ejecutable. El proyecto es Apache 2.0 y sus cambios a llama.cpp y whisper.cpp son MIT; desde la versión 0.10 usa un nuevo sistema de compilación más alineado con llama.cpp.",
+   "que_hace": "Empaqueta un modelo y su motor en un «llamafile» que se ejecuta sin instalación en la mayoría de sistemas operativos y arquitecturas de CPU. Incluye whisperfile, un ejecutable único para transcripción de voz basado en whisper.cpp. Útil para repartir un modelo a usuarios no técnicos o ejecutarlo en equipos sin permisos de instalación.",
+   "como_lo_hace": "Combina llama.cpp con Cosmopolitan Libc para producir un binario portátil. Se descarga un llamafile precompilado de Hugging Face, se marca como ejecutable y se ejecuta; en Windows hay que añadir `.exe` y solo funcionan ejecutables de menos de 4 GB (para modelos mayores se usa el binario llamafile con pesos externos). Las versiones 0.10 pueden carecer de funciones de la experiencia «clásica» 0.9, que sigue disponible en las releases.",
+   "combina_con": [
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat sobre el servidor local del llamafile (combinación por arquitectura; [DATO NO VERIFICADO: API compatible con OpenAI en la serie 0.10]).",
+     "orden_instalacion": "Arranca el llamafile en modo servidor y registra su URL en Open WebUI; vigila el puerto 8080."
+    },
+    {
+     "id": "anything-llm",
+     "motivo": "Usar el llamafile como LLM de un espacio de documentos (combinación por arquitectura, vía endpoint compatible con OpenAI).",
+     "orden_instalacion": "Llamafile en marcha; configúralo como proveedor genérico OpenAI en AnythingLLM."
+    },
+    {
+     "id": "librechat",
+     "motivo": "Endpoint personalizado en LibreChat (combinación por arquitectura).",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "notas": "Alternativas (elige una como motor principal): ollama, llama-cpp.",
+   "fuentes": [
+    "https://github.com/mozilla-ai/llamafile/blob/main/README.md",
+    "https://docs.mozilla.ai/llamafile"
+   ],
+   "github": {
+    "name_with_owner": "mozilla-ai/llamafile",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C++",
+    "latest_release": "0.10.6 (2026-09-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "jan": {
+   "que_es": "Aplicación de escritorio de código abierto presentada como reemplazo de ChatGPT, de Menlo Research (janhq). Licencia Apache 2.0 según su README (GitHub no la detecta como estándar); activa, con versiones frecuentes (v0.8.8).",
+   "que_hace": "Descarga y ejecuta LLM de Hugging Face (Llama, Gemma, Qwen, GPT-oss, etc.) con control total y privacidad, y se conecta también a OpenAI, Anthropic, Mistral, Groq, MiniMax y otros. Permite crear asistentes personalizados, usar MCP para capacidades de agente y exponer un servidor local compatible con OpenAI en `localhost:1337` para otras aplicaciones.",
+   "como_lo_hace": "App de escritorio con Tauri (Rust) y frontend en TypeScript que incluye el motor llama.cpp (variantes CPU, CUDA 12/13, Vulkan). Se descarga para Windows, macOS y Linux (deb, AppImage, Arm64); compilar desde código requiere Node.js ≥ 20, Yarn ≥ 4.5.3, Make y Rust.",
+   "combina_con": [
+    {
+     "id": "llmfit",
+     "motivo": "Elegir qué modelo y cuantización caben en tu equipo antes de descargarlos en Jan (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta llmfit primero; descarga en Jan el modelo recomendado."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Usar modelos ya descargados en Ollama añadiéndolo como proveedor compatible con OpenAI (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en 11434; añade su URL /v1 como proveedor en Jan."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Dar al asistente acceso a un navegador mediante su soporte de MCP (combinación por arquitectura).",
+     "orden_instalacion": "Registra el servidor MCP en Jan y limita los sitios a los que puede ir."
+    }
+   ],
+   "notas": "Alternativas (elige una): cherry-studio, textgen, chatbox.",
+   "fuentes": [
+    "https://github.com/janhq/jan/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "janhq/jan",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Rust",
+    "latest_release": "v0.8.8 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "lobehub": {
+   "que_es": "Plataforma de agentes de código abierto de LobeHub, antes conocida como Lobe Chat, que se presenta como «superagentes en tu equipo». Su README indica Apache 2.0, aunque GitHub no reconoce la licencia como estándar [DATO NO VERIFICADO: condiciones adicionales en LICENSE]; avisa que está en desarrollo activo (v2.3.3).",
+   "que_hace": "Añade agentes a los chats que el equipo ya usa; estos asumen trabajo por su cuenta y mejoran con el tiempo. Ofrece un marketplace de agentes, servidores MCP y skills que puedes añadir o publicar, guías para más de 40 proveedores de modelos y modelos locales, y autenticación con Better Auth y SSO.",
+   "como_lo_hace": "Aplicación full-stack en TypeScript (Next.js con SPA de Vite, Bun en desarrollo). El Docker Compose recomendado levanta LobeHub con PostgreSQL, Redis, almacenamiento RustFS, búsqueda SearXNG y el gateway de agentes, accesible en el puerto 3210; funciona en Linux, macOS o Windows con WSL 2. También se despliega en Vercel con una base PostgreSQL, almacenamiento compatible con S3 y secretos.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Ollama está entre los proveedores locales documentados.",
+     "orden_instalacion": "Ollama accesible desde el contenedor (no uses localhost dentro de Docker); configura su URL en las variables de entorno."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Centralizar claves y gasto de varios proveedores en un proxy compatible con OpenAI (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; apunta el proveedor OpenAI de LobeHub a su URL."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Servidor MCP de navegador para los agentes (combinación por arquitectura).",
+     "orden_instalacion": "Añádelo desde la configuración de MCP y restringe permisos."
+    }
+   ],
+   "notas": "Alternativas (elige una): open-webui, librechat, cherry-studio. SearXNG ya viene en su Compose; no instales otro aparte.",
+   "fuentes": [
+    "https://github.com/lobehub/lobehub/blob/canary/README.md"
+   ],
+   "github": {
+    "name_with_owner": "lobehub/lobehub",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v2.3.3 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "cherry-studio": {
+   "que_es": "Estación de trabajo de IA de escritorio para Windows, macOS y Linux, de CherryHQ, con app móvil aparte. La edición comunitaria es AGPL-3.0 (el uso comercial se permite cumpliendo la AGPL; hay licencia comercial y una edición Enterprise); muy activa (v2.2.2).",
+   "que_hace": "Reúne chat con varios modelos (incluida la comparación de respuestas en una misma conversación), agentes con instrucciones, espacios de trabajo, modelos y permisos propios que trabajan con archivos, ejecutan comandos y automatizan el navegador o el equipo. Permite ampliar con skills y servidores MCP, programar tareas, conectar agentes a mensajería («Channels»), crear bases de conocimiento locales desde archivos, carpetas y webs, y generar imágenes.",
+   "como_lo_hace": "Aplicación de escritorio que conecta proveedores en la nube (OpenAI, Anthropic, Gemini y servicios compatibles) y modelos locales vía Ollama y LM Studio, con gestión centralizada de claves y modelos. Se descarga desde su web; la edición Enterprise añade gestión centralizada de modelos y despliegue privado.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local soportado para chatear con modelos sin enviar datos fuera.",
+     "orden_instalacion": "Ollama con modelos descargados; selecciónalo en la configuración de proveedores."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Usar un proxy propio como servicio compatible personalizado (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; añade su URL y clave como proveedor compatible con OpenAI."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Ampliar los agentes con un servidor MCP de navegador (combinación por arquitectura).",
+     "orden_instalacion": "Registra el MCP y revisa los permisos de herramientas del agente."
+    }
+   ],
+   "notas": "Alternativas (elige una): jan, lobehub. Los agentes pueden ejecutar comandos: revisa sus permisos.",
+   "fuentes": [
+    "https://github.com/CherryHQ/cherry-studio/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "CherryHQ/cherry-studio",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v2.2.2 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "textgen": {
+   "que_es": "Aplicación de escritorio para LLM locales, de código abierto (AGPL-3.0) y sin telemetría, de oobabooga (antes text-generation-webui). Madura y con versiones regulares (v4.9).",
+   "que_hace": "Ofrece chat en modos instruct, chat-instruct y chat con personajes, visión multimodal, adjuntos (texto, PDF, docx), edición y ramas de conversación, y un cuaderno de generación libre. Permite llamadas a herramientas (cada herramienta es un archivo .py, incluidas búsqueda web y lectura de páginas) y servidores MCP, entrenamiento de LoRA y generación de imágenes con modelos diffusers. Expone una API compatible con OpenAI y Anthropic para usarla como reemplazo local.",
+   "como_lo_hace": "Aplicación Python con varios backends: llama.cpp, ik_llama.cpp, Transformers y ExLlamaV3, con plantillas Jinja2 para formatear prompts. Las compilaciones portátiles para Linux, Windows y macOS (CUDA, Vulkan, ROCm o CPU) incluyen todas las dependencias y usan modelos GGUF; los backends extra, el entrenamiento y la generación de imágenes requieren la instalación completa.",
+   "combina_con": [
+    {
+     "id": "librechat",
+     "motivo": "Usar la API compatible con OpenAI de TextGen como endpoint personalizado en un chat multiusuario (combinación por arquitectura).",
+     "orden_instalacion": "Activa la API en TextGen; regístrala en `librechat.yaml`."
+    },
+    {
+     "id": "llmfit",
+     "motivo": "Saber qué modelo y cuantización caben antes de descargar (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta llmfit primero."
+    },
+    {
+     "id": "unsloth",
+     "motivo": "Afinar modelos con más eficiencia fuera de TextGen y cargar el resultado en él (combinación por arquitectura).",
+     "orden_instalacion": "Entrena y exporta el adaptador o GGUF con Unsloth; luego cárgalo en TextGen."
+    }
+   ],
+   "notas": "Alternativas (elige una): jan, open-webui.",
+   "fuentes": [
+    "https://github.com/oobabooga/textgen/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "oobabooga/textgen",
+    "archived": false,
+    "pushed_at": "2026-08-17",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v4.9 (2026-05-20)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "librechat": {
+   "que_es": "Plataforma de chat con IA de código abierto (MIT) y autoalojable, del equipo LibreChat-AI, con agentes, MCP y autenticación multiusuario empresarial. Muy activa (v0.8.8 descrita en el README; sin releases formales en GitHub).",
+   "que_hace": "Unifica en una interfaz OpenAI, Azure, Anthropic, AWS Bedrock, Google/Vertex y cualquier API compatible con OpenAI (Ollama, groq, Mistral, together.ai y otros) mediante endpoints personalizados. Incluye agentes con herramientas y MCP, artefactos, intérprete de código, búsqueda de archivos, generación de imágenes, búsqueda en conversaciones y, en la v0.8.8, una API de gestión de agentes (beta), espacios de trabajo adjuntos (muy experimental) con controles de aprobación de código, visor de trazas y exportación por OpenTelemetry con identidad de trazas para Langfuse.",
+   "como_lo_hace": "Aplicación Node.js/React configurada con `librechat.yaml`. El Docker Compose del repositorio levanta la API con MongoDB, Meilisearch para búsqueda, PostgreSQL con pgvector y un servicio RAG API para archivos; la interfaz suele quedar en el puerto 3080 [DATO NO VERIFICADO: puerto por defecto, tomado de la documentación].",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "LiteLLM como endpoint personalizado para centralizar proveedores, claves y gasto.",
+     "orden_instalacion": "LiteLLM primero; declara su URL en `librechat.yaml`."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Ollama figura entre los proveedores locales compatibles.",
+     "orden_instalacion": "Ollama accesible desde la red de Docker (host.docker.internal o IP)."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "La v0.8.8 permite configurar identidad y metadatos de trazas para Langfuse.",
+     "orden_instalacion": "Langfuse en marcha con claves de proyecto; configúralas en LibreChat."
+    }
+   ],
+   "notas": "Alternativas (elige una): open-webui, lobehub. Meilisearch, pgvector y RAG API ya vienen en su Compose.",
+   "fuentes": [
+    "https://github.com/LibreChat-AI/LibreChat/blob/main/README.md",
+    "https://github.com/LibreChat-AI/LibreChat/blob/main/docker-compose.yml"
+   ],
+   "github": {
+    "name_with_owner": "LibreChat-AI/LibreChat",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "anything-llm": {
+   "que_es": "Aplicación de IA «todo en uno» de código abierto (MIT) de Mintplex Labs, con versión de escritorio (Mac, Windows, Linux), Docker multiusuario, instancia alojada y app Android. Madura y activa (v1.19.0).",
+   "que_hace": "Permite chatear con tus documentos, crear agentes sin código, usar MCP, programar tareas con cron, enrutar conversaciones al mejor modelo según reglas, mantener memorias y seleccionar herramientas para reducir tokens. La versión Docker añade multiusuario con permisos y un widget de chat incrustable para sitios web.",
+   "como_lo_hace": "Monorepo en Node.js: frontend Vite + React, servidor y un `collector` Express que procesa documentos. Trae un motor local de LLM opcional (CPU o GPU vía Lemonade), embebedor nativo y LanceDB como base vectorial por defecto, y admite muchos proveedores (Ollama, LM Studio, LocalAI, LiteLLM, etc.) y bases vectoriales (PGVector, Qdrant, Chroma, Weaviate, Milvus, Pinecone, entre otras).",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor documentado de chat y de embeddings.",
+     "orden_instalacion": "Ollama con un modelo de chat y uno de embeddings; desde Docker usa host.docker.internal."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Base vectorial soportada cuando LanceDB embebida se queda corta.",
+     "orden_instalacion": "Qdrant primero; elige el vectorizador antes de ingerir documentos (cambiarlo obliga a reindexar)."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Proveedor soportado para enrutar varios modelos detrás de un proxy.",
+     "orden_instalacion": "LiteLLM primero; configura su URL y clave."
+    },
+    {
+     "id": "localai",
+     "motivo": "Proveedor soportado de LLM y embeddings totalmente local.",
+     "orden_instalacion": "Alternativa a Ollama como motor: usa uno de los dos."
+    }
+   ],
+   "notas": "Alternativas (elige una): open-webui, khoj, private-gpt, onyx.",
+   "fuentes": [
+    "https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Mintplex-Labs/anything-llm",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v1.19.0 (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "private-gpt": {
+   "que_es": "Capa de API de código abierto (Apache 2.0) de Zylon que convierte modelos locales en aplicaciones de IA para producción; es la base de la plataforma on-premise Zylon. Versión 1.0.1 publicada en 2026.",
+   "que_hace": "Ofrece una API que sigue el modelo de la API de Claude: mensajes con streaming y conteo de tokens, ingesta de archivos, recuperación con citas y RAG agéntico, herramientas integradas (búsqueda web, lectura web, ejecución de código), herramientas propias y conectores MCP, acceso estructurado a bases de datos y CSV, embeddings y orquestación. Incluye una interfaz de pruebas en `/ui`; el producto es la API.",
+   "como_lo_hace": "No ejecuta modelos: se conecta a cualquier servidor compatible con OpenAI que implemente `/v1/chat/completions` y `/v1/models` mediante `OPENAI_API_BASE` (y `OPENAI_EMBEDDING_API_BASE` para embeddings). Se instala con Homebrew en macOS o con `uv tool install` (Python 3.11) en Linux y Windows, o con Docker; API en el puerto 8080.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Punto de partida recomendado como servidor de LLM y embeddings.",
+     "orden_instalacion": "Ollama primero con el modelo de chat y el de embeddings; después exporta las variables y arranca PrivateGPT."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Servidor compatible con OpenAI para producción con GPU (combinación por arquitectura).",
+     "orden_instalacion": "vLLM primero; apunta `OPENAI_API_BASE` a su /v1 y usa otro puerto distinto de 8080."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "`llama serve` cumple los endpoints requeridos (combinación por arquitectura).",
+     "orden_instalacion": "Arráncalo en un puerto distinto de 8080 para no chocar con PrivateGPT."
+    }
+   ],
+   "notas": "Alternativa (elige una): anything-llm. La combinación antigua con qdrant se retiró porque el README actual no la menciona.",
+   "fuentes": [
+    "https://github.com/zylon-ai/private-gpt/blob/main/README.md",
+    "https://docs.privategpt.dev/getting-started/quickstart"
+   ],
+   "github": {
+    "name_with_owner": "zylon-ai/private-gpt",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.0.1 (2026-06-18)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "chatbox": {
+   "que_es": "Cliente de escritorio para ChatGPT, Claude y otros LLM, en su edición comunitaria de código abierto (GPLv3) de chatboxai; el código se sincroniza con la versión Pro. Activo (v1.24.4).",
+   "que_hace": "Ofrece chat con varios proveedores (OpenAI, Azure OpenAI, Claude, Gemini, Ollama y otros), generación de imágenes con DALL-E 3, Markdown, LaTeX y resaltado de código, atajos de teclado y respuestas en streaming. Guarda los datos en el dispositivo y se instala sin despliegue.",
+   "como_lo_hace": "Aplicación Electron con interfaz React (procesos main, renderer y preload) y pruebas con Vitest. Se descarga para Windows 10+, macOS 11+ y Linux (AppImage), además de iOS y Android.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor soportado para usar modelos locales.",
+     "orden_instalacion": "Ollama en marcha; selecciónalo en la configuración de Chatbox."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Un proxy compatible con OpenAI para varios proveedores con una sola clave (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; configura su URL como API compatible con OpenAI."
+    },
+    {
+     "id": "localai",
+     "motivo": "Servidor local compatible con OpenAI como alternativa a Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Usa LocalAI u Ollama, no ambos."
+    }
+   ],
+   "notas": "Alternativa (elige una): jan.",
+   "fuentes": [
+    "https://github.com/chatboxai/chatbox/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "chatboxai/chatbox",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "GPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.24.4 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

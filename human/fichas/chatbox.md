@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Cliente de escritorio para ChatGPT, Claude y otros LLM, en su edición comunitaria de código abierto (GPLv3) de chatboxai; el código se sincroniza con la versión Pro. Activo (v1.24.4).
+
+## ¿Qué hace?
+
+Ofrece chat con varios proveedores (OpenAI, Azure OpenAI, Claude, Gemini, Ollama y otros), generación de imágenes con DALL-E 3, Markdown, LaTeX y resaltado de código, atajos de teclado y respuestas en streaming. Guarda los datos en el dispositivo y se instala sin despliegue.
+
+## ¿Cómo lo hace?
+
+Aplicación Electron con interfaz React (procesos main, renderer y preload) y pruebas con Vitest. Se descarga para Windows 10+, macOS 11+ y Linux (AppImage), además de iOS y Android.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor soportado para usar modelos locales. | Ollama en marcha; selecciónalo en la configuración de Chatbox. |
+| [litellm](litellm.md) | Un proxy compatible con OpenAI para varios proveedores con una sola clave (combinación por arquitectura). | LiteLLM primero; configura su URL como API compatible con OpenAI. |
+| [LocalAI](localai.md) | Servidor local compatible con OpenAI como alternativa a Ollama (combinación por arquitectura). | Usa LocalAI u Ollama, no ambos. |
+
+**Notas:** Alternativa (elige una): jan.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.24.4 (2026-11-12) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatboxai/chatbox/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code |
 | Coste | El coste depende del proveedor o la ruta. Community usa GPLv3; planes comerciales y proveedores tienen condiciones propias; Ollama local requiere recursos |
 | Equipo | Preparación según la ruta elegida. Instalador Community para tu sistema; proveedor o instancia Ollama |
-
-No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code
-
-## Qué puedes hacer con él
-
-Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común.
-
-## Por qué destaca
-
-Usos propuestos: Conversar con varios proveedores; Probar un modelo local desde escritorio.
-
-## Cómo funciona
 
 No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code
 

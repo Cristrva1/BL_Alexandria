@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Motor de IA de código abierto (MIT) creado por Ettore Di Giacinto y mantenido por el equipo de LocalAI, que se presenta como «tu propia IA en tu propio hardware». Muy activo; la versión estable en noviembre de 2026 es la 4.12.1 y algunas funciones nuevas solo están en compilaciones de desarrollo.
+
+## ¿Qué hace?
+
+Sirve texto, visión, voz, imágenes, video y embeddings desde una sola API en los formatos de OpenAI, Anthropic y ElevenLabs, con más de 80 backends. Incluye chats y agentes guardados que usan herramientas, servidores MCP, archivos y skills, un agente de terminal (`local-ai chat`) que pide aprobación para acciones con efectos y, en compilaciones de desarrollo, usuarios, roles, cuotas y complementos como Office, Sandbox o conectores de Telegram, Slack y Discord.
+
+## ¿Cómo lo hace?
+
+Servidor en Go que descarga cada backend como imagen separada solo cuando un modelo lo necesita y detecta la GPU (NVIDIA, AMD, Intel, Apple Silicon, Vulkan, Jetson) o funciona solo con CPU. Se instala con un script que verifica sumas de comprobación, con Docker (`localai/localai`, imágenes específicas por GPU) o con la app de escritorio para Linux y macOS. La interfaz y la API quedan en el puerto 8080; los modelos se cargan desde su galería o desde Hugging Face.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AnythingLLM](anything-llm.md) | AnythingLLM lista LocalAI como proveedor de LLM y de embeddings. | LocalAI con el modelo cargado primero; después configura su URL en AnythingLLM. |
+| [Open WebUI](open-webui.md) | Interfaz de chat sobre la API compatible con OpenAI de LocalAI (combinación por arquitectura). | Cambia el puerto de uno de los dos: ambos usan 8080 por defecto. |
+| [LibreChat](librechat.md) | LocalAI como endpoint personalizado compatible con OpenAI en LibreChat (combinación por arquitectura). | LocalAI accesible desde la red de Docker de LibreChat; declara el endpoint en `librechat.yaml`. |
+
+**Notas:** Alternativas (elige una como motor principal): ollama, llama-cpp.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.12.1 (2026-10-23) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mudler/LocalAI/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No necesitar GPU no garantiza buen rendimiento en cualquier modelo; compatibilidad de API no confirma integración completa con cada agente |
 | Coste | Sin pago a un modelo en la ruta básica. La ejecución local no necesita un proveedor de pago; modelos y hardware tienen requisitos y licencias propios |
 | Equipo | Preparación según la ruta elegida. Docker; modelo y backend apropiados al equipo |
-
-No necesitar GPU no garantiza buen rendimiento en cualquier modelo; compatibilidad de API no confirma integración completa con cada agente
-
-## Qué puedes hacer con él
-
-Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria.
-
-## Por qué destaca
-
-Usos propuestos: Ofrecer una API local a una aplicación; Probar texto o voz con distintos backends.
-
-## Cómo funciona
 
 No necesitar GPU no garantiza buen rendimiento en cualquier modelo; compatibilidad de API no confirma integración completa con cada agente
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; modelo y backend apropiados al equipo
 - **Etiquetas:** `inference` `local` `go` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [AnythingLLM](anything-llm.md) | 68.3k | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
 
 ## Alternativas (elige una)
 

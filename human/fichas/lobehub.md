@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de agentes de código abierto de LobeHub, antes conocida como Lobe Chat, que se presenta como «superagentes en tu equipo». Su README indica Apache 2.0, aunque GitHub no reconoce la licencia como estándar [DATO NO VERIFICADO: condiciones adicionales en LICENSE]; avisa que está en desarrollo activo (v2.3.3).
+
+## ¿Qué hace?
+
+Añade agentes a los chats que el equipo ya usa; estos asumen trabajo por su cuenta y mejoran con el tiempo. Ofrece un marketplace de agentes, servidores MCP y skills que puedes añadir o publicar, guías para más de 40 proveedores de modelos y modelos locales, y autenticación con Better Auth y SSO.
+
+## ¿Cómo lo hace?
+
+Aplicación full-stack en TypeScript (Next.js con SPA de Vite, Bun en desarrollo). El Docker Compose recomendado levanta LobeHub con PostgreSQL, Redis, almacenamiento RustFS, búsqueda SearXNG y el gateway de agentes, accesible en el puerto 3210; funciona en Linux, macOS o Windows con WSL 2. También se despliega en Vercel con una base PostgreSQL, almacenamiento compatible con S3 y secretos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Ollama está entre los proveedores locales documentados. | Ollama accesible desde el contenedor (no uses localhost dentro de Docker); configura su URL en las variables de entorno. |
+| [litellm](litellm.md) | Centralizar claves y gasto de varios proveedores en un proxy compatible con OpenAI (combinación por arquitectura). | LiteLLM primero; apunta el proveedor OpenAI de LobeHub a su URL. |
+| [Playwright MCP](playwright-mcp.md) | Servidor MCP de navegador para los agentes (combinación por arquitectura). | Añádelo desde la configuración de MCP y restringe permisos. |
+
+**Notas:** Alternativas (elige una): open-webui, librechat, cherry-studio. SearXNG ya viene en su Compose; no instales otro aparte.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.3.3 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lobehub/lobehub/blob/canary/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las skills portables y conectar un agente externo son funciones distintas; la página de integración consultada aún está en migración documental |
 | Coste | El coste depende del proveedor o la ruta. El workspace, servicios alojados y modelos tienen condiciones separadas; admite proveedores locales |
 | Equipo | Preparación según la ruta elegida. Docker y Compose; modelo; servicios de la ruta elegida |
-
-Las skills portables y conectar un agente externo son funciones distintas; la página de integración consultada aún está en migración documental
-
-## Qué puedes hacer con él
-
-Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible.
-
-## Por qué destaca
-
-Usos propuestos: Organizar agentes para tareas de equipo; Conectar un agente de código a un espacio de trabajo.
-
-## Cómo funciona
 
 Las skills portables y conectar un agente externo son funciones distintas; la página de integración consultada aún está en migración documental
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker y Compose; modelo; servicios de la ruta elegida
 - **Etiquetas:** `chatbot` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 
