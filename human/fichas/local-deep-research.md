@@ -88,12 +88,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `research` `academia` `anthropic` `arxiv` `brave` `deep-research` `encryption` `home-automation`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [open_deep_research](open-deep-research.md) | 12.7k | Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP. |
-
 ## Enlaces
 
 - 🐙 GitHub: [LearningCircuit/local-deep-research](https://github.com/LearningCircuit/local-deep-research)

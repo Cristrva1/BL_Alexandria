@@ -4,7 +4,7 @@
 
 Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta.
 
-29 repos · 5 secciones
+26 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 5 repos
-- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 15 repos
+- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 12 repos
 - [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 3 repos
 - [Música y audio generativo](#música-y-audio-generativo) — 3 repos
 - [Procesamiento y limpieza de audio](#procesamiento-y-limpieza-de-audio) — 3 repos
@@ -43,14 +43,11 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [VoiceStudio](../fichas/omnivoice-studio.md) | App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio | Sin clave propia de API de IA en la ruta básica |
 | [GPT-SoVITS](../fichas/gpt-sovits.md) | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. | Tu objetivo encaja con estos ejemplos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos | Sin clave propia de API de IA en la ruta básica |
 | [VibeVoice](../fichas/vibevoice.md) | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. | Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz | Sin clave propia de API de IA en la ruta básica |
-| [TTS](../fichas/tts.md) | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | Tu objetivo encaja con estos ejemplos: Estudiar síntesis de voz local; Comparar modelos multilingües | Sin clave propia de API de IA en la ruta básica |
 | [VoxCPM](../fichas/voxcpm.md) | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. | Tu objetivo encaja con estos ejemplos: Preparar narración local; Explorar diseño de voz consentido | Sin clave propia de API de IA en la ruta básica |
 | [RVC WebUI](../fichas/rvc.md) | Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. | Tu objetivo encaja con estos ejemplos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS | Sin clave propia de API de IA en la ruta básica |
 | [Fish Speech](../fichas/fish-speech.md) | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. | Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe | Sin clave propia de API de IA en la ruta básica |
-| [Chatterbox](../fichas/chatterbox.md) | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. | Tu objetivo encaja con estos ejemplos: Estudiar un modelo TTS histórico; Comparar generación expresiva en investigación | Sin clave propia de API de IA en la ruta básica |
 | [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz | Sin clave propia de API de IA en la ruta básica |
 | [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz | Sin clave propia de API de IA en la ruta básica |
-| [supertonic](../fichas/supertonic.md) | Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos. | Tu objetivo encaja con estos ejemplos: Reproducir una narración local; Estudiar TTS ONNX en dispositivo | Sin clave propia de API de IA en la ruta básica |
 | [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles | Sin clave propia de API de IA en la ruta básica |
 | [MeloTTS](../fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Comparar idiomas de una demo | Sin clave propia de API de IA en la ruta básica |
 | [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida | Sin clave propia de API de IA en la ruta básica |

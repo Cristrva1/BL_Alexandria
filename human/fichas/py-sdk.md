@@ -93,12 +93,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `bots` `library` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [py-clob-client](py-clob-client.md) | 1.2k | Cliente Python antiguo para la API de órdenes de Polymarket; está archivado y conviene revisar su sucesor. |
-
 ## Enlaces
 
 - 🐙 GitHub: [Polymarket/py-sdk](https://github.com/Polymarket/py-sdk)

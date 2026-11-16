@@ -1029,7 +1029,7 @@ Antes de producir video con un agente, decide si basta con animación hecha en c
 
 1. Enumera qué lleva la pieza: textos animados, pixel art, escenas 3D, personajes o tomas realistas.
 2. Si todo es gráfico o tipográfico, describe el video como una página web y renderízalo con HyperFrames o Remotion.
-3. Reserva una GPU propia o alquilada para Blender, físicas o modelos abiertos como Wan 2.2 y LTX Video.
+3. Reserva una GPU propia o alquilada para Blender, físicas o modelos abiertos como Wan 2.2 y LTX-2.
 4. Guarda los datos de marca (logos, textos aprobados) aparte del código y revísalos antes de cada render.
 
 **Por qué ayuda:** Evita comprar o alquilar hardware que el proyecto no necesita y hace que los renders sean repetibles.
@@ -1596,7 +1596,7 @@ Fuentes: [Carrusel con siete fórmulas financieras](https://www.instagram.com/p/
 
 Como ejercicio de investigación, prueba una idea con backtesting y con pruebas contra ruido o periodos posteriores, para descartar resultados que solo son azar.
 
-1. Programa la regla en un framework de backtesting como Backtrader, VectorBT o Lumibot.
+1. Programa la regla en un framework de backtesting como NautilusTrader, VectorBT o Lumibot.
 2. Calcula con velas ya cerradas y deja los números a un motor determinista, no al modelo de lenguaje.
 3. Repite la optimización sobre datos barajados (prueba de permutación) y valida en periodos posteriores (walk-forward).
 4. Si la estrategia rinde igual sobre ruido, descártala; mientras aprendes, opera solo en cuenta de papel.
@@ -1605,7 +1605,7 @@ Como ejercicio de investigación, prueba una idea con backtesting y con pruebas 
 
 **Antes de usarla:** No es asesoría financiera: los rendimientos citados en las fuentes no están verificados y un buen backtest no garantiza resultados futuros.
 
-Fuentes: [Repositorio de Backtrader](https://github.com/mementum/backtrader) · [Repositorio de VectorBT](https://github.com/polakowo/vectorbt) · [Publicación sobre validación de estrategias](https://x.com/RohOnChain/status/2121262884105974022)
+Fuentes: [Repositorio de NautilusTrader](https://github.com/nautechsystems/nautilus_trader) · [Repositorio de VectorBT](https://github.com/polakowo/vectorbt) · [Publicación sobre validación de estrategias](https://x.com/RohOnChain/status/2121262884105974022)
 
 ### Investigar con agentes de trading en papel y límites que no pueden editar
 

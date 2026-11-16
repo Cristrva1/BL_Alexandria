@@ -4,7 +4,7 @@
 
 Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado.
 
-18 repos · 2 secciones
+17 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Asistentes autónomos y equipos de agentes](#asistentes-autónomos-y-equipos-de-agentes) — 12 repos
-- [Agentes de research autónomo](#agentes-de-research-autónomo) — 6 repos
+- [Agentes de research autónomo](#agentes-de-research-autónomo) — 5 repos
 
 ## Asistentes autónomos y equipos de agentes
 
@@ -45,7 +45,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [deer-flow](../fichas/deer-flow.md) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | Tu objetivo encaja con estos ejemplos: Investigar un tema con fuentes; Coordinar una generación de informe | Depende de la ruta elegida |
 | [STORM](../fichas/storm.md) | Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. | Tu objetivo encaja con estos ejemplos: Preparar una revisión de un tema; Comparar perspectivas antes de escribir | API de IA necesaria |
 | [gpt-researcher](../fichas/gpt-researcher.md) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica | API de IA opcional |
-| [open_deep_research](../fichas/open-deep-research.md) | Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP. | Tu objetivo encaja con estos ejemplos: Estudiar investigación con LangGraph; Comparar configuraciones de búsqueda | API de IA opcional |
 | [local-deep-research](../fichas/local-deep-research.md) | Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. | Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica | API de IA opcional |
 
 ## Recetas relacionadas

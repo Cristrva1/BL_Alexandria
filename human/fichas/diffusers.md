@@ -98,7 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ControlNet](controlnet.md) | 34.2k | Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación. |
 | [cosmos](cosmos.md) | 12.4k | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
 
 ## Enlaces

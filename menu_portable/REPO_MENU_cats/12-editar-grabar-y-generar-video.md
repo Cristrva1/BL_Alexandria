@@ -156,7 +156,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El clip y sus recursos se pueden comparar con la configuración elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `diffusers`, `real-esrgan`
-**Alternativas (elige una):** `wan2-2`, `ltx-video`
+**Alternativas (elige una):** `wan2-2`
 
 ## `lossless-cut`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,typescript
@@ -187,43 +187,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Compruebas duración, comienzo, final y pistas del clip
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `yt-dlp`, `whisperx`, `moviepy`
-
-## `ltx-video`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
-
-**Qué es:** Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado.
-**Stack:** Python; GPU y pesos de la versión elegida; configuración de inferencia
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API en la ruta local; código y pesos pueden tener licencias distintas según versión
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Es la línea histórica LTX-Video; el autor recomienda LTX-2.5 para proyectos nuevos, que no es el mismo checkout ni el mismo conjunto de pesos
-- Coste: El coste depende del proveedor o la ruta. No requiere API en la ruta local; código y pesos pueden tener licencias distintas según versión
-- Equipo: Preparación según la ruta elegida. Python; GPU y pesos de la versión elegida; configuración de inferencia
-**Repo:** https://github.com/Lightricks/LTX-Video
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/Lightricks/LTX-Video.git
-cd LTX-Video
-
-# create env
-python -m venv env
-source env/bin/activate
-python -m pip install -e .\[inference\]
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Mantener un flujo LTX-Video existente; Comparar generación desde texto e imagen propios
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Ejecuta un ejemplo de una versión 0.9.x y conserva su configuración al comparar resultados
-**Qué comprobar:** Puedes identificar qué checkpoint y pipeline produjeron el clip
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`, `real-esrgan`
-**Alternativas (elige una):** `wan2-2`, `hunyuanvideo`
 
 ## `moneyprinterturbo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
@@ -286,7 +249,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El archivo tiene imagen, audio y niveles aceptables
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `lossless-cut`, `opencut`, `faster-whisper`
-**Alternativas (elige una):** `openscreen`
 
 ## `opencut`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=video,ui,typescript,rust
@@ -346,37 +308,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre dos versiones de una toma y compara fotogramas en el mismo punto
 **Qué comprobar:** Puedes observar diferencias de imagen sin desalinear el tiempo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-
-## `openscreen`
-role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,ui,typescript
-
-**Qué es:** App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio.
-**Stack:** Windows compatible para este comando; permisos de captura; clip de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La herramienta original no cobra modelos; subtítulos documentados se generan en el equipo; recursos y licencias de medios siguen aparte
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El repositorio original está archivado y enlaza una continuación independiente; no se presenta esa continuación como la misma versión verificada
-- Coste: Sin pago a un modelo en la ruta básica. La herramienta original no cobra modelos; subtítulos documentados se generan en el equipo; recursos y licencias de medios siguen aparte
-- Equipo: Preparación según la ruta elegida. Windows compatible para este comando; permisos de captura; clip de prueba
-**Repo:** https://github.com/siddharthvaddem/openscreen
-
-**Instalación** [+]:
-
-```
-winget install SiddharthVaddem.OpenScreen
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una demostración de producto; Grabar un tutorial con cámara y pantalla
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Graba una demo breve y revisa un zoom y los subtítulos en el resultado
-**Qué comprobar:** Puedes reproducir la exportación y corregir texto y encuadre
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `lossless-cut`, `opencut`
-**Alternativas (elige una):** `obs-studio`
 
 ## `palmier-pro`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,ai-video,claude,macos,mcp,seedance2,swift,video-editor
@@ -502,7 +433,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar pesos, tamaño, duración y recursos de la ejecución
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `diffusers`, `real-esrgan`, `cosyvoice`
-**Alternativas (elige una):** `hunyuanvideo`, `ltx-video`
+**Alternativas (elige una):** `hunyuanvideo`
 
 ## `wan2gp`
 role=app · exec=local · setup=heavy · mcp=True · prov=local,mcp · tags=video,image,tts,local,python

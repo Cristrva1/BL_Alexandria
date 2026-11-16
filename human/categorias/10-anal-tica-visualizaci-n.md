@@ -4,7 +4,7 @@
 
 Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.
 
-23 repos · 6 secciones
+22 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -22,7 +22,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Analítica web y de producto](#analítica-web-y-de-producto) — 4 repos
 - [BI, dashboards y chat con datos](#bi-dashboards-y-chat-con-datos) — 6 repos
 - [Librerías de gráficos](#librerías-de-gráficos) — 5 repos
-- [Recursos y casos de uso](#recursos-y-casos-de-uso) — 3 repos
+- [Recursos y casos de uso](#recursos-y-casos-de-uso) — 2 repos
 - [Inteligencia de fuentes abiertas y mapas](#inteligencia-de-fuentes-abiertas-y-mapas) — 3 repos
 - [Fotogrametría y mapas desde imágenes](#fotogrametría-y-mapas-desde-imágenes) — 2 repos
 
@@ -62,7 +62,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [awesome-dataviz](../fichas/awesome-dataviz.md) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | Tu objetivo encaja con estos ejemplos: Encontrar una biblioteca de mapas; Comparar gráficos para React y JavaScript | Sin clave propia de API de IA en la ruta básica |
 | [data-analyst-roadmap](../fichas/data-analyst-roadmap.md) | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. | Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto | Sin clave propia de API de IA en la ruta básica |
-| [DataAnalystPortfolioProjects](../fichas/dataanalystportfolioprojects.md) | Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive. | Tu objetivo encaja con estos ejemplos: Estudiar un portafolio de análisis; Diseñar un primer proyecto con datos públicos | Sin clave propia de API de IA en la ruta básica |
 
 ## Inteligencia de fuentes abiertas y mapas
 

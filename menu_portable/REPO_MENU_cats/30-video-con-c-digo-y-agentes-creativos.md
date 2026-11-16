@@ -668,5 +668,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un borrador desde un artículo de prueba y revisa guion, voz y fuentes antes de exportar
 **Qué comprobar:** Puedes identificar qué contenido se usó y verificar el video
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisper`, `supertonic`
+**Combina con:** `whisper`
 **Alternativas (elige una):** `moneyprinterturbo`

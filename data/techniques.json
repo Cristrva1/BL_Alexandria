@@ -1893,7 +1893,7 @@
       "steps": [
         "Enumera qué lleva la pieza: textos animados, pixel art, escenas 3D, personajes o tomas realistas.",
         "Si todo es gráfico o tipográfico, describe el video como una página web y renderízalo con HyperFrames o Remotion.",
-        "Reserva una GPU propia o alquilada para Blender, físicas o modelos abiertos como Wan 2.2 y LTX Video.",
+        "Reserva una GPU propia o alquilada para Blender, físicas o modelos abiertos como Wan 2.2 y LTX-2.",
         "Guarda los datos de marca (logos, textos aprobados) aparte del código y revísalos antes de cada render."
       ],
       "why": "Evita comprar o alquilar hardware que el proyecto no necesita y hace que los renders sean repetibles.",
@@ -1903,7 +1903,7 @@
         "Remotion",
         "Blender MCP",
         "Wan 2.2",
-        "LTX Video",
+        "LTX-2",
         "OpenFilm",
         "Claude Code"
       ],
@@ -1913,7 +1913,7 @@
         "remotion-dev/skills",
         "ahujasid/mcp-for-blender",
         "Wan-Video/Wan2.2",
-        "Lightricks/LTX-Video",
+        "Lightricks/LTX-2",
         "openfilm/openfilm"
       ],
       "sources": [
@@ -2939,7 +2939,7 @@
       "level": "avanzado",
       "summary": "Como ejercicio de investigación, prueba una idea con backtesting y con pruebas contra ruido o periodos posteriores, para descartar resultados que solo son azar.",
       "steps": [
-        "Programa la regla en un framework de backtesting como Backtrader, VectorBT o Lumibot.",
+        "Programa la regla en un framework de backtesting como NautilusTrader, VectorBT o Lumibot.",
         "Calcula con velas ya cerradas y deja los números a un motor determinista, no al modelo de lenguaje.",
         "Repite la optimización sobre datos barajados (prueba de permutación) y valida en periodos posteriores (walk-forward).",
         "Si la estrategia rinde igual sobre ruido, descártala; mientras aprendes, opera solo en cuenta de papel."
@@ -2947,20 +2947,20 @@
       "why": "Separa ideas con alguna base de las que solo encajan con el pasado por casualidad.",
       "caution": "No es asesoría financiera: los rendimientos citados en las fuentes no están verificados y un buen backtest no garantiza resultados futuros.",
       "tools": [
-        "Backtrader",
+        "NautilusTrader",
         "VectorBT",
         "Lumibot",
         "TradingView"
       ],
       "github": [
-        "mementum/backtrader",
+        "nautechsystems/nautilus_trader",
         "polakowo/vectorbt",
         "Lumiwealth/lumibot"
       ],
       "sources": [
         {
-          "title": "Repositorio de Backtrader",
-          "url": "https://github.com/mementum/backtrader"
+          "title": "Repositorio de NautilusTrader",
+          "url": "https://github.com/nautechsystems/nautilus_trader"
         },
         {
           "title": "Repositorio de VectorBT",

@@ -96,12 +96,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [TTS](tts.md) | 46.2k | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. |
-
 ## Enlaces
 
 - 🐙 GitHub: [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)

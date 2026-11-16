@@ -104,12 +104,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Label Studio](label-studio.md) | 28.7k | Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. |
 | [supervision](supervision.md) | 51.6k | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. |
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Segment Anything (SAM)](segment-anything.md) | 55.1k | Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja. |
-
 ## Enlaces
 
 - 🐙 GitHub: [facebookresearch/sam2](https://github.com/facebookresearch/sam2)

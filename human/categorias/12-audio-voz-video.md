@@ -4,7 +4,7 @@
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
 
-17 repos · 2 secciones
+15 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,8 +18,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 10 repos
-- [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 7 repos
+- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 9 repos
+- [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 6 repos
 
 ## Edición, grabación y subtítulos
 
@@ -29,7 +29,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [OpenCut](../fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Tu objetivo encaja con estos ejemplos: Evaluar una alternativa de edición abierta; Estudiar la arquitectura de un editor con plugins | Sin clave propia de API de IA en la ruta básica |
 | [OBS Studio](../fichas/obs-studio.md) | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | Tu objetivo encaja con estos ejemplos: Grabar una explicación de pantalla; Preparar escenas para una transmisión | Sin clave propia de API de IA en la ruta básica |
 | [LosslessCut](../fichas/lossless-cut.md) | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | Tu objetivo encaja con estos ejemplos: Quitar una parte de una grabación; Separar o unir medios compatibles | Sin clave propia de API de IA en la ruta básica |
-| [OpenScreen](../fichas/openscreen.md) | App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio. | Tu objetivo encaja con estos ejemplos: Crear una demostración de producto; Grabar un tutorial con cámara y pantalla | Sin clave propia de API de IA en la ruta básica |
 | [VideoLingo](../fichas/videolingo.md) | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa. | Tu objetivo encaja con estos ejemplos: Subtitular un tutorial propio; Preparar una traducción de una demostración | Depende de la ruta elegida |
 | [Concat](../fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Tu objetivo encaja con estos ejemplos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP | Sin clave propia de API de IA en la ruta básica |
 | [palmier-pro](../fichas/palmier-pro.md) | Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. | Tu objetivo encaja con estos ejemplos: Preparar cortes con un agente; Revisar una secuencia desde herramientas externas | API de IA opcional |
@@ -44,7 +43,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Wan2.2](../fichas/wan2-2.md) | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | Tu objetivo encaja con estos ejemplos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local | API de IA opcional |
 | [HunyuanVideo](../fichas/hunyuanvideo.md) | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos | Sin clave propia de API de IA en la ruta básica |
 | [WanGP](../fichas/wan2gp.md) | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada | API de IA opcional |
-| [LTX-Video](../fichas/ltx-video.md) | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. | Tu objetivo encaja con estos ejemplos: Mantener un flujo LTX-Video existente; Comparar generación desde texto e imagen propios | Sin clave propia de API de IA en la ruta básica |
 | [short-video-factory](../fichas/short-video-factory.md) | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | Tu objetivo encaja con estos ejemplos: Crear un borrador de producto; Preparar variantes de un anuncio propio | Depende de la ruta elegida |
 | [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | Tu objetivo encaja con estos ejemplos: Obtener clips de un tutorial propio; Comparar criterios de selección de momentos | API de IA necesaria |
 

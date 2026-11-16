@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-72 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+68 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-[Explorar 22 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-codigo)
+[Explorar 19 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-codigo)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -26,7 +26,6 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 | [Claude Code](../fichas/claude-code.md) | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | API de IA opcional |
 | [Cline](../fichas/cline.md) | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. | API de IA opcional |
 | [Codex CLI](../fichas/codex.md) | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. | API de IA opcional |
-| [Continue](../fichas/continue.md) | Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo. | API de IA opcional |
 | [dsh-android](../fichas/dsh-android.md) | Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente. | Sin clave propia de API de IA en la ruta básica |
 | [dsh-game-studio](../fichas/dsh-game-studio.md) | Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente. | API de IA opcional |
 | [dsh-ios](../fichas/dsh-ios.md) | Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles. | Sin clave propia de API de IA en la ruta básica |
@@ -37,12 +36,10 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 | [Open SWE](../fichas/open-swe.md) | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. | API de IA necesaria |
 | [openclaude](../fichas/openclaude.md) | Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. | API de IA opcional |
 | [OpenCode](../fichas/opencode.md) | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. | API de IA opcional |
-| [opencode](../fichas/opencode-legacy.md) | Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush. | Depende de la ruta elegida |
 | [opencode-manager](../fichas/opencode-manager.md) | Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. | Depende de la ruta elegida |
 | [OpenCursor](../fichas/opencursor.md) | Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. | API de IA opcional |
 | [OpenHands](../fichas/openhands.md) | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. | API de IA opcional |
 | [openidea](../fichas/openidea.md) | Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes. | Sin clave propia de API de IA en la ruta básica |
-| [SWE-agent](../fichas/swe-agent.md) | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. | Depende de la ruta elegida |
 | [T3 Code](../fichas/t3code.md) | Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. | API de IA opcional |
 
 ### Comprender y revisar código
@@ -71,7 +68,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Infraestructura, servicios y herramientas de operación.
 
-[Explorar 18 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-infra)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-infra)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -87,7 +84,6 @@ Infraestructura, servicios y herramientas de operación.
 | [FreeDomain](../fichas/freedomain.md) | Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. | Sin clave propia de API de IA en la ruta básica |
 | [Gemini Computer Use (preview)](../fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | API de IA necesaria |
 | [MasterDnsVPN](../fichas/masterdnsvpn.md) | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. | Sin clave propia de API de IA en la ruta básica |
-| [NeMo-Agent-Toolkit](../fichas/nemo-agent-toolkit.md) | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). | Depende de la ruta elegida |
 | [NemoClaw](../fichas/nemoclaw.md) | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. | Depende de la ruta elegida |
 | [nodeterm](../fichas/nodeterm.md) | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. | API de IA opcional |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Sin clave propia de API de IA en la ruta básica |

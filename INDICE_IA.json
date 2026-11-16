@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 679 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 644 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -351,7 +351,7 @@
    "title": "Construir agentes y coordinar equipos de IA",
    "desc": "Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.",
    "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
-   "count": 34,
+   "count": 30,
    "subs": [
     {
      "key": "py",
@@ -378,7 +378,7 @@
    "title": "Buscar, extraer y monitorear información web",
    "desc": "Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web.",
    "file": "human/categorias/04-scraping-b-squeda-research-web.md",
-   "count": 23,
+   "count": 21,
    "subs": [
     {
      "key": "crawlers",
@@ -405,7 +405,7 @@
    "title": "Conectar herramientas con MCP",
    "desc": "SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.",
    "file": "human/categorias/05-mcp-conectividad.md",
-   "count": 24,
+   "count": 23,
    "subs": [
     {
      "key": "sdk",
@@ -528,7 +528,7 @@
    "title": "Dashboards, analítica y mapas",
    "desc": "Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.",
    "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-   "count": 23,
+   "count": 22,
    "subs": [
     {
      "key": "producto",
@@ -563,7 +563,7 @@
    "title": "Generar y editar imágenes con IA",
    "desc": "Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-   "count": 16,
+   "count": 12,
    "subs": [
     {
      "key": "interfaces",
@@ -590,7 +590,7 @@
    "title": "Editar, grabar y generar video",
    "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 17,
+   "count": 15,
    "subs": [
     {
      "key": "edicion",
@@ -609,7 +609,7 @@
    "title": "PDF, OCR y procesamiento de documentos",
    "desc": "Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.",
    "file": "human/categorias/13-documentos-presentaciones.md",
-   "count": 20,
+   "count": 19,
    "subs": [
     {
      "key": "conversion",
@@ -654,7 +654,7 @@
      "title": "Ejemplos y aprendizaje"
     }
    ],
-   "count": 28,
+   "count": 22,
    "question": "¿Quieres investigar mercados, probar una estrategia o conectar un exchange?"
   },
   {
@@ -802,7 +802,7 @@
      "title": "Aprender LLMs desde cero"
     }
    ],
-   "count": 32
+   "count": 30
   },
   {
    "num": 20,
@@ -833,7 +833,7 @@
      "title": "Desarrollo móvil y de juegos"
     }
    ],
-   "count": 22
+   "count": 19
   },
   {
    "num": 21,
@@ -852,7 +852,7 @@
      "title": "Agentes de research autónomo"
     }
    ],
-   "count": 18
+   "count": 17
   },
   {
    "num": 22,
@@ -879,7 +879,7 @@
      "title": "Alojamiento y backend"
     }
    ],
-   "count": 18
+   "count": 17
   },
   {
    "num": 23,
@@ -940,7 +940,7 @@
      "title": "Apps de datos en Python"
     }
    ],
-   "count": 11
+   "count": 9
   },
   {
    "num": 26,
@@ -1009,7 +1009,7 @@
      "title": "Sensores y percepción espacial"
     }
    ],
-   "count": 21
+   "count": 19
   },
   {
    "num": 29,
@@ -1040,7 +1040,7 @@
      "title": "Procesamiento y limpieza de audio"
     }
    ],
-   "count": 29
+   "count": 26
   },
   {
    "num": 30,
@@ -5262,8 +5262,7 @@
    "pick": false,
    "one": "Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.",
    "alt": [
-    "open-swe",
-    "swe-agent"
+    "open-swe"
    ],
    "doc": "human/fichas/openhands.md",
    "github_id": 771302083,
@@ -5307,7 +5306,6 @@
    "pick": false,
    "one": "Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.",
    "alt": [
-    "continue",
     "aider"
    ],
    "doc": "human/fichas/cline.md",
@@ -5474,8 +5472,7 @@
    "one": "Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos.",
    "alt": [
     "opencode",
-    "cline",
-    "continue"
+    "cline"
    ],
    "doc": "human/fichas/aider.md",
    "github_id": 638629097,
@@ -5486,86 +5483,6 @@
    "routes": [
     "no_api",
     "local_model",
-    "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "continue",
-   "name": "Continue",
-   "emoji": "👨‍💻",
-   "cat": 20,
-   "sub": "editor",
-   "role": "runtime",
-   "exec": "hybrid",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [
-    "openai",
-    "anthropic",
-    "local"
-   ],
-   "tags": [
-    "coding-agent",
-    "typescript"
-   ],
-   "stars": 36481,
-   "gh": "continuedev/continue",
-   "lib": false,
-   "pick": false,
-   "one": "Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo.",
-   "alt": [
-    "cline",
-    "aider"
-   ],
-   "doc": "human/fichas/continue.md",
-   "github_id": 644686905,
-   "added_at": "2026-11-10",
-   "goals": [
-    "programar"
-   ],
-   "routes": [
-    "no_api",
-    "local_model",
-    "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "swe-agent",
-   "name": "SWE-agent",
-   "emoji": "👨‍💻",
-   "cat": 20,
-   "sub": "ingenieria",
-   "role": "runtime",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [
-    "openai",
-    "anthropic"
-   ],
-   "tags": [
-    "coding-agent",
-    "evaluation",
-    "python"
-   ],
-   "stars": 20806,
-   "gh": "SWE-agent/SWE-agent",
-   "lib": false,
-   "pick": false,
-   "one": "Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo.",
-   "alt": [
-    "openhands",
-    "open-swe"
-   ],
-   "doc": "human/fichas/swe-agent.md",
-   "github_id": 780737106,
-   "added_at": "2026-11-10",
-   "goals": [
-    "programar"
-   ],
-   "routes": [
     "api"
    ],
    "source_archived": false
@@ -5595,8 +5512,7 @@
    "pick": false,
    "one": "Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.",
    "alt": [
-    "openhands",
-    "swe-agent"
+    "openhands"
    ],
    "doc": "human/fichas/open-swe.md",
    "github_id": 987975584,
@@ -5639,7 +5555,6 @@
     "crewai",
     "openai-agents-python",
     "pydantic-ai",
-    "langgraph-supervisor-py",
     "adk-python"
    ],
    "doc": "human/fichas/langgraph.md",
@@ -5677,53 +5592,12 @@
    "one": "Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas).",
    "alt": [
     "llama-index",
-    "haystack",
-    "semantic-kernel"
+    "haystack"
    ],
    "doc": "human/fichas/langchain.md",
    "github_id": 552661142,
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
-   "goals": [],
-   "routes": [
-    "local_model",
-    "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "autogen",
-   "name": "AutoGen",
-   "emoji": "🐍",
-   "cat": 3,
-   "sub": "py",
-   "role": "runtime",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [
-    "openai",
-    "anthropic",
-    "local"
-   ],
-   "tags": [
-    "agents",
-    "python"
-   ],
-   "stars": 61825,
-   "gh": "microsoft/autogen",
-   "lib": false,
-   "pick": false,
-   "one": "Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento.",
-   "alt": [
-    "agent-framework",
-    "ag2",
-    "crewai"
-   ],
-   "doc": "human/fichas/autogen.md",
-   "github_id": 680120071,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-24",
    "goals": [],
    "routes": [
     "local_model",
@@ -5753,7 +5627,6 @@
    "pick": false,
    "one": "Framework para orquestar \"crews\" de agentes con roles y tareas.",
    "alt": [
-    "autogen",
     "langgraph",
     "agno",
     "metagpt"
@@ -6144,9 +6017,7 @@
    "lib": false,
    "pick": false,
    "one": "Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen.",
-   "alt": [
-    "autogen"
-   ],
+   "alt": [],
    "doc": "human/fichas/ag2.md",
    "github_id": 886912514,
    "added_at": "2026-06-23",
@@ -6194,40 +6065,6 @@
    "source_archived": false
   },
   {
-   "id": "langgraph-supervisor-py",
-   "name": "LangGraph Supervisor",
-   "emoji": "🐍",
-   "cat": 3,
-   "sub": "py",
-   "role": "library",
-   "exec": "hybrid",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "agents",
-    "python"
-   ],
-   "stars": 1653,
-   "gh": "langchain-ai/langgraph-supervisor-py",
-   "lib": false,
-   "pick": false,
-   "status": "archived",
-   "one": "Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph.",
-   "alt": [
-    "langgraph"
-   ],
-   "doc": "human/fichas/langgraph-supervisor-py.md",
-   "github_id": 927970248,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-08-23",
-   "goals": [],
-   "routes": [
-    "api"
-   ],
-   "source_archived": true
-  },
-  {
    "id": "mastra",
    "name": "Mastra",
    "emoji": "🟦",
@@ -6264,42 +6101,6 @@
     "mcp"
    ],
    "routes": [
-    "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "semantic-kernel",
-   "name": "Semantic Kernel",
-   "emoji": "🟦",
-   "cat": 3,
-   "sub": "ts",
-   "role": "library",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [
-    "openai"
-   ],
-   "tags": [
-    "agents",
-    "python"
-   ],
-   "stars": 28769,
-   "gh": "microsoft/semantic-kernel",
-   "lib": false,
-   "pick": false,
-   "one": "SDK de Microsoft para integrar LLM en apps de C#, Python y Java con plugins y planificación.",
-   "alt": [
-    "agent-framework",
-    "langchain"
-   ],
-   "doc": "human/fichas/semantic-kernel.md",
-   "github_id": 607289185,
-   "added_at": "2026-11-10",
-   "goals": [],
-   "routes": [
-    "local_model",
     "api"
    ],
    "source_archived": false
@@ -6368,10 +6169,7 @@
    "lib": false,
    "pick": false,
    "one": "Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel.",
-   "alt": [
-    "autogen",
-    "semantic-kernel"
-   ],
+   "alt": [],
    "doc": "human/fichas/agent-framework.md",
    "github_id": 974445592,
    "added_at": "2026-11-10",
@@ -6447,7 +6245,6 @@
    "pick": true,
    "one": "Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual.",
    "alt": [
-    "flowise",
     "langflow",
     "dify",
     "autogpt"
@@ -6491,8 +6288,7 @@
    "one": "Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques.",
    "alt": [
     "sim",
-    "langflow",
-    "flowise"
+    "langflow"
    ],
    "doc": "human/fichas/autogpt.md",
    "github_id": 614765452,
@@ -6583,44 +6379,6 @@
     "api"
    ],
    "source_archived": false
-  },
-  {
-   "id": "flowise",
-   "name": "Flowise",
-   "emoji": "🌊",
-   "cat": 3,
-   "sub": "visual",
-   "role": "app",
-   "exec": "hybrid",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "automation",
-    "agents",
-    "typescript",
-    "docker"
-   ],
-   "stars": 55570,
-   "gh": "FlowiseAI/Flowise",
-   "lib": false,
-   "pick": false,
-   "status": "archived",
-   "one": "Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos.",
-   "alt": [
-    "sim",
-    "autogpt"
-   ],
-   "doc": "human/fichas/flowise.md",
-   "github_id": 621803253,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [],
-   "routes": [
-    "local_model",
-    "api"
-   ],
-   "source_archived": true
   },
   {
    "id": "openclaw",
@@ -6989,8 +6747,7 @@
    "one": "Agente autónomo que investiga en línea y consolida reportes citados y estructurados.",
    "alt": [
     "storm",
-    "vane",
-    "open-deep-research"
+    "vane"
    ],
    "doc": "human/fichas/gpt-researcher.md",
    "github_id": 639835356,
@@ -7189,41 +6946,6 @@
    "added_at": "2026-08-23",
    "goals": [],
    "routes": [
-    "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "nemo-agent-toolkit",
-   "name": "NeMo-Agent-Toolkit",
-   "emoji": "🟩",
-   "cat": 22,
-   "sub": "infra",
-   "role": "library",
-   "exec": "hybrid",
-   "setup": "heavy",
-   "mcp": true,
-   "prov": [],
-   "tags": [
-    "automation",
-    "agents",
-    "python"
-   ],
-   "stars": 2706,
-   "gh": "NVIDIA/NeMo-Agent-Toolkit",
-   "lib": false,
-   "pick": false,
-   "one": "Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo).",
-   "alt": [],
-   "doc": "human/fichas/nemo-agent-toolkit.md",
-   "github_id": 944039567,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [],
-   "routes": [
-    "claude",
-    "codex",
-    "antigravity",
     "api"
    ],
    "source_archived": false
@@ -7608,38 +7330,6 @@
    "routes": [
     "no_api",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "scrapely",
-   "name": "scrapely",
-   "emoji": "📐",
-   "cat": 4,
-   "sub": "crawlers",
-   "role": "library",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "scraping"
-   ],
-   "stars": 1881,
-   "gh": "scrapy/scrapely",
-   "lib": false,
-   "pick": false,
-   "one": "Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales.",
-   "alt": [],
-   "doc": "human/fichas/scrapely.md",
-   "github_id": 1632998,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "investigar"
-   ],
-   "routes": [
-    "no_api"
    ],
    "source_archived": false
   },
@@ -8155,9 +7845,7 @@
    "lib": false,
    "pick": false,
    "one": "CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs.",
-   "alt": [
-    "snscrape"
-   ],
+   "alt": [],
    "doc": "human/fichas/agent-reach.md",
    "github_id": 1165277268,
    "added_at": "2026-08-23",
@@ -8391,38 +8079,6 @@
    "source_archived": false
   },
   {
-   "id": "snscrape",
-   "name": "snscrape",
-   "emoji": "🐦",
-   "cat": 4,
-   "sub": "social",
-   "role": "library",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "scraping",
-    "python"
-   ],
-   "stars": 5471,
-   "gh": "JustAnotherArchivist/snscrape",
-   "lib": false,
-   "pick": false,
-   "one": "Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves.",
-   "alt": [
-    "agent-reach"
-   ],
-   "doc": "human/fichas/snscrape.md",
-   "github_id": 148062266,
-   "added_at": "2026-06-23",
-   "goals": [],
-   "routes": [
-    "no_api"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "fastmcp",
    "name": "FastMCP",
    "emoji": "🧰",
@@ -8585,7 +8241,6 @@
    "pick": false,
    "one": "Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.",
    "alt": [
-    "langchain-mcp-adapters",
     "mcp-typescript-sdk"
    ],
    "doc": "human/fichas/mcp-use.md",
@@ -8599,46 +8254,6 @@
     "api"
    ],
    "source_archived": false
-  },
-  {
-   "id": "langchain-mcp-adapters",
-   "name": "LangChain MCP Adapters",
-   "emoji": "🧰",
-   "cat": 5,
-   "sub": "sdk",
-   "role": "library",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": true,
-   "prov": [
-    "mcp"
-   ],
-   "tags": [
-    "mcp",
-    "agents",
-    "python"
-   ],
-   "stars": 3642,
-   "gh": "langchain-ai/langchain-mcp-adapters",
-   "lib": false,
-   "pick": false,
-   "status": "archived",
-   "one": "Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph.",
-   "alt": [
-    "mcp-use"
-   ],
-   "doc": "human/fichas/langchain-mcp-adapters.md",
-   "github_id": 929158279,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-08-23",
-   "goals": [
-    "mcp"
-   ],
-   "routes": [
-    "no_api",
-    "api"
-   ],
-   "source_archived": true
   },
   {
    "id": "context7",
@@ -11074,8 +10689,7 @@
    "pick": false,
    "one": "Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso.",
    "alt": [
-    "llm-course",
-    "nanogpt"
+    "llm-course"
    ],
    "doc": "human/fichas/llms-from-scratch.md",
    "github_id": 669879380,
@@ -11087,42 +10701,6 @@
     "no_api",
     "local_model",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "nanogpt",
-   "name": "nanoGPT",
-   "emoji": "🔬",
-   "cat": 19,
-   "sub": "aprender",
-   "role": "library",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "learning",
-    "python"
-   ],
-   "stars": 64756,
-   "gh": "karpathy/nanoGPT",
-   "lib": false,
-   "pick": false,
-   "one": "Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat.",
-   "alt": [
-    "llms-from-scratch"
-   ],
-   "doc": "human/fichas/nanogpt.md",
-   "github_id": 582822129,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "aprender"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
    ],
    "source_archived": false
   },
@@ -11526,41 +11104,6 @@
    ],
    "routes": [
     "no_api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "data-science-ipython-notebooks",
-   "name": "data-science-ipython-notebooks",
-   "emoji": "📓",
-   "cat": 25,
-   "sub": "datos",
-   "role": "directory",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "data",
-    "python"
-   ],
-   "stars": 29392,
-   "gh": "donnemartin/data-science-ipython-notebooks",
-   "lib": false,
-   "pick": false,
-   "one": "Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación.",
-   "alt": [],
-   "doc": "human/fichas/data-science-ipython-notebooks.md",
-   "github_id": 29749635,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "datos",
-    "aprender"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
    ],
    "source_archived": false
   },
@@ -14431,44 +13974,6 @@
    "source_archived": false
   },
   {
-   "id": "stable-diffusion-webui",
-   "name": "stable-diffusion-webui",
-   "emoji": "🖼️",
-   "cat": 11,
-   "sub": "interfaces",
-   "role": "app",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "vision",
-    "image",
-    "python"
-   ],
-   "stars": 165314,
-   "gh": "AUTOMATIC1111/stable-diffusion-webui",
-   "lib": false,
-   "pick": true,
-   "one": "Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.",
-   "alt": [
-    "sd-webui-forge",
-    "flux"
-   ],
-   "doc": "human/fichas/stable-diffusion-webui.md",
-   "github_id": 527591471,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "comfyui",
    "name": "ComfyUI",
    "emoji": "🧠",
@@ -14486,7 +13991,7 @@
    "stars": 146849,
    "gh": "Comfy-Org/ComfyUI",
    "lib": false,
-   "pick": false,
+   "pick": true,
    "one": "Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos.",
    "alt": [
     "wan2gp",
@@ -14600,7 +14105,6 @@
    "pick": false,
    "one": "Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración.",
    "alt": [
-    "stable-diffusion-webui",
     "comfyui"
    ],
    "doc": "human/fichas/sd-webui-forge.md",
@@ -14676,9 +14180,7 @@
    "lib": false,
    "pick": true,
    "one": "Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes.",
-   "alt": [
-    "stable-diffusion-webui"
-   ],
+   "alt": [],
    "doc": "human/fichas/flux.md",
    "github_id": 836642963,
    "added_at": "2026-11-10",
@@ -14715,75 +14217,6 @@
    "alt": [],
    "doc": "human/fichas/diffusers.md",
    "github_id": 498011141,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "controlnet",
-   "name": "ControlNet",
-   "emoji": "🧭",
-   "cat": 11,
-   "sub": "modelos",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "image",
-    "python"
-   ],
-   "stars": 34156,
-   "gh": "lllyasviel/ControlNet",
-   "lib": false,
-   "pick": false,
-   "one": "Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación.",
-   "alt": [],
-   "doc": "human/fichas/controlnet.md",
-   "github_id": 595893961,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "sd-webui-controlnet",
-   "name": "sd-webui-controlnet",
-   "emoji": "🧩",
-   "cat": 11,
-   "sub": "modelos",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "vision",
-    "image",
-    "python"
-   ],
-   "stars": 17797,
-   "gh": "Mikubill/sd-webui-controlnet",
-   "lib": false,
-   "pick": false,
-   "one": "Extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más.",
-   "alt": [],
-   "doc": "human/fichas/sd-webui-controlnet.md",
-   "github_id": 600798098,
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
@@ -14864,42 +14297,6 @@
    "source_archived": false
   },
   {
-   "id": "gfpgan",
-   "name": "GFPGAN",
-   "emoji": "🙂",
-   "cat": 11,
-   "sub": "edicion",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "image",
-    "python"
-   ],
-   "stars": 37701,
-   "gh": "TencentARC/GFPGAN",
-   "lib": false,
-   "pick": false,
-   "one": "Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.",
-   "alt": [
-    "codeformer"
-   ],
-   "doc": "human/fichas/gfpgan.md",
-   "github_id": 349321229,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "real-esrgan",
    "name": "Real-ESRGAN",
    "emoji": "🔍",
@@ -14953,9 +14350,7 @@
    "lib": false,
    "pick": false,
    "one": "Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.",
-   "alt": [
-    "gfpgan"
-   ],
+   "alt": [],
    "doc": "human/fichas/codeformer.md",
    "github_id": 505667511,
    "added_at": "2026-11-10",
@@ -15205,9 +14600,7 @@
    "lib": false,
    "pick": true,
    "one": "Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.",
-   "alt": [
-    "segment-anything"
-   ],
+   "alt": [],
    "doc": "human/fichas/sam2.md",
    "github_id": 835452752,
    "added_at": "2026-11-10",
@@ -15251,42 +14644,6 @@
    ],
    "routes": [
     "no_api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "segment-anything",
-   "name": "Segment Anything (SAM)",
-   "emoji": "👁️",
-   "cat": 28,
-   "sub": "vision",
-   "role": "library",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "vision",
-    "image",
-    "python"
-   ],
-   "stars": 55136,
-   "gh": "facebookresearch/segment-anything",
-   "lib": false,
-   "pick": false,
-   "one": "Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja.",
-   "alt": [
-    "sam2"
-   ],
-   "doc": "human/fichas/segment-anything.md",
-   "github_id": 618058471,
-   "added_at": "2026-11-10",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
    ],
    "source_archived": false
   },
@@ -15606,8 +14963,6 @@
    "pick": true,
    "one": "Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.",
    "alt": [
-    "chatterbox",
-    "tts",
     "luxtts",
     "edge-tts"
    ],
@@ -15684,7 +15039,6 @@
    "pick": false,
    "one": "Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos.",
    "alt": [
-    "chatterbox",
     "fish-speech"
    ],
    "doc": "human/fichas/gpt-sovits.md",
@@ -15727,43 +15081,6 @@
    "github_id": 1044296738,
    "starred_by": "Cristrva1",
    "added_at": "2026-06-24",
-   "goals": [
-    "narrar"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "tts",
-   "name": "TTS",
-   "emoji": "🎙️",
-   "cat": 29,
-   "sub": "tts",
-   "role": "library",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "tts",
-    "audio",
-    "python"
-   ],
-   "stars": 46227,
-   "gh": "coqui-ai/TTS",
-   "lib": false,
-   "pick": false,
-   "one": "Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.",
-   "alt": [
-    "kokoro"
-   ],
-   "doc": "human/fichas/tts.md",
-   "github_id": 265612440,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
    "goals": [
     "narrar"
    ],
@@ -15868,53 +15185,11 @@
    "pick": false,
    "one": "Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.",
    "alt": [
-    "chatterbox",
     "cosyvoice",
     "gpt-sovits"
    ],
    "doc": "human/fichas/fish-speech.md",
    "github_id": 702796244,
-   "added_at": "2026-11-10",
-   "goals": [
-    "narrar"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "chatterbox",
-   "name": "Chatterbox",
-   "emoji": "🗣️",
-   "cat": 29,
-   "sub": "tts",
-   "role": "library",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [
-    "local"
-   ],
-   "tags": [
-    "tts",
-    "audio",
-    "python"
-   ],
-   "stars": 27824,
-   "gh": "resemble-ai/chatterbox",
-   "lib": false,
-   "pick": false,
-   "one": "Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026.",
-   "alt": [
-    "fish-speech",
-    "gpt-sovits",
-    "kokoro",
-    "luxtts"
-   ],
-   "doc": "human/fichas/chatterbox.md",
-   "github_id": 971241545,
    "added_at": "2026-11-10",
    "goals": [
     "narrar"
@@ -16003,41 +15278,6 @@
    "source_archived": false
   },
   {
-   "id": "supertonic",
-   "name": "supertonic",
-   "emoji": "🔊",
-   "cat": 29,
-   "sub": "tts",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "tts",
-    "audio"
-   ],
-   "stars": 13751,
-   "gh": "supertone-oss-archive/supertonic",
-   "lib": false,
-   "pick": false,
-   "status": "archived",
-   "one": "Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos.",
-   "alt": [],
-   "doc": "human/fichas/supertonic.md",
-   "github_id": 1098852899,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "narrar"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": true
-  },
-  {
    "id": "luxtts",
    "name": "LuxTTS",
    "emoji": "🗣️",
@@ -16061,8 +15301,7 @@
    "pick": false,
    "one": "Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local.",
    "alt": [
-    "kokoro",
-    "chatterbox"
+    "kokoro"
    ],
    "doc": "human/fichas/luxtts.md",
    "github_id": 1140828984,
@@ -16291,9 +15530,7 @@
    "lib": false,
    "pick": false,
    "one": "App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real.",
-   "alt": [
-    "openscreen"
-   ],
+   "alt": [],
    "doc": "human/fichas/obs-studio.md",
    "github_id": 13233158,
    "added_at": "2026-11-10",
@@ -16338,44 +15575,6 @@
     "no_api"
    ],
    "source_archived": false
-  },
-  {
-   "id": "openscreen",
-   "name": "OpenScreen",
-   "emoji": "🖥️",
-   "cat": 12,
-   "sub": "edicion",
-   "role": "app",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "video",
-    "ui",
-    "typescript"
-   ],
-   "stars": 40030,
-   "gh": "siddharthvaddem/openscreen",
-   "lib": false,
-   "pick": false,
-   "status": "archived",
-   "one": "App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio.",
-   "alt": [
-    "obs-studio"
-   ],
-   "doc": "human/fichas/openscreen.md",
-   "github_id": 1073433866,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "video"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": true
   },
   {
    "id": "videolingo",
@@ -16846,8 +16045,7 @@
    "pick": true,
    "one": "Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0.",
    "alt": [
-    "hunyuanvideo",
-    "ltx-video"
+    "hunyuanvideo"
    ],
    "doc": "human/fichas/wan2-2.md",
    "github_id": 1027579552,
@@ -16887,51 +16085,10 @@
    "pick": false,
    "one": "Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.",
    "alt": [
-    "wan2-2",
-    "ltx-video"
+    "wan2-2"
    ],
    "doc": "human/fichas/hunyuanvideo.md",
    "github_id": 895453957,
-   "added_at": "2026-11-10",
-   "goals": [
-    "video"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "ltx-video",
-   "name": "LTX-Video",
-   "emoji": "🎬",
-   "cat": 12,
-   "sub": "generativo",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [
-    "local"
-   ],
-   "tags": [
-    "video",
-    "inference",
-    "local",
-    "python"
-   ],
-   "stars": 11387,
-   "gh": "Lightricks/LTX-Video",
-   "lib": false,
-   "pick": false,
-   "one": "Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado.",
-   "alt": [
-    "wan2-2",
-    "hunyuanvideo"
-   ],
-   "doc": "human/fichas/ltx-video.md",
-   "github_id": 891705470,
    "added_at": "2026-11-10",
    "goals": [
     "video"
@@ -17282,39 +16439,6 @@
    "routes": [
     "no_api",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "youtube2webpage",
-   "name": "Youtube2Webpage",
-   "emoji": "📄",
-   "cat": 13,
-   "sub": "conversion",
-   "role": "library",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "docs",
-    "javascript"
-   ],
-   "stars": 1466,
-   "gh": "obra/Youtube2Webpage",
-   "lib": false,
-   "pick": false,
-   "one": "Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado.",
-   "alt": [],
-   "doc": "human/fichas/youtube2webpage.md",
-   "github_id": 611549512,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "documentos"
-   ],
-   "routes": [
-    "no_api"
    ],
    "source_archived": false
   },
@@ -18831,9 +17955,7 @@
    "lib": false,
    "pick": false,
    "one": "Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
-   "alt": [
-    "open-deep-research"
-   ],
+   "alt": [],
    "doc": "human/fichas/local-deep-research.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -18973,46 +18095,6 @@
    "source_archived": false
   },
   {
-   "id": "open-deep-research",
-   "name": "open_deep_research",
-   "emoji": "🕸️",
-   "cat": 21,
-   "sub": "research",
-   "role": "runtime",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": true,
-   "prov": [],
-   "tags": [
-    "research",
-    "python"
-   ],
-   "stars": 12677,
-   "gh": "langchain-ai/open_deep_research",
-   "github_id": 891642747,
-   "lib": false,
-   "pick": false,
-   "one": "Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP.",
-   "alt": [
-    "local-deep-research",
-    "gpt-researcher"
-   ],
-   "doc": "human/fichas/open-deep-research.md",
-   "status": "archived",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "investigar",
-    "mcp"
-   ],
-   "routes": [
-    "no_api",
-    "local_model",
-    "api"
-   ],
-   "source_archived": true
-  },
-  {
    "id": "openclaude",
    "name": "openclaude",
    "emoji": "🕸️",
@@ -19052,46 +18134,6 @@
     "api"
    ],
    "source_archived": false
-  },
-  {
-   "id": "opencode-legacy",
-   "name": "opencode",
-   "emoji": "🕸️",
-   "cat": 20,
-   "sub": "terminal",
-   "role": "app",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "coding",
-    "ai",
-    "claude",
-    "code",
-    "llm",
-    "openai",
-    "go"
-   ],
-   "stars": 13901,
-   "gh": "opencode-ai/opencode",
-   "github_id": 949662713,
-   "lib": false,
-   "pick": false,
-   "one": "Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush.",
-   "alt": [],
-   "doc": "human/fichas/opencode-legacy.md",
-   "status": "archived",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "programar"
-   ],
-   "routes": [
-    "api",
-    "reference"
-   ],
-   "source_archived": true
   },
   {
    "id": "opencursor",
@@ -19711,40 +18753,6 @@
    "source_archived": false
   },
   {
-   "id": "bigdata",
-   "name": "BigData",
-   "emoji": "🧑‍💻",
-   "cat": 25,
-   "sub": "datos",
-   "role": "directory",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "datos",
-    "java"
-   ],
-   "stars": 642,
-   "gh": "monsonlee/BigData",
-   "github_id": 74181851,
-   "lib": false,
-   "pick": false,
-   "one": "Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación.",
-   "alt": [],
-   "doc": "human/fichas/bigdata.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "datos",
-    "aprender"
-   ],
-   "routes": [
-    "no_api"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "bionemo-recipes",
    "name": "bionemo-recipes",
    "emoji": "🧑‍💻",
@@ -19852,40 +18860,6 @@
    ],
    "routes": [
     "no_api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "machinelearning",
-   "name": "MachineLearning",
-   "emoji": "🧑‍💻",
-   "cat": 19,
-   "sub": "aprender",
-   "role": "directory",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "aprender",
-    "python"
-   ],
-   "stars": 5793,
-   "gh": "wepe/MachineLearning",
-   "github_id": 27595858,
-   "lib": false,
-   "pick": false,
-   "one": "Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python.",
-   "alt": [],
-   "doc": "human/fichas/machinelearning.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "aprender"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
    ],
    "source_archived": false
   },
@@ -20329,80 +19303,6 @@
    "source_archived": false
   },
   {
-   "id": "chartanalyst",
-   "name": "chartAnalyst",
-   "emoji": "📊",
-   "cat": 14,
-   "sub": "cuant",
-   "role": "library",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "finanzas",
-    "python"
-   ],
-   "stars": 21,
-   "gh": "huima58/chartAnalyst",
-   "github_id": 62604727,
-   "lib": false,
-   "pick": false,
-   "one": "Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles.",
-   "alt": [],
-   "doc": "human/fichas/chartanalyst.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "finanzas"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "crypto-trader",
-   "name": "crypto-trader",
-   "emoji": "📊",
-   "cat": 14,
-   "sub": "bots",
-   "role": "library",
-   "exec": "cloud",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "finanzas",
-    "algorithm",
-    "bitcoin",
-    "bot",
-    "coinbase",
-    "exchange-api",
-    "gemini",
-    "market"
-   ],
-   "stars": 633,
-   "gh": "pirate/crypto-trader",
-   "github_id": 45860798,
-   "lib": false,
-   "pick": false,
-   "one": "Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas.",
-   "alt": [],
-   "doc": "human/fichas/crypto-trader.md",
-   "status": "archived",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "finanzas"
-   ],
-   "routes": [
-    "no_api"
-   ],
-   "source_archived": true
-  },
-  {
    "id": "data-analyst-roadmap",
    "name": "data-analyst-roadmap",
    "emoji": "📊",
@@ -20431,47 +19331,6 @@
    "one": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.",
    "alt": [],
    "doc": "human/fichas/data-analyst-roadmap.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "datos",
-    "aprender"
-   ],
-   "routes": [
-    "no_api",
-    "reference"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "dataanalystportfolioprojects",
-   "name": "DataAnalystPortfolioProjects",
-   "emoji": "📊",
-   "cat": 10,
-   "sub": "recursos",
-   "role": "directory",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "recursos",
-    "analytics",
-    "dashboard",
-    "data-visualization",
-    "excel",
-    "hadoop",
-    "hiveq",
-    "portfolio"
-   ],
-   "stars": 912,
-   "gh": "PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects",
-   "github_id": 385140996,
-   "lib": false,
-   "pick": false,
-   "one": "Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive.",
-   "alt": [],
-   "doc": "human/fichas/dataanalystportfolioprojects.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
    "goals": [
@@ -20556,45 +19415,6 @@
     "no_api",
     "local_model",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "intellitrader",
-   "name": "IntelliTrader",
-   "emoji": "📊",
-   "cat": 14,
-   "sub": "bots",
-   "role": "app",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "finanzas",
-    "binance",
-    "bitcoin",
-    "bot",
-    "crypto",
-    "cryptocurrencies",
-    "cryptocurrency",
-    "trading-bot"
-   ],
-   "stars": 158,
-   "gh": "jazzonaut/IntelliTrader",
-   "github_id": 137500580,
-   "lib": false,
-   "pick": false,
-   "one": "Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges.",
-   "alt": [],
-   "doc": "human/fichas/intellitrader.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "finanzas"
-   ],
-   "routes": [
-    "no_api"
    ],
    "source_archived": false
   },
@@ -20825,40 +19645,6 @@
    ],
    "routes": [
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "stocks-analyst",
-   "name": "stocks",
-   "emoji": "📊",
-   "cat": 14,
-   "sub": "aprender",
-   "role": "directory",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "finanzas",
-    "jupyter notebook"
-   ],
-   "stars": 28,
-   "gh": "omerdr/stocks",
-   "github_id": 38563384,
-   "lib": false,
-   "pick": false,
-   "one": "Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica.",
-   "alt": [],
-   "doc": "human/fichas/stocks-analyst.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "aprender",
-    "finanzas"
-   ],
-   "routes": [
-    "no_api"
    ],
    "source_archived": false
   },
@@ -22951,44 +21737,6 @@
    "source_archived": false
   },
   {
-   "id": "videopose3d",
-   "name": "VideoPose3D",
-   "cat": 28,
-   "sub": "vision",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [
-    "local"
-   ],
-   "tags": [
-    "vision",
-    "model",
-    "python"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.",
-   "alt": [],
-   "stars": 4062,
-   "github_id": 153697606,
-   "gh": "facebookresearch/VideoPose3D",
-   "lang": "Python",
-   "license": "NOASSERTION",
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "status": "archived",
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "goals": [
-    "imagenes"
-   ],
-   "source_archived": true
-  },
-  {
    "id": "freetoken",
    "name": "FreeToken",
    "cat": 8,
@@ -24946,42 +23694,6 @@
    "source_archived": false
   },
   {
-   "id": "backtrader",
-   "name": "backtrader",
-   "cat": 14,
-   "sub": "cuant",
-   "role": "library",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "cuant",
-    "framework",
-    "python"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado.",
-   "alt": [
-    "nautilus-trader"
-   ],
-   "stars": 23745,
-   "github_id": 29050338,
-   "gh": "mementum/backtrader",
-   "lang": "Python",
-   "license": "GPL-3.0",
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "routes": [
-    "no_api"
-   ],
-   "goals": [
-    "finanzas"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "zdog",
    "name": "zdog",
    "cat": 26,
@@ -25392,9 +24104,7 @@
    "lib": false,
    "pick": false,
    "one": "Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias.",
-   "alt": [
-    "backtrader"
-   ],
+   "alt": [],
    "stars": 31542,
    "github_id": 138552196,
    "gh": "nautechsystems/nautilus_trader",
@@ -26199,44 +24909,6 @@
    "source_archived": false
   },
   {
-   "id": "py-clob-client",
-   "name": "py-clob-client",
-   "cat": 14,
-   "sub": "bots",
-   "role": "library",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "bots",
-    "library",
-    "python"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Cliente Python antiguo para la API de órdenes de Polymarket; está archivado y conviene revisar su sucesor.",
-   "alt": [
-    "py-sdk"
-   ],
-   "stars": 1226,
-   "github_id": 455013779,
-   "gh": "Polymarket/py-clob-client",
-   "lang": "Python",
-   "license": "MIT",
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "status": "archived",
-   "routes": [
-    "no_api",
-    "reference"
-   ],
-   "goals": [
-    "finanzas"
-   ],
-   "source_archived": true
-  },
-  {
    "id": "py-sdk",
    "name": "py-sdk",
    "cat": 14,
@@ -26254,9 +24926,7 @@
    "lib": false,
    "pick": false,
    "one": "SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes.",
-   "alt": [
-    "py-clob-client"
-   ],
+   "alt": [],
    "stars": 154,
    "github_id": 1228704556,
    "gh": "Polymarket/py-sdk",
@@ -27991,8 +26661,7 @@
      "local-deep-research",
      "gpt-researcher",
      "deer-flow",
-     "storm",
-     "open-deep-research"
+     "storm"
     ],
     "categories": [
      4,
@@ -28100,7 +26769,6 @@
     ],
     "guided": [
      "lossless-cut",
-     "openscreen",
      "opencut",
      "obs-studio",
      "remotion",
@@ -28170,14 +26838,11 @@
     "description": "Convertir un guion en narración con una ruta local o un servicio.",
     "starters": [
      "kokoro",
-     "supertonic",
      "edge-tts"
     ],
     "guided": [
      "kokoro",
-     "supertonic",
      "edge-tts",
-     "chatterbox",
      "omnivoice-studio"
     ],
     "categories": [
@@ -28212,7 +26877,6 @@
      "comfyui",
      "fooocus",
      "invokeai",
-     "stable-diffusion-webui",
      "rembg"
     ],
     "categories": [
@@ -29126,7 +27790,7 @@
     "starters": [
      "daily-stock-analysis",
      "qlib",
-     "backtrader"
+     "nautilus-trader"
     ],
     "topics": [
      {
@@ -30464,7 +29128,6 @@
        "motion",
        "mui",
        "n8n-mcp",
-       "nemo-agent-toolkit",
        "notebooklm-mcp-cli",
        "notebooklm-py",
        "onyx",
@@ -31704,13 +30367,6 @@
       "usage": "documented_integration"
      },
      {
-      "repo_id": "nemo-agent-toolkit",
-      "source": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md",
-      "readme_blob_sha": "ef05f7b82096ea5a0e671bedb114f3280153834c",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
       "repo_id": "nemotron",
       "source": "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md",
       "readme_blob_sha": "aa26fec62268cf52cb73cbad3a82da1982df8ba8",
@@ -32600,7 +31256,6 @@
        "motion",
        "mui",
        "n8n-mcp",
-       "nemo-agent-toolkit",
        "notebooklm-mcp-cli",
        "notebooklm-py",
        "onyx",
@@ -33653,13 +32308,6 @@
       "usage": "documented_integration"
      },
      {
-      "repo_id": "nemo-agent-toolkit",
-      "source": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md",
-      "readme_blob_sha": "ef05f7b82096ea5a0e671bedb114f3280153834c",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
       "repo_id": "no-ai-slop",
       "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
       "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
@@ -34480,7 +33128,6 @@
        "motion",
        "mui",
        "n8n-mcp",
-       "nemo-agent-toolkit",
        "notebooklm-mcp-cli",
        "notebooklm-py",
        "onyx",
@@ -35207,13 +33854,6 @@
       "usage": "documented_integration"
      },
      {
-      "repo_id": "nemo-agent-toolkit",
-      "source": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md",
-      "readme_blob_sha": "ef05f7b82096ea5a0e671bedb114f3280153834c",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
       "repo_id": "no-ai-slop",
       "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
       "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
@@ -35742,8 +34382,8 @@
    }
   ],
   "editorial_review": {
-   "total": 679,
-   "reviewed": 679,
+   "total": 644,
+   "reviewed": 644,
    "date": "2026-11-15",
    "report": "reports/review-679-2026-11-14.json",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."

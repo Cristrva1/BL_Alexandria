@@ -63,7 +63,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Se registran los intercambios usando import ag2
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `langfuse`
-**Alternativas (elige una):** `autogen`
 
 ## `agent-framework`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=agents,python
@@ -95,7 +94,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un agente y después un workflow con dos pasos y un punto de control
 **Qué comprobar:** Puedes seguir las transiciones y recuperar el estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `autogen`, `semantic-kernel`
 
 ## `agno`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,memory,python
@@ -127,38 +125,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `qdrant`, `mem0`
 **Alternativas (elige una):** `crewai`
-
-## `autogen`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=agents,python
-
-**Qué es:** Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento.
-**Stack:** Python 3.10+; entorno virtual; cliente de modelo
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El ejemplo usa OpenAI API; Ollama ofrece una ruta local experimental; Studio no incluye modelos
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Está en mantenimiento; no mezcles autogen-agentchat con los paquetes de AG2 Classic
-- Coste: El coste depende del proveedor o la ruta. El ejemplo usa OpenAI API; Ollama ofrece una ruta local experimental; Studio no incluye modelos
-- Equipo: Preparación según la ruta elegida. Python 3.10+; entorno virtual; cliente de modelo
-**Repo:** https://github.com/microsoft/autogen
-
-**Instalación** [+]:
-
-```
-# Install AgentChat and OpenAI client from Extensions
-pip install -U "autogen-agentchat" "autogen-ext[openai]"
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un resumen entre dos agentes; Comparar dos soluciones de programación
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Prueba un redactor y un revisor sobre un párrafo breve
-**Qué comprobar:** Distingues ambos mensajes y puedes detener la conversación
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`
-**Alternativas (elige una):** `agent-framework`, `ag2`, `crewai`
 
 ## `autogpt`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=openai,anthropic · tags=agents,automation,python
@@ -200,7 +166,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Ves la salida y el historial de una ejecución acotada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `n8n`
-**Alternativas (elige una):** `sim`, `langflow`, `flowise`
+**Alternativas (elige una):** `sim`, `langflow`
 
 ## `awesome-langgraph`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,javascript
@@ -290,7 +256,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar la salida y las fuentes de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `mem0`
-**Alternativas (elige una):** `autogen`, `langgraph`, `agno`, `metagpt`
+**Alternativas (elige una):** `langgraph`, `agno`, `metagpt`
 
 ## `deepagents`
 role=runtime · exec=hybrid · setup=easy · mcp=False · prov=anthropic,openai · tags=agents,python
@@ -351,7 +317,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings
 **Qué comprobar:** La respuesta recupera un fragmento comprobable del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langflow`, `flowise`
+**Combina con:** `langflow`
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`
@@ -384,39 +350,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ragas`, `mlflow`
 **Alternativas (elige una):** `promptfoo`
-
-## `flowise`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=automation,agents,typescript,docker
-
-**Qué es:** Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos.
-**Stack:** Node.js >=20; proveedor o instancia Ollama
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Ollama local usa tu equipo; Ollama Cloud y otros proveedores usan credenciales y tarifas propias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Comprueba el puerto real de Ollama y la red de Docker; la guía conserva ejemplos con puertos distintos
-- Coste: El coste depende del proveedor o la ruta. Ollama local usa tu equipo; Ollama Cloud y otros proveedores usan credenciales y tarifas propias
-- Equipo: Preparación según la ruta elegida. Node.js >=20; proveedor o instancia Ollama
-**Repo:** https://github.com/FlowiseAI/Flowise
-
-**Instalación** [+]:
-
-```
-npm install -g flowise
-
-npx flowise start
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un chatbot sobre documentos; Comparar modelos en un flujo visual
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Conecta un nodo ChatOllama a un flujo de conversación y formula dos preguntas relacionadas
-**Qué comprobar:** El flujo devuelve respuestas usando el modelo configurado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dify`, `langflow`
-**Alternativas (elige una):** `sim`, `autogpt`
 
 ## `haystack`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,local · tags=rag,agents,python
@@ -545,7 +478,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La respuesta coincide con los datos y muestra la llamada a la herramienta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langflow`, `langfuse`, `litellm`
-**Alternativas (elige una):** `llama-index`, `haystack`, `semantic-kernel`
+**Alternativas (elige una):** `llama-index`, `haystack`
 
 ## `langchain4j`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=ts,anthropic,chatgpt,chroma,embeddings,gemini,gpt,huggingface
@@ -638,37 +571,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes inspeccionar el estado y reanudar el pedido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `langfuse`
-**Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `langgraph-supervisor-py`, `adk-python`
-
-## `langgraph-supervisor-py`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,python
-
-**Qué es:** Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph.
-**Stack:** Python 3.10+; LangGraph; modelo con herramientas
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El ejemplo añade langchain-openai y consume API; modelo y observabilidad se pagan aparte
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Archivado: útil para estudiar o mantener; revisa alternativas actuales de LangGraph para un proyecto nuevo
-- Coste: El coste depende del proveedor o la ruta. El ejemplo añade langchain-openai y consume API; modelo y observabilidad se pagan aparte
-- Equipo: Preparación según la ruta elegida. Python 3.10+; LangGraph; modelo con herramientas
-**Repo:** https://github.com/langchain-ai/langgraph-supervisor-py
-
-**Instalación** [+]:
-
-```
-pip install langgraph-supervisor
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Separar búsqueda y cálculo; Estudiar enrutamiento multiagente
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Observa a qué especialista delega el supervisor una pregunta aritmética
-**Qué comprobar:** Se ve la delegación y el regreso de la respuesta
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `langgraph`
+**Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `adk-python`
 
 ## `langgraphjs`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,typescript
@@ -962,36 +865,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langfuse`, `fastmcp`
 **Alternativas (elige una):** `openai-agents-python`, `smolagents`, `langgraph`
 
-## `semantic-kernel`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=agents,python
-
-**Qué es:** SDK de Microsoft para integrar LLM en apps de C#, Python y Java con plugins y planificación.
-**Stack:** Python 3.11–3.14 para esta ruta; alternativas .NET 10+ o JDK 17+
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Admite Ollama, LM Studio y ONNX; nubes y proveedores remotos tienen sus propias facturas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El autor dirige los proyectos nuevos hacia Microsoft Agent Framework y ofrece una guía de migración
-- Coste: El coste depende del proveedor o la ruta. Admite Ollama, LM Studio y ONNX; nubes y proveedores remotos tienen sus propias facturas
-- Equipo: Preparación según la ruta elegida. Python 3.11–3.14 para esta ruta; alternativas .NET 10+ o JDK 17+
-**Repo:** https://github.com/microsoft/semantic-kernel
-
-**Instalación** [+]:
-
-```
-pip install semantic-kernel
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Integrar IA en una aplicación .NET; Recuperar información propia desde Java
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Añade una función de consulta de inventario y deja que el agente la invoque
-**Qué comprobar:** La respuesta coincide con el inventario ficticio
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `agent-framework`, `langchain`
-
 ## `sim`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,local · tags=agents,automation,typescript
 
@@ -1021,7 +894,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La ejecución muestra cada bloque y el resumen final
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `langfuse`
-**Alternativas (elige una):** `flowise`, `langflow`, `dify`, `autogpt`
+**Alternativas (elige una):** `langflow`, `dify`, `autogpt`
 
 ## `smolagents`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,local · tags=agents,python

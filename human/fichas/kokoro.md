@@ -99,8 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Chatterbox](chatterbox.md) | 27.8k | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. |
-| [TTS](tts.md) | 46.2k | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. |
 | [LuxTTS](luxtts.md) | 5.6k | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. |
 | [edge-tts](edge-tts.md) | 12.5k | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. |
 

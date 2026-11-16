@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **679 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **644 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -14,33 +14,33 @@ Las **679 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 |---:|---|---:|---|
 | 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 15 | Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos. |
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
-| 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 34 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
-| 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 23 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
-| 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 24 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
+| 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 30 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
+| 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 21 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
+| 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 23 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 23 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 13 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 27 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
 | 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 28 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
-| 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 23 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
-| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 16 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
-| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 17 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
-| 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 20 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
-| 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 28 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
+| 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 22 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
+| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 12 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
+| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 15 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
+| 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 19 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
+| 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 22 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 27 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
 | 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 26 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 11 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 13 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
-| 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 32 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
-| 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 22 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
-| 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 18 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
-| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 18 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
+| 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 30 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
+| 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 19 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
+| 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
+| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 17 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
 | 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 19 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 14 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
-| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 11 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
+| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 9 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
 | 26 | [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) | 19 | Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario. |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 36 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
-| 28 | [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) | 21 | Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes. |
-| 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 29 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
+| 28 | [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) | 19 | Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes. |
+| 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 26 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
 | 30 | [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) | 22 | Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores. |
 | 31 | [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) | 8 | Presentaciones, diagramas y documentación visual. Elige entre editar una pieza, escribir su estructura o generarla con un agente; revisa cómo se exporta antes de empezar. |
 | 32 | [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) | 12 | Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Para leer páginas estáticas consulta extracción web; para operar una interfaz empieza por estas herramientas. |
@@ -575,17 +575,25 @@ cp claude-token-efficient/profiles/CLAUDE.coding.md your-project/CLAUDE.md` (com
 
 Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.
 
-**⚖️ ¿Cuál elegir? — LangGraph, langchain, MetaGPT, AutoGen, crewAI, LlamaIndex, Agno**
+**⚖️ ¿Cuál elegir? — LangGraph, MetaGPT, crewAI, Agno, Deep Agents, OpenAI Agents SDK, smolagents**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [LangGraph](human/fichas/langgraph.md) | Tu objetivo encaja con estos ejemplos: Pausar una devolución hasta su revisión; Retomar una investigación interrumpida | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [langchain](human/fichas/langchain.md) | Tu objetivo encaja con estos ejemplos: Consultar un catálogo de prueba; Responder sobre documentos propios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [MetaGPT](human/fichas/metagpt.md) | Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [AutoGen](human/fichas/autogen.md) | Tu objetivo encaja con estos ejemplos: Revisar un resumen entre dos agentes; Comparar dos soluciones de programación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [crewAI](human/fichas/crewai.md) | Tu objetivo encaja con estos ejemplos: Preparar investigación de mercado; Separar investigación y redacción de producto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [LlamaIndex](human/fichas/llama-index.md) | Tu objetivo encaja con estos ejemplos: Consultar políticas internas; Encontrar cláusulas en contratos ficticios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Agno](human/fichas/agno.md) | Tu objetivo encaja con estos ejemplos: Servir un agente mediante una API; Investigar fallos mediante trazas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Deep Agents](human/fichas/deepagents.md) | Tu objetivo encaja con estos ejemplos: Resumir documentos de proyecto; Dividir una revisión de archivos en tareas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [OpenAI Agents SDK](human/fichas/openai-agents-python.md) | Tu objetivo encaja con estos ejemplos: Enrutar consultas por departamento; Validar una respuesta antes de aceptarla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [smolagents](human/fichas/smolagents.md) | Tu objetivo encaja con estos ejemplos: Calcular indicadores de un CSV; Transformar datos consultados en un resumen | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — langchain, LlamaIndex, Haystack**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [langchain](human/fichas/langchain.md) | Tu objetivo encaja con estos ejemplos: Consultar un catálogo de prueba; Responder sobre documentos propios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [LlamaIndex](human/fichas/llama-index.md) | Tu objetivo encaja con estos ejemplos: Consultar políticas internas; Encontrar cláusulas en contratos ficticios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Haystack](human/fichas/haystack.md) | Tu objetivo encaja con estos ejemplos: Responder sobre manuales propios; Comparar recuperación de dos consultas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — Mastra, AI SDK (Vercel), LangGraph.js**
 
@@ -595,7 +603,7 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 | [AI SDK (Vercel)](human/fichas/vercel-ai.md) | Tu objetivo encaja con estos ejemplos: Construir una interfaz de chat; Extraer datos tipados de un mensaje | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LangGraph.js](human/fichas/langgraphjs.md) | Tu objetivo encaja con estos ejemplos: Controlar aprobación de una solicitud; Reanudar un agente en una app JavaScript | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Sim, AutoGPT, dify, langflow, Flowise**
+**⚖️ ¿Cuál elegir? — Sim, AutoGPT, dify, langflow**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -603,7 +611,6 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 | [AutoGPT](human/fichas/autogpt.md) | Tu objetivo encaja con estos ejemplos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [dify](human/fichas/dify.md) | Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [langflow](human/fichas/langflow.md) | Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [Flowise](human/fichas/flowise.md) | Tu objetivo encaja con estos ejemplos: Prototipar un chatbot sobre documentos; Comparar modelos en un flujo visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Frameworks de agentes en Python
 
@@ -634,16 +641,6 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 # or `git clone https://github.com/geekan/MetaGPT && cd MetaGPT && pip install --upgrade -e .`` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/metagpt.md) · [GitHub](https://github.com/FoundationAgents/MetaGPT)
-
-#### 🐍 AutoGen
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 61.8k<br>
-**Qué es:** Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `# Install AgentChat and OpenAI client from Extensions
-pip install -U "autogen-agentchat" "autogen-ext[openai]"` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un resumen entre dos agentes; Comparar dos soluciones de programación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md)<br>
-**Más:** [ficha completa](human/fichas/autogen.md) · [GitHub](https://github.com/microsoft/autogen)
 
 #### 👥 crewAI
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 60.9k<br>
@@ -766,15 +763,6 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [langchain](human/fichas/langchain.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-langgraph.md) · [GitHub](https://github.com/vonzosten/awesome-LangGraph)
 
-#### 🐍 LangGraph Supervisor
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 1.7k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `pip install langgraph-supervisor` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Separar búsqueda y cálculo; Estudiar enrutamiento multiagente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/langgraph-supervisor-py.md) · [GitHub](https://github.com/langchain-ai/langgraph-supervisor-py)
-
 ### Frameworks en TypeScript y multi-lenguaje
 
 #### 🟦 Mastra ⭐
@@ -785,14 +773,6 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir un agente a una app TypeScript; Pausar y reanudar un flujo de aprobación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/mastra.md) · [GitHub](https://github.com/mastra-ai/mastra)
-
-#### 🟦 Semantic Kernel
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 28.8k<br>
-**Qué es:** SDK de Microsoft para integrar LLM en apps de C#, Python y Java con plugins y planificación.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `pip install semantic-kernel` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Integrar IA en una aplicación .NET; Recuperar información propia desde Java — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/semantic-kernel.md) · [GitHub](https://github.com/microsoft/semantic-kernel)
 
 #### 🟦 AI SDK (Vercel)
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 28k<br>
@@ -867,7 +847,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/langgenius/dify/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langflow](human/fichas/langflow.md) · [Flowise](human/fichas/flowise.md)<br>
+**Combina con:** [langflow](human/fichas/langflow.md)<br>
 **Más:** [ficha completa](human/fichas/dify.md) · [GitHub](https://github.com/langgenius/dify)
 
 #### 🔗 langflow
@@ -880,18 +860,6 @@ uv run langflow run` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [langchain](human/fichas/langchain.md) · [dify](human/fichas/dify.md)<br>
 **Más:** [ficha completa](human/fichas/langflow.md) · [GitHub](https://github.com/langflow-ai/langflow)
-
-#### 🌊 Flowise
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 55.6k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `npm install -g flowise
-
-npx flowise start` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un chatbot sobre documentos; Comparar modelos en un flujo visual — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [dify](human/fichas/dify.md) · [langflow](human/fichas/langflow.md)<br>
-**Más:** [ficha completa](human/fichas/flowise.md) · [GitHub](https://github.com/FlowiseAI/Flowise)
 
 ### Simulación, evolución y debate entre modelos
 
@@ -979,13 +947,6 @@ Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer 
 | [Maxun](human/fichas/maxun.md) | Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [llm-scraper](human/fichas/llm-scraper.md) | Tu objetivo encaja con estos ejemplos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Agent-Reach, snscrape**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [Agent-Reach](human/fichas/agent-reach.md) | Tu objetivo encaja con estos ejemplos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [snscrape](human/fichas/snscrape.md) | Tu objetivo encaja con estos ejemplos: Estudiar extracción de metadatos sociales; Evaluar disponibilidad de un conector antes de una investigación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
 ### Crawlers y extracción para IA
 
 #### 🔥 firecrawl ⭐
@@ -1024,7 +985,7 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install scrapy` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recopilar listados públicos permitidos; Programar extracción repetible con pipelines — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [scrapely](human/fichas/scrapely.md) · [crawlee-python](human/fichas/crawlee-python.md)<br>
+**Combina con:** [crawlee-python](human/fichas/crawlee-python.md)<br>
 **Más:** [ficha completa](human/fichas/scrapy.md) · [GitHub](https://github.com/scrapy/scrapy)
 
 #### 🦗 crawlee
@@ -1079,15 +1040,6 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Elige si:** Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [scrapy](human/fichas/scrapy.md)<br>
 **Más:** [ficha completa](human/fichas/scrapydweb.md) · [GitHub](https://github.com/my8100/scrapydweb)
-
-#### 📐 scrapely
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 1.9k<br>
-**Qué es:** Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip install scrapely` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender extracción a partir de ejemplos; Estudiar plantillas de scraping sin LLM — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [scrapy](human/fichas/scrapy.md)<br>
-**Más:** [ficha completa](human/fichas/scrapely.md) · [GitHub](https://github.com/scrapy/scrapely)
 
 ### Scraping guiado por LLM
 
@@ -1195,17 +1147,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip3 install instaloader` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [snscrape](human/fichas/snscrape.md)<br>
 **Más:** [ficha completa](human/fichas/instaloader.md) · [GitHub](https://github.com/instaloader/instaloader)
-
-#### 🐦 snscrape
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 5.5k<br>
-**Qué es:** Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip3 install snscrape` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar extracción de metadatos sociales; Evaluar disponibilidad de un conector antes de una investigación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [instaloader](human/fichas/instaloader.md)<br>
-**Más:** [ficha completa](human/fichas/snscrape.md) · [GitHub](https://github.com/JustAnotherArchivist/snscrape)
 
 ---
 
@@ -1220,13 +1162,12 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 | [FastMCP](human/fichas/fastmcp.md) | Tu objetivo encaja con estos ejemplos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [MCP Python SDK](human/fichas/mcp-python-sdk.md) | Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — MCP TypeScript SDK, mcp-use, LangChain MCP Adapters**
+**⚖️ ¿Cuál elegir? — MCP TypeScript SDK, mcp-use**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [MCP TypeScript SDK](human/fichas/mcp-typescript-sdk.md) | Tu objetivo encaja con estos ejemplos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [mcp-use](human/fichas/mcp-use.md) | Tu objetivo encaja con estos ejemplos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [LangChain MCP Adapters](human/fichas/langchain-mcp-adapters.md) | Tu objetivo encaja con estos ejemplos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — Playwright MCP, Chrome DevTools MCP**
 
@@ -1281,16 +1222,6 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Google MCP](human/fichas/mcp.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-use.md) · [GitHub](https://github.com/mcp-use/mcp-use)
-
-#### 🧰 LangChain MCP Adapters
-**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 3.6k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `pip install langchain-mcp-adapters` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langchain](human/fichas/langchain.md)<br>
-**Más:** [ficha completa](human/fichas/langchain-mcp-adapters.md) · [GitHub](https://github.com/langchain-ai/langchain-mcp-adapters)
 
 ### Servidores MCP destacados
 
@@ -1812,7 +1743,6 @@ claude plugin install floorplan@floorplan` (comprobar los pasos completos en la 
 cd SWE-bench
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar soluciones a issues reproducibles; Estudiar evaluación de agentes de programación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [SWE-agent](human/fichas/swe-agent.md)<br>
 **Más:** [ficha completa](human/fichas/swe-bench.md) · [GitHub](https://github.com/SWE-bench/SWE-bench)
 
 #### 📚 dsh-qa
@@ -2630,14 +2560,6 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/data-analyst-roadmap.md) · [GitHub](https://github.com/mtahiraslan/data-analyst-roadmap)
 
-#### 📊 DataAnalystPortfolioProjects
-**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 912<br>
-**Qué es:** Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un portafolio de análisis; Diseñar un primer proyecto con datos públicos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/dataanalystportfolioprojects.md) · [GitHub](https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects)
-
 ### Inteligencia de fuentes abiertas y mapas
 
 #### 🖥️ gods-eye-view
@@ -2699,12 +2621,10 @@ docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --p
 
 Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.
 
-**⚖️ ¿Cuál elegir? — stable-diffusion-webui, FLUX, ComfyUI, Stable Diffusion WebUI Forge**
+**⚖️ ¿Cuál elegir? — ComfyUI, Stable Diffusion WebUI Forge**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
-| [stable-diffusion-webui](human/fichas/stable-diffusion-webui.md) | Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [FLUX](human/fichas/flux.md) | Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [ComfyUI](human/fichas/comfyui.md) | Tu objetivo encaja con estos ejemplos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Stable Diffusion WebUI Forge](human/fichas/sd-webui-forge.md) | Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
@@ -2715,25 +2635,9 @@ Interfaces y modelos de generación, recorte, restauración y ampliación. Disti
 | [InvokeAI](human/fichas/invokeai.md) | Tu objetivo encaja con estos ejemplos: Retocar una ilustración por regiones; Organizar variantes de una producción visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Krita AI Diffusion](human/fichas/krita-ai-diffusion.md) | Tu objetivo encaja con estos ejemplos: Completar un fondo en una ilustración; Usar un boceto para guiar una imagen | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — GFPGAN, CodeFormer**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [GFPGAN](human/fichas/gfpgan.md) | Tu objetivo encaja con estos ejemplos: Mejorar una copia visual de una fotografía; Estudiar restauración facial con un modelo preentrenado | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [CodeFormer](human/fichas/codeformer.md) | Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
 ### Interfaces para generar imágenes
 
-#### 🖼️ stable-diffusion-webui ⭐
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 165k<br>
-**Qué es:** Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [sd-webui-controlnet](human/fichas/sd-webui-controlnet.md)<br>
-**Más:** [ficha completa](human/fichas/stable-diffusion-webui.md) · [GitHub](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-
-#### 🧠 ComfyUI
+#### 🧠 ComfyUI ⭐
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 147k<br>
 **Qué es:** Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
@@ -2758,7 +2662,7 @@ comfy install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/invoke-ai/InvokeAI/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Retocar una ilustración por regiones; Organizar variantes de una producción visual — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [diffusers](human/fichas/diffusers.md) · [ControlNet](human/fichas/controlnet.md)<br>
+**Combina con:** [diffusers](human/fichas/diffusers.md)<br>
 **Más:** [ficha completa](human/fichas/invokeai.md) · [GitHub](https://github.com/invoke-ai/InvokeAI)
 
 #### 🖼️ Stable Diffusion WebUI Forge
@@ -2767,7 +2671,6 @@ comfy install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ControlNet](human/fichas/controlnet.md)<br>
 **Más:** [ficha completa](human/fichas/sd-webui-forge.md) · [GitHub](https://github.com/lllyasviel/stable-diffusion-webui-forge)
 
 #### 🖼️ Krita AI Diffusion
@@ -2800,26 +2703,8 @@ pip install -e ".[all]"` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install --upgrade diffusers[torch]` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Integrar generación de imágenes en Python; Experimentar con modelos de video o audio compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ControlNet](human/fichas/controlnet.md) · [cosmos](human/fichas/cosmos.md)<br>
+**Combina con:** [cosmos](human/fichas/cosmos.md)<br>
 **Más:** [ficha completa](human/fichas/diffusers.md) · [GitHub](https://github.com/huggingface/diffusers)
-
-#### 🧭 ControlNet
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 34.2k<br>
-**Qué es:** Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/lllyasviel/ControlNet/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Guiar composición mediante bordes; Generar una ilustración a partir de una pose — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [diffusers](human/fichas/diffusers.md) · [ComfyUI](human/fichas/comfyui.md)<br>
-**Más:** [ficha completa](human/fichas/controlnet.md) · [GitHub](https://github.com/lllyasviel/ControlNet)
-
-#### 🧩 sd-webui-controlnet
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 17.8k<br>
-**Qué es:** Extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Conservar una composición al generar; Guiar una imagen mediante un boceto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [stable-diffusion-webui](human/fichas/stable-diffusion-webui.md) · [ControlNet](human/fichas/controlnet.md)<br>
-**Más:** [ficha completa](human/fichas/sd-webui-controlnet.md) · [GitHub](https://github.com/Mikubill/sd-webui-controlnet)
 
 #### 🪞 ComfyUI_IPAdapter_plus
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 6.2k<br>
@@ -2841,31 +2726,6 @@ pip install -e ".[all]"` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [ComfyUI](human/fichas/comfyui.md)<br>
 **Más:** [ficha completa](human/fichas/rembg.md) · [GitHub](https://github.com/danielgatis/rembg)
 
-#### 🙂 GFPGAN
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 37.7k<br>
-**Qué es:** Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `git clone https://github.com/TencentARC/GFPGAN.git
-    cd GFPGAN
-
-# Install basicsr - https://github.com/xinntao/BasicSR
-    # We use BasicSR for both training and inference
-    pip install basicsr
-
-    # Install facexlib - https://github.com/xinntao/facexlib
-    # We use face detection and face restoration helper in the facexlib package
-    pip install facexlib
-
-    pip install -r requirements.txt
-    python setup.py develop
-
-    # If you want to enhance the background (non-face) regions with Real-ESRGAN,
-    # you also need to install the realesrgan package
-    pip install realesrgan` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Mejorar una copia visual de una fotografía; Estudiar restauración facial con un modelo preentrenado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
-**Más:** [ficha completa](human/fichas/gfpgan.md) · [GitHub](https://github.com/TencentARC/GFPGAN)
-
 #### 🔍 Real-ESRGAN
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 37.5k<br>
 **Qué es:** Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos.<br>
@@ -2882,7 +2742,6 @@ pip install -e ".[all]"` (comprobar los pasos completos en la ficha).<br>
     pip install -r requirements.txt
     python setup.py develop` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [GFPGAN](human/fichas/gfpgan.md)<br>
 **Más:** [ficha completa](human/fichas/real-esrgan.md) · [GitHub](https://github.com/xinntao/Real-ESRGAN)
 
 #### 🩹 CodeFormer
@@ -2911,20 +2770,12 @@ pip install -e ".[all]"` (comprobar los pasos completos en la ficha).<br>
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
 
-**⚖️ ¿Cuál elegir? — OBS Studio, OpenScreen**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [OBS Studio](human/fichas/obs-studio.md) | Tu objetivo encaja con estos ejemplos: Grabar una explicación de pantalla; Preparar escenas para una transmisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [OpenScreen](human/fichas/openscreen.md) | Tu objetivo encaja con estos ejemplos: Crear una demostración de producto; Grabar un tutorial con cámara y pantalla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
-**⚖️ ¿Cuál elegir? — Wan2.2, HunyuanVideo, LTX-Video**
+**⚖️ ¿Cuál elegir? — Wan2.2, HunyuanVideo**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Wan2.2](human/fichas/wan2-2.md) | Tu objetivo encaja con estos ejemplos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [HunyuanVideo](human/fichas/hunyuanvideo.md) | Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [LTX-Video](human/fichas/ltx-video.md) | Tu objetivo encaja con estos ejemplos: Mantener un flujo LTX-Video existente; Comparar generación desde texto e imagen propios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Edición, grabación y subtítulos
 
@@ -2963,16 +2814,6 @@ Editores, grabadores, utilidades de medios y modelos de video generativo. La edi
 **Elige si:** Tu objetivo encaja con estos ejemplos: Quitar una parte de una grabación; Separar o unir medios compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [whisperX](human/fichas/whisperx.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/lossless-cut.md) · [GitHub](https://github.com/mifi/lossless-cut)
-
-#### 🖥️ OpenScreen
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 40k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `winget install SiddharthVaddem.OpenScreen` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una demostración de producto; Grabar un tutorial con cámara y pantalla — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LosslessCut](human/fichas/lossless-cut.md) · [OpenCut](human/fichas/opencut.md)<br>
-**Más:** [ficha completa](human/fichas/openscreen.md) · [GitHub](https://github.com/siddharthvaddem/openscreen)
 
 #### ✂️ VideoLingo
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 19.3k<br>
@@ -3060,21 +2901,6 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md)<br>
 **Más:** [ficha completa](human/fichas/wan2gp.md) · [GitHub](https://github.com/deepbeepmeep/WanGP)
-
-#### 🎬 LTX-Video
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 11.4k<br>
-**Qué es:** Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `git clone https://github.com/Lightricks/LTX-Video.git
-cd LTX-Video
-
-# create env
-python -m venv env
-source env/bin/activate
-python -m pip install -e .\[inference\]` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Mantener un flujo LTX-Video existente; Comparar generación desde texto e imagen propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [diffusers](human/fichas/diffusers.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
-**Más:** [ficha completa](human/fichas/ltx-video.md) · [GitHub](https://github.com/Lightricks/LTX-Video)
 
 #### 🎬 short-video-factory
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.1k<br>
@@ -3187,15 +3013,6 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [LlamaIndex](human/fichas/llama-index.md)<br>
 **Más:** [ficha completa](human/fichas/unstructured.md) · [GitHub](https://github.com/Unstructured-IO/unstructured)
-
-#### 📄 Youtube2Webpage
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 1.5k<br>
-**Qué es:** Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/obra/Youtube2Webpage/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una versión legible de un tutorial; Estudiar una clase propia con capturas y texto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisper](human/fichas/whisper.md)<br>
-**Más:** [ficha completa](human/fichas/youtube2webpage.md) · [GitHub](https://github.com/obra/Youtube2Webpage)
 
 ### OCR
 
@@ -3318,20 +3135,6 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 
 Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.
 
-**⚖️ ¿Cuál elegir? — nautilus_trader, backtrader**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [nautilus_trader](human/fichas/nautilus-trader.md) | Tu objetivo encaja con estos ejemplos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [backtrader](human/fichas/backtrader.md) | Tu objetivo encaja con estos ejemplos: Aprender backtesting por eventos; Comparar supuestos de ejecución de una estrategia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
-**⚖️ ¿Cuál elegir? — py-clob-client, py-sdk**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [py-clob-client](human/fichas/py-clob-client.md) | Tu objetivo encaja con estos ejemplos: Planificar una migración de SDK; Comprender una integración histórica de Polymarket | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [py-sdk](human/fichas/py-sdk.md) | Tu objetivo encaja con estos ejemplos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
 ### Agentes de investigación financiera
 
 #### 📚 daily_stock_analysis ⭐
@@ -3418,14 +3221,6 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/nautilus-trader.md) · [GitHub](https://github.com/nautechsystems/nautilus_trader)
 
-#### 📚 backtrader
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 23.7k<br>
-**Qué es:** Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/mementum/backtrader/blob/master/README.rst); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender backtesting por eventos; Comparar supuestos de ejecución de una estrategia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/backtrader.md) · [GitHub](https://github.com/mementum/backtrader)
-
 #### 📚 FinRL
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 17.1k<br>
 **Qué es:** Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones.<br>
@@ -3452,14 +3247,6 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `pip install lumibot` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar una estrategia de reglas; Estudiar decisiones de una estrategia AI en backtest — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/lumibot.md) · [GitHub](https://github.com/Lumiwealth/lumibot)
-
-#### 📊 chartAnalyst
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 21<br>
-**Qué es:** Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/huima58/chartAnalyst/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar clasificación de gráficos con redes convolucionales; Practicar separación temporal de datos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/chartanalyst.md) · [GitHub](https://github.com/huima58/chartAnalyst)
 
 ### Bots y conexiones a exchanges
 
@@ -3504,24 +3291,6 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/binance-trader.md) · [GitHub](https://github.com/yasinkuyu/binance-trader)
 
-#### 📚 py-clob-client
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 1.2k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Cliente Python antiguo para la API de órdenes de Polymarket; está archivado y conviene revisar su sucesor.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Polymarket/py-clob-client/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Planificar una migración de SDK; Comprender una integración histórica de Polymarket — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/py-clob-client.md) · [GitHub](https://github.com/Polymarket/py-clob-client)
-
-#### 📊 crypto-trader
-**Etiquetas:** Ejecución ☁️ cloud/API · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 633<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/pirate/crypto-trader/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un wrapper de exchange; Revisar una estrategia de umbral sobre datos de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/crypto-trader.md) · [GitHub](https://github.com/pirate/crypto-trader)
-
 #### 📊 open-sol-bot
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 406<br>
 **Qué es:** Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.<br>
@@ -3529,14 +3298,6 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Arranque:** [Instrucciones originales](https://github.com/ChainBuff/open-sol-bot/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/open-sol-bot.md) · [GitHub](https://github.com/ChainBuff/open-sol-bot)
-
-#### 📊 IntelliTrader
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 158<br>
-**Qué es:** Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/jazzonaut/IntelliTrader/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar gestión de una cartera ficticia; Comparar señales sin enviar órdenes reales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/intellitrader.md) · [GitHub](https://github.com/jazzonaut/IntelliTrader)
 
 #### 📚 py-sdk
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 154<br>
@@ -3555,14 +3316,6 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Arranque:** [Instrucciones originales](https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/machine-learning-for-trading.md) · [GitHub](https://github.com/stefan-jansen/machine-learning-for-trading)
-
-#### 📊 stocks
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 28<br>
-**Qué es:** Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/omerdr/stocks/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar evaluación de recomendaciones públicas; Preparar un dataset temporal para análisis — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/stocks-analyst.md) · [GitHub](https://github.com/omerdr/stocks)
 
 #### 🖥️ PixelFund-AI
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6<br>
@@ -4401,14 +4154,13 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 | [Fabric](human/fichas/fabric.md) | Tu objetivo encaja con estos ejemplos: Extraer acciones de una reunión; Convertir notas en un esquema de artículo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [prompts.chat](human/fichas/prompts-chat.md) | Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Generative AI for Beginners, LLM Course, LLMs from Scratch, nanoGPT**
+**⚖️ ¿Cuál elegir? — Generative AI for Beginners, LLM Course, LLMs from Scratch**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Generative AI for Beginners](human/fichas/generative-ai-for-beginners.md) | Tu objetivo encaja con estos ejemplos: Empezar a construir una app generativa; Comparar nube con Foundry Local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LLM Course](human/fichas/llm-course.md) | Tu objetivo encaja con estos ejemplos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LLMs from Scratch](human/fichas/llms-from-scratch.md) | Tu objetivo encaja con estos ejemplos: Aprender cómo funciona un Transformer; Estudiar ajuste de instrucciones | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [nanoGPT](human/fichas/nanogpt.md) | Tu objetivo encaja con estos ejemplos: Comprender un GPT pequeño; Comparar el código histórico con nanochat | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — Awesome LLM Apps, OpenAI Cookbook, Claude Cookbooks**
 
@@ -4642,22 +4394,12 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Elige si:** Tu objetivo encaja con estos ejemplos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/awesome-machine-learning.md) · [GitHub](https://github.com/josephmisiti/awesome-machine-learning)
 
-#### 🔬 nanoGPT
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 64.8k<br>
-**Qué es:** Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip install torch numpy transformers datasets tiktoken wandb tqdm` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Comprender un GPT pequeño; Comparar el código histórico con nanochat — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [nanochat](human/fichas/nanochat.md)<br>
-**Más:** [ficha completa](human/fichas/nanogpt.md) · [GitHub](https://github.com/karpathy/nanoGPT)
-
 #### 💬 nanochat
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 60.6k<br>
 **Qué es:** Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv sync --extra cpu    # (or) Use for CPU-only / MPS` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [nanoGPT](human/fichas/nanogpt.md)<br>
 **Más:** [ficha completa](human/fichas/nanochat.md) · [GitHub](https://github.com/karpathy/nanochat)
 
 #### ⚙️ llm.c
@@ -4666,7 +4408,6 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/karpathy/llm.c/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [nanoGPT](human/fichas/nanogpt.md)<br>
 **Más:** [ficha completa](human/fichas/llm-c.md) · [GitHub](https://github.com/karpathy/llm.c)
 
 #### 🧑‍💻 train-llm-from-scratch
@@ -4687,14 +4428,6 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/python-machine-learning-book.md) · [GitHub](https://github.com/rasbt/python-machine-learning-book)
 
-#### 🧑‍💻 MachineLearning
-**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 5.8k<br>
-**Qué es:** Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/wepe/MachineLearning/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar modelos clásicos; Explorar ejemplos antiguos de Keras — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/machinelearning.md) · [GitHub](https://github.com/wepe/MachineLearning)
-
 #### 📘 how-to-train-your-gpt
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 4.2k<br>
 **Qué es:** Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción.<br>
@@ -4705,7 +4438,7 @@ pip install jupyter tiktoken torch numpy datasets matplotlib --index-url https:/
 # Start with chapter 2 (tokenization)
 jupyter notebook notebooks/02_tokenization.ipynb` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [nanoGPT](human/fichas/nanogpt.md) · [nanochat](human/fichas/nanochat.md)<br>
+**Combina con:** [nanochat](human/fichas/nanochat.md)<br>
 **Más:** [ficha completa](human/fichas/how-to-train-your-gpt.md) · [GitHub](https://github.com/raiyanyahya/how-to-train-your-gpt)
 
 ---
@@ -4726,12 +4459,11 @@ Agentes de terminal, extensiones de editor y entornos para programar con IA. Rev
 | [Open Interpreter](human/fichas/open-interpreter.md) | Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [goose](human/fichas/goose.md) | Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — OpenHands, SWE-agent, Open SWE**
+**⚖️ ¿Cuál elegir? — OpenHands, Open SWE**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [OpenHands](human/fichas/openhands.md) | Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [SWE-agent](human/fichas/swe-agent.md) | Tu objetivo encaja con estos ejemplos: Estudiar resolución de issues; Comparar trayectorias de agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Open SWE](human/fichas/open-swe.md) | Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Agentes de terminal
@@ -4810,15 +4542,6 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/openclaude.md) · [GitHub](https://github.com/Twigpine/openclaude)
 
-#### 🕸️ opencode
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.9k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/opencode-ai/opencode/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un agente terminal en Go; Comprender la evolución hacia Crush — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/opencode-legacy.md) · [GitHub](https://github.com/opencode-ai/opencode)
-
 #### 🕸️ MiMo-Code
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.8k<br>
 **Qué es:** Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.<br>
@@ -4837,15 +4560,6 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explicar un error de código; Comparar una propuesta antes de editar — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Context7](human/fichas/context7.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/cline.md) · [GitHub](https://github.com/cline/cline)
-
-#### 👨‍💻 Continue
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 36.5k<br>
-**Qué es:** Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/continuedev/continue/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una extensión de código abierta; Revisar integración con Ollama — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md)<br>
-**Más:** [ficha completa](human/fichas/continue.md) · [GitHub](https://github.com/continuedev/continue)
 
 #### 🖥️ openidea
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9k<br>
@@ -4874,15 +4588,6 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ECC](human/fichas/ecc.md) · [sandbox](human/fichas/sandbox.md)<br>
 **Más:** [ficha completa](human/fichas/openhands.md) · [GitHub](https://github.com/OpenHands/OpenHands)
-
-#### 👨‍💻 SWE-agent
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 20.8k<br>
-**Qué es:** Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo.<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://swe-agent.com/latest/installation/source/); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar resolución de issues; Comparar trayectorias de agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [SWE-bench](human/fichas/swe-bench.md) · [litellm](human/fichas/litellm.md)<br>
-**Más:** [ficha completa](human/fichas/swe-agent.md) · [GitHub](https://github.com/SWE-agent/SWE-agent)
 
 #### 👨‍💻 Open SWE
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 11.2k<br>
@@ -4955,14 +4660,12 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 | [hermes-agent](human/fichas/hermes-agent.md) | Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Mercury Agent](human/fichas/mercury-agent.md) | Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar presupuestos de tokens | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — STORM, gpt-researcher, open_deep_research, local-deep-research**
+**⚖️ ¿Cuál elegir? — STORM, gpt-researcher**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [STORM](human/fichas/storm.md) | Tu objetivo encaja con estos ejemplos: Preparar una revisión de un tema; Comparar perspectivas antes de escribir | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [gpt-researcher](human/fichas/gpt-researcher.md) | Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [open_deep_research](human/fichas/open-deep-research.md) | Tu objetivo encaja con estos ejemplos: Estudiar investigación con LangGraph; Comparar configuraciones de búsqueda | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [local-deep-research](human/fichas/local-deep-research.md) | Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Asistentes autónomos y equipos de agentes
 
@@ -5124,21 +4827,6 @@ conda create -n storm python=3.11
 **Combina con:** [firecrawl](human/fichas/firecrawl.md) · [browser-use](human/fichas/browser-use.md)<br>
 **Más:** [ficha completa](human/fichas/gpt-researcher.md) · [GitHub](https://github.com/assafelovic/gpt-researcher)
 
-#### 🕸️ open_deep_research
-**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 12.7k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `git clone https://github.com/langchain-ai/open_deep_research.git
-cd open_deep_research
-uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-uv sync` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar investigación con LangGraph; Comparar configuraciones de búsqueda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md)<br>
-**Más:** [ficha completa](human/fichas/open-deep-research.md) · [GitHub](https://github.com/langchain-ai/open_deep_research)
-
 #### 🕸️ local-deep-research
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 9.6k<br>
 **Qué es:** Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.<br>
@@ -5244,15 +4932,6 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [playwright](human/fichas/playwright.md)<br>
 **Más:** [ficha completa](human/fichas/computer-use-preview.md) · [GitHub](https://github.com/google-gemini/computer-use-preview)
-
-#### 🟩 NeMo-Agent-Toolkit
-**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 2.7k<br>
-**Qué es:** Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo).<br>
-**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `pip install nvidia-nat` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Perfilar un workflow de agentes; Exponer una herramienta propia por MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md)<br>
-**Más:** [ficha completa](human/fichas/nemo-agent-toolkit.md) · [GitHub](https://github.com/NVIDIA/NeMo-Agent-Toolkit)
 
 #### 📚 shepherd
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 2.6k<br>
@@ -5750,15 +5429,6 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Combina con:** [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/polars.md) · [GitHub](https://github.com/pola-rs/polars)
 
-#### 📓 data-science-ipython-notebooks
-**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 29.4k<br>
-**Qué es:** Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender análisis exploratorio; Estudiar ejemplos de redes neuronales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [dash](human/fichas/dash.md) · [streamlit](human/fichas/streamlit.md)<br>
-**Más:** [ficha completa](human/fichas/data-science-ipython-notebooks.md) · [GitHub](https://github.com/donnemartin/data-science-ipython-notebooks)
-
 #### 🗄️ awesome-bigdata
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 14.7k<br>
 **Qué es:** Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.<br>
@@ -5785,14 +5455,6 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Combina con:** [three.js](human/fichas/three-js.md)<br>
 **Más:** [ficha completa](human/fichas/globalbuildingatlas.md) · [GitHub](https://github.com/zhu-xlab/GlobalBuildingAtlas)
 
-#### 🧑‍💻 BigData
-**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 642<br>
-**Qué es:** Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/monsonlee/BigData/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar migración a Hive; Explorar ejemplos de Spark y HBase — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/bigdata.md) · [GitHub](https://github.com/monsonlee/BigData)
-
 ### Apps de datos en Python
 
 #### 🧪 Gradio ⭐
@@ -5810,7 +5472,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install streamlit` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [dash](human/fichas/dash.md) · [data-science-ipython-notebooks](human/fichas/data-science-ipython-notebooks.md)<br>
+**Combina con:** [dash](human/fichas/dash.md)<br>
 **Más:** [ficha completa](human/fichas/streamlit.md) · [GitHub](https://github.com/streamlit/streamlit)
 
 #### 🧮 dash
@@ -6362,13 +6024,6 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 | [face_recognition](human/fichas/face-recognition.md) | Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [InsightFace](human/fichas/insightface.md) | Tu objetivo encaja con estos ejemplos: Estudiar alineación facial; Evaluar detección en un dataset de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — SAM 2, Segment Anything (SAM)**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [SAM 2](human/fichas/sam2.md) | Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [Segment Anything (SAM)](human/fichas/segment-anything.md) | Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
 ### Rostros y retratos animados
 
 #### 🎭 Deep-Live-Cam ⭐
@@ -6452,15 +6107,6 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [supervision](human/fichas/supervision.md)<br>
 **Más:** [ficha completa](human/fichas/opencv.md) · [GitHub](https://github.com/opencv/opencv)
 
-#### 👁️ Segment Anything (SAM)
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 55.1k<br>
-**Qué es:** Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip install git+https://github.com/facebookresearch/segment-anything.git` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Label Studio](human/fichas/label-studio.md)<br>
-**Más:** [ficha completa](human/fichas/segment-anything.md) · [GitHub](https://github.com/facebookresearch/segment-anything)
-
 #### 👁️ supervision
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 51.6k<br>
 **Qué es:** Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir.<br>
@@ -6528,15 +6174,6 @@ docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/labe
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/easymocap.md) · [GitHub](https://github.com/zju3dv/EasyMocap)
 
-#### 🧩 VideoPose3D
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 4.1k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/facebookresearch/VideoPose3D/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción de pose; Explorar movimiento a partir de keypoints — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/videopose3d.md) · [GitHub](https://github.com/facebookresearch/VideoPose3D)
-
 #### 🧩 4D-Humans
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 1.7k<br>
 **Qué es:** Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.<br>
@@ -6589,15 +6226,20 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 | [whisperX](human/fichas/whisperx.md) | Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [NeMo Speech](human/fichas/nemo.md) | Tu objetivo encaja con estos ejemplos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Kokoro, GPT-SoVITS, TTS, Fish Speech, Chatterbox, IndexTTS, CosyVoice**
+**⚖️ ¿Cuál elegir? — Kokoro, edge-tts, LuxTTS**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Kokoro](human/fichas/kokoro.md) | Tu objetivo encaja con estos ejemplos: Narrar una nota propia; Probar una voz para una demo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [edge-tts](human/fichas/edge-tts.md) | Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [LuxTTS](human/fichas/luxtts.md) | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — GPT-SoVITS, Fish Speech, IndexTTS, CosyVoice**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
 | [GPT-SoVITS](human/fichas/gpt-sovits.md) | Tu objetivo encaja con estos ejemplos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [TTS](human/fichas/tts.md) | Tu objetivo encaja con estos ejemplos: Estudiar síntesis de voz local; Comparar modelos multilingües | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Fish Speech](human/fichas/fish-speech.md) | Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [Chatterbox](human/fichas/chatterbox.md) | Tu objetivo encaja con estos ejemplos: Estudiar un modelo TTS histórico; Comparar generación expresiva en investigación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [IndexTTS](human/fichas/index-tts.md) | Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [CosyVoice](human/fichas/cosyvoice.md) | Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
@@ -6699,22 +6341,12 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Combina con:** [open-notebook](human/fichas/open-notebook.md)<br>
 **Más:** [ficha completa](human/fichas/vibevoice.md) · [GitHub](https://github.com/microsoft/VibeVoice)
 
-#### 🎙️ TTS
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 46.2k<br>
-**Qué es:** Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `pip install TTS` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar síntesis de voz local; Comparar modelos multilingües — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisperX](human/fichas/whisperx.md) · [MoviePy](human/fichas/moviepy.md)<br>
-**Más:** [ficha completa](human/fichas/tts.md) · [GitHub](https://github.com/coqui-ai/TTS)
-
 #### 🗣️ VoxCPM
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 42.5k<br>
 **Qué es:** VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install voxcpm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar narración local; Explorar diseño de voz consentido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [TTS](human/fichas/tts.md)<br>
 **Más:** [ficha completa](human/fichas/voxcpm.md) · [GitHub](https://github.com/OpenBMB/VoxCPM)
 
 #### 🗣️ RVC WebUI
@@ -6735,15 +6367,6 @@ python -m pip install --upgrade pip setuptools wheel` (comprobar los pasos compl
 **Arranque:** [Instrucciones originales](https://speech.fish.audio/install/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/fish-speech.md) · [GitHub](https://github.com/fishaudio/fish-speech)
-
-#### 🗣️ Chatterbox
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 27.8k<br>
-**Qué es:** Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip install chatterbox-tts` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un modelo TTS histórico; Comparar generación expresiva en investigación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Pipecat](human/fichas/pipecat.md)<br>
-**Más:** [ficha completa](human/fichas/chatterbox.md) · [GitHub](https://github.com/resemble-ai/chatterbox)
 
 #### 🗣️ IndexTTS
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 25.1k<br>
@@ -6766,16 +6389,6 @@ pip install -U uv  # or see the link above for other install methods` (comprobar
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Pipecat](human/fichas/pipecat.md)<br>
 **Más:** [ficha completa](human/fichas/cosyvoice.md) · [GitHub](https://github.com/QwenAudio/CosyVoice)
-
-#### 🔊 supertonic
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 13.8k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
-**Qué es:** Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/supertone-oss-archive/supertonic/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Reproducir una narración local; Estudiar TTS ONNX en dispositivo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisperX](human/fichas/whisperx.md) · [MoviePy](human/fichas/moviepy.md)<br>
-**Más:** [ficha completa](human/fichas/supertonic.md) · [GitHub](https://github.com/supertone-oss-archive/supertonic)
 
 #### 🎬 edge-tts
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 12.5k<br>
@@ -7123,7 +6736,7 @@ codex plugin add remotion-superpowers@remotion-superpowers` (comprobar los pasos
 **Comando documentado:** `uv sync
 npm install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una noticia para señalización; Probar una pieza informativa breve — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisper](human/fichas/whisper.md) · [supertonic](human/fichas/supertonic.md)<br>
+**Combina con:** [whisper](human/fichas/whisper.md)<br>
 **Más:** [ficha completa](human/fichas/videofy-minimal.md) · [GitHub](https://github.com/schibsted/videofy_minimal)
 
 ---

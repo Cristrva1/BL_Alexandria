@@ -33,7 +33,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar archivos incluidos y cualquier diff propuesto
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`
-**Alternativas (elige una):** `opencode`, `cline`, `continue`
+**Alternativas (elige una):** `opencode`, `cline`
 
 ## `claude-code`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=anthropic,mcp · tags=coding-agent,agents,mcp,typescript
@@ -95,7 +95,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar el plan y los permisos solicitados
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `context7`, `playwright-mcp`
-**Alternativas (elige una):** `continue`, `aider`
+**Alternativas (elige una):** `aider`
 
 ## `codex`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=openai,mcp · tags=coding-agent,agents,rust
@@ -128,37 +128,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `agent-skills`, `spec-kit`, `context7`
 **Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
-
-## `continue`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=coding-agent,typescript
-
-**Qué es:** Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo.
-**Stack:** Editor o CLI correspondiente a la versión final; proveedor configurado
-**Acceso y costes:**
-- API de IA: API de IA opcional. Código Apache; costes del proveedor o cómputo local separados
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El README declara repositorio de solo lectura sin mantenimiento activo y una versión final 2.0.0; la documentación todavía describe Ollama pero no prueba soporte futuro
-- Coste: El coste depende del proveedor o la ruta. Código Apache; costes del proveedor o cómputo local separados
-- Equipo: Preparación según la ruta elegida. Editor o CLI correspondiente a la versión final; proveedor configurado
-**Repo:** https://github.com/continuedev/continue
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/continuedev/continue/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una extensión de código abierta; Revisar integración con Ollama
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee el aviso de fin de mantenimiento y revisa si la versión final cubre tu caso antes de usarla
-**Qué comprobar:** Puedes distinguir código histórico y documentación de configuración
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
-**Alternativas (elige una):** `cline`, `aider`
 
 ## `dsh-android`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
@@ -402,7 +371,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes inspeccionar planificación, sandbox y validación por separado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `e2b`
-**Alternativas (elige una):** `openhands`, `swe-agent`
+**Alternativas (elige una):** `openhands`
 
 ## `openclaude`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,ai,ai-agent,ai-tools,cli,typescript
@@ -463,35 +432,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `awesome-agent-skills`
 **Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`
-
-## `opencode-legacy`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,ai,claude,code,llm,openai,go
-
-**Qué es:** Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush.
-**Stack:** Navegador; interés en la versión histórica
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Consultar el código no cuesta API; ejecutarlo necesitaría proveedor y recursos propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Archivado por procedencia y sin mantenimiento; no se recomienda su instalador antiguo como ruta inicial actual
-- Coste: El coste depende del proveedor o la ruta. Consultar el código no cuesta API; ejecutarlo necesitaría proveedor y recursos propios
-- Equipo: Preparación según la ruta elegida. Navegador; interés en la versión histórica
-**Repo:** https://github.com/opencode-ai/opencode
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un agente terminal en Go; Comprender la evolución hacia Crush
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee el aviso de archivo y sigue el enlace a Crush si buscas la continuación mantenida
-**Qué comprobar:** Puedes distinguir este proyecto del OpenCode de anomalyco
-Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `opencode-manager`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,agent,typescript
@@ -581,7 +521,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes reconocer agente, backend y permisos de la sesión
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ecc`, `sandbox`
-**Alternativas (elige una):** `open-swe`, `swe-agent`
+**Alternativas (elige una):** `open-swe`
 
 ## `openidea`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding,app,typescript
@@ -611,37 +551,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un proyecto de ejemplo y usa buscar en todo para localizar una función
 **Qué comprobar:** Puedes navegar al archivo y reconocer sus referencias
 Revisión documental individual; instalación no ejecutada por Alexandría.
-
-## `swe-agent`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=coding-agent,evaluation,python
-
-**Qué es:** Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo.
-**Stack:** Python; entorno aislado; modelo y repositorio de prueba
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El modelo y los entornos de ejecución pueden generar cargos; licencia MIT no incluye inferencia
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. El equipo concentra ahora desarrollo en mini-swe-agent; este proyecto sigue siendo material de investigación y no garantiza resolver un issue
-- Coste: El coste depende del proveedor o la ruta. El modelo y los entornos de ejecución pueden generar cargos; licencia MIT no incluye inferencia
-- Equipo: Preparación según la ruta elegida. Python; entorno aislado; modelo y repositorio de prueba
-**Repo:** https://github.com/SWE-agent/SWE-agent
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://swe-agent.com/latest/installation/source/
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar resolución de issues; Comparar trayectorias de agentes
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee una trayectoria de ejemplo y define un issue pequeño con una prueba de aceptación
-**Qué comprobar:** Puedes separar la propuesta del agente de una corrección validada
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `swe-bench`, `litellm`
-**Alternativas (elige una):** `openhands`, `open-swe`
 
 ## `t3code`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,ui,typescript

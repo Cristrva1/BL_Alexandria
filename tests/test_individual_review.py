@@ -21,7 +21,10 @@ def test_every_public_identity_has_one_individual_decision_and_current_evidence(
     assert len(rows)==len({r['id'] for r in rows})==679
     baseline={r['id'] for r in rows}
     assert baseline==set(report['repositories'])
-    assert baseline <= {r['id'] for r in catalog['repos']}
+    # The dated ledger stays whole; repos retired later are listed with their reason in data/retired.json.
+    retired={r['id'] for r in json.loads((ROOT/'data/retired.json').read_text(encoding='utf8'))['repos']}
+    assert baseline - retired <= {r['id'] for r in catalog['repos']}
+    assert retired <= baseline
     assert report['individually_reviewed']==report['total']==679 and not report['pending']
     ledger={r['id']:r for r in rows}
     for repo in catalog['repos']:

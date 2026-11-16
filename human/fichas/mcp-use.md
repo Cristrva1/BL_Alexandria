@@ -105,7 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [LangChain MCP Adapters](langchain-mcp-adapters.md) | 3.6k | Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph. |
 | [MCP TypeScript SDK](mcp-typescript-sdk.md) | 13.8k | SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. |
 
 ## Enlaces

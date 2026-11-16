@@ -103,7 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [nanoGPT](nanogpt.md) | 64.8k | Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat. |
 | [nanochat](nanochat.md) | 60.6k | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. |
 
 ## Enlaces

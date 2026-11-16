@@ -102,7 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
-| [supertonic](supertonic.md) | 13.8k | Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos. |
 
 ## Alternativas (elige una)
 

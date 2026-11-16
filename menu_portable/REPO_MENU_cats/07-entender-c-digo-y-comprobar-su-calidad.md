@@ -375,7 +375,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Evalúa una predicción ya preparada sobre una tarea pequeña antes de generar nuevas soluciones
 **Qué comprobar:** El informe muestra si las pruebas del entorno aceptan el parche
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `swe-agent`
 
 ## `tree-sitter`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=code,rust

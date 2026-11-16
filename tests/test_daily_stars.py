@@ -29,6 +29,17 @@ def test_reused_repository_name_cannot_overwrite_an_existing_identity():
     assert not candidates and conflicts[0]['github_id']==99
 
 
+def test_retired_repositories_are_not_proposed_again():
+    retired=[dict(id='old',github_id=7,gh='owner/old'),dict(id='moved',github_id=8,gh='owner/moved')]
+    stars=[star(7,'owner/old'),star(8,'new-owner/moved'),star(9,'Owner/Moved-Too'),star(10,'someone/old')]
+    candidates,conflicts=daily.plan_candidates(stars,[],retired)
+    assert not conflicts
+    # Identity and name both block a retired repo; a different repo with the same short name gets a fresh id.
+    assert [r['github_id'] for r in candidates]==[9,10]
+    assert 'old' not in {r['id'] for r in candidates}
+    assert {r['id'] for r in daily.load_retired()} >= {'flowise','autogen','stable-diffusion-webui'}
+
+
 def test_all_pages_are_scanned_and_nonpublic_repositories_are_excluded():
     pages=[[star(i,'owner/repo'+str(i)) for i in range(100)],
            [star(100,'owner/new'),star(101,'owner/private',True),dict(id=102)]]

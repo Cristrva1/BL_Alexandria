@@ -4,7 +4,7 @@
 
 Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos.
 
-32 repos · 3 secciones
+30 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -22,7 +22,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Prompts y prompt engineering](#prompts-y-prompt-engineering) — 8 repos
 - [Guías, cursos y cookbooks](#guías-cursos-y-cookbooks) — 14 repos
-- [Aprender LLMs desde cero](#aprender-llms-desde-cero) — 10 repos
+- [Aprender LLMs desde cero](#aprender-llms-desde-cero) — 8 repos
 
 ## Prompts y prompt engineering
 
@@ -63,12 +63,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [LLM Course](../fichas/llm-course.md) | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. | Tu objetivo encaja con estos ejemplos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF | API de IA opcional |
 | [LLMs from Scratch](../fichas/llms-from-scratch.md) | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. | Tu objetivo encaja con estos ejemplos: Aprender cómo funciona un Transformer; Estudiar ajuste de instrucciones | API de IA opcional |
 | [awesome-machine-learning](../fichas/awesome-machine-learning.md) | Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. | Tu objetivo encaja con estos ejemplos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje | Sin clave propia de API de IA en la ruta básica |
-| [nanoGPT](../fichas/nanogpt.md) | Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat. | Tu objetivo encaja con estos ejemplos: Comprender un GPT pequeño; Comparar el código histórico con nanochat | Sin clave propia de API de IA en la ruta básica |
 | [nanochat](../fichas/nanochat.md) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | Tu objetivo encaja con estos ejemplos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado | Sin clave propia de API de IA en la ruta básica |
 | [llm.c](../fichas/llm-c.md) | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. | Tu objetivo encaja con estos ejemplos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch | Sin clave propia de API de IA en la ruta básica |
 | [train-llm-from-scratch](../fichas/train-llm-from-scratch.md) | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. | Tu objetivo encaja con estos ejemplos: Comprender la preparación de un corpus; Explorar un entrenamiento pequeño controlado | Sin clave propia de API de IA en la ruta básica |
 | [python-machine-learning-book](../fichas/python-machine-learning-book.md) | Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. | Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos | Sin clave propia de API de IA en la ruta básica |
-| [MachineLearning](../fichas/machinelearning.md) | Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python. | Tu objetivo encaja con estos ejemplos: Estudiar modelos clásicos; Explorar ejemplos antiguos de Keras | Sin clave propia de API de IA en la ruta básica |
 | [how-to-train-your-gpt](../fichas/how-to-train-your-gpt.md) | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción. | Tu objetivo encaja con estos ejemplos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños | Sin clave propia de API de IA en la ruta básica |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)

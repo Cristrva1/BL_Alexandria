@@ -105,7 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Continue](continue.md) | 36.5k | Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo. |
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
 
 ## Enlaces

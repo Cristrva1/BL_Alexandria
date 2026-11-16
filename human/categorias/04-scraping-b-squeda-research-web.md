@@ -4,7 +4,7 @@
 
 Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web.
 
-23 repos · 4 secciones
+21 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,10 +19,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Crawlers y extracción para IA](#crawlers-y-extracción-para-ia) — 11 repos
+- [Crawlers y extracción para IA](#crawlers-y-extracción-para-ia) — 10 repos
 - [Scraping guiado por LLM](#scraping-guiado-por-llm) — 3 repos
 - [Búsqueda, monitoreo y research web](#búsqueda-monitoreo-y-research-web) — 6 repos
-- [Redes sociales y descarga de medios](#redes-sociales-y-descarga-de-medios) — 3 repos
+- [Redes sociales y descarga de medios](#redes-sociales-y-descarga-de-medios) — 2 repos
 
 ## Crawlers y extracción para IA
 
@@ -38,7 +38,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [crawlee-python](../fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | Tu objetivo encaja con estos ejemplos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación | API de IA opcional |
 | [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript | Sin clave propia de API de IA en la ruta básica |
 | [scrapydweb](../fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución | Sin clave propia de API de IA en la ruta básica |
-| [scrapely](../fichas/scrapely.md) | Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. | Tu objetivo encaja con estos ejemplos: Aprender extracción a partir de ejemplos; Estudiar plantillas de scraping sin LLM | Sin clave propia de API de IA en la ruta básica |
 
 ## Scraping guiado por LLM
 
@@ -65,7 +64,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [yt-dlp](../fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición | Sin clave propia de API de IA en la ruta básica |
 | [instaloader](../fichas/instaloader.md) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Tu objetivo encaja con estos ejemplos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo | Sin clave propia de API de IA en la ruta básica |
-| [snscrape](../fichas/snscrape.md) | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | Tu objetivo encaja con estos ejemplos: Estudiar extracción de metadatos sociales; Evaluar disponibilidad de un conector antes de una investigación | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

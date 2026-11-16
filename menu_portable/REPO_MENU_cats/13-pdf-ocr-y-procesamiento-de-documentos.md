@@ -583,33 +583,3 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`
 **Alternativas (elige una):** `docling`
-
-## `youtube2webpage`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,javascript
-
-**Qué es:** Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado.
-**Stack:** Perl; yt-dlp; FFmpeg; video propio con subtítulos disponibles
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El script no necesita modelo; depende de subtítulos y descarga permitida del medio
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Usa subtítulos existentes; no asumas que transcribe automáticamente cualquier video sin subtítulos
-- Coste: Sin pago a un modelo en la ruta básica. El script no necesita modelo; depende de subtítulos y descarga permitida del medio
-- Equipo: Preparación según la ruta elegida. Perl; yt-dlp; FFmpeg; video propio con subtítulos disponibles
-**Repo:** https://github.com/obra/Youtube2Webpage
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/obra/Youtube2Webpage/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una versión legible de un tutorial; Estudiar una clase propia con capturas y texto
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Genera una página de un video corto autorizado y compara un subtítulo con su captura
-**Qué comprobar:** Puedes leer la transcripción y relacionarla con el momento del video
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisper`

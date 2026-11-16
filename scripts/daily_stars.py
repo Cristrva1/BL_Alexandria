@@ -54,15 +54,25 @@ def public_stars(pages: list) -> list[dict]:
     return stars
 
 
-def plan_candidates(stars: list[dict], entries: list[dict]) -> tuple[list, list]:
+def load_retired(root: Path = ROOT) -> list[dict]:
+    """Repos removed on purpose (data/retired.json); a remaining star must not bring them back."""
+    path = root / 'data' / 'retired.json'
+    return json.loads(path.read_text(encoding='utf8'))['repos'] if path.exists() else []
+
+
+def plan_candidates(stars: list[dict], entries: list[dict], retired: list[dict] = ()) -> tuple[list, list]:
     identities = {r['github_id']: r for r in entries if r.get('github_id')}
     names = {(r.get('gh') or '').casefold(): r for r in entries if r.get('gh')}
-    used = {r['id'] for r in entries}
+    retired_ids = {r['github_id'] for r in retired if r.get('github_id')}
+    retired_names = {(r.get('gh') or '').casefold() for r in retired if r.get('gh')}
+    used = {r['id'] for r in entries} | {r['id'] for r in retired}
     candidates, conflicts = [], []
     for repo in stars:
         name = repo['full_name']
         if repo['id'] in identities:
             continue  # A transfer or rename keeps its existing Alexandria id.
+        if repo['id'] in retired_ids or name.casefold() in retired_names:
+            continue  # Retired after review; restoring one needs an explicit editorial decision.
         previous = names.get(name.casefold())
         if previous:
             if previous.get('github_id') and previous['github_id'] != repo['id']:
@@ -125,7 +135,7 @@ def main() -> None:
     checked_at = datetime.now(timezone.utc).isoformat()
     compact = json.loads((ROOT / 'INDICE_IA.json').read_text(encoding='utf8'))
     stars = public_stars(github(f'users/{args.user}/starred?per_page=100&sort=created&direction=desc', paginate=True))
-    candidates, conflicts = plan_candidates(stars, compact['repos'])
+    candidates, conflicts = plan_candidates(stars, compact['repos'], load_retired())
     output = ROOT / 'data/reviews/daily-stars'
     if not args.no_sources:
         for candidate in candidates:

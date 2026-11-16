@@ -179,7 +179,6 @@ Convertir un guion en narración con una ruta local o un servicio.
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
 | [Kokoro](fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | Sin clave propia de API de IA en la ruta básica |
-| [supertonic](fichas/supertonic.md) | Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos. | Sin clave propia de API de IA en la ruta básica |
 | [edge-tts](fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica |
 
 [Ver la ruta en el explorador](../docs/index.html#/rutas?goal=narrar)

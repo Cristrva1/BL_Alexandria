@@ -99,7 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [dash](dash.md) | 24.5k | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. |
-| [data-science-ipython-notebooks](data-science-ipython-notebooks.md) | 29.4k | Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación. |
 
 ## Alternativas (elige una)
 

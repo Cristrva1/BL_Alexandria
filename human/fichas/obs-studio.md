@@ -95,12 +95,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [OpenCut](opencut.md) | 98.4k | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. |
 | [faster-whisper](faster-whisper.md) | 26.8k | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OpenScreen](openscreen.md) | 40k | App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio. |
-
 ## Enlaces
 
 - 🐙 GitHub: [obsproject/obs-studio](https://github.com/obsproject/obs-studio)

@@ -4,7 +4,7 @@
 
 Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.
 
-28 repos · 4 secciones
+22 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,9 +19,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Agentes de investigación financiera](#agentes-de-investigación-financiera) — 7 repos
-- [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 7 repos
-- [Bots y conexiones a exchanges](#bots-y-conexiones-a-exchanges) — 9 repos
-- [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 5 repos
+- [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 5 repos
+- [Bots y conexiones a exchanges](#bots-y-conexiones-a-exchanges) — 6 repos
+- [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 4 repos
 
 ## Agentes de investigación financiera
 
@@ -41,11 +41,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [qlib](../fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | Tu objetivo encaja con estos ejemplos: Comparar modelos sobre datos temporales; Investigar un pipeline cuantitativo reproducible | API de IA opcional |
 | [nautilus_trader](../fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Tu objetivo encaja con estos ejemplos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados | Sin clave propia de API de IA en la ruta básica |
-| [backtrader](../fichas/backtrader.md) | Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado. | Tu objetivo encaja con estos ejemplos: Aprender backtesting por eventos; Comparar supuestos de ejecución de una estrategia | Sin clave propia de API de IA en la ruta básica |
 | [FinRL](../fichas/finrl.md) | Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. | Tu objetivo encaja con estos ejemplos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica | Sin clave propia de API de IA en la ruta básica |
 | [vectorbt](../fichas/vectorbt.md) | Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. | Tu objetivo encaja con estos ejemplos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica | Sin clave propia de API de IA en la ruta básica |
 | [lumibot](../fichas/lumibot.md) | Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers. | Tu objetivo encaja con estos ejemplos: Comparar una estrategia de reglas; Estudiar decisiones de una estrategia AI en backtest | API de IA opcional |
-| [chartAnalyst](../fichas/chartanalyst.md) | Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles. | Tu objetivo encaja con estos ejemplos: Estudiar clasificación de gráficos con redes convolucionales; Practicar separación temporal de datos | Sin clave propia de API de IA en la ruta básica |
 
 ## Bots y conexiones a exchanges
 
@@ -55,10 +53,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [ccxt](../fichas/ccxt.md) | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. | Tu objetivo encaja con estos ejemplos: Unificar consultas de varios mercados; Construir una integración de datos de exchange | Sin clave propia de API de IA en la ruta básica |
 | [hummingbot](../fichas/hummingbot.md) | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias configurables. | Tu objetivo encaja con estos ejemplos: Estudiar un conector de exchange; Evaluar un bot en un entorno de práctica | Sin clave propia de API de IA en la ruta básica |
 | [binance-trader](../fichas/binance-trader.md) | Bot experimental de Python para estudiar estrategias y automatización con la API de Binance. | Tu objetivo encaja con estos ejemplos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange | Sin clave propia de API de IA en la ruta básica |
-| [py-clob-client](../fichas/py-clob-client.md) | Cliente Python antiguo para la API de órdenes de Polymarket; está archivado y conviene revisar su sucesor. | Tu objetivo encaja con estos ejemplos: Planificar una migración de SDK; Comprender una integración histórica de Polymarket | Sin clave propia de API de IA en la ruta básica |
-| [crypto-trader](../fichas/crypto-trader.md) | Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas. | Tu objetivo encaja con estos ejemplos: Estudiar un wrapper de exchange; Revisar una estrategia de umbral sobre datos de prueba | Sin clave propia de API de IA en la ruta básica |
 | [open-sol-bot](../fichas/open-sol-bot.md) | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. | Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain | Sin clave propia de API de IA en la ruta básica |
-| [IntelliTrader](../fichas/intellitrader.md) | Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges. | Tu objetivo encaja con estos ejemplos: Estudiar gestión de una cartera ficticia; Comparar señales sin enviar órdenes reales | Sin clave propia de API de IA en la ruta básica |
 | [py-sdk](../fichas/py-sdk.md) | SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes. | Tu objetivo encaja con estos ejemplos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo | Sin clave propia de API de IA en la ruta básica |
 
 ## Ejemplos y aprendizaje
@@ -66,7 +61,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest | API de IA opcional |
-| [stocks](../fichas/stocks-analyst.md) | Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica. | Tu objetivo encaja con estos ejemplos: Estudiar evaluación de recomendaciones públicas; Preparar un dataset temporal para análisis | Sin clave propia de API de IA en la ruta básica |
 | [PixelFund-AI](../fichas/pixelfund-ai.md) | Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión | API de IA opcional |
 | [pixel-hedge-fund](../fichas/pixel-hedge-fund.md) | Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados. | Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación | Sin clave propia de API de IA en la ruta básica |
 | [company-pixel-office](../fichas/company-pixel-office.md) | Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo. | Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo | Sin clave propia de API de IA en la ruta básica |

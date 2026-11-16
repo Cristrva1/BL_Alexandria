@@ -365,36 +365,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar servidor, resolver y túnel y comprobar conectividad básica
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `nemo-agent-toolkit`
-role=library · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=automation,agents,python
-
-**Qué es:** Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo).
-**Stack:** Python; dependencias del workflow; proveedor; cliente MCP si publicas herramientas
-**Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Código Apache; inferencia, servicios y hardware dependen del workflow y no están incluidos
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: Modelo local no documentado. Documenta publicar workflows con FastMCP; requiere configurar el servidor y no proporciona una integración de suscripción ni un servidor único listo para todos los casos
-- Coste: El coste depende del proveedor o la ruta. Código Apache; inferencia, servicios y hardware dependen del workflow y no están incluidos
-- Equipo: Preparación según la ruta elegida. Python; dependencias del workflow; proveedor; cliente MCP si publicas herramientas
-**Repo:** https://github.com/NVIDIA/NeMo-Agent-Toolkit
-
-**Instalación** [+]:
-
-```
-pip install nvidia-nat
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Perfilar un workflow de agentes; Exponer una herramienta propia por MCP
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Ejecuta un workflow de ejemplo y revisa sus pasos antes de publicarlo como MCP
-**Qué comprobar:** Puedes relacionar configuración, funciones y resultado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`
-
 ## `nemoclaw`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,security,typescript
 

@@ -87,12 +87,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `learning`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [nanoGPT](nanogpt.md) | 64.8k | Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat. |
-
 ## Enlaces
 
 - 🐙 GitHub: [karpathy/llm.c](https://github.com/karpathy/llm.c)

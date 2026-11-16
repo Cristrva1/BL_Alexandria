@@ -32,7 +32,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes observar el equilibrio entre parecido, limpieza y artefactos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `real-esrgan`
-**Alternativas (elige una):** `gfpgan`
 
 ## `comfyui`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
@@ -96,36 +95,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`
 
-## `controlnet`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
-
-**Qué es:** Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación.
-**Stack:** Entorno del proyecto; modelo base y ControlNet compatibles; GPU
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia local no requiere API; pesos del modelo base y control tienen licencias y recursos propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Este repositorio explica la implementación; la extensión WebUI y modelos 1.1 son proyectos o versiones relacionados con instalación distinta
-- Coste: Sin pago a un modelo en la ruta básica. La inferencia local no requiere API; pesos del modelo base y control tienen licencias y recursos propios
-- Equipo: Preparación según la ruta elegida. Entorno del proyecto; modelo base y ControlNet compatibles; GPU
-**Repo:** https://github.com/lllyasviel/ControlNet
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/lllyasviel/ControlNet/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Guiar composición mediante bordes; Generar una ilustración a partir de una pose
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Usa un dibujo de bordes propio y compara generación con y sin ese control
-**Qué comprobar:** Puedes observar cuánto se conserva la estructura del dibujo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`, `comfyui`
-
 ## `diffusers`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
 
@@ -154,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un pipeline sencillo y fija semilla y tamaño para producir una imagen de prueba
 **Qué comprobar:** Puedes guardar imagen y configuración del pipeline
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `controlnet`, `cosmos`
+**Combina con:** `cosmos`
 
 ## `flux`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=image,python
@@ -189,7 +158,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar exactamente el checkpoint usado y sus condiciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `diffusers`
-**Alternativas (elige una):** `stable-diffusion-webui`
 
 ## `fooocus`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
@@ -221,53 +189,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `real-esrgan`
 
-## `gfpgan`
-role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
-
-**Qué es:** Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.
-**Stack:** Python; PyTorch; BasicSR y facexlib; pesos; imagen propia de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API de IA; pesos, hardware y cómputo tienen condiciones propias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Los rasgos reconstruidos son estimaciones generadas y pueden cambiar la identidad aparente; no sirven para certificar detalles originales
-- Coste: Sin pago a un modelo en la ruta básica. No requiere API de IA; pesos, hardware y cómputo tienen condiciones propias
-- Equipo: Preparación según la ruta elegida. Python; PyTorch; BasicSR y facexlib; pesos; imagen propia de prueba
-**Repo:** https://github.com/TencentARC/GFPGAN
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/TencentARC/GFPGAN.git
-    cd GFPGAN
-
-# Install basicsr - https://github.com/xinntao/BasicSR
-    # We use BasicSR for both training and inference
-    pip install basicsr
-
-    # Install facexlib - https://github.com/xinntao/facexlib
-    # We use face detection and face restoration helper in the facexlib package
-    pip install facexlib
-
-    pip install -r requirements.txt
-    python setup.py develop
-
-    # If you want to enhance the background (non-face) regions with Real-ESRGAN,
-    # you also need to install the realesrgan package
-    pip install realesrgan
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Mejorar una copia visual de una fotografía; Estudiar restauración facial con un modelo preentrenado
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Restaura una copia de una foto y compara cara y fondo a tamaño completo
-**Qué comprobar:** Puedes decidir si los detalles nuevos son aceptables sin perder el original
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `real-esrgan`
-**Alternativas (elige una):** `codeformer`
-
 ## `invokeai`
 role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
 
@@ -296,7 +217,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un canvas, genera una zona pequeña y conserva la imagen original en otra capa
 **Qué comprobar:** Puedes comparar la zona editada y sus parámetros
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`, `controlnet`
+**Combina con:** `diffusers`
 **Alternativas (elige una):** `krita-ai-diffusion`
 
 ## `krita-ai-diffusion`
@@ -398,7 +319,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Amplía una imagen propia y compara detalles y artefactos con la original
 **Qué comprobar:** Puedes revisar tamaño de salida, nitidez y detalles inventados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gfpgan`
 
 ## `rembg`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=image,python
@@ -430,36 +350,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`
 
-## `sd-webui-controlnet`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
-
-**Qué es:** Extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más.
-**Stack:** Stable Diffusion WebUI compatible; extensión; pesos de control y preprocesador
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API remota en la ruta local; cada modelo y GPU tienen sus condiciones
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Instalar la extensión no instala necesariamente todos los modelos; múltiples controles aumentan uso de memoria
-- Coste: Sin pago a un modelo en la ruta básica. No necesita API remota en la ruta local; cada modelo y GPU tienen sus condiciones
-- Equipo: Preparación según la ruta elegida. Stable Diffusion WebUI compatible; extensión; pesos de control y preprocesador
-**Repo:** https://github.com/Mikubill/sd-webui-controlnet
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Conservar una composición al generar; Guiar una imagen mediante un boceto
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Carga una referencia de bordes propia y habilita un solo ControlNet antes de generar
-**Qué comprobar:** Puedes comparar estructura y parámetros en la WebUI
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `stable-diffusion-webui`, `controlnet`
-
 ## `sd-webui-forge`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=image,local,python
 
@@ -488,36 +378,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Genera una imagen pequeña y compara memoria y tiempo con la misma configuración de referencia
 **Qué comprobar:** Puedes medir recursos en tu equipo y revisar el resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `controlnet`
-**Alternativas (elige una):** `stable-diffusion-webui`, `comfyui`
-
-## `stable-diffusion-webui`
-role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
-
-**Qué es:** Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.
-**Stack:** Python y Git según ruta; GPU y checkpoint compatibles; espacio para pesos
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia local no necesita API; hardware, modelos y extensiones tienen licencias y costes propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. En Windows sigue la preparación y webui-user.bat del autor; clonar no instala por sí solo todos los pesos y requisitos
-- Coste: Sin pago a un modelo en la ruta básica. La inferencia local no necesita API; hardware, modelos y extensiones tienen licencias y costes propios
-- Equipo: Preparación según la ruta elegida. Python y Git según ruta; GPU y checkpoint compatibles; espacio para pesos
-**Repo:** https://github.com/AUTOMATIC1111/stable-diffusion-webui
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Genera una imagen pequeña con un modelo y semilla identificados y guarda sus parámetros
-**Qué comprobar:** Puedes repetir la generación con la misma configuración
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `sd-webui-controlnet`
-**Alternativas (elige una):** `sd-webui-forge`, `flux`
+**Alternativas (elige una):** `comfyui`

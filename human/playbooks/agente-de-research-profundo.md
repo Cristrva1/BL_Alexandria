@@ -46,7 +46,7 @@ Si la investigación es solo sobre documentos internos, no necesitas buscador ni
 
 ## 🔁 Variantes
 
-- En lugar de [gpt-researcher](../fichas/gpt-researcher.md): [STORM](../fichas/storm.md), [Vane](../fichas/vane.md), [open_deep_research](../fichas/open-deep-research.md)
+- En lugar de [gpt-researcher](../fichas/gpt-researcher.md): [STORM](../fichas/storm.md), [Vane](../fichas/vane.md)
 - En lugar de [crawl4ai](../fichas/crawl4ai.md): [Jina Reader](../fichas/jina-reader.md)
 - En lugar de [browser-use](../fichas/browser-use.md): [Gemini Computer Use (preview)](../fichas/computer-use-preview.md), [Stagehand](../fichas/stagehand.md), [Skyvern](../fichas/skyvern.md)
 - En lugar de [langfuse](../fichas/langfuse.md): [Phoenix](../fichas/phoenix.md), [Opik](../fichas/opik.md), [MLflow](../fichas/mlflow.md)

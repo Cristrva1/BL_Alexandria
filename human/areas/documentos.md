@@ -4,7 +4,7 @@
 
 Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
 
-52 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
+51 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Leer, convertir, firmar y organizar archivos.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -35,7 +35,6 @@ Leer, convertir, firmar y organizar archivos.
 | [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida |
 | [Stirling-PDF](../fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | Sin clave propia de API de IA en la ruta básica |
 | [Unstructured](../fichas/unstructured.md) | ETL open source que transforma documentos complejos en datos estructurados para LLM. | API de IA opcional |
-| [Youtube2Webpage](../fichas/youtube2webpage.md) | Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado. | Sin clave propia de API de IA en la ruta básica |
 
 ### OCR y documentos escaneados
 

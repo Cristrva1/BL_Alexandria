@@ -50,7 +50,7 @@ Si solo vas a consumir un servidor que ya existe, no construyas uno: instálalo 
 
 - En lugar de [FastMCP](../fichas/fastmcp.md): [MCP Python SDK](../fichas/mcp-python-sdk.md)
 - En lugar de [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md): [mcp-use](../fichas/mcp-use.md)
-- En lugar de [mcp-use](../fichas/mcp-use.md): [LangChain MCP Adapters](../fichas/langchain-mcp-adapters.md), [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md)
+- En lugar de [mcp-use](../fichas/mcp-use.md): [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md)
 
 ---
 
