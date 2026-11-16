@@ -100,7 +100,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Ultralytics YOLO](ultralytics.md) | 63.4k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
-| [SAM 2](sam2.md) | 20.1k | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. |
+| [SAM 3](sam3.md) | 12.3k | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. |
 
 ## Enlaces
 

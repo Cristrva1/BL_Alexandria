@@ -4,7 +4,7 @@
 
 Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
 
-105 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
+104 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
 
 ## Opciones para empezar
 
@@ -107,7 +107,7 @@ Agentes y herramientas de búsqueda para investigar una pregunta.
 
 Convertir páginas y redes sociales en contenido o datos.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-extraccion)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-extraccion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -124,7 +124,6 @@ Convertir páginas y redes sociales en contenido o datos.
 | [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Depende de la ruta elegida |
 | [Scrapling](../fichas/scrapling.md) | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. | Sin clave propia de API de IA en la ruta básica |
 | [scrapy](../fichas/scrapy.md) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | Sin clave propia de API de IA en la ruta básica |
-| [scrapydweb](../fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | Sin clave propia de API de IA en la ruta básica |
 | [yt-dlp](../fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | Sin clave propia de API de IA en la ruta básica |
 
 ### Navegadores y automatización web

@@ -4,7 +4,7 @@
 
 Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web.
 
-21 repos · 4 secciones
+20 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Crawlers y extracción para IA](#crawlers-y-extracción-para-ia) — 10 repos
+- [Crawlers y extracción para IA](#crawlers-y-extracción-para-ia) — 9 repos
 - [Scraping guiado por LLM](#scraping-guiado-por-llm) — 3 repos
 - [Búsqueda, monitoreo y research web](#búsqueda-monitoreo-y-research-web) — 6 repos
 - [Redes sociales y descarga de medios](#redes-sociales-y-descarga-de-medios) — 2 repos
@@ -37,7 +37,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [defuddle](../fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Tu objetivo encaja con estos ejemplos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo | Sin clave propia de API de IA en la ruta básica |
 | [crawlee-python](../fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | Tu objetivo encaja con estos ejemplos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación | API de IA opcional |
 | [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript | Sin clave propia de API de IA en la ruta básica |
-| [scrapydweb](../fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución | Sin clave propia de API de IA en la ruta básica |
 
 ## Scraping guiado por LLM
 

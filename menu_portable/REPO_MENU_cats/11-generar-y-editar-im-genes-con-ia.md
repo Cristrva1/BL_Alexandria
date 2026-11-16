@@ -63,37 +63,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes una imagen y puedes identificar los nodos que la produjeron
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `real-esrgan`
-**Alternativas (elige una):** `wan2gp`, `sd-webui-forge`
-
-## `comfyui-ipadapter-plus`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
-
-**Qué es:** Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad.
-**Stack:** ComfyUI compatible; custom node; pesos IPAdapter y encoder CLIP Vision adecuados
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No usa API en la ruta local; pesos y hardware tienen condiciones separadas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Está en mantenimiento limitado desde abril de 2025; revisa compatibilidad de nodos, nombres de pesos y encoder antes de actualizar un flujo existente
-- Coste: Sin pago a un modelo en la ruta básica. No usa API en la ruta local; pesos y hardware tienen condiciones separadas
-- Equipo: Preparación según la ruta elegida. ComfyUI compatible; custom node; pesos IPAdapter y encoder CLIP Vision adecuados
-**Repo:** https://github.com/cubiq/ComfyUI_IPAdapter_plus
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Transferir un estilo desde una referencia propia; Mantener una dirección visual entre variantes
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Carga un workflow de ejemplo con una referencia propia y varía la intensidad de influencia
-**Qué comprobar:** Puedes comparar qué rasgos visuales se conservan en cada salida
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`
+**Alternativas (elige una):** `wan2gp`
 
 ## `diffusers`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
@@ -125,69 +95,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `cosmos`
 
-## `flux`
+## `flux2`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=image,python
 
-**Qué es:** Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes.
-**Stack:** Python 3.10; GPU y memoria según variante; pesos y permiso de acceso cuando corresponda
+**Qué es:** Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas.
+**Stack:** Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face
 **Acceso y costes:**
-- API de IA: API de IA opcional. schnell usa Apache-2.0; varias variantes dev tienen licencia no comercial y ofrecen licencia comercial; API BFL se factura por su ruta
+- API de IA: API de IA opcional. La ruta local no necesita API; la mejora opcional de prompts puede usar un modelo por API de OpenRouter, y BFL ofrece su propia API de pago
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. La licencia del repositorio no sustituye la del modelo; no se puede presentar toda la familia como uso comercial gratuito
-- Coste: El coste depende del proveedor o la ruta. schnell usa Apache-2.0; varias variantes dev tienen licencia no comercial y ofrecen licencia comercial; API BFL se factura por su ruta
-- Equipo: Preparación según la ruta elegida. Python 3.10; GPU y memoria según variante; pesos y permiso de acceso cuando corresponda
-**Repo:** https://github.com/black-forest-labs/flux
+- Modelos locales: Modelos locales documentados. Se ejecuta en tu GPU con los pesos de Hugging Face; klein 4B es la variante pensada para tarjetas domésticas
+- Coste: El coste depende del proveedor o la ruta. Local sin pago por modelo con klein 4B; las variantes no comerciales necesitan licencia para uso comercial y la API de BFL se paga por uso
+- Equipo: GPU o infraestructura especializada. Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face
+**Repo:** https://github.com/black-forest-labs/flux2
 
 **Instalación** [+]:
 
 ```
-cd $HOME && git clone https://github.com/black-forest-labs/flux
-cd $HOME/flux
-python3.10 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -e ".[all]"
+pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-cache-dir
 ```
 
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Elige primero una variante y licencia y genera una imagen pequeña con el ejemplo de texto a imagen
-**Qué comprobar:** Puedes identificar exactamente el checkpoint usado y sus condiciones
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia
+**Evita si:** Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo
+**Primera prueba propuesta:** Genera una imagen pequeña con FLUX.2 [klein] 4B desde la CLI interactiva
+**Qué comprobar:** Obtienes la imagen y sabes qué variante y qué licencia usaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `diffusers`
-
-## `fooocus`
-role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
-
-**Qué es:** Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.
-**Stack:** Distribución oficial; para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM; disco para modelos
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API para generación local; hardware y licencias de modelos son independientes
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales
-- Coste: Sin pago a un modelo en la ruta básica. No requiere API para generación local; hardware y licencias de modelos son independientes
-- Equipo: Preparación según la ruta elegida. Distribución oficial; para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM; disco para modelos
-**Repo:** https://github.com/lllyasviel/Fooocus
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/lllyasviel/Fooocus/blob/main/readme.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una imagen para una idea visual; Probar inpainting sin un grafo complejo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Usa un preset y un prompt sencillo y guarda imagen y ajustes
-**Qué comprobar:** Puedes comparar dos variantes cambiando un solo ajuste
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `real-esrgan`
 
 ## `invokeai`
 role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
@@ -349,33 +287,3 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`
-
-## `sd-webui-forge`
-role=app · exec=local · setup=medium · mcp=False · prov=local · tags=image,local,python
-
-**Qué es:** Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración.
-**Stack:** Paquete o entorno compatible; GPU; checkpoint admitido
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API remota; hardware y modelos tienen requisitos y licencias propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. La promesa de rapidez y ahorro depende de modelo, versión y equipo; el bloque Python del README es un ejemplo de extensión, no el instalador
-- Coste: Sin pago a un modelo en la ruta básica. No necesita API remota; hardware y modelos tienen requisitos y licencias propios
-- Equipo: Preparación según la ruta elegida. Paquete o entorno compatible; GPU; checkpoint admitido
-**Repo:** https://github.com/lllyasviel/stable-diffusion-webui-forge
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Genera una imagen pequeña y compara memoria y tiempo con la misma configuración de referencia
-**Qué comprobar:** Puedes medir recursos en tu equipo y revisar el resultado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `comfyui`

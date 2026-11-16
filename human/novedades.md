@@ -6,6 +6,9 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 
 | Añadido | Repo | Qué hace | Acceso básico |
 |---|---|---|---|
+| 2026-11-15 | [SAM 3](fichas/sam3.md) | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-15 | [FLUX.2](fichas/flux2.md) | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas. | API de IA opcional |
+| 2026-11-15 | [DeepSeek-V3](fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional |
 | 2026-11-14 | [zdog](fichas/zdog.md) | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [x64dbg](fichas/x64dbg.md) | Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [whatsmeow](fichas/whatsmeow.md) | Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. | Sin clave propia de API de IA en la ruta básica |
@@ -42,7 +45,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [shannon](fichas/shannon.md) | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. | Depende de la ruta elegida |
 | 2026-11-14 | [sellbird](fichas/sellbird.md) | Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [security-audit-skill](fichas/security-audit-skill.md) | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [scrapydweb](fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [scientific-agent-skills](fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | API de IA opcional |
 | 2026-11-14 | [scenejs](fichas/scenejs.md) | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [RuView](fichas/ruview.md) | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. | API de IA opcional |
@@ -115,7 +117,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [MiMo-Code](fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | API de IA opcional |
 | 2026-11-14 | [MetaGPT](fichas/metagpt.md) | Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. | Depende de la ruta elegida |
 | 2026-11-14 | [meshoptimizer](fichas/meshoptimizer.md) | Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [MeloTTS](fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [mediapipe](fichas/mediapipe.md) | Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [mediabunny](fichas/mediabunny.md) | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [MasterDnsVPN](fichas/masterdnsvpn.md) | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. | Sin clave propia de API de IA en la ruta básica |
@@ -303,15 +304,12 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [Self-hosted AI Starter Kit](fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Selenium](fichas/selenium.md) | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [SearXNG](fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-10 | [Stable Diffusion WebUI Forge](fichas/sd-webui-forge.md) | Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [screenshot-to-code](fichas/screenshot-to-code.md) | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. | Depende de la ruta elegida |
-| 2026-11-10 | [SAM 2](fichas/sam2.md) | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [RVC WebUI](fichas/rvc.md) | Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [rembg](fichas/rembg.md) | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. | API de IA opcional |
 | 2026-11-10 | [Redash](fichas/redash.md) | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Recharts](fichas/recharts.md) | Librería de gráficos para React construida con D3, declarativa y componible. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [React Bits](fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-10 | [Rasa](fichas/rasa.md) | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. | API de IA opcional |
 | 2026-11-10 | [RAGFlow](fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | Depende de la ruta elegida |
 | 2026-11-10 | [Ragas](fichas/ragas.md) | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. | Depende de la ruta elegida |
 | 2026-11-10 | [Radix Primitives](fichas/radix-primitives.md) | Componentes React sin estilos y accesibles para construir sistemas de diseño propios. | Sin clave propia de API de IA en la ruta básica |
@@ -402,7 +400,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-10 | [goose](fichas/goose.md) | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. | API de IA opcional |
 | 2026-11-10 | [Generative AI for Beginners](fichas/generative-ai-for-beginners.md) | Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. | API de IA opcional |
 | 2026-11-10 | [Gemini CLI](fichas/gemini-cli.md) | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. | API de IA opcional |
-| 2026-11-10 | [FLUX](fichas/flux.md) | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. | API de IA opcional |
 | 2026-11-10 | [Fish Speech](fichas/fish-speech.md) | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [Figma Context MCP](fichas/figma-context-mcp.md) | Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-10 | [FastMCP](fichas/fastmcp.md) | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. | Sin clave propia de API de IA en la ruta básica |
@@ -609,7 +606,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [gpt-researcher](fichas/gpt-researcher.md) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | API de IA opcional |
 | 2026-06-23 | [GitNexus](fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [GEO-SEO Claude](fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional |
-| 2026-06-23 | [Fooocus](fichas/fooocus.md) | Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [fluxer](fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [firecrawl](fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | API de IA opcional |
 | 2026-06-23 | [faster-whisper](fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Sin clave propia de API de IA en la ruta básica |
@@ -620,7 +616,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [dify](fichas/dify.md) | Plataforma integral para construir apps de IA con backend y UI listos. | Depende de la ruta elegida |
 | 2026-06-23 | [diffusers](fichas/diffusers.md) | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [deer-flow](fichas/deer-flow.md) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | Depende de la ruta elegida |
-| 2026-06-23 | [DeepSeek-Coder](fichas/deepseek-coder.md) | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [Deep-Live-Cam](fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [dash](fichas/dash.md) | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [crewAI](fichas/crewai.md) | Framework para orquestar "crews" de agentes con roles y tareas. | Depende de la ruta elegida |
@@ -629,7 +624,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [crawl4ai](fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | API de IA opcional |
 | 2026-06-23 | [cosmos](fichas/cosmos.md) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | API de IA opcional |
 | 2026-06-23 | [Context-Engineering](fichas/context-engineering.md) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | Sin clave propia de API de IA en la ruta básica |
-| 2026-06-23 | [ComfyUI_IPAdapter_plus](fichas/comfyui-ipadapter-plus.md) | Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [ComfyUI](fichas/comfyui.md) | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. | API de IA opcional |
 | 2026-06-23 | [codegraph](fichas/codegraph.md) | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. | API de IA opcional |
 | 2026-06-23 | [Claude Code Plugins Directory](fichas/claude-plugins-official.md) | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Sin clave propia de API de IA en la ruta básica |

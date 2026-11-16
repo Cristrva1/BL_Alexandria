@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **644 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **638 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -15,20 +15,20 @@ Las **644 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 15 | Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos. |
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
 | 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 30 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
-| 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 21 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
+| 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 20 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
 | 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 23 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 23 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 13 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 27 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
 | 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 28 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
 | 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 22 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
-| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 12 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
+| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 9 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
 | 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 15 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 19 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 22 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 27 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
 | 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 26 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
-| 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 11 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
+| 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 10 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 13 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 30 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
 | 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 19 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
@@ -40,7 +40,7 @@ Las **644 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 26 | [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) | 19 | Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario. |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 36 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
 | 28 | [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) | 19 | Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes. |
-| 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 26 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
+| 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 25 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
 | 30 | [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) | 22 | Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores. |
 | 31 | [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) | 8 | Presentaciones, diagramas y documentación visual. Elige entre editar una pieza, escribir su estructura o generarla con un agente; revisa cómo se exporta antes de empezar. |
 | 32 | [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) | 12 | Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Para leer páginas estáticas consulta extracción web; para operar una interfaz empieza por estas herramientas. |
@@ -1031,15 +1031,6 @@ crawl4ai-setup        # installs the browser, once` (comprobar los pasos complet
 **Arranque:** [Instrucciones originales](https://github.com/lorien/awesome-web-scraping/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/awesome-web-scraping.md) · [GitHub](https://github.com/lorien/awesome-web-scraping)
-
-#### 🕷️ scrapydweb
-**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 3.4k<br>
-**Qué es:** Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip install scrapydweb` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [scrapy](human/fichas/scrapy.md)<br>
-**Más:** [ficha completa](human/fichas/scrapydweb.md) · [GitHub](https://github.com/my8100/scrapydweb)
 
 ### Scraping guiado por LLM
 
@@ -2621,13 +2612,6 @@ docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --p
 
 Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.
 
-**⚖️ ¿Cuál elegir? — ComfyUI, Stable Diffusion WebUI Forge**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [ComfyUI](human/fichas/comfyui.md) | Tu objetivo encaja con estos ejemplos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [Stable Diffusion WebUI Forge](human/fichas/sd-webui-forge.md) | Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
 **⚖️ ¿Cuál elegir? — InvokeAI, Krita AI Diffusion**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -2647,15 +2631,6 @@ comfy install` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
 **Más:** [ficha completa](human/fichas/comfyui.md) · [GitHub](https://github.com/Comfy-Org/ComfyUI)
 
-#### 🎨 Fooocus
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 53.9k<br>
-**Qué es:** Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/lllyasviel/Fooocus/blob/main/readme.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una imagen para una idea visual; Probar inpainting sin un grafo complejo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
-**Más:** [ficha completa](human/fichas/fooocus.md) · [GitHub](https://github.com/lllyasviel/Fooocus)
-
 #### 🖌️ InvokeAI
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 29.1k<br>
 **Qué es:** Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables.<br>
@@ -2664,14 +2639,6 @@ comfy install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Retocar una ilustración por regiones; Organizar variantes de una producción visual — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [diffusers](human/fichas/diffusers.md)<br>
 **Más:** [ficha completa](human/fichas/invokeai.md) · [GitHub](https://github.com/invoke-ai/InvokeAI)
-
-#### 🖼️ Stable Diffusion WebUI Forge
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.1k<br>
-**Qué es:** Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/sd-webui-forge.md) · [GitHub](https://github.com/lllyasviel/stable-diffusion-webui-forge)
 
 #### 🖼️ Krita AI Diffusion
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 10.9k<br>
@@ -2684,18 +2651,16 @@ comfy install` (comprobar los pasos completos en la ficha).<br>
 
 ### Modelos, librerías y control
 
-#### 🌀 FLUX ⭐
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 26.1k<br>
-**Qué es:** Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes.<br>
+#### 🌀 FLUX.2 ⭐
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 2.9k<br>
+**Qué es:** Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `cd $HOME && git clone https://github.com/black-forest-labs/flux
-cd $HOME/flux
-python3.10 -m venv .venv
+**Comando documentado:** `python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -e ".[all]"` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-cache-dir` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia — **Evita si:** Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo<br>
 **Combina con:** [ComfyUI](human/fichas/comfyui.md) · [diffusers](human/fichas/diffusers.md)<br>
-**Más:** [ficha completa](human/fichas/flux.md) · [GitHub](https://github.com/black-forest-labs/flux)
+**Más:** [ficha completa](human/fichas/flux2.md) · [GitHub](https://github.com/black-forest-labs/flux2)
 
 #### 🤗 diffusers
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 34.9k<br>
@@ -2705,15 +2670,6 @@ pip install -e ".[all]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Integrar generación de imágenes en Python; Experimentar con modelos de video o audio compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [cosmos](human/fichas/cosmos.md)<br>
 **Más:** [ficha completa](human/fichas/diffusers.md) · [GitHub](https://github.com/huggingface/diffusers)
-
-#### 🪞 ComfyUI_IPAdapter_plus
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 6.2k<br>
-**Qué es:** Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Transferir un estilo desde una referencia propia; Mantener una dirección visual entre variantes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ComfyUI](human/fichas/comfyui.md)<br>
-**Más:** [ficha completa](human/fichas/comfyui-ipadapter-plus.md) · [GitHub](https://github.com/cubiq/ComfyUI_IPAdapter_plus)
 
 ### Restauración, upscaling y edición
 
@@ -3957,15 +3913,6 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [n8n](human/fichas/n8n.md) · [evolution-api](human/fichas/evolution-api.md)<br>
 **Más:** [ficha completa](human/fichas/typebot.md) · [GitHub](https://github.com/baptisteArno/typebot.io)
-
-#### 🤖 Rasa
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 21.4k<br>
-**Qué es:** Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://rasa.com/docs/rasa/installation/environment-set-up); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [chatwoot](human/fichas/chatwoot.md)<br>
-**Más:** [ficha completa](human/fichas/rasa.md) · [GitHub](https://github.com/RasaHQ/rasa)
 
 #### 🤖 Botpress
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 15k<br>
@@ -5336,6 +5283,15 @@ pip install timesfm[torch]` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Polars](human/fichas/polars.md) · [DuckDB](human/fichas/duckdb.md)<br>
 **Más:** [ficha completa](human/fichas/timesfm.md) · [GitHub](https://github.com/google-research/timesfm)
 
+#### 🧩 DeepSeek-V3
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 105k<br>
+**Qué es:** Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang — **Evita si:** Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [SGLang](human/fichas/sglang.md) · [vLLM](human/fichas/vllm.md)<br>
+**Más:** [ficha completa](human/fichas/deepseek-v3.md) · [GitHub](https://github.com/deepseek-ai/DeepSeek-V3)
+
 #### 🧩 laya
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 35.5k<br>
 **Qué es:** Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.<br>
@@ -5343,15 +5299,6 @@ pip install timesfm[torch]` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `python -m pip install laya` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Clasificar consultas por intención; Elegir una opción estructurada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Más:** [ficha completa](human/fichas/laya.md) · [GitHub](https://github.com/NandhaKishorM/laya)
-
-#### 🧩 DeepSeek-Coder
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 24.4k<br>
-**Qué es:** Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación de código local; Comparar variantes de un modelo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [codegraph](human/fichas/codegraph.md)<br>
-**Más:** [ficha completa](human/fichas/deepseek-coder.md) · [GitHub](https://github.com/deepseek-ai/DeepSeek-Coder)
 
 #### 🌌 cosmos
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 12.4k<br>
@@ -6086,16 +6033,16 @@ conda activate LivePortrait` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [supervision](human/fichas/supervision.md) · [Label Studio](human/fichas/label-studio.md)<br>
 **Más:** [ficha completa](human/fichas/ultralytics.md) · [GitHub](https://github.com/ultralytics/ultralytics)
 
-#### 👁️ SAM 2 ⭐
-**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 20.1k<br>
-**Qué es:** Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.<br>
+#### 👁️ SAM 3 ⭐
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 12.3k<br>
+**Qué es:** Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `git clone https://github.com/facebookresearch/sam2.git && cd sam2
-
+**Comando documentado:** `git clone https://github.com/facebookresearch/sam3.git
+cd sam3
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video — **Evita si:** No tienes una GPU NVIDIA compatible o necesitas una licencia permisiva como Apache; revisa los límites antes de elegirlo<br>
 **Combina con:** [Label Studio](human/fichas/label-studio.md) · [supervision](human/fichas/supervision.md)<br>
-**Más:** [ficha completa](human/fichas/sam2.md) · [GitHub](https://github.com/facebookresearch/sam2)
+**Más:** [ficha completa](human/fichas/sam3.md) · [GitHub](https://github.com/facebookresearch/sam3)
 
 #### 👁️ OpenCV
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 91.6k<br>
@@ -6138,7 +6085,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `docker pull heartexlabs/label-studio:latest
 docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/label-studio:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un dataset de imágenes; Revisar etiquetas de texto o audio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [SAM 2](human/fichas/sam2.md)<br>
+**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [SAM 3](human/fichas/sam3.md)<br>
 **Más:** [ficha completa](human/fichas/label-studio.md) · [GitHub](https://github.com/HumanSignal/label-studio)
 
 #### 📚 tfjs-models
@@ -6397,14 +6344,6 @@ pip install -U uv  # or see the link above for other install methods` (comprobar
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/edge-tts.md) · [GitHub](https://github.com/rany2/edge-tts)
-
-#### 🧩 MeloTTS
-**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 7.7k<br>
-**Qué es:** Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una narración local; Comparar idiomas de una demo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Más:** [ficha completa](human/fichas/melotts.md) · [GitHub](https://github.com/myshell-ai/MeloTTS)
 
 #### 🗣️ LuxTTS
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 5.6k<br>

@@ -793,7 +793,7 @@ Ofrece modelos a través de una API; el harness DSH es otra pieza.
 
 - Pesos descargables, chat web y API no tienen necesariamente la misma licencia, límites o modelo.
 
-Fichas del catálogo: [deepseek-coder](fichas/deepseek-coder.md)
+Fichas del catálogo: [deepseek-v3](fichas/deepseek-v3.md)
 
 ### Fuentes
 

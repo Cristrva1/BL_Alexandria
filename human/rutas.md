@@ -196,7 +196,6 @@ Elegir una interfaz y revisar modelos, pesos y requisitos de GPU.
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
 | [ComfyUI](fichas/comfyui.md) | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. | API de IA opcional |
-| [Fooocus](fichas/fooocus.md) | Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. | Sin clave propia de API de IA en la ruta básica |
 | [rembg](fichas/rembg.md) | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. | API de IA opcional |
 
 [Ver la ruta en el explorador](../docs/index.html#/rutas?goal=imagenes)

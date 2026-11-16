@@ -106,7 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [WanGP](wan2gp.md) | 11.8k | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
-| [Stable Diffusion WebUI Forge](sd-webui-forge.md) | 13.1k | Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración. |
 
 ## Enlaces
 

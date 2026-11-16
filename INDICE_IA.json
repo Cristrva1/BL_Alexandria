@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 644 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 638 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -282,7 +282,7 @@
    "deepseek": {
     "label": "DeepSeek",
     "best_fit_repos": [
-     "deepseek-coder"
+     "deepseek-v3"
     ],
     "note": "Es el modelo; el resto es agnóstico vía proveedor compatible con OpenAI."
    }
@@ -378,7 +378,7 @@
    "title": "Buscar, extraer y monitorear información web",
    "desc": "Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web.",
    "file": "human/categorias/04-scraping-b-squeda-research-web.md",
-   "count": 21,
+   "count": 20,
    "subs": [
     {
      "key": "crawlers",
@@ -563,7 +563,7 @@
    "title": "Generar y editar imágenes con IA",
    "desc": "Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-   "count": 12,
+   "count": 9,
    "subs": [
     {
      "key": "interfaces",
@@ -756,7 +756,7 @@
      "title": "Comunidades,chat y llamadas"
     }
    ],
-   "count": 11
+   "count": 10
   },
   {
    "num": 18,
@@ -1040,7 +1040,7 @@
      "title": "Procesamiento y limpieza de audio"
     }
    ],
-   "count": 26
+   "count": 25
   },
   {
    "num": 30,
@@ -3117,41 +3117,6 @@
    ],
    "routes": [
     "no_api",
-    "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "rasa",
-   "name": "Rasa",
-   "emoji": "🤖",
-   "cat": 17,
-   "sub": "chatbots",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "chatbot",
-    "agents",
-    "python"
-   ],
-   "stars": 21383,
-   "gh": "RasaHQ/rasa",
-   "lib": false,
-   "pick": false,
-   "one": "Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local.",
-   "alt": [],
-   "doc": "human/fichas/rasa.md",
-   "github_id": 70908208,
-   "added_at": "2026-11-10",
-   "goals": [
-    "whatsapp"
-   ],
-   "routes": [
-    "no_api",
-    "local_model",
     "api"
    ],
    "source_archived": false
@@ -10839,8 +10804,8 @@
    "source_archived": false
   },
   {
-   "id": "deepseek-coder",
-   "name": "DeepSeek-Coder",
+   "id": "deepseek-v3",
+   "name": "DeepSeek-V3",
    "emoji": "🧩",
    "cat": 24,
    "sub": "modelos",
@@ -10850,23 +10815,24 @@
    "mcp": false,
    "prov": [],
    "tags": [
+    "llm",
     "inference",
     "python"
    ],
-   "stars": 24373,
-   "gh": "deepseek-ai/DeepSeek-Coder",
+   "stars": 104843,
+   "gh": "deepseek-ai/DeepSeek-V3",
    "lib": false,
    "pick": false,
-   "one": "Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.",
+   "one": "Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.",
    "alt": [],
-   "doc": "human/fichas/deepseek-coder.md",
-   "github_id": 707551301,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
+   "doc": "human/fichas/deepseek-v3.md",
+   "github_id": 908531752,
+   "added_at": "2026-11-15",
    "goals": [],
    "routes": [
     "no_api",
-    "local_model"
+    "local_model",
+    "api"
    ],
    "source_archived": false
   },
@@ -13994,8 +13960,7 @@
    "pick": true,
    "one": "Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos.",
    "alt": [
-    "wan2gp",
-    "sd-webui-forge"
+    "wan2gp"
    ],
    "doc": "human/fichas/comfyui.md",
    "github_id": 589831718,
@@ -14008,40 +13973,6 @@
     "no_api",
     "local_model",
     "api"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "fooocus",
-   "name": "Fooocus",
-   "emoji": "🎨",
-   "cat": 11,
-   "sub": "interfaces",
-   "role": "app",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "image",
-    "python"
-   ],
-   "stars": 53928,
-   "gh": "lllyasviel/Fooocus",
-   "lib": false,
-   "pick": false,
-   "one": "Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.",
-   "alt": [],
-   "doc": "human/fichas/fooocus.md",
-   "github_id": 676676006,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
    ],
    "source_archived": false
   },
@@ -14072,44 +14003,6 @@
    "github_id": 525592995,
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "sd-webui-forge",
-   "name": "Stable Diffusion WebUI Forge",
-   "emoji": "🖼️",
-   "cat": 11,
-   "sub": "interfaces",
-   "role": "app",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [
-    "local"
-   ],
-   "tags": [
-    "image",
-    "local",
-    "python"
-   ],
-   "stars": 13126,
-   "gh": "lllyasviel/stable-diffusion-webui-forge",
-   "lib": false,
-   "pick": false,
-   "one": "Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración.",
-   "alt": [
-    "comfyui"
-   ],
-   "doc": "human/fichas/sd-webui-forge.md",
-   "github_id": 743116659,
-   "added_at": "2026-11-10",
    "goals": [
     "imagenes"
    ],
@@ -14159,8 +14052,8 @@
    "source_archived": false
   },
   {
-   "id": "flux",
-   "name": "FLUX",
+   "id": "flux2",
+   "name": "FLUX.2",
    "emoji": "🌀",
    "cat": 11,
    "sub": "modelos",
@@ -14175,15 +14068,15 @@
     "image",
     "python"
    ],
-   "stars": 26059,
-   "gh": "black-forest-labs/flux",
+   "stars": 2871,
+   "gh": "black-forest-labs/flux2",
    "lib": false,
    "pick": true,
-   "one": "Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes.",
+   "one": "Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas.",
    "alt": [],
-   "doc": "human/fichas/flux.md",
-   "github_id": 836642963,
-   "added_at": "2026-11-10",
+   "doc": "human/fichas/flux2.md",
+   "github_id": 1103476826,
+   "added_at": "2026-11-15",
    "goals": [
     "imagenes"
    ],
@@ -14217,40 +14110,6 @@
    "alt": [],
    "doc": "human/fichas/diffusers.md",
    "github_id": 498011141,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "imagenes"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "comfyui-ipadapter-plus",
-   "name": "ComfyUI_IPAdapter_plus",
-   "emoji": "🪞",
-   "cat": 11,
-   "sub": "modelos",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "image",
-    "python"
-   ],
-   "stars": 6181,
-   "gh": "cubiq/ComfyUI_IPAdapter_plus",
-   "lib": false,
-   "pick": false,
-   "one": "Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad.",
-   "alt": [],
-   "doc": "human/fichas/comfyui-ipadapter-plus.md",
-   "github_id": 685001175,
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
@@ -14580,14 +14439,14 @@
    "source_archived": false
   },
   {
-   "id": "sam2",
-   "name": "SAM 2",
+   "id": "sam3",
+   "name": "SAM 3",
    "emoji": "👁️",
    "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
-   "setup": "medium",
+   "setup": "heavy",
    "mcp": false,
    "prov": [],
    "tags": [
@@ -14595,15 +14454,15 @@
     "video",
     "python"
    ],
-   "stars": 20149,
-   "gh": "facebookresearch/sam2",
+   "stars": 12304,
+   "gh": "facebookresearch/sam3",
    "lib": false,
    "pick": true,
-   "one": "Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.",
+   "one": "Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta.",
    "alt": [],
-   "doc": "human/fichas/sam2.md",
-   "github_id": 835452752,
-   "added_at": "2026-11-10",
+   "doc": "human/fichas/sam3.md",
+   "github_id": 1021587722,
+   "added_at": "2026-11-15",
    "goals": [
     "imagenes"
    ],
@@ -18399,45 +18258,6 @@
     "claude",
     "codex",
     "antigravity"
-   ],
-   "source_archived": false
-  },
-  {
-   "id": "scrapydweb",
-   "name": "scrapydweb",
-   "emoji": "🕷️",
-   "cat": 4,
-   "sub": "crawlers",
-   "role": "platform",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "crawlers",
-    "dashboard",
-    "log-analysis",
-    "log-parsing",
-    "scrapy",
-    "scrapy-log-analysis",
-    "scrapy-visualization",
-    "scrapyd"
-   ],
-   "stars": 3411,
-   "gh": "my8100/scrapydweb",
-   "github_id": 150997854,
-   "lib": false,
-   "pick": false,
-   "one": "Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.",
-   "alt": [],
-   "doc": "human/fichas/scrapydweb.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "investigar"
-   ],
-   "routes": [
-    "no_api"
    ],
    "source_archived": false
   },
@@ -23975,43 +23795,6 @@
    "source_archived": false
   },
   {
-   "id": "melotts",
-   "name": "MeloTTS",
-   "cat": 29,
-   "sub": "tts",
-   "role": "runtime",
-   "exec": "local",
-   "setup": "heavy",
-   "mcp": false,
-   "prov": [
-    "local"
-   ],
-   "tags": [
-    "tts",
-    "model",
-    "python"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.",
-   "alt": [],
-   "stars": 7714,
-   "github_id": 760022246,
-   "gh": "myshell-ai/MeloTTS",
-   "lang": "Python",
-   "license": "MIT",
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "goals": [
-    "narrar"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "laya",
    "name": "laya",
    "cat": 24,
@@ -26869,12 +26652,10 @@
     "description": "Elegir una interfaz y revisar modelos, pesos y requisitos de GPU.",
     "starters": [
      "comfyui",
-     "fooocus",
      "rembg"
     ],
     "guided": [
      "comfyui",
-     "fooocus",
      "invokeai",
      "rembg"
     ],
@@ -34381,8 +34162,8 @@
    }
   ],
   "editorial_review": {
-   "total": 644,
-   "reviewed": 644,
+   "total": 638,
+   "reviewed": 638,
    "date": "2026-11-15",
    "report": "reports/review-679-2026-11-14.json",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."

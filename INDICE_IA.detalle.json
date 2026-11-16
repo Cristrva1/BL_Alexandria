@@ -2243,119 +2243,6 @@
    },
    "source_archived": false
   },
-  "rasa": {
-   "name": "Rasa",
-   "cat": 17,
-   "sub": "chatbots",
-   "desc": "Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local.",
-   "why": "Usos propuestos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo.",
-   "how": "No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión",
-   "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://rasa.com/docs/rasa/installation/environment-set-up",
-   "cases": [
-    "Estudiar NLU de atención al cliente",
-    "Construir un diálogo de reglas para una demo"
-   ],
-   "stack": "Python y versión de Rasa compatibles; datos NLU; entorno local",
-   "models": "La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión",
-   "combines_with": [
-    "chatwoot"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/RasaHQ/rasa",
-   "homepage": "https://rasa.com/docs/rasa/",
-   "license": "Apache-2.0",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/rasa.md",
-   "access": {
-    "mode": "software",
-    "api": "optional",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "choice",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios",
-    "subscription_note": "No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión",
-    "local_note": "No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión",
-    "cost_note": "La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios",
-    "hardware_note": "Python y versión de Rasa compatibles; datos NLU; entorno local",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/RasaHQ/rasa/blob/3.6.x/README.md"
-    ],
-    "source_blob_sha": "c535027d142bc9d193772383bbb126725f28d250",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Python y versión de Rasa compatibles",
-     "datos NLU",
-     "entorno local"
-    ],
-    "steps": [
-     "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-     "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "",
-    "command_language": "",
-    "command_status": "readme",
-    "source": "https://rasa.com/docs/rasa/installation/environment-set-up",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Entrena un ejemplo pequeño con dos intenciones y prueba frases nuevas distintas a las de entrenamiento",
-   "first_try": {
-    "action": "Entrena un ejemplo pequeño con dos intenciones y prueba frases nuevas distintas a las de entrenamiento",
-    "success": "Puedes inspeccionar intención, confianza y respuesta del diálogo",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Estudiar NLU de atención al cliente",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Construir un diálogo de reglas para una demo",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/RasaHQ/rasa/blob/3.6.x/README.md",
-    "source_blob_sha": "c535027d142bc9d193772383bbb126725f28d250",
-    "previous_source_blob_sha": "c535027d142bc9d193772383bbb126725f28d250",
-    "previous_category": [
-     17,
-     "chatbots"
-    ],
-    "category_verdict": "confirmed",
-    "note": "No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "botpress": {
    "name": "Botpress",
    "cat": 17,
@@ -26111,122 +25998,6 @@
    },
    "source_archived": false
   },
-  "deepseek-coder": {
-   "name": "DeepSeek-Coder",
-   "cat": 24,
-   "sub": "modelos",
-   "desc": "Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.",
-   "why": "Usos propuestos: Estudiar generación de código local; Comparar variantes de un modelo.",
-   "how": "Es una familia de modelos y no el IDE DeepSeek ni una integración nativa con Claude Code, Codex o Antigravity",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md",
-   "cases": [
-    "Estudiar generación de código local",
-    "Comparar variantes de un modelo"
-   ],
-   "stack": "Python; modelo y tokenizer; equipo según tamaño y cuantización",
-   "models": "Inferencia propia sin API obligatoria; hardware y licencia de pesos separados del código MIT",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar generación de código local; Comparar variantes de un modelo",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Es una familia de modelos y no el IDE DeepSeek ni una integración nativa con Claude Code, Codex o Antigravity",
-   "combines_with": [
-    "litellm",
-    "codegraph"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/deepseek-ai/DeepSeek-Coder",
-   "homepage": "https://chat.deepseek.com/",
-   "license": "MIT",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/deepseek-coder.md",
-   "previously_registered_local": true,
-   "access": {
-    "mode": "software",
-    "api": "not_required",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "Inferencia propia sin API obligatoria; hardware y licencia de pesos separados del código MIT",
-    "subscription_note": "Es una familia de modelos y no el IDE DeepSeek ni una integración nativa con Claude Code, Codex o Antigravity",
-    "local_note": "Es una familia de modelos y no el IDE DeepSeek ni una integración nativa con Claude Code, Codex o Antigravity",
-    "cost_note": "Inferencia propia sin API obligatoria; hardware y licencia de pesos separados del código MIT",
-    "hardware_note": "Python; modelo y tokenizer; equipo según tamaño y cuantización",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md"
-    ],
-    "source_blob_sha": "da37e859515ba5330d9eb7860a516cfa0a396e6e",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Python",
-     "modelo y tokenizer",
-     "equipo según tamaño y cuantización"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "pip install -r requirements.txt",
-    "command_language": "",
-    "command_status": "documented",
-    "source": "https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Carga una variante que quepa en tu equipo y pide completar una función de prueba",
-   "first_try": {
-    "action": "Carga una variante que quepa en tu equipo y pide completar una función de prueba",
-    "success": "Puedes revisar la salida y probarla con entradas conocidas",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Estudiar generación de código local",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Comparar variantes de un modelo",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md",
-    "source_blob_sha": "da37e859515ba5330d9eb7860a516cfa0a396e6e",
-    "previous_source_blob_sha": "da37e859515ba5330d9eb7860a516cfa0a396e6e",
-    "previous_category": [
-     24,
-     "modelos"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Es una familia de modelos y no el IDE DeepSeek ni una integración nativa con Claude Code, Codex o Antigravity",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "cosmos": {
    "name": "cosmos",
    "cat": 24,
@@ -35861,8 +35632,7 @@
     "real-esrgan"
    ],
    "alternatives": [
-    "wan2gp",
-    "sd-webui-forge"
+    "wan2gp"
    ],
    "repo": "https://github.com/Comfy-Org/ComfyUI",
    "homepage": "https://www.comfy.org/",
@@ -35943,131 +35713,6 @@
     ],
     "category_verdict": "confirmed",
     "note": "El modo offline desactiva nodos API opcionales; importar un workflow puede exigir modelos o nodos adicionales",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
-  "fooocus": {
-   "name": "Fooocus",
-   "cat": 11,
-   "sub": "interfaces",
-   "desc": "Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.",
-   "why": "Usos propuestos: Bocetar una imagen para una idea visual; Probar inpainting sin un grafo complejo.",
-   "how": "Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales",
-   "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/lllyasviel/Fooocus/blob/main/readme.md",
-   "cases": [
-    "Bocetar una imagen para una idea visual",
-    "Probar inpainting sin un grafo complejo"
-   ],
-   "stack": "Distribución oficial; para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM; disco para modelos",
-   "models": "No requiere API para generación local; hardware y licencias de modelos son independientes",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar una imagen para una idea visual; Probar inpainting sin un grafo complejo",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales",
-   "combines_with": [
-    "real-esrgan"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/lllyasviel/Fooocus",
-   "homepage": "",
-   "license": "GPL-3.0",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/fooocus.md",
-   "previously_registered_local": true,
-   "access": {
-    "mode": "software",
-    "api": "not_required",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "No requiere API para generación local; hardware y licencias de modelos son independientes",
-    "subscription_note": "Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales",
-    "local_note": "Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales",
-    "cost_note": "No requiere API para generación local; hardware y licencias de modelos son independientes",
-    "hardware_note": "Distribución oficial; para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM; disco para modelos",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/lllyasviel/Fooocus/blob/main/readme.md"
-    ],
-    "source_blob_sha": "6f34a950644db384089acf13e857d92f47ba07d3",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Distribución oficial",
-     "para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM",
-     "disco para modelos"
-    ],
-    "steps": [
-     "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-     "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "",
-    "command_language": "",
-    "command_status": "readme",
-    "source": "https://github.com/lllyasviel/Fooocus/blob/main/readme.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15",
-    "local_requirements": {
-     "cpu_only_min_ram_gb": 32,
-     "cpu_only_os": [
-      "windows",
-      "linux",
-      "mac_intel"
-     ],
-     "note": "La tabla del autor indica 32 GB de RAM para CPU sin GPU y un rendimiento mucho menor que con GPU. Apple Silicon usa una ruta MPS distinta.",
-     "source": "https://github.com/lllyasviel/Fooocus/blob/main/readme.md#minimal-requirement",
-     "checked_at": "2026-11-15"
-    }
-   },
-   "first_step": "Usa un preset y un prompt sencillo y guarda imagen y ajustes",
-   "first_try": {
-    "action": "Usa un preset y un prompt sencillo y guarda imagen y ajustes",
-    "success": "Puedes comparar dos variantes cambiando un solo ajuste",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Bocetar una imagen para una idea visual",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Probar inpainting sin un grafo complejo",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/lllyasviel/Fooocus/blob/main/readme.md",
-    "source_blob_sha": "6f34a950644db384089acf13e857d92f47ba07d3",
-    "previous_source_blob_sha": "6f34a950644db384089acf13e857d92f47ba07d3",
-    "previous_category": [
-     11,
-     "interfaces"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales",
     "checks": [
      "identity",
      "category",
@@ -36199,120 +35844,6 @@
    },
    "source_archived": false
   },
-  "sd-webui-forge": {
-   "name": "Stable Diffusion WebUI Forge",
-   "cat": 11,
-   "sub": "interfaces",
-   "desc": "Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración.",
-   "why": "Usos propuestos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina.",
-   "how": "La promesa de rapidez y ahorro depende de modelo, versión y equipo; el bloque Python del README es un ejemplo de extensión, no el instalador",
-   "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md",
-   "cases": [
-    "Probar un checkpoint con gestión de memoria distinta",
-    "Comparar variantes de WebUI en una máquina"
-   ],
-   "stack": "Paquete o entorno compatible; GPU; checkpoint admitido",
-   "models": "No necesita API remota; hardware y modelos tienen requisitos y licencias propios",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "La promesa de rapidez y ahorro depende de modelo, versión y equipo; el bloque Python del README es un ejemplo de extensión, no el instalador",
-   "combines_with": [],
-   "alternatives": [
-    "comfyui"
-   ],
-   "repo": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
-   "homepage": "",
-   "license": "AGPL-3.0",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/sd-webui-forge.md",
-   "access": {
-    "mode": "software",
-    "api": "not_required",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "No necesita API remota; hardware y modelos tienen requisitos y licencias propios",
-    "subscription_note": "La promesa de rapidez y ahorro depende de modelo, versión y equipo; el bloque Python del README es un ejemplo de extensión, no el instalador",
-    "local_note": "La promesa de rapidez y ahorro depende de modelo, versión y equipo; el bloque Python del README es un ejemplo de extensión, no el instalador",
-    "cost_note": "No necesita API remota; hardware y modelos tienen requisitos y licencias propios",
-    "hardware_note": "Paquete o entorno compatible; GPU; checkpoint admitido",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md"
-    ],
-    "source_blob_sha": "3d0d202a714970b42032b69d523e0ba59a1134c3",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Paquete o entorno compatible",
-     "GPU",
-     "checkpoint admitido"
-    ],
-    "steps": [
-     "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-     "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "",
-    "command_language": "",
-    "command_status": "readme",
-    "source": "https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Genera una imagen pequeña y compara memoria y tiempo con la misma configuración de referencia",
-   "one": "Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración.",
-   "first_try": {
-    "action": "Genera una imagen pequeña y compara memoria y tiempo con la misma configuración de referencia",
-    "success": "Puedes medir recursos en tu equipo y revisar el resultado",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Probar un checkpoint con gestión de memoria distinta",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Comparar variantes de WebUI en una máquina",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md",
-    "source_blob_sha": "3d0d202a714970b42032b69d523e0ba59a1134c3",
-    "previous_source_blob_sha": "3d0d202a714970b42032b69d523e0ba59a1134c3",
-    "previous_category": [
-     11,
-     "interfaces"
-    ],
-    "category_verdict": "confirmed",
-    "note": "La promesa de rapidez y ahorro depende de modelo, versión y equipo; el bloque Python del README es un ejemplo de extensión, no el instalador",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "krita-ai-diffusion": {
    "name": "Krita AI Diffusion",
    "cat": 11,
@@ -36429,121 +35960,6 @@
    },
    "source_archived": false
   },
-  "flux": {
-   "name": "FLUX",
-   "cat": 11,
-   "sub": "modelos",
-   "desc": "Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes.",
-   "why": "Usos propuestos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación.",
-   "how": "La licencia del repositorio no sustituye la del modelo; no se puede presentar toda la familia como uso comercial gratuito",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/black-forest-labs/flux/blob/main/README.md",
-   "cases": [
-    "Prototipar imagen con FLUX.1 schnell",
-    "Comparar un modelo de edición con otro de generación"
-   ],
-   "stack": "Python 3.10; GPU y memoria según variante; pesos y permiso de acceso cuando corresponda",
-   "models": "schnell usa Apache-2.0; varias variantes dev tienen licencia no comercial y ofrecen licencia comercial; API BFL se factura por su ruta",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "La licencia del repositorio no sustituye la del modelo; no se puede presentar toda la familia como uso comercial gratuito",
-   "combines_with": [
-    "comfyui",
-    "diffusers"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/black-forest-labs/flux",
-   "homepage": "",
-   "license": "Apache-2.0",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/flux.md",
-   "access": {
-    "mode": "software",
-    "api": "optional",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "choice",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "schnell usa Apache-2.0; varias variantes dev tienen licencia no comercial y ofrecen licencia comercial; API BFL se factura por su ruta",
-    "subscription_note": "La licencia del repositorio no sustituye la del modelo; no se puede presentar toda la familia como uso comercial gratuito",
-    "local_note": "La licencia del repositorio no sustituye la del modelo; no se puede presentar toda la familia como uso comercial gratuito",
-    "cost_note": "schnell usa Apache-2.0; varias variantes dev tienen licencia no comercial y ofrecen licencia comercial; API BFL se factura por su ruta",
-    "hardware_note": "Python 3.10; GPU y memoria según variante; pesos y permiso de acceso cuando corresponda",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/black-forest-labs/flux/blob/main/README.md"
-    ],
-    "source_blob_sha": "732ee76cbe37db39d6400dd64e376240c41e537d",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Python 3.10",
-     "GPU y memoria según variante",
-     "pesos y permiso de acceso cuando corresponda"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "cd $HOME && git clone https://github.com/black-forest-labs/flux\ncd $HOME/flux\npython3.10 -m venv .venv\nsource .venv/bin/activate\npip install -e \".[all]\"",
-    "command_language": "bash",
-    "command_status": "documented",
-    "source": "https://github.com/black-forest-labs/flux/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Elige primero una variante y licencia y genera una imagen pequeña con el ejemplo de texto a imagen",
-   "first_try": {
-    "action": "Elige primero una variante y licencia y genera una imagen pequeña con el ejemplo de texto a imagen",
-    "success": "Puedes identificar exactamente el checkpoint usado y sus condiciones",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Prototipar imagen con FLUX.1 schnell",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Comparar un modelo de edición con otro de generación",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/black-forest-labs/flux/blob/main/README.md",
-    "source_blob_sha": "732ee76cbe37db39d6400dd64e376240c41e537d",
-    "previous_source_blob_sha": "732ee76cbe37db39d6400dd64e376240c41e537d",
-    "previous_category": [
-     11,
-     "modelos"
-    ],
-    "category_verdict": "confirmed",
-    "note": "La licencia del repositorio no sustituye la del modelo; no se puede presentar toda la familia como uso comercial gratuito",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "diffusers": {
    "name": "diffusers",
    "cat": 11,
@@ -36644,120 +36060,6 @@
     ],
     "category_verdict": "confirmed",
     "note": "Instalar Diffusers no descarga todos los modelos; elige el pipeline y comprueba su licencia y hardware",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
-  "comfyui-ipadapter-plus": {
-   "name": "ComfyUI_IPAdapter_plus",
-   "cat": 11,
-   "sub": "modelos",
-   "desc": "Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad.",
-   "why": "Usos propuestos: Transferir un estilo desde una referencia propia; Mantener una dirección visual entre variantes.",
-   "how": "Está en mantenimiento limitado desde abril de 2025; revisa compatibilidad de nodos, nombres de pesos y encoder antes de actualizar un flujo existente",
-   "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md",
-   "cases": [
-    "Transferir un estilo desde una referencia propia",
-    "Mantener una dirección visual entre variantes"
-   ],
-   "stack": "ComfyUI compatible; custom node; pesos IPAdapter y encoder CLIP Vision adecuados",
-   "models": "No usa API en la ruta local; pesos y hardware tienen condiciones separadas",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Transferir un estilo desde una referencia propia; Mantener una dirección visual entre variantes",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Está en mantenimiento limitado desde abril de 2025; revisa compatibilidad de nodos, nombres de pesos y encoder antes de actualizar un flujo existente",
-   "combines_with": [
-    "comfyui"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
-   "homepage": "",
-   "license": "GPL-3.0",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/comfyui-ipadapter-plus.md",
-   "previously_registered_local": true,
-   "access": {
-    "mode": "software",
-    "api": "not_required",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "No usa API en la ruta local; pesos y hardware tienen condiciones separadas",
-    "subscription_note": "Está en mantenimiento limitado desde abril de 2025; revisa compatibilidad de nodos, nombres de pesos y encoder antes de actualizar un flujo existente",
-    "local_note": "Está en mantenimiento limitado desde abril de 2025; revisa compatibilidad de nodos, nombres de pesos y encoder antes de actualizar un flujo existente",
-    "cost_note": "No usa API en la ruta local; pesos y hardware tienen condiciones separadas",
-    "hardware_note": "ComfyUI compatible; custom node; pesos IPAdapter y encoder CLIP Vision adecuados",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md"
-    ],
-    "source_blob_sha": "5e837afe4f216105c8bb51327d35bb2658114b1d",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "ComfyUI compatible",
-     "custom node",
-     "pesos IPAdapter y encoder CLIP Vision adecuados"
-    ],
-    "steps": [
-     "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-     "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "",
-    "command_language": "",
-    "command_status": "readme",
-    "source": "https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Carga un workflow de ejemplo con una referencia propia y varía la intensidad de influencia",
-   "first_try": {
-    "action": "Carga un workflow de ejemplo con una referencia propia y varía la intensidad de influencia",
-    "success": "Puedes comparar qué rasgos visuales se conservan en cada salida",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Transferir un estilo desde una referencia propia",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Mantener una dirección visual entre variantes",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md",
-    "source_blob_sha": "5e837afe4f216105c8bb51327d35bb2658114b1d",
-    "previous_source_blob_sha": "5e837afe4f216105c8bb51327d35bb2658114b1d",
-    "previous_category": [
-     11,
-     "modelos"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Está en mantenimiento limitado desde abril de 2025; revisa compatibilidad de nodos, nombres de pesos y encoder antes de actualizar un flujo existente",
     "checks": [
      "identity",
      "category",
@@ -37820,122 +37122,6 @@
    },
    "source_archived": false
   },
-  "sam2": {
-   "name": "SAM 2",
-   "cat": 28,
-   "sub": "vision",
-   "desc": "Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.",
-   "why": "Usos propuestos: Separar un objeto de un video; Preparar máscaras para edición.",
-   "how": "La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/facebookresearch/sam2/blob/main/README.md",
-   "cases": [
-    "Separar un objeto de un video",
-    "Preparar máscaras para edición"
-   ],
-   "stack": "Python >=3.10; PyTorch >=2.5.1; checkpoint; GPU y compilación según ruta",
-   "models": "No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto",
-   "combines_with": [
-    "label-studio",
-    "supervision"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/facebookresearch/sam2",
-   "homepage": "",
-   "license": "Apache-2.0",
-   "lang": "Jupyter Notebook",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/sam2.md",
-   "access": {
-    "mode": "software",
-    "api": "not_required",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias",
-    "subscription_note": "La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto",
-    "local_note": "La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto",
-    "cost_note": "No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias",
-    "hardware_note": "Python >=3.10; PyTorch >=2.5.1; checkpoint; GPU y compilación según ruta",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/facebookresearch/sam2/blob/main/README.md"
-    ],
-    "source_blob_sha": "85a7eb958bced5495ff990c2bcbe7d99662c660f",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "developer",
-    "entry_url": "",
-    "prerequisites": [
-     "Python >=3.10",
-     "PyTorch >=2.5.1",
-     "checkpoint",
-     "GPU y compilación según ruta"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "git clone https://github.com/facebookresearch/sam2.git && cd sam2\n\npip install -e .",
-    "command_language": "bash",
-    "command_status": "documented",
-    "source": "https://github.com/facebookresearch/sam2/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Marca un objeto en un clip corto y revisa la máscara a lo largo de varios frames",
-   "first_try": {
-    "action": "Marca un objeto en un clip corto y revisa la máscara a lo largo de varios frames",
-    "success": "Puedes detectar pérdida de seguimiento o zonas mal segmentadas",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Separar un objeto de un video",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Preparar máscaras para edición",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/facebookresearch/sam2/blob/main/README.md",
-    "source_blob_sha": "85a7eb958bced5495ff990c2bcbe7d99662c660f",
-    "previous_source_blob_sha": "85a7eb958bced5495ff990c2bcbe7d99662c660f",
-    "previous_category": [
-     28,
-     "vision"
-    ],
-    "category_verdict": "confirmed",
-    "note": "La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "opencv": {
    "name": "OpenCV",
    "cat": 28,
@@ -38182,7 +37368,7 @@
    "limits": "La función básica es anotación humana; no necesita un modelo para empezar y los backends de ML se configuran por separado",
    "combines_with": [
     "ultralytics",
-    "sam2"
+    "sam3"
    ],
    "alternatives": [],
    "repo": "https://github.com/HumanSignal/label-studio",
@@ -54425,125 +53611,6 @@
    },
    "source_archived": false
   },
-  "scrapydweb": {
-   "name": "scrapydweb",
-   "cat": 4,
-   "sub": "crawlers",
-   "desc": "Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.",
-   "why": "Usos propuestos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución.",
-   "how": "El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Guía original: https://github.com/my8100/scrapydweb/blob/master/README.md",
-   "cases": [
-    "Supervisar tareas Scrapy",
-    "Consultar fallos y tiempos de una ejecución"
-   ],
-   "stack": "Python; Scrapyd iniciado en los hosts que administrarás",
-   "models": "No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos",
-   "combines_with": [
-    "scrapy"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/my8100/scrapydweb",
-   "homepage": "https://github.com/my8100/files",
-   "license": "GPL-3.0",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/scrapydweb.md",
-   "sources": {
-    "checked_at": "2026-11-14",
-    "readme_url": "https://github.com/my8100/scrapydweb/blob/master/README.md",
-    "readme_blob_sha": "1a2970f177a090b0a658b69a7048e842063dc38a",
-    "root_tree_sha": "1341cf93561f4bbf3ca387e51f7569674453452b",
-    "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
-   },
-   "access": {
-    "mode": "software",
-    "api": "not_required",
-    "local_model": "not_applicable",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios",
-    "subscription_note": "El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos",
-    "local_note": "El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos",
-    "cost_note": "No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios",
-    "hardware_note": "Python; Scrapyd iniciado en los hosts que administrarás",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/my8100/scrapydweb/blob/master/README.md"
-    ],
-    "source_blob_sha": "1a2970f177a090b0a658b69a7048e842063dc38a",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Python",
-     "Scrapyd iniciado en los hosts que administrarás"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente."
-    ],
-    "command": "pip install scrapydweb",
-    "command_language": "bash",
-    "command_status": "documented",
-    "source": "https://github.com/my8100/scrapydweb/blob/master/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Conecta una instancia local Scrapyd y ejecuta un spider de prueba desde el panel",
-   "first_try": {
-    "action": "Conecta una instancia local Scrapyd y ejecuta un spider de prueba desde el panel",
-    "success": "Ves el trabajo, sus logs y el resultado",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Supervisar tareas Scrapy",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Consultar fallos y tiempos de una ejecución",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/my8100/scrapydweb/blob/master/README.md",
-    "source_blob_sha": "1a2970f177a090b0a658b69a7048e842063dc38a",
-    "previous_source_blob_sha": "1a2970f177a090b0a658b69a7048e842063dc38a",
-    "previous_category": [
-     4,
-     "crawlers"
-    ],
-    "category_verdict": "confirmed",
-    "note": "El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "awesome-web-scraping": {
    "name": "awesome-web-scraping",
    "cat": 4,
@@ -67460,124 +66527,6 @@
    },
    "source_archived": false
   },
-  "melotts": {
-   "name": "MeloTTS",
-   "cat": 29,
-   "sub": "tts",
-   "desc": "Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.",
-   "how": "Los idiomas y voces soportados son específicos; no es un conector nativo de Claude Code, Codex o Antigravity",
-   "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md",
-   "cases": [
-    "Preparar una narración local",
-    "Comparar idiomas de una demo"
-   ],
-   "stack": "Python; modelo y dependencias; texto de prueba",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una narración local; Comparar idiomas de una demo",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Los idiomas y voces soportados son específicos; no es un conector nativo de Claude Code, Codex o Antigravity",
-   "combines_with": [],
-   "alternatives": [],
-   "repo": "https://github.com/myshell-ai/MeloTTS",
-   "homepage": "",
-   "license": "MIT",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/melotts.md",
-   "access": {
-    "api": "not_required",
-    "local_model": "supported",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "La biblioteca declara licencia MIT; la ejecución local usa hardware y cada recurso externo debe revisarse",
-    "subscription_note": "Los idiomas y voces soportados son específicos; no es un conector nativo de Claude Code, Codex o Antigravity",
-    "local_note": "Los idiomas y voces soportados son específicos; no es un conector nativo de Claude Code, Codex o Antigravity",
-    "cost_note": "La biblioteca declara licencia MIT; la ejecución local usa hardware y cada recurso externo debe revisarse",
-    "hardware_note": "Python; modelo y dependencias; texto de prueba",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/myshell-ai/MeloTTS/blob/main/README.md"
-    ],
-    "mode": "software",
-    "source_blob_sha": "46cddb7756ac2a50814458a031ed8635ca52a2ba",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Python",
-     "modelo y dependencias",
-     "texto de prueba"
-    ],
-    "steps": [
-     "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-     "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "",
-    "command_language": "",
-    "command_status": "readme",
-    "source": "https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Sintetiza dos frases en español y revisa pronunciación y ritmo",
-   "sources": {
-    "readme_blob_sha": "46cddb7756ac2a50814458a031ed8635ca52a2ba",
-    "root_tree_sha": "209145371cff8fc3bd60d7be902ea69cbdb7965a",
-    "readme_url": "https://github.com/myshell-ai/MeloTTS/blob/main/README.md",
-    "github_checked": "2026-11-14",
-    "collection": "saved-resources-document"
-   },
-   "why": "Usos propuestos: Preparar una narración local; Comparar idiomas de una demo.",
-   "models": "La biblioteca declara licencia MIT; la ejecución local usa hardware y cada recurso externo debe revisarse",
-   "first_try": {
-    "action": "Sintetiza dos frases en español y revisa pronunciación y ritmo",
-    "success": "Puedes identificar idioma, voz y salida de audio",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Preparar una narración local",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Comparar idiomas de una demo",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/myshell-ai/MeloTTS/blob/main/README.md",
-    "source_blob_sha": "46cddb7756ac2a50814458a031ed8635ca52a2ba",
-    "previous_source_blob_sha": "46cddb7756ac2a50814458a031ed8635ca52a2ba",
-    "previous_category": [
-     29,
-     "tts"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Los idiomas y voces soportados son específicos; no es un conector nativo de Claude Code, Codex o Antigravity",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false
-  },
   "laya": {
    "name": "laya",
    "cat": 24,
@@ -75762,6 +74711,363 @@
     ],
     "installation_tested": false
    }
+  },
+  "sam3": {
+   "name": "SAM 3",
+   "cat": 28,
+   "sub": "vision",
+   "desc": "Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta.",
+   "why": "Usos propuestos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video.",
+   "how": "Necesita una GPU NVIDIA con CUDA 12.6 o superior y pedir acceso a los pesos en Hugging Face antes de descargarlos; su licencia es la SAM License de Meta",
+   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/facebookresearch/sam3/blob/main/README.md",
+   "cases": [
+    "Recortar todas las personas o productos de una foto con una frase",
+    "Seguir un objeto descrito con texto a lo largo de un video"
+   ],
+   "stack": "Python 3.12 o superior; PyTorch 2.7 o superior; GPU con CUDA 12.6 o superior; cuenta de Hugging Face con acceso aprobado a los pesos",
+   "models": "Modelo local de 848 millones de parámetros; no usa API remota, pero los pesos exigen aceptar la licencia SAM en Hugging Face",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video",
+   "avoid_if": "No tienes una GPU NVIDIA compatible o necesitas una licencia permisiva como Apache; revisa los límites antes de elegirlo",
+   "limits": "Los pesos se descargan solo tras aprobarse la solicitud en Hugging Face; requiere GPU con CUDA y la licencia SAM tiene condiciones propias",
+   "combines_with": [
+    "label-studio",
+    "supervision"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/facebookresearch/sam3",
+   "homepage": "https://ai.meta.com/sam3",
+   "license": "SAM License",
+   "lang": "Python",
+   "updated": "2026-11-15",
+   "doc": "human/fichas/sam3.md",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "gpu",
+    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
+    "api_note": "No necesita API remota; los pesos se descargan desde Hugging Face tras aceptar la licencia SAM",
+    "subscription_note": "Claude Code, Codex o Antigravity pueden ayudarte a instalarlo, pero el modelo se ejecuta en tu GPU",
+    "local_note": "Se ejecuta en tu equipo con PyTorch y una GPU NVIDIA con CUDA 12.6 o superior",
+    "cost_note": "Sin pago por uso de un modelo; el coste es tu GPU o una GPU alquilada",
+    "hardware_note": "Python 3.12 o superior; PyTorch 2.7 o superior; GPU con CUDA 12.6 o superior; cuenta de Hugging Face con acceso aprobado a los pesos",
+    "checked_at": "2026-11-15",
+    "review": "documented",
+    "sources": [
+     "https://github.com/facebookresearch/sam3/blob/main/README.md"
+    ],
+    "source_blob_sha": "9aad5341b0d517d6dde1ed5329aec5a4c61d7a0c",
+    "antigravity": "not_documented"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "entry_url": "",
+    "prerequisites": [
+     "Python 3.12 o superior",
+     "PyTorch 2.7 o superior",
+     "GPU con CUDA 12.6 o superior",
+     "acceso aprobado a los pesos en Hugging Face"
+    ],
+    "steps": [
+     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
+     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+    ],
+    "command": "git clone https://github.com/facebookresearch/sam3.git\ncd sam3\npip install -e .",
+    "command_language": "bash",
+    "command_status": "documented",
+    "source": "https://github.com/facebookresearch/sam3/blob/main/README.md",
+    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
+    "checked_at": "2026-11-15"
+   },
+   "first_step": "Escribe «perro» como indicación en una foto con varios perros y revisa las máscaras",
+   "first_try": {
+    "action": "Escribe «perro» como indicación en una foto con varios perros y revisa las máscaras",
+    "success": "Cada perro aparece con su propia máscara y caja, y puedes ver cuáles faltan o sobran",
+    "execution": "proposed_not_executed"
+   },
+   "practical_examples": [
+    {
+     "scenario": "Recortar todas las personas o productos de una foto con una frase",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Seguir un objeto descrito con texto a lo largo de un video",
+     "status": "illustrative"
+    }
+   ],
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-15",
+    "source": "https://github.com/facebookresearch/sam3/blob/main/README.md",
+    "source_blob_sha": "9aad5341b0d517d6dde1ed5329aec5a4c61d7a0c",
+    "category_verdict": "confirmed",
+    "note": "Sustituye a SAM 2: añade segmentación por concepto con texto. Pesos con acceso controlado en Hugging Face y licencia SAM.",
+    "replaces": "sam2",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "sources": {
+    "checked_at": "2026-11-15",
+    "readme_url": "https://github.com/facebookresearch/sam3/blob/main/README.md",
+    "readme_blob_sha": "9aad5341b0d517d6dde1ed5329aec5a4c61d7a0c",
+    "root_tree_sha": "eef6839bcfc3458dd52ea80535dc6bd62aea86b1",
+    "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
+   },
+   "source_archived": false
+  },
+  "flux2": {
+   "name": "FLUX.2",
+   "cat": 11,
+   "sub": "modelos",
+   "desc": "Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas.",
+   "why": "Usos propuestos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia.",
+   "how": "FLUX.2 [klein] 4B usa Apache 2.0 y cabe en unos 8 GB de VRAM; klein 9B y FLUX.2 [dev] usan una licencia no comercial y [dev] necesita mucha más memoria",
+   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/black-forest-labs/flux2/blob/main/README.md",
+   "cases": [
+    "Generar imágenes de producto en tu propia GPU",
+    "Editar una foto combinando varias imágenes de referencia"
+   ],
+   "stack": "Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face",
+   "models": "klein 4B y el autoencoder usan Apache 2.0; klein 9B y FLUX.2 [dev] usan la licencia no comercial de FLUX; la API de BFL se factura aparte",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia",
+   "avoid_if": "Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo",
+   "limits": "La licencia del código no cubre todos los pesos: revisa la de cada variante antes de un uso comercial. El código de referencia se probó en GPU de centro de datos",
+   "combines_with": [
+    "comfyui",
+    "diffusers"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/black-forest-labs/flux2",
+   "homepage": "https://bfl.ai",
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-15",
+   "doc": "human/fichas/flux2.md",
+   "access": {
+    "mode": "software",
+    "api": "optional",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "cost": "choice",
+    "hardware": "gpu",
+    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
+    "api_note": "La ruta local no necesita API; la mejora opcional de prompts puede usar un modelo por API de OpenRouter, y BFL ofrece su propia API de pago",
+    "subscription_note": "Claude Code, Codex o Antigravity pueden ayudarte a instalarlo, pero las imágenes se generan en tu GPU o en la API de BFL",
+    "local_note": "Se ejecuta en tu GPU con los pesos de Hugging Face; klein 4B es la variante pensada para tarjetas domésticas",
+    "cost_note": "Local sin pago por modelo con klein 4B; las variantes no comerciales necesitan licencia para uso comercial y la API de BFL se paga por uso",
+    "hardware_note": "Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face",
+    "checked_at": "2026-11-15",
+    "review": "documented",
+    "sources": [
+     "https://github.com/black-forest-labs/flux2/blob/main/README.md"
+    ],
+    "source_blob_sha": "7ec6cfd40849e4c924302ae87d8f2647da45523a",
+    "antigravity": "not_documented"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "entry_url": "",
+    "prerequisites": [
+     "Python 3.12",
+     "GPU NVIDIA con CUDA",
+     "memoria de vídeo según la variante",
+     "pesos desde Hugging Face"
+    ],
+    "steps": [
+     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
+     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+    ],
+    "command": "python3.12 -m venv .venv\nsource .venv/bin/activate\npip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-cache-dir",
+    "command_language": "bash",
+    "command_status": "documented",
+    "source": "https://github.com/black-forest-labs/flux2/blob/main/README.md",
+    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
+    "checked_at": "2026-11-15"
+   },
+   "first_step": "Genera una imagen pequeña con FLUX.2 [klein] 4B desde la CLI interactiva",
+   "first_try": {
+    "action": "Genera una imagen pequeña con FLUX.2 [klein] 4B desde la CLI interactiva",
+    "success": "Obtienes la imagen y sabes qué variante y qué licencia usaste",
+    "execution": "proposed_not_executed"
+   },
+   "practical_examples": [
+    {
+     "scenario": "Generar imágenes de producto en tu propia GPU",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Editar una foto combinando varias imágenes de referencia",
+     "status": "illustrative"
+    }
+   ],
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-15",
+    "source": "https://github.com/black-forest-labs/flux2/blob/main/README.md",
+    "source_blob_sha": "7ec6cfd40849e4c924302ae87d8f2647da45523a",
+    "category_verdict": "confirmed",
+    "note": "Sustituye al repositorio de FLUX.1. Licencias distintas por variante: Apache 2.0 en klein 4B, no comercial en klein 9B y [dev].",
+    "replaces": "flux",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "sources": {
+    "checked_at": "2026-11-15",
+    "readme_url": "https://github.com/black-forest-labs/flux2/blob/main/README.md",
+    "readme_blob_sha": "7ec6cfd40849e4c924302ae87d8f2647da45523a",
+    "root_tree_sha": "50fe5162777813d869182b139e83b10743caef15",
+    "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
+   },
+   "source_archived": false
+  },
+  "deepseek-v3": {
+   "name": "DeepSeek-V3",
+   "cat": 24,
+   "sub": "modelos",
+   "desc": "Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.",
+   "why": "Usos propuestos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang.",
+   "how": "Ejecutarlo en local requiere un servidor con varias GPU de centro de datos; para la mayoría de personas la ruta práctica es la API de pago compatible con OpenAI",
+   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md",
+   "cases": [
+    "Conectar un modelo abierto potente a un agente mediante la API de DeepSeek",
+    "Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang"
+   ],
+   "stack": "API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM",
+   "models": "Código con licencia MIT; los pesos usan la licencia de modelo de DeepSeek, que permite uso comercial; la API se factura por uso",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang",
+   "avoid_if": "Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo",
+   "limits": "No cabe en un equipo doméstico: la demo oficial usa dos nodos de 8 GPU. No es un IDE ni una integración nativa con Claude Code, Codex o Antigravity",
+   "combines_with": [
+    "litellm",
+    "sglang",
+    "vllm"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/deepseek-ai/DeepSeek-V3",
+   "homepage": "https://www.deepseek.com/",
+   "license": "MIT",
+   "lang": "Python",
+   "updated": "2026-11-15",
+   "doc": "human/fichas/deepseek-v3.md",
+   "access": {
+    "mode": "software",
+    "api": "optional",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "cost": "choice",
+    "hardware": "gpu",
+    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
+    "api_note": "API de pago compatible con OpenAI en platform.deepseek.com; la ruta local no usa API pero necesita infraestructura de varias GPU",
+    "subscription_note": "No es un cliente de Claude Code, Codex o Antigravity; se usa como proveedor de modelo vía API compatible con OpenAI",
+    "local_note": "Pesos abiertos en Hugging Face; se sirven con SGLang, vLLM, LMDeploy o TensorRT-LLM en servidores con varias GPU",
+    "cost_note": "La API se paga por uso; la ruta local evita ese pago pero exige hardware de centro de datos",
+    "hardware_note": "API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM",
+    "checked_at": "2026-11-15",
+    "review": "documented",
+    "sources": [
+     "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md"
+    ],
+    "source_blob_sha": "e94a77fda8274fc1f2c9ade7d524be003788de21",
+    "antigravity": "not_documented"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "entry_url": "",
+    "prerequisites": [
+     "cuenta en la plataforma de DeepSeek para la API",
+     "o un servidor con varias GPU para la ruta local",
+     "un motor de inferencia como SGLang o vLLM"
+    ],
+    "steps": [
+     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
+     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+    ],
+    "command": "",
+    "command_language": "",
+    "command_status": "readme",
+    "source": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md",
+    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
+    "checked_at": "2026-11-15"
+   },
+   "first_step": "Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta",
+   "first_try": {
+    "action": "Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta",
+    "success": "Recibes la respuesta y ves en tu panel el consumo de esa llamada",
+    "execution": "proposed_not_executed"
+   },
+   "practical_examples": [
+    {
+     "scenario": "Conectar un modelo abierto potente a un agente mediante la API de DeepSeek",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang",
+     "status": "illustrative"
+    }
+   ],
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-15",
+    "source": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md",
+    "source_blob_sha": "e94a77fda8274fc1f2c9ade7d524be003788de21",
+    "category_verdict": "confirmed",
+    "note": "Sustituye a DeepSeek-Coder (2023) como referencia del modelo DeepSeek. Ruta local solo con infraestructura de varias GPU.",
+    "replaces": "deepseek-coder",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "sources": {
+    "checked_at": "2026-11-15",
+    "readme_url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md",
+    "readme_blob_sha": "e94a77fda8274fc1f2c9ade7d524be003788de21",
+    "root_tree_sha": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
+    "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
+   },
+   "source_archived": false
   }
  },
  "meta": {
