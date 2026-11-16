@@ -35,9 +35,9 @@ Se usa en remoto (alojado por GitHub, con OAuth o token) en hosts compatibles, o
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[goose](goose.md)
+[goose](goose.md) · [Kilo Code](kilocode.md)
 
 **Notas:** Sin alternativas declaradas. Usa el modo de solo lectura cuando no necesites escribir.
 

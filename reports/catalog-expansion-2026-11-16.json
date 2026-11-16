@@ -938,12 +938,230 @@
         "license": "MIT",
         "pushed_at": "2026-11-02"
       }
+    ],
+    "p06": [
+      {
+        "id": "python-telegram-bot",
+        "full_name": "python-telegram-bot/python-telegram-bot",
+        "github_id": 38696925,
+        "readme_blob_sha": "62b3e41f940c1d4c33bc6be58175d11adcdd4e00",
+        "stars": 29594,
+        "license": "LGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kilocode",
+        "full_name": "Kilo-Org/kilocode",
+        "github_id": 946087422,
+        "readme_blob_sha": "a1944bab3c3e6b5586f5a9065bd5df1cd7cc1e28",
+        "stars": 28010,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "qwen-code",
+        "full_name": "QwenLM/qwen-code",
+        "github_id": 1008713177,
+        "readme_blob_sha": "f1452ecb9f78089da829c77c368fdf048f3eef08",
+        "stars": 30566,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "uptime-kuma",
+        "full_name": "louislam/uptime-kuma",
+        "github_id": 382496361,
+        "readme_blob_sha": "eb23a1b7e8d53bf2d92daa69c62d420d7ddce447",
+        "stars": 94452,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "dokploy",
+        "full_name": "Dokploy/dokploy",
+        "github_id": 788847937,
+        "readme_blob_sha": "4e78a277017d4f87202013cbf71037034a6bce83",
+        "stars": 38545,
+        "license": "Apache-2.0 + licencia propietaria (/proprietary)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "frp",
+        "full_name": "fatedier/frp",
+        "github_id": 48378947,
+        "readme_blob_sha": "d1998eaa69391414fb88be1e8fa9d031b58b9c5b",
+        "stars": 110591,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-10"
+      },
+      {
+        "id": "headscale",
+        "full_name": "juanfont/headscale",
+        "github_id": 273871859,
+        "readme_blob_sha": "c3a854f0a4ceaccca621af3610f05ef8fc88ab13",
+        "stars": 45750,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "discord-js",
+        "full_name": "discordjs/discord.js",
+        "github_id": 40484398,
+        "readme_blob_sha": "ae445fec90fd5ee35d26cc9f6c6855a568760c90",
+        "stars": 26837,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "rocket-chat",
+        "full_name": "RocketChat/Rocket.Chat",
+        "github_id": 35866694,
+        "readme_blob_sha": "84109f3b1b39bb78f0574bda1763139c4f9a415e",
+        "stars": 46515,
+        "license": "MIT + licencia Enterprise (ee/)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mattermost",
+        "full_name": "mattermost/mattermost",
+        "github_id": 37448451,
+        "readme_blob_sha": "448f0f269a0c92f441527fe51704e3827696d190",
+        "stars": 39621,
+        "license": "AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "synapse",
+        "full_name": "element-hq/synapse",
+        "github_id": 731190011,
+        "readme_blob_sha": "599dafefb7ccba2bc834982fc71cd4ad532d99f6",
+        "stars": 4800,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "signal-cli",
+        "full_name": "AsamK/signal-cli",
+        "github_id": 35418187,
+        "readme_blob_sha": "a98f651c21501585c63a437da7bfda2be1a61175",
+        "stars": 5051,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "zammad",
+        "full_name": "zammad/zammad",
+        "github_id": 3898922,
+        "readme_blob_sha": "21fe878728b204c8863017b75d8fdfa43cf15248",
+        "stars": 6121,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "freescout",
+        "full_name": "freescout-help-desk/freescout",
+        "github_id": 138328462,
+        "readme_blob_sha": "de54b533d51d454860ca982e9a48795f1c586f6b",
+        "stars": 4670,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "espocrm",
+        "full_name": "espocrm/espocrm",
+        "github_id": 24459441,
+        "readme_blob_sha": "62e9141a2e1cea7a15cb57e67bca8168531f54f9",
+        "stars": 3620,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "easyappointments",
+        "full_name": "alextselegidis/easyappointments",
+        "github_id": 27195711,
+        "readme_blob_sha": "e1678866560dc8dd2cb0d5c84328e114508e2360",
+        "stars": 4491,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "zed",
+        "full_name": "zed-industries/zed",
+        "github_id": 340547520,
+        "readme_blob_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
+        "stars": 95114,
+        "license": "GPL-3.0 (Apache-2.0 en componentes marcados)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "mini-swe-agent",
+        "full_name": "SWE-agent/mini-swe-agent",
+        "github_id": 1010318950,
+        "readme_blob_sha": "7db1d82dfa92eaa00adeb10c8681677a9e6ec639",
+        "stars": 9643,
+        "license": "MIT",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "caddy",
+        "full_name": "caddyserver/caddy",
+        "github_id": 29207621,
+        "readme_blob_sha": "24b466d8c42d1b198ac13e49d81ad53df8b6328d",
+        "stars": 79083,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "traefik",
+        "full_name": "traefik/traefik",
+        "github_id": 42408804,
+        "readme_blob_sha": "de1ddd2717d453af9c2f597247011da8227a345b",
+        "stars": 65563,
+        "license": "MIT",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "appwrite",
+        "full_name": "appwrite/appwrite",
+        "github_id": 180190854,
+        "readme_blob_sha": "39a96d254f1d23e622630e5004d54a9de331ef7d",
+        "stars": 58106,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "portainer",
+        "full_name": "portainer/portainer",
+        "github_id": 59239347,
+        "readme_blob_sha": "98b8f608aef5a9004b5add91bc186d32f5faea12",
+        "stars": 38833,
+        "license": "Zlib",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "netbird",
+        "full_name": "netbirdio/netbird",
+        "github_id": 357897199,
+        "readme_blob_sha": "4dbfc7bd0b8236c4d60c3e1be90046c0457ce9d6",
+        "stars": 31035,
+        "license": "BSD-3-Clause + AGPL-3.0 (management, signal, relay)",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "wg-easy",
+        "full_name": "wg-easy/wg-easy",
+        "github_id": 369764441,
+        "readme_blob_sha": "b80abcec5b9c25b6f4786fd588e19e41093b3def",
+        "stars": 27497,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-09"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 103,
-  "total_repositories": 726
+  "added_count": 127,
+  "total_repositories": 750
 }

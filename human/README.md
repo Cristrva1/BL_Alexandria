@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-724 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+748 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -23,17 +23,17 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
-| [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 62 |
+| [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 68 |
 | [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Credenciales y privacidad, Aprender ciberseguridad | 48 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 95 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 25 |
-| [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 49 |
+| [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 59 |
 | [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 116 |
 | [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 52 |
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 59 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 29 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 48 |
-| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 72 |
+| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 86 |
 | [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 31 |
 | [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 97 |
 | [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 242 |
@@ -60,12 +60,12 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 23 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md), [machine-learning-for-trading](fichas/machine-learning-for-trading.md) |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](categorias/15-notas-archivos-y-servicios-personales.md) | 44 | [Anytype Desktop](fichas/anytype-ts.md) |
 | 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 43 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
-| 17 | [🤖 WhatsApp, mensajería y chatbots](categorias/17-mensajeria-chatbots.md) | 10 | [whatsapp-web.js](fichas/whatsapp-web-js.md), [Typebot](fichas/typebot.md) |
-| 18 | [🤖 CRM, ventas y marketing](categorias/18-crm-ventas-marketing.md) | 13 | [Odoo](fichas/odoo.md), [novu](fichas/novu.md) |
+| 17 | [🤖 WhatsApp, mensajería y chatbots](categorias/17-mensajeria-chatbots.md) | 16 | [whatsapp-web.js](fichas/whatsapp-web-js.md), [Typebot](fichas/typebot.md) |
+| 18 | [🤖 CRM, ventas y marketing](categorias/18-crm-ventas-marketing.md) | 17 | [Odoo](fichas/odoo.md), [novu](fichas/novu.md) |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](categorias/19-aprender-ia-prompts.md) | 31 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md), [Fabric](fichas/fabric.md), [Generative AI for Beginners](fichas/generative-ai-for-beginners.md), [AI Agents for Beginners](fichas/ai-agents-for-beginners.md), [LLM Course](fichas/llm-course.md) |
-| 20 | [🕸️ Programar con agentes de código](categorias/20-agentes-de-codigo.md) | 17 | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md) |
+| 20 | [🕸️ Programar con agentes de código](categorias/20-agentes-de-codigo.md) | 21 | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md) |
 | 21 | [🕸️ Asistentes e investigación con agentes](categorias/21-asistentes-investigacion.md) | 17 | [OpenClaw](fichas/openclaw.md), [autoresearch](fichas/autoresearch.md) |
-| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 16 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |
+| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 26 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |
 | 23 | [🧬 Operar, evaluar y medir modelos de IA](categorias/23-operacion-evaluacion-modelos.md) | 19 | [vLLM](fichas/vllm.md), [headroom](fichas/headroom.md), [promptfoo](fichas/promptfoo.md) |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](categorias/24-modelos-entrenamiento.md) | 14 | [Unsloth](fichas/unsloth.md), [TimesFM](fichas/timesfm.md) |
 | 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](categorias/25-datos-notebooks.md) | 12 | [DuckDB](fichas/duckdb.md), [marimo](fichas/marimo.md), [Gradio](fichas/gradio.md) |

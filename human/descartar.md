@@ -211,10 +211,18 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [evolution-api](fichas/evolution-api.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
+| [Mattermost](fichas/mattermost.md) | [Rocket.Chat](fichas/rocket-chat.md) |
+| [Rocket.Chat](fichas/rocket-chat.md) | [Mattermost](fichas/mattermost.md) |
 | [WAHA](fichas/waha.md) | [evolution-api](fichas/evolution-api.md), [whatsapp-web.js](fichas/whatsapp-web-js.md), [Baileys](fichas/baileys.md) |
 | [whatsapp-web.js](fichas/whatsapp-web-js.md) | [Baileys](fichas/baileys.md), [WAHA](fichas/waha.md), [evolution-api](fichas/evolution-api.md) |
+| [cal.diy](fichas/cal-diy.md) | [Easy!Appointments](fichas/easyappointments.md) |
+| [Easy!Appointments](fichas/easyappointments.md) | [cal.diy](fichas/cal-diy.md) |
 | [ERPNext](fichas/erpnext.md) | [Odoo](fichas/odoo.md) |
+| [EspoCRM](fichas/espocrm.md) | [twenty-main](fichas/twenty-main.md) |
+| [FreeScout](fichas/freescout.md) | [Zammad](fichas/zammad.md) |
 | [Odoo](fichas/odoo.md) | [ERPNext](fichas/erpnext.md) |
+| [twenty-main](fichas/twenty-main.md) | [EspoCRM](fichas/espocrm.md) |
+| [Zammad](fichas/zammad.md) | [FreeScout](fichas/freescout.md) |
 | [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) |
 | [Awesome LLM Apps](fichas/awesome-llm-apps.md) | [OpenAI Cookbook](fichas/openai-cookbook.md), [Claude Cookbooks](fichas/claude-cookbooks.md) |
 | [Claude Cookbooks](fichas/claude-cookbooks.md) | [OpenAI Cookbook](fichas/openai-cookbook.md), [Awesome LLM Apps](fichas/awesome-llm-apps.md) |
@@ -228,16 +236,19 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Aider](fichas/aider.md) | [OpenCode](fichas/opencode.md), [Cline](fichas/cline.md) |
 | [Antigravity CLI](fichas/antigravity-cli.md) | [Gemini CLI](fichas/gemini-cli.md), [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md) |
 | [Claude Code](fichas/claude-code.md) | [Codex CLI](fichas/codex.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md), [goose](fichas/goose.md), [Antigravity CLI](fichas/antigravity-cli.md) |
-| [Cline](fichas/cline.md) | [Aider](fichas/aider.md) |
+| [Cline](fichas/cline.md) | [Aider](fichas/aider.md), [Kilo Code](fichas/kilocode.md) |
 | [Codex CLI](fichas/codex.md) | [Claude Code](fichas/claude-code.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md) |
-| [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md) |
+| [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md), [Qwen Code](fichas/qwen-code.md) |
 | [goose](fichas/goose.md) | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md), [Open Interpreter](fichas/open-interpreter.md) |
+| [Kilo Code](fichas/kilocode.md) | [Cline](fichas/cline.md) |
 | [MiMo-Code](fichas/mimo-code.md) | [OpenCode](fichas/opencode.md) |
+| [mini-swe-agent](fichas/mini-swe-agent.md) | [OpenHands](fichas/openhands.md) |
 | [Open Interpreter](fichas/open-interpreter.md) | [goose](fichas/goose.md) |
 | [Open SWE](fichas/open-swe.md) | [OpenHands](fichas/openhands.md) |
 | [OpenCode](fichas/opencode.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [goose](fichas/goose.md), [Gemini CLI](fichas/gemini-cli.md), [Aider](fichas/aider.md), [MiMo-Code](fichas/mimo-code.md) |
 | [opencode-manager](fichas/opencode-manager.md) | [T3 Code](fichas/t3code.md) |
-| [OpenHands](fichas/openhands.md) | [Open SWE](fichas/open-swe.md) |
+| [OpenHands](fichas/openhands.md) | [Open SWE](fichas/open-swe.md), [mini-swe-agent](fichas/mini-swe-agent.md) |
+| [Qwen Code](fichas/qwen-code.md) | [Gemini CLI](fichas/gemini-cli.md) |
 | [T3 Code](fichas/t3code.md) | [opencode-manager](fichas/opencode-manager.md) |
 | [DeepTutor](fichas/deeptutor.md) | [open-notebook](fichas/open-notebook.md) |
 | [gpt-researcher](fichas/gpt-researcher.md) | [STORM](fichas/storm.md), [Vane](fichas/vane.md), [local-deep-research](fichas/local-deep-research.md) |
@@ -250,13 +261,20 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [OpenDots](fichas/opendots.md) | [OpenBot](fichas/openbot.md) |
 | [paperclip](fichas/paperclip.md) | [multica](fichas/multica.md) |
 | [STORM](fichas/storm.md) | [gpt-researcher](fichas/gpt-researcher.md) |
+| [Appwrite](fichas/appwrite.md) | [supabase](fichas/supabase.md) |
+| [Caddy](fichas/caddy.md) | [Traefik Proxy](fichas/traefik.md) |
 | [CasaOS](fichas/casaos.md) | [coolify](fichas/coolify.md) |
 | [claude-task-master](fichas/claude-task-master.md) | [Spec Kit](fichas/spec-kit.md) |
-| [coolify](fichas/coolify.md) | [CasaOS](fichas/casaos.md) |
+| [coolify](fichas/coolify.md) | [CasaOS](fichas/casaos.md), [Dokploy](fichas/dokploy.md) |
+| [Dokploy](fichas/dokploy.md) | [coolify](fichas/coolify.md) |
 | [E2B](fichas/e2b.md) | [sandbox](fichas/sandbox.md) |
 | [Gemini Computer Use (preview)](fichas/computer-use-preview.md) | [browser-use](fichas/browser-use.md), [Skyvern](fichas/skyvern.md) |
+| [Headscale](fichas/headscale.md) | [NetBird](fichas/netbird.md) |
 | [NemoClaw](fichas/nemoclaw.md) | [sandbox](fichas/sandbox.md) |
+| [NetBird](fichas/netbird.md) | [Headscale](fichas/headscale.md) |
 | [sandbox](fichas/sandbox.md) | [NemoClaw](fichas/nemoclaw.md), [E2B](fichas/e2b.md) |
+| [supabase](fichas/supabase.md) | [Appwrite](fichas/appwrite.md) |
+| [Traefik Proxy](fichas/traefik.md) | [Caddy](fichas/caddy.md) |
 | [backdoor](fichas/backdoor.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md), [litellm](fichas/litellm.md) |
 | [claude-code-router](fichas/claude-code-router.md) | [OmniRoute](fichas/omniroute.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
 | [DeepEval](fichas/deepeval.md) | [Ragas](fichas/ragas.md), [promptfoo](fichas/promptfoo.md) |

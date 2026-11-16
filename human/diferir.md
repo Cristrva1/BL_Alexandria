@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**84 repos.**
+**86 repos.**
 
 ## ⏳ Diferir
 
@@ -55,6 +55,7 @@ _Pesado: solo si llega a finalista._
 | [karakeep](fichas/karakeep.md) | 🗂️ Organizar notas, archivos y servicios personales | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. |
 | [audiobookshelf](fichas/audiobookshelf.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. |
 | [Wazuh](fichas/wazuh.md) | 🔍 Analizar software y comprobar su seguridad | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. |
+| [Synapse](fichas/synapse.md) | 🤖 WhatsApp, mensajería y chatbots | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. |
 | [twenty-main](fichas/twenty-main.md) | 🤖 CRM, ventas y marketing | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 | [Odoo](fichas/odoo.md) | 🤖 CRM, ventas y marketing | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 | [cal.diy](fichas/cal-diy.md) | 🤖 CRM, ventas y marketing | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
@@ -63,6 +64,7 @@ _Pesado: solo si llega a finalista._
 | [open-seo](fichas/open-seo.md) | 🤖 CRM, ventas y marketing | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. |
 | [cloud-mail](fichas/cloud-mail.md) | 🤖 CRM, ventas y marketing | Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. |
 | [crm](fichas/compai-crm.md) | 🤖 CRM, ventas y marketing | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. |
+| [Zammad](fichas/zammad.md) | 🤖 CRM, ventas y marketing | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
 | [llm.c](fichas/llm-c.md) | 🧠 Aprender IA y escribir mejores prompts | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. |
 | [paperclip](fichas/paperclip.md) | 🕸️ Asistentes e investigación con agentes | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
 | [ruflo](fichas/ruflo.md) | 🕸️ Asistentes e investigación con agentes | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |

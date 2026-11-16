@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**724 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**748 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -24,12 +24,12 @@
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 23
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 44
 16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 43
-17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 10
-18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 13
+17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 16
+18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 17
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 31
-20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 17
+20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
 21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 17
-22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 16
+22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 26
 23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 19
 24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 14
 25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 12
@@ -865,6 +865,7 @@ _Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de me
 | [evolution-api](human/fichas/evolution-api.md) | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [whatsmeow](human/fichas/whatsmeow.md) | Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [WAHA](human/fichas/waha.md) | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [signal-cli](human/fichas/signal-cli.md) | Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [whatsapp-agentkit](human/fichas/whatsapp-agentkit.md) | Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales. | API de IA necesaria | 🎨 skill/prompt | 🟢 fácil |
 
 ### Chatbots y asistentes conversacionales
@@ -872,13 +873,18 @@ _Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de me
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [Typebot](human/fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [python-telegram-bot](human/fichas/python-telegram-bot.md) | Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [discord.js](human/fichas/discord-js.md) | Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Botpress](human/fichas/botpress.md) | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 
 ### Comunidades,chat y llamadas
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Rocket.Chat](human/fichas/rocket-chat.md) | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Mattermost](human/fichas/mattermost.md) | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [fluxer](human/fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Synapse](human/fichas/synapse.md) | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
 ## 🤖 18. CRM, ventas y marketing
 
@@ -893,6 +899,9 @@ _Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la
 | [ERPNext](human/fichas/erpnext.md) | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [chatwoot](human/fichas/chatwoot.md) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [crm](human/fichas/compai-crm.md) | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
+| [Zammad](human/fichas/zammad.md) | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [FreeScout](human/fichas/freescout.md) | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [EspoCRM](human/fichas/espocrm.md) | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ### Email, marketing y notificaciones
 
@@ -911,6 +920,7 @@ _Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [cal.diy](human/fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Easy!Appointments](human/fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ## 🧠 19. Aprender IA y escribir mejores prompts
 
@@ -978,6 +988,7 @@ _Agentes de terminal, extensiones de editor y entornos para programar con IA. Re
 | [Open Interpreter](human/fichas/open-interpreter.md) | Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. | Depende de la ruta elegida | 🧩 motor/runtime | 🟢 fácil |
 | [goose](human/fichas/goose.md) | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [Aider](human/fichas/aider.md) | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
+| [Qwen Code](human/fichas/qwen-code.md) | Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [MiMo-Code](human/fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | API de IA opcional | 🖥️ app | 🟡 medio |
 | [Antigravity CLI](human/fichas/antigravity-cli.md) | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
@@ -985,7 +996,9 @@ _Agentes de terminal, extensiones de editor y entornos para programar con IA. Re
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Zed](human/fichas/zed.md) | Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [Cline](human/fichas/cline.md) | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
+| [Kilo Code](human/fichas/kilocode.md) | Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP. | API de IA necesaria | 🖥️ app | 🟢 fácil |
 | [openidea](human/fichas/openidea.md) | Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [OpenCursor](human/fichas/opencursor.md) | Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. | API de IA opcional | 🖥️ app | 🟡 medio |
 
@@ -995,6 +1008,7 @@ _Agentes de terminal, extensiones de editor y entornos para programar con IA. Re
 |---|---|---|---|---|
 | [OpenHands](human/fichas/openhands.md) | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [Open SWE](human/fichas/open-swe.md) | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. | API de IA necesaria | 🧩 motor/runtime | 🟡 medio |
+| [mini-swe-agent](human/fichas/mini-swe-agent.md) | Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench. | API de IA opcional | 🖥️ app | 🟢 fácil |
 
 ### Interfaces para gestionar sesiones
 
@@ -1064,6 +1078,10 @@ _Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de inf
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [frp](human/fichas/frp.md) | Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Headscale](human/fichas/headscale.md) | Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [NetBird](human/fichas/netbird.md) | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [WireGuard Easy](human/fichas/wg-easy.md) | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [MasterDnsVPN](human/fichas/masterdnsvpn.md) | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ### Alojamiento y backend
@@ -1071,7 +1089,13 @@ _Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de inf
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [supabase](human/fichas/supabase.md) | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Uptime Kuma](human/fichas/uptime-kuma.md) | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [Caddy](human/fichas/caddy.md) | Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [coolify](human/fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Traefik Proxy](human/fichas/traefik.md) | Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Appwrite](human/fichas/appwrite.md) | Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Portainer CE](human/fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [Dokploy](human/fichas/dokploy.md) | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [CasaOS](human/fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
 ## 🧬 23. Operar, evaluar y medir modelos de IA

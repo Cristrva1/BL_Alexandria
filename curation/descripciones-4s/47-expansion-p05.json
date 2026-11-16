@@ -420,6 +420,12 @@
      "id": "coolify",
      "motivo": "Coolify usa Traefik como proxy, que puede protegerse con el bouncer de CrowdSec para Traefik (combinación por arquitectura).",
      "orden_instalacion": "CrowdSec en el servidor; después añade el bouncer como middleware de Traefik."
+    },
+    {
+     "id": "traefik",
+     "motivo": "Combinación recíproca: Traefik Proxy lo enlaza como «CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware».",
+     "orden_instalacion": "Orden indicado desde Traefik Proxy: CrowdSec en el servidor; después añade el bouncer como middleware de Traefik.",
+     "reciproca_de": "traefik"
     }
    ],
    "notas": "Compartir señales con la red comunitaria es opcional; revisa qué datos se envían.",

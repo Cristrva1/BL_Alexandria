@@ -2614,7 +2614,9 @@
     "cal.diy",
     "docuseal"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "espocrm"
+   ],
    "repo": "https://github.com/twentyhq/twenty",
    "homepage": "https://twenty.com",
    "license": "NOASSERTION",
@@ -10837,7 +10839,8 @@
     "claude-code",
     "codex",
     "opencode",
-    "antigravity-cli"
+    "antigravity-cli",
+    "qwen-code"
    ],
    "repo": "https://github.com/google-gemini/gemini-cli",
    "homepage": "https://geminicli.com",
@@ -10998,7 +11001,8 @@
     "swe-bench"
    ],
    "alternatives": [
-    "open-swe"
+    "open-swe",
+    "mini-swe-agent"
    ],
    "repo": "https://github.com/OpenHands/OpenHands",
    "homepage": "https://openhands.dev",
@@ -11173,7 +11177,8 @@
     "awesome-mcp-clients"
    ],
    "alternatives": [
-    "aider"
+    "aider",
+    "kilocode"
    ],
    "repo": "https://github.com/cline/cline",
    "homepage": "https://cline.bot",
@@ -66214,7 +66219,9 @@
     "botpress",
     "compai-crm"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "easyappointments"
+   ],
    "repo": "https://github.com/calcom/cal.diy",
    "homepage": "https://cal.diy",
    "license": "MIT",
@@ -77202,7 +77209,8 @@
     "freedomain"
    ],
    "alternatives": [
-    "casaos"
+    "casaos",
+    "dokploy"
    ],
    "repo": "https://github.com/coollabsio/coolify",
    "homepage": "https://coolify.io",
@@ -95241,7 +95249,9 @@
     "activepieces",
     "coolify"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "appwrite"
+   ],
    "repo": "https://github.com/supabase/supabase",
    "homepage": "https://supabase.com",
    "license": "Apache-2.0",
@@ -113095,7 +113105,8 @@
    "combines_with": [
     "home-assistant",
     "grafana",
-    "coolify"
+    "coolify",
+    "wg-easy"
    ],
    "alternatives": [
     "adguardhome"
@@ -113214,6 +113225,12 @@
      "id": "coolify",
      "motivo": "La imagen Docker de Pi-hole se puede desplegar desde Coolify en un servidor de la red local (combinación por arquitectura).",
      "orden_instalacion": "Coolify primero; después despliega Pi-hole exponiendo el puerto DNS."
+    },
+    {
+     "id": "wg-easy",
+     "motivo": "Combinación recíproca: WireGuard Easy lo enlaza como «Los clientes de la VPN pueden usar Pi-hole como DNS para bloquear anuncios fuera de casa (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WireGuard Easy: Pi-hole en la red; después define su IP como DNS de los clientes en wg-easy.",
+     "reciproca_de": "wg-easy"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.",
@@ -117296,7 +117313,8 @@
    "combines_with": [
     "grafana",
     "wazuh",
-    "coolify"
+    "coolify",
+    "traefik"
    ],
    "alternatives": [],
    "repo": "https://github.com/crowdsecurity/crowdsec",
@@ -117414,6 +117432,12 @@
      "id": "coolify",
      "motivo": "Coolify usa Traefik como proxy, que puede protegerse con el bouncer de CrowdSec para Traefik (combinación por arquitectura).",
      "orden_instalacion": "CrowdSec en el servidor; después añade el bouncer como middleware de Traefik."
+    },
+    {
+     "id": "traefik",
+     "motivo": "Combinación recíproca: Traefik Proxy lo enlaza como «CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware».",
+     "orden_instalacion": "Orden indicado desde Traefik Proxy: CrowdSec en el servidor; después añade el bouncer como middleware de Traefik.",
+     "reciproca_de": "traefik"
     }
    ],
    "descripcion_notas": "Compartir señales con la red comunitaria es opcional; revisa qué datos se envían.",
@@ -118874,6 +118898,3887 @@
     "license": "MIT",
     "primary_language": "Python",
     "checked_at": "2026-11-16"
+   }
+  },
+  "python-telegram-bot": {
+   "name": "python-telegram-bot",
+   "cat": 17,
+   "sub": "chatbots",
+   "desc": "Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel.",
+   "how": "Paquete Python sobre asyncio con envoltorio de la Bot API (telegram) y framework de manejadores, conversaciones y colas de tareas (telegram.ext).",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst",
+   "cases": [
+    "crear un bot de Telegram que responda comandos y envíe avisos",
+    "conectar un modelo de lenguaje a un chat de Telegram"
+   ],
+   "stack": "Python, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: crear un bot de Telegram que responda comandos y envíe avisos; conectar un modelo de lenguaje a un chat de Telegram",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ollama",
+    "langgraph",
+    "coolify"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/python-telegram-bot/python-telegram-bot",
+   "homepage": "https://python-telegram-bot.org",
+   "license": "LGPL-3.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/python-telegram-bot.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst"
+    ],
+    "mode": "software",
+    "source_blob_sha": "62b3e41f940c1d4c33bc6be58175d11adcdd4e00"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "pip install python-telegram-bot --upgrade",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "62b3e41f940c1d4c33bc6be58175d11adcdd4e00",
+    "root_tree_sha": "41e3633bd1b4e51693ee57059828a59a9773618a",
+    "readme_url": "https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: crear un bot de Telegram que responda comandos y envíe avisos; conectar un modelo de lenguaje a un chat de Telegram.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "crear un bot de Telegram que responda comandos y envíe avisos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "conectar un modelo de lenguaje a un chat de Telegram",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install python-telegram-bot --upgrade`, crea un token con BotFather y ejecuta el ejemplo echobot.",
+    "success": "El bot responde en Telegram repitiendo tus mensajes.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst",
+    "source_blob_sha": "62b3e41f940c1d4c33bc6be58175d11adcdd4e00",
+    "previous_category": [
+     17,
+     "chatbots"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de código abierto (LGPL-3.0 según su README; la API de GitHub la marca como GPL-3.0) mantenida por voluntarios. Muy madura; sigue de cerca cada versión de la Bot API.",
+   "que_hace": "Ofrece una interfaz Python completa a la Bot API de Telegram y un framework con manejadores de comandos y mensajes, conversaciones por estados, teclados, pagos, webhooks, persistencia y JobQueue para tareas programadas.",
+   "como_lo_hace": "Se instala con pip (extras opcionales como `[job-queue]`, `[webhooks]`, `[socks]`); desde la v20 está construida sobre asyncio. Requiere un token de BotFather.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Un bot de python-telegram-bot puede reenviar mensajes a un modelo local servido por Ollama y devolver la respuesta (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después llama a su API desde el manejador de mensajes."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Un grafo de LangGraph puede actuar como cerebro de un bot de Telegram construido con esta biblioteca (combinación por arquitectura).",
+     "orden_instalacion": "Construye el agente en LangGraph; después invócalo desde el manejador del bot."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Un bot de python-telegram-bot se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Para bots con IA ya listos, revisa también openclaw o hermes-agent, que integran Telegram como canal.",
+   "descripcion_fuentes": [
+    "https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst",
+    "https://docs.python-telegram-bot.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "python-telegram-bot/python-telegram-bot",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v22.8 (2026-06-12)"
+   }
+  },
+  "kilocode": {
+   "name": "Kilo Code",
+   "cat": 20,
+   "sub": "editor",
+   "desc": "Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.",
+   "how": "Extensión de VS Code, plugin de JetBrains y CLI (fork de OpenCode) que planifican, editan y ejecutan con el modelo elegido mediante la pasarela de Kilo o claves propias.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+   "cases": [
+    "delegar en el editor una tarea de refactorización con revisión de cambios",
+    "usar el mismo agente en VS Code y en la terminal con distintos modelos"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos",
+   "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "context7",
+    "playwright-mcp",
+    "github-mcp-server"
+   ],
+   "alternatives": [
+    "cline"
+   ],
+   "repo": "https://github.com/Kilo-Org/kilocode",
+   "homepage": "https://kilo.ai/",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/kilocode.md",
+   "access": {
+    "api": "required",
+    "local_model": "not_documented",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "usage_based",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/Kilo-Org/kilocode/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "a1944bab3c3e6b5586f5a9065bd5df1cd7cc1e28"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "a1944bab3c3e6b5586f5a9065bd5df1cd7cc1e28",
+    "root_tree_sha": "37b2900fcb6223fec33c2bd5f59263e93682c670",
+    "readme_url": "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos.",
+   "models": "Más de 500 modelos mediante la pasarela de Kilo o claves propias de proveedores",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "delegar en el editor una tarea de refactorización con revisión de cambios",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "usar el mismo agente en VS Code y en la terminal con distintos modelos",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala la extensión desde el VS Code Marketplace, conecta un modelo y pídele que explique un archivo de tu proyecto.",
+    "success": "El agente responde y propone cambios que puedes aceptar o rechazar.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+    "source_blob_sha": "a1944bab3c3e6b5586f5a9065bd5df1cd7cc1e28",
+    "previous_category": [
+     20,
+     "editor"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Agente de código de código abierto (MIT) de Kilo Code, Inc., con servicio en la nube y pasarela de modelos de pago por uso. Muy activo. La extensión nació a partir de Roo Code y Cline; según el README, la CLI actual es un fork de OpenCode.",
+   "que_hace": "Planifica, escribe y revisa código en VS Code, JetBrains o la terminal, con cambio de modelo a mitad de tarea, modos especializados, marketplace para instalar agentes, skills, servidores MCP y plugins, y ejecución en la nube desde app.kilo.ai.",
+   "como_lo_hace": "Escrito en TypeScript; se instala como extensión del marketplace de VS Code, plugin de JetBrains o CLI. Requiere cuenta de Kilo o claves de proveedor; el coste depende del modelo.",
+   "combina_con": [
+    {
+     "id": "context7",
+     "motivo": "Context7 se instala como servidor MCP para que el agente consulte documentación actualizada de bibliotecas (combinación por arquitectura).",
+     "orden_instalacion": "Añade el servidor MCP de Context7 desde el marketplace o la configuración."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Playwright MCP permite al agente abrir y probar la aplicación en un navegador (combinación por arquitectura).",
+     "orden_instalacion": "Registra Playwright MCP en la configuración de servidores MCP."
+    },
+    {
+     "id": "github-mcp-server",
+     "motivo": "El servidor MCP de GitHub da al agente acceso a issues y pull requests (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token de GitHub; después registra el servidor MCP."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): cline. Revisa los cambios antes de aceptarlos y controla el gasto en la pasarela.",
+   "descripcion_fuentes": [
+    "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+    "https://kilo.ai/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Kilo-Org/kilocode",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v7.8.27 (2026-11-05)"
+   }
+  },
+  "qwen-code": {
+   "name": "Qwen Code",
+   "cat": 20,
+   "sub": "terminal",
+   "desc": "Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP.",
+   "how": "CLI en TypeScript/Node.js derivada de Gemini CLI que trabaja en el repositorio con herramientas de archivos y shell, e integra IDE y clientes mediante ACP.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/QwenLM/qwen-code/blob/main/README.md",
+   "cases": [
+    "pedir desde la terminal cambios y pruebas en un repositorio",
+    "usar un modelo local o de Qwen como agente de código sin depender de un único proveedor"
+   ],
+   "stack": "TypeScript, Dockerfile, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: pedir desde la terminal cambios y pruebas en un repositorio; usar un modelo local o de Qwen como agente de código sin depender de un único proveedor",
+   "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "zed",
+    "ollama",
+    "vllm",
+    "openclaw"
+   ],
+   "alternatives": [
+    "gemini-cli"
+   ],
+   "repo": "https://github.com/QwenLM/qwen-code",
+   "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+   "license": "Apache-2.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/qwen-code.md",
+   "access": {
+    "api": "optional",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+    "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/QwenLM/qwen-code/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "f1452ecb9f78089da829c77c368fdf048f3eef08"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "npm install -g @qwen-code/qwen-code@latest",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/QwenLM/qwen-code/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "f1452ecb9f78089da829c77c368fdf048f3eef08",
+    "root_tree_sha": "433566208c564187879acea13228f3977899a6d6",
+    "readme_url": "https://github.com/QwenLM/qwen-code/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: pedir desde la terminal cambios y pruebas en un repositorio; usar un modelo local o de Qwen como agente de código sin depender de un único proveedor.",
+   "models": "APIs de OpenAI, Anthropic, Gemini y Qwen, proveedores compatibles o modelos locales con Ollama o vLLM",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "pedir desde la terminal cambios y pruebas en un repositorio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "usar un modelo local o de Qwen como agente de código sin depender de un único proveedor",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `npm install -g @qwen-code/qwen-code@latest`, configura un proveedor y pídele que resuma tu repositorio.",
+    "success": "El agente lee el código y devuelve un resumen con los módulos principales.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/QwenLM/qwen-code/blob/main/README.md",
+    "source_blob_sha": "f1452ecb9f78089da829c77c368fdf048f3eef08",
+    "previous_category": [
+     20,
+     "terminal"
+    ],
+    "category_verdict": "confirmed",
+    "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Agente de código de código abierto (Apache-2.0) del equipo Qwen de Alibaba, derivado de Gemini CLI. Muy activo.",
+   "que_hace": "Trabaja en el repositorio desde la terminal, la app de escritorio o el editor: lee y edita archivos, ejecuta comandos, usa memoria automática, skills, subagentes y MCP, y ofrece funciones experimentales como equipos de agentes y un daemon (`qwen serve`) sobre ACP.",
+   "como_lo_hace": "Se instala con npm (Node.js) y se configura con el proveedor de modelos; cambia de proveedor en ejecución. Se integra con VS Code, Zed y JetBrains y con clientes de chat.",
+   "combina_con": [
+    {
+     "id": "zed",
+     "motivo": "Qwen Code documenta su integración con Zed como agente externo.",
+     "orden_instalacion": "Instala Qwen Code; después configúralo como agente en Zed."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Qwen Code admite modelos locales servidos por Ollama.",
+     "orden_instalacion": "Ollama con un modelo de código; después configúralo como proveedor."
+    },
+    {
+     "id": "vllm",
+     "motivo": "vLLM puede servir un modelo Qwen local que Qwen Code consume por API compatible.",
+     "orden_instalacion": "Lanza vLLM; después apunta Qwen Code a su endpoint."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "El README enlaza Qwen Code Claw (openclaw/acpx) para que otros agentes deleguen tareas de código en Qwen Code por ACP.",
+     "orden_instalacion": "Instala Qwen Code; después configura acpx en OpenClaw."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): gemini-cli, del que deriva.",
+   "descripcion_fuentes": [
+    "https://github.com/QwenLM/qwen-code/blob/main/README.md",
+    "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+    "https://qwenlm.github.io/qwen-code-docs/en/users/integration-zed/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "QwenLM/qwen-code",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "sdk-typescript-v0.1.34 (2026-11-15)"
+   }
+  },
+  "uptime-kuma": {
+   "name": "Uptime Kuma",
+   "cat": 22,
+   "sub": "infraestructura",
+   "desc": "Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.",
+   "how": "Aplicación Node.js con interfaz web reactiva (WebSocket) y SQLite o MariaDB; se despliega con un único contenedor Docker.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/louislam/uptime-kuma/blob/master/README.md",
+   "cases": [
+    "recibir un aviso en Telegram cuando tu web o servidor cae",
+    "publicar una página de estado de tus servicios"
+   ],
+   "stack": "JavaScript, compose.yaml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "grafana",
+    "coolify",
+    "caddy"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/louislam/uptime-kuma",
+   "homepage": "https://uptime.kuma.pet",
+   "license": "MIT",
+   "lang": "JavaScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/uptime-kuma.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/louislam/uptime-kuma/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "eb23a1b7e8d53bf2d92daa69c62d420d7ddce447"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "eb23a1b7e8d53bf2d92daa69c62d420d7ddce447",
+    "root_tree_sha": "1e3e2eee51821c453329ee8d7145be0568712863",
+    "readme_url": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "recibir un aviso en Telegram cuando tu web o servidor cae",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "publicar una página de estado de tus servicios",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación.",
+    "success": "El panel muestra el monitor en verde y el historial de tiempos de respuesta.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+    "source_blob_sha": "eb23a1b7e8d53bf2d92daa69c62d420d7ddce447",
+    "previous_category": [
+     22,
+     "infraestructura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta de monitorización de código abierto (MIT) creada por Louis Lam. Uno de los proyectos autoalojados más populares; activa.",
+   "que_hace": "Monitoriza HTTP(S), palabras clave, JSON, TCP, ping, DNS, Docker, bases de datos y más, con intervalos de hasta 20 segundos, notificaciones por Telegram, Discord, Slack, correo y más de 90 servicios, páginas de estado con dominio propio, certificados y 2FA.",
+   "como_lo_hace": "Escrito en JavaScript/Node.js; se despliega con `docker run` o Docker Compose, o en local con Node.js. Expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "Uptime Kuma expone métricas Prometheus que se pueden visualizar en Grafana.",
+     "orden_instalacion": "Configura Prometheus para leer /metrics; después crea el panel en Grafana."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Uptime Kuma se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy publica la interfaz y las páginas de estado de Uptime Kuma con HTTPS automático (combinación por arquitectura).",
+     "orden_instalacion": "Uptime Kuma en el puerto local; después configura un reverse_proxy en Caddy."
+    }
+   ],
+   "descripcion_notas": "No sustituye a una monitorización completa de métricas y registros.",
+   "descripcion_fuentes": [
+    "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+    "https://github.com/louislam/uptime-kuma/wiki/Prometheus-Integration"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "louislam/uptime-kuma",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.5.11 (2026-11-12)"
+   }
+  },
+  "dokploy": {
+   "name": "Dokploy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "desc": "Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.",
+   "how": "Aplicación TypeScript que gestiona despliegues con Docker, Docker Compose y Swarm, enruta con Traefik e incluye copias de seguridad, monitorización y plantillas.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Dokploy/dokploy/blob/canary/README.md",
+   "cases": [
+    "desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web",
+    "levantar con un clic plantillas como Plausible o Cal.com"
+   ],
+   "stack": "TypeScript, Dockerfile, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web; levantar con un clic plantillas como Plausible o Cal.com",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. El código fuera de /proprietary es Apache-2.0; lo de esa carpeta tiene licencia propietaria. Hay versión en la nube de pago.",
+   "combines_with": [
+    "traefik",
+    "uptime-kuma",
+    "supabase"
+   ],
+   "alternatives": [
+    "coolify"
+   ],
+   "repo": "https://github.com/Dokploy/dokploy",
+   "homepage": "https://dokploy.com/",
+   "license": "Apache-2.0 + licencia propietaria (/proprietary)",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/dokploy.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/Dokploy/dokploy/blob/canary/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "4e78a277017d4f87202013cbf71037034a6bce83"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "curl -sSL https://dokploy.com/install.sh | bash",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/Dokploy/dokploy/blob/canary/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "4e78a277017d4f87202013cbf71037034a6bce83",
+    "root_tree_sha": "65122478e7c39251a149a8da2797fb5bec219da1",
+    "readme_url": "https://github.com/Dokploy/dokploy/blob/canary/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web; levantar con un clic plantillas como Plausible o Cal.com.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "levantar con un clic plantillas como Plausible o Cal.com",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "En un VPS de pruebas ejecuta el instalador oficial (`curl -sSL https://dokploy.com/install.sh | bash`) y despliega una aplicación de ejemplo.",
+    "success": "La aplicación queda accesible a través de Traefik desde el panel.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/Dokploy/dokploy/blob/canary/README.md",
+    "source_blob_sha": "4e78a277017d4f87202013cbf71037034a6bce83",
+    "previous_category": [
+     22,
+     "infraestructura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "PaaS autoalojable de Dokploy Technology, Inc. La licencia es Apache-2.0 salvo el contenido bajo /proprietary (LICENSE_PROPRIETARY). Muy activo; ofrece Dokploy Cloud de pago.",
+   "que_hace": "Despliega aplicaciones (Nixpacks, Heroku Buildpacks, Dockerfile) y bases de datos (PostgreSQL, MySQL, MongoDB, MariaDB, Redis) con copias de seguridad, Docker Compose nativo, multinodo con Swarm, más de 600 plantillas, monitorización de recursos, notificaciones y API/CLI.",
+   "como_lo_hace": "Se instala en un servidor Linux con un script que configura Docker, Swarm y Traefik; se gestiona desde la interfaz web. Escrito en TypeScript.",
+   "combina_con": [
+    {
+     "id": "traefik",
+     "motivo": "Dokploy integra Traefik automáticamente para enrutamiento y balanceo.",
+     "orden_instalacion": "Viene configurado por el instalador; ajusta dominios y certificados desde el panel."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila desde fuera las aplicaciones desplegadas con Dokploy (combinación por arquitectura).",
+     "orden_instalacion": "Despliega tus apps; después añade monitores en Uptime Kuma."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Supabase autoalojado se puede desplegar como plantilla o Compose en Dokploy (combinación por arquitectura).",
+     "orden_instalacion": "Dokploy primero; después despliega Supabase con su Compose."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): coolify. Instalar con `curl | bash` ejecuta un script remoto con privilegios: revísalo antes.",
+   "descripcion_fuentes": [
+    "https://github.com/Dokploy/dokploy/blob/canary/README.md",
+    "https://docs.dokploy.com/",
+    "https://github.com/Dokploy/dokploy/blob/canary/LICENSE.MD"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Dokploy/dokploy",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.31.2 (2026-11-13)"
+   }
+  },
+  "frp": {
+   "name": "frp",
+   "cat": 22,
+   "sub": "redes",
+   "desc": "Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P.",
+   "how": "Binarios Go cliente (frpc) y servidor (frps) configurados con TOML; el servidor público reenvía tráfico a servicios del cliente a través de un túnel.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/fatedier/frp/blob/dev/README.md",
+   "cases": [
+    "acceder por SSH a un equipo de casa detrás de NAT",
+    "publicar temporalmente un servicio web local usando tu propio VPS"
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Exponer servicios internos a internet aumenta la superficie de ataque; protégelos con autenticación y cifrado.",
+   "combines_with": [
+    "caddy",
+    "uptime-kuma",
+    "home-assistant"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/fatedier/frp",
+   "homepage": "",
+   "license": "Apache-2.0",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/frp.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/fatedier/frp/blob/dev/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "d1998eaa69391414fb88be1e8fa9d031b58b9c5b"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/fatedier/frp/blob/dev/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "d1998eaa69391414fb88be1e8fa9d031b58b9c5b",
+    "root_tree_sha": "a2c975efb5e55102068065d61cfc17ffe34e939d",
+    "readme_url": "https://github.com/fatedier/frp/blob/dev/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "acceder por SSH a un equipo de casa detrás de NAT",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "publicar temporalmente un servicio web local usando tu propio VPS",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README.",
+    "success": "Puedes conectar por SSH al equipo local a través del puerto del VPS.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/fatedier/frp/blob/dev/README.md",
+    "source_blob_sha": "d1998eaa69391414fb88be1e8fa9d031b58b9c5b",
+    "previous_category": [
+     22,
+     "redes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.",
+   "que_hace": "Expone servicios locales a internet a través de un servidor con IP pública: TCP, UDP, HTTP y HTTPS con dominios, modo P2P, multiplexación, cifrado y compresión, autenticación, panel del servidor, métricas Prometheus y plugins.",
+   "como_lo_hace": "Escrito en Go; se descargan los binarios frps (servidor) y frpc (cliente) y se configuran con TOML, YAML o JSON. Requiere un servidor con IP pública para frps.",
+   "combina_con": [
+    {
+     "id": "caddy",
+     "motivo": "Caddy puede poner HTTPS automático delante de los servicios HTTP expuestos con frp en el VPS (combinación por arquitectura).",
+     "orden_instalacion": "frps en el VPS; después configura Caddy como proxy hacia el puerto de frp."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila que los servicios publicados por el túnel sigan accesibles (combinación por arquitectura).",
+     "orden_instalacion": "Publica el servicio con frp; después añade el monitor."
+    },
+    {
+     "id": "home-assistant",
+     "motivo": "frp permite acceder a una instancia de Home Assistant detrás de NAT sin abrir puertos del router (combinación por arquitectura).",
+     "orden_instalacion": "Configura un proxy HTTP en frpc hacia Home Assistant; después protege el acceso con HTTPS."
+    }
+   ],
+   "descripcion_notas": "Alternativas cercanas: headscale o netbird si prefieres una red privada en lugar de publicar servicios.",
+   "descripcion_fuentes": [
+    "https://github.com/fatedier/frp/blob/dev/README.md",
+    "https://gofrp.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "fatedier/frp",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.72.0 (2026-11-04)"
+   }
+  },
+  "headscale": {
+   "name": "Headscale",
+   "cat": 22,
+   "sub": "redes",
+   "desc": "Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.",
+   "how": "Servidor Go que implementa el plano de control de Tailscale para una sola tailnet; los dispositivos usan los clientes de Tailscale apuntando a tu servidor.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/juanfont/headscale/blob/main/README.md",
+   "cases": [
+    "conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale",
+    "dar acceso remoto a una red doméstica o de laboratorio"
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "caddy",
+    "grafana",
+    "uptime-kuma"
+   ],
+   "alternatives": [
+    "netbird"
+   ],
+   "repo": "https://github.com/juanfont/headscale",
+   "homepage": "",
+   "license": "BSD-3-Clause",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/headscale.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/juanfont/headscale/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "c3a854f0a4ceaccca621af3610f05ef8fc88ab13"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/juanfont/headscale/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "c3a854f0a4ceaccca621af3610f05ef8fc88ab13",
+    "root_tree_sha": "520eb6f9c7f90bad7a5358ea818267edf4d0b4de",
+    "readme_url": "https://github.com/juanfont/headscale/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "dar acceso remoto a una red doméstica o de laboratorio",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Headscale en un servidor siguiendo su documentación, crea un usuario y registra un cliente de Tailscale con `--login-server`.",
+    "success": "El dispositivo aparece en `headscale nodes list` y alcanza a otros nodos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/juanfont/headscale/blob/main/README.md",
+    "source_blob_sha": "c3a854f0a4ceaccca621af3610f05ef8fc88ab13",
+    "previous_category": [
+     22,
+     "redes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Servidor de control de código abierto (BSD-3-Clause) mantenido por la comunidad (Juan Font, Kristoffer Dalby y otros). Maduro; alcance deliberadamente acotado a una sola tailnet para uso personal o pequeñas organizaciones.",
+   "que_hace": "Reemplaza el servidor de coordinación de Tailscale: registra nodos, distribuye claves y rutas, gestiona usuarios, ACL, DNS (MagicDNS), nodos de salida y rutas de subred, con autenticación OIDC opcional.",
+   "como_lo_hace": "Escrito en Go; se instala con paquetes, binario o contenedor y se configura con YAML. Los clientes son los de Tailscale (código abierto salvo las GUI de Windows, macOS e iOS). Expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "caddy",
+     "motivo": "La documentación de Headscale incluye ejemplos para ejecutarlo detrás de Caddy como proxy inverso.",
+     "orden_instalacion": "Headscale en local; después configura Caddy con el bloque de proxy documentado."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Headscale expone métricas Prometheus que se pueden visualizar en Grafana.",
+     "orden_instalacion": "Habilita metrics_listen_addr; después configura Prometheus y Grafana."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila la disponibilidad del servidor de control (combinación por arquitectura).",
+     "orden_instalacion": "Añade un monitor HTTP del endpoint de Headscale."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): netbird. No es un producto oficial de Tailscale.",
+   "descripcion_fuentes": [
+    "https://github.com/juanfont/headscale/blob/main/README.md",
+    "https://headscale.net/stable/ref/integration/reverse-proxy/",
+    "https://headscale.net/stable/ref/configuration/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "juanfont/headscale",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-3-Clause",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.29.7 (2026-10-30)"
+   }
+  },
+  "discord-js": {
+   "name": "discord.js",
+   "cat": 17,
+   "sub": "chatbots",
+   "desc": "Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.",
+   "how": "Monorepo TypeScript con el envoltorio discord.js y paquetes como @discordjs/rest, @discordjs/ws y @discordjs/voice.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/discordjs/discord.js/blob/main/README.md",
+   "cases": [
+    "crear un bot de Discord con comandos de barra para tu comunidad",
+    "conectar un asistente de IA a un servidor de Discord"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "vercel-ai",
+    "ollama",
+    "coolify"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/discordjs/discord.js",
+   "homepage": "https://discord.js.org",
+   "license": "Apache-2.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/discord-js.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/discordjs/discord.js/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "ae445fec90fd5ee35d26cc9f6c6855a568760c90"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+     "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+     "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/discordjs/discord.js/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+   "sources": {
+    "readme_blob_sha": "ae445fec90fd5ee35d26cc9f6c6855a568760c90",
+    "root_tree_sha": "2b3dbd4329b78ce8f28041c8b7915bbb9797b3ca",
+    "readme_url": "https://github.com/discordjs/discord.js/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "crear un bot de Discord con comandos de barra para tu comunidad",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "conectar un asistente de IA a un servidor de Discord",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `npm install discord.js`, crea una aplicación en el portal de desarrolladores de Discord y ejecuta un bot que responda a un comando.",
+    "success": "El bot aparece en línea y responde al comando en tu servidor de pruebas.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/discordjs/discord.js/blob/main/README.md",
+    "source_blob_sha": "ae445fec90fd5ee35d26cc9f6c6855a568760c90",
+    "previous_category": [
+     17,
+     "chatbots"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de código abierto (Apache-2.0) mantenida por la comunidad discord.js. Muy madura; sigue las versiones de la API de Discord.",
+   "que_hace": "Permite crear bots que reaccionan a eventos, comandos de barra, botones y modales, gestionan canales y roles, y usan voz, con cobertura casi completa de la API de Discord y caché configurable.",
+   "como_lo_hace": "Escrito en TypeScript para Node.js; se instala con npm, yarn, pnpm o bun. Requiere un token de bot del portal de desarrolladores de Discord.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "El AI SDK de Vercel puede generar las respuestas de un bot de discord.js con el modelo que elijas (combinación por arquitectura).",
+     "orden_instalacion": "Crea el bot; después llama al AI SDK desde el manejador de comandos."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Un bot de discord.js puede consultar un modelo local de Ollama para responder en el servidor (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después llama a su API desde el bot."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Un bot de discord.js se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Respeta los términos de desarrolladores de Discord y los límites de tasa.",
+   "descripcion_fuentes": [
+    "https://github.com/discordjs/discord.js/blob/main/README.md",
+    "https://discord.js.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "discordjs/discord.js",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "14.28.1 (2026-11-03)"
+   }
+  },
+  "rocket-chat": {
+   "name": "Rocket.Chat",
+   "cat": 17,
+   "sub": "comunidades",
+   "desc": "Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
+   "how": "Aplicación TypeScript (Meteor/Node.js) con MongoDB, clientes web, de escritorio y móviles, Apps-Engine para extensiones y despliegue con Docker o Kubernetes.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+   "cases": [
+    "sustituir Slack o Teams por un chat de equipo en tu servidor",
+    "atender clientes de varios canales desde una bandeja compartida"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Open core: el código de las carpetas ee/ tiene licencia comercial y algunas funciones requieren plan de pago.",
+   "combines_with": [
+    "activepieces",
+    "ollama",
+    "coolify"
+   ],
+   "alternatives": [
+    "mattermost"
+   ],
+   "repo": "https://github.com/RocketChat/Rocket.Chat",
+   "homepage": "https://rocket.chat/",
+   "license": "MIT + licencia Enterprise (ee/)",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/rocket-chat.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "84109f3b1b39bb78f0574bda1763139c4f9a415e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "84109f3b1b39bb78f0574bda1763139c4f9a415e",
+    "root_tree_sha": "b096d6a2fbdabccbabc62b03d662c45f68d2e076",
+    "readme_url": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "sustituir Slack o Teams por un chat de equipo en tu servidor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "atender clientes de varios canales desde una bandeja compartida",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Rocket.Chat con Docker Compose siguiendo su guía, crea un espacio de trabajo y un canal.",
+    "success": "Puedes chatear en el canal desde la web y la app móvil.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+    "source_blob_sha": "84109f3b1b39bb78f0574bda1763139c4f9a415e",
+    "previous_category": [
+     17,
+     "comunidades"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Plataforma de comunicación de Rocket.Chat Technologies. El núcleo es MIT y las carpetas ee/ tienen licencia Enterprise propia. Muy madura; usada por grandes organizaciones.",
+   "que_hace": "Ofrece mensajería en tiempo real, hilos, llamadas de voz y vídeo, federación con otras redes, atención omnicanal a clientes, apps del marketplace o propias con Apps-Engine, integraciones, cifrado de extremo a extremo y cumplimiento normativo.",
+   "como_lo_hace": "Escrito en TypeScript sobre Meteor y Node.js con MongoDB; se despliega con Docker, Podman o Kubernetes según la guía oficial. Clientes de escritorio y móviles aparte.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks y la API REST de Rocket.Chat permiten automatizar avisos y flujos desde Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un webhook entrante en Rocket.Chat; después úsalo desde Activepieces."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Un bot de Apps-Engine o una integración puede responder en Rocket.Chat con un modelo local de Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después crea la integración que llame a su API."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Rocket.Chat se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): mattermost.",
+   "descripcion_fuentes": [
+    "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+    "https://docs.rocket.chat/docs/deploy-rocketchat"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "RocketChat/Rocket.Chat",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "9.0.0 (2026-11-10)"
+   }
+  },
+  "mattermost": {
+   "name": "Mattermost",
+   "cat": 17,
+   "sub": "comunidades",
+   "desc": "Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.",
+   "how": "Servidor en Go con aplicación web React, PostgreSQL y API, webhooks, comandos de barra, apps y plugins.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/mattermost/mattermost/blob/master/README.md",
+   "cases": [
+    "montar un chat de equipo privado en tu infraestructura",
+    "integrar alertas de CI o monitorización en canales del equipo"
+   ],
+   "stack": "TypeScript",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Open core: el código fuente es AGPL-3.0 (herramientas de administración Apache-2.0) y las funciones Enterprise requieren licencia comercial.",
+   "combines_with": [
+    "activepieces",
+    "ollama",
+    "coolify"
+   ],
+   "alternatives": [
+    "rocket-chat"
+   ],
+   "repo": "https://github.com/mattermost/mattermost",
+   "homepage": "https://mattermost.com",
+   "license": "AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/mattermost.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/mattermost/mattermost/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "448f0f269a0c92f441527fe51704e3827696d190"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/mattermost/mattermost/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "448f0f269a0c92f441527fe51704e3827696d190",
+    "root_tree_sha": "f210e1596bcc8a086d54e90f4e18d7664a97ed2b",
+    "readme_url": "https://github.com/mattermost/mattermost/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "montar un chat de equipo privado en tu infraestructura",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "integrar alertas de CI o monitorización en canales del equipo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Mattermost con Docker siguiendo la guía oficial, crea un equipo y un canal y añade un webhook entrante.",
+    "success": "Los mensajes enviados al webhook aparecen en el canal.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/mattermost/mattermost/blob/master/README.md",
+    "source_blob_sha": "448f0f269a0c92f441527fe51704e3827696d190",
+    "previous_category": [
+     17,
+     "comunidades"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Plataforma de colaboración open core de Mattermost, Inc. El código fuente se licencia bajo AGPL-3.0 o licencia comercial; los binarios oficiales, bajo MIT; hay ediciones de pago. Muy madura.",
+   "que_hace": "Ofrece canales, mensajes directos, hilos, búsqueda, automatización de flujos, llamadas y pantalla compartida, integración con IA e integraciones mediante APIs, webhooks, comandos de barra, apps y plugins.",
+   "como_lo_hace": "Servidor en Go con frontend React y PostgreSQL; se despliega con Docker, paquetes de Ubuntu, tarball o Kubernetes. Clientes de escritorio y móviles.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks entrantes de Mattermost permiten enviar avisos desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un webhook entrante en Mattermost; después úsalo en Activepieces."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Las funciones de IA de Mattermost o un bot propio pueden apuntar a un modelo local servido por Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después configura el endpoint en la integración de IA."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Mattermost se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): rocket-chat.",
+   "descripcion_fuentes": [
+    "https://github.com/mattermost/mattermost/blob/master/README.md",
+    "https://github.com/mattermost/mattermost/blob/master/LICENSE.txt",
+    "https://docs.mattermost.com/guides/deployment.html"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mattermost/mattermost",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v12.1.0 (2026-11-05)"
+   }
+  },
+  "synapse": {
+   "name": "Synapse",
+   "cat": 17,
+   "sub": "comunidades",
+   "desc": "Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo.",
+   "how": "Servidor Python (con partes en Rust) que implementa las APIs cliente-servidor y de federación de Matrix sobre PostgreSQL.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/element-hq/synapse/blob/develop/README.rst",
+   "cases": [
+    "alojar tu propio servidor de chat federado para un grupo o comunidad",
+    "conectar usuarios con otros servidores Matrix manteniendo tus datos"
+   ],
+   "stack": "Python, Cargo.toml, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: alojar tu propio servidor de chat federado para un grupo o comunidad; conectar usuarios con otros servidores Matrix manteniendo tus datos",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "grafana",
+    "caddy",
+    "coolify"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/element-hq/synapse",
+   "homepage": "https://element-hq.github.io/synapse",
+   "license": "AGPL-3.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/synapse.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/element-hq/synapse/blob/develop/README.rst"
+    ],
+    "mode": "software",
+    "source_blob_sha": "599dafefb7ccba2bc834982fc71cd4ad532d99f6"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/element-hq/synapse/blob/develop/README.rst",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "599dafefb7ccba2bc834982fc71cd4ad532d99f6",
+    "root_tree_sha": "e5ac8656615da97ffc5a4bb4f41387fa95869be4",
+    "readme_url": "https://github.com/element-hq/synapse/blob/develop/README.rst",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: alojar tu propio servidor de chat federado para un grupo o comunidad; conectar usuarios con otros servidores Matrix manteniendo tus datos.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "alojar tu propio servidor de chat federado para un grupo o comunidad",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "conectar usuarios con otros servidores Matrix manteniendo tus datos",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Synapse con paquetes o Docker siguiendo la guía oficial, crea un usuario y conéctate con un cliente Matrix.",
+    "success": "Puedes chatear desde el cliente y unirte a salas de otros servidores federados.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/element-hq/synapse/blob/develop/README.rst",
+    "source_blob_sha": "599dafefb7ccba2bc834982fc71cd4ad532d99f6",
+    "previous_category": [
+     17,
+     "comunidades"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Implementación de servidor de Matrix de código abierto (AGPL-3.0, o licencia comercial de Element) mantenida por Element. Muy madura.",
+   "que_hace": "Aloja cuentas y salas de Matrix con mensajería cifrada de extremo a extremo (en los clientes), federación con otros servidores, administración, módulos y puentes hacia otras redes mediante servicios de aplicación.",
+   "como_lo_hace": "Escrito en Python y Rust; se instala con paquetes de Debian, Docker o pip. Para producción se recomienda PostgreSQL y un proxy inverso con TLS; expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "La documentación de Synapse explica cómo exponer métricas Prometheus y ofrece un panel de Grafana.",
+     "orden_instalacion": "Habilita las métricas; después importa el panel de Grafana."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy sirve como proxy inverso con TLS y delegación .well-known para Synapse (combinación por arquitectura).",
+     "orden_instalacion": "Synapse en local; después configura reverse_proxy en Caddy."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Synapse se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Para despliegues sencillos, servidores Matrix más ligeros (no catalogados) pueden bastar.",
+   "descripcion_fuentes": [
+    "https://github.com/element-hq/synapse/blob/develop/README.rst",
+    "https://element-hq.github.io/synapse/latest/setup/installation.html",
+    "https://element-hq.github.io/synapse/latest/metrics-howto.html"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "element-hq/synapse",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.165.0 (2026-11-10)"
+   }
+  },
+  "signal-cli": {
+   "name": "signal-cli",
+   "cat": 17,
+   "sub": "whatsapp",
+   "desc": "Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.",
+   "how": "Aplicación Java que usa una versión parcheada de libsignal-service-java y la biblioteca nativa libsignal-client; incluye modo daemon con JSON-RPC y D-Bus.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/AsamK/signal-cli/blob/master/README.md",
+   "cases": [
+    "enviar avisos de un servidor a tu móvil por Signal",
+    "conectar un asistente o bot a Signal mediante su API JSON-RPC"
+   ],
+   "stack": "Java",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: enviar avisos de un servidor a tu móvil por Signal; conectar un asistente o bot a Signal mediante su API JSON-RPC",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Cliente no oficial: Signal puede limitar o bloquear números con uso automatizado.",
+   "combines_with": [
+    "openclaw",
+    "activepieces",
+    "uptime-kuma"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/AsamK/signal-cli",
+   "homepage": "",
+   "license": "GPL-3.0",
+   "lang": "Java",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/signal-cli.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/AsamK/signal-cli/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "a98f651c21501585c63a437da7bfda2be1a61175"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/AsamK/signal-cli/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "a98f651c21501585c63a437da7bfda2be1a61175",
+    "root_tree_sha": "d6ee1a8d5572341be4583c1946f26a9f9c4d7659",
+    "readme_url": "https://github.com/AsamK/signal-cli/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: enviar avisos de un servidor a tu móvil por Signal; conectar un asistente o bot a Signal mediante su API JSON-RPC.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "enviar avisos de un servidor a tu móvil por Signal",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "conectar un asistente o bot a Signal mediante su API JSON-RPC",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Descarga la release (JRE 25 o binario nativo), vincula signal-cli como dispositivo secundario y envía un mensaje de prueba a ti mismo.",
+    "success": "El mensaje llega a tu app de Signal.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/AsamK/signal-cli/blob/master/README.md",
+    "source_blob_sha": "a98f651c21501585c63a437da7bfda2be1a61175",
+    "previous_category": [
+     17,
+     "whatsapp"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Cliente no oficial de código abierto (GPL-3.0) mantenido por AsamK. Maduro y activo; sigue los cambios del protocolo de Signal.",
+   "que_hace": "Registra un número o se vincula como dispositivo, envía y recibe mensajes, adjuntos y reacciones, gestiona grupos y contactos, y ofrece modo daemon con JSON-RPC y D-Bus para integrarse con servidores y bots.",
+   "como_lo_hace": "Escrito en Java; requiere JRE 25 y la biblioteca nativa libsignal-client (incluida para plataformas comunes) o un binario nativo. Hay que recibir mensajes con regularidad para mantener el cifrado.",
+   "combina_con": [
+    {
+     "id": "openclaw",
+     "motivo": "OpenClaw usa signal-cli para su canal de Signal.",
+     "orden_instalacion": "Instala y vincula signal-cli; después configura el canal de Signal en OpenClaw."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "El modo daemon JSON-RPC permite enviar mensajes de Signal desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Arranca signal-cli en modo daemon; después llama a su API por HTTP."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "signal-cli puede actuar como pasarela para que las alertas de monitorización lleguen por Signal (combinación por arquitectura).",
+     "orden_instalacion": "Expón signal-cli en modo daemon; después configura la notificación correspondiente."
+    }
+   ],
+   "descripcion_notas": "Hay envoltorios REST de la comunidad (no catalogados) sobre signal-cli.",
+   "descripcion_fuentes": [
+    "https://github.com/AsamK/signal-cli/blob/master/README.md",
+    "https://docs.openclaw.ai/channels/signal"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "AsamK/signal-cli",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-3.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.14.10 (2026-11-07)"
+   }
+  },
+  "zammad": {
+   "name": "Zammad",
+   "cat": 18,
+   "sub": "crm",
+   "desc": "Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
+   "how": "Aplicación Ruby on Rails con PostgreSQL, Elasticsearch opcional para búsqueda y API REST; se despliega con Docker Compose, paquetes o Kubernetes.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/zammad/zammad/blob/develop/README.md",
+   "cases": [
+    "centralizar el soporte por correo y chat de un equipo pequeño",
+    "crear una base de conocimiento y métricas de atención"
+   ],
+   "stack": "Ruby, Dockerfile, Gemfile, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "activepieces",
+    "claude-code",
+    "coolify"
+   ],
+   "alternatives": [
+    "freescout"
+   ],
+   "repo": "https://github.com/zammad/zammad",
+   "homepage": "https://zammad.org",
+   "license": "AGPL-3.0",
+   "lang": "Ruby",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/zammad.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/zammad/zammad/blob/develop/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "21fe878728b204c8863017b75d8fdfa43cf15248"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/zammad/zammad/blob/develop/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "21fe878728b204c8863017b75d8fdfa43cf15248",
+    "root_tree_sha": "73255a3cfeb5a3c1d29258154b620e4a04a2807b",
+    "readme_url": "https://github.com/zammad/zammad/blob/develop/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "centralizar el soporte por correo y chat de un equipo pequeño",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "crear una base de conocimiento y métricas de atención",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Zammad con zammad-docker-compose, conecta una cuenta de correo de prueba y responde a un ticket.",
+    "success": "El correo entra como ticket y la respuesta sale desde Zammad.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/zammad/zammad/blob/develop/README.md",
+    "source_blob_sha": "21fe878728b204c8863017b75d8fdfa43cf15248",
+    "previous_category": [
+     18,
+     "crm"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Helpdesk de código abierto (AGPL-3.0) de la Zammad Foundation, con alojamiento y soporte de pago de Zammad GmbH. Muy maduro.",
+   "que_hace": "Gestiona la comunicación con clientes por correo, chat, teléfono y redes sociales, con tickets, SLA, macros, disparadores, base de conocimiento, informes, búsqueda y API REST para integraciones.",
+   "como_lo_hace": "Escrito en Ruby on Rails; se instala con Docker Compose, paquetes de Linux o Helm. Requiere PostgreSQL; Elasticsearch es recomendable para búsqueda e informes.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API REST y los webhooks de Zammad permiten crear tickets o avisos desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token de API en Zammad; después úsalo en Activepieces."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir scripts contra la API de Zammad para migraciones o informes (combinación por arquitectura).",
+     "orden_instalacion": "Usa una instancia de prueba; después pide el script al agente."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Zammad se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): freescout. Chatwoot cubre atención por chat y mensajería con otro enfoque.",
+   "descripcion_fuentes": [
+    "https://github.com/zammad/zammad/blob/develop/README.md",
+    "https://docs.zammad.org/en/latest/install/docker-compose.html"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zammad/zammad",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Ruby",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "freescout": {
+   "name": "FreeScout",
+   "cat": 18,
+   "sub": "crm",
+   "desc": "Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
+   "how": "Aplicación PHP (Laravel) con MySQL o PostgreSQL y módulos para ampliar canales y funciones.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+   "cases": [
+    "gestionar el correo de soporte de un equipo pequeño en un hosting barato",
+    "unificar correo, WhatsApp o Telegram de clientes con módulos"
+   ],
+   "stack": "PHP, composer.json, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Muchos canales y funciones avanzadas dependen de módulos de pago.",
+   "combines_with": [
+    "activepieces",
+    "claude-code",
+    "coolify"
+   ],
+   "alternatives": [
+    "zammad"
+   ],
+   "repo": "https://github.com/freescout-help-desk/freescout",
+   "homepage": "https://freescout.net",
+   "license": "AGPL-3.0",
+   "lang": "PHP",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/freescout.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/freescout-help-desk/freescout/blob/dist/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "de54b533d51d454860ca982e9a48795f1c586f6b"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "de54b533d51d454860ca982e9a48795f1c586f6b",
+    "root_tree_sha": "7769d477ef1e45275d3c0ee173648fce35719945",
+    "readme_url": "https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "gestionar el correo de soporte de un equipo pequeño en un hosting barato",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "unificar correo, WhatsApp o Telegram de clientes con módulos",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala FreeScout en un servidor PHP o con su imagen Docker, conecta un buzón de prueba y responde a una conversación.",
+    "success": "El correo aparece como conversación y la respuesta se envía desde FreeScout.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+    "source_blob_sha": "de54b533d51d454860ca982e9a48795f1c586f6b",
+    "previous_category": [
+     18,
+     "crm"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Helpdesk de código abierto (AGPL-3.0) del proyecto FreeScout, financiado con la venta de módulos. Maduro y activo.",
+   "que_hace": "Centraliza conversaciones de clientes en bandejas compartidas con asignación, notas, respuestas guardadas, flujos y seguimiento; con módulos, añade WhatsApp, Telegram, Facebook, Slack, chat en vivo y otras funciones.",
+   "como_lo_hace": "Aplicación PHP/MySQL con Laravel; se instala en hosting compartido, servidor propio o Docker. El instalador web guía la configuración.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API de FreeScout (módulo) o el correo permiten crear conversaciones desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Configura el acceso por API o correo; después crea el flujo."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede ayudar a escribir módulos o scripts de migración para FreeScout (combinación por arquitectura).",
+     "orden_instalacion": "Usa un entorno de pruebas; después revisa el código generado."
+    },
+    {
+     "id": "coolify",
+     "motivo": "FreeScout se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): zammad.",
+   "descripcion_fuentes": [
+    "https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+    "https://freescout.net/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "freescout-help-desk/freescout",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.8.251 (2026-11-14)"
+   }
+  },
+  "espocrm": {
+   "name": "EspoCRM",
+   "cat": 18,
+   "sub": "crm",
+   "desc": "CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.",
+   "how": "Aplicación de página única con backend PHP, API REST y base MySQL, MariaDB o PostgreSQL; personalizable con el gestor de entidades.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/espocrm/espocrm/blob/master/README.md",
+   "cases": [
+    "llevar el pipeline de ventas de una pyme en tu servidor",
+    "adaptar entidades y campos del CRM a tu proceso sin programar"
+   ],
+   "stack": "PHP, composer.json, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "activepieces",
+    "easyappointments",
+    "coolify"
+   ],
+   "alternatives": [
+    "twenty-main"
+   ],
+   "repo": "https://github.com/espocrm/espocrm",
+   "homepage": "https://www.espocrm.com",
+   "license": "AGPL-3.0",
+   "lang": "PHP",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/espocrm.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/espocrm/espocrm/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "62e9141a2e1cea7a15cb57e67bca8168531f54f9"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/espocrm/espocrm/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "62e9141a2e1cea7a15cb57e67bca8168531f54f9",
+    "root_tree_sha": "12ae7af493620dac2e865f571006a32cd8bc31ac",
+    "readme_url": "https://github.com/espocrm/espocrm/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "llevar el pipeline de ventas de una pyme en tu servidor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "adaptar entidades y campos del CRM a tu proceso sin programar",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala EspoCRM con su imagen Docker o en un servidor PHP, crea una cuenta y una oportunidad.",
+    "success": "La oportunidad aparece en el pipeline con su etapa.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/espocrm/espocrm/blob/master/README.md",
+    "source_blob_sha": "62e9141a2e1cea7a15cb57e67bca8168531f54f9",
+    "previous_category": [
+     18,
+     "crm"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "CRM de código abierto (AGPL-3.0) de EspoCRM Inc., con extensiones y soporte de pago. Maduro y activo.",
+   "que_hace": "Gestiona cuentas, contactos, leads, oportunidades, casos, campañas, calendario y correo, con flujos (extensión), informes, roles y permisos, y un gestor de entidades para crear campos, relaciones y diseños sin código.",
+   "como_lo_hace": "Backend PHP 8.3–8.5 con frontend SPA; requiere MySQL 8.0+, MariaDB 10.6+ o PostgreSQL. Se instala en servidor web, con Docker o con script de instalación.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API REST y los webhooks de EspoCRM permiten sincronizar leads desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un usuario API en EspoCRM; después úsalo en Activepieces."
+    },
+    {
+     "id": "easyappointments",
+     "motivo": "Las citas reservadas en Easy!Appointments pueden registrarse como actividades en EspoCRM mediante sus APIs (combinación por arquitectura).",
+     "orden_instalacion": "Conecta ambas APIs con un flujo de automatización."
+    },
+    {
+     "id": "coolify",
+     "motivo": "EspoCRM se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): twenty-main.",
+   "descripcion_fuentes": [
+    "https://github.com/espocrm/espocrm/blob/master/README.md",
+    "https://docs.espocrm.com/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "espocrm/espocrm",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "10.1.1 (2026-11-10)"
+   }
+  },
+  "easyappointments": {
+   "name": "Easy!Appointments",
+   "cat": 18,
+   "sub": "reservas",
+   "desc": "Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.",
+   "how": "Aplicación PHP con MySQL, página de reservas pública, panel de administración y API REST.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/alextselegidis/easyappointments/blob/main/README.md",
+   "cases": [
+    "permitir a tus clientes reservar citas en tu web",
+    "gestionar la agenda de varios profesionales y servicios"
+   ],
+   "stack": "PHP, composer.json, docker-compose.yml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "espocrm",
+    "activepieces",
+    "coolify"
+   ],
+   "alternatives": [
+    "cal.diy"
+   ],
+   "repo": "https://github.com/alextselegidis/easyappointments",
+   "homepage": "https://easyappointments.org",
+   "license": "GPL-3.0",
+   "lang": "PHP",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/easyappointments.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/alextselegidis/easyappointments/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "e1678866560dc8dd2cb0d5c84328e114508e2360"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/alextselegidis/easyappointments/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "e1678866560dc8dd2cb0d5c84328e114508e2360",
+    "root_tree_sha": "b81e68d732db079dea595b3a94cdb3ad2420c340",
+    "readme_url": "https://github.com/alextselegidis/easyappointments/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "permitir a tus clientes reservar citas en tu web",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "gestionar la agenda de varios profesionales y servicios",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba.",
+    "success": "La cita aparece en el calendario del proveedor.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/alextselegidis/easyappointments/blob/main/README.md",
+    "source_blob_sha": "e1678866560dc8dd2cb0d5c84328e114508e2360",
+    "previous_category": [
+     18,
+     "reservas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Sistema de reservas de código abierto (GPL-3.0) creado por Alex Tselegidis. Maduro y activo.",
+   "que_hace": "Gestiona clientes, servicios, proveedores, horarios de trabajo y reservas online, con notificaciones por correo, sincronización con Google Calendar, API REST e interfaz traducida a muchos idiomas.",
+   "como_lo_hace": "Escrito en PHP 8.2+ con MySQL; se instala en un servidor web o con el entorno Docker Compose del repositorio.",
+   "combina_con": [
+    {
+     "id": "espocrm",
+     "motivo": "Las citas pueden registrarse como actividades del cliente en EspoCRM mediante ambas APIs (combinación por arquitectura).",
+     "orden_instalacion": "Conecta las APIs con un flujo de automatización."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "La API REST de Easy!Appointments permite automatizar recordatorios o altas desde Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea credenciales de API; después úsalas en Activepieces."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Easy!Appointments se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): cal.diy.",
+   "descripcion_fuentes": [
+    "https://github.com/alextselegidis/easyappointments/blob/main/README.md",
+    "https://easyappointments.org"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "alextselegidis/easyappointments",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "GPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.6.1 (2026-10-19)"
+   }
+  },
+  "zed": {
+   "name": "Zed",
+   "cat": 20,
+   "sub": "editor",
+   "desc": "Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.",
+   "how": "Aplicación nativa en Rust con su propio framework de interfaz (GPUI); integra un panel de agente y agentes externos mediante Agent Client Protocol.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/zed-industries/zed/blob/main/README.md",
+   "cases": [
+    "editar código con un editor rápido y colaborar en tiempo real",
+    "usar Claude Code, Gemini CLI o Codex dentro del editor por ACP"
+   ],
+   "stack": "Rust, Cargo.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "claude-code",
+    "gemini-cli",
+    "codex",
+    "qwen-code"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/zed-industries/zed",
+   "homepage": "https://zed.dev",
+   "license": "GPL-3.0 (Apache-2.0 en componentes marcados)",
+   "lang": "Rust",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/zed.md",
+   "access": {
+    "api": "optional",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/zed-industries/zed/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/zed-industries/zed/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
+    "root_tree_sha": "a57e2fdc389a3e513a6d5f5a7564ebe2fd33fc88",
+    "readme_url": "https://github.com/zed-industries/zed/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP.",
+   "models": "Proveedores de modelos configurables y agentes externos (Claude Code, Gemini CLI, Codex) por ACP",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "editar código con un editor rápido y colaborar en tiempo real",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "usar Claude Code, Gemini CLI o Codex dentro del editor por ACP",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Descarga Zed para tu sistema, abre un proyecto y configura un agente externo como Gemini CLI.",
+    "success": "El agente responde en el panel de Zed y propone cambios en el proyecto.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/zed-industries/zed/blob/main/README.md",
+    "source_blob_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
+    "previous_category": [
+     20,
+     "editor"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Editor de código abierto de Zed Industries. El código es principalmente GPL-3.0-or-later con componentes Apache-2.0 donde se indica. Muy activo; ofrece planes de pago para su IA alojada.",
+   "que_hace": "Edita código con alto rendimiento, colaboración multijugador, Tree-sitter, LSP, depuración, terminal integrada y control de versiones, y ofrece un panel de agente con modelos configurables y agentes externos compatibles con ACP.",
+   "como_lo_hace": "Escrito en Rust; se descarga para macOS, Linux y Windows o se instala con gestores de paquetes. Los agentes externos se integran mediante Agent Client Protocol.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Zed documenta el uso de Claude Code (Claude Agent) como agente externo por ACP.",
+     "orden_instalacion": "Instala Claude Code; después añádelo como agente externo en Zed."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Gemini CLI es uno de los agentes externos documentados en Zed.",
+     "orden_instalacion": "Instala Gemini CLI; después actívalo en el panel de agentes."
+    },
+    {
+     "id": "codex",
+     "motivo": "Zed documenta Codex como agente externo.",
+     "orden_instalacion": "Instala Codex; después configúralo en Zed."
+    },
+    {
+     "id": "qwen-code",
+     "motivo": "Qwen Code documenta su integración con Zed.",
+     "orden_instalacion": "Instala Qwen Code; después configúralo como agente externo."
+    }
+   ],
+   "descripcion_notas": "No hay otro editor completo en el catálogo; cline y kilocode son extensiones para VS Code.",
+   "descripcion_fuentes": [
+    "https://github.com/zed-industries/zed/blob/main/README.md",
+    "https://zed.dev/docs/ai/external-agents"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zed-industries/zed",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.28.1 (2026-11-11)"
+   }
+  },
+  "mini-swe-agent": {
+   "name": "mini-swe-agent",
+   "cat": 20,
+   "sub": "ingenieria",
+   "desc": "Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.",
+   "how": "Paquete Python con un bucle de agente que envía comandos bash al entorno (local, Docker, Podman, Apptainer, bubblewrap…) y llama a modelos mediante LiteLLM.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md",
+   "cases": [
+    "resolver issues de un repositorio de forma autónoma en un contenedor",
+    "usar un agente simple como base para investigación o benchmarks"
+   ],
+   "stack": "Python, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: resolver issues de un repositorio de forma autónoma en un contenedor; usar un agente simple como base para investigación o benchmarks",
+   "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "litellm",
+    "ollama",
+    "vllm"
+   ],
+   "alternatives": [
+    "openhands"
+   ],
+   "repo": "https://github.com/SWE-agent/mini-swe-agent",
+   "homepage": "https://mini-swe-agent.com",
+   "license": "MIT",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/mini-swe-agent.md",
+   "access": {
+    "api": "optional",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+    "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "7db1d82dfa92eaa00adeb10c8681677a9e6ec639"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "pip install uv && uvx mini-swe-agent",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "7db1d82dfa92eaa00adeb10c8681677a9e6ec639",
+    "root_tree_sha": "04d809ceab9df28f9adaed044884180159172930",
+    "readme_url": "https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: resolver issues de un repositorio de forma autónoma en un contenedor; usar un agente simple como base para investigación o benchmarks.",
+   "models": "Cualquier modelo accesible mediante LiteLLM, incluidos modelos locales",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "resolver issues de un repositorio de forma autónoma en un contenedor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "usar un agente simple como base para investigación o benchmarks",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Ejecuta `pip install uv && uvx mini-swe-agent` con una clave de modelo y pídele una tarea pequeña en un repositorio de prueba.",
+    "success": "El agente ejecuta comandos bash y propone el cambio.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md",
+    "source_blob_sha": "7db1d82dfa92eaa00adeb10c8681677a9e6ec639",
+    "previous_category": [
+     20,
+     "ingenieria"
+    ],
+    "category_verdict": "confirmed",
+    "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Agente de código abierto (MIT) de los autores de SWE-bench y SWE-agent (Princeton y Stanford), que lo presentan como sucesor del SWE-agent original. Activo.",
+   "que_hace": "Resuelve tareas de ingeniería en repositorios con un agente deliberadamente simple que solo usa bash, sin interfaz de llamadas a herramientas, con historial lineal fácil de depurar y despliegue en entornos locales o aislados; incluye scripts para SWE-bench.",
+   "como_lo_hace": "Paquete Python; se ejecuta con `uvx mini-swe-agent` o pip. Usa LiteLLM para los modelos y admite entornos local, Docker/Podman, Singularity/Apptainer, bubblewrap y otros.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "mini-swe-agent llama a los modelos a través de su clase de modelo basada en LiteLLM.",
+     "orden_instalacion": "Configura las claves o el endpoint en LiteLLM; después selecciona el modelo en mini-swe-agent."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Mediante LiteLLM, mini-swe-agent puede usar modelos locales servidos por Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama con un modelo de código; después configúralo como modelo LiteLLM."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Un modelo servido con vLLM puede alimentar mini-swe-agent a través de LiteLLM (combinación por arquitectura).",
+     "orden_instalacion": "Lanza vLLM; después apunta LiteLLM a su endpoint."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): openhands. Ejecuta el agente en un contenedor para aislar los comandos.",
+   "descripcion_fuentes": [
+    "https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md",
+    "https://mini-swe-agent.com/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "SWE-agent/mini-swe-agent",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.4.6 (2026-07-23)"
+   }
+  },
+  "caddy": {
+   "name": "Caddy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "desc": "Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.",
+   "how": "Binario Go sin dependencias con gestión automática de certificados TLS (ACME), HTTP/1-2-3, Caddyfile, configuración JSON nativa y API de administración.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/caddyserver/caddy/blob/master/README.md",
+   "cases": [
+    "publicar tus servicios autoalojados con HTTPS sin gestionar certificados",
+    "servir una web estática o hacer de proxy inverso con pocas líneas"
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "coolify",
+    "uptime-kuma",
+    "headscale",
+    "frp",
+    "synapse",
+    "wg-easy"
+   ],
+   "alternatives": [
+    "traefik"
+   ],
+   "repo": "https://github.com/caddyserver/caddy",
+   "homepage": "https://caddyserver.com",
+   "license": "Apache-2.0",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/caddy.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/caddyserver/caddy/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "24b466d8c42d1b198ac13e49d81ad53df8b6328d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/caddyserver/caddy/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "24b466d8c42d1b198ac13e49d81ad53df8b6328d",
+    "root_tree_sha": "7ce9f0823762109fc67911f95f6af1a697345ab7",
+    "readme_url": "https://github.com/caddyserver/caddy/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "publicar tus servicios autoalojados con HTTPS sin gestionar certificados",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "servir una web estática o hacer de proxy inverso con pocas líneas",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Caddy y ejecuta `caddy reverse-proxy --from localhost:8443 --to localhost:8080` sobre un servicio local.",
+    "success": "Caddy sirve el servicio por HTTPS con un certificado local automático.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/caddyserver/caddy/blob/master/README.md",
+    "source_blob_sha": "24b466d8c42d1b198ac13e49d81ad53df8b6328d",
+    "previous_category": [
+     22,
+     "infraestructura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Servidor web de código abierto (Apache-2.0) creado por Matt Holt y patrocinado por empresas. Muy maduro.",
+   "que_hace": "Sirve sitios y hace de proxy inverso con HTTPS automático (incluidos certificados internos y renovación), HTTP/3, balanceo de carga, compresión, plantillas y servidor de archivos, ampliable con módulos.",
+   "como_lo_hace": "Escrito en Go; un único binario para cualquier plataforma, paquetes o Docker. Se configura con Caddyfile, JSON nativo o su API REST; los plugins se compilan con xcaddy.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Coolify permite usar Caddy como proxy en lugar de Traefik.",
+     "orden_instalacion": "Instala Coolify; después cambia el proxy del servidor a Caddy en la configuración."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila los sitios que publica Caddy (combinación por arquitectura).",
+     "orden_instalacion": "Publica el sitio con Caddy; después añade el monitor."
+    },
+    {
+     "id": "headscale",
+     "motivo": "La documentación de Headscale incluye la configuración para ejecutarlo detrás de Caddy.",
+     "orden_instalacion": "Headscale en local; después añade el bloque reverse_proxy en Caddy."
+    },
+    {
+     "id": "frp",
+     "motivo": "Combinación recíproca: frp lo enlaza como «Caddy puede poner HTTPS automático delante de los servicios HTTP expuestos con frp en el VPS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde frp: frps en el VPS; después configura Caddy como proxy hacia el puerto de frp.",
+     "reciproca_de": "frp"
+    },
+    {
+     "id": "synapse",
+     "motivo": "Combinación recíproca: Synapse lo enlaza como «Caddy sirve como proxy inverso con TLS y delegación .well-known para Synapse (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Synapse: Synapse en local; después configura reverse_proxy en Caddy.",
+     "reciproca_de": "synapse"
+    },
+    {
+     "id": "wg-easy",
+     "motivo": "Combinación recíproca: WireGuard Easy lo enlaza como «Caddy publica la interfaz web de wg-easy con HTTPS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WireGuard Easy: wg-easy en local; después configura reverse_proxy en Caddy.",
+     "reciproca_de": "wg-easy"
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): traefik.",
+   "descripcion_fuentes": [
+    "https://github.com/caddyserver/caddy/blob/master/README.md",
+    "https://caddyserver.com/docs/",
+    "https://coolify.io/docs/knowledge-base/server/proxies"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "caddyserver/caddy",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.11.9 (2026-11-05)"
+   }
+  },
+  "traefik": {
+   "name": "Traefik Proxy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "desc": "Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.",
+   "how": "Binario Go que descubre servicios desde proveedores (Docker, Swarm, Kubernetes, Consul, etcd…) y genera rutas, certificados y middlewares en caliente.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/traefik/traefik/blob/master/README.md",
+   "cases": [
+    "publicar contenedores Docker con dominios y HTTPS mediante etiquetas",
+    "balancear tráfico entre servicios en Kubernetes"
+   ],
+   "stack": "Go, Dockerfile, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "coolify",
+    "dokploy",
+    "crowdsec",
+    "grafana",
+    "portainer"
+   ],
+   "alternatives": [
+    "caddy"
+   ],
+   "repo": "https://github.com/traefik/traefik",
+   "homepage": "https://traefik.io",
+   "license": "MIT",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/traefik.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/traefik/traefik/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "de1ddd2717d453af9c2f597247011da8227a345b"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/traefik/traefik/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "de1ddd2717d453af9c2f597247011da8227a345b",
+    "root_tree_sha": "36b2bd1bd4538dec67b2e7ca6eb395eae47396ee",
+    "readme_url": "https://github.com/traefik/traefik/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "publicar contenedores Docker con dominios y HTTPS mediante etiquetas",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "balancear tráfico entre servicios en Kubernetes",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta.",
+    "success": "El servicio responde en el dominio configurado sin reiniciar Traefik.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/traefik/traefik/blob/master/README.md",
+    "source_blob_sha": "de1ddd2717d453af9c2f597247011da8227a345b",
+    "previous_category": [
+     22,
+     "infraestructura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Proxy inverso de código abierto (MIT) de Traefik Labs, que vende productos comerciales aparte. Muy maduro.",
+   "que_hace": "Enruta tráfico a servicios descubiertos automáticamente, con HTTPS por Let's Encrypt (incluidos comodines), balanceo, reintentos, cortacircuitos, middlewares, panel web y métricas (Prometheus, Datadog, StatsD, InfluxDB) y trazas.",
+   "como_lo_hace": "Escrito en Go; un binario o imagen Docker oficial. La configuración estática se define en archivo o argumentos y la dinámica llega de los proveedores, por ejemplo etiquetas de Docker.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Coolify usa Traefik como proxy por defecto para sus despliegues.",
+     "orden_instalacion": "Viene configurado al instalar Coolify; ajusta dominios desde el panel."
+    },
+    {
+     "id": "dokploy",
+     "motivo": "Dokploy integra Traefik automáticamente para enrutamiento y balanceo.",
+     "orden_instalacion": "Viene configurado por el instalador de Dokploy."
+    },
+    {
+     "id": "crowdsec",
+     "motivo": "CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware.",
+     "orden_instalacion": "CrowdSec en el servidor; después añade el bouncer como middleware de Traefik."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Las métricas Prometheus de Traefik se visualizan en Grafana.",
+     "orden_instalacion": "Habilita las métricas Prometheus; después crea el panel en Grafana."
+    },
+    {
+     "id": "portainer",
+     "motivo": "Combinación recíproca: Portainer CE lo enlaza como «Los stacks gestionados con Portainer pueden publicarse con etiquetas de Traefik (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Portainer CE: Despliega Traefik; después añade las etiquetas en los stacks desde Portainer.",
+     "reciproca_de": "portainer"
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): caddy.",
+   "descripcion_fuentes": [
+    "https://github.com/traefik/traefik/blob/master/README.md",
+    "https://doc.traefik.io/traefik/",
+    "https://docs.crowdsec.net/u/bouncers/traefik"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "traefik/traefik",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.7.19 (2026-11-13)"
+   }
+  },
+  "appwrite": {
+   "name": "Appwrite",
+   "cat": 22,
+   "sub": "infraestructura",
+   "desc": "Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.",
+   "how": "Conjunto de microservicios en contenedores con API REST, GraphQL y Realtime, SDK para muchas plataformas y servidor MCP; autoalojable con Docker o en la nube.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/appwrite/appwrite/blob/main/README.md",
+   "cases": [
+    "dar backend completo a una app web o móvil sin escribir servidor",
+    "dejar que un agente de código opere un proyecto de backend vía MCP"
+   ],
+   "stack": "TypeScript, Cargo.toml, Dockerfile, composer.json, docker-compose.yml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "coolify"
+   ],
+   "alternatives": [
+    "supabase"
+   ],
+   "repo": "https://github.com/appwrite/appwrite",
+   "homepage": "https://appwrite.io",
+   "license": "BSD-3-Clause",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/appwrite.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/appwrite/appwrite/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "39a96d254f1d23e622630e5004d54a9de331ef7d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/appwrite/appwrite/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "39a96d254f1d23e622630e5004d54a9de331ef7d",
+    "root_tree_sha": "01d0a639a069777c9e33f9777c0e5ba2948f7c1f",
+    "readme_url": "https://github.com/appwrite/appwrite/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "dar backend completo a una app web o móvil sin escribir servidor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "dejar que un agente de código opere un proyecto de backend vía MCP",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Lanza Appwrite con el `docker run` del README, crea un proyecto y un usuario de prueba.",
+    "success": "El panel muestra el proyecto con autenticación y base de datos listas.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/appwrite/appwrite/blob/main/README.md",
+    "source_blob_sha": "39a96d254f1d23e622630e5004d54a9de331ef7d",
+    "previous_category": [
+     22,
+     "infraestructura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Plataforma de backend de código abierto (BSD-3-Clause) de Appwrite, que ofrece también una nube gestionada. Muy popular y activa.",
+   "que_hace": "Proporciona autenticación, bases de datos (propias o PostgreSQL/MySQL gestionados), almacenamiento, funciones serverless, mensajería, tiempo real, hosting de frontends (Sites) y un servidor MCP para que los agentes de código operen proyectos vivos.",
+   "como_lo_hace": "Se autoaloja con Docker (un `docker run` que instala la pila de contenedores) o se usa en Appwrite Cloud. Ofrece SDK cliente y servidor para web, móvil y backend.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Appwrite incluye un servidor MCP para conectar agentes como Claude Code a un proyecto vivo.",
+     "orden_instalacion": "Crea el proyecto y una clave; después registra el servidor MCP en Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "El README cita Codex entre los agentes que se conectan por el servidor MCP de Appwrite.",
+     "orden_instalacion": "Configura el servidor MCP de Appwrite en Codex."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Appwrite se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): supabase.",
+   "descripcion_fuentes": [
+    "https://github.com/appwrite/appwrite/blob/main/README.md",
+    "https://appwrite.io/docs"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "appwrite/appwrite",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-3-Clause",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.7.2 (2026-11-12)"
+   }
+  },
+  "portainer": {
+   "name": "Portainer CE",
+   "cat": 22,
+   "sub": "infraestructura",
+   "desc": "Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition).",
+   "how": "Servidor Go con interfaz web que se conecta a los entornos mediante el socket de Docker o agentes, y gestiona contenedores, imágenes, redes, volúmenes y stacks.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/portainer/portainer/blob/release/2.45/README.md",
+   "cases": [
+    "administrar los contenedores de tu homelab desde el navegador",
+    "desplegar stacks de Docker Compose con interfaz gráfica"
+   ],
+   "stack": "TypeScript, go.mod, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Community Edition gratuita; RBAC avanzado, GitOps, edge, auditoría y SSO forman parte de Business Edition (de pago).",
+   "combines_with": [
+    "traefik",
+    "uptime-kuma",
+    "wg-easy"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/portainer/portainer",
+   "homepage": "https://www.portainer.io",
+   "license": "Zlib",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/portainer.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/portainer/portainer/blob/release/2.45/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "98b8f608aef5a9004b5add91bc186d32f5faea12"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/portainer/portainer/blob/release/2.45/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "98b8f608aef5a9004b5add91bc186d32f5faea12",
+    "root_tree_sha": "66c22cf97b3afb4a3968753f7a70ac1924ec4ef0",
+    "readme_url": "https://github.com/portainer/portainer/blob/release/2.45/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "administrar los contenedores de tu homelab desde el navegador",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "desplegar stacks de Docker Compose con interfaz gráfica",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales.",
+    "success": "El panel lista los contenedores con su estado y registros.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/portainer/portainer/blob/release/2.45/README.md",
+    "source_blob_sha": "98b8f608aef5a9004b5add91bc186d32f5faea12",
+    "previous_category": [
+     22,
+     "infraestructura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Gestor de contenedores de código abierto (zlib) de Portainer.io. La Community Edition es gratuita y la Business Edition añade funciones de pago sobre la misma base. Muy maduro.",
+   "que_hace": "Gestiona contenedores, imágenes, redes, volúmenes, stacks de Compose y recursos de Kubernetes con interfaz gráfica, plantillas de aplicaciones, registros, consola y control de acceso básico.",
+   "como_lo_hace": "Escrito en Go con frontend web; se instala como contenedor con acceso al socket de Docker o con agentes y Helm para Kubernetes.",
+   "combina_con": [
+    {
+     "id": "traefik",
+     "motivo": "Los stacks gestionados con Portainer pueden publicarse con etiquetas de Traefik (combinación por arquitectura).",
+     "orden_instalacion": "Despliega Traefik; después añade las etiquetas en los stacks desde Portainer."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma, desplegado como stack desde Portainer, vigila los servicios del host (combinación por arquitectura).",
+     "orden_instalacion": "Crea el stack de Uptime Kuma en Portainer; después añade monitores."
+    },
+    {
+     "id": "wg-easy",
+     "motivo": "wg-easy se despliega y actualiza como stack desde Portainer (combinación por arquitectura).",
+     "orden_instalacion": "Crea el stack con el Compose de wg-easy."
+    }
+   ],
+   "descripcion_notas": "Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.",
+   "descripcion_fuentes": [
+    "https://github.com/portainer/portainer/blob/release/2.45/README.md",
+    "https://docs.portainer.io/start/install-ce"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "portainer/portainer",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Zlib",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.45.3 (2026-10-21)"
+   }
+  },
+  "netbird": {
+   "name": "NetBird",
+   "cat": 22,
+   "sub": "redes",
+   "desc": "Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.",
+   "how": "Agentes Go en cada dispositivo crean túneles WireGuard peer-to-peer coordinados por servicios de gestión, señalización y relay, con panel web.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/netbirdio/netbird/blob/main/README.md",
+   "cases": [
+    "conectar servidores y equipos remotos sin abrir puertos",
+    "dar acceso a la red interna con SSO y políticas por grupo"
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Los servicios de servidor (management, signal, relay) son AGPL-3.0; el resto, BSD-3-Clause.",
+   "combines_with": [
+    "grafana",
+    "uptime-kuma",
+    "coolify"
+   ],
+   "alternatives": [
+    "headscale"
+   ],
+   "repo": "https://github.com/netbirdio/netbird",
+   "homepage": "https://netbird.io",
+   "license": "BSD-3-Clause + AGPL-3.0 (management, signal, relay)",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/netbird.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/netbirdio/netbird/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "4dbfc7bd0b8236c4d60c3e1be90046c0457ce9d6"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/netbirdio/netbird/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "4dbfc7bd0b8236c4d60c3e1be90046c0457ce9d6",
+    "root_tree_sha": "0695595cdd5131e7158e75dee086dddab1da0150",
+    "readme_url": "https://github.com/netbirdio/netbird/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "conectar servidores y equipos remotos sin abrir puertos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "dar acceso a la red interna con SSO y políticas por grupo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Sigue la guía de autoalojamiento rápido de NetBird en un VPS y conecta dos dispositivos con el cliente.",
+    "success": "Ambos dispositivos aparecen en el panel y se alcanzan por la red privada.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/netbirdio/netbird/blob/main/README.md",
+    "source_blob_sha": "4dbfc7bd0b8236c4d60c3e1be90046c0457ce9d6",
+    "previous_category": [
+     22,
+     "redes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Plataforma de red de código abierto de NetBird GmbH. El repositorio es BSD-3-Clause salvo management/, signal/ y relay/, que son AGPL-3.0. Muy activa, con nube de pago.",
+   "que_hace": "Conecta máquinas mediante túneles WireGuard cifrados sin abrir puertos, con descubrimiento automático de pares, SSO y MFA, grupos y reglas de acceso, rutas de red, DNS, comprobaciones de postura y panel de administración.",
+   "como_lo_hace": "Escrito en Go; el cliente se instala en Linux, Windows, macOS, Android e iOS. El servidor se autoaloja con Docker Compose siguiendo la guía de inicio rápido (incluye proveedor de identidad y proxy).",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "Los servicios de NetBird exponen métricas que se pueden visualizar en Grafana (combinación por arquitectura).",
+     "orden_instalacion": "Configura Prometheus para leer las métricas; después crea el panel."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila los servicios de gestión y relay de NetBird (combinación por arquitectura).",
+     "orden_instalacion": "Añade monitores HTTP y TCP para sus endpoints."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El servidor de NetBird se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): headscale.",
+   "descripcion_fuentes": [
+    "https://github.com/netbirdio/netbird/blob/main/README.md",
+    "https://docs.netbird.io/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "netbirdio/netbird",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.83.1 (2026-11-13)"
+   }
+  },
+  "wg-easy": {
+   "name": "WireGuard Easy",
+   "cat": 22,
+   "sub": "redes",
+   "desc": "La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.",
+   "how": "Contenedor Docker con WireGuard y una interfaz web (Nuxt) para crear, activar y descargar configuraciones de clientes.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/wg-easy/wg-easy/blob/master/README.md",
+   "cases": [
+    "montar una VPN para acceder a tu red de casa desde el móvil",
+    "gestionar clientes de WireGuard sin editar archivos a mano"
+   ],
+   "stack": "TypeScript, Dockerfile, docker-compose.yml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "grafana",
+    "caddy",
+    "pi-hole",
+    "portainer"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/wg-easy/wg-easy",
+   "homepage": "https://wg-easy.github.io/wg-easy/latest/",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/wg-easy.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/wg-easy/wg-easy/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "b80abcec5b9c25b6f4786fd588e19e41093b3def"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/wg-easy/wg-easy/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "b80abcec5b9c25b6f4786fd588e19e41093b3def",
+    "root_tree_sha": "1cf6a8aa632371cac21f5c4f7d464588ee1322a4",
+    "readme_url": "https://github.com/wg-easy/wg-easy/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "montar una VPN para acceder a tu red de casa desde el móvil",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "gestionar clientes de WireGuard sin editar archivos a mano",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard.",
+    "success": "El cliente se conecta y aparece activo en el panel.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/wg-easy/wg-easy/blob/master/README.md",
+    "source_blob_sha": "b80abcec5b9c25b6f4786fd588e19e41093b3def",
+    "previous_category": [
+     22,
+     "redes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.",
+   "que_hace": "Ejecuta un servidor WireGuard y ofrece una interfaz web para listar, crear, editar, activar y eliminar clientes, mostrar códigos QR, descargar configuraciones, ver estadísticas de tráfico, 2FA y métricas Prometheus.",
+   "como_lo_hace": "Se despliega con Docker o Podman (Compose recomendado); necesita un puerto UDP accesible desde internet y, para HTTPS, un proxy inverso.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "wg-easy expone métricas Prometheus que se pueden visualizar en Grafana.",
+     "orden_instalacion": "Habilita las métricas; después configura Prometheus y Grafana."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy publica la interfaz web de wg-easy con HTTPS (combinación por arquitectura).",
+     "orden_instalacion": "wg-easy en local; después configura reverse_proxy en Caddy."
+    },
+    {
+     "id": "pi-hole",
+     "motivo": "Los clientes de la VPN pueden usar Pi-hole como DNS para bloquear anuncios fuera de casa (combinación por arquitectura).",
+     "orden_instalacion": "Pi-hole en la red; después define su IP como DNS de los clientes en wg-easy."
+    },
+    {
+     "id": "portainer",
+     "motivo": "Combinación recíproca: Portainer CE lo enlaza como «wg-easy se despliega y actualiza como stack desde Portainer (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Portainer CE: Crea el stack con el Compose de wg-easy.",
+     "reciproca_de": "portainer"
+    }
+   ],
+   "descripcion_notas": "Para redes malladas con muchos nodos, headscale o netbird encajan mejor.",
+   "descripcion_fuentes": [
+    "https://github.com/wg-easy/wg-easy/blob/master/README.md",
+    "https://wg-easy.github.io/wg-easy/latest/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p06",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "wg-easy/wg-easy",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v15.5.0 (2026-10-24)"
    }
   }
  },

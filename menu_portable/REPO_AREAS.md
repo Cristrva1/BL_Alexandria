@@ -42,7 +42,7 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-`casaos`, `coolify`, `playwright`, `playwright-mcp`, `puppeteer`, `selenium`, `supabase`
+`appwrite`, `caddy`, `casaos`, `coolify`, `dokploy`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`
 
 ## Ciberseguridad
 
@@ -196,13 +196,13 @@ Elegir el motor que coordina tareas entre aplicaciones.
 
 Distinguir conexiones oficiales,pasarelas y bibliotecas de WhatsApp.
 
-`baileys`, `evolution-api`, `openwa`, `waha`, `whatsapp-agentkit`, `whatsapp-web-js`, `whatsmeow`
+`baileys`, `evolution-api`, `openwa`, `signal-cli`, `waha`, `whatsapp-agentkit`, `whatsapp-web-js`, `whatsmeow`
 
 ### CRM, ventas y soporte
 
 Gestionar clientes, oportunidades y conversaciones con personas.
 
-`chatwoot`, `compai-crm`, `erpnext`, `odoo`, `twenty-main`
+`chatwoot`, `compai-crm`, `erpnext`, `espocrm`, `freescout`, `odoo`, `twenty-main`, `zammad`
 
 ### Email, campañas y redes sociales
 
@@ -226,19 +226,19 @@ Crear herramientas de operación y formularios sobre tus datos.
 
 Organizar disponibilidad y reserva de horarios.
 
-`cal.diy`
+`cal.diy`, `easyappointments`
 
 ### Constructores de conversaciones
 
 Diseñar flujos conversacionales y conectar canales.
 
-`botpress`, `typebot`
+`botpress`, `discord-js`, `python-telegram-bot`, `typebot`
 
 ### Comunidades,chat y llamadas
 
 Organizar espacios compartidos de comunicación.
 
-`fluxer`
+`fluxer`, `mattermost`, `rocket-chat`, `synapse`
 
 ## Agentes de IA, investigación y navegación
 
@@ -448,7 +448,7 @@ Elige un agente de código, comprende un proyecto y prepara su infraestructura, 
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-`aider`, `antigravity-cli`, `claude-code`, `cline`, `codex`, `deepseek-harness`, `gemini-cli`, `goose`, `mimo-code`, `open-interpreter`, `open-swe`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `t3code`
+`aider`, `antigravity-cli`, `claude-code`, `cline`, `codex`, `deepseek-harness`, `gemini-cli`, `goose`, `kilocode`, `mimo-code`, `mini-swe-agent`, `open-interpreter`, `open-swe`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `qwen-code`, `t3code`, `zed`
 
 ### Comprender y revisar código
 
@@ -460,7 +460,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Infraestructura, servicios y herramientas de operación.
 
-`agent-desktop`, `agent-protocol`, `casaos`, `claude-task-master`, `composio`, `computer-use-preview`, `coolify`, `e2b`, `free-for-dev`, `freedomain`, `masterdnsvpn`, `nemoclaw`, `nodeterm`, `sandbox`, `shepherd`, `supabase`
+`agent-desktop`, `agent-protocol`, `appwrite`, `caddy`, `casaos`, `claude-task-master`, `composio`, `computer-use-preview`, `coolify`, `dokploy`, `e2b`, `free-for-dev`, `freedomain`, `frp`, `headscale`, `masterdnsvpn`, `nemoclaw`, `netbird`, `nodeterm`, `portainer`, `sandbox`, `shepherd`, `supabase`, `traefik`, `uptime-kuma`, `wg-easy`
 
 ### Evaluación, trazas y observabilidad
 

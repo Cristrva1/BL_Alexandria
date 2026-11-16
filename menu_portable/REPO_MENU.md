@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 726 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 750 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **726 repos** de IA y
+proyecto concreto. Tienes un menú curado de **750 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -717,28 +717,37 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `x64dbg` [A|loc|E|?] — Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. — tags: depuracion,app,c
 - `zaproxy` [A|loc|M|?] — Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy intercepto — tags: pruebas,java,security,app
 
-### 17. WhatsApp, mensajería y chatbots (10)
+### 17. WhatsApp, mensajería y chatbots (16)
 Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
 
 - `baileys` [L|loc|E|?] — Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. — tags: whatsapp,chatbot,typescript — alt: whatsapp-web-js,waha
 - `botpress` [L|hyb|M|+] — Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. — tags: chatbot,agents,typescript
+- `discord-js` [L|loc|E|?] — Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST  — tags: chatbots,javascript,library,discord
 - `evolution-api` [P|loc|H|?] — API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. — tags: automation,whatsapp,typescript,docker — alt: whatsapp-web-js,waha
 - `fluxer` [P|hyb|M|?] — Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de aloj — tags: whatsapp,chatbot,typescript
+- `mattermost` [P|loc|M|?] — Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llama — tags: chat,self-hosted,go,server — alt: rocket-chat
 - `openwa` [P|loc|E|+] — Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndhar — tags: whatsapp,chatbot,typescript
+- `python-telegram-bot` [L|loc|E|+] — Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y  — tags: chatbots,python,library,telegram
+- `rocket-chat` [P|loc|M|?] — Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, om — tags: chat,self-hosted,typescript,server — alt: mattermost
+- `signal-cli` [A|loc|M|?] — Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir  — tags: messaging,java,cli
+- `synapse` [P|loc|H|?] — Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que  — tags: chat,python,self-hosted,server
 - `typebot` [P|loc|M|?] — Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. — tags: chatbot,automation,typescript
 - `waha` [P|loc|E|+] — API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. — tags: whatsapp,automation,docker — alt: evolution-api,whatsapp-web-js,baileys
 - `whatsapp-agentkit` [S|hyb|E|+] — Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita  — tags: agents,automation,python
 - `whatsapp-web-js` [L|loc|E|+] — Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. — tags: whatsapp,chatbot,javascript — alt: baileys,waha,evolution-api
 - `whatsmeow` [L|hyb|M|?] — Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. — tags: whatsapp,go,golang,whatsapp-web
 
-### 18. CRM, ventas y marketing (13)
+### 18. CRM, ventas y marketing (17)
 Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 
-- `cal.diy` [P|hyb|H|?] — Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. — tags: motores,next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss
+- `cal.diy` [P|hyb|H|?] — Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. — tags: motores,next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss — alt: easyappointments
 - `chatwoot` [P|loc|H|?] — Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, e — tags: automation,crm,ruby,docker
 - `cloud-mail` [P|loc|H|?] — Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un  — tags: marketing,server,javascript
 - `compai-crm` [P|cld|H|+] — CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. — tags: crm,typescript
+- `easyappointments` [P|loc|M|?] — Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedore — tags: booking,php,self-hosted,server — alt: cal.diy
 - `erpnext` [P|loc|H|+] — ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. — tags: crm,python — alt: odoo
+- `espocrm` [P|loc|M|?] — CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y p — tags: crm,php,self-hosted,server — alt: twenty-main
+- `freescout` [P|loc|E|?] — Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desp — tags: helpdesk,php,self-hosted,server — alt: zammad
 - `listmonk` [P|loc|M|+] — Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depe — tags: automation,email,go,docker
 - `mautic` [P|loc|H|?] — Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites com — tags: automation,email,php
 - `novu` [P|hyb|M|?] — Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y ch — tags: automation,email,typescript
@@ -746,7 +755,8 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 - `open-seo` [P|loc|H|?] — Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. — tags: marketing,server,typescript
 - `postiz-app` [P|hyb|H|?] — Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones — tags: marketing,server,typescript
 - `sellbird` [A|loc|M|+] — Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. — tags: marketing,agent,python
-- `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker
+- `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker — alt: espocrm
+- `zammad` [P|loc|H|?] — Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola int — tags: helpdesk,ruby,self-hosted,server — alt: freescout
 
 ### 19. Aprender IA y escribir mejores prompts (31)
 Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
@@ -783,26 +793,30 @@ Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 - `system-prompts-and-models-of-ai-tools` [D|hyb|E|?] — Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. — tags: prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin
 - `train-llm-from-scratch` [D|loc|H|+] — Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generaci — tags: aprender,gemini,large-language-models,llm,openai,training,transformers,python
 
-### 20. Programar con agentes de código (17)
+### 20. Programar con agentes de código (21)
 Detalle: `REPO_MENU_cats/20-programar-con-agentes-de-c-digo.md`
 
 - `aider` [R|hyb|E|+] — Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. — tags: coding-agent,python — prov: openai,anthropic,local — alt: opencode,cline
 - `antigravity-cli` [A|hyb|E|?] — Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binari — tags: coding,agents,cli,google — prov: google — alt: gemini-cli,claude-code,codex
 - `claude-code` [R|cld|E|+] — Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. — tags: coding-agent,agents,mcp,typescript — prov: anthropic,mcp — alt: codex,gemini-cli,opencode,goose,antigravity-cli
-- `cline` [R|hyb|E|+] — Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. — tags: coding-agent,agents,typescript — prov: openai,anthropic,google,local — alt: aider
+- `cline` [R|hyb|E|+] — Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. — tags: coding-agent,agents,typescript — prov: openai,anthropic,google,local — alt: aider,kilocode
 - `codex` [R|cld|E|+] — Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. — tags: coding-agent,agents,rust — prov: openai,mcp — alt: claude-code,gemini-cli,opencode,antigravity-cli
 - `deepseek-harness` [A|hyb|M|+] — Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de mod — tags: agents,coding,plugins,typescript — prov: deepseek,anthropic,openai,local
-- `gemini-cli` [R|cld|E|+] — CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigra — tags: coding-agent,agents,typescript — prov: google,mcp — alt: claude-code,codex,opencode,antigravity-cli
+- `gemini-cli` [R|cld|E|+] — CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigra — tags: coding-agent,agents,typescript — prov: google,mcp — alt: claude-code,codex,opencode,antigravity-cli,qwen-code
 - `goose` [R|hyb|E|?] — Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. — tags: coding-agent,agents,mcp,rust — prov: openai,anthropic,google,local — alt: opencode,claude-code,open-interpreter
+- `kilocode` [A|hyb|E|?] — Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y mar — tags: coding,agent,typescript,vscode — alt: cline
 - `mimo-code` [A|hyb|M|?] — Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria pers — tags: coding,ai,ai-agents,cli,mimo,mimo-code,typescript — alt: opencode
+- `mini-swe-agent` [A|hyb|E|+] — Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y — tags: coding,agent,python,research — alt: openhands
 - `open-interpreter` [R|loc|E|?] — Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. — tags: coding-agent,local,rust — prov: openai,local — alt: goose
 - `open-swe` [R|cld|M|?] — Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisab — tags: coding-agent,agents,python — prov: anthropic,openai — alt: openhands
 - `opencode` [R|hyb|E|+] — Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. — tags: coding-agent,agents,typescript — prov: openai,anthropic,google,local — alt: claude-code,codex,goose,gemini-cli,aider,mimo-code
 - `opencode-manager` [A|hyb|M|?] — Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. — tags: coding,agent,typescript — alt: t3code
 - `opencursor` [A|hyb|M|?] — Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. — tags: coding,agent,ai,code,coder,cursor,extension,ide
-- `openhands` [P|hyb|M|+] — Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. — tags: agents,automation,typescript,docker — alt: open-swe
+- `openhands` [P|hyb|M|+] — Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. — tags: agents,automation,typescript,docker — alt: open-swe,mini-swe-agent
 - `openidea` [A|loc|E|?] — Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguaje — tags: coding,app,typescript
+- `qwen-code` [A|hyb|E|+] — Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locale — tags: coding,agent,cli,typescript — alt: gemini-cli
 - `t3code` [A|loc|E|?] — Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. — tags: coding-agent,ui,typescript — alt: opencode-manager
+- `zed` [A|hyb|E|?] — Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada  — tags: editor,rust,coding,app
 
 ### 21. Asistentes e investigación con agentes (17)
 Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
@@ -825,25 +839,35 @@ Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
 - `social-media-agent` [R|cld|M|+] — Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de pu — tags: asistentes,typescript
 - `storm` [R|hyb|M|+] — Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. — tags: research,agents,python — prov: openai — alt: gpt-researcher
 
-### 22. Infraestructura, despliegue y herramientas para agentes (16)
+### 22. Infraestructura, despliegue y herramientas para agentes (26)
 Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agentes.md`
 
 - `agent-desktop` [A|loc|M|+] — CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. — tags: infra,accessibility,accessibility-api,ai-agents,automation,cli,computer-use,computer-use-agent
 - `agent-protocol` [D|loc|E|?] — Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. — tags: agents,python
+- `appwrite` [P|loc|M|?] — Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenami — tags: backend,self-hosted,docker,mcp — alt: supabase
+- `caddy` [P|loc|E|?] — Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y  — tags: web,go,self-hosted,server — alt: traefik
 - `casaos` [P|loc|H|?] — Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos doméstic — tags: infraestructura,server,go — alt: coolify
 - `claude-task-master` [A|hyb|M|+] — Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. — tags: infra,agent,javascript — alt: spec-kit
 - `composio` [P|cld|E|?] — Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps real — tags: agents,mcp,automation,typescript — prov: openai,anthropic,mcp
 - `computer-use-preview` [R|cld|M|+] — Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. — tags: browser,agents,python — prov: google — alt: browser-use,skyvern
-- `coolify` [P|loc|H|?] — Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores pro — tags: infraestructura,server,php — alt: casaos
+- `coolify` [P|loc|H|?] — Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores pro — tags: infraestructura,server,php — alt: casaos,dokploy
+- `dokploy` [P|loc|M|+] — Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y ba — tags: self-hosted,paas,typescript,docker — alt: coolify
 - `e2b` [P|cld|E|+] — Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. — tags: agents,security,python — alt: sandbox
 - `free-for-dev` [D|cld|E|?] — Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. — tags: recursos,awesome-list,free-for-developers,html
 - `freedomain` [D|cld|E|?] — Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. — tags: recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
+- `frp` [A|loc|M|?] — Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTT — tags: network,go,self-hosted,cli
+- `headscale` [P|loc|M|?] — Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada Wir — tags: network,go,self-hosted,vpn — alt: netbird
 - `masterdnsvpn` [A|hyb|M|?] — Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. — tags: redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
 - `nemoclaw` [P|hyb|H|?] — Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. — tags: agents,security,typescript — alt: sandbox
+- `netbird` [P|loc|M|?] — Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nu — tags: network,go,self-hosted,vpn — alt: headscale
 - `nodeterm` [A|loc|M|?] — Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. — tags: infra,adhd,agent-orchestration,ai-agents,canvas,claude-code,codex,coding-agents
+- `portainer` [P|loc|E|?] — Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition) — tags: containers,go,self-hosted,docker
 - `sandbox` [P|hyb|M|+] — Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un m — tags: agents,automation,python,docker — alt: nemoclaw,e2b
 - `shepherd` [L|loc|M|+] — Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus — tags: infra,framework,python
-- `supabase` [P|loc|H|?] — Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplic — tags: infraestructura,server,typescript
+- `supabase` [P|loc|H|?] — Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplic — tags: infraestructura,server,typescript — alt: appwrite
+- `traefik` [P|loc|M|?] — Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticame — tags: network,go,self-hosted,server — alt: caddy
+- `uptime-kuma` [P|loc|E|?] — Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 c — tags: monitoring,self-hosted,javascript,docker
+- `wg-easy` [P|loc|E|?] — La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadíst — tags: network,self-hosted,docker,vpn
 
 ### 23. Operar, evaluar y medir modelos de IA (19)
 Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`

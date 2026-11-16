@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 726 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 750 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -747,7 +747,7 @@
      "title": "Comunidades,chat y llamadas"
     }
    ],
-   "count": 10
+   "count": 16
   },
   {
    "num": 18,
@@ -770,7 +770,7 @@
      "title": "Reservas y programación de citas"
     }
    ],
-   "count": 13
+   "count": 17
   },
   {
    "num": 19,
@@ -820,7 +820,7 @@
      "title": "Interfaces para gestionar sesiones"
     }
    ],
-   "count": 17
+   "count": 21
   },
   {
    "num": 21,
@@ -866,7 +866,7 @@
      "title": "Alojamiento y backend"
     }
    ],
-   "count": 16
+   "count": 26
   },
   {
    "num": 23,
@@ -2945,7 +2945,9 @@
    "lib": false,
    "pick": false,
    "one": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.",
-   "alt": [],
+   "alt": [
+    "espocrm"
+   ],
    "doc": "human/fichas/twenty-main.md",
    "github_id": 572984571,
    "starred_by": "Cristrva1",
@@ -4939,7 +4941,8 @@
     "claude-code",
     "codex",
     "opencode",
-    "antigravity-cli"
+    "antigravity-cli",
+    "qwen-code"
    ],
    "doc": "human/fichas/gemini-cli.md",
    "github_id": 968197216,
@@ -4978,7 +4981,8 @@
    "pick": false,
    "one": "Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.",
    "alt": [
-    "open-swe"
+    "open-swe",
+    "mini-swe-agent"
    ],
    "doc": "human/fichas/openhands.md",
    "github_id": 771302083,
@@ -5022,7 +5026,8 @@
    "pick": false,
    "one": "Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.",
    "alt": [
-    "aider"
+    "aider",
+    "kilocode"
    ],
    "doc": "human/fichas/cline.md",
    "github_id": 824874689,
@@ -16591,7 +16596,9 @@
    "lib": false,
    "pick": false,
    "one": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
-   "alt": [],
+   "alt": [
+    "easyappointments"
+   ],
    "doc": "human/fichas/cal-diy.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -20346,7 +20353,8 @@
    "pick": false,
    "one": "Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
    "alt": [
-    "casaos"
+    "casaos",
+    "dokploy"
    ],
    "stars": 66090,
    "github_id": 332880689,
@@ -24299,7 +24307,9 @@
    "lib": false,
    "pick": false,
    "one": "Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.",
-   "alt": [],
+   "alt": [
+    "appwrite"
+   ],
    "stars": 115046,
    "github_id": 214587193,
    "gh": "supabase/supabase",
@@ -29600,6 +29610,907 @@
     "no_api",
     "reference"
    ]
+  },
+  {
+   "id": "python-telegram-bot",
+   "name": "python-telegram-bot",
+   "cat": 17,
+   "sub": "chatbots",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chatbots",
+    "python",
+    "library",
+    "telegram"
+   ],
+   "stars": 29594,
+   "gh": "python-telegram-bot/python-telegram-bot",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel.",
+   "alt": [],
+   "doc": "human/fichas/python-telegram-bot.md",
+   "github_id": 38696925,
+   "lang": "Python",
+   "license": "LGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kilocode",
+   "name": "Kilo Code",
+   "cat": 20,
+   "sub": "editor",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "typescript",
+    "vscode"
+   ],
+   "stars": 28010,
+   "gh": "Kilo-Org/kilocode",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.",
+   "alt": [
+    "cline"
+   ],
+   "doc": "human/fichas/kilocode.md",
+   "github_id": 946087422,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "qwen-code",
+   "name": "Qwen Code",
+   "cat": 20,
+   "sub": "terminal",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "cli",
+    "typescript"
+   ],
+   "stars": 30566,
+   "gh": "QwenLM/qwen-code",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP.",
+   "alt": [
+    "gemini-cli"
+   ],
+   "doc": "human/fichas/qwen-code.md",
+   "github_id": 1008713177,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "uptime-kuma",
+   "name": "Uptime Kuma",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "monitoring",
+    "self-hosted",
+    "javascript",
+    "docker"
+   ],
+   "stars": 94452,
+   "gh": "louislam/uptime-kuma",
+   "lib": false,
+   "pick": false,
+   "one": "Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.",
+   "alt": [],
+   "doc": "human/fichas/uptime-kuma.md",
+   "github_id": 382496361,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dokploy",
+   "name": "Dokploy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "paas",
+    "typescript",
+    "docker"
+   ],
+   "stars": 38545,
+   "gh": "Dokploy/dokploy",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.",
+   "alt": [
+    "coolify"
+   ],
+   "doc": "human/fichas/dokploy.md",
+   "github_id": 788847937,
+   "lang": "TypeScript",
+   "license": "Apache-2.0 + licencia propietaria (/proprietary)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "frp",
+   "name": "frp",
+   "cat": 22,
+   "sub": "redes",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "cli"
+   ],
+   "stars": 110591,
+   "gh": "fatedier/frp",
+   "lib": false,
+   "pick": false,
+   "one": "Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P.",
+   "alt": [],
+   "doc": "human/fichas/frp.md",
+   "github_id": 48378947,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "headscale",
+   "name": "Headscale",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "vpn"
+   ],
+   "stars": 45750,
+   "gh": "juanfont/headscale",
+   "lib": false,
+   "pick": false,
+   "one": "Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.",
+   "alt": [
+    "netbird"
+   ],
+   "doc": "human/fichas/headscale.md",
+   "github_id": 273871859,
+   "lang": "Go",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "discord-js",
+   "name": "discord.js",
+   "cat": 17,
+   "sub": "chatbots",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chatbots",
+    "javascript",
+    "library",
+    "discord"
+   ],
+   "stars": 26837,
+   "gh": "discordjs/discord.js",
+   "lib": false,
+   "pick": false,
+   "one": "Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.",
+   "alt": [],
+   "doc": "human/fichas/discord-js.md",
+   "github_id": 40484398,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "rocket-chat",
+   "name": "Rocket.Chat",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "self-hosted",
+    "typescript",
+    "server"
+   ],
+   "stars": 46515,
+   "gh": "RocketChat/Rocket.Chat",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
+   "alt": [
+    "mattermost"
+   ],
+   "doc": "human/fichas/rocket-chat.md",
+   "github_id": 35866694,
+   "lang": "TypeScript",
+   "license": "MIT + licencia Enterprise (ee/)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mattermost",
+   "name": "Mattermost",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "self-hosted",
+    "go",
+    "server"
+   ],
+   "stars": 39621,
+   "gh": "mattermost/mattermost",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.",
+   "alt": [
+    "rocket-chat"
+   ],
+   "doc": "human/fichas/mattermost.md",
+   "github_id": 37448451,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "synapse",
+   "name": "Synapse",
+   "cat": 17,
+   "sub": "comunidades",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "chat",
+    "python",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 4800,
+   "gh": "element-hq/synapse",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo.",
+   "alt": [],
+   "doc": "human/fichas/synapse.md",
+   "github_id": 731190011,
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "signal-cli",
+   "name": "signal-cli",
+   "cat": 17,
+   "sub": "whatsapp",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "messaging",
+    "java",
+    "cli"
+   ],
+   "stars": 5051,
+   "gh": "AsamK/signal-cli",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.",
+   "alt": [],
+   "doc": "human/fichas/signal-cli.md",
+   "github_id": 35418187,
+   "lang": "Java",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zammad",
+   "name": "Zammad",
+   "cat": 18,
+   "sub": "crm",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "helpdesk",
+    "ruby",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 6121,
+   "gh": "zammad/zammad",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
+   "alt": [
+    "freescout"
+   ],
+   "doc": "human/fichas/zammad.md",
+   "github_id": 3898922,
+   "lang": "Ruby",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "freescout",
+   "name": "FreeScout",
+   "cat": 18,
+   "sub": "crm",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "helpdesk",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 4670,
+   "gh": "freescout-help-desk/freescout",
+   "lib": false,
+   "pick": false,
+   "one": "Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
+   "alt": [
+    "zammad"
+   ],
+   "doc": "human/fichas/freescout.md",
+   "github_id": 138328462,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "espocrm",
+   "name": "EspoCRM",
+   "cat": 18,
+   "sub": "crm",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "crm",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 3620,
+   "gh": "espocrm/espocrm",
+   "lib": false,
+   "pick": false,
+   "one": "CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.",
+   "alt": [
+    "twenty-main"
+   ],
+   "doc": "human/fichas/espocrm.md",
+   "github_id": 24459441,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "easyappointments",
+   "name": "Easy!Appointments",
+   "cat": 18,
+   "sub": "reservas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "booking",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 4491,
+   "gh": "alextselegidis/easyappointments",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.",
+   "alt": [
+    "cal.diy"
+   ],
+   "doc": "human/fichas/easyappointments.md",
+   "github_id": 27195711,
+   "lang": "PHP",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "zed",
+   "name": "Zed",
+   "cat": 20,
+   "sub": "editor",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "editor",
+    "rust",
+    "coding",
+    "app"
+   ],
+   "stars": 95114,
+   "gh": "zed-industries/zed",
+   "lib": false,
+   "pick": false,
+   "one": "Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.",
+   "alt": [],
+   "doc": "human/fichas/zed.md",
+   "github_id": 340547520,
+   "lang": "Rust",
+   "license": "GPL-3.0 (Apache-2.0 en componentes marcados)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "mini-swe-agent",
+   "name": "mini-swe-agent",
+   "cat": 20,
+   "sub": "ingenieria",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "python",
+    "research"
+   ],
+   "stars": 9643,
+   "gh": "SWE-agent/mini-swe-agent",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.",
+   "alt": [
+    "openhands"
+   ],
+   "doc": "human/fichas/mini-swe-agent.md",
+   "github_id": 1010318950,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "caddy",
+   "name": "Caddy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "web",
+    "go",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 79083,
+   "gh": "caddyserver/caddy",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.",
+   "alt": [
+    "traefik"
+   ],
+   "doc": "human/fichas/caddy.md",
+   "github_id": 29207621,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "traefik",
+   "name": "Traefik Proxy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "server"
+   ],
+   "stars": 65563,
+   "gh": "traefik/traefik",
+   "lib": false,
+   "pick": false,
+   "one": "Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.",
+   "alt": [
+    "caddy"
+   ],
+   "doc": "human/fichas/traefik.md",
+   "github_id": 42408804,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "appwrite",
+   "name": "Appwrite",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "backend",
+    "self-hosted",
+    "docker",
+    "mcp"
+   ],
+   "stars": 58106,
+   "gh": "appwrite/appwrite",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.",
+   "alt": [
+    "supabase"
+   ],
+   "doc": "human/fichas/appwrite.md",
+   "github_id": 180190854,
+   "lang": "TypeScript",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "portainer",
+   "name": "Portainer CE",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "containers",
+    "go",
+    "self-hosted",
+    "docker"
+   ],
+   "stars": 38833,
+   "gh": "portainer/portainer",
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition).",
+   "alt": [],
+   "doc": "human/fichas/portainer.md",
+   "github_id": 59239347,
+   "lang": "TypeScript",
+   "license": "Zlib",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "netbird",
+   "name": "NetBird",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "vpn"
+   ],
+   "stars": 31035,
+   "gh": "netbirdio/netbird",
+   "lib": false,
+   "pick": false,
+   "one": "Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.",
+   "alt": [
+    "headscale"
+   ],
+   "doc": "human/fichas/netbird.md",
+   "github_id": 357897199,
+   "lang": "Go",
+   "license": "BSD-3-Clause + AGPL-3.0 (management, signal, relay)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "wg-easy",
+   "name": "WireGuard Easy",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "network",
+    "self-hosted",
+    "docker",
+    "vpn"
+   ],
+   "stars": 27497,
+   "gh": "wg-easy/wg-easy",
+   "lib": false,
+   "pick": false,
+   "one": "La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.",
+   "alt": [],
+   "doc": "human/fichas/wg-easy.md",
+   "github_id": 369764441,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
   }
  ],
  "discovery": {
@@ -29623,7 +30534,9 @@
      3,
      7,
      16,
-     20
+     17,
+     20,
+     22
     ],
     "keywords": [
      "programar",
@@ -29657,6 +30570,7 @@
     ],
     "categories": [
      1,
+     17,
      18
     ],
     "keywords": [
@@ -30318,6 +31232,7 @@
      13,
      15,
      16,
+     17,
      18,
      22
     ],

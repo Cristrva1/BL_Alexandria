@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **724 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **748 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -28,12 +28,12 @@ Las **724 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 44 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
 | 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 43 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
-| 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 10 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
-| 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 13 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
+| 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 16 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
+| 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 17 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 31 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
-| 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 17 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
+| 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 21 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
 | 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
-| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 16 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
+| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 26 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
 | 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 19 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 14 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
 | 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 12 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
@@ -4221,7 +4221,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/pi-hole/pi-hole/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
-**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Grafana](human/fichas/grafana.md) · [coolify](human/fichas/coolify.md)<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Grafana](human/fichas/grafana.md) · [coolify](human/fichas/coolify.md) · [WireGuard Easy](human/fichas/wg-easy.md)<br>
 **Más:** [ficha completa](human/fichas/pi-hole.md) · [GitHub](https://github.com/pi-hole/pi-hole)
 
 #### ⚙️ AdGuardHome
@@ -4774,7 +4774,7 @@ craft-anything-cli doctor                            # checks the install, codin
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/crowdsecurity/crowdsec/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
-**Combina con:** [Grafana](human/fichas/grafana.md) · [Wazuh](human/fichas/wazuh.md) · [coolify](human/fichas/coolify.md)<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [Wazuh](human/fichas/wazuh.md) · [coolify](human/fichas/coolify.md) · [Traefik Proxy](human/fichas/traefik.md)<br>
 **Más:** [ficha completa](human/fichas/crowdsec.md) · [GitHub](https://github.com/crowdsecurity/crowdsec)
 
 #### 🖥️ bla
@@ -4872,6 +4872,13 @@ Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de men
 | [evolution-api](human/fichas/evolution-api.md) | Tu objetivo encaja con estos ejemplos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [WAHA](human/fichas/waha.md) | Tu objetivo encaja con estos ejemplos: Prototipar un webhook de mensajería; Evaluar un gateway HTTP para una app propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — Rocket.Chat, Mattermost**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Rocket.Chat](human/fichas/rocket-chat.md) | Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Mattermost](human/fichas/mattermost.md) | Tu objetivo encaja con estos ejemplos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
 ### WhatsApp y mensajería
 
 #### 💬 whatsapp-web.js ⭐
@@ -4936,6 +4943,15 @@ docker compose -f docker-compose.dev.yml up -d
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [chatwoot](human/fichas/chatwoot.md) · [Typebot](human/fichas/typebot.md)<br>
 **Más:** [ficha completa](human/fichas/waha.md) · [GitHub](https://github.com/devlikeapro/waha)
 
+#### 🖥️ signal-cli
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.1k<br>
+**Qué es:** Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/AsamK/signal-cli/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: enviar avisos de un servidor a tu móvil por Signal; conectar un asistente o bot a Signal mediante su API JSON-RPC — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [OpenClaw](human/fichas/openclaw.md) · [activepieces](human/fichas/activepieces.md) · [Uptime Kuma](human/fichas/uptime-kuma.md)<br>
+**Más:** [ficha completa](human/fichas/signal-cli.md) · [GitHub](https://github.com/AsamK/signal-cli)
+
 #### 🤖 whatsapp-agentkit
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 567<br>
 **Qué es:** Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales.<br>
@@ -4958,6 +4974,24 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [evolution-api](human/fichas/evolution-api.md) · [chatwoot](human/fichas/chatwoot.md) · [OpenWA](human/fichas/openwa.md) · [WAHA](human/fichas/waha.md)<br>
 **Más:** [ficha completa](human/fichas/typebot.md) · [GitHub](https://github.com/baptisteArno/typebot.io)
 
+#### 📚 python-telegram-bot
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 29.6k<br>
+**Qué es:** Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install python-telegram-bot --upgrade` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear un bot de Telegram que responda comandos y envíe avisos; conectar un modelo de lenguaje a un chat de Telegram — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [LangGraph](human/fichas/langgraph.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/python-telegram-bot.md) · [GitHub](https://github.com/python-telegram-bot/python-telegram-bot)
+
+#### 📚 discord.js
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 26.8k<br>
+**Qué es:** Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/discordjs/discord.js/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/discord-js.md) · [GitHub](https://github.com/discordjs/discord.js)
+
 #### 🤖 Botpress
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 15k<br>
 **Qué es:** El repositorio actual reúne paquetes e integraciones abiertas y un CLI para crear y desplegar extensiones. Botpress Cloud y sus modelos tienen condiciones de servicio separadas. Clonar este código no instala toda la plataforma alojada.<br>
@@ -4969,6 +5003,24 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 
 ### Comunidades,chat y llamadas
 
+#### ⚙️ Rocket.Chat
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 46.5k<br>
+**Qué es:** Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/rocket-chat.md) · [GitHub](https://github.com/RocketChat/Rocket.Chat)
+
+#### ⚙️ Mattermost
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 39.6k<br>
+**Qué es:** Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/mattermost/mattermost/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/mattermost.md) · [GitHub](https://github.com/mattermost/mattermost)
+
 #### 🌐 fluxer
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 10.9k<br>
 **Qué es:** Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.<br>
@@ -4977,6 +5029,15 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/fluxer.md) · [GitHub](https://github.com/fluxerapp/fluxer)
+
+#### ⚙️ Synapse
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 4.8k<br>
+**Qué es:** Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/element-hq/synapse/blob/develop/README.rst); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: alojar tu propio servidor de chat federado para un grupo o comunidad; conectar usuarios con otros servidores Matrix manteniendo tus datos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [Caddy](human/fichas/caddy.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/synapse.md) · [GitHub](https://github.com/element-hq/synapse)
 
 ---
 
@@ -4990,6 +5051,27 @@ Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la 
 |---|---|---|
 | [Odoo](human/fichas/odoo.md) | Tu objetivo encaja con estos ejemplos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [ERPNext](human/fichas/erpnext.md) | Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — twenty-main, EspoCRM**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [twenty-main](human/fichas/twenty-main.md) | Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [EspoCRM](human/fichas/espocrm.md) | Tu objetivo encaja con estos ejemplos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — Zammad, FreeScout**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Zammad](human/fichas/zammad.md) | Tu objetivo encaja con estos ejemplos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [FreeScout](human/fichas/freescout.md) | Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — cal.diy, Easy!Appointments**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [cal.diy](human/fichas/cal-diy.md) | Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Easy!Appointments](human/fichas/easyappointments.md) | Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 ### CRM, ERP y soporte al cliente
 
@@ -5048,6 +5130,33 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [sellbird](human/fichas/sellbird.md) · [cal.diy](human/fichas/cal-diy.md) · [activepieces](human/fichas/activepieces.md)<br>
 **Más:** [ficha completa](human/fichas/compai-crm.md) · [GitHub](https://github.com/trycompai/crm)
+
+#### ⚙️ Zammad
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 6.1k<br>
+**Qué es:** Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/zammad/zammad/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/zammad.md) · [GitHub](https://github.com/zammad/zammad)
+
+#### ⚙️ FreeScout
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 4.7k<br>
+**Qué es:** Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/freescout-help-desk/freescout/blob/dist/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/freescout.md) · [GitHub](https://github.com/freescout-help-desk/freescout)
+
+#### ⚙️ EspoCRM
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 3.6k<br>
+**Qué es:** CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/espocrm/espocrm/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [Easy!Appointments](human/fichas/easyappointments.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/espocrm.md) · [GitHub](https://github.com/espocrm/espocrm)
 
 ### Email, marketing y notificaciones
 
@@ -5129,6 +5238,15 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md) · [crm](human/fichas/compai-crm.md)<br>
 **Más:** [ficha completa](human/fichas/cal-diy.md) · [GitHub](https://github.com/calcom/cal.diy)
+
+#### ⚙️ Easy!Appointments
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.5k<br>
+**Qué es:** Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/alextselegidis/easyappointments/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [EspoCRM](human/fichas/espocrm.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/easyappointments.md) · [GitHub](https://github.com/alextselegidis/easyappointments)
 
 ---
 
@@ -5478,12 +5596,13 @@ Agentes de terminal, extensiones de editor y entornos para programar con IA. Rev
 | [Open Interpreter](human/fichas/open-interpreter.md) | Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [goose](human/fichas/goose.md) | Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — OpenHands, Open SWE**
+**⚖️ ¿Cuál elegir? — OpenHands, Open SWE, mini-swe-agent**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [OpenHands](human/fichas/openhands.md) | Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Open SWE](human/fichas/open-swe.md) | Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [mini-swe-agent](human/fichas/mini-swe-agent.md) | Tu objetivo encaja con estos ejemplos: resolver issues de un repositorio de forma autónoma en un contenedor; usar un agente simple como base para investigación o benchmarks | necesitas una herramienta estable y auditada para datos sensibles |
 
 **⚖️ ¿Cuál elegir? — T3 Code, opencode-manager**
 
@@ -5569,6 +5688,15 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [litellm](human/fichas/litellm.md) · [Ollama](human/fichas/ollama.md) · [tree-sitter](human/fichas/tree-sitter.md) · [ast-grep](human/fichas/ast-grep.md) · [openidea](human/fichas/openidea.md) · [SWE-bench](human/fichas/swe-bench.md)<br>
 **Más:** [ficha completa](human/fichas/aider.md) · [GitHub](https://github.com/Aider-AI/aider)
 
+#### 🖥️ Qwen Code
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 30.6k<br>
+**Qué es:** Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `npm install -g @qwen-code/qwen-code@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: pedir desde la terminal cambios y pruebas en un repositorio; usar un modelo local o de Qwen como agente de código sin depender de un único proveedor — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [Zed](human/fichas/zed.md) · [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md) · [OpenClaw](human/fichas/openclaw.md)<br>
+**Más:** [ficha completa](human/fichas/qwen-code.md) · [GitHub](https://github.com/QwenLM/qwen-code)
+
 #### 🕸️ MiMo-Code
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.8k<br>
 **Qué es:** Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.<br>
@@ -5589,6 +5717,15 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 
 ### Editores y extensiones de código
 
+#### 🖥️ Zed
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 95.1k<br>
+**Qué es:** Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/zed-industries/zed/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [Codex CLI](human/fichas/codex.md) · [Qwen Code](human/fichas/qwen-code.md)<br>
+**Más:** [ficha completa](human/fichas/zed.md) · [GitHub](https://github.com/zed-industries/zed)
+
 #### 👨‍💻 Cline
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 71.6k<br>
 **Qué es:** Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.<br>
@@ -5597,6 +5734,15 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explicar un error de código; Comparar una propuesta antes de editar — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [Context7](human/fichas/context7.md) · [Playwright MCP](human/fichas/playwright-mcp.md) · [OmniRoute](human/fichas/omniroute.md) · [Awesome MCP Clients](human/fichas/awesome-mcp-clients.md)<br>
 **Más:** [ficha completa](human/fichas/cline.md) · [GitHub](https://github.com/cline/cline)
+
+#### 🖥️ Kilo Code
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 28k<br>
+**Qué es:** Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.<br>
+**Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
+**Arranque:** [Instrucciones originales](https://github.com/Kilo-Org/kilocode/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [Context7](human/fichas/context7.md) · [Playwright MCP](human/fichas/playwright-mcp.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md)<br>
+**Más:** [ficha completa](human/fichas/kilocode.md) · [GitHub](https://github.com/Kilo-Org/kilocode)
 
 #### 🖥️ openidea
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9k<br>
@@ -5636,6 +5782,15 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Deep Agents](human/fichas/deepagents.md) · [LangGraph](human/fichas/langgraph.md) · [E2B](human/fichas/e2b.md)<br>
 **Más:** [ficha completa](human/fichas/open-swe.md) · [GitHub](https://github.com/langchain-ai/open-swe)
+
+#### 🖥️ mini-swe-agent
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9.6k<br>
+**Qué es:** Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install uv && uvx mini-swe-agent` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: resolver issues de un repositorio de forma autónoma en un contenedor; usar un agente simple como base para investigación o benchmarks — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md)<br>
+**Más:** [ficha completa](human/fichas/mini-swe-agent.md) · [GitHub](https://github.com/SWE-agent/mini-swe-agent)
 
 ### Interfaces para gestionar sesiones
 
@@ -5881,11 +6036,33 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 | [NemoClaw](human/fichas/nemoclaw.md) | Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [sandbox](human/fichas/sandbox.md) | Tu objetivo encaja con estos ejemplos: Probar herramientas de un agente en un contenedor; Consultar una interfaz de navegador aislada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — coolify, CasaOS**
+**⚖️ ¿Cuál elegir? — Headscale, NetBird**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Headscale](human/fichas/headscale.md) | Tu objetivo encaja con estos ejemplos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [NetBird](human/fichas/netbird.md) | Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — supabase, Appwrite**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [supabase](human/fichas/supabase.md) | Tu objetivo encaja con estos ejemplos: Preparar un backend para una web; Conectar un agente a un esquema de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Appwrite](human/fichas/appwrite.md) | Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — Caddy, Traefik Proxy**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Caddy](human/fichas/caddy.md) | Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Traefik Proxy](human/fichas/traefik.md) | Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — coolify, Dokploy, CasaOS**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [coolify](human/fichas/coolify.md) | Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Dokploy](human/fichas/dokploy.md) | Tu objetivo encaja con estos ejemplos: desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web; levantar con un clic plantillas como Plausible o Cal.com | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 | [CasaOS](human/fichas/casaos.md) | Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Infraestructura: sandboxes, herramientas y protocolos
@@ -6014,6 +6191,42 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 
 ### Redes y transporte
 
+#### 🖥️ frp
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 111k<br>
+**Qué es:** Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/fatedier/frp/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Caddy](human/fichas/caddy.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [Home Assistant](human/fichas/home-assistant.md)<br>
+**Más:** [ficha completa](human/fichas/frp.md) · [GitHub](https://github.com/fatedier/frp)
+
+#### ⚙️ Headscale
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 45.8k<br>
+**Qué es:** Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/juanfont/headscale/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Caddy](human/fichas/caddy.md) · [Grafana](human/fichas/grafana.md) · [Uptime Kuma](human/fichas/uptime-kuma.md)<br>
+**Más:** [ficha completa](human/fichas/headscale.md) · [GitHub](https://github.com/juanfont/headscale)
+
+#### ⚙️ NetBird
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 31k<br>
+**Qué es:** Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/netbirdio/netbird/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/netbird.md) · [GitHub](https://github.com/netbirdio/netbird)
+
+#### ⚙️ WireGuard Easy
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 27.5k<br>
+**Qué es:** La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/wg-easy/wg-easy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [Caddy](human/fichas/caddy.md) · [Pi-hole](human/fichas/pi-hole.md) · [Portainer CE](human/fichas/portainer.md)<br>
+**Más:** [ficha completa](human/fichas/wg-easy.md) · [GitHub](https://github.com/wg-easy/wg-easy)
+
 #### 🔌 MasterDnsVPN
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 7.3k<br>
 **Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.<br>
@@ -6034,6 +6247,24 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Combina con:** [pgvector](human/fichas/pgvector.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/supabase.md) · [GitHub](https://github.com/supabase/supabase)
 
+#### ⚙️ Uptime Kuma
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 94.5k<br>
+**Qué es:** Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/louislam/uptime-kuma/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [coolify](human/fichas/coolify.md) · [Caddy](human/fichas/caddy.md)<br>
+**Más:** [ficha completa](human/fichas/uptime-kuma.md) · [GitHub](https://github.com/louislam/uptime-kuma)
+
+#### ⚙️ Caddy
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 79.1k<br>
+**Qué es:** Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/caddyserver/caddy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [Headscale](human/fichas/headscale.md) · [frp](human/fichas/frp.md) · [Synapse](human/fichas/synapse.md) · [WireGuard Easy](human/fichas/wg-easy.md)<br>
+**Más:** [ficha completa](human/fichas/caddy.md) · [GitHub](https://github.com/caddyserver/caddy)
+
 #### ⚙️ coolify
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 66.1k<br>
 **Qué es:** Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.<br>
@@ -6042,6 +6273,42 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Elige si:** Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md) · [Windmill](human/fichas/windmill.md) · [FreeDomain](human/fichas/freedomain.md)<br>
 **Más:** [ficha completa](human/fichas/coolify.md) · [GitHub](https://github.com/coollabsio/coolify)
+
+#### ⚙️ Traefik Proxy
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 65.6k<br>
+**Qué es:** Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/traefik/traefik/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [Dokploy](human/fichas/dokploy.md) · [CrowdSec](human/fichas/crowdsec.md) · [Grafana](human/fichas/grafana.md) · [Portainer CE](human/fichas/portainer.md)<br>
+**Más:** [ficha completa](human/fichas/traefik.md) · [GitHub](https://github.com/traefik/traefik)
+
+#### ⚙️ Appwrite
+**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 58.1k<br>
+**Qué es:** Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/appwrite/appwrite/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/appwrite.md) · [GitHub](https://github.com/appwrite/appwrite)
+
+#### ⚙️ Portainer CE
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 38.8k<br>
+**Qué es:** Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition).<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/portainer/portainer/blob/release/2.45/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Traefik Proxy](human/fichas/traefik.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [WireGuard Easy](human/fichas/wg-easy.md)<br>
+**Más:** [ficha completa](human/fichas/portainer.md) · [GitHub](https://github.com/portainer/portainer)
+
+#### ⚙️ Dokploy
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 38.5k<br>
+**Qué es:** Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `curl -sSL https://dokploy.com/install.sh | bash` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web; levantar con un clic plantillas como Plausible o Cal.com — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Traefik Proxy](human/fichas/traefik.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [supabase](human/fichas/supabase.md)<br>
+**Más:** [ficha completa](human/fichas/dokploy.md) · [GitHub](https://github.com/Dokploy/dokploy)
 
 #### ⚙️ CasaOS
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 37.6k<br>

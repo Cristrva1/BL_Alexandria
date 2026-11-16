@@ -213,6 +213,12 @@
      "id": "coolify",
      "motivo": "La imagen Docker de Pi-hole se puede desplegar desde Coolify en un servidor de la red local (combinación por arquitectura).",
      "orden_instalacion": "Coolify primero; después despliega Pi-hole exponiendo el puerto DNS."
+    },
+    {
+     "id": "wg-easy",
+     "motivo": "Combinación recíproca: WireGuard Easy lo enlaza como «Los clientes de la VPN pueden usar Pi-hole como DNS para bloquear anuncios fuera de casa (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WireGuard Easy: Pi-hole en la red; después define su IP como DNS de los clientes en wg-easy.",
+     "reciproca_de": "wg-easy"
     }
    ],
    "notas": "Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.",
