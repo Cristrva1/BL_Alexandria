@@ -44156,10 +44156,10 @@
         "checked_at": "2026-11-15",
         "review": "documented",
         "sources": [
-          "https://github.com/mrmn2/PdfDing/blob/master/README.md",
-          "https://codeberg.org/mrmn/PdfDing"
+          "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+          "https://docs.pdfding.com/getting_started/docker/"
         ],
-        "source_blob_sha": "0b9cd2cbecfb5330adbffae83b323781a930a55c",
+        "source_blob_sha": "5a397cd9e29cb3d925c30c73f547ee1fa97b524b",
         "antigravity": "not_documented"
       },
       "getting_started": {
@@ -44200,15 +44200,15 @@
       "editorial_review": {
         "status": "source_reviewed",
         "checked_at": "2026-11-15",
-        "source": "https://github.com/mrmn2/PdfDing/blob/master/README.md",
-        "source_blob_sha": "0b9cd2cbecfb5330adbffae83b323781a930a55c",
+        "source": "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+        "source_blob_sha": "5a397cd9e29cb3d925c30c73f547ee1fa97b524b",
         "previous_source_blob_sha": "0b9cd2cbecfb5330adbffae83b323781a930a55c",
         "previous_category": [
           13,
           "pdf"
         ],
         "category_verdict": "confirmed",
-        "note": "El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas",
+        "note": "Fuente actualizada a Codeberg, donde continúa el desarrollo; el repositorio de GitHub está archivado. La guía de instalación oficial no cambia.",
         "checks": [
           "identity",
           "category",
@@ -44220,12 +44220,13 @@
           "antigravity",
           "local_model"
         ],
-        "installation_tested": false
+        "installation_tested": false,
+        "previous_source": "https://github.com/mrmn2/PdfDing/blob/master/README.md"
       },
       "one": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
       "desc": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
       "stack": "Docker o entorno de la guía; volumen para documentos; cuenta de prueba",
-      "repo": "https://github.com/mrmn2/PdfDing",
+      "repo": "https://codeberg.org/mrmn/PdfDing",
       "install": "Seguir la instalación original: https://docs.pdfding.com/getting_started/docker/",
       "install_conf": "clone",
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",

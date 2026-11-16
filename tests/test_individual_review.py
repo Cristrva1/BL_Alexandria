@@ -41,6 +41,11 @@ def test_every_public_identity_has_one_individual_decision_and_current_evidence(
         if repo['id'] not in baseline or review['checked_at'] != report['date']:
             continue
         record=report['repositories'][repo['id']]
+        if review['source']!=record['source']:
+            # A same-day re-review must name the ledger evidence it supersedes.
+            assert review.get('previous_source')==record['source']
+            assert review.get('previous_source_blob_sha')==record['source_blob_sha']
+            continue
         assert review['source_blob_sha']==record['source_blob_sha']
         assert repo['first_try']['action']==ledger[repo['id']]['first_action']
         assert repo['first_try']['success']==ledger[repo['id']]['success']

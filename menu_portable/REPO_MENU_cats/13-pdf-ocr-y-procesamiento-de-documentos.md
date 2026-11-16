@@ -411,7 +411,7 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 - Modelos locales: La función básica no necesita un modelo. El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
 - Coste: Sin pago a un modelo en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios
 - Equipo: Preparación según la ruta elegida. Docker o entorno de la guía; volumen para documentos; cuenta de prueba
-**Repo:** https://github.com/mrmn2/PdfDing
+**Repo:** https://codeberg.org/mrmn/PdfDing
 
 **Instalación** [?]:
 

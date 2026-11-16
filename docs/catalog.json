@@ -66528,18 +66528,18 @@
       ],
       "alt": [],
       "stack": "Docker o entorno de la guía; volumen para documentos; cuenta de prueba",
-      "repo_url": "https://github.com/mrmn2/PdfDing",
+      "repo_url": "https://codeberg.org/mrmn/PdfDing",
       "doc": "human/fichas/pdfding.md",
       "agent_tools": [],
       "sub": "pdf",
-      "how": "El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas",
+      "how": "Se instala con Docker siguiendo la guía oficial. El código y las versiones nuevas se publican en Codeberg; el repositorio de GitHub quedó archivado como copia antigua",
       "why": "Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.",
       "cases": [
         "Organizar una colección de PDFs",
         "Consultar documentos desde varios dispositivos"
       ],
       "gh": "mrmn2/PdfDing",
-      "limits": "El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas",
+      "limits": "El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia",
       "getting_started": {
         "kind": "source",
         "audience": "setup",
@@ -66578,15 +66578,15 @@
       "editorial_review": {
         "status": "source_reviewed",
         "checked_at": "2026-11-15",
-        "source": "https://github.com/mrmn2/PdfDing/blob/master/README.md",
-        "source_blob_sha": "0b9cd2cbecfb5330adbffae83b323781a930a55c",
+        "source": "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+        "source_blob_sha": "5a397cd9e29cb3d925c30c73f547ee1fa97b524b",
         "previous_source_blob_sha": "0b9cd2cbecfb5330adbffae83b323781a930a55c",
         "previous_category": [
           13,
           "pdf"
         ],
         "category_verdict": "confirmed",
-        "note": "El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas",
+        "note": "Fuente actualizada a Codeberg, donde continúa el desarrollo; el repositorio de GitHub está archivado. La guía de instalación oficial no cambia.",
         "checks": [
           "identity",
           "category",
@@ -66598,7 +66598,8 @@
           "antigravity",
           "local_model"
         ],
-        "installation_tested": false
+        "installation_tested": false,
+        "previous_source": "https://github.com/mrmn2/PdfDing/blob/master/README.md"
       },
       "access": {
         "mode": "software",
@@ -66617,10 +66618,10 @@
         "checked_at": "2026-11-15",
         "review": "documented",
         "sources": [
-          "https://github.com/mrmn2/PdfDing/blob/master/README.md",
-          "https://codeberg.org/mrmn/PdfDing"
+          "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+          "https://docs.pdfding.com/getting_started/docker/"
         ],
-        "source_blob_sha": "0b9cd2cbecfb5330adbffae83b323781a930a55c",
+        "source_blob_sha": "5a397cd9e29cb3d925c30c73f547ee1fa97b524b",
         "antigravity": "not_documented"
       },
       "routes": [
@@ -66630,11 +66631,11 @@
         "documentos"
       ],
       "added_at": "2026-08-23",
-      "status": "archived",
+      "status": "",
       "pick": false,
       "stars": 1842,
       "license": "",
-      "homepage": "https://codeberg.org/mrmn/PdfDing",
+      "homepage": "https://www.pdfding.com",
       "lead": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
       "body": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
       "install": {

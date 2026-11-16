@@ -3111,13 +3111,12 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 
 #### 📑 PdfDing
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.8k<br>
-**Aviso:** ⚠️ Archivado en GitHub: ya no recibe cambios.<br>
 **Qué es:** Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://docs.pdfding.com/getting_started/docker/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [markitdown](human/fichas/markitdown.md) · [ppt-master](human/fichas/ppt-master.md) · [reveal.js](human/fichas/reveal-js.md)<br>
-**Más:** [ficha completa](human/fichas/pdfding.md) · [GitHub](https://github.com/mrmn2/PdfDing)
+**Más:** [ficha completa](human/fichas/pdfding.md) · [GitHub](https://codeberg.org/mrmn/PdfDing)
 
 ### Gestión y archivo de documentos
 
