@@ -29,6 +29,7 @@ Hay combinaciones probadas de Python 3.9–3.12, PyTorch 2.5–2.8 y CUDA 11.8�
 | [RVC WebUI](rvc.md) | Conversión de timbre del mismo autor. | Usa RVC para ajustar la voz generada. |
 | [FFmpeg](ffmpeg.md) | Preparación de audio. (combinación por arquitectura) | Convierte el audio de entrenamiento. |
 | [whisperX](whisperx.md) | Transcribir el dataset. (combinación por arquitectura) | Genera transcripciones alineadas. |
+| [VideoLingo](videolingo.md) | Combinación recíproca: VideoLingo lo enlaza como «Doblaje con voz clonada». | Orden indicado desde VideoLingo: Arranca GPT-SoVITS y selecciónalo como TTS. |
 
 **Notas:** Alternativas (elige una): fish-speech. Riesgo de suplantación de voz: usa voces con consentimiento.
 

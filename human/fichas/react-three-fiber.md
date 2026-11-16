@@ -29,6 +29,8 @@ Se instala con `npm install three @types/three @react-three/fiber`. El ecosistem
 | [three.js](three-js.md) | Motor subyacente. | Instala three junto a R3F. |
 | [react-three-rapier](react-three-rapier.md) | Física Rapier para R3F. | Instala `@react-three/rapier`. |
 | [motion](motion.md) | Animación de UI alrededor del canvas. (combinación por arquitectura) | Combina en la misma app. |
+| [threejs-skills](threejs-skills.md) | Combinación recíproca: threejs-skills lo enlaza como «Versión cubierta (9.8, con drei 10.7)». | Orden indicado desde threejs-skills: Fija las versiones indicadas. |
+| [webgl-noise](webgl-noise.md) | Combinación recíproca: webgl-noise lo enlaza como «Shaders personalizados en R3F. (combinación por arquitectura)». | Orden indicado desde webgl-noise: Usa un shaderMaterial con las funciones. |
 
 **Notas:** Sin alternativas declaradas.
 

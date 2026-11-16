@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Mermaid, herramienta para generar diagramas a partir de texto tipo Markdown, de mermaid-js. Licencia MIT. Es madura y muy extendida (~91k estrellas), y tiene soporte nativo en GitHub, Slidev y muchas otras herramientas.
+
+## ¿Qué hace?
+
+Dibuja diagramas de flujo, de secuencia, de clases, de estados, ER, Gantt, mindmaps y más, con un editor en vivo.
+
+## ¿Cómo lo hace?
+
+Se usa con `npm install mermaid` o desde CDN en el navegador; existe mermaid-cli para generar imágenes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Slidev](slidev.md) | Diagramas en presentaciones. | Usa bloques mermaid en Slidev. |
+| [Claude Code](claude-code.md) | Los agentes generan diagramas en Mermaid. (combinación por arquitectura) | Pide diagramas en sintaxis Mermaid. |
+| [archify](archify.md) | Combinación recíproca: archify lo enlaza como «Diagramas textuales para documentación estática. (combinación por arquitectura)». | Orden indicado desde archify: Usa Mermaid en docs y Archify para explorar. |
+| [Marp](marp.md) | Combinación recíproca: Marp lo enlaza como «Diagramas. (combinación por arquitectura)». | Orden indicado desde Marp: Renderiza a imagen e incrústala. |
+| [reveal.js](reveal-js.md) | Combinación recíproca: reveal.js lo enlaza como «Diagramas en las diapositivas. (combinación por arquitectura)». | Orden indicado desde reveal.js: Añade un plugin de Mermaid. |
+| [draw.io](drawio.md) | Combinación recíproca: draw.io lo enlaza como «draw.io importa diagramas Mermaid y los convierte en diagramas editables». | Orden indicado desde draw.io: Escribe el diagrama en Mermaid; después usa Organizar > Insertar > Avanzado > Mermaid en draw.io. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Kroki](kroki.md)
+
+**Notas:** Alternativas (elige una): excalidraw.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @mermaid-js/examples@2.1.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mermaid-js/mermaid/blob/develop/README.md) · [2](https://mermaid.js.org/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | La función básica no necesita un modelo. No requiere un LLM para convertir sintaxis a diagramas; un diagrama válido puede representar un proceso equivocado y necesita revisión |
 | Coste | Sin pago a un modelo en la ruta básica. El render básico MIT no necesita API de IA; servicios hospedados o AI son ofertas independientes |
 | Equipo | Preparación según la ruta elegida. Editor o entorno que renderice Mermaid; texto del proceso |
-
-No requiere un LLM para convertir sintaxis a diagramas; un diagrama válido puede representar un proceso equivocado y necesita revisión
-
-## Qué puedes hacer con él
-
-Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown.
-
-## Por qué destaca
-
-Usos propuestos: Documentar un proceso; Preparar un diagrama de secuencia.
-
-## Cómo funciona
 
 No requiere un LLM para convertir sintaxis a diagramas; un diagrama válido puede representar un proceso equivocado y necesita revisión
 
@@ -85,17 +108,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `docs` `dataviz` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Slidev](slidev.md) | 49.5k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Excalidraw](excalidraw.md) | 136k | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
+| [D2](d2.md) | 25.8k | Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos. |
+| [PlantUML](plantuml.md) | 13.4k | Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto. |
 
 ## Enlaces
 

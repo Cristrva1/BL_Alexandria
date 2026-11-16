@@ -29,6 +29,7 @@ Se instala con `npm install zdog` o descargando el script. La documentación y d
 | [Anime.js](animejs.md) | Animar propiedades de las formas. (combinación por arquitectura) | Interpola rotaciones con Anime.js. |
 | [GSAP](gsap.md) | Timelines para ilustraciones. (combinación por arquitectura) | Anima objetos Zdog con GSAP. |
 | [three.js](three-js.md) | Pasar a 3D real cuando haga falta. (combinación por arquitectura) | Migra la escena a three.js. |
+| [scenejs](scenejs.md) | Combinación recíproca: scenejs lo enlaza como «Animar ilustraciones pseudo-3D. (combinación por arquitectura)». | Orden indicado desde scenejs: Anima propiedades de Zdog desde la escena. |
 
 **Notas:** Sin alternativas declaradas. Inactivo.
 

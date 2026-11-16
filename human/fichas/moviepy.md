@@ -30,6 +30,12 @@ Requiere Python 3.9+ y se instala con `pip install moviepy`; usa FFmpeg (incluid
 | [Kokoro](kokoro.md) | Narración local. (combinación por arquitectura) | Genera el audio y añádelo como AudioFileClip. |
 | [FFmpeg](ffmpeg.md) | Motor de lectura y escritura. | Viene vía imageio-ffmpeg o usa el del sistema. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AudioCraft](audiocraft.md) · [edge-tts](edge-tts.md) · [faster-whisper](faster-whisper.md) · [LivePortrait](liveportrait.md) · [LosslessCut](lossless-cut.md) · [LuxTTS](luxtts.md) · [Manim (ManimGL)](manim.md) · [WanGP](wan2gp.md)
+
 **Notas:** Alternativas (elige una): remotion, hyperframes. Se quita comfyui de las combinaciones (sin relación directa).
 
 Estado en GitHub: activo · último push 2026-08-26 · última versión publicada v2.2.1 (2025-05-21) · licencia declarada MIT (consultado el 2026-11-15).

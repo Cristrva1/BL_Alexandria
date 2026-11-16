@@ -26,13 +26,22 @@ Monorepo en TypeScript con Next.js (React), NestJS, Temporal para flujos y Prism
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Nodo personalizado oficial de n8n para publicar desde flujos (por ejemplo, al aprobar un contenido). | Postiz primero con clave de API pública; después instala el nodo en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos. | postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces. |
 | [Claude Code](claude-code.md) | Servidor MCP de Postiz para que un agente programe y gestione publicaciones. | Postiz con canales conectados; luego registra el MCP en el agente. |
 | [coolify](coolify.md) | Ruta de despliegue citada en el README. | Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque. |
+| [Humanizer](humanizer.md) | Combinación recíproca: Humanizer lo enlaza como «Revisar publicaciones antes de programarlas (combinación por arquitectura)». | Orden indicado desde Humanizer: Humaniza primero; programa después. |
+| [instagram-agent-skill](instagram-agent-skill.md) | Combinación recíproca: instagram-agent-skill lo enlaza como «Programar las publicaciones aprobadas (combinación por arquitectura)». | Orden indicado desde instagram-agent-skill: Aprueba el contenido antes de enviarlo a Postiz. |
+| [linkedin-agent-skill](linkedin-agent-skill.md) | Combinación recíproca: linkedin-agent-skill lo enlaza como «Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura)». | Orden indicado desde linkedin-agent-skill: Aprueba antes de programar. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[listmonk](listmonk.md) · [social-media-research-skills](social-media-research-skills.md) · [Stop Slop](stop-slop.md)
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.26.0 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gitroomhq/postiz-app/blob/main/README.md) · [2](https://docs.postiz.com/public-api)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gitroomhq/postiz-app/blob/main/README.md) · [2](https://docs.postiz.com/public-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/postiz)</sub>
 
 ## Acceso, coste y equipo
 

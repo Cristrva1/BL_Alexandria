@@ -30,7 +30,7 @@ Se lanza con `npx @keygraph/shannon@latest setup` y `start`, y requiere Docker y
 | [Semgrep](semgrep.md) | Análisis estático previo para priorizar rutas. (combinación por arquitectura) | Ejecuta Semgrep en el repo antes de la prueba. |
 | [mitmproxy](mitmproxy.md) | Observar el tráfico de la prueba contra el entorno de staging. (combinación por arquitectura) | Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas. |
 
-**Notas:** Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.
+**Notas:** Alternativa (elige una): strix. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.5.1 (2026-11-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
@@ -109,6 +109,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local
 - **Etiquetas:** `agentes` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [strix](strix.md) | 75.6k | Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT. |
 
 ## Enlaces
 

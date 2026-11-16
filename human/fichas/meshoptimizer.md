@@ -29,6 +29,14 @@ Tiene interfaz C y C++ (usable por FFI desde otros lenguajes; en Rust, el crate 
 | [three.js](three-js.md) | Carga glTF comprimido con EXT_meshopt (MeshoptDecoder). | Optimiza con gltfpack y carga con GLTFLoader. |
 | [filament](filament.md) | Geometría optimizada para su render. (combinación por arquitectura) | Procesa los modelos antes. |
 | [blender](blender.md) | Optimizar exportaciones glTF. (combinación por arquitectura) | Pasa el glTF exportado por gltfpack. |
+| [ozz-animation](ozz-animation.md) | Combinación recíproca: ozz-animation lo enlaza como «Optimizar las mallas de los personajes. (combinación por arquitectura)». | Orden indicado desde ozz-animation: Procesa las mallas antes. |
+| [regl](regl.md) | Combinación recíproca: regl lo enlaza como «Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)». | Orden indicado desde regl: Optimiza la malla antes de subirla a buffers. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Babylon.js](babylonjs.md) · [Bevy](bevy.md) · [Godot Engine](godot.md) · [PlayCanvas Engine](playcanvas.md)
 
 **Notas:** Sin alternativas declaradas.
 
