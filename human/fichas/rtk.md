@@ -29,6 +29,8 @@ Se instala con `brew install rtk`, `winget` o un script `curl … | sh`, y se re
 | [Claude Code](claude-code.md) | Hook nativo con `rtk init -g`. | Instala rtk y ejecuta `rtk init -g`. |
 | [Codex CLI](codex.md) | Hook nativo con `rtk init -g --codex`. | Registra el hook para Codex. |
 | [Gemini CLI](gemini-cli.md) | Hook nativo con `rtk init -g --gemini`. | Registra el hook para Gemini CLI. |
+| [Claude-Code-Usage-Monitor](claude-code-usage-monitor.md) | Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el efecto de reducir salidas de terminal. (combinación por arquitectura)». | Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo antes y después de activar rtk. |
+| [MiMo-Code](mimo-code.md) | Combinación recíproca: MiMo-Code lo enlaza como «Reducir la salida de comandos. (combinación por arquitectura)». | Orden indicado desde MiMo-Code: Configura los hooks de rtk si son compatibles. |
 
 **Notas:** Alternativas (elige una): headroom. Si quieres solo código Apache-2.0, instala `rtk-oss`.
 

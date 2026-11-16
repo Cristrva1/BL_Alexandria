@@ -1,0 +1,754 @@
+{
+ "batch": "p06",
+ "title": "Mensajería, helpdesk y CRM, agentes de código e infraestructura autoalojada",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "dokploy",
+   "coolify"
+  ],
+  [
+   "caddy",
+   "traefik"
+  ],
+  [
+   "mattermost",
+   "rocket-chat"
+  ],
+  [
+   "zammad",
+   "freescout"
+  ],
+  [
+   "headscale",
+   "netbird"
+  ],
+  [
+   "kilocode",
+   "cline"
+  ],
+  [
+   "qwen-code",
+   "gemini-cli"
+  ],
+  [
+   "easyappointments",
+   "cal.diy"
+  ],
+  [
+   "mini-swe-agent",
+   "openhands"
+  ],
+  [
+   "espocrm",
+   "twenty-main"
+  ],
+  [
+   "appwrite",
+   "supabase"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "python-telegram-bot/python-telegram-bot",
+   "id": "python-telegram-bot",
+   "cat": 17,
+   "sub": "chatbots",
+   "kind": "library",
+   "name": "python-telegram-bot",
+   "one": "Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel.",
+   "how": "Paquete Python sobre asyncio con envoltorio de la Bot API (telegram) y framework de manejadores, conversaciones y colas de tareas (telegram.ext).",
+   "examples": [
+    "crear un bot de Telegram que responda comandos y envíe avisos",
+    "conectar un modelo de lenguaje a un chat de Telegram"
+   ],
+   "try": [
+    "Instala con `pip install python-telegram-bot --upgrade`, crea un token con BotFather y ejecuta el ejemplo echobot.",
+    "El bot responde en Telegram repitiendo tus mensajes."
+   ],
+   "setup": "easy",
+   "tags": [
+    "chatbots",
+    "python",
+    "library",
+    "telegram"
+   ],
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "cmd": "pip install python-telegram-bot --upgrade",
+   "license": "LGPL-3.0"
+  },
+  {
+   "gh": "Kilo-Org/kilocode",
+   "id": "kilocode",
+   "cat": 20,
+   "sub": "editor",
+   "kind": "agent",
+   "name": "Kilo Code",
+   "one": "Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.",
+   "how": "Extensión de VS Code, plugin de JetBrains y CLI (fork de OpenCode) que planifican, editan y ejecutan con el modelo elegido mediante la pasarela de Kilo o claves propias.",
+   "examples": [
+    "delegar en el editor una tarea de refactorización con revisión de cambios",
+    "usar el mismo agente en VS Code y en la terminal con distintos modelos"
+   ],
+   "try": [
+    "Instala la extensión desde el VS Code Marketplace, conecta un modelo y pídele que explique un archivo de tu proyecto.",
+    "El agente responde y propone cambios que puedes aceptar o rechazar."
+   ],
+   "setup": "easy",
+   "tags": [
+    "coding",
+    "agent",
+    "typescript",
+    "vscode"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "required",
+   "models": "Más de 500 modelos mediante la pasarela de Kilo o claves propias de proveedores"
+  },
+  {
+   "gh": "QwenLM/qwen-code",
+   "id": "qwen-code",
+   "cat": 20,
+   "sub": "terminal",
+   "kind": "agent",
+   "name": "Qwen Code",
+   "one": "Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP.",
+   "how": "CLI en TypeScript/Node.js derivada de Gemini CLI que trabaja en el repositorio con herramientas de archivos y shell, e integra IDE y clientes mediante ACP.",
+   "examples": [
+    "pedir desde la terminal cambios y pruebas en un repositorio",
+    "usar un modelo local o de Qwen como agente de código sin depender de un único proveedor"
+   ],
+   "try": [
+    "Instala con `npm install -g @qwen-code/qwen-code@latest`, configura un proveedor y pídele que resuma tu repositorio.",
+    "El agente lee el código y devuelve un resumen con los módulos principales."
+   ],
+   "setup": "easy",
+   "tags": [
+    "coding",
+    "agent",
+    "cli",
+    "typescript"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "local_choice",
+   "models": "APIs de OpenAI, Anthropic, Gemini y Qwen, proveedores compatibles o modelos locales con Ollama o vLLM",
+   "cmd": "npm install -g @qwen-code/qwen-code@latest"
+  },
+  {
+   "gh": "louislam/uptime-kuma",
+   "id": "uptime-kuma",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "Uptime Kuma",
+   "one": "Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.",
+   "how": "Aplicación Node.js con interfaz web reactiva (WebSocket) y SQLite o MariaDB; se despliega con un único contenedor Docker.",
+   "examples": [
+    "recibir un aviso en Telegram cuando tu web o servidor cae",
+    "publicar una página de estado de tus servicios"
+   ],
+   "try": [
+    "Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación.",
+    "El panel muestra el monitor en verde y el historial de tiempos de respuesta."
+   ],
+   "setup": "easy",
+   "tags": [
+    "monitoring",
+    "self-hosted",
+    "javascript",
+    "docker"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "Dokploy/dokploy",
+   "id": "dokploy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "Dokploy",
+   "one": "Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.",
+   "how": "Aplicación TypeScript que gestiona despliegues con Docker, Docker Compose y Swarm, enruta con Traefik e incluye copias de seguridad, monitorización y plantillas.",
+   "examples": [
+    "desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web",
+    "levantar con un clic plantillas como Plausible o Cal.com"
+   ],
+   "try": [
+    "En un VPS de pruebas ejecuta el instalador oficial (`curl -sSL https://dokploy.com/install.sh | bash`) y despliega una aplicación de ejemplo.",
+    "La aplicación queda accesible a través de Traefik desde el panel."
+   ],
+   "setup": "medium",
+   "tags": [
+    "self-hosted",
+    "paas",
+    "typescript",
+    "docker"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "cmd": "curl -sSL https://dokploy.com/install.sh | bash",
+   "caveat": "El código fuera de /proprietary es Apache-2.0; lo de esa carpeta tiene licencia propietaria. Hay versión en la nube de pago.",
+   "license": "Apache-2.0 + licencia propietaria (/proprietary)"
+  },
+  {
+   "gh": "fatedier/frp",
+   "id": "frp",
+   "cat": 22,
+   "sub": "redes",
+   "kind": "app",
+   "name": "frp",
+   "one": "Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P.",
+   "how": "Binarios Go cliente (frpc) y servidor (frps) configurados con TOML; el servidor público reenvía tráfico a servicios del cliente a través de un túnel.",
+   "examples": [
+    "acceder por SSH a un equipo de casa detrás de NAT",
+    "publicar temporalmente un servicio web local usando tu propio VPS"
+   ],
+   "try": [
+    "En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README.",
+    "Puedes conectar por SSH al equipo local a través del puerto del VPS."
+   ],
+   "setup": "medium",
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "cli"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Exponer servicios internos a internet aumenta la superficie de ataque; protégelos con autenticación y cifrado."
+  },
+  {
+   "gh": "juanfont/headscale",
+   "id": "headscale",
+   "cat": 22,
+   "sub": "redes",
+   "kind": "server",
+   "name": "Headscale",
+   "one": "Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.",
+   "how": "Servidor Go que implementa el plano de control de Tailscale para una sola tailnet; los dispositivos usan los clientes de Tailscale apuntando a tu servidor.",
+   "examples": [
+    "conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale",
+    "dar acceso remoto a una red doméstica o de laboratorio"
+   ],
+   "try": [
+    "Instala Headscale en un servidor siguiendo su documentación, crea un usuario y registra un cliente de Tailscale con `--login-server`.",
+    "El dispositivo aparece en `headscale nodes list` y alcanza a otros nodos."
+   ],
+   "setup": "medium",
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "vpn"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "discordjs/discord.js",
+   "id": "discord-js",
+   "cat": 17,
+   "sub": "chatbots",
+   "kind": "library",
+   "name": "discord.js",
+   "one": "Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.",
+   "how": "Monorepo TypeScript con el envoltorio discord.js y paquetes como @discordjs/rest, @discordjs/ws y @discordjs/voice.",
+   "examples": [
+    "crear un bot de Discord con comandos de barra para tu comunidad",
+    "conectar un asistente de IA a un servidor de Discord"
+   ],
+   "try": [
+    "Instala con `npm install discord.js`, crea una aplicación en el portal de desarrolladores de Discord y ejecuta un bot que responda a un comando.",
+    "El bot aparece en línea y responde al comando en tu servidor de pruebas."
+   ],
+   "setup": "easy",
+   "tags": [
+    "chatbots",
+    "javascript",
+    "library",
+    "discord"
+   ],
+   "goals": [
+    "automatizar",
+    "programar"
+   ]
+  },
+  {
+   "gh": "RocketChat/Rocket.Chat",
+   "id": "rocket-chat",
+   "cat": 17,
+   "sub": "comunidades",
+   "kind": "server",
+   "name": "Rocket.Chat",
+   "one": "Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
+   "how": "Aplicación TypeScript (Meteor/Node.js) con MongoDB, clientes web, de escritorio y móviles, Apps-Engine para extensiones y despliegue con Docker o Kubernetes.",
+   "examples": [
+    "sustituir Slack o Teams por un chat de equipo en tu servidor",
+    "atender clientes de varios canales desde una bandeja compartida"
+   ],
+   "try": [
+    "Despliega Rocket.Chat con Docker Compose siguiendo su guía, crea un espacio de trabajo y un canal.",
+    "Puedes chatear en el canal desde la web y la app móvil."
+   ],
+   "setup": "medium",
+   "tags": [
+    "chat",
+    "self-hosted",
+    "typescript",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Open core: el código de las carpetas ee/ tiene licencia comercial y algunas funciones requieren plan de pago.",
+   "license": "MIT + licencia Enterprise (ee/)"
+  },
+  {
+   "gh": "mattermost/mattermost",
+   "id": "mattermost",
+   "cat": 17,
+   "sub": "comunidades",
+   "kind": "server",
+   "name": "Mattermost",
+   "one": "Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.",
+   "how": "Servidor en Go con aplicación web React, PostgreSQL y API, webhooks, comandos de barra, apps y plugins.",
+   "examples": [
+    "montar un chat de equipo privado en tu infraestructura",
+    "integrar alertas de CI o monitorización en canales del equipo"
+   ],
+   "try": [
+    "Despliega Mattermost con Docker siguiendo la guía oficial, crea un equipo y un canal y añade un webhook entrante.",
+    "Los mensajes enviados al webhook aparecen en el canal."
+   ],
+   "setup": "medium",
+   "tags": [
+    "chat",
+    "self-hosted",
+    "go",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Open core: el código fuente es AGPL-3.0 (herramientas de administración Apache-2.0) y las funciones Enterprise requieren licencia comercial.",
+   "license": "AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise"
+  },
+  {
+   "gh": "element-hq/synapse",
+   "id": "synapse",
+   "cat": 17,
+   "sub": "comunidades",
+   "kind": "server",
+   "name": "Synapse",
+   "one": "Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo.",
+   "how": "Servidor Python (con partes en Rust) que implementa las APIs cliente-servidor y de federación de Matrix sobre PostgreSQL.",
+   "examples": [
+    "alojar tu propio servidor de chat federado para un grupo o comunidad",
+    "conectar usuarios con otros servidores Matrix manteniendo tus datos"
+   ],
+   "try": [
+    "Instala Synapse con paquetes o Docker siguiendo la guía oficial, crea un usuario y conéctate con un cliente Matrix.",
+    "Puedes chatear desde el cliente y unirte a salas de otros servidores federados."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "chat",
+    "python",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "AsamK/signal-cli",
+   "id": "signal-cli",
+   "cat": 17,
+   "sub": "whatsapp",
+   "kind": "app",
+   "name": "signal-cli",
+   "one": "Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.",
+   "how": "Aplicación Java que usa una versión parcheada de libsignal-service-java y la biblioteca nativa libsignal-client; incluye modo daemon con JSON-RPC y D-Bus.",
+   "examples": [
+    "enviar avisos de un servidor a tu móvil por Signal",
+    "conectar un asistente o bot a Signal mediante su API JSON-RPC"
+   ],
+   "try": [
+    "Descarga la release (JRE 25 o binario nativo), vincula signal-cli como dispositivo secundario y envía un mensaje de prueba a ti mismo.",
+    "El mensaje llega a tu app de Signal."
+   ],
+   "setup": "medium",
+   "tags": [
+    "messaging",
+    "java",
+    "cli"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "caveat": "Cliente no oficial: Signal puede limitar o bloquear números con uso automatizado."
+  },
+  {
+   "gh": "zammad/zammad",
+   "id": "zammad",
+   "cat": 18,
+   "sub": "crm",
+   "kind": "server",
+   "name": "Zammad",
+   "one": "Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
+   "how": "Aplicación Ruby on Rails con PostgreSQL, Elasticsearch opcional para búsqueda y API REST; se despliega con Docker Compose, paquetes o Kubernetes.",
+   "examples": [
+    "centralizar el soporte por correo y chat de un equipo pequeño",
+    "crear una base de conocimiento y métricas de atención"
+   ],
+   "try": [
+    "Despliega Zammad con zammad-docker-compose, conecta una cuenta de correo de prueba y responde a un ticket.",
+    "El correo entra como ticket y la respuesta sale desde Zammad."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "helpdesk",
+    "ruby",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "freescout-help-desk/freescout",
+   "id": "freescout",
+   "cat": 18,
+   "sub": "crm",
+   "kind": "server",
+   "name": "FreeScout",
+   "one": "Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
+   "how": "Aplicación PHP (Laravel) con MySQL o PostgreSQL y módulos para ampliar canales y funciones.",
+   "examples": [
+    "gestionar el correo de soporte de un equipo pequeño en un hosting barato",
+    "unificar correo, WhatsApp o Telegram de clientes con módulos"
+   ],
+   "try": [
+    "Instala FreeScout en un servidor PHP o con su imagen Docker, conecta un buzón de prueba y responde a una conversación.",
+    "El correo aparece como conversación y la respuesta se envía desde FreeScout."
+   ],
+   "setup": "easy",
+   "tags": [
+    "helpdesk",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Muchos canales y funciones avanzadas dependen de módulos de pago."
+  },
+  {
+   "gh": "espocrm/espocrm",
+   "id": "espocrm",
+   "cat": 18,
+   "sub": "crm",
+   "kind": "server",
+   "name": "EspoCRM",
+   "one": "CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.",
+   "how": "Aplicación de página única con backend PHP, API REST y base MySQL, MariaDB o PostgreSQL; personalizable con el gestor de entidades.",
+   "examples": [
+    "llevar el pipeline de ventas de una pyme en tu servidor",
+    "adaptar entidades y campos del CRM a tu proceso sin programar"
+   ],
+   "try": [
+    "Instala EspoCRM con su imagen Docker o en un servidor PHP, crea una cuenta y una oportunidad.",
+    "La oportunidad aparece en el pipeline con su etapa."
+   ],
+   "setup": "medium",
+   "tags": [
+    "crm",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "alextselegidis/easyappointments",
+   "id": "easyappointments",
+   "cat": 18,
+   "sub": "reservas",
+   "kind": "server",
+   "name": "Easy!Appointments",
+   "one": "Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.",
+   "how": "Aplicación PHP con MySQL, página de reservas pública, panel de administración y API REST.",
+   "examples": [
+    "permitir a tus clientes reservar citas en tu web",
+    "gestionar la agenda de varios profesionales y servicios"
+   ],
+   "try": [
+    "Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba.",
+    "La cita aparece en el calendario del proveedor."
+   ],
+   "setup": "medium",
+   "tags": [
+    "booking",
+    "php",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "zed-industries/zed",
+   "id": "zed",
+   "cat": 20,
+   "sub": "editor",
+   "kind": "app",
+   "name": "Zed",
+   "one": "Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.",
+   "how": "Aplicación nativa en Rust con su propio framework de interfaz (GPUI); integra un panel de agente y agentes externos mediante Agent Client Protocol.",
+   "examples": [
+    "editar código con un editor rápido y colaborar en tiempo real",
+    "usar Claude Code, Gemini CLI o Codex dentro del editor por ACP"
+   ],
+   "try": [
+    "Descarga Zed para tu sistema, abre un proyecto y configura un agente externo como Gemini CLI.",
+    "El agente responde en el panel de Zed y propone cambios en el proyecto."
+   ],
+   "setup": "easy",
+   "tags": [
+    "editor",
+    "rust",
+    "coding",
+    "app"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "optional",
+   "models": "Proveedores de modelos configurables y agentes externos (Claude Code, Gemini CLI, Codex) por ACP",
+   "license": "GPL-3.0 (Apache-2.0 en componentes marcados)"
+  },
+  {
+   "gh": "SWE-agent/mini-swe-agent",
+   "id": "mini-swe-agent",
+   "cat": 20,
+   "sub": "ingenieria",
+   "kind": "agent",
+   "name": "mini-swe-agent",
+   "one": "Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.",
+   "how": "Paquete Python con un bucle de agente que envía comandos bash al entorno (local, Docker, Podman, Apptainer, bubblewrap…) y llama a modelos mediante LiteLLM.",
+   "examples": [
+    "resolver issues de un repositorio de forma autónoma en un contenedor",
+    "usar un agente simple como base para investigación o benchmarks"
+   ],
+   "try": [
+    "Ejecuta `pip install uv && uvx mini-swe-agent` con una clave de modelo y pídele una tarea pequeña en un repositorio de prueba.",
+    "El agente ejecuta comandos bash y propone el cambio."
+   ],
+   "setup": "easy",
+   "tags": [
+    "coding",
+    "agent",
+    "python",
+    "research"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "local_choice",
+   "models": "Cualquier modelo accesible mediante LiteLLM, incluidos modelos locales",
+   "cmd": "pip install uv && uvx mini-swe-agent"
+  },
+  {
+   "gh": "caddyserver/caddy",
+   "id": "caddy",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "Caddy",
+   "one": "Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.",
+   "how": "Binario Go sin dependencias con gestión automática de certificados TLS (ACME), HTTP/1-2-3, Caddyfile, configuración JSON nativa y API de administración.",
+   "examples": [
+    "publicar tus servicios autoalojados con HTTPS sin gestionar certificados",
+    "servir una web estática o hacer de proxy inverso con pocas líneas"
+   ],
+   "try": [
+    "Instala Caddy y ejecuta `caddy reverse-proxy --from localhost:8443 --to localhost:8080` sobre un servicio local.",
+    "Caddy sirve el servicio por HTTPS con un certificado local automático."
+   ],
+   "setup": "easy",
+   "tags": [
+    "web",
+    "go",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "traefik/traefik",
+   "id": "traefik",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "Traefik Proxy",
+   "one": "Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.",
+   "how": "Binario Go que descubre servicios desde proveedores (Docker, Swarm, Kubernetes, Consul, etcd…) y genera rutas, certificados y middlewares en caliente.",
+   "examples": [
+    "publicar contenedores Docker con dominios y HTTPS mediante etiquetas",
+    "balancear tráfico entre servicios en Kubernetes"
+   ],
+   "try": [
+    "Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta.",
+    "El servicio responde en el dominio configurado sin reiniciar Traefik."
+   ],
+   "setup": "medium",
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "server"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "gh": "appwrite/appwrite",
+   "id": "appwrite",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "Appwrite",
+   "one": "Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.",
+   "how": "Conjunto de microservicios en contenedores con API REST, GraphQL y Realtime, SDK para muchas plataformas y servidor MCP; autoalojable con Docker o en la nube.",
+   "examples": [
+    "dar backend completo a una app web o móvil sin escribir servidor",
+    "dejar que un agente de código opere un proyecto de backend vía MCP"
+   ],
+   "try": [
+    "Lanza Appwrite con el `docker run` del README, crea un proyecto y un usuario de prueba.",
+    "El panel muestra el proyecto con autenticación y base de datos listas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "backend",
+    "self-hosted",
+    "docker",
+    "mcp"
+   ],
+   "goals": [
+    "servicios",
+    "programar"
+   ],
+   "mcp": true
+  },
+  {
+   "gh": "portainer/portainer",
+   "id": "portainer",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "Portainer CE",
+   "one": "Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition).",
+   "how": "Servidor Go con interfaz web que se conecta a los entornos mediante el socket de Docker o agentes, y gestiona contenedores, imágenes, redes, volúmenes y stacks.",
+   "examples": [
+    "administrar los contenedores de tu homelab desde el navegador",
+    "desplegar stacks de Docker Compose con interfaz gráfica"
+   ],
+   "try": [
+    "Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales.",
+    "El panel lista los contenedores con su estado y registros."
+   ],
+   "setup": "easy",
+   "tags": [
+    "containers",
+    "go",
+    "self-hosted",
+    "docker"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Community Edition gratuita; RBAC avanzado, GitOps, edge, auditoría y SSO forman parte de Business Edition (de pago)."
+  },
+  {
+   "gh": "netbirdio/netbird",
+   "id": "netbird",
+   "cat": 22,
+   "sub": "redes",
+   "kind": "server",
+   "name": "NetBird",
+   "one": "Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.",
+   "how": "Agentes Go en cada dispositivo crean túneles WireGuard peer-to-peer coordinados por servicios de gestión, señalización y relay, con panel web.",
+   "examples": [
+    "conectar servidores y equipos remotos sin abrir puertos",
+    "dar acceso a la red interna con SSO y políticas por grupo"
+   ],
+   "try": [
+    "Sigue la guía de autoalojamiento rápido de NetBird en un VPS y conecta dos dispositivos con el cliente.",
+    "Ambos dispositivos aparecen en el panel y se alcanzan por la red privada."
+   ],
+   "setup": "medium",
+   "tags": [
+    "network",
+    "go",
+    "self-hosted",
+    "vpn"
+   ],
+   "goals": [
+    "servicios"
+   ],
+   "caveat": "Los servicios de servidor (management, signal, relay) son AGPL-3.0; el resto, BSD-3-Clause.",
+   "license": "BSD-3-Clause + AGPL-3.0 (management, signal, relay)"
+  },
+  {
+   "gh": "wg-easy/wg-easy",
+   "id": "wg-easy",
+   "cat": 22,
+   "sub": "redes",
+   "kind": "server",
+   "name": "WireGuard Easy",
+   "one": "La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.",
+   "how": "Contenedor Docker con WireGuard y una interfaz web (Nuxt) para crear, activar y descargar configuraciones de clientes.",
+   "examples": [
+    "montar una VPN para acceder a tu red de casa desde el móvil",
+    "gestionar clientes de WireGuard sin editar archivos a mano"
+   ],
+   "try": [
+    "Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard.",
+    "El cliente se conecta y aparece activo en el panel."
+   ],
+   "setup": "easy",
+   "tags": [
+    "network",
+    "self-hosted",
+    "docker",
+    "vpn"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  }
+ ]
+}

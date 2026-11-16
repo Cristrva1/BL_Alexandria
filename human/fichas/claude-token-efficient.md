@@ -28,7 +28,7 @@ Se pega una regla corta en el chat o se coloca el `CLAUDE.md` en el proyecto. El
 |---|---|---|
 | [Claude Code](claude-code.md) | Formato CLAUDE.md. | Copia el archivo a la raíz del proyecto y mantenlo corto. |
 | [andrej-karpathy-skills](andrej-karpathy-skills.md) | Principios compatibles contra la sobreingeniería (combinación por arquitectura). | Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada. |
-| [Ponytail](ponytail.md) | Enfoque parecido aplicado al código (combinación por arquitectura). | Evita reglas contradictorias. |
+| [Claude-Code-Usage-Monitor](claude-code-usage-monitor.md) | Medir con el monitor de uso si el `CLAUDE.md` reduce de verdad el consumo; el propio README advierte que el archivo añade tokens de entrada en cada turno (combinación por arquitectura). | Registra una semana de uso sin el archivo y otra con él antes de dejarlo fijo. |
 
 Estado en GitHub: activo · último push 2026-06-16 · licencia declarada MIT (consultado el 2026-11-15).
 

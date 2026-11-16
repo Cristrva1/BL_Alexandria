@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+GPT Researcher, agente open source de investigación profunda en web y documentos locales, de @assafelovic. Licencia Apache-2.0. Es maduro (desde 2023, ~31k estrellas, v3.8.0).
+
+## ¿Qué hace?
+
+Planifica una investigación, consulta múltiples fuentes y genera informes detallados con citas. Admite investigación híbrida web más MCP (GitHub, bases de datos, APIs) y se puede usar como skill de Claude.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.12+. Se instala con `pip install gpt-researcher` o desde el repo (servidor FastAPI con uvicorn), y como skill con `npx skills add assafelovic/gpt-researcher`. El buscador se elige con `RETRIEVER` (por ejemplo `tavily,mcp`) y necesita claves de LLM y de búsqueda.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalable como skill de Claude. | Añade la skill con `npx skills add`. |
+| [firecrawl](firecrawl.md) | Scraping de páginas difíciles. (combinación por arquitectura) | Usa Firecrawl como fuente o vía MCP. |
+| [Ollama](ollama.md) | Modelos locales. (combinación por arquitectura) | Configura el LLM a través de un proveedor compatible. |
+| [SearXNG](searxng.md) | Combinación recíproca: SearXNG lo enlaza como «Usarlo como motor de búsqueda (retriever Searx) de GPT Researcher». | Orden indicado desde SearXNG: Despliega SearXNG con JSON activado y configura su URL en GPT Researcher. |
+
+**Notas:** Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v3.8.0 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/assafelovic/gpt-researcher/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia |
 | Coste | El coste depende del proveedor o la ruta. Admite endpoints locales compatibles o API; búsqueda y otras herramientas pueden cobrar aparte |
 | Equipo | Preparación según la ruta elegida. Python 3.11+; proveedor y buscador; cliente MCP solo si eliges esa ruta |
-
-El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia
-
-## Qué puedes hacer con él
-
-Agente autónomo que investiga en línea y consolida reportes citados y estructurados.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un informe de mercado con fuentes; Investigar documentación técnica.
-
-## Cómo funciona
 
 El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia
 
@@ -87,19 +102,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `research` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
-| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [STORM](storm.md) | 31.9k | Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
 | [Vane](vane.md) | 38.2k | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). |
+| [local-deep-research](local-deep-research.md) | 9.6k | Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
 
 ## Enlaces
 

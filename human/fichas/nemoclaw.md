@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+NVIDIA NemoClaw, stack de referencia open source para ejecutar agentes con más seguridad dentro de sandboxes NVIDIA OpenShell. Licencia Apache-2.0. Tiene ~23k estrellas y está activo.
+
+## ¿Qué hace?
+
+Ofrece onboarding guiado, inferencia gestionada, políticas de red, integraciones gestionadas, persistencia de estado y operaciones de ciclo de vida mediante la CLI NemoClaw. Los agentes soportados son OpenClaw (por defecto), Hermes y LangChain Deep Agents Code.
+
+## ¿Cómo lo hace?
+
+Tiene instalador y un prompt de inicio para que un agente de programación (Cursor, Claude Code, Codex…) lo instale contigo con aprobación de cada comando. Depende de OpenShell.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenClaw](openclaw.md) | Agente por defecto. | Instala NemoClaw y elige OpenClaw. |
+| [hermes-agent](hermes-agent.md) | Agente soportado. | Elige Hermes en el onboarding. |
+| [Deep Agents](deepagents.md) | Deep Agents Code soportado. | Elige Deep Agents Code. |
+| [Nemotron (NVIDIA)](nemotron.md) | Modelos de NVIDIA para la inferencia gestionada. (combinación por arquitectura) | Configura la inferencia. |
+
+**Notas:** Alternativas (elige una): sandbox.
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA/NemoClaw/blob/main/README.md) · [2](https://docs.nvidia.com/nemoclaw/latest/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. El prompt para que Claude Code o Codex ayude a instalar es una guía de instalación asistida y no una integración runtime de sus planes |
 | Coste | El coste depende del proveedor o la ruta. Infraestructura e inferencia gestionada tienen requisitos y costes propios; no incluye acceso universal gratuito |
 | Equipo | Preparación según la ruta elegida. Plataforma compatible según prerequisites; OpenShell; agente y proveedor |
-
-El prompt para que Claude Code o Codex ayude a instalar es una guía de instalación asistida y no una integración runtime de sus planes
-
-## Qué puedes hacer con él
-
-Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes.
-
-## Cómo funciona
 
 El prompt para que Claude Code o Codex ayude a instalar es una guía de instalación asistida y no una integración runtime de sus planes
 
@@ -86,14 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Plataforma compatible según prerequisites; OpenShell; agente y proveedor
 - **Etiquetas:** `agents` `security` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OpenClaw](openclaw.md) | 394k | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
-| [hermes-agent](hermes-agent.md) | 263k | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
-| [Nemotron (NVIDIA)](nemotron.md) | 2.3k | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. |
 
 ## Alternativas (elige una)
 

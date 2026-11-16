@@ -30,6 +30,12 @@ Se instala con `uv pip install fastmcp` o `pip install fastmcp` y se ejecuta con
 | [MCP Inspector](mcp-inspector.md) | Probar y depurar el servidor antes de usarlo. (combinación por arquitectura) | Lanza el Inspector contra tu servidor. |
 | [Pydantic AI](pydantic-ai.md) | Consumir el servidor desde agentes Python con el cliente MCP de Pydantic AI. (combinación por arquitectura) | Conecta el servidor como toolset MCP en Pydantic AI. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Agent Development Kit (ADK)](adk-python.md) · [AgentScope](agentscope.md) · [claude-agent-sdk-python](claude-agent-sdk-python.md) · [crewAI](crewai.md) · [MCP for Beginners](mcp-for-beginners.md) · [NextChat](nextchat.md) · [OpenAI Agents SDK](openai-agents-python.md)
+
 **Notas:** Alternativas (elige una): mcp-python-sdk.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.2.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Dograh AI, plataforma open source y autoalojable para construir agentes de voz, alternativa a Vapi y Retell. Licencia BSD-2-Clause. Tiene ~6k estrellas y es activa (dograh-v1.51.0).
+
+## ¿Qué hace?
+
+Ofrece un constructor visual de flujos, pruebas rápidas, telefonía y la posibilidad de usar cualquier LLM, STT o TTS, o su propio stack. Los asistentes de código con IA pueden ayudar a diseñar los agentes.
+
+## ¿Cómo lo hace?
+
+Se autoaloja con un comando Docker. Por defecto el quickstart abre un túnel público de trycloudflare.com para los webhooks de telefonía y deja el registro abierto, algo a revisar en producción.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | LLM local. (combinación por arquitectura) | Configura un proveedor compatible. |
+| [whisper.cpp](whisper-cpp.md) | STT autoalojado. (combinación por arquitectura) | Configura un STT propio. |
+| [Kokoro](kokoro.md) | TTS autoalojado. (combinación por arquitectura) | Configura un TTS propio. |
+
+**Notas:** Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada dograh-v1.51.0 (2026-11-04) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dograh-hq/dograh/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. MCP permite consultar y guardar borradores desde clientes compatibles; los plugins Claude y Codex ayudan a configurar y no incluyen suscripciones de voz |
 | Coste | El coste depende del proveedor o la ruta. Autoalojamiento no incluye STT, TTS, LLM o telefonía; Cloud y proveedores tienen tarifas o cuotas propias |
 | Equipo | Preparación según la ruta elegida. Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba |
-
-MCP permite consultar y guardar borradores desde clientes compatibles; los plugins Claude y Codex ayudan a configurar y no incluyen suscripciones de voz
-
-## Qué puedes hacer con él
-
-Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar un agente de voz; Editar un workflow mediante MCP.
-
-## Cómo funciona
 
 MCP permite consultar y guardar borradores desde clientes compatibles; los plugins Claude y Codex ayudan a configurar y no incluyen suscripciones de voz
 
@@ -86,6 +100,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba
 - **Etiquetas:** `voz-agentes` `agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [LiveKit Agents](livekit-agents.md) | 15.2k | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. |
+| [TEN Framework](ten-framework.md) | 11.2k | Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos. |
 
 ## Enlaces
 

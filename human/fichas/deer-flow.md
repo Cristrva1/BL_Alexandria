@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+DeerFlow 2.0, «super agent harness» open source de ByteDance, construido sobre LangGraph y LangChain. Licencia MIT. Es una reescritura completa sin código compartido con la v1 (el framework Deep Research sigue en la rama 1.x), tiene ~85k estrellas y está activo.
+
+## ¿Qué hace?
+
+Orquesta subagentes, memoria y sandboxes para tareas de largo recorrido: investigación, código, informes y más. Incluye skills, servidores MCP y un toolset de búsqueda y crawling de BytePlus (InfoQuest).
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.12+, Node 22+, pnpm, uv y nginx (`make check`), y se configura con `make setup`. Se recomienda ejecutarlo con Docker (`make docker-init` descarga la imagen sandbox). El README promociona el Coding Plan de Volcengine/BytePlus.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Runtime sobre el que está construido. | Viene incluido. |
+| [firecrawl](firecrawl.md) | Crawling web alternativo a InfoQuest. (combinación por arquitectura) | Configúralo como herramienta o MCP. |
+| [SearXNG](searxng.md) | Búsqueda autoalojada. (combinación por arquitectura) | Configúralo como herramienta de búsqueda. |
+| [sandbox](sandbox.md) | Combinación recíproca: sandbox lo enlaza como «Sandbox para el harness. (combinación por arquitectura)». | Orden indicado desde sandbox: Configúralo como entorno de ejecución. |
+
+**Notas:** Sin alternativas declaradas; se solapa con gpt-researcher en el modo investigación (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.2.0 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bytedance/deer-flow/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex |
 | Coste | El coste depende del proveedor o la ruta. Los modelos, herramientas y sandbox tienen costes por configuración; la integración Claude Code no incluye inferencia del servidor |
 | Equipo | Preparación según la ruta elegida. Docker o entorno de desarrollo; modelo configurado; carpeta de prueba |
-
-Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex
-
-## Qué puedes hacer con él
-
-Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles.
-
-## Por qué destaca
-
-Usos propuestos: Investigar un tema con fuentes; Coordinar una generación de informe.
-
-## Cómo funciona
 
 Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex
 
@@ -95,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o entorno de desarrollo; modelo configurado; carpeta de prueba
 - **Etiquetas:** `automation` `research` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
 ## Enlaces
 
