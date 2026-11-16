@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+NVIDIA Cosmos, plataforma de modelos fundacionales de mundo (world foundation models) para IA física: robótica, vehículos autónomos, industria y más. Código y modelos con licencia OpenMDW-1.1 (GitHub muestra NOASSERTION). Tiene ~12k estrellas; la familia actual es Cosmos 3 (mayo de 2026) y Cosmos3-Edge (4B) está pensado para dispositivos.
+
+## ¿Qué hace?
+
+Cosmos 3 usa una arquitectura Mixture-of-Transformers con dos torres: Reasoner (comprensión del mundo, planificación) y un generador de vídeo y mundos. Sirve para generación con física, transferencia de escenarios, políticas de acción, simulación y datos sintéticos.
+
+## ¿Cómo lo hace?
+
+Se prueba sin instalar en build.nvidia.com o se instala con `uv pip install --torch-backend=auto …` y se usa desde Diffusers (`Cosmos3OmniPipeline`). Requiere GPU NVIDIA; el COOKBOOK trae recetas de entrenamiento y simulación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [diffusers](diffusers.md) | Pipeline oficial `Cosmos3OmniPipeline`. | Instala Diffusers y carga el checkpoint. |
+| [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA. |
+| [Nemotron (NVIDIA)](nemotron.md) | Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura) | Usa Nemotron como planificador. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada Cosmos3 (2026-06-01) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA/cosmos/blob/main/README.md) · [2](https://openmdw.ai/license/1-1/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Autenticarse en Hugging Face no concede por sí solo acceso al repositorio gated de Guardrail; las escenas generadas no prueban fidelidad física ni aptitud para controlar robots |
 | Coste | El coste depende del proveedor o la ruta. Demo y servicios alojados tienen condiciones propias; ejecución propia necesita GPU y licencias de modelos |
 | Equipo | Preparación según la ruta elegida. GPU compatible; entorno de la receta; acceso aprobado a pesos restringidos; token HF de lectura |
-
-Autenticarse en Hugging Face no concede por sí solo acceso al repositorio gated de Guardrail; las escenas generadas no prueban fidelidad física ni aptitud para controlar robots
-
-## Qué puedes hacer con él
-
-Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots.
-
-## Por qué destaca
-
-Usos propuestos: Explorar datos sintéticos para robótica; Estudiar generación de escenas físicas.
-
-## Cómo funciona
 
 Autenticarse en Hugging Face no concede por sí solo acceso al repositorio gated de Guardrail; las escenas generadas no prueban fidelidad física ni aptitud para controlar robots
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** GPU compatible; entorno de la receta; acceso aprobado a pesos restringidos; token HF de lectura
 - **Etiquetas:** `inference`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
 
 ## Enlaces
 

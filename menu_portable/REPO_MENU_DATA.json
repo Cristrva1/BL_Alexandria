@@ -68636,7 +68636,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar modelos de secuencias biológicas; Reproducir un entrenamiento de investigación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "transformers",
+        "pytorch",
+        "peft"
+      ],
       "alt": []
     },
     {
@@ -68750,7 +68754,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar datos sintéticos para robótica; Estudiar generación de escenas físicas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "diffusers"
+        "diffusers",
+        "pytorch",
+        "nemotron"
       ],
       "alt": []
     },
@@ -68863,9 +68869,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang",
       "avoid_if": "Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo",
       "combines_with": [
-        "litellm",
         "sglang",
-        "vllm"
+        "vllm",
+        "litellm",
+        "tensorrt-llm"
       ],
       "alt": []
     },
@@ -68985,7 +68992,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar generación de código; Estudiar uso de herramientas con un modelo abierto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vllm",
+        "sglang",
+        "opencode"
+      ],
       "alt": []
     },
     {
@@ -69104,7 +69115,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar consultas por intención; Elegir una opción estructurada",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "langgraph",
+        "llama-index",
+        "crewai"
+      ],
       "alt": []
     },
     {
@@ -69221,7 +69236,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "peft",
-        "transformers"
+        "transformers",
+        "vllm",
+        "sglang"
       ],
       "alt": [
         "unsloth"
@@ -69343,7 +69360,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "vllm",
-        "nemoclaw"
+        "nemoclaw",
+        "claude-code",
+        "nemo"
       ],
       "alt": []
     },
@@ -69575,7 +69594,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender tensores; Entrenar una red educativa",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "transformers"
+        "transformers",
+        "diffusers",
+        "vllm"
       ],
       "alt": []
     },
@@ -69695,7 +69716,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender redes neuronales; Construir un clasificador educativo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "transformers",
+        "mediapipe",
+        "marimo"
+      ],
       "alt": []
     },
     {
@@ -69813,7 +69838,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "polars",
-        "duckdb"
+        "duckdb",
+        "pytorch"
       ],
       "alt": []
     },
@@ -70173,8 +70199,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar inferencia local; Preparar un ajuste fino pequeño",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "trl",
         "ollama",
-        "trl"
+        "llama-cpp",
+        "claude-code"
       ],
       "alt": [
         "llama-factory"
@@ -70514,7 +70542,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "marimo",
-        "superset"
+        "superset",
+        "timesfm"
       ],
       "alt": [
         "polars"
@@ -70985,7 +71014,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "duckdb",
-        "polars"
+        "polars",
+        "ollama"
       ],
       "alt": []
     },
@@ -71099,7 +71129,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Transformar tablas; Preparar datos antes de un dashboard",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "marimo"
+        "marimo",
+        "timesfm",
+        "streamlit"
       ],
       "alt": [
         "duckdb"

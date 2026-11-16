@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Unsloth, app de escritorio y librería para ejecutar y entrenar modelos en local, de unslothai. Tiene licencia dual: el núcleo es Apache-2.0 y componentes opcionales como la UI de Unsloth Studio son AGPL-3.0. Es muy popular (~80k estrellas) y sus releases siguen en beta (v0.1.917-beta).
+
+## ¿Qué hace?
+
+Ejecuta y entrena LLM, modelos de difusión, TTS, embeddings y de decisión en formatos GGUF, MLX y otros. Según el proyecto, el fine-tuning es unas 2 veces más rápido y usa ~70% menos VRAM sin perder precisión (afirmación propia). Exporta a GGUF, NVFP4 o FP8 y puede lanzar agentes sobre modelos locales (`unsloth start claude --model …`).
+
+## ¿Cómo lo hace?
+
+Hay apps nativas para Windows, macOS y Linux; la librería se instala con `uv pip install unsloth --torch-backend=auto`. Se apoya en PyTorch, Transformers y TRL, y conviene una GPU NVIDIA para entrenar. Ofrece notebooks gratuitos en Colab.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [TRL](trl.md) | Trainers SFT, GRPO y DPO sobre modelos cargados con Unsloth. | Instala TRL y entrena con sus trainers. |
+| [Ollama](ollama.md) | Servir el GGUF exportado. | Exporta a GGUF e impórtalo en Ollama. |
+| [llama.cpp](llama-cpp.md) | Inferencia del GGUF exportado. | Carga el GGUF con llama.cpp. |
+| [Claude Code](claude-code.md) | Agente sobre un modelo local vía `unsloth start claude`. | Instala Claude Code y lanza con un modelo local. |
+
+**Notas:** Alternativas (elige una): llama-factory. La AGPL de Studio importa si redistribuyes la UI.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.917-beta (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/unslothai/unsloth/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Unsloth Start conecta Claude Code y Codex a modelos locales; los porcentajes de velocidad y memoria publicados dependen del modelo y hardware |
 | Coste | El coste depende del proveedor o la ruta. La ruta local no exige API de pago; hardware, modelos y conexiones Cloud o ChatGPT tienen costes o cuotas propios |
 | Equipo | Preparación según la ruta elegida. App para tu sistema; modelo que quepa en memoria; GPU según tarea |
-
-Unsloth Start conecta Claude Code y Codex a modelos locales; los porcentajes de velocidad y memoria publicados dependen del modelo y hardware
-
-## Qué puedes hacer con él
-
-App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales.
-
-## Por qué destaca
-
-Usos propuestos: Probar inferencia local; Preparar un ajuste fino pequeño.
-
-## Cómo funciona
 
 Unsloth Start conecta Claude Code y Codex a modelos locales; los porcentajes de velocidad y memoria publicados dependen del modelo y hardware
 
@@ -93,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** App para tu sistema; modelo que quepa en memoria; GPU según tarea
 - **Etiquetas:** `training` `local` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [TRL](trl.md) | 19.7k | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. |
 
 ## Alternativas (elige una)
 

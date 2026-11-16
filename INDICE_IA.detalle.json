@@ -33143,8 +33143,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Unsloth Start conecta Claude Code y Codex a modelos locales; los porcentajes de velocidad y memoria publicados dependen del modelo y hardware",
    "combines_with": [
+    "trl",
     "ollama",
-    "trl"
+    "llama-cpp",
+    "claude-code"
    ],
    "alternatives": [
     "llama-factory"
@@ -33241,7 +33243,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Unsloth, app de escritorio y librería para ejecutar y entrenar modelos en local, de unslothai. Tiene licencia dual: el núcleo es Apache-2.0 y componentes opcionales como la UI de Unsloth Studio son AGPL-3.0. Es muy popular (~80k estrellas) y sus releases siguen en beta (v0.1.917-beta).",
+   "que_hace": "Ejecuta y entrena LLM, modelos de difusión, TTS, embeddings y de decisión en formatos GGUF, MLX y otros. Según el proyecto, el fine-tuning es unas 2 veces más rápido y usa ~70% menos VRAM sin perder precisión (afirmación propia). Exporta a GGUF, NVFP4 o FP8 y puede lanzar agentes sobre modelos locales (`unsloth start claude --model …`).",
+   "como_lo_hace": "Hay apps nativas para Windows, macOS y Linux; la librería se instala con `uv pip install unsloth --torch-backend=auto`. Se apoya en PyTorch, Transformers y TRL, y conviene una GPU NVIDIA para entrenar. Ofrece notebooks gratuitos en Colab.",
+   "combina_con": [
+    {
+     "id": "trl",
+     "motivo": "Trainers SFT, GRPO y DPO sobre modelos cargados con Unsloth.",
+     "orden_instalacion": "Instala TRL y entrena con sus trainers."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Servir el GGUF exportado.",
+     "orden_instalacion": "Exporta a GGUF e impórtalo en Ollama."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "Inferencia del GGUF exportado.",
+     "orden_instalacion": "Carga el GGUF con llama.cpp."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente sobre un modelo local vía `unsloth start claude`.",
+     "orden_instalacion": "Instala Claude Code y lanza con un modelo local."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): llama-factory. La AGPL de Studio importa si redistribuyes la UI.",
+   "descripcion_fuentes": [
+    "https://github.com/unslothai/unsloth/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "unslothai/unsloth",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.1.917-beta (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
   },
   "transformers": {
    "name": "Transformers",
@@ -33423,7 +33469,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Para principiantes conviene instalar un binario compatible; los comandos de compilar todo el repositorio son para desarrollo del framework",
    "combines_with": [
-    "transformers"
+    "transformers",
+    "diffusers",
+    "vllm"
    ],
    "alternatives": [],
    "repo": "https://github.com/pytorch/pytorch",
@@ -33516,7 +33564,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "PyTorch, framework de deep learning con tensores acelerados por GPU y autograd dinámico, gobernado por la PyTorch Foundation (Linux Foundation). Licencia de estilo BSD (GitHub muestra NOASSERTION). Es muy madura (~106k estrellas, v2.15.0).",
+   "que_hace": "Ofrece cálculo de tensores tipo NumPy en GPU, redes neuronales con autograd basado en cinta, ejecución imperativa y compilación (`torch.compile`). Es la base de la mayoría de librerías modernas de modelos.",
+   "como_lo_hace": "Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o CPU en pytorch.org) o desde el código fuente. Soporta GPU NVIDIA (CUDA), AMD (ROCm), Intel y Jetson.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Modelos preentrenados sobre PyTorch.",
+     "orden_instalacion": "Instala PyTorch y luego Transformers."
+    },
+    {
+     "id": "diffusers",
+     "motivo": "Modelos de difusión sobre PyTorch.",
+     "orden_instalacion": "Instala Diffusers."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Inferencia en producción construida sobre PyTorch.",
+     "orden_instalacion": "Instala vLLM con la versión de PyTorch compatible."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; compite con tensorflow (solo anotado).",
+   "descripcion_fuentes": [
+    "https://github.com/pytorch/pytorch/blob/main/README.md",
+    "https://pytorch.org/get-started/locally/"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pytorch/pytorch",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v2.15.0 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
   },
   "llama-factory": {
    "name": "LLaMA-Factory",
@@ -33537,7 +33625,9 @@
    "limits": "La interfaz reduce programación pero no elimina requisitos de memoria, licencia o evaluación de datos; no todas las configuraciones caben en un portátil",
    "combines_with": [
     "peft",
-    "transformers"
+    "transformers",
+    "vllm",
+    "sglang"
    ],
    "alternatives": [
     "unsloth"
@@ -33633,7 +33723,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "LlamaFactory, framework para fine-tuning unificado de más de 100 LLM y modelos de visión con CLI e interfaz web sin código, de @hiyouga. Licencia Apache-2.0. Es maduro (~76k estrellas, v0.9.5) y está citado por empresas como Amazon y NVIDIA.",
+   "que_hace": "Admite SFT, preentrenamiento, reward modeling, PPO, DPO, KTO y otros métodos, con LoRA, QLoRA y entrenamiento completo. LlamaBoard (Gradio) permite configurar el entrenamiento sin código, e incluye inferencia con API estilo OpenAI.",
+   "como_lo_hace": "Se instala desde el repo con pip (extras para métricas, DeepSpeed, etc.) o se usa en Colab o PAI-DSW. La inferencia rápida usa workers de vLLM o SGLang (`infer_backend: vllm`). El README promociona otro proyecto del autor (PenguinHarness) y a sus patrocinadores.",
+   "combina_con": [
+    {
+     "id": "peft",
+     "motivo": "Métodos LoRA y QLoRA.",
+     "orden_instalacion": "Viene como dependencia."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Modelos base.",
+     "orden_instalacion": "Viene como dependencia."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Worker de inferencia integrado.",
+     "orden_instalacion": "Configura `infer_backend: vllm`."
+    },
+    {
+     "id": "sglang",
+     "motivo": "Worker de inferencia alternativo.",
+     "orden_instalacion": "Configura el backend SGLang."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): unsloth.",
+   "descripcion_fuentes": [
+    "https://github.com/hiyouga/LlamaFactory/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "hiyouga/LlamaFactory",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.9.5 (2026-05-30)",
+    "checked_at": "2026-11-15"
+   }
   },
   "peft": {
    "name": "PEFT",
@@ -34750,7 +34884,8 @@
    "limits": "Código y pesos hasta 2.5 son Apache; pesos 3.0 autoalojados no permiten uso comercial o productivo, que sí se ofrece mediante servicios Google autorizados",
    "combines_with": [
     "polars",
-    "duckdb"
+    "duckdb",
+    "pytorch"
    ],
    "alternatives": [],
    "repo": "https://github.com/google-research/timesfm",
@@ -34847,7 +34982,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "TimesFM, modelo fundacional preentrenado de Google Research para pronóstico de series temporales (artículo en ICML 2024). El código es Apache-2.0 y la licencia de los pesos cambia por versión. Tiene ~36k estrellas y su versión actual es TimesFM 3.0; el README aclara que esta versión abierta no es un producto oficial de Google.",
+   "que_hace": "Hace pronósticos zero-shot de series temporales; TimesFM 3 añade pronóstico multivariante. Google también lo ofrece en BigQuery ML, Google Sheets (Connected Sheets) y Vertex Model Garden.",
+   "como_lo_hace": "Se instala con pip y carga checkpoints desde Hugging Face (`google/timesfm-3.0-pytorch`; las versiones hasta 2.5 están en la colección). Funciona con PyTorch.",
+   "combina_con": [
+    {
+     "id": "polars",
+     "motivo": "Preparar series antes de pronosticar. (combinación por arquitectura)",
+     "orden_instalacion": "Carga y limpia los datos con Polars."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Consultar históricos en SQL antes de pronosticar. (combinación por arquitectura)",
+     "orden_instalacion": "Extrae las series con DuckDB."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Backend del checkpoint PyTorch.",
+     "orden_instalacion": "Instala PyTorch."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/google-research/timesfm/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "google-research/timesfm",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.0.0 (2026-08-28)",
+    "checked_at": "2026-11-15"
+   }
   },
   "cosmos": {
    "name": "cosmos",
@@ -34867,7 +35041,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Autenticarse en Hugging Face no concede por sí solo acceso al repositorio gated de Guardrail; las escenas generadas no prueban fidelidad física ni aptitud para controlar robots",
    "combines_with": [
-    "diffusers"
+    "diffusers",
+    "pytorch",
+    "nemotron"
    ],
    "alternatives": [],
    "repo": "https://github.com/NVIDIA/cosmos",
@@ -34962,7 +35138,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "NVIDIA Cosmos, plataforma de modelos fundacionales de mundo (world foundation models) para IA física: robótica, vehículos autónomos, industria y más. Código y modelos con licencia OpenMDW-1.1 (GitHub muestra NOASSERTION). Tiene ~12k estrellas; la familia actual es Cosmos 3 (mayo de 2026) y Cosmos3-Edge (4B) está pensado para dispositivos.",
+   "que_hace": "Cosmos 3 usa una arquitectura Mixture-of-Transformers con dos torres: Reasoner (comprensión del mundo, planificación) y un generador de vídeo y mundos. Sirve para generación con física, transferencia de escenarios, políticas de acción, simulación y datos sintéticos.",
+   "como_lo_hace": "Se prueba sin instalar en build.nvidia.com o se instala con `uv pip install --torch-backend=auto …` y se usa desde Diffusers (`Cosmos3OmniPipeline`). Requiere GPU NVIDIA; el COOKBOOK trae recetas de entrenamiento y simulación.",
+   "combina_con": [
+    {
+     "id": "diffusers",
+     "motivo": "Pipeline oficial `Cosmos3OmniPipeline`.",
+     "orden_instalacion": "Instala Diffusers y carga el checkpoint."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Backend.",
+     "orden_instalacion": "Instala PyTorch con CUDA."
+    },
+    {
+     "id": "nemotron",
+     "motivo": "Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Nemotron como planificador."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/NVIDIA/cosmos/blob/main/README.md",
+    "https://openmdw.ai/license/1-1/"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NVIDIA/cosmos",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "no estándar (NOASSERTION)",
+    "latest_release": "Cosmos3 (2026-06-01)",
+    "checked_at": "2026-11-15"
+   }
   },
   "nemotron": {
    "name": "Nemotron (NVIDIA)",
@@ -34983,7 +35198,9 @@
    "limits": "Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta",
    "combines_with": [
     "vllm",
-    "nemoclaw"
+    "nemoclaw",
+    "claude-code",
+    "nemo"
    ],
    "alternatives": [],
    "repo": "https://github.com/NVIDIA-NeMo/Nemotron",
@@ -35078,7 +35295,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Repositorio para desarrolladores de NVIDIA Nemotron, familia de modelos abiertos para IA agéntica: recetas de entrenamiento, guías de despliegue y ejemplos. Licencia Apache-2.0 (los pesos tienen sus propias licencias). Tiene ~2.3k estrellas y está activo.",
+   "que_hace": "Documenta los modelos Nemotron 3.5 Super (120B-A12B, híbrido Mamba-Transformer con contexto de hasta 1M), Nemotron 3.5 Lightning (30B-A3B), Nemotron 3 Ultra y Nano Omni, con datos y técnicas de entrenamiento abiertas. Incluye un plugin de Claude Code (`nemotron-customize`) para construir pipelines de personalización.",
+   "como_lo_hace": "Los modelos se descargan de Hugging Face y se despliegan en edge, una GPU o centro de datos, con NIM, TensorRT-LLM, vLLM o SGLang. Las recetas usan la pila NeMo.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Despliegue de los modelos.",
+     "orden_instalacion": "Sirve el checkpoint con vLLM."
+    },
+    {
+     "id": "nemoclaw",
+     "motivo": "Inferencia gestionada en el stack de agentes de NVIDIA. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Nemotron como modelo."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Plugin `nemotron-customize`.",
+     "orden_instalacion": "Abre Claude Code en la raíz del repo e invoca la skill."
+    },
+    {
+     "id": "nemo",
+     "motivo": "Pila de entrenamiento de las recetas.",
+     "orden_instalacion": "Instala NeMo para reproducir recetas."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NVIDIA-NeMo/Nemotron",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Jupyter Notebook",
+    "latest_release": "v0.2.0 (2026-10-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "cli": {
    "name": "GitHub CLI",
@@ -35412,7 +35673,8 @@
    "limits": "Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor",
    "combines_with": [
     "marimo",
-    "superset"
+    "superset",
+    "timesfm"
    ],
    "alternatives": [
     "polars"
@@ -35505,7 +35767,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "DuckDB, base de datos analítica en proceso (in-process), de la DuckDB Foundation y DuckDB Labs. Licencia MIT. Es muy madura (~43k estrellas, v2.0.0).",
+   "que_hace": "Ejecuta SQL analítico muy rápido dentro de tu aplicación y lee y escribe CSV, Parquet, JSON y formatos lakehouse (Iceberg, Delta, DuckLake). Puede adjuntar y consultar en sitio otras bases de datos como Postgres, MySQL o SQLite.",
+   "como_lo_hace": "Hay CLI independiente y clientes para Python, R, Java, Node, Rust, Go, WebAssembly y más. Las extensiones del núcleo vienen incluidas y las comunitarias se cargan bajo demanda. La instalación por plataforma está en duckdb.org.",
+   "combina_con": [
+    {
+     "id": "marimo",
+     "motivo": "Celdas SQL nativas sobre DuckDB.",
+     "orden_instalacion": "Instala marimo y escribe celdas SQL."
+    },
+    {
+     "id": "superset",
+     "motivo": "Dashboards sobre DuckDB. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta DuckDB como base de datos."
+    },
+    {
+     "id": "timesfm",
+     "motivo": "Preparar series temporales para pronóstico. (combinación por arquitectura)",
+     "orden_instalacion": "Extrae las series con SQL."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): polars.",
+   "descripcion_fuentes": [
+    "https://github.com/duckdb/duckdb/blob/main/README.md",
+    "https://duckdb.org/docs/installation/"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "duckdb/duckdb",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "C++",
+    "latest_release": "v2.0.0 (2026-10-21)",
+    "checked_at": "2026-11-15"
+   }
   },
   "marimo": {
    "name": "marimo",
@@ -35526,7 +35828,8 @@
    "limits": "Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local",
    "combines_with": [
     "duckdb",
-    "polars"
+    "polars",
+    "ollama"
    ],
    "alternatives": [],
    "repo": "https://github.com/marimo-team/marimo",
@@ -35621,7 +35924,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "marimo, notebook reactivo de Python que se guarda como script `.py`, de marimo-team. Licencia Apache-2.0. Es maduro y activo (~24k estrellas, 0.25.2).",
+   "que_hace": "Al ejecutar una celda se actualizan automáticamente las dependientes, sin estado oculto. Los notebooks se versionan en Git, se ejecutan como scripts y se publican como apps web o diapositivas; incluye celdas SQL, elementos de UI interactivos y asistencia con IA.",
+   "como_lo_hace": "Se instala con `pip install marimo` o conda (`marimo tutorial intro` para empezar). Puede instalar paquetes al importarlos, guardar dependencias inline en el archivo y usarse desde una extensión de VS Code o en WebAssembly.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Celdas SQL nativas.",
+     "orden_instalacion": "Instala DuckDB en el entorno."
+    },
+    {
+     "id": "polars",
+     "motivo": "DataFrames con visualización interactiva.",
+     "orden_instalacion": "Instala Polars."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelo local para el asistente de IA del editor. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el proveedor de IA de marimo apuntando a Ollama."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; compite con Jupyter (solo anotado).",
+   "descripcion_fuentes": [
+    "https://github.com/marimo-team/marimo/blob/main/README.md",
+    "https://docs.marimo.io/guides/apps.html"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "marimo-team/marimo",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "0.25.2 (2026-10-19)",
+    "checked_at": "2026-11-15"
+   }
   },
   "polars": {
    "name": "Polars",
@@ -35641,7 +35984,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración",
    "combines_with": [
-    "marimo"
+    "marimo",
+    "timesfm",
+    "streamlit"
    ],
    "alternatives": [
     "duckdb"
@@ -35737,7 +36082,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Polars, motor de consultas y DataFrames escrito en Rust con API de Python (y Rust, Node, R), de pola-rs. Licencia MIT. Es muy madura (~40k estrellas, py-2.1.0).",
+   "que_hace": "Procesa datos tabulares con ejecución lazy y optimizador de consultas, multihilo, vectorizado y en streaming para datos mayores que la memoria. Opcionalmente acelera consultas en GPU NVIDIA y lee los formatos más comunes.",
+   "como_lo_hace": "Se instala con `pip install polars` (hay feature flags para extras) o se compila con Rust y maturin.",
+   "combina_con": [
+    {
+     "id": "marimo",
+     "motivo": "Visualización interactiva de DataFrames en notebooks.",
+     "orden_instalacion": "Instala marimo y muestra el DataFrame."
+    },
+    {
+     "id": "timesfm",
+     "motivo": "Preparar series para pronóstico. (combinación por arquitectura)",
+     "orden_instalacion": "Limpia los datos con Polars."
+    },
+    {
+     "id": "streamlit",
+     "motivo": "Apps de datos sobre DataFrames de Polars. (combinación por arquitectura)",
+     "orden_instalacion": "Muestra el DataFrame en Streamlit."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): duckdb.",
+   "descripcion_fuentes": [
+    "https://github.com/pola-rs/polars/blob/main/README.md",
+    "https://docs.pola.rs/user-guide/installation/"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pola-rs/polars",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "latest_release": "py-2.1.0 (2026-10-25)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-bigdata": {
    "name": "awesome-bigdata",
@@ -62503,7 +62888,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar modelos de secuencias biológicas; Reproducir un entrenamiento de investigación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "No es un framework único listo para usar; algunas recetas requieren Hopper o Blackwell y sus resultados no son evidencia clínica",
-   "combines_with": [],
+   "combines_with": [
+    "transformers",
+    "pytorch",
+    "peft"
+   ],
    "alternatives": [],
    "repo": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes",
    "homepage": "https://nvidia-bionemo.github.io/bionemo-recipes/",
@@ -62603,7 +62992,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "BioNeMo Recipes, recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Licencia Apache-2.0 en LICENSE/license.txt (GitHub no la detecta por la ubicación). Es de nicho (~880 estrellas, v3.0.0).",
+   "que_hace": "Ofrece modelos acelerados con TransformerEngine (ESM-2, AMPLIFY, Llama 3, Mixtral, etc.) y recetas autocontenidas para escalar de una GPU a multinodo con FSDP y FP8. Está pensado para desarrolladores de modelos y científicos que ajustan modelos con datos propios.",
+   "como_lo_hace": "Cada receta es un contenedor Docker (`docker build` y `docker run --gpus all … train.py`). Es compatible con HF Accelerate, PyTorch Lightning o PyTorch puro, y requiere GPU NVIDIA.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Checkpoints publicados en Hugging Face.",
+     "orden_instalacion": "Carga los modelos con Transformers."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Base de las recetas.",
+     "orden_instalacion": "Viene en el contenedor."
+    },
+    {
+     "id": "peft",
+     "motivo": "Ajuste eficiente con datos propios. (combinación por arquitectura)",
+     "orden_instalacion": "Aplica LoRA sobre el checkpoint."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NVIDIA-BioNeMo/bionemo-recipes",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "primary_language": "Python",
+    "latest_release": "v3.0.0 (2026-06-24)",
+    "checked_at": "2026-11-15"
+   }
   },
   "cal.diy": {
    "name": "cal.diy",
@@ -67298,7 +67725,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender redes neuronales; Construir un clasificador educativo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La instalación CPU y acelerada depende de plataforma y versión; usa el selector y guía oficiales en vez de asumir GPU en cualquier sistema",
-   "combines_with": [],
+   "combines_with": [
+    "transformers",
+    "mediapipe",
+    "marimo"
+   ],
    "alternatives": [],
    "repo": "https://github.com/tensorflow/tensorflow",
    "homepage": "https://tensorflow.org",
@@ -67398,7 +67829,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "TensorFlow, plataforma open source de aprendizaje automático creada en Google Brain. Licencia Apache-2.0. Es muy madura (~202k estrellas, v2.21.0).",
+   "que_hace": "Permite construir, entrenar y desplegar modelos con APIs estables en Python y C++, además de un ecosistema de herramientas (Keras, TF Lite/LiteRT, TF Serving, TensorBoard). Hoy pierde peso frente a PyTorch en investigación.",
+   "como_lo_hace": "Se instala con `pip install tensorflow` (o `tensorflow-cpu`) y tiene imágenes Docker. Soporta GPU NVIDIA con CUDA en Linux.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Algunos modelos tienen variante TF (el soporte se ha ido reduciendo). (combinación por arquitectura)",
+     "orden_instalacion": "Comprueba el soporte del modelo."
+    },
+    {
+     "id": "mediapipe",
+     "motivo": "Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)",
+     "orden_instalacion": "Usa modelos TF Lite en MediaPipe."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Experimentación en notebooks reactivos. (combinación por arquitectura)",
+     "orden_instalacion": "Instala marimo en el mismo entorno."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; compite con pytorch (solo anotado).",
+   "descripcion_fuentes": [
+    "https://github.com/tensorflow/tensorflow/blob/master/README.md",
+    "https://www.tensorflow.org/install"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "tensorflow/tensorflow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "latest_release": "v2.21.0 (2026-03-06)",
+    "checked_at": "2026-11-15"
+   }
   },
   "machine-learning-for-trading": {
    "name": "machine-learning-for-trading",
@@ -85743,7 +86214,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar consultas por intención; Elegir una opción estructurada",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ofrece MCP stdio opcional; el ejemplo offline sin descarga es routing y no demuestra que se haya cargado un modelo; las probabilidades requieren evaluación propia",
-   "combines_with": [],
+   "combines_with": [
+    "langgraph",
+    "llama-index",
+    "crewai"
+   ],
    "alternatives": [],
    "repo": "https://github.com/NandhaKishorM/laya",
    "homepage": "https://huggingface.co/convaiinnovations/laya",
@@ -85846,7 +86321,46 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "laya, motor de decisión multilingüe no autoregresivo de @NandhaKishorM, con preprint asociado («From Laya to Vega»). Licencia Apache-2.0. Es muy reciente (septiembre de 2026, v0.4.34) y ya tiene ~36k estrellas, una cifra inusual; promociona Studio, el servicio de pago de Embedding Space.",
+   "que_hace": "Toma decisiones tipadas (clasificar o elegir opciones) en más de 100 idiomas en una sola pasada (~33 ms según el autor). Devuelve probabilidades calibradas, conjuntos de predicción conformal, aviso de abstención y detección de fuera de distribución, y tiene un router.",
+   "como_lo_hace": "Requiere Python 3.10+ y se instala con `pip install laya` o `uv add laya`, con extras para servidor HTTP, MCP, LangChain/LangGraph, LlamaIndex, CrewAI y ONNX. Hay versión TypeScript (`laya-ts`).",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Extra `laya[langchain]` para enrutar nodos.",
+     "orden_instalacion": "Instala el extra y úsalo como router."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Extra `laya[llamaindex]` como selector.",
+     "orden_instalacion": "Instala el extra."
+    },
+    {
+     "id": "crewai",
+     "motivo": "Extra `laya[crewai]` para enrutar.",
+     "orden_instalacion": "Instala el extra."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Recuento de estrellas inusual para su edad.",
+   "descripcion_fuentes": [
+    "https://github.com/NandhaKishorM/laya/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NandhaKishorM/laya",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.4.34 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "ghidra": {
    "name": "ghidra",
@@ -96103,7 +96617,11 @@
     "collection": "pending-document-references"
    },
    "alternatives": [],
-   "combines_with": [],
+   "combines_with": [
+    "vllm",
+    "sglang",
+    "opencode"
+   ],
    "how": "Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes",
    "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md",
    "stack": "Servicio Moonshot o infraestructura de inferencia adecuada; licencia Modified MIT; proyecto de prueba",
@@ -96154,6 +96672,37 @@
      "antigravity",
      "local_model"
     ],
+    "installation_tested": false
+   },
+   "que_es": "Kimi K2.7 Code, modelo de pesos abiertos de Moonshot AI orientado a programación agéntica, construido sobre Kimi K2.6. Se publica en Hugging Face (moonshotai/Kimi-K2.7-Code), no en GitHub. Licencia «Modified MIT»: los productos con más de 100 M de usuarios activos mensuales o más de 20 M USD de ingresos mensuales deben mostrar «Kimi K2.7 Code» en su interfaz.",
+   "que_hace": "Mejora la ejecución de tareas largas de ingeniería de software y el uso de herramientas. En la tabla de su model card supera a K2.6, pero queda por debajo de GPT-5.5 y Claude Opus 4.8 en los benchmarks de código mostrados, varios de ellos internos (Kimi Code Bench v2). Es multimodal (imagen y texto) con el codificador MoonViT.",
+   "como_lo_hace": "Es un MoE de 1T parámetros (32B activos, 384 expertos, contexto de 256K, MLA) con cuantización INT4 nativa. Se usa por la API de platform.moonshot.ai (compatible con OpenAI y Anthropic) o se despliega con vLLM, SGLang o KTransformers, igual que K2.5/K2.6; requiere `transformers>=4.57.1,<5` y fuerza el modo thinking.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Despliegue documentado.",
+     "orden_instalacion": "Sirve el modelo con vLLM en multi-GPU."
+    },
+    {
+     "id": "sglang",
+     "motivo": "Despliegue documentado.",
+     "orden_instalacion": "Sirve el modelo con SGLang."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Usarlo como modelo en un agente de código vía API compatible. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el endpoint de Moonshot en OpenCode."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Sin repo de GitHub: la fuente canónica es la model card de Hugging Face.",
+   "descripcion_fuentes": [
+    "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+    "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
     "installation_tested": false
    }
   },
@@ -96454,9 +97003,10 @@
    "avoid_if": "Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo",
    "limits": "No cabe en un equipo doméstico: la demo oficial usa dos nodos de 8 GPU. No es un IDE ni una integración nativa con Claude Code, Codex o Antigravity",
    "combines_with": [
-    "litellm",
     "sglang",
-    "vllm"
+    "vllm",
+    "litellm",
+    "tensorrt-llm"
    ],
    "alternatives": [],
    "repo": "https://github.com/deepseek-ai/DeepSeek-V3",
@@ -96553,7 +97103,51 @@
     "root_tree_sha": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
     "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "DeepSeek-V3, modelo de lenguaje MoE de DeepSeek con 671B parámetros totales y 37B activos por token. El código es MIT y los pesos usan un Model Agreement propio. El repo tiene ~105k estrellas, pero no se actualiza desde agosto de 2025 y DeepSeek ha publicado versiones posteriores.",
+   "que_hace": "Sirve para chat, código y razonamiento. Usa Multi-head Latent Attention, DeepSeekMoE, balanceo sin pérdida auxiliar y predicción multi-token, y destila razonamiento de DeepSeek-R1. Según DeepSeek, se entrenó con 14.8T tokens en 2.788M horas de GPU H800.",
+   "como_lo_hace": "Se usa por la API de DeepSeek (compatible con OpenAI) o en local con varios GPU mediante SGLang, vLLM, LMDeploy, TensorRT-LLM o LightLLM, en BF16 o FP8. No es viable en hardware doméstico sin cuantizar.",
+   "combina_con": [
+    {
+     "id": "sglang",
+     "motivo": "Soporte documentado en BF16 y FP8.",
+     "orden_instalacion": "Sirve el modelo con SGLang."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Soporte documentado.",
+     "orden_instalacion": "Sirve el modelo con vLLM."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Enrutar a la API de DeepSeek o a un servidor propio. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el modelo al proxy."
+    },
+    {
+     "id": "tensorrt-llm",
+     "motivo": "Soporte documentado para GPU NVIDIA.",
+     "orden_instalacion": "Construye el motor con TensorRT-LLM."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Repo histórico: conviene evaluar las versiones más nuevas de DeepSeek.",
+   "descripcion_fuentes": [
+    "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "36-modelos-y-entrenamiento-y-datos-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "deepseek-ai/DeepSeek-V3",
+    "archived": false,
+    "pushed_at": "2025-08-28",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.0.0 (2025-06-27)",
+    "checked_at": "2026-11-15"
+   }
   }
  },
  "meta": {

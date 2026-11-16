@@ -91,7 +91,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un CSV ficticio y consulta el total de registros y una suma por categoría
 **Qué comprobar:** Puedes comparar el resultado con las filas originales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marimo`, `superset`
+**Combina con:** `marimo`, `superset`, `timesfm`
 **Alternativas (elige una):** `polars`
 
 ## `globalbuildingatlas`
@@ -212,7 +212,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Completa el tutorial intro y modifica una variable para ver qué celdas se recalculan
 **Qué comprobar:** Puedes reconocer dependencias reactivas y el archivo Python guardado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `polars`
+**Combina con:** `duckdb`, `polars`, `ollama`
 
 ## `polars`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,python,rust
@@ -242,7 +242,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee un archivo y agrupa por una columna para sumar otra
 **Qué comprobar:** Puedes contrastar el resultado con una muestra calculada a mano
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marimo`
+**Combina con:** `marimo`, `timesfm`, `streamlit`
 **Alternativas (elige una):** `duckdb`
 
 ## `streamlit`

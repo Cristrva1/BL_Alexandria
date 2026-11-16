@@ -31,6 +31,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Revisa la receta ESM2 y calcula sus requisitos antes de ejecutar un ejemplo educativo pequeño
 **Qué comprobar:** Puedes identificar modelo, datos y restricciones de hardware
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `pytorch`, `peft`
 
 ## `cosmos`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=inference
@@ -60,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una demo o ejecuta una receta pequeña y compara el video con su condicionamiento
 **Qué comprobar:** Puedes reconocer entrada, modelo y salida generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`
+**Combina con:** `diffusers`, `pytorch`, `nemotron`
 
 ## `deepseek-v3`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=llm,inference,python
@@ -90,7 +91,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta
 **Qué comprobar:** Recibes la respuesta y ves en tu panel el consumo de esa llamada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `sglang`, `vllm`
+**Combina con:** `sglang`, `vllm`, `litellm`, `tensorrt-llm`
 
 ## `kimi-k2-7-code`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=kimi,moonshot,modelo,programacion,pesos-abiertos,huggingface
@@ -120,6 +121,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Revisa la guía de despliegue o API y evalúa una función pequeña con tests conocidos
 **Qué comprobar:** Puedes identificar modelo, proveedor y resultado comprobado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `sglang`, `opencode`
 
 ## `laya`
 role=runtime · exec=local · setup=heavy · mcp=True · prov=local · tags=modelos,model,python
@@ -149,6 +151,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba una decisión entre categorías de soporte y comprueba si usas routing offline o inferencia con pesos
 **Qué comprobar:** Puedes distinguir una regla de enrutamiento de una predicción del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langgraph`, `llama-index`, `crewai`
 
 ## `llama-factory`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,python
@@ -181,7 +184,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre la interfaz y revisa un dataset pequeño antes de lanzar un ajuste LoRA
 **Qué comprobar:** Puedes identificar modelo base, datos y parámetros de entrenamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `peft`, `transformers`
+**Combina con:** `peft`, `transformers`, `vllm`, `sglang`
 **Alternativas (elige una):** `unsloth`
 
 ## `nemotron`
@@ -212,7 +215,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una receta y usa su guía para identificar datos, checkpoint y recursos antes de ejecutarla
 **Qué comprobar:** Puedes diferenciar entrenamiento, adaptación e inferencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vllm`, `nemoclaw`
+**Combina con:** `vllm`, `nemoclaw`, `claude-code`, `nemo`
 
 ## `peft`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -272,7 +275,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Usa el selector oficial de instalación y realiza una operación pequeña con tensores
 **Qué comprobar:** Puedes comprobar versión, dispositivo y resultado numérico
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`
+**Combina con:** `transformers`, `diffusers`, `vllm`
 
 ## `tensorflow`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python
@@ -302,6 +305,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una operación pequeña con tensores y comprueba el dispositivo antes de entrenar
 **Qué comprobar:** Puedes verificar versión y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `mediapipe`, `marimo`
 
 ## `timesfm`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,analytics,python
@@ -332,7 +336,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pronostica un tramo reservado de una serie de ejemplo y compáralo con datos que no diste al modelo
 **Qué comprobar:** Puedes medir error fuera de la muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `polars`, `duckdb`
+**Combina con:** `polars`, `duckdb`, `pytorch`
 
 ## `transformers`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=training,inference,python
@@ -423,5 +427,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un modelo pequeño compatible y prueba una pregunta conocida antes de iniciar fine-tuning
 **Qué comprobar:** Puedes identificar modelo, formato y memoria utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `trl`
+**Combina con:** `trl`, `ollama`, `llama-cpp`, `claude-code`
 **Alternativas (elige una):** `llama-factory`

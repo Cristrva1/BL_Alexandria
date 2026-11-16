@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+PyTorch, framework de deep learning con tensores acelerados por GPU y autograd dinámico, gobernado por la PyTorch Foundation (Linux Foundation). Licencia de estilo BSD (GitHub muestra NOASSERTION). Es muy madura (~106k estrellas, v2.15.0).
+
+## ¿Qué hace?
+
+Ofrece cálculo de tensores tipo NumPy en GPU, redes neuronales con autograd basado en cinta, ejecución imperativa y compilación (`torch.compile`). Es la base de la mayoría de librerías modernas de modelos.
+
+## ¿Cómo lo hace?
+
+Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o CPU en pytorch.org) o desde el código fuente. Soporta GPU NVIDIA (CUDA), AMD (ROCm), Intel y Jetson.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | Modelos preentrenados sobre PyTorch. | Instala PyTorch y luego Transformers. |
+| [diffusers](diffusers.md) | Modelos de difusión sobre PyTorch. | Instala Diffusers. |
+| [vLLM](vllm.md) | Inferencia en producción construida sobre PyTorch. | Instala vLLM con la versión de PyTorch compatible. |
+
+**Notas:** Sin alternativas declaradas; compite con tensorflow (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pytorch/pytorch/blob/main/README.md) · [2](https://pytorch.org/get-started/locally/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Para principiantes conviene instalar un binario compatible; los comandos de compilar todo el repositorio son para desarrollo del framework |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de IA para cómputo propio; hardware y nube se pagan aparte |
 | Equipo | Preparación según la ruta elegida. Python compatible; paquete para CPU o tu GPU; entorno aislado |
-
-Para principiantes conviene instalar un binario compatible; los comandos de compilar todo el repositorio son para desarrollo del framework
-
-## Qué puedes hacer con él
-
-Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.
-
-## Por qué destaca
-
-Usos propuestos: Aprender tensores; Entrenar una red educativa.
-
-## Cómo funciona
 
 Para principiantes conviene instalar un binario compatible; los comandos de compilar todo el repositorio son para desarrollo del framework
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python compatible; paquete para CPU o tu GPU; entorno aislado
 - **Etiquetas:** `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
 
 ## Enlaces
 

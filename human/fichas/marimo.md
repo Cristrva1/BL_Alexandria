@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+marimo, notebook reactivo de Python que se guarda como script `.py`, de marimo-team. Licencia Apache-2.0. Es maduro y activo (~24k estrellas, 0.25.2).
+
+## ¿Qué hace?
+
+Al ejecutar una celda se actualizan automáticamente las dependientes, sin estado oculto. Los notebooks se versionan en Git, se ejecutan como scripts y se publican como apps web o diapositivas; incluye celdas SQL, elementos de UI interactivos y asistencia con IA.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install marimo` o conda (`marimo tutorial intro` para empezar). Puede instalar paquetes al importarlos, guardar dependencias inline en el archivo y usarse desde una extensión de VS Code o en WebAssembly.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Celdas SQL nativas. | Instala DuckDB en el entorno. |
+| [Polars](polars.md) | DataFrames con visualización interactiva. | Instala Polars. |
+| [Ollama](ollama.md) | Modelo local para el asistente de IA del editor. (combinación por arquitectura) | Configura el proveedor de IA de marimo apuntando a Ollama. |
+
+**Notas:** Sin alternativas declaradas; compite con Jupyter (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.25.2 (2026-10-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/marimo-team/marimo/blob/main/README.md) · [2](https://docs.marimo.io/guides/apps.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local |
 | Coste | El coste depende del proveedor o la ruta. Notebook básico sin API; AI opcional con claves o modelos locales y marimo pair con su agente |
 | Equipo | Preparación según la ruta elegida. Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI |
-
-Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local
-
-## Qué puedes hacer con él
-
-Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.
-
-## Por qué destaca
-
-Usos propuestos: Explorar datos en un notebook; Convertir un análisis en una app.
-
-## Cómo funciona
 
 Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI
 - **Etiquetas:** `notebooks` `data` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
-| [Polars](polars.md) | 40.3k | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Enlaces
 
