@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+OpenSolBot, bot de trading en la cadena Solana, de ChainBuff. Licencia Apache-2.0. Es pequeño (~400 estrellas, v0.2.1) y su último cambio es de diciembre de 2025; su README está en chino.
+
+## ¿Qué hace?
+
+Ofrece copy trading (seguir carteras) y trading automático en Solana, inspirado en GMGN Bot, con las claves privadas bajo tu control. El propio autor lo describe como práctica para aprendizaje, no apta para producción.
+
+## ¿Cómo lo hace?
+
+Se despliega con Docker o Podman Compose y se configura con una wallet y un RPC de Solana.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AutoHedge](autohedge.md) | Comparar con agentes autónomos que también operan en Solana. (combinación por arquitectura) | Evalúa ambos solo en entornos de prueba. |
+| [Grafana](grafana.md) | Monitorizar operaciones y saldos. (combinación por arquitectura) | Exporta métricas a una base y crea paneles. |
+| [n8n](n8n.md) | Avisos de operaciones. (combinación por arquitectura) | Envía eventos a n8n por webhook. |
+
+**Notas:** Sin alternativas declaradas. No apto para producción, según su autor. Riesgo muy alto con claves privadas. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2025-12-21 · última versión publicada v0.2.1 (2025-05-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ChainBuff/open-sol-bot/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas |
 | Coste | El coste depende del proveedor o la ruta. No necesita LLM; RPC, red y operaciones pueden cobrar; las claves de wallet son distintas de una API de IA |
 | Equipo | Preparación según la ruta elegida. Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones |
-
-Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas
-
-## Qué puedes hacer con él
-
-Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain.
-
-## Cómo funciona
 
 Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas
 

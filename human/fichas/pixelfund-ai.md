@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+PixelFund AI, simulador bursátil en pixel art con agentes de IA especializados, de @kyjwang. Licencia MIT. Es una demo muy pequeña (~6 estrellas) con último cambio en junio de 2026.
+
+## ¿Qué hace?
+
+Ofrece una oficina pixel art, cotizaciones en tiempo real, cuentas de simulación aisladas por navegador y operaciones con cartera virtual asistidas por agentes.
+
+## ¿Cómo lo hace?
+
+Es una app web Node con API separada que requiere PostgreSQL y Redis (con Docker o en local).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [TradingAgents](tradingagents.md) | Lógica de análisis multiagente más completa. (combinación por arquitectura) | Integra sus decisiones en el simulador. |
+| [dexter](dexter.md) | Investigación financiera para los agentes. (combinación por arquitectura) | Usa Dexter como fuente de análisis. |
+| [Ollama](ollama.md) | Modelos locales para los agentes. (combinación por arquitectura) | Configura un endpoint local si la app lo permite. |
+
+**Notas:** Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima.
+
+Estado en GitHub: activo · último push 2026-06-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kyjwang/PixelFund-AI/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento |
 | Coste | El coste depende del proveedor o la ruta. La interfaz no obliga a modelo; análisis necesita proveedor AI y datos Finnhub para ciertas funciones; consumo y cupos son externos |
 | Equipo | Preparación según la ruta elegida. Node >=20; npm >=10; Docker o PostgreSQL y Redis; claves opcionales según función |
-
-La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento
-
-## Qué puedes hacer con él
-
-Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión.
-
-## Cómo funciona
 
 La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento
 

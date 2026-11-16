@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Autonomous Trading HQ, visualización en pixel art de un «equipo de trading» de 6 agentes sobre Polymarket Perps, de @ATK-zk. Licencia MIT (con sprites de pixel-agents, MIT). Es una demo muy pequeña (~4 estrellas).
+
+## ¿Qué hace?
+
+Muestra en una oficina pixel art en vivo los roles del equipo (líder, quant, crítico, riesgo, scout y operaciones), con reglas como un límite de pérdida diaria del 15 % y un informe diario.
+
+## ¿Cómo lo hace?
+
+Es una página web estática publicada en GitHub Pages; el motor de trading no se documenta en el repo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [py-sdk](py-sdk.md) | SDK oficial de Polymarket para el motor que se visualiza. (combinación por arquitectura) | Usa el SDK en el backend y la oficina como panel. |
+| [TradingAgents](tradingagents.md) | Patrón de roles multiagente similar. (combinación por arquitectura) | Compara la división de roles. |
+| [Claude Code](claude-code.md) | Agentes que podrían ocupar los roles. (combinación por arquitectura) | Asigna cada rol a un agente con límites claros. |
+
+**Notas:** Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima.
+
+Estado en GitHub: activo · último push 2026-10-13 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ATK-zk/company-pixel-office/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una representación de una mesa de trabajo; ver personajes activos no prueba operaciones ni agentes financieros funcionando |
 | Coste | Sin pago a un modelo en la ruta básica. La demo estática no requiere modelo; assets y datos externos mantienen sus licencias |
 | Equipo | Preparación según la ruta elegida. Navegador; servidor estático si ejecutas la fuente |
-
-Es una representación de una mesa de trabajo; ver personajes activos no prueba operaciones ni agentes financieros funcionando
-
-## Qué puedes hacer con él
-
-Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo.
-
-## Cómo funciona
 
 Es una representación de una mesa de trabajo; ver personajes activos no prueba operaciones ni agentes financieros funcionando
 

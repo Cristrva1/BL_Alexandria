@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Código de *Machine Learning for Trading* (3.ª edición) de Stefan Jansen: 27 capítulos y nueve casos de estudio. El código es MIT; el contenido del libro está protegido. Es muy popular (~22k estrellas, v3.1.0-artifacts).
+
+## ¿Qué hace?
+
+Recorre de principio a fin cómo una idea de investigación se convierte en una estrategia operable: obtención de datos, factores, modelos de ML y deep learning, backtesting, ejecución y monitorización. La 2.ª edición sigue disponible en la rama `second-edition`.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con Docker Compose (`docker compose pull ml4t`) y un script de verificación, o con un entorno local. Algunos capítulos requieren cómputo considerable o datos con licencia (atribución a algoseek).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [qlib](qlib.md) | Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura) | Reproduce un caso de estudio en Qlib. |
+| [vectorbt](vectorbt.md) | Backtesting vectorizado de las señales del libro. (combinación por arquitectura) | Porta las señales a vectorbt. |
+| [marimo](marimo.md) | Notebooks reactivos para los ejercicios. (combinación por arquitectura) | Convierte notebooks a marimo si lo prefieres. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.1.0-artifacts (2026-09-20) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible |
 | Coste | El coste depende del proveedor o la ruta. Material abierto no significa libro, datasets, cómputo o proveedores gratis; comienza con conjuntos gratuitos |
 | Equipo | Preparación según la ruta elegida. Docker o entorno del capítulo; datasets; cuaderno elegido |
-
-Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible
-
-## Qué puedes hacer con él
-
-Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.
-
-## Por qué destaca
-
-Usos propuestos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest.
-
-## Cómo funciona
 
 Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible
 

@@ -45845,7 +45845,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El panel generado no verifica por sí solo la exactitud financiera; una ejecución programada necesita infraestructura aunque tenga cupo gratuito",
    "combines_with": [
-    "n8n"
+    "ollama",
+    "n8n",
+    "litellm"
    ],
    "alternatives": [],
    "repo": "https://github.com/ZhuLinsen/daily_stock_analysis",
@@ -45941,7 +45943,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Sistema de análisis inteligente de acciones con LLM (股票智能分析系统), de @ZhuLinsen. Licencia MIT. Es muy popular (~73k estrellas, v3.34.0) y su README, principalmente en chino, incluye patrocinios de proveedores de modelos.",
+   "que_hace": "Analiza cada día una lista de acciones de los mercados A, Hong Kong, EE. UU., Japón, Corea y Taiwán y envía un «panel de decisión» por WeCom, Feishu, Telegram, Discord, Slack o email. Combina datos de mercado, noticias e indicadores con un LLM.",
+   "como_lo_hace": "Se ejecuta con GitHub Actions (sin servidor), Docker, tareas programadas locales o un servicio FastAPI, instalando con `pip install -r requirements.txt`. Usa cualquier API compatible con OpenAI (DeepSeek, Qwen…) y Ollama para despliegues locales o en Docker.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales recomendados para despliegues locales o Docker.",
+     "orden_instalacion": "Arranca Ollama y configura su URL."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Encadenar el informe con otros flujos o avisos. (combinación por arquitectura)",
+     "orden_instalacion": "Recibe el informe por webhook o email en n8n."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Centralizar proveedores compatibles con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta `OPENAI_API_KEY`/base URL al proxy LiteLLM."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ZhuLinsen/daily_stock_analysis",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v3.34.0 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-dataviz": {
    "name": "awesome-dataviz",
@@ -62790,7 +62831,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Su comparación con Claude Code describe una experiencia de agente; no documenta que use el plan de Claude Code",
-   "combines_with": [],
+   "combines_with": [
+    "ollama",
+    "tradingagents",
+    "langfuse"
+   ],
    "alternatives": [],
    "repo": "https://github.com/virattt/dexter",
    "homepage": "",
@@ -62889,7 +62934,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Dexter, agente autónomo de investigación financiera de @virattt. El README declara MIT, pero GitHub no detecta licencia. Es popular (~28k estrellas, v1.1.0).",
+   "que_hace": "Planifica tareas, se autoevalúa y consulta datos de mercado en tiempo real para responder preguntas de investigación financiera (estados financieros, métricas, noticias). Se presenta como un «Claude Code para finanzas». Incluye evaluación, depuración y uso por WhatsApp.",
+   "como_lo_hace": "Requiere el runtime Bun, una clave de OpenAI y una de Financial Datasets API (Exa opcional para búsqueda web); admite Ollama en local. Se ejecuta desde la terminal.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales configurables con `OLLAMA_BASE_URL`.",
+     "orden_instalacion": "Arranca Ollama y define la variable."
+    },
+    {
+     "id": "tradingagents",
+     "motivo": "Complementar la investigación con un debate multiagente de decisiones. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Dexter para investigar y TradingAgents para contrastar."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazar las llamadas del agente. (combinación por arquitectura)",
+     "orden_instalacion": "Instrumenta las llamadas de LLM con Langfuse."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Depende de APIs de datos de pago. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/virattt/dexter/blob/main/README.md",
+    "https://financialdatasets.ai"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "virattt/dexter",
+    "archived": false,
+    "pushed_at": "2026-09-23",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.1.0 (2026-09-23)",
+    "checked_at": "2026-11-15"
+   }
   },
   "metagpt": {
    "name": "MetaGPT",
@@ -63389,7 +63473,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada",
-   "combines_with": [],
+   "combines_with": [
+    "ccxt",
+    "langgraph",
+    "vectorbt"
+   ],
    "alternatives": [],
    "repo": "https://github.com/The-Swarm-Corporation/AutoHedge",
    "homepage": "https://swarms.xyz/",
@@ -63489,7 +63577,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "AutoHedge, «fondo de cobertura autónomo» de agentes de The Swarm Corporation. Licencia MIT. Tiene ~7k estrellas (sin releases) y su último cambio es de mayo de 2026.",
+   "que_hace": "Combina agentes especializados (análisis de mercado, tesis, riesgo, ejecución) construidos con el framework Swarms para analizar y operar de forma continua. Por ahora solo opera de forma autónoma en Solana; Coinbase y otros exchanges están anunciados como «próximamente».",
+   "como_lo_hace": "Se instala con `pip install -U autohedge` y se configura con claves de LLM y una clave privada de wallet (`WALLET_PRIVATE_KEY`). El README lo califica de «enterprise-grade», calificación que no se pudo comprobar.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "Obtener datos de mercado de exchanges centralizados para análisis. (combinación por arquitectura)",
+     "orden_instalacion": "Usa CCXT en un módulo de datos aparte."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Reimplementar el flujo de agentes con control explícito de estados. (combinación por arquitectura)",
+     "orden_instalacion": "Compara con un grafo propio en LangGraph."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Validar las tesis con backtesting antes de operar. (combinación por arquitectura)",
+     "orden_instalacion": "Backtestea la lógica en vectorbt."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Riesgo muy alto: opera con una clave privada real de forma autónoma. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/The-Swarm-Corporation/AutoHedge/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "The-Swarm-Corporation/AutoHedge",
+    "archived": false,
+    "pushed_at": "2026-05-11",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "camofox-browser": {
    "name": "camofox-browser",
@@ -63630,7 +63756,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales",
-   "combines_with": [],
+   "combines_with": [
+    "ollama",
+    "qlib",
+    "ccxt"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Fincept-Corporation/FinceptTerminal",
    "homepage": "https://fincept.in",
@@ -63729,7 +63859,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Fincept Terminal, terminal nativo de escritorio para investigación financiera, de Fincept Corporation. Licencia AGPL-3.0 o posterior, con una edición Enterprise propietaria de pago. Es popular (~34k estrellas, v4.5.2).",
+   "que_hace": "Reúne datos de mercado, investigación, paneles, carteras, análisis cuantitativo y 37 agentes de IA (traders, economía, geopolítica) con tu propia clave (OpenAI, Anthropic, Gemini, Groq, DeepSeek, OpenRouter, Ollama). Incluye un editor visual de nodos, herramientas MCP y un laboratorio de quant (ML, factores, RL).",
+   "como_lo_hace": "Es un binario C++20 con interfaz Qt6 y Python 3.11 embebido, sin Electron; se descarga desde las releases. Cada fuente de datos tiene sus propias condiciones, que normalmente limitan su uso al personal.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local soportado para los agentes.",
+     "orden_instalacion": "Configura Ollama en los ajustes de IA."
+    },
+    {
+     "id": "qlib",
+     "motivo": "Investigación cuantitativa más profunda fuera del terminal. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta datos y modela con Qlib."
+    },
+    {
+     "id": "ccxt",
+     "motivo": "Datos de cripto adicionales. (combinación por arquitectura)",
+     "orden_instalacion": "Usa CCXT para fuentes no integradas."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. El README se centra en vender la edición Enterprise. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Fincept-Corporation/FinceptTerminal",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "AGPL-3.0",
+    "primary_language": "C++",
+    "latest_release": "v4.5.2 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
   },
   "claude-token-efficient": {
    "name": "claude-token-efficient",
@@ -64398,7 +64567,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo",
-   "combines_with": [],
+   "combines_with": [
+    "langgraph",
+    "langchain",
+    "tradingagents"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Y-Research-SBU/QuantHarness",
    "homepage": "",
@@ -64499,7 +64672,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "QuantHarness, sistema multiagente con LLM para trading de alta frecuencia guiado por precios, de investigadores de Stony Brook, CMU, UBC, Yale y Fudan. Licencia MIT. Es un prototipo de investigación (~3k estrellas, sin releases) con último cambio en agosto de 2026.",
+   "que_hace": "Combina indicadores técnicos, reconocimiento de patrones en gráficos y análisis de tendencia con agentes de LangChain y LangGraph, y ofrece interfaz web. Los agentes generan y analizan gráficos, por lo que requiere un LLM con entrada de imágenes.",
+   "como_lo_hace": "Se instala con `pip install -r requirements.txt` y se configuran claves de un LLM multimodal y de datos de mercado.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Framework de orquestación de los agentes.",
+     "orden_instalacion": "Viene en las dependencias."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Componentes de LLM y herramientas.",
+     "orden_instalacion": "Viene en las dependencias."
+    },
+    {
+     "id": "tradingagents",
+     "motivo": "Comparar con otro framework multiagente de trading. (combinación por arquitectura)",
+     "orden_instalacion": "Evalúa ambos con los mismos activos."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/Y-Research-SBU/QuantHarness/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Y-Research-SBU/QuantHarness",
+    "archived": false,
+    "pushed_at": "2026-08-18",
+    "license": "MIT",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-15"
+   }
   },
   "agent-browser": {
    "name": "agent-browser",
@@ -65472,7 +65683,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible",
-   "combines_with": [],
+   "combines_with": [
+    "qlib",
+    "vectorbt",
+    "marimo"
+   ],
    "alternatives": [],
    "repo": "https://github.com/stefan-jansen/machine-learning-for-trading",
    "homepage": "https://ml4trading.io",
@@ -65571,7 +65786,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Código de *Machine Learning for Trading* (3.ª edición) de Stefan Jansen: 27 capítulos y nueve casos de estudio. El código es MIT; el contenido del libro está protegido. Es muy popular (~22k estrellas, v3.1.0-artifacts).",
+   "que_hace": "Recorre de principio a fin cómo una idea de investigación se convierte en una estrategia operable: obtención de datos, factores, modelos de ML y deep learning, backtesting, ejecución y monitorización. La 2.ª edición sigue disponible en la rama `second-edition`.",
+   "como_lo_hace": "Se ejecuta con Docker Compose (`docker compose pull ml4t`) y un script de verificación, o con un entorno local. Algunos capítulos requieren cómputo considerable o datos con licencia (atribución a algoseek).",
+   "combina_con": [
+    {
+     "id": "qlib",
+     "motivo": "Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura)",
+     "orden_instalacion": "Reproduce un caso de estudio en Qlib."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Backtesting vectorizado de las señales del libro. (combinación por arquitectura)",
+     "orden_instalacion": "Porta las señales a vectorbt."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Notebooks reactivos para los ejercicios. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte notebooks a marimo si lo prefieres."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "stefan-jansen/machine-learning-for-trading",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "latest_release": "v3.1.0-artifacts (2026-09-20)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-machine-learning": {
    "name": "awesome-machine-learning",
@@ -65865,7 +66119,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas",
-   "combines_with": [],
+   "combines_with": [
+    "autohedge",
+    "grafana",
+    "n8n"
+   ],
    "alternatives": [],
    "repo": "https://github.com/ChainBuff/open-sol-bot",
    "homepage": "",
@@ -65964,7 +66222,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "OpenSolBot, bot de trading en la cadena Solana, de ChainBuff. Licencia Apache-2.0. Es pequeño (~400 estrellas, v0.2.1) y su último cambio es de diciembre de 2025; su README está en chino.",
+   "que_hace": "Ofrece copy trading (seguir carteras) y trading automático en Solana, inspirado en GMGN Bot, con las claves privadas bajo tu control. El propio autor lo describe como práctica para aprendizaje, no apta para producción.",
+   "como_lo_hace": "Se despliega con Docker o Podman Compose y se configura con una wallet y un RPC de Solana.",
+   "combina_con": [
+    {
+     "id": "autohedge",
+     "motivo": "Comparar con agentes autónomos que también operan en Solana. (combinación por arquitectura)",
+     "orden_instalacion": "Evalúa ambos solo en entornos de prueba."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Monitorizar operaciones y saldos. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta métricas a una base y crea paneles."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Avisos de operaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Envía eventos a n8n por webhook."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. No apto para producción, según su autor. Riesgo muy alto con claves privadas. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/ChainBuff/open-sol-bot/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ChainBuff/open-sol-bot",
+    "archived": false,
+    "pushed_at": "2025-12-21",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.2.1 (2025-05-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "binance-trader": {
    "name": "binance-trader",
@@ -65983,7 +66280,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Bot experimental con documentación antigua; no se confirma que sus endpoints funcionen hoy ni que tenga una simulación completa",
-   "combines_with": [],
+   "combines_with": [
+    "ccxt",
+    "freqtrade",
+    "vectorbt"
+   ],
    "alternatives": [],
    "repo": "https://github.com/yasinkuyu/binance-trader",
    "homepage": "",
@@ -66081,7 +66382,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Binance Trader, bot experimental de Python para operar en Binance, de @yasinkuyu. El README declara MIT pero el repo no tiene archivo de licencia que GitHub detecte. Tiene ~3k estrellas y su última versión (v1.1.0) es de enero de 2026.",
+   "que_hace": "Automatiza compras y ventas con una estrategia sencilla basada en márgenes sobre pares de Binance. La v1.1.0 corrige errores antiguos de órdenes, precisión de lotes y concurrencia.",
+   "como_lo_hace": "Es un script de Python con dependencias mínimas (`requests`) y una imagen Docker. Requiere claves de API de Binance.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "Migrar a una librería de exchanges mantenida y multiplataforma. (combinación por arquitectura)",
+     "orden_instalacion": "Reescribe las llamadas con CCXT."
+    },
+    {
+     "id": "freqtrade",
+     "motivo": "Alternativa madura con backtesting y dry-run. (combinación por arquitectura)",
+     "orden_instalacion": "Prueba la estrategia en Freqtrade en dry-run."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Evaluar la estrategia con datos históricos. (combinación por arquitectura)",
+     "orden_instalacion": "Backtestea antes de usar dinero real."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Proyecto experimental. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/yasinkuyu/binance-trader/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "yasinkuyu/binance-trader",
+    "archived": false,
+    "pushed_at": "2026-01-03",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "data-analyst-roadmap": {
    "name": "data-analyst-roadmap",
@@ -66258,7 +66596,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar debate entre agentes financieros; Comparar proveedores sobre la misma muestra histórica",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La investigación multiagente no equivale a rentabilidad validada ni a un motor listo para operar capital",
-   "combines_with": [],
+   "combines_with": [
+    "langgraph",
+    "ollama",
+    "dexter"
+   ],
    "alternatives": [],
    "repo": "https://github.com/TauricResearch/TradingAgents",
    "homepage": "https://tauric.ai",
@@ -66359,7 +66701,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "TradingAgents, framework multiagente con LLM para trading financiero, de Tauric Research. Licencia Apache-2.0. Es muy popular (~123k estrellas, v0.7.1) y su README promociona Trading-R1, en acceso anticipado.",
+   "que_hace": "Simula una firma de trading con analistas (fundamental, sentimiento, noticias, técnico), investigadores alcista y bajista que debaten, un trader, gestión de riesgo y gestor de cartera. Puntúa las decisiones sobre cierres reales y evita datos posteriores a la fecha simulada.",
+   "como_lo_hace": "Está construido con LangGraph (con reanudación por checkpoints) y se instala con `uv pip install .` o con Docker Compose, con perfil para Ollama. Admite muchos proveedores de LLM, incluida una suscripción de ChatGPT.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Framework sobre el que está construido.",
+     "orden_instalacion": "Viene en las dependencias."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Perfil de Docker Compose para modelos locales.",
+     "orden_instalacion": "Ejecuta `docker compose --profile ollama run --rm tradingagents-ollama`."
+    },
+    {
+     "id": "dexter",
+     "motivo": "Investigación financiera previa con otro agente. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa los hallazgos de Dexter como contexto."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Herramienta de investigación. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/TauricResearch/TradingAgents/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "TauricResearch/TradingAgents",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.7.1 (2026-10-27)",
+    "checked_at": "2026-11-15"
+   }
   },
   "chatgpt-system-prompt": {
    "name": "chatgpt_system_prompt",
@@ -68556,7 +68937,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El autor enlaza FinRL-X como evolución; mantén versiones y documentación correspondientes a este repositorio",
-   "combines_with": [],
+   "combines_with": [
+    "qlib",
+    "machine-learning-for-trading",
+    "vectorbt"
+   ],
    "alternatives": [],
    "repo": "https://github.com/AI4Finance-Foundation/FinRL",
    "homepage": "https://finrl.ai",
@@ -68658,7 +69043,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "FinRL, el framework open source de aprendizaje por refuerzo para finanzas, de AI4Finance Foundation. Licencia MIT; la marca FinRL pertenece a FinRL LLC. Es maduro (~17k estrellas, v0.3.8) y su sucesor orientado a producción es FinRL-X (repositorio FinRL-Trading).",
+   "que_hace": "Ofrece un flujo educativo y de investigación completo: entornos de mercado, agentes de RL profundo (A2C, DDPG, PPO, TD3, SAC) y backtesting. Se apoya en librerías como Stable Baselines 3 y ElegantRL.",
+   "como_lo_hace": "Se instala con `pip install -e .` desde el código. Para desarrollo nuevo o trading en vivo, el README recomienda FinRL-X.",
+   "combina_con": [
+    {
+     "id": "qlib",
+     "motivo": "Comparar con investigación cuantitativa basada en ML. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los mismos datos en ambos."
+    },
+    {
+     "id": "machine-learning-for-trading",
+     "motivo": "Base teórica y práctica complementaria. (combinación por arquitectura)",
+     "orden_instalacion": "Estudia los capítulos de RL del libro."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Validar las políticas aprendidas con otro backtester. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta las señales a vectorbt."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Uso académico: no es asesoramiento financiero.",
+   "descripcion_fuentes": [
+    "https://github.com/AI4Finance-Foundation/FinRL/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "AI4Finance-Foundation/FinRL",
+    "archived": false,
+    "pushed_at": "2026-11-03",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "latest_release": "v0.3.8 (2026-03-20)",
+    "checked_at": "2026-11-15"
+   }
   },
   "huashu-motion": {
    "name": "huashu-motion",
@@ -69893,7 +70317,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una representación de una mesa de trabajo; ver personajes activos no prueba operaciones ni agentes financieros funcionando",
-   "combines_with": [],
+   "combines_with": [
+    "py-sdk",
+    "tradingagents",
+    "claude-code"
+   ],
    "alternatives": [],
    "repo": "https://github.com/ATK-zk/company-pixel-office",
    "homepage": null,
@@ -69993,7 +70421,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Autonomous Trading HQ, visualización en pixel art de un «equipo de trading» de 6 agentes sobre Polymarket Perps, de @ATK-zk. Licencia MIT (con sprites de pixel-agents, MIT). Es una demo muy pequeña (~4 estrellas).",
+   "que_hace": "Muestra en una oficina pixel art en vivo los roles del equipo (líder, quant, crítico, riesgo, scout y operaciones), con reglas como un límite de pérdida diaria del 15 % y un informe diario.",
+   "como_lo_hace": "Es una página web estática publicada en GitHub Pages; el motor de trading no se documenta en el repo.",
+   "combina_con": [
+    {
+     "id": "py-sdk",
+     "motivo": "SDK oficial de Polymarket para el motor que se visualiza. (combinación por arquitectura)",
+     "orden_instalacion": "Usa el SDK en el backend y la oficina como panel."
+    },
+    {
+     "id": "tradingagents",
+     "motivo": "Patrón de roles multiagente similar. (combinación por arquitectura)",
+     "orden_instalacion": "Compara la división de roles."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agentes que podrían ocupar los roles. (combinación por arquitectura)",
+     "orden_instalacion": "Asigna cada rol a un agente con límites claros."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima.",
+   "descripcion_fuentes": [
+    "https://github.com/ATK-zk/company-pixel-office/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ATK-zk/company-pixel-office",
+    "archived": false,
+    "pushed_at": "2026-10-13",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "i-have-adhd": {
    "name": "i-have-adhd",
@@ -76498,7 +76964,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "openclaw",
+    "vectorbt"
+   ],
    "alternatives": [],
    "repo": "https://github.com/HKUDS/Vibe-Trading",
    "homepage": "https://vibetrading.wiki/",
@@ -76602,7 +77072,46 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Vibe-Trading, agente personal de investigación de trading de la organización HKUDS. Licencia MIT. Es muy activo (~38k estrellas, v0.1.19).",
+   "que_hace": "Da a tu agente capacidades de investigación y trading: datos de mercado, skills de análisis, backtesting con costes y pruebas fuera de muestra, laboratorio de investigación, paper trading (incluidas sesiones de acciones A en pasos de cinco minutos) y una «cuenta sombra». Ofrece web, CLI, API y servidor MCP.",
+   "como_lo_hace": "Se instala con `pip install vibe-trading-ai`, que incluye CLI, API y el servidor MCP `vibe-trading-mcp`. Hay app de escritorio con actualizaciones firmadas.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Servidor MCP por stdio (`vibe-trading-mcp`).",
+     "orden_instalacion": "Añade el servidor MCP y llama a `list_skills`."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Documentación de pruebas MCP con OpenClaw.",
+     "orden_instalacion": "Configura el MCP en OpenClaw."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Contrastar los backtests con otro motor. (combinación por arquitectura)",
+     "orden_instalacion": "Reproduce la estrategia en vectorbt."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/HKUDS/Vibe-Trading/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "HKUDS/Vibe-Trading",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.1.19 (2026-11-05)",
+    "checked_at": "2026-11-15"
+   }
   },
   "home-assistant": {
    "name": "Home Assistant",
@@ -77992,7 +78501,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La producción no usa el fallback SAMPLE de desarrollo; los errores o datos ausentes deben permanecer visibles",
-   "combines_with": [],
+   "combines_with": [
+    "ccxt",
+    "tradingagents",
+    "claude-code"
+   ],
    "alternatives": [],
    "repo": "https://github.com/jaypolanco96/pixel-hedge-fund",
    "homepage": "https://pixel-hf.vercel.app",
@@ -78095,7 +78608,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Pixel Hedge Fund, «oficina viva» en pixel art de un fondo de los 90 hecha con SvelteKit, de @jaypolanco96. El repo no declara licencia. Es una demo muy pequeña (~5 estrellas).",
+   "que_hace": "Representa una oficina de trading animada donde un escritorio de análisis técnico dirige el comportamiento de los personajes, con temas visuales y rutas que se conectan a la API de BloFin.",
+   "como_lo_hace": "Se ejecuta con `npm install` y `npm run dev`. El README advierte de no exponer el servidor de desarrollo a la red si la máquina guarda `.env.local` o `.secrets/`, porque las rutas `/api/blofin/*` usan credenciales.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "Datos de mercado normalizados en lugar de una sola API. (combinación por arquitectura)",
+     "orden_instalacion": "Sustituye las llamadas por CCXT."
+    },
+    {
+     "id": "tradingagents",
+     "motivo": "Lógica de decisión multiagente detrás de la escena. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta las decisiones a la oficina."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Personalizar la demo con un agente. (combinación por arquitectura)",
+     "orden_instalacion": "Pide cambios al agente en un entorno sin credenciales."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima y sin licencia.",
+   "descripcion_fuentes": [
+    "https://github.com/jaypolanco96/pixel-hedge-fund/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "jaypolanco96/pixel-hedge-fund",
+    "archived": false,
+    "pushed_at": "2026-10-08",
+    "primary_language": "Svelte",
+    "checked_at": "2026-11-15"
+   }
   },
   "ai-website-cloner-template": {
    "name": "ai-website-cloner-template",
@@ -80168,7 +80718,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento",
-   "combines_with": [],
+   "combines_with": [
+    "tradingagents",
+    "dexter",
+    "ollama"
+   ],
    "alternatives": [],
    "repo": "https://github.com/kyjwang/PixelFund-AI",
    "homepage": "https://pixelfund-ai.vercel.app",
@@ -80274,7 +80828,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "PixelFund AI, simulador bursátil en pixel art con agentes de IA especializados, de @kyjwang. Licencia MIT. Es una demo muy pequeña (~6 estrellas) con último cambio en junio de 2026.",
+   "que_hace": "Ofrece una oficina pixel art, cotizaciones en tiempo real, cuentas de simulación aisladas por navegador y operaciones con cartera virtual asistidas por agentes.",
+   "como_lo_hace": "Es una app web Node con API separada que requiere PostgreSQL y Redis (con Docker o en local).",
+   "combina_con": [
+    {
+     "id": "tradingagents",
+     "motivo": "Lógica de análisis multiagente más completa. (combinación por arquitectura)",
+     "orden_instalacion": "Integra sus decisiones en el simulador."
+    },
+    {
+     "id": "dexter",
+     "motivo": "Investigación financiera para los agentes. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Dexter como fuente de análisis."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para los agentes. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un endpoint local si la app lo permite."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima.",
+   "descripcion_fuentes": [
+    "https://github.com/kyjwang/PixelFund-AI/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "kyjwang/PixelFund-AI",
+    "archived": false,
+    "pushed_at": "2026-06-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "openidea": {
    "name": "openidea",
@@ -86799,7 +87391,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados",
-   "combines_with": [],
+   "combines_with": [
+    "ccxt",
+    "company-pixel-office",
+    "n8n"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Polymarket/py-sdk",
    "homepage": null,
@@ -86900,7 +87496,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "SDK oficial de Polymarket para Python (`polymarket-client`). Licencia MIT. Es reciente y pequeño (~150 estrellas, polymarket-client-v0.18.0).",
+   "que_hace": "Ofrece una interfaz unificada para datos públicos, cuenta autenticada, trading, atribución de builders y operaciones de wallet en Polymarket, con clientes síncrono y asíncrono.",
+   "como_lo_hace": "Se instala con `uv add polymarket-client` o `pip install polymarket-client`. Operar requiere wallet y credenciales; revisa si Polymarket está permitido en tu jurisdicción.",
+   "combina_con": [
+    {
+     "id": "ccxt",
+     "motivo": "CCXT también cubre mercados de predicción. (combinación por arquitectura)",
+     "orden_instalacion": "Compara cobertura antes de elegir."
+    },
+    {
+     "id": "company-pixel-office",
+     "motivo": "Visualizar un equipo de agentes que opera en Polymarket. (combinación por arquitectura)",
+     "orden_instalacion": "Alimenta la oficina con datos del SDK."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Alertas de mercados o posiciones. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta scripts del SDK y envía resultados a n8n."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.",
+   "descripcion_fuentes": [
+    "https://github.com/Polymarket/py-sdk/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "31-trading-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Polymarket/py-sdk",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "polymarket-client-v0.18.0 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
   },
   "bla": {
    "name": "bla",

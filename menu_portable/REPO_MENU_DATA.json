@@ -44909,7 +44909,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ccxt",
+        "langgraph",
+        "vectorbt"
+      ],
       "alt": []
     },
     {
@@ -45025,7 +45029,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ccxt",
+        "freqtrade",
+        "vectorbt"
+      ],
       "alt": []
     },
     {
@@ -45254,7 +45262,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "py-sdk",
+        "tradingagents",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -45373,7 +45385,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un resumen de investigación; Comparar noticias y datos de una lista de seguimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "ollama",
+        "n8n",
+        "litellm"
       ],
       "alt": []
     },
@@ -45486,7 +45500,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "tradingagents",
+        "langfuse"
+      ],
       "alt": []
     },
     {
@@ -45605,7 +45623,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "qlib",
+        "ccxt"
+      ],
       "alt": []
     },
     {
@@ -45721,7 +45743,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "qlib",
+        "machine-learning-for-trading",
+        "vectorbt"
+      ],
       "alt": []
     },
     {
@@ -46197,7 +46223,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "qlib",
+        "vectorbt",
+        "marimo"
+      ],
       "alt": []
     },
     {
@@ -46429,7 +46459,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "autohedge",
+        "grafana",
+        "n8n"
+      ],
       "alt": []
     },
     {
@@ -46542,7 +46576,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ccxt",
+        "tradingagents",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -46659,7 +46697,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "tradingagents",
+        "dexter",
+        "ollama"
+      ],
       "alt": []
     },
     {
@@ -46771,7 +46813,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ccxt",
+        "company-pixel-office",
+        "n8n"
+      ],
       "alt": []
     },
     {
@@ -47010,7 +47056,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "langgraph",
+        "langchain",
+        "tradingagents"
+      ],
       "alt": []
     },
     {
@@ -47129,7 +47179,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar debate entre agentes financieros; Comparar proveedores sobre la misma muestra histórica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "langgraph",
+        "ollama",
+        "dexter"
+      ],
       "alt": []
     },
     {
@@ -47366,7 +47420,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "openclaw",
+        "vectorbt"
+      ],
       "alt": []
     },
     {

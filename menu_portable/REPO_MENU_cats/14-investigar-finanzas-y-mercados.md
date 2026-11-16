@@ -31,6 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa la configuración de agentes y sus herramientas antes de ejecutar un flujo de análisis de prueba
 **Qué comprobar:** Puedes distinguir consulta, decisión y funciones que enviarían operaciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `langgraph`, `vectorbt`
 
 ## `binance-trader`
 role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,arbitrage,binance,bitcoin,btc,cryptocurrency,trade,python
@@ -60,6 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina la configuración y localiza las llamadas de lectura y de creación de órdenes sin activar el bot
 **Qué comprobar:** Puedes identificar qué credenciales y acciones afectarán una cuenta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `freqtrade`, `vectorbt`
 
 ## `ccxt`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=bots,library,python
@@ -119,6 +121,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre la demo visual y relaciona cada personaje con el estado que muestra
 **Qué comprobar:** Puedes distinguir representación de interfaz y actividad realmente documentada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `py-sdk`, `tradingagents`, `claude-code`
 
 ## `daily-stock-analysis`
 role=app · exec=cloud · setup=medium · mcp=False · prov=openai,google · tags=analytics,agents,python
@@ -152,7 +155,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza un símbolo de ejemplo sin activar envíos y contrasta fechas y datos del informe
 **Qué comprobar:** Puedes separar precios observados, fuentes y texto generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `ollama`, `n8n`, `litellm`
 
 ## `dexter`
 role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,typescript
@@ -182,6 +185,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta un dato histórico concreto y abre su fuente antes de aceptar la síntesis
 **Qué comprobar:** Puedes comprobar periodo, unidad y procedencia del dato
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `tradingagents`, `langfuse`
 
 ## `finceptterminal`
 role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,ai-agents,algorithmic-trading,bloomberg-terminal,cpp,finance,financial-markets,fintech
@@ -211,6 +215,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un panel de investigación y comprueba proveedor y hora de sus datos antes de activar AI
 **Qué comprobar:** Puedes distinguir datos observados y análisis generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `qlib`, `ccxt`
 
 ## `finrl`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=cuant,framework,jupyter-notebook
@@ -243,6 +248,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un ejemplo pequeño de aprendizaje por refuerzo y evalúa en un periodo distinto
 **Qué comprobar:** Puedes contrastar recompensas, operaciones simuladas y datos de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `qlib`, `machine-learning-for-trading`, `vectorbt`
 
 ## `freqtrade`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=bots,app,python
@@ -371,6 +377,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Reproduce un notebook introductorio con datos gratuitos y separa entrenamiento y prueba temporal
 **Qué comprobar:** Puedes explicar los supuestos y reproducir una métrica fuera de muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `qlib`, `vectorbt`, `marimo`
 
 ## `nautilus-trader`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=cuant,framework,rust
@@ -430,6 +437,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina configuración y rutas de órdenes antes de conectar una wallet o habilitar seguimiento
 **Qué comprobar:** Puedes identificar las acciones que consultarían datos y las que moverían fondos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `autohedge`, `grafana`, `n8n`
 
 ## `pixel-hedge-fund`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,svelte
@@ -461,6 +469,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre la interfaz de desarrollo y comprueba si muestra SAMPLE o datos de un exchange
 **Qué comprobar:** Puedes reconocer el origen y la ausencia de datos sin confundirla con un precio cero
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `tradingagents`, `claude-code`
 
 ## `pixelfund-ai`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,typescript
@@ -492,6 +501,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre System Console tras iniciar la app y revisa disponibilidad de base, Redis, datos y AI
 **Qué comprobar:** Puedes ver qué componentes están listos y cuáles impiden análisis u operaciones virtuales
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `tradingagents`, `dexter`, `ollama`
 
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
@@ -521,6 +531,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Enumera datos públicos de un mercado y revisa su esquema sin autenticar una wallet
 **Qué comprobar:** Puedes contrastar identificadores y datos con la fuente
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `company-pixel-office`, `n8n`
 
 ## `qlib`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=finanzas,algorithmic-trading,auto-quant,deep-learning,finance,fintech,investment,machine-learning
@@ -580,6 +591,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente
 **Qué comprobar:** Puedes separar datos del periodo, análisis visual y decisión generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langgraph`, `langchain`, `tradingagents`
 
 ## `tradingagents`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,agent,finance,llm,multiagent,trading,python
@@ -612,6 +624,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza un periodo histórico pequeño y revisa fuentes y mensajes de cada especialista
 **Qué comprobar:** Puedes identificar qué evidencia apoya cada conclusión y el coste de llamadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langgraph`, `ollama`, `dexter`
 
 ## `vectorbt`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=cuant,framework,python
@@ -673,3 +686,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una investigación histórica y repítela variando solo comisiones y deslizamiento
 **Qué comprobar:** Puedes comparar supuestos y resultados sin cambiar los datos de entrada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `openclaw`, `vectorbt`

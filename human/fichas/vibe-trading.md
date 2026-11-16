@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Vibe-Trading, agente personal de investigación de trading de la organización HKUDS. Licencia MIT. Es muy activo (~38k estrellas, v0.1.19).
+
+## ¿Qué hace?
+
+Da a tu agente capacidades de investigación y trading: datos de mercado, skills de análisis, backtesting con costes y pruebas fuera de muestra, laboratorio de investigación, paper trading (incluidas sesiones de acciones A en pasos de cinco minutos) y una «cuenta sombra». Ofrece web, CLI, API y servidor MCP.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install vibe-trading-ai`, que incluye CLI, API y el servidor MCP `vibe-trading-mcp`. Hay app de escritorio con actualizaciones firmadas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Servidor MCP por stdio (`vibe-trading-mcp`). | Añade el servidor MCP y llama a `list_skills`. |
+| [OpenClaw](openclaw.md) | Documentación de pruebas MCP con OpenClaw. | Configura el MCP en OpenClaw. |
+| [vectorbt](vectorbt.md) | Contrastar los backtests con otro motor. (combinación por arquitectura) | Reproduce la estrategia en vectorbt. |
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.1.19 (2026-11-05) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/HKUDS/Vibe-Trading/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión |
 | Coste | El coste depende del proveedor o la ruta. Modelos, fuentes y herramientas tienen costes por ruta; el paquete incluye MCP stdio; una ruta local requiere configuración adicional |
 | Equipo | Preparación según la ruta elegida. Python; proveedor o modelo local; fuente de datos; entorno de investigación |
-
-Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión
-
-## Qué puedes hacer con él
-
-Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables.
-
-## Por qué destaca
-
-Usos propuestos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles.
-
-## Cómo funciona
 
 Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión
 

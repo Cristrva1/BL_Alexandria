@@ -3155,7 +3155,7 @@ git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stoc
 # 安装依赖
 pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un resumen de investigación; Comparar noticias y datos de una lista de seguimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [n8n](human/fichas/n8n.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/daily-stock-analysis.md) · [GitHub](https://github.com/ZhuLinsen/daily_stock_analysis)
 
 #### 📊 dexter ⭐
@@ -3164,6 +3164,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/virattt/dexter/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [TradingAgents](human/fichas/tradingagents.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/dexter.md) · [GitHub](https://github.com/virattt/dexter)
 
 #### 📊 TradingAgents
@@ -3175,6 +3176,7 @@ cd TradingAgents
 
 pip install .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar debate entre agentes financieros; Comparar proveedores sobre la misma muestra histórica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [Ollama](human/fichas/ollama.md) · [dexter](human/fichas/dexter.md)<br>
 **Más:** [ficha completa](human/fichas/tradingagents.md) · [GitHub](https://github.com/TauricResearch/TradingAgents)
 
 #### 🖥️ Vibe-Trading
@@ -3185,6 +3187,7 @@ pip install .` (comprobar los pasos completos en la ficha).<br>
 vibe-trading init
 vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenClaw](human/fichas/openclaw.md) · [vectorbt](human/fichas/vectorbt.md)<br>
 **Más:** [ficha completa](human/fichas/vibe-trading.md) · [GitHub](https://github.com/HKUDS/Vibe-Trading)
 
 #### 📊 FinceptTerminal
@@ -3193,6 +3196,7 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [qlib](human/fichas/qlib.md) · [ccxt](human/fichas/ccxt.md)<br>
 **Más:** [ficha completa](human/fichas/finceptterminal.md) · [GitHub](https://github.com/Fincept-Corporation/FinceptTerminal)
 
 #### 📊 AutoHedge
@@ -3201,6 +3205,7 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA necesaria · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install -U autohedge` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [LangGraph](human/fichas/langgraph.md) · [vectorbt](human/fichas/vectorbt.md)<br>
 **Más:** [ficha completa](human/fichas/autohedge.md) · [GitHub](https://github.com/The-Swarm-Corporation/AutoHedge)
 
 #### 📊 QuantHarness
@@ -3209,6 +3214,7 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA necesaria · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langchain](human/fichas/langchain.md) · [TradingAgents](human/fichas/tradingagents.md)<br>
 **Más:** [ficha completa](human/fichas/quantharness.md) · [GitHub](https://github.com/Y-Research-SBU/QuantHarness)
 
 ### Modelos y backtesting cuantitativo
@@ -3240,6 +3246,7 @@ cd FinRL
 
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [qlib](human/fichas/qlib.md) · [machine-learning-for-trading](human/fichas/machine-learning-for-trading.md) · [vectorbt](human/fichas/vectorbt.md)<br>
 **Más:** [ficha completa](human/fichas/finrl.md) · [GitHub](https://github.com/AI4Finance-Foundation/FinRL)
 
 #### 📚 vectorbt
@@ -3304,6 +3311,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/yasinkuyu/binance-trader/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [freqtrade](human/fichas/freqtrade.md) · [vectorbt](human/fichas/vectorbt.md)<br>
 **Más:** [ficha completa](human/fichas/binance-trader.md) · [GitHub](https://github.com/yasinkuyu/binance-trader)
 
 #### 📊 open-sol-bot
@@ -3312,6 +3320,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/ChainBuff/open-sol-bot/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [AutoHedge](human/fichas/autohedge.md) · [Grafana](human/fichas/grafana.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/open-sol-bot.md) · [GitHub](https://github.com/ChainBuff/open-sol-bot)
 
 #### 📚 py-sdk
@@ -3320,6 +3329,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv add polymarket-client` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [company-pixel-office](human/fichas/company-pixel-office.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/py-sdk.md) · [GitHub](https://github.com/Polymarket/py-sdk)
 
 ### Ejemplos y aprendizaje
@@ -3330,6 +3340,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [qlib](human/fichas/qlib.md) · [vectorbt](human/fichas/vectorbt.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/machine-learning-for-trading.md) · [GitHub](https://github.com/stefan-jansen/machine-learning-for-trading)
 
 #### 🖥️ PixelFund-AI
@@ -3340,6 +3351,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 npm install
 npm run dev:all` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [TradingAgents](human/fichas/tradingagents.md) · [dexter](human/fichas/dexter.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/pixelfund-ai.md) · [GitHub](https://github.com/kyjwang/PixelFund-AI)
 
 #### 🖥️ pixel-hedge-fund
@@ -3350,6 +3362,7 @@ npm run dev:all` (comprobar los pasos completos en la ficha).<br>
 npm install
 npm run dev -- --port 5173` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [TradingAgents](human/fichas/tradingagents.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/pixel-hedge-fund.md) · [GitHub](https://github.com/jaypolanco96/pixel-hedge-fund)
 
 #### 🖥️ company-pixel-office
@@ -3358,6 +3371,7 @@ npm run dev -- --port 5173` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/ATK-zk/company-pixel-office/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [py-sdk](human/fichas/py-sdk.md) · [TradingAgents](human/fichas/tradingagents.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/company-pixel-office.md) · [GitHub](https://github.com/ATK-zk/company-pixel-office)
 
 ---

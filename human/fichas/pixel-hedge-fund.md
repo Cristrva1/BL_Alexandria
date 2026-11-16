@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Pixel Hedge Fund, «oficina viva» en pixel art de un fondo de los 90 hecha con SvelteKit, de @jaypolanco96. El repo no declara licencia. Es una demo muy pequeña (~5 estrellas).
+
+## ¿Qué hace?
+
+Representa una oficina de trading animada donde un escritorio de análisis técnico dirige el comportamiento de los personajes, con temas visuales y rutas que se conectan a la API de BloFin.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con `npm install` y `npm run dev`. El README advierte de no exponer el servidor de desarrollo a la red si la máquina guarda `.env.local` o `.secrets/`, porque las rutas `/api/blofin/*` usan credenciales.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | Datos de mercado normalizados en lugar de una sola API. (combinación por arquitectura) | Sustituye las llamadas por CCXT. |
+| [TradingAgents](tradingagents.md) | Lógica de decisión multiagente detrás de la escena. (combinación por arquitectura) | Conecta las decisiones a la oficina. |
+| [Claude Code](claude-code.md) | Personalizar la demo con un agente. (combinación por arquitectura) | Pide cambios al agente en un entorno sin credenciales. |
+
+**Notas:** Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima y sin licencia.
+
+Estado en GitHub: activo · último push 2026-10-08 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jaypolanco96/pixel-hedge-fund/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La producción no usa el fallback SAMPLE de desarrollo; los errores o datos ausentes deben permanecer visibles |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo para la interfaz; fuentes e infraestructura pueden tener costes |
 | Equipo | Preparación según la ruta elegida. Node; SvelteKit; datos de prueba; conexión a fuentes si corresponde |
-
-La producción no usa el fallback SAMPLE de desarrollo; los errores o datos ausentes deben permanecer visibles
-
-## Qué puedes hacer con él
-
-Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación.
-
-## Cómo funciona
 
 La producción no usa el fallback SAMPLE de desarrollo; los errores o datos ausentes deben permanecer visibles
 

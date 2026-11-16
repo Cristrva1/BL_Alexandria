@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+QuantHarness, sistema multiagente con LLM para trading de alta frecuencia guiado por precios, de investigadores de Stony Brook, CMU, UBC, Yale y Fudan. Licencia MIT. Es un prototipo de investigación (~3k estrellas, sin releases) con último cambio en agosto de 2026.
+
+## ¿Qué hace?
+
+Combina indicadores técnicos, reconocimiento de patrones en gráficos y análisis de tendencia con agentes de LangChain y LangGraph, y ofrece interfaz web. Los agentes generan y analizan gráficos, por lo que requiere un LLM con entrada de imágenes.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -r requirements.txt` y se configuran claves de un LLM multimodal y de datos de mercado.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Framework de orquestación de los agentes. | Viene en las dependencias. |
+| [langchain](langchain.md) | Componentes de LLM y herramientas. | Viene en las dependencias. |
+| [TradingAgents](tradingagents.md) | Comparar con otro framework multiagente de trading. (combinación por arquitectura) | Evalúa ambos con los mismos activos. |
+
+**Notas:** Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-08-18 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Y-Research-SBU/QuantHarness/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo |
 | Coste | El coste depende del proveedor o la ruta. La ruta documentada pide API LLM con visión; datos, agentes múltiples y evaluación acumulan consumo |
 | Equipo | Preparación según la ruta elegida. Python; checkout; datos; modelo con entrada de imagen y credenciales |
-
-El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo
-
-## Qué puedes hacer con él
-
-Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental.
-
-## Cómo funciona
 
 El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo
 
