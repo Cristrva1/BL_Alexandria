@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Arnés experimental mínimo (MIT) de Andrej Karpathy para entrenar LLMs de principio a fin en un solo nodo de GPU. Es experimental pero muy seguido (~61k estrellas); último push en septiembre de 2026. Sucede conceptualmente a nanoGPT.
+
+## ¿Qué hace?
+
+Cubre todas las etapas: tokenización, preentrenamiento, fine-tuning, evaluación, inferencia y una interfaz de chat. Su métrica principal es el 'time to GPT-2': el tiempo de reloj para superar la puntuación CORE de GPT-2 (1,6B) en un nodo de 8×H100. Según el README, se consigue en unas 2 horas por unos 48 dólares, o unos 15 dólares en instancias spot. Un solo parámetro (`--depth`) escala una serie de modelos compute-óptimos.
+
+## ¿Cómo lo hace?
+
+Código Python compacto gestionado con uv (`uv sync --extra gpu` para CUDA o `--extra cpu` para CPU/MPS). El script `runs/speedrun.sh` ejecuta todo el pipeline. Para resultados reales hace falta alquilar un nodo de 8×H100; en CPU solo sirve para aprender.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Base del entrenamiento. | Se instala con `uv sync` según el extra (gpu o cpu). |
+| [LLMs from Scratch](llms-from-scratch.md) | Entender cada componente antes de ejecutar el pipeline completo. (combinación por arquitectura) | Estudia el libro y vuelve a nanochat para el entrenamiento a escala. |
+| [llm.c](llm-c.md) | Versión en C/CUDA del mismo autor para entender el entrenamiento sin PyTorch. (combinación por arquitectura) | Opcional, para profundizar en rendimiento de bajo nivel. |
+
+**Notas:** Sin alternativas declaradas. Coste real: alquilar 8×H100 durante horas.
+
+Estado en GitHub: activo · último push 2026-09-07 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/karpathy/nanochat/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El lema de cien dólares depende del benchmark, hardware y tarifas del autor; no es el coste garantizado de cualquier entrenamiento ni una configuración de portátil |
 | Coste | El coste depende del proveedor o la ruta. No requiere API de modelos; entrenar requiere cómputo y el speedrun del autor usa un nodo de ocho H100 |
 | Equipo | Preparación según la ruta elegida. uv; Python; CPU o GPU según ruta; presupuesto de cómputo |
-
-El lema de cien dólares depende del benchmark, hardware y tarifas del autor; no es el coste garantizado de cualquier entrenamiento ni una configuración de portátil
-
-## Qué puedes hacer con él
-
-Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado.
-
-## Cómo funciona
 
 El lema de cien dólares depende del benchmark, hardware y tarifas del autor; no es el coste garantizado de cualquier entrenamiento ni una configuración de portátil
 

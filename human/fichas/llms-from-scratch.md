@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Repositorio oficial del código del libro 'Build a Large Language Model (From Scratch)' de Sebastian Raschka (Manning). El LICENSE es Apache-2.0, aunque GitHub lo marca NOASSERTION. Es material educativo maduro y mantenido (último push en noviembre de 2026, ~108k estrellas).
+
+## ¿Qué hace?
+
+Guía paso a paso por la implementación de un LLM tipo GPT: tokenización y BPE, mecanismos de atención, arquitectura GPT, preentrenamiento con datos sin etiquetar, carga de pesos preentrenados, fine-tuning para clasificación y para seguir instrucciones, y LoRA en un apéndice. Incluye abundante material extra, como comparativas de implementaciones de BPE.
+
+## ¿Cómo lo hace?
+
+Notebooks Jupyter en PyTorch, sin bibliotecas externas de LLM. El código de los capítulos principales está pensado para ejecutarse en un portátil normal en un tiempo razonable, y usa GPU automáticamente si existe. El libro (de pago) explica el razonamiento; el código del repositorio es libre.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Única dependencia de fondo del código del libro. | Instala PyTorch (CPU basta para los capítulos principales) antes de abrir los notebooks. |
+| [nanochat](nanochat.md) | Siguiente paso para ver un pipeline completo de entrenamiento a escala real (8×H100). (combinación por arquitectura) | Termina el libro antes de intentar un speedrun de nanochat. |
+| [Transformers](transformers.md) | Pasar de la implementación didáctica a la biblioteca estándar para cargar y ajustar modelos reales. (combinación por arquitectura) | Úsalo después de entender cada pieza con el libro. |
+
+**Notas:** Alternativas (elige una): llm-course.
+
+Estado en GitHub: activo · último push 2026-11-09 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rasbt/LLMs-from-scratch/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Requiere base de Python; la instalación está en setup y la evaluación por API no es obligatoria para todo el libro |
 | Coste | El coste depende del proveedor o la ruta. El código permite entrenamiento local; libro, GPU alquilada y evaluaciones con API son costes opcionales distintos |
 | Equipo | Preparación según la ruta elegida. Python; entorno PyTorch; nociones de programación; equipo según capítulo |
-
-Requiere base de Python; la instalación está en setup y la evaluación por API no es obligatoria para todo el libro
-
-## Qué puedes hacer con él
-
-Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso.
-
-## Por qué destaca
-
-Usos propuestos: Aprender cómo funciona un Transformer; Estudiar ajuste de instrucciones.
-
-## Cómo funciona
 
 Requiere base de Python; la instalación está en setup y la evaluación por API no es obligatoria para todo el libro
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; entorno PyTorch; nociones de programación; equipo según capítulo
 - **Etiquetas:** `learning` `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [PyTorch](pytorch.md) | 106k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
 
 ## Alternativas (elige una)
 

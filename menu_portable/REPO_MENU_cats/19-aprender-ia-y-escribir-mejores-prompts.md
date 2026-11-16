@@ -61,6 +61,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Selecciona el agente de investigación web y revisa su .env.example sin añadir credenciales todavía
 **Qué comprobar:** Puedes enumerar fuentes de datos, modelo y permisos necesarios
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `crewai`, `langgraph`, `agno`
 
 ## `agents-towards-production`
 role=directory · exec=cloud · setup=medium · mcp=True · prov=openai,local · tags=agents,learning,notebooks,python
@@ -151,6 +152,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige Simple RAG Workflow y dibuja ingestión, recuperación y generación
 **Qué comprobar:** Puedes identificar dónde se almacenan documentos y dónde se usa el modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `crewai`, `llama-index`, `firecrawl`, `ollama`
 
 ## `awesome-harness-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference,python
@@ -180,6 +182,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Selecciona las secciones de permisos y evaluación y redacta tres preguntas para revisar tu agente
 **Qué comprobar:** Puedes separar ejecución, memoria, observabilidad y control de permisos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `12-factor-agents`, `loop-engineering`, `claude-code`
 
 ## `awesome-llm-apps`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=agents,rag,learning,python
@@ -240,6 +243,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Busca dos bibliotecas del lenguaje que conoces y abre sus fuentes para comparar mantenimiento y requisitos
 **Qué comprobar:** Obtienes una pequeña lista de candidatos con función diferenciada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `transformers`, `llm-course`
 
 ## `chatgpt-dan`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=prompts,chatgpt,gpt-3-5,gpt-4,jailbreak,openai,prompt
@@ -269,6 +273,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee el aviso de fecha y analiza cómo un prompt intenta sustituir las instrucciones del sistema sin aplicarlo a servicios ajenos
 **Qué comprobar:** Puedes explicar por qué no constituye una configuración soportada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `promptfoo`, `system-prompts-and-models-of-ai-tools`, `chatgpt-system-prompt`
 
 ## `chatgpt-system-prompt`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=prompts,gpt,prompt,prompt-engineering,html
@@ -298,6 +303,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato
 **Qué comprobar:** Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo`, `prompt-engineering-guide`
 
 ## `claude-cookbooks`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=learning,notebooks,rag,python
@@ -358,6 +364,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Escoge Customer Support Agent y revisa las herramientas que permite antes de enviar una consulta ficticia
 **Qué comprobar:** Puedes identificar acciones del agente y datos enviados a la API
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-agent-sdk-python`, `copilotkit`, `e2b`
 
 ## `context-engineering`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,python
@@ -483,7 +490,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el notebook de tokenización y procesa una frase antes de pasar a entrenamiento
 **Qué comprobar:** Puedes inspeccionar tokens y reconstrucción del texto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanochat`
+**Combina con:** `nanochat`, `llms-from-scratch`, `pytorch`
 
 ## `llm-course`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,training,notebooks
@@ -544,6 +551,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lee el ejemplo GPT-2 y localiza las operaciones de forward y backward antes de compilar
 **Qué comprobar:** Puedes relacionar las operaciones matemáticas con el código C
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nanochat`, `llms-from-scratch`, `pytorch`
 
 ## `llms-from-scratch`
 role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=learning,training,python
@@ -573,7 +581,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el capítulo de tokenización con una frase corta antes de entrenar una red
 **Qué comprobar:** Puedes ver la conversión de texto a tokens y explicarla
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`
+**Combina con:** `pytorch`, `nanochat`, `transformers`
 **Alternativas (elige una):** `llm-course`
 
 ## `loop-engineering`
@@ -635,6 +643,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Abre un proyecto destacado desde el perfil y revisa su README propio antes de considerarlo para instalar
 **Qué comprobar:** Puedes distinguir el perfil del repositorio de la herramienta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `last30days-skill`, `ecc`, `deer-flow`
 
 ## `nanochat`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
@@ -664,6 +673,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara la ruta CPU para estudiar el código y lee speedrun antes de contratar un nodo GPU
 **Qué comprobar:** Distingues la instalación de dependencias del entrenamiento completo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `llms-from-scratch`, `llm.c`
 
 ## `openai-cookbook`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python
@@ -848,6 +858,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Abre el capítulo de clasificación y compara una predicción con su etiqueta de prueba
 **Qué comprobar:** Puedes reconocer el objetivo y la métrica del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `llms-from-scratch`, `pytorch`, `awesome-machine-learning`
 
 ## `system-prompts-and-models-of-ai-tools`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin
@@ -877,6 +888,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara dos estructuras atribuidas a asistentes y anota sus diferencias sin introducirlas como configuración oficial
 **Qué comprobar:** Puedes distinguir patrones de diseño de afirmaciones no verificadas de procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `chatgpt-system-prompt`, `promptfoo`, `claude-code`
 
 ## `train-llm-from-scratch`
 role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=aprender,gemini,large-language-models,llm,openai,training,transformers,python
@@ -908,3 +920,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala el paquete en un entorno de prueba y estudia la configuración de un entrenamiento mínimo
 **Qué comprobar:** Puedes identificar tamaño del modelo, datos y salida de checkpoints
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `trl`, `nanochat`

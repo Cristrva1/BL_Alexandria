@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Libro de texto interactivo (MIT) de @raiyanyahya para construir, entrenar y ejecutar un modelo de lenguaje moderno desde cero. El autor declara que lo escribió para aprender y que usó IA para entender y verificar conceptos, así que conviene contrastar los detalles. Activo (último push en octubre de 2026).
+
+## ¿Qué hace?
+
+Ofrece 12 capítulos (más de 7.500 líneas) que van del entorno y los tensores a la tokenización, la atención, la arquitectura (RoPE, RMSNorm, SwiGLU), el entrenamiento, el KV cache y la inferencia. Añade 28 explicaciones independientes de técnicas (AdamW, precisión mixta y otras) y dos recorridos narrativos. Explica todo 'como si tuvieras cinco años', sin exigir cálculo ni álgebra lineal.
+
+## ¿Cómo lo hace?
+
+Markdown con código Python y PyTorch. Se instalan `torch`, `tiktoken`, `datasets`, `numpy` y `matplotlib` (versión CPU por defecto; GPU opcional) y luego `requirements.txt`. Solo requiere nociones básicas de Python.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [nanochat](nanochat.md) | Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura) | Termina el libro antes de alquilar GPU para nanochat. |
+| [LLMs from Scratch](llms-from-scratch.md) | Referencia más rigurosa y revisada editorialmente sobre el mismo tema. (combinación por arquitectura) | Úsalo para contrastar explicaciones. |
+| [PyTorch](pytorch.md) | Biblioteca usada en todo el libro. | Instálala en la versión CPU o GPU según el capítulo de configuración. |
+
+**Notas:** Sin alternativas declaradas. Material escrito con ayuda de IA según su autor: verifica las afirmaciones técnicas.
+
+Estado en GitHub: activo · último push 2026-10-26 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/raiyanyahya/how-to-train-your-gpt/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Empieza por el capítulo de setup; los comandos del README ofrecen alternativas y no deben concatenarse como si todas fueran obligatorias |
 | Coste | El coste depende del proveedor o la ruta. No requiere API para el recorrido local; cómputo y GPU opcional se pagan aparte |
 | Equipo | Preparación según la ruta elegida. Python; Jupyter; entorno PyTorch; equipo adecuado al experimento |
-
-Empieza por el capítulo de setup; los comandos del README ofrecen alternativas y no deben concatenarse como si todas fueran obligatorias
-
-## Qué puedes hacer con él
-
-Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción.
-
-## Por qué destaca
-
-Usos propuestos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños.
-
-## Cómo funciona
 
 Empieza por el capítulo de setup; los comandos del README ofrecen alternativas y no deben concatenarse como si todas fueran obligatorias
 
@@ -98,12 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Jupyter; entorno PyTorch; equipo adecuado al experimento
 - **Etiquetas:** `learning`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [nanochat](nanochat.md) | 60.6k | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Código de la **primera edición** (2015) del libro 'Python Machine Learning' de Sebastian Raschka (MIT). El propio README avisa desde 2017 de que existen ediciones posteriores en otros repositorios. Es material histórico: usa Theano, una biblioteca discontinuada.
+
+## ¿Qué hace?
+
+Contiene notebooks de los capítulos del libro: clasificación con perceptrones y Adaline, scikit-learn, preprocesamiento, reducción de dimensionalidad, evaluación de modelos, ensembles, análisis de sentimiento, regresión, clustering y redes neuronales con Theano.
+
+## ¿Cómo lo hace?
+
+Notebooks Jupyter con NumPy, scikit-learn y Theano. Parte del código no funcionará con versiones actuales de las bibliotecas, sobre todo los capítulos de Theano. Para aprender hoy es preferible la edición más reciente del libro.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LLMs from Scratch](llms-from-scratch.md) | Libro moderno del mismo autor para continuar hacia LLMs. (combinación por arquitectura) | Usa este repositorio solo como referencia histórica y continúa con el libro actual. |
+| [PyTorch](pytorch.md) | Sustituto actual de Theano para los capítulos de redes neuronales. (combinación por arquitectura) | Reescribe los ejemplos de Theano en PyTorch si quieres ejecutarlos. |
+| [awesome-machine-learning](awesome-machine-learning.md) | Directorio para encontrar bibliotecas actuales equivalentes. (combinación por arquitectura) | Consulta la sección de Python. |
+
+**Notas:** Sin alternativas declaradas. Obsoleto: primera edición con Theano.
+
+Estado en GitHub: activo · último push 2026-07-18 · última versión publicada v1.3 (2016-09-30) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rasbt/python-machine-learning-book/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual |
 | Coste | Sin pago a un modelo en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Python; dependencias correspondientes a la primera edición; datos educativos |
-
-Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
-
-## Qué puedes hacer con él
-
-Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.
-
-## Por qué destaca
-
-Usos propuestos: Aprender regresión y clasificación; Entender validación de modelos.
-
-## Cómo funciona
 
 Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
 

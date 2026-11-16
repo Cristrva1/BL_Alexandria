@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Repositorio de perfil de GitHub (README personal) de Matt Van Horn, cofundador de June y de la empresa que se convirtió en Lyft, según su propio perfil. **No es un proyecto de software**: no tiene código, licencia ni releases.
+
+## ¿Qué hace?
+
+Presenta los proyectos del autor (last30days-skill, Printing Press para generar CLIs de APIs, Printing Press Library y otros) y una lista de repositorios a los que ha contribuido, como ECC, LangChain, awesome-llm-apps, Deer Flow, Strix o Voicebox. Sirve como punto de partida para descubrir sus herramientas.
+
+## ¿Cómo lo hace?
+
+README Markdown de perfil. No se instala nada; cada proyecto enlazado tiene su propio repositorio e instrucciones.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [last30days](last30days-skill.md) | Proyecto principal del autor presente en el catálogo (enlazado en el perfil). | Instálalo desde su propio repositorio. |
+| [ECC](ecc.md) | Proyecto al que el autor ha contribuido (enlazado en el perfil). (combinación por arquitectura) | Consulta su ficha para instalarlo. |
+| [deer-flow](deer-flow.md) | Otro proyecto con contribuciones del autor (enlazado en el perfil). (combinación por arquitectura) | Consulta su ficha para instalarlo. |
+
+**Notas:** Sin alternativas declaradas. Hallazgo: es un perfil personal, no un repositorio de herramienta. Conviene revisar si debe seguir en el catálogo o reclasificarse como referencia.
+
+Estado en GitHub: activo · último push 2026-11-09 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mvanhorn/mvanhorn/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil |
 | Coste | Sin pago a un modelo en la ruta básica. Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Navegador; proyecto de interés |
-
-Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil
-
-## Qué puedes hacer con él
-
-Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos.
-
-## Cómo funciona
 
 Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil
 

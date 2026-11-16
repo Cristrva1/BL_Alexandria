@@ -4180,6 +4180,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar instrucciones de herramientas de código; Preparar una plantilla propia de sistema — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [chatgpt_system_prompt](human/fichas/chatgpt-system-prompt.md) · [promptfoo](human/fichas/promptfoo.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/system-prompts-and-models-of-ai-tools.md) · [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
 
 #### 💡 Anthropic's Prompt Engineering Tutorial
@@ -4207,6 +4208,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar la historia de prompts de roleplay; Reconocer intentos de manipulación de instrucciones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [promptfoo](human/fichas/promptfoo.md) · [system-prompts-and-models-of-ai-tools](human/fichas/system-prompts-and-models-of-ai-tools.md) · [chatgpt_system_prompt](human/fichas/chatgpt-system-prompt.md)<br>
 **Más:** [ficha completa](human/fichas/chatgpt-dan.md) · [GitHub](https://github.com/0xk1h0/ChatGPT_DAN)
 
 #### 🧠 chatgpt_system_prompt
@@ -4215,6 +4217,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [system-prompts-and-models-of-ai-tools](human/fichas/system-prompts-and-models-of-ai-tools.md) · [promptfoo](human/fichas/promptfoo.md) · [Prompt Engineering Guide](human/fichas/prompt-engineering-guide.md)<br>
 **Más:** [ficha completa](human/fichas/chatgpt-system-prompt.md) · [GitHub](https://github.com/LouisShark/chatgpt_system_prompt)
 
 ### Guías, cursos y cookbooks
@@ -4270,6 +4273,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/patchy631/ai-engineering-hub/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender RAG con Ollama; Comparar técnicas de ajuste fino — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [crewAI](human/fichas/crewai.md) · [LlamaIndex](human/fichas/llama-index.md) · [firecrawl](human/fichas/firecrawl.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/ai-engineering-hub.md) · [GitHub](https://github.com/patchy631/ai-engineering-hub)
 
 #### 🧠 500-AI-Agents-Projects
@@ -4278,6 +4282,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [crewAI](human/fichas/crewai.md) · [LangGraph](human/fichas/langgraph.md) · [Agno](human/fichas/agno.md)<br>
 **Más:** [ficha completa](human/fichas/500-ai-agents-projects.md) · [GitHub](https://github.com/ashishpatel26/500-AI-Agents-Projects)
 
 #### 🎓 12-Factor Agents
@@ -4305,6 +4310,7 @@ cd agents-towards-production` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · Consumo de APIs o servicios<br>
 **Arranque:** [Instrucciones originales](https://github.com/anthropics/claude-quickstarts/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar soporte con Claude; Estudiar una demo de uso de computadora — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [claude-agent-sdk-python](human/fichas/claude-agent-sdk-python.md) · [CopilotKit](human/fichas/copilotkit.md) · [E2B](human/fichas/e2b.md)<br>
 **Más:** [ficha completa](human/fichas/claude-quickstarts.md) · [GitHub](https://github.com/anthropics/claude-quickstarts)
 
 #### 🎓 Loop Engineering
@@ -4332,6 +4338,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/ai-boost/awesome-harness-engineering/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar el entorno de un agente; Encontrar recursos de evaluación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [12-Factor Agents](human/fichas/12-factor-agents.md) · [Loop Engineering](human/fichas/loop-engineering.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-harness-engineering.md) · [GitHub](https://github.com/ai-boost/awesome-harness-engineering)
 
 #### 📂 mvanhorn
@@ -4340,6 +4347,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/mvanhorn/mvanhorn/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [last30days](human/fichas/last30days-skill.md) · [ECC](human/fichas/ecc.md) · [deer-flow](human/fichas/deer-flow.md)<br>
 **Más:** [ficha completa](human/fichas/mvanhorn.md) · [GitHub](https://github.com/mvanhorn/mvanhorn)
 
 ### Aprender LLMs desde cero
@@ -4359,7 +4367,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `git clone --depth 1 https://github.com/rasbt/LLMs-from-scratch.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender cómo funciona un Transformer; Estudiar ajuste de instrucciones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [PyTorch](human/fichas/pytorch.md)<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [nanochat](human/fichas/nanochat.md) · [Transformers](human/fichas/transformers.md)<br>
 **Más:** [ficha completa](human/fichas/llms-from-scratch.md) · [GitHub](https://github.com/rasbt/LLMs-from-scratch)
 
 #### 🧑‍💻 awesome-machine-learning
@@ -4368,6 +4376,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [Transformers](human/fichas/transformers.md) · [LLM Course](human/fichas/llm-course.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-machine-learning.md) · [GitHub](https://github.com/josephmisiti/awesome-machine-learning)
 
 #### 💬 nanochat
@@ -4376,6 +4385,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv sync --extra cpu    # (or) Use for CPU-only / MPS` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [LLMs from Scratch](human/fichas/llms-from-scratch.md) · [llm.c](human/fichas/llm-c.md)<br>
 **Más:** [ficha completa](human/fichas/nanochat.md) · [GitHub](https://github.com/karpathy/nanochat)
 
 #### ⚙️ llm.c
@@ -4384,6 +4394,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/karpathy/llm.c/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [nanochat](human/fichas/nanochat.md) · [LLMs from Scratch](human/fichas/llms-from-scratch.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/llm-c.md) · [GitHub](https://github.com/karpathy/llm.c)
 
 #### 🧑‍💻 train-llm-from-scratch
@@ -4394,6 +4405,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 cd train-llm-from-scratch
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comprender la preparación de un corpus; Explorar un entrenamiento pequeño controlado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [TRL](human/fichas/trl.md) · [nanochat](human/fichas/nanochat.md)<br>
 **Más:** [ficha completa](human/fichas/train-llm-from-scratch.md) · [GitHub](https://github.com/FareedKhan-dev/train-llm-from-scratch)
 
 #### 🧑‍💻 python-machine-learning-book
@@ -4402,6 +4414,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/rasbt/python-machine-learning-book/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [LLMs from Scratch](human/fichas/llms-from-scratch.md) · [PyTorch](human/fichas/pytorch.md) · [awesome-machine-learning](human/fichas/awesome-machine-learning.md)<br>
 **Más:** [ficha completa](human/fichas/python-machine-learning-book.md) · [GitHub](https://github.com/rasbt/python-machine-learning-book)
 
 #### 📘 how-to-train-your-gpt
@@ -4414,7 +4427,7 @@ pip install jupyter tiktoken torch numpy datasets matplotlib --index-url https:/
 # Start with chapter 2 (tokenization)
 jupyter notebook notebooks/02_tokenization.ipynb` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [nanochat](human/fichas/nanochat.md)<br>
+**Combina con:** [nanochat](human/fichas/nanochat.md) · [LLMs from Scratch](human/fichas/llms-from-scratch.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/how-to-train-your-gpt.md) · [GitHub](https://github.com/raiyanyahya/how-to-train-your-gpt)
 
 ---

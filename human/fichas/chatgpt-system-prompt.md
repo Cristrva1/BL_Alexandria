@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026). Buena parte del contenido se obtuvo por extracción de prompts ajenos, lo que plantea dudas legales y éticas [DATO NO VERIFICADO: estatus de derechos de cada prompt].
+
+## ¿Qué hace?
+
+Ofrece un índice (TOC.md) para buscar GPTs y sus instrucciones, una guía para obtener system prompts y archivos de conocimiento, y una guía de seguridad para proteger las instrucciones de un GPT propio. Su valor educativo está en ver cómo se redactan instrucciones de sistema reales y cómo se defienden.
+
+## ¿Cómo lo hace?
+
+Markdown organizado por GPT y producto, sin código ni instalación. Se consulta en GitHub o se clona para buscar localmente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md) | Corpus paralelo centrado en herramientas de IA de programación. (combinación por arquitectura) | Consulta ambos para comparar estilos de instrucciones. |
+| [promptfoo](promptfoo.md) | Probar si tus propios prompts de sistema resisten las técnicas de extracción documentadas. (combinación por arquitectura) | Configura pruebas de extracción en promptfoo. |
+| [Prompt Engineering Guide](prompt-engineering-guide.md) | Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura) | Úsalo como marco conceptual. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-09 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales |
 | Coste | Sin pago a un modelo en la ruta básica. Leer el repositorio no consume API; probar prompts usa el servicio elegido |
 | Equipo | Preparación según la ruta elegida. Navegador; ejemplo propio de instrucciones |
-
-Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales
-
-## Qué puedes hacer con él
-
-Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts.
-
-## Por qué destaca
-
-Usos propuestos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio.
-
-## Cómo funciona
 
 Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales
 
