@@ -30,6 +30,12 @@ Componentes: agente (C/C++) en cada equipo, servidor de gestión, indexador y pa
 | [Lynis](lynis.md) | Lynis hace auditorías puntuales de endurecimiento y Wazuh vigila de forma continua (combinación por arquitectura). | Audita con Lynis; después monitoriza con agentes de Wazuh. |
 | [Trivy](trivy.md) | Trivy escanea imágenes antes del despliegue y Wazuh vigila vulnerabilidades en ejecución (combinación por arquitectura). | Integra Trivy en CI; después despliega agentes de Wazuh en los hosts. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Atomic Red Team](atomic-red-team.md) · [CALDERA](caldera.md) · [Evilginx2](evilginx2.md) · [Falco](falco.md) · [MISP](misp.md) · [OpenCTI](opencti.md) · [osquery](osquery.md) · [Sigma](sigma.md) · [Suricata](suricata.md) · [Velociraptor](velociraptor.md) · [Zeek](zeek.md)
+
 **Notas:** La curva de aprendizaje de reglas y decodificadores es alta; empieza con pocas fuentes.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.14.10 (2026-11-09) · licencia declarada NOASSERTION (consultado el 2026-11-16).

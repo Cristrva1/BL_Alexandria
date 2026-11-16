@@ -29,6 +29,8 @@ Escrito en Go; se instala con `go install`, binarios o Docker. Las claves de API
 | [Nuclei](nuclei.md) | La salida de subfinder se encadena con Nuclei para escanear los hosts encontrados. | Ejecuta subfinder; después canaliza la lista a nuclei. |
 | [Katana](katana.md) | katana rastrea los subdominios descubiertos para mapear endpoints. | Enumera con subfinder; después pasa los hosts a katana. |
 | [ffuf](ffuf.md) | ffuf fuzzea contenido en los subdominios descubiertos (combinación por arquitectura). | Enumera con subfinder; después lanza ffuf por host. |
+| [Amass](amass.md) | Combinación recíproca: Amass lo enlaza como «Subfinder y Amass cubren fuentes DNS distintas y se contrastan». | Orden indicado desde Amass: Ejecuta ambos y unifica resultados antes de sondear. |
+| [httpx](httpx.md) | Combinación recíproca: httpx lo enlaza como «httpx filtra qué FQDN descubiertos por Subfinder están vivos». | Orden indicado desde httpx: Primero Subfinder; después httpx sobre la lista. |
 
 **Notas:** Cercano a theharvester (que además recoge correos y otros datos); subfinder se centra solo en subdominios.
 

@@ -33,6 +33,12 @@ Se distribuye como binario Go (Homebrew, Docker `aquasec/trivy`, paquetes y GitH
 | [Wazuh](wazuh.md) | Combinación recíproca: Wazuh lo enlaza como «Trivy escanea imágenes antes del despliegue y Wazuh vigila vulnerabilidades en ejecución (combinación por arquitectura)». | Orden indicado desde Wazuh: Integra Trivy en CI; después despliega agentes de Wazuh en los hosts. |
 | [Lynis](lynis.md) | Combinación recíproca: Lynis lo enlaza como «Trivy revisa imágenes y dependencias mientras Lynis audita el sistema anfitrión (combinación por arquitectura)». | Orden indicado desde Lynis: Audita el host con Lynis; escanea las imágenes con Trivy. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Checkov](checkov.md) · [Falco](falco.md) · [Prowler](prowler.md)
+
 **Notas:** La base de vulnerabilidades se descarga de registros públicos; en entornos aislados hay que preparar una réplica.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.76.2 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
@@ -108,6 +114,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Go, Dockerfile, go.mod
 - **Etiquetas:** `security` `go` `cli` `devops`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Grype](grype.md) | 13.3k | Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
 
 ## Enlaces
 

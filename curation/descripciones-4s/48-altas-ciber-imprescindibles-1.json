@@ -1,0 +1,941 @@
+{
+ "batch": "altas-ciber-imprescindibles-1",
+ "checked_at": "2026-11-16",
+ "method": "README + docs oficiales + gh api (2026-11-16). No se instaló ningún proyecto.",
+ "repos": {
+  "amass": {
+   "que_es": "Proyecto OWASP de mapeo de superficie de ataque y descubrimiento de activos externos.",
+   "que_hace": "Recopila subdominios, certificados, ASNs y relaciones entre hosts con técnicas pasivas y activas documentadas.",
+   "como_lo_hace": "Se instala siguiendo la documentación oficial de Amass Docs; el binario enumera, almacena en grafo y exporta resultados.",
+   "combina_con": [
+    {
+     "id": "nmap",
+     "motivo": "Amass entrega hosts y Amass puede alimentar escaneos de puertos con Nmap.",
+     "orden_instalacion": "Primero Amass (enum); después Nmap sobre los IPs confirmados."
+    },
+    {
+     "id": "subfinder",
+     "motivo": "Subfinder y Amass cubren fuentes DNS distintas y se contrastan.",
+     "orden_instalacion": "Ejecuta ambos y unifica resultados antes de sondear."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Los hosts descubiertos se pasan a Nuclei para plantillas de vulnerabilidades.",
+     "orden_instalacion": "Tras la enum, filtra activos vivos y lanza Nuclei."
+    },
+    {
+     "id": "httpx",
+     "motivo": "Combinación recíproca: httpx lo enlaza como «Amass entrega hosts que httpx filtra por HTTP vivo».",
+     "orden_instalacion": "Orden indicado desde httpx: Amass primero; httpx sobre la lista.",
+     "reciproca_de": "httpx"
+    },
+    {
+     "id": "naabu",
+     "motivo": "Combinación recíproca: Naabu lo enlaza como «Amass aporta hosts; Naabu escanea sus puertos».",
+     "orden_instalacion": "Orden indicado desde Naabu: Amass → Naabu.",
+     "reciproca_de": "naabu"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/owasp-amass/amass#readme",
+    "https://owasp-amass.github.io/docs"
+   ],
+   "github": {
+    "name_with_owner": "owasp-amass/amass",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v5.1.3 (2026-10-25)"
+   }
+  },
+  "httpx": {
+   "que_es": "Toolkit HTTP multipropósito de ProjectDiscovery, pareja natural de Subfinder y Nuclei.",
+   "que_hace": "Envía sondas HTTP concurrentes a hosts o CIDR y reporta estado, título, tecnologías y redirecciones.",
+   "como_lo_hace": "Binario Go (`go install …/httpx@latest` o release); se alimenta de listas de hosts y produce salidas parseables.",
+   "combina_con": [
+    {
+     "id": "subfinder",
+     "motivo": "httpx filtra qué FQDN descubiertos por Subfinder están vivos.",
+     "orden_instalacion": "Primero Subfinder; después httpx sobre la lista."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei escanea las URLs vivas que httpx confirma.",
+     "orden_instalacion": "httpx primero; Nuclei con `-l` sobre la salida."
+    },
+    {
+     "id": "amass",
+     "motivo": "Amass entrega hosts que httpx filtra por HTTP vivo.",
+     "orden_instalacion": "Amass primero; httpx sobre la lista."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/projectdiscovery/httpx#readme",
+    "https://docs.projectdiscovery.io/tools/httpx"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/httpx",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.12.0 (2026-09-08)"
+   }
+  },
+  "naabu": {
+   "que_es": "Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.",
+   "que_hace": "Realiza escaneos SYN/CONNECT/UDP rápidos y puede encadenar a Nmap para descubrir servicios.",
+   "como_lo_hace": "Se instala con `go install` o releases; lee hosts/CIDR y escribe puertos abiertos.",
+   "combina_con": [
+    {
+     "id": "nmap",
+     "motivo": "Naabu descubre puertos y Nmap detalla servicios y scripts.",
+     "orden_instalacion": "Naabu primero; después Nmap `-sV` sobre los abiertos."
+    },
+    {
+     "id": "amass",
+     "motivo": "Amass aporta hosts; Naabu escanea sus puertos.",
+     "orden_instalacion": "Amass → Naabu."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei usa los hosts:puerto vivos como entrada.",
+     "orden_instalacion": "Tras filtrar, lanza Nuclei."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/projectdiscovery/naabu#readme",
+    "https://docs.projectdiscovery.io/tools/naabu"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/naabu",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.7.0 (2026-10-28)"
+   }
+  },
+  "impacket": {
+   "que_es": "Colección de clases Python para protocolos de red Windows, mantenida por Fortra (Core Security).",
+   "que_hace": "Permite construir, parsear y automatizar SMB, MSRPC, Kerberos y otros protocolos usados en AD.",
+   "como_lo_hace": "Se instala con pipx/pip; expone scripts listos y una API para herramientas como NetExec.",
+   "combina_con": [
+    {
+     "id": "bloodhound",
+     "motivo": "Impacket recolecta datos que BloodHound analiza como rutas de ataque.",
+     "orden_instalacion": "Recolecta con Impacket/SharpHound; después importa en BloodHound."
+    },
+    {
+     "id": "nmap",
+     "motivo": "Nmap ubica hosts Windows antes de usar scripts de Impacket.",
+     "orden_instalacion": "Nmap primero; Impacket sobre el alcance confirmado."
+    },
+    {
+     "id": "metasploit",
+     "motivo": "Módulos de Metasploit y scripts de Impacket se usan juntos en post-explotación AD.",
+     "orden_instalacion": "Define el alcance; elige Impacket o Metasploit según el escenario."
+    },
+    {
+     "id": "netexec",
+     "motivo": "Combinación recíproca: NetExec lo enlaza como «NetExec apoya muchos flujos en Impacket (SMB/Kerberos)».",
+     "orden_instalacion": "Orden indicado desde NetExec: Instala Impacket; después NetExec.",
+     "reciproca_de": "netexec"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/fortra/impacket#readme",
+    "https://www.coresecurity.com"
+   ],
+   "github": {
+    "name_with_owner": "fortra/impacket",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "impacket_0_13_1 (2026-05-19)"
+   }
+  },
+  "netexec": {
+   "que_es": "Herramienta comunitaria sucesora de CrackMapExec para enumerar y post-explotar redes Windows/AD.",
+   "que_hace": "Prueba protocolos Windows, ejecuta módulos de recolección/ejecución y resume accesos válidos.",
+   "como_lo_hace": "Se instala con pipx desde GitHub; el binario `nxc` opera por protocolo (smb, ldap, winrm…).",
+   "combina_con": [
+    {
+     "id": "impacket",
+     "motivo": "NetExec apoya muchos flujos en Impacket (SMB/Kerberos).",
+     "orden_instalacion": "Instala Impacket; después NetExec."
+    },
+    {
+     "id": "bloodhound",
+     "motivo": "Los hallazgos de NetExec orientan la recolección para BloodHound.",
+     "orden_instalacion": "Enumera con NetExec; importa el grafo en BloodHound."
+    },
+    {
+     "id": "nmap",
+     "motivo": "Nmap delimita hosts Windows antes de NetExec.",
+     "orden_instalacion": "Nmap primero; NetExec sobre el alcance."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Pennyw0rth/NetExec#readme",
+    "https://netexec.wiki/"
+   ],
+   "github": {
+    "name_with_owner": "Pennyw0rth/NetExec",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-2-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.5.1 (2026-02-23)"
+   }
+  },
+  "sliver": {
+   "que_es": "C2 open source de Bishop Fox orientado a red team y emulación autorizada (alternativa a Cobalt Strike de pago).",
+   "que_hace": "Genera implants únicos, gestiona sesiones C2 y ofrece capacidades de post-explotación en macOS, Windows y Linux.",
+   "como_lo_hace": "Se instala desde releases o `curl https://sliver.sh/install|sudo bash`; el operador trabaja en la consola Sliver.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Sliver gestiona implants mientras Metasploit aporta exploits y post-módulos.",
+     "orden_instalacion": "Levanta Sliver; usa Metasploit solo si el escenario lo requiere."
+    },
+    {
+     "id": "nmap",
+     "motivo": "Nmap delimita el alcance antes de desplegar implants.",
+     "orden_instalacion": "Nmap primero; implants solo en hosts autorizados."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "Wireshark valida el tráfico C2 generado en lab.",
+     "orden_instalacion": "Captura con Wireshark mientras el implant habla con el server."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/BishopFox/sliver#readme",
+    "https://sliver.sh/docs"
+   ],
+   "github": {
+    "name_with_owner": "BishopFox/sliver",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-3.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.7.9 (2026-10-25)"
+   }
+  },
+  "atomic-red-team": {
+   "que_es": "Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.",
+   "que_hace": "Cada atomic describe precondiciones, comandos y criterios de éxito de una técnica ATT&CK concreta.",
+   "como_lo_hace": "Se clona el repositorio; las pruebas se lanzan con Invoke-AtomicRedTeam u otros runners documentados.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Los atomics generan telemetría que Wazuh debe detectar.",
+     "orden_instalacion": "Configura Wazuh; ejecuta el atomic y revisa alertas."
+    },
+    {
+     "id": "sigma",
+     "motivo": "Convierte hallazgos en reglas Sigma tras validar el atomic.",
+     "orden_instalacion": "Ejecuta el atomic; escribe/ajusta la regla Sigma."
+    },
+    {
+     "id": "caldera",
+     "motivo": "Caldera puede orquestar atomics en campañas automatizadas.",
+     "orden_instalacion": "Ten Caldera listo; importa o lanza atomics según la guía."
+    },
+    {
+     "id": "evilginx2",
+     "motivo": "Combinación recíproca: Evilginx2 lo enlaza como «Complementa con atomics de phishing/inicial access».",
+     "orden_instalacion": "Orden indicado desde Evilginx2: Atomic + Evilginx2 en purple team.",
+     "reciproca_de": "evilginx2"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/redcanaryco/atomic-red-team#readme",
+    "https://github.com/redcanaryco/invoke-atomicredteam"
+   ],
+   "github": {
+    "name_with_owner": "redcanaryco/atomic-red-team",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "C",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "caldera": {
+   "que_es": "Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.",
+   "que_hace": "Orquesta agentes que ejecutan habilidades mapeadas a ATT&CK y registra resultados de la operación.",
+   "como_lo_hace": "Docker (`ghcr.io/apache/caldera`) o `git clone --recursive` + pip; se opera desde la interfaz web.",
+   "combina_con": [
+    {
+     "id": "atomic-red-team",
+     "motivo": "CALDERA orquesta; Atomic aporta pruebas ATT&CK unitarias.",
+     "orden_instalacion": "Usa Atomic para validar una técnica; CALDERA para campañas."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Las operaciones deben producir alertas en Wazuh.",
+     "orden_instalacion": "Wazuh monitoriza; CALDERA ataca el lab."
+    },
+    {
+     "id": "metasploit",
+     "motivo": "Algunas habilidades se apoyan en el mismo tipo de post-explotación que Metasploit.",
+     "orden_instalacion": "Elige CALDERA para orquestación ATT&CK; Metasploit para exploits puntuales."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/apache/caldera#readme",
+    "https://caldera.apache.org/"
+   ],
+   "github": {
+    "name_with_owner": "apache/caldera",
+    "archived": false,
+    "pushed_at": "2026-10-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "5.3.0 (2025-04-24)"
+   }
+  },
+  "falco": {
+   "que_es": "Proyecto CNCF de seguridad en tiempo de ejecución para hosts Linux y Kubernetes.",
+   "que_hace": "Observa syscalls y eventos del kernel y dispara reglas cuando el comportamiento se sale del perfil esperado.",
+   "como_lo_hace": "Se instala como paquete, DaemonSet o binario según la guía oficial; las reglas se ajustan en YAML.",
+   "combina_con": [
+    {
+     "id": "trivy",
+     "motivo": "Trivy endurece la imagen; Falco vigila el runtime.",
+     "orden_instalacion": "Escanea con Trivy antes del deploy; Falco en el nodo."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Falco puede reenviar alertas hacia un SIEM como Wazuh.",
+     "orden_instalacion": "Despliega ambos; configura el forwarder documentado."
+    },
+    {
+     "id": "crowdsec",
+     "motivo": "CrowdSec bloquea IPs; Falco detecta abuso dentro del host.",
+     "orden_instalacion": "Complementa red (CrowdSec) con runtime (Falco)."
+    },
+    {
+     "id": "grype",
+     "motivo": "Combinación recíproca: Grype lo enlaza como «Grype endurece la imagen; Falco vigila el runtime».",
+     "orden_instalacion": "Orden indicado desde Grype: Grype en CI; Falco en el nodo.",
+     "reciproca_de": "grype"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/falcosecurity/falco#readme",
+    "https://falco.org"
+   ],
+   "github": {
+    "name_with_owner": "falcosecurity/falco",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "0.45.2 (2026-10-29)"
+   }
+  },
+  "prowler": {
+   "que_es": "Herramienta open source (Apache-2.0) de posture cloud; Prowler Cloud/Private Cloud son productos comerciales aparte.",
+   "que_hace": "Ejecuta cientos de checks de configuración y compliance sobre proveedores cloud y exporta resultados.",
+   "como_lo_hace": "CLI con `pip install prowler` o Docker; los productos Cloud se contratan aparte (prueba 7 días en prowler.com).",
+   "combina_con": [
+    {
+     "id": "trivy",
+     "motivo": "Trivy cubre imágenes/IaC local; Prowler la posture de la cuenta.",
+     "orden_instalacion": "Trivy en CI; Prowler sobre las credenciales cloud."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep revisa código; Prowler la nube desplegada.",
+     "orden_instalacion": "Usa ambos en el pipeline de seguridad."
+    },
+    {
+     "id": "lynis",
+     "motivo": "Lynis endurece el host; Prowler la nube.",
+     "orden_instalacion": "Audita VMs con Lynis y cuentas con Prowler."
+    },
+    {
+     "id": "checkov",
+     "motivo": "Combinación recíproca: Checkov lo enlaza como «Checkov previene; Prowler audita lo ya desplegado».",
+     "orden_instalacion": "Orden indicado desde Checkov: Checkov en CI; Prowler sobre la cuenta.",
+     "reciproca_de": "checkov"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/prowler-cloud/prowler#readme",
+    "https://prowler.com",
+    "https://prowler.com/pricing"
+   ],
+   "github": {
+    "name_with_owner": "prowler-cloud/prowler",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "5.50.0 (2026-11-16)"
+   }
+  },
+  "checkov": {
+   "que_es": "Escáner de IaC open source de Bridgecrew/Prisma Cloud para detectar misconfigs antes del despliegue.",
+   "que_hace": "Parsea Terraform, K8s, ARM, CloudFormation, etc., y evalúa políticas de seguridad y cumplimiento.",
+   "como_lo_hace": "Se instala con pip, brew o Docker (`bridgecrew/checkov`); se integra en pipelines CI.",
+   "combina_con": [
+    {
+     "id": "trivy",
+     "motivo": "Trivy y Checkov se complementan (imagen/secretos vs IaC).",
+     "orden_instalacion": "Checkov sobre plantillas; Trivy sobre imágenes."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep cubre código de aplicación; Checkov la IaC.",
+     "orden_instalacion": "Ambos en el mismo pipeline."
+    },
+    {
+     "id": "prowler",
+     "motivo": "Checkov previene; Prowler audita lo ya desplegado.",
+     "orden_instalacion": "Checkov en CI; Prowler sobre la cuenta."
+    },
+    {
+     "id": "grype",
+     "motivo": "Combinación recíproca: Grype lo enlaza como «Checkov endurece IaC; Grype la imagen resultante».",
+     "orden_instalacion": "Orden indicado desde Grype: Checkov → build → Grype.",
+     "reciproca_de": "grype"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/bridgecrewio/checkov#readme",
+    "https://www.checkov.io/"
+   ],
+   "github": {
+    "name_with_owner": "bridgecrewio/checkov",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.4.5 (2026-11-12)"
+   }
+  },
+  "grype": {
+   "que_es": "Escáner de vulnerabilidades open source de Anchore, pareja natural de Syft y alternativa/complemento de Trivy.",
+   "que_hace": "Analiza imágenes o SBOMs y reporta CVE conocidos contra las bases de datos que mantiene.",
+   "como_lo_hace": "Binario instalable con el script oficial; salida tabular/JSON para CI.",
+   "combina_con": [
+    {
+     "id": "falco",
+     "motivo": "Grype endurece la imagen; Falco vigila el runtime.",
+     "orden_instalacion": "Grype en CI; Falco en el nodo."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep encuentra bugs de código; Grype, CVE de dependencias de imagen.",
+     "orden_instalacion": "Usa ambos en el pipeline."
+    },
+    {
+     "id": "checkov",
+     "motivo": "Checkov endurece IaC; Grype la imagen resultante.",
+     "orden_instalacion": "Checkov → build → Grype."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/anchore/grype#readme"
+   ],
+   "github": {
+    "name_with_owner": "anchore/grype",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.121.3 (2026-11-09)"
+   }
+  },
+  "suricata": {
+   "que_es": "Motor IDS/IPS open source de la OISF, estándar de facto junto a Zeek en SOC.",
+   "que_hace": "Inspecciona tráfico en tiempo real, aplica firmas y registra metadatos/protocolos.",
+   "como_lo_hace": "Se compila o instala por paquetes según la guía; se alimenta de SPAN/TAP o modo IPS.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Suricata envía alertas a Wazuh como decodificador de red.",
+     "orden_instalacion": "Suricata en el sensor; Wazuh recopila eve.json."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "Wireshark analiza PCAP que Suricata marca.",
+     "orden_instalacion": "Exporta el PCAP de la alerta a Wireshark."
+    },
+    {
+     "id": "zeek",
+     "motivo": "Zeek aporta telemetría rica; Suricata, firmas IDS.",
+     "orden_instalacion": "Despliega ambos sensores y correlaciona."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OISF/suricata#readme",
+    "https://docs.suricata.io/"
+   ],
+   "github": {
+    "name_with_owner": "OISF/suricata",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-2.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "suricata-8.0.8 (2026-10-29)"
+   }
+  },
+  "zeek": {
+   "que_es": "Plataforma open source de análisis de tráfico de red; licencia BSD-like (COPYING) aunque la API marca NOASSERTION.",
+   "que_hace": "Parsea protocolos y escribe logs de alto nivel útiles para detección y respuesta.",
+   "como_lo_hace": "Se construye desde fuente o paquetes; se opera como sensor junto a un SIEM.",
+   "combina_con": [
+    {
+     "id": "suricata",
+     "motivo": "Zeek telemetría + Suricata firmas en el mismo sensor dual.",
+     "orden_instalacion": "Despliega ambos y normaliza logs."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Wazuh ingiere logs Zeek.",
+     "orden_instalacion": "Zeek genera; Wazuh alerta."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "Wireshark profundiza en sesiones que Zeek resume.",
+     "orden_instalacion": "Usa el UID/conn de Zeek para abrir el PCAP."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/zeek/zeek#readme",
+    "https://docs.zeek.org/"
+   ],
+   "github": {
+    "name_with_owner": "zeek/zeek",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v9.0.1 (2026-10-26)"
+   }
+  },
+  "velociraptor": {
+   "que_es": "Plataforma AGPL de Velocidex para respuesta a incidentes y caza en endpoints.",
+   "que_hace": "Ejecuta artefactos VQL en clientes y centraliza resultados para IR y forense.",
+   "como_lo_hace": "Binarios de release; se configura servidor/frontend y se despliegan clientes.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Velociraptor profundiza en endpoints que Wazuh marca.",
+     "orden_instalacion": "Alerta en Wazuh → recolección VQL."
+    },
+    {
+     "id": "osquery",
+     "motivo": "Osquery aporta SQL continuo; Velociraptor hunts puntuales.",
+     "orden_instalacion": "Usa osquery para baseline; Velociraptor para IR."
+    },
+    {
+     "id": "volatility3",
+     "motivo": "Volatilidad analiza memoria; Velociraptor la adquiere.",
+     "orden_instalacion": "Adquiere con Velociraptor; analiza con Volatility3."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Velocidex/velociraptor#readme",
+    "https://docs.velociraptor.app/"
+   ],
+   "github": {
+    "name_with_owner": "Velocidex/velociraptor",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.77.3 (2026-10-05)"
+   }
+  },
+  "misp": {
+   "que_es": "Proyecto AGPL de compartir información de amenazas usado por CERTs y SOCs.",
+   "que_hace": "Almacena eventos STIX-like, atributos y galaxias, y sincroniza con otras instancias MISP.",
+   "como_lo_hace": "Instalación documentada (bash guides/Docker); se opera vía UI y REST API.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "MISP enriquece alertas de Wazuh con IOCs.",
+     "orden_instalacion": "Conecta el módulo MISP de Wazuh a tu instancia."
+    },
+    {
+     "id": "opencti",
+     "motivo": "OpenCTI y MISP se sincronizan vía conectores.",
+     "orden_instalacion": "Elige un sentido de sync y configura el conector."
+    },
+    {
+     "id": "yara",
+     "motivo": "Reglas YARA se publican/consumen como objetos MISP.",
+     "orden_instalacion": "Sube la regla a MISP; despliega en sensores."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/MISP/MISP#readme",
+    "https://www.misp-project.org/"
+   ],
+   "github": {
+    "name_with_owner": "MISP/MISP",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.5.51 (2026-11-11)"
+   }
+  },
+  "opencti": {
+   "que_es": "OpenCTI Community Edition (Apache-2.0). Enterprise Edition (misma repo, licencia EE) añade actividad, playbooks, SSO GUI, NLP, PIR, etc.",
+   "que_hace": "Ingiere, relaciona y visualiza conocimiento de amenazas en un grafo STIX.",
+   "como_lo_hace": "Docker Compose/Helm según la documentación; la EE se activa con licencia Filigran en settings.",
+   "combina_con": [
+    {
+     "id": "misp",
+     "motivo": "Conector MISP↔OpenCTI para intercambiar IOCs.",
+     "orden_instalacion": "Levanta ambos; configura el conector oficial."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "OpenCTI aporta contexto a alertas de Wazuh.",
+     "orden_instalacion": "Exporta IOCs hacia el SIEM."
+    },
+    {
+     "id": "sigma",
+     "motivo": "Reglas Sigma se gestionan junto al intel en el SOC.",
+     "orden_instalacion": "Vincula detecciones Sigma a CTI en OpenCTI."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OpenCTI-Platform/opencti#readme",
+    "https://docs.opencti.io/",
+    "https://docs.opencti.io/latest/administration/enterprise/"
+   ],
+   "github": {
+    "name_with_owner": "OpenCTI-Platform/opencti",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "7.261116.0 (2026-11-16)"
+   }
+  },
+  "sigma": {
+   "que_es": "Estándar abierto de reglas de detección; especificación en dominio público y reglas bajo Detection Rule License 1.1.",
+   "que_hace": "Describe búsquedas de log de forma abstracta y se traduce al lenguaje de cada SIEM.",
+   "como_lo_hace": "Se clonan las reglas y se convierten con las herramientas pySigma documentadas.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Convierte reglas Sigma a decoders/rules de Wazuh.",
+     "orden_instalacion": "Selecciona reglas; convierte e importa."
+    },
+    {
+     "id": "atomic-red-team",
+     "motivo": "Valida una regla Sigma ejecutando el atomic relacionado.",
+     "orden_instalacion": "Atomic → telemetría → regla Sigma."
+    },
+    {
+     "id": "crowdsec",
+     "motivo": "CrowdSec y Sigma cubren detección en red y logs.",
+     "orden_instalacion": "Despliega CrowdSec; aporta reglas Sigma al SIEM."
+    },
+    {
+     "id": "opencti",
+     "motivo": "Combinación recíproca: OpenCTI lo enlaza como «Reglas Sigma se gestionan junto al intel en el SOC».",
+     "orden_instalacion": "Orden indicado desde OpenCTI: Vincula detecciones Sigma a CTI en OpenCTI.",
+     "reciproca_de": "opencti"
+    },
+    {
+     "id": "osquery",
+     "motivo": "Combinación recíproca: osquery lo enlaza como «Traduce ideas Sigma a queries osquery».",
+     "orden_instalacion": "Orden indicado desde osquery: Diseña la query y despliega el pack.",
+     "reciproca_de": "osquery"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/SigmaHQ/sigma#readme",
+    "https://sigmahq.io/"
+   ],
+   "github": {
+    "name_with_owner": "SigmaHQ/sigma",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "r2026-07-01 (2026-07-09)"
+   }
+  },
+  "volatility3": {
+   "que_es": "Volatility 3 de Volatility Foundation; licencia propia (Volatility Software License) aunque la API marca NOASSERTION.",
+   "que_hace": "Interpreta dumps de memoria y reconstruye artefactos del sistema operativo.",
+   "como_lo_hace": "pip (`volatility3`) o editable desde el repo; requiere un memory dump previo.",
+   "combina_con": [
+    {
+     "id": "velociraptor",
+     "motivo": "Velociraptor adquiere; Volatility analiza.",
+     "orden_instalacion": "Adquisición → dump → Volatility3."
+    },
+    {
+     "id": "yara",
+     "motivo": "Escaneo YARA sobre regiones de memoria con plugins.",
+     "orden_instalacion": "Carga reglas YARA en el plugin adecuado."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "Reconstruye PCAP desde memoria y ábrelo en Wireshark.",
+     "orden_instalacion": "Plugin de red → Wireshark."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/volatilityfoundation/volatility3#readme",
+    "https://volatilityfoundation.org/"
+   ],
+   "github": {
+    "name_with_owner": "volatilityfoundation/volatility3",
+    "archived": false,
+    "pushed_at": "2026-10-12",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.28.2 (2026-09-17)"
+   }
+  },
+  "yara": {
+   "que_es": "Motor open source (BSD-3-Clause) mantenido en el org VirusTotal para matching de malware.",
+   "que_hace": "Evalúa reglas declarativas contra ficheros o memoria y reporta coincidencias.",
+   "como_lo_hace": "Se instala por paquetes o compilando desde fuente; se integra en sandboxes y MISP.",
+   "combina_con": [
+    {
+     "id": "ghidra",
+     "motivo": "YARA localiza candidatos; Ghidra los desensambla.",
+     "orden_instalacion": "Match YARA → abrir en Ghidra."
+    },
+    {
+     "id": "radare2",
+     "motivo": "Tras un match YARA, inspecciona el binario con radare2.",
+     "orden_instalacion": "Match YARA → abrir en radare2."
+    },
+    {
+     "id": "misp",
+     "motivo": "Publica reglas YARA como objetos MISP.",
+     "orden_instalacion": "Exporta la regla al evento MISP."
+    },
+    {
+     "id": "volatility3",
+     "motivo": "Combinación recíproca: Volatility 3 lo enlaza como «Escaneo YARA sobre regiones de memoria con plugins».",
+     "orden_instalacion": "Orden indicado desde Volatility 3: Carga reglas YARA en el plugin adecuado.",
+     "reciproca_de": "volatility3"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/VirusTotal/yara#readme",
+    "https://virustotal.github.io/yara/"
+   ],
+   "github": {
+    "name_with_owner": "VirusTotal/yara",
+    "archived": false,
+    "pushed_at": "2026-10-27",
+    "license": "BSD-3-Clause",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.6.0 (2026-10-27)"
+   }
+  },
+  "seclists": {
+   "que_es": "Proyecto de Daniel Miessler (MIT) adoptado por OWASP como set de wordlists de pentest.",
+   "que_hace": "Reúne diccionarios listos para descubrimiento, fuerza bruta y fuzzing en ejercicios autorizados.",
+   "como_lo_hace": "Solo hace falta clonar o descomprimir; no es un binario.",
+   "combina_con": [
+    {
+     "id": "ffuf",
+     "motivo": "SecLists alimenta ffuf.",
+     "orden_instalacion": "Clona SecLists; pasa la wordlist a ffuf."
+    },
+    {
+     "id": "hashcat",
+     "motivo": "Diccionarios de SecLists alimentan ataques de contraseña en lab.",
+     "orden_instalacion": "SecLists primero; Hashcat con la lista autorizada."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Algunas plantillas Nuclei usan wordlists externas.",
+     "orden_instalacion": "Configura la ruta a SecLists."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/danielmiessler/SecLists#readme",
+    "https://owasp.org/www-project-seclists/"
+   ],
+   "github": {
+    "name_with_owner": "danielmiessler/SecLists",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "2026.2 (2026-10-27)"
+   }
+  },
+  "payloadsallthethings": {
+   "que_es": "Wiki/cheatsheet MIT de swisskyrepo con payloads y metodología web ofensiva.",
+   "que_hace": "Organiza técnicas y payloads por clase de vulnerabilidad para uso en labs.",
+   "como_lo_hace": "Consulta web o clone local; no requiere instalación de binarios.",
+   "combina_con": [
+    {
+     "id": "zaproxy",
+     "motivo": "Usa payloads del repo dentro de ZAP.",
+     "orden_instalacion": "Define el alcance en ZAP; consulta PayloadsAllTheThings."
+    },
+    {
+     "id": "sqlmap",
+     "motivo": "Complementa SQLi manual del cheatsheet con sqlmap.",
+     "orden_instalacion": "Prueba manual; automatiza con sqlmap si procede."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Convierte ideas del cheatsheet en plantillas Nuclei.",
+     "orden_instalacion": "Redacta la plantilla y valídala en lab."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/swisskyrepo/PayloadsAllTheThings#readme",
+    "https://swisskyrepo.github.io/PayloadsAllTheThings/"
+   ],
+   "github": {
+    "name_with_owner": "swisskyrepo/PayloadsAllTheThings",
+    "archived": false,
+    "pushed_at": "2026-10-30",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "4.2 (2025-07-26)"
+   }
+  },
+  "evilginx2": {
+   "que_es": "Framework MITM de phishing moderno (BSD-3-Clause) de kgretzky; sucesor de Evilginx 2017.",
+   "que_hace": "Se interpone entre víctima y sitio legítimo, robando tokens de sesión además de passwords.",
+   "como_lo_hace": "Release Go + dominio/DNS controlados; phishlets YAML por proveedor.",
+   "combina_con": [
+    {
+     "id": "nuclei",
+     "motivo": "Tras el ejercicio, Nuclei puede buscar patrones relacionados en el perímetro propio.",
+     "orden_instalacion": "Define el alcance; Nuclei solo sobre activos autorizados."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Valida si el SOC detecta el patrón de proxy.",
+     "orden_instalacion": "Ejecuta el ejercicio; revisa alertas Wazuh."
+    },
+    {
+     "id": "atomic-red-team",
+     "motivo": "Complementa con atomics de phishing/inicial access.",
+     "orden_instalacion": "Atomic + Evilginx2 en purple team."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/kgretzky/evilginx2#readme"
+   ],
+   "github": {
+    "name_with_owner": "kgretzky/evilginx2",
+    "archived": false,
+    "pushed_at": "2026-06-10",
+    "license": "BSD-3-Clause",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.3.0 (2024-04-02)"
+   }
+  },
+  "peass-ng": {
+   "que_es": "Suite PEASS-ng (GPL) con LinPEAS y WinPEAS para privilege escalation enumeration.",
+   "que_hace": "Automatiza chequeos locales que un pentester haría a mano tras obtener una shell.",
+   "como_lo_hace": "Se bajan binarios/scripts de Releases y se ejecutan en el host objetivo autorizado.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Tras Meterpreter, PEASS enumera privesc.",
+     "orden_instalacion": "Sesión Metasploit → upload/ejecuta PEASS."
+    },
+    {
+     "id": "bloodhound",
+     "motivo": "En AD, BloodHound da rutas de dominio; PEASS el host.",
+     "orden_instalacion": "Usa ambos niveles."
+    },
+    {
+     "id": "lynis",
+     "motivo": "Lynis endurece; PEASS encuentra lo explotable.",
+     "orden_instalacion": "Audita con Lynis; valida con PEASS en lab."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/peass-ng/PEASS-ng#readme",
+    "https://book.hacktricks.xyz"
+   ],
+   "github": {
+    "name_with_owner": "peass-ng/PEASS-ng",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "C#",
+    "checked_at": "2026-11-16",
+    "latest_release": "20261116-7dd73e1d (2026-11-16)"
+   }
+  },
+  "osquery": {
+   "que_es": "Framework de instrumentación de SO con SQL, usado como agente de visibilidad.",
+   "que_hace": "Traduce el estado del sistema a tablas consultables con SQL en vivo o programado.",
+   "como_lo_hace": "Paquetes oficiales por SO; modo interactivo (`osqueryi`) o daemon con packs.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Wazuh puede ingerir o complementar telemetría tipo osquery.",
+     "orden_instalacion": "Despliega agentes; correlaciona."
+    },
+    {
+     "id": "velociraptor",
+     "motivo": "Osquery continuo; Velociraptor hunts IR.",
+     "orden_instalacion": "Baseline con osquery; IR con Velociraptor."
+    },
+    {
+     "id": "sigma",
+     "motivo": "Traduce ideas Sigma a queries osquery.",
+     "orden_instalacion": "Diseña la query y despliega el pack."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/osquery/osquery#readme",
+    "https://osquery.io"
+   ],
+   "github": {
+    "name_with_owner": "osquery/osquery",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "5.24.1 (2026-10-29)"
+   }
+  }
+ }
+}

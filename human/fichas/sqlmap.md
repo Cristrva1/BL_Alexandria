@@ -29,6 +29,7 @@ Escrito en Python; funciona con Python 2.7 y 3.x sin dependencias tras clonar el
 | [mitmproxy](mitmproxy.md) | sqlmap puede enviar su tráfico por un proxy como mitmproxy para inspeccionarlo o reutilizar peticiones capturadas (combinación por arquitectura). | Arranca mitmproxy; después ejecuta sqlmap con `--proxy`. |
 | [ZAP (Zed Attack Proxy)](zaproxy.md) | ZAP descubre parámetros sospechosos y sqlmap confirma y explota la inyección (combinación por arquitectura). | Escanea con ZAP; después pasa la petición guardada a sqlmap con `-r`. |
 | [ffuf](ffuf.md) | ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura). | Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap. |
+| [PayloadsAllTheThings](payloadsallthethings.md) | Combinación recíproca: PayloadsAllTheThings lo enlaza como «Complementa SQLi manual del cheatsheet con sqlmap». | Orden indicado desde PayloadsAllTheThings: Prueba manual; automatiza con sqlmap si procede. |
 
 **Notas:** Las técnicas de extracción pueden alterar datos o cargar el servidor; nunca lo uses en producción sin acuerdo previo.
 

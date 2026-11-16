@@ -29,6 +29,7 @@ Escrito en Java; se instala con los instaladores multiplataforma, paquetes o im�
 | [sqlmap](sqlmap.md) | Cuando ZAP señala una posible inyección SQL, sqlmap la confirma con más profundidad (combinación por arquitectura). | Escanea con ZAP; después guarda la petición y pásala a sqlmap con `-r`. |
 | [playwright](playwright.md) | Las pruebas E2E de Playwright pueden pasar por el proxy de ZAP para que analice el tráfico real de la aplicación (combinación por arquitectura). | Arranca ZAP como proxy; después configura el proxy en Playwright y ejecuta las pruebas. |
 | [Nuclei](nuclei.md) | Nuclei comprueba CVE concretos mientras ZAP analiza la lógica y las respuestas de la aplicación (combinación por arquitectura). | Ejecuta ambos escaneos sobre el mismo entorno de pruebas. |
+| [PayloadsAllTheThings](payloadsallthethings.md) | Combinación recíproca: PayloadsAllTheThings lo enlaza como «Usa payloads del repo dentro de ZAP». | Orden indicado desde PayloadsAllTheThings: Define el alcance en ZAP; consulta PayloadsAllTheThings. |
 
 **Notas:** No hay alternativa equivalente abierta en el catálogo (Burp Suite es propietario); mitmproxy es un proxy de depuración, no un escáner.
 

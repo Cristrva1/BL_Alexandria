@@ -30,6 +30,8 @@ Escrito en Go; se instala con paquetes, Docker o Helm. Las reglas y escenarios v
 | [Wazuh](wazuh.md) | CrowdSec bloquea en el perímetro y Wazuh correlaciona alertas de los equipos (combinación por arquitectura). | Despliega CrowdSec; después reenvía sus registros a Wazuh. |
 | [coolify](coolify.md) | Coolify usa Traefik como proxy, que puede protegerse con el bouncer de CrowdSec para Traefik (combinación por arquitectura). | CrowdSec en el servidor; después añade el bouncer como middleware de Traefik. |
 | [Traefik Proxy](traefik.md) | Combinación recíproca: Traefik Proxy lo enlaza como «CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware». | Orden indicado desde Traefik Proxy: CrowdSec en el servidor; después añade el bouncer como middleware de Traefik. |
+| [Falco](falco.md) | Combinación recíproca: Falco lo enlaza como «CrowdSec bloquea IPs; Falco detecta abuso dentro del host». | Orden indicado desde Falco: Complementa red (CrowdSec) con runtime (Falco). |
+| [Sigma](sigma.md) | Combinación recíproca: Sigma lo enlaza como «CrowdSec y Sigma cubren detección en red y logs». | Orden indicado desde Sigma: Despliega CrowdSec; aporta reglas Sigma al SIEM. |
 
 **Notas:** Compartir señales con la red comunitaria es opcional; revisa qué datos se envían.
 

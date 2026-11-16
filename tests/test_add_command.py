@@ -98,12 +98,14 @@ def test_full_batch_writes_entries_four_sections_and_reciprocity(project: Path):
     assert d["descripcion_github"]["latest_release"] == "v1.2.3 (2026-11-01)"
     assert d["getting_started"]["command"] == "pip install demo-tool"
     assert "alcance autorizado" in d["limits"]
-    # wazuh tenía 3 combinaciones y no es hub: recibe la recíproca, también en su lote 4s
-    assert "demo" in result.reciprocal.get("wazuh", [])
-    back = next(c for c in detail["wazuh"]["combina_con"] if c["id"] == "demo")
+    # al menos un destino no hub/saturado recibe la recíproca (p. ej. lynis tras las altas de ciber)
+    assert result.reciprocal, result.reciprocal
+    dest = next(iter(result.reciprocal))
+    assert "demo" in result.reciprocal[dest]
+    back = next(c for c in detail[dest]["combina_con"] if c["id"] == "demo")
     assert back["reciproca_de"] == "demo" and back["motivo"].startswith("Combinación recíproca")
     four = [json.loads(p.read_text(encoding="utf8")) for p in (project / "curation/descripciones-4s").glob("*.json")]
-    assert any("demo" in {c["id"] for c in (doc["repos"].get("wazuh") or {}).get("combina_con", [])} for doc in four)
+    assert any("demo" in {c["id"] for c in (doc["repos"].get(dest) or {}).get("combina_con", [])} for doc in four)
     assert (project / "curation/descripciones-4s/48-altas-prueba.json").exists()
     assert (project / "curation/altas/prueba.json").exists() and (project / "reports/altas/prueba.json").exists()
     assert not classify(combo_map(detail), exempt=add_mod.ligero_ids(compact))["violation"]

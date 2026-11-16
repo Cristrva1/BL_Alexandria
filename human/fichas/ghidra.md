@@ -33,9 +33,9 @@ Es una aplicación Java: se instala el JDK 25 de 64 bits, se descarga la release
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[angr](angr.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [craft-anything](craft-anything.md) · [rea](rea.md) · [rizin](rizin.md)
+[angr](angr.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [craft-anything](craft-anything.md) · [rea](rea.md) · [rizin](rizin.md) · [YARA](yara.md)
 
 **Notas:** Alternativas (elige una): radare2. Úsalo solo con software y sistemas que tengas derecho a analizar. Revisa los avisos de seguridad antes de abrir proyectos de terceros.
 

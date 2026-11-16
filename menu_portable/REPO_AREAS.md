@@ -1,6 +1,6 @@
 # Categorías y subcategorías prácticas
 
-101 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 115 subcategorías técnicas.
+103 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 117 subcategorías técnicas.
 
 Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.
 
@@ -60,7 +60,7 @@ Agentes y skills que guían revisiones de seguridad.
 
 Inspeccionar programas, ejecutables y formatos compilados.
 
-`angr`, `apktool`, `frida`, `ghidra`, `ilspy`, `imhex`, `jadx`, `radare2`, `rizin`
+`angr`, `apktool`, `frida`, `ghidra`, `ilspy`, `imhex`, `jadx`, `radare2`, `rizin`, `yara`
 
 ### Depuración e inspección
 
@@ -78,19 +78,19 @@ Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
 Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
-`bloodhound`, `metasploit`, `nmap`, `subfinder`
+`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `evilginx2`, `httpx`, `impacket`, `metasploit`, `naabu`, `netexec`, `nmap`, `peass-ng`, `sliver`, `subfinder`
 
 ### Detección y respuesta
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-`crowdsec`, `wazuh`
+`crowdsec`, `osquery`, `sigma`, `suricata`, `wazuh`, `zeek`
 
 ### Nube, contenedores e IaC
 
 Revisar imágenes, clústeres y cuentas de nube antes de publicar.
 
-`trivy`
+`checkov`, `falco`, `grype`, `prowler`, `trivy`
 
 ### Credenciales y privacidad
 
@@ -102,7 +102,19 @@ Gestionar contraseñas y proteger servicios personales.
 
 Directorios y material de referencia para orientar el análisis.
 
-`awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cybersecurity-skills`
+`awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cybersecurity-skills`, `payloadsallthethings`, `seclists`
+
+### Respuesta a incidentes y forense
+
+Recolectar evidencias, analizar memoria y cazar en endpoints propios.
+
+`velociraptor`, `volatility3`
+
+### Inteligencia de amenazas
+
+Compartir IOCs, modelar campañas y enriquecer el SOC.
+
+`misp`, `opencti`
 
 ## Producción audiovisual
 
