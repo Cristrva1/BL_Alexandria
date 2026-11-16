@@ -19,9 +19,9 @@
      "orden_instalacion": "Igual que arriba."
     },
     {
-     "id": "skills",
-     "motivo": "Alternativa más ligera para quien quiera controlar el proceso; el autor de esas skills compara las dos explícitamente (combinación por arquitectura).",
-     "orden_instalacion": "Elige una metodología por proyecto."
+     "id": "skillspector",
+     "motivo": "Revisar con SkillSpector los módulos de la V7, que se instalan como skills (`npx skills add …`), antes de dárselos al agente (combinación por arquitectura).",
+     "orden_instalacion": "Escanea la carpeta del módulo con SkillSpector; instala en el agente solo lo que pase la revisión."
     }
    ],
    "notas": "Alternativa (elige una): spec-kit. Usa la v6.12 si necesitas estabilidad.",
@@ -54,9 +54,9 @@
      "orden_instalacion": "Instala y autentica Codex antes de usar `/codex-plan`."
     },
     {
-     "id": "codex-plugin-cc",
-     "motivo": "Integración oficial más completa para delegar en Codex desde Claude Code (combinación por arquitectura).",
-     "orden_instalacion": "Si usas los dos, evita duplicar comandos de Codex."
+     "id": "skillspector",
+     "motivo": "Cada skill, agente o comando del toolkit es un plugin independiente: SkillSpector permite auditarlos antes de instalarlos (combinación por arquitectura).",
+     "orden_instalacion": "Clona o descarga el plugin, revísalo con SkillSpector y después instálalo con `/plugin install <nombre>@agent-toolkit`."
     }
    ],
    "notas": "Se quitó superpowers porque no hay integración.",
@@ -155,9 +155,9 @@
      "orden_instalacion": "Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada."
     },
     {
-     "id": "ponytail",
-     "motivo": "Enfoque parecido aplicado al código (combinación por arquitectura).",
-     "orden_instalacion": "Evita reglas contradictorias."
+     "id": "claude-code-usage-monitor",
+     "motivo": "Medir con el monitor de uso si el `CLAUDE.md` reduce de verdad el consumo; el propio README advierte que el archivo añade tokens de entrada en cada turno (combinación por arquitectura).",
+     "orden_instalacion": "Registra una semana de uso sin el archivo y otra con él antes de dejarlo fijo."
     }
    ],
    "fuentes": [
@@ -462,6 +462,11 @@
      "id": "adk-python",
      "motivo": "Construir agentes que se despliegan en Google Cloud (combinación por arquitectura).",
      "orden_instalacion": "Independientes."
+    },
+    {
+     "id": "antigravity-cli",
+     "motivo": "El README documenta la instalación de estas skills en Antigravity CLI con `agy plugin install`.",
+     "orden_instalacion": "Instala la CLI y añade solo los plugins necesarios."
     }
    ],
    "fuentes": [

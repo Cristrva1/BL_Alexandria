@@ -30,6 +30,12 @@ Se instala con paquetes, Docker o Helm, o se usa en Grafana Cloud. Está escrito
 | [supabase](supabase.md) | Fuente PostgreSQL nativa para paneles sobre Supabase. | Añade la conexión Postgres de Supabase como fuente. |
 | [Umami](umami.md) | Panel sobre la base PostgreSQL de Umami. (combinación por arquitectura) | Añade la base de Umami como fuente. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (21). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Apache Airflow](airflow.md) · [ClickHouse](clickhouse.md) · [CrowdSec](crowdsec.md) · [freqtrade](freqtrade.md) · [Headscale](headscale.md) · [hummingbot](hummingbot.md) · [k6](k6.md) · [Locust](locust.md) · [Matomo](matomo.md) · [NetBird](netbird.md) · [Node-RED](node-red.md) · [open-sol-bot](open-sol-bot.md) · [OpenLLMetry](openllmetry.md) · [Pi-hole](pi-hole.md) · [Plausible Analytics](plausible.md) · [Synapse](synapse.md) · [Temporal](temporal.md) · [Traefik Proxy](traefik.md) · [uPlot](uplot.md) · [Uptime Kuma](uptime-kuma.md) · [WireGuard Easy](wg-easy.md)
+
 **Notas:** Sin alternativas declaradas. AGPL: ofrecerlo modificado como servicio obliga a publicar cambios.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v13.3.1 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).

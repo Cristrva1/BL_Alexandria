@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+MasterDnsVPN, proyecto de investigación en Go para transportar tráfico TCP mediante consultas y respuestas DNS, de @masterking32. Licencia MIT. Tiene ~7.3k estrellas y existe una versión legacy en Python.
+
+## ¿Qué hace?
+
+Funciona como túnel DNS, parecido en objetivo a DNSTT o SlipStream, diseñado para tolerar resolvers diversos y redes hostiles. Las comparativas de velocidad y overhead del README son propias. Expone un SOCKS5 al cliente.
+
+## ¿Cómo lo hace?
+
+Requiere un servidor propio y un subdominio delegado (registro A más NS) y puede desplegarse con Docker. No puede compartir el puerto 53 con otro túnel DNS. El README advierte que usarlo fuera de entornos de prueba puede afectar la red y que eludir leyes locales puede tener consecuencias legales.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FreeDomain](freedomain.md) | Subdominio para la delegación NS. (combinación por arquitectura) | Registra el dominio y crea los registros A y NS. |
+| [free-for-dev](free-for-dev.md) | Buscar un VPS gratuito para el servidor. (combinación por arquitectura) | Elige un proveedor de la lista. |
+| [CasaOS](casaos.md) | Gestionar el contenedor en un servidor casero. (combinación por arquitectura) | Despliega la imagen Docker. |
+
+**Notas:** Sin alternativas declaradas. Herramienta de doble uso con implicaciones legales según el país; no se probó.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2026.10.26.100415-5f83ee9 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers |
 | Coste | Sin pago a un modelo en la ruta básica. No usa IA; servidor, dominio y ancho de banda tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio |
-
-Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers
-
-## Qué puedes hacer con él
-
-Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio.
-
-## Cómo funciona
 
 Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers
 

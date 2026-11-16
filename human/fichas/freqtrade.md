@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Freqtrade, bot de trading de criptomonedas en Python. Licencia GPL-3.0. Es muy maduro (~57k estrellas, 2026.10).
+
+## ¿Qué hace?
+
+Ejecuta estrategias en los principales exchanges, con backtesting, optimización de hiperparámetros, gráficos y FreqAI para modelos de ML adaptativos. Se controla por Telegram o una interfaz web. El README insiste en que es educativo y en empezar en modo dry-run.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.12+ y se instala con Docker (recomendado) o con un script. Se conecta a los exchanges mediante CCXT.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | Capa de conexión con exchanges. | Viene incluida como dependencia. |
+| [vectorbt](vectorbt.md) | Explorar ideas rápidamente antes de codificar la estrategia. (combinación por arquitectura) | Prototipa con vectorbt y porta a Freqtrade. |
+| [Grafana](grafana.md) | Paneles de rendimiento a partir de la base de datos del bot. (combinación por arquitectura) | Conecta Grafana a la base SQL de Freqtrade. |
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero alto: empieza en dry-run.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2026.10 (2026-10-30) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/freqtrade/freqtrade/blob/develop/README.md) · [2](https://www.freqtrade.io/en/stable/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Backtest y dry-run son fases distintas; no conectes resultados históricos con una promesa de rendimiento futuro |
 | Coste | El coste depende del proveedor o la ruta. El bot básico no exige LLM; FreqAI, datos, infraestructura y exchanges tienen requisitos y costes separados |
 | Equipo | Preparación según la ruta elegida. Docker o entorno de la guía; datos; estrategia de ejemplo; modo dry-run |
-
-Backtest y dry-run son fases distintas; no conectes resultados históricos con una promesa de rendimiento futuro
-
-## Qué puedes hacer con él
-
-Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simulación.
-
-## Por qué destaca
-
-Usos propuestos: Comparar una regla en datos históricos; Evaluar una estrategia en simulación.
-
-## Cómo funciona
 
 Backtest y dry-run son fases distintas; no conectes resultados históricos con una promesa de rendimiento futuro
 

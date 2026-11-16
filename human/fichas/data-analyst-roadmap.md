@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Hoja de ruta para aprender análisis de datos, de @mtahiraslan. Licencia MIT. Es pequeña (~1k estrellas) y su último cambio es de octubre de 2025.
+
+## ¿Qué hace?
+
+Explica el papel del analista de datos y recorre las etapas del aprendizaje (Excel, SQL, Python, estadística, visualización, BI) con enlaces a cursos y recursos gratuitos, sobre todo vídeos.
+
+## ¿Cómo lo hace?
+
+Es un README; no requiere instalación. Varios recursos enlazados pueden quedar desactualizados.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Practicar SQL analítico en local. (combinación por arquitectura) | Instala DuckDB y sigue los ejercicios de SQL. |
+| [marimo](marimo.md) | Practicar Python de análisis en notebooks reactivos. (combinación por arquitectura) | Usa marimo para los ejercicios de Python. |
+| [metabase](metabase.md) | Practicar BI y paneles. (combinación por arquitectura) | Conecta Metabase a un dataset de práctica. |
+
+**Notas:** Sin alternativas declaradas. Recurso introductorio, sin mantenimiento reciente.
+
+Estado en GitHub: activo · último push 2025-10-14 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero |
 | Coste | Sin pago a un modelo en la ruta básica. Leer la hoja de ruta no necesita API; cursos y herramientas enlazados pueden ser de pago |
 | Equipo | Preparación según la ruta elegida. Navegador; tiempo de estudio; una tabla pequeña de práctica |
-
-Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero
-
-## Qué puedes hacer con él
-
-Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.
-
-## Por qué destaca
-
-Usos propuestos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto.
-
-## Cómo funciona
 
 Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero
 

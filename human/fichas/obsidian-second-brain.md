@@ -30,6 +30,8 @@ Requiere Claude Code (u otra de las plataformas soportadas), `git` y `uv` para l
 | [Codex CLI](codex.md) | Soportado mediante el build de Agent Skills. | Genera el build e instálalo con `npx skills add … -a codex`. |
 | [yt-dlp](yt-dlp.md) | Descargar vídeos para la ingesta visual (`--visual`), como documenta el README. | Instala yt-dlp y ffmpeg antes de usar la opción `--visual`. |
 | [obsidian-skills](obsidian-skills.md) | Formatos oficiales de Obsidian (Bases, Canvas) para las notas que escribe el agente. (combinación por arquitectura) | Instala obsidian-skills en el mismo agente. |
+| [40-questions](40-questions.md) | Combinación recíproca: 40-questions lo enlaza como «Guardar las respuestas como notas enlazadas que un agente puede consultar después. (combinación por arquitectura) (son datos muy personales: valora si quieres que un agente los lea)». | Orden indicado desde 40-questions: Escribe las respuestas en el vault y deja que la skill las indexe. |
+| [notebooklm-py](notebooklm-py.md) | Combinación recíproca: notebooklm-py lo enlaza como «El README propone ejecutar la CLI desde la raíz de una bóveda de Obsidian para que informes y mapas queden como archivos (combinación por arquitectura con esta plantilla)». | Orden indicado desde notebooklm-py: Configura la bóveda primero; ejecuta la CLI desde su carpeta raíz. |
 
 **Notas:** Alternativas (elige una): claude-obsidian. No armes el agente en segundo plano sin revisar qué puede escribir.
 

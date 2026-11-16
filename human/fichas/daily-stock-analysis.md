@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Sistema de análisis inteligente de acciones con LLM (股票智能分析系统), de @ZhuLinsen. Licencia MIT. Es muy popular (~73k estrellas, v3.34.0) y su README, principalmente en chino, incluye patrocinios de proveedores de modelos.
+
+## ¿Qué hace?
+
+Analiza cada día una lista de acciones de los mercados A, Hong Kong, EE. UU., Japón, Corea y Taiwán y envía un «panel de decisión» por WeCom, Feishu, Telegram, Discord, Slack o email. Combina datos de mercado, noticias e indicadores con un LLM.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con GitHub Actions (sin servidor), Docker, tareas programadas locales o un servicio FastAPI, instalando con `pip install -r requirements.txt`. Usa cualquier API compatible con OpenAI (DeepSeek, Qwen…) y Ollama para despliegues locales o en Docker.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales recomendados para despliegues locales o Docker. | Arranca Ollama y configura su URL. |
+| [activepieces](activepieces.md) | Encadenar el informe con otros flujos o avisos. (combinación por arquitectura) | Recibe el informe por webhook o email en Activepieces. |
+| [litellm](litellm.md) | Centralizar proveedores compatibles con OpenAI. (combinación por arquitectura) | Apunta `OPENAI_API_KEY`/base URL al proxy LiteLLM. |
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.34.0 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El panel generado no verifica por sí solo la exactitud financiera; una ejecución programada necesita infraestructura aunque tenga cupo gratuito |
 | Coste | El coste depende del proveedor o la ruta. Ollama sirve para despliegue local; Actions normalmente usa API Cloud; datos, modelos y notificaciones tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Python; proveedor LLM u Ollama; fuentes de datos; notificaciones solo si las configuras |
-
-El panel generado no verifica por sí solo la exactitud financiera; una ejecución programada necesita infraestructura aunque tenga cupo gratuito
-
-## Qué puedes hacer con él
-
-Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un resumen de investigación; Comparar noticias y datos de una lista de seguimiento.
-
-## Cómo funciona
 
 El panel generado no verifica por sí solo la exactitud financiera; una ejecución programada necesita infraestructura aunque tenga cupo gratuito
 
@@ -98,12 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; proveedor LLM u Ollama; fuentes de datos; notificaciones solo si las configuras
 - **Etiquetas:** `analytics` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

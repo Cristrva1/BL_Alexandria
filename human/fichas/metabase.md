@@ -30,6 +30,12 @@ Se ejecuta como JAR (Java) o con Docker y necesita una base de aplicación (Post
 | [posthog](posthog.md) | BI sobre datos exportados de PostHog. (combinación por arquitectura) | Sincroniza los datos a una base que lea Metabase. |
 | [echarts](echarts.md) | Visualizaciones basadas en ECharts. (combinación por arquitectura) | No requiere instalación aparte. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Appsmith](appsmith.md) · [Baserow](baserow.md) · [ClickHouse](clickhouse.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [ERPNext](erpnext.md) · [Matomo](matomo.md) · [NocoDB](nocodb.md) · [Odoo](odoo.md) · [Teable](teable.md) · [Umami](umami.md)
+
 **Notas:** Alternativas (elige una): superset, redash.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.65.4 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

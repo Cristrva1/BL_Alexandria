@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Colección de modelos preentrenados portados a TensorFlow.js, de Google. Licencia Apache-2.0. Tiene ~15k estrellas y está poco activa (último cambio en junio de 2026).
+
+## ¿Qué hace?
+
+Ofrece modelos listos para el navegador o Node: MobileNet, COCO-SSD, detección de pose, manos y landmarks faciales, DeepLab, toxicidad, comandos de voz y otros, para usar directamente o en transfer learning.
+
+## ¿Cómo lo hace?
+
+Se instala por paquete npm (por ejemplo `npm i @tensorflow-models/pose-detection`) o desde unpkg, junto con `@tensorflow/tfjs`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [mediapipe](mediapipe.md) | Runtime alternativo en pose-detection. | Elige el runtime `mediapipe`. |
+| [tensorflow](tensorflow.md) | Entrenar en Python y convertir a TF.js. (combinación por arquitectura) | Convierte con tensorflowjs_converter. |
+| [three.js](three-js.md) | Interacción 3D a partir de pose o manos. (combinación por arquitectura) | Mapea los keypoints a la escena. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-06-23 · última versión publicada tasks-v0.0.1-alpha.6 (2021-05-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tensorflow/tfjs-models/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Cada modelo tiene su paquete, guía y licencia; no existe una instalación única que haga funcionar automáticamente toda la colección |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita API de IA para modelos descargados; descarga, hosting y equipo tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Proyecto JavaScript; modelo específico; navegador o runtime compatible |
-
-Cada modelo tiene su paquete, guía y licencia; no existe una instalación única que haga funcionar automáticamente toda la colección
-
-## Qué puedes hacer con él
-
-Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.
-
-## Por qué destaca
-
-Usos propuestos: Probar ML en el navegador; Preparar una demo de landmarks.
-
-## Cómo funciona
 
 Cada modelo tiene su paquete, guía y licencia; no existe una instalación única que haga funcionar automáticamente toda la colección
 

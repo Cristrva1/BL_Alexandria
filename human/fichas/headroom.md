@@ -30,6 +30,8 @@ Se instala con `pip install headroom-ai` (o con extras `[proxy]`/`[all]`) y se u
 | [litellm](litellm.md) | Integración citada en el README para apps que llaman a LiteLLM. | Comprime los mensajes antes de enviarlos por LiteLLM. |
 | [Context-Engineering](context-engineering.md) | Aplicar técnicas de ingeniería de contexto junto a la compresión. (combinación por arquitectura) | Diseña el contexto y comprime después lo voluminoso. |
 | [codegraph](codegraph.md) | Reducir lecturas de código con un índice semántico. (combinación por arquitectura) | Usa codegraph para localizar y Headroom para comprimir. |
+| [Claude-Code-Usage-Monitor](claude-code-usage-monitor.md) | Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el ahorro de compresión de contexto. (combinación por arquitectura)». | Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo con y sin `headroom wrap claude`. |
+| [MiMo-Code](mimo-code.md) | Combinación recíproca: MiMo-Code lo enlaza como «Comprimir el contexto en sesiones largas. (combinación por arquitectura)». | Orden indicado desde MiMo-Code: Envuelve el agente con Headroom si es compatible. |
 
 **Notas:** Alternativas (elige una): rtk. El número de estrellas crece de forma inusual para un proyecto tan joven; los ahorros son mediciones del propio proyecto.
 

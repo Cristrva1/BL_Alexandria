@@ -49,6 +49,7 @@ Si tienes pocos documentos y cortos, pegarlos en el contexto del modelo es más 
 - En lugar de [Docling](../fichas/docling.md): [Marker](../fichas/marker.md), [MinerU](../fichas/mineru.md), [Unstructured](../fichas/unstructured.md)
 - En lugar de [LlamaIndex](../fichas/llama-index.md): [Haystack](../fichas/haystack.md), [langchain](../fichas/langchain.md)
 - En lugar de [Qdrant](../fichas/qdrant.md): [Milvus](../fichas/milvus.md), [Chroma](../fichas/chroma.md), [pgvector](../fichas/pgvector.md)
+- En lugar de [litellm](../fichas/litellm.md): [OmniRoute](../fichas/omniroute.md), [claude-code-router](../fichas/claude-code-router.md), [backdoor](../fichas/backdoor.md)
 - En lugar de [Ragas](../fichas/ragas.md): [DeepEval](../fichas/deepeval.md), [promptfoo](../fichas/promptfoo.md)
 - En lugar de [langfuse](../fichas/langfuse.md): [Phoenix](../fichas/phoenix.md), [Opik](../fichas/opik.md), [MLflow](../fichas/mlflow.md)
 

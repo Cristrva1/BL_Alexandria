@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Social Media Agent, agente de ejemplo de LangChain que convierte una URL en publicaciones para X y LinkedIn. Licencia MIT. Tiene ~3k estrellas; es más una plantilla que un producto.
+
+## ¿Qué hace?
+
+Extrae el contenido de la URL, redacta la publicación y usa un flujo human-in-the-loop (Agent Inbox) para revisarla y programarla. Admite crons, scripts predefinidos y estilos personalizables.
+
+## ¿Cómo lo hace?
+
+Se ejecuta en un servidor LangGraph JS (`npx @langchain/langgraph-cli dev`). Necesita claves de LLM, Firecrawl y Arcade (autenticación en redes sociales); la configuración completa añade Supabase, Slack y GitHub.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph.js](langgraphjs.md) | Runtime del agente. | Arranca el servidor LangGraph. |
+| [firecrawl](firecrawl.md) | Scraping de las URLs. | Añade `FIRECRAWL_API_KEY`. |
+| [supabase](supabase.md) | Almacenamiento de imágenes en la configuración completa. | Crea el proyecto y añade las claves. |
+
+**Notas:** Sin alternativas declaradas. Publica en cuentas reales: revisa siempre antes de aprobar.
+
+Estado en GitHub: activo · último push 2026-11-11 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/social-media-agent/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones |
 | Coste | Consumo de APIs o servicios. APIs del modelo, servicios de ejecución y redes tienen sus costes y límites |
 | Equipo | Preparación según la ruta elegida. Node y Yarn; claves de modelo y servicios; cuentas sociales solo al conectar publicación |
-
-El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones
-
-## Qué puedes hacer con él
-
-Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto.
-
-## Cómo funciona
 
 El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y Yarn; claves de modelo y servicios; cuentas sociales solo al conectar publicación
 - **Etiquetas:** `asistentes` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph.js](langgraphjs.md) | 3.4k | Versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
 
 ## Enlaces
 

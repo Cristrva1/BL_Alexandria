@@ -138,6 +138,18 @@
      "id": "claude-code",
      "motivo": "Escribir y depurar scripts de angr con un agente. (combinación por arquitectura)",
      "orden_instalacion": "Instala angr en un entorno virtual y abre el proyecto con el agente."
+    },
+    {
+     "id": "ghidramcp",
+     "motivo": "Combinación recíproca: GhidraMCP lo enlaza como «Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde GhidraMCP: Usa angr en scripts aparte sobre el mismo binario.",
+     "reciproca_de": "ghidramcp"
+    },
+    {
+     "id": "rizin",
+     "motivo": "Combinación recíproca: rizin lo enlaza como «Ejecución simbólica sobre las rutas que identifiques en Rizin. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde rizin: Localiza la función en Rizin y modela la búsqueda en angr.",
+     "reciproca_de": "rizin"
     }
    ],
    "notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
@@ -246,6 +258,18 @@
      "id": "ghidra",
      "motivo": "Analizar las librerías nativas `.so` que JADX no cubre. (combinación por arquitectura)",
      "orden_instalacion": "Extrae `lib/` de la APK y ábrelas en Ghidra."
+    },
+    {
+     "id": "rea",
+     "motivo": "Combinación recíproca: rea lo enlaza como «Análisis de APK mediante JADX headless».",
+     "orden_instalacion": "Orden indicado desde rea: Instala JADX y un JDK completo.",
+     "reciproca_de": "rea"
+    },
+    {
+     "id": "awesome-ai-reverse-engineering",
+     "motivo": "Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Herramienta móvil de la lista. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-ai-reverse-engineering: Úsalo con un servidor MCP de Android si lo necesitas.",
+     "reciproca_de": "awesome-ai-reverse-engineering"
     }
    ],
    "notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
@@ -354,6 +378,12 @@
      "id": "dnspy",
      "motivo": "Cubrir la parte .NET de un proceso mixto. (combinación por arquitectura)",
      "orden_instalacion": "Usa dnSpyEx para el código gestionado y x64dbg para el nativo."
+    },
+    {
+     "id": "raddebugger",
+     "motivo": "Combinación recíproca: raddebugger lo enlaza como «Depurar binarios ajenos sin símbolos, que no son el foco de RAD Debugger. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde raddebugger: Usa RAD Debugger para tu código con símbolos y x64dbg para binarios cerrados.",
+     "reciproca_de": "raddebugger"
     }
    ],
    "notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar. Analiza malware solo en una máquina virtual aislada.",
@@ -462,6 +492,24 @@
      "id": "k6",
      "motivo": "Convertir tráfico capturado en un HAR y de ahí en un script de carga con el conversor HAR de k6. (combinación por arquitectura) (la exportación HAR de mitmproxy depende de la versión)",
      "orden_instalacion": "Captura con mitmproxy, exporta a HAR y conviértelo con `har-to-k6`."
+    },
+    {
+     "id": "apktool",
+     "motivo": "Combinación recíproca: Apktool lo enlaza como «Modificar `network_security_config` para que la app confíe en el certificado de mitmproxy. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Apktool: Edita la configuración con Apktool, reconstruye, firma e intercepta.",
+     "reciproca_de": "apktool"
+    },
+    {
+     "id": "selenium",
+     "motivo": "Combinación recíproca: Selenium lo enlaza como «Inspección de tráfico en pruebas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Selenium: Configura el proxy en el navegador.",
+     "reciproca_de": "selenium"
+    },
+    {
+     "id": "shannon",
+     "motivo": "Combinación recíproca: shannon lo enlaza como «Observar el tráfico de la prueba contra el entorno de staging. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde shannon: Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas.",
+     "reciproca_de": "shannon"
     }
    ],
    "notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",

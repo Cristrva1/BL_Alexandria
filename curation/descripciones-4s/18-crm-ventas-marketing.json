@@ -6,12 +6,12 @@
   "odoo": {
    "que_es": "Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.",
    "que_hace": "Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, facturación y contabilidad, punto de venta, recursos humanos, marketing y fabricación. Cada app funciona sola, pero al instalar varias se integran en un ERP completo. Casos típicos: gestión comercial y de inventario de pymes, facturación y tienda en línea conectadas.",
-   "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].",
+   "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones de terceros, como la pieza `odoo` de Activepieces [DATO NO VERIFICADO: protocolo exacto según versión].",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "n8n tiene un nodo Odoo para crear o leer contactos, oportunidades y otros registros desde flujos.",
-     "orden_instalacion": "Odoo primero con un usuario de integración y clave de API; después la credencial en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos.",
+     "orden_instalacion": "Odoo en marcha con sus credenciales; después añade la pieza `odoo` en un flujo de Activepieces."
     },
     {
      "id": "metabase",
@@ -29,7 +29,7 @@
     "https://github.com/odoo/odoo/blob/20.0/README.md",
     "https://github.com/odoo/odoo/blob/20.0/LICENSE",
     "https://www.odoo.com/documentation/19.0/administration/on_premise/source.html",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/"
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo"
    ],
    "github": {
     "name_with_owner": "odoo/odoo",
@@ -51,24 +51,31 @@
      "orden_instalacion": "Instala la CLI de Twenty y las skills; inicia sesión en tu espacio con `twenty auth login` antes de publicar."
     },
     {
-     "id": "n8n",
-     "motivo": "Sincronizar contactos y oportunidades con otros sistemas usando la API de Twenty desde nodos HTTP (combinación por arquitectura).",
-     "orden_instalacion": "Crea una clave de API en Twenty y úsala en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos.",
+     "orden_instalacion": "twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces."
     },
     {
      "id": "evolution-api",
-     "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura).",
-     "orden_instalacion": "Evolution API y n8n primero; después el flujo que escribe en Twenty."
+     "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura).",
+     "orden_instalacion": "Evolution API y Activepieces primero; después el flujo que escribe en Twenty."
     },
     {
      "id": "cal.diy",
      "motivo": "Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio).",
      "orden_instalacion": "Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty."
+    },
+    {
+     "id": "docuseal",
+     "motivo": "Combinación recíproca: docuseal lo enlaza como «Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde docuseal: Usa un flujo intermedio con el webhook de DocuSeal.",
+     "reciproca_de": "docuseal"
     }
    ],
    "fuentes": [
     "https://github.com/twentyhq/twenty/blob/main/README.md",
-    "https://docs.twenty.com/developers/self-host/capabilities/docker-compose"
+    "https://docs.twenty.com/developers/self-host/capabilities/docker-compose",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/twenty"
    ],
    "github": {
     "name_with_owner": "twentyhq/twenty",
@@ -86,9 +93,9 @@
    "como_lo_hace": "Se basa en Frappe Framework, un framework web completo en Python y JavaScript con capa de abstracción de base de datos, autenticación y API REST, y en Frappe UI (Vue) para la interfaz. Para autoalojar se usa `frappe_docker` con Docker y Docker Compose v2; el entorno rápido es solo de evaluación y no admite apps personalizadas, por lo que para producción se sigue la guía completa. Frappe Cloud gestiona instalación, actualizaciones y copias.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "n8n tiene un nodo ERPNext para crear y consultar documentos (clientes, pedidos, facturas) desde flujos.",
-     "orden_instalacion": "ERPNext primero con un usuario y claves de API; después la credencial en n8n."
+     "id": "activepieces",
+     "motivo": "Crear y consultar documentos de ERPNext (clientes, pedidos, facturas) desde flujos con la pieza HTTP contra su API REST. (combinación por arquitectura)",
+     "orden_instalacion": "ERPNext primero con un usuario y claves de API; después el flujo en Activepieces."
     },
     {
      "id": "metabase",
@@ -103,8 +110,7 @@
    ],
    "notas": "Alternativa (elige una): odoo.",
    "fuentes": [
-    "https://github.com/frappe/erpnext/blob/develop/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext/"
+    "https://github.com/frappe/erpnext/blob/develop/README.md"
    ],
    "github": {
     "name_with_owner": "frappe/erpnext",
@@ -158,9 +164,9 @@
    "como_lo_hace": "Un binario en Go con PostgreSQL como único almacén. Se instala con Docker Compose (archivo de ejemplo en el repositorio) o descargando el binario: `./listmonk --new-config`, `--install` para preparar la base y luego `./listmonk`; la interfaz queda en el puerto 9000. Envía por colas multihilo con varios servidores SMTP y límites de tasa con ventana deslizante; según su web, una campaña de más de 7 millones de correos usó una fracción de un núcleo y 57 MB de RAM.",
    "combina_con": [
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Alta de suscriptores o envíos transaccionales desde formularios y otros sistemas usando la API de listmonk (combinación por arquitectura).",
-     "orden_instalacion": "Crea un token de API con permisos acotados en listmonk y úsalo en nodos HTTP de n8n."
+     "orden_instalacion": "Crea un token de API con permisos acotados en listmonk y úsalo en la pieza HTTP de Activepieces."
     },
     {
      "id": "novu",
@@ -196,9 +202,9 @@
    "como_lo_hace": "Es una aplicación PHP que se instala con Composer siguiendo la documentación de línea de comandos (o descargando el paquete), con requisitos y versiones soportadas publicados en su documentación; el repositorio incluye configuración DDEV para desarrollo local. Necesita un servidor web con PHP y una base de datos MySQL/MariaDB [DATO NO VERIFICADO: versiones exactas] y tareas cron para procesar segmentos y campañas.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "n8n tiene un nodo Mautic para crear o actualizar contactos y añadirlos a segmentos o campañas.",
-     "orden_instalacion": "Mautic primero con la API activada y credenciales; después la credencial en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos.",
+     "orden_instalacion": "mautic en marcha con sus credenciales; después añade la pieza `mautic` en un flujo de Activepieces."
     },
     {
      "id": "marketingskills",
@@ -214,7 +220,7 @@
    "notas": "Se solapa con listmonk en envío masivo de email; usa uno como canal principal de boletines.",
    "fuentes": [
     "https://github.com/mautic/mautic/blob/7.x/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/"
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/mautic"
    ],
    "github": {
     "name_with_owner": "mautic/mautic",
@@ -232,9 +238,9 @@
    "como_lo_hace": "Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior; requiere Node.js 18 o superior y se recomienda Yarn. Se instala clonando el repositorio, instalando paquetes con yarn y configurando variables de entorno, o con la imagen Docker `calcom/cal.diy`.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "n8n tiene un disparador de Cal.com para reaccionar a reservas, cancelaciones o reprogramaciones; con cal.diy hay que apuntarlo a tu instancia [DATO NO VERIFICADO: compatibilidad con instancia propia].",
-     "orden_instalacion": "cal.diy accesible para n8n y clave de API; después el disparador."
+     "id": "activepieces",
+     "motivo": "Reaccionar a reservas, cancelaciones o reprogramaciones recibiendo los webhooks de cal.diy en un disparador Webhook de Activepieces. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el webhook en tu instancia de cal.diy apuntando a la URL del flujo."
     },
     {
      "id": "twenty-main",
@@ -245,11 +251,16 @@
      "id": "botpress",
      "motivo": "Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO].",
      "orden_instalacion": "Instancia accesible por internet y token de API antes de configurar la integración."
+    },
+    {
+     "id": "compai-crm",
+     "motivo": "Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado.",
+     "reciproca_de": "compai-crm"
     }
    ],
    "fuentes": [
-    "https://github.com/calcom/cal.diy/blob/main/README.md",
-    "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/"
+    "https://github.com/calcom/cal.diy/blob/main/README.md"
    ],
    "github": {
     "name_with_owner": "calcom/cal.diy",
@@ -277,7 +288,7 @@
      "orden_instalacion": "Después del CRM; conecta las invitaciones al buzón sincronizado."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Mover datos del CRM a otros sistemas mediante su API (combinación por arquitectura).",
      "orden_instalacion": "CRM desplegado y con API accesible; después el flujo."
     }
@@ -350,6 +361,24 @@
      "id": "geo-seo-claude",
      "motivo": "Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura).",
      "orden_instalacion": "Después de conectar el MCP de OpenSEO al agente."
+    },
+    {
+     "id": "claude-seo",
+     "motivo": "Combinación recíproca: claude-seo lo enlaza como «Datos de palabras clave y posiciones vía MCP (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-seo: Conecta el MCP de OpenSEO al mismo agente.",
+     "reciproca_de": "claude-seo"
+    },
+    {
+     "id": "cloud-mail",
+     "motivo": "Combinación recíproca: cloud-mail lo enlaza como «Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cloud-mail: Configura el dominio en Cloudflare primero; separa subdominios por servicio.",
+     "reciproca_de": "cloud-mail"
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Combinación recíproca: Marketing Skills lo enlaza como «Datos SEO vía MCP para las skills de SEO (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marketing Skills: Conecta el MCP de OpenSEO antes de usar las skills de SEO.",
+     "reciproca_de": "marketingskills"
     }
    ],
    "notas": "Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel.",
@@ -372,9 +401,9 @@
    "como_lo_hace": "Monorepo en TypeScript con Next.js (React), NestJS, Temporal para flujos y Prisma con PostgreSQL por defecto. En autoalojamiento debes configurar PostgreSQL, Redis, almacenamiento y variables de entorno, y crear tus propias apps de desarrollador en cada red (la aprobación de Meta, YouTube o TikTok puede tardar semanas). Se despliega con Docker, Coolify, Railway o cualquier VPS; la IA requiere tus propias claves de OpenAI u otros proveedores.",
    "combina_con": [
     {
-     "id": "n8n",
-     "motivo": "Nodo personalizado oficial de n8n para publicar desde flujos (por ejemplo, al aprobar un contenido).",
-     "orden_instalacion": "Postiz primero con clave de API pública; después instala el nodo en n8n."
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos.",
+     "orden_instalacion": "postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces."
     },
     {
      "id": "claude-code",
@@ -385,11 +414,30 @@
      "id": "coolify",
      "motivo": "Ruta de despliegue citada en el README.",
      "orden_instalacion": "Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque."
+    },
+    {
+     "id": "humanizer",
+     "motivo": "Combinación recíproca: Humanizer lo enlaza como «Revisar publicaciones antes de programarlas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Humanizer: Humaniza primero; programa después.",
+     "reciproca_de": "humanizer"
+    },
+    {
+     "id": "instagram-agent-skill",
+     "motivo": "Combinación recíproca: instagram-agent-skill lo enlaza como «Programar las publicaciones aprobadas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde instagram-agent-skill: Aprueba el contenido antes de enviarlo a Postiz.",
+     "reciproca_de": "instagram-agent-skill"
+    },
+    {
+     "id": "linkedin-agent-skill",
+     "motivo": "Combinación recíproca: linkedin-agent-skill lo enlaza como «Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde linkedin-agent-skill: Aprueba antes de programar.",
+     "reciproca_de": "linkedin-agent-skill"
     }
    ],
    "fuentes": [
     "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
-    "https://docs.postiz.com/public-api"
+    "https://docs.postiz.com/public-api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/postiz"
    ],
    "github": {
     "name_with_owner": "gitroomhq/postiz-app",
@@ -407,9 +455,9 @@
    "como_lo_hace": "Se despliega en Cloudflare Workers para reducir costes de servidor: backend con el framework Hono y el ORM Drizzle, frontend Vue 3 con Element Plus, base de datos Cloudflare D1, caché KV y archivos en R2. El envío usa Cloudflare Email o Resend.",
    "combina_con": [
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Usar la API abierta para crear buzones en lote o procesar correos recibidos en flujos (combinación por arquitectura).",
-     "orden_instalacion": "Despliega cloud-mail y crea un token de API; después llama a la API desde n8n."
+     "orden_instalacion": "Despliega cloud-mail y crea un token de API; después llama a la API desde Activepieces."
     },
     {
      "id": "open-seo",

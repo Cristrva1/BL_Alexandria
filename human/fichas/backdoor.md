@@ -28,9 +28,9 @@ Es un proyecto en Python de menos de 600 líneas (servidor, asistente de configu
 |---|---|---|
 | [Claude Code](claude-code.md) | Es el cliente que Backdoor redirige. | Instala Claude Code y luego configura Backdoor. |
 | [Ollama](ollama.md) | Proveedor local documentado en el README. | Arranca Ollama y elígelo como backend. |
-| [litellm](litellm.md) | Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura) | Apunta Backdoor a la URL del proxy LiteLLM. |
+| [vLLM](vllm.md) | vLLM sirve modelos propios con API compatible con OpenAI, el tipo de proveedor al que Backdoor redirige Claude Code. (combinación por arquitectura) | Levanta vLLM primero y apunta Backdoor a su URL base. |
 
-**Notas:** Sin alternativas declaradas. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.
+**Notas:** Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.
 
 Estado en GitHub: activo · último push 2026-05-22 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -110,6 +110,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba
 - **Etiquetas:** `serving` `ai` `anthropic` `claude` `claude-code` `deepseek` `llm` `ollama`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OmniRoute](omniroute.md) | 87.5k | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
+| [claude-code-router](claude-code-router.md) | 38.1k | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
+| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces
 

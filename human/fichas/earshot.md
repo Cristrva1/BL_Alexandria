@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+earshot, «oídos para agentes de código»: herramientas locales de análisis de audio, de @Leonxlnx. Licencia MIT. Es muy reciente (octubre de 2026, ~4.9k estrellas, v0.4.1).
+
+## ¿Qué hace?
+
+Convierte sonido en evidencia para un agente: describe un archivo en palabras, mide su ajuste a una descripción, encuentra el mejor momento, distingue grabación real de sonido sintetizado y genera transcripciones de escucha y puntuaciones. También crea sonidos en código y los mejora escuchándolos (`forge`) o traduce grabaciones a código (`fit`).
+
+## ¿Cómo lo hace?
+
+Funciona en CPU como CLI, API Python y servidor MCP; se instala con `uv tool install "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot"`. La crítica con Gemini es opcional y requiere clave propia.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Servidor MCP para agentes. | Añade `earshot mcp` al agente. |
+| [remotion](remotion.md) | Revisar el sonido de vídeos programáticos. (combinación por arquitectura) | Analiza el render con earshot. |
+| [FFmpeg](ffmpeg.md) | Extraer audio de vídeos. (combinación por arquitectura) | Extrae la pista antes de analizar. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.4.1 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Leonxlnx/earshot/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas |
 | Coste | El coste depende del proveedor o la ruta. Análisis local en CPU con descarga inicial de modelos; agente, generación opcional y referencias musicales tienen costes o licencias separados |
 | Equipo | Preparación según la ruta elegida. Python; uv; espacio para modelos CPU; audio propio; cliente MCP opcional |
-
-Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas
-
-## Qué puedes hacer con él
-
-Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.
-
-## Por qué destaca
-
-Usos propuestos: Revisar una mezcla con un agente; Analizar un efecto sonoro.
-
-## Cómo funciona
 
 Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas
 

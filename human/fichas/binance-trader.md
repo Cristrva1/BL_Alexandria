@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Binance Trader, bot experimental de Python para operar en Binance, de @yasinkuyu. El README declara MIT pero el repo no tiene archivo de licencia que GitHub detecte. Tiene ~3k estrellas y su última versión (v1.1.0) es de enero de 2026.
+
+## ¿Qué hace?
+
+Automatiza compras y ventas con una estrategia sencilla basada en márgenes sobre pares de Binance. La v1.1.0 corrige errores antiguos de órdenes, precisión de lotes y concurrencia.
+
+## ¿Cómo lo hace?
+
+Es un script de Python con dependencias mínimas (`requests`) y una imagen Docker. Requiere claves de API de Binance.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | Migrar a una librería de exchanges mantenida y multiplataforma. (combinación por arquitectura) | Reescribe las llamadas con CCXT. |
+| [vectorbt](vectorbt.md) | Evaluar la estrategia con datos históricos. (combinación por arquitectura) | Backtestea antes de usar dinero real. |
+| [coolify](coolify.md) | Desplegar su imagen Docker en un servidor propio gestionado con Coolify (combinación por arquitectura). | Coolify primero; las claves de API de Binance como secretos y con permisos mínimos (sin retirada de fondos). |
+
+**Notas:** Sin alternativas declaradas. Proyecto experimental. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-01-03 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/yasinkuyu/binance-trader/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Bot experimental con documentación antigua; no se confirma que sus endpoints funcionen hoy ni que tenga una simulación completa |
 | Coste | El coste depende del proveedor o la ruta. No usa LLM; operaciones, datos, red y exchange tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Python y dependencias históricas; API Binance solo para funciones privadas; entorno aislado |
-
-Bot experimental con documentación antigua; no se confirma que sus endpoints funcionen hoy ni que tenga una simulación completa
-
-## Qué puedes hacer con él
-
-Bot experimental de Python para estudiar estrategias y automatización con la API de Binance.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange.
-
-## Cómo funciona
 
 Bot experimental con documentación antigua; no se confirma que sus endpoints funcionen hoy ni que tenga una simulación completa
 
