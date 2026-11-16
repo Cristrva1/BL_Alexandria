@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-58 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+59 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Opciones para empezar
 
@@ -33,7 +33,7 @@ Diseñar y construir pantallas desde una interfaz visual.
 
 Piezas de interfaz y CSS para construir una web.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -50,6 +50,7 @@ Piezas de interfaz y CSS para construir una web.
 | [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica |
 | [swr](../fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica |
 | [tailwindcss](../fichas/tailwindcss.md) | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. | Sin clave propia de API de IA en la ruta básica |
+| [TanStack Query](../fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica |
 | [ui](../fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Sin clave propia de API de IA en la ruta básica |
 
 ### Interfaces y páginas con IA

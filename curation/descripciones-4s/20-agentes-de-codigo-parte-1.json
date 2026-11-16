@@ -70,7 +70,7 @@
      "orden_instalacion": "Añade el servidor MCP de Context7."
     }
    ],
-   "notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose. No es open source.",
+   "notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose, antigravity-cli. No es open source.",
    "fuentes": [
     "https://github.com/anthropics/claude-code/blob/main/README.md",
     "https://code.claude.com/docs/en/overview"
@@ -110,7 +110,7 @@
      "orden_instalacion": "Instala T3 Code con Codex presente."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, gemini-cli, opencode.",
+   "notas": "Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.",
    "fuentes": [
     "https://github.com/openai/codex/blob/main/README.md",
     "https://developers.openai.com/codex/"
@@ -146,7 +146,7 @@
      "orden_instalacion": "Añade los endpoints MCP a la configuración."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, codex, opencode. Para uso individual, Google remite a Antigravity CLI (no catalogado).",
+   "notas": "Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).",
    "fuentes": [
     "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
     "https://antigravity.google/product/antigravity-cli"

@@ -61,7 +61,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra una decisión ficticia y búscala desde otro cliente conectado al mismo servidor
 **Qué comprobar:** Puedes inspeccionar el recuerdo y confirmar que ambos clientes usan la misma instancia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `gemini-cli`, `hermes-agent`
+**Combina con:** `claude-code`, `gemini-cli`, `hermes-agent`, `deepseek-harness`
 **Alternativas (elige una):** `engram`, `supermemory`, `claude-mem`
 
 ## `chroma`
@@ -185,7 +185,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda un recuerdo ficticio desde DSH y comprueba que puedes verlo y eliminarlo desde ajustes
 **Qué comprobar:** El recuerdo persiste y el panel muestra su contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `hermes-agent`
+**Combina con:** `claude-code`, `codex`, `hermes-agent`, `deepseek-harness`
 
 ## `engram`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=memory,mcp,coding-agent,go
@@ -215,7 +215,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda una decisión con su razón y recupérala por palabras clave
 **Qué comprobar:** El registro aparece con contenido y contexto que puedes inspeccionar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`, `gemini-cli`
+**Combina con:** `claude-code`, `opencode`, `gemini-cli`, `deepseek-harness`
 **Alternativas (elige una):** `claude-mem`, `agentmemory`
 
 ## `faiss`

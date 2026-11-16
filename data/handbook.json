@@ -188,6 +188,7 @@
         }
       ],
       "repo_ids": [
+        "antigravity-cli",
         "antigravity-awesome-skills"
       ],
       "aliases": [],
@@ -226,7 +227,9 @@
           "checked_at": "2026-11-15"
         }
       ],
-      "repo_ids": [],
+      "repo_ids": [
+        "deepseek-harness"
+      ],
       "aliases": [
         "DSH",
         "Deepseek Harness"

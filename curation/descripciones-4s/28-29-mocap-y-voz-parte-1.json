@@ -196,6 +196,11 @@
      "id": "moviepy",
      "motivo": "Subtítulos con marcas por palabra. (combinación por arquitectura)",
      "orden_instalacion": "Genera SRT y móntalo."
+    },
+    {
+     "id": "pyannote-audio",
+     "motivo": "WhisperX usa pyannote-audio para la diarización (etiquetas de hablante).",
+     "orden_instalacion": "Acepta las condiciones del modelo de pyannote en Hugging Face y pasa el token con `--hf_token`."
     }
    ],
    "notas": "Alternativas (elige una): nemo.",

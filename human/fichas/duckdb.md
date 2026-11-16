@@ -29,6 +29,8 @@ Hay CLI independiente y clientes para Python, R, Java, Node, Rust, Go, WebAssemb
 | [marimo](marimo.md) | Celdas SQL nativas sobre DuckDB. | Instala marimo y escribe celdas SQL. |
 | [Apache Superset](superset.md) | Dashboards sobre DuckDB. (combinación por arquitectura) | Conecta DuckDB como base de datos. |
 | [TimesFM](timesfm.md) | Preparar series temporales para pronóstico. (combinación por arquitectura) | Extrae las series con SQL. |
+| [Apache Iceberg](apache-iceberg.md) | DuckDB lee tablas Apache Iceberg con su extensión oficial `iceberg`. | Carga la extensión y consulta una tabla de prueba. |
+| [Delta Lake](delta-lake.md) | DuckDB lee tablas Delta Lake con su extensión oficial `delta`. | Carga la extensión `delta` y apunta al directorio de la tabla. |
 
 **Notas:** Alternativas (elige una): polars.
 

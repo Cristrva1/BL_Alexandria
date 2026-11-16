@@ -241,6 +241,11 @@
      "id": "hermes-agent",
      "motivo": "Agente soportado de forma nativa.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "deepseek-harness",
+     "motivo": "agentmemory declara capturar sesiones de DeepSeek Harness para que otro agente retome historial y lecciones.",
+     "orden_instalacion": "Conecta agentmemory después de configurar DSH."
     }
    ],
    "notas": "Alternativas (elige una): engram, supermemory, claude-mem. No expongas los puertos 3111/3113 fuera de loopback sin autenticación.",
@@ -311,6 +316,11 @@
      "id": "gemini-cli",
      "motivo": "Destino de configuración soportado.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "deepseek-harness",
+     "motivo": "La guía oficial de DSH incluye una configuración de referencia para conectar Engram como memoria MCP vía `dsh-mcp-client`.",
+     "orden_instalacion": "Instala Engram con la versión fijada en la guía de DSH y activa la overlay."
     }
    ],
    "notas": "Alternativas (elige una): claude-mem, agentmemory.",
@@ -381,9 +391,14 @@
      "id": "hermes-agent",
      "motivo": "Fuente de importación soportada.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "deepseek-harness",
+     "motivo": "Es un plugin para DeepSeek Harness: el anfitrión que carga Noema como memoria persistente.",
+     "orden_instalacion": "Instala y arranca DSH antes de añadir el plugin."
     }
    ],
-   "notas": "Requiere DeepSeek Harness, que no está en el catálogo.",
+   "notas": "Requiere DeepSeek Harness (deepseek-harness).",
    "fuentes": [
     "https://github.com/ZSeven-W/dsh-noema/blob/main/README.md"
    ],

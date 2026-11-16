@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-86 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+89 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -37,12 +37,13 @@ Montar material existente, capturar pantalla y preparar subtítulos.
 
 Crear clips y organizar flujos de video generativo.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-ia)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-ia)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | API de IA necesaria |
 | [HunyuanVideo](../fichas/hunyuanvideo.md) | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | Sin clave propia de API de IA en la ruta básica |
+| [HunyuanVideo 1.5](../fichas/hunyuanvideo-1-5.md) | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. | API de IA opcional |
 | [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. | Depende de la ruta elegida |
 | [short-video-factory](../fichas/short-video-factory.md) | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | Depende de la ruta elegida |
 | [Wan2.2](../fichas/wan2-2.md) | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | API de IA opcional |
@@ -83,12 +84,13 @@ Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-[Explorar 11 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-voz)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-voz)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Sin clave propia de API de IA en la ruta básica |
 | [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica |
+| [ElevenLabs (SDK de Python)](../fichas/elevenlabs-python.md) | SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz. | API de IA necesaria |
 | [Fish Speech](../fichas/fish-speech.md) | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. | Sin clave propia de API de IA en la ruta básica |
 | [GPT-SoVITS](../fichas/gpt-sovits.md) | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. | Sin clave propia de API de IA en la ruta básica |
 | [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Sin clave propia de API de IA en la ruta básica |
@@ -118,13 +120,14 @@ Transcribir, alinear y aprovechar grabaciones de voz.
 
 Limpiar grabaciones, ajustar sonido y trabajar con música.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-audio)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-audio)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [ACE-Step-1.5](../fichas/ace-step-1-5.md) | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | Sin clave propia de API de IA en la ruta básica |
 | [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Sin clave propia de API de IA en la ruta básica |
 | [earshot](../fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional |
+| [pyannote.audio](../fichas/pyannote-audio.md) | Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional. | API de IA opcional |
 | [rnnoise](../fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Sin clave propia de API de IA en la ruta básica |
 | [rubberband](../fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Sin clave propia de API de IA en la ruta básica |
 

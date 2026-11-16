@@ -123,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una app de ejemplo y una acción que lea un dato ficticio de la interfaz
 **Qué comprobar:** El agente recibe el contexto y devuelve una acción que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `mastra`, `agent-framework`, `crewai`
+**Combina con:** `langgraph`, `mastra`, `agent-framework`, `crewai`, `openbot`
 **Alternativas (elige una):** `assistant-ui`
 
 ## `daisyui`
@@ -741,6 +741,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Se distinguen carga, error, datos cacheados y datos nuevos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `heroui`, `supabase`
+**Alternativas (elige una):** `tanstack-query`
 
 ## `tailwindcss`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
@@ -771,6 +772,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar diferencias entre móvil y escritorio
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `daisyui`, `heroui`, `magicui`
+
+## `tanstack-query`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=frontend,data-fetching,cache,typescript
+
+**Qué es:** Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Un proyecto JavaScript o TypeScript con el adaptador de tu framework.
+**Repo:** https://github.com/TanStack/query
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/TanStack/query/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Envuelve una llamada a una API pública de prueba en una consulta y muestra sus estados
+**Qué comprobar:** Ves carga, datos y un refetch al volver a enfocar la ventana
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `supabase`, `ui`, `tailwindcss`
+**Alternativas (elige una):** `swr`
 
 ## `tldraw`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=design,ui,react,typescript

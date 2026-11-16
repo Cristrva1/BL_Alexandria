@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**612 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**623 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -12,14 +12,14 @@
 2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 30
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 30
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 20
-5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 22
+5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 23
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 23
 7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 11
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 26
-9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 28
+9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 29
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 21
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 8
-12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 14
+12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 15
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 19
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 19
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 27
@@ -27,16 +27,16 @@
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 10
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 13
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 28
-20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 15
-21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 16
+20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 17
+21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 17
 22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 16
 23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 19
 24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 14
-25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 9
+25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 12
 26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 19
 27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 36
 28. [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) — 17
-29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 24
+29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 26
 30. [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) — 21
 31. [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) — 8
 32. [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) — 11
@@ -243,6 +243,7 @@ _SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dat
 | [GhidraMCP](human/fichas/ghidramcp.md) | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [annas-mcp](human/fichas/annas-mcp.md) | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [mcp-neo4j](human/fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
+| [Neo4j MCP (oficial)](human/fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 
 ### Directorios, clientes y aprendizaje
 
@@ -388,6 +389,7 @@ _Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la b
 | [Ant Design](human/fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Material UI](human/fichas/mui.md) | Librería de componentes React completa que implementa Material Design de Google. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [React Bits](human/fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [TanStack Query](human/fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [swr](human/fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [heroui](human/fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Lucide](human/fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
@@ -537,6 +539,7 @@ _Editores, grabadores, utilidades de medios y modelos de video generativo. La ed
 | [WanGP](human/fichas/wan2gp.md) | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | API de IA opcional | 🖥️ app | 🔴 pesado |
 | [short-video-factory](human/fichas/short-video-factory.md) | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [AI-Youtube-Shorts-Generator](human/fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | API de IA necesaria | 🖥️ app | 🟡 medio |
+| [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md) | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 
 ## 📄 13. PDF, OCR y procesamiento de documentos
 
@@ -873,12 +876,14 @@ _Agentes de terminal, extensiones de editor y entornos para programar con IA. Re
 |---|---|---|---|---|
 | ⭐ [OpenCode](human/fichas/opencode.md) | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | ⭐ [Claude Code](human/fichas/claude-code.md) | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
+| [DeepSeek Harness (DSH)](human/fichas/deepseek-harness.md) | Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [Codex CLI](human/fichas/codex.md) | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [Gemini CLI](human/fichas/gemini-cli.md) | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [Open Interpreter](human/fichas/open-interpreter.md) | Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. | Depende de la ruta elegida | 🧩 motor/runtime | 🟢 fácil |
 | [goose](human/fichas/goose.md) | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [Aider](human/fichas/aider.md) | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [MiMo-Code](human/fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | API de IA opcional | 🖥️ app | 🟡 medio |
+| [Antigravity CLI](human/fichas/antigravity-cli.md) | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Editores y extensiones de código
 
@@ -916,6 +921,7 @@ _Asistentes personales, equipos de agentes e investigación con fuentes. Compara
 | [ruflo](human/fichas/ruflo.md) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [DeepTutor](human/fichas/deeptutor.md) | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus documentos. | API de IA opcional | 🖥️ app | 🟡 medio |
 | [multica](human/fichas/multica.md) | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
+| [OpenBot](human/fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Depende de la ruta elegida | 🖥️ app | 🔴 pesado |
 | [OpenDots](human/fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | API de IA necesaria | 🖥️ app | 🟡 medio |
 | [Mercury Agent](human/fichas/mercury-agent.md) | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [social-media-agent](human/fichas/social-media-agent.md) | Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. | API de IA necesaria | 🧩 motor/runtime | 🟡 medio |
@@ -1049,7 +1055,10 @@ _Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un 
 | ⭐ [DuckDB](human/fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | ⭐ [marimo](human/fichas/marimo.md) | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [Polars](human/fichas/polars.md) | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [JupyterLab](human/fichas/jupyterlab.md) | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [awesome-bigdata](human/fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [Apache Iceberg](human/fichas/apache-iceberg.md) | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Delta Lake](human/fichas/delta-lake.md) | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [hudi](human/fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [GlobalBuildingAtlas](human/fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🔴 pesado |
 
@@ -1214,6 +1223,7 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 | [CosyVoice](human/fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [edge-tts](human/fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [LuxTTS](human/fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md) | SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz. | API de IA necesaria | 📚 librería/SDK | 🟢 fácil |
 
 ### Agentes de voz en tiempo real
 
@@ -1234,6 +1244,7 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [pyannote.audio](human/fichas/pyannote-audio.md) | Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [rnnoise](human/fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [earshot](human/fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
 | [rubberband](human/fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |

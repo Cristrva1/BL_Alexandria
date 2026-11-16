@@ -182,7 +182,7 @@
      "orden_instalacion": "Usa el cliente de Supabase dentro del fetcher de SWR."
     }
    ],
-   "notas": "Sin alternativas declaradas en el catálogo (TanStack Query no figura).",
+   "notas": "Alternativa (elige una): tanstack-query.",
    "fuentes": [
     "https://github.com/vercel/swr/blob/main/README.md",
     "https://swr.vercel.app/docs/with-nextjs"

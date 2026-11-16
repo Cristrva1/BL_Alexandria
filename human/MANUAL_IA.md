@@ -309,7 +309,7 @@ Organiza trabajo con agentes en las superficies App, CLI o IDE de Google Antigra
 
 - No intercambies configuraciones entre App, CLI e IDE sin comprobar que la documentación las comparte.
 
-Fichas del catálogo: [antigravity-awesome-skills](fichas/antigravity-awesome-skills.md)
+Fichas del catálogo: [antigravity-cli](fichas/antigravity-cli.md) · [antigravity-awesome-skills](fichas/antigravity-awesome-skills.md)
 
 ### Fuentes
 
@@ -361,6 +361,8 @@ npx @deepseek-ai/dsh web
 Descarga o ejecuta el paquete e inicia un servidor local. Revisa versión y origen antes de ejecutarlo.
 
 [Fuente del comando](https://github.com/deepseek-ai/deepseek-harness)
+
+Fichas del catálogo: [deepseek-harness](fichas/deepseek-harness.md)
 
 ### Fuentes
 

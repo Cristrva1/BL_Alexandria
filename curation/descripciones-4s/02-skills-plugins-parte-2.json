@@ -462,6 +462,11 @@
      "id": "adk-python",
      "motivo": "Construir agentes que se despliegan en Google Cloud (combinación por arquitectura).",
      "orden_instalacion": "Independientes."
+    },
+    {
+     "id": "antigravity-cli",
+     "motivo": "El README documenta la instalación de estas skills en Antigravity CLI con `agy plugin install`.",
+     "orden_instalacion": "Instala la CLI y añade solo los plugins necesarios."
     }
    ],
    "fuentes": [

@@ -656,7 +656,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala una skill concreta y pide explicar su configuración sin modificar servicios reales
 **Qué comprobar:** El agente identifica requisitos, credenciales y acciones del producto correspondiente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gemini-cli`, `gemini-skills`, `adk-python`
+**Combina con:** `gemini-cli`, `gemini-skills`, `adk-python`, `antigravity-cli`
 
 ## `grok-plugin-claude-code`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=xai · tags=metodologia,ai-agents,claude-code,grok,grok-cli,plugin,xai,javascript · tools=claude-code

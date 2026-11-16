@@ -315,6 +315,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
 **Alternativas (elige una):** `paperclip`
 
+## `openbot`
+role=app · exec=hybrid · setup=heavy · mcp=True · prov=openai,anthropic,google,local · tags=agents,computer-use,ag-ui,mcp,typescript
+
+**Qué es:** Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.
+**Stack:** TypeScript, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. Elige OpenAI, Claude, Gemini o un endpoint compatible con OpenAI; el despliegue en Kubernetes de evaluación usa una clave de modelo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El README describe una operación totalmente local con OpenBot, Intelligence y un modelo compatible; las apps conectadas siguen usando internet.
+- Coste: El coste depende del proveedor o la ruta. La plantilla es MIT, pero CopilotKit Intelligence tiene licencia aparte: local gratuita para uso personal, prueba para Kubernetes y licencia de producción después.
+- Equipo: Preparación según la ruta elegida. Docker para PostgreSQL, la API y los Bots; Bun para ejecutar desde el código; Kubernetes y Helm para equipos.
+**Repo:** https://github.com/CopilotKit/OpenBot
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/CopilotKit/OpenBot/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación
+**Qué comprobar:** La acción queda pendiente de tu aprobación y aparece en la auditoría
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `copilotkit`, `langgraph`, `mastra`, `crewai`, `firecrawl`, `composio`
+**Alternativas (elige una):** `opendots`
+
 ## `openclaw`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript
 
@@ -379,6 +410,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar la respuesta y el panel de conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `copilotkit`, `composio`, `servers`
+**Alternativas (elige una):** `openbot`
 
 ## `paperclip`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance

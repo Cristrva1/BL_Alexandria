@@ -4,7 +4,7 @@
 
 SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.
 
-22 repos · 3 secciones
+23 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -21,7 +21,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [SDKs y frameworks para crear MCP](#sdks-y-frameworks-para-crear-mcp) — 5 repos
-- [Servidores MCP destacados](#servidores-mcp-destacados) — 12 repos
+- [Servidores MCP destacados](#servidores-mcp-destacados) — 13 repos
 - [Directorios, clientes y aprendizaje](#directorios-clientes-y-aprendizaje) — 5 repos
 
 ## SDKs y frameworks para crear MCP
@@ -50,6 +50,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [GhidraMCP](../fichas/ghidramcp.md) | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio | Sin clave propia de API de IA en la ruta básica |
 | [annas-mcp](../fichas/annas-mcp.md) | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. | Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP | Sin clave propia de API de IA en la ruta básica |
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones | Sin clave propia de API de IA en la ruta básica |
+| [Neo4j MCP (oficial)](../fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente | Sin clave propia de API de IA en la ruta básica |
 
 ## Directorios, clientes y aprendizaje
 

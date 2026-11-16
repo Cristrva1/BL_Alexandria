@@ -22,6 +22,11 @@
      "id": "real-esrgan",
      "motivo": "Cargar modelos ESRGAN como upscalers.",
      "orden_instalacion": "Copia los pesos en `models/upscale_models`."
+    },
+    {
+     "id": "hunyuanvideo-1-5",
+     "motivo": "ComfyUI soporta HunyuanVideo 1.5 de forma nativa con flujos de video de ejemplo.",
+     "orden_instalacion": "Descarga los pesos de HunyuanVideo 1.5 y carga el flujo de ejemplo."
     }
    ],
    "notas": "Alternativas (elige una): wan2gp. Revisa los nodos personalizados antes de instalarlos: ejecutan código arbitrario.",

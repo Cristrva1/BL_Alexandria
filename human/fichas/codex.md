@@ -31,7 +31,7 @@ Se instala con `curl -fsSL https://chatgpt.com/codex/install.sh | sh`, `npm inst
 | [Context7](context7.md) | Documentación de librerías vía MCP. | Añade el MCP de Context7 a la configuración de Codex. |
 | [T3 Code](t3code.md) | Controlar Codex desde web o móvil. | Instala T3 Code con Codex presente. |
 
-**Notas:** Alternativas (elige una): claude-code, gemini-cli, opencode.
+**Notas:** Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada rust-v0.169.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -118,6 +118,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [Antigravity CLI](antigravity-cli.md) | 2.8k | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. |
 
 ## Enlaces
 

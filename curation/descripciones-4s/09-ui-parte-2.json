@@ -246,6 +246,11 @@
      "id": "crewai",
      "motivo": "Equipos de agentes CrewAI con integración documentada.",
      "orden_instalacion": "Despliega el crew y conéctalo al runtime."
+    },
+    {
+     "id": "openbot",
+     "motivo": "OpenBot, la plataforma de compañeros de IA de CopilotKit, está construida sobre CopilotKit y AG-UI.",
+     "orden_instalacion": "Parte de OpenBot si quieres un espacio de trabajo completo en vez de componentes sueltos."
     }
    ],
    "notas": "Alternativas (elige una): assistant-ui.",

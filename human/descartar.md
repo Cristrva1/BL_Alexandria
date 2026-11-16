@@ -60,7 +60,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [FastMCP](fichas/fastmcp.md) | [MCP Python SDK](fichas/mcp-python-sdk.md) |
 | [MCP Python SDK](fichas/mcp-python-sdk.md) | [FastMCP](fichas/fastmcp.md) |
 | [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md) | [mcp-use](fichas/mcp-use.md) |
+| [mcp-neo4j](fichas/mcp-neo4j.md) | [Neo4j MCP (oficial)](fichas/neo4j-mcp.md) |
 | [mcp-use](fichas/mcp-use.md) | [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md) |
+| [Neo4j MCP (oficial)](fichas/neo4j-mcp.md) | [mcp-neo4j](fichas/mcp-neo4j.md) |
 | [Playwright MCP](fichas/playwright-mcp.md) | [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md), [browser-use](fichas/browser-use.md), [Browser Harness](fichas/browser-harness.md) |
 | [Serena](fichas/serena.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [graphify](fichas/graphify.md) |
 | [agentmemory](fichas/agentmemory.md) | [Engram](fichas/engram.md), [supermemory](fichas/supermemory.md), [claude-mem](fichas/claude-mem.md) |
@@ -116,6 +118,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [React Bits](fichas/react-bits.md) | [magicui](fichas/magicui.md) |
 | [screenshot-to-code](fichas/screenshot-to-code.md) | [Stitch SDK](fichas/stitch-sdk.md) |
 | [Stitch SDK](fichas/stitch-sdk.md) | [screenshot-to-code](fichas/screenshot-to-code.md) |
+| [swr](fichas/swr.md) | [TanStack Query](fichas/tanstack-query.md) |
+| [TanStack Query](fichas/tanstack-query.md) | [swr](fichas/swr.md) |
 | [tldraw](fichas/tldraw.md) | [Excalidraw](fichas/excalidraw.md) |
 | [ui](fichas/ui.md) | [Material UI](fichas/mui.md), [Ant Design](fichas/ant-design.md), [daisyUI](fichas/daisyui.md) |
 | [Apache Superset](fichas/superset.md) | [metabase](fichas/metabase.md), [Redash](fichas/redash.md) |
@@ -133,11 +137,12 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [ComfyUI](fichas/comfyui.md) | [WanGP](fichas/wan2gp.md) |
 | [InvokeAI](fichas/invokeai.md) | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) |
 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | [InvokeAI](fichas/invokeai.md) |
-| [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md) |
+| [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md), [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) |
+| [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) | [HunyuanVideo](fichas/hunyuanvideo.md), [Wan2.2](fichas/wan2-2.md) |
 | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md), [short-video-factory](fichas/short-video-factory.md) |
 | [short-video-factory](fichas/short-video-factory.md) | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
 | [VideoLingo](fichas/videolingo.md) | [VoiceStudio](fichas/omnivoice-studio.md) |
-| [Wan2.2](fichas/wan2-2.md) | [HunyuanVideo](fichas/hunyuanvideo.md) |
+| [Wan2.2](fichas/wan2-2.md) | [HunyuanVideo](fichas/hunyuanvideo.md), [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) |
 | [WanGP](fichas/wan2gp.md) | [ComfyUI](fichas/comfyui.md) |
 | [Docling](fichas/docling.md) | [Marker](fichas/marker.md), [MinerU](fichas/mineru.md), [Unstructured](fichas/unstructured.md), [olmOCR](fichas/olmocr.md) |
 | [Marker](fichas/marker.md) | [Docling](fichas/docling.md), [MinerU](fichas/mineru.md), [pdf-craft](fichas/pdf-craft.md) |
@@ -177,10 +182,11 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) | [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) |
 | [prompts.chat](fichas/prompts-chat.md) | [Fabric](fichas/fabric.md) |
 | [Aider](fichas/aider.md) | [OpenCode](fichas/opencode.md), [Cline](fichas/cline.md) |
-| [Claude Code](fichas/claude-code.md) | [Codex CLI](fichas/codex.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md), [goose](fichas/goose.md) |
+| [Antigravity CLI](fichas/antigravity-cli.md) | [Gemini CLI](fichas/gemini-cli.md), [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md) |
+| [Claude Code](fichas/claude-code.md) | [Codex CLI](fichas/codex.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md), [goose](fichas/goose.md), [Antigravity CLI](fichas/antigravity-cli.md) |
 | [Cline](fichas/cline.md) | [Aider](fichas/aider.md) |
-| [Codex CLI](fichas/codex.md) | [Claude Code](fichas/claude-code.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md) |
-| [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md) |
+| [Codex CLI](fichas/codex.md) | [Claude Code](fichas/claude-code.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md) |
+| [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md) |
 | [goose](fichas/goose.md) | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md), [Open Interpreter](fichas/open-interpreter.md) |
 | [MiMo-Code](fichas/mimo-code.md) | [OpenCode](fichas/opencode.md) |
 | [Open Interpreter](fichas/open-interpreter.md) | [goose](fichas/goose.md) |
@@ -195,7 +201,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [local-deep-research](fichas/local-deep-research.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [Mercury Agent](fichas/mercury-agent.md) | [OpenClaw](fichas/openclaw.md), [hermes-agent](fichas/hermes-agent.md) |
 | [multica](fichas/multica.md) | [paperclip](fichas/paperclip.md) |
+| [OpenBot](fichas/openbot.md) | [OpenDots](fichas/opendots.md) |
 | [OpenClaw](fichas/openclaw.md) | [hermes-agent](fichas/hermes-agent.md), [Mercury Agent](fichas/mercury-agent.md) |
+| [OpenDots](fichas/opendots.md) | [OpenBot](fichas/openbot.md) |
 | [paperclip](fichas/paperclip.md) | [multica](fichas/multica.md) |
 | [STORM](fichas/storm.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [CasaOS](fichas/casaos.md) | [coolify](fichas/coolify.md) |
@@ -224,8 +232,13 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [PyTorch](fichas/pytorch.md) | [tensorflow](fichas/tensorflow.md) |
 | [tensorflow](fichas/tensorflow.md) | [PyTorch](fichas/pytorch.md) |
 | [Unsloth](fichas/unsloth.md) | [LLaMA-Factory](fichas/llama-factory.md) |
+| [Apache Iceberg](fichas/apache-iceberg.md) | [Delta Lake](fichas/delta-lake.md), [hudi](fichas/hudi.md) |
+| [Delta Lake](fichas/delta-lake.md) | [Apache Iceberg](fichas/apache-iceberg.md), [hudi](fichas/hudi.md) |
 | [DuckDB](fichas/duckdb.md) | [Polars](fichas/polars.md) |
 | [Gradio](fichas/gradio.md) | [streamlit](fichas/streamlit.md) |
+| [hudi](fichas/hudi.md) | [Apache Iceberg](fichas/apache-iceberg.md), [Delta Lake](fichas/delta-lake.md) |
+| [JupyterLab](fichas/jupyterlab.md) | [marimo](fichas/marimo.md) |
+| [marimo](fichas/marimo.md) | [JupyterLab](fichas/jupyterlab.md) |
 | [Polars](fichas/polars.md) | [DuckDB](fichas/duckdb.md) |
 | [streamlit](fichas/streamlit.md) | [Gradio](fichas/gradio.md) |
 | [Anime.js](fichas/animejs.md) | [GSAP](fichas/gsap.md), [motion](fichas/motion.md) |

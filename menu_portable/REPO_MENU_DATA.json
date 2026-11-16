@@ -37,7 +37,7 @@
     {
       "num": 5,
       "title": "Conectar herramientas con MCP",
-      "count": 22
+      "count": 23
     },
     {
       "num": 6,
@@ -57,7 +57,7 @@
     {
       "num": 9,
       "title": "Diseñar y construir interfaces web",
-      "count": 28
+      "count": 29
     },
     {
       "num": 10,
@@ -72,7 +72,7 @@
     {
       "num": 12,
       "title": "Editar, grabar y generar video",
-      "count": 14
+      "count": 15
     },
     {
       "num": 13,
@@ -112,12 +112,12 @@
     {
       "num": 20,
       "title": "Programar con agentes de código",
-      "count": 15
+      "count": 17
     },
     {
       "num": 21,
       "title": "Asistentes e investigación con agentes",
-      "count": 16
+      "count": 17
     },
     {
       "num": 22,
@@ -137,7 +137,7 @@
     {
       "num": 25,
       "title": "Procesar datos y trabajar con notebooks",
-      "count": 9
+      "count": 12
     },
     {
       "num": 26,
@@ -157,7 +157,7 @@
     {
       "num": 29,
       "title": "Audio, transcripción, voz y música",
-      "count": 24
+      "count": 26
     },
     {
       "num": 30,
@@ -1483,9 +1483,10 @@
             "react-bits",
             "swr",
             "tailwindcss",
+            "tanstack-query",
             "ui"
           ],
-          "count": 14
+          "count": 15
         },
         {
           "id": "web-ia",
@@ -1667,6 +1668,7 @@
         "supabase",
         "swr",
         "tailwindcss",
+        "tanstack-query",
         "taste-skill",
         "three.js",
         "threejs-skills",
@@ -1677,7 +1679,7 @@
         "webgl-noise",
         "zdog"
       ],
-      "count": 58
+      "count": 59
     },
     {
       "id": "ciberseguridad",
@@ -1953,12 +1955,13 @@
           "repo_ids": [
             "ai-youtube-shorts-generator",
             "hunyuanvideo",
+            "hunyuanvideo-1-5",
             "moneyprinterturbo",
             "short-video-factory",
             "wan2-2",
             "wan2gp"
           ],
-          "count": 6
+          "count": 7
         },
         {
           "id": "av-video-codigo",
@@ -2018,6 +2021,7 @@
           "repo_ids": [
             "cosyvoice",
             "edge-tts",
+            "elevenlabs-python",
             "fish-speech",
             "gpt-sovits",
             "index-tts",
@@ -2028,7 +2032,7 @@
             "vibevoice",
             "voxcpm"
           ],
-          "count": 11
+          "count": 12
         },
         {
           "id": "av-transcripcion",
@@ -2077,10 +2081,11 @@
             "ace-step-1.5",
             "audiocraft",
             "earshot",
+            "pyannote-audio",
             "rnnoise",
             "rubberband"
           ],
-          "count": 5
+          "count": 6
         },
         {
           "id": "av-conversacion",
@@ -2241,6 +2246,7 @@
         "dograh",
         "earshot",
         "edge-tts",
+        "elevenlabs-python",
         "facefusion",
         "faster-whisper",
         "ffmpeg",
@@ -2251,6 +2257,7 @@
         "gpt-sovits",
         "huashu-motion",
         "hunyuanvideo",
+        "hunyuanvideo-1-5",
         "hyperframes",
         "index-tts",
         "insightface",
@@ -2282,6 +2289,7 @@
         "papermorph",
         "pipecat",
         "planck-js",
+        "pyannote-audio",
         "rea-video",
         "react-three-rapier",
         "real-esrgan",
@@ -2307,7 +2315,7 @@
         "whisper-cpp",
         "whisperx"
       ],
-      "count": 86
+      "count": 89
     },
     {
       "id": "trading",
@@ -2873,13 +2881,14 @@
             "hermes-agent",
             "mercury-agent",
             "multica",
+            "openbot",
             "openclaw",
             "opendots",
             "paperclip",
             "ruflo",
             "social-media-agent"
           ],
-          "count": 11
+          "count": 12
         },
         {
           "id": "agentes-investigar",
@@ -3011,6 +3020,7 @@
             "mcp-python-sdk",
             "mcp-typescript-sdk",
             "mcp-use",
+            "neo4j-mcp",
             "playwright-mcp",
             "public-apis",
             "serena",
@@ -3018,7 +3028,7 @@
             "tooljet",
             "unity-mcp"
           ],
-          "count": 23
+          "count": 24
         }
       ],
       "repo_ids": [
@@ -3092,7 +3102,9 @@
         "metagpt",
         "mirofish",
         "multica",
+        "neo4j-mcp",
         "openai-agents-python",
+        "openbot",
         "openclaw",
         "opendots",
         "openevolve",
@@ -3123,7 +3135,7 @@
         "vercel-ai",
         "yt-dlp"
       ],
-      "count": 100
+      "count": 102
     },
     {
       "id": "ia-local",
@@ -3619,14 +3631,17 @@
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
+            "apache-iceberg",
             "awesome-bigdata",
+            "delta-lake",
             "duckdb",
             "globalbuildingatlas",
             "hudi",
+            "jupyterlab",
             "marimo",
             "polars"
           ],
-          "count": 6
+          "count": 9
         },
         {
           "id": "datos-apps",
@@ -3747,18 +3762,21 @@
         }
       ],
       "repo_ids": [
+        "apache-iceberg",
         "awesome-bigdata",
         "awesome-dataviz",
         "chart-js",
         "d3",
         "dash",
         "data-analyst-roadmap",
+        "delta-lake",
         "duckdb",
         "echarts",
         "globalbuildingatlas",
         "gradio",
         "grafana",
         "hudi",
+        "jupyterlab",
         "marimo",
         "matomo",
         "metabase",
@@ -3773,7 +3791,7 @@
         "uplot",
         "wrenai"
       ],
-      "count": 25
+      "count": 28
     },
     {
       "id": "productividad",
@@ -4008,9 +4026,11 @@
           "reference_repos": [],
           "repo_ids": [
             "aider",
+            "antigravity-cli",
             "claude-code",
             "cline",
             "codex",
+            "deepseek-harness",
             "gemini-cli",
             "goose",
             "mimo-code",
@@ -4023,7 +4043,7 @@
             "openidea",
             "t3code"
           ],
-          "count": 15
+          "count": 17
         },
         {
           "id": "dev-comprender",
@@ -4147,6 +4167,7 @@
         "agent-desktop",
         "agent-protocol",
         "aider",
+        "antigravity-cli",
         "ast-grep",
         "backdoor",
         "casaos",
@@ -4163,6 +4184,7 @@
         "computer-use-preview",
         "coolify",
         "deepeval",
+        "deepseek-harness",
         "e2b",
         "floorplan",
         "free-for-dev",
@@ -4206,7 +4228,7 @@
         "tree-sitter",
         "vllm"
       ],
-      "count": 61
+      "count": 63
     },
     {
       "id": "vision",
@@ -15337,7 +15359,8 @@
       "combines_with": [
         "gemini-cli",
         "gemini-skills",
-        "adk-python"
+        "adk-python",
+        "antigravity-cli"
       ],
       "alt": []
     },
@@ -24183,7 +24206,9 @@
         "graphrag",
         "awesome-mcp-servers"
       ],
-      "alt": []
+      "alt": [
+        "neo4j-mcp"
+      ]
     },
     {
       "id": "mcp-python-sdk",
@@ -24541,6 +24566,126 @@
       ],
       "alt": [
         "mcp-typescript-sdk"
+      ]
+    },
+    {
+      "id": "neo4j-mcp",
+      "name": "Neo4j MCP (oficial)",
+      "cat": 5,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "mcp",
+        "graph",
+        "neo4j",
+        "cypher",
+        "go"
+      ],
+      "routes": [
+        "no_api",
+        "claude",
+        "codex",
+        "antigravity"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "connector",
+        "codex": "connector",
+        "antigravity": "connector",
+        "cost": "host_plan",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.",
+        "subscription_note": "Configura este servidor en un cliente MCP compatible, incluido Claude Code o Codex. Sus servicios y permisos se preparan aparte.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "El modelo se consume en el cliente MCP. Neo4j Aura y las ediciones comerciales tienen sus propias condiciones; con ellas el servidor queda cubierto por esos contratos.",
+        "hardware_note": "Necesitas una base Neo4j (local, Docker o Aura) y credenciales; GDS es opcional.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/neo4j/mcp/blob/main/README.md"
+        ],
+        "mode": "agent_extension",
+        "source_blob_sha": "23d79333f84d41ccb98d35f8138a098463c9c57d"
+      },
+      "getting_started": {
+        "kind": "mcp",
+        "audience": "agent",
+        "prerequisites": [
+          "Un cliente MCP compatible y el programa o servicio que va a controlar la herramienta."
+        ],
+        "steps": [
+          "Prepara el servidor y sus dependencias siguiendo la configuración del README.",
+          "Añade el comando o la URL en el cliente MCP y configura los permisos y credenciales de los servicios conectados.",
+          "Comprueba que aparecen sus herramientas y prueba una consulta pequeña antes de permitir modificaciones."
+        ],
+        "command": "pip install neo4j-mcp-server",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/neo4j/mcp/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Conecta el servidor en modo solo lectura a una base Neo4j de prueba y pide al agente que describa su esquema",
+        "success": "El agente lista etiquetas y relaciones que coinciden con las de la base",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Preguntar en lenguaje natural por el esquema de un grafo de prueba",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Consultar relaciones con Cypher de solo lectura desde el agente",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/neo4j/mcp/blob/main/README.md",
+        "source_blob_sha": "23d79333f84d41ccb98d35f8138a098463c9c57d",
+        "previous_category": [
+          5,
+          "servidores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+      "desc": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+      "stack": "Go, Dockerfile, go.mod",
+      "repo": "https://github.com/neo4j/mcp",
+      "install": "pip install neo4j-mcp-server",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente",
+      "avoid_if": "necesitas un producto autónomo y esta pieza requiere un cliente MCP y una base Neo4j",
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "graphiti",
+        "cognee"
+      ],
+      "alt": [
+        "mcp-neo4j"
       ]
     },
     {
@@ -25386,7 +25531,8 @@
       "combines_with": [
         "claude-code",
         "gemini-cli",
-        "hermes-agent"
+        "hermes-agent",
+        "deepseek-harness"
       ],
       "alt": [
         "engram",
@@ -25887,7 +26033,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "hermes-agent"
+        "hermes-agent",
+        "deepseek-harness"
       ],
       "alt": []
     },
@@ -26008,7 +26155,8 @@
       "combines_with": [
         "claude-code",
         "opencode",
-        "gemini-cli"
+        "gemini-cli",
+        "deepseek-harness"
       ],
       "alt": [
         "claude-mem",
@@ -32973,7 +33121,8 @@
         "langgraph",
         "mastra",
         "agent-framework",
-        "crewai"
+        "crewai",
+        "openbot"
       ],
       "alt": [
         "assistant-ui"
@@ -35354,7 +35503,9 @@
         "heroui",
         "supabase"
       ],
-      "alt": []
+      "alt": [
+        "tanstack-query"
+      ]
     },
     {
       "id": "tailwindcss",
@@ -35471,6 +35622,121 @@
         "magicui"
       ],
       "alt": []
+    },
+    {
+      "id": "tanstack-query",
+      "name": "TanStack Query",
+      "cat": 9,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "frontend",
+        "data-fetching",
+        "cache",
+        "typescript"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Un proyecto JavaScript o TypeScript con el adaptador de tu framework.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/TanStack/query/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3e4b0598ad8a1352350bcea435f77a4393f303c9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://tanstack.com/query/latest/docs/framework/react/overview",
+        "source": "https://github.com/TanStack/query/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Envuelve una llamada a una API pública de prueba en una consulta y muestra sus estados",
+        "success": "Ves carga, datos y un refetch al volver a enfocar la ventana",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Cachear y revalidar datos de una API en una app React",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Mostrar estados de carga y error sin estado global manual",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/TanStack/query/blob/main/README.md",
+        "source_blob_sha": "3e4b0598ad8a1352350bcea435f77a4393f303c9",
+        "previous_category": [
+          9,
+          "componentes"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+      "desc": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/TanStack/query",
+      "install": "Seguir la instalación original: https://github.com/TanStack/query/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "supabase",
+        "ui",
+        "tailwindcss"
+      ],
+      "alt": [
+        "swr"
+      ]
     },
     {
       "id": "tldraw",
@@ -38573,7 +38839,8 @@
       "combines_with": [
         "flux2",
         "krita-ai-diffusion",
-        "real-esrgan"
+        "real-esrgan",
+        "hunyuanvideo-1-5"
       ],
       "alt": [
         "wan2gp"
@@ -39896,6 +40163,127 @@
         "wan2gp"
       ],
       "alt": [
+        "wan2-2",
+        "hunyuanvideo-1-5"
+      ]
+    },
+    {
+      "id": "hunyuanvideo-1-5",
+      "name": "HunyuanVideo 1.5",
+      "cat": 12,
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [
+        "local"
+      ],
+      "tags": [
+        "video",
+        "inference",
+        "local",
+        "python"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "gpu",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La reescritura de prompts usa un endpoint vLLM opcional; si no se configura, el pipeline genera sin reescritura remota.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Inferencia local con pesos descargados de Hugging Face, sujeta a la Tencent Hunyuan Community License.",
+        "cost_note": "Sin pago por llamada en la ruta local; consume GPU. La licencia excluye la UE, el Reino Unido y Corea del Sur.",
+        "hardware_note": "GPU NVIDIA con CUDA y al menos 14 GB de VRAM con offloading; Linux y Python 3.10 o superior.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "ed2a8e0ffc5a3bd602cf4d8fb339a364266fdda9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Confirma que tu país no está excluido por la licencia y que tienes Linux, CUDA y al menos 14 GB de VRAM.",
+          "Instala las dependencias y descarga los pesos según checkpoints-download.md; ComfyUI y Diffusers son rutas alternativas.",
+          "Genera un clip corto en 480p con offloading activado y mide tiempo y memoria antes de subir a 720p."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/checkpoints-download.md",
+        "source": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Genera un clip de pocos segundos en 480p con offloading activado",
+        "success": "El video se guarda y anotas tiempo y VRAM usados",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Generar un clip corto desde texto con GPU de consumo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Animar una imagen fija en 480p",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "source_blob_sha": "ed2a8e0ffc5a3bd602cf4d8fb339a364266fdda9",
+        "previous_category": [
+          12,
+          "generativo"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La reescritura de prompts usa un endpoint vLLM opcional; si no se configura, el pipeline genera sin reescritura remota.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+      "desc": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+      "stack": "Python, requirements.txt",
+      "repo": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+      "install": "Seguir la instalación original: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p",
+      "avoid_if": "no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia",
+      "combines_with": [
+        "comfyui",
+        "wan2gp",
+        "vllm"
+      ],
+      "alt": [
+        "hunyuanvideo",
         "wan2-2"
       ]
     },
@@ -40862,7 +41250,8 @@
         "real-esrgan"
       ],
       "alt": [
-        "hunyuanvideo"
+        "hunyuanvideo",
+        "hunyuanvideo-1-5"
       ]
     },
     {
@@ -40987,7 +41376,8 @@
         "claude-code",
         "wan2-2",
         "moviepy",
-        "lossless-cut"
+        "lossless-cut",
+        "hunyuanvideo-1-5"
       ],
       "alt": [
         "comfyui"
@@ -57981,6 +58371,127 @@
       ]
     },
     {
+      "id": "antigravity-cli",
+      "name": "Antigravity CLI",
+      "cat": 20,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": true,
+      "prov": [
+        "google"
+      ],
+      "tags": [
+        "coding",
+        "agents",
+        "cli",
+        "google"
+      ],
+      "routes": [
+        "no_api",
+        "antigravity"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_documented",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "native",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Inicia sesión con una cuenta de Google (o un proyecto de GCP para empresa); no pide una clave de API propia en la ruta básica.",
+        "subscription_note": "Es la superficie de terminal de Google Antigravity y usa la cuenta y el plan de Google con que inicias sesión.",
+        "local_note": "No documenta modelos locales.",
+        "cost_note": "Los límites dependen de la cuenta y el plan de Google. Google recoge datos de interacción por defecto (desactivable en ajustes).",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7efc2eb63059621f4429fe00d5828d5c7b2a416a"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Revisa la documentación oficial de la CLI y los términos de uso y datos de Google antes de instalar.",
+          "Instala la versión para tu sistema desde la guía oficial e inicia `agy` dentro de un proyecto de prueba.",
+          "Completa el inicio de sesión con Google y pide un cambio acotado; revisa los permisos que concede cada herramienta."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://antigravity.google/docs/cli/overview",
+        "source": "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Inicia agy en un proyecto de prueba y pide renombrar una función con su prueba",
+        "success": "El cambio aparece en el diff y pediste permiso antes de ejecutar comandos",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Pedir cambios a un proyecto desde la terminal o por SSH",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Delegar tareas paralelas en subagentes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+        "source_blob_sha": "7efc2eb63059621f4429fe00d5828d5c7b2a416a",
+        "previous_category": [
+          20,
+          "terminal"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Inicia sesión con una cuenta de Google (o un proyecto de GCP para empresa); no pide una clave de API propia en la ruta básica.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+      "desc": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+      "stack": "",
+      "repo": "https://github.com/google-antigravity/antigravity-cli",
+      "install": "Seguir la instalación original: https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "google-skills",
+        "antigravity-awesome-skills",
+        "engram",
+        "context7"
+      ],
+      "alt": [
+        "gemini-cli",
+        "claude-code",
+        "codex"
+      ]
+    },
+    {
       "id": "claude-code",
       "name": "Claude Code",
       "cat": 20,
@@ -58110,7 +58621,8 @@
         "codex",
         "gemini-cli",
         "opencode",
-        "goose"
+        "goose",
+        "antigravity-cli"
       ]
     },
     {
@@ -58366,8 +58878,130 @@
       "alt": [
         "claude-code",
         "gemini-cli",
-        "opencode"
+        "opencode",
+        "antigravity-cli"
       ]
+    },
+    {
+      "id": "deepseek-harness",
+      "name": "DeepSeek Harness (DSH)",
+      "cat": 20,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [
+        "deepseek",
+        "anthropic",
+        "openai",
+        "local"
+      ],
+      "tags": [
+        "agents",
+        "coding",
+        "plugins",
+        "typescript"
+      ],
+      "routes": [
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "depends",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Necesita un proveedor: clave de DeepSeek, un proveedor de terceros incluido (Anthropic, OpenAI, Kimi, GLM) o una API propia compatible.",
+        "subscription_note": "No documenta uso con sesiones de Claude Code o Codex; los plugins y servidores MCP se configuran dentro de DSH.",
+        "local_note": "La guía de proveedores admite una API personalizada para un servidor autoalojado; el harness no incluye modelos.",
+        "cost_note": "El consumo se paga al proveedor elegido. Un servidor local consume tu hardware.",
+        "hardware_note": "Node.js para `npx`; pnpm para ejecutar desde el código. Preferible una VM o contenedor desechable según su aviso de seguridad.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7941e30f7bdca9391befe39b9115d211157fa42d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Lee SAFETY.md y prepara una VM, contenedor o carpeta de prueba: es una vista previa que ejecuta código generado por el modelo.",
+          "Inicia la Web UI con el comando de npm y configura un proveedor en Settings → Models.",
+          "Pide una tarea pequeña sobre archivos de prueba; añade plugins o servidores MCP uno por uno."
+        ],
+        "command": "npx @deepseek-ai/dsh web",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre la Web UI en una VM o contenedor, configura un proveedor y pide un resumen de un archivo ficticio",
+        "success": "El resumen aparece y el registro de la sesión muestra el proveedor elegido",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Probar un harness de agentes extensible por plugins",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Comparar proveedores de modelos desde una misma Web UI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md",
+        "source_blob_sha": "7941e30f7bdca9391befe39b9115d211157fa42d",
+        "previous_category": [
+          20,
+          "terminal"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Necesita un proveedor: clave de DeepSeek, un proveedor de terceros incluido (Anthropic, OpenAI, Kimi, GLM) o una API propia compatible.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+      "desc": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/deepseek-ai/deepseek-harness",
+      "install": "npx @deepseek-ai/dsh web",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "dsh-noema",
+        "engram",
+        "agentmemory",
+        "litellm",
+        "ollama"
+      ],
+      "alt": []
     },
     {
       "id": "gemini-cli",
@@ -58491,7 +59125,8 @@
       "alt": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "antigravity-cli"
       ]
     },
     {
@@ -60961,6 +61596,131 @@
       ]
     },
     {
+      "id": "openbot",
+      "name": "OpenBot",
+      "cat": 21,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": true,
+      "prov": [
+        "openai",
+        "anthropic",
+        "google",
+        "local"
+      ],
+      "tags": [
+        "agents",
+        "computer-use",
+        "ag-ui",
+        "mcp",
+        "typescript"
+      ],
+      "routes": [
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "depends",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Elige OpenAI, Claude, Gemini o un endpoint compatible con OpenAI; el despliegue en Kubernetes de evaluación usa una clave de modelo.",
+        "subscription_note": "Los agentes externos se conectan por AG-UI (el repositorio trae ejemplos para LangGraph, Mastra, CrewAI, Agno, Pydantic AI, ADK y otros); no usa sesiones de Claude Code o Codex.",
+        "local_note": "El README describe una operación totalmente local con OpenBot, Intelligence y un modelo compatible; las apps conectadas siguen usando internet.",
+        "cost_note": "La plantilla es MIT, pero CopilotKit Intelligence tiene licencia aparte: local gratuita para uso personal, prueba para Kubernetes y licencia de producción después.",
+        "hardware_note": "Docker para PostgreSQL, la API y los Bots; Bun para ejecutar desde el código; Kubernetes y Helm para equipos.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/CopilotKit/OpenBot/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "cbf56b370cb0e28ae8edd3fa8149b6a6c81a61b4"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Para probarlo solo, descarga la app de escritorio enlazada en el README; incluye el backend en Docker.",
+          "Elige el modelo (OpenAI, Claude, Gemini o un endpoint compatible) y revisa la licencia local de CopilotKit Intelligence.",
+          "Pide una tarea con aprobación activada y revisa la auditoría antes de conectar cuentas reales o un equipo."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/CopilotKit/OpenBot/releases",
+        "source": "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación",
+        "success": "La acción queda pendiente de tu aprobación y aparece en la auditoría",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Dar a un asistente un navegador propio con aprobaciones",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Conectar un agente existente por AG-UI a un espacio común",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+        "source_blob_sha": "cbf56b370cb0e28ae8edd3fa8149b6a6c81a61b4",
+        "previous_category": [
+          21,
+          "asistentes"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Elige OpenAI, Claude, Gemini o un endpoint compatible con OpenAI; el despliegue en Kubernetes de evaluación usa una clave de modelo.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+      "desc": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+      "stack": "TypeScript, docker-compose.yml, package.json",
+      "repo": "https://github.com/CopilotKit/OpenBot",
+      "install": "Seguir la instalación original: https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "copilotkit",
+        "langgraph",
+        "mastra",
+        "crewai",
+        "firecrawl",
+        "composio"
+      ],
+      "alt": [
+        "opendots"
+      ]
+    },
+    {
       "id": "openclaw",
       "name": "OpenClaw",
       "cat": 21,
@@ -61205,7 +61965,9 @@
         "composio",
         "servers"
       ],
-      "alt": []
+      "alt": [
+        "openbot"
+      ]
     },
     {
       "id": "paperclip",
@@ -67665,6 +68427,122 @@
       ]
     },
     {
+      "id": "apache-iceberg",
+      "name": "Apache Iceberg",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "lakehouse",
+        "table-format",
+        "java"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/apache/iceberg/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7de24c77373acec815a47171f540b46afa7014af"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Decide el motor (Spark, Flink, Trino, DuckDB) o la biblioteca (PyIceberg, iceberg-rust) con que vas a leer y escribir tablas.",
+          "Configura un catálogo y un almacenamiento de prueba según la documentación oficial.",
+          "Crea una tabla pequeña, haz un cambio de esquema y consulta un snapshot anterior."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://py.iceberg.apache.org/",
+        "source": "https://github.com/apache/iceberg/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea una tabla Iceberg pequeña con PyIceberg, añade una columna y consulta el snapshot previo",
+        "success": "El snapshot anterior conserva el esquema original",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Compartir una tabla analítica entre varios motores",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Consultar un snapshot anterior tras un cambio de esquema",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/apache/iceberg/blob/main/README.md",
+        "source_blob_sha": "7de24c77373acec815a47171f540b46afa7014af",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+      "desc": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+      "stack": "Java, build.gradle",
+      "repo": "https://github.com/apache/iceberg",
+      "install": "Seguir la instalación original: https://github.com/apache/iceberg/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir una tabla analítica entre varios motores; Consultar un snapshot anterior tras un cambio de esquema",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "jupyterlab"
+      ],
+      "alt": [
+        "delta-lake",
+        "hudi"
+      ]
+    },
+    {
       "id": "awesome-bigdata",
       "name": "awesome-bigdata",
       "cat": 25,
@@ -67893,6 +68771,122 @@
       "alt": []
     },
     {
+      "id": "delta-lake",
+      "name": "Delta Lake",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "lakehouse",
+        "table-format",
+        "scala"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/delta-io/delta/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5a3c8ceaa500e9c1fd5b205660257915e454cf06"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Sigue la guía rápida oficial con Spark (Scala, Java o Python) o usa delta-rs si no quieres JVM.",
+          "Escribe una tabla de prueba en un directorio local y lee su historial.",
+          "Prueba una actualización y una consulta de una versión anterior antes de usar almacenamiento en la nube."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://docs.delta.io/latest/quick-start.html",
+        "source": "https://github.com/delta-io/delta/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Escribe una tabla Delta local, actualiza unas filas y lee la versión 0",
+        "success": "La versión 0 muestra los datos originales",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Añadir transacciones y versiones a archivos Parquet",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Recuperar una versión anterior de una tabla",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/delta-io/delta/blob/master/README.md",
+        "source_blob_sha": "5a3c8ceaa500e9c1fd5b205660257915e454cf06",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+      "desc": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+      "stack": "Scala, Dockerfile, build.sbt",
+      "repo": "https://github.com/delta-io/delta",
+      "install": "Seguir la instalación original: https://github.com/delta-io/delta/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "jupyterlab"
+      ],
+      "alt": [
+        "apache-iceberg",
+        "hudi"
+      ]
+    },
+    {
       "id": "duckdb",
       "name": "DuckDB",
       "cat": 25,
@@ -68002,7 +68996,9 @@
       "combines_with": [
         "marimo",
         "superset",
-        "timesfm"
+        "timesfm",
+        "apache-iceberg",
+        "delta-lake"
       ],
       "alt": [
         "polars"
@@ -68362,7 +69358,126 @@
         "superset",
         "awesome-bigdata"
       ],
-      "alt": []
+      "alt": [
+        "apache-iceberg",
+        "delta-lake"
+      ]
+    },
+    {
+      "id": "jupyterlab",
+      "name": "JupyterLab",
+      "cat": 25,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "notebooks",
+        "data",
+        "python",
+        "typescript"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "Sin coste de modelo. Las extensiones de IA (p. ej. Jupyter AI) se configuran aparte con sus proveedores.",
+        "hardware_note": "Python con pip, conda o mamba; los kernels y extensiones añaden sus propias dependencias.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/jupyterlab/jupyterlab/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1b6521c29c5e3b96fb374450cde558c2e6387a4f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Crea un entorno de Python e instala JupyterLab con pip, conda o mamba.",
+          "Ejecuta `jupyter lab` en una carpeta de prueba y crea un notebook.",
+          "Ejecuta unas celdas y guarda el notebook antes de instalar extensiones."
+        ],
+        "command": "pip install jupyterlab",
+        "command_status": "documented",
+        "entry_url": "https://jupyterlab.readthedocs.io/",
+        "source": "https://github.com/jupyterlab/jupyterlab/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea un notebook, carga un CSV ficticio y dibuja un gráfico simple",
+        "success": "El notebook guarda código, tabla y gráfico al reabrirlo",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Analizar datos de muestra en un notebook",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Documentar un experimento con código y resultados",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/jupyterlab/jupyterlab/blob/main/README.md",
+        "source_blob_sha": "1b6521c29c5e3b96fb374450cde558c2e6387a4f",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+      "desc": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+      "stack": "TypeScript, package.json, pyproject.toml",
+      "repo": "https://github.com/jupyterlab/jupyterlab",
+      "install": "pip install jupyterlab",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Analizar datos de muestra en un notebook; Documentar un experimento con código y resultados",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "pytorch",
+        "tensorflow",
+        "duckdb",
+        "polars"
+      ],
+      "alt": [
+        "marimo"
+      ]
     },
     {
       "id": "marimo",
@@ -68484,7 +69599,9 @@
         "polars",
         "ollama"
       ],
-      "alt": []
+      "alt": [
+        "jupyterlab"
+      ]
     },
     {
       "id": "polars",
@@ -68598,7 +69715,9 @@
       "combines_with": [
         "marimo",
         "timesfm",
-        "streamlit"
+        "streamlit",
+        "apache-iceberg",
+        "delta-lake"
       ],
       "alt": [
         "duckdb"
@@ -78053,6 +79172,123 @@
       ]
     },
     {
+      "id": "elevenlabs-python",
+      "name": "ElevenLabs (SDK de Python)",
+      "cat": 29,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [
+        "elevenlabs"
+      ],
+      "tags": [
+        "tts",
+        "voice",
+        "api",
+        "python"
+      ],
+      "routes": [
+        "api"
+      ],
+      "access": {
+        "api": "required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "usage_based",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Toda llamada usa la API de ElevenLabs con tu ELEVENLABS_API_KEY.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "No ejecuta modelos localmente: es un cliente de un servicio en la nube.",
+        "cost_note": "Consumo por caracteres, minutos o créditos según el plan de ElevenLabs; el SDK es gratuito.",
+        "hardware_note": "Python 3.8 o superior y conexión a internet.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "958f4657ae264f480bd7ae3372e5e08c43101711"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Crea una clave en ElevenLabs y guárdala como ELEVENLABS_API_KEY fuera del repositorio.",
+          "Instala el paquete y convierte una frase corta con el ejemplo del README.",
+          "Revisa el consumo en tu cuenta antes de generar audio largo o clonar voces (con consentimiento)."
+        ],
+        "command": "pip install elevenlabs",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Convierte una frase corta a voz con una voz predefinida",
+        "success": "Obtienes un MP3 reproducible y el consumo aparece en tu cuenta",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Generar una locución para un video",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Prototipar un agente de voz conectado a la API",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md",
+        "source_blob_sha": "958f4657ae264f480bd7ae3372e5e08c43101711",
+        "previous_category": [
+          29,
+          "tts"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Toda llamada usa la API de ElevenLabs con tu ELEVENLABS_API_KEY.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+      "desc": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+      "stack": "Python, pyproject.toml, requirements.txt",
+      "repo": "https://github.com/elevenlabs/elevenlabs-python",
+      "install": "pip install elevenlabs",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Generar una locución para un video; Prototipar un agente de voz conectado a la API",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "openmontage",
+        "pipecat",
+        "livekit-agents",
+        "video-use",
+        "remotion-superpowers"
+      ],
+      "alt": []
+    },
+    {
       "id": "faster-whisper",
       "name": "faster-whisper",
       "cat": 29,
@@ -78792,7 +80028,8 @@
       "combines_with": [
         "kokoro",
         "ollama",
-        "whisper-cpp"
+        "whisper-cpp",
+        "elevenlabs-python"
       ],
       "alt": [
         "pipecat",
@@ -79289,12 +80526,131 @@
         "kokoro",
         "whisper-cpp",
         "ollama",
-        "nemo"
+        "nemo",
+        "elevenlabs-python"
       ],
       "alt": [
         "livekit-agents",
         "dograh"
       ]
+    },
+    {
+      "id": "pyannote-audio",
+      "name": "pyannote.audio",
+      "cat": 29,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [
+        "local"
+      ],
+      "tags": [
+        "audio",
+        "diarization",
+        "pytorch",
+        "python"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "community-1 corre localmente con un token de Hugging Face; precision-2 corre en los servidores de pyannoteAI con su propia clave.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Los pipelines abiertos se ejecutan localmente en CPU o GPU tras aceptar sus condiciones en Hugging Face.",
+        "cost_note": "La ruta local no paga por uso; pyannoteAI ofrece créditos gratuitos y después cobra. La telemetría es opcional (PYANNOTE_METRICS_ENABLED).",
+        "hardware_note": "Python 3.11 o superior y ffmpeg; GPU recomendable para audio largo.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/pyannote/pyannote-audio/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "aacefa836c97e5d2e4e512edfa83f13fbce93f3f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Instala ffmpeg y el paquete; acepta las condiciones de pyannote/speaker-diarization-community-1 en Hugging Face y crea un token.",
+          "Ejecuta el pipeline sobre un audio corto, en GPU si la tienes.",
+          "Revisa los segmentos por hablante antes de combinarlos con una transcripción."
+        ],
+        "command": "pip install pyannote.audio",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta community-1 sobre un audio corto con dos voces de prueba",
+        "success": "Los segmentos alternan entre dos hablantes con marcas de tiempo coherentes",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Separar por hablante la grabación de una reunión",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Añadir hablantes a una transcripción",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+        "source_blob_sha": "aacefa836c97e5d2e4e512edfa83f13fbce93f3f",
+        "previous_category": [
+          29,
+          "audio"
+        ],
+        "category_verdict": "confirmed",
+        "note": "community-1 corre localmente con un token de Hugging Face; precision-2 corre en los servidores de pyannoteAI con su propia clave.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+      "desc": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+      "stack": "Jupyter Notebook, pyproject.toml",
+      "repo": "https://github.com/pyannote/pyannote-audio",
+      "install": "pip install pyannote.audio",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Separar por hablante la grabación de una reunión; Añadir hablantes a una transcripción",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "whisperx",
+        "pytorch",
+        "faster-whisper",
+        "ffmpeg"
+      ],
+      "alt": []
     },
     {
       "id": "rnnoise",
@@ -80252,7 +81608,8 @@
       "combines_with": [
         "faster-whisper",
         "whisper",
-        "moviepy"
+        "moviepy",
+        "pyannote-audio"
       ],
       "alt": [
         "nemo"
@@ -81710,7 +83067,8 @@
       "combines_with": [
         "remotion",
         "ffmpeg",
-        "kokoro"
+        "kokoro",
+        "elevenlabs-python"
       ],
       "alt": [
         "remotion-superpowers",

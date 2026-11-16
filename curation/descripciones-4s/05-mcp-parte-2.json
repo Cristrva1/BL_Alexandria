@@ -166,7 +166,7 @@
      "orden_instalacion": "Revisa la sección de bases de datos de la lista."
     }
    ],
-   "notas": "Sin alternativas declaradas. Para producción, valora el servidor oficial neo4j/mcp (no catalogado). El servidor Cypher puede escribir: limita permisos.",
+   "notas": "Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos.",
    "fuentes": [
     "https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md",
     "https://github.com/neo4j/mcp"

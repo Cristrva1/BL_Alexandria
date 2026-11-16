@@ -4,7 +4,7 @@
 
 Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
 
-100 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
+102 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
 
 ## Opciones para empezar
 
@@ -66,7 +66,7 @@ Plataformas que permiten diseñar flujos de IA con una interfaz.
 
 Asistentes listos o adaptables para tareas de varias etapas.
 
-[Explorar 11 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-asistentes)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-asistentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -76,6 +76,7 @@ Asistentes listos o adaptables para tareas de varias etapas.
 | [hermes-agent](../fichas/hermes-agent.md) | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. | API de IA opcional |
 | [Mercury Agent](../fichas/mercury-agent.md) | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. | API de IA opcional |
 | [multica](../fichas/multica.md) | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. | API de IA opcional |
+| [OpenBot](../fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Depende de la ruta elegida |
 | [OpenClaw](../fichas/openclaw.md) | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. | API de IA opcional |
 | [OpenDots](../fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | API de IA necesaria |
 | [paperclip](../fichas/paperclip.md) | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. | API de IA opcional |
@@ -149,7 +150,7 @@ Abrir páginas e interactuar con interfaces reales.
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-[Explorar 23 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
+[Explorar 24 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -170,6 +171,7 @@ Servidores, clientes y SDKs para dar herramientas a un agente.
 | [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md) | SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. | Sin clave propia de API de IA en la ruta básica |
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Sin clave propia de API de IA en la ruta básica |
 | [mcp-use](../fichas/mcp-use.md) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | API de IA opcional |
+| [Neo4j MCP (oficial)](../fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Sin clave propia de API de IA en la ruta básica |
 | [Playwright MCP](../fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
 | [public-apis](../fichas/public-apis.md) | Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos. | Sin clave propia de API de IA en la ruta básica |
 | [Serena](../fichas/serena.md) | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. | Sin clave propia de API de IA en la ruta básica |

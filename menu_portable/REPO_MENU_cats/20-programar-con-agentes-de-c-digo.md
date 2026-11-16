@@ -35,6 +35,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `ollama`, `tree-sitter`
 **Alternativas (elige una):** `opencode`, `cline`
 
+## `antigravity-cli`
+role=app · exec=hybrid · setup=easy · mcp=True · prov=google · tags=coding,agents,cli,google
+
+**Qué es:** Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Inicia sesión con una cuenta de Google (o un proyecto de GCP para empresa); no pide una clave de API propia en la ruta básica.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Acceso oficial con sesión del plan
+- Modelos locales: Modelo local no documentado. No documenta modelos locales.
+- Coste: El coste depende del proveedor o la ruta. Los límites dependen de la cuenta y el plan de Google. Google recoge datos de interacción por defecto (desactivable en ajustes).
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/google-antigravity/antigravity-cli
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/google-antigravity/antigravity-cli/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Inicia agy en un proyecto de prueba y pide renombrar una función con su prueba
+**Qué comprobar:** El cambio aparece en el diff y pediste permiso antes de ejecutar comandos
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `google-skills`, `antigravity-awesome-skills`, `engram`, `context7`
+**Alternativas (elige una):** `gemini-cli`, `claude-code`, `codex`
+
 ## `claude-code`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=anthropic,mcp · tags=coding-agent,agents,mcp,typescript
 
@@ -64,7 +95,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar el archivo citado y la configuración de acceso
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `superpowers`, `anthropic-skills`, `claude-mem`, `context7`
-**Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`
+**Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`, `antigravity-cli`
 
 ## `cline`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
@@ -127,7 +158,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar los archivos usados y el alcance de la propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `agent-skills`, `spec-kit`, `context7`, `t3code`
-**Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
+**Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`, `antigravity-cli`
+
+## `deepseek-harness`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=deepseek,anthropic,openai,local · tags=agents,coding,plugins,typescript
+
+**Qué es:** Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. Necesita un proveedor: clave de DeepSeek, un proveedor de terceros incluido (Anthropic, OpenAI, Kimi, GLM) o una API propia compatible.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La guía de proveedores admite una API personalizada para un servidor autoalojado; el harness no incluye modelos.
+- Coste: El coste depende del proveedor o la ruta. El consumo se paga al proveedor elegido. Un servidor local consume tu hardware.
+- Equipo: Equipo normal; revisar dependencias. Node.js para `npx`; pnpm para ejecutar desde el código. Preferible una VM o contenedor desechable según su aviso de seguridad.
+**Repo:** https://github.com/deepseek-ai/deepseek-harness
+
+**Instalación** [+]:
+
+```
+npx @deepseek-ai/dsh web
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Abre la Web UI en una VM o contenedor, configura un proveedor y pide un resumen de un archivo ficticio
+**Qué comprobar:** El resumen aparece y el registro de la sesión muestra el proveedor elegido
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dsh-noema`, `engram`, `agentmemory`, `litellm`, `ollama`
 
 ## `gemini-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
@@ -159,7 +220,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes elegir el producto de Google apropiado antes de instalar
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `stitch-skills`, `context7`, `mcp`
-**Alternativas (elige una):** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `claude-code`, `codex`, `opencode`, `antigravity-cli`
 
 ## `goose`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,mcp,rust

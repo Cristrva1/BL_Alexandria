@@ -373,7 +373,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empieza con material propio y narración Piper y comprueba guion, timeline y exportación
 **Qué comprobar:** Puedes revisar la procedencia de cada asset y abrir el MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `ffmpeg`, `kokoro`
+**Combina con:** `remotion`, `ffmpeg`, `kokoro`, `elevenlabs-python`
 **Alternativas (elige una):** `remotion-superpowers`, `moneyprinterturbo`
 
 ## `papermorph`

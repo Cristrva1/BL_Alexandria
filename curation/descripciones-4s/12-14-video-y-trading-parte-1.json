@@ -64,7 +64,7 @@
      "orden_instalacion": "Pasa los fotogramas por Real-ESRGAN."
     }
    ],
-   "notas": "Alternativas (elige una): hunyuanvideo.",
+   "notas": "Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.",
    "fuentes": [
     "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
     "https://docs.comfy.org/tutorials/video/wan/wan2_2",
@@ -100,7 +100,7 @@
      "orden_instalacion": "Selecciona Hunyuan Video en WanGP."
     }
    ],
-   "notas": "Alternativas (elige una): wan2-2. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
+   "notas": "Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
    "fuentes": [
     "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md",
     "https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video",
@@ -139,6 +139,11 @@
      "id": "lossless-cut",
      "motivo": "Recortar resultados sin recodificar. (combinación por arquitectura)",
      "orden_instalacion": "Abre los vídeos en LosslessCut."
+    },
+    {
+     "id": "hunyuanvideo-1-5",
+     "motivo": "Wan2GP incluye Hunyuan Video 1.5 entre sus modelos para GPUs con poca VRAM.",
+     "orden_instalacion": "Elige el modelo en la interfaz; los pesos se descargan aparte."
     }
    ],
    "notas": "Alternativas (elige una): comfyui. Licencia propia, no OSI: revísala antes de redistribuir.",

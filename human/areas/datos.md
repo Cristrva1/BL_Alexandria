@@ -4,7 +4,7 @@
 
 Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicación o negocio.
 
-25 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
+28 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
 
 ## Opciones para empezar
 
@@ -18,14 +18,17 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Motores de consulta, tablas y conjuntos de datos.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=datos&topic=datos-procesar)
+[Explorar 9 repos](../../docs/index.html#/explorar?area=datos&topic=datos-procesar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Apache Iceberg](../fichas/apache-iceberg.md) | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-bigdata](../fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica |
+| [Delta Lake](../fichas/delta-lake.md) | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. | Sin clave propia de API de IA en la ruta básica |
 | [DuckDB](../fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica |
 | [GlobalBuildingAtlas](../fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica |
 | [hudi](../fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica |
+| [JupyterLab](../fichas/jupyterlab.md) | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. | Sin clave propia de API de IA en la ruta básica |
 | [marimo](../fichas/marimo.md) | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. | API de IA opcional |
 | [Polars](../fichas/polars.md) | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. | Sin clave propia de API de IA en la ruta básica |
 

@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**612 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **99 subcategorías**
+**623 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **99 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -79,14 +79,14 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 2 | 🧠 Skills, plugins y métodos para agentes | 30 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
 | 3 | 🕸️ Construir agentes y coordinar equipos de IA | 30 | Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
 | 4 | 🕷️ Buscar, extraer y monitorear información web | 20 | Crawlers y extracción para IA, Scraping guiado por LLM, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |
-| 5 | 🔌 Conectar herramientas con MCP | 22 | SDKs y frameworks para crear MCP, Servidores MCP destacados, Directorios, clientes y aprendizaje | `human/categorias/05-mcp-conectividad.md` |
+| 5 | 🔌 Conectar herramientas con MCP | 23 | SDKs y frameworks para crear MCP, Servidores MCP destacados, Directorios, clientes y aprendizaje | `human/categorias/05-mcp-conectividad.md` |
 | 6 | 🧬 Memoria, RAG y búsqueda de conocimiento | 23 | Memoria persistente para agentes, RAG y motores de conocimiento, Bases vectoriales y búsqueda semántica | `human/categorias/06-memoria-rag-llm-ops.md` |
 | 7 | 🧑‍💻 Entender código y comprobar su calidad | 11 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, CLIs y SDKs de desarrollo | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
 | 8 | 🏠 Chats, modelos locales y espacios privados | 26 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
-| 9 | 🎨 Diseñar y construir interfaces web | 28 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
+| 9 | 🎨 Diseñar y construir interfaces web | 29 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
 | 10 | 📊 Dashboards, analítica y mapas | 21 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
 | 11 | 🖼️ Generar y editar imágenes con IA | 8 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | 🎬 Editar, grabar y generar video | 14 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
+| 12 | 🎬 Editar, grabar y generar video | 15 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
 | 13 | 📄 PDF, OCR y procesamiento de documentos | 19 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 19 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
 | 15 | 🗂️ Organizar notas, archivos y servicios personales | 27 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
@@ -94,16 +94,16 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 17 | 🤖 WhatsApp, mensajería y chatbots | 10 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
 | 18 | 🤖 CRM, ventas y marketing | 13 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
 | 19 | 🧠 Aprender IA y escribir mejores prompts | 28 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
-| 20 | 🕸️ Programar con agentes de código | 15 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones | `human/categorias/20-agentes-de-codigo.md` |
-| 21 | 🕸️ Asistentes e investigación con agentes | 16 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
+| 20 | 🕸️ Programar con agentes de código | 17 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones | `human/categorias/20-agentes-de-codigo.md` |
+| 21 | 🕸️ Asistentes e investigación con agentes | 17 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
 | 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 16 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |
 | 23 | 🧬 Operar, evaluar y medir modelos de IA | 19 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
 | 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 14 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
-| 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 9 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
+| 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 12 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
 | 26 | 🎨 Animación, gráficos y creación 3D | 19 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
 | 27 | 🎨 Skills de diseño, contenido y especialidades | 36 | Skills de diseño para agentes, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio | `human/categorias/27-skills-especializadas.md` |
 | 28 | 🖼️ Visión artificial, rostros y percepción | 17 | Rostros y retratos animados, Visión por computador | `human/categorias/28-vision-percepcion.md` |
-| 29 | 🎬 Audio, transcripción, voz y música | 24 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
+| 29 | 🎬 Audio, transcripción, voz y música | 26 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
 | 30 | 🎬 Video con código y agentes creativos | 21 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
 | 31 | 📄 Presentaciones, diagramas y explicación visual | 8 | Presentaciones, Diagramas y documentación | `human/categorias/31-presentaciones-diagramas.md` |
 | 32 | 🕷️ Navegadores y automatización web | 11 | Automatización y pruebas por código, Herramientas de navegación para agentes, Navegadores y servidores de ejecución, Directorios y recursos de navegador | `human/categorias/32-navegadores-automatizacion-web.md` |

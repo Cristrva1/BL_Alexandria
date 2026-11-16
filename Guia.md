@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **612 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **623 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -16,14 +16,14 @@ Las **612 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 30 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
 | 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 30 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
 | 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 20 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
-| 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 22 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
+| 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 23 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 23 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 11 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 26 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
-| 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 28 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
+| 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 29 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
 | 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 21 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
 | 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 8 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
-| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 14 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
+| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 15 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 19 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 19 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 27 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
@@ -31,16 +31,16 @@ Las **612 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 10 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 13 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 28 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
-| 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 15 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
-| 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 16 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
+| 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 17 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
+| 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 16 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
 | 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 19 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 14 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
-| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 9 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
+| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 12 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
 | 26 | [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) | 19 | Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario. |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 36 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
 | 28 | [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) | 17 | Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes. |
-| 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 24 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
+| 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 26 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
 | 30 | [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) | 21 | Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores. |
 | 31 | [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) | 8 | Presentaciones, diagramas y documentación visual. Elige entre editar una pieza, escribir su estructura o generarla con un agente; revisa cómo se exporta antes de empezar. |
 | 32 | [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) | 11 | Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Para leer páginas estáticas consulta extracción web; para operar una interfaz empieza por estas herramientas. |
@@ -343,7 +343,7 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx skills add google/skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar la configuración de un servicio Cloud en un entorno de prueba; Aprender a consultar métricas de Ads sin crear campañas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Gemini CLI](human/fichas/gemini-cli.md) · [gemini-skills](human/fichas/gemini-skills.md) · [Agent Development Kit (ADK)](human/fichas/adk-python.md)<br>
+**Combina con:** [Gemini CLI](human/fichas/gemini-cli.md) · [gemini-skills](human/fichas/gemini-skills.md) · [Agent Development Kit (ADK)](human/fichas/adk-python.md) · [Antigravity CLI](human/fichas/antigravity-cli.md)<br>
 **Más:** [ficha completa](human/fichas/google-skills.md) · [GitHub](https://github.com/google/skills)
 
 #### 📂 plugins
@@ -1165,6 +1165,13 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 | [Playwright MCP](human/fichas/playwright-mcp.md) | Tu objetivo encaja con estos ejemplos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Chrome DevTools MCP](human/fichas/chrome-devtools-mcp.md) | Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — mcp-neo4j, Neo4j MCP (oficial)**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [mcp-neo4j](human/fichas/mcp-neo4j.md) | Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Neo4j MCP (oficial)](human/fichas/neo4j-mcp.md) | Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente | necesitas un producto autónomo y esta pieza requiere un cliente MCP y una base Neo4j |
+
 ### SDKs y frameworks para crear MCP
 
 #### 🧰 FastMCP ⭐
@@ -1323,6 +1330,15 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [graphrag](human/fichas/graphrag.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-neo4j.md) · [GitHub](https://github.com/neo4j-contrib/mcp-neo4j)
 
+#### 🧩 Neo4j MCP (oficial)
+**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 307<br>
+**Qué es:** Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
+**Comando documentado:** `pip install neo4j-mcp-server` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente — **Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP y una base Neo4j<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Graphiti](human/fichas/graphiti.md) · [cognee](human/fichas/cognee.md)<br>
+**Más:** [ficha completa](human/fichas/neo4j-mcp.md) · [GitHub](https://github.com/neo4j/mcp)
+
 ### Directorios, clientes y aprendizaje
 
 #### 📚 MCP for Beginners ⭐
@@ -1470,7 +1486,7 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx -y @agentmemory/agentmemory@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [hermes-agent](human/fichas/hermes-agent.md) · [DeepSeek Harness (DSH)](human/fichas/deepseek-harness.md)<br>
 **Más:** [ficha completa](human/fichas/agentmemory.md) · [GitHub](https://github.com/rohitg00/agentmemory)
 
 #### 🧠 Engram
@@ -1479,7 +1495,7 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/Gentleman-Programming/engram/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [DeepSeek Harness (DSH)](human/fichas/deepseek-harness.md)<br>
 **Más:** [ficha completa](human/fichas/engram.md) · [GitHub](https://github.com/Gentleman-Programming/engram)
 
 #### 🧠 Letta
@@ -1497,7 +1513,7 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/ZSeven-W/dsh-noema/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Dar memoria a DeepSeek Harness; Importar una nota propia de otro agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [hermes-agent](human/fichas/hermes-agent.md) · [DeepSeek Harness (DSH)](human/fichas/deepseek-harness.md)<br>
 **Más:** [ficha completa](human/fichas/dsh-noema.md) · [GitHub](https://github.com/ZSeven-W/dsh-noema)
 
 ### RAG y motores de conocimiento
@@ -2040,6 +2056,13 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 | [React Bits](human/fichas/react-bits.md) | Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [magicui](human/fichas/magicui.md) | Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — TanStack Query, swr**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [TanStack Query](human/fichas/tanstack-query.md) | Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [swr](human/fichas/swr.md) | Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 **⚖️ ¿Cuál elegir? — Excalidraw, tldraw**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -2105,6 +2128,15 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/react-bits.md) · [GitHub](https://github.com/DavidHDev/react-bits)
+
+#### 📚 TanStack Query
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 50.6k<br>
+**Qué es:** Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/TanStack/query/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [supabase](human/fichas/supabase.md) · [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Más:** [ficha completa](human/fichas/tanstack-query.md) · [GitHub](https://github.com/TanStack/query)
 
 #### 🔄 swr
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 32.5k<br>
@@ -2267,7 +2299,7 @@ docker compose up -d
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx copilotkit@latest create` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir asistencia contextual a una app; Mostrar componentes generados a partir de respuestas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [Microsoft Agent Framework](human/fichas/agent-framework.md) · [crewAI](human/fichas/crewai.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [Microsoft Agent Framework](human/fichas/agent-framework.md) · [crewAI](human/fichas/crewai.md) · [OpenBot](human/fichas/openbot.md)<br>
 **Más:** [ficha completa](human/fichas/copilotkit.md) · [GitHub](https://github.com/CopilotKit/CopilotKit)
 
 #### 🪄 screenshot-to-code
@@ -2610,7 +2642,7 @@ Interfaces y modelos de generación, recorte, restauración y ampliación. Disti
 **Comando documentado:** `pip install comfy-cli
 comfy install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FLUX.2](human/fichas/flux2.md) · [Krita AI Diffusion](human/fichas/krita-ai-diffusion.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
+**Combina con:** [FLUX.2](human/fichas/flux2.md) · [Krita AI Diffusion](human/fichas/krita-ai-diffusion.md) · [Real-ESRGAN](human/fichas/real-esrgan.md) · [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md)<br>
 **Más:** [ficha completa](human/fichas/comfyui.md) · [GitHub](https://github.com/Comfy-Org/ComfyUI)
 
 #### 🖌️ InvokeAI
@@ -2705,12 +2737,13 @@ Editores, grabadores, utilidades de medios y modelos de video generativo. La edi
 | [MoneyPrinterTurbo](human/fichas/moneyprinterturbo.md) | Tu objetivo encaja con estos ejemplos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [short-video-factory](human/fichas/short-video-factory.md) | Tu objetivo encaja con estos ejemplos: Crear un borrador de producto; Preparar variantes de un anuncio propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Wan2.2, HunyuanVideo**
+**⚖️ ¿Cuál elegir? — Wan2.2, HunyuanVideo, HunyuanVideo 1.5**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Wan2.2](human/fichas/wan2-2.md) | Tu objetivo encaja con estos ejemplos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [HunyuanVideo](human/fichas/hunyuanvideo.md) | Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md) | Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p | no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia |
 
 ### Edición, grabación y subtítulos
 
@@ -2828,7 +2861,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/deepbeepmeep/Wan2GP/blob/main/docs/INSTALLATION.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Wan2.2](human/fichas/wan2-2.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Wan2.2](human/fichas/wan2-2.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md) · [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md)<br>
 **Más:** [ficha completa](human/fichas/wan2gp.md) · [GitHub](https://github.com/deepbeepmeep/WanGP)
 
 #### 🎬 short-video-factory
@@ -2853,6 +2886,15 @@ pip install -r requirements.txt
 **Elige si:** Tu objetivo encaja con estos ejemplos: Obtener clips de un tutorial propio; Comparar criterios de selección de momentos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [faster-whisper](human/fichas/faster-whisper.md) · [yt-dlp](human/fichas/yt-dlp.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/ai-youtube-shorts-generator.md) · [GitHub](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator)
+
+#### 🧩 HunyuanVideo 1.5
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 4.6k<br>
+**Qué es:** Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p — **Evita si:** no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia<br>
+**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [WanGP](human/fichas/wan2gp.md) · [vLLM](human/fichas/vllm.md)<br>
+**Más:** [ficha completa](human/fichas/hunyuanvideo-1-5.md) · [GitHub](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5)
 
 ---
 
@@ -4461,6 +4503,15 @@ Agentes de terminal, extensiones de editor y entornos para programar con IA. Rev
 **Combina con:** [superpowers](human/fichas/superpowers.md) · [Anthropic Skills](human/fichas/anthropic-skills.md) · [claude-mem](human/fichas/claude-mem.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/claude-code.md) · [GitHub](https://github.com/anthropics/claude-code)
 
+#### 🖥️ DeepSeek Harness (DSH)
+**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 282k<br>
+**Qué es:** Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.<br>
+**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `npx @deepseek-ai/dsh web` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [dsh-noema](human/fichas/dsh-noema.md) · [Engram](human/fichas/engram.md) · [agentmemory](human/fichas/agentmemory.md) · [litellm](human/fichas/litellm.md) · [Ollama](human/fichas/ollama.md)<br>
+**Más:** [ficha completa](human/fichas/deepseek-harness.md) · [GitHub](https://github.com/deepseek-ai/deepseek-harness)
+
 #### 👨‍💻 Codex CLI
 **Etiquetas:** Ejecución ☁️ cloud/API · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 135k<br>
 **Qué es:** Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source.<br>
@@ -4517,6 +4568,15 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [headroom](human/fichas/headroom.md) · [rtk](human/fichas/rtk.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/mimo-code.md) · [GitHub](https://github.com/XiaomiMiMo/MiMo-Code)
+
+#### 🖥️ Antigravity CLI
+**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 2.8k<br>
+**Qué es:** Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/google-antigravity/antigravity-cli/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [skills](human/fichas/google-skills.md) · [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md) · [Engram](human/fichas/engram.md) · [Context7](human/fichas/context7.md)<br>
+**Más:** [ficha completa](human/fichas/antigravity-cli.md) · [GitHub](https://github.com/google-antigravity/antigravity-cli)
 
 ### Editores y extensiones de código
 
@@ -4609,6 +4669,13 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 | [paperclip](human/fichas/paperclip.md) | Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [multica](human/fichas/multica.md) | Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — OpenBot, OpenDots**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [OpenBot](human/fichas/openbot.md) | Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común | necesitas una herramienta estable y auditada para datos sensibles |
+| [OpenDots](human/fichas/opendots.md) | Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 **⚖️ ¿Cuál elegir? — STORM, gpt-researcher, local-deep-research**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4675,6 +4742,15 @@ deeptutor start    # starts backend + frontend` (comprobar los pasos completos e
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/multica.md) · [GitHub](https://github.com/multica-ai/multica)
+
+#### 🖥️ OpenBot
+**Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 12.5k<br>
+**Qué es:** Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.<br>
+**Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/CopilotKit/OpenBot/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
+**Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [crewAI](human/fichas/crewai.md) · [firecrawl](human/fichas/firecrawl.md) · [Composio](human/fichas/composio.md)<br>
+**Más:** [ficha completa](human/fichas/openbot.md) · [GitHub](https://github.com/CopilotKit/OpenBot)
 
 #### 🖥️ OpenDots
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.6k<br>
@@ -5374,6 +5450,21 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 | [DuckDB](human/fichas/duckdb.md) | Tu objetivo encaja con estos ejemplos: Explorar ventas de muestra; Consultar Parquet sin desplegar un servidor | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Polars](human/fichas/polars.md) | Tu objetivo encaja con estos ejemplos: Transformar tablas; Preparar datos antes de un dashboard | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — marimo, JupyterLab**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [marimo](human/fichas/marimo.md) | Tu objetivo encaja con estos ejemplos: Explorar datos en un notebook; Convertir un análisis en una app | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [JupyterLab](human/fichas/jupyterlab.md) | Tu objetivo encaja con estos ejemplos: Analizar datos de muestra en un notebook; Documentar un experimento con código y resultados | necesitas una instalación sin cuentas ni dependencias adicionales |
+
+**⚖️ ¿Cuál elegir? — Apache Iceberg, Delta Lake, hudi**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Apache Iceberg](human/fichas/apache-iceberg.md) | Tu objetivo encaja con estos ejemplos: Compartir una tabla analítica entre varios motores; Consultar un snapshot anterior tras un cambio de esquema | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [Delta Lake](human/fichas/delta-lake.md) | Tu objetivo encaja con estos ejemplos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [hudi](human/fichas/hudi.md) | Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 **⚖️ ¿Cuál elegir? — Gradio, streamlit**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -5389,7 +5480,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://duckdb.org/docs/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar ventas de muestra; Consultar Parquet sin desplegar un servidor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [marimo](human/fichas/marimo.md) · [Apache Superset](human/fichas/superset.md) · [TimesFM](human/fichas/timesfm.md)<br>
+**Combina con:** [marimo](human/fichas/marimo.md) · [Apache Superset](human/fichas/superset.md) · [TimesFM](human/fichas/timesfm.md) · [Apache Iceberg](human/fichas/apache-iceberg.md) · [Delta Lake](human/fichas/delta-lake.md)<br>
 **Más:** [ficha completa](human/fichas/duckdb.md) · [GitHub](https://github.com/duckdb/duckdb)
 
 #### 🗃️ marimo ⭐
@@ -5407,8 +5498,17 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install polars` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Transformar tablas; Preparar datos antes de un dashboard — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [marimo](human/fichas/marimo.md) · [TimesFM](human/fichas/timesfm.md) · [streamlit](human/fichas/streamlit.md)<br>
+**Combina con:** [marimo](human/fichas/marimo.md) · [TimesFM](human/fichas/timesfm.md) · [streamlit](human/fichas/streamlit.md) · [Apache Iceberg](human/fichas/apache-iceberg.md) · [Delta Lake](human/fichas/delta-lake.md)<br>
 **Más:** [ficha completa](human/fichas/polars.md) · [GitHub](https://github.com/pola-rs/polars)
+
+#### 🖥️ JupyterLab
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 15.4k<br>
+**Qué es:** Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install jupyterlab` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Analizar datos de muestra en un notebook; Documentar un experimento con código y resultados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [tensorflow](human/fichas/tensorflow.md) · [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md)<br>
+**Más:** [ficha completa](human/fichas/jupyterlab.md) · [GitHub](https://github.com/jupyterlab/jupyterlab)
 
 #### 🗄️ awesome-bigdata
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 14.7k<br>
@@ -5418,6 +5518,24 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [awesome-dataviz](human/fichas/awesome-dataviz.md) · [DuckDB](human/fichas/duckdb.md) · [hudi](human/fichas/hudi.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-bigdata.md) · [GitHub](https://github.com/oxnr/awesome-bigdata)
+
+#### 📚 Apache Iceberg
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 9.4k<br>
+**Qué es:** Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/apache/iceberg/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Compartir una tabla analítica entre varios motores; Consultar un snapshot anterior tras un cambio de esquema — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [JupyterLab](human/fichas/jupyterlab.md)<br>
+**Más:** [ficha completa](human/fichas/apache-iceberg.md) · [GitHub](https://github.com/apache/iceberg)
+
+#### 📚 Delta Lake
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 9.1k<br>
+**Qué es:** Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/delta-io/delta/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [JupyterLab](human/fichas/jupyterlab.md)<br>
+**Más:** [ficha completa](human/fichas/delta-lake.md) · [GitHub](https://github.com/delta-io/delta)
 
 #### 🧑‍💻 hudi
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 6.4k<br>
@@ -6302,7 +6420,7 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install whisperx` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [faster-whisper](human/fichas/faster-whisper.md) · [whisper](human/fichas/whisper.md) · [MoviePy](human/fichas/moviepy.md)<br>
+**Combina con:** [faster-whisper](human/fichas/faster-whisper.md) · [whisper](human/fichas/whisper.md) · [MoviePy](human/fichas/moviepy.md) · [pyannote.audio](human/fichas/pyannote-audio.md)<br>
 **Más:** [ficha completa](human/fichas/whisperx.md) · [GitHub](https://github.com/m-bain/whisperX)
 
 #### 🎙️ NeMo Speech
@@ -6430,6 +6548,15 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Combina con:** [ComfyUI](human/fichas/comfyui.md) · [Pipecat](human/fichas/pipecat.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/luxtts.md) · [GitHub](https://github.com/ysharma3501/LuxTTS)
 
+#### 📚 ElevenLabs (SDK de Python)
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 3.2k<br>
+**Qué es:** SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.<br>
+**Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
+**Comando documentado:** `pip install elevenlabs` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar una locución para un video; Prototipar un agente de voz conectado a la API — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [OpenMontage](human/fichas/openmontage.md) · [Pipecat](human/fichas/pipecat.md) · [LiveKit Agents](human/fichas/livekit-agents.md) · [video-use](human/fichas/video-use.md) · [Remotion Superpowers](human/fichas/remotion-superpowers.md)<br>
+**Más:** [ficha completa](human/fichas/elevenlabs-python.md) · [GitHub](https://github.com/elevenlabs/elevenlabs-python)
+
 ### Agentes de voz en tiempo real
 
 #### 📞 Pipecat ⭐
@@ -6439,7 +6566,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Comando documentado:** `uv tool install "pipecat-ai[cli]"
 pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un agente de voz; Comparar combinaciones STT/LLM/TTS — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Kokoro](human/fichas/kokoro.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [Ollama](human/fichas/ollama.md) · [NeMo Speech](human/fichas/nemo.md)<br>
+**Combina con:** [Kokoro](human/fichas/kokoro.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [Ollama](human/fichas/ollama.md) · [NeMo Speech](human/fichas/nemo.md) · [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md)<br>
 **Más:** [ficha completa](human/fichas/pipecat.md) · [GitHub](https://github.com/pipecat-ai/pipecat)
 
 #### 📞 LiveKit Agents
@@ -6448,7 +6575,7 @@ pipecat init` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install "livekit-agents[openai,deepgram,cartesia]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un asistente de voz; Evaluar conversación en tiempo real — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Kokoro](human/fichas/kokoro.md) · [Ollama](human/fichas/ollama.md) · [whisper.cpp](human/fichas/whisper-cpp.md)<br>
+**Combina con:** [Kokoro](human/fichas/kokoro.md) · [Ollama](human/fichas/ollama.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md)<br>
 **Más:** [ficha completa](human/fichas/livekit-agents.md) · [GitHub](https://github.com/livekit/agents)
 
 #### 🖥️ dograh
@@ -6487,6 +6614,15 @@ uv run acestep` (comprobar los pasos completos en la ficha).<br>
 **Más:** [ficha completa](human/fichas/ace-step-1-5.md) · [GitHub](https://github.com/ace-step/ACE-Step-1.5)
 
 ### Procesamiento y limpieza de audio
+
+#### 📚 pyannote.audio
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 10.8k<br>
+**Qué es:** Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install pyannote.audio` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Separar por hablante la grabación de una reunión; Añadir hablantes a una transcripción — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [whisperX](human/fichas/whisperx.md) · [PyTorch](human/fichas/pytorch.md) · [faster-whisper](human/fichas/faster-whisper.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
+**Más:** [ficha completa](human/fichas/pyannote-audio.md) · [GitHub](https://github.com/pyannote/pyannote-audio)
 
 #### 🧩 rnnoise
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 6k<br>
@@ -6624,7 +6760,7 @@ manimgl` (comprobar los pasos completos en la ficha).<br>
 cd OpenMontage
 make setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un video con recursos locales; Comparar un pipeline con servicios opcionales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [remotion](human/fichas/remotion.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Kokoro](human/fichas/kokoro.md)<br>
+**Combina con:** [remotion](human/fichas/remotion.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Kokoro](human/fichas/kokoro.md) · [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md)<br>
 **Más:** [ficha completa](human/fichas/openmontage.md) · [GitHub](https://github.com/OpenMontageInc/OpenMontage)
 
 #### 🎞️ video-use

@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-61 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+63 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -18,14 +18,16 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-codigo)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-codigo)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Aider](../fichas/aider.md) | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. | API de IA opcional |
+| [Antigravity CLI](../fichas/antigravity-cli.md) | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. | Sin clave propia de API de IA en la ruta básica |
 | [Claude Code](../fichas/claude-code.md) | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | API de IA opcional |
 | [Cline](../fichas/cline.md) | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. | API de IA opcional |
 | [Codex CLI](../fichas/codex.md) | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. | API de IA opcional |
+| [DeepSeek Harness (DSH)](../fichas/deepseek-harness.md) | Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables. | Depende de la ruta elegida |
 | [Gemini CLI](../fichas/gemini-cli.md) | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. | API de IA opcional |
 | [goose](../fichas/goose.md) | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. | API de IA opcional |
 | [MiMo-Code](../fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | API de IA opcional |

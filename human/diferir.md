@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**76 repos.**
+**78 repos.**
 
 ## ⏳ Diferir
 
@@ -33,6 +33,7 @@ _Pesado: solo si llega a finalista._
 | [Wan2.2](fichas/wan2-2.md) | 🎬 Editar, grabar y generar video | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | 🎬 Editar, grabar y generar video | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
 | [WanGP](fichas/wan2gp.md) | 🎬 Editar, grabar y generar video | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
+| [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) | 🎬 Editar, grabar y generar video | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 | [paperless-ngx](fichas/paperless-ngx.md) | 📄 PDF, OCR y procesamiento de documentos | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. |
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | 📄 PDF, OCR y procesamiento de documentos | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
 | [olmOCR](fichas/olmocr.md) | 📄 PDF, OCR y procesamiento de documentos | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. |
@@ -59,6 +60,7 @@ _Pesado: solo si llega a finalista._
 | [llm.c](fichas/llm-c.md) | 🧠 Aprender IA y escribir mejores prompts | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. |
 | [paperclip](fichas/paperclip.md) | 🕸️ Asistentes e investigación con agentes | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
 | [ruflo](fichas/ruflo.md) | 🕸️ Asistentes e investigación con agentes | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |
+| [OpenBot](fichas/openbot.md) | 🕸️ Asistentes e investigación con agentes | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
 | [supabase](fichas/supabase.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. |
 | [coolify](fichas/coolify.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. |
 | [CasaOS](fichas/casaos.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |

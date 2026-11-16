@@ -196,6 +196,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `moviepy`, `whisper`, `ffmpeg`
 **Alternativas (elige una):** `kokoro`
 
+## `elevenlabs-python`
+role=library · exec=hybrid · setup=easy · mcp=False · prov=elevenlabs · tags=tts,voice,api,python
+
+**Qué es:** SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.
+**Stack:** Python, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: API de IA necesaria. Toda llamada usa la API de ElevenLabs con tu ELEVENLABS_API_KEY.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. No ejecuta modelos localmente: es un cliente de un servicio en la nube.
+- Coste: Consumo de APIs o servicios. Consumo por caracteres, minutos o créditos según el plan de ElevenLabs; el SDK es gratuito.
+- Equipo: Equipo normal; revisar dependencias. Python 3.8 o superior y conexión a internet.
+**Repo:** https://github.com/elevenlabs/elevenlabs-python
+
+**Instalación** [+]:
+
+```
+pip install elevenlabs
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar una locución para un video; Prototipar un agente de voz conectado a la API
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Convierte una frase corta a voz con una voz predefinida
+**Qué comprobar:** Obtienes un MP3 reproducible y el consumo aparece en tu cuenta
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openmontage`, `pipecat`, `livekit-agents`, `video-use`, `remotion-superpowers`
+
 ## `faster-whisper`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
 
@@ -385,7 +415,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa terminal mode para una conversación breve y revisa cada etapa antes de añadir telefonía
 **Qué comprobar:** Puedes comprobar audio de entrada, modelo y respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `kokoro`, `ollama`, `whisper-cpp`
+**Combina con:** `kokoro`, `ollama`, `whisper-cpp`, `elevenlabs-python`
 **Alternativas (elige una):** `pipecat`, `dograh`
 
 ## `luxtts`
@@ -514,8 +544,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una prueba local de una pregunta y comprueba transcripción, respuesta y audio por separado
 **Qué comprobar:** Puedes localizar en qué etapa falla la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `kokoro`, `whisper-cpp`, `ollama`, `nemo`
+**Combina con:** `kokoro`, `whisper-cpp`, `ollama`, `nemo`, `elevenlabs-python`
 **Alternativas (elige una):** `livekit-agents`, `dograh`
+
+## `pyannote-audio`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=audio,diarization,pytorch,python
+
+**Qué es:** Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.
+**Stack:** Jupyter Notebook, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. community-1 corre localmente con un token de Hugging Face; precision-2 corre en los servidores de pyannoteAI con su propia clave.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Los pipelines abiertos se ejecutan localmente en CPU o GPU tras aceptar sus condiciones en Hugging Face.
+- Coste: El coste depende del proveedor o la ruta. La ruta local no paga por uso; pyannoteAI ofrece créditos gratuitos y después cobra. La telemetría es opcional (PYANNOTE_METRICS_ENABLED).
+- Equipo: Memoria y GPU según el modelo. Python 3.11 o superior y ffmpeg; GPU recomendable para audio largo.
+**Repo:** https://github.com/pyannote/pyannote-audio
+
+**Instalación** [+]:
+
+```
+pip install pyannote.audio
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Separar por hablante la grabación de una reunión; Añadir hablantes a una transcripción
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Ejecuta community-1 sobre un audio corto con dos voces de prueba
+**Qué comprobar:** Los segmentos alternan entre dos hablantes con marcas de tiempo coherentes
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `whisperx`, `pytorch`, `faster-whisper`, `ffmpeg`
 
 ## `rnnoise`
 role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=edicion,model,c
@@ -759,5 +819,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe una conversación de prueba y verifica varias marcas temporales y cambios de hablante
 **Qué comprobar:** Puedes distinguir texto, alineación y etiquetas de hablante
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `faster-whisper`, `whisper`, `moviepy`
+**Combina con:** `faster-whisper`, `whisper`, `moviepy`, `pyannote-audio`
 **Alternativas (elige una):** `nemo`

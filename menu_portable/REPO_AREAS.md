@@ -18,7 +18,7 @@ Diseñar y construir pantallas desde una interfaz visual.
 
 Piezas de interfaz y CSS para construir una web.
 
-`ant-design`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `swr`, `tailwindcss`, `ui`
+`ant-design`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `swr`, `tailwindcss`, `tanstack-query`, `ui`
 
 ### Interfaces y páginas con IA
 
@@ -98,7 +98,7 @@ Montar material existente, capturar pantalla y preparar subtítulos.
 
 Crear clips y organizar flujos de video generativo.
 
-`ai-youtube-shorts-generator`, `hunyuanvideo`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
+`ai-youtube-shorts-generator`, `hunyuanvideo`, `hunyuanvideo-1-5`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
 
 ### Video: código y motion graphics
 
@@ -110,7 +110,7 @@ Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-`cosyvoice`, `edge-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
+`cosyvoice`, `edge-tts`, `elevenlabs-python`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
 
 ### Transcripción: audio a texto
 
@@ -122,7 +122,7 @@ Transcribir, alinear y aprovechar grabaciones de voz.
 
 Limpiar grabaciones, ajustar sonido y trabajar con música.
 
-`ace-step-1.5`, `audiocraft`, `earshot`, `rnnoise`, `rubberband`
+`ace-step-1.5`, `audiocraft`, `earshot`, `pyannote-audio`, `rnnoise`, `rubberband`
 
 ### Voz: agentes en tiempo real
 
@@ -266,7 +266,7 @@ Plataformas que permiten diseñar flujos de IA con una interfaz.
 
 Asistentes listos o adaptables para tareas de varias etapas.
 
-`agentes-chat`, `deeptutor`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openclaw`, `opendots`, `paperclip`, `ruflo`, `social-media-agent`
+`agentes-chat`, `deeptutor`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openbot`, `openclaw`, `opendots`, `paperclip`, `ruflo`, `social-media-agent`
 
 ### Investigación con fuentes
 
@@ -290,7 +290,7 @@ Abrir páginas e interactuar con interfaces reales.
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-typescript-sdk`, `mcp-use`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `unity-mcp`
+`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-typescript-sdk`, `mcp-use`, `neo4j-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `unity-mcp`
 
 ## IA local, modelos y entrenamiento
 
@@ -374,7 +374,7 @@ Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicaci
 
 Motores de consulta, tablas y conjuntos de datos.
 
-`awesome-bigdata`, `duckdb`, `globalbuildingatlas`, `hudi`, `marimo`, `polars`
+`apache-iceberg`, `awesome-bigdata`, `delta-lake`, `duckdb`, `globalbuildingatlas`, `hudi`, `jupyterlab`, `marimo`, `polars`
 
 ### Notebooks y aplicaciones de datos
 
@@ -454,7 +454,7 @@ Elige un agente de código, comprende un proyecto y prepara su infraestructura, 
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-`aider`, `claude-code`, `cline`, `codex`, `gemini-cli`, `goose`, `mimo-code`, `open-interpreter`, `open-swe`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `t3code`
+`aider`, `antigravity-cli`, `claude-code`, `cline`, `codex`, `deepseek-harness`, `gemini-cli`, `goose`, `mimo-code`, `open-interpreter`, `open-swe`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `t3code`
 
 ### Comprender y revisar código
 

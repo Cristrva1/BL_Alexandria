@@ -30,7 +30,7 @@ Se integra con Apache Spark y Flink (herramientas de ingestión integradas) y lo
 | [Apache Superset](superset.md) | BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura) | Conecta Superset al motor de consulta. |
 | [awesome-bigdata](awesome-bigdata.md) | Mapa del ecosistema alrededor. (combinación por arquitectura) | Consulta la lista. |
 
-**Notas:** Sin alternativas declaradas; compite con Iceberg y Delta Lake (no catalogados).
+**Notas:** Alternativas (elige una): apache-iceberg, delta-lake.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada release-1.2.1 (2026-09-24) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -99,6 +99,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños
 - **Etiquetas:** `datos` `apacheflink` `apachehudi` `apachespark` `bigdata` `data-integration` `datalake` `hudi`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Apache Iceberg](apache-iceberg.md) | 9.4k | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. |
+| [Delta Lake](delta-lake.md) | 9.1k | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. |
 
 ## Enlaces
 

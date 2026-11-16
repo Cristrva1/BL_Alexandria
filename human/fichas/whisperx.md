@@ -29,6 +29,7 @@ Se instala con `pip install whisperx`. La diarización requiere aceptar las cond
 | [faster-whisper](faster-whisper.md) | Backend de transcripción. | Viene como dependencia. |
 | [whisper](whisper.md) | Modelos Whisper subyacentes. | Elige el tamaño de modelo. |
 | [MoviePy](moviepy.md) | Subtítulos con marcas por palabra. (combinación por arquitectura) | Genera SRT y móntalo. |
+| [pyannote.audio](pyannote-audio.md) | WhisperX usa pyannote-audio para la diarización (etiquetas de hablante). | Acepta las condiciones del modelo de pyannote en Hugging Face y pasa el token con `--hf_token`. |
 
 **Notas:** Alternativas (elige una): nemo.
 

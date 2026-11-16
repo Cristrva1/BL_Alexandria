@@ -4,7 +4,7 @@
 
 Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta.
 
-24 repos · 5 secciones
+26 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -20,10 +20,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 5 repos
-- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 11 repos
+- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 12 repos
 - [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 3 repos
 - [Música y audio generativo](#música-y-audio-generativo) — 2 repos
-- [Procesamiento y limpieza de audio](#procesamiento-y-limpieza-de-audio) — 3 repos
+- [Procesamiento y limpieza de audio](#procesamiento-y-limpieza-de-audio) — 4 repos
 
 ## Transcripción (voz a texto)
 
@@ -50,6 +50,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz | Sin clave propia de API de IA en la ruta básica |
 | [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles | Sin clave propia de API de IA en la ruta básica |
 | [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida | Sin clave propia de API de IA en la ruta básica |
+| [ElevenLabs (SDK de Python)](../fichas/elevenlabs-python.md) | SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz. | Tu objetivo encaja con estos ejemplos: Generar una locución para un video; Prototipar un agente de voz conectado a la API | API de IA necesaria |
 
 ## Agentes de voz en tiempo real
 
@@ -70,6 +71,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [pyannote.audio](../fichas/pyannote-audio.md) | Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional. | Tu objetivo encaja con estos ejemplos: Separar por hablante la grabación de una reunión; Añadir hablantes a una transcripción | API de IA opcional |
 | [rnnoise](../fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Tu objetivo encaja con estos ejemplos: Reducir ruido de una grabación; Estudiar una red de supresión de ruido | Sin clave propia de API de IA en la ruta básica |
 | [earshot](../fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | Tu objetivo encaja con estos ejemplos: Revisar una mezcla con un agente; Analizar un efecto sonoro | API de IA opcional |
 | [rubberband](../fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Tu objetivo encaja con estos ejemplos: Ajustar duración de una narración; Explorar cambio de tono | Sin clave propia de API de IA en la ruta básica |

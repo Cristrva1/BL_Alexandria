@@ -157,7 +157,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El clip y sus recursos se pueden comparar con la configuración elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `diffusers`, `comfyui`, `wan2gp`
-**Alternativas (elige una):** `wan2-2`
+**Alternativas (elige una):** `wan2-2`, `hunyuanvideo-1-5`
+
+## `hunyuanvideo-1-5`
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
+
+**Qué es:** Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.
+**Stack:** Python, requirements.txt
+**Acceso y costes:**
+- API de IA: API de IA opcional. La reescritura de prompts usa un endpoint vLLM opcional; si no se configura, el pipeline genera sin reescritura remota.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Inferencia local con pesos descargados de Hugging Face, sujeta a la Tencent Hunyuan Community License.
+- Coste: El coste depende del proveedor o la ruta. Sin pago por llamada en la ruta local; consume GPU. La licencia excluye la UE, el Reino Unido y Corea del Sur.
+- Equipo: GPU o infraestructura especializada. GPU NVIDIA con CUDA y al menos 14 GB de VRAM con offloading; Linux y Python 3.10 o superior.
+**Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p
+**Evita si:** no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia
+**Primera prueba propuesta:** Genera un clip de pocos segundos en 480p con offloading activado
+**Qué comprobar:** El video se guarda y anotas tiempo y VRAM usados
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `comfyui`, `wan2gp`, `vllm`
+**Alternativas (elige una):** `hunyuanvideo`, `wan2-2`
 
 ## `lossless-cut`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,typescript
@@ -408,7 +439,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar pesos, tamaño, duración y recursos de la ejecución
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `diffusers`, `cosyvoice`, `real-esrgan`
-**Alternativas (elige una):** `hunyuanvideo`
+**Alternativas (elige una):** `hunyuanvideo`, `hunyuanvideo-1-5`
 
 ## `wan2gp`
 role=app · exec=local · setup=heavy · mcp=True · prov=local,mcp · tags=video,image,tts,local,python
@@ -438,5 +469,5 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige un modelo pequeño admitido y genera un clip corto antes de activar Deepy o Showrunner
 **Qué comprobar:** Puedes comprobar memoria, duración y motor de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`
+**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`, `hunyuanvideo-1-5`
 **Alternativas (elige una):** `comfyui`

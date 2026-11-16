@@ -31,7 +31,7 @@ Se instala con el instalador nativo o `brew install --cask claude-code`; la inst
 | [claude-mem](claude-mem.md) | Memoria persistente entre sesiones. | Instala el plugin claude-mem. |
 | [Context7](context7.md) | Documentación actualizada de librerías vía MCP. | Añade el servidor MCP de Context7. |
 
-**Notas:** Alternativas (elige una): codex, gemini-cli, opencode, goose. No es open source.
+**Notas:** Alternativas (elige una): codex, gemini-cli, opencode, goose, antigravity-cli. No es open source.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.1.325 (2026-11-13) (consultado el 2026-11-15).
 
@@ -118,6 +118,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 | [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
+| [Antigravity CLI](antigravity-cli.md) | 2.8k | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. |
 
 ## Enlaces
 

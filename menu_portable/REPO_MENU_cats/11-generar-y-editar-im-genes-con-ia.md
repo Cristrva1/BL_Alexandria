@@ -62,7 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un workflow mínimo y conecta modelo, prompt, sampler y guardado
 **Qué comprobar:** Obtienes una imagen y puedes identificar los nodos que la produjeron
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `flux2`, `krita-ai-diffusion`, `real-esrgan`
+**Combina con:** `flux2`, `krita-ai-diffusion`, `real-esrgan`, `hunyuanvideo-1-5`
 **Alternativas (elige una):** `wan2gp`
 
 ## `diffusers`

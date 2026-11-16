@@ -199,7 +199,7 @@
      "orden_instalacion": "Consulta la lista."
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con Iceberg y Delta Lake (no catalogados).",
+   "notas": "Alternativas (elige una): apache-iceberg, delta-lake.",
    "fuentes": [
     "https://github.com/apache/hudi/blob/master/README.md"
    ],

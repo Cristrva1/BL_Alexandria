@@ -30,7 +30,7 @@ Se instala con `npm i swr` y se usa con una función `fetcher` propia. Tiene int
 | [heroui](heroui.md) | Combinación anterior del catálogo: datos para componentes HeroUI. (combinación por arquitectura) | Instala ambas y usa useSWR en las vistas. |
 | [supabase](supabase.md) | Consultar un backend Supabase desde React con caché y revalidación. (combinación por arquitectura) | Usa el cliente de Supabase dentro del fetcher de SWR. |
 
-**Notas:** Sin alternativas declaradas en el catálogo (TanStack Query no figura).
+**Notas:** Alternativa (elige una): tanstack-query.
 
 Estado en GitHub: activo · último push 2026-10-16 · última versión publicada v2.5.1 (2026-08-12) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -99,6 +99,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; endpoint de datos de prueba; función fetcher
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [TanStack Query](tanstack-query.md) | 50.6k | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. |
 
 ## Enlaces
 

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 614 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 625 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -171,7 +171,7 @@
     ]
    }
   ],
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "local_inventory": {
    "checked_at": "2026-11-14",
    "status": "library_deleted_by_user",
@@ -404,7 +404,7 @@
    "title": "Conectar herramientas con MCP",
    "desc": "SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.",
    "file": "human/categorias/05-mcp-conectividad.md",
-   "count": 22,
+   "count": 23,
    "subs": [
     {
      "key": "sdk",
@@ -500,7 +500,7 @@
    "title": "Diseñar y construir interfaces web",
    "desc": "Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.",
    "file": "human/categorias/09-dise-o-ui-frontend.md",
-   "count": 28,
+   "count": 29,
    "subs": [
     {
      "key": "componentes",
@@ -585,7 +585,7 @@
    "title": "Editar, grabar y generar video",
    "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 14,
+   "count": 15,
    "subs": [
     {
      "key": "edicion",
@@ -824,7 +824,7 @@
      "title": "Interfaces para gestionar sesiones"
     }
    ],
-   "count": 15
+   "count": 17
   },
   {
    "num": 21,
@@ -843,7 +843,7 @@
      "title": "Agentes de research autónomo"
     }
    ],
-   "count": 16
+   "count": 17
   },
   {
    "num": 22,
@@ -931,7 +931,7 @@
      "title": "Apps de datos en Python"
     }
    ],
-   "count": 9
+   "count": 12
   },
   {
    "num": 26,
@@ -1027,7 +1027,7 @@
      "title": "Procesamiento y limpieza de audio"
     }
    ],
-   "count": 24
+   "count": 26
   },
   {
    "num": 30,
@@ -4915,7 +4915,8 @@
     "codex",
     "gemini-cli",
     "opencode",
-    "goose"
+    "goose",
+    "antigravity-cli"
    ],
    "doc": "human/fichas/claude-code.md",
    "github_id": 937253475,
@@ -4960,7 +4961,8 @@
    "alt": [
     "claude-code",
     "gemini-cli",
-    "opencode"
+    "opencode",
+    "antigravity-cli"
    ],
    "doc": "human/fichas/codex.md",
    "github_id": 965415649,
@@ -5004,7 +5006,8 @@
    "alt": [
     "claude-code",
     "codex",
-    "opencode"
+    "opencode",
+    "antigravity-cli"
    ],
    "doc": "human/fichas/gemini-cli.md",
    "github_id": 968197216,
@@ -8384,7 +8387,9 @@
    "lib": false,
    "pick": false,
    "one": "Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP.",
-   "alt": [],
+   "alt": [
+    "neo4j-mcp"
+   ],
    "doc": "human/fichas/mcp-neo4j.md",
    "github_id": 897992568,
    "starred_by": "Cristrva1",
@@ -10827,7 +10832,9 @@
    "lib": false,
    "pick": true,
    "one": "Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.",
-   "alt": [],
+   "alt": [
+    "jupyterlab"
+   ],
    "doc": "human/fichas/marimo.md",
    "github_id": 678526156,
    "added_at": "2026-11-10",
@@ -11945,7 +11952,9 @@
    "lib": false,
    "pick": false,
    "one": "Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.",
-   "alt": [],
+   "alt": [
+    "tanstack-query"
+   ],
    "doc": "human/fichas/swr.md",
    "github_id": 218115303,
    "starred_by": "Cristrva1",
@@ -15608,7 +15617,8 @@
    "pick": true,
    "one": "Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0.",
    "alt": [
-    "hunyuanvideo"
+    "hunyuanvideo",
+    "hunyuanvideo-1-5"
    ],
    "doc": "human/fichas/wan2-2.md",
    "github_id": 1027579552,
@@ -15648,7 +15658,8 @@
    "pick": false,
    "one": "Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.",
    "alt": [
-    "wan2-2"
+    "wan2-2",
+    "hunyuanvideo-1-5"
    ],
    "doc": "human/fichas/hunyuanvideo.md",
    "github_id": 895453957,
@@ -18270,7 +18281,10 @@
    "lib": false,
    "pick": false,
    "one": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
-   "alt": [],
+   "alt": [
+    "apache-iceberg",
+    "delta-lake"
+   ],
    "doc": "human/fichas/hudi.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -20417,7 +20431,9 @@
    "lib": false,
    "pick": false,
    "one": "Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-   "alt": [],
+   "alt": [
+    "openbot"
+   ],
    "stars": 6601,
    "github_id": 1396117711,
    "gh": "CopilotKit/OpenDots",
@@ -25334,6 +25350,456 @@
    "routes": [
     "no_api",
     "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "neo4j-mcp",
+   "name": "Neo4j MCP (oficial)",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "mcp",
+    "graph",
+    "neo4j",
+    "cypher",
+    "go"
+   ],
+   "stars": 307,
+   "gh": "neo4j/mcp",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+   "alt": [
+    "mcp-neo4j"
+   ],
+   "doc": "human/fichas/neo4j-mcp.md",
+   "github_id": 1041299082,
+   "lang": "Go",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "antigravity"
+   ]
+  },
+  {
+   "id": "deepseek-harness",
+   "name": "DeepSeek Harness (DSH)",
+   "cat": 20,
+   "sub": "terminal",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [
+    "deepseek",
+    "anthropic",
+    "openai",
+    "local"
+   ],
+   "tags": [
+    "agents",
+    "coding",
+    "plugins",
+    "typescript"
+   ],
+   "stars": 281854,
+   "gh": "deepseek-ai/deepseek-harness",
+   "lib": false,
+   "pick": false,
+   "one": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+   "alt": [],
+   "doc": "human/fichas/deepseek-harness.md",
+   "github_id": 1333065091,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "tanstack-query",
+   "name": "TanStack Query",
+   "cat": 9,
+   "sub": "componentes",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "frontend",
+    "data-fetching",
+    "cache",
+    "typescript"
+   ],
+   "stars": 50568,
+   "gh": "TanStack/query",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+   "alt": [
+    "swr"
+   ],
+   "doc": "human/fichas/tanstack-query.md",
+   "github_id": 207645083,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "antigravity-cli",
+   "name": "Antigravity CLI",
+   "cat": 20,
+   "sub": "terminal",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [
+    "google"
+   ],
+   "tags": [
+    "coding",
+    "agents",
+    "cli",
+    "google"
+   ],
+   "stars": 2843,
+   "gh": "google-antigravity/antigravity-cli",
+   "lib": false,
+   "pick": false,
+   "one": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+   "alt": [
+    "gemini-cli",
+    "claude-code",
+    "codex"
+   ],
+   "doc": "human/fichas/antigravity-cli.md",
+   "github_id": 1237979735,
+   "lang": null,
+   "license": "Propietaria (sin licencia en el repositorio)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "antigravity"
+   ]
+  },
+  {
+   "id": "openbot",
+   "name": "OpenBot",
+   "cat": 21,
+   "sub": "asistentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": true,
+   "prov": [
+    "openai",
+    "anthropic",
+    "google",
+    "local"
+   ],
+   "tags": [
+    "agents",
+    "computer-use",
+    "ag-ui",
+    "mcp",
+    "typescript"
+   ],
+   "stars": 12472,
+   "gh": "CopilotKit/OpenBot",
+   "lib": false,
+   "pick": false,
+   "one": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+   "alt": [
+    "opendots"
+   ],
+   "doc": "human/fichas/openbot.md",
+   "github_id": 1336502227,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "investigar",
+    "mcp"
+   ],
+   "source_archived": false,
+   "routes": [
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "hunyuanvideo-1-5",
+   "name": "HunyuanVideo 1.5",
+   "cat": 12,
+   "sub": "generativo",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "video",
+    "inference",
+    "local",
+    "python"
+   ],
+   "stars": 4605,
+   "gh": "Tencent-Hunyuan/HunyuanVideo-1.5",
+   "lib": false,
+   "pick": false,
+   "one": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+   "alt": [
+    "hunyuanvideo",
+    "wan2-2"
+   ],
+   "doc": "human/fichas/hunyuanvideo-1-5.md",
+   "github_id": 1100328089,
+   "lang": "Python",
+   "license": "Tencent Hunyuan Community License",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "apache-iceberg",
+   "name": "Apache Iceberg",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "lakehouse",
+    "table-format",
+    "java"
+   ],
+   "stars": 9438,
+   "gh": "apache/iceberg",
+   "lib": false,
+   "pick": false,
+   "one": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+   "alt": [
+    "delta-lake",
+    "hudi"
+   ],
+   "doc": "human/fichas/apache-iceberg.md",
+   "github_id": 158256479,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "delta-lake",
+   "name": "Delta Lake",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "lakehouse",
+    "table-format",
+    "scala"
+   ],
+   "stars": 9082,
+   "gh": "delta-io/delta",
+   "lib": false,
+   "pick": false,
+   "one": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+   "alt": [
+    "apache-iceberg",
+    "hudi"
+   ],
+   "doc": "human/fichas/delta-lake.md",
+   "github_id": 182849188,
+   "lang": "Scala",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "jupyterlab",
+   "name": "JupyterLab",
+   "cat": 25,
+   "sub": "datos",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notebooks",
+    "data",
+    "python",
+    "typescript"
+   ],
+   "stars": 15405,
+   "gh": "jupyterlab/jupyterlab",
+   "lib": false,
+   "pick": false,
+   "one": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+   "alt": [
+    "marimo"
+   ],
+   "doc": "human/fichas/jupyterlab.md",
+   "github_id": 60374819,
+   "lang": "TypeScript",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pyannote-audio",
+   "name": "pyannote.audio",
+   "cat": 29,
+   "sub": "audio",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "audio",
+    "diarization",
+    "pytorch",
+    "python"
+   ],
+   "stars": 10803,
+   "gh": "pyannote/pyannote-audio",
+   "lib": false,
+   "pick": false,
+   "one": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+   "alt": [],
+   "doc": "human/fichas/pyannote-audio.md",
+   "github_id": 53344691,
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "elevenlabs-python",
+   "name": "ElevenLabs (SDK de Python)",
+   "cat": 29,
+   "sub": "tts",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [
+    "elevenlabs"
+   ],
+   "tags": [
+    "tts",
+    "voice",
+    "api",
+    "python"
+   ],
+   "stars": 3185,
+   "gh": "elevenlabs/elevenlabs-python",
+   "lib": false,
+   "pick": false,
+   "one": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+   "alt": [],
+   "doc": "human/fichas/elevenlabs-python.md",
+   "github_id": 619143361,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "narrar"
+   ],
+   "source_archived": false,
+   "routes": [
     "api"
    ]
   }

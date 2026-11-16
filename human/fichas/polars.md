@@ -29,6 +29,8 @@ Se instala con `pip install polars` (hay feature flags para extras) o se compila
 | [marimo](marimo.md) | Visualización interactiva de DataFrames en notebooks. | Instala marimo y muestra el DataFrame. |
 | [TimesFM](timesfm.md) | Preparar series para pronóstico. (combinación por arquitectura) | Limpia los datos con Polars. |
 | [streamlit](streamlit.md) | Apps de datos sobre DataFrames de Polars. (combinación por arquitectura) | Muestra el DataFrame en Streamlit. |
+| [Apache Iceberg](apache-iceberg.md) | Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg). | Instala PyIceberg junto a Polars. |
+| [Delta Lake](delta-lake.md) | Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake. | Instala el paquete `deltalake` junto a Polars. |
 
 **Notas:** Alternativas (elige una): duckdb.
 

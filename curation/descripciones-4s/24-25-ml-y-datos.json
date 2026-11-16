@@ -420,6 +420,16 @@
      "id": "timesfm",
      "motivo": "Preparar series temporales para pronóstico. (combinación por arquitectura)",
      "orden_instalacion": "Extrae las series con SQL."
+    },
+    {
+     "id": "apache-iceberg",
+     "motivo": "DuckDB lee tablas Apache Iceberg con su extensión oficial `iceberg`.",
+     "orden_instalacion": "Carga la extensión y consulta una tabla de prueba."
+    },
+    {
+     "id": "delta-lake",
+     "motivo": "DuckDB lee tablas Delta Lake con su extensión oficial `delta`.",
+     "orden_instalacion": "Carga la extensión `delta` y apunta al directorio de la tabla."
     }
    ],
    "notas": "Alternativas (elige una): polars.",
@@ -456,6 +466,16 @@
      "id": "streamlit",
      "motivo": "Apps de datos sobre DataFrames de Polars. (combinación por arquitectura)",
      "orden_instalacion": "Muestra el DataFrame en Streamlit."
+    },
+    {
+     "id": "apache-iceberg",
+     "motivo": "Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg).",
+     "orden_instalacion": "Instala PyIceberg junto a Polars."
+    },
+    {
+     "id": "delta-lake",
+     "motivo": "Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake.",
+     "orden_instalacion": "Instala el paquete `deltalake` junto a Polars."
     }
    ],
    "notas": "Alternativas (elige una): duckdb.",
@@ -494,7 +514,7 @@
      "orden_instalacion": "Configura el proveedor de IA de marimo apuntando a Ollama."
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con Jupyter (solo anotado).",
+   "notas": "Alternativa (elige una): jupyterlab.",
    "fuentes": [
     "https://github.com/marimo-team/marimo/blob/main/README.md",
     "https://docs.marimo.io/guides/apps.html"

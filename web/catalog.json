@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-15",
-  "title": "Índice IA — 614 repos curados de IA, automatización y herramientas",
+  "generated_at": "2026-11-16",
+  "title": "Índice IA — 625 repos curados de IA, automatización y herramientas",
   "counts": {
-    "repos": 612,
+    "repos": 623,
     "categories": 32,
     "areas": 16,
     "work_areas": 13,
     "tool_collections": 3,
     "topics": 99,
     "recipes": 14,
-    "mcp": 119,
-    "labs": 270
+    "mcp": 123,
+    "labs": 282
   },
   "labels": {
     "role": {
@@ -453,6 +453,7 @@
           }
         ],
         "repo_ids": [
+          "antigravity-cli",
           "antigravity-awesome-skills"
         ],
         "aliases": [],
@@ -491,7 +492,9 @@
             "checked_at": "2026-11-15"
           }
         ],
-        "repo_ids": [],
+        "repo_ids": [
+          "deepseek-harness"
+        ],
         "aliases": [
           "DSH",
           "Deepseek Harness"
@@ -8295,9 +8298,10 @@
               "react-bits",
               "swr",
               "tailwindcss",
+              "tanstack-query",
               "ui"
             ],
-            "count": 14
+            "count": 15
           },
           {
             "id": "web-ia",
@@ -8479,6 +8483,7 @@
           "supabase",
           "swr",
           "tailwindcss",
+          "tanstack-query",
           "taste-skill",
           "three.js",
           "threejs-skills",
@@ -8489,7 +8494,7 @@
           "webgl-noise",
           "zdog"
         ],
-        "count": 58
+        "count": 59
       },
       {
         "id": "ciberseguridad",
@@ -8765,12 +8770,13 @@
             "repo_ids": [
               "ai-youtube-shorts-generator",
               "hunyuanvideo",
+              "hunyuanvideo-1-5",
               "moneyprinterturbo",
               "short-video-factory",
               "wan2-2",
               "wan2gp"
             ],
-            "count": 6
+            "count": 7
           },
           {
             "id": "av-video-codigo",
@@ -8830,6 +8836,7 @@
             "repo_ids": [
               "cosyvoice",
               "edge-tts",
+              "elevenlabs-python",
               "fish-speech",
               "gpt-sovits",
               "index-tts",
@@ -8840,7 +8847,7 @@
               "vibevoice",
               "voxcpm"
             ],
-            "count": 11
+            "count": 12
           },
           {
             "id": "av-transcripcion",
@@ -8889,10 +8896,11 @@
               "ace-step-1.5",
               "audiocraft",
               "earshot",
+              "pyannote-audio",
               "rnnoise",
               "rubberband"
             ],
-            "count": 5
+            "count": 6
           },
           {
             "id": "av-conversacion",
@@ -9053,6 +9061,7 @@
           "dograh",
           "earshot",
           "edge-tts",
+          "elevenlabs-python",
           "facefusion",
           "faster-whisper",
           "ffmpeg",
@@ -9063,6 +9072,7 @@
           "gpt-sovits",
           "huashu-motion",
           "hunyuanvideo",
+          "hunyuanvideo-1-5",
           "hyperframes",
           "index-tts",
           "insightface",
@@ -9094,6 +9104,7 @@
           "papermorph",
           "pipecat",
           "planck-js",
+          "pyannote-audio",
           "rea-video",
           "react-three-rapier",
           "real-esrgan",
@@ -9119,7 +9130,7 @@
           "whisper-cpp",
           "whisperx"
         ],
-        "count": 86
+        "count": 89
       },
       {
         "id": "trading",
@@ -9685,13 +9696,14 @@
               "hermes-agent",
               "mercury-agent",
               "multica",
+              "openbot",
               "openclaw",
               "opendots",
               "paperclip",
               "ruflo",
               "social-media-agent"
             ],
-            "count": 11
+            "count": 12
           },
           {
             "id": "agentes-investigar",
@@ -9823,6 +9835,7 @@
               "mcp-python-sdk",
               "mcp-typescript-sdk",
               "mcp-use",
+              "neo4j-mcp",
               "playwright-mcp",
               "public-apis",
               "serena",
@@ -9830,7 +9843,7 @@
               "tooljet",
               "unity-mcp"
             ],
-            "count": 23
+            "count": 24
           }
         ],
         "repo_ids": [
@@ -9904,7 +9917,9 @@
           "metagpt",
           "mirofish",
           "multica",
+          "neo4j-mcp",
           "openai-agents-python",
+          "openbot",
           "openclaw",
           "opendots",
           "openevolve",
@@ -9935,7 +9950,7 @@
           "vercel-ai",
           "yt-dlp"
         ],
-        "count": 100
+        "count": 102
       },
       {
         "id": "ia-local",
@@ -10431,14 +10446,17 @@
             "keywords": [],
             "reference_repos": [],
             "repo_ids": [
+              "apache-iceberg",
               "awesome-bigdata",
+              "delta-lake",
               "duckdb",
               "globalbuildingatlas",
               "hudi",
+              "jupyterlab",
               "marimo",
               "polars"
             ],
-            "count": 6
+            "count": 9
           },
           {
             "id": "datos-apps",
@@ -10559,18 +10577,21 @@
           }
         ],
         "repo_ids": [
+          "apache-iceberg",
           "awesome-bigdata",
           "awesome-dataviz",
           "chart-js",
           "d3",
           "dash",
           "data-analyst-roadmap",
+          "delta-lake",
           "duckdb",
           "echarts",
           "globalbuildingatlas",
           "gradio",
           "grafana",
           "hudi",
+          "jupyterlab",
           "marimo",
           "matomo",
           "metabase",
@@ -10585,7 +10606,7 @@
           "uplot",
           "wrenai"
         ],
-        "count": 25
+        "count": 28
       },
       {
         "id": "productividad",
@@ -10820,9 +10841,11 @@
             "reference_repos": [],
             "repo_ids": [
               "aider",
+              "antigravity-cli",
               "claude-code",
               "cline",
               "codex",
+              "deepseek-harness",
               "gemini-cli",
               "goose",
               "mimo-code",
@@ -10835,7 +10858,7 @@
               "openidea",
               "t3code"
             ],
-            "count": 15
+            "count": 17
           },
           {
             "id": "dev-comprender",
@@ -10959,6 +10982,7 @@
           "agent-desktop",
           "agent-protocol",
           "aider",
+          "antigravity-cli",
           "ast-grep",
           "backdoor",
           "casaos",
@@ -10975,6 +10999,7 @@
           "computer-use-preview",
           "coolify",
           "deepeval",
+          "deepseek-harness",
           "e2b",
           "floorplan",
           "free-for-dev",
@@ -11018,7 +11043,7 @@
           "tree-sitter",
           "vllm"
         ],
-        "count": 61
+        "count": 63
       },
       {
         "id": "vision",
@@ -18612,7 +18637,7 @@
           "title": "Directorios, clientes y aprendizaje"
         }
       ],
-      "count": 22,
+      "count": 23,
       "starters": [
         "blender-mcp",
         "chrome-devtools-mcp",
@@ -18728,7 +18753,7 @@
           "title": "UI generada con IA y frontends para agentes"
         }
       ],
-      "count": 28,
+      "count": 29,
       "starters": [
         "excalidraw",
         "onlook",
@@ -18817,7 +18842,7 @@
           "title": "Video generativo y pipelines automáticos"
         }
       ],
-      "count": 14,
+      "count": 15,
       "starters": [
         "ffmpeg",
         "lossless-cut",
@@ -19077,7 +19102,7 @@
           "title": "Interfaces para gestionar sesiones"
         }
       ],
-      "count": 15,
+      "count": 17,
       "starters": [
         "aider",
         "claude-code",
@@ -19100,7 +19125,7 @@
           "title": "Agentes de research autónomo"
         }
       ],
-      "count": 16,
+      "count": 17,
       "starters": [
         "hello-halo",
         "mercury-agent",
@@ -19204,11 +19229,11 @@
           "title": "Apps de datos en Python"
         }
       ],
-      "count": 9,
+      "count": 12,
       "starters": [
+        "jupyterlab",
         "marimo",
-        "duckdb",
-        "gradio"
+        "duckdb"
       ]
     },
     {
@@ -19316,11 +19341,11 @@
           "title": "Procesamiento y limpieza de audio"
         }
       ],
-      "count": 24,
+      "count": 26,
       "starters": [
         "whisper-cpp",
         "edge-tts",
-        "kokoro"
+        "elevenlabs-python"
       ]
     },
     {
@@ -20448,6 +20473,18 @@
       "b": "wshobson-agents"
     },
     {
+      "a": "antigravity-cli",
+      "b": "claude-code"
+    },
+    {
+      "a": "antigravity-cli",
+      "b": "codex"
+    },
+    {
+      "a": "antigravity-cli",
+      "b": "gemini-cli"
+    },
+    {
       "a": "anything-llm",
       "b": "khoj"
     },
@@ -20466,6 +20503,14 @@
     {
       "a": "anytype-ts",
       "b": "appflowy"
+    },
+    {
+      "a": "apache-iceberg",
+      "b": "delta-lake"
+    },
+    {
+      "a": "apache-iceberg",
+      "b": "hudi"
     },
     {
       "a": "appsmith",
@@ -20784,6 +20829,10 @@
       "b": "gpt-researcher"
     },
     {
+      "a": "delta-lake",
+      "b": "hudi"
+    },
+    {
       "a": "dify",
       "b": "ragflow"
     },
@@ -21029,6 +21078,14 @@
     },
     {
       "a": "hunyuanvideo",
+      "b": "hunyuanvideo-1-5"
+    },
+    {
+      "a": "hunyuanvideo",
+      "b": "wan2-2"
+    },
+    {
+      "a": "hunyuanvideo-1-5",
       "b": "wan2-2"
     },
     {
@@ -21054,6 +21111,10 @@
     {
       "a": "jan",
       "b": "textgen"
+    },
+    {
+      "a": "jupyterlab",
+      "b": "marimo"
     },
     {
       "a": "kestra",
@@ -21216,6 +21277,10 @@
       "b": "scrapegraph-ai"
     },
     {
+      "a": "mcp-neo4j",
+      "b": "neo4j-mcp"
+    },
+    {
       "a": "mcp-typescript-sdk",
       "b": "mcp-use"
     },
@@ -21328,6 +21393,10 @@
       "b": "smolagents"
     },
     {
+      "a": "openbot",
+      "b": "opendots"
+    },
+    {
       "a": "opencode-manager",
       "b": "t3code"
     },
@@ -21430,6 +21499,10 @@
     {
       "a": "superclaude-framework",
       "b": "superpowers"
+    },
+    {
+      "a": "swr",
+      "b": "tanstack-query"
     },
     {
       "a": "taste-skill",
@@ -29156,7 +29229,8 @@
       "combines_with": [
         "gemini-cli",
         "gemini-skills",
-        "adk-python"
+        "adk-python",
+        "antigravity-cli"
       ],
       "alt": [],
       "stack": "Agente compatible;  elegir una skill del producto de Google que usarás",
@@ -29285,6 +29359,11 @@
           "id": "adk-python",
           "motivo": "Construir agentes que se despliegan en Google Cloud (combinación por arquitectura).",
           "orden_instalacion": "Independientes."
+        },
+        {
+          "id": "antigravity-cli",
+          "motivo": "El README documenta la instalación de estas skills en Antigravity CLI con `agy plugin install`.",
+          "orden_instalacion": "Instala la CLI y añade solo los plugins necesarios."
         }
       ],
       "que_es": "Repositorio oficial de Google (Apache 2.0) con Agent Skills para sus productos, sobre todo Google Cloud. Muy activo, sin releases.",
@@ -29327,6 +29406,10 @@
         {
           "id": "adk-python",
           "label": "adk-python"
+        },
+        {
+          "id": "antigravity-cli",
+          "label": "antigravity-cli"
         }
       ],
       "areas": [
@@ -44477,7 +44560,9 @@
         "graphrag",
         "awesome-mcp-servers"
       ],
-      "alt": [],
+      "alt": [
+        "neo4j-mcp"
+      ],
       "stack": "Neo4j; credenciales; APOC para inspección de esquema; servidor elegido",
       "repo_url": "https://github.com/neo4j-contrib/mcp-neo4j",
       "doc": "human/fichas/mcp-neo4j.md",
@@ -44609,7 +44694,7 @@
       "que_es": "Servidores MCP de Neo4j Labs, mantenidos por el equipo Field GenAI de Neo4j. Licencia MIT. Son experimentales (~1k estrellas, mcp-neo4j-cypher-v0.6.0) y el README remite al servidor MCP oficial de producto (neo4j/mcp).",
       "que_hace": "Incluye cuatro servidores: `mcp-neo4j-cypher` (lenguaje natural a consultas Cypher sobre un esquema), `mcp-neo4j-memory` (memoria como grafo de conocimiento), `mcp-neo4j-cloud-aura-api` (gestión de instancias Aura) y `mcp-neo4j-data-modeling` (modelado de datos interactivo). Funcionan con Claude Desktop, VS Code, Cursor, Windsurf, Gemini CLI y otros clientes.",
       "como_lo_hace": "Cada servidor se instala por separado (normalmente con `uvx`) y se configura con la URL y las credenciales de Neo4j. Como proyecto de Labs, se actualiza a menudo y sin garantías de soporte.",
-      "descripcion_notas": "Sin alternativas declaradas. Para producción, valora el servidor oficial neo4j/mcp (no catalogado). El servidor Cypher puede escribir: limita permisos.",
+      "descripcion_notas": "Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos.",
       "descripcion_fuentes": [
         "https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md",
         "https://github.com/neo4j/mcp"
@@ -44636,7 +44721,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "neo4j-mcp",
+          "label": "neo4j-mcp"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -44866,6 +44956,227 @@
         {
           "id": "mcp",
           "label": "mcp"
+        }
+      ],
+      "areas": [
+        "agentes"
+      ],
+      "topics": [
+        "agentes-mcp"
+      ],
+      "discovery_text": " Agentes de IA, investigación y navegación agentes ia research investigacion scraping mcp MCP: conectar herramientas"
+    },
+    {
+      "id": "neo4j-mcp",
+      "name": "Neo4j MCP (oficial)",
+      "cat": 5,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "mcp",
+        "graph",
+        "neo4j",
+        "cypher",
+        "go"
+      ],
+      "one": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+      "desc": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente",
+      "avoid_if": "necesitas un producto autónomo y esta pieza requiere un cliente MCP y una base Neo4j",
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "graphiti",
+        "cognee"
+      ],
+      "alt": [
+        "mcp-neo4j"
+      ],
+      "stack": "Go, Dockerfile, go.mod",
+      "repo_url": "https://github.com/neo4j/mcp",
+      "doc": "human/fichas/neo4j-mcp.md",
+      "agent_tools": [],
+      "sub": "servidores",
+      "how": "Un cliente MCP llama sus herramientas get-schema, read-cypher, write-cypher y list-gds-procedures contra una instancia Neo4j que tú configuras.",
+      "why": "Usos propuestos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente.",
+      "cases": [
+        "Preguntar en lenguaje natural por el esquema de un grafo de prueba",
+        "Consultar relaciones con Cypher de solo lectura desde el agente"
+      ],
+      "gh": "neo4j/mcp",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. GPL-3.0; con Aura o ediciones comerciales de Neo4j aplican sus contratos.",
+      "getting_started": {
+        "kind": "mcp",
+        "audience": "agent",
+        "prerequisites": [
+          "Un cliente MCP compatible y el programa o servicio que va a controlar la herramienta."
+        ],
+        "steps": [
+          "Prepara el servidor y sus dependencias siguiendo la configuración del README.",
+          "Añade el comando o la URL en el cliente MCP y configura los permisos y credenciales de los servicios conectados.",
+          "Comprueba que aparecen sus herramientas y prueba una consulta pequeña antes de permitir modificaciones."
+        ],
+        "command": "pip install neo4j-mcp-server",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/neo4j/mcp/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Conecta el servidor en modo solo lectura a una base Neo4j de prueba y pide al agente que describa su esquema",
+        "success": "El agente lista etiquetas y relaciones que coinciden con las de la base",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Preguntar en lenguaje natural por el esquema de un grafo de prueba",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Consultar relaciones con Cypher de solo lectura desde el agente",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/neo4j/mcp/blob/main/README.md",
+        "source_blob_sha": "23d79333f84d41ccb98d35f8138a098463c9c57d",
+        "previous_category": [
+          5,
+          "servidores"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "connector",
+        "codex": "connector",
+        "antigravity": "connector",
+        "cost": "host_plan",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.",
+        "subscription_note": "Configura este servidor en un cliente MCP compatible, incluido Claude Code o Codex. Sus servicios y permisos se preparan aparte.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "El modelo se consume en el cliente MCP. Neo4j Aura y las ediciones comerciales tienen sus propias condiciones; con ellas el servidor queda cubierto por esos contratos.",
+        "hardware_note": "Necesitas una base Neo4j (local, Docker o Aura) y credenciales; GDS es opcional.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/neo4j/mcp/blob/main/README.md"
+        ],
+        "mode": "agent_extension",
+        "source_blob_sha": "23d79333f84d41ccb98d35f8138a098463c9c57d"
+      },
+      "routes": [
+        "no_api",
+        "claude",
+        "codex",
+        "antigravity"
+      ],
+      "goals": [
+        "mcp"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 307,
+      "license": "GPL-3.0",
+      "homepage": "https://neo4j.com/docs/mcp/current/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Cliente MCP de terminal; el README cita Claude, Cursor y VS Code como clientes compatibles. (combinación por arquitectura)",
+          "orden_instalacion": "Prepara Neo4j, luego registra el servidor con `claude mcp add`."
+        },
+        {
+          "id": "codex",
+          "motivo": "Codex admite servidores MCP stdio en su configuración. (combinación por arquitectura)",
+          "orden_instalacion": "Añade el servidor en la configuración MCP de Codex tras arrancar Neo4j."
+        },
+        {
+          "id": "graphiti",
+          "motivo": "Graphiti guarda su grafo de contexto en Neo4j 5.26 (entre otros backends); este servidor permite inspeccionar y consultar ese mismo grafo con Cypher. (combinación por arquitectura)",
+          "orden_instalacion": "Instala Neo4j, ejecuta Graphiti y después conecta el servidor MCP en modo solo lectura."
+        },
+        {
+          "id": "cognee",
+          "motivo": "Cognee documenta Neo4j como almacén de grafos; el servidor MCP da al agente consultas Cypher directas sobre lo que Cognee construye. (combinación por arquitectura)",
+          "orden_instalacion": "Configura Cognee con Neo4j y luego añade el servidor MCP."
+        }
+      ],
+      "que_es": "Servidor MCP oficial de Neo4j (organización neo4j, Neo4j Sweden AB), escrito en Go. Licencia GPL-3.0 según LICENSE.txt y NOTICE.txt (GitHub muestra NOASSERTION); si se usa con Aura o con las ediciones comerciales de Neo4j, pasa a regirse por esos contratos. Versión v2.1.1 (noviembre de 2026), ~300 estrellas, activo.",
+      "que_hace": "Da a un asistente acceso estructurado a una base Neo4j: descubrir etiquetas, relaciones y propiedades (`get-schema`), ejecutar Cypher de solo lectura (`read-cypher`, validado con EXPLAIN), ejecutar escrituras (`write-cypher`, desactivable con `NEO4J_MCP_READ_ONLY=true`) y listar procedimientos de Graph Data Science.",
+      "como_lo_hace": "Se instala con `pip install neo4j-mcp-server` (la documentación oficial cubre brew e instalación manual; el repositorio incluye un Dockerfile) y se registra como servidor stdio en el cliente MCP con las variables `NEO4J_MCP_URI`, `NEO4J_MCP_USERNAME`, `NEO4J_MCP_PASSWORD` y `NEO4J_MCP_DATABASE`. Requiere una instancia Neo4j accesible (local, Docker o Aura). El propio README advierte que procedimientos mal clasificados como de lectura pueden saltarse el control de solo lectura.",
+      "descripcion_notas": "Alternativa (elige una): mcp-neo4j. Es el servidor oficial; mcp-neo4j son los servidores experimentales de Neo4j Labs. Activa `NEO4J_MCP_READ_ONLY` salvo que necesites escribir.",
+      "descripcion_fuentes": [
+        "https://github.com/neo4j/mcp/blob/main/README.md",
+        "https://github.com/neo4j/mcp/blob/main/NOTICE.txt",
+        "https://neo4j.com/docs/mcp/current/"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "neo4j/mcp",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "GPL-3.0 (GitHub: NOASSERTION)",
+        "primary_language": "Go",
+        "latest_release": "v2.1.1 (2026-11-11)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+      "body": "Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+      "install": {
+        "command": "pip install neo4j-mcp-server",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
+      },
+      "alt_refs": [
+        {
+          "id": "mcp-neo4j",
+          "label": "mcp-neo4j"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "graphiti",
+          "label": "graphiti"
+        },
+        {
+          "id": "cognee",
+          "label": "cognee"
         }
       ],
       "areas": [
@@ -46205,7 +46516,8 @@
       "combines_with": [
         "claude-code",
         "gemini-cli",
-        "hermes-agent"
+        "hermes-agent",
+        "deepseek-harness"
       ],
       "alt": [
         "engram",
@@ -46341,6 +46653,11 @@
           "id": "hermes-agent",
           "motivo": "Agente soportado de forma nativa.",
           "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "deepseek-harness",
+          "motivo": "agentmemory declara capturar sesiones de DeepSeek Harness para que otro agente retome historial y lecciones.",
+          "orden_instalacion": "Conecta agentmemory después de configurar DSH."
         }
       ],
       "que_es": "Memoria persistente de código abierto (Apache 2.0) para sesiones de programación y agentes, de rohitg00, que se presenta como implementación del patrón «LLM Wiki» de Karpathy con puntuación de confianza, ciclo de vida, grafos y búsqueda híbrida. Muy activo (v0.9.33).",
@@ -46398,6 +46715,10 @@
         {
           "id": "hermes-agent",
           "label": "hermes-agent"
+        },
+        {
+          "id": "deepseek-harness",
+          "label": "deepseek-harness"
         }
       ],
       "areas": [
@@ -47132,7 +47453,8 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "hermes-agent"
+        "hermes-agent",
+        "deepseek-harness"
       ],
       "alt": [],
       "stack": "DeepSeek Harness compatible; plugin Noema; directorio de prueba",
@@ -47255,12 +47577,17 @@
           "id": "hermes-agent",
           "motivo": "Fuente de importación soportada.",
           "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "deepseek-harness",
+          "motivo": "Es un plugin para DeepSeek Harness: el anfitrión que carga Noema como memoria persistente.",
+          "orden_instalacion": "Instala y arranca DSH antes de añadir el plugin."
         }
       ],
       "que_es": "Plugin de código abierto (MIT) de ZSeven-W que añade memoria a largo plazo a DeepSeek Harness usando Noema, un sistema de memoria local sin vectores. Proyecto pequeño y reciente, probado con DSH 0.2.0-rc.2 y publicado en npm sin releases en GitHub.",
       "que_hace": "Carga contexto relevante al inicio de cada sesión (`noema_recall`) y ofrece búsqueda, navegación y catálogo de memorias. Importa los archivos de memoria de otras diez herramientas (Codex, Claude Code, opencode, Cursor, Grok, WorkBuddy, Antigravity, Trae, Qoder, Hermes) y los guarda como memorias duraderas. Incluye una página de ajustes para gestionar memorias y servidor, y un bucle que reinicia el servidor MCP si falla.",
       "como_lo_hace": "Las memorias son archivos Markdown inspeccionables en `NOEMA_ROOT` (por defecto `~/.agent-memory/`), servidos por el proceso hijo `noema-mcp`. La extracción de entidades combina segmentación jieba con señales de nombres propios y términos técnicos. Se instala con `dsh plugin --profile web add @zseven-w/dsh-noema@latest` y se recarga en caliente mediante Cordis HMR.",
-      "descripcion_notas": "Requiere DeepSeek Harness, que no está en el catálogo.",
+      "descripcion_notas": "Requiere DeepSeek Harness (deepseek-harness).",
       "descripcion_fuentes": [
         "https://github.com/ZSeven-W/dsh-noema/blob/main/README.md"
       ],
@@ -47298,6 +47625,10 @@
         {
           "id": "hermes-agent",
           "label": "hermes-agent"
+        },
+        {
+          "id": "deepseek-harness",
+          "label": "deepseek-harness"
         }
       ],
       "areas": [
@@ -47332,7 +47663,8 @@
       "combines_with": [
         "claude-code",
         "opencode",
-        "gemini-cli"
+        "gemini-cli",
+        "deepseek-harness"
       ],
       "alt": [
         "claude-mem",
@@ -47463,6 +47795,11 @@
           "id": "gemini-cli",
           "motivo": "Destino de configuración soportado.",
           "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "deepseek-harness",
+          "motivo": "La guía oficial de DSH incluye una configuración de referencia para conectar Engram como memoria MCP vía `dsh-mcp-client`.",
+          "orden_instalacion": "Instala Engram con la versión fijada en la guía de DSH y activa la overlay."
         }
       ],
       "que_es": "Memoria persistente para agentes de código de Gentleman-Programming, de código abierto (MIT) y financiada por donaciones, sin funciones de pago. Muy activa (v3.7.2) y parte del ecosistema Gentle-AI.",
@@ -47516,6 +47853,10 @@
         {
           "id": "gemini-cli",
           "label": "gemini-cli"
+        },
+        {
+          "id": "deepseek-harness",
+          "label": "deepseek-harness"
         }
       ],
       "areas": [
@@ -59844,7 +60185,8 @@
         "langgraph",
         "mastra",
         "agent-framework",
-        "crewai"
+        "crewai",
+        "openbot"
       ],
       "alt": [
         "assistant-ui"
@@ -59979,6 +60321,11 @@
           "id": "crewai",
           "motivo": "Equipos de agentes CrewAI con integración documentada.",
           "orden_instalacion": "Despliega el crew y conéctalo al runtime."
+        },
+        {
+          "id": "openbot",
+          "motivo": "OpenBot, la plataforma de compañeros de IA de CopilotKit, está construida sobre CopilotKit y AG-UI.",
+          "orden_instalacion": "Parte de OpenBot si quieres un espacio de trabajo completo en vez de componentes sueltos."
         }
       ],
       "que_es": "Stack open source (MIT) para poner agentes de IA frente a usuarios reales en React, de CopilotKit, el equipo creador del protocolo AG-UI. Es muy activo (v1.88.0). Tiene un producto de pago, CopilotKit Intelligence, que añade memoria entre sesiones y aprendizaje continuo.",
@@ -60037,6 +60384,10 @@
         {
           "id": "crewai",
           "label": "crewai"
+        },
+        {
+          "id": "openbot",
+          "label": "openbot"
         }
       ],
       "areas": [
@@ -64085,7 +64436,9 @@
         "heroui",
         "supabase"
       ],
-      "alt": [],
+      "alt": [
+        "tanstack-query"
+      ],
       "stack": "React; endpoint de datos de prueba; función fetcher",
       "repo_url": "https://github.com/vercel/swr",
       "doc": "human/fichas/swr.md",
@@ -64213,7 +64566,7 @@
       "que_es": "Biblioteca de hooks React para cargar datos (MIT), creada por Vercel. Su nombre viene de la estrategia de caché stale-while-revalidate (RFC 5861). Es madura y estable (v2.5.1); último push en octubre de 2026.",
       "que_hace": "Con un solo hook (`useSWR`) devuelve primero los datos en caché, después revalida con una nueva petición y actualiza la vista. Incluye caché y deduplicación de peticiones, revalidación al recuperar el foco o la red, polling, paginación, mutaciones optimistas, soporte de Suspense y SSR/SSG. Es agnóstica del transporte (REST, GraphQL…).",
       "como_lo_hace": "Se instala con `npm i swr` y se usa con una función `fetcher` propia. Tiene integración documentada con Next.js. Es ligera y no impone backend ni cliente HTTP.",
-      "descripcion_notas": "Sin alternativas declaradas en el catálogo (TanStack Query no figura).",
+      "descripcion_notas": "Alternativa (elige una): tanstack-query.",
       "descripcion_fuentes": [
         "https://github.com/vercel/swr/blob/main/README.md",
         "https://swr.vercel.app/docs/with-nextjs"
@@ -64240,7 +64593,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "tanstack-query",
+          "label": "tanstack-query"
+        }
+      ],
       "combine_refs": [
         {
           "id": "ui",
@@ -64465,6 +64823,212 @@
         {
           "id": "magicui",
           "label": "magicui"
+        }
+      ],
+      "areas": [
+        "frontend"
+      ],
+      "topics": [
+        "web-componentes"
+      ],
+      "discovery_text": " Frontend y creación de páginas web frontend paginas web crear una pagina web landing pages sitios web Componentes, iconos y estilos"
+    },
+    {
+      "id": "tanstack-query",
+      "name": "TanStack Query",
+      "cat": 9,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "frontend",
+        "data-fetching",
+        "cache",
+        "typescript"
+      ],
+      "one": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+      "desc": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "supabase",
+        "ui",
+        "tailwindcss"
+      ],
+      "alt": [
+        "swr"
+      ],
+      "stack": "TypeScript, package.json",
+      "repo_url": "https://github.com/TanStack/query",
+      "doc": "human/fichas/tanstack-query.md",
+      "agent_tools": [],
+      "sub": "componentes",
+      "how": "Tu aplicación declara consultas y mutaciones con claves de caché; la biblioteca gestiona caché, reintentos, refetch en segundo plano y estados de carga.",
+      "why": "Usos propuestos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual.",
+      "cases": [
+        "Cachear y revalidar datos de una API en una app React",
+        "Mostrar estados de carga y error sin estado global manual"
+      ],
+      "gh": "TanStack/query",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://tanstack.com/query/latest/docs/framework/react/overview",
+        "source": "https://github.com/TanStack/query/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Envuelve una llamada a una API pública de prueba en una consulta y muestra sus estados",
+        "success": "Ves carga, datos y un refetch al volver a enfocar la ventana",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Cachear y revalidar datos de una API en una app React",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Mostrar estados de carga y error sin estado global manual",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/TanStack/query/blob/main/README.md",
+        "source_blob_sha": "3e4b0598ad8a1352350bcea435f77a4393f303c9",
+        "previous_category": [
+          9,
+          "componentes"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Un proyecto JavaScript o TypeScript con el adaptador de tu framework.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/TanStack/query/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3e4b0598ad8a1352350bcea435f77a4393f303c9"
+      },
+      "routes": [
+        "no_api"
+      ],
+      "goals": [
+        "web"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 50568,
+      "license": "MIT",
+      "homepage": "https://tanstack.com/query",
+      "combina_con": [
+        {
+          "id": "supabase",
+          "motivo": "Las funciones de consulta pueden llamar al cliente de Supabase y dejar en TanStack Query la caché, reintentos y la invalidación tras mutaciones. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el cliente de Supabase y envuélvelo en `useQuery`/`useMutation`."
+        },
+        {
+          "id": "ui",
+          "motivo": "Los componentes de shadcn/ui muestran estados de carga, error y datos que TanStack Query expone. (combinación por arquitectura)",
+          "orden_instalacion": "Añade los componentes al proyecto y conéctalos a los hooks de consulta."
+        },
+        {
+          "id": "tailwindcss",
+          "motivo": "Estilo de los estados de interfaz (skeletons, errores) en las mismas vistas. (combinación por arquitectura)",
+          "orden_instalacion": "Configura Tailwind en el proyecto antes de construir las vistas."
+        }
+      ],
+      "que_es": "Biblioteca de gestión de estado asíncrono de TanStack (antes React Query), en TypeScript con licencia MIT. Proyecto maduro (desde 2019), ~50k estrellas, con publicaciones frecuentes (última: noviembre de 2026).",
+      "que_hace": "Obtiene, cachea, sincroniza y actualiza «estado de servidor» en aplicaciones web: caché con invalidación, refetch en segundo plano, paginación y scroll infinito, mutaciones, consultas dependientes, prefetch, cancelación y soporte de Suspense. Funciona con cualquier fuente de promesas (REST, GraphQL…).",
+      "como_lo_hace": "Es un núcleo agnóstico (`query-core`) con adaptadores para React, Vue, Solid, Svelte, Preact, Lit y Angular (experimental), más devtools, persistencia de caché y un plugin de ESLint. Se instala por npm con el paquete del framework (p. ej. `@tanstack/react-query`) según la documentación oficial; no tiene backend propio.",
+      "descripcion_notas": "Alternativa (elige una): swr. Gestiona datos del servidor, no estado global de cliente.",
+      "descripcion_fuentes": [
+        "https://github.com/TanStack/query/blob/main/README.md",
+        "https://tanstack.com/query/latest/docs/framework/react/overview"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "TanStack/query",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "release-2026-11-06-2304 (2026-11-06)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+      "body": "Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+      "install": {
+        "command": "Seguir la instalación original: https://github.com/TanStack/query/blob/main/README.md",
+        "confidence": "clone",
+        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+      },
+      "alt_refs": [
+        {
+          "id": "swr",
+          "label": "swr"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "supabase",
+          "label": "supabase"
+        },
+        {
+          "id": "ui",
+          "label": "ui"
+        },
+        {
+          "id": "tailwindcss",
+          "label": "tailwindcss"
         }
       ],
       "areas": [
@@ -69834,7 +70398,8 @@
       "combines_with": [
         "flux2",
         "krita-ai-diffusion",
-        "real-esrgan"
+        "real-esrgan",
+        "hunyuanvideo-1-5"
       ],
       "alt": [
         "wan2gp"
@@ -69965,6 +70530,11 @@
           "id": "real-esrgan",
           "motivo": "Cargar modelos ESRGAN como upscalers.",
           "orden_instalacion": "Copia los pesos en `models/upscale_models`."
+        },
+        {
+          "id": "hunyuanvideo-1-5",
+          "motivo": "ComfyUI soporta HunyuanVideo 1.5 de forma nativa con flujos de video de ejemplo.",
+          "orden_instalacion": "Descarga los pesos de HunyuanVideo 1.5 y carga el flujo de ejemplo."
         }
       ],
       "que_es": "ComfyUI, motor modular de creación con IA basado en grafos de nodos, mantenido por Comfy Org. Licencia GPL-3.0. Es uno de los proyectos de IA generativa más populares (~147k estrellas, v0.45.0).",
@@ -70016,6 +70586,10 @@
         {
           "id": "real-esrgan",
           "label": "real-esrgan"
+        },
+        {
+          "id": "hunyuanvideo-1-5",
+          "label": "hunyuanvideo-1-5"
         }
       ],
       "areas": [
@@ -72138,7 +72712,8 @@
         "wan2gp"
       ],
       "alt": [
-        "wan2-2"
+        "wan2-2",
+        "hunyuanvideo-1-5"
       ],
       "stack": "Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia",
       "repo_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
@@ -72269,7 +72844,7 @@
       "que_es": "HunyuanVideo, modelo abierto de generación de vídeo de 13B parámetros de Tencent Hunyuan. Usa la Tencent Hunyuan Community License, que excluye expresamente la UE, Reino Unido y Corea del Sur (GitHub muestra NOASSERTION). Tiene ~13k estrellas y su sucesor es HunyuanVideo-1.5 (repositorio aparte, noviembre de 2025).",
       "que_hace": "Genera vídeo a partir de texto con un transformer de difusión y ofrece inferencia en varias GPU, pesos FP8 y modelos derivados (I2V, Avatar, Custom). Es la base de varias implementaciones de la comunidad.",
       "como_lo_hace": "Se instala con PyTorch para CUDA, `requirements.txt` y, opcionalmente, flash-attention y xDiT para paralelismo. Requiere GPU con mucha memoria; existen versiones optimizadas de la comunidad para menos VRAM.",
-      "descripcion_notas": "Alternativas (elige una): wan2-2. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
+      "descripcion_notas": "Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
       "descripcion_fuentes": [
         "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md",
         "https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video",
@@ -72300,6 +72875,10 @@
         {
           "id": "wan2-2",
           "label": "wan2-2"
+        },
+        {
+          "id": "hunyuanvideo-1-5",
+          "label": "hunyuanvideo-1-5"
         }
       ],
       "combine_refs": [
@@ -72314,6 +72893,221 @@
         {
           "id": "wan2gp",
           "label": "wan2gp"
+        }
+      ],
+      "areas": [
+        "audiovisual"
+      ],
+      "topics": [
+        "av-video-ia"
+      ],
+      "discovery_text": " Producción audiovisual produccion audiovisual multimedia contenido audiovisual Video: generación con IA"
+    },
+    {
+      "id": "hunyuanvideo-1-5",
+      "name": "HunyuanVideo 1.5",
+      "cat": 12,
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [
+        "local"
+      ],
+      "tags": [
+        "video",
+        "inference",
+        "local",
+        "python"
+      ],
+      "one": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+      "desc": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p",
+      "avoid_if": "no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia",
+      "combines_with": [
+        "comfyui",
+        "wan2gp",
+        "vllm"
+      ],
+      "alt": [
+        "hunyuanvideo",
+        "wan2-2"
+      ],
+      "stack": "Python, requirements.txt",
+      "repo_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+      "doc": "human/fichas/hunyuanvideo-1-5.md",
+      "agent_tools": [],
+      "sub": "generativo",
+      "how": "Un DiT de 8,3B parámetros con VAE causal 3D genera video a partir de texto o imagen; se ejecuta con PyTorch y CUDA o mediante ComfyUI y Diffusers.",
+      "why": "Usos propuestos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p.",
+      "cases": [
+        "Generar un clip corto desde texto con GPU de consumo",
+        "Animar una imagen fija en 480p"
+      ],
+      "gh": "Tencent-Hunyuan/HunyuanVideo-1.5",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Licencia comunitaria de Tencent con exclusión territorial (UE, Reino Unido, Corea del Sur) y política de uso aceptable.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Confirma que tu país no está excluido por la licencia y que tienes Linux, CUDA y al menos 14 GB de VRAM.",
+          "Instala las dependencias y descarga los pesos según checkpoints-download.md; ComfyUI y Diffusers son rutas alternativas.",
+          "Genera un clip corto en 480p con offloading activado y mide tiempo y memoria antes de subir a 720p."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/checkpoints-download.md",
+        "source": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Genera un clip de pocos segundos en 480p con offloading activado",
+        "success": "El video se guarda y anotas tiempo y VRAM usados",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Generar un clip corto desde texto con GPU de consumo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Animar una imagen fija en 480p",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "source_blob_sha": "ed2a8e0ffc5a3bd602cf4d8fb339a364266fdda9",
+        "previous_category": [
+          12,
+          "generativo"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La reescritura de prompts usa un endpoint vLLM opcional; si no se configura, el pipeline genera sin reescritura remota.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "gpu",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La reescritura de prompts usa un endpoint vLLM opcional; si no se configura, el pipeline genera sin reescritura remota.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Inferencia local con pesos descargados de Hugging Face, sujeta a la Tencent Hunyuan Community License.",
+        "cost_note": "Sin pago por llamada en la ruta local; consume GPU. La licencia excluye la UE, el Reino Unido y Corea del Sur.",
+        "hardware_note": "GPU NVIDIA con CUDA y al menos 14 GB de VRAM con offloading; Linux y Python 3.10 o superior.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "ed2a8e0ffc5a3bd602cf4d8fb339a364266fdda9"
+      },
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "goals": [
+        "video"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 4605,
+      "license": "Tencent Hunyuan Community License",
+      "homepage": "https://hunyuan.tencent.com/video/zh?tabIndex=0",
+      "combina_con": [
+        {
+          "id": "comfyui",
+          "motivo": "ComfyUI soporta HunyuanVideo 1.5 de forma nativa con flujos de trabajo y optimizaciones; el README lo enlaza.",
+          "orden_instalacion": "Instala ComfyUI, descarga los pesos y carga un flujo de ejemplo."
+        },
+        {
+          "id": "wan2gp",
+          "motivo": "Wan2GP soporta Hunyuan Video 1.5 con poca VRAM (desde unos 6 GB, según el README del modelo).",
+          "orden_instalacion": "Usa Wan2GP si tu GPU no llega a 14 GB."
+        },
+        {
+          "id": "vllm",
+          "motivo": "El pipeline reescribe los prompts contra un servidor vLLM (Qwen3 recomendado) si se configuran `T2V_REWRITE_BASE_URL` e `I2V_REWRITE_BASE_URL`.",
+          "orden_instalacion": "Levanta vLLM aparte y exporta las variables antes de generar."
+        }
+      ],
+      "que_es": "Modelo de generación de video de Tencent Hunyuan, publicado en noviembre de 2025 con código de inferencia y entrenamiento en Python. Usa la Tencent Hunyuan Community License (GitHub muestra NOASSERTION), que no se aplica en la UE, el Reino Unido ni Corea del Sur. ~4,6k estrellas; último push en abril de 2026.",
+      "que_hace": "Genera video a partir de texto (T2V) o de imagen (I2V) en 480p y 720p, con superresolución a 1080p. Ofrece variantes destiladas (CFG y por pasos) y caché de características para acelerar la inferencia. Sucede a HunyuanVideo (13B) con un modelo más ligero.",
+      "como_lo_hace": "Combina un Diffusion Transformer de 8,3B parámetros y un VAE causal 3D. Requiere Linux, Python 3.10 o superior y una GPU NVIDIA con CUDA: al menos 14 GB de VRAM con offloading. Se instala desde `requirements.txt`, con Flash Attention, SageAttention o flex-block-attn opcionales, y pesos de Hugging Face. Hay integraciones oficiales en ComfyUI y Diffusers. La reescritura de prompts usa un endpoint vLLM opcional.",
+      "descripcion_notas": "Alternativas (elige una): hunyuanvideo, wan2-2. Revisa la exclusión territorial y la política de uso aceptable antes de usarlo en un producto.",
+      "descripcion_fuentes": [
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/LICENSE"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "Tencent-Hunyuan/HunyuanVideo-1.5",
+        "archived": false,
+        "pushed_at": "2026-04-10",
+        "license": "Tencent Hunyuan Community License (GitHub: NOASSERTION)",
+        "primary_language": "Python",
+        "latest_release": "sin releases en GitHub",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+      "body": "Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+      "install": {
+        "command": "Seguir la instalación original: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "confidence": "clone",
+        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+      },
+      "alt_refs": [
+        {
+          "id": "hunyuanvideo",
+          "label": "hunyuanvideo"
+        },
+        {
+          "id": "wan2-2",
+          "label": "wan2-2"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "comfyui",
+          "label": "comfyui"
+        },
+        {
+          "id": "wan2gp",
+          "label": "wan2gp"
+        },
+        {
+          "id": "vllm",
+          "label": "vllm"
         }
       ],
       "areas": [
@@ -73827,7 +74621,8 @@
         "real-esrgan"
       ],
       "alt": [
-        "hunyuanvideo"
+        "hunyuanvideo",
+        "hunyuanvideo-1-5"
       ],
       "stack": "Python y PyTorch >=2.4; GPU; pesos y disco según variante",
       "repo_url": "https://github.com/Wan-Video/Wan2.2",
@@ -73965,7 +74760,7 @@
       "que_es": "Wan2.2, familia de modelos abiertos de generación de vídeo de Alibaba (Wan-AI). Licencia Apache-2.0 para los modelos; no reclaman derechos sobre el contenido generado. Tiene ~19k estrellas (sin releases) y su último cambio es de septiembre de 2026.",
       "que_hace": "Genera vídeo desde texto, imagen o ambos con una arquitectura Mixture-of-Experts para la difusión. Incluye un modelo híbrido TI2V de 5B con un VAE de alta compresión que genera 720p en una GPU de consumo, además de Wan2.2-S2V (vídeo guiado por audio) y Wan2.2-Animate (animación y sustitución de personajes).",
       "como_lo_hace": "Se instala con `pip install -r requirements.txt` y se descargan los pesos de Hugging Face o ModelScope. Los modelos 14B requieren unos 80 GB de VRAM (o varias GPU); el TI2V-5B funciona con 24 GB (RTX 4090) con offloading. S2V puede sintetizar la voz con CosyVoice.",
-      "descripcion_notas": "Alternativas (elige una): hunyuanvideo.",
+      "descripcion_notas": "Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.",
       "descripcion_fuentes": [
         "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
         "https://docs.comfy.org/tutorials/video/wan/wan2_2",
@@ -73996,6 +74791,10 @@
         {
           "id": "hunyuanvideo",
           "label": "hunyuanvideo"
+        },
+        {
+          "id": "hunyuanvideo-1-5",
+          "label": "hunyuanvideo-1-5"
         }
       ],
       "combine_refs": [
@@ -74051,7 +74850,8 @@
         "claude-code",
         "wan2-2",
         "moviepy",
-        "lossless-cut"
+        "lossless-cut",
+        "hunyuanvideo-1-5"
       ],
       "alt": [
         "comfyui"
@@ -74189,6 +74989,11 @@
           "id": "lossless-cut",
           "motivo": "Recortar resultados sin recodificar. (combinación por arquitectura)",
           "orden_instalacion": "Abre los vídeos en LosslessCut."
+        },
+        {
+          "id": "hunyuanvideo-1-5",
+          "motivo": "Wan2GP incluye Hunyuan Video 1.5 entre sus modelos para GPUs con poca VRAM.",
+          "orden_instalacion": "Elige el modelo en la interfaz; los pesos se descargan aparte."
         }
       ],
       "que_es": "WanGP, superapp local para modelos generativos abiertos «para GPU modestas», de @deepbeepmeep. Usa la WanGP Community License 2.0, propia (GitHub muestra NOASSERTION), y es gratuita para uso local, también en el trabajo. Es muy activa (~12k estrellas).",
@@ -74242,6 +75047,10 @@
         {
           "id": "lossless-cut",
           "label": "lossless-cut"
+        },
+        {
+          "id": "hunyuanvideo-1-5",
+          "label": "hunyuanvideo-1-5"
         }
       ],
       "areas": [
@@ -104091,6 +104900,237 @@
       "discovery_text": " Programación, backend y despliegue programacion backend devops despliegue desarrollo de software Agentes y editores para programar"
     },
     {
+      "id": "antigravity-cli",
+      "name": "Antigravity CLI",
+      "cat": 20,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": true,
+      "prov": [
+        "google"
+      ],
+      "tags": [
+        "coding",
+        "agents",
+        "cli",
+        "google"
+      ],
+      "one": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+      "desc": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "google-skills",
+        "antigravity-awesome-skills",
+        "engram",
+        "context7"
+      ],
+      "alt": [
+        "gemini-cli",
+        "claude-code",
+        "codex"
+      ],
+      "stack": "",
+      "repo_url": "https://github.com/google-antigravity/antigravity-cli",
+      "doc": "human/fichas/antigravity-cli.md",
+      "agent_tools": [],
+      "sub": "terminal",
+      "how": "La TUI `agy` comparte el motor de agentes de Antigravity 2.0, inicia sesión con Google y ejecuta ediciones y comandos con tu permiso.",
+      "why": "Usos propuestos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes.",
+      "cases": [
+        "Pedir cambios a un proyecto desde la terminal o por SSH",
+        "Delegar tareas paralelas en subagentes"
+      ],
+      "gh": "google-antigravity/antigravity-cli",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Producto propietario: el repositorio solo contiene README, changelog y ejemplos; la organización de GitHub no está verificada, pero el sitio oficial antigravity.google documenta la CLI.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Revisa la documentación oficial de la CLI y los términos de uso y datos de Google antes de instalar.",
+          "Instala la versión para tu sistema desde la guía oficial e inicia `agy` dentro de un proyecto de prueba.",
+          "Completa el inicio de sesión con Google y pide un cambio acotado; revisa los permisos que concede cada herramienta."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://antigravity.google/docs/cli/overview",
+        "source": "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Inicia agy en un proyecto de prueba y pide renombrar una función con su prueba",
+        "success": "El cambio aparece en el diff y pediste permiso antes de ejecutar comandos",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Pedir cambios a un proyecto desde la terminal o por SSH",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Delegar tareas paralelas en subagentes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+        "source_blob_sha": "7efc2eb63059621f4429fe00d5828d5c7b2a416a",
+        "previous_category": [
+          20,
+          "terminal"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Inicia sesión con una cuenta de Google (o un proyecto de GCP para empresa); no pide una clave de API propia en la ruta básica.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "not_required",
+        "local_model": "not_documented",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "native",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Inicia sesión con una cuenta de Google (o un proyecto de GCP para empresa); no pide una clave de API propia en la ruta básica.",
+        "subscription_note": "Es la superficie de terminal de Google Antigravity y usa la cuenta y el plan de Google con que inicias sesión.",
+        "local_note": "No documenta modelos locales.",
+        "cost_note": "Los límites dependen de la cuenta y el plan de Google. Google recoge datos de interacción por defecto (desactivable en ajustes).",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7efc2eb63059621f4429fe00d5828d5c7b2a416a"
+      },
+      "routes": [
+        "no_api",
+        "antigravity"
+      ],
+      "goals": [
+        "programar",
+        "mcp"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 2843,
+      "license": "Propietaria (sin licencia en el repositorio)",
+      "homepage": "",
+      "combina_con": [
+        {
+          "id": "google-skills",
+          "motivo": "El catálogo de skills de Google documenta la instalación en Antigravity CLI con `agy plugin install`.",
+          "orden_instalacion": "Instala la CLI, inicia sesión y luego añade los plugins de skills necesarios."
+        },
+        {
+          "id": "antigravity-awesome-skills",
+          "motivo": "Su instalador lista Antigravity CLI (`antigravity-cli`) como destino de instalación de skills.",
+          "orden_instalacion": "Instala solo las skills que vayas a usar para no sobrecargar el agente."
+        },
+        {
+          "id": "engram",
+          "motivo": "Engram documenta una configuración para Antigravity como cliente MCP de memoria persistente. (combinación por arquitectura)",
+          "orden_instalacion": "Instala Engram y registra su servidor MCP; comprueba que la guía aplica a la CLI."
+        },
+        {
+          "id": "context7",
+          "motivo": "Context7 aporta documentación actualizada de bibliotecas como servidor MCP, configurable desde los comandos MCP de la CLI. (combinación por arquitectura)",
+          "orden_instalacion": "Añade Context7 como servidor MCP tras el primer inicio de sesión."
+        }
+      ],
+      "que_es": "CLI oficial de Google Antigravity (`agy`), producto propietario. El repositorio google-antigravity/antigravity-cli solo contiene README, CHANGELOG, ejemplos y releases con binarios; no publica código fuente ni licencia. La organización de GitHub no está verificada, pero el sitio oficial antigravity.google enlaza la documentación y describe la CLI. Versión 1.5.9 (noviembre de 2026).",
+      "que_hace": "Agente de programación en la terminal: entiende el código, edita varios archivos con tu permiso, ejecuta comandos, delega tareas en subagentes concurrentes y gestiona plugins, MCP, skills y hooks mediante comandos con barra. Está optimizado para teclado y sesiones SSH remotas y puede exportar sesiones a la app de escritorio Antigravity 2.0.",
+      "como_lo_hace": "Se instala con los scripts oficiales de antigravity.google (macOS/Linux, PowerShell o CMD) o con los binarios de las releases, y se inicia con `agy`. Comparte el motor de agentes y los ajustes con Antigravity 2.0. Se autentica con el llavero del sistema o con Google Sign-In (en SSH imprime una URL); para empresa se conecta un proyecto de GCP. Por defecto Google recoge los datos de interacción para mejorar el producto (desactivable en ajustes).",
+      "descripcion_notas": "Alternativas (elige una): gemini-cli, claude-code, codex. Google remite a Antigravity CLI a las cuentas gratuitas y Google AI Pro/Ultra que antes usaban Gemini CLI. Producto cerrado: revisa los términos de uso y de datos.",
+      "descripcion_fuentes": [
+        "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+        "https://antigravity.google/product/antigravity-cli",
+        "https://antigravity.google/docs/cli/overview"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google-antigravity/antigravity-cli",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "sin licencia (propietario)",
+        "primary_language": "sin código fuente",
+        "latest_release": "1.5.9 (2026-11-14)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+      "body": "Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.",
+      "install": {
+        "command": "Seguir la instalación original: https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+        "confidence": "clone",
+        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+      },
+      "alt_refs": [
+        {
+          "id": "gemini-cli",
+          "label": "gemini-cli"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "google-skills",
+          "label": "google-skills"
+        },
+        {
+          "id": "antigravity-awesome-skills",
+          "label": "antigravity-awesome-skills"
+        },
+        {
+          "id": "engram",
+          "label": "engram"
+        },
+        {
+          "id": "context7",
+          "label": "context7"
+        }
+      ],
+      "areas": [
+        "desarrollo"
+      ],
+      "topics": [
+        "dev-codigo"
+      ],
+      "discovery_text": " Programación, backend y despliegue programacion backend devops despliegue desarrollo de software Agentes y editores para programar"
+    },
+    {
       "id": "claude-code",
       "name": "Claude Code",
       "cat": 20,
@@ -104122,7 +105162,8 @@
         "codex",
         "gemini-cli",
         "opencode",
-        "goose"
+        "goose",
+        "antigravity-cli"
       ],
       "stack": "Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba",
       "repo_url": "https://github.com/anthropics/claude-code",
@@ -104265,7 +105306,7 @@
       "que_es": "Claude Code, agente de programación de Anthropic para la terminal, el IDE y la web. Es software propietario: el repo contiene documentación, plugins y seguimiento de issues, y el uso se rige por los Términos Comerciales de Anthropic (GitHub no detecta licencia). Es muy activo (~156k estrellas, v2.1.325).",
       "que_hace": "Entiende la base de código, ejecuta tareas rutinarias, explica código y gestiona flujos de git mediante lenguaje natural. Se amplía con skills, plugins, hooks, subagentes y servidores MCP, y tiene SDK para automatización.",
       "como_lo_hace": "Se instala con el instalador nativo o `brew install --cask claude-code`; la instalación por npm está obsoleta. Requiere una cuenta de Anthropic (suscripción o API).",
-      "descripcion_notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose. No es open source.",
+      "descripcion_notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose, antigravity-cli. No es open source.",
       "descripcion_fuentes": [
         "https://github.com/anthropics/claude-code/blob/main/README.md",
         "https://code.claude.com/docs/en/overview"
@@ -104307,6 +105348,10 @@
         {
           "id": "goose",
           "label": "goose"
+        },
+        {
+          "id": "antigravity-cli",
+          "label": "antigravity-cli"
         }
       ],
       "combine_refs": [
@@ -104585,7 +105630,8 @@
       "alt": [
         "claude-code",
         "gemini-cli",
-        "opencode"
+        "opencode",
+        "antigravity-cli"
       ],
       "stack": "Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local",
       "repo_url": "https://github.com/openai/codex",
@@ -104727,7 +105773,7 @@
       "que_es": "Codex CLI, agente de programación de OpenAI que se ejecuta en local, escrito en Rust. Licencia Apache-2.0. Es muy activo (~135k estrellas, rust-v0.169.0).",
       "que_hace": "Lee, edita y ejecuta código en tu máquina con sandbox y niveles de aprobación. Existe también como extensión de IDE, app de escritorio (`codex app`) y agente en la nube (Codex Web). Admite MCP, skills y `AGENTS.md`.",
       "como_lo_hace": "Se instala con `curl -fsSL https://chatgpt.com/codex/install.sh | sh`, `npm install -g @openai/codex` o `brew install --cask codex`. Se inicia sesión con un plan de ChatGPT o, con configuración adicional, con una clave de API.",
-      "descripcion_notas": "Alternativas (elige una): claude-code, gemini-cli, opencode.",
+      "descripcion_notas": "Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.",
       "descripcion_fuentes": [
         "https://github.com/openai/codex/blob/main/README.md",
         "https://developers.openai.com/codex/"
@@ -104766,6 +105812,10 @@
         {
           "id": "opencode",
           "label": "opencode"
+        },
+        {
+          "id": "antigravity-cli",
+          "label": "antigravity-cli"
         }
       ],
       "combine_refs": [
@@ -104797,6 +105847,234 @@
       "discovery_text": " Programación, backend y despliegue programacion backend devops despliegue desarrollo de software Agentes y editores para programar Configuración de Codex configurar codex configuracion codex setup codex optimizar codex Instalación y primeros pasos"
     },
     {
+      "id": "deepseek-harness",
+      "name": "DeepSeek Harness (DSH)",
+      "cat": 20,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [
+        "deepseek",
+        "anthropic",
+        "openai",
+        "local"
+      ],
+      "tags": [
+        "agents",
+        "coding",
+        "plugins",
+        "typescript"
+      ],
+      "one": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+      "desc": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "dsh-noema",
+        "engram",
+        "agentmemory",
+        "litellm",
+        "ollama"
+      ],
+      "alt": [],
+      "stack": "TypeScript, package.json",
+      "repo_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "doc": "human/fichas/deepseek-harness.md",
+      "agent_tools": [],
+      "sub": "terminal",
+      "how": "Un servidor local en Node.js carga plugins sobre Cordis y sirve una Web UI; el modelo se configura por proveedor (DeepSeek, terceros o una API compatible propia).",
+      "why": "Usos propuestos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI.",
+      "cases": [
+        "Probar un harness de agentes extensible por plugins",
+        "Comparar proveedores de modelos desde una misma Web UI"
+      ],
+      "gh": "deepseek-ai/deepseek-harness",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Vista previa con cambios incompatibles anunciados y sin auditoría de seguridad.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Lee SAFETY.md y prepara una VM, contenedor o carpeta de prueba: es una vista previa que ejecuta código generado por el modelo.",
+          "Inicia la Web UI con el comando de npm y configura un proveedor en Settings → Models.",
+          "Pide una tarea pequeña sobre archivos de prueba; añade plugins o servidores MCP uno por uno."
+        ],
+        "command": "npx @deepseek-ai/dsh web",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre la Web UI en una VM o contenedor, configura un proveedor y pide un resumen de un archivo ficticio",
+        "success": "El resumen aparece y el registro de la sesión muestra el proveedor elegido",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Probar un harness de agentes extensible por plugins",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Comparar proveedores de modelos desde una misma Web UI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md",
+        "source_blob_sha": "7941e30f7bdca9391befe39b9115d211157fa42d",
+        "previous_category": [
+          20,
+          "terminal"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Necesita un proveedor: clave de DeepSeek, un proveedor de terceros incluido (Anthropic, OpenAI, Kimi, GLM) o una API propia compatible.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "depends",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Necesita un proveedor: clave de DeepSeek, un proveedor de terceros incluido (Anthropic, OpenAI, Kimi, GLM) o una API propia compatible.",
+        "subscription_note": "No documenta uso con sesiones de Claude Code o Codex; los plugins y servidores MCP se configuran dentro de DSH.",
+        "local_note": "La guía de proveedores admite una API personalizada para un servidor autoalojado; el harness no incluye modelos.",
+        "cost_note": "El consumo se paga al proveedor elegido. Un servidor local consume tu hardware.",
+        "hardware_note": "Node.js para `npx`; pnpm para ejecutar desde el código. Preferible una VM o contenedor desechable según su aviso de seguridad.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7941e30f7bdca9391befe39b9115d211157fa42d"
+      },
+      "routes": [
+        "local_model",
+        "api"
+      ],
+      "goals": [
+        "programar",
+        "mcp"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 281854,
+      "license": "MIT",
+      "homepage": "https://deepseek.com/harness",
+      "combina_con": [
+        {
+          "id": "dsh-noema",
+          "motivo": "Plugin de memoria persistente para DSH basado en Noema; su README lo presenta como memoria a largo plazo para DeepSeek Harness.",
+          "orden_instalacion": "Arranca DSH primero y añade el plugin desde su configuración."
+        },
+        {
+          "id": "engram",
+          "motivo": "La guía oficial de DSH incluye una configuración de referencia (desactivada por defecto) para conectar Engram como servidor MCP de memoria a través de `dsh-mcp-client`.",
+          "orden_instalacion": "Instala Engram con la versión fijada en la guía y activa la overlay de DSH."
+        },
+        {
+          "id": "agentmemory",
+          "motivo": "agentmemory declara capturar sesiones de DeepSeek Harness para que otro agente retome historial y lecciones.",
+          "orden_instalacion": "Instala agentmemory y conéctalo a DSH según su guía."
+        },
+        {
+          "id": "litellm",
+          "motivo": "DSH admite una «Custom model API» con URL base y protocolo OpenAI; LiteLLM ofrece esa interfaz delante de muchos proveedores. (combinación por arquitectura)",
+          "orden_instalacion": "Levanta LiteLLM y regístralo como proveedor personalizado en DSH."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Un servidor local compatible con OpenAI puede registrarse como proveedor personalizado; la guía cita servidores autoalojados. (combinación por arquitectura)",
+          "orden_instalacion": "Arranca Ollama, comprueba su endpoint OpenAI y añádelo en Settings → Models."
+        }
+      ],
+      "que_es": "Harness de agentes de código abierto de DeepSeek AI (deepseek-ai/deepseek-harness, comando `dsh`), en TypeScript con licencia MIT. Está en «developer preview»: el README avisa de cambios incompatibles y SAFETY.md indica que no ha pasado auditoría de seguridad. Creado en agosto de 2026, ~282k estrellas, sin releases publicadas en GitHub.",
+      "que_hace": "Ofrece un entorno de agente con Web UI local en el que todo, incluidos proveedores de modelos, herramientas y memoria, es un plugin. Ejecuta código y comandos generados por el modelo, carga plugins de terceros (tema `dsh-plugin`) y puede conectarse a servidores MCP.",
+      "como_lo_hace": "Se arranca con `npx @deepseek-ai/dsh web` (Node.js), que sirve la Web UI en `http://127.0.0.1:3080`, o desde el código con pnpm. Está construido sobre el framework de plugins Cordis. El modelo se configura en Settings → Models: clave de DeepSeek, proveedores incluidos como `anthropic`, `openai`, `moonshotai` o `zai`, o una «Custom model API» compatible (pasarela o servidor propio). Las claves se guardan en `$DSH_HOME/.credentials.yaml`. Recomienda ejecutarlo con mínimos privilegios, en una VM o contenedor desechable.",
+      "descripcion_notas": "Es distinto de los modelos DeepSeek: el harness no incluye modelo y puede usar otros proveedores. Vista previa sin auditoría: no lo uses como único control de seguridad ni con credenciales sensibles. Los plugins dsh-android, dsh-ios, dsh-qa y dsh-game-studio se retiraron del catálogo; dsh-noema sigue.",
+      "descripcion_fuentes": [
+        "https://github.com/deepseek-ai/deepseek-harness/blob/main/README.md",
+        "https://github.com/deepseek-ai/deepseek-harness/blob/main/SAFETY.md",
+        "https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/guide/providers.md",
+        "https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/guide/mcp-memory.md"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "deepseek-ai/deepseek-harness",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "sin releases en GitHub",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+      "body": "Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.",
+      "install": {
+        "command": "npx @deepseek-ai/dsh web",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
+      },
+      "alt_refs": [],
+      "combine_refs": [
+        {
+          "id": "dsh-noema",
+          "label": "dsh-noema"
+        },
+        {
+          "id": "engram",
+          "label": "engram"
+        },
+        {
+          "id": "agentmemory",
+          "label": "agentmemory"
+        },
+        {
+          "id": "litellm",
+          "label": "litellm"
+        },
+        {
+          "id": "ollama",
+          "label": "ollama"
+        }
+      ],
+      "areas": [
+        "desarrollo"
+      ],
+      "topics": [
+        "dev-codigo"
+      ],
+      "discovery_text": " Programación, backend y despliegue programacion backend devops despliegue desarrollo de software Agentes y editores para programar"
+    },
+    {
       "id": "gemini-cli",
       "name": "Gemini CLI",
       "cat": 20,
@@ -104825,7 +106103,8 @@
       "alt": [
         "claude-code",
         "codex",
-        "opencode"
+        "opencode",
+        "antigravity-cli"
       ],
       "stack": "Node; acceso empresarial Code Assist o credenciales admitidas; proyecto de prueba",
       "repo_url": "https://github.com/google-gemini/gemini-cli",
@@ -104958,7 +106237,7 @@
       "que_es": "Gemini CLI, agente de terminal de Google. Licencia Apache-2.0. Tiene ~109k estrellas (v0.68.0), pero su README indica que desde el 18 de junio de 2026 está orientado solo a licencias Gemini Code Assist Standard/Enterprise y Code Assist for GitHub.",
       "que_hace": "Ofrece un agente con herramientas de archivos, shell, búsqueda web y MCP en la terminal. El acceso gratuito individual y los planes Google AI Pro/Ultra se trasladaron a Antigravity CLI, y el README advierte que no está optimizado para Gemini 4 ni sirve para hacer benchmarks.",
       "como_lo_hace": "Se ejecuta con `npx @google/gemini-cli` o se instala con `npm install -g @google/gemini-cli` o `brew install gemini-cli` (canales stable, preview y nightly). Requiere una licencia empresarial de Code Assist.",
-      "descripcion_notas": "Alternativas (elige una): claude-code, codex, opencode. Para uso individual, Google remite a Antigravity CLI (no catalogado).",
+      "descripcion_notas": "Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).",
       "descripcion_fuentes": [
         "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
         "https://antigravity.google/product/antigravity-cli"
@@ -104997,6 +106276,10 @@
         {
           "id": "opencode",
           "label": "opencode"
+        },
+        {
+          "id": "antigravity-cli",
+          "label": "antigravity-cli"
         }
       ],
       "combine_refs": [
@@ -109383,6 +110666,250 @@
       "discovery_text": " Agentes de IA, investigación y navegación agentes ia research investigacion scraping mcp Asistentes personales y autónomos Configuración de Claude Code configurar claude code configuracion claude code setup claude code Integraciones,proveedores y paneles Configuración de Codex configurar codex configuracion codex setup codex optimizar codex Integraciones,proveedores y paneles"
     },
     {
+      "id": "openbot",
+      "name": "OpenBot",
+      "cat": 21,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": true,
+      "prov": [
+        "openai",
+        "anthropic",
+        "google",
+        "local"
+      ],
+      "tags": [
+        "agents",
+        "computer-use",
+        "ag-ui",
+        "mcp",
+        "typescript"
+      ],
+      "one": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+      "desc": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común",
+      "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
+      "combines_with": [
+        "copilotkit",
+        "langgraph",
+        "mastra",
+        "crewai",
+        "firecrawl",
+        "composio"
+      ],
+      "alt": [
+        "opendots"
+      ],
+      "stack": "TypeScript, docker-compose.yml, package.json",
+      "repo_url": "https://github.com/CopilotKit/OpenBot",
+      "doc": "human/fichas/openbot.md",
+      "agent_tools": [],
+      "sub": "asistentes",
+      "how": "Un backend en contenedores (PostgreSQL, API y Bots) más CopilotKit Intelligence coordina agentes propios o externos vía AG-UI y herramientas MCP con políticas y auditoría.",
+      "why": "Usos propuestos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común.",
+      "cases": [
+        "Dar a un asistente un navegador propio con aprobaciones",
+        "Conectar un agente existente por AG-UI a un espacio común"
+      ],
+      "gh": "CopilotKit/OpenBot",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. CopilotKit Intelligence es un componente con licencia propia, necesario para ejecutar OpenBot.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Para probarlo solo, descarga la app de escritorio enlazada en el README; incluye el backend en Docker.",
+          "Elige el modelo (OpenAI, Claude, Gemini o un endpoint compatible) y revisa la licencia local de CopilotKit Intelligence.",
+          "Pide una tarea con aprobación activada y revisa la auditoría antes de conectar cuentas reales o un equipo."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/CopilotKit/OpenBot/releases",
+        "source": "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación",
+        "success": "La acción queda pendiente de tu aprobación y aparece en la auditoría",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Dar a un asistente un navegador propio con aprobaciones",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Conectar un agente existente por AG-UI a un espacio común",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+        "source_blob_sha": "cbf56b370cb0e28ae8edd3fa8149b6a6c81a61b4",
+        "previous_category": [
+          21,
+          "asistentes"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Elige OpenAI, Claude, Gemini o un endpoint compatible con OpenAI; el despliegue en Kubernetes de evaluación usa una clave de modelo.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "depends",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Elige OpenAI, Claude, Gemini o un endpoint compatible con OpenAI; el despliegue en Kubernetes de evaluación usa una clave de modelo.",
+        "subscription_note": "Los agentes externos se conectan por AG-UI (el repositorio trae ejemplos para LangGraph, Mastra, CrewAI, Agno, Pydantic AI, ADK y otros); no usa sesiones de Claude Code o Codex.",
+        "local_note": "El README describe una operación totalmente local con OpenBot, Intelligence y un modelo compatible; las apps conectadas siguen usando internet.",
+        "cost_note": "La plantilla es MIT, pero CopilotKit Intelligence tiene licencia aparte: local gratuita para uso personal, prueba para Kubernetes y licencia de producción después.",
+        "hardware_note": "Docker para PostgreSQL, la API y los Bots; Bun para ejecutar desde el código; Kubernetes y Helm para equipos.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/CopilotKit/OpenBot/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "cbf56b370cb0e28ae8edd3fa8149b6a6c81a61b4"
+      },
+      "routes": [
+        "local_model",
+        "api"
+      ],
+      "goals": [
+        "investigar",
+        "mcp"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 12472,
+      "license": "MIT",
+      "homepage": "open.bot",
+      "combina_con": [
+        {
+          "id": "copilotkit",
+          "motivo": "OpenBot está construido sobre CopilotKit y AG-UI; su frontend y la conexión de agentes usan ese stack.",
+          "orden_instalacion": "Usa CopilotKit al extender la interfaz o conectar agentes propios."
+        },
+        {
+          "id": "langgraph",
+          "motivo": "El repositorio incluye un agente de ejemplo LangGraph conectado por AG-UI (`agent-langgraph-agui`).",
+          "orden_instalacion": "Despliega OpenBot y registra el agente LangGraph como agente externo."
+        },
+        {
+          "id": "mastra",
+          "motivo": "Incluye un agente de ejemplo de Mastra (`agent-mastra`) conectable por AG-UI.",
+          "orden_instalacion": "Arranca OpenBot y conecta el agente Mastra."
+        },
+        {
+          "id": "crewai",
+          "motivo": "Incluye un agente de ejemplo de CrewAI (`agent-crewai`) para la misma vía AG-UI.",
+          "orden_instalacion": "Conecta el agente CrewAI después de configurar el modelo."
+        },
+        {
+          "id": "firecrawl",
+          "motivo": "Firecrawl figura entre los proveedores de investigación web que el catálogo MCP de OpenBot incluye de serie.",
+          "orden_instalacion": "Añade la clave de Firecrawl en la configuración de herramientas."
+        },
+        {
+          "id": "composio",
+          "motivo": "Composio actúa como intermediario de cientos de apps detrás de una sola cuenta en el catálogo MCP gobernado.",
+          "orden_instalacion": "Prepara `setup:composio` y concede solo las apps necesarias."
+        }
+      ],
+      "que_es": "Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba para evaluar en Kubernetes y de pago en producción. Versión v1.0.3 (noviembre de 2026), ~12k estrellas.",
+      "que_hace": "Da a cada Bot su propio «ordenador» (navegador, archivos y herramientas) y aplica a cada acción inicio de sesión, permisos por herramienta, políticas CEL, aprobaciones y auditoría. Permite traer agentes propios por AG-UI y herramientas por MCP (Google Drive, Notion, Parallel, Exa, Firecrawl, y cientos de apps vía Composio o Arcade), con clientes de escritorio, web, móvil, Slack y Teams.",
+      "como_lo_hace": "Para una persona, la app de escritorio (Mac/Windows) incluye el backend en Docker. Desde el código usa Bun y Docker (PostgreSQL, API y Bots) y la CLI de CopilotKit para la licencia local. Para equipos se despliega con Helm en Kubernetes (amd64, StorageClass, licencia y clave de modelo). Los modelos pueden ser OpenAI, Claude, Gemini o cualquier endpoint compatible con OpenAI, incluso locales.",
+      "descripcion_notas": "Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad. El agente navegador maneja sesiones reales: mantén los puertos en loopback.",
+      "descripcion_fuentes": [
+        "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+        "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "CopilotKit/OpenBot",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT (plantilla; Intelligence con licencia aparte)",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.0.3 (2026-11-14)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+      "body": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+      "install": {
+        "command": "Seguir la instalación original: https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+        "confidence": "clone",
+        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+      },
+      "alt_refs": [
+        {
+          "id": "opendots",
+          "label": "opendots"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "copilotkit",
+          "label": "copilotkit"
+        },
+        {
+          "id": "langgraph",
+          "label": "langgraph"
+        },
+        {
+          "id": "mastra",
+          "label": "mastra"
+        },
+        {
+          "id": "crewai",
+          "label": "crewai"
+        },
+        {
+          "id": "firecrawl",
+          "label": "firecrawl"
+        },
+        {
+          "id": "composio",
+          "label": "composio"
+        }
+      ],
+      "areas": [
+        "agentes"
+      ],
+      "topics": [
+        "agentes-asistentes"
+      ],
+      "discovery_text": " Agentes de IA, investigación y navegación agentes ia research investigacion scraping mcp Asistentes personales y autónomos"
+    },
+    {
       "id": "openclaw",
       "name": "OpenClaw",
       "cat": 21,
@@ -109643,7 +111170,9 @@
         "composio",
         "servers"
       ],
-      "alt": [],
+      "alt": [
+        "openbot"
+      ],
       "stack": "Node; CopilotKit Intelligence; proveedores y conectores elegidos",
       "repo_url": "https://github.com/CopilotKit/OpenDots",
       "doc": "human/fichas/opendots.md",
@@ -109771,7 +111300,7 @@
       "que_es": "OpenDots, plantilla open source de CopilotKit para agentes persistentes, cada uno con su propio ordenador, en web y móvil. Licencia MIT. Tiene ~6.6k estrellas; CopilotKit ofrece ahora la versión más robusta como skin de OpenBot.",
       "que_hace": "Los «Dots» conversan por texto, llamadas y Slack, navegan, redactan y guardan resultados en páginas editables tras una tarjeta de aprobación humana. Usan herramientas MCP y apps de Composio con aprobación para escrituras.",
       "como_lo_hace": "Se autoaloja, pero las conversaciones requieren CopilotKit Intelligence: servicio alojado, evaluación local con Docker o despliegue autoalojado con licencia. La telemetría del SDK está activa.",
-      "descripcion_notas": "Sin alternativas declaradas. No es autónomo del todo: depende de un servicio de CopilotKit.",
+      "descripcion_notas": "Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.",
       "descripcion_fuentes": [
         "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
       ],
@@ -109796,7 +111325,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "openbot",
+          "label": "openbot"
+        }
+      ],
       "combine_refs": [
         {
           "id": "copilotkit",
@@ -121254,6 +122788,219 @@
       "discovery_text": " IA local, modelos y entrenamiento ia local modelos locales offline modelos abiertos Entrenamiento y ajuste fino Configuración de Claude Code configurar claude code configuracion claude code setup claude code Integraciones,proveedores y paneles Configuración de Codex configurar codex configuracion codex setup codex optimizar codex Integraciones,proveedores y paneles"
     },
     {
+      "id": "apache-iceberg",
+      "name": "Apache Iceberg",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "lakehouse",
+        "table-format",
+        "java"
+      ],
+      "one": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+      "desc": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir una tabla analítica entre varios motores; Consultar un snapshot anterior tras un cambio de esquema",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "jupyterlab"
+      ],
+      "alt": [
+        "delta-lake",
+        "hudi"
+      ],
+      "stack": "Java, build.gradle",
+      "repo_url": "https://github.com/apache/iceberg",
+      "doc": "human/fichas/apache-iceberg.md",
+      "agent_tools": [],
+      "sub": "datos",
+      "how": "Define una especificación de metadatos (snapshots, esquemas y particiones) sobre archivos Parquet, ORC o Avro que leen motores como Spark, Flink o Trino.",
+      "why": "Usos propuestos: Compartir una tabla analítica entre varios motores; Consultar un snapshot anterior tras un cambio de esquema.",
+      "cases": [
+        "Compartir una tabla analítica entre varios motores",
+        "Consultar un snapshot anterior tras un cambio de esquema"
+      ],
+      "gh": "apache/iceberg",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Decide el motor (Spark, Flink, Trino, DuckDB) o la biblioteca (PyIceberg, iceberg-rust) con que vas a leer y escribir tablas.",
+          "Configura un catálogo y un almacenamiento de prueba según la documentación oficial.",
+          "Crea una tabla pequeña, haz un cambio de esquema y consulta un snapshot anterior."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://py.iceberg.apache.org/",
+        "source": "https://github.com/apache/iceberg/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea una tabla Iceberg pequeña con PyIceberg, añade una columna y consulta el snapshot previo",
+        "success": "El snapshot anterior conserva el esquema original",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Compartir una tabla analítica entre varios motores",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Consultar un snapshot anterior tras un cambio de esquema",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/apache/iceberg/blob/main/README.md",
+        "source_blob_sha": "7de24c77373acec815a47171f540b46afa7014af",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/apache/iceberg/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7de24c77373acec815a47171f540b46afa7014af"
+      },
+      "routes": [
+        "no_api"
+      ],
+      "goals": [
+        "datos"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 9438,
+      "license": "Apache-2.0",
+      "homepage": "https://iceberg.apache.org/",
+      "combina_con": [
+        {
+          "id": "duckdb",
+          "motivo": "DuckDB lee tablas Iceberg con su extensión oficial `iceberg`.",
+          "orden_instalacion": "Instala DuckDB, carga la extensión y consulta una tabla de prueba."
+        },
+        {
+          "id": "polars",
+          "motivo": "Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg).",
+          "orden_instalacion": "Instala Polars con PyIceberg y apunta al catálogo."
+        },
+        {
+          "id": "jupyterlab",
+          "motivo": "Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)",
+          "orden_instalacion": "Instala JupyterLab en el mismo entorno que PyIceberg."
+        }
+      ],
+      "que_es": "Formato abierto de tablas analíticas, proyecto de primer nivel de la Apache Software Foundation, con licencia Apache-2.0. Este repositorio contiene la biblioteca Java de referencia; hay implementaciones oficiales en Python (PyIceberg), Go, Rust y C++. Versión 1.12.0 (septiembre de 2026), en desarrollo activo.",
+      "que_hace": "Añade a archivos de datos en almacenamiento de objetos la fiabilidad de una tabla SQL: transacciones, snapshots y viaje en el tiempo, evolución de esquema y particiones sin reescribir datos. Así varios motores (Spark, Trino, Flink, Presto, Hive, Impala) pueden trabajar a la vez sobre las mismas tablas.",
+      "como_lo_hace": "Mantiene una especificación de metadatos estable (archivos de metadatos, manifiestos y snapshots) sobre datos Parquet, ORC o Avro, y un catálogo (REST, Hive Metastore, Glue…) que apunta a la versión vigente. Se compila con Gradle y Java 17 o 21, y los motores usan los jars `iceberg-spark` o `iceberg-flink` de runtime. Para Python se usa PyIceberg.",
+      "descripcion_notas": "Alternativas (elige una): delta-lake, hudi. Para consultas locales pequeñas suele bastar Parquet con DuckDB; Iceberg aporta valor con varios motores o escritores concurrentes.",
+      "descripcion_fuentes": [
+        "https://github.com/apache/iceberg/blob/main/README.md",
+        "https://iceberg.apache.org/docs/latest/",
+        "https://duckdb.org/docs/stable/core_extensions/iceberg/overview",
+        "https://docs.pola.rs/api/python/stable/reference/api/polars.scan_iceberg.html"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "apache/iceberg",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "Java",
+        "latest_release": "apache-iceberg-1.12.0 (2026-09-30)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+      "body": "Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+      "install": {
+        "command": "Seguir la instalación original: https://github.com/apache/iceberg/blob/main/README.md",
+        "confidence": "clone",
+        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+      },
+      "alt_refs": [
+        {
+          "id": "delta-lake",
+          "label": "delta-lake"
+        },
+        {
+          "id": "hudi",
+          "label": "hudi"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "duckdb",
+          "label": "duckdb"
+        },
+        {
+          "id": "polars",
+          "label": "polars"
+        },
+        {
+          "id": "jupyterlab",
+          "label": "jupyterlab"
+        }
+      ],
+      "areas": [
+        "datos"
+      ],
+      "topics": [
+        "datos-procesar"
+      ],
+      "discovery_text": " Datos, dashboards y analítica datos analitica dashboards business intelligence Consulta y procesamiento de datos"
+    },
+    {
       "id": "awesome-bigdata",
       "name": "awesome-bigdata",
       "cat": 25,
@@ -121652,6 +123399,220 @@
       "discovery_text": " Datos, dashboards y analítica datos analitica dashboards business intelligence Notebooks y aplicaciones de datos"
     },
     {
+      "id": "delta-lake",
+      "name": "Delta Lake",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "lakehouse",
+        "table-format",
+        "scala"
+      ],
+      "one": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+      "desc": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "jupyterlab"
+      ],
+      "alt": [
+        "apache-iceberg",
+        "hudi"
+      ],
+      "stack": "Scala, Dockerfile, build.sbt",
+      "repo_url": "https://github.com/delta-io/delta",
+      "doc": "human/fichas/delta-lake.md",
+      "agent_tools": [],
+      "sub": "datos",
+      "how": "Mantiene un registro de transacciones junto a archivos Parquet para dar ACID, versiones y viaje en el tiempo a motores como Spark, Flink o Trino.",
+      "why": "Usos propuestos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla.",
+      "cases": [
+        "Añadir transacciones y versiones a archivos Parquet",
+        "Recuperar una versión anterior de una tabla"
+      ],
+      "gh": "delta-io/delta",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Sigue la guía rápida oficial con Spark (Scala, Java o Python) o usa delta-rs si no quieres JVM.",
+          "Escribe una tabla de prueba en un directorio local y lee su historial.",
+          "Prueba una actualización y una consulta de una versión anterior antes de usar almacenamiento en la nube."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://docs.delta.io/latest/quick-start.html",
+        "source": "https://github.com/delta-io/delta/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Escribe una tabla Delta local, actualiza unas filas y lee la versión 0",
+        "success": "La versión 0 muestra los datos originales",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Añadir transacciones y versiones a archivos Parquet",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Recuperar una versión anterior de una tabla",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/delta-io/delta/blob/master/README.md",
+        "source_blob_sha": "5a3c8ceaa500e9c1fd5b205660257915e454cf06",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/delta-io/delta/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5a3c8ceaa500e9c1fd5b205660257915e454cf06"
+      },
+      "routes": [
+        "no_api"
+      ],
+      "goals": [
+        "datos"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 9082,
+      "license": "Apache-2.0",
+      "homepage": "https://delta.io",
+      "combina_con": [
+        {
+          "id": "duckdb",
+          "motivo": "DuckDB lee tablas Delta con su extensión oficial `delta`.",
+          "orden_instalacion": "Instala DuckDB y carga la extensión `delta`."
+        },
+        {
+          "id": "polars",
+          "motivo": "Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake (delta-rs).",
+          "orden_instalacion": "Instala Polars con el paquete `deltalake`."
+        },
+        {
+          "id": "jupyterlab",
+          "motivo": "Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)",
+          "orden_instalacion": "Instala JupyterLab en el entorno con PySpark o deltalake."
+        }
+      ],
+      "que_es": "Framework de almacenamiento abierto Delta Lake (organización delta-io), en Scala con licencia Apache-2.0. Este repositorio contiene el conector de Spark, Delta Kernel, conectores y el protocolo; delta-rs es la implementación nativa en Rust/Python. Versión v4.4.1 (octubre de 2026), activo.",
+      "que_hace": "Da transacciones ACID, serializabilidad, versiones y viaje en el tiempo a tablas guardadas como Parquet, para construir un «lakehouse» que leen y escriben Spark, Flink, Trino, PrestoDB y Hive. UniForm permite además leer tablas Delta como Iceberg.",
+      "como_lo_hace": "Registra cada cambio en un log de transacciones (`_delta_log`) definido en PROTOCOL.md. Requiere un almacenamiento con visibilidad atómica, exclusión mutua y listados consistentes. Se usa desde Spark con `delta-spark` (Scala, Java o Python) siguiendo la guía rápida, desde Delta Standalone o Kernel en la JVM, o sin JVM con delta-rs.",
+      "descripcion_notas": "Alternativas (elige una): apache-iceberg, hudi. Delta UniForm acerca ambos formatos: Delta puede publicar metadatos Iceberg.",
+      "descripcion_fuentes": [
+        "https://github.com/delta-io/delta/blob/master/README.md",
+        "https://docs.delta.io/latest/quick-start.html",
+        "https://docs.delta.io/latest/delta-uniform.html",
+        "https://duckdb.org/docs/stable/core_extensions/delta",
+        "https://docs.pola.rs/api/python/stable/reference/api/polars.scan_delta.html"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "delta-io/delta",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "Scala",
+        "latest_release": "v4.4.1 (2026-10-05)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+      "body": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+      "install": {
+        "command": "Seguir la instalación original: https://github.com/delta-io/delta/blob/master/README.md",
+        "confidence": "clone",
+        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+      },
+      "alt_refs": [
+        {
+          "id": "apache-iceberg",
+          "label": "apache-iceberg"
+        },
+        {
+          "id": "hudi",
+          "label": "hudi"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "duckdb",
+          "label": "duckdb"
+        },
+        {
+          "id": "polars",
+          "label": "polars"
+        },
+        {
+          "id": "jupyterlab",
+          "label": "jupyterlab"
+        }
+      ],
+      "areas": [
+        "datos"
+      ],
+      "topics": [
+        "datos-procesar"
+      ],
+      "discovery_text": " Datos, dashboards y analítica datos analitica dashboards business intelligence Consulta y procesamiento de datos"
+    },
+    {
       "id": "duckdb",
       "name": "DuckDB",
       "cat": 25,
@@ -121672,7 +123633,9 @@
       "combines_with": [
         "marimo",
         "superset",
-        "timesfm"
+        "timesfm",
+        "apache-iceberg",
+        "delta-lake"
       ],
       "alt": [
         "polars"
@@ -121798,6 +123761,16 @@
           "id": "timesfm",
           "motivo": "Preparar series temporales para pronóstico. (combinación por arquitectura)",
           "orden_instalacion": "Extrae las series con SQL."
+        },
+        {
+          "id": "apache-iceberg",
+          "motivo": "DuckDB lee tablas Apache Iceberg con su extensión oficial `iceberg`.",
+          "orden_instalacion": "Carga la extensión y consulta una tabla de prueba."
+        },
+        {
+          "id": "delta-lake",
+          "motivo": "DuckDB lee tablas Delta Lake con su extensión oficial `delta`.",
+          "orden_instalacion": "Carga la extensión `delta` y apunta al directorio de la tabla."
         }
       ],
       "que_es": "DuckDB, base de datos analítica en proceso (in-process), de la DuckDB Foundation y DuckDB Labs. Licencia MIT. Es muy madura (~43k estrellas, v2.0.0).",
@@ -121848,6 +123821,14 @@
         {
           "id": "timesfm",
           "label": "timesfm"
+        },
+        {
+          "id": "apache-iceberg",
+          "label": "apache-iceberg"
+        },
+        {
+          "id": "delta-lake",
+          "label": "delta-lake"
         }
       ],
       "areas": [
@@ -122305,7 +124286,10 @@
         "superset",
         "awesome-bigdata"
       ],
-      "alt": [],
+      "alt": [
+        "apache-iceberg",
+        "delta-lake"
+      ],
       "stack": "Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños",
       "repo_url": "https://github.com/apache/hudi",
       "doc": "human/fichas/hudi.md",
@@ -122433,7 +124417,7 @@
       "que_es": "Apache Hudi, plataforma de data lakehouse abierta sobre un formato de tabla de alto rendimiento, de la Apache Software Foundation. Licencia Apache-2.0. Es madura (~6.4k estrellas, release-1.2.1).",
       "que_hace": "Ingiere, indexa, almacena, sirve y transforma datos en almacenamiento cloud con upserts, borrados, consultas incrementales y time travel. Sus servicios de tabla (compactación, clustering, limpieza) son automáticos.",
       "como_lo_hace": "Se integra con Apache Spark y Flink (herramientas de ingestión integradas) y lo consultan motores como Trino, Presto o Hive. Se compila con Maven (`mvn clean package -Dspark3.5 -Dflink2.2`) o se usan los paquetes publicados.",
-      "descripcion_notas": "Sin alternativas declaradas; compite con Iceberg y Delta Lake (no catalogados).",
+      "descripcion_notas": "Alternativas (elige una): apache-iceberg, delta-lake.",
       "descripcion_fuentes": [
         "https://github.com/apache/hudi/blob/master/README.md"
       ],
@@ -122459,7 +124443,16 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "apache-iceberg",
+          "label": "apache-iceberg"
+        },
+        {
+          "id": "delta-lake",
+          "label": "delta-lake"
+        }
+      ],
       "combine_refs": [
         {
           "id": "duckdb",
@@ -122472,6 +124465,222 @@
         {
           "id": "awesome-bigdata",
           "label": "awesome-bigdata"
+        }
+      ],
+      "areas": [
+        "datos"
+      ],
+      "topics": [
+        "datos-procesar"
+      ],
+      "discovery_text": " Datos, dashboards y analítica datos analitica dashboards business intelligence Consulta y procesamiento de datos"
+    },
+    {
+      "id": "jupyterlab",
+      "name": "JupyterLab",
+      "cat": 25,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "notebooks",
+        "data",
+        "python",
+        "typescript"
+      ],
+      "one": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+      "desc": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Analizar datos de muestra en un notebook; Documentar un experimento con código y resultados",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "pytorch",
+        "tensorflow",
+        "duckdb",
+        "polars"
+      ],
+      "alt": [
+        "marimo"
+      ],
+      "stack": "TypeScript, package.json, pyproject.toml",
+      "repo_url": "https://github.com/jupyterlab/jupyterlab",
+      "doc": "human/fichas/jupyterlab.md",
+      "agent_tools": [],
+      "sub": "datos",
+      "how": "Un servidor Jupyter local sirve la interfaz web; los kernels (Python u otros lenguajes) ejecutan las celdas de cada notebook.",
+      "why": "Usos propuestos: Analizar datos de muestra en un notebook; Documentar un experimento con código y resultados.",
+      "cases": [
+        "Analizar datos de muestra en un notebook",
+        "Documentar un experimento con código y resultados"
+      ],
+      "gh": "jupyterlab/jupyterlab",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Crea un entorno de Python e instala JupyterLab con pip, conda o mamba.",
+          "Ejecuta `jupyter lab` en una carpeta de prueba y crea un notebook.",
+          "Ejecuta unas celdas y guarda el notebook antes de instalar extensiones."
+        ],
+        "command": "pip install jupyterlab",
+        "command_status": "documented",
+        "entry_url": "https://jupyterlab.readthedocs.io/",
+        "source": "https://github.com/jupyterlab/jupyterlab/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea un notebook, carga un CSV ficticio y dibuja un gráfico simple",
+        "success": "El notebook guarda código, tabla y gráfico al reabrirlo",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Analizar datos de muestra en un notebook",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Documentar un experimento con código y resultados",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/jupyterlab/jupyterlab/blob/main/README.md",
+        "source_blob_sha": "1b6521c29c5e3b96fb374450cde558c2e6387a4f",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "Sin coste de modelo. Las extensiones de IA (p. ej. Jupyter AI) se configuran aparte con sus proveedores.",
+        "hardware_note": "Python con pip, conda o mamba; los kernels y extensiones añaden sus propias dependencias.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/jupyterlab/jupyterlab/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1b6521c29c5e3b96fb374450cde558c2e6387a4f"
+      },
+      "routes": [
+        "no_api"
+      ],
+      "goals": [
+        "datos"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 15405,
+      "license": "BSD-3-Clause",
+      "homepage": "https://jupyterlab.readthedocs.io/",
+      "combina_con": [
+        {
+          "id": "pytorch",
+          "motivo": "Entrenar y depurar modelos de forma interactiva en notebooks. (combinación por arquitectura)",
+          "orden_instalacion": "Instala PyTorch en el entorno del kernel."
+        },
+        {
+          "id": "tensorflow",
+          "motivo": "Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura)",
+          "orden_instalacion": "Instala TensorFlow en el entorno del kernel."
+        },
+        {
+          "id": "duckdb",
+          "motivo": "Consultas SQL sobre CSV y Parquet dentro del notebook. (combinación por arquitectura)",
+          "orden_instalacion": "Añade el paquete `duckdb` al kernel."
+        },
+        {
+          "id": "polars",
+          "motivo": "DataFrames rápidos para análisis interactivo. (combinación por arquitectura)",
+          "orden_instalacion": "Añade `polars` al kernel."
+        }
+      ],
+      "que_es": "Interfaz de nueva generación de Project Jupyter (organización jupyterlab), en TypeScript y Python con licencia BSD-3-Clause. Es el repositorio canónico de la experiencia de notebook de Jupyter; la rama 3 dejó de mantenerse en 2024. Versión v4.6.6 (noviembre de 2026), ~15k estrellas.",
+      "que_hace": "Ofrece en el navegador notebooks, consolas, terminal, editor de texto, explorador de archivos y salidas enriquecidas en paneles reorganizables. Se amplía con extensiones distribuidas por PyPI, conda o npm.",
+      "como_lo_hace": "Se instala con `pip install jupyterlab`, conda o mamba (conda-forge) y se abre con `jupyter lab`, que arranca un servidor Jupyter local. Los kernels (ipykernel para Python u otros lenguajes) ejecutan el código. Las extensiones precompiladas no requieren compilar; las de código fuente sí.",
+      "descripcion_notas": "Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.",
+      "descripcion_fuentes": [
+        "https://github.com/jupyterlab/jupyterlab/blob/main/README.md",
+        "https://jupyterlab.readthedocs.io/en/stable/"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "jupyterlab/jupyterlab",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "BSD-3-Clause",
+        "primary_language": "TypeScript",
+        "latest_release": "v4.6.6 (2026-11-06)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+      "body": "Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+      "install": {
+        "command": "pip install jupyterlab",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
+      },
+      "alt_refs": [
+        {
+          "id": "marimo",
+          "label": "marimo"
+        }
+      ],
+      "combine_refs": [
+        {
+          "id": "pytorch",
+          "label": "pytorch"
+        },
+        {
+          "id": "tensorflow",
+          "label": "tensorflow"
+        },
+        {
+          "id": "duckdb",
+          "label": "duckdb"
+        },
+        {
+          "id": "polars",
+          "label": "polars"
         }
       ],
       "areas": [
@@ -122505,7 +124714,9 @@
         "polars",
         "ollama"
       ],
-      "alt": [],
+      "alt": [
+        "jupyterlab"
+      ],
       "stack": "Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI",
       "repo_url": "https://github.com/marimo-team/marimo",
       "doc": "human/fichas/marimo.md",
@@ -122640,7 +124851,7 @@
       "que_es": "marimo, notebook reactivo de Python que se guarda como script `.py`, de marimo-team. Licencia Apache-2.0. Es maduro y activo (~24k estrellas, 0.25.2).",
       "que_hace": "Al ejecutar una celda se actualizan automáticamente las dependientes, sin estado oculto. Los notebooks se versionan en Git, se ejecutan como scripts y se publican como apps web o diapositivas; incluye celdas SQL, elementos de UI interactivos y asistencia con IA.",
       "como_lo_hace": "Se instala con `pip install marimo` o conda (`marimo tutorial intro` para empezar). Puede instalar paquetes al importarlos, guardar dependencias inline en el archivo y usarse desde una extensión de VS Code o en WebAssembly.",
-      "descripcion_notas": "Sin alternativas declaradas; compite con Jupyter (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): jupyterlab.",
       "descripcion_fuentes": [
         "https://github.com/marimo-team/marimo/blob/main/README.md",
         "https://docs.marimo.io/guides/apps.html"
@@ -122667,7 +124878,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "jupyterlab",
+          "label": "jupyterlab"
+        }
+      ],
       "combine_refs": [
         {
           "id": "duckdb",
@@ -122716,7 +124932,9 @@
       "combines_with": [
         "marimo",
         "timesfm",
-        "streamlit"
+        "streamlit",
+        "apache-iceberg",
+        "delta-lake"
       ],
       "alt": [
         "duckdb"
@@ -122844,6 +125062,16 @@
           "id": "streamlit",
           "motivo": "Apps de datos sobre DataFrames de Polars. (combinación por arquitectura)",
           "orden_instalacion": "Muestra el DataFrame en Streamlit."
+        },
+        {
+          "id": "apache-iceberg",
+          "motivo": "Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg).",
+          "orden_instalacion": "Instala PyIceberg junto a Polars."
+        },
+        {
+          "id": "delta-lake",
+          "motivo": "Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake.",
+          "orden_instalacion": "Instala el paquete `deltalake` junto a Polars."
         }
       ],
       "que_es": "Polars, motor de consultas y DataFrames escrito en Rust con API de Python (y Rust, Node, R), de pola-rs. Licencia MIT. Es muy madura (~40k estrellas, py-2.1.0).",
@@ -122894,6 +125122,14 @@
         {
           "id": "streamlit",
           "label": "streamlit"
+        },
+        {
+          "id": "apache-iceberg",
+          "label": "apache-iceberg"
+        },
+        {
+          "id": "delta-lake",
+          "label": "delta-lake"
         }
       ],
       "areas": [
@@ -139524,6 +141760,229 @@
       "discovery_text": " Producción audiovisual produccion audiovisual multimedia contenido audiovisual Voz: narración, síntesis y clonación"
     },
     {
+      "id": "elevenlabs-python",
+      "name": "ElevenLabs (SDK de Python)",
+      "cat": 29,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [
+        "elevenlabs"
+      ],
+      "tags": [
+        "tts",
+        "voice",
+        "api",
+        "python"
+      ],
+      "one": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+      "desc": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Generar una locución para un video; Prototipar un agente de voz conectado a la API",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "openmontage",
+        "pipecat",
+        "livekit-agents",
+        "video-use",
+        "remotion-superpowers"
+      ],
+      "alt": [],
+      "stack": "Python, pyproject.toml, requirements.txt",
+      "repo_url": "https://github.com/elevenlabs/elevenlabs-python",
+      "doc": "human/fichas/elevenlabs-python.md",
+      "agent_tools": [],
+      "sub": "tts",
+      "how": "Cliente HTTP generado con Fern que llama a la API de ElevenLabs con tu clave; el procesamiento ocurre en sus servidores.",
+      "why": "Usos propuestos: Generar una locución para un video; Prototipar un agente de voz conectado a la API.",
+      "cases": [
+        "Generar una locución para un video",
+        "Prototipar un agente de voz conectado a la API"
+      ],
+      "gh": "elevenlabs/elevenlabs-python",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Servicio de pago en la nube; clonar voces requiere consentimiento de la persona.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Crea una clave en ElevenLabs y guárdala como ELEVENLABS_API_KEY fuera del repositorio.",
+          "Instala el paquete y convierte una frase corta con el ejemplo del README.",
+          "Revisa el consumo en tu cuenta antes de generar audio largo o clonar voces (con consentimiento)."
+        ],
+        "command": "pip install elevenlabs",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Convierte una frase corta a voz con una voz predefinida",
+        "success": "Obtienes un MP3 reproducible y el consumo aparece en tu cuenta",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Generar una locución para un video",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Prototipar un agente de voz conectado a la API",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md",
+        "source_blob_sha": "958f4657ae264f480bd7ae3372e5e08c43101711",
+        "previous_category": [
+          29,
+          "tts"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Toda llamada usa la API de ElevenLabs con tu ELEVENLABS_API_KEY.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "usage_based",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "Toda llamada usa la API de ElevenLabs con tu ELEVENLABS_API_KEY.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "No ejecuta modelos localmente: es un cliente de un servicio en la nube.",
+        "cost_note": "Consumo por caracteres, minutos o créditos según el plan de ElevenLabs; el SDK es gratuito.",
+        "hardware_note": "Python 3.8 o superior y conexión a internet.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "958f4657ae264f480bd7ae3372e5e08c43101711"
+      },
+      "routes": [
+        "api"
+      ],
+      "goals": [
+        "narrar"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 3185,
+      "license": "MIT",
+      "homepage": "https://elevenlabs.io/docs/api-reference/overview",
+      "combina_con": [
+        {
+          "id": "openmontage",
+          "motivo": "OpenMontage usa ElevenLabs para TTS premium, música y efectos de sonido con `ELEVENLABS_API_KEY`; su código importa este SDK.",
+          "orden_instalacion": "Crea la clave, añádela al `.env` de OpenMontage y genera una pista corta."
+        },
+        {
+          "id": "pipecat",
+          "motivo": "Pipecat incluye servicios de ElevenLabs para TTS y STT en agentes de voz en tiempo real.",
+          "orden_instalacion": "Instala el extra de ElevenLabs de Pipecat y configura la clave."
+        },
+        {
+          "id": "livekit-agents",
+          "motivo": "LiveKit Agents documenta un plugin de TTS de ElevenLabs.",
+          "orden_instalacion": "Instala el plugin de ElevenLabs y define la clave en el entorno del agente."
+        },
+        {
+          "id": "video-use",
+          "motivo": "video-use pide una clave de ElevenLabs para la voz; el SDK sirve para elegir y probar voces o generar pistas fuera del flujo. (combinación por arquitectura)",
+          "orden_instalacion": "Usa la misma clave en ambos y prueba la voz antes de editar."
+        },
+        {
+          "id": "remotion-superpowers",
+          "motivo": "El plugin usa las skills oficiales de ElevenLabs para locución, efectos y música. (combinación por arquitectura)",
+          "orden_instalacion": "Configura la clave de ElevenLabs al instalar el plugin."
+        }
+      ],
+      "que_es": "SDK oficial de Python para la API de ElevenLabs (organización elevenlabs), generado con Fern y con licencia MIT. El cliente es libre, pero el servicio es de pago por uso. Versión v2.78.0 (noviembre de 2026), activo. El servidor MCP oficial (elevenlabs/elevenlabs-mcp) está archivado.",
+      "que_hace": "Da acceso desde Python a texto a voz (Eleven v4, v4 Turbo, Multilingual v2, Flash v2.5), clonación de voz, transcripción con Scribe v2 (también en tiempo real), música con Eleven Music, gestión de voces y agentes conversacionales en tiempo real (ElevenAgents).",
+      "como_lo_hace": "Se instala con `pip install elevenlabs` (Python 3.8 o superior) y se autentica con la clave `ELEVENLABS_API_KEY`. Llama a la API de ElevenLabs con un cliente síncrono o asíncrono (`AsyncElevenLabs`) y admite streaming de audio. Toda la inferencia ocurre en los servidores de ElevenLabs.",
+      "descripcion_notas": "La clonación de voz exige el consentimiento de la persona. Vigila el consumo de créditos: el SDK no limita el gasto.",
+      "descripcion_fuentes": [
+        "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md",
+        "https://elevenlabs.io/docs/api-reference/introduction",
+        "https://docs.pipecat.ai/server/services/tts/elevenlabs",
+        "https://docs.livekit.io/agents/integrations/tts/elevenlabs/"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "elevenlabs/elevenlabs-python",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v2.78.0 (2026-11-12)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+      "body": "SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz.",
+      "install": {
+        "command": "pip install elevenlabs",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
+      },
+      "alt_refs": [],
+      "combine_refs": [
+        {
+          "id": "openmontage",
+          "label": "openmontage"
+        },
+        {
+          "id": "pipecat",
+          "label": "pipecat"
+        },
+        {
+          "id": "livekit-agents",
+          "label": "livekit-agents"
+        },
+        {
+          "id": "video-use",
+          "label": "video-use"
+        },
+        {
+          "id": "remotion-superpowers",
+          "label": "remotion-superpowers"
+        }
+      ],
+      "areas": [
+        "audiovisual"
+      ],
+      "topics": [
+        "av-voz"
+      ],
+      "discovery_text": " Producción audiovisual produccion audiovisual multimedia contenido audiovisual Voz: narración, síntesis y clonación"
+    },
+    {
       "id": "faster-whisper",
       "name": "faster-whisper",
       "cat": 29,
@@ -140621,7 +143080,8 @@
       "combines_with": [
         "kokoro",
         "ollama",
-        "whisper-cpp"
+        "whisper-cpp",
+        "elevenlabs-python"
       ],
       "alt": [
         "pipecat",
@@ -140756,6 +143216,11 @@
           "id": "whisper-cpp",
           "motivo": "STT local. (combinación por arquitectura)",
           "orden_instalacion": "Expón el servidor y úsalo como STT."
+        },
+        {
+          "id": "elevenlabs-python",
+          "motivo": "LiveKit Agents documenta un plugin de TTS de ElevenLabs.",
+          "orden_instalacion": "Instala el plugin y define la clave de ElevenLabs."
         }
       ],
       "que_es": "LiveKit Agents, framework para agentes de voz y vídeo en tiempo real sobre la infraestructura WebRTC de LiveKit. Licencia Apache-2.0; sus modelos de detección de turno usan la «LiveKit Model License». Es activo (~15k estrellas, 1.8.12).",
@@ -140809,6 +143274,10 @@
         {
           "id": "whisper-cpp",
           "label": "whisper-cpp"
+        },
+        {
+          "id": "elevenlabs-python",
+          "label": "elevenlabs-python"
         }
       ],
       "areas": [
@@ -141278,7 +143747,8 @@
         "kokoro",
         "whisper-cpp",
         "ollama",
-        "nemo"
+        "nemo",
+        "elevenlabs-python"
       ],
       "alt": [
         "livekit-agents",
@@ -141415,6 +143885,11 @@
           "id": "nemo",
           "motivo": "Servicios NVIDIA integrados.",
           "orden_instalacion": "Configura el servicio NVIDIA."
+        },
+        {
+          "id": "elevenlabs-python",
+          "motivo": "Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK.",
+          "orden_instalacion": "Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs."
         }
       ],
       "que_es": "Pipecat, framework open source en Python para agentes de voz y multimodales en tiempo real, creado por Daily. Licencia BSD-2-Clause. Es maduro y muy activo (~17k estrellas, v1.16.0).",
@@ -141473,6 +143948,10 @@
         {
           "id": "nemo",
           "label": "nemo"
+        },
+        {
+          "id": "elevenlabs-python",
+          "label": "elevenlabs-python"
         }
       ],
       "areas": [
@@ -141484,6 +143963,219 @@
         "claude-skills"
       ],
       "discovery_text": " Producción audiovisual produccion audiovisual multimedia contenido audiovisual Voz: agentes en tiempo real Configuración de Claude Code configurar claude code configuracion claude code setup claude code Skills, plugins y métodos"
+    },
+    {
+      "id": "pyannote-audio",
+      "name": "pyannote.audio",
+      "cat": 29,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [
+        "local"
+      ],
+      "tags": [
+        "audio",
+        "diarization",
+        "pytorch",
+        "python"
+      ],
+      "one": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+      "desc": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Separar por hablante la grabación de una reunión; Añadir hablantes a una transcripción",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "whisperx",
+        "pytorch",
+        "faster-whisper",
+        "ffmpeg"
+      ],
+      "alt": [],
+      "stack": "Jupyter Notebook, pyproject.toml",
+      "repo_url": "https://github.com/pyannote/pyannote-audio",
+      "doc": "human/fichas/pyannote-audio.md",
+      "agent_tools": [],
+      "sub": "audio",
+      "how": "Carga pipelines de PyTorch desde Hugging Face (con token y condiciones aceptadas) y devuelve segmentos etiquetados por hablante.",
+      "why": "Usos propuestos: Separar por hablante la grabación de una reunión; Añadir hablantes a una transcripción.",
+      "cases": [
+        "Separar por hablante la grabación de una reunión",
+        "Añadir hablantes a una transcripción"
+      ],
+      "gh": "pyannote/pyannote-audio",
+      "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Instala ffmpeg y el paquete; acepta las condiciones de pyannote/speaker-diarization-community-1 en Hugging Face y crea un token.",
+          "Ejecuta el pipeline sobre un audio corto, en GPU si la tienes.",
+          "Revisa los segmentos por hablante antes de combinarlos con una transcripción."
+        ],
+        "command": "pip install pyannote.audio",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Ejecuta community-1 sobre un audio corto con dos voces de prueba",
+        "success": "Los segmentos alternan entre dos hablantes con marcas de tiempo coherentes",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Separar por hablante la grabación de una reunión",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Añadir hablantes a una transcripción",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+        "source_blob_sha": "aacefa836c97e5d2e4e512edfa83f13fbce93f3f",
+        "previous_category": [
+          29,
+          "audio"
+        ],
+        "category_verdict": "confirmed",
+        "note": "community-1 corre localmente con un token de Hugging Face; precision-2 corre en los servidores de pyannoteAI con su propia clave.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "community-1 corre localmente con un token de Hugging Face; precision-2 corre en los servidores de pyannoteAI con su propia clave.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Los pipelines abiertos se ejecutan localmente en CPU o GPU tras aceptar sus condiciones en Hugging Face.",
+        "cost_note": "La ruta local no paga por uso; pyannoteAI ofrece créditos gratuitos y después cobra. La telemetría es opcional (PYANNOTE_METRICS_ENABLED).",
+        "hardware_note": "Python 3.11 o superior y ffmpeg; GPU recomendable para audio largo.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/pyannote/pyannote-audio/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "aacefa836c97e5d2e4e512edfa83f13fbce93f3f"
+      },
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "goals": [
+        "voz"
+      ],
+      "added_at": "2026-11-16",
+      "status": "",
+      "pick": false,
+      "stars": 10803,
+      "license": "MIT",
+      "homepage": "https://www.pyannote.ai",
+      "combina_con": [
+        {
+          "id": "whisperx",
+          "motivo": "WhisperX usa pyannote-audio para la diarización y añade etiquetas de hablante a la transcripción.",
+          "orden_instalacion": "Acepta las condiciones de pyannote en Hugging Face y pasa el token a WhisperX."
+        },
+        {
+          "id": "pytorch",
+          "motivo": "pyannote.audio está construido sobre PyTorch; la elección de CUDA o CPU sigue la instalación de PyTorch.",
+          "orden_instalacion": "Instala primero la variante de PyTorch adecuada a tu GPU."
+        },
+        {
+          "id": "faster-whisper",
+          "motivo": "Transcribir con faster-whisper y asignar después los segmentos a los hablantes de pyannote. (combinación por arquitectura)",
+          "orden_instalacion": "Ejecuta la diarización y la transcripción por separado y cruza las marcas de tiempo."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Requisito documentado: torchcodec usa ffmpeg para decodificar el audio.",
+          "orden_instalacion": "Instala ffmpeg antes del paquete."
+        }
+      ],
+      "que_es": "Kit de diarización de hablantes en Python sobre PyTorch (organización pyannote; pyannoteAI ofrece el servicio premium). Licencia MIT para el código; los modelos se publican en Hugging Face con condiciones propias. Versión 4.0.7 (junio de 2026), ~11k estrellas.",
+      "que_hace": "Determina quién habla y cuándo: detección de actividad de voz, cambio de hablante, habla solapada y embeddings de hablante. Ofrece el pipeline abierto `community-1` (mejor que el 3.1 en conteo y asignación) y acceso integrado al pipeline premium `precision-2` de pyannoteAI.",
+      "como_lo_hace": "Se instala con `uv add pyannote.audio` o `pip install pyannote.audio` (Python 3.11 o superior) y necesita ffmpeg para decodificar audio (torchcodec). Para `community-1` hay que aceptar las condiciones del modelo en Hugging Face y usar un token; se ejecuta en local, en CPU o GPU. `precision-2` se ejecuta en servidores de pyannoteAI con su clave de API. La telemetría es opcional (`PYANNOTE_METRICS_ENABLED`). Permite entrenamiento multi-GPU con PyTorch Lightning.",
+      "descripcion_notas": "Diarizar personas tiene implicaciones de privacidad: informa a los participantes. Las cifras del README (DER, velocidad en H100) son del autor.",
+      "descripcion_fuentes": [
+        "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+        "https://hf.co/pyannote/speaker-diarization-community-1"
+      ],
+      "descripcion_revision": {
+        "batch": "46-altas-del-propietario",
+        "checked_at": "2026-11-16",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "pyannote/pyannote-audio",
+        "archived": false,
+        "pushed_at": "2026-11-09",
+        "license": "MIT",
+        "primary_language": "Jupyter Notebook / Python",
+        "latest_release": "4.0.7 (2026-06-30)",
+        "checked_at": "2026-11-16"
+      },
+      "lead": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+      "body": "Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional.",
+      "install": {
+        "command": "pip install pyannote.audio",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
+      },
+      "alt_refs": [],
+      "combine_refs": [
+        {
+          "id": "whisperx",
+          "label": "whisperx"
+        },
+        {
+          "id": "pytorch",
+          "label": "pytorch"
+        },
+        {
+          "id": "faster-whisper",
+          "label": "faster-whisper"
+        },
+        {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        }
+      ],
+      "areas": [
+        "audiovisual"
+      ],
+      "topics": [
+        "av-audio"
+      ],
+      "discovery_text": " Producción audiovisual produccion audiovisual multimedia contenido audiovisual Audio: limpieza, música y sonido"
     },
     {
       "id": "rnnoise",
@@ -143165,7 +145857,8 @@
       "combines_with": [
         "faster-whisper",
         "whisper",
-        "moviepy"
+        "moviepy",
+        "pyannote-audio"
       ],
       "alt": [
         "nemo"
@@ -143296,6 +145989,11 @@
           "id": "moviepy",
           "motivo": "Subtítulos con marcas por palabra. (combinación por arquitectura)",
           "orden_instalacion": "Genera SRT y móntalo."
+        },
+        {
+          "id": "pyannote-audio",
+          "motivo": "WhisperX usa pyannote-audio para la diarización (etiquetas de hablante).",
+          "orden_instalacion": "Acepta las condiciones del modelo de pyannote en Hugging Face y pasa el token con `--hf_token`."
         }
       ],
       "que_es": "WhisperX, pipeline de transcripción con marcas de tiempo precisas por palabra y diarización, de @m-bain. Licencia BSD-2-Clause. Es madura (~25k estrellas, v3.8.6); el README incluye un patrocinio (Recall.ai).",
@@ -143345,6 +146043,10 @@
         {
           "id": "moviepy",
           "label": "moviepy"
+        },
+        {
+          "id": "pyannote-audio",
+          "label": "pyannote-audio"
         }
       ],
       "areas": [
@@ -145717,7 +148419,8 @@
       "combines_with": [
         "remotion",
         "ffmpeg",
-        "kokoro"
+        "kokoro",
+        "elevenlabs-python"
       ],
       "alt": [
         "remotion-superpowers",
@@ -145855,6 +148558,11 @@
           "id": "kokoro",
           "motivo": "Narración local sin claves. (combinación por arquitectura)",
           "orden_instalacion": "Configura un TTS local."
+        },
+        {
+          "id": "elevenlabs-python",
+          "motivo": "OpenMontage usa ElevenLabs para TTS premium, música y efectos; su código importa este SDK.",
+          "orden_instalacion": "Añade `ELEVENLABS_API_KEY` al `.env`."
         }
       ],
       "que_es": "OpenMontage, «sistema de producción de vídeo agéntico» open source, de OpenMontageInc (antes calesthio). Licencia AGPL-3.0. Creado en marzo de 2026, tiene ~81k estrellas, una cifra inusual; el README anuncia un nuevo producto en preparación.",
@@ -145907,6 +148615,10 @@
         {
           "id": "kokoro",
           "label": "kokoro"
+        },
+        {
+          "id": "elevenlabs-python",
+          "label": "elevenlabs-python"
         }
       ],
       "areas": [

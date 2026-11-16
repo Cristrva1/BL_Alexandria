@@ -425,6 +425,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Obtienes etiquetas y relaciones que coinciden con la base de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `graphrag`, `awesome-mcp-servers`
+**Alternativas (elige una):** `neo4j-mcp`
 
 ## `mcp-python-sdk`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
@@ -518,6 +519,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `awesome-mcp-servers`, `mcp`
 **Alternativas (elige una):** `mcp-typescript-sdk`
+
+## `neo4j-mcp`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=mcp,graph,neo4j,cypher,go
+
+**Qué es:** Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Neo4j Aura y las ediciones comerciales tienen sus propias condiciones; con ellas el servidor queda cubierto por esos contratos.
+- Equipo: Preparación según la ruta elegida. Necesitas una base Neo4j (local, Docker o Aura) y credenciales; GDS es opcional.
+**Repo:** https://github.com/neo4j/mcp
+
+**Instalación** [+]:
+
+```
+pip install neo4j-mcp-server
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP y una base Neo4j
+**Primera prueba propuesta:** Conecta el servidor en modo solo lectura a una base Neo4j de prueba y pide al agente que describa su esquema
+**Qué comprobar:** El agente lista etiquetas y relaciones que coinciden con las de la base
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `graphiti`, `cognee`
+**Alternativas (elige una):** `mcp-neo4j`
 
 ## `playwright-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript

@@ -130,6 +130,11 @@
      "id": "nemo",
      "motivo": "Servicios NVIDIA integrados.",
      "orden_instalacion": "Configura el servicio NVIDIA."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK.",
+     "orden_instalacion": "Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs."
     }
    ],
    "notas": "Alternativas (elige una): livekit-agents, dograh.",
@@ -166,6 +171,11 @@
      "id": "whisper-cpp",
      "motivo": "STT local. (combinación por arquitectura)",
      "orden_instalacion": "Expón el servidor y úsalo como STT."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "LiveKit Agents documenta un plugin de TTS de ElevenLabs.",
+     "orden_instalacion": "Instala el plugin y define la clave de ElevenLabs."
     }
    ],
    "notas": "Alternativas (elige una): pipecat, dograh.",

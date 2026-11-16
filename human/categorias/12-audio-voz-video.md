@@ -4,7 +4,7 @@
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
 
-14 repos · 2 secciones
+15 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 8 repos
-- [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 6 repos
+- [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 7 repos
 
 ## Edición, grabación y subtítulos
 
@@ -44,6 +44,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [WanGP](../fichas/wan2gp.md) | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada | API de IA opcional |
 | [short-video-factory](../fichas/short-video-factory.md) | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | Tu objetivo encaja con estos ejemplos: Crear un borrador de producto; Preparar variantes de un anuncio propio | Depende de la ruta elegida |
 | [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | Tu objetivo encaja con estos ejemplos: Obtener clips de un tutorial propio; Comparar criterios de selección de momentos | API de IA necesaria |
+| [HunyuanVideo 1.5](../fichas/hunyuanvideo-1-5.md) | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. | Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p | API de IA opcional |
 
 ## Recetas relacionadas
 

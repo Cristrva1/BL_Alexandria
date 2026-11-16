@@ -204,7 +204,7 @@
      "orden_instalacion": "Añade los MCP por Dot."
     }
    ],
-   "notas": "Sin alternativas declaradas. No es autónomo del todo: depende de un servicio de CopilotKit.",
+   "notas": "Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.",
    "fuentes": [
     "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
    ],

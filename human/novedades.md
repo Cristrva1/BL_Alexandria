@@ -6,6 +6,17 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 
 | Añadido | Repo | Qué hace | Acceso básico |
 |---|---|---|---|
+| 2026-11-16 | [TanStack Query](fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-16 | [pyannote.audio](fichas/pyannote-audio.md) | Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional. | API de IA opcional |
+| 2026-11-16 | [OpenBot](fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Depende de la ruta elegida |
+| 2026-11-16 | [Neo4j MCP (oficial)](fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-16 | [JupyterLab](fichas/jupyterlab.md) | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-16 | [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. | API de IA opcional |
+| 2026-11-16 | [ElevenLabs (SDK de Python)](fichas/elevenlabs-python.md) | SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz. | API de IA necesaria |
+| 2026-11-16 | [Delta Lake](fichas/delta-lake.md) | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-16 | [DeepSeek Harness (DSH)](fichas/deepseek-harness.md) | Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables. | Depende de la ruta elegida |
+| 2026-11-16 | [Apache Iceberg](fichas/apache-iceberg.md) | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-16 | [Antigravity CLI](fichas/antigravity-cli.md) | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-15 | [SAM 3](fichas/sam3.md) | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-15 | [FLUX.2](fichas/flux2.md) | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas. | API de IA opcional |
 | 2026-11-15 | [DeepSeek-V3](fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional |

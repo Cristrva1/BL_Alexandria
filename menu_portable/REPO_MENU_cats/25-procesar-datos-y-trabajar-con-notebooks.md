@@ -3,6 +3,37 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `apache-iceberg`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,lakehouse,table-format,java
+
+**Qué es:** Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.
+**Stack:** Java, build.gradle
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Preparación según la ruta elegida. JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.
+**Repo:** https://github.com/apache/iceberg
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/apache/iceberg/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Compartir una tabla analítica entre varios motores; Consultar un snapshot anterior tras un cambio de esquema
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea una tabla Iceberg pequeña con PyIceberg, añade una columna y consulta el snapshot previo
+**Qué comprobar:** El snapshot anterior conserva el esquema original
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `polars`, `jupyterlab`
+**Alternativas (elige una):** `delta-lake`, `hudi`
+
 ## `awesome-bigdata`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=data
 
@@ -63,6 +94,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `streamlit`, `echarts`, `duckdb`
 
+## `delta-lake`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,lakehouse,table-format,scala
+
+**Qué es:** Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.
+**Stack:** Scala, Dockerfile, build.sbt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Preparación según la ruta elegida. JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.
+**Repo:** https://github.com/delta-io/delta
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/delta-io/delta/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Escribe una tabla Delta local, actualiza unas filas y lee la versión 0
+**Qué comprobar:** La versión 0 muestra los datos originales
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `polars`, `jupyterlab`
+**Alternativas (elige una):** `apache-iceberg`, `hudi`
+
 ## `duckdb`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,analytics,cpp
 
@@ -91,7 +153,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un CSV ficticio y consulta el total de registros y una suma por categoría
 **Qué comprobar:** Puedes comparar el resultado con las filas originales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marimo`, `superset`, `timesfm`
+**Combina con:** `marimo`, `superset`, `timesfm`, `apache-iceberg`, `delta-lake`
 **Alternativas (elige una):** `polars`
 
 ## `globalbuildingatlas`
@@ -184,6 +246,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar la actualización sin reconstruir manualmente toda la tabla
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `superset`, `awesome-bigdata`
+**Alternativas (elige una):** `apache-iceberg`, `delta-lake`
+
+## `jupyterlab`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notebooks,data,python,typescript
+
+**Qué es:** Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.
+**Stack:** TypeScript, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin coste de modelo. Las extensiones de IA (p. ej. Jupyter AI) se configuran aparte con sus proveedores.
+- Equipo: Equipo normal; revisar dependencias. Python con pip, conda o mamba; los kernels y extensiones añaden sus propias dependencias.
+**Repo:** https://github.com/jupyterlab/jupyterlab
+
+**Instalación** [+]:
+
+```
+pip install jupyterlab
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Analizar datos de muestra en un notebook; Documentar un experimento con código y resultados
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Crea un notebook, carga un CSV ficticio y dibuja un gráfico simple
+**Qué comprobar:** El notebook guarda código, tabla y gráfico al reabrirlo
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `tensorflow`, `duckdb`, `polars`
+**Alternativas (elige una):** `marimo`
 
 ## `marimo`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notebooks,data,python
@@ -214,6 +308,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes reconocer dependencias reactivas y el archivo Python guardado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `polars`, `ollama`
+**Alternativas (elige una):** `jupyterlab`
 
 ## `polars`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,python,rust
@@ -243,7 +338,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee un archivo y agrupa por una columna para sumar otra
 **Qué comprobar:** Puedes contrastar el resultado con una muestra calculada a mano
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `marimo`, `timesfm`, `streamlit`
+**Combina con:** `marimo`, `timesfm`, `streamlit`, `apache-iceberg`, `delta-lake`
 **Alternativas (elige una):** `duckdb`
 
 ## `streamlit`

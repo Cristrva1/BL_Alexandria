@@ -30,7 +30,7 @@ Cada servidor se instala por separado (normalmente con `uvx`) y se configura con
 | [graphrag](graphrag.md) | Explorar en Neo4j grafos de conocimiento generados con GraphRAG. (combinación por arquitectura) | Carga el grafo en Neo4j y consúltalo con el servidor Cypher. |
 | [awesome-mcp-servers](awesome-mcp-servers.md) | Comparar con otros servidores de bases de datos. (combinación por arquitectura) | Revisa la sección de bases de datos de la lista. |
 
-**Notas:** Sin alternativas declaradas. Para producción, valora el servidor oficial neo4j/mcp (no catalogado). El servidor Cypher puede escribir: limita permisos.
+**Notas:** Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos.
 
 Estado en GitHub: activo · último push 2026-09-09 · última versión publicada mcp-neo4j-cypher-v0.6.0 (2026-04-10) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -100,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Neo4j; credenciales; APOC para inspección de esquema; servidor elegido
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Neo4j MCP (oficial)](neo4j-mcp.md) | 307 | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. |
 
 ## Enlaces
 

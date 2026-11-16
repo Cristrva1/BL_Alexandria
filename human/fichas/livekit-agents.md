@@ -29,6 +29,7 @@ Se instala con `pip install "livekit-agents[openai,deepgram,cartesia]"` (u otros
 | [Kokoro](kokoro.md) | TTS local vía endpoint compatible. (combinación por arquitectura) | Expón Kokoro y configúralo como TTS. |
 | [Ollama](ollama.md) | LLM local vía plugin compatible con OpenAI. (combinación por arquitectura) | Apunta el plugin al endpoint de Ollama. |
 | [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Expón el servidor y úsalo como STT. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | LiveKit Agents documenta un plugin de TTS de ElevenLabs. | Instala el plugin y define la clave de ElevenLabs. |
 
 **Notas:** Alternativas (elige una): pipecat, dograh.
 

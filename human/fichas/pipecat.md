@@ -30,6 +30,7 @@ Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con
 | [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Usa un servicio STT local. |
 | [Ollama](ollama.md) | Servicio LLM integrado. | Configura el servicio Ollama. |
 | [NeMo Speech](nemo.md) | Servicios NVIDIA integrados. | Configura el servicio NVIDIA. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK. | Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs. |
 
 **Notas:** Alternativas (elige una): livekit-agents, dograh.
 

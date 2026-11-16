@@ -4,7 +4,7 @@
 
 Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.
 
-28 repos · 4 secciones
+29 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Componentes, iconos y sistemas de diseño](#componentes-iconos-y-sistemas-de-diseño) — 10 repos
+- [Componentes, iconos y sistemas de diseño](#componentes-iconos-y-sistemas-de-diseño) — 11 repos
 - [CSS y estilos](#css-y-estilos) — 4 repos
 - [Diseño visual, canvas y builders](#diseño-visual-canvas-y-builders) — 6 repos
 - [UI generada con IA y frontends para agentes](#ui-generada-con-ia-y-frontends-para-agentes) — 8 repos
@@ -32,6 +32,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Ant Design](../fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Tu objetivo encaja con estos ejemplos: Crear un panel administrativo; Montar formularios de gestión | Sin clave propia de API de IA en la ruta básica |
 | [Material UI](../fichas/mui.md) | Librería de componentes React completa que implementa Material Design de Google. | Tu objetivo encaja con estos ejemplos: Crear un dashboard Material Design; Construir una pantalla de ajustes | Sin clave propia de API de IA en la ruta básica |
 | [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual | Sin clave propia de API de IA en la ruta básica |
+| [TanStack Query](../fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Tu objetivo encaja con estos ejemplos: Cachear y revalidar datos de una API en una app React; Mostrar estados de carga y error sin estado global manual | Sin clave propia de API de IA en la ruta básica |
 | [swr](../fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña | Sin clave propia de API de IA en la ruta básica |
 | [heroui](../fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Tu objetivo encaja con estos ejemplos: Construir formularios accesibles; Crear una interfaz con temas compartidos | Sin clave propia de API de IA en la ruta básica |
 | [Lucide](../fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz | Sin clave propia de API de IA en la ruta básica |

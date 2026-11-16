@@ -1,0 +1,469 @@
+{
+ "batch": "46-altas-del-propietario",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; identidad y estado comprobados con la API REST de GitHub. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "neo4j-mcp": {
+   "que_es": "Servidor MCP oficial de Neo4j (organización neo4j, Neo4j Sweden AB), escrito en Go. Licencia GPL-3.0 según LICENSE.txt y NOTICE.txt (GitHub muestra NOASSERTION); si se usa con Aura o con las ediciones comerciales de Neo4j, pasa a regirse por esos contratos. Versión v2.1.1 (noviembre de 2026), ~300 estrellas, activo.",
+   "que_hace": "Da a un asistente acceso estructurado a una base Neo4j: descubrir etiquetas, relaciones y propiedades (`get-schema`), ejecutar Cypher de solo lectura (`read-cypher`, validado con EXPLAIN), ejecutar escrituras (`write-cypher`, desactivable con `NEO4J_MCP_READ_ONLY=true`) y listar procedimientos de Graph Data Science.",
+   "como_lo_hace": "Se instala con `pip install neo4j-mcp-server` (la documentación oficial cubre brew e instalación manual; el repositorio incluye un Dockerfile) y se registra como servidor stdio en el cliente MCP con las variables `NEO4J_MCP_URI`, `NEO4J_MCP_USERNAME`, `NEO4J_MCP_PASSWORD` y `NEO4J_MCP_DATABASE`. Requiere una instancia Neo4j accesible (local, Docker o Aura). El propio README advierte que procedimientos mal clasificados como de lectura pueden saltarse el control de solo lectura.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Cliente MCP de terminal; el README cita Claude, Cursor y VS Code como clientes compatibles. (combinación por arquitectura)",
+     "orden_instalacion": "Prepara Neo4j, luego registra el servidor con `claude mcp add`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Codex admite servidores MCP stdio en su configuración. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el servidor en la configuración MCP de Codex tras arrancar Neo4j."
+    },
+    {
+     "id": "graphiti",
+     "motivo": "Graphiti guarda su grafo de contexto en Neo4j 5.26 (entre otros backends); este servidor permite inspeccionar y consultar ese mismo grafo con Cypher. (combinación por arquitectura)",
+     "orden_instalacion": "Instala Neo4j, ejecuta Graphiti y después conecta el servidor MCP en modo solo lectura."
+    },
+    {
+     "id": "cognee",
+     "motivo": "Cognee documenta Neo4j como almacén de grafos; el servidor MCP da al agente consultas Cypher directas sobre lo que Cognee construye. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Cognee con Neo4j y luego añade el servidor MCP."
+    }
+   ],
+   "notas": "Alternativa (elige una): mcp-neo4j. Es el servidor oficial; mcp-neo4j son los servidores experimentales de Neo4j Labs. Activa `NEO4J_MCP_READ_ONLY` salvo que necesites escribir.",
+   "fuentes": [
+    "https://github.com/neo4j/mcp/blob/main/README.md",
+    "https://github.com/neo4j/mcp/blob/main/NOTICE.txt",
+    "https://neo4j.com/docs/mcp/current/"
+   ],
+   "github": {
+    "name_with_owner": "neo4j/mcp",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0 (GitHub: NOASSERTION)",
+    "primary_language": "Go",
+    "latest_release": "v2.1.1 (2026-11-11)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "deepseek-harness": {
+   "que_es": "Harness de agentes de código abierto de DeepSeek AI (deepseek-ai/deepseek-harness, comando `dsh`), en TypeScript con licencia MIT. Está en «developer preview»: el README avisa de cambios incompatibles y SAFETY.md indica que no ha pasado auditoría de seguridad. Creado en agosto de 2026, ~282k estrellas, sin releases publicadas en GitHub.",
+   "que_hace": "Ofrece un entorno de agente con Web UI local en el que todo, incluidos proveedores de modelos, herramientas y memoria, es un plugin. Ejecuta código y comandos generados por el modelo, carga plugins de terceros (tema `dsh-plugin`) y puede conectarse a servidores MCP.",
+   "como_lo_hace": "Se arranca con `npx @deepseek-ai/dsh web` (Node.js), que sirve la Web UI en `http://127.0.0.1:3080`, o desde el código con pnpm. Está construido sobre el framework de plugins Cordis. El modelo se configura en Settings → Models: clave de DeepSeek, proveedores incluidos como `anthropic`, `openai`, `moonshotai` o `zai`, o una «Custom model API» compatible (pasarela o servidor propio). Las claves se guardan en `$DSH_HOME/.credentials.yaml`. Recomienda ejecutarlo con mínimos privilegios, en una VM o contenedor desechable.",
+   "combina_con": [
+    {
+     "id": "dsh-noema",
+     "motivo": "Plugin de memoria persistente para DSH basado en Noema; su README lo presenta como memoria a largo plazo para DeepSeek Harness.",
+     "orden_instalacion": "Arranca DSH primero y añade el plugin desde su configuración."
+    },
+    {
+     "id": "engram",
+     "motivo": "La guía oficial de DSH incluye una configuración de referencia (desactivada por defecto) para conectar Engram como servidor MCP de memoria a través de `dsh-mcp-client`.",
+     "orden_instalacion": "Instala Engram con la versión fijada en la guía y activa la overlay de DSH."
+    },
+    {
+     "id": "agentmemory",
+     "motivo": "agentmemory declara capturar sesiones de DeepSeek Harness para que otro agente retome historial y lecciones.",
+     "orden_instalacion": "Instala agentmemory y conéctalo a DSH según su guía."
+    },
+    {
+     "id": "litellm",
+     "motivo": "DSH admite una «Custom model API» con URL base y protocolo OpenAI; LiteLLM ofrece esa interfaz delante de muchos proveedores. (combinación por arquitectura)",
+     "orden_instalacion": "Levanta LiteLLM y regístralo como proveedor personalizado en DSH."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Un servidor local compatible con OpenAI puede registrarse como proveedor personalizado; la guía cita servidores autoalojados. (combinación por arquitectura)",
+     "orden_instalacion": "Arranca Ollama, comprueba su endpoint OpenAI y añádelo en Settings → Models."
+    }
+   ],
+   "notas": "Es distinto de los modelos DeepSeek: el harness no incluye modelo y puede usar otros proveedores. Vista previa sin auditoría: no lo uses como único control de seguridad ni con credenciales sensibles. Los plugins dsh-android, dsh-ios, dsh-qa y dsh-game-studio se retiraron del catálogo; dsh-noema sigue.",
+   "fuentes": [
+    "https://github.com/deepseek-ai/deepseek-harness/blob/main/README.md",
+    "https://github.com/deepseek-ai/deepseek-harness/blob/main/SAFETY.md",
+    "https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/guide/providers.md",
+    "https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/guide/mcp-memory.md"
+   ],
+   "github": {
+    "name_with_owner": "deepseek-ai/deepseek-harness",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "sin releases en GitHub",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "tanstack-query": {
+   "que_es": "Biblioteca de gestión de estado asíncrono de TanStack (antes React Query), en TypeScript con licencia MIT. Proyecto maduro (desde 2019), ~50k estrellas, con publicaciones frecuentes (última: noviembre de 2026).",
+   "que_hace": "Obtiene, cachea, sincroniza y actualiza «estado de servidor» en aplicaciones web: caché con invalidación, refetch en segundo plano, paginación y scroll infinito, mutaciones, consultas dependientes, prefetch, cancelación y soporte de Suspense. Funciona con cualquier fuente de promesas (REST, GraphQL…).",
+   "como_lo_hace": "Es un núcleo agnóstico (`query-core`) con adaptadores para React, Vue, Solid, Svelte, Preact, Lit y Angular (experimental), más devtools, persistencia de caché y un plugin de ESLint. Se instala por npm con el paquete del framework (p. ej. `@tanstack/react-query`) según la documentación oficial; no tiene backend propio.",
+   "combina_con": [
+    {
+     "id": "supabase",
+     "motivo": "Las funciones de consulta pueden llamar al cliente de Supabase y dejar en TanStack Query la caché, reintentos y la invalidación tras mutaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el cliente de Supabase y envuélvelo en `useQuery`/`useMutation`."
+    },
+    {
+     "id": "ui",
+     "motivo": "Los componentes de shadcn/ui muestran estados de carga, error y datos que TanStack Query expone. (combinación por arquitectura)",
+     "orden_instalacion": "Añade los componentes al proyecto y conéctalos a los hooks de consulta."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilo de los estados de interfaz (skeletons, errores) en las mismas vistas. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Tailwind en el proyecto antes de construir las vistas."
+    }
+   ],
+   "notas": "Alternativa (elige una): swr. Gestiona datos del servidor, no estado global de cliente.",
+   "fuentes": [
+    "https://github.com/TanStack/query/blob/main/README.md",
+    "https://tanstack.com/query/latest/docs/framework/react/overview"
+   ],
+   "github": {
+    "name_with_owner": "TanStack/query",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "release-2026-11-06-2304 (2026-11-06)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "antigravity-cli": {
+   "que_es": "CLI oficial de Google Antigravity (`agy`), producto propietario. El repositorio google-antigravity/antigravity-cli solo contiene README, CHANGELOG, ejemplos y releases con binarios; no publica código fuente ni licencia. La organización de GitHub no está verificada, pero el sitio oficial antigravity.google enlaza la documentación y describe la CLI. Versión 1.5.9 (noviembre de 2026).",
+   "que_hace": "Agente de programación en la terminal: entiende el código, edita varios archivos con tu permiso, ejecuta comandos, delega tareas en subagentes concurrentes y gestiona plugins, MCP, skills y hooks mediante comandos con barra. Está optimizado para teclado y sesiones SSH remotas y puede exportar sesiones a la app de escritorio Antigravity 2.0.",
+   "como_lo_hace": "Se instala con los scripts oficiales de antigravity.google (macOS/Linux, PowerShell o CMD) o con los binarios de las releases, y se inicia con `agy`. Comparte el motor de agentes y los ajustes con Antigravity 2.0. Se autentica con el llavero del sistema o con Google Sign-In (en SSH imprime una URL); para empresa se conecta un proyecto de GCP. Por defecto Google recoge los datos de interacción para mejorar el producto (desactivable en ajustes).",
+   "combina_con": [
+    {
+     "id": "google-skills",
+     "motivo": "El catálogo de skills de Google documenta la instalación en Antigravity CLI con `agy plugin install`.",
+     "orden_instalacion": "Instala la CLI, inicia sesión y luego añade los plugins de skills necesarios."
+    },
+    {
+     "id": "antigravity-awesome-skills",
+     "motivo": "Su instalador lista Antigravity CLI (`antigravity-cli`) como destino de instalación de skills.",
+     "orden_instalacion": "Instala solo las skills que vayas a usar para no sobrecargar el agente."
+    },
+    {
+     "id": "engram",
+     "motivo": "Engram documenta una configuración para Antigravity como cliente MCP de memoria persistente. (combinación por arquitectura)",
+     "orden_instalacion": "Instala Engram y registra su servidor MCP; comprueba que la guía aplica a la CLI."
+    },
+    {
+     "id": "context7",
+     "motivo": "Context7 aporta documentación actualizada de bibliotecas como servidor MCP, configurable desde los comandos MCP de la CLI. (combinación por arquitectura)",
+     "orden_instalacion": "Añade Context7 como servidor MCP tras el primer inicio de sesión."
+    }
+   ],
+   "notas": "Alternativas (elige una): gemini-cli, claude-code, codex. Google remite a Antigravity CLI a las cuentas gratuitas y Google AI Pro/Ultra que antes usaban Gemini CLI. Producto cerrado: revisa los términos de uso y de datos.",
+   "fuentes": [
+    "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
+    "https://antigravity.google/product/antigravity-cli",
+    "https://antigravity.google/docs/cli/overview"
+   ],
+   "github": {
+    "name_with_owner": "google-antigravity/antigravity-cli",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "sin licencia (propietario)",
+    "primary_language": "sin código fuente",
+    "latest_release": "1.5.9 (2026-11-14)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "openbot": {
+   "que_es": "Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba para evaluar en Kubernetes y de pago en producción. Versión v1.0.3 (noviembre de 2026), ~12k estrellas.",
+   "que_hace": "Da a cada Bot su propio «ordenador» (navegador, archivos y herramientas) y aplica a cada acción inicio de sesión, permisos por herramienta, políticas CEL, aprobaciones y auditoría. Permite traer agentes propios por AG-UI y herramientas por MCP (Google Drive, Notion, Parallel, Exa, Firecrawl, y cientos de apps vía Composio o Arcade), con clientes de escritorio, web, móvil, Slack y Teams.",
+   "como_lo_hace": "Para una persona, la app de escritorio (Mac/Windows) incluye el backend en Docker. Desde el código usa Bun y Docker (PostgreSQL, API y Bots) y la CLI de CopilotKit para la licencia local. Para equipos se despliega con Helm en Kubernetes (amd64, StorageClass, licencia y clave de modelo). Los modelos pueden ser OpenAI, Claude, Gemini o cualquier endpoint compatible con OpenAI, incluso locales.",
+   "combina_con": [
+    {
+     "id": "copilotkit",
+     "motivo": "OpenBot está construido sobre CopilotKit y AG-UI; su frontend y la conexión de agentes usan ese stack.",
+     "orden_instalacion": "Usa CopilotKit al extender la interfaz o conectar agentes propios."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "El repositorio incluye un agente de ejemplo LangGraph conectado por AG-UI (`agent-langgraph-agui`).",
+     "orden_instalacion": "Despliega OpenBot y registra el agente LangGraph como agente externo."
+    },
+    {
+     "id": "mastra",
+     "motivo": "Incluye un agente de ejemplo de Mastra (`agent-mastra`) conectable por AG-UI.",
+     "orden_instalacion": "Arranca OpenBot y conecta el agente Mastra."
+    },
+    {
+     "id": "crewai",
+     "motivo": "Incluye un agente de ejemplo de CrewAI (`agent-crewai`) para la misma vía AG-UI.",
+     "orden_instalacion": "Conecta el agente CrewAI después de configurar el modelo."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Firecrawl figura entre los proveedores de investigación web que el catálogo MCP de OpenBot incluye de serie.",
+     "orden_instalacion": "Añade la clave de Firecrawl en la configuración de herramientas."
+    },
+    {
+     "id": "composio",
+     "motivo": "Composio actúa como intermediario de cientos de apps detrás de una sola cuenta en el catálogo MCP gobernado.",
+     "orden_instalacion": "Prepara `setup:composio` y concede solo las apps necesarias."
+    }
+   ],
+   "notas": "Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad. El agente navegador maneja sesiones reales: mantén los puertos en loopback.",
+   "fuentes": [
+    "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
+    "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "CopilotKit/OpenBot",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT (plantilla; Intelligence con licencia aparte)",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.0.3 (2026-11-14)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "hunyuanvideo-1-5": {
+   "que_es": "Modelo de generación de video de Tencent Hunyuan, publicado en noviembre de 2025 con código de inferencia y entrenamiento en Python. Usa la Tencent Hunyuan Community License (GitHub muestra NOASSERTION), que no se aplica en la UE, el Reino Unido ni Corea del Sur. ~4,6k estrellas; último push en abril de 2026.",
+   "que_hace": "Genera video a partir de texto (T2V) o de imagen (I2V) en 480p y 720p, con superresolución a 1080p. Ofrece variantes destiladas (CFG y por pasos) y caché de características para acelerar la inferencia. Sucede a HunyuanVideo (13B) con un modelo más ligero.",
+   "como_lo_hace": "Combina un Diffusion Transformer de 8,3B parámetros y un VAE causal 3D. Requiere Linux, Python 3.10 o superior y una GPU NVIDIA con CUDA: al menos 14 GB de VRAM con offloading. Se instala desde `requirements.txt`, con Flash Attention, SageAttention o flex-block-attn opcionales, y pesos de Hugging Face. Hay integraciones oficiales en ComfyUI y Diffusers. La reescritura de prompts usa un endpoint vLLM opcional.",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "ComfyUI soporta HunyuanVideo 1.5 de forma nativa con flujos de trabajo y optimizaciones; el README lo enlaza.",
+     "orden_instalacion": "Instala ComfyUI, descarga los pesos y carga un flujo de ejemplo."
+    },
+    {
+     "id": "wan2gp",
+     "motivo": "Wan2GP soporta Hunyuan Video 1.5 con poca VRAM (desde unos 6 GB, según el README del modelo).",
+     "orden_instalacion": "Usa Wan2GP si tu GPU no llega a 14 GB."
+    },
+    {
+     "id": "vllm",
+     "motivo": "El pipeline reescribe los prompts contra un servidor vLLM (Qwen3 recomendado) si se configuran `T2V_REWRITE_BASE_URL` e `I2V_REWRITE_BASE_URL`.",
+     "orden_instalacion": "Levanta vLLM aparte y exporta las variables antes de generar."
+    }
+   ],
+   "notas": "Alternativas (elige una): hunyuanvideo, wan2-2. Revisa la exclusión territorial y la política de uso aceptable antes de usarlo en un producto.",
+   "fuentes": [
+    "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+    "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "Tencent-Hunyuan/HunyuanVideo-1.5",
+    "archived": false,
+    "pushed_at": "2026-04-10",
+    "license": "Tencent Hunyuan Community License (GitHub: NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "sin releases en GitHub",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "apache-iceberg": {
+   "que_es": "Formato abierto de tablas analíticas, proyecto de primer nivel de la Apache Software Foundation, con licencia Apache-2.0. Este repositorio contiene la biblioteca Java de referencia; hay implementaciones oficiales en Python (PyIceberg), Go, Rust y C++. Versión 1.12.0 (septiembre de 2026), en desarrollo activo.",
+   "que_hace": "Añade a archivos de datos en almacenamiento de objetos la fiabilidad de una tabla SQL: transacciones, snapshots y viaje en el tiempo, evolución de esquema y particiones sin reescribir datos. Así varios motores (Spark, Trino, Flink, Presto, Hive, Impala) pueden trabajar a la vez sobre las mismas tablas.",
+   "como_lo_hace": "Mantiene una especificación de metadatos estable (archivos de metadatos, manifiestos y snapshots) sobre datos Parquet, ORC o Avro, y un catálogo (REST, Hive Metastore, Glue…) que apunta a la versión vigente. Se compila con Gradle y Java 17 o 21, y los motores usan los jars `iceberg-spark` o `iceberg-flink` de runtime. Para Python se usa PyIceberg.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "DuckDB lee tablas Iceberg con su extensión oficial `iceberg`.",
+     "orden_instalacion": "Instala DuckDB, carga la extensión y consulta una tabla de prueba."
+    },
+    {
+     "id": "polars",
+     "motivo": "Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg).",
+     "orden_instalacion": "Instala Polars con PyIceberg y apunta al catálogo."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)",
+     "orden_instalacion": "Instala JupyterLab en el mismo entorno que PyIceberg."
+    }
+   ],
+   "notas": "Alternativas (elige una): delta-lake, hudi. Para consultas locales pequeñas suele bastar Parquet con DuckDB; Iceberg aporta valor con varios motores o escritores concurrentes.",
+   "fuentes": [
+    "https://github.com/apache/iceberg/blob/main/README.md",
+    "https://iceberg.apache.org/docs/latest/",
+    "https://duckdb.org/docs/stable/core_extensions/iceberg/overview",
+    "https://docs.pola.rs/api/python/stable/reference/api/polars.scan_iceberg.html"
+   ],
+   "github": {
+    "name_with_owner": "apache/iceberg",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "latest_release": "apache-iceberg-1.12.0 (2026-09-30)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "delta-lake": {
+   "que_es": "Framework de almacenamiento abierto Delta Lake (organización delta-io), en Scala con licencia Apache-2.0. Este repositorio contiene el conector de Spark, Delta Kernel, conectores y el protocolo; delta-rs es la implementación nativa en Rust/Python. Versión v4.4.1 (octubre de 2026), activo.",
+   "que_hace": "Da transacciones ACID, serializabilidad, versiones y viaje en el tiempo a tablas guardadas como Parquet, para construir un «lakehouse» que leen y escriben Spark, Flink, Trino, PrestoDB y Hive. UniForm permite además leer tablas Delta como Iceberg.",
+   "como_lo_hace": "Registra cada cambio en un log de transacciones (`_delta_log`) definido en PROTOCOL.md. Requiere un almacenamiento con visibilidad atómica, exclusión mutua y listados consistentes. Se usa desde Spark con `delta-spark` (Scala, Java o Python) siguiendo la guía rápida, desde Delta Standalone o Kernel en la JVM, o sin JVM con delta-rs.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "DuckDB lee tablas Delta con su extensión oficial `delta`.",
+     "orden_instalacion": "Instala DuckDB y carga la extensión `delta`."
+    },
+    {
+     "id": "polars",
+     "motivo": "Polars lee y escribe tablas Delta (`pl.scan_delta`, `write_delta`) mediante deltalake (delta-rs).",
+     "orden_instalacion": "Instala Polars con el paquete `deltalake`."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)",
+     "orden_instalacion": "Instala JupyterLab en el entorno con PySpark o deltalake."
+    }
+   ],
+   "notas": "Alternativas (elige una): apache-iceberg, hudi. Delta UniForm acerca ambos formatos: Delta puede publicar metadatos Iceberg.",
+   "fuentes": [
+    "https://github.com/delta-io/delta/blob/master/README.md",
+    "https://docs.delta.io/latest/quick-start.html",
+    "https://docs.delta.io/latest/delta-uniform.html",
+    "https://duckdb.org/docs/stable/core_extensions/delta",
+    "https://docs.pola.rs/api/python/stable/reference/api/polars.scan_delta.html"
+   ],
+   "github": {
+    "name_with_owner": "delta-io/delta",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Scala",
+    "latest_release": "v4.4.1 (2026-10-05)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "jupyterlab": {
+   "que_es": "Interfaz de nueva generación de Project Jupyter (organización jupyterlab), en TypeScript y Python con licencia BSD-3-Clause. Es el repositorio canónico de la experiencia de notebook de Jupyter; la rama 3 dejó de mantenerse en 2024. Versión v4.6.6 (noviembre de 2026), ~15k estrellas.",
+   "que_hace": "Ofrece en el navegador notebooks, consolas, terminal, editor de texto, explorador de archivos y salidas enriquecidas en paneles reorganizables. Se amplía con extensiones distribuidas por PyPI, conda o npm.",
+   "como_lo_hace": "Se instala con `pip install jupyterlab`, conda o mamba (conda-forge) y se abre con `jupyter lab`, que arranca un servidor Jupyter local. Los kernels (ipykernel para Python u otros lenguajes) ejecutan el código. Las extensiones precompiladas no requieren compilar; las de código fuente sí.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Entrenar y depurar modelos de forma interactiva en notebooks. (combinación por arquitectura)",
+     "orden_instalacion": "Instala PyTorch en el entorno del kernel."
+    },
+    {
+     "id": "tensorflow",
+     "motivo": "Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura)",
+     "orden_instalacion": "Instala TensorFlow en el entorno del kernel."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Consultas SQL sobre CSV y Parquet dentro del notebook. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el paquete `duckdb` al kernel."
+    },
+    {
+     "id": "polars",
+     "motivo": "DataFrames rápidos para análisis interactivo. (combinación por arquitectura)",
+     "orden_instalacion": "Añade `polars` al kernel."
+    }
+   ],
+   "notas": "Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.",
+   "fuentes": [
+    "https://github.com/jupyterlab/jupyterlab/blob/main/README.md",
+    "https://jupyterlab.readthedocs.io/en/stable/"
+   ],
+   "github": {
+    "name_with_owner": "jupyterlab/jupyterlab",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "BSD-3-Clause",
+    "primary_language": "TypeScript",
+    "latest_release": "v4.6.6 (2026-11-06)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "pyannote-audio": {
+   "que_es": "Kit de diarización de hablantes en Python sobre PyTorch (organización pyannote; pyannoteAI ofrece el servicio premium). Licencia MIT para el código; los modelos se publican en Hugging Face con condiciones propias. Versión 4.0.7 (junio de 2026), ~11k estrellas.",
+   "que_hace": "Determina quién habla y cuándo: detección de actividad de voz, cambio de hablante, habla solapada y embeddings de hablante. Ofrece el pipeline abierto `community-1` (mejor que el 3.1 en conteo y asignación) y acceso integrado al pipeline premium `precision-2` de pyannoteAI.",
+   "como_lo_hace": "Se instala con `uv add pyannote.audio` o `pip install pyannote.audio` (Python 3.11 o superior) y necesita ffmpeg para decodificar audio (torchcodec). Para `community-1` hay que aceptar las condiciones del modelo en Hugging Face y usar un token; se ejecuta en local, en CPU o GPU. `precision-2` se ejecuta en servidores de pyannoteAI con su clave de API. La telemetría es opcional (`PYANNOTE_METRICS_ENABLED`). Permite entrenamiento multi-GPU con PyTorch Lightning.",
+   "combina_con": [
+    {
+     "id": "whisperx",
+     "motivo": "WhisperX usa pyannote-audio para la diarización y añade etiquetas de hablante a la transcripción.",
+     "orden_instalacion": "Acepta las condiciones de pyannote en Hugging Face y pasa el token a WhisperX."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "pyannote.audio está construido sobre PyTorch; la elección de CUDA o CPU sigue la instalación de PyTorch.",
+     "orden_instalacion": "Instala primero la variante de PyTorch adecuada a tu GPU."
+    },
+    {
+     "id": "faster-whisper",
+     "motivo": "Transcribir con faster-whisper y asignar después los segmentos a los hablantes de pyannote. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta la diarización y la transcripción por separado y cruza las marcas de tiempo."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Requisito documentado: torchcodec usa ffmpeg para decodificar el audio.",
+     "orden_instalacion": "Instala ffmpeg antes del paquete."
+    }
+   ],
+   "notas": "Diarizar personas tiene implicaciones de privacidad: informa a los participantes. Las cifras del README (DER, velocidad en H100) son del autor.",
+   "fuentes": [
+    "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+    "https://hf.co/pyannote/speaker-diarization-community-1"
+   ],
+   "github": {
+    "name_with_owner": "pyannote/pyannote-audio",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook / Python",
+    "latest_release": "4.0.7 (2026-06-30)",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "elevenlabs-python": {
+   "que_es": "SDK oficial de Python para la API de ElevenLabs (organización elevenlabs), generado con Fern y con licencia MIT. El cliente es libre, pero el servicio es de pago por uso. Versión v2.78.0 (noviembre de 2026), activo. El servidor MCP oficial (elevenlabs/elevenlabs-mcp) está archivado.",
+   "que_hace": "Da acceso desde Python a texto a voz (Eleven v4, v4 Turbo, Multilingual v2, Flash v2.5), clonación de voz, transcripción con Scribe v2 (también en tiempo real), música con Eleven Music, gestión de voces y agentes conversacionales en tiempo real (ElevenAgents).",
+   "como_lo_hace": "Se instala con `pip install elevenlabs` (Python 3.8 o superior) y se autentica con la clave `ELEVENLABS_API_KEY`. Llama a la API de ElevenLabs con un cliente síncrono o asíncrono (`AsyncElevenLabs`) y admite streaming de audio. Toda la inferencia ocurre en los servidores de ElevenLabs.",
+   "combina_con": [
+    {
+     "id": "openmontage",
+     "motivo": "OpenMontage usa ElevenLabs para TTS premium, música y efectos de sonido con `ELEVENLABS_API_KEY`; su código importa este SDK.",
+     "orden_instalacion": "Crea la clave, añádela al `.env` de OpenMontage y genera una pista corta."
+    },
+    {
+     "id": "pipecat",
+     "motivo": "Pipecat incluye servicios de ElevenLabs para TTS y STT en agentes de voz en tiempo real.",
+     "orden_instalacion": "Instala el extra de ElevenLabs de Pipecat y configura la clave."
+    },
+    {
+     "id": "livekit-agents",
+     "motivo": "LiveKit Agents documenta un plugin de TTS de ElevenLabs.",
+     "orden_instalacion": "Instala el plugin de ElevenLabs y define la clave en el entorno del agente."
+    },
+    {
+     "id": "video-use",
+     "motivo": "video-use pide una clave de ElevenLabs para la voz; el SDK sirve para elegir y probar voces o generar pistas fuera del flujo. (combinación por arquitectura)",
+     "orden_instalacion": "Usa la misma clave en ambos y prueba la voz antes de editar."
+    },
+    {
+     "id": "remotion-superpowers",
+     "motivo": "El plugin usa las skills oficiales de ElevenLabs para locución, efectos y música. (combinación por arquitectura)",
+     "orden_instalacion": "Configura la clave de ElevenLabs al instalar el plugin."
+    }
+   ],
+   "notas": "La clonación de voz exige el consentimiento de la persona. Vigila el consumo de créditos: el SDK no limita el gasto.",
+   "fuentes": [
+    "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md",
+    "https://elevenlabs.io/docs/api-reference/introduction",
+    "https://docs.pipecat.ai/server/services/tts/elevenlabs",
+    "https://docs.livekit.io/agents/integrations/tts/elevenlabs/"
+   ],
+   "github": {
+    "name_with_owner": "elevenlabs/elevenlabs-python",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.78.0 (2026-11-12)",
+    "checked_at": "2026-11-16"
+   }
+  }
+ }
+}

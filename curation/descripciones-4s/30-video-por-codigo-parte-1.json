@@ -304,6 +304,11 @@
      "id": "kokoro",
      "motivo": "Narración local sin claves. (combinación por arquitectura)",
      "orden_instalacion": "Configura un TTS local."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "OpenMontage usa ElevenLabs para TTS premium, música y efectos; su código importa este SDK.",
+     "orden_instalacion": "Añade `ELEVENLABS_API_KEY` al `.env`."
     }
    ],
    "notas": "Alternativas (elige una): remotion-superpowers, moneyprinterturbo.",
