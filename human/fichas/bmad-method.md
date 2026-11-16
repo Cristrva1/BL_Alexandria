@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+BMad Method es un marco de «desarrollo ágil dirigido por IA» de bmad-code-org. El README declara licencia MIT, aunque GitHub la marca como NOASSERTION. Tiene dos líneas: la v6.12 estable, congelada salvo correcciones (release v6.12.4), y la V7 en alfa de vista previa, que cambia a menudo.
+
+## ¿Qué hace?
+
+Lleva una idea o petición de cambio hasta software funcionando sin delegar el razonamiento: qué construir, cómo encaja y cómo evoluciona. Las decisiones quedan explícitas y el contexto se conserva en briefs, especificaciones y documentos de arquitectura, que también pueden llevarse a un flujo de entrega existente. Incluye módulos con roles, por ejemplo un fabricante de skills y un asesor de fundadores.
+
+## ¿Cómo lo hace?
+
+La v6.12 se instala con `npx bmad-method install` y requiere Node.js 20.12+ y Python 3.10+. La V7 se instala con `npx skills add bmad-code-org/BMAD-METHOD/skills/<módulo>` y requiere Node, npm y Git. Desde la herramienta de IA se invocan `bmad-build` para cambiar algo y `bmad-help` para orientarse.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Herramienta de código compatible con sus skills (combinación por arquitectura: el README habla de «tu herramienta de IA» sin lista cerrada). | Instala BMad en la raíz del proyecto y abre el proyecto en el agente. |
+| [Codex CLI](codex.md) | Igual: es compatible con skills estándar mediante `npx skills` (combinación por arquitectura). | Igual que arriba. |
+| [skills](skills.md) | Alternativa más ligera para quien quiera controlar el proceso; el autor de esas skills compara las dos explícitamente (combinación por arquitectura). | Elige una metodología por proyecto. |
+
+**Notas:** Alternativa (elige una): spec-kit. Usa la v6.12 si necesitas estabilidad.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v6.12.4 (2026-10-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable |
 | Coste | Consumo del agente que ya utilizas. El método es abierto; cada agente y sus modelos conservan su forma de pago |
 | Equipo | Preparación según la ruta elegida. Node.js, Git y uv;  cliente compatible con Agent Skills |
-
-El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable
-
-## Qué puedes hacer con él
-
-Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.
-
-## Por qué destaca
-
-Usos propuestos: Convertir una idea de producto en un primer cambio acotado; Revisar requisitos y decisiones antes de implementar una función.
-
-## Cómo funciona
 
 El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js, Git y uv;  cliente compatible con Agent Skills
 - **Etiquetas:** `coding-agent` `skills` `agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

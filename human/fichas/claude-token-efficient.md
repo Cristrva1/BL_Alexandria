@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Un archivo `CLAUDE.md` de drona23 (MIT) para que Claude responda de forma concisa y gaste menos tokens. Sin releases; último cambio en junio de 2026.
+
+## ¿Qué hace?
+
+Elimina aperturas y cierres de cortesía, guiones largos y caracteres Unicode que rompen parsers, la repetición de la pregunta, las sugerencias no pedidas, la sobreingeniería y el dar la razón ante afirmaciones incorrectas. Su prueba con 5 prompts mide un 63 % menos de palabras [DATO NO VERIFICADO: indicador direccional, no estadístico según el propio README].
+
+## ¿Cómo lo hace?
+
+Se pega una regla corta en el chat o se coloca el `CLAUDE.md` en el proyecto. El README advierte que los archivos de instrucciones añaden tokens de entrada en cada turno y solo se probó con Claude.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Formato CLAUDE.md. | Copia el archivo a la raíz del proyecto y mantenlo corto. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | Principios compatibles contra la sobreingeniería (combinación por arquitectura). | Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada. |
+| [Ponytail](ponytail.md) | Enfoque parecido aplicado al código (combinación por arquitectura). | Evita reglas contradictorias. |
+
+Estado en GitHub: activo · último push 2026-06-16 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/drona23/claude-token-efficient/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | Modelo local no documentado. Los resultados con modelos locales se declaran sin probar; no se presentan como compatibilidad validada |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones consumen el agente; menos texto no garantiza una reducción concreta de la factura |
 | Equipo | Preparación según la ruta elegida. Claude Code;  copia revisable de las instrucciones del proyecto |
-
-Los resultados con modelos locales se declaran sin probar; no se presentan como compatibilidad validada
-
-## Qué puedes hacer con él
-
-Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto.
-
-## Por qué destaca
-
-Usos propuestos: Reducir respuestas repetitivas en una sesión larga; Mantener un estilo de comunicación conciso para tareas de código.
-
-## Cómo funciona
 
 Los resultados con modelos locales se declaran sin probar; no se presentan como compatibilidad validada
 

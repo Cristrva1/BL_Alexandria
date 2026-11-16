@@ -10,6 +10,30 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plugin oficial de OpenAI (Apache 2.0) para usar Codex desde Claude Code. Versión v1.0.6; último cambio en julio de 2026.
+
+## ¿Qué hace?
+
+Añade `/codex:review` (revisión de solo lectura), `/codex:adversarial-review` (revisión crítica dirigida) y comandos para delegar trabajo, traspasar sesiones y gestionar tareas en segundo plano (`/codex:rescue`, `/codex:transfer`, `/codex:status`, `/codex:result`, `/codex:cancel`), además del subagente `codex:codex-rescue`.
+
+## ¿Cómo lo hace?
+
+Se instala con `/plugin marketplace add openai/codex-plugin-cc` y `/plugin install codex@openai-codex`, y se configura con `/codex:setup`, que puede instalar Codex (`npm install -g @openai/codex`). Requiere Node.js 18.18+ y una suscripción de ChatGPT (incluida la gratuita) o una clave de API de OpenAI; el uso cuenta en los límites de Codex.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plataforma anfitriona del plugin. | Añade el marketplace, instala y recarga los plugins. |
+| [Codex CLI](codex.md) | Motor al que delega. | Instala Codex e inicia sesión (`codex login`) antes de `/codex:setup`. |
+| [grok-plugin-claude-code](grok-plugin-claude-code.md) | Reimplementación no oficial con la misma forma para Grok CLI; sirve para tener una segunda opinión de otro modelo. | Independientes. |
+
+Estado en GitHub: activo · último push 2026-07-08 · última versión publicada v1.0.6 (2026-07-08) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/codex-plugin-cc/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex |
 | Coste | El coste depende del proveedor o la ruta. Claude Code y Codex tienen accesos y límites propios; Codex admite sesión del plan o API según su configuración |
 | Equipo | Preparación según la ruta elegida. Claude Code;  Codex CLI autenticado y acceso a su cuenta |
-
-No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex
-
-## Qué puedes hacer con él
-
-Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas.
-
-## Por qué destaca
-
-Usos propuestos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal.
-
-## Cómo funciona
 
 No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex
 

@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Repositorio oficial de Google (Apache 2.0) con Agent Skills para sus productos, sobre todo Google Cloud. Muy activo, sin releases.
+
+## ¿Qué hace?
+
+Ofrece skills para empezar en Google Cloud (autenticación IAM, onboarding, Foundation Builder), soluciones multiproducto (arquitectura, seguridad multiagente con Agent Gateway, analítica agéntica, lakehouse), IA/ML (incluida la skill de la API de Gemini en Vertex), infraestructura, bases de datos y analítica, herramientas de desarrollo, desarrollo de aplicaciones, gestión, Well-Architected Framework, seguridad, hosting y publicidad.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add google/skills`, eligiendo skills, agentes y alcance (proyecto o global), y se actualiza con `npx skills update`. Requiere Node.js.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Gemini CLI](gemini-cli.md) | Agente de Google compatible con skills estándar (combinación por arquitectura). | Selecciónalo en el instalador. |
+| [gemini-skills](gemini-skills.md) | Skills de la API de Gemini (la de Vertex se movió aquí). | Instala ambas si trabajas con AI Studio y con Vertex. |
+| [Agent Development Kit (ADK)](adk-python.md) | Construir agentes que se despliegan en Google Cloud (combinación por arquitectura). | Independientes. |
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google/skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los tres clientes tienen rutas documentadas; una skill no concede permisos sobre tu cuenta de Google |
 | Coste | El coste depende del proveedor o la ruta. Las instrucciones usan el agente; Cloud, Ads y otras APIs tienen cuentas, permisos y facturación independientes |
 | Equipo | Preparación según la ruta elegida. Agente compatible;  elegir una skill del producto de Google que usarás |
-
-Los tres clientes tienen rutas documentadas; una skill no concede permisos sobre tu cuenta de Google
-
-## Qué puedes hacer con él
-
-Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.
-
-## Por qué destaca
-
-Usos propuestos: Revisar la configuración de un servicio Cloud en un entorno de prueba; Aprender a consultar métricas de Ads sin crear campañas.
-
-## Cómo funciona
 
 Los tres clientes tienen rutas documentadas; una skill no concede permisos sobre tu cuenta de Google
 

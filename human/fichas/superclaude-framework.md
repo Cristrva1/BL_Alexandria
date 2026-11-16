@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.
+
+## ¿Qué hace?
+
+Convierte Claude Code en una plataforma de desarrollo estructurada mediante inyección de instrucciones de comportamiento: 30 comandos `/sc:*` que cubren de la lluvia de ideas al despliegue, 20 agentes especializados, 7 modos de comportamiento y 8 integraciones MCP. Por ejemplo, `/sc:research` hace investigación web profunda con Tavily.
+
+## ¿Cómo lo hace?
+
+Se instala con pipx (`pipx install superclaude`), que despliega los componentes en Claude Code. `superclaude mcp` instala servidores MCP opcionales (Serena, Sequential, Tavily, Context7, Mindbase) mediante airis-mcp-gateway, con mejoras de velocidad y tokens declaradas por el proyecto [DATO NO VERIFICADO]. El instalador como plugin está previsto para la v5.0.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plataforma que configura. | Claude Code primero; luego `pipx install superclaude` y su instalador. |
+| [Context7](context7.md) | MCP opcional para consultar documentación oficial. | `superclaude mcp --servers context7`. |
+| [Serena](serena.md) | MCP opcional de comprensión de código. | Mediante airis-mcp-gateway. |
+
+**Notas:** Inyecta muchas instrucciones: puede chocar con otros marcos como superpowers o ecc; usa uno.
+
+Estado en GitHub: activo · último push 2026-09-27 · última versión publicada v4.3.0 (2026-03-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos |
 | Coste | El coste depende del proveedor o la ruta. El núcleo usa tu acceso a Claude; servidores opcionales como Tavily y otras integraciones pueden cobrar aparte |
 | Equipo | Preparación según la ruta elegida. Claude Code;  Python y pipx según la guía;  copia de configuración revisable |
-
-Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos
-
-## Qué puedes hacer con él
-
-Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.
-
-## Por qué destaca
-
-Usos propuestos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes.
-
-## Cómo funciona
 
 Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos
 

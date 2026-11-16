@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+«Fábrica de software» de código abierto (MIT) de Garry Tan, presidente y CEO de Y Combinator, que convierte Claude Code y otros agentes en un equipo de ingeniería virtual. Muy activo (v1.99.4.0), con canal estable y releases frecuentes.
+
+## ¿Qué hace?
+
+Asigna roles especializados: un CEO que replantea el producto (`/office-hours` escribe un documento de diseño), un jefe de ingeniería que fija la arquitectura, un diseñador contra el «AI slop», un revisor que busca bugs que pasan CI (`/review`), QA que abre un navegador real y reproduce bugs (`/qa`), y `/autoplan` y `/ship` para revisar planes y publicar con tests y revisión.
+
+## ¿Cómo lo hace?
+
+Se clona en `~/.claude/skills/gstack` y se ejecuta `./setup`, que requiere Claude Code, Git y Bun 1.4.2+. Claude Code tiene soporte completo, con hooks que bloquean pasos indebidos. Codex CLI, OpenCode y Cursor tienen soporte experimental (`--host codex|opencode|cursor`), donde las reglas solo son orientativas. Algunas funciones usan Codex CLI con sesión iniciada como segunda opinión.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Host con soporte completo (`--host claude`). | Instala Bun antes de `./setup`. |
+| [Codex CLI](codex.md) | Host experimental y segunda opinión documentada. | Codex CLI con sesión iniciada. |
+| [OpenCode](opencode.md) | Host experimental (`--host opencode`). | `./setup --host opencode`. |
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.99.4.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/garrytan/gstack/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code |
 | Coste | El coste depende del proveedor o la ruta. Se consumen los agentes que intervienen; algunas rutas piden otro CLI autenticado para la revisión cruzada |
 | Equipo | Preparación según la ruta elegida. Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js |
-
-Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code
-
-## Qué puedes hacer con él
-
-Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia.
-
-## Cómo funciona
 
 Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code
 

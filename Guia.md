@@ -366,6 +366,7 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx skills add google/skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar la configuración de un servicio Cloud en un entorno de prueba; Aprender a consultar métricas de Ads sin crear campañas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Gemini CLI](human/fichas/gemini-cli.md) · [gemini-skills](human/fichas/gemini-skills.md) · [Agent Development Kit (ADK)](human/fichas/adk-python.md)<br>
 **Más:** [ficha completa](human/fichas/google-skills.md) · [GitHub](https://github.com/google/skills)
 
 #### 📂 plugins
@@ -374,6 +375,7 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/cursor/plugins/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una integración de un servicio que ya utiliza tu equipo; Estudiar cómo empaquetar reglas y skills para Cursor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [skills](human/fichas/skills.md) · [Agent Skills (Addy Osmani)](human/fichas/agent-skills.md) · [wshobson/agents](human/fichas/wshobson-agents.md)<br>
 **Más:** [ficha completa](human/fichas/plugins.md) · [GitHub](https://github.com/cursor/plugins)
 
 #### 🧠 autoskills
@@ -382,7 +384,7 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx autoskills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar skills adecuadas para un proyecto React existente; Revisar qué archivos de skills se incorporarían sin descargarlos todos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Awesome Agent Skills](human/fichas/awesome-agent-skills.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [SkillSpector](human/fichas/skillspector.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/autoskills.md) · [GitHub](https://github.com/midudev/autoskills)
 
 #### 🧠 gemini-skills
@@ -395,6 +397,7 @@ npx skills add google-gemini/gemini-skills --list
 # Install a specific skill (e.g., gemini-api-dev).
 npx skills add google-gemini/gemini-skills --skill gemini-api-dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar cómo integrar el SDK de Gemini en una aplicación; Preparar una llamada multimodal con datos de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Gemini CLI](human/fichas/gemini-cli.md) · [skills](human/fichas/google-skills.md) · [Agent Development Kit (ADK)](human/fichas/adk-python.md)<br>
 **Más:** [ficha completa](human/fichas/gemini-skills.md) · [GitHub](https://github.com/google-gemini/gemini-skills)
 
 #### 🧠 awesome-agents
@@ -403,6 +406,7 @@ npx skills add google-gemini/gemini-skills --skill gemini-api-dev` (comprobar lo
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/kyrolabs/awesome-agents/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Descubrir un asistente personal que trabaja con modelos locales; Encontrar frameworks para estudiar equipos de agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenClaw](human/fichas/openclaw.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Awesome Agent Skills](human/fichas/awesome-agent-skills.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-agents.md) · [GitHub](https://github.com/kyrolabs/awesome-agents)
 
 ### Metodologías y harness para agentes de código
@@ -483,6 +487,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 cd ~/gstack && ./setup --host auto      # or: ./setup --host codex
 ./setup --status                         # one row per install: host, tier, scope, version, path` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/gstack.md) · [GitHub](https://github.com/garrytan/gstack)
 
 #### 🧭 BMAD Method
@@ -492,7 +497,7 @@ cd ~/gstack && ./setup --host auto      # or: ./setup --host codex
 **Comando documentado:** `npx skills add bmad-code-org/BMAD-METHOD/skills/core-tools --skill '*'
 npx skills add bmad-code-org/BMAD-METHOD/skills/method --skill '*'` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir una idea de producto en un primer cambio acotado; Revisar requisitos y decisiones antes de implementar una función — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [skills](human/fichas/skills.md)<br>
 **Más:** [ficha completa](human/fichas/bmad-method.md) · [GitHub](https://github.com/bmad-code-org/BMAD-METHOD)
 
 #### 🎨 book-to-skill
@@ -502,6 +507,7 @@ npx skills add bmad-code-org/BMAD-METHOD/skills/method --skill '*'` (comprobar l
 **Comando documentado:** `# One command, any host — via the cross-agent skills CLI:
 npx skills add virgiliojr94/book-to-skill` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una guía de consulta a partir de documentación interna; Convertir notas técnicas propias en instrucciones reutilizables del agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Docling](human/fichas/docling.md) · [Claude Code](human/fichas/claude-code.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
 **Más:** [ficha completa](human/fichas/book-to-skill.md) · [GitHub](https://github.com/virgiliojr94/book-to-skill)
 
 #### 🧠 codex-plugin-cc
@@ -512,6 +518,7 @@ npx skills add virgiliojr94/book-to-skill` (comprobar los pasos completos en la 
 
 /plugin install codex@openai-codex` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [grok-plugin-claude-code](human/fichas/grok-plugin-claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/codex-plugin-cc.md) · [GitHub](https://github.com/openai/codex-plugin-cc)
 
 #### 🧠 SuperClaude_Framework
@@ -524,6 +531,7 @@ pipx install superclaude
 # Install commands (installs all 30 slash commands)
 superclaude install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Context7](human/fichas/context7.md) · [Serena](human/fichas/serena.md)<br>
 **Más:** [ficha completa](human/fichas/superclaude-framework.md) · [GitHub](https://github.com/SuperClaude-Org/SuperClaude_Framework)
 
 #### 🎨 elephant-goldfish-model
@@ -533,6 +541,7 @@ superclaude install` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `claude plugin marketplace add google/elephant-goldfish-model
 claude plugin install egm@egm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar alternativas para una funcionalidad antes de elegir una; Revisar una especificación con un contexto de lectura renovado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Spec Kit](human/fichas/spec-kit.md)<br>
 **Más:** [ficha completa](human/fichas/elephant-goldfish-model.md) · [GitHub](https://github.com/google/elephant-goldfish-model)
 
 #### 🧠 claude-token-efficient
@@ -542,6 +551,7 @@ claude plugin install egm@egm` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `git clone https://github.com/drona23/claude-token-efficient
 cp claude-token-efficient/profiles/CLAUDE.coding.md your-project/CLAUDE.md` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir respuestas repetitivas en una sesión larga; Mantener un estilo de comunicación conciso para tareas de código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md) · [Ponytail](human/fichas/ponytail.md)<br>
 **Más:** [ficha completa](human/fichas/claude-token-efficient.md) · [GitHub](https://github.com/drona23/claude-token-efficient)
 
 #### 📂 claude-code-hooks-mastery
@@ -550,6 +560,7 @@ cp claude-token-efficient/profiles/CLAUDE.coding.md your-project/CLAUDE.md` (com
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Registrar cuándo empieza y termina una sesión de trabajo; Comprender un control que revisa una acción antes de ejecutarla — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [ECC](human/fichas/ecc.md) · [claude-code-router](human/fichas/claude-code-router.md)<br>
 **Más:** [ficha completa](human/fichas/claude-code-hooks-mastery.md) · [GitHub](https://github.com/disler/claude-code-hooks-mastery)
 
 #### 🧰 agent-toolkit
@@ -558,7 +569,7 @@ cp claude-token-efficient/profiles/CLAUDE.coding.md your-project/CLAUDE.md` (com
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add softaworks/agent-toolkit` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aclarar una petición ambigua antes de programar; Documentar el contrato entre frontend y backend — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [superpowers](human/fichas/superpowers.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [codex-plugin-cc](human/fichas/codex-plugin-cc.md)<br>
 **Más:** [ficha completa](human/fichas/agent-toolkit.md) · [GitHub](https://github.com/softaworks/agent-toolkit)
 
 #### 🧠 grok-plugin-claude-code
@@ -568,6 +579,7 @@ cp claude-token-efficient/profiles/CLAUDE.coding.md your-project/CLAUDE.md` (com
 **Comando documentado:** `/plugin marketplace add zachdunn/grok-plugin-claude-code
 /plugin install grok-cc@grok-plugin-claude-code` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Solicitar una segunda opinión sobre un cambio pequeño usando Grok; Delegar una tarea acotada desde una sesión de Claude Code — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [codex-plugin-cc](human/fichas/codex-plugin-cc.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/grok-plugin-claude-code.md) · [GitHub](https://github.com/zachdunn/grok-plugin-claude-code)
 
 ---

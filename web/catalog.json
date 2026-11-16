@@ -25276,7 +25276,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aclarar una petición ambigua antes de programar; Documentar el contrato entre frontend y backend",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "superpowers"
+        "claude-code",
+        "codex",
+        "codex-plugin-cc"
       ],
       "alt": [],
       "stack": "Node.js;  agente compatible y una skill escogida",
@@ -25391,6 +25393,44 @@
       "stars": 2684,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Marketplace y destino principal.",
+          "orden_instalacion": "Instala solo los plugins que necesites."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente compatible con `npx skills`; el comando `/codex-plan` también lo usa.",
+          "orden_instalacion": "Instala y autentica Codex antes de usar `/codex-plan`."
+        },
+        {
+          "id": "codex-plugin-cc",
+          "motivo": "Integración oficial más completa para delegar en Codex desde Claude Code (combinación por arquitectura).",
+          "orden_instalacion": "Si usas los dos, evita duplicar comandos de Codex."
+        }
+      ],
+      "que_es": "Skills «con opinión» de @leonardocouy (Softaworks), con licencia MIT y en formato Agent Skills, pensadas para ganar eficiencia en Claude Code. Sin releases; último cambio en marzo de 2026.",
+      "que_hace": "Reúne skills, agentes y comandos de desarrollo y productividad, entre ellos `/codex-plan` (planes con Codex), `/compose-email`, `/explain-pr-changes`, `/sync-branch` y `/viral-tweet`, además de skills como un humanizador.",
+      "como_lo_hace": "Se instala con `npx skills add softaworks/agent-toolkit`, que funciona en Claude Code, Codex, Cursor y otros agentes, o como marketplace de Claude Code. Cada skill, agente o comando es un plugin independiente (`/plugin install <nombre>@agent-toolkit`).",
+      "descripcion_notas": "Se quitó superpowers porque no hay integración.",
+      "descripcion_fuentes": [
+        "https://github.com/softaworks/agent-toolkit/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "softaworks/agent-toolkit",
+        "archived": false,
+        "pushed_at": "2026-03-05",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación.",
       "body": "Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación.",
       "install": {
@@ -25401,8 +25441,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "superpowers",
-          "label": "superpowers"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "codex-plugin-cc",
+          "label": "codex-plugin-cc"
         }
       ],
       "areas": [
@@ -26082,7 +26130,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar skills adecuadas para un proyecto React existente; Revisar qué archivos de skills se incorporarían sin descargarlos todos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-agent-skills"
+        "claude-code",
+        "skillspector",
+        "codex"
       ],
       "alt": [],
       "stack": "Node.js;  un proyecto con sus manifiestos de dependencias",
@@ -26193,6 +26243,45 @@
       "stars": 7000,
       "license": "NOASSERTION",
       "homepage": "https://autoskills.sh",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Destino soportado (`-a claude-code`).",
+          "orden_instalacion": "Ejecuta primero con `--dry-run`."
+        },
+        {
+          "id": "skillspector",
+          "motivo": "Segunda auditoría de las skills instaladas, además de la revisión por IA del registro (combinación por arquitectura).",
+          "orden_instalacion": "Audita después de instalar."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente compatible con skills estándar (combinación por arquitectura).",
+          "orden_instalacion": "Consulta la lista de agentes de la opción `--agent`."
+        }
+      ],
+      "que_es": "CLI de midudev que detecta el stack de un proyecto e instala skills de agente seleccionadas. Licencia CC BY-NC 4.0, que no es de código abierto y prohíbe el uso comercial, y que GitHub marca como NOASSERTION. Activo (v0.4.1).",
+      "que_hace": "Con `npx autoskills` analiza `package.json`, los archivos de Gradle y la configuración del proyecto, elige las skills más adecuadas de su registro auditado y solo descarga y verifica esas. Su modelo de seguridad evita descargar en vivo de repositorios de terceros: los mantenedores sincronizan las skills en un registro propio que revisa una IA en busca de inyección de prompts y ataques a la cadena de suministro.",
+      "como_lo_hace": "Paquete npm con opciones `-y`, `--dry-run` y `-a/--agent` para instalar solo en ciertos agentes, como cursor o claude-code.",
+      "descripcion_notas": "La licencia CC BY-NC impide el uso comercial. Se quitó awesome-agent-skills porque no hay integración.",
+      "descripcion_fuentes": [
+        "https://github.com/midudev/autoskills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "midudev/autoskills",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Ruby",
+        "latest_release": "v0.4.1 (2026-10-14)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia.",
       "body": "CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia.",
       "install": {
@@ -26203,8 +26292,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "awesome-agent-skills",
-          "label": "awesome-agent-skills"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "skillspector",
+          "label": "skillspector"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
         }
       ],
       "areas": [
@@ -27087,7 +27184,11 @@
       "desc": "Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Descubrir un asistente personal que trabaja con modelos locales; Encontrar frameworks para estudiar equipos de agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openclaw",
+        "hermes-agent",
+        "awesome-agent-skills"
+      ],
       "alt": [],
       "stack": "Navegador;  definir qué tarea quieres delegar",
       "repo_url": "https://github.com/kyrolabs/awesome-agents",
@@ -27197,6 +27298,42 @@
       "stars": 3008,
       "license": "",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "openclaw",
+          "motivo": "Uno de los frameworks destacados en la lista (combinación por arquitectura).",
+          "orden_instalacion": "No aplica: es una lista de consulta."
+        },
+        {
+          "id": "hermes-agent",
+          "motivo": "Uno de los frameworks destacados (combinación por arquitectura).",
+          "orden_instalacion": "No aplica."
+        },
+        {
+          "id": "awesome-agent-skills",
+          "motivo": "Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura).",
+          "orden_instalacion": "No aplica."
+        }
+      ],
+      "que_es": "Lista curada de kyrolabs con herramientas y productos de código abierto para construir agentes de IA. GitHub no detecta licencia. Activa; ha lanzado una lista hermana, Awesome ADE, sobre entornos de desarrollo agéntico.",
+      "que_hace": "Clasifica proyectos en frameworks (OpenClaw, Hermes Agent, Transformers Agents…), testing y evaluación, desarrollo de software, investigación, agentes conversacionales, juegos y simulación, memoria y gestión del conocimiento, y automatización (navegador, entre otras). Cada entrada lleva una descripción breve.",
+      "como_lo_hace": "README con enlaces. No se instala.",
+      "descripcion_notas": "Sin licencia declarada. Muchas entradas son proyectos pequeños que se autopromocionan: verifica la madurez de cada uno.",
+      "descripcion_fuentes": [
+        "https://github.com/kyrolabs/awesome-agents/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "kyrolabs/awesome-agents",
+        "archived": false,
+        "pushed_at": "2026-11-11",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.",
       "body": "Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.",
       "install": {
@@ -27205,7 +27342,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "openclaw",
+          "label": "openclaw"
+        },
+        {
+          "id": "hermes-agent",
+          "label": "hermes-agent"
+        },
+        {
+          "id": "awesome-agent-skills",
+          "label": "awesome-agent-skills"
+        }
+      ],
       "areas": [
         "aprender"
       ],
@@ -27234,7 +27384,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "codex"
+        "codex",
+        "skills"
       ],
       "alt": [
         "spec-kit"
@@ -27351,6 +27502,45 @@
       "stars": 55372,
       "license": "NOASSERTION",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Herramienta de código compatible con sus skills (combinación por arquitectura: el README habla de «tu herramienta de IA» sin lista cerrada).",
+          "orden_instalacion": "Instala BMad en la raíz del proyecto y abre el proyecto en el agente."
+        },
+        {
+          "id": "codex",
+          "motivo": "Igual: es compatible con skills estándar mediante `npx skills` (combinación por arquitectura).",
+          "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "skills",
+          "motivo": "Alternativa más ligera para quien quiera controlar el proceso; el autor de esas skills compara las dos explícitamente (combinación por arquitectura).",
+          "orden_instalacion": "Elige una metodología por proyecto."
+        }
+      ],
+      "que_es": "BMad Method es un marco de «desarrollo ágil dirigido por IA» de bmad-code-org. El README declara licencia MIT, aunque GitHub la marca como NOASSERTION. Tiene dos líneas: la v6.12 estable, congelada salvo correcciones (release v6.12.4), y la V7 en alfa de vista previa, que cambia a menudo.",
+      "que_hace": "Lleva una idea o petición de cambio hasta software funcionando sin delegar el razonamiento: qué construir, cómo encaja y cómo evoluciona. Las decisiones quedan explícitas y el contexto se conserva en briefs, especificaciones y documentos de arquitectura, que también pueden llevarse a un flujo de entrega existente. Incluye módulos con roles, por ejemplo un fabricante de skills y un asesor de fundadores.",
+      "como_lo_hace": "La v6.12 se instala con `npx bmad-method install` y requiere Node.js 20.12+ y Python 3.10+. La V7 se instala con `npx skills add bmad-code-org/BMAD-METHOD/skills/<módulo>` y requiere Node, npm y Git. Desde la herramienta de IA se invocan `bmad-build` para cambiar algo y `bmad-help` para orientarse.",
+      "descripcion_notas": "Alternativa (elige una): spec-kit. Usa la v6.12 si necesitas estabilidad.",
+      "descripcion_fuentes": [
+        "https://github.com/bmad-code-org/BMAD-METHOD/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "bmad-code-org/BMAD-METHOD",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "latest_release": "v6.12.4 (2026-10-14)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.",
       "body": "Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.",
       "install": {
@@ -27372,6 +27562,10 @@
         {
           "id": "codex",
           "label": "codex"
+        },
+        {
+          "id": "skills",
+          "label": "skills"
         }
       ],
       "areas": [
@@ -27406,7 +27600,11 @@
       "desc": "Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una guía de consulta a partir de documentación interna; Convertir notas técnicas propias en instrucciones reutilizables del agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "docling",
+        "claude-code",
+        "hermes-agent"
+      ],
       "alt": [],
       "stack": "Agente con Agent Skills;  un documento propio o autorizado de pocas páginas",
       "repo_url": "https://github.com/virgiliojr94/book-to-skill",
@@ -27520,6 +27718,45 @@
       "stars": 37913,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "docling",
+          "motivo": "Extractor recomendado para libros técnicos.",
+          "orden_instalacion": "`pip3 install docling` antes de convertir PDF técnicos."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente compatible.",
+          "orden_instalacion": "Instala con npx skills."
+        },
+        {
+          "id": "hermes-agent",
+          "motivo": "Agente compatible citado.",
+          "orden_instalacion": "Igual que arriba."
+        }
+      ],
+      "que_es": "Skill de virgiliojr94 (MIT) que convierte libros técnicos, carpetas de documentos o colecciones de fuentes en una skill de agente unificada. Activa (v1.4.0).",
+      "que_hace": "Con `/book-to-skill ./libro.pdf` destila el libro en marcos, reglas de decisión, antipatrones y un archivo por capítulo, es decir, estructura y no un resumen. Después el agente carga solo el capítulo pertinente al preguntar (`/mi-libro replicación`). El README declara entre 24 y 51 veces menos tokens que meter el libro entero en el contexto [DATO NO VERIFICADO: medición propia]. Acepta PDF, EPUB, DOCX, MD, HTML, RTF y más.",
+      "como_lo_hace": "Combina un extractor determinista en Python (documento → texto limpio y metadatos) con un generador guiado por especificación que sigue el agente. Para PDF usa pdftotext (poppler) en textos y Docling para contenido técnico con tablas, código o fórmulas; `extract.py --check` muestra qué extractores hay. Se instala con `npx skills add virgiliojr94/book-to-skill` en Copilot CLI, Amp, Claude Code, Codex, Hermes Agent, OpenCode y otros.",
+      "descripcion_notas": "Convierte solo libros cuyos derechos tengas: la skill generada contiene el contenido del libro.",
+      "descripcion_fuentes": [
+        "https://github.com/virgiliojr94/book-to-skill/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "virgiliojr94/book-to-skill",
+        "archived": false,
+        "pushed_at": "2026-11-08",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v1.4.0 (2026-08-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.",
       "body": "Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.",
       "install": {
@@ -27528,7 +27765,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "docling",
+          "label": "docling"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "hermes-agent",
+          "label": "hermes-agent"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -27773,7 +28023,11 @@
       "desc": "Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Registrar cuándo empieza y termina una sesión de trabajo; Comprender un control que revisa una acción antes de ejecutarla",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "ecc",
+        "claude-code-router"
+      ],
       "alt": [],
       "stack": "Claude Code y uv;  revisar solo un ejemplo de hook y sus dependencias",
       "repo_url": "https://github.com/disler/claude-code-hooks-mastery",
@@ -27886,6 +28140,43 @@
       "stars": 3986,
       "license": "",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Los hooks se configuran en `.claude/settings.json`.",
+          "orden_instalacion": "Copia los hooks que necesites y revísalos: se ejecutan con tus permisos."
+        },
+        {
+          "id": "ecc",
+          "motivo": "Marco que también usa hooks; sirve de ejemplo de producción (combinación por arquitectura).",
+          "orden_instalacion": "No mezcles hooks de ambos sin revisar los conflictos."
+        },
+        {
+          "id": "claude-code-router",
+          "motivo": "Enrutar Claude Code a otros modelos mientras experimentas con hooks (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Repositorio didáctico de disler (IndyDevDan) para dominar los hooks de Claude Code, con subagentes, estilos de salida y líneas de estado. Sin licencia declarada; último cambio en marzo de 2026.",
+      "que_hace": "Muestra el ciclo de vida y los payloads de todos los hooks, el control de flujo con códigos de error, un análisis a fondo de `UserPromptSubmit`, subagentes, un sistema de validación por equipos, una colección de estilos de salida y líneas de estado personalizadas, con ejemplos como avisos de voz.",
+      "como_lo_hace": "Los hooks son scripts Python de un solo archivo ejecutados con uv (dependencias declaradas en el propio script, sin gestionar entornos). Requiere uv y Claude Code; opcionalmente usa ElevenLabs (con su servidor MCP), OpenAI y Anthropic para voz y LLM.",
+      "descripcion_notas": "Sin licencia: úsalo como referencia didáctica.",
+      "descripcion_fuentes": [
+        "https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "disler/claude-code-hooks-mastery",
+        "archived": false,
+        "pushed_at": "2026-03-04",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.",
       "body": "Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.",
       "install": {
@@ -27894,7 +28185,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "ecc",
+          "label": "ecc"
+        },
+        {
+          "id": "claude-code-router",
+          "label": "claude-code-router"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code"
@@ -27923,7 +28227,11 @@
       "desc": "Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir respuestas repetitivas en una sesión larga; Mantener un estilo de comunicación conciso para tareas de código",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "andrej-karpathy-skills",
+        "ponytail"
+      ],
       "alt": [],
       "stack": "Claude Code;  copia revisable de las instrucciones del proyecto",
       "repo_url": "https://github.com/drona23/claude-token-efficient",
@@ -28036,6 +28344,43 @@
       "stars": 6175,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Formato CLAUDE.md.",
+          "orden_instalacion": "Copia el archivo a la raíz del proyecto y mantenlo corto."
+        },
+        {
+          "id": "andrej-karpathy-skills",
+          "motivo": "Principios compatibles contra la sobreingeniería (combinación por arquitectura).",
+          "orden_instalacion": "Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada."
+        },
+        {
+          "id": "ponytail",
+          "motivo": "Enfoque parecido aplicado al código (combinación por arquitectura).",
+          "orden_instalacion": "Evita reglas contradictorias."
+        }
+      ],
+      "que_es": "Un archivo `CLAUDE.md` de drona23 (MIT) para que Claude responda de forma concisa y gaste menos tokens. Sin releases; último cambio en junio de 2026.",
+      "que_hace": "Elimina aperturas y cierres de cortesía, guiones largos y caracteres Unicode que rompen parsers, la repetición de la pregunta, las sugerencias no pedidas, la sobreingeniería y el dar la razón ante afirmaciones incorrectas. Su prueba con 5 prompts mide un 63 % menos de palabras [DATO NO VERIFICADO: indicador direccional, no estadístico según el propio README].",
+      "como_lo_hace": "Se pega una regla corta en el chat o se coloca el `CLAUDE.md` en el proyecto. El README advierte que los archivos de instrucciones añaden tokens de entrada en cada turno y solo se probó con Claude.",
+      "descripcion_fuentes": [
+        "https://github.com/drona23/claude-token-efficient/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "drona23/claude-token-efficient",
+        "archived": false,
+        "pushed_at": "2026-06-16",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto.",
       "body": "Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto.",
       "install": {
@@ -28044,7 +28389,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "andrej-karpathy-skills",
+          "label": "andrej-karpathy-skills"
+        },
+        {
+          "id": "ponytail",
+          "label": "ponytail"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code"
@@ -28075,7 +28433,11 @@
       "desc": "Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "grok-plugin-claude-code"
+      ],
       "alt": [],
       "stack": "Claude Code;  Codex CLI autenticado y acceso a su cuenta",
       "repo_url": "https://github.com/openai/codex-plugin-cc",
@@ -28190,6 +28552,44 @@
       "stars": 35128,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plataforma anfitriona del plugin.",
+          "orden_instalacion": "Añade el marketplace, instala y recarga los plugins."
+        },
+        {
+          "id": "codex",
+          "motivo": "Motor al que delega.",
+          "orden_instalacion": "Instala Codex e inicia sesión (`codex login`) antes de `/codex:setup`."
+        },
+        {
+          "id": "grok-plugin-claude-code",
+          "motivo": "Reimplementación no oficial con la misma forma para Grok CLI; sirve para tener una segunda opinión de otro modelo.",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Plugin oficial de OpenAI (Apache 2.0) para usar Codex desde Claude Code. Versión v1.0.6; último cambio en julio de 2026.",
+      "que_hace": "Añade `/codex:review` (revisión de solo lectura), `/codex:adversarial-review` (revisión crítica dirigida) y comandos para delegar trabajo, traspasar sesiones y gestionar tareas en segundo plano (`/codex:rescue`, `/codex:transfer`, `/codex:status`, `/codex:result`, `/codex:cancel`), además del subagente `codex:codex-rescue`.",
+      "como_lo_hace": "Se instala con `/plugin marketplace add openai/codex-plugin-cc` y `/plugin install codex@openai-codex`, y se configura con `/codex:setup`, que puede instalar Codex (`npm install -g @openai/codex`). Requiere Node.js 18.18+ y una suscripción de ChatGPT (incluida la gratuita) o una clave de API de OpenAI; el uso cuenta en los límites de Codex.",
+      "descripcion_fuentes": [
+        "https://github.com/openai/codex-plugin-cc/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "openai/codex-plugin-cc",
+        "archived": false,
+        "pushed_at": "2026-07-08",
+        "license": "Apache-2.0",
+        "primary_language": "JavaScript",
+        "latest_release": "v1.0.6 (2026-07-08)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas.",
       "body": "Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas.",
       "install": {
@@ -28198,7 +28598,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "grok-plugin-claude-code",
+          "label": "grok-plugin-claude-code"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -28450,7 +28863,11 @@
       "desc": "Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar alternativas para una funcionalidad antes de elegir una; Revisar una especificación con un contexto de lectura renovado",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "spec-kit"
+      ],
       "alt": [],
       "stack": "Cliente compatible;  una propuesta o documento propio para revisar",
       "repo_url": "https://github.com/google/elephant-goldfish-model",
@@ -28563,6 +28980,44 @@
       "stars": 19256,
       "license": "Apache-2.0",
       "homepage": "https://egm.dev",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Instalación documentada (`egm@egm`).",
+          "orden_instalacion": "Instala y abre una sesión nueva."
+        },
+        {
+          "id": "codex",
+          "motivo": "Instalación documentada.",
+          "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "spec-kit",
+          "motivo": "Revisar con ojos frescos las especificaciones que genera Spec Kit (combinación por arquitectura).",
+          "orden_instalacion": "Genera la especificación y pásala por `egm-review`."
+        }
+      ],
+      "que_es": "EGM, plugin de código abierto de Google (Apache 2.0) para asistentes de IA, que separa diseñar con contexto de revisar con ojos frescos. Muy reciente (v0.1.1).",
+      "que_hace": "El «elefante» conserva el contexto del proyecto y redacta la especificación. Los revisores «pez dorado» examinan el borrador y las fuentes sin la conversación previa, para sacar a la luz supuestos implícitos y puntos ciegos. Sus comandos (`egm-brainstorm`, `egm-draft`, `egm-review`, `egm-resolve`, `egm-bootstrap`, `egm-drift`) sirven para especificaciones de software y, con `/egm-review-loop`, para otros documentos; también revisa documentos existentes contra el código vivo.",
+      "como_lo_hace": "Se instala como plugin completo en Claude Code (`claude plugin marketplace add google/elephant-goldfish-model`), Codex CLI (`codex plugin marketplace add ...`), Antigravity (`agy plugin install ...`) y las apps de escritorio de ChatGPT y Codex. Tiene guías para Claude Cowork y ChatGPT Work.",
+      "descripcion_fuentes": [
+        "https://github.com/google/elephant-goldfish-model/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google/elephant-goldfish-model",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "latest_release": "v0.1.1 (2026-11-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.",
       "body": "Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.",
       "install": {
@@ -28571,7 +29026,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "spec-kit",
+          "label": "spec-kit"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -28609,7 +29077,11 @@
       "desc": "Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar cómo integrar el SDK de Gemini en una aplicación; Preparar una llamada multimodal con datos de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "gemini-cli",
+        "google-skills",
+        "adk-python"
+      ],
       "alt": [],
       "stack": "Agente compatible;  cuenta Gemini solo si el proyecto generado llama su API",
       "repo_url": "https://github.com/google-gemini/gemini-skills",
@@ -28722,6 +29194,43 @@
       "stars": 4489,
       "license": "Apache-2.0",
       "homepage": "https://ai.google.dev/gemini-api/docs",
+      "combina_con": [
+        {
+          "id": "gemini-cli",
+          "motivo": "Agente de Google que usa skills estándar (combinación por arquitectura).",
+          "orden_instalacion": "Instala con npx skills eligiendo Gemini CLI."
+        },
+        {
+          "id": "google-skills",
+          "motivo": "La skill de Vertex AI se movió allí.",
+          "orden_instalacion": "Instala `skills/cloud/gemini-api` desde google/skills si usas Vertex."
+        },
+        {
+          "id": "adk-python",
+          "motivo": "Construir agentes sobre la API de Gemini con el ADK (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Biblioteca oficial de Google (Apache 2.0) de skills para la API de Gemini, su SDK y la interacción con los modelos. Activa, sin releases.",
+      "que_hace": "Cubre el desfase de conocimiento de los modelos sobre la API de Gemini y sus buenas prácticas, por ejemplo la circulación de firmas de pensamiento o los cambios del SDK. Su skill principal, `gemini-api-dev`, sirve para construir apps con la API; según Google, eleva la generación de código correcto al 87 % con Gemini 3 Flash y al 96 % con Gemini 3.1 Pro [DATO NO VERIFICADO: evaluación propia]. La skill de Vertex AI se trasladó a google/skills.",
+      "como_lo_hace": "Skills en formato Agent Skills instalables con `npx skills add google-gemini/gemini-skills` (con `--list` o `--skill`) y en otros asistentes y gestores de paquetes.",
+      "descripcion_fuentes": [
+        "https://github.com/google-gemini/gemini-skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google-gemini/gemini-skills",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.",
       "body": "Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.",
       "install": {
@@ -28730,7 +29239,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "gemini-cli",
+          "label": "gemini-cli"
+        },
+        {
+          "id": "google-skills",
+          "label": "google-skills"
+        },
+        {
+          "id": "adk-python",
+          "label": "adk-python"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -28770,7 +29292,11 @@
       "desc": "Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Solicitar una segunda opinión sobre un cambio pequeño usando Grok; Delegar una tarea acotada desde una sesión de Claude Code",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex-plugin-cc",
+        "codex"
+      ],
       "alt": [],
       "stack": "Claude Code;  Grok CLI instalado y autenticado;  Node.js",
       "repo_url": "https://github.com/zachdunn/grok-plugin-claude-code",
@@ -28884,6 +29410,44 @@
       "stars": 30,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plataforma anfitriona.",
+          "orden_instalacion": "Instala el plugin y ejecuta `/grok-cc:setup`."
+        },
+        {
+          "id": "codex-plugin-cc",
+          "motivo": "Su modelo de referencia; juntos permiten pedir segundas opiniones a dos modelos distintos.",
+          "orden_instalacion": "Independientes."
+        },
+        {
+          "id": "codex",
+          "motivo": "Alternativa de delegación con seguimiento de tareas (combinación por arquitectura).",
+          "orden_instalacion": "A través de codex-plugin-cc."
+        }
+      ],
+      "que_es": "Plugin no oficial de zachdunn (MIT) para Claude Code que delega tareas en Grok CLI de xAI. Versión v0.2.0; último cambio en junio de 2026.",
+      "que_hace": "Ofrece el subagente `grok-rescue` y el comando `/grok-cc:rescue` para delegar programación, depuración o revisión en Grok como agente paralelo, y `/grok-cc:setup` para verificar la instalación. Es una reimplementación sencilla de codex-plugin-cc, pero más ligera: usa el modo headless de un disparo de Grok, sin registro de tareas, estado ni cancelación.",
+      "como_lo_hace": "Un runtime Node (`grok-companion.mjs`) envuelve `grok -p --output-format json`. Se instala con `/plugin marketplace add zachdunn/grok-plugin-claude-code` y `/plugin install grok-cc@...`. Requiere acceso a Grok CLI y el binario `grok` en el PATH.",
+      "descripcion_fuentes": [
+        "https://github.com/zachdunn/grok-plugin-claude-code/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "zachdunn/grok-plugin-claude-code",
+        "archived": false,
+        "pushed_at": "2026-06-13",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "v0.2.0 (2026-06-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar.",
       "body": "Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar.",
       "install": {
@@ -28892,7 +29456,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex-plugin-cc",
+          "label": "codex-plugin-cc"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code"
@@ -28921,7 +29498,11 @@
       "desc": "Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
       "alt": [],
       "stack": "Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js",
       "repo_url": "https://github.com/garrytan/gstack",
@@ -29034,6 +29615,44 @@
       "stars": 141589,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Host con soporte completo (`--host claude`).",
+          "orden_instalacion": "Instala Bun antes de `./setup`."
+        },
+        {
+          "id": "codex",
+          "motivo": "Host experimental y segunda opinión documentada.",
+          "orden_instalacion": "Codex CLI con sesión iniciada."
+        },
+        {
+          "id": "opencode",
+          "motivo": "Host experimental (`--host opencode`).",
+          "orden_instalacion": "`./setup --host opencode`."
+        }
+      ],
+      "que_es": "«Fábrica de software» de código abierto (MIT) de Garry Tan, presidente y CEO de Y Combinator, que convierte Claude Code y otros agentes en un equipo de ingeniería virtual. Muy activo (v1.99.4.0), con canal estable y releases frecuentes.",
+      "que_hace": "Asigna roles especializados: un CEO que replantea el producto (`/office-hours` escribe un documento de diseño), un jefe de ingeniería que fija la arquitectura, un diseñador contra el «AI slop», un revisor que busca bugs que pasan CI (`/review`), QA que abre un navegador real y reproduce bugs (`/qa`), y `/autoplan` y `/ship` para revisar planes y publicar con tests y revisión.",
+      "como_lo_hace": "Se clona en `~/.claude/skills/gstack` y se ejecuta `./setup`, que requiere Claude Code, Git y Bun 1.4.2+. Claude Code tiene soporte completo, con hooks que bloquean pasos indebidos. Codex CLI, OpenCode y Cursor tienen soporte experimental (`--host codex|opencode|cursor`), donde las reglas solo son orientativas. Algunas funciones usan Codex CLI con sesión iniciada como segunda opinión.",
+      "descripcion_fuentes": [
+        "https://github.com/garrytan/gstack/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "garrytan/gstack",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.99.4.0 (2026-11-15)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.",
       "body": "Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.",
       "install": {
@@ -29042,7 +29661,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "opencode",
+          "label": "opencode"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -29075,7 +29707,11 @@
       "desc": "Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una integración de un servicio que ya utiliza tu equipo; Estudiar cómo empaquetar reglas y skills para Cursor",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "skills",
+        "agent-skills",
+        "wshobson-agents"
+      ],
       "alt": [],
       "stack": "Cursor;  revisar el plugin concreto y sus credenciales",
       "repo_url": "https://github.com/cursor/plugins",
@@ -29185,6 +29821,43 @@
       "stars": 16314,
       "license": "",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "skills",
+          "motivo": "Skills de ingeniería instalables también en Cursor (combinación por arquitectura).",
+          "orden_instalacion": "`npx skills add mattpocock/skills -a cursor`."
+        },
+        {
+          "id": "agent-skills",
+          "motivo": "Skills de ingeniería con guía de instalación para Cursor.",
+          "orden_instalacion": "Sigue la sección de Cursor."
+        },
+        {
+          "id": "wshobson-agents",
+          "motivo": "Catálogo de plugins con marketplace para Cursor.",
+          "orden_instalacion": "Instala desde su marketplace."
+        }
+      ],
+      "que_es": "Repositorio oficial de Cursor con plugins para herramientas de desarrollo, frameworks y productos SaaS. Muy activo; GitHub no detecta licencia de repositorio.",
+      "que_hace": "Contiene unos 130 plugins: propios de Cursor (teaching, continual-learning para actualizar AGENTS.md, cursor-team-kit, thermos para revisiones profundas de ramas, create-plugin, ralph-loop, agent-compatibility…) e integraciones de terceros como Ashby o Workable, organizados por categoría.",
+      "como_lo_hace": "Cada plugin es un directorio con su manifiesto `.cursor-plugin/plugin.json` que aparece en el marketplace de Cursor.",
+      "descripcion_notas": "Sin licencia declarada en la raíz; revisa la de cada plugin de terceros.",
+      "descripcion_fuentes": [
+        "https://github.com/cursor/plugins/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "cursor/plugins",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "primary_language": "TypeScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.",
       "body": "Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.",
       "install": {
@@ -29193,7 +29866,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "skills",
+          "label": "skills"
+        },
+        {
+          "id": "agent-skills",
+          "label": "agent-skills"
+        },
+        {
+          "id": "wshobson-agents",
+          "label": "wshobson-agents"
+        }
+      ],
       "areas": [
         "aprender"
       ],
@@ -29429,7 +30115,11 @@
       "desc": "Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar la configuración de un servicio Cloud en un entorno de prueba; Aprender a consultar métricas de Ads sin crear campañas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "gemini-cli",
+        "gemini-skills",
+        "adk-python"
+      ],
       "alt": [],
       "stack": "Agente compatible;  elegir una skill del producto de Google que usarás",
       "repo_url": "https://github.com/google/skills",
@@ -29542,6 +30232,43 @@
       "stars": 24291,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "gemini-cli",
+          "motivo": "Agente de Google compatible con skills estándar (combinación por arquitectura).",
+          "orden_instalacion": "Selecciónalo en el instalador."
+        },
+        {
+          "id": "gemini-skills",
+          "motivo": "Skills de la API de Gemini (la de Vertex se movió aquí).",
+          "orden_instalacion": "Instala ambas si trabajas con AI Studio y con Vertex."
+        },
+        {
+          "id": "adk-python",
+          "motivo": "Construir agentes que se despliegan en Google Cloud (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Repositorio oficial de Google (Apache 2.0) con Agent Skills para sus productos, sobre todo Google Cloud. Muy activo, sin releases.",
+      "que_hace": "Ofrece skills para empezar en Google Cloud (autenticación IAM, onboarding, Foundation Builder), soluciones multiproducto (arquitectura, seguridad multiagente con Agent Gateway, analítica agéntica, lakehouse), IA/ML (incluida la skill de la API de Gemini en Vertex), infraestructura, bases de datos y analítica, herramientas de desarrollo, desarrollo de aplicaciones, gestión, Well-Architected Framework, seguridad, hosting y publicidad.",
+      "como_lo_hace": "Se instala con `npx skills add google/skills`, eligiendo skills, agentes y alcance (proyecto o global), y se actualiza con `npx skills update`. Requiere Node.js.",
+      "descripcion_fuentes": [
+        "https://github.com/google/skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google/skills",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.",
       "body": "Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.",
       "install": {
@@ -29550,7 +30277,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "gemini-cli",
+          "label": "gemini-cli"
+        },
+        {
+          "id": "gemini-skills",
+          "label": "gemini-skills"
+        },
+        {
+          "id": "adk-python",
+          "label": "adk-python"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -30007,7 +30747,11 @@
       "desc": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "context7",
+        "serena"
+      ],
       "alt": [],
       "stack": "Claude Code;  Python y pipx según la guía;  copia de configuración revisable",
       "repo_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
@@ -30121,6 +30865,45 @@
       "stars": 23937,
       "license": "MIT",
       "homepage": "https://superclaude.netlify.app/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plataforma que configura.",
+          "orden_instalacion": "Claude Code primero; luego `pipx install superclaude` y su instalador."
+        },
+        {
+          "id": "context7",
+          "motivo": "MCP opcional para consultar documentación oficial.",
+          "orden_instalacion": "`superclaude mcp --servers context7`."
+        },
+        {
+          "id": "serena",
+          "motivo": "MCP opcional de comprensión de código.",
+          "orden_instalacion": "Mediante airis-mcp-gateway."
+        }
+      ],
+      "que_es": "Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.",
+      "que_hace": "Convierte Claude Code en una plataforma de desarrollo estructurada mediante inyección de instrucciones de comportamiento: 30 comandos `/sc:*` que cubren de la lluvia de ideas al despliegue, 20 agentes especializados, 7 modos de comportamiento y 8 integraciones MCP. Por ejemplo, `/sc:research` hace investigación web profunda con Tavily.",
+      "como_lo_hace": "Se instala con pipx (`pipx install superclaude`), que despliega los componentes en Claude Code. `superclaude mcp` instala servidores MCP opcionales (Serena, Sequential, Tavily, Context7, Mindbase) mediante airis-mcp-gateway, con mejoras de velocidad y tokens declaradas por el proyecto [DATO NO VERIFICADO]. El instalador como plugin está previsto para la v5.0.",
+      "descripcion_notas": "Inyecta muchas instrucciones: puede chocar con otros marcos como superpowers o ecc; usa uno.",
+      "descripcion_fuentes": [
+        "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "11-skills-plugins-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "SuperClaude-Org/SuperClaude_Framework",
+        "archived": false,
+        "pushed_at": "2026-09-27",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v4.3.0 (2026-03-22)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
       "body": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
       "install": {
@@ -30129,7 +30912,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "context7",
+          "label": "context7"
+        },
+        {
+          "id": "serena",
+          "label": "serena"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code"
