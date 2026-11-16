@@ -89,7 +89,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Enlaces
 
-- 🔗 Repositorio original: [https://huggingface.co/moonshotai/Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
+- 🔗 Repositorio original: [moonshotai/Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 - 🌐 Web: <https://www.kimi.com/code>
 
 ## Fuentes y alcance de revisión

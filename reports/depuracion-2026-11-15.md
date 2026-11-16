@@ -91,4 +91,4 @@ En modo mantenimiento pero vigentes: `rasa`, `graphrag`. Poco activos (15 a 24 m
 - `scripts/daily_stars.py` omite los repos de `data/retired.json`, aunque sigan con star.
 - El registro histórico de la revisión de 679 fichas (`curation/review-679-2026-11-14/`, `reports/review-679-2026-11-14.json`) no se modifica. Las pruebas comprueban que lo retirado está documentado.
 
-`pdfding` queda pendiente: sigue en el catálogo con su enlace de GitHub archivado hasta decidir si se cambia a Codeberg.
+`pdfding` se actualizó después con aprobación: su ficha enlaza `codeberg.org/mrmn/PdfDing`, la revisión toma como fuente el README de Codeberg (SHA `5a397cd`) y deja de mostrarse como archivado. Conserva su identidad de GitHub para que la sincronización de stars no lo duplique.

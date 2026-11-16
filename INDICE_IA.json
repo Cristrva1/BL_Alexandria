@@ -16757,7 +16757,6 @@
    "gh": "mrmn2/PdfDing",
    "lib": false,
    "pick": false,
-   "status": "archived",
    "one": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
    "alt": [],
    "doc": "human/fichas/pdfding.md",
@@ -16770,7 +16769,7 @@
    "routes": [
     "no_api"
    ],
-   "source_archived": true
+   "source_archived": false
   },
   {
    "id": "slidev",

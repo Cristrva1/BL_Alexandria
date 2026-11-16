@@ -364,9 +364,11 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
 
     links = []
     if repo.get("repo_url"):
-        label = repo.get("gh") or repo["repo_url"].replace("https://github.com/", "")
-        host = "GitHub" if repo.get("gh") else "Repositorio original"
-        icon = "🐙" if repo.get("gh") else "🔗"
+        on_github = repo["repo_url"].startswith("https://github.com/")
+        # A project that moved (e.g. to Codeberg) keeps its GitHub identity but links to the canonical source.
+        label = repo["repo_url"].split("://", 1)[-1].split("/", 1)[-1] if not on_github else (repo.get("gh") or repo["repo_url"].replace("https://github.com/", ""))
+        host = "GitHub" if on_github else "Codeberg" if "codeberg.org/" in repo["repo_url"] else "Repositorio original"
+        icon = "🐙" if on_github else "🔗"
         links.append(f"- {icon} {host}: [{label}]({repo['repo_url']})")
     if repo.get("homepage"):
         links.append(f"- 🌐 Web: <{repo['homepage']}>")

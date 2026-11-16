@@ -10,8 +10,6 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-> ⚠️ Archivado en GitHub: ya no recibe cambios.
-
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -38,7 +36,7 @@ Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde va
 
 ## Cómo funciona
 
-El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
+Se instala con Docker siguiendo la guía oficial. El código y las versiones nuevas se publican en Codeberg; el repositorio de GitHub quedó archivado como copia antigua
 
 ## Cómo empezar
 
@@ -80,7 +78,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---|
 | Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
+**Limitaciones:** El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia
 
 ## Stack y modelos
 
@@ -98,8 +96,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Enlaces
 
-- 🐙 GitHub: [mrmn2/PdfDing](https://github.com/mrmn2/PdfDing)
-- 🌐 Web: <https://codeberg.org/mrmn/PdfDing>
+- 🔗 Codeberg: [mrmn/PdfDing](https://codeberg.org/mrmn/PdfDing)
+- 🌐 Web: <https://www.pdfding.com>
 
 ## Fuentes y alcance de revisión
 
@@ -107,8 +105,8 @@ Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalaci
 
 Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
-- [Fuente 1](https://github.com/mrmn2/PdfDing/blob/master/README.md)
-- [Fuente 2](https://codeberg.org/mrmn/PdfDing)
+- [Fuente 1](https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md)
+- [Fuente 2](https://docs.pdfding.com/getting_started/docker/)
 
 ---
 
