@@ -29,6 +29,7 @@ Usa MLX como backend de inferencia y MLX distributed para la comunicación, con 
 | [Open WebUI](open-webui.md) | Interfaz de chat apuntando a la API compatible con OpenAI u Ollama del clúster (combinación por arquitectura). | Clúster exo en marcha primero; registra http://<nodo>:52415 en Open WebUI. |
 | [LibreChat](librechat.md) | Endpoint personalizado compatible con OpenAI para un chat multiusuario sobre el clúster (combinación por arquitectura). | Igual que arriba; asegúrate de que el contenedor llega a la IP del nodo. |
 | [litellm](litellm.md) | Unificar el clúster exo con proveedores en la nube detrás de un solo proxy (combinación por arquitectura). | exo primero; añádelo a LiteLLM como modelo compatible con OpenAI. |
+| [MLX LM](mlx-lm.md) | Combinación recíproca: MLX LM lo enlaza como «exo usa MLX y mlx-lm como backend de inferencia para repartir modelos entre varios Mac». | Orden indicado desde MLX LM: Instala exo en cada equipo con versiones iguales de MLX y mlx-lm; después crea el clúster. |
 
 **Notas:** Todos los nodos deben ejecutar la misma versión de exo. El rendimiento en Linux (solo CPU) no es comparable con el de Apple Silicon.
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+SRT 白板动画, skill que convierte subtítulos SRT en vídeos de pizarra dibujados a mano siguiendo la narración, de @geeklee. Licencia MIT. Tiene ~5.6k estrellas (v1.0.0) y el README está en chino.
+
+## ¿Qué hace?
+
+Combina máscaras por zonas con trazos de pluma continuos: cada elemento aparece al ritmo de los subtítulos sobre papel color crema. Sirve para explicaciones, narraciones y cursos.
+
+## ¿Cómo lo hace?
+
+Trae scripts Python con entorno virtual propio (`python scripts/prepare_env.py`) y un parser de SRT con duración objetivo (`parse_srt.py`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisperX](whisperx.md) | Generar el SRT desde audio. (combinación por arquitectura) | Transcribe y exporta SRT. |
+| [Kokoro](kokoro.md) | Locución del guion. (combinación por arquitectura) | Genera el audio. |
+| [manim](manim-community.md) | Otro estilo explicativo. (combinación por arquitectura) | Elige según el formato. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-07-27 · última versión publicada v1.0.0 (2026-07-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/geeklee/srt-whiteboard-animation/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Incluye metadatos Codex; no se confirma una instalación específica equivalente de otros hosts y el SRT no aporta automáticamente una narración |
 | Coste | Consumo del agente que ya utilizas. El render básico usa recursos propios y el agente; modelos o medios añadidos tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Agente con skill; Python y renderizadores del proyecto; SRT y recursos autorizados |
-
-Incluye metadatos Codex; no se confirma una instalación específica equivalente de otros hosts y el SRT no aporta automáticamente una narración
-
-## Qué puedes hacer con él
-
-Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT.
-
-## Por qué destaca
-
-Usos propuestos: Crear una explicación de pizarra; Prototipar una secuencia narrada.
-
-## Cómo funciona
 
 Incluye metadatos Codex; no se confirma una instalación específica equivalente de otros hosts y el SRT no aporta automáticamente una narración
 

@@ -26,9 +26,10 @@ Aplicación Ruby on Rails que se despliega con `docker run -p 3000:3000` o Docke
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Disparar flujos al completar una firma o crear envíos desde otros sistemas con su API y webhooks (combinación por arquitectura). | Crea la clave de API y el webhook en DocuSeal antes del flujo. |
+| [activepieces](activepieces.md) | Disparar flujos al completar una firma o crear envíos desde otros sistemas con su API y webhooks (combinación por arquitectura). | Crea la clave de API y el webhook en DocuSeal antes del flujo. |
 | [twenty-main](twenty-main.md) | Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura). | Usa un flujo intermedio con el webhook de DocuSeal. |
 | [Stirling-PDF](stirling-pdf.md) | Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura). | Independientes; cambia puertos si coinciden. |
+| [pdfcraft](pdfcraft.md) | Combinación recíproca: pdfcraft lo enlaza como «Preparar el PDF (unir, comprimir) antes de enviarlo a firmar (combinación por arquitectura)». | Orden indicado desde pdfcraft: Independientes. |
 
 **Notas:** Para producción usa PostgreSQL en lugar de SQLite y configura SMTP con SPF/DKIM.
 

@@ -30,6 +30,14 @@ Requiere Node.js y npm: `npx rea-agents setup` registra el servidor en el agente
 | [ghidra](ghidra.md) | Motor de análisis nativo compatible, según el README. | Instala Ghidra (JDK incluido) antes de configurar REA. |
 | [jadx](jadx.md) | Análisis de APK mediante JADX headless. | Instala JADX y un JDK completo. |
 | [Codex CLI](codex.md) | Plugin de Codex disponible. | Ejecuta el setup y elige Codex. |
+| [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Listado como herramienta destacada». | Orden indicado desde awesome-ai-reverse-engineering: Consulta su ficha antes de instalarlo. |
+| [awesome-reverse-engineering](awesome-reverse-engineering.md) | Combinación recíproca: awesome-reverse-engineering lo enlaza como «Herramienta destacada por los mismos autores». | Orden indicado desde awesome-reverse-engineering: Lee la sección de REA y su documentación antes de instalarlo. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[bla](bla.md) · [craft-anything](craft-anything.md)
 
 **Notas:** Sin alternativas declaradas. Revisa qué escribe el setup en la configuración de tu agente. Úsalo solo con software propio o con autorización escrita.
 

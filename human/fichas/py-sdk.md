@@ -27,14 +27,14 @@ Se instala con `uv add polymarket-client` o `pip install polymarket-client`. Ope
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [ccxt](ccxt.md) | CCXT también cubre mercados de predicción. (combinación por arquitectura) | Compara cobertura antes de elegir. |
-| [company-pixel-office](company-pixel-office.md) | Visualizar un equipo de agentes que opera en Polymarket. (combinación por arquitectura) | Alimenta la oficina con datos del SDK. |
-| [n8n](n8n.md) | Alertas de mercados o posiciones. (combinación por arquitectura) | Ejecuta scripts del SDK y envía resultados a n8n. |
+| [nautilus_trader](nautilus-trader.md) | NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura) | Elige uno como capa de ejecución; prueba primero en modo simulado. |
+| [activepieces](activepieces.md) | Avisos de mercados o posiciones desde un flujo que llame a tu script. (combinación por arquitectura) | Levanta ambos servicios y crea el flujo en Activepieces con la pieza HTTP o un disparador Webhook. |
 
 **Notas:** Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada polymarket-client-v0.18.0 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Polymarket/py-sdk/blob/main/README.md)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Polymarket/py-sdk/blob/main/README.md) · [2](https://nautilustrader.io/docs/latest/integrations/polymarket/)</sub>
 
 ## Acceso, coste y equipo
 

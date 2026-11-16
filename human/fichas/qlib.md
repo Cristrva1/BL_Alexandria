@@ -29,6 +29,8 @@ Se instala con `pip install pyqlib` o desde el código (requiere NumPy y Cython)
 | [MLflow](mlflow.md) | El recorder de Qlib se basa en MLflow. | Configura el URI de MLflow para los experimentos. |
 | [FinRL](finrl.md) | Comparar enfoques de aprendizaje por refuerzo. (combinación por arquitectura) | Usa ambos sobre los mismos datos. |
 | [marimo](marimo.md) | Analizar resultados en notebooks. (combinación por arquitectura) | Carga los informes de Qlib en marimo. |
+| [FinceptTerminal](finceptterminal.md) | Combinación recíproca: FinceptTerminal lo enlaza como «Investigación cuantitativa más profunda fuera del terminal. (combinación por arquitectura)». | Orden indicado desde FinceptTerminal: Exporta datos y modela con Qlib. |
+| [machine-learning-for-trading](machine-learning-for-trading.md) | Combinación recíproca: machine-learning-for-trading lo enlaza como «Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura)». | Orden indicado desde machine-learning-for-trading: Reproduce un caso de estudio en Qlib. |
 
 **Notas:** Sin alternativas declaradas. Revisa la guía de migración de artefactos antes de actualizar desde el código.
 

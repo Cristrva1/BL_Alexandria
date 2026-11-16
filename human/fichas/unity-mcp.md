@@ -29,6 +29,7 @@ Se instala en Unity desde el Package Manager con la URL de git y requiere Python
 | [Claude Code](claude-code.md) | Cliente MCP soportado según el README. | Instala el paquete en Unity y configura Claude Code desde su ventana. |
 | [Codex CLI](codex.md) | Cliente MCP soportado según el README. | Configura Codex desde la ventana de MCP for Unity. |
 | [blender](blender.md) | Crear modelos en Blender y llevarlos a Unity. (combinación por arquitectura) | Exporta FBX/GLB desde Blender e impórtalos en Unity. |
+| [Blender MCP](blender-mcp.md) | Combinación recíproca: Blender MCP lo enlaza como «Llevar a Unity los modelos creados en Blender, ambos controlados por agentes. (combinación por arquitectura)». | Orden indicado desde Blender MCP: Exporta desde Blender e importa en Unity con MCP for Unity. |
 
 **Notas:** Sin alternativas declaradas. Usa control de versiones: el agente puede modificar escenas y scripts.
 

@@ -30,6 +30,7 @@ Se distribuye como registro de shadcn: `npx shadcn@latest add @magicui/<componen
 | [tailwindcss](tailwindcss.md) | Estilos de los componentes. | Se configura con la inicialización de shadcn. |
 | [motion](motion.md) | Biblioteca de animación usada por los componentes. | Se instala como dependencia al añadir cada componente. |
 | [Claude Code](claude-code.md) | Usar los componentes desde el asistente vía el servidor MCP de Magic UI. | Registra el MCP según magicui.design/docs/mcp. |
+| [Anime.js](animejs.md) | Combinación recíproca: Anime.js lo enlaza como «Animaciones extra en componentes de interfaz. (combinación por arquitectura)». | Orden indicado desde Anime.js: Aplica animaciones a componentes. |
 
 **Notas:** Alternativas (elige una): react-bits.
 
