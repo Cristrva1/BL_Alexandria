@@ -29,6 +29,7 @@ Se ejecuta con Docker Compose (`docker compose pull ml4t`) y un script de verifi
 | [qlib](qlib.md) | Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura) | Reproduce un caso de estudio en Qlib. |
 | [vectorbt](vectorbt.md) | Backtesting vectorizado de las señales del libro. (combinación por arquitectura) | Porta las señales a vectorbt. |
 | [marimo](marimo.md) | Notebooks reactivos para los ejercicios. (combinación por arquitectura) | Convierte notebooks a marimo si lo prefieres. |
+| [FinRL](finrl.md) | Combinación recíproca: FinRL lo enlaza como «Base teórica y práctica complementaria. (combinación por arquitectura)». | Orden indicado desde FinRL: Estudia los capítulos de RL del libro. |
 
 **Notas:** Sin alternativas declaradas.
 

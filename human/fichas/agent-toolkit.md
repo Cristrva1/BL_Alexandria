@@ -28,7 +28,7 @@ Se instala con `npx skills add softaworks/agent-toolkit`, que funciona en Claude
 |---|---|---|
 | [Claude Code](claude-code.md) | Marketplace y destino principal. | Instala solo los plugins que necesites. |
 | [Codex CLI](codex.md) | Agente compatible con `npx skills`; el comando `/codex-plan` también lo usa. | Instala y autentica Codex antes de usar `/codex-plan`. |
-| [codex-plugin-cc](codex-plugin-cc.md) | Integración oficial más completa para delegar en Codex desde Claude Code (combinación por arquitectura). | Si usas los dos, evita duplicar comandos de Codex. |
+| [SkillSpector](skillspector.md) | Cada skill, agente o comando del toolkit es un plugin independiente: SkillSpector permite auditarlos antes de instalarlos (combinación por arquitectura). | Clona o descarga el plugin, revísalo con SkillSpector y después instálalo con `/plugin install <nombre>@agent-toolkit`. |
 
 **Notas:** Se quitó superpowers porque no hay integración.
 

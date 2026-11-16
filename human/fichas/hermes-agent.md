@@ -30,6 +30,12 @@ Se instala con `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | ba
 | [Ollama](ollama.md) | Endpoint propio con modelos locales. (combinación por arquitectura) | Configura el endpoint compatible con OpenAI. |
 | [ECC](ecc.md) | Skills y configuración reutilizables. (combinación por arquitectura) | Importa las skills que apliquen. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[agentmemory](agentmemory.md) · [awesome-agents](awesome-agents.md) · [book-to-skill](book-to-skill.md) · [dsh-noema](dsh-noema.md) · [gods-eye-view](gods-eye-view.md) · [Hermes Desktop](hermes-desktop.md) · [hermes-agent-self-evolution](hermes-agent-self-evolution.md) · [Letta](letta.md) · [magnitude](magnitude.md) · [osiris](osiris.md) · [paperclip](paperclip.md) · [superpowers](superpowers.md) · [video-use](video-use.md)
+
 **Notas:** Alternativas (elige una): openclaw, mercury-agent.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.23.1 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).

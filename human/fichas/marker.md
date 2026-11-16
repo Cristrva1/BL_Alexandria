@@ -29,6 +29,7 @@ Biblioteca Python 3.10+ con PyTorch (`pip install marker-pdf`, `[full]` para for
 | [vLLM](vllm.md) | Backend requerido por Surya en GPU NVIDIA para el modo VLM. | Instala vLLM en el mismo entorno o servidor antes de usar los modos `balanced` o `vllm`. |
 | [llama.cpp](llama-cpp.md) | Backend de Surya en CPU o Apple Silicon. | Instala llama.cpp antes de la primera conversión. |
 | [Pandoc](pandoc.md) | Publicar el Markdown resultante en DOCX, EPUB o LaTeX (combinación por arquitectura). | Encadénalos en un script. |
+| [Surya](surya.md) | Combinación recíproca: Surya lo enlaza como «marker, del mismo equipo, usa los modelos de Surya para convertir PDF a Markdown». | Orden indicado desde Surya: Instala marker; usará Surya para OCR y layout. |
 
 **Notas:** Alternativas (elige una): docling, mineru, pdf-craft. Se retiró llama-index por no estar documentado en el README actual.
 

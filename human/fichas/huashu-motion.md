@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+huashu-motion, skill para generar vídeos de lanzamiento de producto «de calidad comercial» con un agente, de @alchaincyf (花叔). Licencia MIT; incluye GSAP (licencia Standard de GSAP) y fuentes SIL OFL. Es reciente (octubre de 2026, ~2.8k estrellas, v0.5.0) y el README está en chino.
+
+## ¿Qué hace?
+
+Con una frase al agente («hazme un vídeo de lanzamiento de 30 segundos») produce animaciones de producto, con locución opcional (voces del sistema de macOS o Kokoro para chino).
+
+## ¿Cómo lo hace?
+
+Se usa desde Claude Code, Codex y otros runtimes de agentes. Kokoro requiere uv y Python 3.12 (~325 MB de modelo).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GSAP](gsap.md) | Biblioteca de animación incluida. | Viene incluida. |
+| [Kokoro](kokoro.md) | Locución opcional en chino. | Instálalo cuando el skill lo pida. |
+| [Claude Code](claude-code.md) | Runtime documentado. | Instala la skill. |
+
+**Notas:** Sin alternativas declaradas. GSAP no es OSI: revisa su licencia.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.5.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/alchaincyf/huashu-motion/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code y Codex; comercial-grade es una descripción del autor y la licencia GSAP y fuentes siguen aplicándose |
 | Coste | Consumo del agente que ya utilizas. Usa el plan o proveedor del agente y cómputo de render; los precios de ejemplos históricos no son una tarifa actual garantizada |
 | Equipo | Preparación según la ruta elegida. Agente compatible; dependencias del runtime; brief y recursos propios |
-
-Documenta Claude Code y Codex; comercial-grade es una descripción del autor y la licencia GSAP y fuentes siguen aplicándose
-
-## Qué puedes hacer con él
-
-Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar una presentación de producto; Explorar estilos de motion graphics.
-
-## Cómo funciona
 
 Documenta Claude Code y Codex; comercial-grade es una descripción del autor y la licencia GSAP y fuentes siguen aplicándose
 

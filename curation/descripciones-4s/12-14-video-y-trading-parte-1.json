@@ -24,7 +24,7 @@
      "orden_instalacion": "Apunta el proveedor compatible con OpenAI a Ollama."
     }
    ],
-   "notas": "Alternativas (elige una): openmontage, videofy-minimal. Revisa los derechos del material de stock y de las voces antes de publicar.",
+   "notas": "Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.",
    "fuentes": [
     "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md"
    ],
@@ -62,9 +62,15 @@
      "id": "real-esrgan",
      "motivo": "Ampliar los vídeos generados. (combinación por arquitectura)",
      "orden_instalacion": "Pasa los fotogramas por Real-ESRGAN."
+    },
+    {
+     "id": "wan2gp",
+     "motivo": "Combinación recíproca: WanGP lo enlaza como «Ejecuta los modelos Wan 2.2 con menos VRAM».",
+     "orden_instalacion": "Orden indicado desde WanGP: Descarga el modelo desde la interfaz.",
+     "reciproca_de": "wan2gp"
     }
    ],
-   "notas": "Alternativas (elige una): hunyuanvideo.",
+   "notas": "Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5.",
    "fuentes": [
     "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
     "https://docs.comfy.org/tutorials/video/wan/wan2_2",
@@ -100,7 +106,7 @@
      "orden_instalacion": "Selecciona Hunyuan Video en WanGP."
     }
    ],
-   "notas": "Alternativas (elige una): wan2-2. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
+   "notas": "Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5.",
    "fuentes": [
     "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md",
     "https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video",
@@ -139,6 +145,17 @@
      "id": "lossless-cut",
      "motivo": "Recortar resultados sin recodificar. (combinación por arquitectura)",
      "orden_instalacion": "Abre los vídeos en LosslessCut."
+    },
+    {
+     "id": "hunyuanvideo-1-5",
+     "motivo": "Wan2GP incluye Hunyuan Video 1.5 entre sus modelos para GPUs con poca VRAM.",
+     "orden_instalacion": "Elige el modelo en la interfaz; los pesos se descargan aparte."
+    },
+    {
+     "id": "hunyuanvideo",
+     "motivo": "Combinación recíproca: HunyuanVideo lo enlaza como «Interfaz para GPU modestas con soporte de Hunyuan Video».",
+     "orden_instalacion": "Orden indicado desde HunyuanVideo: Selecciona Hunyuan Video en WanGP.",
+     "reciproca_de": "hunyuanvideo"
     }
    ],
    "notas": "Alternativas (elige una): comfyui. Licencia propia, no OSI: revísala antes de redistribuir.",
@@ -210,7 +227,7 @@
      "orden_instalacion": "Configura un endpoint compatible si la app lo admite."
     }
    ],
-   "notas": "Sin alternativas declaradas; solapa con moneyprinterturbo (solo anotado).",
+   "notas": "Alternativa (elige una): moneyprinterturbo.",
    "fuentes": [
     "https://github.com/YILS-LIN/short-video-factory/blob/main/README.md"
    ],
@@ -386,6 +403,12 @@
      "id": "ccxt",
      "motivo": "Comparar o completar datos de exchanges sin adaptador. (combinación por arquitectura)",
      "orden_instalacion": "Descarga datos con CCXT para pruebas."
+    },
+    {
+     "id": "py-sdk",
+     "motivo": "Combinación recíproca: py-sdk lo enlaza como «NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde py-sdk: Elige uno como capa de ejecución; prueba primero en modo simulado.",
+     "reciproca_de": "py-sdk"
     }
    ],
    "notas": "Sin alternativas declaradas. Curva de aprendizaje alta; la rama 2.0 aún es prerelease.",
@@ -494,6 +517,18 @@
      "id": "marimo",
      "motivo": "Analizar resultados en notebooks. (combinación por arquitectura)",
      "orden_instalacion": "Carga los informes de Qlib en marimo."
+    },
+    {
+     "id": "finceptterminal",
+     "motivo": "Combinación recíproca: FinceptTerminal lo enlaza como «Investigación cuantitativa más profunda fuera del terminal. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde FinceptTerminal: Exporta datos y modela con Qlib.",
+     "reciproca_de": "finceptterminal"
+    },
+    {
+     "id": "machine-learning-for-trading",
+     "motivo": "Combinación recíproca: machine-learning-for-trading lo enlaza como «Plataforma cuantitativa para aplicar lo aprendido. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde machine-learning-for-trading: Reproduce un caso de estudio en Qlib.",
+     "reciproca_de": "machine-learning-for-trading"
     }
    ],
    "notas": "Sin alternativas declaradas. Revisa la guía de migración de artefactos antes de actualizar desde el código.",

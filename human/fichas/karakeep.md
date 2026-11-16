@@ -29,6 +29,7 @@ Es una app TypeScript (Next.js) desplegada con Docker Compose, que incluye Meili
 | [Ollama](ollama.md) | Etiquetado y resúmenes con modelos locales, soportado de forma nativa. | Levanta Ollama, descarga un modelo y define las variables de Ollama en Karakeep. |
 | [coolify](coolify.md) | Desplegar Karakeep con sus servicios auxiliares como servicio de un clic (Coolify documenta el servicio Karakeep). | Instala Coolify y añade el servicio Karakeep. |
 | [Claude Code](claude-code.md) | Consultar y organizar marcadores desde un agente con las skills y la CLI documentadas de Karakeep. | Instala la CLI, crea una clave de API e instala la skill en el agente. |
+| [ArchiveBox](archivebox.md) | Combinación recíproca: ArchiveBox lo enlaza como «Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura)». | Orden indicado desde ArchiveBox: Exporta los enlaces de Karakeep e impórtalos en ArchiveBox. |
 
 **Notas:** Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre.
 

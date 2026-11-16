@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+faster-whisper, reimplementación de Whisper sobre CTranslate2, de SYSTRAN. Licencia MIT. Es madura (~27k estrellas, v1.2.1).
+
+## ¿Qué hace?
+
+Transcribe hasta 4 veces más rápido que openai/whisper con la misma precisión y menos memoria, según el proyecto. Admite cuantización de 8 bits, transcripción por lotes, VAD y modelos distil-whisper.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.9+ y se instala con `pip install faster-whisper`. En GPU necesita cuBLAS y cuDNN 9 para CUDA 12 (con CUDA 11 hay que fijar ctranslate2 3.24.0).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisperX](whisperx.md) | Backend de transcripción de WhisperX. | Instala WhisperX, que lo usa por debajo. |
+| [Pipecat](pipecat.md) | STT local en agentes de voz. (combinación por arquitectura) | Usa un servicio STT basado en faster-whisper. |
+| [MoviePy](moviepy.md) | Generar subtítulos sobre vídeo. (combinación por arquitectura) | Convierte los segmentos a SRT. |
+| [AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) | Combinación recíproca: AI-Youtube-Shorts-Generator lo enlaza como «Transcripción local en el modo offline». | Orden indicado desde AI-Youtube-Shorts-Generator: Instala `requirements-local.txt`. |
+| [MoneyPrinterTurbo](moneyprinterturbo.md) | Combinación recíproca: MoneyPrinterTurbo lo enlaza como «Subtítulos locales con faster-whisper, citado en el README». | Orden indicado desde MoneyPrinterTurbo: Activa faster-whisper en la configuración. |
+| [OBS Studio](obs-studio.md) | Combinación recíproca: OBS Studio lo enlaza como «Subtitular las grabaciones. (combinación por arquitectura)». | Orden indicado desde OBS Studio: Transcribe el audio exportado. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[pyannote.audio](pyannote-audio.md)
+
+**Notas:** Alternativas (elige una): whisper-cpp.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.2.1 (2025-10-31) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SYSTRAN/faster-whisper/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Las dependencias CUDA y cuDNN cambian con CTranslate2; el ahorro de memoria y velocidad depende del modelo y parámetros |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de pago para inferencia propia; hardware y almacenamiento aparte |
 | Equipo | Preparación según la ruta elegida. Python; CTranslate2; CPU o CUDA/cuDNN compatibles; modelo y audio |
-
-Las dependencias CUDA y cuDNN cambian con CTranslate2; el ahorro de memoria y velocidad depende del modelo y parámetros
-
-## Qué puedes hacer con él
-
-Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización.
-
-## Por qué destaca
-
-Usos propuestos: Transcribir lotes pequeños; Comparar CPU con GPU.
-
-## Cómo funciona
 
 Las dependencias CUDA y cuDNN cambian con CTranslate2; el ahorro de memoria y velocidad depende del modelo y parámetros
 
@@ -94,12 +117,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; CTranslate2; CPU o CUDA/cuDNN compatibles; modelo y audio
 - **Etiquetas:** `stt` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 

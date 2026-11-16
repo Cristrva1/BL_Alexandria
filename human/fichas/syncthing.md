@@ -30,6 +30,13 @@ Es un binario en Go con interfaz web local. Se instala con paquetes del sistema,
 | [coolify](coolify.md) | Desplegar un nodo Syncthing siempre encendido en un servidor (Coolify documenta el servicio Syncthing). | Instala Coolify y añade el servicio Syncthing; empareja tus dispositivos con él. |
 | [paperless-ngx](paperless-ngx.md) | Llevar escaneos desde el móvil o el portátil a la carpeta de consumo de Paperless-ngx. (combinación por arquitectura) | Comparte en Syncthing la carpeta `consume` de Paperless-ngx en modo solo recepción. |
 | [audiobookshelf](audiobookshelf.md) | Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura) | Comparte la carpeta de la biblioteca en Syncthing. |
+| [spotDL](spotdl.md) | Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)». | Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Calibre-Web](calibre-web.md) · [Immich](immich.md) · [Joplin](joplin.md) · [Kavita](kavita.md) · [Logseq](logseq.md) · [PhotoPrism](photoprism.md)
 
 **Notas:** Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.
 

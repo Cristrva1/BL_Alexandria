@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+AIO Sandbox, entorno sandbox todo en uno para agentes (navegador, terminal, archivos, VSCode, Jupyter y MCP en un contenedor), de agent-infra. Licencia Apache-2.0. Tiene ~6.3k estrellas (v1.11.0) y artículo asociado.
+
+## ¿Qué hace?
+
+Expone navegador (con VNC), shell, sistema de archivos, VSCode Server, JupyterLab y servicios MCP preconfigurados mediante una API común para agentes.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con `docker run … ghcr.io/agent-infra/sandbox:<tag>` (hay espejo en China). Se recomienda definir `SANDBOX_API_KEY`, porque sin ella los servicios quedan abiertos, y publicar solo en 127.0.0.1. Usa `seccomp=unconfined`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenHands](openhands.md) | Backend aislado para agentes. (combinación por arquitectura) | Apunta el agente a la API del sandbox. |
+| [browser-use](browser-use.md) | Navegador del sandbox para automatización. (combinación por arquitectura) | Conecta browser-use al navegador expuesto. |
+| [deer-flow](deer-flow.md) | Sandbox para el harness. (combinación por arquitectura) | Configúralo como entorno de ejecución. |
+| [Gemini Computer Use (preview)](computer-use-preview.md) | Combinación recíproca: Gemini Computer Use (preview) lo enlaza como «Ejecutar el navegador en un contenedor aislado. (combinación por arquitectura)». | Orden indicado desde Gemini Computer Use (preview): Lanza el agente dentro del sandbox. |
+
+**Notas:** Alternativas (elige una): nemoclaw, e2b. Se quita ecc (sin relación documentada). Riesgo: sin API key, todo queda expuesto.
+
+Estado en GitHub: activo · último push 2026-09-14 · última versión publicada v1.11.0 (2026-06-23) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/agent-infra/sandbox/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Expone MCP en /mcp; sin SANDBOX_API_KEY los servicios quedan abiertos y el ejemplo usa seccomp unconfined, por lo que no es una garantía absoluta de aislamiento |
 | Coste | Sin pago a un modelo en la ruta básica. El contenedor básico no necesita LLM; equipo, hosting y modelos del agente se pagan o configuran aparte |
 | Equipo | Preparación según la ruta elegida. Docker; recursos para navegador; clave de acceso propia; cliente MCP opcional |
-
-Expone MCP en /mcp; sin SANDBOX_API_KEY los servicios quedan abiertos y el ejemplo usa seccomp unconfined, por lo que no es una garantía absoluta de aislamiento
-
-## Qué puedes hacer con él
-
-Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado.
-
-## Por qué destaca
-
-Usos propuestos: Probar herramientas de un agente en un contenedor; Consultar una interfaz de navegador aislada.
-
-## Cómo funciona
 
 Expone MCP en /mcp; sin SANDBOX_API_KEY los servicios quedan abiertos y el ejemplo usa seccomp unconfined, por lo que no es una garantía absoluta de aislamiento
 
@@ -98,13 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; recursos para navegador; clave de acceso propia; cliente MCP opcional
 - **Etiquetas:** `agents` `automation` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OpenHands](openhands.md) | 93.5k | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
-| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
 
 ## Alternativas (elige una)
 

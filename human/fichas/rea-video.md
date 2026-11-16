@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+rea-video, herramienta y skill para hacer ingeniería inversa de vídeos plano a plano, de @JuneYaooo. Licencia Apache-2.0. Es muy reciente (octubre de 2026, ~9.3k estrellas, v0.1.0).
+
+## ¿Qué hace?
+
+Descompone un vídeo plano a plano, determina si cada plano fue filmado, generado por IA o hecho con código, y explica cómo rehacerlo. Lo documenta en VIDEO.md, un formato abierto que los agentes leen por capas.
+
+## ¿Cómo lo hace?
+
+Funciona dentro de Claude Code, Codex o cualquier agente con shell, que instala la CLI. Requiere FFmpeg y Python 3.10+; opcionalmente se conecta un modelo con vídeo (Gemini o Doubao).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Rehacer planos hechos con código. (combinación por arquitectura) | Usa el desglose como guion. |
+| [FFmpeg](ffmpeg.md) | Extracción de planos. | Instala FFmpeg. |
+| [Claude Code](claude-code.md) | Agente anfitrión documentado. | Pide al agente que instale la CLI. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.0 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/JuneYaooo/rea-video/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Las clasificaciones de material AI o filmado son estimaciones, no pruebas forenses; recrea técnicas con recursos de los que tengas derechos |
 | Coste | El coste depende del proveedor o la ruta. Tools-only funciona offline; análisis con modelo o generación adicional cobra según proveedor y el agente usa su plan |
 | Equipo | Preparación según la ruta elegida. Python >=3.10; FFmpeg; video autorizado; modelo con visión solo si eliges revisión AI |
-
-Las clasificaciones de material AI o filmado son estimaciones, no pruebas forenses; recrea técnicas con recursos de los que tengas derechos
-
-## Qué puedes hacer con él
-
-Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio.
-
-## Cómo funciona
 
 Las clasificaciones de material AI o filmado son estimaciones, no pruebas forenses; recrea técnicas con recursos de los que tengas derechos
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python >=3.10; FFmpeg; video autorizado; modelo con visión solo si eliges revisión AI
 - **Etiquetas:** `programatico` `agent-skills` `ai-video` `aigc-detection` `claude-code` `codex` `ffmpeg` `prompt-engineering`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [remotion](remotion.md) | 73.2k | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
 
 ## Enlaces
 

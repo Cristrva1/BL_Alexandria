@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+NVIDIA NeMo Speech (antes parte de NeMo), framework actual de NVIDIA para reconocimiento de voz, síntesis y modelos conversacionales. Licencia Apache-2.0. Es maduro (~19k estrellas, v3.0.0).
+
+## ¿Qué hace?
+
+Entrena, ajusta y despliega modelos ASR (Parakeet, Canary), TTS (MagpieTTS multilingüe) y de voz conversacional (Nemotron VoiceChat en acceso anticipado). Los checkpoints abiertos están en la colección nemotron-speech de Hugging Face.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.12+ y PyTorch con CUDA; se instala sobre una pila existente sin reemplazarla, o con el entorno soportado (Python 3.13, PyTorch 2.12, CUDA 13.2). También hay contenedor NGC (`nvcr.io/nvidia/nemo-speech`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Nemotron (NVIDIA)](nemotron.md) | Familia Nemotron, incluida la voz. | Descarga los checkpoints de Hugging Face. |
+| [Pipecat](pipecat.md) | Agentes de voz con modelos NVIDIA. (combinación por arquitectura) | Sirve el modelo y conéctalo al pipeline. |
+| [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA. |
+| [sherpa-onnx](sherpa-onnx.md) | Combinación recíproca: sherpa-onnx lo enlaza como «sherpa-onnx ejecuta modelos de NeMo como Parakeet TDT y transductores/CTC exportados a ONNX». | Orden indicado desde sherpa-onnx: Descarga el modelo NeMo convertido; después úsalo con el reconocedor de sherpa-onnx. |
+
+**Notas:** Alternativas (elige una): whisperx.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.0.0 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA-NeMo/Speech/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El repositorio actual es NeMo Speech; las guías nightly y 3.0 estable son distintas y deben alinearse con la versión instalada |
 | Coste | Sin pago a un modelo en la ruta básica. Ejecución propia sin API obligatoria; GPU, pesos y datasets tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. uv; entorno CUDA compatible; modelo de voz elegido; audio de prueba |
-
-El repositorio actual es NeMo Speech; las guías nightly y 3.0 estable son distintas y deben alinearse con la versión instalada
-
-## Qué puedes hacer con él
-
-Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR.
-
-## Cómo funciona
 
 El repositorio actual es NeMo Speech; las guías nightly y 3.0 estable son distintas y deben alinearse con la versión instalada
 
@@ -96,12 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv; entorno CUDA compatible; modelo de voz elegido; audio de prueba
 - **Etiquetas:** `stt` `tts` `audio` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 
 ## Alternativas (elige una)
 

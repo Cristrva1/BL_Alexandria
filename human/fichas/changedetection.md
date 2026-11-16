@@ -28,7 +28,16 @@ Se instala con Docker o Docker Compose (`docker compose up -d`). Los pasos de na
 |---|---|---|
 | [Ollama](ollama.md) | Resúmenes y filtros de cambios con un modelo local, soportado según el README. | Levanta Ollama y configúralo como proveedor de LLM. |
 | [Claude Code](claude-code.md) | Consultar y gestionar vigilancias desde un asistente con el servidor MCP de changedetection.io. | Activa el MCP en tu instancia y regístralo en el cliente. |
-| [n8n](n8n.md) | Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura) | Configura una notificación webhook hacia un flujo de n8n. |
+| [activepieces](activepieces.md) | Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura) | Configura una notificación webhook hacia un flujo de Activepieces. |
+| [ArchiveBox](archivebox.md) | Combinación recíproca: ArchiveBox lo enlaza como «Archivar una nueva copia cuando una página cambia. (combinación por arquitectura)». | Orden indicado desde ArchiveBox: Usa una notificación de changedetection (webhook) para añadir la URL a ArchiveBox. |
+| [cloud-mail](cloud-mail.md) | Combinación recíproca: cloud-mail lo enlaza como «Usar una dirección de cloud-mail como buzón de alertas de cambios web y reenviarlas a Telegram (combinación por arquitectura)». | Orden indicado desde cloud-mail: Crea la dirección en cloud-mail y configúrala como destino de notificación en changedetection. |
+| [huginn](huginn.md) | Combinación recíproca: huginn lo enlaza como «Changedetection vigila cambios visuales o de texto en páginas complejas y puede notificar por webhook a Huginn, que encadena acciones posteriores (combinación por arquitectura)». | Orden indicado desde huginn: Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Maxun](maxun.md)
 
 **Notas:** Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas.
 

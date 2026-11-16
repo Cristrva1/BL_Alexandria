@@ -30,6 +30,12 @@ Se instala con `npm install -g promptfoo`, `brew`, `pip` o se usa con `npx promp
 | [litellm](litellm.md) | Proveedor nativo de LiteLLM en promptfoo. | Apunta promptfoo al proxy LiteLLM. |
 | [vLLM](vllm.md) | Proveedor nativo para evaluar modelos servidos con vLLM. | Lanza vLLM y configúralo como proveedor. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) · [ChatGPT_DAN](chatgpt-dan.md) · [chatgpt_system_prompt](chatgpt-system-prompt.md) · [Claude Cookbooks](claude-cookbooks.md) · [Cybersecurity Skills (comunidad)](cybersecurity-skills.md) · [garak](garak.md) · [jev-fraud](jev-fraud.md) · [llm-council](llm-council.md) · [NeMo Guardrails](guardrails.md) · [OpenAI Cookbook](openai-cookbook.md) · [Prompt Engineering Guide](prompt-engineering-guide.md) · [prompts.chat](prompts-chat.md) · [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md)
+
 **Notas:** Alternativas (elige una): deepeval, ragas, dspy. Tras la compra por OpenAI conviene vigilar la gobernanza del proyecto.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.125.1 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
