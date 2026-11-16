@@ -1,5 +1,7 @@
 # Categorías y subcategorías prácticas
 
+98 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 110 subcategorías técnicas.
+
 Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.
 
 Los recuentos por área pueden solaparse: no equivalen a proyectos distintos.
