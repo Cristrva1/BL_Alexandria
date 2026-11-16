@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Gradio, paquete Python para crear demos y apps web de modelos de ML, APIs o cualquier función, mantenido por Hugging Face. Licencia Apache-2.0. Es muy maduro (~44k estrellas, gradio@6.32.0).
+
+## ¿Qué hace?
+
+Con pocas líneas genera una interfaz (Interface o Blocks) con componentes de entrada y salida, chat (`ChatInterface`) y enlaces públicos temporales para compartir. Cada app expone además una API y un cliente Python/JS, y puede servir como servidor MCP.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10+ y se instala con `pip install --upgrade gradio`. Se despliega en Hugging Face Spaces o en servidor propio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | Demos de modelos de Hugging Face. | Carga el pipeline y envuélvelo en una Interface. |
+| [LLaMA-Factory](llama-factory.md) | Su LlamaBoard está construido con Gradio. | Usa la UI de LlamaFactory. |
+| [Ollama](ollama.md) | Interfaz de chat sobre un modelo local. (combinación por arquitectura) | Llama a la API de Ollama desde ChatInterface. |
+| [rembg](rembg.md) | Combinación recíproca: rembg lo enlaza como «Interfaz web rápida para uso interno. (combinación por arquitectura)». | Orden indicado desde rembg: Envuelve `remove()` en una app Gradio. |
+| [F5-TTS](f5-tts.md) | Combinación recíproca: F5-TTS lo enlaza como «F5-TTS incluye una aplicación web Gradio (`f5-tts_infer-gradio`) para generar voz sin programar». | Orden indicado desde F5-TTS: Instala F5-TTS (incluye Gradio); después ejecuta `f5-tts_infer-gradio`. |
+
+**Notas:** Alternativas (elige una): streamlit.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada gradio@6.32.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gradio-app/gradio/blob/main/README.md) · [2](https://gradio.app/getting_started/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelo local no documentado. Incluye skills para agentes compatibles con .agents y ruta Claude; una URL de compartir expone la app y no sustituye autenticación o alojamiento de producción |
 | Coste | El coste depende del proveedor o la ruta. La interfaz básica no necesita API; modelo, servicio y alojamiento elegidos pueden cobrar |
 | Equipo | Preparación según la ruta elegida. Python 3.10+; función o modelo de prueba |
-
-Incluye skills para agentes compatibles con .agents y ruta Claude; una URL de compartir expone la app y no sustituye autenticación o alojamiento de producción
-
-## Qué puedes hacer con él
-
-Librería Python para crear y compartir apps web de modelos de ML en minutos.
-
-## Por qué destaca
-
-Usos propuestos: Crear una demo de un modelo; Preparar una herramienta interna de texto.
-
-## Cómo funciona
 
 Incluye skills para agentes compatibles con .agents y ruta Claude; una URL de compartir expone la app y no sustituye autenticación o alojamiento de producción
 
@@ -93,17 +109,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `ui` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [streamlit](streamlit.md) | 46.4k | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. |
+| [Reflex](reflex.md) | 29k | Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado. |
+| [NiceGUI](nicegui.md) | 16.3k | Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas. |
+| [Panel](panel.md) | 5.8k | Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`. |
 
 ## Enlaces
 

@@ -31,6 +31,12 @@ Se instala con el marketplace de Claude Code (`claude plugin marketplace add obs
 | [jsoncanvas](jsoncanvas.md) | La skill `json-canvas` implementa esta especificación. | Instala las skills; la especificación sirve de referencia. |
 | [defuddle](defuddle.md) | La skill `defuddle` usa esta herramienta para extraer Markdown de webs. | Instala Defuddle antes de usar esa skill. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[claude-obsidian](claude-obsidian.md) · [kepano-obsidian](kepano-obsidian.md) · [obsidian-help](obsidian-help.md) · [obsidian-sample-plugin](obsidian-sample-plugin.md) · [obsidian-second-brain](obsidian-second-brain.md)
+
 **Notas:** Sin alternativas declaradas. Se sustituye la combinación con obsidian-releases por integraciones documentadas.
 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 1.1.0 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).

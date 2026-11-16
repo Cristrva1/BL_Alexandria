@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+ODM (OpenDroneMap), kit de línea de comandos para procesar imágenes aéreas de drones. Licencia AGPL-3.0. Es maduro (~6.6k estrellas, v3.6.2).
+
+## ¿Qué hace?
+
+Convierte fotos 2D en nubes de puntos clasificadas, modelos 3D texturizados, ortomosaicos georreferenciados y modelos digitales de elevación. Funciona desde la terminal, lo que lo hace adecuado para scripts e integración con otro software. Para interfaz gráfica, el README remite a OpenDroneMap Desktop.
+
+## ¿Cómo lo hace?
+
+La vía recomendada es Docker (`opendronemap/odm`, con imagen GPU opcional). Está escrito en Python y C++ sobre OpenSfM, OpenMVS y otras librerías, y es muy exigente en RAM y CPU con proyectos grandes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [blender](blender.md) | Editar o renderizar los modelos 3D texturizados generados. (combinación por arquitectura) | Importa el OBJ/GLB resultante en Blender. |
+| [three.js](three-js.md) | Publicar modelos o nubes de puntos en un visor web. (combinación por arquitectura) | Carga los resultados con los loaders de three.js. |
+| [marimo](marimo.md) | Analizar DEM y ortomosaicos en notebooks. (combinación por arquitectura) | Lee los GeoTIFF con librerías raster desde marimo. |
+
+**Notas:** Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm).
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.6.2 (2026-08-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenDroneMap/ODM/blob/master/README.md) · [2](https://opendronemap.org/download)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere API de IA; capturar imágenes y procesarlas consume equipo, tiempo y almacenamiento |
 | Equipo | Preparación según la ruta elegida. Docker; fotografías aéreas propias con solapamiento; RAM y disco según lote |
-
-El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas
-
-## Qué puedes hacer con él
-
-Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.
-
-## Por qué destaca
-
-Usos propuestos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección.
-
-## Cómo funciona
 
 El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas
 

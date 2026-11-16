@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+nodeterm, gestor de terminales y sesiones de agentes sobre un lienzo infinito, de @eneskirca. Licencia Business Source License 1.1 (no es open source; GitHub muestra NOASSERTION). Tiene ~2.5k estrellas y busca patrocinadores fundadores.
+
+## ¿Qué hace?
+
+Coloca terminales reales como nodos arrastrables en un lienzo con zoom, y cada proyecto funciona además como tablero tipo Trello de sesiones de Claude Code en vivo. Está pensado para personas con TDAH o flujos de trabajo dispersos.
+
+## ¿Cómo lo hace?
+
+Hay app de escritorio para macOS, Linux y Windows (beta), con `brew install --cask nodeterm`, edición servidor autoalojada para usarlo desde el navegador y app compañera para iOS.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Sesiones de Claude Code integradas en el tablero. | Instala Claude Code y añade nodos de sesión. |
+| [Codex CLI](codex.md) | Otro agente de terminal en un nodo. (combinación por arquitectura) | Abre Codex en un nodo de terminal. |
+| [OpenCode](opencode.md) | Otro agente de terminal en un nodo. (combinación por arquitectura) | Abre OpenCode en un nodo de terminal. |
+
+**Notas:** Sin alternativas declaradas. Licencia BUSL: revisa las restricciones de uso.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.5.1 (2026-11-06) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/eneskirca/nodeterm/blob/main/README.md) · [2](https://nodeterm.dev/docs)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Documenta Claude Code, Codex y Antigravity; la licencia BUSL-1.1 y sus límites no deben presentarse como MIT sin restricciones; local aquí incluye dictado, no todo agente |
 | Coste | El coste depende del proveedor o la ruta. El gestor usa cuentas de los agentes; dictado local Whisper y funciones AI opcionales tienen requisitos separados |
 | Equipo | Preparación según la ruta elegida. macOS o Linux; tmux según ruta; CLI de agente autenticado |
-
-Documenta Claude Code, Codex y Antigravity; la licencia BUSL-1.1 y sus límites no deben presentarse como MIT sin restricciones; local aquí incluye dictado, no todo agente
-
-## Qué puedes hacer con él
-
-Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto.
-
-## Por qué destaca
-
-Usos propuestos: Organizar varias sesiones de código; Asociar sesiones con worktrees.
-
-## Cómo funciona
 
 Documenta Claude Code, Codex y Antigravity; la licencia BUSL-1.1 y sus límites no deben presentarse como MIT sin restricciones; local aquí incluye dictado, no todo agente
 

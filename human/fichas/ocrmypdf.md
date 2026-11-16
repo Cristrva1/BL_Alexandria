@@ -29,6 +29,8 @@ Programa Python que usa el motor Tesseract y reparte el trabajo entre todos los 
 | [Tesseract](tesseract.md) | Es su motor de OCR. | Instala Tesseract y los idiomas necesarios antes (los paquetes del sistema lo hacen solos). |
 | [paperless-ngx](paperless-ngx.md) | Paperless-ngx usa OCRmyPDF como dependencia para el OCR de documentos. | Viene incluido en Paperless; no lo instales aparte para ese uso. |
 | [Stirling-PDF](stirling-pdf.md) | La imagen de Stirling PDF incluye OCRmyPDF para su herramienta de OCR. | Incluido en la imagen Docker. |
+| [PDF Inspector](pdf-inspector.md) | Combinación recíproca: PDF Inspector lo enlaza como «Enviar a OCRmyPDF los PDF clasificados como escaneados (combinación por arquitectura)». | Orden indicado desde PDF Inspector: Clasifica primero; aplica OCR solo donde haga falta. |
+| [PdfDing](pdfding.md) | Combinación recíproca: PdfDing lo enlaza como «Aplicar OCR a escaneados antes de subirlos para poder buscar y resaltar texto (combinación por arquitectura)». | Orden indicado desde PdfDing: Procesa los archivos antes de importarlos. |
 
 **Notas:** Se retiró docling por no estar documentado.
 

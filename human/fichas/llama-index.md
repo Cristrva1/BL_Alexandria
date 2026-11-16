@@ -31,6 +31,12 @@ Python. Se instala como `llama-index` (núcleo más una selección de integracio
 | [Ragas](ragas.md) | Evaluar la calidad del RAG (integración documentada por Ragas). | Evalúa tras construir el pipeline. |
 | [Ollama](ollama.md) | Modelos locales (`llama-index-llms-ollama`, citado en el README). | Ollama con el modelo descargado primero. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-engineering-hub](ai-engineering-hub.md) · [DeepEval](deepeval.md) · [Faiss](faiss.md) · [Hugging Face Agents Course](agents-course.md) · [Jina Reader](jina-reader.md) · [LanceDB](lancedb.md) · [laya](laya.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [Milvus](milvus.md) · [OpenLLMetry](openllmetry.md) · [Phoenix](phoenix.md) · [turbovec](turbovec.md) · [Weaviate](weaviate.md) · [Xinference](xinference.md)
+
 **Notas:** Alternativas (elige una): haystack, langchain. Ten en cuenta el cambio de foco de la empresa al planificar proyectos largos.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.14.26 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).

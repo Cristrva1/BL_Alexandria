@@ -29,6 +29,7 @@ Se instalan como plugin con actualización automática en Claude Code (`claude p
 | [Claude Code](claude-code.md) | Plugin oficial. | No combines el plugin con skills.sh en el mismo agente: duplicarías las skills. |
 | [Claude Code Plugins Directory](claude-plugins-official.md) | Marketplace desde el que se instala en Claude Code. | Igual que arriba. |
 | [Codex CLI](codex.md) | Marketplace propio para Codex. | `codex plugin marketplace add mattpocock/skills`. |
+| [plugins](plugins.md) | Combinación recíproca: plugins lo enlaza como «Skills de ingeniería instalables también en Cursor (combinación por arquitectura)». | Orden indicado desde plugins: `npx skills add mattpocock/skills -a cursor`. |
 
 **Notas:** Se quitó awesome-agent-skills: es un catálogo, no una integración.
 

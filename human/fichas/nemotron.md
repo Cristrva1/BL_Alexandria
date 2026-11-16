@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Repositorio para desarrolladores de NVIDIA Nemotron, familia de modelos abiertos para IA agéntica: recetas de entrenamiento, guías de despliegue y ejemplos. Licencia Apache-2.0 (los pesos tienen sus propias licencias). Tiene ~2.3k estrellas y está activo.
+
+## ¿Qué hace?
+
+Documenta los modelos Nemotron 3.5 Super (120B-A12B, híbrido Mamba-Transformer con contexto de hasta 1M), Nemotron 3.5 Lightning (30B-A3B), Nemotron 3 Ultra y Nano Omni, con datos y técnicas de entrenamiento abiertas. Incluye un plugin de Claude Code (`nemotron-customize`) para construir pipelines de personalización.
+
+## ¿Cómo lo hace?
+
+Los modelos se descargan de Hugging Face y se despliegan en edge, una GPU o centro de datos, con NIM, TensorRT-LLM, vLLM o SGLang. Las recetas usan la pila NeMo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Despliegue de los modelos. | Sirve el checkpoint con vLLM. |
+| [NemoClaw](nemoclaw.md) | Inferencia gestionada en el stack de agentes de NVIDIA. (combinación por arquitectura) | Configura Nemotron como modelo. |
+| [Claude Code](claude-code.md) | Plugin `nemotron-customize`. | Abre Claude Code en la raíz del repo e invoca la skill. |
+| [NeMo Speech](nemo.md) | Pila de entrenamiento de las recetas. | Instala NeMo para reproducir recetas. |
+| [cosmos](cosmos.md) | Combinación recíproca: cosmos lo enlaza como «Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura)». | Orden indicado desde cosmos: Usa Nemotron como planificador. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v0.2.0 (2026-10-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta |
 | Coste | El coste depende del proveedor o la ruta. Consultar es gratuito; modelos locales requieren hardware y proveedores remotos tienen sus condiciones; plugin usa el plan del agente |
 | Equipo | Preparación según la ruta elegida. Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin |
-
-Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta
-
-## Qué puedes hacer con él
-
-Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.
-
-## Por qué destaca
-
-Usos propuestos: Explorar modelos abiertos de NVIDIA; Preparar un pipeline guiado de adaptación.
-
-## Cómo funciona
 
 Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta
 
@@ -87,13 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin
 - **Etiquetas:** `training` `inference`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [vLLM](vllm.md) | 96.9k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
-| [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
 
 ## Enlaces
 

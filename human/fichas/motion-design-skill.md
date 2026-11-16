@@ -29,6 +29,15 @@ Skill en Markdown (`SKILL.md` más las carpetas `director/`, `patterns/` y `refe
 | [Claude Code](claude-code.md) | Agente compatible. | Instala con npx skills. |
 | [GSAP](gsap.md) | Implementar los principios con timelines (combinación por arquitectura). | Elige la biblioteca de animación del proyecto. |
 | [motion](motion.md) | Igual, en React (combinación por arquitectura). | Igual que arriba. |
+| [Anime.js](animejs.md) | Combinación recíproca: Anime.js lo enlaza como «Principios de movimiento para agentes. (combinación por arquitectura)». | Orden indicado desde Anime.js: Añade la skill. |
+| [gsap-skills](gsap-skills.md) | Combinación recíproca: gsap-skills lo enlaza como «Principios de dirección de movimiento independientes de la herramienta (combinación por arquitectura)». | Orden indicado desde gsap-skills: Independientes. |
+| [scenejs](scenejs.md) | Combinación recíproca: scenejs lo enlaza como «Principios de ritmo y transiciones para diseñar la línea de tiempo. (combinación por arquitectura)». | Orden indicado desde scenejs: Añade la skill al agente que escribe la animación. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[skills_emil](skills-emil.md)
 
 Estado en GitHub: activo · último push 2026-05-18 · licencia declarada MIT (consultado el 2026-11-15).
 

@@ -30,6 +30,13 @@ Paquetes npm (`@copilotkit/react-core`, `@copilotkit/runtime`), un asistente de 
 | [Mastra](mastra.md) | Agentes TypeScript con integración oficial documentada. | Configura Mastra y registra el agente en el runtime de CopilotKit. |
 | [Microsoft Agent Framework](agent-framework.md) | Agentes de Microsoft Agent Framework con integración documentada. | Expón el agente y conéctalo vía AG-UI. |
 | [crewAI](crewai.md) | Equipos de agentes CrewAI con integración documentada. | Despliega el crew y conéctalo al runtime. |
+| [OpenBot](openbot.md) | OpenBot, la plataforma de compañeros de IA de CopilotKit, está construida sobre CopilotKit y AG-UI. | Parte de OpenBot si quieres un espacio de trabajo completo en vez de componentes sueltos. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[claude-quickstarts](claude-quickstarts.md) · [LangGraph.js](langgraphjs.md) · [OpenDots](opendots.md) · [OpenUI](openui.md)
 
 **Notas:** Alternativas (elige una): assistant-ui.
 

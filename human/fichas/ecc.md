@@ -30,6 +30,14 @@ Se instala como plugin `ecc@ecc` en Claude Code (asistente guiado o comandos nat
 | [Codex CLI](codex.md) | Plugin nativo. | Consulta la matriz de soporte antes de esperar las mismas funciones. |
 | [OpenCode](opencode.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
+| [claude-code-hooks-mastery](claude-code-hooks-mastery.md) | Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Marco que también usa hooks; sirve de ejemplo de producción (combinación por arquitectura)». | Orden indicado desde claude-code-hooks-mastery: No mezcles hooks de ambos sin revisar los conflictos. |
+| [hermes-agent](hermes-agent.md) | Combinación recíproca: hermes-agent lo enlaza como «Skills y configuración reutilizables. (combinación por arquitectura)». | Orden indicado desde hermes-agent: Importa las skills que apliquen. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenHands](openhands.md)
 
 **Notas:** Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
 
