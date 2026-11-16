@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 768 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 813 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -927,7 +927,7 @@
      "title": "Apps de datos en Python"
     }
    ],
-   "count": 12
+   "count": 23
   },
   {
    "num": 26,
@@ -950,7 +950,7 @@
      "title": "Física y simulación"
     }
    ],
-   "count": 19
+   "count": 28
   },
   {
    "num": 27,
@@ -992,7 +992,7 @@
      "title": "Visión por computador"
     }
    ],
-   "count": 17
+   "count": 21
   },
   {
    "num": 29,
@@ -1023,7 +1023,7 @@
      "title": "Procesamiento y limpieza de audio"
     }
    ],
-   "count": 26
+   "count": 33
   },
   {
    "num": 30,
@@ -1046,7 +1046,7 @@
      "title": "Aplicaciones y flujos de producción"
     }
    ],
-   "count": 21
+   "count": 23
   },
   {
    "num": 31,
@@ -1065,7 +1065,7 @@
      "title": "Diagramas y documentación"
     }
    ],
-   "count": 8
+   "count": 12
   },
   {
    "num": 32,
@@ -1092,7 +1092,7 @@
      "title": "Directorios y recursos de navegador"
     }
    ],
-   "count": 11
+   "count": 19
   }
  ],
  "recipes": [
@@ -7283,7 +7283,9 @@
    "one": "Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje.",
    "alt": [
     "puppeteer",
-    "selenium"
+    "selenium",
+    "cypress",
+    "webdriverio"
    ],
    "doc": "human/fichas/playwright.md",
    "github_id": 221981891,
@@ -7322,7 +7324,9 @@
    "one": "Librería de Google para controlar Chrome y Firefox desde Node.js.",
    "alt": [
     "playwright",
-    "selenium"
+    "selenium",
+    "cypress",
+    "webdriverio"
    ],
    "doc": "human/fichas/puppeteer.md",
    "github_id": 90796663,
@@ -7394,7 +7398,9 @@
    "one": "Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.",
    "alt": [
     "playwright",
-    "puppeteer"
+    "puppeteer",
+    "cypress",
+    "webdriverio"
    ],
    "doc": "human/fichas/selenium.md",
    "github_id": 7613257,
@@ -10819,7 +10825,8 @@
    "pick": false,
    "one": "Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.",
    "alt": [
-    "duckdb"
+    "duckdb",
+    "pandas"
    ],
    "doc": "human/fichas/polars.md",
    "github_id": 263727855,
@@ -12179,7 +12186,10 @@
    "lib": false,
    "pick": true,
    "one": "Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.",
-   "alt": [],
+   "alt": [
+    "babylonjs",
+    "playcanvas"
+   ],
    "doc": "human/fichas/three-js.md",
    "github_id": 576201,
    "starred_by": "Cristrva1",
@@ -13513,7 +13523,10 @@
    "pick": true,
    "one": "Librería Python para crear y compartir apps web de modelos de ML en minutos.",
    "alt": [
-    "streamlit"
+    "streamlit",
+    "reflex",
+    "nicegui",
+    "panel"
    ],
    "doc": "human/fichas/gradio.md",
    "github_id": 162405963,
@@ -13553,7 +13566,10 @@
    "pick": false,
    "one": "Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS.",
    "alt": [
-    "gradio"
+    "gradio",
+    "reflex",
+    "nicegui",
+    "panel"
    ],
    "doc": "human/fichas/streamlit.md",
    "github_id": 204086862,
@@ -14260,7 +14276,9 @@
    "lib": false,
    "pick": false,
    "one": "Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video.",
-   "alt": [],
+   "alt": [
+    "cvat"
+   ],
    "doc": "human/fichas/label-studio.md",
    "github_id": 192640529,
    "added_at": "2026-11-10",
@@ -14707,7 +14725,8 @@
    "one": "Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.",
    "alt": [
     "cosyvoice",
-    "gpt-sovits"
+    "gpt-sovits",
+    "f5-tts"
    ],
    "doc": "human/fichas/fish-speech.md",
    "github_id": 702796244,
@@ -14784,7 +14803,8 @@
    "one": "Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue.",
    "alt": [
     "fish-speech",
-    "index-tts"
+    "index-tts",
+    "f5-tts"
    ],
    "doc": "human/fichas/cosyvoice.md",
    "github_id": 823430322,
@@ -14866,7 +14886,8 @@
    "one": "Framework open source para agentes de voz y apps multimodales en tiempo real.",
    "alt": [
     "livekit-agents",
-    "dograh"
+    "dograh",
+    "ten-framework"
    ],
    "doc": "human/fichas/pipecat.md",
    "github_id": 736272311,
@@ -14908,7 +14929,8 @@
    "one": "Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit.",
    "alt": [
     "pipecat",
-    "dograh"
+    "dograh",
+    "ten-framework"
    ],
    "doc": "human/fichas/livekit-agents.md",
    "github_id": 707441527,
@@ -15324,7 +15346,9 @@
    "one": "Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos.",
    "alt": [
     "moviepy",
-    "hyperframes"
+    "hyperframes",
+    "motion-canvas",
+    "revideo"
    ],
    "doc": "human/fichas/remotion.md",
    "github_id": 274495425,
@@ -15698,7 +15722,10 @@
    "lib": false,
    "pick": true,
    "one": "Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.",
-   "alt": [],
+   "alt": [
+    "yue",
+    "ace-step-1.5"
+   ],
    "doc": "human/fichas/audiocraft.md",
    "github_id": 650945129,
    "added_at": "2026-11-10",
@@ -16514,7 +16541,9 @@
    "pick": true,
    "one": "Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown.",
    "alt": [
-    "excalidraw"
+    "excalidraw",
+    "d2",
+    "plantuml"
    ],
    "doc": "human/fichas/mermaid.md",
    "github_id": 26066727,
@@ -19026,7 +19055,10 @@
    "lib": false,
    "pick": false,
    "one": "Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.",
-   "alt": [],
+   "alt": [
+    "yue",
+    "audiocraft"
+   ],
    "doc": "human/fichas/ace-step-1-5.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -20683,7 +20715,8 @@
    "one": "Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.",
    "alt": [
     "pipecat",
-    "livekit-agents"
+    "livekit-agents",
+    "ten-framework"
    ],
    "stars": 6094,
    "github_id": 1053292493,
@@ -31196,6 +31229,1737 @@
     "no_api",
     "local_model"
    ]
+  },
+  {
+   "id": "pandas",
+   "name": "pandas",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "python",
+    "dataframe",
+    "analytics"
+   ],
+   "stars": 50536,
+   "gh": "pandas-dev/pandas",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
+   "alt": [
+    "polars"
+   ],
+   "doc": "human/fichas/pandas.md",
+   "github_id": 858127,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dbt",
+   "name": "dbt",
+   "cat": 25,
+   "sub": "datos",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "sql",
+    "etl",
+    "analytics"
+   ],
+   "stars": 14175,
+   "gh": "dbt-labs/dbt",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
+   "alt": [],
+   "doc": "human/fichas/dbt.md",
+   "github_id": 53548867,
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "reflex",
+   "name": "Reflex",
+   "cat": 25,
+   "sub": "apps",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "web",
+    "framework",
+    "ui"
+   ],
+   "stars": 29029,
+   "gh": "reflex-dev/reflex",
+   "lib": false,
+   "pick": false,
+   "one": "Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado.",
+   "alt": [
+    "nicegui",
+    "panel",
+    "streamlit",
+    "gradio"
+   ],
+   "doc": "human/fichas/reflex.md",
+   "github_id": 557075997,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nicegui",
+   "name": "NiceGUI",
+   "cat": 25,
+   "sub": "apps",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "web",
+    "ui",
+    "framework"
+   ],
+   "stars": 16342,
+   "gh": "zauberzeug/nicegui",
+   "lib": false,
+   "pick": false,
+   "one": "Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas.",
+   "alt": [
+    "reflex",
+    "panel",
+    "streamlit",
+    "gradio"
+   ],
+   "doc": "human/fichas/nicegui.md",
+   "github_id": 365250183,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "panel",
+   "name": "Panel",
+   "cat": 25,
+   "sub": "apps",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "dashboard",
+    "dataviz",
+    "framework"
+   ],
+   "stars": 5825,
+   "gh": "holoviz/panel",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`.",
+   "alt": [
+    "reflex",
+    "nicegui",
+    "streamlit",
+    "gradio"
+   ],
+   "doc": "human/fichas/panel.md",
+   "github_id": 145848899,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "clickhouse",
+   "name": "ClickHouse",
+   "cat": 25,
+   "sub": "datos",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "database",
+    "sql",
+    "analytics",
+    "cpp"
+   ],
+   "stars": 50950,
+   "gh": "ClickHouse/ClickHouse",
+   "lib": false,
+   "pick": false,
+   "one": "Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube.",
+   "alt": [],
+   "doc": "human/fichas/clickhouse.md",
+   "github_id": 60246359,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "spark",
+   "name": "Apache Spark",
+   "cat": 25,
+   "sub": "datos",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "bigdata",
+    "sql",
+    "streaming"
+   ],
+   "stars": 44536,
+   "gh": "apache/spark",
+   "lib": false,
+   "pick": false,
+   "one": "Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark.",
+   "alt": [],
+   "doc": "human/fichas/spark.md",
+   "github_id": 17165658,
+   "lang": "Scala",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "arrow",
+   "name": "Apache Arrow",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "columnar",
+    "python",
+    "cpp"
+   ],
+   "stars": 17301,
+   "gh": "apache/arrow",
+   "lib": false,
+   "pick": false,
+   "one": "Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas.",
+   "alt": [],
+   "doc": "human/fichas/arrow.md",
+   "github_id": 51905353,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pygwalker",
+   "name": "PyGWalker",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dataviz",
+    "python",
+    "jupyter",
+    "eda"
+   ],
+   "stars": 16009,
+   "gh": "Kanaries/pygwalker",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos.",
+   "alt": [],
+   "doc": "human/fichas/pygwalker.md",
+   "github_id": 602389947,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ibis",
+   "name": "Ibis",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "python",
+    "dataframe",
+    "sql"
+   ],
+   "stars": 6701,
+   "gh": "ibis-project/ibis",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores.",
+   "alt": [],
+   "doc": "human/fichas/ibis.md",
+   "github_id": 34139230,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dlt",
+   "name": "dlt (data load tool)",
+   "cat": 25,
+   "sub": "datos",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "data",
+    "etl",
+    "python",
+    "pipeline"
+   ],
+   "stars": 6096,
+   "gh": "dlt-hub/dlt",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental.",
+   "alt": [],
+   "doc": "human/fichas/dlt.md",
+   "github_id": 452221115,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "godot",
+   "name": "Godot Engine",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "gamedev",
+    "3d",
+    "2d",
+    "cpp"
+   ],
+   "stars": 120252,
+   "gh": "godotengine/godot",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.",
+   "alt": [
+    "bevy"
+   ],
+   "doc": "human/fichas/godot.md",
+   "github_id": 15634981,
+   "lang": "C++",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pixijs",
+   "name": "PixiJS",
+   "cat": 26,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "javascript",
+    "2d",
+    "webgl",
+    "animation"
+   ],
+   "stars": 48745,
+   "gh": "pixijs/pixijs",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador.",
+   "alt": [],
+   "doc": "human/fichas/pixijs.md",
+   "github_id": 7741856,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "babylonjs",
+   "name": "Babylon.js",
+   "cat": 26,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "javascript",
+    "3d",
+    "webgl",
+    "webxr"
+   ],
+   "stars": 26376,
+   "gh": "BabylonJS/Babylon.js",
+   "lib": false,
+   "pick": false,
+   "one": "Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.",
+   "alt": [
+    "three.js",
+    "playcanvas"
+   ],
+   "doc": "human/fichas/babylonjs.md",
+   "github_id": 11007313,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "playcanvas",
+   "name": "PlayCanvas Engine",
+   "cat": 26,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "javascript",
+    "3d",
+    "webgpu",
+    "gamedev"
+   ],
+   "stars": 17306,
+   "gh": "playcanvas/engine",
+   "lib": false,
+   "pick": false,
+   "one": "Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.",
+   "alt": [
+    "three.js",
+    "babylonjs"
+   ],
+   "doc": "human/fichas/playcanvas.md",
+   "github_id": 19696006,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "bevy",
+   "name": "Bevy",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "rust",
+    "gamedev",
+    "ecs",
+    "3d"
+   ],
+   "stars": 49777,
+   "gh": "bevyengine/bevy",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.",
+   "alt": [
+    "godot"
+   ],
+   "doc": "human/fichas/bevy.md",
+   "github_id": 234798675,
+   "lang": "Rust",
+   "license": "MIT OR Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "freecad",
+   "name": "FreeCAD",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cad",
+    "3d",
+    "cpp",
+    "app"
+   ],
+   "stars": 35493,
+   "gh": "FreeCAD/FreeCAD",
+   "lib": false,
+   "pick": false,
+   "one": "Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python.",
+   "alt": [],
+   "doc": "human/fichas/freecad.md",
+   "github_id": 5736080,
+   "lang": "C++",
+   "license": "LGPL-2.1",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "openscad",
+   "name": "OpenSCAD",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cad",
+    "3d",
+    "code",
+    "app"
+   ],
+   "stars": 10662,
+   "gh": "openscad/openscad",
+   "lib": false,
+   "pick": false,
+   "one": "CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas.",
+   "alt": [],
+   "doc": "human/fichas/openscad.md",
+   "github_id": 1049088,
+   "lang": "C++",
+   "license": "GPL-2.0 (con excepción CGAL)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "genesis-world",
+   "name": "Genesis World",
+   "cat": 26,
+   "sub": "simulacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "simulation",
+    "robotics",
+    "physics",
+    "python"
+   ],
+   "stars": 30235,
+   "gh": "Genesis-Embodied-AI/genesis-world",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU.",
+   "alt": [],
+   "doc": "human/fichas/genesis-world.md",
+   "github_id": 712225112,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "mujoco",
+   "name": "MuJoCo",
+   "cat": 26,
+   "sub": "simulacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "simulation",
+    "robotics",
+    "physics",
+    "python"
+   ],
+   "stars": 18110,
+   "gh": "google-deepmind/mujoco",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo.",
+   "alt": [],
+   "doc": "human/fichas/mujoco.md",
+   "github_id": 400501136,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "3d",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "deepface",
+   "name": "DeepFace",
+   "cat": 28,
+   "sub": "rostros",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "face",
+    "python",
+    "vision",
+    "biometrics"
+   ],
+   "stars": 23701,
+   "gh": "serengil/deepface",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face.",
+   "alt": [],
+   "doc": "human/fichas/deepface.md",
+   "github_id": 239201565,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "detectron2",
+   "name": "Detectron2",
+   "cat": 28,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vision",
+    "pytorch",
+    "detection",
+    "segmentation"
+   ],
+   "stars": 34985,
+   "gh": "facebookresearch/detectron2",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.",
+   "alt": [],
+   "doc": "human/fichas/detectron2.md",
+   "github_id": 206660580,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "cvat",
+   "name": "CVAT Community",
+   "cat": 28,
+   "sub": "vision",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "annotation",
+    "vision",
+    "dataset",
+    "self-hosted"
+   ],
+   "stars": 17144,
+   "gh": "cvat-ai/cvat",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.",
+   "alt": [
+    "label-studio"
+   ],
+   "doc": "human/fichas/cvat.md",
+   "github_id": 139156354,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "datos"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "dlib",
+   "name": "dlib",
+   "cat": 28,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vision",
+    "cpp",
+    "python",
+    "face"
+   ],
+   "stars": 14476,
+   "gh": "davisking/dlib",
+   "lib": false,
+   "pick": false,
+   "one": "Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización.",
+   "alt": [],
+   "doc": "human/fichas/dlib.md",
+   "github_id": 16331291,
+   "lang": "C++",
+   "license": "BSL-1.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "ultimate-vocal-remover",
+   "name": "Ultimate Vocal Remover (UVR)",
+   "cat": 29,
+   "sub": "audio",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "music",
+    "separation",
+    "app"
+   ],
+   "stars": 27193,
+   "gh": "Anjok07/ultimatevocalremovergui",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar.",
+   "alt": [],
+   "doc": "human/fichas/ultimate-vocal-remover.md",
+   "github_id": 281229404,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "sherpa-onnx",
+   "name": "sherpa-onnx",
+   "cat": 29,
+   "sub": "stt",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "speech",
+    "stt",
+    "tts",
+    "onnx"
+   ],
+   "stars": 15978,
+   "gh": "k2-fsa/sherpa-onnx",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor.",
+   "alt": [],
+   "doc": "human/fichas/sherpa-onnx.md",
+   "github_id": 531380835,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "f5-tts",
+   "name": "F5-TTS",
+   "cat": 29,
+   "sub": "tts",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "tts",
+    "voice-cloning",
+    "pytorch",
+    "speech"
+   ],
+   "stars": 15600,
+   "gh": "SWivid/F5-TTS",
+   "lib": false,
+   "pick": false,
+   "one": "Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI.",
+   "alt": [
+    "fish-speech",
+    "cosyvoice"
+   ],
+   "doc": "human/fichas/f5-tts.md",
+   "github_id": 869549554,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "narrar",
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "audacity",
+   "name": "Audacity",
+   "cat": 29,
+   "sub": "audio",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "editor",
+    "cpp",
+    "app"
+   ],
+   "stars": 19083,
+   "gh": "audacity/audacity",
+   "lib": false,
+   "pick": false,
+   "one": "Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel.",
+   "alt": [],
+   "doc": "human/fichas/audacity.md",
+   "github_id": 32921736,
+   "lang": "C++",
+   "license": "GPL-3.0 (mayoría de archivos GPL-2.0-or-later)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "demucs",
+   "name": "Demucs",
+   "cat": 29,
+   "sub": "audio",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "audio",
+    "music",
+    "separation",
+    "pytorch"
+   ],
+   "stars": 3551,
+   "gh": "adefossez/demucs",
+   "lib": false,
+   "pick": false,
+   "one": "Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta.",
+   "alt": [],
+   "doc": "human/fichas/demucs.md",
+   "github_id": 719554886,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "yue",
+   "name": "YuE2",
+   "cat": 29,
+   "sub": "musica",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "music",
+    "generation",
+    "audio",
+    "model"
+   ],
+   "stars": 13528,
+   "gh": "multimodal-art-projection/YuE",
+   "lib": false,
+   "pick": false,
+   "one": "Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.",
+   "alt": [
+    "ace-step-1.5",
+    "audiocraft"
+   ],
+   "doc": "human/fichas/yue.md",
+   "github_id": 920995232,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "ten-framework",
+   "name": "TEN Framework",
+   "cat": 29,
+   "sub": "voz-agentes",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "voice",
+    "agents",
+    "realtime",
+    "framework"
+   ],
+   "stars": 11232,
+   "gh": "TEN-framework/ten-framework",
+   "lib": false,
+   "pick": false,
+   "one": "Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.",
+   "alt": [
+    "pipecat",
+    "livekit-agents",
+    "dograh"
+   ],
+   "doc": "human/fichas/ten-framework.md",
+   "github_id": 817354652,
+   "lang": "Python",
+   "license": "Apache-2.0 con condiciones adicionales (Agora)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "voz",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "api"
+   ]
+  },
+  {
+   "id": "motion-canvas",
+   "name": "Motion Canvas",
+   "cat": 30,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animation",
+    "typescript",
+    "video",
+    "code"
+   ],
+   "stars": 19965,
+   "gh": "motion-canvas/motion-canvas",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.",
+   "alt": [
+    "revideo",
+    "remotion"
+   ],
+   "doc": "human/fichas/motion-canvas.md",
+   "github_id": 520955562,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "revideo",
+   "name": "Revideo",
+   "cat": 30,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "video",
+    "typescript",
+    "rendering",
+    "code"
+   ],
+   "stars": 4212,
+   "gh": "midrender/revideo",
+   "lib": false,
+   "pick": false,
+   "one": "Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.",
+   "alt": [
+    "motion-canvas",
+    "remotion"
+   ],
+   "doc": "human/fichas/revideo.md",
+   "github_id": 770297271,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "video",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "d2",
+   "name": "D2",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "go",
+    "cli",
+    "docs-as-code"
+   ],
+   "stars": 25844,
+   "gh": "d2lang/d2",
+   "lib": false,
+   "pick": false,
+   "one": "Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
+   "alt": [
+    "plantuml",
+    "mermaid"
+   ],
+   "doc": "human/fichas/d2.md",
+   "github_id": 533087958,
+   "lang": "Go",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "drawio",
+   "name": "draw.io",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "editor",
+    "javascript",
+    "app"
+   ],
+   "stars": 9390,
+   "gh": "jgraph/drawio",
+   "lib": false,
+   "pick": false,
+   "one": "Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML.",
+   "alt": [],
+   "doc": "human/fichas/drawio.md",
+   "github_id": 67508428,
+   "lang": "JavaScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "plantuml",
+   "name": "PlantUML",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "uml",
+    "java",
+    "docs-as-code"
+   ],
+   "stars": 13421,
+   "gh": "plantuml/plantuml",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
+   "alt": [
+    "d2",
+    "mermaid"
+   ],
+   "doc": "human/fichas/plantuml.md",
+   "github_id": 1051476,
+   "lang": "Java",
+   "license": "Multilicencia (GPL-3.0, LGPL-3.0, Apache-2.0, EPL-2.0 o MIT)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kroki",
+   "name": "Kroki",
+   "cat": 31,
+   "sub": "diagramas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagrams",
+    "api",
+    "self-hosted",
+    "docker"
+   ],
+   "stars": 4407,
+   "gh": "yuzutech/kroki",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG.",
+   "alt": [],
+   "doc": "human/fichas/kroki.md",
+   "github_id": 165063056,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "flaresolverr",
+   "name": "FlareSolverr",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "scraping",
+    "proxy",
+    "cloudflare",
+    "docker"
+   ],
+   "stars": 16238,
+   "gh": "FlareSolverr/FlareSolverr",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.",
+   "alt": [],
+   "doc": "human/fichas/flaresolverr.md",
+   "github_id": 270910423,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "camoufox",
+   "name": "Camoufox",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "scraping",
+    "firefox",
+    "playwright"
+   ],
+   "stars": 13330,
+   "gh": "daijro/camoufox",
+   "lib": false,
+   "pick": false,
+   "one": "Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright.",
+   "alt": [],
+   "doc": "human/fichas/camoufox.md",
+   "github_id": 834082440,
+   "lang": "C",
+   "license": "MPL-2.0 (navegador) y MIT (paquetes de Python)",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "nanobrowser",
+   "name": "Nanobrowser",
+   "cat": 32,
+   "sub": "agentes-web",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "agent",
+    "chrome",
+    "extension"
+   ],
+   "stars": 14317,
+   "gh": "nanobrowser/nanobrowser",
+   "lib": false,
+   "pick": false,
+   "one": "Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.",
+   "alt": [],
+   "doc": "human/fichas/nanobrowser.md",
+   "github_id": 910418754,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "steel-browser",
+   "name": "Steel Browser",
+   "cat": 32,
+   "sub": "agentes-web",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "api",
+    "agents",
+    "docker"
+   ],
+   "stars": 7973,
+   "gh": "steel-dev/steel-browser",
+   "lib": false,
+   "pick": false,
+   "one": "API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium.",
+   "alt": [],
+   "doc": "human/fichas/steel-browser.md",
+   "github_id": 882026761,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "cypress",
+   "name": "Cypress",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "testing",
+    "e2e",
+    "javascript",
+    "browser"
+   ],
+   "stars": 51029,
+   "gh": "cypress-io/cypress",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso.",
+   "alt": [
+    "webdriverio",
+    "playwright",
+    "selenium",
+    "puppeteer"
+   ],
+   "doc": "human/fichas/cypress.md",
+   "github_id": 31629751,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "webdriverio",
+   "name": "WebdriverIO",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "testing",
+    "e2e",
+    "webdriver",
+    "mobile"
+   ],
+   "stars": 9884,
+   "gh": "webdriverio/webdriverio",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA.",
+   "alt": [
+    "cypress",
+    "playwright",
+    "selenium",
+    "puppeteer"
+   ],
+   "doc": "human/fichas/webdriverio.md",
+   "github_id": 2296970,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "web"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ladybird",
+   "name": "Ladybird",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "engine",
+    "cpp",
+    "independent"
+   ],
+   "stars": 67152,
+   "gh": "LadybirdBrowser/ladybird",
+   "lib": false,
+   "pick": false,
+   "one": "Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.",
+   "alt": [
+    "servo"
+   ],
+   "doc": "human/fichas/ladybird.md",
+   "github_id": 808045485,
+   "lang": "Rust",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "servo",
+   "name": "Servo",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "browser",
+    "engine",
+    "rust",
+    "embedding"
+   ],
+   "stars": 38529,
+   "gh": "servo/servo",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.",
+   "alt": [
+    "ladybird"
+   ],
+   "doc": "human/fichas/servo.md",
+   "github_id": 3390243,
+   "lang": "Rust",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   }
  ],
  "discovery": {
@@ -31223,7 +32987,14 @@
      20,
      22,
      23,
-     24
+     24,
+     25,
+     26,
+     28,
+     29,
+     30,
+     31,
+     32
     ],
     "keywords": [
      "programar",
@@ -31258,7 +33029,10 @@
     "categories": [
      1,
      17,
-     18
+     18,
+     25,
+     29,
+     32
     ],
     "keywords": [
      "automatizar",
@@ -31444,7 +33218,8 @@
     "categories": [
      9,
      26,
-     27
+     27,
+     32
     ],
     "keywords": [
      "web",
@@ -31686,7 +33461,8 @@
     "categories": [
      10,
      24,
-     25
+     25,
+     28
     ],
     "keywords": [
      "datos",
@@ -31923,7 +33699,8 @@
      16,
      17,
      18,
-     22
+     22,
+     25
     ],
     "keywords": [
      "servidor propio",

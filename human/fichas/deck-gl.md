@@ -30,6 +30,7 @@ Escrito en TypeScript sobre luma.gl (WebGL2/WebGPU); se usa por script, npm, con
 | [kepler.gl](kepler-gl.md) | kepler.gl está construido sobre deck.gl y MapLibre. | Usa kepler.gl para exploración sin código y deck.gl para visualizaciones a medida. |
 | [Apache Superset](superset.md) | Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales. | Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl. |
 | [JupyterLab](jupyterlab.md) | pydeck, el binding de Python de deck.gl, muestra mapas interactivos en cuadernos Jupyter. | Instala pydeck en el entorno de JupyterLab; después renderiza las capas en una celda. |
+| [Panel](panel.md) | Combinación recíproca: Panel lo enlaza como «Panel incluye un pane DeckGL para mostrar visualizaciones geoespaciales de deck.gl». | Orden indicado desde Panel: Instala Panel; después usa `pn.pane.DeckGL` con la especificación de deck.gl. |
 
 **Notas:** Para mapas base comerciales revisa las condiciones y claves del proveedor.
 

@@ -32,9 +32,9 @@ Se instala con `npm install gsap` o desde CDN y no tiene dependencias.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[brag](brag.md) · [genjutsu](genjutsu.md) · [gsap-skills](gsap-skills.md) · [huashu-motion](huashu-motion.md) · [HyperFrames](hyperframes.md) · [motion-design-skill](motion-design-skill.md) · [motionmaxxing](motionmaxxing.md) · [openfilm](openfilm.md) · [reveal.js](reveal-js.md) · [zdog](zdog.md)
+[Babylon.js](babylonjs.md) · [brag](brag.md) · [genjutsu](genjutsu.md) · [gsap-skills](gsap-skills.md) · [huashu-motion](huashu-motion.md) · [HyperFrames](hyperframes.md) · [motion-design-skill](motion-design-skill.md) · [motionmaxxing](motionmaxxing.md) · [openfilm](openfilm.md) · [PixiJS](pixijs.md) · [PlayCanvas Engine](playcanvas.md) · [reveal.js](reveal-js.md) · [zdog](zdog.md)
 
 **Notas:** Alternativas (elige una): animejs. La licencia prohíbe usarla en herramientas visuales de animación sin código que compitan con Webflow.
 

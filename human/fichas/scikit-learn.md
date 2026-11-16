@@ -29,6 +29,7 @@ Se instala con pip o conda; requiere Python reciente, NumPy y SciPy. La API de e
 | [JupyterLab](jupyterlab.md) | scikit-learn se usa habitualmente en cuadernos para explorar datos y modelos (combinación por arquitectura). | Instala scikit-learn en el entorno de JupyterLab. |
 | [MLflow](mlflow.md) | MLflow incluye autolog para scikit-learn que registra parámetros, métricas y modelos. | Instala mlflow; después llama a `mlflow.sklearn.autolog()` antes de entrenar. |
 | [ML for Beginners](ml-for-beginners.md) | El curso ML for Beginners enseña machine learning clásico con scikit-learn. | Sigue las lecciones con scikit-learn instalado. |
+| [pandas](pandas.md) | Combinación recíproca: pandas lo enlaza como «scikit-learn acepta DataFrames de pandas como entrada y puede devolver salidas en pandas con `set_output(transform="pandas")`». | Orden indicado desde pandas: Prepara los datos con pandas; después pásalos a los estimadores de scikit-learn. |
 
 **Notas:** No está pensado para deep learning ni GPU; para eso usa pytorch o jax.
 

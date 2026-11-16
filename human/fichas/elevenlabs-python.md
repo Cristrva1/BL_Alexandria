@@ -31,6 +31,7 @@ Se instala con `pip install elevenlabs` (Python 3.8 o superior) y se autentica c
 | [LiveKit Agents](livekit-agents.md) | LiveKit Agents documenta un plugin de TTS de ElevenLabs. | Instala el plugin de ElevenLabs y define la clave en el entorno del agente. |
 | [video-use](video-use.md) | video-use pide una clave de ElevenLabs para la voz; el SDK sirve para elegir y probar voces o generar pistas fuera del flujo. (combinación por arquitectura) | Usa la misma clave en ambos y prueba la voz antes de editar. |
 | [Remotion Superpowers](remotion-superpowers.md) | El plugin usa las skills oficiales de ElevenLabs para locución, efectos y música. (combinación por arquitectura) | Configura la clave de ElevenLabs al instalar el plugin. |
+| [TEN Framework](ten-framework.md) | Combinación recíproca: TEN Framework lo enlaza como «El ejemplo rápido de TEN usa ElevenLabs para la síntesis de voz (requiere clave)». | Orden indicado desde TEN Framework: Crea una clave de ElevenLabs; después ponla en `ELEVENLABS_TTS_KEY` del `.env`. |
 
 **Notas:** La clonación de voz exige el consentimiento de la persona. Vigila el consumo de créditos: el SDK no limita el gasto.
 

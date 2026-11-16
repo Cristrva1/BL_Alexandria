@@ -29,6 +29,7 @@ Se instala con pip según el hardware (`jax` para CPU, `jax[cuda13]` para GPU NV
 | [Keras 3](keras.md) | Keras 3 puede usar JAX como backend. | Instala JAX; después define KERAS_BACKEND=jax. |
 | [Gemma (biblioteca JAX)](gemma.md) | La biblioteca oficial de Gemma está construida sobre JAX. | Instala JAX para tu hardware; después instala gemma. |
 | [JupyterLab](jupyterlab.md) | JAX se usa habitualmente en cuadernos para experimentar (combinación por arquitectura). | Instala JAX en el entorno de JupyterLab. |
+| [MuJoCo](mujoco.md) | Combinación recíproca: MuJoCo lo enlaza como «MJX (MuJoCo XLA) es una rama de MuJoCo escrita en JAX que permite simular miles de entornos en paralelo en GPU o TPU». | Orden indicado desde MuJoCo: Instala `mujoco-mjx` con JAX; después carga el modelo con `mjx.put_model`. |
 
 **Notas:** Alternativas (elige una): pytorch, tensorflow.
 

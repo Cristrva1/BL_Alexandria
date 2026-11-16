@@ -115,6 +115,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `musica` `text2music` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [YuE2](yue.md) | 13.5k | Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes. |
+| [AudioCraft](audiocraft.md) | 23.9k | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. |
+
 ## Enlaces
 
 - 🐙 GitHub: [ace-step/ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5)

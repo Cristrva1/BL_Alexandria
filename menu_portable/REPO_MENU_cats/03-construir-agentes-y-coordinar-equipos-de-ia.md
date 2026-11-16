@@ -409,7 +409,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings
 **Qué comprobar:** La respuesta recupera un fragmento comprobable del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `ollama`, `claude-code`, `evolution-api`, `paddleocr`
+**Combina con:** `langfuse`, `ollama`, `claude-code`, `evolution-api`, `paddleocr`, `ten-framework`
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`

@@ -29,6 +29,7 @@ Se usa mediante el paquete Python `insightface` (que descarga los modelos autom�
 | [FaceFusion](facefusion.md) | Usa modelos de análisis facial del ecosistema. (combinación por arquitectura) | Instala FaceFusion con sus modelos. |
 | [Deep-Live-Cam](deep-live-cam.md) | Usa su modelo inswapper. | Viene como dependencia. |
 | [LivePortrait](liveportrait.md) | Detección y recorte facial. (combinación por arquitectura) | Viene como dependencia en la ruta por defecto. |
+| [DeepFace](deepface.md) | Combinación recíproca: DeepFace lo enlaza como «El modelo de reconocimiento Buffalo_L que envuelve DeepFace procede de InsightFace». | Orden indicado desde DeepFace: Instala DeepFace; después usa `model_name="Buffalo_L"` (revisa la licencia de los pesos de InsightFace). |
 
 **Notas:** Sin alternativas declaradas. Los pesos no permiten uso comercial.
 

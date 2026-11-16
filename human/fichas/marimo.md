@@ -32,9 +32,9 @@ Se instala con `pip install marimo` o conda (`marimo tutorial intro` para empeza
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) · [D3.js](d3.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [machine-learning-for-trading](machine-learning-for-trading.md) · [ML for Beginners](ml-for-beginners.md) · [nautilus_trader](nautilus-trader.md) · [ODM](odm.md) · [qlib](qlib.md) · [tensorflow](tensorflow.md) · [vectorbt](vectorbt.md) · [WebODM](webodm.md)
+[Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) · [D3.js](d3.md) · [data-analyst-roadmap](data-analyst-roadmap.md) · [dlt (data load tool)](dlt.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [machine-learning-for-trading](machine-learning-for-trading.md) · [ML for Beginners](ml-for-beginners.md) · [nautilus_trader](nautilus-trader.md) · [ODM](odm.md) · [Panel](panel.md) · [qlib](qlib.md) · [tensorflow](tensorflow.md) · [vectorbt](vectorbt.md) · [WebODM](webodm.md)
 
 **Notas:** Alternativa (elige una): jupyterlab.
 
