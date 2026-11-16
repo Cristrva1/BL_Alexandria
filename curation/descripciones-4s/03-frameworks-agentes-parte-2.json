@@ -269,6 +269,12 @@
      "motivo": "Combinación recíproca: PaddleOCR lo enlaza como «El README cita Dify entre los proyectos que lo integran».",
      "orden_instalacion": "Orden indicado desde PaddleOCR: Úsalo como servicio externo de OCR o herramienta dentro de los flujos.",
      "reciproca_de": "paddleocr"
+    },
+    {
+     "id": "ten-framework",
+     "motivo": "Combinación recíproca: TEN Framework lo enlaza como «TEN incluye una extensión que conecta el agente de voz con aplicaciones de Dify».",
+     "orden_instalacion": "Orden indicado desde TEN Framework: Crea la app en Dify; después configura la extensión de Dify en el grafo de TEN con su clave.",
+     "reciproca_de": "ten-framework"
     }
    ],
    "notas": "Alternativas (elige una): sim, ragflow. Combinación anterior con langflow eliminada: son plataformas solapadas sin integración documentada. Licencia con condiciones adicionales sobre Apache 2.0.",

@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**86 repos.**
+**93 repos.**
 
 ## ⏳ Diferir
 
@@ -78,10 +78,17 @@ _Pesado: solo si llega a finalista._
 | [SGLang](fichas/sglang.md) | 🧬 Operar, evaluar y medir modelos de IA | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 | [claude-code-router](fichas/claude-code-router.md) | 🧬 Operar, evaluar y medir modelos de IA | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
 | [TensorRT-LLM](fichas/tensorrt-llm.md) | 🧬 Operar, evaluar y medir modelos de IA | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. |
+| [GPUStack](fichas/gpustack.md) | 🧬 Operar, evaluar y medir modelos de IA | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. |
 | [tensorflow](fichas/tensorflow.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 | [DeepSeek-V3](fichas/deepseek-v3.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. |
+| [DeepSpeed](fichas/deepspeed.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes. |
 | [laya](fichas/laya.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. |
+| [verl](fichas/verl.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. |
+| [Axolotl](fichas/axolotl.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. |
 | [cosmos](fichas/cosmos.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
+| [OpenRLHF](fichas/openrlhf.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. |
+| [Gemma (biblioteca JAX)](fichas/gemma.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino. |
+| [torchtune](fichas/torchtune.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. |
 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. |
 | [hudi](fichas/hudi.md) | 🧑‍💻 Procesar datos y trabajar con notebooks | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 | [warp](fichas/warp.md) | 🎨 Animación, gráficos y creación 3D | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. |

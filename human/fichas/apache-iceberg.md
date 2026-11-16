@@ -29,6 +29,7 @@ Mantiene una especificación de metadatos estable (archivos de metadatos, manifi
 | [DuckDB](duckdb.md) | DuckDB lee tablas Iceberg con su extensión oficial `iceberg`. | Instala DuckDB, carga la extensión y consulta una tabla de prueba. |
 | [Polars](polars.md) | Polars lee tablas Iceberg con `pl.scan_iceberg` (vía PyIceberg). | Instala Polars con PyIceberg y apunta al catálogo. |
 | [JupyterLab](jupyterlab.md) | Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura) | Instala JupyterLab en el mismo entorno que PyIceberg. |
+| [Apache Spark](spark.md) | Combinación recíproca: Apache Spark lo enlaza como «Iceberg ofrece un runtime para Spark que permite crear y consultar tablas Iceberg con Spark SQL». | Orden indicado desde Apache Spark: Añade el JAR `iceberg-spark-runtime` y configura un catálogo; después usa Spark SQL. |
 
 **Notas:** Alternativas (elige una): delta-lake, hudi. Para consultas locales pequeñas suele bastar Parquet con DuckDB; Iceberg aporta valor con varios motores o escritores concurrentes.
 

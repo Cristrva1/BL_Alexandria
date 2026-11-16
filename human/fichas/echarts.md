@@ -33,6 +33,12 @@ Se instala con `npm install echarts` o desde CDN y se configura con un objeto `o
 | [awesome-dataviz](awesome-dataviz.md) | Combinación recíproca: awesome-dataviz lo enlaza como «Una de las librerías destacadas de la lista. (combinación por arquitectura)». | Orden indicado desde awesome-dataviz: Compara alternativas en la lista antes de elegir. |
 | [dash](dash.md) | Combinación recíproca: dash lo enlaza como «Gráficos alternativos mediante componentes comunitarios. (combinación por arquitectura)». | Orden indicado desde dash: Integra el componente correspondiente. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[NiceGUI](nicegui.md) · [Panel](panel.md)
+
 **Notas:** Alternativas (elige una): d3, chart-js, recharts.
 
 Estado en GitHub: activo · último push 2026-10-13 · última versión publicada 6.1.0 (2026-05-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

@@ -38,6 +38,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes relacionar parámetros y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vllm`, `ffmpeg`, `rubberband`
+**Alternativas (elige una):** `yue`, `audiocraft`
+
+## `audacity`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=audio,editor,cpp,app
+
+**Qué es:** Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/audacity/audacity
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/audacity/audacity/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: limpiar, cortar y normalizar una grabación de voz o podcast; editar stems separados con IA antes de mezclarlos
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga Audacity desde su web, graba o importa un audio y aplica reducción de ruido y normalización.
+**Qué comprobar:** Exportas un MP3 o WAV más limpio.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `demucs`, `whisper-cpp`, `audiocraft`, `yue`
 
 ## `audiocraft`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=audio,inference,training,python
@@ -67,7 +98,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Genera una muestra corta y compara su relación con el prompt sin publicar el resultado
 **Qué comprobar:** Puedes identificar modelo, duración y artefactos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `moviepy`, `remotion`, `rubberband`
+**Combina con:** `ffmpeg`, `moviepy`, `remotion`, `rubberband`, `audacity`
+**Alternativas (elige una):** `yue`, `ace-step-1.5`
 
 ## `cosyvoice`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -101,7 +133,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar voz, texto y archivo generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pipecat`, `vllm`, `ffmpeg`, `wan2-2`
-**Alternativas (elige una):** `fish-speech`, `index-tts`
+**Alternativas (elige una):** `fish-speech`, `index-tts`, `f5-tts`
+
+## `demucs`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=audio,music,separation,pytorch
+
+**Qué es:** Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/adefossez/demucs
+
+**Instalación** [+]:
+
+```
+python3 -m pip install -U demucs
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: separar la voz y la batería de una canción propia para remezclar; generar stems para karaoke o práctica musical
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `python3 -m pip install -U demucs` y ejecuta `demucs cancion.mp3`.
+**Qué comprobar:** Obtienes una carpeta con las pistas separadas (drums, bass, vocals, other).
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `pytorch`, `ultimate-vocal-remover`, `audacity`
 
 ## `dograh`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=voz-agentes,agent,python
@@ -132,7 +194,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes inspeccionar nodos, proveedores y transiciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `whisper-cpp`, `kokoro`
-**Alternativas (elige una):** `pipecat`, `livekit-agents`
+**Alternativas (elige una):** `pipecat`, `livekit-agents`, `ten-framework`
 
 ## `earshot`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=local · tags=edicion,mcp,python
@@ -224,7 +286,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte una frase corta a voz con una voz predefinida
 **Qué comprobar:** Obtienes un MP3 reproducible y el consumo aparece en tu cuenta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openmontage`, `pipecat`, `livekit-agents`, `video-use`, `remotion-superpowers`
+**Combina con:** `openmontage`, `pipecat`, `livekit-agents`, `video-use`, `remotion-superpowers`, `ten-framework`
+
+## `f5-tts`
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=tts,voice-cloning,pytorch,speech
+
+**Qué es:** Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/SWivid/F5-TTS
+
+**Instalación** [+]:
+
+```
+pip install f5-tts
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar narración con tu propia voz a partir de una muestra corta; prototipar voces para un proyecto de investigación sin uso comercial
+**Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
+**Primera prueba propuesta:** Instala PyTorch y `pip install f5-tts`; ejecuta `f5-tts_infer-gradio` y genera audio con una referencia de tu voz.
+**Qué comprobar:** Obtienes un audio con el texto leído imitando la voz de referencia.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `ffmpeg`, `gradio`
+**Alternativas (elige una):** `fish-speech`, `cosyvoice`
 
 ## `faster-whisper`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
@@ -286,7 +379,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes distinguir la variante y su licencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pipecat`, `ffmpeg`, `whisperx`
-**Alternativas (elige una):** `cosyvoice`, `gpt-sovits`
+**Alternativas (elige una):** `cosyvoice`, `gpt-sovits`, `f5-tts`
 
 ## `gpt-sovits`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -416,7 +509,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar audio de entrada, modelo y respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `kokoro`, `ollama`, `whisper-cpp`, `elevenlabs-python`
-**Alternativas (elige una):** `pipecat`, `dograh`
+**Alternativas (elige una):** `pipecat`, `dograh`, `ten-framework`
 
 ## `luxtts`
 role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,python
@@ -481,7 +574,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige la receta de transcripción y prueba un clip breve antes de entrenar
 **Qué comprobar:** Puedes identificar checkpoint, configuración y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nemotron`, `pipecat`, `pytorch`
+**Combina con:** `nemotron`, `pipecat`, `pytorch`, `sherpa-onnx`
 **Alternativas (elige una):** `whisperx`
 
 ## `omnivoice-studio`
@@ -545,7 +638,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes localizar en qué etapa falla la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `kokoro`, `whisper-cpp`, `ollama`, `nemo`, `elevenlabs-python`
-**Alternativas (elige una):** `livekit-agents`, `dograh`
+**Alternativas (elige una):** `livekit-agents`, `dograh`, `ten-framework`
 
 ## `pyannote-audio`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=audio,diarization,pytorch,python
@@ -575,7 +668,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta community-1 sobre un audio corto con dos voces de prueba
 **Qué comprobar:** Los segmentos alternan entre dos hablantes con marcas de tiempo coherentes
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `pytorch`, `faster-whisper`, `ffmpeg`
+**Combina con:** `whisperx`, `pytorch`, `faster-whisper`, `ffmpeg`, `sherpa-onnx`
 
 ## `rnnoise`
 role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=edicion,model,c
@@ -635,7 +728,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Cambia ligeramente el tempo de una copia de audio y compara duración y artefactos
 **Qué comprobar:** Puedes reconocer qué cambió en tiempo y tono
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `ace-step-1.5`, `audiocraft`
+**Combina con:** `ffmpeg`, `ace-step-1.5`, `audiocraft`, `ultimate-vocal-remover`
 
 ## `rvc`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=audio,tts,python
@@ -669,6 +762,97 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `gpt-sovits`, `ffmpeg`, `obs-studio`
 
+## `sherpa-onnx`
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=speech,stt,tts,onnx
+
+**Qué es:** Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor.
+**Stack:** C++, CMakeLists.txt, pom.xml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/k2-fsa/sherpa-onnx
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir dictado o transcripción sin conexión a una app Android o iOS; poner reconocimiento y síntesis de voz en una Raspberry Pi sin nube
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Instala el paquete de Python, descarga un modelo de reconocimiento preentrenado de la documentación y transcribe un WAV de prueba.
+**Qué comprobar:** Obtienes el texto reconocido sin conexión a internet.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `whisper`, `nemo`, `kokoro`, `pyannote-audio`
+
+## `ten-framework`
+role=library · exec=hybrid · setup=hard · mcp=False · prov=— · tags=voice,agents,realtime,framework
+
+**Qué es:** Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/TEN-framework/ten-framework
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/TEN-framework/ten-framework/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un asistente de voz que conversa en tiempo real con un LLM; construir un agente de voz con avatar o con transcripción en vivo
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Clona el repo, rellena `.env` con las claves de Agora, OpenAI, Deepgram y ElevenLabs y ejecuta `docker compose up -d`; abre el ejemplo de voz en el navegador.
+**Qué comprobar:** Puedes hablar con un agente que responde por voz en tiempo real.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dify`, `openclaw`, `vibevoice`, `whisper`, `elevenlabs-python`
+**Alternativas (elige una):** `pipecat`, `livekit-agents`, `dograh`
+
+## `ultimate-vocal-remover`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=audio,music,separation,app
+
+**Qué es:** Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar.
+**Stack:** Python, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/Anjok07/ultimatevocalremovergui
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: obtener la pista instrumental o la voz aislada de una canción propia; preparar stems para remezclar o practicar con una canción
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga el instalador para tu sistema desde las releases, abre una canción y separa con un modelo MDX-Net.
+**Qué comprobar:** Obtienes dos archivos: voz e instrumental.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `rubberband`, `demucs`
+
 ## `vibevoice`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,audio,python
 
@@ -697,7 +881,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige ASR o TTS y prueba una muestra corta siguiendo esa guía
 **Qué comprobar:** Puedes distinguir transcripción, generación y variante del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `open-notebook`, `pipecat`
+**Combina con:** `transformers`, `open-notebook`, `pipecat`, `ten-framework`
 
 ## `voxcpm`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=tts,audio,python
@@ -821,3 +1005,34 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `faster-whisper`, `whisper`, `moviepy`, `pyannote-audio`
 **Alternativas (elige una):** `nemo`
+
+## `yue`
+role=runtime · exec=local · setup=hard · mcp=False · prov=— · tags=music,generation,audio,model
+
+**Qué es:** Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/multimodal-art-projection/YuE
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/multimodal-art-projection/YuE/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar una maqueta de canción con letra propia para un proyecto personal o académico; editar la armonía de una canción generada manteniendo la melodía
+**Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
+**Primera prueba propuesta:** En Linux con una GPU NVIDIA de 24 GB, clona el repo, ejecuta `python -m pip install .` y genera una canción con `YuE2Pipeline`.
+**Qué comprobar:** Obtienes un audio estéreo y la partitura ABC editable.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `pytorch`, `audacity`
+**Alternativas (elige una):** `ace-step-1.5`, `audiocraft`

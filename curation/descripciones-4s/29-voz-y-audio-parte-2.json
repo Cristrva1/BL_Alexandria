@@ -223,6 +223,12 @@
      "motivo": "Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde rubberband: Procesa la salida.",
      "reciproca_de": "rubberband"
+    },
+    {
+     "id": "audacity",
+     "motivo": "Combinación recíproca: Audacity lo enlaza como «Los plugins OpenVINO de Intel para Audacity generan y continúan música con MusicGen de AudioCraft».",
+     "orden_instalacion": "Orden indicado desde Audacity: Instala los plugins OpenVINO y los modelos MusicGen; después usa Music Generation.",
+     "reciproca_de": "audacity"
     }
    ],
    "notas": "Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.",
@@ -333,6 +339,12 @@
      "id": "audiocraft",
      "motivo": "Ajustar duración de audio generado. (combinación por arquitectura)",
      "orden_instalacion": "Procesa la salida."
+    },
+    {
+     "id": "ultimate-vocal-remover",
+     "motivo": "Combinación recíproca: Ultimate Vocal Remover (UVR) lo enlaza como «UVR usa Rubber Band para las funciones de cambio de tiempo y de tono».",
+     "orden_instalacion": "Orden indicado desde Ultimate Vocal Remover (UVR): Instala Rubber Band según el README; después usa las herramientas de tempo y tono.",
+     "reciproca_de": "ultimate-vocal-remover"
     }
    ],
    "notas": "Sin alternativas declaradas.",

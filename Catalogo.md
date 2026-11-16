@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**748 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**811 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -30,16 +30,16 @@
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
 21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 17
 22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 26
-23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 19
-24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 14
-25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 12
-26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 19
+23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 26
+24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 25
+25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 23
+26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 28
 27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 36
-28. [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) — 17
-29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 26
-30. [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) — 21
-31. [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) — 8
-32. [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) — 11
+28. [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) — 21
+29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 33
+30. [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) — 23
+31. [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) — 12
+32. [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) — 19
 ## 🤖 1. Automatizar procesos y crear herramientas internas
 
 _Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot._ → [página de la categoría](human/categorias/01-automatizaci-n-mensajer-a-crm.md)
@@ -1109,9 +1109,13 @@ _Servidores de inferencia, gateways, evaluación, trazas y control de contexto. 
 | ⭐ [vLLM](human/fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [OmniRoute](human/fichas/omniroute.md) | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [litellm](human/fichas/litellm.md) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
+| [Ray](human/fichas/ray.md) | Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [SGLang](human/fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [claude-code-router](human/fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida | ⚙️ plataforma | 🔴 pesado |
 | [TensorRT-LLM](human/fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [Xinference](human/fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [BentoML](human/fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [GPUStack](human/fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [backdoor](human/fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
 
 ### Ahorro de contexto y tokens
@@ -1132,9 +1136,12 @@ _Servidores de inferencia, gateways, evaluación, trazas y control de contexto. 
 | [Opik](human/fichas/opik.md) | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [DeepEval](human/fichas/deepeval.md) | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [Ragas](human/fichas/ragas.md) | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
+| [LM Evaluation Harness](human/fichas/lm-eval-harness.md) | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [Phoenix](human/fichas/phoenix.md) | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. | API de IA opcional | ⚙️ plataforma | 🟢 fácil |
 | [Claude-Code-Usage-Monitor](human/fichas/claude-code-usage-monitor.md) | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [OpenLLMetry](human/fichas/openllmetry.md) | Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [NeMo Guardrails](human/fichas/guardrails.md) | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
+| [Helicone](human/fichas/helicone.md) | Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ## 🧑‍💻 24. Modelos abiertos y entrenamiento
 
@@ -1149,8 +1156,18 @@ _Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los 
 | [Transformers](human/fichas/transformers.md) | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [PyTorch](human/fichas/pytorch.md) | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [LLaMA-Factory](human/fichas/llama-factory.md) | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [scikit-learn](human/fichas/scikit-learn.md) | La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Keras 3](human/fichas/keras.md) | API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia). | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [DeepSpeed](human/fichas/deepspeed.md) | Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [JAX](human/fichas/jax.md) | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [PyTorch Lightning](human/fichas/pytorch-lightning.md) | Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [verl](human/fichas/verl.md) | Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [PEFT](human/fichas/peft.md) | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [TRL](human/fichas/trl.md) | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Axolotl](human/fichas/axolotl.md) | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [OpenRLHF](human/fichas/openrlhf.md) | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [Accelerate](human/fichas/accelerate.md) | Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [torchtune](human/fichas/torchtune.md) | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [bionemo-recipes](human/fichas/bionemo-recipes.md) | Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🔴 pesado |
 
 ### Modelos abiertos y fundacionales
@@ -1161,6 +1178,7 @@ _Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los 
 | [DeepSeek-V3](human/fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [laya](human/fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [cosmos](human/fichas/cosmos.md) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
+| [Gemma (biblioteca JAX)](human/fichas/gemma.md) | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [Nemotron (NVIDIA)](human/fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | API de IA opcional | 📂 catálogo/recurso | 🔴 pesado |
 | [Kimi K2.7 Code](human/fichas/kimi-k2-7-code.md) | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 
@@ -1174,12 +1192,20 @@ _Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un 
 |---|---|---|---|---|
 | ⭐ [DuckDB](human/fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | ⭐ [marimo](human/fichas/marimo.md) | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [ClickHouse](human/fichas/clickhouse.md) | Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [pandas](human/fichas/pandas.md) | Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Apache Spark](human/fichas/spark.md) | Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | hard |
 | [Polars](human/fichas/polars.md) | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Apache Arrow](human/fichas/arrow.md) | Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [PyGWalker](human/fichas/pygwalker.md) | Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [JupyterLab](human/fichas/jupyterlab.md) | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [awesome-bigdata](human/fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [dbt](human/fichas/dbt.md) | Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Apache Iceberg](human/fichas/apache-iceberg.md) | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [Delta Lake](human/fichas/delta-lake.md) | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Ibis](human/fichas/ibis.md) | Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [hudi](human/fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [dlt (data load tool)](human/fichas/dlt.md) | Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [GlobalBuildingAtlas](human/fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🔴 pesado |
 
 ### Apps de datos en Python
@@ -1188,7 +1214,10 @@ _Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un 
 |---|---|---|---|---|
 | ⭐ [Gradio](human/fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [streamlit](human/fichas/streamlit.md) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
+| [Reflex](human/fichas/reflex.md) | Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [dash](human/fichas/dash.md) | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [NiceGUI](human/fichas/nicegui.md) | Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Panel](human/fichas/panel.md) | Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 
 ## 🎨 26. Animación, gráficos y creación 3D
 
@@ -1200,9 +1229,12 @@ _Animación web, motores gráficos, modelado y renderizado 3D. Una librería se 
 |---|---|---|---|---|
 | ⭐ [three.js](human/fichas/three-js.md) | Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [Anime.js](human/fichas/animejs.md) | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [PixiJS](human/fichas/pixijs.md) | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [motion](human/fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [react-three-fiber](human/fichas/react-three-fiber.md) | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [GSAP](human/fichas/gsap.md) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Babylon.js](human/fichas/babylonjs.md) | Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [PlayCanvas Engine](human/fichas/playcanvas.md) | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [zdog](human/fichas/zdog.md) | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [pixelfx](human/fichas/pixelfx.md) | Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [regl](human/fichas/regl.md) | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
@@ -1214,8 +1246,12 @@ _Animación web, motores gráficos, modelado y renderizado 3D. Una librería se 
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Godot Engine](human/fichas/godot.md) | Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Bevy](human/fichas/bevy.md) | Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [FreeCAD](human/fichas/freecad.md) | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [blender](human/fichas/blender.md) | Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [filament](human/fichas/filament.md) | Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [OpenSCAD](human/fichas/openscad.md) | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [meshoptimizer](human/fichas/meshoptimizer.md) | Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [ozz-animation](human/fichas/ozz-animation.md) | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [awesome-cad](human/fichas/awesome-cad.md) | Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
@@ -1224,6 +1260,8 @@ _Animación web, motores gráficos, modelado y renderizado 3D. Una librería se 
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Genesis World](human/fichas/genesis-world.md) | Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | hard |
+| [MuJoCo](human/fichas/mujoco.md) | Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [warp](human/fichas/warp.md) | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [planck.js](human/fichas/planck-js.md) | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [react-three-rapier](human/fichas/react-three-rapier.md) | Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
@@ -1294,6 +1332,7 @@ _Detección, seguimiento, segmentación, rostros y percepción espacial. Disting
 | ⭐ [Deep-Live-Cam](human/fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [FaceFusion](human/fichas/facefusion.md) | Plataforma para intercambio y mejora de rostros en imágenes y video. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [InsightFace](human/fichas/insightface.md) | Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [DeepFace](human/fichas/deepface.md) | Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [LivePortrait](human/fichas/liveportrait.md) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 
 ### Visión por computador
@@ -1305,9 +1344,12 @@ _Detección, seguimiento, segmentación, rostros y percepción espacial. Disting
 | [OpenCV](human/fichas/opencv.md) | La librería de visión por computadora de referencia, con miles de algoritmos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [supervision](human/fichas/supervision.md) | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [mediapipe](human/fichas/mediapipe.md) | Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Detectron2](human/fichas/detectron2.md) | Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | hard |
 | [openpose](human/fichas/openpose.md) | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [Label Studio](human/fichas/label-studio.md) | Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. | API de IA opcional | ⚙️ plataforma | 🟢 fácil |
+| [CVAT Community](human/fichas/cvat.md) | Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [tfjs-models](human/fichas/tfjs-models.md) | Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [dlib](human/fichas/dlib.md) | Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [kornia](human/fichas/kornia.md) | Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [mmpose](human/fichas/mmpose.md) | Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [EasyMocap](human/fichas/easymocap.md) | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
@@ -1327,6 +1369,7 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 | [faster-whisper](human/fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [whisperX](human/fichas/whisperx.md) | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [NeMo Speech](human/fichas/nemo.md) | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [sherpa-onnx](human/fichas/sherpa-onnx.md) | Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 
 ### Síntesis y clonación de voz
 
@@ -1341,6 +1384,7 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 | [Fish Speech](human/fichas/fish-speech.md) | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [IndexTTS](human/fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [CosyVoice](human/fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [F5-TTS](human/fichas/f5-tts.md) | Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [edge-tts](human/fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [LuxTTS](human/fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [ElevenLabs (SDK de Python)](human/fichas/elevenlabs-python.md) | SDK oficial de Python para la API de pago de ElevenLabs: voz sintética, clonación, transcripción, música y agentes de voz. | API de IA necesaria | 📚 librería/SDK | 🟢 fácil |
@@ -1351,6 +1395,7 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 |---|---|---|---|---|
 | ⭐ [Pipecat](human/fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
 | [LiveKit Agents](human/fichas/livekit-agents.md) | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
+| [TEN Framework](human/fichas/ten-framework.md) | Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos. | API de IA necesaria | 📚 librería/SDK | hard |
 | [dograh](human/fichas/dograh.md) | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 
 ### Música y audio generativo
@@ -1359,14 +1404,18 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 |---|---|---|---|---|
 | ⭐ [AudioCraft](human/fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [ACE-Step-1.5](human/fichas/ace-step-1-5.md) | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [YuE2](human/fichas/yue.md) | Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | hard |
 
 ### Procesamiento y limpieza de audio
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Ultimate Vocal Remover (UVR)](human/fichas/ultimate-vocal-remover.md) | Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Audacity](human/fichas/audacity.md) | Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [pyannote.audio](human/fichas/pyannote-audio.md) | Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos preentrenados y un servicio premium opcional. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [rnnoise](human/fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [earshot](human/fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
+| [Demucs](human/fichas/demucs.md) | Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [rubberband](human/fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ## 🎬 30. Video con código y agentes creativos
@@ -1382,7 +1431,9 @@ _Herramientas y skills para escenas, motion graphics y montaje programático. Di
 | [Manim (ManimGL)](human/fichas/manim.md) | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [remotion](human/fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [manim](human/fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Motion Canvas](human/fichas/motion-canvas.md) | Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [mediabunny](human/fichas/mediabunny.md) | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Revideo](human/fichas/revideo.md) | Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ### Skills y métodos de producción audiovisual
 
@@ -1430,6 +1481,10 @@ _Presentaciones, diagramas y documentación visual. Elige entre editar una pieza
 | ⭐ [Mermaid](human/fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [archify](human/fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | [diagram-design](human/fichas/diagram-design.md) | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
+| [D2](human/fichas/d2.md) | Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [PlantUML](human/fichas/plantuml.md) | Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [draw.io](human/fichas/drawio.md) | Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Kroki](human/fichas/kroki.md) | Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 
 ## 🕷️ 32. Navegadores y automatización web
 
@@ -1441,7 +1496,10 @@ _Navegadores, librerías de pruebas y agentes que interactúan con sitios web. P
 |---|---|---|---|---|
 | [playwright](human/fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [Puppeteer](human/fichas/puppeteer.md) | Librería de Google para controlar Chrome y Firefox desde Node.js. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Cypress](human/fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Selenium](human/fichas/selenium.md) | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [FlareSolverr](human/fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [WebdriverIO](human/fichas/webdriverio.md) | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ### Herramientas de navegación para agentes
 
@@ -1453,12 +1511,17 @@ _Navegadores, librerías de pruebas y agentes que interactúan con sitios web. P
 | [Skyvern](human/fichas/skyvern.md) | Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [Browser Harness](human/fichas/browser-harness.md) | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟢 fácil |
 | [playwright-cli](human/fichas/playwright-cli.md) | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
+| [Nanobrowser](human/fichas/nanobrowser.md) | Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [Steel Browser](human/fichas/steel-browser.md) | API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ### Navegadores y servidores de ejecución
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [Lightpanda](human/fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
+| [Ladybird](human/fichas/ladybird.md) | Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Servo](human/fichas/servo.md) | Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | hard |
+| [Camoufox](human/fichas/camoufox.md) | Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 
 ### Directorios y recursos de navegador
 

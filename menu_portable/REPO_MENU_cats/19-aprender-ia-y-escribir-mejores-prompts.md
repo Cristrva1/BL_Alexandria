@@ -703,7 +703,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter.
 **Qué comprobar:** El cuaderno se ejecuta y muestra el primer modelo de regresión.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `jupyterlab`, `marimo`, `llm-course`
+**Combina con:** `jupyterlab`, `marimo`, `llm-course`, `scikit-learn`
 
 ## `nanochat`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python

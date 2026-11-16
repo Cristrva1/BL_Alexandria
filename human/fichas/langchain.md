@@ -33,9 +33,9 @@ Paquete Python (`uv add langchain`) con paquetes de integración por proveedor y
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (21). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (24). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[awesome-LangGraph](awesome-langgraph.md) · [Chroma](chroma.md) · [Deep Agents](deepagents.md) · [DeepEval](deepeval.md) · [Docling](docling.md) · [Faiss](faiss.md) · [LanceDB](lancedb.md) · [langflow](langflow.md) · [LangGraph.js](langgraphjs.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [Meilisearch](meilisearch.md) · [NeMo Guardrails](guardrails.md) · [openai-python](openai-python.md) · [OpenUI](openui.md) · [QuantHarness](quantharness.md) · [Ragas](ragas.md) · [turbovec](turbovec.md) · [Unstructured](unstructured.md) · [vLLM](vllm.md) · [Weaviate](weaviate.md) · [WrenAI](wrenai.md)
+[awesome-LangGraph](awesome-langgraph.md) · [Chroma](chroma.md) · [Deep Agents](deepagents.md) · [DeepEval](deepeval.md) · [Docling](docling.md) · [Faiss](faiss.md) · [Helicone](helicone.md) · [LanceDB](lancedb.md) · [langflow](langflow.md) · [LangGraph.js](langgraphjs.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [Meilisearch](meilisearch.md) · [NeMo Guardrails](guardrails.md) · [openai-python](openai-python.md) · [OpenLLMetry](openllmetry.md) · [OpenUI](openui.md) · [QuantHarness](quantharness.md) · [Ragas](ragas.md) · [turbovec](turbovec.md) · [Unstructured](unstructured.md) · [vLLM](vllm.md) · [Weaviate](weaviate.md) · [WrenAI](wrenai.md) · [Xinference](xinference.md)
 
 **Notas:** Alternativas (elige una): llama-index, haystack. Se quitaron langflow y litellm: no son necesarias y el README no las documenta.
 

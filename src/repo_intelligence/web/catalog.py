@@ -403,6 +403,7 @@ def build_catalog(project_root: Path) -> dict:
             "work_areas": sum(area.get("kind") == "work" for area in areas),
             "tool_collections": sum(area.get("kind") == "tool" for area in areas),
             "topics": sum(len(area["topics"]) for area in areas),
+            "technical_subs": sum(len(cat.get("subs", [])) for cat in categories if cat["num"] >= 1),
             "recipes": len(recipes),
             "mcp": sum(1 for repo in repos if repo["mcp"]),
             "labs": len(labs),

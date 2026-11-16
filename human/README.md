@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-748 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+811 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -23,18 +23,18 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
-| [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 68 |
+| [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 74 |
 | [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Credenciales y privacidad, Aprender ciberseguridad | 48 |
-| [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 95 |
+| [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 111 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 25 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 59 |
-| [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 116 |
-| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 52 |
-| [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 59 |
-| [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 29 |
+| [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 124 |
+| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 67 |
+| [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 63 |
+| [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 40 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 48 |
-| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 86 |
-| [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 31 |
+| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 93 |
+| [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 35 |
 | [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 97 |
 | [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 242 |
 | [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 207 |
@@ -66,16 +66,16 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 20 | [🕸️ Programar con agentes de código](categorias/20-agentes-de-codigo.md) | 21 | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md) |
 | 21 | [🕸️ Asistentes e investigación con agentes](categorias/21-asistentes-investigacion.md) | 17 | [OpenClaw](fichas/openclaw.md), [autoresearch](fichas/autoresearch.md) |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 26 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |
-| 23 | [🧬 Operar, evaluar y medir modelos de IA](categorias/23-operacion-evaluacion-modelos.md) | 19 | [vLLM](fichas/vllm.md), [headroom](fichas/headroom.md), [promptfoo](fichas/promptfoo.md) |
-| 24 | [🧑‍💻 Modelos abiertos y entrenamiento](categorias/24-modelos-entrenamiento.md) | 14 | [Unsloth](fichas/unsloth.md), [TimesFM](fichas/timesfm.md) |
-| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](categorias/25-datos-notebooks.md) | 12 | [DuckDB](fichas/duckdb.md), [marimo](fichas/marimo.md), [Gradio](fichas/gradio.md) |
-| 26 | [🎨 Animación, gráficos y creación 3D](categorias/26-animacion-graficos-3d.md) | 19 | [three.js](fichas/three-js.md) |
+| 23 | [🧬 Operar, evaluar y medir modelos de IA](categorias/23-operacion-evaluacion-modelos.md) | 26 | [vLLM](fichas/vllm.md), [headroom](fichas/headroom.md), [promptfoo](fichas/promptfoo.md) |
+| 24 | [🧑‍💻 Modelos abiertos y entrenamiento](categorias/24-modelos-entrenamiento.md) | 25 | [Unsloth](fichas/unsloth.md), [TimesFM](fichas/timesfm.md) |
+| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](categorias/25-datos-notebooks.md) | 23 | [DuckDB](fichas/duckdb.md), [marimo](fichas/marimo.md), [Gradio](fichas/gradio.md) |
+| 26 | [🎨 Animación, gráficos y creación 3D](categorias/26-animacion-graficos-3d.md) | 28 | [three.js](fichas/three-js.md) |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](categorias/27-skills-especializadas.md) | 36 | [Stitch Skills](fichas/stitch-skills.md), [Humanizer](fichas/humanizer.md), [Marketing Skills](fichas/marketingskills.md) |
-| 28 | [🖼️ Visión artificial, rostros y percepción](categorias/28-vision-percepcion.md) | 17 | [Deep-Live-Cam](fichas/deep-live-cam.md), [Ultralytics YOLO](fichas/ultralytics.md), [SAM 3](fichas/sam3.md) |
-| 29 | [🎬 Audio, transcripción, voz y música](categorias/29-audio-voz-musica.md) | 26 | [whisper.cpp](fichas/whisper-cpp.md), [Kokoro](fichas/kokoro.md), [Pipecat](fichas/pipecat.md), [AudioCraft](fichas/audiocraft.md) |
-| 30 | [🎬 Video con código y agentes creativos](categorias/30-video-codigo-agentes.md) | 21 | [HyperFrames](fichas/hyperframes.md), [MoviePy](fichas/moviepy.md), [Remotion Agent Skills](fichas/skills-remotion.md) |
-| 31 | [📄 Presentaciones, diagramas y explicación visual](categorias/31-presentaciones-diagramas.md) | 8 | [Slidev](fichas/slidev.md), [Mermaid](fichas/mermaid.md) |
-| 32 | [🕷️ Navegadores y automatización web](categorias/32-navegadores-automatizacion-web.md) | 11 | [Stagehand](fichas/stagehand.md), [Lightpanda](fichas/lightpanda.md) |
+| 28 | [🖼️ Visión artificial, rostros y percepción](categorias/28-vision-percepcion.md) | 21 | [Deep-Live-Cam](fichas/deep-live-cam.md), [Ultralytics YOLO](fichas/ultralytics.md), [SAM 3](fichas/sam3.md) |
+| 29 | [🎬 Audio, transcripción, voz y música](categorias/29-audio-voz-musica.md) | 33 | [whisper.cpp](fichas/whisper-cpp.md), [Kokoro](fichas/kokoro.md), [Pipecat](fichas/pipecat.md), [AudioCraft](fichas/audiocraft.md) |
+| 30 | [🎬 Video con código y agentes creativos](categorias/30-video-codigo-agentes.md) | 23 | [HyperFrames](fichas/hyperframes.md), [MoviePy](fichas/moviepy.md), [Remotion Agent Skills](fichas/skills-remotion.md) |
+| 31 | [📄 Presentaciones, diagramas y explicación visual](categorias/31-presentaciones-diagramas.md) | 12 | [Slidev](fichas/slidev.md), [Mermaid](fichas/mermaid.md) |
+| 32 | [🕷️ Navegadores y automatización web](categorias/32-navegadores-automatizacion-web.md) | 19 | [Stagehand](fichas/stagehand.md), [Lightpanda](fichas/lightpanda.md) |
 
 ## Construye un flujo completo
 

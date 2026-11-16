@@ -29,6 +29,7 @@ Escrita en Clojure/ClojureScript; apps para Windows, macOS, Linux, iOS y Android
 | [syncthing](syncthing.md) | Un grafo de Logseq es una carpeta de archivos que se puede sincronizar con Syncthing entre equipos (combinación por arquitectura). | Sincroniza la carpeta del grafo; evita editarlo a la vez en dos equipos. |
 | [Pandoc](pandoc.md) | Las páginas en Markdown u Org se convierten con Pandoc a otros formatos (combinación por arquitectura). | Exporta o toma los archivos del grafo; después convierte con Pandoc. |
 | [Claude Code](claude-code.md) | Al ser archivos Markdown, un agente de código puede leer y reorganizar páginas del grafo (combinación por arquitectura). | Haz copia del grafo; después deja al agente trabajar sobre esa copia. |
+| [D2](d2.md) | Combinación recíproca: D2 lo enlaza como «El plugin comunitario Logseq-D2 renderiza bloques D2 en las notas de Logseq». | Orden indicado desde D2: Instala D2 y el plugin Logseq-D2; después escribe bloques D2 en tus páginas. |
 
 **Notas:** Alternativas (elige una): joplin, trilium, siyuan. La migración a la versión con base de datos puede cambiar el formato de almacenamiento.
 

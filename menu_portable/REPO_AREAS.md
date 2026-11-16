@@ -1,5 +1,7 @@
 # Categorías y subcategorías prácticas
 
+98 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 110 subcategorías técnicas.
+
 Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.
 
 Los recuentos por área pueden solaparse: no equivalen a proyectos distintos.
@@ -36,13 +38,13 @@ Instrucciones de diseño, accesibilidad y calidad para tu agente.
 
 Movimiento, gráficos y escenas interactivas en el navegador.
 
-`animejs`, `gsap`, `gsap-skills`, `motion`, `pencil`, `pixelfx`, `react-three-fiber`, `regl`, `scenejs`, `three.js`, `threejs-skills`, `webgl-noise`, `zdog`
+`animejs`, `babylonjs`, `gsap`, `gsap-skills`, `motion`, `pencil`, `pixelfx`, `pixijs`, `playcanvas`, `react-three-fiber`, `regl`, `scenejs`, `three.js`, `threejs-skills`, `webgl-noise`, `zdog`
 
 ### Probar y publicar una web
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-`appwrite`, `caddy`, `casaos`, `coolify`, `dokploy`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`
+`appwrite`, `caddy`, `casaos`, `coolify`, `cypress`, `dokploy`, `flaresolverr`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`, `webdriverio`
 
 ## Ciberseguridad
 
@@ -104,31 +106,31 @@ Crear clips y organizar flujos de video generativo.
 
 Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
-`brag`, `claude-animated-shorts`, `huashu-motion`, `hyperframes`, `lemo-opuscar`, `manim`, `manim-community`, `mediabunny`, `motion-design-skill`, `motionmaxxing`, `moviepy`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
+`brag`, `claude-animated-shorts`, `huashu-motion`, `hyperframes`, `lemo-opuscar`, `manim`, `manim-community`, `mediabunny`, `motion-canvas`, `motion-design-skill`, `motionmaxxing`, `moviepy`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `revideo`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
 
 ### Voz: narración, síntesis y clonación
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-`cosyvoice`, `edge-tts`, `elevenlabs-python`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
+`cosyvoice`, `edge-tts`, `elevenlabs-python`, `f5-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
 
 ### Transcripción: audio a texto
 
 Transcribir, alinear y aprovechar grabaciones de voz.
 
-`faster-whisper`, `nemo`, `vibevoice`, `whisper`, `whisper-cpp`, `whisperx`
+`faster-whisper`, `nemo`, `sherpa-onnx`, `vibevoice`, `whisper`, `whisper-cpp`, `whisperx`
 
 ### Audio: limpieza, música y sonido
 
 Limpiar grabaciones, ajustar sonido y trabajar con música.
 
-`ace-step-1.5`, `audiocraft`, `earshot`, `pyannote-audio`, `rnnoise`, `rubberband`
+`ace-step-1.5`, `audacity`, `audiocraft`, `demucs`, `earshot`, `pyannote-audio`, `rnnoise`, `rubberband`, `ultimate-vocal-remover`, `yue`
 
 ### Voz: agentes en tiempo real
 
 Construir conversaciones por audio con procesamiento y respuesta en directo.
 
-`dograh`, `livekit-agents`, `pipecat`
+`dograh`, `livekit-agents`, `pipecat`, `ten-framework`
 
 ### Imagen: generación y edición
 
@@ -140,19 +142,19 @@ Generar imágenes, ampliar, recortar o restaurar fotografías.
 
 Animación de retratos y herramientas para personajes.
 
-`claude-animated-shorts`, `deep-live-cam`, `facefusion`, `genjutsu`, `insightface`, `liveportrait`
+`claude-animated-shorts`, `deep-live-cam`, `deepface`, `facefusion`, `genjutsu`, `insightface`, `liveportrait`
 
 ### Modelado y animación 3D
 
 Crear objetos, escenas y recursos tridimensionales.
 
-`3dviz-pro-max`, `awesome-cad`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `meshoptimizer`, `ozz-animation`
+`3dviz-pro-max`, `awesome-cad`, `bevy`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `freecad`, `godot`, `meshoptimizer`, `openscad`, `ozz-animation`
 
 ### Física y simulación
 
 Simular cuerpos,colisiones y sistemas físicos.
 
-`planck-js`, `react-three-rapier`, `warp`
+`genesis-world`, `mujoco`, `planck-js`, `react-three-rapier`, `warp`
 
 ## Trading, inversión y finanzas
 
@@ -278,7 +280,7 @@ Convertir páginas y redes sociales en contenido o datos.
 
 Abrir páginas e interactuar con interfaces reales.
 
-`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `lightpanda`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `skyvern`, `stagehand`
+`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `camoufox`, `cypress`, `flaresolverr`, `ladybird`, `lightpanda`, `nanobrowser`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `servo`, `skyvern`, `stagehand`, `steel-browser`, `webdriverio`
 
 ### MCP: conectar herramientas
 
@@ -306,19 +308,19 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
 Modelos publicados por sus autores para evaluar e integrar.
 
-`cosmos`, `deepseek-v3`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
+`cosmos`, `deepseek-v3`, `gemma`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
 
 ### Entrenamiento y ajuste fino
 
 Bibliotecas para entrenar o adaptar modelos a tus datos.
 
-`bionemo-recipes`, `llama-factory`, `peft`, `pytorch`, `tensorflow`, `transformers`, `trl`, `unsloth`
+`accelerate`, `axolotl`, `bionemo-recipes`, `deepspeed`, `jax`, `keras`, `llama-factory`, `openrlhf`, `peft`, `pytorch`, `pytorch-lightning`, `scikit-learn`, `tensorflow`, `torchtune`, `transformers`, `trl`, `unsloth`, `verl`
 
 ### Inferencia, servidores y gateways
 
 Servir modelos y organizar el acceso de tus aplicaciones.
 
-`backdoor`, `claude-code-router`, `litellm`, `omniroute`, `sglang`, `tensorrt-llm`, `vllm`
+`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `litellm`, `omniroute`, `ray`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Documentos, presentaciones y conocimiento
 
@@ -346,7 +348,7 @@ Preparar y exportar una presentación.
 
 Explicar sistemas e ideas mediante diagramas.
 
-`archify`, `diagram-design`, `excalidraw`, `mermaid`
+`archify`, `d2`, `diagram-design`, `drawio`, `excalidraw`, `kroki`, `mermaid`, `plantuml`
 
 ### Preguntar a documentos y buscar conocimiento
 
@@ -368,13 +370,13 @@ Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicaci
 
 Motores de consulta, tablas y conjuntos de datos.
 
-`apache-iceberg`, `awesome-bigdata`, `delta-lake`, `duckdb`, `globalbuildingatlas`, `hudi`, `jupyterlab`, `marimo`, `polars`
+`apache-iceberg`, `arrow`, `awesome-bigdata`, `clickhouse`, `dbt`, `delta-lake`, `dlt`, `duckdb`, `globalbuildingatlas`, `hudi`, `ibis`, `jupyterlab`, `marimo`, `pandas`, `polars`, `pygwalker`, `spark`
 
 ### Notebooks y aplicaciones de datos
 
 Explorar datos y compartir una interfaz de análisis.
 
-`dash`, `gradio`, `marimo`, `streamlit`
+`dash`, `gradio`, `marimo`, `nicegui`, `panel`, `reflex`, `streamlit`
 
 ### Dashboards y BI
 
@@ -466,13 +468,13 @@ Infraestructura, servicios y herramientas de operación.
 
 Medir resultados y revisar lo que hace una aplicación de IA.
 
-`claude-code-usage-monitor`, `deepeval`, `guardrails`, `langfuse`, `loguru`, `mlflow`, `opik`, `phoenix`, `promptfoo`, `ragas`
+`claude-code-usage-monitor`, `deepeval`, `guardrails`, `helicone`, `langfuse`, `lm-eval-harness`, `loguru`, `mlflow`, `openllmetry`, `opik`, `phoenix`, `promptfoo`, `ragas`
 
 ### Contexto, consumo y enrutamiento
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-`backdoor`, `claude-code-router`, `headroom`, `litellm`, `omniroute`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`
+`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `headroom`, `litellm`, `omniroute`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Visión artificial, mapas y percepción
 
@@ -482,13 +484,13 @@ Detecta objetos o movimiento, interpreta imágenes y trabaja con información es
 
 Modelos y herramientas de visión por computador.
 
-`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam3`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
+`4d-humans`, `cvat`, `detectron2`, `dlib`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam3`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
 
 ### Rostros y análisis visual
 
 Herramientas especializadas en caras y retratos.
 
-`deep-live-cam`, `facefusion`, `insightface`, `liveportrait`
+`deep-live-cam`, `deepface`, `facefusion`, `insightface`, `liveportrait`
 
 ### Mapas, OSINT y fotogrametría
 

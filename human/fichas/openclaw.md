@@ -33,9 +33,9 @@ Se instala con `curl -fsSL https://openclaw.ai/install.sh | bash` o PowerShell, 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Agent-Reach](agent-reach.md) · [awesome-agents](awesome-agents.md) · [cognee](cognee.md) · [Letta](letta.md) · [OpenMAIC](openmaic.md) · [OpenViking](openviking.md) · [paperclip](paperclip.md) · [Qwen Code](qwen-code.md) · [signal-cli](signal-cli.md) · [Vibe-Trading](vibe-trading.md)
+[Agent-Reach](agent-reach.md) · [awesome-agents](awesome-agents.md) · [cognee](cognee.md) · [Letta](letta.md) · [OpenMAIC](openmaic.md) · [OpenViking](openviking.md) · [paperclip](paperclip.md) · [Qwen Code](qwen-code.md) · [signal-cli](signal-cli.md) · [TEN Framework](ten-framework.md) · [Vibe-Trading](vibe-trading.md)
 
 **Notas:** Alternativas (elige una): hermes-agent, mercury-agent. Superficie de ataque amplia (canales y credenciales): conviene aislarlo.
 

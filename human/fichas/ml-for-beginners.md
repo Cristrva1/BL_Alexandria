@@ -29,6 +29,7 @@ Lecciones en Markdown con cuadernos Jupyter en Python (Scikit-learn) y R; se clo
 | [JupyterLab](jupyterlab.md) | Las lecciones prácticas son cuadernos Jupyter que se ejecutan en JupyterLab. | Instala JupyterLab y las dependencias de la lección; después abre el cuaderno. |
 | [marimo](marimo.md) | Los ejercicios se pueden rehacer como cuadernos reactivos de marimo (combinación por arquitectura). | Instala marimo; después convierte o reescribe el cuaderno. |
 | [LLM Course](llm-course.md) | Tras el ML clásico, llm-course ofrece el recorrido hacia modelos de lenguaje (combinación por arquitectura). | Completa el curso; después sigue con llm-course. |
+| [scikit-learn](scikit-learn.md) | Combinación recíproca: scikit-learn lo enlaza como «El curso ML for Beginners enseña machine learning clásico con scikit-learn». | Orden indicado desde scikit-learn: Sigue las lecciones con scikit-learn instalado. |
 
 **Notas:** No cubre deep learning; para ese tema Microsoft remite a otros cursos de la serie.
 

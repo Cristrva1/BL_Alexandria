@@ -274,6 +274,12 @@
      "id": "llm-course",
      "motivo": "Tras el ML clásico, llm-course ofrece el recorrido hacia modelos de lenguaje (combinación por arquitectura).",
      "orden_instalacion": "Completa el curso; después sigue con llm-course."
+    },
+    {
+     "id": "scikit-learn",
+     "motivo": "Combinación recíproca: scikit-learn lo enlaza como «El curso ML for Beginners enseña machine learning clásico con scikit-learn».",
+     "orden_instalacion": "Orden indicado desde scikit-learn: Sigue las lecciones con scikit-learn instalado.",
+     "reciproca_de": "scikit-learn"
     }
    ],
    "notas": "No cubre deep learning; para ese tema Microsoft remite a otros cursos de la serie.",
