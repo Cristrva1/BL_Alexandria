@@ -6,11 +6,11 @@
   "odoo": {
    "que_es": "Suite de aplicaciones de negocio web de código abierto de Odoo S.A. La edición comunitaria del repositorio se publica bajo LGPL v3 y convive con una edición Enterprise de pago; es un proyecto maduro (desde 2004) con desarrollo diario y ramas por versión.",
    "que_hace": "Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, facturación y contabilidad, punto de venta, recursos humanos, marketing y fabricación. Cada app funciona sola, pero al instalar varias se integran en un ERP completo. Casos típicos: gestión comercial y de inventario de pymes, facturación y tienda en línea conectadas.",
-   "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].",
+   "como_lo_hace": "Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones de terceros, como la pieza `odoo` de Activepieces [DATO NO VERIFICADO: protocolo exacto según versión].",
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos.",
      "orden_instalacion": "Odoo en marcha con sus credenciales; después añade la pieza `odoo` en un flujo de Activepieces."
     },
     {
@@ -29,7 +29,6 @@
     "https://github.com/odoo/odoo/blob/20.0/README.md",
     "https://github.com/odoo/odoo/blob/20.0/LICENSE",
     "https://www.odoo.com/documentation/19.0/administration/on_premise/source.html",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo"
    ],
    "github": {
@@ -53,18 +52,24 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos.",
      "orden_instalacion": "twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces."
     },
     {
      "id": "evolution-api",
-     "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura).",
-     "orden_instalacion": "Evolution API y n8n primero; después el flujo que escribe en Twenty."
+     "motivo": "Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura).",
+     "orden_instalacion": "Evolution API y Activepieces primero; después el flujo que escribe en Twenty."
     },
     {
      "id": "cal.diy",
      "motivo": "Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio).",
      "orden_instalacion": "Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty."
+    },
+    {
+     "id": "docuseal",
+     "motivo": "Combinación recíproca: docuseal lo enlaza como «Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde docuseal: Usa un flujo intermedio con el webhook de DocuSeal.",
+     "reciproca_de": "docuseal"
     }
    ],
    "fuentes": [
@@ -105,8 +110,7 @@
    ],
    "notas": "Alternativa (elige una): odoo.",
    "fuentes": [
-    "https://github.com/frappe/erpnext/blob/develop/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext/"
+    "https://github.com/frappe/erpnext/blob/develop/README.md"
    ],
    "github": {
     "name_with_owner": "frappe/erpnext",
@@ -199,7 +203,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `mautic` para usar mautic en flujos.",
      "orden_instalacion": "mautic en marcha con sus credenciales; después añade la pieza `mautic` en un flujo de Activepieces."
     },
     {
@@ -216,7 +220,6 @@
    "notas": "Se solapa con listmonk en envío masivo de email; usa uno como canal principal de boletines.",
    "fuentes": [
     "https://github.com/mautic/mautic/blob/7.x/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mautic/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/mautic"
    ],
    "github": {
@@ -248,11 +251,16 @@
      "id": "botpress",
      "motivo": "Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO].",
      "orden_instalacion": "Instancia accesible por internet y token de API antes de configurar la integración."
+    },
+    {
+     "id": "compai-crm",
+     "motivo": "Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado.",
+     "reciproca_de": "compai-crm"
     }
    ],
    "fuentes": [
-    "https://github.com/calcom/cal.diy/blob/main/README.md",
-    "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger/"
+    "https://github.com/calcom/cal.diy/blob/main/README.md"
    ],
    "github": {
     "name_with_owner": "calcom/cal.diy",
@@ -353,6 +361,24 @@
      "id": "geo-seo-claude",
      "motivo": "Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura).",
      "orden_instalacion": "Después de conectar el MCP de OpenSEO al agente."
+    },
+    {
+     "id": "claude-seo",
+     "motivo": "Combinación recíproca: claude-seo lo enlaza como «Datos de palabras clave y posiciones vía MCP (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-seo: Conecta el MCP de OpenSEO al mismo agente.",
+     "reciproca_de": "claude-seo"
+    },
+    {
+     "id": "cloud-mail",
+     "motivo": "Combinación recíproca: cloud-mail lo enlaza como «Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cloud-mail: Configura el dominio en Cloudflare primero; separa subdominios por servicio.",
+     "reciproca_de": "cloud-mail"
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Combinación recíproca: Marketing Skills lo enlaza como «Datos SEO vía MCP para las skills de SEO (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marketing Skills: Conecta el MCP de OpenSEO antes de usar las skills de SEO.",
+     "reciproca_de": "marketingskills"
     }
    ],
    "notas": "Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel.",
@@ -376,7 +402,7 @@
    "combina_con": [
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos.",
      "orden_instalacion": "postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces."
     },
     {
@@ -388,6 +414,24 @@
      "id": "coolify",
      "motivo": "Ruta de despliegue citada en el README.",
      "orden_instalacion": "Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque."
+    },
+    {
+     "id": "humanizer",
+     "motivo": "Combinación recíproca: Humanizer lo enlaza como «Revisar publicaciones antes de programarlas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Humanizer: Humaniza primero; programa después.",
+     "reciproca_de": "humanizer"
+    },
+    {
+     "id": "instagram-agent-skill",
+     "motivo": "Combinación recíproca: instagram-agent-skill lo enlaza como «Programar las publicaciones aprobadas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde instagram-agent-skill: Aprueba el contenido antes de enviarlo a Postiz.",
+     "reciproca_de": "instagram-agent-skill"
+    },
+    {
+     "id": "linkedin-agent-skill",
+     "motivo": "Combinación recíproca: linkedin-agent-skill lo enlaza como «Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde linkedin-agent-skill: Aprueba antes de programar.",
+     "reciproca_de": "linkedin-agent-skill"
     }
    ],
    "fuentes": [

@@ -170,6 +170,24 @@
      "id": "activepieces",
      "motivo": "Automatizar la ingesta de fuentes o la generación de podcasts con su API REST (combinación por arquitectura).",
      "orden_instalacion": "Protege la API (puerto 5055) antes de exponerla a Activepieces."
+    },
+    {
+     "id": "scientific-agent-skills",
+     "motivo": "Combinación recíproca: scientific-agent-skills lo enlaza como «Skill de integración explícita con Open Notebook».",
+     "orden_instalacion": "Orden indicado desde scientific-agent-skills: Open Notebook en marcha y con API accesible antes de usar la skill.",
+     "reciproca_de": "scientific-agent-skills"
+    },
+    {
+     "id": "olmocr",
+     "motivo": "Combinación recíproca: olmOCR lo enlaza como «Cargar documentos convertidos como fuentes de investigación (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde olmOCR: Convierte primero y súbelos como Markdown.",
+     "reciproca_de": "olmocr"
+    },
+    {
+     "id": "vibevoice",
+     "motivo": "Combinación recíproca: VibeVoice lo enlaza como «Narración de podcasts. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde VibeVoice: Usa un TTS compatible para los episodios.",
+     "reciproca_de": "vibevoice"
     }
    ],
    "notas": "Alternativas (elige una): deeptutor, surfsense. En redes compartidas pon una contraseña o un proxy delante. Se retiraron las combinaciones antiguas con odysseus (se solapa como espacio de trabajo) y markitdown (no documentada).",

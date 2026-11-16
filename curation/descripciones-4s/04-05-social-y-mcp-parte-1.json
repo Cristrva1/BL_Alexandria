@@ -93,6 +93,24 @@
      "id": "activepieces",
      "motivo": "Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura)",
      "orden_instalacion": "Configura una notificación webhook hacia un flujo de Activepieces."
+    },
+    {
+     "id": "archivebox",
+     "motivo": "Combinación recíproca: ArchiveBox lo enlaza como «Archivar una nueva copia cuando una página cambia. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ArchiveBox: Usa una notificación de changedetection (webhook) para añadir la URL a ArchiveBox.",
+     "reciproca_de": "archivebox"
+    },
+    {
+     "id": "cloud-mail",
+     "motivo": "Combinación recíproca: cloud-mail lo enlaza como «Usar una dirección de cloud-mail como buzón de alertas de cambios web y reenviarlas a Telegram (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cloud-mail: Crea la dirección en cloud-mail y configúrala como destino de notificación en changedetection.",
+     "reciproca_de": "cloud-mail"
+    },
+    {
+     "id": "huginn",
+     "motivo": "Combinación recíproca: huginn lo enlaza como «Changedetection vigila cambios visuales o de texto en páginas complejas y puede notificar por webhook a Huginn, que encadena acciones posteriores (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde huginn: Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos.",
+     "reciproca_de": "huginn"
     }
    ],
    "notas": "Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas.",
@@ -275,6 +293,12 @@
      "id": "claude-code",
      "motivo": "Probar el servidor en un agente. (combinación por arquitectura)",
      "orden_instalacion": "Regístralo con `claude mcp add`."
+    },
+    {
+     "id": "mcp-for-beginners",
+     "motivo": "Combinación recíproca: MCP for Beginners lo enlaza como «SDK oficial usado en los ejemplos de Python».",
+     "orden_instalacion": "Orden indicado desde MCP for Beginners: Instala `mcp[cli]` para seguir las lecciones de Python.",
+     "reciproca_de": "mcp-for-beginners"
     }
    ],
    "notas": "Alternativas (elige una): fastmcp.",
@@ -347,6 +371,12 @@
      "id": "mcp",
      "motivo": "Referencia de servidores MCP de Google para integrarlos o tomarlos como ejemplo. (combinación por arquitectura)",
      "orden_instalacion": "Revisa la lista de Google y conecta los que necesites."
+    },
+    {
+     "id": "servers",
+     "motivo": "Combinación recíproca: servers lo enlaza como «Tomar los servidores como ejemplo al construir uno propio. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde servers: Estudia el servidor parecido y construye el tuyo con mcp-use.",
+     "reciproca_de": "servers"
     }
    ],
    "notas": "Alternativas (elige una): mcp-typescript-sdk.",
@@ -454,6 +484,24 @@
      "id": "mcp-inspector",
      "motivo": "Explorar las herramientas del servidor. (combinación por arquitectura)",
      "orden_instalacion": "Conecta el Inspector al servidor."
+    },
+    {
+     "id": "puppeteer",
+     "motivo": "Combinación recíproca: Puppeteer lo enlaza como «MCP para agentes basado en DevTools».",
+     "orden_instalacion": "Orden indicado desde Puppeteer: Úsalo para depurar desde el agente.",
+     "reciproca_de": "puppeteer"
+    },
+    {
+     "id": "agent-browser",
+     "motivo": "Combinación recíproca: agent-browser lo enlaza como «Depuración profunda complementaria. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde agent-browser: Úsalo para rendimiento y red.",
+     "reciproca_de": "agent-browser"
+    },
+    {
+     "id": "awesome-chrome-devtools",
+     "motivo": "Combinación recíproca: awesome-chrome-devtools lo enlaza como «MCP para agentes del mismo ecosistema. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-chrome-devtools: Instálalo si usas agentes.",
+     "reciproca_de": "awesome-chrome-devtools"
     }
    ],
    "notas": "Alternativas (elige una): playwright-mcp, browser-harness. Telemetría activada por defecto.",
@@ -489,6 +537,24 @@
      "id": "strix",
      "motivo": "Strix usa el servidor MCP de GitHub como ejemplo de configuración.",
      "orden_instalacion": "Añádelo a `~/.strix/mcp-servers.json`."
+    },
+    {
+     "id": "agentes-chat",
+     "motivo": "Combinación recíproca: agentes-chat lo enlaza como «Conector MCP por URL. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde agentes-chat: Añade el servidor desde el panel de la organización.",
+     "reciproca_de": "agentes-chat"
+    },
+    {
+     "id": "awesome-copilot",
+     "motivo": "Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Servidor MCP que pueden usar los agentes de Copilot de la colección (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome GitHub Copilot: Configura el MCP en Copilot antes de usar agentes que lo requieran.",
+     "reciproca_de": "awesome-copilot"
+    },
+    {
+     "id": "cli",
+     "motivo": "Combinación recíproca: GitHub CLI lo enlaza como «Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde GitHub CLI: Usa `gh` en terminal y el servidor MCP en clientes sin shell.",
+     "reciproca_de": "cli"
     }
    ],
    "notas": "Sin alternativas declaradas. Usa el modo de solo lectura cuando no necesites escribir.",

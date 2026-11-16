@@ -31,6 +31,12 @@ Requiere Python 3.11+ y PyTorch 2.6+. Se instala con `pip install "transformers[
 | [TRL](trl.md) | Post-entrenamiento sobre modelos de Transformers. | Instala `trl`. |
 | [vLLM](vllm.md) | Motor de inferencia compatible con las definiciones de Transformers. | Sirve el checkpoint con vLLM. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (24). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Accelerate](accelerate.md) · [airllm](airllm.md) · [awesome-machine-learning](awesome-machine-learning.md) · [Axolotl](axolotl.md) · [BentoML](bentoml.md) · [bionemo-recipes](bionemo-recipes.md) · [DeepSpeed](deepspeed.md) · [diffusers](diffusers.md) · [Faiss](faiss.md) · [FinGPT](fingpt.md) · [Gradio](gradio.md) · [LLaMA-Factory](llama-factory.md) · [LLMs from Scratch](llms-from-scratch.md) · [LM Evaluation Harness](lm-eval-harness.md) · [MLC LLM](mlc-llm.md) · [MLflow](mlflow.md) · [smolagents](smolagents.md) · [tensorflow](tensorflow.md) · [TensorRT-LLM](tensorrt-llm.md) · [torchtune](torchtune.md) · [txtai](txtai.md) · [Unlimited-OCR](unlimited-ocr.md) · [verl](verl.md) · [VibeVoice](vibevoice.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v5.23.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

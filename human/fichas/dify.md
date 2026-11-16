@@ -29,6 +29,9 @@ Se despliega con Docker Compose (v2.35.0+) desde `docker/` tras copiar `.env.exa
 | [langfuse](langfuse.md) | Trazas y evaluación de las apps de Dify (integración oficial documentada por Dify). | Despliega Langfuse y configura sus claves en la sección de monitorización de la app. |
 | [Ollama](ollama.md) | Modelos locales para despliegues autoalojados, citados en la documentación del nodo LLM. | Instala Ollama y descarga los modelos; añade después el proveedor en Dify. |
 | [Claude Code](claude-code.md) | Consumir apps de Dify publicadas como servidor MCP desde un agente de programación (la documentación de Dify cita Claude Desktop y Cursor). (combinación por arquitectura para Claude Code) | Publica la app como MCP en Dify y registra la URL en el cliente. |
+| [evolution-api](evolution-api.md) | Combinación recíproca: evolution-api lo enlaza como «Integración nativa para responder con agentes o RAG construidos en Dify». | Orden indicado desde evolution-api: Dify primero, con su app publicada; luego conéctala a la instancia. |
+| [PaddleOCR](paddleocr.md) | Combinación recíproca: PaddleOCR lo enlaza como «El README cita Dify entre los proyectos que lo integran». | Orden indicado desde PaddleOCR: Úsalo como servicio externo de OCR o herramienta dentro de los flujos. |
+| [TEN Framework](ten-framework.md) | Combinación recíproca: TEN Framework lo enlaza como «TEN incluye una extensión que conecta el agente de voz con aplicaciones de Dify». | Orden indicado desde TEN Framework: Crea la app en Dify; después configura la extensión de Dify en el grafo de TEN con su clave. |
 
 **Notas:** Alternativas (elige una): sim, ragflow. Combinación anterior con langflow eliminada: son plataformas solapadas sin integración documentada. Licencia con condiciones adicionales sobre Apache 2.0.
 

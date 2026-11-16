@@ -29,6 +29,7 @@ Requiere Python 3.12+. Se instala con `pip install gpt-researcher` o desde el re
 | [Claude Code](claude-code.md) | Instalable como skill de Claude. | Añade la skill con `npx skills add`. |
 | [firecrawl](firecrawl.md) | Scraping de páginas difíciles. (combinación por arquitectura) | Usa Firecrawl como fuente o vía MCP. |
 | [Ollama](ollama.md) | Modelos locales. (combinación por arquitectura) | Configura el LLM a través de un proveedor compatible. |
+| [SearXNG](searxng.md) | Combinación recíproca: SearXNG lo enlaza como «Usarlo como motor de búsqueda (retriever Searx) de GPT Researcher». | Orden indicado desde SearXNG: Despliega SearXNG con JSON activado y configura su URL en GPT Researcher. |
 
 **Notas:** Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).
 

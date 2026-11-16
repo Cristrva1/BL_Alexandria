@@ -26,9 +26,9 @@ Se instala con `npm install chart.js` o desde CDN y dibuja en un elemento `<canv
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [awesome-dataviz](awesome-dataviz.md) | Comparar con otras librerías de gráficos. (combinación por arquitectura) | Revisa la lista antes de elegir. |
 | [tailwindcss](tailwindcss.md) | Integrar los gráficos con el tema visual de la app. (combinación por arquitectura) | Pasa los colores del tema a la configuración. |
 | [DuckDB](duckdb.md) | Agregar datos (incluso en el navegador con DuckDB-WASM) antes de dibujarlos. (combinación por arquitectura) | Consulta con DuckDB y pasa el resultado al dataset. |
+| [supabase](supabase.md) | Leer los datos desde la API de Supabase y dibujarlos en el cliente con Chart.js (combinación por arquitectura). | Supabase con la tabla y sus políticas de acceso primero; después la página que consulta y pinta el `<canvas>`. |
 
 **Notas:** Alternativas (elige una): echarts, recharts.
 

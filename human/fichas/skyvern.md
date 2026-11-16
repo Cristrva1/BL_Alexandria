@@ -28,7 +28,7 @@ Requiere Python 3.11–3.13 y `pip install "skyvern[server]"` (servidor local; l
 |---|---|---|
 | [playwright](playwright.md) | SDK compatible. | Usa el SDK de Skyvern sobre Playwright. |
 | [Ollama](ollama.md) | Modelos locales. (combinación por arquitectura) | Configura un proveedor compatible. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos (sustituye a la antigua combinación con n8n). | Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos. | Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces. |
 
 **Notas:** Alternativas (elige una): browser-use, stagehand, computer-use-preview. Telemetría activa por defecto.
 

@@ -57,6 +57,12 @@
      "id": "ffmpeg",
      "motivo": "Postproceso de audio. (combinación por arquitectura)",
      "orden_instalacion": "Convierte la salida."
+    },
+    {
+     "id": "wan2-2",
+     "motivo": "Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video».",
+     "orden_instalacion": "Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`.",
+     "reciproca_de": "wan2-2"
     }
    ],
    "notas": "Alternativas (elige una): fish-speech, index-tts.",
@@ -211,6 +217,18 @@
      "id": "remotion",
      "motivo": "Banda sonora para vídeo programático. (combinación por arquitectura)",
      "orden_instalacion": "Usa el audio generado."
+    },
+    {
+     "id": "rubberband",
+     "motivo": "Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde rubberband: Procesa la salida.",
+     "reciproca_de": "rubberband"
+    },
+    {
+     "id": "audacity",
+     "motivo": "Combinación recíproca: Audacity lo enlaza como «Los plugins OpenVINO de Intel para Audacity generan y continúan música con MusicGen de AudioCraft».",
+     "orden_instalacion": "Orden indicado desde Audacity: Instala los plugins OpenVINO y los modelos MusicGen; después usa Music Generation.",
+     "reciproca_de": "audacity"
     }
    ],
    "notas": "Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.",
@@ -280,6 +298,12 @@
      "id": "ffmpeg",
      "motivo": "Convertir el audio. (combinación por arquitectura)",
      "orden_instalacion": "Convierte el formato."
+    },
+    {
+     "id": "short-video-factory",
+     "motivo": "Combinación recíproca: short-video-factory lo enlaza como «Síntesis de voz con Edge TTS».",
+     "orden_instalacion": "Orden indicado desde short-video-factory: Viene integrada en la app.",
+     "reciproca_de": "short-video-factory"
     }
    ],
    "notas": "Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad.",
@@ -315,6 +339,12 @@
      "id": "audiocraft",
      "motivo": "Ajustar duración de audio generado. (combinación por arquitectura)",
      "orden_instalacion": "Procesa la salida."
+    },
+    {
+     "id": "ultimate-vocal-remover",
+     "motivo": "Combinación recíproca: Ultimate Vocal Remover (UVR) lo enlaza como «UVR usa Rubber Band para las funciones de cambio de tiempo y de tono».",
+     "orden_instalacion": "Orden indicado desde Ultimate Vocal Remover (UVR): Instala Rubber Band según el README; después usa las herramientas de tempo y tono.",
+     "reciproca_de": "ultimate-vocal-remover"
     }
    ],
    "notas": "Sin alternativas declaradas.",

@@ -93,6 +93,12 @@
      "id": "coolify",
      "motivo": "Autoalojar en un VPS gratuito de la lista. (combinación por arquitectura)",
      "orden_instalacion": "Instala Coolify en el servidor."
+    },
+    {
+     "id": "masterdnsvpn",
+     "motivo": "Combinación recíproca: MasterDnsVPN lo enlaza como «Buscar un VPS gratuito para el servidor. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MasterDnsVPN: Elige un proveedor de la lista.",
+     "reciproca_de": "masterdnsvpn"
     }
    ],
    "notas": "Sin alternativas declaradas. Recurso, no software.",
@@ -273,6 +279,12 @@
      "id": "activepieces",
      "motivo": "Automatizaciones en el servidor doméstico. (combinación por arquitectura)",
      "orden_instalacion": "Instálalo como contenedor."
+    },
+    {
+     "id": "masterdnsvpn",
+     "motivo": "Combinación recíproca: MasterDnsVPN lo enlaza como «Gestionar el contenedor en un servidor casero. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MasterDnsVPN: Despliega la imagen Docker.",
+     "reciproca_de": "masterdnsvpn"
     }
    ],
    "notas": "Alternativa (elige una): coolify. Ritmo de releases lento.",
@@ -336,7 +348,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos.",
      "orden_instalacion": "supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces."
     },
     {
@@ -420,6 +432,24 @@
      "id": "diffusers",
      "motivo": "Gestión de adaptadores en modelos de difusión.",
      "orden_instalacion": "Carga adaptadores LoRA en el pipeline."
+    },
+    {
+     "id": "llama-factory",
+     "motivo": "Combinación recíproca: LLaMA-Factory lo enlaza como «Métodos LoRA y QLoRA».",
+     "orden_instalacion": "Orden indicado desde LLaMA-Factory: Viene como dependencia.",
+     "reciproca_de": "llama-factory"
+    },
+    {
+     "id": "airllm",
+     "motivo": "Combinación recíproca: airllm lo enlaza como «Entrenar adaptadores con pesos congelados por capas (combinación por arquitectura; [DATO NO VERIFICADO: si usa PEFT internamente])».",
+     "orden_instalacion": "Orden indicado desde airllm: Fija las versiones de PEFT y transformers en el mismo entorno.",
+     "reciproca_de": "airllm"
+    },
+    {
+     "id": "bionemo-recipes",
+     "motivo": "Combinación recíproca: bionemo-recipes lo enlaza como «Ajuste eficiente con datos propios. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde bionemo-recipes: Aplica LoRA sobre el checkpoint.",
+     "reciproca_de": "bionemo-recipes"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -460,6 +490,18 @@
      "id": "vllm",
      "motivo": "Generación en AsyncGRPOTrainer.",
      "orden_instalacion": "Levanta el servidor vLLM."
+    },
+    {
+     "id": "llm-course",
+     "motivo": "Combinación recíproca: LLM Course lo enlaza como «Fine-tuning supervisado con QLoRA usado en el notebook de Mistral-7b».",
+     "orden_instalacion": "Orden indicado desde LLM Course: Se instala dentro del notebook.",
+     "reciproca_de": "llm-course"
+    },
+    {
+     "id": "train-llm-from-scratch",
+     "motivo": "Combinación recíproca: train-llm-from-scratch lo enlaza como «Contrastar las implementaciones manuales de SFT, DPO, PPO y GRPO con la biblioteca de referencia. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde train-llm-from-scratch: Úsala después para entrenar en serio.",
+     "reciproca_de": "train-llm-from-scratch"
     }
    ],
    "notas": "Sin alternativas declaradas.",

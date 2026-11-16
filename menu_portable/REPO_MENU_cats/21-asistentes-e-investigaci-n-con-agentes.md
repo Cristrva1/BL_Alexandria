@@ -128,7 +128,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Completa setup y solicita un informe corto con fuentes antes de habilitar herramientas de escritura
 **Qué comprobar:** Puedes contrastar las referencias y revisar las acciones del agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `firecrawl`, `searxng`
+**Combina con:** `langgraph`, `firecrawl`, `searxng`, `sandbox`
 
 ## `gpt-researcher`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,research,python,docker
@@ -158,7 +158,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Haz una pregunta acotada y verifica dos fuentes antes de reutilizar el informe
 **Qué comprobar:** Puedes recuperar contexto y enlaces que respaldan conclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `firecrawl`, `ollama`
+**Combina con:** `claude-code`, `firecrawl`, `ollama`, `searxng`
 **Alternativas (elige una):** `storm`, `vane`, `local-deep-research`
 
 ## `hello-halo`
@@ -312,7 +312,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Asigna una tarea de explicación a un agente en un proyecto de prueba antes de crear automatizaciones
 **Qué comprobar:** Puedes ver tarea, sesión y resultado atribuibles al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `andrej-karpathy-skills`
 **Alternativas (elige una):** `paperclip`
 
 ## `openbot`

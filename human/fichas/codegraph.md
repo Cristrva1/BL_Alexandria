@@ -29,6 +29,7 @@ Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y confi
 | [Claude Code](claude-code.md) | Configuración automática del MCP en Claude Code. | Instala CodeGraph y ejecuta el instalador. |
 | [Codex CLI](codex.md) | Configuración automática en Codex CLI. | Ejecuta el instalador con Codex presente. |
 | [headroom](headroom.md) | Combinar contexto preciso con compresión del resto. (combinación por arquitectura) | Indexa con CodeGraph y envuelve el agente con Headroom. |
+| [floorplan](floorplan.md) | Combinación recíproca: floorplan lo enlaza como «Combinar el mapa visual con un índice semántico para el agente. (combinación por arquitectura)». | Orden indicado desde floorplan: Usa Floorplan para entender y CodeGraph para navegar. |
 
 **Notas:** Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.
 

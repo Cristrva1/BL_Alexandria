@@ -57,6 +57,12 @@
      "id": "opencode",
      "motivo": "Cliente soportado según el README.",
      "orden_instalacion": "Apunta OpenCode a la pasarela de CCR."
+    },
+    {
+     "id": "claude-code-hooks-mastery",
+     "motivo": "Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Enrutar Claude Code a otros modelos mientras experimentas con hooks (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-code-hooks-mastery: Independientes.",
+     "reciproca_de": "claude-code-hooks-mastery"
     }
    ],
    "notas": "Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
@@ -126,6 +132,11 @@
      "id": "headroom",
      "motivo": "Medir el ahorro de compresión de contexto. (combinación por arquitectura)",
      "orden_instalacion": "Compara el consumo con y sin `headroom wrap claude`."
+    },
+    {
+     "id": "claude-token-efficient",
+     "motivo": "Comprobar el efecto de un `CLAUDE.md` que pide respuestas concisas, cuyo README advierte que también añade tokens de entrada (combinación por arquitectura).",
+     "orden_instalacion": "Mide antes y después de añadir el archivo al proyecto."
     }
    ],
    "notas": "Sin alternativas declaradas. Los límites por plan son estimaciones si no hay datos oficiales.",
@@ -162,6 +173,18 @@
      "id": "markitdown",
      "motivo": "Convertir documentos del repo a Markdown antes de empaquetar. (combinación por arquitectura)",
      "orden_instalacion": "Convierte PDF/DOCX con MarkItDown y empaqueta después."
+    },
+    {
+     "id": "tools",
+     "motivo": "Combinación recíproca: tools lo enlaza como «Envoltorio `repomix_runner.py`».",
+     "orden_instalacion": "Orden indicado desde tools: Instala repomix (npm).",
+     "reciproca_de": "tools"
+    },
+    {
+     "id": "codebase-memory-mcp",
+     "motivo": "Combinación recíproca: codebase-memory-mcp lo enlaza como «Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde codebase-memory-mcp: Localiza con el grafo y empaqueta con Repomix.",
+     "reciproca_de": "codebase-memory-mcp"
     }
    ],
    "notas": "Alternativas (elige una): gitnexus.",
@@ -238,6 +261,12 @@
      "id": "headroom",
      "motivo": "Combinar contexto preciso con compresión del resto. (combinación por arquitectura)",
      "orden_instalacion": "Indexa con CodeGraph y envuelve el agente con Headroom."
+    },
+    {
+     "id": "floorplan",
+     "motivo": "Combinación recíproca: floorplan lo enlaza como «Combinar el mapa visual con un índice semántico para el agente. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde floorplan: Usa Floorplan para entender y CodeGraph para navegar.",
+     "reciproca_de": "floorplan"
     }
    ],
    "notas": "Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.",
@@ -309,6 +338,12 @@
      "id": "codex",
      "motivo": "Editor detectado por `gitnexus setup`.",
      "orden_instalacion": "Ejecuta `gitnexus setup -c codex`."
+    },
+    {
+     "id": "tools",
+     "motivo": "Combinación recíproca: tools lo enlaza como «Envoltorio `gitnexus_runner.py`».",
+     "orden_instalacion": "Orden indicado desde tools: Instala la CLI gitnexus.",
+     "reciproca_de": "tools"
     }
    ],
    "notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.",

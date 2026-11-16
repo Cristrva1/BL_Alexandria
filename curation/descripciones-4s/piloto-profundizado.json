@@ -22,6 +22,18 @@
      "id": "dify",
      "motivo": "Integración nativa para responder con agentes o RAG construidos en Dify.",
      "orden_instalacion": "Dify primero, con su app publicada; luego conéctala a la instancia."
+    },
+    {
+     "id": "baileys",
+     "motivo": "Combinación recíproca: Baileys lo enlaza como «Evolution API usa Baileys como conexión gratuita; conocer la librería ayuda a entender y depurar sus sesiones, o a pasar a un gateway listo si no quieres programar el servidor».",
+     "orden_instalacion": "Orden indicado desde Baileys: Usa uno de los dos en cada número: no conectes el mismo número a Baileys propio y a Evolution a la vez.",
+     "reciproca_de": "baileys"
+    },
+    {
+     "id": "twenty-main",
+     "motivo": "Combinación recíproca: twenty-main lo enlaza como «Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde twenty-main: Evolution API y Activepieces primero; después el flujo que escribe en Twenty.",
+     "reciproca_de": "twenty-main"
     }
    ],
    "notas": "Alternativas (elige una): whatsapp-web-js, waha. La conexión Baileys usa WhatsApp Web de forma no oficial: riesgo de bloqueo del número y de incumplir los términos de WhatsApp. Evolution y Chatwoot necesitan PostgreSQL y Redis; pueden compartir servidor, pero usa bases de datos separadas (recomendación, no probada).",
@@ -50,7 +62,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos.",
      "orden_instalacion": "chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces."
     },
     {
@@ -221,6 +233,12 @@
      "id": "litellm",
      "motivo": "La extracción con LLM usa LiteLLM para hablar con cualquier proveedor.",
      "orden_instalacion": "Viene como dependencia; configura el proveedor con su prefijo."
+    },
+    {
+     "id": "tools",
+     "motivo": "Combinación recíproca: tools lo enlaza como «Envoltorio `crawl4ai_docs.py` (AsyncWebCrawler)».",
+     "orden_instalacion": "Orden indicado desde tools: Instala crawl4ai en el entorno del proyecto.",
+     "reciproca_de": "tools"
     }
    ],
    "notas": "Alternativas (elige una): jina-reader. firecrawl cumple una función parecida. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye Firecrawl, BeautifulSoup y navegador), por eso se retiró de las combinaciones. Respeta robots.txt y los términos de cada sitio.",
@@ -294,7 +312,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos.",
      "orden_instalacion": "Qdrant en marcha con sus credenciales; después añade la pieza `qdrant` en un flujo de Activepieces."
     },
     {
@@ -317,7 +335,6 @@
    "fuentes": [
     "https://github.com/qdrant/qdrant/blob/master/README.md",
     "https://qdrant.tech/documentation/data-management/docling/",
-    "https://qdrant.tech/documentation/frameworks/n8n/",
     "https://qdrant.tech/documentation/frameworks/llama-index/",
     "https://qdrant.tech/documentation/frameworks/langchain/",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/qdrant"

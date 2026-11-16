@@ -28,7 +28,7 @@ Es una aplicación PHP que requiere PHP 8.1+ y MySQL 8.0+ o MariaDB 10.6+. Se in
 |---|---|---|
 | [metabase](metabase.md) | SQL sobre la base de Matomo para informes de negocio. (combinación por arquitectura) | Conecta Metabase a MySQL en solo lectura. |
 | [Grafana](grafana.md) | Paneles con la fuente MySQL o la API de Matomo. (combinación por arquitectura) | Configura la fuente de datos en Grafana. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos (sustituye a la antigua combinación con n8n). | Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos. | Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces. |
 
 **Notas:** Alternativas (elige una): umami, plausible.
 

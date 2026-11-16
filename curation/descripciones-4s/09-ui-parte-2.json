@@ -22,6 +22,12 @@
      "id": "flexoki",
      "motivo": "Paleta coherente para diagramas de documentación. (combinación por arquitectura)",
      "orden_instalacion": "Define los colores personalizados en la paleta del lienzo."
+    },
+    {
+     "id": "kroki",
+     "motivo": "Combinación recíproca: Kroki lo enlaza como «Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`».",
+     "orden_instalacion": "Orden indicado desde Kroki: Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`.",
+     "reciproca_de": "kroki"
     }
    ],
    "notas": "Alternativas (elige una): tldraw, mermaid.",
@@ -495,14 +501,14 @@
      "orden_instalacion": "Instala la skill en el proyecto y pide al agente los componentes."
     },
     {
-     "id": "radix-primitives",
-     "motivo": "Primitivas accesibles maduras como referencia o alternativa estable mientras UI SDK está en beta. (combinación por arquitectura)",
-     "orden_instalacion": "Usa Radix en producción y evalúa UI SDK en paralelo."
-    },
-    {
      "id": "tailwindcss",
      "motivo": "Estilar las primitivas sin estilos. (combinación por arquitectura)",
      "orden_instalacion": "Configura Tailwind en el proyecto."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Comprobar con pruebas de navegador la navegación por teclado, el foco y los popups de las primitivas que genere el agente (combinación por arquitectura).",
+     "orden_instalacion": "Primero los componentes con UI SDK; después las pruebas de Playwright sobre la página que los usa."
     }
    ],
    "notas": "Sin alternativas declaradas. Beta.",

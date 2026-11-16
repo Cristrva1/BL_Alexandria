@@ -29,6 +29,8 @@ Es un conjunto de librerías Python 3: se instala con `pip install angr`, en un 
 | [ghidra](ghidra.md) | Explorar el binario en Ghidra y automatizar la búsqueda de rutas en angr. (combinación por arquitectura) | Identifica direcciones en Ghidra y úsalas en el script de angr. |
 | [frida](frida.md) | Combinar análisis dinámico en ejecución con análisis simbólico. (combinación por arquitectura) | Captura valores reales con Frida y úsalos como restricciones en angr. |
 | [Claude Code](claude-code.md) | Escribir y depurar scripts de angr con un agente. (combinación por arquitectura) | Instala angr en un entorno virtual y abre el proyecto con el agente. |
+| [GhidraMCP](ghidramcp.md) | Combinación recíproca: GhidraMCP lo enlaza como «Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura)». | Orden indicado desde GhidraMCP: Usa angr en scripts aparte sobre el mismo binario. |
+| [rizin](rizin.md) | Combinación recíproca: rizin lo enlaza como «Ejecución simbólica sobre las rutas que identifiques en Rizin. (combinación por arquitectura)». | Orden indicado desde rizin: Localiza la función en Rizin y modela la búsqueda en angr. |
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

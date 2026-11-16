@@ -29,6 +29,7 @@ Se instalan con `npx skills add addyosmani/agent-skills` (todas o `--skill` por 
 | [Claude Code](claude-code.md) | Plugin oficial; los comandos se instalan con su espacio de nombres. | Usa la forma con espacio de nombres si choca con `/review`. |
 | [Codex CLI](codex.md) | Instalable con skills CLI. | `npx skills add addyosmani/agent-skills`. |
 | [Gemini CLI](gemini-cli.md) | Guía de instalación documentada. | Sigue la sección de Gemini CLI. |
+| [plugins](plugins.md) | Combinación recíproca: plugins lo enlaza como «Skills de ingeniería con guía de instalación para Cursor». | Orden indicado desde plugins: Sigue la sección de Cursor. |
 
 **Notas:** Alternativa (elige una): superpowers.
 

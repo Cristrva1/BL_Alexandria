@@ -30,6 +30,14 @@ Se instala con `pip install jupyterlab`, conda o mamba (conda-forge) y se abre c
 | [tensorflow](tensorflow.md) | Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura) | Instala TensorFlow en el entorno del kernel. |
 | [DuckDB](duckdb.md) | Consultas SQL sobre CSV y Parquet dentro del notebook. (combinación por arquitectura) | Añade el paquete `duckdb` al kernel. |
 | [Polars](polars.md) | DataFrames rápidos para análisis interactivo. (combinación por arquitectura) | Añade `polars` al kernel. |
+| [Apache Iceberg](apache-iceberg.md) | Combinación recíproca: Apache Iceberg lo enlaza como «Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)». | Orden indicado desde Apache Iceberg: Instala JupyterLab en el mismo entorno que PyIceberg. |
+| [Delta Lake](delta-lake.md) | Combinación recíproca: Delta Lake lo enlaza como «Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)». | Orden indicado desde Delta Lake: Instala JupyterLab en el entorno con PySpark o deltalake. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Backtesting.py](backtesting-py.md) · [deck.gl](deck-gl.md) · [Gemma (biblioteca JAX)](gemma.md) · [JAX](jax.md) · [kepler.gl](kepler-gl.md) · [ML for Beginners](ml-for-beginners.md) · [OpenBB Open Data Platform](openbb.md) · [pandas](pandas.md) · [Panel](panel.md) · [PyGWalker](pygwalker.md) · [scikit-learn](scikit-learn.md) · [yfinance](yfinance.md)
 
 **Notas:** Alternativa (elige una): marimo. Los notebooks .ipynb se versionan mal en Git; considera jupytext o marimo si te importa.
 

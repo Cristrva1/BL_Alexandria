@@ -34,7 +34,7 @@ Se basa en Frappe Framework, un framework web completo en Python y JavaScript co
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v16.55.0 (2026-11-12) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/frappe/erpnext/blob/develop/README.md) · [2](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/frappe/erpnext/blob/develop/README.md)</sub>
 
 ## Acceso, coste y equipo
 

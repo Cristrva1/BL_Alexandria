@@ -30,6 +30,12 @@ Es una aplicación Python; se instala con Docker (searxng-docker), con el script
 | [Open WebUI](open-webui.md) | Proveedor de búsqueda web documentado en Open WebUI. | Activa el formato JSON y añade la URL de consulta en Open WebUI. |
 | [Vane](vane.md) | Motor de búsqueda integrado de Vane (va dentro de su imagen Docker o como servicio aparte). | Usa la imagen completa de Vane o apunta `SEARXNG_API_URL` a tu instancia. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[deer-flow](deer-flow.md) · [local-deep-research](local-deep-research.md) · [Mercury Agent](mercury-agent.md) · [onyx](onyx.md) · [STORM](storm.md)
+
 **Notas:** Sin alternativas declaradas. No expongas tu instancia sin limitación de peticiones.
 
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada AGPL-3.0 (consultado el 2026-11-15).

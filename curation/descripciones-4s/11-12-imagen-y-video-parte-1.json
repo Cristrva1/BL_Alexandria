@@ -137,6 +137,18 @@
      "id": "real-esrgan",
      "motivo": "Ampliar las imágenes generadas. (combinación por arquitectura)",
      "orden_instalacion": "Pasa la salida por Real-ESRGAN."
+    },
+    {
+     "id": "invokeai",
+     "motivo": "Combinación recíproca: InvokeAI lo enlaza como «Usar modelos FLUX en el lienzo de Invoke. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde InvokeAI: Instala el modelo desde el gestor de modelos si está soportado.",
+     "reciproca_de": "invokeai"
+    },
+    {
+     "id": "krita-ai-diffusion",
+     "motivo": "Combinación recíproca: Krita AI Diffusion lo enlaza como «Usar modelos FLUX en Krita a través de ComfyUI. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Krita AI Diffusion: Instala el modelo en ComfyUI y selecciónalo en el plugin.",
+     "reciproca_de": "krita-ai-diffusion"
     }
    ],
    "notas": "Sin alternativas declaradas. Revisa la licencia de cada peso: varios no permiten uso comercial.",
@@ -286,6 +298,24 @@
      "id": "faster-whisper",
      "motivo": "Subtitular las grabaciones. (combinación por arquitectura)",
      "orden_instalacion": "Transcribe el audio exportado."
+    },
+    {
+     "id": "rnnoise",
+     "motivo": "Combinación recíproca: rnnoise lo enlaza como «Supresión de ruido en streaming».",
+     "orden_instalacion": "Orden indicado desde rnnoise: Usa el filtro de supresión de ruido RNNoise de OBS.",
+     "reciproca_de": "rnnoise"
+    },
+    {
+     "id": "deep-live-cam",
+     "motivo": "Combinación recíproca: Deep-Live-Cam lo enlaza como «Emitir la cámara virtual. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Deep-Live-Cam: Captura la salida en OBS.",
+     "reciproca_de": "deep-live-cam"
+    },
+    {
+     "id": "rvc",
+     "motivo": "Combinación recíproca: RVC WebUI lo enlaza como «Cambiador de voz en tiempo real para streaming. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde RVC WebUI: Enruta el audio a OBS.",
+     "reciproca_de": "rvc"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -327,6 +357,18 @@
      "id": "moviepy",
      "motivo": "Automatizar en Python lo que se hace a mano en la app. (combinación por arquitectura)",
      "orden_instalacion": "Usa MoviePy para lotes repetitivos."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Combinación recíproca: OBS Studio lo enlaza como «Recortar grabaciones sin recodificar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OBS Studio: Graba con OBS y recorta con LosslessCut.",
+     "reciproca_de": "obs-studio"
+    },
+    {
+     "id": "opencut",
+     "motivo": "Combinación recíproca: OpenCut lo enlaza como «Recortes sin recodificar antes de editar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OpenCut: Corta el material bruto con LosslessCut y edita en OpenCut.",
+     "reciproca_de": "opencut"
     }
    ],
    "notas": "Sin alternativas declaradas. Descarga solo desde las fuentes oficiales.",

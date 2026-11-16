@@ -29,6 +29,7 @@ Se instala con `npm install animejs` o desde CDN como módulo ES.
 | [three.js](three-js.md) | Animar valores de objetos 3D. (combinación por arquitectura) | Pasa el objeto three.js como objetivo. |
 | [magicui](magicui.md) | Animaciones extra en componentes de interfaz. (combinación por arquitectura) | Aplica animaciones a componentes. |
 | [motion-design-skill](motion-design-skill.md) | Principios de movimiento para agentes. (combinación por arquitectura) | Añade la skill. |
+| [zdog](zdog.md) | Combinación recíproca: zdog lo enlaza como «Animar propiedades de las formas. (combinación por arquitectura)». | Orden indicado desde zdog: Interpola rotaciones con Anime.js. |
 
 **Notas:** Alternativas (elige una): gsap, motion.
 

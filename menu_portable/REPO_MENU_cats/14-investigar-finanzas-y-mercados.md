@@ -33,6 +33,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ccxt`, `langgraph`, `vectorbt`
 
+## `backtesting-py`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=finanzas,python,library
+
+**Qué es:** Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos.
+**Stack:** Python, pyproject.toml, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/kernc/backtesting.py
+
+**Instalación** [+]:
+
+```
+pip install backtesting
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install backtesting` y ejecuta el ejemplo SmaCross de la documentación.
+**Qué comprobar:** Obtienes estadísticas del backtest y un gráfico interactivo con operaciones.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `yfinance`, `jupyterlab`, `claude-code`, `openbb`
+**Alternativas (elige una):** `vectorbt`
+
 ## `binance-trader`
 role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,arbitrage,binance,bitcoin,btc,cryptocurrency,trade,python
 
@@ -61,7 +92,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina la configuración y localiza las llamadas de lectura y de creación de órdenes sin activar el bot
 **Qué comprobar:** Puedes identificar qué credenciales y acciones afectarán una cuenta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ccxt`, `freqtrade`, `vectorbt`
+**Combina con:** `ccxt`, `vectorbt`, `coolify`
 
 ## `ccxt`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=bots,library,python
@@ -186,6 +217,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes distinguir datos observados y análisis generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `qlib`, `ccxt`
+
+## `fingpt`
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,python,model,training
+
+**Qué es:** Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras.
+**Stack:** Jupyter Notebook, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/AI4Finance-Foundation/FinGPT
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación
+**Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
+**Primera prueba propuesta:** Sigue el SETUP del repositorio y ejecuta el ejemplo de análisis de sentimiento con la ruta por API o un modelo local pequeño.
+**Qué comprobar:** El script devuelve etiquetas de sentimiento para frases financieras de ejemplo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `peft`, `pytorch`
 
 ## `finrl`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=cuant,framework,jupyter-notebook
@@ -347,7 +408,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Reproduce un notebook introductorio con datos gratuitos y separa entrenamiento y prueba temporal
 **Qué comprobar:** Puedes explicar los supuestos y reproducir una métrica fuera de muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qlib`, `vectorbt`, `marimo`
+**Combina con:** `qlib`, `vectorbt`, `marimo`, `finrl`
 
 ## `nautilus-trader`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=cuant,framework,rust
@@ -377,7 +438,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un ejemplo de backtest de la misma versión v2 y revisa su secuencia de eventos
 **Qué comprobar:** Puedes reproducir órdenes y fills simulados con configuración fija
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `polars`, `marimo`, `ccxt`
+**Combina con:** `polars`, `marimo`, `ccxt`, `py-sdk`
 
 ## `open-sol-bot`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,blockchain,solana,telegram-bot,trader,transaction,python
@@ -407,7 +468,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Examina configuración y rutas de órdenes antes de conectar una wallet o habilitar seguimiento
 **Qué comprobar:** Puedes identificar las acciones que consultarían datos y las que moverían fondos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `autohedge`, `grafana`, `activepieces`
+**Combina con:** `grafana`, `activepieces`, `coolify`
+
+## `openbb`
+role=library · exec=local · setup=easy · mcp=True · prov=— · tags=finanzas,python,data,mcp
+
+**Qué es:** Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/openbq-org/OpenBB
+
+**Instalación** [+]:
+
+```
+pip install openbb
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install openbb` y descarga el histórico de precios de un símbolo con `obb.equity.price.historical`.
+**Qué comprobar:** Obtienes un DataFrame con fechas y precios del proveedor configurado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `jupyterlab`, `vectorbt`, `backtesting-py`
 
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
@@ -467,7 +558,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una baseline pequeña sobre un periodo de prueba separado y revisa predicciones y evaluación
 **Qué comprobar:** Puedes reproducir resultados sin mezclar datos futuros
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mlflow`, `finrl`, `marimo`
+**Combina con:** `mlflow`, `finrl`, `marimo`, `finceptterminal`, `machine-learning-for-trading`
 
 ## `quantharness`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,agentic-ai,large-language-models,html
@@ -497,7 +588,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente
 **Qué comprobar:** Puedes separar datos del periodo, análisis visual y decisión generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `langchain`, `tradingagents`
+**Combina con:** `langgraph`, `langchain`, `langfuse`
 
 ## `tradingagents`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,agent,finance,llm,multiagent,trading,python
@@ -561,6 +652,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar parámetros, operaciones y resultados separados de entrenamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ccxt`, `freqtrade`, `marimo`
+**Alternativas (elige una):** `backtesting-py`
 
 ## `vibe-trading`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=agentes,agent,python
@@ -593,3 +685,33 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comparar supuestos y resultados sin cambiar los datos de entrada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `openclaw`, `vectorbt`
+
+## `yfinance`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=finanzas,python,library,data
+
+**Qué es:** Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ranaroussi/yfinance
+
+**Instalación** [+]:
+
+```
+pip install yfinance
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install yfinance` y descarga un año de precios de un símbolo con `Ticker(...).history`.
+**Qué comprobar:** Obtienes un DataFrame con precios OHLC, volumen y fechas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vectorbt`, `backtesting-py`, `jupyterlab`

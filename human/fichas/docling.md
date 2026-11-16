@@ -31,6 +31,12 @@ Lee PDF, DOCX, PPTX, XLSX, HTML, EPUB, imágenes, audio, video, correo y más. E
 | [Qdrant](qdrant.md) | Qdrant documenta cómo indexar la salida de Docling para búsqueda semántica. | Qdrant en marcha antes de indexar; Docling no lo necesita para convertir. |
 | [langchain](langchain.md) | Integración nativa documentada (DoclingLoader) para cargar documentos en LangChain. | Mismo entorno Python; elige un solo framework RAG. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[annas-mcp](annas-mcp.md) · [book-to-skill](book-to-skill.md) · [DeepTutor](deeptutor.md) · [graphrag](graphrag.md) · [kotaemon](kotaemon.md) · [LightRAG](lightrag.md)
+
 **Notas:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones. Los modelos de diseño se descargan la primera vez: en entornos sin red, prepáralos antes.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.150.1 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).

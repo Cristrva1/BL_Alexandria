@@ -31,6 +31,12 @@ Biblioteca Python (`pip install -U langgraph`), con equivalente en JS/TS (LangGr
 | [langfuse](langfuse.md) | Trazas y evaluación de código abierto mediante la integración oficial de Langfuse con LangChain/LangGraph. | Langfuse (cloud o autoalojado) primero; añade su callback handler a las ejecuciones. |
 | [mem0](mem0.md) | Memoria a largo plazo para agentes de LangGraph (integración documentada por Mem0). | Configura Mem0 y úsalo desde un nodo o herramienta. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (25). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[12-Factor Agents](12-factor-agents.md) · [500-AI-Agents-Projects](500-ai-agents-projects.md) · [Agent Protocol](agent-protocol.md) · [agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agents Towards Production](agents-towards-production.md) · [assistant-ui](assistant-ui.md) · [AutoHedge](autohedge.md) · [awesome-LangGraph](awesome-langgraph.md) · [Composio](composio.md) · [CopilotKit](copilotkit.md) · [deer-flow](deer-flow.md) · [Graphiti](graphiti.md) · [Hugging Face Agents Course](agents-course.md) · [LangGraph.js](langgraphjs.md) · [laya](laya.md) · [novu](novu.md) · [Open SWE](open-swe.md) · [OpenBot](openbot.md) · [OpenUI](openui.md) · [Opik](opik.md) · [Phoenix](phoenix.md) · [python-telegram-bot](python-telegram-bot.md) · [QuantHarness](quantharness.md) · [Temporal](temporal.md) · [TradingAgents](tradingagents.md)
+
 **Notas:** Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python, agno.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.2.22 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).

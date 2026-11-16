@@ -34,7 +34,7 @@ Es TypeScript con Angular para la web y la extensión, y Electron para el escrit
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada desktop-v2026.10.4 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bitwarden/clients/blob/main/README.md) · [2](https://github.com/bitwarden/clients/blob/main/LICENSE.txt) · [3](https://bitwarden.com/help/self-host-an-organization/) · [4](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitwarden/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bitwarden/clients/blob/main/README.md) · [2](https://github.com/bitwarden/clients/blob/main/LICENSE.txt) · [3](https://bitwarden.com/help/self-host-an-organization/)</sub>
 
 ## Acceso, coste y equipo
 

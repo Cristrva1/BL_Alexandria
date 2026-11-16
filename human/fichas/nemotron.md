@@ -30,6 +30,7 @@ Los modelos se descargan de Hugging Face y se despliegan en edge, una GPU o cent
 | [NemoClaw](nemoclaw.md) | Inferencia gestionada en el stack de agentes de NVIDIA. (combinación por arquitectura) | Configura Nemotron como modelo. |
 | [Claude Code](claude-code.md) | Plugin `nemotron-customize`. | Abre Claude Code en la raíz del repo e invoca la skill. |
 | [NeMo Speech](nemo.md) | Pila de entrenamiento de las recetas. | Instala NeMo para reproducir recetas. |
+| [cosmos](cosmos.md) | Combinación recíproca: cosmos lo enlaza como «Modelos de NVIDIA para agentes que orquestan la simulación. (combinación por arquitectura)». | Orden indicado desde cosmos: Usa Nemotron como planificador. |
 
 **Notas:** Sin alternativas declaradas.
 

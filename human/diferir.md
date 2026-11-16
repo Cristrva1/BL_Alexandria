@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**78 repos.**
+**93 repos.**
 
 ## ⏳ Diferir
 
@@ -12,6 +12,7 @@ _Pesado: solo si llega a finalista._
 
 | Repo | Categoría | Qué hace |
 |---|---|---|
+| [Apache Airflow](fichas/airflow.md) | 🤖 Automatizar procesos y crear herramientas internas | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. |
 | [AutoGPT](fichas/autogpt.md) | 🕸️ Construir agentes y coordinar equipos de IA | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. |
 | [MiroFish](fichas/mirofish.md) | 🕸️ Construir agentes y coordinar equipos de IA | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. |
 | [openevolve](fichas/openevolve.md) | 🕸️ Construir agentes y coordinar equipos de IA | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. |
@@ -21,6 +22,7 @@ _Pesado: solo si llega a finalista._
 | [SWE-bench](fichas/swe-bench.md) | 🧑‍💻 Entender código y comprobar su calidad | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. |
 | [odysseus](fichas/odysseus.md) | 🏠 Chats, modelos locales y espacios privados | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 | [airllm](fichas/airllm.md) | 🏠 Chats, modelos locales y espacios privados | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. |
+| [MLC LLM](fichas/mlc-llm.md) | 🏠 Chats, modelos locales y espacios privados | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. |
 | [FreeToken](fichas/freetoken.md) | 🏠 Chats, modelos locales y espacios privados | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. |
 | [magnitude](fichas/magnitude.md) | 🏠 Chats, modelos locales y espacios privados | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. |
 | [penpot](fichas/penpot.md) | 🎨 Diseñar y construir interfaces web | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |
@@ -33,6 +35,7 @@ _Pesado: solo si llega a finalista._
 | [Wan2.2](fichas/wan2-2.md) | 🎬 Editar, grabar y generar video | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | 🎬 Editar, grabar y generar video | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
 | [WanGP](fichas/wan2gp.md) | 🎬 Editar, grabar y generar video | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
+| [LTX-2](fichas/ltx-2.md) | 🎬 Editar, grabar y generar video | Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado. |
 | [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) | 🎬 Editar, grabar y generar video | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 | [paperless-ngx](fichas/paperless-ngx.md) | 📄 PDF, OCR y procesamiento de documentos | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. |
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | 📄 PDF, OCR y procesamiento de documentos | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
@@ -40,6 +43,7 @@ _Pesado: solo si llega a finalista._
 | [docuseal](fichas/docuseal.md) | 📄 PDF, OCR y procesamiento de documentos | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. |
 | [qlib](fichas/qlib.md) | 📈 Investigar finanzas y mercados | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. |
 | [FinceptTerminal](fichas/finceptterminal.md) | 📈 Investigar finanzas y mercados | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. |
+| [FinGPT](fichas/fingpt.md) | 📈 Investigar finanzas y mercados | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. |
 | [FinRL](fichas/finrl.md) | 📈 Investigar finanzas y mercados | Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. |
 | [AutoHedge](fichas/autohedge.md) | 📈 Investigar finanzas y mercados | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. |
 | [open-sol-bot](fichas/open-sol-bot.md) | 📈 Investigar finanzas y mercados | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. |
@@ -47,8 +51,11 @@ _Pesado: solo si llega a finalista._
 | [vaultwarden](fichas/vaultwarden.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
 | [AdGuardHome](fichas/adguardhome.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. |
 | [server](fichas/nextcloud-server.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. |
+| [Frigate NVR](fichas/frigate.md) | 🗂️ Organizar notas, archivos y servicios personales | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant. |
 | [karakeep](fichas/karakeep.md) | 🗂️ Organizar notas, archivos y servicios personales | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. |
 | [audiobookshelf](fichas/audiobookshelf.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. |
+| [Wazuh](fichas/wazuh.md) | 🔍 Analizar software y comprobar su seguridad | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. |
+| [Synapse](fichas/synapse.md) | 🤖 WhatsApp, mensajería y chatbots | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. |
 | [twenty-main](fichas/twenty-main.md) | 🤖 CRM, ventas y marketing | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 | [Odoo](fichas/odoo.md) | 🤖 CRM, ventas y marketing | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 | [cal.diy](fichas/cal-diy.md) | 🤖 CRM, ventas y marketing | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
@@ -57,6 +64,7 @@ _Pesado: solo si llega a finalista._
 | [open-seo](fichas/open-seo.md) | 🤖 CRM, ventas y marketing | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. |
 | [cloud-mail](fichas/cloud-mail.md) | 🤖 CRM, ventas y marketing | Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. |
 | [crm](fichas/compai-crm.md) | 🤖 CRM, ventas y marketing | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. |
+| [Zammad](fichas/zammad.md) | 🤖 CRM, ventas y marketing | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
 | [llm.c](fichas/llm-c.md) | 🧠 Aprender IA y escribir mejores prompts | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. |
 | [paperclip](fichas/paperclip.md) | 🕸️ Asistentes e investigación con agentes | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
 | [ruflo](fichas/ruflo.md) | 🕸️ Asistentes e investigación con agentes | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |
@@ -70,10 +78,17 @@ _Pesado: solo si llega a finalista._
 | [SGLang](fichas/sglang.md) | 🧬 Operar, evaluar y medir modelos de IA | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 | [claude-code-router](fichas/claude-code-router.md) | 🧬 Operar, evaluar y medir modelos de IA | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
 | [TensorRT-LLM](fichas/tensorrt-llm.md) | 🧬 Operar, evaluar y medir modelos de IA | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. |
+| [GPUStack](fichas/gpustack.md) | 🧬 Operar, evaluar y medir modelos de IA | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. |
 | [tensorflow](fichas/tensorflow.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 | [DeepSeek-V3](fichas/deepseek-v3.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. |
+| [DeepSpeed](fichas/deepspeed.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes. |
 | [laya](fichas/laya.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. |
+| [verl](fichas/verl.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. |
+| [Axolotl](fichas/axolotl.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. |
 | [cosmos](fichas/cosmos.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
+| [OpenRLHF](fichas/openrlhf.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. |
+| [Gemma (biblioteca JAX)](fichas/gemma.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino. |
+| [torchtune](fichas/torchtune.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. |
 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. |
 | [hudi](fichas/hudi.md) | 🧑‍💻 Procesar datos y trabajar con notebooks | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 | [warp](fichas/warp.md) | 🎨 Animación, gráficos y creación 3D | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. |
