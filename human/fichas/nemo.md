@@ -29,6 +29,7 @@ Requiere Python 3.12+ y PyTorch con CUDA; se instala sobre una pila existente si
 | [Nemotron (NVIDIA)](nemotron.md) | Familia Nemotron, incluida la voz. | Descarga los checkpoints de Hugging Face. |
 | [Pipecat](pipecat.md) | Agentes de voz con modelos NVIDIA. (combinación por arquitectura) | Sirve el modelo y conéctalo al pipeline. |
 | [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA. |
+| [sherpa-onnx](sherpa-onnx.md) | Combinación recíproca: sherpa-onnx lo enlaza como «sherpa-onnx ejecuta modelos de NeMo como Parakeet TDT y transductores/CTC exportados a ONNX». | Orden indicado desde sherpa-onnx: Descarga el modelo NeMo convertido; después úsalo con el reconocedor de sherpa-onnx. |
 
 **Notas:** Alternativas (elige una): whisperx.
 

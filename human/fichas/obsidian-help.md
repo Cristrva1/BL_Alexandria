@@ -29,6 +29,7 @@ Se puede clonar y abrir como vault en Obsidian para leer la ayuda sin conexión,
 | [obsidian-importer](obsidian-importer.md) | Las guías de importación del Importer se alojan y se mantienen en este repo. | Consulta la guía del formato antes de importar. |
 | [obsidian-clipper](obsidian-clipper.md) | La documentación del Web Clipper vive en la ayuda oficial. | Lee la sección del Web Clipper antes de crear plantillas. |
 | [obsidian-skills](obsidian-skills.md) | Las skills enlazan a esta documentación como referencia de sintaxis. (combinación por arquitectura) | Abre el vault de ayuda en local si el agente necesita consultar la sintaxis. |
+| [jsoncanvas](jsoncanvas.md) | Especificación abierta del formato `.canvas` que usa Obsidian Canvas, documentado en la ayuda. | Consulta la especificación cuando necesites leer o generar lienzos fuera de Obsidian. |
 
 **Notas:** Sin alternativas declaradas. Sin licencia explícita.
 

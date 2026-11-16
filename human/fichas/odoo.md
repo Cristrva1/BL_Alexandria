@@ -20,13 +20,13 @@ Incluye apps de CRM, creador de sitios web, eCommerce, inventario, proyectos, fa
 
 ## ¿Cómo lo hace?
 
-Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones como las de n8n [DATO NO VERIFICADO: protocolo exacto según versión].
+Es una aplicación web en Python con un framework propio de módulos («addons») sobre PostgreSQL; la documentación de instalación desde código indica PostgreSQL 13 o superior. Se instala con paquetes, desde el código fuente o en Docker según la guía oficial, o se usa Odoo Online. Expone una API externa (XML-RPC/JSON-RPC) que usan integraciones de terceros, como la pieza `odoo` de Activepieces [DATO NO VERIFICADO: protocolo exacto según versión].
 
 ## ¿Con qué otros repos se combina?
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos (sustituye a la antigua combinación con n8n). | Odoo en marcha con sus credenciales; después añade la pieza `odoo` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `odoo` para usar Odoo en flujos. | Odoo en marcha con sus credenciales; después añade la pieza `odoo` en un flujo de Activepieces. |
 | [metabase](metabase.md) | Dashboards sobre la base PostgreSQL de Odoo sin tocar la aplicación (combinación por arquitectura). | Conecta Metabase con un usuario de solo lectura, idealmente a una réplica, para no cargar la base de producción. |
 | [Botpress](botpress.md) | Botpress Cloud tiene una integración oficial con Odoo para que un bot consulte o registre datos. | Odoo accesible por internet con usuario de API; luego activa la integración en el Hub de Botpress. |
 
@@ -34,7 +34,7 @@ Es una aplicación web en Python con un framework propio de módulos («addons»
 
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/odoo/odoo/blob/20.0/README.md) · [2](https://github.com/odoo/odoo/blob/20.0/LICENSE) · [3](https://www.odoo.com/documentation/19.0/administration/on_premise/source.html) · [4](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo/) · [5](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/odoo/odoo/blob/20.0/README.md) · [2](https://github.com/odoo/odoo/blob/20.0/LICENSE) · [3](https://www.odoo.com/documentation/19.0/administration/on_premise/source.html) · [4](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/odoo)</sub>
 
 ## Acceso, coste y equipo
 

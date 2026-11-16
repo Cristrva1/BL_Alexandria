@@ -24,7 +24,7 @@
      "orden_instalacion": "Despliega con Compose desde Coolify."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con t3code (solo anotado).",
+   "notas": "Alternativa (elige una): t3code.",
    "fuentes": [
     "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
     "https://opencodemanager.app/docs/getting-started/installation"
@@ -241,9 +241,15 @@
      "id": "opencode",
      "motivo": "Runtime de agente soportado.",
      "orden_instalacion": "Instala OpenCode en el runtime."
+    },
+    {
+     "id": "andrej-karpathy-skills",
+     "motivo": "Combinación recíproca: andrej-karpathy-skills lo enlaza como «Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde andrej-karpathy-skills: Independientes.",
+     "reciproca_de": "andrej-karpathy-skills"
     }
    ],
-   "notas": "Sin alternativas declaradas. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
+   "notas": "Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
    "fuentes": [
     "https://github.com/multica-ai/multica/blob/main/README.md",
     "https://multica.ai/docs/agents"
@@ -345,6 +351,12 @@
      "id": "searxng",
      "motivo": "Búsqueda autoalojada. (combinación por arquitectura)",
      "orden_instalacion": "Configúralo como herramienta de búsqueda."
+    },
+    {
+     "id": "sandbox",
+     "motivo": "Combinación recíproca: sandbox lo enlaza como «Sandbox para el harness. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde sandbox: Configúralo como entorno de ejecución.",
+     "reciproca_de": "sandbox"
     }
    ],
    "notas": "Sin alternativas declaradas; se solapa con gpt-researcher en el modo investigación (solo anotado).",

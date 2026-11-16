@@ -29,6 +29,7 @@ Se usa en excalidraw.com o se embebe en apps React con `npm install react react-
 | [Claude Code](claude-code.md) | Generar o editar diagramas `.excalidraw` (JSON abierto) desde un agente. (combinación por arquitectura) | Pide al agente que escriba el JSON y ábrelo en Excalidraw. |
 | [penpot](penpot.md) | Pasar de bocetos rápidos a diseño de alta fidelidad. (combinación por arquitectura) | Boceta en Excalidraw y diseña la versión final en Penpot. |
 | [flexoki](flexoki.md) | Paleta coherente para diagramas de documentación. (combinación por arquitectura) | Define los colores personalizados en la paleta del lienzo. |
+| [Kroki](kroki.md) | Combinación recíproca: Kroki lo enlaza como «Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`». | Orden indicado desde Kroki: Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`. |
 
 **Notas:** Alternativas (elige una): tldraw, mermaid.
 

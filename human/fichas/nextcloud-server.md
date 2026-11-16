@@ -29,12 +29,21 @@ Es una aplicación PHP con frontend en JavaScript/Vue; necesita servidor web, PH
 | [coolify](coolify.md) | Desplegar Nextcloud como servicio de un clic en un servidor propio (Coolify documenta el servicio Nextcloud). | Instala Coolify y añade el servicio Nextcloud desde su catálogo. |
 | [Home Assistant](home-assistant.md) | Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud. | Activa la integración en Home Assistant con un usuario administrador de Nextcloud. |
 | [Ollama](ollama.md) | Dar a Nextcloud Assistant un modelo local mediante un backend compatible con la API de OpenAI. (combinación por arquitectura) (la app integration_openai admite endpoints compatibles; la compatibilidad concreta con Ollama es [DATO NO VERIFICADO] en este lote) | Levanta Ollama, instala la app de integración y apunta su URL al endpoint compatible. |
+| [CasaOS](casaos.md) | Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)». | Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor. |
+| [Immich](immich.md) | Combinación recíproca: Immich lo enlaza como «Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura)». | Orden indicado desde Immich: Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa. |
+| [PhotoPrism](photoprism.md) | Combinación recíproca: PhotoPrism lo enlaza como «PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura)». | Orden indicado desde PhotoPrism: Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Joplin](joplin.md) · [SiYuan](siyuan.md)
 
 **Notas:** Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v33.0.11 (2026-11-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nextcloud/server/blob/master/README.md) · [2](https://github.com/nextcloud/all-in-one) · [3](https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html) · [4](https://apps.nextcloud.com/apps/integration_openai) · [5](https://coolify.io/docs/services/nextcloud) · [6](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nextcloud/) · [7](https://www.home-assistant.io/integrations/nextcloud/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nextcloud/server/blob/master/README.md) · [2](https://github.com/nextcloud/all-in-one) · [3](https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html) · [4](https://apps.nextcloud.com/apps/integration_openai) · [5](https://coolify.io/docs/services/nextcloud) · [6](https://www.home-assistant.io/integrations/nextcloud/)</sub>
 
 ## Acceso, coste y equipo
 

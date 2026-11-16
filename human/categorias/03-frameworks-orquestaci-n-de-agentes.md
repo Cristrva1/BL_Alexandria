@@ -4,7 +4,7 @@
 
 Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.
 
-30 repos · 4 secciones
+34 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Frameworks de agentes en Python](#frameworks-de-agentes-en-python) — 16 repos
+- [Frameworks de agentes en Python](#frameworks-de-agentes-en-python) — 20 repos
 - [Frameworks en TypeScript y multi-lenguaje](#frameworks-en-typescript-y-multi-lenguaje) — 5 repos
 - [Builders visuales y plataformas de agentes](#builders-visuales-y-plataformas-de-agentes) — 4 repos
 - [Simulación, evolución y debate entre modelos](#simulación-evolución-y-debate-entre-modelos) — 5 repos
@@ -32,15 +32,19 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [langchain](../fichas/langchain.md) | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). | Tu objetivo encaja con estos ejemplos: Consultar un catálogo de prueba; Responder sobre documentos propios | Depende de la ruta elegida |
 | [MetaGPT](../fichas/metagpt.md) | Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. | Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software | Depende de la ruta elegida |
 | [crewAI](../fichas/crewai.md) | Framework para orquestar "crews" de agentes con roles y tareas. | Tu objetivo encaja con estos ejemplos: Preparar investigación de mercado; Separar investigación y redacción de producto | Depende de la ruta elegida |
+| [OpenManus](../fichas/openmanus.md) | Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP. | Tu objetivo encaja con estos ejemplos: delegar una investigación web que termine en un informe guardado en disco; experimentar con un agente general en local antes de elegir un framework | API de IA necesaria |
 | [LlamaIndex](../fichas/llama-index.md) | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. | Tu objetivo encaja con estos ejemplos: Consultar políticas internas; Encontrar cláusulas en contratos ficticios | Depende de la ruta elegida |
 | [Agno](../fichas/agno.md) | Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. | Tu objetivo encaja con estos ejemplos: Servir un agente mediante una API; Investigar fallos mediante trazas | Depende de la ruta elegida |
 | [DSPy](../fichas/dspy.md) | Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano. | Tu objetivo encaja con estos ejemplos: Clasificar solicitudes de soporte; Optimizar un extractor de datos | Depende de la ruta elegida |
+| [AgentScope](../fichas/agentscope.md) | Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable. | Tu objetivo encaja con estos ejemplos: construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso; orquestar un equipo de agentes con un líder que delega tareas | API de IA opcional |
+| [ChatDev](../fichas/chatdev.md) | Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software. | Tu objetivo encaja con estos ejemplos: prototipar una pequeña aplicación con agentes que actúan como roles de un equipo; estudiar patrones de colaboración multiagente de los artículos del proyecto | API de IA necesaria |
 | [Deep Agents](../fichas/deepagents.md) | Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. | Tu objetivo encaja con estos ejemplos: Resumir documentos de proyecto; Dividir una revisión de archivos en tareas | Depende de la ruta elegida |
 | [OpenAI Agents SDK](../fichas/openai-agents-python.md) | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. | Tu objetivo encaja con estos ejemplos: Enrutar consultas por departamento; Validar una respuesta antes de aceptarla | Depende de la ruta elegida |
 | [smolagents](../fichas/smolagents.md) | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. | Tu objetivo encaja con estos ejemplos: Calcular indicadores de un CSV; Transformar datos consultados en un resumen | Depende de la ruta elegida |
 | [Haystack](../fichas/haystack.md) | Framework de deepset para pipelines de RAG y agentes listos para producción. | Tu objetivo encaja con estos ejemplos: Responder sobre manuales propios; Comparar recuperación de dos consultas | Depende de la ruta elegida |
 | [Agent Development Kit (ADK)](../fichas/adk-python.md) | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. | Tu objetivo encaja con estos ejemplos: Consultar información de negocio; Evaluar la selección de herramientas | Depende de la ruta elegida |
 | [Pydantic AI](../fichas/pydantic-ai.md) | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. | Tu objetivo encaja con estos ejemplos: Extraer campos de mensajes; Validar datos generados antes de guardarlos | Depende de la ruta elegida |
+| [CAMEL](../fichas/camel.md) | Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores. | Tu objetivo encaja con estos ejemplos: generar datos sintéticos con agentes que dialogan en roles; montar un experimento de simulación con muchos agentes y medir su comportamiento | API de IA opcional |
 | [claude-agent-sdk-python](../fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio | API de IA necesaria |
 | [ag2](../fichas/ag2.md) | Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen. | Tu objetivo encaja con estos ejemplos: Coordinar redactor y verificador; Incluir intervención humana en un equipo | Depende de la ruta elegida |
 | [awesome-LangGraph](../fichas/awesome-langgraph.md) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | Tu objetivo encaja con estos ejemplos: Encontrar un flujo con memoria; Localizar evaluadores de agentes | Sin clave propia de API de IA en la ruta básica |

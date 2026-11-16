@@ -32,6 +32,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes contrastar nodos, enlaces y responsabilidades
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `opencode`, `mermaid`
+**Alternativas (elige una):** `diagram-design`
+
+## `d2`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=diagrams,go,cli,docs-as-code
+
+**Qué es:** Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/d2lang/d2
+
+**Instalación** [+]:
+
+```
+curl -fsSL https://d2lang.com/install.sh | sh -s --
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: mantener diagramas de arquitectura como texto versionado junto al código; generar diagramas desde scripts o documentación técnica
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con el script oficial, escribe `x -> y` en `in.d2` y ejecuta `d2 --watch in.d2 out.svg`.
+**Qué comprobar:** Se abre una vista en el navegador que se actualiza al guardar el archivo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `kroki`, `pandoc`, `logseq`, `claude-code`
+**Alternativas (elige una):** `plantuml`, `mermaid`
 
 ## `diagram-design`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=diagramas,skill,html
@@ -62,6 +94,67 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes explicar cada relación y abrir el HTML
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `playwright`, `claude-code`, `slidev`
+**Alternativas (elige una):** `archify`
+
+## `drawio`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=diagrams,editor,javascript,app
+
+**Qué es:** Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/jgraph/drawio
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/jgraph/drawio/blob/dev/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: dibujar diagramas de arquitectura o redes con iconos de AWS, Azure o GCP; convertir un diagrama Mermaid en uno editable a mano
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Abre app.diagrams.net en el navegador o instala draw.io Desktop, y crea un diagrama desde una plantilla.
+**Qué comprobar:** Guardas un archivo .drawio editable o lo exportas a PNG, SVG o PDF.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `mermaid`, `plantuml`, `kroki`
+
+## `kroki`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=diagrams,api,self-hosted,docker
+
+**Qué es:** Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG.
+**Stack:** JavaScript, package.json, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/yuzutech/kroki
+
+**Instalación** [+]:
+
+```
+docker run -d -p 8000:8000 yuzutech/kroki
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: renderizar diagramas de varios lenguajes en una wiki o generador de documentación; autoalojar el renderizado para no enviar diagramas a servicios públicos
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Ejecuta `docker run -d -p 8000:8000 yuzutech/kroki` y abre `http://localhost:8000/plantuml/svg/` con un diagrama codificado.
+**Qué comprobar:** Obtienes el SVG del diagrama desde tu propio servidor.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `plantuml`, `d2`, `mermaid`, `excalidraw`, `drawio`
 
 ## `marp`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=slides,typescript
@@ -122,8 +215,39 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Escribe un flujo con una decisión y comprueba que sus flechas representan el proceso real
 **Qué comprobar:** Puedes relacionar cada nodo con un paso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `slidev`, `claude-code`, `diagram-design`
-**Alternativas (elige una):** `excalidraw`
+**Combina con:** `slidev`, `claude-code`, `archify`, `marp`, `reveal.js`, `drawio`
+**Alternativas (elige una):** `excalidraw`, `d2`, `plantuml`
+
+## `plantuml`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=diagrams,uml,java,docs-as-code
+
+**Qué es:** Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.
+**Stack:** Java, Dockerfile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/plantuml/plantuml
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/plantuml/plantuml/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: documentar diagramas de secuencia y clases como texto en el repositorio; generar diagramas automáticamente en la documentación técnica
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga el JAR de las releases, escribe un `@startuml` sencillo en `a.puml` y ejecuta `java -jar plantuml.jar a.puml`.
+**Qué comprobar:** Obtienes un PNG con el diagrama.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `kroki`, `claude-code`, `drawio`
+**Alternativas (elige una):** `d2`, `mermaid`
 
 ## `ppt-master`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=slides,python
@@ -220,7 +344,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea dos slides y una nota del orador y prueba navegación y presentación
 **Qué comprobar:** Puedes abrir la presentación y ver las notas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mermaid`, `gsap`, `claude-code`
+**Combina con:** `mermaid`, `gsap`, `claude-code`, `pandoc`
 **Alternativas (elige una):** `slidev`, `marp`
 
 ## `slidev`
@@ -251,5 +375,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea tres diapositivas Markdown y modifica una antes de exportar
 **Qué comprobar:** Puedes comprobar contenido, notas y navegación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mermaid`, `claude-code`, `playwright`
+**Combina con:** `mermaid`, `claude-code`, `playwright`, `diagram-design`
 **Alternativas (elige una):** `marp`, `reveal.js`

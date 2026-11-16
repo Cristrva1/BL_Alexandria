@@ -83,7 +83,7 @@ def test_reenrich_keeps_curated_sections(tmp_path):
 
 
 def test_combination_symmetry_report():
-    """Aviso, no fallo, hasta completar la cobertura del catálogo."""
+    """El informe carga y sus enlaces unidireccionales son todos aceptados (hub o saturado)."""
     import importlib.util
     import warnings
 
@@ -92,6 +92,9 @@ def test_combination_symmetry_report():
     spec.loader.exec_module(module)
     detail = json.loads((ROOT / "INDICE_IA.detalle.json").read_text(encoding="utf8"))
     pairs = module.asymmetries(detail)
-    if pairs:
-        warnings.warn(f"{len(pairs)} combinaciones asimétricas (ver scripts/report_combina_simetria.py)", UserWarning)
     assert all(a != b for a, b in pairs)
+    from repo_intelligence.analysis.combina_policy import classify, combo_map
+
+    violations = classify(combo_map(detail["repos"]))["violation"]
+    if violations:
+        warnings.warn(f"{len(violations)} combinaciones fuera de política (ver scripts/report_combina_simetria.py)", UserWarning)

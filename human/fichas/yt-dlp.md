@@ -30,6 +30,12 @@ Se instala con los binarios oficiales, `pip install -U "yt-dlp[default]"` o gest
 | [whisperX](whisperx.md) | Transcribir el audio descargado. (combinación por arquitectura) | Descarga con `-x` y pasa el audio a WhisperX. |
 | [Fabric](fabric.md) | Extraer transcripciones de YouTube y resumirlas con patrones de Fabric. (combinación por arquitectura) | Instala yt-dlp y usa las utilidades de YouTube de Fabric. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) · [ArchiveBox](archivebox.md) · [Concat](concat.md) · [gallery-dl](gallery-dl.md) · [instaloader](instaloader.md) · [LosslessCut](lossless-cut.md) · [obsidian-second-brain](obsidian-second-brain.md) · [spotDL](spotdl.md) · [VideoLingo](videolingo.md)
+
 **Notas:** Sin alternativas declaradas. Descargar contenido protegido puede infringir derechos de autor o términos de uso.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 2026.10.26 (2026-10-26) · licencia declarada Unlicense (consultado el 2026-11-15).

@@ -4,7 +4,7 @@
 
 Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local.
 
-15 repos · 4 secciones
+21 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -17,9 +17,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Agentes de terminal](#agentes-de-terminal) — 8 repos
-- [Editores y extensiones de código](#editores-y-extensiones-de-código) — 3 repos
-- [Agentes para issues y tareas de ingeniería](#agentes-para-issues-y-tareas-de-ingeniería) — 2 repos
+- [Agentes de terminal](#agentes-de-terminal) — 11 repos
+- [Editores y extensiones de código](#editores-y-extensiones-de-código) — 5 repos
+- [Agentes para issues y tareas de ingeniería](#agentes-para-issues-y-tareas-de-ingeniería) — 3 repos
 - [Interfaces para gestionar sesiones](#interfaces-para-gestionar-sesiones) — 2 repos
 
 ## Agentes de terminal
@@ -28,18 +28,23 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [OpenCode](../fichas/opencode.md) | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. | Tu objetivo encaja con estos ejemplos: Comprender un repositorio nuevo; Planificar una corrección pequeña | API de IA opcional |
 | [Claude Code](../fichas/claude-code.md) | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección | API de IA opcional |
+| [DeepSeek Harness (DSH)](../fichas/deepseek-harness.md) | Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables. | Tu objetivo encaja con estos ejemplos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI | Depende de la ruta elegida |
 | [Codex CLI](../fichas/codex.md) | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. | Tu objetivo encaja con estos ejemplos: Explorar un proyecto; Preparar un cambio y revisar su diff | API de IA opcional |
 | [Gemini CLI](../fichas/gemini-cli.md) | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. | Tu objetivo encaja con estos ejemplos: Estudiar un agente empresarial de Google; Planificar una migración de CLI | API de IA opcional |
 | [Open Interpreter](../fichas/open-interpreter.md) | Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. | Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex | Depende de la ruta elegida |
 | [goose](../fichas/goose.md) | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. | Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP | API de IA opcional |
 | [Aider](../fichas/aider.md) | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. | Tu objetivo encaja con estos ejemplos: Corregir una función pequeña; Programar en pareja desde terminal | API de IA opcional |
+| [Qwen Code](../fichas/qwen-code.md) | Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP. | Tu objetivo encaja con estos ejemplos: pedir desde la terminal cambios y pruebas en un repositorio; usar un modelo local o de Qwen como agente de código sin depender de un único proveedor | API de IA opcional |
 | [MiMo-Code](../fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto | API de IA opcional |
+| [Antigravity CLI](../fichas/antigravity-cli.md) | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. | Tu objetivo encaja con estos ejemplos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes | Sin clave propia de API de IA en la ruta básica |
 
 ## Editores y extensiones de código
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [Zed](../fichas/zed.md) | Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP. | Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP | API de IA opcional |
 | [Cline](../fichas/cline.md) | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. | Tu objetivo encaja con estos ejemplos: Explicar un error de código; Comparar una propuesta antes de editar | API de IA opcional |
+| [Kilo Code](../fichas/kilocode.md) | Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP. | Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos | API de IA necesaria |
 | [openidea](../fichas/openidea.md) | Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes. | Tu objetivo encaja con estos ejemplos: Explorar código con atajos tipo IntelliJ; Probar un editor nativo con plugins | Sin clave propia de API de IA en la ruta básica |
 | [OpenCursor](../fichas/opencursor.md) | Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. | Tu objetivo encaja con estos ejemplos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota | API de IA opcional |
 
@@ -49,6 +54,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [OpenHands](../fichas/openhands.md) | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. | Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería | API de IA opcional |
 | [Open SWE](../fichas/open-swe.md) | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. | Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión | API de IA necesaria |
+| [mini-swe-agent](../fichas/mini-swe-agent.md) | Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench. | Tu objetivo encaja con estos ejemplos: resolver issues de un repositorio de forma autónoma en un contenedor; usar un agente simple como base para investigación o benchmarks | API de IA opcional |
 
 ## Interfaces para gestionar sesiones
 

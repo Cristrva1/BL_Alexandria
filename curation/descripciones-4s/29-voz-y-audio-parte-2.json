@@ -57,6 +57,12 @@
      "id": "ffmpeg",
      "motivo": "Postproceso de audio. (combinación por arquitectura)",
      "orden_instalacion": "Convierte la salida."
+    },
+    {
+     "id": "wan2-2",
+     "motivo": "Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video».",
+     "orden_instalacion": "Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`.",
+     "reciproca_de": "wan2-2"
     }
    ],
    "notas": "Alternativas (elige una): fish-speech, index-tts.",
@@ -130,9 +136,14 @@
      "id": "nemo",
      "motivo": "Servicios NVIDIA integrados.",
      "orden_instalacion": "Configura el servicio NVIDIA."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK.",
+     "orden_instalacion": "Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs."
     }
    ],
-   "notas": "Alternativas (elige una): livekit-agents.",
+   "notas": "Alternativas (elige una): livekit-agents, dograh.",
    "fuentes": [
     "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
     "https://docs.pipecat.ai/getting-started/quickstart"
@@ -166,9 +177,14 @@
      "id": "whisper-cpp",
      "motivo": "STT local. (combinación por arquitectura)",
      "orden_instalacion": "Expón el servidor y úsalo como STT."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "LiveKit Agents documenta un plugin de TTS de ElevenLabs.",
+     "orden_instalacion": "Instala el plugin y define la clave de ElevenLabs."
     }
    ],
-   "notas": "Alternativas (elige una): pipecat.",
+   "notas": "Alternativas (elige una): pipecat, dograh.",
    "fuentes": [
     "https://github.com/livekit/agents/blob/main/README.md"
    ],
@@ -201,6 +217,18 @@
      "id": "remotion",
      "motivo": "Banda sonora para vídeo programático. (combinación por arquitectura)",
      "orden_instalacion": "Usa el audio generado."
+    },
+    {
+     "id": "rubberband",
+     "motivo": "Combinación recíproca: rubberband lo enlaza como «Ajustar duración de audio generado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde rubberband: Procesa la salida.",
+     "reciproca_de": "rubberband"
+    },
+    {
+     "id": "audacity",
+     "motivo": "Combinación recíproca: Audacity lo enlaza como «Los plugins OpenVINO de Intel para Audacity generan y continúan música con MusicGen de AudioCraft».",
+     "orden_instalacion": "Orden indicado desde Audacity: Instala los plugins OpenVINO y los modelos MusicGen; después usa Music Generation.",
+     "reciproca_de": "audacity"
     }
    ],
    "notas": "Sin alternativas declaradas. Pesos no comerciales y dependencias antiguas.",
@@ -270,6 +298,12 @@
      "id": "ffmpeg",
      "motivo": "Convertir el audio. (combinación por arquitectura)",
      "orden_instalacion": "Convierte el formato."
+    },
+    {
+     "id": "short-video-factory",
+     "motivo": "Combinación recíproca: short-video-factory lo enlaza como «Síntesis de voz con Edge TTS».",
+     "orden_instalacion": "Orden indicado desde short-video-factory: Viene integrada en la app.",
+     "reciproca_de": "short-video-factory"
     }
    ],
    "notas": "Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad.",
@@ -305,6 +339,12 @@
      "id": "audiocraft",
      "motivo": "Ajustar duración de audio generado. (combinación por arquitectura)",
      "orden_instalacion": "Procesa la salida."
+    },
+    {
+     "id": "ultimate-vocal-remover",
+     "motivo": "Combinación recíproca: Ultimate Vocal Remover (UVR) lo enlaza como «UVR usa Rubber Band para las funciones de cambio de tiempo y de tono».",
+     "orden_instalacion": "Orden indicado desde Ultimate Vocal Remover (UVR): Instala Rubber Band según el README; después usa las herramientas de tempo y tono.",
+     "reciproca_de": "ultimate-vocal-remover"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -341,7 +381,7 @@
      "orden_instalacion": "Configura un TTS propio."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con pipecat y livekit-agents (solo anotado). Revisa el túnel público y el registro abierto por defecto.",
+   "notas": "Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.",
    "fuentes": [
     "https://github.com/dograh-hq/dograh/blob/main/README.md"
    ],

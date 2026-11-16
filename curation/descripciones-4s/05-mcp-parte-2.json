@@ -22,6 +22,12 @@
      "id": "awesome-mcp-servers",
      "motivo": "Encontrar servidores de la comunidad más allá de las referencias. (combinación por arquitectura)",
      "orden_instalacion": "Consulta también el MCP Registry oficial."
+    },
+    {
+     "id": "opendots",
+     "motivo": "Combinación recíproca: OpenDots lo enlaza como «Servidores MCP de referencia como herramientas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OpenDots: Añade los MCP por Dot.",
+     "reciproca_de": "opendots"
     }
    ],
    "notas": "Sin alternativas declaradas. No son para producción, según el propio README.",
@@ -58,6 +64,24 @@
      "id": "unity-mcp",
      "motivo": "Llevar a Unity los modelos creados en Blender, ambos controlados por agentes. (combinación por arquitectura)",
      "orden_instalacion": "Exporta desde Blender e importa en Unity con MCP for Unity."
+    },
+    {
+     "id": "blender-skills",
+     "motivo": "Combinación recíproca: blender-skills lo enlaza como «Vía de ejecución de las skills en Blender».",
+     "orden_instalacion": "Orden indicado desde blender-skills: Instala y conecta el MCP siguiendo `docs/BLENDER_MCP_SETUP.md`.",
+     "reciproca_de": "blender-skills"
+    },
+    {
+     "id": "dream-loop",
+     "motivo": "Combinación recíproca: dream-loop lo enlaza como «Vía preferida para que el agente controle Blender».",
+     "orden_instalacion": "Orden indicado desde dream-loop: Blender abierto con el complemento del MCP antes de iniciar el bucle.",
+     "reciproca_de": "dream-loop"
+    },
+    {
+     "id": "chatdev",
+     "motivo": "Combinación recíproca: ChatDev lo enlaza como «ChatDev documenta blender-mcp como requisito de su flujo de construcción 3D».",
+     "orden_instalacion": "Orden indicado desde ChatDev: Blender primero, luego blender-mcp, y por último el flujo de ChatDev.",
+     "reciproca_de": "chatdev"
     }
    ],
    "notas": "Sin alternativas declaradas. Revisa los ajustes de telemetría y el uso de servicios 3D de terceros.",
@@ -93,9 +117,15 @@
      "id": "context7",
      "motivo": "Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura)",
      "orden_instalacion": "Instala ambos servidores en el mismo agente."
+    },
+    {
+     "id": "superclaude-framework",
+     "motivo": "Combinación recíproca: SuperClaude_Framework lo enlaza como «MCP opcional de comprensión de código».",
+     "orden_instalacion": "Orden indicado desde SuperClaude_Framework: Mediante airis-mcp-gateway.",
+     "reciproca_de": "superclaude-framework"
     }
    ],
-   "notas": "Alternativas (elige una): codegraph, gitnexus.",
+   "notas": "Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.",
    "fuentes": [
     "https://github.com/oraios/serena/blob/main/README.md",
     "https://oraios.github.io/serena/"
@@ -129,6 +159,12 @@
      "id": "tailwindcss",
      "motivo": "Mapear estilos de Figma a utilidades de Tailwind. (combinación por arquitectura)",
      "orden_instalacion": "Configura los tokens de diseño en Tailwind antes de implementar."
+    },
+    {
+     "id": "design-dna",
+     "motivo": "Combinación recíproca: design-dna lo enlaza como «Usar diseños de Figma como referencia (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde design-dna: Conecta el MCP de Figma antes del análisis.",
+     "reciproca_de": "design-dna"
     }
    ],
    "notas": "Sin alternativas declaradas. El token de Figma da acceso a tus archivos: guárdalo como secreto.",
@@ -161,12 +197,13 @@
      "orden_instalacion": "Carga el grafo en Neo4j y consúltalo con el servidor Cypher."
     },
     {
-     "id": "awesome-mcp-servers",
-     "motivo": "Comparar con otros servidores de bases de datos. (combinación por arquitectura)",
-     "orden_instalacion": "Revisa la sección de bases de datos de la lista."
+     "id": "graphiti",
+     "motivo": "Combinación recíproca: Graphiti lo enlaza como «Explorar y consultar con un agente el grafo guardado en Neo4j (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Graphiti: Usa un usuario de solo lectura para el MCP de Neo4j.",
+     "reciproca_de": "graphiti"
     }
    ],
-   "notas": "Sin alternativas declaradas. Para producción, valora el servidor oficial neo4j/mcp (no catalogado). El servidor Cypher puede escribir: limita permisos.",
+   "notas": "Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos.",
    "fuentes": [
     "https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md",
     "https://github.com/neo4j/mcp"
@@ -200,6 +237,18 @@
      "id": "mcp-inspector",
      "motivo": "Probar los servidores de los ejercicios. (combinación por arquitectura)",
      "orden_instalacion": "Lanza el Inspector contra cada servidor que construyas."
+    },
+    {
+     "id": "ai-agents-for-beginners",
+     "motivo": "Combinación recíproca: AI Agents for Beginners lo enlaza como «Profundizar en MCP, que el curso trata en la lección de protocolos agénticos (enlazado en el README)».",
+     "orden_instalacion": "Orden indicado desde AI Agents for Beginners: Tómalo después de la lección 11.",
+     "reciproca_de": "ai-agents-for-beginners"
+    },
+    {
+     "id": "generative-ai-for-beginners",
+     "motivo": "Combinación recíproca: Generative AI for Beginners lo enlaza como «Curso complementario sobre Model Context Protocol (enlazado en el README)».",
+     "orden_instalacion": "Orden indicado desde Generative AI for Beginners: Tómalo cuando llegues a la parte de herramientas y agentes.",
+     "reciproca_de": "generative-ai-for-beginners"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -328,14 +377,14 @@
      "orden_instalacion": "Añade el endpoint del servidor a la configuración MCP de Gemini CLI."
     },
     {
-     "id": "servers",
-     "motivo": "Comparar con los servidores de referencia del protocolo. (combinación por arquitectura)",
-     "orden_instalacion": "Usa las referencias para aprender y los de Google para tus datos en GCP."
-    },
-    {
      "id": "mcp-use",
      "motivo": "Construir y desplegar un servidor propio siguiendo las guías de Cloud Run. (combinación por arquitectura)",
      "orden_instalacion": "Construye con mcp-use y despliega según la guía."
+    },
+    {
+     "id": "mcp-inspector",
+     "motivo": "Probar con MCP Inspector las herramientas de un servidor remoto de Google o de uno propio desplegado en Cloud Run antes de conectarlo al agente (combinación por arquitectura).",
+     "orden_instalacion": "Habilita el endpoint en Google Cloud (proyecto con facturación e IAM) y conéctalo después al Inspector con sus credenciales."
     }
    ],
    "notas": "Sin alternativas declaradas. Cuidado con los permisos IAM que concedes a agentes.",
@@ -404,6 +453,12 @@
      "id": "blender",
      "motivo": "Crear modelos en Blender y llevarlos a Unity. (combinación por arquitectura)",
      "orden_instalacion": "Exporta FBX/GLB desde Blender e impórtalos en Unity."
+    },
+    {
+     "id": "blender-mcp",
+     "motivo": "Combinación recíproca: Blender MCP lo enlaza como «Llevar a Unity los modelos creados en Blender, ambos controlados por agentes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Blender MCP: Exporta desde Blender e importa en Unity con MCP for Unity.",
+     "reciproca_de": "blender-mcp"
     }
    ],
    "notas": "Sin alternativas declaradas. Usa control de versiones: el agente puede modificar escenas y scripts.",
@@ -440,6 +495,12 @@
      "id": "angr",
      "motivo": "Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura)",
      "orden_instalacion": "Usa angr en scripts aparte sobre el mismo binario."
+    },
+    {
+     "id": "awesome-ai-reverse-engineering",
+     "motivo": "Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Servidor MCP de Ghidra que encabeza la sección de MCP».",
+     "orden_instalacion": "Orden indicado desde awesome-ai-reverse-engineering: Revisa su README e instálalo en Ghidra.",
+     "reciproca_de": "awesome-ai-reverse-engineering"
     }
    ],
    "notas": "Sin alternativas declaradas. Analiza solo software que tengas derecho a analizar.",

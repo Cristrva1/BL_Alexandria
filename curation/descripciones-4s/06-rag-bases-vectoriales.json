@@ -22,6 +22,12 @@
      "id": "langfuse",
      "motivo": "Observar las llamadas a LLM de los flujos (combinación por arquitectura; [DATO NO VERIFICADO: integración nativa]).",
      "orden_instalacion": "Langfuse en marcha con claves de proyecto antes de configurarlo."
+    },
+    {
+     "id": "paddleocr",
+     "motivo": "Combinación recíproca: PaddleOCR lo enlaza como «El README cita RAGFlow entre los proyectos que lo integran».",
+     "orden_instalacion": "Orden indicado desde PaddleOCR: Revisa en RAGFlow qué versión de PaddleOCR usa antes de mezclar instalaciones.",
+     "reciproca_de": "paddleocr"
     }
    ],
    "notas": "Alternativas (elige una): dify, lightrag. El puerto 80 puede chocar con otros servicios web del mismo servidor.",
@@ -69,6 +75,12 @@
      "id": "ragas",
      "motivo": "Evaluación integrada; la API devuelve los contextos recuperados para medir precisión.",
      "orden_instalacion": "Después de tener datos indexados."
+    },
+    {
+     "id": "deeptutor",
+     "motivo": "Combinación recíproca: DeepTutor lo enlaza como «Integración nativa de modelos de rol LightRAG».",
+     "orden_instalacion": "Orden indicado desde DeepTutor: Configura LightRAG desde ajustes.",
+     "reciproca_de": "deeptutor"
     }
    ],
    "notas": "Alternativas (elige una): graphrag, ragflow, pageindex. `lightrag-server` escucha en 0.0.0.0 sin autenticación por defecto: actívala antes de usarlo en red.",
@@ -139,6 +151,24 @@
      "id": "docling",
      "motivo": "Convertir PDF y otros formatos a texto antes del indexado, que espera texto, CSV o JSON (combinación por arquitectura).",
      "orden_instalacion": "Convierte primero y deja los archivos en la carpeta de entrada."
+    },
+    {
+     "id": "graphify",
+     "motivo": "Combinación recíproca: graphify lo enlaza como «Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde graphify: Usa Graphify para el código y GraphRAG para la documentación.",
+     "reciproca_de": "graphify"
+    },
+    {
+     "id": "scrapegraph-ai",
+     "motivo": "Combinación recíproca: Scrapegraph-ai lo enlaza como «Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Scrapegraph-ai: Exporta los resultados como documentos para GraphRAG.",
+     "reciproca_de": "scrapegraph-ai"
+    },
+    {
+     "id": "kotaemon",
+     "motivo": "Combinación recíproca: kotaemon lo enlaza como «kotaemon soporta GraphRAG de Microsoft y nano-GraphRAG para preguntas sobre relaciones entre documentos».",
+     "orden_instalacion": "Orden indicado desde kotaemon: Instala graphrag o nano-graphrag según el README; después elige ese índice.",
+     "reciproca_de": "kotaemon"
     }
    ],
    "notas": "Alternativas (elige una): graphiti, cognee, lightrag. Por su estado de mantenimiento, evalúa lightrag para proyectos nuevos.",
@@ -176,9 +206,15 @@
      "id": "llama-index",
      "motivo": "Integración documentada en la web de Milvus.",
      "orden_instalacion": "Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor."
+    },
+    {
+     "id": "langchain4j",
+     "motivo": "Combinación recíproca: langchain4j lo enlaza como «Almacén vectorial alternativo para volúmenes grandes (módulo oficial)».",
+     "orden_instalacion": "Orden indicado desde langchain4j: Elige uno de los almacenes vectoriales; despliega Milvus y añade su módulo.",
+     "reciproca_de": "langchain4j"
     }
    ],
-   "notas": "Alternativas (elige una): qdrant, chroma.",
+   "notas": "Alternativas (elige una): qdrant, chroma, pgvector.",
    "fuentes": [
     "https://github.com/milvus-io/milvus/blob/master/README.md",
     "https://milvus.io/docs/integrate_with_llamaindex.md"
@@ -288,9 +324,15 @@
      "id": "lightrag",
      "motivo": "PostgreSQL es el backend recomendado para producción en LightRAG.",
      "orden_instalacion": "Activa la extensión antes de arrancar LightRAG con el backend de Postgres."
+    },
+    {
+     "id": "langchain4j",
+     "motivo": "Combinación recíproca: langchain4j lo enlaza como «Embeddings en PostgreSQL mediante el módulo oficial de pgvector».",
+     "orden_instalacion": "Orden indicado desde langchain4j: Habilita la extensión en Postgres y añade `langchain4j-pgvector`.",
+     "reciproca_de": "langchain4j"
     }
    ],
-   "notas": "Alternativas (elige una): qdrant, chroma.",
+   "notas": "Alternativas (elige una): qdrant, chroma, milvus.",
    "fuentes": [
     "https://github.com/pgvector/pgvector/blob/master/README.md",
     "https://supabase.com/docs/guides/database/extensions/pgvector"

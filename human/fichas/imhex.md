@@ -30,6 +30,12 @@ Es una aplicación de escritorio en C++ (Dear ImGui) para Windows, macOS y Linux
 | [radare2](radare2.md) | Combinar el editor visual con el análisis por línea de comandos. (combinación por arquitectura) | Usa ImHex para datos y r2 para código. |
 | [x64dbg](x64dbg.md) | Estudiar volcados de memoria tomados durante la depuración. (combinación por arquitectura) | Vuelca la región en x64dbg y ábrela en ImHex. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dnSpy](dnspy.md) · [ILSpy](ilspy.md) · [raddebugger](raddebugger.md) · [rizin](rizin.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.38.1 (2025-12-21) · licencia declarada GPL-2.0 (consultado el 2026-11-15).

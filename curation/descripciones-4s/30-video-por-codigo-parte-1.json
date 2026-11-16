@@ -62,6 +62,18 @@
      "id": "whisperx",
      "motivo": "Subtítulos sincronizados. (combinación por arquitectura)",
      "orden_instalacion": "Genera marcas por palabra."
+    },
+    {
+     "id": "arcads-claude-code",
+     "motivo": "Combinación recíproca: Arcads AI Video Skill Pack lo enlaza como «Usado para incrustar subtítulos».",
+     "orden_instalacion": "Orden indicado desde Arcads AI Video Skill Pack: Requiere Node.js; se ejecuta con npx bajo demanda.",
+     "reciproca_de": "arcads-claude-code"
+    },
+    {
+     "id": "brag",
+     "motivo": "Combinación recíproca: brag lo enlaza como «Motor de render en el que se basa».",
+     "orden_instalacion": "Orden indicado desde brag: Viene integrado.",
+     "reciproca_de": "brag"
     }
    ],
    "notas": "Alternativas (elige una): remotion, moviepy. Su README compara explícitamente su licencia con la de Remotion.",
@@ -201,6 +213,12 @@
      "id": "hermes-agent",
      "motivo": "Agente compatible.",
      "orden_instalacion": "Registra la skill en Hermes."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "Combinación recíproca: ElevenLabs (SDK de Python) lo enlaza como «video-use pide una clave de ElevenLabs para la voz; el SDK sirve para elegir y probar voces o generar pistas fuera del flujo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ElevenLabs (SDK de Python): Usa la misma clave en ambos y prueba la voz antes de editar.",
+     "reciproca_de": "elevenlabs-python"
     }
    ],
    "notas": "Alternativas (elige una): remotion-superpowers. Depende de ElevenLabs (servicio de pago) para transcribir.",
@@ -269,6 +287,12 @@
      "id": "claude-code",
      "motivo": "Agente anfitrión del plugin. (combinación por arquitectura)",
      "orden_instalacion": "Instala el plugin."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "Combinación recíproca: ElevenLabs (SDK de Python) lo enlaza como «El plugin usa las skills oficiales de ElevenLabs para locución, efectos y música. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ElevenLabs (SDK de Python): Configura la clave de ElevenLabs al instalar el plugin.",
+     "reciproca_de": "elevenlabs-python"
     }
    ],
    "notas": "Alternativas (elige una): openmontage, video-use. Depende de servicios de pago.",
@@ -304,6 +328,11 @@
      "id": "kokoro",
      "motivo": "Narración local sin claves. (combinación por arquitectura)",
      "orden_instalacion": "Configura un TTS local."
+    },
+    {
+     "id": "elevenlabs-python",
+     "motivo": "OpenMontage usa ElevenLabs para TTS premium, música y efectos; su código importa este SDK.",
+     "orden_instalacion": "Añade `ELEVENLABS_API_KEY` al `.env`."
     }
    ],
    "notas": "Alternativas (elige una): remotion-superpowers, moneyprinterturbo.",

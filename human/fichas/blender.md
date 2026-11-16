@@ -30,6 +30,12 @@ Los binarios se descargan de blender.org. Para compilar desde el espejo hay que 
 | [3dviz-pro-max](3dviz-pro-max.md) | Skill de escenas 3D con Blender. | Añade la skill al agente. |
 | [three.js](three-js.md) | Exportar a glTF para la web. (combinación por arquitectura) | Exporta glTF desde Blender. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (22). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[4D-Humans](4d-humans.md) · [awesome-cad](awesome-cad.md) · [Babylon.js](babylonjs.md) · [Bevy](bevy.md) · [blender-skills](blender-skills.md) · [ChatDev](chatdev.md) · [dream-loop](dream-loop.md) · [EasyMocap](easymocap.md) · [filament](filament.md) · [FreeCAD](freecad.md) · [Genesis World](genesis-world.md) · [Godot Engine](godot.md) · [meshoptimizer](meshoptimizer.md) · [ODM](odm.md) · [OpenRV](openrv.md) · [ozz-animation](ozz-animation.md) · [pencil](pencil.md) · [PlayCanvas Engine](playcanvas.md) · [unity-mcp](unity-mcp.md) · [warp](warp.md) · [WebODM](webodm.md) · [WHAM](wham.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

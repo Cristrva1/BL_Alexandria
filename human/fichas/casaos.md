@@ -29,8 +29,9 @@ Se instala con un script en Debian, Ubuntu, Raspberry Pi OS y similares, y requi
 | [server](nextcloud-server.md) | Nube de archivos como app. (combinación por arquitectura) | Instala Nextcloud desde la tienda o como contenedor. |
 | [AdGuardHome](adguardhome.md) | DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura) | Instálalo como app. |
 | [activepieces](activepieces.md) | Automatizaciones en el servidor doméstico. (combinación por arquitectura) | Instálalo como contenedor. |
+| [MasterDnsVPN](masterdnsvpn.md) | Combinación recíproca: MasterDnsVPN lo enlaza como «Gestionar el contenedor en un servidor casero. (combinación por arquitectura)». | Orden indicado desde MasterDnsVPN: Despliega la imagen Docker. |
 
-**Notas:** Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.
+**Notas:** Alternativa (elige una): coolify. Ritmo de releases lento.
 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v0.4.15 (2024-12-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -99,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar
 - **Etiquetas:** `infraestructura` `server` `go`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [coolify](coolify.md) | 66.1k | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. |
 
 ## Enlaces
 

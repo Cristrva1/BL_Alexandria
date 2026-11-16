@@ -141,6 +141,12 @@
      "id": "grafana",
      "motivo": "Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales).",
      "orden_instalacion": "Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Combinación recíproca: Zigbee2MQTT lo enlaza como «Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Zigbee2MQTT: Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT.",
+     "reciproca_de": "zigbee2mqtt"
     }
    ],
    "notas": "Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",
@@ -178,6 +184,12 @@
      "id": "polars",
      "motivo": "Scripts Python de Windmill pueden usar Polars para transformar datos tabulares grandes en los workers, con dependencias resueltas por uv (combinación por arquitectura).",
      "orden_instalacion": "Declara polars como dependencia del script; vigila la memoria del worker con archivos grandes."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Combinación recíproca: coolify lo enlaza como «Plantilla de servicio oficial de Coolify para Windmill».",
+     "orden_instalacion": "Orden indicado desde coolify: Coolify primero; luego despliega la plantilla `windmill`.",
+     "reciproca_de": "coolify"
     }
    ],
    "notas": "Alternativas (elige una): kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.",
@@ -235,63 +247,6 @@
     "license": "Apache-2.0",
     "primary_language": "TypeScript",
     "latest_release": "v4.8.5 (2026-11-12)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "self-hosted-ai-starter-kit": {
-   "que_es": "Plantilla de Docker Compose de código abierto (Apache 2.0) mantenida por el equipo de n8n para levantar en minutos un entorno local de IA y low-code. No es una aplicación nueva: reúne servicios existentes ya configurados para funcionar juntos.",
-   "que_hace": "Arranca n8n autoalojado junto con Ollama para modelos locales, Qdrant como base vectorial y PostgreSQL. Sirve para prototipar agentes de IA que agendan citas, resumir PDF de la empresa sin enviar datos fuera, crear bots de Slack más útiles o analizar documentos financieros privados a bajo coste. Es un punto de partida para pruebas, no un despliegue endurecido para producción.",
-   "como_lo_hace": "Se clona el repositorio, se copia `.env.example` a `.env` (cambiando secretos y contraseñas) y se ejecuta `docker compose` con el perfil adecuado: `gpu-nvidia`, `gpu-amd` en Linux o solo CPU. En Mac con Apple Silicon la GPU no se expone a Docker, así que se recomienda CPU o ejecutar Ollama de forma nativa y ajustar `OLLAMA_HOST`. Incluye una carpeta compartida para que los flujos de n8n lean archivos locales y un flujo de demostración.",
-   "combina_con": [
-    {
-     "id": "open-webui",
-     "motivo": "Añade una interfaz de chat que reutiliza el Ollama del kit para conversar con los mismos modelos (combinación por arquitectura).",
-     "orden_instalacion": "Kit primero; inicia Open WebUI con `OLLAMA_BASE_URL` apuntando al Ollama del kit y en un puerto distinto de 5678."
-    },
-    {
-     "id": "docling",
-     "motivo": "Convierte PDF y documentos de oficina en Markdown limpio antes de vectorizarlos en el Qdrant del kit (combinación por arquitectura).",
-     "orden_instalacion": "Instala Docling o docling-serve aparte y llámalo desde n8n por HTTP o desde un script."
-    },
-    {
-     "id": "awesome-n8n-templates",
-     "motivo": "Colección de flujos importables para aprender patrones sobre el n8n del kit.",
-     "orden_instalacion": "Después de levantar el kit; importa, revisa credenciales y prueba cada plantilla antes de activarla."
-    }
-   ],
-   "notas": "Ya incluye n8n, Ollama, Qdrant y PostgreSQL: no instales esos servicios por separado en la misma máquina o chocarán los puertos (5678, 11434, 6333, 5432). Cambia todas las contraseñas de `.env`.",
-   "fuentes": [
-    "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "n8n-io/self-hosted-ai-starter-kit",
-    "archived": false,
-    "pushed_at": "2026-11-12",
-    "license": "Apache-2.0",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "awesome-n8n-templates": {
-   "que_es": "Colección curada por la comunidad de más de 280 archivos de plantillas de flujo para n8n, actualizada en 2026. No es software ejecutable sino material de referencia; su licencia no está declarada de forma estándar en GitHub y el README contiene enlaces de afiliado.",
-   "que_hace": "Ofrece flujos listos para importar organizados por plataforma: Gmail y email, Telegram, Google Drive y Sheets, WordPress, PDF y documentos, Discord, bases de datos, DevOps, Airtable, Notion, Slack, OpenAI y LLM, WhatsApp y redes sociales. Sirve para aprender patrones de n8n o partir de un ejemplo en lugar de empezar desde cero.",
-   "como_lo_hace": "Cada plantilla es un archivo JSON de flujo de n8n que se importa con «Workflows → Import from File»; después hay que configurar las credenciales de cada servicio y probar el flujo. El propio README advierte que debes revisar, configurar y probar cada flujo antes de usarlo.",
-   "combina_con": [
-    {
-     "id": "self-hosted-ai-starter-kit",
-     "motivo": "Entorno local listo (n8n, Ollama, Qdrant) para probar las plantillas de IA sin pagar APIs, cambiando el nodo del modelo por Ollama (combinación por arquitectura).",
-     "orden_instalacion": "Levanta el kit y después importa las plantillas."
-    }
-   ],
-   "notas": "Las plantillas son de terceros: revisa qué datos envían y a qué servicios antes de conectar credenciales reales.",
-   "fuentes": [
-    "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md",
-    "https://github.com/czlonkowski/n8n-mcp/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "enescingoz/awesome-n8n-templates",
-    "archived": false,
-    "pushed_at": "2026-09-12",
-    "license": "no estándar (NOASSERTION)",
     "checked_at": "2026-11-15"
    }
   },
@@ -458,14 +413,13 @@
     {
      "id": "typebot",
      "motivo": "Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura).",
-     "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de n8n."
+     "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill."
     }
    ],
    "notas": "Alternativas (elige una): evolution-api, whatsapp-web-js, baileys. Es una conexión no oficial: evita mensajes masivos o no solicitados. Protege la API con clave antes de exponer el puerto 3000.",
    "fuentes": [
     "https://github.com/devlikeapro/waha/blob/core/README.md",
     "https://waha.devlike.pro/docs/how-to/engines/",
-    "https://waha.devlike.pro/docs/integrations/n8n/",
     "https://waha.devlike.pro/docs/apps/chatwoot/"
    ],
    "github": {
@@ -531,6 +485,12 @@
      "id": "openwa",
      "motivo": "Plugin oficial de OpenWA para responder mensajes de WhatsApp con un bot de Typebot.",
      "orden_instalacion": "Typebot publicado y después el plugin en OpenWA."
+    },
+    {
+     "id": "waha",
+     "motivo": "Combinación recíproca: WAHA lo enlaza como «Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WAHA: Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill.",
+     "reciproca_de": "waha"
     }
    ],
    "notas": "Revisa la FSL antes de ofrecer Typebot como servicio a terceros.",
@@ -611,7 +571,6 @@
    "notas": "Alternativas (elige una): appsmith, budibase.",
    "fuentes": [
     "https://github.com/nocodb/nocodb/blob/develop/README.md",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb/",
     "https://www.activepieces.com/pieces/nocodb",
     "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/nocodb",
     "https://github.com/coollabsio/coolify/tree/main/templates/compose"

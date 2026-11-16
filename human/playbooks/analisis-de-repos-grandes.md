@@ -46,8 +46,9 @@ Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con 
 ## 🔁 Variantes
 
 - En lugar de [Repomix](../fichas/repomix.md): [GitNexus](../fichas/gitnexus.md)
-- En lugar de [codegraph](../fichas/codegraph.md): [codebase-memory-mcp](../fichas/codebase-memory-mcp.md), [Serena](../fichas/serena.md)
+- En lugar de [codegraph](../fichas/codegraph.md): [codebase-memory-mcp](../fichas/codebase-memory-mcp.md), [Serena](../fichas/serena.md), [GitNexus](../fichas/gitnexus.md)
 - En lugar de [GitNexus](../fichas/gitnexus.md): [Repomix](../fichas/repomix.md), [codebase-memory-mcp](../fichas/codebase-memory-mcp.md), [Serena](../fichas/serena.md)
+- En lugar de [graphify](../fichas/graphify.md): [codegraph](../fichas/codegraph.md), [GitNexus](../fichas/gitnexus.md), [Serena](../fichas/serena.md)
 - En lugar de [Claude Code](../fichas/claude-code.md): [Codex CLI](../fichas/codex.md), [Gemini CLI](../fichas/gemini-cli.md), [OpenCode](../fichas/opencode.md)
 
 ---
