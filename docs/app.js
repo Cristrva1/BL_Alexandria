@@ -577,6 +577,7 @@
     for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="area"?(area?.title||value):key==="topic"?(topic?.title||value):key==="cat"?catName(value):key==="sub"?(category?.subs.find(s=>s.key===value)?.title||value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):key==="complejidad"?`Nivel ${value} · ${({1:"Básico",2:"Intermedio",3:"Avanzado",4:"Experto"})[value]||""}`:value;addChip(key,text);}
     const groups=catalog.labels;
     return `${area?`<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a> / <a href="#/area/${esc(area.id)}">${esc(area.title)}</a>${topic?` / <span aria-current="page">${esc(topic.title)}</span>`:""}</nav>`:""}<header class="page-head${area?" tone":""}"${area?areaTone(area.id):""}><div class="title-row">${area?`<span class="icon-tile big" aria-hidden="true">${areaIcon(area.id)}</span>`:""}<h1>${esc(topic?.title||area?.title||goal?.title||"Busca una herramienta")}</h1></div><p class="lede">${esc(topic?.description||area?.description||goal?.description||"Busca una tarea, un nombre o una tecnología. Después filtra por área, acceso y requisitos.")}</p>${area&&!topic?`<div class="chip-row">${area.topics.map(t=>`<a class="chip" href="${topicHref(area,t)}">${esc(t.title)} <span class="meta">${t.count}</span></a>`).join("")}</div>`:""}</header>
+${llmDownload(category,params.get("sub"))}
       <search><form class="library-filters" id="filters" action="#/explorar" method="get">
         <div class="query-field"><label for="q">Buscar en la biblioteca</label><input id="q" type="search" name="q" placeholder="Por ejemplo: transcribir audio" value="${esc(params.get("q")||"")}" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></div>
         <div class="filter-grid">
@@ -598,6 +599,15 @@
       <div class="filters">${chips.join("")}${chips.length?'<a href="#/explorar">Limpiar todo</a>':""}</div>
       <p class="live" id="count" role="status">${items.length} resultados. Las estrellas no determinan la adecuación.</p>
       <div id="results" class="repo-list">${resultsMarkup(items,params)}</div>`;
+  }
+
+  function llmDownload(category, subKey) {
+    if(!category)return "";
+    const sub=(category.subs||[]).find(s=>s.key===subKey);
+    const file=(catalog.llm||{})[sub?`${category.num}/${sub.key}`:String(category.num)];
+    if(!file)return "";
+    const parts=(file.parts||[]).length?` <span class="meta">Partes: ${file.parts.map((p,i)=>`<a href="${esc(p)}" download>${i+1}</a>`).join(" · ")}</span>`:"";
+    return `<aside class="section llm-download" aria-label="Descarga para agentes"><a class="btn" href="${esc(file.file)}" download>Descargar para agentes (Markdown)</a> <span class="meta">${esc(sub?sub.title:category.title)} · ~${Math.max(1,Math.round(file.tokens/1000))}k tokens. Para AGENTS.md o CLAUDE.md: el agente propone opciones y no instala nada sin tu aprobación.</span>${parts}</aside>`;
   }
 
   function accessSection(item) {

@@ -1,0 +1,1372 @@
+{
+ "fecha": "2026-11-16",
+ "max_tokens": 25000,
+ "estimacion": "caracteres / 3.5",
+ "archivos": [
+  {
+   "cat": 1,
+   "sub": "motores",
+   "titulo": "Motores de workflow y automatización",
+   "repos": 11,
+   "archivo": "categoria-1-motores.md",
+   "caracteres": 21701,
+   "tokens_estimados": 6201
+  },
+  {
+   "cat": 1,
+   "sub": "internas",
+   "titulo": "Apps internas y bases de datos no-code",
+   "repos": 7,
+   "archivo": "categoria-1-internas.md",
+   "caracteres": 15961,
+   "tokens_estimados": 4561
+  },
+  {
+   "cat": 1,
+   "sub": null,
+   "titulo": "Automatizar procesos y crear herramientas internas",
+   "repos": 18,
+   "archivo": "categoria-1.md",
+   "caracteres": 34911,
+   "tokens_estimados": 9975
+  },
+  {
+   "cat": 2,
+   "sub": "catalogos",
+   "titulo": "Catálogos y marketplaces de skills",
+   "repos": 13,
+   "archivo": "categoria-2-catalogos.md",
+   "caracteres": 26077,
+   "tokens_estimados": 7451
+  },
+  {
+   "cat": 2,
+   "sub": "metodologia",
+   "titulo": "Metodologías y harness para agentes de código",
+   "repos": 17,
+   "archivo": "categoria-2-metodologia.md",
+   "caracteres": 32309,
+   "tokens_estimados": 9232
+  },
+  {
+   "cat": 2,
+   "sub": null,
+   "titulo": "Skills, plugins y métodos para agentes",
+   "repos": 30,
+   "archivo": "categoria-2.md",
+   "caracteres": 55806,
+   "tokens_estimados": 15945
+  },
+  {
+   "cat": 3,
+   "sub": "py",
+   "titulo": "Frameworks de agentes en Python",
+   "repos": 20,
+   "archivo": "categoria-3-py.md",
+   "caracteres": 35335,
+   "tokens_estimados": 10096
+  },
+  {
+   "cat": 3,
+   "sub": "ts",
+   "titulo": "Frameworks en TypeScript y multi-lenguaje",
+   "repos": 5,
+   "archivo": "categoria-3-ts.md",
+   "caracteres": 11247,
+   "tokens_estimados": 3214
+  },
+  {
+   "cat": 3,
+   "sub": "visual",
+   "titulo": "Builders visuales y plataformas de agentes",
+   "repos": 4,
+   "archivo": "categoria-3-visual.md",
+   "caracteres": 10351,
+   "tokens_estimados": 2958
+  },
+  {
+   "cat": 3,
+   "sub": "experimentos",
+   "titulo": "Simulación, evolución y debate entre modelos",
+   "repos": 5,
+   "archivo": "categoria-3-experimentos.md",
+   "caracteres": 11544,
+   "tokens_estimados": 3299
+  },
+  {
+   "cat": 3,
+   "sub": null,
+   "titulo": "Construir agentes y coordinar equipos de IA",
+   "repos": 34,
+   "archivo": "categoria-3.md",
+   "caracteres": 60040,
+   "tokens_estimados": 17155
+  },
+  {
+   "cat": 4,
+   "sub": "crawlers",
+   "titulo": "Crawlers y extracción para IA",
+   "repos": 11,
+   "archivo": "categoria-4-crawlers.md",
+   "caracteres": 20062,
+   "tokens_estimados": 5733
+  },
+  {
+   "cat": 4,
+   "sub": "llm",
+   "titulo": "Scraping guiado por LLM",
+   "repos": 3,
+   "archivo": "categoria-4-llm.md",
+   "caracteres": 8048,
+   "tokens_estimados": 2300
+  },
+  {
+   "cat": 4,
+   "sub": "busqueda",
+   "titulo": "Búsqueda, monitoreo y research web",
+   "repos": 10,
+   "archivo": "categoria-4-busqueda.md",
+   "caracteres": 17625,
+   "tokens_estimados": 5036
+  },
+  {
+   "cat": 4,
+   "sub": "social",
+   "titulo": "Redes sociales y descarga de medios",
+   "repos": 4,
+   "archivo": "categoria-4-social.md",
+   "caracteres": 8553,
+   "tokens_estimados": 2444
+  },
+  {
+   "cat": 4,
+   "sub": null,
+   "titulo": "Buscar, extraer y monitorear información web",
+   "repos": 28,
+   "archivo": "categoria-4.md",
+   "caracteres": 45956,
+   "tokens_estimados": 13131
+  },
+  {
+   "cat": 5,
+   "sub": "sdk",
+   "titulo": "SDKs y frameworks para crear MCP",
+   "repos": 5,
+   "archivo": "categoria-5-sdk.md",
+   "caracteres": 10545,
+   "tokens_estimados": 3013
+  },
+  {
+   "cat": 5,
+   "sub": "servidores",
+   "titulo": "Servidores MCP destacados",
+   "repos": 15,
+   "archivo": "categoria-5-servidores.md",
+   "caracteres": 27230,
+   "tokens_estimados": 7781
+  },
+  {
+   "cat": 5,
+   "sub": "directorios",
+   "titulo": "Directorios, clientes y aprendizaje",
+   "repos": 5,
+   "archivo": "categoria-5-directorios.md",
+   "caracteres": 10158,
+   "tokens_estimados": 2903
+  },
+  {
+   "cat": 5,
+   "sub": null,
+   "titulo": "Conectar herramientas con MCP",
+   "repos": 25,
+   "archivo": "categoria-5.md",
+   "caracteres": 42457,
+   "tokens_estimados": 12131
+  },
+  {
+   "cat": 6,
+   "sub": "memoria",
+   "titulo": "Memoria persistente para agentes",
+   "repos": 11,
+   "archivo": "categoria-6-memoria.md",
+   "caracteres": 21614,
+   "tokens_estimados": 6176
+  },
+  {
+   "cat": 6,
+   "sub": "rag",
+   "titulo": "RAG y motores de conocimiento",
+   "repos": 9,
+   "archivo": "categoria-6-rag.md",
+   "caracteres": 18010,
+   "tokens_estimados": 5146
+  },
+  {
+   "cat": 6,
+   "sub": "vectores",
+   "titulo": "Bases vectoriales y búsqueda semántica",
+   "repos": 8,
+   "archivo": "categoria-6-vectores.md",
+   "caracteres": 15660,
+   "tokens_estimados": 4475
+  },
+  {
+   "cat": 6,
+   "sub": null,
+   "titulo": "Memoria, RAG y búsqueda de conocimiento",
+   "repos": 28,
+   "archivo": "categoria-6.md",
+   "caracteres": 49771,
+   "tokens_estimados": 14221
+  },
+  {
+   "cat": 7,
+   "sub": "codigo",
+   "titulo": "Entender y empaquetar código para agentes",
+   "repos": 7,
+   "archivo": "categoria-7-codigo.md",
+   "caracteres": 14665,
+   "tokens_estimados": 4191
+  },
+  {
+   "cat": 7,
+   "sub": "calidad",
+   "titulo": "Calidad, seguridad y benchmarks de código",
+   "repos": 8,
+   "archivo": "categoria-7-calidad.md",
+   "caracteres": 13809,
+   "tokens_estimados": 3946
+  },
+  {
+   "cat": 7,
+   "sub": "herramientas",
+   "titulo": "CLIs y SDKs de desarrollo",
+   "repos": 5,
+   "archivo": "categoria-7-herramientas.md",
+   "caracteres": 9609,
+   "tokens_estimados": 2746
+  },
+  {
+   "cat": 7,
+   "sub": null,
+   "titulo": "Entender código y comprobar su calidad",
+   "repos": 20,
+   "archivo": "categoria-7.md",
+   "caracteres": 32487,
+   "tokens_estimados": 9283
+  },
+  {
+   "cat": 8,
+   "sub": "motores",
+   "titulo": "Motores para correr modelos en local",
+   "repos": 13,
+   "archivo": "categoria-8-motores.md",
+   "caracteres": 23266,
+   "tokens_estimados": 6648
+  },
+  {
+   "cat": 8,
+   "sub": "chats",
+   "titulo": "Interfaces de chat auto-hospedadas",
+   "repos": 9,
+   "archivo": "categoria-8-chats.md",
+   "caracteres": 18754,
+   "tokens_estimados": 5359
+  },
+  {
+   "cat": 8,
+   "sub": "workspaces",
+   "titulo": "Workspaces privados y segundos cerebros",
+   "repos": 5,
+   "archivo": "categoria-8-workspaces.md",
+   "caracteres": 11345,
+   "tokens_estimados": 3242
+  },
+  {
+   "cat": 8,
+   "sub": "notebooklm",
+   "titulo": "NotebookLM: alternativas y clientes",
+   "repos": 4,
+   "archivo": "categoria-8-notebooklm.md",
+   "caracteres": 9538,
+   "tokens_estimados": 2726
+  },
+  {
+   "cat": 8,
+   "sub": null,
+   "titulo": "Chats, modelos locales y espacios privados",
+   "repos": 31,
+   "archivo": "categoria-8.md",
+   "caracteres": 54529,
+   "tokens_estimados": 15580
+  },
+  {
+   "cat": 9,
+   "sub": "componentes",
+   "titulo": "Componentes, iconos y sistemas de diseño",
+   "repos": 14,
+   "archivo": "categoria-9-componentes.md",
+   "caracteres": 24010,
+   "tokens_estimados": 6861
+  },
+  {
+   "cat": 9,
+   "sub": "estilos",
+   "titulo": "CSS y estilos",
+   "repos": 4,
+   "archivo": "categoria-9-estilos.md",
+   "caracteres": 8356,
+   "tokens_estimados": 2388
+  },
+  {
+   "cat": 9,
+   "sub": "diseno",
+   "titulo": "Diseño visual, canvas y builders",
+   "repos": 6,
+   "archivo": "categoria-9-diseno.md",
+   "caracteres": 13092,
+   "tokens_estimados": 3741
+  },
+  {
+   "cat": 9,
+   "sub": "ia-ui",
+   "titulo": "UI generada con IA y frontends para agentes",
+   "repos": 8,
+   "archivo": "categoria-9-ia-ui.md",
+   "caracteres": 15725,
+   "tokens_estimados": 4493
+  },
+  {
+   "cat": 9,
+   "sub": null,
+   "titulo": "Diseñar y construir interfaces web",
+   "repos": 32,
+   "archivo": "categoria-9.md",
+   "caracteres": 52907,
+   "tokens_estimados": 15117
+  },
+  {
+   "cat": 10,
+   "sub": "producto",
+   "titulo": "Analítica web y de producto",
+   "repos": 4,
+   "archivo": "categoria-10-producto.md",
+   "caracteres": 9117,
+   "tokens_estimados": 2605
+  },
+  {
+   "cat": 10,
+   "sub": "bi",
+   "titulo": "BI, dashboards y chat con datos",
+   "repos": 6,
+   "archivo": "categoria-10-bi.md",
+   "caracteres": 12347,
+   "tokens_estimados": 3528
+  },
+  {
+   "cat": 10,
+   "sub": "graficos",
+   "titulo": "Librerías de gráficos",
+   "repos": 5,
+   "archivo": "categoria-10-graficos.md",
+   "caracteres": 9983,
+   "tokens_estimados": 2853
+  },
+  {
+   "cat": 10,
+   "sub": "recursos",
+   "titulo": "Recursos y casos de uso",
+   "repos": 2,
+   "archivo": "categoria-10-recursos.md",
+   "caracteres": 5810,
+   "tokens_estimados": 1661
+  },
+  {
+   "cat": 10,
+   "sub": "osint",
+   "titulo": "Inteligencia de fuentes abiertas y mapas",
+   "repos": 7,
+   "archivo": "categoria-10-osint.md",
+   "caracteres": 14359,
+   "tokens_estimados": 4103
+  },
+  {
+   "cat": 10,
+   "sub": "geoespacial",
+   "titulo": "Fotogrametría y mapas desde imágenes",
+   "repos": 7,
+   "archivo": "categoria-10-geoespacial.md",
+   "caracteres": 13218,
+   "tokens_estimados": 3777
+  },
+  {
+   "cat": 10,
+   "sub": null,
+   "titulo": "Dashboards, analítica y mapas",
+   "repos": 31,
+   "archivo": "categoria-10.md",
+   "caracteres": 50826,
+   "tokens_estimados": 14522
+  },
+  {
+   "cat": 11,
+   "sub": "interfaces",
+   "titulo": "Interfaces para generar imágenes",
+   "repos": 3,
+   "archivo": "categoria-11-interfaces.md",
+   "caracteres": 7380,
+   "tokens_estimados": 2109
+  },
+  {
+   "cat": 11,
+   "sub": "modelos",
+   "titulo": "Modelos, librerías y control",
+   "repos": 2,
+   "archivo": "categoria-11-modelos.md",
+   "caracteres": 6346,
+   "tokens_estimados": 1814
+  },
+  {
+   "cat": 11,
+   "sub": "edicion",
+   "titulo": "Restauración, upscaling y edición",
+   "repos": 5,
+   "archivo": "categoria-11-edicion.md",
+   "caracteres": 10708,
+   "tokens_estimados": 3060
+  },
+  {
+   "cat": 11,
+   "sub": null,
+   "titulo": "Generar y editar imágenes con IA",
+   "repos": 10,
+   "archivo": "categoria-11.md",
+   "caracteres": 18758,
+   "tokens_estimados": 5360
+  },
+  {
+   "cat": 12,
+   "sub": "edicion",
+   "titulo": "Edición, grabación y subtítulos",
+   "repos": 11,
+   "archivo": "categoria-12-edicion.md",
+   "caracteres": 19505,
+   "tokens_estimados": 5573
+  },
+  {
+   "cat": 12,
+   "sub": "generativo",
+   "titulo": "Video generativo y pipelines automáticos",
+   "repos": 8,
+   "archivo": "categoria-12-generativo.md",
+   "caracteres": 17473,
+   "tokens_estimados": 4993
+  },
+  {
+   "cat": 12,
+   "sub": null,
+   "titulo": "Editar, grabar y generar video",
+   "repos": 19,
+   "archivo": "categoria-12.md",
+   "caracteres": 34245,
+   "tokens_estimados": 9785
+  },
+  {
+   "cat": 13,
+   "sub": "conversion",
+   "titulo": "Conversión de documentos para IA",
+   "repos": 9,
+   "archivo": "categoria-13-conversion.md",
+   "caracteres": 17833,
+   "tokens_estimados": 5096
+  },
+  {
+   "cat": 13,
+   "sub": "ocr",
+   "titulo": "OCR",
+   "repos": 7,
+   "archivo": "categoria-13-ocr.md",
+   "caracteres": 14253,
+   "tokens_estimados": 4073
+  },
+  {
+   "cat": 13,
+   "sub": "pdf",
+   "titulo": "Herramientas PDF",
+   "repos": 5,
+   "archivo": "categoria-13-pdf.md",
+   "caracteres": 11604,
+   "tokens_estimados": 3316
+  },
+  {
+   "cat": 13,
+   "sub": "gestion",
+   "titulo": "Gestión y archivo de documentos",
+   "repos": 1,
+   "archivo": "categoria-13-gestion.md",
+   "caracteres": 4428,
+   "tokens_estimados": 1266
+  },
+  {
+   "cat": 13,
+   "sub": null,
+   "titulo": "PDF, OCR y procesamiento de documentos",
+   "repos": 22,
+   "archivo": "categoria-13.md",
+   "caracteres": 39787,
+   "tokens_estimados": 11368
+  },
+  {
+   "cat": 14,
+   "sub": "agentes",
+   "titulo": "Agentes de investigación financiera",
+   "repos": 8,
+   "archivo": "categoria-14-agentes.md",
+   "caracteres": 15988,
+   "tokens_estimados": 4569
+  },
+  {
+   "cat": 14,
+   "sub": "cuant",
+   "titulo": "Modelos y backtesting cuantitativo",
+   "repos": 8,
+   "archivo": "categoria-14-cuant.md",
+   "caracteres": 15445,
+   "tokens_estimados": 4413
+  },
+  {
+   "cat": 14,
+   "sub": "bots",
+   "titulo": "Bots y conexiones a exchanges",
+   "repos": 6,
+   "archivo": "categoria-14-bots.md",
+   "caracteres": 12245,
+   "tokens_estimados": 3499
+  },
+  {
+   "cat": 14,
+   "sub": "aprender",
+   "titulo": "Ejemplos y aprendizaje",
+   "repos": 1,
+   "archivo": "categoria-14-aprender.md",
+   "caracteres": 4421,
+   "tokens_estimados": 1264
+  },
+  {
+   "cat": 14,
+   "sub": null,
+   "titulo": "Investigar finanzas y mercados",
+   "repos": 23,
+   "archivo": "categoria-14.md",
+   "caracteres": 39701,
+   "tokens_estimados": 11344
+  },
+  {
+   "cat": 15,
+   "sub": "notas",
+   "titulo": "Notas, bóvedas y conocimiento personal",
+   "repos": 19,
+   "archivo": "categoria-15-notas.md",
+   "caracteres": 32337,
+   "tokens_estimados": 9240
+  },
+  {
+   "cat": 15,
+   "sub": "archivos",
+   "titulo": "Sincronización y gestión de archivos",
+   "repos": 4,
+   "archivo": "categoria-15-archivos.md",
+   "caracteres": 9106,
+   "tokens_estimados": 2602
+  },
+  {
+   "cat": 15,
+   "sub": "privacidad",
+   "titulo": "Credenciales y privacidad",
+   "repos": 10,
+   "archivo": "categoria-15-privacidad.md",
+   "caracteres": 15923,
+   "tokens_estimados": 4550
+  },
+  {
+   "cat": 15,
+   "sub": "lectura",
+   "titulo": "Libros, podcasts y bibliotecas personales",
+   "repos": 4,
+   "archivo": "categoria-15-lectura.md",
+   "caracteres": 8541,
+   "tokens_estimados": 2441
+  },
+  {
+   "cat": 15,
+   "sub": "domotica",
+   "titulo": "Automatización del hogar",
+   "repos": 4,
+   "archivo": "categoria-15-domotica.md",
+   "caracteres": 8529,
+   "tokens_estimados": 2437
+  },
+  {
+   "cat": 15,
+   "sub": "personal",
+   "titulo": "Herramientas y organización personal",
+   "repos": 8,
+   "archivo": "categoria-15-personal.md",
+   "caracteres": 15463,
+   "tokens_estimados": 4419
+  },
+  {
+   "cat": 15,
+   "sub": "aprendizaje",
+   "titulo": "Aprendizaje asistido",
+   "repos": 1,
+   "archivo": "categoria-15-aprendizaje.md",
+   "caracteres": 4568,
+   "tokens_estimados": 1306
+  },
+  {
+   "cat": 15,
+   "sub": null,
+   "titulo": "Organizar notas, archivos y servicios personales",
+   "repos": 50,
+   "archivo": "categoria-15.md",
+   "caracteres": 77653,
+   "tokens_estimados": 22187
+  },
+  {
+   "cat": 16,
+   "sub": "reversing",
+   "titulo": "Ingeniería inversa y formatos binarios",
+   "repos": 11,
+   "archivo": "categoria-16-reversing.md",
+   "caracteres": 18179,
+   "tokens_estimados": 5195
+  },
+  {
+   "cat": 16,
+   "sub": "depuracion",
+   "titulo": "Depuración e inspección de procesos",
+   "repos": 4,
+   "archivo": "categoria-16-depuracion.md",
+   "caracteres": 8479,
+   "tokens_estimados": 2423
+  },
+  {
+   "cat": 16,
+   "sub": "pruebas",
+   "titulo": "Tráfico, rendimiento y pruebas",
+   "repos": 22,
+   "archivo": "categoria-16-pruebas.md",
+   "caracteres": 30531,
+   "tokens_estimados": 8724
+  },
+  {
+   "cat": 16,
+   "sub": "reconocimiento",
+   "titulo": "Reconocimiento y superficie de ataque",
+   "repos": 9,
+   "archivo": "categoria-16-reconocimiento.md",
+   "caracteres": 13421,
+   "tokens_estimados": 3835
+  },
+  {
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "titulo": "Explotación, C2 y post-explotación",
+   "repos": 10,
+   "archivo": "categoria-16-explotacion-c2.md",
+   "caracteres": 15371,
+   "tokens_estimados": 4392
+  },
+  {
+   "cat": 16,
+   "sub": "ad-interno",
+   "titulo": "Active Directory y red interna",
+   "repos": 8,
+   "archivo": "categoria-16-ad-interno.md",
+   "caracteres": 12345,
+   "tokens_estimados": 3528
+  },
+  {
+   "cat": 16,
+   "sub": "deteccion",
+   "titulo": "Detección, SIEM e IDS",
+   "repos": 13,
+   "archivo": "categoria-16-deteccion.md",
+   "caracteres": 17241,
+   "tokens_estimados": 4927
+  },
+  {
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "titulo": "Nube, contenedores e IaC",
+   "repos": 11,
+   "archivo": "categoria-16-nube-contenedores.md",
+   "caracteres": 14317,
+   "tokens_estimados": 4091
+  },
+  {
+   "cat": 16,
+   "sub": "agentes",
+   "titulo": "Análisis y pruebas con agentes",
+   "repos": 5,
+   "archivo": "categoria-16-agentes.md",
+   "caracteres": 11844,
+   "tokens_estimados": 3385
+  },
+  {
+   "cat": 16,
+   "sub": "defensa",
+   "titulo": "Protección y verificación de software",
+   "repos": 3,
+   "archivo": "categoria-16-defensa.md",
+   "caracteres": 7481,
+   "tokens_estimados": 2138
+  },
+  {
+   "cat": 16,
+   "sub": "referencias",
+   "titulo": "Directorios y aprendizaje",
+   "repos": 6,
+   "archivo": "categoria-16-referencias.md",
+   "caracteres": 10690,
+   "tokens_estimados": 3055
+  },
+  {
+   "cat": 16,
+   "sub": "skills",
+   "titulo": "Skills de análisis y seguridad",
+   "repos": 4,
+   "archivo": "categoria-16-skills.md",
+   "caracteres": 10464,
+   "tokens_estimados": 2990
+  },
+  {
+   "cat": 16,
+   "sub": "ir-forense",
+   "titulo": "Respuesta a incidentes y forense",
+   "repos": 5,
+   "archivo": "categoria-16-ir-forense.md",
+   "caracteres": 8483,
+   "tokens_estimados": 2424
+  },
+  {
+   "cat": 16,
+   "sub": "inteligencia-amenazas",
+   "titulo": "Inteligencia de amenazas",
+   "repos": 2,
+   "archivo": "categoria-16-inteligencia-amenazas.md",
+   "caracteres": 5398,
+   "tokens_estimados": 1543
+  },
+  {
+   "cat": 16,
+   "sub": null,
+   "titulo": "Analizar software y comprobar su seguridad",
+   "repos": 113,
+   "archivo": "categoria-16.md",
+   "partes": [
+    "categoria-16-parte-1.md",
+    "categoria-16-parte-2.md"
+   ],
+   "caracteres": 23371,
+   "tokens_estimados": 6678
+  },
+  {
+   "cat": 16,
+   "sub": null,
+   "titulo": "Analizar software y comprobar su seguridad",
+   "repos": 113,
+   "archivo": "categoria-16-parte-1.md",
+   "parte": 1,
+   "caracteres": 65559,
+   "tokens_estimados": 18732
+  },
+  {
+   "cat": 16,
+   "sub": null,
+   "titulo": "Analizar software y comprobar su seguridad",
+   "repos": 113,
+   "archivo": "categoria-16-parte-2.md",
+   "parte": 2,
+   "caracteres": 66024,
+   "tokens_estimados": 18865
+  },
+  {
+   "cat": 17,
+   "sub": "whatsapp",
+   "titulo": "WhatsApp y mensajería",
+   "repos": 8,
+   "archivo": "categoria-17-whatsapp.md",
+   "caracteres": 16897,
+   "tokens_estimados": 4828
+  },
+  {
+   "cat": 17,
+   "sub": "chatbots",
+   "titulo": "Chatbots y asistentes conversacionales",
+   "repos": 4,
+   "archivo": "categoria-17-chatbots.md",
+   "caracteres": 9255,
+   "tokens_estimados": 2645
+  },
+  {
+   "cat": 17,
+   "sub": "comunidades",
+   "titulo": "Comunidades,chat y llamadas",
+   "repos": 6,
+   "archivo": "categoria-17-comunidades.md",
+   "caracteres": 10849,
+   "tokens_estimados": 3100
+  },
+  {
+   "cat": 17,
+   "sub": null,
+   "titulo": "WhatsApp, mensajería y chatbots",
+   "repos": 18,
+   "archivo": "categoria-17.md",
+   "caracteres": 31432,
+   "tokens_estimados": 8981
+  },
+  {
+   "cat": 18,
+   "sub": "crm",
+   "titulo": "CRM, ERP y soporte al cliente",
+   "repos": 9,
+   "archivo": "categoria-18-crm.md",
+   "caracteres": 17274,
+   "tokens_estimados": 4936
+  },
+  {
+   "cat": 18,
+   "sub": "marketing",
+   "titulo": "Email, marketing y notificaciones",
+   "repos": 7,
+   "archivo": "categoria-18-marketing.md",
+   "caracteres": 14591,
+   "tokens_estimados": 4169
+  },
+  {
+   "cat": 18,
+   "sub": "reservas",
+   "titulo": "Reservas y programación de citas",
+   "repos": 3,
+   "archivo": "categoria-18-reservas.md",
+   "caracteres": 7176,
+   "tokens_estimados": 2051
+  },
+  {
+   "cat": 18,
+   "sub": null,
+   "titulo": "CRM, ventas y marketing",
+   "repos": 19,
+   "archivo": "categoria-18.md",
+   "caracteres": 33454,
+   "tokens_estimados": 9559
+  },
+  {
+   "cat": 19,
+   "sub": "prompts",
+   "titulo": "Prompts y prompt engineering",
+   "repos": 7,
+   "archivo": "categoria-19-prompts.md",
+   "caracteres": 14273,
+   "tokens_estimados": 4079
+  },
+  {
+   "cat": 19,
+   "sub": "guias",
+   "titulo": "Guías, cursos y cookbooks",
+   "repos": 14,
+   "archivo": "categoria-19-guias.md",
+   "caracteres": 26014,
+   "tokens_estimados": 7433
+  },
+  {
+   "cat": 19,
+   "sub": "aprender",
+   "titulo": "Aprender LLMs desde cero",
+   "repos": 9,
+   "archivo": "categoria-19-aprender.md",
+   "caracteres": 17461,
+   "tokens_estimados": 4989
+  },
+  {
+   "cat": 19,
+   "sub": null,
+   "titulo": "Aprender IA y escribir mejores prompts",
+   "repos": 30,
+   "archivo": "categoria-19.md",
+   "caracteres": 52289,
+   "tokens_estimados": 14940
+  },
+  {
+   "cat": 20,
+   "sub": "terminal",
+   "titulo": "Agentes de terminal",
+   "repos": 11,
+   "archivo": "categoria-20-terminal.md",
+   "caracteres": 21753,
+   "tokens_estimados": 6216
+  },
+  {
+   "cat": 20,
+   "sub": "editor",
+   "titulo": "Editores y extensiones de código",
+   "repos": 5,
+   "archivo": "categoria-20-editor.md",
+   "caracteres": 10625,
+   "tokens_estimados": 3036
+  },
+  {
+   "cat": 20,
+   "sub": "ingenieria",
+   "titulo": "Agentes para issues y tareas de ingeniería",
+   "repos": 3,
+   "archivo": "categoria-20-ingenieria.md",
+   "caracteres": 7780,
+   "tokens_estimados": 2223
+  },
+  {
+   "cat": 20,
+   "sub": "sesiones",
+   "titulo": "Interfaces para gestionar sesiones",
+   "repos": 2,
+   "archivo": "categoria-20-sesiones.md",
+   "caracteres": 6023,
+   "tokens_estimados": 1721
+  },
+  {
+   "cat": 20,
+   "sub": null,
+   "titulo": "Programar con agentes de código",
+   "repos": 21,
+   "archivo": "categoria-20.md",
+   "caracteres": 37756,
+   "tokens_estimados": 10788
+  },
+  {
+   "cat": 21,
+   "sub": "asistentes",
+   "titulo": "Asistentes autónomos y equipos de agentes",
+   "repos": 12,
+   "archivo": "categoria-21-asistentes.md",
+   "caracteres": 23572,
+   "tokens_estimados": 6735
+  },
+  {
+   "cat": 21,
+   "sub": "research",
+   "titulo": "Agentes de research autónomo",
+   "repos": 5,
+   "archivo": "categoria-21-research.md",
+   "caracteres": 11417,
+   "tokens_estimados": 3263
+  },
+  {
+   "cat": 21,
+   "sub": null,
+   "titulo": "Asistentes e investigación con agentes",
+   "repos": 17,
+   "archivo": "categoria-21.md",
+   "caracteres": 32252,
+   "tokens_estimados": 9215
+  },
+  {
+   "cat": 22,
+   "sub": "infra",
+   "titulo": "Infraestructura: sandboxes, herramientas y protocolos",
+   "repos": 10,
+   "archivo": "categoria-22-infra.md",
+   "caracteres": 19746,
+   "tokens_estimados": 5642
+  },
+  {
+   "cat": 22,
+   "sub": "recursos",
+   "titulo": "Dominios y recursos de infraestructura",
+   "repos": 2,
+   "archivo": "categoria-22-recursos.md",
+   "caracteres": 5852,
+   "tokens_estimados": 1673
+  },
+  {
+   "cat": 22,
+   "sub": "redes",
+   "titulo": "Redes y transporte",
+   "repos": 5,
+   "archivo": "categoria-22-redes.md",
+   "caracteres": 10197,
+   "tokens_estimados": 2914
+  },
+  {
+   "cat": 22,
+   "sub": "infraestructura",
+   "titulo": "Alojamiento y backend",
+   "repos": 9,
+   "archivo": "categoria-22-infraestructura.md",
+   "caracteres": 16172,
+   "tokens_estimados": 4621
+  },
+  {
+   "cat": 22,
+   "sub": null,
+   "titulo": "Infraestructura, despliegue y herramientas para agentes",
+   "repos": 26,
+   "archivo": "categoria-22.md",
+   "caracteres": 43560,
+   "tokens_estimados": 12446
+  },
+  {
+   "cat": 23,
+   "sub": "serving",
+   "titulo": "Serving y gateways de LLM",
+   "repos": 11,
+   "archivo": "categoria-23-serving.md",
+   "caracteres": 20431,
+   "tokens_estimados": 5838
+  },
+  {
+   "cat": 23,
+   "sub": "tokens",
+   "titulo": "Ahorro de contexto y tokens",
+   "repos": 2,
+   "archivo": "categoria-23-tokens.md",
+   "caracteres": 6557,
+   "tokens_estimados": 1874
+  },
+  {
+   "cat": 23,
+   "sub": "observabilidad",
+   "titulo": "Observabilidad, evaluación y guardrails",
+   "repos": 13,
+   "archivo": "categoria-23-observabilidad.md",
+   "caracteres": 24150,
+   "tokens_estimados": 6901
+  },
+  {
+   "cat": 23,
+   "sub": null,
+   "titulo": "Operar, evaluar y medir modelos de IA",
+   "repos": 26,
+   "archivo": "categoria-23.md",
+   "caracteres": 45684,
+   "tokens_estimados": 13053
+  },
+  {
+   "cat": 24,
+   "sub": "entrenamiento",
+   "titulo": "Entrenar y afinar modelos",
+   "repos": 18,
+   "archivo": "categoria-24-entrenamiento.md",
+   "caracteres": 29614,
+   "tokens_estimados": 8462
+  },
+  {
+   "cat": 24,
+   "sub": "modelos",
+   "titulo": "Modelos abiertos y fundacionales",
+   "repos": 7,
+   "archivo": "categoria-24-modelos.md",
+   "caracteres": 14241,
+   "tokens_estimados": 4069
+  },
+  {
+   "cat": 24,
+   "sub": null,
+   "titulo": "Modelos abiertos y entrenamiento",
+   "repos": 25,
+   "archivo": "categoria-24.md",
+   "caracteres": 41279,
+   "tokens_estimados": 11795
+  },
+  {
+   "cat": 25,
+   "sub": "datos",
+   "titulo": "Datos y notebooks",
+   "repos": 17,
+   "archivo": "categoria-25-datos.md",
+   "caracteres": 28013,
+   "tokens_estimados": 8004
+  },
+  {
+   "cat": 25,
+   "sub": "apps",
+   "titulo": "Apps de datos en Python",
+   "repos": 6,
+   "archivo": "categoria-25-apps.md",
+   "caracteres": 12299,
+   "tokens_estimados": 3515
+  },
+  {
+   "cat": 25,
+   "sub": null,
+   "titulo": "Procesar datos y trabajar con notebooks",
+   "repos": 23,
+   "archivo": "categoria-25.md",
+   "caracteres": 37645,
+   "tokens_estimados": 10756
+  },
+  {
+   "cat": 26,
+   "sub": "animacion",
+   "titulo": "Animación y 3D",
+   "repos": 14,
+   "archivo": "categoria-26-animacion.md",
+   "caracteres": 22687,
+   "tokens_estimados": 6483
+  },
+  {
+   "cat": 26,
+   "sub": "creacion-3d",
+   "titulo": "Creación, renderizado y animación 3D",
+   "repos": 9,
+   "archivo": "categoria-26-creacion-3d.md",
+   "caracteres": 15445,
+   "tokens_estimados": 4413
+  },
+  {
+   "cat": 26,
+   "sub": "simulacion",
+   "titulo": "Física y simulación",
+   "repos": 5,
+   "archivo": "categoria-26-simulacion.md",
+   "caracteres": 9640,
+   "tokens_estimados": 2755
+  },
+  {
+   "cat": 26,
+   "sub": null,
+   "titulo": "Animación, gráficos y creación 3D",
+   "repos": 28,
+   "archivo": "categoria-26.md",
+   "caracteres": 42362,
+   "tokens_estimados": 12104
+  },
+  {
+   "cat": 27,
+   "sub": "skills",
+   "titulo": "Skills de diseño para agentes",
+   "repos": 21,
+   "archivo": "categoria-27-skills.md",
+   "caracteres": 36280,
+   "tokens_estimados": 10366
+  },
+  {
+   "cat": 27,
+   "sub": "escritura",
+   "titulo": "Escritura y calidad de texto",
+   "repos": 4,
+   "archivo": "categoria-27-escritura.md",
+   "caracteres": 9043,
+   "tokens_estimados": 2584
+  },
+  {
+   "cat": 27,
+   "sub": "dominio",
+   "titulo": "Skills de dominio: marketing, SEO y negocio",
+   "repos": 11,
+   "archivo": "categoria-27-dominio.md",
+   "caracteres": 21865,
+   "tokens_estimados": 6248
+  },
+  {
+   "cat": 27,
+   "sub": null,
+   "titulo": "Skills de diseño, contenido y especialidades",
+   "repos": 36,
+   "archivo": "categoria-27.md",
+   "caracteres": 61732,
+   "tokens_estimados": 17638
+  },
+  {
+   "cat": 28,
+   "sub": "rostros",
+   "titulo": "Rostros y retratos animados",
+   "repos": 5,
+   "archivo": "categoria-28-rostros.md",
+   "caracteres": 11584,
+   "tokens_estimados": 3310
+  },
+  {
+   "cat": 28,
+   "sub": "vision",
+   "titulo": "Visión por computador",
+   "repos": 16,
+   "archivo": "categoria-28-vision.md",
+   "caracteres": 27438,
+   "tokens_estimados": 7840
+  },
+  {
+   "cat": 28,
+   "sub": null,
+   "titulo": "Visión artificial, rostros y percepción",
+   "repos": 21,
+   "archivo": "categoria-28.md",
+   "caracteres": 36335,
+   "tokens_estimados": 10382
+  },
+  {
+   "cat": 29,
+   "sub": "stt",
+   "titulo": "Transcripción (voz a texto)",
+   "repos": 6,
+   "archivo": "categoria-29-stt.md",
+   "caracteres": 12548,
+   "tokens_estimados": 3586
+  },
+  {
+   "cat": 29,
+   "sub": "tts",
+   "titulo": "Síntesis y clonación de voz",
+   "repos": 13,
+   "archivo": "categoria-29-tts.md",
+   "caracteres": 25337,
+   "tokens_estimados": 7240
+  },
+  {
+   "cat": 29,
+   "sub": "voz-agentes",
+   "titulo": "Agentes de voz en tiempo real",
+   "repos": 4,
+   "archivo": "categoria-29-voz-agentes.md",
+   "caracteres": 9628,
+   "tokens_estimados": 2751
+  },
+  {
+   "cat": 29,
+   "sub": "musica",
+   "titulo": "Música y audio generativo",
+   "repos": 3,
+   "archivo": "categoria-29-musica.md",
+   "caracteres": 8092,
+   "tokens_estimados": 2313
+  },
+  {
+   "cat": 29,
+   "sub": "audio",
+   "titulo": "Procesamiento y limpieza de audio",
+   "repos": 7,
+   "archivo": "categoria-29-audio.md",
+   "caracteres": 12947,
+   "tokens_estimados": 3700
+  },
+  {
+   "cat": 29,
+   "sub": null,
+   "titulo": "Audio, transcripción, voz y música",
+   "repos": 33,
+   "archivo": "categoria-29.md",
+   "caracteres": 57377,
+   "tokens_estimados": 16394
+  },
+  {
+   "cat": 30,
+   "sub": "motores",
+   "titulo": "Motores de video y escenas por código",
+   "repos": 8,
+   "archivo": "categoria-30-motores.md",
+   "caracteres": 16166,
+   "tokens_estimados": 4619
+  },
+  {
+   "cat": 30,
+   "sub": "skills-video",
+   "titulo": "Skills y métodos de producción audiovisual",
+   "repos": 14,
+   "archivo": "categoria-30-skills-video.md",
+   "caracteres": 26496,
+   "tokens_estimados": 7571
+  },
+  {
+   "cat": 30,
+   "sub": "aplicaciones",
+   "titulo": "Aplicaciones y flujos de producción",
+   "repos": 1,
+   "archivo": "categoria-30-aplicaciones.md",
+   "caracteres": 4446,
+   "tokens_estimados": 1271
+  },
+  {
+   "cat": 30,
+   "sub": null,
+   "titulo": "Video con código y agentes creativos",
+   "repos": 23,
+   "archivo": "categoria-30.md",
+   "caracteres": 41546,
+   "tokens_estimados": 11871
+  },
+  {
+   "cat": 31,
+   "sub": "slides",
+   "titulo": "Presentaciones",
+   "repos": 5,
+   "archivo": "categoria-31-slides.md",
+   "caracteres": 10818,
+   "tokens_estimados": 3091
+  },
+  {
+   "cat": 31,
+   "sub": "diagramas",
+   "titulo": "Diagramas y documentación",
+   "repos": 7,
+   "archivo": "categoria-31-diagramas.md",
+   "caracteres": 13081,
+   "tokens_estimados": 3738
+  },
+  {
+   "cat": 31,
+   "sub": null,
+   "titulo": "Presentaciones, diagramas y explicación visual",
+   "repos": 12,
+   "archivo": "categoria-31.md",
+   "caracteres": 21156,
+   "tokens_estimados": 6045
+  },
+  {
+   "cat": 32,
+   "sub": "bibliotecas",
+   "titulo": "Automatización y pruebas por código",
+   "repos": 6,
+   "archivo": "categoria-32-bibliotecas.md",
+   "caracteres": 12416,
+   "tokens_estimados": 3548
+  },
+  {
+   "cat": 32,
+   "sub": "agentes-web",
+   "titulo": "Herramientas de navegación para agentes",
+   "repos": 8,
+   "archivo": "categoria-32-agentes-web.md",
+   "caracteres": 16296,
+   "tokens_estimados": 4657
+  },
+  {
+   "cat": 32,
+   "sub": "motores-web",
+   "titulo": "Navegadores y servidores de ejecución",
+   "repos": 4,
+   "archivo": "categoria-32-motores-web.md",
+   "caracteres": 9150,
+   "tokens_estimados": 2615
+  },
+  {
+   "cat": 32,
+   "sub": "recursos-web",
+   "titulo": "Directorios y recursos de navegador",
+   "repos": 1,
+   "archivo": "categoria-32-recursos-web.md",
+   "caracteres": 4379,
+   "tokens_estimados": 1252
+  },
+  {
+   "cat": 32,
+   "sub": null,
+   "titulo": "Navegadores y automatización web",
+   "repos": 19,
+   "archivo": "categoria-32.md",
+   "caracteres": 33752,
+   "tokens_estimados": 9644
+  }
+ ]
+}

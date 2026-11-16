@@ -158,6 +158,8 @@ uv run repo-intelligence web build
 uv run pytest
 ```
 
+`web build` (y `guide build`, que regenera `docs/`) escribe también `docs/llm/`: un Markdown compacto por categoría y subcategoría para pegar en otro proyecto (`docs/alexandria/…` + referencia desde AGENTS.md o CLAUDE.md). Regenerar solo esa carpeta: `uv run repo-intelligence llm export`.
+
 La web pública es [Alexandría](https://cristrva1.github.io/BL_Alexandria/). GitHub Pages publica el contenido generado de `main/docs`: al actualizar el catálogo, ejecuta `guide build` y sube sus resultados para que se desplieguen. El generador conserva `.nojekyll` para servir los archivos estáticos directamente.
 
 ### Cómo agregar un repo

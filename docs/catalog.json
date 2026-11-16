@@ -244210,5 +244210,755 @@
       ],
       "discovery_text": " Frontend y creación de páginas web frontend paginas web crear una pagina web landing pages sitios web Probar y publicar una web Agentes de IA, investigación y navegación agentes ia research investigacion scraping mcp Navegadores y automatización web"
     }
-  ]
+  ],
+  "llm": {
+    "1/motores": {
+      "file": "llm/categoria-1-motores.md",
+      "tokens": 6201,
+      "parts": []
+    },
+    "1/internas": {
+      "file": "llm/categoria-1-internas.md",
+      "tokens": 4561,
+      "parts": []
+    },
+    "1": {
+      "file": "llm/categoria-1.md",
+      "tokens": 9975,
+      "parts": []
+    },
+    "2/catalogos": {
+      "file": "llm/categoria-2-catalogos.md",
+      "tokens": 7451,
+      "parts": []
+    },
+    "2/metodologia": {
+      "file": "llm/categoria-2-metodologia.md",
+      "tokens": 9232,
+      "parts": []
+    },
+    "2": {
+      "file": "llm/categoria-2.md",
+      "tokens": 15945,
+      "parts": []
+    },
+    "3/py": {
+      "file": "llm/categoria-3-py.md",
+      "tokens": 10096,
+      "parts": []
+    },
+    "3/ts": {
+      "file": "llm/categoria-3-ts.md",
+      "tokens": 3214,
+      "parts": []
+    },
+    "3/visual": {
+      "file": "llm/categoria-3-visual.md",
+      "tokens": 2958,
+      "parts": []
+    },
+    "3/experimentos": {
+      "file": "llm/categoria-3-experimentos.md",
+      "tokens": 3299,
+      "parts": []
+    },
+    "3": {
+      "file": "llm/categoria-3.md",
+      "tokens": 17155,
+      "parts": []
+    },
+    "4/crawlers": {
+      "file": "llm/categoria-4-crawlers.md",
+      "tokens": 5733,
+      "parts": []
+    },
+    "4/llm": {
+      "file": "llm/categoria-4-llm.md",
+      "tokens": 2300,
+      "parts": []
+    },
+    "4/busqueda": {
+      "file": "llm/categoria-4-busqueda.md",
+      "tokens": 5036,
+      "parts": []
+    },
+    "4/social": {
+      "file": "llm/categoria-4-social.md",
+      "tokens": 2444,
+      "parts": []
+    },
+    "4": {
+      "file": "llm/categoria-4.md",
+      "tokens": 13131,
+      "parts": []
+    },
+    "5/sdk": {
+      "file": "llm/categoria-5-sdk.md",
+      "tokens": 3013,
+      "parts": []
+    },
+    "5/servidores": {
+      "file": "llm/categoria-5-servidores.md",
+      "tokens": 7781,
+      "parts": []
+    },
+    "5/directorios": {
+      "file": "llm/categoria-5-directorios.md",
+      "tokens": 2903,
+      "parts": []
+    },
+    "5": {
+      "file": "llm/categoria-5.md",
+      "tokens": 12131,
+      "parts": []
+    },
+    "6/memoria": {
+      "file": "llm/categoria-6-memoria.md",
+      "tokens": 6176,
+      "parts": []
+    },
+    "6/rag": {
+      "file": "llm/categoria-6-rag.md",
+      "tokens": 5146,
+      "parts": []
+    },
+    "6/vectores": {
+      "file": "llm/categoria-6-vectores.md",
+      "tokens": 4475,
+      "parts": []
+    },
+    "6": {
+      "file": "llm/categoria-6.md",
+      "tokens": 14221,
+      "parts": []
+    },
+    "7/codigo": {
+      "file": "llm/categoria-7-codigo.md",
+      "tokens": 4191,
+      "parts": []
+    },
+    "7/calidad": {
+      "file": "llm/categoria-7-calidad.md",
+      "tokens": 3946,
+      "parts": []
+    },
+    "7/herramientas": {
+      "file": "llm/categoria-7-herramientas.md",
+      "tokens": 2746,
+      "parts": []
+    },
+    "7": {
+      "file": "llm/categoria-7.md",
+      "tokens": 9283,
+      "parts": []
+    },
+    "8/motores": {
+      "file": "llm/categoria-8-motores.md",
+      "tokens": 6648,
+      "parts": []
+    },
+    "8/chats": {
+      "file": "llm/categoria-8-chats.md",
+      "tokens": 5359,
+      "parts": []
+    },
+    "8/workspaces": {
+      "file": "llm/categoria-8-workspaces.md",
+      "tokens": 3242,
+      "parts": []
+    },
+    "8/notebooklm": {
+      "file": "llm/categoria-8-notebooklm.md",
+      "tokens": 2726,
+      "parts": []
+    },
+    "8": {
+      "file": "llm/categoria-8.md",
+      "tokens": 15580,
+      "parts": []
+    },
+    "9/componentes": {
+      "file": "llm/categoria-9-componentes.md",
+      "tokens": 6861,
+      "parts": []
+    },
+    "9/estilos": {
+      "file": "llm/categoria-9-estilos.md",
+      "tokens": 2388,
+      "parts": []
+    },
+    "9/diseno": {
+      "file": "llm/categoria-9-diseno.md",
+      "tokens": 3741,
+      "parts": []
+    },
+    "9/ia-ui": {
+      "file": "llm/categoria-9-ia-ui.md",
+      "tokens": 4493,
+      "parts": []
+    },
+    "9": {
+      "file": "llm/categoria-9.md",
+      "tokens": 15117,
+      "parts": []
+    },
+    "10/producto": {
+      "file": "llm/categoria-10-producto.md",
+      "tokens": 2605,
+      "parts": []
+    },
+    "10/bi": {
+      "file": "llm/categoria-10-bi.md",
+      "tokens": 3528,
+      "parts": []
+    },
+    "10/graficos": {
+      "file": "llm/categoria-10-graficos.md",
+      "tokens": 2853,
+      "parts": []
+    },
+    "10/recursos": {
+      "file": "llm/categoria-10-recursos.md",
+      "tokens": 1661,
+      "parts": []
+    },
+    "10/osint": {
+      "file": "llm/categoria-10-osint.md",
+      "tokens": 4103,
+      "parts": []
+    },
+    "10/geoespacial": {
+      "file": "llm/categoria-10-geoespacial.md",
+      "tokens": 3777,
+      "parts": []
+    },
+    "10": {
+      "file": "llm/categoria-10.md",
+      "tokens": 14522,
+      "parts": []
+    },
+    "11/interfaces": {
+      "file": "llm/categoria-11-interfaces.md",
+      "tokens": 2109,
+      "parts": []
+    },
+    "11/modelos": {
+      "file": "llm/categoria-11-modelos.md",
+      "tokens": 1814,
+      "parts": []
+    },
+    "11/edicion": {
+      "file": "llm/categoria-11-edicion.md",
+      "tokens": 3060,
+      "parts": []
+    },
+    "11": {
+      "file": "llm/categoria-11.md",
+      "tokens": 5360,
+      "parts": []
+    },
+    "12/edicion": {
+      "file": "llm/categoria-12-edicion.md",
+      "tokens": 5573,
+      "parts": []
+    },
+    "12/generativo": {
+      "file": "llm/categoria-12-generativo.md",
+      "tokens": 4993,
+      "parts": []
+    },
+    "12": {
+      "file": "llm/categoria-12.md",
+      "tokens": 9785,
+      "parts": []
+    },
+    "13/conversion": {
+      "file": "llm/categoria-13-conversion.md",
+      "tokens": 5096,
+      "parts": []
+    },
+    "13/ocr": {
+      "file": "llm/categoria-13-ocr.md",
+      "tokens": 4073,
+      "parts": []
+    },
+    "13/pdf": {
+      "file": "llm/categoria-13-pdf.md",
+      "tokens": 3316,
+      "parts": []
+    },
+    "13/gestion": {
+      "file": "llm/categoria-13-gestion.md",
+      "tokens": 1266,
+      "parts": []
+    },
+    "13": {
+      "file": "llm/categoria-13.md",
+      "tokens": 11368,
+      "parts": []
+    },
+    "14/agentes": {
+      "file": "llm/categoria-14-agentes.md",
+      "tokens": 4569,
+      "parts": []
+    },
+    "14/cuant": {
+      "file": "llm/categoria-14-cuant.md",
+      "tokens": 4413,
+      "parts": []
+    },
+    "14/bots": {
+      "file": "llm/categoria-14-bots.md",
+      "tokens": 3499,
+      "parts": []
+    },
+    "14/aprender": {
+      "file": "llm/categoria-14-aprender.md",
+      "tokens": 1264,
+      "parts": []
+    },
+    "14": {
+      "file": "llm/categoria-14.md",
+      "tokens": 11344,
+      "parts": []
+    },
+    "15/notas": {
+      "file": "llm/categoria-15-notas.md",
+      "tokens": 9240,
+      "parts": []
+    },
+    "15/archivos": {
+      "file": "llm/categoria-15-archivos.md",
+      "tokens": 2602,
+      "parts": []
+    },
+    "15/privacidad": {
+      "file": "llm/categoria-15-privacidad.md",
+      "tokens": 4550,
+      "parts": []
+    },
+    "15/lectura": {
+      "file": "llm/categoria-15-lectura.md",
+      "tokens": 2441,
+      "parts": []
+    },
+    "15/domotica": {
+      "file": "llm/categoria-15-domotica.md",
+      "tokens": 2437,
+      "parts": []
+    },
+    "15/personal": {
+      "file": "llm/categoria-15-personal.md",
+      "tokens": 4419,
+      "parts": []
+    },
+    "15/aprendizaje": {
+      "file": "llm/categoria-15-aprendizaje.md",
+      "tokens": 1306,
+      "parts": []
+    },
+    "15": {
+      "file": "llm/categoria-15.md",
+      "tokens": 22187,
+      "parts": []
+    },
+    "16/reversing": {
+      "file": "llm/categoria-16-reversing.md",
+      "tokens": 5195,
+      "parts": []
+    },
+    "16/depuracion": {
+      "file": "llm/categoria-16-depuracion.md",
+      "tokens": 2423,
+      "parts": []
+    },
+    "16/pruebas": {
+      "file": "llm/categoria-16-pruebas.md",
+      "tokens": 8724,
+      "parts": []
+    },
+    "16/reconocimiento": {
+      "file": "llm/categoria-16-reconocimiento.md",
+      "tokens": 3835,
+      "parts": []
+    },
+    "16/explotacion-c2": {
+      "file": "llm/categoria-16-explotacion-c2.md",
+      "tokens": 4392,
+      "parts": []
+    },
+    "16/ad-interno": {
+      "file": "llm/categoria-16-ad-interno.md",
+      "tokens": 3528,
+      "parts": []
+    },
+    "16/deteccion": {
+      "file": "llm/categoria-16-deteccion.md",
+      "tokens": 4927,
+      "parts": []
+    },
+    "16/nube-contenedores": {
+      "file": "llm/categoria-16-nube-contenedores.md",
+      "tokens": 4091,
+      "parts": []
+    },
+    "16/agentes": {
+      "file": "llm/categoria-16-agentes.md",
+      "tokens": 3385,
+      "parts": []
+    },
+    "16/defensa": {
+      "file": "llm/categoria-16-defensa.md",
+      "tokens": 2138,
+      "parts": []
+    },
+    "16/referencias": {
+      "file": "llm/categoria-16-referencias.md",
+      "tokens": 3055,
+      "parts": []
+    },
+    "16/skills": {
+      "file": "llm/categoria-16-skills.md",
+      "tokens": 2990,
+      "parts": []
+    },
+    "16/ir-forense": {
+      "file": "llm/categoria-16-ir-forense.md",
+      "tokens": 2424,
+      "parts": []
+    },
+    "16/inteligencia-amenazas": {
+      "file": "llm/categoria-16-inteligencia-amenazas.md",
+      "tokens": 1543,
+      "parts": []
+    },
+    "16": {
+      "file": "llm/categoria-16.md",
+      "tokens": 6678,
+      "parts": [
+        "llm/categoria-16-parte-1.md",
+        "llm/categoria-16-parte-2.md"
+      ]
+    },
+    "17/whatsapp": {
+      "file": "llm/categoria-17-whatsapp.md",
+      "tokens": 4828,
+      "parts": []
+    },
+    "17/chatbots": {
+      "file": "llm/categoria-17-chatbots.md",
+      "tokens": 2645,
+      "parts": []
+    },
+    "17/comunidades": {
+      "file": "llm/categoria-17-comunidades.md",
+      "tokens": 3100,
+      "parts": []
+    },
+    "17": {
+      "file": "llm/categoria-17.md",
+      "tokens": 8981,
+      "parts": []
+    },
+    "18/crm": {
+      "file": "llm/categoria-18-crm.md",
+      "tokens": 4936,
+      "parts": []
+    },
+    "18/marketing": {
+      "file": "llm/categoria-18-marketing.md",
+      "tokens": 4169,
+      "parts": []
+    },
+    "18/reservas": {
+      "file": "llm/categoria-18-reservas.md",
+      "tokens": 2051,
+      "parts": []
+    },
+    "18": {
+      "file": "llm/categoria-18.md",
+      "tokens": 9559,
+      "parts": []
+    },
+    "19/prompts": {
+      "file": "llm/categoria-19-prompts.md",
+      "tokens": 4079,
+      "parts": []
+    },
+    "19/guias": {
+      "file": "llm/categoria-19-guias.md",
+      "tokens": 7433,
+      "parts": []
+    },
+    "19/aprender": {
+      "file": "llm/categoria-19-aprender.md",
+      "tokens": 4989,
+      "parts": []
+    },
+    "19": {
+      "file": "llm/categoria-19.md",
+      "tokens": 14940,
+      "parts": []
+    },
+    "20/terminal": {
+      "file": "llm/categoria-20-terminal.md",
+      "tokens": 6216,
+      "parts": []
+    },
+    "20/editor": {
+      "file": "llm/categoria-20-editor.md",
+      "tokens": 3036,
+      "parts": []
+    },
+    "20/ingenieria": {
+      "file": "llm/categoria-20-ingenieria.md",
+      "tokens": 2223,
+      "parts": []
+    },
+    "20/sesiones": {
+      "file": "llm/categoria-20-sesiones.md",
+      "tokens": 1721,
+      "parts": []
+    },
+    "20": {
+      "file": "llm/categoria-20.md",
+      "tokens": 10788,
+      "parts": []
+    },
+    "21/asistentes": {
+      "file": "llm/categoria-21-asistentes.md",
+      "tokens": 6735,
+      "parts": []
+    },
+    "21/research": {
+      "file": "llm/categoria-21-research.md",
+      "tokens": 3263,
+      "parts": []
+    },
+    "21": {
+      "file": "llm/categoria-21.md",
+      "tokens": 9215,
+      "parts": []
+    },
+    "22/infra": {
+      "file": "llm/categoria-22-infra.md",
+      "tokens": 5642,
+      "parts": []
+    },
+    "22/recursos": {
+      "file": "llm/categoria-22-recursos.md",
+      "tokens": 1673,
+      "parts": []
+    },
+    "22/redes": {
+      "file": "llm/categoria-22-redes.md",
+      "tokens": 2914,
+      "parts": []
+    },
+    "22/infraestructura": {
+      "file": "llm/categoria-22-infraestructura.md",
+      "tokens": 4621,
+      "parts": []
+    },
+    "22": {
+      "file": "llm/categoria-22.md",
+      "tokens": 12446,
+      "parts": []
+    },
+    "23/serving": {
+      "file": "llm/categoria-23-serving.md",
+      "tokens": 5838,
+      "parts": []
+    },
+    "23/tokens": {
+      "file": "llm/categoria-23-tokens.md",
+      "tokens": 1874,
+      "parts": []
+    },
+    "23/observabilidad": {
+      "file": "llm/categoria-23-observabilidad.md",
+      "tokens": 6901,
+      "parts": []
+    },
+    "23": {
+      "file": "llm/categoria-23.md",
+      "tokens": 13053,
+      "parts": []
+    },
+    "24/entrenamiento": {
+      "file": "llm/categoria-24-entrenamiento.md",
+      "tokens": 8462,
+      "parts": []
+    },
+    "24/modelos": {
+      "file": "llm/categoria-24-modelos.md",
+      "tokens": 4069,
+      "parts": []
+    },
+    "24": {
+      "file": "llm/categoria-24.md",
+      "tokens": 11795,
+      "parts": []
+    },
+    "25/datos": {
+      "file": "llm/categoria-25-datos.md",
+      "tokens": 8004,
+      "parts": []
+    },
+    "25/apps": {
+      "file": "llm/categoria-25-apps.md",
+      "tokens": 3515,
+      "parts": []
+    },
+    "25": {
+      "file": "llm/categoria-25.md",
+      "tokens": 10756,
+      "parts": []
+    },
+    "26/animacion": {
+      "file": "llm/categoria-26-animacion.md",
+      "tokens": 6483,
+      "parts": []
+    },
+    "26/creacion-3d": {
+      "file": "llm/categoria-26-creacion-3d.md",
+      "tokens": 4413,
+      "parts": []
+    },
+    "26/simulacion": {
+      "file": "llm/categoria-26-simulacion.md",
+      "tokens": 2755,
+      "parts": []
+    },
+    "26": {
+      "file": "llm/categoria-26.md",
+      "tokens": 12104,
+      "parts": []
+    },
+    "27/skills": {
+      "file": "llm/categoria-27-skills.md",
+      "tokens": 10366,
+      "parts": []
+    },
+    "27/escritura": {
+      "file": "llm/categoria-27-escritura.md",
+      "tokens": 2584,
+      "parts": []
+    },
+    "27/dominio": {
+      "file": "llm/categoria-27-dominio.md",
+      "tokens": 6248,
+      "parts": []
+    },
+    "27": {
+      "file": "llm/categoria-27.md",
+      "tokens": 17638,
+      "parts": []
+    },
+    "28/rostros": {
+      "file": "llm/categoria-28-rostros.md",
+      "tokens": 3310,
+      "parts": []
+    },
+    "28/vision": {
+      "file": "llm/categoria-28-vision.md",
+      "tokens": 7840,
+      "parts": []
+    },
+    "28": {
+      "file": "llm/categoria-28.md",
+      "tokens": 10382,
+      "parts": []
+    },
+    "29/stt": {
+      "file": "llm/categoria-29-stt.md",
+      "tokens": 3586,
+      "parts": []
+    },
+    "29/tts": {
+      "file": "llm/categoria-29-tts.md",
+      "tokens": 7240,
+      "parts": []
+    },
+    "29/voz-agentes": {
+      "file": "llm/categoria-29-voz-agentes.md",
+      "tokens": 2751,
+      "parts": []
+    },
+    "29/musica": {
+      "file": "llm/categoria-29-musica.md",
+      "tokens": 2313,
+      "parts": []
+    },
+    "29/audio": {
+      "file": "llm/categoria-29-audio.md",
+      "tokens": 3700,
+      "parts": []
+    },
+    "29": {
+      "file": "llm/categoria-29.md",
+      "tokens": 16394,
+      "parts": []
+    },
+    "30/motores": {
+      "file": "llm/categoria-30-motores.md",
+      "tokens": 4619,
+      "parts": []
+    },
+    "30/skills-video": {
+      "file": "llm/categoria-30-skills-video.md",
+      "tokens": 7571,
+      "parts": []
+    },
+    "30/aplicaciones": {
+      "file": "llm/categoria-30-aplicaciones.md",
+      "tokens": 1271,
+      "parts": []
+    },
+    "30": {
+      "file": "llm/categoria-30.md",
+      "tokens": 11871,
+      "parts": []
+    },
+    "31/slides": {
+      "file": "llm/categoria-31-slides.md",
+      "tokens": 3091,
+      "parts": []
+    },
+    "31/diagramas": {
+      "file": "llm/categoria-31-diagramas.md",
+      "tokens": 3738,
+      "parts": []
+    },
+    "31": {
+      "file": "llm/categoria-31.md",
+      "tokens": 6045,
+      "parts": []
+    },
+    "32/bibliotecas": {
+      "file": "llm/categoria-32-bibliotecas.md",
+      "tokens": 3548,
+      "parts": []
+    },
+    "32/agentes-web": {
+      "file": "llm/categoria-32-agentes-web.md",
+      "tokens": 4657,
+      "parts": []
+    },
+    "32/motores-web": {
+      "file": "llm/categoria-32-motores-web.md",
+      "tokens": 2615,
+      "parts": []
+    },
+    "32/recursos-web": {
+      "file": "llm/categoria-32-recursos-web.md",
+      "tokens": 1252,
+      "parts": []
+    },
+    "32": {
+      "file": "llm/categoria-32.md",
+      "tokens": 9644,
+      "parts": []
+    }
+  }
 }
