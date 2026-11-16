@@ -27,6 +27,12 @@
      "id": "chakra-ui",
      "motivo": "Las stories de componentes Chakra se envuelven en su proveedor de tema mediante un decorador de Storybook (combinación por arquitectura).",
      "orden_instalacion": "Instala Chakra UI; después añade el decorador con su Provider en preview."
+    },
+    {
+     "id": "cypress",
+     "motivo": "Combinación recíproca: Cypress lo enlaza como «La documentación de Storybook explica cómo reutilizar historias de componentes en pruebas end-to-end con Cypress».",
+     "orden_instalacion": "Orden indicado desde Cypress: Publica o arranca Storybook; después visita las historias desde las pruebas de Cypress.",
+     "reciproca_de": "cypress"
     }
    ],
    "notas": "Añade peso de dependencias al proyecto; mantenlo como dependencia de desarrollo.",

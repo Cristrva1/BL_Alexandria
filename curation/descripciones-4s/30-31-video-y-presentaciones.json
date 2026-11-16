@@ -480,6 +480,12 @@
      "motivo": "Combinación recíproca: reveal.js lo enlaza como «Diagramas en las diapositivas. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde reveal.js: Añade un plugin de Mermaid.",
      "reciproca_de": "reveal.js"
+    },
+    {
+     "id": "drawio",
+     "motivo": "Combinación recíproca: draw.io lo enlaza como «draw.io importa diagramas Mermaid y los convierte en diagramas editables».",
+     "orden_instalacion": "Orden indicado desde draw.io: Escribe el diagrama en Mermaid; después usa Organizar > Insertar > Avanzado > Mermaid en draw.io.",
+     "reciproca_de": "drawio"
     }
    ],
    "notas": "Alternativas (elige una): excalidraw.",

@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -138,6 +138,7 @@
 
 ## 🎬 Audio, transcripción, voz y música
 
+- [AudioCraft vs YuE2](audiocraft-vs-yue.md)
 - [faster-whisper vs whisper.cpp](faster-whisper-vs-whisper-cpp.md)
 - [Kokoro vs LuxTTS](kokoro-vs-luxtts.md)
 - [LiveKit Agents vs Pipecat](livekit-agents-vs-pipecat.md)
@@ -149,6 +150,7 @@
 
 ## 📄 Presentaciones, diagramas y explicación visual
 
+- [D2 vs Mermaid](d2-vs-mermaid.md)
 - [Marp vs Slidev](marp-vs-slidev.md)
 
 ## 🕷️ Navegadores y automatización web

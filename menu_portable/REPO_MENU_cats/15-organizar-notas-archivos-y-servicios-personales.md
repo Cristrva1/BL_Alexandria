@@ -732,7 +732,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala Logseq, abre una carpeta vacía como grafo y crea una página enlazada desde el diario.
 **Qué comprobar:** La página aparece en el grafo y sus referencias se muestran en ambas notas.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `syncthing`, `pandoc`, `claude-code`
+**Combina con:** `syncthing`, `pandoc`, `claude-code`, `d2`
 **Alternativas (elige una):** `joplin`, `trilium`, `siyuan`
 
 ## `memos`

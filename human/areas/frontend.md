@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-71 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+74 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Opciones para empezar
 
@@ -121,7 +121,7 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -129,7 +129,9 @@ Pruebas de navegador y herramientas para alojar la aplicación.
 | [Caddy](../fichas/caddy.md) | Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API. | Sin clave propia de API de IA en la ruta básica |
 | [CasaOS](../fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin clave propia de API de IA en la ruta básica |
 | [coolify](../fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin clave propia de API de IA en la ruta básica |
+| [Cypress](../fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica |
 | [Dokploy](../fichas/dokploy.md) | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. | Sin clave propia de API de IA en la ruta básica |
+| [FlareSolverr](../fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica |
 | [playwright](../fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica |
 | [Playwright MCP](../fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
 | [Portainer CE](../fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Sin clave propia de API de IA en la ruta básica |
@@ -138,5 +140,6 @@ Pruebas de navegador y herramientas para alojar la aplicación.
 | [supabase](../fichas/supabase.md) | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [Traefik Proxy](../fichas/traefik.md) | Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. | Sin clave propia de API de IA en la ruta básica |
 | [Uptime Kuma](../fichas/uptime-kuma.md) | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado. | Sin clave propia de API de IA en la ruta básica |
+| [WebdriverIO](../fichas/webdriverio.md) | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

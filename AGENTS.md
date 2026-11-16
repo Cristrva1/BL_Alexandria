@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**786 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
+**811 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -102,11 +102,11 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 23 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
 | 26 | 🎨 Animación, gráficos y creación 3D | 28 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
 | 27 | 🎨 Skills de diseño, contenido y especialidades | 36 | Skills de diseño para agentes, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio | `human/categorias/27-skills-especializadas.md` |
-| 28 | 🖼️ Visión artificial, rostros y percepción | 17 | Rostros y retratos animados, Visión por computador | `human/categorias/28-vision-percepcion.md` |
-| 29 | 🎬 Audio, transcripción, voz y música | 26 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
-| 30 | 🎬 Video con código y agentes creativos | 21 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
-| 31 | 📄 Presentaciones, diagramas y explicación visual | 8 | Presentaciones, Diagramas y documentación | `human/categorias/31-presentaciones-diagramas.md` |
-| 32 | 🕷️ Navegadores y automatización web | 11 | Automatización y pruebas por código, Herramientas de navegación para agentes, Navegadores y servidores de ejecución, Directorios y recursos de navegador | `human/categorias/32-navegadores-automatizacion-web.md` |
+| 28 | 🖼️ Visión artificial, rostros y percepción | 21 | Rostros y retratos animados, Visión por computador | `human/categorias/28-vision-percepcion.md` |
+| 29 | 🎬 Audio, transcripción, voz y música | 33 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
+| 30 | 🎬 Video con código y agentes creativos | 23 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
+| 31 | 📄 Presentaciones, diagramas y explicación visual | 12 | Presentaciones, Diagramas y documentación | `human/categorias/31-presentaciones-diagramas.md` |
+| 32 | 🕷️ Navegadores y automatización web | 19 | Automatización y pruebas por código, Herramientas de navegación para agentes, Navegadores y servidores de ejecución, Directorios y recursos de navegador | `human/categorias/32-navegadores-automatizacion-web.md` |
 <!-- /BL:AGENT_CATEGORIES -->
 
 ## 🔗 Recetas

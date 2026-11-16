@@ -30,6 +30,7 @@ Se añade a un proyecto con su CLI de inicialización (`npm create storybook@lat
 | [tailwindcss](tailwindcss.md) | Storybook publica una receta oficial para integrar Tailwind CSS en las stories. | Proyecto con Tailwind configurado; después sigue la receta de Storybook para cargar los estilos. |
 | [Mantine](mantine.md) | Mantine documenta una guía para usar sus componentes y temas dentro de Storybook. | Instala Mantine; después sigue su guía de Storybook para el proveedor de tema. |
 | [Chakra UI](chakra-ui.md) | Las stories de componentes Chakra se envuelven en su proveedor de tema mediante un decorador de Storybook (combinación por arquitectura). | Instala Chakra UI; después añade el decorador con su Provider en preview. |
+| [Cypress](cypress.md) | Combinación recíproca: Cypress lo enlaza como «La documentación de Storybook explica cómo reutilizar historias de componentes en pruebas end-to-end con Cypress». | Orden indicado desde Cypress: Publica o arranca Storybook; después visita las historias desde las pruebas de Cypress. |
 
 **Notas:** Añade peso de dependencias al proyecto; mantenlo como dependencia de desarrollo.
 

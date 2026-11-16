@@ -29,6 +29,7 @@ Se compila con Meson. La utilidad de línea de comandos requiere libsndfile (LGP
 | [FFmpeg](ffmpeg.md) | Filtro rubberband en FFmpeg. | Usa un FFmpeg compilado con librubberband. |
 | [ACE-Step-1.5](ace-step-1-5.md) | Ajustar tempo de música generada. (combinación por arquitectura) | Procesa la salida. |
 | [AudioCraft](audiocraft.md) | Ajustar duración de audio generado. (combinación por arquitectura) | Procesa la salida. |
+| [Ultimate Vocal Remover (UVR)](ultimate-vocal-remover.md) | Combinación recíproca: Ultimate Vocal Remover (UVR) lo enlaza como «UVR usa Rubber Band para las funciones de cambio de tiempo y de tono». | Orden indicado desde Ultimate Vocal Remover (UVR): Instala Rubber Band según el README; después usa las herramientas de tempo y tono. |
 
 **Notas:** Sin alternativas declaradas.
 

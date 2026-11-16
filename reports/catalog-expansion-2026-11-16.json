@@ -1502,12 +1502,239 @@
         "license": "Apache-2.0",
         "pushed_at": "2026-11-16"
       }
+    ],
+    "p09": [
+      {
+        "id": "deepface",
+        "full_name": "serengil/deepface",
+        "github_id": 239201565,
+        "readme_blob_sha": "edba08b52d9cdf8505a5a31ee70ea872f6bb7e22",
+        "stars": 23701,
+        "license": "MIT",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "detectron2",
+        "full_name": "facebookresearch/detectron2",
+        "github_id": 206660580,
+        "readme_blob_sha": "7d99b46e415ad06b7dd69e4b6a6b302ffea1d303",
+        "stars": 34985,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-10-27"
+      },
+      {
+        "id": "cvat",
+        "full_name": "cvat-ai/cvat",
+        "github_id": 139156354,
+        "readme_blob_sha": "cc864015798c5a83c2d70fbf0746f908a7cebc1d",
+        "stars": 17144,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "dlib",
+        "full_name": "davisking/dlib",
+        "github_id": 16331291,
+        "readme_blob_sha": "ff32038173291dc0e6286d3ff7c330cd31b47d53",
+        "stars": 14476,
+        "license": "BSL-1.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "ultimate-vocal-remover",
+        "full_name": "Anjok07/ultimatevocalremovergui",
+        "github_id": 281229404,
+        "readme_blob_sha": "93746d4b4f06f301257c1ee5045e914fee23c974",
+        "stars": 27193,
+        "license": "MIT",
+        "pushed_at": "2026-10-06"
+      },
+      {
+        "id": "sherpa-onnx",
+        "full_name": "k2-fsa/sherpa-onnx",
+        "github_id": 531380835,
+        "readme_blob_sha": "8f34b0935640ff49d716a7a9b170dd784deaa2e0",
+        "stars": 15978,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "f5-tts",
+        "full_name": "SWivid/F5-TTS",
+        "github_id": 869549554,
+        "readme_blob_sha": "e0903aea55ae3e02c0cfa77407dcf7a49940633d",
+        "stars": 15600,
+        "license": "MIT",
+        "pushed_at": "2026-11-03"
+      },
+      {
+        "id": "audacity",
+        "full_name": "audacity/audacity",
+        "github_id": 32921736,
+        "readme_blob_sha": "92c12c2c1853859cd008f4728563ba62f5d046c4",
+        "stars": 19083,
+        "license": "GPL-3.0 (mayoría de archivos GPL-2.0-or-later)",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "demucs",
+        "full_name": "adefossez/demucs",
+        "github_id": 719554886,
+        "readme_blob_sha": "fbf54ea8820314f3380d2cdf56e829550033016b",
+        "stars": 3551,
+        "license": "MIT",
+        "pushed_at": "2026-10-26"
+      },
+      {
+        "id": "yue",
+        "full_name": "multimodal-art-projection/YuE",
+        "github_id": 920995232,
+        "readme_blob_sha": "f5c3df379eec0f033a02f9b1f440925fa2e50112",
+        "stars": 13528,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-01"
+      },
+      {
+        "id": "ten-framework",
+        "full_name": "TEN-framework/ten-framework",
+        "github_id": 817354652,
+        "readme_blob_sha": "781565d67cc8f1022ee1a1c8f2da594847a2859e",
+        "stars": 11232,
+        "license": "Apache-2.0 con condiciones adicionales (Agora)",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "motion-canvas",
+        "full_name": "motion-canvas/motion-canvas",
+        "github_id": 520955562,
+        "readme_blob_sha": "446c8db1aa77f01ddea44d0ff89ed42aa03cd54b",
+        "stars": 19965,
+        "license": "MIT",
+        "pushed_at": "2026-07-02"
+      },
+      {
+        "id": "revideo",
+        "full_name": "midrender/revideo",
+        "github_id": 770297271,
+        "readme_blob_sha": "3f5d9cee1158dbd50e66f71f974a875428166943",
+        "stars": 4212,
+        "license": "MIT",
+        "pushed_at": "2026-07-15"
+      },
+      {
+        "id": "d2",
+        "full_name": "d2lang/d2",
+        "github_id": 533087958,
+        "readme_blob_sha": "4c3007db102c42736991747298176a1feedf6aaa",
+        "stars": 25844,
+        "license": "MPL-2.0",
+        "pushed_at": "2026-10-11"
+      },
+      {
+        "id": "drawio",
+        "full_name": "jgraph/drawio",
+        "github_id": 67508428,
+        "readme_blob_sha": "2d854e6f655ee750625131ca83c5df93b096827c",
+        "stars": 9390,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-04"
+      },
+      {
+        "id": "plantuml",
+        "full_name": "plantuml/plantuml",
+        "github_id": 1051476,
+        "readme_blob_sha": "5fad8be911eed9096251c0383eafce5eb6e1acf3",
+        "stars": 13421,
+        "license": "Multilicencia (GPL-3.0, LGPL-3.0, Apache-2.0, EPL-2.0 o MIT)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "kroki",
+        "full_name": "yuzutech/kroki",
+        "github_id": 165063056,
+        "readme_blob_sha": "a2793509099cf37f766439b8dee52e60917f15c9",
+        "stars": 4407,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "flaresolverr",
+        "full_name": "FlareSolverr/FlareSolverr",
+        "github_id": 270910423,
+        "readme_blob_sha": "ed5431ad3e303f9ee100f60b2b1f7468dc265956",
+        "stars": 16238,
+        "license": "MIT",
+        "pushed_at": "2026-10-24"
+      },
+      {
+        "id": "camoufox",
+        "full_name": "daijro/camoufox",
+        "github_id": 834082440,
+        "readme_blob_sha": "0753d07ebccd7fe526a0ad8a4fc4cb4b7ba78846",
+        "stars": 13330,
+        "license": "MPL-2.0 (navegador) y MIT (paquetes de Python)",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "nanobrowser",
+        "full_name": "nanobrowser/nanobrowser",
+        "github_id": 910418754,
+        "readme_blob_sha": "a8970b7b7c0c8de33f6fafcff950f65a58697ae2",
+        "stars": 14317,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-10"
+      },
+      {
+        "id": "steel-browser",
+        "full_name": "steel-dev/steel-browser",
+        "github_id": 882026761,
+        "readme_blob_sha": "b773847813309bd45256feb9af5c60e93cd63a47",
+        "stars": 7973,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "cypress",
+        "full_name": "cypress-io/cypress",
+        "github_id": 31629751,
+        "readme_blob_sha": "371257991c8a62e869cdc81463b7d60aa784f3c4",
+        "stars": 51029,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "webdriverio",
+        "full_name": "webdriverio/webdriverio",
+        "github_id": 2296970,
+        "readme_blob_sha": "2619a4f91e60c998c64c99d6fc7032284220f3d3",
+        "stars": 9884,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "ladybird",
+        "full_name": "LadybirdBrowser/ladybird",
+        "github_id": 808045485,
+        "readme_blob_sha": "4d45336769487dfe98a38bb3f24df9443074b9ec",
+        "stars": 67152,
+        "license": "BSD-2-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "servo",
+        "full_name": "servo/servo",
+        "github_id": 3390243,
+        "readme_blob_sha": "1481211a7cc7e7fca3dd464cd650a8d76fdc7bf9",
+        "stars": 38529,
+        "license": "MPL-2.0",
+        "pushed_at": "2026-11-16"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 165,
-  "total_repositories": 788
+  "added_count": 190,
+  "total_repositories": 813
 }

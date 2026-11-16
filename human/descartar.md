@@ -334,37 +334,48 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [The Agency (agency-agents)](fichas/agency-agents.md) | [wshobson/agents](fichas/wshobson-agents.md) |
 | [threejs-skills](fichas/threejs-skills.md) | [3dviz-pro-max](fichas/3dviz-pro-max.md) |
 | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md) | [taste-skill](fichas/taste-skill.md), [impeccable](fichas/impeccable.md), [hallmark](fichas/hallmark.md) |
+| [CVAT Community](fichas/cvat.md) | [Label Studio](fichas/label-studio.md) |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | [FaceFusion](fichas/facefusion.md) |
 | [FaceFusion](fichas/facefusion.md) | [Deep-Live-Cam](fichas/deep-live-cam.md) |
-| [CosyVoice](fichas/cosyvoice.md) | [Fish Speech](fichas/fish-speech.md), [IndexTTS](fichas/index-tts.md) |
-| [dograh](fichas/dograh.md) | [Pipecat](fichas/pipecat.md), [LiveKit Agents](fichas/livekit-agents.md) |
+| [Label Studio](fichas/label-studio.md) | [CVAT Community](fichas/cvat.md) |
+| [ACE-Step-1.5](fichas/ace-step-1-5.md) | [YuE2](fichas/yue.md), [AudioCraft](fichas/audiocraft.md) |
+| [AudioCraft](fichas/audiocraft.md) | [YuE2](fichas/yue.md), [ACE-Step-1.5](fichas/ace-step-1-5.md) |
+| [CosyVoice](fichas/cosyvoice.md) | [Fish Speech](fichas/fish-speech.md), [IndexTTS](fichas/index-tts.md), [F5-TTS](fichas/f5-tts.md) |
+| [dograh](fichas/dograh.md) | [Pipecat](fichas/pipecat.md), [LiveKit Agents](fichas/livekit-agents.md), [TEN Framework](fichas/ten-framework.md) |
 | [edge-tts](fichas/edge-tts.md) | [Kokoro](fichas/kokoro.md) |
+| [F5-TTS](fichas/f5-tts.md) | [Fish Speech](fichas/fish-speech.md), [CosyVoice](fichas/cosyvoice.md) |
 | [faster-whisper](fichas/faster-whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |
-| [Fish Speech](fichas/fish-speech.md) | [CosyVoice](fichas/cosyvoice.md), [GPT-SoVITS](fichas/gpt-sovits.md) |
+| [Fish Speech](fichas/fish-speech.md) | [CosyVoice](fichas/cosyvoice.md), [GPT-SoVITS](fichas/gpt-sovits.md), [F5-TTS](fichas/f5-tts.md) |
 | [GPT-SoVITS](fichas/gpt-sovits.md) | [Fish Speech](fichas/fish-speech.md) |
 | [IndexTTS](fichas/index-tts.md) | [CosyVoice](fichas/cosyvoice.md) |
 | [Kokoro](fichas/kokoro.md) | [LuxTTS](fichas/luxtts.md), [edge-tts](fichas/edge-tts.md) |
-| [LiveKit Agents](fichas/livekit-agents.md) | [Pipecat](fichas/pipecat.md), [dograh](fichas/dograh.md) |
+| [LiveKit Agents](fichas/livekit-agents.md) | [Pipecat](fichas/pipecat.md), [dograh](fichas/dograh.md), [TEN Framework](fichas/ten-framework.md) |
 | [LuxTTS](fichas/luxtts.md) | [Kokoro](fichas/kokoro.md) |
 | [NeMo Speech](fichas/nemo.md) | [whisperX](fichas/whisperx.md) |
-| [Pipecat](fichas/pipecat.md) | [LiveKit Agents](fichas/livekit-agents.md), [dograh](fichas/dograh.md) |
+| [Pipecat](fichas/pipecat.md) | [LiveKit Agents](fichas/livekit-agents.md), [dograh](fichas/dograh.md), [TEN Framework](fichas/ten-framework.md) |
+| [TEN Framework](fichas/ten-framework.md) | [Pipecat](fichas/pipecat.md), [LiveKit Agents](fichas/livekit-agents.md), [dograh](fichas/dograh.md) |
 | [VoiceStudio](fichas/omnivoice-studio.md) | [VideoLingo](fichas/videolingo.md) |
 | [whisper](fichas/whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |
 | [whisper.cpp](fichas/whisper-cpp.md) | [faster-whisper](fichas/faster-whisper.md), [whisper](fichas/whisper.md) |
 | [whisperX](fichas/whisperx.md) | [NeMo Speech](fichas/nemo.md) |
+| [YuE2](fichas/yue.md) | [ACE-Step-1.5](fichas/ace-step-1-5.md), [AudioCraft](fichas/audiocraft.md) |
 | [HyperFrames](fichas/hyperframes.md) | [remotion](fichas/remotion.md), [MoviePy](fichas/moviepy.md) |
 | [manim](fichas/manim-community.md) | [Manim (ManimGL)](fichas/manim.md) |
 | [Manim (ManimGL)](fichas/manim.md) | [manim](fichas/manim-community.md) |
+| [Motion Canvas](fichas/motion-canvas.md) | [Revideo](fichas/revideo.md), [remotion](fichas/remotion.md) |
 | [MoviePy](fichas/moviepy.md) | [remotion](fichas/remotion.md), [HyperFrames](fichas/hyperframes.md) |
 | [OpenMontage](fichas/openmontage.md) | [Remotion Superpowers](fichas/remotion-superpowers.md), [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
-| [remotion](fichas/remotion.md) | [MoviePy](fichas/moviepy.md), [HyperFrames](fichas/hyperframes.md) |
+| [remotion](fichas/remotion.md) | [MoviePy](fichas/moviepy.md), [HyperFrames](fichas/hyperframes.md), [Motion Canvas](fichas/motion-canvas.md), [Revideo](fichas/revideo.md) |
 | [Remotion Superpowers](fichas/remotion-superpowers.md) | [OpenMontage](fichas/openmontage.md), [video-use](fichas/video-use.md) |
+| [Revideo](fichas/revideo.md) | [Motion Canvas](fichas/motion-canvas.md), [remotion](fichas/remotion.md) |
 | [video-use](fichas/video-use.md) | [Remotion Superpowers](fichas/remotion-superpowers.md) |
 | [videofy_minimal](fichas/videofy-minimal.md) | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
 | [archify](fichas/archify.md) | [diagram-design](fichas/diagram-design.md) |
+| [D2](fichas/d2.md) | [PlantUML](fichas/plantuml.md), [Mermaid](fichas/mermaid.md) |
 | [diagram-design](fichas/diagram-design.md) | [archify](fichas/archify.md) |
 | [Marp](fichas/marp.md) | [Slidev](fichas/slidev.md), [reveal.js](fichas/reveal-js.md) |
-| [Mermaid](fichas/mermaid.md) | [Excalidraw](fichas/excalidraw.md) |
+| [Mermaid](fichas/mermaid.md) | [Excalidraw](fichas/excalidraw.md), [D2](fichas/d2.md), [PlantUML](fichas/plantuml.md) |
+| [PlantUML](fichas/plantuml.md) | [D2](fichas/d2.md), [Mermaid](fichas/mermaid.md) |
 | [ppt-master](fichas/ppt-master.md) | [Presenton](fichas/presenton.md) |
 | [Presenton](fichas/presenton.md) | [ppt-master](fichas/ppt-master.md) |
 | [reveal.js](fichas/reveal-js.md) | [Slidev](fichas/slidev.md), [Marp](fichas/marp.md) |
@@ -372,12 +383,16 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [agent-browser](fichas/agent-browser.md) | [playwright-cli](fichas/playwright-cli.md) |
 | [Browser Harness](fichas/browser-harness.md) | [Playwright MCP](fichas/playwright-mcp.md), [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md), [browser-use](fichas/browser-use.md) |
 | [browser-use](fichas/browser-use.md) | [Gemini Computer Use (preview)](fichas/computer-use-preview.md), [Stagehand](fichas/stagehand.md), [Skyvern](fichas/skyvern.md), [Playwright MCP](fichas/playwright-mcp.md), [Browser Harness](fichas/browser-harness.md) |
-| [playwright](fichas/playwright.md) | [Puppeteer](fichas/puppeteer.md), [Selenium](fichas/selenium.md) |
+| [Cypress](fichas/cypress.md) | [WebdriverIO](fichas/webdriverio.md), [playwright](fichas/playwright.md), [Selenium](fichas/selenium.md), [Puppeteer](fichas/puppeteer.md) |
+| [Ladybird](fichas/ladybird.md) | [Servo](fichas/servo.md) |
+| [playwright](fichas/playwright.md) | [Puppeteer](fichas/puppeteer.md), [Selenium](fichas/selenium.md), [Cypress](fichas/cypress.md), [WebdriverIO](fichas/webdriverio.md) |
 | [playwright-cli](fichas/playwright-cli.md) | [agent-browser](fichas/agent-browser.md) |
-| [Puppeteer](fichas/puppeteer.md) | [playwright](fichas/playwright.md), [Selenium](fichas/selenium.md) |
-| [Selenium](fichas/selenium.md) | [playwright](fichas/playwright.md), [Puppeteer](fichas/puppeteer.md) |
+| [Puppeteer](fichas/puppeteer.md) | [playwright](fichas/playwright.md), [Selenium](fichas/selenium.md), [Cypress](fichas/cypress.md), [WebdriverIO](fichas/webdriverio.md) |
+| [Selenium](fichas/selenium.md) | [playwright](fichas/playwright.md), [Puppeteer](fichas/puppeteer.md), [Cypress](fichas/cypress.md), [WebdriverIO](fichas/webdriverio.md) |
+| [Servo](fichas/servo.md) | [Ladybird](fichas/ladybird.md) |
 | [Skyvern](fichas/skyvern.md) | [browser-use](fichas/browser-use.md), [Stagehand](fichas/stagehand.md), [Gemini Computer Use (preview)](fichas/computer-use-preview.md) |
 | [Stagehand](fichas/stagehand.md) | [browser-use](fichas/browser-use.md), [Skyvern](fichas/skyvern.md) |
+| [WebdriverIO](fichas/webdriverio.md) | [Cypress](fichas/cypress.md), [playwright](fichas/playwright.md), [Selenium](fichas/selenium.md), [Puppeteer](fichas/puppeteer.md) |
 
 Ver también [⚖️ Comparativas](comparativas/README.md).
 

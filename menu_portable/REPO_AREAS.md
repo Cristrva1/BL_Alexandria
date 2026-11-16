@@ -42,7 +42,7 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-`appwrite`, `caddy`, `casaos`, `coolify`, `dokploy`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`
+`appwrite`, `caddy`, `casaos`, `coolify`, `cypress`, `dokploy`, `flaresolverr`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`, `webdriverio`
 
 ## Ciberseguridad
 
@@ -104,31 +104,31 @@ Crear clips y organizar flujos de video generativo.
 
 Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
-`brag`, `claude-animated-shorts`, `huashu-motion`, `hyperframes`, `lemo-opuscar`, `manim`, `manim-community`, `mediabunny`, `motion-design-skill`, `motionmaxxing`, `moviepy`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
+`brag`, `claude-animated-shorts`, `huashu-motion`, `hyperframes`, `lemo-opuscar`, `manim`, `manim-community`, `mediabunny`, `motion-canvas`, `motion-design-skill`, `motionmaxxing`, `moviepy`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `revideo`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
 
 ### Voz: narración, síntesis y clonación
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-`cosyvoice`, `edge-tts`, `elevenlabs-python`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
+`cosyvoice`, `edge-tts`, `elevenlabs-python`, `f5-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
 
 ### Transcripción: audio a texto
 
 Transcribir, alinear y aprovechar grabaciones de voz.
 
-`faster-whisper`, `nemo`, `vibevoice`, `whisper`, `whisper-cpp`, `whisperx`
+`faster-whisper`, `nemo`, `sherpa-onnx`, `vibevoice`, `whisper`, `whisper-cpp`, `whisperx`
 
 ### Audio: limpieza, música y sonido
 
 Limpiar grabaciones, ajustar sonido y trabajar con música.
 
-`ace-step-1.5`, `audiocraft`, `earshot`, `pyannote-audio`, `rnnoise`, `rubberband`
+`ace-step-1.5`, `audacity`, `audiocraft`, `demucs`, `earshot`, `pyannote-audio`, `rnnoise`, `rubberband`, `ultimate-vocal-remover`, `yue`
 
 ### Voz: agentes en tiempo real
 
 Construir conversaciones por audio con procesamiento y respuesta en directo.
 
-`dograh`, `livekit-agents`, `pipecat`
+`dograh`, `livekit-agents`, `pipecat`, `ten-framework`
 
 ### Imagen: generación y edición
 
@@ -140,7 +140,7 @@ Generar imágenes, ampliar, recortar o restaurar fotografías.
 
 Animación de retratos y herramientas para personajes.
 
-`claude-animated-shorts`, `deep-live-cam`, `facefusion`, `genjutsu`, `insightface`, `liveportrait`
+`claude-animated-shorts`, `deep-live-cam`, `deepface`, `facefusion`, `genjutsu`, `insightface`, `liveportrait`
 
 ### Modelado y animación 3D
 
@@ -278,7 +278,7 @@ Convertir páginas y redes sociales en contenido o datos.
 
 Abrir páginas e interactuar con interfaces reales.
 
-`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `lightpanda`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `skyvern`, `stagehand`
+`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `camoufox`, `cypress`, `flaresolverr`, `ladybird`, `lightpanda`, `nanobrowser`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `servo`, `skyvern`, `stagehand`, `steel-browser`, `webdriverio`
 
 ### MCP: conectar herramientas
 
@@ -346,7 +346,7 @@ Preparar y exportar una presentación.
 
 Explicar sistemas e ideas mediante diagramas.
 
-`archify`, `diagram-design`, `excalidraw`, `mermaid`
+`archify`, `d2`, `diagram-design`, `drawio`, `excalidraw`, `kroki`, `mermaid`, `plantuml`
 
 ### Preguntar a documentos y buscar conocimiento
 
@@ -482,13 +482,13 @@ Detecta objetos o movimiento, interpreta imágenes y trabaja con información es
 
 Modelos y herramientas de visión por computador.
 
-`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam3`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
+`4d-humans`, `cvat`, `detectron2`, `dlib`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam3`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
 
 ### Rostros y análisis visual
 
 Herramientas especializadas en caras y retratos.
 
-`deep-live-cam`, `facefusion`, `insightface`, `liveportrait`
+`deep-live-cam`, `deepface`, `facefusion`, `insightface`, `liveportrait`
 
 ### Mapas, OSINT y fotogrametría
 
