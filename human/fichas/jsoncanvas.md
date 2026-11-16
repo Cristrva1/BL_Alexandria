@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Especificación abierta JSON Canvas para datos de lienzos infinitos, creada por Obsidian. Licencia MIT. Es estable (~4k estrellas, especificación 1.0) y se actualiza poco.
+
+## ¿Qué hace?
+
+Define un formato `.canvas` legible y fácil de parsear para nodos (texto, archivo, enlace, grupo) y conexiones entre ellos, pensado para longevidad e interoperabilidad. Cualquier app puede implementarlo libremente para importar, exportar o almacenar. El sitio mantiene un listado de apps y herramientas que lo usan.
+
+## ¿Cómo lo hace?
+
+El repo contiene la especificación, el sitio jsoncanvas.org y ejemplos. Para usarlo basta con leer o escribir JSON según la especificación 1.0; Obsidian Canvas lo usa de forma nativa.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [obsidian-skills](obsidian-skills.md) | La skill oficial `json-canvas` enseña a los agentes a crear y editar archivos `.canvas` válidos. | Instala obsidian-skills en el agente y pídele lienzos. |
+| [Claude Code](claude-code.md) | Generar mapas, diagramas o tableros como `.canvas` desde un agente. (combinación por arquitectura) | Da al agente la especificación o la skill y abre el resultado en Obsidian. |
+| [Excalidraw](excalidraw.md) | Otro formato de lienzo abierto en JSON; no hay conversor oficial entre ambos. (combinación por arquitectura) | Elige el formato según la herramienta donde vayas a editar. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-07-24 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/jsoncanvas/blob/main/readme.md) · [2](https://jsoncanvas.org/spec/1.0/) · [3](https://obsidian.md/blog/json-canvas/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un formato, no un editor de canvas listo para instalar |
 | Coste | Sin pago a un modelo en la ruta básica. La especificación no requiere modelo ni servicio; cada aplicación define sus costes |
 | Equipo | Preparación según la ruta elegida. Editor de texto; aplicación compatible con JSON Canvas |
-
-Es un formato, no un editor de canvas listo para instalar
-
-## Qué puedes hacer con él
-
-Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo.
-
-## Por qué destaca
-
-Usos propuestos: Intercambiar un mapa de ideas; Estudiar un formato abierto de lienzo.
-
-## Cómo funciona
 
 Es un formato, no un editor de canvas listo para instalar
 

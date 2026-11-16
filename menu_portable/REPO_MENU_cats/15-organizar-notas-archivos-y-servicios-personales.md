@@ -31,6 +31,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Responde tres preguntas de la lista con ejemplos del año y una acción concreta
 **Qué comprobar:** Obtienes una nota propia que puedes retomar más adelante
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `kepano-obsidian`, `obsidian-minimal`, `obsidian-second-brain`
 
 ## `adguardhome`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=privacidad,server,typescript
@@ -243,6 +244,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ingiere una nota ficticia desde inbox y revisa los enlaces antes de aceptar cambios
 **Qué comprobar:** Puedes abrir el Markdown y comprobar origen y relaciones creadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `obsidian-skills`, `obsidian-clipper`, `defuddle`
 **Alternativas (elige una):** `obsidian-second-brain`
 
 ## `cleanyourtv`
@@ -333,6 +335,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee el esquema y crea un lienzo de dos notas conectadas usando una app compatible
 **Qué comprobar:** Puedes abrir el archivo y reconocer nodos y conexión en JSON
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-skills`, `claude-code`, `excalidraw`
 
 ## `karakeep`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=notas,server,typescript
@@ -392,6 +395,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una copia de la plantilla y añade una nota con dos enlaces a temas propios
 **Qué comprobar:** Puedes reconocer qué convenciones te sirven sin alterar tu bóveda habitual
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-minimal`, `obsidian-clipper`, `obsidian-skills`
 
 ## `nextcloud-server`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
@@ -451,6 +455,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda un artículo público de prueba con título, URL y fragmento y comprueba el Markdown
 **Qué comprobar:** La nota conserva el contenido y la referencia de origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `defuddle`, `claude-obsidian`, `kepano-obsidian`
 
 ## `obsidian-help`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=notas,reference,javascript
@@ -480,6 +485,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la guía de enlaces y crea dos notas conectadas en una bóveda de prueba
 **Qué comprobar:** Puedes navegar entre ambas y localizar la ayuda correspondiente
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-importer`, `obsidian-clipper`, `obsidian-skills`
 
 ## `obsidian-importer`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,typescript
@@ -509,6 +515,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa dos notas ficticias a una bóveda nueva y revisa enlaces y adjuntos
 **Qué comprobar:** Puedes comparar las notas de origen y destino sin mezclar toda tu colección
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-help`, `obsidian-releases`, `markitdown`
 
 ## `obsidian-minimal`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,css
@@ -538,6 +545,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Activa el tema en una bóveda de prueba y compara lectura, tablas y modo oscuro
 **Qué comprobar:** Puedes cambiar de tema y distinguir apariencia de contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-releases`, `kepano-obsidian`, `obsidian-clipper`
 
 ## `obsidian-releases`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,reference
@@ -567,6 +575,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Identifica una release oficial y revisa compatibilidad de un plugin antes de usarlo
 **Qué comprobar:** Puedes reconocer versión de app y versión mínima del complemento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-sample-plugin`, `obsidian-minimal`, `obsidian-importer`
 
 ## `obsidian-sample-plugin`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=notas,template,typescript
@@ -596,6 +605,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Copia la plantilla a un proyecto propio y añade un comando que muestre un mensaje ficticio
 **Qué comprobar:** El comando aparece y funciona en la bóveda de desarrollo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `obsidian-releases`, `obsidian-skills`, `claude-code`
 
 ## `obsidian-second-brain`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=notas,skill,python
@@ -626,6 +636,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una decisión ficticia y recupérala en otra sesión revisando el archivo Markdown
 **Qué comprobar:** Puedes comprobar el texto guardado y qué contexto se inyecta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `yt-dlp`, `obsidian-skills`
 **Alternativas (elige una):** `claude-obsidian`
 
 ## `obsidian-skills`
@@ -657,7 +668,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide crear una nota y un JSON Canvas de prueba y revisa ambos archivos
 **Qué comprobar:** Los formatos se abren correctamente y sus enlaces son válidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `obsidian-releases`
+**Combina con:** `claude-code`, `codex`, `jsoncanvas`, `defuddle`
 
 ## `openmaic`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=aprendizaje,agent,typescript
@@ -689,6 +700,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una lección pequeña a partir de un texto ficticio y revisa objetivos, preguntas y fuentes
 **Qué comprobar:** Puedes corregir la clase antes de usarla y distinguir contenido generado de fuente
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openclaw`, `ollama`, `codex`
 
 ## `optimizerduck`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=personal,app,c

@@ -3377,7 +3377,7 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 **Comando documentado:** `claude plugin marketplace add obsidianmd/obsidian-skills
 claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Guiar un agente para trabajar con notas; Crear bases y lienzos en formatos Obsidian — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Obsidian: distribución y extensiones](human/fichas/obsidian-releases.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [jsoncanvas](human/fichas/jsoncanvas.md) · [defuddle](human/fichas/defuddle.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-skills.md) · [GitHub](https://github.com/obsidianmd/obsidian-skills)
 
 #### ⚙️ karakeep
@@ -3395,6 +3395,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/obsidianmd/obsidian-releases/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una distribución oficial; Estudiar el catálogo de temas y plugins — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [obsidian-sample-plugin](human/fichas/obsidian-sample-plugin.md) · [obsidian-minimal](human/fichas/obsidian-minimal.md) · [obsidian-importer](human/fichas/obsidian-importer.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-releases.md) · [GitHub](https://github.com/obsidianmd/obsidian-releases)
 
 #### 🎨 claude-obsidian
@@ -3404,6 +3405,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Comando documentado:** `claude plugin marketplace add AgriciDaniel/claude-obsidian
 claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar apuntes por conceptos; Consultar decisiones desde una bóveda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [obsidian-skills](human/fichas/obsidian-skills.md) · [obsidian-clipper](human/fichas/obsidian-clipper.md) · [defuddle](human/fichas/defuddle.md)<br>
 **Más:** [ficha completa](human/fichas/claude-obsidian.md) · [GitHub](https://github.com/AgriciDaniel/claude-obsidian)
 
 #### 📚 kepano-obsidian
@@ -3412,6 +3414,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/kepano/kepano-obsidian/blob/main/Readme.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una organización de notas; Adaptar una plantilla personal de conocimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [obsidian-minimal](human/fichas/obsidian-minimal.md) · [obsidian-clipper](human/fichas/obsidian-clipper.md) · [obsidian-skills](human/fichas/obsidian-skills.md)<br>
 **Más:** [ficha completa](human/fichas/kepano-obsidian.md) · [GitHub](https://github.com/kepano/kepano-obsidian)
 
 #### 🖥️ obsidian-minimal
@@ -3420,6 +3423,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://minimal.guide/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar tipografía de una bóveda; Crear una interfaz de notas con menos distracciones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Obsidian: distribución y extensiones](human/fichas/obsidian-releases.md) · [kepano-obsidian](human/fichas/kepano-obsidian.md) · [obsidian-clipper](human/fichas/obsidian-clipper.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-minimal.md) · [GitHub](https://github.com/kepano/obsidian-minimal)
 
 #### 🖥️ obsidian-clipper
@@ -3428,6 +3432,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://help.obsidian.md/web-clipper); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Capturar lecturas con una plantilla; Extraer un resumen opcional con Interpreter — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [defuddle](human/fichas/defuddle.md) · [claude-obsidian](human/fichas/claude-obsidian.md) · [kepano-obsidian](human/fichas/kepano-obsidian.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-clipper.md) · [GitHub](https://github.com/obsidianmd/obsidian-clipper)
 
 #### 🎨 obsidian-second-brain
@@ -3437,6 +3442,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Comando documentado:** `/plugin marketplace add eugeniughelbur/obsidian-second-brain
 /plugin install obsidian-second-brain@obsidian-second-brain` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir un diario de decisiones entre agentes; Consultar apuntes con búsqueda y fuentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [yt-dlp](human/fichas/yt-dlp.md) · [obsidian-skills](human/fichas/obsidian-skills.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-second-brain.md) · [GitHub](https://github.com/eugeniughelbur/obsidian-second-brain)
 
 #### 📚 obsidian-sample-plugin
@@ -3445,6 +3451,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender a programar un plugin; Prototipar una función para notas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Obsidian: distribución y extensiones](human/fichas/obsidian-releases.md) · [obsidian-skills](human/fichas/obsidian-skills.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-sample-plugin.md) · [GitHub](https://github.com/obsidianmd/obsidian-sample-plugin)
 
 #### 📂 jsoncanvas
@@ -3453,6 +3460,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/obsidianmd/jsoncanvas/blob/main/readme.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Intercambiar un mapa de ideas; Estudiar un formato abierto de lienzo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [obsidian-skills](human/fichas/obsidian-skills.md) · [Claude Code](human/fichas/claude-code.md) · [Excalidraw](human/fichas/excalidraw.md)<br>
 **Más:** [ficha completa](human/fichas/jsoncanvas.md) · [GitHub](https://github.com/obsidianmd/jsoncanvas)
 
 #### 📂 obsidian-help
@@ -3461,6 +3469,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/obsidianmd/obsidian-help/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender funciones básicas de Obsidian; Consultar cómo configurar una bóveda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [obsidian-importer](human/fichas/obsidian-importer.md) · [obsidian-clipper](human/fichas/obsidian-clipper.md) · [obsidian-skills](human/fichas/obsidian-skills.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-help.md) · [GitHub](https://github.com/obsidianmd/obsidian-help)
 
 #### 🖥️ obsidian-importer
@@ -3469,6 +3478,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/obsidianmd/obsidian-importer/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Migrar una muestra desde otra app; Verificar un formato de exportación antes de migrar — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [obsidian-help](human/fichas/obsidian-help.md) · [Obsidian: distribución y extensiones](human/fichas/obsidian-releases.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-importer.md) · [GitHub](https://github.com/obsidianmd/obsidian-importer)
 
 ### Sincronización y gestión de archivos
@@ -3586,6 +3596,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/kepano/40-questions/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una revisión anual; Explorar prioridades y hábitos personales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [kepano-obsidian](human/fichas/kepano-obsidian.md) · [obsidian-minimal](human/fichas/obsidian-minimal.md) · [obsidian-second-brain](human/fichas/obsidian-second-brain.md)<br>
 **Más:** [ficha completa](human/fichas/40-questions.md) · [GitHub](https://github.com/kepano/40-questions)
 
 ### Aprendizaje asistido
@@ -3598,6 +3609,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 cd OpenMAIC
 pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una actividad de estudio; Crear un borrador de clase con materiales propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenClaw](human/fichas/openclaw.md) · [Ollama](human/fichas/ollama.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/openmaic.md) · [GitHub](https://github.com/THU-MAIC/OpenMAIC)
 
 ---

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill y plugin que da memoria persistente a agentes de programación usando un vault de Obsidian, creado por @eugeniughelbur. Licencia MIT. Es muy activo (~5k estrellas, v0.20.0) y el README promociona un boletín del autor.
+
+## ¿Qué hace?
+
+Durante la conversación guarda lo importante en notas enlazadas del vault, que la siguiente sesión vuelve a leer. Ofrece 49 comandos para guardar, buscar, visualizar el vault como canvas e ingerir fuentes (PDF, Markdown, DOCX/ODT y vídeos; con `--visual` usa yt-dlp y ffmpeg para extraer fotogramas). Incluye un logbook compartido (`/crew`) que funciona sin Obsidian y un agente en segundo plano opcional.
+
+## ¿Cómo lo hace?
+
+Requiere Claude Code (u otra de las plataformas soportadas), `git` y `uv` para los scripts de Python. En Claude Code se instala con `/plugin marketplace add eugeniughelbur/obsidian-second-brain` y `/plugin install obsidian-second-brain@obsidian-second-brain`; para Codex, OpenCode y Antigravity hay un build con el formato Agent Skills (`npx skills add …`). El agente en segundo plano corre sin supervisión con `--dangerously-skip-permissions`, así que viene desactivado y hay que armarlo a mano.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plataforma principal: plugin nativo de Claude Code. | Instala Claude Code y el plugin desde su marketplace. |
+| [Codex CLI](codex.md) | Soportado mediante el build de Agent Skills. | Genera el build e instálalo con `npx skills add … -a codex`. |
+| [yt-dlp](yt-dlp.md) | Descargar vídeos para la ingesta visual (`--visual`), como documenta el README. | Instala yt-dlp y ffmpeg antes de usar la opción `--visual`. |
+| [obsidian-skills](obsidian-skills.md) | Formatos oficiales de Obsidian (Bases, Canvas) para las notas que escribe el agente. (combinación por arquitectura) | Instala obsidian-skills en el mismo agente. |
+
+**Notas:** Alternativas (elige una): claude-obsidian. No armes el agente en segundo plano sin revisar qué puede escribir.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.20.0 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/eugeniughelbur/obsidian-second-brain/blob/main/README.md) · [2](https://github.com/eugeniughelbur/obsidian-second-brain#install)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Los comandos y hooks no son iguales en todos los clientes; los agentes de fondo son opt-in y no deben confundirse con memoria pasiva |
 | Coste | El coste depende del proveedor o la ruta. Las órdenes básicas usan tu agente; investigación y modelos opcionales pueden consumir servicios; documenta OpenCode con modelo local |
 | Equipo | Preparación según la ruta elegida. Obsidian opcional para algunas funciones; agente; Git y uv; bóveda de prueba |
-
-Los comandos y hooks no son iguales en todos los clientes; los agentes de fondo son opt-in y no deben confundirse con memoria pasiva
-
-## Qué puedes hacer con él
-
-Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.
-
-## Por qué destaca
-
-Usos propuestos: Compartir un diario de decisiones entre agentes; Consultar apuntes con búsqueda y fuentes.
-
-## Cómo funciona
 
 Los comandos y hooks no son iguales en todos los clientes; los agentes de fondo son opt-in y no deben confundirse con memoria pasiva
 

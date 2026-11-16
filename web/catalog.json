@@ -78847,7 +78847,11 @@
       "desc": "Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una revisión anual; Explorar prioridades y hábitos personales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "kepano-obsidian",
+        "obsidian-minimal",
+        "obsidian-second-brain"
+      ],
       "alt": [],
       "stack": "Navegador o editor de notas; tiempo de reflexión",
       "repo_url": "https://github.com/kepano/40-questions",
@@ -78956,6 +78960,43 @@
       "stars": 1899,
       "license": "",
       "homepage": "http://stephanango.com/40-questions",
+      "combina_con": [
+        {
+          "id": "kepano-obsidian",
+          "motivo": "Guardar la revisión anual en el vault de plantilla del mismo autor. (combinación por arquitectura)",
+          "orden_instalacion": "Descarga la plantilla del vault y crea ahí una nota anual con las preguntas."
+        },
+        {
+          "id": "obsidian-minimal",
+          "motivo": "Lectura cómoda de la lista en Obsidian con el tema del mismo autor. (combinación por arquitectura)",
+          "orden_instalacion": "Instala el tema desde los temas de la comunidad."
+        },
+        {
+          "id": "obsidian-second-brain",
+          "motivo": "Guardar las respuestas como notas enlazadas que un agente puede consultar después. (combinación por arquitectura) (son datos muy personales: valora si quieres que un agente los lea)",
+          "orden_instalacion": "Escribe las respuestas en el vault y deja que la skill las indexe."
+        }
+      ],
+      "que_es": "Lista de 40 preguntas para hacerse cada año y cada década, con revisiones y traducciones, mantenida por @kepano. El repo no tiene archivo de licencia. Es pequeño (~2k estrellas) y no es software.",
+      "que_hace": "Ofrece las preguntas en Markdown, en muchos idiomas, para hacer una revisión personal anual o de década. Enlaza los artículos originales del blog del autor (2016 y 2022). Acepta traducciones por pull request, organizadas por código ISO 639-1.",
+      "como_lo_hace": "Son archivos Markdown: basta con copiar la lista en tu sistema de notas. No requiere instalación ni dependencias. Al no tener licencia, la reutilización fuera de uso personal no está clara.",
+      "descripcion_notas": "Sin alternativas declaradas. Sin licencia: no lo redistribuyas sin permiso.",
+      "descripcion_fuentes": [
+        "https://github.com/kepano/40-questions/blob/master/README.md",
+        "https://stephango.com/40-questions"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "kepano/40-questions",
+        "archived": false,
+        "pushed_at": "2026-03-09",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales.",
       "body": "Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales.",
       "install": {
@@ -78964,7 +79005,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "kepano-obsidian",
+          "label": "kepano-obsidian"
+        },
+        {
+          "id": "obsidian-minimal",
+          "label": "obsidian-minimal"
+        },
+        {
+          "id": "obsidian-second-brain",
+          "label": "obsidian-second-brain"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -80234,7 +80288,12 @@
       "desc": "Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar apuntes por conceptos; Consultar decisiones desde una bóveda",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "obsidian-skills",
+        "obsidian-clipper",
+        "defuddle"
+      ],
       "alt": [
         "obsidian-second-brain"
       ],
@@ -80353,6 +80412,52 @@
       "stars": 16493,
       "license": "MIT",
       "homepage": "skool.com/ai-marketing-hub-pro",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Requisito principal: se distribuye como plugin de Claude Code.",
+          "orden_instalacion": "Instala Claude Code y después el plugin desde su marketplace."
+        },
+        {
+          "id": "obsidian-skills",
+          "motivo": "Skills oficiales de Obsidian (Markdown de Obsidian, Bases, JSON Canvas, CLI) para que el agente escriba formatos válidos. (combinación por arquitectura)",
+          "orden_instalacion": "Instala obsidian-skills en el mismo agente y vault."
+        },
+        {
+          "id": "obsidian-clipper",
+          "motivo": "Capturar páginas web como Markdown directamente en `inbox/`. (combinación por arquitectura)",
+          "orden_instalacion": "Configura la plantilla del Web Clipper para guardar en la carpeta `inbox/` del vault."
+        },
+        {
+          "id": "defuddle",
+          "motivo": "Extraer el contenido limpio de páginas web antes de ingerirlas. (combinación por arquitectura)",
+          "orden_instalacion": "Usa Defuddle (o su skill) para preparar la fuente y déjala en `inbox/`."
+        }
+      ],
+      "que_es": "Plugin de Claude Code que convierte un vault de Obsidian en una wiki de conocimiento que crece con cada fuente, creado por @AgriciDaniel. Licencia MIT. Es activo y popular (~17k estrellas, v3.0.1) y sigue el patrón «LLM Wiki» de Andrej Karpathy, citado en el README.",
+      "que_hace": "Pones artículos, papers, transcripciones o notas en `inbox/`; el agente los lee, escribe resúmenes enlazados y mantiene la wiki, conservando los originales para que cada resumen apunte a su fuente. Incluye 15 skills y 3 agentes. Puede adoptar un vault existente sin mover tus notas. Si editas una nota en Obsidian mientras el agente planifica, la escritura se detiene con un conflicto en lugar de sobrescribirla.",
+      "como_lo_hace": "Se instala como plugin de Claude Code (`claude plugin marketplace add AgriciDaniel/claude-obsidian` y `claude plugin install claude-obsidian@agricidaniel-claude-obsidian`) o clonando el repo. Requiere Claude Code, Python 3.11+ y Obsidian para la parte visual; el README dice que también funciona en Codex, OpenCode, Gemini, ZCode, Cursor y Windsurf. Todo queda en Markdown local, sin base de datos en la nube ni telemetría; solo sale lo que envía el agente que uses.",
+      "descripcion_notas": "Alternativas (elige una): obsidian-second-brain.",
+      "descripcion_fuentes": [
+        "https://github.com/AgriciDaniel/claude-obsidian/blob/main/README.md",
+        "https://code.claude.com/docs/en/plugins",
+        "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "AgriciDaniel/claude-obsidian",
+        "archived": false,
+        "pushed_at": "2026-10-25",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v3.0.1 (2026-10-21)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian.",
       "body": "Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian.",
       "install": {
@@ -80366,7 +80471,24 @@
           "label": "obsidian-second-brain"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "obsidian-skills",
+          "label": "obsidian-skills"
+        },
+        {
+          "id": "obsidian-clipper",
+          "label": "obsidian-clipper"
+        },
+        {
+          "id": "defuddle",
+          "label": "defuddle"
+        }
+      ],
       "areas": [
         "productividad",
         "configurar-claude-code",
@@ -80831,7 +80953,11 @@
       "desc": "Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Intercambiar un mapa de ideas; Estudiar un formato abierto de lienzo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-skills",
+        "claude-code",
+        "excalidraw"
+      ],
       "alt": [],
       "stack": "Editor de texto; aplicación compatible con JSON Canvas",
       "repo_url": "https://github.com/obsidianmd/jsoncanvas",
@@ -80941,6 +81067,46 @@
       "stars": 3884,
       "license": "MIT",
       "homepage": "https://jsoncanvas.org",
+      "combina_con": [
+        {
+          "id": "obsidian-skills",
+          "motivo": "La skill oficial `json-canvas` enseña a los agentes a crear y editar archivos `.canvas` válidos.",
+          "orden_instalacion": "Instala obsidian-skills en el agente y pídele lienzos."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Generar mapas, diagramas o tableros como `.canvas` desde un agente. (combinación por arquitectura)",
+          "orden_instalacion": "Da al agente la especificación o la skill y abre el resultado en Obsidian."
+        },
+        {
+          "id": "excalidraw",
+          "motivo": "Otro formato de lienzo abierto en JSON; no hay conversor oficial entre ambos. (combinación por arquitectura)",
+          "orden_instalacion": "Elige el formato según la herramienta donde vayas a editar."
+        }
+      ],
+      "que_es": "Especificación abierta JSON Canvas para datos de lienzos infinitos, creada por Obsidian. Licencia MIT. Es estable (~4k estrellas, especificación 1.0) y se actualiza poco.",
+      "que_hace": "Define un formato `.canvas` legible y fácil de parsear para nodos (texto, archivo, enlace, grupo) y conexiones entre ellos, pensado para longevidad e interoperabilidad. Cualquier app puede implementarlo libremente para importar, exportar o almacenar. El sitio mantiene un listado de apps y herramientas que lo usan.",
+      "como_lo_hace": "El repo contiene la especificación, el sitio jsoncanvas.org y ejemplos. Para usarlo basta con leer o escribir JSON según la especificación 1.0; Obsidian Canvas lo usa de forma nativa.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/jsoncanvas/blob/main/readme.md",
+        "https://jsoncanvas.org/spec/1.0/",
+        "https://obsidian.md/blog/json-canvas/"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/jsoncanvas",
+        "archived": false,
+        "pushed_at": "2026-07-24",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo.",
       "body": "Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo.",
       "install": {
@@ -80949,7 +81115,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-skills",
+          "label": "obsidian-skills"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "excalidraw",
+          "label": "excalidraw"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -81185,7 +81364,11 @@
       "desc": "Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una organización de notas; Adaptar una plantilla personal de conocimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-minimal",
+        "obsidian-clipper",
+        "obsidian-skills"
+      ],
       "alt": [],
       "stack": "Obsidian; bóveda nueva de prueba",
       "repo_url": "https://github.com/kepano/kepano-obsidian",
@@ -81293,6 +81476,45 @@
       "stars": 6011,
       "license": "MIT",
       "homepage": "https://stephango.com/vault",
+      "combina_con": [
+        {
+          "id": "obsidian-minimal",
+          "motivo": "Tema del mismo autor, coherente con la plantilla. (combinación por arquitectura)",
+          "orden_instalacion": "Abre el vault e instala Minimal desde los temas de la comunidad."
+        },
+        {
+          "id": "obsidian-clipper",
+          "motivo": "Guardar páginas web como notas dentro de la estructura del vault. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el Web Clipper para guardar en la carpeta que corresponda."
+        },
+        {
+          "id": "obsidian-skills",
+          "motivo": "Que un agente cree notas, Bases y canvas respetando los formatos de Obsidian. (combinación por arquitectura)",
+          "orden_instalacion": "Instala las skills en el agente y abre el vault con él."
+        }
+      ],
+      "que_es": "Plantilla personal de vault de Obsidian de @kepano, con su enfoque «de abajo arriba» para tomar notas. Licencia MIT. Es estable (~6k estrellas, 2.2.0) y poco activa (último cambio en enero de 2026).",
+      "que_hace": "Proporciona una estructura de vault lista para usar, que el artículo «How I use Obsidian» explica en detalle. La idea es tomar las partes que te sirvan y adaptarlas. El autor insiste en que no es dogmática, sino un ejemplo de cómo organizar las notas.",
+      "como_lo_hace": "Se descarga el ZIP del repo, se descomprime y se abre la carpeta como vault nuevo en Obsidian. No requiere código ni dependencias.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/kepano/kepano-obsidian/blob/main/Readme.md",
+        "https://stephango.com/vault"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "kepano/kepano-obsidian",
+        "archived": false,
+        "pushed_at": "2026-01-09",
+        "license": "MIT",
+        "latest_release": "2.2.0 (2025-10-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal.",
       "body": "Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal.",
       "install": {
@@ -81301,7 +81523,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-minimal",
+          "label": "obsidian-minimal"
+        },
+        {
+          "id": "obsidian-clipper",
+          "label": "obsidian-clipper"
+        },
+        {
+          "id": "obsidian-skills",
+          "label": "obsidian-skills"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -81328,7 +81563,11 @@
       "desc": "Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Capturar lecturas con una plantilla; Extraer un resumen opcional con Interpreter",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "defuddle",
+        "claude-obsidian",
+        "kepano-obsidian"
+      ],
       "alt": [],
       "stack": "Extensión oficial del navegador; Obsidian; modelo solo para Interpreter",
       "repo_url": "https://github.com/obsidianmd/obsidian-clipper",
@@ -81441,6 +81680,47 @@
       "stars": 5585,
       "license": "MIT",
       "homepage": "https://obsidian.md/clipper",
+      "combina_con": [
+        {
+          "id": "defuddle",
+          "motivo": "Motor de extracción de contenido y conversión a Markdown que usa el Clipper, según su README.",
+          "orden_instalacion": "Viene incluido; úsalo aparte solo si quieres la misma extracción en scripts."
+        },
+        {
+          "id": "claude-obsidian",
+          "motivo": "Capturar fuentes en la carpeta `inbox/` para que el agente las convierta en wiki. (combinación por arquitectura)",
+          "orden_instalacion": "Configura una plantilla del Clipper que guarde en `inbox/`."
+        },
+        {
+          "id": "kepano-obsidian",
+          "motivo": "Guardar los recortes dentro de una estructura de vault ya pensada. (combinación por arquitectura)",
+          "orden_instalacion": "Apunta la carpeta de destino del Clipper al vault de plantilla."
+        }
+      ],
+      "que_es": "Obsidian Web Clipper, la extensión oficial de navegador de Obsidian para capturar y subrayar la web. Código MIT; las marcas y recursos de marketing quedan excluidos. Es activa (~6k estrellas, 1.7.1).",
+      "que_hace": "Guarda páginas web como archivos Markdown duraderos en tu vault, legibles sin conexión. Permite subrayar, usar plantillas con variables y lógica (if/for) y, con el Interpreter, extraer o resumir datos con un modelo de lenguaje que configures. Funciona en Chrome y derivados, Firefox, Edge y Safari (macOS, iOS, iPadOS).",
+      "como_lo_hace": "Se instala desde la tienda de extensiones de cada navegador. Está escrito en TypeScript y usa Defuddle para extraer el contenido y convertirlo a Markdown. La documentación oficial está en la ayuda de Obsidian.",
+      "descripcion_notas": "Sin alternativas declaradas. El Interpreter envía el contenido de la página al proveedor de modelos que configures.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/obsidian-clipper/blob/main/README.md",
+        "https://help.obsidian.md/web-clipper",
+        "https://help.obsidian.md/web-clipper/interpreter"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/obsidian-clipper",
+        "archived": false,
+        "pushed_at": "2026-09-22",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "1.7.1 (2026-07-22)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian.",
       "body": "Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian.",
       "install": {
@@ -81449,7 +81729,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "defuddle",
+          "label": "defuddle"
+        },
+        {
+          "id": "claude-obsidian",
+          "label": "claude-obsidian"
+        },
+        {
+          "id": "kepano-obsidian",
+          "label": "kepano-obsidian"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -81476,7 +81769,11 @@
       "desc": "Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender funciones básicas de Obsidian; Consultar cómo configurar una bóveda",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-importer",
+        "obsidian-clipper",
+        "obsidian-skills"
+      ],
       "alt": [],
       "stack": "Navegador; Obsidian solo para practicar",
       "repo_url": "https://github.com/obsidianmd/obsidian-help",
@@ -81586,6 +81883,44 @@
       "stars": 2005,
       "license": "",
       "homepage": "https://obsidian.md/help",
+      "combina_con": [
+        {
+          "id": "obsidian-importer",
+          "motivo": "Las guías de importación del Importer se alojan y se mantienen en este repo.",
+          "orden_instalacion": "Consulta la guía del formato antes de importar."
+        },
+        {
+          "id": "obsidian-clipper",
+          "motivo": "La documentación del Web Clipper vive en la ayuda oficial.",
+          "orden_instalacion": "Lee la sección del Web Clipper antes de crear plantillas."
+        },
+        {
+          "id": "obsidian-skills",
+          "motivo": "Las skills enlazan a esta documentación como referencia de sintaxis. (combinación por arquitectura)",
+          "orden_instalacion": "Abre el vault de ayuda en local si el agente necesita consultar la sintaxis."
+        }
+      ],
+      "que_es": "Fuente de la documentación oficial de ayuda de Obsidian y sus traducciones. El repo no tiene archivo de licencia. Lo mantiene Obsidian y es activo (~2k estrellas).",
+      "que_hace": "Cada idioma es un vault independiente publicado con Obsidian Publish en obsidian.md/help. Cubre el uso de la app, la sintaxis de Obsidian Flavored Markdown, Bases, Canvas, Sync, Publish, la CLI, el Web Clipper y las guías de importación. No admite issues sobre fallos o peticiones de la app, que van al foro.",
+      "como_lo_hace": "Se puede clonar y abrir como vault en Obsidian para leer la ayuda sin conexión, o contribuir correcciones y traducciones por pull request. Al no tener licencia declarada, reutilizar el texto fuera de la contribución no está claro.",
+      "descripcion_notas": "Sin alternativas declaradas. Sin licencia explícita.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/obsidian-help/blob/master/README.md",
+        "https://obsidian.md/help/"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/obsidian-help",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "primary_language": "JavaScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda.",
       "body": "Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda.",
       "install": {
@@ -81594,7 +81929,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-importer",
+          "label": "obsidian-importer"
+        },
+        {
+          "id": "obsidian-clipper",
+          "label": "obsidian-clipper"
+        },
+        {
+          "id": "obsidian-skills",
+          "label": "obsidian-skills"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -81621,7 +81969,11 @@
       "desc": "Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Migrar una muestra desde otra app; Verificar un formato de exportación antes de migrar",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-help",
+        "obsidian-releases",
+        "markitdown"
+      ],
       "alt": [],
       "stack": "Obsidian; plugin Importer; exportación de prueba del formato admitido",
       "repo_url": "https://github.com/obsidianmd/obsidian-importer",
@@ -81730,6 +82082,46 @@
       "stars": 1804,
       "license": "MIT",
       "homepage": "https://help.obsidian.md/import",
+      "combina_con": [
+        {
+          "id": "obsidian-help",
+          "motivo": "Guías de importación oficiales por formato.",
+          "orden_instalacion": "Lee la guía de tu app de origen y luego ejecuta el Importer."
+        },
+        {
+          "id": "obsidian-releases",
+          "motivo": "Se distribuye a través del directorio oficial de plugins de la comunidad.",
+          "orden_instalacion": "Instálalo desde el navegador de plugins de Obsidian."
+        },
+        {
+          "id": "markitdown",
+          "motivo": "Convertir a Markdown formatos que el Importer no cubre (DOCX, PPTX, PDF). (combinación por arquitectura)",
+          "orden_instalacion": "Convierte con MarkItDown y copia los `.md` al vault."
+        }
+      ],
+      "que_es": "Plugin oficial de Obsidian para importar notas desde otras apps y formatos. Licencia MIT. Es activo (~2k estrellas, 3.2.0).",
+      "que_hace": "Convierte notas a Markdown plano desde Airtable, Apple Journal, Apple Notes, Bear, Evernote, Google Keep, Logseq, Microsoft OneNote, Notion, Roam Research, Samsung Notes, Tomboy y archivos CSV, HTML, Markdown o Textbundle. Cada formato tiene una guía en la ayuda oficial. Así se puede migrar a Obsidian sin depender del formato original.",
+      "como_lo_hace": "Se instala desde Plugins de la comunidad (Importer). Es TypeScript y se compila con npm para desarrollo. Algunas fuentes requieren exportar primero desde la app de origen o iniciar sesión, según la guía.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/obsidian-importer/blob/master/README.md",
+        "https://obsidian.md/help/import"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/obsidian-importer",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "3.2.0 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian.",
       "body": "Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian.",
       "install": {
@@ -81738,7 +82130,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-help",
+          "label": "obsidian-help"
+        },
+        {
+          "id": "obsidian-releases",
+          "label": "obsidian-releases"
+        },
+        {
+          "id": "markitdown",
+          "label": "markitdown"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -81765,7 +82170,11 @@
       "desc": "Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Ajustar tipografía de una bóveda; Crear una interfaz de notas con menos distracciones",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-releases",
+        "kepano-obsidian",
+        "obsidian-clipper"
+      ],
       "alt": [],
       "stack": "Obsidian; tema Minimal; complementos solo si deseas sus opciones",
       "repo_url": "https://github.com/kepano/obsidian-minimal",
@@ -81874,6 +82283,46 @@
       "stars": 5664,
       "license": "MIT",
       "homepage": "https://minimal.guide",
+      "combina_con": [
+        {
+          "id": "obsidian-releases",
+          "motivo": "Se distribuye a través del directorio oficial de temas de la comunidad, alojado en ese repo.",
+          "orden_instalacion": "Instálalo desde el navegador de temas de Obsidian."
+        },
+        {
+          "id": "kepano-obsidian",
+          "motivo": "Plantilla de vault del mismo autor pensada para este tema. (combinación por arquitectura)",
+          "orden_instalacion": "Abre la plantilla y activa Minimal."
+        },
+        {
+          "id": "obsidian-clipper",
+          "motivo": "Lectura cómoda de los artículos capturados. (combinación por arquitectura)",
+          "orden_instalacion": "Captura con el Web Clipper y lee las notas con Minimal."
+        }
+      ],
+      "que_es": "Tema Minimal para Obsidian (escritorio, móvil y tablet), de @kepano. Licencia MIT. Es uno de los temas más usados y maduros (~6k estrellas, 9.1.4, activo).",
+      "que_hace": "Da a Obsidian una interfaz limpia y personalizable: esquemas de color, fuentes, anchos de línea, clases auxiliares para tablas, imágenes y tarjetas, y compatibilidad con plugins populares. Sus plugins complementarios son Minimal Theme Settings (ajustes), Hider (ocultar elementos de la interfaz) y Style Settings (personalización avanzada, opcional). Existe una versión aparte para Obsidian Publish.",
+      "como_lo_hace": "Se instala desde Ajustes → Apariencia → Temas de la comunidad, y los plugins complementarios desde Plugins de la comunidad. El código es CSS compilado con npm para quien quiera contribuir. La documentación completa está en minimal.guide.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/kepano/obsidian-minimal/blob/master/README.md",
+        "https://minimal.guide"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "kepano/obsidian-minimal",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "CSS",
+        "latest_release": "9.1.4 (2026-10-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas.",
       "body": "Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas.",
       "install": {
@@ -81882,7 +82331,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-releases",
+          "label": "obsidian-releases"
+        },
+        {
+          "id": "kepano-obsidian",
+          "label": "kepano-obsidian"
+        },
+        {
+          "id": "obsidian-clipper",
+          "label": "obsidian-clipper"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -81909,7 +82371,11 @@
       "desc": "Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender a programar un plugin; Prototipar una función para notas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-releases",
+        "obsidian-skills",
+        "claude-code"
+      ],
       "alt": [],
       "stack": "Node; TypeScript; Git; Obsidian con bóveda de desarrollo",
       "repo_url": "https://github.com/obsidianmd/obsidian-sample-plugin",
@@ -82019,6 +82485,47 @@
       "stars": 4699,
       "license": "0BSD",
       "homepage": "https://docs.obsidian.md",
+      "combina_con": [
+        {
+          "id": "obsidian-releases",
+          "motivo": "Directorio donde se envía el plugin terminado.",
+          "orden_instalacion": "Publica una release en GitHub y abre el PR en obsidian-releases."
+        },
+        {
+          "id": "obsidian-skills",
+          "motivo": "La skill `obsidian-cli` incluye desarrollo de plugins y temas con la CLI de Obsidian.",
+          "orden_instalacion": "Instala obsidian-skills en el agente antes de pedirle cambios al plugin."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente para escribir y depurar el plugin a partir de la plantilla. (combinación por arquitectura)",
+          "orden_instalacion": "Abre el repo del plugin con el agente."
+        }
+      ],
+      "que_es": "Plantilla oficial para crear plugins de Obsidian en TypeScript. Licencia 0BSD. Es estable (~5k estrellas, 1.0.0).",
+      "que_hace": "Muestra lo básico de la API de plugins: icono en la barra lateral, comando que abre un modal, pestaña de ajustes, eventos globales e intervalos. Sirve como punto de partida que se clona y se adapta. Depende de la API más reciente (`obsidian.d.ts`) con comentarios TSDoc.",
+      "como_lo_hace": "Se crea un repo desde la plantilla, se clona dentro de `.obsidian/plugins/` de un vault de pruebas, se ejecuta `npm i` y `npm run dev`, y se recarga Obsidian. Requiere Node.js. Para publicar se siguen la guía de envío y las políticas de desarrolladores.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md",
+        "https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin",
+        "https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/obsidian-sample-plugin",
+        "archived": false,
+        "pushed_at": "2026-08-02",
+        "license": "0BSD",
+        "primary_language": "TypeScript",
+        "latest_release": "1.0.0 (2020-10-28)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.",
       "body": "Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.",
       "install": {
@@ -82027,7 +82534,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-releases",
+          "label": "obsidian-releases"
+        },
+        {
+          "id": "obsidian-skills",
+          "label": "obsidian-skills"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -82054,7 +82574,12 @@
       "desc": "Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir un diario de decisiones entre agentes; Consultar apuntes con búsqueda y fuentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "yt-dlp",
+        "obsidian-skills"
+      ],
       "alt": [
         "claude-obsidian"
       ],
@@ -82172,6 +82697,51 @@
       "stars": 5324,
       "license": "MIT",
       "homepage": "https://theaioperator.io",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plataforma principal: plugin nativo de Claude Code.",
+          "orden_instalacion": "Instala Claude Code y el plugin desde su marketplace."
+        },
+        {
+          "id": "codex",
+          "motivo": "Soportado mediante el build de Agent Skills.",
+          "orden_instalacion": "Genera el build e instálalo con `npx skills add … -a codex`."
+        },
+        {
+          "id": "yt-dlp",
+          "motivo": "Descargar vídeos para la ingesta visual (`--visual`), como documenta el README.",
+          "orden_instalacion": "Instala yt-dlp y ffmpeg antes de usar la opción `--visual`."
+        },
+        {
+          "id": "obsidian-skills",
+          "motivo": "Formatos oficiales de Obsidian (Bases, Canvas) para las notas que escribe el agente. (combinación por arquitectura)",
+          "orden_instalacion": "Instala obsidian-skills en el mismo agente."
+        }
+      ],
+      "que_es": "Skill y plugin que da memoria persistente a agentes de programación usando un vault de Obsidian, creado por @eugeniughelbur. Licencia MIT. Es muy activo (~5k estrellas, v0.20.0) y el README promociona un boletín del autor.",
+      "que_hace": "Durante la conversación guarda lo importante en notas enlazadas del vault, que la siguiente sesión vuelve a leer. Ofrece 49 comandos para guardar, buscar, visualizar el vault como canvas e ingerir fuentes (PDF, Markdown, DOCX/ODT y vídeos; con `--visual` usa yt-dlp y ffmpeg para extraer fotogramas). Incluye un logbook compartido (`/crew`) que funciona sin Obsidian y un agente en segundo plano opcional.",
+      "como_lo_hace": "Requiere Claude Code (u otra de las plataformas soportadas), `git` y `uv` para los scripts de Python. En Claude Code se instala con `/plugin marketplace add eugeniughelbur/obsidian-second-brain` y `/plugin install obsidian-second-brain@obsidian-second-brain`; para Codex, OpenCode y Antigravity hay un build con el formato Agent Skills (`npx skills add …`). El agente en segundo plano corre sin supervisión con `--dangerously-skip-permissions`, así que viene desactivado y hay que armarlo a mano.",
+      "descripcion_notas": "Alternativas (elige una): claude-obsidian. No armes el agente en segundo plano sin revisar qué puede escribir.",
+      "descripcion_fuentes": [
+        "https://github.com/eugeniughelbur/obsidian-second-brain/blob/main/README.md",
+        "https://github.com/eugeniughelbur/obsidian-second-brain#install"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "eugeniughelbur/obsidian-second-brain",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v0.20.0 (2026-10-25)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.",
       "body": "Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.",
       "install": {
@@ -82185,7 +82755,24 @@
           "label": "claude-obsidian"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "yt-dlp",
+          "label": "yt-dlp"
+        },
+        {
+          "id": "obsidian-skills",
+          "label": "obsidian-skills"
+        }
+      ],
       "areas": [
         "productividad",
         "configurar-claude-code",
@@ -82219,7 +82806,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Guiar un agente para trabajar con notas; Crear bases y lienzos en formatos Obsidian",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "obsidian-releases"
+        "claude-code",
+        "codex",
+        "jsoncanvas",
+        "defuddle"
       ],
       "alt": [],
       "stack": "Agente compatible con Agent Skills; Obsidian y CLI solo para acciones que lo necesiten",
@@ -82334,6 +82924,52 @@
       "stars": 52635,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Instalación nativa por su marketplace de plugins.",
+          "orden_instalacion": "Ejecuta los dos comandos del marketplace en Claude Code."
+        },
+        {
+          "id": "codex",
+          "motivo": "Instalación nativa por el marketplace de plugins de Codex.",
+          "orden_instalacion": "Ejecuta `codex plugin marketplace add obsidianmd/obsidian-skills` e instala Obsidian."
+        },
+        {
+          "id": "jsoncanvas",
+          "motivo": "La skill `json-canvas` implementa esta especificación.",
+          "orden_instalacion": "Instala las skills; la especificación sirve de referencia."
+        },
+        {
+          "id": "defuddle",
+          "motivo": "La skill `defuddle` usa esta herramienta para extraer Markdown de webs.",
+          "orden_instalacion": "Instala Defuddle antes de usar esa skill."
+        }
+      ],
+      "que_es": "Skills oficiales de Obsidian para agentes de IA, según la especificación Agent Skills. Licencia MIT. Es muy popular (~53k estrellas, 1.1.0).",
+      "que_hace": "Enseña a los agentes a trabajar con formatos y herramientas de Obsidian mediante siete skills: `obsidian-markdown`, `obsidian-bases` (`.base`), `json-canvas` (`.canvas`), `obsidian-cli` (vaults, plugins y temas), `obsidian-headless` (sincronizar y publicar sin la app de escritorio), `defuddle` (extraer Markdown limpio de webs) y `knap` (plantillas Markdown desde JSON o CSV).",
+      "como_lo_hace": "Se instala con el marketplace de Claude Code (`claude plugin marketplace add obsidianmd/obsidian-skills` y `claude plugin install obsidian@obsidian-skills`), con el de Codex, desde el Marketplace de Cursor o con `npx skills add`. También se puede copiar `plugins/obsidian/skills/` al directorio de skills del agente o clonar el repo en el de OpenCode. Algunas skills requieren las herramientas que describen (CLI de Obsidian, Defuddle).",
+      "descripcion_notas": "Sin alternativas declaradas. Se sustituye la combinación con obsidian-releases por integraciones documentadas.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/obsidian-skills/blob/main/README.md",
+        "https://agentskills.io/specification",
+        "https://help.obsidian.md/cli"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/obsidian-skills",
+        "archived": false,
+        "pushed_at": "2026-11-11",
+        "license": "MIT",
+        "primary_language": "Shell",
+        "latest_release": "1.1.0 (2026-11-11)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos.",
       "body": "Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos.",
       "install": {
@@ -82344,8 +82980,20 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "obsidian-releases",
-          "label": "obsidian-releases"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "jsoncanvas",
+          "label": "jsoncanvas"
+        },
+        {
+          "id": "defuddle",
+          "label": "defuddle"
         }
       ],
       "areas": [
@@ -82380,7 +83028,11 @@
       "desc": "Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una distribución oficial; Estudiar el catálogo de temas y plugins",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "obsidian-sample-plugin",
+        "obsidian-minimal",
+        "obsidian-importer"
+      ],
       "alt": [],
       "stack": "Navegador; instalador Obsidian compatible",
       "repo_url": "https://github.com/obsidianmd/obsidian-releases",
@@ -82488,6 +83140,45 @@
       "stars": 23279,
       "license": "",
       "homepage": "https://obsidian.md",
+      "combina_con": [
+        {
+          "id": "obsidian-sample-plugin",
+          "motivo": "Plantilla oficial para crear un plugin que luego se envía a este directorio.",
+          "orden_instalacion": "Crea el plugin desde la plantilla, publica una release y abre el PR aquí."
+        },
+        {
+          "id": "obsidian-minimal",
+          "motivo": "Ejemplo de tema distribuido mediante este directorio.",
+          "orden_instalacion": "Instálalo desde el navegador de temas."
+        },
+        {
+          "id": "obsidian-importer",
+          "motivo": "Ejemplo de plugin oficial distribuido mediante este directorio.",
+          "orden_instalacion": "Instálalo desde el navegador de plugins."
+        }
+      ],
+      "que_es": "Repositorio de Obsidian para las releases públicas de la app y los directorios de plugins y temas de la comunidad. No tiene archivo de licencia y no contiene el código de Obsidian, que no es open source. Es muy activo (~23k estrellas, v1.15.1).",
+      "que_hace": "Aloja los instaladores de Obsidian y los archivos JSON de los directorios de plugins y temas de la comunidad que la app consulta. Es donde los desarrolladores envían por pull request sus plugins y temas para que aparezcan en Obsidian. No acepta issues: los problemas de plugins van a sus repos y los de Obsidian, al foro.",
+      "como_lo_hace": "Los usuarios no lo instalan: la app lee estos directorios. Para publicar un plugin o tema se sigue la guía oficial de envío y las políticas para desarrolladores; `manifest.json` y `versions.json` controlan la compatibilidad con versiones de la app.",
+      "descripcion_notas": "Sin alternativas declaradas. Obsidian no es open source; este repo es solo distribución.",
+      "descripcion_fuentes": [
+        "https://github.com/obsidianmd/obsidian-releases/blob/master/README.md",
+        "https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin",
+        "https://docs.obsidian.md/Developer+policies"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "obsidianmd/obsidian-releases",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "latest_release": "v1.15.1 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación.",
       "body": "Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación.",
       "install": {
@@ -82496,7 +83187,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "obsidian-sample-plugin",
+          "label": "obsidian-sample-plugin"
+        },
+        {
+          "id": "obsidian-minimal",
+          "label": "obsidian-minimal"
+        },
+        {
+          "id": "obsidian-importer",
+          "label": "obsidian-importer"
+        }
+      ],
       "areas": [
         "productividad"
       ],
@@ -82525,7 +83229,11 @@
       "desc": "Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una actividad de estudio; Crear un borrador de clase con materiales propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openclaw",
+        "ollama",
+        "codex"
+      ],
       "alt": [],
       "stack": "Node y pnpm; modelo; servicios de audio o imágenes según clase; material propio",
       "repo_url": "https://github.com/THU-MAIC/OpenMAIC",
@@ -82640,6 +83348,47 @@
       "stars": 43571,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "openclaw",
+          "motivo": "Generar clases desde el agente con la skill oficial de OpenMAIC (integración documentada).",
+          "orden_instalacion": "Despliega OpenMAIC e instala su skill en OpenClaw."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Modelos locales soportados desde v0.1.1.",
+          "orden_instalacion": "Levanta Ollama y selecciónalo como proveedor en OpenMAIC."
+        },
+        {
+          "id": "codex",
+          "motivo": "Entorno de agente soportado por la skill de OpenMAIC.",
+          "orden_instalacion": "Instala la skill de OpenMAIC en Codex."
+        }
+      ],
+      "que_es": "OpenMAIC (Open Multi-Agent Interactive Classroom), plataforma open source de la organización THU-MAIC (afiliación universitaria no declarada en el README [DATO NO VERIFICADO]), con un artículo en JCST'26. Licencia MIT desde v0.3.0. Es muy activa y crece rápido (~44k estrellas, v1.4.2; v1.5.0-rc.2 en pruebas).",
+      "que_hace": "Convierte un tema o documento en una clase interactiva con varios agentes: profesor y compañeros que hablan con TTS, dibujan en una pizarra y escriben fórmulas. Genera diapositivas, cuestionarios, simulaciones HTML interactivas y aprendizaje basado en proyectos, con un editor asistido por IA y chat sobre cualquier elemento de la clase. Una skill permite generar clases desde OpenClaw, Codex y otros entornos de agentes, incluso desde Feishu, Slack o Telegram.",
+      "como_lo_hace": "Es una app TypeScript (Node.js ≥ 22.19, pnpm) con PostgreSQL; se despliega con `docker compose up --build` (dos contenedores, app y base de datos) o en desarrollo con `pnpm install`. Admite muchos proveedores de modelos (OpenAI, Anthropic, Gemini, DeepSeek, Qwen, Grok/xAI, OpenRouter, etc.), Ollama desde v0.1.1, IA local con Lemonade y reconocimiento de voz local con FunASR. Las claves y los modelos se configuran por variables de entorno o ajustes.",
+      "descripcion_notas": "Sin alternativas declaradas en el catálogo. Revisa costes: una clase completa hace muchas llamadas a modelos, TTS e imágenes.",
+      "descripcion_fuentes": [
+        "https://github.com/THU-MAIC/OpenMAIC/blob/main/README.md",
+        "https://open.maic.chat/",
+        "https://jcst.ict.ac.cn/en/article/doi/10.1007/s11390-025-6000-0"
+      ],
+      "descripcion_revision": {
+        "batch": "19-personal-notas-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "THU-MAIC/OpenMAIC",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.4.2 (2026-11-09)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables.",
       "body": "Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables.",
       "install": {
@@ -82648,7 +83397,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "openclaw",
+          "label": "openclaw"
+        },
+        {
+          "id": "ollama",
+          "label": "ollama"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
       "areas": [
         "productividad",
         "configurar-claude-code",

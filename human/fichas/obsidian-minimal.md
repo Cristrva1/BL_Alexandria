@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Tema Minimal para Obsidian (escritorio, móvil y tablet), de @kepano. Licencia MIT. Es uno de los temas más usados y maduros (~6k estrellas, 9.1.4, activo).
+
+## ¿Qué hace?
+
+Da a Obsidian una interfaz limpia y personalizable: esquemas de color, fuentes, anchos de línea, clases auxiliares para tablas, imágenes y tarjetas, y compatibilidad con plugins populares. Sus plugins complementarios son Minimal Theme Settings (ajustes), Hider (ocultar elementos de la interfaz) y Style Settings (personalización avanzada, opcional). Existe una versión aparte para Obsidian Publish.
+
+## ¿Cómo lo hace?
+
+Se instala desde Ajustes → Apariencia → Temas de la comunidad, y los plugins complementarios desde Plugins de la comunidad. El código es CSS compilado con npm para quien quiera contribuir. La documentación completa está en minimal.guide.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Obsidian: distribución y extensiones](obsidian-releases.md) | Se distribuye a través del directorio oficial de temas de la comunidad, alojado en ese repo. | Instálalo desde el navegador de temas de Obsidian. |
+| [kepano-obsidian](kepano-obsidian.md) | Plantilla de vault del mismo autor pensada para este tema. (combinación por arquitectura) | Abre la plantilla y activa Minimal. |
+| [obsidian-clipper](obsidian-clipper.md) | Lectura cómoda de los artículos capturados. (combinación por arquitectura) | Captura con el Web Clipper y lee las notas con Minimal. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 9.1.4 (2026-10-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kepano/obsidian-minimal/blob/master/README.md) · [2](https://minimal.guide)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No necesitas compilar con npm para usar el tema; las opciones avanzadas pueden depender de plugins adicionales |
 | Coste | Sin pago a un modelo en la ruta básica. No usa IA ni API; el tema tiene licencia MIT y Obsidian mantiene sus términos propios |
 | Equipo | Preparación según la ruta elegida. Obsidian; tema Minimal; complementos solo si deseas sus opciones |
-
-No necesitas compilar con npm para usar el tema; las opciones avanzadas pueden depender de plugins adicionales
-
-## Qué puedes hacer con él
-
-Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas.
-
-## Por qué destaca
-
-Usos propuestos: Ajustar tipografía de una bóveda; Crear una interfaz de notas con menos distracciones.
-
-## Cómo funciona
 
 No necesitas compilar con npm para usar el tema; las opciones avanzadas pueden depender de plugins adicionales
 
