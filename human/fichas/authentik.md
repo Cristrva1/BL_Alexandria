@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
+**Nivel:** 3 Avanzado — proveedor de identidad con Docker Compose y flujos a configurar · corregido a mano
+
 **Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Nivel:** 1 Básico — preparación sencilla
+
 ## ¿Qué es?
 
 Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de 2026; el repositorio de GitHub (mrmn2/PdfDing) está archivado y solo conserva la historia hasta agosto de 2026. Es un proyecto maduro mantenido principalmente por una persona, que se sostiene con donaciones.

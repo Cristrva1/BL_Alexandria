@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Nivel:** 2 Intermedio — preparación media; requiere programar con él; requiere clave de API
+
 **Puntuación de calidad** 37/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

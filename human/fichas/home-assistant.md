@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Nivel:** 2 Intermedio — imagen Home Assistant OS o contenedor; la dificultad crece con las integraciones · corregido a mano
+
 **Puntuación de calidad** 83/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

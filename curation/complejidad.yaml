@@ -1,0 +1,40 @@
+# Correcciones manuales del nivel de complejidad (1 Básico · 2 Intermedio · 3 Avanzado · 4 Experto).
+# Revisadas el 2026-11-16 sobre la salida automática (quality/complexity.py). La corrección siempre gana.
+correcciones:
+  # Apps con instalador o un solo binario que la heurística sobrestima
+  handbrake: {nivel: 1, motivo: "app de escritorio con instalador para Windows, macOS y Linux"}
+  adguardhome: {nivel: 1, motivo: "un binario o contenedor con asistente web de configuración"}
+  casaos: {nivel: 1, motivo: "instalador de una línea con panel web"}
+  coolify: {nivel: 2, motivo: "instalador de una línea; después hay que configurar dominios y despliegues"}
+  immich: {nivel: 2, motivo: "Docker Compose documentado paso a paso; app móvil lista"}
+  home-assistant: {nivel: 2, motivo: "imagen Home Assistant OS o contenedor; la dificultad crece con las integraciones"}
+  vaultwarden: {nivel: 2, motivo: "un contenedor; requiere HTTPS y copias de seguridad"}
+  paperless-ngx: {nivel: 2, motivo: "Docker Compose con script de instalación"}
+  photoprism: {nivel: 2, motivo: "Docker Compose documentado; GPU opcional"}
+  karakeep: {nivel: 2, motivo: "Docker Compose documentado"}
+  textgen: {nivel: 2, motivo: "instaladores de un clic por sistema"}
+  rembg: {nivel: 2, motivo: "pip o CLI; GPU opcional"}
+  faster-whisper: {nivel: 2, motivo: "pip install; funciona en CPU, la GPU acelera"}
+  ilspy: {nivel: 2, motivo: "app de escritorio; hay que saber leer código .NET"}
+  jadx: {nivel: 2, motivo: "app con interfaz gráfica; hay que saber leer código Java"}
+  imhex: {nivel: 2, motivo: "editor hexadecimal con instalador"}
+  # Herramientas de uso diario que piden configuración o aprendizaje
+  godot: {nivel: 2, motivo: "instalación simple, pero crear juegos exige aprender el motor y GDScript"}
+  grafana: {nivel: 2, motivo: "servidor de paneles: hay que conectar fuentes de datos"}
+  caddy: {nivel: 2, motivo: "servidor web: hay que escribir un Caddyfile"}
+  ffmpeg: {nivel: 2, motivo: "instalación simple, pero se usa con opciones de línea de comandos"}
+  storybook: {nivel: 2, motivo: "se añade a un proyecto frontend existente"}
+  # Plataformas que la heurística lleva a 4 sin ser de dominio experto
+  keycloak: {nivel: 3, motivo: "servidor de identidad: realms, clientes y certificados"}
+  authentik: {nivel: 3, motivo: "proveedor de identidad con Docker Compose y flujos a configurar"}
+  vault: {nivel: 3, motivo: "gestión de secretos: unseal, políticas y almacenamiento"}
+  zulip: {nivel: 3, motivo: "servidor de chat con instalador propio y varios servicios"}
+  spark: {nivel: 3, motivo: "motor distribuido; en local basta pip, en clúster es avanzado"}
+  tensorflow: {nivel: 3, motivo: "pip install; usarlo exige conocimientos de ML"}
+  torchtune: {nivel: 3, motivo: "recetas de fine-tuning; necesita GPU"}
+  axolotl: {nivel: 3, motivo: "fine-tuning por YAML; necesita GPU"}
+  ten-framework: {nivel: 3, motivo: "framework de voz con diseñador visual y varios proveedores"}
+  genesis-world: {nivel: 3, motivo: "pip install; simulación física con GPU"}
+  misp: {nivel: 3, motivo: "plataforma de inteligencia con Docker; requiere curar feeds"}
+  opencti: {nivel: 3, motivo: "Docker Compose con varios servicios (Elastic, Redis, RabbitMQ)"}
+  shuffle: {nivel: 3, motivo: "SOAR con Docker Compose; flujos visuales"}

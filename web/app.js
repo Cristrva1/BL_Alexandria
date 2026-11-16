@@ -123,6 +123,7 @@
       `<span class="badge ${item.setup === "heavy" ? "terra" : item.setup === "easy" ? "green" : "gold"}">${esc(label("setup", item.setup))}</span>`,
     ];
     if (item.mcp) bits.push('<span class="badge green">MCP</span>');
+    if (item.complejidad) bits.push(`<span class="badge level-${item.complejidad.nivel}" title="${esc((item.complejidad.motivos || []).join("; "))}">Nivel ${item.complejidad.nivel} · ${esc(item.complejidad.nombre)}</span>`);
     if (item.calidad) bits.push(`<span class="badge" title="Puntuación de calidad (métricas del ${esc(item.calidad.fecha || "")})">Calidad ${Math.round(item.calidad.puntuacion)}/100</span>`);
     return `<div class="badges">${bits.join("")}</div>`;
   }
@@ -132,7 +133,7 @@
     const area = (item.areas || []).find(id => areaById[id]?.kind === "work") || (item.areas || [])[0];
     return `<article class="repo-row"${areaTone(area)}>
       <div class="repo-summary"><p class="meta">${area && areaById[area] ? `${areaIcon(area)} ${esc(areaById[area].title)}` : esc(catName(item.cat))}${status ? ` · <strong>${esc(status)}</strong>` : ""}</p>
-      <h2><a href="#/repo/${encodeURIComponent(item.id)}">${esc(item.name)}</a></h2>
+      <h2><a href="#/repo/${encodeURIComponent(item.id)}">${esc(item.name)}</a>${item.complejidad ? ` <span class="badge level-${item.complejidad.nivel}">N${item.complejidad.nivel} ${esc(item.complejidad.nombre)}</span>` : ""}</h2>
       <p>${esc(item.lead)}</p></div>
       <div class="repo-access"><span class="badge">${esc(label("api", item.access.api))}</span>
       <p class="meta">${esc(label("cost", item.access.cost))} · ${esc(preparation(item))}</p>
@@ -573,7 +574,7 @@
     const area=areaById[params.get("area")],topic=topicById[params.get("topic")];
     const chips=[];
     const addChip=(key,text)=>{const next=new URLSearchParams(params);next.delete(key);next.delete("page");if(key==="cat")next.delete("sub");if(key==="area")next.delete("topic");chips.push(`<a class="chip" href="${exploreHref(next)}">${esc(text)} <span aria-hidden="true">×</span><span class="sr-only">: quitar filtro</span></a>`);};
-    for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="area"?(area?.title||value):key==="topic"?(topic?.title||value):key==="cat"?catName(value):key==="sub"?(category?.subs.find(s=>s.key===value)?.title||value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):value;addChip(key,text);}
+    for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="area"?(area?.title||value):key==="topic"?(topic?.title||value):key==="cat"?catName(value):key==="sub"?(category?.subs.find(s=>s.key===value)?.title||value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):key==="complejidad"?`Nivel ${value} · ${({1:"Básico",2:"Intermedio",3:"Avanzado",4:"Experto"})[value]||""}`:value;addChip(key,text);}
     const groups=catalog.labels;
     return `${area?`<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a> / <a href="#/area/${esc(area.id)}">${esc(area.title)}</a>${topic?` / <span aria-current="page">${esc(topic.title)}</span>`:""}</nav>`:""}<header class="page-head${area?" tone":""}"${area?areaTone(area.id):""}><div class="title-row">${area?`<span class="icon-tile big" aria-hidden="true">${areaIcon(area.id)}</span>`:""}<h1>${esc(topic?.title||area?.title||goal?.title||"Busca una herramienta")}</h1></div><p class="lede">${esc(topic?.description||area?.description||goal?.description||"Busca una tarea, un nombre o una tecnología. Después filtra por área, acceso y requisitos.")}</p>${area&&!topic?`<div class="chip-row">${area.topics.map(t=>`<a class="chip" href="${topicHref(area,t)}">${esc(t.title)} <span class="meta">${t.count}</span></a>`).join("")}</div>`:""}</header>
       <search><form class="library-filters" id="filters" action="#/explorar" method="get">
@@ -583,6 +584,7 @@
         ${areas.length?selectField("topic","Subcategoría",[["",area?"Todas las subcategorías":"Elige primero un área"],...(area?.topics||[]).map(t=>[t.id,t.title])],params.get("topic")||"",!area):""}
         ${selectField("goal","Objetivo",[["","Cualquier objetivo"],...catalog.discovery.goals.map(item=>[item.id,item.title])],params.get("goal")||"")}
         ${selectField("route","Forma de uso",[["","Cualquier acceso"],...Object.entries(groups.route)],params.get("route")||"")}
+        ${selectField("complejidad","Nivel de complejidad",[["","Cualquier nivel"],["1","1 · Básico"],["2","2 · Intermedio"],["3","3 · Avanzado"],["4","4 · Experto"]],params.get("complejidad")||"")}
         </div>
         <details class="advanced-filters"${["role","setup","status","cat","sub"].some(key=>params.has(key))?" open":""}><summary>Más filtros: sección técnica, tipo y preparación</summary><div class="filter-grid">
         ${selectField("cat","Sección técnica",[["","Todas las secciones técnicas"],...catalog.categories.filter(cat=>cat.num>0).map(cat=>[String(cat.num),cat.title])],params.get("cat")||"")}

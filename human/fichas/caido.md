@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Nivel:** 1 Básico — preparación sencilla
+
 **Puntuación de calidad** 38/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia y costes:** Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP.

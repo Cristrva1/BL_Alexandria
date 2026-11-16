@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** hard
 
+**Nivel:** 3 Avanzado — framework de voz con diseñador visual y varios proveedores · corregido a mano
+
 **Puntuación de calidad** 43/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?

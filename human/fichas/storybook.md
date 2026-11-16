@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Nivel:** 2 Intermedio — se añade a un proyecto frontend existente · corregido a mano
+
 **Puntuación de calidad** 81/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
