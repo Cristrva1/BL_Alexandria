@@ -26,7 +26,9 @@ QUALITY_README = ['', 'Al dar de alta, `add` también calcula la puntuación de 
     'uv run repo-intelligence score --sin-red --mostrar ollama   # solo recalcula y muestra un desglose',
     'uv run repo-intelligence grupos             # regenera grupos de similares y rankings',
     'uv run repo-intelligence complejidad        # recalcula el nivel 1-4 (correcciones en curation/complejidad.yaml)',
+    'uv run repo-intelligence candidatos-retiro  # propuesta de retiro en reports/candidatos-retiro-<fecha>.md; no retira nada',
     '```', '',
+    'Un repo solo es candidato a retiro si cumple tres condiciones: puntuación menor que 45, sin commits en 365 días (o archivado) y sin caso de uso único (está en un grupo, no es el recomendado y no tiene la marca `caso_unico`). La lista es una propuesta; `data/retired.json` solo cambia por decisión editorial.', '',
     'Una acción mensual recalcula las métricas y abre un pull request; nunca empuja a `main`. El archivo está en `infra/github-actions/metricas-mensuales.yml`: para activarla, cópialo a `.github/workflows/` (publicar workflows exige el permiso `workflow` de GitHub). Para que pueda abrir el PR hay que activar además en GitHub **Settings → Actions → General → Workflow permissions → «Allow GitHub Actions to create and approve pull requests»**.']
 
 
