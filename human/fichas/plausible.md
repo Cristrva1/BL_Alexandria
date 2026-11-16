@@ -26,7 +26,7 @@ Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community 
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos (sustituye a la antigua combinación con n8n). | Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos. | Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces. |
 | [Grafana](grafana.md) | Paneles propios sobre la API o la base ClickHouse de CE. (combinación por arquitectura) | Conecta Grafana a ClickHouse en una instancia CE. |
 | [supabase](supabase.md) | Analítica sin cookies para apps alojadas sobre Supabase. (combinación por arquitectura) | Añade el script de Plausible al frontend. |
 

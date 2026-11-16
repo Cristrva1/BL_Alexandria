@@ -29,6 +29,7 @@ Python. Usa PostgreSQL para conversaciones, memoria y actividad, y ofrece planti
 | [claude-agent-sdk-python](claude-agent-sdk-python.md) | SDK soportado para construir agentes que AgentOS sirve. | Instala Agno y el SDK de Claude Agent en el mismo entorno. |
 | [Qdrant](qdrant.md) | Almacén vectorial para la base de conocimiento (documentado por Agno). | Qdrant primero; configúralo en el knowledge del agente. |
 | [mem0](mem0.md) | Memoria externa con integración documentada por Mem0. | Opcional: Agno ya trae memoria propia sobre PostgreSQL. |
+| [500-AI-Agents-Projects](500-ai-agents-projects.md) | Combinación recíproca: 500-AI-Agents-Projects lo enlaza como «Framework usado en muchos de los agentes listados». | Orden indicado desde 500-AI-Agents-Projects: Instálalo según el requirements del ejemplo. |
 
 **Notas:** Alternativas (elige una): crewai, langgraph. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.
 

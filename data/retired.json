@@ -1035,6 +1035,38 @@
       "replaced_by": [
         "activepieces"
       ]
+    },
+    {
+      "id": "awesome-n8n-templates",
+      "gh": "enescingoz/awesome-n8n-templates",
+      "github_id": 980205160,
+      "name": "Awesome n8n Templates",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Ecosistema n8n, retirado por decisión editorial. Colección de plantillas que solo sirve con n8n, retirado del catálogo.",
+      "last_commit": "2026-09-12",
+      "archived": false,
+      "replaced_by": [
+        "activepieces"
+      ]
+    },
+    {
+      "id": "self-hosted-ai-starter-kit",
+      "gh": "n8n-io/self-hosted-ai-starter-kit",
+      "github_id": 762303728,
+      "name": "Self-hosted AI Starter Kit",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Ecosistema n8n, retirado por decisión editorial. Plantilla Docker Compose centrada en n8n (con Ollama, Qdrant y PostgreSQL).",
+      "last_commit": "2026-11-12",
+      "archived": false,
+      "replaced_by": [
+        "ollama",
+        "qdrant",
+        "open-webui"
+      ]
     }
   ]
 }

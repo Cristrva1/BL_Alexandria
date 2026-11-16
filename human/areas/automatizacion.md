@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-44 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+59 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -18,40 +18,33 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [activepieces](../fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
+| [Apache Airflow](../fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Sin clave propia de API de IA en la ruta básica |
+| [Dagster](../fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica |
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
 | [Node-RED](../fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica |
-| [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
+| [Prefect](../fichas/prefect.md) | Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización. | Sin clave propia de API de IA en la ruta básica |
+| [Temporal](../fichas/temporal.md) | Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor. | Sin clave propia de API de IA en la ruta básica |
 | [Trigger.dev](../fichas/trigger-dev.md) | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. | API de IA opcional |
 | [Windmill](../fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional |
-
-### n8n: plantillas, skills y conectores
-
-Recursos específicos para construir y mantener flujos de n8n.
-
-[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-n8n)
-
-| Repositorio | Para qué sirve | API de IA |
-|---|---|---|
-| [Awesome n8n Templates](../fichas/awesome-n8n-templates.md) | Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. | Depende de la ruta elegida |
-| [Self-hosted AI Starter Kit](../fichas/self-hosted-ai-starter-kit.md) | Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos. | Sin clave propia de API de IA en la ruta básica |
 
 ### WhatsApp y pasarelas de mensajería
 
 Distinguir conexiones oficiales,pasarelas y bibliotecas de WhatsApp.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-whatsapp)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-whatsapp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Baileys](../fichas/baileys.md) | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. | Sin clave propia de API de IA en la ruta básica |
 | [evolution-api](../fichas/evolution-api.md) | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. | API de IA opcional |
 | [OpenWA](../fichas/openwa.md) | Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA. | Sin clave propia de API de IA en la ruta básica |
+| [signal-cli](../fichas/signal-cli.md) | Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal. | Sin clave propia de API de IA en la ruta básica |
 | [WAHA](../fichas/waha.md) | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | Sin clave propia de API de IA en la ruta básica |
 | [whatsapp-agentkit](../fichas/whatsapp-agentkit.md) | Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales. | API de IA necesaria |
 | [whatsapp-web.js](../fichas/whatsapp-web-js.md) | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. | Sin clave propia de API de IA en la ruta básica |
@@ -61,15 +54,18 @@ Distinguir conexiones oficiales,pasarelas y bibliotecas de WhatsApp.
 
 Gestionar clientes, oportunidades y conversaciones con personas.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-crm)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-crm)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [chatwoot](../fichas/chatwoot.md) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | API de IA opcional |
 | [crm](../fichas/compai-crm.md) | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. | API de IA opcional |
 | [ERPNext](../fichas/erpnext.md) | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. | Sin clave propia de API de IA en la ruta básica |
+| [EspoCRM](../fichas/espocrm.md) | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. | Sin clave propia de API de IA en la ruta básica |
+| [FreeScout](../fichas/freescout.md) | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. | Sin clave propia de API de IA en la ruta básica |
 | [Odoo](../fichas/odoo.md) | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. | API de IA opcional |
 | [twenty-main](../fichas/twenty-main.md) | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. | API de IA opcional |
+| [Zammad](../fichas/zammad.md) | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. | Sin clave propia de API de IA en la ruta básica |
 
 ### Email, campañas y redes sociales
 
@@ -109,44 +105,53 @@ Guías para que tu agente prepare análisis, mensajes y contenido.
 
 Crear herramientas de operación y formularios sobre tus datos.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-apps)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-apps)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Appsmith](../fichas/appsmith.md) | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. | API de IA opcional |
+| [Baserow](../fichas/baserow.md) | Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first. | API de IA opcional |
 | [Budibase](../fichas/budibase.md) | Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. | API de IA opcional |
+| [Grist](../fichas/grist-core.md) | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite. | API de IA opcional |
 | [NocoDB](../fichas/nocodb.md) | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas. | Sin clave propia de API de IA en la ruta básica |
+| [Teable](../fichas/teable.md) | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA. | API de IA opcional |
 | [ToolJet](../fichas/tooljet.md) | Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. | API de IA opcional |
 
 ### Reservas y citas
 
 Organizar disponibilidad y reserva de horarios.
 
-[Explorar 1 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-reservas)
+[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-reservas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [cal.diy](../fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica |
+| [Easy!Appointments](../fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Sin clave propia de API de IA en la ruta básica |
 
 ### Constructores de conversaciones
 
 Diseñar flujos conversacionales y conectar canales.
 
-[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-chatbots)
+[Explorar 4 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-chatbots)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Botpress](../fichas/botpress.md) | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. | Depende de la ruta elegida |
+| [discord.js](../fichas/discord-js.md) | Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway. | Sin clave propia de API de IA en la ruta básica |
+| [python-telegram-bot](../fichas/python-telegram-bot.md) | Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel. | Sin clave propia de API de IA en la ruta básica |
 | [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | API de IA opcional |
 
 ### Comunidades,chat y llamadas
 
 Organizar espacios compartidos de comunicación.
 
-[Explorar 1 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-comunidades)
+[Explorar 4 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-comunidades)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [fluxer](../fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
+| [Mattermost](../fichas/mattermost.md) | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. | Sin clave propia de API de IA en la ruta básica |
+| [Rocket.Chat](../fichas/rocket-chat.md) | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. | Sin clave propia de API de IA en la ruta básica |
+| [Synapse](../fichas/synapse.md) | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

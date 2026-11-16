@@ -22,6 +22,24 @@
      "id": "ollama",
      "motivo": "Dar a Nextcloud Assistant un modelo local mediante un backend compatible con la API de OpenAI. (combinación por arquitectura) (la app integration_openai admite endpoints compatibles; la compatibilidad concreta con Ollama es [DATO NO VERIFICADO] en este lote)",
      "orden_instalacion": "Levanta Ollama, instala la app de integración y apunta su URL al endpoint compatible."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor.",
+     "reciproca_de": "casaos"
+    },
+    {
+     "id": "immich",
+     "motivo": "Combinación recíproca: Immich lo enlaza como «Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Immich: Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa.",
+     "reciproca_de": "immich"
+    },
+    {
+     "id": "photoprism",
+     "motivo": "Combinación recíproca: PhotoPrism lo enlaza como «PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PhotoPrism: Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism.",
+     "reciproca_de": "photoprism"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.",
@@ -31,7 +49,6 @@
     "https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html",
     "https://apps.nextcloud.com/apps/integration_openai",
     "https://coolify.io/docs/services/nextcloud",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nextcloud/",
     "https://www.home-assistant.io/integrations/nextcloud/"
    ],
    "github": {
@@ -63,6 +80,24 @@
      "id": "vaultwarden",
      "motivo": "Dar un nombre local (p. ej. `vault.casa`) a los servicios autoalojados con las reescrituras DNS de AdGuard Home. (combinación por arquitectura)",
      "orden_instalacion": "Configura la reescritura DNS hacia el proxy inverso que publica Vaultwarden con HTTPS."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Combinación recíproca: CasaOS lo enlaza como «DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CasaOS: Instálalo como app.",
+     "reciproca_de": "casaos"
+    },
+    {
+     "id": "cleanyourtv",
+     "motivo": "Combinación recíproca: cleanyourtv lo enlaza como «Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cleanyourtv: Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor.",
+     "reciproca_de": "cleanyourtv"
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Combinación recíproca: optimizerDuck lo enlaza como «Bloqueo de telemetría a nivel de red que complementa los ajustes locales. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde optimizerDuck: Configura AdGuard Home como DNS y luego aplica los ajustes de privacidad en Windows.",
+     "reciproca_de": "optimizerduck"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador.",
@@ -102,6 +137,18 @@
      "id": "activepieces",
      "motivo": "Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura)",
      "orden_instalacion": "Crea un token de API en Audiobookshelf y úsalo en la pieza HTTP de Activepieces."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "jellyfin"
+    },
+    {
+     "id": "kavita",
+     "motivo": "Combinación recíproca: Kavita lo enlaza como «Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kavita: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "kavita"
     }
    ],
    "notas": "Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.",
@@ -146,8 +193,7 @@
    "fuentes": [
     "https://github.com/bitwarden/clients/blob/main/README.md",
     "https://github.com/bitwarden/clients/blob/main/LICENSE.txt",
-    "https://bitwarden.com/help/self-host-an-organization/",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitwarden/"
+    "https://bitwarden.com/help/self-host-an-organization/"
    ],
    "github": {
     "name_with_owner": "bitwarden/clients",
@@ -215,6 +261,18 @@
      "id": "syncthing",
      "motivo": "Supervisar carpetas y dispositivos de Syncthing con la integración oficial.",
      "orden_instalacion": "Crea una clave de API en Syncthing y añade la integración."
+    },
+    {
+     "id": "nextcloud-server",
+     "motivo": "Combinación recíproca: server lo enlaza como «Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud».",
+     "orden_instalacion": "Orden indicado desde server: Activa la integración en Home Assistant con un usuario administrador de Nextcloud.",
+     "reciproca_de": "nextcloud-server"
+    },
+    {
+     "id": "node-red",
+     "motivo": "Combinación recíproca: Node-RED lo enlaza como «El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar».",
+     "orden_instalacion": "Orden indicado desde Node-RED: Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED.",
+     "reciproca_de": "node-red"
     }
    ],
    "notas": "Sin alternativas declaradas. Exponer entidades por MCP da control físico de la casa a un modelo: limita qué entidades se exponen.",
@@ -223,8 +281,7 @@
     "https://www.home-assistant.io/installation/",
     "https://www.home-assistant.io/integrations/ollama/",
     "https://www.home-assistant.io/integrations/mcp_server/",
-    "https://www.home-assistant.io/integrations/mcp/",
-    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.homeassistant/"
+    "https://www.home-assistant.io/integrations/mcp/"
    ],
    "github": {
     "name_with_owner": "home-assistant/core",
@@ -260,6 +317,12 @@
      "id": "audiobookshelf",
      "motivo": "Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura)",
      "orden_instalacion": "Comparte la carpeta de la biblioteca en Syncthing."
+    },
+    {
+     "id": "spotdl",
+     "motivo": "Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing.",
+     "reciproca_de": "spotdl"
     }
    ],
    "notas": "Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.",
@@ -298,6 +361,12 @@
      "id": "claude-code",
      "motivo": "Consultar y organizar marcadores desde un agente con las skills y la CLI documentadas de Karakeep.",
      "orden_instalacion": "Instala la CLI, crea una clave de API e instala la skill en el agente."
+    },
+    {
+     "id": "archivebox",
+     "motivo": "Combinación recíproca: ArchiveBox lo enlaza como «Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ArchiveBox: Exporta los enlaces de Karakeep e impórtalos en ArchiveBox.",
+     "reciproca_de": "archivebox"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre.",
@@ -413,6 +482,18 @@
      "id": "adguardhome",
      "motivo": "Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)",
      "orden_instalacion": "Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor."
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Combinación recíproca: optimizerDuck lo enlaza como «Misma filosofía para el televisor Android. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde optimizerDuck: Úsalos por separado, cada uno en su plataforma.",
+     "reciproca_de": "optimizerduck"
+    },
+    {
+     "id": "universal-android-debloater-next-generation",
+     "motivo": "Combinación recíproca: universal-android-debloater-next-generation lo enlaza como «Misma técnica (ADB, `pm`) para televisores Android. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde universal-android-debloater-next-generation: Úsalos por separado con el mismo ADB instalado.",
+     "reciproca_de": "universal-android-debloater-next-generation"
     }
    ],
    "notas": "Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (MIT). Da acceso ADB al agente solo mientras dure la tarea.",

@@ -32,8 +32,39 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una copia de un proyecto y pide una explicación antes de aceptar cambios y commits
 **Qué comprobar:** Puedes revisar archivos incluidos y cualquier diff propuesto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `ollama`, `tree-sitter`
+**Combina con:** `litellm`, `ollama`, `tree-sitter`, `ast-grep`, `openidea`, `swe-bench`
 **Alternativas (elige una):** `opencode`, `cline`
+
+## `antigravity-cli`
+role=app · exec=hybrid · setup=easy · mcp=True · prov=google · tags=coding,agents,cli,google
+
+**Qué es:** Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Inicia sesión con una cuenta de Google (o un proyecto de GCP para empresa); no pide una clave de API propia en la ruta básica.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Acceso oficial con sesión del plan
+- Modelos locales: Modelo local no documentado. No documenta modelos locales.
+- Coste: El coste depende del proveedor o la ruta. Los límites dependen de la cuenta y el plan de Google. Google recoge datos de interacción por defecto (desactivable en ajustes).
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/google-antigravity/antigravity-cli
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/google-antigravity/antigravity-cli/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Inicia agy en un proyecto de prueba y pide renombrar una función con su prueba
+**Qué comprobar:** El cambio aparece en el diff y pediste permiso antes de ejecutar comandos
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `google-skills`, `antigravity-awesome-skills`, `engram`, `context7`
+**Alternativas (elige una):** `gemini-cli`, `claude-code`, `codex`
 
 ## `claude-code`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=anthropic,mcp · tags=coding-agent,agents,mcp,typescript
@@ -64,7 +95,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar el archivo citado y la configuración de acceso
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `superpowers`, `anthropic-skills`, `claude-mem`, `context7`
-**Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`
+**Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`, `antigravity-cli`
 
 ## `cline`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
@@ -94,8 +125,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa Plan mode para pedir un diagnóstico de un archivo antes de pasar a Act
 **Qué comprobar:** Puedes revisar el plan y los permisos solicitados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `context7`, `playwright-mcp`
-**Alternativas (elige una):** `aider`
+**Combina con:** `ollama`, `context7`, `playwright-mcp`, `omniroute`, `awesome-mcp-clients`
+**Alternativas (elige una):** `aider`, `kilocode`
 
 ## `codex`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=openai,mcp · tags=coding-agent,agents,rust
@@ -127,7 +158,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar los archivos usados y el alcance de la propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `agent-skills`, `spec-kit`, `context7`, `t3code`
-**Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
+**Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`, `antigravity-cli`
+
+## `deepseek-harness`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=deepseek,anthropic,openai,local · tags=agents,coding,plugins,typescript
+
+**Qué es:** Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de modelos configurables.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. Necesita un proveedor: clave de DeepSeek, un proveedor de terceros incluido (Anthropic, OpenAI, Kimi, GLM) o una API propia compatible.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La guía de proveedores admite una API personalizada para un servidor autoalojado; el harness no incluye modelos.
+- Coste: El coste depende del proveedor o la ruta. El consumo se paga al proveedor elegido. Un servidor local consume tu hardware.
+- Equipo: Equipo normal; revisar dependencias. Node.js para `npx`; pnpm para ejecutar desde el código. Preferible una VM o contenedor desechable según su aviso de seguridad.
+**Repo:** https://github.com/deepseek-ai/deepseek-harness
+
+**Instalación** [+]:
+
+```
+npx @deepseek-ai/dsh web
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un harness de agentes extensible por plugins; Comparar proveedores de modelos desde una misma Web UI
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Abre la Web UI en una VM o contenedor, configura un proveedor y pide un resumen de un archivo ficticio
+**Qué comprobar:** El resumen aparece y el registro de la sesión muestra el proveedor elegido
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dsh-noema`, `engram`, `agentmemory`, `litellm`, `ollama`
 
 ## `gemini-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
@@ -159,7 +220,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes elegir el producto de Google apropiado antes de instalar
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `stitch-skills`, `context7`, `mcp`
-**Alternativas (elige una):** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `claude-code`, `codex`, `opencode`, `antigravity-cli`, `qwen-code`
 
 ## `goose`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,mcp,rust
@@ -192,6 +253,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `playwright-mcp`, `github-mcp-server`
 **Alternativas (elige una):** `opencode`, `claude-code`, `open-interpreter`
 
+## `kilocode`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=coding,agent,typescript,vscode
+
+**Qué es:** Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Kilo-Org/kilocode
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Kilo-Org/kilocode/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Instala la extensión desde el VS Code Marketplace, conecta un modelo y pídele que explique un archivo de tu proyecto.
+**Qué comprobar:** El agente responde y propone cambios que puedes aceptar o rechazar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `context7`, `playwright-mcp`, `github-mcp-server`
+**Alternativas (elige una):** `cline`
+
 ## `mimo-code`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,ai,ai-agents,cli,mimo,mimo-code,typescript
 
@@ -222,6 +314,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `headroom`, `rtk`, `context7`
 **Alternativas (elige una):** `opencode`
+
+## `mini-swe-agent`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=coding,agent,python,research
+
+**Qué es:** Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/SWE-agent/mini-swe-agent
+
+**Instalación** [+]:
+
+```
+pip install uv && uvx mini-swe-agent
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: resolver issues de un repositorio de forma autónoma en un contenedor; usar un agente simple como base para investigación o benchmarks
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Ejecuta `pip install uv && uvx mini-swe-agent` con una clave de modelo y pídele una tarea pequeña en un repositorio de prueba.
+**Qué comprobar:** El agente ejecuta comandos bash y propone el cambio.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `litellm`, `ollama`, `vllm`
+**Alternativas (elige una):** `openhands`
 
 ## `open-interpreter`
 role=runtime · exec=local · setup=easy · mcp=False · prov=openai,local · tags=coding-agent,local,rust
@@ -406,8 +529,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca Agent Canvas y crea una sesión que solo examine un proyecto de ejemplo
 **Qué comprobar:** Puedes reconocer agente, backend y permisos de la sesión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `sandbox`, `ecc`
-**Alternativas (elige una):** `open-swe`
+**Combina con:** `claude-code`, `codex`, `sandbox`, `ecc`, `swe-bench`
+**Alternativas (elige una):** `open-swe`, `mini-swe-agent`
 
 ## `openidea`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding,app,typescript
@@ -439,6 +562,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `opencode`, `claude-code`, `aider`
 
+## `qwen-code`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=coding,agent,cli,typescript
+
+**Qué es:** Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locales), con skills, subagentes y MCP.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/QwenLM/qwen-code
+
+**Instalación** [+]:
+
+```
+npm install -g @qwen-code/qwen-code@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: pedir desde la terminal cambios y pruebas en un repositorio; usar un modelo local o de Qwen como agente de código sin depender de un único proveedor
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Instala con `npm install -g @qwen-code/qwen-code@latest`, configura un proveedor y pídele que resuma tu repositorio.
+**Qué comprobar:** El agente lee el código y devuelve un resumen con los módulos principales.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `zed`, `ollama`, `vllm`, `openclaw`
+**Alternativas (elige una):** `gemini-cli`
+
 ## `t3code`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,ui,typescript
 
@@ -469,3 +623,33 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
 **Alternativas (elige una):** `opencode-manager`
+
+## `zed`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=editor,rust,coding,app
+
+**Qué es:** Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.
+**Stack:** Rust, Cargo.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/zed-industries/zed
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/zed-industries/zed/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga Zed para tu sistema, abre un proyecto y configura un agente externo como Gemini CLI.
+**Qué comprobar:** El agente responde en el panel de Zed y propone cambios en el proyecto.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gemini-cli`, `codex`, `qwen-code`

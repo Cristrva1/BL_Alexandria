@@ -91,6 +91,12 @@
      "id": "firecrawl",
      "motivo": "Extracción masiva complementaria. (combinación por arquitectura)",
      "orden_instalacion": "Usa Firecrawl para el rastreo y Stagehand para las interacciones."
+    },
+    {
+     "id": "steel-browser",
+     "motivo": "Combinación recíproca: Steel Browser lo enlaza como «El cookbook oficial de Steel incluye ejemplos de Stagehand en Python y TypeScript».",
+     "orden_instalacion": "Orden indicado desde Steel Browser: Arranca Steel; después sigue el ejemplo `stagehand-ts` o `stagehand-py` del cookbook.",
+     "reciproca_de": "steel-browser"
     }
    ],
    "notas": "Alternativas (elige una): browser-use, skyvern. La nube de Browserbase es de pago.",
@@ -127,6 +133,24 @@
      "id": "pydantic-ai",
      "motivo": "Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI.",
      "orden_instalacion": "Instala el extra correspondiente de pydantic-ai para el proveedor elegido."
+    },
+    {
+     "id": "sandbox",
+     "motivo": "Combinación recíproca: sandbox lo enlaza como «Navegador del sandbox para automatización. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde sandbox: Conecta browser-use al navegador expuesto.",
+     "reciproca_de": "sandbox"
+    },
+    {
+     "id": "openmanus",
+     "motivo": "Combinación recíproca: OpenManus lo enlaza como «OpenManus arranca Browser Use CLI como servidor MCP por defecto para sus acciones de navegador».",
+     "orden_instalacion": "Orden indicado desde OpenManus: Prepara uv y ejecuta `uvx browser-use install`; después lanza OpenManus.",
+     "reciproca_de": "openmanus"
+    },
+    {
+     "id": "steel-browser",
+     "motivo": "Combinación recíproca: Steel Browser lo enlaza como «El cookbook oficial de Steel incluye ejemplos de browser-use sobre sesiones de Steel».",
+     "orden_instalacion": "Orden indicado desde Steel Browser: Arranca Steel; después sigue el ejemplo `browser-use` del cookbook.",
+     "reciproca_de": "steel-browser"
     }
    ],
    "notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.",
@@ -204,6 +228,18 @@
      "id": "awesome-chrome-devtools",
      "motivo": "Ecosistema CDP.",
      "orden_instalacion": "Consulta herramientas relacionadas."
+    },
+    {
+     "id": "nanobrowser",
+     "motivo": "Combinación recíproca: Nanobrowser lo enlaza como «Nanobrowser usa Puppeteer para seguir los marcos de la página sobre la API `chrome.debugger`».",
+     "orden_instalacion": "Orden indicado desde Nanobrowser: No requiere instalación aparte: Puppeteer va incluido en la extensión.",
+     "reciproca_de": "nanobrowser"
+    },
+    {
+     "id": "steel-browser",
+     "motivo": "Combinación recíproca: Steel Browser lo enlaza como «Steel controla Chrome con Puppeteer y la documentación muestra cómo conectar Puppeteer a una sesión».",
+     "orden_instalacion": "Orden indicado desde Steel Browser: Arranca Steel con Docker; después conecta Puppeteer a la URL CDP de la sesión.",
+     "reciproca_de": "steel-browser"
     }
    ],
    "notas": "Alternativas (elige una): playwright, selenium.",
@@ -240,6 +276,18 @@
      "id": "stagehand",
      "motivo": "SDK de agentes sobre un navegador ligero. (combinación por arquitectura)",
      "orden_instalacion": "Conecta por CDP si es compatible."
+    },
+    {
+     "id": "agent-browser",
+     "motivo": "Combinación recíproca: agent-browser lo enlaza como «Navegador headless ligero vía CDP. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde agent-browser: Evalúa la compatibilidad CDP.",
+     "reciproca_de": "agent-browser"
+    },
+    {
+     "id": "awesome-chrome-devtools",
+     "motivo": "Combinación recíproca: awesome-chrome-devtools lo enlaza como «Navegador con servidor CDP. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-chrome-devtools: Evalúalo como backend.",
+     "reciproca_de": "awesome-chrome-devtools"
     }
    ],
    "notas": "Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto.",
@@ -275,6 +323,24 @@
      "id": "claude-code",
      "motivo": "Generar y mantener pruebas. (combinación por arquitectura)",
      "orden_instalacion": "Pide al agente las pruebas WebDriver."
+    },
+    {
+     "id": "flaresolverr",
+     "motivo": "Combinación recíproca: FlareSolverr lo enlaza como «FlareSolverr usa Selenium con undetected-chromedriver para controlar Chrome internamente».",
+     "orden_instalacion": "Orden indicado desde FlareSolverr: Ejecuta FlareSolverr con Docker (incluye Selenium y Chrome); después llama a su API.",
+     "reciproca_de": "flaresolverr"
+    },
+    {
+     "id": "steel-browser",
+     "motivo": "Combinación recíproca: Steel Browser lo enlaza como «Steel crea sesiones compatibles con el protocolo WebDriver de Selenium con la opción `isSelenium`».",
+     "orden_instalacion": "Orden indicado desde Steel Browser: Arranca Steel y crea la sesión con `isSelenium: true`; después conecta tu cliente de Selenium.",
+     "reciproca_de": "steel-browser"
+    },
+    {
+     "id": "ladybird",
+     "motivo": "Combinación recíproca: Ladybird lo enlaza como «Ladybird incluye un servicio WebDriver al que pueden conectarse clientes de Selenium para automatizar pruebas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Ladybird: Compila Ladybird con su servicio WebDriver; después conecta Selenium a ese endpoint.",
+     "reciproca_de": "ladybird"
     }
    ],
    "notas": "Alternativas (elige una): playwright, puppeteer.",
@@ -309,7 +375,7 @@
     },
     {
      "id": "activepieces",
-     "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos (sustituye a la antigua combinación con n8n).",
+     "motivo": "Activepieces tiene una pieza oficial `skyvern` para usar Skyvern en flujos.",
      "orden_instalacion": "Skyvern en marcha con sus credenciales; después añade la pieza `skyvern` en un flujo de Activepieces."
     }
    ],

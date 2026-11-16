@@ -29,6 +29,7 @@ Requiere PyTorch y la pila OpenMMLab (MMEngine, MMCV, MMDetection), instalada co
 | [PyTorch](pytorch.md) | Backend. | Instala una versión compatible. |
 | [OpenCV](opencv.md) | Captura y visualización. | Instala OpenCV. |
 | [EasyMocap](easymocap.md) | Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura) | Exporta los keypoints. |
+| [CVAT Community](cvat.md) | Combinación recíproca: CVAT Community lo enlaza como «CVAT incluye una función serverless con HRNet32 de MMPose para estimar pose de cuerpo completo». | Orden indicado desde CVAT Community: Despliega CVAT con el componente serverless; después instala la función de MMPose. |
 
 **Notas:** Sin alternativas declaradas. Actividad baja.
 

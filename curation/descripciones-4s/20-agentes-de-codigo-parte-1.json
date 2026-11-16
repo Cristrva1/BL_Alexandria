@@ -70,7 +70,7 @@
      "orden_instalacion": "Añade el servidor MCP de Context7."
     }
    ],
-   "notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose. No es open source.",
+   "notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose, antigravity-cli. No es open source.",
    "fuentes": [
     "https://github.com/anthropics/claude-code/blob/main/README.md",
     "https://code.claude.com/docs/en/overview"
@@ -110,7 +110,7 @@
      "orden_instalacion": "Instala T3 Code con Codex presente."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, gemini-cli, opencode.",
+   "notas": "Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.",
    "fuentes": [
     "https://github.com/openai/codex/blob/main/README.md",
     "https://developers.openai.com/codex/"
@@ -146,7 +146,7 @@
      "orden_instalacion": "Añade los endpoints MCP a la configuración."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, codex, opencode. Para uso individual, Google remite a Antigravity CLI (no catalogado).",
+   "notas": "Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).",
    "fuentes": [
     "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
     "https://antigravity.google/product/antigravity-cli"
@@ -185,6 +185,12 @@
      "id": "ecc",
      "motivo": "Configuración de agentes reutilizable. (combinación por arquitectura)",
      "orden_instalacion": "Aplica la configuración a los agentes que lances."
+    },
+    {
+     "id": "swe-bench",
+     "motivo": "Combinación recíproca: SWE-bench lo enlaza como «Evaluar agentes de programación sobre SWE-bench. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SWE-bench: Genera predicciones con el agente y evalúalas con el arnés.",
+     "reciproca_de": "swe-bench"
     }
    ],
    "notas": "Alternativas (elige una): open-swe.",
@@ -221,6 +227,18 @@
      "id": "playwright-mcp",
      "motivo": "Automatizar el navegador desde el agente. (combinación por arquitectura)",
      "orden_instalacion": "Instala el MCP de Playwright."
+    },
+    {
+     "id": "omniroute",
+     "motivo": "Combinación recíproca: OmniRoute lo enlaza como «Cliente citado en el flujo de peticiones del README».",
+     "orden_instalacion": "Orden indicado desde OmniRoute: Configura Cline con el endpoint OpenAI de OmniRoute.",
+     "reciproca_de": "omniroute"
+    },
+    {
+     "id": "awesome-mcp-clients",
+     "motivo": "Combinación recíproca: Awesome MCP Clients lo enlaza como «Cliente MCP dentro del editor. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome MCP Clients: Compáralo con los clientes listados.",
+     "reciproca_de": "awesome-mcp-clients"
     }
    ],
    "notas": "Alternativas (elige una): aider.",
@@ -363,6 +381,24 @@
      "id": "tree-sitter",
      "motivo": "Mapa del repositorio basado en Tree-sitter.",
      "orden_instalacion": "No requiere instalación aparte."
+    },
+    {
+     "id": "ast-grep",
+     "motivo": "Combinación recíproca: ast-grep lo enlaza como «Aplicar refactorizaciones masivas deterministas junto a la edición con IA. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ast-grep: Usa ast-grep para el cambio mecánico y Aider para el resto.",
+     "reciproca_de": "ast-grep"
+    },
+    {
+     "id": "openidea",
+     "motivo": "Combinación recíproca: openidea lo enlaza como «Pareja de programación con git en la terminal integrada. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde openidea: Ejecuta aider dentro del proyecto.",
+     "reciproca_de": "openidea"
+    },
+    {
+     "id": "swe-bench",
+     "motivo": "Combinación recíproca: SWE-bench lo enlaza como «Comparar el rendimiento de distintos modelos en Aider. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SWE-bench: Exporta los parches como predicciones.",
+     "reciproca_de": "swe-bench"
     }
    ],
    "notas": "Alternativas (elige una): opencode, cline. Actividad reciente baja.",

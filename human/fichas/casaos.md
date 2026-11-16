@@ -29,6 +29,7 @@ Se instala con un script en Debian, Ubuntu, Raspberry Pi OS y similares, y requi
 | [server](nextcloud-server.md) | Nube de archivos como app. (combinación por arquitectura) | Instala Nextcloud desde la tienda o como contenedor. |
 | [AdGuardHome](adguardhome.md) | DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura) | Instálalo como app. |
 | [activepieces](activepieces.md) | Automatizaciones en el servidor doméstico. (combinación por arquitectura) | Instálalo como contenedor. |
+| [MasterDnsVPN](masterdnsvpn.md) | Combinación recíproca: MasterDnsVPN lo enlaza como «Gestionar el contenedor en un servidor casero. (combinación por arquitectura)». | Orden indicado desde MasterDnsVPN: Despliega la imagen Docker. |
 
 **Notas:** Alternativa (elige una): coolify. Ritmo de releases lento.
 

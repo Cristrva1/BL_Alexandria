@@ -31,7 +31,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un evento personal de prueba y abre su página de reserva
 **Qué comprobar:** Puedes elegir una franja disponible y revisar la reserva creada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `twenty-main`, `botpress`
+**Combina con:** `activepieces`, `twenty-main`, `botpress`, `compai-crm`
+**Alternativas (elige una):** `easyappointments`
 
 ## `chatwoot`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,crm,ruby,docker
@@ -131,6 +132,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `sellbird`, `cal.diy`, `activepieces`
 
+## `easyappointments`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=booking,php,self-hosted,server
+
+**Qué es:** Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.
+**Stack:** PHP, composer.json, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/alextselegidis/easyappointments
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/alextselegidis/easyappointments/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba.
+**Qué comprobar:** La cita aparece en el calendario del proveedor.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `espocrm`, `activepieces`, `coolify`
+**Alternativas (elige una):** `cal.diy`
+
 ## `erpnext`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=crm,python
 
@@ -164,6 +196,68 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `metabase`, `paperless-ngx`
 **Alternativas (elige una):** `odoo`
+
+## `espocrm`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=crm,php,self-hosted,server
+
+**Qué es:** CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código.
+**Stack:** PHP, composer.json, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/espocrm/espocrm
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/espocrm/espocrm/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: llevar el pipeline de ventas de una pyme en tu servidor; adaptar entidades y campos del CRM a tu proceso sin programar
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala EspoCRM con su imagen Docker o en un servidor PHP, crea una cuenta y una oportunidad.
+**Qué comprobar:** La oportunidad aparece en el pipeline con su etapa.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `easyappointments`, `coolify`
+**Alternativas (elige una):** `twenty-main`
+
+## `freescout`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=helpdesk,php,self-hosted,server
+
+**Qué es:** Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.
+**Stack:** PHP, composer.json, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/freescout-help-desk/freescout
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/freescout-help-desk/freescout/blob/dist/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala FreeScout en un servidor PHP o con su imagen Docker, conecta un buzón de prueba y responde a una conversación.
+**Qué comprobar:** El correo aparece como conversación y la respuesta se envía desde FreeScout.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `claude-code`, `coolify`
+**Alternativas (elige una):** `zammad`
 
 ## `listmonk`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,email,go,docker
@@ -318,7 +412,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una métrica de un dominio propio y revisa origen, fecha y coste de la solicitud
 **Qué comprobar:** Puedes identificar qué datos devuelve DataForSEO y qué interpreta el agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `coolify`, `geo-seo-claude`
+**Combina con:** `claude-code`, `coolify`, `geo-seo-claude`, `claude-seo`, `cloud-mail`, `marketingskills`
 
 ## `postiz-app`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=marketing,server,typescript
@@ -348,7 +442,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara una publicación ficticia en borrador y revisa preview, canal y horario sin programarla
 **Qué comprobar:** Puedes comprobar contenido y cuenta de destino antes de publicar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `claude-code`, `coolify`
+**Combina con:** `activepieces`, `claude-code`, `coolify`, `humanizer`, `instagram-agent-skill`, `linkedin-agent-skill`
 
 ## `sellbird`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=marketing,agent,python
@@ -409,4 +503,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un objeto y dos registros ficticios y revisa sus relaciones antes de añadir automatización
 **Qué comprobar:** Puedes consultar registros y reconocer la estructura de campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `activepieces`, `evolution-api`, `cal.diy`
+**Combina con:** `claude-code`, `activepieces`, `evolution-api`, `cal.diy`, `docuseal`
+**Alternativas (elige una):** `espocrm`
+
+## `zammad`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=helpdesk,ruby,self-hosted,server
+
+**Qué es:** Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.
+**Stack:** Ruby, Dockerfile, Gemfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/zammad/zammad
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/zammad/zammad/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Zammad con zammad-docker-compose, conecta una cuenta de correo de prueba y responde a un ticket.
+**Qué comprobar:** El correo entra como ticket y la respuesta sale desde Zammad.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `claude-code`, `coolify`
+**Alternativas (elige una):** `freescout`

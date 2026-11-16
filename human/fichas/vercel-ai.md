@@ -32,6 +32,12 @@ Paquetes npm (`npm i ai` más el proveedor elegido) para Node.js, edge runtimes 
 | [Ollama](ollama.md) | Modelos locales mediante el proveedor comunitario de Ollama, listado en la documentación del AI SDK. | Instala Ollama y descarga un modelo; luego añade el paquete del proveedor comunitario. |
 | [mem0](mem0.md) | Memoria persistente de usuario mediante el proveedor de Mem0 para el AI SDK (integración documentada por Mem0). | Configura Mem0 (cloud o autoalojado) y envuelve el modelo con su proveedor. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[12-Factor Agents](12-factor-agents.md) · [Ant Design](ant-design.md) · [discord.js](discord-js.md) · [jev-fraud](jev-fraud.md) · [json-render](json-render.md) · [llm-scraper](llm-scraper.md) · [Material UI](mui.md) · [MCP TypeScript SDK](mcp-typescript-sdk.md) · [novu](novu.md) · [Stitch SDK](stitch-sdk.md) · [tldraw](tldraw.md) · [Trigger.dev](trigger-dev.md)
+
 **Notas:** Alternativas (elige una): langgraphjs, mastra. Ojo: algunos ejemplos del README usan modelos vía AI Gateway que requieren cuenta de Vercel.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @ai-sdk/vue@3.0.332 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

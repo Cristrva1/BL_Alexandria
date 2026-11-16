@@ -416,14 +416,12 @@ RECIPE_LESSONS: dict[str, dict] = {
         "lesson": (
             "Un bot de mensajería tiene tres capas: la puerta al canal, el flujo "
             "que decide y el lugar donde un humano retoma la conversación. Para "
-            "la primera versión no hace falta un framework de agentes: n8n ya puede llamar al modelo."
+            "la primera versión no hace falta un framework de agentes: Evolution API se integra de forma nativa con Dify, que llama al modelo."
         ),
         "pick_one": [],
         "steps": {
             "evolution-api": "La puerta de WhatsApp. Por aquí entra y sale el mensaje.",
-            "n8n": "El flujo que decide qué hacer con cada mensaje y llama al modelo.",
-            "n8n-mcp": "Le da al agente la documentación real de los nodos, para que no invente parámetros.",
-            "n8n-skills": "Instrucciones para que tu agente de código construya flujos. No reemplaza la instancia de n8n.",
+            "dify": "La app de IA que decide qué responder a cada mensaje y llama al modelo.",
             "chatwoot": "La bandeja donde una persona toma la conversación cuando el bot no alcanza.",
             "novu": "Avisos por otros canales, como correo o push, cuando el evento importa.",
         },

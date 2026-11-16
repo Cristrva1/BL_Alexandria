@@ -128,6 +128,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `whisper`, `yt-dlp`, `moviepy`
 
+## `handbrake`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,c,app
+
+**Qué es:** Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/HandBrake/HandBrake
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/HandBrake/HandBrake/blob/master/README.markdown
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala HandBrake, abre un vídeo corto y conviértelo con un preset de 1080p.
+**Qué comprobar:** Obtienes un MP4 reproducible en el móvil con menor tamaño que el original.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `obs-studio`, `lossless-cut`, `jellyfin`
+
 ## `hunyuanvideo`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
 
@@ -157,7 +187,69 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El clip y sus recursos se pueden comparar con la configuración elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `diffusers`, `comfyui`, `wan2gp`
-**Alternativas (elige una):** `wan2-2`
+**Alternativas (elige una):** `wan2-2`, `hunyuanvideo-1-5`
+
+## `hunyuanvideo-1-5`
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
+
+**Qué es:** Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.
+**Stack:** Python, requirements.txt
+**Acceso y costes:**
+- API de IA: API de IA opcional. La reescritura de prompts usa un endpoint vLLM opcional; si no se configura, el pipeline genera sin reescritura remota.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Inferencia local con pesos descargados de Hugging Face, sujeta a la Tencent Hunyuan Community License.
+- Coste: El coste depende del proveedor o la ruta. Sin pago por llamada en la ruta local; consume GPU. La licencia excluye la UE, el Reino Unido y Corea del Sur.
+- Equipo: GPU o infraestructura especializada. GPU NVIDIA con CUDA y al menos 14 GB de VRAM con offloading; Linux y Python 3.10 o superior.
+**Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p
+**Evita si:** no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia
+**Primera prueba propuesta:** Genera un clip de pocos segundos en 480p con offloading activado
+**Qué comprobar:** El video se guarda y anotas tiempo y VRAM usados
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `comfyui`, `wan2gp`, `vllm`
+**Alternativas (elige una):** `hunyuanvideo`, `wan2-2`
+
+## `kdenlive`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,cpp,app,edicion
+
+**Qué es:** Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/KDE/kdenlive
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/KDE/kdenlive/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Kdenlive desde kdenlive.org, crea un proyecto, añade clips a la línea de tiempo y renderiza un MP4.
+**Qué comprobar:** El render termina y el archivo reproduce el montaje.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `whisper`, `obs-studio`
+**Alternativas (elige una):** `shotcut`, `opencut`
 
 ## `lossless-cut`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,typescript
@@ -187,7 +279,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Marca dos puntos de un video propio y exporta el segmento sin recodificar
 **Qué comprobar:** Compruebas duración, comienzo, final y pistas del clip
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `yt-dlp`, `whisperx`, `moviepy`
+**Combina con:** `ffmpeg`, `yt-dlp`, `whisperx`, `moviepy`, `obs-studio`, `opencut`
+
+## `ltx-2`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=video,python,model,local
+
+**Qué es:** Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/Lightricks/LTX-2
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Lightricks/LTX-2/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar clips cortos con audio a partir de texto o una imagen en una GPU propia; entrenar un LoRA de estilo o personaje para el modelo
+**Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
+**Primera prueba propuesta:** Clona el repositorio, instala las dependencias, descarga los pesos de LTX-2.5 y ejecuta la DistilledPipeline con un prompt corto.
+**Qué comprobar:** Se genera un clip de vídeo con audio en la carpeta de salida sin agotar la VRAM.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `comfyui`, `ffmpeg`, `pytorch`
 
 ## `moneyprinterturbo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
@@ -249,7 +371,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una escena con pantalla y micrófono y graba veinte segundos
 **Qué comprobar:** El archivo tiene imagen, audio y niveles aceptables
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `lossless-cut`, `opencut`, `faster-whisper`
+**Combina con:** `lossless-cut`, `opencut`, `faster-whisper`, `rnnoise`, `deep-live-cam`, `rvc`
 
 ## `opencut`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=video,ui,typescript,rust
@@ -280,6 +402,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes exportar o identificar con claridad qué parte aún no está disponible
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `lossless-cut`, `obs-studio`, `whisperx`
+**Alternativas (elige una):** `shotcut`, `kdenlive`
 
 ## `openrv`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=edicion,app,c
@@ -341,6 +464,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `edge-tts`, `ffmpeg`, `ollama`
 **Alternativas (elige una):** `moneyprinterturbo`
+
+## `shotcut`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,cpp,app,edicion
+
+**Qué es:** Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mltframework/shotcut
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/mltframework/shotcut/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Shotcut desde shotcut.org, importa dos clips, córtalos en la línea de tiempo y exporta un MP4.
+**Qué comprobar:** El MP4 exportado reproduce los dos clips con el corte aplicado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `whisper-cpp`, `obs-studio`
+**Alternativas (elige una):** `kdenlive`, `opencut`
 
 ## `videolingo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=video,stt,tts,python
@@ -407,8 +561,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige primero el modelo TI2V-5B y la ruta de memoria documentada y genera un clip breve
 **Qué comprobar:** Puedes identificar pesos, tamaño, duración y recursos de la ejecución
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`, `cosyvoice`, `real-esrgan`
-**Alternativas (elige una):** `hunyuanvideo`
+**Combina con:** `comfyui`, `diffusers`, `cosyvoice`, `real-esrgan`, `wan2gp`
+**Alternativas (elige una):** `hunyuanvideo`, `hunyuanvideo-1-5`
 
 ## `wan2gp`
 role=app · exec=local · setup=heavy · mcp=True · prov=local,mcp · tags=video,image,tts,local,python
@@ -438,5 +592,5 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige un modelo pequeño admitido y genera un clip corto antes de activar Deepy o Showrunner
 **Qué comprobar:** Puedes comprobar memoria, duración y motor de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`
+**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`, `hunyuanvideo-1-5`, `hunyuanvideo`
 **Alternativas (elige una):** `comfyui`

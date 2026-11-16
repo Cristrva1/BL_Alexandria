@@ -29,6 +29,8 @@ Se instala con `pip install -e .` y el índice de PyTorch para CUDA. FLUX.2 [dev
 | [ComfyUI](comfyui.md) | Soporte nativo y tutorial oficial en ComfyUI. | Carga los pesos en ComfyUI y usa el flujo de ejemplo. |
 | [diffusers](diffusers.md) | Pipeline FLUX.2 documentado en diffusers. | Usa el pipeline FLUX.2 con cuantización si tu GPU es pequeña. |
 | [Real-ESRGAN](real-esrgan.md) | Ampliar las imágenes generadas. (combinación por arquitectura) | Pasa la salida por Real-ESRGAN. |
+| [InvokeAI](invokeai.md) | Combinación recíproca: InvokeAI lo enlaza como «Usar modelos FLUX en el lienzo de Invoke. (combinación por arquitectura)». | Orden indicado desde InvokeAI: Instala el modelo desde el gestor de modelos si está soportado. |
+| [Krita AI Diffusion](krita-ai-diffusion.md) | Combinación recíproca: Krita AI Diffusion lo enlaza como «Usar modelos FLUX en Krita a través de ComfyUI. (combinación por arquitectura)». | Orden indicado desde Krita AI Diffusion: Instala el modelo en ComfyUI y selecciónalo en el plugin. |
 
 **Notas:** Sin alternativas declaradas. Revisa la licencia de cada peso: varios no permiten uso comercial.
 

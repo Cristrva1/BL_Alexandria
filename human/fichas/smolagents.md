@@ -30,6 +30,7 @@ Se instala con `pip install "smolagents[toolkit]"`. Es agnóstico de modelo: `tr
 | [Transformers](transformers.md) | Modelos locales de Hugging Face. | Requiere GPU para modelos medianos. |
 | [litellm](litellm.md) | Acceso a más de 100 LLM con `LiteLLMModel`. | Configura las claves del proveedor. |
 | [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse. | Instrumenta antes de producción. |
+| [Hugging Face Agents Course](agents-course.md) | Combinación recíproca: Hugging Face Agents Course lo enlaza como «La unidad 2.1 enseña a construir agentes con smolagents». | Orden indicado desde Hugging Face Agents Course: Sigue la unidad; instala smolagents en el entorno del cuaderno. |
 
 **Notas:** Alternativas (elige una): pydantic-ai, openai-agents-python. No ejecutes CodeAgent sin sandbox con datos o credenciales reales.
 

@@ -30,6 +30,13 @@ Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con
 | [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Usa un servicio STT local. |
 | [Ollama](ollama.md) | Servicio LLM integrado. | Configura el servicio Ollama. |
 | [NeMo Speech](nemo.md) | Servicios NVIDIA integrados. | Configura el servicio NVIDIA. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | Pipecat incluye servicios de ElevenLabs para TTS y STT; usan la misma cuenta y clave que el SDK. | Configura `ELEVENLABS_API_KEY` y el extra de ElevenLabs. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[CosyVoice](cosyvoice.md) · [faster-whisper](faster-whisper.md) · [Fish Speech](fish-speech.md) · [IndexTTS](index-tts.md) · [LuxTTS](luxtts.md) · [VibeVoice](vibevoice.md) · [VoxCPM](voxcpm.md)
 
 **Notas:** Alternativas (elige una): livekit-agents, dograh.
 
@@ -117,6 +124,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [LiveKit Agents](livekit-agents.md) | 15.2k | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. |
 | [dograh](dograh.md) | 6.1k | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. |
+| [TEN Framework](ten-framework.md) | 11.2k | Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos. |
 
 ## Enlaces
 

@@ -3,6 +3,67 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `accelerate`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=training,python,pytorch
+
+**Qué es:** Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.
+**Stack:** Python, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/huggingface/accelerate
+
+**Instalación** [+]:
+
+```
+pip install accelerate
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: convertir un bucle de entrenamiento de PyTorch a multi-GPU sin reescribirlo; lanzar un entrenamiento con DeepSpeed desde un archivo de configuración
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install accelerate`, ejecuta `accelerate config` y lanza un script de ejemplo con `accelerate launch`.
+**Qué comprobar:** El script se ejecuta con la configuración elegida.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `deepspeed`, `transformers`, `pytorch`
+
+## `axolotl`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=training,python,llm,gpu
+
+**Qué es:** Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/axolotl-ai-cloud/axolotl
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: ajustar un modelo abierto con QLoRA a partir de un archivo YAML; entrenar con GRPO o DPO en varias GPU
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue la instalación con uv del README en una máquina con GPU y lanza uno de los ejemplos de configuración QLoRA pequeños.
+**Qué comprobar:** El entrenamiento arranca y guarda el adaptador al final.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `deepspeed`, `peft`, `transformers`, `vllm`
+**Alternativas (elige una):** `torchtune`, `llama-factory`, `unsloth`
+
 ## `bionemo-recipes`
 role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
 
@@ -61,7 +122,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una demo o ejecuta una receta pequeña y compara el video con su condicionamiento
 **Qué comprobar:** Puedes reconocer entrada, modelo y salida generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`, `pytorch`, `nemotron`
+**Combina con:** `diffusers`, `pytorch`, `nemotron`, `warp`
 
 ## `deepseek-v3`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=llm,inference,python
@@ -92,6 +153,127 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Recibes la respuesta y ves en tu panel el consumo de esa llamada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `sglang`, `vllm`, `litellm`, `tensorrt-llm`
+
+## `deepspeed`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=training,python,gpu,distributed
+
+**Qué es:** Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.
+**Stack:** Python, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/deepspeedai/DeepSpeed
+
+**Instalación** [+]:
+
+```
+pip install deepspeed
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo que no cabe en una GPU repartiendo estados con ZeRO-3; acelerar un ajuste fino distribuido con Transformers o Accelerate
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install deepspeed` en un entorno con PyTorch y GPU y ejecuta `ds_report` para comprobar la compatibilidad.
+**Qué comprobar:** El informe muestra qué operaciones y extensiones están disponibles.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `accelerate`, `pytorch-lightning`, `axolotl`, `openrlhf`
+
+## `gemma`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=model,python,jax,llm
+
+**Qué es:** Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/google-deepmind/gemma
+
+**Instalación** [+]:
+
+```
+pip install gemma
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: chatear con un modelo Gemma en Python con JAX; ajustar Gemma con LoRA en GPU o TPU
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala JAX para tu hardware y después `pip install gemma`; ejecuta el ejemplo de muestreo con un checkpoint pequeño.
+**Qué comprobar:** El modelo responde al prompt de ejemplo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `jax`, `jupyterlab`, `lm-eval-harness`
+
+## `jax`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ml,python,library,numerical
+
+**Qué es:** Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.
+**Stack:** Python, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/jax-ml/jax
+
+**Instalación** [+]:
+
+```
+pip install -U jax
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar modelos o simulaciones científicas en GPU o TPU; calcular derivadas de funciones numéricas complejas
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install -U jax` y calcula el gradiente de una función simple con `jax.grad`.
+**Qué comprobar:** Obtienes el valor del gradiente evaluado en el punto indicado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `keras`, `gemma`, `jupyterlab`, `mujoco`
+**Alternativas (elige una):** `pytorch`, `tensorflow`
+
+## `keras`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ml,python,library,deep-learning
+
+**Qué es:** API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).
+**Stack:** Python, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/keras-team/keras
+
+**Instalación** [+]:
+
+```
+pip install keras --upgrade
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: prototipar una red neuronal con una API sencilla; cambiar de backend sin reescribir el modelo para ganar rendimiento
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install keras --upgrade` y un backend (por ejemplo JAX), y entrena el ejemplo MNIST de la documentación.
+**Qué comprobar:** El modelo entrena y muestra la precisión por época.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `jax`, `pytorch`, `tensorflow`
 
 ## `kimi-k2-7-code`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=kimi,moonshot,modelo,programacion,pesos-abiertos,huggingface
@@ -184,8 +366,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre la interfaz y revisa un dataset pequeño antes de lanzar un ajuste LoRA
 **Qué comprobar:** Puedes identificar modelo base, datos y parámetros de entrenamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `peft`, `transformers`, `vllm`, `sglang`
-**Alternativas (elige una):** `unsloth`
+**Combina con:** `peft`, `transformers`, `vllm`, `sglang`, `gradio`
+**Alternativas (elige una):** `unsloth`, `axolotl`, `torchtune`
 
 ## `nemotron`
 role=directory · exec=local · setup=heavy · mcp=False · prov=local · tags=training,inference
@@ -215,7 +397,38 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una receta y usa su guía para identificar datos, checkpoint y recursos antes de ejecutarla
 **Qué comprobar:** Puedes diferenciar entrenamiento, adaptación e inferencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vllm`, `nemoclaw`, `claude-code`, `nemo`
+**Combina con:** `vllm`, `nemoclaw`, `claude-code`, `nemo`, `cosmos`
+
+## `openrlhf`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=training,python,rl,gpu
+
+**Qué es:** Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.
+**Stack:** Python, pyproject.toml, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/OpenRLHF/OpenRLHF
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa; experimentar con RL para agentes con varios turnos
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue la guía rápida de OpenRLHF en un entorno con GPU y ejecuta un script de ejemplo de SFT o RM pequeño.
+**Qué comprobar:** El entrenamiento arranca y guarda los checkpoints.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ray`, `vllm`, `deepspeed`
+**Alternativas (elige una):** `verl`
 
 ## `peft`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -245,7 +458,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Estudia el ejemplo LoRA y comprueba qué parámetros serán entrenables
 **Qué comprobar:** Puedes distinguir modelo base de adaptador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `trl`, `diffusers`
+**Combina con:** `transformers`, `trl`, `diffusers`, `llama-factory`, `airllm`, `bionemo-recipes`
 
 ## `pytorch`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
@@ -276,7 +489,67 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar versión, dispositivo y resultado numérico
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `transformers`, `diffusers`, `vllm`
-**Alternativas (elige una):** `tensorflow`
+**Alternativas (elige una):** `tensorflow`, `jax`
+
+## `pytorch-lightning`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=training,python,pytorch
+
+**Qué es:** Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.
+**Stack:** Python, pyproject.toml, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Lightning-AI/pytorch-lightning
+
+**Instalación** [+]:
+
+```
+pip install lightning
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar un proyecto de entrenamiento en PyTorch sin código repetitivo; pasar de una GPU a varias con DDP, FSDP o DeepSpeed
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install lightning` y ejecuta el ejemplo de autoencoder del README.
+**Qué comprobar:** El Trainer entrena y muestra métricas por época.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `deepspeed`, `mlflow`
+
+## `scikit-learn`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ml,python,library,data
+
+**Qué es:** La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/scikit-learn/scikit-learn
+
+**Instalación** [+]:
+
+```
+pip install -U scikit-learn
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar y validar un clasificador sobre datos tabulares; construir un pipeline de preprocesado y modelo reproducible
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install -U scikit-learn` y entrena un clasificador sobre el conjunto iris incluido.
+**Qué comprobar:** Obtienes la precisión del modelo en validación cruzada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `jupyterlab`, `mlflow`, `ml-for-beginners`, `pandas`
 
 ## `tensorflow`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python
@@ -306,8 +579,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una operación pequeña con tensores y comprueba el dispositivo antes de entrenar
 **Qué comprobar:** Puedes verificar versión y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `mediapipe`, `marimo`
-**Alternativas (elige una):** `pytorch`
+**Combina con:** `transformers`, `mediapipe`, `marimo`, `jupyterlab`, `tfjs-models`, `keras`
+**Alternativas (elige una):** `pytorch`, `jax`
 
 ## `timesfm`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,analytics,python
@@ -339,6 +612,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes medir error fuera de la muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `polars`, `duckdb`, `pytorch`
+
+## `torchtune`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=training,python,pytorch,llm
+
+**Qué es:** Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/meta-pytorch/torchtune
+
+**Instalación** [+]:
+
+```
+pip install torchtune
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: estudiar recetas limpias de ajuste fino en PyTorch puro; reproducir un ajuste LoRA con configuraciones existentes
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install torchtune` (junto a torch, torchvision y torchao) y lista las recetas con `tune ls`.
+**Qué comprobar:** La CLI muestra las recetas y configuraciones disponibles.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `lm-eval-harness`, `transformers`
+**Alternativas (elige una):** `axolotl`, `llama-factory`, `unsloth`
 
 ## `transformers`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=training,inference,python
@@ -399,7 +703,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige el ejemplo SFT y revisa formato de datos antes de probar métodos de recompensa
 **Qué comprobar:** Puedes relacionar datos, método y checkpoint
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `peft`, `unsloth`, `vllm`
+**Combina con:** `transformers`, `peft`, `unsloth`, `vllm`, `llm-course`, `train-llm-from-scratch`
 
 ## `unsloth`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,local,python
@@ -429,5 +733,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un modelo pequeño compatible y prueba una pregunta conocida antes de iniciar fine-tuning
 **Qué comprobar:** Puedes identificar modelo, formato y memoria utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `trl`, `ollama`, `llama-cpp`, `claude-code`
-**Alternativas (elige una):** `llama-factory`
+**Combina con:** `trl`, `ollama`, `llama-cpp`, `claude-code`, `llm-course`, `sglang`
+**Alternativas (elige una):** `llama-factory`, `axolotl`, `torchtune`
+
+## `verl`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=training,python,rl,gpu
+
+**Qué es:** Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.
+**Stack:** Python, pyproject.toml, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/verl-project/verl
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/verl-project/verl/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo de razonamiento con GRPO sobre problemas verificables; investigar nuevos algoritmos de RL para LLM a escala
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue la guía de inicio rápido de verl en un nodo con GPU y ejecuta el ejemplo PPO o GRPO pequeño con GSM8K.
+**Qué comprobar:** El entrenamiento arranca y registra recompensas por paso.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `sglang`, `ray`, `transformers`
+**Alternativas (elige una):** `openrlhf`

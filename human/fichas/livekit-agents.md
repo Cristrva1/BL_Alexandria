@@ -29,6 +29,7 @@ Se instala con `pip install "livekit-agents[openai,deepgram,cartesia]"` (u otros
 | [Kokoro](kokoro.md) | TTS local vía endpoint compatible. (combinación por arquitectura) | Expón Kokoro y configúralo como TTS. |
 | [Ollama](ollama.md) | LLM local vía plugin compatible con OpenAI. (combinación por arquitectura) | Apunta el plugin al endpoint de Ollama. |
 | [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Expón el servidor y úsalo como STT. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | LiveKit Agents documenta un plugin de TTS de ElevenLabs. | Instala el plugin y define la clave de ElevenLabs. |
 
 **Notas:** Alternativas (elige una): pipecat, dograh.
 
@@ -115,6 +116,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 | [dograh](dograh.md) | 6.1k | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. |
+| [TEN Framework](ten-framework.md) | 11.2k | Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos. |
 
 ## Enlaces
 

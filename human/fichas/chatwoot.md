@@ -27,8 +27,14 @@ El backend está en Ruby y el frontend en Vue, según los lenguajes del reposito
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [evolution-api](evolution-api.md) | Aporta el canal de WhatsApp mediante la integración nativa que Evolution tiene con Chatwoot. | Chatwoot primero; después configura la integración desde la instancia de Evolution. |
-| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos (sustituye a la antigua combinación con n8n). | chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos. | chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces. |
 | [firecrawl](firecrawl.md) | Captain puede usar una clave de Firecrawl (opcional) para rastrear mejor los sitios web de su base de conocimiento; sin ella usa un rastreador simple. | Solo con Captain activo (plan de pago): añade la clave en el Super Admin. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenWA](openwa.md) · [Typebot](typebot.md) · [WAHA](waha.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
 
 **Notas:** Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. Se resuelve el antiguo [DATO NO VERIFICADO] sobre Captain: no está en la Community Edition.
 
