@@ -1672,7 +1672,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx repomix@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar contexto de código para una consulta; Compartir una muestra reproducible de un proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [tree-sitter](human/fichas/tree-sitter.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/repomix.md) · [GitHub](https://github.com/yamadashy/repomix)
 
 #### 🕸️ graphify
@@ -1682,7 +1682,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Comando documentado:** `uv tool install graphifyy      # install the CLI (or: pipx install graphifyy)
 graphify install               # detects your assistant and registers the skill` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar impacto de un cambio; Relacionar documentación y estructura de código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [codegraph](human/fichas/codegraph.md) · [graphrag](human/fichas/graphrag.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [tree-sitter](human/fichas/tree-sitter.md) · [Ollama](human/fichas/ollama.md) · [graphrag](human/fichas/graphrag.md)<br>
 **Más:** [ficha completa](human/fichas/graphify.md) · [GitHub](https://github.com/Graphify-Labs/graphify)
 
 #### 📊 codegraph
@@ -1691,7 +1691,7 @@ graphify install               # detects your assistant and registers the skill`
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm i -g @colbymchenry/codegraph` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una refactorización; Encontrar rutas de ejecución de un proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [graphify](human/fichas/graphify.md) · [headroom](human/fichas/headroom.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [headroom](human/fichas/headroom.md)<br>
 **Más:** [ficha completa](human/fichas/codegraph.md) · [GitHub](https://github.com/colbymchenry/codegraph)
 
 #### 🧬 codebase-memory-mcp
@@ -1700,7 +1700,7 @@ graphify install               # detects your assistant and registers the skill`
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Serena](human/fichas/serena.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Serena](human/fichas/serena.md) · [Repomix](human/fichas/repomix.md)<br>
 **Más:** [ficha completa](human/fichas/codebase-memory-mcp.md) · [GitHub](https://github.com/DeusData/codebase-memory-mcp)
 
 #### 🧭 GitNexus
@@ -1713,7 +1713,7 @@ npx gitnexus analyze
 # Connect your editors once
 npx gitnexus setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [codegraph](human/fichas/codegraph.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/gitnexus.md) · [GitHub](https://github.com/abhigyanpatwari/GitNexus)
 
 #### 🧬 tree-sitter
@@ -1722,7 +1722,7 @@ npx gitnexus setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://tree-sitter.github.io/tree-sitter/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un analizador de código; Extraer símbolos para una herramienta de edición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ast-grep](human/fichas/ast-grep.md) · [Aider](human/fichas/aider.md)<br>
+**Combina con:** [ast-grep](human/fichas/ast-grep.md) · [Aider](human/fichas/aider.md) · [Repomix](human/fichas/repomix.md) · [graphify](human/fichas/graphify.md)<br>
 **Más:** [ficha completa](human/fichas/tree-sitter.md) · [GitHub](https://github.com/tree-sitter/tree-sitter)
 
 #### 🧬 DeepWiki Open
@@ -1731,7 +1731,7 @@ npx gitnexus setup` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [Mermaid](human/fichas/mermaid.md)<br>
 **Más:** [ficha completa](human/fichas/deepwiki-open.md) · [GitHub](https://github.com/AsyncFuncAI/deepwiki-open)
 
 #### 🎨 floorplan
@@ -1741,6 +1741,7 @@ npx gitnexus setup` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `claude plugin marketplace add haydenschmitty/floorplan
 claude plugin install floorplan@floorplan` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [codegraph](human/fichas/codegraph.md)<br>
 **Más:** [ficha completa](human/fichas/floorplan.md) · [GitHub](https://github.com/haydenschmitty/floorplan)
 
 ### Calidad, seguridad y benchmarks de código
@@ -1751,7 +1752,7 @@ claude plugin install floorplan@floorplan` (comprobar los pasos completos en la 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install --global @ast-grep/cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Migrar llamadas de una API; Aplicar reglas de lint personalizadas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [tree-sitter](human/fichas/tree-sitter.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [tree-sitter](human/fichas/tree-sitter.md) · [Claude Code](human/fichas/claude-code.md) · [Aider](human/fichas/aider.md)<br>
 **Más:** [ficha completa](human/fichas/ast-grep.md) · [GitHub](https://github.com/ast-grep/ast-grep)
 
 #### 🛡️ SWE-bench
@@ -1762,6 +1763,7 @@ claude plugin install floorplan@floorplan` (comprobar los pasos completos en la 
 cd SWE-bench
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar soluciones a issues reproducibles; Estudiar evaluación de agentes de programación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenHands](human/fichas/openhands.md) · [Aider](human/fichas/aider.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/swe-bench.md) · [GitHub](https://github.com/SWE-bench/SWE-bench)
 
 #### 📚 dsh-qa
@@ -5096,6 +5098,7 @@ vllm download-kernels  # precompiled kernels for faster startup` (comprobar los 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Cline](human/fichas/cline.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/omniroute.md) · [GitHub](https://github.com/cheaper-inference/OmniRoute)
 
 #### 🔀 litellm
@@ -5123,6 +5126,7 @@ vllm download-kernels  # precompiled kernels for faster startup` (comprobar los 
 **Comando documentado:** `npm install -g @musistudio/claude-code-router
 ccr ui` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/claude-code-router.md) · [GitHub](https://github.com/musistudio/claude-code-router)
 
 #### 🧬 TensorRT-LLM
@@ -5142,6 +5146,7 @@ ccr ui` (comprobar los pasos completos en la ficha).<br>
 cd backdoor
 ./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/backdoor.md) · [GitHub](https://github.com/ajsai47/backdoor)
 
 ### Ahorro de contexto y tokens
@@ -5256,6 +5261,7 @@ uv tool install claude-monitor
 # Run from anywhere
 claude-monitor  # or cmonitor, ccmonitor for short` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar el uso de una sesión; Estudiar alertas y proyecciones de cuota — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [rtk](human/fichas/rtk.md) · [headroom](human/fichas/headroom.md)<br>
 **Más:** [ficha completa](human/fichas/claude-code-usage-monitor.md) · [GitHub](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor)
 
 #### 📡 NeMo Guardrails

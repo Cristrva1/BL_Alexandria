@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Claude Code Router (CCR), pasarela local y plano de control para agentes de programación, de @musistudio. Licencia MIT. Es muy popular (~38k estrellas, v3.1.4).
+
+## ¿Qué hace?
+
+Conecta Claude Code, Codex, OpenCode, Kimi CLI, Kilo Code y otros clientes con los proveedores que elijas (OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek, Moonshot, Mistral…), con enrutado, reintentos, rotación de claves y modelos de respaldo. Añade capacidades como visión, búsqueda web, herramientas MCP y ToolHub. Muestra registros de peticiones, rutas resueltas, latencia, tokens, coste estimado y cuotas por cliente.
+
+## ¿Cómo lo hace?
+
+Se usa como app de escritorio (Electron) o con `npm install -g @musistudio/claude-code-router` y `ccr ui` (Node.js 22+), y también con Docker en `127.0.0.1:3458`. Las claves de los proveedores se guardan en local.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Cliente principal del router. | Instala CCR y lanza Claude Code a través de él. |
+| [Codex CLI](codex.md) | Cliente soportado según el README. | Configura Codex para usar CCR como proveedor. |
+| [OpenCode](opencode.md) | Cliente soportado según el README. | Apunta OpenCode a la pasarela de CCR. |
+
+**Notas:** Sin alternativas declaradas. Posible grupo alt con omniroute, backdoor y litellm (solo anotado). Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.1.4 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/musistudio/claude-code-router/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente |
 | Coste | El coste depende del proveedor o la ruta. El gateway usa las cuentas y claves elegidas; una interfaz local no elimina los costes remotos |
 | Equipo | Preparación según la ruta elegida. Node 22+ o app; proveedor y credenciales; agente de prueba |
-
-Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente
-
-## Qué puedes hacer con él
-
-Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.
-
-## Por qué destaca
-
-Usos propuestos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex.
-
-## Cómo funciona
 
 Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente
 

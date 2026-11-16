@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+DeepWiki-Open, implementación abierta de DeepWiki que genera wikis con IA de repos de GitHub, GitLab o Bitbucket, de AsyncFuncAI. Licencia MIT. Es popular (~18k estrellas, sin releases); el README anuncia una versión 2.0, «Grok Wiki», como descarga aparte.
+
+## ¿Qué hace?
+
+Analiza la estructura del código, genera documentación, diagramas y un mapa del código para visitas guiadas, y lo organiza como wiki navegable. Admite proveedores Google, OpenAI, OpenRouter, Azure, Bedrock, DashScope y Ollama.
+
+## ¿Cómo lo hace?
+
+Tiene backend en Python (FastAPI y adalflow) y frontend Next.js. Se despliega con Docker Compose (incluida una variante con LiteLLM y otra con Ollama local) o con Helm en Kubernetes, configurando claves de proveedor. Los repos privados requieren un token de acceso.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Configuración y Dockerfile para Ollama local. | Arranca Ollama y usa la configuración local. |
+| [litellm](litellm.md) | Variante oficial de Docker Compose con LiteLLM. | Usa `docker-compose-litellm.yml` con tu `litellm-config.yml`. |
+| [Mermaid](mermaid.md) | Revisar o editar los diagramas generados. (combinación por arquitectura) | Exporta los diagramas y edítalos con Mermaid. |
+
+**Notas:** Alternativas (elige una): context7. El README actual es muy escueto y remite a Grok Wiki; la relación entre ambos no está clara.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa |
 | Coste | El coste depende del proveedor o la ruta. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes |
 | Equipo | Preparación según la ruta elegida. Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos |
-
-Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
-
-## Qué puedes hacer con él
-
-Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki.
-
-## Por qué destaca
-
-Usos propuestos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto.
-
-## Cómo funciona
 
 Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos
 - **Etiquetas:** `code` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 

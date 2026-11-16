@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION). Es muy activo (~49k estrellas, v1.6.12).
+
+## ¿Qué hace?
+
+Indexa símbolos, llamadas, dependencias y flujos de ejecución para responder preguntas como dónde se usa algo o qué afecta un cambio. Se usa desde las herramientas MCP del agente, la CLI o un explorador visual del grafo. Reporta ambigüedad y cobertura del índice.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Hooks y MCP configurados por `analyze` y `setup`. | Ejecuta `npx gitnexus analyze` y luego `setup`. |
+| [OpenCode](opencode.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c opencode`. |
+| [Codex CLI](codex.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c codex`. |
+
+**Notas:** Alternativas (elige una): repomix, codebase-memory-mcp, serena. La licencia no comercial impide usarlo en empresas sin licencia de pago.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.12 (2026-09-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial |
 | Coste | El coste depende del proveedor o la ruta. El análisis no exige modelo; la licencia PolyForm Noncommercial limita uso comercial y ofrece licencia aparte |
 | Equipo | Preparación según la ruta elegida. Node 22.18+ en 22.x o 24.11+; repositorio de prueba |
-
-El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial
-
-## Qué puedes hacer con él
-
-Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.
-
-## Por qué destaca
-
-Usos propuestos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización.
-
-## Cómo funciona
 
 El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22.18+ en 22.x o 24.11+; repositorio de prueba
 - **Etiquetas:** `code` `typescript`
 - **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
 
 ## Alternativas (elige una)
 

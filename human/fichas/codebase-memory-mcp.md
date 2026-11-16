@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+codebase-memory-mcp, motor local de inteligencia de código para agentes vía MCP, de DeusData. Licencia MIT. Es muy activo (~49k estrellas, v0.12.1).
+
+## ¿Qué hace?
+
+Conecta código, documentación, configuración e infraestructura en un grafo de conocimiento local persistente. Expone 17 herramientas MCP y ofrece resolución de tipos híbrida con LSP. Incluye un visor opcional (CBM Lens) y perfiles para agentes.
+
+## ¿Cómo lo hace?
+
+Es un binario nativo en C que se instala con un script (`install.sh` o `install.ps1`, que el README recomienda revisar antes), con Nix o compilando el código. `install` configura los clientes compatibles. Indexa y consulta en local sin telemetría.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Cliente MCP de programación. (combinación por arquitectura) | Instala el binario y ejecuta `install` para configurar el cliente. |
+| [Serena](serena.md) | Edición semántica con LSP junto a la memoria de grafo. (combinación por arquitectura) | Usa codebase-memory para explorar y Serena para editar. |
+| [Repomix](repomix.md) | Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura) | Localiza con el grafo y empaqueta con Repomix. |
+
+**Notas:** Alternativas (elige una): codegraph, gitnexus. Revisa el script de instalación antes de ejecutarlo.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.12.1 (2026-10-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens |
 | Coste | El coste depende del proveedor o la ruta. La extracción y embeddings locales no requieren API; consultar un modelo u otros proveedores puede añadir consumo |
 | Equipo | Preparación según la ruta elegida. Binario para tu sistema; repositorio de prueba; Node 22+ solo para compilar CBM Lens |
-
-Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens
-
-## Qué puedes hacer con él
-
-Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.
-
-## Por qué destaca
-
-Usos propuestos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio.
-
-## Cómo funciona
 
 Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario para tu sistema; repositorio de prueba; Node 22+ solo para compilar CBM Lens
 - **Etiquetas:** `code` `mcp` `memory`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
 
 ## Alternativas (elige una)
 

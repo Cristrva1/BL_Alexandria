@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Repomix, herramienta para empaquetar un repositorio en un único archivo apto para LLM, de @yamadashy. Licencia MIT. Es madura y muy usada (~29k estrellas, v1.19.0) y tiene patrocinadores destacados en el README.
+
+## ¿Qué hace?
+
+Genera un archivo XML, Markdown o texto plano con la estructura y el contenido del repo, con recuento de tokens por archivo. Respeta `.gitignore`, detecta credenciales con Secretlint y puede comprimir el código con Tree-sitter para quedarse con firmas y estructura. Trabaja con repos remotos, puede actuar como servidor MCP y genera Agent Skills.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con `npx repomix@latest`, `npm install -g repomix` o `brew install repomix`, o se usa en la web repomix.com. Está escrito en TypeScript y requiere Node.js. La carga de configuración de repos remotos está desactivada por defecto por seguridad.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Generar skills para Claude Code (`--skill-generate`) o usar Repomix como MCP. | Ejecuta `repomix --mcp` o genera la skill en `.claude/skills/`. |
+| [tree-sitter](tree-sitter.md) | La opción `--compress` usa Tree-sitter. | Usa `repomix --compress` para reducir tokens. |
+| [markitdown](markitdown.md) | Convertir documentos del repo a Markdown antes de empaquetar. (combinación por arquitectura) | Convierte PDF/DOCX con MarkItDown y empaqueta después. |
+
+**Notas:** Alternativas (elige una): gitnexus.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.19.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/yamadashy/repomix/blob/main/README.md) · [2](https://repomix.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector |
 | Coste | Sin pago a un modelo en la ruta básica. Empaquetar no usa modelo; enviarlo a un agente consume su contexto y presupuesto |
 | Equipo | Preparación según la ruta elegida. Node.js; repositorio de prueba; filtros de inclusión |
-
-Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector
-
-## Qué puedes hacer con él
-
-Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM.
-
-## Por qué destaca
-
-Usos propuestos: Preparar contexto de código para una consulta; Compartir una muestra reproducible de un proyecto.
-
-## Cómo funciona
 
 Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; repositorio de prueba; filtros de inclusión
 - **Etiquetas:** `code` `coding-agent` `typescript`
 - **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 

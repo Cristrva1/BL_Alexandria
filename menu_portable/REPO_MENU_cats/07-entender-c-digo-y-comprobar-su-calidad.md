@@ -31,7 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Busca una llamada por su estructura y revisa los resultados antes de reescribir
 **Qué comprobar:** Encuentras la expresión aunque varíe el espaciado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tree-sitter`, `claude-code`
+**Combina con:** `tree-sitter`, `claude-code`, `aider`
 **Alternativas (elige una):** `semgrep`
 
 ## `cli`
@@ -92,7 +92,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un proyecto pequeño y consulta el impacto de cambiar una función
 **Qué comprobar:** Puedes abrir las referencias y relaciones del grafo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `serena`
+**Combina con:** `claude-code`, `serena`, `repomix`
 **Alternativas (elige una):** `codegraph`, `gitnexus`
 
 ## `codegraph`
@@ -123,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa una carpeta y consulta quién llama a una función conocida
 **Qué comprobar:** Los resultados identifican definiciones y relaciones comprobables
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `graphify`, `headroom`
+**Combina con:** `claude-code`, `codex`, `headroom`
 **Alternativas (elige una):** `codebase-memory-mcp`, `serena`
 
 ## `deepwiki-open`
@@ -154,7 +154,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Genera una wiki de un repositorio pequeño y contrasta una página con sus archivos
 **Qué comprobar:** La explicación enlaza partes del código que puedes abrir
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `ollama`, `litellm`, `mermaid`
 **Alternativas (elige una):** `context7`
 
 ## `dsh-qa`
@@ -216,6 +216,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide un mapa de una app mínima y abre un enlace entre una pantalla y su endpoint
 **Qué comprobar:** Puedes contrastar nombres legibles, archivos y conexiones del mapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `codegraph`
 
 ## `gitnexus`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=code,typescript
@@ -249,7 +250,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función
 **Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codegraph`
+**Combina con:** `claude-code`, `opencode`, `codex`
 **Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`
 
 ## `graphify`
@@ -281,7 +282,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa primero solo código y consulta qué funciones dependen de un módulo
 **Qué comprobar:** Cada relación se puede contrastar con un archivo o símbolo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codegraph`, `graphrag`
+**Combina con:** `claude-code`, `tree-sitter`, `ollama`, `graphrag`
 
 ## `openai-python`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,python
@@ -342,7 +343,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empaqueta una carpeta pequeña y abre el resultado antes de entregarlo a una IA
 **Qué comprobar:** Puedes comprobar archivos incluidos, tamaño y exclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`
+**Combina con:** `claude-code`, `tree-sitter`, `markitdown`
 **Alternativas (elige una):** `gitnexus`
 
 ## `swe-bench`
@@ -375,6 +376,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Evalúa una predicción ya preparada sobre una tarea pequeña antes de generar nuevas soluciones
 **Qué comprobar:** El informe muestra si las pruebas del entorno aceptan el parche
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openhands`, `aider`, `codex`
 
 ## `tree-sitter`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=code,rust
@@ -404,4 +406,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Analiza un archivo mínimo y observa cómo cambia el árbol tras editar una función
 **Qué comprobar:** El árbol refleja el cambio sin interpretar semánticamente todo el programa
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ast-grep`, `aider`
+**Combina con:** `ast-grep`, `aider`, `repomix`, `graphify`

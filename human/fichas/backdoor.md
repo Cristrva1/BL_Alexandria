@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.
+
+## ¿Qué hace?
+
+Intercepta las llamadas de Claude Code a la API de Anthropic, traduce el formato y las reenvía a cualquier proveedor compatible con OpenAI (DeepSeek, Groq, OpenRouter, Ollama o un modelo local). Permite cambiar de proveedor con una línea. El README presenta una comparación de costes propia que no se ha verificado.
+
+## ¿Cómo lo hace?
+
+Es un proyecto en Python de menos de 600 líneas (servidor, asistente de configuración y scripts) que se ejecuta en local con uv y un archivo `.env`. Requiere tener Claude Code instalado. Con Ollama no salen datos de tu máquina.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Es el cliente que Backdoor redirige. | Instala Claude Code y luego configura Backdoor. |
+| [Ollama](ollama.md) | Proveedor local documentado en el README. | Arranca Ollama y elígelo como backend. |
+| [litellm](litellm.md) | Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura) | Apunta Backdoor a la URL del proxy LiteLLM. |
+
+**Notas:** Sin alternativas declaradas. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.
+
+Estado en GitHub: activo · último push 2026-05-22 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ajsai47/backdoor/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo |
 | Coste | El coste depende del proveedor o la ruta. Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic |
 | Equipo | Preparación según la ruta elegida. Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba |
-
-Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo
-
-## Qué puedes hacer con él
-
-Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.
-
-## Por qué destaca
-
-Usos propuestos: Probar un backend local con Claude Code; Comparar proveedores compatibles.
-
-## Cómo funciona
 
 Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo
 

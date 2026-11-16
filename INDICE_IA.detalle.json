@@ -30273,7 +30273,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector",
    "combines_with": [
-    "claude-code"
+    "claude-code",
+    "tree-sitter",
+    "markitdown"
    ],
    "alternatives": [
     "gitnexus"
@@ -30370,7 +30372,47 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Repomix, herramienta para empaquetar un repositorio en un único archivo apto para LLM, de @yamadashy. Licencia MIT. Es madura y muy usada (~29k estrellas, v1.19.0) y tiene patrocinadores destacados en el README.",
+   "que_hace": "Genera un archivo XML, Markdown o texto plano con la estructura y el contenido del repo, con recuento de tokens por archivo. Respeta `.gitignore`, detecta credenciales con Secretlint y puede comprimir el código con Tree-sitter para quedarse con firmas y estructura. Trabaja con repos remotos, puede actuar como servidor MCP y genera Agent Skills.",
+   "como_lo_hace": "Se ejecuta con `npx repomix@latest`, `npm install -g repomix` o `brew install repomix`, o se usa en la web repomix.com. Está escrito en TypeScript y requiere Node.js. La carga de configuración de repos remotos está desactivada por defecto por seguridad.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Generar skills para Claude Code (`--skill-generate`) o usar Repomix como MCP.",
+     "orden_instalacion": "Ejecuta `repomix --mcp` o genera la skill en `.claude/skills/`."
+    },
+    {
+     "id": "tree-sitter",
+     "motivo": "La opción `--compress` usa Tree-sitter.",
+     "orden_instalacion": "Usa `repomix --compress` para reducir tokens."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "Convertir documentos del repo a Markdown antes de empaquetar. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte PDF/DOCX con MarkItDown y empaqueta después."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): gitnexus.",
+   "descripcion_fuentes": [
+    "https://github.com/yamadashy/repomix/blob/main/README.md",
+    "https://repomix.com"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "yamadashy/repomix",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.19.0 (2026-11-08)",
+    "checked_at": "2026-11-15"
+   }
   },
   "graphify": {
    "name": "graphify",
@@ -30390,7 +30432,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes",
    "combines_with": [
-    "codegraph",
+    "claude-code",
+    "tree-sitter",
+    "ollama",
     "graphrag"
    ],
    "alternatives": [],
@@ -30487,7 +30531,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Graphify, CLI y skill que convierte código y documentos en un grafo de conocimiento consultable, de Graphify Labs. Licencia Apache-2.0. Tiene un recuento de estrellas excepcionalmente alto (~149k), publica muy a menudo (v0.9.111) y ofrece un servicio de pago, Graphify Cloud.",
+   "que_hace": "Con `/graphify` en el asistente mapea el proyecto (código, docs, PDF, imágenes y vídeos) en un grafo que el agente consulta en lugar de usar grep. El código se analiza en local con Tree-sitter sin LLM; los documentos y medios usan el modelo de tu asistente. Puede funcionar como servidor MCP y usar Ollama para inferencia local.",
+   "como_lo_hace": "Se instala con `pip install graphifyy` o `uv tool install graphifyy` (paquete oficial con doble «y»; otros `graphify*` de PyPI no están afiliados), con extras como `[mcp]` u `[ollama]`. Luego `graphify install` configura los agentes. Requiere Python 3.10+ y declara no tener telemetría.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Skill e instalación con `graphify install` para Claude Code.",
+     "orden_instalacion": "Instala graphifyy y ejecuta `graphify install`."
+    },
+    {
+     "id": "tree-sitter",
+     "motivo": "Analiza el código con Tree-sitter.",
+     "orden_instalacion": "No requiere instalación aparte: viene en el paquete."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Extra `[ollama]` para inferencia local.",
+     "orden_instalacion": "Instala `graphifyy[ollama]` y arranca Ollama."
+    },
+    {
+     "id": "graphrag",
+     "motivo": "Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Graphify para el código y GraphRAG para la documentación."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; funcionalmente compite con codegraph (solo anotado). Ojo con paquetes PyPI de nombre parecido.",
+   "descripcion_fuentes": [
+    "https://github.com/Graphify-Labs/graphify/blob/v8/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Graphify-Labs/graphify",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.9.111 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "codegraph": {
    "name": "codegraph",
@@ -30507,7 +30595,8 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa",
    "combines_with": [
-    "graphify",
+    "claude-code",
+    "codex",
     "headroom"
    ],
    "alternatives": [
@@ -30605,7 +30694,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "CodeGraph, CLI que indexa el código en local para dar contexto semántico a asistentes de IA, de @colbymchenry. Licencia MIT. Es muy popular (~78k estrellas, v1.6.2) y prepara una plataforma alojada.",
+   "que_hace": "Construye un grafo del código (símbolos, llamadas, rutas de frameworks, puentes iOS/React Native) para que el agente obtenga contexto preciso con menos lecturas. Se sirve como MCP (`codegraph serve --mcp`) y mantiene el índice sincronizado mientras editas. El README incluye benchmarks propios con Claude.",
+   "como_lo_hace": "Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y configura Claude Code, Cursor, Codex, OpenCode, Gemini CLI, Copilot y otros. El núcleo está en Rust y el índice vive en `.codegraph/`. Recoge estadísticas de uso anónimas (sin código ni rutas), desactivables según la sección de telemetría.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Configuración automática del MCP en Claude Code.",
+     "orden_instalacion": "Instala CodeGraph y ejecuta el instalador."
+    },
+    {
+     "id": "codex",
+     "motivo": "Configuración automática en Codex CLI.",
+     "orden_instalacion": "Ejecuta el instalador con Codex presente."
+    },
+    {
+     "id": "headroom",
+     "motivo": "Combinar contexto preciso con compresión del resto. (combinación por arquitectura)",
+     "orden_instalacion": "Indexa con CodeGraph y envuelve el agente con Headroom."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena. Telemetría anónima activada.",
+   "descripcion_fuentes": [
+    "https://github.com/colbymchenry/codegraph/blob/main/README.md",
+    "https://colbymchenry.github.io/codegraph/"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "colbymchenry/codegraph",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.6.2 (2026-10-03)",
+    "checked_at": "2026-11-15"
+   }
   },
   "codebase-memory-mcp": {
    "name": "codebase-memory-mcp",
@@ -30626,7 +30755,8 @@
    "limits": "Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens",
    "combines_with": [
     "claude-code",
-    "serena"
+    "serena",
+    "repomix"
    ],
    "alternatives": [
     "codegraph",
@@ -30723,7 +30853,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "codebase-memory-mcp, motor local de inteligencia de código para agentes vía MCP, de DeusData. Licencia MIT. Es muy activo (~49k estrellas, v0.12.1).",
+   "que_hace": "Conecta código, documentación, configuración e infraestructura en un grafo de conocimiento local persistente. Expone 17 herramientas MCP y ofrece resolución de tipos híbrida con LSP. Incluye un visor opcional (CBM Lens) y perfiles para agentes.",
+   "como_lo_hace": "Es un binario nativo en C que se instala con un script (`install.sh` o `install.ps1`, que el README recomienda revisar antes), con Nix o compilando el código. `install` configura los clientes compatibles. Indexa y consulta en local sin telemetría.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Cliente MCP de programación. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el binario y ejecuta `install` para configurar el cliente."
+    },
+    {
+     "id": "serena",
+     "motivo": "Edición semántica con LSP junto a la memoria de grafo. (combinación por arquitectura)",
+     "orden_instalacion": "Usa codebase-memory para explorar y Serena para editar."
+    },
+    {
+     "id": "repomix",
+     "motivo": "Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)",
+     "orden_instalacion": "Localiza con el grafo y empaqueta con Repomix."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus. Revisa el script de instalación antes de ejecutarlo.",
+   "descripcion_fuentes": [
+    "https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "DeusData/codebase-memory-mcp",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "C",
+    "latest_release": "v0.12.1 (2026-10-16)",
+    "checked_at": "2026-11-15"
+   }
   },
   "gitnexus": {
    "name": "GitNexus",
@@ -30743,7 +30912,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial",
    "combines_with": [
-    "codegraph"
+    "claude-code",
+    "opencode",
+    "codex"
    ],
    "alternatives": [
     "repomix",
@@ -30840,7 +31011,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION). Es muy activo (~49k estrellas, v1.6.12).",
+   "que_hace": "Indexa símbolos, llamadas, dependencias y flujos de ejecución para responder preguntas como dónde se usa algo o qué afecta un cambio. Se usa desde las herramientas MCP del agente, la CLI o un explorador visual del grafo. Reporta ambigüedad y cobertura del índice.",
+   "como_lo_hace": "Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Hooks y MCP configurados por `analyze` y `setup`.",
+     "orden_instalacion": "Ejecuta `npx gitnexus analyze` y luego `setup`."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Editor detectado por `gitnexus setup`.",
+     "orden_instalacion": "Ejecuta `gitnexus setup -c opencode`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Editor detectado por `gitnexus setup`.",
+     "orden_instalacion": "Ejecuta `gitnexus setup -c codex`."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
+   "descripcion_fuentes": [
+    "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "abhigyanpatwari/GitNexus",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.6.12 (2026-09-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "tree-sitter": {
    "name": "tree-sitter",
@@ -30861,7 +31071,9 @@
    "limits": "Es infraestructura de parsing; no contesta por sí sola preguntas sobre arquitectura o intención del código",
    "combines_with": [
     "ast-grep",
-    "aider"
+    "aider",
+    "repomix",
+    "graphify"
    ],
    "alternatives": [],
    "repo": "https://github.com/tree-sitter/tree-sitter",
@@ -30952,7 +31164,53 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Tree-sitter, generador de parsers y librería de parsing incremental. Licencia MIT. Es infraestructura madura (~27k estrellas, v0.27.2) usada por muchos editores y herramientas.",
+   "que_hace": "Construye un árbol sintáctico concreto de un archivo y lo actualiza eficientemente mientras se edita. Es lo bastante general para cualquier lenguaje, lo bastante rápido para cada pulsación y robusto ante errores de sintaxis. Es la base del resaltado, la navegación y el análisis estructural en editores y herramientas de IA.",
+   "como_lo_hace": "El runtime está escrito en C puro sin dependencias, con bindings para Rust, Wasm y otros lenguajes. Las gramáticas se generan con la CLI (`tree-sitter generate`), que requiere Node.js para gramáticas en JavaScript.",
+   "combina_con": [
+    {
+     "id": "ast-grep",
+     "motivo": "ast-grep usa Tree-sitter para buscar y reescribir por patrones.",
+     "orden_instalacion": "Instala ast-grep; incluye las gramáticas comunes."
+    },
+    {
+     "id": "aider",
+     "motivo": "El mapa del repo de Aider se construye con Tree-sitter.",
+     "orden_instalacion": "No requiere instalación aparte en Aider."
+    },
+    {
+     "id": "repomix",
+     "motivo": "`repomix --compress` extrae la estructura con Tree-sitter.",
+     "orden_instalacion": "Usa la opción `--compress`."
+    },
+    {
+     "id": "graphify",
+     "motivo": "Graphify analiza el código con Tree-sitter.",
+     "orden_instalacion": "Viene incluido en graphifyy."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/tree-sitter/tree-sitter/blob/master/README.md",
+    "https://tree-sitter.github.io",
+    "https://aider.chat/docs/repomap.html"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "tree-sitter/tree-sitter",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "latest_release": "v0.27.2 (2026-11-07)",
+    "checked_at": "2026-11-15"
+   }
   },
   "deepwiki-open": {
    "name": "DeepWiki Open",
@@ -30972,7 +31230,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa",
    "combines_with": [
-    "ollama"
+    "ollama",
+    "litellm",
+    "mermaid"
    ],
    "alternatives": [
     "context7"
@@ -31067,7 +31327,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "DeepWiki-Open, implementación abierta de DeepWiki que genera wikis con IA de repos de GitHub, GitLab o Bitbucket, de AsyncFuncAI. Licencia MIT. Es popular (~18k estrellas, sin releases); el README anuncia una versión 2.0, «Grok Wiki», como descarga aparte.",
+   "que_hace": "Analiza la estructura del código, genera documentación, diagramas y un mapa del código para visitas guiadas, y lo organiza como wiki navegable. Admite proveedores Google, OpenAI, OpenRouter, Azure, Bedrock, DashScope y Ollama.",
+   "como_lo_hace": "Tiene backend en Python (FastAPI y adalflow) y frontend Next.js. Se despliega con Docker Compose (incluida una variante con LiteLLM y otra con Ollama local) o con Helm en Kubernetes, configurando claves de proveedor. Los repos privados requieren un token de acceso.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Configuración y Dockerfile para Ollama local.",
+     "orden_instalacion": "Arranca Ollama y usa la configuración local."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Variante oficial de Docker Compose con LiteLLM.",
+     "orden_instalacion": "Usa `docker-compose-litellm.yml` con tu `litellm-config.yml`."
+    },
+    {
+     "id": "mermaid",
+     "motivo": "Revisar o editar los diagramas generados. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los diagramas y edítalos con Mermaid."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): context7. El README actual es muy escueto y remite a Grok Wiki; la relación entre ambos no está clara.",
+   "descripcion_fuentes": [
+    "https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "AsyncFuncAI/deepwiki-open",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "semgrep": {
    "name": "Semgrep",
@@ -31246,7 +31544,8 @@
    "limits": "Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero",
    "combines_with": [
     "tree-sitter",
-    "claude-code"
+    "claude-code",
+    "aider"
    ],
    "alternatives": [
     "semgrep"
@@ -31340,7 +31639,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "ast-grep (sg), CLI en Rust para búsqueda estructural, lint y reescritura de código, de @HerringtonDarkholme. Licencia MIT. Es activa (~17k estrellas, 0.51.2).",
+   "que_hace": "Busca código con patrones escritos como código normal, usando `$VAR` como comodín para nodos del AST. Permite crear reglas de lint en YAML y aplicar reescrituras masivas. Soporta muchos lenguajes y tiene un playground online.",
+   "como_lo_hace": "Se instala con `npm install --global @ast-grep/cli` (Node.js 20+), `pip install ast-grep-cli`, `brew` o `cargo install ast-grep --locked`. Está escrito en Rust sobre Tree-sitter.",
+   "combina_con": [
+    {
+     "id": "tree-sitter",
+     "motivo": "Usa gramáticas de Tree-sitter.",
+     "orden_instalacion": "No requiere instalación aparte."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Dar al agente búsquedas y refactorizaciones estructurales. (combinación por arquitectura)",
+     "orden_instalacion": "Instala `sg` y permite al agente usarlo."
+    },
+    {
+     "id": "aider",
+     "motivo": "Aplicar refactorizaciones masivas deterministas junto a la edición con IA. (combinación por arquitectura)",
+     "orden_instalacion": "Usa ast-grep para el cambio mecánico y Aider para el resto."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): semgrep.",
+   "descripcion_fuentes": [
+    "https://github.com/ast-grep/ast-grep/blob/main/README.md",
+    "https://ast-grep.github.io"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ast-grep/ast-grep",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "latest_release": "0.51.2 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
   },
   "defending-code-reference-harness": {
    "name": "Defending Code Reference Harness",
@@ -31516,7 +31855,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar soluciones a issues reproducibles; Estudiar evaluación de agentes de programación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El benchmark no demuestra que un agente resuelva cualquier issue real; usa el conjunto y la versión de tareas correspondientes",
-   "combines_with": [],
+   "combines_with": [
+    "openhands",
+    "aider",
+    "codex"
+   ],
    "alternatives": [],
    "repo": "https://github.com/SWE-bench/SWE-bench",
    "homepage": "https://www.swebench.com",
@@ -31611,7 +31954,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "SWE-bench, benchmark para evaluar si los modelos resuelven issues reales de GitHub, presentado en ICLR 2024 (oral) y ampliado con SWE-bench Multimodal (ICLR 2025). Licencia MIT. Es estable (~6k estrellas, sin releases) y su último cambio es de septiembre de 2026.",
+   "que_hace": "Ofrece datasets (SWE-bench, Verified, Lite, Multimodal) con issues y tests, y un arnés que aplica los parches generados y ejecuta los tests en contenedores. SWE-bench Multimodal v2 es open source con 480 tareas. sb-cli permite evaluar en la nube.",
+   "como_lo_hace": "Se instala con `pip install -e .` y requiere Docker. El README recomienda una máquina x86_64 con al menos 120 GB libres, 16 GB de RAM y 8 núcleos; arm64 es experimental. Los resultados se guardan en `logs/evaluation/<run_id>/`.",
+   "combina_con": [
+    {
+     "id": "openhands",
+     "motivo": "Evaluar agentes de programación sobre SWE-bench. (combinación por arquitectura)",
+     "orden_instalacion": "Genera predicciones con el agente y evalúalas con el arnés."
+    },
+    {
+     "id": "aider",
+     "motivo": "Comparar el rendimiento de distintos modelos en Aider. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta los parches como predicciones."
+    },
+    {
+     "id": "codex",
+     "motivo": "Medir un agente CLI en tareas reales. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta el agente por instancia y evalúa los parches."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Muy exigente en disco y CPU.",
+   "descripcion_fuentes": [
+    "https://github.com/SWE-bench/SWE-bench/blob/main/README.md",
+    "https://www.swebench.com"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "SWE-bench/SWE-bench",
+    "archived": false,
+    "pushed_at": "2026-09-18",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "unsloth": {
    "name": "Unsloth",
@@ -59814,7 +60196,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "ollama",
+    "litellm"
+   ],
    "alternatives": [],
    "repo": "https://github.com/ajsai47/backdoor",
    "homepage": "",
@@ -59915,7 +60301,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.",
+   "que_hace": "Intercepta las llamadas de Claude Code a la API de Anthropic, traduce el formato y las reenvía a cualquier proveedor compatible con OpenAI (DeepSeek, Groq, OpenRouter, Ollama o un modelo local). Permite cambiar de proveedor con una línea. El README presenta una comparación de costes propia que no se ha verificado.",
+   "como_lo_hace": "Es un proyecto en Python de menos de 600 líneas (servidor, asistente de configuración y scripts) que se ejecuta en local con uv y un archivo `.env`. Requiere tener Claude Code instalado. Con Ollama no salen datos de tu máquina.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Es el cliente que Backdoor redirige.",
+     "orden_instalacion": "Instala Claude Code y luego configura Backdoor."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local documentado en el README.",
+     "orden_instalacion": "Arranca Ollama y elígelo como backend."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta Backdoor a la URL del proxy LiteLLM."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
+   "descripcion_fuentes": [
+    "https://github.com/ajsai47/backdoor/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ajsai47/backdoor",
+    "archived": false,
+    "pushed_at": "2026-05-22",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "masterdnsvpn": {
    "name": "MasterDnsVPN",
@@ -68630,7 +69054,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "cline",
+    "ollama"
+   ],
    "alternatives": [],
    "repo": "https://github.com/cheaper-inference/OmniRoute",
    "homepage": "https://omniroute.online",
@@ -68731,7 +69159,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "OmniRoute, pasarela local de IA gratuita creada por @diegosouzapw. Licencia MIT. Tiene un recuento de estrellas inusualmente alto (~88k) y publica versiones casi a diario (v3.8.53).",
+   "que_hace": "Expone un único endpoint compatible con OpenAI (`http://localhost:20128/v1`) que enruta hacia cientos de proveedores con fallback automático, circuit breakers y control de cuotas. Cataloga niveles gratuitos de terceros y estima tokens disponibles, pero exige tus propias cuentas y credenciales. Tiene modos de enrutado (p. ej. solo suscripción o «thrifty»), analítica de costes, MCP/A2A y modo remoto.",
+   "como_lo_hace": "Se instala con `npm install -g omniroute`, con Docker (`diegosouzapw/omniroute`) o desde el código, y se conectan proveedores desde el panel web. Funciones avanzadas como el descifrado MITM transparente (TPROXY) instalan una CA local: úsalas con cuidado. Los proveedores marcados `tos: avoid` quedan fuera del enrutado automático por defecto.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El README muestra Claude Code apuntando al endpoint local.",
+     "orden_instalacion": "Arranca OmniRoute y configura la URL base del agente."
+    },
+    {
+     "id": "cline",
+     "motivo": "Cliente citado en el flujo de peticiones del README.",
+     "orden_instalacion": "Configura Cline con el endpoint OpenAI de OmniRoute."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Ollama es un proveedor de primera clase en OmniRoute.",
+     "orden_instalacion": "Conecta tu instancia de Ollama como proveedor local."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Posible grupo alt con claude-code-router, backdoor y litellm (solo anotado). Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
+   "descripcion_fuentes": [
+    "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "cheaper-inference/OmniRoute",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.8.53 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
   },
   "opencode-manager": {
    "name": "opencode-manager",
@@ -73864,7 +74331,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "codegraph"
+   ],
    "alternatives": [],
    "repo": "https://github.com/haydenschmitty/floorplan",
    "homepage": "https://haydenschmitty.github.io/floorplan-demo/",
@@ -73965,7 +74436,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Floorplan, plugin para Claude Code y Codex que dibuja un mapa interactivo de una aplicación, de @haydenschmitty. Licencia MIT. Es reciente (~5k estrellas, floorplan--v0.10.0).",
+   "que_hace": "El agente lee el código y genera un mapa donde cada parte, archivo y petición web tiene un nombre en lenguaje llano y se ven sus conexiones, incluso entre varios repos. Muestra qué partes tocó cada cambio del agente y permite hacer preguntas desde el mapa.",
+   "como_lo_hace": "Se instala como plugin con `claude plugin marketplace add haydenschmitty/floorplan` y `claude plugin install floorplan@floorplan`, o con `codex plugin add floorplan@floorplan`. Requiere Node.js 18+. Declara no usar hooks, servidores MCP ni dependencias y no descargar nada.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial para Claude Code.",
+     "orden_instalacion": "Añade el marketplace e instala el plugin."
+    },
+    {
+     "id": "codex",
+     "motivo": "Plugin oficial para Codex.",
+     "orden_instalacion": "Añade el marketplace en Codex e instala el plugin."
+    },
+    {
+     "id": "codegraph",
+     "motivo": "Combinar el mapa visual con un índice semántico para el agente. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Floorplan para entender y CodeGraph para navegar."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/haydenschmitty/floorplan/blob/main/README.md",
+    "https://haydenschmitty.github.io/floorplan-demo/"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "haydenschmitty/floorplan",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "floorplan--v0.10.0 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "vibe-trading": {
    "name": "Vibe-Trading",
@@ -78769,7 +79280,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar el uso de una sesión; Estudiar alertas y proyecciones de cuota",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "rtk",
+    "headroom"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor",
    "homepage": "",
@@ -78869,7 +79384,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Claude Code Usage Monitor (`claude-monitor` en PyPI), monitor de terminal del uso de Claude Code, de @Maciek-roboblog. Licencia MIT. Es popular (~9k estrellas, v4.0.0) y su último cambio es de julio de 2026.",
+   "que_hace": "Muestra en vivo el consumo de tokens, coste y mensajes por sesión, con previsiones de cuándo se alcanzará el límite y avisos. Captura los `rate_limits` oficiales mediante la statusline de Claude Code y, si no están disponibles, usa estimaciones locales etiquetadas. Ofrece planes predefinidos y un plan personalizado calculado con los últimos 8 días.",
+   "como_lo_hace": "Se instala con `uv tool install claude-monitor` o `pip install claude-monitor` y se ejecuta con `claude-monitor`. Lee los registros locales de Claude Code con una interfaz Rich; no envía datos fuera.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Lee los datos locales y la statusline de Claude Code.",
+     "orden_instalacion": "Instala el monitor y ejecútalo junto a tus sesiones."
+    },
+    {
+     "id": "rtk",
+     "motivo": "Medir el efecto de reducir salidas de terminal. (combinación por arquitectura)",
+     "orden_instalacion": "Compara el consumo antes y después de activar rtk."
+    },
+    {
+     "id": "headroom",
+     "motivo": "Medir el ahorro de compresión de contexto. (combinación por arquitectura)",
+     "orden_instalacion": "Compara el consumo con y sin `headroom wrap claude`."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Los límites por plan son estimaciones si no hay datos oficiales.",
+   "descripcion_fuentes": [
+    "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md",
+    "https://pypi.org/project/claude-monitor/"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+    "archived": false,
+    "pushed_at": "2026-07-05",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v4.0.0 (2026-06-27)",
+    "checked_at": "2026-11-15"
+   }
   },
   "magnitude": {
    "name": "magnitude",
@@ -80217,7 +80772,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "codex",
+    "opencode"
+   ],
    "alternatives": [],
    "repo": "https://github.com/musistudio/claude-code-router",
    "homepage": "https://ccrdesk.top/",
@@ -80319,7 +80878,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Claude Code Router (CCR), pasarela local y plano de control para agentes de programación, de @musistudio. Licencia MIT. Es muy popular (~38k estrellas, v3.1.4).",
+   "que_hace": "Conecta Claude Code, Codex, OpenCode, Kimi CLI, Kilo Code y otros clientes con los proveedores que elijas (OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek, Moonshot, Mistral…), con enrutado, reintentos, rotación de claves y modelos de respaldo. Añade capacidades como visión, búsqueda web, herramientas MCP y ToolHub. Muestra registros de peticiones, rutas resueltas, latencia, tokens, coste estimado y cuotas por cliente.",
+   "como_lo_hace": "Se usa como app de escritorio (Electron) o con `npm install -g @musistudio/claude-code-router` y `ccr ui` (Node.js 22+), y también con Docker en `127.0.0.1:3458`. Las claves de los proveedores se guardan en local.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Cliente principal del router.",
+     "orden_instalacion": "Instala CCR y lanza Claude Code a través de él."
+    },
+    {
+     "id": "codex",
+     "motivo": "Cliente soportado según el README.",
+     "orden_instalacion": "Configura Codex para usar CCR como proveedor."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Cliente soportado según el README.",
+     "orden_instalacion": "Apunta OpenCode a la pasarela de CCR."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Posible grupo alt con omniroute, backdoor y litellm (solo anotado). Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
+   "descripcion_fuentes": [
+    "https://github.com/musistudio/claude-code-router/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "26-gateways-y-codigo-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "musistudio/claude-code-router",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.1.4 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
   },
   "laya": {
    "name": "laya",
