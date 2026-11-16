@@ -26,7 +26,7 @@ Un binario en Go con PostgreSQL como único almacén. Se instala con Docker Comp
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Alta de suscriptores o envíos transaccionales desde formularios y otros sistemas usando la API de listmonk (combinación por arquitectura). | Crea un token de API con permisos acotados en listmonk y úsalo en nodos HTTP de n8n. |
+| [activepieces](activepieces.md) | Alta de suscriptores o envíos transaccionales desde formularios y otros sistemas usando la API de listmonk (combinación por arquitectura). | Crea un token de API con permisos acotados en listmonk y úsalo en la pieza HTTP de Activepieces. |
 | [novu](novu.md) | listmonk para boletines masivos y Novu para notificaciones de producto multicanal (combinación por arquitectura). | Independientes; separa dominios de envío. |
 | [postiz-app](postiz-app.md) | Coordinar el calendario de redes sociales con las campañas de email (combinación por arquitectura). | Independientes; pueden compartir servidor pero cada uno con su base de datos. |
 

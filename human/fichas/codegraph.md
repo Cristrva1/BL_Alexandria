@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+CodeGraph, CLI que indexa el código en local para dar contexto semántico a asistentes de IA, de @colbymchenry. Licencia MIT. Es muy popular (~78k estrellas, v1.6.2) y prepara una plataforma alojada.
+
+## ¿Qué hace?
+
+Construye un grafo del código (símbolos, llamadas, rutas de frameworks, puentes iOS/React Native) para que el agente obtenga contexto preciso con menos lecturas. Se sirve como MCP (`codegraph serve --mcp`) y mantiene el índice sincronizado mientras editas. El README incluye benchmarks propios con Claude.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y configura Claude Code, Cursor, Codex, OpenCode, Gemini CLI, Copilot y otros. El núcleo está en Rust y el índice vive en `.codegraph/`. Recoge estadísticas de uso anónimas (sin código ni rutas), desactivables según la sección de telemetría.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Configuración automática del MCP en Claude Code. | Instala CodeGraph y ejecuta el instalador. |
+| [Codex CLI](codex.md) | Configuración automática en Codex CLI. | Ejecuta el instalador con Codex presente. |
+| [headroom](headroom.md) | Combinar contexto preciso con compresión del resto. (combinación por arquitectura) | Indexa con CodeGraph y envuelve el agente con Headroom. |
+| [floorplan](floorplan.md) | Combinación recíproca: floorplan lo enlaza como «Combinar el mapa visual con un índice semántico para el agente. (combinación por arquitectura)». | Orden indicado desde floorplan: Usa Floorplan para entender y CodeGraph para navegar. |
+
+**Notas:** Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.2 (2026-10-03) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/colbymchenry/codegraph/blob/main/README.md) · [2](https://colbymchenry.github.io/codegraph/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa |
 | Coste | El coste depende del proveedor o la ruta. El índice básico es local sin API; embeddings opcionales y el agente pueden consumir recursos o servicios según configuración |
 | Equipo | Preparación según la ruta elegida. Instalador oficial o Node y npm; repositorio de prueba |
-
-La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa
-
-## Qué puedes hacer con él
-
-CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una refactorización; Encontrar rutas de ejecución de un proyecto.
-
-## Cómo funciona
 
 La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa
 
@@ -93,19 +108,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `code` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
-| [headroom](headroom.md) | 79.7k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 | [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
+| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 
 ## Enlaces
 

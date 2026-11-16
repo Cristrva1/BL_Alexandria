@@ -31,6 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un video corto de una función real del sitio y contrasta lo mostrado con su comportamiento
 **Qué comprobar:** Puedes revisar guion, capturas, música y duración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `hyperframes`, `claude-code`, `gsap`
 
 ## `claude-animated-shorts`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
@@ -60,6 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara un plano de pocos segundos y revisa personajes, cámara y tiempos antes de un corto completo
 **Qué comprobar:** Puedes reproducir la escena y contrastarla con el guion
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `remotion`, `three.js`, `claude-code`
 
 ## `huashu-motion`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
@@ -89,6 +91,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una escena corta y revisa ritmo, títulos y sincronía antes de extender la pieza
 **Qué comprobar:** Puedes identificar decisiones de composición y duración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gsap`, `kokoro`, `claude-code`
 
 ## `hyperframes`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=video,agents,skills,typescript
@@ -118,37 +121,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un proyecto con un título de pocos segundos, previsualiza y renderiza un MP4
 **Qué comprobar:** Puedes comprobar duración, primer y último frame y archivo exportado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`
+**Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`, `arcads-claude-code`, `brag`
 **Alternativas (elige una):** `remotion`, `moviepy`
-
-## `hypit`
-role=skill · exec=local · setup=medium · mcp=False · prov=local · tags=generativo,skill,typescript
-
-**Qué es:** Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables.
-**Stack:** Agente compatible; modelo o proveedor configurado; video propio de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. La skill no añade cuota por asiento según el autor; los servicios de modelos sí cobran; admite APIs o modelos locales según tarea
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Dentro del agente: skills o instrucciones
-- Antigravity: Dentro del agente: skills o instrucciones
-- Modelos locales: Modelos locales documentados. Las promesas de viralidad no son resultados medidos para tu contenido; revisa permisos de imágenes, voces y clips utilizados
-- Coste: El coste depende del proveedor o la ruta. La skill no añade cuota por asiento según el autor; los servicios de modelos sí cobran; admite APIs o modelos locales según tarea
-- Equipo: Preparación según la ruta elegida. Agente compatible; modelo o proveedor configurado; video propio de prueba
-**Repo:** https://github.com/hypit-ai/hypit
-
-**Instalación** [+]:
-
-```
-npx skills add hypit-ai/hypit -g
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Crear versiones de un video propio; Coordinar subtítulos y B-roll de un tutorial
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Parte de un clip propio, cambia un rótulo y una toma y revisa el workflow antes de renderizar
-**Qué comprobar:** Puedes identificar los recursos y reproducir una variante del flujo
-Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `lemo-opuscar`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
@@ -179,6 +153,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige un estilo y crea una escena de prueba revisando créditos antes de adaptar el resto
 **Qué comprobar:** Puedes identificar código, estilo y assets de la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ffmpeg`, `three.js`
 
 ## `manim`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,dataviz,learning,python
@@ -212,7 +187,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una escena de ejemplo y cambia una forma o texto
 **Qué comprobar:** Puedes abrir la animación y localizar su código
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `kokoro`, `moviepy`, `ffmpeg`
+**Combina con:** `ffmpeg`, `kokoro`, `moviepy`
 **Alternativas (elige una):** `manim-community`
 
 ## `manim-community`
@@ -243,7 +218,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue SquareToCircle y modifica una propiedad para observar la transformación
 **Qué comprobar:** Puedes renderizar y relacionar el resultado con la escena Python
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`
+**Combina con:** `ffmpeg`, `kokoro`, `srt-whiteboard-animation`
 **Alternativas (elige una):** `manim`
 
 ## `mediabunny`
@@ -274,6 +249,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee duración y pistas de un archivo y convierte una copia a un formato admitido
 **Qué comprobar:** Puedes contrastar metadatos y reproducir la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `remotion`, `ffmpeg`, `openfilm`, `pixijs`
+
+## `motion-canvas`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=animation,typescript,video,code
+
+**Qué es:** Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/motion-canvas/motion-canvas
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/motion-canvas/motion-canvas/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer vídeos explicativos de programación o matemáticas con animaciones precisas; sincronizar animaciones con una narración grabada
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Ejecuta `npm init @motion-canvas@latest`, entra en la carpeta, ejecuta `npm install` y `npm start`, y abre el editor.
+**Qué comprobar:** Ves la escena de ejemplo y puedes editar el código con recarga en vivo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `kokoro`, `claude-code`
+**Alternativas (elige una):** `revideo`, `remotion`
 
 ## `motionmaxxing`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
@@ -304,6 +311,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa providers.sh y crea una escena tipográfica breve antes de añadir voces o imágenes
 **Qué comprobar:** Puedes comparar composición y tiempos de dos versiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gsap`, `claude-code`, `ffmpeg`
 
 ## `moviepy`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,automation,python
@@ -333,7 +341,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Recorta diez segundos y superpone un título usando el ejemplo v2
 **Qué comprobar:** El render conserva duración y audio y muestra el título
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `kokoro`, `comfyui`
+**Combina con:** `whisperx`, `kokoro`, `ffmpeg`
 **Alternativas (elige una):** `remotion`, `hyperframes`
 
 ## `openfilm`
@@ -364,6 +372,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre un ejemplo y modifica un título en Studio antes de exportar un clip corto
 **Qué comprobar:** Puedes inspeccionar el proyecto editable y el MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gsap`, `three.js`, `mediabunny`
 
 ## `openmontage`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=video,coding-agent,skills
@@ -395,7 +404,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empieza con material propio y narración Piper y comprueba guion, timeline y exportación
 **Qué comprobar:** Puedes revisar la procedencia de cada asset y abrir el MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`
+**Combina con:** `remotion`, `ffmpeg`, `kokoro`, `elevenlabs-python`
 **Alternativas (elige una):** `remotion-superpowers`, `moneyprinterturbo`
 
 ## `papermorph`
@@ -426,6 +435,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transforma una página breve autorizada en una lección y comprueba texto, narración y controles
 **Qué comprobar:** Puedes contrastar el contenido con la página original
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `opencode`, `kokoro`
 
 ## `rea-video`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=programatico,agent-skills,ai-video,aigc-detection,claude-code,codex,ffmpeg,prompt-engineering
@@ -455,7 +465,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Analiza un clip corto y contrasta los planos del VIDEO.md con el original
 **Qué comprobar:** Puedes revisar tiempos, estructura e hipótesis de técnica
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`
+**Combina con:** `remotion`, `ffmpeg`, `claude-code`
 
 ## `remotion`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,typescript
@@ -485,8 +495,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una composición de prueba y comprueba que la cantidad de frames corresponde a su duración
 **Qué comprobar:** Puedes reproducir y exportar un clip con inicio y fin definidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-generative-ai`
-**Alternativas (elige una):** `moviepy`, `hyperframes`
+**Combina con:** `skills-remotion`, `remotion-superpowers`, `gsap`
+**Alternativas (elige una):** `moviepy`, `hyperframes`, `motion-canvas`, `revideo`
 
 ## `remotion-superpowers`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills,coding-agent
@@ -517,8 +527,39 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta setup y prepara un guion corto con estimación de servicios antes de generar
 **Qué comprobar:** Puedes identificar claves, proveedores y resultado de cada etapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `skills-remotion`
+**Combina con:** `remotion`, `skills-remotion`, `claude-code`, `elevenlabs-python`
 **Alternativas (elige una):** `openmontage`, `video-use`
+
+## `revideo`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,typescript,rendering,code
+
+**Qué es:** Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/midrender/revideo
+
+**Instalación** [+]:
+
+```
+npm init @revideo@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar muchas variantes de un vídeo a partir de datos o plantillas; añadir un renderizador de vídeo a una aplicación web
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Ejecuta `npm init @revideo@latest` y sigue el asistente; después renderiza el proyecto de ejemplo.
+**Qué comprobar:** Obtienes un MP4 generado desde código.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `ffmpeg`
+**Alternativas (elige una):** `motion-canvas`, `remotion`
 
 ## `skills-remotion`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills
@@ -548,7 +589,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una composición corta y comprueba frames y duración antes de añadir voz o servicios
 **Qué comprobar:** Puedes revisar la composición React y su render
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `remotion-superpowers`
+**Combina con:** `remotion`, `claude-code`, `remotion-superpowers`
 
 ## `srt-whiteboard-animation`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,python
@@ -578,6 +619,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Usa tres líneas de subtítulos y revisa el orden de trazos y la sincronización con cada frase
 **Qué comprobar:** Puedes comparar tiempos del SRT y salida MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `whisperx`, `kokoro`, `manim-community`
 
 ## `video-shotcraft`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
@@ -607,6 +649,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Captura una pantalla propia y crea un plano corto verificando legibilidad, tiempo y audio
 **Qué comprobar:** Puedes revisar composición editable y exportación
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `remotion`, `claude-code`, `codex`
 
 ## `video-use`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,coding-agent,skills,python
@@ -636,7 +679,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un clip corto y revisa transcripción y plan de cortes antes de exportar
 **Qué comprobar:** Puedes contrastar el montaje con el material original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `claude-code`
+**Combina con:** `ffmpeg`, `claude-code`, `hermes-agent`, `elevenlabs-python`
 **Alternativas (elige una):** `remotion-superpowers`
 
 ## `videofy-minimal`
@@ -668,5 +711,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un borrador desde un artículo de prueba y revisa guion, voz y fuentes antes de exportar
 **Qué comprobar:** Puedes identificar qué contenido se usó y verificar el video
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisper`
+**Combina con:** `remotion`, `whisper`, `ffmpeg`
 **Alternativas (elige una):** `moneyprinterturbo`

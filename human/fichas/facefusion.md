@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+FaceFusion, plataforma de manipulación facial (intercambio y mejora de rostros) para imágenes y vídeo. Licencia OpenRAIL-AS (GitHub muestra NOASSERTION). Tiene ~31k estrellas y está activa (3.9.2).
+
+## ¿Qué hace?
+
+Intercambia rostros, mejora caras y fotogramas, sincroniza labios y aplica otros procesadores mediante UI o CLI (`python facefusion.py [commands]`). Incluye controles de contenido.
+
+## ¿Cómo lo hace?
+
+La instalación requiere conocimientos técnicos según el propio README (docs.facefusion.io) y usa Python, ONNX Runtime con aceleración CUDA, ROCm, CoreML u OpenVINO, y FFmpeg.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Procesamiento de vídeo. | Instala FFmpeg en el sistema. |
+| [InsightFace](insightface.md) | Modelos de análisis facial del ecosistema. (combinación por arquitectura) | Usados en los procesadores. |
+| [Real-ESRGAN](real-esrgan.md) | Escalar fotogramas tras el procesado. (combinación por arquitectura) | Aplica después. |
+
+**Notas:** Alternativas (elige una): deep-live-cam. Riesgo ético y legal; licencia RAIL con restricciones de uso.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 3.9.2 (2026-10-26) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facefusion/facefusion/blob/master/README.md) · [2](https://docs.facefusion.io/installation)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La instalación desde fuente requiere conocimientos técnicos; no debe presentarse la disponibilidad del código como permiso comercial de todos los pesos |
 | Coste | El coste depende del proveedor o la ruta. La inferencia propia no exige API; instaladores, hardware y modelos tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Sistema compatible; modelos; CPU o GPU; material autorizado |
-
-La instalación desde fuente requiere conocimientos técnicos; no debe presentarse la disponibilidad del código como permiso comercial de todos los pesos
-
-## Qué puedes hacer con él
-
-Plataforma para intercambio y mejora de rostros en imágenes y video.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen.
-
-## Cómo funciona
 
 La instalación desde fuente requiere conocimientos técnicos; no debe presentarse la disponibilidad del código como permiso comercial de todos los pesos
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Sistema compatible; modelos; CPU o GPU; material autorizado
 - **Etiquetas:** `image` `video` `vision` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Alternativas (elige una)
 

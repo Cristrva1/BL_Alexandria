@@ -30,6 +30,7 @@ Se instala desde GitHub; la publicación en npm está en pausa porque la cuenta 
 | [Claude Code](claude-code.md) | Agente soportado por AAS Core. | Sigue la guía para Claude Code. |
 | [GitHub CLI](cli.md) | Instalación de skills individuales con `gh skill`. | GitHub CLI con soporte de `gh skill` instalado. |
 | [SkillSpector](skillspector.md) | Auditar un catálogo tan grande antes de instalar nada (combinación por arquitectura). | Audita las skills seleccionadas. |
+| [Antigravity CLI](antigravity-cli.md) | Combinación recíproca: Antigravity CLI lo enlaza como «Su instalador lista Antigravity CLI (`antigravity-cli`) como destino de instalación de skills». | Orden indicado desde Antigravity CLI: Instala solo las skills que vayas a usar para no sobrecargar el agente. |
 
 **Notas:** Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.
 

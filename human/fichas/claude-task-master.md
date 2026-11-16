@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Taskmaster, sistema de gestión de tareas para desarrollo con IA, de @eyaltoledano y @RalphEcom. Licencia MIT con Commons Clause (no OSI; GitHub muestra NOASSERTION). Tiene ~28k estrellas, pero su último cambio es de abril de 2026; la documentación vive en tryhamster.com.
+
+## ¿Qué hace?
+
+Convierte un PRD en tareas con dependencias y estructura, y las expande y gestiona desde el editor. Usa tres roles de modelo (principal, investigación y respaldo).
+
+## ¿Cómo lo hace?
+
+Se usa como servidor MCP (recomendado: `claude mcp add taskmaster-ai -- npx -y task-master-ai`, o el deeplink de Cursor) o como CLI. Admite Claude Code sin clave de API y Codex CLI vía OAuth, además de claves de proveedores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Proveedor sin clave de API y cliente MCP. | Añade el MCP con `claude mcp add`. |
+| [Codex CLI](codex.md) | Proveedor vía OAuth de ChatGPT. | Instala Codex CLI e inicia sesión. |
+| [OpenCode](opencode.md) | Cliente MCP genérico. (combinación por arquitectura) | Añade el servidor MCP. |
+
+**Notas:** Alternativa (elige una): spec-kit. Actividad reciente baja.
+
+Estado en GitHub: activo · último push 2026-04-28 · última versión publicada task-master-ai@0.43.1 (2026-03-31) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/eyaltoledano/claude-task-master/blob/main/README.md) · [2](https://tryhamster.com/docs/taskmaster/capabilities/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la configuración |
 | Coste | El coste depende del proveedor o la ruta. Admite proveedores API y rutas por CLI Claude Code o Codex con sus cuentas; investigación y fallback pueden usar otros proveedores |
 | Equipo | Preparación según la ruta elegida. Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio |
-
-Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la configuración
-
-## Qué puedes hacer con él
-
-Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.
-
-## Por qué destaca
-
-Usos propuestos: Descomponer un proyecto web; Revisar orden y dependencias de tareas.
-
-## Cómo funciona
 
 Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la configuración
 
@@ -94,6 +108,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio
 - **Etiquetas:** `infra` `agent` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
 
 ## Enlaces
 

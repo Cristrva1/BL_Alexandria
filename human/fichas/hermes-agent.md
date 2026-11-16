@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Hermes Agent, agente de Nous Research que se mejora a sí mismo. Licencia MIT. Es muy activo (~264k estrellas) y tiene versión de escritorio.
+
+## ¿Qué hace?
+
+Tiene un bucle de aprendizaje: crea skills a partir de la experiencia, las mejora con el uso y mantiene memoria curada con búsqueda FTS5 entre sesiones. Atiende por TUI, Telegram, Discord, Slack, WhatsApp y Signal desde un único gateway, programa automatizaciones con cron, lanza subagentes y se conecta a MCP.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`, que instala Python 3.14, Node y otras dependencias, o con PowerShell o MSIX. Funciona con Nous Portal, OpenRouter, OpenAI o endpoints propios, en seis backends de terminal (local, Docker, SSH, Modal, Daytona, Vercel Sandbox). Puede importar configuración y memoria de OpenClaw, Claude Code, Codex o Cursor.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [NemoClaw](nemoclaw.md) | Ejecutar Hermes con más aislamiento en el stack de NVIDIA. | Instala NemoClaw y lanza Hermes dentro. |
+| [Ollama](ollama.md) | Endpoint propio con modelos locales. (combinación por arquitectura) | Configura el endpoint compatible con OpenAI. |
+| [ECC](ecc.md) | Skills y configuración reutilizables. (combinación por arquitectura) | Importa las skills que apliquen. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[agentmemory](agentmemory.md) · [awesome-agents](awesome-agents.md) · [book-to-skill](book-to-skill.md) · [dsh-noema](dsh-noema.md) · [gods-eye-view](gods-eye-view.md) · [Hermes Desktop](hermes-desktop.md) · [hermes-agent-self-evolution](hermes-agent-self-evolution.md) · [Letta](letta.md) · [magnitude](magnitude.md) · [osiris](osiris.md) · [paperclip](paperclip.md) · [superpowers](superpowers.md) · [video-use](video-use.md)
+
+**Notas:** Alternativas (elige una): openclaw, mercury-agent.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.23.1 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NousResearch/hermes-agent/blob/main/README.md) · [2](https://hermes-agent.nousresearch.com/docs/integrations/providers)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | Modelos locales documentados. Importar ajustes e historial de Claude Code no equivale a usar su plan como motor; las herramientas de búsqueda, voz e imagen tienen proveedores separados |
 | Coste | El coste depende del proveedor o la ruta. API, Portal por suscripción o endpoint local según configuración; documenta también ruta ChatGPT/Codex |
 | Equipo | Preparación según la ruta elegida. Equipo compatible; proveedor o endpoint local; perfil de prueba |
-
-Importar ajustes e historial de Claude Code no equivale a usar su plan como motor; las herramientas de búsqueda, voz e imagen tienen proveedores separados
-
-## Qué puedes hacer con él
-
-Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados.
-
-## Por qué destaca
-
-Usos propuestos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal.
-
-## Cómo funciona
 
 Importar ajustes e historial de Claude Code no equivale a usar su plan como motor; las herramientas de búsqueda, voz e imagen tienen proveedores separados
 
@@ -86,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Equipo compatible; proveedor o endpoint local; perfil de prueba
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
-| [odysseus](odysseus.md) | 95.6k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 
 ## Alternativas (elige una)
 

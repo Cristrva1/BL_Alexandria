@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill de investigación que resume lo ocurrido en los últimos 30 días sobre un tema a partir de señales sociales (votos, likes, mercados de predicción), de @mvanhorn. Licencia MIT. Es muy popular y activa (~68k estrellas, v4.0.5).
+
+## ¿Qué hace?
+
+Busca en Reddit, Hacker News, Polymarket y GitHub sin configuración, y con un asistente desbloquea X, YouTube (transcripciones), TikTok, arXiv, Techmeme y otras fuentes. Algunas fuentes opcionales usan servicios de terceros (ScrapeCreators, Bright Data) o sesiones propias. Prioriza lo que la gente vota o apuesta frente a lo que eligen los editores.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add mvanhorn/last30days-skill -g` (Claude Code, Codex, Cursor, Copilot, Gemini CLI y más de 50 hosts de Agent Skills), o como extensión `.mcpb` en Claude Desktop. Se usa con `/last30days <tema>`. Las fuentes de pago consumen tus créditos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Host principal de la skill. | Instala con `npx skills add … -a claude-code`. |
+| [Codex CLI](codex.md) | Host compatible mediante Agent Skills. | Instala con `npx skills add … -g` y selecciona Codex. |
+| [Agent-Reach](agent-reach.md) | Ampliar las plataformas accesibles al agente. (combinación por arquitectura) | Instala Agent Reach si necesitas plataformas que la skill no cubre. |
+
+**Notas:** Alternativas (elige una): social-media-research-skills. Investigar a personas concretas exige cuidado con la privacidad.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.0.5 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mvanhorn/last30days-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM |
 | Coste | El coste depende del proveedor o la ruta. Algunas fuentes son públicas; otras consumen APIs o créditos; además usa el agente anfitrión |
 | Equipo | Preparación según la ruta elegida. Agente compatible; dependencias de los canales; credenciales solo donde se indiquen |
-
-No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM
-
-## Qué puedes hacer con él
-
-Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta.
-
-## Cómo funciona
 
 No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; dependencias de los canales; credenciales solo donde se indiquen
 - **Etiquetas:** `research` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Agent-Reach](agent-reach.md) | 112k | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. |
 
 ## Alternativas (elige una)
 

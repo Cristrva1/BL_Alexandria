@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+VoxCPM2, TTS sin tokenizador para habla multilingüe, diseño de voces y clonación, de OpenBMB. Licencia Apache-2.0 para código y pesos, con uso comercial permitido. Tiene ~43k estrellas (2.0.3).
+
+## ¿Qué hace?
+
+Genera voz expresiva en varios idiomas, diseña voces a partir de descripciones y clona voces con alto realismo. Puede devolver marcas de tiempo.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install voxcpm` (extras `[timestamps]`) y descarga los modelos de Hugging Face o ModelScope. Para servir rápido usa nano-vllm-voxcpm o vLLM (0.19).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Servir el modelo con vLLM. | Instala la versión indicada y sirve el modelo. |
+| [Pipecat](pipecat.md) | TTS en agentes de voz. (combinación por arquitectura) | Expón un endpoint TTS. |
+| [FFmpeg](ffmpeg.md) | Postproceso de audio. (combinación por arquitectura) | Convierte el formato de salida. |
+
+**Notas:** Sin alternativas declaradas. Riesgo de suplantación por la clonación de voz.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada 2.0.3 (2026-05-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenBMB/VoxCPM/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La ruta principal y on-device usan requisitos diferentes; velocidad y naturalidad son resultados que deben comprobarse con tu idioma y equipo |
 | Coste | Sin pago a un modelo en la ruta básica. El README declara código y pesos Apache-2.0; hardware y datos propios siguen teniendo costes y permisos |
 | Equipo | Preparación según la ruta elegida. Python >=3.10 y <3.13; PyTorch >=2.5; CUDA según ruta; pesos; audio autorizado |
-
-La ruta principal y on-device usan requisitos diferentes; velocidad y naturalidad son resultados que deben comprobarse con tu idioma y equipo
-
-## Qué puedes hacer con él
-
-VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz.
-
-## Por qué destaca
-
-Usos propuestos: Preparar narración local; Explorar diseño de voz consentido.
-
-## Cómo funciona
 
 La ruta principal y on-device usan requisitos diferentes; velocidad y naturalidad son resultados que deben comprobarse con tu idioma y equipo
 

@@ -10,6 +10,35 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Browser Use, agente de navegador open source de browser-use. La librería Python es MIT; la inferencia y los navegadores alojados son de pago. Es muy popular (~121k estrellas, v1.0.6).
+
+## ¿Qué hace?
+
+Le das una tarea y el modelo la ejecuta en un navegador real escribiendo Python en un REPL persistente con los helpers de browser-harness. Incluye CLI, login y servidor MCP.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta modelos propios, Anthropic, Google o cualquier modelo de Pydantic AI. Tiene telemetría anónima configurable.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Uso vía skill o MCP. | Registra la skill o el MCP. |
+| [Ollama](ollama.md) | Modelos locales vía integraciones de modelos. (combinación por arquitectura) | Configura un modelo local compatible. |
+| [Pydantic AI](pydantic-ai.md) | Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI. | Instala el extra correspondiente de pydantic-ai para el proveedor elegido. |
+| [sandbox](sandbox.md) | Combinación recíproca: sandbox lo enlaza como «Navegador del sandbox para automatización. (combinación por arquitectura)». | Orden indicado desde sandbox: Conecta browser-use al navegador expuesto. |
+| [OpenManus](openmanus.md) | Combinación recíproca: OpenManus lo enlaza como «OpenManus arranca Browser Use CLI como servidor MCP por defecto para sus acciones de navegador». | Orden indicado desde OpenManus: Prepara uv y ejecuta `uvx browser-use install`; después lanza OpenManus. |
+| [Steel Browser](steel-browser.md) | Combinación recíproca: Steel Browser lo enlaza como «El cookbook oficial de Steel incluye ejemplos de browser-use sobre sesiones de Steel». | Orden indicado desde Steel Browser: Arranca Steel; después sigue el ejemplo `browser-use` del cookbook. |
+
+**Notas:** Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.0.6 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/browser-use/browser-use/blob/main/README.md) · [2](https://docs.browser-use.com/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelos locales documentados. La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta |
 | Coste | El coste depende del proveedor o la ruta. La biblioteca MIT permite navegador y modelo locales; los defaults del ejemplo usan gateway y browser Cloud facturados |
 | Equipo | Preparación según la ruta elegida. Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba |
-
-La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
-
-## Qué puedes hacer con él
-
-Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.
-
-## Por qué destaca
-
-Usos propuestos: Extraer información de una web propia; Probar navegación con un agente.
-
-## Cómo funciona
 
 La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
 
@@ -88,13 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `browser` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
-| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
@@ -103,6 +113,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Stagehand](stagehand.md) | 26.1k | SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural. |
 | [Skyvern](skyvern.md) | 23.4k | Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles. |
 | [Playwright MCP](playwright-mcp.md) | 39.7k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| [Browser Harness](browser-harness.md) | 19.1k | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. |
 
 ## Enlaces
 

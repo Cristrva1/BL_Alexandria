@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Cline, agente de programación open source para IDE, terminal y escritorio, de Cline Bot Inc. Licencia Apache-2.0. Es muy activo (~72k estrellas, v4.1.26).
+
+## ¿Qué hace?
+
+Crea y edita archivos, ejecuta comandos, navega por la web y usa herramientas con aprobación humana, con modos Plan y Act. Funciona como extensión de VS Code y JetBrains, CLI (interactiva o headless para CI), app de escritorio y SDK. Se amplía con plugins y servidores MCP.
+
+## ¿Cómo lo hace?
+
+Se instala desde el marketplace del editor, con `npm i -g cline` o con la app de escritorio. Admite muchos proveedores, incluidos Ollama y LM Studio en local.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales documentados. | Configura Ollama como proveedor. |
+| [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Añade el servidor desde el gestor de MCP. |
+| [Playwright MCP](playwright-mcp.md) | Automatizar el navegador desde el agente. (combinación por arquitectura) | Instala el MCP de Playwright. |
+| [OmniRoute](omniroute.md) | Combinación recíproca: OmniRoute lo enlaza como «Cliente citado en el flujo de peticiones del README». | Orden indicado desde OmniRoute: Configura Cline con el endpoint OpenAI de OmniRoute. |
+| [Awesome MCP Clients](awesome-mcp-clients.md) | Combinación recíproca: Awesome MCP Clients lo enlaza como «Cliente MCP dentro del editor. (combinación por arquitectura)». | Orden indicado desde Awesome MCP Clients: Compáralo con los clientes listados. |
+
+**Notas:** Alternativas (elige una): aider.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v4.1.26 (2026-10-26) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cline/cline/blob/main/README.md) · [2](https://docs.cline.bot)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Cline es su propio agente; soportar modelos Claude u OpenAI no equivale a usar una suscripción de Claude Code o Codex |
 | Coste | El coste depende del proveedor o la ruta. API o servicios del proveedor según elección; Ollama y LM Studio permiten inferencia local |
 | Equipo | Preparación según la ruta elegida. Node para CLI o editor compatible; proveedor o Ollama; proyecto de prueba |
-
-Cline es su propio agente; soportar modelos Claude u OpenAI no equivale a usar una suscripción de Claude Code o Codex
-
-## Qué puedes hacer con él
-
-Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.
-
-## Por qué destaca
-
-Usos propuestos: Explicar un error de código; Comparar una propuesta antes de editar.
-
-## Cómo funciona
 
 Cline es su propio agente; soportar modelos Claude u OpenAI no equivale a usar una suscripción de Claude Code o Codex
 
@@ -94,18 +110,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `coding-agent` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
-| [Playwright MCP](playwright-mcp.md) | 39.7k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [Kilo Code](kilocode.md) | 28k | Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP. |
 
 ## Enlaces
 
