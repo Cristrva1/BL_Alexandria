@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+SDK oficial de OpenAI (MIT) para flujos multiagente, ligero y agnóstico de proveedor. Muy activo (v0.24.0), con versión JS/TS.
+
+## ¿Qué hace?
+
+Ofrece agentes con instrucciones, herramientas, guardrails y handoffs; agentes en sandbox que trabajan en un contenedor durante horizontes largos; agentes de voz y en tiempo real; agentes como herramientas; herramientas de función, MCP y alojadas; sesiones con historial automático, y trazas integradas para ver y depurar ejecuciones. Soporta las API Responses y Chat Completions y más de 100 LLM.
+
+## ¿Cómo lo hace?
+
+Python 3.10+ (`pip install openai-agents`), con extras opcionales para voz (`[voice]`) y sesiones en Redis. Los modelos de otros proveedores se conectan, por ejemplo, mediante LiteLLM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Integración documentada para usar modelos de otros proveedores. | Instala el extra de LiteLLM y configura el modelo. |
+| [openai-python](openai-python.md) | Cliente oficial de OpenAI que usa el SDK. | Se instala como dependencia. |
+| [langfuse](langfuse.md) | Trazas de código abierto como alternativa al panel de OpenAI (integración oficial). | Instrumenta con el procesador de trazas de Langfuse. |
+| [FastMCP](fastmcp.md) | Construir servidores MCP propios que el SDK consume como herramientas (combinación por arquitectura; el SDK documenta MCP). | Servidor MCP primero. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | Combinación recíproca: Awesome LLM Apps lo enlaza como «Framework usado por varias plantillas de agentes (citado en el README)». | Orden indicado desde Awesome LLM Apps: Instálalo dentro del entorno de la plantilla que lo use. |
+| [Composio](composio.md) | Combinación recíproca: Composio lo enlaza como «Adaptador oficial (`composio-openai-agents`)». | Orden indicado desde Composio: Instala el SDK y el adaptador. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenAI Cookbook](openai-cookbook.md) · [PageIndex](pageindex.md) · [Temporal](temporal.md)
+
+**Notas:** Alternativas (elige una): pydantic-ai, langgraph, smolagents, deepagents, adk-python. Las trazas están activadas por defecto y van al panel de OpenAI; se desactivan con `OPENAI_AGENTS_DISABLE_TRACING=1`.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.24.0 (2026-10-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/openai-agents-python/blob/main/README.md) · [2](https://openai.github.io/openai-agents-python/models/litellm/) · [3](https://openai.github.io/openai-agents-python/mcp/) · [4](https://langfuse.com/integrations/frameworks/openai-agents) · [5](https://openai.github.io/openai-agents-python/tracing/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelo local no documentado. Es una biblioteca de aplicaciones; la disponibilidad de adaptadores no confirma por sí sola una ruta local completa |
 | Coste | El coste depende del proveedor o la ruta. El ejemplo usa OPENAI_API_KEY; otros proveedores tienen condiciones propias; Codex no aporta créditos a este SDK |
 | Equipo | Preparación según la ruta elegida. Python y uv; modelo y credenciales |
-
-Es una biblioteca de aplicaciones; la disponibilidad de adaptadores no confirma por sí sola una ruta local completa
-
-## Qué puedes hacer con él
-
-SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas.
-
-## Por qué destaca
-
-Usos propuestos: Enrutar consultas por departamento; Validar una respuesta antes de aceptarla.
-
-## Cómo funciona
 
 Es una biblioteca de aplicaciones; la disponibilidad de adaptadores no confirma por sí sola una ruta local completa
 
@@ -93,13 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; modelo y credenciales
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [openai-python](openai-python.md) | 32.2k | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. |
-| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
 
 ## Alternativas (elige una)
 

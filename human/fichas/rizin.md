@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de ingeniería inversa nacido como fork de radare2, centrado en usabilidad, funciones y limpieza del código. Licencia LGPL-3.0. Es activo (~4k estrellas, v0.9.1).
+
+## ¿Qué hace?
+
+Analiza binarios, desensambla, depura, sirve como herramienta forense y como editor hexadecimal scriptable capaz de abrir archivos de disco. Comparte el modelo de comandos de radare2, pero con una API y comandos reorganizados. Se extiende con plugins como rz-ghidra, que integra el decompilador de Ghidra.
+
+## ¿Cómo lo hace?
+
+Está escrito en C y se compila con Meson según el README; también hay binarios y paquetes. El libro oficial (book.rizin.re) documenta su uso. Se automatiza con rz-pipe.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ghidra](ghidra.md) | Usar el decompilador de Ghidra dentro de Rizin con el plugin oficial rz-ghidra. | Compila o instala rz-ghidra para tu versión de Rizin. |
+| [angr](angr.md) | Ejecución simbólica sobre las rutas que identifiques en Rizin. (combinación por arquitectura) | Localiza la función en Rizin y modela la búsqueda en angr. |
+| [ImHex](imhex.md) | Análisis de formatos con patrones visuales. (combinación por arquitectura) | Usa ambos sobre el mismo archivo. |
+
+**Notas:** Alternativas (elige una): radare2. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.1 (2026-06-29) · licencia declarada LGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rizinorg/rizin/blob/dev/README.md) · [2](https://book.rizin.re) · [3](https://github.com/rizinorg/rz-ghidra)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Nació como fork de radare2 y tiene evolución propia; comandos y plugins no deben asumirse intercambiables |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere LLM ni API; recursos son locales |
 | Equipo | Preparación según la ruta elegida. Distribución del sistema; binario propio de prueba |
-
-Nació como fork de radare2 y tiene evolución propia; comandos y plugins no deben asumirse intercambiables
-
-## Qué puedes hacer con él
-
-Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.
-
-## Por qué destaca
-
-Usos propuestos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia.
-
-## Cómo funciona
 
 Nació como fork de radare2 y tiene evolución propia; comandos y plugins no deben asumirse intercambiables
 

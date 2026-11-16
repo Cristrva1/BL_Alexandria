@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+autoresearch, experimento de @karpathy en el que un agente investiga de forma autónoma sobre el entrenamiento de nanochat con una sola GPU. Licencia MIT según el README, pero sin archivo LICENSE (GitHub no detecta licencia). Tiene ~100k estrellas y está inactivo desde marzo de 2026.
+
+## ¿Qué hace?
+
+El agente modifica `train.py`, entrena 5 minutos, comprueba si mejoró, conserva o descarta el cambio y repite durante la noche. El humano itera sobre `program.md`, que contiene las instrucciones del agente.
+
+## ¿Cómo lo hace?
+
+Usa uv (`uv sync`, `uv run prepare.py`) y requiere una GPU NVIDIA; hay forks comunitarios para otras plataformas, como AMD. Sirve con cualquier agente de programación al que se le indique `program.md`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [nanochat](nanochat.md) | Base de entrenamiento sobre la que experimenta. | Viene integrado en forma simplificada. |
+| [Claude Code](claude-code.md) | Agente que ejecuta el bucle. (combinación por arquitectura) | Apunta el agente a `program.md`. |
+| [Codex CLI](codex.md) | Agente alternativo para el bucle. (combinación por arquitectura) | Apunta Codex a `program.md`. |
+
+**Notas:** Sin alternativas declaradas. Se quitan gpt-researcher y crawl4ai: es investigación en entrenamiento de modelos, no en la web.
+
+Estado en GitHub: activo · último push 2026-03-26 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/karpathy/autoresearch/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Probado por el autor en H100 y no diseñado actualmente para CPU o MPS; no se traslada su sugerencia de desactivar permisos como requisito para principiantes |
 | Coste | Consumo del agente que ya utilizas. Usa el plan del agente y cómputo para entrenar el modelo local; el código actual necesita GPU NVIDIA |
 | Equipo | Preparación según la ruta elegida. GPU NVIDIA; Python 3.10+; uv; agente y presupuesto de cómputo |
-
-Probado por el autor en H100 y no diseñado actualmente para CPU o MPS; no se traslada su sugerencia de desactivar permisos como requisito para principiantes
-
-## Qué puedes hacer con él
-
-Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar optimización de entrenamiento; Aprender a registrar experimentos reproducibles.
-
-## Cómo funciona
 
 Probado por el autor en H100 y no diseñado actualmente para CPU o MPS; no se traslada su sugerencia de desactivar permisos como requisito para principiantes
 
@@ -95,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** GPU NVIDIA; Python 3.10+; uv; agente y presupuesto de cómputo
 - **Etiquetas:** `research` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
-| [crawl4ai](crawl4ai.md) | 87.4k | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
 
 ## Enlaces
 

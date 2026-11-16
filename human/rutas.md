@@ -34,8 +34,8 @@ Diseñar flujos con disparadores, acciones y seguimiento.
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
-| [n8n](fichas/n8n.md) | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. | API de IA opcional |
 | [activepieces](fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
+| [Windmill](fichas/windmill.md) | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. | API de IA opcional |
 | [Node-RED](fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica |
 
 [Ver la ruta en el explorador](../docs/index.html#/rutas?goal=automatizar)

@@ -1,0 +1,49 @@
+{
+ "batch": "correccion-letta-code",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "letta": {
+   "que_es": "Letta Code es el harness de agentes con estado de Letta (los creadores de MemGPT y de «sleep-time compute»), con licencia Apache 2.0, escrito en TypeScript. Es el código activo del proyecto Letta: el repositorio `letta-ai/letta` ahora solo remite aquí y guarda el antiguo servidor de la API V1 en su rama `archive`. Muy activo, con releases casi diarias (v0.34.63 el 15/11/2026).",
+   "que_hace": "Crea agentes con memoria, identidad y sentido de la experiencia que aprenden a lo largo del tiempo reescribiendo su propia memoria, skills, prompts e incluso el harness (mediante mods). Pueden usarse de forma interactiva o como agentes siempre activos y proactivos, con «sueños» periódicos (`/sleeptime`), diagnóstico (`/doctor`), búsqueda en todos los mensajes y agentes, subagentes y llamadas entre agentes, hooks, permisos, crons y heartbeats. Se habla con el mismo agente desde la CLI, el navegador y el móvil (chat.letta.com) o canales como Slack, Telegram, Discord y canales propios.",
+   "como_lo_hace": "Todo el contexto, bloques de memoria incluidos, se versiona con git (MemFS) y puede sincronizarse con un repositorio propio. Carga skills globales (`~/.letta`), de proyecto (`.agents/skills`) y de agente, e instala skills externas con `letta skills install` desde GitHub, ClawHub o Hermes Skills Hub. Se instala con `npm install -g @letta-ai/letta-code` o con `uv tool install letta` o `pipx install letta` (Python 3.9+, Node incluido; Linux glibc 2.28+, macOS 14+, Windows x64). Letta Cloud es el backend por defecto (`letta backend local` lo cambia), las claves propias se configuran con `/connect` y `letta server` conecta equipos remotos; la exportación AgentFile (.af) se eliminó.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor integrado para agentes locales: el agente y el modelo se quedan en tu equipo.",
+     "orden_instalacion": "Ollama con un modelo descargado; luego `letta backend local` y `/connect` → Ollama."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Servidor de inferencia propio como proveedor personalizado compatible con OpenAI.",
+     "orden_instalacion": "vLLM primero; añade su URL en `/connect`. Si el agente está en Letta Cloud, el endpoint tiene que ser accesible desde internet."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Las skills de ClawHub se instalan en un agente de Letta (`openclaw skills install` → `letta skills install`).",
+     "orden_instalacion": "Instala la skill con OpenClaw y después en el agente de Letta; revísala antes."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Las skills de Hermes Skills Hub se instalan en un agente de Letta.",
+     "orden_instalacion": "Igual que con ClawHub."
+    }
+   ],
+   "notas": "Alternativas (elige una): mem0, cognee. La ficha apuntaba a letta-ai/letta; se cambió a letta-ai/letta-code por decisión del propietario. El servidor V1 retirado sigue en la rama `archive` de letta-ai/letta, con sus etiquetas (última 0.16.8). Equipos remotos y secretos requieren iniciar sesión en Letta. El README incluye un píxel de seguimiento (Scarf).",
+   "fuentes": [
+    "https://github.com/letta-ai/letta-code/blob/main/README.md",
+    "https://github.com/letta-ai/letta/blob/main/README.md",
+    "https://docs.letta.com/letta-code/models"
+   ],
+   "github": {
+    "name_with_owner": "letta-ai/letta-code",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.34.63 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

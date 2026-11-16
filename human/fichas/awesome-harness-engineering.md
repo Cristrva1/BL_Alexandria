@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada (CC0) de recursos, patrones y plantillas para diseñar 'harnesses' de agentes de IA, es decir, el andamiaje alrededor del modelo. La mantiene ai-boost, acepta patrocinios y está traducida a 9 idiomas. Es muy reciente y activa (último push en noviembre de 2026).
+
+## ¿Qué hace?
+
+Organiza recursos por temas: fundamentos (artículos de OpenAI, Anthropic y otros), primitivas de diseño (entrega de contexto, interfaces de herramientas, planificación, bucles de verificación, memoria, sandboxes), implementaciones de referencia, seguridad y permisos, evals, plantillas e infraestructura de producción. Enlaza a agentcraft.dev, que ofrece skills de Claude Code por categoría.
+
+## ¿Cómo lo hace?
+
+Markdown, sin código ni instalación. Mezcla artículos, papers y repositorios de calidad variable, así que hay que evaluar cada enlace.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [12-Factor Agents](12-factor-agents.md) | Principios concretos de diseño de harnesses fiables. (combinación por arquitectura) | Lee los 12 factores como base y usa la lista para ampliar. |
+| [Loop Engineering](loop-engineering.md) | Patrones prácticos de bucles de agentes alrededor de un repositorio. (combinación por arquitectura) | Úsalo para aplicar los conceptos de verificación y estado. |
+| [Claude Code](claude-code.md) | Harness de referencia citado en la literatura que recoge la lista. (combinación por arquitectura) | Analiza su diseño con los recursos de la lista. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ai-boost/awesome-harness-engineering/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una selección de referencias que incluye Claude Code y Codex; no un paquete único de skills ni garantía de compatibilidad de todos sus enlaces |
 | Coste | Sin pago a un modelo en la ruta básica. La lista es gratuita; cada herramienta y proveedor enlazado tiene sus propios costes |
 | Equipo | Preparación según la ruta elegida. Navegador; flujo de agente de referencia |
-
-Es una selección de referencias que incluye Claude Code y Codex; no un paquete único de skills ni garantía de compatibilidad de todos sus enlaces
-
-## Qué puedes hacer con él
-
-Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar el entorno de un agente; Encontrar recursos de evaluación.
-
-## Cómo funciona
 
 Es una selección de referencias que incluye Claude Code y Codex; no un paquete único de skills ni garantía de compatibilidad de todos sus enlaces
 

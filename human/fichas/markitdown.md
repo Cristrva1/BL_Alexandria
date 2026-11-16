@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.
+
+## ¿Qué hace?
+
+Convierte PDF, PowerPoint, Word, Excel, imágenes (metadatos EXIF y descripción), audio (metadatos y transcripción), HTML, CSV/JSON/XML, ZIP (recorre su contenido), URLs de YouTube y EPUB a Markdown que conserva la estructura (títulos, listas, tablas, enlaces). La descripción de imágenes y la transcripción dependen de servicios web. Advierte que hace E/S con los privilegios del proceso: hay que sanear las entradas en entornos no confiables.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10–3.14; se instala con `pip install 'markitdown[all]'` o solo con los extras necesarios (`[pdf, docx, pptx]`, `[az-doc-intel]`, `[az-content-understanding]`). Ofrece CLI, API Python, complementos de terceros (desactivados por defecto) y el paquete `markitdown-mcp` para exponerlo a agentes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | El paquete `markitdown-mcp` del repositorio expone la conversión a agentes compatibles con MCP. | Instala markitdown-mcp y regístralo; limita las rutas que puede leer. |
+| [Khoj](khoj.md) | Convertir formatos no soportados a Markdown antes de indexarlos (combinación por arquitectura). | Convierte primero y sincroniza la carpeta resultante. |
+| [Pandoc](pandoc.md) | MarkItDown extrae a Markdown y Pandoc lo publica en DOCX, HTML, LaTeX o EPUB (combinación por arquitectura). | Independientes; encadénalos en un script. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-job-search](ai-job-search.md) · [annas-mcp](annas-mcp.md) · [Anytype Desktop](anytype-ts.md) · [AppFlowy](appflowy.md) · [obsidian-importer](obsidian-importer.md) · [ppt-master](ppt-master.md) · [Repomix](repomix.md) · [tools](tools.md) · [Vane](vane.md)
+
+**Notas:** Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada.
+
+Estado en GitHub: activo · último push 2026-11-07 · última versión publicada v0.1.9 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/markitdown/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | Modelo local no documentado. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original |
 | Coste | El coste depende del proveedor o la ruta. La extracción básica es offline; Azure, descripciones LLM y otras extensiones pueden enviar datos y consumir servicios |
 | Equipo | Preparación según la ruta elegida. Python 3.10–3.14; entorno virtual; extras del formato elegido |
-
-Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original
-
-## Qué puedes hacer con él
-
-Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.
-
-## Por qué destaca
-
-Usos propuestos: Preparar documentos Office para consulta; Crear una copia textual de un informe.
-
-## Cómo funciona
 
 Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original
 
@@ -86,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10–3.14; entorno virtual; extras del formato elegido
 - **Etiquetas:** `docs` `python`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ppt-master](ppt-master.md) | 76.8k | Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. |
-| [open-notebook](open-notebook.md) | 42k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
 
 ## Enlaces
 

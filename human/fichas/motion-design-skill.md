@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de LottieFiles (MIT) con principios universales de diseño de movimiento para agentes; parte de la filosofía y no depende de la implementación. Sin releases; último cambio en mayo de 2026.
+
+## ¿Qué hace?
+
+Enseña a pensar como un director de movimiento antes de programar: lista de 8 pasos, arquetipos de personalidad, tablas de duración y easing, los 12 principios de Disney adaptados a interfaces, coreografía y recetas de entrada/salida, feedback de estado y movimiento ambiental. Funciona con cualquier sistema de animación.
+
+## ¿Cómo lo hace?
+
+Skill en Markdown (`SKILL.md` más las carpetas `director/`, `patterns/` y `reference/`) instalable con `npx skills add LottieFiles/motion-design-skill` en más de 40 agentes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible. | Instala con npx skills. |
+| [GSAP](gsap.md) | Implementar los principios con timelines (combinación por arquitectura). | Elige la biblioteca de animación del proyecto. |
+| [motion](motion.md) | Igual, en React (combinación por arquitectura). | Igual que arriba. |
+| [Anime.js](animejs.md) | Combinación recíproca: Anime.js lo enlaza como «Principios de movimiento para agentes. (combinación por arquitectura)». | Orden indicado desde Anime.js: Añade la skill. |
+| [gsap-skills](gsap-skills.md) | Combinación recíproca: gsap-skills lo enlaza como «Principios de dirección de movimiento independientes de la herramienta (combinación por arquitectura)». | Orden indicado desde gsap-skills: Independientes. |
+| [scenejs](scenejs.md) | Combinación recíproca: scenejs lo enlaza como «Principios de ritmo y transiciones para diseñar la línea de tiempo. (combinación por arquitectura)». | Orden indicado desde scenejs: Añade la skill al agente que escribe la animación. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[skills_emil](skills-emil.md)
+
+Estado en GitHub: activo · último push 2026-05-18 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LottieFiles/motion-design-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | La función básica no necesita un modelo. Son principios de motion design portables y no una librería de animación instalada por sí sola |
 | Coste | Consumo del agente que ya utilizas. Usa el plan del anfitrión; no proporciona render o generaciones de medios |
 | Equipo | Preparación según la ruta elegida. Agente con skills; interacción y propósito definidos |
-
-Son principios de motion design portables y no una librería de animación instalada por sí sola
-
-## Qué puedes hacer con él
-
-Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.
-
-## Por qué destaca
-
-Usos propuestos: Planificar movimiento de un componente; Revisar una transición de interfaz.
-
-## Cómo funciona
 
 Son principios de motion design portables y no una librería de animación instalada por sí sola
 

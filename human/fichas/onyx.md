@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Capa de conocimiento y contexto para equipos y agentes de IA de Onyx (antes Danswer). La Community Edition es MIT y la Enterprise Edition añade funciones para grandes organizaciones (GitHub marca la licencia como no estándar por esa mezcla); muy activa (v5.1.2).
+
+## ¿Qué hace?
+
+Conecta más de 50 aplicaciones, indexa su contenido con metadatos y permisos y ofrece RAG agéntico con índice híbrido, investigación profunda, agentes personalizados con acciones externas y MCP, búsqueda web (Serper, Google PSE, Brave, SearXNG; rastreador propio, Firecrawl o Exa), sandbox de código, artefactos y bots de Slack y Discord. Defiende que su índice da contexto más fiable, rápido y barato que encadenar búsquedas MCP.
+
+## ¿Cómo lo hace?
+
+Aplicación Python con contenedores de trabajo en segundo plano que sincronizan los conectores. Se instala con un script de una línea o se despliega en Docker, Kubernetes o Helm/Terraform, con guías para las principales nubes. Admite proveedores autoalojados (Ollama, LiteLLM, vLLM) y propietarios (Anthropic, OpenAI, Gemini).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor autoalojado soportado. | Ollama accesible desde los contenedores antes de configurarlo. |
+| [litellm](litellm.md) | Proveedor soportado para centralizar modelos. | LiteLLM primero; regístralo como proveedor. |
+| [SearXNG](searxng.md) | Motor de búsqueda web soportado. | SearXNG con salida JSON activada antes de configurarlo. |
+| [firecrawl](firecrawl.md) | Rastreador web soportado como alternativa al propio. | Clave o instancia de Firecrawl antes de activarlo. |
+
+**Notas:** Alternativa (elige una): anything-llm. Respeta los permisos de las fuentes; revisa qué conectores sincronizan datos sensibles.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v5.1.2 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/onyx-dot-app/onyx/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo |
 | Coste | El coste depende del proveedor o la ruta. Community y Enterprise tienen condiciones distintas; modelos locales o APIs, almacenamiento y conectores añaden costes según ruta |
 | Equipo | Preparación según la ruta elegida. Docker o ruta elegida; proveedor; fuente documental de prueba |
-
-Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo
-
-## Qué puedes hacer con él
-
-Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.
-
-## Por qué destaca
-
-Usos propuestos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código.
-
-## Cómo funciona
 
 Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo
 

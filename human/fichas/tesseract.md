@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Motor de OCR de código abierto (Apache 2.0) con biblioteca `libtesseract` y programa `tesseract`; nacido en HP y desarrollado después por Google. Hoy lo lidera Stefan Weil y lo mantiene Zdenko Podobny; maduro (5.5.4).
+
+## ¿Qué hace?
+
+Reconoce texto en más de 100 idiomas con soporte Unicode a partir de PNG, JPEG, TIFF y otros formatos, y produce texto plano, hOCR, PDF buscable, TSV, ALTO y otros. Es la base de OCR de muchas herramientas de documentos.
+
+## ¿Cómo lo hace?
+
+Desde Tesseract 4 usa un motor de redes neuronales LSTM centrado en líneas, además del motor clásico de patrones. Necesita archivos `traineddata` por idioma (repositorios tessdata). Se instala con paquetes del sistema o compilando; se usa desde la CLI o la API C/C++, con wrappers en muchos lenguajes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OCRmyPDF](ocrmypdf.md) | OCRmyPDF usa Tesseract para añadir capas de texto a PDF. | Instala Tesseract y los idiomas primero. |
+| [paperless-ngx](paperless-ngx.md) | Hace el OCR de Paperless a través de OCRmyPDF. | Incluido en la imagen de Paperless; añade idiomas con su configuración. |
+| [Unstructured](unstructured.md) | Dependencia de unstructured para OCR de imágenes y PDF. | Instálalo antes de procesar escaneados. |
+| [Xberg (antes Kreuzberg)](xberg.md) | Combinación recíproca: Xberg (antes Kreuzberg) lo enlaza como «Tesseract es uno de los motores de OCR que Xberg usa bajo demanda para documentos escaneados». | Orden indicado desde Xberg (antes Kreuzberg): Instala Tesseract y sus idiomas; después activa el backend en la configuración. |
+| [Apache Tika](tika.md) | Combinación recíproca: Apache Tika lo enlaza como «Tika usa Tesseract como motor de OCR para imágenes y PDF escaneados». | Orden indicado desde Apache Tika: Instala Tesseract y sus idiomas en el sistema o la imagen; después activa el parser de OCR. |
+
+**Notas:** Alternativa (elige una): paddleocr. Para diseños complejos o escritura a mano rinde peor que los modelos VLM.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 5.5.4 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tesseract-ocr/tesseract/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Es un motor OCR con modelos locales, no un LLM conversacional; la calidad depende de la imagen y el idioma configurado |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere API; modelos de idioma y procesamiento son locales |
 | Equipo | Preparación según la ruta elegida. Binario o paquete; datos entrenados del idioma; imagen legible |
-
-Es un motor OCR con modelos locales, no un LLM conversacional; la calidad depende de la imagen y el idioma configurado
-
-## Qué puedes hacer con él
-
-Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma.
-
-## Por qué destaca
-
-Usos propuestos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script.
-
-## Cómo funciona
 
 Es un motor OCR con modelos locales, no un LLM conversacional; la calidad depende de la imagen y el idioma configurado
 
@@ -86,12 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario o paquete; datos entrenados del idioma; imagen legible
 - **Etiquetas:** `ocr` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OCRmyPDF](ocrmypdf.md) | 35.3k | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. |
 
 ## Alternativas (elige una)
 

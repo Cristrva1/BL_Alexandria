@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Aplicación de IA «todo en uno» de código abierto (MIT) de Mintplex Labs, con versión de escritorio (Mac, Windows, Linux), Docker multiusuario, instancia alojada y app Android. Madura y activa (v1.19.0).
+
+## ¿Qué hace?
+
+Permite chatear con tus documentos, crear agentes sin código, usar MCP, programar tareas con cron, enrutar conversaciones al mejor modelo según reglas, mantener memorias y seleccionar herramientas para reducir tokens. La versión Docker añade multiusuario con permisos y un widget de chat incrustable para sitios web.
+
+## ¿Cómo lo hace?
+
+Monorepo en Node.js: frontend Vite + React, servidor y un `collector` Express que procesa documentos. Trae un motor local de LLM opcional (CPU o GPU vía Lemonade), embebedor nativo y LanceDB como base vectorial por defecto, y admite muchos proveedores (Ollama, LM Studio, LocalAI, LiteLLM, etc.) y bases vectoriales (PGVector, Qdrant, Chroma, Weaviate, Milvus, Pinecone, entre otras).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor documentado de chat y de embeddings. | Ollama con un modelo de chat y uno de embeddings; desde Docker usa host.docker.internal. |
+| [Qdrant](qdrant.md) | Base vectorial soportada cuando LanceDB embebida se queda corta. | Qdrant primero; elige el vectorizador antes de ingerir documentos (cambiarlo obliga a reindexar). |
+| [litellm](litellm.md) | Proveedor soportado para enrutar varios modelos detrás de un proxy. | LiteLLM primero; configura su URL y clave. |
+| [LocalAI](localai.md) | Proveedor soportado de LLM y embeddings totalmente local. | Alternativa a Ollama como motor: usa uno de los dos. |
+| [Chroma](chroma.md) | Combinación recíproca: Chroma lo enlaza como «Base vectorial soportada (Chroma y ChromaCloud)». | Orden indicado desde Chroma: Servidor Chroma primero; configura su URL en AnythingLLM. |
+| [Milvus](milvus.md) | Combinación recíproca: Milvus lo enlaza como «Base vectorial soportada por AnythingLLM». | Orden indicado desde Milvus: Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[llamafile](llamafile.md) · [pgvector](pgvector.md)
+
+**Notas:** Alternativas (elige una): open-webui, khoj, private-gpt, onyx.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.19.0 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa |
 | Coste | El coste depende del proveedor o la ruta. Puede usar motor local y proveedores remotos; los modelos, servicios y alojamiento tienen costes separados |
 | Equipo | Preparación según la ruta elegida. App de escritorio o Docker; LLM y embeddings; documento de prueba |
-
-Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa
-
-## Qué puedes hacer con él
-
-App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube.
-
-## Por qué destaca
-
-Usos propuestos: Consultar documentación propia; Separar bases de conocimiento por proyecto.
-
-## Cómo funciona
 
 Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa
 
@@ -86,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** App de escritorio o Docker; LLM y embeddings; documento de prueba
 - **Etiquetas:** `rag` `agents` `local` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Aplicación de escritorio nativa mantenida por la comunidad (Hermes One, de fathah) para instalar, configurar y usar Hermes Agent de Nous Research. Licencia MIT; en desarrollo activo (v0.7.8), con funciones que pueden cambiar.
+
+## ¿Qué hace?
+
+Guía la instalación de Hermes Agent y la configuración de proveedores (OpenRouter, Anthropic, OpenAI, Gemini, xAI, Nous Portal, Qwen, MiniMax, Hugging Face, Groq y endpoints locales compatibles con OpenAI como LM Studio, Ollama o vLLM). Ofrece chat con streaming, 22 comandos de barra, sesiones con búsqueda de texto completo, perfiles aislados, 14 conjuntos de herramientas, memoria con proveedores como Mem0 o Honcho, editor de personalidad (SOUL.md), tareas cron con 15 destinos y 16 pasarelas de mensajería (Telegram, Discord, Slack, WhatsApp, Signal, Matrix, email, SMS y otras).
+
+## ¿Cómo lo hace?
+
+App Electron que usa el script oficial de instalación de Hermes y guarda los datos en `~/.hermes`, sustituyendo la gestión manual de la CLI. Se descarga desde hermesone.org o GitHub Releases; el instalador de Windows no está firmado y el .rpm de Fedora no está firmado con GPG ni se actualiza solo. En WSL el instalador puede bloquearse esperando sudo para Playwright.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [hermes-agent](hermes-agent.md) | Es su interfaz gráfica: instala y gestiona Hermes Agent. | Instala la app; ella instala Hermes Agent. No mezcles con una instalación manual distinta en `~/.hermes`. |
+| [Ollama](ollama.md) | Endpoint local compatible con OpenAI soportado como proveedor. | Ollama en marcha; añádelo en la pantalla de proveedores. |
+| [mem0](mem0.md) | Proveedor de memoria listado en la app. | Configura la clave o el servidor de Mem0 antes de activarlo en la sección de memoria. |
+| [vLLM](vllm.md) | Endpoint local compatible con OpenAI soportado. | vLLM en un equipo con GPU; registra su URL como proveedor. |
+
+**Notas:** El README sugiere conceder temporalmente sudo sin contraseña en WSL para instalar; revierte el cambio al terminar.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v0.7.8 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/fathah/hermes-desktop/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación |
 | Coste | El coste depende del proveedor o la ruta. La interfaz no incluye créditos; el backend, modelo y servicios externos se presupuestan según ruta |
 | Equipo | Preparación según la ruta elegida. Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local |
-
-Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación
-
-## Qué puedes hacer con él
-
-App de escritorio que envuelve al agente Hermes en una interfaz nativa.
-
-## Por qué destaca
-
-Usos propuestos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes.
-
-## Cómo funciona
 
 Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación
 
@@ -86,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local
 - **Etiquetas:** `agents` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [hermes-agent](hermes-agent.md) | 263k | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plataforma de prospección («outreach») de código abierto (AGPL-3.0) que funciona con tu plan de Claude o ChatGPT, antes llamada Harvey. Es reciente (v0.4 en 2026) y tiene una versión alojada en acceso anticipado.
+
+## ¿Qué hace?
+
+Ejecuta un pipeline completo o por pasos: encuentra empresas que encajan con tu cliente ideal (gratis en OpenStreetMap o en fuentes de pago que muestran el coste antes), detecta señales de compra en su web, identifica hasta dos personas que deciden, verifica su email, escribe secuencias personalizadas y las envía desde Gmail, Microsoft 365 o SMTP dentro de límites diarios y horario de oficina. Lee las respuestas, redacta contestaciones, respeta bajas al instante y te pasa lo que no debe contestar solo; por defecto nada sale sin tu aprobación.
+
+## ¿Cómo lo hace?
+
+Es una aplicación Python 3.11+ que corre en tu máquina; piensa a través de la CLI de Claude Code (plan Pro o Max) o de Codex (plan de ChatGPT), sin API key ni cobro por token, y se limita a sí misma para dejar margen en el plan. Se instala con `pip install -e .` en un entorno virtual o con Docker en Linux; `sellbird dashboard` abre un panel privado en el puerto 5555. El `CLAUDE.md` del repositorio convierte a Claude Code en guía de instalación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Motor de razonamiento por defecto y guía de instalación mediante `CLAUDE.md`. | Claude Code con sesión iniciada (`claude login`) en un plan Pro o Max antes de instalar Sellbird. |
+| [Codex CLI](codex.md) | Alternativa documentada para quien tiene plan de ChatGPT. | Codex CLI con sesión iniciada; sigue `docs/codex.md`. Usa un solo motor. |
+| [crm](compai-crm.md) | Guardar los contactos y respuestas en un CRM que investiga y conserva evidencia (combinación por arquitectura). | Después de validar Sellbird; define qué sistema es maestro de contactos. |
+
+**Notas:** El email en frío está regulado (por ejemplo GDPR o CAN-SPAM); revisa la normativa de tu país y usa dominios de envío separados.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.4.0 (2026-11-06) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ethanplusai/sellbird/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado |
 | Coste | El coste depende del proveedor o la ruta. Usa tu plan Claude o ChatGPT mediante CLI según el proyecto; fuentes pagadas, verificación y correo cuestan por separado |
 | Equipo | Preparación según la ruta elegida. Python 3.13; Claude Code o Codex CLI autenticado; SMTP y fuentes solo según la prueba |
-
-La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado
-
-## Qué puedes hacer con él
-
-Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un borrador de prospección; Evaluar criterios de selección de empresas.
-
-## Cómo funciona
 
 La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado
 

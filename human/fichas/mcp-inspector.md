@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Herramienta oficial para inspeccionar servidores del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es activa (~11k estrellas, 2.15.0).
+
+## ¿Qué hace?
+
+Se conecta a un servidor MCP y permite listar y llamar herramientas, leer recursos, probar prompts y ver los mensajes intercambiados. Ofrece cuatro modos en un solo paquete: interfaz web, CLI, TUI y `mcpdo` (experimental, conexiones persistentes). Gestiona secretos como tokens OAuth y los guarda en el llavero del sistema si existe.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con `npx @modelcontextprotocol/inspector` (web), `--cli` o `--tui`. La v2 cambia flags y requisitos de Node respecto a la v1. En equipos sin llavero, revisa el aviso del README sobre dónde se guardan los secretos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FastMCP](fastmcp.md) | Depurar servidores construidos con FastMCP. (combinación por arquitectura) | Arranca el servidor y conéctalo con el Inspector. |
+| [MCP TypeScript SDK](mcp-typescript-sdk.md) | Herramienta oficial para probar servidores del SDK TypeScript. | Ejecuta el Inspector contra tu servidor. |
+| [MCP Python SDK](mcp-python-sdk.md) | `mcp dev` del SDK de Python lanza el Inspector. | Instala `mcp[cli]` y ejecuta `mcp dev`. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Chrome DevTools MCP](chrome-devtools-mcp.md) · [Google MCP](mcp.md) · [MCP for Beginners](mcp-for-beginners.md) · [MCP servers for AWS](aws-mcp.md) · [Playwright MCP](playwright-mcp.md) · [servers](servers.md)
+
+**Notas:** Sin alternativas declaradas. Trata los secretos que guarda como credenciales.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 2.15.0 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/modelcontextprotocol/inspector/blob/main/README.md) · [2](https://modelcontextprotocol.io/docs/tools/inspector)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. Las instrucciones CLAUDE.md del repositorio sirven para contribuir al código; no hacen del Inspector un plugin de Claude Code |
 | Coste | Sin pago a un modelo en la ruta básica. La inspección no requiere modelo; una herramienta conectada puede llamar servicios de pago |
 | Equipo | Preparación según la ruta elegida. Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba |
-
-Las instrucciones CLAUDE.md del repositorio sirven para contribuir al código; no hacen del Inspector un plugin de Claude Code
-
-## Qué puedes hacer con él
-
-Herramienta oficial para probar y depurar servidores MCP desde una interfaz web.
-
-## Por qué destaca
-
-Usos propuestos: Depurar un esquema MCP; Reproducir un fallo de una herramienta.
-
-## Cómo funciona
 
 Las instrucciones CLAUDE.md del repositorio sirven para contribuir al código; no hacen del Inspector un plugin de Claude Code
 
@@ -91,13 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba
 - **Etiquetas:** `mcp` `evaluation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
-| [MCP TypeScript SDK](mcp-typescript-sdk.md) | 13.8k | SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. |
 
 ## Enlaces
 

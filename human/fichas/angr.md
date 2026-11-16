@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de análisis binario en Python, independiente de la plataforma, del Computer Security Lab de UC Santa Barbara, SEFCOM de Arizona State University y el equipo CTF Shellphish. Licencia BSD-2-Clause. Es maduro y muy usado en investigación y CTF (~9k estrellas).
+
+## ¿Qué hace?
+
+Carga un binario y permite desensamblarlo y elevarlo a una representación intermedia, instrumentarlo, ejecutarlo simbólicamente, analizar el flujo de control y las dependencias de datos, hacer análisis de conjuntos de valores (VSA) y decompilar. Sirve para encontrar entradas que alcanzan cierto código, resolver retos o automatizar análisis de vulnerabilidades.
+
+## ¿Cómo lo hace?
+
+Es un conjunto de librerías Python 3: se instala con `pip install angr`, en un entorno virtual propio, como recomienda el README. Se usa desde scripts o un REPL como IPython. La ejecución simbólica puede consumir mucha memoria y tiempo con binarios grandes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ghidra](ghidra.md) | Explorar el binario en Ghidra y automatizar la búsqueda de rutas en angr. (combinación por arquitectura) | Identifica direcciones en Ghidra y úsalas en el script de angr. |
+| [frida](frida.md) | Combinar análisis dinámico en ejecución con análisis simbólico. (combinación por arquitectura) | Captura valores reales con Frida y úsalos como restricciones en angr. |
+| [Claude Code](claude-code.md) | Escribir y depurar scripts de angr con un agente. (combinación por arquitectura) | Instala angr en un entorno virtual y abre el proyecto con el agente. |
+| [GhidraMCP](ghidramcp.md) | Combinación recíproca: GhidraMCP lo enlaza como «Automatizar con ejecución simbólica las rutas que el agente identifique. (combinación por arquitectura)». | Orden indicado desde GhidraMCP: Usa angr en scripts aparte sobre el mismo binario. |
+| [rizin](rizin.md) | Combinación recíproca: rizin lo enlaza como «Ejecución simbólica sobre las rutas que identifiques en Rizin. (combinación por arquitectura)». | Orden indicado desde rizin: Localiza la función en Rizin y modela la búsqueda en angr. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/angr/angr/blob/master/README.md) · [2](https://docs.angr.io/en/latest/getting-started/installing.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una plataforma de análisis que requiere programación; el ejemplo de hooks no es su instalación |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere LLM; resolver estados consume recursos y puede crecer mucho con el programa |
 | Equipo | Preparación según la ruta elegida. Python y entorno compatible; binario de laboratorio |
-
-Es una plataforma de análisis que requiere programación; el ejemplo de hooks no es su instalación
-
-## Qué puedes hacer con él
-
-Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica.
-
-## Cómo funciona
 
 Es una plataforma de análisis que requiere programación; el ejemplo de hooks no es su instalación
 

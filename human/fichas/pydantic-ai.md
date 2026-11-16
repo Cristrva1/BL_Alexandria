@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+SDK de IA para Python (MIT) del equipo de Pydantic: un bucle de agente tipado y extensible. Muy activo (v2.68.0). Se apoya en productos comerciales de la misma empresa (Logfire, AI Gateway).
+
+## ¿Qué hace?
+
+Cubre agentes, voz en tiempo real, generación de imágenes y embeddings con cualquier modelo (OpenAI, Anthropic, Google, Bedrock, Groq, Mistral, xAI, Ollama y docenas más), cambiando solo una cadena. Pydantic AI Harness añade capacidades para trabajo largo (memoria, archivos, shell con lista blanca), Pydantic Evals evalúa salidas y trayectorias, y la ejecución duradera se hace con Temporal y otros.
+
+## ¿Cómo lo hace?
+
+Se instala con `uv add pydantic-ai` (extras como `[temporal]` o `[openai-realtime]`), con validación de tipos de extremo a extremo. Para observabilidad recomienda Pydantic Logfire, que es comercial, y soporta MCP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langfuse](langfuse.md) | Trazas de código abierto con la integración oficial, como alternativa a Logfire. | Instrumenta vía OpenTelemetry. |
+| [FastMCP](fastmcp.md) | Servidores MCP propios como herramientas; Pydantic AI documenta el cliente MCP (combinación por arquitectura). | Servidor MCP primero. |
+| [Ollama](ollama.md) | Proveedor de modelos locales soportado. | Ollama con el modelo descargado primero. |
+| [browser-use](browser-use.md) | Combinación recíproca: browser-use lo enlaza como «Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI». | Orden indicado desde browser-use: Instala el extra correspondiente de pydantic-ai para el proveedor elegido. |
+| [loguru](loguru.md) | Combinación recíproca: loguru lo enlaza como «Logging sencillo en agentes Python. (combinación por arquitectura)». | Orden indicado desde loguru: Configura Loguru al iniciar el agente. |
+| [MCP Python SDK](mcp-python-sdk.md) | Combinación recíproca: MCP Python SDK lo enlaza como «Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura)». | Orden indicado desde MCP Python SDK: Conecta el servidor como toolset MCP. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Temporal](temporal.md)
+
+**Notas:** Alternativas (elige una): openai-agents-python, smolagents, langgraph.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.68.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pydantic/pydantic-ai/blob/main/README.md) · [2](https://langfuse.com/integrations/frameworks/pydantic-ai) · [3](https://ai.pydantic.dev/mcp/) · [4](https://ai.pydantic.dev/models/overview/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Empieza con el paquete base; el harness de programación es un componente adicional |
 | Coste | El coste depende del proveedor o la ruta. Admite Ollama y APIs; Logfire opcional y servicios asociados se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Python y uv; esquema de salida; modelo |
-
-Empieza con el paquete base; el harness de programación es un componente adicional
-
-## Qué puedes hacer con él
-
-Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo.
-
-## Por qué destaca
-
-Usos propuestos: Extraer campos de mensajes; Validar datos generados antes de guardarlos.
-
-## Cómo funciona
 
 Empieza con el paquete base; el harness de programación es un componente adicional
 
@@ -93,13 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; esquema de salida; modelo
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
-| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Sistema de memoria persistente de código abierto (Apache 2.0) para agentes de código, de thedotmack. Muy activo (v15.19.0), con servicio en la nube opcional (CMEM Pro / cmem.ai) para copias y memoria alojada.
+
+## ¿Qué hace?
+
+Ejecuta un segundo agente junto al tuyo que toma notas mientras trabajas; la siguiente sesión empieza con un índice breve de lo importante y carga los detalles solo cuando hacen falta. Registra sesiones de Claude Code, Codex, Cursor, OpenCode y otros 11 agentes; Copilot CLI, Goose, Roo Code, Warp y Zed solo pueden consultar la memoria. Incluye herramientas de búsqueda MCP, un visor web con observaciones citables por ID, cola de revisión y avisos opcionales a Telegram, Discord o Slack.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx claude-mem install`, que detecta los agentes, registra los hooks o plugins, configura el proveedor de IA y arranca un servicio «worker» local con API y visor web. `npm install -g claude-mem` solo instala el SDK y no registra hooks. Algunos entornos (Pi, DeepSeek Harness) usan el runtime del worker y otros, sin hooks, se observan leyendo los archivos de registro del chat.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente principal soportado con hooks nativos para capturar y recuperar memoria. | Claude Code instalado primero; después `npx claude-mem install` y elige Claude Code. |
+| [Codex CLI](codex.md) | Soportado con plugin nativo (también a través de T3 Code). | Igual; activa los hooks de Codex si el instalador lo pide. |
+| [OpenCode](opencode.md) | Agente soportado con registro de sesiones. | Igual que arriba. |
+| [OpenClaw](openclaw.md) | Combinación recíproca: OpenClaw lo enlaza como «Plugin de memoria persistente para gateways OpenClaw». | Orden indicado desde OpenClaw: Instala claude-mem con su comando para OpenClaw. |
+
+**Notas:** Alternativas (elige una): engram, agentmemory. Las observaciones pueden contener código o secretos: revisa qué se sincroniza con la nube.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v15.19.0 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/thedotmack/claude-mem/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones |
 | Coste | El coste depende del proveedor o la ruta. El observador puede usar el plan Anthropic o claves propias según el proyecto; la prueba del observador alojado pide método de pago; revisa la opción seleccionada |
 | Equipo | Preparación según la ruta elegida. Node 20.19+ o 22.12+; Bun y uv; agente admitido; proveedor del observador |
-
-Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones
-
-## Qué puedes hacer con él
-
-Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA.
-
-## Por qué destaca
-
-Usos propuestos: Conservar decisiones entre sesiones; Recuperar el motivo de un cambio de código.
-
-## Cómo funciona
 
 Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones
 
@@ -94,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 20.19+ o 22.12+; Bun y uv; agente admitido; proveedor del observador
 - **Etiquetas:** `memory` `coding-agent` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
 ## Alternativas (elige una)
 

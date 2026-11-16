@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Colección (Apache-2.0) de @Shubhamsaboo con más de 100 plantillas open source de agentes, skills de agente y apps RAG. Es muy popular (~145k estrellas) y se actualiza a diario. El README afirma que cada plantilla está probada de principio a fin [DATO NO VERIFICADO].
+
+## ¿Qué hace?
+
+Reúne ejemplos ejecutables organizados por tipo: agentes iniciales y avanzados, equipos multiagente, agentes de voz, agentes MCP, RAG, apps con memoria, interfaces generativas y fine-tuning. Funcionan con Claude, Gemini, GPT, DeepSeek, Llama, Qwen y modelos locales. Usan frameworks variados, entre ellos Agno, OpenAI Agents SDK, Google ADK, CrewAI y LangGraph.
+
+## ¿Cómo lo hace?
+
+Cada plantilla es independiente: se clona el repositorio, se entra en la carpeta, se ejecuta `pip install -r requirements.txt` y se lanza, muchas veces con Streamlit. Las skills de agente se instalan con `npx skills add <url>`. Cada ejemplo pide sus propias claves de API. La calidad y el mantenimiento varían entre plantillas, así que hay que revisarlas antes de producción.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [streamlit](streamlit.md) | Interfaz de muchas de las apps de ejemplo. | Se instala con los requirements de cada plantilla. |
+| [OpenAI Agents SDK](openai-agents-python.md) | Framework usado por varias plantillas de agentes (citado en el README). | Instálalo dentro del entorno de la plantilla que lo use. |
+| [Agent Development Kit (ADK)](adk-python.md) | Framework de Google usado en otras plantillas (citado en el README). | Instálalo en el entorno de la plantilla correspondiente. |
+| [firecrawl](firecrawl.md) | Extracción web en plantillas de investigación y scraping (citado en el README). | Configura la clave de Firecrawl antes de lanzar esas plantillas. |
+
+**Notas:** Alternativas (elige una): openai-cookbook, claude-cookbooks.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación |
 | Coste | El coste depende del proveedor o la ruta. La colección se consulta gratis; hay apps con API, modelos locales y skills que usan el plan del anfitrión |
 | Equipo | Preparación según la ruta elegida. Navegador; entorno y proveedor específicos del ejemplo elegido |
-
-Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación
-
-## Qué puedes hacer con él
-
-Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.
-
-## Por qué destaca
-
-Usos propuestos: Aprender con un asistente de viajes; Estudiar un RAG con Llama local.
-
-## Cómo funciona
 
 Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación
 
@@ -85,15 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; entorno y proveedor específicos del ejemplo elegido
 - **Etiquetas:** `agents` `rag` `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [streamlit](streamlit.md) | 46.4k | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. |
-| [OpenAI Agents SDK](openai-agents-python.md) | 30.7k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
-| [Agent Development Kit (ADK)](adk-python.md) | 22.2k | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. |
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
 ## Alternativas (elige una)
 

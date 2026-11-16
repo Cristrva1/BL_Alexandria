@@ -10,6 +10,35 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta de terminal de código abierto (MIT) escrita en Rust por Alex Jones que calcula qué LLM puede ejecutar tu hardware. Proyecto de 2026 muy activo (v1.1.20).
+
+## ¿Qué hace?
+
+Detecta CPU, RAM, GPU, VRAM y memoria unificada, puntúa cada modelo por calidad, velocidad, ajuste y contexto, y recomienda cuantizaciones (GGUF, AWQ, GPTQ, EXL2) que funcionarán bien. Admite varias GPU, modelos MoE, estimación de velocidad y planificación de modelos repartidos en varias máquinas (por ejemplo con Ray y vLLM). También permite medir tokens por segundo reales y aportar resultados al proyecto.
+
+## ¿Cómo lo hace?
+
+Ofrece una TUI interactiva (por defecto), un modo CLI clásico, un panel web y una API REST (`/api/v1/system`, `/api/v1/models`). Detecta NVIDIA CUDA, Apple Silicon, AMD ROCm e Intel OneAPI e integra proveedores locales como Ollama, llama.cpp, MLX, Docker Model Runner y LM Studio. Se instala con Homebrew, Scoop o desde sus binarios, en macOS, Linux y Windows.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local soportado: elige con llmfit el modelo que cabe y descárgalo en Ollama. | Ollama instalado; ejecuta llmfit para decidir el modelo antes de `ollama pull`. |
+| [llama.cpp](llama-cpp.md) | Proveedor local soportado para descargar y servir el GGUF recomendado. | Igual: primero la recomendación, luego la descarga. |
+| [vLLM](vllm.md) | El README describe comprobar si un modelo cabe en varias máquinas con Ray y vLLM antes de lanzarlo. | Usa llmfit para planificar; despliega vLLM después. |
+| [airllm](airllm.md) | Combinación recíproca: airllm lo enlaza como «Comprobar si un modelo cabe en memoria de forma normal antes de recurrir a la carga por capas, mucho más lenta (combinación por arquitectura)». | Orden indicado desde airllm: Ejecuta llmfit primero; usa AirLLM solo si el modelo no cabe. |
+| [Jan](jan.md) | Combinación recíproca: Jan lo enlaza como «Elegir qué modelo y cuantización caben en tu equipo antes de descargarlos en Jan (combinación por arquitectura)». | Orden indicado desde Jan: Ejecuta llmfit primero; descarga en Jan el modelo recomendado. |
+| [Text Generation WebUI](textgen.md) | Combinación recíproca: Text Generation WebUI lo enlaza como «Saber qué modelo y cuantización caben antes de descargar (combinación por arquitectura)». | Orden indicado desde Text Generation WebUI: Ejecuta llmfit primero. |
+
+**Notas:** Las estimaciones de velocidad son proyecciones; contrástalas con la función de benchmark.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.1.20 (2026-11-03) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AlexsJones/llmfit/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. Estima ajuste al hardware y velocidad; no mide por sí mismo la calidad del modelo en tu tarea |
 | Coste | Sin pago a un modelo en la ruta básica. La estimación no necesita llamar a un LLM; descargar o ejecutar modelos añade recursos |
 | Equipo | Preparación según la ruta elegida. Binario para tu sistema; acceso a datos de hardware |
-
-Estima ajuste al hardware y velocidad; no mide por sí mismo la calidad del modelo en tu tarea
-
-## Qué puedes hacer con él
-
-Inspecciona el hardware y recomienda modelos según memoria, aceleradores y estimaciones de velocidad. Ayuda a elegir antes de descargar; no evalúa la calidad del modelo en una tarea de negocio.
-
-## Por qué destaca
-
-Usos propuestos: Elegir un modelo antes de descargarlo; Comparar requisitos de dos cuantizaciones.
-
-## Cómo funciona
 
 Estima ajuste al hardware y velocidad; no mide por sí mismo la calidad del modelo en tu tarea
 
@@ -91,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario para tu sistema; acceso a datos de hardware
 - **Etiquetas:** `inference` `local` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Enlaces
 

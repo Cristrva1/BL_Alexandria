@@ -4,7 +4,7 @@
 
 Distingue el cliente de Google, las skills compatibles y los recursos para diseño y prompting.
 
-166 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
+159 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
 
 ## Primera configuración, paso a paso
 
@@ -29,7 +29,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 
-[Explorar 64 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-skills)
+[Explorar 63 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -54,7 +54,6 @@ El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 | [gstack](../fichas/gstack.md) | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. | Sin clave propia de API de IA en la ruta básica |
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica |
 | [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | API de IA opcional |
-| [hypit](../fichas/hypit.md) | Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables. | API de IA opcional |
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
 | [last30days](../fichas/last30days-skill.md) | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. | API de IA opcional |
@@ -122,7 +121,7 @@ Prompt Master incluye orientación para Antigravity; es un recurso de prompting,
 
 Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 
-[Explorar 91 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-mcp)
+[Explorar 85 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -136,7 +135,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [Blender MCP](../fichas/blender-mcp.md) | Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. | API de IA opcional |
 | [Browser Harness](../fichas/browser-harness.md) | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. | Sin clave propia de API de IA en la ruta básica |
 | [browser-use](../fichas/browser-use.md) | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. | API de IA opcional |
-| [camofox-browser](../fichas/camofox-browser.md) | Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. | Sin clave propia de API de IA en la ruta básica |
 | [ccxt](../fichas/ccxt.md) | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. | Sin clave propia de API de IA en la ruta básica |
 | [changedetection.io](../fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | API de IA opcional |
 | [Chrome DevTools MCP](../fichas/chrome-devtools-mcp.md) | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. | Sin clave propia de API de IA en la ruta básica |
@@ -148,7 +146,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [DaVinci Resolve MCP](../fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | Sin clave propia de API de IA en la ruta básica |
 | [Docling](../fichas/docling.md) | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | API de IA opcional |
 | [dograh](../fichas/dograh.md) | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | Depende de la ruta elegida |
-| [dsh-qa](../fichas/dsh-qa.md) | Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles. | Sin clave propia de API de IA en la ruta básica |
 | [earshot](../fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional |
 | [Engram](../fichas/engram.md) | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. | Sin clave propia de API de IA en la ruta básica |
 | [Figma Context MCP](../fichas/figma-context-mcp.md) | Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. | Sin clave propia de API de IA en la ruta básica |
@@ -175,7 +172,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Sin clave propia de API de IA en la ruta básica |
 | [mempalace](../fichas/mempalace.md) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | API de IA opcional |
 | [motion](../fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional |
-| [n8n-mcp](../fichas/n8n-mcp.md) | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. | Sin clave propia de API de IA en la ruta básica |
 | [notebooklm-mcp-cli](../fichas/notebooklm-mcp-cli.md) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | Sin clave propia de API de IA en la ruta básica |
 | [notebooklm-py](../fichas/notebooklm-py.md) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | Sin clave propia de API de IA en la ruta básica |
 | [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Depende de la ruta elegida |
@@ -184,7 +180,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [OpenWA](../fichas/openwa.md) | Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA. | Sin clave propia de API de IA en la ruta básica |
 | [Opik](../fichas/opik.md) | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. | API de IA opcional |
 | [osiris](../fichas/osiris.md) | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. | API de IA opcional |
-| [palmier-pro](../fichas/palmier-pro.md) | Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. | API de IA opcional |
 | [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida |
 | [penpot](../fichas/penpot.md) | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. | Sin clave propia de API de IA en la ruta básica |
 | [Phoenix](../fichas/phoenix.md) | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. | API de IA opcional |
@@ -200,7 +195,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica |
 | [Repomix](../fichas/repomix.md) | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. | Sin clave propia de API de IA en la ruta básica |
 | [ruflo](../fichas/ruflo.md) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | API de IA opcional |
-| [RuView](../fichas/ruview.md) | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. | API de IA opcional |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Sin clave propia de API de IA en la ruta básica |
 | [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Depende de la ruta elegida |
 | [Scrapling](../fichas/scrapling.md) | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. | Sin clave propia de API de IA en la ruta básica |
@@ -212,7 +206,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [supabase](../fichas/supabase.md) | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [supermemory](../fichas/supermemory.md) | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. | Depende de la ruta elegida |
 | [ToolJet](../fichas/tooljet.md) | Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. | API de IA opcional |
-| [treg](../fichas/treg.md) | Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores. | Depende de la ruta elegida |
 | [ui](../fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Sin clave propia de API de IA en la ruta básica |
 | [unity-mcp](../fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin clave propia de API de IA en la ruta básica |
 | [Vibe-Trading](../fichas/vibe-trading.md) | Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. | Depende de la ruta elegida |
@@ -259,7 +252,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [book-to-skill](https://github.com/virgiliojr94/book-to-skill/blob/master/README.md), revisado el 2026-11-15.
 - [Browser Harness](https://github.com/browser-use/browser-harness/blob/main/README.md), revisado el 2026-11-15.
 - [browser-use](https://github.com/browser-use/browser-use/blob/main/README.md), revisado el 2026-11-15.
-- [camofox-browser](https://github.com/jo-inc/camofox-browser/blob/master/README.md), revisado el 2026-11-15.
 - [ccxt](https://github.com/ccxt/ccxt/blob/master/README.md), revisado el 2026-11-15.
 - [changedetection.io](https://github.com/dgtlmoon/changedetection.io/blob/master/README.md), revisado el 2026-11-15.
 - [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md), revisado el 2026-11-15.
@@ -280,7 +272,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [diagram-design](https://github.com/cathrynlavery/diagram-design/blob/main/README.md), revisado el 2026-11-15.
 - [Docling](https://github.com/docling-project/docling/blob/main/README.md), revisado el 2026-11-15.
 - [dograh](https://github.com/dograh-hq/dograh/blob/main/README.md), revisado el 2026-11-15.
-- [dsh-qa](https://github.com/ZSeven-W/dsh-qa/blob/main/README.md), revisado el 2026-11-15.
 - [earshot](https://github.com/Leonxlnx/earshot/blob/main/README.md), revisado el 2026-11-15.
 - [ECC](https://github.com/affaan-m/ECC/blob/main/README.md), revisado el 2026-11-15.
 - [elephant-goldfish-model](https://github.com/google/elephant-goldfish-model/blob/main/README.md), revisado el 2026-11-15.
@@ -305,7 +296,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [heroui](https://github.com/heroui-inc/heroui/blob/v3/README.md), revisado el 2026-11-15.
 - [Humanizer](https://github.com/blader/humanizer/blob/main/README.md), revisado el 2026-11-15.
 - [HyperFrames](https://github.com/heygen-com/hyperframes/blob/main/README.md), revisado el 2026-11-15.
-- [hypit](https://github.com/hypit-ai/hypit/blob/main/README.md), revisado el 2026-11-15.
 - [i-have-adhd](https://github.com/ayghri/i-have-adhd/blob/main/README.md), revisado el 2026-11-15.
 - [impeccable](https://github.com/pbakaus/impeccable/blob/main/README.md), revisado el 2026-11-15.
 - [Kestra](https://github.com/kestra-io/kestra/blob/develop/README.md), revisado el 2026-11-15.
@@ -329,7 +319,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [motion-design-skill](https://github.com/LottieFiles/motion-design-skill/blob/main/README.md), revisado el 2026-11-15.
 - [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md), revisado el 2026-11-15.
 - [Material UI](https://github.com/mui/material-ui/blob/master/README.md), revisado el 2026-11-15.
-- [n8n-mcp](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md), revisado el 2026-11-15.
 - [no-ai-slop](https://github.com/petergyang/no-ai-slop/blob/main/README.md), revisado el 2026-11-15.
 - [nodeterm](https://github.com/eneskirca/nodeterm/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-mcp-cli](https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md), revisado el 2026-11-15.
@@ -347,7 +336,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [OpenWA](https://github.com/rmyndharis/OpenWA/blob/main/README.md), revisado el 2026-11-15.
 - [Opik](https://github.com/comet-ml/opik/blob/main/README.md), revisado el 2026-11-15.
 - [osiris](https://github.com/simplifaisoul/osiris/blob/master/README.md), revisado el 2026-11-15.
-- [palmier-pro](https://github.com/palmier-io/palmier-pro/blob/main/README.md), revisado el 2026-11-15.
 - [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/README.md), revisado el 2026-11-15.
 - [penpot](https://github.com/penpot/penpot/blob/develop/README.md), revisado el 2026-11-15.
 - [Phoenix](https://github.com/Arize-ai/phoenix/blob/main/README.md), revisado el 2026-11-15.
@@ -370,7 +358,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [Repomix](https://github.com/yamadashy/repomix/blob/main/README.md), revisado el 2026-11-15.
 - [rtk](https://github.com/rtk-ai/rtk/blob/develop/README.md), revisado el 2026-11-15.
 - [ruflo](https://github.com/ruvnet/ruflo/blob/main/README.md), revisado el 2026-11-15.
-- [RuView](https://github.com/ruvnet/RuView/blob/main/README.md), revisado el 2026-11-15.
 - [sandbox](https://github.com/agent-infra/sandbox/blob/main/README.md), revisado el 2026-11-15.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md), revisado el 2026-11-15.
 - [Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/README.md), revisado el 2026-11-15.
@@ -394,7 +381,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [T3 Code](https://github.com/pingdotgg/t3code/blob/main/README.md), revisado el 2026-11-15.
 - [taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/README.md), revisado el 2026-11-15.
 - [ToolJet](https://github.com/ToolJet/ToolJet/blob/main/README.md), revisado el 2026-11-15.
-- [treg](https://github.com/superdesigndev/treg/blob/main/README.md), revisado el 2026-11-15.
 - [twenty-main](https://github.com/twentyhq/twenty/blob/main/README.md), revisado el 2026-11-15.
 - [ui](https://github.com/shadcn-ui/ui/blob/main/README.md), revisado el 2026-11-15.
 - [UI SDK (Vercel)](https://github.com/vercel-labs/ui/blob/main/README.md), revisado el 2026-11-15.

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Biblioteca de Meta (Facebook Research) para búsqueda de similitud y agrupamiento de vectores densos, escrita en C++ con interfaz Python. MIT, madura y activa (v1.16.0); es una biblioteca, no un servidor de base de datos.
+
+## ¿Qué hace?
+
+Busca en conjuntos de vectores de cualquier tamaño, incluso mayores que la RAM, con distancias L2, producto interno o coseno. Ofrece búsqueda exacta y aproximada, índices comprimidos (cuantización, códigos binarios) que no necesitan guardar los vectores originales, y código de evaluación y ajuste de parámetros.
+
+## ¿Cómo lo hace?
+
+Implementación en C++ con wrappers de Python/NumPy y una implementación GPU (CUDA) que funciona como reemplazo directo de los índices de CPU (por ejemplo `GpuIndexFlatL2`) y admite varias GPU. Se instala con paquetes precompilados de conda (`faiss-cpu`, `faiss-gpu`) o compilando desde código.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langchain](langchain.md) | Almacén vectorial en memoria muy usado en LangChain (combinación por arquitectura; integración ampliamente documentada por LangChain). | Instala faiss-cpu o faiss-gpu antes del paquete de integración. |
+| [LlamaIndex](llama-index.md) | Índice local para prototipos de RAG (combinación por arquitectura). | Igual que arriba. |
+| [Transformers](transformers.md) | Generar embeddings con modelos de Hugging Face e indexarlos en FAISS (combinación por arquitectura). | Fija el modelo de embeddings: su dimensión define el índice. |
+
+**Notas:** Alternativas (elige una): qdrant, chroma. Al no ser servidor, no trae persistencia, filtros por metadatos ni control de acceso.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.16.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facebookresearch/faiss/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca de índices, no una base con panel, autenticación y persistencia automática de una aplicación |
 | Coste | Sin pago a un modelo en la ruta básica. No usa un LLM ni cobra una API; la variante GPU necesita hardware y dependencias propias |
 | Equipo | Preparación según la ruta elegida. Paquete CPU o GPU compatible con tu sistema; vectores en memoria |
-
-Es una biblioteca de índices, no una base con panel, autenticación y persistencia automática de una aplicación
-
-## Qué puedes hacer con él
-
-Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU.
-
-## Por qué destaca
-
-Usos propuestos: Comparar embeddings de imágenes; Experimentar con índices y compresión.
-
-## Cómo funciona
 
 Es una biblioteca de índices, no una base con panel, autenticación y persistencia automática de una aplicación
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Paquete CPU o GPU compatible con tu sistema; vectores en memoria
 - **Etiquetas:** `vector-db` `python` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Transformers](transformers.md) | 169k | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. |
 
 ## Alternativas (elige una)
 

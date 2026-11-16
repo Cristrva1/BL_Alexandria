@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada de recursos para Claude Code (skills, hooks, comandos, flujos, herramientas, documentación) mantenida por hesreallyhim. Muy activa; GitHub marca su licencia como NOASSERTION.
+
+## ¿Qué hace?
+
+Selecciona recursos de la comunidad por categorías: empezar, recursos de Anthropic, documentación, Obsidian, visualización de datos, mantenimiento de código abierto, seguridad y más. Incluye una muestra de proyectos que usan Claude Code y una sección de novedades; la iteración actual prioriza recursos que no estaban en la anterior.
+
+## ¿Cómo lo hace?
+
+README estructurado con insignias de fecha de creación y actividad de cada recurso enlazado. No se instala: se consulta.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Herramienta a la que se refieren todos los recursos. | No aplica: es una lista de consulta. |
+| [Claude Code Plugins Directory](claude-plugins-official.md) | Marketplace oficial frente a los recursos comunitarios de la lista (combinación por arquitectura). | Prioriza lo oficial y revisa lo comunitario. |
+| [SkillSpector](skillspector.md) | Auditar hooks y skills de terceros antes de instalarlos (combinación por arquitectura). | Antes de instalar cualquier recurso. |
+
+**Notas:** Alternativa (elige una): awesome-claude-skills. Se quitó superpowers porque no hay integración.
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una selección independiente; su nombre y enlaces a Anthropic no la convierten en un marketplace oficial |
 | Coste | Sin pago a un modelo en la ruta básica. Leer el catálogo no consume un modelo; los proyectos enlazados y Claude Code tienen sus propias condiciones |
 | Equipo | Preparación según la ruta elegida. Navegador;  una necesidad concreta de configuración |
-
-Es una selección independiente; su nombre y enlaces a Anthropic no la convierten en un marketplace oficial
-
-## Qué puedes hacer con él
-
-Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar ejemplos para personalizar una sesión de Claude Code; Comparar herramientas que muestran el uso del agente.
-
-## Cómo funciona
 
 Es una selección independiente; su nombre y enlaces a Anthropic no la convierten en un marketplace oficial
 
@@ -84,14 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador;  una necesidad concreta de configuración
 - **Etiquetas:** `coding-agent` `skills` `agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Claude Code Plugins Directory](claude-plugins-official.md) | 47.3k | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. |
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
 ## Alternativas (elige una)
 

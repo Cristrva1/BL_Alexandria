@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Kit del Allen Institute for AI (Apache 2.0) para convertir PDF y documentos de imagen en texto limpio. Versión v0.4.27; el último push es de marzo de 2026 y el último modelo anunciado en el README, de octubre de 2025.
+
+## ¿Qué hace?
+
+Convierte PDF, PNG y JPEG a Markdown con orden de lectura natural incluso con figuras y varias columnas, y soporta ecuaciones, tablas, escritura a mano y formatos complejos; elimina encabezados y pies. Según el README cuesta menos de 200 USD por millón de páginas. Incluye el benchmark olmOCR-Bench y código para entrenar modelos propios.
+
+## ¿Cómo lo hace?
+
+Se basa en un VLM de 7B parámetros servido con vLLM, por lo que necesita una GPU NVIDIA reciente con al menos 12 GB (probado en RTX 4090, L40S, A100, H100), o un servidor vLLM remoto con `--server` instalando solo el paquete base. Requiere poppler-utils y fuentes adicionales; hay imágenes Docker oficiales con CUDA 12.8.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Motor de inferencia de su canalización, local o remoto. | Servidor vLLM con el modelo olmOCR primero si usas `--server`. |
+| [LightRAG](lightrag.md) | Alimentar un RAG con Markdown limpio de documentos escaneados (combinación por arquitectura). | Convierte primero y luego indexa. |
+| [open-notebook](open-notebook.md) | Cargar documentos convertidos como fuentes de investigación (combinación por arquitectura). | Convierte primero y súbelos como Markdown. |
+
+**Notas:** Alternativas (elige una): paddleocr, docling, unlimited-ocr.
+
+Estado en GitHub: activo · último push 2026-03-25 · última versión publicada v0.4.27 (2026-03-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/allenai/olmocr/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Instalar el paquete cliente no proporciona por sí solo GPU ni créditos remotos; comienza con pocas páginas |
 | Coste | El coste depende del proveedor o la ruta. La ruta local necesita GPU; endpoints alojados cobran según proveedor; guardar resultados también consume espacio |
 | Equipo | Preparación según la ruta elegida. Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF |
-
-Instalar el paquete cliente no proporciona por sí solo GPU ni créditos remotos; comienza con pocas páginas
-
-## Qué puedes hacer con él
-
-Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala.
-
-## Por qué destaca
-
-Usos propuestos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM.
-
-## Cómo funciona
 
 Instalar el paquete cliente no proporciona por sí solo GPU ni créditos remotos; comienza con pocas páginas
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF
 - **Etiquetas:** `ocr` `pdf` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [vLLM](vllm.md) | 96.9k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
 
 ## Alternativas (elige una)
 

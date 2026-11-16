@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+IndexTTS, sistema de TTS zero-shot «de nivel industrial» con control de duración y emoción, de bilibili (organización index-tts). Usa el «bilibili Model Use License Agreement» propio (GitHub muestra NOASSERTION). Tiene ~25k estrellas (v2.5.0).
+
+## ¿Qué hace?
+
+Clona una voz a partir de una sola muestra y permite controlar la duración exacta y la emoción, incluso con texto descriptivo de la emoción mediante un módulo basado en Qwen (`use_qwen_emo`).
+
+## ¿Cómo lo hace?
+
+Se instala con uv a partir del repo; los modelos se descargan al iniciar la WebUI por primera vez, sin necesidad de Git LFS. Se recomienda GPU NVIDIA.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisperX](whisperx.md) | Transcribir y alinear las referencias de voz. (combinación por arquitectura) | Prepara las muestras. |
+| [FFmpeg](ffmpeg.md) | Preparar y convertir audio. (combinación por arquitectura) | Normaliza las muestras. |
+| [Pipecat](pipecat.md) | TTS en agentes de voz. (combinación por arquitectura) | Expón el modelo como servicio TTS. |
+
+**Notas:** Alternativas (elige una): cosyvoice. Licencia no OSI; riesgo de suplantación de voz.
+
+Estado en GitHub: activo · último push 2026-09-29 · última versión publicada v2.5.0 (2026-08-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/index-tts/index-tts/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Industrial-level es una descripción del autor y no una certificación; algunos controles emocionales requieren activar el módulo específico |
 | Coste | El coste depende del proveedor o la ruta. Ejecución propia sin API obligatoria; aplica bilibili Model Use License Agreement y hardware independiente |
 | Equipo | Preparación según la ruta elegida. uv; entorno compatible; pesos; GPU según configuración; audio autorizado |
-
-Industrial-level es una descripción del autor y no una certificación; algunos controles emocionales requieren activar el módulo específico
-
-## Qué puedes hacer con él
-
-Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar narración con duración controlada; Estudiar expresión de voz.
-
-## Cómo funciona
 
 Industrial-level es una descripción del autor y no una certificación; algunos controles emocionales requieren activar el módulo específico
 

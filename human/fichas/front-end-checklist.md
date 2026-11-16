@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Lista de verificación de desarrollo front-end (MIT) de David Dias, un clásico renovado para personas y agentes de IA. Versión v2.0.
+
+## ¿Qué hace?
+
+Ofrece 386 reglas en 11 categorías, cada una con explicación, cómo corregirla y cómo verificarla, para revisar proyectos, auditorías o pull requests. Se navega en su web y se usa desde agentes mediante un servidor MCP alojado con 11 herramientas.
+
+## ¿Cómo lo hace?
+
+Contenido en Markdown en el repositorio, sitio web (frontendchecklist.io) y servidor MCP remoto (mcp.frontendchecklist.io) que se añade al cliente MCP del agente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Usar las reglas mediante el MCP alojado (combinación por arquitectura). | Añade el MCP remoto al agente. |
+| [Chrome DevTools MCP](chrome-devtools-mcp.md) | Comprobar en un navegador real lo que señalan las reglas (combinación por arquitectura). | Ambos MCP en el mismo agente. |
+| [modern-web-guidance](modern-web-guidance.md) | Pautas de implementación moderna para corregir lo que la lista detecta (combinación por arquitectura). | Independientes. |
+
+**Notas:** El servidor MCP es un servicio alojado de terceros [DATO NO VERIFICADO: política de datos].
+
+Estado en GitHub: activo · último push 2026-10-31 · última versión publicada v2.0 (2026-05-30) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio |
 | Coste | El coste depende del proveedor o la ruta. Consultar el checklist no consume modelos; ejecutarlo con un agente usa su plan y servicios opcionales tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Navegador para lectura; web de prueba; agente o cliente MCP opcional |
-
-Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio
-
-## Qué puedes hacer con él
-
-Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una revisión de frontend; Crear criterios de entrega de una web.
-
-## Cómo funciona
 
 Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio
 

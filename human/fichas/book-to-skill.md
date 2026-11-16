@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de virgiliojr94 (MIT) que convierte libros técnicos, carpetas de documentos o colecciones de fuentes en una skill de agente unificada. Activa (v1.4.0).
+
+## ¿Qué hace?
+
+Con `/book-to-skill ./libro.pdf` destila el libro en marcos, reglas de decisión, antipatrones y un archivo por capítulo, es decir, estructura y no un resumen. Después el agente carga solo el capítulo pertinente al preguntar (`/mi-libro replicación`). El README declara entre 24 y 51 veces menos tokens que meter el libro entero en el contexto [DATO NO VERIFICADO: medición propia]. Acepta PDF, EPUB, DOCX, MD, HTML, RTF y más.
+
+## ¿Cómo lo hace?
+
+Combina un extractor determinista en Python (documento → texto limpio y metadatos) con un generador guiado por especificación que sigue el agente. Para PDF usa pdftotext (poppler) en textos y Docling para contenido técnico con tablas, código o fórmulas; `extract.py --check` muestra qué extractores hay. Se instala con `npx skills add virgiliojr94/book-to-skill` en Copilot CLI, Amp, Claude Code, Codex, Hermes Agent, OpenCode y otros.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Docling](docling.md) | Extractor recomendado para libros técnicos. | `pip3 install docling` antes de convertir PDF técnicos. |
+| [Claude Code](claude-code.md) | Agente compatible. | Instala con npx skills. |
+| [hermes-agent](hermes-agent.md) | Agente compatible citado. | Igual que arriba. |
+
+**Notas:** Convierte solo libros cuyos derechos tengas: la skill generada contiene el contenido del libro.
+
+Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v1.4.0 (2026-08-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/virgiliojr94/book-to-skill/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La portabilidad corresponde al estándar Agent Skills; empieza con material propio y revisa qué contenido puede redistribuirse |
 | Coste | Consumo del agente que ya utilizas. El procesamiento y uso consumen el agente; OCR y dependencias se revisan según el documento |
 | Equipo | Preparación según la ruta elegida. Agente con Agent Skills;  un documento propio o autorizado de pocas páginas |
-
-La portabilidad corresponde al estándar Agent Skills; empieza con material propio y revisa qué contenido puede redistribuirse
-
-## Qué puedes hacer con él
-
-Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una guía de consulta a partir de documentación interna; Convertir notas técnicas propias en instrucciones reutilizables del agente.
-
-## Cómo funciona
 
 La portabilidad corresponde al estándar Agent Skills; empieza con material propio y revisa qué contenido puede redistribuirse
 

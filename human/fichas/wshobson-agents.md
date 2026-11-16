@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección MIT de plugins, agentes, skills y comandos de wshobson para varias herramientas de código con IA. Muy activa, sin releases.
+
+## ¿Qué hace?
+
+Su catálogo tiene 94 plugins (92 locales y 2 externos), con 202 agentes, 185 skills y 105 comandos. Cubre desarrollo en Python y JavaScript, revisión de código, testing, infraestructura, seguridad y más.
+
+## ¿Cómo lo hace?
+
+Cada componente se escribe una vez en Markdown con el formato de plugin de Claude Code. Adaptadores en `tools/adapters/` generan el formato de cada herramienta, mapean los alias de modelo y traducen permisos. Se instala por marketplace en Claude Code y Cursor, marketplace nativo o artefactos en Codex CLI y `make install-opencode` o `make install-antigravity` desde un clon; también soporta Copilot y Pi.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Formato de origen y marketplace. | Instala solo los plugins que uses. |
+| [Codex CLI](codex.md) | Soporte nativo o mediante artefactos generados. | Sigue la ruta de Codex CLI del README. |
+| [OpenCode](opencode.md) | `make install-opencode`. | Desde un clon del repositorio. |
+| [plugins](plugins.md) | Combinación recíproca: plugins lo enlaza como «Catálogo de plugins con marketplace para Cursor». | Orden indicado desde plugins: Instala desde su marketplace. |
+
+**Notas:** Alternativas (elige una): claude-plugins-official, antigravity-awesome-skills, agency-agents. Se quitó skillspector porque no hay integración (sigue siendo buena práctica auditar).
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/wshobson/agents/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos |
 | Coste | Consumo del agente que ya utilizas. La colección consume el agente anfitrión; algunos plugins o servidores pueden añadir servicios y credenciales |
 | Equipo | Preparación según la ruta elegida. Agente destino;  dependencias del plugin seleccionado |
-
-El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos
-
-## Qué puedes hacer con él
-
-Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes.
-
-## Por qué destaca
-
-Usos propuestos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores.
-
-## Cómo funciona
 
 El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos
 
@@ -93,14 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente destino;  dependencias del plugin seleccionado
 - **Etiquetas:** `skills` `coding-agent` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [SkillSpector](skillspector.md) | 26.1k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
 
 ## Alternativas (elige una)
 

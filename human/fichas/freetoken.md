@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Motor de servicio de modelos Mixture-of-Experts (MoE) para hardware de consumo, de FlashML, con artículo académico asociado. Apache 2.0, reciente y activo (v0.2.2).
+
+## ¿Qué hace?
+
+Busca ejecutar modelos MoE abiertos de escala frontera (el README cita más de 290B parámetros, como DeepSeek-V4-Flash, Qwen3.6-35B-A3B o GLM-5.2) en PCs de juego y portátiles a velocidad interactiva [DATO NO VERIFICADO: rendimiento]. Incluye app de escritorio para Windows y Linux con interfaz para ejecutar modelos, chatear y ajustar el motor, y una CLI.
+
+## ¿Cómo lo hace?
+
+Trata GPU, CPU, memoria del host y almacenamiento como un sistema de memoria jerárquico: ejecución conjunta CPU–GPU adaptada al ancho de banda, prefill en streaming con doble búfer, caché LRU global de expertos, puntos de control semánticos de la caché KV para ediciones de contexto agénticas y reasignación de VRAM en caliente. Admite MXFP4, NVFP4, FP8, BF16 y GGUF en GPU NVIDIA RTX 30/40/50. Se instala con `uv pip install "freetoken[accel]"`; `ft serve` expone una API compatible con OpenAI (`/v1/chat/completions`, `/v1/responses`) en 127.0.0.1:1919.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Open WebUI](open-webui.md) | Interfaz de chat sobre su API compatible con OpenAI (combinación por arquitectura). | `ft serve` primero; registra http://127.0.0.1:1919/v1 en Open WebUI. |
+| [litellm](litellm.md) | Poner el motor local detrás de un proxy junto a proveedores en la nube (combinación por arquitectura). | FreeToken primero; añádelo como modelo compatible con OpenAI. |
+| [Codex CLI](codex.md) | Su soporte de la API Responses permite apuntar agentes que la usan a un modelo local (combinación por arquitectura; [DATO NO VERIFICADO: compatibilidad completa con Codex]). | Configura un proveedor personalizado con la URL base del servidor. |
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.2.2 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/FlashML-org/FreeToken/blob/main/README.md) · [2](https://github.com/FlashML-org/FreeToken/blob/main/docs/quickstart.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | Modelos locales documentados. Las afirmaciones sobre modelos enormes y velocidad pertenecen al autor y no demuestran que funcionen en cualquier PC |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API remota; pesos, memoria, disco y aceleradores son recursos propios |
 | Equipo | Preparación según la ruta elegida. Python y uv; acelerador compatible; pesos y espacio según modelo |
-
-Las afirmaciones sobre modelos enormes y velocidad pertenecen al autor y no demuestran que funcionen en cualquier PC
-
-## Qué puedes hacer con él
-
-Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.
-
-## Por qué destaca
-
-Usos propuestos: Experimentar con inferencia de modelos MoE; Evaluar un backend de aceleración local.
-
-## Cómo funciona
 
 Las afirmaciones sobre modelos enormes y velocidad pertenecen al autor y no demuestran que funcionen en cualquier PC
 

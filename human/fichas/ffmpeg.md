@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+FFmpeg, conjunto de librerías y herramientas para procesar contenido multimedia. Licencia mayoritariamente LGPL con componentes opcionales GPL (GitHub muestra NOASSERTION). Es infraestructura fundamental (~67k estrellas en el espejo de GitHub).
+
+## ¿Qué hace?
+
+Convierte, corta, filtra, codifica, decodifica y transmite audio, vídeo y subtítulos. Lo forman libavcodec, libavformat, libavfilter, libavdevice, libswresample, libswscale y libavutil, y las herramientas `ffmpeg`, `ffplay` y `ffprobe`. Casi todas las herramientas de vídeo y audio con IA dependen de él.
+
+## ¿Cómo lo hace?
+
+Se instala con paquetes del sistema o binarios precompilados, o se compila con `./configure` eligiendo códecs. Los parches se envían al Forgejo del proyecto (code.ffmpeg.org) o a la lista ffmpeg-devel, no por pull requests de GitHub.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisper](whisper.md) | Whisper requiere FFmpeg para leer audio. | Instala FFmpeg antes de Whisper. |
+| [yt-dlp](yt-dlp.md) | yt-dlp usa FFmpeg para unir y convertir formatos. | Instala FFmpeg en el PATH. |
+| [MoviePy](moviepy.md) | MoviePy usa FFmpeg para leer y escribir vídeo. | Se instala con imageio-ffmpeg o usa el del sistema. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (52). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ACE-Step-1.5](ace-step-1-5.md) · [AI-Youtube-Shorts-Generator](ai-youtube-shorts-generator.md) · [Arcads AI Video Skill Pack](arcads-claude-code.md) · [Audacity](audacity.md) · [AudioCraft](audiocraft.md) · [Concat](concat.md) · [CosyVoice](cosyvoice.md) · [Cypress](cypress.md) · [DaVinci Resolve MCP](davinci-resolve-mcp.md) · [Demucs](demucs.md) · [earshot](earshot.md) · [edge-tts](edge-tts.md) · [F5-TTS](f5-tts.md) · [FaceFusion](facefusion.md) · [Fish Speech](fish-speech.md) · [gallery-dl](gallery-dl.md) · [Godot Engine](godot.md) · [GPT-SoVITS](gpt-sovits.md) · [HandBrake](handbrake.md) · [IndexTTS](index-tts.md) · [Jellyfin](jellyfin.md) · [Kdenlive](kdenlive.md) · [Ladybird](ladybird.md) · [lemo-opuscar](lemo-opuscar.md) · [LosslessCut](lossless-cut.md) · [LTX-2](ltx-2.md) · [Manim (ManimGL)](manim.md) · [manim](manim-community.md) · [mediabunny](mediabunny.md) · [Motion Canvas](motion-canvas.md) · [motionmaxxing](motionmaxxing.md) · [OpenMontage](openmontage.md) · [OpenRV](openrv.md) · [pencil](pencil.md) · [pyannote.audio](pyannote-audio.md) · [rea-video](rea-video.md) · [Revideo](revideo.md) · [rnnoise](rnnoise.md) · [rubberband](rubberband.md) · [RVC WebUI](rvc.md) · [short-video-factory](short-video-factory.md) · [Shotcut](shotcut.md) · [spotDL](spotdl.md) · [taste-skill](taste-skill.md) · [Trigger.dev](trigger-dev.md) · [Ultimate Vocal Remover (UVR)](ultimate-vocal-remover.md) · [video-use](video-use.md) · [videofy_minimal](videofy-minimal.md) · [VideoLingo](videolingo.md) · [VoiceStudio](omnivoice-studio.md) · [VoxCPM](voxcpm.md) · [whisper.cpp](whisper-cpp.md)
+
+**Notas:** Sin alternativas declaradas. Al distribuir binarios, revisa si incluyen componentes GPL o códecs con patentes.
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/FFmpeg/FFmpeg/blob/master/README.md) · [2](https://ffmpeg.org/documentation.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. Descarga un build para tu sistema o sigue la compilación; el repositorio GitHub es un espejo de la fuente oficial |
 | Coste | Sin pago a un modelo en la ruta básica. No usa IA ni API; codecs y componentes del build pueden tener licencias distintas |
 | Equipo | Preparación según la ruta elegida. Binario apropiado al sistema; archivo de video propio; espacio de salida |
-
-Descarga un build para tu sistema o sigue la compilación; el repositorio GitHub es un espejo de la fuente oficial
-
-## Qué puedes hacer con él
-
-Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato.
-
-## Por qué destaca
-
-Usos propuestos: Convertir un video para una plataforma; Extraer audio de una grabación propia.
-
-## Cómo funciona
 
 Descarga un build para tu sistema o sigue la compilación; el repositorio GitHub es un espejo de la fuente oficial
 
@@ -85,14 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario apropiado al sistema; archivo de video propio; espacio de salida
 - **Etiquetas:** `video` `audio` `automation` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
-| [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
 ## Enlaces
 

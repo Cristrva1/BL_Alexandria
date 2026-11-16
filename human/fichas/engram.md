@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Memoria persistente para agentes de código de Gentleman-Programming, de código abierto (MIT) y financiada por donaciones, sin funciones de pago. Muy activa (v3.7.2) y parte del ecosistema Gentle-AI.
+
+## ¿Qué hace?
+
+Da a tu agente una memoria única entre sesiones, local o en la nube, independiente del agente. Tiene 14 destinos de configuración (Claude Code, Pi, OpenCode, Gemini CLI, Codex, Antigravity, Windsurf, Qwen Code, Kiro, Cursor, VS Code Copilot, Kilo Code, Kimi Code, CommandCode) además de cualquier agente compatible con MCP. Permite compartir memoria por Git Sync y replicarla opcionalmente con Engram Cloud.
+
+## ¿Cómo lo hace?
+
+Un único binario en Go sin dependencias, con SQLite y búsqueda de texto completo FTS5, expuesto mediante CLI, API HTTP, MCP (stdio) y una TUI interactiva. Los datos se guardan en `~/.engram` (configurable con `ENGRAM_DATA_DIR`); la base SQLite local es la fuente de verdad y Git Sync exporta fragmentos comprimidos para otras máquinas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Destino de configuración soportado vía MCP. | Instala el binario y ejecuta la configuración para Claude Code. |
+| [OpenCode](opencode.md) | Destino de configuración soportado. | Igual que arriba. |
+| [Gemini CLI](gemini-cli.md) | Destino de configuración soportado. | Igual que arriba. |
+| [DeepSeek Harness (DSH)](deepseek-harness.md) | La guía oficial de DSH incluye una configuración de referencia para conectar Engram como memoria MCP vía `dsh-mcp-client`. | Instala Engram con la versión fijada en la guía de DSH y activa la overlay. |
+| [Antigravity CLI](antigravity-cli.md) | Combinación recíproca: Antigravity CLI lo enlaza como «Engram documenta una configuración para Antigravity como cliente MCP de memoria persistente. (combinación por arquitectura)». | Orden indicado desde Antigravity CLI: Instala Engram y registra su servidor MCP; comprueba que la guía aplica a la CLI. |
+
+**Notas:** Alternativas (elige una): claude-mem, agentmemory.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.7.2 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Gentleman-Programming/engram/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía |
 | Coste | Sin pago a un modelo en la ruta básica. SQLite y FTS5 no requieren LLM ni API; el agente que interpreta los recuerdos mantiene sus costes |
 | Equipo | Preparación según la ruta elegida. Binario oficial o Go; cliente MCP; directorio de memoria de prueba |
-
-MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía
-
-## Qué puedes hacer con él
-
-Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI.
-
-## Por qué destaca
-
-Usos propuestos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones.
-
-## Cómo funciona
 
 MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía
 
@@ -85,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario oficial o Go; cliente MCP; directorio de memoria de prueba
 - **Etiquetas:** `memory` `mcp` `coding-agent` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Alternativas (elige una)
 

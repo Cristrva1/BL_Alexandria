@@ -10,6 +10,39 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de gestión de redes sociales para programar, automatizar y analizar contenido, de gitroomhq. La edición autoalojada es de código abierto (AGPL-3.0) sin funciones limitadas por licencia, y existe Postiz Cloud gestionado.
+
+## ¿Qué hace?
+
+Programa publicaciones en Instagram, YouTube, Dribbble, LinkedIn, Reddit, TikTok, Facebook, Pinterest, Threads, X, Slack, Discord, Mastodon y Bluesky, con analítica y un copiloto de IA para textos, imágenes y videos. Ofrece API pública, SDK de Node.js, nodo personalizado para n8n, integración con Make.com y un servidor MCP para agentes como Claude Code, Codex o Cursor.
+
+## ¿Cómo lo hace?
+
+Monorepo en TypeScript con Next.js (React), NestJS, Temporal para flujos y Prisma con PostgreSQL por defecto. En autoalojamiento debes configurar PostgreSQL, Redis, almacenamiento y variables de entorno, y crear tus propias apps de desarrollador en cada red (la aprobación de Meta, YouTube o TikTok puede tardar semanas). Se despliega con Docker, Coolify, Railway o cualquier VPS; la IA requiere tus propias claves de OpenAI u otros proveedores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `postiz` para usar postiz-app en flujos. | postiz-app en marcha con sus credenciales; después añade la pieza `postiz` en un flujo de Activepieces. |
+| [Claude Code](claude-code.md) | Servidor MCP de Postiz para que un agente programe y gestione publicaciones. | Postiz con canales conectados; luego registra el MCP en el agente. |
+| [coolify](coolify.md) | Ruta de despliegue citada en el README. | Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque. |
+| [Humanizer](humanizer.md) | Combinación recíproca: Humanizer lo enlaza como «Revisar publicaciones antes de programarlas (combinación por arquitectura)». | Orden indicado desde Humanizer: Humaniza primero; programa después. |
+| [instagram-agent-skill](instagram-agent-skill.md) | Combinación recíproca: instagram-agent-skill lo enlaza como «Programar las publicaciones aprobadas (combinación por arquitectura)». | Orden indicado desde instagram-agent-skill: Aprueba el contenido antes de enviarlo a Postiz. |
+| [linkedin-agent-skill](linkedin-agent-skill.md) | Combinación recíproca: linkedin-agent-skill lo enlaza como «Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura)». | Orden indicado desde linkedin-agent-skill: Aprueba antes de programar. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[listmonk](listmonk.md) · [social-media-research-skills](social-media-research-skills.md) · [Stop Slop](stop-slop.md)
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.26.0 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gitroomhq/postiz-app/blob/main/README.md) · [2](https://docs.postiz.com/public-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/postiz)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelo local no documentado. MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red |
 | Coste | El coste depende del proveedor o la ruta. Cloud incluye cuotas de AI por plan; self-hosting usa claves propias y recursos; redes pueden exigir aprobaciones y permisos adicionales |
 | Equipo | Preparación según la ruta elegida. Cuenta Cloud o self-host con PostgreSQL y Redis; apps de plataforma; modelos solo para AI |
-
-MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red
-
-## Qué puedes hacer con él
-
-Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.
-
-## Por qué destaca
-
-Usos propuestos: Organizar un calendario de contenido; Evaluar generación asistida de borradores.
-
-## Cómo funciona
 
 MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red
 

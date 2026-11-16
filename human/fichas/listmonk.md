@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Gestor autoalojado de boletines y listas de correo, de código abierto (AGPLv3), creado por Kailash Nadh en 2018. Se distribuye como un único binario en Go; en noviembre de 2026 su última versión es la v7.0.0-beta.2.
+
+## ¿Qué hace?
+
+Gestiona millones de suscriptores en listas de suscripción simple o doble, segmenta con expresiones SQL, envía campañas con plantillas dinámicas (lenguaje de plantillas de Go con más de 100 funciones) y editor visual, WYSIWYG, Markdown o HTML. Incluye analítica de campañas (rebotes, enlaces más clicados), API de correos transaccionales, «messengers» por webhook para SMS, WhatsApp o notificaciones push, exportación o borrado de datos del suscriptor, SSO OIDC, roles y biblioteca de medios con almacenamiento S3.
+
+## ¿Cómo lo hace?
+
+Un binario en Go con PostgreSQL como único almacén. Se instala con Docker Compose (archivo de ejemplo en el repositorio) o descargando el binario: `./listmonk --new-config`, `--install` para preparar la base y luego `./listmonk`; la interfaz queda en el puerto 9000. Envía por colas multihilo con varios servidores SMTP y límites de tasa con ventana deslizante; según su web, una campaña de más de 7 millones de correos usó una fracción de un núcleo y 57 MB de RAM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Alta de suscriptores o envíos transaccionales desde formularios y otros sistemas usando la API de listmonk (combinación por arquitectura). | Crea un token de API con permisos acotados en listmonk y úsalo en la pieza HTTP de Activepieces. |
+| [novu](novu.md) | listmonk para boletines masivos y Novu para notificaciones de producto multicanal (combinación por arquitectura). | Independientes; separa dominios de envío. |
+| [postiz-app](postiz-app.md) | Coordinar el calendario de redes sociales con las campañas de email (combinación por arquitectura). | Independientes; pueden compartir servidor pero cada uno con su base de datos. |
+
+**Notas:** Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email masivo; elegí no listarlo como combinación.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v7.0.0-beta.2 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/knadh/listmonk/blob/master/README.md) · [2](https://listmonk.app) · [3](https://listmonk.app/docs/messengers/) · [4](https://listmonk.app/docs/apis/apis/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No incluye un servicio de entrega de correo gratuito por instalarlo; configura el proveedor y prueba con tu propio destinatario |
 | Coste | El coste depende del proveedor o la ruta. El gestor AGPL no necesita modelo; SMTP, entrega, servidor y dominio pueden costar |
 | Equipo | Preparación según la ruta elegida. Docker; PostgreSQL; SMTP de ensayo; lista ficticia |
-
-No incluye un servicio de entrega de correo gratuito por instalarlo; configura el proveedor y prueba con tu propio destinatario
-
-## Qué puedes hacer con él
-
-Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.
-
-## Por qué destaca
-
-Usos propuestos: Gestionar una newsletter propia; Evaluar segmentación de una lista de prueba.
-
-## Cómo funciona
 
 No incluye un servicio de entrega de correo gratuito por instalarlo; configura el proveedor y prueba con tu propio destinatario
 
@@ -97,13 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; PostgreSQL; SMTP de ensayo; lista ficticia
 - **Etiquetas:** `automation` `email` `go` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [mautic](mautic.md) | 11k | Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. |
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

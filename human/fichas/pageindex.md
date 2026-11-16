@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Sistema RAG «sin vectores» basado en razonamiento, de VectifyAI. La versión de código abierto es MIT (v0.7.0) y convive con productos en la nube: PageIndex Cloud, una API de búsqueda de páginas y una app de análisis de documentos.
+
+## ¿Qué hace?
+
+Sustituye el índice vectorial por un índice jerárquico en árbol de cada documento y deja que un LLM razone recorriéndolo, como haría un experto con un informe largo, sin troceado ni base vectorial. Pensado para documentos profesionales largos (financieros, legales, técnicos) donde la similitud semántica no equivale a relevancia. El SDK indexa, recupera y chatea en local con tu clave o en la nube.
+
+## ¿Cómo lo hace?
+
+SDK Python (`pip install -U pageindex`) con modo local y nube; en local usa por defecto «PageIndex Flash» para generar árboles rápido en PDF de texto y llama a un LLM (por ejemplo con `OPENAI_API_KEY`) o a Claude a través de Claude Code usando tu suscripción. Sus herramientas se integran en OpenAI Agents SDK, Claude Agent SDK u otros frameworks. La versión abierta está pensada para PDF con mucho texto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Puede usar tu suscripción de Claude a través de Claude Code, sin clave de API. | Claude Code con sesión iniciada antes de configurar PageIndex en ese modo. |
+| [OpenAI Agents SDK](openai-agents-python.md) | El README documenta añadir las herramientas de PageIndex al OpenAI Agents SDK. | Instala ambos en el mismo entorno Python. |
+| [claude-agent-sdk-python](claude-agent-sdk-python.md) | Integración documentada con el Claude Agent SDK. | Igual que arriba. |
+
+**Notas:** Alternativa (elige una): lightrag. Cada consulta implica razonamiento del LLM: más latencia y coste por pregunta que una búsqueda vectorial.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.7.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/VectifyAI/PageIndex/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes |
 | Coste | El coste depende del proveedor o la ruta. El autor documenta API propia, Cloud y una ruta Claude Code con plan del usuario; revisa límites y condiciones de autenticación de esa ruta |
 | Equipo | Preparación según la ruta elegida. Python; documento de prueba; proveedor para modo local o cuenta Cloud |
-
-Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes
-
-## Qué puedes hacer con él
-
-Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos.
-
-## Por qué destaca
-
-Usos propuestos: Consultar informes largos por su estructura; Encontrar una sección de un contrato.
-
-## Cómo funciona
 
 Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; documento de prueba; proveedor para modo local o cuenta Cloud
 - **Etiquetas:** `rag` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 

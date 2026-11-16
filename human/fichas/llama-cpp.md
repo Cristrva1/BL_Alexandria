@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Motor de inferencia de LLM y modelos de visión (VLM) en C/C++, mantenido por la organización ggml-org sobre la biblioteca de tensores ggml. Licencia MIT, desarrollo diario desde 2023 y primera versión 1.0.0 publicada en noviembre de 2026; es la base de muchas herramientas locales.
+
+## ¿Qué hace?
+
+Ejecuta modelos en formato GGUF en local o en la nube con configuración mínima: chat en terminal (`llama cli`), servidor con API compatible con OpenAI y una interfaz web integrada (`llama serve`). Descarga modelos directamente de Hugging Face con `-hf`. Sirve para probar modelos abiertos, servirlos a otras aplicaciones o integrarlos en software propio.
+
+## ¿Cómo lo hace?
+
+Implementación en C/C++ sin dependencias, con cuantización entera de 1,5 a 8 bits para reducir memoria. Optimiza Apple Silicon (NEON, Accelerate, Metal), x86 (AVX, AVX2, AVX512, AMX) y RISC-V, y tiene núcleos CUDA para NVIDIA, HIP para AMD, Vulkan y SYCL para GPU Intel; puede repartir capas entre CPU y GPU. Se instala con el script de llama.app, Docker, binarios precompilados o compilando desde el código.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Open WebUI](open-webui.md) | Interfaz de chat multiusuario conectada al servidor compatible con OpenAI de `llama serve` (combinación por arquitectura). | Arranca `llama serve` primero y registra su URL /v1 como conexión OpenAI en Open WebUI; evita choques de puerto (ambos suelen usar 8080). |
+| [llmfit](llmfit.md) | llmfit detecta tu hardware y recomienda qué modelo y cuantización caben; lista llama.cpp entre sus proveedores locales. | Ejecuta llmfit antes de descargar modelos para elegir el GGUF adecuado. |
+| [LibreChat](librechat.md) | LibreChat admite endpoints personalizados compatibles con OpenAI, como el de llama.cpp. | Servidor de llama.cpp accesible desde el contenedor de LibreChat; luego decláralo en `librechat.yaml`. |
+| [litellm](litellm.md) | Poner el servidor de llama.cpp detrás de un proxy único con claves, límites y registro de gasto (combinación por arquitectura). | llama.cpp primero; añade su endpoint como modelo OpenAI-compatible en la configuración de LiteLLM. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[local-deep-research](local-deep-research.md) · [Marker](marker.md) · [Nanobrowser](nanobrowser.md) · [OpenCursor](opencursor.md) · [PrivateGPT](private-gpt.md) · [Surya](surya.md) · [txtai](txtai.md) · [Unsloth](unsloth.md) · [whisper.cpp](whisper-cpp.md) · [Xinference](xinference.md)
+
+**Notas:** Alternativas (elige una como motor principal): ollama, llamafile, localai.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ggml-org/llama.cpp/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelos locales documentados. No todos los modelos o backends ofrecen las mismas funciones de herramientas y visión |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API remota; cómputo, memoria, disco y licencia de los pesos se revisan por separado |
 | Equipo | Preparación según la ruta elegida. Binario o compilación para tu sistema; modelo GGUF; memoria suficiente |
-
-No todos los modelos o backends ofrecen las mismas funciones de herramientas y visión
-
-## Qué puedes hacer con él
-
-Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo.
-
-## Por qué destaca
-
-Usos propuestos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo.
-
-## Cómo funciona
 
 No todos los modelos o backends ofrecen las mismas funciones de herramientas y visión
 
@@ -86,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario o compilación para tu sistema; modelo GGUF; memoria suficiente
 - **Etiquetas:** `inference` `local` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 
 ## Alternativas (elige una)
 

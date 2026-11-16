@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Sistema de memoria de IA «local primero» de código abierto (MIT) del proyecto MemPalace, distribuido en PyPI. Muy activo (v3.12.0); avisa de sitios web impostores: solo el repositorio, el paquete de PyPI y su web oficial son legítimos.
+
+## ¿Qué hace?
+
+Guarda el historial de conversaciones de forma literal (sin resumir ni parafrasear) y lo recupera con búsqueda semántica, organizado en «alas» (personas y proyectos), «salas» (temas) y «cajones» (contenido original) para acotar las búsquedas. Según su README alcanza 96,6 % R@5 en LongMemEval sin llamadas a API [DATO NO VERIFICADO: benchmark propio]. Puede funcionar como memoria privada local, como «cerebro compartido» o como cliente de un hub existente.
+
+## ¿Cómo lo hace?
+
+Paquete Python (`pip install mempalace`) con CLI y servidor MCP, y una imagen de contenedor. El backend de recuperación es intercambiable y por defecto usa ChromaDB. Publica tres skills (`npx skills add MemPalace/mempalace`) para instalación guiada, recuerdo antes de responder y delegación; la skill de instalación configura el MCP pero no lo instala por sí sola. Nada sale de tu máquina salvo que lo actives.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Integración con hooks de autoguardado y MCP; el README advierte que sin hooks las sesiones de Claude Code caducan a los 30 días. | Instala las skills, deja que el agente configure el MCP y conecta los hooks de autoguardado. |
+| [Chroma](chroma.md) | Backend de recuperación por defecto. | Se usa embebido; solo instala un servidor Chroma aparte si quieres compartirlo. |
+| [Codex CLI](codex.md) | Las skills y el servidor MCP sirven para otros agentes compatibles (combinación por arquitectura). | Registra el servidor MCP en la configuración de Codex. |
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.12.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/MemPalace/mempalace/blob/develop/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | Modelos locales documentados. El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor |
 | Coste | El coste depende del proveedor o la ruta. La ruta básica usa embeddings locales sin API; proveedores opcionales de embeddings pueden costar; no necesita LLM generativo para buscar |
 | Equipo | Preparación según la ruta elegida. Python o Docker; modelo de embeddings descargado; directorio de prueba |
-
-El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor
-
-## Qué puedes hacer con él
-
-Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos.
-
-## Por qué destaca
-
-Usos propuestos: Recuperar decisiones antiguas; Consultar archivos de contexto sin resúmenes destructivos.
-
-## Cómo funciona
 
 El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor
 
@@ -94,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python o Docker; modelo de embeddings descargado; directorio de prueba
 - **Etiquetas:** `memory` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [open-notebook](open-notebook.md) | 42k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
-| [odysseus](odysseus.md) | 95.6k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 
 ## Enlaces
 

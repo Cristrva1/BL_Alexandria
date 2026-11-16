@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Sistema ERP 100 % de código abierto (GPL v3) de Frappe Technologies, construido sobre el Frappe Framework. Es maduro y muy activo (serie v16 en 2026), con hospedaje gestionado opcional en Frappe Cloud.
+
+## ¿Qué hace?
+
+Cubre contabilidad (desde el registro de transacciones hasta informes financieros), gestión de pedidos e inventario, clientes y proveedores, fabricación con planificación de capacidad y subcontratación, gestión de activos y proyectos con tareas, partes de horas e incidencias. Pensado para que una empresa sustituya varias herramientas separadas por un solo sistema.
+
+## ¿Cómo lo hace?
+
+Se basa en Frappe Framework, un framework web completo en Python y JavaScript con capa de abstracción de base de datos, autenticación y API REST, y en Frappe UI (Vue) para la interfaz. Para autoalojar se usa `frappe_docker` con Docker y Docker Compose v2; el entorno rápido es solo de evaluación y no admite apps personalizadas, por lo que para producción se sigue la guía completa. Frappe Cloud gestiona instalación, actualizaciones y copias.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Crear y consultar documentos de ERPNext (clientes, pedidos, facturas) desde flujos con la pieza HTTP contra su API REST. (combinación por arquitectura) | ERPNext primero con un usuario y claves de API; después el flujo en Activepieces. |
+| [metabase](metabase.md) | Análisis y dashboards conectando a la base de datos de ERPNext con un usuario de solo lectura (combinación por arquitectura). | Crea un usuario de lectura en la base de datos y conecta Metabase a ella o a una réplica. |
+| [paperless-ngx](paperless-ngx.md) | Archivar y hacer OCR de facturas y documentos escaneados que luego se registran en el ERP (combinación por arquitectura). | Independientes; define qué sistema es el maestro de cada documento para no duplicar. |
+
+**Notas:** Alternativa (elige una): odoo.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v16.55.0 (2026-11-12) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/frappe/erpnext/blob/develop/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias |
 | Coste | El coste depende del proveedor o la ruta. El ERP abierto no necesita LLM; hosting, soporte, implementación y servicios externos se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Docker; servicios Frappe; datos de negocio ficticios; permisos de prueba |
-
-pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias
-
-## Qué puedes hacer con él
-
-ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura.
-
-## Por qué destaca
-
-Usos propuestos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra.
-
-## Cómo funciona
 
 pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias
 
@@ -96,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; servicios Frappe; datos de negocio ficticios; permisos de prueba
 - **Etiquetas:** `crm` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 
 ## Alternativas (elige una)
 
