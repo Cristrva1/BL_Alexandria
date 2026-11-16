@@ -5,6 +5,9 @@ Una combinación A→B debe ser recíproca (B también enlaza a A), salvo en dos
 - **hub**: B recibe enlaces de al menos ``HUB_THRESHOLD`` repos. Es más de lo que cabe en una
   lista de ``MAX_COMBOS`` combinaciones, así que B no puede corresponder a todos.
 - **saturado**: B ya tiene ``MAX_COMBOS`` combinaciones y no admite más.
+- **exento**: A o B es una alta ligera (``nivel: "ligero"`` en ``INDICE_IA.json``). Sus
+  combinaciones son opcionales (0 a ``MAX_COMBOS``) y no obligan a corresponder, aunque sus ids
+  deben existir.
 
 Los enlaces entrantes que el repo no corresponde se muestran como «Usado por» en la ficha y en
 la web, de modo que la relación se ve desde los dos lados sin inventar una integración.
@@ -52,16 +55,19 @@ def used_by(combos: Mapping[str, list[str]]) -> dict[str, list[str]]:
     return result
 
 
-def classify(combos: Mapping[str, list[str]]) -> dict[str, list[tuple[str, str]]]:
-    """Clasifica cada enlace entre repos descritos: reciprocal / hub / saturated / violation."""
+def classify(combos: Mapping[str, list[str]], exempt: Iterable[str] = ()) -> dict[str, list[tuple[str, str]]]:
+    """Clasifica cada enlace entre repos descritos: reciprocal / hub / saturated / exempt / violation."""
     hub_set = hubs(combos)
-    out: dict[str, list[tuple[str, str]]] = {"reciprocal": [], "hub": [], "saturated": [], "violation": []}
+    free = set(exempt)
+    out: dict[str, list[tuple[str, str]]] = {"reciprocal": [], "hub": [], "saturated": [], "exempt": [], "violation": []}
     for source, targets in combos.items():
         for target in targets:
             if target not in combos:
                 continue
             if source in combos[target]:
                 out["reciprocal"].append((source, target))
+            elif source in free or target in free:
+                out["exempt"].append((source, target))
             elif target in hub_set:
                 out["hub"].append((source, target))
             elif len(combos[target]) >= MAX_COMBOS:

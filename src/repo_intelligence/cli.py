@@ -378,6 +378,107 @@ def enrich(
         console.print("Merged into INDICE files. Run `guide build` to refresh all catalogs and human guides.")
 
 
+@app.command("add")
+def add_command(
+    repo: Annotated[str | None, typer.Argument(help="owner/repo de GitHub (o id del catálogo con --sugerir-combos).")] = None,
+    categoria: Annotated[int | None, typer.Option("--categoria", help="Número de categoría técnica (INDICE_IA.json).")] = None,
+    sub: Annotated[str | None, typer.Option("--sub", help="Clave de subcategoría dentro de la categoría.")] = None,
+    tipo: Annotated[str, typer.Option("--tipo", help="app, library, framework, server, engine, model, mcp, skill, plugin, reference, agent, template.")] = "app",
+    rid: Annotated[str | None, typer.Option("--id", help="Id del catálogo (por defecto, el nombre del repo).")] = None,
+    nombre: Annotated[str | None, typer.Option("--nombre", help="Nombre visible.")] = None,
+    una: Annotated[str | None, typer.Option("--una", help="Descripción de una línea en español (60-175 caracteres).")] = None,
+    desde: Annotated[Path | None, typer.Option("--desde", help="Lote JSON o YAML con varios repos y sus 4 secciones.")] = None,
+    ligero: Annotated[bool, typer.Option("--ligero", help="Alta ligera: combina_con opcional (0-6) y exenta de simetría.")] = False,
+    force: Annotated[bool, typer.Option("--force", help="Permite reincorporar un repo de data/retired.json.")] = False,
+    sugerir_combos: Annotated[bool, typer.Option("--sugerir-combos", help="Muestra combinaciones sugeridas (no escribe).")] = False,
+    aplicar_combos: Annotated[bool, typer.Option("--aplicar-combos", help="Escribe las sugeridas y completa la reciprocidad (máx. 6).")] = False,
+    simular: Annotated[bool, typer.Option("--simular", help="Valida y muestra el resultado sin escribir.")] = False,
+    construir: Annotated[bool, typer.Option("--construir", help="Tras el alta, regenera guías, menú portable, web/ y docs/.")] = False,
+) -> None:
+    """Da de alta repos en el catálogo (o sugiere combinaciones para uno existente).
+
+    Ejemplos:
+      repo-intelligence add owner/repo --categoria 16 --sub deteccion --ligero
+      repo-intelligence add --desde curation/altas/lote.json --construir
+      repo-intelligence add zeek --sugerir-combos [--aplicar-combos]
+    """
+    import json as _json
+
+    from repo_intelligence.curate import add as add_mod
+
+    paths = ProjectPaths.load()
+    root = paths.project_root
+    compact = _json.loads((root / "INDICE_IA.json").read_text(encoding="utf8"))
+    existing = {r["id"]: r for r in compact["repos"] if not r.get("alias_of")}
+    by_gh = {(r.get("gh") or "").lower(): r["id"] for r in existing.values()}
+
+    def show_suggestions(target: str) -> list[dict]:
+        detail = _json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf8"))["repos"]
+        compact_now = _json.loads((root / "INDICE_IA.json").read_text(encoding="utf8"))
+        picks = add_mod.suggest_combos(target, compact_now, detail)
+        table = Table(title=f"Combinaciones sugeridas para {target}")
+        table.add_column("id")
+        table.add_column("puntos")
+        table.add_column("razón")
+        for p in picks:
+            table.add_row(p["id"], f"{p['puntos']:g}", p["razon"])
+        console.print(table)
+        return picks
+
+    if repo and desde is None and (repo in existing or repo.lower() in by_gh):
+        target = repo if repo in existing else by_gh[repo.lower()]
+        if not (sugerir_combos or aplicar_combos):
+            raise typer.BadParameter(f"{repo} ya está en el catálogo como «{target}». Usa --sugerir-combos para ver combinaciones.")
+        picks = show_suggestions(target)
+        if aplicar_combos and not simular:
+            console.print(add_mod.apply_suggested(root, target, picks))
+        return
+
+    if desde is not None:
+        batch = add_mod.load_batch(desde)
+    elif repo:
+        if categoria is None or not sub:
+            raise typer.BadParameter("Indica --categoria y --sub (o usa --desde lote.json).")
+        meta = add_mod.gh_api(f"repos/{repo}")
+        spec = add_mod.default_spec(repo, meta, cat=categoria, sub=sub, kind=tipo, rid=rid, name=nombre, one=una)
+        spec["ligero"] = True if spec.get("borrador") else ligero
+        batch = {"lote": f"manual-{add_mod.today()}-{spec['id']}", "repos": [spec]}
+    else:
+        raise typer.BadParameter("Indica owner/repo o --desde lote.json.")
+
+    try:
+        result = add_mod.run_add(root, batch, force=force, ligero=ligero, simulate=simular)
+    except add_mod.AddError as error:
+        console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    table = Table(title="Altas" + (" (simulación)" if simular else ""))
+    for col in ("id", "repo", "★", "licencia", "último push", "nivel"):
+        table.add_column(col)
+    for a in result.added:
+        table.add_row(a["id"], a["full_name"], str(a["stars"]), str(a["license"]), a["pushed_at"],
+                      a["nivel"] + (" · BORRADOR" if a["borrador"] else ""))
+    console.print(table)
+    for s in result.skipped:
+        console.print(f"[yellow]Omitido[/yellow] {s['gh']}: {s['motivo']}")
+    for w in result.warnings:
+        console.print(f"[yellow]Aviso[/yellow] {w}")
+    if result.new_subs:
+        console.print(f"Subcategorías nuevas: {', '.join(result.new_subs)}")
+    if result.reciprocal:
+        console.print(f"Recíprocas añadidas en {len(result.reciprocal)} repos: " + ", ".join(sorted(result.reciprocal)))
+    if any(a["borrador"] for a in result.added):
+        console.print("[yellow]Hay entradas en borrador (PENDIENTE). Completa sus textos antes de publicar: los tests lo exigen.[/yellow]")
+    if sugerir_combos:
+        for a in result.added:
+            show_suggestions(a["id"])
+    if construir and not simular and result.added:
+        render_all(root)
+        export_menu(root, root / "menu_portable")
+        build_site(root, root / "web")
+        build_site(root, root / "docs")
+        console.print("Regenerados: guías, menu_portable/, web/ y docs/. Ejecuta `uv run pytest -q`.")
+
+
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 

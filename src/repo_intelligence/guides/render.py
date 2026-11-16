@@ -397,7 +397,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
 
 
 def has_four_sections(repo: dict[str, Any]) -> bool:
-    return all((repo.get(field) or "").strip() for field in ("que_es", "que_hace", "como_lo_hace")) and bool(repo.get("combina_con"))
+    """Ficha curada en 4 secciones; las altas ligeras pueden no declarar combinaciones."""
+    texts = all((repo.get(field) or "").strip() for field in ("que_es", "que_hace", "como_lo_hace"))
+    return texts and (bool(repo.get("combina_con")) or repo.get("nivel") == "ligero")
 
 
 def _used_by(cat: Catalog) -> dict[str, list[str]]:

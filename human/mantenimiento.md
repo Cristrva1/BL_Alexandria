@@ -4,6 +4,22 @@
 
 ## Incorporar un repo
 
+La vía recomendada es `uv run repo-intelligence add`. Lee con `gh api` estrellas, licencia, último push, archivado, temas, web, rama por defecto, id numérico, README y árbol raíz; rechaza repos archivados, privados o ya catalogados (por id numérico, `owner/repo`, URL o id) y los retirados salvo `--force`. Escribe `INDICE_IA.json`, `INDICE_IA.detalle.json`, el lote de 4 secciones (`curation/descripciones-4s/48-altas-<lote>.json`), la especificación (`curation/altas/<lote>.json`) y el informe (`reports/altas/<lote>.json`). No instala ni ejecuta el proyecto.
+
+```powershell
+uv run repo-intelligence add owner/repo --categoria 16 --sub defensa [--ligero] [--simular]
+uv run repo-intelligence add --desde curation/altas/mi-lote.json [--ligero] [--construir]
+uv run repo-intelligence add <id> --sugerir-combos [--aplicar-combos]
+```
+
+- Un alta individual sin lote deja los textos como `PENDIENTE`: complétalos antes de publicar (las pruebas rechazan borradores).
+- El lote (JSON o YAML) lleva por repo `gh`, `id`, `cat`, `sub`, `kind`, `one`, `how`, 2 `examples`, `try` = [acción, resultado], `que_es`, `que_hace`, `como_lo_hace`, `combina_con` y `fuentes`; opcionalmente `cmd`, `ai`, `models`, `caveat`, `alt` y `ligero`. A nivel de lote admite `alt_groups` y `subcategorias_nuevas`.
+- Completo (por defecto): 3 a 6 combinaciones; la recíproca se añade sola en el destino si tiene hueco (máximo 6) y no es un hub. Ligero (`--ligero` o `"ligero": true`): 0 a 6 combinaciones, exento de la simetría; los ids que declare deben existir y sigue apareciendo en «Usado por».
+- `--sugerir-combos` propone combinaciones a partir de lo que combinan sus alternativas, su área práctica, los hubs de su categoría y su categoría; `--aplicar-combos` las escribe con reciprocidad. Revisa los motivos: son sugerencias.
+- `--construir` regenera guías, menú portable, `web/` y `docs/`. Después ejecuta `uv run pytest -q`.
+
+Pasos editoriales que el comando no sustituye:
+
 1. Revisa el README original y la documentación de instalación, autenticación y precios que enlaza.
 2. Añade o corrige la entrada en los dos índices canónicos. Conserva un id estable aunque cambie el propietario en GitHub.
 3. Escribe qué resultado produce, cuándo usarlo y cuál es su alternativa. Ubícalo en una categoría y subcategoría existentes antes de crear otra.
