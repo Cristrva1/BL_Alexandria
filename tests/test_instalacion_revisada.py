@@ -55,3 +55,10 @@ def test_verified_licences_replace_noassertion_and_reach_web():
         assert web[rid]["licencia_verificada"] == lv, rid
         ficha = (ROOT / "human" / "fichas" / f"{rid}.md").read_text(encoding="utf8")
         assert "**Licencia revisada el" in ficha, rid
+
+
+def test_web_app_shows_reviewed_licence():
+    app = (ROOT / "src/repo_intelligence/web/assets/app.js").read_text(encoding="utf8")
+    assert "item.licencia_verificada" in app and "Licencia revisada el" in app
+    for out in ("web", "docs"):
+        assert "Licencia revisada el" in (ROOT / out / "app.js").read_text(encoding="utf8")
