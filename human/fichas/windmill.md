@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma «code-first» autoalojable para flujos de trabajo, apps internas y agentes de IA, de Windmill Labs. El código es abierto bajo AGPLv3 y la empresa vende instancias dedicadas, soporte y licencias comerciales; publica versiones casi a diario.
+
+## ¿Qué hace?
+
+Convierte scripts en Python, TypeScript, Go, Bash, SQL, GraphQL, PowerShell, Rust y otros lenguajes en formularios, endpoints HTTP, comandos de CLI y tareas cron, y los compone en flujos, pipelines de datos, agentes o apps React y Svelte. Los equipos de negocio construyen con IA sobre la misma plataforma con revisión, promoción entre entornos y roles. Se presenta como alternativa autoalojada a Retool, Lovable o n8n.
+
+## ¿Cómo lo hace?
+
+Backend en Rust con servidores de API sin estado y workers que toman trabajos de una cola en PostgreSQL; frontend en Svelte 5; aislamiento con nsjail y espacios de nombres de procesos. Los runtimes son Bun para TypeScript, python3 con uv, y Go, Bash, PowerShell, Rust, C#, Java o Ansible. Cada espacio de trabajo tiene tablas Postgres gestionadas y scripts DuckDB que consultan S3, Parquet o bases externas. Se despliega con Docker Compose o Helm y se trabaja en local con la CLI `wmill`, sincronizada con Git, o mediante su servidor MCP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Integración nativa: los scripts DuckDB de Windmill consultan CSV, Parquet y JSON en S3 o Azure Blob, tablas de datos y bases externas en SQL dentro de los workers. | No requiere instalación aparte; configura el recurso de almacenamiento S3 del espacio de trabajo. |
+| [Claude Code](claude-code.md) | El servidor MCP de Windmill deja que un agente ejecute scripts, gestione recursos y vigile trabajos; `wmill init` genera un AGENTS.md y archivos de skills para trabajar en local. | Windmill en marcha y CLI `wmill` sincronizada; después registra el MCP en el agente. |
+| [Polars](polars.md) | Scripts Python de Windmill pueden usar Polars para transformar datos tabulares grandes en los workers, con dependencias resueltas por uv (combinación por arquitectura). | Declara polars como dependencia del script; vigila la memoria del worker con archivos grandes. |
+| [coolify](coolify.md) | Combinación recíproca: coolify lo enlaza como «Plantilla de servicio oficial de Coolify para Windmill». | Orden indicado desde coolify: Coolify primero; luego despliega la plantilla `windmill`. |
+
+**Notas:** Alternativas (elige una): kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.875.0 (2026-11-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/windmill-labs/windmill/blob/main/README.md) · [2](https://www.windmill.dev/docs/core_concepts/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. Ofrece MCP remoto autenticado para operar un workspace; conectar Claude Code, Codex o Antigravity no incluye el modelo ni autoriza todas las acciones del workspace |
 | Coste | El coste depende del proveedor o la ruta. La Community Edition tiene condiciones y cuotas; servidor, planes comerciales y APIs de IA son partidas distintas |
 | Equipo | Preparación según la ruta elegida. Docker Compose;  espacio para la base y los trabajadores |
-
-Ofrece MCP remoto autenticado para operar un workspace; conectar Claude Code, Codex o Antigravity no incluye el modelo ni autoriza todas las acciones del workspace
-
-## Qué puedes hacer con él
-
-Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida.
-
-## Por qué destaca
-
-Usos propuestos: Convertir un script de conciliación en una herramienta interna con formulario; Programar una consulta de datos como tarea recurrente.
-
-## Cómo funciona
 
 Ofrece MCP remoto autenticado para operar un workspace; conectar Claude Code, Codex o Antigravity no incluye el modelo ni autoriza todas las acciones del workspace
 
@@ -97,17 +112,10 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `agents` `rust` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | [Kestra](kestra.md) | 30.2k | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. |
 | [Trigger.dev](trigger-dev.md) | 16.8k | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. |
 

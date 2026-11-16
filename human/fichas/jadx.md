@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Decompilador de Dex a Java con herramientas de línea de comandos y GUI, de @skylot. Licencia Apache-2.0. Es muy maduro y popular (~52k estrellas, v1.5.6).
+
+## ¿Qué hace?
+
+Produce código Java a partir de APK, DEX, AAB, APKS, APKM, XAPK y ZIP, y también decompila bytecode Java (jar, class) y smali. Decodifica `AndroidManifest.xml` y recursos, e incluye desofuscador. La GUI permite resaltar sintaxis, saltar a declaraciones, buscar usos y texto completo, y tiene un depurador smali. El README avisa que casi nunca decompila el 100 % del código.
+
+## ¿Cómo lo hace?
+
+Es Java (requiere Java 11+); se instala desde las releases, con `brew install jadx` u otros gestores. Se usa con `jadx -d salida app.apk` o con `jadx-gui`. Admite plugins y opciones para modos de decompilación alternativos cuando falla el principal.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [frida](frida.md) | Localizar clases y métodos para escribir hooks de Frida. (combinación por arquitectura) | Analiza en JADX y escribe el script de Frida con las firmas encontradas. |
+| [Apktool](apktool.md) | Modificar y reconstruir la app tras entenderla en JADX. (combinación por arquitectura) | Usa JADX para leer y Apktool para editar smali y recursos. |
+| [ghidra](ghidra.md) | Analizar las librerías nativas `.so` que JADX no cubre. (combinación por arquitectura) | Extrae `lib/` de la APK y ábrelas en Ghidra. |
+| [rea](rea.md) | Combinación recíproca: rea lo enlaza como «Análisis de APK mediante JADX headless». | Orden indicado desde rea: Instala JADX y un JDK completo. |
+| [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Herramienta móvil de la lista. (combinación por arquitectura)». | Orden indicado desde awesome-ai-reverse-engineering: Úsalo con un servidor MCP de Android si lo necesitas. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.5.6 (2026-07-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/skylot/jadx/blob/master/README.md) · [2](https://github.com/skylot/jadx/wiki)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. El Java reconstruido no es necesariamente el código original ni compila de nuevo sin cambios |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelo ni API; equipo y herramientas son propios |
 | Equipo | Preparación según la ruta elegida. Java y release apropiada; APK o DEX propio |
-
-El Java reconstruido no es necesariamente el código original ni compila de nuevo sin cambios
-
-## Qué puedes hacer con él
-
-Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una app Android propia; Documentar recursos y referencias de un APK.
-
-## Cómo funciona
 
 El Java reconstruido no es necesariamente el código original ni compila de nuevo sin cambios
 

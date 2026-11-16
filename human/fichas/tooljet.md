@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de código abierto para construir herramientas internas (paneles de administración, dashboards y apps operativas) sobre tus bases de datos, APIs y servicios SaaS, de ToolJet Solutions. La edición comunitaria tiene licencia AGPL v3; existen ToolJet Cloud y funciones de IA en la edición Enterprise.
+
+## ¿Qué hace?
+
+Ofrece un constructor visual con más de 80 componentes (tablas, gráficos, formularios, listas), una base de datos sin código integrada, apps de varias páginas con edición multijugador y más de 90 fuentes de datos. Incluye flujos de trabajo con ramas, programados o disparados por webhook, ejecución de JavaScript y Python dentro de las apps, comentarios y control de acceso granular. La generación de apps desde lenguaje natural y el constructor de consultas con IA son de la edición Enterprise.
+
+## ¿Cómo lo hace?
+
+Se prueba con un contenedor Docker (`tooljet/try:ee-lts-latest`, puerto 80) que incluye PostgreSQL en un volumen; en producción se despliega con Docker, Kubernetes o en AWS, GCP y Azure, y se recomienda la versión LTS. Los datos pasan por un proxy del servidor con cifrado AES-256-GCM y soporte de SSO. Trae un servidor MCP (en beta) y plugins para Claude Code, Codex y Grok Build que construyen apps contra los contratos reales de componentes y datos; los conectores propios se crean con la CLI `@tooljet/cli`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin y servidor MCP oficiales: el agente genera páginas, consultas y componentes de ToolJet desde un prompt y modifica apps existentes. | ToolJet en marcha; después instala el plugin o registra el MCP siguiendo la guía de ToolJet MCP (beta). |
+| [Codex CLI](codex.md) | También compatible como plugin según el README, para quien trabaja con Codex en lugar de Claude Code. | Igual que con Claude Code; usa solo un agente a la vez sobre la misma app. |
+| [activepieces](activepieces.md) | Los flujos de ToolJet aceptan disparadores por webhook y las apps pueden llamar a webhooks de Activepieces para tareas con muchas integraciones (combinación por arquitectura). | Crea primero el webhook en el sistema que recibe y protégelo con un token. |
+
+**Notas:** Alternativas (elige una): appsmith, budibase. El contenedor de prueba usa la imagen Enterprise (ee); revisa qué funciones requieren licencia.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.20.257-lts (2026-11-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ToolJet/ToolJet/blob/develop/README.md) · [2](https://docs.tooljet.com/docs/build-with-ai/mcp/overview)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma |
 | Coste | El coste depende del proveedor o la ruta. La edición y alojamiento de ToolJet tienen sus planes; el agente y los proveedores de IA se contabilizan por separado |
 | Equipo | Preparación según la ruta elegida. Instancia ToolJet de prueba;  conexión de datos ficticios;  cliente MCP si eliges esa ruta |
-
-Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma
-
-## Qué puedes hacer con él
-
-Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA.
-
-## Por qué destaca
-
-Usos propuestos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP.
-
-## Cómo funciona
 
 Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instancia ToolJet de prueba;  conexión de datos ficticios;  cliente MCP si eliges esa ruta
 - **Etiquetas:** `ui` `automation` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

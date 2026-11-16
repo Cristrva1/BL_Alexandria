@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+EGM, plugin de código abierto de Google (Apache 2.0) para asistentes de IA, que separa diseñar con contexto de revisar con ojos frescos. Muy reciente (v0.1.1).
+
+## ¿Qué hace?
+
+El «elefante» conserva el contexto del proyecto y redacta la especificación. Los revisores «pez dorado» examinan el borrador y las fuentes sin la conversación previa, para sacar a la luz supuestos implícitos y puntos ciegos. Sus comandos (`egm-brainstorm`, `egm-draft`, `egm-review`, `egm-resolve`, `egm-bootstrap`, `egm-drift`) sirven para especificaciones de software y, con `/egm-review-loop`, para otros documentos; también revisa documentos existentes contra el código vivo.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin completo en Claude Code (`claude plugin marketplace add google/elephant-goldfish-model`), Codex CLI (`codex plugin marketplace add ...`), Antigravity (`agy plugin install ...`) y las apps de escritorio de ChatGPT y Codex. Tiene guías para Claude Cowork y ChatGPT Work.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalación documentada (`egm@egm`). | Instala y abre una sesión nueva. |
+| [Codex CLI](codex.md) | Instalación documentada. | Igual que arriba. |
+| [Spec Kit](spec-kit.md) | Revisar con ojos frescos las especificaciones que genera Spec Kit (combinación por arquitectura). | Genera la especificación y pásala por `egm-review`. |
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.1.1 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google/elephant-goldfish-model/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. El repositorio de Google declara que no es un producto con soporte oficial; cada host tiene una guía propia |
 | Coste | Consumo del agente que ya utilizas. El plugin consume el agente anfitrión; no aporta un modelo ni una bolsa de créditos |
 | Equipo | Preparación según la ruta elegida. Cliente compatible;  una propuesta o documento propio para revisar |
-
-El repositorio de Google declara que no es un producto con soporte oficial; cada host tiene una guía propia
-
-## Qué puedes hacer con él
-
-Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.
-
-## Por qué destaca
-
-Usos propuestos: Documentar alternativas para una funcionalidad antes de elegir una; Revisar una especificación con un contexto de lectura renovado.
-
-## Cómo funciona
 
 El repositorio de Google declara que no es un producto con soporte oficial; cada host tiene una guía propia
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma open source (Apache-2.0) de Sim Studio para construir, desplegar y monitorizar agentes y workflows de IA con un lienzo visual. Hay versión cloud (sim.ai) y autoalojada. Es muy activa (v0.9.58) y popular (~30k estrellas), aunque sigue en versiones 0.x.
+
+## ¿Qué hace?
+
+Permite diseñar workflows y agentes conectando bloques en un lienzo, con integraciones (Slack y otras), bases de conocimiento, sandbox de ejecución, trabajos programados y chat. Incluye un servidor MCP que permite a Claude, Claude Code, Codex u otros clientes MCP gestionar espacios de trabajo y ejecutar y desplegar workflows. También admite modelos locales vía Ollama y vLLM.
+
+## ¿Cómo lo hace?
+
+Hecho con Next.js y Bun sobre PostgreSQL (Drizzle ORM) y Better Auth. El autoalojamiento requiere Node.js 20+ y Docker. `npx sim-setup` es un asistente que crea el despliegue, provisiona la base de datos, genera secretos y escribe `.env`; luego se añaden capacidades con `npx sim-setup add <capacidad>`. Hay modos de desarrollo local y Kubernetes (Helm) desde el código fuente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales; el README documenta el soporte de Ollama. | Instala Ollama y descarga los modelos antes de configurar el proveedor en Sim (ver la documentación de autoalojamiento). |
+| [vLLM](vllm.md) | Servir modelos locales de alto rendimiento; el README documenta el soporte de vLLM. | Despliega vLLM con su API compatible y configúralo como proveedor en Sim. |
+| [Claude Code](claude-code.md) | Gestionar y ejecutar workflows de Sim desde Claude Code vía su servidor MCP (`claude mcp add --transport http sim https://mcp.sim.ai/mcp`). | Ten Sim (cloud o autoalojado) operativo; añade después el servidor MCP en Claude Code. |
+| [Codex CLI](codex.md) | Mismo uso desde Codex CLI (`codex mcp add sim --url https://mcp.sim.ai/mcp`). | Sim primero; luego registra el MCP en Codex. |
+
+**Notas:** Alternativas (elige una): langflow, dify, autogpt. Combinación anterior con langfuse eliminada: no se encontró integración documentada en el README ni en la documentación revisada.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.58 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/simstudioai/sim/blob/main/README.md) · [2](https://docs.sim.ai/mcp/overview) · [3](https://docs.sim.ai/self-hosting/docker)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo |
 | Coste | El coste depende del proveedor o la ruta. Cloud y servicios adicionales tienen planes; self-hosting añade infraestructura; las llamadas a modelos se presupuestan según ruta |
 | Equipo | Preparación según la ruta elegida. Node.js 20+; Docker; proveedor o modelo local |
-
-MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo
-
-## Qué puedes hacer con él
-
-Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API.
-
-## Cómo funciona
 
 MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo
 
@@ -93,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js 20+; Docker; proveedor o modelo local
 - **Etiquetas:** `agents` `automation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 

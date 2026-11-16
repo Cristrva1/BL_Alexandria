@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección MIT de personalidades de agentes especializados («The Agency») de msitarzewski, surgida de un hilo de Reddit; uno de los repos más populares del catálogo. Sin releases; tiene app de escritorio aparte para instalarla.
+
+## ¿Qué hace?
+
+Ofrece agentes con experiencia, voz y procesos propios organizados por divisiones (ingeniería, diseño, marketing, seguridad y otras), desde especialistas en frontend hasta gestores de comunidad en Reddit o «verificadores de realidad». Cada agente define entregables y métricas.
+
+## ¿Cómo lo hace?
+
+Archivos Markdown de agentes que se copian a `~/.claude/agents/` o se instalan con `./scripts/install.sh --tool <herramienta> [--division ...]`; `convert.sh` adapta el formato a GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Codex, Hermes y otros. La app Agency Agents (macOS, Linux, Windows; también por Homebrew) instala el catálogo sin terminal.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Destino principal (`--tool claude-code`). | Instala solo las divisiones que uses para no saturar el selector de agentes. |
+| [OpenCode](opencode.md) | Destino soportado por el script. | Ojo: según el README OpenCode solo registra unos 119 agentes; instala por divisiones. |
+| [Gemini CLI](gemini-cli.md) | Destino soportado por el script. | `./scripts/install.sh --tool gemini-cli`. |
+
+**Notas:** Alternativa (elige una): wshobson-agents.
+
+Estado en GitHub: activo · último push 2026-11-09 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/msitarzewski/agency-agents/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones usan el plan del agente; herramientas externas que el perfil recomiende tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Agente compatible o app del catálogo; encargo concreto |
-
-Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada
-
-## Qué puedes hacer con él
-
-Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes.
-
-## Por qué destaca
-
-Usos propuestos: Seleccionar un perfil de frontend; Revisar un brief de marketing.
-
-## Cómo funciona
 
 Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada
 
@@ -85,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible o app del catálogo; encargo concreto
 - **Etiquetas:** `agents` `prompts` `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Marketing Skills](marketingskills.md) | 60.4k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
-| [GEO-SEO Claude](geo-seo-claude.md) | 11.7k | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 

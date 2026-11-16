@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Constructor de chatbots visual y autoalojable creado por Baptiste Arnaud. Se distribuye bajo Functional Source License 1.1 con conversión futura a Apache 2.0 (FSL-1.1-Apache-2.0), un modelo «Fair Source» con restricciones de uso competitivo; el distintivo AGPLv3 del README está desactualizado frente al archivo LICENSE.
+
+## ¿Qué hace?
+
+Permite crear chatbots avanzados con más de 34 bloques: burbujas de texto, imagen, video o audio; entradas de texto, email, teléfono, botones, fechas, archivos y pagos con Stripe; lógica condicional, redirecciones, JavaScript y pruebas A/B. Integra webhooks y peticiones HTTP, OpenAI, Google Sheets, Google Analytics, Meta Pixel, Zapier, Make.com y Chatwoot. Los bots se incrustan en web o móvil como contenedor, popup o burbuja, y los resultados se recogen en tiempo real.
+
+## ¿Cómo lo hace?
+
+Son dos aplicaciones Next.js en TypeScript: el «builder», donde se diseñan los bots, y el «viewer», donde responde el usuario. Necesita PostgreSQL y, para archivos, almacenamiento compatible con S3. La librería de incrustación es nativa, sin iframe, y los bots también se pueden ejecutar por API HTTP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [evolution-api](evolution-api.md) | Integración nativa del lado de Evolution, con gestión de disparadores, para llevar el bot a WhatsApp. | Typebot con el bot publicado primero; luego vincúlalo a la instancia de Evolution. |
+| [chatwoot](chatwoot.md) | Bloque de integración nativo que pasa la conversación a una persona en Chatwoot. | Chatwoot primero; configura el bloque con el ID de cuenta y el token. |
+| [OpenWA](openwa.md) | Plugin oficial de OpenWA para responder mensajes de WhatsApp con un bot de Typebot. | Typebot publicado y después el plugin en OpenWA. |
+| [WAHA](waha.md) | Combinación recíproca: WAHA lo enlaza como «Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura)». | Orden indicado desde WAHA: Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill. |
+
+**Notas:** Revisa la FSL antes de ofrecer Typebot como servicio a terceros.
+
+Estado en GitHub: activo · último push 2026-11-07 · última versión publicada v3.19.1 (2026-10-20) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/baptisteArno/typebot.io/blob/main/README.md) · [2](https://github.com/baptisteArno/typebot.io/blob/main/LICENSE) · [3](https://docs.typebot.io/self-hosting/get-started) · [4](https://docs.typebot.io/editor/blocks/integrations/chatwoot) · [5](https://docs.typebot.io/editor/blocks/integrations/webhook)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es fair-source con condiciones específicas; no se debe presentar toda modalidad como software sin restricciones comerciales |
 | Coste | El coste depende del proveedor o la ruta. Los bloques fijos no necesitan modelo; Cloud, canales y funciones LLM tienen costes propios; el código usa Functional Source License |
 | Equipo | Preparación según la ruta elegida. Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI |
-
-Es fair-source con condiciones específicas; no se debe presentar toda modalidad como software sin restricciones comerciales
-
-## Qué puedes hacer con él
-
-Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más.
-
-## Por qué destaca
-
-Usos propuestos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes.
-
-## Cómo funciona
 
 Es fair-source con condiciones específicas; no se debe presentar toda modalidad como software sin restricciones comerciales
 
@@ -86,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI
 - **Etiquetas:** `chatbot` `automation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
 
 ## Enlaces
 

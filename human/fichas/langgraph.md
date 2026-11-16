@@ -10,6 +10,39 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de orquestación de bajo nivel (MIT) de LangChain Inc. para construir, gestionar y desplegar agentes con estado y de larga duración. Es maduro y muy activo (1.2.22), y lo usan en producción empresas como Klarna, Replit o Elastic, según el README.
+
+## ¿Qué hace?
+
+Modela agentes y flujos como grafos con estado y ofrece ejecución duradera (los agentes sobreviven a fallos y retoman donde se quedaron), human-in-the-loop (inspeccionar y modificar el estado en cualquier punto) y memoria a corto y largo plazo. No impone prompts ni arquitectura. Para empezar más rápido, el propio README remite a Deep Agents, construido encima.
+
+## ¿Cómo lo hace?
+
+Biblioteca Python (`pip install -U langgraph`), con equivalente en JS/TS (LangGraph.js). Funciona sola o con componentes de LangChain. Para depuración, evaluación y despliegue se integra con LangSmith y LangSmith Deployment, servicios comerciales de la misma empresa.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langchain](langchain.md) | Componentes de modelos, herramientas e integraciones que se usan dentro de los nodos del grafo. | Instala langgraph y añade solo los paquetes de integración de LangChain que necesites. |
+| [Deep Agents](deepagents.md) | Harness de alto nivel construido sobre LangGraph. | Empieza con deepagents si no necesitas controlar el grafo a bajo nivel. |
+| [langfuse](langfuse.md) | Trazas y evaluación de código abierto mediante la integración oficial de Langfuse con LangChain/LangGraph. | Langfuse (cloud o autoalojado) primero; añade su callback handler a las ejecuciones. |
+| [mem0](mem0.md) | Memoria a largo plazo para agentes de LangGraph (integración documentada por Mem0). | Configura Mem0 y úsalo desde un nodo o herramienta. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (25). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[12-Factor Agents](12-factor-agents.md) · [500-AI-Agents-Projects](500-ai-agents-projects.md) · [Agent Protocol](agent-protocol.md) · [agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [Agents Towards Production](agents-towards-production.md) · [assistant-ui](assistant-ui.md) · [AutoHedge](autohedge.md) · [awesome-LangGraph](awesome-langgraph.md) · [Composio](composio.md) · [CopilotKit](copilotkit.md) · [deer-flow](deer-flow.md) · [Graphiti](graphiti.md) · [Hugging Face Agents Course](agents-course.md) · [LangGraph.js](langgraphjs.md) · [laya](laya.md) · [novu](novu.md) · [Open SWE](open-swe.md) · [OpenBot](openbot.md) · [OpenUI](openui.md) · [Opik](opik.md) · [Phoenix](phoenix.md) · [python-telegram-bot](python-telegram-bot.md) · [QuantHarness](quantharness.md) · [Temporal](temporal.md) · [TradingAgents](tradingagents.md)
+
+**Notas:** Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python, agno.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.2.22 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/langgraph/blob/main/README.md) · [2](https://langfuse.com/integrations/frameworks/langchain) · [3](https://docs.mem0.ai/integrations/langgraph)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelos locales documentados. Ollama se configura mediante la integración LangChain; no es un plugin del editor |
 | Coste | El coste depende del proveedor o la ruta. El grafo admite funciones sin LLM; los modelos, LangSmith y el alojamiento pueden costar aparte |
 | Equipo | Preparación según la ruta elegida. Python y entorno virtual; modelo solo para nodos LLM |
-
-Ollama se configura mediante la integración LangChain; no es un plugin del editor
-
-## Qué puedes hacer con él
-
-Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming.
-
-## Por qué destaca
-
-Usos propuestos: Pausar una devolución hasta su revisión; Retomar una investigación interrumpida.
-
-## Cómo funciona
 
 Ollama se configura mediante la integración LangChain; no es un plugin del editor
 
@@ -93,13 +114,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
@@ -108,6 +122,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [OpenAI Agents SDK](openai-agents-python.md) | 30.7k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
 | [Pydantic AI](pydantic-ai.md) | 21.2k | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. |
 | [Agent Development Kit (ADK)](adk-python.md) | 22.2k | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. |
+| [Agno](agno.md) | 43.2k | Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. |
 
 ## Enlaces
 

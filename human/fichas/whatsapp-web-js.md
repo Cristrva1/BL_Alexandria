@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Librería Node.js de código abierto (Apache 2.0) para interactuar con WhatsApp Web y construir una API de WhatsApp propia. Es un proyecto comunitario no oficial, activo desde 2019 y con versiones frecuentes (serie 1.34 en 2026).
+
+## ¿Qué hace?
+
+Permite enviar y recibir mensajes, enviar imágenes, audio, documentos y video, trabajar con multidispositivo, grupos, contactos y reacciones, y reaccionar a eventos del cliente web casi como un usuario. Sirve para bots de atención, notificaciones a usuarios que ya te escribieron e integraciones a medida.
+
+## ¿Cómo lo hace?
+
+Usa Puppeteer para abrir WhatsApp Web en un navegador administrado y llamar a sus funciones internas, de modo que se autentica escaneando un código QR como en un navegador normal. Requiere Node.js 18 o superior y se instala con `npm install whatsapp-web.js`; el envío de video necesita Google Chrome en lugar de Chromium. Las sesiones se guardan y restauran con estrategias de autenticación configurables.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Tu servicio con la librería reenvía cada mensaje a un webhook de Activepieces, que decide la respuesta y la devuelve por HTTP (combinación por arquitectura). | Expón un endpoint propio para enviar y apunta los eventos al webhook de Activepieces; protege ambos con autenticación. |
+| [Ollama](ollama.md) | Responder mensajes con un modelo local, sin coste por token ni datos enviados a terceros (combinación por arquitectura). | Ollama primero con el modelo descargado; llama a su API REST desde el manejador de mensajes. |
+| [chatwoot](chatwoot.md) | Llevar las conversaciones a una bandeja humana usando la API de Chatwoot (combinación por arquitectura; no hay integración nativa documentada). | Chatwoot primero; crea una bandeja de API y sincroniza los mensajes desde tu servicio. |
+
+**Notas:** Alternativas (elige una): baileys, waha, evolution-api. Es un cliente no oficial: WhatsApp puede restringir números que envían mensajes masivos o no solicitados. Cada sesión mantiene un navegador abierto, con consumo alto de memoria.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.34.8 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/wwebjs/whatsapp-web.js/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Automatiza WhatsApp Web y no es la API oficial Meta; las condiciones y estabilidad de esa sesión son independientes del código abierto |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no usa LLM; hosting y funciones AI añadidas cuestan aparte |
 | Equipo | Preparación según la ruta elegida. Node.js; Chrome o Chromium; cuenta y número propios de prueba; sesión WhatsApp Web |
-
-Automatiza WhatsApp Web y no es la API oficial Meta; las condiciones y estabilidad de esa sesión son independientes del código abierto
-
-## Qué puedes hacer con él
-
-Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un bot de atención en laboratorio; Conectar eventos WhatsApp Web a una app propia.
-
-## Cómo funciona
 
 Automatiza WhatsApp Web y no es la API oficial Meta; las condiciones y estabilidad de esa sesión son independientes del código abierto
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; Chrome o Chromium; cuenta y número propios de prueba; sesión WhatsApp Web
 - **Etiquetas:** `whatsapp` `chatbot` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
 
 ## Alternativas (elige una)
 

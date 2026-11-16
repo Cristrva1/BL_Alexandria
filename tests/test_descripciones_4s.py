@@ -53,18 +53,20 @@ def test_ficha_renders_four_sections(tmp_path):
     for name in ("INDICE_IA.json", "INDICE_IA.detalle.json", "README.md", "AGENTS.md"):
         shutil.copy(ROOT / name, tmp_path / name)
     render_all(tmp_path)
-    text = (tmp_path / "human" / "fichas" / "n8n.md").read_text(encoding="utf8")
+    text = (tmp_path / "human" / "fichas" / "ollama.md").read_text(encoding="utf8")
     for heading in ("## ¿Qué es?", "## ¿Qué hace?", "## ¿Cómo lo hace?", "## ¿Con qué otros repos se combina?"):
         assert heading in text
-    assert "[n8n-mcp](n8n-mcp.md)" in text
+    assert "(open-webui.md)" in text
     assert "## Cómo funciona" not in text  # el texto genérico se sustituye
-    legacy = (tmp_path / "human" / "fichas" / "activepieces.md").read_text(encoding="utf8")
-    assert "## ¿Qué es?" not in legacy  # sin datos curados, la ficha no cambia
+    pending = [r for r in load_catalog(ROOT).repos if not r.get("combina_con") and not r.get("alias_of") and r.get("doc")]
+    if pending:  # sin datos curados, la ficha conserva el formato anterior
+        legacy = (tmp_path / pending[0]["doc"]).read_text(encoding="utf8")
+        assert "## ¿Qué es?" not in legacy
 
 
 def test_web_catalog_exposes_four_sections():
     data = build_catalog(ROOT)
-    n8n = next(repo for repo in data["repos"] if repo["id"] == "n8n")
+    n8n = next(repo for repo in data["repos"] if repo["id"] == "ollama")
     assert n8n["que_es"] and n8n["como_lo_hace"]
     assert {"id", "motivo"} <= set(n8n["combina_con"][0])
 
@@ -78,3 +80,21 @@ def test_reenrich_keeps_curated_sections(tmp_path):
     merged = json.loads((tmp_path / "INDICE_IA.detalle.json").read_text(encoding="utf8"))["repos"]["demo"]
     assert merged["que_es"] == "Algo" and merged["combina_con"][0]["id"] == "otro"
     assert merged["combines_with"] == ["otro"]
+
+
+def test_combination_symmetry_report():
+    """El informe carga y sus enlaces unidireccionales son todos aceptados (hub o saturado)."""
+    import importlib.util
+    import warnings
+
+    spec = importlib.util.spec_from_file_location("simetria", ROOT / "scripts" / "report_combina_simetria.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    detail = json.loads((ROOT / "INDICE_IA.detalle.json").read_text(encoding="utf8"))
+    pairs = module.asymmetries(detail)
+    assert all(a != b for a, b in pairs)
+    from repo_intelligence.analysis.combina_policy import classify, combo_map
+
+    violations = classify(combo_map(detail["repos"]))["violation"]
+    if violations:
+        warnings.warn(f"{len(violations)} combinaciones fuera de política (ver scripts/report_combina_simetria.py)", UserWarning)

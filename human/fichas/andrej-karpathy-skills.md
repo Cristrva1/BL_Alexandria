@@ -10,6 +10,34 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Un solo archivo `CLAUDE.md`, con plugin de Claude Code, basado en las observaciones de Andrej Karpathy sobre los fallos de los LLM al programar. Lo mantiene multica-ai, cuyo autor promociona su plataforma Multica. No declara licencia y su último cambio es de abril de 2026.
+
+## ¿Qué hace?
+
+Aplica cuatro principios: pensar antes de programar (no asumir, aclarar dudas, mostrar alternativas), simplicidad primero (sin abstracciones infladas), cambios quirúrgicos (no tocar código ajeno a la tarea) y ejecución orientada a objetivos con criterios verificables y tests primero.
+
+## ¿Cómo lo hace?
+
+Se copia el `CLAUDE.md` al proyecto o se instala como plugin (`/plugin marketplace add forrestchang/andrej-karpathy-skills`, ruta que todavía usa el README tras el cambio de propietario).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Formato CLAUDE.md y plugin. | Copia el archivo o instala el plugin. |
+| [Codex CLI](codex.md) | Los mismos principios pueden ir en un AGENTS.md (combinación por arquitectura). | Adapta el texto al AGENTS.md del proyecto. |
+| [multica](multica.md) | Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura). | Independientes. |
+| [claude-token-efficient](claude-token-efficient.md) | Combinación recíproca: claude-token-efficient lo enlaza como «Principios compatibles contra la sobreingeniería (combinación por arquitectura)». | Orden indicado desde claude-token-efficient: Fusiona ambos en un único CLAUDE.md breve para no duplicar el coste de entrada. |
+| [Ponytail](ponytail.md) | Combinación recíproca: Ponytail lo enlaza como «Principios compatibles de simplicidad y cambios mínimos (combinación por arquitectura)». | Orden indicado desde Ponytail: Evita instrucciones contradictorias si usas ambos. |
+
+**Notas:** Sin licencia declarada. Se quitaron awesome-claude-code y context-engineering porque no hay integración.
+
+Estado en GitHub: activo · último push 2026-04-20 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad |
 | Coste | Consumo del agente que ya utilizas. El archivo de instrucciones consume el agente; no añade un proveedor de modelos |
 | Equipo | Preparación según la ruta elegida. Claude Code;  revisar las instrucciones que ya existen en el proyecto |
-
-Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad
-
-## Qué puedes hacer con él
-
-Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy.
-
-## Por qué destaca
-
-Usos propuestos: Evitar una refactorización amplia para corregir un fallo pequeño; Hacer explícitas dudas y criterios de éxito antes de programar.
-
-## Cómo funciona
 
 Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad
 
@@ -94,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code;  revisar las instrucciones que ya existen en el proyecto
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Awesome Claude Code](awesome-claude-code.md) | 58k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
-| [Context-Engineering](context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. |
 
 ## Enlaces
 

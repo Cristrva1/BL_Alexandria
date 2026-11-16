@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Herramienta SEO de código abierto (MIT), alternativa a Semrush y Ahrefs, de every-app. Es reciente y activa (v0.1.x en 2026), con versión alojada de pago opcional.
+
+## ¿Qué hace?
+
+Cubre investigación de palabras clave, seguimiento de posiciones, análisis de competidores, backlinks, auditorías de sitio y visibilidad en IA. Funciona por consumo: usas tu propia clave de DataForSEO y pagas solo lo que consultas. Expone un servidor MCP y skills para que agentes como Claude Code, OpenClaw o Hermes usen tus datos SEO; también se integra con ChatGPT y Codex.
+
+## ¿Cómo lo hace?
+
+Aplicación en TypeScript con dos vías de autoalojamiento: Docker con imagen precompilada (compatible con Coolify, Portainer y Dokploy) o un despliegue de un comando en tu cuenta de Cloudflare (funciona en el plan gratuito), opcionalmente detrás de Cloudflare Access. Usa cuentas con email y contraseña: el primer visitante es administrador y el resto entra por invitación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Servidor MCP y skills oficiales para que el agente investigue palabras clave o audite sitios con tus datos. | OpenSEO desplegado con tu clave de DataForSEO; luego conecta el MCP según su guía. |
+| [coolify](coolify.md) | El README cita Coolify entre las plataformas Compose compatibles con su imagen Docker. | Coolify en el servidor; crea el servicio desde el Compose de OpenSEO y protege el acceso. |
+| [GEO-SEO Claude](geo-seo-claude.md) | Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura). | Después de conectar el MCP de OpenSEO al agente. |
+| [claude-seo](claude-seo.md) | Combinación recíproca: claude-seo lo enlaza como «Datos de palabras clave y posiciones vía MCP (combinación por arquitectura)». | Orden indicado desde claude-seo: Conecta el MCP de OpenSEO al mismo agente. |
+| [cloud-mail](cloud-mail.md) | Combinación recíproca: cloud-mail lo enlaza como «Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura)». | Orden indicado desde cloud-mail: Configura el dominio en Cloudflare primero; separa subdominios por servicio. |
+| [Marketing Skills](marketingskills.md) | Combinación recíproca: Marketing Skills lo enlaza como «Datos SEO vía MCP para las skills de SEO (combinación por arquitectura)». | Orden indicado desde Marketing Skills: Conecta el MCP de OpenSEO antes de usar las skills de SEO. |
+
+**Notas:** Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.1.27 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/every-app/open-seo/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. El plugin Codex agrupa MCP y skills; MCP HTTP también conecta otros clientes; el agente mantiene sus propios límites |
 | Coste | El coste depende del proveedor o la ruta. No exige modelo propio para consultar datos; DataForSEO cobra por uso y hosting o plan alojado tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Cuenta o despliegue; DataForSEO; cliente MCP opcional; dominio propio de prueba |
-
-El plugin Codex agrupa MCP y skills; MCP HTTP también conecta otros clientes; el agente mantiene sus propios límites
-
-## Qué puedes hacer con él
-
-Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.
-
-## Por qué destaca
-
-Usos propuestos: Investigar palabras clave de una web propia; Preparar una revisión técnica SEO.
-
-## Cómo funciona
 
 El plugin Codex agrupa MCP y skills; MCP HTTP también conecta otros clientes; el agente mantiene sus propios límites
 

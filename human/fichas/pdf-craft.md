@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Biblioteca Python de código abierto (MIT) de oomol-lab para libros escaneados, artículos y documentos técnicos. Activa (v2.6.7), con servicio oficial en línea.
+
+## ¿Qué hace?
+
+Convierte PDF escaneados en Markdown editable o EPUB con metadatos e índice, y traduce PDF y EPUB durante la conversión (modos solo traducción o bilingüe). Expone API Python y archivos de extracción reutilizables para renderizar o traducir después. Los resultados dependen de la calidad del escaneo y del modelo OCR.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11–3.13 y Poppler, y un servicio de OCR compatible con DeepSeek OCR: remoto (con URL y credenciales, sin CUDA) o local (GPU NVIDIA con CUDA, VRAM suficiente y archivos del modelo). La traducción y el análisis del índice usan un LLM, que si es remoto recibe el contenido.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Servir en local un modelo de OCR compatible con DeepSeek OCR (combinación por arquitectura). | Servidor con GPU y el modelo cargado antes de configurar pdf-craft. |
+| [Pandoc](pandoc.md) | Convertir el Markdown resultante a DOCX o LaTeX (combinación por arquitectura). | Encadénalos en un script. |
+| [Ollama](ollama.md) | LLM local para traducción y análisis del índice sin enviar el texto fuera (combinación por arquitectura). | Ollama primero; configura su endpoint compatible con OpenAI. |
+
+**Notas:** Alternativa (elige una): marker. Se retiró unlimited-ocr porque no está documentado como backend.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.6.7 (2026-10-28) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/oomol-lab/pdf-craft/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador |
 | Coste | El coste depende del proveedor o la ruta. Ofrece servicio remoto y extra local; proveedores, hardware y pesos tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Python; extra local y modelos para ruta local; proveedor OCR o servicio para ruta remota |
-
-PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador
-
-## Qué puedes hacer con él
-
-Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
-
-## Por qué destaca
-
-Usos propuestos: Crear una versión editable de un escaneo propio; Preparar un EPUB desde material autorizado.
-
-## Cómo funciona
 
 PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; extra local y modelos para ruta local; proveedor OCR o servicio para ruta remota
 - **Etiquetas:** `ocr` `library` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Unlimited-OCR](unlimited-ocr.md) | 31.2k | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
 
 ## Alternativas (elige una)
 

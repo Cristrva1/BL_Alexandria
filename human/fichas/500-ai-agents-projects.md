@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección (MIT) de @ashishpatel26 con más de 500 casos de uso y proyectos de agentes de IA, organizados por industria y framework. Es activa (último push en noviembre de 2026) y popular (~40k estrellas).
+
+## ¿Qué hace?
+
+Recopila casos de uso por sector (salud, finanzas, educación y otros) con enlaces a implementaciones externas. Incluye una carpeta `agents/` con agentes autocontenidos ejecutables. Cubre los frameworks principales: CrewAI, Agno, LangGraph y AutoGen son los más citados. Sirve para explorar ideas y comparar enfoques, no como base de producción.
+
+## ¿Cómo lo hace?
+
+Cada agente de `agents/` tiene su propio `requirements.txt` y `.env.example`: se entra en la carpeta, se instala y se ejecuta, sin configuración de monorepo. Los enlaces externos apuntan a repositorios de terceros de calidad y mantenimiento variables.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [crewAI](crewai.md) | Framework más citado en la colección. | Instálalo en el entorno del agente que lo use. |
+| [LangGraph](langgraph.md) | Otro framework recurrente en los ejemplos. | Instálalo en el entorno del agente correspondiente. |
+| [Agno](agno.md) | Framework usado en muchos de los agentes listados. | Instálalo según el requirements del ejemplo. |
+
+**Notas:** Sin alternativas declaradas. crewai, langgraph y agno son alternativas entre sí: elige uno por proyecto.
+
+Estado en GitHub: activo · último push 2026-11-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio |
 | Coste | El coste depende del proveedor o la ruta. La lista es libre; ejecutar cada implementación tiene costes y requisitos propios |
 | Equipo | Preparación según la ruta elegida. Navegador; dependencias y proveedor de un agente elegido |
-
-Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio
-
-## Qué puedes hacer con él
-
-Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API.
-
-## Cómo funciona
 
 Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio
 

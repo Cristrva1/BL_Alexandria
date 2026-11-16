@@ -31,8 +31,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un flujo con un disparador de prueba y una acción de texto
 **Qué comprobar:** El historial del flujo muestra la entrada y la salida de la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `novu`
-**Alternativas (elige una):** `n8n`
+**Combina con:** `nocodb`, `claude-code`, `litellm`
+
+## `airflow`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,data,python,docker
+
+**Qué es:** Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/apache/airflow
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/apache/airflow/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: programar un ETL diario que descarga, transforma y carga datos en un almacén; coordinar entrenamientos y despliegues de modelos con dependencias y reintentos
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Levanta un entorno local de pruebas siguiendo la guía oficial y ejecuta un DAG de ejemplo con dos tareas dependientes.
+**Qué comprobar:** El DAG aparece en la interfaz, ambas tareas terminan en verde y puedes leer sus logs.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `polars`, `grafana`, `mlflow`, `claude-code`, `dbt`
+**Alternativas (elige una):** `prefect`, `dagster`, `kestra`
 
 ## `appsmith`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ui,automation,typescript,docker
@@ -62,38 +92,39 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade una tabla a una página y asóciala a una consulta de datos ficticios
 **Qué comprobar:** La tabla se actualiza al ejecutar la consulta y muestra los registros esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `supabase`, `activepieces`, `metabase`
 **Alternativas (elige una):** `tooljet`, `budibase`, `nocodb`
 
-## `awesome-n8n-templates`
-role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=automation,prompts
+## `baserow`
+role=platform · exec=hybrid · setup=easy · mcp=False · prov=— · tags=data,no-code,python,docker
 
-**Qué es:** Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.
-**Stack:** n8n;  credenciales y dependencias de la plantilla elegida
+**Qué es:** Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.
+**Stack:** Python, docker-compose.yml
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
-- Coste: El coste depende del proveedor o la ruta. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste
-- Equipo: Preparación según la ruta elegida. n8n;  credenciales y dependencias de la plantilla elegida
-**Repo:** https://github.com/enescingoz/awesome-n8n-templates
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/baserow/baserow
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+docker run -v baserow_data:/baserow/data -p 80:80 -p 443:443 baserow/baserow:2.4.3
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Importa una plantilla JSON en un flujo desactivado y revisa sus nodos
-**Qué comprobar:** El lienzo muestra los pasos y puedes identificar qué credenciales faltan
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear una base de clientes o inventario compartida sin escribir backend; publicar un portal o formulario sobre tus propias tablas en tu dominio
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca el contenedor de la documentación con un volumen de datos y crea una base con una tabla y un formulario.
+**Qué comprobar:** El formulario guarda filas en la tabla y la API REST devuelve esos registros con un token.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-mcp`, `n8n-skills`
+**Combina con:** `activepieces`, `metabase`, `coolify`
+**Alternativas (elige una):** `grist-core`, `teable`, `nocodb`
 
 ## `budibase`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,docker
@@ -123,8 +154,70 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una aplicación con un formulario y una tabla de registros
 **Qué comprobar:** Un envío del formulario aparece en la tabla de la aplicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `supabase`, `activepieces`, `ollama`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
+
+## `dagster`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,data,python
+
+**Qué es:** Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/dagster-io/dagster
+
+**Instalación** [+]:
+
+```
+uv add dagster dagster-webserver dagster-dg-cli
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles; probar pipelines de datos con tests unitarios antes de llevarlos a producción
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `uv add dagster dagster-webserver dagster-dg-cli`, define dos activos dependientes y materialízalos desde la interfaz.
+**Qué comprobar:** La interfaz muestra el grafo de activos y ambos aparecen materializados con sus metadatos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `polars`, `mlflow`, `claude-code`, `dbt`, `dlt`
+**Alternativas (elige una):** `airflow`, `prefect`, `kestra`
+
+## `grist-core`
+role=platform · exec=hybrid · setup=easy · mcp=False · prov=— · tags=data,spreadsheet,docker,python
+
+**Qué es:** Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/gristlabs/grist-core
+
+**Instalación** [+]:
+
+```
+docker run -p 8484:8484 -it gristlabs/grist
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir una hoja compartida por tablas relacionadas con permisos por fila; montar un inventario o CRM ligero en tu propio servidor
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca la imagen Docker de prueba, crea un documento con dos tablas enlazadas y una fórmula Python.
+**Qué comprobar:** La fórmula se recalcula al editar la tabla referenciada y el documento sigue disponible tras reiniciar con /persist montado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `duckdb`, `coolify`, `claude-code`
+**Alternativas (elige una):** `baserow`, `teable`, `nocodb`
 
 ## `huginn`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,ruby,docker
@@ -154,8 +247,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un agente RSS y observa los eventos que produce
 **Qué comprobar:** Aparece un evento con el título y enlace de una publicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `novu`
-**Alternativas (elige una):** `n8n`, `node-red`
+**Combina con:** `ollama`, `litellm`, `coolify`, `changedetection`
+**Alternativas (elige una):** `node-red`
 
 ## `kestra`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=automation,data,java,docker
@@ -192,128 +285,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un flujo de ejemplo y abre sus logs en la interfaz de Kestra
 **Qué comprobar:** La ejecución muestra su estado final y los mensajes de las tareas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `superset`
-**Alternativas (elige una):** `windmill`, `trigger-dev`
-
-## `n8n`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,docker
-
-**Qué es:** Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos.
-**Stack:** Docker activo;  una carpeta para datos de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. Autoalojar consume equipo o servidor; n8n Cloud y las APIs conectadas tienen tarifas separadas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Ollama está documentado por n8n; el agente que diseña el flujo no paga automáticamente sus llamadas de IA
-- Coste: El coste depende del proveedor o la ruta. Autoalojar consume equipo o servidor; n8n Cloud y las APIs conectadas tienen tarifas separadas
-- Equipo: Preparación según la ruta elegida. Docker activo;  una carpeta para datos de prueba
-**Repo:** https://github.com/n8n-io/n8n
-
-**Instalación** [+]:
-
-```
-docker volume create n8n_data
-docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Un formulario de contacto genera un registro para seguimiento comercial; Un flujo resume documentos con Ollama en lugar de una API remota
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Crea un flujo manual que devuelva un texto y ejecútalo en el editor
-**Qué comprobar:** La ejecución termina y su salida contiene el texto que escribiste
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n-mcp`, `n8n-skills`, `evolution-api`, `ollama`, `qdrant`
-**Alternativas (elige una):** `activepieces`, `huginn`, `windmill`, `node-red`
-
-## `n8n-io`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,docker
-
-**Qué es:** No aporta nada distinto a la ficha principal.
-**Stack:** Node.js, TypeScript
-**Acceso y costes:**
-- API de IA: API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local.
-- Coste: Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste.
-- Equipo: Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar.
-**Repo:** https://github.com/n8n-io/n8n
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/n8n-io/n8n
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** — **Evita si:** ya usas la ficha n8n (es el mismo proyecto)
-**Evita si:** ya usas la ficha n8n (es el mismo proyecto)
-**Combina con:** `n8n`
-
-## `n8n-mcp`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,mcp,typescript
-
-**Qué es:** Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows.
-**Stack:** Cliente MCP;  n8n y sus credenciales solo para operar una instancia
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura
-- Claude Code: Herramienta MCP para el agente
-- Codex: Herramienta MCP para el agente
-- Antigravity: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
-- Coste: El coste depende del proveedor o la ruta. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura
-- Equipo: Preparación según la ruta elegida. Cliente MCP;  n8n y sus credenciales solo para operar una instancia
-**Repo:** https://github.com/czlonkowski/n8n-mcp
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/czlonkowski/n8n-mcp/blob/main/docs/SELF_HOSTING.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Investigar por qué falló una ejecución de un flujo propio; Preparar y validar un flujo de prueba con ayuda del agente
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Pide al cliente buscar un nodo de n8n y consultar su esquema antes de editar un flujo
-**Qué comprobar:** La respuesta contiene las propiedades del nodo y una validación comprensible
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-skills`, `claude-code`, `mcp-inspector`
-
-## `n8n-skills`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,automation
-
-**Qué es:** Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas.
-**Stack:** Claude Code o cliente compatible;  n8n-mcp configurado para las herramientas
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Las instrucciones consumen el agente anfitrión; n8n, conectores y modelos usados por el flujo tienen costes propios
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Dentro del agente: skills o instrucciones
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. El README documenta hooks para Claude Code y Codex; la portabilidad a otros hosts no prueba su instalación en Antigravity
-- Coste: Consumo del agente que ya utilizas. Las instrucciones consumen el agente anfitrión; n8n, conectores y modelos usados por el flujo tienen costes propios
-- Equipo: Preparación según la ruta elegida. Claude Code o cliente compatible;  n8n-mcp configurado para las herramientas
-**Repo:** https://github.com/czlonkowski/n8n-skills
-
-**Instalación** [+]:
-
-```
-# Install directly as a Claude Code plugin
-/plugin install czlonkowski/n8n-skills
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Corregir una expresión que no encuentra un campo de entrada; Elegir nodos y validar un flujo antes de activarlo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Pide revisar una expresión de un flujo pequeño sin desplegarlo
-**Qué comprobar:** El agente identifica la skill pertinente y propone una corrección justificable
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-mcp`
+**Combina con:** `duckdb`, `superset`, `claude-code`, `ollama`
+**Alternativas (elige una):** `windmill`, `trigger-dev`, `airflow`, `prefect`, `dagster`
 
 ## `nocodb`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=data,automation,docker
@@ -347,8 +320,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una tabla con nombre y estado e introduce dos registros de prueba
 **Qué comprobar:** Puedes editar los registros y filtrarlos por su estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
-**Alternativas (elige una):** `appsmith`, `budibase`
+**Combina con:** `activepieces`, `metabase`, `coolify`
+**Alternativas (elige una):** `appsmith`, `budibase`, `grist-core`, `baserow`, `teable`
 
 ## `node-red`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=automation,javascript,docker
@@ -378,40 +351,100 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Une un nodo Inject con un nodo Debug y pulsa el disparador
 **Qué comprobar:** El panel Debug muestra el mensaje que inyectaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `n8n`, `huginn`
+**Combina con:** `home-assistant`, `ollama`, `grafana`, `zigbee2mqtt`
+**Alternativas (elige una):** `huginn`
 
-## `self-hosted-ai-starter-kit`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,local,rag,docker
+## `prefect`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=automation,data,python
 
-**Qué es:** Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.
-**Stack:** Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado
+**Qué es:** Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización.
+**Stack:** Python, Dockerfile, pyproject.toml
 **Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
-- Coste: Sin pago a un modelo en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía
-- Equipo: Preparación según la ruta elegida. Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado
-**Repo:** https://github.com/n8n-io/self-hosted-ai-starter-kit
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/PrefectHQ/prefect
 
 **Instalación** [+]:
 
 ```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
-cp .env.example .env # you should update secrets and passwords inside
-docker compose --profile cpu up
+pip install -U prefect
 ```
 
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre n8n y ejecuta el flujo local incluido con una pregunta sencilla
-**Qué comprobar:** El flujo devuelve una respuesta usando el servicio Ollama del stack
+**Elige si:** Tu objetivo encaja con estos ejemplos: convertir un script de ingesta en un flujo con reintentos y ejecución programada; encadenar pasos de datos o ML con dependencias dinámicas y observabilidad
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install -U prefect`, ejecuta el ejemplo de estrellas de GitHub del README y abre el servidor local.
+**Qué comprobar:** El flujo y sus tareas aparecen como completados en la interfaz con sus logs.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `ollama`, `qdrant`
+**Combina con:** `duckdb`, `polars`, `claude-code`, `mlflow`
+**Alternativas (elige una):** `airflow`, `dagster`, `kestra`
+
+## `teable`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=data,no-code,typescript,docker
+
+**Qué es:** Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/teableio/teable
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/teableio/teable/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: gestionar un catálogo o pipeline comercial con vistas de cuadrícula, kanban y calendario; dar a un equipo tablas en PostgreSQL con permisos y API sin escribir backend
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Teable con la guía Docker oficial y crea una tabla con un formulario y una vista kanban.
+**Qué comprobar:** Los registros enviados por el formulario aparecen en la tabla y en la vista kanban, y se conservan tras reiniciar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `supabase`, `metabase`, `coolify`
+**Alternativas (elige una):** `grist-core`, `baserow`, `nocodb`
+
+## `temporal`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,go,server,agents
+
+**Qué es:** Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/temporalio/temporal
+
+**Instalación** [+]:
+
+```
+brew install temporal
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: procesos de negocio largos como pagos o altas que deben completarse aunque caiga un servicio; agentes de IA con pasos largos que necesitan reintentos y reanudación
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala la CLI con `brew install temporal`, arranca el servidor de desarrollo y ejecuta el ejemplo hello-world de un SDK.
+**Qué comprobar:** El workflow aparece completado en la interfaz web local con su historial de eventos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openai-agents-python`, `pydantic-ai`, `langgraph`, `grafana`, `claude-code`
 
 ## `tooljet`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=ui,automation,docker
@@ -441,7 +474,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una página con una tabla y enlázala a un pequeño conjunto de datos
 **Qué comprobar:** La tabla muestra los datos y puedes revisar la consulta que los obtiene
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `claude-code`, `codex`, `activepieces`
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `trigger-dev`
@@ -472,7 +505,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta la tarea hello-world del README con un mensaje de prueba
 **Qué comprobar:** El panel muestra la ejecución y el mensaje en los logs
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vercel-ai`, `langfuse`
+**Combina con:** `vercel-ai`, `ffmpeg`, `playwright`, `langfuse`
 **Alternativas (elige una):** `windmill`, `kestra`
 
 ## `windmill`
@@ -507,5 +540,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un script que reciba un nombre y devuelva un saludo
 **Qué comprobar:** La ejecución guarda el resultado del script y sus logs
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`
-**Alternativas (elige una):** `n8n`, `kestra`, `trigger-dev`
+**Combina con:** `duckdb`, `claude-code`, `polars`, `coolify`
+**Alternativas (elige una):** `kestra`, `trigger-dev`

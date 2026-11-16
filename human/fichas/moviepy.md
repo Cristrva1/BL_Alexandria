@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+MoviePy, librería Python para editar vídeo por código, de @Zulko. Licencia MIT. Es madura (~15k estrellas, v2.2.1); la v2.0 introdujo cambios incompatibles y la v1 ya no se mantiene.
+
+## ¿Qué hace?
+
+Corta, concatena, inserta títulos, compone, aplica efectos y procesa audio y vídeo, incluido GIF. Es flexible pero más lenta que usar FFmpeg directamente.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.9+ y se instala con `pip install moviepy`; usa FFmpeg (incluido vía imageio-ffmpeg o uno personalizado). Funciona en Windows, macOS y Linux.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisperX](whisperx.md) | Subtítulos con marcas por palabra. (combinación por arquitectura) | Genera SRT y móntalo con TextClip. |
+| [Kokoro](kokoro.md) | Narración local. (combinación por arquitectura) | Genera el audio y añádelo como AudioFileClip. |
+| [FFmpeg](ffmpeg.md) | Motor de lectura y escritura. | Viene vía imageio-ffmpeg o usa el del sistema. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AudioCraft](audiocraft.md) · [edge-tts](edge-tts.md) · [faster-whisper](faster-whisper.md) · [LivePortrait](liveportrait.md) · [LosslessCut](lossless-cut.md) · [LuxTTS](luxtts.md) · [Manim (ManimGL)](manim.md) · [WanGP](wan2gp.md)
+
+**Notas:** Alternativas (elige una): remotion, hyperframes. Se quita comfyui de las combinaciones (sin relación directa).
+
+Estado en GitHub: activo · último push 2026-08-26 · última versión publicada v2.2.1 (2025-05-21) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Zulko/moviepy/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables |
 | Coste | Sin pago a un modelo en la ruta básica. El montaje no requiere modelo; renderizar consume CPU, memoria y disco; medios y fuentes tienen licencias propias |
 | Equipo | Preparación según la ruta elegida. Python; FFmpeg según instalación; fuente tipográfica para títulos; video de prueba |
-
-v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables
-
-## Qué puedes hacer con él
-
-Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar variantes de un video; Componer clips y rótulos desde Python.
-
-## Cómo funciona
 
 v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables
 
@@ -86,14 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; FFmpeg según instalación; fuente tipográfica para títulos; video de prueba
 - **Etiquetas:** `video` `audio` `automation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
-| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Alternativas (elige una)
 

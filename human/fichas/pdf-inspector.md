@@ -10,6 +10,31 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca en Rust de Firecrawl (MIT) para clasificar PDF y extraer su texto. Muy activa (v1.26.0) y disponible para Rust, CLI, Python, Node y WebAssembly en navegador.
+
+## ¿Qué hace?
+
+Detecta en 10–50 ms si un PDF es de texto, escaneado, de imagen o mixto, con puntuación de confianza y decisión de OCR por página, y convierte los PDF de texto a Markdown limpio en local en menos de 200 ms (encabezados, listas, código, tablas, negritas, varias columnas, texto RTL). Según Firecrawl evita servicios de OCR caros en cerca del 54 % de los PDF. Marca codificaciones de fuente rotas para recurrir a OCR y puede ejecutar OCR selectivo con PP-OCRv6 Small solo en las páginas que lo necesitan.
+
+## ¿Cómo lo hace?
+
+Analiza el documento una sola vez y comparte el resultado entre detección y extracción; usa los flujos de contenido del PDF, coordenadas y fuentes, detección de tablas por rectángulos y por alineación, y decodificación CID/ToUnicode. Se instala con `pip install pdf-inspector`, `npm install @firecrawl/pdf-inspector` o como crate de Rust.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [firecrawl](firecrawl.md) | Desarrollado por Firecrawl para procesar PDF de texto en local antes de recurrir a OCR. | Integrado en Firecrawl; úsalo directamente solo en canalizaciones propias. |
+| [PDFMathTranslate](pdfmathtranslate.md) | El modo `--ultrafast` de PDFMathTranslate usa las posiciones de texto de pdf-inspector. | Viene como dependencia de PDFMathTranslate. |
+| [PaddleOCR](paddleocr.md) | El OCR selectivo usa el modelo PP-OCRv6 Small de PaddleOCR. | Activa el OCR selectivo solo para páginas escaneadas. |
+| [OCRmyPDF](ocrmypdf.md) | Enviar a OCRmyPDF los PDF clasificados como escaneados (combinación por arquitectura). | Clasifica primero; aplica OCR solo donde haga falta. |
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.26.0 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/firecrawl/pdf-inspector/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +48,6 @@
 | Modelos locales | Modelos locales documentados. La instalación base y las funciones OCR no tienen los mismos recursos; la clasificación no verifica exactitud de todo el texto |
 | Coste | Sin pago a un modelo en la ruta básica. La extracción básica no exige API; OCR selectivo usa modelo local y requiere dependencias adicionales |
 | Equipo | Preparación según la ruta elegida. Python para esta ruta; runtime OCR y pesos solo si activas OCR; PDFs de prueba |
-
-La instalación base y las funciones OCR no tienen los mismos recursos; la clasificación no verifica exactitud de todo el texto
-
-## Qué puedes hacer con él
-
-Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas.
-
-## Por qué destaca
-
-Usos propuestos: Decidir cuándo hace falta OCR; Extraer texto con posiciones de un PDF.
-
-## Cómo funciona
 
 La instalación base y las funciones OCR no tienen los mismos recursos; la clasificación no verifica exactitud de todo el texto
 
@@ -93,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python para esta ruta; runtime OCR y pesos solo si activas OCR; PDFs de prueba
 - **Etiquetas:** `pdf` `docs` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OCRmyPDF](ocrmypdf.md) | 35.3k | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. |
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Enlaces
 

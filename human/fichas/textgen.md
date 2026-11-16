@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Aplicación de escritorio para LLM locales, de código abierto (AGPL-3.0) y sin telemetría, de oobabooga (antes text-generation-webui). Madura y con versiones regulares (v4.9).
+
+## ¿Qué hace?
+
+Ofrece chat en modos instruct, chat-instruct y chat con personajes, visión multimodal, adjuntos (texto, PDF, docx), edición y ramas de conversación, y un cuaderno de generación libre. Permite llamadas a herramientas (cada herramienta es un archivo .py, incluidas búsqueda web y lectura de páginas) y servidores MCP, entrenamiento de LoRA y generación de imágenes con modelos diffusers. Expone una API compatible con OpenAI y Anthropic para usarla como reemplazo local.
+
+## ¿Cómo lo hace?
+
+Aplicación Python con varios backends: llama.cpp, ik_llama.cpp, Transformers y ExLlamaV3, con plantillas Jinja2 para formatear prompts. Las compilaciones portátiles para Linux, Windows y macOS (CUDA, Vulkan, ROCm o CPU) incluyen todas las dependencias y usan modelos GGUF; los backends extra, el entrenamiento y la generación de imágenes requieren la instalación completa.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LibreChat](librechat.md) | Usar la API compatible con OpenAI de TextGen como endpoint personalizado en un chat multiusuario (combinación por arquitectura). | Activa la API en TextGen; regístrala en `librechat.yaml`. |
+| [llmfit](llmfit.md) | Saber qué modelo y cuantización caben antes de descargar (combinación por arquitectura). | Ejecuta llmfit primero. |
+| [Unsloth](unsloth.md) | Afinar modelos con más eficiencia fuera de TextGen y cargar el resultado en él (combinación por arquitectura). | Entrena y exporta el adaptador o GGUF con Unsloth; luego cárgalo en TextGen. |
+| [SillyTavern](sillytavern.md) | Combinación recíproca: SillyTavern lo enlaza como «Text generation web UI (Ooba) es uno de los backends de texto que SillyTavern soporta». | Orden indicado desde SillyTavern: Arranca textgen con su API habilitada; después conéctalo desde SillyTavern. |
+
+**Notas:** Alternativas (elige una): jan, open-webui.
+
+Estado en GitHub: activo · último push 2026-08-17 · última versión publicada v4.9 (2026-05-20) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/oobabooga/textgen/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API de proveedor; modelos, memoria y disco son recursos y licencias propios |
 | Equipo | Preparación según la ruta elegida. Distribución portable apropiada a tu GPU o CPU; modelo GGUF |
-
-Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación
-
-## Qué puedes hacer con él
-
-App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic.
-
-## Por qué destaca
-
-Usos propuestos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app.
-
-## Cómo funciona
 
 Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación
 

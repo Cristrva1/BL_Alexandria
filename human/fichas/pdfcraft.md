@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Suite de herramientas PDF en el navegador de PDFCraftTool, AGPL-3.0, activa con versiones por fecha. Tiene un proyecto hermano de escritorio, LibrePDF (Apache 2.0).
+
+## ¿Qué hace?
+
+Ofrece más de 80 herramientas para unir, dividir, comprimir, convertir, rotar y editar PDF directamente en el navegador, sin subir archivos a servidores. Interfaz en ocho idiomas, entre ellos español.
+
+## ¿Cómo lo hace?
+
+Aplicación Next.js con Tailwind CSS que procesa los archivos en el cliente con WebAssembly y bibliotecas como pdf-lib. Se despliega como sitio estático o con la imagen Docker `ghcr.io/pdfcrafttool/pdfcraft` (por ejemplo en el puerto 8080) o Docker Compose.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [coolify](coolify.md) | Autoalojar la imagen Docker con dominio y HTTPS (combinación por arquitectura). | Crea el servicio desde la imagen en Coolify. |
+| [docuseal](docuseal.md) | Preparar el PDF (unir, comprimir) antes de enviarlo a firmar (combinación por arquitectura). | Independientes. |
+| [paperless-ngx](paperless-ngx.md) | Ajustar documentos antes de archivarlos (combinación por arquitectura). | Independientes. |
+
+**Notas:** Alternativa (elige una): stirling-pdf. Se retiró markitdown por falta de relación.
+
+Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v2026.11.08-98e89d4 (2026-11-08) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web |
 | Coste | Sin pago a un modelo en la ruta básica. Las herramientas del navegador no requieren modelo; hosting propio y productos enlazados tienen condiciones aparte |
 | Equipo | Preparación según la ruta elegida. Navegador moderno; PDFs de prueba; Node solo para self-hosting |
-
-La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web
-
-## Qué puedes hacer con él
-
-Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.
-
-## Por qué destaca
-
-Usos propuestos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba.
-
-## Cómo funciona
 
 La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador moderno; PDFs de prueba; Node solo para self-hosting
 - **Etiquetas:** `pdf` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Alternativas (elige una)
 

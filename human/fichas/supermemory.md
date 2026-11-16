@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Motor de memoria y contexto para IA de Supermemory, que se define como laboratorio de investigación. El repositorio es MIT (servidor en versión 0.0.x) y el servicio principal es una API alojada; afirma ser el n.º 1 en LongMemEval, LoCoMo y ConvoMem [DATO NO VERIFICADO: benchmarks propios].
+
+## ¿Qué hace?
+
+Aprende de las conversaciones, extrae hechos, mantiene perfiles de usuario (unos 50 ms por llamada), gestiona actualizaciones y contradicciones y olvida información caducada. Combina RAG y memoria en una sola consulta, sincroniza Google Drive, Gmail, Notion, OneDrive y GitHub, y extrae contenido de PDF, imágenes (OCR), video (transcripción) y código. Da memoria persistente a Claude Code, Cursor, Codex y OpenCode mediante plugins o MCP.
+
+## ¿Cómo lo hace?
+
+Ofrece una API única con SDK, un servidor MCP alojado (`https://mcp.supermemory.ai/mcp`, código abierto) y una versión local de un solo binario (`npx supermemory local` o script de instalación) que en el primer arranque prepara su motor de grafos embebido, embeddings locales y una clave de API. Admite cualquier modelo o funcionar sin conexión con Ollama.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin y servidor MCP para memoria persistente entre conversaciones. | Decide entre la nube y la versión local; después registra el MCP o el plugin. |
+| [OpenCode](opencode.md) | Agente soportado por plugin o MCP. | Igual que arriba. |
+| [Ollama](ollama.md) | La versión local puede funcionar sin conexión con Ollama. | Ollama primero con los modelos; después arranca `supermemory-server`. |
+
+**Notas:** Alternativas (elige una): mem0, agentmemory. Con el MCP alojado los datos se procesan en sus servidores.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada server-v0.0.9 (2026-10-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/supermemoryai/supermemory/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los plugins y MCP son vías de conexión; confirma que apuntan a la instancia local si buscas mantener el procesamiento en tu equipo |
 | Coste | El coste depende del proveedor o la ruta. La instancia local admite embeddings locales y Ollama; API Cloud y proveedores remotos tienen planes y consumo separados |
 | Equipo | Preparación según la ruta elegida. Node.js para ruta local; modelo elegido; cuenta para Cloud |
-
-Los plugins y MCP son vías de conexión; confirma que apuntan a la instancia local si buscas mantener el procesamiento en tu equipo
-
-## Qué puedes hacer con él
-
-Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local.
-
-## Por qué destaca
-
-Usos propuestos: Conservar contexto entre agentes; Buscar documentos y recuerdos de un proyecto.
-
-## Cómo funciona
 
 Los plugins y MCP son vías de conexión; confirma que apuntan a la instancia local si buscas mantener el procesamiento en tu equipo
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js para ruta local; modelo elegido; cuenta para Cloud
 - **Etiquetas:** `memory` `rag` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [AI SDK (Vercel)](vercel-ai.md) | 28k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
 
 ## Alternativas (elige una)
 

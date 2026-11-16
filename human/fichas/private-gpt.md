@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Capa de API de código abierto (Apache 2.0) de Zylon que convierte modelos locales en aplicaciones de IA para producción; es la base de la plataforma on-premise Zylon. Versión 1.0.1 publicada en 2026.
+
+## ¿Qué hace?
+
+Ofrece una API que sigue el modelo de la API de Claude: mensajes con streaming y conteo de tokens, ingesta de archivos, recuperación con citas y RAG agéntico, herramientas integradas (búsqueda web, lectura web, ejecución de código), herramientas propias y conectores MCP, acceso estructurado a bases de datos y CSV, embeddings y orquestación. Incluye una interfaz de pruebas en `/ui`; el producto es la API.
+
+## ¿Cómo lo hace?
+
+No ejecuta modelos: se conecta a cualquier servidor compatible con OpenAI que implemente `/v1/chat/completions` y `/v1/models` mediante `OPENAI_API_BASE` (y `OPENAI_EMBEDDING_API_BASE` para embeddings). Se instala con Homebrew en macOS o con `uv tool install` (Python 3.11) en Linux y Windows, o con Docker; API en el puerto 8080.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Punto de partida recomendado como servidor de LLM y embeddings. | Ollama primero con el modelo de chat y el de embeddings; después exporta las variables y arranca PrivateGPT. |
+| [vLLM](vllm.md) | Servidor compatible con OpenAI para producción con GPU (combinación por arquitectura). | vLLM primero; apunta `OPENAI_API_BASE` a su /v1 y usa otro puerto distinto de 8080. |
+| [llama.cpp](llama-cpp.md) | `llama serve` cumple los endpoints requeridos (combinación por arquitectura). | Arráncalo en un puerto distinto de 8080 para no chocar con PrivateGPT. |
+
+**Notas:** Alternativa (elige una): anything-llm. La combinación antigua con qdrant se retiró porque el README actual no la menciona.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.0.1 (2026-06-18) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zylon-ai/private-gpt/blob/main/README.md) · [2](https://docs.privategpt.dev/getting-started/quickstart)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La guía documenta backend local para Claude Code; no confirma por eso integración de todas las funciones de Codex o Antigravity |
 | Coste | El coste depende del proveedor o la ruta. El servidor de inferencia y embeddings usan recursos propios o proveedores según configuración; no incluye modelos de pago |
 | Equipo | Preparación según la ruta elegida. Servidor LLM compatible OpenAI; Python 3.11 o distribución adecuada; documentos de prueba |
-
-La guía documenta backend local para Claude Code; no confirma por eso integración de todas las funciones de Codex o Antigravity
-
-## Qué puedes hacer con él
-
-Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP.
-
-## Por qué destaca
-
-Usos propuestos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación.
-
-## Cómo funciona
 
 La guía documenta backend local para Claude Code; no confirma por eso integración de todas las funciones de Codex o Antigravity
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Servidor LLM compatible OpenAI; Python 3.11 o distribución adecuada; documentos de prueba
 - **Etiquetas:** `rag` `local` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 
 ## Alternativas (elige una)
 

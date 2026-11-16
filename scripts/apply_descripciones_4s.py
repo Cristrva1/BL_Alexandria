@@ -7,7 +7,9 @@ Uso:
 Cada lote es la fuente editable; INDICE_IA.detalle.json sigue siendo la fuente de verdad que leen
 los generadores (`guide build`, `menu export`, `web build`). El script:
 - añade `que_es`, `que_hace`, `como_lo_hace`, `combina_con`, `descripcion_notas`,
-  `descripcion_fuentes` y `descripcion_revision` sin tocar los demás campos;
+  `descripcion_fuentes`, `descripcion_revision` y `descripcion_github` (estado leído de la API de GitHub:
+  archivado, renombrado, último push, licencia) sin tocar los demás campos; si el proyecto vive fuera
+  de GitHub, `origen` se copia a `descripcion_origen` (forja canónica, p. ej. Codeberg);
 - sincroniza `combines_with` con los ids de `combina_con` (misma lista, mismo orden),
   porque recomendador, decisiones y menú portable siguen leyendo `combines_with`;
 - rechaza ids inexistentes, autorreferencias, alternativas listadas como combinación y textos vacíos.
@@ -25,7 +27,7 @@ COMPACT = ROOT / "INDICE_IA.json"
 TEXT_FIELDS = ("que_es", "que_hace", "como_lo_hace")
 
 
-def validate(batch: dict, compact: dict, detail: dict) -> list[str]:
+def validate(batch: dict, compact: dict, detail: dict, min_combos: int = 1) -> list[str]:
     ids = {r["id"] for r in compact["repos"] if not r.get("alias_of")}
     alts = {r["id"]: set(r.get("alt") or []) for r in compact["repos"]}
     errors: list[str] = []
@@ -37,8 +39,8 @@ def validate(batch: dict, compact: dict, detail: dict) -> list[str]:
             if not (entry.get(field) or "").strip():
                 errors.append(f"{rid}: falta {field}")
         combos = entry.get("combina_con") or []
-        if not 1 <= len(combos) <= 6:
-            errors.append(f"{rid}: combina_con debe tener 1-6 elementos")
+        if not min_combos <= len(combos) <= 6:
+            errors.append(f"{rid}: combina_con debe tener {min_combos}-6 elementos (tiene {len(combos)})")
         seen = set()
         for combo in combos:
             cid = combo.get("id")
@@ -78,6 +80,11 @@ def apply(batch: dict, detail: dict) -> list[str]:
             "status": "source_reviewed",
             "installation_tested": False,
         }
+        if entry.get("github"):
+            target["descripcion_github"] = dict(entry["github"])
+        if entry.get("origen"):
+            # Forja canónica fuera de GitHub (p. ej. Codeberg); `github` queda como estado de la copia antigua.
+            target["descripcion_origen"] = dict(entry["origen"])
         target["combines_with"] = [c["id"] for c in entry["combina_con"]]
         removed = [c for c in before if c not in target["combines_with"]]
         added = [c for c in target["combines_with"] if c not in before]
@@ -89,11 +96,12 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("batch", type=Path)
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--min-combos", type=int, default=1, help="Mínimo de combinaciones por repo (los lotes completos usan 3).")
     args = parser.parse_args()
     batch = json.loads(args.batch.read_text(encoding="utf8"))
     compact = json.loads(COMPACT.read_text(encoding="utf8"))
     detail = json.loads(DETAIL.read_text(encoding="utf8"))
-    errors = validate(batch, compact, detail)
+    errors = validate(batch, compact, detail, args.min_combos)
     if errors:
         print("\n".join(errors))
         return 1

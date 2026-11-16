@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Base de datos de contexto de código abierto (AGPLv3) para agentes de IA, de Volcengine (ByteDance). Activa (v0.5.5), con un servicio alojado por Volcengine y un Studio web.
+
+## ¿Qué hace?
+
+Organiza conocimiento, memoria y skills de un agente como un sistema de archivos virtual bajo `viking://`, que el agente recorre como carpetas. Limita la búsqueda semántica a un subárbol, genera resúmenes por directorio (L0) y vistas generales (L1) antes del contenido completo (L2), y archiva cada sesión extrayendo memorias en Markdown editables. Según su benchmark eleva la precisión en LoCoMo de OpenClaw, Hermes y Claude Code [DATO NO VERIFICADO: benchmark propio].
+
+## ¿Cómo lo hace?
+
+Servidor Python 3.10+ instalado con `uv tool install openviking` y configurado con `openviking-server init`, que escribe `~/.openviking/ov.conf` y admite Volcengine, OpenAI, Codex OAuth, Kimi, GLM y Ollama local. Incluye CLI `ov`, un instalador de plugin de memoria para Claude Code, Codex, Cursor, TRAE, OpenCode y otros, y Web Studio autoalojable.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin de memoria oficial instalable con su instalador. | Servidor OpenViking en marcha primero; luego instala el plugin y reinicia Claude Code. |
+| [OpenClaw](openclaw.md) | Agente evaluado en su benchmark y soportado como cliente de memoria. | Igual: servidor primero, plugin después. |
+| [Ollama](ollama.md) | Proveedor local soportado por el asistente `init`. | Ollama con los modelos de chat y embeddings antes de ejecutar `openviking-server init`. |
+
+**Notas:** La AGPLv3 obliga a publicar cambios si ofreces el servicio modificado a terceros.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.5.5 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/volcengine/OpenViking/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks |
 | Coste | El coste depende del proveedor o la ruta. La edición abierta AGPL no exige activación; Enterprise y proveedores tienen condiciones propias; el autor documenta Ollama y Codex OAuth |
 | Equipo | Preparación según la ruta elegida. uv; proveedor o Ollama; servidor; Node 18+ y macOS/Linux para instalador de plugins |
-
-El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks
-
-## Qué puedes hacer con él
-
-Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información.
-
-## Por qué destaca
-
-Usos propuestos: Conservar contexto de un proyecto; Consultar conocimientos y skills desde un almacén común.
-
-## Cómo funciona
 
 El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv; proveedor o Ollama; servidor; Node 18+ y macOS/Linux para instalador de plugins
 - **Etiquetas:** `memoria` `server` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Enlaces
 

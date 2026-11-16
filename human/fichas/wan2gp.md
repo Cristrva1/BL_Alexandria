@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+WanGP, superapp local para modelos generativos abiertos «para GPU modestas», de @deepbeepmeep. Usa la WanGP Community License 2.0, propia (GitHub muestra NOASSERTION), y es gratuita para uso local, también en el trabajo. Es muy activa (~12k estrellas).
+
+## ¿Qué hace?
+
+Ejecuta modelos de vídeo (Wan 2.1/2.2, LTX-2, Hunyuan Video, LongCat…), imagen (Flux, Qwen Image, Z-Image…), audio y voz y 3D desde una interfaz web, con optimizaciones de memoria para GPU de gama media. Incluye un «Showrunner» para series con personajes y escenarios coherentes. Tiene interfaz MCP para que agentes externos usen todas sus funciones.
+
+## ¿Cómo lo hace?
+
+Se instala con PyTorch para CUDA y `requirements.txt` (también Pinokio u otros instaladores). Está optimizada para NVIDIA (RTX 30–50) y ROCm; no tiene ruta para Apple Silicon. El README avisa de servicios de terceros que usan su nombre sin afiliación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Interfaz MCP para que agentes manejen WanGP. (combinación por arquitectura) | Arranca WanGP con `--mcp` y añádelo al agente. |
+| [Wan2.2](wan2-2.md) | Ejecuta los modelos Wan 2.2 con menos VRAM. | Descarga el modelo desde la interfaz. |
+| [MoviePy](moviepy.md) | Montar en Python los clips generados. (combinación por arquitectura) | Exporta los clips y únelos con MoviePy. |
+| [LosslessCut](lossless-cut.md) | Recortar resultados sin recodificar. (combinación por arquitectura) | Abre los vídeos en LosslessCut. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | Wan2GP incluye Hunyuan Video 1.5 entre sus modelos para GPUs con poca VRAM. | Elige el modelo en la interfaz; los pesos se descargan aparte. |
+| [HunyuanVideo](hunyuanvideo.md) | Combinación recíproca: HunyuanVideo lo enlaza como «Interfaz para GPU modestas con soporte de Hunyuan Video». | Orden indicado desde HunyuanVideo: Selecciona Hunyuan Video en WanGP. |
+
+**Notas:** Alternativas (elige una): comfyui. Licencia propia, no OSI: revísala antes de redistribuir.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada manager-v0.1.17 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/deepbeepmeep/WanGP/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelos locales documentados. Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan |
 | Coste | El coste depende del proveedor o la ruta. La app se ofrece sin cuota local; proveedores remotos de Deepy, modelos y recursos de búsqueda pueden costar |
 | Equipo | Preparación según la ruta elegida. GPU compatible; Python y PyTorch según guía; pesos del modelo elegido |
-
-Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan
-
-## Qué puedes hacer con él
-
-App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas.
-
-## Por qué destaca
-
-Usos propuestos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada.
-
-## Cómo funciona
 
 Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan
 
@@ -86,14 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** GPU compatible; Python y PyTorch según guía; pesos del modelo elegido
 - **Etiquetas:** `video` `image` `tts` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
-| [LosslessCut](lossless-cut.md) | 46k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de orquestación de código abierto (Apache 2.0) para flujos de datos, IA e infraestructura, mantenida por Kestra Technologies. Existe desde 2019, publicó la serie 2.0 en 2026 y tiene una edición Enterprise con RBAC y políticas de gobierno.
+
+## ¿Qué hace?
+
+Unifica automatizaciones programadas y disparadas por eventos con una interfaz declarativa e independiente del lenguaje: extrae datos de bases, almacenamiento en la nube o APIs, ejecuta scripts en cualquier lenguaje y coordina pipelines de datos, microservicios y procesos de negocio. Incluye agentes de IA y flujos RAG como tipos de tarea, un servidor MCP y disparadores por herramienta MCP. Casos típicos: ETL nocturnos, pipelines de analítica, aprovisionamiento de infraestructura y flujos con aprobación.
+
+## ¿Cómo lo hace?
+
+Los flujos se definen en YAML («todo como código») y se pueden editar desde un editor YAML, un editor sin código o un copiloto de IA que se mantienen sincronizados, con control de versiones en Git. El motor está escrito en Java y se extiende con cientos de plugins que se pueden descargar bajo demanda desde Maven Central (`KESTRA_PLUGINS_AUTO_INSTALL_ENABLED=true`). Se prueba con un solo `docker run` en el puerto 8080 montando el socket de Docker para ejecutar tareas en contenedores; en producción usa PostgreSQL y almacenamiento de objetos, con plantillas Terraform para la nube. Tiene CLI (`kestractl`) y extensión para VS Code.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Kestra tiene un plugin JDBC para DuckDB, útil para transformar CSV o Parquet con SQL dentro de un flujo sin levantar un servidor de base de datos. | Nada que instalar aparte: el plugin se descarga en Kestra; guarda los archivos .duckdb en un volumen persistente. |
+| [Apache Superset](superset.md) | Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura). | Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén. |
+| [Claude Code](claude-code.md) | Con el servidor MCP de Kestra, un agente de código puede consultar y gestionar flujos y ejecuciones desde la terminal. | Kestra en marcha y accesible; después registra su servidor MCP en Claude Code según la guía oficial. |
+| [Ollama](ollama.md) | Los agentes de IA y flujos RAG de Kestra pueden apuntar a un proveedor de modelos local para no enviar datos a una API externa (combinación por arquitectura; el proveedor exacto depende del plugin de IA) [DATO NO VERIFICADO]. | Ollama primero; desde Kestra en Docker usa la dirección del host. |
+
+**Notas:** Alternativas (elige una): windmill, trigger-dev. El arranque rápido monta `/var/run/docker.sock` como root: úsalo solo en entornos de prueba.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.0.10 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kestra-io/kestra/blob/develop/README.md) · [2](https://kestra.io/plugins/plugin-jdbc-duckdb) · [3](https://kestra.io/docs/ai-tools/mcp-server)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba |
 | Coste | El coste depende del proveedor o la ruta. El motor autoalojado requiere infraestructura; funciones comerciales y proveedores de IA pueden añadir consumo |
 | Equipo | Preparación según la ruta elegida. Docker;  directorio temporal y volúmenes de prueba |
-
-Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba
-
-## Qué puedes hacer con él
-
-Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio.
-
-## Por qué destaca
-
-Usos propuestos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama.
-
-## Cómo funciona
 
 Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba
 
@@ -100,19 +115,15 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `data` `java` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
-| [Apache Superset](superset.md) | 75.5k | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Windmill](windmill.md) | 18.6k | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. |
 | [Trigger.dev](trigger-dev.md) | 16.8k | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. |
+| [Apache Airflow](airflow.md) | 47.5k | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. |
+| [Prefect](prefect.md) | 24.2k | Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización. |
+| [Dagster](dagster.md) | 16.4k | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. |
 
 ## Enlaces
 

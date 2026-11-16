@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Concat, editor de vídeo libre y multiplataforma, de @jub0t. Licencia AGPL-3.0 o posterior, con licencia comercial disponible. Es reciente (~18k estrellas, v0.2.11).
+
+## ¿Qué hace?
+
+Cubre lo habitual en edición (cortes, pistas, efectos) y añade subtítulos automáticos, texto a voz y recorte de fondo con modelos que se descargan una vez y funcionan sin conexión. Incluye un servidor MCP (`concat --mcp`) y una API JSON-RPC para que agentes y scripts editen.
+
+## ¿Cómo lo hace?
+
+Se descarga desde su web o desde GitHub Releases para macOS, Windows, Linux y Android. Está escrito en Rust y usa FFmpeg (en macOS se instala con `brew install ffmpeg`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Servidor MCP integrado documentado. | Configura `concat --mcp` en el agente. |
+| [FFmpeg](ffmpeg.md) | Dependencia para leer y exportar medios. | Instala FFmpeg en el sistema. |
+| [yt-dlp](yt-dlp.md) | Editar material descargado. (combinación por arquitectura) | Descarga y abre el archivo en Concat. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.2.11 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jub0t/Concat/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Está en beta; MCP puede usar la ventana o un proceso separado y sus modos tienen límites distintos al editar el mismo proyecto |
 | Coste | El coste depende del proveedor o la ruta. La edición y modelos locales no necesitan API; AGPL y licencia comercial para ciertos usos cerrados tienen condiciones distintas |
 | Equipo | Preparación según la ruta elegida. Distribución compatible; clip propio; modelos opcionales descargados; permisos de automatización para MCP |
-
-Está en beta; MCP puede usar la ventana o un proceso separado y sus modos tienen límites distintos al editar el mismo proyecto
-
-## Qué puedes hacer con él
-
-Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP.
-
-## Por qué destaca
-
-Usos propuestos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP.
-
-## Cómo funciona
 
 Está en beta; MCP puede usar la ventana o un proceso separado y sus modos tienen límites distintos al editar el mismo proyecto
 

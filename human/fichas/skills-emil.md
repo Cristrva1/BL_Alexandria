@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skills de diseño e ingeniería de interfaces (MIT) de Emil Kowalski, ex Vercel y Linear y autor de la biblioteca Sonner. Activo, sin releases.
+
+## ¿Qué hace?
+
+Se centra sobre todo en animación: crear animaciones con la curva, duración y propiedades correctas, revisarlas y auditarlas, coordinar varios elementos, rendimiento, gestos que siguen el dedo, React Native/Expo, principios de diseño de Apple, prototipos en varias versiones, «romper» la interfaz con datos extremos y aprender de tus correcciones. Cada skill tiene su página en aiforui.dev.
+
+## ¿Cómo lo hace?
+
+Skills en Markdown instalables con `npx skills@latest add emilkowalski/skills` en cualquier agente compatible.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible con `npx skills`. | Instala solo las skills que vayas a usar. |
+| [motion](motion.md) | Biblioteca de animación de React donde aplicar sus reglas (combinación por arquitectura). | Añádela al proyecto si la skill `pick-ui-library` la elige. |
+| [motion-design-skill](motion-design-skill.md) | Principios generales de dirección de movimiento que complementan sus reglas concretas (combinación por arquitectura). | Independientes. |
+
+**Notas:** Se quitó ui-ux-pro-max-skill porque no hay integración.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/emilkowalski/skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones usan el modelo del anfitrión; bibliotecas externas tienen sus condiciones |
 | Equipo | Preparación según la ruta elegida. Agente compatible con skills; componente o captura de prueba |
-
-Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host
-
-## Qué puedes hacer con él
-
-Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).
-
-## Por qué destaca
-
-Usos propuestos: Revisar estados de un componente; Preparar decisiones de movimiento.
-
-## Cómo funciona
 
 Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible con skills; componente o captura de prueba
 - **Etiquetas:** `skills` `design`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+/brag, skill que convierte el proyecto que has construido en un vídeo de lanzamiento corto y compartible, con música, movimiento y textos para redes, de latent-spaces. Licencia MIT. Creado en junio de 2026, tiene ~22k estrellas (v0.6.0). Tiene versión web alojada (letsbrag.app).
+
+## ¿Qué hace?
+
+Analiza tu proyecto o sitio y produce un vídeo promocional con un comando, usando HyperFrames.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 22+. En Windows hay que activar los symlinks de Git (modo desarrollador o administrador).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [HyperFrames](hyperframes.md) | Motor de render en el que se basa. | Viene integrado. |
+| [Claude Code](claude-code.md) | Agente anfitrión de la skill. (combinación por arquitectura) | Instala la skill. |
+| [GSAP](gsap.md) | Animaciones en las composiciones HyperFrames. (combinación por arquitectura) | Las usa el render. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.6.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/latent-spaces/brag/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Brag-slim y el flujo clásico tienen dependencias distintas; documenta plugins Claude Code y Codex y no garantiza resultados iguales con todos los modelos |
 | Coste | El coste depende del proveedor o la ruta. La skill usa el agente y render propio; el servicio letsbrag.app es una ruta separada y sin suscripción no implica precio cero |
 | Equipo | Preparación según la ruta elegida. Agente; runtime y FFmpeg según variante; sitio propio de prueba |
-
-Brag-slim y el flujo clásico tienen dependencias distintas; documenta plugins Claude Code y Codex y no garantiza resultados iguales con todos los modelos
-
-## Qué puedes hacer con él
-
-Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música.
-
-## Por qué destaca
-
-Usos propuestos: Presentar una demo de producto; Preparar una pieza de lanzamiento.
-
-## Cómo funciona
 
 Brag-slim y el flujo clásico tienen dependencias distintas; documenta plugins Claude Code y Codex y no garantiza resultados iguales con todos los modelos
 

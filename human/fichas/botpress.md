@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Repositorio de herramientas de desarrollo de Botpress Cloud, la plataforma comercial de chatbots y asistentes con IA de Botpress, con licencia MIT. No contiene el servidor autoalojable: la versión local v12 vive en el repositorio aparte `botpress/v12`, cuyo último lanzamiento visible aquí es de 2023.
+
+## ¿Qué hace?
+
+Reúne las integraciones públicas del Botpress Hub (WhatsApp, Telegram, Messenger, Slack, Teams, HubSpot, Salesforce, Zendesk, Odoo, n8n, Cal.com, Stripe, OpenAI, Anthropic, Groq, Mistral y muchas más), las herramientas de desarrollo (CLI, SDK y cliente de API), bots de ejemplo «como código» y, próximamente, plugins para Botpress Studio. Sirve para crear o modificar integraciones y bots que se ejecutan en Botpress Cloud.
+
+## ¿Cómo lo hace?
+
+Es un monorepo en TypeScript. Se instala la CLI con `npm install -g @botpress/cli` para desarrollar, probar y publicar integraciones en el Hub, o para definir bots con el SDK. Los bots se ejecutan en la nube de Botpress, que requiere cuenta.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Botpress puede llamar a un webhook de Activepieces (o recibir llamadas de su pieza HTTP) para conectar el bot con otros servicios. (combinación por arquitectura) | Cuenta en Botpress y Activepieces accesible por internet; protege el webhook con un secreto. |
+| [Odoo](odoo.md) | Integración oficial con Odoo para consultar o registrar datos del ERP/CRM desde el bot. | Odoo con usuario de API; después configura la integración. |
+| [cal.diy](cal-diy.md) | Existe una integración oficial con Cal.com; cal.diy es su edición comunitaria, así que la compatibilidad con una instancia propia está [DATO NO VERIFICADO]. | Instancia de cal.diy accesible por internet y token de API antes de configurar la integración. |
+
+**Notas:** La ficha del catálogo debe entenderse como herramientas para Botpress Cloud, no como plataforma autoalojada.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v12.30.9 (2023-06-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/botpress/botpress/blob/master/readme.md) · [2](https://github.com/botpress/botpress/tree/master/integrations)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud |
 | Coste | El coste depende del proveedor o la ruta. Los paquetes del repositorio son MIT; Botpress Cloud, modelos y canales tienen sus precios y límites |
 | Equipo | Preparación según la ruta elegida. Node y gestor de paquetes; cuenta Botpress para desplegar una integración; TypeScript |
-
-El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud
-
-## Qué puedes hacer con él
-
-El repositorio actual reúne paquetes e integraciones abiertas y un CLI para crear y desplegar extensiones. Botpress Cloud y sus modelos tienen condiciones de servicio separadas. Clonar este código no instala toda la plataforma alojada.
-
-## Por qué destaca
-
-Usos propuestos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado.
-
-## Cómo funciona
 
 El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y gestor de paquetes; cuenta Botpress para desplegar una integración; TypeScript
 - **Etiquetas:** `chatbot` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

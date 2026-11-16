@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de chat con IA de código abierto (MIT) y autoalojable, del equipo LibreChat-AI, con agentes, MCP y autenticación multiusuario empresarial. Muy activa (v0.8.8 descrita en el README; sin releases formales en GitHub).
+
+## ¿Qué hace?
+
+Unifica en una interfaz OpenAI, Azure, Anthropic, AWS Bedrock, Google/Vertex y cualquier API compatible con OpenAI (Ollama, groq, Mistral, together.ai y otros) mediante endpoints personalizados. Incluye agentes con herramientas y MCP, artefactos, intérprete de código, búsqueda de archivos, generación de imágenes, búsqueda en conversaciones y, en la v0.8.8, una API de gestión de agentes (beta), espacios de trabajo adjuntos (muy experimental) con controles de aprobación de código, visor de trazas y exportación por OpenTelemetry con identidad de trazas para Langfuse.
+
+## ¿Cómo lo hace?
+
+Aplicación Node.js/React configurada con `librechat.yaml`. El Docker Compose del repositorio levanta la API con MongoDB, Meilisearch para búsqueda, PostgreSQL con pgvector y un servicio RAG API para archivos; la interfaz suele quedar en el puerto 3080 [DATO NO VERIFICADO: puerto por defecto, tomado de la documentación].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | LiteLLM como endpoint personalizado para centralizar proveedores, claves y gasto. | LiteLLM primero; declara su URL en `librechat.yaml`. |
+| [Ollama](ollama.md) | Ollama figura entre los proveedores locales compatibles. | Ollama accesible desde la red de Docker (host.docker.internal o IP). |
+| [langfuse](langfuse.md) | La v0.8.8 permite configurar identidad y metadatos de trazas para Langfuse. | Langfuse en marcha con claves de proyecto; configúralas en LibreChat. |
+| [llama.cpp](llama-cpp.md) | Combinación recíproca: llama.cpp lo enlaza como «LibreChat admite endpoints personalizados compatibles con OpenAI, como el de llama.cpp». | Orden indicado desde llama.cpp: Servidor de llama.cpp accesible desde el contenedor de LibreChat; luego decláralo en `librechat.yaml`. |
+| [pgvector](pgvector.md) | Combinación recíproca: pgvector lo enlaza como «El Docker Compose de LibreChat usa una imagen pgvector para su RAG API». | Orden indicado desde pgvector: Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo. |
+| [exo](exo.md) | Combinación recíproca: exo lo enlaza como «Endpoint personalizado compatible con OpenAI para un chat multiusuario sobre el clúster (combinación por arquitectura)». | Orden indicado desde exo: Igual que arriba; asegúrate de que el contenedor llega a la IP del nodo. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[llamafile](llamafile.md) · [LocalAI](localai.md) · [Text Generation WebUI](textgen.md)
+
+**Notas:** Alternativas (elige una): open-webui, lobehub. Meilisearch, pgvector y RAG API ya vienen en su Compose.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LibreChat-AI/LibreChat/blob/main/README.md) · [2](https://github.com/LibreChat-AI/LibreChat/blob/main/docker-compose.yml)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo |
 | Coste | El coste depende del proveedor o la ruta. La interfaz abierta no incluye crédito de modelos; almacenamiento, herramientas y proveedores tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Ruta de despliegue elegida; base de datos; proveedor u Ollama |
-
-Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo
-
-## Qué puedes hacer con él
-
-Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada.
-
-## Por qué destaca
-
-Usos propuestos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos.
-
-## Cómo funciona
 
 Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo
 
@@ -86,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Ruta de despliegue elegida; base de datos; proveedor u Ollama
 - **Etiquetas:** `chatbot` `agents` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 

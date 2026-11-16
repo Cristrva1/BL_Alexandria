@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Guía de 12 principios para construir aplicaciones con LLM fiables, escrita por Dex (HumanLayer) a imagen de las '12 Factor Apps'. El código es Apache 2.0 y el contenido CC BY-SA 4.0 (GitHub lo marca NOASSERTION). Es un texto de referencia estable; último push en septiembre de 2025.
+
+## ¿Qué hace?
+
+Defiende que los agentes en producción son sobre todo software determinista con LLMs en puntos concretos. Sus principios incluyen controlar los prompts, la ventana de contexto (factor 3, la base de la 'ingeniería de contexto') y el flujo de control, tratar las herramientas como salidas estructuradas, unificar estado de ejecución y de negocio, poder pausar y reanudar, contactar con humanos mediante herramientas y construir agentes pequeños y enfocados. Es crítica con depender de frameworks opacos.
+
+## ¿Cómo lo hace?
+
+Es contenido Markdown con ejemplos de código (TypeScript, entre otros) y una charla del AI Engineer World's Fair. Hay una discusión abierta para crear `npx/uvx create-12-factor-agent`, aún no publicado. No requiere instalación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Context-Engineering](context-engineering.md) | Profundiza en el factor 3 (gestionar la ventana de contexto). (combinación por arquitectura) | Lee primero los 12 factores y luego la guía de contexto. |
+| [LangGraph](langgraph.md) | Framework de bajo nivel que permite aplicar los principios (control del flujo, pausar y reanudar) sin ocultar los prompts. (combinación por arquitectura) | Diseña con los 12 factores y usa LangGraph solo donde aporte estado duradero. |
+| [AI SDK (Vercel)](vercel-ai.md) | Biblioteca ligera para aplicar los factores en TypeScript manteniendo el control de prompts y bucle. (combinación por arquitectura) | Implementa el bucle propio con generateText/tools. |
+| [awesome-harness-engineering](awesome-harness-engineering.md) | Combinación recíproca: awesome-harness-engineering lo enlaza como «Principios concretos de diseño de harnesses fiables. (combinación por arquitectura)». | Orden indicado desde awesome-harness-engineering: Lee los 12 factores como base y usa la lista para ampliar. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2025-09-21 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/humanlayer/12-factor-agents/blob/main/README.md) · [2](https://github.com/humanlayer/12-factor-agents/blob/main/content/factor-03-own-your-context-window.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA |
 | Coste | Sin pago a un modelo en la ruta básica. La guía no necesita API; implementar sus ideas sí puede usar modelos de pago o locales |
 | Equipo | Preparación según la ruta elegida. Navegador; flujo de agente dibujado |
-
-El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA
-
-## Qué puedes hacer con él
-
-Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.
-
-## Por qué destaca
-
-Usos propuestos: Revisar un diseño antes de programar; Estudiar recuperación de errores en agentes.
-
-## Cómo funciona
 
 El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA
 
@@ -84,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; flujo de agente dibujado
 - **Etiquetas:** `agents` `learning` `prompts` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Context-Engineering](context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. |
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [AI SDK (Vercel)](vercel-ai.md) | 28k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
 
 ## Enlaces
 

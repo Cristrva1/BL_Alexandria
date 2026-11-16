@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Colección oficial de Anthropic (MIT) de proyectos de inicio para construir aplicaciones con la API de Claude. Es activa (último push en noviembre de 2026) y se amplía con las novedades de la plataforma.
+
+## ¿Qué hace?
+
+Incluye agentes de atención al cliente y de análisis financiero, demos de computer use (contenedor con VNC y una implementación nativa para macOS), browser use, los nuevos toolsets de navegador y ordenador, un agente de programación autónomo, y varias plantillas de 'Managed Agents' (Chat SDK, CopilotKit con AG-UI, servidor MCP en TypeScript, Slack, Linear, Sentry y otras).
+
+## ¿Cómo lo hace?
+
+Proyectos independientes en Python, TypeScript y Next.js, algunos con Docker (la demo de computer use). Todos requieren una clave de API de Claude, y los de Managed Agents dependen de ese servicio de Anthropic. Las demos de computer y browser use controlan un escritorio o navegador, así que conviene ejecutarlas aisladas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [claude-agent-sdk-python](claude-agent-sdk-python.md) | Pasar de los ejemplos a agentes propios con el bucle de Claude Code. (combinación por arquitectura) | Usa los quickstarts como referencia y construye con el SDK. |
+| [CopilotKit](copilotkit.md) | Frontend de la plantilla 'Managed Agents with CopilotKit and AG-UI' (documentada en el README). | Sigue la plantilla: backend de Managed Agents y frontend con CopilotKit. |
+| [E2B](e2b.md) | Ejecutar las demos de computer use y del agente autónomo en un sandbox remoto en lugar de la máquina local. (combinación por arquitectura) | Crea el sandbox y despliega la demo dentro. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/claude-quickstarts/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Incluye un ejemplo MCP para Managed Agents pero no todos los quickstarts son conectores; la demo de computadora requiere un entorno aislado de prueba |
 | Coste | Consumo de APIs o servicios. Lectura libre; ejecutar requiere API de Claude y posibles servicios adicionales |
 | Equipo | Preparación según la ruta elegida. Python o TypeScript según proyecto; clave Anthropic; servicios del ejemplo |
-
-Incluye un ejemplo MCP para Managed Agents pero no todos los quickstarts son conectores; la demo de computadora requiere un entorno aislado de prueba
-
-## Qué puedes hacer con él
-
-Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar soporte con Claude; Estudiar una demo de uso de computadora.
-
-## Cómo funciona
 
 Incluye un ejemplo MCP para Managed Agents pero no todos los quickstarts son conectores; la demo de computadora requiere un entorno aislado de prueba
 

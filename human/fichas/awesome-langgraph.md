@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Índice curado (CC0) de vonzosten sobre el ecosistema LangChain y LangGraph: frameworks, plantillas y proyectos reales. Activo; último cambio en octubre de 2026.
+
+## ¿Qué hace?
+
+Cubre el ciclo completo de un agente con LangChain/LangGraph: construir (bibliotecas e integraciones), observar y evaluar (LangSmith), desplegar, Deep Agents, LangSmith Fleet (no-code), integraciones y herramientas MCP, proyectos oficiales y proyectos comunitarios por caso de uso (RAG, automatización web, investigación, finanzas), con plantillas y recursos de aprendizaje.
+
+## ¿Cómo lo hace?
+
+README con tablas y enlaces. No se instala.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Framework central de la lista. | No aplica: es una lista de consulta. |
+| [langchain](langchain.md) | Framework central de la lista. | No aplica. |
+| [Deep Agents](deepagents.md) | Sección propia en la lista. | No aplica. |
+
+**Notas:** Todavía recomienda langchain-mcp-adapters, archivado y retirado del catálogo (MCP pasó al paquete principal de LangChain): desactualización detectada.
+
+Estado en GitHub: activo · último push 2026-10-15 · licencia declarada CC0-1.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Las integraciones de los enlaces no acreditan compatibilidad del directorio completo |
 | Coste | Sin pago a un modelo en la ruta básica. Leer el índice no requiere API; los proyectos enlazados tienen sus propios costes |
 | Equipo | Preparación según la ruta elegida. Navegador; necesidad concreta |
-
-Las integraciones de los enlaces no acreditan compatibilidad del directorio completo
-
-## Qué puedes hacer con él
-
-Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar un flujo con memoria; Localizar evaluadores de agentes.
-
-## Cómo funciona
 
 Las integraciones de los enlaces no acreditan compatibilidad del directorio completo
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; necesidad concreta
 - **Etiquetas:** `automation` `agents` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
 ## Enlaces
 
