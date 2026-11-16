@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+NautilusTrader, motor de trading y backtesting de alto rendimiento nativo en Rust con API de Python, de Nautech Systems. Licencia LGPL-3.0. Es muy activo (~32k estrellas, v1.231.0).
+
+## ¿Qué hace?
+
+Ofrece una arquitectura orientada a eventos con el mismo código para backtesting y trading en vivo, multi-activo y multi-venue. Se integra mediante adaptadores con exchanges cripto (CEX y DEX), brokers tradicionales y proveedores de datos. Las estrategias se pueden escribir en Python o íntegramente en Rust.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -U nautilus_trader` (estable) o con `--pre` para la rama 2.0, también desde su índice propio de paquetes. El núcleo está en Rust con bindings para Python 3.13–3.15 y Rust 1.100+.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Polars](polars.md) | Preparar grandes volúmenes de datos de mercado. (combinación por arquitectura) | Transforma los datos con Polars y cárgalos en el catálogo. |
+| [marimo](marimo.md) | Analizar resultados de backtests en notebooks. (combinación por arquitectura) | Carga los informes en marimo. |
+| [ccxt](ccxt.md) | Comparar o completar datos de exchanges sin adaptador. (combinación por arquitectura) | Descarga datos con CCXT para pruebas. |
+| [py-sdk](py-sdk.md) | Combinación recíproca: py-sdk lo enlaza como «NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura)». | Orden indicado desde py-sdk: Elige uno como capa de ejecución; prueba primero en modo simulado. |
+
+**Notas:** Sin alternativas declaradas. Curva de aprendizaje alta; la rama 2.0 aún es prerelease.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.231.0 (2026-08-02) · licencia declarada LGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nautechsystems/nautilus_trader/blob/develop/README.md) · [2](https://nautilustrader.io/docs/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. La rama y docs revisadas son v2 RC y piden --pre; sin él se instala v1 con otra API; el autor desaconseja RC para capital real |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita LLM; datos, infraestructura y conectores tienen costes separados |
 | Equipo | Preparación según la ruta elegida. CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba |
-
-La rama y docs revisadas son v2 RC y piden --pre; sin él se instala v1 con otra API; el autor desaconseja RC para capital real
-
-## Qué puedes hacer con él
-
-Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados.
-
-## Cómo funciona
 
 La rama y docs revisadas son v2 RC y piden --pre; sin él se instala v1 con otra API; el autor desaconseja RC para capital real
 

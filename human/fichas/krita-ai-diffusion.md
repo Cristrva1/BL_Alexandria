@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Generative AI for Krita, plugin para usar IA generativa dentro de Krita, de @Acly (Interstice). Licencia GPL-3.0. Es maduro (~11k estrellas, v1.53.0).
+
+## ¿Qué hace?
+
+Integra generación, inpainting, outpainting, refinado, regiones, control por bocetos y poses, y upscaling en el flujo de pintura de Krita, con selección como máscara. Prioriza precisión y control sobre la generación por texto. Puede usar modelos propios en local o generación en la nube de pago.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin de Krita desde la release y, desde el docker del plugin, se configura un servidor ComfyUI local gestionado o uno existente con las extensiones requeridas. En local necesita GPU NVIDIA con al menos 6 GB de VRAM (también admite AMD, Apple Silicon o CPU con menos rendimiento).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ComfyUI](comfyui.md) | Backend requerido del plugin. | Deja que el plugin instale ComfyUI o conecta uno con las extensiones listadas. |
+| [FLUX.2](flux2.md) | Usar modelos FLUX en Krita a través de ComfyUI. (combinación por arquitectura) | Instala el modelo en ComfyUI y selecciónalo en el plugin. |
+| [Real-ESRGAN](real-esrgan.md) | Upscaling en ComfyUI con modelos ESRGAN. (combinación por arquitectura) | Instala los modelos de upscale en ComfyUI. |
+
+**Notas:** Alternativas (elige una): invokeai.
+
+Estado en GitHub: activo · último push 2026-11-06 · última versión publicada v1.53.0 (2026-08-22) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Acly/krita-ai-diffusion/blob/main/README.md) · [2](https://docs.interstice.cloud/installation) · [3](https://docs.interstice.cloud/comfyui-setup)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU |
 | Coste | El coste depende del proveedor o la ruta. El servidor local consume tu equipo; Cloud tiene condiciones propias; modelos y descargas se presupuestan según ruta |
 | Equipo | Preparación según la ruta elegida. Krita compatible; plugin; servidor local o Cloud; GPU recomendada para local |
-
-El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU
-
-## Qué puedes hacer con él
-
-Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting.
-
-## Por qué destaca
-
-Usos propuestos: Completar un fondo en una ilustración; Usar un boceto para guiar una imagen.
-
-## Cómo funciona
 
 El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Krita compatible; plugin; servidor local o Cloud; GPU recomendada para local
 - **Etiquetas:** `image` `design` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Alternativas (elige una)
 

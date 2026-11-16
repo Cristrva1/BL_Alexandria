@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Mercury, agente personal open source «con alma» (personalidad escrita por el usuario), de cosmicstack-labs. Licencia MIT. Tiene ~4k estrellas.
+
+## ¿Qué hace?
+
+Lee y escribe archivos, ejecuta comandos, trabaja con git y GitHub, investiga en la web y gestiona una agenda, comprobando cada acción con tus reglas de permisos y un presupuesto diario de tokens. Mercury Code actúa como programador en pareja y Mercury Bots como equipo de especialistas programados.
+
+## ¿Cómo lo hace?
+
+Se instala con un instalador de una línea o con `npm i -g @cosmicstack/mercury-agent` (Node 22+), en macOS, Linux, Windows y Android (Termux). Se usa desde TUI, Telegram, Discord, Slack, Signal o un panel web, con DeepSeek, OpenAI, Anthropic, Grok, Ollama, LM Studio o endpoints compatibles.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local documentado. | Configura Ollama Local. |
+| [litellm](litellm.md) | Proxy compatible documentado. | Apunta el endpoint compatible con OpenAI al proxy. |
+| [SearXNG](searxng.md) | Búsqueda web autoalojada. (combinación por arquitectura) | Expón SearXNG si el agente lo admite. |
+
+**Notas:** Alternativas (elige una): openclaw, hermes-agent. Se quita claude-mem (es un plugin de Claude Code y OpenClaw, no de Mercury).
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.5.2 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cosmicstack-labs/mercury-agent/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El asistente inicia un servicio en segundo plano; revisa su estado antes de añadir canales o ejecución programada |
 | Coste | El coste depende del proveedor o la ruta. API, Mercury Cloud o modelos locales según elección; Ollama Cloud no es inferencia local |
 | Equipo | Preparación según la ruta elegida. Node 22 o posterior; proveedor u Ollama/LM Studio; perfil de prueba |
-
-El asistente inicia un servicio en segundo plano; revisa su estado antes de añadir canales o ejecución programada
-
-## Qué puedes hacer con él
-
-Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web.
-
-## Por qué destaca
-
-Usos propuestos: Probar un asistente persistente; Estudiar presupuestos de tokens.
-
-## Cómo funciona
 
 El asistente inicia un servicio en segundo plano; revisa su estado antes de añadir canales o ejecución programada
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22 o posterior; proveedor u Ollama/LM Studio; perfil de prueba
 - **Etiquetas:** `agents` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [claude-mem](claude-mem.md) | 117k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
 
 ## Alternativas (elige una)
 

@@ -12,24 +12,35 @@
 
 ## ¿Qué es?
 
-Plataforma de atención al cliente de código abierto (MIT) y autoalojable, alternativa a Intercom o Zendesk.
+Chatwoot, plataforma de atención al cliente autoalojable y alternativa a Intercom o Zendesk, de Chatwoot Inc. La Community Edition es MIT; el directorio `enterprise/` tiene licencia propia (por eso GitHub muestra NOASSERTION). Es madura (~40k estrellas, v4.19.1).
 
 ## ¿Qué hace?
 
-Reúne en una bandeja omnicanal las conversaciones de chat web, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line y SMS, con asignación automática, respuestas predefinidas, notas privadas, contactos, campañas, centro de ayuda y reportes con CSAT. Incluye Captain, un agente de IA que responde consultas frecuentes; su disponibilidad en la edición comunitaria es [DATO NO VERIFICADO].
+Reúne en una bandeja omnicanal las conversaciones de chat web, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line y SMS. Incluye asignación automática, respuestas predefinidas, notas privadas, contactos, campañas, centro de ayuda y reportes con CSAT. Captain, su agente de IA, no está incluido en la Community Edition autoalojada: requiere los planes de pago Premium o Enterprise y una clave de OpenAI propia.
 
 ## ¿Cómo lo hace?
 
-Backend en Ruby y frontend en Vue, según los lenguajes del repositorio en GitHub. En Docker se despliega con PostgreSQL, Redis y workers Sidekiq para tareas en segundo plano, y necesita variables de entorno correctas para cada función. Se integra con Slack, Dialogflow, Shopify, Linear y Google Translate y permite incrustar herramientas internas como Dashboard Apps.
+El backend está en Ruby y el frontend en Vue, según los lenguajes del repositorio. En Docker se despliega con PostgreSQL, Redis y workers Sidekiq, y necesita variables de entorno correctas para cada función; para producción, la web oficial recomienda al menos 4 GB de RAM y 2 CPU. Se integra con Slack, Dialogflow, Shopify, Linear y Google Translate, y permite incrustar herramientas internas como Dashboard Apps.
 
 ## ¿Con qué otros repos se combina?
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [evolution-api](evolution-api.md) | Aporta el canal de WhatsApp mediante la integración nativa que Evolution tiene con Chatwoot. | Chatwoot primero; después configura la integración desde la instancia de Evolution. |
-| [n8n](n8n.md) | Automatiza acciones (crear contactos, etiquetar, notificar) llamando a la API de Chatwoot desde nodos HTTP (combinación por arquitectura). | Independientes; crea un token de acceso en Chatwoot y úsalo en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos. | chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces. |
+| [firecrawl](firecrawl.md) | Captain puede usar una clave de Firecrawl (opcional) para rastrear mejor los sitios web de su base de conocimiento; sin ella usa un rastreador simple. | Solo con Captain activo (plan de pago): añade la clave en el Super Admin. |
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatwoot/chatwoot/blob/develop/README.md) · [2](https://www.chatwoot.com/docs/self-hosted/deployment/docker) · [3](https://api.github.com/repos/chatwoot/chatwoot/languages) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenWA](openwa.md) · [Typebot](typebot.md) · [WAHA](waha.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
+
+**Notas:** Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. Se resuelve el antiguo [DATO NO VERIFICADO] sobre Captain: no está en la Community Edition.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.19.1 (2026-10-24) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatwoot/chatwoot/blob/develop/README.md) · [2](https://www.chatwoot.com/docs/self-hosted/deployment/docker) · [3](https://api.github.com/repos/chatwoot/chatwoot/languages) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md) · [5](https://www.chatwoot.com/pricing/self-hosted-plans) · [6](https://developers.chatwoot.com/self-hosted/faq) · [7](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/chatwoot)</sub>
 
 ## Acceso, coste y equipo
 

@@ -22,6 +22,12 @@
      "id": "opencode",
      "motivo": "Agente soportado con registro de sesiones.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Combinación recíproca: OpenClaw lo enlaza como «Plugin de memoria persistente para gateways OpenClaw».",
+     "orden_instalacion": "Orden indicado desde OpenClaw: Instala claude-mem con su comando para OpenClaw.",
+     "reciproca_de": "openclaw"
     }
    ],
    "notas": "Alternativas (elige una): engram, agentmemory. Las observaciones pueden contener código o secretos: revisa qué se sincroniza con la nube.",
@@ -62,6 +68,18 @@
      "id": "hermes-desktop",
      "motivo": "Hermes Desktop lista Mem0 entre sus proveedores de memoria.",
      "orden_instalacion": "Clave o servidor de Mem0 listo antes de activarlo en la app."
+    },
+    {
+     "id": "agents-towards-production",
+     "motivo": "Combinación recíproca: Agents Towards Production lo enlaza como «Tutorial de memoria auto-mejorable con Mem0».",
+     "orden_instalacion": "Orden indicado desde Agents Towards Production: Configura Mem0 (cloud o local) antes del notebook.",
+     "reciproca_de": "agents-towards-production"
+    },
+    {
+     "id": "agno",
+     "motivo": "Combinación recíproca: Agno lo enlaza como «Memoria externa con integración documentada por Mem0».",
+     "orden_instalacion": "Orden indicado desde Agno: Opcional: Agno ya trae memoria propia sobre PostgreSQL.",
+     "reciproca_de": "agno"
     }
    ],
    "notas": "Alternativas (elige una): letta, cognee, supermemory. La migración de la v2 a la v3 de código abierto tiene guía propia.",
@@ -134,6 +152,12 @@
      "id": "openclaw",
      "motivo": "Plugin oficial `@cognee/cognee-openclaw`.",
      "orden_instalacion": "OpenClaw instalado; añade el plugin desde npm."
+    },
+    {
+     "id": "neo4j-mcp",
+     "motivo": "Combinación recíproca: Neo4j MCP (oficial) lo enlaza como «Cognee documenta Neo4j como almacén de grafos; el servidor MCP da al agente consultas Cypher directas sobre lo que Cognee construye. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Neo4j MCP (oficial): Configura Cognee con Neo4j y luego añade el servidor MCP.",
+     "reciproca_de": "neo4j-mcp"
     }
    ],
    "notas": "Alternativas (elige una): graphiti, mem0, graphrag, letta. En la API, `ENABLE_BACKEND_ACCESS_CONTROL=false` solo para uso local de un usuario.",
@@ -169,6 +193,18 @@
      "id": "mcp-neo4j",
      "motivo": "Explorar y consultar con un agente el grafo guardado en Neo4j (combinación por arquitectura).",
      "orden_instalacion": "Usa un usuario de solo lectura para el MCP de Neo4j."
+    },
+    {
+     "id": "mirofish",
+     "motivo": "Combinación recíproca: MiroFish lo enlaza como «Motor open source de grafos temporales de Zep; podría sustituir o complementar Zep Cloud para no depender del servicio. (combinación por arquitectura: MiroFish solo documenta Zep Cloud)».",
+     "orden_instalacion": "Orden indicado desde MiroFish: Requiere adaptar el código; evalúalo solo si necesitas autoalojar la memoria.",
+     "reciproca_de": "mirofish"
+    },
+    {
+     "id": "neo4j-mcp",
+     "motivo": "Combinación recíproca: Neo4j MCP (oficial) lo enlaza como «Graphiti guarda su grafo de contexto en Neo4j 5.26 (entre otros backends); este servidor permite inspeccionar y consultar ese mismo grafo con Cypher. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Neo4j MCP (oficial): Instala Neo4j, ejecuta Graphiti y después conecta el servidor MCP en modo solo lectura.",
+     "reciproca_de": "neo4j-mcp"
     }
    ],
    "notas": "Alternativas (elige una): cognee, graphrag.",
@@ -241,6 +277,11 @@
      "id": "hermes-agent",
      "motivo": "Agente soportado de forma nativa.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "deepseek-harness",
+     "motivo": "agentmemory declara capturar sesiones de DeepSeek Harness para que otro agente retome historial y lecciones.",
+     "orden_instalacion": "Conecta agentmemory después de configurar DSH."
     }
    ],
    "notas": "Alternativas (elige una): engram, supermemory, claude-mem. No expongas los puertos 3111/3113 fuera de loopback sin autenticación.",
@@ -311,6 +352,17 @@
      "id": "gemini-cli",
      "motivo": "Destino de configuración soportado.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "deepseek-harness",
+     "motivo": "La guía oficial de DSH incluye una configuración de referencia para conectar Engram como memoria MCP vía `dsh-mcp-client`.",
+     "orden_instalacion": "Instala Engram con la versión fijada en la guía de DSH y activa la overlay."
+    },
+    {
+     "id": "antigravity-cli",
+     "motivo": "Combinación recíproca: Antigravity CLI lo enlaza como «Engram documenta una configuración para Antigravity como cliente MCP de memoria persistente. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Antigravity CLI: Instala Engram y registra su servidor MCP; comprueba que la guía aplica a la CLI.",
+     "reciproca_de": "antigravity-cli"
     }
    ],
    "notas": "Alternativas (elige una): claude-mem, agentmemory.",
@@ -381,9 +433,14 @@
      "id": "hermes-agent",
      "motivo": "Fuente de importación soportada.",
      "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "deepseek-harness",
+     "motivo": "Es un plugin para DeepSeek Harness: el anfitrión que carga Noema como memoria persistente.",
+     "orden_instalacion": "Instala y arranca DSH antes de añadir el plugin."
     }
    ],
-   "notas": "Requiere DeepSeek Harness, que no está en el catálogo.",
+   "notas": "Requiere DeepSeek Harness (deepseek-harness).",
    "fuentes": [
     "https://github.com/ZSeven-W/dsh-noema/blob/main/README.md"
    ],

@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Kit de instrumentación dinámica para desarrolladores, ingenieros inversos e investigadores de seguridad. Licencia wxWindows Library Licence 3.1 (GitHub muestra NOASSERTION). Es muy maduro y activo (~23k estrellas, 17.26.3).
+
+## ¿Qué hace?
+
+Inyecta JavaScript en procesos en ejecución para interceptar funciones, leer y modificar memoria, trazar llamadas y cambiar comportamiento en tiempo real. Funciona en Windows, macOS, Linux, iOS, Android y otros. Otras herramientas se apoyan en él, como el plugin r2frida de radare2.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install frida-tools` (CLI), `pip install frida` (Python) o `npm install frida` (Node.js), o desde binarios precompilados. En Android o iOS se ejecuta `frida-server` en el dispositivo (normalmente con root o jailbreak) o se incrusta Frida Gadget en la app. Compilarlo desde el código es complejo y está documentado aparte.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [radare2](radare2.md) | Combinar análisis estático e instrumentación con r2frida. | Instala Frida y luego `r2pm -ci r2frida`. |
+| [mitmproxy](mitmproxy.md) | Desactivar el certificate pinning con scripts de Frida para interceptar el tráfico HTTPS de una app. (combinación por arquitectura) | Configura el proxy y el certificado de mitmproxy y carga el script de Frida al lanzar la app. |
+| [jadx](jadx.md) | Localizar en el código decompilado los métodos que luego interceptas con Frida. (combinación por arquitectura) | Decompila en JADX, anota clases y métodos y escribe los hooks. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[angr](angr.md) · [Apktool](apktool.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [bla](bla.md)
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 17.26.3 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/frida/frida/blob/main/README.md) · [2](https://frida.re/docs/home/) · [3](https://frida.re/docs/android/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. La instrumentación modifica la ejecución; no equivale a una inspección estática sin efectos |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; dispositivos y herramientas tienen recursos propios |
 | Equipo | Preparación según la ruta elegida. Paquetes de plataforma; programa propio de laboratorio; permisos del entorno |
-
-La instrumentación modifica la ejecución; no equivale a una inspección estática sin efectos
-
-## Qué puedes hacer con él
-
-Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su ejecución.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar comportamiento dinámico de una app propia; Depurar una llamada que no aparece en logs.
-
-## Cómo funciona
 
 La instrumentación modifica la ejecución; no equivale a una inspección estática sin efectos
 

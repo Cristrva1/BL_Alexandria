@@ -29,6 +29,7 @@ Se instala con `npx skills add ScrapeCreators/social-media-research-skills` y ne
 | [Claude Code](claude-code.md) | Agente compatible documentado. | Define la clave de ScrapeCreators como variable de entorno. |
 | [Codex CLI](codex.md) | Agente compatible documentado. | Igual que arriba. |
 | [postiz-app](postiz-app.md) | Convertir los hallazgos en publicaciones programadas (combinación por arquitectura). | Investiga primero; programa después. |
+| [instagram-agent-skill](instagram-agent-skill.md) | Combinación recíproca: instagram-agent-skill lo enlaza como «Datos de competidores y tendencias para alimentar los guiones (combinación por arquitectura)». | Orden indicado desde instagram-agent-skill: Requiere clave de ScrapeCreators. |
 
 **Notas:** Alternativa (elige una): last30days-skill. Cada consulta consume créditos de ScrapeCreators.
 

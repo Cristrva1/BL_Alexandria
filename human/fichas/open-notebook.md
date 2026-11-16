@@ -28,7 +28,10 @@ Backend en Python con LangChain, frontend Next.js/React y SurrealDB como base de
 |---|---|---|
 | [Ollama](ollama.md) | Proveedor documentado para usarlo 100 % en local. | Ollama primero; configura su URL accesible desde el contenedor. |
 | [vLLM](vllm.md) | Servidor compatible con OpenAI citado en el README. | vLLM en un equipo con GPU; registra su URL como proveedor compatible. |
-| [n8n](n8n.md) | Automatizar la ingesta de fuentes o la generación de podcasts con su API REST (combinación por arquitectura). | Protege la API (puerto 5055) antes de exponerla a n8n. |
+| [activepieces](activepieces.md) | Automatizar la ingesta de fuentes o la generación de podcasts con su API REST (combinación por arquitectura). | Protege la API (puerto 5055) antes de exponerla a Activepieces. |
+| [scientific-agent-skills](scientific-agent-skills.md) | Combinación recíproca: scientific-agent-skills lo enlaza como «Skill de integración explícita con Open Notebook». | Orden indicado desde scientific-agent-skills: Open Notebook en marcha y con API accesible antes de usar la skill. |
+| [olmOCR](olmocr.md) | Combinación recíproca: olmOCR lo enlaza como «Cargar documentos convertidos como fuentes de investigación (combinación por arquitectura)». | Orden indicado desde olmOCR: Convierte primero y súbelos como Markdown. |
+| [VibeVoice](vibevoice.md) | Combinación recíproca: VibeVoice lo enlaza como «Narración de podcasts. (combinación por arquitectura)». | Orden indicado desde VibeVoice: Usa un TTS compatible para los episodios. |
 
 **Notas:** Alternativas (elige una): deeptutor, surfsense. En redes compartidas pon una contraseña o un proxy delante. Se retiraron las combinaciones antiguas con odysseus (se solapa como espacio de trabajo) y markitdown (no documentada).
 

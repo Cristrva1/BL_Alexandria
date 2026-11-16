@@ -10,6 +10,41 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+PostHog, plataforma de analítica de producto y capa de datos para producto y agentes. Licencia MIT salvo la carpeta `ee` (GitHub muestra NOASSERTION). Es muy activa (~41k estrellas).
+
+## ¿Qué hace?
+
+Reúne analítica de producto y web, grabaciones de sesión, feature flags, experimentos, encuestas, seguimiento de errores, data warehouse y analítica de LLM y MCP. Tiene un servidor MCP remoto (`mcp.posthog.com`) para consultar y actuar sobre los datos desde agentes.
+
+## ¿Cómo lo hace?
+
+Se usa en PostHog Cloud (EE. UU. o UE) o se autoaloja la versión «hobby» con un script Docker (recomendado 4 GB de RAM), sin soporte para producción. Se integra con un asistente (`npx @posthog/wizard`), el snippet web o SDK por lenguaje.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Servidor MCP oficial instalable con `npx @posthog/wizard mcp add`. | Ejecuta el asistente y autoriza tu proyecto. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos. | posthog en marcha con sus credenciales; después añade la pieza `posthog` en un flujo de Activepieces. |
+| [metabase](metabase.md) | BI sobre datos exportados del warehouse de PostHog. (combinación por arquitectura) | Exporta o sincroniza los datos y conéctalos a Metabase. |
+| [claude-seo](claude-seo.md) | Combinación recíproca: claude-seo lo enlaza como «Extensión `seo-posthog` para cruzar datos de analítica». | Orden indicado desde claude-seo: Configura credenciales de PostHog de solo lectura. |
+| [Marketing Skills](marketingskills.md) | Combinación recíproca: Marketing Skills lo enlaza como «Leer métricas de producto para las skills de analítica y conversión (combinación por arquitectura)». | Orden indicado desde Marketing Skills: Usa credenciales de solo lectura siguiendo su guía de conexión. |
+| [mautic](mautic.md) | Combinación recíproca: mautic lo enlaza como «PostHog mide el comportamiento en producto y Mautic actúa con campañas sobre esos segmentos (combinación por arquitectura)». | Orden indicado desde mautic: Define un identificador común de contacto antes de sincronizar datos entre ambos. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[skills](minimalist-entrepreneur-skills.md)
+
+**Notas:** Sin alternativas declaradas. El autoalojamiento «hobby» no es para producción.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada desktop-v0.61.1042 (2026-11-15) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PostHog/posthog/blob/master/README.md) · [2](https://posthog.com/docs/model-context-protocol) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/posthog)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP remoto documenta Claude Code y Codex y enruta por región; empieza consultando datos antes de permitir cambios |
 | Coste | El coste depende del proveedor o la ruta. Cada producto tiene cupos y precios; AI y servicios adicionales pueden consumir créditos; el MCP no paga esos consumos con el plan del agente |
 | Equipo | Preparación según la ruta elegida. Cuenta y región de datos; SDK o snippet; cliente MCP opcional |
-
-El MCP remoto documenta Claude Code y Codex y enruta por región; empieza consultando datos antes de permitir cambios
-
-## Qué puedes hacer con él
-
-Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite.
-
-## Por qué destaca
-
-Usos propuestos: Entender abandono en un flujo de registro; Revisar errores y sesiones de una app.
-
-## Cómo funciona
 
 El MCP remoto documenta Claude Code y Codex y enruta por región; empieza consultando datos antes de permitir cambios
 
@@ -93,12 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta y región de datos; SDK o snippet; cliente MCP opcional
 - **Etiquetas:** `analytics` `python` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plugin oficial de Obsidian para importar notas desde otras apps y formatos. Licencia MIT. Es activo (~2k estrellas, 3.2.0).
+
+## ¿Qué hace?
+
+Convierte notas a Markdown plano desde Airtable, Apple Journal, Apple Notes, Bear, Evernote, Google Keep, Logseq, Microsoft OneNote, Notion, Roam Research, Samsung Notes, Tomboy y archivos CSV, HTML, Markdown o Textbundle. Cada formato tiene una guía en la ayuda oficial. Así se puede migrar a Obsidian sin depender del formato original.
+
+## ¿Cómo lo hace?
+
+Se instala desde Plugins de la comunidad (Importer). Es TypeScript y se compila con npm para desarrollo. Algunas fuentes requieren exportar primero desde la app de origen o iniciar sesión, según la guía.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [obsidian-help](obsidian-help.md) | Guías de importación oficiales por formato. | Lee la guía de tu app de origen y luego ejecuta el Importer. |
+| [Obsidian: distribución y extensiones](obsidian-releases.md) | Se distribuye a través del directorio oficial de plugins de la comunidad. | Instálalo desde el navegador de plugins de Obsidian. |
+| [markitdown](markitdown.md) | Convertir a Markdown formatos que el Importer no cubre (DOCX, PPTX, PDF). (combinación por arquitectura) | Convierte con MarkItDown y copia los `.md` al vault. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 3.2.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/obsidian-importer/blob/master/README.md) · [2](https://obsidian.md/help/import)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los comandos npm son para desarrollar el plugin; usa el flujo de instalación de Obsidian para importaciones normales |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; exportar desde la app original puede tener requisitos propios |
 | Equipo | Preparación según la ruta elegida. Obsidian; plugin Importer; exportación de prueba del formato admitido |
-
-Los comandos npm son para desarrollar el plugin; usa el flujo de instalación de Obsidian para importaciones normales
-
-## Qué puedes hacer con él
-
-Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian.
-
-## Por qué destaca
-
-Usos propuestos: Migrar una muestra desde otra app; Verificar un formato de exportación antes de migrar.
-
-## Cómo funciona
 
 Los comandos npm son para desarrollar el plugin; usa el flujo de instalación de Obsidian para importaciones normales
 

@@ -1,0 +1,577 @@
+{
+ "batch": "23-busqueda-social-y-mcp-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "agent-reach": {
+   "que_es": "Herramienta para que agentes de IA de línea de comandos busquen y lean plataformas a las que no llegan solos (X, Reddit, YouTube, Xiaohongshu y otras), de @Panniantong. Licencia MIT. Es muy popular (~112k estrellas, v1.6.1); el README está sobre todo en chino y muestra patrocinadores de proxies y scraping.",
+   "que_hace": "Añade a agentes como Claude Code, Codex, Hermes Agent u OpenClaw la capacidad de buscar publicaciones, leer contenidos, comentarios y perfiles en plataformas sociales y de vídeo. Cada plataforma tiene un estado (estable, opcional o experimental) y algunas requieren iniciar sesión. Para las que piden login usa un navegador dedicado que corre en segundo plano.",
+   "como_lo_hace": "Se instala pidiéndole al agente que siga `docs/install.md` del repo. El README advierte que el paquete `agent-reach` de PyPI no es este proyecto y no debe instalarse desde allí. Las plataformas con login usan tus cuentas, con el riesgo de bloqueo que eso implica.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente CLI al que Agent Reach añade plataformas, citado en el README.",
+     "orden_instalacion": "Pide a Claude Code que siga `docs/install.md`."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "Agente compatible citado en el README.",
+     "orden_instalacion": "Instala Agent Reach desde la conversación con OpenClaw."
+    },
+    {
+     "id": "last30days-skill",
+     "motivo": "Investigar tendencias sociales de los últimos 30 días con otra skill especializada. (combinación por arquitectura)",
+     "orden_instalacion": "Usa ambas en el mismo agente; evita duplicar consultas a las mismas plataformas."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Instala solo desde GitHub (hay un paquete homónimo en PyPI que no es este). Respeta los términos de uso de cada plataforma y la privacidad de las personas.",
+   "fuentes": [
+    "https://github.com/Panniantong/Agent-Reach/blob/main/README.md",
+    "https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md"
+   ],
+   "github": {
+    "name_with_owner": "Panniantong/Agent-Reach",
+    "archived": false,
+    "pushed_at": "2026-11-08",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.6.1 (2026-11-01)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "last30days-skill": {
+   "que_es": "Skill de investigación que resume lo ocurrido en los últimos 30 días sobre un tema a partir de señales sociales (votos, likes, mercados de predicción), de @mvanhorn. Licencia MIT. Es muy popular y activa (~68k estrellas, v4.0.5).",
+   "que_hace": "Busca en Reddit, Hacker News, Polymarket y GitHub sin configuración, y con un asistente desbloquea X, YouTube (transcripciones), TikTok, arXiv, Techmeme y otras fuentes. Algunas fuentes opcionales usan servicios de terceros (ScrapeCreators, Bright Data) o sesiones propias. Prioriza lo que la gente vota o apuesta frente a lo que eligen los editores.",
+   "como_lo_hace": "Se instala con `npx skills add mvanhorn/last30days-skill -g` (Claude Code, Codex, Cursor, Copilot, Gemini CLI y más de 50 hosts de Agent Skills), o como extensión `.mcpb` en Claude Desktop. Se usa con `/last30days <tema>`. Las fuentes de pago consumen tus créditos.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Host principal de la skill.",
+     "orden_instalacion": "Instala con `npx skills add … -a claude-code`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Host compatible mediante Agent Skills.",
+     "orden_instalacion": "Instala con `npx skills add … -g` y selecciona Codex."
+    },
+    {
+     "id": "agent-reach",
+     "motivo": "Ampliar las plataformas accesibles al agente. (combinación por arquitectura)",
+     "orden_instalacion": "Instala Agent Reach si necesitas plataformas que la skill no cubre."
+    }
+   ],
+   "notas": "Alternativas (elige una): social-media-research-skills. Investigar a personas concretas exige cuidado con la privacidad.",
+   "fuentes": [
+    "https://github.com/mvanhorn/last30days-skill/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "mvanhorn/last30days-skill",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v4.0.5 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "changedetection": {
+   "que_es": "Monitor autoalojado de cambios en páginas web (changedetection.io), de @dgtlmoon. Licencia Apache-2.0. Es maduro y activo (~36k estrellas, 0.70.3) y tiene versión alojada de pago.",
+   "que_hace": "Vigila páginas y avisa por Discord, email, Slack, Telegram, webhook y muchos otros canales cuando cambian precios, textos o condiciones. Puede filtrar por selectores, ejecutar pasos de navegador (login, clics) y resumir o filtrar los cambios con un LLM (OpenAI, Gemini, Anthropic u Ollama local). Incluye servidor MCP para conectar asistentes.",
+   "como_lo_hace": "Se instala con Docker o Docker Compose (`docker compose up -d`). Los pasos de navegador y las páginas con JavaScript requieren activar Playwright con un navegador aparte. Tiene selector visual para elegir qué parte de la página vigilar.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Resúmenes y filtros de cambios con un modelo local, soportado según el README.",
+     "orden_instalacion": "Levanta Ollama y configúralo como proveedor de LLM."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Consultar y gestionar vigilancias desde un asistente con el servidor MCP de changedetection.io.",
+     "orden_instalacion": "Activa el MCP en tu instancia y regístralo en el cliente."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura)",
+     "orden_instalacion": "Configura una notificación webhook hacia un flujo de Activepieces."
+    },
+    {
+     "id": "archivebox",
+     "motivo": "Combinación recíproca: ArchiveBox lo enlaza como «Archivar una nueva copia cuando una página cambia. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ArchiveBox: Usa una notificación de changedetection (webhook) para añadir la URL a ArchiveBox.",
+     "reciproca_de": "archivebox"
+    },
+    {
+     "id": "cloud-mail",
+     "motivo": "Combinación recíproca: cloud-mail lo enlaza como «Usar una dirección de cloud-mail como buzón de alertas de cambios web y reenviarlas a Telegram (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cloud-mail: Crea la dirección en cloud-mail y configúrala como destino de notificación en changedetection.",
+     "reciproca_de": "cloud-mail"
+    },
+    {
+     "id": "huginn",
+     "motivo": "Combinación recíproca: huginn lo enlaza como «Changedetection vigila cambios visuales o de texto en páginas complejas y puede notificar por webhook a Huginn, que encadena acciones posteriores (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde huginn: Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos.",
+     "reciproca_de": "huginn"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas.",
+   "fuentes": [
+    "https://github.com/dgtlmoon/changedetection.io/blob/master/README.md",
+    "https://changedetection.io/MCP"
+   ],
+   "github": {
+    "name_with_owner": "dgtlmoon/changedetection.io",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "0.70.3 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "yt-dlp": {
+   "que_es": "Descargador de audio y vídeo por línea de comandos con soporte para miles de sitios, fork de youtube-dl. El código del repositorio es Unlicense, pero los ejecutables publicados incluyen código GPLv3+ o ISC. Es muy maduro y activo (~208k estrellas, 2026.10.26).",
+   "que_hace": "Descarga vídeos, audio, listas, subtítulos y metadatos, con selección avanzada de formatos, posprocesado, integración con SponsorBlock y plantillas de nombres. Se mantiene al día con los cambios de los sitios mediante versiones frecuentes. También se usa como librería Python.",
+   "como_lo_hace": "Se instala con los binarios oficiales, `pip install -U \"yt-dlp[default]\"` o gestores de paquetes. Usa FFmpeg para unir formatos y convertir. Algunos sitios necesitan cookies o un runtime de JavaScript.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Dependencia recomendada para fusionar y convertir formatos.",
+     "orden_instalacion": "Instala FFmpeg antes de usar yt-dlp."
+    },
+    {
+     "id": "whisperx",
+     "motivo": "Transcribir el audio descargado. (combinación por arquitectura)",
+     "orden_instalacion": "Descarga con `-x` y pasa el audio a WhisperX."
+    },
+    {
+     "id": "fabric",
+     "motivo": "Extraer transcripciones de YouTube y resumirlas con patrones de Fabric. (combinación por arquitectura)",
+     "orden_instalacion": "Instala yt-dlp y usa las utilidades de YouTube de Fabric."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Descargar contenido protegido puede infringir derechos de autor o términos de uso.",
+   "fuentes": [
+    "https://github.com/yt-dlp/yt-dlp/blob/master/README.md",
+    "https://github.com/yt-dlp/yt-dlp/wiki/Installation"
+   ],
+   "github": {
+    "name_with_owner": "yt-dlp/yt-dlp",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Unlicense",
+    "primary_language": "Python",
+    "latest_release": "2026.10.26 (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "instaloader": {
+   "que_es": "Herramienta Python para descargar fotos, vídeos y metadatos de Instagram. Licencia MIT. Es madura (~14k estrellas, v4.16) y muestra un patrocinador de APIs sociales.",
+   "que_hace": "Descarga perfiles públicos y privados (si inicias sesión y tienes acceso), hashtags, historias, destacados, reels, publicaciones etiquetadas y guardadas, con comentarios, geoetiquetas y textos. Actualiza descargas de forma incremental (`--fast-update`) y detecta cambios de nombre de perfil. También sirve como librería Python.",
+   "como_lo_hace": "Se instala con `pip install instaloader` y se usa con `instaloader <perfil> [--stories] [--login USUARIO]`. Instagram limita las peticiones y puede bloquear cuentas que descargan mucho.",
+   "combina_con": [
+    {
+     "id": "archivebox",
+     "motivo": "Archivar también las publicaciones en formatos de archivo web. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa las URLs de las publicaciones a ArchiveBox."
+    },
+    {
+     "id": "whisper",
+     "motivo": "Transcribir el audio de los reels descargados. (combinación por arquitectura)",
+     "orden_instalacion": "Extrae el audio y transcríbelo con Whisper."
+    },
+    {
+     "id": "yt-dlp",
+     "motivo": "Descargador alternativo para vídeos sueltos de otros sitios. (combinación por arquitectura)",
+     "orden_instalacion": "Usa cada uno para lo que cubre mejor."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas. Descargar contenido de otras personas puede vulnerar su privacidad.",
+   "fuentes": [
+    "https://github.com/instaloader/instaloader/blob/master/README.rst",
+    "https://instaloader.github.io/"
+   ],
+   "github": {
+    "name_with_owner": "instaloader/instaloader",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v4.16 (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "fastmcp": {
+   "que_es": "Framework Python para construir servidores, clientes y aplicaciones interactivas del Model Context Protocol, hecho por Prefect. Licencia Apache-2.0. Es muy popular (~29k estrellas, v4.2.0); su versión 1.0 se incorporó al SDK oficial de Python en 2024.",
+   "que_hace": "Define herramientas, recursos y prompts con funciones Python decoradas y genera el esquema, la validación y el transporte. Incluye cliente, composición y proxy de servidores, autenticación, pruebas y despliegue. Prefect ofrece aparte FastMCP Gateway (producto comercial) para operar servidores a escala.",
+   "como_lo_hace": "Se instala con `uv pip install fastmcp` o `pip install fastmcp` y se ejecuta con `fastmcp run`. Tiene comandos para instalar el servidor en clientes como Claude Code y una contraparte TypeScript mantenida por el mismo equipo.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Instalar el servidor en Claude Code con la integración documentada de FastMCP.",
+     "orden_instalacion": "Ejecuta el comando de instalación para Claude Code de FastMCP."
+    },
+    {
+     "id": "mcp-inspector",
+     "motivo": "Probar y depurar el servidor antes de usarlo. (combinación por arquitectura)",
+     "orden_instalacion": "Lanza el Inspector contra tu servidor."
+    },
+    {
+     "id": "pydantic-ai",
+     "motivo": "Consumir el servidor desde agentes Python con el cliente MCP de Pydantic AI. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el servidor como toolset MCP en Pydantic AI."
+    }
+   ],
+   "notas": "Alternativas (elige una): mcp-python-sdk.",
+   "fuentes": [
+    "https://github.com/PrefectHQ/fastmcp/blob/main/README.md",
+    "https://gofastmcp.com/getting-started/installation",
+    "https://gofastmcp.com/integrations/claude-code"
+   ],
+   "github": {
+    "name_with_owner": "PrefectHQ/fastmcp",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v4.2.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mcp-typescript-sdk": {
+   "que_es": "SDK oficial en TypeScript del Model Context Protocol. La rama principal es la v2 estable (v2.4.0), que implementa la especificación MCP 2026-07-28. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION); ~14k estrellas.",
+   "que_hace": "Proporciona librerías de servidor (herramientas, recursos, prompts, Streamable HTTP, stdio, ayudas de autenticación) y de cliente (transportes, ayudas OAuth). Se publica en paquetes separados: `@modelcontextprotocol/server` y `@modelcontextprotocol/client`. Funciona en Node.js, Bun y Deno.",
+   "como_lo_hace": "Se instala con npm (`npm install @modelcontextprotocol/server`, más `zod` para los esquemas). Hay guía de migración desde la v1. Es la base de muchos servidores MCP en JavaScript.",
+   "combina_con": [
+    {
+     "id": "mcp-inspector",
+     "motivo": "Herramienta oficial para probar servidores construidos con el SDK.",
+     "orden_instalacion": "Ejecuta `npx @modelcontextprotocol/inspector` contra tu servidor."
+    },
+    {
+     "id": "vercel-ai",
+     "motivo": "Consumir servidores MCP desde apps con el cliente MCP del AI SDK.",
+     "orden_instalacion": "Conecta tu servidor con las herramientas MCP del AI SDK."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Probar el servidor en un agente real. (combinación por arquitectura)",
+     "orden_instalacion": "Regístralo con `claude mcp add`."
+    }
+   ],
+   "notas": "Alternativas (elige una): mcp-use.",
+   "fuentes": [
+    "https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md",
+    "https://modelcontextprotocol.io/docs/tools/inspector",
+    "https://ai-sdk.dev/docs/ai-sdk-core/mcp-tools"
+   ],
+   "github": {
+    "name_with_owner": "modelcontextprotocol/typescript-sdk",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v2.4.0 (2026-10-23)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mcp-python-sdk": {
+   "que_es": "SDK oficial en Python del Model Context Protocol. Licencia MIT (el proyecto MCP está migrando a Apache-2.0). Es muy usado (~25k estrellas, v2.3.0).",
+   "que_hace": "Permite crear servidores MCP que exponen herramientas, recursos y prompts a cualquier host, y clientes que se conectan a cualquier servidor. Incluye transportes estándar y la API de alto nivel heredada de FastMCP 1.0. La v2 trae cambios documentados en «What's new in v2».",
+   "como_lo_hace": "Se instala con `uv add \"mcp[cli]\"` o `pip install \"mcp[cli]\"`; el extra `cli` añade los comandos `mcp dev`, `mcp run` y `mcp install`. La documentación está en py.sdk.modelcontextprotocol.io.",
+   "combina_con": [
+    {
+     "id": "mcp-inspector",
+     "motivo": "Probar el servidor durante el desarrollo; `mcp dev` lo usa.",
+     "orden_instalacion": "Ejecuta `mcp dev servidor.py`."
+    },
+    {
+     "id": "pydantic-ai",
+     "motivo": "Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el servidor como toolset MCP."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Probar el servidor en un agente. (combinación por arquitectura)",
+     "orden_instalacion": "Regístralo con `claude mcp add`."
+    },
+    {
+     "id": "mcp-for-beginners",
+     "motivo": "Combinación recíproca: MCP for Beginners lo enlaza como «SDK oficial usado en los ejemplos de Python».",
+     "orden_instalacion": "Orden indicado desde MCP for Beginners: Instala `mcp[cli]` para seguir las lecciones de Python.",
+     "reciproca_de": "mcp-for-beginners"
+    }
+   ],
+   "notas": "Alternativas (elige una): fastmcp.",
+   "fuentes": [
+    "https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md",
+    "https://py.sdk.modelcontextprotocol.io/get-started/"
+   ],
+   "github": {
+    "name_with_owner": "modelcontextprotocol/python-sdk",
+    "archived": false,
+    "pushed_at": "2026-11-05",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.3.0 (2026-10-02)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mcp-inspector": {
+   "que_es": "Herramienta oficial para inspeccionar servidores del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es activa (~11k estrellas, 2.15.0).",
+   "que_hace": "Se conecta a un servidor MCP y permite listar y llamar herramientas, leer recursos, probar prompts y ver los mensajes intercambiados. Ofrece cuatro modos en un solo paquete: interfaz web, CLI, TUI y `mcpdo` (experimental, conexiones persistentes). Gestiona secretos como tokens OAuth y los guarda en el llavero del sistema si existe.",
+   "como_lo_hace": "Se ejecuta con `npx @modelcontextprotocol/inspector` (web), `--cli` o `--tui`. La v2 cambia flags y requisitos de Node respecto a la v1. En equipos sin llavero, revisa el aviso del README sobre dónde se guardan los secretos.",
+   "combina_con": [
+    {
+     "id": "fastmcp",
+     "motivo": "Depurar servidores construidos con FastMCP. (combinación por arquitectura)",
+     "orden_instalacion": "Arranca el servidor y conéctalo con el Inspector."
+    },
+    {
+     "id": "mcp-typescript-sdk",
+     "motivo": "Herramienta oficial para probar servidores del SDK TypeScript.",
+     "orden_instalacion": "Ejecuta el Inspector contra tu servidor."
+    },
+    {
+     "id": "mcp-python-sdk",
+     "motivo": "`mcp dev` del SDK de Python lanza el Inspector.",
+     "orden_instalacion": "Instala `mcp[cli]` y ejecuta `mcp dev`."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Trata los secretos que guarda como credenciales.",
+   "fuentes": [
+    "https://github.com/modelcontextprotocol/inspector/blob/main/README.md",
+    "https://modelcontextprotocol.io/docs/tools/inspector"
+   ],
+   "github": {
+    "name_with_owner": "modelcontextprotocol/inspector",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "2.15.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mcp-use": {
+   "que_es": "Framework TypeScript para construir, probar y publicar servidores MCP, plugins de ChatGPT y conectores de Claude, de mcp-use. Licencia MIT. Es activo (~11k estrellas, mcp-use@2.12.4).",
+   "que_hace": "Ofrece tipado completo, vistas nativas y soporte de MCP Apps, un Inspector integrado y una experiencia pensada para agentes: andamiaje, invocación, inspección, capturas y despliegue desde el propio agente. Incluye ejemplos y opción de despliegue en su plataforma.",
+   "como_lo_hace": "Se instala con npm (`mcp-use`) y se crea un proyecto con su CLI; la v2 tiene guía de migración que puede ejecutar el agente. La documentación está en docs.mcp-use.com.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Construir y probar conectores desde el agente con el flujo «agent-first» de mcp-use.",
+     "orden_instalacion": "Crea el proyecto y deja que el agente use los comandos de mcp-use."
+    },
+    {
+     "id": "awesome-mcp-servers",
+     "motivo": "Buscar servidores existentes antes de construir uno. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta la lista y reutiliza lo que exista."
+    },
+    {
+     "id": "mcp",
+     "motivo": "Referencia de servidores MCP de Google para integrarlos o tomarlos como ejemplo. (combinación por arquitectura)",
+     "orden_instalacion": "Revisa la lista de Google y conecta los que necesites."
+    },
+    {
+     "id": "servers",
+     "motivo": "Combinación recíproca: servers lo enlaza como «Tomar los servidores como ejemplo al construir uno propio. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde servers: Estudia el servidor parecido y construye el tuyo con mcp-use.",
+     "reciproca_de": "servers"
+    }
+   ],
+   "notas": "Alternativas (elige una): mcp-typescript-sdk.",
+   "fuentes": [
+    "https://github.com/mcp-use/mcp-use/blob/main/README.md",
+    "https://docs.mcp-use.com/v2/typescript/getting-started/welcome"
+   ],
+   "github": {
+    "name_with_owner": "mcp-use/mcp-use",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "mcp-use@2.12.4 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "context7": {
+   "que_es": "Context7, servicio de Upstash que da a los agentes documentación actualizada y ejemplos de código de librerías. Licencia MIT para el repo; el servicio es alojado y requiere clave. Es muy popular (~65k estrellas).",
+   "que_hace": "Evita APIs inventadas o ejemplos viejos: el agente consulta la documentación vigente y por versión de la librería que usa. Funciona en dos modos: CLI + skill (`ctx7`, sin MCP) o servidor MCP con herramientas de documentación. Tiene paquetes como un toolkit para el AI SDK.",
+   "como_lo_hace": "Se configura con `npx ctx7 setup` (Node.js 22.13+), que autentica por OAuth, genera una clave e instala la skill o el MCP (`--cursor`, `--claude`, `--opencode`…). También se puede usar el servidor remoto `https://mcp.context7.com/mcp` con cabecera de autorización. La documentación lista la instalación manual para más de 30 clientes.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Configuración automática con `npx ctx7 setup --claude`.",
+     "orden_instalacion": "Ejecuta el setup y elige modo CLI + skill o MCP."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Configuración automática con `--opencode`.",
+     "orden_instalacion": "Ejecuta `npx ctx7 setup --opencode`."
+    },
+    {
+     "id": "cline",
+     "motivo": "Instalación manual como servidor MCP, según la lista de clientes de Context7.",
+     "orden_instalacion": "Añade el servidor remoto con tu clave en la configuración MCP de Cline."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Las consultas salen hacia el servicio de Upstash.",
+   "fuentes": [
+    "https://github.com/upstash/context7/blob/master/README.md",
+    "https://context7.com/docs/resources/all-clients"
+   ],
+   "github": {
+    "name_with_owner": "upstash/context7",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "@upstash/context7-tools-ai-sdk@1.0.4 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "playwright-mcp": {
+   "que_es": "Servidor MCP oficial de Microsoft que da a los LLM automatización de navegador con Playwright. Licencia Apache-2.0. Es muy popular y activo (~40k estrellas, v0.0.85, aún 0.x).",
+   "que_hace": "Permite a un modelo navegar, hacer clic, rellenar formularios y leer páginas a través del árbol de accesibilidad (instantáneas estructuradas), sin depender de capturas de pantalla ni modelos de visión. El README recomienda Playwright CLI + skills para agentes de programación (más eficiente en tokens) y reserva el MCP para bucles que se benefician de estado persistente e inspección rica.",
+   "como_lo_hace": "Se añade al cliente MCP con `npx @playwright/mcp@latest` (VS Code, Cursor, Windsurf, Claude Desktop, Goose, Grok, Junie y otros); requiere Node.js. Tiene opciones de navegador, perfil, modo headless y capacidades adicionales.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Automatización de navegador desde el agente con `claude mcp add`.",
+     "orden_instalacion": "Registra `npx @playwright/mcp@latest` como servidor MCP."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Motor de automatización sobre el que se construye.",
+     "orden_instalacion": "Se instala con el servidor; los navegadores se descargan con Playwright."
+    },
+    {
+     "id": "mcp-inspector",
+     "motivo": "Inspeccionar las herramientas y respuestas del servidor. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el Inspector al servidor."
+    }
+   ],
+   "notas": "Alternativas (elige una): chrome-devtools-mcp, browser-use, browser-harness.",
+   "fuentes": [
+    "https://github.com/microsoft/playwright-mcp/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "microsoft/playwright-mcp",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.0.85 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "chrome-devtools-mcp": {
+   "que_es": "Chrome DevTools para agentes: servidor MCP y CLI del equipo de Chrome DevTools para controlar e inspeccionar un Chrome real. Licencia Apache-2.0. Es muy popular (~57k estrellas, v1.13.0).",
+   "que_hace": "Permite a agentes como Antigravity, Claude, Cursor o Copilot automatizar el navegador, depurar (consola, red), analizar rendimiento con trazas e inspeccionar páginas en vivo. Expone el contenido del navegador al cliente MCP, así que no debe usarse con datos sensibles. Solo soporta oficialmente Google Chrome y Chrome for Testing.",
+   "como_lo_hace": "Se añade con `npx -y chrome-devtools-mcp@latest`, como extensión de Gemini CLI o como plugin de otros agentes. Google recopila estadísticas de uso por defecto; se desactivan con `--no-usage-statistics` o con las variables `CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS` o `CI`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Depuración y automatización de Chrome desde el agente.",
+     "orden_instalacion": "Registra el servidor MCP con `--no-usage-statistics` si no quieres telemetría."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Instalación como extensión oficial de Gemini CLI.",
+     "orden_instalacion": "Ejecuta `gemini extensions install` con la URL del repo."
+    },
+    {
+     "id": "mcp-inspector",
+     "motivo": "Explorar las herramientas del servidor. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el Inspector al servidor."
+    },
+    {
+     "id": "puppeteer",
+     "motivo": "Combinación recíproca: Puppeteer lo enlaza como «MCP para agentes basado en DevTools».",
+     "orden_instalacion": "Orden indicado desde Puppeteer: Úsalo para depurar desde el agente.",
+     "reciproca_de": "puppeteer"
+    },
+    {
+     "id": "agent-browser",
+     "motivo": "Combinación recíproca: agent-browser lo enlaza como «Depuración profunda complementaria. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde agent-browser: Úsalo para rendimiento y red.",
+     "reciproca_de": "agent-browser"
+    },
+    {
+     "id": "awesome-chrome-devtools",
+     "motivo": "Combinación recíproca: awesome-chrome-devtools lo enlaza como «MCP para agentes del mismo ecosistema. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-chrome-devtools: Instálalo si usas agentes.",
+     "reciproca_de": "awesome-chrome-devtools"
+    }
+   ],
+   "notas": "Alternativas (elige una): playwright-mcp, browser-harness. Telemetría activada por defecto.",
+   "fuentes": [
+    "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ChromeDevTools/chrome-devtools-mcp",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "chrome-devtools-mcp-v1.13.0 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "github-mcp-server": {
+   "que_es": "Servidor MCP oficial de GitHub que conecta herramientas de IA con la plataforma. Licencia MIT. Es muy activo (~35k estrellas, v2.1.0).",
+   "que_hace": "Permite a agentes leer repositorios y código, gestionar issues y PR, analizar código, revisar workflows de Actions y automatizar tareas, organizados en toolsets que se pueden activar o desactivar. Tiene modo de solo lectura y políticas de gobierno para organizaciones. Se publica también como módulo Go.",
+   "como_lo_hace": "Se usa en remoto (alojado por GitHub, con OAuth o token) en hosts compatibles, o en local con Docker (`ghcr.io/github/github-mcp-server`) o el binario y un token personal. Hay guías de instalación para Claude, Codex y otros clientes. Limita los toolsets y permisos del token a lo necesario.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Guía oficial de instalación para Claude.",
+     "orden_instalacion": "Sigue `docs/installation-guides/install-claude.md`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Guía oficial de instalación para Codex.",
+     "orden_instalacion": "Sigue `docs/installation-guides/install-codex.md`."
+    },
+    {
+     "id": "strix",
+     "motivo": "Strix usa el servidor MCP de GitHub como ejemplo de configuración.",
+     "orden_instalacion": "Añádelo a `~/.strix/mcp-servers.json`."
+    },
+    {
+     "id": "agentes-chat",
+     "motivo": "Combinación recíproca: agentes-chat lo enlaza como «Conector MCP por URL. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde agentes-chat: Añade el servidor desde el panel de la organización.",
+     "reciproca_de": "agentes-chat"
+    },
+    {
+     "id": "awesome-copilot",
+     "motivo": "Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Servidor MCP que pueden usar los agentes de Copilot de la colección (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome GitHub Copilot: Configura el MCP en Copilot antes de usar agentes que lo requieran.",
+     "reciproca_de": "awesome-copilot"
+    },
+    {
+     "id": "cli",
+     "motivo": "Combinación recíproca: GitHub CLI lo enlaza como «Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde GitHub CLI: Usa `gh` en terminal y el servidor MCP en clientes sin shell.",
+     "reciproca_de": "cli"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Usa el modo de solo lectura cuando no necesites escribir.",
+   "fuentes": [
+    "https://github.com/github/github-mcp-server/blob/main/README.md",
+    "https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-claude.md",
+    "https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-codex.md"
+   ],
+   "github": {
+    "name_with_owner": "github/github-mcp-server",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "latest_release": "v2.1.0 (2026-11-03)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

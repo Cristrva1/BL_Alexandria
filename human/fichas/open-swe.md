@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Robin (repo open-swe), «fábrica de software» open source de LangChain construida sobre Deep Agents. El código propio es MIT y `vendor/` no está cubierto. Tiene ~11k estrellas (desktop-v0.3.18), está en desarrollo activo con cambios incompatibles y no acepta contribuciones externas.
+
+## ¿Qué hace?
+
+Investiga una base de código, implementa cambios en un sandbox aislado, los valida y entrega un pull request. También revisa PRs, aprende preferencias de revisión del repo, vigila la CI y responde a comentarios.
+
+## ¿Cómo lo hace?
+
+Desplegarlo tal cual requiere Managed Deep Agents de LangSmith; las herramientas MCP llegan mediante kits de LangSmith Managed Tools. Funciona sobre LangGraph y permite elegir modelos, skills, integraciones y proveedores de sandbox.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Deep Agents](deepagents.md) | Framework sobre el que está construido. | Viene incluido. |
+| [LangGraph](langgraph.md) | Runtime de orquestación. | Viene incluido. |
+| [E2B](e2b.md) | Proveedor de sandbox para ejecutar los cambios. (combinación por arquitectura) | Configura E2B como proveedor de sandbox si lo admite tu despliegue. |
+
+**Notas:** Alternativas (elige una): openhands. Fuerte dependencia de servicios de LangSmith.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada desktop-v0.3.18 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/open-swe/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios |
 | Coste | Consumo de APIs o servicios. El despliegue tal como está requiere Managed Deep Agents y servicios asociados; adaptar a otro runtime requiere trabajo adicional |
 | Equipo | Preparación según la ruta elegida. Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados |
-
-El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios
-
-## Qué puedes hacer con él
-
-Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión.
-
-## Cómo funciona
 
 El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados
 - **Etiquetas:** `coding-agent` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [E2B](e2b.md) | 14.9k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
 
 ## Alternativas (elige una)
 

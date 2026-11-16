@@ -29,6 +29,7 @@ Aplicación Python con varios backends: llama.cpp, ik_llama.cpp, Transformers y 
 | [LibreChat](librechat.md) | Usar la API compatible con OpenAI de TextGen como endpoint personalizado en un chat multiusuario (combinación por arquitectura). | Activa la API en TextGen; regístrala en `librechat.yaml`. |
 | [llmfit](llmfit.md) | Saber qué modelo y cuantización caben antes de descargar (combinación por arquitectura). | Ejecuta llmfit primero. |
 | [Unsloth](unsloth.md) | Afinar modelos con más eficiencia fuera de TextGen y cargar el resultado en él (combinación por arquitectura). | Entrena y exporta el adaptador o GGUF con Unsloth; luego cárgalo en TextGen. |
+| [SillyTavern](sillytavern.md) | Combinación recíproca: SillyTavern lo enlaza como «Text generation web UI (Ooba) es uno de los backends de texto que SillyTavern soporta». | Orden indicado desde SillyTavern: Arranca textgen con su API habilitada; después conéctalo desde SillyTavern. |
 
 **Notas:** Alternativas (elige una): jan, open-webui.
 

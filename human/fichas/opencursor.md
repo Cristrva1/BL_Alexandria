@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+OpenCursor, extensión open source de VS Code con agente de programación, de @PawanOsman. Licencia MIT. Tiene ~6k estrellas (0.2.1).
+
+## ¿Qué hace?
+
+Lleva al editor conversación, exploración de código, edición de archivos, comandos de terminal y revisión de cambios. Admite cuentas, claves de API propias o modelos locales con Ollama o llama.cpp (gestiona modelos GGUF), con índice de embeddings en el dispositivo para búsqueda semántica. Soporta MCP y hooks.
+
+## ¿Cómo lo hace?
+
+Se instala desde el VS Code Marketplace o con un `.vsix` de las releases, y se configura desde el panel de proveedores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local documentado. | Conecta el endpoint de Ollama en ajustes. |
+| [llama.cpp](llama-cpp.md) | Runtime llama.cpp gestionado por la extensión. | Configura llama.cpp y descarga un modelo GGUF. |
+| [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Añade el MCP de Context7. |
+
+**Notas:** Sin alternativas declaradas. No está relacionado con Cursor (producto comercial) pese al nombre.
+
+Estado en GitHub: activo · último push 2026-10-26 · última versión publicada 0.2.1 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PawanOsman/OpenCursor/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es una extensión independiente; las rutas de cuenta no la convierten en producto oficial de esos proveedores y los servicios de embeddings pueden ser distintos del modelo |
 | Coste | El coste depende del proveedor o la ruta. Admite cuentas de Claude Code, Codex y Antigravity por flujos del proyecto, API y modelos locales; costes y cuotas son externos |
 | Equipo | Preparación según la ruta elegida. VS Code; extensión o VSIX; cuenta, API u Ollama/llama.cpp; proyecto de prueba |
-
-Es una extensión independiente; las rutas de cuenta no la convierten en producto oficial de esos proveedores y los servicios de embeddings pueden ser distintos del modelo
-
-## Qué puedes hacer con él
-
-Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.
-
-## Por qué destaca
-
-Usos propuestos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota.
-
-## Cómo funciona
 
 Es una extensión independiente; las rutas de cuenta no la convierten en producto oficial de esos proveedores y los servicios de embeddings pueden ser distintos del modelo
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5). No está afiliada a Bitwarden: los fallos se reportan a Vaultwarden, no al soporte de Bitwarden.
+
+## ¿Qué hace?
+
+Implementa la API de cliente de Bitwarden para que las apps oficiales funcionen contra tu propio servidor con pocos recursos. Incluye vault personal, organizaciones, adjuntos, Send, 2FA, emergency access, panel de administración y la web vault. Algunas funciones empresariales de Bitwarden no existen o se comportan distinto.
+
+## ¿Cómo lo hace?
+
+Es un servidor Rust que usa SQLite por defecto y admite MySQL/MariaDB o PostgreSQL. Se despliega normalmente con la imagen Docker `vaultwarden/server` detrás de un proxy inverso. Necesita HTTPS, porque los clientes y la web vault dependen de las API criptográficas del navegador, que solo funcionan en contextos seguros. La configuración se hace con variables de entorno, documentadas en la wiki.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Bitwarden Clients](bitwarden-clients.md) | Clientes oficiales (web, extensión, escritorio, CLI) que se conectan a Vaultwarden. | Despliega Vaultwarden con HTTPS y configura la URL del servidor en cada cliente. |
+| [coolify](coolify.md) | Desplegar Vaultwarden como servicio de un clic con proxy y certificados (Coolify documenta el servicio Vaultwarden). | Instala Coolify, añade el servicio y asigna un dominio con HTTPS. |
+| [AdGuardHome](adguardhome.md) | Resolver un nombre local para el vault en la red de casa con reescrituras DNS. (combinación por arquitectura) | Crea la reescritura DNS hacia tu proxy inverso y emite el certificado para ese nombre. |
+
+**Notas:** Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.37.5 (2026-11-01) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dani-garcia/vaultwarden/blob/main/README.md) · [2](https://github.com/dani-garcia/vaultwarden/wiki) · [3](https://coolify.io/docs/services/vaultwarden)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; hosting, dominio, correo y copias son recursos propios |
 | Equipo | Preparación según la ruta elegida. Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia |
-
-Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden
-
-## Qué puedes hacer con él
-
-Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
-
-## Cómo funciona
 
 Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia
 - **Etiquetas:** `privacidad` `server` `rust`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Bitwarden Clients](bitwarden-clients.md) | 14.2k | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. |
 
 ## Enlaces
 
