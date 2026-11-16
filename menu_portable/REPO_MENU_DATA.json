@@ -83273,7 +83273,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Presentar una demo de producto; Preparar una pieza de lanzamiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "hyperframes",
+        "claude-code",
+        "gsap"
+      ],
       "alt": []
     },
     {
@@ -83387,7 +83391,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un corto animado de prueba; Estudiar personajes 2D en escena 3D",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "remotion",
+        "three.js",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -83756,7 +83764,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear versiones de un video propio; Coordinar subtítulos y B-roll de un tutorial",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "ffmpeg",
+        "comfyui"
+      ],
       "alt": []
     },
     {
@@ -83873,7 +83885,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar una dirección visual para un video; Preparar una pieza por código",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "ffmpeg",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -84228,7 +84244,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Procesar video dentro de una aplicación web; Construir una herramienta de conversión en navegador",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "remotion",
+        "ffmpeg",
+        "openfilm"
+      ],
       "alt": []
     },
     {
@@ -84347,7 +84367,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mejorar una pieza de lanzamiento; Preparar una animación tipográfica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "gsap",
+        "hyperframes",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -84586,7 +84610,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un video editable; Revisar el resultado de un agente en un editor",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "gsap",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -85567,7 +85595,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una promo de producto; Organizar planos sincronizados con sonido",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "remotion",
+        "claude-code",
+        "codex"
+      ],
       "alt": []
     },
     {
@@ -86162,7 +86194,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar slides sencillas; Versionar una presentación en Git",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "mermaid",
+        "pandoc"
+      ],
       "alt": [
         "slidev",
         "reveal.js"
@@ -86276,7 +86312,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar un proceso; Preparar un diagrama de secuencia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "slidev"
+        "slidev",
+        "claude-code",
+        "diagram-design"
       ],
       "alt": [
         "excalidraw"
@@ -86395,7 +86433,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una presentación de un informe; Adaptar una plantilla corporativa",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown"
+        "claude-code",
+        "markitdown",
+        "pandoc"
       ],
       "alt": [
         "presenton"
@@ -86522,7 +86562,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una presentación desde un documento; Comparar una plantilla con generación libre",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "claude-code",
+        "litellm"
       ],
       "alt": [
         "ppt-master"
@@ -86637,7 +86679,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una presentación web; Mostrar un ejemplo interactivo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown"
+        "mermaid",
+        "gsap",
+        "claude-code"
       ],
       "alt": [
         "slidev",
@@ -86754,7 +86798,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una charla técnica; Explicar un ejemplo de código",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mermaid"
+        "mermaid",
+        "claude-code",
+        "playwright"
       ],
       "alt": [
         "marp",

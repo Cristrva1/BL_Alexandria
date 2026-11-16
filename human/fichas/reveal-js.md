@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+reveal.js, framework HTML de presentaciones de @hakimel. Licencia MIT. Es veterano y estable (creado en 2011, ~73k estrellas, v6.0.2).
+
+## ¿Qué hace?
+
+Ofrece diapositivas anidadas, soporte de Markdown, Auto-Animate, exportación a PDF, notas del presentador, API JavaScript y plugins.
+
+## ¿Cómo lo hace?
+
+Se usa como paquete npm o clonando el repo; funciona en cualquier navegador. Slides.com es su editor visual comercial, de los mismos autores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Mermaid](mermaid.md) | Diagramas en las diapositivas. (combinación por arquitectura) | Añade un plugin de Mermaid. |
+| [GSAP](gsap.md) | Animaciones avanzadas. (combinación por arquitectura) | Úsalo en las diapositivas. |
+| [Claude Code](claude-code.md) | Generar HTML de presentaciones. (combinación por arquitectura) | Pide al agente el index.html. |
+
+**Notas:** Alternativas (elige una): slidev, marp.
+
+Estado en GitHub: activo · último push 2026-09-30 · última versión publicada 6.0.2 (2026-09-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hakimel/reveal.js/blob/master/README.md) · [2](https://revealjs.com/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides |
 | Coste | Sin pago a un modelo en la ruta básica. El framework MIT es gratuito; curso, hosting y servicios externos son independientes |
 | Equipo | Preparación según la ruta elegida. Node según ruta; HTML; contenido propio; navegador |
-
-El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides
-
-## Qué puedes hacer con él
-
-Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una presentación web; Mostrar un ejemplo interactivo.
-
-## Cómo funciona
 
 El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node según ruta; HTML; contenido propio; navegador
 - **Etiquetas:** `slides` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Alternativas (elige una)
 

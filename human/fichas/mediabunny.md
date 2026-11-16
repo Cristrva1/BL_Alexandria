@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Mediabunny, librería JavaScript para leer, escribir y convertir medios (MP4, WebM, MP3, HLS) directamente en el navegador, de @Vanilagy. Licencia MPL-2.0. Es activa (~7.5k estrellas, v1.66.0) y la patrocina, entre otros, Remotion.
+
+## ¿Qué hace?
+
+Hace mux y demux, codifica y decodifica más de 25 códecs de vídeo, audio y subtítulos con aceleración por hardware vía WebCodecs, y procesa medios sin servidor.
+
+## ¿Cómo lo hace?
+
+Escrita en TypeScript puro sin dependencias, se instala con `npm install mediabunny`. Requiere ECMAScript 2021+ y está pensada para navegadores modernos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Patrocinador; procesado de medios en navegador. (combinación por arquitectura) | Úsalo en pipelines web de vídeo. |
+| [FFmpeg](ffmpeg.md) | Equivalente en servidor para formatos no cubiertos. (combinación por arquitectura) | Reparte trabajo cliente/servidor. |
+| [openfilm](openfilm.md) | Exportación de vídeo desde HTML. (combinación por arquitectura) | Evalúalo para codificar en el navegador. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.66.0 (2026-11-13) · licencia declarada MPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Vanilagy/mediabunny/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca de medios, no una app de edición completa; comprueba soporte de codecs y destino en los navegadores de tus usuarios |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca MPL-2.0 no exige IA; codecs y capacidades del navegador pueden limitar la ruta |
 | Equipo | Preparación según la ruta elegida. JavaScript ES2021+; navegador moderno; TypeScript >=5.7 para tipos; medio de prueba |
-
-Es una biblioteca de medios, no una app de edición completa; comprueba soporte de codecs y destino en los navegadores de tus usuarios
-
-## Qué puedes hacer con él
-
-Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web.
-
-## Por qué destaca
-
-Usos propuestos: Procesar video dentro de una aplicación web; Construir una herramienta de conversión en navegador.
-
-## Cómo funciona
 
 Es una biblioteca de medios, no una app de edición completa; comprueba soporte de codecs y destino en los navegadores de tus usuarios
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Hypit, herramienta para «clonar» vídeos virales con agentes de IA, de hypit-ai. Licencia «Hypit Open Source License»: Apache-2.0 con condiciones que prohíben, sin autorización, ofrecerlo como servicio multi-tenant, la redistribución comercial y quitar el logo o el copyright de la CLI y de los resultados. Creado en julio de 2026, tiene ~30k estrellas (v0.3.2).
+
+## ¿Qué hace?
+
+A partir de un vídeo de referencia, una plantilla o una descripción, el agente genera variantes de vídeo con modelos de generación (por ejemplo, Seedance). Los vídeos producidos pertenecen al usuario.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 22.15+ y un agente de código. Los modelos se usan vía HypiHub (servicio alojado recomendado), una API propia o modelos locales, cada uno con sus propios costes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente que lo ejecuta. (combinación por arquitectura) | Instala Hypit y pide el vídeo. |
+| [FFmpeg](ffmpeg.md) | Procesado de medios. (combinación por arquitectura) | Instala FFmpeg. |
+| [ComfyUI](comfyui.md) | Generación local en lugar de servicios alojados. (combinación por arquitectura) | Configura un backend local si se admite. |
+
+**Notas:** Sin alternativas declaradas. Licencia no OSI (Apache con condiciones). Clonar vídeos virales plantea dudas de derechos de autor sobre el material de referencia.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.3.2 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hypit-ai/hypit/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las promesas de viralidad no son resultados medidos para tu contenido; revisa permisos de imágenes, voces y clips utilizados |
 | Coste | El coste depende del proveedor o la ruta. La skill no añade cuota por asiento según el autor; los servicios de modelos sí cobran; admite APIs o modelos locales según tarea |
 | Equipo | Preparación según la ruta elegida. Agente compatible; modelo o proveedor configurado; video propio de prueba |
-
-Las promesas de viralidad no son resultados medidos para tu contenido; revisa permisos de imágenes, voces y clips utilizados
-
-## Qué puedes hacer con él
-
-Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables.
-
-## Por qué destaca
-
-Usos propuestos: Crear versiones de un video propio; Coordinar subtítulos y B-roll de un tutorial.
-
-## Cómo funciona
 
 Las promesas de viralidad no son resultados medidos para tu contenido; revisa permisos de imágenes, voces y clips utilizados
 

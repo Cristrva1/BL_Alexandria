@@ -31,6 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un video corto de una función real del sitio y contrasta lo mostrado con su comportamiento
 **Qué comprobar:** Puedes revisar guion, capturas, música y duración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `hyperframes`, `claude-code`, `gsap`
 
 ## `claude-animated-shorts`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
@@ -60,6 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara un plano de pocos segundos y revisa personajes, cámara y tiempos antes de un corto completo
 **Qué comprobar:** Puedes reproducir la escena y contrastarla con el guion
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `remotion`, `three.js`, `claude-code`
 
 ## `huashu-motion`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
@@ -150,6 +152,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Parte de un clip propio, cambia un rótulo y una toma y revisa el workflow antes de renderizar
 **Qué comprobar:** Puedes identificar los recursos y reproducir una variante del flujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ffmpeg`, `comfyui`
 
 ## `lemo-opuscar`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
@@ -180,6 +183,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige un estilo y crea una escena de prueba revisando créditos antes de adaptar el resto
 **Qué comprobar:** Puedes identificar código, estilo y assets de la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ffmpeg`, `three.js`
 
 ## `manim`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,dataviz,learning,python
@@ -275,6 +279,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee duración y pistas de un archivo y convierte una copia a un formato admitido
 **Qué comprobar:** Puedes contrastar metadatos y reproducir la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `remotion`, `ffmpeg`, `openfilm`
 
 ## `motionmaxxing`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
@@ -305,6 +310,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa providers.sh y crea una escena tipográfica breve antes de añadir voces o imágenes
 **Qué comprobar:** Puedes comparar composición y tiempos de dos versiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gsap`, `hyperframes`, `claude-code`
 
 ## `moviepy`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,automation,python
@@ -365,6 +371,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre un ejemplo y modifica un título en Studio antes de exportar un clip corto
 **Qué comprobar:** Puedes inspeccionar el proyecto editable y el MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gsap`, `three.js`
 
 ## `openmontage`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=video,coding-agent,skills
@@ -610,6 +617,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Captura una pantalla propia y crea un plano corto verificando legibilidad, tiempo y audio
 **Qué comprobar:** Puedes revisar composición editable y exportación
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `remotion`, `claude-code`, `codex`
 
 ## `video-use`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,coding-agent,skills,python
