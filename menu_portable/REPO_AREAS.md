@@ -76,7 +76,7 @@ Revisar tráfico, rendimiento y mecanismos de protección.
 
 Gestionar contraseñas y proteger servicios personales.
 
-`adguardhome`, `bitwarden-clients`, `vaultwarden`
+`adguardhome`, `bitwarden-clients`, `pi-hole`, `vaultwarden`
 
 ### Aprender ciberseguridad
 
@@ -162,13 +162,13 @@ Investiga mercados, compara estrategias y conecta herramientas financieras. Las 
 
 Agentes que reúnen y analizan información financiera.
 
-`autohedge`, `daily-stock-analysis`, `dexter`, `financial-services`, `finceptterminal`, `quantharness`, `tradingagents`, `vibe-trading`
+`autohedge`, `daily-stock-analysis`, `dexter`, `financial-services`, `finceptterminal`, `fingpt`, `quantharness`, `tradingagents`, `vibe-trading`
 
 ### Estrategias y backtesting
 
 Analizar datos históricos y evaluar estrategias cuantitativas.
 
-`finrl`, `lumibot`, `nautilus-trader`, `qlib`, `timesfm`, `vectorbt`
+`backtesting-py`, `finrl`, `lumibot`, `nautilus-trader`, `openbb`, `qlib`, `timesfm`, `vectorbt`, `yfinance`
 
 ### Bots, exchanges y conexiones
 
@@ -408,25 +408,25 @@ Organiza información, sincroniza archivos y prepara herramientas para tu trabaj
 
 Organizar notas y ampliar una bóveda de conocimiento.
 
-`anytype-ts`, `appflowy`, `claude-obsidian`, `jsoncanvas`, `karakeep`, `kepano-obsidian`, `obsidian-clipper`, `obsidian-help`, `obsidian-importer`, `obsidian-minimal`, `obsidian-releases`, `obsidian-sample-plugin`, `obsidian-second-brain`, `obsidian-skills`
+`anytype-ts`, `appflowy`, `claude-obsidian`, `joplin`, `jsoncanvas`, `karakeep`, `kepano-obsidian`, `logseq`, `memos`, `obsidian-clipper`, `obsidian-help`, `obsidian-importer`, `obsidian-minimal`, `obsidian-releases`, `obsidian-sample-plugin`, `obsidian-second-brain`, `obsidian-skills`, `siyuan`, `trilium`
 
 ### Archivos, lectura y bibliotecas
 
 Sincronizar archivos y organizar libros o contenido personal.
 
-`audiobookshelf`, `nextcloud-server`, `syncthing`
+`audiobookshelf`, `calibre-web`, `immich`, `jellyfin`, `kavita`, `nextcloud-server`, `photoprism`, `syncthing`
 
 ### Contraseñas y privacidad
 
 Herramientas personales para gestionar credenciales y proteger datos.
 
-`adguardhome`, `bitwarden-clients`, `vaultwarden`
+`adguardhome`, `bitwarden-clients`, `pi-hole`, `vaultwarden`
 
 ### Hogar, dispositivos y utilidades
 
 Automatización doméstica y herramientas para tus equipos.
 
-`40-questions`, `ai-job-search`, `cleanyourtv`, `home-assistant`, `optimizerduck`, `universal-android-debloater-next-generation`
+`40-questions`, `actual`, `ai-job-search`, `cleanyourtv`, `esphome`, `firefly-iii`, `frigate`, `ghostfolio`, `home-assistant`, `optimizerduck`, `universal-android-debloater-next-generation`, `zigbee2mqtt`
 
 ### Aprendizaje asistido
 

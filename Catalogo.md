@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**683 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**704 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -21,8 +21,8 @@
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 10
 12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 19
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
-14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 19
-15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 27
+14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 23
+15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 44
 16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 26
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 10
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 13
@@ -652,6 +652,7 @@ _Agentes de investigación, análisis cuantitativo, backtesting y bots de ejempl
 | [TradingAgents](human/fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Depende de la ruta elegida | 🧩 motor/runtime | 🟡 medio |
 | [Vibe-Trading](human/fichas/vibe-trading.md) | Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [FinceptTerminal](human/fichas/finceptterminal.md) | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. | API de IA opcional | 🖥️ app | 🔴 pesado |
+| [FinGPT](human/fichas/fingpt.md) | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [AutoHedge](human/fichas/autohedge.md) | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. | API de IA necesaria | 🧩 motor/runtime | 🔴 pesado |
 | [QuantHarness](human/fichas/quantharness.md) | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. | API de IA necesaria | 🧩 motor/runtime | 🟡 medio |
 
@@ -660,9 +661,12 @@ _Agentes de investigación, análisis cuantitativo, backtesting y bots de ejempl
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [qlib](human/fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
+| [OpenBB Open Data Platform](human/fichas/openbb.md) | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [nautilus_trader](human/fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [yfinance](human/fichas/yfinance.md) | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [FinRL](human/fichas/finrl.md) | Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [vectorbt](human/fichas/vectorbt.md) | Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Backtesting.py](human/fichas/backtesting-py.md) | Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [lumibot](human/fichas/lumibot.md) | Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 
 ### Bots y conexiones a exchanges
@@ -692,7 +696,12 @@ _Notas, sincronización, privacidad, aprendizaje y servidores personales. Distin
 |---|---|---|---|---|
 | ⭐ [Anytype Desktop](human/fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [AppFlowy](human/fichas/appflowy.md) | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [Memos](human/fichas/memos.md) | App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [Joplin](human/fichas/joplin.md) | App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extremo y apps para escritorio y móvil. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [obsidian-skills](human/fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
+| [SiYuan](human/fichas/siyuan.md) | Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [Logseq](human/fichas/logseq.md) | Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Trilium Notes](human/fichas/trilium.md) | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [karakeep](human/fichas/karakeep.md) | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [Obsidian: distribución y extensiones](human/fichas/obsidian-releases.md) | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [claude-obsidian](human/fichas/claude-obsidian.md) | Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
@@ -709,7 +718,9 @@ _Notas, sincronización, privacidad, aprendizaje y servidores personales. Distin
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Immich](human/fichas/immich.md) | Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [syncthing](human/fichas/syncthing.md) | Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [PhotoPrism](human/fichas/photoprism.md) | App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [server](human/fichas/nextcloud-server.md) | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
 ### Credenciales y privacidad
@@ -717,6 +728,7 @@ _Notas, sincronización, privacidad, aprendizaje y servidores personales. Distin
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [vaultwarden](human/fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Pi-hole](human/fichas/pi-hole.md) | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [AdGuardHome](human/fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [Bitwarden Clients](human/fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
@@ -724,13 +736,19 @@ _Notas, sincronización, privacidad, aprendizaje y servidores personales. Distin
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [Jellyfin](human/fichas/jellyfin.md) | Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [Calibre-Web](human/fichas/calibre-web.md) | Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 | [audiobookshelf](human/fichas/audiobookshelf.md) | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Kavita](human/fichas/kavita.md) | Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
 
 ### Automatización del hogar
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [Home Assistant](human/fichas/home-assistant.md) | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
+| [Frigate NVR](human/fichas/frigate.md) | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Zigbee2MQTT](human/fichas/zigbee2mqtt.md) | Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [ESPHome](human/fichas/esphome.md) | Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlarlos desde Home Assistant. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ### Herramientas y organización personal
 
@@ -738,8 +756,11 @@ _Notas, sincronización, privacidad, aprendizaje y servidores personales. Distin
 |---|---|---|---|---|
 | [ai-job-search](human/fichas/ai-job-search.md) | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [cleanyourtv](human/fichas/cleanyourtv.md) | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Actual Budget](human/fichas/actual.md) | App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Firefly III](human/fichas/firefly-iii.md) | Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [optimizerDuck](human/fichas/optimizerduck.md) | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [universal-android-debloater-next-generation](human/fichas/universal-android-debloater-next-generation.md) | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Ghostfolio](human/fichas/ghostfolio.md) | Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [40-questions](human/fichas/40-questions.md) | Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 
 ### Aprendizaje asistido

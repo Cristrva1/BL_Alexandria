@@ -181,10 +181,24 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | [olmOCR](fichas/olmocr.md), [PaddleOCR](fichas/paddleocr.md) |
 | [Unstructured](fichas/unstructured.md) | [Docling](fichas/docling.md), [Xberg (antes Kreuzberg)](fichas/xberg.md), [Apache Tika](fichas/tika.md) |
 | [Xberg (antes Kreuzberg)](fichas/xberg.md) | [Apache Tika](fichas/tika.md), [Unstructured](fichas/unstructured.md) |
+| [Backtesting.py](fichas/backtesting-py.md) | [vectorbt](fichas/vectorbt.md) |
+| [vectorbt](fichas/vectorbt.md) | [Backtesting.py](fichas/backtesting-py.md) |
+| [Actual Budget](fichas/actual.md) | [Firefly III](fichas/firefly-iii.md) |
+| [AdGuardHome](fichas/adguardhome.md) | [Pi-hole](fichas/pi-hole.md) |
 | [Anytype Desktop](fichas/anytype-ts.md) | [AppFlowy](fichas/appflowy.md) |
 | [AppFlowy](fichas/appflowy.md) | [Anytype Desktop](fichas/anytype-ts.md) |
+| [Calibre-Web](fichas/calibre-web.md) | [Kavita](fichas/kavita.md) |
 | [claude-obsidian](fichas/claude-obsidian.md) | [obsidian-second-brain](fichas/obsidian-second-brain.md) |
+| [Firefly III](fichas/firefly-iii.md) | [Actual Budget](fichas/actual.md) |
+| [Immich](fichas/immich.md) | [PhotoPrism](fichas/photoprism.md) |
+| [Joplin](fichas/joplin.md) | [Trilium Notes](fichas/trilium.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
+| [Kavita](fichas/kavita.md) | [Calibre-Web](fichas/calibre-web.md) |
+| [Logseq](fichas/logseq.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [SiYuan](fichas/siyuan.md) |
 | [obsidian-second-brain](fichas/obsidian-second-brain.md) | [claude-obsidian](fichas/claude-obsidian.md) |
+| [PhotoPrism](fichas/photoprism.md) | [Immich](fichas/immich.md) |
+| [Pi-hole](fichas/pi-hole.md) | [AdGuardHome](fichas/adguardhome.md) |
+| [SiYuan](fichas/siyuan.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [Logseq](fichas/logseq.md) |
+| [Trilium Notes](fichas/trilium.md) | [Joplin](fichas/joplin.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
 | [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |

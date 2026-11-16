@@ -1,0 +1,786 @@
+{
+ "batch": "47-expansion-p04",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "openbb": {
+   "que_es": "Conjunto de herramientas de datos de código abierto (Apache-2.0) creado por OpenBB. Desde octubre de 2026 lo custodia OpenBQ, una organización sin ánimo de lucro anunciada por OpenBB y liderada desde BrightQuery; por eso el repositorio canónico es ahora openbq-org/OpenBB. Muy popular y activo.",
+   "que_hace": "Integra fuentes de datos públicas, propietarias y con licencia (acciones, ETF, renta fija, divisas, cripto, derivados, macroeconomía, noticias) y las expone a la vez a entornos Python, OpenBB Workspace y Excel, servidores MCP para agentes y APIs REST. Incluye extensiones de análisis cuantitativo, técnico y econométrico.",
+   "como_lo_hace": "Se instala con `pip install openbb` (CLI aparte con `pip install openbb-cli`); los datos se consultan con `from openbb import obb`. Los proveedores se configuran con sus credenciales; la extensión `mcp_server` y `platform_api` publican los datos para agentes y aplicaciones.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "OpenBB incluye una extensión de servidor MCP para que los agentes consulten sus datos.",
+     "orden_instalacion": "Instala OpenBB y la extensión mcp_server; después registra el servidor en Claude Code."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Las consultas de OpenBB devuelven DataFrames que se analizan en cuadernos de JupyterLab (combinación por arquitectura).",
+     "orden_instalacion": "Instala openbb en el entorno del cuaderno; después consulta y grafica los datos."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Los históricos obtenidos con OpenBB pueden alimentar backtests vectorizados con vectorbt (combinación por arquitectura).",
+     "orden_instalacion": "Descarga los datos con OpenBB; después pásalos a vectorbt."
+    },
+    {
+     "id": "backtesting-py",
+     "motivo": "Los precios OHLC de OpenBB sirven como entrada para estrategias en Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Convierte la salida a DataFrame OHLC; después ejecuta el backtest."
+    }
+   ],
+   "notas": "El README todavía enlaza a OpenBB-finance/OpenBB; la API de GitHub redirige el mismo repositorio (id 323048702) a openbq-org/OpenBB, y openbb.co confirma el traspaso a OpenBQ.",
+   "fuentes": [
+    "https://github.com/openbq-org/OpenBB/blob/develop/README.md",
+    "https://openbb.co",
+    "https://github.com/openbq-org/OpenBB/tree/develop/openbb_platform/extensions/mcp_server"
+   ],
+   "github": {
+    "name_with_owner": "openbq-org/OpenBB",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "ODP (2026-09-30)"
+   }
+  },
+  "immich": {
+   "que_es": "Solución de gestión de fotos de código abierto (AGPL-3.0) del equipo Immich, financiado por FUTO. Uno de los proyectos autoalojados más populares; desarrollo muy activo.",
+   "que_hace": "Hace copia automática desde iOS y Android, organiza fotos y vídeos en línea temporal, álbumes y mapa, reconoce caras, permite búsqueda semántica por texto, comparte álbumes, gestiona varios usuarios y bibliotecas externas, y lee metadatos y RAW.",
+   "como_lo_hace": "Se despliega con Docker Compose: servidor, servicio de machine learning, PostgreSQL con extensión vectorial y Redis. Los modelos se ejecutan en local, con aceleración opcional por GPU; los requisitos están en su documentación.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura).",
+     "orden_instalacion": "Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing copia carpetas de fotos de otros equipos al servidor, donde Immich las importa como biblioteca externa (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza con Syncthing; después registra la carpeta en Immich."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose oficial de Immich se puede desplegar y mantener desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose de Immich con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): photoprism. Mantén una copia de seguridad independiente: el propio proyecto lo recomienda.",
+   "fuentes": [
+    "https://github.com/immich-app/immich/blob/main/README.md",
+    "https://docs.immich.app/install/requirements"
+   ],
+   "github": {
+    "name_with_owner": "immich-app/immich",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.4.1 (2026-11-11)"
+   }
+  },
+  "frigate": {
+   "que_es": "NVR de código abierto (MIT para código y documentación) de Blake Blackshear; los nombres y el logotipo de Frigate son marcas de Frigate, Inc. Muy maduro y activo, con suscripción opcional Frigate+.",
+   "que_hace": "Graba vídeo de cámaras IP y detecta objetos en tiempo real en local, con detección de movimiento de bajo coste para decidir dónde analizar, retención basada en objetos detectados, zonas, máscaras, revisión de eventos y transmisión en vivo. Se integra estrechamente con Home Assistant y comunica eventos por MQTT.",
+   "como_lo_hace": "Escrito en Python con procesos separados para la detección; se despliega con Docker. Se recomienda una GPU o acelerador de IA (Coral, Hailo, OpenVINO); la configuración es un archivo YAML por cámaras.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Frigate está diseñado para Home Assistant y ofrece una integración personalizada oficial.",
+     "orden_instalacion": "Frigate y un broker MQTT en marcha; después instala la integración de Frigate en Home Assistant."
+    },
+    {
+     "id": "opencv",
+     "motivo": "Frigate usa OpenCV para el procesamiento de vídeo junto a sus detectores.",
+     "orden_instalacion": "Viene incluido en la imagen; OpenCV aparte sirve para prototipar análisis propios."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Frigate y Zigbee2MQTT pueden compartir el mismo broker MQTT para combinar detecciones con sensores o luces Zigbee (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT primero; después configura ambos para publicar en él."
+    }
+   ],
+   "notas": "Sin acelerador, la detección en CPU limita el número de cámaras.",
+   "fuentes": [
+    "https://github.com/blakeblackshear/frigate/blob/dev/README.md",
+    "https://docs.frigate.video/"
+   ],
+   "github": {
+    "name_with_owner": "blakeblackshear/frigate",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.18.2 (2026-10-15)"
+   }
+  },
+  "jellyfin": {
+   "que_es": "Sistema multimedia de código abierto (GPL-2.0) mantenido por voluntarios desde 2018, cuando nació como fork de Emby. Sin licencias premium ni funciones de pago; muy maduro.",
+   "que_hace": "Gestiona y transmite películas, series, música, audiolibros, libros y TV en directo con grabación, desde un servidor propio a clientes web, móviles, TV y consolas, con usuarios, control parental, metadatos automáticos, subtítulos y transcodificación por hardware.",
+   "como_lo_hace": "Servidor en C#/.NET; se instala con paquetes para Linux, Windows y macOS o con Docker. Necesita jellyfin-ffmpeg para transcodificar; la aceleración por hardware se configura según la GPU.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Jellyfin transcodifica con jellyfin-ffmpeg, su compilación de FFmpeg, que se instala junto al servidor.",
+     "orden_instalacion": "Instala jellyfin-ffmpeg o usa la imagen Docker que lo incluye."
+    },
+    {
+     "id": "handbrake",
+     "motivo": "Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura).",
+     "orden_instalacion": "Convierte con HandBrake; después añade los archivos a la biblioteca."
+    },
+    {
+     "id": "audiobookshelf",
+     "motivo": "Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos con bibliotecas separadas."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Jellyfin se puede desplegar desde Coolify con volúmenes de medios (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio y monta las carpetas de medios."
+    }
+   ],
+   "notas": "No hay alternativa directa en el catálogo (Plex y Emby son propietarios); audiobookshelf cubre otro tipo de medios.",
+   "fuentes": [
+    "https://github.com/jellyfin/jellyfin/blob/master/README.md",
+    "https://jellyfin.org/docs/"
+   ],
+   "github": {
+    "name_with_owner": "jellyfin/jellyfin",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-2.0",
+    "primary_language": "C#",
+    "checked_at": "2026-11-16",
+    "latest_release": "v12.4 (2026-10-26)"
+   }
+  },
+  "memos": {
+   "que_es": "Aplicación de notas de código abierto (MIT) del proyecto usememos. Muy popular y activa; versiones con formato YY.MM.N.",
+   "que_hace": "Recoge pensamientos breves o entradas largas en Markdown en una línea temporal por días, conecta notas con etiquetas, controla qué es privado, compartido o público y permite espacios compartidos. Ofrece API y servidor MCP para scripts y herramientas de IA.",
+   "como_lo_hace": "Escrito en Go con frontend web; se ejecuta con Docker (imagen neosmemo/memos), Docker Compose, Kubernetes o binario. Guarda los datos en SQLite por defecto o en MySQL/PostgreSQL.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Memos publica un servidor MCP para conectar las notas con herramientas de IA como agentes de código.",
+     "orden_instalacion": "Memos en marcha con un token; después configura su servidor MCP en Claude Code."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "La API de Memos permite crear o leer notas desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token en Memos; después usa peticiones HTTP en Activepieces."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Memos se despliega y respalda fácilmente desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con un volumen para los datos."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: karakeep, obsidian (otros modelos de notas).",
+   "fuentes": [
+    "https://github.com/usememos/memos/blob/main/README.md",
+    "https://usememos.com/docs/integrations/mcp"
+   ],
+   "github": {
+    "name_with_owner": "usememos/memos",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "26.11.1 (2026-11-16)"
+   }
+  },
+  "pi-hole": {
+   "que_es": "Bloqueador de anuncios por DNS de código abierto (EUPL-1.2 según su archivo de licencia) mantenido por Pi-hole LLC y la comunidad desde 2014. Muy maduro.",
+   "que_hace": "Actúa como DNS de la red y descarta las peticiones a dominios de anuncios y rastreo, incluido en apps y TV donde no hay extensiones; acelera la navegación con caché, ofrece panel web con estadísticas, CLI, DHCP opcional e IPv4/IPv6.",
+   "como_lo_hace": "Se instala con `curl -sSL https://install.pi-hole.net | bash` en Linux (Raspberry Pi incluido) o con la imagen Docker oficial. Requisitos mínimos de hardware; se configura con listas de bloqueo y listas de permitidos.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Home Assistant tiene una integración oficial de Pi-hole para ver estadísticas y activar o desactivar el bloqueo.",
+     "orden_instalacion": "Pi-hole en marcha con su clave de API; después añade la integración en Home Assistant."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Las estadísticas de Pi-hole se pueden exportar a Prometheus con un exportador de la comunidad y verse en Grafana (combinación por arquitectura).",
+     "orden_instalacion": "Configura un exportador de métricas de Pi-hole; después añade la fuente y el panel en Grafana."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Pi-hole se puede desplegar desde Coolify en un servidor de la red local (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después despliega Pi-hole exponiendo el puerto DNS."
+    }
+   ],
+   "notas": "Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.",
+   "fuentes": [
+    "https://github.com/pi-hole/pi-hole/blob/master/README.md",
+    "https://docs.pi-hole.net/",
+    "https://www.home-assistant.io/integrations/pi_hole/"
+   ],
+   "github": {
+    "name_with_owner": "pi-hole/pi-hole",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Shell",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.6 (2026-11-11)"
+   }
+  },
+  "fingpt": {
+   "que_es": "Proyecto de código abierto (MIT) de la AI4Finance Foundation, ligado a investigación académica. Activo, aunque gran parte del contenido son cuadernos y recetas.",
+   "que_hace": "Ofrece LLM financieros ajustados (sentimiento, clasificación de titulares, reconocimiento de entidades, pronóstico), conjuntos de datos y benchmarks, y guías para entrenar con LoRA a bajo coste. Permite usar los modelos en local con GPU o mediante APIs en la nube.",
+   "como_lo_hace": "Código en Python y cuadernos Jupyter; se instala con `pip install -r requirements.txt` o `pip install -e .` siguiendo SETUP.md. Usa Transformers y PEFT; la inferencia local requiere GPU según el modelo.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Los modelos FinGPT se cargan y ajustan con Hugging Face Transformers.",
+     "orden_instalacion": "Instala transformers y descarga el modelo base y el adaptador del Hub."
+    },
+    {
+     "id": "peft",
+     "motivo": "FinGPT entrena sus variantes con LoRA mediante PEFT.",
+     "orden_instalacion": "Instala peft; después carga el adaptador LoRA de FinGPT sobre el modelo base."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "El entrenamiento y la inferencia local de FinGPT se ejecutan sobre PyTorch con GPU.",
+     "orden_instalacion": "Instala PyTorch con CUDA; después las dependencias del proyecto."
+    }
+   ],
+   "notas": "Los resultados de benchmarks del README corresponden a configuraciones concretas; verifica antes de usar en decisiones.",
+   "fuentes": [
+    "https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "AI4Finance-Foundation/FinGPT",
+    "archived": false,
+    "pushed_at": "2026-10-25",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.0.0 (2026-04-08)"
+   }
+  },
+  "yfinance": {
+   "que_es": "Biblioteca de código abierto (Apache-2.0) creada por Ran Aroussi, muy usada en investigación y educación. No está afiliada ni respaldada por Yahoo, Inc.",
+   "que_hace": "Ofrece una forma pythónica de obtener datos de Yahoo Finance: históricos de precios, dividendos y splits, fundamentales, calendarios, opciones, noticias y búsqueda, para uno o varios símbolos, con caché.",
+   "como_lo_hace": "Se instala con `pip install yfinance`; usa `Ticker`, `Tickers` y `download` y devuelve DataFrames de pandas. Depende de endpoints no documentados que Yahoo puede limitar o cambiar.",
+   "combina_con": [
+    {
+     "id": "vectorbt",
+     "motivo": "vectorbt incluye una clase de datos que descarga históricos con yfinance para backtests vectorizados.",
+     "orden_instalacion": "Instala ambos; después usa la descarga de Yahoo de vectorbt."
+    },
+    {
+     "id": "backtesting-py",
+     "motivo": "Los DataFrames OHLC de yfinance se pasan directamente a Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Descarga con yfinance; después ejecuta el backtest con ese DataFrame."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "yfinance se usa habitualmente en cuadernos para explorar y graficar datos de mercado (combinación por arquitectura).",
+     "orden_instalacion": "Instala yfinance en el entorno del cuaderno."
+    }
+   ],
+   "notas": "Para usos profesionales, considera un proveedor de datos con licencia.",
+   "fuentes": [
+    "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+    "https://ranaroussi.github.io/yfinance",
+    "https://vectorbt.dev/api/data/custom/"
+   ],
+   "github": {
+    "name_with_owner": "ranaroussi/yfinance",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.8.0 (2026-11-03)"
+   }
+  },
+  "backtesting-py": {
+   "que_es": "Biblioteca de backtesting de código abierto (AGPL-3.0) creada por kernc. Madura, con ritmo de cambios bajo (último push en agosto de 2026).",
+   "que_hace": "Permite definir estrategias con indicadores y reglas, ejecutarlas sobre datos históricos de cualquier instrumento, optimizar parámetros (incluida búsqueda por cuadrícula y optimización bayesiana) y analizar estadísticas y operaciones con gráficos interactivos.",
+   "como_lo_hace": "Se instala con `pip install backtesting`; funciona con DataFrames OHLC de pandas y genera gráficos con Bokeh, visibles en Jupyter o como HTML.",
+   "combina_con": [
+    {
+     "id": "yfinance",
+     "motivo": "yfinance proporciona DataFrames OHLC listos para Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Descarga los datos con yfinance; después pásalos al Backtest."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Los gráficos interactivos de Backtesting.py se muestran en cuadernos Jupyter.",
+     "orden_instalacion": "Instala backtesting en el entorno de JupyterLab; después ejecuta y grafica el backtest."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir clases Strategy y pruebas de parámetros para Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Proyecto con datos de prueba; después pide al agente la estrategia y revisa los resultados."
+    },
+    {
+     "id": "openbb",
+     "motivo": "Combinación recíproca: OpenBB Open Data Platform lo enlaza como «Los precios OHLC de OpenBB sirven como entrada para estrategias en Backtesting.py (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OpenBB Open Data Platform: Convierte la salida a DataFrame OHLC; después ejecuta el backtest.",
+     "reciproca_de": "openbb"
+    }
+   ],
+   "notas": "Alternativas (elige una): vectorbt. Los resultados de backtest no anticipan resultados reales.",
+   "fuentes": [
+    "https://github.com/kernc/backtesting.py/blob/master/README.md",
+    "https://kernc.github.io/backtesting.py/"
+   ],
+   "github": {
+    "name_with_owner": "kernc/backtesting.py",
+    "archived": false,
+    "pushed_at": "2026-08-05",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "photoprism": {
+   "que_es": "Aplicación de fotos de código abierto (AGPL-3.0) de PhotoPrism UG, financiada con membresías que desbloquean funciones adicionales. Madura y activa.",
+   "que_hace": "Indexa fotos y vídeos (incluidos RAW), los etiqueta y clasifica automáticamente, reconoce caras, muestra mapas, permite búsqueda avanzada, álbumes y compartición, y se sincroniza con apps móviles o clientes WebDAV.",
+   "como_lo_hace": "Escrito en Go con TensorFlow; se despliega con Docker Compose y MariaDB (o SQLite). Ofrece WebDAV para sincronizar desde el escritorio y apps compatibles como PhotoSync para copias desde el móvil.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura).",
+     "orden_instalacion": "Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing lleva las fotos de otros equipos a la carpeta de originales de PhotoPrism (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza con Syncthing; después ejecuta la indexación."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose de PhotoPrism con su base de datos se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): immich.",
+   "fuentes": [
+    "https://github.com/photoprism/photoprism/blob/develop/README.md",
+    "https://docs.photoprism.app/user-guide/sync/webdav/",
+    "https://docs.photoprism.app/license/agpl/"
+   ],
+   "github": {
+    "name_with_owner": "photoprism/photoprism",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "261029-963b58c50 (2026-10-29)"
+   }
+  },
+  "zigbee2mqtt": {
+   "que_es": "Puente Zigbee de código abierto (GPL-3.0) creado por Koen Kanters (Koenkk) y mantenido por una comunidad grande. Muy maduro y con miles de dispositivos soportados.",
+   "que_hace": "Permite usar dispositivos Zigbee sin la pasarela del fabricante: empareja, configura y controla sensores, luces, enchufes y más, publicando eventos y aceptando comandos por MQTT, con frontend web, grupos, OTA y descubrimiento para Home Assistant.",
+   "como_lo_hace": "Escrito en TypeScript sobre Node.js; requiere un adaptador Zigbee compatible y un broker MQTT. Se instala como complemento de Home Assistant, con Docker o en Linux; se configura con YAML y desde su interfaz.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Zigbee2MQTT tiene un complemento oficial para Home Assistant OS y descubrimiento MQTT de dispositivos.",
+     "orden_instalacion": "Broker MQTT y Zigbee2MQTT en marcha; después activa la integración MQTT en Home Assistant."
+    },
+    {
+     "id": "node-red",
+     "motivo": "Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT."
+    },
+    {
+     "id": "frigate",
+     "motivo": "Frigate publica detecciones en el mismo broker MQTT, de modo que una detección puede encender dispositivos Zigbee (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT común; después enlaza los topics en tu sistema de automatización."
+    },
+    {
+     "id": "esphome",
+     "motivo": "Combinación recíproca: ESPHome lo enlaza como «ESPHome y Zigbee2MQTT pueden convivir en la misma instalación con MQTT para combinar dispositivos Wi-Fi y Zigbee (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ESPHome: Broker MQTT común; después configura el componente MQTT en ESPHome si no usas la API nativa.",
+     "reciproca_de": "esphome"
+    }
+   ],
+   "notas": "Comprueba la compatibilidad del adaptador y de cada dispositivo en la lista oficial antes de comprar.",
+   "fuentes": [
+    "https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md",
+    "https://www.zigbee2mqtt.io/guide/usage/integrations.html"
+   ],
+   "github": {
+    "name_with_owner": "Koenkk/zigbee2mqtt",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.14.3 (2026-11-01)"
+   }
+  },
+  "esphome": {
+   "que_es": "Proyecto de código abierto de la Open Home Foundation. La licencia combina MIT (código Python) y GPL-3.0 (código C++ del firmware) según su archivo de licencia. Muy maduro.",
+   "que_hace": "Genera firmware para microcontroladores a partir de YAML con cientos de componentes (sensores, relés, pantallas, LED, Bluetooth proxy), lo instala por USB o por aire y lo integra con Home Assistant mediante una API nativa o MQTT.",
+   "como_lo_hace": "Escrito en Python con plantillas C++; se usa como complemento de Home Assistant, con Docker o con pip. Compila con PlatformIO/ESP-IDF y ofrece panel web para gestionar dispositivos.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "ESPHome se integra con Home Assistant mediante su API nativa y un complemento oficial.",
+     "orden_instalacion": "Instala el complemento ESPHome; después adopta el dispositivo en Home Assistant."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "ESPHome y Zigbee2MQTT pueden convivir en la misma instalación con MQTT para combinar dispositivos Wi-Fi y Zigbee (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT común; después configura el componente MQTT en ESPHome si no usas la API nativa."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede redactar y revisar configuraciones YAML de ESPHome a partir de la documentación de componentes (combinación por arquitectura).",
+     "orden_instalacion": "Pide la configuración; después valídala con `esphome config` antes de flashear."
+    }
+   ],
+   "notas": "Flashear firmware puede inutilizar temporalmente una placa; ten a mano el método de recuperación por USB.",
+   "fuentes": [
+    "https://github.com/esphome/esphome/blob/dev/README.md",
+    "https://esphome.io/"
+   ],
+   "github": {
+    "name_with_owner": "esphome/esphome",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "2026.10.2 (2026-11-02)"
+   }
+  },
+  "calibre-web": {
+   "que_es": "Aplicación de código abierto (GPL-3.0) de janeczku, fork del proyecto library de mutschler. Madura y activa; requiere una base de datos de Calibre válida.",
+   "que_hace": "Ofrece una interfaz web limpia para navegar, buscar, leer y descargar libros de una biblioteca de Calibre, con usuarios y permisos, estanterías, edición de metadatos, catálogo OPDS para lectores, sincronización con Kobo y envío a Kindle por correo.",
+   "como_lo_hace": "Escrito en Python; se instala con `pip install calibreweb` (Python 3.7+) o con imágenes Docker de la comunidad. La conversión de formatos requiere tener Calibre instalado.",
+   "combina_con": [
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing mantiene sincronizada la carpeta de la biblioteca de Calibre entre el escritorio y el servidor de Calibre-Web (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza la biblioteca con Syncthing; después apunta Calibre-Web a la copia del servidor."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Pandoc convierte documentos propios a EPUB antes de añadirlos a la biblioteca (combinación por arquitectura).",
+     "orden_instalacion": "Convierte con Pandoc; después añade el EPUB a Calibre."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Calibre-Web se despliega en contenedor con la biblioteca montada como volumen desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después despliega una imagen de Calibre-Web y monta la biblioteca."
+    }
+   ],
+   "notas": "Alternativas (elige una): kavita.",
+   "fuentes": [
+    "https://github.com/janeczku/calibre-web/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "janeczku/calibre-web",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "Fluent",
+    "checked_at": "2026-11-16",
+    "latest_release": "0.6.27 (2026-08-08)"
+   }
+  },
+  "kavita": {
+   "que_es": "Servidor de lectura de código abierto (GPL-3.0) del proyecto Kareadita, con funciones adicionales (Kavita+) para patrocinadores. Activo y multiplataforma.",
+   "que_hace": "Gestiona y sirve manga, cómics, novelas y libros (CBZ, CBR, PDF, EPUB) con lectores web, metadatos ComicInfo, colecciones, listas de lectura, anotaciones, roles de usuario, OPDS y seguimiento de progreso.",
+   "como_lo_hace": "Escrito en C# con .NET; se instala con Docker (imagen jvmilazz0/kavita) o binarios para Windows, Linux y macOS. Escanea carpetas organizadas según su guía.",
+   "combina_con": [
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing copia la colección de lectura al servidor donde Kavita la escanea (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza la carpeta; después añádela como biblioteca en Kavita."
+    },
+    {
+     "id": "audiobookshelf",
+     "motivo": "Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos con bibliotecas separadas."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Kavita se despliega desde Coolify con la biblioteca como volumen (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio y monta las carpetas."
+    }
+   ],
+   "notas": "Alternativas (elige una): calibre-web.",
+   "fuentes": [
+    "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+    "https://wiki.kavitareader.com/"
+   ],
+   "github": {
+    "name_with_owner": "Kareadita/Kavita",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "C#",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.9.1.4 (2026-09-02)"
+   }
+  },
+  "joplin": {
+   "que_es": "Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.",
+   "que_hace": "Organiza grandes cantidades de notas en libretas con etiquetas y tareas, en Markdown, con búsqueda de texto completo, importación de Evernote (ENEX), Web Clipper, plugins y temas, y sincronización con cifrado de extremo a extremo.",
+   "como_lo_hace": "Escrita en TypeScript; apps para Windows, macOS, Linux, Android e iOS y una CLI. Sincroniza con Nextcloud, Dropbox, OneDrive, WebDAV, AWS S3, el sistema de archivos, Joplin Server autoalojado o Joplin Cloud.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "Nextcloud es uno de los destinos de sincronización documentados por Joplin.",
+     "orden_instalacion": "Nextcloud en marcha; después elige Nextcloud como destino en la configuración de sincronización."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "La sincronización por sistema de archivos de Joplin puede apoyarse en una carpeta replicada con Syncthing (combinación por arquitectura).",
+     "orden_instalacion": "Elige el destino de sistema de archivos; después sincroniza esa carpeta con Syncthing en un solo sentido de escritura."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Las notas exportadas en Markdown se convierten con Pandoc a otros formatos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta desde Joplin; después convierte con Pandoc."
+    }
+   ],
+   "notas": "Alternativas (elige una): trilium, siyuan, logseq.",
+   "fuentes": [
+    "https://github.com/laurent22/joplin/blob/dev/README.md",
+    "https://joplinapp.org"
+   ],
+   "github": {
+    "name_with_owner": "laurent22/joplin",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.7.22 (2026-10-28)"
+   }
+  },
+  "siyuan": {
+   "que_es": "Gestor de conocimiento de código abierto (AGPL-3.0) de B3log. Muy activo; algunas funciones de sincronización en la nube requieren suscripción.",
+   "que_hace": "Organiza el conocimiento en bloques con referencias bidireccionales, incrustaciones, consultas SQL, bases de datos, mapas mentales, PDF anotables, plantillas y espacio de trabajo colaborativo con agentes de IA; incluye escritura y preguntas con IA vía API de OpenAI.",
+   "como_lo_hace": "Núcleo en Go y frontend TypeScript; se distribuye como app de escritorio, móvil y contenedor Docker (desde v3.7.0 hay que pasar `serve`), también con Helm. Los datos se guardan en local; la sincronización usa la nube de SiYuan, S3 o WebDAV.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "La IA de SiYuan usa una API compatible con OpenAI, que puede apuntar a un servidor local como Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después configura su URL compatible con OpenAI en los ajustes de IA."
+    },
+    {
+     "id": "nextcloud-server",
+     "motivo": "Nextcloud ofrece WebDAV, uno de los destinos de sincronización de datos de SiYuan (combinación por arquitectura).",
+     "orden_instalacion": "Crea una carpeta WebDAV en Nextcloud; después configúrala como sincronización en SiYuan."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El proyecto se presenta como espacio de trabajo con agentes (tema MCP en GitHub); un agente puede trabajar con sus documentos mediante la API del núcleo (combinación por arquitectura) [DATO NO VERIFICADO: integración MCP concreta].",
+     "orden_instalacion": "SiYuan en marcha con token de API; después configura el acceso del agente."
+    }
+   ],
+   "notas": "Alternativas (elige una): joplin, trilium, logseq.",
+   "fuentes": [
+    "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+    "https://b3log.org/siyuan"
+   ],
+   "github": {
+    "name_with_owner": "siyuan-note/siyuan",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.8.10 (2026-11-10)"
+   }
+  },
+  "logseq": {
+   "que_es": "Plataforma de conocimiento de código abierto (AGPL-3.0) de Logseq Inc. Muy popular; el equipo trabaja en una versión basada en base de datos que sustituirá al modelo de archivos.",
+   "que_hace": "Organiza notas como esquemas de bloques con enlaces bidireccionales, diario, etiquetas, consultas, tareas, pizarras y grafo de conocimiento, sobre archivos Markdown u Org-mode en tu equipo. Admite plugins y temas.",
+   "como_lo_hace": "Escrita en Clojure/ClojureScript; apps para Windows, macOS, Linux, iOS y Android desde las releases (también con script de instalación en Linux). Los datos son archivos locales; la sincronización oficial es un servicio aparte.",
+   "combina_con": [
+    {
+     "id": "syncthing",
+     "motivo": "Un grafo de Logseq es una carpeta de archivos que se puede sincronizar con Syncthing entre equipos (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza la carpeta del grafo; evita editarlo a la vez en dos equipos."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Las páginas en Markdown u Org se convierten con Pandoc a otros formatos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta o toma los archivos del grafo; después convierte con Pandoc."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Al ser archivos Markdown, un agente de código puede leer y reorganizar páginas del grafo (combinación por arquitectura).",
+     "orden_instalacion": "Haz copia del grafo; después deja al agente trabajar sobre esa copia."
+    }
+   ],
+   "notas": "Alternativas (elige una): joplin, trilium, siyuan. La migración a la versión con base de datos puede cambiar el formato de almacenamiento.",
+   "fuentes": [
+    "https://github.com/logseq/logseq/blob/master/README.md",
+    "https://docs.logseq.com/"
+   ],
+   "github": {
+    "name_with_owner": "logseq/logseq",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "Clojure",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.0.2 (2026-10-07)"
+   }
+  },
+  "trilium": {
+   "que_es": "Aplicación de notas de código abierto (AGPL-3.0) mantenida por la comunidad TriliumNext, continuación del Trilium original de zadam. Muy activa, con versiones estables y nightly.",
+   "que_hace": "Organiza notas en jerarquías profundas donde una nota puede vivir en varios lugares, con editor enriquecido y de código, atributos y relaciones, mapas de relaciones, notas de tipo lienzo y mapa mental, cifrado por nota, historial de versiones, scripting en JavaScript y publicación de notas.",
+   "como_lo_hace": "Escrita en TypeScript con base SQLite; se distribuye como app Electron y como servidor (Docker o paquetes) que sincroniza con los clientes y ofrece acceso web. Tiene API REST ETAPI para automatizaciones.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "El servidor de sincronización de Trilium se despliega en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después despliega la imagen del servidor con un volumen de datos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "La API ETAPI de Trilium permite a un agente crear o consultar notas mediante scripts (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token ETAPI; después pide al agente el script y pruébalo en una base de copia."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Las notas exportadas en Markdown o HTML se convierten con Pandoc a otros formatos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta desde Trilium; después convierte con Pandoc."
+    }
+   ],
+   "notas": "Alternativas (elige una): joplin, siyuan, logseq.",
+   "fuentes": [
+    "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+    "https://docs.triliumnotes.org/"
+   ],
+   "github": {
+    "name_with_owner": "TriliumNext/Trilium",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.107.0 (2026-11-08)"
+   }
+  },
+  "actual": {
+   "que_es": "Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.",
+   "que_hace": "Gestiona presupuestos con el método de sobres, cuentas, movimientos, reglas de categorización, importación (OFX, QIF, CSV) y sincronización bancaria opcional según región, informes y sincronización entre dispositivos con cifrado opcional.",
+   "como_lo_hace": "Escrita en TypeScript sobre Node.js; se despliega en PikaPods, Fly.io, Docker o en local. Ofrece un paquete de API (@actual-app/api) para scripts.",
+   "combina_con": [
+    {
+     "id": "ghostfolio",
+     "motivo": "Actual cubre presupuesto y gastos y Ghostfolio el seguimiento de inversiones (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos; mantén las cuentas de inversión solo en Ghostfolio."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker del servidor de Actual se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con un volumen de datos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El paquete @actual-app/api permite a un agente escribir scripts de importación o informes (combinación por arquitectura).",
+     "orden_instalacion": "Haz copia del presupuesto; después pide al agente el script con la API."
+    }
+   ],
+   "notas": "Alternativas (elige una): firefly-iii.",
+   "fuentes": [
+    "https://github.com/actualbudget/actual/blob/master/README.md",
+    "https://actualbudget.org/docs"
+   ],
+   "github": {
+    "name_with_owner": "actualbudget/actual",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v26.11.0 (2026-11-02)"
+   }
+  },
+  "firefly-iii": {
+   "que_es": "Gestor de finanzas personales de código abierto (AGPL-3.0) creado por James Cole. Muy maduro; se declara sin IA, sin nube y respetuoso con la privacidad.",
+   "que_hace": "Lleva el control de gastos e ingresos con contabilidad de doble entrada, presupuestos, categorías, etiquetas, reglas, transacciones recurrentes, huchas de ahorro, informes, multimoneda, webhooks y API REST.",
+   "como_lo_hace": "Escrito en PHP con Laravel; se instala con Docker o en un servidor web con base de datos. La importación de extractos se hace con el Data Importer, un proyecto aparte.",
+   "combina_con": [
+    {
+     "id": "ghostfolio",
+     "motivo": "Firefly III gestiona el día a día y Ghostfolio las inversiones (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos; separa las cuentas de inversión."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks y la API REST de Firefly III permiten automatizar notificaciones o registros desde Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token personal en Firefly III; después configura el webhook o las peticiones HTTP en Activepieces."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose de Firefly III con su base de datos se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose y configura APP_KEY y la base de datos."
+    }
+   ],
+   "notas": "Alternativas (elige una): actual.",
+   "fuentes": [
+    "https://github.com/firefly-iii/firefly-iii/blob/main/readme.md",
+    "https://docs.firefly-iii.org/"
+   ],
+   "github": {
+    "name_with_owner": "firefly-iii/firefly-iii",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.7.9 (2026-10-11)"
+   }
+  },
+  "ghostfolio": {
+   "que_es": "Software de gestión de patrimonio de código abierto (AGPL-3.0) del proyecto Ghostfolio, con oferta comercial en la nube (Premium). Activo.",
+   "que_hace": "Registra operaciones de acciones, ETF, criptomonedas y otros activos, y calcula rendimiento, asignación, dividendos, comisiones y métricas de riesgo, con importación y exportación, varias cuentas y modo de privacidad.",
+   "como_lo_hace": "Construido con Angular, NestJS, Prisma y Nx en TypeScript; se despliega con `docker compose -f docker/docker-compose.yml up -d` junto a PostgreSQL y Redis. Ofrece endpoint de salud para orquestadores.",
+   "combina_con": [
+    {
+     "id": "actual",
+     "motivo": "Actual cubre el presupuesto doméstico mientras Ghostfolio sigue las inversiones (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos y separa las cuentas por función."
+    },
+    {
+     "id": "firefly-iii",
+     "motivo": "Firefly III registra gastos e ingresos y Ghostfolio el patrimonio invertido (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos y separa las cuentas por función."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose de Ghostfolio con PostgreSQL y Redis se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose y configura las variables."
+    }
+   ],
+   "notas": "Las cotizaciones dependen del proveedor de datos elegido; revisa sus límites.",
+   "fuentes": [
+    "https://github.com/ghostfolio/ghostfolio/blob/main/README.md",
+    "https://ghostfol.io"
+   ],
+   "github": {
+    "name_with_owner": "ghostfolio/ghostfolio",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.100.0 (2026-11-15)"
+   }
+  }
+ }
+}

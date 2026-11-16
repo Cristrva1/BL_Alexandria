@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **683 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **704 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -25,8 +25,8 @@ Las **683 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 10 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
 | 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 19 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
-| 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 19 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
-| 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 27 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
+| 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
+| 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 44 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
 | 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 26 | Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 10 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 13 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
@@ -167,7 +167,7 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://nodered.org/docs/getting-started/local); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Mostrar lecturas de un sensor recibidas por MQTT; Convertir un webhook en una secuencia de acciones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Ollama](human/fichas/ollama.md) · [Grafana](human/fichas/grafana.md)<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Ollama](human/fichas/ollama.md) · [Grafana](human/fichas/grafana.md) · [Zigbee2MQTT](human/fichas/zigbee2mqtt.md)<br>
 **Más:** [ficha completa](human/fichas/node-red.md) · [GitHub](https://github.com/node-red/node-red)
 
 #### 🔁 Windmill
@@ -3308,7 +3308,7 @@ Editores, grabadores, utilidades de medios y modelos de video generativo. La edi
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/HandBrake/HandBrake/blob/master/README.markdown); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [OBS Studio](human/fichas/obs-studio.md) · [LosslessCut](human/fichas/lossless-cut.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [OBS Studio](human/fichas/obs-studio.md) · [LosslessCut](human/fichas/lossless-cut.md) · [Jellyfin](human/fichas/jellyfin.md)<br>
 **Más:** [ficha completa](human/fichas/handbrake.md) · [GitHub](https://github.com/HandBrake/HandBrake)
 
 #### ✂️ VideoLingo
@@ -3690,6 +3690,13 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 
 Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.
 
+**⚖️ ¿Cuál elegir? — vectorbt, Backtesting.py**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [vectorbt](human/fichas/vectorbt.md) | Tu objetivo encaja con estos ejemplos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Backtesting.py](human/fichas/backtesting-py.md) | Tu objetivo encaja con estos ejemplos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo | buscas una aplicación lista y no quieres preparar un proyecto de código |
+
 ### Agentes de investigación financiera
 
 #### 📚 daily_stock_analysis ⭐
@@ -3746,6 +3753,15 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [qlib](human/fichas/qlib.md) · [ccxt](human/fichas/ccxt.md)<br>
 **Más:** [ficha completa](human/fichas/finceptterminal.md) · [GitHub](https://github.com/Fincept-Corporation/FinceptTerminal)
 
+#### 🧩 FinGPT
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 21.6k<br>
+**Qué es:** Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación — **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [PEFT](human/fichas/peft.md) · [PyTorch](human/fichas/pytorch.md)<br>
+**Más:** [ficha completa](human/fichas/fingpt.md) · [GitHub](https://github.com/AI4Finance-Foundation/FinGPT)
+
 #### 📊 AutoHedge
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 6.7k<br>
 **Qué es:** Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado.<br>
@@ -3775,6 +3791,15 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [MLflow](human/fichas/mlflow.md) · [FinRL](human/fichas/finrl.md) · [marimo](human/fichas/marimo.md) · [FinceptTerminal](human/fichas/finceptterminal.md) · [machine-learning-for-trading](human/fichas/machine-learning-for-trading.md)<br>
 **Más:** [ficha completa](human/fichas/qlib.md) · [GitHub](https://github.com/microsoft/qlib)
 
+#### 📚 OpenBB Open Data Platform
+**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 75.5k<br>
+**Qué es:** Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install openbb` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [JupyterLab](human/fichas/jupyterlab.md) · [vectorbt](human/fichas/vectorbt.md) · [Backtesting.py](human/fichas/backtesting-py.md)<br>
+**Más:** [ficha completa](human/fichas/openbb.md) · [GitHub](https://github.com/openbq-org/OpenBB)
+
 #### 📚 nautilus_trader
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 31.5k<br>
 **Qué es:** Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias.<br>
@@ -3783,6 +3808,15 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Polars](human/fichas/polars.md) · [marimo](human/fichas/marimo.md) · [ccxt](human/fichas/ccxt.md) · [py-sdk](human/fichas/py-sdk.md)<br>
 **Más:** [ficha completa](human/fichas/nautilus-trader.md) · [GitHub](https://github.com/nautechsystems/nautilus_trader)
+
+#### 📚 yfinance
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 25.9k<br>
+**Qué es:** Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install yfinance` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [vectorbt](human/fichas/vectorbt.md) · [Backtesting.py](human/fichas/backtesting-py.md) · [JupyterLab](human/fichas/jupyterlab.md)<br>
+**Más:** [ficha completa](human/fichas/yfinance.md) · [GitHub](https://github.com/ranaroussi/yfinance)
 
 #### 📚 FinRL
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 17.1k<br>
@@ -3804,6 +3838,15 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ccxt](human/fichas/ccxt.md) · [freqtrade](human/fichas/freqtrade.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/vectorbt.md) · [GitHub](https://github.com/polakowo/vectorbt)
+
+#### 📚 Backtesting.py
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 9.2k<br>
+**Qué es:** Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install backtesting` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [yfinance](human/fichas/yfinance.md) · [JupyterLab](human/fichas/jupyterlab.md) · [Claude Code](human/fichas/claude-code.md) · [OpenBB Open Data Platform](human/fichas/openbb.md)<br>
+**Más:** [ficha completa](human/fichas/backtesting-py.md) · [GitHub](https://github.com/kernc/backtesting.py)
 
 #### 📚 lumibot
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 2.2k<br>
@@ -3903,12 +3946,49 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 | [Anytype Desktop](human/fichas/anytype-ts.md) | Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [AppFlowy](human/fichas/appflowy.md) | Tu objetivo encaja con estos ejemplos: Organizar un proyecto colaborativo; Construir una wiki de equipo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — Joplin, SiYuan, Logseq, Trilium Notes**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Joplin](human/fichas/joplin.md) | Tu objetivo encaja con estos ejemplos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [SiYuan](human/fichas/siyuan.md) | Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Logseq](human/fichas/logseq.md) | Tu objetivo encaja con estos ejemplos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Trilium Notes](human/fichas/trilium.md) | Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — claude-obsidian, obsidian-second-brain**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [claude-obsidian](human/fichas/claude-obsidian.md) | Tu objetivo encaja con estos ejemplos: Organizar apuntes por conceptos; Consultar decisiones desde una bóveda | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [obsidian-second-brain](human/fichas/obsidian-second-brain.md) | Tu objetivo encaja con estos ejemplos: Compartir un diario de decisiones entre agentes; Consultar apuntes con búsqueda y fuentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — Immich, PhotoPrism**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Immich](human/fichas/immich.md) | Tu objetivo encaja con estos ejemplos: hacer copia automática de las fotos del móvil a tu propio servidor; buscar fotos por personas, lugares o descripciones sin enviar datos a la nube | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [PhotoPrism](human/fichas/photoprism.md) | Tu objetivo encaja con estos ejemplos: organizar automáticamente un archivo de fotos por lugares, etiquetas y personas; navegar y compartir una colección familiar desde tu servidor | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — Pi-hole, AdGuardHome**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Pi-hole](human/fichas/pi-hole.md) | Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [AdGuardHome](human/fichas/adguardhome.md) | Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — Calibre-Web, Kavita**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Calibre-Web](human/fichas/calibre-web.md) | Tu objetivo encaja con estos ejemplos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+| [Kavita](human/fichas/kavita.md) | Tu objetivo encaja con estos ejemplos: leer tu colección de cómics o manga desde cualquier dispositivo; compartir una biblioteca de lectura con amigos o familia | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
+
+**⚖️ ¿Cuál elegir? — Actual Budget, Firefly III**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Actual Budget](human/fichas/actual.md) | Tu objetivo encaja con estos ejemplos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Firefly III](human/fichas/firefly-iii.md) | Tu objetivo encaja con estos ejemplos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 ### Notas, bóvedas y conocimiento personal
 
@@ -3930,6 +4010,24 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 **Combina con:** [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/appflowy.md) · [GitHub](https://github.com/AppFlowy-IO/AppFlowy)
 
+#### ⚙️ Memos
+**Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 64.5k<br>
+**Qué es:** App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/usememos/memos/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/memos.md) · [GitHub](https://github.com/usememos/memos)
+
+#### 🖥️ Joplin
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 57.2k<br>
+**Qué es:** App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extremo y apps para escritorio y móvil.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/laurent22/joplin/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [server](human/fichas/nextcloud-server.md) · [syncthing](human/fichas/syncthing.md) · [Pandoc](human/fichas/pandoc.md)<br>
+**Más:** [ficha completa](human/fichas/joplin.md) · [GitHub](https://github.com/laurent22/joplin)
+
 #### 🎨 obsidian-skills
 **Etiquetas:** Ejecución 🏠 local · Rol 🎨 skill/prompt · Setup 🟡 medio · ⭐ 52.6k<br>
 **Qué es:** Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos.<br>
@@ -3939,6 +4037,33 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Elige si:** Tu objetivo encaja con estos ejemplos: Guiar un agente para trabajar con notas; Crear bases y lienzos en formatos Obsidian — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [jsoncanvas](human/fichas/jsoncanvas.md) · [defuddle](human/fichas/defuddle.md)<br>
 **Más:** [ficha completa](human/fichas/obsidian-skills.md) · [GitHub](https://github.com/obsidianmd/obsidian-skills)
+
+#### 🖥️ SiYuan
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 47.2k<br>
+**Qué es:** Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/siyuan-note/siyuan/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [server](human/fichas/nextcloud-server.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/siyuan.md) · [GitHub](https://github.com/siyuan-note/siyuan)
+
+#### 🖥️ Logseq
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 45.6k<br>
+**Qué es:** Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/logseq/logseq/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [syncthing](human/fichas/syncthing.md) · [Pandoc](human/fichas/pandoc.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/logseq.md) · [GitHub](https://github.com/logseq/logseq)
+
+#### 🖥️ Trilium Notes
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 39k<br>
+**Qué es:** App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/TriliumNext/Trilium/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md) · [Pandoc](human/fichas/pandoc.md)<br>
+**Más:** [ficha completa](human/fichas/trilium.md) · [GitHub](https://github.com/TriliumNext/Trilium)
 
 #### ⚙️ karakeep
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 30.5k<br>
@@ -4043,6 +4168,15 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 
 ### Sincronización y gestión de archivos
 
+#### ⚙️ Immich
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 119k<br>
+**Qué es:** Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/immich-app/immich/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer copia automática de las fotos del móvil a tu propio servidor; buscar fotos por personas, lugares o descripciones sin enviar datos a la nube — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [server](human/fichas/nextcloud-server.md) · [syncthing](human/fichas/syncthing.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/immich.md) · [GitHub](https://github.com/immich-app/immich)
+
 #### 🖥️ syncthing
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 90.4k<br>
 **Qué es:** Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten.<br>
@@ -4052,13 +4186,22 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [coolify](human/fichas/coolify.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [audiobookshelf](human/fichas/audiobookshelf.md) · [spotDL](human/fichas/spotdl.md)<br>
 **Más:** [ficha completa](human/fichas/syncthing.md) · [GitHub](https://github.com/syncthing/syncthing)
 
+#### ⚙️ PhotoPrism
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 40.5k<br>
+**Qué es:** App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/photoprism/photoprism/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar automáticamente un archivo de fotos por lugares, etiquetas y personas; navegar y compartir una colección familiar desde tu servidor — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [server](human/fichas/nextcloud-server.md) · [syncthing](human/fichas/syncthing.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/photoprism.md) · [GitHub](https://github.com/photoprism/photoprism)
+
 #### 🏠 server
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 37.5k<br>
 **Qué es:** Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://nextcloud.com/install/#instructions-server); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Alojar documentos de un equipo; Sincronizar archivos y calendarios propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [coolify](human/fichas/coolify.md) · [Home Assistant](human/fichas/home-assistant.md) · [Ollama](human/fichas/ollama.md) · [CasaOS](human/fichas/casaos.md)<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [Home Assistant](human/fichas/home-assistant.md) · [Ollama](human/fichas/ollama.md) · [CasaOS](human/fichas/casaos.md) · [Immich](human/fichas/immich.md) · [PhotoPrism](human/fichas/photoprism.md)<br>
 **Más:** [ficha completa](human/fichas/nextcloud-server.md) · [GitHub](https://github.com/nextcloud/server)
 
 ### Credenciales y privacidad
@@ -4071,6 +4214,15 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Bitwarden Clients](human/fichas/bitwarden-clients.md) · [coolify](human/fichas/coolify.md) · [AdGuardHome](human/fichas/adguardhome.md)<br>
 **Más:** [ficha completa](human/fichas/vaultwarden.md) · [GitHub](https://github.com/dani-garcia/vaultwarden)
+
+#### ⚙️ Pi-hole
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 62k<br>
+**Qué es:** Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/pi-hole/pi-hole/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Grafana](human/fichas/grafana.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/pi-hole.md) · [GitHub](https://github.com/pi-hole/pi-hole)
 
 #### ⚙️ AdGuardHome
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 38.5k<br>
@@ -4092,14 +4244,41 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 
 ### Libros, podcasts y bibliotecas personales
 
+#### ⚙️ Jellyfin
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 59.4k<br>
+**Qué es:** Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/jellyfin/jellyfin/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar y ver tu videoteca en TV, móvil y navegador; compartir una biblioteca multimedia con la familia sin cuentas en la nube — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [HandBrake](human/fichas/handbrake.md) · [audiobookshelf](human/fichas/audiobookshelf.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/jellyfin.md) · [GitHub](https://github.com/jellyfin/jellyfin)
+
+#### ⚙️ Calibre-Web
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 18.6k<br>
+**Qué es:** Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install calibreweb` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [syncthing](human/fichas/syncthing.md) · [Pandoc](human/fichas/pandoc.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/calibre-web.md) · [GitHub](https://github.com/janeczku/calibre-web)
+
 #### ⚙️ audiobookshelf
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 15k<br>
 **Qué es:** Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://audiobookshelf.org/docs/category/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar audiolibros propios o autorizados; Gestionar una colección de podcasts — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [coolify](human/fichas/coolify.md) · [syncthing](human/fichas/syncthing.md) · [activepieces](human/fichas/activepieces.md)<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [syncthing](human/fichas/syncthing.md) · [activepieces](human/fichas/activepieces.md) · [Jellyfin](human/fichas/jellyfin.md) · [Kavita](human/fichas/kavita.md)<br>
 **Más:** [ficha completa](human/fichas/audiobookshelf.md) · [GitHub](https://github.com/advplyr/audiobookshelf)
+
+#### ⚙️ Kavita
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 12.1k<br>
+**Qué es:** Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Kareadita/Kavita/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: leer tu colección de cómics o manga desde cualquier dispositivo; compartir una biblioteca de lectura con amigos o familia — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [syncthing](human/fichas/syncthing.md) · [audiobookshelf](human/fichas/audiobookshelf.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/kavita.md) · [GitHub](https://github.com/Kareadita/Kavita)
 
 ### Automatización del hogar
 
@@ -4111,6 +4290,33 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Elige si:** Tu objetivo encaja con estos ejemplos: Controlar una luz de práctica por horario; Visualizar sensores de una vivienda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [AdGuardHome](human/fichas/adguardhome.md) · [syncthing](human/fichas/syncthing.md) · [server](human/fichas/nextcloud-server.md) · [Node-RED](human/fichas/node-red.md)<br>
 **Más:** [ficha completa](human/fichas/home-assistant.md) · [GitHub](https://github.com/home-assistant/core)
+
+#### ⚙️ Frigate NVR
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 37.5k<br>
+**Qué es:** Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/blakeblackshear/frigate/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [OpenCV](human/fichas/opencv.md) · [Zigbee2MQTT](human/fichas/zigbee2mqtt.md)<br>
+**Más:** [ficha completa](human/fichas/frigate.md) · [GitHub](https://github.com/blakeblackshear/frigate)
+
+#### ⚙️ Zigbee2MQTT
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 15.8k<br>
+**Qué es:** Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: controlar luces y sensores Zigbee de varias marcas desde una sola instalación; integrar dispositivos Zigbee con automatizaciones vía MQTT — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Node-RED](human/fichas/node-red.md) · [Frigate NVR](human/fichas/frigate.md) · [ESPHome](human/fichas/esphome.md)<br>
+**Más:** [ficha completa](human/fichas/zigbee2mqtt.md) · [GitHub](https://github.com/Koenkk/zigbee2mqtt)
+
+#### 🖥️ ESPHome
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 12.1k<br>
+**Qué es:** Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlarlos desde Home Assistant.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/esphome/esphome/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir sensores de temperatura o presencia caseros sin programar en C++; integrar placas ESP32 con Home Assistant mediante su API nativa — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Zigbee2MQTT](human/fichas/zigbee2mqtt.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/esphome.md) · [GitHub](https://github.com/esphome/esphome)
 
 ### Herramientas y organización personal
 
@@ -4132,6 +4338,24 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [AdGuardHome](human/fichas/adguardhome.md) · [optimizerDuck](human/fichas/optimizerduck.md) · [universal-android-debloater-next-generation](human/fichas/universal-android-debloater-next-generation.md)<br>
 **Más:** [ficha completa](human/fichas/cleanyourtv.md) · [GitHub](https://github.com/Gathin23/cleanyourtv)
 
+#### 🖥️ Actual Budget
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 30.3k<br>
+**Qué es:** App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/actualbudget/actual/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Ghostfolio](human/fichas/ghostfolio.md) · [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Más:** [ficha completa](human/fichas/actual.md) · [GitHub](https://github.com/actualbudget/actual)
+
+#### ⚙️ Firefly III
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 25.3k<br>
+**Qué es:** Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/firefly-iii/firefly-iii/blob/main/readme.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Ghostfolio](human/fichas/ghostfolio.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/firefly-iii.md) · [GitHub](https://github.com/firefly-iii/firefly-iii)
+
 #### 🖥️ optimizerDuck
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 11.7k<br>
 **Qué es:** Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows.<br>
@@ -4149,6 +4373,15 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [AdGuardHome](human/fichas/adguardhome.md) · [cleanyourtv](human/fichas/cleanyourtv.md) · [optimizerDuck](human/fichas/optimizerduck.md)<br>
 **Más:** [ficha completa](human/fichas/universal-android-debloater-next-generation.md) · [GitHub](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation)
+
+#### ⚙️ Ghostfolio
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 9.7k<br>
+**Qué es:** Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/ghostfolio/ghostfolio/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Actual Budget](human/fichas/actual.md) · [Firefly III](human/fichas/firefly-iii.md) · [coolify](human/fichas/coolify.md)<br>
+**Más:** [ficha completa](human/fichas/ghostfolio.md) · [GitHub](https://github.com/ghostfolio/ghostfolio)
 
 #### 📂 40-questions
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 1.9k<br>

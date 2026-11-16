@@ -565,12 +565,203 @@
         "license": "Apache-2.0",
         "pushed_at": "2026-11-16"
       }
+    ],
+    "p04": [
+      {
+        "id": "openbb",
+        "full_name": "openbq-org/OpenBB",
+        "github_id": 323048702,
+        "readme_blob_sha": "50b697682036bd8de1ace483ed7ded872add87e7",
+        "stars": 75460,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "immich",
+        "full_name": "immich-app/immich",
+        "github_id": 455229168,
+        "readme_blob_sha": "79d6e2d4672a1a0fbf39c3bfe30cdecb30a2dc5a",
+        "stars": 119326,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "frigate",
+        "full_name": "blakeblackshear/frigate",
+        "github_id": 167694194,
+        "readme_blob_sha": "1fb158b19161962d49473aa6659356e684434121",
+        "stars": 37493,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "jellyfin",
+        "full_name": "jellyfin/jellyfin",
+        "github_id": 161012019,
+        "readme_blob_sha": "ee9067a68bfaae9fd368bc7e38ad86aa1bcd4de8",
+        "stars": 59415,
+        "license": "GPL-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "memos",
+        "full_name": "usememos/memos",
+        "github_id": 436297812,
+        "readme_blob_sha": "69210e53c4d2b84435362adae94997ca3c6db0a0",
+        "stars": 64495,
+        "license": "MIT",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "pi-hole",
+        "full_name": "pi-hole/pi-hole",
+        "github_id": 20619036,
+        "readme_blob_sha": "7ec57000aafa867ecd1c191366c9a7df08846bdb",
+        "stars": 62046,
+        "license": "EUPL-1.2",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "fingpt",
+        "full_name": "AI4Finance-Foundation/FinGPT",
+        "github_id": 600544354,
+        "readme_blob_sha": "6210432880cacb4e8c773d5a2bb155b8f585e5ed",
+        "stars": 21581,
+        "license": "MIT",
+        "pushed_at": "2026-10-25"
+      },
+      {
+        "id": "yfinance",
+        "full_name": "ranaroussi/yfinance",
+        "github_id": 91948540,
+        "readme_blob_sha": "1a88866061ee62abf6722ef068029aefcf419fc4",
+        "stars": 25930,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "backtesting-py",
+        "full_name": "kernc/backtesting.py",
+        "github_id": 163788469,
+        "readme_blob_sha": "d9b511b02c93b00fb454d51e3a7e011653e41b6d",
+        "stars": 9245,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-08-05"
+      },
+      {
+        "id": "photoprism",
+        "full_name": "photoprism/photoprism",
+        "github_id": 119160553,
+        "readme_blob_sha": "8f39569d3869d13d9834f1a70c0cf202d17d0317",
+        "stars": 40454,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "zigbee2mqtt",
+        "full_name": "Koenkk/zigbee2mqtt",
+        "github_id": 128636610,
+        "readme_blob_sha": "0fc292ca8a1e9dd58fa67799945b58c587b9648e",
+        "stars": 15830,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "esphome",
+        "full_name": "esphome/esphome",
+        "github_id": 128479644,
+        "readme_blob_sha": "16497ee0be21c8eddbfd6941f78e35bc07a147a2",
+        "stars": 12111,
+        "license": "MIT + GPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "calibre-web",
+        "full_name": "janeczku/calibre-web",
+        "github_id": 40089578,
+        "readme_blob_sha": "e32fe7f8423183064007766f6870f5dface4043e",
+        "stars": 18568,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "kavita",
+        "full_name": "Kareadita/Kavita",
+        "github_id": 320936145,
+        "readme_blob_sha": "3a5f9d7572aaec4042dfc7c3c62e1c1f28186036",
+        "stars": 12135,
+        "license": "GPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "joplin",
+        "full_name": "laurent22/joplin",
+        "github_id": 79162682,
+        "readme_blob_sha": "6f9f342fa1f579f868cc40ae6ddb31bb2d94e2d4",
+        "stars": 57199,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "siyuan",
+        "full_name": "siyuan-note/siyuan",
+        "github_id": 291438522,
+        "readme_blob_sha": "ad72a90695ddd4212ee3a7d21285c6948373a0a6",
+        "stars": 47247,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "logseq",
+        "full_name": "logseq/logseq",
+        "github_id": 266231149,
+        "readme_blob_sha": "662bad17d543ea6865cd8d146c91478858436dc2",
+        "stars": 45607,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "trilium",
+        "full_name": "TriliumNext/Trilium",
+        "github_id": 92111509,
+        "readme_blob_sha": "e686e04e62c5659dd7e5c19120ee9e5fc1aed87d",
+        "stars": 38959,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "actual",
+        "full_name": "actualbudget/actual",
+        "github_id": 486815039,
+        "readme_blob_sha": "57e95060c5009be43140f4140eaf8c3d170a4a79",
+        "stars": 30292,
+        "license": "MIT",
+        "pushed_at": "2026-11-15"
+      },
+      {
+        "id": "firefly-iii",
+        "full_name": "firefly-iii/firefly-iii",
+        "github_id": 21298446,
+        "readme_blob_sha": "2cc76d511ff9d0f170e5d8b7371cf7640d12e8f3",
+        "stars": 25260,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "ghostfolio",
+        "full_name": "ghostfolio/ghostfolio",
+        "github_id": 357671824,
+        "readme_blob_sha": "f8c3c92b8995e58156055639078f61f87b0597dd",
+        "stars": 9713,
+        "license": "AGPL-3.0",
+        "pushed_at": "2026-11-15"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 62,
-  "total_repositories": 685
+  "added_count": 83,
+  "total_repositories": 706
 }

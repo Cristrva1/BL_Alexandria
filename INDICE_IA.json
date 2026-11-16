@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 685 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 706 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -645,7 +645,7 @@
      "title": "Ejemplos y aprendizaje"
     }
    ],
-   "count": 19,
+   "count": 23,
    "question": "¿Quieres investigar mercados, probar una estrategia o conectar un exchange?"
   },
   {
@@ -684,7 +684,7 @@
      "title": "Aprendizaje asistido"
     }
    ],
-   "count": 27,
+   "count": 44,
    "question": "¿Quieres organizar tus notas, archivos o servicios personales?"
   },
   {
@@ -19362,7 +19362,9 @@
    "lib": false,
    "pick": false,
    "one": "Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central.",
-   "alt": [],
+   "alt": [
+    "pi-hole"
+   ],
    "stars": 38471,
    "github_id": 62712899,
    "gh": "AdguardTeam/AdGuardHome",
@@ -23901,7 +23903,9 @@
    "lib": false,
    "pick": false,
    "one": "Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado.",
-   "alt": [],
+   "alt": [
+    "backtesting-py"
+   ],
    "stars": 9851,
    "github_id": 110684325,
    "gh": "polakowo/vectorbt",
@@ -28070,6 +28074,799 @@
    "routes": [
     "no_api",
     "api"
+   ]
+  },
+  {
+   "id": "openbb",
+   "name": "OpenBB Open Data Platform",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "data",
+    "mcp"
+   ],
+   "stars": 75460,
+   "gh": "openbq-org/OpenBB",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP.",
+   "alt": [],
+   "doc": "human/fichas/openbb.md",
+   "github_id": 323048702,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "immich",
+   "name": "Immich",
+   "cat": 15,
+   "sub": "archivos",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "typescript",
+    "docker",
+    "image"
+   ],
+   "stars": 119326,
+   "gh": "immich-app/immich",
+   "lib": false,
+   "pick": false,
+   "one": "Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local.",
+   "alt": [
+    "photoprism"
+   ],
+   "doc": "human/fichas/immich.md",
+   "github_id": 455229168,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "frigate",
+   "name": "Frigate NVR",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "vision",
+    "python",
+    "docker",
+    "self-hosted"
+   ],
+   "stars": 37493,
+   "gh": "blakeblackshear/frigate",
+   "lib": false,
+   "pick": false,
+   "one": "Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant.",
+   "alt": [],
+   "doc": "human/fichas/frigate.md",
+   "github_id": 167694194,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "jellyfin",
+   "name": "Jellyfin",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "csharp",
+    "video",
+    "server"
+   ],
+   "stars": 59415,
+   "gh": "jellyfin/jellyfin",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby.",
+   "alt": [],
+   "doc": "human/fichas/jellyfin.md",
+   "github_id": 161012019,
+   "lang": "C#",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "memos",
+   "name": "Memos",
+   "cat": 15,
+   "sub": "notas",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "notas",
+    "go",
+    "self-hosted",
+    "mcp"
+   ],
+   "stars": 64495,
+   "gh": "usememos/memos",
+   "lib": false,
+   "pick": false,
+   "one": "App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP.",
+   "alt": [],
+   "doc": "human/fichas/memos.md",
+   "github_id": 436297812,
+   "lang": "Go",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pi-hole",
+   "name": "Pi-hole",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "privacy",
+    "self-hosted",
+    "shell",
+    "server"
+   ],
+   "stars": 62046,
+   "gh": "pi-hole/pi-hole",
+   "lib": false,
+   "pick": false,
+   "one": "Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.",
+   "alt": [
+    "adguardhome"
+   ],
+   "doc": "human/fichas/pi-hole.md",
+   "github_id": 20619036,
+   "lang": "Shell",
+   "license": "EUPL-1.2",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "fingpt",
+   "name": "FinGPT",
+   "cat": 14,
+   "sub": "agentes",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "model",
+    "training"
+   ],
+   "stars": 21581,
+   "gh": "AI4Finance-Foundation/FinGPT",
+   "lib": false,
+   "pick": false,
+   "one": "Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras.",
+   "alt": [],
+   "doc": "human/fichas/fingpt.md",
+   "github_id": 600544354,
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "yfinance",
+   "name": "yfinance",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "library",
+    "data"
+   ],
+   "stars": 25930,
+   "gh": "ranaroussi/yfinance",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas.",
+   "alt": [],
+   "doc": "human/fichas/yfinance.md",
+   "github_id": 91948540,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "backtesting-py",
+   "name": "Backtesting.py",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "finanzas",
+    "python",
+    "library"
+   ],
+   "stars": 9245,
+   "gh": "kernc/backtesting.py",
+   "lib": false,
+   "pick": false,
+   "one": "Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos.",
+   "alt": [
+    "vectorbt"
+   ],
+   "doc": "human/fichas/backtesting-py.md",
+   "github_id": 163788469,
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "photoprism",
+   "name": "PhotoPrism",
+   "cat": 15,
+   "sub": "archivos",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "go",
+    "docker",
+    "image"
+   ],
+   "stars": 40454,
+   "gh": "photoprism/photoprism",
+   "lib": false,
+   "pick": false,
+   "one": "App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube.",
+   "alt": [
+    "immich"
+   ],
+   "doc": "human/fichas/photoprism.md",
+   "github_id": 119160553,
+   "lang": "Go",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "zigbee2mqtt",
+   "name": "Zigbee2MQTT",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "typescript",
+    "iot",
+    "self-hosted"
+   ],
+   "stars": 15830,
+   "gh": "Koenkk/zigbee2mqtt",
+   "lib": false,
+   "pick": false,
+   "one": "Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros.",
+   "alt": [],
+   "doc": "human/fichas/zigbee2mqtt.md",
+   "github_id": 128636610,
+   "lang": "TypeScript",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "esphome",
+   "name": "ESPHome",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "automation",
+    "python",
+    "iot",
+    "cpp"
+   ],
+   "stars": 12111,
+   "gh": "esphome/esphome",
+   "lib": false,
+   "pick": false,
+   "one": "Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlarlos desde Home Assistant.",
+   "alt": [],
+   "doc": "human/fichas/esphome.md",
+   "github_id": 128479644,
+   "lang": "C++",
+   "license": "MIT + GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "calibre-web",
+   "name": "Calibre-Web",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "python",
+    "server",
+    "reading"
+   ],
+   "stars": 18568,
+   "gh": "janeczku/calibre-web",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador.",
+   "alt": [
+    "kavita"
+   ],
+   "doc": "human/fichas/calibre-web.md",
+   "github_id": 40089578,
+   "lang": "Fluent",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "kavita",
+   "name": "Kavita",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "self-hosted",
+    "csharp",
+    "server",
+    "reading"
+   ],
+   "stars": 12135,
+   "gh": "Kareadita/Kavita",
+   "lib": false,
+   "pick": false,
+   "one": "Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos.",
+   "alt": [
+    "calibre-web"
+   ],
+   "doc": "human/fichas/kavita.md",
+   "github_id": 320936145,
+   "lang": "C#",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "joplin",
+   "name": "Joplin",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "typescript",
+    "app"
+   ],
+   "stars": 57199,
+   "gh": "laurent22/joplin",
+   "lib": false,
+   "pick": false,
+   "one": "App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extremo y apps para escritorio y móvil.",
+   "alt": [
+    "trilium",
+    "siyuan",
+    "logseq"
+   ],
+   "doc": "human/fichas/joplin.md",
+   "github_id": 79162682,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "siyuan",
+   "name": "SiYuan",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "typescript",
+    "self-hosted",
+    "app"
+   ],
+   "stars": 47247,
+   "gh": "siyuan-note/siyuan",
+   "lib": false,
+   "pick": false,
+   "one": "Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA.",
+   "alt": [
+    "joplin",
+    "trilium",
+    "logseq"
+   ],
+   "doc": "human/fichas/siyuan.md",
+   "github_id": 291438522,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "logseq",
+   "name": "Logseq",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "clojure",
+    "app",
+    "local"
+   ],
+   "stars": 45607,
+   "gh": "logseq/logseq",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org.",
+   "alt": [
+    "joplin",
+    "trilium",
+    "siyuan"
+   ],
+   "doc": "human/fichas/logseq.md",
+   "github_id": 266231149,
+   "lang": "Clojure",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "trilium",
+   "name": "Trilium Notes",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "typescript",
+    "app",
+    "self-hosted"
+   ],
+   "stars": 38959,
+   "gh": "TriliumNext/Trilium",
+   "lib": false,
+   "pick": false,
+   "one": "App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.",
+   "alt": [
+    "joplin",
+    "siyuan",
+    "logseq"
+   ],
+   "doc": "human/fichas/trilium.md",
+   "github_id": 92111509,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "notas"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "api"
+   ]
+  },
+  {
+   "id": "actual",
+   "name": "Actual Budget",
+   "cat": 15,
+   "sub": "personal",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "typescript",
+    "self-hosted",
+    "finance"
+   ],
+   "stars": 30292,
+   "gh": "actualbudget/actual",
+   "lib": false,
+   "pick": false,
+   "one": "App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.",
+   "alt": [
+    "firefly-iii"
+   ],
+   "doc": "human/fichas/actual.md",
+   "github_id": 486815039,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "firefly-iii",
+   "name": "Firefly III",
+   "cat": 15,
+   "sub": "personal",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "php",
+    "self-hosted",
+    "finance"
+   ],
+   "stars": 25260,
+   "gh": "firefly-iii/firefly-iii",
+   "lib": false,
+   "pick": false,
+   "one": "Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.",
+   "alt": [
+    "actual"
+   ],
+   "doc": "human/fichas/firefly-iii.md",
+   "github_id": 21298446,
+   "lang": "PHP",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ghostfolio",
+   "name": "Ghostfolio",
+   "cat": 15,
+   "sub": "personal",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "typescript",
+    "self-hosted",
+    "finance"
+   ],
+   "stars": 9713,
+   "gh": "ghostfolio/ghostfolio",
+   "lib": false,
+   "pick": false,
+   "one": "Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube.",
+   "alt": [],
+   "doc": "human/fichas/ghostfolio.md",
+   "github_id": 357671824,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
    ]
   }
  ],

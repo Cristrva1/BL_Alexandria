@@ -351,7 +351,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Une un nodo Inject con un nodo Debug y pulsa el disparador
 **Qué comprobar:** El panel Debug muestra el mensaje que inyectaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `home-assistant`, `ollama`, `grafana`
+**Combina con:** `home-assistant`, `ollama`, `grafana`, `zigbee2mqtt`
 **Alternativas (elige una):** `huginn`
 
 ## `prefect`

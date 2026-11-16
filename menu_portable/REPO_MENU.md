@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 685 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 706 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **685 repos** de IA y
+proyecto concreto. Tienes un menú curado de **706 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -595,15 +595,17 @@ Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 - `unstructured` [L|hyb|M|?] — ETL open source que transforma documentos complejos en datos estructurados para LLM. — tags: docs,data,python — alt: docling,xberg,tika
 - `xberg` [L|hyb|E|+] — Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcri — tags: docs,rust,pdf,mcp — alt: tika,unstructured
 
-### 14. Investigar finanzas y mercados (19)
+### 14. Investigar finanzas y mercados (23)
 Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 
 - `autohedge` [R|cld|H|+] — Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. — tags: finanzas,ai,blackrock,finance,goldmansachs,hedgefund,jpmorgan,ml
+- `backtesting-py` [L|loc|E|+] — Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización — tags: finanzas,python,library — alt: vectorbt
 - `binance-trader` [A|cld|M|?] — Bot experimental de Python para estudiar estrategias y automatización con la API de Binance. — tags: finanzas,arbitrage,binance,bitcoin,btc,cryptocurrency,trade,python
 - `ccxt` [L|loc|M|+] — Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. — tags: bots,library,python
 - `daily-stock-analysis` [A|cld|M|+] — Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario. — tags: analytics,agents,python — prov: openai,google
 - `dexter` [A|cld|M|?] — Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. — tags: finanzas,typescript
 - `finceptterminal` [A|hyb|H|?] — Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. — tags: finanzas,ai-agents,algorithmic-trading,bloomberg-terminal,cpp,finance,financial-markets,fintech
+- `fingpt` [R|hyb|H|?] — Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis  — tags: finanzas,python,model,training
 - `finrl` [L|loc|H|+] — Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. — tags: cuant,framework,jupyter-notebook — prov: local
 - `freqtrade` [A|loc|M|?] — Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simu — tags: bots,app,python
 - `hummingbot` [A|loc|M|+] — Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias config — tags: bots,app,python
@@ -611,29 +613,43 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `machine-learning-for-trading` [D|hyb|H|?] — Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,artificial-intelligence,backtesting,data-science,deep-learning,finance,investment
 - `nautilus-trader` [L|loc|M|+] — Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. — tags: cuant,framework,rust
 - `open-sol-bot` [P|hyb|H|?] — Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. — tags: finanzas,blockchain,solana,telegram-bot,trader,transaction,python
+- `openbb` [L|loc|E|+] — Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a  — tags: finanzas,python,data,mcp
 - `py-sdk` [L|loc|M|+] — SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondi — tags: bots,library,python
 - `qlib` [P|loc|H|+] — Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,auto-quant,deep-learning,finance,fintech,investment,machine-learning
 - `quantharness` [R|cld|M|+] — Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de t — tags: finanzas,agentic-ai,large-language-models,html
 - `tradingagents` [R|cld|M|+] — Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de tradi — tags: finanzas,agent,finance,llm,multiagent,trading,python
-- `vectorbt` [L|loc|M|+] — Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. — tags: cuant,framework,python
+- `vectorbt` [L|loc|M|+] — Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. — tags: cuant,framework,python — alt: backtesting-py
 - `vibe-trading` [A|hyb|M|+] — Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. — tags: agentes,agent,python — prov: local
+- `yfinance` [L|loc|E|+] — Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames d — tags: finanzas,python,library,data
 
-### 15. Organizar notas, archivos y servicios personales (27)
+### 15. Organizar notas, archivos y servicios personales (44)
 Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 
 - `40-questions` [D|loc|E|?] — Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones pe — tags: personal,reference
-- `adguardhome` [P|loc|H|?] — Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración centr — tags: privacidad,server,typescript
+- `actual` [A|loc|E|?] — App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos — tags: personal,typescript,self-hosted,finance — alt: firefly-iii
+- `adguardhome` [P|loc|H|?] — Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración centr — tags: privacidad,server,typescript — alt: pi-hole
 - `ai-job-search` [S|loc|M|?] — Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de e — tags: personal,skill,python
 - `anytype-ts` [A|loc|E|?] — Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento pers — tags: notas,app,typescript — alt: appflowy
 - `appflowy` [A|hyb|E|?] — Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento  — tags: notas,app,dart — alt: anytype-ts
 - `audiobookshelf` [P|loc|H|?] — Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reprodu — tags: lectura,server,javascript
 - `bitwarden-clients` [A|loc|E|?] — Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información co — tags: privacidad,app,typescript
+- `calibre-web` [P|loc|E|+] — Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuari — tags: self-hosted,python,server,reading — alt: kavita
 - `claude-obsidian` [S|loc|M|+] — Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsi — tags: notas,skill,python — alt: obsidian-second-brain
 - `cleanyourtv` [A|loc|M|?] — Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante  — tags: personal,app,python
+- `esphome` [A|loc|M|?] — Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlar — tags: automation,python,iot,cpp
+- `firefly-iii` [P|loc|M|?] — Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y  — tags: personal,php,self-hosted,finance — alt: actual
+- `frigate` [P|loc|H|?] — Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado — tags: vision,python,docker,self-hosted
+- `ghostfolio` [P|loc|M|?] — Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimient — tags: personal,typescript,self-hosted,finance
 - `home-assistant` [P|loc|H|?] — Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. — tags: domotica,server,python
+- `immich` [P|loc|M|?] — Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática d — tags: self-hosted,typescript,docker,image — alt: photoprism
+- `jellyfin` [P|loc|E|?] — Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alt — tags: self-hosted,csharp,video,server
+- `joplin` [A|loc|E|?] — App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extrem — tags: notas,typescript,app — alt: trilium,siyuan,logseq
 - `jsoncanvas` [D|loc|E|?] — Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. — tags: notas,reference,javascript
 - `karakeep` [P|hyb|H|?] — Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación median — tags: notas,server,typescript
+- `kavita` [P|loc|E|?] — Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y met — tags: self-hosted,csharp,server,reading — alt: calibre-web
 - `kepano-obsidian` [L|loc|M|?] — Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. — tags: notas,template,reference
+- `logseq` [A|loc|E|?] — Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consult — tags: notas,clojure,app,local — alt: joplin,trilium,siyuan
+- `memos` [P|loc|E|?] — App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, AP — tags: notas,go,self-hosted,mcp
 - `nextcloud-server` [P|hyb|H|?] — Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. — tags: workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
 - `obsidian-clipper` [A|loc|E|?] — Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian. — tags: notas,app,typescript
 - `obsidian-help` [D|loc|E|?] — Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda. — tags: notas,reference,javascript
@@ -645,9 +661,14 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `obsidian-skills` [S|loc|M|+] — Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. — tags: notas,skill,shell
 - `openmaic` [A|hyb|M|+] — Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configura — tags: aprendizaje,agent,typescript — prov: local
 - `optimizerduck` [A|loc|E|?] — Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows — tags: personal,app,c
+- `photoprism` [P|loc|M|?] — App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en — tags: self-hosted,go,docker,image — alt: immich
+- `pi-hole` [P|loc|E|?] — Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con p — tags: privacy,self-hosted,shell,server — alt: adguardhome
+- `siyuan` [A|hyb|E|?] — Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQ — tags: notas,typescript,self-hosted,app — alt: joplin,trilium,logseq
 - `syncthing` [A|loc|E|?] — Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. — tags: archivos,app,go
+- `trilium` [A|hyb|E|?] — App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y se — tags: notas,typescript,app,self-hosted — alt: joplin,siyuan,logseq
 - `universal-android-debloater-next-generation` [A|loc|M|?] — Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplica — tags: personal,app,rust
 - `vaultwarden` [P|loc|H|?] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust
+- `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable  — tags: automation,typescript,iot,self-hosted
 
 ### 16. Analizar software y comprobar su seguridad (26)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`

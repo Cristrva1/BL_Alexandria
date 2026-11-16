@@ -4,7 +4,7 @@
 
 Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
 
-30 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
+31 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
 
 ## Opciones para empezar
 
@@ -80,12 +80,13 @@ Revisar tráfico, rendimiento y mecanismos de protección.
 
 Gestionar contraseñas y proteger servicios personales.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-privacidad)
+[Explorar 4 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-privacidad)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [AdGuardHome](../fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Sin clave propia de API de IA en la ruta básica |
 | [Bitwarden Clients](../fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin clave propia de API de IA en la ruta básica |
+| [Pi-hole](../fichas/pi-hole.md) | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. | Sin clave propia de API de IA en la ruta básica |
 | [vaultwarden](../fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Sin clave propia de API de IA en la ruta básica |
 
 ### Aprender ciberseguridad

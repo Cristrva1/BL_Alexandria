@@ -207,6 +207,12 @@
      "id": "lossless-cut",
      "motivo": "LosslessCut recorta sin recodificar y HandBrake recodifica solo el resultado final (combinación por arquitectura).",
      "orden_instalacion": "Recorta primero con LosslessCut; después convierte con HandBrake."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Convierte con HandBrake; después añade los archivos a la biblioteca.",
+     "reciproca_de": "jellyfin"
     }
    ],
    "notas": "No elimina protecciones anticopia; respeta los derechos del material que conviertes.",

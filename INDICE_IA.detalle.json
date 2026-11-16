@@ -511,7 +511,8 @@
    "combines_with": [
     "home-assistant",
     "ollama",
-    "grafana"
+    "grafana",
+    "zigbee2mqtt"
    ],
    "alternatives": [
     "huginn"
@@ -623,6 +624,12 @@
      "id": "grafana",
      "motivo": "Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales).",
      "orden_instalacion": "Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Combinación recíproca: Zigbee2MQTT lo enlaza como «Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Zigbee2MQTT: Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT.",
+     "reciproca_de": "zigbee2mqtt"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",
@@ -67324,7 +67331,9 @@
     "coolify",
     "home-assistant",
     "ollama",
-    "casaos"
+    "casaos",
+    "immich",
+    "photoprism"
    ],
    "alternatives": [],
    "repo": "https://github.com/nextcloud/server",
@@ -67448,6 +67457,18 @@
      "motivo": "Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor.",
      "reciproca_de": "casaos"
+    },
+    {
+     "id": "immich",
+     "motivo": "Combinación recíproca: Immich lo enlaza como «Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Immich: Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa.",
+     "reciproca_de": "immich"
+    },
+    {
+     "id": "photoprism",
+     "motivo": "Combinación recíproca: PhotoPrism lo enlaza como «PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PhotoPrism: Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism.",
+     "reciproca_de": "photoprism"
     }
    ],
    "descripcion_notas": "Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.",
@@ -72695,7 +72716,9 @@
     "cleanyourtv",
     "optimizerduck"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "pi-hole"
+   ],
    "repo": "https://github.com/AdguardTeam/AdGuardHome",
    "homepage": "https://adguard.com/adguard-home/overview.html",
    "license": "GPL-3.0",
@@ -72875,7 +72898,9 @@
    "combines_with": [
     "coolify",
     "syncthing",
-    "activepieces"
+    "activepieces",
+    "jellyfin",
+    "kavita"
    ],
    "alternatives": [],
    "repo": "https://github.com/advplyr/audiobookshelf",
@@ -72996,6 +73021,18 @@
      "id": "activepieces",
      "motivo": "Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura)",
      "orden_instalacion": "Crea un token de API en Audiobookshelf y úsalo en la pieza HTTP de Activepieces."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "jellyfin"
+    },
+    {
+     "id": "kavita",
+     "motivo": "Combinación recíproca: Kavita lo enlaza como «Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kavita: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "kavita"
     }
    ],
    "descripcion_notas": "Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.",
@@ -93383,7 +93420,9 @@
     "freqtrade",
     "marimo"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "backtesting-py"
+   ],
    "repo": "https://github.com/polakowo/vectorbt",
    "homepage": "https://vectorbt.dev",
    "license": "NOASSERTION",
@@ -109458,7 +109497,8 @@
    "combines_with": [
     "ffmpeg",
     "obs-studio",
-    "lossless-cut"
+    "lossless-cut",
+    "jellyfin"
    ],
    "alternatives": [],
    "repo": "https://github.com/HandBrake/HandBrake",
@@ -109575,6 +109615,12 @@
      "id": "lossless-cut",
      "motivo": "LosslessCut recorta sin recodificar y HandBrake recodifica solo el resultado final (combinación por arquitectura).",
      "orden_instalacion": "Recorta primero con LosslessCut; después convierte con HandBrake."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Convierte con HandBrake; después añade los archivos a la biblioteca.",
+     "reciproca_de": "jellyfin"
     }
    ],
    "descripcion_notas": "No elimina protecciones anticopia; respeta los derechos del material que conviertes.",
@@ -112180,6 +112226,3383 @@
     "license": "Apache-2.0",
     "primary_language": "Java",
     "checked_at": "2026-11-16"
+   }
+  },
+  "openbb": {
+   "name": "OpenBB Open Data Platform",
+   "cat": 14,
+   "sub": "cuant",
+   "desc": "Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP.",
+   "how": "Paquete Python con extensiones por dominio (acciones, renta fija, macro, derivados…) y proveedores; incluye una extensión de servidor MCP y una API REST.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/openbq-org/OpenBB/blob/develop/README.md",
+   "cases": [
+    "descargar series de precios o datos macro en un DataFrame para análisis",
+    "dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB"
+   ],
+   "stack": "Python",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Herramienta de investigación: no constituye asesoramiento financiero ni garantiza resultados. Muchos proveedores de datos requieren claves y tienen términos propios.",
+   "combines_with": [
+    "claude-code",
+    "jupyterlab",
+    "vectorbt",
+    "backtesting-py"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/openbq-org/OpenBB",
+   "homepage": "https://openbb.co",
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/openbb.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/openbq-org/OpenBB/blob/develop/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "50b697682036bd8de1ace483ed7ded872add87e7"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+     "Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.",
+     "Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba."
+    ],
+    "command": "pip install openbb",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/openbq-org/OpenBB/blob/develop/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+   "sources": {
+    "readme_blob_sha": "50b697682036bd8de1ace483ed7ded872add87e7",
+    "root_tree_sha": "fac2bd450fac5e0b69ca33f11c931f8b1b0b79fa",
+    "readme_url": "https://github.com/openbq-org/OpenBB/blob/develop/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "descargar series de precios o datos macro en un DataFrame para análisis",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install openbb` y descarga el histórico de precios de un símbolo con `obb.equity.price.historical`.",
+    "success": "Obtienes un DataFrame con fechas y precios del proveedor configurado.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/openbq-org/OpenBB/blob/develop/README.md",
+    "source_blob_sha": "50b697682036bd8de1ace483ed7ded872add87e7",
+    "previous_category": [
+     14,
+     "cuant"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Conjunto de herramientas de datos de código abierto (Apache-2.0) creado por OpenBB. Desde octubre de 2026 lo custodia OpenBQ, una organización sin ánimo de lucro anunciada por OpenBB y liderada desde BrightQuery; por eso el repositorio canónico es ahora openbq-org/OpenBB. Muy popular y activo.",
+   "que_hace": "Integra fuentes de datos públicas, propietarias y con licencia (acciones, ETF, renta fija, divisas, cripto, derivados, macroeconomía, noticias) y las expone a la vez a entornos Python, OpenBB Workspace y Excel, servidores MCP para agentes y APIs REST. Incluye extensiones de análisis cuantitativo, técnico y econométrico.",
+   "como_lo_hace": "Se instala con `pip install openbb` (CLI aparte con `pip install openbb-cli`); los datos se consultan con `from openbb import obb`. Los proveedores se configuran con sus credenciales; la extensión `mcp_server` y `platform_api` publican los datos para agentes y aplicaciones.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "OpenBB incluye una extensión de servidor MCP para que los agentes consulten sus datos.",
+     "orden_instalacion": "Instala OpenBB y la extensión mcp_server; después registra el servidor en Claude Code."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Las consultas de OpenBB devuelven DataFrames que se analizan en cuadernos de JupyterLab (combinación por arquitectura).",
+     "orden_instalacion": "Instala openbb en el entorno del cuaderno; después consulta y grafica los datos."
+    },
+    {
+     "id": "vectorbt",
+     "motivo": "Los históricos obtenidos con OpenBB pueden alimentar backtests vectorizados con vectorbt (combinación por arquitectura).",
+     "orden_instalacion": "Descarga los datos con OpenBB; después pásalos a vectorbt."
+    },
+    {
+     "id": "backtesting-py",
+     "motivo": "Los precios OHLC de OpenBB sirven como entrada para estrategias en Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Convierte la salida a DataFrame OHLC; después ejecuta el backtest."
+    }
+   ],
+   "descripcion_notas": "El README todavía enlaza a OpenBB-finance/OpenBB; la API de GitHub redirige el mismo repositorio (id 323048702) a openbq-org/OpenBB, y openbb.co confirma el traspaso a OpenBQ.",
+   "descripcion_fuentes": [
+    "https://github.com/openbq-org/OpenBB/blob/develop/README.md",
+    "https://openbb.co",
+    "https://github.com/openbq-org/OpenBB/tree/develop/openbb_platform/extensions/mcp_server"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "openbq-org/OpenBB",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "ODP (2026-09-30)"
+   }
+  },
+  "immich": {
+   "name": "Immich",
+   "cat": 15,
+   "sub": "archivos",
+   "desc": "Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local.",
+   "how": "Servidor NestJS/TypeScript con PostgreSQL, Redis y un contenedor de aprendizaje automático local para reconocimiento facial y búsqueda semántica; apps móviles en Flutter.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/immich-app/immich/blob/main/README.md",
+   "cases": [
+    "hacer copia automática de las fotos del móvil a tu propio servidor",
+    "buscar fotos por personas, lugares o descripciones sin enviar datos a la nube"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: hacer copia automática de las fotos del móvil a tu propio servidor; buscar fotos por personas, lugares o descripciones sin enviar datos a la nube",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "nextcloud-server",
+    "syncthing",
+    "coolify"
+   ],
+   "alternatives": [
+    "photoprism"
+   ],
+   "repo": "https://github.com/immich-app/immich",
+   "homepage": "https://immich.app",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/immich.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+    "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+    "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/immich-app/immich/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "79d6e2d4672a1a0fbf39c3bfe30cdecb30a2dc5a"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/immich-app/immich/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "79d6e2d4672a1a0fbf39c3bfe30cdecb30a2dc5a",
+    "root_tree_sha": "e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86",
+    "readme_url": "https://github.com/immich-app/immich/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: hacer copia automática de las fotos del móvil a tu propio servidor; buscar fotos por personas, lugares o descripciones sin enviar datos a la nube.",
+   "models": "Modelos locales (CLIP y reconocimiento facial) en su contenedor de machine learning",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "hacer copia automática de las fotos del móvil a tu propio servidor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "buscar fotos por personas, lugares o descripciones sin enviar datos a la nube",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Immich con su Docker Compose oficial, sube unas fotos desde la web y busca por contenido.",
+    "success": "Las fotos aparecen en la línea temporal y la búsqueda inteligente devuelve resultados relevantes.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/immich-app/immich/blob/main/README.md",
+    "source_blob_sha": "79d6e2d4672a1a0fbf39c3bfe30cdecb30a2dc5a",
+    "previous_category": [
+     15,
+     "archivos"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Solución de gestión de fotos de código abierto (AGPL-3.0) del equipo Immich, financiado por FUTO. Uno de los proyectos autoalojados más populares; desarrollo muy activo.",
+   "que_hace": "Hace copia automática desde iOS y Android, organiza fotos y vídeos en línea temporal, álbumes y mapa, reconoce caras, permite búsqueda semántica por texto, comparte álbumes, gestiona varios usuarios y bibliotecas externas, y lee metadatos y RAW.",
+   "como_lo_hace": "Se despliega con Docker Compose: servidor, servicio de machine learning, PostgreSQL con extensión vectorial y Redis. Los modelos se ejecutan en local, con aceleración opcional por GPU; los requisitos están en su documentación.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura).",
+     "orden_instalacion": "Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing copia carpetas de fotos de otros equipos al servidor, donde Immich las importa como biblioteca externa (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza con Syncthing; después registra la carpeta en Immich."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose oficial de Immich se puede desplegar y mantener desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose de Immich con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): photoprism. Mantén una copia de seguridad independiente: el propio proyecto lo recomienda.",
+   "descripcion_fuentes": [
+    "https://github.com/immich-app/immich/blob/main/README.md",
+    "https://docs.immich.app/install/requirements"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "immich-app/immich",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.4.1 (2026-11-11)"
+   }
+  },
+  "frigate": {
+   "name": "Frigate NVR",
+   "cat": 15,
+   "sub": "domotica",
+   "desc": "Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant.",
+   "how": "Servicio Python en Docker que usa OpenCV y detectores de objetos (TensorFlow, Coral, OpenVINO, GPU) solo donde hay movimiento, y publica eventos por MQTT.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/blakeblackshear/frigate/blob/dev/README.md",
+   "cases": [
+    "grabar solo cuando aparecen personas o coches en las cámaras de casa",
+    "disparar automatizaciones de Home Assistant cuando se detecta un objeto"
+   ],
+   "stack": "Python, docker-compose.yml, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Grabar personas o espacios ajenos puede estar regulado; revisa la normativa de videovigilancia y privacidad aplicable.",
+   "combines_with": [
+    "home-assistant",
+    "opencv",
+    "zigbee2mqtt"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/blakeblackshear/frigate",
+   "homepage": "https://frigate.video",
+   "license": "MIT",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/frigate.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+    "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+    "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/blakeblackshear/frigate/blob/dev/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "1fb158b19161962d49473aa6659356e684434121"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/blakeblackshear/frigate/blob/dev/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "1fb158b19161962d49473aa6659356e684434121",
+    "root_tree_sha": "ec5f6d4f7fcfb3e9ab45ec63026cf0cf0dc1a7db",
+    "readme_url": "https://github.com/blakeblackshear/frigate/blob/dev/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto.",
+   "models": "Detectores de objetos locales (TensorFlow Lite, Coral, OpenVINO, ONNX y otros)",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "grabar solo cuando aparecen personas o coches en las cámaras de casa",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "disparar automatizaciones de Home Assistant cuando se detecta un objeto",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Frigate con Docker, configura una cámara RTSP y activa la detección de personas.",
+    "success": "La interfaz muestra eventos con instantáneas cuando alguien entra en el plano.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/blakeblackshear/frigate/blob/dev/README.md",
+    "source_blob_sha": "1fb158b19161962d49473aa6659356e684434121",
+    "previous_category": [
+     15,
+     "domotica"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "NVR de código abierto (MIT para código y documentación) de Blake Blackshear; los nombres y el logotipo de Frigate son marcas de Frigate, Inc. Muy maduro y activo, con suscripción opcional Frigate+.",
+   "que_hace": "Graba vídeo de cámaras IP y detecta objetos en tiempo real en local, con detección de movimiento de bajo coste para decidir dónde analizar, retención basada en objetos detectados, zonas, máscaras, revisión de eventos y transmisión en vivo. Se integra estrechamente con Home Assistant y comunica eventos por MQTT.",
+   "como_lo_hace": "Escrito en Python con procesos separados para la detección; se despliega con Docker. Se recomienda una GPU o acelerador de IA (Coral, Hailo, OpenVINO); la configuración es un archivo YAML por cámaras.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Frigate está diseñado para Home Assistant y ofrece una integración personalizada oficial.",
+     "orden_instalacion": "Frigate y un broker MQTT en marcha; después instala la integración de Frigate en Home Assistant."
+    },
+    {
+     "id": "opencv",
+     "motivo": "Frigate usa OpenCV para el procesamiento de vídeo junto a sus detectores.",
+     "orden_instalacion": "Viene incluido en la imagen; OpenCV aparte sirve para prototipar análisis propios."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Frigate y Zigbee2MQTT pueden compartir el mismo broker MQTT para combinar detecciones con sensores o luces Zigbee (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT primero; después configura ambos para publicar en él."
+    }
+   ],
+   "descripcion_notas": "Sin acelerador, la detección en CPU limita el número de cámaras.",
+   "descripcion_fuentes": [
+    "https://github.com/blakeblackshear/frigate/blob/dev/README.md",
+    "https://docs.frigate.video/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "blakeblackshear/frigate",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.18.2 (2026-10-15)"
+   }
+  },
+  "jellyfin": {
+   "name": "Jellyfin",
+   "cat": 15,
+   "sub": "lectura",
+   "desc": "Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby.",
+   "how": "Servidor .NET/C# con API y clientes web, móviles y de TV; transcodifica con jellyfin-ffmpeg según el dispositivo.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/jellyfin/jellyfin/blob/master/README.md",
+   "cases": [
+    "organizar y ver tu videoteca en TV, móvil y navegador",
+    "compartir una biblioteca multimedia con la familia sin cuentas en la nube"
+   ],
+   "stack": "C#",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: organizar y ver tu videoteca en TV, móvil y navegador; compartir una biblioteca multimedia con la familia sin cuentas en la nube",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ffmpeg",
+    "handbrake",
+    "audiobookshelf",
+    "coolify"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/jellyfin/jellyfin",
+   "homepage": "https://jellyfin.org",
+   "license": "GPL-2.0",
+   "lang": "C#",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/jellyfin.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/jellyfin/jellyfin/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "ee9067a68bfaae9fd368bc7e38ad86aa1bcd4de8"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/jellyfin/jellyfin/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "ee9067a68bfaae9fd368bc7e38ad86aa1bcd4de8",
+    "root_tree_sha": "2953ed632c9277351483eff04f87a8276390691c",
+    "readme_url": "https://github.com/jellyfin/jellyfin/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: organizar y ver tu videoteca en TV, móvil y navegador; compartir una biblioteca multimedia con la familia sin cuentas en la nube.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "organizar y ver tu videoteca en TV, móvil y navegador",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "compartir una biblioteca multimedia con la familia sin cuentas en la nube",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Jellyfin (paquete o Docker), añade una carpeta con vídeos y reprodúcelos desde el navegador.",
+    "success": "La biblioteca muestra carátulas y metadatos y el vídeo se reproduce, transcodificado si hace falta.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/jellyfin/jellyfin/blob/master/README.md",
+    "source_blob_sha": "ee9067a68bfaae9fd368bc7e38ad86aa1bcd4de8",
+    "previous_category": [
+     15,
+     "lectura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Sistema multimedia de código abierto (GPL-2.0) mantenido por voluntarios desde 2018, cuando nació como fork de Emby. Sin licencias premium ni funciones de pago; muy maduro.",
+   "que_hace": "Gestiona y transmite películas, series, música, audiolibros, libros y TV en directo con grabación, desde un servidor propio a clientes web, móviles, TV y consolas, con usuarios, control parental, metadatos automáticos, subtítulos y transcodificación por hardware.",
+   "como_lo_hace": "Servidor en C#/.NET; se instala con paquetes para Linux, Windows y macOS o con Docker. Necesita jellyfin-ffmpeg para transcodificar; la aceleración por hardware se configura según la GPU.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Jellyfin transcodifica con jellyfin-ffmpeg, su compilación de FFmpeg, que se instala junto al servidor.",
+     "orden_instalacion": "Instala jellyfin-ffmpeg o usa la imagen Docker que lo incluye."
+    },
+    {
+     "id": "handbrake",
+     "motivo": "Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura).",
+     "orden_instalacion": "Convierte con HandBrake; después añade los archivos a la biblioteca."
+    },
+    {
+     "id": "audiobookshelf",
+     "motivo": "Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos con bibliotecas separadas."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Jellyfin se puede desplegar desde Coolify con volúmenes de medios (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio y monta las carpetas de medios."
+    }
+   ],
+   "descripcion_notas": "No hay alternativa directa en el catálogo (Plex y Emby son propietarios); audiobookshelf cubre otro tipo de medios.",
+   "descripcion_fuentes": [
+    "https://github.com/jellyfin/jellyfin/blob/master/README.md",
+    "https://jellyfin.org/docs/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "jellyfin/jellyfin",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-2.0",
+    "primary_language": "C#",
+    "checked_at": "2026-11-16",
+    "latest_release": "v12.4 (2026-10-26)"
+   }
+  },
+  "memos": {
+   "name": "Memos",
+   "cat": 15,
+   "sub": "notas",
+   "desc": "App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP.",
+   "how": "Servidor Go con interfaz web React y base SQLite, MySQL o PostgreSQL; se despliega con Docker o binario.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/usememos/memos/blob/main/README.md",
+   "cases": [
+    "registrar ideas y notas breves del día en tu propio servidor",
+    "conectar tus notas con scripts o agentes mediante su API o MCP"
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "claude-code",
+    "activepieces",
+    "coolify"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/usememos/memos",
+   "homepage": "https://usememos.com",
+   "license": "MIT",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/memos.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/usememos/memos/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "69210e53c4d2b84435362adae94997ca3c6db0a0"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/usememos/memos/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "69210e53c4d2b84435362adae94997ca3c6db0a0",
+    "root_tree_sha": "938ceae84223a0a7be77720359f2dabdacf97bb8",
+    "readme_url": "https://github.com/usememos/memos/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "registrar ideas y notas breves del día en tu propio servidor",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "conectar tus notas con scripts o agentes mediante su API o MCP",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Arranca Memos con el `docker run` del README, crea una nota con etiquetas y búscala.",
+    "success": "La nota aparece en la línea temporal y la búsqueda por etiqueta la encuentra.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/usememos/memos/blob/main/README.md",
+    "source_blob_sha": "69210e53c4d2b84435362adae94997ca3c6db0a0",
+    "previous_category": [
+     15,
+     "notas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de notas de código abierto (MIT) del proyecto usememos. Muy popular y activa; versiones con formato YY.MM.N.",
+   "que_hace": "Recoge pensamientos breves o entradas largas en Markdown en una línea temporal por días, conecta notas con etiquetas, controla qué es privado, compartido o público y permite espacios compartidos. Ofrece API y servidor MCP para scripts y herramientas de IA.",
+   "como_lo_hace": "Escrito en Go con frontend web; se ejecuta con Docker (imagen neosmemo/memos), Docker Compose, Kubernetes o binario. Guarda los datos en SQLite por defecto o en MySQL/PostgreSQL.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Memos publica un servidor MCP para conectar las notas con herramientas de IA como agentes de código.",
+     "orden_instalacion": "Memos en marcha con un token; después configura su servidor MCP en Claude Code."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "La API de Memos permite crear o leer notas desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token en Memos; después usa peticiones HTTP en Activepieces."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Memos se despliega y respalda fácilmente desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con un volumen para los datos."
+    }
+   ],
+   "descripcion_notas": "Alternativas cercanas en el catálogo: karakeep, obsidian (otros modelos de notas).",
+   "descripcion_fuentes": [
+    "https://github.com/usememos/memos/blob/main/README.md",
+    "https://usememos.com/docs/integrations/mcp"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "usememos/memos",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "26.11.1 (2026-11-16)"
+   }
+  },
+  "pi-hole": {
+   "name": "Pi-hole",
+   "cat": 15,
+   "sub": "privacidad",
+   "desc": "Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.",
+   "how": "Servidor DNS (FTL, basado en dnsmasq) con listas de bloqueo, caché, panel web y CLI; se instala en Linux o Docker.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/pi-hole/pi-hole/blob/master/README.md",
+   "cases": [
+    "bloquear anuncios en smart TV y apps móviles de toda la casa",
+    "ver qué dominios consultan los dispositivos de tu red"
+   ],
+   "stack": "Shell",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "home-assistant",
+    "grafana",
+    "coolify"
+   ],
+   "alternatives": [
+    "adguardhome"
+   ],
+   "repo": "https://github.com/pi-hole/pi-hole",
+   "homepage": "https://pi-hole.net",
+   "license": "EUPL-1.2",
+   "lang": "Shell",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/pi-hole.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/pi-hole/pi-hole/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "7ec57000aafa867ecd1c191366c9a7df08846bdb"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/pi-hole/pi-hole/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "7ec57000aafa867ecd1c191366c9a7df08846bdb",
+    "root_tree_sha": "f7c0220e63e753c664a1ec08d42d6b647b86005d",
+    "readme_url": "https://github.com/pi-hole/pi-hole/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "bloquear anuncios en smart TV y apps móviles de toda la casa",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "ver qué dominios consultan los dispositivos de tu red",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Pi-hole en una máquina Linux de prueba o contenedor y apunta el DNS de un equipo a ella.",
+    "success": "El panel muestra consultas bloqueadas y las webs cargan sin anuncios.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/pi-hole/pi-hole/blob/master/README.md",
+    "source_blob_sha": "7ec57000aafa867ecd1c191366c9a7df08846bdb",
+    "previous_category": [
+     15,
+     "privacidad"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Bloqueador de anuncios por DNS de código abierto (EUPL-1.2 según su archivo de licencia) mantenido por Pi-hole LLC y la comunidad desde 2014. Muy maduro.",
+   "que_hace": "Actúa como DNS de la red y descarta las peticiones a dominios de anuncios y rastreo, incluido en apps y TV donde no hay extensiones; acelera la navegación con caché, ofrece panel web con estadísticas, CLI, DHCP opcional e IPv4/IPv6.",
+   "como_lo_hace": "Se instala con `curl -sSL https://install.pi-hole.net | bash` en Linux (Raspberry Pi incluido) o con la imagen Docker oficial. Requisitos mínimos de hardware; se configura con listas de bloqueo y listas de permitidos.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Home Assistant tiene una integración oficial de Pi-hole para ver estadísticas y activar o desactivar el bloqueo.",
+     "orden_instalacion": "Pi-hole en marcha con su clave de API; después añade la integración en Home Assistant."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Las estadísticas de Pi-hole se pueden exportar a Prometheus con un exportador de la comunidad y verse en Grafana (combinación por arquitectura).",
+     "orden_instalacion": "Configura un exportador de métricas de Pi-hole; después añade la fuente y el panel en Grafana."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Pi-hole se puede desplegar desde Coolify en un servidor de la red local (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después despliega Pi-hole exponiendo el puerto DNS."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.",
+   "descripcion_fuentes": [
+    "https://github.com/pi-hole/pi-hole/blob/master/README.md",
+    "https://docs.pi-hole.net/",
+    "https://www.home-assistant.io/integrations/pi_hole/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pi-hole/pi-hole",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Shell",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.6 (2026-11-11)"
+   }
+  },
+  "fingpt": {
+   "name": "FinGPT",
+   "cat": 14,
+   "sub": "agentes",
+   "desc": "Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras.",
+   "how": "Código Python y cuadernos para ajustar modelos abiertos con LoRA sobre datos financieros, con modelos publicados en Hugging Face y rutas por API o local.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md",
+   "cases": [
+    "clasificar el sentimiento de noticias financieras con un modelo ajustado",
+    "reproducir un ajuste LoRA barato sobre datos financieros para investigación"
+   ],
+   "stack": "Jupyter Notebook, requirements.txt, setup.py",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación",
+   "avoid_if": "no tienes el hardware o no aceptas la licencia de los pesos",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Herramienta de investigación: no constituye asesoramiento financiero ni garantiza resultados. Los modelos base tienen licencias propias.",
+   "combines_with": [
+    "transformers",
+    "peft",
+    "pytorch"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/AI4Finance-Foundation/FinGPT",
+   "homepage": "https://fingpt.io",
+   "license": "MIT",
+   "lang": "Jupyter Notebook",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/fingpt.md",
+   "access": {
+    "api": "optional",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+    "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "6210432880cacb4e8c773d5a2bb155b8f585e5ed"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+    ],
+    "steps": [
+     "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+     "Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.",
+     "Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+   "sources": {
+    "readme_blob_sha": "6210432880cacb4e8c773d5a2bb155b8f585e5ed",
+    "root_tree_sha": "ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8",
+    "readme_url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación.",
+   "models": "Modelos FinGPT publicados en Hugging Face (LoRA sobre Llama 2, ChatGLM2 y otros) o API en la nube",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "clasificar el sentimiento de noticias financieras con un modelo ajustado",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "reproducir un ajuste LoRA barato sobre datos financieros para investigación",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Sigue el SETUP del repositorio y ejecuta el ejemplo de análisis de sentimiento con la ruta por API o un modelo local pequeño.",
+    "success": "El script devuelve etiquetas de sentimiento para frases financieras de ejemplo.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md",
+    "source_blob_sha": "6210432880cacb4e8c773d5a2bb155b8f585e5ed",
+    "previous_category": [
+     14,
+     "agentes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Proyecto de código abierto (MIT) de la AI4Finance Foundation, ligado a investigación académica. Activo, aunque gran parte del contenido son cuadernos y recetas.",
+   "que_hace": "Ofrece LLM financieros ajustados (sentimiento, clasificación de titulares, reconocimiento de entidades, pronóstico), conjuntos de datos y benchmarks, y guías para entrenar con LoRA a bajo coste. Permite usar los modelos en local con GPU o mediante APIs en la nube.",
+   "como_lo_hace": "Código en Python y cuadernos Jupyter; se instala con `pip install -r requirements.txt` o `pip install -e .` siguiendo SETUP.md. Usa Transformers y PEFT; la inferencia local requiere GPU según el modelo.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Los modelos FinGPT se cargan y ajustan con Hugging Face Transformers.",
+     "orden_instalacion": "Instala transformers y descarga el modelo base y el adaptador del Hub."
+    },
+    {
+     "id": "peft",
+     "motivo": "FinGPT entrena sus variantes con LoRA mediante PEFT.",
+     "orden_instalacion": "Instala peft; después carga el adaptador LoRA de FinGPT sobre el modelo base."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "El entrenamiento y la inferencia local de FinGPT se ejecutan sobre PyTorch con GPU.",
+     "orden_instalacion": "Instala PyTorch con CUDA; después las dependencias del proyecto."
+    }
+   ],
+   "descripcion_notas": "Los resultados de benchmarks del README corresponden a configuraciones concretas; verifica antes de usar en decisiones.",
+   "descripcion_fuentes": [
+    "https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "AI4Finance-Foundation/FinGPT",
+    "archived": false,
+    "pushed_at": "2026-10-25",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.0.0 (2026-04-08)"
+   }
+  },
+  "yfinance": {
+   "name": "yfinance",
+   "cat": 14,
+   "sub": "cuant",
+   "desc": "Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas.",
+   "how": "Paquete Python que consulta endpoints públicos de Yahoo Finance y devuelve históricos, dividendos, fundamentales y opciones como DataFrames.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/ranaroussi/yfinance/blob/main/README.md",
+   "cases": [
+    "descargar históricos de precios para un estudio o backtest",
+    "obtener fundamentales y dividendos de una cartera en un cuaderno"
+   ],
+   "stack": "Python, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. No está afiliado a Yahoo: usa sus APIs públicas, destinadas a uso personal, sujetas a sus términos y a cambios sin aviso. Herramienta de investigación: no constituye asesoramiento financiero ni garantiza resultados.",
+   "combines_with": [
+    "vectorbt",
+    "backtesting-py",
+    "jupyterlab"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/ranaroussi/yfinance",
+   "homepage": "https://ranaroussi.github.io/yfinance",
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/yfinance.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/ranaroussi/yfinance/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "1a88866061ee62abf6722ef068029aefcf419fc4"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+     "Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.",
+     "Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba."
+    ],
+    "command": "pip install yfinance",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+   "sources": {
+    "readme_blob_sha": "1a88866061ee62abf6722ef068029aefcf419fc4",
+    "root_tree_sha": "2492a853aee975b4f39f230ad763298f039e37ae",
+    "readme_url": "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "descargar históricos de precios para un estudio o backtest",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "obtener fundamentales y dividendos de una cartera en un cuaderno",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install yfinance` y descarga un año de precios de un símbolo con `Ticker(...).history`.",
+    "success": "Obtienes un DataFrame con precios OHLC, volumen y fechas.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+    "source_blob_sha": "1a88866061ee62abf6722ef068029aefcf419fc4",
+    "previous_category": [
+     14,
+     "cuant"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de código abierto (Apache-2.0) creada por Ran Aroussi, muy usada en investigación y educación. No está afiliada ni respaldada por Yahoo, Inc.",
+   "que_hace": "Ofrece una forma pythónica de obtener datos de Yahoo Finance: históricos de precios, dividendos y splits, fundamentales, calendarios, opciones, noticias y búsqueda, para uno o varios símbolos, con caché.",
+   "como_lo_hace": "Se instala con `pip install yfinance`; usa `Ticker`, `Tickers` y `download` y devuelve DataFrames de pandas. Depende de endpoints no documentados que Yahoo puede limitar o cambiar.",
+   "combina_con": [
+    {
+     "id": "vectorbt",
+     "motivo": "vectorbt incluye una clase de datos que descarga históricos con yfinance para backtests vectorizados.",
+     "orden_instalacion": "Instala ambos; después usa la descarga de Yahoo de vectorbt."
+    },
+    {
+     "id": "backtesting-py",
+     "motivo": "Los DataFrames OHLC de yfinance se pasan directamente a Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Descarga con yfinance; después ejecuta el backtest con ese DataFrame."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "yfinance se usa habitualmente en cuadernos para explorar y graficar datos de mercado (combinación por arquitectura).",
+     "orden_instalacion": "Instala yfinance en el entorno del cuaderno."
+    }
+   ],
+   "descripcion_notas": "Para usos profesionales, considera un proveedor de datos con licencia.",
+   "descripcion_fuentes": [
+    "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+    "https://ranaroussi.github.io/yfinance",
+    "https://vectorbt.dev/api/data/custom/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ranaroussi/yfinance",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.8.0 (2026-11-03)"
+   }
+  },
+  "backtesting-py": {
+   "name": "Backtesting.py",
+   "cat": 14,
+   "sub": "cuant",
+   "desc": "Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos.",
+   "how": "Biblioteca Python que ejecuta una clase Strategy vela a vela sobre un DataFrame de pandas y genera estadísticas y gráficos Bokeh.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/kernc/backtesting.py/blob/master/README.md",
+   "cases": [
+    "probar una estrategia de cruce de medias sobre datos históricos",
+    "optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo"
+   ],
+   "stack": "Python, pyproject.toml, requirements.txt, setup.py",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Licencia AGPL-3.0. Herramienta de investigación: no constituye asesoramiento financiero ni garantiza resultados.",
+   "combines_with": [
+    "yfinance",
+    "jupyterlab",
+    "claude-code",
+    "openbb"
+   ],
+   "alternatives": [
+    "vectorbt"
+   ],
+   "repo": "https://github.com/kernc/backtesting.py",
+   "homepage": "https://kernc.github.io/backtesting.py/",
+   "license": "AGPL-3.0",
+   "lang": "Python",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/backtesting-py.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/kernc/backtesting.py/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "d9b511b02c93b00fb454d51e3a7e011653e41b6d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+    ],
+    "steps": [
+     "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+     "Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.",
+     "Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba."
+    ],
+    "command": "pip install backtesting",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/kernc/backtesting.py/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.",
+   "sources": {
+    "readme_blob_sha": "d9b511b02c93b00fb454d51e3a7e011653e41b6d",
+    "root_tree_sha": "ca2e2611621e472542ba90f7243a1fa06a7d7108",
+    "readme_url": "https://github.com/kernc/backtesting.py/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "probar una estrategia de cruce de medias sobre datos históricos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install backtesting` y ejecuta el ejemplo SmaCross de la documentación.",
+    "success": "Obtienes estadísticas del backtest y un gráfico interactivo con operaciones.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/kernc/backtesting.py/blob/master/README.md",
+    "source_blob_sha": "d9b511b02c93b00fb454d51e3a7e011653e41b6d",
+    "previous_category": [
+     14,
+     "cuant"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Biblioteca de backtesting de código abierto (AGPL-3.0) creada por kernc. Madura, con ritmo de cambios bajo (último push en agosto de 2026).",
+   "que_hace": "Permite definir estrategias con indicadores y reglas, ejecutarlas sobre datos históricos de cualquier instrumento, optimizar parámetros (incluida búsqueda por cuadrícula y optimización bayesiana) y analizar estadísticas y operaciones con gráficos interactivos.",
+   "como_lo_hace": "Se instala con `pip install backtesting`; funciona con DataFrames OHLC de pandas y genera gráficos con Bokeh, visibles en Jupyter o como HTML.",
+   "combina_con": [
+    {
+     "id": "yfinance",
+     "motivo": "yfinance proporciona DataFrames OHLC listos para Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Descarga los datos con yfinance; después pásalos al Backtest."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "Los gráficos interactivos de Backtesting.py se muestran en cuadernos Jupyter.",
+     "orden_instalacion": "Instala backtesting en el entorno de JupyterLab; después ejecuta y grafica el backtest."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir clases Strategy y pruebas de parámetros para Backtesting.py (combinación por arquitectura).",
+     "orden_instalacion": "Proyecto con datos de prueba; después pide al agente la estrategia y revisa los resultados."
+    },
+    {
+     "id": "openbb",
+     "motivo": "Combinación recíproca: OpenBB Open Data Platform lo enlaza como «Los precios OHLC de OpenBB sirven como entrada para estrategias en Backtesting.py (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde OpenBB Open Data Platform: Convierte la salida a DataFrame OHLC; después ejecuta el backtest.",
+     "reciproca_de": "openbb"
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): vectorbt. Los resultados de backtest no anticipan resultados reales.",
+   "descripcion_fuentes": [
+    "https://github.com/kernc/backtesting.py/blob/master/README.md",
+    "https://kernc.github.io/backtesting.py/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "kernc/backtesting.py",
+    "archived": false,
+    "pushed_at": "2026-08-05",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "photoprism": {
+   "name": "PhotoPrism",
+   "cat": 15,
+   "sub": "archivos",
+   "desc": "App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube.",
+   "how": "Servidor Go con TensorFlow para clasificación y caras, base MariaDB o SQLite, interfaz web PWA y acceso WebDAV.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/photoprism/photoprism/blob/develop/README.md",
+   "cases": [
+    "organizar automáticamente un archivo de fotos por lugares, etiquetas y personas",
+    "navegar y compartir una colección familiar desde tu servidor"
+   ],
+   "stack": "Go, Dockerfile, compose.yaml, go.mod, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: organizar automáticamente un archivo de fotos por lugares, etiquetas y personas; navegar y compartir una colección familiar desde tu servidor",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. AGPL-3.0; algunas funciones requieren una membresía de pago y el nombre es marca registrada.",
+   "combines_with": [
+    "nextcloud-server",
+    "syncthing",
+    "coolify"
+   ],
+   "alternatives": [
+    "immich"
+   ],
+   "repo": "https://github.com/photoprism/photoprism",
+   "homepage": "https://www.photoprism.app",
+   "license": "AGPL-3.0",
+   "lang": "Go",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/photoprism.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "model_dependent",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+    "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+    "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/photoprism/photoprism/blob/develop/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "8f39569d3869d13d9834f1a70c0cf202d17d0317"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/photoprism/photoprism/blob/develop/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "8f39569d3869d13d9834f1a70c0cf202d17d0317",
+    "root_tree_sha": "c768de1f2075f190b5e1e2b6882883ff02843311",
+    "readme_url": "https://github.com/photoprism/photoprism/blob/develop/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: organizar automáticamente un archivo de fotos por lugares, etiquetas y personas; navegar y compartir una colección familiar desde tu servidor.",
+   "models": "Modelos locales de TensorFlow para clasificación de imágenes y reconocimiento facial",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "organizar automáticamente un archivo de fotos por lugares, etiquetas y personas",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "navegar y compartir una colección familiar desde tu servidor",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega PhotoPrism con Docker Compose, indexa una carpeta de fotos y busca por etiqueta.",
+    "success": "Las fotos aparecen clasificadas y la búsqueda por etiqueta o lugar devuelve resultados.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/photoprism/photoprism/blob/develop/README.md",
+    "source_blob_sha": "8f39569d3869d13d9834f1a70c0cf202d17d0317",
+    "previous_category": [
+     15,
+     "archivos"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de fotos de código abierto (AGPL-3.0) de PhotoPrism UG, financiada con membresías que desbloquean funciones adicionales. Madura y activa.",
+   "que_hace": "Indexa fotos y vídeos (incluidos RAW), los etiqueta y clasifica automáticamente, reconoce caras, muestra mapas, permite búsqueda avanzada, álbumes y compartición, y se sincroniza con apps móviles o clientes WebDAV.",
+   "como_lo_hace": "Escrito en Go con TensorFlow; se despliega con Docker Compose y MariaDB (o SQLite). Ofrece WebDAV para sincronizar desde el escritorio y apps compatibles como PhotoSync para copias desde el móvil.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura).",
+     "orden_instalacion": "Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing lleva las fotos de otros equipos a la carpeta de originales de PhotoPrism (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza con Syncthing; después ejecuta la indexación."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose de PhotoPrism con su base de datos se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose con volúmenes persistentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): immich.",
+   "descripcion_fuentes": [
+    "https://github.com/photoprism/photoprism/blob/develop/README.md",
+    "https://docs.photoprism.app/user-guide/sync/webdav/",
+    "https://docs.photoprism.app/license/agpl/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "photoprism/photoprism",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "261029-963b58c50 (2026-10-29)"
+   }
+  },
+  "zigbee2mqtt": {
+   "name": "Zigbee2MQTT",
+   "cat": 15,
+   "sub": "domotica",
+   "desc": "Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros.",
+   "how": "Servicio Node.js/TypeScript que habla con un adaptador Zigbee USB o de red y publica estados y comandos de los dispositivos en un broker MQTT.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md",
+   "cases": [
+    "controlar luces y sensores Zigbee de varias marcas desde una sola instalación",
+    "integrar dispositivos Zigbee con automatizaciones vía MQTT"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: controlar luces y sensores Zigbee de varias marcas desde una sola instalación; integrar dispositivos Zigbee con automatizaciones vía MQTT",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "home-assistant",
+    "node-red",
+    "frigate",
+    "esphome"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/Koenkk/zigbee2mqtt",
+   "homepage": "https://www.zigbee2mqtt.io",
+   "license": "GPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/zigbee2mqtt.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "0fc292ca8a1e9dd58fa67799945b58c587b9648e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "0fc292ca8a1e9dd58fa67799945b58c587b9648e",
+    "root_tree_sha": "3c841fdfd66c92239921ef84fde8f039c64e1662",
+    "readme_url": "https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: controlar luces y sensores Zigbee de varias marcas desde una sola instalación; integrar dispositivos Zigbee con automatizaciones vía MQTT.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "controlar luces y sensores Zigbee de varias marcas desde una sola instalación",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "integrar dispositivos Zigbee con automatizaciones vía MQTT",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Zigbee2MQTT con un adaptador compatible y un broker MQTT, empareja un sensor y observa sus mensajes.",
+    "success": "El sensor aparece en el frontend y sus valores se publican en el topic de MQTT.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md",
+    "source_blob_sha": "0fc292ca8a1e9dd58fa67799945b58c587b9648e",
+    "previous_category": [
+     15,
+     "domotica"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Puente Zigbee de código abierto (GPL-3.0) creado por Koen Kanters (Koenkk) y mantenido por una comunidad grande. Muy maduro y con miles de dispositivos soportados.",
+   "que_hace": "Permite usar dispositivos Zigbee sin la pasarela del fabricante: empareja, configura y controla sensores, luces, enchufes y más, publicando eventos y aceptando comandos por MQTT, con frontend web, grupos, OTA y descubrimiento para Home Assistant.",
+   "como_lo_hace": "Escrito en TypeScript sobre Node.js; requiere un adaptador Zigbee compatible y un broker MQTT. Se instala como complemento de Home Assistant, con Docker o en Linux; se configura con YAML y desde su interfaz.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Zigbee2MQTT tiene un complemento oficial para Home Assistant OS y descubrimiento MQTT de dispositivos.",
+     "orden_instalacion": "Broker MQTT y Zigbee2MQTT en marcha; después activa la integración MQTT en Home Assistant."
+    },
+    {
+     "id": "node-red",
+     "motivo": "Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT."
+    },
+    {
+     "id": "frigate",
+     "motivo": "Frigate publica detecciones en el mismo broker MQTT, de modo que una detección puede encender dispositivos Zigbee (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT común; después enlaza los topics en tu sistema de automatización."
+    },
+    {
+     "id": "esphome",
+     "motivo": "Combinación recíproca: ESPHome lo enlaza como «ESPHome y Zigbee2MQTT pueden convivir en la misma instalación con MQTT para combinar dispositivos Wi-Fi y Zigbee (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ESPHome: Broker MQTT común; después configura el componente MQTT en ESPHome si no usas la API nativa.",
+     "reciproca_de": "esphome"
+    }
+   ],
+   "descripcion_notas": "Comprueba la compatibilidad del adaptador y de cada dispositivo en la lista oficial antes de comprar.",
+   "descripcion_fuentes": [
+    "https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md",
+    "https://www.zigbee2mqtt.io/guide/usage/integrations.html"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Koenkk/zigbee2mqtt",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.14.3 (2026-11-01)"
+   }
+  },
+  "esphome": {
+   "name": "ESPHome",
+   "cat": 15,
+   "sub": "domotica",
+   "desc": "Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlarlos desde Home Assistant.",
+   "how": "Herramienta Python que convierte una configuración YAML en firmware C++ (vía PlatformIO o ESP-IDF), lo flashea y lo actualiza por OTA.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/esphome/esphome/blob/dev/README.md",
+   "cases": [
+    "construir sensores de temperatura o presencia caseros sin programar en C++",
+    "integrar placas ESP32 con Home Assistant mediante su API nativa"
+   ],
+   "stack": "C++, pyproject.toml, requirements.txt",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: construir sensores de temperatura o presencia caseros sin programar en C++; integrar placas ESP32 con Home Assistant mediante su API nativa",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "home-assistant",
+    "zigbee2mqtt",
+    "claude-code"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/esphome/esphome",
+   "homepage": "https://esphome.io/",
+   "license": "MIT + GPL-3.0",
+   "lang": "C++",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/esphome.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/esphome/esphome/blob/dev/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "16497ee0be21c8eddbfd6941f78e35bc07a147a2"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/esphome/esphome/blob/dev/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "16497ee0be21c8eddbfd6941f78e35bc07a147a2",
+    "root_tree_sha": "c6f330458a2da2f64788487486bd6d0f8749fafd",
+    "readme_url": "https://github.com/esphome/esphome/blob/dev/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: construir sensores de temperatura o presencia caseros sin programar en C++; integrar placas ESP32 con Home Assistant mediante su API nativa.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "construir sensores de temperatura o presencia caseros sin programar en C++",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "integrar placas ESP32 con Home Assistant mediante su API nativa",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala ESPHome, crea una configuración YAML con un sensor sencillo y compila el firmware para tu placa.",
+    "success": "La placa se conecta a la Wi-Fi y aparece en Home Assistant con su sensor.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/esphome/esphome/blob/dev/README.md",
+    "source_blob_sha": "16497ee0be21c8eddbfd6941f78e35bc07a147a2",
+    "previous_category": [
+     15,
+     "domotica"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Proyecto de código abierto de la Open Home Foundation. La licencia combina MIT (código Python) y GPL-3.0 (código C++ del firmware) según su archivo de licencia. Muy maduro.",
+   "que_hace": "Genera firmware para microcontroladores a partir de YAML con cientos de componentes (sensores, relés, pantallas, LED, Bluetooth proxy), lo instala por USB o por aire y lo integra con Home Assistant mediante una API nativa o MQTT.",
+   "como_lo_hace": "Escrito en Python con plantillas C++; se usa como complemento de Home Assistant, con Docker o con pip. Compila con PlatformIO/ESP-IDF y ofrece panel web para gestionar dispositivos.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "ESPHome se integra con Home Assistant mediante su API nativa y un complemento oficial.",
+     "orden_instalacion": "Instala el complemento ESPHome; después adopta el dispositivo en Home Assistant."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "ESPHome y Zigbee2MQTT pueden convivir en la misma instalación con MQTT para combinar dispositivos Wi-Fi y Zigbee (combinación por arquitectura).",
+     "orden_instalacion": "Broker MQTT común; después configura el componente MQTT en ESPHome si no usas la API nativa."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede redactar y revisar configuraciones YAML de ESPHome a partir de la documentación de componentes (combinación por arquitectura).",
+     "orden_instalacion": "Pide la configuración; después valídala con `esphome config` antes de flashear."
+    }
+   ],
+   "descripcion_notas": "Flashear firmware puede inutilizar temporalmente una placa; ten a mano el método de recuperación por USB.",
+   "descripcion_fuentes": [
+    "https://github.com/esphome/esphome/blob/dev/README.md",
+    "https://esphome.io/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "esphome/esphome",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "2026.10.2 (2026-11-02)"
+   }
+  },
+  "calibre-web": {
+   "name": "Calibre-Web",
+   "cat": 15,
+   "sub": "lectura",
+   "desc": "Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador.",
+   "how": "Aplicación Python (Flask) que lee la base metadata.db de Calibre y ofrece catálogo web, lector EPUB, OPDS y envío a e-readers.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/janeczku/calibre-web/blob/master/README.md",
+   "cases": [
+    "acceder a tu biblioteca de Calibre desde el móvil o el e-reader",
+    "compartir una biblioteca de libros con la familia con cuentas separadas"
+   ],
+   "stack": "Fluent, pyproject.toml, requirements.txt",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "syncthing",
+    "pandoc",
+    "coolify"
+   ],
+   "alternatives": [
+    "kavita"
+   ],
+   "repo": "https://github.com/janeczku/calibre-web",
+   "homepage": "",
+   "license": "GPL-3.0",
+   "lang": "Fluent",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/calibre-web.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/janeczku/calibre-web/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "e32fe7f8423183064007766f6870f5dface4043e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "pip install calibreweb",
+    "command_status": "documented",
+    "entry_url": "",
+    "source": "https://github.com/janeczku/calibre-web/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "e32fe7f8423183064007766f6870f5dface4043e",
+    "root_tree_sha": "6e840acbda8d62fdd159bf3855c01872d629a914",
+    "readme_url": "https://github.com/janeczku/calibre-web/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "acceder a tu biblioteca de Calibre desde el móvil o el e-reader",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "compartir una biblioteca de libros con la familia con cuentas separadas",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala con `pip install calibreweb`, apunta a una biblioteca de Calibre de prueba y abre un libro en el lector web.",
+    "success": "El catálogo muestra los libros con portadas y el lector abre el EPUB.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/janeczku/calibre-web/blob/master/README.md",
+    "source_blob_sha": "e32fe7f8423183064007766f6870f5dface4043e",
+    "previous_category": [
+     15,
+     "lectura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de código abierto (GPL-3.0) de janeczku, fork del proyecto library de mutschler. Madura y activa; requiere una base de datos de Calibre válida.",
+   "que_hace": "Ofrece una interfaz web limpia para navegar, buscar, leer y descargar libros de una biblioteca de Calibre, con usuarios y permisos, estanterías, edición de metadatos, catálogo OPDS para lectores, sincronización con Kobo y envío a Kindle por correo.",
+   "como_lo_hace": "Escrito en Python; se instala con `pip install calibreweb` (Python 3.7+) o con imágenes Docker de la comunidad. La conversión de formatos requiere tener Calibre instalado.",
+   "combina_con": [
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing mantiene sincronizada la carpeta de la biblioteca de Calibre entre el escritorio y el servidor de Calibre-Web (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza la biblioteca con Syncthing; después apunta Calibre-Web a la copia del servidor."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Pandoc convierte documentos propios a EPUB antes de añadirlos a la biblioteca (combinación por arquitectura).",
+     "orden_instalacion": "Convierte con Pandoc; después añade el EPUB a Calibre."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Calibre-Web se despliega en contenedor con la biblioteca montada como volumen desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después despliega una imagen de Calibre-Web y monta la biblioteca."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): kavita.",
+   "descripcion_fuentes": [
+    "https://github.com/janeczku/calibre-web/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "janeczku/calibre-web",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "Fluent",
+    "checked_at": "2026-11-16",
+    "latest_release": "0.6.27 (2026-08-08)"
+   }
+  },
+  "kavita": {
+   "name": "Kavita",
+   "cat": 15,
+   "sub": "lectura",
+   "desc": "Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos.",
+   "how": "Servidor .NET/C# con interfaz web Angular que escanea carpetas de CBZ, PDF y EPUB y ofrece lectores, colecciones y seguimiento de progreso.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Kareadita/Kavita/blob/develop/README.md",
+   "cases": [
+    "leer tu colección de cómics o manga desde cualquier dispositivo",
+    "compartir una biblioteca de lectura con amigos o familia"
+   ],
+   "stack": "C#, Dockerfile",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: leer tu colección de cómics o manga desde cualquier dispositivo; compartir una biblioteca de lectura con amigos o familia",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "syncthing",
+    "audiobookshelf",
+    "coolify"
+   ],
+   "alternatives": [
+    "calibre-web"
+   ],
+   "repo": "https://github.com/Kareadita/Kavita",
+   "homepage": "http://www.kavitareader.com",
+   "license": "GPL-3.0",
+   "lang": "C#",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/kavita.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/Kareadita/Kavita/blob/develop/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "3a5f9d7572aaec4042dfc7c3c62e1c1f28186036"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "3a5f9d7572aaec4042dfc7c3c62e1c1f28186036",
+    "root_tree_sha": "e844b64f2d64867afd089adf8af4376bdc85eecc",
+    "readme_url": "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: leer tu colección de cómics o manga desde cualquier dispositivo; compartir una biblioteca de lectura con amigos o familia.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "leer tu colección de cómics o manga desde cualquier dispositivo",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "compartir una biblioteca de lectura con amigos o familia",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Kavita con Docker, añade una carpeta con un cómic o EPUB y ábrelo en el lector web.",
+    "success": "El archivo aparece en la biblioteca con su portada y se puede leer en el navegador.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+    "source_blob_sha": "3a5f9d7572aaec4042dfc7c3c62e1c1f28186036",
+    "previous_category": [
+     15,
+     "lectura"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Servidor de lectura de código abierto (GPL-3.0) del proyecto Kareadita, con funciones adicionales (Kavita+) para patrocinadores. Activo y multiplataforma.",
+   "que_hace": "Gestiona y sirve manga, cómics, novelas y libros (CBZ, CBR, PDF, EPUB) con lectores web, metadatos ComicInfo, colecciones, listas de lectura, anotaciones, roles de usuario, OPDS y seguimiento de progreso.",
+   "como_lo_hace": "Escrito en C# con .NET; se instala con Docker (imagen jvmilazz0/kavita) o binarios para Windows, Linux y macOS. Escanea carpetas organizadas según su guía.",
+   "combina_con": [
+    {
+     "id": "syncthing",
+     "motivo": "Syncthing copia la colección de lectura al servidor donde Kavita la escanea (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza la carpeta; después añádela como biblioteca en Kavita."
+    },
+    {
+     "id": "audiobookshelf",
+     "motivo": "Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos con bibliotecas separadas."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de Kavita se despliega desde Coolify con la biblioteca como volumen (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio y monta las carpetas."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): calibre-web.",
+   "descripcion_fuentes": [
+    "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+    "https://wiki.kavitareader.com/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Kareadita/Kavita",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "C#",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.9.1.4 (2026-09-02)"
+   }
+  },
+  "joplin": {
+   "name": "Joplin",
+   "cat": 15,
+   "sub": "notas",
+   "desc": "App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extremo y apps para escritorio y móvil.",
+   "how": "Aplicación Electron y React Native que guarda notas en Markdown en local y sincroniza con Nextcloud, Dropbox, OneDrive, WebDAV, S3, Joplin Server o Joplin Cloud.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/laurent22/joplin/blob/dev/README.md",
+   "cases": [
+    "sustituir Evernote importando tus notas a una app abierta",
+    "mantener notas cifradas sincronizadas entre el móvil y el ordenador"
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "nextcloud-server",
+    "syncthing",
+    "pandoc"
+   ],
+   "alternatives": [
+    "trilium",
+    "siyuan",
+    "logseq"
+   ],
+   "repo": "https://github.com/laurent22/joplin",
+   "homepage": "https://joplinapp.org",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/joplin.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/laurent22/joplin/blob/dev/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "6f9f342fa1f579f868cc40ae6ddb31bb2d94e2d4"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://joplinapp.org",
+    "source": "https://github.com/laurent22/joplin/blob/dev/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "6f9f342fa1f579f868cc40ae6ddb31bb2d94e2d4",
+    "root_tree_sha": "fc8cab6107e7328b2501943db2ec6e9c590bfc20",
+    "readme_url": "https://github.com/laurent22/joplin/blob/dev/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "sustituir Evernote importando tus notas a una app abierta",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "mantener notas cifradas sincronizadas entre el móvil y el ordenador",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Joplin, crea una libreta con notas y configura la sincronización con una carpeta o WebDAV de prueba.",
+    "success": "Las notas aparecen en un segundo dispositivo tras sincronizar.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/laurent22/joplin/blob/dev/README.md",
+    "source_blob_sha": "6f9f342fa1f579f868cc40ae6ddb31bb2d94e2d4",
+    "previous_category": [
+     15,
+     "notas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.",
+   "que_hace": "Organiza grandes cantidades de notas en libretas con etiquetas y tareas, en Markdown, con búsqueda de texto completo, importación de Evernote (ENEX), Web Clipper, plugins y temas, y sincronización con cifrado de extremo a extremo.",
+   "como_lo_hace": "Escrita en TypeScript; apps para Windows, macOS, Linux, Android e iOS y una CLI. Sincroniza con Nextcloud, Dropbox, OneDrive, WebDAV, AWS S3, el sistema de archivos, Joplin Server autoalojado o Joplin Cloud.",
+   "combina_con": [
+    {
+     "id": "nextcloud-server",
+     "motivo": "Nextcloud es uno de los destinos de sincronización documentados por Joplin.",
+     "orden_instalacion": "Nextcloud en marcha; después elige Nextcloud como destino en la configuración de sincronización."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "La sincronización por sistema de archivos de Joplin puede apoyarse en una carpeta replicada con Syncthing (combinación por arquitectura).",
+     "orden_instalacion": "Elige el destino de sistema de archivos; después sincroniza esa carpeta con Syncthing en un solo sentido de escritura."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Las notas exportadas en Markdown se convierten con Pandoc a otros formatos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta desde Joplin; después convierte con Pandoc."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): trilium, siyuan, logseq.",
+   "descripcion_fuentes": [
+    "https://github.com/laurent22/joplin/blob/dev/README.md",
+    "https://joplinapp.org"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "laurent22/joplin",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.7.22 (2026-10-28)"
+   }
+  },
+  "siyuan": {
+   "name": "SiYuan",
+   "cat": 15,
+   "sub": "notas",
+   "desc": "Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA.",
+   "how": "Núcleo en Go con interfaz TypeScript/Electron; guarda bloques en local con base SQLite y ofrece Docker, app de escritorio y móvil.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/siyuan-note/siyuan/blob/master/README.md",
+   "cases": [
+    "construir una base de conocimiento personal con referencias entre bloques",
+    "autoalojar un espacio de notas accesible desde el navegador"
+   ],
+   "stack": "TypeScript, Dockerfile",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ollama",
+    "nextcloud-server",
+    "claude-code"
+   ],
+   "alternatives": [
+    "joplin",
+    "trilium",
+    "logseq"
+   ],
+   "repo": "https://github.com/siyuan-note/siyuan",
+   "homepage": "https://b3log.org/siyuan",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/siyuan.md",
+   "access": {
+    "api": "optional",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/siyuan-note/siyuan/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "ad72a90695ddd4212ee3a7d21285c6948373a0a6"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "ad72a90695ddd4212ee3a7d21285c6948373a0a6",
+    "root_tree_sha": "be17ed1e0510bb6371cb8a162e16898a697fa118",
+    "readme_url": "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador.",
+   "models": "Escritura y preguntas con IA mediante la API de OpenAI o compatibles",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "construir una base de conocimiento personal con referencias entre bloques",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "autoalojar un espacio de notas accesible desde el navegador",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala la app de escritorio o la imagen Docker (`b3log/siyuan serve`), crea dos documentos y enlaza un bloque de uno en el otro.",
+    "success": "La referencia bidireccional aparece en ambos documentos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+    "source_blob_sha": "ad72a90695ddd4212ee3a7d21285c6948373a0a6",
+    "previous_category": [
+     15,
+     "notas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Gestor de conocimiento de código abierto (AGPL-3.0) de B3log. Muy activo; algunas funciones de sincronización en la nube requieren suscripción.",
+   "que_hace": "Organiza el conocimiento en bloques con referencias bidireccionales, incrustaciones, consultas SQL, bases de datos, mapas mentales, PDF anotables, plantillas y espacio de trabajo colaborativo con agentes de IA; incluye escritura y preguntas con IA vía API de OpenAI.",
+   "como_lo_hace": "Núcleo en Go y frontend TypeScript; se distribuye como app de escritorio, móvil y contenedor Docker (desde v3.7.0 hay que pasar `serve`), también con Helm. Los datos se guardan en local; la sincronización usa la nube de SiYuan, S3 o WebDAV.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "La IA de SiYuan usa una API compatible con OpenAI, que puede apuntar a un servidor local como Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después configura su URL compatible con OpenAI en los ajustes de IA."
+    },
+    {
+     "id": "nextcloud-server",
+     "motivo": "Nextcloud ofrece WebDAV, uno de los destinos de sincronización de datos de SiYuan (combinación por arquitectura).",
+     "orden_instalacion": "Crea una carpeta WebDAV en Nextcloud; después configúrala como sincronización en SiYuan."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El proyecto se presenta como espacio de trabajo con agentes (tema MCP en GitHub); un agente puede trabajar con sus documentos mediante la API del núcleo (combinación por arquitectura) [DATO NO VERIFICADO: integración MCP concreta].",
+     "orden_instalacion": "SiYuan en marcha con token de API; después configura el acceso del agente."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): joplin, trilium, logseq.",
+   "descripcion_fuentes": [
+    "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+    "https://b3log.org/siyuan"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "siyuan-note/siyuan",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.8.10 (2026-11-10)"
+   }
+  },
+  "logseq": {
+   "name": "Logseq",
+   "cat": 15,
+   "sub": "notas",
+   "desc": "Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org.",
+   "how": "App de escritorio y móvil en ClojureScript que trabaja sobre una carpeta local de archivos Markdown u Org; la versión con base de datos está en desarrollo.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/logseq/logseq/blob/master/README.md",
+   "cases": [
+    "llevar un diario y notas enlazadas en archivos de texto propios",
+    "organizar investigación con bloques, referencias y consultas"
+   ],
+   "stack": "Clojure, Dockerfile, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "syncthing",
+    "pandoc",
+    "claude-code"
+   ],
+   "alternatives": [
+    "joplin",
+    "trilium",
+    "siyuan"
+   ],
+   "repo": "https://github.com/logseq/logseq",
+   "homepage": "https://logseq.com",
+   "license": "AGPL-3.0",
+   "lang": "Clojure",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/logseq.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/logseq/logseq/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "662bad17d543ea6865cd8d146c91478858436dc2"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "ready_app",
+    "prerequisites": [
+     "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+    ],
+    "steps": [
+     "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+     "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+     "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/logseq/logseq/releases",
+    "source": "https://github.com/logseq/logseq/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+   "sources": {
+    "readme_blob_sha": "662bad17d543ea6865cd8d146c91478858436dc2",
+    "root_tree_sha": "a0f4399cbeaff24d92cb33bb9524f88626056fc4",
+    "readme_url": "https://github.com/logseq/logseq/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "llevar un diario y notas enlazadas en archivos de texto propios",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "organizar investigación con bloques, referencias y consultas",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala Logseq, abre una carpeta vacía como grafo y crea una página enlazada desde el diario.",
+    "success": "La página aparece en el grafo y sus referencias se muestran en ambas notas.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/logseq/logseq/blob/master/README.md",
+    "source_blob_sha": "662bad17d543ea6865cd8d146c91478858436dc2",
+    "previous_category": [
+     15,
+     "notas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Plataforma de conocimiento de código abierto (AGPL-3.0) de Logseq Inc. Muy popular; el equipo trabaja en una versión basada en base de datos que sustituirá al modelo de archivos.",
+   "que_hace": "Organiza notas como esquemas de bloques con enlaces bidireccionales, diario, etiquetas, consultas, tareas, pizarras y grafo de conocimiento, sobre archivos Markdown u Org-mode en tu equipo. Admite plugins y temas.",
+   "como_lo_hace": "Escrita en Clojure/ClojureScript; apps para Windows, macOS, Linux, iOS y Android desde las releases (también con script de instalación en Linux). Los datos son archivos locales; la sincronización oficial es un servicio aparte.",
+   "combina_con": [
+    {
+     "id": "syncthing",
+     "motivo": "Un grafo de Logseq es una carpeta de archivos que se puede sincronizar con Syncthing entre equipos (combinación por arquitectura).",
+     "orden_instalacion": "Sincroniza la carpeta del grafo; evita editarlo a la vez en dos equipos."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Las páginas en Markdown u Org se convierten con Pandoc a otros formatos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta o toma los archivos del grafo; después convierte con Pandoc."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Al ser archivos Markdown, un agente de código puede leer y reorganizar páginas del grafo (combinación por arquitectura).",
+     "orden_instalacion": "Haz copia del grafo; después deja al agente trabajar sobre esa copia."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): joplin, trilium, siyuan. La migración a la versión con base de datos puede cambiar el formato de almacenamiento.",
+   "descripcion_fuentes": [
+    "https://github.com/logseq/logseq/blob/master/README.md",
+    "https://docs.logseq.com/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "logseq/logseq",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "Clojure",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.0.2 (2026-10-07)"
+   }
+  },
+  "trilium": {
+   "name": "Trilium Notes",
+   "cat": 15,
+   "sub": "notas",
+   "desc": "App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.",
+   "how": "Aplicación TypeScript (Electron y servidor Node.js) con base SQLite, notas en árbol que pueden estar en varios lugares, scripting y API ETAPI.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/TriliumNext/Trilium/blob/main/README.md",
+   "cases": [
+    "construir una base de conocimiento personal grande con jerarquías y atributos",
+    "sincronizar notas entre escritorio y navegador con tu propio servidor"
+   ],
+   "stack": "TypeScript, docker-compose.yml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "coolify",
+    "claude-code",
+    "pandoc"
+   ],
+   "alternatives": [
+    "joplin",
+    "siyuan",
+    "logseq"
+   ],
+   "repo": "https://github.com/TriliumNext/Trilium",
+   "homepage": "https://triliumnotes.org",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/trilium.md",
+   "access": {
+    "api": "optional",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/TriliumNext/Trilium/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "e686e04e62c5659dd7e5c19120ee9e5fc1aed87d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "e686e04e62c5659dd7e5c19120ee9e5fc1aed87d",
+    "root_tree_sha": "12c39eff7b541c5045ba1f8f6be6c4e0485a51c0",
+    "readme_url": "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor.",
+   "models": "Funciones de IA opcionales con proveedores configurables",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "construir una base de conocimiento personal grande con jerarquías y atributos",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "sincronizar notas entre escritorio y navegador con tu propio servidor",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Instala la release de escritorio o el servidor Docker, crea un árbol de notas y clona una nota en dos ramas.",
+    "success": "La nota clonada aparece en ambas ramas y los cambios se reflejan en las dos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+    "source_blob_sha": "e686e04e62c5659dd7e5c19120ee9e5fc1aed87d",
+    "previous_category": [
+     15,
+     "notas"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Aplicación de notas de código abierto (AGPL-3.0) mantenida por la comunidad TriliumNext, continuación del Trilium original de zadam. Muy activa, con versiones estables y nightly.",
+   "que_hace": "Organiza notas en jerarquías profundas donde una nota puede vivir en varios lugares, con editor enriquecido y de código, atributos y relaciones, mapas de relaciones, notas de tipo lienzo y mapa mental, cifrado por nota, historial de versiones, scripting en JavaScript y publicación de notas.",
+   "como_lo_hace": "Escrita en TypeScript con base SQLite; se distribuye como app Electron y como servidor (Docker o paquetes) que sincroniza con los clientes y ofrece acceso web. Tiene API REST ETAPI para automatizaciones.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "El servidor de sincronización de Trilium se despliega en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después despliega la imagen del servidor con un volumen de datos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "La API ETAPI de Trilium permite a un agente crear o consultar notas mediante scripts (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token ETAPI; después pide al agente el script y pruébalo en una base de copia."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Las notas exportadas en Markdown o HTML se convierten con Pandoc a otros formatos (combinación por arquitectura).",
+     "orden_instalacion": "Exporta desde Trilium; después convierte con Pandoc."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): joplin, siyuan, logseq.",
+   "descripcion_fuentes": [
+    "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+    "https://docs.triliumnotes.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "TriliumNext/Trilium",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.107.0 (2026-11-08)"
+   }
+  },
+  "actual": {
+   "name": "Actual Budget",
+   "cat": 15,
+   "sub": "personal",
+   "desc": "App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.",
+   "how": "Aplicación Node.js/TypeScript que guarda el presupuesto en local (SQLite) y sincroniza los cambios mediante un servidor propio o alojado.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/actualbudget/actual/blob/master/README.md",
+   "cases": [
+    "llevar un presupuesto por sobres sin ceder tus datos a un servicio",
+    "importar movimientos bancarios y categorizar gastos en casa"
+   ],
+   "stack": "TypeScript, Dockerfile, docker-compose.yml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ghostfolio",
+    "coolify",
+    "claude-code"
+   ],
+   "alternatives": [
+    "firefly-iii"
+   ],
+   "repo": "https://github.com/actualbudget/actual",
+   "homepage": "https://actualbudget.org",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/actual.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/actualbudget/actual/blob/master/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "57e95060c5009be43140f4140eaf8c3d170a4a79"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/actualbudget/actual/blob/master/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "57e95060c5009be43140f4140eaf8c3d170a4a79",
+    "root_tree_sha": "33912a083822f19090fe45a562d58fe29499ca25",
+    "readme_url": "https://github.com/actualbudget/actual/blob/master/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "llevar un presupuesto por sobres sin ceder tus datos a un servicio",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "importar movimientos bancarios y categorizar gastos en casa",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega el servidor de Actual (Docker o PikaPods), crea un presupuesto e importa un archivo de movimientos.",
+    "success": "Los movimientos aparecen categorizables y el presupuesto se sincroniza en otro navegador.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/actualbudget/actual/blob/master/README.md",
+    "source_blob_sha": "57e95060c5009be43140f4140eaf8c3d170a4a79",
+    "previous_category": [
+     15,
+     "personal"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.",
+   "que_hace": "Gestiona presupuestos con el método de sobres, cuentas, movimientos, reglas de categorización, importación (OFX, QIF, CSV) y sincronización bancaria opcional según región, informes y sincronización entre dispositivos con cifrado opcional.",
+   "como_lo_hace": "Escrita en TypeScript sobre Node.js; se despliega en PikaPods, Fly.io, Docker o en local. Ofrece un paquete de API (@actual-app/api) para scripts.",
+   "combina_con": [
+    {
+     "id": "ghostfolio",
+     "motivo": "Actual cubre presupuesto y gastos y Ghostfolio el seguimiento de inversiones (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos; mantén las cuentas de inversión solo en Ghostfolio."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker del servidor de Actual se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con un volumen de datos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El paquete @actual-app/api permite a un agente escribir scripts de importación o informes (combinación por arquitectura).",
+     "orden_instalacion": "Haz copia del presupuesto; después pide al agente el script con la API."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): firefly-iii.",
+   "descripcion_fuentes": [
+    "https://github.com/actualbudget/actual/blob/master/README.md",
+    "https://actualbudget.org/docs"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "actualbudget/actual",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v26.11.0 (2026-11-02)"
+   }
+  },
+  "firefly-iii": {
+   "name": "Firefly III",
+   "cat": 15,
+   "sub": "personal",
+   "desc": "Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.",
+   "how": "Aplicación PHP (Laravel) con base MySQL, PostgreSQL o SQLite, API REST y un importador de datos aparte.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/firefly-iii/firefly-iii/blob/main/readme.md",
+   "cases": [
+    "registrar y categorizar gastos e ingresos con reglas automáticas",
+    "obtener informes de flujo de caja de varias cuentas en tu servidor"
+   ],
+   "stack": "PHP, composer.json, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.",
+   "combines_with": [
+    "ghostfolio",
+    "activepieces",
+    "coolify"
+   ],
+   "alternatives": [
+    "actual"
+   ],
+   "repo": "https://github.com/firefly-iii/firefly-iii",
+   "homepage": "https://firefly-iii.org/",
+   "license": "AGPL-3.0",
+   "lang": "PHP",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/firefly-iii.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/firefly-iii/firefly-iii/blob/main/readme.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "2cc76d511ff9d0f170e5d8b7371cf7640d12e8f3"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/firefly-iii/firefly-iii/blob/main/readme.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "2cc76d511ff9d0f170e5d8b7371cf7640d12e8f3",
+    "root_tree_sha": "e1a90bf8ee7499524039b331179e40431b3c84af",
+    "readme_url": "https://github.com/firefly-iii/firefly-iii/blob/main/readme.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "registrar y categorizar gastos e ingresos con reglas automáticas",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "obtener informes de flujo de caja de varias cuentas en tu servidor",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Firefly III con Docker Compose, crea una cuenta y registra unas transacciones.",
+    "success": "Los informes muestran gastos por categoría y el saldo de la cuenta.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/firefly-iii/firefly-iii/blob/main/readme.md",
+    "source_blob_sha": "2cc76d511ff9d0f170e5d8b7371cf7640d12e8f3",
+    "previous_category": [
+     15,
+     "personal"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Gestor de finanzas personales de código abierto (AGPL-3.0) creado por James Cole. Muy maduro; se declara sin IA, sin nube y respetuoso con la privacidad.",
+   "que_hace": "Lleva el control de gastos e ingresos con contabilidad de doble entrada, presupuestos, categorías, etiquetas, reglas, transacciones recurrentes, huchas de ahorro, informes, multimoneda, webhooks y API REST.",
+   "como_lo_hace": "Escrito en PHP con Laravel; se instala con Docker o en un servidor web con base de datos. La importación de extractos se hace con el Data Importer, un proyecto aparte.",
+   "combina_con": [
+    {
+     "id": "ghostfolio",
+     "motivo": "Firefly III gestiona el día a día y Ghostfolio las inversiones (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos; separa las cuentas de inversión."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks y la API REST de Firefly III permiten automatizar notificaciones o registros desde Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token personal en Firefly III; después configura el webhook o las peticiones HTTP en Activepieces."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose de Firefly III con su base de datos se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose y configura APP_KEY y la base de datos."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): actual.",
+   "descripcion_fuentes": [
+    "https://github.com/firefly-iii/firefly-iii/blob/main/readme.md",
+    "https://docs.firefly-iii.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "firefly-iii/firefly-iii",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.7.9 (2026-10-11)"
+   }
+  },
+  "ghostfolio": {
+   "name": "Ghostfolio",
+   "cat": 15,
+   "sub": "personal",
+   "desc": "Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube.",
+   "how": "Aplicación Angular y NestJS con Prisma, PostgreSQL y Redis; obtiene cotizaciones de proveedores de datos configurables.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/ghostfolio/ghostfolio/blob/main/README.md",
+   "cases": [
+    "seguir el rendimiento de una cartera de inversión diversificada",
+    "analizar asignación, dividendos y riesgo sin entregar datos a un broker"
+   ],
+   "stack": "TypeScript, Dockerfile, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Ghostfolio Premium (nube) es de pago; algunos proveedores de datos requieren claves. Herramienta de investigación: no constituye asesoramiento financiero ni garantiza resultados.",
+   "combines_with": [
+    "actual",
+    "firefly-iii",
+    "coolify"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/ghostfolio/ghostfolio",
+   "homepage": "https://Ghostfol.io",
+   "license": "AGPL-3.0",
+   "lang": "TypeScript",
+   "updated": "2026-11-16",
+   "doc": "human/fichas/ghostfolio.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+    "checked_at": "2026-11-16",
+    "review": "documented",
+    "sources": [
+     "https://github.com/ghostfolio/ghostfolio/blob/main/README.md"
+    ],
+    "mode": "software",
+    "source_blob_sha": "f8c3c92b8995e58156055639078f61f87b0597dd"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+    ],
+    "steps": [
+     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "",
+    "source": "https://github.com/ghostfolio/ghostfolio/blob/main/README.md",
+    "checked_at": "2026-11-16",
+    "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+   },
+   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+   "sources": {
+    "readme_blob_sha": "f8c3c92b8995e58156055639078f61f87b0597dd",
+    "root_tree_sha": "366af5cac7db78d986cfff515635d0af2b989df2",
+    "readme_url": "https://github.com/ghostfolio/ghostfolio/blob/main/README.md",
+    "github_checked": "2026-11-16",
+    "collection": "catalog-expansion-2026-11-16"
+   },
+   "why": "Usos propuestos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker.",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "seguir el rendimiento de una cartera de inversión diversificada",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "analizar asignación, dividendos y riesgo sin entregar datos a un broker",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega Ghostfolio con el Docker Compose del README, registra unas operaciones y revisa el panel.",
+    "success": "El panel muestra la cartera con su valor, rendimiento y asignación.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-16",
+    "source": "https://github.com/ghostfolio/ghostfolio/blob/main/README.md",
+    "source_blob_sha": "f8c3c92b8995e58156055639078f61f87b0597dd",
+    "previous_category": [
+     15,
+     "personal"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "que_es": "Software de gestión de patrimonio de código abierto (AGPL-3.0) del proyecto Ghostfolio, con oferta comercial en la nube (Premium). Activo.",
+   "que_hace": "Registra operaciones de acciones, ETF, criptomonedas y otros activos, y calcula rendimiento, asignación, dividendos, comisiones y métricas de riesgo, con importación y exportación, varias cuentas y modo de privacidad.",
+   "como_lo_hace": "Construido con Angular, NestJS, Prisma y Nx en TypeScript; se despliega con `docker compose -f docker/docker-compose.yml up -d` junto a PostgreSQL y Redis. Ofrece endpoint de salud para orquestadores.",
+   "combina_con": [
+    {
+     "id": "actual",
+     "motivo": "Actual cubre el presupuesto doméstico mientras Ghostfolio sigue las inversiones (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos y separa las cuentas por función."
+    },
+    {
+     "id": "firefly-iii",
+     "motivo": "Firefly III registra gastos e ingresos y Ghostfolio el patrimonio invertido (combinación por arquitectura).",
+     "orden_instalacion": "Despliega ambos y separa las cuentas por función."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El Compose de Ghostfolio con PostgreSQL y Redis se despliega desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después importa el Compose y configura las variables."
+    }
+   ],
+   "descripcion_notas": "Las cotizaciones dependen del proveedor de datos elegido; revisa sus límites.",
+   "descripcion_fuentes": [
+    "https://github.com/ghostfolio/ghostfolio/blob/main/README.md",
+    "https://ghostfol.io"
+   ],
+   "descripcion_revision": {
+    "batch": "47-expansion-p04",
+    "checked_at": "2026-11-16",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ghostfolio/ghostfolio",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.100.0 (2026-11-15)"
    }
   }
  },

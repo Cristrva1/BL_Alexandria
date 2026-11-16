@@ -33,6 +33,12 @@ Lee el documento a una representación interna y lo escribe al formato de destin
 | [Marp](marp.md) | Combinación recíproca: Marp lo enlaza como «Conversión de documentos a Markdown. (combinación por arquitectura)». | Orden indicado desde Marp: Preprocesa el contenido. |
 | [pdf-craft](pdf-craft.md) | Combinación recíproca: pdf-craft lo enlaza como «Convertir el Markdown resultante a DOCX o LaTeX (combinación por arquitectura)». | Orden indicado desde pdf-craft: Encadénalos en un script. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Calibre-Web](calibre-web.md) · [Joplin](joplin.md) · [Logseq](logseq.md) · [Trilium Notes](trilium.md)
+
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 3.14 (2026-11-12) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jgm/pandoc/blob/main/README.md)</sub>

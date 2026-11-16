@@ -33,6 +33,37 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `kepano-obsidian`, `obsidian-minimal`, `obsidian-second-brain`
 
+## `actual`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=personal,typescript,self-hosted,finance
+
+**Qué es:** App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/actualbudget/actual
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/actualbudget/actual/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Despliega el servidor de Actual (Docker o PikaPods), crea un presupuesto e importa un archivo de movimientos.
+**Qué comprobar:** Los movimientos aparecen categorizables y el presupuesto se sincroniza en otro navegador.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghostfolio`, `coolify`, `claude-code`
+**Alternativas (elige una):** `firefly-iii`
+
 ## `adguardhome`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=privacidad,server,typescript
 
@@ -62,6 +93,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar si el dominio se permitió o bloqueó y por qué regla
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `home-assistant`, `activepieces`, `vaultwarden`, `casaos`, `cleanyourtv`, `optimizerduck`
+**Alternativas (elige una):** `pi-hole`
 
 ## `ai-job-search`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=personal,skill,python
@@ -183,7 +215,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade una grabación propia, reproduce un minuto y comprueba el progreso guardado
 **Qué comprobar:** Puedes retomar la reproducción desde otro dispositivo autorizado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `coolify`, `syncthing`, `activepieces`
+**Combina con:** `coolify`, `syncthing`, `activepieces`, `jellyfin`, `kavita`
 
 ## `bitwarden-clients`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=privacidad,app,typescript
@@ -214,6 +246,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El registro aparece solo en la cuenta y bóveda esperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vaultwarden`, `activepieces`, `claude-code`
+
+## `calibre-web`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=self-hosted,python,server,reading
+
+**Qué es:** Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador.
+**Stack:** Fluent, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/janeczku/calibre-web
+
+**Instalación** [+]:
+
+```
+pip install calibreweb
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala con `pip install calibreweb`, apunta a una biblioteca de Calibre de prueba y abre un libro en el lector web.
+**Qué comprobar:** El catálogo muestra los libros con portadas y el lector abre el EPUB.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `syncthing`, `pandoc`, `coolify`
+**Alternativas (elige una):** `kavita`
 
 ## `claude-obsidian`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=notas,skill,python
@@ -277,6 +340,127 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `adguardhome`, `optimizerduck`, `universal-android-debloater-next-generation`
 
+## `esphome`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=automation,python,iot,cpp
+
+**Qué es:** Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlarlos desde Home Assistant.
+**Stack:** C++, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/esphome/esphome
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/esphome/esphome/blob/dev/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir sensores de temperatura o presencia caseros sin programar en C++; integrar placas ESP32 con Home Assistant mediante su API nativa
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala ESPHome, crea una configuración YAML con un sensor sencillo y compila el firmware para tu placa.
+**Qué comprobar:** La placa se conecta a la Wi-Fi y aparece en Home Assistant con su sensor.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `zigbee2mqtt`, `claude-code`
+
+## `firefly-iii`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=personal,php,self-hosted,finance
+
+**Qué es:** Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.
+**Stack:** PHP, composer.json, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/firefly-iii/firefly-iii
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/firefly-iii/firefly-iii/blob/main/readme.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Firefly III con Docker Compose, crea una cuenta y registra unas transacciones.
+**Qué comprobar:** Los informes muestran gastos por categoría y el saldo de la cuenta.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghostfolio`, `activepieces`, `coolify`
+**Alternativas (elige una):** `actual`
+
+## `frigate`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,python,docker,self-hosted
+
+**Qué es:** Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant.
+**Stack:** Python, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/blakeblackshear/frigate
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/blakeblackshear/frigate/blob/dev/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Frigate con Docker, configura una cámara RTSP y activa la detección de personas.
+**Qué comprobar:** La interfaz muestra eventos con instantáneas cuando alguien entra en el plano.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `opencv`, `zigbee2mqtt`
+
+## `ghostfolio`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=personal,typescript,self-hosted,finance
+
+**Qué es:** Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ghostfolio/ghostfolio
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/ghostfolio/ghostfolio/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Ghostfolio con el Docker Compose del README, registra unas operaciones y revisa el panel.
+**Qué comprobar:** El panel muestra la cartera con su valor, rendimiento y asignación.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `actual`, `firefly-iii`, `coolify`
+
 ## `home-assistant`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=domotica,server,python
 
@@ -306,6 +490,98 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes ver el estado y comprobar el disparador y la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `adguardhome`, `syncthing`, `nextcloud-server`, `node-red`
+
+## `immich`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=self-hosted,typescript,docker,image
+
+**Qué es:** Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/immich-app/immich
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/immich-app/immich/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer copia automática de las fotos del móvil a tu propio servidor; buscar fotos por personas, lugares o descripciones sin enviar datos a la nube
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Immich con su Docker Compose oficial, sube unas fotos desde la web y busca por contenido.
+**Qué comprobar:** Las fotos aparecen en la línea temporal y la búsqueda inteligente devuelve resultados relevantes.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nextcloud-server`, `syncthing`, `coolify`
+**Alternativas (elige una):** `photoprism`
+
+## `jellyfin`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=self-hosted,csharp,video,server
+
+**Qué es:** Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby.
+**Stack:** C#
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/jellyfin/jellyfin
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/jellyfin/jellyfin/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar y ver tu videoteca en TV, móvil y navegador; compartir una biblioteca multimedia con la familia sin cuentas en la nube
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala Jellyfin (paquete o Docker), añade una carpeta con vídeos y reprodúcelos desde el navegador.
+**Qué comprobar:** La biblioteca muestra carátulas y metadatos y el vídeo se reproduce, transcodificado si hace falta.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `handbrake`, `audiobookshelf`, `coolify`
+
+## `joplin`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,typescript,app
+
+**Qué es:** App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extremo y apps para escritorio y móvil.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/laurent22/joplin
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/laurent22/joplin/blob/dev/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Joplin, crea una libreta con notas y configura la sincronización con una carpeta o WebDAV de prueba.
+**Qué comprobar:** Las notas aparecen en un segundo dispositivo tras sincronizar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nextcloud-server`, `syncthing`, `pandoc`
+**Alternativas (elige una):** `trilium`, `siyuan`, `logseq`
 
 ## `jsoncanvas`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=notas,reference,javascript
@@ -367,6 +643,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `coolify`, `claude-code`, `archivebox`
 
+## `kavita`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=self-hosted,csharp,server,reading
+
+**Qué es:** Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos.
+**Stack:** C#, Dockerfile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Kareadita/Kavita
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Kareadita/Kavita/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: leer tu colección de cómics o manga desde cualquier dispositivo; compartir una biblioteca de lectura con amigos o familia
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Kavita con Docker, añade una carpeta con un cómic o EPUB y ábrelo en el lector web.
+**Qué comprobar:** El archivo aparece en la biblioteca con su portada y se puede leer en el navegador.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `syncthing`, `audiobookshelf`, `coolify`
+**Alternativas (elige una):** `calibre-web`
+
 ## `kepano-obsidian`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=notas,template,reference
 
@@ -397,6 +704,67 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `obsidian-minimal`, `obsidian-clipper`, `obsidian-skills`, `40-questions`
 
+## `logseq`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,clojure,app,local
+
+**Qué es:** Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org.
+**Stack:** Clojure, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/logseq/logseq
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/logseq/logseq/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Logseq, abre una carpeta vacía como grafo y crea una página enlazada desde el diario.
+**Qué comprobar:** La página aparece en el grafo y sus referencias se muestran en ambas notas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `syncthing`, `pandoc`, `claude-code`
+**Alternativas (elige una):** `joplin`, `trilium`, `siyuan`
+
+## `memos`
+role=platform · exec=local · setup=easy · mcp=True · prov=— · tags=notas,go,self-hosted,mcp
+
+**Qué es:** App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/usememos/memos
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/usememos/memos/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Memos con el `docker run` del README, crea una nota con etiquetas y búscala.
+**Qué comprobar:** La nota aparece en la línea temporal y la búsqueda por etiqueta la encuentra.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `activepieces`, `coolify`
+
 ## `nextcloud-server`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
 
@@ -425,7 +793,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una cuenta de prueba, sube un archivo y comparte un enlace con permisos limitados
 **Qué comprobar:** Puedes abrir el archivo con los permisos configurados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `coolify`, `home-assistant`, `ollama`, `casaos`
+**Combina con:** `coolify`, `home-assistant`, `ollama`, `casaos`, `immich`, `photoprism`
 
 ## `obsidian-clipper`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,typescript
@@ -732,6 +1100,99 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `adguardhome`, `universal-android-debloater-next-generation`, `cleanyourtv`
 
+## `photoprism`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=self-hosted,go,docker,image
+
+**Qué es:** App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube.
+**Stack:** Go, Dockerfile, compose.yaml, go.mod, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/photoprism/photoprism
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/photoprism/photoprism/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar automáticamente un archivo de fotos por lugares, etiquetas y personas; navegar y compartir una colección familiar desde tu servidor
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega PhotoPrism con Docker Compose, indexa una carpeta de fotos y busca por etiqueta.
+**Qué comprobar:** Las fotos aparecen clasificadas y la búsqueda por etiqueta o lugar devuelve resultados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nextcloud-server`, `syncthing`, `coolify`
+**Alternativas (elige una):** `immich`
+
+## `pi-hole`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=privacy,self-hosted,shell,server
+
+**Qué es:** Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.
+**Stack:** Shell
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/pi-hole/pi-hole
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/pi-hole/pi-hole/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala Pi-hole en una máquina Linux de prueba o contenedor y apunta el DNS de un equipo a ella.
+**Qué comprobar:** El panel muestra consultas bloqueadas y las webs cargan sin anuncios.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `grafana`, `coolify`
+**Alternativas (elige una):** `adguardhome`
+
+## `siyuan`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=notas,typescript,self-hosted,app
+
+**Qué es:** Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA.
+**Stack:** TypeScript, Dockerfile
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/siyuan-note/siyuan
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/siyuan-note/siyuan/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala la app de escritorio o la imagen Docker (`b3log/siyuan serve`), crea dos documentos y enlaza un bloque de uno en el otro.
+**Qué comprobar:** La referencia bidireccional aparece en ambos documentos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `nextcloud-server`, `claude-code`
+**Alternativas (elige una):** `joplin`, `trilium`, `logseq`
+
 ## `syncthing`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=archivos,app,go
 
@@ -761,6 +1222,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Ambos equipos muestran el mismo contenido y estado de sincronización
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `home-assistant`, `coolify`, `paperless-ngx`, `audiobookshelf`, `spotdl`
+
+## `trilium`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=notas,typescript,app,self-hosted
+
+**Qué es:** App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.
+**Stack:** TypeScript, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/TriliumNext/Trilium
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/TriliumNext/Trilium/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala la release de escritorio o el servidor Docker, crea un árbol de notas y clona una nota en dos ramas.
+**Qué comprobar:** La nota clonada aparece en ambas ramas y los cambios se reflejan en las dos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coolify`, `claude-code`, `pandoc`
+**Alternativas (elige una):** `joplin`, `siyuan`, `logseq`
 
 ## `universal-android-debloater-next-generation`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=personal,app,rust
@@ -821,3 +1313,33 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes reconocer la URL de servidor y recuperar el registro
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `bitwarden-clients`, `coolify`, `adguardhome`
+
+## `zigbee2mqtt`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,iot,self-hosted
+
+**Qué es:** Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Koenkk/zigbee2mqtt
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Koenkk/zigbee2mqtt/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: controlar luces y sensores Zigbee de varias marcas desde una sola instalación; integrar dispositivos Zigbee con automatizaciones vía MQTT
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala Zigbee2MQTT con un adaptador compatible y un broker MQTT, empareja un sensor y observa sus mensajes.
+**Qué comprobar:** El sensor aparece en el frontend y sus valores se publican en el topic de MQTT.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `node-red`, `frigate`, `esphome`

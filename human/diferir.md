@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**81 repos.**
+**83 repos.**
 
 ## ⏳ Diferir
 
@@ -43,6 +43,7 @@ _Pesado: solo si llega a finalista._
 | [docuseal](fichas/docuseal.md) | 📄 PDF, OCR y procesamiento de documentos | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. |
 | [qlib](fichas/qlib.md) | 📈 Investigar finanzas y mercados | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. |
 | [FinceptTerminal](fichas/finceptterminal.md) | 📈 Investigar finanzas y mercados | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. |
+| [FinGPT](fichas/fingpt.md) | 📈 Investigar finanzas y mercados | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. |
 | [FinRL](fichas/finrl.md) | 📈 Investigar finanzas y mercados | Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. |
 | [AutoHedge](fichas/autohedge.md) | 📈 Investigar finanzas y mercados | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. |
 | [open-sol-bot](fichas/open-sol-bot.md) | 📈 Investigar finanzas y mercados | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. |
@@ -50,6 +51,7 @@ _Pesado: solo si llega a finalista._
 | [vaultwarden](fichas/vaultwarden.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
 | [AdGuardHome](fichas/adguardhome.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. |
 | [server](fichas/nextcloud-server.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. |
+| [Frigate NVR](fichas/frigate.md) | 🗂️ Organizar notas, archivos y servicios personales | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant. |
 | [karakeep](fichas/karakeep.md) | 🗂️ Organizar notas, archivos y servicios personales | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. |
 | [audiobookshelf](fichas/audiobookshelf.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. |
 | [twenty-main](fichas/twenty-main.md) | 🤖 CRM, ventas y marketing | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
