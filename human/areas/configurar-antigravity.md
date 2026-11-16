@@ -4,7 +4,7 @@
 
 Distingue el cliente de Google, las skills compatibles y los recursos para diseño y prompting.
 
-167 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
+166 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
 
 ## Primera configuración, paso a paso
 
@@ -122,7 +122,7 @@ Prompt Master incluye orientación para Antigravity; es un recurso de prompting,
 
 Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 
-[Explorar 92 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-mcp)
+[Explorar 91 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -176,7 +176,6 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 | [mempalace](../fichas/mempalace.md) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | API de IA opcional |
 | [motion](../fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional |
 | [n8n-mcp](../fichas/n8n-mcp.md) | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. | Sin clave propia de API de IA en la ruta básica |
-| [NeMo-Agent-Toolkit](../fichas/nemo-agent-toolkit.md) | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). | Depende de la ruta elegida |
 | [notebooklm-mcp-cli](../fichas/notebooklm-mcp-cli.md) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | Sin clave propia de API de IA en la ruta básica |
 | [notebooklm-py](../fichas/notebooklm-py.md) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | Sin clave propia de API de IA en la ruta básica |
 | [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Depende de la ruta elegida |
@@ -331,7 +330,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md), revisado el 2026-11-15.
 - [Material UI](https://github.com/mui/material-ui/blob/master/README.md), revisado el 2026-11-15.
 - [n8n-mcp](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md), revisado el 2026-11-15.
-- [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md), revisado el 2026-11-15.
 - [no-ai-slop](https://github.com/petergyang/no-ai-slop/blob/main/README.md), revisado el 2026-11-15.
 - [nodeterm](https://github.com/eneskirca/nodeterm/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-mcp-cli](https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md), revisado el 2026-11-15.

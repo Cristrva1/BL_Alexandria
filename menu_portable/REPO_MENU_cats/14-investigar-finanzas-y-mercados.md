@@ -32,36 +32,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes distinguir consulta, decisión y funciones que enviarían operaciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `backtrader`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=cuant,framework,python
-
-**Qué es:** Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado.
-**Stack:** Python y dependencias compatibles; CSV histórico; matplotlib solo para gráficos
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere modelo; fuentes de datos y cómputo pueden costar aparte
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Es una biblioteca de simulación e integración; los resultados dependen de comisiones, datos y supuestos, no solo de la regla
-- Coste: Sin pago a un modelo en la ruta básica. No requiere modelo; fuentes de datos y cómputo pueden costar aparte
-- Equipo: Preparación según la ruta elegida. Python y dependencias compatibles; CSV histórico; matplotlib solo para gráficos
-**Repo:** https://github.com/mementum/backtrader
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/mementum/backtrader/blob/master/README.rst
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender backtesting por eventos; Comparar supuestos de ejecución de una estrategia
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Prueba una regla sencilla sobre un CSV y añade una comisión explícita
-**Qué comprobar:** Puedes revisar cada operación y su efecto en el balance simulado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `nautilus-trader`
-
 ## `binance-trader`
 role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,arbitrage,binance,bitcoin,btc,cryptocurrency,trade,python
 
@@ -120,35 +90,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes contrastar metadatos con la documentación del exchange
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `chartanalyst`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=finanzas,python
-
-**Qué es:** Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles.
-**Stack:** Código Python histórico; Keras antiguo y Theano o TensorFlow; datos CSV
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No usa un servicio LLM; entrenar consume recursos; no hay instalación moderna completa verificada
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El código inspeccionado utiliza APIs antiguas de Keras y no ofrece un entorno actual fijado; es material de estudio que puede requerir migración
-- Coste: Sin pago a un modelo en la ruta básica. No usa un servicio LLM; entrenar consume recursos; no hay instalación moderna completa verificada
-- Equipo: Preparación según la ruta elegida. Código Python histórico; Keras antiguo y Theano o TensorFlow; datos CSV
-**Repo:** https://github.com/huima58/chartAnalyst
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/huima58/chartAnalyst/blob/master/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar clasificación de gráficos con redes convolucionales; Practicar separación temporal de datos
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Localiza cómo se convierten gráficos en imágenes y cómo se separan entrenamiento y prueba antes de intentar portar el código
-**Qué comprobar:** Puedes explicar entradas, etiquetas y evaluación de la CNN
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
 ## `company-pixel-office`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,javascript
 
@@ -176,35 +117,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Abre la demo visual y relaciona cada personaje con el estado que muestra
 **Qué comprobar:** Puedes distinguir representación de interfaz y actividad realmente documentada
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
-## `crypto-trader`
-role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,algorithm,bitcoin,bot,coinbase,exchange-api,gemini,market
-
-**Qué es:** Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas.
-**Stack:** Python 3; dependencias del proyecto; credenciales Gemini para consultas privadas
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere modelo; Gemini Exchange, comisiones y servicios tienen condiciones propias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. El clone del README contiene cryto-trader, una errata; usa la URL canónica pirate/crypto-trader y no ejecutes el ejemplo como una simulación supuesta
-- Coste: El coste depende del proveedor o la ruta. No requiere modelo; Gemini Exchange, comisiones y servicios tienen condiciones propias
-- Equipo: Preparación según la ruta elegida. Python 3; dependencias del proyecto; credenciales Gemini para consultas privadas
-**Repo:** https://github.com/pirate/crypto-trader
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/pirate/crypto-trader/blob/master/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un wrapper de exchange; Revisar una estrategia de umbral sobre datos de prueba
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee example.py y settings.py y distingue consulta de balance y envío de órdenes sin lanzar el ejemplo
-**Qué comprobar:** Puedes reconocer qué hace la estrategia y qué operaciones requieren autenticación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `daily-stock-analysis`
@@ -398,35 +310,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes distinguir ejecución simulada y conexiones reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `intellitrader`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=finanzas,binance,bitcoin,bot,crypto,cryptocurrencies,cryptocurrency,trading-bot
-
-**Qué es:** Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges.
-**Stack:** Distribución compatible; configuración de simulación; datos de mercado
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La simulación inicial no requiere claves; exchanges, datos e infraestructura pueden costar
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Virtual trading está documentado como valor inicial, pero revisa tu configuración y versión antes de iniciar una instalación existente
-- Coste: El coste depende del proveedor o la ruta. La simulación inicial no requiere claves; exchanges, datos e infraestructura pueden costar
-- Equipo: Preparación según la ruta elegida. Distribución compatible; configuración de simulación; datos de mercado
-**Repo:** https://github.com/jazzonaut/IntelliTrader
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/jazzonaut/IntelliTrader/blob/master/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar gestión de una cartera ficticia; Comparar señales sin enviar órdenes reales
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Mantén virtual trading activado y observa una operación virtual antes de configurar ninguna clave
-**Qué comprobar:** Puedes comprobar que el registro pertenece a la simulación
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
 ## `lumibot`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=cuant,framework,python
 
@@ -513,7 +396,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un ejemplo de backtest de la misma versión v2 y revisa su secuencia de eventos
 **Qué comprobar:** Puedes reproducir órdenes y fills simulados con configuración fija
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `backtrader`
 
 ## `open-sol-bot`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,blockchain,solana,telegram-bot,trader,transaction,python
@@ -606,36 +488,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes ver qué componentes están listos y cuáles impiden análisis u operaciones virtuales
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `py-clob-client`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
-
-**Qué es:** Cliente Python antiguo para la API de órdenes de Polymarket; está archivado y conviene revisar su sucesor.
-**Stack:** Navegador; código existente solo para planificar migración
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Leer el código no necesita modelo; el cliente ya no es una ruta funcional de operaciones
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Archivado y declarado no funcional por el autor; no se recomienda instalarlo para integraciones nuevas ni existentes
-- Coste: Sin pago a un modelo en la ruta básica. Leer el código no necesita modelo; el cliente ya no es una ruta funcional de operaciones
-- Equipo: Preparación según la ruta elegida. Navegador; código existente solo para planificar migración
-**Repo:** https://github.com/Polymarket/py-clob-client
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Planificar una migración de SDK; Comprender una integración histórica de Polymarket
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Identifica las llamadas antiguas de un ejemplo y compáralas con la documentación del sucesor oficial
-**Qué comprobar:** Puedes preparar una lista de cambios sin intentar conectar el cliente retirado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `py-sdk`
-
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
 
@@ -664,7 +516,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Enumera datos públicos de un mercado y revisa su esquema sin autenticar una wallet
 **Qué comprobar:** Puedes contrastar identificadores y datos con la fuente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `py-clob-client`
 
 ## `qlib`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=finanzas,algorithmic-trading,auto-quant,deep-learning,finance,fintech,investment,machine-learning
@@ -722,35 +573,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente
 **Qué comprobar:** Puedes separar datos del periodo, análisis visual y decisión generada
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
-## `stocks-analyst`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=finanzas,jupyter notebook
-
-**Qué es:** Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica.
-**Stack:** Python y utilidades del proyecto; archivos históricos; acceso permitido a fuentes
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita LLM; fuentes y descargas pueden tener límites y condiciones propias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La fuente puede conservar historia incompleta; no mezcles datos recopilados hoy con una supuesta disponibilidad histórica
-- Coste: Sin pago a un modelo en la ruta básica. No necesita LLM; fuentes y descargas pueden tener límites y condiciones propias
-- Equipo: Preparación según la ruta elegida. Python y utilidades del proyecto; archivos históricos; acceso permitido a fuentes
-**Repo:** https://github.com/omerdr/stocks
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar evaluación de recomendaciones públicas; Preparar un dataset temporal para análisis
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Examina el CSV histórico y reproduce una comparación entre recomendación y cotización posterior
-**Qué comprobar:** Puedes verificar fecha, horizonte y cálculo de la comparación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `tradingagents`

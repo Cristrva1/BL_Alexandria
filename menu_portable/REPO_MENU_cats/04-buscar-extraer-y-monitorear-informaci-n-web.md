@@ -32,7 +32,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes distinguir canales disponibles, autenticados y experimentales
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `last30days-skill`
-**Alternativas (elige una):** `snscrape`
 
 ## `archivebox`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,data,python,docker
@@ -303,7 +302,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Descarga una publicación propia y compara archivo, descripción y metadatos
 **Qué comprobar:** La carpeta contiene los medios y datos esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `snscrape`
 
 ## `jina-reader`
 role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=scraping,rag,typescript
@@ -465,36 +463,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crawl4ai`, `graphrag`
 **Alternativas (elige una):** `maxun`
 
-## `scrapely`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=scraping
-
-**Qué es:** Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales.
-**Stack:** Python compatible con dependencias antiguas; numpy; w3lib
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API ni modelo; solo entorno y recursos de ejecución
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La documentación menciona versiones antiguas de Python: verifica instalación actual antes de elegirlo para un proyecto nuevo
-- Coste: Sin pago a un modelo en la ruta básica. No requiere API ni modelo; solo entorno y recursos de ejecución
-- Equipo: Preparación según la ruta elegida. Python compatible con dependencias antiguas; numpy; w3lib
-**Repo:** https://github.com/scrapy/scrapely
-
-**Instalación** [+]:
-
-```
-pip install scrapely
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender extracción a partir de ejemplos; Estudiar plantillas de scraping sin LLM
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Anota nombre y precio de un producto y prueba la plantilla en una página similar
-**Qué comprobar:** Se extraen los campos en una segunda página de estructura parecida
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `scrapy`
-
 ## `scrapling`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=automation,scraping,python
 
@@ -555,7 +523,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un spider para una página propia con tres productos y exporta sus nombres
 **Qué comprobar:** El archivo de salida contiene exactamente los tres productos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `scrapely`, `crawlee-python`
+**Combina con:** `crawlee-python`
 
 ## `scrapydweb`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,dashboard,log-analysis,log-parsing,scrapy,scrapy-log-analysis,scrapy-visualization,scrapyd
@@ -616,37 +584,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Ves resultados agregados y puedes abrir su origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `gpt-researcher`, `open-webui`, `vane`
-
-## `snscrape`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,python
-
-**Qué es:** Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves.
-**Stack:** Python 3.8+; lxml y dependencias del sistema
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere modelo; servidores o proxies son gastos externos posibles
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Los sitios cambian y varios conectores pueden dejar de funcionar; esta revisión documental no verifica acceso vivo a cada red
-- Coste: Sin pago a un modelo en la ruta básica. No requiere modelo; servidores o proxies son gastos externos posibles
-- Equipo: Preparación según la ruta elegida. Python 3.8+; lxml y dependencias del sistema
-**Repo:** https://github.com/JustAnotherArchivist/snscrape
-
-**Instalación** [+]:
-
-```
-pip3 install snscrape
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar extracción de metadatos sociales; Evaluar disponibilidad de un conector antes de una investigación
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Consulta la ayuda del scraper elegido y prueba una consulta pública muy pequeña
-**Qué comprobar:** Puedes comprobar si el conector devuelve resultados actuales o falla
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `instaloader`
-**Alternativas (elige una):** `agent-reach`
 
 ## `vane`
 role=app · exec=local · setup=easy · mcp=False · prov=openai,local · tags=search,research,local,typescript

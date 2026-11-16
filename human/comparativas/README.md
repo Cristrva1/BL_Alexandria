@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -17,7 +17,7 @@
 ## 🕸️ Construir agentes y coordinar equipos de IA
 
 - [crewAI vs LangGraph](crewai-vs-langgraph.md)
-- [Flowise vs Sim](flowise-vs-sim.md)
+- [langflow vs Sim](langflow-vs-sim.md)
 - [LangGraph.js vs Mastra](langgraphjs-vs-mastra.md)
 
 ## 🕷️ Buscar, extraer y monitorear información web
@@ -65,8 +65,7 @@
 
 ## 🖼️ Generar y editar imágenes con IA
 
-- [FLUX vs stable-diffusion-webui](flux-vs-stable-diffusion-webui.md)
-- [Stable Diffusion WebUI Forge vs stable-diffusion-webui](sd-webui-forge-vs-stable-diffusion-webui.md)
+- [ComfyUI vs Stable Diffusion WebUI Forge](comfyui-vs-sd-webui-forge.md)
 
 ## 🎬 Editar, grabar y generar video
 
@@ -136,12 +135,11 @@
 ## 🖼️ Visión artificial, rostros y percepción
 
 - [Deep-Live-Cam vs FaceFusion](deep-live-cam-vs-facefusion.md)
-- [SAM 2 vs Segment Anything (SAM)](sam2-vs-segment-anything.md)
 
 ## 🎬 Audio, transcripción, voz y música
 
-- [Chatterbox vs Kokoro](chatterbox-vs-kokoro.md)
 - [faster-whisper vs whisper.cpp](faster-whisper-vs-whisper-cpp.md)
+- [Kokoro vs LuxTTS](kokoro-vs-luxtts.md)
 - [LiveKit Agents vs Pipecat](livekit-agents-vs-pipecat.md)
 
 ## 🎬 Video con código y agentes creativos

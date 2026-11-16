@@ -104,12 +104,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [GFPGAN](gfpgan.md) | 37.7k | Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados. |
-
 ## Enlaces
 
 - 🐙 GitHub: [xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)

@@ -109,7 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Open SWE](open-swe.md) | 11.2k | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
-| [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
 ## Enlaces
 

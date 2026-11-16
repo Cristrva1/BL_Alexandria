@@ -187,7 +187,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes recuperar contexto y enlaces que respaldan conclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `firecrawl`, `browser-use`
-**Alternativas (elige una):** `storm`, `vane`, `open-deep-research`
+**Alternativas (elige una):** `storm`, `vane`
 
 ## `hello-halo`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=asistentes,agent,typescript
@@ -277,7 +277,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Investiga una pregunta pequeña con Ollama y SearXNG y abre las fuentes citadas
 **Qué comprobar:** Puedes identificar buscador, modelo y evidencia utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `open-deep-research`
 
 ## `mercury-agent`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,chatbot,typescript
@@ -339,42 +338,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes ver tarea, sesión y resultado atribuibles al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ruflo`, `chatwoot`
-
-## `open-deep-research`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=research,python
-
-**Qué es:** Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP.
-**Stack:** Python y uv; modelo; buscador y claves según ruta
-**Acceso y costes:**
-- API de IA: API de IA opcional. Modelos y buscadores por consumo o ruta local Ollama enlazada por el autor; infraestructura separada
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Consumir herramientas MCP no convierte automáticamente este agente en un servidor MCP instalable en Claude Code o Codex
-- Coste: El coste depende del proveedor o la ruta. Modelos y buscadores por consumo o ruta local Ollama enlazada por el autor; infraestructura separada
-- Equipo: Preparación según la ruta elegida. Python y uv; modelo; buscador y claves según ruta
-**Repo:** https://github.com/langchain-ai/open_deep_research
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/langchain-ai/open_deep_research.git
-cd open_deep_research
-uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-uv sync
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar investigación con LangGraph; Comparar configuraciones de búsqueda
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Configura un tema acotado y revisa el plan antes de generar un informe completo
-**Qué comprobar:** Puedes comprobar consultas, fuentes y respuesta final
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`
-**Alternativas (elige una):** `local-deep-research`, `gpt-researcher`
 
 ## `openclaw`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript

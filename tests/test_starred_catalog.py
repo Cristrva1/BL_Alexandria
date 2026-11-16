@@ -13,9 +13,14 @@ def test_verified_stars_resolve_to_their_github_identity():
     snapshot_path = sorted((ROOT / "reports").glob("github-stars-*.json"))[-1]
     snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
     catalog = load_catalog(ROOT)
+    retired = {r["id"]: r for r in json.loads((ROOT / "data/retired.json").read_text(encoding="utf-8"))["repos"]}
     assert len(snapshot["stars"]) == snapshot["count"]
     assert len({star["github_id"] for star in snapshot["stars"]}) == snapshot["count"]
     for star in snapshot["stars"]:
+        if star["catalog_id"] in retired:
+            # Removed on purpose after review; the ledger keeps the same GitHub identity.
+            assert retired[star["catalog_id"]]["github_id"] == star["github_id"]
+            continue
         repo = catalog.get(star["catalog_id"])
         assert repo is not None, star["full_name"]
         assert repo["github_id"] == star["github_id"]
@@ -29,14 +34,18 @@ def test_catalog_does_not_duplicate_or_conflate_github_repositories():
     assert len({repo["gh"].lower() for repo in github}) == len(github)
     assert len({repo["github_id"] for repo in github}) == len(github)
     assert catalog.get("manim")["github_id"] != catalog.get("manim-community")["github_id"]
-    assert catalog.get("opencode")["github_id"] != catalog.get("opencode-legacy")["github_id"]
+    retired = {r["id"]: r for r in json.loads((ROOT / "data/retired.json").read_text(encoding="utf-8"))["repos"]}
+    assert catalog.get("opencode")["github_id"] != retired["opencode-legacy"]["github_id"]
 
 
 def test_new_star_cards_keep_verifiable_source_provenance():
     snapshot_path = sorted((ROOT / "reports").glob("github-stars-*.json"))[-1]
     snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
     catalog = load_catalog(ROOT)
+    retired = {r["id"] for r in json.loads((ROOT / "data/retired.json").read_text(encoding="utf-8"))["repos"]}
     for repo_id in snapshot["added_ids"]:
+        if repo_id in retired:
+            continue
         repo = catalog.get(repo_id)
         assert repo["sources"]["readme_blob_sha"]
         assert repo["sources"]["root_tree_sha"]

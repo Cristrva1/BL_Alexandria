@@ -99,7 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [OpenHands](openhands.md) | 93.5k | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
-| [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
 ## Enlaces
 

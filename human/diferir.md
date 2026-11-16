@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**86 repos.**
+**80 repos.**
 
 ## ⏳ Diferir
 
@@ -27,18 +27,14 @@ _Pesado: solo si llega a finalista._
 | [penpot](fichas/penpot.md) | 🎨 Diseñar y construir interfaces web | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |
 | [WebODM](fichas/webodm.md) | 📊 Dashboards, analítica y mapas | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
 | [Pythia](fichas/pythia.md) | 📊 Dashboards, analítica y mapas | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. |
-| [stable-diffusion-webui](fichas/stable-diffusion-webui.md) | 🖼️ Generar y editar imágenes con IA | Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. |
 | [ComfyUI](fichas/comfyui.md) | 🖼️ Generar y editar imágenes con IA | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 | [diffusers](fichas/diffusers.md) | 🖼️ Generar y editar imágenes con IA | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
-| [ControlNet](fichas/controlnet.md) | 🖼️ Generar y editar imágenes con IA | Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación. |
 | [InvokeAI](fichas/invokeai.md) | 🖼️ Generar y editar imágenes con IA | Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. |
 | [FLUX](fichas/flux.md) | 🖼️ Generar y editar imágenes con IA | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. |
-| [sd-webui-controlnet](fichas/sd-webui-controlnet.md) | 🖼️ Generar y editar imágenes con IA | Extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más. |
 | [ComfyUI_IPAdapter_plus](fichas/comfyui-ipadapter-plus.md) | 🖼️ Generar y editar imágenes con IA | Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad. |
 | [Wan2.2](fichas/wan2-2.md) | 🎬 Editar, grabar y generar video | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | 🎬 Editar, grabar y generar video | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
 | [WanGP](fichas/wan2gp.md) | 🎬 Editar, grabar y generar video | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
-| [LTX-Video](fichas/ltx-video.md) | 🎬 Editar, grabar y generar video | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. |
 | [paperless-ngx](fichas/paperless-ngx.md) | 📄 PDF, OCR y procesamiento de documentos | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. |
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | 📄 PDF, OCR y procesamiento de documentos | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
 | [olmOCR](fichas/olmocr.md) | 📄 PDF, OCR y procesamiento de documentos | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. |
@@ -70,7 +66,6 @@ _Pesado: solo si llega a finalista._
 | [coolify](fichas/coolify.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. |
 | [CasaOS](fichas/casaos.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
 | [NemoClaw](fichas/nemoclaw.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
-| [NeMo-Agent-Toolkit](fichas/nemo-agent-toolkit.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). |
 | [vLLM](fichas/vllm.md) | 🧬 Operar, evaluar y medir modelos de IA | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
 | [OmniRoute](fichas/omniroute.md) | 🧬 Operar, evaluar y medir modelos de IA | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
 | [SGLang](fichas/sglang.md) | 🧬 Operar, evaluar y medir modelos de IA | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
@@ -90,7 +85,6 @@ _Pesado: solo si llega a finalista._
 | [tfjs-models](fichas/tfjs-models.md) | 🖼️ Visión artificial, rostros y percepción | Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones. |
 | [mmpose](fichas/mmpose.md) | 🖼️ Visión artificial, rostros y percepción | Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano. |
 | [EasyMocap](fichas/easymocap.md) | 🖼️ Visión artificial, rostros y percepción | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. |
-| [VideoPose3D](fichas/videopose3d.md) | 🖼️ Visión artificial, rostros y percepción | Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video. |
 | [4D-Humans](fichas/4d-humans.md) | 🖼️ Visión artificial, rostros y percepción | Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video. |
 | [WHAM](fichas/wham.md) | 🖼️ Visión artificial, rostros y percepción | Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video. |
 | [VibeVoice](fichas/vibevoice.md) | 🎬 Audio, transcripción, voz y música | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. |

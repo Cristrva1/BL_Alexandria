@@ -105,7 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [AutoGen](autogen.md) | 61.8k | Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento. |
 | [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 | [Agno](agno.md) | 43.2k | Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. |
 | [MetaGPT](metagpt.md) | 71.3k | Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. |

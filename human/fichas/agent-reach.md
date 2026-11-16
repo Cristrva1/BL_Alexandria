@@ -94,12 +94,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [last30days](last30days-skill.md) | 67.7k | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. |
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [snscrape](snscrape.md) | 5.5k | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. |
-
 ## Enlaces
 
 - 🐙 GitHub: [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)

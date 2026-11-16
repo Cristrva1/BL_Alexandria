@@ -1,0 +1,529 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-15",
+  "note": "Repos retirados del catálogo por estar archivados, abandonados, sustituidos o inactivos. scripts/daily_stars.py no los propone de nuevo aunque sigan con star. Para recuperar uno, quítalo de esta lista y vuelve a revisarlo como incorporación nueva.",
+  "reasons": {
+    "archivado": "Archivado en GitHub por sus autores.",
+    "abandonado": "Sus autores anuncian que ya no se mantiene.",
+    "sustituido": "Lo reemplaza otro proyecto o una versión nueva.",
+    "inactivo": "Sin cambios en años y con poco valor actual."
+  },
+  "repos": [
+    {
+      "id": "flowise",
+      "gh": "FlowiseAI/Flowise",
+      "github_id": 621803253,
+      "name": "Flowise",
+      "cat": 3,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Repositorio archivado en GitHub en agosto de 2026; el README anuncia el archivo del proyecto.",
+      "last_commit": "2026-08-13",
+      "archived": true,
+      "replaced_by": [
+        "langflow",
+        "dify",
+        "sim"
+      ]
+    },
+    {
+      "id": "langchain-mcp-adapters",
+      "gh": "langchain-ai/langchain-mcp-adapters",
+      "github_id": 929158279,
+      "name": "LangChain MCP Adapters",
+      "cat": 5,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; el soporte MCP pasó al paquete principal de LangChain.",
+      "last_commit": "2026-09-11",
+      "archived": true,
+      "replaced_by": [
+        "langchain"
+      ]
+    },
+    {
+      "id": "langgraph-supervisor-py",
+      "gh": "langchain-ai/langgraph-supervisor-py",
+      "github_id": 927970248,
+      "name": "LangGraph Supervisor",
+      "cat": 3,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; LangChain recomienda el patrón supervisor con herramientas.",
+      "last_commit": "2026-07-15",
+      "archived": true,
+      "replaced_by": [
+        "langgraph"
+      ]
+    },
+    {
+      "id": "open-deep-research",
+      "gh": "langchain-ai/open_deep_research",
+      "github_id": 891642747,
+      "name": "open_deep_research",
+      "cat": 21,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Repositorio archivado en GitHub en agosto de 2026.",
+      "last_commit": "2026-08-10",
+      "archived": true,
+      "replaced_by": [
+        "local-deep-research",
+        "gpt-researcher"
+      ]
+    },
+    {
+      "id": "opencode-legacy",
+      "gh": "opencode-ai/opencode",
+      "github_id": 949662713,
+      "name": "opencode",
+      "cat": 20,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; el proyecto original continuó con el nombre Crush.",
+      "last_commit": "2025-09-18",
+      "archived": true,
+      "replaced_by": [
+        "opencode"
+      ]
+    },
+    {
+      "id": "openscreen",
+      "gh": "siddharthvaddem/openscreen",
+      "github_id": 1073433866,
+      "name": "OpenScreen",
+      "cat": 12,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado en octubre de 2026; el README remite a un fork comunitario.",
+      "last_commit": "2026-10-17",
+      "archived": true,
+      "replaced_by": [
+        "obs-studio"
+      ]
+    },
+    {
+      "id": "py-clob-client",
+      "gh": "Polymarket/py-clob-client",
+      "github_id": 455013779,
+      "name": "py-clob-client",
+      "cat": 14,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; el README indica que el cliente ya no funciona y remite al SDK unificado.",
+      "last_commit": "2026-05-25",
+      "archived": true,
+      "replaced_by": [
+        "py-sdk"
+      ]
+    },
+    {
+      "id": "supertonic",
+      "gh": "supertone-oss-archive/supertonic",
+      "github_id": 1098852899,
+      "name": "supertonic",
+      "cat": 29,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; desarrollo y soporte terminados según el README.",
+      "last_commit": "2026-09-09",
+      "archived": true,
+      "replaced_by": [
+        "kokoro"
+      ]
+    },
+    {
+      "id": "crypto-trader",
+      "gh": "pirate/crypto-trader",
+      "github_id": 45860798,
+      "name": "crypto-trader",
+      "cat": 14,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; último commit en 2019 y el README remite a ccxt.",
+      "last_commit": "2019-04-03",
+      "archived": true,
+      "replaced_by": [
+        "ccxt"
+      ]
+    },
+    {
+      "id": "videopose3d",
+      "gh": "facebookresearch/VideoPose3D",
+      "github_id": 153697606,
+      "name": "VideoPose3D",
+      "cat": 28,
+      "retired_at": "2026-11-15",
+      "reason": "archivado",
+      "evidence": "Archivado; último commit en 2020.",
+      "last_commit": "2020-08-05",
+      "archived": true,
+      "replaced_by": [
+        "mediapipe"
+      ]
+    },
+    {
+      "id": "autogen",
+      "gh": "microsoft/autogen",
+      "github_id": 680120071,
+      "name": "AutoGen",
+      "cat": 3,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "El README indica que el proyecto está archivado y sin mantenimiento.",
+      "last_commit": "2026-11-12",
+      "archived": false,
+      "replaced_by": [
+        "agent-framework",
+        "ag2"
+      ]
+    },
+    {
+      "id": "chatterbox",
+      "gh": "resemble-ai/chatterbox",
+      "github_id": 971241545,
+      "name": "Chatterbox",
+      "cat": 29,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "El README indica que desde agosto de 2026 es investigación retirada y sin mantenimiento.",
+      "last_commit": "2026-11-04",
+      "archived": false,
+      "replaced_by": [
+        "fish-speech",
+        "kokoro"
+      ]
+    },
+    {
+      "id": "continue",
+      "gh": "continuedev/continue",
+      "github_id": 644686905,
+      "name": "Continue",
+      "cat": 20,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "El README indica que el repositorio ya no se mantiene activamente y es de solo lectura.",
+      "last_commit": "2026-07-21",
+      "archived": false,
+      "replaced_by": [
+        "cline",
+        "aider"
+      ]
+    },
+    {
+      "id": "nemo-agent-toolkit",
+      "gh": "NVIDIA/NeMo-Agent-Toolkit",
+      "github_id": 944039567,
+      "name": "NeMo-Agent-Toolkit",
+      "cat": 22,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "El README anuncia su deprecación en octubre de 2026 y fin de vida a final de 2026.",
+      "last_commit": "2026-11-14",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "tts",
+      "gh": "coqui-ai/TTS",
+      "github_id": 265612440,
+      "name": "TTS",
+      "cat": 29,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "La empresa responsable cerró; sin commits en la rama principal desde febrero de 2024.",
+      "last_commit": "2024-02-10",
+      "archived": false,
+      "replaced_by": [
+        "kokoro",
+        "fish-speech"
+      ]
+    },
+    {
+      "id": "nanogpt",
+      "gh": "karpathy/nanoGPT",
+      "github_id": 582822129,
+      "name": "nanoGPT",
+      "cat": 19,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "El autor lo declara muy antiguo y obsoleto, y remite a nanochat.",
+      "last_commit": "2025-11-12",
+      "archived": false,
+      "replaced_by": [
+        "nanochat"
+      ]
+    },
+    {
+      "id": "semantic-kernel",
+      "gh": "microsoft/semantic-kernel",
+      "github_id": 607289185,
+      "name": "Semantic Kernel",
+      "cat": 3,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "El README presenta Microsoft Agent Framework como su sucesor.",
+      "last_commit": "2026-11-13",
+      "archived": false,
+      "replaced_by": [
+        "agent-framework"
+      ]
+    },
+    {
+      "id": "segment-anything",
+      "gh": "facebookresearch/segment-anything",
+      "github_id": 618058471,
+      "name": "Segment Anything (SAM)",
+      "cat": 28,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits desde septiembre de 2024; el README remite a SAM 2.",
+      "last_commit": "2024-09-18",
+      "archived": false,
+      "replaced_by": [
+        "sam2"
+      ]
+    },
+    {
+      "id": "swe-agent",
+      "gh": "SWE-agent/SWE-agent",
+      "github_id": 780737106,
+      "name": "SWE-agent",
+      "cat": 20,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "El README indica que mini-swe-agent lo ha sustituido.",
+      "last_commit": "2026-07-16",
+      "archived": false,
+      "replaced_by": [
+        "openhands"
+      ]
+    },
+    {
+      "id": "ltx-video",
+      "gh": "Lightricks/LTX-Video",
+      "github_id": 891705470,
+      "name": "LTX-Video",
+      "cat": 12,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "El README indica que LTX-2.5 sustituye a LTX-Video.",
+      "last_commit": "2026-11-02",
+      "archived": false,
+      "replaced_by": [
+        "wan2-2",
+        "hunyuanvideo"
+      ]
+    },
+    {
+      "id": "stable-diffusion-webui",
+      "gh": "AUTOMATIC1111/stable-diffusion-webui",
+      "github_id": 527591471,
+      "name": "stable-diffusion-webui",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin cambios en la rama principal desde julio de 2024.",
+      "last_commit": "2024-07-27",
+      "archived": false,
+      "replaced_by": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": "controlnet",
+      "gh": "lllyasviel/ControlNet",
+      "github_id": 595893961,
+      "name": "ControlNet",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Código original sin commits desde septiembre de 2023; integrado en las interfaces actuales.",
+      "last_commit": "2023-09-09",
+      "archived": false,
+      "replaced_by": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": "sd-webui-controlnet",
+      "gh": "Mikubill/sd-webui-controlnet",
+      "github_id": 600798098,
+      "name": "sd-webui-controlnet",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Extensión de AUTOMATIC1111 sin commits desde julio de 2024.",
+      "last_commit": "2024-07-25",
+      "archived": false,
+      "replaced_by": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": "backtrader",
+      "gh": "mementum/backtrader",
+      "github_id": 29050338,
+      "name": "backtrader",
+      "cat": 14,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits en la rama principal desde abril de 2023.",
+      "last_commit": "2023-04-19",
+      "archived": false,
+      "replaced_by": [
+        "nautilus-trader"
+      ]
+    },
+    {
+      "id": "snscrape",
+      "gh": "JustAnotherArchivist/snscrape",
+      "github_id": 148062266,
+      "name": "snscrape",
+      "cat": 4,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits desde junio de 2023; dejó de funcionar con X/Twitter.",
+      "last_commit": "2023-06-22",
+      "archived": false,
+      "replaced_by": [
+        "agent-reach"
+      ]
+    },
+    {
+      "id": "scrapely",
+      "gh": "scrapy/scrapely",
+      "github_id": 1632998,
+      "name": "scrapely",
+      "cat": 4,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits desde noviembre de 2019.",
+      "last_commit": "2019-11-28",
+      "archived": false,
+      "replaced_by": [
+        "scrapy",
+        "crawl4ai"
+      ]
+    },
+    {
+      "id": "gfpgan",
+      "gh": "TencentARC/GFPGAN",
+      "github_id": 349321229,
+      "name": "GFPGAN",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits en la rama principal desde abril de 2024.",
+      "last_commit": "2024-04-02",
+      "archived": false,
+      "replaced_by": [
+        "codeformer"
+      ]
+    },
+    {
+      "id": "stocks-analyst",
+      "gh": "omerdr/stocks",
+      "github_id": 38563384,
+      "name": "stocks",
+      "cat": 14,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Último commit en 2016.",
+      "last_commit": "2016-02-08",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "chartanalyst",
+      "gh": "huima58/chartAnalyst",
+      "github_id": 62604727,
+      "name": "chartAnalyst",
+      "cat": 14,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Último commit en 2016.",
+      "last_commit": "2016-07-07",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "bigdata",
+      "gh": "monsonlee/BigData",
+      "github_id": 74181851,
+      "name": "BigData",
+      "cat": 25,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Último commit en 2017.",
+      "last_commit": "2017-01-14",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "machinelearning",
+      "gh": "wepe/MachineLearning",
+      "github_id": 27595858,
+      "name": "MachineLearning",
+      "cat": 19,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Último commit en 2017.",
+      "last_commit": "2017-07-28",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "intellitrader",
+      "gh": "jazzonaut/IntelliTrader",
+      "github_id": 137500580,
+      "name": "IntelliTrader",
+      "cat": 14,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Bot de trading sin cambios desde 2018.",
+      "last_commit": "2018-07-23",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "data-science-ipython-notebooks",
+      "gh": "donnemartin/data-science-ipython-notebooks",
+      "github_id": 29749635,
+      "name": "data-science-ipython-notebooks",
+      "cat": 25,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Cuadernos sin cambios desde 2019.",
+      "last_commit": "2019-02-11",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "dataanalystportfolioprojects",
+      "gh": "PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects",
+      "github_id": 385140996,
+      "name": "DataAnalystPortfolioProjects",
+      "cat": 10,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Sin cambios desde 2022.",
+      "last_commit": "2022-02-25",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "youtube2webpage",
+      "gh": "obra/Youtube2Webpage",
+      "github_id": 611549512,
+      "name": "Youtube2Webpage",
+      "cat": 13,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Sin cambios desde 2023.",
+      "last_commit": "2023-12-01",
+      "archived": false,
+      "replaced_by": []
+    }
+  ]
+}

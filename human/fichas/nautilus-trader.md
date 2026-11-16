@@ -93,12 +93,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `cuant` `framework` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [backtrader](backtrader.md) | 23.7k | Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado. |
-
 ## Enlaces
 
 - 🐙 GitHub: [nautechsystems/nautilus_trader](https://github.com/nautechsystems/nautilus_trader)

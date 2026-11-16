@@ -109,7 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 | [Cline](cline.md) | 71.6k | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. |
-| [Continue](continue.md) | 36.5k | Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo. |
 
 ## Enlaces
 

@@ -4,7 +4,7 @@
 
 Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicación o negocio.
 
-29 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
+26 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
 
 ## Opciones para empezar
 
@@ -18,13 +18,11 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Motores de consulta, tablas y conjuntos de datos.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=datos&topic=datos-procesar)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=datos&topic=datos-procesar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [awesome-bigdata](../fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica |
-| [BigData](../fichas/bigdata.md) | Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación. | Sin clave propia de API de IA en la ruta básica |
-| [data-science-ipython-notebooks](../fichas/data-science-ipython-notebooks.md) | Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación. | Sin clave propia de API de IA en la ruta básica |
 | [DuckDB](../fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica |
 | [GlobalBuildingAtlas](../fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica |
 | [hudi](../fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica |
@@ -90,12 +88,11 @@ Medir visitas, uso y comportamiento de usuarios.
 
 Directorios, proyectos de práctica y hojas de ruta.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=datos&topic=datos-recursos)
+[Explorar 2 repos](../../docs/index.html#/explorar?area=datos&topic=datos-recursos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [awesome-dataviz](../fichas/awesome-dataviz.md) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | Sin clave propia de API de IA en la ruta básica |
 | [data-analyst-roadmap](../fichas/data-analyst-roadmap.md) | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. | Sin clave propia de API de IA en la ruta básica |
-| [DataAnalystPortfolioProjects](../fichas/dataanalystportfolioprojects.md) | Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

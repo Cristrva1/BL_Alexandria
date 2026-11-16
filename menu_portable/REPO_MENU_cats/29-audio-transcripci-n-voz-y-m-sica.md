@@ -68,37 +68,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `moviepy`, `remotion`, `ffmpeg`
 
-## `chatterbox`
-role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,python
-
-**Qué es:** Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026.
-**Stack:** Python; modelo; equipo compatible; texto y referencia autorizados
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Archivo MIT sin API obligatoria en ejecución propia; hardware aparte
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El README declara Chatterbox investigación retirada desde agosto de 2026, sin mantenimiento ni soporte; no se presenta como producto actual del autor
-- Coste: Sin pago a un modelo en la ruta básica. Archivo MIT sin API obligatoria en ejecución propia; hardware aparte
-- Equipo: Preparación según la ruta elegida. Python; modelo; equipo compatible; texto y referencia autorizados
-**Repo:** https://github.com/resemble-ai/chatterbox
-
-**Instalación** [+]:
-
-```
-pip install chatterbox-tts
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un modelo TTS histórico; Comparar generación expresiva en investigación
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee el aviso de retiro y prueba solo una muestra pequeña si necesitas reproducir el trabajo histórico
-**Qué comprobar:** Puedes identificar modelo y limitaciones del archivo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pipecat`
-**Alternativas (elige una):** `fish-speech`, `gpt-sovits`, `kokoro`, `luxtts`
-
 ## `cosyvoice`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 
@@ -282,7 +251,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige Drama 3 o S2-Pro y prueba una frase corta después de revisar sus condiciones
 **Qué comprobar:** Puedes distinguir la variante y su licencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Alternativas (elige una):** `chatterbox`, `cosyvoice`, `gpt-sovits`
+**Alternativas (elige una):** `cosyvoice`, `gpt-sovits`
 
 ## `gpt-sovits`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -317,7 +286,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar referencia, modelo y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `rvc`
-**Alternativas (elige una):** `chatterbox`, `fish-speech`
+**Alternativas (elige una):** `fish-speech`
 
 ## `index-tts`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -380,7 +349,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes localizar el archivo de audio y reconocer voz e idioma seleccionados
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pipecat`, `whisper-cpp`
-**Alternativas (elige una):** `chatterbox`, `tts`, `luxtts`, `edge-tts`
+**Alternativas (elige una):** `luxtts`, `edge-tts`
 
 ## `livekit-agents`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,google · tags=audio,agents,video,python
@@ -444,7 +413,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comparar texto, referencia y audio generado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `cosmos`, `comfyui`
-**Alternativas (elige una):** `kokoro`, `chatterbox`
+**Alternativas (elige una):** `kokoro`
 
 ## `melotts`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,model,python
@@ -690,67 +659,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `gpt-sovits`
 
-## `supertonic`
-role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audio
-
-**Qué es:** Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos.
-**Stack:** Python o runtime ONNX; pesos del archivo; voz compatible; texto de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Código de muestra MIT y pesos OpenRAIL-M; hardware y servicios hospedados tienen condiciones distintas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Repositorio archivado sin actualizaciones ni soporte; la ruta fija de voces locales no incluye automáticamente el pipeline de clonación del servicio
-- Coste: El coste depende del proveedor o la ruta. Código de muestra MIT y pesos OpenRAIL-M; hardware y servicios hospedados tienen condiciones distintas
-- Equipo: Preparación según la ruta elegida. Python o runtime ONNX; pesos del archivo; voz compatible; texto de prueba
-**Repo:** https://github.com/supertone-oss-archive/supertonic
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/supertone-oss-archive/supertonic/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Reproducir una narración local; Estudiar TTS ONNX en dispositivo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee el aviso de archivo y genera una frase con pesos locales descargados desde el archivo
-**Qué comprobar:** Puedes comprobar que no dependes del servicio anterior para la inferencia
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `moviepy`
-
-## `tts`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audio,python
-
-**Qué es:** Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.
-**Stack:** Python y versión compatibles; modelo TTS elegido; equipo; texto propio
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El código usa MPL-2.0 y cada peso puede tener licencia distinta; no se presume permiso comercial de XTTS por la licencia del toolkit
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Este es el repositorio Coqui TTS y sus dependencias históricas; comprueba compatibilidad actual y condiciones del modelo antes de usarlo en un producto
-- Coste: El coste depende del proveedor o la ruta. El código usa MPL-2.0 y cada peso puede tener licencia distinta; no se presume permiso comercial de XTTS por la licencia del toolkit
-- Equipo: Preparación según la ruta elegida. Python y versión compatibles; modelo TTS elegido; equipo; texto propio
-**Repo:** https://github.com/coqui-ai/TTS
-
-**Instalación** [+]:
-
-```
-pip install TTS
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar síntesis de voz local; Comparar modelos multilingües
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lista modelos y elige uno para sintetizar una frase antes de probar clonación
-**Qué comprobar:** Puedes identificar paquete, modelo y archivo de audio
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `moviepy`
-**Alternativas (elige una):** `kokoro`
-
 ## `vibevoice`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,audio,python
 
@@ -809,7 +717,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sintetiza un texto corto y revisa pronunciación y estabilidad antes de ampliar
 **Qué comprobar:** Puedes identificar modelo y parámetros de la prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tts`
 
 ## `whisper`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python

@@ -106,7 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [LLM Course](llm-course.md) | 85.1k | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. |
-| [nanoGPT](nanogpt.md) | 64.8k | Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat. |
 
 ## Enlaces
 

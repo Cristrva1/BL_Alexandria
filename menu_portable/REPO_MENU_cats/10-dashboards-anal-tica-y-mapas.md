@@ -122,35 +122,6 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Puedes explicar dato de entrada, cálculo y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `dataanalystportfolioprojects`
-role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=recursos,analytics,dashboard,data-visualization,excel,hadoop,hiveq,portfolio
-
-**Qué es:** Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive.
-**Stack:** Navegador; herramienta del proyecto elegido; datos públicos del ejemplo
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Leer ejemplos no requiere IA; Tableau u otras herramientas tienen sus condiciones y licencias
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Son proyectos de portafolio: revisa dependencias y datos de cada carpeta antes de intentar ejecutar el conjunto
-- Coste: Sin pago a un modelo en la ruta básica. Leer ejemplos no requiere IA; Tableau u otras herramientas tienen sus condiciones y licencias
-- Equipo: Preparación según la ruta elegida. Navegador; herramienta del proyecto elegido; datos públicos del ejemplo
-**Repo:** https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un portafolio de análisis; Diseñar un primer proyecto con datos públicos
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Selecciona un proyecto y reproduce una consulta o visualización pequeña
-**Qué comprobar:** Puedes explicar el cálculo y qué datos lo sostienen
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
 ## `echarts`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=dataviz,typescript
 

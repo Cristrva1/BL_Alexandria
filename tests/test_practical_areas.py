@@ -83,7 +83,7 @@ if(find('area=audiovisual&topic=av-voz&route=codex').length)throw Error('Voice t
 const web=ids('area=frontend&topic=web-componentes');
 if(!web.includes('tailwindcss')||!web.includes('ui')||web.includes('ffmpeg'))throw Error('Frontend components');
 const trading=ids('area=trading&topic=trading-backtesting');
-if(!trading.includes('qlib')||!trading.includes('backtrader')||trading.includes('openwa'))throw Error('Trading topic');
+if(!trading.includes('qlib')||!trading.includes('nautilus-trader')||trading.includes('openwa'))throw Error('Trading topic');
 const setup=ids('q='+encodeURIComponent('configuración Antigravity'));
 if(!setup.includes('stitch-skills')||JSON.stringify(setup.sort())!==JSON.stringify(ids('area=configurar-antigravity').sort()))throw Error('Natural setup search');
 const codexSetup=ids('q='+encodeURIComponent('configuración de Codex')).sort();

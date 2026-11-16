@@ -307,37 +307,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`
 
-## `langchain-mcp-adapters`
-role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,agents,python
-
-**Qué es:** Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph.
-**Stack:** Python; servidor MCP; modelo solo para un agente LLM
-**Acceso y costes:**
-- API de IA: API de IA opcional. El adaptador no requiere modelo; los ejemplos con agentes usan el proveedor configurado y pueden consumir API
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. El autor ha trasladado el desarrollo a langchain[mcp] bajo langchain.mcp; revisa la migración antes de iniciar algo nuevo
-- Coste: El coste depende del proveedor o la ruta. El adaptador no requiere modelo; los ejemplos con agentes usan el proveedor configurado y pueden consumir API
-- Equipo: Preparación según la ruta elegida. Python; servidor MCP; modelo solo para un agente LLM
-**Repo:** https://github.com/langchain-ai/langchain-mcp-adapters
-
-**Instalación** [+]:
-
-```
-pip install langchain-mcp-adapters
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Carga una herramienta add de un servidor MCP y llámala como herramienta LangChain
-**Qué comprobar:** Los argumentos y el resultado se conservan al cruzar el adaptador
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `langchain`
-**Alternativas (elige una):** `mcp-use`
-
 ## `mcp`
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp
 
@@ -549,7 +518,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes ver una respuesta y la interfaz asociada si el cliente admite MCP Apps
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp`, `awesome-mcp-servers`
-**Alternativas (elige una):** `langchain-mcp-adapters`, `mcp-typescript-sdk`
+**Alternativas (elige una):** `mcp-typescript-sdk`
 
 ## `playwright-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript

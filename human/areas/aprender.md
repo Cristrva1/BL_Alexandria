@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-98 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+96 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -58,7 +58,7 @@ Escribir mejores encargos y comprender instrucciones de agentes.
 
 Ejemplos de machine learning y entrenamiento desde cero.
 
-[Explorar 10 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-modelos)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-modelos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -67,9 +67,7 @@ Ejemplos de machine learning y entrenamiento desde cero.
 | [LLM Course](../fichas/llm-course.md) | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. | API de IA opcional |
 | [llm.c](../fichas/llm-c.md) | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. | Sin clave propia de API de IA en la ruta básica |
 | [LLMs from Scratch](../fichas/llms-from-scratch.md) | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. | API de IA opcional |
-| [MachineLearning](../fichas/machinelearning.md) | Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python. | Sin clave propia de API de IA en la ruta básica |
 | [nanochat](../fichas/nanochat.md) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | Sin clave propia de API de IA en la ruta básica |
-| [nanoGPT](../fichas/nanogpt.md) | Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat. | Sin clave propia de API de IA en la ruta básica |
 | [python-machine-learning-book](../fichas/python-machine-learning-book.md) | Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. | Sin clave propia de API de IA en la ruta básica |
 | [train-llm-from-scratch](../fichas/train-llm-from-scratch.md) | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. | Sin clave propia de API de IA en la ruta básica |
 

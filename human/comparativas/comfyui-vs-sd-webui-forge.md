@@ -1,25 +1,25 @@
 [🏠 Inicio](../README.md) · [⚖️ Comparativas](README.md)
 
-# FLUX vs stable-diffusion-webui
+# ComfyUI vs Stable Diffusion WebUI Forge
 
-| | [FLUX](../fichas/flux.md) | [stable-diffusion-webui](../fichas/stable-diffusion-webui.md) |
+| | [ComfyUI](../fichas/comfyui.md) | [Stable Diffusion WebUI Forge](../fichas/sd-webui-forge.md) |
 |---|---|---|
-| Qué hace | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. | Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. |
-| ⭐ Estrellas | 26.1k | 165k |
-| Elígelo si… | Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación | Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba |
+| Qué hace | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. | Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración. |
+| ⭐ Estrellas | 147k | 13.1k |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo | Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina |
 | Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
 | API de IA | API de IA opcional | Sin clave propia de API de IA en la ruta básica |
 | Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
-| Setup | 🔴 pesado | 🔴 pesado |
-| Licencia | Apache-2.0 | AGPL-3.0 |
+| Setup | 🔴 pesado | 🟡 medio |
+| Licencia | GPL-3.0 | AGPL-3.0 |
 | Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **FLUX** si Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación.
-- Elige **stable-diffusion-webui** si Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba.
+- Elige **ComfyUI** si Tu objetivo encaja con estos ejemplos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo.
+- Elige **Stable Diffusion WebUI Forge** si Tu objetivo encaja con estos ejemplos: Probar un checkpoint con gestión de memoria distinta; Comparar variantes de WebUI en una máquina.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

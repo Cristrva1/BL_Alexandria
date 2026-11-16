@@ -4,7 +4,7 @@
 
 Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo.
 
-18 repos · 4 secciones
+17 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -17,7 +17,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Infraestructura: sandboxes, herramientas y protocolos](#infraestructura-sandboxes-herramientas-y-protocolos) — 12 repos
+- [Infraestructura: sandboxes, herramientas y protocolos](#infraestructura-sandboxes-herramientas-y-protocolos) — 11 repos
 - [Dominios y recursos de infraestructura](#dominios-y-recursos-de-infraestructura) — 2 repos
 - [Redes y transporte](#redes-y-transporte) — 1 repos
 - [Alojamiento y backend](#alojamiento-y-backend) — 3 repos
@@ -34,7 +34,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [codex-chatgpt-web](../fichas/codex-chatgpt-web.md) | Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. | Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial | Sin clave propia de API de IA en la ruta básica |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Tu objetivo encaja con estos ejemplos: Probar herramientas de un agente en un contenedor; Consultar una interfaz de navegador aislada | Sin clave propia de API de IA en la ruta básica |
 | [Gemini Computer Use (preview)](../fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | Tu objetivo encaja con estos ejemplos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios | API de IA necesaria |
-| [NeMo-Agent-Toolkit](../fichas/nemo-agent-toolkit.md) | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). | Tu objetivo encaja con estos ejemplos: Perfilar un workflow de agentes; Exponer una herramienta propia por MCP | Depende de la ruta elegida |
 | [shepherd](../fichas/shepherd.md) | Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos. | Tu objetivo encaja con estos ejemplos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final | API de IA opcional |
 | [nodeterm](../fichas/nodeterm.md) | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. | Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees | API de IA opcional |
 | [Agent Protocol](../fichas/agent-protocol.md) | Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. | Tu objetivo encaja con estos ejemplos: Diseñar una API de agentes; Comparar protocolos antes de implementar | Sin clave propia de API de IA en la ruta básica |

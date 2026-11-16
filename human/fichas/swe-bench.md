@@ -96,12 +96,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `evaluation` `coding-agent` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
-
 ## Enlaces
 
 - 🐙 GitHub: [SWE-bench/SWE-bench](https://github.com/SWE-bench/SWE-bench)

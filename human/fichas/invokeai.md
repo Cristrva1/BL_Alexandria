@@ -92,7 +92,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
-| [ControlNet](controlnet.md) | 34.2k | Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación. |
 
 ## Alternativas (elige una)
 

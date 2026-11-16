@@ -100,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 | [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [AutoGen](autogen.md) | 61.8k | Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento. |
-
 ## Enlaces
 
 - 🐙 GitHub: [ag2ai/ag2](https://github.com/ag2ai/ag2)

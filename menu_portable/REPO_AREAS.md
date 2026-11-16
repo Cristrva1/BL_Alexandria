@@ -92,13 +92,13 @@ Encuentra las piezas para producir imágenes, audio y video: desde una voz o un 
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-`concat`, `davinci-resolve-mcp`, `ffmpeg`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `openscreen`, `palmier-pro`, `rea-video`, `video-use`, `videolingo`
+`concat`, `davinci-resolve-mcp`, `ffmpeg`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `palmier-pro`, `rea-video`, `video-use`, `videolingo`
 
 ### Video: generación con IA
 
 Crear clips y organizar flujos de video generativo.
 
-`ai-youtube-shorts-generator`, `hunyuanvideo`, `ltx-video`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
+`ai-youtube-shorts-generator`, `hunyuanvideo`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
 
 ### Video: código y motion graphics
 
@@ -110,7 +110,7 @@ Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-`chatterbox`, `cosyvoice`, `edge-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `melotts`, `omnivoice-studio`, `rvc`, `supertonic`, `tts`, `vibevoice`, `voxcpm`
+`cosyvoice`, `edge-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `melotts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
 
 ### Transcripción: audio a texto
 
@@ -134,7 +134,7 @@ Construir conversaciones por audio con procesamiento y respuesta en directo.
 
 Generar imágenes, ampliar, recortar o restaurar fotografías.
 
-`codeformer`, `comfyui`, `comfyui-ipadapter-plus`, `controlnet`, `creative-architect`, `diffusers`, `flux`, `fooocus`, `gfpgan`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `open-generative-ai`, `real-esrgan`, `rembg`, `sd-webui-controlnet`, `sd-webui-forge`, `stable-diffusion-webui`
+`codeformer`, `comfyui`, `comfyui-ipadapter-plus`, `creative-architect`, `diffusers`, `flux`, `fooocus`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `open-generative-ai`, `real-esrgan`, `rembg`, `sd-webui-forge`
 
 ### Avatares, rostros y personajes
 
@@ -168,19 +168,19 @@ Agentes que reúnen y analizan información financiera.
 
 Analizar datos históricos y evaluar estrategias cuantitativas.
 
-`backtrader`, `chartanalyst`, `finrl`, `lumibot`, `nautilus-trader`, `qlib`, `timesfm`, `vectorbt`
+`finrl`, `lumibot`, `nautilus-trader`, `qlib`, `timesfm`, `vectorbt`
 
 ### Bots, exchanges y conexiones
 
 Código y SDKs para conectar plataformas y automatizar operaciones.
 
-`binance-trader`, `ccxt`, `crypto-trader`, `freqtrade`, `hummingbot`, `intellitrader`, `open-sol-bot`, `py-clob-client`, `py-sdk`
+`binance-trader`, `ccxt`, `freqtrade`, `hummingbot`, `open-sol-bot`, `py-sdk`
 
 ### Aprendizaje y simulaciones
 
 Referencias y demostraciones para entender los sistemas de inversión.
 
-`company-pixel-office`, `machine-learning-for-trading`, `pixel-hedge-fund`, `pixelfund-ai`, `stocks-analyst`
+`company-pixel-office`, `machine-learning-for-trading`, `pixel-hedge-fund`, `pixelfund-ai`
 
 ## Automatización, negocios y marketing
 
@@ -254,13 +254,13 @@ Construye un agente, delega investigación o dale acceso a páginas y herramient
 
 Bases para construir agentes y coordinar sus tareas.
 
-`adk-python`, `ag2`, `agent-framework`, `agno`, `autogen`, `awesome-langgraph`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraph-supervisor-py`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `pydantic-ai`, `semantic-kernel`, `smolagents`, `vercel-ai`
+`adk-python`, `ag2`, `agent-framework`, `agno`, `awesome-langgraph`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `pydantic-ai`, `smolagents`, `vercel-ai`
 
 ### Constructores visuales de agentes
 
 Plataformas que permiten diseñar flujos de IA con una interfaz.
 
-`autogpt`, `dify`, `flowise`, `langflow`, `sim`
+`autogpt`, `dify`, `langflow`, `sim`
 
 ### Asistentes personales y autónomos
 
@@ -272,13 +272,13 @@ Asistentes listos o adaptables para tareas de varias etapas.
 
 Agentes y herramientas de búsqueda para investigar una pregunta.
 
-`agent-reach`, `archivebox`, `autoresearch`, `changedetection`, `deer-flow`, `gpt-researcher`, `last30days-skill`, `local-deep-research`, `open-deep-research`, `searxng`, `storm`, `vane`
+`agent-reach`, `archivebox`, `autoresearch`, `changedetection`, `deer-flow`, `gpt-researcher`, `last30days-skill`, `local-deep-research`, `searxng`, `storm`, `vane`
 
 ### Scraping y extracción web
 
 Convertir páginas y redes sociales en contenido o datos.
 
-`awesome-web-scraping`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `instaloader`, `jina-reader`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapely`, `scrapling`, `scrapy`, `scrapydweb`, `snscrape`, `yt-dlp`
+`awesome-web-scraping`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `instaloader`, `jina-reader`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapling`, `scrapy`, `scrapydweb`, `yt-dlp`
 
 ### Navegadores y automatización web
 
@@ -290,7 +290,7 @@ Abrir páginas e interactuar con interfaces reales.
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `langchain-mcp-adapters`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-typescript-sdk`, `mcp-use`, `n8n-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `treg`, `unity-mcp`
+`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-typescript-sdk`, `mcp-use`, `n8n-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `treg`, `unity-mcp`
 
 ## IA local, modelos y entrenamiento
 
@@ -334,7 +334,7 @@ Lee y transforma archivos, crea explicaciones visuales y construye búsquedas so
 
 Leer, convertir, firmar y organizar archivos.
 
-`docling`, `docuseal`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `unstructured`, `youtube2webpage`
+`docling`, `docuseal`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `unstructured`
 
 ### OCR y documentos escaneados
 
@@ -374,7 +374,7 @@ Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicaci
 
 Motores de consulta, tablas y conjuntos de datos.
 
-`awesome-bigdata`, `bigdata`, `data-science-ipython-notebooks`, `duckdb`, `globalbuildingatlas`, `hudi`, `marimo`, `polars`
+`awesome-bigdata`, `duckdb`, `globalbuildingatlas`, `hudi`, `marimo`, `polars`
 
 ### Notebooks y aplicaciones de datos
 
@@ -404,7 +404,7 @@ Medir visitas, uso y comportamiento de usuarios.
 
 Directorios, proyectos de práctica y hojas de ruta.
 
-`awesome-dataviz`, `data-analyst-roadmap`, `dataanalystportfolioprojects`
+`awesome-dataviz`, `data-analyst-roadmap`
 
 ## Productividad, notas y servicios personales
 
@@ -454,7 +454,7 @@ Elige un agente de código, comprende un proyecto y prepara su infraestructura, 
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-`aider`, `claude-code`, `cline`, `codex`, `continue`, `dsh-android`, `dsh-game-studio`, `dsh-ios`, `gemini-cli`, `goose`, `mimo-code`, `open-interpreter`, `open-swe`, `openclaude`, `opencode`, `opencode-legacy`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `swe-agent`, `t3code`
+`aider`, `claude-code`, `cline`, `codex`, `dsh-android`, `dsh-game-studio`, `dsh-ios`, `gemini-cli`, `goose`, `mimo-code`, `open-interpreter`, `open-swe`, `openclaude`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `t3code`
 
 ### Comprender y revisar código
 
@@ -466,7 +466,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Infraestructura, servicios y herramientas de operación.
 
-`agent-desktop`, `agent-protocol`, `casaos`, `claude-task-master`, `codex-chatgpt-web`, `composio`, `computer-use-preview`, `coolify`, `e2b`, `free-for-dev`, `freedomain`, `masterdnsvpn`, `nemo-agent-toolkit`, `nemoclaw`, `nodeterm`, `sandbox`, `shepherd`, `supabase`
+`agent-desktop`, `agent-protocol`, `casaos`, `claude-task-master`, `codex-chatgpt-web`, `composio`, `computer-use-preview`, `coolify`, `e2b`, `free-for-dev`, `freedomain`, `masterdnsvpn`, `nemoclaw`, `nodeterm`, `sandbox`, `shepherd`, `supabase`
 
 ### Evaluación, trazas y observabilidad
 
@@ -488,7 +488,7 @@ Detecta objetos o movimiento, interpreta imágenes y trabaja con información es
 
 Modelos y herramientas de visión por computador.
 
-`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam2`, `segment-anything`, `supervision`, `tfjs-models`, `ultralytics`, `videopose3d`, `wham`
+`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam2`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
 
 ### Rostros y análisis visual
 
@@ -528,7 +528,7 @@ Escribir mejores encargos y comprender instrucciones de agentes.
 
 Ejemplos de machine learning y entrenamiento desde cero.
 
-`awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `machinelearning`, `nanochat`, `nanogpt`, `python-machine-learning-book`, `train-llm-from-scratch`
+`awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `nanochat`, `python-machine-learning-book`, `train-llm-from-scratch`
 
 ### Métodos, plugins y catálogos de skills
 
@@ -562,7 +562,7 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
 Conectar documentación, repositorios y herramientas de navegador.
 
-`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `camofox-browser`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `dsh-qa`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `graphiti`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `lightpanda`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `n8n-mcp`, `nemo-agent-toolkit`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `palmier-pro`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `presenton`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `treg`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
+`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `camofox-browser`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `dsh-qa`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `graphiti`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `lightpanda`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `n8n-mcp`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `palmier-pro`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `presenton`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `treg`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
 
 ### Memoria y uso del contexto
 
@@ -614,7 +614,7 @@ Instrucciones y plugins documentados para Codex.
 
 Conectar documentación, GitHub y navegación al agente.
 
-`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `camofox-browser`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `dsh-qa`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `gpt-researcher`, `graphiti`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `n8n-mcp`, `nemo-agent-toolkit`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `palmier-pro`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `prompts-chat`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `ruflo`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `treg`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
+`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `camofox-browser`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `dsh-qa`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `gpt-researcher`, `graphiti`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `n8n-mcp`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `palmier-pro`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `prompts-chat`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `ruflo`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `treg`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
 
 ### Memoria, contexto y sesiones
 
@@ -660,7 +660,7 @@ Prompt Master incluye orientación para Antigravity; es un recurso de prompting,
 
 Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 
-`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `browser-use`, `camofox-browser`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `claude-task-master`, `cognee`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `dsh-qa`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `gpt-researcher`, `graphiti`, `haystack`, `headroom`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `lightpanda`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `n8n-mcp`, `nemo-agent-toolkit`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `palmier-pro`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `presenton`, `prompts-chat`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `ruflo`, `ruview`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `supermemory`, `tooljet`, `treg`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
+`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `browser-use`, `camofox-browser`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `claude-task-master`, `cognee`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `dsh-qa`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `gpt-researcher`, `graphiti`, `haystack`, `headroom`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `lightpanda`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `n8n-mcp`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `palmier-pro`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `presenton`, `prompts-chat`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `ruflo`, `ruview`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `supermemory`, `tooljet`, `treg`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
 
 ### Integraciones,proveedores y paneles
 

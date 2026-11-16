@@ -4,7 +4,7 @@
 
 Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.
 
-26 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
+24 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Modelos y herramientas de visión por computador.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=vision&topic=vision-detectar)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=vision&topic=vision-detectar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -31,11 +31,9 @@ Modelos y herramientas de visión por computador.
 | [OpenCV](../fichas/opencv.md) | La librería de visión por computadora de referencia, con miles de algoritmos. | Sin clave propia de API de IA en la ruta básica |
 | [openpose](../fichas/openpose.md) | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. | Sin clave propia de API de IA en la ruta básica |
 | [SAM 2](../fichas/sam2.md) | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
-| [Segment Anything (SAM)](../fichas/segment-anything.md) | Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja. | Sin clave propia de API de IA en la ruta básica |
 | [supervision](../fichas/supervision.md) | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. | API de IA opcional |
 | [tfjs-models](../fichas/tfjs-models.md) | Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [Ultralytics YOLO](../fichas/ultralytics.md) | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. | Sin clave propia de API de IA en la ruta básica |
-| [VideoPose3D](../fichas/videopose3d.md) | Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video. | Sin clave propia de API de IA en la ruta básica |
 | [WHAM](../fichas/wham.md) | Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video. | Sin clave propia de API de IA en la ruta básica |
 
 ### Rostros y análisis visual

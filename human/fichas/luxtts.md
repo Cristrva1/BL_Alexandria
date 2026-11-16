@@ -111,7 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-| [Chatterbox](chatterbox.md) | 27.8k | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. |
 
 ## Enlaces
 

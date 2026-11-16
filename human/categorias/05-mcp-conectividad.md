@@ -4,7 +4,7 @@
 
 SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.
 
-24 repos · 3 secciones
+23 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [SDKs y frameworks para crear MCP](#sdks-y-frameworks-para-crear-mcp) — 6 repos
+- [SDKs y frameworks para crear MCP](#sdks-y-frameworks-para-crear-mcp) — 5 repos
 - [Servidores MCP destacados](#servidores-mcp-destacados) — 13 repos
 - [Directorios, clientes y aprendizaje](#directorios-clientes-y-aprendizaje) — 5 repos
 
@@ -33,7 +33,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [MCP Python SDK](../fichas/mcp-python-sdk.md) | SDK oficial de Python para crear servidores y clientes del Model Context Protocol. | Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación | Sin clave propia de API de IA en la ruta básica |
 | [MCP Inspector](../fichas/mcp-inspector.md) | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | Tu objetivo encaja con estos ejemplos: Depurar un esquema MCP; Reproducir un fallo de una herramienta | Sin clave propia de API de IA en la ruta básica |
 | [mcp-use](../fichas/mcp-use.md) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | Tu objetivo encaja con estos ejemplos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia | API de IA opcional |
-| [LangChain MCP Adapters](../fichas/langchain-mcp-adapters.md) | Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph. | Tu objetivo encaja con estos ejemplos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio | API de IA opcional |
 
 ## Servidores MCP destacados
 

@@ -111,7 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Chatterbox](chatterbox.md) | 27.8k | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. |
 | [Fish Speech](fish-speech.md) | 33.7k | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. |
 
 ## Enlaces

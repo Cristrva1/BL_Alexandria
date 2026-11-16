@@ -50,7 +50,7 @@ Si te basta con dictado o transcripción sin respuesta hablada, usa solo Whisper
 
 - En lugar de [Pipecat](../fichas/pipecat.md): [LiveKit Agents](../fichas/livekit-agents.md)
 - En lugar de [faster-whisper](../fichas/faster-whisper.md): [whisper.cpp](../fichas/whisper-cpp.md)
-- En lugar de [Kokoro](../fichas/kokoro.md): [Chatterbox](../fichas/chatterbox.md), [TTS](../fichas/tts.md), [LuxTTS](../fichas/luxtts.md)
+- En lugar de [Kokoro](../fichas/kokoro.md): [LuxTTS](../fichas/luxtts.md), [edge-tts](../fichas/edge-tts.md)
 - En lugar de [LiveKit Agents](../fichas/livekit-agents.md): [Pipecat](../fichas/pipecat.md)
 
 ---

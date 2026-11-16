@@ -462,38 +462,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes detectar pérdida de seguimiento o zonas mal segmentadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `label-studio`, `supervision`
-**Alternativas (elige una):** `segment-anything`
-
-## `segment-anything`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,image,python
-
-**Qué es:** Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja.
-**Stack:** Python; PyTorch; checkpoint; imagen de prueba; memoria suficiente
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Inferencia propia sin API de pago; hardware y datos separados
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El README remite a SAM 2 como versión nueva; segmentar a partir de un punto no garantiza reconocer correctamente cualquier objeto
-- Coste: Sin pago a un modelo en la ruta básica. Inferencia propia sin API de pago; hardware y datos separados
-- Equipo: Preparación según la ruta elegida. Python; PyTorch; checkpoint; imagen de prueba; memoria suficiente
-**Repo:** https://github.com/facebookresearch/segment-anything
-
-**Instalación** [+]:
-
-```
-pip install git+https://github.com/facebookresearch/segment-anything.git
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Indica un punto sobre un objeto y revisa la máscara propuesta
-**Qué comprobar:** Puedes comparar el contorno con la imagen
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `label-studio`
-**Alternativas (elige una):** `sam2`
 
 ## `supervision`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,python
@@ -583,35 +551,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes contrastar la detección con el contenido real
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supervision`, `label-studio`
-
-## `videopose3d`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
-
-**Qué es:** Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.
-**Stack:** Python; PyTorch; keypoints 2D; checkpoint; datos compatibles
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Licencia CC BY-NC y datasets con condiciones propias; cómputo independiente
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Es investigación basada en trayectorias 2D y no una captura 3D métrica garantizada de cualquier video
-- Coste: El coste depende del proveedor o la ruta. Licencia CC BY-NC y datasets con condiciones propias; cómputo independiente
-- Equipo: Preparación según la ruta elegida. Python; PyTorch; keypoints 2D; checkpoint; datos compatibles
-**Repo:** https://github.com/facebookresearch/VideoPose3D
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/facebookresearch/VideoPose3D/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción de pose; Explorar movimiento a partir de keypoints
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Reconstruye la secuencia de ejemplo y compara la pose 3D con sus puntos 2D
-**Qué comprobar:** Puedes reconocer la entrada requerida y ambigüedades de profundidad
-Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `wham`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python

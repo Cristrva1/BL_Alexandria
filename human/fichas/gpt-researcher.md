@@ -100,7 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [STORM](storm.md) | 31.9k | Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
 | [Vane](vane.md) | 38.2k | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). |
-| [open_deep_research](open-deep-research.md) | 12.7k | Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP. |
 
 ## Enlaces
 

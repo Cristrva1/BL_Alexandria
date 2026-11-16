@@ -44,3 +44,9 @@ Revisa la fuente del proyecto, la fecha, la ruta de acceso y el contexto de cada
 Las técnicas, reglas y sitios útiles viven en `data/techniques.json`. Escribe resúmenes y pasos propios, enlaza fuentes públicas (repositorio o documentación oficial antes que una publicación social) y copia los comandos tal como aparecen en la fuente, con lugar de ejecución y efecto. Marca como no verificadas las cifras de terceros.
 
 `guide build` genera `human/TECNICAS.md`. El cargador rechaza enlaces privados o de Google Docs, áreas inexistentes, identificadores repetidos y comandos sin fuente.
+
+## Retirar repos obsoletos
+
+Retira un repo solo con evidencia: archivado en GitHub, aviso de abandono de sus autores, sustituto oficial o años sin cambios en la rama principal. Comprueba la fecha del último commit, no la del último push. Presenta la lista a la persona responsable antes de borrar.
+
+Al retirar, quita la ficha de `INDICE_IA.json` e `INDICE_IA.detalle.json`, limpia sus apariciones en `alt`, `combines_with`, áreas, objetivos y recetas, y regístrala en `data/retired.json` con motivo, evidencia, último commit y sustitutos del catálogo. El detector de stars no vuelve a proponer los repos de esa lista. El registro histórico de la revisión de 679 fichas no se modifica.

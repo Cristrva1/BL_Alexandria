@@ -14,6 +14,8 @@ Lee `data/reviews/daily-stars/latest.json`. Incluye la consulta paginada complet
 
 La identidad numérica de GitHub prevalece sobre el nombre: una transferencia o renombrado no crea otra ficha. Los nombres de repos iguales de propietarios distintos reciben ids distintos. Una URL reutilizada con otra identidad necesita conciliación. Excluye proyectos privados y nunca borres una ficha por haber perdido su star. No recrees `../Repositorios_Prueba`.
 
+Los repos retirados por estar archivados, abandonados, sustituidos o inactivos están en `data/retired.json`, con motivo, evidencia y sustitutos. El detector no los propone aunque sigan con star. No los reincorpores salvo que el usuario lo pida; en ese caso, quítalos de esa lista y revísalos como una incorporación nueva.
+
 Si no hay candidatos nuevos, termina sin commits ni despliegues vacíos. Si una corrida previa dejó una incorporación o publicación incompleta, retómala antes de declarar que no hay trabajo.
 
 ## Revisar cada candidato

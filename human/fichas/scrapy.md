@@ -97,7 +97,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [scrapely](scrapely.md) | 1.9k | Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. |
 | [crawlee-python](crawlee-python.md) | 9.7k | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. |
 
 ## Enlaces

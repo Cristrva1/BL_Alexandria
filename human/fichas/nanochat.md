@@ -95,12 +95,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [nanoGPT](nanogpt.md) | 64.8k | Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat. |
-
 ## Enlaces
 
 - 🐙 GitHub: [karpathy/nanochat](https://github.com/karpathy/nanochat)

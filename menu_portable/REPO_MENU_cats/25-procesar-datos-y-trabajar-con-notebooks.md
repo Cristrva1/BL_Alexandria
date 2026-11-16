@@ -33,35 +33,6 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `awesome-dataviz`
 
-## `bigdata`
-role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,java
-
-**Qué es:** Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación.
-**Stack:** Navegador; Java y ecosistema de datos según subproyecto; datos de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API de IA por su función básica; clústeres, servidores y almacenamiento tienen costes propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. El README raíz es mínimo; la estructura confirma proyectos separados y no una instalación integral guiada o compatibilidad con agentes de código
-- Coste: Sin pago a un modelo en la ruta básica. No requiere API de IA por su función básica; clústeres, servidores y almacenamiento tienen costes propios
-- Equipo: Preparación según la ruta elegida. Navegador; Java y ecosistema de datos según subproyecto; datos de prueba
-**Repo:** https://github.com/monsonlee/BigData
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar migración a Hive; Explorar ejemplos de Spark y HBase
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Elige Project3 y dibuja el traslado de datos de MySQL a Hive antes de preparar los servicios
-**Qué comprobar:** Puedes identificar origen, destino y transformación
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
 ## `dash`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,ui,python
 
@@ -91,36 +62,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar qué callback cambia la figura
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `streamlit`, `echarts`
-
-## `data-science-ipython-notebooks`
-role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=data,python
-
-**Qué es:** Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación.
-**Stack:** Navegador para lectura; Python y dependencias históricas para ejecutar
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Lectura libre; nube y cómputo opcionales tienen sus costes
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Colección histórica con tecnologías y versiones antiguas; listo para leer no equivale a ejecutable sin adaptación en un entorno actual
-- Coste: Sin pago a un modelo en la ruta básica. Lectura libre; nube y cómputo opcionales tienen sus costes
-- Equipo: Preparación según la ruta elegida. Navegador para lectura; Python y dependencias históricas para ejecutar
-**Repo:** https://github.com/donnemartin/data-science-ipython-notebooks
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender análisis exploratorio; Estudiar ejemplos de redes neuronales
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre un notebook introductorio de pandas y revisa entrada, transformación y tabla resultante
-**Qué comprobar:** Puedes seguir una operación antes de preparar un entorno
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dash`, `streamlit`
 
 ## `duckdb`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,analytics,cpp
@@ -332,5 +273,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una app con un control y una tabla de ejemplo y comprueba que la interacción actualiza la vista
 **Qué comprobar:** Puedes identificar script, estado y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dash`, `data-science-ipython-notebooks`
+**Combina con:** `dash`
 **Alternativas (elige una):** `gradio`

@@ -48,9 +48,13 @@ def test_docx_extraction_includes_table_links_and_separates_inline_paragraphs(tm
 def test_import_snapshot_resolves_to_sourced_distinct_catalog_entries():
     snapshot=json.loads((ROOT/"reports/document-import-2026-11-14.json").read_text(encoding="utf8"))
     catalog=load_catalog(ROOT)
+    retired={r["id"]:r for r in json.loads((ROOT/"data/retired.json").read_text(encoding="utf8"))["repos"]}
     assert snapshot["added_count"] == len(snapshot["added"])
     assert len({item["github_id"] for item in snapshot["added"]}) == len(snapshot["added"])
     for item in snapshot["added"]:
+        if item["id"] in retired:
+            assert retired[item["id"]]["github_id"] == item["github_id"]
+            continue
         repo=catalog.get(item["id"])
         assert repo["github_id"] == item["github_id"]
         assert repo["gh"] == item["full_name"]
@@ -69,6 +73,9 @@ def test_sensitive_access_and_archive_distinctions_survive_the_import():
     assert catalog.get("craft-anything")["access"]["codex"] == "unconfirmed"
     assert catalog.get("open-seo")["access"]["api"] == "not_required"
     assert "DataForSEO" in catalog.get("open-seo")["access"]["cost_note"]
-    assert catalog.get("py-clob-client")["status"] == "archived"
+    # The archived Polymarket client was retired; its ledger entry points to the live SDK.
+    retired={r["id"]:r for r in json.loads((ROOT/"data/retired.json").read_text(encoding="utf8"))["repos"]}
+    assert catalog.get("py-clob-client") is None
+    assert retired["py-clob-client"]["archived"] is True and retired["py-clob-client"]["replaced_by"] == ["py-sdk"]
     assert catalog.get("py-sdk").get("status") != "archived"
     assert catalog.get("pdf-craft")["access"]["local_model"] == "supported"

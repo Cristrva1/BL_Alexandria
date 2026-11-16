@@ -483,7 +483,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el notebook de tokenización y procesa una frase antes de pasar a entrenamiento
 **Qué comprobar:** Puedes inspeccionar tokens y reconstrucción del texto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanogpt`, `nanochat`
+**Combina con:** `nanochat`
 
 ## `llm-course`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,training,notebooks
@@ -544,7 +544,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lee el ejemplo GPT-2 y localiza las operaciones de forward y backward antes de compilar
 **Qué comprobar:** Puedes relacionar las operaciones matemáticas con el código C
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanogpt`
 
 ## `llms-from-scratch`
 role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=learning,training,python
@@ -575,7 +574,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes ver la conversión de texto a tokens y explicarla
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pytorch`
-**Alternativas (elige una):** `llm-course`, `nanogpt`
+**Alternativas (elige una):** `llm-course`
 
 ## `loop-engineering`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,skills,typescript
@@ -607,35 +606,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar la configuración y los avisos del diagnóstico
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `superpowers`
-
-## `machinelearning`
-role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,python
-
-**Qué es:** Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python.
-**Stack:** Python; entorno de dependencias históricas; datos de muestra
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Ejemplos locales sin API; modernizar dependencias requiere trabajo y cómputo
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Material histórico con artículos y APIs antiguas; no se ha verificado que funcione con versiones actuales
-- Coste: Sin pago a un modelo en la ruta básica. Ejemplos locales sin API; modernizar dependencias requiere trabajo y cómputo
-- Equipo: Preparación según la ruta elegida. Python; entorno de dependencias históricas; datos de muestra
-**Repo:** https://github.com/wepe/MachineLearning
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar modelos clásicos; Explorar ejemplos antiguos de Keras
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Lee un ejemplo de clasificación y localiza datos, entrenamiento y evaluación antes de adaptar dependencias
-**Qué comprobar:** Puedes explicar qué separa entrenamiento y prueba
-Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `mvanhorn`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference
@@ -694,38 +664,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara la ruta CPU para estudiar el código y lee speedrun antes de contratar un nodo GPU
 **Qué comprobar:** Distingues la instalación de dependencias del entrenamiento completo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanogpt`
-
-## `nanogpt`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
-
-**Qué es:** Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat.
-**Stack:** Python y PyTorch; texto de entrenamiento; CPU o GPU con configuración adecuada
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No exige API; el entrenamiento consume equipo, tiempo y posiblemente GPU de alquiler
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. El autor declara nanoGPT antiguo y obsoleto y remite a nanochat; consérvalo como referencia educativa y no como recomendación actual por defecto
-- Coste: Sin pago a un modelo en la ruta básica. No exige API; el entrenamiento consume equipo, tiempo y posiblemente GPU de alquiler
-- Equipo: Preparación según la ruta elegida. Python y PyTorch; texto de entrenamiento; CPU o GPU con configuración adecuada
-**Repo:** https://github.com/karpathy/nanoGPT
-
-**Instalación** [+]:
-
-```
-pip install torch numpy transformers datasets tiktoken wandb tqdm
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Comprender un GPT pequeño; Comparar el código histórico con nanochat
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Estudia el ejemplo Shakespeare y revisa cómo cambia la pérdida sin lanzar un entrenamiento grande
-**Qué comprobar:** Puedes localizar preparación de datos, entrenamiento y muestreo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanochat`
-**Alternativas (elige una):** `llms-from-scratch`
 
 ## `openai-cookbook`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python

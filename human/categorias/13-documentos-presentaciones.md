@@ -4,7 +4,7 @@
 
 Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.
 
-20 repos · 4 secciones
+19 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Conversión de documentos para IA](#conversión-de-documentos-para-ia) — 8 repos
+- [Conversión de documentos para IA](#conversión-de-documentos-para-ia) — 7 repos
 - [OCR](#ocr) — 6 repos
 - [Herramientas PDF](#herramientas-pdf) — 5 repos
 - [Gestión y archivo de documentos](#gestión-y-archivo-de-documentos) — 1 repos
@@ -35,7 +35,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Marker](../fichas/marker.md) | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. | Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda | API de IA opcional |
 | [PDF Inspector](../fichas/pdf-inspector.md) | Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. | Tu objetivo encaja con estos ejemplos: Decidir cuándo hace falta OCR; Extraer texto con posiciones de un PDF | Sin clave propia de API de IA en la ruta básica |
 | [Unstructured](../fichas/unstructured.md) | ETL open source que transforma documentos complejos en datos estructurados para LLM. | Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos | API de IA opcional |
-| [Youtube2Webpage](../fichas/youtube2webpage.md) | Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado. | Tu objetivo encaja con estos ejemplos: Crear una versión legible de un tutorial; Estudiar una clase propia con capturas y texto | Sin clave propia de API de IA en la ruta básica |
 
 ## OCR
 

@@ -107,7 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [crewAI](crewai.md) | 60.9k | Framework para orquestar "crews" de agentes con roles y tareas. |
 | [OpenAI Agents SDK](openai-agents-python.md) | 30.7k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
 | [Pydantic AI](pydantic-ai.md) | 21.2k | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. |
-| [LangGraph Supervisor](langgraph-supervisor-py.md) | 1.7k | Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph. |
 | [Agent Development Kit (ADK)](adk-python.md) | 22.2k | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. |
 
 ## Enlaces
