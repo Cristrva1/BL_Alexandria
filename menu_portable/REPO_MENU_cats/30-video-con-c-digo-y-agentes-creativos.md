@@ -89,6 +89,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una escena corta y revisa ritmo, títulos y sincronía antes de extender la pieza
 **Qué comprobar:** Puedes identificar decisiones de composición y duración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gsap`, `kokoro`, `claude-code`
 
 ## `hyperframes`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=video,agents,skills,typescript
@@ -212,7 +213,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una escena de ejemplo y cambia una forma o texto
 **Qué comprobar:** Puedes abrir la animación y localizar su código
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `kokoro`, `moviepy`, `ffmpeg`
+**Combina con:** `ffmpeg`, `kokoro`, `moviepy`
 **Alternativas (elige una):** `manim-community`
 
 ## `manim-community`
@@ -243,7 +244,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue SquareToCircle y modifica una propiedad para observar la transformación
 **Qué comprobar:** Puedes renderizar y relacionar el resultado con la escena Python
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`
+**Combina con:** `ffmpeg`, `kokoro`, `srt-whiteboard-animation`
 **Alternativas (elige una):** `manim`
 
 ## `mediabunny`
@@ -333,7 +334,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Recorta diez segundos y superpone un título usando el ejemplo v2
 **Qué comprobar:** El render conserva duración y audio y muestra el título
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `kokoro`, `comfyui`
+**Combina con:** `whisperx`, `kokoro`, `ffmpeg`
 **Alternativas (elige una):** `remotion`, `hyperframes`
 
 ## `openfilm`
@@ -395,7 +396,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empieza con material propio y narración Piper y comprueba guion, timeline y exportación
 **Qué comprobar:** Puedes revisar la procedencia de cada asset y abrir el MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`
+**Combina con:** `remotion`, `ffmpeg`, `kokoro`
 **Alternativas (elige una):** `remotion-superpowers`, `moneyprinterturbo`
 
 ## `papermorph`
@@ -426,6 +427,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transforma una página breve autorizada en una lección y comprueba texto, narración y controles
 **Qué comprobar:** Puedes contrastar el contenido con la página original
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `opencode`, `kokoro`
 
 ## `rea-video`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=programatico,agent-skills,ai-video,aigc-detection,claude-code,codex,ffmpeg,prompt-engineering
@@ -455,7 +457,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Analiza un clip corto y contrasta los planos del VIDEO.md con el original
 **Qué comprobar:** Puedes revisar tiempos, estructura e hipótesis de técnica
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`
+**Combina con:** `remotion`, `ffmpeg`, `claude-code`
 
 ## `remotion`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,typescript
@@ -485,7 +487,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una composición de prueba y comprueba que la cantidad de frames corresponde a su duración
 **Qué comprobar:** Puedes reproducir y exportar un clip con inicio y fin definidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-generative-ai`
+**Combina con:** `skills-remotion`, `remotion-superpowers`, `gsap`
 **Alternativas (elige una):** `moviepy`, `hyperframes`
 
 ## `remotion-superpowers`
@@ -517,7 +519,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta setup y prepara un guion corto con estimación de servicios antes de generar
 **Qué comprobar:** Puedes identificar claves, proveedores y resultado de cada etapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `skills-remotion`
+**Combina con:** `remotion`, `skills-remotion`, `claude-code`
 **Alternativas (elige una):** `openmontage`, `video-use`
 
 ## `skills-remotion`
@@ -548,7 +550,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una composición corta y comprueba frames y duración antes de añadir voz o servicios
 **Qué comprobar:** Puedes revisar la composición React y su render
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `remotion-superpowers`
+**Combina con:** `remotion`, `claude-code`, `remotion-superpowers`
 
 ## `srt-whiteboard-animation`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,python
@@ -578,6 +580,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Usa tres líneas de subtítulos y revisa el orden de trazos y la sincronización con cada frase
 **Qué comprobar:** Puedes comparar tiempos del SRT y salida MP4
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `whisperx`, `kokoro`, `manim-community`
 
 ## `video-shotcraft`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
@@ -636,7 +639,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un clip corto y revisa transcripción y plan de cortes antes de exportar
 **Qué comprobar:** Puedes contrastar el montaje con el material original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`, `claude-code`
+**Combina con:** `ffmpeg`, `claude-code`, `hermes-agent`
 **Alternativas (elige una):** `remotion-superpowers`
 
 ## `videofy-minimal`
@@ -668,5 +671,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un borrador desde un artículo de prueba y revisa guion, voz y fuentes antes de exportar
 **Qué comprobar:** Puedes identificar qué contenido se usó y verificar el video
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisper`
+**Combina con:** `remotion`, `whisper`, `ffmpeg`
 **Alternativas (elige una):** `moneyprinterturbo`

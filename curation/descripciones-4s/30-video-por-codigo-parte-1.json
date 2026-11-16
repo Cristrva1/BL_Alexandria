@@ -1,0 +1,499 @@
+{
+ "batch": "42-video-por-codigo-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "moviepy": {
+   "que_es": "MoviePy, librería Python para editar vídeo por código, de @Zulko. Licencia MIT. Es madura (~15k estrellas, v2.2.1); la v2.0 introdujo cambios incompatibles y la v1 ya no se mantiene.",
+   "que_hace": "Corta, concatena, inserta títulos, compone, aplica efectos y procesa audio y vídeo, incluido GIF. Es flexible pero más lenta que usar FFmpeg directamente.",
+   "como_lo_hace": "Requiere Python 3.9+ y se instala con `pip install moviepy`; usa FFmpeg (incluido vía imageio-ffmpeg o uno personalizado). Funciona en Windows, macOS y Linux.",
+   "combina_con": [
+    {
+     "id": "whisperx",
+     "motivo": "Subtítulos con marcas por palabra. (combinación por arquitectura)",
+     "orden_instalacion": "Genera SRT y móntalo con TextClip."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Narración local. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el audio y añádelo como AudioFileClip."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Motor de lectura y escritura.",
+     "orden_instalacion": "Viene vía imageio-ffmpeg o usa el del sistema."
+    }
+   ],
+   "notas": "Alternativas (elige una): remotion, hyperframes. Se quita comfyui de las combinaciones (sin relación directa).",
+   "fuentes": [
+    "https://github.com/Zulko/moviepy/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Zulko/moviepy",
+    "archived": false,
+    "pushed_at": "2026-08-26",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.2.1 (2025-05-21)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "hyperframes": {
+   "que_es": "HyperFrames, framework de HeyGen que convierte HTML, CSS, medios y animaciones navegables en vídeos MP4 deterministas, pensado para agentes. Licencia Apache-2.0, sin tarifas por render ni umbrales comerciales. Creado en marzo de 2026, ya tiene ~85k estrellas (v0.9.56).",
+   "que_hace": "Los agentes escriben HTML con animaciones (por ejemplo, GSAP) y HyperFrames los renderiza fotograma a fotograma a vídeo. Incluye un Studio de previsualización y skills para agentes.",
+   "como_lo_hace": "Requiere Node.js 22+ y FFmpeg. Las skills se instalan con `npx hyperframes skills update` o con el plugin de Claude Code (`claude plugin marketplace add heygen-com/hyperframes`).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial.",
+     "orden_instalacion": "Añade el marketplace e instala el plugin."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Animaciones navegables en las composiciones.",
+     "orden_instalacion": "Usa timelines GSAP en el HTML."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Narración local. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el audio y añádelo a la composición."
+    },
+    {
+     "id": "whisperx",
+     "motivo": "Subtítulos sincronizados. (combinación por arquitectura)",
+     "orden_instalacion": "Genera marcas por palabra."
+    }
+   ],
+   "notas": "Alternativas (elige una): remotion, moviepy. Su README compara explícitamente su licencia con la de Remotion.",
+   "fuentes": [
+    "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "heygen-com/hyperframes",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.9.56 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "skills-remotion": {
+   "que_es": "Remotion Agent Skills, skills oficiales de Remotion con buenas prácticas para que agentes de código (Claude Code, Codex, Kimi Code, Cursor) trabajen en proyectos Remotion. GitHub no detecta licencia. Tiene ~7.3k estrellas.",
+   "que_hace": "Define cómo crear composiciones, animaciones, audio, subtítulos y renders en Remotion, e incluye `/remotion-license` para consultar los términos de licencia y dónde comprarla.",
+   "como_lo_hace": "Se instala con `npx skills add remotion-dev/skills`. Algunas skills requieren versiones mínimas de Remotion.",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Framework al que aplican las skills.",
+     "orden_instalacion": "Crea el proyecto Remotion y añade las skills."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible.",
+     "orden_instalacion": "Instala las skills en el proyecto."
+    },
+    {
+     "id": "remotion-superpowers",
+     "motivo": "Plugin que se apoya en las skills oficiales.",
+     "orden_instalacion": "Instala las skills y luego el plugin."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Sin licencia detectada.",
+   "fuentes": [
+    "https://github.com/remotion-dev/skills/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "remotion-dev/skills",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "manim": {
+   "que_es": "ManimGL, motor de animación programática para vídeos matemáticos explicativos, creado por el autor de 3Blue1Brown (@3b1b). Licencia MIT. Tiene ~97k estrellas (v1.7.2); es la versión personal del autor, distinta de la edición comunitaria.",
+   "que_hace": "Anima con precisión fórmulas, gráficos y geometría desde Python, con previsualización interactiva en OpenGL.",
+   "como_lo_hace": "Requiere Python 3.10+ y se instala con `pip install manimgl` (ojo con el nombre del paquete), además de FFmpeg y LaTeX.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Renderizar el vídeo.",
+     "orden_instalacion": "Instala FFmpeg."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Narración de la explicación. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el audio y móntalo."
+    },
+    {
+     "id": "moviepy",
+     "motivo": "Montaje posterior. (combinación por arquitectura)",
+     "orden_instalacion": "Une escenas y audio."
+    }
+   ],
+   "notas": "Alternativas (elige una): manim-community. Para documentación y estabilidad, la comunidad recomienda ManimCE.",
+   "fuentes": [
+    "https://github.com/3b1b/manim/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "3b1b/manim",
+    "archived": false,
+    "pushed_at": "2026-09-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.7.2 (2024-12-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "remotion": {
+   "que_es": "Remotion, framework de React para crear vídeos por código, de remotion-dev. Licencia «Remotion License» especial (GitHub muestra NOASSERTION): exige licencia de empresa en algunos casos. Es maduro (~73k estrellas, v4.0.543).",
+   "que_hace": "Compone vídeos con componentes React, animaciones y medios, y los renderiza localmente, en servidor o en la nube (Lambda). Permite crear vídeos de forma agéntica, interactiva o programática.",
+   "como_lo_hace": "Se inicia con `npx create-video@latest` (Node.js). Tiene APIs de Node para renderizar en servidor; los términos están en remotion.dev/license.",
+   "combina_con": [
+    {
+     "id": "skills-remotion",
+     "motivo": "Skills oficiales para agentes.",
+     "orden_instalacion": "Añade las skills al proyecto."
+    },
+    {
+     "id": "remotion-superpowers",
+     "motivo": "Orquestación de voz, música y material.",
+     "orden_instalacion": "Instala el plugin en el agente."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Animaciones avanzadas dentro de composiciones. (combinación por arquitectura)",
+     "orden_instalacion": "Controla timelines por frame."
+    }
+   ],
+   "notas": "Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial. Se quita open-generative-ai de las combinaciones (sin integración documentada).",
+   "fuentes": [
+    "https://github.com/remotion-dev/remotion/blob/main/README.md",
+    "https://remotion.dev/license"
+   ],
+   "github": {
+    "name_with_owner": "remotion-dev/remotion",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v4.0.543 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "video-use": {
+   "que_es": "video-use, edición de vídeo con Claude Code y FFmpeg, de browser-use. Licencia MIT. Creado en abril de 2026, tiene ~31k estrellas y no cambia desde octubre de 2026.",
+   "que_hace": "Dejas el material en bruto en una carpeta, conversas con el agente y obtienes `final.mp4`: cortes, etalonaje automático (cadenas FFmpeg), subtítulos y montaje para cualquier tipo de contenido.",
+   "como_lo_hace": "Se instala con `uv sync` o `pip install -e .`, más FFmpeg (obligatorio) y yt-dlp (opcional). La transcripción usa ElevenLabs y requiere su clave de API. Funciona con Claude Code, Codex, Hermes, OpenClaw o cualquier agente con shell.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Motor de edición.",
+     "orden_instalacion": "Instala FFmpeg."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente principal documentado.",
+     "orden_instalacion": "Registra la skill en Claude Code."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Agente compatible.",
+     "orden_instalacion": "Registra la skill en Hermes."
+    }
+   ],
+   "notas": "Alternativas (elige una): remotion-superpowers. Depende de ElevenLabs (servicio de pago) para transcribir.",
+   "fuentes": [
+    "https://github.com/browser-use/video-use/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "browser-use/video-use",
+    "archived": false,
+    "pushed_at": "2026-10-08",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "videofy-minimal": {
+   "que_es": "Videofy Minimal, herramienta local para convertir artículos de noticias en vídeos cortos para pantallas de señalización digital, del grupo de medios Schibsted. Licencia Apache-2.0. Es de nicho (~650 estrellas) y no cambia desde marzo de 2026.",
+   "que_hace": "Obtiene el artículo, genera un guion corto, busca imágenes, produce narración y renderiza el vídeo con un flujo de revisión en una interfaz CMS.",
+   "como_lo_hace": "Requiere Python 3.12, Node, uv y FFmpeg (`brew install uv node ffmpeg`). Renderiza con Remotion, cuya licencia el README pide revisar para uso comercial; las fuentes Reuters o AP requieren credenciales.",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Motor de composición y render.",
+     "orden_instalacion": "Viene integrado; revisa la licencia."
+    },
+    {
+     "id": "whisper",
+     "motivo": "Transcripción o subtítulos. (combinación por arquitectura)",
+     "orden_instalacion": "Combina según el flujo."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesado de medios.",
+     "orden_instalacion": "Instala FFmpeg."
+    }
+   ],
+   "notas": "Alternativas (elige una): moneyprinterturbo.",
+   "fuentes": [
+    "https://github.com/schibsted/videofy_minimal/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "schibsted/videofy_minimal",
+    "archived": false,
+    "pushed_at": "2026-03-13",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "remotion-superpowers": {
+   "que_es": "Remotion Superpowers, plugin que conecta voz en off, música, efectos, material de archivo, imágenes y clips de IA, subtítulos y un ciclo de revisión con Remotion a través del agente, de DojoCodingLabs. Licencia MIT. Es de nicho (~170 estrellas, v2.3.0).",
+   "que_hace": "Convierte un prompt en un MP4 terminado orquestando servicios audiovisuales externos y las skills oficiales de Remotion y ElevenLabs.",
+   "como_lo_hace": "Requiere Node.js 22.18+ y las skills oficiales, que instala `/setup`. El servidor opcional de ElevenLabs usa uv y está deprecado en origen; varias funciones requieren claves de servicios externos.",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Motor de render.",
+     "orden_instalacion": "Crea el proyecto Remotion."
+    },
+    {
+     "id": "skills-remotion",
+     "motivo": "Skills oficiales sobre las que se construye.",
+     "orden_instalacion": "Las instala `/setup`."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente anfitrión del plugin. (combinación por arquitectura)",
+     "orden_instalacion": "Instala el plugin."
+    }
+   ],
+   "notas": "Alternativas (elige una): openmontage, video-use. Depende de servicios de pago.",
+   "fuentes": [
+    "https://github.com/DojoCodingLabs/remotion-superpowers/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "DojoCodingLabs/remotion-superpowers",
+    "archived": false,
+    "pushed_at": "2026-10-29",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "latest_release": "v2.3.0 (2026-10-27)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openmontage": {
+   "que_es": "OpenMontage, «sistema de producción de vídeo agéntico» open source, de OpenMontageInc (antes calesthio). Licencia AGPL-3.0. Creado en marzo de 2026, tiene ~81k estrellas, una cifra inusual; el README anuncia un nuevo producto en preparación.",
+   "que_hace": "Pipelines y herramientas para que un agente produzca vídeo de principio a fin: concepto, guion, plan de escenas, clips generados, banda sonora y composición en Remotion. Funciona con herramientas gratuitas o con proveedores de pago (Atlas Cloud, Veo, Kling y otros).",
+   "como_lo_hace": "Requiere Python 3.10+, FFmpeg y Node.js parcheado (22.23.4+, 24.22.1+ o 26.12.1+), y se instala con `make setup` o pip.",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Composición final.",
+     "orden_instalacion": "Viene integrado; revisa la licencia de Remotion."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesado de medios.",
+     "orden_instalacion": "Instala FFmpeg."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Narración local sin claves. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un TTS local."
+    }
+   ],
+   "notas": "Alternativas (elige una): remotion-superpowers, moneyprinterturbo.",
+   "fuentes": [
+    "https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "OpenMontageInc/OpenMontage",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "manim-community": {
+   "que_es": "Manim Community Edition (ManimCE), fork comunitario de 3b1b/manim para animaciones matemáticas explicativas. Doble licencia MIT (3blue1brown LLC y Manim Community Developers). Es madura y activa (~43k estrellas, v0.22.1).",
+   "que_hace": "Ofrece la API de Manim con documentación amplia, estabilidad, pruebas y una comunidad activa, orientada a usuarios generales.",
+   "como_lo_hace": "Requiere instalar dependencias previas según el sistema (y LaTeX para fórmulas) y se instala con `pip install manim` o uv. La guía por sistema operativo está en docs.manim.community.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Renderizar vídeo.",
+     "orden_instalacion": "Instala FFmpeg."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Narración. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el audio y móntalo."
+    },
+    {
+     "id": "srt-whiteboard-animation",
+     "motivo": "Otro estilo explicativo, de pizarra. (combinación por arquitectura)",
+     "orden_instalacion": "Elige según el formato."
+    }
+   ],
+   "notas": "Alternativas (elige una): manim.",
+   "fuentes": [
+    "https://github.com/ManimCommunity/manim/blob/main/README.md",
+    "https://docs.manim.community/"
+   ],
+   "github": {
+    "name_with_owner": "ManimCommunity/manim",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.22.1 (2026-10-27)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "rea-video": {
+   "que_es": "rea-video, herramienta y skill para hacer ingeniería inversa de vídeos plano a plano, de @JuneYaooo. Licencia Apache-2.0. Es muy reciente (octubre de 2026, ~9.3k estrellas, v0.1.0).",
+   "que_hace": "Descompone un vídeo plano a plano, determina si cada plano fue filmado, generado por IA o hecho con código, y explica cómo rehacerlo. Lo documenta en VIDEO.md, un formato abierto que los agentes leen por capas.",
+   "como_lo_hace": "Funciona dentro de Claude Code, Codex o cualquier agente con shell, que instala la CLI. Requiere FFmpeg y Python 3.10+; opcionalmente se conecta un modelo con vídeo (Gemini o Doubao).",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Rehacer planos hechos con código. (combinación por arquitectura)",
+     "orden_instalacion": "Usa el desglose como guion."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Extracción de planos.",
+     "orden_instalacion": "Instala FFmpeg."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente anfitrión documentado.",
+     "orden_instalacion": "Pide al agente que instale la CLI."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/JuneYaooo/rea-video/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "JuneYaooo/rea-video",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.1.0 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "huashu-motion": {
+   "que_es": "huashu-motion, skill para generar vídeos de lanzamiento de producto «de calidad comercial» con un agente, de @alchaincyf (花叔). Licencia MIT; incluye GSAP (licencia Standard de GSAP) y fuentes SIL OFL. Es reciente (octubre de 2026, ~2.8k estrellas, v0.5.0) y el README está en chino.",
+   "que_hace": "Con una frase al agente («hazme un vídeo de lanzamiento de 30 segundos») produce animaciones de producto, con locución opcional (voces del sistema de macOS o Kokoro para chino).",
+   "como_lo_hace": "Se usa desde Claude Code, Codex y otros runtimes de agentes. Kokoro requiere uv y Python 3.12 (~325 MB de modelo).",
+   "combina_con": [
+    {
+     "id": "gsap",
+     "motivo": "Biblioteca de animación incluida.",
+     "orden_instalacion": "Viene incluida."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Locución opcional en chino.",
+     "orden_instalacion": "Instálalo cuando el skill lo pida."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Runtime documentado.",
+     "orden_instalacion": "Instala la skill."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. GSAP no es OSI: revisa su licencia.",
+   "fuentes": [
+    "https://github.com/alchaincyf/huashu-motion/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "alchaincyf/huashu-motion",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v0.5.0 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "papermorph": {
+   "que_es": "Papermorph, skill para agentes que convierte libros de texto en lecciones web narradas e interactivas, historias en películas de títeres de papel y libros en documentales o cortos verticales, de @DozenTwelve. El código es MIT, con MathJax bajo Apache-2.0. Es reciente (octubre de 2026, ~1.7k estrellas).",
+   "que_hace": "Genera experiencias web animadas y narradas a partir de libros, con una estantería en vivo de ejemplos.",
+   "como_lo_hace": "Se instala con `npx skills add DozenTwelve/Papermorph --skill papermorph --agent claude-code` (o `--agent opencode`); un clon del repo ya incluye el comando para OpenCode.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente soportado.",
+     "orden_instalacion": "Instala la skill."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Agente soportado con comando incluido.",
+     "orden_instalacion": "Instala con `--agent opencode`."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Narración local. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un TTS si la skill lo admite."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/DozenTwelve/Papermorph/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "DozenTwelve/Papermorph",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "engine-v2.11 (2026-11-07)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "srt-whiteboard-animation": {
+   "que_es": "SRT 白板动画, skill que convierte subtítulos SRT en vídeos de pizarra dibujados a mano siguiendo la narración, de @geeklee. Licencia MIT. Tiene ~5.6k estrellas (v1.0.0) y el README está en chino.",
+   "que_hace": "Combina máscaras por zonas con trazos de pluma continuos: cada elemento aparece al ritmo de los subtítulos sobre papel color crema. Sirve para explicaciones, narraciones y cursos.",
+   "como_lo_hace": "Trae scripts Python con entorno virtual propio (`python scripts/prepare_env.py`) y un parser de SRT con duración objetivo (`parse_srt.py`).",
+   "combina_con": [
+    {
+     "id": "whisperx",
+     "motivo": "Generar el SRT desde audio. (combinación por arquitectura)",
+     "orden_instalacion": "Transcribe y exporta SRT."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "Locución del guion. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el audio."
+    },
+    {
+     "id": "manim-community",
+     "motivo": "Otro estilo explicativo. (combinación por arquitectura)",
+     "orden_instalacion": "Elige según el formato."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/geeklee/srt-whiteboard-animation/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "geeklee/srt-whiteboard-animation",
+    "archived": false,
+    "pushed_at": "2026-07-27",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.0.0 (2026-07-27)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Remotion, framework de React para crear vídeos por código, de remotion-dev. Licencia «Remotion License» especial (GitHub muestra NOASSERTION): exige licencia de empresa en algunos casos. Es maduro (~73k estrellas, v4.0.543).
+
+## ¿Qué hace?
+
+Compone vídeos con componentes React, animaciones y medios, y los renderiza localmente, en servidor o en la nube (Lambda). Permite crear vídeos de forma agéntica, interactiva o programática.
+
+## ¿Cómo lo hace?
+
+Se inicia con `npx create-video@latest` (Node.js). Tiene APIs de Node para renderizar en servidor; los términos están en remotion.dev/license.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Remotion Agent Skills](skills-remotion.md) | Skills oficiales para agentes. | Añade las skills al proyecto. |
+| [Remotion Superpowers](remotion-superpowers.md) | Orquestación de voz, música y material. | Instala el plugin en el agente. |
+| [GSAP](gsap.md) | Animaciones avanzadas dentro de composiciones. (combinación por arquitectura) | Controla timelines por frame. |
+
+**Notas:** Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial. Se quita open-generative-ai de las combinaciones (sin integración documentada).
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.543 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/remotion-dev/remotion/blob/main/README.md) · [2](https://remotion.dev/license)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La ruta con agentes utiliza las skills oficiales del proyecto compañero; no todo uso comercial es gratuito por estar disponible el código |
 | Coste | El coste depende del proveedor o la ruta. No requiere API de IA para renderizar; usa una licencia especial que exige licencia de empresa en ciertos casos y servicios externos aparte |
 | Equipo | Preparación según la ruta elegida. Node; proyecto React; recursos propios; licencia según uso; agente opcional |
-
-La ruta con agentes utiliza las skills oficiales del proyecto compañero; no todo uso comercial es gratuito por estar disponible el código
-
-## Qué puedes hacer con él
-
-Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos.
-
-## Por qué destaca
-
-Usos propuestos: Crear una plantilla de video con datos; Preparar títulos animados.
-
-## Cómo funciona
 
 La ruta con agentes utiliza las skills oficiales del proyecto compañero; no todo uso comercial es gratuito por estar disponible el código
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; proyecto React; recursos propios; licencia según uso; agente opcional
 - **Etiquetas:** `video` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Estudio de imagen y video con servicios remotos MuAPI y rutas locales de escritorio mediante sd.cpp o Wan2GP. |
 
 ## Alternativas (elige una)
 

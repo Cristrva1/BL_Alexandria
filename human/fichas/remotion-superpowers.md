@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Remotion Superpowers, plugin que conecta voz en off, música, efectos, material de archivo, imágenes y clips de IA, subtítulos y un ciclo de revisión con Remotion a través del agente, de DojoCodingLabs. Licencia MIT. Es de nicho (~170 estrellas, v2.3.0).
+
+## ¿Qué hace?
+
+Convierte un prompt en un MP4 terminado orquestando servicios audiovisuales externos y las skills oficiales de Remotion y ElevenLabs.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 22.18+ y las skills oficiales, que instala `/setup`. El servidor opcional de ElevenLabs usa uv y está deprecado en origen; varias funciones requieren claves de servicios externos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Motor de render. | Crea el proyecto Remotion. |
+| [Remotion Agent Skills](skills-remotion.md) | Skills oficiales sobre las que se construye. | Las instala `/setup`. |
+| [Claude Code](claude-code.md) | Agente anfitrión del plugin. (combinación por arquitectura) | Instala el plugin. |
+
+**Notas:** Alternativas (elige una): openmontage, video-use. Depende de servicios de pago.
+
+Estado en GitHub: activo · último push 2026-10-29 · última versión publicada v2.3.0 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DojoCodingLabs/remotion-superpowers/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Las captions pueden usar Whisper local pero el conjunto no es enteramente local; hooks y subagentes son extras de Claude Code y no se heredan en todos los hosts |
 | Coste | Consumo de APIs o servicios. ElevenLabs, KIE y TwelveLabs aparecen como claves necesarias del flujo; modelos, Remotion y agente tienen condiciones distintas |
 | Equipo | Preparación según la ruta elegida. Node 22.18+; Remotion; skills oficiales; claves de medios; uv para MCP opcional |
-
-Las captions pueden usar Whisper local pero el conjunto no es enteramente local; hooks y subagentes son extras de Claude Code y no se heredan en todos los hosts
-
-## Qué puedes hacer con él
-
-Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un video narrado; Combinar clips y subtítulos.
-
-## Cómo funciona
 
 Las captions pueden usar Whisper local pero el conjunto no es enteramente local; hooks y subagentes son extras de Claude Code y no se heredan en todos los hosts
 
@@ -96,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22.18+; Remotion; skills oficiales; claves de medios; uv para MCP opcional
 - **Etiquetas:** `video` `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [remotion](remotion.md) | 73.2k | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
-| [Remotion Agent Skills](skills-remotion.md) | 7.1k | Skills oficiales de Remotion para que tu agente de código cree videos con React. |
 
 ## Alternativas (elige una)
 

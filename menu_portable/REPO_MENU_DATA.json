@@ -83502,7 +83502,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una presentación de producto; Explorar estilos de motion graphics",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "gsap",
+        "kokoro",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -83985,9 +83989,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar una transformación matemática; Preparar una animación geométrica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ffmpeg",
         "kokoro",
-        "moviepy",
-        "ffmpeg"
+        "moviepy"
       ],
       "alt": [
         "manim-community"
@@ -84106,7 +84110,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una explicación matemática; Crear una animación de geometría",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ffmpeg"
+        "ffmpeg",
+        "kokoro",
+        "srt-whiteboard-animation"
       ],
       "alt": [
         "manim"
@@ -84457,7 +84463,7 @@
       "combines_with": [
         "whisperx",
         "kokoro",
-        "comfyui"
+        "ffmpeg"
       ],
       "alt": [
         "remotion",
@@ -84701,7 +84707,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un video con recursos locales; Comparar un pipeline con servicios opcionales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "remotion"
+        "remotion",
+        "ffmpeg",
+        "kokoro"
       ],
       "alt": [
         "remotion-superpowers",
@@ -84823,7 +84831,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una lección animada; Explorar una historia interactiva",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "opencode",
+        "kokoro"
+      ],
       "alt": []
     },
     {
@@ -84946,7 +84958,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "remotion"
+        "remotion",
+        "ffmpeg",
+        "claude-code"
       ],
       "alt": []
     },
@@ -85066,7 +85080,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una plantilla de video con datos; Preparar títulos animados",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-generative-ai"
+        "skills-remotion",
+        "remotion-superpowers",
+        "gsap"
       ],
       "alt": [
         "moviepy",
@@ -85191,7 +85207,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "remotion",
-        "skills-remotion"
+        "skills-remotion",
+        "claude-code"
       ],
       "alt": [
         "openmontage",
@@ -85314,6 +85331,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "remotion",
+        "claude-code",
         "remotion-superpowers"
       ],
       "alt": []
@@ -85428,7 +85446,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una explicación de pizarra; Prototipar una secuencia narrada",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "whisperx",
+        "kokoro",
+        "manim-community"
+      ],
       "alt": []
     },
     {
@@ -85665,7 +85687,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ffmpeg",
-        "claude-code"
+        "claude-code",
+        "hermes-agent"
       ],
       "alt": [
         "remotion-superpowers"
@@ -85783,7 +85806,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una noticia para señalización; Probar una pieza informativa breve",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisper"
+        "remotion",
+        "whisper",
+        "ffmpeg"
       ],
       "alt": [
         "moneyprinterturbo"

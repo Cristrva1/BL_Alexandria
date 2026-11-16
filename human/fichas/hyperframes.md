@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+HyperFrames, framework de HeyGen que convierte HTML, CSS, medios y animaciones navegables en vídeos MP4 deterministas, pensado para agentes. Licencia Apache-2.0, sin tarifas por render ni umbrales comerciales. Creado en marzo de 2026, ya tiene ~85k estrellas (v0.9.56).
+
+## ¿Qué hace?
+
+Los agentes escriben HTML con animaciones (por ejemplo, GSAP) y HyperFrames los renderiza fotograma a fotograma a vídeo. Incluye un Studio de previsualización y skills para agentes.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js 22+ y FFmpeg. Las skills se instalan con `npx hyperframes skills update` o con el plugin de Claude Code (`claude plugin marketplace add heygen-com/hyperframes`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial. | Añade el marketplace e instala el plugin. |
+| [GSAP](gsap.md) | Animaciones navegables en las composiciones. | Usa timelines GSAP en el HTML. |
+| [Kokoro](kokoro.md) | Narración local. (combinación por arquitectura) | Genera el audio y añádelo a la composición. |
+| [whisperX](whisperx.md) | Subtítulos sincronizados. (combinación por arquitectura) | Genera marcas por palabra. |
+
+**Notas:** Alternativas (elige una): remotion, moviepy. Su README compara explícitamente su licencia con la de Remotion.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.56 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/heygen-com/hyperframes/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los skills deben coincidir con la versión del CLI; el núcleo basta para empezar y no es necesario instalar todo el catálogo de extensiones |
 | Coste | El coste depende del proveedor o la ruta. El render local Apache no cobra por render; el agente y generaciones o planes Pro usan recursos separados |
 | Equipo | Preparación según la ruta elegida. Node 22+; FFmpeg; composición pequeña; agente opcional |
-
-Los skills deben coincidir con la versión del CLI; el núcleo basta para empezar y no es necesario instalar todo el catálogo de extensiones
-
-## Qué puedes hacer con él
-
-Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un video explicativo por código; Crear una pieza de presentación con HTML.
-
-## Cómo funciona
 
 Los skills deben coincidir con la versión del CLI; el núcleo basta para empezar y no es necesario instalar todo el catálogo de extensiones
 
@@ -94,15 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22+; FFmpeg; composición pequeña; agente opcional
 - **Etiquetas:** `video` `agents` `skills` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [GSAP](gsap.md) | 30.6k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
-| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 
