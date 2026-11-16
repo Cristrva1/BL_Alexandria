@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Gateway de API de WhatsApp de código abierto (MIT) y autoalojado, creado en 2026 y con versiones muy frecuentes. Es un proyecto comunitario no oficial que se conecta a WhatsApp mediante clientes de ingeniería inversa, no mediante la Cloud API de Meta.
+
+## ¿Qué hace?
+
+Gestiona varias sesiones de WhatsApp con API REST, webhooks y un panel React para sesiones, webhooks y claves de API. Permite claves limitadas a ciertas sesiones o chats, útil para dar a un agente de IA acceso solo a algunos grupos. Ofrece plugins oficiales para Chatwoot y Typebot, nodos comunitarios para n8n y un servidor MCP opcional con 26 herramientas de solo lectura por defecto.
+
+## ¿Cómo lo hace?
+
+Backend NestJS en TypeScript con arquitectura de adaptadores: base de datos SQLite o PostgreSQL, almacenamiento de medios local o S3 y Redis opcional para colas, límites y WebSocket, todo elegido por configuración. Puede usar dos motores: `whatsapp-web.js` (Chromium sin interfaz, menor riesgo de bloqueo, 300–500 MB por sesión) o `baileys` (WebSocket directo, 30–80 MB por sesión, más fácil de detectar). Se despliega con Docker; el MCP se activa con `MCP_ENABLED=true` en `POST /mcp` del mismo puerto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [chatwoot](chatwoot.md) | Plugin oficial de OpenWA: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot. | Chatwoot primero; luego instala y configura el plugin desde OpenWA-plugins. |
+| [Typebot](typebot.md) | Plugin oficial para responder con flujos conversacionales visuales de Typebot. | Typebot con el bot publicado; después activa el plugin en OpenWA. |
+| [Claude Code](claude-code.md) | El servidor MCP de OpenWA permite que un agente lea sesiones y mensajes con una clave restringida a ciertos chats. | Activa `MCP_ENABLED=true`, crea una clave limitada y registra el endpoint `/mcp` en el agente. |
+
+**Notas:** Riesgo de bloqueo: no envíes mensajes en frío a números que nunca te escribieron y usa destinatarios que hayan dado su consentimiento. Con S3, el script de respaldo no copia el bucket.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.30.3 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rmyndharis/OpenWA/blob/main/README.md) · [2](https://github.com/rmyndharis/OpenWA-plugins)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte |
 | Coste | El coste depende del proveedor o la ruta. El gateway no requiere modelo; hosting y servicios conectados tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Docker; cuenta y número propios; configuración de autenticación y persistencia |
-
-Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte
-
-## Qué puedes hacer con él
-
-Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar una integración de mensajería; Consultar estados desde un agente MCP.
-
-## Cómo funciona
 
 Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte
 
@@ -100,13 +114,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; cuenta y número propios; configuración de autenticación y persistencia
 - **Etiquetas:** `whatsapp` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
 
 ## Enlaces
 

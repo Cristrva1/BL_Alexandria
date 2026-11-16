@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Proyecto de Mozilla Builders, renovado por Mozilla.ai, para distribuir y ejecutar LLM como un solo archivo ejecutable. El proyecto es Apache 2.0 y sus cambios a llama.cpp y whisper.cpp son MIT; desde la versión 0.10 usa un nuevo sistema de compilación más alineado con llama.cpp.
+
+## ¿Qué hace?
+
+Empaqueta un modelo y su motor en un «llamafile» que se ejecuta sin instalación en la mayoría de sistemas operativos y arquitecturas de CPU. Incluye whisperfile, un ejecutable único para transcripción de voz basado en whisper.cpp. Útil para repartir un modelo a usuarios no técnicos o ejecutarlo en equipos sin permisos de instalación.
+
+## ¿Cómo lo hace?
+
+Combina llama.cpp con Cosmopolitan Libc para producir un binario portátil. Se descarga un llamafile precompilado de Hugging Face, se marca como ejecutable y se ejecuta; en Windows hay que añadir `.exe` y solo funcionan ejecutables de menos de 4 GB (para modelos mayores se usa el binario llamafile con pesos externos). Las versiones 0.10 pueden carecer de funciones de la experiencia «clásica» 0.9, que sigue disponible en las releases.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Open WebUI](open-webui.md) | Interfaz de chat sobre el servidor local del llamafile (combinación por arquitectura; [DATO NO VERIFICADO: API compatible con OpenAI en la serie 0.10]). | Arranca el llamafile en modo servidor y registra su URL en Open WebUI; vigila el puerto 8080. |
+| [AnythingLLM](anything-llm.md) | Usar el llamafile como LLM de un espacio de documentos (combinación por arquitectura, vía endpoint compatible con OpenAI). | Llamafile en marcha; configúralo como proveedor genérico OpenAI en AnythingLLM. |
+| [LibreChat](librechat.md) | Endpoint personalizado en LibreChat (combinación por arquitectura). | Igual que arriba. |
+
+**Notas:** Alternativas (elige una como motor principal): ollama, llama-cpp.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada 0.10.6 (2026-09-15) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mozilla-ai/llamafile/blob/main/README.md) · [2](https://docs.mozilla.ai/llamafile)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El README separa permisos de ejecución Unix y pasos por sistema; no asumas que cualquier archivo grande funciona igual en Windows |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API remota; el ejecutable contiene pesos con su propia licencia y consume recursos locales |
 | Equipo | Preparación según la ruta elegida. Ejecutable oficial del modelo; RAM y disco; instrucciones de tu sistema |
-
-El README separa permisos de ejecución Unix y pasos por sistema; no asumas que cualquier archivo grande funciona igual en Windows
-
-## Qué puedes hacer con él
-
-Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo.
-
-## Por qué destaca
-
-Usos propuestos: Distribuir una demo local de un LLM; Probar inferencia sin montar un servidor complejo.
-
-## Cómo funciona
 
 El README separa permisos de ejecución Unix y pasos por sistema; no asumas que cualquier archivo grande funciona igual en Windows
 
@@ -93,6 +107,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 | [llama.cpp](llama-cpp.md) | 135k | Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. |
+| [KoboldCpp](koboldcpp.md) | 12.3k | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama. |
 
 ## Enlaces
 

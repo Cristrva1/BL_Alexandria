@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Hummingbot, framework open source para diseñar y ejecutar bots de trading en exchanges centralizados y descentralizados. Licencia Apache-2.0. Es maduro (~21k estrellas, v2.17.0) y recibe patrocinio de exchanges mediante acuerdos de broker.
+
+## ¿Qué hace?
+
+Ofrece estrategias de market making, arbitraje y otras, con conectores para muchos CEX y DEX. Se controla con la CLI `hbot` (no interactiva, para automatizar) o la interfaz clásica, y se complementa con Condor, un arnés de IA para estrategias agénticas.
+
+## ¿Cómo lo hace?
+
+Se instala desde el código con Anaconda o Miniconda, o con Docker Compose. Está escrito en Python y Cython.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | Contrastar datos de exchanges no cubiertos por conectores propios. (combinación por arquitectura) | Usa CCXT en scripts de análisis aparte. |
+| [Claude Code](claude-code.md) | Automatizar la operación con la CLI `hbot`, pensada para uso no interactivo. (combinación por arquitectura) | Permite al agente ejecutar `hbot` con límites. |
+| [Grafana](grafana.md) | Monitorizar bots en ejecución. (combinación por arquitectura) | Exporta métricas y crea paneles. |
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero alto; los patrocinios de exchanges pueden sesgar la oferta de conectores.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.17.0 (2026-09-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hummingbot/hummingbot/blob/master/README.md) · [2](https://hummingbot.org)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El CLI y Gateway tienen papeles distintos; instalar el código no deja preparada una estrategia segura ni verificada |
 | Coste | El coste depende del proveedor o la ruta. No requiere LLM; datos, red, servidores y operaciones reales pueden cobrar |
 | Equipo | Preparación según la ruta elegida. Conda o Docker; dependencias de compilación; conector y estrategia de prueba |
-
-El CLI y Gateway tienen papeles distintos; instalar el código no deja preparada una estrategia segura ni verificada
-
-## Qué puedes hacer con él
-
-Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias configurables.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un conector de exchange; Evaluar un bot en un entorno de práctica.
-
-## Cómo funciona
 
 El CLI y Gateway tienen papeles distintos; instalar el código no deja preparada una estrategia segura ni verificada
 

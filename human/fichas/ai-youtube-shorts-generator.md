@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+AI YouTube Shorts Generator, pipeline en Python para extraer clips verticales de vídeos largos de YouTube, de @Anil-matcha. Licencia MIT. Tiene ~6k estrellas (sin releases) y lo «impulsa» MuAPI, cuyas APIs de pago se promocionan en el README.
+
+## ¿Qué hace?
+
+Descarga el vídeo, lo transcribe con Whisper, detecta los momentos más «virales» con un LLM, recorta en 9:16 con seguimiento de caras y genera shorts ordenados por puntuación. Se presenta como alternativa a Opus Clip, Vidyo.ai o SubMagic.
+
+## ¿Cómo lo hace?
+
+Tiene dos modos: `--mode api` usa MuAPI para descarga, transcripción y recorte (de pago), y `--mode local` funciona sin conexión con yt-dlp, faster-whisper y OpenCV. Se instala con `pip install -r requirements.txt` (más `requirements-local.txt` para el modo local).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [faster-whisper](faster-whisper.md) | Transcripción local en el modo offline. | Instala `requirements-local.txt`. |
+| [yt-dlp](yt-dlp.md) | Descarga de vídeos en el modo local. | Viene en las dependencias locales. |
+| [FFmpeg](ffmpeg.md) | Corte y codificación de los clips. | Instala FFmpeg en el sistema. |
+
+**Notas:** Sin alternativas declaradas. Respeta los derechos de autor y los términos de YouTube al reutilizar vídeos ajenos.
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Local no significa todo offline; las puntuaciones de viralidad son heurísticas del proyecto y no predicen vistas |
 | Coste | El coste depende del proveedor o la ruta. El modo API usa MuAPI; el modo local procesa medios en tu equipo pero conserva llamadas OpenAI o Gemini para ranking |
 | Equipo | Preparación según la ruta elegida. Python; FFmpeg y dependencias locales si eliges ese modo; clave LLM; video autorizado |
-
-Local no significa todo offline; las puntuaciones de viralidad son heurísticas del proyecto y no predicen vistas
-
-## Qué puedes hacer con él
-
-Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM.
-
-## Por qué destaca
-
-Usos propuestos: Obtener clips de un tutorial propio; Comparar criterios de selección de momentos.
-
-## Cómo funciona
 
 Local no significa todo offline; las puntuaciones de viralidad son heurísticas del proyecto y no predicen vistas
 
@@ -99,12 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; FFmpeg y dependencias locales si eliges ese modo; clave LLM; video autorizado
 - **Etiquetas:** `generativo` `2short-ai-alternative` `ai-clip-generator` `ai-clipping` `auto-clip` `auto-crop` `highlight-detection` `klap-alternative`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Enlaces
 

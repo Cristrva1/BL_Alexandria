@@ -2,13 +2,41 @@
 
 # 📑 PdfDing
 
-> Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
+> Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 1.8k | — | — | 2026-08-23 |
+| 1.8k | AGPL-3.0 | Python | 2026-08-23 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
+
+## ¿Qué es?
+
+Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de 2026; el repositorio de GitHub (mrmn2/PdfDing) está archivado y solo conserva la historia hasta agosto de 2026. Es un proyecto maduro mantenido principalmente por una persona, que se sostiene con donaciones.
+
+## ¿Qué hace?
+
+Permite leer PDF en el navegador desde varios dispositivos y recuerda la posición para continuar donde se dejó. Organiza la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos, archivo y acciones masivas, y muestra barras de progreso de lectura. Permite editar PDF añadiendo texto, resaltados, dibujos y firmas reutilizables, y gestionar o exportar resaltados y comentarios en secciones propias. Comparte colecciones o PDF con público externo mediante enlace o código QR con control de acceso opcional. Incluye modo oscuro, modo de color invertido, SSO por OIDC y 2FA (TOTP y WebAuthn). No incluye OCR ni funciones de IA.
+
+## ¿Cómo lo hace?
+
+Aplicación web en Python con Django (según su pyproject.toml en Codeberg, Python ≥3.12), distribuida como imagen Docker `mrmn/pdfding` para amd64 y arm64. La guía oficial la arranca con `docker run` en el puerto 8000, con volúmenes para la base de datos SQLite y los archivos, y variables como `HOST_NAME` y `SECRET_KEY`. También documenta Docker Compose, Podman y Helm, y existe hosting gestionado en PikaPods (~2,70 USD/mes). Las opciones de configuración (incluida la base de datos alternativa) están en docs.pdfding.com/configuration [DATO NO VERIFICADO: soporte de PostgreSQL no confirmado en las páginas revisadas]. Las instrucciones antiguas que apuntan a GitHub ya no reciben cambios.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OCRmyPDF](ocrmypdf.md) | Aplicar OCR a escaneados antes de subirlos para poder buscar y resaltar texto (combinación por arquitectura). | Procesa los archivos antes de importarlos. |
+| [paperless-ngx](paperless-ngx.md) | Paperless archiva y clasifica; PdfDing sirve para leer y anotar (combinación por arquitectura). | Decide qué sistema guarda el original para no duplicar. |
+| [coolify](coolify.md) | Desplegar el contenedor con dominio y HTTPS (combinación por arquitectura). | Usa la imagen y la documentación de Codeberg. |
+
+**Notas:** Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las estrellas mostradas (~1,8k) son las de GitHub, Codeberg tiene muy pocas. Se retiraron markitdown, ppt-master y reveal.js por falta de relación. Licencia AGPL-3.0: si modificas el código y lo ofreces como servicio, debes publicar los cambios.
+
+Estado en Codeberg: activo · última actividad 2026-11-01 · última versión publicada v1.15.0 (2026-11-01) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+Copia antigua en GitHub: ⚠️ archivado (solo lectura) · último push 2026-08-29 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md) · [2](https://docs.pdfding.com/getting_started/docker/) · [3](https://codeberg.org/mrmn/PdfDing/src/branch/master/pyproject.toml)</sub>
 
 ## Acceso, coste y equipo
 
@@ -25,18 +53,6 @@
 | Equipo | Preparación según la ruta elegida. Docker o entorno de la guía; volumen para documentos; cuenta de prueba |
 
 El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
-
-## Qué puedes hacer con él
-
-Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
-
-## Cómo funciona
-
-Se instala con Docker siguiendo la guía oficial. El código y las versiones nuevas se publican en Codeberg; el repositorio de GitHub quedó archivado como copia antigua
 
 ## Cómo empezar
 
@@ -78,21 +94,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---|
 | Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia
+**Limitaciones:** El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia. Sin OCR ni IA integrados.
 
 ## Stack y modelos
 
 - **Stack:** Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 - **Etiquetas:** `pdf` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
-| [ppt-master](ppt-master.md) | 76.8k | Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. |
-| [reveal.js](reveal-js.md) | 72.6k | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
 
 ## Enlaces
 

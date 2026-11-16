@@ -31,7 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte un PDF breve con tabla y compara el Markdown y JSON con el original
 **Qué comprobar:** Puedes identificar texto, estructura y campos que necesitan corrección
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `ragflow`, `qdrant`
+**Combina con:** `llama-index`, `haystack`, `qdrant`, `langchain`
 **Alternativas (elige una):** `marker`, `mineru`, `unstructured`, `olmocr`
 
 ## `docuseal`
@@ -62,6 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una plantilla de prueba con campos de texto y firma y completa una vista de ensayo
 **Qué comprobar:** Puedes revisar el documento resultante y la ubicación de los campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `twenty-main`, `stirling-pdf`, `pdfcraft`
 
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
@@ -91,7 +92,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte un PDF de dos páginas con una tabla y compara texto y columnas
 **Qué comprobar:** Puedes localizar errores y decidir si activar la mejora LLM
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`
+**Combina con:** `vllm`, `llama-cpp`, `pandoc`, `surya`
 **Alternativas (elige una):** `docling`, `mineru`, `pdf-craft`
 
 ## `markitdown`
@@ -122,7 +123,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas
 **Qué comprobar:** El texto y el orden se pueden contrastar con el documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ppt-master`, `open-notebook`
+**Combina con:** `claude-code`, `khoj`, `pandoc`
 
 ## `mineru`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=docs,pdf,ocr,python
@@ -152,7 +153,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Procesa un PDF corto con Flash o Basic y compara estructura y tablas antes de usar niveles superiores
 **Qué comprobar:** Puedes identificar nivel, backend y origen de la conversión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ragflow`
+**Combina con:** `lightrag`, `vllm`, `claude-code`
 **Alternativas (elige una):** `docling`, `marker`
 
 ## `ocrmypdf`
@@ -183,7 +184,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade OCR a una copia escaneada y busca una palabra que conoces
 **Qué comprobar:** Puedes seleccionar y buscar texto manteniendo la imagen de la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tesseract`, `docling`
+**Combina con:** `tesseract`, `paperless-ngx`, `stirling-pdf`, `pdf-inspector`, `pdfding`
 
 ## `olmocr`
 role=app · exec=local · setup=heavy · mcp=False · prov=local · tags=ocr,pdf,python
@@ -213,7 +214,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte unas páginas con texto conocido y revisa orden de lectura y símbolos
 **Qué comprobar:** Puedes comparar la salida con la página original y detectar omisiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vllm`
+**Combina con:** `vllm`, `lightrag`, `open-notebook`
 **Alternativas (elige una):** `paddleocr`, `docling`, `unlimited-ocr`
 
 ## `paddleocr`
@@ -244,7 +245,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Reconoce una página con texto y tabla y compara palabras y coordenadas con la imagen
 **Qué comprobar:** Puedes medir errores sobre un fragmento conocido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`
+**Combina con:** `pdf-inspector`, `ragflow`, `dify`, `vllm`
 **Alternativas (elige una):** `tesseract`, `olmocr`, `unlimited-ocr`
 
 ## `pandoc`
@@ -275,7 +276,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Convierte un Markdown con títulos y tabla a DOCX y revisa el resultado
 **Qué comprobar:** Puedes abrir el documento y comprobar estructura y contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`
+**Combina con:** `reveal.js`, `markitdown`, `marker`, `ppt-master`, `marp`, `pdf-craft`
 
 ## `paperless-ngx`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=gestion,server,python
@@ -305,6 +306,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta
 **Qué comprobar:** Puedes abrir el original y localizarlo con su texto OCR
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ocrmypdf`, `tesseract`, `erpnext`
 
 ## `pdf-craft`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=ocr,library,python
@@ -334,7 +336,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte dos páginas escaneadas propias y compara texto y estructura antes de generar un libro completo
 **Qué comprobar:** Puedes identificar errores y corregir el orden de lectura
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `unlimited-ocr`
+**Combina con:** `vllm`, `pandoc`, `ollama`
 **Alternativas (elige una):** `marker`
 
 ## `pdf-inspector`
@@ -365,7 +367,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Clasifica un PDF con texto y otro escaneado y compara el resultado
 **Qué comprobar:** Puedes enrutar el escaneado a OCR y extraer el otro sin ese procesamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`, `docling`
+**Combina con:** `firecrawl`, `pdfmathtranslate`, `paddleocr`, `ocrmypdf`
 
 ## `pdfcraft`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,typescript
@@ -395,13 +397,13 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre dos PDFs en la app y combínalos sin usar un servicio externo de conversión
 **Qué comprobar:** Puedes descargar el resultado y comprobar páginas y orden
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`
+**Combina con:** `coolify`, `docuseal`, `paperless-ngx`
 **Alternativas (elige una):** `stirling-pdf`
 
 ## `pdfding`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 
-**Qué es:** Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
+**Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.
 **Stack:** Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 **Acceso y costes:**
 - API de IA: Sin clave propia de API de IA en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios
@@ -426,7 +428,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión
 **Qué comprobar:** Puedes encontrar el documento y su progreso guardado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`, `ppt-master`, `reveal.js`
+**Combina con:** `ocrmypdf`, `paperless-ngx`, `coolify`
 
 ## `pdfmathtranslate`
 role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,google,local · tags=pdf,docs,python
@@ -457,7 +459,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Traduce dos páginas con fórmulas y compara texto, nombres y disposición con el original
 **Qué comprobar:** Puedes detectar traducciones incorrectas sin confundirlas con cambios de formato
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `pdf-inspector`, `ollama`, `litellm`
 
 ## `stirling-pdf`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
@@ -487,8 +489,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Une dos PDFs de prueba y verifica orden, páginas y metadatos del resultado
 **Qué comprobar:** El archivo final se abre y contiene las páginas esperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`
+**Combina con:** `ocrmypdf`, `activepieces`, `paperless-ngx`, `docuseal`
 **Alternativas (elige una):** `pdfcraft`
+
+## `surya`
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=ocr,python,pdf,model
+
+**Qué es:** OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de 90 idiomas.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/datalab-to/surya
+
+**Instalación** [+]:
+
+```
+pip install surya-ocr
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: digitalizar documentos escaneados en varios idiomas conservando el orden de lectura; extraer tablas de PDF como HTML con celdas combinadas
+**Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
+**Primera prueba propuesta:** Instala con `pip install surya-ocr` y procesa una página de prueba con OCR y layout.
+**Qué comprobar:** Obtienes el texto en orden de lectura y las regiones de layout detectadas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `llama-cpp`, `marker`
 
 ## `tesseract`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,cpp
@@ -518,8 +550,39 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Reconoce una imagen con una frase conocida y cuenta errores del resultado
 **Qué comprobar:** Puedes comprobar si idioma, orientación y resolución son adecuados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`
+**Combina con:** `ocrmypdf`, `paperless-ngx`, `unstructured`, `xberg`, `tika`
 **Alternativas (elige una):** `paddleocr`
+
+## `tika`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docs,java,pdf,server
+
+**Qué es:** Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG.
+**Stack:** Java, pom.xml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/apache/tika
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/apache/tika/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación; alimentar un sistema RAG con Markdown generado desde documentos Office y PDF
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca tika-server con su imagen Docker o JAR y envía un PDF de prueba al endpoint de extracción.
+**Qué comprobar:** El servidor devuelve el texto en Markdown y los metadatos del documento.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `tesseract`, `paperless-ngx`, `claude-code`
+**Alternativas (elige una):** `xberg`, `unstructured`
 
 ## `unlimited-ocr`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=ocr,docs,python
@@ -550,7 +613,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un documento corto antes de procesar uno largo y compara texto y tablas
 **Qué comprobar:** Puedes identificar errores y consumo de memoria en tu muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Combina con:** `sglang`, `vllm`, `transformers`
 **Alternativas (elige una):** `olmocr`, `paddleocr`
 
 ## `unstructured`
@@ -581,5 +644,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Divide un documento ficticio en elementos y comprueba título, párrafos y tabla
 **Qué comprobar:** Los elementos conservan el orden y tipos que necesitas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`
-**Alternativas (elige una):** `docling`
+**Combina con:** `tesseract`, `langchain`, `qdrant`
+**Alternativas (elige una):** `docling`, `xberg`, `tika`
+
+## `xberg`
+role=library · exec=hybrid · setup=easy · mcp=True · prov=— · tags=docs,rust,pdf,mcp
+
+**Qué es:** Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcripción, embeddings y MCP.
+**Stack:** Rust, Cargo.toml, composer.json, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/xberg-io/xberg
+
+**Instalación** [+]:
+
+```
+pip install xberg
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: preparar documentos variados (PDF, Office, correos, archivos comprimidos) para un sistema RAG; extraer texto y tablas de escaneos con OCR en lote sin GPU
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install xberg` y extrae el texto de un PDF y un DOCX de prueba.
+**Qué comprobar:** Obtienes Markdown limpio con tablas y metadatos de ambos archivos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `tesseract`, `qdrant`
+**Alternativas (elige una):** `tika`, `unstructured`

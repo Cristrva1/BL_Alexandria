@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Marco de búsqueda de empleo asistida por IA construido sobre Claude Code, creado por un geofísico que lo usó en su propia búsqueda. Licencia MIT. Ha crecido muy rápido (~72k estrellas, v1.7.5). No está afiliado a Anthropic.
+
+## ¿Qué hace?
+
+Convierte Claude Code en un asistente de candidaturas con comandos: `/setup` construye tu perfil (desde CV, exportación de LinkedIn u otros documentos), `/scrape` busca ofertas en portales, `/rank` las prioriza, `/apply` redacta CV y carta adaptados con un ciclo redactor-revisor, y hay seguimiento de resultados. Evalúa el encaje con criterios estructurados y ofrece referencias salariales opcionales. El flujo central no depende del país, pero las skills de portales están pensadas para el mercado danés.
+
+## ¿Cómo lo hace?
+
+Requiere Claude Code (sin plan gratuito: suscripción o créditos de API), Python 3.10+, Bun para las CLI de portales y una distribución LaTeX con `lualatex` y `xelatex`; `pypdf` es opcional para la comprobación ATS. Se clona el repo y se ejecuta `tools/install_portal_clis.py`. `AGENTS.md` permite usarlo con Codex, Gemini CLI o Antigravity. `/setup` escribe datos personales en el repo, así que no lo publiques.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Requisito: el marco son comandos y skills de Claude Code. | Instala Claude Code, clona el repo y ejecuta `/setup`. |
+| [Codex CLI](codex.md) | Alternativa de agente soportada vía `AGENTS.md`. | Abre el repo con Codex y sigue `AGENTS.md`. |
+| [markitdown](markitdown.md) | Convertir CV o certificados en DOCX/PDF a Markdown para `/setup`. (combinación por arquitectura) | Convierte los documentos y colócalos en `documents/`. |
+
+**Notas:** Sin alternativas declaradas. Mantén privado tu fork, que contiene datos personales; algunos portales bloquean el acceso automatizado.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.7.5 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ai-job-search-dev/ai-job-search/blob/master/README.md) · [2](https://github.com/ai-job-search-dev/ai-job-search/blob/master/AGENTS.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Claude Code tiene el flujo principal; Codex y Antigravity reciben skills de búsqueda de portales y el flujo completo necesita adaptación |
 | Coste | Consumo del agente que ya utilizas. Usa el agente anfitrión; servicios externos, Notion opcional y formatos de documentos tienen requisitos propios |
 | Equipo | Preparación según la ruta elegida. Agente compatible; perfil ficticio para ensayo; LaTeX y fuentes si generas PDFs |
-
-Claude Code tiene el flujo principal; Codex y Antigravity reciben skills de búsqueda de portales y el flujo completo necesita adaptación
-
-## Qué puedes hacer con él
-
-Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo.
-
-## Por qué destaca
-
-Usos propuestos: Adaptar un CV a una oferta; Preparar preguntas para una entrevista.
-
-## Cómo funciona
 
 Claude Code tiene el flujo principal; Codex y Antigravity reciben skills de búsqueda de portales y el flujo completo necesita adaptación
 

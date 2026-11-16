@@ -53,7 +53,7 @@
       if (params.get("prov") && !item.prov.includes(params.get("prov"))) return false;
       const clientSupport = ["native","host","connector","project_integration"];
       const supported = [clientSupport.includes(item.access?.claude_code) ? "claude code" : "", clientSupport.includes(item.access?.codex) ? "codex" : "",clientSupport.includes(item.access?.antigravity) ? "antigravity" : ""];
-      const hay = fold([item.name, item.id, item.one, item.lead, item.desc, item.choose_if, item.stack, item.first_try?.action, ...(item.practical_examples||[]).map(example=>example.scenario),item.discovery_text, cats[item.cat]?.title, ...(item.tags || []), ...supported].join(" "));
+      const hay = fold([item.name, item.id, item.one, item.lead, item.desc, item.choose_if, item.stack, item.first_try?.action, ...(item.practical_examples||[]).map(example=>example.scenario),item.que_es, item.que_hace, item.como_lo_hace, ...(item.combina_con||[]).map(combo=>combo.motivo), item.discovery_text, cats[item.cat]?.title, ...(item.tags || []), ...supported].join(" "));
       return tokens.every(term => alternatives(term).some(alias => hay.includes(alias)));
     });
     const score = item => (fold(item.id) === q || fold(item.name) === q ? 1000 : 0)

@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Docling, librería y CLI de Python que convierte documentos a formatos listos para IA generativa. Nació en IBM Research y hoy está alojada en LF AI & Data (Linux Foundation). Licencia MIT. Es muy activa (~71k estrellas, v2.150.x).
+
+## ¿Qué hace?
+
+Lee PDF, DOCX, PPTX, XLSX, HTML, EPUB, imágenes, audio, video, correo y más. Entiende el diseño del PDF (orden de lectura, tablas, fórmulas y código) y exporta a Markdown, HTML, DocTags o JSON sin pérdidas, todo en local si los datos son sensibles.
+
+## ¿Cómo lo hace?
+
+`DocumentConverter` (o el comando `docling <archivo o URL>`) transforma cada fuente en una representación común, `DoclingDocument`, con modelos de diseño, OCR para escaneados, modelos de visión y lenguaje opcionales como GraniteDocling y reconocimiento de voz para audio. Puede ejecutarse como servicio (docling-serve) o conectarse a agentes con su servidor MCP. Requiere Python 3.10 o superior.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LlamaIndex](llama-index.md) | Integración nativa documentada: Docling hace la lectura y LlamaIndex el indexado y la consulta RAG. | Mismo entorno Python; instala docling y luego los paquetes de integración de LlamaIndex. |
+| [Haystack](haystack.md) | Integración nativa documentada para usar Docling como conversor en pipelines de Haystack. | Mismo entorno Python. Elige LlamaIndex o Haystack como framework, no los dos. |
+| [Qdrant](qdrant.md) | Qdrant documenta cómo indexar la salida de Docling para búsqueda semántica. | Qdrant en marcha antes de indexar; Docling no lo necesita para convertir. |
+| [langchain](langchain.md) | Integración nativa documentada (DoclingLoader) para cargar documentos en LangChain. | Mismo entorno Python; elige un solo framework RAG. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[annas-mcp](annas-mcp.md) · [book-to-skill](book-to-skill.md) · [DeepTutor](deeptutor.md) · [graphrag](graphrag.md) · [kotaemon](kotaemon.md) · [LightRAG](lightrag.md)
+
+**Notas:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones. Los modelos de diseño se descargan la primera vez: en entornos sin red, prepáralos antes.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.150.1 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/docling-project/docling/blob/main/README.md) · [2](https://docling-project.github.io/docling/integrations/llamaindex/) · [3](https://docling-project.github.io/docling/integrations/haystack/) · [4](https://qdrant.tech/documentation/data-management/docling/) · [5](https://docling-project.github.io/docling/integrations/langchain/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelos locales documentados. MCP es un paquete complementario y convierte localmente por defecto; configura explícitamente cualquier delegación a un servicio remoto |
 | Coste | El coste depende del proveedor o la ruta. La ruta local no requiere modelo remoto; VLM, servicios y despliegues gestionados pueden tener costes y licencias propias |
 | Equipo | Preparación según la ruta elegida. Python >=3.10; modelos y dependencias del formato; documento de prueba |
-
-MCP es un paquete complementario y convierte localmente por defecto; configura explícitamente cualquier delegación a un servicio remoto
-
-## Qué puedes hacer con él
-
-Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA.
-
-## Por qué destaca
-
-Usos propuestos: Preparar documentos para RAG; Extraer tablas antes de un análisis.
-
-## Cómo funciona
 
 MCP es un paquete complementario y convierte localmente por defecto; configura explícitamente cualquier delegación a un servicio remoto
 
@@ -93,14 +114,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python >=3.10; modelos y dependencias del formato; documento de prueba
 - **Etiquetas:** `docs` `pdf` `ocr` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-| [RAGFlow](ragflow.md) | 94.2k | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. |
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 
 ## Alternativas (elige una)
 

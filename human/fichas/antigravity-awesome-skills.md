@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Agentic Awesome Skills (AAS), antes «Antigravity Awesome Skills», de sickn33 (MIT): biblioteca de más de 2.960 skills instalables y el componente AAS Core. Muy activa (v20.9.0); proyecto comunitario no afiliado a Google.
+
+## ¿Qué hace?
+
+Ofrece guías `SKILL.md` para Claude Code, Codex, Cursor, Gemini CLI y otros agentes. AAS Core permite que Codex o Claude busquen en el catálogo local completo, inspeccionen el proyecto, recomienden skills exactas y mantengan un conjunto revisable y reproducible.
+
+## ¿Cómo lo hace?
+
+Se instala desde GitHub; la publicación en npm está en pausa porque la cuenta del mantenedor está bloqueada. Puede instalarse una skill concreta con GitHub CLI (`gh skill`) y hay guías de plugin para Claude Code y Codex.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Codex CLI](codex.md) | Agente soportado por AAS Core. | Sigue la guía de configuración para Codex. |
+| [Claude Code](claude-code.md) | Agente soportado por AAS Core. | Sigue la guía para Claude Code. |
+| [GitHub CLI](cli.md) | Instalación de skills individuales con `gh skill`. | GitHub CLI con soporte de `gh skill` instalado. |
+| [SkillSpector](skillspector.md) | Auditar un catálogo tan grande antes de instalar nada (combinación por arquitectura). | Audita las skills seleccionadas. |
+| [Antigravity CLI](antigravity-cli.md) | Combinación recíproca: Antigravity CLI lo enlaza como «Su instalador lista Antigravity CLI (`antigravity-cli`) como destino de instalación de skills». | Orden indicado desde Antigravity CLI: Instala solo las skills que vayas a usar para no sobrecargar el agente. |
+
+**Notas:** Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v20.9.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones consumen el agente; código, contenido original e imports tienen licencias distintas |
 | Equipo | Preparación según la ruta elegida. GitHub CLI con gh skill, o la ruta ZIP indicada por la guía;  agente destino |
-
-Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx
-
-## Qué puedes hacer con él
-
-Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills.
-
-## Por qué destaca
-
-Usos propuestos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad.
-
-## Cómo funciona
 
 Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx
 
@@ -93,14 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** GitHub CLI con gh skill, o la ruta ZIP indicada por la guía;  agente destino
 - **Etiquetas:** `skills` `coding-agent` `mcp` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [SkillSpector](skillspector.md) | 26.1k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

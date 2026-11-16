@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+BioNeMo Recipes, recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Licencia Apache-2.0 en LICENSE/license.txt (GitHub no la detecta por la ubicación). Es de nicho (~880 estrellas, v3.0.0).
+
+## ¿Qué hace?
+
+Ofrece modelos acelerados con TransformerEngine (ESM-2, AMPLIFY, Llama 3, Mixtral, etc.) y recetas autocontenidas para escalar de una GPU a multinodo con FSDP y FP8. Está pensado para desarrolladores de modelos y científicos que ajustan modelos con datos propios.
+
+## ¿Cómo lo hace?
+
+Cada receta es un contenedor Docker (`docker build` y `docker run --gpus all … train.py`). Es compatible con HF Accelerate, PyTorch Lightning o PyTorch puro, y requiere GPU NVIDIA.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | Checkpoints publicados en Hugging Face. | Carga los modelos con Transformers. |
+| [PyTorch](pytorch.md) | Base de las recetas. | Viene en el contenedor. |
+| [PEFT](peft.md) | Ajuste eficiente con datos propios. (combinación por arquitectura) | Aplica LoRA sobre el checkpoint. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.0.0 (2026-06-24) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No es un framework único listo para usar; algunas recetas requieren Hopper o Blackwell y sus resultados no son evidencia clínica |
 | Coste | El coste depende del proveedor o la ruta. No necesita API para las recetas propias; GPUs, almacenamiento y datasets tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Conocimientos de biología computacional; Docker; GPU compatible con la receta; datos autorizados |
-
-No es un framework único listo para usar; algunas recetas requieren Hopper o Blackwell y sus resultados no son evidencia clínica
-
-## Qué puedes hacer con él
-
-Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar modelos de secuencias biológicas; Reproducir un entrenamiento de investigación.
-
-## Cómo funciona
 
 No es un framework único listo para usar; algunas recetas requieren Hopper o Blackwell y sus resultados no son evidencia clínica
 

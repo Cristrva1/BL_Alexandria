@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Crawl4AI, crawler y extractor web orientado a IA de @unclecode. Licencia Apache-2.0. Es muy popular (~87k estrellas, v0.9.5). Este repositorio es el motor de Crawl4AI Cloud, un servicio de pago; se puede usar como librería Python o como servidor Docker propio.
+
+## ¿Qué hace?
+
+Convierte páginas en Markdown limpio para RAG, extrae JSON estructurado y procesa muchas URLs. La versión Cloud añade búsqueda web (`/search`, `/serp`, `/answer`) y un servidor MCP alojado.
+
+## ¿Cómo lo hace?
+
+Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegador) desde `AsyncWebCrawler`. Quita menús y pies de página con filtros de poda, BM25 o un LLM, fragmenta páginas largas y puede ordenar fragmentos por similitud coseno. Extrae datos con esquemas CSS/XPath sin LLM o con `LLMExtractionStrategy`, que acepta cualquier proveedor soportado por LiteLLM, incluido Ollama. Se instala con `pip install -U crawl4ai` y después `crawl4ai-setup`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelo local para la extracción con LLM, sin enviar el contenido a una API de pago. | Ollama con el modelo descargado antes de lanzar la extracción. |
+| [Qdrant](qdrant.md) | El Markdown fragmentado se convierte en embeddings y se guarda en Qdrant para buscarlo en un RAG (combinación por arquitectura). | Independientes; necesitas además un modelo de embeddings. |
+| [litellm](litellm.md) | La extracción con LLM usa LiteLLM para hablar con cualquier proveedor. | Viene como dependencia; configura el proveedor con su prefijo. |
+| [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `crawl4ai_docs.py` (AsyncWebCrawler)». | Orden indicado desde tools: Instala crawl4ai en el entorno del proyecto. |
+
+**Notas:** Alternativas (elige una): jina-reader. firecrawl cumple una función parecida. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye Firecrawl, BeautifulSoup y navegador), por eso se retiró de las combinaciones. Respeta robots.txt y los términos de cada sitio.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.9.5 (2026-10-14) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/unclecode/crawl4ai/blob/main/README.md) · [2](https://api.github.com/repos/assafelovic/gpt-researcher/contents/gpt_researcher/scraper)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La lectura básica no necesita modelo; no confundas la clave del servicio de crawling con una clave del proveedor LLM |
 | Coste | El coste depende del proveedor o la ruta. Cloud tiene créditos y límites; self-hosting necesita recursos; la extracción LLM puede usar Ollama o una API |
 | Equipo | Preparación según la ruta elegida. Python; dependencias de navegador; clave Cloud solo para servicio alojado |
-
-La lectura básica no necesita modelo; no confundas la clave del servicio de crawling con una clave del proveedor LLM
-
-## Qué puedes hacer con él
-
-Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA.
-
-## Por qué destaca
-
-Usos propuestos: Preparar artículos para RAG; Extraer datos estructurados con un modelo local.
-
-## Cómo funciona
 
 La lectura básica no necesita modelo; no confundas la clave del servicio de crawling con una clave del proveedor LLM
 
@@ -94,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dependencias de navegador; clave Cloud solo para servicio alojado
 - **Etiquetas:** `scraping` `python`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
-| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 
 ## Alternativas (elige una)
 

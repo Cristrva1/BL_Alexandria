@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Open WebUI, plataforma de chat con IA autoalojada y extensible, diseñada para poder funcionar sin conexión, de Open WebUI Inc. (creada por Timothy Jaeryang Baek). Usa la «Open WebUI License», tipo BSD-3 con una cláusula que obliga a conservar la marca Open WebUI; las contribuciones anteriores siguen bajo sus licencias originales. No es una licencia OSI estándar, por eso GitHub muestra NOASSERTION. Es muy popular (~159k estrellas, v0.13.x) y tiene edición Enterprise.
+
+## ¿Qué hace?
+
+Ofrece una interfaz web tipo ChatGPT para modelos locales vía Ollama o para cualquier API compatible con OpenAI, local o en la nube. Su documentación incluye búsqueda web, bases de conocimiento y una app de escritorio para macOS, Windows y Linux.
+
+## ¿Cómo lo hace?
+
+Frontend en Svelte y backend en Python: se instala con `pip install open-webui` o `uvx` (Python 3.12) o como contenedor Docker. Las imágenes `:main` (con dependencias locales de IA), `:slim` (delega embeddings, extracción y voz a servicios externos), `:cuda` (GPU) y `:ollama` (Ollama incluido) cubren distintos equipos. Se configura con variables como `OLLAMA_BASE_URL` y `OPENAI_API_KEY`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Fuente de modelos locales; es la conexión principal documentada. | Ollama primero, o elige la imagen `:ollama` para tener ambos en un contenedor. |
+| [litellm](litellm.md) | Como endpoint compatible con OpenAI, LiteLLM da acceso a más de 100 proveedores con claves virtuales y control de gasto desde la misma interfaz. | LiteLLM proxy primero (puerto 4000); luego añádelo como conexión OpenAI en Open WebUI. |
+| [SearXNG](searxng.md) | Motor de búsqueda web autoalojado para las respuestas con búsqueda en Open WebUI. | SearXNG primero; activa el formato `json` en su `settings.yml` (si no, Open WebUI recibe 403) y define `SEARXNG_QUERY_URL`. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[exo](exo.md) · [Fabric](fabric.md) · [FreeToken](freetoken.md) · [Helicone](helicone.md) · [Jina Reader](jina-reader.md) · [KoboldCpp](koboldcpp.md) · [langfuse](langfuse.md) · [llama.cpp](llama-cpp.md) · [llamafile](llamafile.md) · [LocalAI](localai.md) · [MLC LLM](mlc-llm.md) · [MLX LM](mlx-lm.md) · [prompts.chat](prompts-chat.md) · [SGLang](sglang.md) · [TensorRT-LLM](tensorrt-llm.md) · [vLLM](vllm.md)
+
+**Notas:** Alternativas (elige una): librechat, lobehub, anything-llm, textgen. La cláusula de marca limita el rebranding: revisa LICENSE antes de redistribuirlo con otra imagen.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.13.3 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/open-webui/open-webui/blob/main/README.md) · [2](https://docs.openwebui.com/features/chat-conversations/web-search/providers/searxng)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | Modelos locales documentados. Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia |
 | Coste | El coste depende del proveedor o la ruta. Los modelos remotos consumen API; Ollama local necesita hardware; la licencia exige conservar branding salvo las excepciones aplicables |
 | Equipo | Preparación según la ruta elegida. Docker; Ollama accesible o proveedor remoto; volumen persistente |
-
-Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia
-
-## Qué puedes hacer con él
-
-Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas.
-
-## Por qué destaca
-
-Usos propuestos: Unificar chats de modelos locales; Crear una interfaz compartida para un equipo.
-
-## Cómo funciona
 
 Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia
 
@@ -93,14 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; Ollama accesible o proveedor remoto; volumen persistente
 - **Etiquetas:** `chatbot` `local` `rag` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [SearXNG](searxng.md) | 39.6k | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. |
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Alternativas (elige una)
 

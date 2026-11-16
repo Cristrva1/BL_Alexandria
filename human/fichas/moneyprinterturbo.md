@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+MoneyPrinterTurbo, app para generar vídeos cortos a partir de un tema o palabra clave, de @harry0703. Licencia MIT. Es muy popular (~144k estrellas, v1.3.10) y su README está lleno de patrocinios y enlaces de afiliado a proveedores de modelos.
+
+## ¿Qué hace?
+
+Genera el guion con un LLM, busca material en Pexels o Pixabay (o usa tus propios clips), sintetiza la voz, crea subtítulos y música de fondo y compone un vídeo vertical u horizontal. Admite muchos proveedores de LLM (OpenAI, Kimi, DeepSeek y compatibles) y de voz (Edge TTS gratuito, Azure, ElevenLabs, Kokoro, Fish Audio, VoxCPM…). Tiene interfaz web y API.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ y se instala con pip (paquete oficial), desde el código o con Docker. Los subtítulos pueden salir de las marcas de tiempo del TTS o de faster-whisper en local; con GPU el procesamiento es más rápido. Las claves de LLM, de material y de voz se configuran en la interfaz.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [faster-whisper](faster-whisper.md) | Subtítulos locales con faster-whisper, citado en el README. | Activa faster-whisper en la configuración. |
+| [Kokoro](kokoro.md) | Voz Kokoro entre los TTS integrados. | Selecciona Kokoro como servicio de voz. |
+| [Ollama](ollama.md) | Usar un modelo local mediante un endpoint compatible con OpenAI. (combinación por arquitectura) | Apunta el proveedor compatible con OpenAI a Ollama. |
+
+**Notas:** Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.3.10 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo |
 | Coste | El coste depende del proveedor o la ruta. Guion, voz, stock e imagen pueden consumir servicios distintos; ofrece imagen SDXL local y una ruta Codex/ChatGPT sujeta a elegibilidad y límites de cuenta |
 | Equipo | Preparación según la ruta elegida. Python; FFmpeg; proveedores de guion, voz e imágenes; material propio o autorizado |
-
-El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo
-
-## Qué puedes hacer con él
-
-App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio.
-
-## Cómo funciona
 
 El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo
 
@@ -96,20 +110,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `video` `automation` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
-| [faster-whisper](faster-whisper.md) | 26.8k | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [OpenMontage](openmontage.md) | 80.5k | Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. |
 | [videofy_minimal](videofy-minimal.md) | 656 | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. |
+| [short-video-factory](short-video-factory.md) | 6.1k | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. |
 
 ## Enlaces
 

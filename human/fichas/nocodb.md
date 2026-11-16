@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plataforma para crear bases de datos en línea con interfaz de hoja de cálculo, alternativa abierta a Airtable. Desde hace un tiempo usa la Sustainable Use License (no es OSI); es un proyecto muy popular con versiones mensuales.
+
+## ¿Qué hace?
+
+Permite crear, leer, actualizar y borrar tablas, columnas y filas; ordenar, filtrar, agrupar y ocultar columnas; y trabajar con vistas de cuadrícula, galería, formulario, kanban y calendario, con vistas colaborativas o bloqueadas. Expone APIs REST y un SDK, y tiene una «App Store» de integraciones para notificaciones, almacenamiento y más. Casos típicos: CRM ligero, inventarios, seguimiento de proyectos y backends para automatizaciones.
+
+## ¿Cómo lo hace?
+
+Se ejecuta en Docker con SQLite (por defecto) o PostgreSQL (`NC_DB=pg://...`) guardando datos en un volumen; el panel queda en `http://localhost:8080/dashboard`. Para producción existe «Auto-upstall», un script que genera un docker-compose; también hay guías para Kubernetes y Helm. Ya no se publican binarios precompilados.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Pieza oficial de NocoDB en Activepieces para usar la base como origen o destino de flujos. | NocoDB primero; luego la conexión en la pieza. |
+| [metabase](metabase.md) | Si NocoDB guarda los datos en PostgreSQL, Metabase puede conectarse a esa base para dashboards (combinación por arquitectura). | Usa NocoDB con PostgreSQL; conecta Metabase con un usuario de solo lectura. |
+| [coolify](coolify.md) | Coolify trae una plantilla de servicio oficial (`nocodb`) para desplegar NocoDB con un clic. | Coolify primero; luego despliega la plantilla `nocodb` y configura la base de datos. |
+
+**Notas:** Alternativas (elige una): appsmith, budibase.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 2026.10.1 (2026-10-29) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nocodb/nocodb/blob/develop/README.md) · [2](https://www.activepieces.com/pieces/nocodb) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/nocodb) · [4](https://github.com/coollabsio/coolify/tree/main/templates/compose)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El primer ejemplo Docker es de evaluación local; no reutilices los secretos de ejemplo para un despliegue público |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta básica no requiere LLM; hosting, funciones comerciales e integraciones tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Docker;  carpeta de datos;  navegador |
-
-El primer ejemplo Docker es de evaluación local; no reutilices los secretos de ejemplo para un despliegue público
-
-## Qué puedes hacer con él
-
-Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas.
-
-## Por qué destaca
-
-Usos propuestos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular.
-
-## Cómo funciona
 
 El primer ejemplo Docker es de evaluación local; no reutilices los secretos de ejemplo para un despliegue público
 
@@ -97,18 +111,15 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `data` `automation` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Appsmith](appsmith.md) | 41.3k | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. |
 | [Budibase](budibase.md) | 28.4k | Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. |
+| [Grist](grist-core.md) | 12.1k | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite. |
+| [Baserow](baserow.md) | 6.3k | Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first. |
+| [Teable](teable.md) | 22k | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Motor de respuestas con IA centrado en la privacidad que se ejecuta en tu propio equipo, de @ItzCrazyKns. Licencia MIT. Es popular (~38k estrellas, v1.12.2) y su último cambio es de septiembre de 2026.
+
+## ¿Qué hace?
+
+Responde preguntas buscando en internet con SearXNG y citando fuentes, al estilo de un buscador con IA. Tiene modos rápido, equilibrado y de calidad, admite subir documentos (PDF, texto, imágenes) y también puede usar Tavily o Exa. Funciona con modelos locales vía Ollama o con OpenAI, Claude, Gemini, Groq y otros.
+
+## ¿Cómo lo hace?
+
+Se despliega con Docker: la imagen completa incluye SearXNG (`docker run -p 3000:3000 … itzcrazykns1337/vane:latest`) y la versión `slim` usa una instancia propia mediante `SEARXNG_API_URL`. Los proveedores y modelos se configuran en la interfaz web.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [SearXNG](searxng.md) | Motor de búsqueda que usa por defecto. | Usa la imagen completa o apunta a tu SearXNG con JSON activado. |
+| [Ollama](ollama.md) | Modelos locales soportados de forma nativa. | Levanta Ollama y configura su URL en Vane (cuidado con la red de Docker). |
+| [markitdown](markitdown.md) | Convertir documentos de Office a texto antes de subirlos. (combinación por arquitectura) | Convierte con MarkItDown y sube el resultado. |
+
+**Notas:** Alternativas (elige una): gpt-researcher.
+
+Estado en GitHub: activo · último push 2026-09-01 · última versión publicada v1.12.2 (2026-04-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ItzCrazyKns/Vane/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Antes llamado Perplexica; búsqueda web privada no significa que los sitios externos no reciban consultas |
 | Coste | El coste depende del proveedor o la ruta. El contenedor incluye SearxNG; el modelo puede ser local o API de pago; alojamiento y hardware siguen siendo costes |
 | Equipo | Preparación según la ruta elegida. Docker; modelo local accesible o clave de proveedor |
-
-Antes llamado Perplexica; búsqueda web privada no significa que los sitios externos no reciban consultas
-
-## Qué puedes hacer con él
-
-Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica).
-
-## Por qué destaca
-
-Usos propuestos: Investigar un tema con citas; Consultar la web usando Ollama.
-
-## Cómo funciona
 
 Antes llamado Perplexica; búsqueda web privada no significa que los sitios externos no reciban consultas
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; modelo local accesible o clave de proveedor
 - **Etiquetas:** `search` `research` `local` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [SearXNG](searxng.md) | 39.6k | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. |
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 

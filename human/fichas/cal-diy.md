@@ -10,6 +10,31 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Plataforma de agendamiento de código abierto y comunitaria: un fork de Cal.com con todo el código Enterprise eliminado, 100 % bajo licencia MIT. Sus autores la recomiendan para uso personal y no productivo, y remiten a Cal.com para usos comerciales; no existe versión alojada.
+
+## ¿Qué hace?
+
+Permite publicar tipos de evento, compartir enlaces de reserva, conectar calendarios y recibir citas sin cuenta ni clave de licencia de Cal.com. Respecto a Cal.com elimina equipos, organizaciones, Insights, Workflows, SSO/SAML y otras funciones EE. Las integraciones disponibles requieren credenciales propias de cada servicio.
+
+## ¿Cómo lo hace?
+
+Monorepo en TypeScript con Next.js, tRPC y Prisma sobre PostgreSQL 13 o superior; requiere Node.js 18 o superior y se recomienda Yarn. Se instala clonando el repositorio, instalando paquetes con yarn y configurando variables de entorno, o con la imagen Docker `calcom/cal.diy`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Reaccionar a reservas, cancelaciones o reprogramaciones recibiendo los webhooks de cal.diy en un disparador Webhook de Activepieces. (combinación por arquitectura) | Configura el webhook en tu instancia de cal.diy apuntando a la URL del flujo. |
+| [twenty-main](twenty-main.md) | Registrar cada reserva como actividad u oportunidad en el CRM (combinación por arquitectura, con webhooks y un flujo intermedio). | Configura el webhook de cal.diy hacia el flujo que escribe en Twenty. |
+| [Botpress](botpress.md) | Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO]. | Instancia accesible por internet y token de API antes de configurar la integración. |
+| [crm](compai-crm.md) | Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)». | Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado. |
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v6.2.0 (2026-03-01) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/calcom/cal.diy/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +48,6 @@
 | Modelos locales | La función básica no necesita un modelo. El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere licencia Cal.com ni un LLM en la ruta comunitaria; servidor y correo siguen siendo gastos propios |
 | Equipo | Preparación según la ruta elegida. Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo |
-
-El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas
-
-## Qué puedes hacer con él
-
-Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.
-
-## Por qué destaca
-
-Usos propuestos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita.
-
-## Cómo funciona
 
 El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas
 
@@ -85,6 +98,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo
 - **Etiquetas:** `motores` `next-auth` `nextjs` `open-source` `postgresql` `prisma` `t3-stack` `tailwindcss`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Easy!Appointments](easyappointments.md) | 4.5k | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. |
 
 ## Enlaces
 

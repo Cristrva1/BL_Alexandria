@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+motionmaxxing, skill para agentes que mejora vídeos de motion graphics genéricos («AI slop») hasta parecer hechos por un diseñador, de @Tejashmakwana. Licencia Apache-2.0; GSAP y las fuentes conservan sus licencias. Es reciente (octubre de 2026, ~1.6k estrellas) y sin cambios desde entonces.
+
+## ¿Qué hace?
+
+Aplica criterios de diseño de movimiento (tipografía, composición, ritmo) y mide el resultado frente a la versión por defecto con su propio runtime.
+
+## ¿Cómo lo hace?
+
+Requiere Node 22+, Python 3, FFmpeg y Google Chrome. Opcionalmente usa una clave de ElevenLabs para voz, efectos y música, y la CLI de Codex. Se instala en Claude Code y otros agentes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GSAP](gsap.md) | Biblioteca de animación incluida. | Viene incluida; revisa su licencia. |
+| [Claude Code](claude-code.md) | Anfitrión documentado. | Instala la skill. |
+| [FFmpeg](ffmpeg.md) | FFmpeg es un requisito declarado en el README para renderizar y comparar los vídeos. | Instala FFmpeg (junto a Node 22+, Python 3 y Chrome) antes de la skill. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-06 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El skill admite hosts que leen SKILL.md pero las funciones dependen de herramientas disponibles; no garantiza una valoración profesional por sus puntuaciones |
 | Coste | El coste depende del proveedor o la ruta. Voz, música y SFX ElevenLabs son opcionales; Codex puede generar imágenes con su cuenta y cuotas; el núcleo usa render propio y agente |
 | Equipo | Preparación según la ruta elegida. Node 22+; Python 3; FFmpeg; Chrome; agente con shell |
-
-El skill admite hosts que leen SKILL.md pero las funciones dependen de herramientas disponibles; no garantiza una valoración profesional por sus puntuaciones
-
-## Qué puedes hacer con él
-
-Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código.
-
-## Por qué destaca
-
-Usos propuestos: Mejorar una pieza de lanzamiento; Preparar una animación tipográfica.
-
-## Cómo funciona
 
 El skill admite hosts que leen SKILL.md pero las funciones dependen de herramientas disponibles; no garantiza una valoración profesional por sus puntuaciones
 

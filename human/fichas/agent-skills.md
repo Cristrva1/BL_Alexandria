@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skills de ingeniería de Addy Osmani (MIT) para agentes de código, centradas en procesos de nivel producción. Activas (0.6.16).
+
+## ¿Qué hace?
+
+25 skills y 9 comandos que cubren el ciclo de desarrollo: `/spec`, `/plan`, `/build`, `/test`, `/constraints`, `/review`, `/webperf`, `/code-simplify` y `/ship`. Incluyen revisión en cinco ejes, entrevista de requisitos y TDD obligatorio.
+
+## ¿Cómo lo hace?
+
+Se instalan con `npx skills add addyosmani/agent-skills` (todas o `--skill` por separado), como plugin de Claude Code (`/plugin marketplace add addyosmani/agent-skills`) o a mano en Cursor (`.cursor/skills` y reglas `.mdc`) y Gemini CLI.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial; los comandos se instalan con su espacio de nombres. | Usa la forma con espacio de nombres si choca con `/review`. |
+| [Codex CLI](codex.md) | Instalable con skills CLI. | `npx skills add addyosmani/agent-skills`. |
+| [Gemini CLI](gemini-cli.md) | Guía de instalación documentada. | Sigue la sección de Gemini CLI. |
+| [plugins](plugins.md) | Combinación recíproca: plugins lo enlaza como «Skills de ingeniería con guía de instalación para Cursor». | Orden indicado desde plugins: Sigue la sección de Cursor. |
+
+**Notas:** Alternativa (elige una): superpowers.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 0.6.16 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/addyosmani/agent-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda |
 | Coste | Consumo del agente que ya utilizas. El repositorio aporta instrucciones; el modelo se factura por el acceso del agente |
 | Equipo | Preparación según la ruta elegida. Node.js y un agente compatible;  instalar solo las skills necesarias |
-
-Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda
-
-## Qué puedes hacer con él
-
-Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una especificación antes de escribir una funcionalidad; Revisar un diff con criterios de calidad y pruebas.
-
-## Cómo funciona
 
 Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda
 
@@ -93,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js y un agente compatible;  instalar solo las skills necesarias
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

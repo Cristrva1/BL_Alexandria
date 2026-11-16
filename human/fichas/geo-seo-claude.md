@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill para Claude Code de zubair-trabzada (MIT) que optimiza sitios para buscadores con IA (GEO) sin descuidar el SEO tradicional. Activa, sin releases.
+
+## ¿Qué hace?
+
+Comandos `/geo` para auditoría completa GEO+SEO con subagentes en paralelo, instantánea rápida, puntuación de «citabilidad», acceso de rastreadores de IA (robots.txt), análisis o generación de llms.txt, menciones de marca en plataformas citadas por IA, datos estructurados, SEO técnico, calidad de contenido (E-E-A-T) e informes para clientes, también en PDF con gráficos.
+
+## ¿Cómo lo hace?
+
+Se instala con un script (macOS/Linux o Git Bash en Windows) que copia la skill y crea un entorno virtual aislado en `~/.claude/skills/geo/.venv/`. Requiere Python 3.10+, Claude Code y Git; uv acelera la instalación y Playwright es opcional para capturas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Requisito: los comandos se ejecutan dentro de Claude Code. | Claude Code primero; luego el script de instalación. |
+| [playwright](playwright.md) | Dependencia opcional para capturas de pantalla. | Instala Playwright y sus navegadores si quieres capturas en los informes. |
+| [open-seo](open-seo.md) | Datos de palabras clave y backlinks como complemento a la auditoría (combinación por arquitectura). | Conecta el MCP de OpenSEO al mismo agente. |
+
+**Notas:** Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell |
 | Coste | El coste depende del proveedor o la ruta. Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes |
 | Equipo | Preparación según la ruta elegida. Claude Code; Python; Git Bash en Windows; web propia de prueba |
-
-Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell
-
-## Qué puedes hacer con él
-
-Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.
-
-## Por qué destaca
-
-Usos propuestos: Revisar schema de una web; Preparar un informe GEO inicial.
-
-## Cómo funciona
 
 Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell
 
@@ -97,13 +111,11 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `skills` `search` `pdf` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Marketing Skills](marketingskills.md) | 60.4k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
-| [The Agency (agency-agents)](agency-agents.md) | 168k | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. |
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
+| [claude-seo](claude-seo.md) | 29.4k | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. |
 
 ## Enlaces
 

@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Evolution API, API REST para WhatsApp y mensajería multicanal, mantenida por Evolution Foundation. Licencia Apache-2.0 con condiciones adicionales: conservar el logo y el copyright en los componentes frontend y avisar del uso, incluso en sistemas cerrados. No es una licencia OSI estándar, por eso GitHub muestra NOASSERTION. Es madura (~10k estrellas, v2.3.7) y nació de CodeChat.
+
+## ¿Qué hace?
+
+Crea varias instancias de WhatsApp, envía y recibe mensajes y medios desde tus aplicaciones y reenvía eventos a chatbots, CRM o colas. Admite dos conexiones: Baileys, basada en WhatsApp Web, gratuita pero con limitaciones frente a la oficial, y la WhatsApp Cloud API de Meta, que exige cumplir sus políticas y puede cobrar por mensaje.
+
+## ¿Cómo lo hace?
+
+Servidor Node.js 20+ en TypeScript con Express y Prisma sobre PostgreSQL o MySQL, con Redis recomendado como caché. Autentica con un `apikey` en la cabecera y tokens por instancia, publica eventos por webhooks, WebSocket, RabbitMQ, Kafka, SQS, NATS o Pusher y guarda medios en disco o en S3/MinIO. Integra de forma nativa Typebot, Chatwoot, Dify, OpenAI (transcripción de audio), Flowise y n8n.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [chatwoot](chatwoot.md) | Integración nativa: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot para que las atiendan personas. | Chatwoot primero; después configura la integración Chatwoot en la instancia de Evolution con la URL y las credenciales de tu cuenta. |
+| [Typebot](typebot.md) | Integración nativa con gestión de disparadores para flujos conversacionales visuales sin programar. | Typebot primero; luego vincula el bot a la instancia. |
+| [dify](dify.md) | Integración nativa para responder con agentes o RAG construidos en Dify. | Dify primero, con su app publicada; luego conéctala a la instancia. |
+| [Baileys](baileys.md) | Combinación recíproca: Baileys lo enlaza como «Evolution API usa Baileys como conexión gratuita; conocer la librería ayuda a entender y depurar sus sesiones, o a pasar a un gateway listo si no quieres programar el servidor». | Orden indicado desde Baileys: Usa uno de los dos en cada número: no conectes el mismo número a Baileys propio y a Evolution a la vez. |
+| [twenty-main](twenty-main.md) | Combinación recíproca: twenty-main lo enlaza como «Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura)». | Orden indicado desde twenty-main: Evolution API y Activepieces primero; después el flujo que escribe en Twenty. |
+
+**Notas:** Alternativas (elige una): whatsapp-web-js, waha. La conexión Baileys usa WhatsApp Web de forma no oficial: riesgo de bloqueo del número y de incumplir los términos de WhatsApp. Evolution y Chatwoot necesitan PostgreSQL y Redis; pueden compartir servidor, pero usa bases de datos separadas (recomendación, no probada).
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 2.3.7 (2025-12-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelo local no documentado. La conexión WhatsApp Web y Meta Cloud API tienen requisitos distintos; una clave apikey de Evolution no es una clave de modelo |
 | Coste | El coste depende del proveedor o la ruta. La API básica no exige LLM; ruta Meta oficial, hosting y bots AI pueden cobrar; la licencia añade condiciones de marca y notificación |
 | Equipo | Preparación según la ruta elegida. Docker o Node; PostgreSQL y Redis según ruta; canal y credenciales; cuenta de prueba |
-
-La conexión WhatsApp Web y Meta Cloud API tienen requisitos distintos; una clave apikey de Evolution no es una clave de modelo
-
-## Qué puedes hacer con él
-
-API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks.
-
-## Por qué destaca
-
-Usos propuestos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba.
-
-## Cómo funciona
 
 La conexión WhatsApp Web y Meta Cloud API tienen requisitos distintos; una clave apikey de Evolution no es una clave de modelo
 
@@ -87,13 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o Node; PostgreSQL y Redis según ruta; canal y credenciales; cuenta de prueba
 - **Etiquetas:** `automation` `whatsapp` `typescript` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Motor open source en Rust para estudiar cómo funciona un sitio web, una app o un juego y que un agente construya una versión propia en «sala limpia», del equipo ArtCraft (storytold). Licencia dual MIT o Apache-2.0. Es muy reciente (creado en octubre de 2026) y crece muy rápido (~34k estrellas, v0.6.1).
+
+## ¿Qué hace?
+
+Inspecciona el objetivo con herramientas reales (320 herramientas, cada una disponible como comando CLI y herramienta MCP), hace que un agente de programación construya un proyecto nuevo, lo compara con el original y lo refina. Cada comprobación indica el parecido y tú apruebas lo que quede fuera de las reglas. El modo profundo usa Ghidra si está instalado, y genera imágenes y modelos 3D de forma opcional con tu clave de fal.ai.
+
+## ¿Cómo lo hace?
+
+Tiene app de escritorio (egui), CLI y servidor MCP (`craft-anything-cli mcp`); compilarlo requiere Rust 1.97+ (`cargo install --path apps/craft-anything-cli`). Construir requiere un agente local: Claude Code primero (usa tu propio programa y sesión), adaptador de Codex sin verificar, y GitHub Copilot o Grok Build vía ACP. El README aclara que la «sala limpia» es una regla de lo que la herramienta ofrece, no un sandbox del sistema.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente constructor soportado de forma prioritaria. | Instala Claude Code e inicia sesión antes de lanzar una construcción. |
+| [ghidra](ghidra.md) | Análisis profundo de binarios cuando Ghidra está instalado. | Instala Ghidra y activa el modo profundo. |
+| [rea](rea.md) | Análisis más profundo del comportamiento del objetivo. (combinación por arquitectura) | Usa REA para investigar y Craft Anything para construir. |
+
+**Notas:** Sin alternativas declaradas. Clonar el diseño o el código de terceros puede infringir derechos de autor, marcas o términos de servicio: úsalo solo con objetivos que puedas reproducir legalmente.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.6.1 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/storytold/craft-anything/blob/main/README.md) · [2](https://github.com/storytold/craft-anything/blob/main/docs/claude-code.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El autor dice que existe adaptador Codex pero no está probado en una instalación real; MCP y análisis no certifican esa ruta de reconstrucción |
 | Coste | El coste depende del proveedor o la ruta. Claude Code usa tu CLI y sesión; preguntas admiten APIs o servidor local; proveedores y herramientas tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Rust >=1.97 para compilar; dependencias del sistema; agente o proveedor; app propia de prueba |
-
-El autor dice que existe adaptador Codex pero no está probado en una instalación real; MCP y análisis no certifican esa ruta de reconstrucción
-
-## Qué puedes hacer con él
-
-Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes.
-
-## Por qué destaca
-
-Usos propuestos: Comprender una implementación propia existente; Comparar comportamiento antes de una reimplementación.
-
-## Cómo funciona
 
 El autor dice que existe adaptador Codex pero no está probado en una instalación real; MCP y análisis no certifican esa ruta de reconstrucción
 

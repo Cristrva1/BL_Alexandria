@@ -10,6 +10,38 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+API para buscar, extraer e interactuar con la web a escala, pensada como «API de contexto» para agentes de IA, de Firecrawl. Licencia AGPL-3.0, con servicio alojado de pago. Es muy popular y activo (~202k estrellas, v2.11.0).
+
+## ¿Qué hace?
+
+Convierte sitios en Markdown limpio o JSON estructurado mediante scrape, crawl, map, search y extracción con LLM; también procesa PDF y DOCX, interactúa con páginas y monitoriza cambios. Ofrece SDK, CLI, skills y un servidor MCP (firecrawl-mcp) para conectarlo a agentes. Tiene integraciones oficiales con n8n, Zapier, Lovable y otros.
+
+## ¿Cómo lo hace?
+
+Se usa con la API alojada (clave de firecrawl.dev) o se autoaloja con Docker según la guía; la versión autoalojada no incluye todo: por ejemplo, el servicio «Alexandria» de proveedores de datos solo funciona en Firecrawl Cloud, y motores como Fire-engine se configuran aparte. Para agentes, `npx -y firecrawl-cli@latest init` instala CLI y skills, y el MCP se ejecuta con `npx -y firecrawl-mcp`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `firecrawl` para usar firecrawl en flujos. | firecrawl en marcha con sus credenciales; después añade la pieza `firecrawl` en un flujo de Activepieces. |
+| [Claude Code](claude-code.md) | Dar al agente scraping y búsqueda con el servidor MCP oficial firecrawl-mcp. | Añade `firecrawl-mcp` a la configuración MCP con tu clave. |
+| [gpt-researcher](gpt-researcher.md) | Usar Firecrawl como scraper de GPT Researcher, documentado en su guía de scraping. | Define el scraper Firecrawl y su clave en la configuración de GPT Researcher. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-engineering-hub](ai-engineering-hub.md) · [Awesome LLM Apps](awesome-llm-apps.md) · [awesome-web-scraping](awesome-web-scraping.md) · [CAMEL](camel.md) · [chatwoot](chatwoot.md) · [deer-flow](deer-flow.md) · [Meilisearch](meilisearch.md) · [onyx](onyx.md) · [OpenBot](openbot.md) · [PDF Inspector](pdf-inspector.md) · [public-apis](public-apis.md) · [social-media-agent](social-media-agent.md) · [Stagehand](stagehand.md)
+
+**Notas:** Alternativas (elige una): jina-reader. Se quita la combinación con crawl4ai por solaparse como crawler. Coincidencia de nombre: el producto «Alexandria» de Firecrawl no tiene relación con esta biblioteca. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.11.0 (2026-06-19) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/firecrawl/firecrawl/blob/main/README.md) · [2](https://docs.firecrawl.dev/mcp-server) · [3](https://n8n.io/integrations/firecrawl/) · [4](https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping) · [5](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/firecrawl)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. Hay CLI, skill y MCP stdio; compatibilidad MCP no significa que la suscripción del cliente pague Firecrawl |
 | Coste | El coste depende del proveedor o la ruta. La ruta alojada consume créditos de Firecrawl; el agente tiene sus propios límites; self-hosting tiene infraestructura y funciones distintas |
 | Equipo | Preparación según la ruta elegida. Node.js; cuenta Firecrawl para la ruta alojada; cliente elegido |
-
-Hay CLI, skill y MCP stdio; compatibilidad MCP no significa que la suscripción del cliente pague Firecrawl
-
-## Qué puedes hacer con él
-
-Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript.
-
-## Por qué destaca
-
-Usos propuestos: Preparar páginas para un buscador documental; Crear un mapa de URLs de una web propia.
-
-## Cómo funciona
 
 Hay CLI, skill y MCP stdio; compatibilidad MCP no significa que la suscripción del cliente pague Firecrawl
 
@@ -93,13 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; cuenta Firecrawl para la ruta alojada; cliente elegido
 - **Etiquetas:** `scraping` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
-| [crawl4ai](crawl4ai.md) | 87.4k | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Software de código abierto (Apache 2.0) de exo labs para ejecutar modelos de frontera en local uniendo varios dispositivos en un clúster de IA. Activo, con app de macOS y versiones frecuentes (v1.0.71 como última release publicada).
+
+## ¿Qué hace?
+
+Permite ejecutar modelos más grandes de lo que cabe en un solo equipo repartiéndolos entre dispositivos que se descubren solos en la red local. Incluye un panel para gestionar el clúster y chatear, y una API compatible con OpenAI Chat Completions, OpenAI Responses, Claude Messages y Ollama, para usar clientes existentes. Su README muestra modelos como DeepSeek v3.1 671B o Qwen3-235B en cuatro Mac Studio M3 Ultra.
+
+## ¿Cómo lo hace?
+
+Usa MLX como backend de inferencia y MLX distributed para la comunicación, con paralelismo de tensores (hasta 1,8x con 2 equipos y 3,2x con 4, según el README) y reparto automático según la topología, recursos y latencia de la red. Admite RDMA sobre Thunderbolt 5 (requiere macOS Tahoe 26.2 o posterior). La app de macOS necesita Apple Silicon y macOS Sequoia 15.1+; desde código se ejecuta con `uv run exo`, y en Linux por ahora solo funciona con CPU. Panel y API en el puerto 52415.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Open WebUI](open-webui.md) | Interfaz de chat apuntando a la API compatible con OpenAI u Ollama del clúster (combinación por arquitectura). | Clúster exo en marcha primero; registra http://<nodo>:52415 en Open WebUI. |
+| [LibreChat](librechat.md) | Endpoint personalizado compatible con OpenAI para un chat multiusuario sobre el clúster (combinación por arquitectura). | Igual que arriba; asegúrate de que el contenedor llega a la IP del nodo. |
+| [litellm](litellm.md) | Unificar el clúster exo con proveedores en la nube detrás de un solo proxy (combinación por arquitectura). | exo primero; añádelo a LiteLLM como modelo compatible con OpenAI. |
+| [MLX LM](mlx-lm.md) | Combinación recíproca: MLX LM lo enlaza como «exo usa MLX y mlx-lm como backend de inferencia para repartir modelos entre varios Mac». | Orden indicado desde MLX LM: Instala exo en cada equipo con versiones iguales de MLX y mlx-lm; después crea el clúster. |
+
+**Notas:** Todos los nodos deben ejecutar la misma versión de exo. El rendimiento en Linux (solo CPU) no es comparable con el de Apple Silicon.
+
+Estado en GitHub: activo · último push 2026-11-06 · última versión publicada v1.0.71 (2026-04-23) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/exo-explore/exo/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La app macOS y la ejecución desde fuentes tienen requisitos distintos; Windows no está confirmado en la ruta revisada |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere API remota; varios equipos, red y almacenamiento son recursos propios |
 | Equipo | Preparación según la ruta elegida. Para app: Apple Silicon y macOS 15.1+; equipos en la misma red y versión; modelo |
-
-La app macOS y la ejecución desde fuentes tienen requisitos distintos; Windows no está confirmado en la ruta revisada
-
-## Qué puedes hacer con él
-
-Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina.
-
-## Por qué destaca
-
-Usos propuestos: Compartir memoria entre equipos compatibles; Experimentar con inferencia distribuida local.
-
-## Cómo funciona
 
 La app macOS y la ejecución desde fuentes tienen requisitos distintos; Windows no está confirmado en la ruta revisada
 
@@ -93,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Para app: Apple Silicon y macOS 15.1+; equipos en la misma red y versión; modelo
 - **Etiquetas:** `inference` `local` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 
 ## Enlaces
 

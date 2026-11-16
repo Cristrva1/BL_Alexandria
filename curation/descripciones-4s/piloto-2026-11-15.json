@@ -1,0 +1,226 @@
+{
+ "batch": "piloto-2026-11-15",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (raw.githubusercontent.com) y de la documentación oficial enlazada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "evolution-api": {
+   "que_es": "API REST de código abierto para WhatsApp y mensajería multicanal, mantenida por Evolution Foundation, con licencia Apache 2.0 y condiciones adicionales de marca.",
+   "que_hace": "Crea varias instancias de WhatsApp, envía y recibe mensajes y medios desde tus aplicaciones y reenvía eventos a chatbots, CRM o colas. Admite dos conexiones: Baileys, basada en WhatsApp Web, gratuita pero con limitaciones frente a la oficial, y la WhatsApp Cloud API de Meta, que exige cumplir sus políticas y puede cobrar por mensaje.",
+   "como_lo_hace": "Servidor Node.js 20+ en TypeScript con Express y Prisma sobre PostgreSQL o MySQL, con Redis recomendado como caché. Autentica con un `apikey` en la cabecera y tokens por instancia, publica eventos por webhooks, WebSocket, RabbitMQ, Kafka, SQS, NATS o Pusher y guarda medios en disco o en S3/MinIO. Integra de forma nativa Typebot, Chatwoot, Dify, OpenAI (transcripción de audio), Flowise y n8n.",
+   "combina_con": [
+    {
+     "id": "chatwoot",
+     "motivo": "Integración nativa: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot para que las atiendan personas.",
+     "orden_instalacion": "Chatwoot primero; después configura la integración Chatwoot en la instancia de Evolution con la URL y las credenciales de tu cuenta."
+    },
+    {
+     "id": "typebot",
+     "motivo": "Integración nativa con gestión de disparadores para flujos conversacionales visuales sin programar.",
+     "orden_instalacion": "Typebot primero; luego vincula el bot a la instancia."
+    },
+    {
+     "id": "dify",
+     "motivo": "Integración nativa para responder con agentes o RAG construidos en Dify.",
+     "orden_instalacion": "Dify primero, con su app publicada; luego conéctala a la instancia."
+    }
+   ],
+   "notas": "Alternativas (elige una): whatsapp-web-js, waha, baileys. Evolution y Chatwoot necesitan PostgreSQL y Redis; pueden compartir servidor, pero usa bases de datos separadas (recomendación, no probada).",
+   "fuentes": [
+    "https://github.com/evolution-foundation/evolution-api/blob/main/README.md"
+   ]
+  },
+  "chatwoot": {
+   "que_es": "Plataforma de atención al cliente de código abierto (MIT) y autoalojable, alternativa a Intercom o Zendesk.",
+   "que_hace": "Reúne en una bandeja omnicanal las conversaciones de chat web, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line y SMS, con asignación automática, respuestas predefinidas, notas privadas, contactos, campañas, centro de ayuda y reportes con CSAT. Incluye Captain, un agente de IA que responde consultas frecuentes; su disponibilidad en la edición comunitaria es [DATO NO VERIFICADO].",
+   "como_lo_hace": "Backend en Ruby y frontend en Vue, según los lenguajes del repositorio en GitHub. En Docker se despliega con PostgreSQL, Redis y workers Sidekiq para tareas en segundo plano, y necesita variables de entorno correctas para cada función. Se integra con Slack, Dialogflow, Shopify, Linear y Google Translate y permite incrustar herramientas internas como Dashboard Apps.",
+   "combina_con": [
+    {
+     "id": "evolution-api",
+     "motivo": "Aporta el canal de WhatsApp mediante la integración nativa que Evolution tiene con Chatwoot.",
+     "orden_instalacion": "Chatwoot primero; después configura la integración desde la instancia de Evolution."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos.",
+     "orden_instalacion": "chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/chatwoot/chatwoot/blob/develop/README.md",
+    "https://www.chatwoot.com/docs/self-hosted/deployment/docker",
+    "https://api.github.com/repos/chatwoot/chatwoot/languages",
+    "https://github.com/evolution-foundation/evolution-api/blob/main/README.md",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/chatwoot"
+   ]
+  },
+  "ollama": {
+   "que_es": "Motor para descargar y ejecutar modelos de lenguaje abiertos en tu equipo (macOS, Windows, Linux o Docker), con opción de usar modelos en su nube.",
+   "que_hace": "Ejecuta modelos de su biblioteca y permite conversar con ellos (por ejemplo `ollama run gemma4`) o servirlos a otras aplicaciones. Con `ollama launch` conecta modelos a agentes como Claude Code, Codex, Copilot CLI u OpenCode.",
+   "como_lo_hace": "Está escrito en Go y declara llama.cpp como backend. Expone una API REST local en el puerto 11434 (por ejemplo `/api/chat`) y tiene librerías oficiales para Python y JavaScript. Los modelos se importan y personalizan con un Modelfile.",
+   "combina_con": [
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat tipo ChatGPT que se conecta a Ollama con `OLLAMA_BASE_URL`.",
+     "orden_instalacion": "Ollama primero, o usa la imagen `:ollama` de Open WebUI que ya lo incluye; no instales los dos por separado si usas esa imagen."
+    },
+    {
+     "id": "litellm",
+     "motivo": "LiteLLM trae los proveedores `ollama` y `ollama_chat` y pone los modelos locales detrás de la misma API compatible con OpenAI que los de la nube.",
+     "orden_instalacion": "Ollama primero y luego declara sus modelos en la configuración de LiteLLM."
+    },
+    {
+     "id": "crawl4ai",
+     "motivo": "La extracción con LLM de Crawl4AI acepta modelos de Ollama (ejemplo `ollama/llama3.3`), así que puedes estructurar páginas sin API de pago.",
+     "orden_instalacion": "Ollama con el modelo descargado antes de lanzar la extracción."
+    }
+   ],
+   "notas": "Alternativas (elige una): llama-cpp, localai, llamafile. Varios motores en la misma máquina compiten por GPU y memoria.",
+   "fuentes": [
+    "https://github.com/ollama/ollama/blob/main/README.md",
+    "https://github.com/open-webui/open-webui/blob/main/README.md",
+    "https://docs.litellm.ai/docs/providers/ollama",
+    "https://github.com/unclecode/crawl4ai/blob/main/README.md"
+   ]
+  },
+  "open-webui": {
+   "que_es": "Plataforma de chat con IA autoalojada y extensible, diseñada para poder funcionar completamente sin conexión.",
+   "que_hace": "Ofrece una interfaz web tipo ChatGPT para modelos locales vía Ollama o para cualquier API compatible con OpenAI, local o en la nube. Su documentación incluye búsqueda web, bases de conocimiento y una app de escritorio para macOS, Windows y Linux.",
+   "como_lo_hace": "Frontend en Svelte y backend en Python: se instala con `pip install open-webui` o `uvx` (Python 3.12) o como contenedor Docker. Las imágenes `:main` (con dependencias locales de IA), `:slim` (delega embeddings, extracción y voz a servicios externos), `:cuda` (GPU) y `:ollama` (Ollama incluido) cubren distintos equipos. Se configura con variables como `OLLAMA_BASE_URL` y `OPENAI_API_KEY`.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Fuente de modelos locales; es la conexión principal documentada.",
+     "orden_instalacion": "Ollama primero, o elige la imagen `:ollama` para tener ambos en un contenedor."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Como endpoint compatible con OpenAI, LiteLLM da acceso a más de 100 proveedores con claves virtuales y control de gasto desde la misma interfaz.",
+     "orden_instalacion": "LiteLLM proxy primero (puerto 4000); luego añádelo como conexión OpenAI en Open WebUI."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Motor de búsqueda web autoalojado para las respuestas con búsqueda en Open WebUI.",
+     "orden_instalacion": "SearXNG primero; activa el formato `json` en su `settings.yml` (si no, Open WebUI recibe 403) y define `SEARXNG_QUERY_URL`."
+    }
+   ],
+   "notas": "Alternativas (elige una): librechat, lobehub, anything-llm, textgen.",
+   "fuentes": [
+    "https://github.com/open-webui/open-webui/blob/main/README.md",
+    "https://docs.openwebui.com/features/chat-conversations/web-search/providers/searxng"
+   ]
+  },
+  "litellm": {
+   "que_es": "Gateway de IA y SDK de Python de código abierto que unifica el acceso a más de 100 proveedores de LLM usando el formato de OpenAI.",
+   "que_hace": "Permite llamar a OpenAI, Anthropic, Gemini, Bedrock, Azure, Ollama y otros con una sola interfaz. Como proxy centralizado añade claves virtuales, control de gasto, guardrails, balanceo de carga, enrutamiento automático por complejidad, panel de administración y una pasarela MCP.",
+   "como_lo_hace": "En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefijo del modelo (`openai/...`, `anthropic/...`) y `Router` reparte entre modelos. El proxy (`litellm[proxy]`, puerto 4000) expone endpoints compatibles con OpenAI como `/chat/completions`, `/embeddings`, `/responses` y `/messages`, de modo que un cliente de OpenAI solo cambia `base_url`. Los paquetes `litellm` y `litellm-core` no deben instalarse en el mismo entorno.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local soportado (`ollama`, `ollama_chat`): mezcla modelos locales y de nube con la misma API.",
+     "orden_instalacion": "Ollama primero; luego registra sus modelos en LiteLLM."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat que consume el proxy como si fuera OpenAI.",
+     "orden_instalacion": "LiteLLM primero; después añade su URL como conexión en Open WebUI."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Integración de observabilidad documentada por LiteLLM: trazas, costes y latencia de cada llamada.",
+     "orden_instalacion": "Langfuse primero (para tener sus claves); luego actívalo como callback en LiteLLM."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/BerriAI/litellm/blob/main/README.md",
+    "https://docs.litellm.ai/docs/providers/ollama",
+    "https://docs.litellm.ai/docs/observability/langfuse_integration"
+   ]
+  },
+  "crawl4ai": {
+   "que_es": "Crawler y extractor web de código abierto (Apache 2.0) orientado a IA. Se usa como librería Python, como servidor Docker propio o a través del servicio de pago Crawl4AI Cloud.",
+   "que_hace": "Convierte páginas en Markdown limpio para RAG, extrae JSON estructurado y procesa muchas URLs. La versión Cloud añade búsqueda web (`/search`, `/serp`, `/answer`) y un servidor MCP alojado.",
+   "como_lo_hace": "Controla navegadores reales con Playwright (`crawl4ai-setup` instala el navegador) desde `AsyncWebCrawler`. Quita menús y pies de página con filtros de poda, BM25 o un LLM, fragmenta páginas largas y puede ordenar fragmentos por similitud coseno. Extrae datos con esquemas CSS/XPath sin LLM o con `LLMExtractionStrategy`, que acepta cualquier proveedor soportado por LiteLLM, incluido Ollama.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelo local para la extracción con LLM, sin enviar el contenido a una API de pago.",
+     "orden_instalacion": "Ollama con el modelo descargado antes de lanzar la extracción."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "El Markdown fragmentado se convierte en embeddings y se guarda en Qdrant para buscarlo en un RAG (combinación por arquitectura).",
+     "orden_instalacion": "Independientes; necesitas además un modelo de embeddings."
+    }
+   ],
+   "notas": "firecrawl y jina-reader cumplen una función parecida: elige uno. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye Firecrawl, BeautifulSoup y navegador), por eso se retiró de las combinaciones.",
+   "fuentes": [
+    "https://github.com/unclecode/crawl4ai/blob/main/README.md",
+    "https://api.github.com/repos/assafelovic/gpt-researcher/contents/gpt_researcher/scraper"
+   ]
+  },
+  "docling": {
+   "que_es": "Librería y CLI de Python de código abierto que convierte documentos a formatos listos para aplicaciones de IA generativa.",
+   "que_hace": "Lee PDF, DOCX, PPTX, XLSX, HTML, EPUB, imágenes, audio, video, correo y más. Entiende el diseño del PDF (orden de lectura, tablas, fórmulas y código) y exporta a Markdown, HTML, DocTags o JSON sin pérdidas, todo en local si los datos son sensibles.",
+   "como_lo_hace": "`DocumentConverter` (o el comando `docling <archivo o URL>`) transforma cada fuente en una representación común, `DoclingDocument`, con modelos de diseño, OCR para escaneados, modelos de visión y lenguaje opcionales como GraniteDocling y reconocimiento de voz para audio. Puede ejecutarse como servicio (docling-serve) o conectarse a agentes con su servidor MCP. Requiere Python 3.10 o superior.",
+   "combina_con": [
+    {
+     "id": "llama-index",
+     "motivo": "Integración nativa documentada: Docling hace la lectura y LlamaIndex el indexado y la consulta RAG.",
+     "orden_instalacion": "Mismo entorno Python; instala docling y luego los paquetes de integración de LlamaIndex."
+    },
+    {
+     "id": "haystack",
+     "motivo": "Integración nativa documentada para usar Docling como conversor en pipelines de Haystack.",
+     "orden_instalacion": "Mismo entorno Python. Elige LlamaIndex o Haystack como framework, no los dos."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Qdrant documenta cómo indexar la salida de Docling para búsqueda semántica.",
+     "orden_instalacion": "Qdrant en marcha antes de indexar; Docling no lo necesita para convertir."
+    }
+   ],
+   "notas": "Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones.",
+   "fuentes": [
+    "https://github.com/docling-project/docling/blob/main/README.md",
+    "https://docling-project.github.io/docling/integrations/llamaindex/",
+    "https://docling-project.github.io/docling/integrations/haystack/",
+    "https://qdrant.tech/documentation/data-management/docling/"
+   ]
+  },
+  "qdrant": {
+   "que_es": "Motor de búsqueda por similitud vectorial y base de datos vectorial de código abierto escrito en Rust, también disponible como servicio gestionado (Qdrant Cloud, con nivel gratuito).",
+   "que_hace": "Guarda puntos (vectores con datos JSON asociados) y los busca por similitud aplicando filtros sobre esos datos. Admite vectores densos, dispersos y multivector, búsqueda híbrida con fusión RRF o DBSF, y sirve para RAG, búsqueda semántica, recomendaciones y clasificación.",
+   "como_lo_hace": "Funciona como servidor (`docker run -p 6333:6333 qdrant/qdrant`) con API REST descrita en OpenAPI 3.0 y una interfaz gRPC, y tiene clientes oficiales en Python, JS/TS, Go, Rust, .NET y Java. Reduce memoria con cuantización y almacenamiento en disco, admite despliegue distribuido y existe Qdrant Edge para correr embebido. Por defecto arranca sin autenticación y abierto a todas las interfaces de red.",
+   "combina_con": [
+    {
+     "id": "docling",
+     "motivo": "Prepara documentos en Markdown/JSON limpio antes de generar los embeddings que se guardan en Qdrant.",
+     "orden_instalacion": "Independientes; Qdrant debe estar en marcha al indexar."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `qdrant` para usar Qdrant en flujos.",
+     "orden_instalacion": "Qdrant en marcha con sus credenciales; después añade la pieza `qdrant` en un flujo de Activepieces."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Integración documentada como almacén vectorial de LlamaIndex.",
+     "orden_instalacion": "Qdrant en marcha y cliente `qdrant-client` en el entorno Python."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración documentada como vector store de LangChain.",
+     "orden_instalacion": "Igual que con LlamaIndex; elige un solo framework para no duplicar la lógica de RAG."
+    }
+   ],
+   "notas": "Alternativas (elige una): milvus, chroma, pgvector, faiss. Configura autenticación antes de exponer el puerto 6333.",
+   "fuentes": [
+    "https://github.com/qdrant/qdrant/blob/master/README.md",
+    "https://qdrant.tech/documentation/data-management/docling/",
+    "https://qdrant.tech/documentation/frameworks/llama-index/",
+    "https://qdrant.tech/documentation/frameworks/langchain/",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/qdrant"
+   ]
+  }
+ }
+}

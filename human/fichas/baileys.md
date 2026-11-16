@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Librería de código abierto (MIT) en TypeScript para interactuar con la API de WhatsApp Web mediante WebSockets, mantenida por la comunidad WhiskeySockets. No está afiliada a WhatsApp; la versión 7.0.0 introdujo cambios incompatibles y en 2026 su última versión publicada es una release candidate.
+
+## ¿Qué hace?
+
+Permite que una aplicación se conecte a WhatsApp como un dispositivo vinculado para enviar y recibir mensajes y medios y gestionar grupos sin abrir un navegador. Es la base de varios gateways (Evolution API y OpenWA la usan como motor). Sus mantenedores piden no usarla para spam, mensajería masiva automatizada ni stalkerware.
+
+## ¿Cómo lo hace?
+
+Habla directamente el protocolo multidispositivo de WhatsApp Web por WebSocket, lo que la hace mucho más ligera que las soluciones con navegador (OpenWA estima 30–80 MB por sesión), aunque más fácil de detectar. Se instala desde npm como paquete `baileys`; la guía nueva está en baileys.wiki y todavía está incompleta, por lo que la anterior sigue en el README histórico y en npm.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [evolution-api](evolution-api.md) | Evolution API usa Baileys como conexión gratuita; conocer la librería ayuda a entender y depurar sus sesiones, o a pasar a un gateway listo si no quieres programar el servidor. | Usa uno de los dos en cada número: no conectes el mismo número a Baileys propio y a Evolution a la vez. |
+| [activepieces](activepieces.md) | Tu servicio con Baileys envía los eventos a un webhook de Activepieces para la lógica del bot (combinación por arquitectura). | Servicio Baileys primero con su endpoint de envío protegido; después el flujo en Activepieces. |
+| [litellm](litellm.md) | Un único endpoint compatible con OpenAI para generar respuestas con distintos modelos y control de gasto (combinación por arquitectura). | LiteLLM primero; llama a su API desde el manejador de mensajes. |
+
+**Notas:** Alternativas (elige una): whatsapp-web-js, waha. Revisa la guía de migración de la versión 7 antes de actualizar.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v7.0.0-rc14 (2026-07-29) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/WhiskeySockets/Baileys/blob/master/README.md) · [2](https://github.com/rmyndharis/OpenWA/blob/main/README.md) · [3](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Usa el protocolo WhatsApp Web y no la API oficial; v7 incorpora cambios incompatibles que requieren su guía de migración |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita LLM; servidor y componentes AI añadidos tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Node y TypeScript compatibles; sesión y almacenamiento de credenciales; cuenta de prueba |
-
-Usa el protocolo WhatsApp Web y no la API oficial; v7 incorpora cambios incompatibles que requieren su guía de migración
-
-## Qué puedes hacer con él
-
-Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador.
-
-## Por qué destaca
-
-Usos propuestos: Aprender el flujo multidispositivo; Conectar eventos de una cuenta propia a una app.
-
-## Cómo funciona
 
 Usa el protocolo WhatsApp Web y no la API oficial; v7 incorpora cambios incompatibles que requieren su guía de migración
 
@@ -85,13 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y TypeScript compatibles; sesión y almacenamiento de credenciales; cuenta de prueba
 - **Etiquetas:** `whatsapp` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

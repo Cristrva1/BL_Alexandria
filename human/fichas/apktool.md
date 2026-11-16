@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Herramienta para hacer ingeniería inversa de apps Android binarias y cerradas, de @iBotPeaches. Licencia Apache-2.0. Es muy madura (~27k estrellas, v3.0.3).
+
+## ¿Qué hace?
+
+Decodifica los recursos de una APK casi a su forma original (XML, manifest, smali) y vuelve a construir la app tras modificarla. Facilita depurar smali paso a paso y trabajar con la estructura de proyecto de la app. Sirve para localización, auditoría o parches.
+
+## ¿Cómo lo hace?
+
+Es una herramienta Java: se descarga el JAR y el script envoltorio según la guía de apktool.org (requiere Java). Se usa con `apktool d app.apk` y `apktool b carpeta`; la APK reconstruida debe alinearse y firmarse antes de instalarla. No convierte smali a Java legible: para eso se usa un decompilador.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [jadx](jadx.md) | Leer el código en Java con JADX mientras editas smali y recursos con Apktool. (combinación por arquitectura) | Decompila en JADX para entender y modifica con Apktool. |
+| [frida](frida.md) | Incrustar Frida Gadget en la APK reconstruida cuando no hay root. (combinación por arquitectura) | Añade la librería del gadget con Apktool, reconstruye y firma. |
+| [mitmproxy](mitmproxy.md) | Modificar `network_security_config` para que la app confíe en el certificado de mitmproxy. (combinación por arquitectura) | Edita la configuración con Apktool, reconstruye, firma e intercepta. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.0.3 (2026-07-20) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/iBotPeaches/Apktool/blob/main/README.md) · [2](https://apktool.org/docs/install)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No reconstruye el código Java original ni certifica el comportamiento de toda la aplicación |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita IA; equipo y herramientas son propios |
 | Equipo | Preparación según la ruta elegida. Java y distribución de Apktool; APK propio de prueba |
-
-No reconstruye el código Java original ni certifica el comportamiento de toda la aplicación
-
-## Qué puedes hacer con él
-
-Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicación.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar recursos de una app Android; Revisar una configuración de manifiesto propia.
-
-## Cómo funciona
 
 No reconstruye el código Java original ni certifica el comportamiento de toda la aplicación
 

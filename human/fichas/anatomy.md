@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de Claude (MIT) de wheresryan22 que explica ideas construyéndolas como objetos interactivos; también funciona en Antigravity, OpenCode, Codex y MiniMax Code. Activa (v1.1.0).
+
+## ¿Qué hace?
+
+Para explicar un concepto técnico, inventa un objeto físico cuyo funcionamiento es el concepto (por ejemplo, una caché como una cerradura de pines) y lo construye con decenas de piezas isométricas sombreadas, en una tarjeta con título, pista y lectura en vivo, animada con el puntero y el teclado.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add wheresryan22/anatomy -g` (con `-a` para elegir agente). No necesita claves de API ni `npm install`: el kit usa solo módulos integrados de Node. Las figuras combinan SVG y, a veces, shaders WebGL.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente principal. | `-a claude-code`. |
+| [OpenCode](opencode.md) | Agente soportado. | `-a opencode`. |
+| [Codex CLI](codex.md) | Agente soportado. | `-a codex`. |
+
+Estado en GitHub: activo · último push 2026-10-18 · última versión publicada v1.1.0 (2026-10-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/wheresryan22/anatomy/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code, Codex y Antigravity; una figura convincente no demuestra precisión técnica sin contrastar sus partes |
 | Coste | Consumo del agente que ya utilizas. El kit usa Node sin API adicional; el agente consume su plan |
 | Equipo | Preparación según la ruta elegida. Node; agente soportado; objeto o sistema definido |
-
-Documenta Claude Code, Codex y Antigravity; una figura convincente no demuestra precisión técnica sin contrastar sus partes
-
-## Qué puedes hacer con él
-
-Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.
-
-## Por qué destaca
-
-Usos propuestos: Explicar un mecanismo; Crear una ilustración isométrica.
-
-## Cómo funciona
 
 Documenta Claude Code, Codex y Antigravity; una figura convincente no demuestra precisión técnica sin contrastar sus partes
 

@@ -10,6 +10,35 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Agent Development Kit (ADK) 2.0 de Google (Apache 2.0): framework Python «code-first» para construir, evaluar y desplegar agentes. Muy activo (v2.14.1), con versiones en Java, Kotlin, Go y TypeScript.
+
+## ¿Qué hace?
+
+Tiene un runtime de flujos basado en grafos (enrutamiento, fan-out/fan-in, bucles, reintentos, estado, nodos dinámicos, human-in-the-loop), una Task API para delegar entre agentes, sistemas multiagente jerárquicos, herramientas prediseñadas, funciones, OpenAPI y MCP, agentes sin código (Agent Config) y confirmación de herramientas. Está optimizado para Gemini, pero es agnóstico de modelo y de despliegue.
+
+## ¿Cómo lo hace?
+
+Python 3.11+ (`pip install google-adk`). Incluye ADK Web para desarrollar y se despliega en contenedores, Cloud Run o Agent Runtime en Gemini Enterprise Agent Platform (antes Vertex AI Agent Engine). Otros modelos se conectan, por ejemplo, mediante LiteLLM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Usar modelos no Gemini, incluidos locales (documentado en ADK). | Instala LiteLLM y configura el modelo en el agente. |
+| [FastMCP](fastmcp.md) | Servidores MCP propios como herramientas (combinación por arquitectura; ADK documenta herramientas MCP). | Servidor MCP primero. |
+| [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse para Google ADK. | Instrumenta antes de desplegar. |
+| [skills](google-skills.md) | Skills oficiales de Google Cloud para que un agente de código despliegue en Cloud Run o Agent Runtime (combinación por arquitectura). | Independientes. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | Combinación recíproca: Awesome LLM Apps lo enlaza como «Framework de Google usado en otras plantillas (citado en el README)». | Orden indicado desde Awesome LLM Apps: Instálalo en el entorno de la plantilla correspondiente. |
+| [gemini-skills](gemini-skills.md) | Combinación recíproca: gemini-skills lo enlaza como «Construir agentes sobre la API de Gemini con el ADK (combinación por arquitectura)». | Orden indicado desde gemini-skills: Independientes. |
+
+**Notas:** Alternativas (elige una): langgraph, openai-agents-python. Se quitó gemini-cli: no es una integración.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.14.1 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google/adk-python/blob/main/README.md) · [2](https://google.github.io/adk-docs/agents/models/) · [3](https://google.github.io/adk-docs/tools/mcp-tools/) · [4](https://langfuse.com/integrations/frameworks/google-adk)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelo local no documentado. Que Google publique ADK no lo convierte en configuración de Antigravity |
 | Coste | El coste depende del proveedor o la ruta. Los modelos y servicios se facturan según el proveedor; el SDK no incluye crédito de Antigravity |
 | Equipo | Preparación según la ruta elegida. Python 3.11+; entorno virtual; modelo configurado |
-
-Que Google publique ADK no lo convierte en configuración de Antigravity
-
-## Qué puedes hacer con él
-
-Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini.
-
-## Por qué destaca
-
-Usos propuestos: Consultar información de negocio; Evaluar la selección de herramientas.
-
-## Cómo funciona
 
 Que Google publique ADK no lo convierte en configuración de Antigravity
 
@@ -93,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.11+; entorno virtual; modelo configurado
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
-| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
 
 ## Alternativas (elige una)
 

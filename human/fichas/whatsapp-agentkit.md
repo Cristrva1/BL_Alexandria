@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Kit de código abierto (MIT), escrito en español para builders de Latinoamérica, que usa Claude Code para crear un agente de WhatsApp que atiende a clientes. Es un proyecto pequeño y reciente (2026) sin versiones publicadas.
+
+## ¿Qué hace?
+
+En lugar de una plantilla, ofrece instrucciones que Claude Code sigue para entrevistarte sobre tu negocio y luego escribir, probar y desplegar el agente completo: servidor, conexión con WhatsApp, memoria por cliente y prompt con personalidad. Resuelve la «plomería» (webhooks, firmas, tokens, reintentos, despliegue). Casos típicos: atención de un comercio, catálogos, agendas y preguntas frecuentes.
+
+## ¿Cómo lo hace?
+
+`start.sh` verifica el entorno y el comando `/build-agent` hace que Claude Code lea `CLAUDE.md` y ejecute cinco fases: comprobar Python 3.11+, entrevistarte, generar el código, probarlo y desplegarlo. El servidor resultante en Python recibe `POST /webhook`, verifica la firma, confirma de inmediato y procesa en segundo plano; elige proveedor de WhatsApp entre Zernio o la Cloud API de Meta. Requiere una API key de Anthropic (modelo configurable con `ANTHROPIC_MODEL`) e incluye Dockerfile y docker-compose; la guía despliega en Railway.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Requisito: es el agente que ejecuta `/build-agent` y escribe todo el proyecto. | Instala Claude Code y configura la API key de Anthropic antes de clonar el kit. |
+| [chatwoot](chatwoot.md) | Añadir traspaso a personas cuando el agente no sepa responder, enviando la conversación a Chatwoot por su API (combinación por arquitectura). | Después de tener el agente funcionando; pide a Claude Code que agregue la llamada a la API de Chatwoot. |
+| [coolify](coolify.md) | Desplegar el Dockerfile o docker-compose generado en tu propio servidor en vez de Railway (combinación por arquitectura). | Coolify en el servidor; publica el webhook con HTTPS antes de registrarlo en el proveedor de WhatsApp. |
+
+**Notas:** Costes: la Cloud API de Meta cobra respuestas de servicio desde el 1 de octubre de 2026 (con 1.000 gratis al mes por número, según el README) y Railway ya no tiene plan gratuito real. Usa una conexión oficial (Zernio o Meta), no un cliente de ingeniería inversa.
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Hainrixz/whatsapp-agentkit/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El tiempo anunciado es una estimación del autor y no una instalación garantizada; el plan de Claude Code no paga la API del bot |
 | Coste | El coste depende del proveedor o la ruta. Claude Code construye el proyecto; el bot usa su propia clave Anthropic y canal con tarifas o planes separados |
 | Equipo | Preparación según la ruta elegida. Claude Code; Python >=3.11; clave Anthropic; Zernio o Meta Cloud API; negocio ficticio para ensayo |
-
-El tiempo anunciado es una estimación del autor y no una instalación garantizada; el plan de Claude Code no paga la API del bot
-
-## Qué puedes hacer con él
-
-Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un asistente de preguntas frecuentes; Diseñar una consulta de horarios en un número de prueba.
-
-## Cómo funciona
 
 El tiempo anunciado es una estimación del autor y no una instalación garantizada; el plan de Claude Code no paga la API del bot
 
@@ -97,13 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code; Python >=3.11; clave Anthropic; Zernio o Meta Cloud API; negocio ficticio para ensayo
 - **Etiquetas:** `agents` `automation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
-| [n8n-mcp](n8n-mcp.md) | 23.3k | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. |
 
 ## Enlaces
 

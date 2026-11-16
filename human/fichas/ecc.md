@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+ECC, de affaan-m, se presenta como un «sistema operativo de harness» para agentes (MIT). Es open core: el producto ECC Pro es una GitHub App de pago para repositorios privados. Muy activo (v2.2.3), con un solo mantenedor financiado por patrocinadores.
+
+## ¿Qué hace?
+
+Da al agente un sistema de ingeniería coordinado: planifica antes de construir, verifica con tests, revisa su propio trabajo desde un contexto limpio, recuerda lo importante y aprende de forma continua. Incluye 71 agentes, 314 skills, 98 comandos heredados, hooks, reglas, memoria y el escáner de seguridad AgentShield.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin `ecc@ecc` en Claude Code (asistente guiado o comandos nativos, sin mezclar ambos) y por los paquetes npm `ecc-universal` y `ecc-agentshield`. Funciona mejor con Claude Code; tiene vías nativas para Codex y Qoder y adaptadores limitados para Cursor, OpenCode, Gemini, Zed, Copilot y otros.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plataforma principal (plugin `ecc@ecc`). | Elige un solo método de instalación. |
+| [Codex CLI](codex.md) | Plugin nativo. | Consulta la matriz de soporte antes de esperar las mismas funciones. |
+| [OpenCode](opencode.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
+| [Gemini CLI](gemini-cli.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
+| [claude-code-hooks-mastery](claude-code-hooks-mastery.md) | Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Marco que también usa hooks; sirve de ejemplo de producción (combinación por arquitectura)». | Orden indicado desde claude-code-hooks-mastery: No mezcles hooks de ambos sin revisar los conflictos. |
+| [hermes-agent](hermes-agent.md) | Combinación recíproca: hermes-agent lo enlaza como «Skills y configuración reutilizables. (combinación por arquitectura)». | Orden indicado desde hermes-agent: Importa las skills que apliquen. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenHands](openhands.md)
+
+**Notas:** Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.2.3 (2026-10-01) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/affaan-m/ECC/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | La función básica no necesita un modelo. Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes |
 | Coste | El coste depende del proveedor o la ruta. El núcleo MIT y el agente son partidas distintas; ECC Pro y los servicios conectados tienen condiciones adicionales |
 | Equipo | Preparación según la ruta elegida. Node.js compatible;  Git y cliente que elegirá el instalador |
-
-Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes
-
-## Qué puedes hacer con él
-
-Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente.
-
-## Por qué destaca
-
-Usos propuestos: Configurar convenciones, skills y comprobaciones para un equipo; Probar una mejora de contexto sin activar todos los componentes.
-
-## Cómo funciona
 
 Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes
 
@@ -93,13 +116,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `skills` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenHands](openhands.md) | 93.5k | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
-| [sandbox](sandbox.md) | 6.3k | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
-| [hermes-agent](hermes-agent.md) | 263k | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
+| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
+| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 
 ## Enlaces
 

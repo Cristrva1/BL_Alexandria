@@ -10,6 +10,38 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de automatización con IA de código abierto, presentada como reemplazo libre de Zapier. La edición comunitaria tiene licencia MIT y las funciones Enterprise una licencia comercial; el proyecto es activo, con versiones mensuales.
+
+## ¿Qué hace?
+
+Permite que personas sin perfil técnico construyan flujos en un editor sin código, mientras los desarrolladores crean las integraciones. Conecta Google Sheets, OpenAI, Discord, RSS y más de 200 servicios, incluye piezas nativas de IA para probar proveedores o crear agentes, y pasos de intervención humana como esperas y aprobaciones. Todas sus piezas (más de 280) se exponen también como servidores MCP para usarlas desde Claude Desktop, Cursor o Windsurf.
+
+## ¿Cómo lo hace?
+
+Cada integración es una «pieza»: un paquete npm escrito en TypeScript con tipado estricto, publicado en npmjs.com y con recarga en caliente para desarrollo local; el 60 % lo aporta la comunidad. El constructor visual ejecuta los flujos sobre esas piezas y un SDK de IA ayuda a crear flujos dentro del editor. Se autoaloja (incluso en redes aisladas) o se usa en la nube del proveedor; la guía de despliegue está en su documentación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [NocoDB](nocodb.md) | Activepieces tiene una pieza de NocoDB para crear o actualizar registros desde un flujo, útil como base de datos tipo hoja de cálculo para los resultados. | NocoDB primero y un token de API; después la conexión en la pieza. |
+| [Claude Code](claude-code.md) | Las piezas se exponen como servidores MCP, así que un agente de código puede usar las integraciones de Activepieces como herramientas. | Activepieces en marcha; luego registra el servidor MCP de las piezas en el cliente. |
+| [litellm](litellm.md) | Centraliza las llamadas de IA de los flujos en un gateway compatible con OpenAI con presupuestos y registro de gasto (combinación por arquitectura). | LiteLLM primero; usa su URL y una clave virtual en las piezas que acepten un endpoint compatible con OpenAI. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (60). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AdGuardHome](adguardhome.md) · [Anytype Desktop](anytype-ts.md) · [Appsmith](appsmith.md) · [audiobookshelf](audiobookshelf.md) · [Baileys](baileys.md) · [Baserow](baserow.md) · [Bitwarden Clients](bitwarden-clients.md) · [Botpress](botpress.md) · [Budibase](budibase.md) · [cal.diy](cal-diy.md) · [CasaOS](casaos.md) · [changedetection.io](changedetection.md) · [chatwoot](chatwoot.md) · [cloud-mail](cloud-mail.md) · [coolify](coolify.md) · [crm](compai-crm.md) · [daily_stock_analysis](daily-stock-analysis.md) · [docuseal](docuseal.md) · [Easy!Appointments](easyappointments.md) · [ERPNext](erpnext.md) · [EspoCRM](espocrm.md) · [firecrawl](firecrawl.md) · [Firefly III](firefly-iii.md) · [fluxer](fluxer.md) · [FreeScout](freescout.md) · [GitHub CLI](cli.md) · [Grist](grist-core.md) · [Jina Reader](jina-reader.md) · [listmonk](listmonk.md) · [Matomo](matomo.md) · [Mattermost](mattermost.md) · [mautic](mautic.md) · [Maxun](maxun.md) · [Memos](memos.md) · [Odoo](odoo.md) · [open-notebook](open-notebook.md) · [open-sol-bot](open-sol-bot.md) · [Plausible Analytics](plausible.md) · [posthog](posthog.md) · [postiz-app](postiz-app.md) · [public-apis](public-apis.md) · [py-sdk](py-sdk.md) · [Qdrant](qdrant.md) · [RAGFlow](ragflow.md) · [Redash](redash.md) · [Rocket.Chat](rocket-chat.md) · [RSSHub](rsshub.md) · [Selenium](selenium.md) · [signal-cli](signal-cli.md) · [Skyvern](skyvern.md) · [Stirling-PDF](stirling-pdf.md) · [supabase](supabase.md) · [Teable](teable.md) · [ToolJet](tooljet.md) · [twenty-main](twenty-main.md) · [Umami](umami.md) · [WAHA](waha.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md) · [Zammad](zammad.md)
+
+**Notas:** Sin alternativas declaradas. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 0.93.0 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/activepieces/activepieces/blob/main/README.md) · [2](https://www.activepieces.com/pieces/nocodb)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | Modelo local no documentado. El MCP documentado usa un endpoint de la instancia y autenticación; hay que conceder acceso al cliente y las piezas y servicios conservan sus propios requisitos |
 | Coste | El coste depende del proveedor o la ruta. La edición, licencia y alojamiento elegidos determinan el coste; las piezas de IA usan sus proveedores |
 | Equipo | Preparación según la ruta elegida. Docker Compose con PostgreSQL y Redis, o una cuenta alojada |
-
-El MCP documentado usa un endpoint de la instancia y autenticación; hay que conceder acceso al cliente y las piezas y servicios conservan sus propios requisitos
-
-## Qué puedes hacer con él
-
-Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables.
-
-## Por qué destaca
-
-Usos propuestos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización.
-
-## Cómo funciona
 
 El MCP documentado usa un endpoint de la instancia y autenticación; hay que conceder acceso al cliente y las piezas y servicios conservan sus propios requisitos
 
@@ -83,19 +103,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 - **Stack:** Docker Compose con PostgreSQL y Redis, o una cuenta alojada
 - **Etiquetas:** `automation` `typescript` `docker`
-- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
 ## Enlaces
 

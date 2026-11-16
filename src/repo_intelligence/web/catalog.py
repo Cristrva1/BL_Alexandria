@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from repo_intelligence.analysis.combina_policy import combo_map, used_by
+
 import re
 from pathlib import Path
 from repo_intelligence.core.taxonomy import attach_areas, build_areas
@@ -225,6 +227,13 @@ def build_catalog(project_root: Path) -> dict:
             "license": detail.get("license") or "",
             "homepage": detail.get("homepage") or "",
         }
+        # 4-section description: only emitted when curated, to keep catalog.json small.
+        combos = [dict(item) for item in detail.get("combina_con") or [] if isinstance(item, dict) and item.get("id")]
+        if combos:
+            merged["combina_con"] = combos
+        for field in ("que_es", "que_hace", "como_lo_hace", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
+            if detail.get(field):
+                merged[field] = detail[field]
         command, confidence, note = derive_install({**merged, "repo": merged["repo_url"]})
         lead, body = _lead(merged)
         merged["lead"] = lead
@@ -241,8 +250,16 @@ def build_catalog(project_root: Path) -> dict:
     for repo in draft:
         repo["alt_refs"] = _refs(repo["alt"], index)
         repo["combine_refs"] = _refs(repo["combines_with"], index)
+        for combo in repo.get("combina_con", []):
+            combo["id"] = _resolve(str(combo["id"]), index) or combo["id"]
         repos.append(repo)
     repos.sort(key=lambda repo: (repo["cat"], (repo["name"] or "").lower(), repo["id"]))
+    inbound_free = used_by(combo_map(repos))
+    names = {repo["id"]: (repo["name"] or repo["id"]).lower() for repo in repos}
+    for repo in repos:
+        users = [rid for rid in inbound_free.get(repo["id"], []) if rid in names]
+        if users:
+            repo["used_by"] = sorted(users, key=lambda rid: names[rid])
 
     areas = build_areas(compact, repos)
     attach_areas(repos, areas)
@@ -386,6 +403,7 @@ def build_catalog(project_root: Path) -> dict:
             "work_areas": sum(area.get("kind") == "work" for area in areas),
             "tool_collections": sum(area.get("kind") == "tool" for area in areas),
             "topics": sum(len(area["topics"]) for area in areas),
+            "technical_subs": sum(len(cat.get("subs", [])) for cat in categories if cat["num"] >= 1),
             "recipes": len(recipes),
             "mcp": sum(1 for repo in repos if repo["mcp"]),
             "labs": len(labs),

@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+TensorFlow, plataforma open source de aprendizaje automático creada en Google Brain. Licencia Apache-2.0. Es muy madura (~202k estrellas, v2.21.0).
+
+## ¿Qué hace?
+
+Permite construir, entrenar y desplegar modelos con APIs estables en Python y C++, además de un ecosistema de herramientas (Keras, TF Lite/LiteRT, TF Serving, TensorBoard). Hoy pierde peso frente a PyTorch en investigación.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install tensorflow` (o `tensorflow-cpu`) y tiene imágenes Docker. Soporta GPU NVIDIA con CUDA en Linux.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | Algunos modelos tienen variante TF (el soporte se ha ido reduciendo). (combinación por arquitectura) | Comprueba el soporte del modelo. |
+| [mediapipe](mediapipe.md) | Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura) | Usa modelos TF Lite en MediaPipe. |
+| [marimo](marimo.md) | Experimentación en notebooks reactivos. (combinación por arquitectura) | Instala marimo en el mismo entorno. |
+| [JupyterLab](jupyterlab.md) | Combinación recíproca: JupyterLab lo enlaza como «Experimentar con modelos de TensorFlow paso a paso en notebooks. (combinación por arquitectura)». | Orden indicado desde JupyterLab: Instala TensorFlow en el entorno del kernel. |
+| [tfjs-models](tfjs-models.md) | Combinación recíproca: tfjs-models lo enlaza como «Entrenar en Python y convertir a TF.js. (combinación por arquitectura)». | Orden indicado desde tfjs-models: Convierte con tensorflowjs_converter. |
+| [Keras 3](keras.md) | Combinación recíproca: Keras 3 lo enlaza como «TensorFlow es uno de los backends de Keras 3». | Orden indicado desde Keras 3: Instala TensorFlow; después define KERAS_BACKEND=tensorflow. |
+
+**Notas:** Alternativa (elige una): pytorch.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.21.0 (2026-03-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tensorflow/tensorflow/blob/master/README.md) · [2](https://www.tensorflow.org/install)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelos locales documentados. La instalación CPU y acelerada depende de plataforma y versión; usa el selector y guía oficiales en vez de asumir GPU en cualquier sistema |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API obligatoria para ejecución propia; hardware y nube independientes |
 | Equipo | Preparación según la ruta elegida. Python; paquete y sistema compatibles; datos de ejemplo |
-
-La instalación CPU y acelerada depende de plataforma y versión; usa el selector y guía oficiales en vez de asumir GPU en cualquier sistema
-
-## Qué puedes hacer con él
-
-Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.
-
-## Por qué destaca
-
-Usos propuestos: Aprender redes neuronales; Construir un clasificador educativo.
-
-## Cómo funciona
 
 La instalación CPU y acelerada depende de plataforma y versión; usa el selector y guía oficiales en vez de asumir GPU en cualquier sistema
 
@@ -93,6 +110,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; paquete y sistema compatibles; datos de ejemplo
 - **Etiquetas:** `entrenamiento` `deep-learning` `deep-neural-networks` `distributed` `machine-learning` `ml` `neural-network` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [PyTorch](pytorch.md) | 106k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
+| [JAX](jax.md) | 36.6k | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
 
 ## Enlaces
 

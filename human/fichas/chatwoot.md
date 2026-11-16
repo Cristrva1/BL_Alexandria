@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Chatwoot, plataforma de atención al cliente autoalojable y alternativa a Intercom o Zendesk, de Chatwoot Inc. La Community Edition es MIT; el directorio `enterprise/` tiene licencia propia (por eso GitHub muestra NOASSERTION). Es madura (~40k estrellas, v4.19.1).
+
+## ¿Qué hace?
+
+Reúne en una bandeja omnicanal las conversaciones de chat web, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line y SMS. Incluye asignación automática, respuestas predefinidas, notas privadas, contactos, campañas, centro de ayuda y reportes con CSAT. Captain, su agente de IA, no está incluido en la Community Edition autoalojada: requiere los planes de pago Premium o Enterprise y una clave de OpenAI propia.
+
+## ¿Cómo lo hace?
+
+El backend está en Ruby y el frontend en Vue, según los lenguajes del repositorio. En Docker se despliega con PostgreSQL, Redis y workers Sidekiq, y necesita variables de entorno correctas para cada función; para producción, la web oficial recomienda al menos 4 GB de RAM y 2 CPU. Se integra con Slack, Dialogflow, Shopify, Linear y Google Translate, y permite incrustar herramientas internas como Dashboard Apps.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [evolution-api](evolution-api.md) | Aporta el canal de WhatsApp mediante la integración nativa que Evolution tiene con Chatwoot. | Chatwoot primero; después configura la integración desde la instancia de Evolution. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos. | chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces. |
+| [firecrawl](firecrawl.md) | Captain puede usar una clave de Firecrawl (opcional) para rastrear mejor los sitios web de su base de conocimiento; sin ella usa un rastreador simple. | Solo con Captain activo (plan de pago): añade la clave en el Super Admin. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenWA](openwa.md) · [Typebot](typebot.md) · [WAHA](waha.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
+
+**Notas:** Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. Se resuelve el antiguo [DATO NO VERIFICADO] sobre Captain: no está en la Community Edition.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.19.1 (2026-10-24) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chatwoot/chatwoot/blob/develop/README.md) · [2](https://www.chatwoot.com/docs/self-hosted/deployment/docker) · [3](https://api.github.com/repos/chatwoot/chatwoot/languages) · [4](https://github.com/evolution-foundation/evolution-api/blob/main/README.md) · [5](https://www.chatwoot.com/pricing/self-hosted-plans) · [6](https://developers.chatwoot.com/self-hosted/faq) · [7](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/chatwoot)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | Modelo local no documentado. El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado |
 | Coste | El coste depende del proveedor o la ruta. Community, Cloud y Enterprise tienen condiciones distintas; canales y funciones AI pueden consumir servicios |
 | Equipo | Preparación según la ruta elegida. Cuenta o servidor; canal de prueba; proveedor solo para funciones AI |
-
-El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
-
-## Qué puedes hacer con él
-
-Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una mesa de soporte; Comparar atención humana y asistencia AI.
-
-## Cómo funciona
 
 El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
 
@@ -86,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta o servidor; canal de prueba; proveedor solo para funciones AI
 - **Etiquetas:** `automation` `crm` `ruby` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
-| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
 
 ## Enlaces
 

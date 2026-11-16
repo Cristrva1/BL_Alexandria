@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de diseño de logotipos (MIT) de Kaan Kızıltuğ para Claude y otros agentes compatibles con Agent Skills (Gemini CLI, Codex CLI, Cursor, GitHub Copilot). Activa (v1.4.5).
+
+## ¿Qué hace?
+
+Convierte al agente en diseñador de identidad, desde el brief hasta SVG de producción y guía de marca: proceso, construcción geométrica, correcciones ópticas, color, tipografía y presentación. Incluye una biblioteca de referencia con más de 1.400 logotipos SVG reales clasificados, para estudiar convenciones y evitar parecidos, no para copiar.
+
+## ¿Cómo lo hace?
+
+Herramientas Python 3.8+ sin dependencias que auditan un SVG contra principios de logotipos, generan hojas de concepto y de prueba (16 px, una tinta, invertido, espejo, estantería de competidores), tableros de presentación con mockups y el set de favicon/app-icon/manifest. La exportación a PNG/ICO usa el renderizador disponible (cairosvg u otros). Se instala como plugin de Claude Code.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial. | `/plugin marketplace add kaankiziltug/logo-design-skill`. |
+| [Gemini CLI](gemini-cli.md) | Agente compatible citado. | Copia la skill al directorio de skills. |
+| [Codex CLI](codex.md) | Agente compatible citado. | Igual que arriba. |
+
+**Notas:** Revisa los derechos de los logotipos de referencia: solo deben usarse para estudio.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.4.5 (2026-10-20) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El formato es portable entre hosts Agent Skills; un diseño generado necesita revisión de identidad, originalidad y posibles coincidencias de marca |
 | Coste | Consumo del agente que ya utilizas. Usa el plan del agente; exportación y referencias tienen requisitos y licencias separados |
 | Equipo | Preparación según la ruta elegida. Agente compatible; brief de marca; Python para utilidades; renderer opcional |
-
-El formato es portable entre hosts Agent Skills; un diseño generado necesita revisión de identidad, originalidad y posibles coincidencias de marca
-
-## Qué puedes hacer con él
-
-Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.
-
-## Por qué destaca
-
-Usos propuestos: Explorar un logotipo; Preparar variantes monocromas.
-
-## Cómo funciona
 
 El formato es portable entre hosts Agent Skills; un diseño generado necesita revisión de identidad, originalidad y posibles coincidencias de marca
 
