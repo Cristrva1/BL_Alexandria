@@ -2932,7 +2932,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/microsoft/markitdown/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos Office para consulta; Crear una copia textual de un informe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ppt-master](human/fichas/ppt-master.md) · [open-notebook](human/fichas/open-notebook.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Khoj](human/fichas/khoj.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/markitdown.md) · [GitHub](https://github.com/microsoft/markitdown)
 
 #### 🔄 MinerU
@@ -2941,7 +2941,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv pip install -U "mineru>=4.0,<5"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar PDFs complejos para un índice; Extraer tablas y fórmulas de un documento propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [RAGFlow](human/fichas/ragflow.md)<br>
+**Combina con:** [LightRAG](human/fichas/lightrag.md) · [vLLM](human/fichas/vllm.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/mineru.md) · [GitHub](https://github.com/opendatalab/MinerU)
 
 #### 🔄 Pandoc
@@ -2950,7 +2950,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://pandoc.org/installing.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Generar documentos desde Markdown; Convertir un libro propio a EPUB — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [markitdown](human/fichas/markitdown.md)<br>
+**Combina con:** [reveal.js](human/fichas/reveal-js.md) · [markitdown](human/fichas/markitdown.md) · [Marker](human/fichas/marker.md)<br>
 **Más:** [ficha completa](human/fichas/pandoc.md) · [GitHub](https://github.com/jgm/pandoc)
 
 #### 🔄 Marker
@@ -2959,7 +2959,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install marker-pdf` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LlamaIndex](human/fichas/llama-index.md)<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/marker.md) · [GitHub](https://github.com/datalab-to/marker)
 
 #### 🔄 PDF Inspector
@@ -2968,7 +2968,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install pdf-inspector` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Decidir cuándo hace falta OCR; Extraer texto con posiciones de un PDF — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [Docling](human/fichas/docling.md)<br>
+**Combina con:** [firecrawl](human/fichas/firecrawl.md) · [PDFMathTranslate](human/fichas/pdfmathtranslate.md) · [PaddleOCR](human/fichas/paddleocr.md) · [OCRmyPDF](human/fichas/ocrmypdf.md)<br>
 **Más:** [ficha completa](human/fichas/pdf-inspector.md) · [GitHub](https://github.com/firecrawl/pdf-inspector)
 
 #### 🔄 Unstructured
@@ -2977,7 +2977,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/Unstructured-IO/unstructured/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LlamaIndex](human/fichas/llama-index.md)<br>
+**Combina con:** [Tesseract](human/fichas/tesseract.md) · [langchain](human/fichas/langchain.md) · [Qdrant](human/fichas/qdrant.md)<br>
 **Más:** [ficha completa](human/fichas/unstructured.md) · [GitHub](https://github.com/Unstructured-IO/unstructured)
 
 ### OCR
@@ -2988,7 +2988,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.en.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Docling](human/fichas/docling.md)<br>
+**Combina con:** [PDF Inspector](human/fichas/pdf-inspector.md) · [RAGFlow](human/fichas/ragflow.md) · [dify](human/fichas/dify.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/paddleocr.md) · [GitHub](https://github.com/PaddlePaddle/PaddleOCR)
 
 #### 🔠 OCRmyPDF ⭐
@@ -2997,7 +2997,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://ocrmypdf.readthedocs.io/en/latest/installation.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Tesseract](human/fichas/tesseract.md) · [Docling](human/fichas/docling.md)<br>
+**Combina con:** [Tesseract](human/fichas/tesseract.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Stirling-PDF](human/fichas/stirling-pdf.md)<br>
 **Más:** [ficha completa](human/fichas/ocrmypdf.md) · [GitHub](https://github.com/ocrmypdf/OCRmyPDF)
 
 #### 🔠 Tesseract
@@ -3006,7 +3006,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://tesseract-ocr.github.io/tessdoc/Installation.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md)<br>
+**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Unstructured](human/fichas/unstructured.md)<br>
 **Más:** [ficha completa](human/fichas/tesseract.md) · [GitHub](https://github.com/tesseract-ocr/tesseract)
 
 #### 🔠 Unlimited-OCR
@@ -3016,7 +3016,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Comando documentado:** `pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \
   tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [cosmos](human/fichas/cosmos.md) · [ComfyUI](human/fichas/comfyui.md)<br>
+**Combina con:** [SGLang](human/fichas/sglang.md) · [vLLM](human/fichas/vllm.md) · [Transformers](human/fichas/transformers.md)<br>
 **Más:** [ficha completa](human/fichas/unlimited-ocr.md) · [GitHub](https://github.com/baidu/Unlimited-OCR)
 
 #### 🔠 olmOCR
@@ -3025,7 +3025,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install olmocr` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [vLLM](human/fichas/vllm.md)<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [LightRAG](human/fichas/lightrag.md) · [open-notebook](human/fichas/open-notebook.md)<br>
 **Más:** [ficha completa](human/fichas/olmocr.md) · [GitHub](https://github.com/allenai/olmocr)
 
 #### 📚 pdf-craft
@@ -3034,7 +3034,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `python -m pip install "pdf-craft[local]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una versión editable de un escaneo propio; Preparar un EPUB desde material autorizado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Unlimited-OCR](human/fichas/unlimited-ocr.md)<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [Pandoc](human/fichas/pandoc.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/pdf-craft.md) · [GitHub](https://github.com/oomol-lab/pdf-craft)
 
 ### Herramientas PDF
@@ -3045,7 +3045,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md)<br>
+**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [n8n](human/fichas/n8n.md) · [paperless-ngx](human/fichas/paperless-ngx.md)<br>
 **Más:** [ficha completa](human/fichas/stirling-pdf.md) · [GitHub](https://github.com/Stirling-Tools/Stirling-PDF)
 
 #### 📑 PDFMathTranslate
@@ -3055,7 +3055,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Comando documentado:** `pip install uv
    uv tool install --python 3.12 pdf2zh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md)<br>
+**Combina con:** [PDF Inspector](human/fichas/pdf-inspector.md) · [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/pdfmathtranslate.md) · [GitHub](https://github.com/PDFMathTranslate/PDFMathTranslate)
 
 #### ⚙️ docuseal
@@ -3064,6 +3064,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `docker run --name docuseal -p 3000:3000 -v.:/data docuseal/docuseal` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [twenty-main](human/fichas/twenty-main.md) · [Stirling-PDF](human/fichas/stirling-pdf.md)<br>
 **Más:** [ficha completa](human/fichas/docuseal.md) · [GitHub](https://github.com/docusealco/docuseal)
 
 #### 📄 pdfcraft
@@ -3072,7 +3073,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [markitdown](human/fichas/markitdown.md)<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [docuseal](human/fichas/docuseal.md) · [paperless-ngx](human/fichas/paperless-ngx.md)<br>
 **Más:** [ficha completa](human/fichas/pdfcraft.md) · [GitHub](https://github.com/PDFCraftTool/pdfcraft)
 
 #### 📑 PdfDing
@@ -3081,7 +3082,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://docs.pdfding.com/getting_started/docker/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [markitdown](human/fichas/markitdown.md) · [ppt-master](human/fichas/ppt-master.md) · [reveal.js](human/fichas/reveal-js.md)<br>
+**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/pdfding.md) · [GitHub](https://codeberg.org/mrmn/PdfDing)
 
 ### Gestión y archivo de documentos
@@ -3092,6 +3093,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://docs.paperless-ngx.com/setup/#installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [Tesseract](human/fichas/tesseract.md) · [n8n](human/fichas/n8n.md) · [ERPNext](human/fichas/erpnext.md)<br>
 **Más:** [ficha completa](human/fichas/paperless-ngx.md) · [GitHub](https://github.com/paperless-ngx/paperless-ngx)
 
 ---

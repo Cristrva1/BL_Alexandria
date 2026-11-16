@@ -1,0 +1,649 @@
+{
+ "batch": "07-documentos-ocr-pdf",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "markitdown": {
+   "que_es": "Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.",
+   "que_hace": "Convierte PDF, PowerPoint, Word, Excel, imágenes (metadatos EXIF y descripción), audio (metadatos y transcripción), HTML, CSV/JSON/XML, ZIP (recorre su contenido), URLs de YouTube y EPUB a Markdown que conserva la estructura (títulos, listas, tablas, enlaces). La descripción de imágenes y la transcripción dependen de servicios web. Advierte que hace E/S con los privilegios del proceso: hay que sanear las entradas en entornos no confiables.",
+   "como_lo_hace": "Requiere Python 3.10–3.14; se instala con `pip install 'markitdown[all]'` o solo con los extras necesarios (`[pdf, docx, pptx]`, `[az-doc-intel]`, `[az-content-understanding]`). Ofrece CLI, API Python, complementos de terceros (desactivados por defecto) y el paquete `markitdown-mcp` para exponerlo a agentes.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El paquete `markitdown-mcp` del repositorio expone la conversión a agentes compatibles con MCP.",
+     "orden_instalacion": "Instala markitdown-mcp y regístralo; limita las rutas que puede leer."
+    },
+    {
+     "id": "khoj",
+     "motivo": "Convertir formatos no soportados a Markdown antes de indexarlos (combinación por arquitectura).",
+     "orden_instalacion": "Convierte primero y sincroniza la carpeta resultante."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "MarkItDown extrae a Markdown y Pandoc lo publica en DOCX, HTML, LaTeX o EPUB (combinación por arquitectura).",
+     "orden_instalacion": "Independientes; encadénalos en un script."
+    }
+   ],
+   "notas": "Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada.",
+   "fuentes": [
+    "https://github.com/microsoft/markitdown/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "microsoft/markitdown",
+    "archived": false,
+    "pushed_at": "2026-11-07",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.1.9 (2026-10-21)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mineru": {
+   "que_es": "Herramienta de análisis de documentos de OpenDataLab (Shanghai AI Laboratory) que convierte PDF y otros formatos en datos estructurados. Usa la «MinerU Open Source License», basada en Apache 2.0 con condiciones adicionales; muy activa (serie 4.2).",
+   "que_hace": "Analiza PDF, imágenes escaneadas, Word, PowerPoint y Excel con reconocimiento de fórmulas en línea, diseño complejo y fusión de tablas entre páginas, y aprovecha la estructura de PDF etiquetados. Un mismo modelo de documento se renderiza a nueve destinos (Markdown, HTML, LaTeX, DOCX, EPUB, PDF y otros). Incluye WebUI con navegación entre original y resultado, API de tareas asíncronas `/v1/tasks`, router multiservicio y una skill para agentes.",
+   "como_lo_hace": "Paquete Python (recomendado en entorno uv con Python 3.12: `uv pip install -U \"mineru>=4.0,<5\"`) con SDK, API V1, conversión por lotes, router y WebUI Gradio. Funciona en CPU en Windows, Linux y macOS y acelera en GPU Intel, AMD, NVIDIA (ONNX) y Apple Silicon; los modelos pequeños usan ONNX o Torch y el VLM puede servirse con llama.cpp, vLLM o LMDeploy. En Windows con NVIDIA y `mineru[full]` hay que instalar aparte un torch con GPU.",
+   "combina_con": [
+    {
+     "id": "lightrag",
+     "motivo": "Servicio de análisis multimodal soportado por LightRAG tras integrar RAG-Anything.",
+     "orden_instalacion": "Arranca el servicio de MinerU y apunta LightRAG a su API."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Backend documentado para servir el VLM de MinerU con GPU.",
+     "orden_instalacion": "vLLM con el modelo de MinerU; configúralo en MinerU antes de procesar lotes."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Skill oficial `mineru` que instala la herramienta y la usa para leer y citar documentos.",
+     "orden_instalacion": "`npx skills add opendatalab/MinerU --skill mineru` y deja que el agente complete la instalación."
+    }
+   ],
+   "notas": "Alternativas (elige una): docling, marker. Revisa las condiciones adicionales de su licencia antes de uso comercial. Se retiró ragflow por no estar documentado.",
+   "fuentes": [
+    "https://github.com/opendatalab/MinerU/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "opendatalab/MinerU",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "mineru-4.2.2-released (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pandoc": {
+   "que_es": "Conversor universal de formatos de marcado de John MacFarlane: una biblioteca Haskell y una herramienta de línea de comandos. GPL-2.0, muy madura y activa (versión 3.14).",
+   "que_hace": "Convierte entre decenas de formatos: Markdown (CommonMark, GFM y variantes), HTML, LaTeX, DOCX, ODT, EPUB, Jupyter, AsciiDoc, DocBook, JATS, wikis (MediaWiki, DokuWiki, Jira) y bibliografías (BibTeX, CSL JSON, EndNote), y genera también presentaciones (Beamer, reveal.js y otras) y PDF mediante un motor externo. Sirve para publicar documentación, artículos académicos con citas y libros electrónicos desde una sola fuente.",
+   "como_lo_hace": "Lee el documento a una representación interna y lo escribe al formato de destino; admite filtros en Lua para transformar el documento y lectores o escritores personalizados en Lua. Se distribuye como binario para las principales plataformas; generar PDF requiere un motor como LaTeX.",
+   "combina_con": [
+    {
+     "id": "reveal.js",
+     "motivo": "Pandoc genera presentaciones reveal.js desde Markdown.",
+     "orden_instalacion": "Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "MarkItDown extrae a Markdown y Pandoc lo convierte al formato final (combinación por arquitectura).",
+     "orden_instalacion": "Encadénalos en un script."
+    },
+    {
+     "id": "marker",
+     "motivo": "Marker convierte PDF complejos a Markdown que luego Pandoc publica (combinación por arquitectura).",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/jgm/pandoc/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "jgm/pandoc",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-2.0",
+    "primary_language": "Haskell",
+    "latest_release": "3.14 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "marker": {
+   "que_es": "Conversor de documentos de Datalab que produce Markdown, JSON, fragmentos y HTML. El código es Apache 2.0, pero los pesos de los modelos usan una licencia OpenRAIL-M modificada (gratuita para investigación, uso personal y empresas pequeñas, con condiciones para el resto); activo (v2.2.0) y con API gestionada de pago.",
+   "que_hace": "Convierte PDF, imágenes, PPTX, DOCX, XLSX, HTML y EPUB en cualquier idioma, da formato a tablas, formularios, ecuaciones, fórmulas en línea, enlaces y código, extrae imágenes y elimina encabezados y pies. Opcionalmente usa un LLM (`--use_llm`) para fusionar tablas entre páginas y mejorar matemáticas y formularios. Según su propio benchmark supera a MinerU y docling en precisión y velocidad [DATO NO VERIFICADO: benchmark del propio proyecto].",
+   "como_lo_hace": "Biblioteca Python 3.10+ con PyTorch (`pip install marker-pdf`, `[full]` para formatos no PDF) que funciona en GPU, CPU o MPS. El modo `balanced` enruta páginas sencillas a extracción de texto con un modelo de diseño ONNX y las complejas al VLM Surya 2.5 (0,69B); el modo `vllm` aplica OCR por VLM a todas las páginas. Surya lanza su servidor automáticamente y necesita vLLM (GPU NVIDIA) o llama.cpp (CPU / Apple Silicon).",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Backend requerido por Surya en GPU NVIDIA para el modo VLM.",
+     "orden_instalacion": "Instala vLLM en el mismo entorno o servidor antes de usar los modos `balanced` o `vllm`."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "Backend de Surya en CPU o Apple Silicon.",
+     "orden_instalacion": "Instala llama.cpp antes de la primera conversión."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Publicar el Markdown resultante en DOCX, EPUB o LaTeX (combinación por arquitectura).",
+     "orden_instalacion": "Encadénalos en un script."
+    }
+   ],
+   "notas": "Alternativas (elige una): docling, mineru, pdf-craft. Se retiró llama-index por no estar documentado en el README actual.",
+   "fuentes": [
+    "https://github.com/datalab-to/marker/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "datalab-to/marker",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v2.2.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pdf-inspector": {
+   "que_es": "Biblioteca en Rust de Firecrawl (MIT) para clasificar PDF y extraer su texto. Muy activa (v1.26.0) y disponible para Rust, CLI, Python, Node y WebAssembly en navegador.",
+   "que_hace": "Detecta en 10–50 ms si un PDF es de texto, escaneado, de imagen o mixto, con puntuación de confianza y decisión de OCR por página, y convierte los PDF de texto a Markdown limpio en local en menos de 200 ms (encabezados, listas, código, tablas, negritas, varias columnas, texto RTL). Según Firecrawl evita servicios de OCR caros en cerca del 54 % de los PDF. Marca codificaciones de fuente rotas para recurrir a OCR y puede ejecutar OCR selectivo con PP-OCRv6 Small solo en las páginas que lo necesitan.",
+   "como_lo_hace": "Analiza el documento una sola vez y comparte el resultado entre detección y extracción; usa los flujos de contenido del PDF, coordenadas y fuentes, detección de tablas por rectángulos y por alineación, y decodificación CID/ToUnicode. Se instala con `pip install pdf-inspector`, `npm install @firecrawl/pdf-inspector` o como crate de Rust.",
+   "combina_con": [
+    {
+     "id": "firecrawl",
+     "motivo": "Desarrollado por Firecrawl para procesar PDF de texto en local antes de recurrir a OCR.",
+     "orden_instalacion": "Integrado en Firecrawl; úsalo directamente solo en canalizaciones propias."
+    },
+    {
+     "id": "pdfmathtranslate",
+     "motivo": "El modo `--ultrafast` de PDFMathTranslate usa las posiciones de texto de pdf-inspector.",
+     "orden_instalacion": "Viene como dependencia de PDFMathTranslate."
+    },
+    {
+     "id": "paddleocr",
+     "motivo": "El OCR selectivo usa el modelo PP-OCRv6 Small de PaddleOCR.",
+     "orden_instalacion": "Activa el OCR selectivo solo para páginas escaneadas."
+    },
+    {
+     "id": "ocrmypdf",
+     "motivo": "Enviar a OCRmyPDF los PDF clasificados como escaneados (combinación por arquitectura).",
+     "orden_instalacion": "Clasifica primero; aplica OCR solo donde haga falta."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/firecrawl/pdf-inspector/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "firecrawl/pdf-inspector",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "latest_release": "v1.26.0 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "unstructured": {
+   "que_es": "Biblioteca de código abierto (Apache 2.0) de Unstructured.io para ingerir y preprocesar documentos e imágenes. Muy activa (0.27.x); la empresa ofrece modelos de mayor calidad en su API de pago Transform v2, y según su propia tabla la versión abierta queda claramente por debajo en tablas [DATO NO VERIFICADO: benchmark de la empresa].",
+   "que_hace": "Particiona PDF, HTML, Word y muchos otros formatos en elementos tipados (títulos, párrafos, tablas, listas) listos para limpiar, trocear y cargar en canalizaciones de RAG o análisis. Se usa como etapa de preprocesado antes de generar embeddings.",
+   "como_lo_hace": "Biblioteca Python instalable desde PyPI (con extras por formato) o en contenedor Docker multiplataforma (imagen basada en wolfi-base). Para imágenes necesita Tesseract y para PDF Tesseract y Poppler; otros formatos requieren dependencias del sistema como LibreOffice [DATO NO VERIFICADO: lista completa].",
+   "combina_con": [
+    {
+     "id": "tesseract",
+     "motivo": "Dependencia necesaria para OCR de imágenes y PDF.",
+     "orden_instalacion": "Instala Tesseract (y sus paquetes de idioma) antes de procesar escaneados."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Usar los elementos particionados como cargador de documentos en canalizaciones de RAG (combinación por arquitectura).",
+     "orden_instalacion": "Instala el paquete de integración en el mismo entorno."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Guardar los fragmentos procesados con sus embeddings (combinación por arquitectura).",
+     "orden_instalacion": "Define el troceado y el modelo de embeddings antes de crear la colección."
+    }
+   ],
+   "notas": "Alternativa (elige una): docling. Se retiró llama-index por no estar documentado en el README.",
+   "fuentes": [
+    "https://github.com/Unstructured-IO/unstructured/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Unstructured-IO/unstructured",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "HTML",
+    "latest_release": "0.27.37 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "paddleocr": {
+   "que_es": "Kit de OCR y motor de IA documental de Baidu sobre PaddlePaddle, Apache 2.0. Muy usado (más de 6.000 repositorios dependientes según su insignia) y activo (v3.7.0, último push en septiembre de 2026).",
+   "que_hace": "Convierte PDF e imágenes en JSON o Markdown listos para LLM: el VLM PaddleOCR-VL-1.6 (0,9B) para análisis de documentos, PP-StructureV3 para conversión con estructura más fina, y PP-OCRv6 para reconocimiento de texto en escenas en muchos idiomas. Según el README lo usan proyectos como Dify y RAGFlow.",
+   "como_lo_hace": "Biblioteca Python sobre el framework PaddlePaddle, con modelos publicados en Hugging Face y ModelScope. La canalización HPD-Parsing admite servicio compatible con OpenAI e inferencia local con un runtime personalizado de vLLM [DATO NO VERIFICADO: requisitos de hardware por modelo].",
+   "combina_con": [
+    {
+     "id": "pdf-inspector",
+     "motivo": "pdf-inspector usa PP-OCRv6 Small para el OCR selectivo de páginas escaneadas.",
+     "orden_instalacion": "Usa pdf-inspector para decidir qué páginas pasan por OCR."
+    },
+    {
+     "id": "ragflow",
+     "motivo": "El README cita RAGFlow entre los proyectos que lo integran.",
+     "orden_instalacion": "Revisa en RAGFlow qué versión de PaddleOCR usa antes de mezclar instalaciones."
+    },
+    {
+     "id": "dify",
+     "motivo": "El README cita Dify entre los proyectos que lo integran.",
+     "orden_instalacion": "Úsalo como servicio externo de OCR o herramienta dentro de los flujos."
+    },
+    {
+     "id": "vllm",
+     "motivo": "HPD-Parsing usa un runtime personalizado de vLLM para inferencia local.",
+     "orden_instalacion": "Sigue la guía de HPD-Parsing; no mezcles con otra versión de vLLM en el mismo entorno."
+    }
+   ],
+   "notas": "Alternativas (elige una): tesseract, olmocr, unlimited-ocr. Se retiró docling por no estar documentado.",
+   "fuentes": [
+    "https://github.com/PaddlePaddle/PaddleOCR/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "PaddlePaddle/PaddleOCR",
+    "archived": false,
+    "pushed_at": "2026-09-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.7.0 (2026-06-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ocrmypdf": {
+   "que_es": "Herramienta de línea de comandos de código abierto (MPL-2.0) que añade una capa de texto OCR a PDF escaneados. Muy madura (v17.14) y probada en millones de PDF.",
+   "que_hace": "Genera PDF/A buscables, coloca el texto OCR bajo la imagen para copiar y pegar, conserva la resolución original, inserta el OCR sin pérdidas cuando puede, optimiza imágenes (a menudo reduce el tamaño), endereza y limpia páginas y corrige rotaciones. Reconoce más de 100 idiomas y procesa archivos de miles de páginas en local.",
+   "como_lo_hace": "Programa Python que usa el motor Tesseract y reparte el trabajo entre todos los núcleos de CPU. Se instala con `apt install ocrmypdf`, Homebrew, pip o Docker (x64 y ARM) en Linux, Windows, macOS y FreeBSD; los idiomas se añaden instalando paquetes de Tesseract.",
+   "combina_con": [
+    {
+     "id": "tesseract",
+     "motivo": "Es su motor de OCR.",
+     "orden_instalacion": "Instala Tesseract y los idiomas necesarios antes (los paquetes del sistema lo hacen solos)."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Paperless-ngx usa OCRmyPDF como dependencia para el OCR de documentos.",
+     "orden_instalacion": "Viene incluido en Paperless; no lo instales aparte para ese uso."
+    },
+    {
+     "id": "stirling-pdf",
+     "motivo": "La imagen de Stirling PDF incluye OCRmyPDF para su herramienta de OCR.",
+     "orden_instalacion": "Incluido en la imagen Docker."
+    }
+   ],
+   "notas": "Se retiró docling por no estar documentado.",
+   "fuentes": [
+    "https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md",
+    "https://github.com/paperless-ngx/paperless-ngx/blob/dev/pyproject.toml"
+   ],
+   "github": {
+    "name_with_owner": "ocrmypdf/OCRmyPDF",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MPL-2.0",
+    "primary_language": "Python",
+    "latest_release": "v17.14.2 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "tesseract": {
+   "que_es": "Motor de OCR de código abierto (Apache 2.0) con biblioteca `libtesseract` y programa `tesseract`; nacido en HP y desarrollado después por Google. Hoy lo lidera Stefan Weil y lo mantiene Zdenko Podobny; maduro (5.5.4).",
+   "que_hace": "Reconoce texto en más de 100 idiomas con soporte Unicode a partir de PNG, JPEG, TIFF y otros formatos, y produce texto plano, hOCR, PDF buscable, TSV, ALTO y otros. Es la base de OCR de muchas herramientas de documentos.",
+   "como_lo_hace": "Desde Tesseract 4 usa un motor de redes neuronales LSTM centrado en líneas, además del motor clásico de patrones. Necesita archivos `traineddata` por idioma (repositorios tessdata). Se instala con paquetes del sistema o compilando; se usa desde la CLI o la API C/C++, con wrappers en muchos lenguajes.",
+   "combina_con": [
+    {
+     "id": "ocrmypdf",
+     "motivo": "OCRmyPDF usa Tesseract para añadir capas de texto a PDF.",
+     "orden_instalacion": "Instala Tesseract y los idiomas primero."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Hace el OCR de Paperless a través de OCRmyPDF.",
+     "orden_instalacion": "Incluido en la imagen de Paperless; añade idiomas con su configuración."
+    },
+    {
+     "id": "unstructured",
+     "motivo": "Dependencia de unstructured para OCR de imágenes y PDF.",
+     "orden_instalacion": "Instálalo antes de procesar escaneados."
+    }
+   ],
+   "notas": "Alternativa (elige una): paddleocr. Para diseños complejos o escritura a mano rinde peor que los modelos VLM.",
+   "fuentes": [
+    "https://github.com/tesseract-ocr/tesseract/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "tesseract-ocr/tesseract",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "latest_release": "5.5.4 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "unlimited-ocr": {
+   "que_es": "Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay releases en GitHub.",
+   "que_hace": "Busca analizar documentos de longitud «ilimitada» (lo que llaman OCR-3.0) con una técnica de atención de ventana deslizante (SR-SWA), en lugar de procesar página a página. El modelo está disponible en Hugging Face, ModelScope y Baidu Cloud, y admite entrenamiento con ms-swift.",
+   "como_lo_hace": "Se ejecuta con Transformers para pruebas rápidas (probado con Python 3.10, torch 2.13 y transformers 4.52.1 en una NVIDIA A800 de 80 GB) o con SGLang, recomendado para servir; también admite inferencia con vLLM. Requiere GPU con mucha memoria [DATO NO VERIFICADO: mínimo de VRAM].",
+   "combina_con": [
+    {
+     "id": "sglang",
+     "motivo": "Backend recomendado para servir el modelo.",
+     "orden_instalacion": "Instala SGLang en un servidor con GPU y carga el modelo desde Hugging Face."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Inferencia soportada gracias a la comunidad de vLLM.",
+     "orden_instalacion": "Alternativa a SGLang: usa uno de los dos."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Ejecución nativa para pruebas rápidas.",
+     "orden_instalacion": "Fija las versiones probadas en un entorno aislado."
+    }
+   ],
+   "notas": "Alternativas (elige una): olmocr, paddleocr. Se retiraron litellm, cosmos y comfyui por no tener relación documentada.",
+   "fuentes": [
+    "https://github.com/baidu/Unlimited-OCR/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "baidu/Unlimited-OCR",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "olmocr": {
+   "que_es": "Kit del Allen Institute for AI (Apache 2.0) para convertir PDF y documentos de imagen en texto limpio. Versión v0.4.27; el último push es de marzo de 2026 y el último modelo anunciado en el README, de octubre de 2025.",
+   "que_hace": "Convierte PDF, PNG y JPEG a Markdown con orden de lectura natural incluso con figuras y varias columnas, y soporta ecuaciones, tablas, escritura a mano y formatos complejos; elimina encabezados y pies. Según el README cuesta menos de 200 USD por millón de páginas. Incluye el benchmark olmOCR-Bench y código para entrenar modelos propios.",
+   "como_lo_hace": "Se basa en un VLM de 7B parámetros servido con vLLM, por lo que necesita una GPU NVIDIA reciente con al menos 12 GB (probado en RTX 4090, L40S, A100, H100), o un servidor vLLM remoto con `--server` instalando solo el paquete base. Requiere poppler-utils y fuentes adicionales; hay imágenes Docker oficiales con CUDA 12.8.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Motor de inferencia de su canalización, local o remoto.",
+     "orden_instalacion": "Servidor vLLM con el modelo olmOCR primero si usas `--server`."
+    },
+    {
+     "id": "lightrag",
+     "motivo": "Alimentar un RAG con Markdown limpio de documentos escaneados (combinación por arquitectura).",
+     "orden_instalacion": "Convierte primero y luego indexa."
+    },
+    {
+     "id": "open-notebook",
+     "motivo": "Cargar documentos convertidos como fuentes de investigación (combinación por arquitectura).",
+     "orden_instalacion": "Convierte primero y súbelos como Markdown."
+    }
+   ],
+   "notas": "Alternativas (elige una): paddleocr, docling, unlimited-ocr.",
+   "fuentes": [
+    "https://github.com/allenai/olmocr/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "allenai/olmocr",
+    "archived": false,
+    "pushed_at": "2026-03-25",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.4.27 (2026-03-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "stirling-pdf": {
+   "que_es": "Plataforma de edición de PDF de código abierto con modelo «open core» de Stirling Tools (licencia mixta; ver LICENSE). Muy activa (v3.3.0), con planes de servidor y Enterprise de pago.",
+   "que_hace": "Ofrece más de 50 herramientas para editar, unir, dividir, firmar, censurar, convertir, aplicar OCR y comprimir PDF, con canalizaciones sin código en la interfaz y API REST para casi todas. Funciona como app de escritorio, en el navegador o autoalojado con API privada; interfaz en más de 40 idiomas, y SSO y auditoría en la oferta Enterprise.",
+   "como_lo_hace": "Servidor Java (imagen basada en Eclipse Temurin) con frontend TypeScript, que incluye en su imagen herramientas como OCRmyPDF, Tesseract, LibreOffice (vía unoserver), QPDF, Ghostscript, Calibre e ImageMagick. Arranque rápido con `docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf`; también desktop y Kubernetes.",
+   "combina_con": [
+    {
+     "id": "ocrmypdf",
+     "motivo": "Incluido en la imagen para la herramienta de OCR.",
+     "orden_instalacion": "No hace falta instalarlo aparte."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Automatizar conversiones u OCR masivo llamando a su API REST (combinación por arquitectura).",
+     "orden_instalacion": "Protege la API con clave antes de exponerla."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Preparar o limpiar PDF antes de archivarlos (combinación por arquitectura).",
+     "orden_instalacion": "Independientes; cambia el puerto 8080 si choca con otro servicio."
+    }
+   ],
+   "notas": "Alternativa (elige una): pdfcraft.",
+   "fuentes": [
+    "https://github.com/Stirling-Tools/Stirling-PDF/blob/main/README.md",
+    "https://github.com/Stirling-Tools/Stirling-PDF/blob/main/docker/base/Dockerfile"
+   ],
+   "github": {
+    "name_with_owner": "Stirling-Tools/Stirling-PDF",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.3.0 (2026-11-05)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pdfmathtranslate": {
+   "que_es": "Herramienta de código abierto (AGPL-3.0) para traducir PDF científicos conservando el diseño, también conocida como pdf2zh. Muy activa (v1.9.11) y con servicio público gratuito en línea.",
+   "que_hace": "Traduce PDF manteniendo fórmulas, gráficos, índice y anotaciones, y genera un PDF traducido y otro bilingüe. Admite varios idiomas y servicios de traducción (entre ellos Google, DeepL, OpenAI y MiniMax). En 2026 añadió un modo `--ultrafast` para PDF de texto, OCR experimental y un núcleo de traducción v2.0 en modo `--mode precise`.",
+   "como_lo_hace": "Aplicación Python que se instala con `uv tool install --python 3.12 pdf2zh` y se usa por CLI (`pdf2zh documento.pdf`), interfaz interactiva en el puerto 7860 (`pdf2zh -i`) o Docker (`byaidu/pdf2zh`). El modo rápido usa pdf-inspector y se salta el análisis de diseño ONNX y el OCR.",
+   "combina_con": [
+    {
+     "id": "pdf-inspector",
+     "motivo": "Usado por el modo `--ultrafast` para las posiciones del texto.",
+     "orden_instalacion": "Se instala como dependencia."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Traducir con un modelo local para no enviar el documento fuera (combinación por arquitectura; [DATO NO VERIFICADO: soporte en la versión actual]).",
+     "orden_instalacion": "Ollama con un modelo multilingüe antes de configurar el servicio."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Enrutar el servicio compatible con OpenAI a varios proveedores (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; apunta la URL base de OpenAI a él."
+    }
+   ],
+   "notas": "El servicio público en línea procesa tus documentos en servidores ajenos.",
+   "fuentes": [
+    "https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "PDFMathTranslate/PDFMathTranslate",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v1.9.11 (2025-07-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pdfcraft": {
+   "que_es": "Suite de herramientas PDF en el navegador de PDFCraftTool, AGPL-3.0, activa con versiones por fecha. Tiene un proyecto hermano de escritorio, LibrePDF (Apache 2.0).",
+   "que_hace": "Ofrece más de 80 herramientas para unir, dividir, comprimir, convertir, rotar y editar PDF directamente en el navegador, sin subir archivos a servidores. Interfaz en ocho idiomas, entre ellos español.",
+   "como_lo_hace": "Aplicación Next.js con Tailwind CSS que procesa los archivos en el cliente con WebAssembly y bibliotecas como pdf-lib. Se despliega como sitio estático o con la imagen Docker `ghcr.io/pdfcrafttool/pdfcraft` (por ejemplo en el puerto 8080) o Docker Compose.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Autoalojar la imagen Docker con dominio y HTTPS (combinación por arquitectura).",
+     "orden_instalacion": "Crea el servicio desde la imagen en Coolify."
+    },
+    {
+     "id": "docuseal",
+     "motivo": "Preparar el PDF (unir, comprimir) antes de enviarlo a firmar (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Ajustar documentos antes de archivarlos (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    }
+   ],
+   "notas": "Alternativa (elige una): stirling-pdf. Se retiró markitdown por falta de relación.",
+   "fuentes": [
+    "https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "PDFCraftTool/pdfcraft",
+    "archived": false,
+    "pushed_at": "2026-11-08",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v2026.11.08-98e89d4 (2026-11-08)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pdfding": {
+   "que_es": "Gestor, visor y editor de PDF autoalojado de mrmn2. **El repositorio de GitHub está archivado**: el proyecto se gestiona ahora en Codeberg (codeberg.org/mrmn/PdfDing); último push en GitHub en agosto de 2026.",
+   "que_hace": "Permite leer PDF en el navegador en varios dispositivos recordando la posición, organizar la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos y archivo, editar con texto, resaltados, dibujos y firmas, exportar resaltados y comentarios, compartir por enlace o QR con control de acceso y tomar notas en Markdown. Incluye SSO por OIDC y 2FA (TOTP y WebAuthn).",
+   "como_lo_hace": "Aplicación web autoalojada pensada para ser mínima y rápida, desplegada con Docker, Docker Compose o Helm, o en PikaPods [DATO NO VERIFICADO: stack y base de datos, no descritos en el README].",
+   "combina_con": [
+    {
+     "id": "ocrmypdf",
+     "motivo": "Aplicar OCR a escaneados antes de subirlos para poder buscar y resaltar texto (combinación por arquitectura).",
+     "orden_instalacion": "Procesa los archivos antes de importarlos."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Paperless archiva y clasifica; PdfDing sirve para leer y anotar (combinación por arquitectura).",
+     "orden_instalacion": "Decide qué sistema guarda el original para no duplicar."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar el contenedor con dominio y HTTPS (combinación por arquitectura).",
+     "orden_instalacion": "Usa la imagen y la documentación de Codeberg."
+    }
+   ],
+   "notas": "Actualiza la URL del catálogo a Codeberg. Se retiraron markitdown, ppt-master y reveal.js por falta de relación.",
+   "fuentes": [
+    "https://github.com/mrmn2/PdfDing/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "mrmn2/PdfDing",
+    "archived": true,
+    "pushed_at": "2026-08-29",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "docuseal": {
+   "que_es": "Plataforma de código abierto (AGPL-3.0) para rellenar y firmar documentos, de DocuSeal. Activa (3.3.6), con nube de pago y funciones Pro.",
+   "que_hace": "Crea formularios PDF con un editor visual de 12 tipos de campo, admite varios firmantes por documento, envía correos por SMTP, aplica firma electrónica automática y verifica firmas. Incluye gestión de usuarios, firma optimizada para móvil, 7 idiomas de interfaz (firma en 14), API y webhooks, y apps para iOS y Android. Las funciones Pro añaden marca propia, roles, recordatorios, verificación por SMS, campos condicionales, envíos masivos, SSO/SAML y formularios embebidos.",
+   "como_lo_hace": "Aplicación Ruby on Rails que se despliega con `docker run -p 3000:3000` o Docker Compose; usa SQLite por defecto o PostgreSQL/MySQL, y guarda archivos en disco, AWS S3, Google Storage o Azure.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Disparar flujos al completar una firma o crear envíos desde otros sistemas con su API y webhooks (combinación por arquitectura).",
+     "orden_instalacion": "Crea la clave de API y el webhook en DocuSeal antes del flujo."
+    },
+    {
+     "id": "twenty-main",
+     "motivo": "Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura).",
+     "orden_instalacion": "Usa un flujo intermedio con el webhook de DocuSeal."
+    },
+    {
+     "id": "stirling-pdf",
+     "motivo": "Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura).",
+     "orden_instalacion": "Independientes; cambia puertos si coinciden."
+    }
+   ],
+   "notas": "Para producción usa PostgreSQL en lugar de SQLite y configura SMTP con SPF/DKIM.",
+   "fuentes": [
+    "https://github.com/docusealco/docuseal/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "docusealco/docuseal",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "AGPL-3.0",
+    "primary_language": "Ruby",
+    "latest_release": "3.3.6 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pdf-craft": {
+   "que_es": "Biblioteca Python de código abierto (MIT) de oomol-lab para libros escaneados, artículos y documentos técnicos. Activa (v2.6.7), con servicio oficial en línea.",
+   "que_hace": "Convierte PDF escaneados en Markdown editable o EPUB con metadatos e índice, y traduce PDF y EPUB durante la conversión (modos solo traducción o bilingüe). Expone API Python y archivos de extracción reutilizables para renderizar o traducir después. Los resultados dependen de la calidad del escaneo y del modelo OCR.",
+   "como_lo_hace": "Requiere Python 3.11–3.13 y Poppler, y un servicio de OCR compatible con DeepSeek OCR: remoto (con URL y credenciales, sin CUDA) o local (GPU NVIDIA con CUDA, VRAM suficiente y archivos del modelo). La traducción y el análisis del índice usan un LLM, que si es remoto recibe el contenido.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Servir en local un modelo de OCR compatible con DeepSeek OCR (combinación por arquitectura).",
+     "orden_instalacion": "Servidor con GPU y el modelo cargado antes de configurar pdf-craft."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Convertir el Markdown resultante a DOCX o LaTeX (combinación por arquitectura).",
+     "orden_instalacion": "Encadénalos en un script."
+    },
+    {
+     "id": "ollama",
+     "motivo": "LLM local para traducción y análisis del índice sin enviar el texto fuera (combinación por arquitectura).",
+     "orden_instalacion": "Ollama primero; configura su endpoint compatible con OpenAI."
+    }
+   ],
+   "notas": "Alternativa (elige una): marker. Se retiró unlimited-ocr porque no está documentado como backend.",
+   "fuentes": [
+    "https://github.com/oomol-lab/pdf-craft/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "oomol-lab/pdf-craft",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.6.7 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "paperless-ngx": {
+   "que_es": "Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.",
+   "que_hace": "Convierte documentos físicos en un archivo en línea buscable: aplica OCR, extrae texto, clasifica con etiquetas, corresponsales y tipos de documento, y permite buscar y gestionar todo desde una interfaz web. La lista completa de funciones está en su documentación.",
+   "como_lo_hace": "Aplicación Django con Celery y Redis/Valkey; el OCR se hace con OCRmyPDF (dependencia del proyecto). Se despliega con Docker Compose mediante un script de instalación o los archivos de `docker/compose`, con variantes para PostgreSQL, MariaDB o SQLite, y opcionalmente Tika y Gotenberg para procesar documentos de Office y correos.",
+   "combina_con": [
+    {
+     "id": "ocrmypdf",
+     "motivo": "Motor de OCR integrado.",
+     "orden_instalacion": "Incluido; ajusta idiomas en la configuración."
+    },
+    {
+     "id": "tesseract",
+     "motivo": "Motor usado por OCRmyPDF; los idiomas se añaden como paquetes de Tesseract.",
+     "orden_instalacion": "Define `PAPERLESS_OCR_LANGUAGES` antes del primer arranque."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Subir documentos o reaccionar a nuevos archivos mediante su API REST (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token de API en Paperless antes del flujo."
+    },
+    {
+     "id": "erpnext",
+     "motivo": "Archivar facturas y justificantes que se registran en el ERP (combinación por arquitectura).",
+     "orden_instalacion": "Define cuál es el sistema maestro de cada documento."
+    }
+   ],
+   "notas": "Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki.",
+   "fuentes": [
+    "https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md",
+    "https://github.com/paperless-ngx/paperless-ngx/tree/dev/docker/compose"
+   ],
+   "github": {
+    "name_with_owner": "paperless-ngx/paperless-ngx",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v3.4.2 (2026-11-03)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

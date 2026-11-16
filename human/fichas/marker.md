@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Conversor de documentos de Datalab que produce Markdown, JSON, fragmentos y HTML. El código es Apache 2.0, pero los pesos de los modelos usan una licencia OpenRAIL-M modificada (gratuita para investigación, uso personal y empresas pequeñas, con condiciones para el resto); activo (v2.2.0) y con API gestionada de pago.
+
+## ¿Qué hace?
+
+Convierte PDF, imágenes, PPTX, DOCX, XLSX, HTML y EPUB en cualquier idioma, da formato a tablas, formularios, ecuaciones, fórmulas en línea, enlaces y código, extrae imágenes y elimina encabezados y pies. Opcionalmente usa un LLM (`--use_llm`) para fusionar tablas entre páginas y mejorar matemáticas y formularios. Según su propio benchmark supera a MinerU y docling en precisión y velocidad [DATO NO VERIFICADO: benchmark del propio proyecto].
+
+## ¿Cómo lo hace?
+
+Biblioteca Python 3.10+ con PyTorch (`pip install marker-pdf`, `[full]` para formatos no PDF) que funciona en GPU, CPU o MPS. El modo `balanced` enruta páginas sencillas a extracción de texto con un modelo de diseño ONNX y las complejas al VLM Surya 2.5 (0,69B); el modo `vllm` aplica OCR por VLM a todas las páginas. Surya lanza su servidor automáticamente y necesita vLLM (GPU NVIDIA) o llama.cpp (CPU / Apple Silicon).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Backend requerido por Surya en GPU NVIDIA para el modo VLM. | Instala vLLM en el mismo entorno o servidor antes de usar los modos `balanced` o `vllm`. |
+| [llama.cpp](llama-cpp.md) | Backend de Surya en CPU o Apple Silicon. | Instala llama.cpp antes de la primera conversión. |
+| [Pandoc](pandoc.md) | Publicar el Markdown resultante en DOCX, EPUB o LaTeX (combinación por arquitectura). | Encadénalos en un script. |
+
+**Notas:** Alternativas (elige una): docling, mineru, pdf-craft. Se retiró llama-index por no estar documentado en el README actual.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.2.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/datalab-to/marker/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Instalar marker-pdf no completa por sí solo el backend de inferencia; verifica requisitos del modelo y su licencia antes de ampliar volumen |
 | Coste | El coste depende del proveedor o la ruta. Código Apache-2.0; pesos con licencia modificada y condiciones comerciales según organización; LLM opcional puede usar proveedores de pago |
 | Equipo | Preparación según la ruta elegida. Python; backend Surya con vLLM o llama.cpp según sistema; pesos; PDF de prueba |
-
-Instalar marker-pdf no completa por sí solo el backend de inferencia; verifica requisitos del modelo y su licencia antes de ampliar volumen
-
-## Qué puedes hacer con él
-
-Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código.
-
-## Por qué destaca
-
-Usos propuestos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda.
-
-## Cómo funciona
 
 Instalar marker-pdf no completa por sí solo el backend de inferencia; verifica requisitos del modelo y su licencia antes de ampliar volumen
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; backend Surya con vLLM o llama.cpp según sistema; pesos; PDF de prueba
 - **Etiquetas:** `docs` `pdf` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
 
 ## Alternativas (elige una)
 

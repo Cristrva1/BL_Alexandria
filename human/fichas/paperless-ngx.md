@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
+
+## ¿Qué hace?
+
+Convierte documentos físicos en un archivo en línea buscable: aplica OCR, extrae texto, clasifica con etiquetas, corresponsales y tipos de documento, y permite buscar y gestionar todo desde una interfaz web. La lista completa de funciones está en su documentación.
+
+## ¿Cómo lo hace?
+
+Aplicación Django con Celery y Redis/Valkey; el OCR se hace con OCRmyPDF (dependencia del proyecto). Se despliega con Docker Compose mediante un script de instalación o los archivos de `docker/compose`, con variantes para PostgreSQL, MariaDB o SQLite, y opcionalmente Tika y Gotenberg para procesar documentos de Office y correos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OCRmyPDF](ocrmypdf.md) | Motor de OCR integrado. | Incluido; ajusta idiomas en la configuración. |
+| [Tesseract](tesseract.md) | Motor usado por OCRmyPDF; los idiomas se añaden como paquetes de Tesseract. | Define `PAPERLESS_OCR_LANGUAGES` antes del primer arranque. |
+| [n8n](n8n.md) | Subir documentos o reaccionar a nuevos archivos mediante su API REST (combinación por arquitectura). | Crea un token de API en Paperless antes del flujo. |
+| [ERPNext](erpnext.md) | Archivar facturas y justificantes que se registran en el ERP (combinación por arquitectura). | Define cuál es el sistema maestro de cada documento. |
+
+**Notas:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.4.2 (2026-11-03) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md) · [2](https://github.com/paperless-ngx/paperless-ngx/tree/dev/docker/compose)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta básica usa OCR local sin API de IA; servidor, almacenamiento y copias requieren recursos |
 | Equipo | Preparación según la ruta elegida. Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios |
-
-No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real
-
-## Qué puedes hacer con él
-
-Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
-
-## Por qué destaca
-
-Usos propuestos: Organizar recibos de prueba; Construir un archivo documental buscable.
-
-## Cómo funciona
 
 No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real
 

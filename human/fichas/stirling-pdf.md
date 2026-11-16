@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plataforma de edición de PDF de código abierto con modelo «open core» de Stirling Tools (licencia mixta; ver LICENSE). Muy activa (v3.3.0), con planes de servidor y Enterprise de pago.
+
+## ¿Qué hace?
+
+Ofrece más de 50 herramientas para editar, unir, dividir, firmar, censurar, convertir, aplicar OCR y comprimir PDF, con canalizaciones sin código en la interfaz y API REST para casi todas. Funciona como app de escritorio, en el navegador o autoalojado con API privada; interfaz en más de 40 idiomas, y SSO y auditoría en la oferta Enterprise.
+
+## ¿Cómo lo hace?
+
+Servidor Java (imagen basada en Eclipse Temurin) con frontend TypeScript, que incluye en su imagen herramientas como OCRmyPDF, Tesseract, LibreOffice (vía unoserver), QPDF, Ghostscript, Calibre e ImageMagick. Arranque rápido con `docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf`; también desktop y Kubernetes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OCRmyPDF](ocrmypdf.md) | Incluido en la imagen para la herramienta de OCR. | No hace falta instalarlo aparte. |
+| [n8n](n8n.md) | Automatizar conversiones u OCR masivo llamando a su API REST (combinación por arquitectura). | Protege la API con clave antes de exponerla. |
+| [paperless-ngx](paperless-ngx.md) | Preparar o limpiar PDF antes de archivarlos (combinación por arquitectura). | Independientes; cambia el puerto 8080 si choca con otro servicio. |
+
+**Notas:** Alternativa (elige una): pdfcraft.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.3.0 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Stirling-Tools/Stirling-PDF/blob/main/README.md) · [2](https://github.com/Stirling-Tools/Stirling-PDF/blob/main/docker/base/Dockerfile)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La edición de PDF, firma y redacción tienen efectos distintos: comprueba la salida de la operación elegida antes de sustituir un archivo |
 | Coste | El coste depende del proveedor o la ruta. El proyecto es open-core; Server y Enterprise tienen planes; la operación PDF básica no exige modelo |
 | Equipo | Preparación según la ruta elegida. Docker o app oficial; PDFs ficticios; almacenamiento persistente si usas servidor |
-
-La edición de PDF, firma y redacción tienen efectos distintos: comprueba la salida de la operación elegida antes de sustituir un archivo
-
-## Qué puedes hacer con él
-
-Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz.
-
-## Cómo funciona
 
 La edición de PDF, firma y redacción tienen efectos distintos: comprueba la salida de la operación elegida antes de sustituir un archivo
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o app oficial; PDFs ficticios; almacenamiento persistente si usas servidor
 - **Etiquetas:** `pdf` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OCRmyPDF](ocrmypdf.md) | 35.3k | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. |
 
 ## Alternativas (elige una)
 

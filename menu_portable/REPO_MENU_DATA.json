@@ -42465,7 +42465,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "twenty-main",
+        "stirling-pdf"
+      ],
       "alt": []
     },
     {
@@ -42582,7 +42586,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "llama-index"
+        "vllm",
+        "llama-cpp",
+        "pandoc"
       ],
       "alt": [
         "docling",
@@ -42700,8 +42706,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar documentos Office para consulta; Crear una copia textual de un informe",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ppt-master",
-        "open-notebook"
+        "claude-code",
+        "khoj",
+        "pandoc"
       ],
       "alt": []
     },
@@ -42823,7 +42830,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar PDFs complejos para un índice; Extraer tablas y fórmulas de un documento propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ragflow"
+        "lightrag",
+        "vllm",
+        "claude-code"
       ],
       "alt": [
         "docling",
@@ -42944,7 +42953,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "tesseract",
-        "docling"
+        "paperless-ngx",
+        "stirling-pdf"
       ],
       "alt": []
     },
@@ -43063,7 +43073,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "vllm"
+        "vllm",
+        "lightrag",
+        "open-notebook"
       ],
       "alt": [
         "paddleocr",
@@ -43182,7 +43194,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "docling"
+        "pdf-inspector",
+        "ragflow",
+        "dify",
+        "vllm"
       ],
       "alt": [
         "tesseract",
@@ -43297,7 +43312,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Generar documentos desde Markdown; Convertir un libro propio a EPUB",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown"
+        "reveal.js",
+        "markitdown",
+        "marker"
       ],
       "alt": []
     },
@@ -43412,7 +43429,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ocrmypdf",
+        "tesseract",
+        "n8n",
+        "erpnext"
+      ],
       "alt": []
     },
     {
@@ -43529,7 +43551,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una versión editable de un escaneo propio; Preparar un EPUB desde material autorizado",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "unlimited-ocr"
+        "vllm",
+        "pandoc",
+        "ollama"
       ],
       "alt": [
         "marker"
@@ -43647,8 +43671,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Decidir cuándo hace falta OCR; Extraer texto con posiciones de un PDF",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ocrmypdf",
-        "docling"
+        "firecrawl",
+        "pdfmathtranslate",
+        "paddleocr",
+        "ocrmypdf"
       ],
       "alt": []
     },
@@ -43760,7 +43786,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown"
+        "coolify",
+        "docuseal",
+        "paperless-ngx"
       ],
       "alt": [
         "stirling-pdf"
@@ -43876,9 +43904,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "markitdown",
-        "ppt-master",
-        "reveal.js"
+        "ocrmypdf",
+        "paperless-ngx",
+        "coolify"
       ],
       "alt": []
     },
@@ -44001,7 +44029,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "pdf-inspector",
+        "ollama",
+        "litellm"
       ],
       "alt": []
     },
@@ -44114,7 +44144,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ocrmypdf"
+        "ocrmypdf",
+        "n8n",
+        "paperless-ngx"
       ],
       "alt": [
         "pdfcraft"
@@ -44230,7 +44262,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ocrmypdf"
+        "ocrmypdf",
+        "paperless-ngx",
+        "unstructured"
       ],
       "alt": [
         "paddleocr"
@@ -44348,9 +44382,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "litellm",
-        "cosmos",
-        "comfyui"
+        "sglang",
+        "vllm",
+        "transformers"
       ],
       "alt": [
         "olmocr",
@@ -44468,7 +44502,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "llama-index"
+        "tesseract",
+        "langchain",
+        "qdrant"
       ],
       "alt": [
         "docling"

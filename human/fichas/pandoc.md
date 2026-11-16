@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Conversor universal de formatos de marcado de John MacFarlane: una biblioteca Haskell y una herramienta de línea de comandos. GPL-2.0, muy madura y activa (versión 3.14).
+
+## ¿Qué hace?
+
+Convierte entre decenas de formatos: Markdown (CommonMark, GFM y variantes), HTML, LaTeX, DOCX, ODT, EPUB, Jupyter, AsciiDoc, DocBook, JATS, wikis (MediaWiki, DokuWiki, Jira) y bibliografías (BibTeX, CSL JSON, EndNote), y genera también presentaciones (Beamer, reveal.js y otras) y PDF mediante un motor externo. Sirve para publicar documentación, artículos académicos con citas y libros electrónicos desde una sola fuente.
+
+## ¿Cómo lo hace?
+
+Lee el documento a una representación interna y lo escribe al formato de destino; admite filtros en Lua para transformar el documento y lectores o escritores personalizados en Lua. Se distribuye como binario para las principales plataformas; generar PDF requiere un motor como LaTeX.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [reveal.js](reveal-js.md) | Pandoc genera presentaciones reveal.js desde Markdown. | Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local. |
+| [markitdown](markitdown.md) | MarkItDown extrae a Markdown y Pandoc lo convierte al formato final (combinación por arquitectura). | Encadénalos en un script. |
+| [Marker](marker.md) | Marker convierte PDF complejos a Markdown que luego Pandoc publica (combinación por arquitectura). | Igual que arriba. |
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 3.14 (2026-11-12) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jgm/pandoc/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Cambiar formato no garantiza conservar cada detalle de diseño; elige plantilla y motor según la salida |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere IA; motores PDF, fuentes y herramientas complementarias tienen sus condiciones |
 | Equipo | Preparación según la ruta elegida. Binario de tu sistema; motor PDF solo si generas PDF; archivo de prueba |
-
-Cambiar formato no garantiza conservar cada detalle de diseño; elige plantilla y motor según la salida
-
-## Qué puedes hacer con él
-
-Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y decenas de formatos.
-
-## Por qué destaca
-
-Usos propuestos: Generar documentos desde Markdown; Convertir un libro propio a EPUB.
-
-## Cómo funciona
 
 Cambiar formato no garantiza conservar cada detalle de diseño; elige plantilla y motor según la salida
 
@@ -85,12 +97,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario de tu sistema; motor PDF solo si generas PDF; archivo de prueba
 - **Etiquetas:** `docs`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Enlaces
 

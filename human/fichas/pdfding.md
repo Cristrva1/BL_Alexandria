@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Gestor, visor y editor de PDF autoalojado de mrmn2. **El repositorio de GitHub está archivado**: el proyecto se gestiona ahora en Codeberg (codeberg.org/mrmn/PdfDing); último push en GitHub en agosto de 2026.
+
+## ¿Qué hace?
+
+Permite leer PDF en el navegador en varios dispositivos recordando la posición, organizar la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos y archivo, editar con texto, resaltados, dibujos y firmas, exportar resaltados y comentarios, compartir por enlace o QR con control de acceso y tomar notas en Markdown. Incluye SSO por OIDC y 2FA (TOTP y WebAuthn).
+
+## ¿Cómo lo hace?
+
+Aplicación web autoalojada pensada para ser mínima y rápida, desplegada con Docker, Docker Compose o Helm, o en PikaPods [DATO NO VERIFICADO: stack y base de datos, no descritos en el README].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OCRmyPDF](ocrmypdf.md) | Aplicar OCR a escaneados antes de subirlos para poder buscar y resaltar texto (combinación por arquitectura). | Procesa los archivos antes de importarlos. |
+| [paperless-ngx](paperless-ngx.md) | Paperless archiva y clasifica; PdfDing sirve para leer y anotar (combinación por arquitectura). | Decide qué sistema guarda el original para no duplicar. |
+| [coolify](coolify.md) | Desplegar el contenedor con dominio y HTTPS (combinación por arquitectura). | Usa la imagen y la documentación de Codeberg. |
+
+**Notas:** Actualiza la URL del catálogo a Codeberg. Se retiraron markitdown, ppt-master y reveal.js por falta de relación.
+
+Estado en GitHub: ⚠️ archivado (solo lectura) · último push 2026-08-29 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mrmn2/PdfDing/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -25,18 +51,6 @@
 | Equipo | Preparación según la ruta elegida. Docker o entorno de la guía; volumen para documentos; cuenta de prueba |
 
 El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
-
-## Qué puedes hacer con él
-
-Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
-
-## Cómo funciona
-
-Se instala con Docker siguiendo la guía oficial. El código y las versiones nuevas se publican en Codeberg; el repositorio de GitHub quedó archivado como copia antigua
 
 ## Cómo empezar
 
@@ -85,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 - **Etiquetas:** `pdf` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
-| [ppt-master](ppt-master.md) | 76.8k | Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. |
-| [reveal.js](reveal-js.md) | 72.6k | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
 
 ## Enlaces
 

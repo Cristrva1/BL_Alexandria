@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta de línea de comandos de código abierto (MPL-2.0) que añade una capa de texto OCR a PDF escaneados. Muy madura (v17.14) y probada en millones de PDF.
+
+## ¿Qué hace?
+
+Genera PDF/A buscables, coloca el texto OCR bajo la imagen para copiar y pegar, conserva la resolución original, inserta el OCR sin pérdidas cuando puede, optimiza imágenes (a menudo reduce el tamaño), endereza y limpia páginas y corrige rotaciones. Reconoce más de 100 idiomas y procesa archivos de miles de páginas en local.
+
+## ¿Cómo lo hace?
+
+Programa Python que usa el motor Tesseract y reparte el trabajo entre todos los núcleos de CPU. Se instala con `apt install ocrmypdf`, Homebrew, pip o Docker (x64 y ARM) en Linux, Windows, macOS y FreeBSD; los idiomas se añaden instalando paquetes de Tesseract.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Tesseract](tesseract.md) | Es su motor de OCR. | Instala Tesseract y los idiomas necesarios antes (los paquetes del sistema lo hacen solos). |
+| [paperless-ngx](paperless-ngx.md) | Paperless-ngx usa OCRmyPDF como dependencia para el OCR de documentos. | Viene incluido en Paperless; no lo instales aparte para ese uso. |
+| [Stirling-PDF](stirling-pdf.md) | La imagen de Stirling PDF incluye OCRmyPDF para su herramienta de OCR. | Incluido en la imagen Docker. |
+
+**Notas:** Se retiró docling por no estar documentado.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v17.14.2 (2026-11-16) · licencia declarada MPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md) · [2](https://github.com/paperless-ngx/paperless-ngx/blob/dev/pyproject.toml)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita LLM ni API; procesamiento y paquetes locales consumen recursos |
 | Equipo | Preparación según la ruta elegida. Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba |
-
-La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original
-
-## Qué puedes hacer con él
-
-Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos.
-
-## Por qué destaca
-
-Usos propuestos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación.
-
-## Cómo funciona
 
 La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original
 
@@ -88,13 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba
 - **Etiquetas:** `ocr` `pdf` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Tesseract](tesseract.md) | 77.5k | Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. |
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Enlaces
 

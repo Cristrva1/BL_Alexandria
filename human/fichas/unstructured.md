@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Biblioteca de código abierto (Apache 2.0) de Unstructured.io para ingerir y preprocesar documentos e imágenes. Muy activa (0.27.x); la empresa ofrece modelos de mayor calidad en su API de pago Transform v2, y según su propia tabla la versión abierta queda claramente por debajo en tablas [DATO NO VERIFICADO: benchmark de la empresa].
+
+## ¿Qué hace?
+
+Particiona PDF, HTML, Word y muchos otros formatos en elementos tipados (títulos, párrafos, tablas, listas) listos para limpiar, trocear y cargar en canalizaciones de RAG o análisis. Se usa como etapa de preprocesado antes de generar embeddings.
+
+## ¿Cómo lo hace?
+
+Biblioteca Python instalable desde PyPI (con extras por formato) o en contenedor Docker multiplataforma (imagen basada en wolfi-base). Para imágenes necesita Tesseract y para PDF Tesseract y Poppler; otros formatos requieren dependencias del sistema como LibreOffice [DATO NO VERIFICADO: lista completa].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Tesseract](tesseract.md) | Dependencia necesaria para OCR de imágenes y PDF. | Instala Tesseract (y sus paquetes de idioma) antes de procesar escaneados. |
+| [langchain](langchain.md) | Usar los elementos particionados como cargador de documentos en canalizaciones de RAG (combinación por arquitectura). | Instala el paquete de integración en el mismo entorno. |
+| [Qdrant](qdrant.md) | Guardar los fragmentos procesados con sus embeddings (combinación por arquitectura). | Define el troceado y el modelo de embeddings antes de crear la colección. |
+
+**Notas:** Alternativa (elige una): docling. Se retiró llama-index por no estar documentado en el README.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 0.27.37 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Unstructured-IO/unstructured/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Instala dependencias del formato; el contenedor y la biblioteca no garantizan por sí solos todas las funciones de la plataforma |
 | Coste | El coste depende del proveedor o la ruta. La biblioteca local y la plataforma gestionada son rutas distintas; partición, enriquecimiento y modelos externos pueden consumir servicios |
 | Equipo | Preparación según la ruta elegida. Python; extras por formato; herramientas del sistema para PDF o imágenes |
-
-Instala dependencias del formato; el contenedor y la biblioteca no garantizan por sí solos todas las funciones de la plataforma
-
-## Qué puedes hacer con él
-
-ETL open source que transforma documentos complejos en datos estructurados para LLM.
-
-## Por qué destaca
-
-Usos propuestos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos.
-
-## Cómo funciona
 
 Instala dependencias del formato; el contenedor y la biblioteca no garantizan por sí solos todas las funciones de la plataforma
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; extras por formato; herramientas del sistema para PDF o imágenes
 - **Etiquetas:** `docs` `data` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
 
 ## Alternativas (elige una)
 

@@ -62,6 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una plantilla de prueba con campos de texto y firma y completa una vista de ensayo
 **Qué comprobar:** Puedes revisar el documento resultante y la ubicación de los campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `n8n`, `twenty-main`, `stirling-pdf`
 
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
@@ -91,7 +92,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte un PDF de dos páginas con una tabla y compara texto y columnas
 **Qué comprobar:** Puedes localizar errores y decidir si activar la mejora LLM
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`
+**Combina con:** `vllm`, `llama-cpp`, `pandoc`
 **Alternativas (elige una):** `docling`, `mineru`, `pdf-craft`
 
 ## `markitdown`
@@ -122,7 +123,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas
 **Qué comprobar:** El texto y el orden se pueden contrastar con el documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ppt-master`, `open-notebook`
+**Combina con:** `claude-code`, `khoj`, `pandoc`
 
 ## `mineru`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=docs,pdf,ocr,python
@@ -152,7 +153,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Procesa un PDF corto con Flash o Basic y compara estructura y tablas antes de usar niveles superiores
 **Qué comprobar:** Puedes identificar nivel, backend y origen de la conversión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ragflow`
+**Combina con:** `lightrag`, `vllm`, `claude-code`
 **Alternativas (elige una):** `docling`, `marker`
 
 ## `ocrmypdf`
@@ -183,7 +184,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade OCR a una copia escaneada y busca una palabra que conoces
 **Qué comprobar:** Puedes seleccionar y buscar texto manteniendo la imagen de la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `tesseract`, `docling`
+**Combina con:** `tesseract`, `paperless-ngx`, `stirling-pdf`
 
 ## `olmocr`
 role=app · exec=local · setup=heavy · mcp=False · prov=local · tags=ocr,pdf,python
@@ -213,7 +214,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte unas páginas con texto conocido y revisa orden de lectura y símbolos
 **Qué comprobar:** Puedes comparar la salida con la página original y detectar omisiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vllm`
+**Combina con:** `vllm`, `lightrag`, `open-notebook`
 **Alternativas (elige una):** `paddleocr`, `docling`, `unlimited-ocr`
 
 ## `paddleocr`
@@ -244,7 +245,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Reconoce una página con texto y tabla y compara palabras y coordenadas con la imagen
 **Qué comprobar:** Puedes medir errores sobre un fragmento conocido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`
+**Combina con:** `pdf-inspector`, `ragflow`, `dify`, `vllm`
 **Alternativas (elige una):** `tesseract`, `olmocr`, `unlimited-ocr`
 
 ## `pandoc`
@@ -275,7 +276,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Convierte un Markdown con títulos y tabla a DOCX y revisa el resultado
 **Qué comprobar:** Puedes abrir el documento y comprobar estructura y contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`
+**Combina con:** `reveal.js`, `markitdown`, `marker`
 
 ## `paperless-ngx`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=gestion,server,python
@@ -305,6 +306,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta
 **Qué comprobar:** Puedes abrir el original y localizarlo con su texto OCR
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ocrmypdf`, `tesseract`, `n8n`, `erpnext`
 
 ## `pdf-craft`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=ocr,library,python
@@ -334,7 +336,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte dos páginas escaneadas propias y compara texto y estructura antes de generar un libro completo
 **Qué comprobar:** Puedes identificar errores y corregir el orden de lectura
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `unlimited-ocr`
+**Combina con:** `vllm`, `pandoc`, `ollama`
 **Alternativas (elige una):** `marker`
 
 ## `pdf-inspector`
@@ -365,7 +367,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Clasifica un PDF con texto y otro escaneado y compara el resultado
 **Qué comprobar:** Puedes enrutar el escaneado a OCR y extraer el otro sin ese procesamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`, `docling`
+**Combina con:** `firecrawl`, `pdfmathtranslate`, `paddleocr`, `ocrmypdf`
 
 ## `pdfcraft`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,typescript
@@ -395,7 +397,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre dos PDFs en la app y combínalos sin usar un servicio externo de conversión
 **Qué comprobar:** Puedes descargar el resultado y comprobar páginas y orden
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`
+**Combina con:** `coolify`, `docuseal`, `paperless-ngx`
 **Alternativas (elige una):** `stirling-pdf`
 
 ## `pdfding`
@@ -426,7 +428,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión
 **Qué comprobar:** Puedes encontrar el documento y su progreso guardado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `markitdown`, `ppt-master`, `reveal.js`
+**Combina con:** `ocrmypdf`, `paperless-ngx`, `coolify`
 
 ## `pdfmathtranslate`
 role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,google,local · tags=pdf,docs,python
@@ -457,7 +459,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Traduce dos páginas con fórmulas y compara texto, nombres y disposición con el original
 **Qué comprobar:** Puedes detectar traducciones incorrectas sin confundirlas con cambios de formato
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `pdf-inspector`, `ollama`, `litellm`
 
 ## `stirling-pdf`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
@@ -487,7 +489,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Une dos PDFs de prueba y verifica orden, páginas y metadatos del resultado
 **Qué comprobar:** El archivo final se abre y contiene las páginas esperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`
+**Combina con:** `ocrmypdf`, `n8n`, `paperless-ngx`
 **Alternativas (elige una):** `pdfcraft`
 
 ## `tesseract`
@@ -518,7 +520,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Reconoce una imagen con una frase conocida y cuenta errores del resultado
 **Qué comprobar:** Puedes comprobar si idioma, orientación y resolución son adecuados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ocrmypdf`
+**Combina con:** `ocrmypdf`, `paperless-ngx`, `unstructured`
 **Alternativas (elige una):** `paddleocr`
 
 ## `unlimited-ocr`
@@ -550,7 +552,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un documento corto antes de procesar uno largo y compara texto y tablas
 **Qué comprobar:** Puedes identificar errores y consumo de memoria en tu muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Combina con:** `sglang`, `vllm`, `transformers`
 **Alternativas (elige una):** `olmocr`, `paddleocr`
 
 ## `unstructured`
@@ -581,5 +583,5 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Divide un documento ficticio en elementos y comprueba título, párrafos y tabla
 **Qué comprobar:** Los elementos conservan el orden y tipos que necesitas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`
+**Combina con:** `tesseract`, `langchain`, `qdrant`
 **Alternativas (elige una):** `docling`

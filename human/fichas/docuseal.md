@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Plataforma de código abierto (AGPL-3.0) para rellenar y firmar documentos, de DocuSeal. Activa (3.3.6), con nube de pago y funciones Pro.
+
+## ¿Qué hace?
+
+Crea formularios PDF con un editor visual de 12 tipos de campo, admite varios firmantes por documento, envía correos por SMTP, aplica firma electrónica automática y verifica firmas. Incluye gestión de usuarios, firma optimizada para móvil, 7 idiomas de interfaz (firma en 14), API y webhooks, y apps para iOS y Android. Las funciones Pro añaden marca propia, roles, recordatorios, verificación por SMS, campos condicionales, envíos masivos, SSO/SAML y formularios embebidos.
+
+## ¿Cómo lo hace?
+
+Aplicación Ruby on Rails que se despliega con `docker run -p 3000:3000` o Docker Compose; usa SQLite por defecto o PostgreSQL/MySQL, y guarda archivos en disco, AWS S3, Google Storage o Azure.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Disparar flujos al completar una firma o crear envíos desde otros sistemas con su API y webhooks (combinación por arquitectura). | Crea la clave de API y el webhook en DocuSeal antes del flujo. |
+| [twenty-main](twenty-main.md) | Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura). | Usa un flujo intermedio con el webhook de DocuSeal. |
+| [Stirling-PDF](stirling-pdf.md) | Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura). | Independientes; cambia puertos si coinciden. |
+
+**Notas:** Para producción usa PostgreSQL en lugar de SQLite y configura SMTP con SPF/DKIM.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada 3.3.6 (2026-11-09) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/docusealco/docuseal/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El ejemplo es para revisar la herramienta con datos de prueba; configura dominio, persistencia y permisos antes de un uso real |
 | Coste | El coste depende del proveedor o la ruta. El núcleo AGPL añade términos; Pro, Cloud y servicios de correo tienen condiciones propias; no exige LLM |
 | Equipo | Preparación según la ruta elegida. Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios |
-
-El ejemplo es para revisar la herramienta con datos de prueba; configura dominio, persistencia y permisos antes de un uso real
-
-## Qué puedes hacer con él
-
-Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.
-
-## Por qué destaca
-
-Usos propuestos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental.
-
-## Cómo funciona
 
 El ejemplo es para revisar la herramienta con datos de prueba; configura dominio, persistencia y permisos antes de un uso real
 
