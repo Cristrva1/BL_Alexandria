@@ -36,7 +36,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Procesa un video propio corto y revisa los fragmentos propuestos antes de exportar
 **Qué comprobar:** Puedes corregir puntos de corte, subtítulos y encuadre
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`
+**Combina con:** `faster-whisper`, `yt-dlp`, `ffmpeg`
 
 ## `concat`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,app,rust
@@ -66,6 +66,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Recorta una copia de un clip y añade subtítulos locales antes de exportar
 **Qué comprobar:** Puedes revisar texto, puntos de corte y archivo final
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ffmpeg`, `yt-dlp`
 
 ## `davinci-resolve-mcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=mcp · tags=video,mcp,agents,python
@@ -155,7 +156,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Comprueba la resolución y memoria de la tabla antes de generar el ejemplo más pequeño viable
 **Qué comprobar:** El clip y sus recursos se pueden comparar con la configuración elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`, `real-esrgan`
+**Combina con:** `diffusers`, `comfyui`, `wan2gp`
 **Alternativas (elige una):** `wan2-2`
 
 ## `lossless-cut`
@@ -217,7 +218,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un video corto de prueba con un guion revisado y comprueba voz, clips y subtítulos
 **Qué comprobar:** Puedes rastrear el origen de cada recurso y corregir el resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `kokoro`, `faster-whisper`
+**Combina con:** `faster-whisper`, `kokoro`, `ollama`
 **Alternativas (elige una):** `openmontage`, `videofy-minimal`
 
 ## `obs-studio`
@@ -368,6 +369,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Monta un borrador corto con un texto y tres clips ficticios o propios y revisa cada escena
 **Qué comprobar:** El video exportado coincide con guion, voz y subtítulos corregidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `edge-tts`, `ffmpeg`, `ollama`
 
 ## `videolingo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=video,stt,tts,python
@@ -434,7 +436,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige primero el modelo TI2V-5B y la ruta de memoria documentada y genera un clip breve
 **Qué comprobar:** Puedes identificar pesos, tamaño, duración y recursos de la ejecución
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`, `real-esrgan`, `cosyvoice`
+**Combina con:** `comfyui`, `diffusers`, `cosyvoice`, `real-esrgan`
 **Alternativas (elige una):** `hunyuanvideo`
 
 ## `wan2gp`
@@ -465,5 +467,5 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige un modelo pequeño admitido y genera un clip corto antes de activar Deepy o Showrunner
 **Qué comprobar:** Puedes comprobar memoria, duración y motor de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `moviepy`, `lossless-cut`
+**Combina con:** `claude-code`, `wan2-2`, `moviepy`, `lossless-cut`
 **Alternativas (elige una):** `comfyui`

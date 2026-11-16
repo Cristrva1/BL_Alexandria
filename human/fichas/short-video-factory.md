@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Short Video Factory (短视频工厂), app de escritorio para crear vídeos cortos de producto y contenido general, de @YILS-LIN. Licencia AGPL-3.0. Tiene ~6k estrellas (v1.4.0) y su README está principalmente en chino.
+
+## ¿Qué hace?
+
+Genera el texto con IA a partir de un prompt, combina clips de material por escenas, sintetiza la voz con Edge TTS y monta los vídeos automáticamente y por lotes. Está pensado para marketing de producto.
+
+## ¿Cómo lo hace?
+
+Es una app Electron con Vue y TypeScript para Windows, macOS y Linux. Requiere configurar un proveedor de LLM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [edge-tts](edge-tts.md) | Síntesis de voz con Edge TTS. | Viene integrada en la app. |
+| [FFmpeg](ffmpeg.md) | Procesamiento de vídeo. (combinación por arquitectura) | Asegura FFmpeg si la build no lo incluye. |
+| [Ollama](ollama.md) | Generar los textos con un modelo local. (combinación por arquitectura) | Configura un endpoint compatible si la app lo admite. |
+
+**Notas:** Sin alternativas declaradas; solapa con moneyprinterturbo (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v1.4.0 (2026-11-09) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/YILS-LIN/short-video-factory/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. No se confirma aquí una ruta completamente local ni que la suscripción de un agente pague las funciones de generación |
 | Coste | El coste depende del proveedor o la ruta. La app integra varios servicios; modelos, voces y recursos pueden tener créditos o suscripción propios |
 | Equipo | Preparación según la ruta elegida. App de escritorio; proveedores de guion y voz; clips e imágenes propios |
-
-No se confirma aquí una ruta completamente local ni que la suscripción de un agente pague las funciones de generación
-
-## Qué puedes hacer con él
-
-Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.
-
-## Por qué destaca
-
-Usos propuestos: Crear un borrador de producto; Preparar variantes de un anuncio propio.
-
-## Cómo funciona
 
 No se confirma aquí una ruta completamente local ni que la suscripción de un agente pague las funciones de generación
 

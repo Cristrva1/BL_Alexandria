@@ -2834,6 +2834,7 @@ uv run start.py` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/jub0t/Concat/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [FFmpeg](human/fichas/ffmpeg.md) · [yt-dlp](human/fichas/yt-dlp.md)<br>
 **Más:** [ficha completa](human/fichas/concat.md) · [GitHub](https://github.com/jub0t/Concat)
 
 #### 🎬 palmier-pro
@@ -2872,7 +2873,7 @@ uv run start.py` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `python -m pip install mpt
 mpt webui` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md) · [Kokoro](human/fichas/kokoro.md) · [faster-whisper](human/fichas/faster-whisper.md)<br>
+**Combina con:** [faster-whisper](human/fichas/faster-whisper.md) · [Kokoro](human/fichas/kokoro.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/moneyprinterturbo.md) · [GitHub](https://github.com/harry0703/MoneyPrinterTurbo)
 
 #### 🎬 Wan2.2 ⭐
@@ -2886,7 +2887,7 @@ cd Wan2.2
 # If the installation of `flash_attn` fails, try installing the other packages first and install `flash_attn` last
 pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [diffusers](human/fichas/diffusers.md) · [Real-ESRGAN](human/fichas/real-esrgan.md) · [CosyVoice](human/fichas/cosyvoice.md)<br>
+**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [diffusers](human/fichas/diffusers.md) · [CosyVoice](human/fichas/cosyvoice.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
 **Más:** [ficha completa](human/fichas/wan2-2.md) · [GitHub](https://github.com/Wan-Video/Wan2.2)
 
 #### 🎬 HunyuanVideo
@@ -2895,7 +2896,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [diffusers](human/fichas/diffusers.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
+**Combina con:** [diffusers](human/fichas/diffusers.md) · [ComfyUI](human/fichas/comfyui.md) · [WanGP](human/fichas/wan2gp.md)<br>
 **Más:** [ficha completa](human/fichas/hunyuanvideo.md) · [GitHub](https://github.com/Tencent-Hunyuan/HunyuanVideo)
 
 #### 🎬 WanGP
@@ -2904,7 +2905,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/deepbeepmeep/Wan2GP/blob/main/docs/INSTALLATION.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Wan2.2](human/fichas/wan2-2.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md)<br>
 **Más:** [ficha completa](human/fichas/wan2gp.md) · [GitHub](https://github.com/deepbeepmeep/WanGP)
 
 #### 🎬 short-video-factory
@@ -2913,6 +2914,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/YILS-LIN/short-video-factory/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un borrador de producto; Preparar variantes de un anuncio propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [edge-tts](human/fichas/edge-tts.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/short-video-factory.md) · [GitHub](https://github.com/YILS-LIN/short-video-factory)
 
 #### 🎬 AI-Youtube-Shorts-Generator
@@ -2926,7 +2928,7 @@ pip install -r requirements.txt
    # Only if you plan to use --mode local:
    pip install -r requirements-local.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Obtener clips de un tutorial propio; Comparar criterios de selección de momentos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FFmpeg](human/fichas/ffmpeg.md)<br>
+**Combina con:** [faster-whisper](human/fichas/faster-whisper.md) · [yt-dlp](human/fichas/yt-dlp.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/ai-youtube-shorts-generator.md) · [GitHub](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator)
 
 ---
@@ -3217,6 +3219,7 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install pyqlib` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar modelos sobre datos temporales; Investigar un pipeline cuantitativo reproducible — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [MLflow](human/fichas/mlflow.md) · [FinRL](human/fichas/finrl.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/qlib.md) · [GitHub](https://github.com/microsoft/qlib)
 
 #### 📚 nautilus_trader
@@ -3225,6 +3228,7 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install -U nautilus_trader --pre` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Polars](human/fichas/polars.md) · [marimo](human/fichas/marimo.md) · [ccxt](human/fichas/ccxt.md)<br>
 **Más:** [ficha completa](human/fichas/nautilus-trader.md) · [GitHub](https://github.com/nautechsystems/nautilus_trader)
 
 #### 📚 FinRL
@@ -3244,6 +3248,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install -U vectorbt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [freqtrade](human/fichas/freqtrade.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/vectorbt.md) · [GitHub](https://github.com/polakowo/vectorbt)
 
 #### 📚 lumibot
@@ -3252,6 +3257,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install lumibot` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar una estrategia de reglas; Estudiar decisiones de una estrategia AI en backtest — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [vectorbt](human/fichas/vectorbt.md)<br>
 **Más:** [ficha completa](human/fichas/lumibot.md) · [GitHub](https://github.com/Lumiwealth/lumibot)
 
 ### Bots y conexiones a exchanges
@@ -3262,6 +3268,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://www.freqtrade.io/en/stable/docker_quickstart/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar una regla en datos históricos; Evaluar una estrategia en simulación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [vectorbt](human/fichas/vectorbt.md) · [Grafana](human/fichas/grafana.md)<br>
 **Más:** [ficha completa](human/fichas/freqtrade.md) · [GitHub](https://github.com/freqtrade/freqtrade)
 
 #### 📚 ccxt
@@ -3270,6 +3277,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm install ccxt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Unificar consultas de varios mercados; Construir una integración de datos de exchange — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [freqtrade](human/fichas/freqtrade.md) · [vectorbt](human/fichas/vectorbt.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/ccxt.md) · [GitHub](https://github.com/ccxt/ccxt)
 
 #### 🖥️ hummingbot
@@ -3287,6 +3295,7 @@ make install
 conda activate hummingbot
 hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un conector de exchange; Evaluar un bot en un entorno de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ccxt](human/fichas/ccxt.md) · [Claude Code](human/fichas/claude-code.md) · [Grafana](human/fichas/grafana.md)<br>
 **Más:** [ficha completa](human/fichas/hummingbot.md) · [GitHub](https://github.com/hummingbot/hummingbot)
 
 #### 📊 binance-trader

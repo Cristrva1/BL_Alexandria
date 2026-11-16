@@ -89,6 +89,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Consulta mercados públicos y verifica símbolo, precisión y límites sin habilitar trading
 **Qué comprobar:** Puedes contrastar metadatos con la documentación del exchange
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `freqtrade`, `vectorbt`, `claude-code`
 
 ## `company-pixel-office`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,template,javascript
@@ -271,6 +272,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta un backtest pequeño y revisa comisiones y sesgos antes de pasar a dry-run
 **Qué comprobar:** Puedes reproducir operaciones simuladas y su configuración
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `vectorbt`, `grafana`
 
 ## `hummingbot`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=bots,app,python
@@ -309,6 +311,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Comprueba la instalación con ayuda del CLI y configura una estrategia en paper trade según su guía
 **Qué comprobar:** Puedes distinguir ejecución simulada y conexiones reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `claude-code`, `grafana`
 
 ## `lumibot`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=cuant,framework,python
@@ -338,6 +341,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta el ejemplo de reglas sobre historia y revisa operaciones y costes del backtest
 **Qué comprobar:** Puedes reproducir la estrategia sin llamadas AI ni órdenes reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ollama`, `vectorbt`
 
 ## `machine-learning-for-trading`
 role=directory · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,algorithmic-trading,artificial-intelligence,backtesting,data-science,deep-learning,finance,investment
@@ -396,6 +400,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un ejemplo de backtest de la misma versión v2 y revisa su secuencia de eventos
 **Qué comprobar:** Puedes reproducir órdenes y fills simulados con configuración fija
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `polars`, `marimo`, `ccxt`
 
 ## `open-sol-bot`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=finanzas,blockchain,solana,telegram-bot,trader,transaction,python
@@ -545,6 +550,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una baseline pequeña sobre un periodo de prueba separado y revisa predicciones y evaluación
 **Qué comprobar:** Puedes reproducir resultados sin mezclar datos futuros
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mlflow`, `finrl`, `marimo`
 
 ## `quantharness`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas,agentic-ai,large-language-models,html
@@ -635,6 +641,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Evalúa unas pocas combinaciones y reserva un periodo fuera de muestra
 **Qué comprobar:** Puedes revisar parámetros, operaciones y resultados separados de entrenamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ccxt`, `freqtrade`, `marimo`
 
 ## `vibe-trading`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=agentes,agent,python
