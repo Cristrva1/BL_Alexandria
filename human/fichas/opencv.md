@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+OpenCV, la biblioteca open source de visión por computador de referencia, gestionada por OpenCV.org. Licencia Apache-2.0. Es muy madura (~92k estrellas, 5.1.0).
+
+## ¿Qué hace?
+
+Ofrece miles de algoritmos de procesamiento de imagen, vídeo, calibración, características, detección, seguimiento y un módulo DNN para inferencia. Los módulos extra están en opencv_contrib.
+
+## ¿Cómo lo hace?
+
+Se instala en Python con `pip install opencv-python` (o `-contrib`, o `-headless` para servidores), o se compila con CMake para C++. La documentación de la rama 5.x está en docs.opencv.org/5.x.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ultralytics YOLO](ultralytics.md) | Fuente de fotogramas para YOLO. | Lee vídeo con OpenCV y pasa los frames. |
+| [supervision](supervision.md) | Dibujo y anotación sobre imágenes OpenCV. | Usa los anotadores sobre arrays NumPy. |
+| [mediapipe](mediapipe.md) | Captura con OpenCV y análisis con MediaPipe. (combinación por arquitectura) | Convierte BGR a RGB antes. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 5.1.0 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/opencv/opencv/blob/5.x/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes |
 | Coste | Sin pago a un modelo en la ruta básica. Las operaciones básicas no necesitan modelos ni API; hardware y servicios de una app son independientes |
 | Equipo | Preparación según la ruta elegida. Paquete OpenCV para el lenguaje elegido; imagen pequeña |
-
-Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes
-
-## Qué puedes hacer con él
-
-La librería de visión por computadora de referencia, con miles de algoritmos.
-
-## Por qué destaca
-
-Usos propuestos: Preparar imágenes antes de OCR; Estudiar procesamiento visual básico.
-
-## Cómo funciona
 
 Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Paquete OpenCV para el lenguaje elegido; imagen pequeña
 - **Etiquetas:** `vision` `image` `cpp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ultralytics YOLO](ultralytics.md) | 63.4k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
-| [supervision](supervision.md) | 51.6k | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. |
 
 ## Enlaces
 

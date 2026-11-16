@@ -6217,7 +6217,7 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/deepinsight/insightface/blob/master/python-package/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar alineación facial; Evaluar detección en un dataset de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FaceFusion](human/fichas/facefusion.md)<br>
+**Combina con:** [FaceFusion](human/fichas/facefusion.md) · [Deep-Live-Cam](human/fichas/deep-live-cam.md) · [LivePortrait](human/fichas/liveportrait.md)<br>
 **Más:** [ficha completa](human/fichas/insightface.md) · [GitHub](https://github.com/deepinsight/insightface)
 
 #### 🧑 LivePortrait
@@ -6231,7 +6231,7 @@ cd LivePortrait
 conda create -n LivePortrait python=3.10
 conda activate LivePortrait` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una animación consentida de un retrato; Estudiar retargeting facial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MoviePy](human/fichas/moviepy.md)<br>
+**Combina con:** [MoviePy](human/fichas/moviepy.md) · [ComfyUI](human/fichas/comfyui.md) · [InsightFace](human/fichas/insightface.md)<br>
 **Más:** [ficha completa](human/fichas/liveportrait.md) · [GitHub](https://github.com/KlingAIResearch/LivePortrait)
 
 ### Visión por computador
@@ -6242,7 +6242,7 @@ conda activate LivePortrait` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install ultralytics` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Contar objetos de muestra; Probar segmentación en un prototipo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [supervision](human/fichas/supervision.md) · [Label Studio](human/fichas/label-studio.md)<br>
+**Combina con:** [supervision](human/fichas/supervision.md) · [Label Studio](human/fichas/label-studio.md) · [OpenCV](human/fichas/opencv.md)<br>
 **Más:** [ficha completa](human/fichas/ultralytics.md) · [GitHub](https://github.com/ultralytics/ultralytics)
 
 #### 👁️ SAM 3 ⭐
@@ -6253,7 +6253,7 @@ conda activate LivePortrait` (comprobar los pasos completos en la ficha).<br>
 cd sam3
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video — **Evita si:** No tienes una GPU NVIDIA compatible o necesitas una licencia permisiva como Apache; revisa los límites antes de elegirlo<br>
-**Combina con:** [Label Studio](human/fichas/label-studio.md) · [supervision](human/fichas/supervision.md)<br>
+**Combina con:** [Label Studio](human/fichas/label-studio.md) · [supervision](human/fichas/supervision.md) · [Ultralytics YOLO](human/fichas/ultralytics.md)<br>
 **Más:** [ficha completa](human/fichas/sam3.md) · [GitHub](https://github.com/facebookresearch/sam3)
 
 #### 👁️ OpenCV
@@ -6262,7 +6262,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/opencv/opencv/blob/5.x/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar imágenes antes de OCR; Estudiar procesamiento visual básico — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [supervision](human/fichas/supervision.md)<br>
+**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [supervision](human/fichas/supervision.md) · [mediapipe](human/fichas/mediapipe.md)<br>
 **Más:** [ficha completa](human/fichas/opencv.md) · [GitHub](https://github.com/opencv/opencv)
 
 #### 👁️ supervision
@@ -6271,7 +6271,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install supervision` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Visualizar detecciones; Contar cruces en un video de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [OpenCV](human/fichas/opencv.md)<br>
+**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [OpenCV](human/fichas/opencv.md) · [SAM 3](human/fichas/sam3.md)<br>
 **Más:** [ficha completa](human/fichas/supervision.md) · [GitHub](https://github.com/roboflow/supervision)
 
 #### 📚 mediapipe
@@ -6280,6 +6280,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://developers.google.com/edge/mediapipe/solutions/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una interacción con manos; Prototipar visión en dispositivo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenCV](human/fichas/opencv.md) · [tfjs-models](human/fichas/tfjs-models.md) · [three.js](human/fichas/three-js.md)<br>
 **Más:** [ficha completa](human/fichas/mediapipe.md) · [GitHub](https://github.com/google-ai-edge/mediapipe)
 
 #### 🧩 openpose
@@ -6288,6 +6289,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estimación de postura; Preparar puntos de movimiento para una demo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenCV](human/fichas/opencv.md) · [EasyMocap](human/fichas/easymocap.md) · [ComfyUI](human/fichas/comfyui.md)<br>
 **Más:** [ficha completa](human/fichas/openpose.md) · [GitHub](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
 
 #### 👁️ Label Studio
@@ -6297,7 +6299,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `docker pull heartexlabs/label-studio:latest
 docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/label-studio:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un dataset de imágenes; Revisar etiquetas de texto o audio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [SAM 3](human/fichas/sam3.md)<br>
+**Combina con:** [Ultralytics YOLO](human/fichas/ultralytics.md) · [SAM 3](human/fichas/sam3.md) · [supervision](human/fichas/supervision.md)<br>
 **Más:** [ficha completa](human/fichas/label-studio.md) · [GitHub](https://github.com/HumanSignal/label-studio)
 
 #### 📚 tfjs-models
@@ -6306,6 +6308,7 @@ docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/labe
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/tensorflow/tfjs-models/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar ML en el navegador; Preparar una demo de landmarks — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [mediapipe](human/fichas/mediapipe.md) · [tensorflow](human/fichas/tensorflow.md) · [three.js](human/fichas/three-js.md)<br>
 **Más:** [ficha completa](human/fichas/tfjs-models.md) · [GitHub](https://github.com/tensorflow/tfjs-models)
 
 #### 📚 kornia
@@ -6314,6 +6317,7 @@ docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/labe
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install kornia` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar datos visuales; Estudiar geometría diferenciable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [OpenCV](human/fichas/opencv.md) · [Ultralytics YOLO](human/fichas/ultralytics.md)<br>
 **Más:** [ficha completa](human/fichas/kornia.md) · [GitHub](https://github.com/kornia/kornia)
 
 #### 🧩 mmpose
@@ -6322,6 +6326,7 @@ docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/labe
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://mmpose.readthedocs.io/en/latest/installation.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar modelos de pose; Preparar una demo de análisis de movimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [OpenCV](human/fichas/opencv.md) · [EasyMocap](human/fichas/easymocap.md)<br>
 **Más:** [ficha completa](human/fichas/mmpose.md) · [GitHub](https://github.com/open-mmlab/mmpose)
 
 #### 🧩 EasyMocap
@@ -6341,6 +6346,7 @@ cd 4D-Humans
 conda env create -f environment.yml
 conda activate 4D-humans` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción humana 3D; Explorar seguimiento en un clip corto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [WHAM](human/fichas/wham.md) · [blender](human/fichas/blender.md)<br>
 **Más:** [ficha completa](human/fichas/4d-humans.md) · [GitHub](https://github.com/shubham-goel/4D-Humans)
 
 #### 🧩 WHAM
@@ -6361,6 +6367,7 @@ conda activate 4D-humans` (comprobar los pasos completos en la ficha).<br>
 npx @ruvnet/ruview@0.9.1 doctor
 npx @ruvnet/ruview@0.9.1 guidance --topic sensing --query "model loading"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar sensado WiFi en laboratorio; Explorar una visualización espacial simulada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [three.js](human/fichas/three-js.md) · [mediapipe](human/fichas/mediapipe.md)<br>
 **Más:** [ficha completa](human/fichas/ruview.md) · [GitHub](https://github.com/ruvnet/RuView)
 
 ---

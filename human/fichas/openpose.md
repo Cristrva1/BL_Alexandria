@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+OpenPose, sistema de CMU que fue el primero en detectar en tiempo real keypoints de cuerpo, manos, cara y pies de varias personas. Licencia académica, gratuita solo para uso no comercial (GitHub muestra NOASSERTION). Tiene ~35k estrellas, pero es histórico: sin cambios desde agosto de 2024 (v1.7.0).
+
+## ¿Qué hace?
+
+Estima hasta 135 keypoints por persona en imágenes y vídeo, con API C++ y Python y una demo.
+
+## ¿Cómo lo hace?
+
+Se compila con CMake en Linux, macOS o Windows, con CUDA y cuDNN para tiempo real, o usando binarios para Windows. Depende de Caffe.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenCV](opencv.md) | Captura y visualización. | Instala OpenCV. |
+| [EasyMocap](easymocap.md) | Usa keypoints 2D estilo OpenPose para ajustar SMPL. | Genera los keypoints y pásalos a EasyMocap. |
+| [ComfyUI](comfyui.md) | Mapas de pose OpenPose como condición en flujos de imagen. (combinación por arquitectura) | Usa los preprocesadores de pose en ComfyUI. |
+
+**Notas:** Sin alternativas declaradas. Licencia no comercial e inactivo.
+
+Estado en GitHub: activo · último push 2024-08-03 · última versión publicada v1.7.0 (2020-11-17) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Detecta keypoints y no mide clínicamente una postura ni garantiza seguimiento sin errores u oclusiones |
 | Coste | El coste depende del proveedor o la ruta. Uso no comercial bajo su licencia; uso comercial requiere licencia propia; hardware separado |
 | Equipo | Preparación según la ruta elegida. Plataforma compatible; dependencias de compilación; modelos; imagen autorizada |
-
-Detecta keypoints y no mide clínicamente una postura ni garantiza seguimiento sin errores u oclusiones
-
-## Qué puedes hacer con él
-
-Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar estimación de postura; Preparar puntos de movimiento para una demo.
-
-## Cómo funciona
 
 Detecta keypoints y no mide clínicamente una postura ni garantiza seguimiento sin errores u oclusiones
 

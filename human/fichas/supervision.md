@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+supervision, herramientas reutilizables de visión por computador de Roboflow. Licencia MIT. Es madura y muy activa (~52k estrellas, 0.31.7).
+
+## ¿Qué hace?
+
+Carga datasets, dibuja detecciones y máscaras, cuenta objetos que cruzan zonas o líneas, rastrea (ByteTrack) y convierte entre formatos. Es independiente del modelo, con conectores para Ultralytics, Transformers, Inference y otros.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10+ y se instala con `pip install supervision`. Usar Roboflow Inference requiere una API key de Roboflow.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ultralytics YOLO](ultralytics.md) | Conector nativo `from_ultralytics`. | Instala ambos y convierte los resultados. |
+| [OpenCV](opencv.md) | Lectura y escritura de vídeo. | Instala `opencv-python`. |
+| [SAM 3](sam3.md) | Visualizar máscaras de segmentación. (combinación por arquitectura) | Convierte las máscaras. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.31.7 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/roboflow/supervision/blob/develop/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Supervision procesa resultados de modelos y no los reemplaza; la compatibilidad depende del adaptador y formato de detecciones |
 | Coste | El coste depende del proveedor o la ruta. Las utilidades básicas no exigen API; el ejemplo con Roboflow Inference necesita clave y condiciones del servicio |
 | Equipo | Preparación según la ruta elegida. Python; imagen y detecciones de prueba; modelo aparte si lo ejecutas |
-
-Supervision procesa resultados de modelos y no los reemplaza; la compatibilidad depende del adaptador y formato de detecciones
-
-## Qué puedes hacer con él
-
-Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir.
-
-## Por qué destaca
-
-Usos propuestos: Visualizar detecciones; Contar cruces en un video de prueba.
-
-## Cómo funciona
 
 Supervision procesa resultados de modelos y no los reemplaza; la compatibilidad depende del adaptador y formato de detecciones
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; imagen y detecciones de prueba; modelo aparte si lo ejecutas
 - **Etiquetas:** `vision` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ultralytics YOLO](ultralytics.md) | 63.4k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
-| [OpenCV](opencv.md) | 91.6k | La librería de visión por computadora de referencia, con miles de algoritmos. |
 
 ## Enlaces
 

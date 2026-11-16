@@ -77952,7 +77952,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción humana 3D; Explorar seguimiento en un clip corto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pytorch",
+        "wham",
+        "blender"
+      ],
       "alt": []
     },
     {
@@ -78546,7 +78550,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar alineación facial; Evaluar detección en un dataset de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "facefusion"
+        "facefusion",
+        "deep-live-cam",
+        "liveportrait"
       ],
       "alt": [
         "face-recognition"
@@ -78665,7 +78671,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar datos visuales; Estudiar geometría diferenciable",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pytorch",
+        "opencv",
+        "ultralytics"
+      ],
       "alt": []
     },
     {
@@ -78782,7 +78792,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ultralytics",
-        "sam3"
+        "sam3",
+        "supervision"
       ],
       "alt": []
     },
@@ -78901,7 +78912,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una animación consentida de un retrato; Estudiar retargeting facial",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "moviepy"
+        "moviepy",
+        "comfyui",
+        "insightface"
       ],
       "alt": []
     },
@@ -79017,7 +79030,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una interacción con manos; Prototipar visión en dispositivo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "opencv",
+        "tfjs-models",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -79132,7 +79149,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar modelos de pose; Preparar una demo de análisis de movimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pytorch",
+        "opencv",
+        "easymocap"
+      ],
       "alt": []
     },
     {
@@ -79245,7 +79266,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ultralytics",
-        "supervision"
+        "supervision",
+        "mediapipe"
       ],
       "alt": []
     },
@@ -79362,7 +79384,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar estimación de postura; Preparar puntos de movimiento para una demo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "opencv",
+        "easymocap",
+        "comfyui"
+      ],
       "alt": []
     },
     {
@@ -79486,7 +79512,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar sensado WiFi en laboratorio; Explorar una visualización espacial simulada",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "home-assistant",
+        "three.js",
+        "mediapipe"
+      ],
       "alt": []
     },
     {
@@ -79599,7 +79629,8 @@
       "avoid_if": "No tienes una GPU NVIDIA compatible o necesitas una licencia permisiva como Apache; revisa los límites antes de elegirlo",
       "combines_with": [
         "label-studio",
-        "supervision"
+        "supervision",
+        "ultralytics"
       ],
       "alt": []
     },
@@ -79715,7 +79746,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ultralytics",
-        "opencv"
+        "opencv",
+        "sam3"
       ],
       "alt": []
     },
@@ -79831,7 +79863,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar ML en el navegador; Preparar una demo de landmarks",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "mediapipe",
+        "tensorflow",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -79948,7 +79984,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "supervision",
-        "label-studio"
+        "label-studio",
+        "opencv"
       ],
       "alt": []
     },

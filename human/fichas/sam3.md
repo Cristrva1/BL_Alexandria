@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+SAM 3 (Segment Anything with Concepts), modelo de Meta Superintelligence Labs para detectar, segmentar y seguir objetos en imágenes y vídeo a partir de conceptos. Licencia «SAM License» propia (GitHub muestra NOASSERTION). Tiene ~12k estrellas y ya publicó checkpoints SAM 3.1.
+
+## ¿Qué hace?
+
+Segmenta todas las instancias de un concepto descrito con texto o ejemplos, además de prompts clásicos (puntos, cajas) y seguimiento en vídeo.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.12+, PyTorch 2.10 con CUDA y `pip install -e .` (extras para notebooks y entrenamiento; FlashAttention 3 es opcional). Antes hay que solicitar acceso a los checkpoints en Hugging Face.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Label Studio](label-studio.md) | Pre-etiquetado de máscaras. (combinación por arquitectura) | Conecta el modelo como backend de ML. |
+| [supervision](supervision.md) | Visualizar y procesar máscaras. (combinación por arquitectura) | Convierte las máscaras a Detections. |
+| [Ultralytics YOLO](ultralytics.md) | Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura) | Usa las cajas como prompts. |
+
+**Notas:** Sin alternativas declaradas. Pesos con acceso restringido.
+
+Estado en GitHub: activo · último push 2026-11-13 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facebookresearch/sam3/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -25,18 +51,6 @@
 | Equipo | GPU o infraestructura especializada. Python 3.12 o superior; PyTorch 2.7 o superior; GPU con CUDA 12.6 o superior; cuenta de Hugging Face con acceso aprobado a los pesos |
 
 Claude Code, Codex o Antigravity pueden ayudarte a instalarlo, pero el modelo se ejecuta en tu GPU
-
-## Qué puedes hacer con él
-
-Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta.
-
-## Por qué destaca
-
-Usos propuestos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video.
-
-## Cómo funciona
-
-Necesita una GPU NVIDIA con CUDA 12.6 o superior y pedir acceso a los pesos en Hugging Face antes de descargarlos; su licencia es la SAM License de Meta
 
 ## Cómo empezar
 
@@ -96,13 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.12 o superior; PyTorch 2.7 o superior; GPU con CUDA 12.6 o superior; cuenta de Hugging Face con acceso aprobado a los pesos
 - **Etiquetas:** `vision` `video` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Label Studio](label-studio.md) | 28.7k | Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. |
-| [supervision](supervision.md) | 51.6k | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. |
 
 ## Enlaces
 

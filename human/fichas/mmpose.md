@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+MMPose, toolbox de estimación de pose de OpenMMLab (incluye RTMPose). Licencia Apache-2.0. Tiene ~8k estrellas, pero no cambia desde agosto de 2025 (v1.3.2).
+
+## ¿Qué hace?
+
+Cubre pose 2D y 3D de cuerpo, manos, cara, animales y prendas con numerosos modelos y benchmarks.
+
+## ¿Cómo lo hace?
+
+Requiere PyTorch y la pila OpenMMLab (MMEngine, MMCV, MMDetection), instalada con `mim`. La compatibilidad con versiones recientes de PyTorch puede requerir trabajo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Backend. | Instala una versión compatible. |
+| [OpenCV](opencv.md) | Captura y visualización. | Instala OpenCV. |
+| [EasyMocap](easymocap.md) | Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura) | Exporta los keypoints. |
+
+**Notas:** Sin alternativas declaradas. Actividad baja.
+
+Estado en GitHub: activo · último push 2025-08-04 · última versión publicada v1.3.2 (2024-07-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/open-mmlab/mmpose/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La documentación distingue versiones actuales y 0.x; no mezcles configuraciones y dependencias de líneas diferentes |
 | Coste | Sin pago a un modelo en la ruta básica. Inferencia propia sin API de pago; datasets, modelos y GPU tienen condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Python; PyTorch y dependencias OpenMMLab compatibles; checkpoint |
-
-La documentación distingue versiones actuales y 0.x; no mezcles configuraciones y dependencias de líneas diferentes
-
-## Qué puedes hacer con él
-
-Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.
-
-## Por qué destaca
-
-Usos propuestos: Comparar modelos de pose; Preparar una demo de análisis de movimiento.
-
-## Cómo funciona
 
 La documentación distingue versiones actuales y 0.x; no mezcles configuraciones y dependencias de líneas diferentes
 
