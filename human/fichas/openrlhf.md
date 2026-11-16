@@ -77,7 +77,13 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
 3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+pip install openrlhf
+```
+
+Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md)
 

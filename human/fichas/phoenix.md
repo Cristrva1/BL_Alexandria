@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 12.3k | NOASSERTION | Python | 2026-11-10 |
+| 12.3k | Elastic-2.0 | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Elastic-2.0. Source-available (ELv2). Fuente: [LICENSE](https://github.com/Arize-ai/phoenix/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

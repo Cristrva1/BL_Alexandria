@@ -505,13 +505,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=anim
 - Equipo: Preparación según la ruta elegida. Proyecto JavaScript o motor que admita sprites; Claude Code opcional
 **Repo:** https://github.com/patch-gg/pixelfx
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/patch-gg/pixelfx/blob/main/README.md
+/plugin marketplace add patch-gg/pixelfx
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir un efecto a un juego; Preparar una hoja de sprites
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -565,13 +565,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=anim
 - Equipo: Preparación según la ruta elegida. Proyecto JavaScript; escena 2D de prueba
 **Repo:** https://github.com/piqnt/planck.js
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://piqnt.com/planck.js/docs/
+npm install planck
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar física de un juego 2D; Explicar gravedad con una simulación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -746,13 +746,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,d
 - Equipo: Preparación según la ruta elegida. Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible
 **Repo:** https://github.com/mrdoob/three.js
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://threejs.org/manual/
+git clone --depth=1 https://github.com/mrdoob/three.js.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un visor 3D web; Prototipar una escena interactiva
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -837,13 +837,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=anim
 - Equipo: Preparación según la ruta elegida. Página de prueba; JavaScript; canvas o SVG
 **Repo:** https://github.com/metafizzy/zdog
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/metafizzy/zdog/blob/master/README.md
+npm install zdog
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

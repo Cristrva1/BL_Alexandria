@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 7.5k | NOASSERTION | Python | 2026-06-24 |
+| 7.5k | Apache-2.0 | Python | 2026-06-24 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
 **Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

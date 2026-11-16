@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 22k | NOASSERTION | C++ | 2026-11-14 |
+| 22k | GPL-2.0-or-later | C++ | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
 **Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** GPL-2.0-or-later. COPYING remite al texto GPL v2 de doc/license/GPL-license.txt. Fuente: [LICENSE](https://github.com/blender/blender/blob/main/COPYING). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -71,10 +73,10 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 - Aplicación Blender para tu sistema
 - equipo adecuado a la escena
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.
 2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/blender/blender/blob/main/.github/README.md)
 

@@ -25,7 +25,7 @@ Empieza por medición; SQL, dashboards y preguntas con IA son ampliaciones con c
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
 | 1 | [posthog](../fichas/posthog.md) | Eventos, embudos, grabaciones y feature flags | 40.8k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 2 | [DuckDB](../fichas/duckdb.md) | Análisis SQL rápido sobre exportaciones o Parquet | 43.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [DuckDB](../fichas/duckdb.md) | Análisis SQL rápido sobre exportaciones o Parquet | 43.1k | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 | 3 | [WrenAI](../fichas/wrenai.md) | Preguntas en lenguaje natural convertidas a SQL | 18.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 4 | [Apache Superset](../fichas/superset.md) | Dashboards y exploración para todo el equipo | 75.5k | `docker compose -f docker-compose-image-tag.yml up` |
 | 5 | [Umami](../fichas/umami.md) | Alternativa ligera para analítica web sin cookies | 40.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |

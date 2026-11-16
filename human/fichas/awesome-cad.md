@@ -70,7 +70,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida.
 2. Comprueba: Puedes explicar cuál se ajusta al objeto que quieres diseñar.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/mlightcad/awesome-cad/blob/main/README.md)
 

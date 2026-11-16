@@ -21117,7 +21117,7 @@
    "github_id": 1194124727,
    "gh": "AThevon/genjutsu",
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "MIT",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -21271,7 +21271,7 @@
    "github_id": 213916896,
    "gh": "blender/blender",
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "GPL-2.0-or-later",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -22801,7 +22801,7 @@
    "github_id": 41325282,
    "gh": "guillaumeblanc/ozz-animation",
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "MIT",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
