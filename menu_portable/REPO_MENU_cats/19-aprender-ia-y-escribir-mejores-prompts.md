@@ -121,7 +121,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la primera lección y dibuja las herramientas y decisiones de un agente de consultas ficticio
 **Qué comprobar:** Puedes distinguir el agente de una llamada única al modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `generative-ai-for-beginners`, `agent-framework`, `mcp-for-beginners`
+**Combina con:** `agent-framework`, `generative-ai-for-beginners`, `mcp-for-beginners`
 
 ## `ai-engineering-hub`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=guias,agents,ai,llms,machine-learning,mcp,rag,jupyter notebook
@@ -327,7 +327,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee una receta de extracción y adapta sus datos a un párrafo ficticio
 **Qué comprobar:** Entiendes qué se envía al modelo y qué respuesta se valida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `prompt-eng-tutorial`, `anthropic-skills`, `promptfoo`
+**Combina con:** `prompt-eng-tutorial`, `claude-agent-sdk-python`, `promptfoo`
 **Alternativas (elige una):** `openai-cookbook`, `awesome-llm-apps`
 
 ## `claude-quickstarts`
@@ -387,7 +387,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee el mapa de contexto y reduce un encargo a objetivo, datos pertinentes y límites
 **Qué comprobar:** Puedes justificar qué datos incluyes y cuáles omites
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `andrej-karpathy-skills`, `headroom`
+**Combina con:** `12-factor-agents`, `prompt-engineering-guide`, `headroom`
 
 ## `fabric`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=prompts,automation,go
@@ -417,7 +417,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un proveedor y aplica un patrón de resumen a una nota breve que ya conozcas
 **Qué comprobar:** Obtienes un resumen que puedes contrastar con la nota original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `yt-dlp`
+**Combina con:** `ollama`, `yt-dlp`, `open-webui`, `n8n`
 **Alternativas (elige una):** `prompts-chat`
 
 ## `generative-ai-for-beginners`
@@ -448,7 +448,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico
 **Qué comprobar:** Puedes distinguir modelo, aplicación y proveedor y localizar las dependencias de ese ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ai-agents-for-beginners`, `mcp-for-beginners`
+**Combina con:** `ai-agents-for-beginners`, `mcp-for-beginners`, `openai-cookbook`
 **Alternativas (elige una):** `llm-course`
 
 ## `how-to-train-your-gpt`
@@ -513,7 +513,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos
 **Qué comprobar:** Puedes ubicar la diferencia entre entrenar, cuantizar y servir un modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `unsloth`, `llama-factory`
+**Combina con:** `unsloth`, `trl`, `pytorch`
 **Alternativas (elige una):** `llms-from-scratch`, `generative-ai-for-beginners`
 
 ## `llm.c`
@@ -605,7 +605,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera la plantilla de daily-triage en una carpeta de prueba y ejecuta doctor antes de activar acciones
 **Qué comprobar:** Puedes revisar la configuración y los avisos del diagnóstico
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `superpowers`
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `mvanhorn`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference
@@ -693,7 +693,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una receta de salida estructurada y revisa su esquema antes de ejecutar una entrada breve
 **Qué comprobar:** Puedes identificar la petición, respuesta esperada y consumo de la receta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openai-python`, `openai-agents-python`
+**Combina con:** `openai-python`, `openai-agents-python`, `promptfoo`
 **Alternativas (elige una):** `claude-cookbooks`, `awesome-llm-apps`
 
 ## `prompt-eng-tutorial`
@@ -724,7 +724,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Completa Basic Prompt Structure y compara una respuesta ambigua con otra que pide un formato concreto
 **Qué comprobar:** Puedes reconocer la diferencia entre instrucción y contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-cookbooks`
+**Combina con:** `claude-cookbooks`, `promptfoo`, `marimo`
 **Alternativas (elige una):** `prompt-engineering-guide`
 
 ## `prompt-engineering-guide`
@@ -755,7 +755,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia
 **Qué comprobar:** Puedes explicar qué información añadiste y por qué
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `context-engineering`
+**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`
 **Alternativas (elige una):** `prompt-eng-tutorial`
 
 ## `prompt-master`
@@ -787,7 +787,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide al skill que formule preguntas para redactar un prompt de una página de reservas
 **Qué comprobar:** El prompt especifica objetivo, contexto, restricciones y criterio de aceptación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `andrej-karpathy-skills`
+**Combina con:** `claude-code`, `prompt-engineering-guide`, `anthropic-skills`
 
 ## `prompts-chat`
 role=directory · exec=local · setup=easy · mcp=True · prov=— · tags=prompts,chatbot
@@ -817,6 +817,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Busca un prompt de resumen y adapta sus variables a una nota propia antes de probarlo en tu asistente
 **Qué comprobar:** Puedes identificar tarea, datos de entrada y formato esperado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `promptfoo`, `open-webui`
 **Alternativas (elige una):** `fabric`
 
 ## `python-machine-learning-book`

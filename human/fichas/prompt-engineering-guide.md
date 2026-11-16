@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Guía de referencia de DAIR.AI (MIT) sobre ingeniería de prompts, con versión web en promptingguide.ai. Es material educativo, no software para instalar. Es una de las referencias más citadas del tema (~80k estrellas), pero el repositorio se actualiza poco: el último push es de marzo de 2026.
+
+## ¿Qué hace?
+
+Recopila técnicas de prompting (zero-shot, few-shot, chain-of-thought, etc.), aplicaciones, riesgos, artículos, lecturas y herramientas, y amplía su cobertura a RAG, agentes e ingeniería de contexto. Está traducida a varios idiomas. Sirve como mapa conceptual para equipos que empiezan con LLMs. DAIR.AI promociona en el README cursos de pago en su Academy.
+
+## ¿Cómo lo hace?
+
+El sitio está hecho con Next.js y Nextra; para verlo en local se instalan las dependencias con pnpm y se arranca con `pnpm dev`. El contenido está en archivos MDX dentro del repositorio. No requiere claves de API para leerlo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [prompt-master](prompt-master.md) | Aplicar las técnicas de la guía a encargos concretos con una skill que reescribe prompts para cada herramienta. (combinación por arquitectura) | Lee primero la guía para entender las técnicas; instala la skill si quieres automatizarlas. |
+| [Context-Engineering](context-engineering.md) | Continuación natural hacia la ingeniería de contexto, que la propia guía ya incluye como tema. (combinación por arquitectura) | Úsalo después de dominar los fundamentos de prompting. |
+| [promptfoo](promptfoo.md) | Medir con evaluaciones reproducibles si una técnica de la guía mejora de verdad tus resultados. (combinación por arquitectura) | Diseña los prompts con la guía y valídalos con un conjunto de pruebas en promptfoo. |
+
+**Notas:** Alternativas (elige una): prompt-eng-tutorial.
+
+Estado en GitHub: activo · último push 2026-03-11 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md) · [2](https://www.promptingguide.ai/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro |
 | Coste | Sin pago a un modelo en la ruta básica. La guía pública es consultable sin API; los cursos de Academy y el modelo donde pruebes prompts tienen sus propias condiciones |
 | Equipo | Preparación según la ruta elegida. Navegador; pregunta de ejemplo |
-
-Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro
-
-## Qué puedes hacer con él
-
-Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.
-
-## Por qué destaca
-
-Usos propuestos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una.
-
-## Cómo funciona
 
 Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; pregunta de ejemplo
 - **Etiquetas:** `learning` `prompts` `rag`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Context-Engineering](context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. |
 
 ## Alternativas (elige una)
 

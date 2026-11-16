@@ -56301,8 +56301,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender patrones de agentes; Estudiar herramientas y memoria con ejemplos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "generative-ai-for-beginners",
         "agent-framework",
+        "generative-ai-for-beginners",
         "mcp-for-beginners"
       ],
       "alt": []
@@ -57118,7 +57118,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "prompt-eng-tutorial",
-        "anthropic-skills",
+        "claude-agent-sdk-python",
         "promptfoo"
       ],
       "alt": [
@@ -57349,7 +57349,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar contexto para una tarea larga; Estudiar memoria y recuperación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "andrej-karpathy-skills",
+        "12-factor-agents",
+        "prompt-engineering-guide",
         "headroom"
       ],
       "alt": []
@@ -57474,7 +57475,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "yt-dlp"
+        "yt-dlp",
+        "open-webui",
+        "n8n"
       ],
       "alt": [
         "prompts-chat"
@@ -57593,7 +57596,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ai-agents-for-beginners",
-        "mcp-for-beginners"
+        "mcp-for-beginners",
+        "openai-cookbook"
       ],
       "alt": [
         "llm-course"
@@ -57826,7 +57830,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "unsloth",
-        "llama-factory"
+        "trl",
+        "pytorch"
       ],
       "alt": [
         "llms-from-scratch",
@@ -58179,7 +58184,7 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "superpowers"
+        "opencode"
       ],
       "alt": []
     },
@@ -58518,7 +58523,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "openai-python",
-        "openai-agents-python"
+        "openai-agents-python",
+        "promptfoo"
       ],
       "alt": [
         "claude-cookbooks",
@@ -58637,7 +58643,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-cookbooks"
+        "claude-cookbooks",
+        "promptfoo",
+        "marimo"
       ],
       "alt": [
         "prompt-engineering-guide"
@@ -58752,7 +58760,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "context-engineering"
+        "prompt-master",
+        "context-engineering",
+        "promptfoo"
       ],
       "alt": [
         "prompt-eng-tutorial"
@@ -58868,7 +58878,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "andrej-karpathy-skills"
+        "claude-code",
+        "prompt-engineering-guide",
+        "anthropic-skills"
       ],
       "alt": []
     },
@@ -58981,7 +58993,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "promptfoo",
+        "open-webui"
+      ],
       "alt": [
         "fabric"
       ]

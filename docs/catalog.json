@@ -90234,6 +90234,45 @@
       "stars": 27210,
       "license": "NOASSERTION",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "context-engineering",
+          "motivo": "Profundiza en el factor 3 (gestionar la ventana de contexto). (combinación por arquitectura)",
+          "orden_instalacion": "Lee primero los 12 factores y luego la guía de contexto."
+        },
+        {
+          "id": "langgraph",
+          "motivo": "Framework de bajo nivel que permite aplicar los principios (control del flujo, pausar y reanudar) sin ocultar los prompts. (combinación por arquitectura)",
+          "orden_instalacion": "Diseña con los 12 factores y usa LangGraph solo donde aporte estado duradero."
+        },
+        {
+          "id": "vercel-ai",
+          "motivo": "Biblioteca ligera para aplicar los factores en TypeScript manteniendo el control de prompts y bucle. (combinación por arquitectura)",
+          "orden_instalacion": "Implementa el bucle propio con generateText/tools."
+        }
+      ],
+      "que_es": "Guía de 12 principios para construir aplicaciones con LLM fiables, escrita por Dex (HumanLayer) a imagen de las '12 Factor Apps'. El código es Apache 2.0 y el contenido CC BY-SA 4.0 (GitHub lo marca NOASSERTION). Es un texto de referencia estable; último push en septiembre de 2025.",
+      "que_hace": "Defiende que los agentes en producción son sobre todo software determinista con LLMs en puntos concretos. Sus principios incluyen controlar los prompts, la ventana de contexto (factor 3, la base de la 'ingeniería de contexto') y el flujo de control, tratar las herramientas como salidas estructuradas, unificar estado de ejecución y de negocio, poder pausar y reanudar, contactar con humanos mediante herramientas y construir agentes pequeños y enfocados. Es crítica con depender de frameworks opacos.",
+      "como_lo_hace": "Es contenido Markdown con ejemplos de código (TypeScript, entre otros) y una charla del AI Engineer World's Fair. Hay una discusión abierta para crear `npx/uvx create-12-factor-agent`, aún no publicado. No requiere instalación.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/humanlayer/12-factor-agents/blob/main/README.md",
+        "https://github.com/humanlayer/12-factor-agents/blob/main/content/factor-03-own-your-context-window.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "humanlayer/12-factor-agents",
+        "archived": false,
+        "pushed_at": "2025-09-21",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "TypeScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.",
       "body": "Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.",
       "install": {
@@ -90553,6 +90592,45 @@
       "stars": 21899,
       "license": "NOASSERTION",
       "homepage": "https://diamant-ai.com",
+      "combina_con": [
+        {
+          "id": "langgraph",
+          "motivo": "Base de varios tutoriales de flujos con estado (tutorial 'Stateful Agent Workflows with LangGraph').",
+          "orden_instalacion": "Instálalo en el entorno del tutorial correspondiente."
+        },
+        {
+          "id": "mem0",
+          "motivo": "Tutorial de memoria auto-mejorable con Mem0.",
+          "orden_instalacion": "Configura Mem0 (cloud o local) antes del notebook."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Tutorial de despliegue on-premise de LLMs con Ollama.",
+          "orden_instalacion": "Instala Ollama y descarga el modelo indicado."
+        }
+      ],
+      "que_es": "Colección de tutoriales de @NirDiamant para llevar agentes de IA a producción. **Licencia no comercial personalizada** (GitHub la marca NOASSERTION): no es open source en sentido OSI. Es muy activa y el README promociona un libro del autor.",
+      "que_hace": "Reúne unos 28 tutoriales con código sobre flujos con estado (LangGraph), memoria (Redis, Mem0), datos web en tiempo real (Tavily), MCP, despliegue on-premise con Ollama, trazado (LangSmith), seguridad y guardrails, evaluación, contenedores, GPU y más. Muchos tutoriales están patrocinados por la empresa cuya herramienta enseñan.",
+      "como_lo_hace": "Notebooks Python independientes, cada uno con sus `requirements.txt` y sus claves de servicio. Se clona el repositorio y se abre el tutorial elegido. La licencia impide el uso comercial del material sin permiso.",
+      "descripcion_notas": "Sin alternativas declaradas. Licencia no comercial: revisa el LICENSE antes de reutilizar el código en un producto. Contenido parcialmente patrocinado.",
+      "descripcion_fuentes": [
+        "https://github.com/NirDiamant/agents-towards-production/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "NirDiamant/agents-towards-production",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Jupyter Notebook",
+        "latest_release": "book-v1.0 (2026-10-26)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación.",
       "body": "Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación.",
       "install": {
@@ -90606,8 +90684,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender patrones de agentes; Estudiar herramientas y memoria con ejemplos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "generative-ai-for-beginners",
         "agent-framework",
+        "generative-ai-for-beginners",
         "mcp-for-beginners"
       ],
       "alt": [],
@@ -90720,6 +90798,45 @@
       "stars": 79639,
       "license": "MIT",
       "homepage": "https://aka.ms/ai-agents-beginners",
+      "combina_con": [
+        {
+          "id": "agent-framework",
+          "motivo": "Framework usado en todos los ejemplos de código del curso.",
+          "orden_instalacion": "Sigue la lección de configuración del curso; instala agent-framework en Python."
+        },
+        {
+          "id": "generative-ai-for-beginners",
+          "motivo": "Curso previo de la misma serie para fundamentos de IA generativa (enlazado en el README).",
+          "orden_instalacion": "Hazlo antes si no tienes base en LLMs."
+        },
+        {
+          "id": "mcp-for-beginners",
+          "motivo": "Profundizar en MCP, que el curso trata en la lección de protocolos agénticos (enlazado en el README).",
+          "orden_instalacion": "Tómalo después de la lección 11."
+        }
+      ],
+      "que_es": "Curso gratuito de Microsoft (MIT) para empezar a construir agentes de IA. Tiene unas 18 lecciones con texto, vídeo y código Python, y está traducido a más de 50 idiomas. Es activo y muy popular (~80k estrellas).",
+      "que_hace": "Cubre fundamentos de agentes, patrones de diseño (uso de herramientas, RAG agéntico, planificación, multiagente, metacognición), confianza y seguridad, protocolos agénticos (MCP, A2A, NLWeb), gestión de contexto y memoria, despliegue escalable y una lección sobre Microsoft Agent Framework.",
+      "como_lo_hace": "Los ejemplos de código usan Microsoft Agent Framework con Microsoft Foundry Agent Service V2, que requiere cuenta de Azure. Por tanto está orientado al ecosistema de Microsoft. El README recomienda un sparse checkout para evitar descargar las traducciones.",
+      "descripcion_notas": "Sin alternativas declaradas. Requiere cuenta de Azure para los ejemplos tal como están.",
+      "descripcion_fuentes": [
+        "https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md",
+        "https://learn.microsoft.com/agent-framework/overview/"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "microsoft/ai-agents-for-beginners",
+        "archived": false,
+        "pushed_at": "2026-11-07",
+        "license": "MIT",
+        "primary_language": "Jupyter Notebook",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español.",
       "body": "Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español.",
       "install": {
@@ -90730,12 +90847,12 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "generative-ai-for-beginners",
-          "label": "generative-ai-for-beginners"
-        },
-        {
           "id": "agent-framework",
           "label": "agent-framework"
+        },
+        {
+          "id": "generative-ai-for-beginners",
+          "label": "generative-ai-for-beginners"
         },
         {
           "id": "mcp-for-beginners",
@@ -90924,7 +91041,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-cookbooks"
+        "claude-cookbooks",
+        "promptfoo",
+        "marimo"
       ],
       "alt": [
         "prompt-engineering-guide"
@@ -91038,6 +91157,43 @@
       "stars": 39347,
       "license": "",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-cookbooks",
+          "motivo": "Pasar de la teoría de prompts a recetas de código (herramientas, RAG, evaluación) del mismo proveedor. (combinación por arquitectura)",
+          "orden_instalacion": "Termina el tutorial y continúa con las recetas que necesites."
+        },
+        {
+          "id": "promptfoo",
+          "motivo": "Convertir los ejercicios en pruebas automáticas y comparar variantes de prompt. (combinación por arquitectura)",
+          "orden_instalacion": "Usa los prompts del tutorial como casos base."
+        },
+        {
+          "id": "marimo",
+          "motivo": "Ejecutar los notebooks en un entorno reactivo y reproducible en lugar de Jupyter clásico. (combinación por arquitectura) (requiere convertirlos)",
+          "orden_instalacion": "Convierte el notebook con la herramienta de importación de marimo."
+        }
+      ],
+      "que_es": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con Claude. El repositorio no tiene archivo de licencia, así que no hay permiso explícito de reutilización. Último push en agosto de 2026; los ejemplos usan Claude 3 Haiku, un modelo ya antiguo.",
+      "que_hace": "Enseña en 9 capítulos con ejercicios y un apéndice la estructura de un buen prompt, los fallos habituales y las técnicas '80/20' para corregirlos, las fortalezas y debilidades de Claude, y a construir prompts desde cero para casos comunes. Cada lección tiene un 'Example Playground' para experimentar.",
+      "como_lo_hace": "Notebooks Jupyter en dos versiones: API de Anthropic (carpeta 'Anthropic 1P') y Amazon Bedrock. También existe una versión en Google Sheets con la extensión Claude for Sheets. Requiere una clave de API de Anthropic o acceso a Bedrock, y cada ejercicio consume tokens.",
+      "descripcion_notas": "Alternativas (elige una): prompt-engineering-guide. Sin archivo de licencia. Combinación anterior con claude-cookbooks conservada como complemento de aprendizaje.",
+      "descripcion_fuentes": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "anthropics/prompt-eng-interactive-tutorial",
+        "archived": false,
+        "pushed_at": "2026-08-28",
+        "primary_language": "Jupyter Notebook",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
       "body": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
       "install": {
@@ -91055,6 +91211,14 @@
         {
           "id": "claude-cookbooks",
           "label": "claude-cookbooks"
+        },
+        {
+          "id": "promptfoo",
+          "label": "promptfoo"
+        },
+        {
+          "id": "marimo",
+          "label": "marimo"
         }
       ],
       "areas": [
@@ -91211,6 +91375,49 @@
       "stars": 144646,
       "license": "Apache-2.0",
       "homepage": "https://www.theunwindai.com",
+      "combina_con": [
+        {
+          "id": "streamlit",
+          "motivo": "Interfaz de muchas de las apps de ejemplo.",
+          "orden_instalacion": "Se instala con los requirements de cada plantilla."
+        },
+        {
+          "id": "openai-agents-python",
+          "motivo": "Framework usado por varias plantillas de agentes (citado en el README).",
+          "orden_instalacion": "Instálalo dentro del entorno de la plantilla que lo use."
+        },
+        {
+          "id": "adk-python",
+          "motivo": "Framework de Google usado en otras plantillas (citado en el README).",
+          "orden_instalacion": "Instálalo en el entorno de la plantilla correspondiente."
+        },
+        {
+          "id": "firecrawl",
+          "motivo": "Extracción web en plantillas de investigación y scraping (citado en el README).",
+          "orden_instalacion": "Configura la clave de Firecrawl antes de lanzar esas plantillas."
+        }
+      ],
+      "que_es": "Colección (Apache-2.0) de @Shubhamsaboo con más de 100 plantillas open source de agentes, skills de agente y apps RAG. Es muy popular (~145k estrellas) y se actualiza a diario. El README afirma que cada plantilla está probada de principio a fin [DATO NO VERIFICADO].",
+      "que_hace": "Reúne ejemplos ejecutables organizados por tipo: agentes iniciales y avanzados, equipos multiagente, agentes de voz, agentes MCP, RAG, apps con memoria, interfaces generativas y fine-tuning. Funcionan con Claude, Gemini, GPT, DeepSeek, Llama, Qwen y modelos locales. Usan frameworks variados, entre ellos Agno, OpenAI Agents SDK, Google ADK, CrewAI y LangGraph.",
+      "como_lo_hace": "Cada plantilla es independiente: se clona el repositorio, se entra en la carpeta, se ejecuta `pip install -r requirements.txt` y se lanza, muchas veces con Streamlit. Las skills de agente se instalan con `npx skills add <url>`. Cada ejemplo pide sus propias claves de API. La calidad y el mantenimiento varían entre plantillas, así que hay que revisarlas antes de producción.",
+      "descripcion_notas": "Alternativas (elige una): openai-cookbook, claude-cookbooks.",
+      "descripcion_fuentes": [
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "Shubhamsaboo/awesome-llm-apps",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.",
       "body": "Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.",
       "install": {
@@ -91865,7 +92072,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "prompt-eng-tutorial",
-        "anthropic-skills",
+        "claude-agent-sdk-python",
         "promptfoo"
       ],
       "alt": [
@@ -91981,6 +92188,44 @@
       "stars": 54663,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "prompt-eng-tutorial",
+          "motivo": "Base de prompting recomendada antes de las recetas. (combinación por arquitectura)",
+          "orden_instalacion": "Completa primero el tutorial de prompts."
+        },
+        {
+          "id": "claude-agent-sdk-python",
+          "motivo": "Siguiente paso cuando las recetas de herramientas y subagentes se quedan cortas y necesitas el bucle de agente completo. (combinación por arquitectura)",
+          "orden_instalacion": "Pasa al SDK cuando quieras agentes con herramientas de sistema."
+        },
+        {
+          "id": "promptfoo",
+          "motivo": "Automatizar las evaluaciones que el cookbook enseña a construir. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte el notebook de evaluaciones en una configuración de promptfoo."
+        }
+      ],
+      "que_es": "Recetario oficial de Anthropic (MIT) con notebooks y guías para construir con la API de Claude. Antes se llamaba anthropic-cookbook, nombre que aún aparece en muchos enlaces del README. Es activo (último push en noviembre de 2026).",
+      "que_hace": "Ofrece recetas organizadas por capacidades (clasificación, RAG, resumen), uso de herramientas e integraciones, integraciones de terceros (bases vectoriales como Pinecone, embeddings de Voyage AI), multimodalidad (visión, PDF) y técnicas avanzadas (subagentes, evaluaciones automáticas, modo JSON). Recomienda empezar por el curso de fundamentos de la API de Anthropic.",
+      "como_lo_hace": "Notebooks principalmente en Python que requieren una clave de API de Claude, con su coste correspondiente. Los conceptos son adaptables a cualquier lenguaje con cliente de la API. No se instala; se clona y se ejecuta cada notebook.",
+      "descripcion_notas": "Alternativas (elige una): openai-cookbook, awesome-llm-apps. Combinación anterior con anthropic-skills sustituida por claude-agent-sdk-python (más directa).",
+      "descripcion_fuentes": [
+        "https://github.com/anthropics/claude-cookbooks/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "anthropics/claude-cookbooks",
+        "archived": false,
+        "pushed_at": "2026-11-04",
+        "license": "MIT",
+        "primary_language": "Jupyter Notebook",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.",
       "body": "Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.",
       "install": {
@@ -92004,8 +92249,8 @@
           "label": "prompt-eng-tutorial"
         },
         {
-          "id": "anthropic-skills",
-          "label": "anthropic-skills"
+          "id": "claude-agent-sdk-python",
+          "label": "claude-agent-sdk-python"
         },
         {
           "id": "promptfoo",
@@ -92186,7 +92431,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar contexto para una tarea larga; Estudiar memoria y recuperación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "andrej-karpathy-skills",
+        "12-factor-agents",
+        "prompt-engineering-guide",
         "headroom"
       ],
       "alt": [],
@@ -92299,6 +92545,44 @@
       "stars": 9280,
       "license": "MIT",
       "homepage": "https://deepwiki.com/davidkimai/Context-Engineering",
+      "combina_con": [
+        {
+          "id": "12-factor-agents",
+          "motivo": "Visión práctica e ingenieril del mismo tema (factor 3). (combinación por arquitectura)",
+          "orden_instalacion": "Empieza por el factor 3 para una base concreta y usa esta guía para profundizar."
+        },
+        {
+          "id": "prompt-engineering-guide",
+          "motivo": "Base de prompting previa a la ingeniería de contexto. (combinación por arquitectura)",
+          "orden_instalacion": "Lee primero los fundamentos de prompts."
+        },
+        {
+          "id": "headroom",
+          "motivo": "Herramienta de compresión de contexto para aplicar en la práctica la gestión de la ventana. (combinación por arquitectura)",
+          "orden_instalacion": "Úsala cuando el problema de contexto sea de tamaño y coste."
+        }
+      ],
+      "que_es": "Guía y curso en construcción (MIT) sobre 'ingeniería de contexto', inspirada en la definición de Andrej Karpathy. El repositorio cambió de dueño, de davidkimai/Context-Engineering a jasontang-ai/Context-Engineering, y el README todavía enlaza al nombre antiguo. Último push en febrero de 2026.",
+      "que_hace": "Propone un recorrido desde primeros principios: prompts atómicos, few-shot, memoria, sistemas multiagente, 'campos' cognitivos y protocolos. Incluye plantillas, ejemplos y referencias a investigación reciente, como un survey de más de 1.400 artículos. Parte del marco teórico (campos neuronales, 'residuo simbólico') es especulativo y poco contrastado [DATO NO VERIFICADO].",
+      "como_lo_hace": "Contenido en Markdown y notebooks Python, más plantillas reutilizables; no se instala. El curso '00_COURSE' está marcado como en construcción. Enlaza recursos externos como DeepWiki y NotebookLM.",
+      "descripcion_notas": "Sin alternativas declaradas. Hallazgo: el catálogo debería documentar el cambio de dueño (davidkimai → jasontang-ai). Combinación anterior con andrej-karpathy-skills eliminada: sin relación documentada.",
+      "descripcion_fuentes": [
+        "https://github.com/jasontang-ai/Context-Engineering/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "jasontang-ai/Context-Engineering",
+        "archived": false,
+        "pushed_at": "2026-02-27",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Guía y curso práctico sobre \"ingeniería de contexto\", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso.",
       "body": "Guía y curso práctico sobre \"ingeniería de contexto\", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso.",
       "install": {
@@ -92309,8 +92593,12 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "andrej-karpathy-skills",
-          "label": "andrej-karpathy-skills"
+          "id": "12-factor-agents",
+          "label": "12-factor-agents"
+        },
+        {
+          "id": "prompt-engineering-guide",
+          "label": "prompt-engineering-guide"
         },
         {
           "id": "headroom",
@@ -92353,7 +92641,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "yt-dlp"
+        "yt-dlp",
+        "open-webui",
+        "n8n"
       ],
       "alt": [
         "prompts-chat"
@@ -92471,6 +92761,50 @@
       "stars": 44640,
       "license": "MIT",
       "homepage": "https://danielmiessler.com/p/fabric-origin-story",
+      "combina_con": [
+        {
+          "id": "ollama",
+          "motivo": "Ejecutar los patterns con modelos locales (proveedor soportado en el README).",
+          "orden_instalacion": "Instala Ollama y descarga un modelo; después elígelo en `fabric --setup`."
+        },
+        {
+          "id": "yt-dlp",
+          "motivo": "Extraer transcripciones de vídeos para resumirlas con `fabric -y`; Fabric delega en yt-dlp (opción `--yt-dlp-args`).",
+          "orden_instalacion": "Instala yt-dlp en el PATH antes de usar las funciones de YouTube."
+        },
+        {
+          "id": "open-webui",
+          "motivo": "Usar el servidor REST de Fabric en modo de compatibilidad con Ollama como backend de una interfaz de chat. (combinación por arquitectura) (no hay guía conjunta)",
+          "orden_instalacion": "Arranca `fabric --serve` con el modo Ollama y apunta el cliente a esa URL."
+        },
+        {
+          "id": "n8n",
+          "motivo": "Llamar a patterns desde automatizaciones a través de la API REST. (combinación por arquitectura)",
+          "orden_instalacion": "Arranca el servidor REST y usa nodos HTTP de n8n."
+        }
+      ],
+      "que_es": "Framework open source (MIT) de Daniel Miessler para aumentar capacidades humanas con IA, organizado en torno a 'patterns' (prompts reutilizables por tarea). Es muy activo (v1.4.576, publicaciones casi diarias) y maduro.",
+      "que_hace": "Ofrece cientos de patterns para tareas reales, como resumir, extraer ideas, analizar afirmaciones o escribir, que se aplican a texto desde la terminal con tuberías (`pbpaste | fabric -p summarize`). Puede extraer transcripciones de YouTube (vía yt-dlp) y procesar páginas web. Admite 'strategies' de prompting y sesiones. Incluye un servidor REST con documentación Swagger, un modo de compatibilidad con la API de Ollama y una interfaz web.",
+      "como_lo_hace": "CLI en Go que se instala con binarios, Homebrew (como `fabric-ai`), paquetes de Arch, `go install` o Docker. `fabric --setup` configura proveedores y descarga los patterns. Admite OpenAI (incluido OAuth de suscripción ChatGPT/Codex vía un backend privado, según el README), Anthropic, Ollama, Azure OpenAI y otros. Los patterns son Markdown editables, y se pueden crear patterns propios.",
+      "descripcion_notas": "Alternativas (elige una): prompts-chat. Ojo: el uso de OAuth de suscripción vía backend privado puede contravenir los términos del proveedor [DATO NO VERIFICADO].",
+      "descripcion_fuentes": [
+        "https://github.com/danielmiessler/Fabric/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "danielmiessler/Fabric",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "Go",
+        "latest_release": "v1.4.576 (2026-11-15)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal.",
       "body": "CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal.",
       "install": {
@@ -92492,6 +92826,14 @@
         {
           "id": "yt-dlp",
           "label": "yt-dlp"
+        },
+        {
+          "id": "open-webui",
+          "label": "open-webui"
+        },
+        {
+          "id": "n8n",
+          "label": "n8n"
         }
       ],
       "areas": [
@@ -92526,7 +92868,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ai-agents-for-beginners",
-        "mcp-for-beginners"
+        "mcp-for-beginners",
+        "openai-cookbook"
       ],
       "alt": [
         "llm-course"
@@ -92642,6 +92985,44 @@
       "stars": 123515,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "ai-agents-for-beginners",
+          "motivo": "Siguiente curso de la serie, centrado en agentes (enlazado en el README).",
+          "orden_instalacion": "Haz primero este curso y continúa con el de agentes."
+        },
+        {
+          "id": "mcp-for-beginners",
+          "motivo": "Curso complementario sobre Model Context Protocol (enlazado en el README).",
+          "orden_instalacion": "Tómalo cuando llegues a la parte de herramientas y agentes."
+        },
+        {
+          "id": "openai-cookbook",
+          "motivo": "Recetas más avanzadas para quienes usan la API de OpenAI en los ejercicios. (combinación por arquitectura)",
+          "orden_instalacion": "Úsalo como siguiente paso práctico tras las lecciones 'Build'."
+        }
+      ],
+      "que_es": "Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.",
+      "que_hace": "Ofrece 21 lecciones que combinan conceptos ('Learn') y código ('Build'): prompts, chat, búsqueda, generación de imágenes, RAG, agentes, fine-tuning, seguridad y más. Cada lección incluye vídeo, texto y ejercicios. Enlaza otros cursos de la serie, como agentes y MCP para principiantes.",
+      "como_lo_hace": "Los ejemplos están en Python y TypeScript y funcionan con Azure OpenAI, Microsoft Foundry Models y la API de OpenAI. GitHub Models se retira a finales de julio de 2026, según el README. Una lección de configuración prepara el entorno, por ejemplo con Codespaces. El repositorio pesa mucho por las traducciones, así que el README recomienda un sparse checkout.",
+      "descripcion_notas": "Alternativas (elige una): llm-course. Aviso: algunas lecciones dependen de GitHub Models, que se retira; usa Foundry o la API de OpenAI.",
+      "descripcion_fuentes": [
+        "https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "microsoft/generative-ai-for-beginners",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "Jupyter Notebook",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.",
       "body": "Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.",
       "install": {
@@ -92663,6 +93044,10 @@
         {
           "id": "mcp-for-beginners",
           "label": "mcp-for-beginners"
+        },
+        {
+          "id": "openai-cookbook",
+          "label": "openai-cookbook"
         }
       ],
       "areas": [
@@ -92846,7 +93231,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "unsloth",
-        "llama-factory"
+        "trl",
+        "pytorch"
       ],
       "alt": [
         "llms-from-scratch",
@@ -92961,6 +93347,44 @@
       "stars": 85098,
       "license": "Apache-2.0",
       "homepage": "https://mlabonne.github.io/blog/",
+      "combina_con": [
+        {
+          "id": "unsloth",
+          "motivo": "Fine-tuning eficiente usado en el notebook 'Fine-tune Llama 3.1 with Unsloth'.",
+          "orden_instalacion": "Abre el notebook en Colab con GPU; instala Unsloth según indique."
+        },
+        {
+          "id": "trl",
+          "motivo": "Fine-tuning supervisado con QLoRA usado en el notebook de Mistral-7b.",
+          "orden_instalacion": "Se instala dentro del notebook."
+        },
+        {
+          "id": "pytorch",
+          "motivo": "Base técnica de la parte 'LLM Scientist'. (combinación por arquitectura)",
+          "orden_instalacion": "Instálalo con soporte CUDA si vas a entrenar en local."
+        }
+      ],
+      "que_es": "Curso gratuito (Apache-2.0) de Maxime Labonne para aprender LLMs, con rutas de estudio y notebooks de Colab. Es muy popular (~85k estrellas). El autor coescribió el libro 'LLM Engineer's Handbook' basado en este curso. Último push en febrero de 2026.",
+      "que_hace": "Se divide en tres partes: 'LLM Fundamentals' (matemáticas, Python y redes neuronales; opcional), 'The LLM Scientist' (preentrenamiento, fine-tuning, alineación, evaluación, cuantización) y 'The LLM Engineer' (aplicaciones, RAG, agentes, despliegue y seguridad). Incluye notebooks de herramientas propias como LLM AutoEval, LazyMergekit, LazyAxolotl y AutoQuant.",
+      "como_lo_hace": "Es una hoja de ruta en Markdown con enlaces a artículos y notebooks de Google Colab. Algunos notebooks requieren GPU (Colab gratuito o de pago, RunPod) y claves de Hugging Face. Hay ejemplos de fine-tuning con Unsloth, TRL (QLoRA) y Axolotl.",
+      "descripcion_notas": "Alternativas (elige una): llms-from-scratch, generative-ai-for-beginners. Combinación anterior con llama-factory eliminada: el curso no lo usa (y es alternativa de unsloth).",
+      "descripcion_fuentes": [
+        "https://github.com/mlabonne/llm-course/blob/main/README.md",
+        "https://mlabonne.github.io/blog/"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "mlabonne/llm-course",
+        "archived": false,
+        "pushed_at": "2026-02-05",
+        "license": "Apache-2.0",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.",
       "body": "Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.",
       "install": {
@@ -92984,8 +93408,12 @@
           "label": "unsloth"
         },
         {
-          "id": "llama-factory",
-          "label": "llama-factory"
+          "id": "trl",
+          "label": "trl"
+        },
+        {
+          "id": "pytorch",
+          "label": "pytorch"
         }
       ],
       "areas": [
@@ -93324,7 +93752,7 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "superpowers"
+        "opencode"
       ],
       "alt": [],
       "stack": "Node; proyecto de prueba; Claude Code o Codex configurado",
@@ -93438,6 +93866,45 @@
       "stars": 11772,
       "license": "MIT",
       "homepage": "https://cobusgreyling.github.io/loop-engineering/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente por defecto de los bucles (`--tool claude`).",
+          "orden_instalacion": "Instala y autentica Claude Code antes de `loop init`."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente alternativo soportado (`--tool codex`).",
+          "orden_instalacion": "Instala Codex CLI y elige `--tool codex` al iniciar."
+        },
+        {
+          "id": "opencode",
+          "motivo": "Agente open source soportado (`--tool opencode`).",
+          "orden_instalacion": "Instala opencode y elige `--tool opencode`."
+        }
+      ],
+      "que_es": "Biblioteca de patrones (MIT) de Cobus Greyling para operar agentes de programación alrededor de un repositorio mediante 'bucles' en lugar de prompts sueltos. Es activa (v1.6.0) y reciente.",
+      "que_hace": "Ofrece patrones y plantillas: triaje diario de issues, CI y dependencias, vigilancia de PRs, refactorizaciones y otros. Cada patrón descubre trabajo, lo delega en agentes, verifica resultados con una puntuación y persiste el estado (`STATE.md`). La primera semana funciona en modo 'solo informe' para limitar riesgos. Incluye un selector de patrones y un starter mínimo como GitHub Action.",
+      "como_lo_hace": "CLI npm (`npx @cobusgreyling/loop init . --pattern daily-triage --tool claude`) con comandos `doctor` y `cost` para estimar gasto. El agente por defecto es Claude Code, y también admite Grok, Codex y opencode. Requiere tener instalado y autenticado el agente elegido. Los bucles automatizados pueden generar costes recurrentes, así que conviene revisar `cost` antes de activarlos.",
+      "descripcion_notas": "Sin alternativas declaradas. claude-code, codex y opencode son alternativas entre sí: elige uno por bucle. Combinación anterior con superpowers eliminada: sin integración documentada.",
+      "descripcion_fuentes": [
+        "https://github.com/cobusgreyling/loop-engineering/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "cobusgreyling/loop-engineering",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.6.0 (2026-07-20)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos.",
       "body": "Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos.",
       "install": {
@@ -93456,8 +93923,8 @@
           "label": "codex"
         },
         {
-          "id": "superpowers",
-          "label": "superpowers"
+          "id": "opencode",
+          "label": "opencode"
         }
       ],
       "areas": [
@@ -93783,7 +94250,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "openai-python",
-        "openai-agents-python"
+        "openai-agents-python",
+        "promptfoo"
       ],
       "alt": [
         "claude-cookbooks",
@@ -93898,6 +94366,45 @@
       "stars": 77124,
       "license": "MIT",
       "homepage": "https://cookbook.openai.com",
+      "combina_con": [
+        {
+          "id": "openai-python",
+          "motivo": "SDK oficial usado por casi todos los notebooks.",
+          "orden_instalacion": "Instala `openai` en el entorno antes de ejecutar los ejemplos."
+        },
+        {
+          "id": "openai-agents-python",
+          "motivo": "Recetas de agentes del cookbook basadas en el Agents SDK de OpenAI.",
+          "orden_instalacion": "Instálalo cuando sigas las recetas de agentes."
+        },
+        {
+          "id": "promptfoo",
+          "motivo": "Llevar las evaluaciones del cookbook a una suite automatizada y comparable entre modelos. (combinación por arquitectura)",
+          "orden_instalacion": "Reutiliza los casos de prueba del notebook en promptfoo."
+        }
+      ],
+      "que_es": "Recetario oficial de OpenAI (MIT) con ejemplos de código y guías para tareas comunes con su API. Se navega en cookbook.openai.com. Es activo (último push en noviembre de 2026) y maduro.",
+      "que_hace": "Ofrece notebooks y guías para tareas comunes: embeddings y búsqueda, RAG, function calling, salidas estructuradas, evaluación, agentes, voz en tiempo real, visión, fine-tuning y patrones de producción. También recoge recursos relacionados de terceros. El contenido está atado a la API y los productos de OpenAI.",
+      "como_lo_hace": "La mayoría de los ejemplos son notebooks Python que requieren una cuenta y una clave de API de OpenAI (`OPENAI_API_KEY`), con su coste correspondiente. Los conceptos se pueden trasladar a otros lenguajes. No se instala como paquete: se clona o se consulta en la web.",
+      "descripcion_notas": "Alternativas (elige una): claude-cookbooks, awesome-llm-apps.",
+      "descripcion_fuentes": [
+        "https://github.com/openai/openai-cookbook/blob/main/README.md",
+        "https://cookbook.openai.com"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "openai/openai-cookbook",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "Jupyter Notebook",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales.",
       "body": "Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales.",
       "install": {
@@ -93923,6 +94430,10 @@
         {
           "id": "openai-agents-python",
           "label": "openai-agents-python"
+        },
+        {
+          "id": "promptfoo",
+          "label": "promptfoo"
         }
       ],
       "areas": [
@@ -93952,7 +94463,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "context-engineering"
+        "prompt-master",
+        "context-engineering",
+        "promptfoo"
       ],
       "alt": [
         "prompt-eng-tutorial"
@@ -94065,6 +94578,45 @@
       "stars": 80059,
       "license": "MIT",
       "homepage": "https://www.promptingguide.ai/",
+      "combina_con": [
+        {
+          "id": "prompt-master",
+          "motivo": "Aplicar las técnicas de la guía a encargos concretos con una skill que reescribe prompts para cada herramienta. (combinación por arquitectura)",
+          "orden_instalacion": "Lee primero la guía para entender las técnicas; instala la skill si quieres automatizarlas."
+        },
+        {
+          "id": "context-engineering",
+          "motivo": "Continuación natural hacia la ingeniería de contexto, que la propia guía ya incluye como tema. (combinación por arquitectura)",
+          "orden_instalacion": "Úsalo después de dominar los fundamentos de prompting."
+        },
+        {
+          "id": "promptfoo",
+          "motivo": "Medir con evaluaciones reproducibles si una técnica de la guía mejora de verdad tus resultados. (combinación por arquitectura)",
+          "orden_instalacion": "Diseña los prompts con la guía y valídalos con un conjunto de pruebas en promptfoo."
+        }
+      ],
+      "que_es": "Guía de referencia de DAIR.AI (MIT) sobre ingeniería de prompts, con versión web en promptingguide.ai. Es material educativo, no software para instalar. Es una de las referencias más citadas del tema (~80k estrellas), pero el repositorio se actualiza poco: el último push es de marzo de 2026.",
+      "que_hace": "Recopila técnicas de prompting (zero-shot, few-shot, chain-of-thought, etc.), aplicaciones, riesgos, artículos, lecturas y herramientas, y amplía su cobertura a RAG, agentes e ingeniería de contexto. Está traducida a varios idiomas. Sirve como mapa conceptual para equipos que empiezan con LLMs. DAIR.AI promociona en el README cursos de pago en su Academy.",
+      "como_lo_hace": "El sitio está hecho con Next.js y Nextra; para verlo en local se instalan las dependencias con pnpm y se arranca con `pnpm dev`. El contenido está en archivos MDX dentro del repositorio. No requiere claves de API para leerlo.",
+      "descripcion_notas": "Alternativas (elige una): prompt-eng-tutorial.",
+      "descripcion_fuentes": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md",
+        "https://www.promptingguide.ai/"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "dair-ai/Prompt-Engineering-Guide",
+        "archived": false,
+        "pushed_at": "2026-03-11",
+        "license": "MIT",
+        "primary_language": "MDX",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.",
       "body": "Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.",
       "install": {
@@ -94080,8 +94632,16 @@
       ],
       "combine_refs": [
         {
+          "id": "prompt-master",
+          "label": "prompt-master"
+        },
+        {
           "id": "context-engineering",
           "label": "context-engineering"
+        },
+        {
+          "id": "promptfoo",
+          "label": "promptfoo"
         }
       ],
       "areas": [
@@ -94110,7 +94670,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "andrej-karpathy-skills"
+        "claude-code",
+        "prompt-engineering-guide",
+        "anthropic-skills"
       ],
       "alt": [],
       "stack": "Claude con skills o Claude Code; descripción de una tarea",
@@ -94222,6 +94784,43 @@
       "stars": 15978,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Cliente donde se puede cargar la skill desde `~/.claude/skills`.",
+          "orden_instalacion": "Instala Claude Code y clona la skill en el directorio de skills."
+        },
+        {
+          "id": "prompt-engineering-guide",
+          "motivo": "Entender las técnicas que la skill aplica automáticamente. (combinación por arquitectura)",
+          "orden_instalacion": "Consulta la guía para revisar críticamente los prompts generados."
+        },
+        {
+          "id": "anthropic-skills",
+          "motivo": "Referencia oficial del formato de skills, útil para adaptar o auditar esta skill. (combinación por arquitectura)",
+          "orden_instalacion": "Compara la estructura con los ejemplos oficiales antes de modificarla."
+        }
+      ],
+      "que_es": "Skill para Claude (MIT) de nidhinjs que redacta prompts optimizados para otras herramientas de IA. Es un proyecto individual y reciente (último push en octubre de 2026), sin releases. Promete ahorrar créditos y tokens [DATO NO VERIFICADO: sin medición independiente].",
+      "que_hace": "A partir de lo que el usuario quiere, pregunta lo que falta y genera un prompt adaptado a la herramienta de destino: ChatGPT, Claude Code, Cursor, Midjourney, ComfyUI, Ollama y otras. Aplica reglas por tipo de herramienta (por ejemplo, incluir system prompt para un Modelfile de Ollama) para evitar ciclos de re-prompting.",
+      "como_lo_hace": "Es un SKILL.md con referencias. La instalación recomendada es subir el ZIP en claude.ai (Customize → Skills); la alternativa es clonarlo en `~/.claude/skills/prompt-master` para Claude Code, opción que el propio autor desaconseja. No ejecuta código ni requiere claves adicionales.",
+      "descripcion_notas": "Sin alternativas declaradas. Combinación anterior con andrej-karpathy-skills eliminada: sin relación documentada.",
+      "descripcion_fuentes": [
+        "https://github.com/nidhinjs/prompt-master/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "nidhinjs/prompt-master",
+        "archived": false,
+        "pushed_at": "2026-10-22",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill de Claude que ayuda a formular encargos para distintas herramientas de IA; no garantiza ahorro de tokens.",
       "body": "Skill que recopila contexto y restricciones para redactar prompts destinados a herramientas de código, imagen y otros servicios. La instalación documentada corresponde a Claude; los nombres de otros productos describen destinos de los prompts generados.",
       "install": {
@@ -94232,8 +94831,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "andrej-karpathy-skills",
-          "label": "andrej-karpathy-skills"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "prompt-engineering-guide",
+          "label": "prompt-engineering-guide"
+        },
+        {
+          "id": "anthropic-skills",
+          "label": "anthropic-skills"
         }
       ],
       "areas": [
@@ -94265,7 +94872,11 @@
       "desc": "La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "promptfoo",
+        "open-webui"
+      ],
       "alt": [
         "fabric"
       ],
@@ -94379,6 +94990,45 @@
       "stars": 177372,
       "license": "NOASSERTION",
       "homepage": "https://prompts.chat",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Instalar la biblioteca como plugin de Claude Code (`/plugin marketplace add f/prompts.chat`).",
+          "orden_instalacion": "Ten Claude Code instalado; añade el marketplace y luego el plugin."
+        },
+        {
+          "id": "promptfoo",
+          "motivo": "Evaluar prompts de la colección antes de adoptarlos en producción. (combinación por arquitectura)",
+          "orden_instalacion": "Elige los prompts candidatos y crea pruebas con casos reales."
+        },
+        {
+          "id": "open-webui",
+          "motivo": "Importar prompts de la colección a la biblioteca de prompts de una interfaz de chat autoalojada. (combinación por arquitectura)",
+          "orden_instalacion": "Descarga prompts.csv e impórtalo o cópialo en la sección de prompts."
+        }
+      ],
+      "que_es": "La biblioteca de prompts open source más grande, mantenida por Fatih Kadir Akın (f), antes conocida como 'Awesome ChatGPT Prompts' (diciembre de 2022). Tiene licencia doble: el código y el contenido del sitio son MIT, y los prompts (prompts.csv, PROMPTS.md y los que envía la comunidad) son dominio público CC0 1.0. Por eso GitHub la marca como NOASSERTION. Es muy activa y popular (~178k estrellas).",
+      "que_hace": "Ofrece una colección curada de prompts, sobre todo de rol y de tarea, utilizable con ChatGPT, Claude, Gemini, Llama y otros. Se puede consultar en prompts.chat, como CSV o Markdown, o como dataset de Hugging Face. Se puede usar como servidor MCP remoto o local, como plugin de Claude Code y desde la CLI `npx prompts.chat`. Permite montar una biblioteca de prompts propia y privada para equipos.",
+      "como_lo_hace": "La aplicación es Next.js con Prisma y se puede autoalojar con `npx prompts.chat new <nombre>`, o clonar y ejecutar `npm install && npm run setup`. También tiene guía de Docker. El servidor MCP remoto está en `https://prompts.chat/api/mcp`. La calidad de los prompts es heterogénea, porque son contribuciones comunitarias.",
+      "descripcion_notas": "Alternativas (elige una): fabric.",
+      "descripcion_fuentes": [
+        "https://github.com/f/prompts.chat/blob/main/README.md",
+        "https://huggingface.co/datasets/fka/prompts.chat"
+      ],
+      "descripcion_revision": {
+        "batch": "14-aprendizaje-prompts-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "f/prompts.chat",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "MDX",
+        "checked_at": "2026-11-15"
+      },
       "lead": "La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
       "body": "La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
       "install": {
@@ -94392,7 +95042,20 @@
           "label": "fabric"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "promptfoo",
+          "label": "promptfoo"
+        },
+        {
+          "id": "open-webui",
+          "label": "open-webui"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",

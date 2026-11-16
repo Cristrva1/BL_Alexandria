@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Curso gratuito (Apache-2.0) de Maxime Labonne para aprender LLMs, con rutas de estudio y notebooks de Colab. Es muy popular (~85k estrellas). El autor coescribió el libro 'LLM Engineer's Handbook' basado en este curso. Último push en febrero de 2026.
+
+## ¿Qué hace?
+
+Se divide en tres partes: 'LLM Fundamentals' (matemáticas, Python y redes neuronales; opcional), 'The LLM Scientist' (preentrenamiento, fine-tuning, alineación, evaluación, cuantización) y 'The LLM Engineer' (aplicaciones, RAG, agentes, despliegue y seguridad). Incluye notebooks de herramientas propias como LLM AutoEval, LazyMergekit, LazyAxolotl y AutoQuant.
+
+## ¿Cómo lo hace?
+
+Es una hoja de ruta en Markdown con enlaces a artículos y notebooks de Google Colab. Algunos notebooks requieren GPU (Colab gratuito o de pago, RunPod) y claves de Hugging Face. Hay ejemplos de fine-tuning con Unsloth, TRL (QLoRA) y Axolotl.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Unsloth](unsloth.md) | Fine-tuning eficiente usado en el notebook 'Fine-tune Llama 3.1 with Unsloth'. | Abre el notebook en Colab con GPU; instala Unsloth según indique. |
+| [TRL](trl.md) | Fine-tuning supervisado con QLoRA usado en el notebook de Mistral-7b. | Se instala dentro del notebook. |
+| [PyTorch](pytorch.md) | Base técnica de la parte 'LLM Scientist'. (combinación por arquitectura) | Instálalo con soporte CUDA si vas a entrenar en local. |
+
+**Notas:** Alternativas (elige una): llms-from-scratch, generative-ai-for-beginners. Combinación anterior con llama-factory eliminada: el curso no lo usa (y es alternativa de unsloth).
+
+Estado en GitHub: activo · último push 2026-02-05 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mlabonne/llm-course/blob/main/README.md) · [2](https://mlabonne.github.io/blog/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta |
 | Coste | El coste depende del proveedor o la ruta. Los recursos son públicos; Colab, GPU, nube y APIs pueden tener límites o coste |
 | Equipo | Preparación según la ruta elegida. Navegador; Python y cómputo al practicar |
-
-Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta
-
-## Qué puedes hacer con él
-
-Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.
-
-## Por qué destaca
-
-Usos propuestos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF.
-
-## Cómo funciona
 
 Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; Python y cómputo al practicar
 - **Etiquetas:** `learning` `training` `notebooks`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Unsloth](unsloth.md) | 79.5k | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. |
-| [LLaMA-Factory](llama-factory.md) | 76k | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. |
 
 ## Alternativas (elige una)
 

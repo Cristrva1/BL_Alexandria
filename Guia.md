@@ -4153,7 +4153,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Context-Engineering](human/fichas/context-engineering.md)<br>
+**Combina con:** [prompt-master](human/fichas/prompt-master.md) · [Context-Engineering](human/fichas/context-engineering.md) · [promptfoo](human/fichas/promptfoo.md)<br>
 **Más:** [ficha completa](human/fichas/prompt-engineering-guide.md) · [GitHub](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
 #### 💡 Fabric ⭐
@@ -4162,7 +4162,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `go install github.com/danielmiessler/fabric/cmd/fabric@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer acciones de una reunión; Convertir notas en un esquema de artículo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md) · [yt-dlp](human/fichas/yt-dlp.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [yt-dlp](human/fichas/yt-dlp.md) · [Open WebUI](human/fichas/open-webui.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/fabric.md) · [GitHub](https://github.com/danielmiessler/Fabric)
 
 #### 💡 prompts.chat
@@ -4171,6 +4171,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/f/prompts.chat/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [promptfoo](human/fichas/promptfoo.md) · [Open WebUI](human/fichas/open-webui.md)<br>
 **Más:** [ficha completa](human/fichas/prompts-chat.md) · [GitHub](https://github.com/f/prompts.chat)
 
 #### 🧠 system-prompts-and-models-of-ai-tools
@@ -4187,7 +4188,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Cookbooks](human/fichas/claude-cookbooks.md)<br>
+**Combina con:** [Claude Cookbooks](human/fichas/claude-cookbooks.md) · [promptfoo](human/fichas/promptfoo.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/prompt-eng-tutorial.md) · [GitHub](https://github.com/anthropics/prompt-eng-interactive-tutorial)
 
 #### 🎯 prompt-master
@@ -4197,7 +4198,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Comando documentado:** `mkdir -p ~/.claude/skills
 git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-master` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Prompt Engineering Guide](human/fichas/prompt-engineering-guide.md) · [Anthropic Skills](human/fichas/anthropic-skills.md)<br>
 **Más:** [ficha completa](human/fichas/prompt-master.md) · [GitHub](https://github.com/nidhinjs/prompt-master)
 
 #### 🧠 ChatGPT_DAN
@@ -4224,7 +4225,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Empezar a construir una app generativa; Comparar nube con Foundry Local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [AI Agents for Beginners](human/fichas/ai-agents-for-beginners.md) · [MCP for Beginners](human/fichas/mcp-for-beginners.md)<br>
+**Combina con:** [AI Agents for Beginners](human/fichas/ai-agents-for-beginners.md) · [MCP for Beginners](human/fichas/mcp-for-beginners.md) · [OpenAI Cookbook](human/fichas/openai-cookbook.md)<br>
 **Más:** [ficha completa](human/fichas/generative-ai-for-beginners.md) · [GitHub](https://github.com/microsoft/generative-ai-for-beginners)
 
 #### 🎓 AI Agents for Beginners ⭐
@@ -4233,7 +4234,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender patrones de agentes; Estudiar herramientas y memoria con ejemplos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Generative AI for Beginners](human/fichas/generative-ai-for-beginners.md) · [Microsoft Agent Framework](human/fichas/agent-framework.md) · [MCP for Beginners](human/fichas/mcp-for-beginners.md)<br>
+**Combina con:** [Microsoft Agent Framework](human/fichas/agent-framework.md) · [Generative AI for Beginners](human/fichas/generative-ai-for-beginners.md) · [MCP for Beginners](human/fichas/mcp-for-beginners.md)<br>
 **Más:** [ficha completa](human/fichas/ai-agents-for-beginners.md) · [GitHub](https://github.com/microsoft/ai-agents-for-beginners)
 
 #### 🎓 Awesome LLM Apps
@@ -4251,7 +4252,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** API de IA opcional · Consumo de APIs o servicios<br>
 **Arranque:** [Instrucciones originales](https://github.com/openai/openai-cookbook/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer campos de un texto; Aprender a evaluar respuestas de una aplicación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [openai-python](human/fichas/openai-python.md) · [OpenAI Agents SDK](human/fichas/openai-agents-python.md)<br>
+**Combina con:** [openai-python](human/fichas/openai-python.md) · [OpenAI Agents SDK](human/fichas/openai-agents-python.md) · [promptfoo](human/fichas/promptfoo.md)<br>
 **Más:** [ficha completa](human/fichas/openai-cookbook.md) · [GitHub](https://github.com/openai/openai-cookbook)
 
 #### 🎓 Claude Cookbooks
@@ -4260,7 +4261,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Acceso:** API de IA opcional · Consumo de APIs o servicios<br>
 **Arranque:** [Instrucciones originales](https://github.com/anthropics/claude-cookbooks/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Clasificar tickets ficticios; Estudiar llamadas a herramientas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Anthropic's Prompt Engineering Tutorial](human/fichas/prompt-eng-tutorial.md) · [Anthropic Skills](human/fichas/anthropic-skills.md) · [promptfoo](human/fichas/promptfoo.md)<br>
+**Combina con:** [Anthropic's Prompt Engineering Tutorial](human/fichas/prompt-eng-tutorial.md) · [claude-agent-sdk-python](human/fichas/claude-agent-sdk-python.md) · [promptfoo](human/fichas/promptfoo.md)<br>
 **Más:** [ficha completa](human/fichas/claude-cookbooks.md) · [GitHub](https://github.com/anthropics/claude-cookbooks)
 
 #### 🧠 ai-engineering-hub
@@ -4313,7 +4314,7 @@ cd agents-towards-production` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `npx @cobusgreyling/loop init . --pattern daily-triage --tool claude
 npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un ciclo de revisión de issues; Estimar el coste de un bucle antes de automatizarlo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [superpowers](human/fichas/superpowers.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/loop-engineering.md) · [GitHub](https://github.com/cobusgreyling/loop-engineering)
 
 #### 🧩 Context-Engineering
@@ -4322,7 +4323,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/jasontang-ai/Context-Engineering/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar contexto para una tarea larga; Estudiar memoria y recuperación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md) · [headroom](human/fichas/headroom.md)<br>
+**Combina con:** [12-Factor Agents](human/fichas/12-factor-agents.md) · [Prompt Engineering Guide](human/fichas/prompt-engineering-guide.md) · [headroom](human/fichas/headroom.md)<br>
 **Más:** [ficha completa](human/fichas/context-engineering.md) · [GitHub](https://github.com/jasontang-ai/Context-Engineering)
 
 #### 📂 awesome-harness-engineering
@@ -4349,7 +4350,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/mlabonne/llm-course/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Unsloth](human/fichas/unsloth.md) · [LLaMA-Factory](human/fichas/llama-factory.md)<br>
+**Combina con:** [Unsloth](human/fichas/unsloth.md) · [TRL](human/fichas/trl.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/llm-course.md) · [GitHub](https://github.com/mlabonne/llm-course)
 
 #### 📘 LLMs from Scratch
